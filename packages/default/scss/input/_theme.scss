@@ -58,7 +58,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $invalid-text;
+                color: $kendo-invalid-text;
             }
 
             &:focus,
@@ -135,7 +135,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $invalid-text;
+                color: $kendo-invalid-text;
             }
 
             &:focus,
@@ -219,7 +219,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $invalid-text;
+                color: $kendo-invalid-text;
             }
 
             &:focus,
@@ -302,7 +302,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $invalid-text;
+                color: $kendo-invalid-text;
             }
 
             &:focus,
@@ -373,7 +373,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $invalid-text;
+                color: $kendo-invalid-text;
             }
 
             &:focus,
@@ -455,7 +455,7 @@
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
-                color: $invalid-text;
+                color: $kendo-invalid-text;
             }
 
             &:focus,

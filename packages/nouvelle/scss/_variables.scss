@@ -1,16 +1,12 @@
 // Options
-$enable-rounded: true !default;
-$enable-shadows: true !default;
-$enable-gradients: true !default;
-$enable-transitions: true !default;
-$enable-flex-classes: true !default;
-$enable-grid-classes: true !default;
+$kendo-enable-rounded: true !default;
+$kendo-enable-shadows: true !default;
+$kendo-enable-gradients: true !default;
+$kendo-enable-transitions: true !default;
 
-$use-calc-badge-size: false !default;
-$use-input-button-width: false !default;
-$use-input-spinner-width: false !default;
-$use-input-spinner-icon-offset: false !default;
-$use-picker-select-width: false !default;
+$kendo-use-input-button-width: false !default;
+$kendo-use-input-spinner-width: false !default;
+$kendo-use-input-spinner-icon-offset: false !default;
 
 
 // Spacing
@@ -62,69 +58,69 @@ $dark-theme: false !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 /// @type Color
-$kendo-primary: #622331 !default;
-$kendo-primary-lighter: k-color-tint( $kendo-primary, 2 ) !default;
-$kendo-primary-darker: k-color-shade( $kendo-primary, 2 ) !default;
+$kendo-color-primary: #622331 !default;
+$kendo-color-primary-lighter: k-color-tint( $kendo-color-primary, 2 ) !default;
+$kendo-color-primary-darker: k-color-shade( $kendo-color-primary, 2 ) !default;
 
-/// The color used along with the accent color denoted by $primary.
+/// The color used along with the primary color denoted by $kendo-color-primary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$kendo-primary-contrast: k-contrast-color( $kendo-primary ) !default;
+$kendo-color-primary-contrast: k-contrast-color( $kendo-color-primary ) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
 /// @type Color
-$kendo-info: #0969da !default;
-$kendo-info-lighter: k-color-tint( $kendo-info, 2 ) !default;
-$kendo-info-darker: k-color-shade( $kendo-info, 2 ) !default;
+$kendo-color-info: #0969da !default;
+$kendo-color-info-lighter: k-color-tint( $kendo-color-info, 2 ) !default;
+$kendo-color-info-darker: k-color-shade( $kendo-color-info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 /// @type Color
-$kendo-success: #1a7f37 !default;
-$kendo-success-lighter: k-color-tint( $kendo-success, 2 ) !default;
-$kendo-success-darker: k-color-shade( $kendo-success, 2 ) !default;
+$kendo-color-success: #1a7f37 !default;
+$kendo-color-success-lighter: k-color-tint( $kendo-color-success, 2 ) !default;
+$kendo-color-success-darker: k-color-shade( $kendo-color-success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 /// @type Color
-$kendo-warning: #bc4c00 !default;
-$kendo-warning-lighter: k-color-tint( $kendo-warning, 2 ) !default;
-$kendo-warning-darker: k-color-shade( $kendo-warning, 2 ) !default;
+$kendo-color-warning: #bc4c00 !default;
+$kendo-color-warning-lighter: k-color-tint( $kendo-color-warning, 2 ) !default;
+$kendo-color-warning-darker: k-color-shade( $kendo-color-warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 /// @type Color
-$kendo-error: #cf222e !default;
-$kendo-error-lighter: k-color-tint( $kendo-error, 2 ) !default;
-$kendo-error-darker: k-color-shade( $kendo-error, 2 ) !default;
+$kendo-color-error: #cf222e !default;
+$kendo-color-error-lighter: k-color-tint( $kendo-color-error, 2 ) !default;
+$kendo-color-error-darker: k-color-shade( $kendo-color-error, 2 ) !default;
 
 /// The dark color of the theme.
 /// @group color-system
 /// @type Color
-$kendo-dark: #404040 !default;
+$kendo-color-dark: #404040 !default;
 
 /// The light color of the theme.
 /// @group color-system
 /// @type Color
-$kendo-light: #ebebeb !default;
+$kendo-color-light: #ebebeb !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
-$kendo-inverse: if( $dark-theme, $kendo-light, $kendo-dark ) !default;
+$kendo-color-inverse: if( $dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
 
 
 $kendo-theme-colors: (
-    "primary": $kendo-primary,
+    "primary": $kendo-color-primary,
     // "neutral": $neutral,
-    "info": $kendo-info,
-    "success": $kendo-success,
-    "warning": $kendo-warning,
-    "error": $kendo-error,
-    "dark": $kendo-dark,
-    "light": $kendo-light,
-    "inverse": $kendo-inverse
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse
 ) !default;
 
 
@@ -170,8 +166,8 @@ $kendo-app-text: #656565 !default;
 $kendo-app-border: rgba( black, .08 ) !default;
 
 // Link
-$kendo-link-text: $kendo-primary !default;
-$kendo-link-hover-text: $kendo-primary-darker !default;
+$kendo-link-text: $kendo-color-primary !default;
+$kendo-link-hover-text: $kendo-color-primary-darker !default;
 
 
 // Components
@@ -209,7 +205,7 @@ $kendo-hover-border: rgba( black, .15 ) !default;
 $kendo-hover-gradient: rgba( black, 0 ), rgba( black, .02 ) !default;
 
 /// The background of selected items.
-$kendo-selected-bg: $kendo-primary !default;
+$kendo-selected-bg: $kendo-color-primary !default;
 /// The text color of selected items.
 $kendo-selected-text: k-contrast-color( $kendo-selected-bg ) !default;
 /// The border color of selected items.

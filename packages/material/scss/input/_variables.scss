@@ -73,9 +73,9 @@ $kendo-input-sizes: (
     )
 ) !default;
 
-$kendo-input-bg: k-try-shade( $component-bg, .5 ) !default;
-$kendo-input-text: $component-text !default;
-$kendo-input-border: rgba( $component-border, .38 ) !default;
+$kendo-input-bg: k-try-shade( $kendo-component-bg, .5 ) !default;
+$kendo-input-text: $kendo-component-text !default;
+$kendo-input-border: rgba( $kendo-component-border, .38 ) !default;
 $kendo-input-shadow: null !default;
 
 $kendo-input-hover-bg: null !default;
@@ -85,12 +85,12 @@ $kendo-input-hover-shadow: null !default;
 
 $kendo-input-focus-bg: null !default;
 $kendo-input-focus-text: null !default;
-$kendo-input-focus-border: $primary !default;
+$kendo-input-focus-border: $kendo-color-primary !default;
 $kendo-input-focus-shadow: null !default;
 
-$kendo-input-disabled-bg: k-try-shade( $component-bg, .25 ) !default;
-$kendo-input-disabled-text: $disabled-text !default;
-$kendo-input-disabled-border: rgba( $component-border, k-math-div( k-color-alpha( $component-border ), 2 ) ) !default;
+$kendo-input-disabled-bg: k-try-shade( $kendo-component-bg, .25 ) !default;
+$kendo-input-disabled-text: $kendo-disabled-text !default;
+$kendo-input-disabled-border: rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) ) !default;
 $kendo-input-disabled-gradient: null !default;
 $kendo-input-disabled-shadow: null !default;
 
@@ -178,7 +178,7 @@ $kendo-picker-flat-hover-focus-bg: null !default;
 $kendo-picker-flat-hover-focus-text: null !default;
 $kendo-picker-flat-hover-focus-border: null !default;
 
-$kendo-input-placeholder-text: $subtle-text !default;
+$kendo-input-placeholder-text: $kendo-subtle-text !default;
 $kendo-input-placeholder-opacity: 1 !default;
 
 $kendo-input-selected-bg: null !default;
@@ -206,5 +206,5 @@ $kendo-input-separator-opacity: .5 !default;
 
 
 // Invalid
-$kendo-input-invalid-border: $invalid-border !default;
-$kendo-input-invalid-shadow: $invalid-shadow !default;
+$kendo-input-invalid-border: $kendo-invalid-border !default;
+$kendo-input-invalid-shadow: $kendo-invalid-shadow !default;

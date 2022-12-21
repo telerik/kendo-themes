@@ -108,13 +108,13 @@ $pre-padding-y: 16px !default;
 $code-border-width: 1px !default;
 
 $code-bg: $base-bg !default;
-$code-text: $component-text !default;
-$code-border: $component-border !default;
+$code-text: $kendo-component-text !default;
+$code-border: $kendo-component-border !default;
 
 
 // Link
-$link-text: $secondary !default;
-$link-hover-text: $secondary-darker !default;
+$link-text: $kendo-color-secondary !default;
+$link-hover-text: $kendo-color-secondary-darker !default;
 
 
 // Display

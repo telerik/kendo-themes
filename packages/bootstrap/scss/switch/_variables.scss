@@ -29,7 +29,7 @@ $kendo-switch-sizes: (
 
 /// The background of the track when the switch is not checked.
 /// @group switch
-$kendo-switch-off-track-bg: $component-bg !default;
+$kendo-switch-off-track-bg: $kendo-component-bg !default;
 /// The text color of the track when the switch is not checked.
 /// @group switch
 $kendo-switch-off-track-text: null !default;
@@ -61,13 +61,13 @@ $kendo-switch-off-track-focus-bg: null !default;
 $kendo-switch-off-track-focus-text: null !default;
 /// The border color of the track when the focused switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-border: k-color-mix( $kendo-switch-off-track-bg, $primary ) !default;
+$kendo-switch-off-track-focus-border: k-color-mix( $kendo-switch-off-track-bg, $kendo-color-primary ) !default;
 /// The background gradient of the track when the focused switch is not checked.
 /// @group switch
 $kendo-switch-off-track-focus-gradient: null !default;
 /// The ring around the track when the focused switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-ring: .25rem solid rgba( $primary, .25 ) !default;
+$kendo-switch-off-track-focus-ring: .25rem solid rgba( $kendo-color-primary, .25 ) !default;
 
 /// The background of the track when the disabled switch is not checked.
 /// @group switch
@@ -111,7 +111,7 @@ $kendo-switch-off-thumb-hover-gradient: null !default;
 
 /// The background of the track when the switch is checked.
 /// @group switch
-$kendo-switch-on-track-bg: $primary !default;
+$kendo-switch-on-track-bg: $kendo-color-primary !default;
 /// The text color of the track when the switch is checked.
 /// @group switch
 $kendo-switch-on-track-text: null !default;

@@ -13,7 +13,7 @@ $bottom-nav-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $bottom-nav-item-padding-y: 0 !default;
 $bottom-nav-item-min-width: 72px !default;
 $bottom-nav-item-max-width: null !default;
-$bottom-nav-item-min-height: calc( #{$icon-size * 2.5} + #{$padding-x-sm * 2} - #{$bottom-nav-padding-x * 2} ) !default;
+$bottom-nav-item-min-height: calc( #{$icon-size * 2.5} + #{$kendo-padding-sm-x * 2} - #{$bottom-nav-padding-x * 2} ) !default;
 $bottom-nav-item-border-radius: null !default;
 $bottom-nav-item-gap: 0 k-map-get( $kendo-spacing, 1 ) !default;
 
@@ -24,6 +24,6 @@ $bottom-nav-item-disabled-opacity: .5 !default;
 
 $bottom-nav-shadow: 0px 0px 5px rgba( black, .12 ) !default;
 
-$bottom-nav-flat-bg: $component-bg !default;
-$bottom-nav-flat-text: $component-text !default;
-$bottom-nav-flat-border: $component-border !default;
+$bottom-nav-flat-bg: $kendo-component-bg !default;
+$bottom-nav-flat-text: $kendo-component-text !default;
+$bottom-nav-flat-border: $kendo-component-border !default;

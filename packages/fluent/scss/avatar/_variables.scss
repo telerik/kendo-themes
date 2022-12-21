@@ -36,10 +36,10 @@ $kendo-avatar-brand-colors: (
 // Matrix with avatar theme colors in the order: bg, color, border
 $_tc-avatar-matrix: (
     solid: (
-        normal: (100, $white, 100)
+        normal: (100, $kendo-color-white, 100)
     ),
     outline: (
-        normal: ($white, 100, 100)
+        normal: ($kendo-color-white, 100, 100)
     )
 ) !default;
 
@@ -48,25 +48,25 @@ $_tc-avatar-warning-matrix: (
         normal: (100, get-theme-color-var( neutral-160 ), 100)
     ),
     outline: (
-        normal: ($white, 100, 100)
+        normal: ($kendo-color-white, 100, 100)
     )
 ) !default;
 
 $_tc-avatar-dark-matrix: (
     solid: (
-        normal: (160, $white, 160)
+        normal: (160, $kendo-color-white, 160)
     ),
     outline: (
-        normal: ($white, 160, 160)
+        normal: ($kendo-color-white, 160, 160)
     )
 ) !default;
 
 $_tc-avatar-light-matrix: (
     solid: (
-        normal: (50, $white, 50)
+        normal: (50, $kendo-color-white, 50)
     ),
     outline: (
-        normal: ($white, 50, 50)
+        normal: ($kendo-color-white, 50, 50)
     )
 ) !default;
 

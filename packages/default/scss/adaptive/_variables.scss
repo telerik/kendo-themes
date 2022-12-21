@@ -1,18 +1,18 @@
 // Adaptive
-$adaptive-bg: $component-bg !default;
-$adaptive-text: $component-text !default;
-$adaptive-border: $component-border !default;
+$adaptive-bg: $kendo-component-bg !default;
+$adaptive-text: $kendo-component-text !default;
+$adaptive-border: $kendo-component-border !default;
 
-$adaptive-content-bg: $app-bg !default;
-$adaptive-content-text: $app-text !default;
+$adaptive-content-bg: $kendo-app-bg !default;
+$adaptive-content-text: $kendo-app-text !default;
 
-$adaptive-menu-bg: $primary !default;
+$adaptive-menu-bg: $kendo-color-primary !default;
 $adaptive-menu-text: k-contrast-legacy( $adaptive-menu-bg ) !default;
 
-$adaptive-menu-clear-text: $primary !default;
+$adaptive-menu-clear-text: $kendo-color-primary !default;
 
-$adaptive-menu-item-border: $component-border !default;
-$adaptive-menu-title-text: $component-text !default;
+$adaptive-menu-item-border: $kendo-component-border !default;
+$adaptive-menu-title-text: $kendo-component-text !default;
 
 $adaptive-border-width: 1px !default;
 $adaptive-font-family: $font-family !default;
@@ -21,10 +21,10 @@ $adaptive-line-height: $line-height !default;
 
 
 // Adaptive Grid
-$adaptive-grid-sort-text: $primary !default;
+$adaptive-grid-sort-text: $kendo-color-primary !default;
 
 
 // Adaptive Scheduler
-$adaptive-scheduler-current-text: $primary !default;
+$adaptive-scheduler-current-text: $kendo-color-primary !default;
 $adaptive-scheduler-base-text: inherit !default;
-$adaptive-scheduler-subtle-text: $subtle-text !default;
+$adaptive-scheduler-subtle-text: $kendo-subtle-text !default;

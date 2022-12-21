@@ -17,16 +17,16 @@
         .k-event-template {
             // Angular fix for stronger selector and smaller padding
             & {
-                padding: $padding-y-sm $padding-x-sm;
+                padding: $kendo-padding-sm-y $kendo-padding-sm-x;
                 font-size: $font-size-sm;
             }
         }
 
         .k-event-actions {
-            right: $padding-x-sm;
+            right: $kendo-padding-sm-x;
             font-size: $font-size-sm;
             &:first-child {
-                margin: .1ex .4ex 0 $padding-x-sm;
+                margin: .1ex .4ex 0 $kendo-padding-sm-x;
             }
         }
     }

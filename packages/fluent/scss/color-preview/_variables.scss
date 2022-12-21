@@ -21,7 +21,7 @@ $kendo-color-preview-hover-border: get-theme-color-var( neutral-60 ) !default;
 
 /// Background color of the color preview when no color is selected.
 /// @group color-preview
-$kendo-color-preview-no-color-bg: $white !default;
+$kendo-color-preview-no-color-bg: $kendo-color-white !default;
 /// Text color of the color preview when no color is selected.
 /// @group color-preview
 $kendo-color-preview-no-color-text: get-theme-color( error, 190 ) !default;

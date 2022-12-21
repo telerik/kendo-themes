@@ -176,13 +176,13 @@ $kendo-list-sizes: (
 
 /// Background color of the list component.
 /// @group list
-$kendo-list-bg: $component-bg !default;
+$kendo-list-bg: $kendo-component-bg !default;
 /// Text color of the list component.
 /// @group list
-$kendo-list-text: $component-text !default;
+$kendo-list-text: $kendo-component-text !default;
 /// Border color of the list component.
 /// @group list
-$kendo-list-border: $component-border !default;
+$kendo-list-border: $kendo-component-border !default;
 
 
 /// Background color of list header.
@@ -208,10 +208,10 @@ $kendo-list-item-text: null !default;
 
 /// Background color of hovered list items.
 /// @group list
-$kendo-list-item-hover-bg: $hovered-bg !default;
+$kendo-list-item-hover-bg: $kendo-hover-bg !default;
 /// Text color of hovered list items.
 /// @group list
-$kendo-list-item-hover-text: $hovered-text !default;
+$kendo-list-item-hover-text: $kendo-hover-text !default;
 
 /// Background color of focused list items.
 /// @group list
@@ -225,10 +225,10 @@ $kendo-list-item-focus-shadow: null !default;
 
 /// Background color of selected list items.
 /// @group list
-$kendo-list-item-selected-bg: $component-bg !default;
+$kendo-list-item-selected-bg: $kendo-component-bg !default;
 /// Text color of selected list items.
 /// @group list
-$kendo-list-item-selected-text: $secondary !default;
+$kendo-list-item-selected-text: $kendo-color-secondary !default;
 
 /// Background color of list group items.
 /// @group list
@@ -245,4 +245,4 @@ $kendo-list-group-item-shadow: null !default;
 
 /// Text color of the 'No Data' text.
 /// @group list
-$kendo-list-no-data-text: $subtle-text !default;
+$kendo-list-no-data-text: $kendo-subtle-text !default;

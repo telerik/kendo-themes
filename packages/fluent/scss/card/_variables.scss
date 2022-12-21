@@ -98,10 +98,10 @@ $kendo-card-footer-border-width: 0 !default;
 $kendo-card-footer-bg: inherit !default;
 /// Text color of the card footer.
 /// @group card
-$kendo-card-footer-text: inherit !default; // $header-text
+$kendo-card-footer-text: inherit !default; // $kendo-component-header-text
 /// Border color of the card footer.
 /// @group card
-$kendo-card-footer-border: inherit !default; // $header-border
+$kendo-card-footer-border: inherit !default; // $kendo-component-header-border
 
 /// Text weight of the card title.
 /// @group card

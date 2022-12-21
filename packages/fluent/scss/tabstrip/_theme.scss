@@ -30,15 +30,15 @@
             &:hover,
             &.k-hover {
                 @include fill(
-                    var( --kendo-tabstrip-item-hovered-text, #{$kendo-tabstrip-item-hovered-text} ),
-                    var( --kendo-tabstrip-item-hovered-bg, #{$kendo-tabstrip-item-hovered-bg} ),
-                    var( --kendo-tabstrip-item-hovered-border, #{$kendo-tabstrip-item-hovered-border} )
+                    var( --kendo-tabstrip-item-hover-text, #{$kendo-tabstrip-item-hover-text} ),
+                    var( --kendo-tabstrip-item-hover-bg, #{$kendo-tabstrip-item-hover-bg} ),
+                    var( --kendo-tabstrip-item-hover-border, #{$kendo-tabstrip-item-hover-border} )
                 );
             }
 
             &:focus,
             &.k-focus {
-                @include box-shadow( var( --kendo-tabstrip-item-focused-shadow, #{$kendo-tabstrip-item-focused-shadow} ) );
+                @include box-shadow( var( --kendo-tabstrip-item-focus-shadow, #{$kendo-tabstrip-item-focus-shadow} ) );
             }
 
             &:active,
@@ -52,7 +52,7 @@
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $bg: var( --kendo-tabstrip-item-hovered-bg, #{$kendo-tabstrip-item-hovered-bg} )
+                        $bg: var( --kendo-tabstrip-item-hover-bg, #{$kendo-tabstrip-item-hover-bg} )
                     );
                 }
 
@@ -86,7 +86,7 @@
 
         &:focus,
         &.k-focus {
-            outline-color: var( --kendo-tabstrip-content-border-focused, #{$kendo-tabstrip-content-border-focused} );
+            outline-color: var( --kendo-tabstrip-content-focus-border, #{$kendo-tabstrip-content-focus-border} );
         }
     }
 

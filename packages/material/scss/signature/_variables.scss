@@ -18,7 +18,7 @@ $kendo-signature-padding-y-lg: $kendo-signature-padding-x-lg !default;
 
 $kendo-signature-line-width: 1px !default;
 $kendo-signature-line-style: dashed !default;
-$kendo-signature-line-color: rgba( $info, .24 ) !default;
+$kendo-signature-line-color: rgba( $kendo-color-info, .24 ) !default;
 
 $kendo-signature-line-size: calc( 100% - 2 * #{$kendo-signature-padding-x} ) !default;
 $kendo-signature-line-size-sm: calc( 100% - 2 * #{$kendo-signature-padding-x-sm} ) !default;

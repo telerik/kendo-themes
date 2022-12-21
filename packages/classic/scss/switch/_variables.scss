@@ -29,13 +29,13 @@ $kendo-switch-sizes: (
 
 /// The background of the track when the switch is not checked.
 /// @group switch
-$kendo-switch-off-track-bg: $component-bg !default;
+$kendo-switch-off-track-bg: $kendo-component-bg !default;
 /// The text color of the track when the switch is not checked.
 /// @group switch
-$kendo-switch-off-track-text: $component-text !default;
+$kendo-switch-off-track-text: $kendo-component-text !default;
 /// The border color of the track when the switch is not checked.
 /// @group switch
-$kendo-switch-off-track-border: $component-border !default;
+$kendo-switch-off-track-border: $kendo-component-border !default;
 /// The background gradient of the track when the switch is not checked.
 /// @group switch
 $kendo-switch-off-track-gradient: null !default;
@@ -67,7 +67,7 @@ $kendo-switch-off-track-focus-border: null !default;
 $kendo-switch-off-track-focus-gradient: null !default;
 /// The ring around the track when the focused switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-ring: 0 0 3px 1px rgba( if( $dark-theme, $white, $black ), .25 ) !default;
+$kendo-switch-off-track-focus-ring: 0 0 3px 1px rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .25 ) !default;
 
 /// The background of the track when the disabled switch is not checked.
 /// @group switch
@@ -111,13 +111,13 @@ $kendo-switch-off-thumb-hover-gradient: null !default;
 
 /// The background of the track when the switch is checked.
 /// @group switch
-$kendo-switch-on-track-bg: $component-bg !default;
+$kendo-switch-on-track-bg: $kendo-component-bg !default;
 /// The text color of the track when the switch is checked.
 /// @group switch
-$kendo-switch-on-track-text: $primary !default;
+$kendo-switch-on-track-text: $kendo-color-primary !default;
 /// The border color of the track when the switch is checked.
 /// @group switch
-$kendo-switch-on-track-border: $component-border !default;
+$kendo-switch-on-track-border: $kendo-component-border !default;
 /// The background gradient of the track when the switch is checked.
 /// @group switch
 $kendo-switch-on-track-gradient: null !default;
@@ -149,7 +149,7 @@ $kendo-switch-on-track-focus-border: null !default;
 $kendo-switch-on-track-focus-gradient: null !default;
 /// The ring around the track wen the focused switch is checked.
 /// @group switch
-$kendo-switch-on-track-focus-ring: 0 0 3px 1px rgba( if( $dark-theme, $white, $black ), .25 ) !default;
+$kendo-switch-on-track-focus-ring: 0 0 3px 1px rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .25 ) !default;
 
 /// The background of the track when the disabled switch is checked.
 /// @group switch
@@ -166,7 +166,7 @@ $kendo-switch-on-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-bg: $primary !default;
+$kendo-switch-on-thumb-bg: $kendo-color-primary !default;
 /// The text color of the thumb when the switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-text: null !default;

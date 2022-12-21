@@ -19,26 +19,26 @@
             background: $kendo-drawer-scrollbar-color;
         }
         &::-webkit-scrollbar-thumb:hover {
-            background: $kendo-drawer-scrollbar-hovered-color;
+            background: $kendo-drawer-scrollbar-hover-color;
         }
     }
     .k-drawer-item {
 
         &:hover,
         &.k-hover {
-            color: $kendo-drawer-hovered-text;
-            background-color: $kendo-drawer-hovered-bg;
+            color: $kendo-drawer-hover-text;
+            background-color: $kendo-drawer-hover-bg;
         }
 
         &:focus,
         &.k-focus {
-            background-color: $kendo-drawer-focused-bg;
-            box-shadow: $kendo-drawer-focused-shadow;
+            background-color: $kendo-drawer-focus-bg;
+            box-shadow: $kendo-drawer-focus-shadow;
 
             &:hover,
             &.k-hover {
-                color: $kendo-drawer-hovered-text;
-                background-color: $kendo-drawer-hovered-bg;
+                color: $kendo-drawer-hover-text;
+                background-color: $kendo-drawer-hover-bg;
             }
         }
 

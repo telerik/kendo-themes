@@ -39,20 +39,20 @@ $kendo-pager-font-size: $font-size !default;
 $kendo-pager-line-height: $line-height !default;
 /// Background color of the pager.
 /// @group pager
-$kendo-pager-bg: $header-bg !default;
+$kendo-pager-bg: $kendo-component-header-bg !default;
 /// Text color of the pager.
 /// @group pager
-$kendo-pager-text: $header-text !default;
+$kendo-pager-text: $kendo-component-header-text !default;
 /// Border color of the pager.
 /// @group pager
-$kendo-pager-border: $component-border !default;
+$kendo-pager-border: $kendo-component-border !default;
 
 /// Background color of the focused pager.
 /// @group pager
 $kendo-pager-focus-bg: null !default;
 /// Box shadow of the focused pager.
 /// @group pager
-$kendo-pager-focus-shadow: $focused-shadow !default;
+$kendo-pager-focus-shadow: $kendo-focus-shadow !default;
 
 /// Spacing between the pager sections.
 /// @group pager

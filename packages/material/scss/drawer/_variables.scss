@@ -1,21 +1,21 @@
 // Drawer
-$kendo-drawer-bg: $component-bg !default;
-$kendo-drawer-text: $component-text !default;
-$kendo-drawer-border: $component-border !default;
+$kendo-drawer-bg: $kendo-component-bg !default;
+$kendo-drawer-text: $kendo-component-text !default;
+$kendo-drawer-border: $kendo-component-border !default;
 $kendo-drawer-border-width: 1px !default;
 $kendo-drawer-font-family: $font-family !default;
 $kendo-drawer-font-size: $font-size !default;
 $kendo-drawer-line-height: $line-height !default;
-$kendo-drawer-content-padding-x: $padding-x !default;
-$kendo-drawer-content-padding-y: $padding-y !default;
+$kendo-drawer-content-padding-x: $kendo-padding-md-x !default;
+$kendo-drawer-content-padding-y: $kendo-padding-md-y !default;
 
 $kendo-drawer-scrollbar-width: 7px !default;
 $kendo-drawer-scrollbar-color: rgba( 156, 156, 156, .7 ) !default;
 $kendo-drawer-scrollbar-bg: #dedede !default;
 $kendo-drawer-scrollbar-radius: 20px !default;
-$kendo-drawer-scrollbar-hovered-color: rgba( 156, 156, 156, 1 ) !default;
+$kendo-drawer-scrollbar-hover-color: rgba( 156, 156, 156, 1 ) !default;
 
-$kendo-drawer-item-padding-x: $padding-x !default;
+$kendo-drawer-item-padding-x: $kendo-padding-md-x !default;
 $kendo-drawer-item-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-drawer-item-font-size: 16px !default;
 $kendo-drawer-item-line-height: $line-height-lg !default;
@@ -27,13 +27,13 @@ $kendo-drawer-icon-size: $icon-size !default;
 
 $kendo-drawer-mini-initial-width: calc(2 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size}) !default;
 
-$kendo-drawer-hovered-bg: $hovered-bg !default;
-$kendo-drawer-hovered-text: $hovered-text !default;
+$kendo-drawer-hover-bg: $kendo-hover-bg !default;
+$kendo-drawer-hover-text: $kendo-hover-text !default;
 
-$kendo-drawer-focused-bg: $hovered-bg !default;
-$kendo-drawer-focused-shadow: none !default;
+$kendo-drawer-focus-bg: $kendo-hover-bg !default;
+$kendo-drawer-focus-shadow: none !default;
 
 $kendo-drawer-selected-bg: null !default;
-$kendo-drawer-selected-text: $secondary !default;
-$kendo-drawer-selected-hover-bg: $hovered-bg !default;
-$kendo-drawer-selected-hover-text: $secondary !default;
+$kendo-drawer-selected-text: $kendo-color-secondary !default;
+$kendo-drawer-selected-hover-bg: $kendo-hover-bg !default;
+$kendo-drawer-selected-hover-text: $kendo-color-secondary !default;

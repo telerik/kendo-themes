@@ -7,10 +7,10 @@ $kendo-editor-line-height: $line-height !default;
 $kendo-editor-placeholder-text: $kendo-input-placeholder-text !default;
 $kendo-editor-placeholder-opacity: $kendo-input-placeholder-opacity !default;
 
-$kendo-editor-selected-text: $primary-contrast !default;
-$kendo-editor-selected-bg: $primary !default;
+$kendo-editor-selected-text: $kendo-color-primary-contrast !default;
+$kendo-editor-selected-bg: $kendo-color-primary !default;
 
-$kendo-editor-highlighted-bg: k-color-mix($primary, #ffffff, 20%) !default;
+$kendo-editor-highlighted-bg: k-color-mix($kendo-color-primary, #ffffff, 20%) !default;
 
 $kendo-editor-export-tool-icon-margin-x: .25em !default;
 

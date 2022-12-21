@@ -68,7 +68,7 @@ $kendo-treeview-sizes: (
 $kendo-treeview-bg: null !default;
 /// Text color of the treeview component.
 /// @group treeview
-$kendo-treeview-text: $component-text !default;
+$kendo-treeview-text: $kendo-component-text !default;
 /// Border color of the treeview component.
 /// @group treeview
 $kendo-treeview-border: null !default;
@@ -91,7 +91,7 @@ $kendo-treeview-item-hover-gradient: null !default;
 $kendo-treeview-item-selected-bg: null !default;
 /// Text color of selected treeview items.
 /// @group treeview
-$kendo-treeview-item-selected-text: $selected-bg !default;
+$kendo-treeview-item-selected-text: $kendo-selected-bg !default;
 /// Border color of selected treeview items.
 /// @group treeview
 $kendo-treeview-item-selected-border: null !default;

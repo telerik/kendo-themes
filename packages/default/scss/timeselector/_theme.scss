@@ -37,7 +37,7 @@
 
             &::before,
             &::after {
-                background-color: $time-list-focused-bg;
+                background-color: $time-list-focus-bg;
             }
         }
     }
@@ -52,7 +52,7 @@
         }
 
         .k-item:hover {
-            color: $primary;
+            color: $kendo-color-primary;
         }
     }
 

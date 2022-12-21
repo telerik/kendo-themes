@@ -180,13 +180,13 @@ $kendo-grid-alt-border: $kendo-table-alt-row-border !default;
 
 /// Background color of hovered rows in grid
 /// @group grid
-$kendo-grid-hovered-bg: $kendo-table-hover-bg !default;
+$kendo-grid-hover-bg: $kendo-table-hover-bg !default;
 /// Text color of hovered rows in grid
 /// @group grid
-$kendo-grid-hovered-text: $kendo-table-hover-text !default;
+$kendo-grid-hover-text: $kendo-table-hover-text !default;
 /// Border color of hovered rows in grid
 /// @group grid
-$kendo-grid-hovered-border: $kendo-table-hover-border !default;
+$kendo-grid-hover-border: $kendo-table-hover-border !default;
 
 /// Background color of selected rows in grid
 /// @group grid
@@ -198,9 +198,9 @@ $kendo-grid-selected-text: $kendo-table-selected-text !default;
 /// @group grid
 $kendo-grid-selected-border: $kendo-table-selected-border !default;
 
-$kendo-grid-sorted-icon-spacing: calc( #{$padding-x} - 1px ) !default;
+$kendo-grid-sorted-icon-spacing: calc( #{$kendo-padding-md-x} - 1px ) !default;
 $kendo-grid-sorted-bg: rgba( k-contrast-color( $kendo-grid-bg ), .02 ) !default;
-$kendo-grid-sorting-indicator-text: $primary !default;
+$kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
 $kendo-grid-sorting-index-font-size: $font-size-sm !default;
 $kendo-grid-sorting-index-height: $icon-size !default;
 $kendo-grid-sorting-index-spacing-y: k-math-div( $icon-spacing, 2 ) !default;
@@ -209,7 +209,7 @@ $kendo-grid-sorting-index-spacing-x: -$kendo-grid-sorting-index-spacing-y !defau
 $kendo-grid-grouping-row-bg: k-try-shade( $kendo-grid-bg, 1 ) !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
-$kendo-grid-focused-shadow: $kendo-table-focus-shadow !default;
+$kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
 
 $kendo-grid-command-cell-button-spacing: k-map-get( $kendo-spacing, 2 ) !default;
 // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
@@ -226,13 +226,13 @@ $kendo-grid-sticky-header-text: $kendo-grid-header-text !default;
 $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
-$kendo-grid-sticky-footer-hovered-bg: $kendo-grid-hovered-bg !default;
+$kendo-grid-sticky-footer-hover-bg: $kendo-grid-hover-bg !default;
 
 $kendo-grid-sticky-selected-bg: $kendo-grid-selected-bg !default;
 $kendo-grid-sticky-selected-alt-bg: k-try-shade( $kendo-grid-selected-bg, .5 ) !default;
 
-$kendo-grid-sticky-hovered-bg: $kendo-grid-hovered-bg !default;
-$kendo-grid-sticky-selected-hovered-bg: k-try-shade( $kendo-grid-selected-bg, 1 ) !default;
+$kendo-grid-sticky-hover-bg: $kendo-grid-hover-bg !default;
+$kendo-grid-sticky-selected-hover-bg: k-try-shade( $kendo-grid-selected-bg, 1 ) !default;
 
 $kendo-grid-column-menu-width: 230px !default;
 
@@ -251,10 +251,7 @@ $kendo-grid-column-menu-list-item-padding-x: $kendo-list-item-padding-x-md !defa
 $kendo-grid-column-menu-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 $kendo-grid-column-menu-items-wrap-padding-x: 0 !default;
-$kendo-grid-column-menu-items-wrap-padding-y: $padding-y-lg !default;
-
-$kendo-grid-column-menu-filter-container-padding-x: $padding-x !default;
-$kendo-grid-column-menu-filter-container-padding-y: $padding-y !default;
+$kendo-grid-column-menu-items-wrap-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 $kendo-grid-column-menu-group-header-padding-x: $kendo-menu-popup-item-padding-x-md !default;
 $kendo-grid-column-menu-group-header-padding-y: $kendo-menu-popup-item-padding-y-md !default;

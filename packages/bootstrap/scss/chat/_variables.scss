@@ -18,7 +18,7 @@ $chat-message-list-spacing: $chat-item-spacing-y !default;
 $chat-timestamp-font-size: smaller !default;
 $chat-timestamp-line-height: null !default;
 $chat-timestamp-transform: uppercase !default;
-$chat-timestamp-text: $subtle-text !default;
+$chat-timestamp-text: $kendo-subtle-text !default;
 $chat-timestamp-bg: null !default;
 
 $chat-bubble-padding-x: 16px !default;
@@ -45,9 +45,9 @@ $chat-quick-reply-spacing: 8px !default;
 $chat-quick-reply-line-height: $chat-bubble-line-height !default;
 
 
-$chat-bg: $app-bg !default;
-$chat-text: $app-text !default;
-$chat-border: $app-border !default;
+$chat-bg: $kendo-app-bg !default;
+$chat-text: $kendo-app-text !default;
+$chat-border: $kendo-app-border !default;
 
 $chat-bubble-bg: $kendo-button-bg !default;
 $chat-bubble-text: $kendo-button-text !default;
@@ -56,7 +56,7 @@ $chat-bubble-shadow: none !default;
 $chat-bubble-hover-shadow: none !default;
 $chat-bubble-selected-shadow: none !default;
 
-$chat-alt-bubble-bg: $primary !default;
+$chat-alt-bubble-bg: $kendo-color-primary !default;
 $chat-alt-bubble-text: k-contrast-color( $chat-alt-bubble-bg ) !default;
 $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
 $chat-alt-bubble-shadow: none !default;
@@ -64,9 +64,9 @@ $chat-alt-bubble-hover-shadow: none !default;
 $chat-alt-bubble-selected-shadow: none !default;
 
 $chat-quick-reply-bg: transparent !default;
-$chat-quick-reply-text: $primary !default;
-$chat-quick-reply-border: $primary !default;
+$chat-quick-reply-text: $kendo-color-primary !default;
+$chat-quick-reply-border: $kendo-color-primary !default;
 
-$chat-quick-reply-hover-bg: $primary !default;
-$chat-quick-reply-hover-text: $primary-contrast !default;
-$chat-quick-reply-hover-border: $primary !default;
+$chat-quick-reply-hover-bg: $kendo-color-primary !default;
+$chat-quick-reply-hover-text: $kendo-color-primary-contrast !default;
+$chat-quick-reply-hover-border: $kendo-color-primary !default;

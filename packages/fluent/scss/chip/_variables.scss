@@ -113,16 +113,16 @@ $_tc-base-matrix: (
         hover: (30, 190, 30),
         focus: (20, 160, 130),
         focus-hover: (20, 190, 130),
-        selected: (get-theme-color-var( primary-100 ), $white, get-theme-color-var( primary-100 )),
-        selected-hover: (get-theme-color-var( primary-100 ), $white, get-theme-color-var( primary-100 )),
+        selected: (get-theme-color-var( primary-100 ), $kendo-color-white, get-theme-color-var( primary-100 )),
+        selected-hover: (get-theme-color-var( primary-100 ), $kendo-color-white, get-theme-color-var( primary-100 )),
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
     ),
     outline: (
         normal: (transparent, 160, currentColor),
-        hover: (190, $white, 190),
+        hover: (190, $kendo-color-white, 190),
         focus: (transparent, 160, currentColor, inherit),
-        focus-hover: (190, $white, 190, inherit),
-        selected: (190, $white, 190),
+        focus-hover: (190, $kendo-color-white, 190, inherit),
+        selected: (190, $kendo-color-white, 190),
         selected-hover: (20, 190, 110),
         disabled: (initial, var( --kendo-disabled-text, inherit ), 90)
     ),
@@ -141,11 +141,11 @@ $_tc-brand-matrix: (
     ),
     outline: (
         normal: (transparent, 160, currentColor),
-        hover: (190, $white, 190),
+        hover: (190, $kendo-color-white, 190),
         focus: (transparent, 160, 160, inherit),
-        focus-hover: (190, $white, 190, inherit),
-        selected: (190, $white, 190),
-        selected-hover: (190, $white, 190),
+        focus-hover: (190, $kendo-color-white, 190, inherit),
+        selected: (190, $kendo-color-white, 190),
+        selected-hover: (190, $kendo-color-white, 190),
         disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
     )
 ) !default;
@@ -163,11 +163,11 @@ $_tc-warning-matrix: (
     ),
     outline: (
         normal: (transparent, 160, currentColor),
-        hover: (190, $white, 190),
+        hover: (190, $kendo-color-white, 190),
         focus: (transparent, 160, 160, inherit),
-        focus-hover: (190, $white, 190, inherit),
-        selected: (190, $white, 190),
-        selected-hover: (190, $white, 190),
+        focus-hover: (190, $kendo-color-white, 190, inherit),
+        selected: (190, $kendo-color-white, 190),
+        selected-hover: (190, $kendo-color-white, 190),
         disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
     )
 ) !default;

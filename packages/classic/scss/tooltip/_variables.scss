@@ -1,6 +1,6 @@
 // Tooltip
-$tooltip-padding-y: $padding-y !default;
-$tooltip-padding-x: $padding-x !default;
+$tooltip-padding-y: $kendo-padding-md-y !default;
+$tooltip-padding-x: $kendo-padding-md-x !default;
 $tooltip-max-width: null !default;
 $tooltip-border-width: 0px !default;
 $tooltip-border-radius: $kendo-border-radius-md !default;
@@ -14,22 +14,22 @@ $tooltip-title-line-height: 1 !default;
 
 $tooltip-callout-size: 6px !default;
 
-$tooltip-bg: rgba( k-contrast-color( $body-bg ), .75 ) !default;
+$tooltip-bg: rgba( k-contrast-color( $kendo-body-bg ), .75 ) !default;
 $tooltip-text: k-contrast-color( $tooltip-bg ) !default;
 $tooltip-border: $tooltip-bg !default;
 
-$tooltip-primary-bg: $primary !default;
+$tooltip-primary-bg: $kendo-color-primary !default;
 $tooltip-primary-text: k-contrast-legacy( $tooltip-primary-bg ) !default;
 $tooltip-primary-border: $tooltip-primary-bg !default;
-$tooltip-info-bg: $info !default;
+$tooltip-info-bg: $kendo-color-info !default;
 $tooltip-info-text: k-contrast-color( $tooltip-info-bg ) !default;
 $tooltip-info-border: $tooltip-info-bg !default;
-$tooltip-success-bg: $success !default;
+$tooltip-success-bg: $kendo-color-success !default;
 $tooltip-success-text: k-contrast-color( $tooltip-success-bg ) !default;
 $tooltip-success-border: $tooltip-success-bg !default;
-$tooltip-warning-bg: $warning !default;
+$tooltip-warning-bg: $kendo-color-warning !default;
 $tooltip-warning-text: k-contrast-color( $tooltip-warning-bg ) !default;
 $tooltip-warning-border: $tooltip-warning-bg !default;
-$tooltip-error-bg: $error !default;
+$tooltip-error-bg: $kendo-color-error !default;
 $tooltip-error-text: k-contrast-color( $tooltip-error-bg ) !default;
 $tooltip-error-border: $tooltip-error-bg !default;

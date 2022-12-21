@@ -1,9 +1,9 @@
 // Disabled
-@mixin disabled( $disabled-styling ) {
+@mixin disabled( $kendo-disabled-styling ) {
     outline: none;
     cursor: default;
-    opacity: k-map-get($disabled-styling, opacity);
-    filter: k-map-get($disabled-styling, filter);
+    opacity: k-map-get($kendo-disabled-styling, opacity);
+    filter: k-map-get($kendo-disabled-styling, filter);
     pointer-events: none;
     box-shadow: none;
 }

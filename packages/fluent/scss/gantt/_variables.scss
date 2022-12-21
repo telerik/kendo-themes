@@ -26,7 +26,7 @@ $kendo-gantt-border: var( --kendo-component-border, inherit ) !default;
 
 /// Background color of the gantt non-working days.
 /// @group gantt
-$kendo-gantt-nonwork-bg: rgba( $black, .04 ) !default;
+$kendo-gantt-nonwork-bg: rgba( $kendo-color-black, .04 ) !default;
 /// Text color of the gantt non-working days.
 /// @group gantt
 $kendo-gantt-nonwork-text: inherit !default;
@@ -52,16 +52,16 @@ $kendo-gantt-dot-size: 8px !default;
 $kendo-gantt-dot-spacing: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Background color of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-bg: $black !default;
+$kendo-gantt-dot-bg: $kendo-color-black !default;
 /// Border color of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-border: $black !default;
+$kendo-gantt-dot-border: $kendo-color-black !default;
 /// Hover background color of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-hover-bg: $white !default;
+$kendo-gantt-dot-hover-bg: $kendo-color-white !default;
 /// Hover border color of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-hover-border: $black !default;
+$kendo-gantt-dot-hover-border: $kendo-color-black !default;
 
 /// Background color of the gantt milestone.
 /// @group gantt
@@ -103,7 +103,7 @@ $kendo-gantt-task-padding-y: map.get( $kendo-spacing, 1 ) !default;
 $kendo-gantt-task-bg: get-theme-color-var( neutral-110 ) !default;
 /// Text color of the gantt task.
 /// @group gantt
-$kendo-gantt-task-text: $white !default;
+$kendo-gantt-task-text: $kendo-color-white !default;
 /// Border color of the gantt task.
 /// @group gantt
 $kendo-gantt-task-border: inherit !default;
@@ -118,7 +118,7 @@ $kendo-gantt-task-progress-hover-bg: get-theme-color-var( neutral-190 ) !default
 $kendo-gantt-task-selected-bg: get-theme-color-var( primary-50 ) !default;
 /// Selected text color of the gantt task.
 /// @group gantt
-$kendo-gantt-task-selected-text: $white !default;
+$kendo-gantt-task-selected-text: $kendo-color-white !default;
 /// Selected border color of the gantt task.
 /// @group gantt
 $kendo-gantt-task-selected-border: transparent !default;
@@ -128,10 +128,10 @@ $kendo-gantt-task-progress-selected-bg: get-theme-color-var( primary-100 ) !defa
 
 /// Vertical padding of the gantt task actions.
 /// @group gantt
-$kendo-gantt-task-actions-padding-y: $kendo-padding-y !default;
+$kendo-gantt-task-actions-padding-y: $kendo-padding-md-y !default;
 /// Horizontal padding of the gantt task actions.
 /// @group gantt
-$kendo-gantt-task-actions-padding-x: $kendo-padding-x !default;
+$kendo-gantt-task-actions-padding-x: $kendo-padding-md-x !default;
 
 /// Vertical margin of the gantt task planned line.
 /// @group gantt
@@ -186,7 +186,7 @@ $kendo-gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
 
 /// Text color of the gantt planned tooltip.
 /// @group gantt
-$kendo-gantt-planned-text: $white !default;
+$kendo-gantt-planned-text: $kendo-color-white !default;
 /// Background color of the gantt planned tooltip.
 /// @group gantt
 $kendo-gantt-planned-bg: get-theme-color-var( primary-100 ) !default;
@@ -196,7 +196,7 @@ $kendo-gantt-planned-border: get-theme-color-var( primary-100 ) !default;
 
 /// Text color of the gantt delayed task.
 /// @group gantt
-$kendo-gantt-delayed-text: $white !default;
+$kendo-gantt-delayed-text: $kendo-color-white !default;
 /// Background color of the gantt delayed task.
 /// @group gantt
 $kendo-gantt-delayed-bg: get-theme-color-var( error-160 ) !default;
@@ -219,7 +219,7 @@ $kendo-gantt-advanced-hover-bg: get-theme-color-var( success-190 ) !default;
 
 /// Text color of the gantt delayed task action.
 /// @group gantt
-$kendo-gantt-action-on-offset-text: $black !default;
+$kendo-gantt-action-on-offset-text: $kendo-color-black !default;
 /// Top position of the gantt delayed task resize handler.
 /// @group gantt
 $kendo-gantt-offset-resize-handler-top: 50% !default;

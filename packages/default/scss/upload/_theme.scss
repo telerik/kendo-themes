@@ -33,7 +33,7 @@
 
         .k-file {
             &.k-focus {
-                box-shadow: inset $kendo-upload-focused-shadow;
+                box-shadow: inset $kendo-upload-focus-shadow;
             }
 
         }
@@ -80,7 +80,7 @@
         .k-file-size,
         .k-file-validation-message,
         .k-file-summary {
-            color: $subtle-text;
+            color: $kendo-subtle-text;
         }
 
         .k-multiple-files-wrapper .k-file-summary {
@@ -91,7 +91,7 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            border-color: $invalid-border;
+            border-color: $kendo-invalid-border;
         }
     }
 

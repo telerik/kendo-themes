@@ -4,14 +4,14 @@ $menu-font-family: $font-family !default;
 $menu-font-size: $font-size !default;
 $menu-line-height: $line-height !default;
 
-$menu-bg: $header-bg !default;
-$menu-text: $header-text !default;
-$menu-border: $header-border !default;
+$menu-bg: $kendo-component-header-bg !default;
+$menu-text: $kendo-component-header-text !default;
+$menu-border: $kendo-component-header-border !default;
 $menu-gradient: null !default;
 
-$menu-item-padding-x: $navbar-nav-link-padding-x !default;
-$menu-item-padding-y: $nav-item-padding-y !default;
-$menu-item-spacing: $nav-item-margin !default;
+$menu-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$menu-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$menu-item-spacing: 0 !default;
 $menu-item-icon-spacing: $icon-spacing !default;
 
 $menu-item-bg: null !default;

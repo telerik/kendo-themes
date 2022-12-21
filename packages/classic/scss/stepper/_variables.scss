@@ -16,7 +16,7 @@ $stepper-line-height: $line-height !default;
 $stepper-font-family: $font-family !default;
 
 $stepper-bg: null !default;
-$stepper-text: $component-text !default;
+$stepper-text: $kendo-component-text !default;
 $stepper-border: null !default;
 
 $stepper-indicator-width: 28px !default;
@@ -29,19 +29,19 @@ $stepper-indicator-focus-size: 2px !default;
 $stepper-indicator-focus-offset: 3px !default;
 $stepper-indicator-focus-calc-offset: calc( #{$stepper-indicator-focus-border-width} + #{$stepper-indicator-focus-offset} ) !default;
 
-$stepper-indicator-bg: $component-bg !default;
-$stepper-indicator-text: $component-text !default;
-$stepper-indicator-border: $component-border !default;
+$stepper-indicator-bg: $kendo-component-bg !default;
+$stepper-indicator-text: $kendo-component-text !default;
+$stepper-indicator-border: $kendo-component-border !default;
 
 $stepper-indicator-hover-bg: k-try-shade( $stepper-indicator-bg ) !default;
 $stepper-indicator-hover-text: null !default;
 $stepper-indicator-hover-border: null !default;
 
 $stepper-indicator-disabled-bg: null !default;
-$stepper-indicator-disabled-text: $disabled-text !default;
+$stepper-indicator-disabled-text: $kendo-disabled-text !default;
 $stepper-indicator-disabled-border: null !default;
 
-$stepper-indicator-done-bg: $primary !default;
+$stepper-indicator-done-bg: $kendo-color-primary !default;
 $stepper-indicator-done-text: k-contrast-legacy( $stepper-indicator-done-bg ) !default;
 $stepper-indicator-done-border: $stepper-indicator-done-bg !default;
 
@@ -49,7 +49,7 @@ $stepper-indicator-done-hover-bg: k-try-shade( $stepper-indicator-done-bg ) !def
 $stepper-indicator-done-hover-text: null !default;
 $stepper-indicator-done-hover-border: null !default;
 
-$stepper-indicator-done-disabled-bg: k-color-mix( $stepper-indicator-done-bg, $component-bg, 60% ) !default;
+$stepper-indicator-done-disabled-bg: k-color-mix( $stepper-indicator-done-bg, $kendo-component-bg, 60% ) !default;
 $stepper-indicator-done-disabled-text: k-contrast-legacy( $stepper-indicator-done-bg ) !default;
 $stepper-indicator-done-disabled-border: $stepper-indicator-done-disabled-bg !default;
 
@@ -66,12 +66,12 @@ $stepper-indicator-current-disabled-text: $stepper-indicator-done-disabled-text 
 $stepper-indicator-current-disabled-border: $stepper-indicator-done-disabled-border !default;
 
 $stepper-label-text: null !default;
-$stepper-label-success-text: $success !default;
-$stepper-label-error-text: $error !default;
+$stepper-label-success-text: $kendo-color-success !default;
+$stepper-label-error-text: $kendo-color-error !default;
 $stepper-label-hover-text: null !default;
-$stepper-label-disabled-text: $disabled-text !default;
+$stepper-label-disabled-text: $kendo-disabled-text !default;
 
-$stepper-optional-label-text: $subtle-text !default;
+$stepper-optional-label-text: $kendo-subtle-text !default;
 $stepper-optional-label-opacity: null !default;
 $stepper-optional-label-font-size: $font-size-sm !default;
 $stepper-optional-label-font-style: null !default;

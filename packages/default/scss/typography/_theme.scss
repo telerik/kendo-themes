@@ -2,8 +2,8 @@
 
     .k-body {
         @include fill(
-            $body-text,
-            $body-bg
+            $kendo-body-text,
+            $kendo-body-bg
         );
     }
 

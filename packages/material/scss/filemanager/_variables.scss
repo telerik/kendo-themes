@@ -4,9 +4,9 @@ $filemanager-border-width: 1px !default;
 $filemanager-font-family: $font-family !default;
 $filemanager-font-size: $font-size !default;
 $filemanager-line-height: $line-height !default;
-$filemanager-bg: $component-bg !default;
-$filemanager-text: $component-text !default;
-$filemanager-border: $component-border !default;
+$filemanager-bg: $kendo-component-bg !default;
+$filemanager-text: $kendo-component-text !default;
+$filemanager-border: $kendo-component-border !default;
 
 $filemanager-toolbar-border-width: $filemanager-border-width !default;
 $filemanager-toolbar-bg: k-try-shade( $kendo-button-bg, .5 ) !default;

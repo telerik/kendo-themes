@@ -12,11 +12,11 @@ $kendo-appbar-line-height: $line-height !default;
 $kendo-appbar-font-family: $font-family !default;
 $kendo-appbar-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
-$kendo-appbar-light-bg: $light !default;
-$kendo-appbar-light-text: k-contrast-color( $light ) !default;
+$kendo-appbar-light-bg: $kendo-color-light !default;
+$kendo-appbar-light-text: k-contrast-color( $kendo-color-light ) !default;
 
-$kendo-appbar-dark-bg: $dark !default;
-$kendo-appbar-dark-text: k-contrast-color( $dark ) !default;
+$kendo-appbar-dark-bg: $kendo-color-dark !default;
+$kendo-appbar-dark-text: k-contrast-color( $kendo-color-dark ) !default;
 
 $kendo-appbar-box-shadow: 0px 1px 1px rgba( black, .16 ) !default;
 $kendo-appbar-bottom-box-shadow: 0px -1px 1px rgba( black, .16 ) !default;

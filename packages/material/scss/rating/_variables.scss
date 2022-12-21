@@ -3,21 +3,21 @@ $rating-font-family: $font-family !default;
 $rating-font-size: $font-size !default;
 $rating-line-height: $line-height !default;
 
-$rating-container-margin-x: k-math-div( $padding-x-sm, 2 ) !default;
+$rating-container-margin-x: k-math-div( $kendo-padding-sm-x, 2 ) !default;
 
-$rating-item-padding-x: k-math-div( $padding-x-sm, 2 ) !default;
-$rating-item-padding-y: $padding-y !default;
+$rating-item-padding-x: k-math-div( $kendo-padding-sm-x, 2 ) !default;
+$rating-item-padding-y: $kendo-padding-md-y !default;
 
-$rating-label-margin-x: $padding-x-sm !default;
-$rating-label-margin-y: $padding-y !default;
+$rating-label-margin-x: $kendo-padding-sm-x !default;
+$rating-label-margin-y: $kendo-padding-md-y !default;
 $rating-label-line-height: $line-height-lg !default;
 
 $rating-icon-size: ($icon-size * 1.5) !default;
 
-$rating-icon-text: $subtle-text !default;
-$rating-icon-selected-text: $primary-darker !default;
-$rating-icon-hover-text: $primary-darker !default;
-$rating-icon-focused-text: $primary-darker !default;
+$rating-icon-text: $kendo-subtle-text !default;
+$rating-icon-selected-text: $kendo-color-primary-darker !default;
+$rating-icon-hover-text: $kendo-color-primary-darker !default;
+$rating-icon-focus-text: $kendo-color-primary-darker !default;
 
-$rating-icon-focused-shadow: 0 2px 4px rgba( black, .1 ) !default;
-$rating-icon-focused-selected-shadow: 0 2px 4px rgba( black, .1) !default;
+$rating-icon-focus-shadow: 0 2px 4px rgba( black, .1 ) !default;
+$rating-icon-focus-selected-shadow: 0 2px 4px rgba( black, .1) !default;

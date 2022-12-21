@@ -15,7 +15,7 @@ $dropzone-border: $base-border !default;
 $dropzone-icon-size: ( $icon-size * 3 ) !default;
 $dropzone-icon-spacing: k-map-get( $kendo-spacing, 6 ) !default;
 $dropzone-icon-text: k-try-tint( $dropzone-text, 4 ) !default;
-$dropzone-icon-hover-text: $primary !default;
+$dropzone-icon-hover-text: $kendo-color-primary !default;
 
 $dropzone-hint-font-size: null !default;
 $dropzone-hint-spacing: k-map-get( $kendo-spacing, 2 ) !default;
@@ -23,4 +23,4 @@ $dropzone-hint-text: null !default;
 
 $dropzone-note-font-size: $font-size-sm !default;
 $dropzone-note-spacing: null !default;
-$dropzone-note-text: $subtle-text !default;
+$dropzone-note-text: $kendo-subtle-text !default;

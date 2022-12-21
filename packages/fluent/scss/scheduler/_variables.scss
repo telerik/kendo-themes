@@ -83,7 +83,7 @@ $kendo-scheduler-event-min-height: calc( #{$kendo-scheduler-line-height} + 2 * #
 $kendo-scheduler-event-bg: get-theme-color-var( primary-100 ) !default;
 /// Text color of the scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-text: $white !default;
+$kendo-scheduler-event-text: $kendo-color-white !default;
 /// Border color of the scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-border: $kendo-scheduler-event-bg !default;
@@ -199,7 +199,7 @@ $kendo-scheduler-yearview-indicator-border-radius: 50% !default;
 $kendo-scheduler-yearview-indicator-bg: get-theme-color-var( primary-100 ) !default;
 /// Background color of the selected days with events indicator in the scheduler year view.
 /// @group scheduler
-$kendo-scheduler-yearview-indicator-selected-bg: $white !default;
+$kendo-scheduler-yearview-indicator-selected-bg: $kendo-color-white !default;
 
 /// Horizontal padding of the scheduler tooltip.
 /// @group scheduler
@@ -212,7 +212,7 @@ $kendo-scheduler-tooltip-padding-y: $kendo-scheduler-tooltip-padding-x !default;
 $kendo-scheduler-tooltip-border-width: 0 !default;
 /// Background color of the scheduler tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-bg: $white !default;
+$kendo-scheduler-tooltip-bg: $kendo-color-white !default;
 /// Text color of the scheduler tooltip.
 /// @group scheduler
 $kendo-scheduler-tooltip-text: get-theme-color-var( neutral-130 ) !default;

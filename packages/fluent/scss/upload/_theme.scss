@@ -38,11 +38,11 @@
         .k-file {
 
             &.k-focus {
-                box-shadow: var( --kendo-upload-focused-shadow, #{$kendo-upload-focused-shadow} );
+                box-shadow: var( --kendo-upload-focus-shadow, #{$kendo-upload-focus-shadow} );
             }
 
             .k-upload-action.k-focus {
-                box-shadow: var( --kendo-upload-focused-shadow, #{$kendo-upload-focused-shadow} );
+                box-shadow: var( --kendo-upload-focus-shadow, #{$kendo-upload-focus-shadow} );
             }
 
         }

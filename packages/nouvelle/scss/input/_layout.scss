@@ -225,7 +225,7 @@
 
     // Input button
     .k-input-button {
-        width: if( $use-input-button-width, var( --kendo-input-button-width, auto ), null );
+        width: if( $kendo-use-input-button-width, var( --kendo-input-button-width, auto ), null );
         padding-inline:  var( --kendo-input-button-padding-x, 0 );
         padding-block: var( --kendo-input-button-padding-y, 0 );
         border-width: 0;
@@ -261,7 +261,7 @@
 
     // Input spinner
     .k-input-spinner {
-        width: if( $use-input-spinner-width, var( --kendo-input-spinner-width, auto ), null );
+        width: if( $kendo-use-input-spinner-width, var( --kendo-input-spinner-width, auto ), null );
         flex: none;
         display: flex;
         flex-flow: column nowrap;
@@ -286,10 +286,10 @@
             }
         }
         .k-spinner-increase .k-icon {
-            bottom: if( $use-input-spinner-icon-offset, calc( -1 * var( --kendo-input-spinner-icon-offset, 0 ) ), null );
+            bottom: if( $kendo-use-input-spinner-icon-offset, calc( -1 * var( --kendo-input-spinner-icon-offset, 0 ) ), null );
         }
         .k-spinner-decrease .k-icon {
-            top: if( $use-input-spinner-icon-offset, calc( -1 * var( --kendo-input-spinner-icon-offset, 0 ) ), null );
+            top: if( $kendo-use-input-spinner-icon-offset, calc( -1 * var( --kendo-input-spinner-icon-offset, 0 ) ), null );
         }
     }
 

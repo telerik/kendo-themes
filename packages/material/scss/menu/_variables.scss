@@ -7,13 +7,13 @@ $menu-font-size: $font-size !default;
 $menu-line-height: $line-height !default;
 
 $menu-bg: transparent !default;
-$menu-text: $component-text !default;
+$menu-text: $kendo-component-text !default;
 $menu-border: null !default;
 $menu-gradient: null !default;
 
-$menu-item-padding-x: $nav-item-padding-x !default;
-$menu-item-padding-y: $nav-item-padding-y !default;
-$menu-item-spacing: $nav-item-margin !default;
+$menu-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$menu-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$menu-item-spacing: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $menu-item-icon-spacing: $icon-spacing !default;
 
 $menu-item-bg: rgba( $menu-text, 0 ) !default;
@@ -35,8 +35,8 @@ $menu-item-focus-shadow: null !default;
 
 $menu-separator-spacing: k-map-get( $kendo-spacing, 1 ) !default;
 
-$menu-scroll-button-bg: $component-bg !default;
-$menu-scroll-button-text: $subtle-text !default;
+$menu-scroll-button-bg: $kendo-component-bg !default;
+$menu-scroll-button-text: $kendo-subtle-text !default;
 $menu-scroll-button-border: transparent !default;
 $menu-scroll-button-gradient: null !default;
 

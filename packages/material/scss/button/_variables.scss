@@ -163,10 +163,10 @@ $kendo-button-focus-shadow: null !default;
 
 /// The base background color of disabled button.
 /// @group button
-$kendo-button-disabled-bg: k-try-shade( $body-bg, 12% ) !default;
+$kendo-button-disabled-bg: k-try-shade( $kendo-body-bg, 12% ) !default;
 /// The base text color of disabled button.
 /// @group button
-$kendo-button-disabled-text: $disabled-text !default;
+$kendo-button-disabled-text: $kendo-disabled-text !default;
 /// The base border color of disabled button.
 /// @group button
 $kendo-button-disabled-border: $kendo-button-disabled-bg !default;

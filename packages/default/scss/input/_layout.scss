@@ -63,7 +63,7 @@
 
         &:disabled,
         &[disabled] {
-            @include disabled( $disabled-styling );
+            @include disabled( $kendo-disabled-styling );
 
             [disabled] &,
             .k-disabled & {
@@ -87,7 +87,7 @@
 
         &:disabled,
         &[disabled] {
-            @include disabled( $disabled-styling );
+            @include disabled( $kendo-disabled-styling );
 
             [disabled] &,
             .k-disabled & {
@@ -249,7 +249,7 @@
 
     // Input button
     .k-input-button {
-        width: if( $use-input-button-width, $kendo-input-button-width, auto );
+        width: if( $kendo-use-input-button-width, $kendo-input-button-width, auto );
         border-width: 0;
         border-inline-start-width: $kendo-input-button-border-width;
         flex: none;
@@ -274,7 +274,7 @@
 
     // Input spinner
     .k-input-spinner {
-        width: if( $use-input-spinner-width, $kendo-input-spinner-width, auto );
+        width: if( $kendo-use-input-spinner-width, $kendo-input-spinner-width, auto );
         flex: none;
         display: flex;
         flex-flow: column nowrap;
@@ -295,10 +295,10 @@
             }
         }
         .k-spinner-increase .k-icon {
-            bottom: if( $use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
+            bottom: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
         }
         .k-spinner-decrease .k-icon {
-            top: if( $use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
+            top: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
         }
     }
 

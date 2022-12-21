@@ -65,7 +65,7 @@ $kendo-chip-sizes: (
 
 /// The base background of the chip.
 /// @group chip
-$kendo-chip-base-bg: if( $dark-theme, $white, $black) !default;
+$kendo-chip-base-bg: if( $dark-theme, $kendo-color-white, $kendo-color-black) !default;
 
 /// Theme colors map for the chip.
 /// @group chip
@@ -116,7 +116,7 @@ $kendo-chip-solid-selected-text: null !default;
 
 /// The base background color of outline chip.
 /// @group chip
-$kendo-chip-outline-bg: $component-bg !default;
+$kendo-chip-outline-bg: $kendo-component-bg !default;
 /// The base text color of outline chip.
 /// @group chip
 $kendo-chip-outline-text: $kendo-chip-solid-text !default;

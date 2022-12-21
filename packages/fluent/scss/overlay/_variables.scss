@@ -6,7 +6,7 @@ $kendo-overlay-opacity: .4 !default;
 
 /// Background color of the dark overlay.
 /// @group overlay
-$kendo-overlay-dark: $black !default;
+$kendo-overlay-dark: $kendo-color-black !default;
 /// Background color of the light overlay.
 /// @group overlay
-$kendo-overlay-light: $white !default;
+$kendo-overlay-light: $kendo-color-white !default;

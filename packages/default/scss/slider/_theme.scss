@@ -3,7 +3,7 @@
     $slider-tick-vertical-image: k-map-get($data-uris, "slider-v.gif") !default;
 
     .k-slider {
-        color: $component-text;
+        color: $kendo-component-text;
 
         .k-slider-track,
         .k-slider-selection {
@@ -29,10 +29,10 @@
 
             &:hover {
                 @include fill(
-                    $slider-draghandle-hovered-text,
-                    $slider-draghandle-hovered-bg,
-                    $slider-draghandle-hovered-border,
-                    $slider-draghandle-hovered-gradient
+                    $slider-draghandle-hover-text,
+                    $slider-draghandle-hover-bg,
+                    $slider-draghandle-hover-border,
+                    $slider-draghandle-hover-gradient
                 );
             }
 
@@ -48,13 +48,13 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $slider-draghandle-focused-shadow );
+                @include box-shadow( $slider-draghandle-focus-shadow );
             }
         }
 
         &.k-focus {
             .k-draghandle {
-                @include box-shadow( $slider-draghandle-focused-shadow );
+                @include box-shadow( $slider-draghandle-focus-shadow );
             }
         }
 

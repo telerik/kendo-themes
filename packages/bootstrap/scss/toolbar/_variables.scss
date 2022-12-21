@@ -40,13 +40,13 @@ $kendo-toolbar-line-height: $line-height !default;
 
 /// Background color of the toolbar.
 /// @group toolbar
-$kendo-toolbar-bg: $header-bg !default;
+$kendo-toolbar-bg: $kendo-component-header-bg !default;
 /// Text color of the toolbar.
 /// @group toolbar
-$kendo-toolbar-text: $header-text !default;
+$kendo-toolbar-text: $kendo-component-header-text !default;
 /// Color of the border around the toolbar.
 /// @group toolbar
-$kendo-toolbar-border: $header-border !default;
+$kendo-toolbar-border: $kendo-component-header-border !default;
 /// Gradient of the toolbar.
 /// @group toolbar
 $kendo-toolbar-gradient: null !default;
@@ -64,7 +64,7 @@ $kendo-toolbar-input-width: 10em !default;
 
 /// Box shadow of the focused toolbar item.
 /// @group toolbar
-$kendo-toolbar-item-shadow: 0 0 0 .25rem rgba( $primary, .25 ) !default;
+$kendo-toolbar-item-shadow: 0 0 0 .25rem rgba( $kendo-color-primary, .25 ) !default;
 
 /// Sizes map for the toolbar.
 /// @group toolbar

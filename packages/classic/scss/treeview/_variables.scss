@@ -68,40 +68,40 @@ $kendo-treeview-sizes: (
 $kendo-treeview-bg: null !default;
 /// Text color of the treeview component.
 /// @group treeview
-$kendo-treeview-text: $component-text !default;
+$kendo-treeview-text: $kendo-component-text !default;
 /// Border color of the treeview component.
 /// @group treeview
 $kendo-treeview-border: null !default;
 
 /// Background color of hovered treeview items.
 /// @group treeview
-$kendo-treeview-item-hover-bg: $hovered-bg !default;
+$kendo-treeview-item-hover-bg: $kendo-hover-bg !default;
 /// Text color of hovered treeview items.
 /// @group treeview
-$kendo-treeview-item-hover-text: $hovered-text !default;
+$kendo-treeview-item-hover-text: $kendo-hover-text !default;
 /// Border color of hovered treeview items.
 /// @group treeview
-$kendo-treeview-item-hover-border: $hovered-border !default;
+$kendo-treeview-item-hover-border: $kendo-hover-border !default;
 /// Background gradient of hovered treeview items.
 /// @group treeview
-$kendo-treeview-item-hover-gradient: $hovered-gradient !default;
+$kendo-treeview-item-hover-gradient: $kendo-hover-gradient !default;
 
 /// Background color of selected treeview items.
 /// @group treeview
-$kendo-treeview-item-selected-bg: $selected-bg !default;
+$kendo-treeview-item-selected-bg: $kendo-selected-bg !default;
 /// Text color of selected treeview items.
 /// @group treeview
-$kendo-treeview-item-selected-text: $selected-text !default;
+$kendo-treeview-item-selected-text: $kendo-selected-text !default;
 /// Border color of selected treeview items.
 /// @group treeview
-$kendo-treeview-item-selected-border: $selected-border !default;
+$kendo-treeview-item-selected-border: $kendo-selected-border !default;
 /// Background gradient of selected treeview items.
 /// @group treeview
-$kendo-treeview-item-selected-gradient: $selected-gradient !default;
+$kendo-treeview-item-selected-gradient: $kendo-selected-gradient !default;
 
 /// Box shadow of focused treeview items.
 /// @group treeview
-$kendo-treeview-item-focus-shadow: $focused-shadow !default;
+$kendo-treeview-item-focus-shadow: $kendo-focus-shadow !default;
 
 /// Background color of load more.
 /// @group treeview

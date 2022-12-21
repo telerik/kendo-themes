@@ -14,7 +14,7 @@
 
         .k-resize-handle::before {
             // TODO: $scheduler-content-area-bg
-            background-color: $primary-contrast;
+            background-color: $kendo-color-primary-contrast;
         }
     }
 
@@ -32,4 +32,3 @@
     }
 
 }
-

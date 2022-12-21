@@ -36,10 +36,10 @@ $kendo-progressbar-gradient: null !default;
 
 /// Progress background color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-value-bg: $selected-bg !default;
+$kendo-progressbar-value-bg: $kendo-selected-bg !default;
 /// Progress text color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-value-text: $selected-text !default;
+$kendo-progressbar-value-text: $kendo-selected-text !default;
 /// Progress border color of the progressbar.
 /// @group progressbar
 $kendo-progressbar-value-border: null !default;
@@ -62,12 +62,12 @@ $kendo-progressbar-indeterminate-gradient: null !default;
 
 /// Border color of the chunk progressbar.
 /// @group progressbar
-$kendo-progressbar-chunk-border: $body-bg !default;
+$kendo-progressbar-chunk-border: $kendo-body-bg !default;
 
 // Circular Progressbar
 /// Arc stroke color of the circular progressbar.
 /// @group progressbar
-$kendo-circular-progressbar-arc-stroke: $primary !default;
+$kendo-circular-progressbar-arc-stroke: $kendo-color-primary !default;
 /// Scale stroke background color of the circular progressbar.
 /// @group progressbar
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;

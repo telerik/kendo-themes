@@ -6,18 +6,18 @@ $calendar-line-height: $line-height !default;
 
 $calendar-cell-size: 32px !default;
 
-$calendar-bg: $component-bg !default;
-$calendar-text: $component-text !default;
-$calendar-border: $component-border !default;
+$calendar-bg: $kendo-component-bg !default;
+$calendar-text: $kendo-component-text !default;
+$calendar-border: $kendo-component-border !default;
 
 $calendar-header-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $calendar-header-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $calendar-header-border-width: 1px !default;
 
-$calendar-header-bg: $header-bg !default;
-$calendar-header-text: $header-text !default;
-$calendar-header-border: $header-border !default;
-$calendar-header-gradient: $header-gradient !default;
+$calendar-header-bg: $kendo-component-header-bg !default;
+$calendar-header-text: $kendo-component-header-text !default;
+$calendar-header-border: $kendo-component-header-border !default;
+$calendar-header-gradient: $kendo-component-header-gradient !default;
 $calendar-header-shadow: null !default;
 
 $calendar-nav-gap: null !default;
@@ -37,7 +37,7 @@ $calendar-header-cell-height: $calendar-cell-size !default;
 $calendar-header-cell-font-size: $font-size-sm !default;
 $calendar-header-cell-line-height: 2 !default;
 $calendar-header-cell-bg: null !default;
-$calendar-header-cell-text: $subtle-text !default;
+$calendar-header-cell-text: $kendo-subtle-text !default;
 $calendar-header-cell-opacity: null !default;
 
 $calendar-caption-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
@@ -68,23 +68,23 @@ $calendar-cell-text: null !default;
 $calendar-cell-border: null !default;
 $calendar-cell-gradient: null !default;
 
-$calendar-cell-hover-bg: $hovered-bg !default;
-$calendar-cell-hover-text: $hovered-text !default;
-$calendar-cell-hover-border: $hovered-border !default;
+$calendar-cell-hover-bg: $kendo-hover-bg !default;
+$calendar-cell-hover-text: $kendo-hover-text !default;
+$calendar-cell-hover-border: $kendo-hover-border !default;
 $calendar-cell-hover-gradient: null !default;
 
-$calendar-cell-selected-bg: $selected-bg !default;
-$calendar-cell-selected-text: $selected-text !default;
-$calendar-cell-selected-border: $selected-border !default;
+$calendar-cell-selected-bg: $kendo-selected-bg !default;
+$calendar-cell-selected-text: $kendo-selected-text !default;
+$calendar-cell-selected-border: $kendo-selected-border !default;
 $calendar-cell-selected-gradient: null !default;
 
-$calendar-cell-selected-hover-bg: $selected-hover-bg !default;
-$calendar-cell-selected-hover-text: $selected-hover-text !default;
-$calendar-cell-selected-hover-border: $selected-hover-border !default;
+$calendar-cell-selected-hover-bg: $kendo-selected-hover-bg !default;
+$calendar-cell-selected-hover-text: $kendo-selected-hover-text !default;
+$calendar-cell-selected-hover-border: $kendo-selected-hover-border !default;
 $calendar-cell-selected-hover-gradient: null !default;
 
-$calendar-cell-focused-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
-$calendar-cell-selected-focus-shadow: $calendar-cell-focused-shadow !default;
+$calendar-cell-focus-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
+$calendar-cell-selected-focus-shadow: $calendar-cell-focus-shadow !default;
 
 
 // Calendar navigation

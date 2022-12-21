@@ -66,7 +66,7 @@ $kendo-loader-container-panel-border-color: var( --kendo-component-border, initi
 $kendo-loader-container-panel-border-radius: var( --kendo-border-radius-md, 0 ) !default;
 /// Background color of the container panel.
 /// @group loader
-$kendo-loader-container-panel-bg: $white !default;
+$kendo-loader-container-panel-bg: $kendo-color-white !default;
 
 /// Horizontal padding of the loader container.
 /// @group loader
