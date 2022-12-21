@@ -10,7 +10,7 @@ $kendo-listview-padding-x: map.get( $kendo-spacing, 1 ) !default;
 $kendo-listview-padding-y: map.get( $kendo-spacing, 1 ) !default;
 /// Width of listview.
 /// @group listview
-$kendo-listview-border-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-listview-border-width: 1px !default;
 
 /// Horizontal padding of listview header.
 /// @group listview

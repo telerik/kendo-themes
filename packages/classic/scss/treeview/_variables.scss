@@ -21,16 +21,16 @@ $kendo-treeview-indent: 16px !default;
 
 /// Horizontal padding of treeview items.
 /// @group treeview
-$kendo-treeview-item-padding-x: k-map-get( $spacing, 2 ) !default;
-$kendo-treeview-item-padding-x-sm: k-map-get( $spacing, 2 ) !default;
-$kendo-treeview-item-padding-x-md: k-map-get( $spacing, 2 ) !default;
-$kendo-treeview-item-padding-x-lg: k-map-get( $spacing, 3 ) !default;
+$kendo-treeview-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-x-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-x-lg: k-map-get( $kendo-spacing, 3 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
-$kendo-treeview-item-padding-y: k-map-get( $spacing, 1 ) !default;
-$kendo-treeview-item-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
-$kendo-treeview-item-padding-y-md: k-map-get( $spacing, 1 ) !default;
-$kendo-treeview-item-padding-y-lg: k-map-get( $spacing, 2 ) !default;
+$kendo-treeview-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-item-padding-y-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-treeview-item-padding-y-md: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-item-padding-y-lg: k-map-get( $kendo-spacing, 2 ) !default;
 /// Border width of treeview items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0px !default;

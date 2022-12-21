@@ -37,7 +37,7 @@ $kendo-map-navigator-margin-x: map.get( $kendo-spacing, 4 ) !default;
 $kendo-map-navigator-margin-y: map.get( $kendo-spacing, 4 ) !default;
 /// Map navigator padding.
 /// @group map
-$kendo-map-navigator-padding: map.get( $kendo-spacing, thin ) !default;
+$kendo-map-navigator-padding: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Map navigator width.
 /// @group map
 $kendo-map-navigator-width: calc( var( --kendo-icon-size) * 3 + #{$kendo-map-navigator-padding * 2} ) !default;
@@ -46,7 +46,7 @@ $kendo-map-navigator-width: calc( var( --kendo-icon-size) * 3 + #{$kendo-map-nav
 $kendo-map-navigator-height: $kendo-map-navigator-width !default;
 /// Map navigator border width.
 /// @group map
-$kendo-map-navigator-border-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-map-navigator-border-width: 1px !default;
 /// Map navigator background color.
 /// @group map
 $kendo-map-navigator-bg: $white !default;

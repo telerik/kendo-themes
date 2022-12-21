@@ -26,7 +26,7 @@ $kendo-input-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the input.
 /// @group input
 $kendo-input-padding-y-sm: map.get( $kendo-spacing, 1 ) !default;
-$kendo-input-padding-y-md: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-input-padding-y-md: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-input-padding-y-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Font sizes of the input.

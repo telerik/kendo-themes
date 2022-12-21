@@ -62,7 +62,7 @@
     _ {}
 
     // Margin
-    @each $size, $val in $spacing {
+    @each $size, $val in $kendo-spacing {
         @each $name, $prop in $utils-margin {
             .k-#{$name}-#{$size} { #{$prop}: $val !important; }
         }
@@ -120,7 +120,7 @@
     _ {}
 
     // Padding
-    @each $size, $val in $spacing {
+    @each $size, $val in $kendo-spacing {
         @each $name, $prop in $utils-padding {
             .k-#{$name}-#{$size} { #{$prop}: $val !important; }
         }
@@ -150,7 +150,7 @@
     // Gap
     .k-no-gap { gap: 0 !important; }
 
-    @each $size, $val in $spacing {
+    @each $size, $val in $kendo-spacing {
         .k-gap-#{$size}     { gap: $val; }
         .k-gap-x-#{$size}   { column-gap: $val; }
         .k-gap-y-#{$size}   { row-gap: $val; }

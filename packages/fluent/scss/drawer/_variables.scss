@@ -75,7 +75,7 @@ $kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{
 
 /// The border width of the drawer item ripple
 /// @group drawer
-$kendo-drawer-item-ripple-border-width: map.get( $kendo-spacing, thin ) !default;
+$kendo-drawer-item-ripple-border-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// The border color of the drawer item ripple
 /// @group drawer
 $kendo-drawer-item-ripple-border: get-theme-color-var( primary-100 ) !default;

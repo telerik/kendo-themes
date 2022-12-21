@@ -446,7 +446,7 @@
 
         .k-scroll-button {
             // IMPORTANT: if we don't set padding, the browser will set for us
-            padding: 0 k-map-get( $spacing, 1 );
+            padding: 0 k-map-get( $kendo-spacing, 1 );
             height: 100%;
             aspect-ratio: auto;
             position: absolute;

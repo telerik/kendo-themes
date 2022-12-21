@@ -49,7 +49,7 @@ $kendo-gantt-line-selected-fill: get-theme-color-var( primary-120 ) !default;
 $kendo-gantt-dot-size: 8px !default;
 /// Spacing of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-spacing: map.get( $kendo-spacing, thin ) !default;
+$kendo-gantt-dot-spacing: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Background color of the gantt task dot.
 /// @group gantt
 $kendo-gantt-dot-bg: $black !default;
@@ -219,7 +219,7 @@ $kendo-gantt-advanced-hover-bg: get-theme-color-var( success-190 ) !default;
 
 /// Text color of the gantt delayed task action.
 /// @group gantt
-$kendo-gantt-action-on-offset-text: $black  !default;
+$kendo-gantt-action-on-offset-text: $black !default;
 /// Top position of the gantt delayed task resize handler.
 /// @group gantt
 $kendo-gantt-offset-resize-handler-top: 50% !default;

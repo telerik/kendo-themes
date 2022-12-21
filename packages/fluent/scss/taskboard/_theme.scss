@@ -60,9 +60,9 @@
 
         &.k-disabled {
             @include fill(
-                var(  --kendo-disabled-text, inherit ),
-                var(  --kendo-disabled-bg, inherit ),
-                var(  --kendo-disabled-border, inherit )
+                var( --kendo-disabled-text, inherit ),
+                var( --kendo-disabled-bg, inherit ),
+                var( --kendo-disabled-border, inherit )
 
             );
 

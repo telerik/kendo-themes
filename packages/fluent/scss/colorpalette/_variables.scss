@@ -13,7 +13,7 @@ $kendo-colorpalette-line-height: 0 !default;
 
 /// Outline width of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-outline-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-colorpalette-tile-outline-width: 1px !default;
 /// Outline style of the color palette tile.
 /// @group colorpalette
 $kendo-colorpalette-tile-outline-style: solid !default;

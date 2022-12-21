@@ -1,6 +1,6 @@
 // Card
-$card-padding-x: k-map-get( $spacing, lg ) !default;
-$card-padding-y: k-map-get( $spacing, md ) !default;
+$card-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$card-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 $card-border-width: 0px !default;
 $card-border-radius: $kendo-border-radius-md !default;
 $card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} ) !default;
@@ -8,7 +8,7 @@ $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
 $card-line-height: k-math-div( 20, 14 ) !default;
 
-$card-deck-gap: k-map-get( $spacing, lg ) !default;
+$card-deck-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
 $card-bg: $component-bg !default;
 $card-text: $component-text !default;
@@ -27,8 +27,8 @@ $card-header-bg: null !default;
 $card-header-text: null !default;
 $card-header-border: $card-border !default;
 
-$card-body-padding-x: k-map-get( $spacing, lg ) !default;
-$card-body-padding-y: k-map-get( $spacing, lg ) !default;
+$card-body-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$card-body-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
 
 $card-footer-padding-x: $card-padding-x !default;
 $card-footer-padding-y: $card-padding-y !default;
@@ -56,10 +56,10 @@ $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;
 $card-avatar-spacing: $card-header-padding-x !default;
 
-$card-actions-padding-x: k-map-get( $spacing, 2 ) !default;
-$card-actions-padding-y: k-map-get( $spacing, 2 ) !default;
+$card-actions-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$card-actions-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $card-actions-border-width: 1px !default;
-$card-actions-gap: k-map-get( $spacing, 2 ) !default;
+$card-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
 $card-deck-scroll-button-radius: 50% !default;
 $card-deck-scroll-button-offset: k-math-div( $card-deck-gap, 2 ) !default;

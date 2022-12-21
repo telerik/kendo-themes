@@ -25,7 +25,7 @@ $pdf-viewer-page-border: $component-border !default;
 $pdf-viewer-page-shadow: 0 0 k-math-div( $pdf-viewer-page-spacing, 2 ) $pdf-viewer-page-border !default;
 
 $pdf-viewer-search-panel-border-width: 1px !default;
-$pdf-viewer-search-panel-border-radius: k-map-get( $spacing, 1 ) !default;
+$pdf-viewer-search-panel-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 $pdf-viewer-search-panel-bg: $component-bg !default;
 $pdf-viewer-search-panel-text: $component-text !default;
 $pdf-viewer-search-panel-border: $component-border !default;
@@ -33,7 +33,7 @@ $pdf-viewer-search-panel-shadow: $kendo-window-shadow !default;
 $pdf-viewer-search-panel-matches-spacing: $padding-x-sm !default;
 
 $pdf-viewer-search-dialog-padding-x: $kendo-toolbar-padding-x-md !default;
-$pdf-viewer-search-dialog-padding-y: k-map-get( $spacing, 3 ) !default;
+$pdf-viewer-search-dialog-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 $pdf-viewer-search-dialog-spacing: $kendo-toolbar-spacing-md !default;
 
 $pdf-viewer-selection-line-height: $line-height-sm !default;

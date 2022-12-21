@@ -2,10 +2,10 @@
 
 /// Margin between the listbox elements.
 /// @group listbox
-$kendo-listbox-spacing: k-map-get( $spacing, 3 ) !default;
+$kendo-listbox-spacing: k-map-get( $kendo-spacing, 3 ) !default;
 /// Margin between the listbox buttons.
 /// @group listbox
-$kendo-listbox-button-spacing: k-map-get( $spacing, 2 ) !default;
+$kendo-listbox-button-spacing: k-map-get( $kendo-spacing, 2 ) !default;
 /// Width of the listbox.
 /// @group listbox
 $kendo-listbox-width: 10em !default;

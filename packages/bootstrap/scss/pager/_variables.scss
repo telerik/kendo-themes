@@ -2,10 +2,10 @@
 
 /// Horizontal padding of the pager according to the pager size.
 /// @group pager
-$kendo-pager-padding-x: k-map-get( $spacing, 2 ) !default;
-$kendo-pager-padding-x-sm: k-map-get( $spacing, 1 ) !default;
-$kendo-pager-padding-x-md: k-map-get( $spacing, 2 ) !default;
-$kendo-pager-padding-x-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
+$kendo-pager-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-x-sm: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-pager-padding-x-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-x-lg: k-map-get( $kendo-spacing, 2.5 ) !default;
 /// Vertical padding of the pager according to the pager size.
 /// @group pager
 $kendo-pager-padding-y: $kendo-pager-padding-x !default;
@@ -21,9 +21,9 @@ $kendo-pager-item-min-width-lg: $kendo-button-calc-size-lg !default;
 
 /// Margin between pager item groups according to the pager size.
 /// @group pager
-$kendo-pager-item-group-spacing-sm: k-map-get( $spacing, 3 ) + k-map-get( $spacing, thin ) !default;
-$kendo-pager-item-group-spacing-md: k-map-get( $spacing, 4 ) !default;
-$kendo-pager-item-group-spacing-lg: k-map-get( $spacing, 4 ) + k-map-get( $spacing, thin ) !default;
+$kendo-pager-item-group-spacing-sm: k-map-get( $kendo-spacing, 3.5 ) !default;
+$kendo-pager-item-group-spacing-md: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-pager-item-group-spacing-lg: k-map-get( $kendo-spacing, 4.5 ) !default;
 
 /// Border width of the pager.
 /// @group pager
@@ -56,14 +56,14 @@ $kendo-pager-focus-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
 
 /// Spacing between the pager sections.
 /// @group pager
-$kendo-pager-section-spacing: k-map-get( $spacing, 4 ) !default;
+$kendo-pager-section-spacing: k-map-get( $kendo-spacing, 4 ) !default;
 
 /// Border width of the pager items.
 /// @group pager
 $kendo-pager-item-border-width: 1px !default;
 /// Border radius of the pager items.
 /// @group pager
-$kendo-pager-item-border-radius: k-map-get( $spacing, 1 ) !default;
+$kendo-pager-item-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 /// Spacing around the pager items.
 /// @group pager
 $kendo-pager-item-spacing: (-1 * $kendo-pager-item-border-width) !default;

@@ -3,7 +3,7 @@
 
 /// Horizontal padding of the bottom navigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-padding-x: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-bottom-nav-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
 /// Vertical padding of the bottom navigation.
 /// @group bottom-navigation
 $kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-x !default;
@@ -35,7 +35,7 @@ $kendo-bottom-nav-item-icon-size: map.get( $kendo-spacing, 6 ) !default;
 $kendo-bottom-nav-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the bottom navigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-y: map.get( $kendo-spacing, thin ) !default;
+$kendo-bottom-nav-item-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Minimum width of the bottom navigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-min-width: 72px !default;
@@ -53,10 +53,10 @@ $kendo-bottom-nav-item-border-radius: var( --kendo-border-radius-md, 0 ) !defaul
 $kendo-bottom-nav-item-gap: map.get( $kendo-spacing, 1 ) !default;
 /// Offset of the focused bottom navigation item.
 /// @group bottom-nav
-$kendo-bottom-nav-item-focus-offset: map.get( $kendo-spacing, thin ) !default;
+$kendo-bottom-nav-item-focus-offset: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Outline width of the focused bottom navigation item.
 /// @group bottom-nav
-$kendo-bottom-nav-item-focus-outline-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-bottom-nav-item-focus-outline-width: 1px !default;
 /// Outline style of the focused bottom navigation item.
 /// @group bottom-nav
 $kendo-bottom-nav-item-focus-outline-style: solid !default;

@@ -6,10 +6,10 @@ $kendo-signature-lg-min-height: 110px !default;
 $kendo-signature-maximized-width: 750px !default;
 $kendo-signature-maximized-height: 252px !default;
 
-$kendo-signature-padding-x: k-map-get( $spacing, 1 ) !default;
-$kendo-signature-padding-x-sm: k-map-get( $spacing, thin ) !default;
-$kendo-signature-padding-x-md: $kendo-signature-padding-x !default;
-$kendo-signature-padding-x-lg: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
+$kendo-signature-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-signature-padding-x-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-signature-padding-x-md: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-signature-padding-x-lg: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 $kendo-signature-padding-y: $kendo-signature-padding-x !default;
 $kendo-signature-padding-y-sm: $kendo-signature-padding-x-sm !default;
@@ -45,5 +45,5 @@ $kendo-signature-sizes: (
     )
 ) !default;
 
-$kendo-signature-actions-gap: k-map-get( $spacing, 1 ) !default;
-$kendo-signature-maximized-line-width: k-map-get( $spacing, 1 ) - k-map-get( $spacing, hair ) !default;
+$kendo-signature-actions-gap: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-signature-maximized-line-width: 3px !default;

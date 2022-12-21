@@ -189,7 +189,7 @@ $kendo-input-clear-value-opacity: .5 !default;
 $kendo-input-clear-value-hover-text: null !default;
 $kendo-input-clear-value-hover-opacity: 1 !default;
 
-$kendo-input-values-margin-y: k-map-get( $spacing, thin ) !default;
+$kendo-input-values-margin-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-input-values-margin-x: $kendo-input-values-margin-y !default;
 
 

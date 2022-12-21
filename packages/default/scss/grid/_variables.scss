@@ -51,18 +51,18 @@ $kendo-grid-group-dropclue-line-size: k-math-div( $kendo-grid-group-dropclue-siz
 $kendo-grid-group-dropclue-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size}) !default;
 $kendo-grid-group-dropclue-top: 3px !default;
 
-$kendo-grid-padding-x-sm: k-map-get( $spacing, 2 ) !default;
-$kendo-grid-padding-y-sm: k-map-get( $spacing, 1 ) !default;
+$kendo-grid-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-padding-y-sm: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-grid-header-padding-x-sm: $kendo-grid-padding-x-sm !default;
 $kendo-grid-header-padding-y-sm: $kendo-grid-padding-y-sm !default;
 $kendo-grid-grouping-header-padding-x-sm: $kendo-grid-padding-x-sm !default;
 $kendo-grid-grouping-header-padding-y-sm: $kendo-grid-padding-y-sm !default;
 $kendo-grid-cell-padding-x-sm: $kendo-grid-padding-x-sm !default;
 $kendo-grid-cell-padding-y-sm: $kendo-grid-padding-y-sm !default;
-$kendo-grid-filter-cell-padding-x-sm: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
+$kendo-grid-filter-cell-padding-x-sm: k-map-get( $kendo-spacing, 1.5 ) !default;
 $kendo-grid-filter-cell-padding-y-sm: $kendo-grid-filter-cell-padding-x-sm !default;
 $kendo-grid-edit-cell-padding-x-sm: $kendo-grid-cell-padding-x-sm !default;
-$kendo-grid-edit-cell-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
+$kendo-grid-edit-cell-padding-y-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-grid-group-dropclue-height-sm: calc( #{$kendo-chip-calc-size-sm} + #{$kendo-grid-group-dropclue-size}) !default;
 
 $kendo-grid-padding-x-md: $kendo-grid-padding-x !default;
@@ -205,7 +205,7 @@ $kendo-grid-sorting-index-spacing-x: -$kendo-grid-sorting-index-spacing-y !defau
 
 $kendo-grid-focused-shadow: $kendo-table-focus-shadow !default;
 
-$kendo-grid-command-cell-button-spacing: k-map-get( $spacing, 2 ) !default;
+$kendo-grid-command-cell-button-spacing: k-map-get( $kendo-spacing, 2 ) !default;
 // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
 $kendo-grid-command-cell-padding-y: calc( #{$kendo-grid-cell-padding-y} - (#{$kendo-button-calc-size} - #{$line-height-em}) / 2 ) !default;
 
@@ -232,7 +232,7 @@ $kendo-grid-column-menu-width: 230px !default;
 
 $kendo-grid-filter-menu-check-all-border-bottom-width: 1px !default;
 
-$kendo-grid-filter-menu-item-spacing-x: k-map-get( $spacing, 2 ) !default;
+$kendo-grid-filter-menu-item-spacing-x: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-grid-filter-menu-item-spacing-y: $kendo-grid-filter-menu-item-spacing-x !default;
 
 $kendo-grid-column-menu-popup-padding-x: null !default;

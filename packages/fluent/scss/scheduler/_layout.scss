@@ -731,7 +731,7 @@
             display: flex;
             flex: 1 1 100%;
             align-items: center;
-            gap: map.get( $kendo-spacing, thin );
+            gap: map.get( $kendo-spacing, 0.5 ); // sass-lint:disable-line leading-zero
         }
 
         .k-scheduler-mark {

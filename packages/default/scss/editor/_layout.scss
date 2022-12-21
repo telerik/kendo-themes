@@ -511,7 +511,7 @@
 
             & + .k-color-picker,
             & + .k-dropdown-list {
-                margin-left: k-map-get( $spacing, 2 );
+                margin-left: k-map-get( $kendo-spacing, 2 );
             }
         }
 

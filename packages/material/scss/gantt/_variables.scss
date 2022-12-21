@@ -37,8 +37,8 @@ $gantt-summary-progress-bg: $primary !default;
 $gantt-summary-selected-bg: k-color-mix( $secondary, $gantt-bg ) !default;
 $gantt-summary-progress-selected-bg: $secondary !default;
 
-$gantt-task-padding-x: k-map-get( $spacing, 2 ) !default;
-$gantt-task-padding-y: k-map-get( $spacing, 1 ) !default;
+$gantt-task-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$gantt-task-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $gantt-task-border-width: 0px !default;
 $gantt-task-bg: k-color-mix( $primary, $gantt-bg ) !default;
 $gantt-task-text: $primary-contrast !default;

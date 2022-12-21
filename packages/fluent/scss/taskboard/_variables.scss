@@ -103,7 +103,7 @@ $kendo-taskboard-column-header-actions-gap: math.div( $kendo-taskboard-spacer, 2
 $kendo-taskboard-column-header-font-weight: 400 !default;
 ///  Text color of the task board column header.
 /// @group taskboard
-$kendo-taskboard-column-header-text: var( --kendo-component-text, inherit )  !default;
+$kendo-taskboard-column-header-text: var( --kendo-component-text, inherit ) !default;
 
 /// Vertical padding of the task board column cards wrapper.
 /// @group taskboard
@@ -143,7 +143,7 @@ $kendo-taskboard-pane-border: var( --kendo-component-border, inherit ) !default;
 $kendo-taskboard-pane-header-padding-y: $kendo-taskboard-spacer !default;
 /// Horizontal padding of the task board pane header.
 /// @group taskboard
-$kendo-taskboard-pane-header-padding-x: map.get( $kendo-spacing, 6 )  !default;
+$kendo-taskboard-pane-header-padding-x: map.get( $kendo-spacing, 6 ) !default;
 /// Font size of the task board pane header.
 /// @group taskboard
 $kendo-taskboard-pane-header-font-size: var( --kendo-font-size-xl, 1rem ) !default;

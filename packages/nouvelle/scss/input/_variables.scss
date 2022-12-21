@@ -16,7 +16,7 @@ $kendo-input-sm-spinner-width: null !default;
 $kendo-input-sm-spinner-icon-offset: null !default;
 
 $kendo-input-md-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-input-md-padding-y: k-map-get( $kendo-spacing, 1 ) + k-map-get( $kendo-spacing, thin ) !default;
+$kendo-input-md-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 $kendo-input-md-font-size: $kendo-font-size-md !default;
 $kendo-input-md-line-height: $kendo-line-height-md !default;
 $kendo-input-md-icon-size: calc( #{$kendo-icon-size-md} + #{$kendo-input-md-padding-y * 2} ) !default;

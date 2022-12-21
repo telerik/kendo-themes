@@ -25,9 +25,9 @@ $kendo-treeview-item-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
 $kendo-treeview-item-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
-$kendo-treeview-item-padding-y-sm: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-treeview-item-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-treeview-item-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-treeview-item-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-treeview-item-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
 /// Border width of treeview items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0 !default;

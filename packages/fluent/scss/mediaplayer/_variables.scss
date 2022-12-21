@@ -3,7 +3,7 @@
 
 /// Border width of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-border-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-mediaplayer-border-width: 1px !default;
 /// Font family of the mediaplayer.
 /// @group mediaplayer
 $kendo-mediaplayer-font-family: var( --kendo-font-family, inherit ) !default;

@@ -7,8 +7,8 @@ $popup-border-radius: null !default;
 $popup-font-size: $font-size !default;
 $popup-line-height: $line-height !default;
 
-$popup-content-padding-x: k-map-get( $spacing, 2 ) !default;
-$popup-content-padding-y: k-map-get( $spacing, 2 ) !default;
+$popup-content-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$popup-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
 $popup-bg: $component-bg !default;
 $popup-text: $component-text !default;

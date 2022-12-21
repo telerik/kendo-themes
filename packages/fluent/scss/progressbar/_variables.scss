@@ -115,4 +115,4 @@ $kendo-circular-progressbar-arc-stroke: get-theme-color-var( primary-100 ) !defa
 /// @group progressbar
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;
 
-$kendo-progressbar-item-border-width: map.get( $kendo-spacing, thin ) !default;
+$kendo-progressbar-item-border-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero

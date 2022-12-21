@@ -65,7 +65,7 @@
         .k-quick-reply {
             @include fill(
                 var( --kendo-chat-quick-reply-text, #{ $kendo-chat-quick-reply-text } ),
-                var( --kendo-chat-quick-reply-bg, #{ $kendo-chat-quick-reply-bg  } ),
+                var( --kendo-chat-quick-reply-bg, #{ $kendo-chat-quick-reply-bg } ),
                 var( --kendo-chat-quick-reply-border, #{ $kendo-chat-quick-reply-border } )
             );
         }

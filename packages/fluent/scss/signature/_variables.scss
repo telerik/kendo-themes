@@ -22,9 +22,9 @@ $kendo-signature-padding-x-lg: $kendo-signature-padding-x !default;
 /// The vertical paddings of the signature component.
 /// @group signature
 $kendo-signature-padding-y: $kendo-signature-padding-x !default;
-$kendo-signature-padding-y-sm: map.get( $kendo-spacing, thin ) !default;
-$kendo-signature-padding-y-md: $kendo-signature-padding-x-md !default;
-$kendo-signature-padding-y-lg: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-signature-padding-y-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-signature-padding-y-md: map-get( $kendo-spacing, 1 ) !default;
+$kendo-signature-padding-y-lg: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// The opacity of the disabled signature component.
 /// @group signature

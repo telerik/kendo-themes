@@ -8,8 +8,8 @@ $mediaplayer-bg: $component-bg !default;
 $mediaplayer-text: $component-text !default;
 $mediaplayer-border: $component-border !default;
 
-$mediaplayer-titlebar-padding-x: k-map-get( $spacing, 2 ) !default;
-$mediaplayer-titlebar-padding-y: k-map-get( $spacing, 2 ) !default;
+$mediaplayer-titlebar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$mediaplayer-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $mediaplayer-titlebar-bg: null !default;
 $mediaplayer-titlebar-text: $mediaplayer-bg !default;
 $mediaplayer-titlebar-border: null !default;

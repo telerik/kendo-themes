@@ -21,15 +21,25 @@ $spacer: 1em !default;
 $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
 
-$spacing: (
+$kendo-spacing: (
+    // sass-lint:disable-block leading-zero
     0: 0,
+    1px: 1px,
+    0.5: 2px,
     1: 4px,
+    1.5: 6px,
     2: 8px,
+    2.5: 10px,
     3: 12px,
+    3.5: 14px,
     4: 16px,
+    4.5: 18px,
     5: 20px,
+    5.5: 22px,
     6: 24px,
+    6.5: 26px,
     7: 28px,
+    7.5: 30px,
     8: 32px,
     9: 36px,
     10: 40px,
@@ -46,14 +56,7 @@ $spacing: (
     21: 84px,
     22: 88px,
     23: 92px,
-    24: 96px,
-    xs: 4px,
-    sm: 8px,
-    md: 12px,
-    lg: 16px,
-    xl: 24px,
-    thin: 2px,
-    hair: 1px
+    24: 96px
 ) !default;
 
 $default-scrollbar-width: 17px !default;
@@ -62,8 +65,8 @@ $default-scrollbar-width: 17px !default;
 // Icons
 $icon-size: 16px !default;
 $icon-size-lg: 32px !default;
-$icon-spacing: k-map-get( $spacing, 1 ) !default;
-$icon-padding: k-map-get( $spacing, 1 ) !default;
+$icon-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
 
 /// The URL to the icon font that will be used by the theme
 /// The default value of `null` embeds the package font with a `data:` URL
@@ -80,7 +83,7 @@ $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
 /// Border radius for all components.
-$kendo-border-radius: k-map-get( $spacing, 1 ) !default;
+$kendo-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-border-radius-sm: k-math-div( $kendo-border-radius, 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: $kendo-border-radius * 2 !default;
@@ -89,8 +92,8 @@ $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;
 
 $nav-item-margin: 0px !default;
-$nav-item-padding-x: k-map-get( $spacing, 2 ) !default;
-$nav-item-padding-y: k-map-get( $spacing, 1 ) !default;
+$nav-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$nav-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 
 
 $zindex-popup: 1 !default;

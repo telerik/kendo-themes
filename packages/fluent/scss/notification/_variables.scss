@@ -13,10 +13,10 @@ $kendo-notification-padding-x: map.get( $kendo-spacing, 3 ) !default;
 $kendo-notification-padding-y: map.get( $kendo-spacing, 2 ) !default;
 // Width of the border around the notification.
 /// @group notification
-$kendo-notification-border-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-notification-border-width: 1px !default;
 /// Border radius of the notification.
 /// @group notification
-$kendo-notification-border-radius: map.get( $kendo-spacing, thin ) !default;
+$kendo-notification-border-radius: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Font family of the notification.
 /// @group notification
 $kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;
