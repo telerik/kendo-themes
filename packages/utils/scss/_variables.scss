@@ -27,6 +27,7 @@ $kendo-spacing: (
     thin: .125rem,
     hair: .0625rem
 ) !default;
+
 $kendo-sizing: k-map-merge( $kendo-spacing, (
     // sass-lint:disable-block indentation
     "auto": auto,
@@ -72,6 +73,7 @@ $kendo-utils: (
     // Layout
     "aspect-ratio": (
         auto: auto,
+        1: 1,
         square: k-string-unquote("1 / 1"),
         video: k-string-unquote("16 / 9")
     ),
@@ -596,13 +598,15 @@ $kendo-utils: (
     // Transform
     "flip": true,
     "scale": (
-        "0",
-        ".25",
-        ".5",
-        ".75",
-        "1",
-        "1.25",
-        "1.5"
+        // sass-lint:disable-block leading-zero
+        0: 0,
+        0.25: .25,
+        0.5: .5,
+        0.75: .75,
+        1: 1,
+        1.25: 1.25,
+        1.5: 1.5,
+        2: 2
     ),
     "rotate": (
         0: 0deg,

@@ -1,4 +1,22 @@
-// TODO DOCS
+/// This is equivalent to `order: -9999;`.
+/// @name .k-order-first
+/// @group order
+/// @contextType css
+
+/// This is equivalent to `order: 9999;`.
+/// @name .k-order-last
+/// @group order
+/// @contextType css
+
+/// This is equivalent to `order: 0;`.
+/// @name .k-order-none
+/// @group order
+/// @contextType css
+
+/// This is equivalent to `order: 1;`, `order: 2;`, `order: 12;`, etc.
+/// @name .from k-order-1 to k-order-12
+/// @group order
+/// @contextType css
 
 $kendo-utils-order: k-map-get( $kendo-utils, "order" ) !default;
 
