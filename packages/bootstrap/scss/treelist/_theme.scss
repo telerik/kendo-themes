@@ -5,7 +5,7 @@
         tr.k-footer,
         tr.k-footer-template {
             &:hover {
-                background-color: $treelist-footer-row-bg;
+                background-color: $kendo-treelist-footer-row-bg;
             }
         }
     }
@@ -14,7 +14,7 @@
         .k-group-footer td,
         .k-grouping-row td,
         tbody .k-group-cell {
-            background-color: $treelist-footer-row-bg;
+            background-color: $kendo-treelist-footer-row-bg;
         }
     }
 }

@@ -3,18 +3,18 @@
 @include exports("treelist/layout/material") {
     .k-treelist {
         tr.k-footer-template td {
-            border-width: $treelist-footer-row-border-width 0;
+            border-width: $kendo-treelist-footer-row-border-width 0;
         }
 
         tr.k-footer td,
         tr.k-footer-template + tr.k-footer-template td {
-            border-width: 0 0 $treelist-footer-row-border-width 0;
+            border-width: 0 0 $kendo-treelist-footer-row-border-width 0;
         }
     }
 
     .k-treelist-scrollable {
         tr.k-group-footer td {
-            border-bottom-width: $treelist-footer-row-border-width;
+            border-bottom-width: $kendo-treelist-footer-row-border-width;
         }
     }
 }
