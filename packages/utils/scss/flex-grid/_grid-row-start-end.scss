@@ -13,3 +13,4 @@ $kendo-utils-grid-row-end: k-map-get( $kendo-utils, "grid-row-end" ) !default;
 $kendo-utils-grid-row-span: k-map-get( $kendo-utils, "grid-row-span" ) !default;
 
 @include generate-utils( row-span, grid-row, $kendo-utils-grid-row-span );
+@include generate-utils( rowspan, grid-row, $kendo-utils-grid-row-span );

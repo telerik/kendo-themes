@@ -57,3 +57,6 @@
 $kendo-utils-display: k-map-get( $kendo-utils, "display" ) !default;
 
 @include generate-utils( d, display, $kendo-utils-display );
+
+// Legacy alias
+@include generate-utils( display, display, $kendo-utils-display );

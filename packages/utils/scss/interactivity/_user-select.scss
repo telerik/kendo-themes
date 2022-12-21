@@ -1,10 +1,12 @@
-/// This is equivalent to `user-select: auto;`. This is the default value of the `user-select` property.
-/// @name .k-user-select-auto
-/// @group user-select
-/// @contextType css
+// User-select documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/user-select.
 
 /// This is equivalent to `user-select: none;`. The text of the element and its sub-elements is not selectable. Note that the Selection object can contain these elements.
 /// @name .k-user-select-none
+/// @group user-select
+/// @contextType css
+
+/// This is equivalent to `user-select: auto;`. This is the default value of the `user-select` property.
+/// @name .k-user-select-auto
 /// @group user-select
 /// @contextType css
 
