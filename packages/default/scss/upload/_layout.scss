@@ -82,29 +82,18 @@
             border-color: inherit;
             list-style: none;
 
-            .k-file-multiple,
-            .k-file-single {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .k-file-single {
-                align-items: center;
-            }
-
-            .k-file-multiple {
-                align-items: flex-start;
-            }
-
             .k-file {
                 padding: $kendo-upload-item-padding-y $kendo-upload-item-padding-x calc(#{$kendo-upload-item-padding-y} + #{$kendo-upload-progress-thickness});
                 border-width: 0 0 1px;
                 border-style: solid;
                 outline: none;
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
                 position: relative;
+
+                &.k-file-multiple {
+                    align-items: flex-start;
+                }
             }
 
             .k-file:last-child {
@@ -177,15 +166,7 @@
         }
 
         .k-upload-files .k-file-info {
-            min-height: $kendo-upload-group-icon-size;
-            display: block;
-            overflow: hidden;
-            flex: 1 0 0;
-        }
-
-        .k-multiple-files-wrapper,
-        .k-file-single > .k-file-info {
-            margin-inline-start: $kendo-padding-md-x;
+            padding-inline-start: $kendo-padding-md-x;
             min-height: $kendo-upload-group-icon-size;
             display: block;
             overflow: hidden;
@@ -193,7 +174,12 @@
         }
 
         .k-multiple-files-wrapper {
+            padding-inline-start: $kendo-padding-md-x;
+            flex: 1 0 0;
+            overflow: hidden;
+
             .k-file-info {
+                padding-inline-start: 0;
                 margin-bottom: $kendo-upload-multiple-items-spacing;
                 display: block;
             }
