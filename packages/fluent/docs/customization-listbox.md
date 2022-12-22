@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-font-size, inherit ) !default;`
+`var( --kendo-font-size, inherit )`
 
 </td>
 <td>
