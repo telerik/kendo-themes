@@ -507,7 +507,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`darken($kendo-table-bg, 7%)`
+`k-color-darken($kendo-table-bg, 7%)`
 
 </td>
 <td>

@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -102,7 +102,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>

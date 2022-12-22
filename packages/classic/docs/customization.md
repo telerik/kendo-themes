@@ -34,7 +34,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -382,9 +382,9 @@ The following table lists the available variables for customizing the Classic th
 <td>
 
 `(
-    sm: k-map-get( $spacing, 4 ),
-    md: k-map-get( $spacing, 8 ),
-    lg: k-map-get( $spacing, 16 )
+    sm: k-map-get( $kendo-spacing, 4 ),
+    md: k-map-get( $kendo-spacing, 8 ),
+    lg: k-map-get( $kendo-spacing, 16 )
 )`
 
 </td>
@@ -478,7 +478,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -496,7 +496,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -665,7 +665,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -683,7 +683,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2292,7 +2292,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2310,7 +2310,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -2441,7 +2441,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2459,7 +2459,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2477,7 +2477,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2997,9 +2997,9 @@ The following table lists the available variables for customizing the Classic th
 <td>
 
 `(
-    sm: k-map-get( $spacing, 1 ),
-    md: k-map-get( $spacing, 1 ),
-    lg: k-map-get( $spacing, 1 )
+    sm: k-map-get( $kendo-spacing, 1 ),
+    md: k-map-get( $kendo-spacing, 1 ),
+    lg: k-map-get( $kendo-spacing, 1 )
 )`
 
 </td>
@@ -3552,7 +3552,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -3624,7 +3624,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-math-div( k-map-get( $spacing, 1 ), 2 )`
+`k-map-get( $kendo-spacing, 0.5 )`
 
 </td>
 <td>
@@ -3660,7 +3660,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -3678,7 +3678,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -3786,7 +3786,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -4893,7 +4893,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -4911,7 +4911,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -6208,7 +6208,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -6226,7 +6226,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -6879,7 +6879,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -6933,7 +6933,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 3 )`
+`k-map-get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -8509,7 +8509,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -8527,7 +8527,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -10840,7 +10840,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -10858,7 +10858,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -11416,7 +11416,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -11434,7 +11434,7 @@ The following table lists the available variables for customizing the Classic th
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
