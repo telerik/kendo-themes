@@ -152,6 +152,24 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-scheduler-shadow</td>
+    <td></td>
+<td>
+
+`0 .5px .5px .5px rgba(0, 0, 0, .12)`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the scheduler.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-scheduler-selected-bg</td>
     <td></td>
 <td>
