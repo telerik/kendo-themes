@@ -8,6 +8,8 @@ $scheduler-bg: $component-bg !default;
 $scheduler-text: $component-text !default;
 $scheduler-border: $component-border !default;
 
+$scheduler-shadow: 0 .5px .5px .5px rgba(0, 0, 0, .12) !default;
+
 $scheduler-toolbar-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
 $scheduler-toolbar-text: null !default;
 $scheduler-toolbar-border: null !default;

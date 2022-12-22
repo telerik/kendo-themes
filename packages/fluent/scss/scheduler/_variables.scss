@@ -26,6 +26,10 @@ $kendo-scheduler-text: var( --kendo-component-text, initial ) !default;
 /// @group scheduler
 $kendo-scheduler-border: var( --kendo-component-border, initial ) !default;
 
+/// Box shadow of the scheduler.
+/// @group scheduler
+$kendo-scheduler-shadow: 0 .5px .5px .5px rgba(0, 0, 0, .12) !default;
+
 /// Background color of the selected row in scheduler.
 /// @group scheduler
 $kendo-scheduler-selected-bg: get-theme-color-var( primary-20 ) !default;

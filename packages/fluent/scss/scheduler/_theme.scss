@@ -9,6 +9,10 @@
             var( --kendo-scheduler-bg, #{$kendo-scheduler-bg} ),
             var( --kendo-scheduler-border, #{$kendo-scheduler-border} )
         );
+
+        &.k-focus {
+            box-shadow: var( --kendo-scheduler-shadow, #{$kendo-scheduler-shadow} );
+        }
     }
 
     // Current time

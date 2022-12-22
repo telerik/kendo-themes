@@ -7,6 +7,10 @@
             $scheduler-bg,
             $scheduler-border
         );
+
+        &.k-focus {
+            box-shadow: $scheduler-shadow;
+        }
     }
 
     // Current time
