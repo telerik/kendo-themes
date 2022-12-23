@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-wizard-step-border-focused</td>
+    <td>$kendo-wizard-step-focus-border</td>
     <td></td>
 <td>
 

@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-shade( $component-bg, 1 )`
+`k-try-shade( $kendo-component-bg, 1 )`
 
 </td>
 <td>
@@ -176,7 +176,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -196,7 +196,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -234,7 +234,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$body-bg`
+`$kendo-body-bg`
 
 </td>
 <td>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>

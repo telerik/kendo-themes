@@ -548,7 +548,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-upload-focused-shadow</td>
+    <td>$kendo-upload-focus-shadow</td>
     <td></td>
 <td>
 

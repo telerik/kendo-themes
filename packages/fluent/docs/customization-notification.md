@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-padding-y-sm`
+`$kendo-padding-sm-y`
 
 </td>
 <td>

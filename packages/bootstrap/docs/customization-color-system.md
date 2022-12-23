@@ -26,47 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$accent</td>
-    <td>Color</td>
-<td>
-
-`$primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #0d6efd"></span>
-
-`#0d6efd`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$accent-contrast</td>
-    <td>Color</td>
-<td>
-
-`k-contrast-color( $accent )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary-contrast` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$primary</td>
+    <td>$kendo-color-primary</td>
     <td>Color</td>
 <td>
 
@@ -86,11 +46,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$primary-contrast</td>
+    <td>$kendo-color-primary-contrast</td>
     <td>Color</td>
 <td>
 
-`k-contrast-color( $primary )`
+`k-contrast-color( $kendo-color-primary )`
 
 </td>
 <td>
@@ -102,11 +62,11 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $kendo-color-primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$secondary</td>
+    <td>$kendo-color-secondary</td>
     <td>Color</td>
 <td>
 
@@ -126,11 +86,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$secondary-contrast</td>
+    <td>$kendo-color-secondary-contrast</td>
     <td>Color</td>
 <td>
 
-`k-contrast-color( $secondary )`
+`k-contrast-color( $kendo-color-secondary )`
 
 </td>
 <td>
@@ -142,11 +102,11 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $kendo-color-secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$tertiary</td>
+    <td>$kendo-color-tertiary</td>
     <td>Color</td>
 <td>
 
@@ -166,11 +126,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tertiary-contrast</td>
+    <td>$kendo-color-tertiary-contrast</td>
     <td>Color</td>
 <td>
 
-`k-contrast-color( $tertiary )`
+`k-contrast-color( $kendo-color-tertiary )`
 
 </td>
 <td>
@@ -182,11 +142,11 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $kendo-color-tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$info</td>
+    <td>$kendo-color-info</td>
     <td>Color</td>
 <td>
 
@@ -206,7 +166,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$success</td>
+    <td>$kendo-color-success</td>
     <td>Color</td>
 <td>
 
@@ -226,7 +186,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$warning</td>
+    <td>$kendo-color-warning</td>
     <td>Color</td>
 <td>
 
@@ -246,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$error</td>
+    <td>$kendo-color-error</td>
     <td>Color</td>
 <td>
 
@@ -266,7 +226,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$dark</td>
+    <td>$kendo-color-dark</td>
     <td>Color</td>
 <td>
 
@@ -286,7 +246,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$light</td>
+    <td>$kendo-color-light</td>
     <td>Color</td>
 <td>
 
@@ -306,11 +266,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$inverse</td>
+    <td>$kendo-color-inverse</td>
     <td>Color</td>
 <td>
 
-`if( $dark-theme, $light, $dark )`
+`if( $dark-theme, $kendo-color-light, $kendo-color-dark )`
 
 </td>
 <td>

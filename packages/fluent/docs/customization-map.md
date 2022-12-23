@@ -282,7 +282,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-padding-x-sm`
+`$kendo-padding-sm-x`
 
 </td>
 <td>
@@ -408,7 +408,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-padding-y-sm`
+`$kendo-padding-sm-y`
 
 </td>
 <td>
@@ -444,7 +444,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>

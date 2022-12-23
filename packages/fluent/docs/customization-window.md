@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-window-focused-shadow</td>
+    <td>$kendo-window-focus-shadow</td>
     <td></td>
 <td>
 

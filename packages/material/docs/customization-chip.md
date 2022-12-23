@@ -193,7 +193,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`if( $dark-theme, $white, $black)`
+`if( $dark-theme, $kendo-color-white, $kendo-color-black)`
 
 </td>
 <td>
@@ -447,7 +447,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>

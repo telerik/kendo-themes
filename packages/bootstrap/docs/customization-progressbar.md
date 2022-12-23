@@ -232,7 +232,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$selected-bg`
+`$kendo-selected-bg`
 
 </td>
 <td>
@@ -252,7 +252,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$selected-text`
+`$kendo-selected-text`
 
 </td>
 <td>
@@ -384,7 +384,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$body-bg`
+`$kendo-body-bg`
 
 </td>
 <td>
@@ -404,7 +404,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>

@@ -264,7 +264,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-padding-x, #{$kendo-padding-x} )`
+`var( --kendo-padding-x, #{$kendo-padding-md-x} )`
 
 </td>
 <td>
@@ -458,7 +458,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-hovered-bg</td>
+    <td>$kendo-tabstrip-item-hover-bg</td>
     <td></td>
 <td>
 
@@ -476,7 +476,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-hovered-text</td>
+    <td>$kendo-tabstrip-item-hover-text</td>
     <td></td>
 <td>
 
@@ -494,7 +494,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-hovered-border</td>
+    <td>$kendo-tabstrip-item-hover-border</td>
     <td></td>
 <td>
 
@@ -584,7 +584,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-focused-shadow</td>
+    <td>$kendo-tabstrip-item-focus-shadow</td>
     <td></td>
 <td>
 
@@ -764,7 +764,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-content-border-focused</td>
+    <td>$kendo-tabstrip-content-focus-border</td>
     <td></td>
 <td>
 
