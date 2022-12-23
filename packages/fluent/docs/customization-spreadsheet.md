@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-y} ) )`
+`calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) )`
 
 </td>
 <td>
@@ -444,7 +444,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -800,7 +800,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-insert-image-dialog-overlay-hovered-text</td>
+    <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td></td>
 <td>
 

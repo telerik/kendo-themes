@@ -499,7 +499,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $primary, 10% )`
+`k-try-darken( $kendo-color-primary, 10% )`
 
 </td>
 <td>
@@ -539,7 +539,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $primary, 12.5% )`
+`k-try-darken( $kendo-color-primary, 12.5% )`
 
 </td>
 <td>
@@ -851,7 +851,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`$transition`
+`$kendo-transition`
 
 </td>
 <td>

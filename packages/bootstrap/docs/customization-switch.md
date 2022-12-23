@@ -142,7 +142,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -326,7 +326,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-color-mix( $kendo-switch-off-track-bg, $primary )`
+`k-color-mix( $kendo-switch-off-track-bg, $kendo-color-primary )`
 
 </td>
 <td>
@@ -364,7 +364,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`.25rem solid rgba( $primary, .25 )`
+`.25rem solid rgba( $kendo-color-primary, .25 )`
 
 </td>
 <td>
@@ -602,7 +602,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>

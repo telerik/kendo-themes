@@ -570,7 +570,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>

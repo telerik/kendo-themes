@@ -532,7 +532,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-hovered-bg</td>
+    <td>$kendo-grid-hover-bg</td>
     <td>Color</td>
 <td>
 
@@ -552,7 +552,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-hovered-text</td>
+    <td>$kendo-grid-hover-text</td>
     <td>Null</td>
 <td>
 
@@ -570,7 +570,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-hovered-border</td>
+    <td>$kendo-grid-hover-border</td>
     <td>Null</td>
 <td>
 

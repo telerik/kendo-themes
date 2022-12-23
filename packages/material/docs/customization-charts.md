@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $white, $black ), .08 )`
+`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
 
 </td>
 <td>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $white, $black ), .04 )`
+`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .04 )`
 
 </td>
 <td>

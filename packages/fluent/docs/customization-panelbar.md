@@ -404,7 +404,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-bg</td>
+    <td>$kendo-panelbar-header-hover-bg</td>
     <td></td>
 <td>
 
@@ -422,7 +422,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-text</td>
+    <td>$kendo-panelbar-header-hover-text</td>
     <td></td>
 <td>
 
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-border</td>
+    <td>$kendo-panelbar-header-hover-border</td>
     <td></td>
 <td>
 
@@ -458,7 +458,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-focused-bg</td>
+    <td>$kendo-panelbar-header-focus-bg</td>
     <td></td>
 <td>
 
@@ -476,7 +476,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-focused-text</td>
+    <td>$kendo-panelbar-header-focus-text</td>
     <td></td>
 <td>
 
@@ -494,7 +494,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-focused-border</td>
+    <td>$kendo-panelbar-header-focus-border</td>
     <td></td>
 <td>
 
@@ -512,7 +512,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-focused-shadow</td>
+    <td>$kendo-panelbar-header-focus-shadow</td>
     <td></td>
 <td>
 
@@ -530,11 +530,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-focused-bg</td>
+    <td>$kendo-panelbar-header-hover-focus-bg</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-hovered-bg`
+`$kendo-panelbar-header-hover-bg`
 
 </td>
 <td>
@@ -548,11 +548,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-focused-text</td>
+    <td>$kendo-panelbar-header-hover-focus-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-hovered-text`
+`$kendo-panelbar-header-hover-text`
 
 </td>
 <td>
@@ -566,7 +566,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-focused-border</td>
+    <td>$kendo-panelbar-header-hover-focus-border</td>
     <td></td>
 <td>
 
@@ -606,7 +606,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -656,7 +656,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-bg</td>
+    <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td></td>
 <td>
 
@@ -674,11 +674,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-text</td>
+    <td>$kendo-panelbar-header-selected-hover-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-hovered-text`
+`$kendo-panelbar-header-hover-text`
 
 </td>
 <td>
@@ -692,7 +692,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-border</td>
+    <td>$kendo-panelbar-header-selected-hover-border</td>
     <td></td>
 <td>
 
@@ -710,7 +710,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-focused-bg</td>
+    <td>$kendo-panelbar-header-selected-focus-bg</td>
     <td></td>
 <td>
 
@@ -728,7 +728,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-focused-text</td>
+    <td>$kendo-panelbar-header-selected-focus-text</td>
     <td></td>
 <td>
 
@@ -746,7 +746,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-focused-border</td>
+    <td>$kendo-panelbar-header-selected-focus-border</td>
     <td></td>
 <td>
 
@@ -764,11 +764,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-focused-bg</td>
+    <td>$kendo-panelbar-header-selected-hover-focus-bg</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-selected-hovered-bg`
+`$kendo-panelbar-header-selected-hover-bg`
 
 </td>
 <td>
@@ -782,11 +782,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-focused-text</td>
+    <td>$kendo-panelbar-header-selected-hover-focus-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-selected-hovered-text`
+`$kendo-panelbar-header-selected-hover-text`
 
 </td>
 <td>
@@ -800,7 +800,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-focused-border</td>
+    <td>$kendo-panelbar-header-selected-hover-focus-border</td>
     <td></td>
 <td>
 
@@ -872,7 +872,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-bg</td>
+    <td>$kendo-panelbar-item-hover-bg</td>
     <td></td>
 <td>
 
@@ -890,7 +890,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-text</td>
+    <td>$kendo-panelbar-item-hover-text</td>
     <td></td>
 <td>
 
@@ -908,7 +908,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-border</td>
+    <td>$kendo-panelbar-item-hover-border</td>
     <td></td>
 <td>
 
@@ -926,7 +926,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-focused-bg</td>
+    <td>$kendo-panelbar-item-focus-bg</td>
     <td></td>
 <td>
 
@@ -944,7 +944,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-focused-text</td>
+    <td>$kendo-panelbar-item-focus-text</td>
     <td></td>
 <td>
 
@@ -962,7 +962,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-focused-border</td>
+    <td>$kendo-panelbar-item-focus-border</td>
     <td></td>
 <td>
 
@@ -980,7 +980,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-focused-shadow</td>
+    <td>$kendo-panelbar-item-focus-shadow</td>
     <td></td>
 <td>
 
@@ -998,11 +998,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-focused-bg</td>
+    <td>$kendo-panelbar-item-hover-focus-bg</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-hovered-bg`
+`$kendo-panelbar-item-hover-bg`
 
 </td>
 <td>
@@ -1016,11 +1016,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-focused-text</td>
+    <td>$kendo-panelbar-item-hover-focus-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-hovered-text`
+`$kendo-panelbar-item-hover-text`
 
 </td>
 <td>
@@ -1034,7 +1034,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-focused-border</td>
+    <td>$kendo-panelbar-item-hover-focus-border</td>
     <td></td>
 <td>
 
@@ -1074,7 +1074,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -1106,7 +1106,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-bg</td>
+    <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td></td>
 <td>
 
@@ -1124,11 +1124,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-text</td>
+    <td>$kendo-panelbar-item-selected-hover-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-hovered-text`
+`$kendo-panelbar-item-hover-text`
 
 </td>
 <td>
@@ -1142,7 +1142,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-border</td>
+    <td>$kendo-panelbar-item-selected-hover-border</td>
     <td></td>
 <td>
 
@@ -1160,7 +1160,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-focused-bg</td>
+    <td>$kendo-panelbar-item-selected-focus-bg</td>
     <td></td>
 <td>
 
@@ -1178,7 +1178,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-focused-text</td>
+    <td>$kendo-panelbar-item-selected-focus-text</td>
     <td></td>
 <td>
 
@@ -1196,7 +1196,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-focused-border</td>
+    <td>$kendo-panelbar-item-selected-focus-border</td>
     <td></td>
 <td>
 
@@ -1214,11 +1214,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-focused-bg</td>
+    <td>$kendo-panelbar-item-selected-hover-focus-bg</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-selected-hovered-bg`
+`$kendo-panelbar-item-selected-hover-bg`
 
 </td>
 <td>
@@ -1232,11 +1232,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-focused-text</td>
+    <td>$kendo-panelbar-item-selected-hover-focus-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-selected-hovered-text`
+`$kendo-panelbar-item-selected-hover-text`
 
 </td>
 <td>
@@ -1250,7 +1250,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-focused-border</td>
+    <td>$kendo-panelbar-item-selected-hover-focus-border</td>
     <td></td>
 <td>
 

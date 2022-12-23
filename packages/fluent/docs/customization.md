@@ -336,7 +336,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`0 1.6px 3.6px rgba( $black, 0.132 ), 0 0.3px 0.9px rgba( $black, 0.108 )`
+`0 1.6px 3.6px rgba( $kendo-color-black, 0.132 ), 0 0.3px 0.9px rgba( $kendo-color-black, 0.108 )`
 
 </td>
 <td>
@@ -354,7 +354,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`0 3.2px 7.2px rgba( $black, 0.132 ), 0 0.6px 1.8px rgba( $black, 0.108 )`
+`0 3.2px 7.2px rgba( $kendo-color-black, 0.132 ), 0 0.6px 1.8px rgba( $kendo-color-black, 0.108 )`
 
 </td>
 <td>
@@ -372,7 +372,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`0 6.4px 14.4px rgba( $black, 0.132 ), 0 1.2px 3.6px rgba( $black, 0.108 )`
+`0 6.4px 14.4px rgba( $kendo-color-black, 0.132 ), 0 1.2px 3.6px rgba( $kendo-color-black, 0.108 )`
 
 </td>
 <td>
@@ -390,7 +390,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`0 25.6px 57.6px rgba( $black, 0.22 ), 0 4.8px 14.4px rgba( $black, 0.18 )`
+`0 25.6px 57.6px rgba( $kendo-color-black, 0.22 ), 0 4.8px 14.4px rgba( $kendo-color-black, 0.18 )`
 
 </td>
 <td>
@@ -5021,7 +5021,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -5057,7 +5057,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -7193,7 +7193,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -7211,7 +7211,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -7229,7 +7229,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -7459,7 +7459,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-error-bars-background</td>
+    <td>$kendo-color-error-bars-background</td>
     <td></td>
 <td>
 
@@ -7643,7 +7643,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -9035,7 +9035,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -9089,7 +9089,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -9359,7 +9359,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -11209,7 +11209,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -11953,7 +11953,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`inset 0 0 0 2px $white`
+`inset 0 0 0 2px $kendo-color-white`
 
 </td>
 <td>
@@ -11989,7 +11989,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`inset 0 0 0 2px $kendo-colorpalette-tile-hover-outline, inset 0 0 0 4px $white`
+`inset 0 0 0 2px $kendo-colorpalette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white`
 
 </td>
 <td>
@@ -12427,7 +12427,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-x-lg`
+`$kendo-padding-lg-x`
 
 </td>
 <td>
@@ -12445,7 +12445,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-y-lg`
+`$kendo-padding-lg-y`
 
 </td>
 <td>
@@ -12916,7 +12916,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`var( --kendo-padding-x, #{$kendo-padding-x} )`
+`var( --kendo-padding-x, #{$kendo-padding-md-x} )`
 
 </td>
 <td>
@@ -12934,7 +12934,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`var( --kendo-padding-y, #{$kendo-padding-y} )`
+`var( --kendo-padding-y, #{$kendo-padding-md-y} )`
 
 </td>
 <td>
@@ -13060,7 +13060,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`var( --kendo-padding-x, #{$kendo-padding-x} )`
+`var( --kendo-padding-x, #{$kendo-padding-md-x} )`
 
 </td>
 <td>
@@ -13438,7 +13438,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -14200,7 +14200,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -14254,7 +14254,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -14272,7 +14272,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -15994,7 +15994,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-x`
+`$kendo-padding-md-x`
 
 </td>
 <td>
@@ -16012,7 +16012,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-y`
+`$kendo-padding-md-y`
 
 </td>
 <td>
@@ -17404,7 +17404,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( $kendo-padding-x * 2 )`
+`( $kendo-padding-md-x * 2 )`
 
 </td>
 <td>
@@ -18109,7 +18109,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`rgba( $black, .04 )`
+`rgba( $kendo-color-black, .04 )`
 
 </td>
 <td>
@@ -18253,7 +18253,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -18271,7 +18271,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -18289,7 +18289,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -18307,7 +18307,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -18541,7 +18541,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -18631,7 +18631,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -18685,7 +18685,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-y`
+`$kendo-padding-md-y`
 
 </td>
 <td>
@@ -18703,7 +18703,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-x`
+`$kendo-padding-md-x`
 
 </td>
 <td>
@@ -18991,7 +18991,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -19045,7 +19045,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -19171,7 +19171,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -22384,7 +22384,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -22402,7 +22402,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`rgba( $black, .3 )`
+`rgba( $kendo-color-black, .3 )`
 
 </td>
 <td>
@@ -22729,7 +22729,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -22999,7 +22999,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23053,7 +23053,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23107,7 +23107,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23269,7 +23269,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23323,7 +23323,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23377,7 +23377,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23539,7 +23539,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23593,7 +23593,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23647,7 +23647,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23845,7 +23845,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -23917,7 +23917,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white!default`
+`$kendo-color-white!default`
 
 </td>
 <td>
@@ -23953,7 +23953,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -24079,7 +24079,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -24187,7 +24187,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -25001,7 +25001,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -25073,7 +25073,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -25145,7 +25145,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -25271,7 +25271,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -25307,7 +25307,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -25418,7 +25418,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-x`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -25436,7 +25436,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-x`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -26597,7 +26597,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -26960,7 +26960,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -27068,7 +27068,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-x-sm`
+`$kendo-padding-sm-x`
 
 </td>
 <td>
@@ -27086,7 +27086,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-y-sm`
+`$kendo-padding-sm-y`
 
 </td>
 <td>
@@ -27122,7 +27122,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -27395,7 +27395,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`rgba( $black, .4 )`
+`rgba( $kendo-color-black, .4 )`
 
 </td>
 <td>
@@ -28746,7 +28746,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-padding-y-sm`
+`$kendo-padding-sm-y`
 
 </td>
 <td>
@@ -29904,7 +29904,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -29922,7 +29922,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -30750,7 +30750,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-bg</td>
+    <td>$kendo-panelbar-header-hover-bg</td>
     <td></td>
 <td>
 
@@ -30768,7 +30768,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-text</td>
+    <td>$kendo-panelbar-header-hover-text</td>
     <td></td>
 <td>
 
@@ -30786,7 +30786,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-border</td>
+    <td>$kendo-panelbar-header-hover-border</td>
     <td></td>
 <td>
 
@@ -30804,7 +30804,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-focused-bg</td>
+    <td>$kendo-panelbar-header-focus-bg</td>
     <td></td>
 <td>
 
@@ -30822,7 +30822,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-focused-text</td>
+    <td>$kendo-panelbar-header-focus-text</td>
     <td></td>
 <td>
 
@@ -30840,7 +30840,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-focused-border</td>
+    <td>$kendo-panelbar-header-focus-border</td>
     <td></td>
 <td>
 
@@ -30858,7 +30858,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-focused-shadow</td>
+    <td>$kendo-panelbar-header-focus-shadow</td>
     <td></td>
 <td>
 
@@ -30876,11 +30876,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-focused-bg</td>
+    <td>$kendo-panelbar-header-hover-focus-bg</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-hovered-bg`
+`$kendo-panelbar-header-hover-bg`
 
 </td>
 <td>
@@ -30894,11 +30894,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-focused-text</td>
+    <td>$kendo-panelbar-header-hover-focus-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-hovered-text`
+`$kendo-panelbar-header-hover-text`
 
 </td>
 <td>
@@ -30912,7 +30912,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-hovered-focused-border</td>
+    <td>$kendo-panelbar-header-hover-focus-border</td>
     <td></td>
 <td>
 
@@ -30952,7 +30952,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -31002,7 +31002,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-bg</td>
+    <td>$kendo-panelbar-header-selected-hover-bg</td>
     <td></td>
 <td>
 
@@ -31020,11 +31020,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-text</td>
+    <td>$kendo-panelbar-header-selected-hover-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-hovered-text`
+`$kendo-panelbar-header-hover-text`
 
 </td>
 <td>
@@ -31038,7 +31038,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-border</td>
+    <td>$kendo-panelbar-header-selected-hover-border</td>
     <td></td>
 <td>
 
@@ -31056,7 +31056,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-focused-bg</td>
+    <td>$kendo-panelbar-header-selected-focus-bg</td>
     <td></td>
 <td>
 
@@ -31074,7 +31074,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-focused-text</td>
+    <td>$kendo-panelbar-header-selected-focus-text</td>
     <td></td>
 <td>
 
@@ -31092,7 +31092,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-focused-border</td>
+    <td>$kendo-panelbar-header-selected-focus-border</td>
     <td></td>
 <td>
 
@@ -31110,11 +31110,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-focused-bg</td>
+    <td>$kendo-panelbar-header-selected-hover-focus-bg</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-selected-hovered-bg`
+`$kendo-panelbar-header-selected-hover-bg`
 
 </td>
 <td>
@@ -31128,11 +31128,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-focused-text</td>
+    <td>$kendo-panelbar-header-selected-hover-focus-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-header-selected-hovered-text`
+`$kendo-panelbar-header-selected-hover-text`
 
 </td>
 <td>
@@ -31146,7 +31146,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-header-selected-hovered-focused-border</td>
+    <td>$kendo-panelbar-header-selected-hover-focus-border</td>
     <td></td>
 <td>
 
@@ -31218,7 +31218,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-bg</td>
+    <td>$kendo-panelbar-item-hover-bg</td>
     <td></td>
 <td>
 
@@ -31236,7 +31236,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-text</td>
+    <td>$kendo-panelbar-item-hover-text</td>
     <td></td>
 <td>
 
@@ -31254,7 +31254,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-border</td>
+    <td>$kendo-panelbar-item-hover-border</td>
     <td></td>
 <td>
 
@@ -31272,7 +31272,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-focused-bg</td>
+    <td>$kendo-panelbar-item-focus-bg</td>
     <td></td>
 <td>
 
@@ -31290,7 +31290,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-focused-text</td>
+    <td>$kendo-panelbar-item-focus-text</td>
     <td></td>
 <td>
 
@@ -31308,7 +31308,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-focused-border</td>
+    <td>$kendo-panelbar-item-focus-border</td>
     <td></td>
 <td>
 
@@ -31326,7 +31326,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-focused-shadow</td>
+    <td>$kendo-panelbar-item-focus-shadow</td>
     <td></td>
 <td>
 
@@ -31344,11 +31344,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-focused-bg</td>
+    <td>$kendo-panelbar-item-hover-focus-bg</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-hovered-bg`
+`$kendo-panelbar-item-hover-bg`
 
 </td>
 <td>
@@ -31362,11 +31362,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-focused-text</td>
+    <td>$kendo-panelbar-item-hover-focus-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-hovered-text`
+`$kendo-panelbar-item-hover-text`
 
 </td>
 <td>
@@ -31380,7 +31380,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-hovered-focused-border</td>
+    <td>$kendo-panelbar-item-hover-focus-border</td>
     <td></td>
 <td>
 
@@ -31420,7 +31420,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -31452,7 +31452,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-bg</td>
+    <td>$kendo-panelbar-item-selected-hover-bg</td>
     <td></td>
 <td>
 
@@ -31470,11 +31470,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-text</td>
+    <td>$kendo-panelbar-item-selected-hover-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-hovered-text`
+`$kendo-panelbar-item-hover-text`
 
 </td>
 <td>
@@ -31488,7 +31488,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-border</td>
+    <td>$kendo-panelbar-item-selected-hover-border</td>
     <td></td>
 <td>
 
@@ -31506,7 +31506,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-focused-bg</td>
+    <td>$kendo-panelbar-item-selected-focus-bg</td>
     <td></td>
 <td>
 
@@ -31524,7 +31524,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-focused-text</td>
+    <td>$kendo-panelbar-item-selected-focus-text</td>
     <td></td>
 <td>
 
@@ -31542,7 +31542,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-focused-border</td>
+    <td>$kendo-panelbar-item-selected-focus-border</td>
     <td></td>
 <td>
 
@@ -31560,11 +31560,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-focused-bg</td>
+    <td>$kendo-panelbar-item-selected-hover-focus-bg</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-selected-hovered-bg`
+`$kendo-panelbar-item-selected-hover-bg`
 
 </td>
 <td>
@@ -31578,11 +31578,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-focused-text</td>
+    <td>$kendo-panelbar-item-selected-hover-focus-text</td>
     <td></td>
 <td>
 
-`$kendo-panelbar-item-selected-hovered-text`
+`$kendo-panelbar-item-selected-hover-text`
 
 </td>
 <td>
@@ -31596,7 +31596,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-panelbar-item-selected-hovered-focused-border</td>
+    <td>$kendo-panelbar-item-selected-hover-focus-border</td>
     <td></td>
 <td>
 
@@ -36286,7 +36286,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -36918,7 +36918,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -36990,7 +36990,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -37461,7 +37461,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -37731,7 +37731,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`rgba( $white, .4 )`
+`rgba( $kendo-color-white, .4 )`
 
 </td>
 <td>
@@ -37749,7 +37749,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`rgba( $black, .4 )`
+`rgba( $kendo-color-black, .4 )`
 
 </td>
 <td>
@@ -37785,7 +37785,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -39950,7 +39950,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-y} ) )`
+`calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) )`
 
 </td>
 <td>
@@ -40184,7 +40184,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -40540,7 +40540,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-insert-image-dialog-overlay-hovered-text</td>
+    <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td></td>
 <td>
 
@@ -41339,7 +41339,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -42426,7 +42426,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -42480,7 +42480,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -42534,7 +42534,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -42588,7 +42588,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -42624,7 +42624,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -42678,7 +42678,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -43828,7 +43828,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`var( --kendo-padding-x, #{$kendo-padding-x} )`
+`var( --kendo-padding-x, #{$kendo-padding-md-x} )`
 
 </td>
 <td>
@@ -44022,7 +44022,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-hovered-bg</td>
+    <td>$kendo-tabstrip-item-hover-bg</td>
     <td></td>
 <td>
 
@@ -44040,7 +44040,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-hovered-text</td>
+    <td>$kendo-tabstrip-item-hover-text</td>
     <td></td>
 <td>
 
@@ -44058,7 +44058,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-hovered-border</td>
+    <td>$kendo-tabstrip-item-hover-border</td>
     <td></td>
 <td>
 
@@ -44148,7 +44148,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-item-focused-shadow</td>
+    <td>$kendo-tabstrip-item-focus-shadow</td>
     <td></td>
 <td>
 
@@ -44328,7 +44328,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tabstrip-content-border-focused</td>
+    <td>$kendo-tabstrip-content-focus-border</td>
     <td></td>
 <td>
 
@@ -46137,7 +46137,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-time-list-focused-bg</td>
+    <td>$kendo-time-list-focus-bg</td>
     <td></td>
 <td>
 
@@ -47895,7 +47895,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -48003,7 +48003,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -49452,7 +49452,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-upload-focused-shadow</td>
+    <td>$kendo-upload-focus-shadow</td>
     <td></td>
 <td>
 
@@ -50042,7 +50042,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-window-focused-shadow</td>
+    <td>$kendo-window-focus-shadow</td>
     <td></td>
 <td>
 
@@ -50355,7 +50355,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-wizard-step-border-focused</td>
+    <td>$kendo-wizard-step-focus-border</td>
     <td></td>
 <td>
 

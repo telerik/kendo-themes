@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`( $kendo-padding-x * 2 )`
+`( $kendo-padding-md-x * 2 )`
 
 </td>
 <td>

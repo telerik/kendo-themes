@@ -192,7 +192,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`inset 0 0 0 2px $white`
+`inset 0 0 0 2px $kendo-color-white`
 
 </td>
 <td>
@@ -228,7 +228,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`inset 0 0 0 2px $kendo-colorpalette-tile-hover-outline, inset 0 0 0 4px $white`
+`inset 0 0 0 2px $kendo-colorpalette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white`
 
 </td>
 <td>

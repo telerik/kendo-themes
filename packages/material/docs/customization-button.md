@@ -669,7 +669,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-shade( $body-bg, 12% )`
+`k-try-shade( $kendo-body-bg, 12% )`
 
 </td>
 <td>
@@ -689,7 +689,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$disabled-text`
+`$kendo-disabled-text`
 
 </td>
 <td>
