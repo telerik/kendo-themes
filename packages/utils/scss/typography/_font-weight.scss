@@ -3,3 +3,7 @@
 $kendo-utils-font-weight: k-map-get( $kendo-utils, "font-weight" ) !default;
 
 @include generate-utils( font, font-weight, $kendo-utils-font-weight );
+
+
+// Legacy aliases
+@include generate-utils( font-weight, font-weight, $kendo-utils-font-weight );

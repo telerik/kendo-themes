@@ -61,25 +61,25 @@ $kendo-utils-inset: k-map-get( $kendo-utils, "inset" ) !default;
 .#{$kendo-prefix}top-start,
 .#{$kendo-prefix}pos-top-start {
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
 }
 
 .#{$kendo-prefix}top-end,
 .#{$kendo-prefix}pos-top-end {
     top: 0;
-    right: 0;
+    inset-inline-end: 0;
 }
 
 .#{$kendo-prefix}bottom-start,
 .#{$kendo-prefix}pos-bottom-start {
     bottom: 0;
-    left: 0;
+    inset-inline-start: 0;
 }
 
 .#{$kendo-prefix}bottom-end,
 .#{$kendo-prefix}pos-bottom-end {
     bottom: 0;
-    right: 0;
+    inset-inline-end: 0;
 }
 
 .#{$kendo-prefix}top-center,

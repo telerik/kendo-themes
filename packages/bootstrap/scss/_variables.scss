@@ -85,6 +85,15 @@ $kendo-border-radius-sm: k-math-div( $kendo-border-radius, 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: $kendo-border-radius * 1.5 !default;
 
+$kendo-border-radii: (
+    DEFAULT: $kendo-border-radius-md,
+    0: 0,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
+    lg: $kendo-border-radius-lg,
+    full: 9999px
+) !default;
+
 
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
@@ -192,6 +201,51 @@ $kendo-theme-colors: (
 ) !default;
 
 
+// Typography
+
+/// Base font size across all components.
+/// @group typography
+$font-size: $font-size-base !default;
+$font-size-xs: ( $font-size * .75 ) !default;
+$font-size-sm: $font-size-sm !default;
+$font-size-md: $font-size !default;
+$font-size-lg: $font-size-lg !default;
+$font-size-xl: ( $font-size-md * 1.5 ) !default;
+
+$kendo-font-sizes: (
+    xs: $font-size-xs,
+    sm: $font-size-sm,
+    md: $font-size-md,
+    lg: $font-size-lg,
+    xl: $font-size-xl
+) !default;
+
+/// Font family across all components.
+/// @group typography
+$font-family: $font-family-sans-serif !default;
+
+/// Font family for monospaced text. Used for styling the code.
+/// @group typography
+$font-family-monospace: $font-family-monospace !default;
+
+/// Line height used along with $font-size.
+/// @group typography
+$line-height: $line-height-base !default;
+$line-height-xs: 1 !default;
+$line-height-sm: $line-height-sm !default;
+$line-height-md: $line-height !default;
+$line-height-lg: $line-height-lg !default;
+$line-height-em: calc( #{$line-height} * 1em ) !default;
+
+// Font weight
+$font-weight-light: $font-weight-light !default;
+$font-weight-normal: $font-weight-normal !default;
+$font-weight-bold: $font-weight-bold !default;
+
+// Letter Spacing
+$letter-spacing: null !default;
+
+
 // Root styles
 $kendo-body-bg: $kendo-color-white !default;
 $kendo-body-text: k-contrast-color( $kendo-body-bg, $gray-900, $gray-100 ) !default;
@@ -270,13 +324,9 @@ $kendo-disabled-styling: (
 ) !default;
 
 
-
 // Generic styles
 
 // TODO: refactor once we extract drag drop as separate module
-$font-size: $font-size-base !default;
-$font-family: $font-family-sans-serif !default;
-$line-height: $line-height-base !default;
 
 
 // Header

@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-background-color: k-map-get( $kendo-utils, "background-color" ) !default;
+
+@include generate-utils( bg, background-color, $kendo-utils-background-color );

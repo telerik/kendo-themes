@@ -8,10 +8,16 @@
 // line height
 // list style
 @import "./_text-align.scss";
-// text color
+@import "./_text-color.scss";
 // text decoration
 @import "./_text-transform.scss";
 // text overflow
 // text indent
 // vertical align
 @import "./_white-space.scss";
+
+
+/// This is equivalent to `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;`.
+/// @name .k-text-ellipsis
+/// @group text
+.#{$kendo-prefix}text-ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } // sass-lint:disable-line one-declaration-per-line

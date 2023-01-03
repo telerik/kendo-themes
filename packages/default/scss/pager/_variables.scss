@@ -1,3 +1,6 @@
+@import "../list/_variables.scss";
+
+
 // Pager
 
 /// Horizontal padding of the pager according to the pager size.
@@ -57,6 +60,7 @@ $kendo-pager-focus-shadow: $kendo-focus-shadow !default;
 /// Spacing between the pager sections.
 /// @group pager
 $kendo-pager-section-spacing: k-map-get( $kendo-spacing, 4 ) !default;
+
 /// Border width of the pager items.
 /// @group pager
 $kendo-pager-item-border-width: 0px !default;

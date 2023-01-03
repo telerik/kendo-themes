@@ -1,3 +1,6 @@
+@import "../table/_variables.scss";
+
+
 // Pivot grid
 $pivotgrid-spacer: k-map-get( $kendo-spacing, 4 ) !default;
 $pivotgrid-padding-x: null !default;

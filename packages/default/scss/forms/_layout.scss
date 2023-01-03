@@ -287,6 +287,7 @@
                 width: $kendo-inline-form-element-width;
                 text-align: right;
                 line-height: $line-height;
+                // TODO: do we need the input variable?
                 padding: calc( #{$kendo-padding-md-y} + #{$kendo-input-border-width} ) 0;
                 padding-right: $kendo-padding-lg-x;
                 align-self: center;
@@ -334,12 +335,14 @@
     // Action buttons
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
+        // TODO: refactor
         margin: k-map-get( $kendo-spacing, 4 ) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
     }
 
 
     .k-edit-label {
         margin: 0 0 k-map-get( $kendo-spacing, 4 ) 0;
+        // TODO: do we need the input variable?
         padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
         width: 30%;
         line-height: $kendo-form-line-height;
@@ -355,6 +358,7 @@
         position: relative;
 
         &.k-no-editor {
+            // TODO: do we need the input variable?
             padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
         }
     }

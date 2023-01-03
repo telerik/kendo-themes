@@ -128,6 +128,15 @@ $kendo-border-radius-sm: k-math-div( $kendo-border-radius, 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: $kendo-border-radius * 1.5 !default;
 
+$kendo-border-radii: (
+    DEFAULT: $kendo-border-radius-md,
+    0: 0,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
+    lg: $kendo-border-radius-lg,
+    full: 9999px
+) !default;
+
 
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
@@ -236,6 +245,53 @@ $kendo-theme-colors: (
 ) !default;
 
 
+// Typography
+
+/// Base font size across all components.
+/// @group typography
+$font-size: 14px !default;
+$font-size-xs: 10px !default;
+$font-size-sm: 12px !default;
+$font-size-md: 14px !default;
+$font-size-lg: 16px !default;
+$font-size-xl: 20px !default;
+
+$kendo-font-sizes: (
+    xs: $font-size-xs,
+    sm: $font-size-sm,
+    md: $font-size-md,
+    lg: $font-size-lg,
+    xl: $font-size-xl
+) !default;
+
+/// Font family across all components.
+/// @group typography
+$font-family: Roboto, "Helvetica Neue", sans-serif !default;
+
+/// Font family for monospaced text. Used for styling the code.
+/// @group typography
+$font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+
+/// Line height used along with $font-size.
+/// @group typography
+$line-height: k-math-div( 28, 14 ) !default;
+$line-height-xs: 1 !default;
+$line-height-sm: 1.2 !default;
+$line-height-md: $line-height !default;
+$line-height-lg: 1.5 !default;
+$line-height-em: calc( #{$line-height} * 1em ) !default;
+
+
+// Font weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
+
+
+// Letter Spacing
+$letter-spacing: null !default;
+
+
 // Root styles
 $kendo-body-bg: k-map-get( $theme, body-bg ) !default;
 $kendo-body-text: k-map-get( $theme, body-text ) !default;
@@ -310,13 +366,9 @@ $kendo-disabled-styling: (
 ) !default;
 
 
-
 // Generic styles
 
 // TODO: refactor once we extract drag drop as separate module
-$font-size: 14px !default;
-$font-family: Roboto, "Helvetica Neue", sans-serif !default;
-$line-height: 2 !default;
 
 
 // Header

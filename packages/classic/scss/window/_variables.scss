@@ -1,4 +1,8 @@
+@import "../action-buttons/_variables.scss";
+
+
 // Window
+
 $kendo-window-border-width: 1px !default;
 $kendo-window-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-window-font-family: $font-family !default;
