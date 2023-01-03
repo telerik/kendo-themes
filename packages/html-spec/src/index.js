@@ -85,7 +85,7 @@ module.exports = {
     // ...require('./appbar'),
     // ...require('./fab'),
     // ...require('./menu'),
-    // ...require('./toolbar'),
+    ...require('./toolbar'),
 
     // Popups and modals
     // ...require('./action-sheet'),
@@ -94,7 +94,7 @@ module.exports = {
     ...require('./notification'),
     // ...require('./popover'),
     // ...require('./responsivepanel'),
-    ...require('./tooltip'),
+    // ...require('./tooltip'),
     ...require('./window'),
 
     // Navigation
