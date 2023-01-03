@@ -53,6 +53,6 @@
     "@progress/kendo-theme-core": "^5.12.1-dev.0",
     "@progress/kendo-theme-default": "^5.12.1-dev.0",
     "@progress/kendo-theme-utils": "^5.12.1-dev.0",
-    "bootstrap": "5.2.1"
+    "bootstrap": "5.2.3"
   }
 }
