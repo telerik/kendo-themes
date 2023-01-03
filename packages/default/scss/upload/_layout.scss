@@ -112,7 +112,7 @@
             }
 
             .k-filename {
-                margin-left: $spacer-x;
+                margin-left: k-map-get( $kendo-spacing, 4 );
                 flex: 1;
                 overflow: hidden;
                 text-overflow: ellipsis;

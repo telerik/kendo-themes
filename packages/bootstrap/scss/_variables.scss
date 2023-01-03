@@ -16,10 +16,6 @@ $kendo-use-input-spinner-icon-offset: false !default;
 
 
 // Spacing
-$spacer: $spacer !default;
-$spacer-x: $spacer !default;
-$spacer-y: $spacer !default;
-
 $kendo-spacing: (
     // sass-lint:disable-block leading-zero
     0: 0,
@@ -74,8 +70,8 @@ $icon-font-url: null !default;
 
 
 // Metrics
-$kendo-padding-x: $spacer !default;
-$kendo-padding-y: k-math-div( $spacer, 2 ) !default;
+$kendo-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-padding-sm-x: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-padding-sm-y: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-padding-md-x: k-map-get( $kendo-spacing, 4 ) !default;

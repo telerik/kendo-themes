@@ -334,12 +334,12 @@
     // Action buttons
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
-        margin: $spacer (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
+        margin: k-map-get( $kendo-spacing, 4 ) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
     }
 
 
     .k-edit-label {
-        margin: 0 0 $spacer-y 0;
+        margin: 0 0 k-map-get( $kendo-spacing, 4 ) 0;
         padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
         width: 30%;
         line-height: $kendo-form-line-height;
@@ -348,7 +348,7 @@
         clear: both;
     }
     .k-edit-field {
-        margin: 0 0 $spacer-y 0;
+        margin: 0 0 k-map-get( $kendo-spacing, 4 ) 0;
         width: 65%;
         float: right;
         clear: right;
@@ -373,11 +373,11 @@
 
         .k-radio-label,
         .k-checkbox-label {
-            margin-right: ($spacer);
+            margin-right: k-map-get( $kendo-spacing, 4 );
         }
 
         > .k-reset > li + li {
-            margin-top: k-math-div( $spacer, 2 );
+            margin-top: k-map-get( $kendo-spacing, 2 );
         }
 
         .k-reset .k-widget {

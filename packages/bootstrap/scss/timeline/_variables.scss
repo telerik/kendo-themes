@@ -20,7 +20,7 @@ $timeline-track-arrow-disabled-border: k-true-mix( $kendo-button-border, $kendo-
 $timeline-track-size: 6px !default;
 $timeline-track-wrap-padding-bottom: k-math-div( $timeline-track-size, 2 ) !default;
 $timeline-track-border-width: 1px !default;
-$timeline-track-margin-bottom: $spacer !default;
+$timeline-track-margin-bottom: k-map-get( $kendo-spacing, 4 ) !default;
 $timeline-track-bottom-calc: calc(#{k-math-div( $timeline-track-arrow-height, 2 )} + #{$timeline-track-wrap-padding-bottom}) !default;
 $timeline-track-start-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
 $timeline-track-end-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
