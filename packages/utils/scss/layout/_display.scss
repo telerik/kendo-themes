@@ -58,5 +58,10 @@ $kendo-utils-display: k-map-get( $kendo-utils, "display" ) !default;
 
 @include generate-utils( d, display, $kendo-utils-display );
 
+
 // Legacy alias
 @include generate-utils( display, display, $kendo-utils-display );
+.#{$kendo-prefix}d-flex-row { @extend .#{$kendo-prefix}d-flex, .#{$kendo-prefix}flex-row !optional; }
+.\!#{$kendo-prefix}d-flex-row { @extend .\!#{$kendo-prefix}d-flex, .\!#{$kendo-prefix}flex-row !optional; } // sass-lint:disable-line class-name-format
+.#{$kendo-prefix}d-flex-col { @extend .#{$kendo-prefix}d-flex, .#{$kendo-prefix}flex-col !optional; }
+.\!#{$kendo-prefix}d-flex-col { @extend .\!#{$kendo-prefix}d-flex, .\!#{$kendo-prefix}flex-row !optional; } // sass-lint:disable-line class-name-format

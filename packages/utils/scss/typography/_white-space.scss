@@ -1,3 +1,5 @@
+// White-space documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/white-space.
+
 /// This is equivalent to `white-space: normal;`. Sequences of white space are collapsed. Newline characters in the source are handled the same as other white space. Lines are broken as necessary to fill line boxes.
 /// @name .k-white-space-normal
 /// @group white-space
@@ -32,3 +34,8 @@
 $kendo-utils-white-space: k-map-get( $kendo-utils, "white-space" ) !default;
 
 @include generate-utils( white-space, white-space, $kendo-utils-white-space );
+@include generate-utils( whitespace, white-space, $kendo-utils-white-space );
+
+
+// Legacy aliases
+.#{$kendo-prefix}text-nowrap { @extend .#{$kendo-prefix}white-space-nowrap !optional; }

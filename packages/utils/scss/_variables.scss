@@ -1,6 +1,10 @@
 $kendo-prefix: k- !default;
 $kendo-important: true !default;
-$kendo-colors: () !default;
+
+$kendo-theme-colors: () !default;
+
+$kendo-font-sizes: () !default;
+
 $kendo-spacing: (
     // sass-lint:disable-block leading-zero
     0: 0,
@@ -73,6 +77,15 @@ $kendo-sizing: k-map-merge( $kendo-spacing, (
     "max": max-content,
     "fit": fit-content
 )) !default;
+
+$kendo-border-radii: (
+    DEFAULT: .25rem,
+    0: 0,
+    sm: .125rem,
+    md: .25rem,
+    lg: .5rem,
+    full: 9999px
+) !default;
 
 //
 
@@ -340,7 +353,8 @@ $kendo-utils: (
         row: row,
         col: column,
         row-dense: row dense,
-        col-dense: column dense
+        col-dense: column dense,
+        unset: unset
     ),
     "grid-auto-columns": (
         auto: auto,
@@ -510,7 +524,14 @@ $kendo-utils: (
         center,
         justify
     ),
-    "text-color": (),
+    "text-color": k-map-merge( $kendo-theme-colors, (
+        // sass-lint:disable-block indentation
+        "inherit": inherit,
+        "current": currentColor,
+        "transparent": transparent,
+        "black": black,
+        "white": white
+    )),
     "text-decoration": (),
     "text-decoration-width": (),
     "text-decoration-style": (),
@@ -536,6 +557,13 @@ $kendo-utils: (
     "word-break": (),
 
     // Background
+    "background-color": k-map-merge( $kendo-theme-colors, (
+        // sass-lint:disable-block indentation
+        "inherit": inherit,
+        "transparent": transparent,
+        "black": black,
+        "white": white
+    )),
 
     // Border
     "border-width": (
@@ -553,16 +581,15 @@ $kendo-utils: (
         hidden,
         none
     ),
-    "border-color": (),
-    "border-radius": (
-        DEFAULT: .25rem,
-        0: 0,
-        sm: .125rem,
-        md: .25rem,
-        lg: .5rem,
-        none: 0,
-        full: 9999px
-    ),
+    "border-color": k-map-merge( $kendo-theme-colors, (
+        // sass-lint:disable-block indentation
+        "inherit": inherit,
+        "current": currentColor,
+        "transparent": transparent,
+        "black": black,
+        "white": white
+    )),
+    "border-radius": $kendo-border-radii,
     "outline-width": (
         DEFAULT: 1px,
         0: 0,

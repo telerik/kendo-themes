@@ -9,3 +9,10 @@ $kendo-utils-border-width: k-map-get( $kendo-utils, "border-width" ) !default;
 @include generate-utils( border-l, border-left-width, $kendo-utils-border-width );
 @include generate-utils( border-x, border-inline-width, $kendo-utils-border-width );
 @include generate-utils( border-y, border-block-width, $kendo-utils-border-width );
+
+
+// Legacy aliases
+@include generate-utils( border-top, border-top-width, $kendo-utils-border-width );
+@include generate-utils( border-right, border-right-width, $kendo-utils-border-width );
+@include generate-utils( border-bottom, border-bottom-width, $kendo-utils-border-width );
+@include generate-utils( border-left, border-left-width, $kendo-utils-border-width );

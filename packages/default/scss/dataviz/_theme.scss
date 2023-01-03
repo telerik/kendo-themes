@@ -87,6 +87,8 @@
 
     .k-handle {
         cursor: e-resize;
+
+        // TODO: refactor and remove button dependency
         @include fill(
             $kendo-button-text,
             $kendo-button-bg,

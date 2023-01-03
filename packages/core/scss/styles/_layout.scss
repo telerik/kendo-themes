@@ -7,15 +7,21 @@
     display: flex;
     flex-flow: column nowrap;
 }
-.k-flex {
+
+// Spacer
+.k-spacer {
     flex: 1 1 auto;
 }
-.k-spacer {
-    flex: none;
-    flex-grow: 1;
-}
 .k-spacer-sized {
-    flex-grow: 0;
+    flex: none;
+}
+
+
+// Float wrap
+.k-float-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 
@@ -79,5 +85,7 @@ hr.k-separator {
 
 
 // Legacy aliases
-.k-hbox { @extend .k-hstack; }
-.k-vbox { @extend .k-vstack; }
+.k-hbox { @extend .k-hstack !optional; }
+.k-vbox { @extend .k-vstack !optional; }
+.k-floatwrap { @extend .k-float-wrap !optional; }
+.k-flex { @extend .k-spacer !optional; }

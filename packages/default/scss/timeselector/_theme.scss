@@ -15,9 +15,11 @@
     .k-time-selector-header {
 
         .k-time-now {
+            // TODO: use a variable
             color: $link-text;
         }
         .k-time-now:hover {
+            // TODO: use a variable
             color: $link-hover-text;
         }
     }
