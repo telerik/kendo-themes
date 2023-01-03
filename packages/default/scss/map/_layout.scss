@@ -121,7 +121,7 @@
 
     // Zoom control
     .k-zoom-control {
-        margin: $spacer-x;
+        margin: k-map-get( $kendo-spacing, 4 );
         border: 0;
         background: none;
         display: flex;

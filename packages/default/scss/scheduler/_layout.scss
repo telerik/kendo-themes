@@ -425,7 +425,7 @@
             line-height: $scheduler-event-line-height;
             padding: $kendo-padding-md-y $kendo-padding-md-x;
             // TODO: incompatible units
-            // padding-right: $kendo-padding-sm-x + $spacer;
+            // padding-right: $kendo-padding-sm-x + k-map-get( $kendo-spacing, 4 );
         }
         .k-event-time {
             padding-bottom: 0;
@@ -495,7 +495,7 @@
         }
         .k-resize-n::before,
         .k-resize-s::before {
-            width: $spacer * 2;
+            width: k-map-get( $kendo-spacing, 8 );
             border-bottom-width: 1px;
         }
         .k-resize-w {
@@ -508,7 +508,7 @@
         }
         .k-resize-w::before,
         .k-resize-e::before {
-            height: $spacer * 2;
+            height: k-map-get( $kendo-spacing, 8 );
             border-left-width: 1px;
         }
 

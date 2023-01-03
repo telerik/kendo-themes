@@ -13,11 +13,7 @@ $kendo-use-input-spinner-width: false !default;
 $kendo-use-input-spinner-icon-offset: false !default;
 
 
-// Spacer
-$spacer: 1em !default;
-$spacer-x: $spacer !default;
-$spacer-y: $spacer !default;
-
+// Spacing
 $kendo-spacing: (
     // sass-lint:disable-block leading-zero
     0: 0,

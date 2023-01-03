@@ -47,19 +47,3 @@
     }
 
 }
-
-
-
-
-@include exports( "spreadsheet/window/layout/material" ) {
-
-    .k-spreadsheet-window {
-        width: auto;
-        box-sizing: border-box;
-
-        .k-actions {
-            margin: $spacer (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
-        }
-    }
-
-}
