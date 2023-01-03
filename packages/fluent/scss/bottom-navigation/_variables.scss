@@ -3,7 +3,7 @@
 
 /// Horizontal padding of the bottom navigation.
 /// @group bottom-navigation
-$kendo-bottom-nav-padding-x: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-bottom-nav-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
 /// Vertical padding of the bottom navigation.
 /// @group bottom-navigation
 $kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-x !default;
@@ -35,7 +35,7 @@ $kendo-bottom-nav-item-icon-size: map.get( $kendo-spacing, 6 ) !default;
 $kendo-bottom-nav-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the bottom navigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-y: map.get( $kendo-spacing, thin ) !default;
+$kendo-bottom-nav-item-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Minimum width of the bottom navigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-min-width: 72px !default;
@@ -53,10 +53,10 @@ $kendo-bottom-nav-item-border-radius: var( --kendo-border-radius-md, 0 ) !defaul
 $kendo-bottom-nav-item-gap: map.get( $kendo-spacing, 1 ) !default;
 /// Offset of the focused bottom navigation item.
 /// @group bottom-nav
-$kendo-bottom-nav-item-focus-offset: map.get( $kendo-spacing, thin ) !default;
+$kendo-bottom-nav-item-focus-offset: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Outline width of the focused bottom navigation item.
 /// @group bottom-nav
-$kendo-bottom-nav-item-focus-outline-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-bottom-nav-item-focus-outline-width: 1px !default;
 /// Outline style of the focused bottom navigation item.
 /// @group bottom-nav
 $kendo-bottom-nav-item-focus-outline-style: solid !default;
@@ -80,71 +80,71 @@ $kendo-bottom-nav-brand-colors: (
     info: info,
     secondary: neutral,
     tertiary: tertiary,
- );
+ ) !default;
 
 // Matrix with bottom-nav theme colors in the order: bg, color, border
 $_tc-bottom-nav-matrix: (
     solid: (
-        normal: (100, $white, 100),
-        focus: (100, $white, 100, inherit),
-        active: (120, $white, 120),
+        normal: (100, $kendo-color-white, 100),
+        focus: (100, $kendo-color-white, 100, inherit),
+        active: (120, $kendo-color-white, 120),
         disabled: ( inherit, 40, var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($white, get-theme-color-var( neutral-130 ), get-theme-color-var( neutral-30 )),
+        normal: ($kendo-color-white, get-theme-color-var( neutral-130 ), get-theme-color-var( neutral-30 )),
         focus: (inherit, 100, transparent, 100),
         active: (inherit, 100, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
     )
-);
+) !default;
 
 $_tc-bottom-nav-warning-matrix: (
     solid: (
         normal: (100, get-theme-color-var( neutral-160 ), 100),
-        focus: (100, get-theme-color-var( neutral-160 ), 100, $white),
+        focus: (100, get-theme-color-var( neutral-160 ), 100, $kendo-color-white),
         active: (120, get-theme-color-var( neutral-190 ), 120),
         disabled: (inherit, get-theme-color-var( neutral-120 ), var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($white, get-theme-color-var( neutral-130 ), 100),
+        normal: ($kendo-color-white, get-theme-color-var( neutral-130 ), 100),
         focus: (inherit, 100, transparent, 100),
         active: (inherit, 100, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
     )
-);
+) !default;
 
 $_tc-bottom-nav-dark-matrix: (
     solid: (
-        normal: (160, $white, 160),
-        focus: (160, $white, 160, $white),
-        active: (180, $white, 180),
+        normal: (160, $kendo-color-white, 160),
+        focus: (160, $kendo-color-white, 160, $kendo-color-white),
+        active: (180, $kendo-color-white, 180),
         disabled: (inherit, 60 , var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($white, get-theme-color-var( neutral-130 ), get-theme-color-var( neutral-140 )),
+        normal: ($kendo-color-white, get-theme-color-var( neutral-130 ), get-theme-color-var( neutral-140 )),
         focus: (inherit, 160, transparent, 130),
         active: (inherit, 170, transparent),
         disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
     )
-);
+) !default;
 
 $_tc-bottom-nav-light-matrix: (
     solid: (
         normal: (50, get-theme-color-var( neutral-160 ), 50),
-        focus: (50, 190, 50, $white),
+        focus: (50, 190, 50, $kendo-color-white),
         active: (70, 190, 70),
         disabled: (inherit, 120 , var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($white, get-theme-color-var( neutral-130 ), transparent),
+        normal: ($kendo-color-white, get-theme-color-var( neutral-130 ), transparent),
         focus: (inherit, 130, transparent, 130),
         active: (inherit, 130, transparent),
         disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
     )
-);
+) !default;
 
 /// Theme colors map for the bottom-nav variations.
-$kendo-bottom-nav-theme-colors: ();
+$kendo-bottom-nav-theme-colors: () !default;
 
 @each $fill-mode, $ui-states in $_tc-bottom-nav-matrix {
     @each $brand-color, $palette in $kendo-bottom-nav-brand-colors {

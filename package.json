@@ -8,12 +8,12 @@
     "@commitlint/core": "^17.0.0",
     "@progress/dss": "^1.0.1",
     "@progress/kendo-e2e": "^1.0.0",
-    "@progress/kendo-theme-tasks": "^1.17.3",
+    "@progress/kendo-theme-tasks": "^1.17.5",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "chai": "^4.3.6",
     "chromedriver": "^107.0.3",
-    "esbuild": "^0.15.0",
+    "esbuild": "^0.16.13",
     "eslint": "^8.17.0",
     "eslint-plugin-react": "^7.30.0",
     "geckodriver": "^3.2.0",
@@ -70,8 +70,7 @@
     "serve-tests": "http-server ./ -c-1",
     "embed-assets": "gulp assets",
     "create-component": "gulp create-component",
-    "update": "npx npm-check-updates --upgrade",
-    "postpack": "lerna exec -- mv -f package.json.orig package.json"
+    "update": "npx npm-check-updates --upgrade"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint"

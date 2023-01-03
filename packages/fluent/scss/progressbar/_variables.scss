@@ -102,10 +102,10 @@ $kendo-progressbar-indeterminate-gradient-horizontal: linear-gradient(270deg, ge
 $kendo-progressbar-indeterminate-gradient-vertical: linear-gradient(180deg, get-theme-color-var( neutral-30 ) 15%, get-theme-color-var( primary-100 ) 50%, get-theme-color-var( neutral-30 ) 85%) !default;
 /// Gradient size of the horizontal indeterminate progressbar.
 /// @group progressbar
-$kendo-progressbar-indeterminate-animation-horizontal: 3s ease 0s infinite running progressbar-indeterminate-animation-horizontal;
+$kendo-progressbar-indeterminate-animation-horizontal: 3s ease 0s infinite running progressbar-indeterminate-animation-horizontal !default;
 /// Gradient size of the vertical indeterminate progressbar.
 /// @group progressbar
-$kendo-progressbar-indeterminate-animation-vertical: 3s ease 0s infinite running progressbar-indeterminate-animation-vertical;
+$kendo-progressbar-indeterminate-animation-vertical: 3s ease 0s infinite running progressbar-indeterminate-animation-vertical !default;
 
 // Circular Progressbar
 /// Arc stroke color of the circular progressbar.
@@ -115,4 +115,4 @@ $kendo-circular-progressbar-arc-stroke: get-theme-color-var( primary-100 ) !defa
 /// @group progressbar
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;
 
-$kendo-progressbar-item-border-width: map.get( $kendo-spacing, thin ) !default;
+$kendo-progressbar-item-border-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero

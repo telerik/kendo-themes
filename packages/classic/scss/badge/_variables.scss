@@ -10,17 +10,17 @@ $kendo-badge-border-radius: $kendo-border-radius-md !default;
 
 /// Horizontal padding of the badge.
 /// @group badge
-$kendo-badge-padding-x: k-map-get( $spacing, 1 ) !default;
-$kendo-badge-padding-x-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
-$kendo-badge-padding-x-md: k-map-get( $spacing, 1 ) !default;
-$kendo-badge-padding-x-lg: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
+$kendo-badge-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-badge-padding-x-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-badge-padding-x-md: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-badge-padding-x-lg: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// Vertical padding of the badge.
 /// @group badge
-$kendo-badge-padding-y: k-map-get( $spacing, 1 ) !default;
-$kendo-badge-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin )  !default;
-$kendo-badge-padding-y-md: k-map-get( $spacing, 1 ) !default;
-$kendo-badge-padding-y-lg: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
+$kendo-badge-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-badge-padding-y-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-badge-padding-y-md: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-badge-padding-y-lg: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// Font sizes of the badge.
 /// @group badge

@@ -1,5 +1,5 @@
 // Forms
-$kendo-form-spacer: $padding-x * 2 !default;
+$kendo-form-spacer: $kendo-padding-md-x * 2 !default;
 
 $kendo-form-font-size: $font-size !default;
 $kendo-form-line-height: $line-height !default;
@@ -14,7 +14,7 @@ $kendo-form-legend-margin: 0 0 1em !default;
 $kendo-form-legend-padding: 0px !default;
 $kendo-form-legend-border-width: 0 0 2px !default;
 $kendo-form-legend-border-style: solid !default;
-$kendo-form-legend-border-color: $component-border !default;
+$kendo-form-legend-border-color: $kendo-component-border !default;
 $kendo-form-legend-width: 100% !default;
 $kendo-form-legend-font-size: $font-size !default;
 $kendo-form-legend-text-transform: uppercase !default;
@@ -27,9 +27,9 @@ $kendo-form-hint-font-size: $font-size-sm !default;
 $kendo-form-hint-font-style: normal !default;
 $kendo-form-hint-margin-top: 4px !default;
 
-$kendo-form-rows-spacing-sm: k-map-get( $spacing, 4 ) !default;
-$kendo-form-rows-spacing-md: k-map-get( $spacing, 6 ) !default;
-$kendo-form-rows-spacing-lg: k-map-get( $spacing, 7 ) !default;
+$kendo-form-rows-spacing-sm: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-form-rows-spacing-md: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-form-rows-spacing-lg: k-map-get( $kendo-spacing, 7 ) !default;
 
 $kendo-form-separator-margin: $kendo-form-rows-spacing-md 0 0 !default;
 $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;

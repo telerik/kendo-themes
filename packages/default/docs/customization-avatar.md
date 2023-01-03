@@ -103,9 +103,9 @@ The following table lists the available variables for customization.
 <td>
 
 `(
-    sm: k-map-get( $spacing, 4 ),
-    md: k-map-get( $spacing, 8 ),
-    lg: k-map-get( $spacing, 16 )
+    sm: k-map-get( $kendo-spacing, 4 ),
+    md: k-map-get( $kendo-spacing, 8 ),
+    lg: k-map-get( $kendo-spacing, 16 )
 )`
 
 </td>

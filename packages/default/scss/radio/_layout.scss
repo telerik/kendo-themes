@@ -57,7 +57,7 @@
     // Disabled state
     .k-radio:disabled,
     .k-radio.k-disabled {
-        @include disabled( $disabled-styling );
+        @include disabled( $kendo-disabled-styling );
     }
     .k-radio:disabled:checked,
     .k-radio.k-disabled.k-checked {
@@ -139,7 +139,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: k-map-get( $spacing, 1 );
+        gap: k-map-get( $kendo-spacing, 1 );
 
         .k-radio-label {
             margin: 0;

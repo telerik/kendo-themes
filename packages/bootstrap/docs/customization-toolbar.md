@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$header-bg`
+`$kendo-component-header-bg`
 
 </td>
 <td>
@@ -194,7 +194,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$header-text`
+`$kendo-component-header-text`
 
 </td>
 <td>
@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$header-border`
+`$kendo-component-header-border`
 
 </td>
 <td>
@@ -306,7 +306,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 0 .25rem rgba( $primary, .25 )`
+`0 0 0 .25rem rgba( $kendo-color-primary, .25 )`
 
 </td>
 <td>

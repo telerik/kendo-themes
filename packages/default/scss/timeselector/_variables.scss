@@ -4,9 +4,9 @@ $time-selector-font-family: $font-family !default;
 $time-selector-font-size: $font-size !default;
 $time-selector-line-height: $line-height !default;
 
-$time-selector-bg: $component-bg !default;
-$time-selector-text: $component-text !default;
-$time-selector-border: $component-border !default;
+$time-selector-bg: $kendo-component-bg !default;
+$time-selector-text: $kendo-component-text !default;
+$time-selector-border: $kendo-component-border !default;
 
 $time-selector-header-padding-x: $actions-padding-x !default;
 $time-selector-header-padding-y: $actions-padding-y !default;
@@ -18,18 +18,18 @@ $time-list-height: 240px !default;
 $time-list-title-font-size: $font-size-sm !default;
 $time-list-title-line-height: 1.5 !default;
 $time-list-title-height: ( $time-list-title-font-size * $time-list-title-line-height) !default;
-$time-list-title-text: $subtle-text !default;
-$time-list-title-focus-text: $component-text !default;
+$time-list-title-text: $kendo-subtle-text !default;
+$time-list-title-focus-text: $kendo-component-text !default;
 
 $time-list-item-padding-x: $kendo-list-item-padding-x-md !default;
 $time-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 $time-list-highlight-border-width: 1px 0px !default;
 $time-list-highlight-height: calc( #{$time-selector-font-size * $time-selector-line-height} + #{ $time-list-item-padding-y * 2} ) !default;
-$time-list-highlight-bg: $component-bg !default;
-$time-list-highlight-border: $component-border !default;
+$time-list-highlight-bg: $kendo-component-bg !default;
+$time-list-highlight-border: $kendo-component-border !default;
 
-$time-list-focused-bg: rgba(0, 0, 0, .04) !default;
+$time-list-focus-bg: rgba(0, 0, 0, .04) !default;
 
 
 // Time selector sizes

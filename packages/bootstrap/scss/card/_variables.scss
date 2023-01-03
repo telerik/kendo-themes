@@ -8,11 +8,11 @@ $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
 $card-line-height: $line-height !default;
 
-$card-deck-gap: k-map-get( $spacing, 4 ) !default;
+$card-deck-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
-$card-bg: $component-bg !default;
-$card-text: $component-text !default;
-$card-border: $component-border !default;
+$card-bg: $kendo-component-bg !default;
+$card-text: $kendo-component-text !default;
+$card-border: $kendo-component-border !default;
 $card-shadow: null !default;
 
 $card-focus-bg: null !default;
@@ -23,8 +23,8 @@ $card-focus-shadow: 0 0 0 3px rgba( $card-border, .5 ) !default;
 $card-header-padding-x: $card-padding-x !default;
 $card-header-padding-y: $card-padding-y !default;
 $card-header-border-width: $card-border-width !default;
-$card-header-bg: $header-bg !default;
-$card-header-text: $header-text !default;
+$card-header-bg: $kendo-component-header-bg !default;
+$card-header-text: $kendo-component-header-text !default;
 $card-header-border: $card-border !default;
 
 $card-body-padding-x: $card-padding-x !default;
@@ -37,29 +37,29 @@ $card-footer-bg: $card-header-bg !default;
 $card-footer-text: $card-header-text !default;
 $card-footer-border: $card-header-border !default;
 
-$card-title-margin-bottom: k-map-get( $spacing, md ) !default;
+$card-title-margin-bottom: k-map-get( $kendo-spacing, 3 ) !default;
 $card-title-font-size: $h5-font-size !default;
 $card-title-font-family: $headings-font-family !default;
 $card-title-line-height: $headings-line-height !default;
 $card-title-font-weight: $headings-font-weight !default;
 $card-title-letter-spacing: null !default;
 
-$card-subtitle-margin-bottom: k-map-get( $spacing, md ) !default;
+$card-subtitle-margin-bottom: k-map-get( $kendo-spacing, 3 ) !default;
 $card-subtitle-font-size: $h6-font-size !default;
 $card-subtitle-font-family: $headings-font-family !default;
 $card-subtitle-line-height: $headings-line-height !default;
 $card-subtitle-font-weight: $headings-font-weight !default;
 $card-subtitle-letter-spacing: null !default;
-$card-subtitle-text: $subtle-text !default;
+$card-subtitle-text: $kendo-subtle-text !default;
 
 $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;
 $card-avatar-spacing: $card-header-padding-x !default;
 
-$card-actions-padding-x: k-map-get( $spacing, 2 ) !default;
-$card-actions-padding-y: k-map-get( $spacing, 2 ) !default;
+$card-actions-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$card-actions-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $card-actions-border-width: 1px !default;
-$card-actions-gap: k-map-get( $spacing, 2 ) !default;
+$card-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
 $card-deck-scroll-button-radius: 0px !default;
 $card-deck-scroll-button-offset: -$kendo-button-border-width !default;

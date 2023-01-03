@@ -10,7 +10,7 @@ $kendo-adaptive-content-bg: var( --kendo-component-bg, inherit ) !default;
 $kendo-adaptive-content-text: var( --kendo-component-text, inherit ) !default;
 
 $kendo-adaptive-menu-bg: get-theme-color-var( primary-100 ) !default;
-$kendo-adaptive-menu-text: $white !default;
+$kendo-adaptive-menu-text: $kendo-color-white !default;
 
 $kendo-adaptive-menu-clear-text: get-theme-color-var( primary-100 ) !default;
 

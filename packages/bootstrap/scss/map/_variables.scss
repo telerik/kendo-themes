@@ -5,9 +5,9 @@ $map-font-size: $font-size !default;
 $map-line-height: $line-height !default;
 $map-font-family: $font-family !default;
 
-$map-bg: $component-bg !default;
-$map-text: $component-text !default;
-$map-border: $component-border !default;
+$map-bg: $kendo-component-bg !default;
+$map-text: $kendo-component-text !default;
+$map-border: $kendo-component-border !default;
 
 $map-navigator-margin: $spacer-x !default;
 $map-navigator-padding: 2px !default;
@@ -19,10 +19,10 @@ $map-zoom-control-margin: $spacer-x !default;
 $map-zoom-control-button-padding-x: $kendo-button-padding-y !default;
 $map-zoom-control-button-padding-y: $map-zoom-control-button-padding-x !default;
 
-$map-attribution-padding-x: $padding-x-sm !default;
-$map-attribution-padding-y: $padding-y-sm !default;
+$map-attribution-padding-x: $kendo-padding-sm-x !default;
+$map-attribution-padding-y: $kendo-padding-sm-y !default;
 $map-attribution-font-size: ($map-font-size * .75) !default;
 $map-attribution-bg: rgba( $map-bg, .8 ) !default;
 
 $map-marker-size: $icon-size-lg !default;
-$map-marker-fill: $primary !default;
+$map-marker-fill: $kendo-color-primary !default;

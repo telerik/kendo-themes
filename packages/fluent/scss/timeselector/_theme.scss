@@ -39,7 +39,7 @@
 
             &::before,
             &::after {
-                background-color: var( --kendo-time-list-focused-bg, $kendo-time-list-focused-bg );
+                background-color: var( --kendo-time-list-focus-bg, $kendo-time-list-focus-bg );
             }
         }
     }

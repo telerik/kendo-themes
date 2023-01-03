@@ -14,7 +14,7 @@
             background-color: inherit;
         }
         &.k-switch-off .k-switch-thumb::before {
-            background-color: if( $dark-theme == true, $white, $black );
+            background-color: if( $dark-theme == true, $kendo-color-white, $kendo-color-black );
         }
     }
 

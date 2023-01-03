@@ -2,14 +2,14 @@
 
     .k-editor {
         @include fill(
-            $component-text,
-            $component-bg,
-            $component-border
+            $kendo-component-text,
+            $kendo-component-bg,
+            $kendo-component-border
         );
 
         &.k-readonly {
             .k-editor-content.k-focus {
-                outline-color: $body-text;
+                outline-color: $kendo-body-text;
             }
         }
     }
@@ -47,7 +47,7 @@
         &:hover,
         &.k-hover,
         &.k-active {
-            border-color: $component-border;
+            border-color: $kendo-component-border;
         }
     }
 
@@ -64,7 +64,7 @@
     // Insert table
     .k-ct-popup {
         .k-selected {
-            @include fill( $selected-text, $selected-bg, $selected-border, none );
+            @include fill( $kendo-selected-text, $kendo-selected-bg, $kendo-selected-border, none );
         }
     }
 

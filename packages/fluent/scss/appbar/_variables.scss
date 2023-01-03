@@ -52,27 +52,27 @@ $kendo-appbar-brand-colors: (
     info: info,
     secondary: neutral,
     tertiary: tertiary,
- );
+ ) !default;
 
 // Matrix with appbar theme colors in the order: bg, color, border
 $_tc-appbar-matrix: (
-    (normal: (100, $white, 100)),
-);
+    (normal: (100, $kendo-color-white, 100)),
+) !default;
 
 $_tc-appbar-warning-matrix: (
     (normal: (100, get-theme-color-var( neutral-160 ), 100)),
-);
+) !default;
 
 $_tc-appbar-dark-matrix: (
-    (normal: (160, $white, 160)),
-);
+    (normal: (160, $kendo-color-white, 160)),
+) !default;
 
 $_tc-appbar-light-matrix: (
     (normal: (50, 160, 50)),
-);
+) !default;
 
 /// Theme colors map for the appbar variations.
-$kendo-appbar-theme-colors: ();
+$kendo-appbar-theme-colors: () !default;
 
 @each $ui-states in $_tc-appbar-matrix {
     @each $brand-color, $palette in $kendo-appbar-brand-colors {

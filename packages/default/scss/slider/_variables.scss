@@ -10,7 +10,7 @@ $slider-line-height: $line-height !default;
 $slider-button-offset: 10px !default;
 $slider-button-size: ($slider-alt-size - 2) !default;
 $slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
-$slider-button-focused-shadow: null !default;
+$slider-button-focus-shadow: null !default;
 
 $slider-track-thickness: 4px !default;
 $slider-draghandle-size: 14px !default;
@@ -18,28 +18,28 @@ $slider-draghandle-border-width: 1px !default;
 $slider-draghandle-active-scale: 1 !default;
 $slider-draghandle-active-size: null !default;
 
-$slider-draghandle-bg: $primary !default;
-$slider-draghandle-text: k-contrast-legacy( $primary  ) !default;
-$slider-draghandle-border: $primary  !default;
+$slider-draghandle-bg: $kendo-color-primary !default;
+$slider-draghandle-text: k-contrast-legacy( $kendo-color-primary ) !default;
+$slider-draghandle-border: $kendo-color-primary !default;
 $slider-draghandle-gradient: null !default;
 
-$slider-draghandle-hovered-bg: k-try-shade( $primary , .5 ) !default;
-$slider-draghandle-hovered-text: null !default;
-$slider-draghandle-hovered-border: $primary  !default;
-$slider-draghandle-hovered-gradient: null !default;
+$slider-draghandle-hover-bg: k-try-shade( $kendo-color-primary , .5 ) !default;
+$slider-draghandle-hover-text: null !default;
+$slider-draghandle-hover-border: $kendo-color-primary !default;
+$slider-draghandle-hover-gradient: null !default;
 
-$slider-draghandle-pressed-bg: k-try-shade( $primary , 1.5 ) !default;
+$slider-draghandle-pressed-bg: k-try-shade( $kendo-color-primary , 1.5 ) !default;
 $slider-draghandle-pressed-text: null !default;
-$slider-draghandle-pressed-border: k-try-shade( $primary , 1.5 ) !default;
+$slider-draghandle-pressed-border: k-try-shade( $kendo-color-primary , 1.5 ) !default;
 $slider-draghandle-pressed-gradient: null !default;
 
-$slider-draghandle-focused-shadow: 0 0 0 2px rgba( $primary , .3 ) !default;
+$slider-draghandle-focus-shadow: 0 0 0 2px rgba( $kendo-color-primary , .3 ) !default;
 
 $slider-transition-speed: .3s !default;
 $slider-transition-function: ease-out !default;
 $slider-draghandle-transition-speed: .4s !default;
 $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
-$slider-track-bg: k-try-shade( $component-bg, 1 ) !default;
-$slider-selection-bg: $primary !default;
+$slider-track-bg: k-try-shade( $kendo-component-bg, 1 ) !default;
+$slider-selection-bg: $kendo-color-primary !default;
 $slider-disabled-opacity: null !default;

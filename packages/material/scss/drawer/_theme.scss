@@ -7,8 +7,8 @@
 
             &:focus,
             &.k-focus {
-                background-color: $kendo-drawer-focused-bg;
-                box-shadow: $kendo-drawer-focused-shadow;
+                background-color: $kendo-drawer-focus-bg;
+                box-shadow: $kendo-drawer-focus-shadow;
             }
         }
     }

@@ -1,4 +1,29 @@
-// TODO DOCS
+// Position documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/position.
+
+/// This is equivalent to `position: static;`. The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+/// @name .k-pos-static
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `position: relative;`. The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
+/// @name .k-pos-relative
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `position: absolute;`. The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+/// @name .k-pos-absolute
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `position: fixed;`. The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) Its final position is determined by the values of top, right, bottom, and left.
+/// @name .k-pos-fixed
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `position: sticky;`. The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
+/// @name .k-pos-sticky
+/// @group position
+/// @contextType css
 
 $kendo-utils-position: k-map-get( $kendo-utils, "position" ) !default;
 
@@ -31,7 +56,7 @@ $kendo-utils-inset: k-map-get( $kendo-utils, "inset" ) !default;
 @include generate-utils( top-left, ( top, left ), $kendo-utils-inset );
 @include generate-utils( top-right, ( top, right ), $kendo-utils-inset );
 @include generate-utils( bottom-left, ( bottom, left ), $kendo-utils-inset );
-@include generate-utils( bottom-right, ( bottom, right), $kendo-utils-inset );
+@include generate-utils( bottom-right, ( bottom, right ), $kendo-utils-inset );
 
 .#{$kendo-prefix}top-start,
 .#{$kendo-prefix}pos-top-start {
@@ -89,6 +114,26 @@ $kendo-utils-inset: k-map-get( $kendo-utils, "inset" ) !default;
     transform: translateX(-50%);
 }
 
+
+/// This is equivalent to `top: 0;`.
+/// @name .k-pos-top
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `right: 0;`.
+/// @name .k-pos-right
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `bottom: 0;`.
+/// @name .k-pos-bottom
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `left: 0;`.
+/// @name .k-pos-left
+/// @group position
+/// @contextType css
 
 @each $side in (top, right, bottom, left) {
     .#{$kendo-prefix}#{$side},

@@ -19,7 +19,7 @@
         .k-grid-mobile {
 
             .k-column-active + th.k-header {
-                border-left-color: $body-text;
+                border-left-color: $kendo-body-text;
             }
 
             .k-resize-handle-inner::before {

@@ -15,7 +15,9 @@ root.render(
             <h3>Base</h3>
             <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header">
-                    Drag a column header and drop it here to group by that column
+                    <div className="k-grouping-drop-container">
+                        Drag a column header and drop it here to group by that column
+                    </div>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
@@ -100,6 +102,7 @@ root.render(
                     <ChipList>
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
                     </ChipList>
+                    <div className="k-grouping-drop-container"></div>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
@@ -200,6 +203,7 @@ root.render(
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
+                    <div className="k-grouping-drop-container"></div>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
@@ -317,6 +321,7 @@ root.render(
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
+                    <div className="k-grouping-drop-container"></div>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">

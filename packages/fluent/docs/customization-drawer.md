@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-padding-x, #{$kendo-padding-x} )`
+`var( --kendo-padding-x, #{$kendo-padding-md-x} )`
 
 </td>
 <td>
@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-padding-y, #{$kendo-padding-y} )`
+`var( --kendo-padding-y, #{$kendo-padding-md-y} )`
 
 </td>
 <td>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-padding-x, #{$kendo-padding-x} )`
+`var( --kendo-padding-x, #{$kendo-padding-md-x} )`
 
 </td>
 <td>
@@ -426,7 +426,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map.get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 0.5 )`
 
 </td>
 <td>
@@ -678,7 +678,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>

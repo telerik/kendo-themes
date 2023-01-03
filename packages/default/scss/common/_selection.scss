@@ -15,13 +15,13 @@
     }
 
     .k-marquee-color {
-        color: $selected-text;
-        background-color: $selected-bg;
-        border-color: $selected-border;
+        color: $kendo-selected-text;
+        background-color: $kendo-selected-bg;
+        border-color: $kendo-selected-border;
         opacity: .6;
     }
     .k-marquee-text {
-        color: $selected-text;
+        color: $kendo-selected-text;
     }
 
 }

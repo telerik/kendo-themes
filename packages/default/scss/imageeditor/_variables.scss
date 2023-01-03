@@ -11,9 +11,9 @@ $imageeditor-font-family: $font-family !default;
 
 $imageeditor-content-border-width: 1px !default;
 
-$imageeditor-action-pane-padding-y: k-map-get( $spacing, 8 ) !default;
-$imageeditor-action-pane-padding-x: k-map-get( $spacing, 4 ) !default;
-$imageeditor-action-pane-width: if( $imageeditor-content-border-width == null, 240px, calc(240px + #{$imageeditor-content-border-width}) );
+$imageeditor-action-pane-padding-y: k-map-get( $kendo-spacing, 8 ) !default;
+$imageeditor-action-pane-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$imageeditor-action-pane-width: if( $imageeditor-content-border-width == null, 240px, calc(240px + #{$imageeditor-content-border-width}) ) !default;
 
 $imageeditor-crop-border-width: 1px !default;
 $imageeditor-crop-border-style: dashed !default;
@@ -23,9 +23,9 @@ $imageeditor-resize-handle-margin-y: 1px !default;
 $imageeditor-resize-handle-border-width: 0 2px 2px 0 !default;
 $imageeditor-resize-handle-size: 15px !default;
 
-$imageeditor-bg: $component-bg !default;
-$imageeditor-text: $component-text !default;
-$imageeditor-border: $component-border !default;
+$imageeditor-bg: $kendo-component-bg !default;
+$imageeditor-text: $kendo-component-text !default;
+$imageeditor-border: $kendo-component-border !default;
 
 $imageeditor-content-bg: #c6c6c6 !default;
 $imageeditor-content-text: null !default;

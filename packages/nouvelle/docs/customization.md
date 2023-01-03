@@ -194,7 +194,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td>Color</td>
 <td>
 
-`$kendo-primary`
+`$kendo-color-primary`
 
 </td>
 <td>
@@ -808,7 +808,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-primary</td>
+    <td>$kendo-color-primary</td>
     <td>Color</td>
 <td>
 
@@ -830,11 +830,11 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$kendo-primary-contrast</td>
+    <td>$kendo-color-primary-contrast</td>
     <td>Color</td>
 <td>
 
-`k-contrast-color( $kendo-primary )`
+`k-contrast-color( $kendo-color-primary )`
 
 </td>
 <td>
@@ -846,11 +846,11 @@ The following table lists the available variables for customizing the Nouvelle t
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the accent color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $kendo-color-primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-info</td>
+    <td>$kendo-color-info</td>
     <td>Color</td>
 <td>
 
@@ -872,7 +872,7 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$kendo-success</td>
+    <td>$kendo-color-success</td>
     <td>Color</td>
 <td>
 
@@ -894,7 +894,7 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$kendo-warning</td>
+    <td>$kendo-color-warning</td>
     <td>Color</td>
 <td>
 
@@ -916,7 +916,7 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$kendo-error</td>
+    <td>$kendo-color-error</td>
     <td>Color</td>
 <td>
 
@@ -938,7 +938,7 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$kendo-dark</td>
+    <td>$kendo-color-dark</td>
     <td>Color</td>
 <td>
 
@@ -960,7 +960,7 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$kendo-light</td>
+    <td>$kendo-color-light</td>
     <td>Color</td>
 <td>
 
@@ -982,11 +982,11 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$kendo-inverse</td>
+    <td>$kendo-color-inverse</td>
     <td>Color</td>
 <td>
 
-`if( $dark-theme, $kendo-light, $kendo-dark )`
+`if( $dark-theme, $kendo-color-light, $kendo-color-dark )`
 
 </td>
 <td>

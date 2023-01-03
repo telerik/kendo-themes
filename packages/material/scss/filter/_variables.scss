@@ -1,5 +1,5 @@
 // Filter expression builder
-$filter-padding-x: $padding-x-sm !default;
+$filter-padding-x: $kendo-padding-sm-x !default;
 $filter-padding-y: $filter-padding-x !default;
 
 $filter-bottom-margin: 2.1em !default;
@@ -7,7 +7,7 @@ $filter-line-size: 1px !default;
 
 $filter-operator-dropdown-width: 15em !default;
 
-$filter-preview-field-text: $primary !default;
-$filter-preview-operator-text: $subtle-text !default;
+$filter-preview-field-text: $kendo-color-primary !default;
+$filter-preview-operator-text: $kendo-subtle-text !default;
 
 $filter-toolbar-focus-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;

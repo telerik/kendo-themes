@@ -32,7 +32,7 @@ $kendo-stepper-label-margin-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-stepper-label-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Vertical padding the stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-y: ( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) ) !default;
+$kendo-stepper-label-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// Horizontal padding the stepper content.
 /// @group stepper
@@ -43,13 +43,13 @@ $kendo-stepper-inline-content-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
 /// Width of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-width: ( map.get( $kendo-spacing, 7 ) + map.get( $kendo-spacing, thin ) ) !default;
+$kendo-stepper-indicator-width: map.get( $kendo-spacing, 7.5 ) !default;
 /// Height of the stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-height: $kendo-stepper-indicator-width !default;
 /// Border width of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-border-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-stepper-indicator-border-width: 1px !default;
 /// Border radius of the stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-border-radius: 50% !default;
@@ -59,10 +59,10 @@ $kendo-stepper-indicator-border-radius: 50% !default;
 $kendo-stepper-indicator-focus-border-width: $kendo-stepper-indicator-border-width !default;
 /// The focus size of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-focus-size: map.get( $kendo-spacing, thin ) !default;
+$kendo-stepper-indicator-focus-size: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// The focus offset of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-focus-offset: ( map.get( $kendo-spacing, thin ) + map.get( $kendo-spacing, hair ) ) !default;
+$kendo-stepper-indicator-focus-offset: 3px !default;
 /// The focus calculated offset of the stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) !default;
@@ -102,7 +102,7 @@ $kendo-stepper-indicator-disabled-border: var( --kendo-disabled-border, initial 
 $kendo-stepper-indicator-done-bg: get-theme-color-var( primary-100 ) !default;
 /// Text color of the stepper done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-text: $white !default;
+$kendo-stepper-indicator-done-text: $kendo-color-white !default;
 /// Border color of the stepper done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
@@ -188,7 +188,7 @@ $kendo-stepper-optional-label-font-style: italic !default;
 
 /// The size of the stepper progress bar.
 /// @group stepper
-$kendo-stepper-progressbar-size: map.get( $kendo-spacing, thin ) !default;
+$kendo-stepper-progressbar-size: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 
 /// The property name of the stepper transition.
 /// @group stepper

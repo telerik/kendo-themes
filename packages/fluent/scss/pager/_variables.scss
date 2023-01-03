@@ -5,9 +5,9 @@
 /// Horizontal padding of the pager.
 /// @group pager
 $kendo-pager-padding-x: map.get( $kendo-spacing, 2 ) !default;
-$kendo-pager-padding-x-sm: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-pager-padding-x-sm: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-pager-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-pager-padding-x-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-pager-padding-x-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Vertical padding of the pager.
 /// @group pager
@@ -68,11 +68,11 @@ $kendo-pager-item-group-spacing-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Text color of the pager sizes label.
 /// @group pager
-$kendo-pager-sizes-label-text: get-theme-color-var( neutral-190 );
+$kendo-pager-sizes-label-text: get-theme-color-var( neutral-190 ) !default;
 
 /// Text color of the pager info label.
 /// @group pager
-$kendo-pager-info-label-text: get-theme-color-var( neutral-130 );
+$kendo-pager-info-label-text: get-theme-color-var( neutral-130 ) !default;
 
 /// Width of the pager inputs.
 /// @group pager

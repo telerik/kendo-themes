@@ -476,7 +476,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-time-list-focused-bg</td>
+    <td>$kendo-time-list-focus-bg</td>
     <td></td>
 <td>
 

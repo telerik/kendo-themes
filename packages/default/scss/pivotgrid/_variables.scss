@@ -1,5 +1,5 @@
 // Pivot grid
-$pivotgrid-spacer: k-map-get( $spacing, 4 ) !default;
+$pivotgrid-spacer: k-map-get( $kendo-spacing, 4 ) !default;
 $pivotgrid-padding-x: null !default;
 $pivotgrid-padding-y: null !default;
 $pivotgrid-font-family: $font-family !default;
@@ -15,25 +15,25 @@ $pivotgrid-cell-padding-x: $kendo-table-cell-padding-x-md !default;
 $pivotgrid-cell-padding-y: $kendo-table-cell-padding-y-md !default;
 $pivotgrid-cell-border-width: 1px !default;
 
-$pivotgrid-bg: $component-bg !default;
-$pivotgrid-text: $component-text !default;
-$pivotgrid-border: $component-border !default;
+$pivotgrid-bg: $kendo-component-bg !default;
+$pivotgrid-text: $kendo-component-text !default;
+$pivotgrid-border: $kendo-component-border !default;
 
 $pivotgrid-alt-border: k-try-shade($pivotgrid-border, 2) !default;
 
-$pivotgrid-headers-bg: $header-bg !default;
-$pivotgrid-headers-text: $header-text !default;
-$pivotgrid-headers-border: $header-border !default;
+$pivotgrid-headers-bg: $kendo-component-header-bg !default;
+$pivotgrid-headers-text: $kendo-component-header-text !default;
+$pivotgrid-headers-border: $kendo-component-header-border !default;
 
 $pivotgrid-total-bg: k-try-shade( $pivotgrid-bg, 1 ) !default;
-$pivotgrid-total-text: $header-text !default;
-$pivotgrid-total-border: $header-border !default;
+$pivotgrid-total-text: $kendo-component-header-text !default;
+$pivotgrid-total-border: $kendo-component-header-border !default;
 
 $pivotgrid-hover-bg: k-color-darken($pivotgrid-bg, 7%) !default;
 $pivotgrid-hover-text: null !default;
 $pivotgrid-hover-border: null !default;
 
-$pivotgrid-selected-bg: rgba($selected-bg, .25) !default;
+$pivotgrid-selected-bg: rgba($kendo-selected-bg, .25) !default;
 $pivotgrid-selected-text: null !default;
 $pivotgrid-selected-border: null !default;
 
@@ -58,12 +58,12 @@ $pivotgrid-configurator-fields-margin-y: k-math-div( $pivotgrid-spacer, 2 ) !def
 $pivotgrid-configurator-vertical-width: 320px !default;
 $pivotgrid-configurator-horizontal-height: 420px !default;
 
-$pivotgrid-configurator-bg: $component-bg !default;
-$pivotgrid-configurator-text: $component-text !default;
-$pivotgrid-configurator-border: $component-border !default;
+$pivotgrid-configurator-bg: $kendo-component-bg !default;
+$pivotgrid-configurator-text: $kendo-component-text !default;
+$pivotgrid-configurator-border: $kendo-component-border !default;
 
 $pivotgrid-configurator-header-bg: null !default;
-$pivotgrid-configurator-header-text: $header-text !default;
+$pivotgrid-configurator-header-text: $kendo-component-header-text !default;
 $pivotgrid-configurator-header-border: null !default;
 
 $pivotgrid-configurator-end-shadow: -3px 0px 6px rgba(0, 0, 0, .16) !default;
@@ -71,8 +71,8 @@ $pivotgrid-configurator-start-shadow: 3px 0px 6px rgba(0, 0, 0, .16) !default;
 $pivotgrid-configurator-top-shadow: 0px -3px 6px rgba(0, 0, 0, .16) !default;
 $pivotgrid-configurator-bottom-shadow: 0px 3px 6px rgba(0, 0, 0, .16) !default;
 
-$pivotgrid-configurator-button-padding-x: k-map-get($spacing, 1) !default;
-$pivotgrid-configurator-button-padding-y: k-map-get($spacing, 1) !default;
+$pivotgrid-configurator-button-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$pivotgrid-configurator-button-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $pivotgrid-configurator-button-border-width: 1px !default;
 $pivotgrid-configurator-button-size: calc( #{$pivotgrid-line-height * 1em} + #{$pivotgrid-configurator-button-padding-y * 2} + #{$pivotgrid-configurator-button-border-width * 2} ) !default;
 
@@ -83,12 +83,12 @@ $pivotgrid-calculated-field-border-width: 1px !default;
 $pivotgrid-calculated-field-border-radius: $kendo-border-radius-md !default;
 $pivotgrid-calculated-field-gap: $pivotgrid-spacer !default;
 
-$pivotgrid-calculated-field-bg: $component-bg !default;
-$pivotgrid-calculated-field-text: $component-text !default;
-$pivotgrid-calculated-field-border: $component-border !default;
+$pivotgrid-calculated-field-bg: $kendo-component-bg !default;
+$pivotgrid-calculated-field-text: $kendo-component-text !default;
+$pivotgrid-calculated-field-border: $kendo-component-border !default;
 
 $pivotgrid-calculated-field-header-bg: null !default;
-$pivotgrid-calculated-field-header-text: $header-text !default;
+$pivotgrid-calculated-field-header-text: $kendo-component-header-text !default;
 $pivotgrid-calculated-field-header-border: null !default;
 
 
@@ -100,8 +100,8 @@ $pivotgrid-alt-bg: $kendo-grid-header-bg !default;
 $pivotgrid-alt-text: $kendo-grid-header-text !default;
 $pivotgrid-chrome-border: $kendo-grid-border !default;
 
-$pivotgrid-container-bg: $component-bg !default;
-$pivotgrid-row-headers-bg: k-try-shade( $component-bg, 1 ) !default;
+$pivotgrid-container-bg: $kendo-component-bg !default;
+$pivotgrid-row-headers-bg: k-try-shade( $kendo-component-bg, 1 ) !default;
 
 $pivotgrid-button-bg: null !default;
 $pivotgrid-button-text: null !default;

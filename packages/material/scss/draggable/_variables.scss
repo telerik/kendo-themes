@@ -1,0 +1,27 @@
+// Drag hint
+$drag-clue-padding-x: $kendo-padding-md-x !default;
+$drag-clue-padding-y: k-math-div( $kendo-padding-md-x, 2 ) !default;
+$drag-clue-border-width: null !default;
+$drag-clue-border-radius: 9999px !default;
+$drag-clue-font-size: $font-size !default;
+$drag-clue-font-family: $font-family !default;
+$drag-clue-line-height: k-math-div( 20, 14 ) !default;
+
+$drag-clue-bg: k-try-shade( $kendo-body-bg ) !default;
+$drag-clue-text: $kendo-body-text !default;
+$drag-clue-border: null !default;
+$drag-clue-gradient: null !default;
+$drag-clue-shadow: $box-shadow-depth-3 !default;
+
+$drag-clue-opacity: null !default;
+
+
+// Drop hint
+$drop-hint-arrow-size: 8px !default;
+$drop-hint-arrow-spacing: k-math-div( $drop-hint-arrow-size, 2 ) !default;
+$drop-hint-line-h-width: 20px !default;
+$drop-hint-line-h-height: 1px !default;
+$drop-hint-line-v-width: $drop-hint-line-h-height !default;
+$drop-hint-line-v-height: $drop-hint-line-h-width !default;
+
+$drop-hint-bg: $kendo-color-primary !default;

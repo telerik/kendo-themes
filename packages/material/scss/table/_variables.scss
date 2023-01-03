@@ -26,14 +26,14 @@ $kendo-table-cell-padding-x: null !default;
 /// @group table
 $kendo-table-cell-padding-y: null !default;
 
-$kendo-table-cell-padding-x-sm: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin );
-$kendo-table-cell-padding-y-sm: k-map-get( $spacing, 1 );
+$kendo-table-cell-padding-x-sm: k-map-get( $kendo-spacing, 2.5 ) !default;
+$kendo-table-cell-padding-y-sm: k-map-get( $kendo-spacing, 1 ) !default;
 
-$kendo-table-cell-padding-x-md: k-map-get( $spacing, 6 );
-$kendo-table-cell-padding-y-md: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin );
+$kendo-table-cell-padding-x-md: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-table-cell-padding-y-md: k-map-get( $kendo-spacing, 2.5 ) !default;
 
-$kendo-table-cell-padding-x-lg: k-map-get( $spacing, 6 );
-$kendo-table-cell-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin );
+$kendo-table-cell-padding-x-lg: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-table-cell-padding-y-lg: k-map-get( $kendo-spacing, 2.5 ) !default;
 
 /// The sizes of the table.
 /// @group table
@@ -61,13 +61,13 @@ $kendo-table-sizes: (
 
 /// Background color of tables.
 /// @group table
-$kendo-table-bg: $component-bg !default;
+$kendo-table-bg: $kendo-component-bg !default;
 /// Text color of tables.
 /// @group table
-$kendo-table-text: $component-text !default;
+$kendo-table-text: $kendo-component-text !default;
 /// Border color of tables.
 /// @group table
-$kendo-table-border: $component-border !default;
+$kendo-table-border: $kendo-component-border !default;
 
 
 /// Background color of table headers.
@@ -75,7 +75,7 @@ $kendo-table-border: $component-border !default;
 $kendo-table-header-bg: $kendo-table-bg !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
+$kendo-table-header-text: if( $dark-theme, $light-secondary-text, $dark-secondary-text ) !default;
 /// Border color of table headers.
 /// @group table
 $kendo-table-header-border: $kendo-table-border !default;

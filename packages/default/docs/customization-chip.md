@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -297,7 +297,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 0 2px if($dark-theme, rgba( 255, 255, 255, .16 ), rgba( 0, 0, 0, .08 ))`
+`0 0 0 2px if( $dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) )`
 
 </td>
 <td>
@@ -445,7 +445,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -505,7 +505,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 0 2px if($dark-theme, rgba( 255, 255, 255, .16 ), rgba( 0, 0, 0, .08 ))`
+`0 0 0 2px if( $dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) )`
 
 </td>
 <td>
@@ -604,9 +604,9 @@ The following table lists the available variables for customization.
 <td>
 
 `(
-    sm: k-map-get( $spacing, 1 ),
-    md: k-map-get( $spacing, 1 ),
-    lg: k-map-get( $spacing, 1 )
+    sm: k-map-get( $kendo-spacing, 1 ),
+    md: k-map-get( $kendo-spacing, 1 ),
+    lg: k-map-get( $kendo-spacing, 1 )
 )`
 
 </td>

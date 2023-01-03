@@ -1,16 +1,29 @@
-// TODO DOCS
+/// This is equivalent to `transform: scale( 0, 0 );`. The element is shrunk and no longer visible.
+/// @name .k-scale-0
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: scale( 1, 1 );`. The element has its default scale.
+/// @name .k-scale-1
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: scale( 2, 2 );`. The element is scaling two times in both directions.
+/// @name .k-scale-2
+/// @group transform
+/// @contextType css
 
 $kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
 
 // sass-lint:disable function-name-format
 @function __scale( $val ) {
-    @return scale( unquote($val) );
+    @return scale( $val );
 }
 @function __scale-x( $val ) {
-    @return scaleX( unquote($val) );
+    @return scaleX( $val );
 }
 @function __scale-y( $val ) {
-    @return scaleY( unquote($val) );
+    @return scaleY( $val );
 }
 // sass-lint:enable function-name-format
 

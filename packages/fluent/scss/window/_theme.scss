@@ -15,7 +15,7 @@
 
         &:focus,
         &.k-focus {
-            @include box-shadow( var( --kendo-window-focused-shadow, #{$kendo-window-focused-shadow} ) );
+            @include box-shadow( var( --kendo-window-focus-shadow, #{$kendo-window-focus-shadow} ) );
         }
     }
 

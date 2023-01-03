@@ -16,7 +16,7 @@
         list-style: none;
         display: block;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         *,
         *::before,
@@ -126,11 +126,11 @@
             @for $i from 1 through $kendo-panelbar-item-level-count {
                 &.k-level-#{$i} {
                     .k-link {
-                        padding-inline-start: calc( var( --kendo-panelbar-item-padding-x-start, #{$kendo-panelbar-item-padding-x-start} ) + ( var( --kendo-padding-x-lg, #{$kendo-padding-x-lg} ) * #{$i} ));
+                        padding-inline-start: calc( var( --kendo-panelbar-item-padding-x-start, #{$kendo-panelbar-item-padding-x-start} ) + ( var( --kendo-padding-x-lg, #{$kendo-padding-lg-x} ) * #{$i} ));
                     }
 
                     .k-panelbar-item-icon:first-child {
-                        inset-inline-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) + ( var( --kendo-padding-x-lg, #{$kendo-padding-x-lg} ) * #{$i} ));
+                        inset-inline-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) + ( var( --kendo-padding-x-lg, #{$kendo-padding-lg-x} ) * #{$i} ));
                     }
                 }
             }

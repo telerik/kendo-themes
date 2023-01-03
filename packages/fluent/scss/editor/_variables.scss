@@ -43,14 +43,14 @@ $kendo-editor-resize-handle-border-width: 1px !default;
 $kendo-editor-export-tool-icon-margin-x: map.get( $kendo-spacing, 1 ) !default;
 ///  The outline width of the editor selected node
 /// @group editor
-$kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, thin ) !default;
+$kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 
 // Cell size
-$ct-cell-size: 20px;
+$ct-cell-size: 20px !default;
 
 /// The selected text color of the editor
 /// @group editor
-$kendo-editor-selected-text: $white !default;
+$kendo-editor-selected-text: $kendo-color-white !default;
 /// The selected background color of the editor
 /// @group editor
 $kendo-editor-selected-bg: get-theme-color-var( primary-100 ) !default;
@@ -60,10 +60,10 @@ $kendo-editor-highlighted-bg: get-theme-color-var( primary-60 ) !default;
 
 /// The border color of the editor resize handle
 /// @group editor
-$kendo-editor-resize-handle-border: $black !default;
+$kendo-editor-resize-handle-border: $kendo-color-black !default;
 /// The background color of the editor resize handle
 /// @group editor
-$kendo-editor-resize-handle-bg: $white !default;
+$kendo-editor-resize-handle-bg: $kendo-color-white !default;
 
 /// The outline color of the editor selected node
 /// @group editor

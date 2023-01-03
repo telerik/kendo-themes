@@ -1,4 +1,19 @@
-// TODO DOCS
+// Float documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/float.
+
+/// This is equivalent to `float: left;`. The element must float on the left side of its containing block.
+/// @name .k-float-left
+/// @group float
+/// @contextType css
+
+/// This is equivalent to `float: right;`. The element must float on the right side of its containing block.
+/// @name .k-float-right
+/// @group float
+/// @contextType css
+
+/// This is equivalent to `float: none;`. The element must not float.
+/// @name .k-float-none
+/// @group float
+/// @contextType css
 
 $kendo-utils-float: k-map-get( $kendo-utils, "float" ) !default;
 

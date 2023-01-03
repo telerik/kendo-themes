@@ -98,10 +98,10 @@ $kendo-card-footer-border-width: 0 !default;
 $kendo-card-footer-bg: inherit !default;
 /// Text color of the card footer.
 /// @group card
-$kendo-card-footer-text: inherit !default; // $header-text
+$kendo-card-footer-text: inherit !default; // $kendo-component-header-text
 /// Border color of the card footer.
 /// @group card
-$kendo-card-footer-border: inherit !default; // $header-border
+$kendo-card-footer-border: inherit !default; // $kendo-component-header-border
 
 /// Text weight of the card title.
 /// @group card
@@ -149,15 +149,15 @@ $kendo-card-deck-scroll-button-offset: ( -1 * $kendo-button-border-width ) !defa
 $kendo-card-callout-size: 20px !default;
 
 /// Theme variations for the card.
-$kendo-card-brand-colors: ( primary, error, warning, success, info );
+$kendo-card-brand-colors: ( primary, error, warning, success, info ) !default;
 
 // Matrix with card theme colors in the order: bg, color, border
 $_tc-card-matrix: (
     (normal: (20, 160, 20)),
-);
+) !default;
 
 /// Theme colors map for the card variations.
-$kendo-card-theme-colors: ();
+$kendo-card-theme-colors: () !default;
 
 @each $ui-states in $_tc-card-matrix {
     @each $brand-color in $kendo-card-brand-colors {

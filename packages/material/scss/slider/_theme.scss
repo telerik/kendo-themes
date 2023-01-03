@@ -11,14 +11,14 @@
         }
 
         .k-tick::after {
-            @include fill( $bg: $body-text );
+            @include fill( $bg: $kendo-body-text );
         }
 
         .k-draghandle {
             box-sizing: border-box;
 
             &:focus {
-                @include box-shadow( $slider-draghandle-focused-shadow );
+                @include box-shadow( $slider-draghandle-focus-shadow );
             }
         }
 

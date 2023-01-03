@@ -11,7 +11,7 @@ $kendo-notification-padding-y: 14px !default;
 $kendo-notification-border-width: 0px !default;
 /// Border radius of the notification.
 /// @group notification
-$kendo-notification-border-radius: k-map-get( $spacing, 1 ) !default;
+$kendo-notification-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 /// Box shadow of the notification.
 /// @group notification
 $kendo-notification-shadow: $popup-shadow !default;
@@ -31,13 +31,13 @@ $kendo-notification-icon-spacing: $icon-spacing !default;
 
 /// Background color of the notification.
 /// @group notification
-$kendo-notification-bg: $component-bg !default;
+$kendo-notification-bg: $kendo-component-bg !default;
 /// Text color of the notification.
 /// @group notification
-$kendo-notification-text: $component-text !default;
+$kendo-notification-text: $kendo-component-text !default;
 /// Border color of the notification.
 /// @group notification
-$kendo-notification-border: $component-border !default;
+$kendo-notification-border: $kendo-component-border !default;
 
 @function notification-theme( $colors ) {
     $_theme: ();

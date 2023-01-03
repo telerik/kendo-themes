@@ -34,7 +34,7 @@ $_kendo-escape-class-name: (
     $_text: $text;
 
     @each $char, $rep in $_kendo-escape-class-name {
-        $_text: k-string-replace( $_text, unquote( $char ), unquote( $rep ) );
+        $_text: k-string-replace( $_text, k-string-unquote( $char ), k-string-unquote( $rep ) );
     }
 
     @return $_text;

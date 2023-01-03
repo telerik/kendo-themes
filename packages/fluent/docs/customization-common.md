@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map.get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 0.5 )`
 
 </td>
 <td>
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`0 1.6px 3.6px rgba( $black, 0.132 ), 0 0.3px 0.9px rgba( $black, 0.108 )`
+`0 1.6px 3.6px rgba( $kendo-color-black, 0.132 ), 0 0.3px 0.9px rgba( $kendo-color-black, 0.108 )`
 
 </td>
 <td>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`0 3.2px 7.2px rgba( $black, 0.132 ), 0 0.6px 1.8px rgba( $black, 0.108 )`
+`0 3.2px 7.2px rgba( $kendo-color-black, 0.132 ), 0 0.6px 1.8px rgba( $kendo-color-black, 0.108 )`
 
 </td>
 <td>
@@ -368,7 +368,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`0 6.4px 14.4px rgba( $black, 0.132 ), 0 1.2px 3.6px rgba( $black, 0.108 )`
+`0 6.4px 14.4px rgba( $kendo-color-black, 0.132 ), 0 1.2px 3.6px rgba( $kendo-color-black, 0.108 )`
 
 </td>
 <td>
@@ -386,7 +386,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`0 25.6px 57.6px rgba( $black, 0.22 ), 0 4.8px 14.4px rgba( $black, 0.18 )`
+`0 25.6px 57.6px rgba( $kendo-color-black, 0.22 ), 0 4.8px 14.4px rgba( $kendo-color-black, 0.18 )`
 
 </td>
 <td>

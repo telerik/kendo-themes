@@ -63,6 +63,10 @@
 
 }
 
+@function k-math-percentage( $number ) {
+    @return percentage( $number );
+}
+
 @function k-math-random( $limit: null ) {
     @if ( $limit == null ) {
         @return random();

@@ -16,7 +16,7 @@
 }
 
 @mixin linear-gradient( $gradient: null ) {
-    @if $gradient and $enable-gradients {
+    @if $gradient and $kendo-enable-gradients {
         @if $gradient == none {
             background-image: none;
         }

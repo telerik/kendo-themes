@@ -462,7 +462,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -498,7 +498,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>
@@ -728,7 +728,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-error-bars-background</td>
+    <td>$kendo-color-error-bars-background</td>
     <td></td>
 <td>
 
@@ -912,7 +912,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$black`
+`$kendo-color-black`
 
 </td>
 <td>

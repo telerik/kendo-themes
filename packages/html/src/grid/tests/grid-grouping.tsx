@@ -38,7 +38,9 @@ root.render(
                 </Toolbar>
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
-                    Drag a column header and drop it here to group by that column
+                    <div className="k-grouping-drop-container">
+                        Drag a column header and drop it here to group by that column
+                    </div>
                 </div>
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
@@ -115,7 +117,9 @@ root.render(
                 </Toolbar>
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
-                    Drag a column header and drop it here to group by that column
+                    <div className="k-grouping-drop-container">
+                        Drag a column header and drop it here to group by that column
+                    </div>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
@@ -193,6 +197,7 @@ root.render(
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
                         <Chip icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
+                    <div className="k-grouping-drop-container"></div>
                 </div>
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
@@ -291,6 +296,7 @@ root.render(
                         <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
                         <Chip icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
+                    <div className="k-grouping-drop-container"></div>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">

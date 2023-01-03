@@ -33,12 +33,12 @@ $kendo-menu-separator-margin: map.get( $kendo-spacing, 1 ) !default;
 
 /// Separator width
 /// @group menu
-$kendo-menu-separator-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-menu-separator-width: 1px !default;
 
 /// The base outline of focused menu item.
 /// @group menu
-$kendo-menu-item-focus-outline-offset: (-1 * map.get( $kendo-spacing, thin )) !default;
-$kendo-menu-item-focus-outline-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-menu-item-focus-outline-offset: - map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-menu-item-focus-outline-width: 1px !default;
 $kendo-menu-item-focus-outline-style: solid !default;
 
 /// The text color of the menu.

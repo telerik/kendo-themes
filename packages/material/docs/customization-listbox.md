@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 3 )`
+`k-map-get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -194,7 +194,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>

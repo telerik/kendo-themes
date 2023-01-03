@@ -5,21 +5,21 @@
 $kendo-chip-border-width: 1px !default;
 /// The spacing between the text and the icons of the chip.
 /// @group chip
-$kendo-chip-spacing: k-map-get( $spacing, 1 ) !default;
+$kendo-chip-spacing: k-map-get( $kendo-spacing, 1 ) !default;
 
 /// Horizontal padding of the chip.
 /// @group chip
-$kendo-chip-padding-x: k-map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-x-sm: k-map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-x-md: k-map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-x-lg: k-map-get( $spacing, 1 ) !default;
+$kendo-chip-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-padding-x-sm: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-padding-x-md: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-padding-x-lg: k-map-get( $kendo-spacing, 1 ) !default;
 
 /// Vertical padding of the chip.
 /// @group chip
-$kendo-chip-padding-y: k-map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin )  !default;
-$kendo-chip-padding-y-md: k-map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-y-lg: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
+$kendo-chip-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-padding-y-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-chip-padding-y-md: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-padding-y-lg: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// Font sizes of the chip.
 /// @group chip
@@ -117,7 +117,7 @@ $kendo-chip-solid-selected-text: null !default;
 
 /// The base background color of outline chip.
 /// @group chip
-$kendo-chip-outline-bg: $component-bg !default;
+$kendo-chip-outline-bg: $kendo-component-bg !default;
 /// The base text color of outline chip.
 /// @group chip
 $kendo-chip-outline-text: $kendo-chip-solid-text !default;
@@ -147,7 +147,7 @@ $kendo-chip-outline-selected-text: $kendo-chip-outline-hover-text !default;
 /// The sizes of the chip list.
 /// @group chip
 $kendo-chip-list-sizes: (
-    sm: k-map-get( $spacing, 1 ),
-    md: k-map-get( $spacing, 1 ),
-    lg: k-map-get( $spacing, 1 )
+    sm: k-map-get( $kendo-spacing, 1 ),
+    md: k-map-get( $kendo-spacing, 1 ),
+    lg: k-map-get( $kendo-spacing, 1 )
 ) !default;

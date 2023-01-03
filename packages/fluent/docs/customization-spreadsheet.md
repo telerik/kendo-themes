@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map.get( $kendo-spacing, hair )`
+`1px`
 
 </td>
 <td>
@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( map.get( $kendo-spacing, 2 ) * -1 )`
+`- map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-y} ) )`
+`calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) )`
 
 </td>
 <td>
@@ -444,7 +444,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$white`
+`$kendo-color-white`
 
 </td>
 <td>
@@ -642,7 +642,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map.get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 0.5 )`
 
 </td>
 <td>
@@ -800,7 +800,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-insert-image-dialog-overlay-hovered-text</td>
+    <td>$kendo-spreadsheet-insert-image-dialog-overlay-hover-text</td>
     <td></td>
 <td>
 
@@ -822,7 +822,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) )`
+`map.get( $kendo-spacing, 1.5 )`
 
 </td>
 <td>
@@ -840,7 +840,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) )`
+`map.get( $kendo-spacing, 1.5 )`
 
 </td>
 <td>
@@ -876,7 +876,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map.get( $kendo-spacing, hair )`
+`1px`
 
 </td>
 <td>
@@ -984,7 +984,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map.get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 0.5 )`
 
 </td>
 <td>

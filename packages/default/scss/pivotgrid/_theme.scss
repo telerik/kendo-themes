@@ -132,7 +132,7 @@
     }
 
     .k-pivotgrid-configurator-content .k-form-field-wrapper {
-        @include fill( $border: $component-border );
+        @include fill( $border: $kendo-component-border );
     }
 
 
@@ -190,7 +190,7 @@
         );
 
         .k-empty {
-            color: $subtle-text;
+            color: $kendo-subtle-text;
         }
     }
 
@@ -222,15 +222,15 @@
     }
 
     .k-i-kpi-status-hold {
-        color: $warning;
+        color: $kendo-color-warning;
     }
 
     .k-i-kpi-status-deny {
-        color: $error;
+        color: $kendo-color-error;
     }
 
     .k-i-kpi-status-open {
-        color: $success;
+        color: $kendo-color-success;
     }
 
 
@@ -238,7 +238,7 @@
     .k-pivotgrid-configurator-panel.kendo-jquery {
 
         .k-column-fields {
-            border-color: $component-border;
+            border-color: $kendo-component-border;
         }
 
     }

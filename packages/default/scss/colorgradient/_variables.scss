@@ -1,5 +1,5 @@
 // ColorGradient
-$colorgradient-spacer: k-map-get( $spacing, 3 ) !default;
+$colorgradient-spacer: k-map-get( $kendo-spacing, 3 ) !default;
 
 $colorgradient-width: 272px !default;
 $colorgradient-border-width: 1px !default;
@@ -10,9 +10,9 @@ $colorgradient-gap: $colorgradient-spacer !default;
 $colorgradient-font-family: $font-family !default;
 $colorgradient-font-size: $font-size !default;
 $colorgradient-line-height: $line-height !default;
-$colorgradient-bg: $component-bg !default;
-$colorgradient-text: $component-text !default;
-$colorgradient-border: $component-border !default;
+$colorgradient-bg: $kendo-component-bg !default;
+$colorgradient-text: $kendo-component-text !default;
+$colorgradient-border: $kendo-component-border !default;
 
 $colorgradient-focus-border: null !default;
 $colorgradient-focus-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
@@ -34,7 +34,7 @@ $colorgradient-draghandle-border-width: 1px !default;
 $colorgradient-draghandle-border-radius: 50% !default;
 $colorgradient-draghandle-bg: transparent !default;
 $colorgradient-draghandle-text: null !default;
-$colorgradient-draghandle-border: rgba( $white, .8) !default;
+$colorgradient-draghandle-border: rgba( $kendo-color-white, .8) !default;
 $colorgradient-draghandle-shadow: 0 1px 4px rgba(0, 0, 0, .5) !default;
 $colorgradient-draghandle-focus-shadow: 0 1px 4px black !default;
 $colorgradient-draghandle-hover-shadow: $colorgradient-draghandle-focus-shadow !default;
@@ -45,7 +45,7 @@ $colorgradient-canvas-draghandle-margin-x: - k-math-div( $colorgradient-draghand
 $colorgradient-input-width: 46px !default;
 $colorgradient-input-gap: k-math-div( $colorgradient-spacer, 1.5 ) !default;
 $colorgradient-input-label-gap: k-math-div( $colorgradient-spacer, 3 ) !default;
-$colorgradient-input-label-text: $subtle-text !default;
+$colorgradient-input-label-text: $kendo-subtle-text !default;
 
 $colorgradient-contrast-ratio-font-weight: $font-weight-bold !default;
 $colorgradient-contrast-spacer: k-math-div( $colorgradient-spacer, 1.5 ) !default;

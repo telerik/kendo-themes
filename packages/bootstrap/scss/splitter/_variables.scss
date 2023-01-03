@@ -4,9 +4,9 @@ $splitter-font-family: $font-family !default;
 $splitter-font-size: $font-size !default;
 $splitter-line-height: $line-height !default;
 
-$splitter-bg: $component-bg !default;
-$splitter-text: $component-text !default;
-$splitter-border: $component-border !default;
+$splitter-bg: $kendo-component-bg !default;
+$splitter-text: $kendo-component-text !default;
+$splitter-border: $kendo-component-border !default;
 
 $splitter-splitbar-size: 8px !default;
 $splitter-resize-icon-size: 10px !default;
@@ -20,5 +20,5 @@ $splitbar-text: $base-text !default;
 $splitbar-hover-bg: k-try-shade( $splitbar-bg, .5 ) !default;
 $splitbar-hover-text: $splitbar-text !default;
 
-$splitbar-selected-bg: $selected-bg !default;
-$splitbar-selected-text: $selected-text !default;
+$splitbar-selected-bg: $kendo-selected-bg !default;
+$splitbar-selected-text: $kendo-selected-text !default;

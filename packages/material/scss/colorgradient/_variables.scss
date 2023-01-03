@@ -1,5 +1,5 @@
 // ColorGradient
-$colorgradient-spacer: k-map-get( $spacing, 3 ) !default;
+$colorgradient-spacer: k-map-get( $kendo-spacing, 3 ) !default;
 
 $colorgradient-width: 294px !default;
 $colorgradient-border-width: 1px !default;
@@ -10,11 +10,11 @@ $colorgradient-gap: $colorgradient-spacer !default;
 $colorgradient-font-family: $font-family !default;
 $colorgradient-font-size: $font-size !default;
 $colorgradient-line-height: $line-height !default;
-$colorgradient-bg: $component-bg !default;
-$colorgradient-text: $component-text !default;
-$colorgradient-border: $component-border !default;
+$colorgradient-bg: $kendo-component-bg !default;
+$colorgradient-text: $kendo-component-text !default;
+$colorgradient-border: $kendo-component-border !default;
 
-$colorgradient-focus-border: $hovered-border !default;
+$colorgradient-focus-border: $kendo-hover-border !default;
 $colorgradient-focus-shadow: $box-shadow-depth-2 !default;
 
 $colorgradient-canvas-border-radius: $kendo-border-radius-md !default;
@@ -43,9 +43,9 @@ $colorgradient-canvas-draghandle-margin-y: - k-math-div( $colorgradient-draghand
 $colorgradient-canvas-draghandle-margin-x: - k-math-div( $colorgradient-draghandle-width, 2 ) !default;
 
 $colorgradient-input-width: 50px !default;
-$colorgradient-input-gap: k-map-get( $spacing, 2 ) !default;
-$colorgradient-input-label-gap: k-map-get( $spacing, 1 ) !default;
-$colorgradient-input-label-text: $subtle-text !default;
+$colorgradient-input-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$colorgradient-input-label-gap: k-map-get( $kendo-spacing, 1 ) !default;
+$colorgradient-input-label-text: $kendo-subtle-text !default;
 
 $colorgradient-contrast-ratio-font-weight: $font-weight-bold !default;
-$colorgradient-contrast-spacer: k-map-get( $spacing, 2 ) !default;
+$colorgradient-contrast-spacer: k-map-get( $kendo-spacing, 2 ) !default;

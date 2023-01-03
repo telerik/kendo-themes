@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: column;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         table,
         thead,
@@ -394,7 +394,7 @@
         cursor: default;
         position: absolute;
         overflow: hidden;
-        padding-right: $padding-x;
+        padding-right: $kendo-padding-md-x;
 
         > div {
             position: relative;
@@ -404,9 +404,9 @@
         // Template
         .k-event-template {
             line-height: $scheduler-event-line-height;
-            padding: $padding-y $padding-x;
+            padding: $kendo-padding-md-y $kendo-padding-md-x;
             // TODO: incompatible units
-            // padding-right: $padding-x-sm + $spacer;
+            // padding-right: $kendo-padding-sm-x + $spacer;
         }
         .k-event-time {
             padding-bottom: 0;
@@ -422,7 +422,7 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            right: $padding-x;
+            right: $kendo-padding-md-x;
             z-index: 2;
 
             .k-event-delete {
@@ -448,7 +448,7 @@
 
         // Indicators
         .k-event-actions:first-child {
-            margin: $padding-y-sm .4ex 0 $padding-x-sm;
+            margin: $kendo-padding-sm-y .4ex 0 $kendo-padding-sm-x;
             top: 0;
             right: 0;
             float: left;
@@ -594,12 +594,12 @@
             position: absolute;
         }
         .k-label-top {
-            left: $padding-x-sm;
-            top: $padding-y-sm;
+            left: $kendo-padding-sm-x;
+            top: $kendo-padding-sm-y;
         }
         .k-label-bottom {
-            right: $padding-x-sm;
-            bottom: $padding-y-sm;
+            right: $kendo-padding-sm-x;
+            bottom: $kendo-padding-sm-y;
         }
 
         // Angle tingie
@@ -748,8 +748,8 @@
         .k-task > .k-event-delete {
             color: inherit;
             position: absolute;
-            top: $padding-y-sm;
-            right: $padding-y-sm;
+            top: $kendo-padding-sm-y;
+            right: $kendo-padding-sm-y;
             opacity: .5;
             visibility: hidden;
         }
@@ -946,7 +946,7 @@
         .k-scheduler-datetime-picker {
             display: flex;
             flex-flow: row nowrap;
-            gap: k-map-get( $spacing, 2 );
+            gap: k-map-get( $kendo-spacing, 2 );
         }
 
     }
@@ -985,7 +985,7 @@
         .k-event {
             text-align: right;
             padding-right: 0;
-            padding-left: $padding-x;
+            padding-left: $kendo-padding-md-x;
 
             .k-resize-w {
                 left: auto;
@@ -1003,7 +1003,7 @@
             }
 
             .k-event-actions:first-child {
-                margin: $padding-y-sm $padding-x-sm 0 .4ex;
+                margin: $kendo-padding-sm-y $kendo-padding-sm-x 0 .4ex;
                 float: right;
             }
         }

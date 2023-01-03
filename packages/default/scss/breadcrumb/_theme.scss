@@ -10,7 +10,7 @@
 
         &:focus,
         &.k-focus {
-            @include box-shadow( $breadcrumb-focused-shadow );
+            @include box-shadow( $breadcrumb-focus-shadow );
         }
     }
 
@@ -27,9 +27,9 @@
         &:hover,
         &.k-hover {
             @include fill(
-                $breadcrumb-link-hovered-text,
-                $breadcrumb-link-hovered-bg,
-                $breadcrumb-link-hovered-border
+                $breadcrumb-link-hover-text,
+                $breadcrumb-link-hover-bg,
+                $breadcrumb-link-hover-border
             );
         }
 
@@ -37,11 +37,11 @@
         &:focus,
         &.k-focus {
             @include fill(
-                $breadcrumb-link-focused-text,
-                $breadcrumb-link-focused-bg,
-                $breadcrumb-link-focused-border
+                $breadcrumb-link-focus-text,
+                $breadcrumb-link-focus-bg,
+                $breadcrumb-link-focus-border
             );
-            @include box-shadow( $breadcrumb-link-focused-shadow );
+            @include box-shadow( $breadcrumb-link-focus-shadow );
         }
     }
 
@@ -58,9 +58,9 @@
         &:hover,
         &.k-hover {
             @include fill(
-                $breadcrumb-root-link-hovered-text,
-                $breadcrumb-root-link-hovered-bg,
-                $breadcrumb-root-link-hovered-border
+                $breadcrumb-root-link-hover-text,
+                $breadcrumb-root-link-hover-bg,
+                $breadcrumb-root-link-hover-border
             );
         }
 
@@ -68,11 +68,11 @@
         &:focus,
         &.k-focus {
             @include fill(
-                $breadcrumb-root-link-focused-text,
-                $breadcrumb-root-link-focused-bg,
-                $breadcrumb-root-link-focused-border
+                $breadcrumb-root-link-focus-text,
+                $breadcrumb-root-link-focus-bg,
+                $breadcrumb-root-link-focus-border
             );
-            @include box-shadow( $breadcrumb-root-link-focused-shadow );
+            @include box-shadow( $breadcrumb-root-link-focus-shadow );
         }
     }
 

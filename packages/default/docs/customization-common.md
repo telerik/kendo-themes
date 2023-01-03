@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$body-text`
+`$kendo-body-text`
 
 </td>
 <td>
@@ -124,7 +124,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$hovered-bg</td>
+    <td>$kendo-hover-bg</td>
     <td>Color</td>
 <td>
 
@@ -144,7 +144,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$hovered-text</td>
+    <td>$kendo-hover-text</td>
     <td>Color</td>
 <td>
 
@@ -164,7 +164,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$hovered-border</td>
+    <td>$kendo-hover-border</td>
     <td>Color</td>
 <td>
 
@@ -184,7 +184,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$hovered-gradient</td>
+    <td>$kendo-hover-gradient</td>
     <td>List</td>
 <td>
 
@@ -202,11 +202,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$selected-bg</td>
+    <td>$kendo-selected-bg</td>
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>
@@ -222,11 +222,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$selected-text</td>
+    <td>$kendo-selected-text</td>
     <td>Color</td>
 <td>
 
-`k-contrast-legacy( $selected-bg )`
+`k-contrast-legacy( $kendo-selected-bg )`
 
 </td>
 <td>
@@ -242,7 +242,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$selected-border</td>
+    <td>$kendo-selected-border</td>
     <td>Color</td>
 <td>
 
@@ -262,7 +262,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$selected-gradient</td>
+    <td>$kendo-selected-gradient</td>
     <td>List</td>
 <td>
 

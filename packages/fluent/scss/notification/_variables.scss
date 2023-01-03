@@ -3,7 +3,7 @@
 
 /// Vertical padding of the notification container.
 /// @group notification
-$kendo-notification-container-padding-y: $kendo-padding-y-sm !default;
+$kendo-notification-container-padding-y: $kendo-padding-sm-y !default;
 
 /// Horizontal padding of the notification.
 /// @group notification
@@ -13,10 +13,10 @@ $kendo-notification-padding-x: map.get( $kendo-spacing, 3 ) !default;
 $kendo-notification-padding-y: map.get( $kendo-spacing, 2 ) !default;
 // Width of the border around the notification.
 /// @group notification
-$kendo-notification-border-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-notification-border-width: 1px !default;
 /// Border radius of the notification.
 /// @group notification
-$kendo-notification-border-radius: map.get( $kendo-spacing, thin ) !default;
+$kendo-notification-border-radius: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Font family of the notification.
 /// @group notification
 $kendo-notification-font-family: var( --kendo-font-family, inherit ) !default;
@@ -58,23 +58,23 @@ $kendo-notification-brand-colors: (
     info: info,
     secondary: neutral,
     tertiary: tertiary,
-);
+) !default;
 
 // Matrix with notification theme colors in the order: bg, color, border
 $_tc-notification-matrix: (
     (normal: (20, 190, 20)),
-);
+) !default;
 
 $_tc-notification-dark-matrix: (
-    (normal: (160, $white, 160)),
-);
+    (normal: (160, $kendo-color-white, 160)),
+) !default;
 
 $_tc-notification-light-matrix: (
     (normal: (50, 160, 50)),
-);
+) !default;
 
 /// Theme colors map for the notification variations.
-$kendo-notification-theme-colors: ();
+$kendo-notification-theme-colors: () !default;
 
 @each $ui-states in $_tc-notification-matrix {
     @each $brand-color, $palette in $kendo-notification-brand-colors {

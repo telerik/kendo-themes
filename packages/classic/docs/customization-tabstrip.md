@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -68,7 +68,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -88,7 +88,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$nav-item-padding-x`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -106,7 +106,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$nav-item-padding-y`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -160,12 +160,12 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$nav-item-margin`
+`0`
 
 </td>
 <td>
 
-`0px`
+`0`
 
 </td>
 </tr>
@@ -252,11 +252,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hovered-bg</td>
+    <td>$tabstrip-item-hover-bg</td>
     <td>Color</td>
 <td>
 
-`$hovered-bg`
+`$kendo-hover-bg`
 
 </td>
 <td>
@@ -272,11 +272,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hovered-text</td>
+    <td>$tabstrip-item-hover-text</td>
     <td>Color</td>
 <td>
 
-`$hovered-text`
+`$kendo-hover-text`
 
 </td>
 <td>
@@ -292,11 +292,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hovered-border</td>
+    <td>$tabstrip-item-hover-border</td>
     <td>Color</td>
 <td>
 
-`$hovered-border`
+`$kendo-hover-border`
 
 </td>
 <td>
@@ -312,7 +312,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hovered-gradient</td>
+    <td>$tabstrip-item-hover-gradient</td>
     <td>Null</td>
 <td>
 
@@ -334,7 +334,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -354,7 +354,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -374,7 +374,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -412,7 +412,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -430,7 +430,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -466,7 +466,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -486,7 +486,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -506,7 +506,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -522,11 +522,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-border-focused</td>
+    <td>$tabstrip-content-focus-border</td>
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>

@@ -5,16 +5,15 @@
 // Typography and utils
 @import "./typography/_index.scss";
 @import "./utils/_index.scss";
-@import "./cursor/_index.scss";
 
 
 // Generic content
-@import "./styling/_index.scss";
 @import "./icons/_index.scss";
 @import "./messagebox/_index.scss";
 
 
 // Primitive components
+@import "./draggable/_index.scss";
 @import "./list/_index.scss";
 @import "./listgroup/_index.scss";
 @import "./overlay/_index.scss";

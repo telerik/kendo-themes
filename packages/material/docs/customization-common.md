@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -88,7 +88,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( if( $theme-type == dark, white, black ), .08 )`
+`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
 
 </td>
 <td>
@@ -122,7 +122,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$hovered-bg</td>
+    <td>$kendo-hover-bg</td>
     <td>Color</td>
 <td>
 
@@ -142,7 +142,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$hovered-text</td>
+    <td>$kendo-hover-text</td>
     <td>Color</td>
 <td>
 
@@ -162,11 +162,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$hovered-border</td>
+    <td>$kendo-hover-border</td>
     <td>Color</td>
 <td>
 
-`rgba( if( $theme-type == dark, white, black ), .15 )`
+`rgba( $base-border, .15 )`
 
 </td>
 <td>
@@ -182,7 +182,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$hovered-gradient</td>
+    <td>$kendo-hover-gradient</td>
     <td>Null</td>
 <td>
 
@@ -200,11 +200,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$selected-bg</td>
+    <td>$kendo-selected-bg</td>
     <td>Color</td>
 <td>
 
-`$secondary`
+`$kendo-color-secondary`
 
 </td>
 <td>
@@ -220,11 +220,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$selected-text</td>
+    <td>$kendo-selected-text</td>
     <td>Color</td>
 <td>
 
-`$secondary-contrast`
+`$kendo-color-secondary-contrast`
 
 </td>
 <td>
@@ -240,11 +240,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$selected-border</td>
+    <td>$kendo-selected-border</td>
     <td>Color</td>
 <td>
 
-`rgba( if($theme-type == dark, white, black), .1 )`
+`rgba( $base-border, .1 )`
 
 </td>
 <td>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$selected-gradient</td>
+    <td>$kendo-selected-gradient</td>
     <td>Null</td>
 <td>
 

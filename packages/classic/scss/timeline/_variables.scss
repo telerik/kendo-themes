@@ -13,21 +13,21 @@ $timeline-mobile-spacing-y: 16px !default;
 $timeline-track-arrow-width: 30px !default;
 $timeline-track-arrow-height: 30px !default;
 
-$timeline-track-arrow-disabled-text: k-true-mix( $kendo-button-text, $body-bg, 65% ) !default;
-$timeline-track-arrow-disabled-bg: k-true-mix( $kendo-button-bg, $body-bg, 65% ) !default;
-$timeline-track-arrow-disabled-border: k-true-mix( #000000, $body-bg, 4.8% ) !default;
+$timeline-track-arrow-disabled-text: k-true-mix( $kendo-button-text, $kendo-body-bg, 65% ) !default;
+$timeline-track-arrow-disabled-bg: k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% ) !default;
+$timeline-track-arrow-disabled-border: k-true-mix( #000000, $kendo-body-bg, 4.8% ) !default;
 
 $timeline-track-size: 6px !default;
 $timeline-track-wrap-padding-bottom: k-math-div( $timeline-track-size, 2 ) !default;
 $timeline-track-border-width: 1px !default;
 $timeline-track-margin-bottom: 16px !default;
-$timeline-track-bottom-calc: calc((#{$timeline-track-arrow-height} / 2) + #{$timeline-track-wrap-padding-bottom}) !default;
+$timeline-track-bottom-calc: calc(#{k-math-div( $timeline-track-arrow-height, 2 )} + #{$timeline-track-wrap-padding-bottom}) !default;
 $timeline-track-start-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
 $timeline-track-end-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-track-border-width}) !default;
 $timeline-track-bg: $kendo-button-bg !default;
 $timeline-track-border-color: $kendo-button-border !default;
 
-$timeline-track-item-focus-shadow: 0 3px 4px 0 rgba( $primary, .4 ) !default;
+$timeline-track-item-focus-shadow: 0 3px 4px 0 rgba( $kendo-color-primary, .4 ) !default;
 
 $timeline-track-event-offset: 36px !default;
 
@@ -38,7 +38,7 @@ $timeline-flag-min-width: 80px !default;
 $timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spacing-x}) !default;
 $timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
 $timeline-horizontal-flag-min-width: 60px !default;
-$timeline-flag-bg: $primary !default;
+$timeline-flag-bg: $kendo-color-primary !default;
 $timeline-flag-text: k-contrast-legacy( $timeline-flag-bg ) !default;
 
 $timeline-flag-callout-width: 10px !default;
@@ -57,9 +57,9 @@ $timeline-mobile-vertical-padding-with-dates-calc: calc(#{$timeline-mobile-verti
 
 $timeline-circle-width: 16px !default;
 $timeline-circle-height: 16px !default;
-$timeline-circle-bg: $primary !default;
+$timeline-circle-bg: $kendo-color-primary !default;
 
-$timeline-collapse-arrow-padding-x: $padding-x !default;
+$timeline-collapse-arrow-padding-x: $kendo-padding-md-x !default;
 
 $timeline-event-width: 400px !default;
 $timeline-event-height: 600px !default;

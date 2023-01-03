@@ -21,9 +21,9 @@ $kendo-list-header-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list header.
 /// @group list
-$kendo-list-header-padding-y-sm: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-list-header-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-header-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-header-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-header-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Border width of list header.
 /// @group list
@@ -53,9 +53,9 @@ $kendo-list-item-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list items.
 /// @group list
-$kendo-list-item-padding-y-sm: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-item-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-item-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Font size of list items.
 /// @group list
@@ -83,21 +83,21 @@ $kendo-list-group-item-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list group items.
 /// @group list
-$kendo-list-group-item-padding-y-sm: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-list-group-item-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-group-item-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-group-item-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-group-item-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Horizontal padding of list item group label.
 /// @group list
-$kendo-list-item-group-label-padding-x-sm: map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-group-label-padding-x-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-list-item-group-label-padding-x-md: map.get( $kendo-spacing, 1 ) !default;
-$kendo-list-item-group-label-padding-x-lg: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-group-label-padding-x-lg: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// Vertical padding of list item group label.
 /// @group list
-$kendo-list-item-group-label-padding-y-sm: map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-group-label-padding-y-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-list-item-group-label-padding-y-md: map.get( $kendo-spacing, 1 ) !default;
-$kendo-list-item-group-label-padding-y-lg: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-group-label-padding-y-lg: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// Border width of list group items.
 /// @group list
@@ -198,7 +198,7 @@ $kendo-list-border: var( --kendo-component-border, inherit ) !default;
 
 /// Background color of list header.
 /// @group list
-$kendo-list-header-bg: $white !default;
+$kendo-list-header-bg: $kendo-color-white !default;
 /// Text color of list header.
 /// @group list
 $kendo-list-header-text: get-theme-color-var( primary-100 ) !default;
@@ -212,7 +212,7 @@ $kendo-list-header-shadow: $kendo-box-shadow-depth-3 !default;
 
 /// Background color of list items.
 /// @group list
-$kendo-list-item-bg: $white !default;
+$kendo-list-item-bg: $kendo-color-white !default;
 /// Text color of list items.
 /// @group list
 $kendo-list-item-text: get-theme-color-var( neutral-160 ) !default;
@@ -226,7 +226,7 @@ $kendo-list-item-hover-text: get-theme-color-var( neutral-190 ) !default;
 
 /// Background color of focused list items.
 /// @group list
-$kendo-list-item-focus-bg: $white !default;
+$kendo-list-item-focus-bg: $kendo-color-white !default;
 /// Text color of focused list items.
 /// @group list
 $kendo-list-item-focus-text: get-theme-color-var( neutral-160 ) !default;
@@ -250,14 +250,14 @@ $kendo-list-item-selected-hover-text: get-theme-color-var( neutral-190 ) !defaul
 
 /// Background color of disabled list items.
 /// @group list
-$kendo-list-item-disabled-bg: $white !default;
+$kendo-list-item-disabled-bg: $kendo-color-white !default;
 /// Text color of disabled list items.
 /// @group list
 $kendo-list-item-disabled-text: get-theme-color-var( neutral-90 ) !default;
 
 /// Background color of list group items.
 /// @group list
-$kendo-list-group-item-bg: $white !default;
+$kendo-list-group-item-bg: $kendo-color-white !default;
 /// Text color of list group items.
 /// @group list
 $kendo-list-group-item-text: get-theme-color-var( primary-100 ) !default;

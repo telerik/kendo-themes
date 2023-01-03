@@ -104,14 +104,14 @@
 
         .k-alert-error {
             font-size: var( --kendo-font-size-sm, #{$kendo-font-size-sm} );
-            margin-block-start: calc( var( --kendo-padding-y, #{$kendo-padding-y} )  * 2 );
+            margin-block-start: calc( var( --kendo-padding-y, #{$kendo-padding-md-y} ) * 2 );
         }
 
         .k-field-info {
             display: inline-block;
             font-size: var( --kendo-font-size-xs, #{$kendo-font-size-xs} );
             line-height: 1;
-            margin-inline: var( --kendo-padding-x, #{$kendo-padding-x} );
+            margin-inline: var( --kendo-padding-x, #{$kendo-padding-md-x} );
         }
 
 
@@ -226,9 +226,9 @@
             text-align: left;
             font-weight: 600;
             line-height: 1;
-            margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-y-lg} ) * 2 );
+            margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-lg-y} ) * 2 );
             text-transform: uppercase;
-            padding-inline-end: var( --kendo-padding-x, #{$kendo-padding-x} );
+            padding-inline-end: var( --kendo-padding-x, #{$kendo-padding-md-x} );
             width: auto;
         }
 
@@ -236,14 +236,14 @@
             display: flex;
             align-items: flex-start;
             text-align: left;
-            margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-y-lg} ) * 2 );
+            margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-lg-y} ) * 2 );
 
             > span:not(.k-widget) {
                 width: var( --kendo-inline-form-element-width, #{$kendo-inline-form-element-width} );
                 text-align: right;
                 line-height: var( --kendo-line-height, #{$kendo-line-height} );
-                padding-block: calc( #{$kendo-padding-y} + #{$kendo-input-border-width} );
-                padding-inline-end: var( --kendo-padding-x-lg, #{$kendo-padding-x-lg} );
+                padding-block: calc( #{$kendo-padding-md-y} + #{$kendo-input-border-width} );
+                padding-inline-end: var( --kendo-padding-x-lg, #{$kendo-padding-lg-x} );
                 align-self: center;
             }
 
@@ -257,7 +257,7 @@
 
             .k-alert-error {
                 font-size: var( --kendo-font-size-sm, #{$kendo-font-size-sm} );
-                margin-block-start: calc( var( --kendo-padding-y, #{$kendo-padding-y} ) * 2 );
+                margin-block-start: calc( var( --kendo-padding-y, #{$kendo-padding-md-y} ) * 2 );
             }
 
             .k-field-info {
@@ -328,7 +328,7 @@
         }
 
         > .k-reset > li + li {
-            margin-block-start: math.div( map.get( $kendo-spacing, 4 ), 2 );
+            margin-block-start: map.get( $kendo-spacing, 2 );
         }
 
         .k-reset .k-widget {

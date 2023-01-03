@@ -3,28 +3,34 @@
 @use "sass:meta";
 
 // Options
-$enable-shadows: true !default;
-$enable-rounded: true !default;
-$enable-gradients: true !default;
-$enable-transitions: true !default;
-$enable-flex-classes: true !default;
-$enable-grid-classes: true !default;
+$kendo-enable-shadows: true !default;
+$kendo-enable-rounded: true !default;
+$kendo-enable-gradients: true !default;
+$kendo-enable-transitions: true !default;
 
-$use-calc-badge-size: true !default;
-$use-input-button-width: true !default;
-$use-input-spinner-width: true !default;
-$use-input-spinner-icon-offset: false !default;
-$use-picker-select-width: true !default;
+$kendo-use-input-button-width: true !default;
+$kendo-use-input-spinner-width: true !default;
+$kendo-use-input-spinner-icon-offset: false !default;
 
 $kendo-spacing: (
+    // sass-lint:disable-block leading-zero
     0: 0,
+    1px: 1px,
+    0.5: .125rem,
     1: .25rem,
+    1.5: .375rem,
     2: .5rem,
+    2.5: .625rem,
     3: .75rem,
+    3.5: .875rem,
     4: 1rem,
+    4.5: 1.125rem,
     5: 1.25rem,
+    5.5: 1.375rem,
     6: 1.5rem,
+    6.5: 1.625rem,
     7: 1.75rem,
+    7.5: 1.875rem,
     8: 2rem,
     9: 2.25rem,
     10: 2.5rem,
@@ -41,14 +47,7 @@ $kendo-spacing: (
     21: 5.25rem,
     22: 5.5rem,
     23: 5.75rem,
-    24: 6rem,
-    xs: .25rem,
-    sm: .5rem,
-    md: .75rem,
-    lg: 1rem,
-    xl: 1.5rem,
-    thin: .125rem,
-    hair: .0625rem
+    24: 6rem
 ) !default;
 
 
@@ -84,7 +83,7 @@ $kendo-letter-spacing: normal !default;
 $default-scrollbar-width: 17px !default;
 
 /// Border radius for all components.
-$kendo-border-radius: map.get( $kendo-spacing, thin ) !default;
+$kendo-border-radius: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-border-radius-sm: math.div( $kendo-border-radius, 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: ( $kendo-border-radius * 2 ) !default;
@@ -92,10 +91,12 @@ $kendo-border-radius-lg: ( $kendo-border-radius * 2 ) !default;
 // Metrics
 $kendo-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-padding-y: map.get( $kendo-spacing, 1 ) !default;
-$kendo-padding-x-sm: math.div( $kendo-padding-x, 2) !default;
-$kendo-padding-y-sm: math.div( $kendo-padding-y, 2) !default;
-$kendo-padding-x-lg: ( $kendo-padding-x * 1.5) !default;
-$kendo-padding-y-lg: ( $kendo-padding-y * 1.5) !default;
+$kendo-padding-sm-x: map.get( $kendo-spacing, 1 ) !default;
+$kendo-padding-sm-y: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-padding-md-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-padding-md-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-padding-lg-x: map.get( $kendo-spacing, 3 ) !default;
+$kendo-padding-lg-y: map.get( $kendo-spacing, 1.5 ) !default; // sass-lint:disable-line leading-zero
 
 // Default transition
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out, opacity .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out !default;

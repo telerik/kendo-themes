@@ -29,7 +29,7 @@ $kendo-scrollview-border: var( --kendo-component-border, inherit ) !default;
 $kendo-scrollview-pagebutton-size: 10px !default;
 /// Scrollview page background color.
 /// @group scrollview
-$kendo-scrollview-pagebutton-bg: $white !default;
+$kendo-scrollview-pagebutton-bg: $kendo-color-white !default;
 /// Scrollview page button border color.
 /// @group scrollview
 $kendo-scrollview-pagebutton-border: $kendo-scrollview-pagebutton-bg !default;
@@ -77,17 +77,17 @@ $kendo-scrollview-pager-multidot-step: 1px !default;
 
 /// Scrollview pager light background color.
 /// @group scrollview
-$kendo-scrollview-pager-light-bg: rgba( $white, .4 ) !default;
+$kendo-scrollview-pager-light-bg: rgba( $kendo-color-white, .4 ) !default;
 /// Scrollview pager dark background color.
 /// @group scrollview
-$kendo-scrollview-pager-dark-bg: rgba( $black, .4 ) !default;
+$kendo-scrollview-pager-dark-bg: rgba( $kendo-color-black, .4 ) !default;
 
 /// Scrollview arrow arrows size.
 /// @group scrollview
 $kendo-scrollview-arrow-icon-size: calc( var( --kendo-icon-size-lg, 2rem ) * 2 ) !default;
 /// Scrollview navigation text color.
 /// @group scrollview
-$kendo-scrollview-navigation-color: $white !default;
+$kendo-scrollview-navigation-color: $kendo-color-white !default;
 /// Scrollview navigation arrows shadow.
 /// @group scrollview
 $kendo-scrollview-navigation-arrow-shadow: var( --kendo-box-shadow-depth-3, none ) !default;

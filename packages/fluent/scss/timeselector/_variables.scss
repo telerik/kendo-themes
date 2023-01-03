@@ -37,7 +37,7 @@ $kendo-time-selector-header-border-width: 0px !default;
 
 /// Visibility of the time-selector separator.
 /// @group time-selector
-$kendo-time-list-separator-display: none;
+$kendo-time-list-separator-display: none !default;
 /// Minimum width of the time-selector columns.
 /// @group time-selector
 $kendo-time-list-width: 4em !default;
@@ -87,7 +87,7 @@ $kendo-time-list-highlight-border: $kendo-time-selector-border !default;
 
 /// Background color of the focused time-selector column.
 /// @group time-selector
-$kendo-time-list-focused-bg: rgba(0, 0, 0, .04) !default;
+$kendo-time-list-focus-bg: rgba(0, 0, 0, .04) !default;
 
 
 /// Font sizes of the time-selector.

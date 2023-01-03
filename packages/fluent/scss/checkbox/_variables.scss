@@ -16,21 +16,21 @@ $kendo-checkbox-border-width: 1px !default;
 $kendo-checkbox-sizes: (
     sm: (
         size: map.get( $kendo-spacing, 4 ),
-        glyph-size: ( map.get( $kendo-spacing, 4 ) - map.get( $kendo-spacing, thin ) ),
+        glyph-size: map.get( $kendo-spacing, 3.5 ),
         indicator-size: map.get( $kendo-spacing, 4 ),
         indeterminate-size: map.get( $kendo-spacing, 3 ),
         ripple-size: 300%
     ),
     md: (
         size: map.get( $kendo-spacing, 5 ),
-        glyph-size: ( map.get( $kendo-spacing, 6 ) - map.get( $kendo-spacing, thin ) ),
+        glyph-size: map.get( $kendo-spacing, 4.5 ),
         indicator-size: map.get( $kendo-spacing, 4 ),
         indeterminate-size: map.get( $kendo-spacing, 4 ),
         ripple-size: 300%
     ),
     lg: (
         size: map.get( $kendo-spacing, 6 ),
-        glyph-size: ( map.get( $kendo-spacing, 6 ) - map.get( $kendo-spacing, thin ) ),
+        glyph-size: map.get( $kendo-spacing, 5.5 ),
         indicator-size: map.get( $kendo-spacing, 4 ),
         indeterminate-size: map.get( $kendo-spacing, 5 ),
         ripple-size: 300%
@@ -62,7 +62,7 @@ $kendo-checkbox-hover-border: $kendo-checkbox-border !default;
 $kendo-checkbox-checked-bg: get-theme-color-var( primary-100 ) !default;
 /// Color of checked checkbox.
 /// @group checkbox
-$kendo-checkbox-checked-text: $white !default;
+$kendo-checkbox-checked-text: $kendo-color-white !default;
 /// Border color of checked checkbox.
 /// @group checkbox
 $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
@@ -72,7 +72,7 @@ $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
 $kendo-checkbox-hover-checked-bg: get-theme-color-var( primary-110 ) !default;
 /// Color of checked checkbox.
 /// @group checkbox
-$kendo-checkbox-hover-checked-text: $white !default;
+$kendo-checkbox-hover-checked-text: $kendo-color-white !default;
 /// Border of hovered and checked checkbox.
 /// @group checkbox
 $kendo-checkbox-hover-checked-border: $kendo-checkbox-hover-checked-bg !default;
@@ -123,7 +123,7 @@ $kendo-checkbox-disabled-border: get-theme-color-var( neutral-60 ) !default;
 $kendo-checkbox-disabled-checked-bg: get-theme-color-var( neutral-60 ) !default;
 /// Color of disabled and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-disabled-checked-text: $white !default;
+$kendo-checkbox-disabled-checked-text: $kendo-color-white !default;
 /// Border color of disabled and checked checkbox.
 /// @group checkbox
 $kendo-checkbox-disabled-checked-border: get-theme-color-var( neutral-60 ) !default;

@@ -24,8 +24,8 @@
         // Hover state
         tbody>tr:not(.k-detail-row):hover,
         .k-table-tbody>.k-table-row:not(.k-detail-row).k-hover {
-            color: $kendo-grid-hovered-text;
-            background-color: $kendo-grid-hovered-bg;
+            color: $kendo-grid-hover-text;
+            background-color: $kendo-grid-hover-bg;
         }
 
         // Selected state
@@ -46,7 +46,7 @@
         .k-grid-pager {
             &:focus,
             &.k-focus {
-                box-shadow: $kendo-grid-focused-shadow;
+                box-shadow: $kendo-grid-focus-shadow;
             }
         }
 
@@ -90,7 +90,7 @@
             // Selected hover
             .k-selected:hover .k-table-td,
             .k-selected.k-hover .k-table-td {
-                @include fill( $bg: $kendo-grid-sticky-selected-hovered-bg );
+                @include fill( $bg: $kendo-grid-sticky-selected-hover-bg );
             }
         }
     }
@@ -130,8 +130,8 @@
                 box-shadow: inset 0 0 0 2px rgba( black, .1 );
             }
             &.k-active {
-                color: $selected-text;
-                background-color: $selected-bg;
+                color: $kendo-selected-text;
+                background-color: $kendo-selected-bg;
             }
         }
 
@@ -200,7 +200,7 @@
         &.k-hover .k-grid-content-sticky,
         &:hover .k-grid-row-sticky,
         &.k-hover .k-grid-row-sticky {
-            background-color: $kendo-grid-sticky-hovered-bg;
+            background-color: $kendo-grid-sticky-hover-bg;
         }
 
 
@@ -211,7 +211,7 @@
         &.k-selected.k-hover .k-grid-row-sticky,
         &:hover .k-table-td.k-grid-content-sticky.k-selected,
         &.k-hover .k-table-td.k-grid-content-sticky.k-selected {
-            background-color: $kendo-grid-sticky-selected-hovered-bg;
+            background-color: $kendo-grid-sticky-selected-hover-bg;
         }
     }
 
@@ -224,7 +224,7 @@
 
             &:hover,
             &.k-hover {
-                background-color: $kendo-grid-sticky-hovered-bg;
+                background-color: $kendo-grid-sticky-hover-bg;
             }
         }
 
@@ -235,7 +235,7 @@
 
             &:hover .k-table-td,
             &.k-hover .k-table-td {
-                background-color: $kendo-grid-sticky-hovered-bg;
+                background-color: $kendo-grid-sticky-hover-bg;
             }
         }
 
@@ -267,7 +267,7 @@
         .k-grid-row-sticky.k-table-alt-row.k-hover .k-table-td,
         .k-table-alt-row:hover .k-grid-content-sticky,
         .k-table-alt-row.k-hover .k-grid-content-sticky {
-            background-color: $kendo-grid-sticky-hovered-bg;
+            background-color: $kendo-grid-sticky-hover-bg;
         }
 
         // Selected + Hover
@@ -283,7 +283,7 @@
         .k-grid-row-sticky.k-hover .k-table-td.k-selected,
         .k-table-row:hover .k-grid-content-sticky.k-selected,
         .k-table-row.k-hover .k-grid-content-sticky.k-selected {
-            background-color: $kendo-grid-sticky-selected-hovered-bg;
+            background-color: $kendo-grid-sticky-selected-hover-bg;
         }
     }
 
@@ -294,7 +294,7 @@
 
         &:hover .k-grid-content-sticky,
         &.k-hover .k-grid-content-sticky {
-            @include fill( $bg: $kendo-grid-sticky-hovered-bg );
+            @include fill( $bg: $kendo-grid-sticky-hover-bg );
         }
     }
 
@@ -306,7 +306,7 @@
 
         &:hover .k-grid-footer-sticky,
         &.k-hover .k-grid-footer-sticky {
-            @include fill( $bg: $kendo-grid-sticky-footer-hovered-bg );
+            @include fill( $bg: $kendo-grid-sticky-footer-hover-bg );
         }
     }
 

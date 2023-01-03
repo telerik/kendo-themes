@@ -23,7 +23,7 @@ $font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New"
 
 /// Line height used along with $font-size.
 /// @group typography
-$line-height: (28 / 14) !default;
+$line-height: k-math-div( 28, 14 ) !default;
 $line-height-xs: 1 !default;
 $line-height-sm: 1.2 !default;
 $line-height-md: $line-height !default;
@@ -108,13 +108,13 @@ $pre-padding-y: 16px !default;
 $code-border-width: 1px !default;
 
 $code-bg: $base-bg !default;
-$code-text: $component-text !default;
-$code-border: $component-border !default;
+$code-text: $kendo-component-text !default;
+$code-border: $kendo-component-border !default;
 
 
 // Link
-$link-text: $secondary !default;
-$link-hover-text: $secondary-darker !default;
+$link-text: $kendo-color-secondary !default;
+$link-hover-text: $kendo-color-secondary-darker !default;
 
 
 // Display

@@ -1,5 +1,5 @@
 // Coloreditor/FlatColorPicker
-$coloreditor-spacer: k-map-get( $spacing, 3 ) !default;
+$coloreditor-spacer: k-map-get( $kendo-spacing, 3 ) !default;
 
 $coloreditor-min-width: 294px !default;
 $coloreditor-border-width: 1px !default;
@@ -7,18 +7,18 @@ $coloreditor-border-radius: $kendo-border-radius-md !default;
 $coloreditor-font-family: $font-family !default;
 $coloreditor-font-size: $font-size !default;
 $coloreditor-line-height: $line-height !default;
-$coloreditor-bg: $component-bg !default;
-$coloreditor-text: $component-text !default;
-$coloreditor-border: $component-border !default;
+$coloreditor-bg: $kendo-component-bg !default;
+$coloreditor-text: $kendo-component-text !default;
+$coloreditor-border: $kendo-component-border !default;
 
-$coloreditor-focus-border: $hovered-border !default;
+$coloreditor-focus-border: $kendo-hover-border !default;
 $coloreditor-focus-shadow: $box-shadow-depth-2 !default;
 
 $coloreditor-header-padding-y: $coloreditor-spacer !default;
 $coloreditor-header-padding-x: $coloreditor-header-padding-y !default;
-$coloreditor-header-actions-gap: k-map-get( $spacing, 2 ) !default;
+$coloreditor-header-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
-$coloreditor-preview-gap: k-map-get( $spacing, 1 ) !default;
+$coloreditor-preview-gap: k-map-get( $kendo-spacing, 1 ) !default;
 $coloreditor-color-preview-width: 32px !default;
 $coloreditor-color-preview-height: 12px !default;
 

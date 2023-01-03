@@ -25,7 +25,7 @@
         cursor: default;
         position: relative;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         .k-vertical-align-center {
             position: relative;
@@ -133,7 +133,7 @@
         flex: 1;
 
         > .k-i-formula-fx {
-            padding-inline: var( --kendo-padding-y, #{$kendo-padding-y} );
+            padding-inline: var( --kendo-padding-y, #{$kendo-padding-md-y} );
             padding-block: 0;
             box-sizing: content-box;
             border-width: 0 1px 0 0;
@@ -591,8 +591,8 @@
                 padding-inline-start: var( --filter-menu-padding-left, #{$filter-menu-padding-left} );
             }
             .k-icon {
-                margin-inline-start: calc(-1 * ( var( --kendo-icon-size, 1rem ) + #{$kendo-padding-y} ) );
-                margin-inline-end: $kendo-padding-y;
+                margin-inline-start: calc(-1 * ( var( --kendo-icon-size, 1rem ) + #{$kendo-padding-md-y} ) );
+                margin-inline-end: $kendo-padding-md-y;
             }
 
         }
@@ -605,7 +605,7 @@
             overflow-x: auto;
 
             .k-treeview {
-                padding: $kendo-padding-y;
+                padding: $kendo-padding-md-y;
                 overflow: visible;
             }
         }
@@ -631,7 +631,7 @@
             cursor: pointer;
 
             > .k-icon {
-                margin-inline-end: $kendo-padding-y;
+                margin-inline-end: $kendo-padding-md-y;
             }
         }
         .k-details-content,

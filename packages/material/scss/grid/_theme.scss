@@ -30,7 +30,7 @@
             .k-detail-row > .k-table-td:focus,
             .k-group-footer > .k-table-td:focus {
                 color: inherit;
-                background-color: $kendo-grid-hovered-bg;
+                background-color: $kendo-grid-hover-bg;
             }
 
             .k-table-row:hover,
@@ -38,7 +38,7 @@
                 .k-grid-header-sticky,
                 .k-grid-footer-sticky {
                     color: inherit;
-                    background-color: $kendo-grid-sticky-hovered-bg;
+                    background-color: $kendo-grid-sticky-hover-bg;
                 }
             }
 
@@ -54,7 +54,7 @@
                     &.k-grid-content-sticky,
                     &.k-grid-footer-sticky {
                         color: inherit;
-                        background-color: $kendo-grid-sticky-hovered-bg;
+                        background-color: $kendo-grid-sticky-hover-bg;
                     }
                 }
             }
@@ -81,7 +81,7 @@
                 &:hover .k-table-td,
                 &.k-hover .k-table-td {
                     color: inherit;
-                    @include fill( $bg: $kendo-grid-sticky-footer-hovered-bg );
+                    @include fill( $bg: $kendo-grid-sticky-footer-hover-bg );
                 }
             }
         }
@@ -136,8 +136,8 @@
             }
 
             &.k-active {
-                color: $primary-contrast;
-                background-color: $primary;
+                color: $kendo-color-primary-contrast;
+                background-color: $kendo-color-primary;
             }
         }
 
@@ -162,13 +162,13 @@
 
         &:hover .k-table-td,
         &.k-hover .k-table-td {
-            @include fill( $bg: $kendo-grid-sticky-footer-hovered-bg );
+            @include fill( $bg: $kendo-grid-sticky-footer-hover-bg );
         }
     }
 
     .k-grouping-dropclue,
     .k-reorder-cue {
-        border-color: $primary;
+        border-color: $kendo-color-primary;
 
         &::before {
             border-color: transparent;
@@ -181,15 +181,15 @@
     }
 
     .k-resize-handle:hover .k-resize-handle-inner {
-        background-color: $primary;
+        background-color: $kendo-color-primary;
     }
 
     .k-column-resizer:hover {
-        color: $primary;
+        color: $kendo-color-primary;
     }
 
     .k-reorder-cue {
-        background-color: $primary;
+        background-color: $kendo-color-primary;
     }
 
     .k-columnmenu-item {

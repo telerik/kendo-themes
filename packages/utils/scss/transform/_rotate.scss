@@ -1,4 +1,42 @@
-// TODO DOCS
+/// This is equivalent to `transform: rotate( 0 );`. Does not rotate the element.
+/// @name .k-rotate-0
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: rotate( 45deg );`. Rotates the element by 45 degrees.
+/// @name .k-rotate-45
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: rotate( 90deg );`. Rotates the element by 90 degrees.
+/// @name .k-rotate-90
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: rotate( 135deg );`. Rotates the element by 135 degrees.
+/// @name .k-rotate-135
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: rotate( 180deg );`. Rotates the element by 180 degrees.
+/// @name .k-rotate-180
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: rotate( 225deg );`. Rotates the element by 225 degrees.
+/// @name .k-rotate-225
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: rotate( 270deg );`. Rotates the element by 270 degrees.
+/// @name .k-rotate-270
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: rotate( 315deg );`. Rotates the element by 315 degrees.
+/// @name .k-rotate-315
+/// @group transform
+/// @contextType css
 
 $kendo-utils-rotate: k-map-get( $kendo-utils, "rotate" ) !default;
 

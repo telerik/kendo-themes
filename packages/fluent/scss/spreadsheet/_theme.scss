@@ -212,7 +212,7 @@
 
             &:hover div,
             &.k-hover div {
-                color: var( --kendo-spreadsheet-insert-image-dialog-overlay-hovered-text, #{$kendo-spreadsheet-insert-image-dialog-overlay-hovered-text} );
+                color: var( --kendo-spreadsheet-insert-image-dialog-overlay-hover-text, #{$kendo-spreadsheet-insert-image-dialog-overlay-hover-text} );
             }
         }
     }

@@ -28,18 +28,18 @@ $kendo-color-level-step: 8% !default;
 }
 
 @function k-try-shade( $color, $level: 1 ) {
-    $dark-theme: if( variable-exists( dark-theme ), $dark-theme, false );
+    $_dark-theme: if( k-meta-variable-exists( dark-theme ), $dark-theme, false );
 
-    @if $dark-theme {
+    @if $_dark-theme {
         @return k-color-tint( $color, $level );
     }
 
     @return k-color-shade( $color, $level );
 }
 @function k-try-tint( $color, $level: 1 ) {
-    $dark-theme: if( variable-exists( dark-theme ), $dark-theme, false );
+    $_dark-theme: if( k-meta-variable-exists( dark-theme ), $dark-theme, false );
 
-    @if $dark-theme {
+    @if $_dark-theme {
         @return k-color-shade( $color, $level );
     }
 
@@ -48,18 +48,18 @@ $kendo-color-level-step: 8% !default;
 
 
 @function k-try-darken( $color, $amount ) {
-    $dark-theme: if( variable-exists( dark-theme ), $dark-theme, false );
+    $_dark-theme: if( k-meta-variable-exists( dark-theme ), $dark-theme, false );
 
-    @if $dark-theme {
+    @if $_dark-theme {
         @return k-color-lighten( $color, $amount );
     }
     @return k-color-darken( $color, $amount );
 }
 
 @function k-try-lighten( $color, $amount ) {
-    $dark-theme: if( variable-exists( dark-theme ), $dark-theme, false );
+    $_dark-theme: if( k-meta-variable-exists( dark-theme ), $dark-theme, false );
 
-    @if $dark-theme {
+    @if $_dark-theme {
         @return k-color-darken( $color, $amount );
     }
     @return k-color-lighten( $color, $amount );

@@ -246,7 +246,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`math.div( map.get( $kendo-spacing, 1 ), 2 )`
+`map.get( $kendo-spacing, 0.5 )`
 
 </td>
 <td>

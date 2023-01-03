@@ -43,7 +43,7 @@
         font-size: $chart-font-size;
         line-height: $chart-line-height;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
     }
 
     .k-chart,
@@ -97,7 +97,7 @@
     .k-chart-tooltip td {
         width: auto;
         text-align: left;
-        padding: $padding-y-sm $padding-x-sm;
+        padding: $kendo-padding-sm-y $kendo-padding-sm-x;
         line-height: $line-height;
         vertical-align: middle;
     }
@@ -283,7 +283,7 @@
         display: block;
         overflow: hidden;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         // Tile
         .k-treemap-tile {
@@ -303,7 +303,7 @@
 
         // Title
         .k-treemap-title {
-            padding: $padding-y-sm $padding-x-sm;
+            padding: $kendo-padding-sm-y $kendo-padding-sm-x;
             border-width: 0 0 1px;
             border-style: solid;
             border-color: inherit;
@@ -312,7 +312,7 @@
             background-repeat: repeat-x;
         }
         .k-treemap-title-vertical {
-            padding: $padding-x-sm $padding-y-sm;
+            padding: $kendo-padding-sm-x $kendo-padding-sm-y;
             width: $line-height-em;
             white-space: nowrap;
             overflow: hidden;
@@ -343,16 +343,16 @@
             right: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            top: calc( #{$padding-y-sm * 2} + (#{$line-height} * #{$font-size}) + 1px);
+            top: calc( #{$kendo-padding-sm-y * 2} + (#{$line-height} * #{$font-size}) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            left: calc( #{$padding-y-sm * 2} + (#{$line-height} * #{$font-size}) + 1px);
+            left: calc( #{$kendo-padding-sm-y * 2} + (#{$line-height} * #{$font-size}) + 1px);
         }
 
 
         // Leaf
         .k-leaf {
-            padding: $padding-x-sm;
+            padding: $kendo-padding-sm-x;
         }
     }
 }
@@ -402,10 +402,8 @@
 
     // export variables to allow use in scripts
     $exported: (
-        accent: $primary,
-        accent-contrast: $primary-contrast,
-        primary: $primary,
-        primary-contrast: $primary-contrast,
+        primary: $kendo-color-primary,
+        primary-contrast: $kendo-color-primary-contrast,
         base: $base-bg,
         background: $chart-bg,
 
@@ -413,15 +411,15 @@
 
         normal-background: $base-bg,
         normal-text-color: $base-text,
-        hover-background: $hovered-bg,
-        hover-text-color: $hovered-text,
-        selected-background: $selected-bg,
-        selected-text-color: $selected-text,
+        hover-background: $kendo-hover-bg,
+        hover-text-color: $kendo-hover-text,
+        selected-background: $kendo-selected-bg,
+        selected-text-color: $kendo-selected-text,
 
-        success: $success,
-        info: $info,
-        warning: $warning,
-        error: $error,
+        success: $kendo-color-success,
+        info: $kendo-color-info,
+        warning: $kendo-color-warning,
+        error: $kendo-color-error,
 
         series-a: $series-a,
         series-b: $series-b,
@@ -461,12 +459,12 @@
         series-29: $series-29,
         series-30: $series-30,
 
-        gauge-pointer: $primary,
+        gauge-pointer: $kendo-color-primary,
         gauge-track: k-try-shade( $chart-bg )
     );
 
     @each $name, $value in $exported {
-        $type: type-of($value);
+        $type: k-meta-type-of($value);
 
         .k-var--#{$name} {
             @if $type == "color" {

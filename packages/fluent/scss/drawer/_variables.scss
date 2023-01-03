@@ -24,10 +24,10 @@ $kendo-drawer-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-drawer-line-height: var( --kendo-line-height, inherit ) !default;
 /// Horizontal padding of the drawer content.
 /// @group drawer
-$kendo-drawer-content-padding-x: var( --kendo-padding-x, #{$kendo-padding-x} ) !default;
+$kendo-drawer-content-padding-x: var( --kendo-padding-x, #{$kendo-padding-md-x} ) !default;
 /// Vertical padding of the drawer content.
 /// @group drawer
-$kendo-drawer-content-padding-y: var( --kendo-padding-y, #{$kendo-padding-y} ) !default;
+$kendo-drawer-content-padding-y: var( --kendo-padding-y, #{$kendo-padding-md-y} ) !default;
 
 /// Scrollbar width of the drawer.
 /// @group drawer
@@ -50,7 +50,7 @@ $kendo-drawer-scrollbar-hover-color: get-theme-color-var( neutral-110 ) !default
 $kendo-drawer-item-padding-x: map.get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-y: var( --kendo-padding-x, #{$kendo-padding-x} ) !default;
+$kendo-drawer-item-padding-y: var( --kendo-padding-x, #{$kendo-padding-md-x} ) !default;
 /// Font size of the drawer item.
 /// @group drawer
 $kendo-drawer-item-font-size: $kendo-drawer-font-size !default;
@@ -75,7 +75,7 @@ $kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{
 
 /// The border width of the drawer item ripple
 /// @group drawer
-$kendo-drawer-item-ripple-border-width: map.get( $kendo-spacing, thin ) !default;
+$kendo-drawer-item-ripple-border-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// The border color of the drawer item ripple
 /// @group drawer
 $kendo-drawer-item-ripple-border: get-theme-color-var( primary-100 ) !default;
@@ -120,7 +120,7 @@ $kendo-drawer-item-selected-font-weight: var( --kendo-font-weight-bold, normal )
 $kendo-drawer-item-selected-bg: var( --kendo-selected-bg, initial ) !default;
 /// Text color of the selected drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-text: $black !default;
+$kendo-drawer-item-selected-text: $kendo-color-black !default;
 /// Text color of the selected drawer item icon.
 /// @group drawer
 $kendo-drawer-item-selected-icon-text: get-theme-color-var( primary-120 ) !default;

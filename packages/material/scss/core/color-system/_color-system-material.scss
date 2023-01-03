@@ -5,12 +5,10 @@ $dark-primary-text: rgba( black, .87 ) !default;
 $dark-secondary-text: rgba( black, .54 ) !default;
 $dark-disabled-text: rgba( black, .38 ) !default;
 $dark-dividers: rgba( black, .12 ) !default;
-$dark-focused: rgba( black, .12 ) !default;
-$light-primary-text: $white !default;
+$light-primary-text: $kendo-color-white !default;
 $light-secondary-text: rgba( white, .7 ) !default;
 $light-disabled-text: rgba( white, .5 ) !default;
 $light-dividers: rgba( white, .12 ) !default;
-$light-focused: rgba( white, .12 ) !default;
 
 $palettes: (
 
@@ -686,23 +684,23 @@ $material-dark-complimentary: (
     base-bg: get-base-hue( gray, 900 ),
     hover-bg: rgba( white, .08 ),
     focus-bg: rgba( white, .24 ),
-    elevation: $black
+    elevation: $kendo-color-black
 ) !default;
 
 
 $material-light-complimentary: (
     is-dark: false,
-    body-bg: $white,
+    body-bg: $kendo-color-white,
     body-text: get-base-contrast( gray, 50 ),
     subtle-text: $dark-secondary-text,
     disabled-text: $dark-disabled-text,
-    component-bg: $white,
+    component-bg: $kendo-color-white,
     component-text: $dark-primary-text,
     component-border: $dark-dividers,
-    base-bg: $white,
+    base-bg: $kendo-color-white,
     hover-bg: rgba( black, .04 ),
     focus-bg: rgba( black, .12 ),
-    elevation: $black
+    elevation: $kendo-color-black
 ) !default;
 
 
@@ -715,7 +713,7 @@ $material-light-complimentary: (
 // of the Material Design hues.
 @function material-palette($base-palette, $main: 500, $lighter: 300, $darker: 700, $adjust-contrast: true) {
 
-    @if not (type-of($base-palette) == map) {
+    @if not (k-meta-type-of($base-palette) == map) {
         $base-palette: get-base-palette($base-palette);
     }
 
@@ -764,29 +762,29 @@ $material-light-complimentary: (
 // hues (main, lighter, darker), or any of the aforementioned prefixed with "-contrast".
 @function material-color($palette, $hue: main, $opacity: null) {
 
-    @if not (type-of($palette) == map) {
+    @if not (k-meta-type-of($palette) == map) {
         $palette: get-base-palette($palette);
     }
 
     // If hueKey is a number between zero and one, then it actually contains an
     // opacity value, so recall this function with the default hue and that given opacity.
-    @if type-of($hue) == number and $hue >= 0 and $hue <= 1 {
+    @if k-meta-type-of($hue) == number and $hue >= 0 and $hue <= 1 {
         @return material-color($palette, main, $hue);
     }
 
     $color: k-map-get($palette, $hue);
-    $opacity: if($opacity == null, opacity($color), $opacity);
+    $opacity: if($opacity == null, k-color-alpha($color), $opacity);
 
     @return rgba( $color, $opacity );
 }
 
 // Creates a container object for a light theme to be given to individual component theme mixins.
-@function material-theme($primary, $secondary, $theme-type, $warn: material-palette(red)) {
+@function material-theme($kendo-color-primary, $kendo-color-secondary, $theme-type, $warn: material-palette(red)) {
     $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
     @return k-map-merge((
         // sass-lint:disable-block indentation
-        primary: $primary,
-        secondary: $secondary,
+        primary: $kendo-color-primary,
+        secondary: $kendo-color-secondary,
         warn: $warn
     ), $complimentary );
 }

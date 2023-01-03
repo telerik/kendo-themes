@@ -26,14 +26,14 @@ $kendo-table-cell-padding-x: null !default;
 /// @group table
 $kendo-table-cell-padding-y: null !default;
 
-$kendo-table-cell-padding-x-sm: k-map-get( $spacing, 2 );
-$kendo-table-cell-padding-y-sm: k-map-get( $spacing, 1 );
+$kendo-table-cell-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-table-cell-padding-y-sm: k-map-get( $kendo-spacing, 1 ) !default;
 
-$kendo-table-cell-padding-x-md: $table-cell-padding-x;
-$kendo-table-cell-padding-y-md: $table-cell-padding-y;
+$kendo-table-cell-padding-x-md: $table-cell-padding-x !default;
+$kendo-table-cell-padding-y-md: $table-cell-padding-y !default;
 
-$kendo-table-cell-padding-x-lg: k-map-get( $spacing, 2 );
-$kendo-table-cell-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin );
+$kendo-table-cell-padding-x-lg: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-table-cell-padding-y-lg: k-map-get( $kendo-spacing, 2.5 ) !default;
 
 /// The sizes of the table.
 /// @group table
@@ -61,27 +61,27 @@ $kendo-table-sizes: (
 
 /// Background color of tables.
 /// @group table
-$kendo-table-bg: $component-bg !default;
+$kendo-table-bg: $kendo-component-bg !default;
 /// Text color of tables.
 /// @group table
-$kendo-table-text: $component-text !default;
+$kendo-table-text: $kendo-component-text !default;
 /// Border color of tables.
 /// @group table
-$kendo-table-border: $component-border !default;
+$kendo-table-border: $kendo-component-border !default;
 
 
 /// Background color of table headers.
 /// @group table
-$kendo-table-header-bg: $header-bg !default;
+$kendo-table-header-bg: $kendo-component-header-bg !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: $header-text !default;
+$kendo-table-header-text: $kendo-component-header-text !default;
 /// Border color of table headers.
 /// @group table
-$kendo-table-header-border: $header-border !default;
+$kendo-table-header-border: $kendo-component-header-border !default;
 /// Gradient of table headers.
 /// @group table
-$kendo-table-header-gradient: $header-gradient !default;
+$kendo-table-header-gradient: $kendo-component-header-gradient !default;
 
 
 /// Background color of table footers.
@@ -139,12 +139,12 @@ $kendo-table-focus-text: null !default;
 $kendo-table-focus-border: null !default;
 /// Box shadow of focused rows in table.
 /// @group table
-$kendo-table-focus-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
+$kendo-table-focus-shadow: inset 0 0 0 2px rgba( $kendo-color-black, .08) !default;
 
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: rgba( $selected-bg, .25 ) !default;
+$kendo-table-selected-bg: rgba( $kendo-selected-bg, .25 ) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: $kendo-table-text !default;

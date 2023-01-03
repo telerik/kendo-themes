@@ -1,8 +1,65 @@
-// TODO DOCS
+/// This is equivalent to `transform: translate( 0, 0 );`. The element does not move.
+/// @name .k-translate-0
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: translate( 0, 50% );`. The element moves vertically by 50% of its height.
+/// @name .k-translate-0-50
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: translate( 0, 100% );`. The element moves vertically by 100% of its height.
+/// @name .k-translate-0-100
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: translate( 50%, 0 );`. The element moves horizontally by 50% of its width.
+/// @name .k-translate-50-0
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: translate( 50%, 50% );`. The element moves horizontally by 50% of its width and vertically by 50% of its height.
+/// @name .k-translate-50-50
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: translate( 50%, 100% );`. The element moves horizontally by 50% of its width and vertically by 100% of its height.
+/// @name .k-translate-50-100
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: translate( 100%, 0 );`. The element moves horizontally by 100% of its width.
+/// @name .k-translate-100-0
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: translate( 100%, 50% );`. The element moves horizontally by 100% of its width and vertically by 50% of its height.
+/// @name .k-translate-100-50
+/// @group transform
+/// @contextType css
+
+/// This is equivalent to `transform: translate( 100%, 100% );`. The element moves horizontally by 100% of its width and vertically by 100% of its height.
+/// @name .k-translate-100-100
+/// @group transform
+/// @contextType css
 
 $kendo-utils-translate: k-map-get( $kendo-utils, "translate" ) !default;
+$kendo-utils-translate-xy: (
+    "0": ( 0, 0 ),
+    "0-50": ( 0, 50% ),
+    "0-100": ( 0, 100% ),
+    "50-0": ( 50%, 0 ),
+    "50-50": ( 50%, 50% ),
+    "50-100": ( 50%, 100% ),
+    "100-0": ( 100%, 0 ),
+    "100-50": ( 100%, 50% ),
+    "100-100": ( 100%, 100% )
+) !default;
 
 // sass-lint:disable function-name-format
+@function __translate( $val ) {
+    @return translate( $val );
+}
 @function __translate-x( $val ) {
     @return translateX( $val );
 }
@@ -11,5 +68,6 @@ $kendo-utils-translate: k-map-get( $kendo-utils, "translate" ) !default;
 }
 // sass-lint:enable function-name-format
 
+@include generate-utils( translate, transform, $kendo-utils-translate-xy, __translate );
 @include generate-utils( translate-x, transform, $kendo-utils-translate, __translate-x );
 @include generate-utils( translate-y, transform, $kendo-utils-translate, __translate-y );

@@ -2,32 +2,44 @@ $kendo-prefix: k- !default;
 $kendo-important: true !default;
 $kendo-colors: () !default;
 $kendo-spacing: (
+    // sass-lint:disable-block leading-zero
     0: 0,
-    0.5: .125rem, // sass-lint:disable-line leading-zero
+    1px: 1px,
+    0.5: .125rem,
     1: .25rem,
     1.5: .375rem,
     2: .5rem,
-    2.5: 6.25rem,
+    2.5: .625rem,
     3: .75rem,
     3.5: .875rem,
     4: 1rem,
+    4.5: 1.125rem,
     5: 1.25rem,
+    5.5: 1.375rem,
     6: 1.5rem,
+    6.5: 1.625rem,
     7: 1.75rem,
+    7.5: 1.875rem,
     8: 2rem,
     9: 2.25rem,
     10: 2.5rem,
     11: 2.75rem,
     12: 3rem,
+    13: 3.25rem,
     14: 3.5rem,
+    15: 3.75rem,
     16: 4rem,
+    17: 4.25rem,
+    18: 4.5rem,
+    19: 4.75rem,
     20: 5rem,
-    24: 6rem,
-    px: 1px,
-    thin: .125rem,
-    hair: .0625rem
+    21: 5.25rem,
+    22: 5.5rem,
+    23: 5.75rem,
+    24: 6rem
 ) !default;
-$kendo-sizing: map-merge( $kendo-spacing, (
+
+$kendo-sizing: k-map-merge( $kendo-spacing, (
     // sass-lint:disable-block indentation
     "auto": auto,
     "1/2": 50%,
@@ -72,8 +84,9 @@ $kendo-utils: (
     // Layout
     "aspect-ratio": (
         auto: auto,
-        square: unquote("1 / 1"),
-        video: unquote("16 / 9")
+        1: 1,
+        square: k-string-unquote("1 / 1"),
+        video: k-string-unquote("16 / 9")
     ),
     "container": (),
     "columns": (),
@@ -272,7 +285,7 @@ $kendo-utils: (
         10: span 10 / span 10,
         11: span 11 / span 11,
         12: span 12 / span 12,
-        full: unquote("1 / -1"),
+        full: k-string-unquote("1 / -1"),
         auto: auto
     ),
     "grid-row-start": (
@@ -424,7 +437,7 @@ $kendo-utils: (
     "space-between": (),
 
     // Sizing
-    "width": map-merge( $kendo-sizing, (
+    "width": k-map-merge( $kendo-sizing, (
         // sass-lint:disable-block indentation
         screen: 100vw
     )),
@@ -445,7 +458,7 @@ $kendo-utils: (
         max: max-content,
         fit: fit-content
     ),
-    "height": map-merge( $kendo-sizing, (
+    "height": k-map-merge( $kendo-sizing, (
         // sass-lint:disable-block indentation
         screen: 100vh
     )),
@@ -596,13 +609,15 @@ $kendo-utils: (
     // Transform
     "flip": true,
     "scale": (
-        "0",
-        ".25",
-        ".5",
-        ".75",
-        "1",
-        "1.25",
-        "1.5"
+        // sass-lint:disable-block leading-zero
+        0: 0,
+        0.25: .25,
+        0.5: .5,
+        0.75: .75,
+        1: 1,
+        1.25: 1.25,
+        1.5: 1.5,
+        2: 2
     ),
     "rotate": (
         0: 0deg,
@@ -614,7 +629,7 @@ $kendo-utils: (
         270: 270deg,
         315: 315deg
     ),
-    "translate": map-remove( $kendo-sizing, "auto", "min", "max", "fit" ),
+    "translate": k-map-remove( $kendo-sizing, "auto", "min", "max", "fit" ),
     "skew": (
         0: 0deg,
         1: 1deg,

@@ -1,8 +1,8 @@
 // Loader
 $kendo-loader-segment-border-radius: 50% !default;
-$kendo-loader-segment-size-sm: k-map-get( $spacing, 1 ) !default;
-$kendo-loader-segment-size-md: k-map-get( $spacing, 2 ) !default;
-$kendo-loader-segment-size-lg: k-map-get( $spacing, 4 ) !default;
+$kendo-loader-segment-size-sm: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-loader-segment-size-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-loader-segment-size-lg: k-map-get( $kendo-spacing, 4 ) !default;
 
 $kendo-loader-padding-sm: k-math-div( $kendo-loader-segment-size-sm, 2 ) !default;
 $kendo-loader-padding-md: k-math-div( $kendo-loader-segment-size-md, 2 ) !default;
@@ -26,18 +26,24 @@ $kendo-loader-secondary-bg: #656565 !default;
 
 $kendo-loader-container-panel-border-width: 1px !default;
 $kendo-loader-container-panel-border-style: solid !default;
-$kendo-loader-container-panel-border-color: $component-border !default;
+$kendo-loader-container-panel-border-color: $kendo-component-border !default;
 $kendo-loader-container-panel-border-radius: $kendo-border-radius-md !default;
-$kendo-loader-container-panel-bg: $white !default;
+$kendo-loader-container-panel-bg: $kendo-color-white !default;
 
 $kendo-loader-container-padding-sm: 15px !default;
-$kendo-loader-container-gap-sm: k-map-get( $spacing, 1 ) !default;
+$kendo-loader-container-gap-sm: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-loader-container-font-size-sm: $font-size-xs !default;
 
 $kendo-loader-container-padding-md: 20px !default;
-$kendo-loader-container-gap-md: k-map-get( $spacing, 2 ) !default;
+$kendo-loader-container-gap-md: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-loader-container-font-size-md: $font-size-md !default;
 
 $kendo-loader-container-padding-lg: 25px !default;
-$kendo-loader-container-gap-lg: k-map-get( $spacing, 3 ) !default;
+$kendo-loader-container-gap-lg: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-loader-container-font-size-lg: $font-size-lg !default;
+
+
+// Loading
+$kendo-loading-bg: $kendo-component-bg !default;
+$kendo-loading-text: currentColor !default;
+$kendo-loading-opacity: .3 !default;

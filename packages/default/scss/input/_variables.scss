@@ -14,10 +14,10 @@ $kendo-input-border-radius: null !default;
 
 /// Horizontal padding of input components.
 /// @group input
-$kendo-input-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-input-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of input components.
 /// @group input
-$kendo-input-padding-y: k-map-get( $spacing, 1 ) !default;
+$kendo-input-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 /// Font family of input components.
 /// @group input
 $kendo-input-font-family: $font-family !default;
@@ -28,18 +28,18 @@ $kendo-input-font-size: $font-size-md !default;
 /// @group input
 $kendo-input-line-height: $line-height-md !default;
 
-$kendo-input-padding-x-sm: k-map-get( $spacing, 2 ) !default;
-$kendo-input-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
+$kendo-input-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-padding-y-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-input-font-size-sm: $font-size-md !default;
 $kendo-input-line-height-sm: $line-height-md !default;
 
-$kendo-input-padding-x-md: k-map-get( $spacing, 2 ) !default;
-$kendo-input-padding-y-md: k-map-get( $spacing, 1 ) !default;
+$kendo-input-padding-x-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-padding-y-md: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-input-font-size-md: $font-size-md !default;
 $kendo-input-line-height-md: $line-height-md !default;
 
-$kendo-input-padding-x-lg: k-map-get( $spacing, 3 ) !default;
-$kendo-input-padding-y-lg: k-map-get( $spacing, 2 ) !default;
+$kendo-input-padding-x-lg: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-input-padding-y-lg: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-input-font-size-lg: $font-size-lg !default;
 $kendo-input-line-height-lg: $line-height-lg !default;
 
@@ -73,9 +73,9 @@ $kendo-input-sizes: (
     )
 ) !default;
 
-$kendo-input-bg: $component-bg !default;
-$kendo-input-text: $component-text !default;
-$kendo-input-border: $component-border !default;
+$kendo-input-bg: $kendo-component-bg !default;
+$kendo-input-text: $kendo-component-text !default;
+$kendo-input-border: $kendo-component-border !default;
 $kendo-input-shadow: null !default;
 
 $kendo-input-hover-bg: null !default;
@@ -178,7 +178,7 @@ $kendo-picker-flat-hover-focus-bg: null !default;
 $kendo-picker-flat-hover-focus-text: null !default;
 $kendo-picker-flat-hover-focus-border: null !default;
 
-$kendo-input-placeholder-text: $subtle-text !default;
+$kendo-input-placeholder-text: $kendo-subtle-text !default;
 $kendo-input-placeholder-opacity: 1 !default;
 
 $kendo-input-selected-bg: null !default;
@@ -189,7 +189,7 @@ $kendo-input-clear-value-opacity: .5 !default;
 $kendo-input-clear-value-hover-text: null !default;
 $kendo-input-clear-value-hover-opacity: 1 !default;
 
-$kendo-input-values-margin-y: k-map-get( $spacing, thin ) !default;
+$kendo-input-values-margin-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-input-values-margin-x: $kendo-input-values-margin-y !default;
 
 
@@ -206,5 +206,5 @@ $kendo-input-separator-opacity: .5 !default;
 
 
 // Invalid
-$kendo-input-invalid-border: $invalid-border !default;
-$kendo-input-invalid-shadow: $invalid-shadow !default;
+$kendo-input-invalid-border: $kendo-invalid-border !default;
+$kendo-input-invalid-shadow: $kendo-invalid-shadow !default;

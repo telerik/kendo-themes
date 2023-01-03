@@ -72,7 +72,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$body-text`
+`$kendo-body-text`
 
 </td>
 <td>
@@ -126,7 +126,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$hovered-bg</td>
+    <td>$kendo-hover-bg</td>
     <td>Color</td>
 <td>
 
@@ -146,7 +146,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$hovered-text</td>
+    <td>$kendo-hover-text</td>
     <td>Color</td>
 <td>
 
@@ -166,11 +166,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$hovered-border</td>
+    <td>$kendo-hover-border</td>
     <td>Color</td>
 <td>
 
-`k-try-shade( $hovered-bg, 1 )`
+`k-try-shade( $kendo-hover-bg, 1 )`
 
 </td>
 <td>
@@ -186,7 +186,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$hovered-gradient</td>
+    <td>$kendo-hover-gradient</td>
     <td>Null</td>
 <td>
 
@@ -204,11 +204,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$selected-bg</td>
+    <td>$kendo-selected-bg</td>
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>
@@ -224,11 +224,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$selected-text</td>
+    <td>$kendo-selected-text</td>
     <td>Color</td>
 <td>
 
-`k-contrast-color( $selected-bg )`
+`k-contrast-color( $kendo-selected-bg )`
 
 </td>
 <td>
@@ -244,11 +244,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$selected-border</td>
+    <td>$kendo-selected-border</td>
     <td>Color</td>
 <td>
 
-`k-try-shade( $selected-bg, 1 )`
+`k-try-shade( $kendo-selected-bg, 1 )`
 
 </td>
 <td>
@@ -264,7 +264,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$selected-gradient</td>
+    <td>$kendo-selected-gradient</td>
     <td>Null</td>
 <td>
 
@@ -380,9 +380,9 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 `(
-    sm: k-map-get( $spacing, 4 ),
-    md: k-map-get( $spacing, 8 ),
-    lg: k-map-get( $spacing, 16 )
+    sm: k-map-get( $kendo-spacing, 4 ),
+    md: k-map-get( $kendo-spacing, 8 ),
+    lg: k-map-get( $kendo-spacing, 16 )
 )`
 
 </td>
@@ -1096,7 +1096,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-darken( $primary, 10% )`
+`k-try-darken( $kendo-color-primary, 10% )`
 
 </td>
 <td>
@@ -1136,7 +1136,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-darken( $primary, 12.5% )`
+`k-try-darken( $kendo-color-primary, 12.5% )`
 
 </td>
 <td>
@@ -1448,7 +1448,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>List</td>
 <td>
 
-`$transition`
+`$kendo-transition`
 
 </td>
 <td>
@@ -1627,7 +1627,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $white, $black ), .08 )`
+`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
 
 </td>
 <td>
@@ -1647,7 +1647,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $white, $black ), .04 )`
+`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .04 )`
 
 </td>
 <td>
@@ -1706,7 +1706,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -1818,7 +1818,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>
@@ -1938,7 +1938,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $primary, 50% )`
+`k-try-tint( $kendo-color-primary, 50% )`
 
 </td>
 <td>
@@ -1958,7 +1958,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>List</td>
 <td>
 
-`0 0 0 .25rem rgba( $primary, .25 )`
+`0 0 0 .25rem rgba( $kendo-color-primary, .25 )`
 
 </td>
 <td>
@@ -2140,7 +2140,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$invalid-text`
+`$kendo-invalid-text`
 
 </td>
 <td>
@@ -2160,7 +2160,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$invalid-border`
+`$kendo-invalid-border`
 
 </td>
 <td>
@@ -2288,7 +2288,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2306,7 +2306,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -2437,7 +2437,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2455,7 +2455,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2473,7 +2473,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -2834,7 +2834,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -2993,9 +2993,9 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 `(
-    sm: k-map-get( $spacing, 1 ),
-    md: k-map-get( $spacing, 1 ),
-    lg: k-map-get( $spacing, 1 )
+    sm: k-map-get( $kendo-spacing, 1 ),
+    md: k-map-get( $kendo-spacing, 1 ),
+    lg: k-map-get( $kendo-spacing, 1 )
 )`
 
 </td>
@@ -3031,47 +3031,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$accent</td>
-    <td>Color</td>
-<td>
-
-`$primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #0d6efd"></span>
-
-`#0d6efd`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$accent-contrast</td>
-    <td>Color</td>
-<td>
-
-`k-contrast-color( $accent )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary-contrast` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$primary</td>
+    <td>$kendo-color-primary</td>
     <td>Color</td>
 <td>
 
@@ -3091,11 +3051,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$primary-contrast</td>
+    <td>$kendo-color-primary-contrast</td>
     <td>Color</td>
 <td>
 
-`k-contrast-color( $primary )`
+`k-contrast-color( $kendo-color-primary )`
 
 </td>
 <td>
@@ -3107,11 +3067,11 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $kendo-color-primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$secondary</td>
+    <td>$kendo-color-secondary</td>
     <td>Color</td>
 <td>
 
@@ -3131,11 +3091,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$secondary-contrast</td>
+    <td>$kendo-color-secondary-contrast</td>
     <td>Color</td>
 <td>
 
-`k-contrast-color( $secondary )`
+`k-contrast-color( $kendo-color-secondary )`
 
 </td>
 <td>
@@ -3147,11 +3107,11 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $kendo-color-secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$tertiary</td>
+    <td>$kendo-color-tertiary</td>
     <td>Color</td>
 <td>
 
@@ -3171,11 +3131,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$tertiary-contrast</td>
+    <td>$kendo-color-tertiary-contrast</td>
     <td>Color</td>
 <td>
 
-`k-contrast-color( $tertiary )`
+`k-contrast-color( $kendo-color-tertiary )`
 
 </td>
 <td>
@@ -3187,11 +3147,11 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $kendo-color-tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$info</td>
+    <td>$kendo-color-info</td>
     <td>Color</td>
 <td>
 
@@ -3211,7 +3171,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$success</td>
+    <td>$kendo-color-success</td>
     <td>Color</td>
 <td>
 
@@ -3231,7 +3191,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$warning</td>
+    <td>$kendo-color-warning</td>
     <td>Color</td>
 <td>
 
@@ -3251,7 +3211,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$error</td>
+    <td>$kendo-color-error</td>
     <td>Color</td>
 <td>
 
@@ -3271,7 +3231,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$dark</td>
+    <td>$kendo-color-dark</td>
     <td>Color</td>
 <td>
 
@@ -3291,7 +3251,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$light</td>
+    <td>$kendo-color-light</td>
     <td>Color</td>
 <td>
 
@@ -3311,11 +3271,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$inverse</td>
+    <td>$kendo-color-inverse</td>
     <td>Color</td>
 <td>
 
-`if( $dark-theme, $light, $dark )`
+`if( $dark-theme, $kendo-color-light, $kendo-color-dark )`
 
 </td>
 <td>
@@ -3352,11 +3312,11 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$component-bg</td>
+    <td>$kendo-component-bg</td>
     <td>Color</td>
 <td>
 
-`$body-bg`
+`$kendo-body-bg`
 
 </td>
 <td>
@@ -3368,15 +3328,15 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $component-bg !default;`.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$component-text</td>
+    <td>$kendo-component-text</td>
     <td>Color</td>
 <td>
 
-`$body-text`
+`$kendo-body-text`
 
 </td>
 <td>
@@ -3388,15 +3348,15 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: component-text !default;`.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$component-border</td>
+    <td>$kendo-component-border</td>
     <td>Color</td>
 <td>
 
-`if( k-is-light( $component-bg ), $gray-300, $gray-700 )`
+`if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 )`
 
 </td>
 <td>
@@ -3408,7 +3368,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: component-border !default;`.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.</div></div>
     </td>
 </tr>
 </tbody>
@@ -3570,7 +3530,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$padding-x`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -3642,7 +3602,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-math-div( k-map-get( $spacing, 1 ), 2 )`
+`k-map-get( $kendo-spacing, 0.5 )`
 
 </td>
 <td>
@@ -3678,7 +3638,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -3696,7 +3656,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -3804,7 +3764,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -3984,7 +3944,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -4004,7 +3964,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -4024,7 +3984,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -4645,7 +4605,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-hovered-bg</td>
+    <td>$kendo-grid-hover-bg</td>
     <td>Color</td>
 <td>
 
@@ -4665,7 +4625,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-hovered-text</td>
+    <td>$kendo-grid-hover-text</td>
     <td>Null</td>
 <td>
 
@@ -4683,7 +4643,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-hovered-border</td>
+    <td>$kendo-grid-hover-border</td>
     <td>Null</td>
 <td>
 
@@ -5312,7 +5272,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -5332,7 +5292,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -5352,7 +5312,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -5480,7 +5440,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$hovered-bg`
+`$kendo-hover-bg`
 
 </td>
 <td>
@@ -5500,7 +5460,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$hovered-text`
+`$kendo-hover-text`
 
 </td>
 <td>
@@ -5574,7 +5534,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$selected-bg`
+`$kendo-selected-bg`
 
 </td>
 <td>
@@ -5594,7 +5554,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$selected-text`
+`$kendo-selected-text`
 
 </td>
 <td>
@@ -5686,7 +5646,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$subtle-text`
+`$kendo-subtle-text`
 
 </td>
 <td>
@@ -5727,7 +5687,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -5745,7 +5705,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$padding-x`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -5871,7 +5831,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -5891,7 +5851,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -5911,7 +5871,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -6192,7 +6152,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -6210,7 +6170,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -6764,7 +6724,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -6784,7 +6744,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -6804,7 +6764,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -6863,7 +6823,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`k-map-get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -6917,7 +6877,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 3 ) + k-map-get( $spacing, thin )`
+`k-map-get( $kendo-spacing, 3.5 )`
 
 </td>
 <td>
@@ -7007,7 +6967,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-bg`
+`$kendo-component-header-bg`
 
 </td>
 <td>
@@ -7027,7 +6987,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-text`
+`$kendo-component-header-text`
 
 </td>
 <td>
@@ -7047,7 +7007,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-border`
+`$kendo-component-header-border`
 
 </td>
 <td>
@@ -7085,7 +7045,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>List</td>
 <td>
 
-`inset 0 0 0 2px rgba( 0, 0, 0, .08)`
+`inset 0 0 0 2px rgba( $kendo-color-black, .08)`
 
 </td>
 <td>
@@ -7103,7 +7063,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -7139,7 +7099,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -7175,7 +7135,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -7215,7 +7175,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -7235,7 +7195,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$hovered-bg`
+`$kendo-hover-bg`
 
 </td>
 <td>
@@ -7275,7 +7235,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$hovered-border`
+`$kendo-hover-border`
 
 </td>
 <td>
@@ -7295,7 +7255,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$selected-bg`
+`$kendo-selected-bg`
 
 </td>
 <td>
@@ -7315,7 +7275,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$selected-text`
+`$kendo-selected-text`
 
 </td>
 <td>
@@ -7393,7 +7353,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>List</td>
 <td>
 
-`0 0 0 3px rgba($primary, .25)`
+`0 0 0 3px rgba($kendo-color-primary, .25)`
 
 </td>
 <td>
@@ -7728,7 +7688,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$selected-bg`
+`$kendo-selected-bg`
 
 </td>
 <td>
@@ -7748,7 +7708,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$selected-text`
+`$kendo-selected-text`
 
 </td>
 <td>
@@ -7880,7 +7840,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$body-bg`
+`$kendo-body-bg`
 
 </td>
 <td>
@@ -7900,7 +7860,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>
@@ -8501,7 +8461,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -8519,7 +8479,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -8819,7 +8779,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -9003,7 +8963,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-color-mix( $kendo-switch-off-track-bg, $primary )`
+`k-color-mix( $kendo-switch-off-track-bg, $kendo-color-primary )`
 
 </td>
 <td>
@@ -9041,7 +9001,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>List</td>
 <td>
 
-`.25rem solid rgba( $primary, .25 )`
+`.25rem solid rgba( $kendo-color-primary, .25 )`
 
 </td>
 <td>
@@ -9279,7 +9239,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$primary`
+`$kendo-color-primary`
 
 </td>
 <td>
@@ -9921,7 +9881,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -9941,7 +9901,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -9961,7 +9921,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -9981,7 +9941,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-bg`
+`$kendo-component-header-bg`
 
 </td>
 <td>
@@ -10001,7 +9961,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-text`
+`$kendo-component-header-text`
 
 </td>
 <td>
@@ -10021,7 +9981,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-border`
+`$kendo-component-header-border`
 
 </td>
 <td>
@@ -10041,7 +10001,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Null</td>
 <td>
 
-`$header-gradient`
+`$kendo-component-header-gradient`
 
 </td>
 <td>
@@ -10345,7 +10305,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>List</td>
 <td>
 
-`inset 0 0 0 2px rgba( 0, 0, 0, .08)`
+`inset 0 0 0 2px rgba( $kendo-color-black, .08)`
 
 </td>
 <td>
@@ -10363,7 +10323,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`rgba( $selected-bg, .25 )`
+`rgba( $kendo-selected-bg, .25 )`
 
 </td>
 <td>
@@ -10460,7 +10420,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -10480,7 +10440,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -10500,7 +10460,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$nav-item-padding-x`
+`$nav-link-padding-x`
 
 </td>
 <td>
@@ -10518,7 +10478,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$nav-item-padding-y`
+`$nav-link-padding-y`
 
 </td>
 <td>
@@ -10554,7 +10514,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -10572,12 +10532,12 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$nav-item-margin`
+`0`
 
 </td>
 <td>
 
-`0px`
+`0`
 
 </td>
 </tr>
@@ -10660,7 +10620,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hovered-bg</td>
+    <td>$tabstrip-item-hover-bg</td>
     <td>Null</td>
 <td>
 
@@ -10678,7 +10638,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hovered-text</td>
+    <td>$tabstrip-item-hover-text</td>
     <td>Color</td>
 <td>
 
@@ -10698,7 +10658,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hovered-border</td>
+    <td>$tabstrip-item-hover-border</td>
     <td>Color</td>
 <td>
 
@@ -10718,7 +10678,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hovered-gradient</td>
+    <td>$tabstrip-item-hover-gradient</td>
     <td>Null</td>
 <td>
 
@@ -10740,7 +10700,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -10760,7 +10720,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -10780,7 +10740,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -10818,7 +10778,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -10836,7 +10796,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 4 )`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -10872,7 +10832,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -10892,7 +10852,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -10912,7 +10872,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>
@@ -10928,11 +10888,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-border-focused</td>
+    <td>$tabstrip-content-focus-border</td>
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -11117,7 +11077,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-bg`
+`$kendo-component-header-bg`
 
 </td>
 <td>
@@ -11137,7 +11097,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-text`
+`$kendo-component-header-text`
 
 </td>
 <td>
@@ -11157,7 +11117,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$header-border`
+`$kendo-component-header-border`
 
 </td>
 <td>
@@ -11249,7 +11209,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>List</td>
 <td>
 
-`0 0 0 .25rem rgba( $primary, .25 )`
+`0 0 0 .25rem rgba( $kendo-color-primary, .25 )`
 
 </td>
 <td>
@@ -11394,7 +11354,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 3 )`
+`k-map-get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -11412,7 +11372,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -11448,7 +11408,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`k-map-get( $spacing, 1 )`
+`k-map-get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -11521,7 +11481,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -11559,7 +11519,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$hovered-bg`
+`$kendo-hover-bg`
 
 </td>
 <td>
@@ -11579,7 +11539,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$hovered-text`
+`$kendo-hover-text`
 
 </td>
 <td>
@@ -11637,7 +11597,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$selected-bg`
+`$kendo-selected-bg`
 
 </td>
 <td>
@@ -11657,7 +11617,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$selected-text`
+`$kendo-selected-text`
 
 </td>
 <td>

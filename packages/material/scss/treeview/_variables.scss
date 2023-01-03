@@ -21,16 +21,16 @@ $kendo-treeview-indent: 16px !default;
 
 /// Horizontal padding of treeview items.
 /// @group treeview
-$kendo-treeview-item-padding-x: k-map-get( $spacing, 4 ) !default;
-$kendo-treeview-item-padding-x-sm: k-map-get( $spacing, 4 ) !default;
-$kendo-treeview-item-padding-x-md: k-map-get( $spacing, 4 ) !default;
-$kendo-treeview-item-padding-x-lg: k-map-get( $spacing, 4 ) !default;
+$kendo-treeview-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-treeview-item-padding-x-sm: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-treeview-item-padding-x-md: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-treeview-item-padding-x-lg: k-map-get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
-$kendo-treeview-item-padding-y: k-map-get( $spacing, 2 ) !default;
-$kendo-treeview-item-padding-y-sm: k-map-get( $spacing, 2 ) - k-map-get( $spacing, thin ) !default;
-$kendo-treeview-item-padding-y-md: k-map-get( $spacing, 2 ) !default;
-$kendo-treeview-item-padding-y-lg: k-map-get( $spacing, 2 ) !default;
+$kendo-treeview-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-y-sm: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-treeview-item-padding-y-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-y-lg: k-map-get( $kendo-spacing, 2 ) !default;
 /// Border width of treeview items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0px !default;
@@ -68,7 +68,7 @@ $kendo-treeview-sizes: (
 $kendo-treeview-bg: null !default;
 /// Text color of the treeview component.
 /// @group treeview
-$kendo-treeview-text: $component-text !default;
+$kendo-treeview-text: $kendo-component-text !default;
 /// Border color of the treeview component.
 /// @group treeview
 $kendo-treeview-border: null !default;
@@ -91,7 +91,7 @@ $kendo-treeview-item-hover-gradient: null !default;
 $kendo-treeview-item-selected-bg: null !default;
 /// Text color of selected treeview items.
 /// @group treeview
-$kendo-treeview-item-selected-text: $selected-bg !default;
+$kendo-treeview-item-selected-text: $kendo-selected-bg !default;
 /// Border color of selected treeview items.
 /// @group treeview
 $kendo-treeview-item-selected-border: null !default;

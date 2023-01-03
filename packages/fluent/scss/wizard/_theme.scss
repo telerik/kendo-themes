@@ -13,7 +13,7 @@
 
         &:focus,
         &.k-focus {
-            outline-color: var( --kendo-wizard-step-border-focused, #{$kendo-wizard-step-border-focused} );
+            outline-color: var( --kendo-wizard-step-focus-border, #{$kendo-wizard-step-focus-border} );
         }
     }
 

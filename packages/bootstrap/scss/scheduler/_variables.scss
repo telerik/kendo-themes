@@ -4,9 +4,9 @@ $scheduler-font-family: $font-family !default;
 $scheduler-font-size: $font-size !default;
 $scheduler-line-height: $line-height !default;
 
-$scheduler-bg: $component-bg !default;
-$scheduler-text: $component-text !default;
-$scheduler-border: $component-border !default;
+$scheduler-bg: $kendo-component-bg !default;
+$scheduler-text: $kendo-component-text !default;
+$scheduler-border: $kendo-component-border !default;
 
 $scheduler-toolbar-bg: $kendo-toolbar-bg !default;
 $scheduler-toolbar-text: $kendo-toolbar-text !default;
@@ -20,10 +20,10 @@ $scheduler-footer-gradient: $kendo-toolbar-gradient !default;
 
 $scheduler-event-min-height: 25px !default;
 $scheduler-event-border-radius: $kendo-border-radius-md !default;
-$scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y-sm}) ) !default;
+$scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$kendo-padding-sm-y}) ) !default;
 
-$scheduler-event-bg: k-color-tint( $selected-bg, 2 ) !default;
-$scheduler-event-text: $selected-text !default;
+$scheduler-event-bg: k-color-tint( $kendo-selected-bg, 2 ) !default;
+$scheduler-event-text: $kendo-selected-text !default;
 $scheduler-event-border: null !default;
 $scheduler-event-gradient: null !default;
 $scheduler-event-shadow: null !default;
@@ -34,16 +34,16 @@ $scheduler-event-hover-border: null !default;
 $scheduler-event-hover-gradient: null !default;
 $scheduler-event-hover-shadow: null !default;
 
-$scheduler-event-selected-bg: $selected-bg !default;
-$scheduler-event-selected-text: $selected-text !default;
+$scheduler-event-selected-bg: $kendo-selected-bg !default;
+$scheduler-event-selected-text: $kendo-selected-text !default;
 $scheduler-event-selected-border: null !default;
 $scheduler-event-selected-gradient: null !default;
 $scheduler-event-selected-shadow: inset 0 0 0 3px rgba( white, .5 ) !default;
 
 $scheduler-event-ongoing-shadow: inset 0px 0px 0px 1px #ff0000 !default;
 
-$scheduler-cell-padding-x: k-map-get( $spacing, 3 ) !default;
-$scheduler-cell-padding-y: k-map-get( $spacing, 3 ) !default;
+$scheduler-cell-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$scheduler-cell-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 $scheduler-cell-height: $line-height-em !default;
 $scheduler-datecolumn-width: 12em !default;
 $scheduler-timecolumn-width: 11em !default;
@@ -59,36 +59,36 @@ $scheduler-weekend-text: null !default;
 $scheduler-othermonth-bg: k-try-shade( $scheduler-bg, .5 ) !default;
 $scheduler-othermonth-text: null !default;
 
-$scheduler-yearview-padding-x: k-map-get( $spacing, 4 ) !default;
+$scheduler-yearview-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 $scheduler-yearview-padding-y: $scheduler-yearview-padding-x !default;
 
-$scheduler-yearview-calendar-gap: k-map-get( $spacing, 4 ) !default;
+$scheduler-yearview-calendar-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
 $scheduler-yearview-indicator-size: 3px !default;
 $scheduler-yearview-indicator-calc-offset-top: calc( #{$calendar-cell-size} - (#{$calendar-cell-padding-y} * 2)) !default;
-$scheduler-yearview-indicator-calc-offset-left: calc( 50% - (#{$scheduler-yearview-indicator-size} / 2) ) !default;
+$scheduler-yearview-indicator-calc-offset-left: calc( 50% - #{k-math-div( $scheduler-yearview-indicator-size, 2)} ) !default;
 $scheduler-yearview-indicator-border-radius: 50% !default;
-$scheduler-yearview-indicator-bg: $primary !default;
-$scheduler-yearview-indicator-selected-bg: $primary-contrast !default;
+$scheduler-yearview-indicator-bg: $kendo-color-primary !default;
+$scheduler-yearview-indicator-selected-bg: $kendo-color-primary-contrast !default;
 
-$scheduler-tooltip-padding-x: k-map-get( $spacing, 3 ) !default;
-$scheduler-tooltip-padding-y: $scheduler-tooltip-padding-x !default;
+$scheduler-tooltip-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$scheduler-tooltip-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 $scheduler-tooltip-border-width: 0 !default;
-$scheduler-tooltip-bg: $primary-contrast !default;
+$scheduler-tooltip-bg: $kendo-color-primary-contrast !default;
 $scheduler-tooltip-text: $base-text !default;
 $scheduler-tooltip-border: null !default;
 $scheduler-tooltip-shadow: 0px 0px 10px rgba( black, .2 ) !default;
 
-$scheduler-tooltip-title-margin-y: $padding-y-lg !default;
+$scheduler-tooltip-title-margin-y: k-map-get( $kendo-spacing, 3 ) !default;
 $scheduler-tooltip-month-font-size: $font-size-sm !default;
 $scheduler-tooltip-day-font-size: $scheduler-tooltip-month-font-size * 2 !default;
 
 $scheduler-tooltip-events-max-height: 250px !default;
-$scheduler-tooltip-events-gap: $padding-y !default;
+$scheduler-tooltip-events-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
-$scheduler-tooltip-event-padding-x: $padding-x-sm !default;
-$scheduler-tooltip-event-padding-y: $padding-y-sm !default;
+$scheduler-tooltip-event-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$scheduler-tooltip-event-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $scheduler-tooltip-event-border-radius: $kendo-border-radius-md !default;
-$scheduler-tooltip-event-gap: $padding-x-sm !default;
+$scheduler-tooltip-event-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
 $scheduler-tooltip-callout-text: $scheduler-tooltip-bg !default;

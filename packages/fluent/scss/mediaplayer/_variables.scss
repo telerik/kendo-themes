@@ -3,7 +3,7 @@
 
 /// Border width of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-border-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-mediaplayer-border-width: 1px !default;
 /// Font family of the mediaplayer.
 /// @group mediaplayer
 $kendo-mediaplayer-font-family: var( --kendo-font-family, inherit ) !default;
@@ -40,7 +40,7 @@ $kendo-mediaplayer-titlebar-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-mediaplayer-titlebar-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Mediaplayer titlebar background color.
 /// @group mediaplayer
-$kendo-mediaplayer-titlebar-bg: rgba( $black, .4 ) !default;
+$kendo-mediaplayer-titlebar-bg: rgba( $kendo-color-black, .4 ) !default;
 /// Mediaplayer titlebar text color.
 /// @group mediaplayer
 $kendo-mediaplayer-titlebar-text: $kendo-mediaplayer-bg !default;

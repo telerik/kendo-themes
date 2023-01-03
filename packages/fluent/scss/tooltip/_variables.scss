@@ -39,7 +39,7 @@ $kendo-tooltip-callout-size: map.get( $kendo-spacing, 2 ) !default;
 
 /// The background of the tooltip
 /// @group tooltip
-$kendo-tooltip-bg: $white !default;
+$kendo-tooltip-bg: $kendo-color-white !default;
 /// The text color of the tooltip
 /// @group tooltip
 $kendo-tooltip-text: var( --kendo-component-text, initial ) !default;
@@ -59,25 +59,25 @@ $kendo-tooltip-button-text: get-theme-color-var( neutral-130, initial ) !default
 $kendo-tooltip-primary-bg: get-theme-color-var( primary-100 ) !default;
 /// The primary text color of the tooltip
 /// @group tooltip
-$kendo-tooltip-primary-text: $white !default;
+$kendo-tooltip-primary-text: $kendo-color-white !default;
 /// The primary border color of the tooltip
 /// @group tooltip
 $kendo-tooltip-primary-border: initial !default;
 
 /// Theme variations for the tooltip.
-$kendo-tooltip-brand-colors: (error, warning, success, info );
+$kendo-tooltip-brand-colors: (error, warning, success, info ) !default;
 
 // Matrix with tooltip theme colors in the order: bg, color, border
 $_tc-tooltip-matrix: (
     (normal: (20, 160, 20)),
-);
+) !default;
 
 $_tc-tooltip-primary-matrix: (
-    (normal: (100, $white, 100)),
-);
+    (normal: (100, $kendo-color-white, 100)),
+) !default;
 
 /// Theme colors map for the tooltip variations.
-$kendo-tooltip-theme-colors: ();
+$kendo-tooltip-theme-colors: () !default;
 
 @each $ui-states in $_tc-tooltip-primary-matrix {
     $kendo-tooltip-theme-colors: map.deep-merge(

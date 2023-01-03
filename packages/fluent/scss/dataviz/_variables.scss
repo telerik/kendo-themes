@@ -155,14 +155,14 @@ $kendo-chart-border: var( --kendo-component-border, initial ) !default;
 
 /// The text color of the chart tooltip.
 /// @group charts
-$kendo-chart-tooltip-color: $white !default;
+$kendo-chart-tooltip-color: $kendo-color-white !default;
 /// The inverse text color of the chart tooltip.
 /// @group charts
-$kendo-chart-tooltip-color-inverse: $black !default;
+$kendo-chart-tooltip-color-inverse: $kendo-color-black !default;
 
 /// The background color of the chart crosshairs.
 /// @group charts
-$kendo-chart-crosshair-background: $black !default;
+$kendo-chart-crosshair-background: $kendo-color-black !default;
 /// The text color of the chart shared crosshair tooltip.
 /// @group charts
 $kendo-chart-crosshair-shared-tooltip-color: get-theme-color-var( neutral-160 ) !default;
@@ -204,7 +204,7 @@ $kendo-chart-handle-hover-border: var( --kendo-hover-border, initial ) !default;
 
 /// The color of the chart error bars.
 /// @group charts
-$kendo-error-bars-background: get-theme-color-var( neutral-110 ) !default;
+$kendo-color-error-bars-background: get-theme-color-var( neutral-110 ) !default;
 
 /// The size of the selection handle of the chart component.
 /// @group charts
@@ -237,7 +237,7 @@ $kendo-treemap-border: var( --kendo-component-border, initial ) !default;
 $kendo-treemap-title-bg: get-theme-color-var( neutral-10 ) !default;
 /// The text color of the treemap title.
 /// @group charts
-$kendo-treemap-title-text: $black !default;
+$kendo-treemap-title-text: $kendo-color-black !default;
 /// The border color of the treemap title.
 /// @group charts
 $kendo-treemap-title-border: var( --kendo-component-border, initial ) !default;

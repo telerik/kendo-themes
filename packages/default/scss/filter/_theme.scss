@@ -1,7 +1,7 @@
 @include exports("filter/theme") {
 
     .k-filter {
-        color: $component-text;
+        color: $kendo-component-text;
 
         .k-filter-preview-field {
             color: $filter-preview-field-text;
@@ -16,7 +16,7 @@
         .k-filter-toolbar::before,
         .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
         .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
-            background-color: $component-border;
+            background-color: $kendo-component-border;
         }
 
         // Focus

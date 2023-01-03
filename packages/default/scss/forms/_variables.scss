@@ -1,5 +1,5 @@
 // Forms
-$kendo-form-spacer: $padding-x * 2 !default;
+$kendo-form-spacer: $kendo-padding-md-x * 2 !default;
 
 $kendo-form-font-size: $font-size !default;
 $kendo-form-line-height: $line-height !default;
@@ -14,7 +14,7 @@ $kendo-form-legend-margin: 0 0 1em !default;
 $kendo-form-legend-padding: 0px !default;
 $kendo-form-legend-border-width: 0 0 2px !default;
 $kendo-form-legend-border-style: solid !default;
-$kendo-form-legend-border-color: $component-border !default;
+$kendo-form-legend-border-color: $kendo-component-border !default;
 $kendo-form-legend-width: 100% !default;
 $kendo-form-legend-font-size: 14px !default;
 $kendo-form-legend-text-transform: uppercase !default;
@@ -27,9 +27,9 @@ $kendo-form-hint-font-size: 12px !default;
 $kendo-form-hint-font-style: italic !default;
 $kendo-form-hint-margin-top: 4px !default;
 
-$kendo-form-rows-spacing-sm: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
-$kendo-form-rows-spacing-md: k-map-get( $spacing, 3 ) + k-map-get( $spacing, thin ) !default;
-$kendo-form-rows-spacing-lg: k-map-get( $spacing, 4 ) + k-map-get( $spacing, thin ) !default;
+$kendo-form-rows-spacing-sm: k-map-get( $kendo-spacing, 2.5 ) !default;
+$kendo-form-rows-spacing-md: k-map-get( $kendo-spacing, 3.5 ) !default;
+$kendo-form-rows-spacing-lg: k-map-get( $kendo-spacing, 4.5 ) !default;
 
 $kendo-form-separator-margin: $kendo-form-rows-spacing-md 0 0 !default;
 $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;
@@ -43,7 +43,7 @@ $kendo-horizontal-form-field-wrap-max-width: calc( ( 100% - #{$kendo-horizontal-
 
 $kendo-inline-form-element-width: 25% !default;
 
-$kendo-forms-invalid-color: $error !default;
+$kendo-forms-invalid-color: $kendo-color-error !default;
 
 
 // Label
@@ -61,7 +61,7 @@ $kendo-fieldset-text: null !default;
 $kendo-fieldset-border: null !default;
 
 $kendo-fieldset-legend-bg: null !default;
-$kendo-fieldset-legend-text: k-try-shade( $body-text, 2 ) !default;
+$kendo-fieldset-legend-text: k-try-shade( $kendo-body-text, 2 ) !default;
 $kendo-fieldset-legend-border: null !default;
 
 // Sizes

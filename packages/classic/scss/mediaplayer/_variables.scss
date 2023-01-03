@@ -4,12 +4,12 @@ $mediaplayer-font-family: $font-family !default;
 $mediaplayer-font-size: $font-size !default;
 $mediaplayer-line-height: $line-height !default;
 
-$mediaplayer-bg: $component-bg !default;
-$mediaplayer-text: $component-text !default;
-$mediaplayer-border: $component-border !default;
+$mediaplayer-bg: $kendo-component-bg !default;
+$mediaplayer-text: $kendo-component-text !default;
+$mediaplayer-border: $kendo-component-border !default;
 
-$mediaplayer-titlebar-padding-x: k-map-get( $spacing, 2 ) !default;
-$mediaplayer-titlebar-padding-y: k-map-get( $spacing, 2 ) !default;
+$mediaplayer-titlebar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$mediaplayer-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $mediaplayer-titlebar-bg: null !default;
 $mediaplayer-titlebar-text: $mediaplayer-bg !default;
 $mediaplayer-titlebar-border: null !default;

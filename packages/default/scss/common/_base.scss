@@ -68,8 +68,8 @@
     // Text selection
     .k-text-selection {
         ::selection {
-            background-color: $primary;
-            color: $primary-contrast;
+            background-color: $kendo-color-primary;
+            color: $kendo-color-primary-contrast;
         }
     }
 
@@ -78,11 +78,11 @@
     .k-panel {
         @include border-radius( $kendo-border-radius-md );
         @include fill(
-            $panel-text,
-            $panel-bg,
-            $panel-border
+            $kendo-component-text,
+            $kendo-component-bg,
+            $kendo-component-border
         );
-        padding: $panel-padding-y $panel-padding-x;
+        padding: 0;
         border-width: 1px;
         border-style: solid;
         box-sizing: border-box;
@@ -90,20 +90,24 @@
         > .k-header {
             @include border-top-radius( $kendo-border-radius-md );
             @include fill(
-                $header-text,
-                $header-bg,
-                $header-border,
-                $header-gradient
+                $kendo-component-header-text,
+                $kendo-component-header-bg,
+                $kendo-component-header-border,
+                $kendo-component-header-gradient
             );
-            margin: #{-$panel-padding-y} #{-$panel-padding-x} $panel-padding-y;
-            padding: $header-padding-y $header-padding-x;
+            padding-inline: k-map-get( $kendo-spacing, 2 );
+            padding-block: k-map-get( $kendo-spacing, 1 );
+        }
+        > .k-content {
+            padding-inline: k-map-get( $kendo-spacing, 2 );
+            padding-block: k-map-get( $kendo-spacing, 1 );
         }
     }
     .k-content {
         @include fill(
-            $panel-text,
-            $panel-bg,
-            $panel-border
+            $kendo-component-text,
+            $kendo-component-bg,
+            $kendo-component-border
         );
     }
 
@@ -116,7 +120,7 @@
     .k-disabled,
     .k-widget[disabled],
     .k-disabled {
-        @include disabled( $disabled-styling );
+        @include disabled( $kendo-disabled-styling );
 
 
         .k-link {
@@ -144,7 +148,7 @@
         height: 0;
         border-width: 1px 0 0;
         border-style: solid;
-        border-color: $component-border;
+        border-color: $kendo-component-border;
         display: block;
         float: none;
         clear: both;
@@ -178,7 +182,7 @@
         height: 0;
         border-width: 3px;
         border-style: solid;
-        border-color: $error $error transparent transparent;
+        border-color: $kendo-color-error $kendo-color-error transparent transparent;
         position: absolute;
         top: 0;
         right: 0;
@@ -187,86 +191,9 @@
     [dir = "rtl"],
     .k-rtl {
         .k-dirty {
-            border-color: transparent transparent $error $error;
+            border-color: transparent transparent $kendo-color-error $kendo-color-error;
             right: auto;
             left: 0;
-        }
-    }
-
-}
-
-@include exports( "common/placeholder" ) {
-
-    .k-placeholder-line {
-        width: $placeholder-line-width;
-        height: $placeholder-line-height;
-        background-color: $placeholder-bg;
-        display: inline-block;
-    }
-}
-
-@include exports( "common/drop-hint" ) {
-
-    .k-drop-hint {
-        display: flex;
-        gap: $drop-hint-arrow-spacing;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        z-index: 1000;
-        transform: translate(-50%, -50%);
-    }
-
-    .k-drop-hint-start,
-    .k-drop-hint-end {
-        flex-shrink: 0;
-        border-width: k-math-div( $drop-hint-arrow-size, 2 );
-        border-style: solid;
-        border-color: transparent;
-    }
-
-    .k-drop-hint-line {
-        flex-grow: 1;
-        background-color: $drop-hint-bg;
-    }
-
-    .k-drop-hint-h {
-        .k-drop-hint-start {
-            border-left-width: ( k-math-div( $drop-hint-arrow-size, 2 ) * $equilateral-index );
-            border-left-color: $drop-hint-bg;
-            border-right-width: 0;
-        }
-
-        .k-drop-hint-line {
-            width: $drop-hint-line-h-width;
-            height: $drop-hint-line-h-height;
-        }
-
-        .k-drop-hint-end {
-            border-right-width: ( k-math-div( $drop-hint-arrow-size, 2 ) * $equilateral-index );
-            border-right-color: $drop-hint-bg;
-            border-left-width: 0;
-        }
-    }
-
-    .k-drop-hint-v {
-        flex-direction: column;
-
-        .k-drop-hint-start {
-            border-top-width: ( k-math-div( $drop-hint-arrow-size, 2 ) * $equilateral-index );
-            border-top-color: $drop-hint-bg;
-            border-bottom-width: 0;
-        }
-
-        .k-drop-hint-line {
-            width: $drop-hint-line-v-width;
-            height: $drop-hint-line-v-height;
-        }
-
-        .k-drop-hint-end {
-            border-bottom-width: ( k-math-div( $drop-hint-arrow-size, 2 ) * $equilateral-index );
-            border-bottom-color: $drop-hint-bg;
-            border-top-width: 0;
         }
     }
 

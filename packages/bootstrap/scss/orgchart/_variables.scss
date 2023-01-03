@@ -1,13 +1,13 @@
 // Orgchart
-$orgchart-spacer: k-map-get( $spacing, 6 ) !default;
+$orgchart-spacer: k-map-get( $kendo-spacing, 6 ) !default;
 $orgchart-padding-y: $orgchart-spacer !default;
 $orgchart-padding-x: $orgchart-padding-y !default;
 $orgchart-font-family: $font-family !default;
 $orgchart-font-size: $font-size !default;
 $orgchart-line-height: $line-height !default;
-$orgchart-bg: $component-bg !default;
-$orgchart-text: $component-text !default;
-$orgchart-border: $component-border !default;
+$orgchart-bg: $kendo-component-bg !default;
+$orgchart-text: $kendo-component-text !default;
+$orgchart-border: $kendo-component-border !default;
 
 $orgchart-node-gap: $orgchart-spacer !default;
 $orgchart-group-gap: $orgchart-spacer !default;
@@ -30,7 +30,7 @@ $orgchart-node-group-title-line-height: $line-height-sm !default;
 
 $orgchart-node-group-subtitle-margin-bottom: $orgchart-spacer !default;
 $orgchart-node-group-subtitle-font-size: $font-size !default;
-$orgchart-node-group-subtitle-text: $subtle-text !default;
+$orgchart-node-group-subtitle-text: $kendo-subtle-text !default;
 
 $orgchart-card-width: 300px !default;
 $orgchart-card-padding-y: $card-padding-y !default;

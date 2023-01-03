@@ -64,21 +64,21 @@
         }
     }
 
-    $_shade-fn: get-function( $kendo-solid-button-shade-function );
+    $_shade-fn: k-meta-get-function( $kendo-solid-button-shade-function );
 
     @each $name, $color in $kendo-button-theme-colors {
         @if ($name != "base") {
             $_button-text: k-contrast-legacy( $color );
-            $_button-bg: if( $kendo-solid-button-shade-bg-amount, call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null );
-            $_button-border: if( $kendo-solid-button-shade-border-amount, call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null );
+            $_button-bg: if( $kendo-solid-button-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null );
+            $_button-border: if( $kendo-solid-button-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null );
 
             $_button-hover-text: null;
-            $_button-hover-bg: if( $kendo-solid-button-hover-shade-bg-amount, call( $_shade-fn, $color, $kendo-solid-button-hover-shade-bg-amount ), null );
-            $_button-hover-border: if( $kendo-solid-button-hover-shade-border-amount, call( $_shade-fn, $color, $kendo-solid-button-hover-shade-border-amount ), null );
+            $_button-hover-bg: if( $kendo-solid-button-hover-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-bg-amount ), null );
+            $_button-hover-border: if( $kendo-solid-button-hover-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-border-amount ), null );
 
             $_button-active-text: null;
-            $_button-active-bg: if( $kendo-solid-button-active-shade-bg-amount, call( $_shade-fn, $color, $kendo-solid-button-active-shade-bg-amount ), null );
-            $_button-active-border: if( $kendo-solid-button-active-shade-border-amount, call( $_shade-fn, $color, $kendo-solid-button-active-shade-border-amount ), null );
+            $_button-active-bg: if( $kendo-solid-button-active-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-bg-amount ), null );
+            $_button-active-border: if( $kendo-solid-button-active-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-border-amount ), null );
 
             .k-button-solid-#{$name} {
                 @include fill(
@@ -142,7 +142,7 @@
 
 
     // Outline button
-    @each $name, $color in map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
+    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
         .k-button-outline-#{$name} {
             @include box-shadow( none );
             border-color: currentColor;
@@ -196,7 +196,7 @@
 
 
     // Flat button
-    @each $name, $color in map-merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
+    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
         .k-button-flat-#{$name} {
             color: $color;
 
@@ -210,7 +210,7 @@
 
 
     // Link button
-    @each $name, $color in map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
+    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
         .k-button-link-#{$name} {
             color: $color;
 
@@ -249,7 +249,7 @@
 
 
     // Clear button
-    @each $name, $color in map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
+    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
         .k-button-clear-#{$name} {
             color: $color;
 

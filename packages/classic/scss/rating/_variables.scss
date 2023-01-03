@@ -3,21 +3,21 @@ $rating-font-family: $font-family !default;
 $rating-font-size: $font-size !default;
 $rating-line-height: $line-height !default;
 
-$rating-container-margin-x: $padding-x-sm !default;
+$rating-container-margin-x: $kendo-padding-sm-x !default;
 
-$rating-item-padding-x: $padding-x-sm !default;
-$rating-item-padding-y: $padding-y !default;
+$rating-item-padding-x: $kendo-padding-sm-x !default;
+$rating-item-padding-y: $kendo-padding-md-y !default;
 
-$rating-label-margin-x: $padding-x !default;
-$rating-label-margin-y: $padding-y !default;
+$rating-label-margin-x: $kendo-padding-md-x !default;
+$rating-label-margin-y: $kendo-padding-md-y !default;
 $rating-label-line-height: $line-height-lg !default;
 
 $rating-icon-size: ($icon-size * 1.5) !default;
 
-$rating-icon-text: $component-text !default;
-$rating-icon-selected-text: $selected-bg !default;
-$rating-icon-hover-text: $selected-bg !default;
-$rating-icon-focused-text: $selected-bg !default;
+$rating-icon-text: $kendo-component-text !default;
+$rating-icon-selected-text: $kendo-selected-bg !default;
+$rating-icon-hover-text: $kendo-selected-bg !default;
+$rating-icon-focus-text: $kendo-selected-bg !default;
 
-$rating-icon-focused-shadow: 0 2px 4px rgba( black, .1 ) !default;
-$rating-icon-focused-selected-shadow: 0 2px 4px rgba( black, .1) !default;
+$rating-icon-focus-shadow: 0 2px 4px rgba( black, .1 ) !default;
+$rating-icon-focus-selected-shadow: 0 2px 4px rgba( black, .1) !default;

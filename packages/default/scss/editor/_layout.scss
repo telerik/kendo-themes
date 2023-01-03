@@ -14,7 +14,7 @@
         position: relative;
         z-index: 1;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         &.k-readonly {
             .k-editor-content {
@@ -31,7 +31,7 @@
     // Inline editor
     .k-editor-inline {
         @include border-radius( $kendo-border-radius-md );
-        padding: $padding-y-sm $padding-x-sm;
+        padding: $kendo-padding-sm-y $kendo-padding-sm-x;
         border: 1px solid transparent;
         word-wrap: break-word;
         overflow: auto;
@@ -162,7 +162,7 @@
         }
 
         > .ProseMirror { // sass-lint:disable-line class-name-format
-            padding: $padding-x;
+            padding: $kendo-padding-md-x;
             width: 100%;
             height: 100%;
             position: relative;
@@ -413,7 +413,7 @@
             height: 390px;
             max-height: 50vh;
             margin: 0 0 $spacer-y 0;
-            padding: $padding-y $padding-x;
+            padding: $kendo-padding-md-y $kendo-padding-md-x;
             border-top-width: 0;
             overflow: auto;
         }
@@ -421,7 +421,7 @@
         .k-tile {
             width: 33%;
             height: 90px;
-            padding: $padding-y $padding-x;
+            padding: $kendo-padding-md-y $kendo-padding-md-x;
             box-sizing: border-box;
             white-space: nowrap;
             overflow: hidden;
@@ -465,7 +465,7 @@
 
         .k-thumb {
             float: left;
-            margin-right: $padding-x-sm;
+            margin-right: $kendo-padding-sm-x;
         }
 
         .k-breadcrumbs-wrap {
@@ -511,7 +511,7 @@
 
             & + .k-color-picker,
             & + .k-dropdown-list {
-                margin-left: k-map-get( $spacing, 2 );
+                margin-left: k-map-get( $kendo-spacing, 2 );
             }
         }
 
@@ -540,7 +540,7 @@
 
             td {
                 min-width: 1px;
-                padding: $padding-y-sm $padding-x-sm;
+                padding: $kendo-padding-sm-y $kendo-padding-sm-x;
             }
         }
 
