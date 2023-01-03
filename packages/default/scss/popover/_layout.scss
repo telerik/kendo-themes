@@ -2,15 +2,15 @@
 
     // Popover
     .k-popover {
-        @include border-radius( $popover-border-radius );
+        @include border-radius( $kendo-popover-border-radius );
         padding: 0;
-        border-width: $popover-border-width;
-        border-style: $popover-border-style;
+        border-width: $kendo-popover-border-width;
+        border-style: $kendo-popover-border-style;
         box-sizing: border-box;
         outline: 0;
-        font-size: $popover-font-size;
-        font-family: $popover-font-family;
-        line-height: $popover-line-height;
+        font-size: $kendo-popover-font-size;
+        font-family: $kendo-popover-font-family;
+        line-height: $kendo-popover-line-height;
         display: flex;
         flex-flow: column nowrap;
         z-index: 12000;
@@ -32,20 +32,20 @@
 
     // Header
     .k-popover-header {
-        @include border-top-radius( $popover-border-radius );
-        padding: $popover-header-padding-y $popover-header-padding-x;
-        border-width: 0 0 $popover-header-border-width;
-        border-style: $popover-header-border-style;
+        @include border-top-radius( $kendo-popover-border-radius );
+        padding: $kendo-popover-header-padding-y $kendo-popover-header-padding-x;
+        border-width: 0 0 $kendo-popover-header-border-width;
+        border-style: $kendo-popover-header-border-style;
     }
 
     // Body
     .k-popover-body {
-        padding: $popover-body-padding-y $popover-body-padding-x;
+        padding: $kendo-popover-body-padding-y $kendo-popover-body-padding-x;
     }
 
     // Actions
     .k-popover-actions {
-        border-width: $popover-actions-border-width 0 0;
+        border-width: $kendo-popover-actions-border-width 0 0;
     }
 
 }
@@ -54,10 +54,10 @@
 
     .k-popover-callout {
         margin: 0;
-        width: $popover-callout-width;
-        height: $popover-callout-height;
-        border-width: $popover-callout-border-width;
-        border-style: $popover-callout-border-style;
+        width: $kendo-popover-callout-width;
+        height: $kendo-popover-callout-height;
+        border-width: $kendo-popover-callout-border-width;
+        border-style: $kendo-popover-callout-border-style;
         position: absolute;
 
         &.k-callout-n {

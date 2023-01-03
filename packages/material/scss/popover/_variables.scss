@@ -1,31 +1,31 @@
 // Popover
-$popover-border-width: 1px !default;
-$popover-border-style: solid !default;
-$popover-border-radius: $card-border-radius !default;
-$popover-font-size: $card-font-size !default;
-$popover-font-family: $card-font-family !default;
-$popover-line-height: $card-line-height !default;
-$popover-bg: $kendo-component-bg !default;
-$popover-text: $kendo-component-text !default;
-$popover-border: $kendo-component-border !default;
-$popover-shadow: $card-shadow !default;
+$kendo-popover-border-width: 1px !default;
+$kendo-popover-border-style: solid !default;
+$kendo-popover-border-radius: $card-border-radius !default;
+$kendo-popover-font-size: $card-font-size !default;
+$kendo-popover-font-family: $card-font-family !default;
+$kendo-popover-line-height: $card-line-height !default;
+$kendo-popover-bg: $kendo-component-bg !default;
+$kendo-popover-text: $kendo-component-text !default;
+$kendo-popover-border: $kendo-component-border !default;
+$kendo-popover-shadow: $card-shadow !default;
 
-$popover-header-padding-y: $card-header-padding-y !default;
-$popover-header-padding-x: $card-header-padding-x !default;
-$popover-header-border-width: $card-header-border-width !default;
-$popover-header-border-style: $popover-border-style !default;
-$popover-header-bg: $card-header-bg !default;
-$popover-header-text: $card-header-text !default;
-$popover-header-border: $card-header-border !default;
+$kendo-popover-header-padding-y: $card-header-padding-y !default;
+$kendo-popover-header-padding-x: $card-header-padding-x !default;
+$kendo-popover-header-border-width: $card-header-border-width !default;
+$kendo-popover-header-border-style: $kendo-popover-border-style !default;
+$kendo-popover-header-bg: $card-header-bg !default;
+$kendo-popover-header-text: $card-header-text !default;
+$kendo-popover-header-border: $card-header-border !default;
 
-$popover-body-padding-y: $card-body-padding-y !default;
-$popover-body-padding-x: $card-body-padding-x !default;
+$kendo-popover-body-padding-y: $card-body-padding-y !default;
+$kendo-popover-body-padding-x: $card-body-padding-x !default;
 
-$popover-actions-border-width: $popover-border-width !default;
+$kendo-popover-actions-border-width: $kendo-popover-border-width !default;
 
-$popover-callout-width: $card-callout-width !default;
-$popover-callout-height: $card-callout-height !default;
-$popover-callout-border-width: $popover-border-width !default;
-$popover-callout-border-style: $popover-border-style !default;
-$popover-callout-bg: $popover-bg !default;
-$popover-callout-border: $popover-border !default;
+$kendo-popover-callout-width: $card-callout-width !default;
+$kendo-popover-callout-height: $card-callout-height !default;
+$kendo-popover-callout-border-width: $kendo-popover-border-width !default;
+$kendo-popover-callout-border-style: $kendo-popover-border-style !default;
+$kendo-popover-callout-bg: $kendo-popover-bg !default;
+$kendo-popover-callout-border: $kendo-popover-border !default;
