@@ -222,14 +222,6 @@
             align-items: center;
             gap: $icon-spacing;
             cursor: pointer;
-
-            .k-sm-date-format,
-            .k-lg-date-format {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            .k-sm-date-format { display: none; }
         }
 
 
@@ -237,17 +229,6 @@
         .k-scheduler-search {
             display: inline-flex;
             flex-flow: row nowrap;
-        }
-
-
-        // Responsive scheduler toolbar
-        @media (max-width: 1400px) {
-            .k-nav-current .k-lg-date-format { max-width: 200px; }
-        }
-
-        @media (max-width: 1024px) {
-            .k-nav-current .k-lg-date-format { display: none; }
-            .k-nav-current .k-sm-date-format { display: inline-block; }
         }
     }
 
