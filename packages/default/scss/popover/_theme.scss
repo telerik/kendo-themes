@@ -2,12 +2,12 @@
 
     // Popover
     .k-popover {
-        @include box-shadow( $popover-shadow );
+        @include box-shadow( $kendo-popover-shadow );
 
         @include fill(
-            $popover-text,
-            $popover-bg,
-            $popover-border
+            $kendo-popover-text,
+            $kendo-popover-bg,
+            $kendo-popover-border
         );
     }
 
@@ -19,9 +19,9 @@
     // Header
     .k-popover-header {
         @include fill(
-            $popover-header-text,
-            $popover-header-bg,
-            $popover-header-border
+            $kendo-popover-header-text,
+            $kendo-popover-header-bg,
+            $kendo-popover-header-border
         );
     }
 
