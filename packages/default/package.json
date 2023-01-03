@@ -44,8 +44,7 @@
     "nuget-pack": "jq '.version' package.json | xargs nuget pack package.nuspec -Version",
     "nuget-push": "nuget push *.nupkg -ApiKey $NUGET_API_KEY -Source $NUGET_FEED -SkipDuplicate",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
-    "postpublish": "echo 'no postpublish for default theme'",
-    "prepack": "cp package.json package.json.orig && jq '.scripts={}' package.json.orig > package.json"
+    "postpublish": "echo 'no postpublish for default theme'"
   },
   "dependencies": {
     "@progress/kendo-font-icons": "^0.6.0",
