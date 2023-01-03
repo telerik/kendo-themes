@@ -5,7 +5,6 @@ $kendo-popover-border-radius: $card-border-radius !default;
 $kendo-popover-font-size: $card-font-size !default;
 $kendo-popover-font-family: $card-font-family !default;
 $kendo-popover-line-height: $card-line-height !default;
-
 $kendo-popover-bg: $card-bg !default;
 $kendo-popover-text: $card-text !default;
 $kendo-popover-border: $card-border !default;
@@ -15,10 +14,9 @@ $kendo-popover-header-padding-y: $card-header-padding-y !default;
 $kendo-popover-header-padding-x: $card-header-padding-x !default;
 $kendo-popover-header-border-width: $card-header-border-width !default;
 $kendo-popover-header-border-style: $kendo-popover-border-style !default;
-
-$kendo-popover-header-bg: $card-header-bg !default;
-$kendo-popover-header-text: $card-header-text !default;
-$kendo-popover-header-border: $card-header-border !default;
+$kendo-popover-header-bg: null !default;
+$kendo-popover-header-text: null !default;
+$kendo-popover-header-border: null !default;
 
 $kendo-popover-body-padding-y: $card-body-padding-y !default;
 $kendo-popover-body-padding-x: $card-body-padding-x !default;
