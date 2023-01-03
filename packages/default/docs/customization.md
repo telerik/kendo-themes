@@ -11912,24 +11912,6 @@ The following table lists the available variables for customizing the Default th
 </thead>
 <tbody>
         <tr>
-    <td>$enable-typography</td>
-    <td>Bool</td>
-<td>
-
-`false`
-
-</td>
-<td>
-
-`false`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global typography styles for the Kendo Default theme.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$font-size</td>
     <td>Number</td>
 <td>
@@ -11999,6 +11981,24 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$enable-typography</td>
+    <td>Bool</td>
+<td>
+
+`false`
+
+</td>
+<td>
+
+`false`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global typography styles for the Kendo Default theme.</div></div>
     </td>
 </tr>
 </tbody>
