@@ -270,12 +270,12 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$spacer-x`
+`k-map-get( $kendo-spacing, 4 )`
 
 </td>
 <td>
 
-`1em`
+`16px`
 
 </td>
 </tr>
