@@ -7,13 +7,13 @@
         line-height: normal;
 
         .k-status {
-            line-height: $line-height;
+            line-height: $kendo-line-height-md;
         }
     }
 
     .k-editor-export {
         text-transform: uppercase;
-        font-size: $font-size-md;
+        font-size: $kendo-font-size-md;
 
         .k-icon {
             margin-left: $kendo-editor-export-tool-icon-margin-x;

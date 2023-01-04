@@ -1,7 +1,7 @@
 @include exports("validator/layout") {
 
     .k-validator-tooltip {
-        margin-top: calc( #{$tooltip-callout-size} + #{$tooltip-border-width} );
+        margin-top: calc( #{$kendo-tooltip-callout-size} + #{$kendo-tooltip-border-width} );
         width: auto;
         white-space: normal;
         display: flex;

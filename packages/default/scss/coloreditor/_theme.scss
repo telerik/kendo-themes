@@ -3,22 +3,22 @@
     // ColorEditor/FlatColorPicker
     .k-coloreditor {
         @include fill(
-            $coloreditor-text,
-            $coloreditor-bg,
-            $coloreditor-border
+            $kendo-color-editor-text,
+            $kendo-color-editor-bg,
+            $kendo-color-editor-border
         );
     }
 
     .k-coloreditor:focus,
     .k-coloreditor.k-focus {
-        @include fill( $border: $coloreditor-focus-border );
-        @include focus-indicator( $coloreditor-focus-shadow );
+        @include fill( $border: $kendo-color-editor-focus-border );
+        @include focus-indicator( $kendo-color-editor-focus-shadow );
     }
 
     .k-coloreditor .k-colorgradient:focus,
     .k-coloreditor .k-colorgradient.k-focus {
         box-shadow: none;
-        outline-color: $coloreditor-colorgradient-focus-outline-color;
+        outline-color: $kendo-color-editor-color-gradient-focus-outline-color;
     }
 
 }

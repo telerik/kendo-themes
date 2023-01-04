@@ -3,13 +3,13 @@
     // Base
     .k-splitter {
         height: 300px;
-        border-width: $splitter-border-width;
+        border-width: $kendo-splitter-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $splitter-font-family;
-        font-size: $splitter-font-size;
-        line-height: $splitter-line-height;
+        font-family: $kendo-splitter-font-family;
+        font-size: $kendo-splitter-font-size;
+        line-height: $kendo-splitter-line-height;
         display: block;
         position: relative;
         -webkit-touch-callout: none;
@@ -59,7 +59,7 @@
         }
 
         .k-icon {
-            font-size: $splitter-resize-icon-size;
+            font-size: $kendo-splitter-resize-icon-size;
         }
 
     }
@@ -69,7 +69,7 @@
 
     .k-ghost-splitbar-horizontal,
     .k-splitbar-horizontal {
-        width: $splitter-splitbar-size;
+        width: $kendo-splitter-splitbar-size;
         border-width: 0;
         background-repeat: repeat-y;
         flex-direction: column;
@@ -77,7 +77,7 @@
     }
     .k-ghost-splitbar-vertical,
     .k-splitbar-vertical {
-        height: $splitter-splitbar-size;
+        height: $kendo-splitter-splitbar-size;
         border-width: 0;
         background-repeat: repeat-x;
         flex-direction: row;
@@ -88,8 +88,8 @@
     .k-splitbar-static-vertical { height: 1px; }
 
     .k-splitbar-draggable-horizontal .k-resize-handle {
-        width: $splitter-drag-handle-thickness;
-        height: $splitter-drag-handle-length;
+        width: $kendo-splitter-drag-handle-thickness;
+        height: $kendo-splitter-drag-handle-length;
         position: static;
         z-index: 1;
     }
@@ -108,24 +108,24 @@
     }
 
     .k-splitbar-horizontal .k-collapse-prev {
-        margin-bottom: $splitter-drag-icon-margin;
+        margin-bottom: $kendo-splitter-drag-icon-margin;
     }
 
     .k-splitbar-horizontal .k-collapse-next {
-        margin-top: $splitter-drag-icon-margin;
+        margin-top: $kendo-splitter-drag-icon-margin;
     }
 
     .k-splitbar-vertical .k-collapse-prev {
-        margin-right: $splitter-drag-icon-margin;
+        margin-right: $kendo-splitter-drag-icon-margin;
     }
 
     .k-splitbar-vertical .k-collapse-next {
-        margin-left: $splitter-drag-icon-margin;
+        margin-left: $kendo-splitter-drag-icon-margin;
     }
 
     .k-splitbar-draggable-vertical .k-resize-handle {
-        width: $splitter-drag-handle-length;
-        height: $splitter-drag-handle-thickness;
+        width: $kendo-splitter-drag-handle-length;
+        height: $kendo-splitter-drag-handle-thickness;
         position: static;
         z-index: 1;
     }

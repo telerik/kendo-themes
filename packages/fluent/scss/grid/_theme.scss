@@ -62,7 +62,7 @@
         &::before,
         &::after {
             @include fill(
-                $bg: var( --kendo-grid-group-dropclue-bg, #{$kendo-grid-group-dropclue-bg} )
+                $bg: var( --kendo-grid-group-drop-hint-bg, #{$kendo-grid-group-drop-hint-bg} )
             );
         }
     }

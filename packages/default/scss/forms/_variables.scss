@@ -8,11 +8,11 @@
 
 $kendo-form-spacer: $kendo-padding-md-x * 2 !default;
 
-$kendo-form-font-size: $font-size !default;
-$kendo-form-line-height: $line-height !default;
+$kendo-form-font-size: $kendo-font-size-md !default;
+$kendo-form-line-height: $kendo-line-height-md !default;
 $kendo-form-line-height-em: calc( #{$kendo-form-line-height} * 1em ) !default;
-$kendo-form-line-height-sm: $line-height-sm !default;
-$kendo-form-line-height-lg: $line-height-lg !default;
+$kendo-form-sm-line-height: $kendo-line-height-sm !default;
+$kendo-form-lg-line-height: $kendo-line-height-lg !default;
 
 $kendo-form-fieldset-margin: 2em 0 0 !default;
 $kendo-form-fieldset-padding: 0px !default;
@@ -34,11 +34,11 @@ $kendo-form-hint-font-size: 12px !default;
 $kendo-form-hint-font-style: italic !default;
 $kendo-form-hint-margin-top: 4px !default;
 
-$kendo-form-rows-spacing-sm: k-map-get( $kendo-spacing, 2.5 ) !default;
-$kendo-form-rows-spacing-md: k-map-get( $kendo-spacing, 3.5 ) !default;
-$kendo-form-rows-spacing-lg: k-map-get( $kendo-spacing, 4.5 ) !default;
+$kendo-form-sm-rows-spacing: k-map-get( $kendo-spacing, 2.5 ) !default;
+$kendo-form-md-rows-spacing: k-map-get( $kendo-spacing, 3.5 ) !default;
+$kendo-form-lg-rows-spacing: k-map-get( $kendo-spacing, 4.5 ) !default;
 
-$kendo-form-separator-margin: $kendo-form-rows-spacing-md 0 0 !default;
+$kendo-form-separator-margin: $kendo-form-md-rows-spacing 0 0 !default;
 $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;
 
 $kendo-horizontal-form-label-padding-top: 5px !default;
@@ -61,7 +61,7 @@ $kendo-label-optional-font-style: italic !default;
 
 // Fieldset
 $kendo-fieldset-margin: 30px !default;
-$kendo-fieldset-font-size: $h4-font-size !default;
+$kendo-fieldset-font-size: $kendo-h4-font-size !default;
 
 $kendo-fieldset-bg: null !default;
 $kendo-fieldset-text: null !default;
@@ -74,12 +74,12 @@ $kendo-fieldset-legend-border: null !default;
 // Sizes
 $kendo-form-sizes: (
     sm: (
-        form-rows-spacing: $kendo-form-rows-spacing-sm
+        form-rows-spacing: $kendo-form-sm-rows-spacing
     ),
     md: (
-        form-rows-spacing: $kendo-form-rows-spacing-md
+        form-rows-spacing: $kendo-form-md-rows-spacing
     ),
     lg: (
-        form-rows-spacing: $kendo-form-rows-spacing-lg
+        form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 ) !default;

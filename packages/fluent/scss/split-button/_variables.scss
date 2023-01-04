@@ -3,15 +3,15 @@
 
 /// Vertical padding of the split button arrow.
 /// @group split-button
-$kendo-split-button-arrow-padding-y-sm: $kendo-button-padding-y-sm !default;
-$kendo-split-button-arrow-padding-y-md: $kendo-button-padding-y-md !default;
-$kendo-split-button-arrow-padding-y-lg: $kendo-button-padding-y-lg !default;
+$kendo-split-button-sm-arrow-padding-y: $kendo-button-sm-padding-y !default;
+$kendo-split-button-md-arrow-padding-y: $kendo-button-md-padding-y !default;
+$kendo-split-button-lg-arrow-padding-y: $kendo-button-lg-padding-y !default;
 
 /// Horizontal padding of the split button arrow.
 /// @group split-button
-$kendo-split-button-arrow-padding-x-sm: $kendo-split-button-arrow-padding-y-sm !default;
-$kendo-split-button-arrow-padding-x-md: $kendo-split-button-arrow-padding-y-md !default;
-$kendo-split-button-arrow-padding-x-lg: $kendo-split-button-arrow-padding-y-lg !default;
+$kendo-split-button-sm-arrow-padding-x: $kendo-split-button-sm-arrow-padding-y !default;
+$kendo-split-button-md-arrow-padding-x: $kendo-split-button-md-arrow-padding-y !default;
+$kendo-split-button-lg-arrow-padding-x: $kendo-split-button-lg-arrow-padding-y !default;
 
 /// Height of the split button arrow delimiter.
 /// @group split-button
@@ -26,7 +26,7 @@ $kendo-split-button-arrow-delimiter-bg: get-theme-color-var( neutral-60 ) !defau
 /// Sizes map for the split button.
 /// @group split-button
 $kendo-split-button-sizes: (
-    sm: $kendo-split-button-arrow-padding-y-sm,
-    md: $kendo-split-button-arrow-padding-y-md,
-    lg: $kendo-split-button-arrow-padding-y-lg
+    sm: $kendo-split-button-sm-arrow-padding-y,
+    md: $kendo-split-button-md-arrow-padding-y,
+    lg: $kendo-split-button-lg-arrow-padding-y
 ) !default;

@@ -3,17 +3,17 @@
     // Chat
     .k-chat {
         @include fill(
-            $chat-text,
-            $chat-bg,
-            $chat-border
+            $kendo-chat-text,
+            $kendo-chat-bg,
+            $kendo-chat-border
         );
 
 
         // Message meta
         .k-timestamp {
             @include fill(
-                $chat-timestamp-text,
-                $chat-timestamp-bg
+                $kendo-chat-timestamp-text,
+                $kendo-chat-timestamp-bg
             );
         }
         .k-author {
@@ -24,53 +24,53 @@
         // Bubbles
         .k-bubble {
             @include fill(
-                $chat-bubble-text,
-                $chat-bubble-bg,
-                $chat-bubble-border
+                $kendo-chat-bubble-text,
+                $kendo-chat-bubble-bg,
+                $kendo-chat-bubble-border
             );
-            @include box-shadow( $chat-bubble-shadow );
+            @include box-shadow( $kendo-chat-bubble-shadow );
             transition: $kendo-transition;
             order: -1;
 
-            a { color: $link-text; }
-            a:hover { color: $link-hover-text; }
+            a { color: $kendo-link-text; }
+            a:hover { color: $kendo-link-hover-text; }
         }
         .k-bubble:hover {
-            @include box-shadow( $chat-bubble-hover-shadow );
+            @include box-shadow( $kendo-chat-bubble-hover-shadow );
         }
         .k-selected .k-bubble {
-            @include box-shadow( $chat-bubble-selected-shadow );
+            @include box-shadow( $kendo-chat-bubble-selected-shadow );
         }
 
         .k-alt .k-bubble {
             @include fill(
-                $chat-alt-bubble-text,
-                $chat-alt-bubble-bg,
-                $chat-alt-bubble-border
+                $kendo-chat-alt-bubble-text,
+                $kendo-chat-alt-bubble-bg,
+                $kendo-chat-alt-bubble-border
             );
-            @include box-shadow( $chat-alt-bubble-shadow );
+            @include box-shadow( $kendo-chat-alt-bubble-shadow );
         }
         .k-alt .k-bubble:hover {
-            @include box-shadow( $chat-alt-bubble-hover-shadow );
+            @include box-shadow( $kendo-chat-alt-bubble-hover-shadow );
         }
         .k-alt .k-selected .k-bubble {
-            @include box-shadow( $chat-alt-bubble-selected-shadow );
+            @include box-shadow( $kendo-chat-alt-bubble-selected-shadow );
         }
 
 
         // Quick replies
         .k-quick-reply {
             @include fill(
-                $chat-quick-reply-text,
-                $chat-quick-reply-bg,
-                $chat-quick-reply-border
+                $kendo-chat-quick-reply-text,
+                $kendo-chat-quick-reply-bg,
+                $kendo-chat-quick-reply-border
             );
         }
         .k-quick-reply:hover {
             @include fill(
-                $chat-quick-reply-hover-text,
-                $chat-quick-reply-hover-bg,
-                $chat-quick-reply-hover-border
+                $kendo-chat-quick-reply-hover-text,
+                $kendo-chat-quick-reply-hover-bg,
+                $kendo-chat-quick-reply-hover-border
             );
         }
 
@@ -81,9 +81,9 @@
     .k-chat-toolbar,
     .k-chat .k-toolbar-box {
         @include fill(
-            $chat-toolbar-text,
-            $chat-toolbar-bg,
-            $chat-toolbar-border
+            $kendo-chat-toolbar-text,
+            $kendo-chat-toolbar-bg,
+            $kendo-chat-toolbar-border
         );
     }
 

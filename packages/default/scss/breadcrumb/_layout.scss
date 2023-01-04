@@ -2,15 +2,15 @@
 
     // Breadcrumb
     .k-breadcrumb {
-        margin: $breadcrumb-margin-y $breadcrumb-margin-x;
-        padding: $breadcrumb-padding-y $breadcrumb-padding-x;
-        border-width: $breadcrumb-border-width;
+        margin: $kendo-breadcrumb-margin-y $kendo-breadcrumb-margin-x;
+        padding: $kendo-breadcrumb-padding-y $kendo-breadcrumb-padding-x;
+        border-width: $kendo-breadcrumb-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $breadcrumb-font-family;
-        font-size: $breadcrumb-font-size;
-        line-height: $breadcrumb-line-height;
+        font-family: $kendo-breadcrumb-font-family;
+        font-size: $kendo-breadcrumb-font-size;
+        line-height: $kendo-breadcrumb-line-height;
         display: flex;
         flex-direction: row;
         -webkit-touch-callout: none;
@@ -36,7 +36,7 @@
     }
 
     .k-breadcrumb-container {
-
+        // TODO: use !k-flex-wrap in rendering
         &.k-flex-wrap {
             flex-wrap: wrap;
         }
@@ -66,9 +66,9 @@
     // Breadcrumb links
     .k-breadcrumb-link,
     .k-breadcrumb-root-link {
-        @include border-radius( $breadcrumb-link-border-radius );
-        padding: $breadcrumb-link-padding-y $breadcrumb-link-padding-x;
-        color: $breadcrumb-link-initial-text;
+        @include border-radius( $kendo-breadcrumb-link-border-radius );
+        padding: $kendo-breadcrumb-link-padding-y $kendo-breadcrumb-link-padding-x;
+        color: $kendo-breadcrumb-link-initial-text;
         text-decoration: none;
         white-space: nowrap;
         outline: none;
@@ -82,16 +82,16 @@
     }
 
     .k-breadcrumb-root-link {
-        margin-right: $breadcrumb-root-link-spacing;
+        margin-right: $kendo-breadcrumb-root-link-spacing;
     }
 
     .k-breadcrumb-link > .k-image,
     .k-breadcrumb-icontext-link .k-icon {
-        margin-right: $breadcrumb-link-icon-spacing;
+        margin-right: $kendo-breadcrumb-link-icon-spacing;
     }
 
     .k-breadcrumb-icon-link {
-        padding: $breadcrumb-icon-link-padding-y $breadcrumb-icon-link-padding-x;
+        padding: $kendo-breadcrumb-icon-link-padding-y $kendo-breadcrumb-icon-link-padding-x;
     }
 
 
@@ -99,7 +99,7 @@
     .k-breadcrumb-delimiter,
     .k-breadcrumb-delimiter-icon {
         color: inherit;
-        font-size: $breadcrumb-delimiter-icon-font-size;
+        font-size: $kendo-breadcrumb-delimiter-icon-font-size;
         opacity: $kendo-disabled-opacity;
     }
 
@@ -120,13 +120,13 @@
             .k-rtl & {
                 .k-breadcrumb-root-link {
                     margin-right: 0;
-                    margin-left: $breadcrumb-root-link-spacing;
+                    margin-left: $kendo-breadcrumb-root-link-spacing;
                 }
 
                 .k-breadcrumb-link > .k-image,
                 .k-breadcrumb-icontext-link .k-icon {
                     margin-right: 0;
-                    margin-left: $breadcrumb-link-icon-spacing;
+                    margin-left: $kendo-breadcrumb-link-icon-spacing;
                 }
             }
         }

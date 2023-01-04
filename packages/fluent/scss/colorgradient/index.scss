@@ -23,7 +23,7 @@ $_kendo-module-meta: (
 // Expose
 @mixin colorgradient-styles() {
     @include module.render( "colorgradient" ) {
-        @include kendo-colorgradient--layout();
-        @include kendo-colorgradient--theme();
+        @include kendo-color-gradient--layout();
+        @include kendo-color-gradient--theme();
     }
 }

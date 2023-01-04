@@ -2,33 +2,33 @@
 
     .k-splitter {
         @include fill(
-            $splitter-text,
-            $splitter-bg,
-            $splitter-border
+            $kendo-splitter-text,
+            $kendo-splitter-bg,
+            $kendo-splitter-border
         );
     }
 
     // Splitbar
     .k-splitbar {
-        color: $splitbar-text;
-        background-color: $splitbar-bg;
+        color: $kendo-splitbar-text;
+        background-color: $kendo-splitbar-bg;
     }
     .k-splitbar:hover,
     .k-splitbar.k-hover,
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
-        color: $splitbar-hover-text;
-        background-color: $splitbar-hover-bg;
+        color: $kendo-splitbar-hover-text;
+        background-color: $kendo-splitbar-hover-bg;
     }
     .k-splitbar:focus,
     .k-splitbar.k-focus {
-        color: $splitbar-selected-text;
-        background: $splitbar-selected-bg;
+        color: $kendo-splitbar-selected-text;
+        background: $kendo-splitbar-selected-bg;
     }
 
     // Ghost splitbar
     .k-ghost-splitbar {
-        background-color: $splitbar-hover-bg;
+        background-color: $kendo-splitbar-hover-bg;
     }
 
 }

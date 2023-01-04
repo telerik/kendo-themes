@@ -1,16 +1,16 @@
 @include exports("action-buttons/layout") {
 
     .k-actions {
-        padding: $actions-padding-y $actions-padding-x;
+        padding: $kendo-actions-padding-y $kendo-actions-padding-x;
         box-sizing: border-box;
-        border-width: $actions-border-width 0 0 0;
+        border-width: $kendo-actions-border-width 0 0 0;
         border-style: solid;
         border-color: inherit;
         flex-shrink: 0;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        gap: $actions-button-spacing;
+        gap: $kendo-actions-button-spacing;
         overflow: hidden;
         // TODO: remove
         clear: both;
@@ -25,7 +25,7 @@
 
     // Actions in popup
     .k-popup .k-actions {
-        margin-top: $actions-margin-top;
+        margin-top: $kendo-actions-margin-top;
     }
 
 

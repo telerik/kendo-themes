@@ -39,7 +39,7 @@
 
         .k-title,
         .k-time-selector-header-title {
-            padding: var( --kendo-button-padding-y-md, $kendo-button-padding-y-md ) var( --kendo-button-padding-x-md, $kendo-button-padding-x-md );
+            padding: var( --kendo-button-md-padding-y, $kendo-button-md-padding-y ) var( --kendo-button-md-padding-x, $kendo-button-md-padding-x );
             font-weight: bold;
             display: inline-block;
         }

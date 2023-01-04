@@ -3,27 +3,27 @@
 
 /// Font size of the list component.
 /// @group list
-$kendo-list-font-size-sm: var( --kendo-font-size, inherit ) !default;
-$kendo-list-font-size-md: var( --kendo-font-size, inherit ) !default;
-$kendo-list-font-size-lg: var( --kendo-font-size, inherit ) !default;
+$kendo-list-sm-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-md-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// Line height of the list component.
 /// @group list
-$kendo-list-line-height-sm: var( --kendo-line-height, normal ) !default;
-$kendo-list-line-height-md: var( --kendo-line-height, normal ) !default;
-$kendo-list-line-height-lg: var( --kendo-line-height, normal ) !default;
+$kendo-list-sm-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-list-md-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-list-lg-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Horizontal padding of list header.
 /// @group list
-$kendo-list-header-padding-x-sm: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-header-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-header-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-sm-header-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-md-header-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-lg-header-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list header.
 /// @group list
-$kendo-list-header-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
-$kendo-list-header-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-header-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
+$kendo-list-sm-header-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-list-md-header-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-lg-header-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Border width of list header.
 /// @group list
@@ -31,15 +31,15 @@ $kendo-list-header-border-width: 0 !default;
 
 /// Font size of list header.
 /// @group list
-$kendo-list-header-font-size-sm: var( --kendo-font-size, inherit ) !default;
-$kendo-list-header-font-size-md: var( --kendo-font-size, inherit ) !default;
-$kendo-list-header-font-size-lg: var( --kendo-font-size, inherit ) !default;
+$kendo-list-sm-header-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-md-header-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-lg-header-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// Line height of list header.
 /// @group list
-$kendo-list-header-line-height-sm: var( --kendo-line-height, normal ) !default;
-$kendo-list-header-line-height-md: var( --kendo-line-height, normal ) !default;
-$kendo-list-header-line-height-lg: var( --kendo-line-height, normal ) !default;
+$kendo-list-sm-header-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-list-md-header-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-list-lg-header-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Font weight of list header.
 /// @group list
@@ -47,57 +47,57 @@ $kendo-list-header-font-weight: var( --kendo-font-weight-bold, normal ) !default
 
 /// Horizontal padding of list items.
 /// @group list
-$kendo-list-item-padding-x-sm: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-item-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-item-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-sm-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-md-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-lg-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list items.
 /// @group list
-$kendo-list-item-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
-$kendo-list-item-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-item-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
+$kendo-list-sm-item-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-list-md-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-lg-item-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Font size of list items.
 /// @group list
-$kendo-list-item-font-size-sm: var( --kendo-font-size, inherit ) !default;
-$kendo-list-item-font-size-md: var( --kendo-font-size, inherit ) !default;
-$kendo-list-item-font-size-lg: var( --kendo-font-size, inherit ) !default;
+$kendo-list-sm-item-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-md-item-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-lg-item-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// Line height of list items.
 /// @group list
-$kendo-list-item-line-height-sm: var( --kendo-line-height, normal ) !default;
-$kendo-list-item-line-height-md: var( --kendo-line-height, normal ) !default;
-$kendo-list-item-line-height-lg: var( --kendo-line-height, normal ) !default;
+$kendo-list-sm-item-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-list-md-item-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-list-lg-item-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Font size of list item group label.
 /// @group list
-$kendo-list-item-group-label-font-size-sm: var( --kendo-font-size-xs, inherit ) !default;
-$kendo-list-item-group-label-font-size-md: var( --kendo-font-size-xs, inherit ) !default;
-$kendo-list-item-group-label-font-size-lg: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-list-item-group-label-sm-font-size: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-list-item-group-label-md-font-size: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-list-item-group-label-lg-font-size: var( --kendo-font-size-xs, inherit ) !default;
 
 /// Horizontal padding of list group items.
 /// @group list
-$kendo-list-group-item-padding-x-sm: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-group-item-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-group-item-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-sm-group-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-md-group-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-lg-group-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list group items.
 /// @group list
-$kendo-list-group-item-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
-$kendo-list-group-item-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-group-item-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
+$kendo-list-sm-group-item-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-list-md-group-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-list-lg-group-item-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Horizontal padding of list item group label.
 /// @group list
-$kendo-list-item-group-label-padding-x-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-$kendo-list-item-group-label-padding-x-md: map.get( $kendo-spacing, 1 ) !default;
-$kendo-list-item-group-label-padding-x-lg: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-list-item-group-label-sm-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-list-item-group-label-md-padding-x: map.get( $kendo-spacing, 1 ) !default;
+$kendo-list-item-group-label-lg-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// Vertical padding of list item group label.
 /// @group list
-$kendo-list-item-group-label-padding-y-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-$kendo-list-item-group-label-padding-y-md: map.get( $kendo-spacing, 1 ) !default;
-$kendo-list-item-group-label-padding-y-lg: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-list-item-group-label-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-list-item-group-label-md-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-list-item-group-label-lg-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// Border width of list group items.
 /// @group list
@@ -105,15 +105,15 @@ $kendo-list-group-item-border-width: 1px 0 0 !default;
 
 /// Font size of list group items.
 /// @group list
-$kendo-list-group-item-font-size-sm: var( --kendo-font-size, inherit ) !default;
-$kendo-list-group-item-font-size-md: var( --kendo-font-size, inherit ) !default;
-$kendo-list-group-item-font-size-lg: var( --kendo-font-size, inherit ) !default;
+$kendo-list-sm-group-item-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-md-group-item-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-list-lg-group-item-font-size: var( --kendo-font-size, inherit ) !default;
 
 /// Line height of list group items.
 /// @group list
-$kendo-list-group-item-line-height-sm: var( --kendo-line-height, normal ) !default;
-$kendo-list-group-item-line-height-md: var( --kendo-line-height, normal ) !default;
-$kendo-list-group-item-line-height-lg: var( --kendo-line-height, normal ) !default;
+$kendo-list-sm-group-item-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-list-md-group-item-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-list-lg-group-item-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Font weight of list group item.
 /// @group list
@@ -126,61 +126,61 @@ $kendo-list-item-icon-text: get-theme-color-var( primary-100 ) !default;
 // Kendo list sizes
 $kendo-list-sizes: (
     sm: (
-        font-size: $kendo-list-font-size-sm,
-        line-height: $kendo-list-line-height-sm,
-        header-padding-x: $kendo-list-header-padding-x-sm,
-        header-padding-y: $kendo-list-header-padding-y-sm,
-        header-font-size: $kendo-list-header-font-size-sm,
-        header-line-height: $kendo-list-header-line-height-sm,
-        item-padding-x: $kendo-list-item-padding-x-sm,
-        item-padding-y: $kendo-list-item-padding-y-sm,
-        item-font-size: $kendo-list-item-font-size-sm,
-        item-line-height: $kendo-list-item-line-height-sm,
-        item-group-label-padding-x: $kendo-list-item-group-label-padding-x-sm,
-        item-group-label-padding-y: $kendo-list-item-group-label-padding-y-sm,
-        item-group-label-font-size: $kendo-list-item-group-label-font-size-sm,
-        group-item-padding-x: $kendo-list-group-item-padding-x-sm,
-        group-item-padding-y: $kendo-list-group-item-padding-y-sm,
-        group-item-font-size: $kendo-list-group-item-font-size-sm,
-        group-item-line-height: $kendo-list-group-item-line-height-sm
+        font-size: $kendo-list-sm-font-size,
+        line-height: $kendo-list-sm-line-height,
+        header-padding-x: $kendo-list-sm-header-padding-x,
+        header-padding-y: $kendo-list-sm-header-padding-y,
+        header-font-size: $kendo-list-sm-header-font-size,
+        header-line-height: $kendo-list-sm-header-line-height,
+        item-padding-x: $kendo-list-sm-item-padding-x,
+        item-padding-y: $kendo-list-sm-item-padding-y,
+        item-font-size: $kendo-list-sm-item-font-size,
+        item-line-height: $kendo-list-sm-item-line-height,
+        item-group-label-padding-x: $kendo-list-item-group-label-sm-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-sm-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-sm-font-size,
+        group-item-padding-x: $kendo-list-sm-group-item-padding-x,
+        group-item-padding-y: $kendo-list-sm-group-item-padding-y,
+        group-item-font-size: $kendo-list-sm-group-item-font-size,
+        group-item-line-height: $kendo-list-sm-group-item-line-height
     ),
     md: (
-        font-size: $kendo-list-font-size-md,
-        line-height: $kendo-list-line-height-md,
-        header-padding-x: $kendo-list-header-padding-x-md,
-        header-padding-y: $kendo-list-header-padding-y-md,
-        header-font-size: $kendo-list-header-font-size-md,
-        header-line-height: $kendo-list-header-line-height-md,
-        item-padding-x: $kendo-list-item-padding-x-md,
-        item-padding-y: $kendo-list-item-padding-y-md,
-        item-font-size: $kendo-list-item-font-size-md,
-        item-line-height: $kendo-list-item-line-height-md,
-        item-group-label-padding-x: $kendo-list-item-group-label-padding-x-md,
-        item-group-label-padding-y: $kendo-list-item-group-label-padding-y-md,
-        item-group-label-font-size: $kendo-list-item-group-label-font-size-md,
-        group-item-padding-x: $kendo-list-group-item-padding-x-md,
-        group-item-padding-y: $kendo-list-group-item-padding-y-md,
-        group-item-font-size: $kendo-list-group-item-font-size-md,
-        group-item-line-height: $kendo-list-group-item-line-height-md
+        font-size: $kendo-list-md-font-size,
+        line-height: $kendo-list-md-line-height,
+        header-padding-x: $kendo-list-md-header-padding-x,
+        header-padding-y: $kendo-list-md-header-padding-y,
+        header-font-size: $kendo-list-md-header-font-size,
+        header-line-height: $kendo-list-md-header-line-height,
+        item-padding-x: $kendo-list-md-item-padding-x,
+        item-padding-y: $kendo-list-md-item-padding-y,
+        item-font-size: $kendo-list-md-item-font-size,
+        item-line-height: $kendo-list-md-item-line-height,
+        item-group-label-padding-x: $kendo-list-item-group-label-md-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-md-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-md-font-size,
+        group-item-padding-x: $kendo-list-md-group-item-padding-x,
+        group-item-padding-y: $kendo-list-md-group-item-padding-y,
+        group-item-font-size: $kendo-list-md-group-item-font-size,
+        group-item-line-height: $kendo-list-md-group-item-line-height
     ),
     lg: (
-        font-size: $kendo-list-font-size-lg,
-        line-height: $kendo-list-line-height-lg,
-        header-padding-x: $kendo-list-header-padding-x-lg,
-        header-padding-y: $kendo-list-header-padding-y-lg,
-        header-font-size: $kendo-list-header-font-size-lg,
-        header-line-height: $kendo-list-header-line-height-lg,
-        item-padding-x: $kendo-list-item-padding-x-lg,
-        item-padding-y: $kendo-list-item-padding-y-lg,
-        item-font-size: $kendo-list-item-font-size-lg,
-        item-line-height: $kendo-list-item-line-height-lg,
-        item-group-label-padding-x: $kendo-list-item-group-label-padding-x-lg,
-        item-group-label-padding-y: $kendo-list-item-group-label-padding-y-lg,
-        item-group-label-font-size: $kendo-list-item-group-label-font-size-lg,
-        group-item-padding-x: $kendo-list-group-item-padding-x-lg,
-        group-item-padding-y: $kendo-list-group-item-padding-y-lg,
-        group-item-font-size: $kendo-list-group-item-font-size-lg,
-        group-item-line-height: $kendo-list-group-item-line-height-lg
+        font-size: $kendo-list-lg-font-size,
+        line-height: $kendo-list-lg-line-height,
+        header-padding-x: $kendo-list-lg-header-padding-x,
+        header-padding-y: $kendo-list-lg-header-padding-y,
+        header-font-size: $kendo-list-lg-header-font-size,
+        header-line-height: $kendo-list-lg-header-line-height,
+        item-padding-x: $kendo-list-lg-item-padding-x,
+        item-padding-y: $kendo-list-lg-item-padding-y,
+        item-font-size: $kendo-list-lg-item-font-size,
+        item-line-height: $kendo-list-lg-item-line-height,
+        item-group-label-padding-x: $kendo-list-item-group-label-lg-padding-x,
+        item-group-label-padding-y: $kendo-list-item-group-label-lg-padding-y,
+        item-group-label-font-size: $kendo-list-item-group-label-lg-font-size,
+        group-item-padding-x: $kendo-list-lg-group-item-padding-x,
+        group-item-padding-y: $kendo-list-lg-group-item-padding-y,
+        group-item-font-size: $kendo-list-lg-group-item-font-size,
+        group-item-line-height: $kendo-list-lg-group-item-line-height
     )
 ) !default;
 

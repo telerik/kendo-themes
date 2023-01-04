@@ -3,18 +3,18 @@
     // Image Editor
     .k-imageeditor {
         @include fill(
-            $imageeditor-text,
-            $imageeditor-bg,
-            $imageeditor-border
+            $kendo-image-editor-text,
+            $kendo-image-editor-bg,
+            $kendo-image-editor-border
         );
     }
 
     // Content
     .k-imageeditor-content {
         @include fill(
-            $imageeditor-content-text,
-            $imageeditor-content-bg,
-            $imageeditor-content-border
+            $kendo-image-editor-content-text,
+            $kendo-image-editor-content-bg,
+            $kendo-image-editor-content-border
         );
     }
 
@@ -26,25 +26,25 @@
     // Action Pane
     .k-imageeditor-action-pane {
         @include fill(
-            $imageeditor-action-pane-text,
-            $imageeditor-action-pane-bg,
-            $imageeditor-action-pane-border
+            $kendo-image-editor-action-pane-text,
+            $kendo-image-editor-action-pane-bg,
+            $kendo-image-editor-action-pane-border
         );
     }
 
     // Crop Tool
     .k-imageeditor-crop {
         @include fill(
-            $imageeditor-crop-text,
-            $imageeditor-crop-bg,
-            $imageeditor-crop-border
+            $kendo-image-editor-crop-text,
+            $kendo-image-editor-crop-bg,
+            $kendo-image-editor-crop-border
         );
     }
 
     // Crop Overlay
     .k-imageeditor-crop-overlay {
         @include fill (
-            $bg: $imageeditor-crop-overlay-bg
+            $bg: $kendo-image-editor-crop-overlay-bg
         );
     }
 

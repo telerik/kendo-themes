@@ -1,48 +1,48 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-imageeditor--theme() {
+@mixin kendo-image-editor--theme() {
 
     // Image Editor
     .k-imageeditor {
         @include fill(
-            var( --kendo-imageeditor-text, #{$kendo-imageeditor-text} ),
-            var( --kendo-imageeditor-bg, #{$kendo-imageeditor-bg} ),
-            var( --kendo-imageeditor-border, #{$kendo-imageeditor-border} )
+            var( --kendo-image-editor-text, #{$kendo-image-editor-text} ),
+            var( --kendo-image-editor-bg, #{$kendo-image-editor-bg} ),
+            var( --kendo-image-editor-border, #{$kendo-image-editor-border} )
         );
     }
 
     // Content
     .k-imageeditor-content {
         @include fill(
-            var( --kendo-imageeditor-content-text, #{$kendo-imageeditor-content-text} ),
-            var( --kendo-imageeditor-content-bg, #{$kendo-imageeditor-content-bg} ),
-            var( --kendo-imageeditor-content-border, #{$kendo-imageeditor-content-border} )
+            var( --kendo-image-editor-content-text, #{$kendo-image-editor-content-text} ),
+            var( --kendo-image-editor-content-bg, #{$kendo-image-editor-content-bg} ),
+            var( --kendo-image-editor-content-border, #{$kendo-image-editor-content-border} )
         );
     }
 
     // Action Pane
     .k-imageeditor-action-pane {
         @include fill(
-            var( --kendo-imageeditor-action-pane-text, #{$kendo-imageeditor-action-pane-text} ),
-            var( --kendo-imageeditor-action-pane-bg, #{$kendo-imageeditor-action-pane-bg} ),
-            var( --kendo-imageeditor-action-pane-border, #{$kendo-imageeditor-action-pane-border} )
+            var( --kendo-image-editor-action-pane-text, #{$kendo-image-editor-action-pane-text} ),
+            var( --kendo-image-editor-action-pane-bg, #{$kendo-image-editor-action-pane-bg} ),
+            var( --kendo-image-editor-action-pane-border, #{$kendo-image-editor-action-pane-border} )
         );
     }
 
     // Crop Tool
     .k-imageeditor-crop {
         @include fill(
-            var( --kendo-imageeditor-crop-text, #{$kendo-imageeditor-crop-text} ),
-            var( --kendo-imageeditor-crop-bg, #{$kendo-imageeditor-crop-bg} ),
-            var( --kendo-imageeditor-crop-border, #{$kendo-imageeditor-crop-border} )
+            var( --kendo-image-editor-crop-text, #{$kendo-image-editor-crop-text} ),
+            var( --kendo-image-editor-crop-bg, #{$kendo-image-editor-crop-bg} ),
+            var( --kendo-image-editor-crop-border, #{$kendo-image-editor-crop-border} )
         );
     }
 
     // Crop Overlay
     .k-imageeditor-crop-overlay {
         @include fill (
-            $bg: var( --kendo-imageeditor-crop-overlay-bg, #{$kendo-imageeditor-crop-overlay-bg} )
+            $bg: var( --kendo-image-editor-crop-overlay-bg, #{$kendo-image-editor-crop-overlay-bg} )
         );
     }
 

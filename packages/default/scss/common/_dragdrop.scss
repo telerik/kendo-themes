@@ -2,20 +2,20 @@
 
     // Layout
     .k-drag-clue {
-        @include border-radius( $drag-clue-border-radius );
-        padding: $drag-clue-padding-y $drag-clue-padding-x;
-        border-width: $drag-clue-border-width;
-        border-style: if( $drag-clue-border-width == null, null, solid );
+        @include border-radius( $kendo-drag-hint-border-radius );
+        padding: $kendo-drag-hint-padding-y $kendo-drag-hint-padding-x;
+        border-width: $kendo-drag-hint-border-width;
+        border-style: if( $kendo-drag-hint-border-width == null, null, solid );
         box-sizing: border-box;
-        font-size: $drag-clue-font-size;
-        font-family: $drag-clue-font-family;
-        line-height: $drag-clue-line-height;
+        font-size: $kendo-drag-hint-font-size;
+        font-family: $kendo-drag-hint-font-family;
+        line-height: $kendo-drag-hint-line-height;
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
         white-space: nowrap;
-        opacity: $drag-clue-opacity;
+        opacity: $kendo-drag-hint-opacity;
         overflow: hidden;
         position: absolute;
         z-index: 20000;
@@ -31,12 +31,12 @@
     // Theme
     .k-drag-clue {
         @include fill(
-            $drag-clue-text,
-            $drag-clue-bg,
-            $drag-clue-border,
-            $drag-clue-gradient
+            $kendo-drag-hint-text,
+            $kendo-drag-hint-bg,
+            $kendo-drag-hint-border,
+            $kendo-drag-hint-gradient
         );
-        @include box-shadow( $drag-clue-shadow );
+        @include box-shadow( $kendo-drag-hint-shadow );
     }
 
 }

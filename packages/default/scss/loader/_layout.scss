@@ -25,27 +25,27 @@
 
     // Loader sizes
     .k-loader-sm {
-        padding: $kendo-loader-padding-sm;
+        padding: $kendo-loader-sm-padding;
 
         .k-loader-segment {
-            width: $kendo-loader-segment-size-sm;
-            height: $kendo-loader-segment-size-sm;
+            width: $kendo-loader-sm-segment-size;
+            height: $kendo-loader-sm-segment-size;
         }
     }
     .k-loader-md {
-        padding: $kendo-loader-padding-md;
+        padding: $kendo-loader-md-padding;
 
         .k-loader-segment {
-            width: $kendo-loader-segment-size-md;
-            height: $kendo-loader-segment-size-md;
+            width: $kendo-loader-md-segment-size;
+            height: $kendo-loader-md-segment-size;
         }
     }
     .k-loader-lg {
-        padding: $kendo-loader-padding-lg;
+        padding: $kendo-loader-lg-padding;
 
         .k-loader-segment {
-            width: $kendo-loader-segment-size-lg;
-            height: $kendo-loader-segment-size-lg;
+            width: $kendo-loader-lg-segment-size;
+            height: $kendo-loader-lg-segment-size;
         }
     }
 
@@ -86,22 +86,22 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                width: ( $kendo-loader-segment-size-sm * 3 );
-                height: ( $kendo-loader-segment-size-sm * 1.5 );
+                width: ( $kendo-loader-sm-segment-size * 3 );
+                height: ( $kendo-loader-sm-segment-size * 1.5 );
             }
         }
 
         &.k-loader-md {
             .k-loader-canvas {
-                width: ( $kendo-loader-segment-size-md * 3 );
-                height: ( $kendo-loader-segment-size-md * 1.5 );
+                width: ( $kendo-loader-md-segment-size * 3 );
+                height: ( $kendo-loader-md-segment-size * 1.5 );
             }
         }
 
         &.k-loader-lg {
             .k-loader-canvas {
-                width: ( $kendo-loader-segment-size-lg * 3 );
-                height: ( $kendo-loader-segment-size-lg * 1.5 );
+                width: ( $kendo-loader-lg-segment-size * 3 );
+                height: ( $kendo-loader-lg-segment-size * 1.5 );
             }
         }
     }
@@ -169,25 +169,25 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                margin: k-math-div( $kendo-loader-segment-size-sm, 2 );
-                width: calc( #{$kendo-loader-spinner-3-width-sm} - #{$kendo-loader-segment-size-sm} );
-                height: calc( #{$kendo-loader-spinner-3-height-sm} - #{$kendo-loader-segment-size-sm} );
+                margin: k-math-div( $kendo-loader-sm-segment-size, 2 );
+                width: calc( #{$kendo-loader-sm-spinner-3-width} - #{$kendo-loader-sm-segment-size} );
+                height: calc( #{$kendo-loader-sm-spinner-3-height} - #{$kendo-loader-sm-segment-size} );
             }
         }
 
         &.k-loader-md {
             .k-loader-canvas {
-                margin: k-math-div( $kendo-loader-segment-size-md, 2 );
-                width: calc( #{$kendo-loader-spinner-3-width-md} - #{$kendo-loader-segment-size-md} );
-                height: calc( #{$kendo-loader-spinner-3-height-md} - #{$kendo-loader-segment-size-md} );
+                margin: k-math-div( $kendo-loader-md-segment-size, 2 );
+                width: calc( #{$kendo-loader-md-spinner-3-width} - #{$kendo-loader-md-segment-size} );
+                height: calc( #{$kendo-loader-md-spinner-3-height} - #{$kendo-loader-md-segment-size} );
             }
         }
 
         &.k-loader-lg {
             .k-loader-canvas {
-                margin: k-math-div( $kendo-loader-segment-size-lg, 2 );
-                width: calc( #{$kendo-loader-spinner-3-width-lg} - #{$kendo-loader-segment-size-lg} );
-                height: calc( #{$kendo-loader-spinner-3-height-lg} - #{$kendo-loader-segment-size-lg} );
+                margin: k-math-div( $kendo-loader-lg-segment-size, 2 );
+                width: calc( #{$kendo-loader-lg-spinner-3-width} - #{$kendo-loader-lg-segment-size} );
+                height: calc( #{$kendo-loader-lg-spinner-3-height} - #{$kendo-loader-lg-segment-size} );
             }
         }
     }
@@ -347,22 +347,22 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                width: $kendo-loader-spinner-4-width-sm;
-                height: $kendo-loader-spinner-4-height-sm;
+                width: $kendo-loader-sm-spinner-4-width;
+                height: $kendo-loader-sm-spinner-4-height;
             }
         }
 
         &.k-loader-md {
             .k-loader-canvas {
-                width: $kendo-loader-spinner-4-width-md;
-                height: $kendo-loader-spinner-4-height-md;
+                width: $kendo-loader-md-spinner-4-width;
+                height: $kendo-loader-md-spinner-4-height;
             }
         }
 
         &.k-loader-lg {
             .k-loader-canvas {
-                width: $kendo-loader-spinner-4-width-lg;
-                height: $kendo-loader-spinner-4-height-lg;
+                width: $kendo-loader-lg-spinner-4-width;
+                height: $kendo-loader-lg-spinner-4-height;
             }
         }
     }
@@ -397,7 +397,7 @@
 
     // TODO: use k-overlay as a base class in rendering
     .k-loader-container-overlay {
-        opacity: $overlay-opacity;
+        opacity: $kendo-overlay-opacity;
     }
 
     .k-loader-container-inner {
@@ -416,32 +416,32 @@
     // Loader Container Sizes
     .k-loader-container-sm {
         .k-loader-container-inner {
-            padding: $kendo-loader-container-padding-sm;
-            gap: $kendo-loader-container-gap-sm;
+            padding: $kendo-loader-sm-container-padding;
+            gap: $kendo-loader-sm-container-gap;
         }
 
         .k-loader-container-label {
-            font-size: $kendo-loader-container-font-size-sm;
+            font-size: $kendo-loader-sm-container-font-size;
         }
     }
     .k-loader-container-md {
         .k-loader-container-inner {
-            padding: $kendo-loader-container-padding-md;
-            gap: $kendo-loader-container-gap-md;
+            padding: $kendo-loader-md-container-padding;
+            gap: $kendo-loader-md-container-gap;
         }
 
         .k-loader-container-label {
-            font-size: $kendo-loader-container-font-size-md;
+            font-size: $kendo-loader-md-container-font-size;
         }
     }
     .k-loader-container-lg {
         .k-loader-container-inner {
-            padding: $kendo-loader-container-padding-lg;
-            gap: $kendo-loader-container-gap-lg;
+            padding: $kendo-loader-lg-container-padding;
+            gap: $kendo-loader-lg-container-gap;
         }
 
         .k-loader-container-label {
-            font-size: $kendo-loader-container-font-size-lg;
+            font-size: $kendo-loader-lg-container-font-size;
         }
     }
 

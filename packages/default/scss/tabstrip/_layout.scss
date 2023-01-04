@@ -1,9 +1,9 @@
 @include exports("tabstrip/layout") {
 
     .k-tabstrip-wrapper {
-        padding: $tabstrip-wrapper-padding-y $tabstrip-wrapper-padding-x;
+        padding: $kendo-tabstrip-wrapper-padding-y $kendo-tabstrip-wrapper-padding-x;
         box-sizing: border-box;
-        border-width: $tabstrip-wrapper-border-width;
+        border-width: $kendo-tabstrip-wrapper-border-width;
         border-style: solid;
         display: flex;
         flex-direction: column;
@@ -14,9 +14,9 @@
         border-color: transparent;
         box-sizing: border-box;
         outline: 0;
-        font-family: $tabstrip-font-family;
-        font-size: $tabstrip-font-size;
-        line-height: $tabstrip-line-height;
+        font-family: $kendo-tabstrip-font-family;
+        font-size: $kendo-tabstrip-font-size;
+        line-height: $kendo-tabstrip-line-height;
         color: inherit;
         background-color: transparent;
         display: flex;
@@ -43,7 +43,7 @@
         display: flex;
         flex-flow: row wrap;
         flex: 1 1 auto;
-        gap: $tabstrip-item-gap;
+        gap: $kendo-tabstrip-item-gap;
 
         *,
         *::before,
@@ -54,7 +54,7 @@
         .k-item {
             margin: 0;
             padding: 0;
-            border: $tabstrip-item-border-width solid transparent;
+            border: $kendo-tabstrip-item-border-width solid transparent;
             position: relative;
             flex-shrink: 0;
             display: flex;
@@ -69,7 +69,7 @@
         }
 
         .k-link {
-            padding: $tabstrip-item-padding-y $tabstrip-item-padding-x;
+            padding: $kendo-tabstrip-item-padding-y $kendo-tabstrip-item-padding-x;
             color: inherit;
             cursor: pointer;
             display: inline-flex;
@@ -84,9 +84,9 @@
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
         margin: 0 !important; // sass-lint:disable-line no-important
-        padding: $tabstrip-content-padding-y $tabstrip-content-padding-x;
+        padding: $kendo-tabstrip-content-padding-y $kendo-tabstrip-content-padding-x;
         box-sizing: border-box;
-        border-width: $tabstrip-content-border-width;
+        border-width: $kendo-tabstrip-content-border-width;
         border-style: solid;
         border-color: inherit;
         display: none;
@@ -170,11 +170,11 @@
     // Tabstrip position
     .k-tabstrip-top {
         > .k-tabstrip-items-wrapper {
-            border-bottom-width: $tabstrip-border-width;
+            border-bottom-width: $kendo-tabstrip-border-width;
 
             .k-item {
-                @include border-top-radius( $tabstrip-item-border-radius );
-                margin-bottom: -$tabstrip-border-width;
+                @include border-top-radius( $kendo-tabstrip-item-border-radius );
+                margin-bottom: -$kendo-tabstrip-border-width;
             }
 
             .k-item.k-active {
@@ -184,17 +184,17 @@
 
         > .k-content,
         > .k-tabstrip-content {
-            @include border-bottom-radius( $tabstrip-item-border-radius );
+            @include border-bottom-radius( $kendo-tabstrip-item-border-radius );
             border-top-width: 0 !important; // sass-lint:disable-line no-important
         }
     }
     .k-tabstrip-bottom {
         > .k-tabstrip-items-wrapper {
-            border-top-width: $tabstrip-border-width;
+            border-top-width: $kendo-tabstrip-border-width;
 
             .k-item {
-                @include border-bottom-radius( $tabstrip-item-border-radius );
-                margin-top: -$tabstrip-border-width;
+                @include border-bottom-radius( $kendo-tabstrip-item-border-radius );
+                margin-top: -$kendo-tabstrip-border-width;
             }
 
             .k-item.k-active {
@@ -204,7 +204,7 @@
 
         > .k-content,
         > .k-tabstrip-content {
-            @include border-top-radius( $tabstrip-item-border-radius );
+            @include border-top-radius( $kendo-tabstrip-item-border-radius );
             border-bottom-width: 0 !important; // sass-lint:disable-line no-important
         }
     }
@@ -212,15 +212,15 @@
         flex-direction: row;
 
         > .k-tabstrip-items-wrapper {
-            border-right-width: $tabstrip-border-width;
+            border-right-width: $kendo-tabstrip-border-width;
 
             > .k-tabstrip-items {
                 flex-direction: column;
             }
 
             .k-item {
-                @include border-left-radius( $tabstrip-item-border-radius );
-                margin-right: -$tabstrip-border-width;
+                @include border-left-radius( $kendo-tabstrip-item-border-radius );
+                margin-right: -$kendo-tabstrip-border-width;
             }
 
             .k-item.k-active {
@@ -230,7 +230,7 @@
 
         > .k-content,
         > .k-tabstrip-content {
-            @include border-right-radius( $tabstrip-item-border-radius );
+            @include border-right-radius( $kendo-tabstrip-item-border-radius );
             border-left-width: 0 !important; // sass-lint:disable-line no-important
         }
 
@@ -239,15 +239,15 @@
         flex-direction: row-reverse;
 
         > .k-tabstrip-items-wrapper {
-            border-left-width: $tabstrip-border-width;
+            border-left-width: $kendo-tabstrip-border-width;
 
             > .k-tabstrip-items {
                 flex-direction: column;
             }
 
             .k-item {
-                @include border-right-radius( $tabstrip-item-border-radius );
-                margin-left: -$tabstrip-border-width;
+                @include border-right-radius( $kendo-tabstrip-item-border-radius );
+                margin-left: -$kendo-tabstrip-border-width;
             }
 
             .k-item.k-active {
@@ -257,7 +257,7 @@
 
         > .k-content,
         > .k-tabstrip-content {
-            @include border-left-radius( $tabstrip-item-border-radius );
+            @include border-left-radius( $kendo-tabstrip-item-border-radius );
             border-right-width: 0;
         }
     }
@@ -282,7 +282,7 @@
 
 
     // Selected indicator
-    @if ($tabstrip-indicator-size) {
+    @if ($kendo-tabstrip-indicator-size) {
 
         .k-tabstrip-items-wrapper {
 
@@ -301,16 +301,16 @@
 
                 // Variants
                 .k-tabstrip-top > & {
-                    border-bottom-width: $tabstrip-indicator-size;
+                    border-bottom-width: $kendo-tabstrip-indicator-size;
                 }
                 .k-tabstrip-bottom > & {
-                    border-top-width: $tabstrip-indicator-size;
+                    border-top-width: $kendo-tabstrip-indicator-size;
                 }
                 .k-tabstrip-left > & {
-                    border-right-width: $tabstrip-indicator-size;
+                    border-right-width: $kendo-tabstrip-indicator-size;
                 }
                 .k-tabstrip-right > & {
-                    border-left-width: $tabstrip-indicator-size;
+                    border-left-width: $kendo-tabstrip-indicator-size;
                 }
             }
             .k-item.k-active::after {

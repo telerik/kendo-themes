@@ -319,7 +319,7 @@
     // Scheduler view header
     .k-scheduler-header,
     .k-scheduler-view-header {
-        padding-inline-end: var( --kendo-scrollbar-width, #{$default-scrollbar-width});
+        padding-inline-end: var( --kendo-scrollbar-width, #{$kendo-scrollbar-width});
     }
 
     .k-scheduler-header th {

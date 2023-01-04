@@ -2,12 +2,12 @@
 
     // File Manager
     .k-filemanager {
-        border-width: $filemanager-border-width;
+        border-width: $kendo-file-manager-border-width;
         border-style: solid;
         box-sizing: border-box;
-        font-family: $filemanager-font-family;
-        font-size: $filemanager-font-size;
-        line-height: $filemanager-line-height;
+        font-family: $kendo-file-manager-font-family;
+        font-size: $kendo-file-manager-font-size;
+        line-height: $kendo-file-manager-line-height;
         display: flex;
         flex-flow: column nowrap;
     }
@@ -19,7 +19,7 @@
     }
     .k-filemanager-toolbar {
         border-width: 0;
-        border-bottom-width: $filemanager-toolbar-border-width;
+        border-bottom-width: $kendo-file-manager-toolbar-border-width;
         border-color: inherit;
         flex-shrink: 0;
     }
@@ -39,10 +39,10 @@
 
     // Navigation
     .k-filemanager-navigation {
-        padding: $filemanager-navigation-padding-y $filemanager-navigation-padding-x;
-        width: $filemanager-navigation-width;
+        padding: $kendo-file-manager-navigation-padding-y $kendo-file-manager-navigation-padding-x;
+        width: $kendo-file-manager-navigation-width;
         border-width: 0;
-        border-right-width: $filemanager-navigation-border-width;
+        border-right-width: $kendo-file-manager-navigation-border-width;
         border-style: solid;
         border-color: inherit;
         box-sizing: border-box;
@@ -72,8 +72,8 @@
     // Breadcrumb
     .k-filemanager-breadcrumb {
         border-width: 0;
-        border-bottom-width: $filemanager-breadcrumb-border-width;
-        padding: $filemanager-breadcrumb-padding-y $filemanager-breadcrumb-padding-x;
+        border-bottom-width: $kendo-file-manager-breadcrumb-border-width;
+        padding: $kendo-file-manager-breadcrumb-padding-y $kendo-file-manager-breadcrumb-padding-x;
         flex-shrink: 0;
     }
 
@@ -85,9 +85,9 @@
 
         // Listview item
         .k-listview-item {
-            padding: $filemanager-listview-item-padding-y $filemanager-listview-item-padding-x;
-            width: $filemanager-listview-item-width;
-            height: $filemanager-listview-item-height;
+            padding: $kendo-file-manager-listview-item-padding-y $kendo-file-manager-listview-item-padding-x;
+            width: $kendo-file-manager-listview-item-width;
+            height: $kendo-file-manager-listview-item-height;
             text-align: center;
         }
 
@@ -100,12 +100,12 @@
 
         // File icon
         .k-file-icon {
-            font-size: $filemanager-listview-item-icon-size;
+            font-size: $kendo-file-manager-listview-item-icon-size;
         }
 
         // File name
         .k-file-name {
-            margin-top: k-math-div( $filemanager-spacer, 2 );
+            margin-top: k-math-div( $kendo-file-manager-spacer, 2 );
             display: block;
             text-align: center;
             overflow: hidden;
@@ -147,11 +147,11 @@
 
     // Filemanager preview
     .k-filemanager-preview {
-        padding: ($filemanager-preview-padding-y * 3) $filemanager-preview-padding-x $filemanager-preview-padding-y;
-        width: $filemanager-preview-width;
-        min-height: calc( #{$filemanager-preview-padding-y * 4} + #{$filemanager-preview-icon-size * 2} + #{$filemanager-preview-spacing * 3} );
+        padding: ($kendo-file-manager-preview-padding-y * 3) $kendo-file-manager-preview-padding-x $kendo-file-manager-preview-padding-y;
+        width: $kendo-file-manager-preview-width;
+        min-height: calc( #{$kendo-file-manager-preview-padding-y * 4} + #{$kendo-file-manager-preview-icon-size * 2} + #{$kendo-file-manager-preview-spacing * 3} );
         border-width: 0;
-        border-left-width: $filemanager-preview-border-width;
+        border-left-width: $kendo-file-manager-preview-border-width;
         border-style: solid;
         border-color: inherit;
         box-sizing: border-box;
@@ -168,12 +168,12 @@
 
         // File icon
         .k-file-icon {
-            font-size: $filemanager-preview-icon-size;
+            font-size: $kendo-file-manager-preview-icon-size;
         }
 
         // File name
         .k-file-name {
-            margin-top: $filemanager-preview-spacing;
+            margin-top: $kendo-file-manager-preview-spacing;
             display: block;
         }
         .k-no-file-selected {}
@@ -182,12 +182,12 @@
 
         // File Meta
         .k-file-meta {
-            margin: $filemanager-preview-spacing 0 0;
+            margin: $kendo-file-manager-preview-spacing 0 0;
             box-sizing: border-box;
             text-align: start;
             display: flex;
             flex-flow: row wrap;
-            grid-column-gap: $filemanager-preview-column-gap;
+            grid-column-gap: $kendo-file-manager-preview-column-gap;
         }
         .k-file-meta-label {
             display: inline-block;
@@ -199,7 +199,7 @@
             text-transform: capitalize;
         }
         .k-line-break {
-            margin: $filemanager-preview-spacing 0 0;
+            margin: $kendo-file-manager-preview-spacing 0 0;
             width: 100%;
             flex: 1 1 100%;
             flex-flow: row nowrap;

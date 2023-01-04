@@ -114,12 +114,12 @@
         flex-direction: column;
 
         > .k-menu-item > .k-menu-link {
-            padding-inline-end: var( --kendo-menu-popup-item-padding-end-md, #{$kendo-menu-popup-item-padding-end-md} );
+            padding-inline-end: var( --kendo-menu-popup-md-item-padding-end, #{$kendo-menu-popup-md-item-padding-end} );
         }
 
         > .k-menu-item > .k-menu-link > .k-menu-expand-arrow {
-            margin-inline-start: var( --kendo-menu-popup-item-icon-margin-start-md, #{$kendo-menu-popup-item-icon-margin-start-md} );
-            margin-inline-end: var( --kendo-menu-popup-item-icon-margin-end-md, #{$kendo-menu-popup-item-icon-margin-end-md} );
+            margin-inline-start: var( --kendo-menu-popup-item-icon-md-margin-start, #{$kendo-menu-popup-item-icon-md-margin-start} );
+            margin-inline-end: var( --kendo-menu-popup-item-icon-md-margin-end, #{$kendo-menu-popup-item-icon-md-margin-end} );
         }
 
         > .k-menu-item + .k-menu-item {

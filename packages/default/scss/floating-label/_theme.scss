@@ -5,15 +5,15 @@
 
         > .k-label {
             @include fill(
-                $color: $floating-label-text,
-                $bg: $floating-label-bg
+                $color: $kendo-floating-label-text,
+                $bg: $kendo-floating-label-bg
             );
         }
 
         &.k-focus > .k-label {
             @include fill(
-                $color: $floating-label-focus-text,
-                $bg: $floating-label-focus-bg
+                $color: $kendo-floating-label-focus-text,
+                $bg: $kendo-floating-label-focus-bg
             );
         }
 

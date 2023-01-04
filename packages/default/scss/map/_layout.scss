@@ -4,11 +4,11 @@
     .k-map {
         height: 600px;
         box-sizing: border-box;
-        border-width: $map-border-width;
+        border-width: $kendo-map-border-width;
         border-style: solid;
-        font-size: $map-font-size;
-        line-height: $map-line-height;
-        font-family: $map-font-family;
+        font-size: $kendo-map-font-size;
+        line-height: $kendo-map-line-height;
+        font-family: $kendo-map-font-family;
 
         *,
         *::before,
@@ -37,7 +37,7 @@
         // Marker
         .k-marker {
             transform: translate(-50%, -100%);
-            font-size: $map-marker-size;
+            font-size: $kendo-map-marker-size;
             cursor: pointer;
             position: absolute;
             overflow: visible;
@@ -46,9 +46,9 @@
 
         // Attribution
         .k-attribution {
-            padding: $map-attribution-padding-y $map-attribution-padding-x;
+            padding: $kendo-map-attribution-padding-y $kendo-map-attribution-padding-x;
             border-width: 0;
-            font-size: $map-attribution-font-size;
+            font-size: $kendo-map-attribution-font-size;
             z-index: 1000;
         }
 
@@ -66,10 +66,10 @@
 
     // Navigator
     .k-navigator {
-        margin: $map-navigator-margin;
-        width: $map-navigator-width;
-        height: $map-navigator-width;
-        border-width: $map-navigator-border-width;
+        margin: $kendo-map-navigator-margin;
+        width: $kendo-map-navigator-width;
+        height: $kendo-map-navigator-width;
+        border-width: $kendo-map-navigator-border-width;
         border-style: solid;
         box-sizing: border-box;
         border-radius: 50%;
@@ -95,25 +95,25 @@
         .k-navigator-n,
         .k-navigator-up {
             transform: translateX(-50%);
-            top: $map-navigator-padding;
+            top: $kendo-map-navigator-padding;
             left: 50%;
         }
         .k-navigator-e,
         .k-navigator-right {
             transform: translateY(-50%);
-            right: $map-navigator-padding;
+            right: $kendo-map-navigator-padding;
             top: 50%;
         }
         .k-navigator-s,
         .k-navigator-down {
             transform: translateX(-50%);
-            bottom: $map-navigator-padding;
+            bottom: $kendo-map-navigator-padding;
             left: 50%;
         }
         .k-navigator-w,
         .k-navigator-left {
             transform: translateY(-50%);
-            left: $map-navigator-padding;
+            left: $kendo-map-navigator-padding;
             top: 50%;
         }
     }

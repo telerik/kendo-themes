@@ -4,13 +4,13 @@
     .k-calendar {
         inline-size: var( --INTERNAL--kendo-calendar-width, min-content );
         block-size: var( --INTERNAL--kendo-calendar-height, min-content );
-        border-width: $calendar-border-width;
+        border-width: $kendo-calendar-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $calendar-font-family;
-        font-size: $calendar-font-size;
-        line-height: $calendar-line-height;
+        font-family: $kendo-calendar-font-family;
+        font-size: $kendo-calendar-font-size;
+        line-height: $kendo-calendar-line-height;
         position: relative;
         overflow: hidden;
         display: inline-flex;
@@ -45,14 +45,14 @@
     .k-calendar-caption.k-calendar-th,
     .k-calendar .k-meta-header,
     .k-calendar .k-month-header {
-        padding: $calendar-caption-padding-y $calendar-caption-padding-x;
-        height: $calendar-caption-height;
+        padding: $kendo-calendar-caption-padding-y $kendo-calendar-caption-padding-x;
+        height: $kendo-calendar-caption-height;
         box-sizing: border-box;
-        font-size: $calendar-caption-font-size;
-        line-height: $calendar-caption-line-height;
+        font-size: $kendo-calendar-caption-font-size;
+        line-height: $kendo-calendar-caption-line-height;
         text-transform: none;
         text-align: left;
-        font-weight: $calendar-caption-font-weight;
+        font-weight: $kendo-calendar-caption-font-weight;
         cursor: default;
     }
 
@@ -69,16 +69,16 @@
         cursor: default;
     }
     .k-calendar-th {
-        padding: $calendar-header-cell-padding-y $calendar-header-cell-padding-x;
-        width: $calendar-header-cell-width;
-        height: $calendar-header-cell-height;
-        font-size: $calendar-header-cell-font-size;
-        line-height: $calendar-header-cell-line-height;
+        padding: $kendo-calendar-header-cell-padding-y $kendo-calendar-header-cell-padding-x;
+        width: $kendo-calendar-header-cell-width;
+        height: $kendo-calendar-header-cell-height;
+        font-size: $kendo-calendar-header-cell-font-size;
+        line-height: $kendo-calendar-header-cell-line-height;
         text-transform: uppercase;
-        opacity: $calendar-header-cell-opacity;
+        opacity: $kendo-calendar-header-cell-opacity;
     }
     .k-calendar-td {
-        @include border-radius( $calendar-cell-border-radius );
+        @include border-radius( $kendo-calendar-cell-border-radius );
         inline-size: var( --INTERNAL--kendo-calendar-cell-size, min-content );
         block-size: var( --INTERNAL--kendo-calendar-cell-size, min-content );
         border-color: transparent;
@@ -88,10 +88,10 @@
     // Calendar cell inner
     // Remove .k-calendar once we remove k-link
     .k-calendar .k-calendar-cell-inner {
-        @include border-radius( $calendar-cell-border-radius );
-        padding: $calendar-cell-padding-y $calendar-cell-padding-x;
-        padding-inline: var( --INTERNAL--kendo-calendar-cell-padding-x, #{$calendar-cell-padding-x} );
-        padding-block: var( --INTERNAL--kendo-calendar-cell-padding-y, #{$calendar-cell-padding-y} );
+        @include border-radius( $kendo-calendar-cell-border-radius );
+        padding: $kendo-calendar-cell-padding-y $kendo-calendar-cell-padding-x;
+        padding-inline: var( --INTERNAL--kendo-calendar-cell-padding-x, #{$kendo-calendar-cell-padding-x} );
+        padding-block: var( --INTERNAL--kendo-calendar-cell-padding-y, #{$kendo-calendar-cell-padding-y} );
         width: 100%;
         height: 100%;
         box-sizing: border-box;
@@ -107,12 +107,12 @@
 
     // Calendar header
     .k-calendar .k-header {
-        padding: $calendar-header-padding-y $calendar-header-padding-x;
-        border-bottom-width: $calendar-header-border-width;
+        padding: $kendo-calendar-header-padding-y $kendo-calendar-header-padding-x;
+        border-bottom-width: $kendo-calendar-header-border-width;
         border-bottom-style: solid;
         display: flex;
         flex-flow: row nowrap;
-        gap: $calendar-nav-gap;
+        gap: $kendo-calendar-nav-gap;
         align-items: center;
         position: relative;
         z-index: 2;
@@ -121,8 +121,8 @@
 
     // Calendar header
     .k-calendar-header {
-        padding: $calendar-header-padding-y $calendar-header-padding-x;
-        min-width: ($calendar-cell-size * 8);
+        padding: $kendo-calendar-header-padding-y $kendo-calendar-header-padding-x;
+        min-width: ($kendo-calendar-cell-size * 8);
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -138,7 +138,7 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            gap: $calendar-nav-gap;
+            gap: $kendo-calendar-nav-gap;
         }
     }
 
@@ -146,7 +146,7 @@
     // Calendar footer
     .k-calendar-footer,
     .k-calendar .k-footer {
-        padding: $calendar-footer-padding-y $calendar-footer-padding-x;
+        padding: $kendo-calendar-footer-padding-y $kendo-calendar-footer-padding-x;
         text-align: center;
         clear: both;
     }
@@ -155,13 +155,13 @@
     // Calendar view wrapper
     .k-calendar-view {
         margin: auto;
-        padding: 0 $calendar-header-padding-x;
+        padding: 0 $kendo-calendar-header-padding-x;
         // setting width / height prevents layout changes in meta views
-        width: $calendar-view-width;
-        inline-size: var( --INTERNAL--kendo-calendar-view-width, #{$calendar-view-width});
-        min-height: $calendar-view-height;
+        width: $kendo-calendar-view-width;
+        inline-size: var( --INTERNAL--kendo-calendar-view-width, #{$kendo-calendar-view-width});
+        min-height: $kendo-calendar-view-height;
         box-sizing: content-box;
-        gap: $calendar-view-gap;
+        gap: $kendo-calendar-view-gap;
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -171,7 +171,7 @@
     // Month view
     .k-month-calendar,
     .k-calendar-monthview {
-        $_month-cell-size: $calendar-cell-size;
+        $_month-cell-size: $kendo-calendar-cell-size;
 
         .k-calendar-td {
             width: $_month-cell-size;
@@ -185,7 +185,7 @@
     // Year view
     .k-year-calendar,
     .k-calendar-yearview {
-        $_year-cell-size: ( 2 * $calendar-cell-size );
+        $_year-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
             width: $_year-cell-size;
@@ -199,7 +199,7 @@
     // Decade view
     .k-decade-calendar,
     .k-calendar-decadeview {
-        $_decade-cell-size: ( 2 * $calendar-cell-size );
+        $_decade-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
             width: $_decade-cell-size;
@@ -213,7 +213,7 @@
     // Century view
     .k-century-calendar,
     .k-calendar-centuryview {
-        $_century-cell-size: ( 2 * $calendar-cell-size );
+        $_century-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
             width: $_century-cell-size;
@@ -326,8 +326,8 @@
         flex-flow: row nowrap;
 
         .k-calendar-view {
-            padding: $infinite-calendar-view-padding-y $infinite-calendar-view-padding-x;
-            height: $infinite-calendar-view-height;
+            padding: $kendo-infinite-calendar-view-padding-y $kendo-infinite-calendar-view-padding-x;
+            height: $kendo-infinite-calendar-view-height;
             flex: 0 0 auto;
             display: flex;
             flex-flow: column nowrap;
@@ -348,14 +348,14 @@
                 z-index: 1;
                 width: 150%;
                 left: -25%;
-                box-shadow: 0 0 $calendar-cell-size k-math-div( $calendar-cell-size, 2 ) $calendar-bg;
+                box-shadow: 0 0 $kendo-calendar-cell-size k-math-div( $kendo-calendar-cell-size, 2 ) $kendo-calendar-bg;
             }
         }
 
         .k-calendar-header {
-            margin-left: -$infinite-calendar-view-padding-x;
-            margin-right: -$infinite-calendar-view-padding-x;
-            padding: $infinite-calendar-header-padding-y $infinite-calendar-header-padding-x;
+            margin-left: -$kendo-infinite-calendar-view-padding-x;
+            margin-right: -$kendo-infinite-calendar-view-padding-x;
+            padding: $kendo-infinite-calendar-header-padding-y $kendo-infinite-calendar-header-padding-x;
             width: auto;
             min-width: 0;
         }
@@ -368,7 +368,7 @@
 
     // Calendar navigation
     .k-calendar-navigation {
-        width: $calendar-navigation-width;
+        width: $kendo-calendar-navigation-width;
         text-align: center;
         flex: 0 0 auto;
         display: block;
@@ -386,8 +386,8 @@
             z-index: 1;
             width: 200%;
             left: -50%;
-            $shadow-size: 3 * $calendar-navigation-item-height;
-            box-shadow: 0 0 $shadow-size k-math-div( $shadow-size, 2 ) $calendar-navigation-bg;
+            $shadow-size: 3 * $kendo-calendar-navigation-item-height;
+            box-shadow: 0 0 $shadow-size k-math-div( $shadow-size, 2 ) $kendo-calendar-navigation-bg;
         }
 
         &::before { top: 0; }
@@ -404,12 +404,12 @@
             right: 0;
 
             ul {
-                width: $calendar-navigation-width;
+                width: $kendo-calendar-navigation-width;
             }
 
             li {
-                height: $calendar-navigation-item-height;
-                line-height: $calendar-navigation-item-height;
+                height: $kendo-calendar-navigation-item-height;
+                line-height: $kendo-calendar-navigation-item-height;
                 cursor: pointer;
                 padding: 0 1em;
                 overflow: hidden;
@@ -426,7 +426,7 @@
             width: 100%;
             border-width: 1px 0;
             border-style: solid;
-            height: $calendar-navigation-item-height;
+            height: $kendo-calendar-navigation-item-height;
             box-sizing: border-box;
             position: absolute;
             top: 50%;

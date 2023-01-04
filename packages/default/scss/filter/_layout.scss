@@ -22,26 +22,26 @@
 
         .k-filter-container,
         .k-filter-preview {
-            margin-bottom: $filter-bottom-margin;
+            margin-bottom: $kendo-filter-bottom-margin;
         }
 
         .k-filter-lines,
         .k-filter-item {
-            padding-left: $filter-padding-x;
+            padding-left: $kendo-filter-padding-x;
         }
 
         .k-filter-toolbar {
             display: inline-flex;
             position: relative;
-            padding: $filter-padding-y 0;
+            padding: $kendo-filter-padding-y 0;
 
             &::before {
                 content: "";
                 position: absolute;
-                width: $filter-padding-x;
-                height: $filter-line-size;
+                width: $kendo-filter-padding-x;
+                height: $kendo-filter-line-size;
                 top: 50%;
-                left: -$filter-padding-x;
+                left: -$kendo-filter-padding-x;
             }
 
             .k-toolbar {
@@ -49,7 +49,7 @@
             }
         }
         .k-filter-operator .k-dropdown-list {
-            width: $filter-operator-dropdown-width;
+            width: $kendo-filter-operator-dropdown-width;
         }
 
         .k-filter-item {
@@ -58,9 +58,9 @@
             &::before {
                 content: "";
                 position: absolute;
-                width: $filter-line-size;
+                width: $kendo-filter-line-size;
                 height: 100%;
-                top: -$filter-padding-y;
+                top: -$kendo-filter-padding-y;
                 left: 0;
             }
         }
@@ -70,10 +70,10 @@
         .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
             content: "";
             position: absolute;
-            width: $filter-line-size;
-            top: calc(-#{$filter-padding-y} - #{$filter-line-size});
+            width: $kendo-filter-line-size;
+            top: calc(-#{$kendo-filter-padding-y} - #{$kendo-filter-line-size});
             bottom: 50%;
-            left: -$filter-padding-x;
+            left: -$kendo-filter-padding-x;
         }
 
         // The forth and fifth selectors targets the Angular rendering
@@ -92,14 +92,14 @@
             .k-filter-lines,
             .k-filter-item {
                 padding-left: 0;
-                padding-right: $filter-padding-x;
+                padding-right: $kendo-filter-padding-x;
             }
 
             .k-filter-toolbar {
 
                 &::before {
                     left: auto;
-                    right: -$filter-padding-x;
+                    right: -$kendo-filter-padding-x;
                 }
             }
 
@@ -115,7 +115,7 @@
             .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
             .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
                 left: auto;
-                right: -$filter-padding-x;
+                right: -$kendo-filter-padding-x;
             }
         }
     }

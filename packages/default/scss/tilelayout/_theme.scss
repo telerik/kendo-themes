@@ -2,19 +2,19 @@
 
     .k-tilelayout {
         @include fill(
-            $bg: $tilelayout-bg
+            $bg: $kendo-tile-layout-bg
         );
     }
 
     .k-tilelayout-item:focus,
     .k-tilelayout-item.k-focus {
-        @include focus-indicator($tilelayout-card-focus-shadow);
+        @include focus-indicator($kendo-tile-layout-card-focus-shadow);
     }
 
     .k-layout-item-hint {
         @include fill(
-            $bg: $tilelayout-hint-bg,
-            $border: $tilelayout-hint-border
+            $bg: $kendo-tile-layout-hint-bg,
+            $border: $kendo-tile-layout-hint-border
         );
     }
 

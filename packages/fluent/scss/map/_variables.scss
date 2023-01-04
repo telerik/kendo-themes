@@ -62,7 +62,7 @@ $kendo-map-navigator-border: get-theme-color-var( neutral-110 ) !default;
 $kendo-map-zoom-control-margin: map.get( $kendo-spacing, 4 ) !default;
 /// Map zoom control horizontal padding.
 /// @group map
-$kendo-map-zoom-control-button-padding-x: $kendo-button-padding-y-md !default;
+$kendo-map-zoom-control-button-padding-x: $kendo-button-md-padding-y !default;
 /// Map zoom control vertical padding.
 /// @group map
 $kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding-x !default;

@@ -5,8 +5,8 @@
     }
 
     .k-skeleton-text {
-        border-radius: $skeleton-text-border-radius;
-        transform: $skeleton-text-transform;
+        border-radius: $kendo-skeleton-text-border-radius;
+        transform: $kendo-skeleton-text-transform;
 
         &:empty::before {
             content: "\200b";
@@ -14,11 +14,11 @@
     }
 
     .k-skeleton-rect {
-        border-radius: $skeleton-rect-border-radius;
+        border-radius: $kendo-skeleton-rect-border-radius;
     }
 
     .k-skeleton-circle {
-        border-radius: $skeleton-circle-border-radius;
+        border-radius: $kendo-skeleton-circle-border-radius;
     }
 
 

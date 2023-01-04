@@ -1,16 +1,16 @@
 // Popup
-$popup-padding-x: null !default;
-$popup-padding-y: null !default;
-$popup-border-width: 1px !default;
-$popup-border-radius: null !default;
+$kendo-popup-padding-x: null !default;
+$kendo-popup-padding-y: null !default;
+$kendo-popup-border-width: 1px !default;
+$kendo-popup-border-radius: null !default;
 
-$popup-font-size: $font-size !default;
-$popup-line-height: $line-height !default;
+$kendo-popup-font-size: $kendo-font-size-md !default;
+$kendo-popup-line-height: $kendo-line-height-md !default;
 
-$popup-content-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$popup-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-popup-content-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-popup-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
-$popup-bg: $kendo-component-bg !default;
-$popup-text: $kendo-component-text !default;
-$popup-border: $kendo-component-border !default;
-$popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
+$kendo-popup-bg: $kendo-component-bg !default;
+$kendo-popup-text: $kendo-component-text !default;
+$kendo-popup-border: $kendo-component-border !default;
+$kendo-popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;

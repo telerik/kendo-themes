@@ -2,18 +2,18 @@
 
     // Base
     .k-messagebox {
-        margin: $message-box-margin;
-        padding: $message-box-padding-y $message-box-padding-x;
-        border-width: $message-box-border-width;
+        margin: $kendo-message-box-margin;
+        padding: $kendo-message-box-padding-y $kendo-message-box-padding-x;
+        border-width: $kendo-message-box-border-width;
         border-style: solid;
         box-sizing: border-box;
-        font-size: $message-box-font-size;
-        line-height: $message-box-line-height;
+        font-size: $kendo-message-box-font-size;
+        line-height: $kendo-message-box-line-height;
 
         a {
             color: inherit;
-            font-style: $message-box-link-font-style;
-            text-decoration: $message-box-link-text-decoration;
+            font-style: $kendo-message-box-link-font-style;
+            text-decoration: $kendo-message-box-link-text-decoration;
         }
     }
 

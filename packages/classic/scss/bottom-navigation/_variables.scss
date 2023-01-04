@@ -1,29 +1,29 @@
 // Bottom-navigation
-$bottom-nav-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
-$bottom-nav-padding-y: $bottom-nav-padding-x !default;
-$bottom-nav-gap: $bottom-nav-padding-x !default;
-$bottom-nav-border-width: 1px 0px 0px 0px !default;
+$kendo-bottom-nav-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-x !default;
+$kendo-bottom-nav-gap: $kendo-bottom-nav-padding-x !default;
+$kendo-bottom-nav-border-width: 1px 0px 0px 0px !default;
 
-$bottom-nav-font-family: $font-family !default;
-$bottom-nav-font-size: $font-size !default;
-$bottom-nav-line-height: normal !default;
-$bottom-nav-letter-spacing: .2px !default;
+$kendo-bottom-nav-font-family: $kendo-font-family !default;
+$kendo-bottom-nav-font-size: $kendo-font-size-md !default;
+$kendo-bottom-nav-line-height: normal !default;
+$kendo-bottom-nav-letter-spacing: .2px !default;
 
-$bottom-nav-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$bottom-nav-item-padding-y: 0 !default;
-$bottom-nav-item-min-width: 72px !default;
-$bottom-nav-item-max-width: null !default;
-$bottom-nav-item-min-height: calc( #{$kendo-icon-size * 2.5} + #{$kendo-padding-md-x * 2} - #{$bottom-nav-padding-x * 2} ) !default;
-$bottom-nav-item-border-radius: $kendo-border-radius-md !default;
-$bottom-nav-item-gap: 0 k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-bottom-nav-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-bottom-nav-item-padding-y: 0 !default;
+$kendo-bottom-nav-item-min-width: 72px !default;
+$kendo-bottom-nav-item-max-width: null !default;
+$kendo-bottom-nav-item-min-height: calc( #{$kendo-icon-size * 2.5} + #{$kendo-padding-md-x * 2} - #{$kendo-bottom-nav-padding-x * 2} ) !default;
+$kendo-bottom-nav-item-border-radius: $kendo-border-radius-md !default;
+$kendo-bottom-nav-item-gap: 0 k-map-get( $kendo-spacing, 1 ) !default;
 
-$bottom-nav-item-icon-margin-y: k-map-get( $kendo-spacing, 2 ) !default;
-$bottom-nav-item-icon-margin-x: $bottom-nav-item-icon-margin-y !default;
-$bottom-nav-item-icon-size: k-map-get( $kendo-spacing, 6 ) !default;
-$bottom-nav-item-disabled-opacity: .5 !default;
+$kendo-bottom-nav-item-icon-margin-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-bottom-nav-item-icon-margin-x: $kendo-bottom-nav-item-icon-margin-y !default;
+$kendo-bottom-nav-item-icon-size: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-bottom-nav-item-disabled-opacity: .5 !default;
 
-$bottom-nav-shadow: 0px 0px 5px rgba( black, .12 ) !default;
+$kendo-bottom-nav-shadow: 0px 0px 5px rgba( black, .12 ) !default;
 
-$bottom-nav-flat-bg: $kendo-component-bg !default;
-$bottom-nav-flat-text: $kendo-component-text !default;
-$bottom-nav-flat-border: $kendo-component-border !default;
+$kendo-bottom-nav-flat-bg: $kendo-component-bg !default;
+$kendo-bottom-nav-flat-text: $kendo-component-text !default;
+$kendo-bottom-nav-flat-border: $kendo-component-border !default;

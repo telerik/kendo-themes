@@ -22,14 +22,14 @@
 
         th,
         td {
-            font-size: $font-size-sm;
+            font-size: $kendo-font-size-sm;
         }
     }
 
 
     // Times header
     .k-scheduler-times {
-        font-size: $font-size-sm;
+        font-size: $kendo-font-size-sm;
     }
 
 
@@ -61,12 +61,12 @@
         .k-event-delete {
             border-radius: 50%;
             display: inline-block;
-            font-size: $font-size-sm;
+            font-size: $kendo-font-size-sm;
             line-height: normal;
 
             .k-icon {
-                font-size: $font-size-sm;
-                padding: calc( #{$font-size} - #{$font-size-sm} );
+                font-size: $kendo-font-size-sm;
+                padding: calc( #{$kendo-font-size-md} - #{$kendo-font-size-sm} );
                 box-sizing: content-box;
                 vertical-align: unset;
             }
@@ -106,7 +106,7 @@
     }
 
     .k-scheduler-layout-flex .k-scheduler-cell {
-        min-height: $line-height-em;
+        min-height: $kendo-line-height-em;
     }
 }
 

@@ -1,30 +1,30 @@
 // Adaptive
-$adaptive-bg: $kendo-component-bg !default;
-$adaptive-text: $kendo-component-text !default;
-$adaptive-border: $kendo-component-border !default;
+$kendo-adaptive-bg: $kendo-component-bg !default;
+$kendo-adaptive-text: $kendo-component-text !default;
+$kendo-adaptive-border: $kendo-component-border !default;
 
-$adaptive-content-bg: $kendo-app-bg !default;
-$adaptive-content-text: $kendo-app-text !default;
+$kendo-adaptive-content-bg: $kendo-app-bg !default;
+$kendo-adaptive-content-text: $kendo-app-text !default;
 
-$adaptive-menu-bg: $kendo-color-primary !default;
-$adaptive-menu-text: k-contrast-legacy( $adaptive-menu-bg ) !default;
+$kendo-adaptive-menu-bg: $kendo-color-primary !default;
+$kendo-adaptive-menu-text: k-contrast-legacy( $kendo-adaptive-menu-bg ) !default;
 
-$adaptive-menu-clear-text: $kendo-color-primary !default;
+$kendo-adaptive-menu-clear-text: $kendo-color-primary !default;
 
-$adaptive-menu-item-border: $kendo-component-border !default;
-$adaptive-menu-title-text: $kendo-component-text !default;
+$kendo-adaptive-menu-item-border: $kendo-component-border !default;
+$kendo-adaptive-menu-title-text: $kendo-component-text !default;
 
-$adaptive-border-width: 1px !default;
-$adaptive-font-family: $font-family !default;
-$adaptive-font-size: $font-size !default;
-$adaptive-line-height: $line-height !default;
+$kendo-adaptive-border-width: 1px !default;
+$kendo-adaptive-font-family: $kendo-font-family !default;
+$kendo-adaptive-font-size: $kendo-font-size-md !default;
+$kendo-adaptive-line-height: $kendo-line-height-md !default;
 
 
 // Adaptive Grid
-$adaptive-grid-sort-text: $kendo-color-primary !default;
+$kendo-adaptive-grid-sort-text: $kendo-color-primary !default;
 
 
 // Adaptive Scheduler
-$adaptive-scheduler-current-text: $kendo-color-primary !default;
-$adaptive-scheduler-base-text: inherit !default;
-$adaptive-scheduler-subtle-text: $kendo-subtle-text !default;
+$kendo-adaptive-scheduler-current-text: $kendo-color-primary !default;
+$kendo-adaptive-scheduler-base-text: inherit !default;
+$kendo-adaptive-scheduler-subtle-text: $kendo-subtle-text !default;

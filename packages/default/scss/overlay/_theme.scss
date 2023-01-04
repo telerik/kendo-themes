@@ -2,11 +2,11 @@
 
     // Overlay
     .k-overlay {
-        background-color: $overlay-bg;
+        background-color: $kendo-overlay-bg;
     }
 
 
-    @each $name, $color in $overlay-theme-colors {
+    @each $name, $color in $kendo-overlay-theme-colors {
         .k-overlay-#{$name} {
             background-color: $color;
         }

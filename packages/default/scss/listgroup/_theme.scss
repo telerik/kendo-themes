@@ -2,9 +2,9 @@
 
     .k-listgroup {
         @include fill(
-            $listgroup-text,
-            $listgroup-bg,
-            $listgroup-border
+            $kendo-listgroup-text,
+            $kendo-listgroup-bg,
+            $kendo-listgroup-border
         );
     }
 

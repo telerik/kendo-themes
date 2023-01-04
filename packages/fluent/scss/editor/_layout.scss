@@ -447,8 +447,8 @@
 
         .k-breadcrumbs-wrap {
             position: absolute;
-            inset-inline-start: $kendo-input-padding-x-md;
-            inset-block-start: $kendo-input-padding-y-md;
+            inset-inline-start: $kendo-input-md-padding-x;
+            inset-block-start: $kendo-input-md-padding-y;
 
             .k-icon {
                 position: static;

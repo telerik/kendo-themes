@@ -2,43 +2,43 @@
 
     .k-menu:not(.k-context-menu) {
         @include fill(
-            $menu-text,
-            $menu-bg,
-            $menu-border,
-            $menu-gradient
+            $kendo-menu-text,
+            $kendo-menu-bg,
+            $kendo-menu-border,
+            $kendo-menu-gradient
         );
 
         > .k-item {
             @include fill(
-                $menu-item-text,
-                $menu-item-bg,
-                $menu-item-border,
-                $menu-item-gradient
+                $kendo-menu-item-text,
+                $kendo-menu-item-bg,
+                $kendo-menu-item-border,
+                $kendo-menu-item-gradient
             );
 
             &:hover,
             &.k-hover {
                 @include fill(
-                    $menu-item-hover-text,
-                    $menu-item-hover-bg,
-                    $menu-item-hover-border,
-                    $menu-item-hover-gradient
+                    $kendo-menu-item-hover-text,
+                    $kendo-menu-item-hover-bg,
+                    $kendo-menu-item-hover-border,
+                    $kendo-menu-item-hover-gradient
                 );
             }
 
             &:active,
             &.k-active {
                 @include fill(
-                    $menu-item-expanded-text,
-                    $menu-item-expanded-bg,
-                    $menu-item-expanded-border,
-                    $menu-item-expanded-gradient
+                    $kendo-menu-item-expanded-text,
+                    $kendo-menu-item-expanded-bg,
+                    $kendo-menu-item-expanded-border,
+                    $kendo-menu-item-expanded-gradient
                 );
             }
 
             &:focus,
             &.k-focus {
-                @include focus-indicator( $menu-item-focus-shadow, true );
+                @include focus-indicator( $kendo-menu-item-focus-shadow, true );
             }
         }
     }
@@ -94,18 +94,18 @@
     // Scrolling
     .k-menu-scroll-wrapper .k-menu-scroll-button {
         @include fill(
-            $menu-scroll-button-text,
-            $menu-scroll-button-bg,
-            $menu-scroll-button-border,
-            $menu-scroll-button-gradient
+            $kendo-menu-scroll-button-text,
+            $kendo-menu-scroll-button-bg,
+            $kendo-menu-scroll-button-border,
+            $kendo-menu-scroll-button-gradient
         );
 
         &:hover {
             @include fill(
-                $menu-scroll-button-hover-text,
-                $menu-scroll-button-hover-bg,
-                $menu-scroll-button-hover-border,
-                $menu-scroll-button-hover-gradient
+                $kendo-menu-scroll-button-hover-text,
+                $kendo-menu-scroll-button-hover-bg,
+                $kendo-menu-scroll-button-hover-border,
+                $kendo-menu-scroll-button-hover-gradient
             );
 
             &::before {

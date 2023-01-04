@@ -1,27 +1,27 @@
 // Loader
 
 $kendo-loader-segment-border-radius: 50% !default;
-$kendo-loader-segment-size-sm: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-loader-segment-size-md: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-loader-segment-size-lg: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-loader-sm-segment-size: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-loader-md-segment-size: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-loader-lg-segment-size: k-map-get( $kendo-spacing, 4 ) !default;
 
-$kendo-loader-padding-sm: k-math-div( $kendo-loader-segment-size-sm, 2 ) !default;
-$kendo-loader-padding-md: k-math-div( $kendo-loader-segment-size-md, 2 ) !default;
-$kendo-loader-padding-lg: k-math-div( $kendo-loader-segment-size-lg, 2 ) !default;
+$kendo-loader-sm-padding: k-math-div( $kendo-loader-sm-segment-size, 2 ) !default;
+$kendo-loader-md-padding: k-math-div( $kendo-loader-md-segment-size, 2 ) !default;
+$kendo-loader-lg-padding: k-math-div( $kendo-loader-lg-segment-size, 2 ) !default;
 
-$kendo-loader-spinner-3-width-sm: ( $kendo-loader-segment-size-sm * 4 ) !default;
-$kendo-loader-spinner-3-height-sm: ( $kendo-loader-spinner-3-width-sm * $equilateral-height ) !default;
-$kendo-loader-spinner-3-width-md: ( $kendo-loader-segment-size-md * 4 ) !default;
-$kendo-loader-spinner-3-height-md: ( $kendo-loader-spinner-3-width-md * $equilateral-height ) !default;
-$kendo-loader-spinner-3-width-lg: ( $kendo-loader-segment-size-lg * 4 ) !default;
-$kendo-loader-spinner-3-height-lg: ( $kendo-loader-spinner-3-width-lg * $equilateral-height ) !default;
+$kendo-loader-sm-spinner-3-width: ( $kendo-loader-sm-segment-size * 4 ) !default;
+$kendo-loader-sm-spinner-3-height: ( $kendo-loader-sm-spinner-3-width * $equilateral-height ) !default;
+$kendo-loader-md-spinner-3-width: ( $kendo-loader-md-segment-size * 4 ) !default;
+$kendo-loader-md-spinner-3-height: ( $kendo-loader-md-spinner-3-width * $equilateral-height ) !default;
+$kendo-loader-lg-spinner-3-width: ( $kendo-loader-lg-segment-size * 4 ) !default;
+$kendo-loader-lg-spinner-3-height: ( $kendo-loader-lg-spinner-3-width * $equilateral-height ) !default;
 
-$kendo-loader-spinner-4-width-sm: $kendo-loader-segment-size-sm * 4 !default;
-$kendo-loader-spinner-4-height-sm: $kendo-loader-spinner-4-width-sm !default;
-$kendo-loader-spinner-4-width-md: $kendo-loader-segment-size-md * 4 !default;
-$kendo-loader-spinner-4-height-md: $kendo-loader-spinner-4-width-md !default;
-$kendo-loader-spinner-4-width-lg: $kendo-loader-segment-size-lg * 4 !default;
-$kendo-loader-spinner-4-height-lg: $kendo-loader-spinner-4-width-lg !default;
+$kendo-loader-sm-spinner-4-width: $kendo-loader-sm-segment-size * 4 !default;
+$kendo-loader-sm-spinner-4-height: $kendo-loader-sm-spinner-4-width !default;
+$kendo-loader-md-spinner-4-width: $kendo-loader-md-segment-size * 4 !default;
+$kendo-loader-md-spinner-4-height: $kendo-loader-md-spinner-4-width !default;
+$kendo-loader-lg-spinner-4-width: $kendo-loader-lg-segment-size * 4 !default;
+$kendo-loader-lg-spinner-4-height: $kendo-loader-lg-spinner-4-width !default;
 
 $kendo-loader-secondary-bg: #656565 !default;
 
@@ -31,17 +31,17 @@ $kendo-loader-container-panel-border-color: $kendo-component-border !default;
 $kendo-loader-container-panel-border-radius: $kendo-border-radius-md !default;
 $kendo-loader-container-panel-bg: $kendo-color-white !default;
 
-$kendo-loader-container-padding-sm: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-loader-container-gap-sm: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-loader-container-font-size-sm: $font-size-sm !default;
+$kendo-loader-sm-container-padding: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-loader-sm-container-gap: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-loader-sm-container-font-size: $kendo-font-size-sm !default;
 
-$kendo-loader-container-padding-md: k-map-get( $kendo-spacing, 5 ) !default;
-$kendo-loader-container-gap-md: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-loader-container-font-size-md: $font-size-md !default;
+$kendo-loader-md-container-padding: k-map-get( $kendo-spacing, 5 ) !default;
+$kendo-loader-md-container-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-loader-md-container-font-size: $kendo-font-size-md !default;
 
-$kendo-loader-container-padding-lg: k-map-get( $kendo-spacing, 6 ) !default;
-$kendo-loader-container-gap-lg: k-map-get( $kendo-spacing, 3 ) !default;
-$kendo-loader-container-font-size-lg: $font-size-lg !default;
+$kendo-loader-lg-container-padding: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-loader-lg-container-gap: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-loader-lg-container-font-size: $kendo-font-size-lg !default;
 
 
 // Loading

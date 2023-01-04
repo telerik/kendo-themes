@@ -23,11 +23,11 @@ $kendo-floating-label-height: calc( #{$kendo-floating-label-line-height} * #{$ke
 
 /// The horizontal offset of the floating label
 /// @group floating-label
-$kendo-floating-label-offset-x: calc( #{$kendo-input-padding-x-md} + #{$kendo-input-border-width} ) !default;
+$kendo-floating-label-offset-x: calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} ) !default;
 
 /// The vertical offset of the floating label
 /// @group floating-label
-$kendo-floating-label-offset-y: calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y-md} ) !default;
+$kendo-floating-label-offset-y: calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} ) !default;
 
 /// The focus resize scale of the floating label
 /// @group floating-label

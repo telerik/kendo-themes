@@ -1,28 +1,28 @@
 // Map
-$map-border-width: 0px !default;
+$kendo-map-border-width: 0px !default;
 
-$map-font-size: $font-size !default;
-$map-line-height: $line-height !default;
-$map-font-family: $font-family !default;
+$kendo-map-font-size: $kendo-font-size-md !default;
+$kendo-map-line-height: $kendo-line-height-md !default;
+$kendo-map-font-family: $kendo-font-family !default;
 
-$map-bg: $kendo-component-bg !default;
-$map-text: $kendo-component-text !default;
-$map-border: $kendo-component-border !default;
+$kendo-map-bg: $kendo-component-bg !default;
+$kendo-map-text: $kendo-component-text !default;
+$kendo-map-border: $kendo-component-border !default;
 
-$map-navigator-margin: k-map-get( $kendo-spacing, 4 ) !default;
-$map-navigator-padding: 2px !default;
-$map-navigator-width: calc( #{$kendo-icon-size * 3} + #{$map-navigator-padding * 2} ) !default;
-$map-navigator-height: $map-navigator-width !default;
-$map-navigator-border-width: 1px !default;
+$kendo-map-navigator-margin: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-map-navigator-padding: 2px !default;
+$kendo-map-navigator-width: calc( #{$kendo-icon-size * 3} + #{$kendo-map-navigator-padding * 2} ) !default;
+$kendo-map-navigator-height: $kendo-map-navigator-width !default;
+$kendo-map-navigator-border-width: 1px !default;
 
-$map-zoom-control-margin: k-map-get( $kendo-spacing, 4 ) !default;
-$map-zoom-control-button-padding-x: $kendo-button-padding-y !default;
-$map-zoom-control-button-padding-y: $map-zoom-control-button-padding-x !default;
+$kendo-map-zoom-control-margin: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-map-zoom-control-button-padding-x: $kendo-button-padding-y !default;
+$kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding-x !default;
 
-$map-attribution-padding-x: $kendo-padding-sm-x !default;
-$map-attribution-padding-y: $kendo-padding-sm-y !default;
-$map-attribution-font-size: ($map-font-size * .75) !default;
-$map-attribution-bg: rgba( $map-bg, .8 ) !default;
+$kendo-map-attribution-padding-x: $kendo-padding-sm-x !default;
+$kendo-map-attribution-padding-y: $kendo-padding-sm-y !default;
+$kendo-map-attribution-font-size: ($kendo-map-font-size * .75) !default;
+$kendo-map-attribution-bg: rgba( $kendo-map-bg, .8 ) !default;
 
-$map-marker-size: $kendo-icon-size-xxl !default;
-$map-marker-fill: $kendo-color-primary !default;
+$kendo-map-marker-size: $kendo-icon-size-xxl !default;
+$kendo-map-marker-fill: $kendo-color-primary !default;

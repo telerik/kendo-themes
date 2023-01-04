@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 // Expose
 @mixin colorpalette-styles() {
     @include module.render( "colorpalette" ) {
-        @include kendo-colorpalette--layout();
-        @include kendo-colorpalette--theme();
+        @include kendo-color-palette--layout();
+        @include kendo-color-palette--theme();
     }
 }

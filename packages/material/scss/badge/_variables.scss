@@ -12,60 +12,60 @@ $kendo-badge-border-radius: $kendo-border-radius-md !default;
 /// Horizontal padding of the badge.
 /// @group badge
 $kendo-badge-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-badge-padding-x-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-$kendo-badge-padding-x-md: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-badge-padding-x-lg: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-badge-sm-padding-x: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-badge-md-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-badge-lg-padding-x: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// Vertical padding of the badge.
 /// @group badge
 $kendo-badge-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-badge-padding-y-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-$kendo-badge-padding-y-md: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-badge-padding-y-lg: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-badge-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-badge-md-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-badge-lg-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// Font sizes of the badge.
 /// @group badge
-$kendo-badge-font-size: $font-size-xs !default;
-$kendo-badge-font-size-sm: $font-size-xs !default;
-$kendo-badge-font-size-md: $font-size-xs !default;
-$kendo-badge-font-size-lg: $font-size-xs !default;
+$kendo-badge-font-size: $kendo-font-size-xs !default;
+$kendo-badge-sm-font-size: $kendo-font-size-xs !default;
+$kendo-badge-md-font-size: $kendo-font-size-xs !default;
+$kendo-badge-lg-font-size: $kendo-font-size-xs !default;
 
-/// Line heights used along with $font-size.
+/// Line heights used along with $kendo-font-size.
 /// @group badge
 $kendo-badge-line-height: 1 !default;
-$kendo-badge-line-height-sm: $kendo-badge-line-height !default;
-$kendo-badge-line-height-md: $kendo-badge-line-height !default;
-$kendo-badge-line-height-lg: $kendo-badge-line-height !default;
+$kendo-badge-sm-line-height: $kendo-badge-line-height !default;
+$kendo-badge-md-line-height: $kendo-badge-line-height !default;
+$kendo-badge-lg-line-height: $kendo-badge-line-height !default;
 
 /// Badge min width used for circle badge.
 /// @group badge
 $kendo-badge-min-width: calc( #{$kendo-badge-line-height * 1em} + #{$kendo-badge-padding-y * 2} + #{$kendo-badge-border-width * 2}) !default;
-$kendo-badge-min-width-sm: calc( #{$kendo-badge-line-height-sm * 1em} + #{$kendo-badge-padding-y-sm * 2} + #{$kendo-badge-border-width * 2} ) !default;
-$kendo-badge-min-width-md: calc( #{$kendo-badge-line-height-md * 1em} + #{$kendo-badge-padding-y-md * 2} + #{$kendo-badge-border-width * 2} ) !default;
-$kendo-badge-min-width-lg: calc( #{$kendo-badge-line-height-lg * 1em} + #{$kendo-badge-padding-y-lg * 2} + #{$kendo-badge-border-width * 2} ) !default;
+$kendo-badge-sm-min-width: calc( #{$kendo-badge-sm-line-height * 1em} + #{$kendo-badge-sm-padding-y * 2} + #{$kendo-badge-border-width * 2} ) !default;
+$kendo-badge-md-min-width: calc( #{$kendo-badge-md-line-height * 1em} + #{$kendo-badge-md-padding-y * 2} + #{$kendo-badge-border-width * 2} ) !default;
+$kendo-badge-lg-min-width: calc( #{$kendo-badge-lg-line-height * 1em} + #{$kendo-badge-lg-padding-y * 2} + #{$kendo-badge-border-width * 2} ) !default;
 
 /// Sizes map for the badge.
 /// @group badge
 $kendo-badge-sizes: (
     sm: (
-        padding-x: $kendo-badge-padding-x-sm,
-        padding-y: $kendo-badge-padding-y-sm,
-        font-size: $kendo-badge-font-size-sm,
-        line-height: $kendo-badge-line-height-sm,
-        min-width: $kendo-badge-min-width-sm
+        padding-x: $kendo-badge-sm-padding-x,
+        padding-y: $kendo-badge-sm-padding-y,
+        font-size: $kendo-badge-sm-font-size,
+        line-height: $kendo-badge-sm-line-height,
+        min-width: $kendo-badge-sm-min-width
     ),
     md: (
-        padding-x: $kendo-badge-padding-x-md,
-        padding-y: $kendo-badge-padding-y-md,
-        font-size: $kendo-badge-font-size-md,
-        line-height: $kendo-badge-line-height-md,
-        min-width: $kendo-badge-min-width-md
+        padding-x: $kendo-badge-md-padding-x,
+        padding-y: $kendo-badge-md-padding-y,
+        font-size: $kendo-badge-md-font-size,
+        line-height: $kendo-badge-md-line-height,
+        min-width: $kendo-badge-md-min-width
     ),
     lg: (
-        padding-x: $kendo-badge-padding-x-lg,
-        padding-y: $kendo-badge-padding-y-lg,
-        font-size: $kendo-badge-font-size-lg,
-        line-height: $kendo-badge-line-height-lg,
-        min-width: $kendo-badge-min-width-lg
+        padding-x: $kendo-badge-lg-padding-x,
+        padding-y: $kendo-badge-lg-padding-y,
+        font-size: $kendo-badge-lg-font-size,
+        line-height: $kendo-badge-lg-line-height,
+        min-width: $kendo-badge-lg-min-width
     )
 ) !default;

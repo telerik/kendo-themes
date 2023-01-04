@@ -67,7 +67,7 @@ $kendo-switch-off-track-focus-border: null !default;
 $kendo-switch-off-track-focus-gradient: null !default;
 /// The ring around the track when the focused switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-ring: 0 0 3px 1px rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .25 ) !default;
+$kendo-switch-off-track-focus-ring: 0 0 3px 1px rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 ) !default;
 
 /// The background of the track when the disabled switch is not checked.
 /// @group switch
@@ -93,7 +93,7 @@ $kendo-switch-off-thumb-text: null !default;
 $kendo-switch-off-thumb-border: $kendo-switch-off-track-border !default;
 /// The background gradient of the thumb when the switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-gradient: $base-gradient !default;
+$kendo-switch-off-thumb-gradient: $kendo-base-gradient !default;
 
 /// The background of the thumb when the hovered switch is not checked.
 /// @group switch
@@ -149,7 +149,7 @@ $kendo-switch-on-track-focus-border: null !default;
 $kendo-switch-on-track-focus-gradient: null !default;
 /// The ring around the track wen the focused switch is checked.
 /// @group switch
-$kendo-switch-on-track-focus-ring: 0 0 3px 1px rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .25 ) !default;
+$kendo-switch-on-track-focus-ring: 0 0 3px 1px rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 ) !default;
 
 /// The background of the track when the disabled switch is checked.
 /// @group switch
@@ -175,7 +175,7 @@ $kendo-switch-on-thumb-text: null !default;
 $kendo-switch-on-thumb-border: k-try-shade( $kendo-switch-on-thumb-bg ) !default;
 /// The background gradient of the thumb when the switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-gradient: $base-gradient !default;
+$kendo-switch-on-thumb-gradient: $kendo-base-gradient !default;
 
 /// The background of the thumb when the hovered switch is checked.
 /// @group switch

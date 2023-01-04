@@ -3,9 +3,9 @@
     // Spreadsheet
     .k-spreadsheet {
         @include fill(
-            $spreadsheet-text,
-            $spreadsheet-bg,
-            $spreadsheet-border
+            $kendo-spreadsheet-text,
+            $kendo-spreadsheet-bg,
+            $kendo-spreadsheet-border
         );
     }
 
@@ -43,17 +43,17 @@
 
     // Cell editor
     .k-spreadsheet-cell-editor {
-        color: $spreadsheet-text;
-        background-color: $spreadsheet-bg;
+        color: $kendo-spreadsheet-text;
+        background-color: $kendo-spreadsheet-bg;
     }
 
 
     // Cells
     .k-spreadsheet-merged-cell {
-        background-color: $spreadsheet-bg;
+        background-color: $kendo-spreadsheet-bg;
     }
     .k-spreadsheet-disabled-mask {
-        background-color: $spreadsheet-bg;
+        background-color: $kendo-spreadsheet-bg;
     }
 
     // Selection
@@ -68,12 +68,12 @@
         box-shadow: inset 0 0 0 1px $kendo-selected-bg;
     }
     .k-spreadsheet .k-single-selection::after {
-        border-color: $spreadsheet-bg;
+        border-color: $kendo-spreadsheet-bg;
         background-color: $kendo-selected-bg;
     }
     .k-spreadsheet-active-cell {
         box-shadow: inset 0 0 0 1px $kendo-selected-bg;
-        background-color: $spreadsheet-bg;
+        background-color: $kendo-spreadsheet-bg;
 
         &.k-right {
             box-shadow: inset 0 0 0 1px $kendo-selected-bg, inset -1px 0 0 1px $kendo-selected-bg;
@@ -94,7 +94,7 @@
         box-shadow: inset 0 0 0 1px $kendo-selected-bg;
     }
     .k-spreadsheet .k-auto-fill-punch {
-        background-color: rgba( $spreadsheet-bg, .5 );
+        background-color: rgba( $kendo-spreadsheet-bg, .5 );
     }
 
 
@@ -172,9 +172,9 @@
 
         .k-spreadsheet-value-treeview-wrapper {
             @include fill(
-                $spreadsheet-text,
-                $spreadsheet-bg,
-                $spreadsheet-border
+                $kendo-spreadsheet-text,
+                $kendo-spreadsheet-bg,
+                $kendo-spreadsheet-border
             );
         }
     }
@@ -217,34 +217,34 @@
 @include exports( "spreadsheet/drawing/theme" ) {
 
     .k-spreadsheet-insert-image-dialog {
-        border-color: $spreadsheet-insert-image-dialog-preview-border;
+        border-color: $kendo-spreadsheet-insert-image-dialog-preview-border;
 
         .k-spreadsheet-has-image {
             &:hover,
             &.k-hover {
-                box-shadow: $spreadsheet-insert-image-dialog-preview-overlay-shadow;
+                box-shadow: $kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow;
             }
 
             &:hover div,
             &.k-hover div {
-                color: $spreadsheet-insert-image-dialog-overlay-hover-text;
+                color: $kendo-spreadsheet-insert-image-dialog-overlay-hover-text;
             }
         }
     }
 
     .k-spreadsheet-drawing {
         &.k-spreadsheet-active-drawing {
-            outline-color: $spreadsheet-drawing-handle-outline-color;
+            outline-color: $kendo-spreadsheet-drawing-handle-outline-color;
         }
 
         .k-spreadsheet-drawing-handle {
-            border-color: $spreadsheet-drawing-handle-border-color;
-            background-color: $spreadsheet-drawing-handle-bg;
+            border-color: $kendo-spreadsheet-drawing-handle-border-color;
+            background-color: $kendo-spreadsheet-drawing-handle-bg;
         }
     }
 
     .k-spreadsheet-drawing-anchor-cell {
-        background: $spreadsheet-drawing-anchor-bg;
+        background: $kendo-spreadsheet-drawing-anchor-bg;
     }
 
 }

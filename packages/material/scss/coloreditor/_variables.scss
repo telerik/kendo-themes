@@ -1,31 +1,31 @@
 // Coloreditor/FlatColorPicker
-$coloreditor-spacer: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-color-editor-spacer: k-map-get( $kendo-spacing, 3 ) !default;
 
-$coloreditor-min-width: 294px !default;
-$coloreditor-border-width: 1px !default;
-$coloreditor-border-radius: $kendo-border-radius-md !default;
-$coloreditor-font-family: $font-family !default;
-$coloreditor-font-size: $font-size !default;
-$coloreditor-line-height: $line-height !default;
-$coloreditor-bg: $kendo-component-bg !default;
-$coloreditor-text: $kendo-component-text !default;
-$coloreditor-border: $kendo-component-border !default;
+$kendo-color-editor-min-width: 294px !default;
+$kendo-color-editor-border-width: 1px !default;
+$kendo-color-editor-border-radius: $kendo-border-radius-md !default;
+$kendo-color-editor-font-family: $kendo-font-family !default;
+$kendo-color-editor-font-size: $kendo-font-size-md !default;
+$kendo-color-editor-line-height: $kendo-line-height-md !default;
+$kendo-color-editor-bg: $kendo-component-bg !default;
+$kendo-color-editor-text: $kendo-component-text !default;
+$kendo-color-editor-border: $kendo-component-border !default;
 
-$coloreditor-focus-border: $kendo-hover-border !default;
-$coloreditor-focus-shadow: $box-shadow-depth-2 !default;
+$kendo-color-editor-focus-border: $kendo-hover-border !default;
+$kendo-color-editor-focus-shadow: $box-shadow-depth-2 !default;
 
-$coloreditor-header-padding-y: $coloreditor-spacer !default;
-$coloreditor-header-padding-x: $coloreditor-header-padding-y !default;
-$coloreditor-header-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-color-editor-header-padding-y: $kendo-color-editor-spacer !default;
+$kendo-color-editor-header-padding-x: $kendo-color-editor-header-padding-y !default;
+$kendo-color-editor-header-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
-$coloreditor-preview-gap: k-map-get( $kendo-spacing, 1 ) !default;
-$coloreditor-color-preview-width: 32px !default;
-$coloreditor-color-preview-height: 12px !default;
+$kendo-color-editor-preview-gap: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-color-editor-color-preview-width: 32px !default;
+$kendo-color-editor-color-preview-height: 12px !default;
 
-$coloreditor-views-padding-y: $coloreditor-spacer !default;
-$coloreditor-views-padding-x: $coloreditor-views-padding-y !default;
-$coloreditor-views-gap: $coloreditor-spacer !default;
+$kendo-color-editor-views-padding-y: $kendo-color-editor-spacer !default;
+$kendo-color-editor-views-padding-x: $kendo-color-editor-views-padding-y !default;
+$kendo-color-editor-views-gap: $kendo-color-editor-spacer !default;
 
-$coloreditor-colorgradient-focus-outline-color: rgba(0, 0, 0, .3) !default;
-$coloreditor-colorgradient-focus-outline: 2px !default;
-$coloreditor-colorgradient-focus-outline-offset: 2px !default;
+$kendo-color-editor-color-gradient-focus-outline-color: rgba(0, 0, 0, .3) !default;
+$kendo-color-editor-color-gradient-focus-outline: 2px !default;
+$kendo-color-editor-color-gradient-focus-outline-offset: 2px !default;

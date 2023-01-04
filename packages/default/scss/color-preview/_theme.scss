@@ -3,14 +3,14 @@
     // Color Preview
     .k-color-preview {
         @include fill(
-            $color-preview-text,
-            $color-preview-bg,
-            $color-preview-border
+            $kendo-color-preview-text,
+            $kendo-color-preview-bg,
+            $kendo-color-preview-border
         );
 
         &:hover,
         &.k-hover {
-            @include fill( $border: $color-preview-hover-border );
+            @include fill( $border: $kendo-color-preview-hover-border );
         }
     }
 

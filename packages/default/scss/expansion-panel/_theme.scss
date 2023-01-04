@@ -2,40 +2,40 @@
 
     .k-expander {
         @include fill(
-            $expander-text,
-            $expander-bg,
-            $expander-border
+            $kendo-expander-text,
+            $kendo-expander-bg,
+            $kendo-expander-border
         );
 
         &.k-focus {
-            @include focus-indicator( $expander-focus-shadow, true );
+            @include focus-indicator( $kendo-expander-focus-shadow, true );
         }
     }
 
     .k-expander-header {
         @include fill(
-            $expander-header-text,
-            $expander-header-bg,
-            $expander-header-border
+            $kendo-expander-header-text,
+            $kendo-expander-header-bg,
+            $kendo-expander-header-border
         );
         outline: none;
 
         &:hover,
         &.k-hover {
-            background-color: $expander-header-hover-bg;
+            background-color: $kendo-expander-header-hover-bg;
         }
 
         &.k-focus {
-            background-color: $expander-header-focus-bg;
-            @include focus-indicator( $expander-header-focus-shadow, true );
+            @include focus-indicator( $kendo-expander-header-focus-shadow, true );
+            background-color: $kendo-expander-header-focus-bg;
         }
     }
 
     .k-expander-title {
-        color: $expander-title-text;
+        color: $kendo-expander-title-text;
     }
 
     .k-expander-sub-title {
-        color: $expander-header-sub-title-text;
+        color: $kendo-expander-header-sub-title-text;
     }
 }

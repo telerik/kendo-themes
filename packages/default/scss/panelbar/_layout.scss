@@ -4,13 +4,13 @@
     .k-panelbar {
         margin: 0;
         padding: 0;
-        border-width: $panelbar-border-width;
-        border-style: $panelbar-border-style;
+        border-width: $kendo-panelbar-border-width;
+        border-style: $kendo-panelbar-border-style;
         box-sizing: border-box;
         outline: 0;
-        font-family: $panelbar-font-family;
-        font-size: $panelbar-font-size;
-        line-height: $panelbar-line-height;
+        font-family: $kendo-panelbar-font-family;
+        font-size: $kendo-panelbar-font-size;
+        line-height: $kendo-panelbar-line-height;
         list-style: none;
         display: block;
         -webkit-touch-callout: none;
@@ -28,12 +28,12 @@
         > .k-panelbar-header {
             // TODO
             border-width: 0;
-            border-style: $panelbar-item-border-style;
+            border-style: $kendo-panelbar-item-border-style;
             border-color: inherit;
             display: block;
 
             > .k-link {
-                padding: $panelbar-header-padding-y $panelbar-header-padding-x;
+                padding: $kendo-panelbar-header-padding-y $kendo-panelbar-header-padding-x;
                 color: inherit;
                 background: none;
                 text-decoration: none;
@@ -51,7 +51,7 @@
         }
         > .k-item + .k-item,
         > .k-panelbar-header + .k-panelbar-header {
-            border-top-width: $panelbar-item-border-width;
+            border-top-width: $kendo-panelbar-item-border-width;
         }
 
 
@@ -71,7 +71,7 @@
             display: block;
 
             > .k-link {
-                padding: $panelbar-item-padding-y $panelbar-item-padding-x;
+                padding: $kendo-panelbar-item-padding-y $kendo-panelbar-item-padding-x;
                 color: inherit;
                 text-decoration: none;
                 display: flex;
@@ -86,10 +86,10 @@
             }
 
             // Hierarchy items
-            @for $i from 1 through $panelbar-item-level-count {
+            @for $i from 1 through $kendo-panelbar-item-level-count {
                 &.k-level-#{$i} {
                     .k-link {
-                        padding-left: ( $panelbar-item-padding-x * $i );
+                        padding-left: ( $kendo-panelbar-item-padding-x * $i );
                     }
                 }
             }
@@ -115,7 +115,7 @@
         .k-group .k-panelbar-expand,
         .k-group .k-panelbar-collapse,
         .k-panelbar-group .k-panelbar-toggle {
-            margin-inline-end: calc( #{$panelbar-header-padding-x} - #{$panelbar-item-padding-x} );
+            margin-inline-end: calc( #{$kendo-panelbar-header-padding-x} - #{$kendo-panelbar-item-padding-x} );
         }
 
 
@@ -125,11 +125,11 @@
             .k-group > .k-item,
             .k-panelbar-group > .k-panelbar-item {
                 // Hierarchy items
-                @for $i from 1 through $panelbar-item-level-count {
+                @for $i from 1 through $kendo-panelbar-item-level-count {
                     &.k-level-#{$i} {
                         .k-link {
-                            padding-left: $panelbar-item-padding-x;
-                            padding-right: ( $panelbar-item-padding-x * $i );
+                            padding-left: $kendo-panelbar-item-padding-x;
+                            padding-right: ( $kendo-panelbar-item-padding-x * $i );
                         }
                     }
                 }

@@ -2,18 +2,18 @@
 
     // Pivotgrid
     .k-pivotgrid {
-        padding: $pivotgrid-padding-y $pivotgrid-padding-x;
-        border-width: $pivotgrid-border-width;
+        padding: $kendo-pivotgrid-padding-y $kendo-pivotgrid-padding-x;
+        border-width: $kendo-pivotgrid-border-width;
         border-style: solid;
         box-sizing: content-box;
-        font-size: $pivotgrid-font-size;
-        font-family: $pivotgrid-font-family;
-        line-height: $pivotgrid-line-height;
+        font-size: $kendo-pivotgrid-font-size;
+        font-family: $kendo-pivotgrid-font-family;
+        line-height: $kendo-pivotgrid-line-height;
         text-align: left;
         vertical-align: top;
         display: grid;
-        grid-template-columns: $pivotgrid-row-header-width auto;
-        grid-template-rows: $pivotgrid-column-header-height auto;
+        grid-template-columns: $kendo-pivotgrid-row-header-width auto;
+        grid-template-rows: $kendo-pivotgrid-column-header-height auto;
         position: relative;
 
         table {
@@ -57,9 +57,9 @@
     // Header empty cell
     .k-pivotgrid-empty-cell {
         border-right-style: solid;
-        border-right-width: $pivotgrid-cell-border-width;
+        border-right-width: $kendo-pivotgrid-cell-border-width;
         border-bottom-style: solid;
-        border-bottom-width: $pivotgrid-cell-border-width;
+        border-bottom-width: $kendo-pivotgrid-cell-border-width;
 
         &:focus {
             outline: none;
@@ -74,21 +74,21 @@
 
     .k-pivotgrid-column-headers .k-pivotgrid-table {
         padding-inline-start: 0;
-        padding-inline-end: var(--kendo-scrollbar-width, #{$default-scrollbar-width});
+        padding-inline-end: var(--kendo-scrollbar-width, #{$kendo-scrollbar-width});
     }
 
     .k-pivotgrid-column-headers .k-pivotgrid-cell {
         border-bottom-style: solid;
-        border-bottom-width: $pivotgrid-cell-border-width;
+        border-bottom-width: $kendo-pivotgrid-cell-border-width;
         border-left-style: solid;
-        border-left-width: $pivotgrid-cell-border-width;
+        border-left-width: $kendo-pivotgrid-cell-border-width;
 
         &:first-child {
             border-left-width: 0;
         }
 
         &.k-first {
-            border-left-width: $pivotgrid-cell-border-width;
+            border-left-width: $kendo-pivotgrid-cell-border-width;
         }
     }
 
@@ -99,14 +99,14 @@
     }
 
     .k-pivotgrid-row-headers .k-pivotgrid-table {
-        padding-bottom: var(--kendo-scrollbar-width, #{$default-scrollbar-width});
+        padding-bottom: var(--kendo-scrollbar-width, #{$kendo-scrollbar-width});
     }
 
     .k-pivotgrid-row-headers .k-pivotgrid-cell {
         border-right-style: solid;
-        border-right-width: $pivotgrid-cell-border-width;
+        border-right-width: $kendo-pivotgrid-cell-border-width;
         border-bottom-style: solid;
-        border-bottom-width: $pivotgrid-cell-border-width;
+        border-bottom-width: $kendo-pivotgrid-cell-border-width;
         white-space: nowrap;
     }
 
@@ -119,9 +119,9 @@
 
     .k-pivotgrid-values .k-pivotgrid-cell {
         border-bottom-style: solid;
-        border-bottom-width: $pivotgrid-cell-border-width;
+        border-bottom-width: $kendo-pivotgrid-cell-border-width;
         border-left-style: solid;
-        border-left-width: $pivotgrid-cell-border-width;
+        border-left-width: $kendo-pivotgrid-cell-border-width;
 
         &:first-child {
             border-left-width: 0;
@@ -129,7 +129,7 @@
     }
 
     .k-pivotgrid-cell {
-        padding: $pivotgrid-cell-padding-y $pivotgrid-cell-padding-x;
+        padding: $kendo-pivotgrid-cell-padding-y $kendo-pivotgrid-cell-padding-x;
         text-overflow: ellipsis;
         white-space: nowrap;
         vertical-align: top;
@@ -142,7 +142,7 @@
 
     .k-pivotgrid-cell .k-icon {
         cursor: pointer;
-        padding-inline-end: $pivotgrid-icon-spacing;
+        padding-inline-end: $kendo-pivotgrid-icon-spacing;
     }
 
     .k-pivotgrid-total {
@@ -151,7 +151,7 @@
 
     // Column menus
     .k-column-menu .k-treeview {
-        padding: $pivotgrid-treeview-padding-y $pivotgrid-treeview-padding-x;
+        padding: $kendo-pivotgrid-treeview-padding-y $kendo-pivotgrid-treeview-padding-x;
         overflow: auto;
     }
 
@@ -167,8 +167,8 @@
     }
 
     .k-pivotgrid-configurator-panel {
-        padding: $pivotgrid-configurator-padding-y $pivotgrid-configurator-padding-x;
-        border-width: $pivotgrid-configurator-border-width;
+        padding: $kendo-pivotgrid-configurator-padding-y $kendo-pivotgrid-configurator-padding-x;
+        border-width: $kendo-pivotgrid-configurator-border-width;
         border-style: solid;
         box-sizing: border-box;
         display: flex;
@@ -179,8 +179,8 @@
 
     // Configurator Button
     .k-pivotgrid-configurator-button {
-        padding: $pivotgrid-configurator-button-padding-y $pivotgrid-configurator-button-padding-x;
-        border-width: $pivotgrid-configurator-button-border-width;
+        padding: $kendo-pivotgrid-configurator-button-padding-y $kendo-pivotgrid-configurator-button-padding-x;
+        border-width: $kendo-pivotgrid-configurator-button-border-width;
         border-style: solid;
         box-sizing: border-box;
         cursor: pointer;
@@ -216,25 +216,25 @@
         z-index: 2;
 
         .k-flex-row & {
-            right: $pivotgrid-configurator-button-size;
+            right: $kendo-pivotgrid-configurator-button-size;
         }
         .k-flex-row-reverse & {
-            left: $pivotgrid-configurator-button-size;
+            left: $kendo-pivotgrid-configurator-button-size;
         }
         .k-flex-col & {
-            bottom: $pivotgrid-configurator-button-size;
+            bottom: $kendo-pivotgrid-configurator-button-size;
         }
         .k-flex-col-reverse & {
-            top: $pivotgrid-configurator-button-size;
+            top: $kendo-pivotgrid-configurator-button-size;
         }
     }
 
 
     // Panel Content
     .k-pivotgrid-configurator-header {
-        padding: $pivotgrid-configurator-header-padding-y $pivotgrid-configurator-header-padding-x;
-        font-size: $pivotgrid-configurator-header-font-size;
-        font-weight: $pivotgrid-configurator-header-font-weight;
+        padding: $kendo-pivotgrid-configurator-header-padding-y $kendo-pivotgrid-configurator-header-padding-x;
+        font-size: $kendo-pivotgrid-configurator-header-font-size;
+        font-weight: $kendo-pivotgrid-configurator-header-font-weight;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -246,7 +246,7 @@
     }
 
     .k-pivotgrid-configurator-content {
-        padding: $pivotgrid-configurator-content-padding-y $pivotgrid-configurator-content-padding-x;
+        padding: $kendo-pivotgrid-configurator-content-padding-y $kendo-pivotgrid-configurator-content-padding-x;
         flex: 1 1 auto;
         overflow: auto;
 
@@ -268,16 +268,16 @@
         .k-row-fields,
         .k-column-fields,
         .k-filter-fields {
-            margin-top: $pivotgrid-configurator-fields-margin-y;
+            margin-top: $kendo-pivotgrid-configurator-fields-margin-y;
             flex-wrap: wrap;
         }
 
         // Values
         .k-value-fields {
-            margin: $pivotgrid-configurator-fields-margin-y $pivotgrid-configurator-fields-margin-x;
+            margin: $kendo-pivotgrid-configurator-fields-margin-y $kendo-pivotgrid-configurator-fields-margin-x;
             display: flex;
             flex-direction: column;
-            gap: k-math-div( $pivotgrid-spacer, 2 );
+            gap: k-math-div( $kendo-pivotgrid-spacer, 2 );
         }
 
         .k-select-all .k-checkbox {
@@ -299,7 +299,7 @@
         }
 
         .k-treeview {
-            padding: $pivotgrid-treeview-padding-y $pivotgrid-treeview-padding-x;
+            padding: $kendo-pivotgrid-treeview-padding-y $kendo-pivotgrid-treeview-padding-x;
             overflow: auto;
         }
     }
@@ -307,14 +307,14 @@
 
     // Calculated field
     .k-calculated-field {
-        padding: $pivotgrid-calculated-field-padding-y $pivotgrid-calculated-field-padding-x;
-        border-width: $pivotgrid-calculated-field-border-width;
-        border-radius: $pivotgrid-calculated-field-border-radius;
+        padding: $kendo-pivotgrid-calculated-field-padding-y $kendo-pivotgrid-calculated-field-padding-x;
+        border-width: $kendo-pivotgrid-calculated-field-border-width;
+        border-radius: $kendo-pivotgrid-calculated-field-border-radius;
         border-style: solid;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        gap: $pivotgrid-calculated-field-gap;
+        gap: $kendo-pivotgrid-calculated-field-gap;
     }
     .k-calculated-field-header {
         display: flex;
@@ -362,7 +362,7 @@
 
     // Vertical Layout
     .k-pivotgrid-configurator-vertical {
-        min-width: $pivotgrid-configurator-vertical-width;
+        min-width: $kendo-pivotgrid-configurator-vertical-width;
     }
 
     .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
@@ -377,7 +377,7 @@
     // Horizontal Layout
     .k-pivotgrid-configurator-horizontal {
         width: 100%;
-        height: $pivotgrid-configurator-horizontal-height;
+        height: $kendo-pivotgrid-configurator-horizontal-height;
 
         .k-pivotgrid-configurator-content {
             .k-form {
@@ -386,7 +386,7 @@
             }
 
             .k-form-field-wrapper {
-                padding-left: $pivotgrid-spacer;
+                padding-left: $kendo-pivotgrid-spacer;
 
                 & > *:first-child {
                     margin-top: 0;
@@ -472,7 +472,7 @@
 @include exports("pivotgrid/layout/legacy") {
 
     .k-pivot {
-        border-width: $pivotgrid-border-width;
+        border-width: $kendo-pivotgrid-border-width;
         border-style: solid;
         position: relative;
 

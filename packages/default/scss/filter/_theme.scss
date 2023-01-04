@@ -4,11 +4,11 @@
         color: $kendo-component-text;
 
         .k-filter-preview-field {
-            color: $filter-preview-field-text;
+            color: $kendo-filter-preview-field-text;
         }
 
         .k-filter-preview-operator {
-            color: $filter-preview-operator-text;
+            color: $kendo-filter-preview-operator-text;
         }
 
         // The last selector targets the Angular rendering
@@ -22,7 +22,7 @@
         // Focus
         .k-toolbar:focus,
         .k-toolbar.k-focus {
-            @include focus-indicator( $filter-toolbar-focus-shadow );
+            @include focus-indicator( $kendo-filter-toolbar-focus-shadow );
         }
     }
 

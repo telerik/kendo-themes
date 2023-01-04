@@ -70,7 +70,7 @@
 
     // Table header
     .k-table-header {
-        padding-inline-end: var( --kendo-scrollbar-width, #{$default-scrollbar-width} );
+        padding-inline-end: var( --kendo-scrollbar-width, #{$kendo-scrollbar-width} );
         border-block-start-width: 0;
         border-block-end-width: 1px;
         border-inline-width: 0;
@@ -223,7 +223,7 @@
 
     // Table footer
     .k-table-footer {
-        padding-inline-end: var( --kendo-scrollbar-width, #{$default-scrollbar-width} );
+        padding-inline-end: var( --kendo-scrollbar-width, #{$kendo-scrollbar-width} );
         border-block-start-width: 1px;
         border-block-end-width: 0;
         border-inline-width: 0;

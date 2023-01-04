@@ -106,12 +106,12 @@
                     "type": "color",
                     "value": "#ffffff"
                 },
-                "base-text": {
+                "kendo-base-text": {
                     "name": "Header text color",
                     "type": "color",
                     "value": "#424242"
                 },
-                "base-bg": {
+                "kendo-base-bg": {
                     "name": "Header background",
                     "type": "color",
                     "value": "#fafafa"
@@ -176,12 +176,12 @@
         {
             "name": "Link",
             "variables": {
-                "link-text": {
+                "kendo-link-text": {
                     "name": "Link text color",
                     "type": "color",
                     "value": "#1274AC"
                 },
-                "link-hover-text": {
+                "kendo-link-hover-text": {
                     "name": "Link hover text color",
                     "type": "color",
                     "value": "#0f6190"
@@ -201,7 +201,7 @@
         {
             "name": "TaskBoard",
             "variables": {
-                "taskboard-column-focus-border": {
+                "kendo-taskboard-column-focus-border": {
                     "name": "TaskBoard column focus border",
                     "type": "color",
                     "value": "#424242"
@@ -211,7 +211,7 @@
         {
             "name": "ColorEditor",
             "variables": {
-                "coloreditor-colorgradient-focus-outline-color": {
+                "kendo-coloreditor-colorgradient-focus-outline-color": {
                     "name": "ColorEditor gradient focus outline color",
                     "type": "color",
                     "value": "#424242"
@@ -221,32 +221,32 @@
         {
             "name": "Dataviz",
             "variables": {
-                "series-a": {
+                "kendo-series-a": {
                     "name": "Series A",
                     "type": "color",
                     "value": "#1274AC"
                 },
-                "series-b": {
+                "kendo-series-b": {
                     "name": "Series B",
                     "type": "color",
                     "value": "#FFE162"
                 },
-                "series-c": {
+                "kendo-series-c": {
                     "name": "Series C",
                     "type": "color",
                     "value": "#4CD180"
                 },
-                "series-d": {
+                "kendo-series-d": {
                     "name": "Series D",
                     "type": "color",
                     "value": "#0074e6"
                 },
-                "series-e": {
+                "kendo-series-e": {
                     "name": "Series E",
                     "type": "color",
                     "value": "#9B4FE6"
                 },
-                "series-f": {
+                "kendo-series-f": {
                     "name": "Series F",
                     "type": "color",
                     "value": "#FF80AC"
@@ -256,12 +256,12 @@
         {
             "name": "Scheduler",
             "variables": {
-                "scheduler-event-bg": {
+                "kendo-scheduler-event-bg": {
                     "name": "Scheduler event background",
                     "type": "color",
                     "value": "#1274AC"
                 },
-                "scheduler-event-selected-bg": {
+                "kendo-scheduler-event-selected-bg": {
                     "name": "Scheduler event selected background",
                     "type": "color",
                     "value": "#0f6190"

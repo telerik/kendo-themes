@@ -1,93 +1,93 @@
 // Gantt
-$gantt-border-width: 1px !default;
-$gantt-font-family: $font-family !default;
-$gantt-font-size: $font-size !default;
-$gantt-line-height: $line-height !default;
+$kendo-gantt-border-width: 1px !default;
+$kendo-gantt-font-family: $kendo-font-family !default;
+$kendo-gantt-font-size: $kendo-font-size-md !default;
+$kendo-gantt-line-height: $kendo-line-height-md !default;
 
-$gantt-bg: $kendo-component-bg !default;
-$gantt-text: $kendo-component-text !default;
-$gantt-border: $kendo-component-border !default;
+$kendo-gantt-bg: $kendo-component-bg !default;
+$kendo-gantt-text: $kendo-component-text !default;
+$kendo-gantt-border: $kendo-component-border !default;
 
-$gantt-treelist-bg: null !default;
-$gantt-treelist-text: null !default;
-$gantt-treelist-border: null !default;
+$kendo-gantt-treelist-bg: null !default;
+$kendo-gantt-treelist-text: null !default;
+$kendo-gantt-treelist-border: null !default;
 
-$gantt-nonwork-bg: rgba( k-contrast-color( $gantt-bg ), .025 ) !default;
-$gantt-nonwork-text: null !default;
-$gantt-nonwork-border: null !default;
+$kendo-gantt-nonwork-bg: rgba( k-contrast-color( $kendo-gantt-bg ), .025 ) !default;
+$kendo-gantt-nonwork-text: null !default;
+$kendo-gantt-nonwork-border: null !default;
 
-$gantt-line-size: 2px !default;
-$gantt-line-fill: k-contrast-color( $gantt-bg ) !default;
-$gantt-line-selected-fill: $kendo-color-primary !default;
+$kendo-gantt-line-size: 2px !default;
+$kendo-gantt-line-fill: k-contrast-color( $kendo-gantt-bg ) !default;
+$kendo-gantt-line-selected-fill: $kendo-color-primary !default;
 
-$gantt-dot-size: 8px !default;
-$gantt-dot-spacing: 4px !default;
-$gantt-dot-bg: $gantt-text !default;
-$gantt-dot-border: null !default;
-$gantt-dot-hover-bg: $gantt-bg !default;
-$gantt-dot-hover-border: $gantt-text !default;
+$kendo-gantt-dot-size: 8px !default;
+$kendo-gantt-dot-spacing: 4px !default;
+$kendo-gantt-dot-bg: $kendo-gantt-text !default;
+$kendo-gantt-dot-border: null !default;
+$kendo-gantt-dot-hover-bg: $kendo-gantt-bg !default;
+$kendo-gantt-dot-hover-border: $kendo-gantt-text !default;
 
-$gantt-milestone-bg: $gantt-text !default;
-$gantt-milestone-border: $gantt-border !default;
-$gantt-milestone-selected-bg: $kendo-selected-bg !default;
-$gantt-milestone-selected-border: $kendo-selected-border !default;
+$kendo-gantt-milestone-bg: $kendo-gantt-text !default;
+$kendo-gantt-milestone-border: $kendo-gantt-border !default;
+$kendo-gantt-milestone-selected-bg: $kendo-selected-bg !default;
+$kendo-gantt-milestone-selected-border: $kendo-selected-border !default;
 
-$gantt-summary-bg: k-try-tint( $gantt-text, 1 ) !default;
-$gantt-summary-progress-bg: k-try-shade( $gantt-text, 5 ) !default;
-$gantt-summary-selected-bg: k-try-tint( $kendo-selected-bg, 6 ) !default;
-$gantt-summary-progress-selected-bg: $kendo-selected-bg !default;
+$kendo-gantt-summary-bg: k-try-tint( $kendo-gantt-text, 1 ) !default;
+$kendo-gantt-summary-progress-bg: k-try-shade( $kendo-gantt-text, 5 ) !default;
+$kendo-gantt-summary-selected-bg: k-try-tint( $kendo-selected-bg, 6 ) !default;
+$kendo-gantt-summary-progress-selected-bg: $kendo-selected-bg !default;
 
-$gantt-task-border-width: 0px !default;
-$gantt-task-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$gantt-task-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$gantt-task-bg: k-try-tint( $gantt-text, 2 ) !default;
-$gantt-task-text: k-contrast-color( $gantt-text ) !default;
-$gantt-task-border: null !default;
-$gantt-task-progress-bg: $gantt-text !default;
-$gantt-task-selected-bg: k-try-tint( $kendo-selected-bg, 6 ) !default;
-$gantt-task-selected-text: $kendo-selected-text !default;
-$gantt-task-selected-border: null !default;
-$gantt-task-progress-selected-bg: $kendo-selected-bg !default;
+$kendo-gantt-task-border-width: 0px !default;
+$kendo-gantt-task-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-gantt-task-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-gantt-task-bg: k-try-tint( $kendo-gantt-text, 2 ) !default;
+$kendo-gantt-task-text: k-contrast-color( $kendo-gantt-text ) !default;
+$kendo-gantt-task-border: null !default;
+$kendo-gantt-task-progress-bg: $kendo-gantt-text !default;
+$kendo-gantt-task-selected-bg: k-try-tint( $kendo-selected-bg, 6 ) !default;
+$kendo-gantt-task-selected-text: $kendo-selected-text !default;
+$kendo-gantt-task-selected-border: null !default;
+$kendo-gantt-task-progress-selected-bg: $kendo-selected-bg !default;
 
-$gantt-planned-margin-y: .35em !default;
-$gantt-planned-border-width: 2px !default;
-$gantt-planned-line-height: .75em !default;
+$kendo-gantt-planned-margin-y: .35em !default;
+$kendo-gantt-planned-border-width: 2px !default;
+$kendo-gantt-planned-line-height: .75em !default;
 
-$gantt-planned-dependency-margin-y: .55em !default;
+$kendo-gantt-planned-dependency-margin-y: .55em !default;
 
-$gantt-planned-moment-width: 6px !default;
-$gantt-planned-moment-height: $gantt-planned-moment-width !default;
-$gantt-planned-moment-border-radius: calc( ( #{$gantt-planned-border-width * 2} + #{$gantt-planned-moment-width} ) / 2 ) !default;
-$gantt-planned-moment-left-margin-x: calc( #{k-math-div( $gantt-planned-border-width, 2 )} - #{$gantt-planned-moment-border-radius} ) !default;
-$gantt-planned-milestone-moment-margin-x: k-math-div( $gantt-planned-moment-width, 2 ) !default;
+$kendo-gantt-planned-moment-width: 6px !default;
+$kendo-gantt-planned-moment-height: $kendo-gantt-planned-moment-width !default;
+$kendo-gantt-planned-moment-border-radius: calc( ( #{$kendo-gantt-planned-border-width * 2} + #{$kendo-gantt-planned-moment-width} ) / 2 ) !default;
+$kendo-gantt-planned-moment-left-margin-x: calc( #{k-math-div( $kendo-gantt-planned-border-width, 2 )} - #{$kendo-gantt-planned-moment-border-radius} ) !default;
+$kendo-gantt-planned-milestone-moment-margin-x: k-math-div( $kendo-gantt-planned-moment-width, 2 ) !default;
 
-$gantt-planned-duration-height: $gantt-planned-border-width !default;
-$gantt-planned-duration-hover-height: calc( #{$gantt-planned-border-width} + 1px ) !default;
+$kendo-gantt-planned-duration-height: $kendo-gantt-planned-border-width !default;
+$kendo-gantt-planned-duration-hover-height: calc( #{$kendo-gantt-planned-border-width} + 1px ) !default;
 
-$gantt-planned-single-drag-hint-top: 0 !default;
-$gantt-planned-summary-drag-hint-top: .5em !default;
-$gantt-planned-milestone-drag-hint-top: .3em !default;
+$kendo-gantt-planned-single-drag-hint-top: 0 !default;
+$kendo-gantt-planned-summary-drag-hint-top: .5em !default;
+$kendo-gantt-planned-milestone-drag-hint-top: .3em !default;
 
-$gantt-rtl-milestone-wrap-margin-x: -2.4em !default;
-$gantt-rtl-milestone-planned-moment-margin-x: .2em !default;
-$gantt-rtl-milestone-dot-start-margin-x: -.1em !default;
+$kendo-gantt-rtl-milestone-wrap-margin-x: -2.4em !default;
+$kendo-gantt-rtl-milestone-planned-moment-margin-x: .2em !default;
+$kendo-gantt-rtl-milestone-dot-start-margin-x: -.1em !default;
 
-$gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
+$kendo-gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
 
-$gantt-planned-bg: $kendo-color-primary !default;
-$gantt-planned-border: $gantt-planned-bg !default;
+$kendo-gantt-planned-bg: $kendo-color-primary !default;
+$kendo-gantt-planned-border: $kendo-gantt-planned-bg !default;
 
-$gantt-delayed-bg: $kendo-color-error !default;
-$gantt-delayed-bg-lighter: k-color-tint($gantt-delayed-bg, 5) !default;
+$kendo-gantt-delayed-bg: $kendo-color-error !default;
+$kendo-gantt-delayed-bg-lighter: k-color-tint($kendo-gantt-delayed-bg, 5) !default;
 
-$gantt-advanced-bg: $kendo-color-success !default;
-$gantt-advanced-bg-lighter: k-color-tint($gantt-advanced-bg, 5) !default;
+$kendo-gantt-advanced-bg: $kendo-color-success !default;
+$kendo-gantt-advanced-bg-lighter: k-color-tint($kendo-gantt-advanced-bg, 5) !default;
 
-$gantt-action-on-offset-text: #000000 !default;
-$gantt-offset-resize-handler-top: 50% !default;
+$kendo-gantt-action-on-offset-text: #000000 !default;
+$kendo-gantt-offset-resize-handler-top: 50% !default;
 
-$gantt-validation-tooltip-width: 200px !default;
-$gantt-validation-tooltip-label-width: 50px !default;
-$gantt-validation-tooltip-border: #656565 !default;
-$gantt-validation-tooltip-valid-border: $kendo-color-success !default;
-$gantt-validation-tooltip-invalid-border: $kendo-color-error !default;
+$kendo-gantt-validation-tooltip-width: 200px !default;
+$kendo-gantt-validation-tooltip-label-width: 50px !default;
+$kendo-gantt-validation-tooltip-border: #656565 !default;
+$kendo-gantt-validation-tooltip-valid-border: $kendo-color-success !default;
+$kendo-gantt-validation-tooltip-invalid-border: $kendo-color-error !default;

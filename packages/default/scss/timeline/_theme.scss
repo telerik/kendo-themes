@@ -2,32 +2,32 @@
 
     .k-timeline {
         .k-timeline-flag {
-            color: $timeline-flag-text;
-            background-color: $timeline-flag-bg;
+            color: $kendo-timeline-flag-text;
+            background-color: $kendo-timeline-flag-bg;
         }
 
         .k-timeline-circle {
-            background-color: $timeline-circle-bg;
+            background-color: $kendo-timeline-circle-bg;
         }
 
         .k-timeline-card {
             .k-card-header {
-                background-color: $card-bg;
-                color: $card-text;
+                background-color: $kendo-card-bg;
+                color: $kendo-card-text;
             }
 
             .k-card-body {
 
                 // Scrollbar styles for Mozilla
-                scrollbar-color: $card-border $card-bg;
+                scrollbar-color: $kendo-card-border $kendo-card-bg;
 
                 // Scrollbar styles for Chrome, Safari and Opera
                 &::-webkit-scrollbar-track {
-                    background: $card-bg;
+                    background: $kendo-card-bg;
                 }
 
                 &::-webkit-scrollbar-thumb {
-                    background: $card-border;
+                    background: $kendo-card-border;
                 }
 
                 &::-webkit-scrollbar-thumb:hover {
@@ -43,25 +43,25 @@
 
         .k-timeline-arrow.k-disabled {
             opacity: 1; // The arrow button in disabled mode should have a solid background
-            color: $timeline-track-arrow-disabled-text;
-            background-color: $timeline-track-arrow-disabled-bg;
-            border-color: $timeline-track-arrow-disabled-border;
+            color: $kendo-timeline-track-arrow-disabled-text;
+            background-color: $kendo-timeline-track-arrow-disabled-bg;
+            border-color: $kendo-timeline-track-arrow-disabled-border;
         }
     }
 
     .k-timeline-vertical,
     .k-timeline-horizontal .k-timeline-track-wrap {
         &::after {
-            background-color: $timeline-track-bg;
-            border-color: $timeline-track-border-color;
+            background-color: $kendo-timeline-track-bg;
+            border-color: $kendo-timeline-track-border-color;
         }
     }
 
     .k-timeline-horizontal .k-timeline-flag::after {
-        background-color: $timeline-flag-bg;
+        background-color: $kendo-timeline-flag-bg;
     }
 
     .k-timeline-track-item.k-focus .k-timeline-circle {
-        @include focus-indicator( $timeline-track-item-focus-shadow );
+        @include focus-indicator( $kendo-timeline-track-item-focus-shadow );
     }
 }

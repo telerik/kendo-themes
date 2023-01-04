@@ -155,6 +155,10 @@ $kendo-breadcrumb-root-link-focus-hover-bg: $kendo-breadcrumb-link-focus-hover-b
 /// @group breadcrumb
 $kendo-breadcrumb-root-link-disabled-text: $kendo-breadcrumb-link-disabled-text !default;
 
+$kendo-breadcrumb-current-item-bg: null !default;
+$kendo-breadcrumb-current-item-text: null !default;
+$kendo-breadcrumb-current-item-border: null !default;
+
 /// The horizontal padding of the breadcrumb link icon
 /// @group breadcrumb
 $kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-link-padding-x !default;

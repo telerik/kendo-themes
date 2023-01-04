@@ -4,19 +4,19 @@
     kendo-scrollview.k-scrollview-wrap,
     .k-scrollview {
         @include fill(
-            $scrollview-text,
-            $scrollview-bg,
-            $scrollview-border
+            $kendo-scrollview-text,
+            $kendo-scrollview-bg,
+            $kendo-scrollview-border
         );
 
         &.k-scrollview-dark {
             kendo-scrollview-pager,
             .k-scrollview-nav-wrap {
-                background-color: $scrollview-dark-bg;
+                background-color: $kendo-scrollview-dark-bg;
             }
             .k-scrollview-next,
             .k-scrollview-prev {
-                color: $scrollview-dark-bg;
+                color: $kendo-scrollview-dark-bg;
 
             }
         }
@@ -24,7 +24,7 @@
         &.k-scrollview-light {
             kendo-scrollview-pager,
             .k-scrollview-nav-wrap {
-                background-color: $scrollview-light-bg;
+                background-color: $kendo-scrollview-light-bg;
             }
 
         }
@@ -38,26 +38,26 @@
 
     .k-scrollview-next,
     .k-scrollview-prev {
-        color: $scrollview-navigation-color;
-        background-color: $scrollview-navigation-bg;
-        text-shadow: $scrollview-navigation-icon-shadow;
-        opacity: $scrollview-navigation-default-opacity;
+        color: $kendo-scrollview-navigation-color;
+        background-color: $kendo-scrollview-navigation-bg;
+        text-shadow: $kendo-scrollview-navigation-icon-shadow;
+        opacity: $kendo-scrollview-navigation-default-opacity;
         outline-width: 0;
 
         &:focus,
         &.k-focus {
-            color: $scrollview-navigation-color;
-            opacity: $scrollview-navigation-hover-opacity;
+            color: $kendo-scrollview-navigation-color;
+            opacity: $kendo-scrollview-navigation-hover-opacity;
             .k-icon::before {
-                box-shadow: $scrollview-pagebutton-shadow;
-                background-color: $scrollview-navigation-hover-span-bg;
+                box-shadow: $kendo-scrollview-pagebutton-shadow;
+                background-color: $kendo-scrollview-navigation-hover-span-bg;
             }
         }
 
         &:hover,
         &.k-hover {
-            color: $scrollview-navigation-color;
-            opacity: $scrollview-navigation-hover-opacity;
+            color: $kendo-scrollview-navigation-color;
+            opacity: $kendo-scrollview-navigation-hover-opacity;
 
         }
     }
@@ -66,24 +66,24 @@
 
     .k-scrollview-pageable > .k-button,
     .k-scrollview-nav > .k-link {
-        background-color: $scrollview-pagebutton-bg;
-        border-color: $scrollview-pagebutton-border;
+        background-color: $kendo-scrollview-pagebutton-bg;
+        border-color: $kendo-scrollview-pagebutton-border;
 
         &.k-primary {
-            background: $scrollview-pagebutton-primary-bg;
-            border: $scrollview-pagebutton-primary-border;
+            background: $kendo-scrollview-pagebutton-primary-bg;
+            border: $kendo-scrollview-pagebutton-primary-border;
         }
 
 
         &:focus,
         &.k-focus {
-            box-shadow: $scrollview-pagebutton-shadow;
+            box-shadow: $kendo-scrollview-pagebutton-shadow;
         }
     }
 
     .k-scrollview-nav > .k-link:hover,
     .k-scrollview-nav > .k-link.k-hover {
-        box-shadow: $scrollview-pagebutton-shadow;
+        box-shadow: $kendo-scrollview-pagebutton-shadow;
     }
 
     .k-scrollview-pageable > .k-button {

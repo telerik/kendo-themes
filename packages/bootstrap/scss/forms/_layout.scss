@@ -6,9 +6,9 @@
     .k-form,
     .k-form-inline {
         legend {
-            font-size: $font-size * 1.5;
+            font-size: $kendo-font-size-md * 1.5;
             font-weight: normal;
-            line-height: $line-height;
+            line-height: $kendo-line-height-md;
             text-transform: none;
         }
 

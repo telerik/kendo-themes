@@ -1,68 +1,68 @@
 // Card
-$card-padding-x: $card-spacer-x !default;
-$card-padding-y: $card-spacer-y !default;
-$card-border-width: 1px !default;
-$card-border-radius: $card-border-radius !default;
-$card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} ) !default;
-$card-font-family: $font-family !default;
-$card-font-size: $font-size !default;
-$card-line-height: $line-height !default;
+$kendo-card-padding-x: $card-spacer-x !default;
+$kendo-card-padding-y: $card-spacer-y !default;
+$kendo-card-border-width: 1px !default;
+$kendo-card-border-radius: $card-border-radius !default;
+$kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
+$kendo-card-font-family: $kendo-font-family !default;
+$kendo-card-font-size: $kendo-font-size-md !default;
+$kendo-card-line-height: $kendo-line-height-md !default;
 
-$card-deck-gap: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-card-deck-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
-$card-bg: $kendo-component-bg !default;
-$card-text: $kendo-component-text !default;
-$card-border: $kendo-component-border !default;
-$card-shadow: null !default;
+$kendo-card-bg: $kendo-component-bg !default;
+$kendo-card-text: $kendo-component-text !default;
+$kendo-card-border: $kendo-component-border !default;
+$kendo-card-shadow: null !default;
 
-$card-focus-bg: null !default;
-$card-focus-text: null !default;
-$card-focus-border: null !default;
-$card-focus-shadow: 0 0 0 3px rgba( $card-border, .5 ) !default;
+$kendo-card-focus-bg: null !default;
+$kendo-card-focus-text: null !default;
+$kendo-card-focus-border: null !default;
+$kendo-card-focus-shadow: 0 0 0 3px rgba( $kendo-card-border, .5 ) !default;
 
-$card-header-padding-x: $card-padding-x !default;
-$card-header-padding-y: $card-padding-y !default;
-$card-header-border-width: $card-border-width !default;
-$card-header-bg: $kendo-component-header-bg !default;
-$card-header-text: $kendo-component-header-text !default;
-$card-header-border: $card-border !default;
+$kendo-card-header-padding-x: $kendo-card-padding-x !default;
+$kendo-card-header-padding-y: $kendo-card-padding-y !default;
+$kendo-card-header-border-width: $kendo-card-border-width !default;
+$kendo-card-header-bg: $kendo-component-header-bg !default;
+$kendo-card-header-text: $kendo-component-header-text !default;
+$kendo-card-header-border: $kendo-card-border !default;
 
-$card-body-padding-x: $card-padding-x !default;
-$card-body-padding-y: $card-padding-x !default; // In bootstrap, all card body paddings equal the card-spacer-x var
+$kendo-card-body-padding-x: $kendo-card-padding-x !default;
+$kendo-card-body-padding-y: $kendo-card-padding-x !default; // In bootstrap, all card body paddings equal the card-spacer-x var
 
-$card-footer-padding-x: $card-padding-x !default;
-$card-footer-padding-y: $card-padding-y !default;
-$card-footer-border-width: $card-border-width !default;
-$card-footer-bg: $card-header-bg !default;
-$card-footer-text: $card-header-text !default;
-$card-footer-border: $card-header-border !default;
+$kendo-card-footer-padding-x: $kendo-card-padding-x !default;
+$kendo-card-footer-padding-y: $kendo-card-padding-y !default;
+$kendo-card-footer-border-width: $kendo-card-border-width !default;
+$kendo-card-footer-bg: $kendo-card-header-bg !default;
+$kendo-card-footer-text: $kendo-card-header-text !default;
+$kendo-card-footer-border: $kendo-card-header-border !default;
 
-$card-title-margin-bottom: k-map-get( $kendo-spacing, 3 ) !default;
-$card-title-font-size: $h5-font-size !default;
-$card-title-font-family: $headings-font-family !default;
-$card-title-line-height: $headings-line-height !default;
-$card-title-font-weight: $headings-font-weight !default;
-$card-title-letter-spacing: null !default;
+$kendo-card-title-margin-bottom: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-card-title-font-size: $kendo-h5-font-size !default;
+$kendo-card-title-font-family: $headings-font-family !default;
+$kendo-card-title-line-height: $headings-line-height !default;
+$kendo-card-title-font-weight: $headings-font-weight !default;
+$kendo-card-title-letter-spacing: null !default;
 
-$card-subtitle-margin-bottom: k-map-get( $kendo-spacing, 3 ) !default;
-$card-subtitle-font-size: $h6-font-size !default;
-$card-subtitle-font-family: $headings-font-family !default;
-$card-subtitle-line-height: $headings-line-height !default;
-$card-subtitle-font-weight: $headings-font-weight !default;
-$card-subtitle-letter-spacing: null !default;
-$card-subtitle-text: $kendo-subtle-text !default;
+$kendo-card-subtitle-margin-bottom: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-card-subtitle-font-size: $kendo-h6-font-size !default;
+$kendo-card-subtitle-font-family: $headings-font-family !default;
+$kendo-card-subtitle-line-height: $headings-line-height !default;
+$kendo-card-subtitle-font-weight: $headings-font-weight !default;
+$kendo-card-subtitle-letter-spacing: null !default;
+$kendo-card-subtitle-text: $kendo-subtle-text !default;
 
-$card-img-max-width: 100px !default;
-$card-avatar-size: 45px !default;
-$card-avatar-spacing: $card-header-padding-x !default;
+$kendo-card-img-max-width: 100px !default;
+$kendo-card-avatar-size: 45px !default;
+$kendo-card-avatar-spacing: $kendo-card-header-padding-x !default;
 
-$card-actions-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$card-actions-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$card-actions-border-width: 1px !default;
-$card-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-card-actions-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-card-actions-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-card-actions-border-width: 1px !default;
+$kendo-card-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
-$card-deck-scroll-button-radius: 0px !default;
-$card-deck-scroll-button-offset: -$kendo-button-border-width !default;
+$kendo-card-deck-scroll-button-radius: 0px !default;
+$kendo-card-deck-scroll-button-offset: -$kendo-button-border-width !default;
 
-$card-callout-width: 1.3em !default;
-$card-callout-height: 1.3em !default;
+$kendo-card-callout-width: 1.3em !default;
+$kendo-card-callout-height: 1.3em !default;

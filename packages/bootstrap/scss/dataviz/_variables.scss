@@ -5,135 +5,135 @@
 
 /// The first base series color and its light and dark shades.
 /// @group charts
-$series-a: $blue !default;
-$series-a-dark: k-color-mix( black, $series-a, 25% ) !default;
-$series-a-darker: k-color-mix( black, $series-a, 50% ) !default;
-$series-a-light: k-color-mix( white, $series-a, 25% ) !default;
-$series-a-lighter: k-color-mix( white, $series-a, 50% ) !default;
+$kendo-series-a: $blue !default;
+$kendo-series-a-dark: k-color-mix( black, $kendo-series-a, 25% ) !default;
+$kendo-series-a-darker: k-color-mix( black, $kendo-series-a, 50% ) !default;
+$kendo-series-a-light: k-color-mix( white, $kendo-series-a, 25% ) !default;
+$kendo-series-a-lighter: k-color-mix( white, $kendo-series-a, 50% ) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
-$series-b: $purple !default;
-$series-b-dark: k-color-mix( black, $series-b, 25% ) !default;
-$series-b-darker: k-color-mix( black, $series-b, 50% ) !default;
-$series-b-light: k-color-mix( white, $series-b, 25% ) !default;
-$series-b-lighter: k-color-mix( white, $series-b, 50% ) !default;
+$kendo-series-b: $purple !default;
+$kendo-series-b-dark: k-color-mix( black, $kendo-series-b, 25% ) !default;
+$kendo-series-b-darker: k-color-mix( black, $kendo-series-b, 50% ) !default;
+$kendo-series-b-light: k-color-mix( white, $kendo-series-b, 25% ) !default;
+$kendo-series-b-lighter: k-color-mix( white, $kendo-series-b, 50% ) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
-$series-c: $teal !default;
-$series-c-dark: k-color-mix( black, $series-c, 25% ) !default;
-$series-c-darker: k-color-mix( black, $series-c, 50% ) !default;
-$series-c-light: k-color-mix( white, $series-c, 25% ) !default;
-$series-c-lighter: k-color-mix( white, $series-c, 50% ) !default;
+$kendo-series-c: $teal !default;
+$kendo-series-c-dark: k-color-mix( black, $kendo-series-c, 25% ) !default;
+$kendo-series-c-darker: k-color-mix( black, $kendo-series-c, 50% ) !default;
+$kendo-series-c-light: k-color-mix( white, $kendo-series-c, 25% ) !default;
+$kendo-series-c-lighter: k-color-mix( white, $kendo-series-c, 50% ) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
-$series-d: $green !default;
-$series-d-dark: k-color-mix( black, $series-d, 25% ) !default;
-$series-d-darker: k-color-mix( black, $series-d, 50% ) !default;
-$series-d-light: k-color-mix( white, $series-d, 25% ) !default;
-$series-d-lighter: k-color-mix( white, $series-d, 50% ) !default;
+$kendo-series-d: $green !default;
+$kendo-series-d-dark: k-color-mix( black, $kendo-series-d, 25% ) !default;
+$kendo-series-d-darker: k-color-mix( black, $kendo-series-d, 50% ) !default;
+$kendo-series-d-light: k-color-mix( white, $kendo-series-d, 25% ) !default;
+$kendo-series-d-lighter: k-color-mix( white, $kendo-series-d, 50% ) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
-$series-e: $yellow !default;
-$series-e-dark: k-color-mix( black, $series-e, 25% ) !default;
-$series-e-darker: k-color-mix( black, $series-e, 50% ) !default;
-$series-e-light: k-color-mix( white, $series-e, 25% ) !default;
-$series-e-lighter: k-color-mix( white, $series-e, 50% ) !default;
+$kendo-series-e: $yellow !default;
+$kendo-series-e-dark: k-color-mix( black, $kendo-series-e, 25% ) !default;
+$kendo-series-e-darker: k-color-mix( black, $kendo-series-e, 50% ) !default;
+$kendo-series-e-light: k-color-mix( white, $kendo-series-e, 25% ) !default;
+$kendo-series-e-lighter: k-color-mix( white, $kendo-series-e, 50% ) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
-$series-f: $red !default;
-$series-f-dark: k-color-mix( black, $series-f, 25% ) !default;
-$series-f-darker: k-color-mix( black, $series-f, 50% ) !default;
-$series-f-light: k-color-mix( white, $series-f, 25% ) !default;
-$series-f-lighter: k-color-mix( white, $series-f, 50% ) !default;
+$kendo-series-f: $red !default;
+$kendo-series-f-dark: k-color-mix( black, $kendo-series-f, 25% ) !default;
+$kendo-series-f-darker: k-color-mix( black, $kendo-series-f, 50% ) !default;
+$kendo-series-f-light: k-color-mix( white, $kendo-series-f, 25% ) !default;
+$kendo-series-f-lighter: k-color-mix( white, $kendo-series-f, 50% ) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker
 /// @group charts
-$series-1: $series-a !default;
-$series-2: $series-b !default;
-$series-3: $series-c !default;
-$series-4: $series-d !default;
-$series-5: $series-e !default;
-$series-6: $series-f !default;
-$series-7: $series-a-light !default;
-$series-8: $series-b-light !default;
-$series-9: $series-c-light !default;
-$series-10: $series-d-light !default;
-$series-11: $series-e-light !default;
-$series-12: $series-f-light !default;
-$series-13: $series-a-dark !default;
-$series-14: $series-b-dark !default;
-$series-15: $series-c-dark !default;
-$series-16: $series-d-dark !default;
-$series-17: $series-e-dark !default;
-$series-18: $series-f-dark !default;
-$series-19: $series-a-lighter !default;
-$series-20: $series-b-lighter !default;
-$series-21: $series-c-lighter !default;
-$series-22: $series-d-lighter !default;
-$series-23: $series-e-lighter !default;
-$series-24: $series-f-lighter !default;
-$series-25: $series-a-darker !default;
-$series-26: $series-b-darker !default;
-$series-27: $series-c-darker !default;
-$series-28: $series-d-darker !default;
-$series-29: $series-e-darker !default;
-$series-30: $series-f-darker !default;
+$kendo-series-1: $kendo-series-a !default;
+$kendo-series-2: $kendo-series-b !default;
+$kendo-series-3: $kendo-series-c !default;
+$kendo-series-4: $kendo-series-d !default;
+$kendo-series-5: $kendo-series-e !default;
+$kendo-series-6: $kendo-series-f !default;
+$kendo-series-7: $kendo-series-a-light !default;
+$kendo-series-8: $kendo-series-b-light !default;
+$kendo-series-9: $kendo-series-c-light !default;
+$kendo-series-10: $kendo-series-d-light !default;
+$kendo-series-11: $kendo-series-e-light !default;
+$kendo-series-12: $kendo-series-f-light !default;
+$kendo-series-13: $kendo-series-a-dark !default;
+$kendo-series-14: $kendo-series-b-dark !default;
+$kendo-series-15: $kendo-series-c-dark !default;
+$kendo-series-16: $kendo-series-d-dark !default;
+$kendo-series-17: $kendo-series-e-dark !default;
+$kendo-series-18: $kendo-series-f-dark !default;
+$kendo-series-19: $kendo-series-a-lighter !default;
+$kendo-series-20: $kendo-series-b-lighter !default;
+$kendo-series-21: $kendo-series-c-lighter !default;
+$kendo-series-22: $kendo-series-d-lighter !default;
+$kendo-series-23: $kendo-series-e-lighter !default;
+$kendo-series-24: $kendo-series-f-lighter !default;
+$kendo-series-25: $kendo-series-a-darker !default;
+$kendo-series-26: $kendo-series-b-darker !default;
+$kendo-series-27: $kendo-series-c-darker !default;
+$kendo-series-28: $kendo-series-d-darker !default;
+$kendo-series-29: $kendo-series-e-darker !default;
+$kendo-series-30: $kendo-series-f-darker !default;
 
-$chart-border-width: 0px !default;
-$chart-font-family: $font-family !default;
-$chart-font-size: $font-size !default;
-$chart-line-height: $line-height !default;
-$chart-font-size-sm: 11px !default;
-$chart-font-size-md: 12px !default;
-$chart-font-size-lg: 16px !default;
-$chart-tooltip-font-size: ($font-size * .929) !default;
-$chart-label-font-size: .857em !default;
-$chart-title-font-size: 1.143em !default;
-$chart-pane-title-font-size: $chart-label-font-size !default;
-$chart-pane-title-font-weight: $font-weight-normal !default;
+$kendo-chart-border-width: 0px !default;
+$kendo-chart-font-family: $kendo-font-family !default;
+$kendo-chart-font-size: $kendo-font-size-md !default;
+$kendo-chart-line-height: $kendo-line-height-md !default;
+$kendo-chart-sm-font-size: 11px !default;
+$kendo-chart-md-font-size: 12px !default;
+$kendo-chart-lg-font-size: 16px !default;
+$kendo-chart-tooltip-font-size: ($kendo-font-size-md * .929) !default;
+$kendo-chart-label-font-size: .857em !default;
+$kendo-chart-title-font-size: 1.143em !default;
+$kendo-chart-pane-title-font-size: $kendo-chart-label-font-size !default;
+$kendo-chart-pane-title-font-weight: $kendo-font-weight-normal !default;
 
 /// The color of the Chart grid lines (major).
 /// @group charts
-$chart-major-lines: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
+$kendo-chart-major-lines: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
 
 /// The color of the Chart grid lines (minor).
 /// @group charts
-$chart-minor-lines: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .04 ) !default;
+$kendo-chart-minor-lines: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 ) !default;
 
-$chart-inactive: rgba( $kendo-body-text, .5 ) !default;
-$chart-area-opacity: .6 !default;
-$chart-area-inactive-opacity: .1 !default;
-$chart-line-inactive-opacity: .3 !default;
+$kendo-chart-inactive: rgba( $kendo-body-text, .5 ) !default;
+$kendo-chart-area-opacity: .6 !default;
+$kendo-chart-area-inactive-opacity: .1 !default;
+$kendo-chart-line-inactive-opacity: .3 !default;
 
-$chart-tooltip-transition: left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1) !default;
+$kendo-chart-tooltip-transition: left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1) !default;
 
-$chart-bg: $kendo-component-bg !default;
-$chart-text: $kendo-component-text !default;
-$chart-border: $kendo-component-border !default;
+$kendo-chart-bg: $kendo-component-bg !default;
+$kendo-chart-text: $kendo-component-text !default;
+$kendo-chart-border: $kendo-component-border !default;
 
-$chart-crosshair-background: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
-$chart-crosshair-shared-tooltip-color: $chart-text !default;
-$chart-crosshair-shared-tooltip-background: k-try-shade( $chart-bg, 1 ) !default;
-$chart-crosshair-shared-tooltip-border: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08) !default;
+$kendo-chart-crosshair-background: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-text !default;
+$kendo-chart-crosshair-shared-tooltip-background: k-try-shade( $kendo-chart-bg, 1 ) !default;
+$kendo-chart-crosshair-shared-tooltip-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08) !default;
 
-$chart-notes-background: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
-$chart-notes-border: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
-$chart-notes-lines: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$kendo-chart-notes-background: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$kendo-chart-notes-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$kendo-chart-notes-lines: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
 
-$error-bars-background: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$kendo-chart-error-bars-background: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
 
-$selection-handle-size: 22px !default;
-$selection-border-color: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
-$selection-shadow: inset 0 1px 7px rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .15) !default;
+$kendo-chart-selection-handle-size: 22px !default;
+$kendo-chart-selection-border-color: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
+$kendo-chart-selection-shadow: inset 0 1px 7px rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .15) !default;
 
 
 // TreeMap
-$treemap-font-family: $font-family !default;
-$treemap-font-size: $font-size !default;
-$treemap-line-height: $line-height !default;
+$kendo-treemap-font-family: $kendo-font-family !default;
+$kendo-treemap-font-size: $kendo-font-size-md !default;
+$kendo-treemap-line-height: $kendo-line-height-md !default;

@@ -3,9 +3,9 @@
     // Wrapper
     .k-tabstrip-wrapper {
         @include fill(
-            $tabstrip-wrapper-text,
-            $tabstrip-wrapper-bg,
-            $tabstrip-wrapper-border
+            $kendo-tabstrip-wrapper-text,
+            $kendo-tabstrip-wrapper-bg,
+            $kendo-tabstrip-wrapper-border
         );
     }
 
@@ -13,26 +13,26 @@
     // Items
     .k-tabstrip-items-wrapper {
         @include fill(
-            $tabstrip-text,
-            $tabstrip-bg,
-            $tabstrip-border
+            $kendo-tabstrip-text,
+            $kendo-tabstrip-bg,
+            $kendo-tabstrip-border
         );
 
         .k-item {
             @include fill(
-                $tabstrip-item-text,
-                $tabstrip-item-bg,
-                $tabstrip-item-border,
-                $tabstrip-item-gradient
+                $kendo-tabstrip-item-text,
+                $kendo-tabstrip-item-bg,
+                $kendo-tabstrip-item-border,
+                $kendo-tabstrip-item-gradient
             );
 
             &:hover,
             &.k-hover {
                 @include fill(
-                    $tabstrip-item-hover-text,
-                    $tabstrip-item-hover-bg,
-                    $tabstrip-item-hover-border,
-                    $tabstrip-item-hover-gradient
+                    $kendo-tabstrip-item-hover-text,
+                    $kendo-tabstrip-item-hover-bg,
+                    $kendo-tabstrip-item-hover-border,
+                    $kendo-tabstrip-item-hover-gradient
                 );
             }
 
@@ -40,20 +40,20 @@
             &.k-active,
             &.k-selected {
                 @include fill(
-                    $tabstrip-item-selected-text,
-                    $tabstrip-item-selected-bg,
-                    $tabstrip-item-selected-border,
-                    $tabstrip-item-selected-gradient
+                    $kendo-tabstrip-item-selected-text,
+                    $kendo-tabstrip-item-selected-bg,
+                    $kendo-tabstrip-item-selected-border,
+                    $kendo-tabstrip-item-selected-gradient
                 );
             }
 
             &:focus,
             &.k-focus {
-                @include focus-indicator( $tabstrip-item-focus-shadow, true );
+                @include focus-indicator( $kendo-tabstrip-item-focus-shadow, true );
             }
 
             &.k-tabstrip-dragging {
-                @include focus-indicator( $tabstrip-item-dragging-shadow );
+                @include focus-indicator( $kendo-tabstrip-item-dragging-shadow );
             }
         }
 
@@ -64,24 +64,24 @@
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
         @include fill(
-            $tabstrip-content-text,
-            $tabstrip-content-bg,
-            $tabstrip-content-border
+            $kendo-tabstrip-content-text,
+            $kendo-tabstrip-content-bg,
+            $kendo-tabstrip-content-border
         );
 
         &:focus,
         &.k-focus {
-            outline-color: $tabstrip-content-focus-border;
+            outline-color: $kendo-tabstrip-content-focus-border;
         }
     }
 
 
     // Selected indicator
-    @if ($tabstrip-indicator-size) {
+    @if ($kendo-tabstrip-indicator-size) {
 
         .k-tabstrip-items-wrapper {
             .k-item.k-active::after {
-                border-color: $tabstrip-indicator-color;
+                border-color: $kendo-tabstrip-indicator-color;
             }
         }
     }

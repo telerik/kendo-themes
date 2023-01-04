@@ -1,17 +1,17 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-mediaplayer--layout() {
+@mixin kendo-media-player--layout() {
 
     // Base
     .k-mediaplayer {
-        border-width: var( --kendo-mediaplayer-border-width, #{$kendo-mediaplayer-border-width} );
+        border-width: var( --kendo-media-player-border-width, #{$kendo-media-player-border-width} );
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: var( --kendo-mediaplayer-font-family, #{$kendo-mediaplayer-font-family} );
-        font-size: var( --kendo-mediaplayer-font-size, #{$kendo-mediaplayer-font-size} );
-        line-height: var( --kendo-mediaplayer-line-height, #{$kendo-mediaplayer-line-height} );
+        font-family: var( --kendo-media-player-font-family, #{$kendo-media-player-font-family} );
+        font-size: var( --kendo-media-player-font-size, #{$kendo-media-player-font-size} );
+        line-height: var( --kendo-media-player-line-height, #{$kendo-media-player-line-height} );
         display: block;
         position: relative;
         -webkit-touch-callout: none;
@@ -40,8 +40,8 @@
 
     // Title bar
     .k-mediaplayer-titlebar {
-        padding-inline: var( --kendo-mediaplayer-titlebar-padding-x, #{$kendo-mediaplayer-titlebar-padding-x} );
-        padding-block: var( --kendo-mediaplayer-titlebar-padding-y, #{$kendo-mediaplayer-titlebar-padding-y} );
+        padding-inline: var( --kendo-media-player-titlebar-padding-x, #{$kendo-media-player-titlebar-padding-x} );
+        padding-block: var( --kendo-media-player-titlebar-padding-y, #{$kendo-media-player-titlebar-padding-y} );
         position: absolute;
         z-index: 2;
         top: 0;

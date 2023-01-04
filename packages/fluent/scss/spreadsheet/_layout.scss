@@ -52,7 +52,7 @@
 
     // Quick access toolbar
     .k-spreadsheet-quick-access-toolbar {
-        padding: var( --kendo-toolbar-padding-y-md, #{$kendo-toolbar-padding-y-md} );
+        padding: var( --kendo-toolbar-md-padding-y, #{$kendo-toolbar-md-padding-y} );
         display: inline-flex;
         flex-direction: row;
         position: absolute;
@@ -149,9 +149,9 @@
         }
 
         .k-spreadsheet-formula-input {
-            padding-inline: var( --kendo-input-padding-x-md, #{$kendo-input-padding-x-md} );
-            padding-block: var( --kendo-input-padding-y-md, #{$kendo-input-padding-y-md} );
-            line-height: var( --kendo-input-line-height-md, #{$kendo-input-line-height-md} );
+            padding-inline: var( --kendo-input-md-padding-x, #{$kendo-input-md-padding-x} );
+            padding-block: var( --kendo-input-md-padding-y, #{$kendo-input-md-padding-y} );
+            line-height: var( --kendo-input-md-line-height, #{$kendo-input-md-line-height} );
 
             &.k-spreadsheet-array-formula {
                 &::before {
@@ -190,8 +190,8 @@
         min-width: 100px;
 
         .k-item {
-            padding-inline: var( --kendo-list-item-padding-x-md, #{$kendo-list-item-padding-x-md} );
-            padding-block: var( --kendo-list-item-padding-y-md, #{$kendo-list-item-padding-y-md} );
+            padding-inline: var( --kendo-list-md-item-padding-x, #{$kendo-list-md-item-padding-x} );
+            padding-block: var( --kendo-list-md-item-padding-y, #{$kendo-list-md-item-padding-y} );
         }
     }
     .k-syntax-func,
@@ -588,7 +588,7 @@
                 color: inherit;
             }
             .k-link {
-                padding-inline-start: var( --filter-menu-padding-left, #{$filter-menu-padding-left} );
+                padding-inline-start: var( --filter-menu-padding-left, #{$kendo-filter-menu-padding-left} );
             }
             .k-icon {
                 margin-inline-start: calc(-1 * ( var( --kendo-icon-size, 1rem ) + #{$kendo-padding-md-y} ) );
@@ -624,8 +624,8 @@
         }
         .k-details-summary,
         .k-columnmenu-item {
-            padding-block: var( --kendo-menu-popup-item-padding-y-md, #{$kendo-menu-popup-item-padding-y-md} );
-            padding-inline: var( --kendo-menu-popup-item-padding-x-md, #{$kendo-menu-popup-item-padding-x-md} );
+            padding-block: var( --kendo-menu-popup-md-item-padding-y, #{$kendo-menu-popup-md-item-padding-y} );
+            padding-inline: var( --kendo-menu-popup-md-item-padding-x, #{$kendo-menu-popup-md-item-padding-x} );
             display: flex;
             align-items: center;
             cursor: pointer;

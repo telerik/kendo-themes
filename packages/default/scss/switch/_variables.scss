@@ -67,7 +67,7 @@ $kendo-switch-off-track-focus-border: null !default;
 $kendo-switch-off-track-focus-gradient: null !default;
 /// The ring around the track when the focused switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-ring: 2px solid rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ) , .08 ) !default;
+$kendo-switch-off-track-focus-ring: 2px solid rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ) , .08 ) !default;
 
 /// The background of the track when the disabled switch is not checked.
 /// @group switch
@@ -84,13 +84,13 @@ $kendo-switch-off-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-bg: $base-bg !default;
+$kendo-switch-off-thumb-bg: $kendo-base-bg !default;
 /// The text color of the thumb when the switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-text: $base-text !default;
+$kendo-switch-off-thumb-text: $kendo-base-text !default;
 /// The border color of the thumb when the switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-border: $base-border !default;
+$kendo-switch-off-thumb-border: $kendo-base-border !default;
 /// The background gradient of the thumb when the switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-gradient: null !default;
@@ -166,13 +166,13 @@ $kendo-switch-on-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-bg: $base-bg !default;
+$kendo-switch-on-thumb-bg: $kendo-base-bg !default;
 /// The text color of the thumb when the switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-text: $base-text !default;
+$kendo-switch-on-thumb-text: $kendo-base-text !default;
 /// The border color of the thumb when the switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-border: $base-border !default;
+$kendo-switch-on-thumb-border: $kendo-base-border !default;
 /// The background gradient of the thumb when the switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-gradient: null !default;

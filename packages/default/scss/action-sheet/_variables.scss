@@ -1,87 +1,87 @@
 // Action sheet
 
-$actionsheet-padding-x: null !default;
-$actionsheet-padding-y: null !default;
-$actionsheet-width: 360px !default;
-$actionsheet-max-width: 100% !default;
-$actionsheet-height: 60vh !default;
-$actionsheet-max-height: 60vh !default;
+$kendo-actionsheet-padding-x: null !default;
+$kendo-actionsheet-padding-y: null !default;
+$kendo-actionsheet-width: 360px !default;
+$kendo-actionsheet-max-width: 100% !default;
+$kendo-actionsheet-height: 60vh !default;
+$kendo-actionsheet-max-height: 60vh !default;
 
-$actionsheet-border-width: 0px !default;
-$actionsheet-border-radius: 0px !default;
+$kendo-actionsheet-border-width: 0px !default;
+$kendo-actionsheet-border-radius: 0px !default;
 
-$actionsheet-font-size: $font-size !default;
-$actionsheet-font-family: $font-family !default;
-$actionsheet-line-height: $line-height !default;
+$kendo-actionsheet-font-size: $kendo-font-size-md !default;
+$kendo-actionsheet-font-family: $kendo-font-family !default;
+$kendo-actionsheet-line-height: $kendo-line-height-md !default;
 
-$actionsheet-bg: $kendo-component-bg !default;
-$actionsheet-text: $kendo-component-text !default;
-$actionsheet-border: $kendo-component-border !default;
-$actionsheet-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12) !default;
+$kendo-actionsheet-bg: $kendo-component-bg !default;
+$kendo-actionsheet-text: $kendo-component-text !default;
+$kendo-actionsheet-border: $kendo-component-border !default;
+$kendo-actionsheet-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12) !default;
 
 
 // Actionsheet header
-$actionsheet-titlebar-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$actionsheet-titlebar-border-width: null !default;
-$actionsheet-titlebar-font-size: null !default;
-$actionsheet-titlebar-font-family: null !default;
-$actionsheet-titlebar-line-height: null !default;
-$actionsheet-titlebar-gap: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-actionsheet-titlebar-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-actionsheet-titlebar-border-width: null !default;
+$kendo-actionsheet-titlebar-font-size: null !default;
+$kendo-actionsheet-titlebar-font-family: null !default;
+$kendo-actionsheet-titlebar-line-height: null !default;
+$kendo-actionsheet-titlebar-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
-$actionsheet-titlebar-bg: null !default;
-$actionsheet-titlebar-text: null !default;
-$actionsheet-titlebar-border: null !default;
-$actionsheet-titlebar-gradient: null !default;
-$actionsheet-titlebar-shadow: null !default;
+$kendo-actionsheet-titlebar-bg: null !default;
+$kendo-actionsheet-titlebar-text: null !default;
+$kendo-actionsheet-titlebar-border: null !default;
+$kendo-actionsheet-titlebar-gradient: null !default;
+$kendo-actionsheet-titlebar-shadow: null !default;
 
-$actionsheet-subtitle-font-size: $font-size-sm !default;
-$actionsheet-subtitle-line-height: $line-height-sm !default;
-$actionsheet-subtitle-text: $kendo-subtle-text !default;
+$kendo-actionsheet-subtitle-font-size: $kendo-font-size-sm !default;
+$kendo-actionsheet-subtitle-line-height: $kendo-line-height-sm !default;
+$kendo-actionsheet-subtitle-text: $kendo-subtle-text !default;
 
 
 // Actionsheet item
-$actionsheet-item-min-height: 40px !default;
-$actionsheet-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$actionsheet-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$actionsheet-item-border-width: 1px !default;
-$actionsheet-item-spacing: 12px !default;
+$kendo-actionsheet-item-min-height: 40px !default;
+$kendo-actionsheet-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-actionsheet-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-actionsheet-item-border-width: 1px !default;
+$kendo-actionsheet-item-spacing: 12px !default;
 
-$actionsheet-item-icon-size: null !default;
+$kendo-actionsheet-item-icon-size: null !default;
 
-$actionsheet-item-title-font-weight: null !default;
-$actionsheet-item-title-text-transform: null !default;
+$kendo-actionsheet-item-title-font-weight: null !default;
+$kendo-actionsheet-item-title-text-transform: null !default;
 
-$actionsheet-item-description-font-size: .875em !default;
-$actionsheet-item-description-text: $kendo-subtle-text !default;
+$kendo-actionsheet-item-description-font-size: .875em !default;
+$kendo-actionsheet-item-description-text: $kendo-subtle-text !default;
 
-$actionsheet-item-hover-bg: $kendo-hover-bg !default;
-$actionsheet-item-hover-text: null !default;
-$actionsheet-item-hover-border: null !default;
-$actionsheet-item-hover-gradient: null !default;
-$actionsheet-item-hover-shadow: null !default;
+$kendo-actionsheet-item-hover-bg: $kendo-hover-bg !default;
+$kendo-actionsheet-item-hover-text: null !default;
+$kendo-actionsheet-item-hover-border: null !default;
+$kendo-actionsheet-item-hover-gradient: null !default;
+$kendo-actionsheet-item-hover-shadow: null !default;
 
-$actionsheet-item-focus-bg: null !default;
-$actionsheet-item-focus-text: null !default;
-$actionsheet-item-focus-border: null !default;
-$actionsheet-item-focus-gradient: null !default;
-$actionsheet-item-focus-shadow: $kendo-focus-shadow !default;
+$kendo-actionsheet-item-focus-bg: null !default;
+$kendo-actionsheet-item-focus-text: null !default;
+$kendo-actionsheet-item-focus-border: null !default;
+$kendo-actionsheet-item-focus-gradient: null !default;
+$kendo-actionsheet-item-focus-shadow: $kendo-focus-shadow !default;
 
-$actionsheet-item-disabled-bg: null !default;
-$actionsheet-item-disabled-text: null !default;
-$actionsheet-item-disabled-border: null !default;
-$actionsheet-item-disabled-gradient: null !default;
-$actionsheet-item-disabled-shadow: null !default;
+$kendo-actionsheet-item-disabled-bg: null !default;
+$kendo-actionsheet-item-disabled-text: null !default;
+$kendo-actionsheet-item-disabled-border: null !default;
+$kendo-actionsheet-item-disabled-gradient: null !default;
+$kendo-actionsheet-item-disabled-shadow: null !default;
 
 
 // Adaptive Actionsheet
-$adaptive-actionsheet-titlebar-border-width: 1px !default;
-$adaptive-actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
-$adaptive-actionsheet-titlebar-padding-x: $adaptive-actionsheet-titlebar-padding-y !default;
-$adaptive-actionsheet-titlebar-border: $kendo-component-border !default;
+$kendo-adaptive-actionsheet-titlebar-border-width: 1px !default;
+$kendo-adaptive-actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-adaptive-actionsheet-titlebar-padding-x: $kendo-adaptive-actionsheet-titlebar-padding-y !default;
+$kendo-adaptive-actionsheet-titlebar-border: $kendo-component-border !default;
 
-$adaptive-actionsheet-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$adaptive-actionsheet-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-adaptive-actionsheet-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-adaptive-actionsheet-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 
-$adaptive-actionsheet-footer-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$adaptive-actionsheet-footer-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-adaptive-actionsheet-footer-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-adaptive-actionsheet-footer-padding-x: k-map-get( $kendo-spacing, 4 ) !default;

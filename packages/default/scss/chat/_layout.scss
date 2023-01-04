@@ -2,16 +2,16 @@
 
     .k-chat {
         margin: auto;
-        max-width: $chat-width;
-        height: $chat-height;
+        max-width: $kendo-chat-width;
+        height: $kendo-chat-height;
         max-height: 100%;
-        border-width: $chat-border-width;
+        border-width: $kendo-chat-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $chat-font-family;
-        font-size: $chat-font-size;
-        line-height: $chat-line-height;
+        font-family: $kendo-chat-font-family;
+        font-size: $kendo-chat-font-size;
+        line-height: $kendo-chat-line-height;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -30,7 +30,7 @@
             scroll-behavior: smooth;
         }
         .k-message-list-content {
-            padding: $chat-message-list-padding-y $chat-message-list-padding-x;
+            padding: $kendo-chat-message-list-padding-y $kendo-chat-message-list-padding-x;
             width: 100%;
             box-sizing: border-box;
             position: relative;
@@ -41,7 +41,7 @@
             overflow: hidden;
 
             > * + * {
-                margin-top: $chat-message-list-spacing;
+                margin-top: $kendo-chat-message-list-spacing;
             }
         }
 
@@ -60,7 +60,7 @@
             text-align: left;
 
             .k-message-time {
-                margin-left: $chat-item-spacing-x;
+                margin-left: $kendo-chat-item-spacing-x;
                 left: 100%;
             }
             .k-message-status {
@@ -69,11 +69,11 @@
 
             .k-first .k-bubble,
             .k-only .k-bubble {
-                border-bottom-left-radius: $chat-bubble-border-radius-sm;
+                border-bottom-left-radius: $kendo-chat-bubble-border-radius-sm;
             }
             .k-middle .k-bubble,
             .k-last .k-bubble {
-                @include border-left-radius( $chat-bubble-border-radius-sm );
+                @include border-left-radius( $kendo-chat-bubble-border-radius-sm );
             }
         }
         .k-message-group.k-alt {
@@ -82,7 +82,7 @@
             text-align: right;
 
             .k-message-time {
-                margin-right: $chat-item-spacing-x;
+                margin-right: $kendo-chat-item-spacing-x;
                 right: 100%;
             }
             .k-message-status {
@@ -91,11 +91,11 @@
 
             .k-first .k-bubble,
             .k-only .k-bubble {
-                border-bottom-right-radius: $chat-bubble-border-radius-sm;
+                border-bottom-right-radius: $kendo-chat-bubble-border-radius-sm;
             }
             .k-middle .k-bubble,
             .k-last .k-bubble {
-                @include border-right-radius( $chat-bubble-border-radius-sm );
+                @include border-right-radius( $kendo-chat-bubble-border-radius-sm );
             }
         }
 
@@ -103,7 +103,7 @@
         // Message
         .k-message {
             max-width: 100%;
-            margin: $chat-bubble-spacing 0 0;
+            margin: $kendo-chat-bubble-spacing 0 0;
             position: relative;
             transition: margin .2s ease-in-out;
             outline: none;
@@ -126,7 +126,7 @@
             transition: opacity .2s ease-in-out;
         }
         .k-message-status {
-            margin-top: $chat-bubble-spacing;
+            margin-top: $kendo-chat-bubble-spacing;
             height: 0;
             overflow: hidden;
             top: 100%;
@@ -136,11 +136,11 @@
 
         // Bubble
         .k-bubble {
-            @include border-radius( $chat-bubble-border-radius );
-            padding: $chat-bubble-padding-y $chat-bubble-padding-x;
+            @include border-radius( $kendo-chat-bubble-border-radius );
+            padding: $kendo-chat-bubble-padding-y $kendo-chat-bubble-padding-x;
             border-width: 1px;
             border-style: solid;
-            line-height: $chat-bubble-line-height;
+            line-height: $kendo-chat-bubble-line-height;
             word-wrap: break-word;
             white-space: pre-wrap;
 
@@ -153,7 +153,7 @@
 
         // Message states
         .k-message.k-selected {
-            margin-bottom: $chat-item-spacing-y;
+            margin-bottom: $kendo-chat-item-spacing-y;
             border: 0;
             color: inherit;
             background: none;
@@ -163,7 +163,7 @@
         }
         .k-message-error,
         .k-message-sending {
-            margin-bottom: $chat-item-spacing-y;
+            margin-bottom: $kendo-chat-item-spacing-y;
 
             .k-message-status { height: 1.2em; }
         }
@@ -172,8 +172,8 @@
         .k-avatar {
             @include border-radius( 100% );
             margin: 0;
-            width: $chat-avatar-size;
-            height: $chat-avatar-size;
+            width: $kendo-chat-avatar-size;
+            height: $kendo-chat-avatar-size;
             position: absolute;
 
             @at-root .k-message-group:not(.k-alt) > .k-avatar {
@@ -187,10 +187,10 @@
         }
         .k-avatars {
             .k-message-group:not(.k-alt):not(.k-no-avatar) {
-                padding-left: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
+                padding-left: calc( #{$kendo-chat-avatar-size} + #{$kendo-chat-avatar-spacing} );
             }
             .k-message-group.k-alt:not(.k-no-avatar) {
-                padding-right: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
+                padding-right: calc( #{$kendo-chat-avatar-size} + #{$kendo-chat-avatar-spacing} );
             }
         }
     }
@@ -208,9 +208,9 @@
 
     // Timestamp
     .k-chat .k-timestamp {
-        font-size: $chat-timestamp-font-size;
-        line-height: $chat-timestamp-line-height;
-        text-transform: $chat-timestamp-transform;
+        font-size: $kendo-chat-timestamp-font-size;
+        line-height: $kendo-chat-timestamp-line-height;
+        text-transform: $kendo-chat-timestamp-transform;
         text-align: center;
         align-self: stretch;
     }
@@ -223,12 +223,12 @@
     }
     .k-quick-reply {
         @include border-radius( 100px );
-        margin-right: $chat-quick-reply-spacing;
-        margin-bottom: k-math-div( $chat-quick-reply-spacing, 2 );
-        padding: $chat-quick-reply-padding-y $chat-quick-reply-padding-x;
+        margin-right: $kendo-chat-quick-reply-spacing;
+        margin-bottom: k-math-div( $kendo-chat-quick-reply-spacing, 2 );
+        padding: $kendo-chat-quick-reply-padding-y $kendo-chat-quick-reply-padding-x;
         border-width: 1px;
         border-style: solid;
-        line-height: $chat-quick-reply-line-height;
+        line-height: $kendo-chat-quick-reply-line-height;
         cursor: pointer;
         user-select: none;
         display: inline-block;
@@ -242,10 +242,10 @@
 
     // Scrollable quick replies
     .k-scrollable-quick-replies {
-        margin-left: -$chat-message-list-padding-y;
-        margin-right: -$chat-message-list-padding-y;
-        padding-left: $chat-message-list-padding-y;
-        padding-right: $chat-message-list-padding-y;
+        margin-left: -$kendo-chat-message-list-padding-y;
+        margin-right: -$kendo-chat-message-list-padding-y;
+        padding-left: $kendo-chat-message-list-padding-y;
+        padding-right: $kendo-chat-message-list-padding-y;
         display: flex;
         flex-flow: row nowrap;
         flex: 0 0 auto;
@@ -260,7 +260,7 @@
             margin: 0;
         }
         .k-quick-reply + .k-quick-reply {
-            margin-left: $chat-quick-reply-spacing;
+            margin-left: $kendo-chat-quick-reply-spacing;
         }
     }
 
@@ -315,15 +315,15 @@
 @include exports( "chat/cards/layout" ) {
 
     .k-chat .k-card-list {
-        margin: $chat-bubble-spacing 0 0;
+        margin: $kendo-chat-bubble-spacing 0 0;
     }
 
     .k-chat .k-card-deck {
-        max-width: calc(100% + #{$chat-message-list-padding-y * 2}); // prevent overflowing in the parent element
+        max-width: calc(100% + #{$kendo-chat-message-list-padding-y * 2}); // prevent overflowing in the parent element
         box-sizing: border-box;
-        margin-left: -$chat-message-list-padding-y;
-        margin-right: -$chat-message-list-padding-y;
-        padding: $chat-message-list-padding-y $chat-message-list-padding-y $chat-message-list-padding-x;
+        margin-left: -$kendo-chat-message-list-padding-y;
+        margin-right: -$kendo-chat-message-list-padding-y;
+        padding: $kendo-chat-message-list-padding-y $kendo-chat-message-list-padding-y $kendo-chat-message-list-padding-x;
         overflow: hidden;
         overflow-x: auto;
         scroll-behavior: smooth;
@@ -334,10 +334,10 @@
     }
 
     .k-chat .k-card-deck-scrollwrap {
-        margin-right: -$chat-message-list-padding-y;
-        margin-left: -$chat-message-list-padding-y;
-        padding-left: $chat-message-list-padding-y;
-        padding-right: $chat-message-list-padding-y;
+        margin-right: -$kendo-chat-message-list-padding-y;
+        margin-left: -$kendo-chat-message-list-padding-y;
+        padding-left: $kendo-chat-message-list-padding-y;
+        padding-right: $kendo-chat-message-list-padding-y;
     }
 
     .k-chat .k-card-deck-scrollwrap > .k-card-deck {
@@ -372,8 +372,8 @@
 @include exports( "chat/typingindicator/layout" ) {
 
     // Local variables
-    $chat-typing-indicator-dot-size: 8px !default;
-    $chat-typing-indicator-dot-spacing: 5px !default;
+    $kendo-chat-typing-indicator-dot-size: 8px !default;
+    $kendo-chat-typing-indicator-dot-spacing: 5px !default;
 
     // Typing indicator
     .k-typing-indicator {
@@ -383,10 +383,10 @@
         flex-flow: row nowrap;
 
         span {
-            width: $chat-typing-indicator-dot-size;
-            height: $chat-typing-indicator-dot-size;
+            width: $kendo-chat-typing-indicator-dot-size;
+            height: $kendo-chat-typing-indicator-dot-size;
             border-radius: 50%;
-            flex: 0 0 $chat-typing-indicator-dot-size;
+            flex: 0 0 $kendo-chat-typing-indicator-dot-size;
             background-color: currentColor;
             opacity: .4;
             @for $i from 1 through 3 {
@@ -396,7 +396,7 @@
             }
         }
         span + span {
-            margin-left: $chat-typing-indicator-dot-spacing;
+            margin-left: $kendo-chat-typing-indicator-dot-spacing;
         }
 
         @keyframes k-animation-blink {
@@ -416,7 +416,7 @@
 
     .k-chat-toolbar,
     .k-chat .k-toolbar-box {
-        padding: $chat-toolbar-padding-y $chat-toolbar-padding-x;
+        padding: $kendo-chat-toolbar-padding-y $kendo-chat-toolbar-padding-x;
         width: 100%;
         border-width: 1px 0 0;
         box-sizing: border-box;
@@ -487,7 +487,7 @@
 
             .k-message-time {
                 margin-left: 0;
-                margin-right: $chat-item-spacing-x;
+                margin-right: $kendo-chat-item-spacing-x;
                 left: auto;
                 right: 100%;
             }
@@ -501,7 +501,7 @@
 
             .k-message-time {
                 margin-right: 0;
-                margin-left: $chat-item-spacing-x;
+                margin-left: $kendo-chat-item-spacing-x;
                 right: auto;
                 left: 100%;
             }
@@ -524,18 +524,18 @@
         .k-avatars {
             .k-message-group:not(.k-alt):not(.k-no-avatar) {
                 padding-left: 0;
-                padding-right: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
+                padding-right: calc( #{$kendo-chat-avatar-size} + #{$kendo-chat-avatar-spacing} );
             }
             .k-message-group.k-alt:not(.k-no-avatar) {
                 padding-right: 0;
-                padding-left: calc( #{$chat-avatar-size} + #{$chat-avatar-spacing} );
+                padding-left: calc( #{$kendo-chat-avatar-size} + #{$kendo-chat-avatar-spacing} );
             }
         }
 
         .k-chat .k-card-deck {
             .k-card-wrap + .k-card-wrap {
                 margin-left: 0;
-                margin-right: $card-deck-gap;
+                margin-right: $kendo-card-deck-gap;
             }
         }
 
@@ -543,7 +543,7 @@
         // Quick replies
         .k-quick-reply {
             margin-right: 0;
-            margin-left: $chat-quick-reply-spacing;
+            margin-left: $kendo-chat-quick-reply-spacing;
         }
 
     }

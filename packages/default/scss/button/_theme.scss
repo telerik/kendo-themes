@@ -142,7 +142,7 @@
 
 
     // Outline button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
+    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
         .k-button-outline-#{$name} {
             @include box-shadow( none );
             border-color: currentColor;
@@ -210,7 +210,7 @@
 
 
     // Link button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
+    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
         .k-button-link-#{$name} {
             color: $color;
 
@@ -249,7 +249,7 @@
 
 
     // Clear button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $base-text ) ) {
+    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
         .k-button-clear-#{$name} {
             color: $color;
 

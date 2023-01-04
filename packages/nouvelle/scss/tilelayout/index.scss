@@ -18,9 +18,9 @@ $_kendo-module-meta: (
 // Expose
 @mixin tilelayout-styles() {
     @include module-render( "tilelayout" ) {
-        @include kendo-tilelayout--layout();
-        @include kendo-tilelayout--extended-layout();
-        @include kendo-tilelayout--theme();
-        @include kendo-tilelayout--extended-theme();
+        @include kendo-tile-layout--layout();
+        @include kendo-tile-layout--extended-layout();
+        @include kendo-tile-layout--theme();
+        @include kendo-tile-layout--extended-theme();
     }
 }

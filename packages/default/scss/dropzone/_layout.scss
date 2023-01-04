@@ -2,20 +2,20 @@
 
     // Dropzone
     .k-external-dropzone {
-        height: $dropzone-min-height;
+        height: $kendo-dropzone-min-height;
         display: flex;
         flex-flow: row nowrap;
     }
 
     // Dropzpne inner
     .k-dropzone-inner {
-        padding: $dropzone-padding-y $dropzone-padding-x;
-        border-width: $dropzone-border-width;
+        padding: $kendo-dropzone-padding-y $kendo-dropzone-padding-x;
+        border-width: $kendo-dropzone-border-width;
         border-style: solid;
         box-sizing: border-box;
-        font-size: $dropzone-font-size;
-        font-family: $dropzone-font-family;
-        line-height: $dropzone-line-height;
+        font-size: $kendo-dropzone-font-size;
+        font-family: $kendo-dropzone-font-family;
+        line-height: $kendo-dropzone-line-height;
         flex: 1 1 auto;
         display: flex;
         flex-flow: column nowrap;
@@ -26,18 +26,18 @@
 
         > .k-icon,
         .k-dropzone-icon {
-            margin-bottom: $dropzone-icon-spacing;
-            font-size: $dropzone-icon-size;
+            margin-bottom: $kendo-dropzone-icon-spacing;
+            font-size: $kendo-dropzone-icon-size;
         }
 
         .k-dropzone-hint {
-            margin-bottom: $dropzone-hint-spacing;
-            font-size: $dropzone-hint-font-size;
+            margin-bottom: $kendo-dropzone-hint-spacing;
+            font-size: $kendo-dropzone-hint-font-size;
         }
 
         .k-dropzone-note {
-            margin-bottom: $dropzone-note-spacing;
-            font-size: $dropzone-note-font-size;
+            margin-bottom: $kendo-dropzone-note-spacing;
+            font-size: $kendo-dropzone-note-font-size;
         }
     }
 

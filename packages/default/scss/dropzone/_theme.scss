@@ -3,20 +3,20 @@
     // Dropzone
     .k-dropzone-inner {
         @include fill(
-            $dropzone-text,
-            $dropzone-bg,
-            $dropzone-border
+            $kendo-dropzone-text,
+            $kendo-dropzone-bg,
+            $kendo-dropzone-border
         );
 
         > .k-icon,
         .k-dropzone-icon {
-            color: $dropzone-icon-text;
+            color: $kendo-dropzone-icon-text;
         }
         .k-dropzone-hint {
-            color: $dropzone-hint-text;
+            color: $kendo-dropzone-hint-text;
         }
         .k-dropzone-note {
-            color: $dropzone-note-text;
+            color: $kendo-dropzone-note-text;
         }
     }
 
@@ -26,7 +26,7 @@
 
         .k-icon,
         .k-dropzone-icon {
-            color: $dropzone-icon-hover-text;
+            color: $kendo-dropzone-icon-hover-text;
         }
     }
 

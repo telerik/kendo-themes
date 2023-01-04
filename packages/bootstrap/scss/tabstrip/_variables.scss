@@ -1,112 +1,109 @@
-@import "../typography/_variables.scss";
-
-
 // Tabstrip
 
-$tabstrip-wrapper-padding-x: 0px !default;
-$tabstrip-wrapper-padding-y: 0px !default;
-$tabstrip-wrapper-border-width: 0px !default;
+$kendo-tabstrip-wrapper-padding-x: 0px !default;
+$kendo-tabstrip-wrapper-padding-y: 0px !default;
+$kendo-tabstrip-wrapper-border-width: 0px !default;
 
-$tabstrip-font-family: $font-family !default;
-$tabstrip-font-size: $font-size !default;
-$tabstrip-line-height: $line-height !default;
-$tabstrip-border-width: 1px !default;
+$kendo-tabstrip-font-family: $kendo-font-family !default;
+$kendo-tabstrip-font-size: $kendo-font-size-md !default;
+$kendo-tabstrip-line-height: $kendo-line-height-md !default;
+$kendo-tabstrip-border-width: 1px !default;
 
-$tabstrip-wrapper-bg: null !default;
-$tabstrip-wrapper-text: null !default;
-$tabstrip-wrapper-border: null !default;
+$kendo-tabstrip-wrapper-bg: null !default;
+$kendo-tabstrip-wrapper-text: null !default;
+$kendo-tabstrip-wrapper-border: null !default;
 
 /// Background color of tabstrip component
 /// @group tabstrip
-$tabstrip-bg: null !default;
+$kendo-tabstrip-bg: null !default;
 /// Text color of tabstrip component
 /// @group tabstrip
-$tabstrip-text: $kendo-component-text !default;
+$kendo-tabstrip-text: $kendo-component-text !default;
 /// Border color of tabstrip component
 /// @group tabstrip
-$tabstrip-border: $kendo-component-border !default;
+$kendo-tabstrip-border: $kendo-component-border !default;
 
 /// Horizontal padding of tabs
 /// @group tabstrip
-$tabstrip-item-padding-x: $nav-link-padding-x !default;
+$kendo-tabstrip-item-padding-x: $nav-link-padding-x !default;
 /// Vertical padding of tabs
 /// @group tabstrip
-$tabstrip-item-padding-y: $nav-link-padding-y !default;
+$kendo-tabstrip-item-padding-y: $nav-link-padding-y !default;
 /// Width of border around tabs
 /// @group tabstrip
-$tabstrip-item-border-width: 1px !default;
+$kendo-tabstrip-item-border-width: 1px !default;
 /// Border radius of tabs
 /// @group tabstrip
-$tabstrip-item-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-tabstrip-item-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 /// Spacing between tabs
 /// @group tabstrip
-$tabstrip-item-gap: 0 !default;
+$kendo-tabstrip-item-gap: 0 !default;
 
 /// Background color of tabs
 /// @group tabstrip
-$tabstrip-item-bg: null !default;
+$kendo-tabstrip-item-bg: null !default;
 /// Text color of tabs
 /// @group tabstrip
-$tabstrip-item-text: $link-text !default;
+$kendo-tabstrip-item-text: $kendo-link-text !default;
 /// Border color of tabs
 /// @group tabstrip
-$tabstrip-item-border: null !default;
+$kendo-tabstrip-item-border: null !default;
 /// Background gradient of tabs
 /// @group tabstrip
-$tabstrip-item-gradient: null !default;
+$kendo-tabstrip-item-gradient: null !default;
 
 /// Background color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hover-bg: null !default;
+$kendo-tabstrip-item-hover-bg: null !default;
 /// Text color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hover-text: $link-hover-text !default;
+$kendo-tabstrip-item-hover-text: $kendo-link-hover-text !default;
 /// Border color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hover-border: $gray-200 !default;
+$kendo-tabstrip-item-hover-border: $gray-200 !default;
 /// Background gradient of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hover-gradient: null !default;
+$kendo-tabstrip-item-hover-gradient: null !default;
 
 /// Background color of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-bg: $kendo-component-bg !default;
+$kendo-tabstrip-item-selected-bg: $kendo-component-bg !default;
 /// Text color of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-text: $kendo-component-text !default;
+$kendo-tabstrip-item-selected-text: $kendo-component-text !default;
 /// Border color of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-border: $kendo-component-border !default;
+$kendo-tabstrip-item-selected-border: $kendo-component-border !default;
 /// Background gradient of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-gradient: null !default;
+$kendo-tabstrip-item-selected-gradient: null !default;
 
-$tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
+$kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
-$tabstrip-item-dragging-shadow: 0px 3px 4px rgba( black, .15 ) !default;
+$kendo-tabstrip-item-dragging-shadow: 0px 3px 4px rgba( black, .15 ) !default;
 
-$tabstrip-indicator-size: null !default;
-$tabstrip-indicator-color: null !default;
+$kendo-tabstrip-indicator-size: null !default;
+$kendo-tabstrip-indicator-color: null !default;
 
 /// Horizontal padding of tabstrip content
 /// @group tabstrip
-$tabstrip-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of tabstrip content
 /// @group tabstrip
-$tabstrip-content-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-content-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
 /// Width of border around tabstrip content
 /// @group tabstrip
-$tabstrip-content-border-width: $tabstrip-border-width !default;
+$kendo-tabstrip-content-border-width: $kendo-tabstrip-border-width !default;
 
 /// Background color of tabstrip content
 /// @group tabstrip
-$tabstrip-content-bg: $kendo-component-bg !default;
+$kendo-tabstrip-content-bg: $kendo-component-bg !default;
 /// Text color of tabstrip content
 /// @group tabstrip
-$tabstrip-content-text: $kendo-component-text !default;
+$kendo-tabstrip-content-text: $kendo-component-text !default;
 /// Border color of tabstrip content
 /// @group tabstrip
-$tabstrip-content-border: $kendo-component-border !default;
+$kendo-tabstrip-content-border: $kendo-component-border !default;
 /// Border color of tabstrip focused content
 /// @group tabstrip
-$tabstrip-content-focus-border: $kendo-component-text !default;
+$kendo-tabstrip-content-focus-border: $kendo-component-text !default;

@@ -17,13 +17,13 @@ $kendo-listbox-default-height: 200px !default;
 $kendo-listbox-border-width: 1px !default;
 /// Font family of the listbox.
 /// @group listbox
-$kendo-listbox-font-family: $font-family !default;
+$kendo-listbox-font-family: $kendo-font-family !default;
 /// Font size of the listbox.
 /// @group listbox
-$kendo-listbox-font-size: $kendo-list-font-size-md !default;
+$kendo-listbox-font-size: $kendo-list-md-font-size !default;
 /// Line height of the listbox.
 /// @group listbox
-$kendo-listbox-line-height: $kendo-list-line-height-md !default;
+$kendo-listbox-line-height: $kendo-list-md-line-height !default;
 /// Background color of the listbox.
 /// @group listbox
 $kendo-listbox-bg: $kendo-component-bg !default;
@@ -36,10 +36,10 @@ $kendo-listbox-border: $kendo-component-border !default;
 
 /// Inline item padding of the listbox.
 /// @group listbox
-$kendo-listbox-item-padding-x: $kendo-list-item-padding-x-md !default;
+$kendo-listbox-item-padding-x: $kendo-list-md-item-padding-x !default;
 /// Block item padding of the listbox.
 /// @group listbox
-$kendo-listbox-item-padding-y: $kendo-list-item-padding-y-md !default;
+$kendo-listbox-item-padding-y: $kendo-list-md-item-padding-y !default;
 
 /// Width of the border around the drop hint.
 /// @group listbox

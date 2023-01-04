@@ -83,40 +83,40 @@
                 }
             } @else if ($name == "warning") {
                 @include fill(
-                    if( $dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text),
-                    if( $dark-theme, $kendo-color-black, $kendo-color-white ),
-                    if( $dark-theme, k-color-tint($color, 25%), $color)
+                    if( $kendo-is-dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text),
+                    if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white ),
+                    if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color)
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px if( $dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                    @include focus-indicator( 0 0 0 2px if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
                 }
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $color: if( $dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) ) ,
-                        $bg: if( $dark-theme, k-color-tint($color, 25%), $color)
+                        $color: if( $kendo-is-dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) ) ,
+                        $bg: if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color)
                     );
                 }
 
                 &.k-selected {
                     @include fill(
-                        $color: if( $dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) ) ,
-                        $bg: if( $dark-theme, k-color-tint($color, 25%), $color)
+                        $color: if( $kendo-is-dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) ) ,
+                        $bg: if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color)
                     );
                 }
             } @else {
                 @include fill(
                     k-try-shade( $color, 25% ),
-                    if( $dark-theme, $kendo-color-black, $kendo-color-white ),
+                    if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white ),
                     k-try-shade( $color, 25% )
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px if( $dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                    @include focus-indicator( 0 0 0 2px if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
                 }
 
                 &:hover,

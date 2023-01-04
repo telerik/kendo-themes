@@ -1,42 +1,42 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-colorpalette--theme() {
+@mixin kendo-color-palette--theme() {
 
     // Tile
     .k-colorpalette-tile {
-        outline-color: var( --kendo-colorpalette-tile-outline, #{$kendo-colorpalette-tile-outline} );
+        outline-color: var( --kendo-color-palette-tile-outline, #{$kendo-color-palette-tile-outline} );
 
         // Hover
         &:hover,
         &.k-hover {
             @include box-shadow(
-                var( --kendo-colorpalette-tile-hover-shadow, #{$kendo-colorpalette-tile-hover-shadow} )
+                var( --kendo-color-palette-tile-hover-shadow, #{$kendo-color-palette-tile-hover-shadow} )
             );
-            outline-color: var( --kendo-colorpalette-tile-hover-outline, #{$kendo-colorpalette-tile-hover-outline} );
+            outline-color: var( --kendo-color-palette-tile-hover-outline, #{$kendo-color-palette-tile-hover-outline} );
         }
 
         // Focus
         &:focus,
         &.k-focus {
             @include box-shadow(
-                var( --kendo-colorpalette-tile-focus-shadow, #{$kendo-colorpalette-tile-focus-shadow} )
+                var( --kendo-color-palette-tile-focus-shadow, #{$kendo-color-palette-tile-focus-shadow} )
             );
-            outline-color: var( --kendo-colorpalette-tile-focus-outline, #{$kendo-colorpalette-tile-focus-outline} );
+            outline-color: var( --kendo-color-palette-tile-focus-outline, #{$kendo-color-palette-tile-focus-outline} );
         }
 
         // Selected
         &.k-selected {
             @include box-shadow(
-                var( --kendo-colorpalette-tile-selected-shadow, #{$kendo-colorpalette-tile-selected-shadow} )
+                var( --kendo-color-palette-tile-selected-shadow, #{$kendo-color-palette-tile-selected-shadow} )
             );
-            outline-color: var( --kendo-colorpalette-tile-selected-outline, #{$kendo-colorpalette-tile-selected-outline} );
+            outline-color: var( --kendo-color-palette-tile-selected-outline, #{$kendo-color-palette-tile-selected-outline} );
         }
 
         // Selected hover/focus
         &.k-selected:hover,
         &.k-selected:focus {
-            outline-color: var( --kendo-colorpalette-tile-selected-hover-outline, #{$kendo-colorpalette-tile-selected-hover-outline} );
+            outline-color: var( --kendo-color-palette-tile-selected-hover-outline, #{$kendo-color-palette-tile-selected-hover-outline} );
         }
     }
 

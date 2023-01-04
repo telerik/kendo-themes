@@ -3,18 +3,18 @@
     // Theme
     .k-mediaplayer {
         @include fill(
-            $mediaplayer-text,
-            $mediaplayer-bg,
-            $mediaplayer-border
+            $kendo-media-player-text,
+            $kendo-media-player-bg,
+            $kendo-media-player-border
         );
     }
 
 
     // Title bar
     .k-mediaplayer-titlebar {
-        color: $mediaplayer-titlebar-text;
-        background-image: linear-gradient( $mediaplayer-titlebar-gradient );
-        text-shadow: 0 0 2px rgba( $mediaplayer-text, .5 );
+        color: $kendo-media-player-titlebar-text;
+        background-image: linear-gradient( $kendo-media-player-titlebar-gradient );
+        text-shadow: 0 0 2px rgba( $kendo-media-player-text, .5 );
     }
 
 }

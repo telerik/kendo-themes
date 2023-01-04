@@ -12,7 +12,7 @@ $kendo-menu-font-family: var( --kendo-font-family, inherit ) !default;
 // Font size of the menu.
 /// @group menu
 $kendo-menu-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line heights used along with $font-size.
+/// Line heights used along with $kendo-font-size.
 /// @group menu
 $kendo-menu-line-height: var( --kendo-line-height, normal ) !default;
 
@@ -106,16 +106,16 @@ $kendo-menu-popup-border-width: $kendo-popup-border-width !default;
 /// Font sizes of the menu popup.
 /// @group menu
 $kendo-menu-popup-font-size: var( --kendo-font-size-md, inherit ) !default;
-$kendo-menu-popup-font-size-sm: $kendo-menu-popup-font-size !default;
-$kendo-menu-popup-font-size-md: $kendo-menu-popup-font-size !default;
-$kendo-menu-popup-font-size-lg: $kendo-menu-popup-font-size !default;
+$kendo-menu-popup-sm-font-size: $kendo-menu-popup-font-size !default;
+$kendo-menu-popup-md-font-size: $kendo-menu-popup-font-size !default;
+$kendo-menu-popup-lg-font-size: $kendo-menu-popup-font-size !default;
 
 /// Line heights used along with $kendo-font-size.
 /// @group menu
 $kendo-menu-popup-line-height: var( --kendo-line-height-md, 30px ) !default;
-$kendo-menu-popup-line-height-sm: $kendo-menu-popup-line-height !default;
-$kendo-menu-popup-line-height-md: $kendo-menu-popup-line-height !default;
-$kendo-menu-popup-line-height-lg: $kendo-menu-popup-line-height !default;
+$kendo-menu-popup-sm-line-height: $kendo-menu-popup-line-height !default;
+$kendo-menu-popup-md-line-height: $kendo-menu-popup-line-height !default;
+$kendo-menu-popup-lg-line-height: $kendo-menu-popup-line-height !default;
 
 /// The background of the menu popup.
 /// @group menu
@@ -130,30 +130,30 @@ $kendo-menu-popup-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 /// Horizontal padding of the menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
-$kendo-menu-popup-item-padding-x-sm: $kendo-menu-popup-item-padding-x !default;
-$kendo-menu-popup-item-padding-x-md: $kendo-menu-popup-item-padding-x !default;
-$kendo-menu-popup-item-padding-x-lg: $kendo-menu-popup-item-padding-x !default;
+$kendo-menu-popup-sm-item-padding-x: $kendo-menu-popup-item-padding-x !default;
+$kendo-menu-popup-md-item-padding-x: $kendo-menu-popup-item-padding-x !default;
+$kendo-menu-popup-lg-item-padding-x: $kendo-menu-popup-item-padding-x !default;
 /// Vertical padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-y-sm: $kendo-list-item-padding-y-sm !default;
-$kendo-menu-popup-item-padding-y-md: $kendo-list-item-padding-y-md !default;
-$kendo-menu-popup-item-padding-y-lg: $kendo-list-item-padding-y-lg !default;
+$kendo-menu-popup-sm-item-padding-y: $kendo-list-sm-item-padding-y !default;
+$kendo-menu-popup-md-item-padding-y: $kendo-list-md-item-padding-y !default;
+$kendo-menu-popup-lg-item-padding-y: $kendo-list-lg-item-padding-y !default;
 /// The end padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-end-sm: calc( #{$kendo-menu-popup-item-padding-x-sm * 2} + var( --kendo-icon-size, 1rem ) ) !default;
-$kendo-menu-popup-item-padding-end-md: calc( #{$kendo-menu-popup-item-padding-x-md * 2} + var( --kendo-icon-size, 1rem ) ) !default;
-$kendo-menu-popup-item-padding-end-lg: calc( #{$kendo-menu-popup-item-padding-x-lg * 2} + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-sm-item-padding-end: calc( #{$kendo-menu-popup-sm-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-md-item-padding-end: calc( #{$kendo-menu-popup-md-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-lg-item-padding-end: calc( #{$kendo-menu-popup-lg-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) ) !default;
 
 /// The start margin of the menu item expand icon.
 /// @group menu
-$kendo-menu-popup-item-icon-margin-start-sm: map.get( $kendo-spacing, 0 ) !default;
-$kendo-menu-popup-item-icon-margin-start-md: map.get( $kendo-spacing, 0 ) !default;
-$kendo-menu-popup-item-icon-margin-start-lg: map.get( $kendo-spacing, 0 ) !default;
+$kendo-menu-popup-sm-item-icon-margin-start: map.get( $kendo-spacing, 0 ) !default;
+$kendo-menu-popup-item-icon-md-margin-start: map.get( $kendo-spacing, 0 ) !default;
+$kendo-menu-popup-lg-item-icon-margin-start: map.get( $kendo-spacing, 0 ) !default;
 /// The end margin of the menu item expand icon.
 /// @group menu
-$kendo-menu-popup-item-icon-margin-end-sm: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-item-padding-x-sm}) ) !default;
-$kendo-menu-popup-item-icon-margin-end-md: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-item-padding-x-md}) ) !default;
-$kendo-menu-popup-item-icon-margin-end-lg: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-item-padding-x-lg}) ) !default;
+$kendo-menu-popup-sm-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) ) !default;
+$kendo-menu-popup-item-icon-md-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-md-item-padding-x}) ) !default;
+$kendo-menu-popup-lg-item-icon-margin-end: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-lg-item-padding-x}) ) !default;
 
 /// The base shadow of focused menu item in popup.
 /// @group menu
@@ -169,31 +169,31 @@ $kendo-menu-popup-item-spacing: map.get( $kendo-spacing, 0 ) !default;
 /// @group menu
 $kendo-menu-sizes: (
     sm: (
-        group-font-size: $kendo-menu-popup-font-size-sm,
-        group-line-height: $kendo-menu-popup-line-height-sm,
-        link-padding-x: $kendo-menu-popup-item-padding-x-sm,
-        link-padding-y: $kendo-menu-popup-item-padding-y-sm,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-sm,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-sm,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-sm,
+        group-font-size: $kendo-menu-popup-sm-font-size,
+        group-line-height: $kendo-menu-popup-sm-line-height,
+        link-padding-x: $kendo-menu-popup-sm-item-padding-x,
+        link-padding-y: $kendo-menu-popup-sm-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-sm-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-sm-item-icon-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-sm-item-icon-margin-end,
     ),
     md: (
-        group-font-size: $kendo-menu-popup-font-size-md,
-        group-line-height: $kendo-menu-popup-line-height-md,
-        link-padding-x: $kendo-menu-popup-item-padding-x-md,
-        link-padding-y: $kendo-menu-popup-item-padding-y-md,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-md,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-md,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-md,
+        group-font-size: $kendo-menu-popup-md-font-size,
+        group-line-height: $kendo-menu-popup-md-line-height,
+        link-padding-x: $kendo-menu-popup-md-item-padding-x,
+        link-padding-y: $kendo-menu-popup-md-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-md-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-item-icon-md-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-item-icon-md-margin-end,
     ),
     lg: (
-        group-font-size: $kendo-menu-popup-font-size-lg,
-        group-line-height: $kendo-menu-popup-line-height-lg,
-        link-padding-x: $kendo-menu-popup-item-padding-x-lg,
-        link-padding-y: $kendo-menu-popup-item-padding-y-lg,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-lg,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-lg,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-lg
+        group-font-size: $kendo-menu-popup-lg-font-size,
+        group-line-height: $kendo-menu-popup-lg-line-height,
+        link-padding-x: $kendo-menu-popup-lg-item-padding-x,
+        link-padding-y: $kendo-menu-popup-lg-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-lg-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-lg-item-icon-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end
     )
 ) !default;
 

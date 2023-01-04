@@ -1,19 +1,19 @@
 // Floating label
-$floating-label-scale: 1 !default;
-$floating-label-font-size: $kendo-input-font-size !default;
-$floating-label-line-height: $kendo-input-line-height !default;
-$floating-label-height: calc( #{$floating-label-line-height} * #{$floating-label-font-size} ) !default;
-$floating-label-offset-x: calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} ) !default;
-$floating-label-offset-y: calc( #{$floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} ) !default;
+$kendo-floating-label-scale: 1 !default;
+$kendo-floating-label-font-size: $kendo-input-font-size !default;
+$kendo-floating-label-line-height: $kendo-input-line-height !default;
+$kendo-floating-label-height: calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} ) !default;
+$kendo-floating-label-offset-x: calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} ) !default;
+$kendo-floating-label-offset-y: calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} ) !default;
 
-$floating-label-focus-scale: .75 !default;
-$floating-label-focus-offset-x: 0px !default;
-$floating-label-focus-offset-y: 0px !default;
+$kendo-floating-label-focus-scale: .75 !default;
+$kendo-floating-label-focus-offset-x: 0px !default;
+$kendo-floating-label-focus-offset-y: 0px !default;
 
-$floating-label-transition: .15s cubic-bezier( .4, 0, .2, 1 ) !default;
+$kendo-floating-label-transition: .15s cubic-bezier( .4, 0, .2, 1 ) !default;
 
-$floating-label-bg: null !default;
-$floating-label-text: $kendo-subtle-text !default;
+$kendo-floating-label-bg: null !default;
+$kendo-floating-label-text: $kendo-subtle-text !default;
 
-$floating-label-focus-bg: null !default;
-$floating-label-focus-text: $kendo-color-primary !default;
+$kendo-floating-label-focus-bg: null !default;
+$kendo-floating-label-focus-text: $kendo-color-primary !default;

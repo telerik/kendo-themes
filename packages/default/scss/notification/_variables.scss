@@ -14,16 +14,16 @@ $kendo-notification-border-width: 1px !default;
 $kendo-notification-border-radius: $kendo-border-radius-md !default;
 /// Box shadow of the notification.
 /// @group notification
-$kendo-notification-shadow: $popup-shadow !default;
+$kendo-notification-shadow: $kendo-popup-shadow !default;
 /// Font family of the notification.
 /// @group notification
-$kendo-notification-font-family: $font-family !default;
+$kendo-notification-font-family: $kendo-font-family !default;
 /// Font size of the notification.
 /// @group notification
-$kendo-notification-font-size: $font-size-sm !default;
+$kendo-notification-font-size: $kendo-font-size-sm !default;
 /// Line height of the notification.
 /// @group notification
-$kendo-notification-line-height: $line-height !default;
+$kendo-notification-line-height: $kendo-line-height-md !default;
 
 /// Horizontal spacing of the notification icon.
 /// @group notification

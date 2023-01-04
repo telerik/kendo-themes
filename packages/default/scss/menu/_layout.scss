@@ -2,13 +2,13 @@
 
     // Menu bar
     .k-menu-bar {
-        border-width: $menu-border-width;
+        border-width: $kendo-menu-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $menu-font-family;
-        font-size: $menu-font-size;
-        line-height: $menu-line-height;
+        font-family: $kendo-menu-font-family;
+        font-size: $kendo-menu-font-size;
+        line-height: $kendo-menu-line-height;
         display: flex;
         flex-wrap: nowrap;
         align-items: stretch;
@@ -49,13 +49,13 @@
 
     // Menu link
     .k-menu-link {
-        padding: $menu-item-padding-y $menu-item-padding-x;
+        padding: $kendo-menu-item-padding-y $kendo-menu-item-padding-x;
         outline: 0;
         color: inherit;
         display: flex;
         flex-flow: row nowrap;
         flex: 1 1 auto;
-        gap: $menu-item-icon-spacing;
+        gap: $kendo-menu-item-icon-spacing;
         align-items: center;
         position: relative;
         white-space: nowrap;
@@ -89,11 +89,11 @@
         flex-direction: row;
 
         > .k-menu-item + .k-menu-item {
-            margin-left: $menu-item-spacing;
+            margin-left: $kendo-menu-item-spacing;
         }
 
         > .k-separator {
-            margin: 0 $menu-separator-spacing;
+            margin: 0 $kendo-menu-separator-spacing;
             width: 0;
             height: auto;
             border-width: 0 0 0 1px;
@@ -107,7 +107,7 @@
         flex-direction: column;
 
         > .k-menu-item + .k-menu-item {
-            margin-top: $menu-item-spacing;
+            margin-top: $kendo-menu-item-spacing;
         }
 
         > .k-menu-item > .k-menu-link {
@@ -116,12 +116,12 @@
         }
 
         > .k-menu-item > .k-menu-link > .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-item-icon-margin-start;
-            margin-inline-end: $kendo-menu-popup-item-icon-margin-end;
+            margin-inline-start: $kendo-menu-popup-md-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-md-item-icon-margin-end;
         }
 
         > .k-separator {
-            margin: $menu-separator-spacing 0;
+            margin: $kendo-menu-separator-spacing 0;
             height: 0;
             border-width: 1px 0 0;
             border-style: solid;
@@ -162,7 +162,7 @@
         }
 
         .k-separator {
-            margin: $menu-separator-spacing 0;
+            margin: $kendo-menu-separator-spacing 0;
             height: 0;
             border-width: 1px 0 0;
             border-style: solid;
@@ -177,63 +177,63 @@
 
     // Sizes
     .k-menu-group-sm {
-        font-size: $kendo-menu-popup-font-size-sm;
-        line-height: $kendo-menu-popup-line-height-sm;
+        font-size: $kendo-menu-popup-sm-font-size;
+        line-height: $kendo-menu-popup-sm-line-height;
 
         // jquery popup overrides those
         .k-menu-item {
-            font-size: $kendo-menu-popup-font-size-sm;
-            line-height: $kendo-menu-popup-line-height-sm;
+            font-size: $kendo-menu-popup-sm-font-size;
+            line-height: $kendo-menu-popup-sm-line-height;
         }
 
         .k-menu-link {
-            padding: $kendo-menu-popup-item-padding-y-sm $kendo-menu-popup-item-padding-x-sm;
-            padding-inline-end: $kendo-menu-popup-item-padding-end-sm;
+            padding: $kendo-menu-popup-sm-item-padding-y $kendo-menu-popup-sm-item-padding-x;
+            padding-inline-end: $kendo-menu-popup-sm-item-padding-end;
         }
 
         .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-item-icon-margin-start-sm;
-            margin-inline-end: $kendo-menu-popup-item-icon-margin-end-sm;
+            margin-inline-start: $kendo-menu-popup-sm-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-sm-item-icon-margin-end;
         }
     }
     .k-menu-group-md {
-        font-size: $kendo-menu-popup-font-size-md;
-        line-height: $kendo-menu-popup-line-height-md;
+        font-size: $kendo-menu-popup-md-font-size;
+        line-height: $kendo-menu-popup-md-line-height;
 
         // jquery popup overrides those
         .k-menu-item {
-            font-size: $kendo-menu-popup-font-size-md;
-            line-height: $kendo-menu-popup-line-height-md;
+            font-size: $kendo-menu-popup-md-font-size;
+            line-height: $kendo-menu-popup-md-line-height;
         }
 
         .k-menu-link {
-            padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-md;
-            padding-inline-end: $kendo-menu-popup-item-padding-end-md;
+            padding: $kendo-menu-popup-md-item-padding-y $kendo-menu-popup-md-item-padding-x;
+            padding-inline-end: $kendo-menu-popup-md-item-padding-end;
         }
 
         .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-item-icon-margin-start;
-            margin-inline-end: $kendo-menu-popup-item-icon-margin-end;
+            margin-inline-start: $kendo-menu-popup-md-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-md-item-icon-margin-end;
         }
     }
     .k-menu-group-lg {
-        font-size: $kendo-menu-popup-font-size-lg;
-        line-height: $kendo-menu-popup-line-height-lg;
+        font-size: $kendo-menu-popup-lg-font-size;
+        line-height: $kendo-menu-popup-lg-line-height;
 
         // jquery popup overrides those
         .k-menu-item {
-            font-size: $kendo-menu-popup-font-size-lg;
-            line-height: $kendo-menu-popup-line-height-lg;
+            font-size: $kendo-menu-popup-lg-font-size;
+            line-height: $kendo-menu-popup-lg-line-height;
         }
 
         .k-menu-link {
-            padding: $kendo-menu-popup-item-padding-y-lg $kendo-menu-popup-item-padding-x-lg;
-            padding-inline-end: $kendo-menu-popup-item-padding-end-lg;
+            padding: $kendo-menu-popup-lg-item-padding-y $kendo-menu-popup-lg-item-padding-x;
+            padding-inline-end: $kendo-menu-popup-lg-item-padding-end;
         }
 
         .k-menu-expand-arrow {
-            margin-inline-start: $kendo-menu-popup-item-icon-margin-start-lg;
-            margin-inline-end: $kendo-menu-popup-item-icon-margin-end-lg;
+            margin-inline-start: $kendo-menu-popup-lg-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end;
         }
     }
 
@@ -334,7 +334,7 @@
         .k-menu-horizontal {
 
             > .k-menu-item + .k-menu-item {
-                margin-right: $menu-item-spacing;
+                margin-right: $kendo-menu-item-spacing;
                 margin-left: 0;
             }
         }

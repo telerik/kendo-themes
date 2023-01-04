@@ -124,13 +124,13 @@
         }
 
         .k-alert-error {
-            font-size: $font-size-sm;
+            font-size: $kendo-font-size-sm;
             margin-top: $kendo-padding-md-y * 2;
         }
 
         .k-field-info {
             display: inline-block;
-            font-size: $font-size-xs;
+            font-size: $kendo-font-size-xs;
             line-height: 1;
             margin: 0 $kendo-padding-md-x;
         }
@@ -267,7 +267,7 @@
         }
 
         legend {
-            font-size: $font-size-sm;
+            font-size: $kendo-font-size-sm;
             text-align: left;
             font-weight: 600;
             line-height: 1;
@@ -286,7 +286,7 @@
             > span:not(.k-widget) {
                 width: $kendo-inline-form-element-width;
                 text-align: right;
-                line-height: $line-height;
+                line-height: $kendo-line-height-md;
                 // TODO: do we need the input variable?
                 padding: calc( #{$kendo-padding-md-y} + #{$kendo-input-border-width} ) 0;
                 padding-right: $kendo-padding-lg-x;
@@ -302,13 +302,13 @@
             }
 
             .k-alert-error {
-                font-size: $font-size-sm;
+                font-size: $kendo-font-size-sm;
                 margin-top: $kendo-padding-md-y * 2;
             }
 
             .k-field-info {
                 display: block;
-                font-size: $font-size-xs;
+                font-size: $kendo-font-size-xs;
                 line-height: 1;
                 margin: 0;
             }

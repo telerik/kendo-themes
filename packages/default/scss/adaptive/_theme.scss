@@ -3,9 +3,9 @@
     .k-pane-wrapper,
     .k-view {
         @include fill(
-            $adaptive-text,
-            $adaptive-bg,
-            $adaptive-border
+            $kendo-adaptive-text,
+            $kendo-adaptive-bg,
+            $kendo-adaptive-border
         );
     }
 
@@ -13,7 +13,7 @@
 
         > .k-view > .k-content {
             background-position: 50% 50%;
-            background-color: $adaptive-content-bg;
+            background-color: $kendo-adaptive-content-bg;
         }
 
         .k-grid-mobile {
@@ -23,26 +23,26 @@
             }
 
             .k-resize-handle-inner::before {
-                background-color: $base-bg;
+                background-color: $kendo-base-bg;
             }
         }
 
         .k-scheduler-mobile {
 
             .k-nav-current {
-                color: $adaptive-scheduler-current-text;
+                color: $kendo-adaptive-scheduler-current-text;
             }
 
             .k-scheduler-times,
             .k-scheduler-header,
             .k-scheduler-groupcolumn,
             .k-mobile-scheduler-agendadate {
-                color: $adaptive-scheduler-base-text;
+                color: $kendo-adaptive-scheduler-base-text;
             }
 
             .k-time-period,
             .k-mobile-scheduler-agendaweekday {
-                color: $adaptive-scheduler-subtle-text;
+                color: $kendo-adaptive-scheduler-subtle-text;
             }
 
             .k-scheduler-times,
@@ -52,7 +52,7 @@
             .k-scheduler-groupcolumn,
             .k-scheduler-group-cell,
             .k-scheduler-header-all-day {
-                background-color: $adaptive-content-bg;
+                background-color: $kendo-adaptive-content-bg;
             }
 
             .k-scheduler-toolbar .k-scheduler-tools > li {
@@ -68,14 +68,14 @@
 
             .k-item,
             .k-link {
-                color: $base-text;
+                color: $kendo-base-text;
             }
 
             .k-clear,
             .k-select-all,
             .k-scheduler-delete,
             .k-scheduler-resetSeries { // sass-lint:disable-line class-name-format
-                color: $adaptive-menu-clear-text;
+                color: $kendo-adaptive-menu-clear-text;
             }
 
         }
@@ -83,7 +83,7 @@
         .k-column-menu {
 
             .k-listgroup-item.k-selected {
-                color: $adaptive-grid-sort-text;
+                color: $kendo-adaptive-grid-sort-text;
                 background: none;
             }
             .k-listgroup-item.k-selected .k-link {

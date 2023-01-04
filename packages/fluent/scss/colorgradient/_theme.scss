@@ -1,27 +1,27 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-colorgradient--theme() {
+@mixin kendo-color-gradient--theme() {
 
     // ColorGradient
     .k-colorgradient {
         @include fill(
-            var( --kendo-colorgradient-text, #{$kendo-colorgradient-text} ),
-            var( --kendo-colorgradient-bg, #{$kendo-colorgradient-bg} ),
-            var( --kendo-colorgradient-border, #{$kendo-colorgradient-border} )
+            var( --kendo-color-gradient-text, #{$kendo-color-gradient-text} ),
+            var( --kendo-color-gradient-bg, #{$kendo-color-gradient-bg} ),
+            var( --kendo-color-gradient-border, #{$kendo-color-gradient-border} )
         );
         @include box-shadow(
-            var( --kendo-colorgradient-shadow, #{$kendo-colorgradient-shadow} )
+            var( --kendo-color-gradient-shadow, #{$kendo-color-gradient-shadow} )
         );
     }
 
     .k-colorgradient:focus,
     .k-colorgradient.k-focus {
         @include fill(
-            $border: var( --kendo-colorgradient-focus-border, #{$kendo-colorgradient-focus-border} )
+            $border: var( --kendo-color-gradient-focus-border, #{$kendo-color-gradient-focus-border} )
         );
         @include box-shadow(
-            var( --kendo-colorgradient-focus-shadow, #{$kendo-colorgradient-focus-shadow} )
+            var( --kendo-color-gradient-focus-shadow, #{$kendo-color-gradient-focus-shadow} )
         );
     }
 
@@ -33,7 +33,7 @@
 
         .k-hsv-rectangle {
             @include fill(
-                $border: var( --kendo-colorgradient-canvas-rectangle-border, #{$kendo-colorgradient-canvas-rectangle-border} )
+                $border: var( --kendo-color-gradient-canvas-rectangle-border, #{$kendo-color-gradient-canvas-rectangle-border} )
             );
         }
     }
@@ -41,19 +41,19 @@
     // DragHandle
     .k-colorgradient .k-draghandle {
         @include fill(
-            $border: var( --kendo-colorgradient-draghandle-border, #{$kendo-colorgradient-draghandle-border })
+            $border: var( --kendo-color-gradient-draghandle-border, #{$kendo-color-gradient-draghandle-border })
         );
         @include box-shadow(
-            var( --kendo-colorgradient-draghandle-shadow, #{$kendo-colorgradient-draghandle-shadow} )
+            var( --kendo-color-gradient-draghandle-shadow, #{$kendo-color-gradient-draghandle-shadow} )
         );
 
         &:focus,
         &.k-focus {
             @include fill(
-                $border: var( --kendo-colorgradient-draghandle-focus-border, #{$kendo-colorgradient-draghandle-focus-border} )
+                $border: var( --kendo-color-gradient-draghandle-focus-border, #{$kendo-color-gradient-draghandle-focus-border} )
             );
             @include box-shadow(
-                var( --kendo-colorgradient-draghandle-focus-shadow, #{$kendo-colorgradient-draghandle-focus-shadow} )
+                var( --kendo-color-gradient-draghandle-focus-shadow, #{$kendo-color-gradient-draghandle-focus-shadow} )
             );
         }
 
@@ -61,20 +61,20 @@
         &:hover,
         &.k-hover {
             @include box-shadow(
-                var( --kendo-colorgradient-draghandle-hover-shadow, #{$kendo-colorgradient-draghandle-hover-shadow} )
+                var( --kendo-color-gradient-draghandle-hover-shadow, #{$kendo-color-gradient-draghandle-hover-shadow} )
             );
         }
     }
 
     .k-colorgradient .k-hsv-draghandle {
         @include box-shadow(
-            var( --kendo-colorgradient-canvas-draghandle-shadow, #{$kendo-colorgradient-canvas-draghandle-shadow} )
+            var( --kendo-color-gradient-canvas-draghandle-shadow, #{$kendo-color-gradient-canvas-draghandle-shadow} )
         );
 
         &:focus,
         &.k-focus {
             @include box-shadow(
-                var( --kendo-colorgradient-canvas-draghandle-shadow, #{$kendo-colorgradient-canvas-draghandle-shadow} )
+                var( --kendo-color-gradient-canvas-draghandle-shadow, #{$kendo-color-gradient-canvas-draghandle-shadow} )
             );
         }
 
@@ -82,7 +82,7 @@
         &:hover,
         &.k-hover {
             @include box-shadow(
-                var( --kendo-colorgradient-canvas-draghandle-shadow, #{$kendo-colorgradient-canvas-draghandle-shadow} )
+                var( --kendo-color-gradient-canvas-draghandle-shadow, #{$kendo-color-gradient-canvas-draghandle-shadow} )
             );
         }
     }
@@ -90,7 +90,7 @@
     // Slider
     .k-colorgradient-slider .k-slider-track {
         @include fill(
-             $border: var( --kendo-colorgradient-slider-border, #{$kendo-colorgradient-slider-border} )
+             $border: var( --kendo-color-gradient-slider-border, #{$kendo-color-gradient-slider-border} )
         );
     }
 
@@ -105,13 +105,13 @@
     }
 
     .k-colorgradient-slider.k-alpha-slider .k-slider-track::before {
-        background: url( $kendo-colorgradient-slider-alpha-bgr ) center repeat;
+        background: url( $kendo-color-gradient-slider-alpha-bgr ) center repeat;
     }
 
     // Inputs
     .k-colorgradient-input-label {
         @include fill(
-             $color: var( --kendo-colorgradient-input-label-text, #{$kendo-colorgradient-input-label-text} )
+             $color: var( --kendo-color-gradient-input-label-text, #{$kendo-color-gradient-input-label-text} )
         );
     }
 }

@@ -1,10 +1,10 @@
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
-@mixin kendo-tilelayout--layout() {
+@mixin kendo-tile-layout--layout() {
 
     .k-tilelayout {
-        border-width: var( --kendo-tilelayout-border-width, #{$kendo-tilelayout-border-width} );
+        border-width: var( --kendo-tile-layout-border-width, #{$kendo-tile-layout-border-width} );
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
@@ -19,8 +19,8 @@
     }
 
     .k-layout-item-hint {
-        @include border-radius( var( --kendo-tilelayout-hint-border-radius, #{$kendo-tilelayout-hint-border-radius} ) );
-        border-width: var( --kendo-tilelayout-hint-border-width, #{$kendo-tilelayout-hint-border-width} );
+        @include border-radius( var( --kendo-tile-layout-hint-border-radius, #{$kendo-tile-layout-hint-border-radius} ) );
+        border-width: var( --kendo-tile-layout-hint-border-width, #{$kendo-tile-layout-hint-border-width} );
         border-style: solid;
         position: relative;
 

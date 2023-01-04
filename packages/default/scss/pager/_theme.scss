@@ -59,11 +59,11 @@
 
             &.k-expanded {
                 @include fill(
-                    $popup-text,
-                    $popup-bg,
-                    $popup-border
+                    $kendo-popup-text,
+                    $kendo-popup-bg,
+                    $kendo-popup-border
                 );
-                @include box-shadow( $popup-shadow );
+                @include box-shadow( $kendo-popup-shadow );
             }
 
         }

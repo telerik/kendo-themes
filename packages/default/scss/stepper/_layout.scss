@@ -2,15 +2,15 @@
 
     // Base
     .k-stepper {
-        margin: $stepper-margin-y $stepper-margin-x;
-        padding: $stepper-padding-y $stepper-padding-x;
-        border-width: $stepper-border-width;
+        margin: $kendo-stepper-margin-y $kendo-stepper-margin-x;
+        padding: $kendo-stepper-padding-y $kendo-stepper-padding-x;
+        border-width: $kendo-stepper-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-size: $stepper-font-size;
-        line-height: $stepper-line-height;
-        font-family: $stepper-font-family;
+        font-size: $kendo-stepper-font-size;
+        line-height: $kendo-stepper-line-height;
+        font-family: $kendo-stepper-font-family;
         display: block;
         position: relative;
         -webkit-touch-callout: none;
@@ -53,11 +53,11 @@
 
         // Step indicator
         .k-step-indicator {
-            @include border-radius( $stepper-indicator-border-radius );
-            margin: if($stepper-indicator-focus-offset > 0, $stepper-indicator-focus-offset, null);
-            width: $stepper-indicator-width;
-            height: $stepper-indicator-height;
-            border-width: $stepper-indicator-border-width;
+            @include border-radius( $kendo-stepper-indicator-border-radius );
+            margin: if($kendo-stepper-indicator-focus-offset > 0, $kendo-stepper-indicator-focus-offset, null);
+            width: $kendo-stepper-indicator-width;
+            height: $kendo-stepper-indicator-height;
+            border-width: $kendo-stepper-indicator-border-width;
             border-style: solid;
             display: flex;
             align-items: center;
@@ -73,16 +73,16 @@
             &::after {
                 @include border-radius( 100% );
                 content: "";
-                border-width: $stepper-indicator-focus-border-width;
+                border-width: $kendo-stepper-indicator-focus-border-width;
                 border-style: solid;
                 border-color: inherit;
                 pointer-events: none;
                 display: none;
                 position: absolute;
-                top: calc( -1 * #{$stepper-indicator-focus-calc-offset} );
-                right: calc( -1 * #{$stepper-indicator-focus-calc-offset} );
-                bottom: calc( -1 * #{$stepper-indicator-focus-calc-offset} );
-                left: calc( -1 * #{$stepper-indicator-focus-calc-offset} );
+                top: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
+                right: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
+                bottom: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
+                left: calc( -1 * #{$kendo-stepper-indicator-focus-calc-offset} );
                 z-index: 2;
             }
         }
@@ -105,8 +105,8 @@
             z-index: 1;
         }
         .k-step-label:only-child {
-            @include border-radius( k-math-div( ( $stepper-indicator-height + 2 * $stepper-indicator-border-width ), 2 ) );
-            padding: $stepper-label-padding-y $stepper-label-padding-x;
+            @include border-radius( k-math-div( ( $kendo-stepper-indicator-height + 2 * $kendo-stepper-indicator-border-width ), 2 ) );
+            padding: $kendo-stepper-label-padding-y $kendo-stepper-label-padding-x;
             border-width: 0;
         }
         .k-step-label .k-step-text {
@@ -126,9 +126,9 @@
         // Optional label
         .k-step-label-optional {
             flex-basis: 100%;
-            font-size: $stepper-optional-label-font-size;
-            font-style: $stepper-optional-label-font-style;
-            opacity: $stepper-optional-label-opacity;
+            font-size: $kendo-stepper-optional-label-font-size;
+            font-style: $kendo-stepper-optional-label-font-style;
+            opacity: $kendo-stepper-optional-label-opacity;
         }
 
 
@@ -183,14 +183,14 @@
             text-align: center;
         }
         .k-step-indicator + .k-step-label {
-            margin-top: if($stepper-indicator-focus-offset > 0, calc(8px - #{$stepper-indicator-focus-offset}), 8px);
+            margin-top: if($kendo-stepper-indicator-focus-offset > 0, calc(8px - #{$kendo-stepper-indicator-focus-offset}), 8px);
         }
 
         // Progressbar
         & ~ .k-progressbar {
             width: 100%;
-            height: $stepper-progressbar-size;
-            top: calc(((#{$stepper-indicator-height} + 2 * #{$stepper-indicator-focus-size}) / 2) + #{$stepper-indicator-focus-size} / 2);
+            height: $kendo-stepper-progressbar-size;
+            top: calc(((#{$kendo-stepper-indicator-height} + 2 * #{$kendo-stepper-indicator-focus-size}) / 2) + #{$kendo-stepper-indicator-focus-size} / 2);
         }
     }
 
@@ -199,7 +199,7 @@
         flex-direction: column;
 
         .k-step {
-            min-height: calc((#{$stepper-indicator-width} + 2 * #{$stepper-indicator-border-width} + 2 * #{$stepper-indicator-focus-size}) + 20px);
+            min-height: calc((#{$kendo-stepper-indicator-width} + 2 * #{$kendo-stepper-indicator-border-width} + 2 * #{$kendo-stepper-indicator-focus-size}) + 20px);
         }
 
         // Label
@@ -207,23 +207,23 @@
             justify-content: flex-start;
         }
         .k-step-indicator + .k-step-label {
-            margin-left: $stepper-label-margin-x;
+            margin-left: $kendo-stepper-label-margin-x;
         }
 
 
         // Progressbar
         & ~ .k-progressbar {
-            width: $stepper-progressbar-size;
+            width: $kendo-stepper-progressbar-size;
             height: 100%;
             min-height: 20px;
-            left: calc((#{$stepper-indicator-width} + 2 * #{$stepper-indicator-border-width} + 2 * #{$stepper-indicator-focus-size}) / 2);
+            left: calc((#{$kendo-stepper-indicator-width} + 2 * #{$kendo-stepper-indicator-border-width} + 2 * #{$kendo-stepper-indicator-focus-size}) / 2);
         }
 
         // Inline content
         .k-step-content {
             height: 0;
             overflow: hidden;
-            transition: $stepper-content-transition-property $stepper-content-transition-duration $stepper-content-transition-timing-function;
+            transition: $kendo-stepper-content-transition-property $kendo-stepper-content-transition-duration $kendo-stepper-content-transition-timing-function;
         }
 
         .k-step-current .k-step-content {
@@ -232,8 +232,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin-left: $stepper-indicator-width + 2 * $stepper-indicator-border-width;
-            padding: $stepper-inline-content-padding-x $stepper-inline-content-padding-y;
+            margin-left: $kendo-stepper-indicator-width + 2 * $kendo-stepper-indicator-border-width;
+            padding: $kendo-stepper-inline-content-padding-x $kendo-stepper-inline-content-padding-y;
         }
     }
 }
@@ -258,12 +258,12 @@
         .k-step-list-vertical {
             .k-step-indicator + .k-step-label {
                 margin-left: 0;
-                margin-right: $stepper-label-margin-x;
+                margin-right: $kendo-stepper-label-margin-x;
             }
 
             & ~ .k-progressbar {
                 left: auto;
-                right: calc((#{$stepper-indicator-width} + 2 * #{$stepper-indicator-border-width} + 2 * #{$stepper-indicator-focus-size}) / 2);
+                right: calc((#{$kendo-stepper-indicator-width} + 2 * #{$kendo-stepper-indicator-border-width} + 2 * #{$kendo-stepper-indicator-focus-size}) / 2);
             }
         }
     }

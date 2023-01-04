@@ -1,7 +1,7 @@
 @include exports("tilelayout/layout") {
 
     .k-tilelayout {
-        border-width: $tilelayout-border-width;
+        border-width: $kendo-tile-layout-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
@@ -11,7 +11,7 @@
 
         .k-card {
             @include box-shadow( none );
-            border-width: $tilelayout-card-border-width;
+            border-width: $kendo-tile-layout-card-border-width;
         }
     }
 
@@ -21,8 +21,8 @@
     }
 
     .k-layout-item-hint {
-        @include border-radius( $tilelayout-hint-border-radius );
-        border-width: $tilelayout-hint-border-width;
+        @include border-radius( $kendo-tile-layout-hint-border-radius );
+        border-width: $kendo-tile-layout-hint-border-width;
         border-style: solid;
         position: relative;
 

@@ -92,27 +92,27 @@ $kendo-time-list-focus-bg: rgba(0, 0, 0, .04) !default;
 
 /// Font sizes of the time-selector.
 /// @group time-selector
-$kendo-time-selector-sm-font-size: $kendo-list-font-size-sm !default;
-$kendo-time-selector-md-font-size: $kendo-list-font-size-md !default;
-$kendo-time-selector-lg-font-size: $kendo-list-font-size-lg !default;
+$kendo-time-selector-sm-font-size: $kendo-list-sm-font-size !default;
+$kendo-time-selector-md-font-size: $kendo-list-md-font-size !default;
+$kendo-time-selector-lg-font-size: $kendo-list-lg-font-size !default;
 
-/// Line heights used along with $font-size.
+/// Line heights used along with $kendo-font-size.
 /// @group time-selector
-$kendo-time-selector-sm-line-height: $kendo-list-line-height-sm !default;
-$kendo-time-selector-md-line-height: $kendo-list-line-height-md !default;
-$kendo-time-selector-lg-line-height: $kendo-list-line-height-lg !default;
+$kendo-time-selector-sm-line-height: $kendo-list-sm-line-height !default;
+$kendo-time-selector-md-line-height: $kendo-list-md-line-height !default;
+$kendo-time-selector-lg-line-height: $kendo-list-lg-line-height !default;
 
 ///  Horizontal padding of the time-selector items.
 /// @group time-selector
-$kendo-time-selector-sm-list-item-padding-x: $kendo-list-item-padding-x-sm !default;
-$kendo-time-selector-md-list-item-padding-x: $kendo-list-item-padding-x-md !default;
-$kendo-time-selector-lg-list-item-padding-x: $kendo-list-item-padding-x-lg !default;
+$kendo-time-selector-sm-list-item-padding-x: $kendo-list-sm-item-padding-x !default;
+$kendo-time-selector-md-list-item-padding-x: $kendo-list-md-item-padding-x !default;
+$kendo-time-selector-lg-list-item-padding-x: $kendo-list-lg-item-padding-x !default;
 
 ///  Vertical padding of the time-selector items.
 /// @group time-selector
-$kendo-time-selector-sm-list-item-padding-y: $kendo-list-item-padding-y-sm !default;
-$kendo-time-selector-md-list-item-padding-y: $kendo-list-item-padding-y-md !default;
-$kendo-time-selector-lg-list-item-padding-y: $kendo-list-item-padding-y-lg !default;
+$kendo-time-selector-sm-list-item-padding-y: $kendo-list-sm-item-padding-y !default;
+$kendo-time-selector-md-list-item-padding-y: $kendo-list-md-item-padding-y !default;
+$kendo-time-selector-lg-list-item-padding-y: $kendo-list-lg-item-padding-y !default;
 
 /// Sizes map for the time-selector.
 /// @group time-selector

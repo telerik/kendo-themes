@@ -1,7 +1,7 @@
 @include exports("skeleton/theme") {
 
     .k-skeleton {
-        @include fill( $bg: $skeleton-item-bg );
+        @include fill( $bg: $kendo-skeleton-item-bg );
     }
 
 }
@@ -16,7 +16,7 @@
             background-image: linear-gradient(
                 to right,
                 transparent,
-                $skeleton-wave-bg,
+                $kendo-skeleton-wave-bg,
                 transparent
             );
         }

@@ -1,13 +1,13 @@
 // Filter expression builder
-$filter-padding-x: $kendo-padding-sm-x !default;
-$filter-padding-y: $filter-padding-x !default;
+$kendo-filter-padding-x: $kendo-padding-sm-x !default;
+$kendo-filter-padding-y: $kendo-filter-padding-x !default;
 
-$filter-bottom-margin: 2.1em !default;
-$filter-line-size: 1px !default;
+$kendo-filter-bottom-margin: 2.1em !default;
+$kendo-filter-line-size: 1px !default;
 
-$filter-operator-dropdown-width: 15em !default;
+$kendo-filter-operator-dropdown-width: 15em !default;
 
-$filter-preview-field-text: $kendo-color-primary !default;
-$filter-preview-operator-text: $kendo-subtle-text !default;
+$kendo-filter-preview-field-text: $kendo-color-primary !default;
+$kendo-filter-preview-operator-text: $kendo-subtle-text !default;
 
-$filter-toolbar-focus-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
+$kendo-filter-toolbar-focus-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;

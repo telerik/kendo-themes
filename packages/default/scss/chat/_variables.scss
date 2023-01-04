@@ -1,72 +1,72 @@
 // Chat
-$chat-padding-x: 16px !default;
-$chat-padding-y: 16px !default;
-$chat-width: 500px !default;
-$chat-height: 600px !default;
-$chat-border-width: 1px !default;
-$chat-font-family: $font-family !default;
-$chat-font-size: $font-size !default;
-$chat-line-height: $line-height !default;
+$kendo-chat-padding-x: 16px !default;
+$kendo-chat-padding-y: 16px !default;
+$kendo-chat-width: 500px !default;
+$kendo-chat-height: 600px !default;
+$kendo-chat-border-width: 1px !default;
+$kendo-chat-font-family: $kendo-font-family !default;
+$kendo-chat-font-size: $kendo-font-size-md !default;
+$kendo-chat-line-height: $kendo-line-height-md !default;
 
-$chat-item-spacing-x: 8px !default;
-$chat-item-spacing-y: 16px !default;
+$kendo-chat-item-spacing-x: 8px !default;
+$kendo-chat-item-spacing-y: 16px !default;
 
-$chat-message-list-padding-x: $chat-padding-x !default;
-$chat-message-list-padding-y: $chat-padding-y !default;
-$chat-message-list-spacing: $chat-item-spacing-y !default;
+$kendo-chat-message-list-padding-x: $kendo-chat-padding-x !default;
+$kendo-chat-message-list-padding-y: $kendo-chat-padding-y !default;
+$kendo-chat-message-list-spacing: $kendo-chat-item-spacing-y !default;
 
-$chat-timestamp-font-size: smaller !default;
-$chat-timestamp-line-height: null !default;
-$chat-timestamp-transform: uppercase !default;
-$chat-timestamp-text: $kendo-subtle-text !default;
-$chat-timestamp-bg: null !default;
+$kendo-chat-timestamp-font-size: smaller !default;
+$kendo-chat-timestamp-line-height: null !default;
+$kendo-chat-timestamp-transform: uppercase !default;
+$kendo-chat-timestamp-text: $kendo-subtle-text !default;
+$kendo-chat-timestamp-bg: null !default;
 
-$chat-bubble-padding-x: 12px !default;
-$chat-bubble-padding-y: 8px !default;
-$chat-bubble-spacing: 2px !default;
-$chat-bubble-line-height: 18px !default;
+$kendo-chat-bubble-padding-x: 12px !default;
+$kendo-chat-bubble-padding-y: 8px !default;
+$kendo-chat-bubble-spacing: 2px !default;
+$kendo-chat-bubble-line-height: 18px !default;
 
-$chat-bubble-border-radius: 12px !default;
-$chat-bubble-border-radius-sm: 2px !default;
+$kendo-chat-bubble-border-radius: 12px !default;
+$kendo-chat-bubble-border-radius-sm: 2px !default;
 
-$chat-avatar-size: 32px !default;
-$chat-avatar-spacing: $chat-item-spacing-x !default;
+$kendo-chat-avatar-size: 32px !default;
+$kendo-chat-avatar-spacing: $kendo-chat-item-spacing-x !default;
 
-$chat-toolbar-padding-x: $kendo-toolbar-padding-x-md !default;
-$chat-toolbar-padding-y: $kendo-toolbar-padding-y-md !default;
-$chat-toolbar-spacing: $kendo-toolbar-spacing-md !default;
-$chat-toolbar-bg: $kendo-toolbar-bg !default;
-$chat-toolbar-text: $kendo-toolbar-text !default;
-$chat-toolbar-border: inherit !default;
+$kendo-chat-toolbar-padding-x: $kendo-toolbar-md-padding-x !default;
+$kendo-chat-toolbar-padding-y: $kendo-toolbar-md-padding-y !default;
+$kendo-chat-toolbar-spacing: $kendo-toolbar-md-spacing !default;
+$kendo-chat-toolbar-bg: $kendo-toolbar-bg !default;
+$kendo-chat-toolbar-text: $kendo-toolbar-text !default;
+$kendo-chat-toolbar-border: inherit !default;
 
-$chat-quick-reply-padding-x: 12px !default;
-$chat-quick-reply-padding-y: 8px !default;
-$chat-quick-reply-spacing: 8px !default;
-$chat-quick-reply-line-height: $chat-bubble-line-height !default;
+$kendo-chat-quick-reply-padding-x: 12px !default;
+$kendo-chat-quick-reply-padding-y: 8px !default;
+$kendo-chat-quick-reply-spacing: 8px !default;
+$kendo-chat-quick-reply-line-height: $kendo-chat-bubble-line-height !default;
 
 
-$chat-bg: $kendo-app-bg !default;
-$chat-text: $kendo-app-text !default;
-$chat-border: $kendo-app-border !default;
+$kendo-chat-bg: $kendo-app-bg !default;
+$kendo-chat-text: $kendo-app-text !default;
+$kendo-chat-border: $kendo-app-border !default;
 
-$chat-bubble-bg: $kendo-component-bg !default;
-$chat-bubble-text: $kendo-component-text !default;
-$chat-bubble-border: $chat-bubble-bg !default;
-$chat-bubble-shadow: 0 1px 2px rgba( $kendo-color-black, .08) !default;
-$chat-bubble-hover-shadow: 0 1px 2px rgba( $kendo-color-black, .16) !default;
-$chat-bubble-selected-shadow: 0 3px 10px rgba( $kendo-color-black, .16) !default;
+$kendo-chat-bubble-bg: $kendo-component-bg !default;
+$kendo-chat-bubble-text: $kendo-component-text !default;
+$kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;
+$kendo-chat-bubble-shadow: 0 1px 2px rgba( $kendo-color-black, .08) !default;
+$kendo-chat-bubble-hover-shadow: 0 1px 2px rgba( $kendo-color-black, .16) !default;
+$kendo-chat-bubble-selected-shadow: 0 3px 10px rgba( $kendo-color-black, .16) !default;
 
-$chat-alt-bubble-bg: $kendo-color-primary !default;
-$chat-alt-bubble-text: k-contrast-legacy( $chat-alt-bubble-bg ) !default;
-$chat-alt-bubble-border: $chat-alt-bubble-bg !default;
-$chat-alt-bubble-shadow: 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) !default;
-$chat-alt-bubble-hover-shadow: 0 1px 2px rgba( $chat-alt-bubble-bg, .2 ) !default;
-$chat-alt-bubble-selected-shadow: 0 3px 10px rgba( $chat-alt-bubble-bg, .4 ) !default;
+$kendo-chat-alt-bubble-bg: $kendo-color-primary !default;
+$kendo-chat-alt-bubble-text: k-contrast-legacy( $kendo-chat-alt-bubble-bg ) !default;
+$kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
+$kendo-chat-alt-bubble-shadow: 0 1px 2px rgba( $kendo-chat-alt-bubble-bg, .2 ) !default;
+$kendo-chat-alt-bubble-hover-shadow: 0 1px 2px rgba( $kendo-chat-alt-bubble-bg, .2 ) !default;
+$kendo-chat-alt-bubble-selected-shadow: 0 3px 10px rgba( $kendo-chat-alt-bubble-bg, .4 ) !default;
 
-$chat-quick-reply-bg: transparent !default;
-$chat-quick-reply-text: $kendo-color-primary !default;
-$chat-quick-reply-border: $kendo-color-primary !default;
+$kendo-chat-quick-reply-bg: transparent !default;
+$kendo-chat-quick-reply-text: $kendo-color-primary !default;
+$kendo-chat-quick-reply-border: $kendo-color-primary !default;
 
-$chat-quick-reply-hover-bg: $kendo-color-primary !default;
-$chat-quick-reply-hover-text: $kendo-color-primary-contrast !default;
-$chat-quick-reply-hover-border: $kendo-color-primary !default;
+$kendo-chat-quick-reply-hover-bg: $kendo-color-primary !default;
+$kendo-chat-quick-reply-hover-text: $kendo-color-primary-contrast !default;
+$kendo-chat-quick-reply-hover-border: $kendo-color-primary !default;

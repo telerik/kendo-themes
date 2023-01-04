@@ -34,7 +34,7 @@ $kendo-checkbox-bg: null !default;
 $kendo-checkbox-text: null !default;
 /// Border color of checkbox.
 /// @group checkbox
-$kendo-checkbox-border: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .54 ) !default;
+$kendo-checkbox-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 ) !default;
 
 /// Background color of hovered checkbox.
 /// @group checkbox
@@ -153,7 +153,7 @@ $kendo-checkbox-list-spacing: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-checkbox-list-item-padding-x: 0px !default;
 /// Vertical padding of checkbox list items.
 /// @group checkbox
-$kendo-checkbox-list-item-padding-y: $kendo-list-item-padding-y-md !default;
+$kendo-checkbox-list-item-padding-y: $kendo-list-md-item-padding-y !default;
 
 
 // Checkbox ripple

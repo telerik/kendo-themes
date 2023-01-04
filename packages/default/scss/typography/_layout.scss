@@ -1,6 +1,6 @@
 @include exports( "typography/layout" ) {
 
-    @if $enable-typography {
+    @if $kendo-enable-typography {
         body { @extend .k-body; }
         h1 { @extend .k-h1; }
         h2 { @extend .k-h2; }
@@ -17,109 +17,109 @@
     .k-body,
     .k-typography {
         @include typography(
-            $font-size,
-            $font-family,
-            $line-height,
-            $font-weight-normal,
-            $letter-spacing
+            $kendo-font-size-md,
+            $kendo-font-family,
+            $kendo-line-height-md,
+            $kendo-font-weight-normal,
+            $kendo-letter-spacing
         );
         margin: 0;
 
         p {
-            margin: $paragraph-margin;
+            margin: $kendo-paragraph-margin;
         }
     }
 
     // Headings
     .k-h1 {
         @include typography(
-            $h1-font-size,
-            $h1-font-family,
-            $h1-line-height,
-            $h1-font-weight,
-            $h1-letter-spacing
+            $kendo-h1-font-size,
+            $kendo-h1-font-family,
+            $kendo-h1-line-height,
+            $kendo-h1-font-weight,
+            $kendo-h1-letter-spacing
         );
-        margin: $h1-margin;
+        margin: $kendo-h1-margin;
     }
     .k-h2 {
         @include typography(
-            $h2-font-size,
-            $h2-font-family,
-            $h2-line-height,
-            $h2-font-weight,
-            $h2-letter-spacing
+            $kendo-h2-font-size,
+            $kendo-h2-font-family,
+            $kendo-h2-line-height,
+            $kendo-h2-font-weight,
+            $kendo-h2-letter-spacing
         );
-        margin: $h2-margin;
+        margin: $kendo-h2-margin;
     }
     .k-h3 {
         @include typography(
-            $h3-font-size,
-            $h3-font-family,
-            $h3-line-height,
-            $h3-font-weight,
-            $h3-letter-spacing
+            $kendo-h3-font-size,
+            $kendo-h3-font-family,
+            $kendo-h3-line-height,
+            $kendo-h3-font-weight,
+            $kendo-h3-letter-spacing
         );
-        margin: $h3-margin;
+        margin: $kendo-h3-margin;
     }
     .k-h4 {
         @include typography(
-            $h4-font-size,
-            $h4-font-family,
-            $h4-line-height,
-            $h4-font-weight,
-            $h4-letter-spacing
+            $kendo-h4-font-size,
+            $kendo-h4-font-family,
+            $kendo-h4-line-height,
+            $kendo-h4-font-weight,
+            $kendo-h4-letter-spacing
         );
-        margin: $h4-margin;
+        margin: $kendo-h4-margin;
     }
     .k-h5 {
         @include typography(
-            $h5-font-size,
-            $h5-font-family,
-            $h5-line-height,
-            $h5-font-weight,
-            $h5-letter-spacing
+            $kendo-h5-font-size,
+            $kendo-h5-font-family,
+            $kendo-h5-line-height,
+            $kendo-h5-font-weight,
+            $kendo-h5-letter-spacing
         );
-        margin: $h5-margin;
+        margin: $kendo-h5-margin;
     }
     .k-h6 {
         @include typography(
-            $h6-font-size,
-            $h6-font-family,
-            $h6-line-height,
-            $h6-font-weight,
-            $h6-letter-spacing
+            $kendo-h6-font-size,
+            $kendo-h6-font-family,
+            $kendo-h6-line-height,
+            $kendo-h6-font-weight,
+            $kendo-h6-letter-spacing
         );
-        margin: $h6-margin;
+        margin: $kendo-h6-margin;
     }
 
     // Paragraph
     .k-paragraph {
         @include typography(
-            $paragraph-font-size,
-            $paragraph-font-family,
-            $paragraph-line-height,
-            $paragraph-font-weight,
-            $paragraph-letter-spacing
+            $kendo-paragraph-font-size,
+            $kendo-paragraph-font-family,
+            $kendo-paragraph-line-height,
+            $kendo-paragraph-font-weight,
+            $kendo-paragraph-letter-spacing
         );
-        margin: $paragraph-margin;
+        margin: $kendo-paragraph-margin;
     }
 
     // Code snippet
     .k-pre,
     .k-code {
         @include typography(
-            $code-font-size,
-            $code-font-family,
-            $code-line-height,
-            $code-font-weight,
-            $code-letter-spacing
+            $kendo-code-font-size,
+            $kendo-code-font-family,
+            $kendo-code-line-height,
+            $kendo-code-font-weight,
+            $kendo-code-letter-spacing
         );
         border-style: solid;
-        border-width: $code-border-width;
+        border-width: $kendo-code-border-width;
     }
 
     .k-pre {
-        padding: $pre-padding-y $pre-padding-x;
+        padding: $kendo-pre-padding-y $kendo-pre-padding-x;
         overflow: auto;
     }
 
@@ -133,44 +133,44 @@
     }
 
     .k-code {
-        padding: $code-padding-y $code-padding-x;
+        padding: $kendo-code-padding-y $kendo-code-padding-x;
     }
 
     // Display
     .k-display-1 {
         @include typography(
-            $display1-font-size,
-            $display1-font-family,
-            $display1-line-height,
-            $display1-font-weight,
-            $display1-letter-spacing
+            $kendo-display1-font-size,
+            $kendo-display1-font-family,
+            $kendo-display1-line-height,
+            $kendo-display1-font-weight,
+            $kendo-display1-letter-spacing
         );
     }
     .k-display-2 {
         @include typography(
-            $display2-font-size,
-            $display2-font-family,
-            $display2-line-height,
-            $display2-font-weight,
-            $display2-letter-spacing
+            $kendo-display2-font-size,
+            $kendo-display2-font-family,
+            $kendo-display2-line-height,
+            $kendo-display2-font-weight,
+            $kendo-display2-letter-spacing
         );
     }
     .k-display-3 {
         @include typography(
-            $display3-font-size,
-            $display3-font-family,
-            $display3-line-height,
-            $display3-font-weight,
-            $display3-letter-spacing
+            $kendo-display3-font-size,
+            $kendo-display3-font-family,
+            $kendo-display3-line-height,
+            $kendo-display3-font-weight,
+            $kendo-display3-letter-spacing
         );
     }
     .k-display-4 {
         @include typography(
-            $display4-font-size,
-            $display4-font-family,
-            $display4-line-height,
-            $display4-font-weight,
-            $display4-letter-spacing
+            $kendo-display4-font-size,
+            $kendo-display4-font-family,
+            $kendo-display4-line-height,
+            $kendo-display4-font-weight,
+            $kendo-display4-letter-spacing
         );
     }
 }
