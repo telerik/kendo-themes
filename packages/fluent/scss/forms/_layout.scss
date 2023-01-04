@@ -241,7 +241,7 @@
             > span:not(.k-widget) {
                 width: var( --kendo-inline-form-element-width, #{$kendo-inline-form-element-width} );
                 text-align: right;
-                line-height: var( --kendo-line-height, #{$kendo-line-height} );
+                line-height: var( --kendo-line-height, #{$kendo-line-height-md} );
                 padding-block: calc( #{$kendo-padding-md-y} + #{$kendo-input-border-width} );
                 padding-inline-end: var( --kendo-padding-x-lg, #{$kendo-padding-lg-x} );
                 align-self: center;
@@ -291,7 +291,7 @@
 
     .k-edit-label {
         margin-block-end: map.get( $kendo-spacing, 4 );
-        padding-block: calc( #{$kendo-input-padding-y-md} + #{$kendo-input-border-width} );
+        padding-block: calc( #{$kendo-input-md-padding-y} + #{$kendo-input-border-width} );
         width: 30%;
         line-height: var( --kendo-form-line-height, #{$kendo-form-line-height} );
         text-align: right;
@@ -306,7 +306,7 @@
         position: relative;
 
         &.k-no-editor {
-            padding-block: calc( #{$kendo-input-padding-y-md} + #{$kendo-input-border-width} );
+            padding-block: calc( #{$kendo-input-md-padding-y} + #{$kendo-input-border-width} );
         }
     }
 

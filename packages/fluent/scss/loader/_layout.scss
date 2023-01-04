@@ -29,30 +29,30 @@
 
     // Loader sizes
     .k-loader-sm {
-        padding-inline: var( --kendo-loader-padding-x-sm, #{$kendo-loader-padding-x-sm} );
-        padding-block: var( --kendo-loader-padding-y-sm, #{$kendo-loader-padding-y-sm} );
+        padding-inline: var( --kendo-loader-sm-padding-x, #{$kendo-loader-sm-padding-x} );
+        padding-block: var( --kendo-loader-sm-padding-y, #{$kendo-loader-sm-padding-y} );
 
         .k-loader-segment {
-            width: var( --kendo-loader-segment-size-sm, #{$kendo-loader-segment-size-sm} );
-            height: var( --kendo-loader-segment-size-sm, #{$kendo-loader-segment-size-sm} );
+            width: var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} );
+            height: var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} );
         }
     }
     .k-loader-md {
-        padding-inline: var( --kendo-loader-padding-x-md, #{$kendo-loader-padding-x-md} );
-        padding-block: var( --kendo-loader-padding-y-md, #{$kendo-loader-padding-y-md} );
+        padding-inline: var( --kendo-loader-md-padding-x, #{$kendo-loader-md-padding-x} );
+        padding-block: var( --kendo-loader-md-padding-y, #{$kendo-loader-md-padding-y} );
 
         .k-loader-segment {
-            width: var( --kendo-loader-segment-size-md, #{$kendo-loader-segment-size-md} );
-            height: var( --kendo-loader-segment-size-md, #{$kendo-loader-segment-size-md} );
+            width: var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} );
+            height: var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} );
         }
     }
     .k-loader-lg {
-        padding-inline: var( --kendo-loader-padding-x-lg, #{$kendo-loader-padding-x-lg} );
-        padding-block: var( --kendo-loader-padding-y-lg, #{$kendo-loader-padding-y-lg} );
+        padding-inline: var( --kendo-loader-lg-padding-x, #{$kendo-loader-lg-padding-x} );
+        padding-block: var( --kendo-loader-lg-padding-y, #{$kendo-loader-lg-padding-y} );
 
         .k-loader-segment {
-            width: var( --kendo-loader-segment-size-lg, #{$kendo-loader-segment-size-lg} );
-            height: var( --kendo-loader-segment-size-lg, #{$kendo-loader-segment-size-lg} );
+            width: var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} );
+            height: var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} );
         }
     }
 
@@ -90,22 +90,22 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                width: calc( var( --kendo-loader-segment-size-sm, #{$kendo-loader-segment-size-sm} ) * 3 );
-                height: calc( var( --kendo-loader-segment-size-sm, #{$kendo-loader-segment-size-sm} ) * 1.5 );
+                width: calc( var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} ) * 3 );
+                height: calc( var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} ) * 1.5 );
             }
         }
 
         &.k-loader-md {
             .k-loader-canvas {
-                width: calc( var( --kendo-loader-segment-size-md, #{$kendo-loader-segment-size-md} ) * 3 );
-                height: calc( var( --kendo-loader-segment-size-md, #{$kendo-loader-segment-size-md} ) * 1.5 );
+                width: calc( var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} ) * 3 );
+                height: calc( var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} ) * 1.5 );
             }
         }
 
         &.k-loader-lg {
             .k-loader-canvas {
-                width: calc( var( --kendo-loader-segment-size-lg, #{$kendo-loader-segment-size-lg} ) * 3 );
-                height: calc( var( --kendo-loader-segment-size-lg, #{$kendo-loader-segment-size-lg} ) * 1.5 );
+                width: calc( var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} ) * 3 );
+                height: calc( var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} ) * 1.5 );
             }
         }
     }
@@ -170,25 +170,25 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                margin: calc( var( --kendo-loader-segment-size-sm, #{$kendo-loader-segment-size-sm} ) / 2 );
-                width: calc( var( --kendo-loader-spinner-3-width-sm, #{$kendo-loader-spinner-3-width-sm} ) - var( --kendo-loader-segment-size-sm, #{$kendo-loader-segment-size-sm} ) );
-                height: calc( var( --kendo-loader-spinner-3-height-sm, #{$kendo-loader-spinner-3-height-sm} ) - var( --kendo-loader-segment-size-sm, #{$kendo-loader-segment-size-sm} ) );
+                margin: calc( var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} ) / 2 );
+                width: calc( var( --kendo-loader-sm-spinner-3-width, #{$kendo-loader-sm-spinner-3-width} ) - var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} ) );
+                height: calc( var( --kendo-loader-sm-spinner-3-height, #{$kendo-loader-sm-spinner-3-height} ) - var( --kendo-loader-sm-segment-size, #{$kendo-loader-sm-segment-size} ) );
             }
         }
 
         &.k-loader-md {
             .k-loader-canvas {
-                margin: calc( var( --kendo-loader-segment-size-md, #{$kendo-loader-segment-size-md} ) / 2 );
-                width: calc( var( --kendo-loader-spinner-3-width-md, #{$kendo-loader-spinner-3-width-md} ) - var( --kendo-loader-segment-size-md, #{$kendo-loader-segment-size-md} ) );
-                height: calc( var( --kendo-loader-spinner-3-height-md, #{$kendo-loader-spinner-3-height-md} ) - var( --kendo-loader-segment-size-md, #{$kendo-loader-segment-size-md} ) );
+                margin: calc( var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} ) / 2 );
+                width: calc( var( --kendo-loader-md-spinner-3-width, #{$kendo-loader-md-spinner-3-width} ) - var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} ) );
+                height: calc( var( --kendo-loader-md-spinner-3-height, #{$kendo-loader-md-spinner-3-height} ) - var( --kendo-loader-md-segment-size, #{$kendo-loader-md-segment-size} ) );
             }
         }
 
         &.k-loader-lg {
             .k-loader-canvas {
-                margin: calc( var( --kendo-loader-segment-size-lg, #{$kendo-loader-segment-size-lg} ) / 2 );
-                width: calc( var( --kendo-loader-spinner-3-width-lg, #{$kendo-loader-spinner-3-width-lg} ) - var( --kendo-loader-segment-size-lg, #{$kendo-loader-segment-size-lg} ) );
-                height: calc( var( --kendo-loader-spinner-3-height-lg, #{$kendo-loader-spinner-3-height-lg} ) - var( --kendo-loader-segment-size-lg, #{$kendo-loader-segment-size-lg} ) );
+                margin: calc( var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} ) / 2 );
+                width: calc( var( --kendo-loader-lg-spinner-3-width, #{$kendo-loader-lg-spinner-3-width} ) - var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} ) );
+                height: calc( var( --kendo-loader-lg-spinner-3-height, #{$kendo-loader-lg-spinner-3-height} ) - var( --kendo-loader-lg-segment-size, #{$kendo-loader-lg-segment-size} ) );
             }
         }
     }
@@ -345,22 +345,22 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                width: var( --kendo-loader-spinner-4-width-sm, #{$kendo-loader-spinner-4-width-sm} );
-                height: var( --kendo-loader-spinner-4-height-sm, #{$kendo-loader-spinner-4-height-sm} );
+                width: var( --kendo-loader-sm-spinner-4-width, #{$kendo-loader-sm-spinner-4-width} );
+                height: var( --kendo-loader-sm-spinner-4-height, #{$kendo-loader-sm-spinner-4-height} );
             }
         }
 
         &.k-loader-md {
             .k-loader-canvas {
-                width: var( --kendo-loader-spinner-4-width-md, #{$kendo-loader-spinner-4-width-md} );
-                height: var( --kendo-loader-spinner-4-height-md, #{$kendo-loader-spinner-4-height-md} );
+                width: var( --kendo-loader-md-spinner-4-width, #{$kendo-loader-md-spinner-4-width} );
+                height: var( --kendo-loader-md-spinner-4-height, #{$kendo-loader-md-spinner-4-height} );
             }
         }
 
         &.k-loader-lg {
             .k-loader-canvas {
-                width: var( --kendo-loader-spinner-4-width-lg, #{$kendo-loader-spinner-4-width-lg} );
-                height: var( --kendo-loader-spinner-4-height-lg, #{$kendo-loader-spinner-4-height-lg} );
+                width: var( --kendo-loader-lg-spinner-4-width, #{$kendo-loader-lg-spinner-4-width} );
+                height: var( --kendo-loader-lg-spinner-4-height, #{$kendo-loader-lg-spinner-4-height} );
             }
         }
     }
@@ -411,35 +411,35 @@
     // Loader Container Sizes
     .k-loader-container-sm {
         .k-loader-container-inner {
-            padding-inline: var( --kendo-loader-container-padding-x-sm, #{$kendo-loader-container-padding-x-sm} );
-            padding-block: var( --kendo-loader-container-padding-y-sm, #{$kendo-loader-container-padding-y-sm} );
-            gap: var( --kendo-loader-container-gap-sm, #{$kendo-loader-container-gap-sm} );
+            padding-inline: var( --kendo-loader-sm-container-padding-x, #{$kendo-loader-sm-container-padding-x} );
+            padding-block: var( --kendo-loader-sm-container-padding-y, #{$kendo-loader-sm-container-padding-y} );
+            gap: var( --kendo-loader-sm-container-gap, #{$kendo-loader-sm-container-gap} );
         }
 
         .k-loader-container-label {
-            font-size: var( --kendo-loader-container-font-size-sm, #{$kendo-loader-container-font-size-sm} );
+            font-size: var( --kendo-loader-sm-container-font-size, #{$kendo-loader-sm-container-font-size} );
         }
     }
     .k-loader-container-md {
         .k-loader-container-inner {
-            padding-inline: var( --kendo-loader-container-padding-x-md, #{$kendo-loader-container-padding-x-md} );
-            padding-block: var( --kendo-loader-container-padding-y-md, #{$kendo-loader-container-padding-y-md} );
-            gap: var( --kendo-loader-container-gap-md, #{$kendo-loader-container-gap-md} );
+            padding-inline: var( --kendo-loader-md-container-padding-x, #{$kendo-loader-md-container-padding-x} );
+            padding-block: var( --kendo-loader-md-container-padding-y, #{$kendo-loader-md-container-padding-y} );
+            gap: var( --kendo-loader-md-container-gap, #{$kendo-loader-md-container-gap} );
         }
 
         .k-loader-container-label {
-            font-size: var( --kendo-loader-container-font-size-md, #{$kendo-loader-container-font-size-md} );
+            font-size: var( --kendo-loader-md-container-font-size, #{$kendo-loader-md-container-font-size} );
         }
     }
     .k-loader-container-lg {
         .k-loader-container-inner {
-            padding-inline: var( --kendo-loader-container-padding-x-lg, #{$kendo-loader-container-padding-x-lg} );
-            padding-block: var( --kendo-loader-container-padding-y-lg, #{$kendo-loader-container-padding-y-lg} );
-            gap: var( --kendo-loader-container-gap-lg, #{$kendo-loader-container-gap-lg} );
+            padding-inline: var( --kendo-loader-lg-container-padding-x, #{$kendo-loader-lg-container-padding-x} );
+            padding-block: var( --kendo-loader-lg-container-padding-y, #{$kendo-loader-lg-container-padding-y} );
+            gap: var( --kendo-loader-lg-container-gap, #{$kendo-loader-lg-container-gap} );
         }
 
         .k-loader-container-label {
-            font-size: var( --kendo-loader-container-font-size-lg, #{$kendo-loader-container-font-size-lg} );
+            font-size: var( --kendo-loader-lg-container-font-size, #{$kendo-loader-lg-container-font-size} );
         }
     }
 

@@ -13,14 +13,14 @@
 
     // Card
     .k-card {
-        @include border-radius( $card-border-radius );
-        border-width: $card-border-width;
+        @include border-radius( $kendo-card-border-radius );
+        border-width: $kendo-card-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $card-font-family;
-        font-size: $card-font-size;
-        line-height: $card-line-height;
+        font-family: $kendo-card-font-family;
+        font-size: $kendo-card-font-size;
+        line-height: $kendo-card-line-height;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -35,7 +35,7 @@
         }
     }
     .k-card > .k-card-inner {
-        @include border-radius( $card-inner-border-radius );
+        @include border-radius( $kendo-card-inner-border-radius );
         display: flex;
         flex-direction: inherit;
         overflow: hidden;
@@ -50,8 +50,8 @@
 
     // Header
     .k-card-header {
-        padding: $card-header-padding-y $card-header-padding-x;
-        border-width: 0 0 $card-header-border-width;
+        padding: $kendo-card-header-padding-y $kendo-card-header-padding-x;
+        border-width: 0 0 $kendo-card-header-border-width;
         border-style: solid;
         outline: 0;
         flex-shrink: 0;
@@ -65,15 +65,15 @@
         }
         .k-card-title + .k-card-subtitle,
         .k-card-subtitle + .k-card-subtitle {
-            margin-top: $card-title-margin-bottom;
+            margin-top: $kendo-card-title-margin-bottom;
         }
     }
 
 
     // Footer
     .k-card-footer {
-        padding: $card-footer-padding-y $card-footer-padding-x;
-        border-width: $card-footer-border-width 0 0;
+        padding: $kendo-card-footer-padding-y $kendo-card-footer-padding-x;
+        border-width: $kendo-card-footer-border-width 0 0;
         border-style: solid;
         outline: 0;
         flex-shrink: 0;
@@ -82,12 +82,12 @@
 
     // Body
     .k-card-body {
-        padding: $card-body-padding-y $card-body-padding-x;
+        padding: $kendo-card-body-padding-y $kendo-card-body-padding-x;
         outline: 0;
         flex: 1 1 auto;
 
         p {
-            margin: $paragraph-margin;
+            margin: $kendo-paragraph-margin;
         }
 
         > .k-last,
@@ -104,10 +104,10 @@
     // Card avatar
     .k-card-avatar,
     .k-card .k-avatar {
-        margin-right: $card-avatar-spacing;
-        width: $card-avatar-size;
-        height: $card-avatar-size;
-        flex-basis: $card-avatar-size;
+        margin-right: $kendo-card-avatar-spacing;
+        width: $kendo-card-avatar-size;
+        height: $kendo-card-avatar-size;
+        flex-basis: $kendo-card-avatar-size;
     }
 
 
@@ -125,7 +125,7 @@
         }
 
         .k-card-horizontal & {
-            max-width: $card-img-max-width;
+            max-width: $kendo-card-img-max-width;
             object-fit: cover;
         }
     }
@@ -133,26 +133,26 @@
 
     // Card title
     .k-card-title {
-        margin: 0 0 $card-title-margin-bottom;
+        margin: 0 0 $kendo-card-title-margin-bottom;
         @include typography(
-            $card-title-font-size,
-            $card-title-font-family,
-            $card-title-line-height,
-            $card-title-font-weight,
-            $card-title-letter-spacing
+            $kendo-card-title-font-size,
+            $kendo-card-title-font-family,
+            $kendo-card-title-line-height,
+            $kendo-card-title-font-weight,
+            $kendo-card-title-letter-spacing
         );
     }
 
 
     // Card subtitle
     .k-card-subtitle {
-        margin: 0 0 $card-subtitle-margin-bottom;
+        margin: 0 0 $kendo-card-subtitle-margin-bottom;
         @include typography(
-            $card-subtitle-font-size,
-            $card-subtitle-font-family,
-            $card-subtitle-line-height,
-            $card-subtitle-font-weight,
-            $card-subtitle-letter-spacing
+            $kendo-card-subtitle-font-size,
+            $kendo-card-subtitle-font-family,
+            $kendo-card-subtitle-line-height,
+            $kendo-card-subtitle-font-weight,
+            $kendo-card-subtitle-letter-spacing
         );
     }
 
@@ -185,7 +185,7 @@
 
     // Card actions
     .k-card-actions {
-        padding: $card-actions-padding-y $card-actions-padding-x;
+        padding: $kendo-card-actions-padding-y $kendo-card-actions-padding-x;
         border-width: 0;
         border-style: solid;
         border-color: inherit;
@@ -193,7 +193,7 @@
         display: flex;
         flex-shrink: 0;
         flex-basis: auto;
-        gap: $card-actions-gap;
+        gap: $kendo-card-actions-gap;
     }
 
 
@@ -228,7 +228,7 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: stretch;
-        gap: $card-deck-gap;
+        gap: $kendo-card-deck-gap;
         flex: 0 0 auto;
 
         .k-card {
@@ -242,7 +242,7 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: stretch;
-        gap: $card-deck-gap;
+        gap: $kendo-card-deck-gap;
         flex: 0 0 auto;
 
         .k-card {
@@ -261,17 +261,17 @@
         overflow: hidden;
 
         > .k-button {
-            @include border-radius( $card-deck-scroll-button-radius );
+            @include border-radius( $kendo-card-deck-scroll-button-radius );
             flex: 0 0 auto;
             position: absolute;
             z-index: 1;
 
             &:first-child {
-                left: $card-deck-scroll-button-offset;
+                left: $kendo-card-deck-scroll-button-offset;
             }
 
             &:last-child {
-                right: $card-deck-scroll-button-offset;
+                right: $kendo-card-deck-scroll-button-offset;
             }
         }
 
@@ -298,19 +298,19 @@
             flex: 0 0 auto;
         }
         .k-card + .k-card {
-            margin-inline-start: $card-border-width;
+            margin-inline-start: $kendo-card-border-width;
         }
 
 
         // Border-radius
         .k-card.k-first {
-            @include border-left-radius( $card-border-radius );
+            @include border-left-radius( $kendo-card-border-radius );
         }
         .k-card.k-last {
-            @include border-right-radius( $card-border-radius );
+            @include border-right-radius( $kendo-card-border-radius );
         }
         .k-card.k-only {
-            @include border-radius( $card-border-radius );
+            @include border-radius( $kendo-card-border-radius );
         }
     }
 
@@ -328,9 +328,9 @@
 
     .k-card-callout {
         margin: 0;
-        width: $card-callout-width;
-        height: $card-callout-height;
-        border-width: $card-border-width;
+        width: $kendo-card-callout-width;
+        height: $kendo-card-callout-height;
+        border-width: $kendo-card-border-width;
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
@@ -367,7 +367,7 @@
 
     // Solid card
     .k-card-solid {
-        @include box-shadow( $card-shadow );
+        @include box-shadow( $kendo-card-shadow );
     }
 
 

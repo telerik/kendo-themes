@@ -2,9 +2,9 @@
 
     .k-map {
         @include fill(
-            $map-text,
-            $map-bg,
-            $map-border
+            $kendo-map-text,
+            $kendo-map-bg,
+            $kendo-map-border
         );
 
         .k-navigator {
@@ -18,11 +18,11 @@
         }
 
         .k-marker {
-            color: $map-marker-fill;
+            color: $kendo-map-marker-fill;
         }
 
         .k-attribution {
-            background-color: $map-attribution-bg;
+            background-color: $kendo-map-attribution-bg;
         }
     }
 

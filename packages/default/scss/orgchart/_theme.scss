@@ -3,48 +3,48 @@
     // OrgChart
     .k-orgchart {
         @include fill (
-            $orgchart-text,
-            $orgchart-bg,
-            $orgchart-border
+            $kendo-orgchart-text,
+            $kendo-orgchart-bg,
+            $kendo-orgchart-border
         );
     }
 
     // Card
     .k-orgchart-card {
-        @include box-shadow( $orgchart-card-shadow );
+        @include box-shadow( $kendo-orgchart-card-shadow );
 
         .k-card-body {
-            @include fill( $border: $orgchart-card-body-border-color );
+            @include fill( $border: $kendo-orgchart-card-body-border-color );
         }
 
         &:focus,
         &.k-focus {
-            @include focus-indicator( $orgchart-card-focus-shadow );
+            @include focus-indicator( $kendo-orgchart-card-focus-shadow );
         }
     }
 
     // Group
     .k-orgchart-node-group-container {
         @include fill (
-            $orgchart-node-group-text,
-            $orgchart-node-group-bg,
-            $orgchart-node-group-border
+            $kendo-orgchart-node-group-text,
+            $kendo-orgchart-node-group-bg,
+            $kendo-orgchart-node-group-border
         );
     }
     .k-orgchart-node-group-container:focus,
     .k-orgchart-node-group-container.k-focus {
-        @include focus-indicator( $orgchart-node-group-focus-shadow );
-        @include fill ( $border: $orgchart-node-group-focus-border );
+        @include focus-indicator( $kendo-orgchart-node-group-focus-shadow );
+        @include fill ( $border: $kendo-orgchart-node-group-focus-border );
     }
 
     .k-orgchart-node-group-subtitle {
-        @include fill( $color: $orgchart-node-group-subtitle-text );
+        @include fill( $color: $kendo-orgchart-node-group-subtitle-text );
     }
 
     // Lines
     .k-orgchart-line-h,
     .k-orgchart-line-v {
-        @include fill( $color: $orgchart-line-fill );
+        @include fill( $color: $kendo-orgchart-line-fill );
     }
 
 }

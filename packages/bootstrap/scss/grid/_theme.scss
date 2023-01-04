@@ -369,9 +369,9 @@
         .k-menu:not(.k-context-menu) {
 
             @include fill(
-                $popup-text,
-                $popup-bg,
-                $popup-border
+                $kendo-popup-text,
+                $kendo-popup-bg,
+                $kendo-popup-border
             );
 
             .k-item {
@@ -412,7 +412,7 @@
     }
 
     .k-check-all-wrap {
-        @include fill( $border: $popup-border );
+        @include fill( $border: $kendo-popup-border );
     }
 
     .k-grid-norecords-template {

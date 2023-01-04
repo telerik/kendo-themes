@@ -6,40 +6,40 @@
 /// Horizontal padding of the pager according to the pager size.
 /// @group pager
 $kendo-pager-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-pager-padding-x-sm: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-pager-padding-x-md: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-pager-padding-x-lg: k-map-get( $kendo-spacing, 2.5 ) !default;
+$kendo-pager-sm-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-pager-md-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-lg-padding-x: k-map-get( $kendo-spacing, 2.5 ) !default;
 /// Vertical padding of the pager according to the pager size.
 /// @group pager
 $kendo-pager-padding-y: $kendo-pager-padding-x !default;
-$kendo-pager-padding-y-sm: $kendo-pager-padding-x-sm !default;
-$kendo-pager-padding-y-md: $kendo-pager-padding-x-md !default;
-$kendo-pager-padding-y-lg: $kendo-pager-padding-x-lg !default;
+$kendo-pager-sm-padding-y: $kendo-pager-sm-padding-x !default;
+$kendo-pager-md-padding-y: $kendo-pager-md-padding-x !default;
+$kendo-pager-lg-padding-y: $kendo-pager-lg-padding-x !default;
 
 /// Minimum width of the pager items according to the pager size.
 /// @group pager
-$kendo-pager-item-min-width-sm: $kendo-button-calc-size-sm !default;
-$kendo-pager-item-min-width-md: $kendo-button-calc-size-md !default;
-$kendo-pager-item-min-width-lg: $kendo-button-calc-size-lg !default;
+$kendo-pager-sm-item-min-width: $kendo-button-sm-calc-size !default;
+$kendo-pager-md-item-min-width: $kendo-button-md-calc-size !default;
+$kendo-pager-lg-item-min-width: $kendo-button-lg-calc-size !default;
 
 /// Margin between pager item groups according to the pager size.
 /// @group pager
-$kendo-pager-item-group-spacing-sm: k-map-get( $kendo-spacing, 3 ) !default;
-$kendo-pager-item-group-spacing-md: k-map-get( $kendo-spacing, 3.5 ) !default;
-$kendo-pager-item-group-spacing-lg: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-pager-sm-item-group-spacing: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-pager-md-item-group-spacing: k-map-get( $kendo-spacing, 3.5 ) !default;
+$kendo-pager-lg-item-group-spacing: k-map-get( $kendo-spacing, 4 ) !default;
 
 /// Border width of the pager.
 /// @group pager
 $kendo-pager-border-width: 1px !default;
 /// Font family of the pager.
 /// @group pager
-$kendo-pager-font-family: $font-family !default;
+$kendo-pager-font-family: $kendo-font-family !default;
 /// Font size of the pager.
 /// @group pager
-$kendo-pager-font-size: $font-size !default;
+$kendo-pager-font-size: $kendo-font-size-md !default;
 /// Line height of the pager.
 /// @group pager
-$kendo-pager-line-height: $line-height !default;
+$kendo-pager-line-height: $kendo-line-height-md !default;
 /// Background color of the pager.
 /// @group pager
 $kendo-pager-bg: $kendo-component-header-bg !default;
@@ -118,32 +118,32 @@ $kendo-pager-input-width: 5em !default;
 
 /// Width of the pager dropdowns according to the pager size.
 /// @group pager
-$kendo-pager-dropdown-width-sm: 5em !default;
-$kendo-pager-dropdown-width-md: 5em !default;
-$kendo-pager-dropdown-width-lg: 5em !default;
+$kendo-pager-sm-dropdown-width: 5em !default;
+$kendo-pager-md-dropdown-width: 5em !default;
+$kendo-pager-lg-dropdown-width: 5em !default;
 
 /// Sizes map of the pager.
 /// @group pager
 $kendo-pager-sizes: (
     sm: (
-        padding-x: $kendo-pager-padding-x-sm,
-        padding-y: $kendo-pager-padding-y-sm,
-        item-group-spacing: $kendo-pager-item-group-spacing-sm,
-        item-min-width: $kendo-pager-item-min-width-sm,
-        pager-dropdown-width: $kendo-pager-dropdown-width-sm
+        padding-x: $kendo-pager-sm-padding-x,
+        padding-y: $kendo-pager-sm-padding-y,
+        item-group-spacing: $kendo-pager-sm-item-group-spacing,
+        item-min-width: $kendo-pager-sm-item-min-width,
+        pager-dropdown-width: $kendo-pager-sm-dropdown-width
     ),
     md: (
-        padding-x: $kendo-pager-padding-x-md,
-        padding-y: $kendo-pager-padding-y-md,
-        item-group-spacing: $kendo-pager-item-group-spacing-md,
-        item-min-width: $kendo-pager-item-min-width-md,
-        pager-dropdown-width: $kendo-pager-dropdown-width-md
+        padding-x: $kendo-pager-md-padding-x,
+        padding-y: $kendo-pager-md-padding-y,
+        item-group-spacing: $kendo-pager-md-item-group-spacing,
+        item-min-width: $kendo-pager-md-item-min-width,
+        pager-dropdown-width: $kendo-pager-md-dropdown-width
     ),
     lg: (
-        padding-x: $kendo-pager-padding-x-lg,
-        padding-y: $kendo-pager-padding-y-lg,
-        item-group-spacing: $kendo-pager-item-group-spacing-lg,
-        item-min-width: $kendo-pager-item-min-width-lg,
-        pager-dropdown-width: $kendo-pager-dropdown-width-lg
+        padding-x: $kendo-pager-lg-padding-x,
+        padding-y: $kendo-pager-lg-padding-y,
+        item-group-spacing: $kendo-pager-lg-item-group-spacing,
+        item-min-width: $kendo-pager-lg-item-min-width,
+        pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 ) !default;

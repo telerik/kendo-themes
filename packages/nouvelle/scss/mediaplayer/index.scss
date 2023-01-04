@@ -18,9 +18,9 @@ $_kendo-module-meta: (
 // Expose
 @mixin mediaplayer-styles() {
     @include module-render( "mediaplayer" ) {
-        @include kendo-mediaplayer--layout();
-        @include kendo-mediaplayer--extended-layout();
-        @include kendo-mediaplayer--theme();
-        @include kendo-mediaplayer--extended-theme();
+        @include kendo-media-player--layout();
+        @include kendo-media-player--extended-layout();
+        @include kendo-media-player--theme();
+        @include kendo-media-player--extended-theme();
     }
 }

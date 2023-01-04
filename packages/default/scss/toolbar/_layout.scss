@@ -80,7 +80,7 @@
         .k-separator,
         .k-toolbar-separator {
             width: 0;
-            height: $line-height-em;
+            height: $kendo-line-height-em;
             border-width: 0 0 0 1px;
             border-style: solid;
             align-self: center;
@@ -89,7 +89,7 @@
 
         // Spacer
         .k-toolbar-spacer {
-            height: $line-height-em;
+            height: $kendo-line-height-em;
             flex: 1 0 0%;
         }
 
@@ -141,13 +141,13 @@
     }
     // Remove once we decide to not size empty containers
     .k-toolbar-sm::before {
-        height: $kendo-button-calc-size-sm;
+        height: $kendo-button-sm-calc-size;
     }
     .k-toolbar-md::before {
-        height: $kendo-button-calc-size-md;
+        height: $kendo-button-md-calc-size;
     }
     .k-toolbar-lg::before {
-        height: $kendo-button-calc-size-lg;
+        height: $kendo-button-lg-calc-size;
     }
 
 }
@@ -160,12 +160,12 @@
     // sass-lint:disable class-name-format
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
-        padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md !important; // sass-lint:disable-line no-important
+        padding: $kendo-toolbar-md-padding-y $kendo-toolbar-md-padding-x !important; // sass-lint:disable-line no-important
         border-width: $kendo-toolbar-border-width;
         border-style: solid;
         display: flex;
         flex-flow: row nowrap;
-        gap: $kendo-toolbar-spacing-md;
+        gap: $kendo-toolbar-md-spacing;
         align-items: center;
 
         .k-toolbar {
@@ -196,8 +196,8 @@
 
     // Overflow container
     .k-overflow-container {
-        font-size: $kendo-menu-popup-font-size-md;
-        line-height: $kendo-menu-popup-line-height-md;
+        font-size: $kendo-menu-popup-md-font-size;
+        line-height: $kendo-menu-popup-md-line-height;
 
         > .k-item {
             border-color: inherit;
@@ -214,7 +214,7 @@
 
         // Button
         .k-overflow-button {
-            padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-md;
+            padding: $kendo-menu-popup-md-item-padding-y $kendo-menu-popup-md-item-padding-x;
             width: 100%;
             height: auto;
             border-width: 0;

@@ -1,108 +1,99 @@
 // Typography
 
-/// Global typography styles for the Kendo Bootstrap theme.
-/// @group typography
-$enable-typography: false !default;
-
 
 // Headings
-$h1-font-size: $h1-font-size !default;
-$h2-font-size: $h2-font-size !default;
-$h3-font-size: $h3-font-size !default;
-$h4-font-size: $h4-font-size !default;
-$h5-font-size: $h5-font-size !default;
-$h6-font-size: $h6-font-size !default;
+$kendo-h1-font-size: $h1-font-size !default;
+$kendo-h2-font-size: $h2-font-size !default;
+$kendo-h3-font-size: $h3-font-size !default;
+$kendo-h4-font-size: $h4-font-size !default;
+$kendo-h5-font-size: $h5-font-size !default;
+$kendo-h6-font-size: $h6-font-size !default;
 
-$h1-font-family: $headings-font-family !default;
-$h2-font-family: $headings-font-family !default;
-$h3-font-family: $headings-font-family !default;
-$h4-font-family: $headings-font-family !default;
-$h5-font-family: $headings-font-family !default;
-$h6-font-family: $headings-font-family !default;
+$kendo-h1-font-family: $headings-font-family !default;
+$kendo-h2-font-family: $headings-font-family !default;
+$kendo-h3-font-family: $headings-font-family !default;
+$kendo-h4-font-family: $headings-font-family !default;
+$kendo-h5-font-family: $headings-font-family !default;
+$kendo-h6-font-family: $headings-font-family !default;
 
-$h1-line-height: $headings-line-height !default;
-$h2-line-height: $headings-line-height !default;
-$h3-line-height: $headings-line-height !default;
-$h4-line-height: $headings-line-height !default;
-$h5-line-height: $headings-line-height !default;
-$h6-line-height: $headings-line-height !default;
+$kendo-h1-line-height: $headings-line-height !default;
+$kendo-h2-line-height: $headings-line-height !default;
+$kendo-h3-line-height: $headings-line-height !default;
+$kendo-h4-line-height: $headings-line-height !default;
+$kendo-h5-line-height: $headings-line-height !default;
+$kendo-h6-line-height: $headings-line-height !default;
 
-$h1-font-weight: $headings-font-weight !default;
-$h2-font-weight: $headings-font-weight !default;
-$h3-font-weight: $headings-font-weight !default;
-$h4-font-weight: $headings-font-weight !default;
-$h5-font-weight: $headings-font-weight !default;
-$h6-font-weight: $headings-font-weight !default;
+$kendo-h1-font-weight: $headings-font-weight !default;
+$kendo-h2-font-weight: $headings-font-weight !default;
+$kendo-h3-font-weight: $headings-font-weight !default;
+$kendo-h4-font-weight: $headings-font-weight !default;
+$kendo-h5-font-weight: $headings-font-weight !default;
+$kendo-h6-font-weight: $headings-font-weight !default;
 
-$h1-letter-spacing: null !default;
-$h2-letter-spacing: null !default;
-$h3-letter-spacing: null !default;
-$h4-letter-spacing: null !default;
-$h5-letter-spacing: null !default;
-$h6-letter-spacing: null !default;
+$kendo-h1-letter-spacing: null !default;
+$kendo-h2-letter-spacing: null !default;
+$kendo-h3-letter-spacing: null !default;
+$kendo-h4-letter-spacing: null !default;
+$kendo-h5-letter-spacing: null !default;
+$kendo-h6-letter-spacing: null !default;
 
-$h1-margin: 0 0 $headings-margin-bottom !default;
-$h2-margin: 0 0 $headings-margin-bottom !default;
-$h3-margin: 0 0 $headings-margin-bottom !default;
-$h4-margin: 0 0 $headings-margin-bottom !default;
-$h5-margin: 0 0 $headings-margin-bottom !default;
-$h6-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h1-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h2-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h3-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h4-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h5-margin: 0 0 $headings-margin-bottom !default;
+$kendo-h6-margin: 0 0 $headings-margin-bottom !default;
 
 
 // Paragraph
-$paragraph-margin: 0 0 $paragraph-margin-bottom !default;
-$paragraph-font-size: $font-size !default;
-$paragraph-font-family: $font-family !default;
-$paragraph-line-height: $line-height !default;
-$paragraph-font-weight: $font-weight-normal !default;
-$paragraph-letter-spacing: null !default;
+$kendo-paragraph-margin: 0 0 $paragraph-margin-bottom !default;
+$kendo-paragraph-font-size: $kendo-font-size-md !default;
+$kendo-paragraph-font-family: $kendo-font-family !default;
+$kendo-paragraph-line-height: $kendo-line-height-md !default;
+$kendo-paragraph-font-weight: $kendo-font-weight-normal !default;
+$kendo-paragraph-letter-spacing: null !default;
 
 
 // Code
-$code-font-size: $font-size !default;
-$code-font-family: $font-family-monospace !default;
-$code-line-height: $line-height !default;
-$code-font-weight: $font-weight-normal !default;
-$code-letter-spacing: null !default;
+$kendo-code-font-size: $kendo-font-size-sm !default;
+$kendo-code-font-family: $kendo-font-family-monospace !default;
+$kendo-code-line-height: $kendo-line-height-md !default;
+$kendo-code-font-weight: $kendo-font-weight-normal !default;
+$kendo-code-letter-spacing: null !default;
 
-$code-padding-x: 4px !default;
-$code-padding-y: 0px !default;
-$pre-padding-x: 24px !default;
-$pre-padding-y: 16px !default;
-$code-border-width: 1px !default;
+$kendo-code-padding-x: 4px !default;
+$kendo-code-padding-y: 0px !default;
+$kendo-pre-padding-x: 24px !default;
+$kendo-pre-padding-y: 16px !default;
+$kendo-code-border-width: 1px !default;
 
-$code-bg: $base-bg !default;
-$code-text: $kendo-component-text !default;
-$code-border: $kendo-component-border !default;
-
-
-// Link
-$link-text: $link-color !default;
-$link-hover-text: $link-hover-color !default;
+$kendo-code-bg: $kendo-base-bg !default;
+$kendo-code-text: $kendo-component-text !default;
+$kendo-code-border: $kendo-component-border !default;
 
 
 // Display
-$display1-font-size: k-map-get( $display-font-sizes, 1) !default;
-$display2-font-size: k-map-get( $display-font-sizes, 2) !default;
-$display3-font-size: k-map-get( $display-font-sizes, 3) !default;
-$display4-font-size: k-map-get( $display-font-sizes, 4) !default;
+$kendo-display1-font-size: k-map-get( $display-font-sizes, 1) !default;
+$kendo-display2-font-size: k-map-get( $display-font-sizes, 2) !default;
+$kendo-display3-font-size: k-map-get( $display-font-sizes, 3) !default;
+$kendo-display4-font-size: k-map-get( $display-font-sizes, 4) !default;
 
-$display1-font-family: null !default;
-$display2-font-family: null !default;
-$display3-font-family: null !default;
-$display4-font-family: null !default;
+$kendo-display1-font-family: null !default;
+$kendo-display2-font-family: null !default;
+$kendo-display3-font-family: null !default;
+$kendo-display4-font-family: null !default;
 
-$display1-line-height: $display-line-height !default;
-$display2-line-height: $display-line-height !default;
-$display3-line-height: $display-line-height !default;
-$display4-line-height: $display-line-height !default;
+$kendo-display1-line-height: $display-line-height !default;
+$kendo-display2-line-height: $display-line-height !default;
+$kendo-display3-line-height: $display-line-height !default;
+$kendo-display4-line-height: $display-line-height !default;
 
-$display1-font-weight: $display-font-weight !default;
-$display2-font-weight: $display-font-weight !default;
-$display3-font-weight: $display-font-weight !default;
-$display4-font-weight: $display-font-weight !default;
+$kendo-display1-font-weight: $display-font-weight !default;
+$kendo-display2-font-weight: $display-font-weight !default;
+$kendo-display3-font-weight: $display-font-weight !default;
+$kendo-display4-font-weight: $display-font-weight !default;
 
-$display1-letter-spacing: null !default;
-$display2-letter-spacing: null !default;
-$display3-letter-spacing: null !default;
-$display4-letter-spacing: null !default;
+$kendo-display1-letter-spacing: null !default;
+$kendo-display2-letter-spacing: null !default;
+$kendo-display3-letter-spacing: null !default;
+$kendo-display4-letter-spacing: null !default;

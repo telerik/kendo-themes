@@ -3,6 +3,7 @@ $kendo-enable-rounded: true !default;
 $kendo-enable-shadows: true !default;
 $kendo-enable-gradients: true !default;
 $kendo-enable-transitions: true !default;
+$kendo-enable-typography: false !default;
 
 $kendo-use-input-button-width: false !default;
 $kendo-use-input-spinner-width: false !default;
@@ -50,7 +51,7 @@ $kendo-spacing: (
 
 
 // Color settings
-$dark-theme: false !default;
+$kendo-is-dark-theme: false !default;
 
 
 // Theme colors
@@ -108,7 +109,7 @@ $kendo-color-light: #ebebeb !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
-$kendo-color-inverse: if( $dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
+$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
 
 
 $kendo-theme-colors: (
@@ -134,25 +135,41 @@ $kendo-font-size-md: 1rem !default;
 $kendo-font-size-lg: 1.125rem !default;
 $kendo-font-size-xl: 1.25rem !default;
 
-/// Font family across all components.
+$kendo-font-sizes: (
+    xs: $kendo-font-size-xs,
+    sm: $kendo-font-size-sm,
+    md: $kendo-font-size-md,
+    lg: $kendo-font-size-lg,
+    xl: $kendo-font-size-xl
+) !default;
+
+/// Font family for text.
 /// @group typography
-$kendo-font-family: inherit !default;
+$kendo-font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 /// Font family for monospaced text. Used for styling the code.
 /// @group typography
 $kendo-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
-/// Line height used along with $font-size.
+/// Font family across all components.
+/// @group typography
+$kendo-font-family: null !default;
+
+/// Line height used along with $kendo-font-size.
 /// @group typography
 $kendo-line-height-sm: 1.25rem !default;
 $kendo-line-height-md: 1.5rem !default;
 $kendo-line-height-lg: 1.75rem !default;
 
-
 // Font weight
 $kendo-font-weight-light: 300 !default;
 $kendo-font-weight-normal: 400 !default;
+$kendo-font-weight-medium: 500 !default;
+$kendo-font-weight-semibold: 600 !default;
 $kendo-font-weight-bold: 700 !default;
+
+// Letter Spacing
+$kendo-letter-spacing: null !default;
 
 
 // Generic styles
@@ -212,9 +229,3 @@ $kendo-selected-text: k-contrast-color( $kendo-selected-bg ) !default;
 $kendo-selected-border: rgba( black, .1 ) !default;
 /// The gradient background of selected items.
 $kendo-selected-gradient: none !default;
-
-
-// Layout
-$kendo-grid-cols: 12 !default;
-$kendo-grid-rows: 10 !default;
-$kendo-grid-gap: k-map-get( $kendo-spacing, 2 ) !default;

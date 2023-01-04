@@ -11,10 +11,10 @@
             &:focus,
             &.k-focus {
                 @include fill(
-                    $menu-item-hover-text,
-                    $menu-item-hover-bg,
-                    $menu-item-hover-border,
-                    $menu-item-hover-gradient
+                    $kendo-menu-item-hover-text,
+                    $kendo-menu-item-hover-bg,
+                    $kendo-menu-item-hover-border,
+                    $kendo-menu-item-hover-gradient
                 );
             }
 

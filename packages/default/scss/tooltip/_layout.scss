@@ -1,18 +1,18 @@
 @include exports("tooltip/layout") {
 
     .k-tooltip {
-        @include border-radius( $tooltip-border-radius );
+        @include border-radius( $kendo-tooltip-border-radius );
         margin: 0;
-        padding: $tooltip-padding-y $tooltip-padding-x;
-        // max-width: $tooltip-max-width;
-        border-width: $tooltip-border-width;
+        padding: $kendo-tooltip-padding-y $kendo-tooltip-padding-x;
+        // max-width: $kendo-tooltip-max-width;
+        border-width: $kendo-tooltip-border-width;
         border-style: solid;
         box-sizing: border-box;
         background-repeat: repeat-x;
         outline: 0;
-        font-family: $tooltip-font-family;
-        font-size: $tooltip-font-size;
-        line-height: $tooltip-line-height;
+        font-family: $kendo-tooltip-font-family;
+        font-size: $kendo-tooltip-font-size;
+        line-height: $kendo-tooltip-line-height;
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-start;
@@ -35,8 +35,8 @@
 
     .k-tooltip-title {
         margin-bottom: .25em;
-        font-size: $tooltip-title-font-size;
-        line-height: $tooltip-title-line-height;
+        font-size: $kendo-tooltip-title-font-size;
+        line-height: $kendo-tooltip-title-line-height;
     }
 
     .k-tooltip-content {
@@ -59,9 +59,9 @@
 
     // Callout
     .k-callout {
-        width: ($tooltip-callout-size * 2);
-        height: ($tooltip-callout-size * 2);
-        border-width: $tooltip-callout-size;
+        width: ($kendo-tooltip-callout-size * 2);
+        height: ($kendo-tooltip-callout-size * 2);
+        border-width: $kendo-tooltip-callout-size;
         border-style: solid;
         border-color: transparent;
         position: absolute;
@@ -73,38 +73,38 @@
     // Remove margin tweaking and uncomment when their implementation is fixed.
 
     .k-callout-n {
-        margin-left: -$tooltip-callout-size;
+        margin-left: -$kendo-tooltip-callout-size;
         border-bottom-color: currentColor;
         // top: 0;
-        top: (-$tooltip-callout-size * 2);
+        top: (-$kendo-tooltip-callout-size * 2);
         left: 50%;
         // transform: translate(-50%, -100%);
         pointer-events: none;
     }
     .k-callout-e {
-        margin-top: -$tooltip-callout-size;
+        margin-top: -$kendo-tooltip-callout-size;
         border-left-color: currentColor;
         top: 50%;
         // right: 0;
-        right: (-$tooltip-callout-size * 2);
+        right: (-$kendo-tooltip-callout-size * 2);
         // transform: translate(100%, -50%);
         pointer-events: none;
     }
     .k-callout-s {
-        margin-left: -$tooltip-callout-size;
+        margin-left: -$kendo-tooltip-callout-size;
         border-top-color: currentColor;
         // bottom: 0;
-        bottom: (-$tooltip-callout-size * 2);
+        bottom: (-$kendo-tooltip-callout-size * 2);
         left: 50%;
         // transform: translate(-50%, 100%);
         pointer-events: none;
     }
     .k-callout-w {
-        margin-top: -$tooltip-callout-size;
+        margin-top: -$kendo-tooltip-callout-size;
         border-right-color: currentColor;
         top: 50%;
         // left: 0;
-        left: (-$tooltip-callout-size * 2);
+        left: (-$kendo-tooltip-callout-size * 2);
         // transform: translate(-100%, -50%);
         pointer-events: none;
     }

@@ -2,13 +2,13 @@
 
     // Time selector
     .k-timeselector {
-        border-width: $time-selector-border-width;
+        border-width: $kendo-time-selector-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $time-selector-font-family;
-        font-size: $time-selector-font-size;
-        line-height: $time-selector-line-height;
+        font-family: $kendo-time-selector-font-family;
+        font-size: $kendo-time-selector-font-size;
+        line-height: $kendo-time-selector-line-height;
         position: relative;
         overflow: hidden;
         display: flex;
@@ -26,7 +26,7 @@
     // Time selector header
     .k-time-header,
     .k-time-selector-header {
-        padding: $time-selector-header-padding-y $time-selector-header-padding-x;
+        padding: $kendo-time-selector-header-padding-y $kendo-time-selector-header-padding-x;
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -71,12 +71,12 @@
     .k-time-highlight,
     .k-time-list-highlight {
         width: 100%;
-        height: $time-list-highlight-height;
-        border-width: $time-list-highlight-border-width;
+        height: $kendo-time-list-highlight-height;
+        border-width: $kendo-time-list-highlight-border-width;
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
-        top: calc( 50% + #{k-math-div( $time-list-title-height, 2 )});
+        top: calc( 50% + #{k-math-div( $kendo-time-list-title-height, 2 )});
         left: 0;
         right: 0;
         transform: translateY(-50%);
@@ -86,8 +86,8 @@
 
     // Time list wrapper
     .k-time-list-wrapper {
-        min-width: $time-list-width;
-        height: $time-list-height;
+        min-width: $kendo-time-list-width;
+        height: $kendo-time-list-height;
         box-sizing: content-box;
         display: inline-flex;
         flex-flow: column nowrap;
@@ -98,8 +98,8 @@
         flex: 1 1 auto;
 
         .k-title {
-            font-size: $time-list-title-font-size;
-            line-height: $time-list-title-line-height;
+            font-size: $kendo-time-list-title-font-size;
+            line-height: $kendo-time-list-title-line-height;
             font-weight: bold;
             text-align: center;
             text-transform: capitalize;
@@ -115,14 +115,14 @@
                 width: 100%;
                 left: 0;
                 pointer-events: none;
-                height: calc( 50% - #{k-math-div( $time-list-highlight-height, 2 )} );
+                height: calc( 50% - #{k-math-div( $kendo-time-list-highlight-height, 2 )} );
                 box-sizing: border-box;
                 border-width: 0;
                 border-style: solid;
             }
 
             &::before {
-                top: $time-list-title-height;
+                top: $kendo-time-list-title-height;
             }
 
             &::after {
@@ -173,7 +173,7 @@
 
         > ul {
             height: auto;
-            width: $time-list-width;
+            width: $kendo-time-list-width;
             margin: auto;
         }
 
@@ -189,21 +189,21 @@
     // Time list item
     .k-time-list-item,
     .k-time-list .k-item {
-        padding: $time-list-item-padding-y $time-list-item-padding-x;
+        padding: $kendo-time-list-item-padding-y $kendo-time-list-item-padding-x;
     }
 
 
     // Time separator
     .k-time-separator {
         width: 0;
-        height: $time-list-highlight-height;
+        height: $kendo-time-list-highlight-height;
         align-self: center;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         position: relative;
         z-index: 11;
-        top: calc( #{k-math-div( $time-list-title-height, 2 )} );
+        top: calc( #{k-math-div( $kendo-time-list-title-height, 2 )} );
     }
 
 

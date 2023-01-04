@@ -2,7 +2,6 @@
 
 @include exports( "breadcrumb/layout/bootstrap" ) {
 
-
     // Breadcrumb links
     .k-breadcrumb-link,
     .k-breadcrumb-root-link {
@@ -13,4 +12,13 @@
             text-decoration: $link-hover-decoration;
         }
     }
+
+    // Breadcrumb current (last) item
+    .k-breadcrumb-current-item {
+        .k-disabled {
+            opacity: 1;
+            filter: none;
+        }
+    }
+
 }

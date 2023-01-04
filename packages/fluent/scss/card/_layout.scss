@@ -278,8 +278,8 @@
 
         > .k-card-deck {
             // hide scrollbar
-            margin-block-end: -$default-scrollbar-width;
-            padding-block-end: $default-scrollbar-width;
+            margin-block-end: -#{$kendo-scrollbar-width};
+            padding-block-end: $kendo-scrollbar-width;
             flex: 1 1 auto;
         }
     }

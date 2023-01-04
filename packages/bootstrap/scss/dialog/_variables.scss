@@ -3,11 +3,11 @@ $kendo-dialog-titlebar-bg: null !default;
 $kendo-dialog-titlebar-text: null !default;
 $kendo-dialog-titlebar-border: null !default;
 
-$kendo-dialog-buttongroup-padding-x: $actions-padding-x !default;
-$kendo-dialog-buttongroup-padding-y: $actions-padding-y !default;
+$kendo-dialog-buttongroup-padding-x: $kendo-actions-padding-x !default;
+$kendo-dialog-buttongroup-padding-y: $kendo-actions-padding-y !default;
 $kendo-dialog-buttongroup-border-width: 1px !default;
 
-$kendo-dialog-button-spacing: $actions-button-spacing !default;
+$kendo-dialog-button-spacing: $kendo-actions-button-spacing !default;
 
 /// Theme colors map for the dialog.
 /// @group dialog

@@ -8,6 +8,7 @@ $kendo-enable-shadows: true !default;
 $kendo-enable-gradients: false !default;
 $kendo-enable-transitions: true !default;
 $kendo-enable-focus-contrast: false !default;
+$kendo-enable-typography: false !default;
 
 $kendo-use-input-button-width: false !default;
 $kendo-use-input-spinner-width: false !default;
@@ -52,8 +53,6 @@ $kendo-spacing: (
     23: 92px,
     24: 96px
 ) !default;
-
-$default-scrollbar-width: 17px !default;
 
 
 // Apply material theme, as early as possible
@@ -147,7 +146,7 @@ $kendo-zindex-loading: 100 !default;
 
 
 // Color settings
-$dark-theme: k-map-get( $theme, is-dark ) !default;
+$kendo-is-dark-theme: k-map-get( $theme, is-dark ) !default;
 
 
 // Theme colors
@@ -231,7 +230,7 @@ $kendo-color-light: get-base-hue( gray, 100 ) !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
-$kendo-color-inverse: if( $dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
+$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
 
 
 $kendo-theme-colors: (
@@ -252,48 +251,58 @@ $kendo-theme-colors: (
 
 /// Base font size across all components.
 /// @group typography
-$font-size: 14px !default;
-$font-size-xs: 10px !default;
-$font-size-sm: 12px !default;
-$font-size-md: 14px !default;
-$font-size-lg: 16px !default;
-$font-size-xl: 20px !default;
+$kendo-font-size: 14px !default;
+$kendo-font-size-xs: 10px !default;
+$kendo-font-size-sm: 12px !default;
+$kendo-font-size-md: 14px !default;
+$kendo-font-size-lg: 16px !default;
+$kendo-font-size-xl: 20px !default;
 
 $kendo-font-sizes: (
-    xs: $font-size-xs,
-    sm: $font-size-sm,
-    md: $font-size-md,
-    lg: $font-size-lg,
-    xl: $font-size-xl
+    xs: $kendo-font-size-xs,
+    sm: $kendo-font-size-sm,
+    md: $kendo-font-size-md,
+    lg: $kendo-font-size-lg,
+    xl: $kendo-font-size-xl
 ) !default;
+
+/// Font family for text.
+/// @group typography
+$kendo-font-family-sans-serif: Roboto, "Helvetica Neue", sans-serif !default;
 
 /// Font family across all components.
 /// @group typography
-$font-family: Roboto, "Helvetica Neue", sans-serif !default;
+$kendo-font-family: Roboto, "Helvetica Neue", sans-serif !default;
 
 /// Font family for monospaced text. Used for styling the code.
 /// @group typography
-$font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+$kendo-font-family-monospace: Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
 
-/// Line height used along with $font-size.
+/// Font family across all components.
 /// @group typography
-$line-height: k-math-div( 28, 14 ) !default;
-$line-height-xs: 1 !default;
-$line-height-sm: 1.2 !default;
-$line-height-md: $line-height !default;
-$line-height-lg: 1.5 !default;
-$line-height-em: calc( #{$line-height} * 1em ) !default;
+$kendo-font-family: Roboto, "Helvetica Neue", sans-serif !default;
 
+/// Line height used along with $kendo-font-size.
+/// @group typography
+$kendo-line-height: k-math-div( 28, 14 ) !default;
+$kendo-line-height-xs: 1 !default;
+$kendo-line-height-sm: 1.2 !default;
+$kendo-line-height-md: $kendo-line-height !default;
+$kendo-line-height-lg: 1.5 !default;
+$kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
 
 // Font weight
-$font-weight-light: 300 !default;
-$font-weight-normal: 400 !default;
-$font-weight-bold: 500 !default;
-
+$kendo-font-weight-light: 300 !default;
+$kendo-font-weight-normal: 400 !default;
+$kendo-font-weight-medium: 500 !default;
+$kendo-font-weight-semibold: 600 !default;
+$kendo-font-weight-bold: 700 !default;
 
 // Letter Spacing
-$letter-spacing: null !default;
+$kendo-letter-spacing: null !default;
 
+
+// Generic styles
 
 // Root styles
 $kendo-body-bg: k-map-get( $theme, body-bg ) !default;
@@ -304,6 +313,10 @@ $kendo-subtle-text: k-map-get( $theme, subtle-text ) !default;
 $kendo-app-bg: $kendo-body-bg !default;
 $kendo-app-text: $kendo-body-text !default;
 $kendo-app-border: k-map-get( $theme, component-border ) !default;
+
+// Link
+$kendo-link-text: $kendo-color-secondary !default;
+$kendo-link-hover-text: $kendo-color-secondary-darker !default;
 
 
 // Components
@@ -324,20 +337,20 @@ $kendo-component-border: k-map-get( $theme, component-border ) !default;
 
 
 /// The background of the components' chrome area.
-$base-bg: k-map-get( $theme, base-bg ) !default;
+$kendo-base-bg: k-map-get( $theme, base-bg ) !default;
 /// The text color of the components' chrome area.
-$base-text: k-map-get( $theme, component-text ) !default;
+$kendo-base-text: k-map-get( $theme, component-text ) !default;
 /// The border of the components' chrome area.
-$base-border: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
+$kendo-base-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
 /// The gradient background of the components' chrome area.
-$base-gradient: null !default;
+$kendo-base-gradient: null !default;
 
 /// The background of hovered items.
 $kendo-hover-bg: k-map-get( $theme, hover-bg ) !default;
 /// The text color of hovered items.
-$kendo-hover-text: $base-text !default;
+$kendo-hover-text: $kendo-base-text !default;
 /// The border color of hovered items.
-$kendo-hover-border: rgba( $base-border, .15 ) !default;
+$kendo-hover-border: rgba( $kendo-base-border, .15 ) !default;
 /// The gradient background of hovered items.
 $kendo-hover-gradient: null !default;
 
@@ -346,13 +359,13 @@ $kendo-selected-bg: $kendo-color-secondary !default;
 /// The text color of selected items.
 $kendo-selected-text: $kendo-color-secondary-contrast !default;
 /// The border color of selected items.
-$kendo-selected-border: rgba( $base-border, .1 ) !default;
+$kendo-selected-border: rgba( $kendo-base-border, .1 ) !default;
 /// The gradient background of selected items.
 $kendo-selected-gradient: null !default;
 
 $kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
 $kendo-selected-hover-text: $kendo-selected-text !default;
-$kendo-selected-hover-border: rgba( $base-border, .1 ) !default;
+$kendo-selected-hover-border: rgba( $kendo-base-border, .1 ) !default;
 $kendo-selected-hover-gradient: null !default;
 
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
@@ -375,9 +388,9 @@ $kendo-disabled-styling: (
 
 
 // Header
-$kendo-component-header-bg: $base-bg !default;
-$kendo-component-header-text: $base-text !default;
-$kendo-component-header-border: $base-border !default;
+$kendo-component-header-bg: $kendo-base-bg !default;
+$kendo-component-header-text: $kendo-base-text !default;
+$kendo-component-header-border: $kendo-base-border !default;
 $kendo-component-header-gradient: null !default;
 
 
@@ -386,9 +399,3 @@ $kendo-invalid-bg: null !default;
 $kendo-invalid-text: $kendo-color-error !default;
 $kendo-invalid-border: $kendo-color-error !default;
 $kendo-invalid-shadow: null !default;
-
-
-// Layout
-$grid-cols: 12 !default;
-$grid-rows: 10 !default;
-$grid-gap: 10px !default;

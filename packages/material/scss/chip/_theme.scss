@@ -28,7 +28,7 @@
                 }
             } @else if($name == "warning") {
                 @include fill(
-                    $color: if( $dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text)
+                    $color: if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text)
                 );
 
                 &:focus,
@@ -41,14 +41,14 @@
                 &.k-hover {
                     @include fill(
                         $bg: k-try-tint( $color, 80% ),
-                        $color: if( $dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text)
+                        $color: if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text)
                     );
                 }
 
                 &.k-selected {
                     @include fill(
                         $bg: k-try-tint( $color, 65% ),
-                        $color: if( $dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text)
+                        $color: if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text)
                     );
                 }
             } @else {

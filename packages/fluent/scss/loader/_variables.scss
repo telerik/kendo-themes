@@ -8,21 +8,21 @@ $kendo-loader-segment-border-radius: 50% !default;
 
 /// Size of the loader segment.
 /// @group loader
-$kendo-loader-segment-size-sm: map.get( $kendo-spacing, 1 ) !default;
-$kendo-loader-segment-size-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-loader-segment-size-lg: map.get( $kendo-spacing, 4 ) !default;
+$kendo-loader-sm-segment-size: map.get( $kendo-spacing, 1 ) !default;
+$kendo-loader-md-segment-size: map.get( $kendo-spacing, 2 ) !default;
+$kendo-loader-lg-segment-size: map.get( $kendo-spacing, 4 ) !default;
 
 /// Horizontal padding of the loader.
 /// @group loader
-$kendo-loader-padding-x-sm: math.div( $kendo-loader-segment-size-sm, 2 ) !default;
-$kendo-loader-padding-x-md: math.div( $kendo-loader-segment-size-md, 2 ) !default;
-$kendo-loader-padding-x-lg: math.div( $kendo-loader-segment-size-lg, 2 ) !default;
+$kendo-loader-sm-padding-x: math.div( $kendo-loader-sm-segment-size, 2 ) !default;
+$kendo-loader-md-padding-x: math.div( $kendo-loader-md-segment-size, 2 ) !default;
+$kendo-loader-lg-padding-x: math.div( $kendo-loader-lg-segment-size, 2 ) !default;
 
 /// Vertical padding of the loader.
 /// @group loader
-$kendo-loader-padding-y-sm: math.div( $kendo-loader-segment-size-sm, 2 ) !default;
-$kendo-loader-padding-y-md: math.div( $kendo-loader-segment-size-md, 2 ) !default;
-$kendo-loader-padding-y-lg: math.div( $kendo-loader-segment-size-lg, 2 ) !default;
+$kendo-loader-sm-padding-y: math.div( $kendo-loader-sm-segment-size, 2 ) !default;
+$kendo-loader-md-padding-y: math.div( $kendo-loader-md-segment-size, 2 ) !default;
+$kendo-loader-lg-padding-y: math.div( $kendo-loader-lg-segment-size, 2 ) !default;
 
 /// Equilateral height of the loader.
 /// @group loader
@@ -30,27 +30,27 @@ $kendo-loader-equilateral-height: .8660254038 !default;
 
 /// Width of the spinner-3 loader.
 /// @group loader
-$kendo-loader-spinner-3-width-sm: ( $kendo-loader-segment-size-sm * 4 ) !default;
-$kendo-loader-spinner-3-width-md: ( $kendo-loader-segment-size-md * 4 ) !default;
-$kendo-loader-spinner-3-width-lg: ( $kendo-loader-segment-size-lg * 4 ) !default;
+$kendo-loader-sm-spinner-3-width: ( $kendo-loader-sm-segment-size * 4 ) !default;
+$kendo-loader-md-spinner-3-width: ( $kendo-loader-md-segment-size * 4 ) !default;
+$kendo-loader-lg-spinner-3-width: ( $kendo-loader-lg-segment-size * 4 ) !default;
 
 /// Height of the spinner-3 loader.
 /// @group loader
-$kendo-loader-spinner-3-height-sm: ( $kendo-loader-spinner-3-width-sm * $kendo-loader-equilateral-height ) !default;
-$kendo-loader-spinner-3-height-md: ( $kendo-loader-spinner-3-width-md * $kendo-loader-equilateral-height ) !default;
-$kendo-loader-spinner-3-height-lg: ( $kendo-loader-spinner-3-width-lg * $kendo-loader-equilateral-height ) !default;
+$kendo-loader-sm-spinner-3-height: ( $kendo-loader-sm-spinner-3-width * $kendo-loader-equilateral-height ) !default;
+$kendo-loader-md-spinner-3-height: ( $kendo-loader-md-spinner-3-width * $kendo-loader-equilateral-height ) !default;
+$kendo-loader-lg-spinner-3-height: ( $kendo-loader-lg-spinner-3-width * $kendo-loader-equilateral-height ) !default;
 
 /// Width of the spinner-4 loader.
 /// @group loader
-$kendo-loader-spinner-4-width-sm: ( $kendo-loader-segment-size-sm * 4 ) !default;
-$kendo-loader-spinner-4-width-md: ( $kendo-loader-segment-size-md * 4 ) !default;
-$kendo-loader-spinner-4-width-lg: ( $kendo-loader-segment-size-lg * 4 ) !default;
+$kendo-loader-sm-spinner-4-width: ( $kendo-loader-sm-segment-size * 4 ) !default;
+$kendo-loader-md-spinner-4-width: ( $kendo-loader-md-segment-size * 4 ) !default;
+$kendo-loader-lg-spinner-4-width: ( $kendo-loader-lg-segment-size * 4 ) !default;
 
 /// Height of the spinner-4 loader.
 /// @group loader
-$kendo-loader-spinner-4-height-sm: $kendo-loader-spinner-4-width-sm !default;
-$kendo-loader-spinner-4-height-md: $kendo-loader-spinner-4-width-md !default;
-$kendo-loader-spinner-4-height-lg: $kendo-loader-spinner-4-width-lg !default;
+$kendo-loader-sm-spinner-4-height: $kendo-loader-sm-spinner-4-width !default;
+$kendo-loader-md-spinner-4-height: $kendo-loader-md-spinner-4-width !default;
+$kendo-loader-lg-spinner-4-height: $kendo-loader-lg-spinner-4-width !default;
 
 /// Border width of the container panel.
 /// @group loader
@@ -70,27 +70,27 @@ $kendo-loader-container-panel-bg: $kendo-color-white !default;
 
 /// Horizontal padding of the loader container.
 /// @group loader
-$kendo-loader-container-padding-x-sm: map.get( $kendo-spacing, 4 ) !default;
-$kendo-loader-container-padding-x-md: map.get( $kendo-spacing, 5 ) !default;
-$kendo-loader-container-padding-x-lg: map.get( $kendo-spacing, 6 ) !default;
+$kendo-loader-sm-container-padding-x: map.get( $kendo-spacing, 4 ) !default;
+$kendo-loader-md-container-padding-x: map.get( $kendo-spacing, 5 ) !default;
+$kendo-loader-lg-container-padding-x: map.get( $kendo-spacing, 6 ) !default;
 
 /// Vertical padding of the loader container.
 /// @group loader
-$kendo-loader-container-padding-y-sm: map.get( $kendo-spacing, 4 ) !default;
-$kendo-loader-container-padding-y-md: map.get( $kendo-spacing, 5 ) !default;
-$kendo-loader-container-padding-y-lg: map.get( $kendo-spacing, 6 ) !default;
+$kendo-loader-sm-container-padding-y: map.get( $kendo-spacing, 4 ) !default;
+$kendo-loader-md-container-padding-y: map.get( $kendo-spacing, 5 ) !default;
+$kendo-loader-lg-container-padding-y: map.get( $kendo-spacing, 6 ) !default;
 
 /// Gap of the loader container.
 /// @group loader
-$kendo-loader-container-gap-sm: map.get( $kendo-spacing, 1 ) !default;
-$kendo-loader-container-gap-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-loader-container-gap-lg: map.get( $kendo-spacing, 3 ) !default;
+$kendo-loader-sm-container-gap: map.get( $kendo-spacing, 1 ) !default;
+$kendo-loader-md-container-gap: map.get( $kendo-spacing, 2 ) !default;
+$kendo-loader-lg-container-gap: map.get( $kendo-spacing, 3 ) !default;
 
 /// Font size of the loader container.
 /// @group loader
-$kendo-loader-container-font-size-sm: var( --kendo-font-size-sm, inherit ) !default;
-$kendo-loader-container-font-size-md: var( --kendo-font-size-md, inherit ) !default;
-$kendo-loader-container-font-size-lg: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-loader-sm-container-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-loader-md-container-font-size: var( --kendo-font-size-md, inherit ) !default;
+$kendo-loader-lg-container-font-size: var( --kendo-font-size-lg, inherit ) !default;
 
 /// Theme variations for the loader.
 $kendo-loader-brand-colors: (

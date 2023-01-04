@@ -118,25 +118,25 @@
     }
     // Remove once we decide to not size empty containers
     .k-toolbar-sm::before {
-        height: var( --kendo-button-inner-calc-size-sm, #{$kendo-button-inner-calc-size-sm} );
+        height: var( --kendo-button-sm-inner-calc-size, #{$kendo-button-sm-inner-calc-size} );
     }
     .k-toolbar-md::before {
-        height: var( --kendo-button-inner-calc-size-md, #{$kendo-button-inner-calc-size-md} );
+        height: var( --kendo-button-md-inner-calc-size, #{$kendo-button-md-inner-calc-size} );
     }
     .k-toolbar-lg::before {
-        height: var( --kendo-button-inner-calc-size-lg, #{$kendo-button-inner-calc-size-lg} );
+        height: var( --kendo-button-lg-inner-calc-size, #{$kendo-button-lg-inner-calc-size} );
     }
 
     // sass-lint:disable class-name-format
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
-        padding-inline: var( --kendo-toolbar-padding-x-md, #{$kendo-toolbar-padding-x-md} ) !important; // sass-lint:disable-line no-important
-        padding-block: var( --kendo-toolbar-padding-y-md, #{$kendo-toolbar-padding-y-md} ) !important; // sass-lint:disable-line no-important
+        padding-inline: var( --kendo-toolbar-md-padding-x, #{$kendo-toolbar-md-padding-x} ) !important; // sass-lint:disable-line no-important
+        padding-block: var( --kendo-toolbar-md-padding-y, #{$kendo-toolbar-md-padding-y} ) !important; // sass-lint:disable-line no-important
         border-width: var( --kendo-toolbar-border-width, #{$kendo-toolbar-border-width} );
         border-style: solid;
         display: flex;
         flex-flow: row nowrap;
-        gap: var( --kendo-toolbar-spacing-md, #{$kendo-toolbar-spacing-md} );
+        gap: var( --kendo-toolbar-md-spacing, #{$kendo-toolbar-md-spacing} );
         align-items: center;
 
         .k-toolbar {
@@ -160,8 +160,8 @@
     // Remove once the Overflow Popup uses
     // the proper Menu rendering in all suites.
     .k-overflow-container {
-        font-size: var( --kendo-menu-popup-font-size-md, inherit );
-        line-height: var( --kendo-menu-popup-line-height-md, normal );
+        font-size: var( --kendo-menu-popup-md-font-size, inherit );
+        line-height: var( --kendo-menu-popup-md-line-height, normal );
 
         > .k-item {
             border-color: inherit;
@@ -178,8 +178,8 @@
 
         // Button
         .k-overflow-button {
-            padding-inline: var( --kendo-menu-popup-item-padding-x-md, 8px );
-            padding-block: var( --kendo-menu-popup-item-padding-y-md, 4px );
+            padding-inline: var( --kendo-menu-popup-md-item-padding-x, 8px );
+            padding-block: var( --kendo-menu-popup-md-item-padding-y, 4px );
             width: 100%;
             height: auto;
             border-width: 0;

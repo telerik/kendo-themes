@@ -11,11 +11,11 @@
 
     // Wrap
     .k-datetime-wrap {
-        width: $datetime-width;
+        width: $kendo-datetime-width;
         overflow: hidden;
 
         .k-datetime-buttongroup {
-            padding: $actions-padding-y $actions-padding-x;
+            padding: $kendo-actions-padding-y $kendo-actions-padding-x;
         }
 
         .k-calendar,
@@ -29,7 +29,7 @@
     .k-datetime-calendar-wrap,
     .k-datetime-time-wrap {
         text-align: center;
-        flex: 0 0 $datetime-width;
+        flex: 0 0 $kendo-datetime-width;
     }
 
     // Tabs

@@ -18,7 +18,7 @@
             box-sizing: border-box;
 
             &:focus {
-                @include box-shadow( $slider-draghandle-focus-shadow );
+                @include box-shadow( $kendo-slider-draghandle-focus-shadow );
             }
         }
 
@@ -28,7 +28,7 @@
             .k-slider-track,
             .k-slider-selection,
             .k-draghandle {
-                @include fill( $bg: $slider-track-bg );
+                @include fill( $bg: $kendo-slider-track-bg );
             }
 
             .k-draghandle {

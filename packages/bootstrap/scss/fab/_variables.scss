@@ -8,27 +8,27 @@ $kendo-fab-border-width: 1px !default;
 $kendo-fab-border-radius: k-math-div( $kendo-border-radius, 2 ) !default;
 /// Font family of the FAB.
 /// @group floating-action-button
-$kendo-fab-font-family: $font-family !default;
+$kendo-fab-font-family: $kendo-font-family !default;
 /// Font size of the FAB.
 /// @group floating-action-button
-$kendo-fab-font-size: $font-size !default;
+$kendo-fab-font-size: $kendo-font-size-md !default;
 /// Line height of the FAB.
 /// @group floating-action-button
-$kendo-fab-line-height: $line-height !default;
+$kendo-fab-line-height: $kendo-line-height-md !default;
 
 /// Horizontal padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-fab-padding-x-sm: k-math-div( $kendo-fab-padding-x, 2 ) !default;
-$kendo-fab-padding-x-md: $kendo-fab-padding-x !default;
-$kendo-fab-padding-x-lg: ( $kendo-fab-padding-x * 1.5 ) !default;
+$kendo-fab-sm-padding-x: k-math-div( $kendo-fab-padding-x, 2 ) !default;
+$kendo-fab-md-padding-x: $kendo-fab-padding-x !default;
+$kendo-fab-lg-padding-x: ( $kendo-fab-padding-x * 1.5 ) !default;
 
 /// Vertical padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-y: $kendo-fab-padding-x !default;
-$kendo-fab-padding-y-sm: k-math-div( $kendo-fab-padding-y, 2 ) !default;
-$kendo-fab-padding-y-md: $kendo-fab-padding-y !default;
-$kendo-fab-padding-y-lg: ( $kendo-fab-padding-y * 1.5 ) !default;
+$kendo-fab-sm-padding-y: k-math-div( $kendo-fab-padding-y, 2 ) !default;
+$kendo-fab-md-padding-y: $kendo-fab-padding-y !default;
+$kendo-fab-lg-padding-y: ( $kendo-fab-padding-y * 1.5 ) !default;
 
 /// FAB icon width.
 /// @group floating-action-button
@@ -61,7 +61,7 @@ $kendo-fab-item-text-border-width: 1px !default;
 $kendo-fab-item-text-border-radius: 4px !default;
 /// Font size of the FAB item text.
 /// @group floating-action-button
-$kendo-fab-item-text-font-size: $font-size-xs !default;
+$kendo-fab-item-text-font-size: $kendo-font-size-xs !default;
 /// Line height of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-line-height: 14px !default;

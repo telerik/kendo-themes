@@ -90,13 +90,13 @@
     }
 
     // Display
-    @each $display, $display-props in $kendo-display {
-        $_font-size: map.get( $display-props, font-size );
-        $_font-family: map.get( $display-props, font-family );
-        $_line-height: map.get( $display-props, line-height );
-        $_font-weight: map.get( $display-props, font-weight );
-        $_letter-spacing: map.get( $display-props, letter-spacing );
-        $_margin: map.get( $display-props, margin );
+    @each $display, $kendo-display-props in $kendo-display {
+        $_font-size: map.get( $kendo-display-props, font-size );
+        $_font-family: map.get( $kendo-display-props, font-family );
+        $_line-height: map.get( $kendo-display-props, line-height );
+        $_font-weight: map.get( $kendo-display-props, font-weight );
+        $_letter-spacing: map.get( $kendo-display-props, letter-spacing );
+        $_margin: map.get( $kendo-display-props, margin );
 
         .k-display-#{$display} {
             @include typography(

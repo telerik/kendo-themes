@@ -14,10 +14,10 @@ $kendo-progressbar-animation-timing: 1s linear infinite !default;
 $kendo-progressbar-border-width: 0px !default;
 /// Font family of the progressbar.
 /// @group progressbar
-$kendo-progressbar-font-family: $font-family !default;
+$kendo-progressbar-font-family: $kendo-font-family !default;
 /// Font size of the progressbar.
 /// @group progressbar
-$kendo-progressbar-font-size: $font-size-sm !default;
+$kendo-progressbar-font-size: $kendo-font-size-sm !default;
 /// Line height of the progressbar.
 /// @group progressbar
 $kendo-progressbar-line-height: 1 !default;

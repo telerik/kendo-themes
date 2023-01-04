@@ -1,15 +1,15 @@
 @include exports("popup/layout") {
 
     .k-popup {
-        @include border-radius( $popup-border-radius );
+        @include border-radius( $kendo-popup-border-radius );
         margin: 0;
         padding: 0;
-        // padding: $popup-padding-y $popup-padding-x;
-        border-width: $popup-border-width;
+        // padding: $kendo-popup-padding-y $kendo-popup-padding-x;
+        border-width: $kendo-popup-border-width;
         border-style: solid;
         box-sizing: border-box;
-        font-size: $popup-font-size;
-        line-height: $popup-line-height;
+        font-size: $kendo-popup-font-size;
+        line-height: $kendo-popup-line-height;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -27,7 +27,7 @@
     }
 
     .k-popup > .k-colorpalette {
-        padding: $popup-content-padding-y $popup-content-padding-x;
+        padding: $kendo-popup-content-padding-y $kendo-popup-content-padding-x;
     }
 
     // Transparent popup
@@ -53,7 +53,7 @@
 @include exports( "common/decoration/shadow/legacy" ) {
 
     .k-shadow {
-        box-shadow: $popup-shadow;
+        box-shadow: $kendo-popup-shadow;
     }
 
 }

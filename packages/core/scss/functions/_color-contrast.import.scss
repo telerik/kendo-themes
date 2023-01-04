@@ -12,7 +12,7 @@
 //
 //  This lookup table is needed since there is no `pow` in SASS.
 // stylelint-disable-next-line scss/dollar-variable-default
-$linear-channel-values: (
+$_linear-channel-values: (
     0
     .0003035269835488375
     .000607053967097675
@@ -283,9 +283,9 @@ $wcag-light: white !default;
 // See https://www.w3.org/TR/WCAG/#dfn-relative-luminance
 // See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
 @function k-color-luminance( $color ) {
-    $red: k-list-nth( $linear-channel-values, k-color-red( $color ) + 1 );
-    $green: k-list-nth( $linear-channel-values, k-color-green( $color ) + 1 );
-    $blue: k-list-nth( $linear-channel-values, k-color-blue( $color ) + 1 );
+    $red: k-list-nth( $_linear-channel-values, k-color-red( $color ) + 1 );
+    $green: k-list-nth( $_linear-channel-values, k-color-green( $color ) + 1 );
+    $blue: k-list-nth( $_linear-channel-values, k-color-blue( $color ) + 1 );
 
     @return .2126 * $red + .7152 * $green + .0722 * $blue;
 }

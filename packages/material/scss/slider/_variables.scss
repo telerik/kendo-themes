@@ -1,45 +1,45 @@
 // Slider
-$slider-size: 200px !default;
-$slider-tick-size: 2px !default;
-$slider-alt-size: 36px !default;
+$kendo-slider-size: 200px !default;
+$kendo-slider-tick-size: 2px !default;
+$kendo-slider-alt-size: 36px !default;
 
-$slider-font-family: $font-family !default;
-$slider-font-size: $font-size !default;
-$slider-line-height: $line-height !default;
+$kendo-slider-font-family: $kendo-font-family !default;
+$kendo-slider-font-size: $kendo-font-size-md !default;
+$kendo-slider-line-height: $kendo-line-height-md !default;
 
-$slider-button-offset: 22px !default;
-$slider-button-size: 36px !default;
-$slider-button-spacing: ($slider-button-size + $slider-button-offset) !default;
-$slider-button-focus-shadow: null !default;
+$kendo-slider-button-offset: 22px !default;
+$kendo-slider-button-size: 36px !default;
+$kendo-slider-button-spacing: ($kendo-slider-button-size + $kendo-slider-button-offset) !default;
+$kendo-slider-button-focus-shadow: null !default;
 
-$slider-track-thickness: 2px !default;
-$slider-draghandle-size: 14px !default;
-$slider-draghandle-border-width: 0px !default;
-$slider-draghandle-active-scale: 1 !default;
-$slider-draghandle-active-size: 20px !default;
+$kendo-slider-track-thickness: 2px !default;
+$kendo-slider-draghandle-size: 14px !default;
+$kendo-slider-draghandle-border-width: 0px !default;
+$kendo-slider-draghandle-active-scale: 1 !default;
+$kendo-slider-draghandle-active-size: 20px !default;
 
-$slider-draghandle-bg: $kendo-color-primary !default;
-$slider-draghandle-text: $kendo-color-primary-contrast !default;
-$slider-draghandle-border: $kendo-color-primary !default;
-$slider-draghandle-gradient: null !default;
+$kendo-slider-draghandle-bg: $kendo-color-primary !default;
+$kendo-slider-draghandle-text: $kendo-color-primary-contrast !default;
+$kendo-slider-draghandle-border: $kendo-color-primary !default;
+$kendo-slider-draghandle-gradient: null !default;
 
-$slider-draghandle-hover-bg: null !default;
-$slider-draghandle-hover-text: null !default;
-$slider-draghandle-hover-border: null !default;
-$slider-draghandle-hover-gradient: null !default;
+$kendo-slider-draghandle-hover-bg: null !default;
+$kendo-slider-draghandle-hover-text: null !default;
+$kendo-slider-draghandle-hover-border: null !default;
+$kendo-slider-draghandle-hover-gradient: null !default;
 
-$slider-draghandle-pressed-bg: null !default;
-$slider-draghandle-pressed-text: null !default;
-$slider-draghandle-pressed-border: null !default;
-$slider-draghandle-pressed-gradient: null !default;
+$kendo-slider-draghandle-pressed-bg: null !default;
+$kendo-slider-draghandle-pressed-text: null !default;
+$kendo-slider-draghandle-pressed-border: null !default;
+$kendo-slider-draghandle-pressed-gradient: null !default;
 
-$slider-draghandle-focus-shadow: 0 0 0 11px rgba( $kendo-color-primary, .25 ) !default;
+$kendo-slider-draghandle-focus-shadow: 0 0 0 11px rgba( $kendo-color-primary, .25 ) !default;
 
-$slider-transition-speed: .3s !default;
-$slider-transition-function: ease-out !default;
-$slider-draghandle-transition-speed: .4s !default;
-$slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
+$kendo-slider-transition-speed: .3s !default;
+$kendo-slider-transition-function: ease-out !default;
+$kendo-slider-draghandle-transition-speed: .4s !default;
+$kendo-slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
-$slider-track-bg: k-try-tint( $kendo-color-primary, 8 ) !default;
-$slider-selection-bg: $kendo-color-primary !default;
-$slider-disabled-opacity: .65 !default;
+$kendo-slider-track-bg: k-try-tint( $kendo-color-primary, 8 ) !default;
+$kendo-slider-selection-bg: $kendo-color-primary !default;
+$kendo-slider-disabled-opacity: .65 !default;

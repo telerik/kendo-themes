@@ -1,13 +1,13 @@
 @include exports( "listgroup/layout" ) {
 
     .k-listgroup {
-        @include border-radius( $listgroup-border-radius );
+        @include border-radius( $kendo-listgroup-border-radius );
         margin: 0;
         padding: 0;
-        border-width: $listgroup-border-width;
+        border-width: $kendo-listgroup-border-width;
         border-style: solid;
-        font-size: $listgroup-font-size;
-        line-height: $listgroup-line-height;
+        font-size: $kendo-listgroup-font-size;
+        line-height: $kendo-listgroup-line-height;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -24,7 +24,7 @@
 
         // Borders of items
         .k-listgroup-item + .k-listgroup-item {
-            border-top-width: $listgroup-item-border-width;
+            border-top-width: $kendo-listgroup-item-border-width;
         }
     }
     .k-listgroup-flush {
@@ -35,7 +35,7 @@
 
 
     .k-listgroup-item {
-        padding: $listgroup-item-padding-y $listgroup-item-padding-x;
+        padding: $kendo-listgroup-item-padding-y $kendo-listgroup-item-padding-x;
         border-width: 0;
         border-style: solid;
         border-color: inherit;
@@ -47,8 +47,8 @@
         position: relative;
 
         > .k-link {
-            margin: (-$listgroup-item-padding-y) (-$listgroup-item-padding-x);
-            padding: $listgroup-item-padding-y $listgroup-item-padding-x;
+            margin: (-$kendo-listgroup-item-padding-y) (-$kendo-listgroup-item-padding-x);
+            padding: $kendo-listgroup-item-padding-y $kendo-listgroup-item-padding-x;
             color: inherit;
             text-decoration: none;
             outline: 0;
@@ -60,7 +60,7 @@
             position: relative;
 
             > .k-select {
-                padding: $listgroup-item-padding-y;
+                padding: $kendo-listgroup-item-padding-y;
                 display: flex;
                 align-items: center;
                 flex: 0 0 auto;
@@ -79,8 +79,8 @@
         }
 
         > .k-select {
-            margin: (-$listgroup-item-padding-y) (-$listgroup-item-padding-x) (-$listgroup-item-padding-y) 0;
-            padding: $listgroup-item-padding-y;
+            margin: (-$kendo-listgroup-item-padding-y) (-$kendo-listgroup-item-padding-x) (-$kendo-listgroup-item-padding-y) 0;
+            padding: $kendo-listgroup-item-padding-y;
             border-width: 0 0 0 1px;
             border-style: solid;
             border-color: inherit;
@@ -91,8 +91,8 @@
 
     // Forms in listgroup
     .k-listgroup-form-row {
-        margin: (-$listgroup-item-padding-y) (-$listgroup-item-padding-x);
-        padding: $listgroup-item-padding-y $listgroup-item-padding-x;
+        margin: (-$kendo-listgroup-item-padding-y) (-$kendo-listgroup-item-padding-x);
+        padding: $kendo-listgroup-item-padding-y $kendo-listgroup-item-padding-x;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -164,13 +164,13 @@
         .k-listgroup-item-segmented {
 
             > .k-link {
-                margin-right: -$listgroup-item-padding-x;
+                margin-right: -$kendo-listgroup-item-padding-x;
                 margin-left: 0;
             }
 
             > .k-select {
                 margin-right: 0;
-                margin-left: -$listgroup-item-padding-x;
+                margin-left: -$kendo-listgroup-item-padding-x;
                 border-right-width: 1px;
                 border-left-width: 0;
 

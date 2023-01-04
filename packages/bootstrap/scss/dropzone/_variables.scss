@@ -1,27 +1,27 @@
 // Dropzone
 
-$dropzone-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$dropzone-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$dropzone-border-width: 1px !default;
-$dropzone-min-height: 220px !default;
+$kendo-dropzone-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-border-width: 1px !default;
+$kendo-dropzone-min-height: 220px !default;
 
-$dropzone-font-family: $font-family !default;
-$dropzone-font-size: $font-size !default;
-$dropzone-line-height: $line-height !default;
+$kendo-dropzone-font-family: $kendo-font-family !default;
+$kendo-dropzone-font-size: $kendo-font-size-md !default;
+$kendo-dropzone-line-height: $kendo-line-height-md !default;
 
-$dropzone-bg: if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 ) !default;
-$dropzone-text: $kendo-component-text !default;
-$dropzone-border: $kendo-component-border !default;
+$kendo-dropzone-bg: if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 ) !default;
+$kendo-dropzone-text: $kendo-component-text !default;
+$kendo-dropzone-border: $kendo-component-border !default;
 
-$dropzone-icon-size: ( $kendo-icon-size * 3 ) !default;
-$dropzone-icon-spacing: k-map-get( $kendo-spacing, 6 ) !default;
-$dropzone-icon-text: k-try-tint( $dropzone-text, 8 ) !default;
-$dropzone-icon-hover-text: $kendo-color-primary !default;
+$kendo-dropzone-icon-size: ( $kendo-icon-size * 3 ) !default;
+$kendo-dropzone-icon-spacing: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-dropzone-icon-text: k-try-tint( $kendo-dropzone-text, 8 ) !default;
+$kendo-dropzone-icon-hover-text: $kendo-color-primary !default;
 
-$dropzone-hint-font-size: null !default;
-$dropzone-hint-spacing: k-map-get( $kendo-spacing, 2 ) !default;
-$dropzone-hint-text: null !default;
+$kendo-dropzone-hint-font-size: null !default;
+$kendo-dropzone-hint-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-hint-text: null !default;
 
-$dropzone-note-font-size: $font-size-xs !default;
-$dropzone-note-spacing: null !default;
-$dropzone-note-text: $kendo-subtle-text !default;
+$kendo-dropzone-note-font-size: $kendo-font-size-xs !default;
+$kendo-dropzone-note-spacing: null !default;
+$kendo-dropzone-note-text: $kendo-subtle-text !default;

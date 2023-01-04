@@ -2,10 +2,10 @@
 
     .k-actions {
         @include fill(
-            $actions-text,
-            $actions-bg,
-            $actions-border,
-            $actions-gradient
+            $kendo-actions-text,
+            $kendo-actions-bg,
+            $kendo-actions-border,
+            $kendo-actions-gradient
         );
     }
 

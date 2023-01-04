@@ -1,134 +1,131 @@
-@import "../typography/_variables.scss";
-
-
 // Calendar
 
-$calendar-border-width: 1px !default;
-$calendar-font-family: $font-family !default;
-$calendar-font-size: $font-size !default;
-$calendar-line-height: k-math-div( 20, 14 ) !default;
+$kendo-calendar-border-width: 1px !default;
+$kendo-calendar-font-family: $kendo-font-family !default;
+$kendo-calendar-font-size: $kendo-font-size-md !default;
+$kendo-calendar-line-height: k-math-div( 20, 14 ) !default;
 
-$calendar-cell-size: 36px !default;
+$kendo-calendar-cell-size: 36px !default;
 
-$calendar-bg: $kendo-component-bg !default;
-$calendar-text: $kendo-component-text !default;
-$calendar-border: $kendo-component-border !default;
+$kendo-calendar-bg: $kendo-component-bg !default;
+$kendo-calendar-text: $kendo-component-text !default;
+$kendo-calendar-border: $kendo-component-border !default;
 
-$calendar-header-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
-$calendar-header-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$calendar-header-border-width: 0px !default;
+$kendo-calendar-header-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-header-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-header-border-width: 0px !default;
 
-$calendar-header-bg: null !default;
-$calendar-header-text: $kendo-component-header-text !default;
-$calendar-header-border: $kendo-component-header-border !default;
-$calendar-header-gradient: null !default;
-$calendar-header-shadow: null !default;
+$kendo-calendar-header-bg: null !default;
+$kendo-calendar-header-text: $kendo-component-header-text !default;
+$kendo-calendar-header-border: $kendo-component-header-border !default;
+$kendo-calendar-header-gradient: null !default;
+$kendo-calendar-header-shadow: null !default;
 
-$calendar-nav-gap: null !default;
+$kendo-calendar-nav-gap: null !default;
 
-$calendar-footer-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$calendar-footer-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-calendar-footer-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-calendar-footer-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
-$calendar-cell-padding-x: .25em !default;
-$calendar-cell-padding-y: $calendar-cell-padding-x !default;
-$calendar-cell-line-height: $calendar-line-height !default;
-$calendar-cell-border-radius: 100px !default;
+$kendo-calendar-cell-padding-x: .25em !default;
+$kendo-calendar-cell-padding-y: $kendo-calendar-cell-padding-x !default;
+$kendo-calendar-cell-line-height: $kendo-calendar-line-height !default;
+$kendo-calendar-cell-border-radius: 100px !default;
 
-$calendar-header-cell-padding-x: null !default;
-$calendar-header-cell-padding-y: null !default;
-$calendar-header-cell-width: $calendar-cell-size !default;
-$calendar-header-cell-height: $calendar-cell-size !default;
-$calendar-header-cell-font-size: $font-size-sm !default;
-$calendar-header-cell-line-height: 2 !default;
-$calendar-header-cell-bg: null !default;
-$calendar-header-cell-text: $kendo-subtle-text !default;
-$calendar-header-cell-opacity: null !default;
+$kendo-calendar-header-cell-padding-x: null !default;
+$kendo-calendar-header-cell-padding-y: null !default;
+$kendo-calendar-header-cell-width: $kendo-calendar-cell-size !default;
+$kendo-calendar-header-cell-height: $kendo-calendar-cell-size !default;
+$kendo-calendar-header-cell-font-size: $kendo-font-size-sm !default;
+$kendo-calendar-header-cell-line-height: 2 !default;
+$kendo-calendar-header-cell-bg: null !default;
+$kendo-calendar-header-cell-text: $kendo-subtle-text !default;
+$kendo-calendar-header-cell-opacity: null !default;
 
-$calendar-caption-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$calendar-caption-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$calendar-caption-height: $calendar-cell-size !default;
-$calendar-caption-font-size: null !default;
-$calendar-caption-line-height: null !default;
-$calendar-caption-font-weight: bold !default;
+$kendo-calendar-caption-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-calendar-caption-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-caption-height: $kendo-calendar-cell-size !default;
+$kendo-calendar-caption-font-size: null !default;
+$kendo-calendar-caption-line-height: null !default;
+$kendo-calendar-caption-font-weight: bold !default;
 
-$calendar-view-width: ($calendar-cell-size * 8) !default;
-$calendar-view-height: ($calendar-cell-size * 7) !default;
-$calendar-view-gap: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-calendar-view-width: ($kendo-calendar-cell-size * 8) !default;
+$kendo-calendar-view-height: ($kendo-calendar-cell-size * 7) !default;
+$kendo-calendar-view-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
-$calendar-weekend-bg: null !default;
-$calendar-weekend-text: null !default;
+$kendo-calendar-weekend-bg: null !default;
+$kendo-calendar-weekend-text: null !default;
 
-$calendar-today-style: color !default;
-$calendar-today-color: $kendo-color-primary !default;
+$kendo-calendar-today-style: color !default;
+$kendo-calendar-today-color: $kendo-color-primary !default;
 
-$calendar-week-number-bg: null !default;
-$calendar-week-number-text: $calendar-header-cell-text !default;
+$kendo-calendar-week-number-bg: null !default;
+$kendo-calendar-week-number-text: $kendo-calendar-header-cell-text !default;
 
-$calendar-other-month-bg: null !default;
-$calendar-other-month-text: $calendar-header-cell-text !default;
+$kendo-calendar-other-month-bg: null !default;
+$kendo-calendar-other-month-text: $kendo-calendar-header-cell-text !default;
 
-$calendar-cell-bg: null !default;
-$calendar-cell-text: null !default;
-$calendar-cell-border: null !default;
-$calendar-cell-gradient: null !default;
+$kendo-calendar-cell-bg: null !default;
+$kendo-calendar-cell-text: null !default;
+$kendo-calendar-cell-border: null !default;
+$kendo-calendar-cell-gradient: null !default;
 
-$calendar-cell-hover-bg: $kendo-hover-bg !default;
-$calendar-cell-hover-text: $kendo-hover-text !default;
-$calendar-cell-hover-border: $kendo-hover-border !default;
-$calendar-cell-hover-gradient: null !default;
+$kendo-calendar-cell-hover-bg: $kendo-hover-bg !default;
+$kendo-calendar-cell-hover-text: $kendo-hover-text !default;
+$kendo-calendar-cell-hover-border: $kendo-hover-border !default;
+$kendo-calendar-cell-hover-gradient: null !default;
 
-$calendar-cell-selected-bg: $kendo-color-primary !default;
-$calendar-cell-selected-text: k-contrast-color( $calendar-cell-selected-bg ) !default;
-$calendar-cell-selected-border: $calendar-cell-selected-bg !default;
-$calendar-cell-selected-gradient: null !default;
+$kendo-calendar-cell-selected-bg: $kendo-color-primary !default;
+$kendo-calendar-cell-selected-text: k-contrast-color( $kendo-calendar-cell-selected-bg ) !default;
+$kendo-calendar-cell-selected-border: $kendo-calendar-cell-selected-bg !default;
+$kendo-calendar-cell-selected-gradient: null !default;
 
-$calendar-cell-selected-hover-bg: k-try-shade( $calendar-cell-selected-bg, .5 ) !default;
-$calendar-cell-selected-hover-text: $calendar-cell-selected-text !default;
-$calendar-cell-selected-hover-border: null !default;
-$calendar-cell-selected-hover-gradient: null !default;
+$kendo-calendar-cell-selected-hover-bg: k-try-shade( $kendo-calendar-cell-selected-bg, .5 ) !default;
+$kendo-calendar-cell-selected-hover-text: $kendo-calendar-cell-selected-text !default;
+$kendo-calendar-cell-selected-hover-border: null !default;
+$kendo-calendar-cell-selected-hover-gradient: null !default;
 
-$calendar-cell-focus-shadow: $kendo-list-item-focus-shadow !default;
-$calendar-cell-selected-focus-shadow: $calendar-cell-focus-shadow !default;
+$kendo-calendar-cell-focus-shadow: $kendo-list-item-focus-shadow !default;
+$kendo-calendar-cell-selected-focus-shadow: $kendo-calendar-cell-focus-shadow !default;
 
 
 // Calendar navigation
-$calendar-navigation-width: 5em !default;
-$calendar-navigation-item-height: 2em !default;
+$kendo-calendar-navigation-width: 5em !default;
+$kendo-calendar-navigation-item-height: 2em !default;
 
-$calendar-navigation-bg: k-true-mix( $calendar-text, $calendar-bg, 3) !default;
-$calendar-navigation-text: $calendar-text !default;
-$calendar-navigation-border: $calendar-border !default;
+$kendo-calendar-navigation-bg: k-true-mix( $kendo-calendar-text, $kendo-calendar-bg, 3) !default;
+$kendo-calendar-navigation-text: $kendo-calendar-text !default;
+$kendo-calendar-navigation-border: $kendo-calendar-border !default;
 
-$calendar-navigation-hover-text: $link-hover-text !default;
+$kendo-calendar-navigation-hover-text: $kendo-link-hover-text !default;
 
 
 // Infinite calendar
-$infinite-calendar-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$infinite-calendar-header-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-infinite-calendar-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-infinite-calendar-header-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
-$infinite-calendar-view-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$infinite-calendar-view-padding-y: 0px !default;
-$infinite-calendar-view-height: ( $calendar-cell-size * 9 ) !default;
+$kendo-infinite-calendar-view-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-infinite-calendar-view-padding-y: 0px !default;
+$kendo-infinite-calendar-view-height: ( $kendo-calendar-cell-size * 9 ) !default;
 
 
 // Multiview calendar
 
 
 // Calendar sizes
-$kendo-calendar-sm-font-size: $font-size-md !default;
-$kendo-calendar-sm-line-height: $line-height-md !default;
+$kendo-calendar-sm-font-size: $kendo-font-size-md !default;
+$kendo-calendar-sm-line-height: $kendo-line-height-md !default;
 $kendo-calendar-sm-cell-size: 32px !default;
 $kendo-calendar-sm-cell-padding-x: .125rem !default;
 $kendo-calendar-sm-cell-padding-y: .125rem !default;
 
-$kendo-calendar-md-font-size: $font-size-md !default;
-$kendo-calendar-md-line-height: $line-height-md !default;
+$kendo-calendar-md-font-size: $kendo-font-size-md !default;
+$kendo-calendar-md-line-height: $kendo-line-height-md !default;
 $kendo-calendar-md-cell-size: 36px !default;
 $kendo-calendar-md-cell-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-calendar-md-cell-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 
-$kendo-calendar-lg-font-size: $font-size-lg !default;
-$kendo-calendar-lg-line-height: $line-height-lg !default;
+$kendo-calendar-lg-font-size: $kendo-font-size-lg !default;
+$kendo-calendar-lg-line-height: $kendo-line-height-lg !default;
 $kendo-calendar-lg-cell-size: 40px !default;
 $kendo-calendar-lg-cell-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-calendar-lg-cell-padding-y: k-map-get( $kendo-spacing, 1 ) !default;

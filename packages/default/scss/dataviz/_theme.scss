@@ -1,47 +1,47 @@
 @include exports("dataviz/charts/theme") {
     // Exported variables
     .k-var--chart-inactive {
-        background-color: $chart-inactive;
+        background-color: $kendo-chart-inactive;
     }
 
     .k-var--chart-major-lines {
-        background-color: $chart-major-lines;
+        background-color: $kendo-chart-major-lines;
     }
 
     .k-var--chart-minor-lines {
-        background-color: $chart-minor-lines;
+        background-color: $kendo-chart-minor-lines;
     }
 
     .k-var--chart-area-opacity {
-        opacity: $chart-area-opacity;
+        opacity: $kendo-chart-area-opacity;
     }
 
     .k-var--chart-area-inactive-opacity {
-        opacity: $chart-area-inactive-opacity;
+        opacity: $kendo-chart-area-inactive-opacity;
     }
 
     .k-var--chart-line-inactive-opacity {
-        opacity: $chart-line-inactive-opacity;
+        opacity: $kendo-chart-line-inactive-opacity;
     }
 
     .k-var--chart-notes-background {
-        background-color: $chart-notes-background;
+        background-color: $kendo-chart-notes-background;
     }
 
     .k-var--chart-notes-border {
-        background-color: $chart-notes-border;
+        background-color: $kendo-chart-notes-border;
     }
 
     .k-var--chart-notes-lines {
-        background-color: $chart-notes-lines;
+        background-color: $kendo-chart-notes-lines;
     }
 
     .k-var--chart-crosshair-background {
-        background-color: $chart-crosshair-background;
+        background-color: $kendo-chart-crosshair-background;
     }
 
     .k-var--chart-error-bars-background {
-        background-color: $error-bars-background;
+        background-color: $kendo-chart-error-bars-background;
     }
 
     // Elements
@@ -49,9 +49,9 @@
     .k-sparkline,
     .k-stockchart {
         @include fill(
-            $chart-text,
+            $kendo-chart-text,
             transparent,
-            $chart-border
+            $kendo-chart-border
         );
 
         .k-popup {
@@ -71,14 +71,14 @@
 
     .k-chart-crosshair-tooltip,
     .k-chart-shared-tooltip {
-        color: $chart-crosshair-shared-tooltip-color;
-        background-color: $chart-crosshair-shared-tooltip-background;
-        border-color: $chart-crosshair-shared-tooltip-border;
+        color: $kendo-chart-crosshair-shared-tooltip-color;
+        background-color: $kendo-chart-crosshair-shared-tooltip-background;
+        border-color: $kendo-chart-crosshair-shared-tooltip-border;
     }
 
     .k-selection {
-        border-color: $selection-border-color;
-        box-shadow: $selection-shadow;
+        border-color: $kendo-chart-selection-border-color;
+        box-shadow: $kendo-chart-selection-shadow;
     }
 
     .k-selection-bg {

@@ -3,9 +3,9 @@
     // Filemanager
     .k-filemanager {
         @include fill(
-            $filemanager-text,
-            $filemanager-bg,
-            $filemanager-border
+            $kendo-file-manager-text,
+            $kendo-file-manager-bg,
+            $kendo-file-manager-border
         );
     }
 
@@ -13,10 +13,10 @@
     // Filemanager toolbar
     .k-filemanager-toolbar {
         @include fill(
-            $filemanager-toolbar-text,
-            $filemanager-toolbar-bg,
-            $filemanager-toolbar-border,
-            $filemanager-toolbar-gradient
+            $kendo-file-manager-toolbar-text,
+            $kendo-file-manager-toolbar-bg,
+            $kendo-file-manager-toolbar-border,
+            $kendo-file-manager-toolbar-gradient
         );
     }
 
@@ -24,9 +24,9 @@
     // Filemanager navigation
     .k-filemanager-navigation {
         @include fill(
-            $filemanager-navigation-text,
-            $filemanager-navigation-bg,
-            $filemanager-navigation-border
+            $kendo-file-manager-navigation-text,
+            $kendo-file-manager-navigation-bg,
+            $kendo-file-manager-navigation-border
         );
     }
 
@@ -34,9 +34,9 @@
     // Filemanager breadcrumb
     .k-filemanager-breadcrumb {
         @include fill(
-            $filemanager-breadcrumb-text,
-            $filemanager-breadcrumb-bg,
-            $filemanager-breadcrumb-border
+            $kendo-file-manager-breadcrumb-text,
+            $kendo-file-manager-breadcrumb-bg,
+            $kendo-file-manager-breadcrumb-border
         );
     }
 
@@ -44,23 +44,23 @@
     // Filemanager listview
     .k-filemanager-listview {
         @include fill(
-            $filemanager-listview-text,
-            $filemanager-listview-bg,
-            $filemanager-listview-border
+            $kendo-file-manager-listview-text,
+            $kendo-file-manager-listview-bg,
+            $kendo-file-manager-listview-border
         );
 
         .k-listview-item {
             @include fill(
-                $filemanager-listview-item-text,
-                $filemanager-listview-item-bg,
-                $filemanager-listview-item-border
+                $kendo-file-manager-listview-item-text,
+                $kendo-file-manager-listview-item-bg,
+                $kendo-file-manager-listview-item-border
             );
 
             .k-file-icon {
                 @include fill(
-                    $filemanager-listview-item-icon-text,
-                    $filemanager-listview-item-icon-bg,
-                    $filemanager-listview-item-icon-border
+                    $kendo-file-manager-listview-item-icon-text,
+                    $kendo-file-manager-listview-item-icon-bg,
+                    $kendo-file-manager-listview-item-icon-border
                 );
             }
 
@@ -80,9 +80,9 @@
     .k-filemanager-grid {
 
         @include fill(
-            $filemanager-grid-text,
-            $filemanager-grid-bg,
-            $filemanager-grid-border
+            $kendo-file-manager-grid-text,
+            $kendo-file-manager-grid-bg,
+            $kendo-file-manager-grid-border
         );
 
     }
@@ -91,16 +91,16 @@
     // Filemanager preview
     .k-filemanager-preview {
         @include fill(
-            $filemanager-preview-text,
-            $filemanager-preview-bg,
-            $filemanager-preview-border
+            $kendo-file-manager-preview-text,
+            $kendo-file-manager-preview-bg,
+            $kendo-file-manager-preview-border
         );
 
         .k-file-icon {
             @include fill(
-                $filemanager-preview-icon-text,
-                $filemanager-preview-icon-bg,
-                $filemanager-preview-icon-border
+                $kendo-file-manager-preview-icon-text,
+                $kendo-file-manager-preview-icon-bg,
+                $kendo-file-manager-preview-icon-border
             );
         }
 

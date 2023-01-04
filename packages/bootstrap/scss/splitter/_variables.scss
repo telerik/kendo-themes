@@ -1,24 +1,24 @@
 // Splitter
-$splitter-border-width: 1px !default;
-$splitter-font-family: $font-family !default;
-$splitter-font-size: $font-size !default;
-$splitter-line-height: $line-height !default;
+$kendo-splitter-border-width: 1px !default;
+$kendo-splitter-font-family: $kendo-font-family !default;
+$kendo-splitter-font-size: $kendo-font-size-md !default;
+$kendo-splitter-line-height: $kendo-line-height-md !default;
 
-$splitter-bg: $kendo-component-bg !default;
-$splitter-text: $kendo-component-text !default;
-$splitter-border: $kendo-component-border !default;
+$kendo-splitter-bg: $kendo-component-bg !default;
+$kendo-splitter-text: $kendo-component-text !default;
+$kendo-splitter-border: $kendo-component-border !default;
 
-$splitter-splitbar-size: 8px !default;
-$splitter-resize-icon-size: 10px !default;
-$splitter-drag-handle-length: 20px !default;
-$splitter-drag-handle-thickness: 2px !default;
-$splitter-drag-icon-margin: 7px !default;
+$kendo-splitter-splitbar-size: 8px !default;
+$kendo-splitter-resize-icon-size: 10px !default;
+$kendo-splitter-drag-handle-length: 20px !default;
+$kendo-splitter-drag-handle-thickness: 2px !default;
+$kendo-splitter-drag-icon-margin: 7px !default;
 
-$splitbar-bg: $base-bg !default;
-$splitbar-text: $base-text !default;
+$kendo-splitbar-bg: $kendo-base-bg !default;
+$kendo-splitbar-text: $kendo-base-text !default;
 
-$splitbar-hover-bg: k-try-shade( $splitbar-bg, .5 ) !default;
-$splitbar-hover-text: $splitbar-text !default;
+$kendo-splitbar-hover-bg: k-try-shade( $kendo-splitbar-bg, .5 ) !default;
+$kendo-splitbar-hover-text: $kendo-splitbar-text !default;
 
-$splitbar-selected-bg: $kendo-selected-bg !default;
-$splitbar-selected-text: $kendo-selected-text !default;
+$kendo-splitbar-selected-bg: $kendo-selected-bg !default;
+$kendo-splitbar-selected-text: $kendo-selected-text !default;

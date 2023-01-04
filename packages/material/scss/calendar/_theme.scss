@@ -6,16 +6,16 @@
 
         .k-focus .k-link {
             @include fill(
-                $calendar-cell-hover-text,
-                $calendar-cell-hover-bg,
-                $calendar-cell-hover-border
+                $kendo-calendar-cell-hover-text,
+                $kendo-calendar-cell-hover-bg,
+                $kendo-calendar-cell-hover-border
             );
         }
         .k-selected.k-focus .k-link {
             @include fill(
-                $calendar-cell-selected-text,
-                k-try-tint($calendar-cell-selected-bg),
-                $calendar-cell-selected-border
+                $kendo-calendar-cell-selected-text,
+                k-try-tint($kendo-calendar-cell-selected-bg),
+                $kendo-calendar-cell-selected-border
             );
         }
 

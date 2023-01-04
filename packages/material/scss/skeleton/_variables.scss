@@ -1,11 +1,11 @@
 // Skeleton
-$skeleton-text-transform: scale( 1, .6 ) !default;
-$skeleton-text-border-radius: $kendo-border-radius-md !default;
+$kendo-skeleton-text-transform: scale( 1, .6 ) !default;
+$kendo-skeleton-text-border-radius: $kendo-border-radius-md !default;
 
-$skeleton-rect-border-radius: 0 !default;
+$kendo-skeleton-rect-border-radius: 0 !default;
 
-$skeleton-circle-border-radius: 9999px !default;
+$kendo-skeleton-circle-border-radius: 9999px !default;
 
-$skeleton-item-bg: rgba( $kendo-color-inverse, .2 ) !default;
+$kendo-skeleton-item-bg: rgba( $kendo-color-inverse, .2 ) !default;
 
-$skeleton-wave-bg: rgba( black, .04 ) !default;
+$kendo-skeleton-wave-bg: rgba( black, .04 ) !default;

@@ -60,10 +60,10 @@ $kendo-window-inner-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
 /// Horizontal padding of the window action buttons.
 /// @group window
-$kendo-window-buttongroup-padding-x: map.get( $kendo-spacing, 6 ) !default; // $actions-padding-x
+$kendo-window-buttongroup-padding-x: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-x
 /// Vertical padding of the window action buttons.
 /// @group window
-$kendo-window-buttongroup-padding-y: map.get( $kendo-spacing, 6 ) !default; // $actions-padding-y
+$kendo-window-buttongroup-padding-y: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-y
 /// Width of the top border of the window action buttons.
 /// @group window
 $kendo-window-buttongroup-border-width: 0 !default;

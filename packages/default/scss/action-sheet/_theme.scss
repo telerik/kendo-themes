@@ -3,26 +3,26 @@
     // Actionsheet
     .k-actionsheet {
         @include fill(
-            $actionsheet-text,
-            $actionsheet-bg,
-            $actionsheet-border
+            $kendo-actionsheet-text,
+            $kendo-actionsheet-bg,
+            $kendo-actionsheet-border
         );
-        @include box-shadow( $actionsheet-shadow );
+        @include box-shadow( $kendo-actionsheet-shadow );
     }
 
 
     // Actionsheet header
     .k-actionsheet-titlebar {
         @include fill(
-            $actionsheet-titlebar-text,
-            $actionsheet-titlebar-bg,
-            $actionsheet-titlebar-border,
-            $actionsheet-titlebar-gradient
+            $kendo-actionsheet-titlebar-text,
+            $kendo-actionsheet-titlebar-bg,
+            $kendo-actionsheet-titlebar-border,
+            $kendo-actionsheet-titlebar-gradient
         );
-        @include box-shadow( $actionsheet-titlebar-shadow );
+        @include box-shadow( $kendo-actionsheet-titlebar-shadow );
     }
     .k-actionsheet-subtitle {
-        @include fill( $color: $actionsheet-subtitle-text );
+        @include fill( $color: $kendo-actionsheet-subtitle-text );
     }
 
 
@@ -38,12 +38,12 @@
         &:hover,
         &.k-hover {
             @include fill(
-                $actionsheet-item-hover-text,
-                $actionsheet-item-hover-bg,
-                $actionsheet-item-hover-border,
-                $actionsheet-item-hover-gradient
+                $kendo-actionsheet-item-hover-text,
+                $kendo-actionsheet-item-hover-bg,
+                $kendo-actionsheet-item-hover-border,
+                $kendo-actionsheet-item-hover-gradient
             );
-            @include box-shadow( $actionsheet-item-hover-shadow );
+            @include box-shadow( $kendo-actionsheet-item-hover-shadow );
         }
 
 
@@ -51,12 +51,12 @@
         &:focus,
         &.k-focus {
             @include fill(
-                $actionsheet-item-focus-text,
-                $actionsheet-item-focus-bg,
-                $actionsheet-item-focus-border,
-                $actionsheet-item-focus-gradient
+                $kendo-actionsheet-item-focus-text,
+                $kendo-actionsheet-item-focus-bg,
+                $kendo-actionsheet-item-focus-border,
+                $kendo-actionsheet-item-focus-gradient
             );
-            @include focus-indicator( $actionsheet-item-focus-shadow );
+            @include focus-indicator( $kendo-actionsheet-item-focus-shadow );
         }
 
 
@@ -64,19 +64,19 @@
         &:disabled,
         &.k-disabled {
             @include fill(
-                $actionsheet-item-disabled-text,
-                $actionsheet-item-disabled-bg,
-                $actionsheet-item-disabled-border,
-                $actionsheet-item-disabled-gradient
+                $kendo-actionsheet-item-disabled-text,
+                $kendo-actionsheet-item-disabled-bg,
+                $kendo-actionsheet-item-disabled-border,
+                $kendo-actionsheet-item-disabled-gradient
             );
-            @include box-shadow( $actionsheet-item-disabled-shadow );
+            @include box-shadow( $kendo-actionsheet-item-disabled-shadow );
         }
     }
 
 
     // Actionsheet item description
     .k-actionsheet-item-description {
-        @include fill( $color: $actionsheet-item-description-text );
+        @include fill( $color: $kendo-actionsheet-item-description-text );
     }
 
 
@@ -86,7 +86,7 @@
 
     // Adaptive Actionsheet
     .k-adaptive-actionsheet .k-actionsheet-titlebar {
-        @include fill( $border: $adaptive-actionsheet-titlebar-border );
+        @include fill( $border: $kendo-adaptive-actionsheet-titlebar-border );
     }
 
 }

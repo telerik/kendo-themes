@@ -7,13 +7,13 @@
 
         .k-event-actions {
             .k-link {
-                color: $scheduler-event-bg;
-                background-color: $scheduler-event-text;
+                color: $kendo-scheduler-event-bg;
+                background-color: $kendo-scheduler-event-text;
             }
         }
 
         .k-resize-handle::before {
-            // TODO: $scheduler-content-area-bg
+            // TODO: $kendo-scheduler-content-area-bg
             background-color: $kendo-color-primary-contrast;
         }
     }
@@ -27,7 +27,7 @@
 
     .k-scheduler-edit-form {
         .k-edit-label {
-            color: $floating-label-text;
+            color: $kendo-floating-label-text;
         }
     }
 

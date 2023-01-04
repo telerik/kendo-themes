@@ -2,6 +2,6 @@
 
 @include exports( "timeline/layout/bootstrap" ) {
     .k-timeline-card .k-card-header {
-        padding-top: $card-header-padding-x;
+        padding-top: $kendo-card-header-padding-x;
     }
 }

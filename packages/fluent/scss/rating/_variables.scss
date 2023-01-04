@@ -48,4 +48,4 @@ $kendo-rating-item-selected-hover-text: get-theme-color-var( primary-120 ) !defa
 
 /// Icon size of the rating.
 /// @group rating
-$kendo-rating-icon-size: calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height} ) !default;
+$kendo-rating-icon-size: calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height-md} ) !default;

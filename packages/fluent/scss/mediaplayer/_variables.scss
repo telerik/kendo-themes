@@ -3,44 +3,44 @@
 
 /// Border width of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-border-width: 1px !default;
+$kendo-media-player-border-width: 1px !default;
 /// Font family of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-media-player-font-family: var( --kendo-font-family, inherit ) !default;
 /// Font size of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-media-player-font-size: var( --kendo-font-size, inherit ) !default;
 /// Line height of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-line-height: var( --kendo-line-height, normal ) !default;
+$kendo-media-player-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Background color of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-bg: var( --kendo-component-bg, inherit ) !default;
+$kendo-media-player-bg: var( --kendo-component-bg, inherit ) !default;
 /// Text color of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-text: var( --kendo-component-text, inherit ) !default;
+$kendo-media-player-text: var( --kendo-component-text, inherit ) !default;
 /// Border color of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-border: var( --kendo-component-border, inherit ) !default;
+$kendo-media-player-border: var( --kendo-component-border, inherit ) !default;
 
 /// Mediaplayer overlay background color.
 /// @group mediaplayer
-$kendo-mediaplayer-overlay-bg: get-theme-color-var( neutral-130 ) !default;
+$kendo-media-player-overlay-bg: get-theme-color-var( neutral-130 ) !default;
 
 /// Mediaplayer quality button border color.
 /// @group mediaplayer
-$kendo-mediaplayer-quality-border: get-theme-color-var( neutral-110 ) !default;
+$kendo-media-player-quality-border: get-theme-color-var( neutral-110 ) !default;
 
 /// Mediaplayer titlebar horizontal padding.
 /// @group mediaplayer
-$kendo-mediaplayer-titlebar-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-media-player-titlebar-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Mediaplayer titlebar vertical padding.
 /// @group mediaplayer
-$kendo-mediaplayer-titlebar-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-media-player-titlebar-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Mediaplayer titlebar background color.
 /// @group mediaplayer
-$kendo-mediaplayer-titlebar-bg: rgba( $kendo-color-black, .4 ) !default;
+$kendo-media-player-titlebar-bg: rgba( $kendo-color-black, .4 ) !default;
 /// Mediaplayer titlebar text color.
 /// @group mediaplayer
-$kendo-mediaplayer-titlebar-text: $kendo-mediaplayer-bg !default;
+$kendo-media-player-titlebar-text: $kendo-media-player-bg !default;

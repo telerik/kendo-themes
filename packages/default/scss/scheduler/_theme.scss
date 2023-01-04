@@ -3,53 +3,53 @@
     // Appearance
     .k-scheduler {
         @include fill(
-            $scheduler-text,
-            $scheduler-bg,
-            $scheduler-border
+            $kendo-scheduler-text,
+            $kendo-scheduler-bg,
+            $kendo-scheduler-border
         );
     }
 
     // Current time
     .k-current-time {
-        background: $scheduler-current-time-color;
+        background: $kendo-scheduler-current-time-color;
 
         &.k-current-time-arrow-left {
-            border-right-color: $scheduler-current-time-color;
+            border-right-color: $kendo-scheduler-current-time-color;
         }
 
         &.k-current-time-arrow-right {
-            border-left-color: $scheduler-current-time-color;
+            border-left-color: $kendo-scheduler-current-time-color;
         }
 
         &.k-current-time-arrow-down {
-            border-top-color: $scheduler-current-time-color;
+            border-top-color: $kendo-scheduler-current-time-color;
         }
     }
 
     // Header and footer
     .k-scheduler-toolbar {
         @include fill(
-            $scheduler-toolbar-text,
-            $scheduler-toolbar-bg,
-            $scheduler-toolbar-border,
-            $scheduler-toolbar-gradient
+            $kendo-scheduler-toolbar-text,
+            $kendo-scheduler-toolbar-bg,
+            $kendo-scheduler-toolbar-border,
+            $kendo-scheduler-toolbar-gradient
         );
     }
     .k-scheduler-footer {
         @include fill(
-            $scheduler-footer-text,
-            $scheduler-footer-bg,
-            $scheduler-footer-border,
-            $scheduler-footer-gradient
+            $kendo-scheduler-footer-text,
+            $kendo-scheduler-footer-bg,
+            $kendo-scheduler-footer-border,
+            $kendo-scheduler-footer-gradient
         );
     }
 
     .k-scheduler-header {
-        background-color: $base-bg;
+        background-color: $kendo-base-bg;
     }
 
     .k-scheduler-header-wrap {
-        background-color: $scheduler-bg;
+        background-color: $kendo-scheduler-bg;
     }
 
 
@@ -70,15 +70,15 @@
     .k-scheduler-nonwork,
     .k-scheduler .k-nonwork-hour {
         @include fill(
-            $scheduler-nonwork-text,
-            $scheduler-nonwork-bg
+            $kendo-scheduler-nonwork-text,
+            $kendo-scheduler-nonwork-bg
         );
     }
     .k-scheduler-other-month,
     .k-scheduler .k-other-month {
         @include fill(
-            $scheduler-othermonth-text,
-            $scheduler-othermonth-bg
+            $kendo-scheduler-othermonth-text,
+            $kendo-scheduler-othermonth-bg
         );
     }
 
@@ -90,7 +90,7 @@
     .k-scheduler-layout-flex {
         .k-scheduler-head,
         .k-sticky-cell {
-            background-color: $scheduler-bg;
+            background-color: $kendo-scheduler-bg;
         }
     }
 
@@ -98,39 +98,39 @@
     // Events
     .k-event {
         @include fill(
-            $scheduler-event-text,
-            $scheduler-event-bg,
-            $scheduler-event-border,
-            $scheduler-event-gradient
+            $kendo-scheduler-event-text,
+            $kendo-scheduler-event-bg,
+            $kendo-scheduler-event-border,
+            $kendo-scheduler-event-gradient
         );
-        @include box-shadow( $scheduler-event-shadow );
+        @include box-shadow( $kendo-scheduler-event-shadow );
 
         &:hover,
         &.k-hover {
             @include fill(
-                $scheduler-event-hover-text,
-                $scheduler-event-hover-bg,
-                $scheduler-event-hover-border,
-                $scheduler-event-hover-gradient
+                $kendo-scheduler-event-hover-text,
+                $kendo-scheduler-event-hover-bg,
+                $kendo-scheduler-event-hover-border,
+                $kendo-scheduler-event-hover-gradient
             );
-            @include box-shadow( $scheduler-event-hover-shadow );
+            @include box-shadow( $kendo-scheduler-event-hover-shadow );
         }
 
         &.k-selected {
             @include fill(
-                $scheduler-event-selected-text,
-                $scheduler-event-selected-bg,
-                $scheduler-event-selected-border,
-                $scheduler-event-selected-gradient
+                $kendo-scheduler-event-selected-text,
+                $kendo-scheduler-event-selected-bg,
+                $kendo-scheduler-event-selected-border,
+                $kendo-scheduler-event-selected-gradient
             );
-            @include box-shadow( $scheduler-event-selected-shadow );
+            @include box-shadow( $kendo-scheduler-event-selected-shadow );
         }
     }
     .k-event-inverse {
-        color: k-contrast-legacy( $scheduler-event-text );
+        color: k-contrast-legacy( $kendo-scheduler-event-text );
     }
     .k-event-ongoing {
-        @include box-shadow( $scheduler-event-ongoing-shadow );
+        @include box-shadow( $kendo-scheduler-event-ongoing-shadow );
     }
 
 
@@ -148,7 +148,7 @@
     // Edit dialog
     .k-scheduler-edit-dialog {
         .k-dialog-actions {
-            border-color: $scheduler-border;
+            border-color: $kendo-scheduler-border;
         }
     }
 
@@ -198,9 +198,9 @@
         .k-scheduler-content tr.k-hover .k-scheduler-datecolumn,
         .k-scheduler-content tr.k-hover .k-scheduler-groupcolumn {
             @include fill(
-                $scheduler-text,
-                $scheduler-bg,
-                $scheduler-border
+                $kendo-scheduler-text,
+                $kendo-scheduler-bg,
+                $kendo-scheduler-border
             );
         }
 
@@ -210,7 +210,7 @@
         }
         .k-scheduler-content tr.k-selected .k-scheduler-datecolumn,
         .k-scheduler-content tr.k-selected .k-scheduler-groupcolumn {
-            background-color: $scheduler-bg;
+            background-color: $kendo-scheduler-bg;
         }
     }
 
@@ -223,11 +223,11 @@
     .k-scheduler-yearview {
 
         .k-day-indicator {
-            @include fill( $bg: $scheduler-yearview-indicator-bg );
+            @include fill( $bg: $kendo-scheduler-yearview-indicator-bg );
         }
 
         .k-selected .k-day-indicator {
-            @include fill( $bg: $scheduler-yearview-indicator-selected-bg );
+            @include fill( $bg: $kendo-scheduler-yearview-indicator-selected-bg );
         }
     }
 
@@ -240,14 +240,14 @@
 
     .k-tooltip.k-scheduler-tooltip {
         @include fill(
-            $scheduler-tooltip-text,
-            $scheduler-tooltip-bg,
-            $scheduler-tooltip-border
+            $kendo-scheduler-tooltip-text,
+            $kendo-scheduler-tooltip-bg,
+            $kendo-scheduler-tooltip-border
         );
-        @include box-shadow( $scheduler-tooltip-shadow );
+        @include box-shadow( $kendo-scheduler-tooltip-shadow );
 
         .k-callout {
-            @include fill( $color: $scheduler-tooltip-callout-text );
+            @include fill( $color: $kendo-scheduler-tooltip-callout-text );
         }
     }
 

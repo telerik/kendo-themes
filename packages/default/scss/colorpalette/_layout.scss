@@ -5,9 +5,9 @@
         border-width: 0;
         box-sizing: border-box;
         outline: 0;
-        font-size: $colorpalette-font-size;
-        font-family: $colorpalette-font-family;
-        line-height: $colorpalette-line-height;
+        font-size: $kendo-color-palette-font-size;
+        font-family: $kendo-color-palette-font-family;
+        line-height: $kendo-color-palette-line-height;
         display: inline-flex;
         position: relative;
         -webkit-touch-callout: none;
@@ -30,8 +30,8 @@
 
     // Tile
     .k-colorpalette-tile {
-        width: $colorpalette-tile-width;
-        height: $colorpalette-tile-height;
+        width: $kendo-color-palette-tile-width;
+        height: $kendo-color-palette-tile-height;
         box-sizing: border-box;
         overflow: hidden;
         cursor: pointer;

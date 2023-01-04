@@ -298,7 +298,7 @@
                 height: 100%;
                 // That causes an issue with grid material. Commenting it for now
                 // -- joneff
-                // line-height: $line-height;
+                // line-height: $kendo-line-height-md;
                 display: inline-block;
                 outline: 0;
             }
@@ -410,9 +410,9 @@
     }
 
     .k-grouping-dropclue {
-        width: ($kendo-grid-group-dropclue-size * 2);
+        width: ($kendo-grid-group-drop-hint-size * 2);
         position: absolute;
-        top: $kendo-grid-group-dropclue-top;
+        top: $kendo-grid-group-drop-hint-top;
         box-sizing: content-box;
 
         &::before,
@@ -423,7 +423,7 @@
         }
 
         &::before {
-            border-width: $kendo-grid-group-dropclue-size;
+            border-width: $kendo-grid-group-drop-hint-size;
             border-style: solid;
             border-left-color: transparent;
             border-right-color: transparent;
@@ -432,10 +432,10 @@
         }
 
         &::after {
-            width: $kendo-grid-group-dropclue-line-size;
-            height: calc(100% - #{$kendo-grid-group-dropclue-size});
-            top: $kendo-grid-group-dropclue-size;
-            inset-inline-start: calc( #{$kendo-grid-group-dropclue-size} - #{k-math-div( $kendo-grid-group-dropclue-line-size, 2 )} );
+            width: $kendo-grid-group-drop-hint-line-size;
+            height: calc(100% - #{$kendo-grid-group-drop-hint-size});
+            top: $kendo-grid-group-drop-hint-size;
+            inset-inline-start: calc( #{$kendo-grid-group-drop-hint-size} - #{k-math-div( $kendo-grid-group-drop-hint-line-size, 2 )} );
         }
     }
 
@@ -443,7 +443,7 @@
     // Grid header / footer
     .k-grid-header-wrap,
     .k-grid-footer-wrap {
-        margin-inline-end: - $kendo-grid-cell-vertical-border-width;
+        margin-inline-end: -#{$kendo-grid-cell-vertical-border-width};
         width: 100%;
         border-width: 0;
         border-inline-end-width: $kendo-grid-cell-vertical-border-width;
@@ -460,7 +460,7 @@
     .k-grid-header,
     .k-grid-footer {
         padding-inline-start: 0;
-        padding-inline-end: var(--kendo-scrollbar-width, #{$default-scrollbar-width});
+        padding-inline-end: var(--kendo-scrollbar-width, #{$kendo-scrollbar-width});
         border-width: 0;
         border-style: solid;
         border-color: inherit;
@@ -488,7 +488,7 @@
         border-top-width: 1px;
 
         .k-table-td {
-            height: $line-height-em;
+            height: $kendo-line-height-em;
         }
     }
 
@@ -647,7 +647,7 @@
     .k-pager-input {
         .k-numerictextbox {
             margin-block: 0;
-            margin-inline: k-math-div( $font-size, 2 );
+            margin-inline: k-math-div( $kendo-font-size-md, 2 );
             width: 3em;
         }
     }
@@ -910,7 +910,7 @@
                     width: $_button-calc-size;
                     height: $_button-calc-size;
                     line-height: $_button-line-height;
-                    bottom: calc( #{$_header-padding-y} + #{k-math-div( $line-height-em, 2)} - #{k-math-div( $kendo-button-inner-calc-size, 2 )} );
+                    bottom: calc( #{$_header-padding-y} + #{k-math-div( $kendo-line-height-em, 2)} - #{k-math-div( $kendo-button-inner-calc-size, 2 )} );
                 }
             }
 
@@ -1215,7 +1215,7 @@
 
     .k-columnmenu-item-wrapper + .k-columnmenu-item-wrapper {
         border-top: 1px solid;
-        border-top-color: $popup-border;
+        border-top-color: $kendo-popup-border;
     }
 
     .k-columnmenu-item-content {

@@ -3,9 +3,9 @@ $kendo-drawer-bg: $kendo-component-bg !default;
 $kendo-drawer-text: $kendo-component-text !default;
 $kendo-drawer-border: $kendo-component-border !default;
 $kendo-drawer-border-width: 1px !default;
-$kendo-drawer-font-family: $font-family !default;
-$kendo-drawer-font-size: $font-size !default;
-$kendo-drawer-line-height: $line-height !default;
+$kendo-drawer-font-family: $kendo-font-family !default;
+$kendo-drawer-font-size: $kendo-font-size-md !default;
+$kendo-drawer-line-height: $kendo-line-height-md !default;
 $kendo-drawer-content-padding-x: $kendo-padding-md-x !default;
 $kendo-drawer-content-padding-y: $kendo-padding-md-y !default;
 
@@ -18,7 +18,7 @@ $kendo-drawer-scrollbar-hover-color: rgba(156, 156, 156, 1) !default;
 $kendo-drawer-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-drawer-item-padding-y: $kendo-padding-md-x !default;
 $kendo-drawer-item-font-size: 16px !default;
-$kendo-drawer-item-line-height: $line-height-lg !default;
+$kendo-drawer-item-line-height: $kendo-line-height-lg !default;
 
 $kendo-drawer-item-level-padding-x: $kendo-drawer-item-padding-x !default;
 $kendo-drawer-item-level-count: 5 !default;

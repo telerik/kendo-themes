@@ -1,33 +1,33 @@
 // Expansion panel
-$expander-spacing-y: k-map-get( $kendo-spacing, 3 ) !default;
-$expander-font-family: $font-family !default;
-$expander-font-size: $font-size !default;
-$expander-line-height: $line-height !default;
-$expander-border-width: 1px !default;
+$kendo-expander-spacing-y: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-expander-font-family: $kendo-font-family !default;
+$kendo-expander-font-size: $kendo-font-size-md !default;
+$kendo-expander-line-height: $kendo-line-height-md !default;
+$kendo-expander-border-width: 1px !default;
 
-$expander-header-padding-x: k-map-get( $kendo-spacing, 6 ) !default;
-$expander-header-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-expander-header-padding-x: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-expander-header-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 
-$expander-indicator-margin-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-expander-indicator-margin-x: k-map-get( $kendo-spacing, 3 ) !default;
 
-$expander-bg: $kendo-component-bg !default;
-$expander-text: $kendo-component-text !default;
-$expander-border: $kendo-component-border !default;
+$kendo-expander-bg: $kendo-component-bg !default;
+$kendo-expander-text: $kendo-component-text !default;
+$kendo-expander-border: $kendo-component-border !default;
 
-$expander-focus-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
+$kendo-expander-focus-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
 
-$expander-header-bg: transparent !default;
-$expander-header-text: $expander-text !default;
-$expander-header-border: null !default;
+$kendo-expander-header-bg: transparent !default;
+$kendo-expander-header-text: $kendo-expander-text !default;
+$kendo-expander-header-border: null !default;
 
-$expander-header-hover-bg: rgba( black, .04 ) !default;
+$kendo-expander-header-hover-bg: rgba( black, .04 ) !default;
 
-$expander-header-focus-bg: rgba( black, .12 ) !default;
-$expander-header-focus-shadow: none !default;
+$kendo-expander-header-focus-bg: rgba( black, .12 ) !default;
+$kendo-expander-header-focus-shadow: none !default;
 
-$expander-title-text: $kendo-color-secondary !default;
+$kendo-expander-title-text: $kendo-color-secondary !default;
 
-$expander-header-sub-title-text: $kendo-subtle-text !default;
+$kendo-expander-header-sub-title-text: $kendo-subtle-text !default;
 
-$expander-content-padding-x: k-map-get( $kendo-spacing, 6 ) !default;
-$expander-content-padding-y: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-expander-content-padding-x: k-map-get( $kendo-spacing, 6 ) !default;
+$kendo-expander-content-padding-y: k-map-get( $kendo-spacing, 6 ) !default;

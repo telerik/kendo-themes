@@ -2,13 +2,13 @@
 
     // Base
     .k-mediaplayer {
-        border-width: $mediaplayer-border-width;
+        border-width: $kendo-media-player-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $mediaplayer-font-family;
-        font-size: $mediaplayer-font-size;
-        line-height: $mediaplayer-line-height;
+        font-family: $kendo-media-player-font-family;
+        font-size: $kendo-media-player-font-size;
+        line-height: $kendo-media-player-line-height;
         display: block;
         position: relative;
         -webkit-touch-callout: none;
@@ -31,7 +31,7 @@
 
     // Title bar
     .k-mediaplayer-titlebar {
-        padding: $mediaplayer-titlebar-padding-y $mediaplayer-titlebar-padding-x;
+        padding: $kendo-media-player-titlebar-padding-y $kendo-media-player-titlebar-padding-x;
         position: absolute;
         z-index: 2;
         top: 0;

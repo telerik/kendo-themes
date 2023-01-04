@@ -3,47 +3,47 @@
 
 /// Font family of the color palette.
 /// @group colorpalette
-$kendo-colorpalette-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-color-palette-font-family: var( --kendo-font-family, inherit ) !default;
 /// Font size of the color palette.
 /// @group colorpalette
-$kendo-colorpalette-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-color-palette-font-size: var( --kendo-font-size, inherit ) !default;
 /// Line height of the color palette.
 /// @group colorpalette
-$kendo-colorpalette-line-height: 0 !default;
+$kendo-color-palette-line-height: 0 !default;
 
 /// Outline width of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-outline-width: 1px !default;
+$kendo-color-palette-tile-outline-width: 1px !default;
 /// Outline style of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-outline-style: solid !default;
+$kendo-color-palette-tile-outline-style: solid !default;
 /// Outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-outline: transparent !default;
+$kendo-color-palette-tile-outline: transparent !default;
 /// Width of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-width: map.get( $kendo-spacing, 6 ) !default;
+$kendo-color-palette-tile-width: map.get( $kendo-spacing, 6 ) !default;
 /// Height of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-height: $kendo-colorpalette-tile-width !default;
+$kendo-color-palette-tile-height: $kendo-color-palette-tile-width !default;
 /// Focus outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-focus-outline: get-theme-color-var( neutral-130 ) !default;
+$kendo-color-palette-tile-focus-outline: get-theme-color-var( neutral-130 ) !default;
 /// Focus shadow of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-focus-shadow: inset 0 0 0 2px $kendo-color-white !default;
+$kendo-color-palette-tile-focus-shadow: inset 0 0 0 2px $kendo-color-white !default;
 /// Hover outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-hover-outline: get-theme-color-var( neutral-20 ) !default;
+$kendo-color-palette-tile-hover-outline: get-theme-color-var( neutral-20 ) !default;
 /// Hover shadow of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-hover-shadow: inset 0 0 0 2px $kendo-colorpalette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white !default;
+$kendo-color-palette-tile-hover-shadow: inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white !default;
 /// Selected outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-selected-outline: $kendo-colorpalette-tile-hover-outline !default;
+$kendo-color-palette-tile-selected-outline: $kendo-color-palette-tile-hover-outline !default;
 /// Selected shadow of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-selected-shadow: $kendo-colorpalette-tile-hover-shadow !default;
+$kendo-color-palette-tile-selected-shadow: $kendo-color-palette-tile-hover-shadow !default;
 /// Selected hover outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-selected-hover-outline: $kendo-colorpalette-tile-focus-outline !default;
+$kendo-color-palette-tile-selected-hover-outline: $kendo-color-palette-tile-focus-outline !default;

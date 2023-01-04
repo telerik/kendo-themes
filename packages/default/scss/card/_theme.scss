@@ -3,11 +3,11 @@
     // Card
     .k-card {
         @include fill(
-            $card-text,
-            $card-bg,
-            $card-border
+            $kendo-card-text,
+            $kendo-card-bg,
+            $kendo-card-border
         );
-        @include box-shadow( $card-shadow );
+        @include box-shadow( $kendo-card-shadow );
 
         .k-card-inner {
             background-color: inherit;
@@ -17,47 +17,47 @@
         &:focus,
         &.k-focus {
             @include fill(
-                $card-focus-text,
-                $card-focus-bg,
-                $card-focus-border
+                $kendo-card-focus-text,
+                $kendo-card-focus-bg,
+                $kendo-card-focus-border
             );
-            @include focus-indicator( $card-focus-shadow );
+            @include focus-indicator( $kendo-card-focus-shadow );
         }
 
         &.k-selected {
-            @include box-shadow( $card-focus-shadow );
+            @include box-shadow( $kendo-card-focus-shadow );
         }
     }
 
 
     // Card actions
     .k-card-actions {
-        border-color: $card-border;
+        border-color: $kendo-card-border;
     }
 
 
     // Header
     .k-card-header {
-        @include fill( $card-header-text, $card-header-bg, $card-header-border );
+        @include fill( $kendo-card-header-text, $kendo-card-header-bg, $kendo-card-header-border );
     }
 
 
     // Footer
     .k-card-footer {
-        @include fill( $card-footer-text, $card-footer-bg, $card-footer-border );
+        @include fill( $kendo-card-footer-text, $kendo-card-footer-bg, $kendo-card-footer-border );
     }
 
 
     // Separator
     .k-card-separator,
     .k-card .k-separator {
-        border-color: $card-border;
+        border-color: $kendo-card-border;
     }
 
 
     // TODO: refactor
     .k-card-subtitle {
-        color: $card-subtitle-text;
+        color: $kendo-card-subtitle-text;
     }
 
 
@@ -80,7 +80,7 @@
         &.k-focus,
         &.k-selected {
             > .k-card {
-                @include focus-indicator( $card-focus-shadow );
+                @include focus-indicator( $kendo-card-focus-shadow );
             }
         }
     }

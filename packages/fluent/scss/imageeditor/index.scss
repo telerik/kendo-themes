@@ -22,7 +22,7 @@ $_kendo-module-meta: (
 // Expose
 @mixin imageeditor-styles() {
     @include module.render( "imageeditor" ) {
-        @include kendo-imageeditor--layout();
-        @include kendo-imageeditor--theme();
+        @include kendo-image-editor--layout();
+        @include kendo-image-editor--theme();
     }
 }

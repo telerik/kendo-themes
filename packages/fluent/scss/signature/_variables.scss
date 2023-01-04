@@ -16,15 +16,15 @@ $kendo-signature-maximized-height: 252px !default;
 /// The horizontal paddings of the signature component.
 /// @group signature
 $kendo-signature-padding-x: map.get( $kendo-spacing, 1 ) !default;
-$kendo-signature-padding-x-sm: $kendo-signature-padding-x !default;
-$kendo-signature-padding-x-md: $kendo-signature-padding-x !default;
-$kendo-signature-padding-x-lg: $kendo-signature-padding-x !default;
+$kendo-signature-sm-padding-x: $kendo-signature-padding-x !default;
+$kendo-signature-md-padding-x: $kendo-signature-padding-x !default;
+$kendo-signature-lg-padding-x: $kendo-signature-padding-x !default;
 /// The vertical paddings of the signature component.
 /// @group signature
 $kendo-signature-padding-y: $kendo-signature-padding-x !default;
-$kendo-signature-padding-y-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-$kendo-signature-padding-y-md: map-get( $kendo-spacing, 1 ) !default;
-$kendo-signature-padding-y-lg: map.get( $kendo-spacing, 1.5 ) !default;
+$kendo-signature-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-signature-md-padding-y: map-get( $kendo-spacing, 1 ) !default;
+$kendo-signature-lg-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// The opacity of the disabled signature component.
 /// @group signature
@@ -45,9 +45,9 @@ $kendo-signature-line-disabled-color: get-theme-color-var( neutral-60 ) !default
 /// The width of the row line of the signature component.
 /// @group signature
 $kendo-signature-line-size: calc( 100% - 2 * #{$kendo-signature-padding-x} ) !default;
-$kendo-signature-line-size-sm: calc( 100% - 2 * #{$kendo-signature-padding-x-sm} ) !default;
-$kendo-signature-line-size-md: calc( 100% - 2 * #{$kendo-signature-padding-x-md} ) !default;
-$kendo-signature-line-size-lg: calc( 100% - 2 * #{$kendo-signature-padding-x-lg} ) !default;
+$kendo-signature-sm-line-size: calc( 100% - 2 * #{$kendo-signature-sm-padding-x} ) !default;
+$kendo-signature-md-line-size: calc( 100% - 2 * #{$kendo-signature-md-padding-x} ) !default;
+$kendo-signature-lg-line-size: calc( 100% - 2 * #{$kendo-signature-lg-padding-x} ) !default;
 /// The bottom offset of the row line of the signature component.
 /// @group signature
 $kendo-signature-line-bottom-offset: 33% !default;
@@ -56,19 +56,19 @@ $kendo-signature-line-bottom-offset: 33% !default;
 /// @group signature
 $kendo-signature-sizes: (
     sm: (
-        padding-x: $kendo-signature-padding-x-sm,
-        padding-y: $kendo-signature-padding-y-sm,
-        line-size: $kendo-signature-line-size-sm
+        padding-x: $kendo-signature-sm-padding-x,
+        padding-y: $kendo-signature-sm-padding-y,
+        line-size: $kendo-signature-sm-line-size
     ),
     md: (
-        padding-x: $kendo-signature-padding-x-md,
-        padding-y: $kendo-signature-padding-y-md,
-        line-size: $kendo-signature-line-size-md
+        padding-x: $kendo-signature-md-padding-x,
+        padding-y: $kendo-signature-md-padding-y,
+        line-size: $kendo-signature-md-line-size
     ),
     lg: (
-        padding-x: $kendo-signature-padding-x-lg,
-        padding-y: $kendo-signature-padding-y-lg,
-        line-size: $kendo-signature-line-size-lg
+        padding-x: $kendo-signature-lg-padding-x,
+        padding-y: $kendo-signature-lg-padding-y,
+        line-size: $kendo-signature-lg-line-size
     )
 ) !default;
 

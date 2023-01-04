@@ -5,16 +5,16 @@
 
 $kendo-window-border-width: 1px !default;
 $kendo-window-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-window-font-family: $font-family !default;
-$kendo-window-font-size: $font-size !default;
-$kendo-window-line-height: $line-height !default;
+$kendo-window-font-family: $kendo-font-family !default;
+$kendo-window-font-size: $kendo-font-size-md !default;
+$kendo-window-line-height: $kendo-line-height-md !default;
 
 $kendo-window-titlebar-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-window-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-window-titlebar-border-width: 0 0 1px !default;
 $kendo-window-titlebar-border-style: solid !default;
 
-$kendo-window-title-font-size: $font-size-lg !default;
+$kendo-window-title-font-size: $kendo-font-size-lg !default;
 $kendo-window-title-line-height: 1.25 !default;
 
 $kendo-window-actions-gap: null !default;
@@ -25,8 +25,8 @@ $kendo-window-action-hover-opacity: null !default;
 $kendo-window-inner-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-window-inner-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 
-$kendo-window-buttongroup-padding-x: $actions-padding-x !default;
-$kendo-window-buttongroup-padding-y: $actions-padding-y !default;
+$kendo-window-buttongroup-padding-x: $kendo-actions-padding-x !default;
+$kendo-window-buttongroup-padding-y: $kendo-actions-padding-y !default;
 $kendo-window-buttongroup-border-width: 1px !default;
 
 $kendo-window-bg: $kendo-component-bg !default;

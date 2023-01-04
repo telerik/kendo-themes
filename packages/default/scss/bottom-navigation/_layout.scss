@@ -2,20 +2,20 @@
 
     // Bottom Navigation
     .k-bottom-nav {
-        padding: $bottom-nav-padding-y $bottom-nav-padding-x;
+        padding: $kendo-bottom-nav-padding-y $kendo-bottom-nav-padding-x;
         width: 100%;
         border-width: 0;
         border-style: solid;
         border-color: transparent;
         box-sizing: border-box;
-        font-size: $bottom-nav-font-size;
-        line-height: $bottom-nav-line-height;
-        font-family: $bottom-nav-font-family;
-        letter-spacing: $bottom-nav-letter-spacing;
+        font-size: $kendo-bottom-nav-font-size;
+        line-height: $kendo-bottom-nav-line-height;
+        font-family: $kendo-bottom-nav-font-family;
+        letter-spacing: $kendo-bottom-nav-letter-spacing;
         display: flex;
         flex-flow: row nowrap;
         white-space: nowrap;
-        gap: $bottom-nav-gap;
+        gap: $kendo-bottom-nav-gap;
         overflow: hidden;
         outline: none;
         -webkit-touch-callout: none;
@@ -29,28 +29,28 @@
     }
 
     .k-bottom-nav-border {
-        border-width: $bottom-nav-border-width;
+        border-width: $kendo-bottom-nav-border-width;
     }
 
     .k-bottom-nav-shadow {
-        box-shadow: $bottom-nav-shadow;
+        box-shadow: $kendo-bottom-nav-shadow;
     }
 
     // Items
     .k-bottom-nav-item {
-        padding: $bottom-nav-item-padding-y $bottom-nav-item-padding-x;
-        min-width: $bottom-nav-item-min-width;
-        max-width: $bottom-nav-item-max-width;
-        min-height: $bottom-nav-item-min-height;
+        padding: $kendo-bottom-nav-item-padding-y $kendo-bottom-nav-item-padding-x;
+        min-width: $kendo-bottom-nav-item-min-width;
+        max-width: $kendo-bottom-nav-item-max-width;
+        min-height: $kendo-bottom-nav-item-min-height;
         border-width: 0;
-        border-radius: $bottom-nav-item-border-radius;
+        border-radius: $kendo-bottom-nav-item-border-radius;
         box-sizing: border-box;
         font: inherit;
         display: inline-flex;
         flex: 1 1 auto;
         align-items: center;
         justify-content: center;
-        gap: $bottom-nav-item-gap;
+        gap: $kendo-bottom-nav-item-gap;
         text-decoration: none;
         cursor: pointer;
         color: inherit;
@@ -68,8 +68,8 @@
         }
 
         > .k-bottom-nav-link {
-            margin: (-$bottom-nav-item-padding-y) (-$bottom-nav-item-padding-x);
-            padding: $bottom-nav-item-padding-y $bottom-nav-item-padding-x;
+            margin: (-$kendo-bottom-nav-item-padding-y) (-$kendo-bottom-nav-item-padding-x);
+            padding: $kendo-bottom-nav-item-padding-y $kendo-bottom-nav-item-padding-x;
             width: 100%;
             color: inherit;
             display: flex;
@@ -85,7 +85,7 @@
     }
 
     .k-bottom-nav-item-icon {
-        font-size: $bottom-nav-item-icon-size;
+        font-size: $kendo-bottom-nav-item-icon-size;
     }
 
     .k-bottom-nav-item-text {

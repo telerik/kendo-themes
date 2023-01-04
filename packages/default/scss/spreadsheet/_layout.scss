@@ -4,13 +4,13 @@
     .k-spreadsheet {
         width: 800px;
         height: 600px;
-        border-width: $spreadsheet-border-width;
+        border-width: $kendo-spreadsheet-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $spreadsheet-font-family;
-        font-size: $spreadsheet-font-size;
-        line-height: $spreadsheet-line-height;
+        font-family: $kendo-spreadsheet-font-family;
+        font-size: $kendo-spreadsheet-font-size;
+        line-height: $kendo-spreadsheet-line-height;
         display: flex;
         flex-direction: column;
         cursor: default;
@@ -43,7 +43,7 @@
 
     // Quick access toolbar
     .k-spreadsheet-quick-access-toolbar {
-        padding: $kendo-toolbar-padding-y-md;
+        padding: $kendo-toolbar-md-padding-y;
         display: inline-flex;
         flex-direction: row;
         position: absolute;
@@ -55,7 +55,7 @@
 
     // Tabstrip
     .k-spreadsheet-tabstrip {
-        padding-top: $kendo-toolbar-padding-y-md;
+        padding-top: $kendo-toolbar-md-padding-y;
         position: relative;
         z-index: 1;
     }
@@ -177,7 +177,7 @@
         min-width: 100px;
 
         .k-item {
-            padding: $kendo-list-item-padding-y-md $kendo-list-item-padding-x-md;
+            padding: $kendo-list-md-item-padding-y $kendo-list-md-item-padding-x;
         }
     }
     .k-syntax-func,
@@ -551,7 +551,7 @@
 
 @include exports( "spreadsheet/filter/layout" ) {
 
-    $filter-menu-padding-left: calc( #{$kendo-icon-size} + #{2 * $kendo-padding-md-y} );
+    $kendo-filter-menu-padding-left: calc( #{$kendo-icon-size} + #{2 * $kendo-padding-md-y} );
 
     // Filter button
     .k-spreadsheet .k-filter-wrapper {
@@ -590,7 +590,7 @@
                 color: inherit;
             }
             .k-link {
-                padding-left: $filter-menu-padding-left;
+                padding-left: $kendo-filter-menu-padding-left;
             }
             .k-icon {
                 margin-left: calc(-1 * ( #{$kendo-icon-size} + #{$kendo-padding-md-y} ) );
@@ -786,17 +786,17 @@
 
     // Insert image dialog
     .k-spreadsheet-insert-image-dialog {
-        @include border-radius( $spreadsheet-insert-image-dialog-preview-border-radius );
-        border-style: $spreadsheet-insert-image-dialog-border-style;
-        border-width: $spreadsheet-insert-image-dialog-border-width;
+        @include border-radius( $kendo-spreadsheet-insert-image-dialog-preview-border-radius );
+        border-style: $kendo-spreadsheet-insert-image-dialog-border-style;
+        border-width: $kendo-spreadsheet-insert-image-dialog-border-width;
 
         label {
             display: flex;
             justify-content: center;
             min-width: 100%;
-            width: $spreadsheet-insert-image-dialog-preview-width;
-            height: $spreadsheet-insert-image-dialog-preview-height;
-            background-image: url(k-map-get($data-uris, $spreadsheet-insert-image-dialog-preview-img));
+            width: $kendo-spreadsheet-insert-image-dialog-preview-width;
+            height: $kendo-spreadsheet-insert-image-dialog-preview-height;
+            background-image: url(k-map-get($_kendo-data-uris, $kendo-spreadsheet-insert-image-dialog-preview-img));
             background-size: auto 70%;
             background-position: 50% 30%;
             background-repeat: no-repeat;
@@ -804,7 +804,7 @@
             div {
                 display: flex;
                 align-self: flex-end;
-                margin-bottom: $spreadsheet-insert-image-dialog-text-margin-bottom;
+                margin-bottom: $kendo-spreadsheet-insert-image-dialog-text-margin-bottom;
                 pointer-events: none;
             }
 
@@ -843,8 +843,8 @@
         z-index: 101;
 
         &.k-spreadsheet-active-drawing {
-            outline-style: $spreadsheet-drawing-outline-style;
-            outline-width: $spreadsheet-drawing-outline-width;
+            outline-style: $kendo-spreadsheet-drawing-outline-style;
+            outline-width: $kendo-spreadsheet-drawing-outline-width;
         }
 
         .k-spreadsheet-drawing-image {
@@ -860,11 +860,11 @@
         }
 
         .k-spreadsheet-drawing-handle {
-            width: $spreadsheet-drawing-handle-width;
-            height: $spreadsheet-drawing-handle-height;
-            border-style: $spreadsheet-drawing-handle-border-style;
-            border-width: $spreadsheet-drawing-handle-border-width;
-            border-radius: $spreadsheet-drawing-handle-border-radius;
+            width: $kendo-spreadsheet-drawing-handle-width;
+            height: $kendo-spreadsheet-drawing-handle-height;
+            border-style: $kendo-spreadsheet-drawing-handle-border-style;
+            border-width: $kendo-spreadsheet-drawing-handle-border-width;
+            border-radius: $kendo-spreadsheet-drawing-handle-border-radius;
             position: absolute;
             transform: translate(-50%, -50%);
 
@@ -884,7 +884,7 @@
             .k-spreadsheet-has-image {
                 &:hover,
                 &.k-hover {
-                    border-radius: $spreadsheet-insert-image-dialog-preview-overlay-border-radius;
+                    border-radius: $kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius;
                 }
             }
         }

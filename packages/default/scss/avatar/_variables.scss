@@ -6,13 +6,13 @@ $kendo-avatar-border-width: 1px !default;
 
 /// Font family of the avatar.
 /// @group avatar
-$kendo-avatar-font-family: $font-family !default;
+$kendo-avatar-font-family: $kendo-font-family !default;
 /// Font size of the avatar.
 /// @group avatar
-$kendo-avatar-font-size: $font-size !default;
+$kendo-avatar-font-size: $kendo-font-size-md !default;
 /// Line height of the avatar.
 /// @group avatar
-$kendo-avatar-line-height: $line-height !default;
+$kendo-avatar-line-height: $kendo-line-height-md !default;
 
 /// The sizes of the avatar.
 /// @group avatar

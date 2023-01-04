@@ -1,13 +1,13 @@
 @include exports("adaptive/layout") {
 
     .k-pane-wrapper {
-        border-width: $adaptive-border-width;
+        border-width: $kendo-adaptive-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $adaptive-font-family;
-        font-size: $adaptive-font-size;
-        line-height: $adaptive-line-height;
+        font-family: $kendo-adaptive-font-family;
+        font-size: $kendo-adaptive-font-size;
+        line-height: $kendo-adaptive-line-height;
         display: block;
         position: relative;
         -webkit-touch-callout: none;
@@ -29,9 +29,9 @@
             border: 0;
             box-sizing: border-box;
             outline: 0;
-            font-family: $adaptive-font-family;
-            font-size: $adaptive-font-size;
-            line-height: $adaptive-line-height;
+            font-family: $kendo-adaptive-font-family;
+            font-size: $kendo-adaptive-font-size;
+            line-height: $kendo-adaptive-line-height;
             display: flex;
             height: 100%;
             width: 100%;
@@ -160,7 +160,7 @@
         }
 
         .k-scheduler-toolbar {
-            padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md;
+            padding: $kendo-toolbar-md-padding-y $kendo-toolbar-md-padding-x;
 
             > * {
                 margin: 0;
@@ -195,7 +195,7 @@
         }
 
         .k-scheduler-footer {
-            padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md;
+            padding: $kendo-toolbar-md-padding-y $kendo-toolbar-md-padding-x;
             display: flex;
             justify-content: space-between;
 
@@ -353,12 +353,12 @@
 
         .k-list-title,
         .k-filter-help-text {
-            padding: $listgroup-item-padding-y $listgroup-item-padding-x;
+            padding: $kendo-listgroup-item-padding-y $kendo-listgroup-item-padding-x;
             display: block;
         }
 
         .k-listgroup-title {
-            padding: $listgroup-item-padding-y $listgroup-item-padding-x;
+            padding: $kendo-listgroup-item-padding-y $kendo-listgroup-item-padding-x;
             font-weight: bold;
             text-transform: uppercase;
         }

@@ -39,7 +39,7 @@ $kendo-spreadsheet-sheets-remove-inline-end:  map.get( $kendo-spacing, 2 ) !defa
 
 /// Left padding of the spreadsheet sheets menu.
 /// @group spreadsheet
-$filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) ) !default;
+$kendo-filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) ) !default;
 
 /// Background color of the spreadsheet.
 /// @group spreadsheet

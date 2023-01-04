@@ -1,46 +1,46 @@
 // PDF viewer
 
-$pdf-viewer-border-width: 1px !default;
-$pdf-viewer-font-family: $font-family !default;
-$pdf-viewer-font-size: $font-size !default;
-$pdf-viewer-line-height: $line-height !default;
+$kendo-pdf-viewer-border-width: 1px !default;
+$kendo-pdf-viewer-font-family: $kendo-font-family !default;
+$kendo-pdf-viewer-font-size: $kendo-font-size-md !default;
+$kendo-pdf-viewer-line-height: $kendo-line-height-md !default;
 
-$pdf-viewer-bg: $kendo-component-bg !default;
-$pdf-viewer-text: $kendo-component-text !default;
-$pdf-viewer-border: $kendo-component-border !default;
+$kendo-pdf-viewer-bg: $kendo-component-bg !default;
+$kendo-pdf-viewer-text: $kendo-component-text !default;
+$kendo-pdf-viewer-border: $kendo-component-border !default;
 
-$pdf-viewer-toolbar-bg: k-try-shade( $kendo-button-bg, .25 ) !default;
-$pdf-viewer-toolbar-text: null !default;
-$pdf-viewer-toolbar-border: null !default;
-$pdf-viewer-toolbar-gradient: null !default;
+$kendo-pdf-viewer-toolbar-bg: k-try-shade( $kendo-button-bg, .25 ) !default;
+$kendo-pdf-viewer-toolbar-text: null !default;
+$kendo-pdf-viewer-toolbar-border: null !default;
+$kendo-pdf-viewer-toolbar-gradient: null !default;
 
-$pdf-viewer-canvas-bg: $kendo-app-bg !default;
-$pdf-viewer-canvas-text: null !default;
-$pdf-viewer-canvas-border: null !default;
+$kendo-pdf-viewer-canvas-bg: $kendo-app-bg !default;
+$kendo-pdf-viewer-canvas-text: null !default;
+$kendo-pdf-viewer-canvas-border: null !default;
 
-$pdf-viewer-page-spacing: 30px !default;
+$kendo-pdf-viewer-page-spacing: 30px !default;
 
-$pdf-viewer-page-bg: white !default;
-$pdf-viewer-page-text: $kendo-component-text !default;
-$pdf-viewer-page-border: $kendo-component-border !default;
-$pdf-viewer-page-shadow: 0 0 k-math-div( $pdf-viewer-page-spacing, 2 ) $pdf-viewer-page-border !default;
+$kendo-pdf-viewer-page-bg: white !default;
+$kendo-pdf-viewer-page-text: $kendo-component-text !default;
+$kendo-pdf-viewer-page-border: $kendo-component-border !default;
+$kendo-pdf-viewer-page-shadow: 0 0 k-math-div( $kendo-pdf-viewer-page-spacing, 2 ) $kendo-pdf-viewer-page-border !default;
 
-$pdf-viewer-search-panel-border-width: 1px !default;
-$pdf-viewer-search-panel-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
-$pdf-viewer-search-panel-bg: $kendo-component-bg !default;
-$pdf-viewer-search-panel-text: $kendo-component-text !default;
-$pdf-viewer-search-panel-border: $kendo-component-border !default;
-$pdf-viewer-search-panel-shadow: $kendo-window-shadow !default;
-$pdf-viewer-search-panel-matches-spacing: $kendo-padding-sm-x !default;
+$kendo-pdf-viewer-search-panel-border-width: 1px !default;
+$kendo-pdf-viewer-search-panel-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-pdf-viewer-search-panel-bg: $kendo-component-bg !default;
+$kendo-pdf-viewer-search-panel-text: $kendo-component-text !default;
+$kendo-pdf-viewer-search-panel-border: $kendo-component-border !default;
+$kendo-pdf-viewer-search-panel-shadow: $kendo-window-shadow !default;
+$kendo-pdf-viewer-search-panel-matches-spacing: $kendo-padding-sm-x !default;
 
-$pdf-viewer-search-dialog-padding-x: $kendo-toolbar-padding-x-md !default;
-$pdf-viewer-search-dialog-padding-y: calc( #{$kendo-toolbar-padding-x-md} * 2 ) !default;
-$pdf-viewer-search-dialog-spacing: $kendo-toolbar-spacing-md !default;
+$kendo-pdf-viewer-search-dialog-padding-x: $kendo-toolbar-md-padding-x !default;
+$kendo-pdf-viewer-search-dialog-padding-y: calc( #{$kendo-toolbar-md-padding-x} * 2 ) !default;
+$kendo-pdf-viewer-search-dialog-spacing: $kendo-toolbar-md-spacing !default;
 
-$pdf-viewer-selection-line-height: $line-height-sm !default;
+$kendo-pdf-viewer-selection-line-height: $kendo-line-height-sm !default;
 
-$pdf-viewer-search-highlight-bg: $kendo-body-text !default;
-$pdf-viewer-search-highlight-mark-bg: yellow !default;
+$kendo-pdf-viewer-search-highlight-bg: $kendo-body-text !default;
+$kendo-pdf-viewer-search-highlight-mark-bg: yellow !default;
 
-$pdf-viewer-icon-text: $dropzone-icon-text !default;
-$pdf-viewer-icon-size: calc( #{$kendo-icon-size} * 3 ) !default;
+$kendo-pdf-viewer-icon-text: $kendo-dropzone-icon-text !default;
+$kendo-pdf-viewer-icon-size: calc( #{$kendo-icon-size} * 3 ) !default;

@@ -13,8 +13,8 @@ $kendo-form-font-size: var( --kendo-font-size, inherit ) !default;
 /// @group form
 $kendo-form-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-form-line-height-em: $kendo-line-height-em !default;
-$kendo-form-line-height-sm: var( --kendo-line-height-sm, normal ) !default;
-$kendo-form-line-height-lg: var( --kendo-line-height-lg, normal ) !default;
+$kendo-form-sm-line-height: var( --kendo-line-height-sm, normal ) !default;
+$kendo-form-lg-line-height: var( --kendo-line-height-lg, normal ) !default;
 
 /// The margin of the form fieldset
 /// @group form
@@ -87,13 +87,13 @@ $kendo-form-hint-text: get-theme-color-var( neutral-130 ) !default;
 
 /// Form row small size spacing
 /// @group form
-$kendo-form-rows-spacing-sm: map.get( $kendo-spacing, 3 ) !default;
+$kendo-form-sm-rows-spacing: map.get( $kendo-spacing, 3 ) !default;
 /// Form row medium size spacing
 /// @group form
-$kendo-form-rows-spacing-md: $kendo-form-rows-spacing-sm !default;
+$kendo-form-md-rows-spacing: $kendo-form-sm-rows-spacing !default;
 /// Form row large size spacing
 /// @group form
-$kendo-form-rows-spacing-lg: $kendo-form-rows-spacing-sm !default;
+$kendo-form-lg-rows-spacing: $kendo-form-sm-rows-spacing !default;
 
 /// The margin of the form separator
 /// @group form
@@ -152,12 +152,12 @@ $kendo-fieldset-legend-border: initial !default;
 // Sizes
 $kendo-form-sizes: (
     sm: (
-        form-rows-spacing: $kendo-form-rows-spacing-sm
+        form-rows-spacing: $kendo-form-sm-rows-spacing
     ),
     md: (
-        form-rows-spacing: $kendo-form-rows-spacing-md
+        form-rows-spacing: $kendo-form-md-rows-spacing
     ),
     lg: (
-        form-rows-spacing: $kendo-form-rows-spacing-lg
+        form-rows-spacing: $kendo-form-lg-rows-spacing
     )
 ) !default;

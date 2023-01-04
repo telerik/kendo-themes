@@ -7,9 +7,9 @@
         box-sizing: border-box;
         outline: 0;
         background: none;
-        font-family: $rating-font-family;
-        font-size: $rating-font-size;
-        line-height: $rating-line-height;
+        font-family: $kendo-rating-font-family;
+        font-size: $kendo-rating-font-size;
+        line-height: $kendo-rating-line-height;
         display: inline-flex;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
@@ -28,12 +28,12 @@
     .k-rating-container {
         flex: 0 1 auto;
         position: relative;
-        margin: 0 $rating-container-margin-x;
+        margin: 0 $kendo-rating-container-margin-x;
 
         .k-rating-item {
             display: inline-flex;
             position: relative;
-            padding: $rating-item-padding-y $rating-item-padding-x;
+            padding: $kendo-rating-item-padding-y $kendo-rating-item-padding-x;
             align-items: center;
             vertical-align: middle;
             margin: 0;
@@ -46,15 +46,15 @@
             }
 
             .k-icon {
-                font-size: $rating-icon-size;
+                font-size: $kendo-rating-icon-size;
             }
 
             .k-rating-precision-part,
             .k-rating-precision-complement {
                 display: inherit;
                 position: absolute;
-                top: $rating-item-padding-y;
-                left: $rating-item-padding-x;
+                top: $kendo-rating-item-padding-y;
+                left: $kendo-rating-item-padding-x;
                 overflow: hidden;
             }
 
@@ -72,15 +72,15 @@
         display: inline-flex;
         align-items: center;
         vertical-align: middle;
-        line-height: $rating-label-line-height;
-        margin: $rating-label-margin-y $rating-label-margin-x;
+        line-height: $kendo-rating-label-line-height;
+        margin: $kendo-rating-label-margin-y $kendo-rating-label-margin-x;
     }
 
     .k-rtl,
     [dir="rtl"] {
         .k-rating-precision-part {
             left: auto;
-            right: $rating-item-padding-x;
+            right: $kendo-rating-item-padding-x;
         }
 
         .k-rating-item .k-rating-precision-complement {

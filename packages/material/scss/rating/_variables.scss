@@ -1,24 +1,24 @@
 // Rating
 
-$rating-font-family: $font-family !default;
-$rating-font-size: $font-size !default;
-$rating-line-height: $line-height !default;
+$kendo-rating-font-family: $kendo-font-family !default;
+$kendo-rating-font-size: $kendo-font-size-md !default;
+$kendo-rating-line-height: $kendo-line-height-md !default;
 
-$rating-container-margin-x: k-math-div( $kendo-padding-sm-x, 2 ) !default;
+$kendo-rating-container-margin-x: k-math-div( $kendo-padding-sm-x, 2 ) !default;
 
-$rating-item-padding-x: k-math-div( $kendo-padding-sm-x, 2 ) !default;
-$rating-item-padding-y: $kendo-padding-md-y !default;
+$kendo-rating-item-padding-x: k-math-div( $kendo-padding-sm-x, 2 ) !default;
+$kendo-rating-item-padding-y: $kendo-padding-md-y !default;
 
-$rating-label-margin-x: $kendo-padding-sm-x !default;
-$rating-label-margin-y: $kendo-padding-md-y !default;
-$rating-label-line-height: $line-height-lg !default;
+$kendo-rating-label-margin-x: $kendo-padding-sm-x !default;
+$kendo-rating-label-margin-y: $kendo-padding-md-y !default;
+$kendo-rating-label-line-height: $kendo-line-height-lg !default;
 
-$rating-icon-size: ($kendo-icon-size * 1.5) !default;
+$kendo-rating-icon-size: ($kendo-icon-size * 1.5) !default;
 
-$rating-icon-text: $kendo-subtle-text !default;
-$rating-icon-selected-text: $kendo-color-primary-darker !default;
-$rating-icon-hover-text: $kendo-color-primary-darker !default;
-$rating-icon-focus-text: $kendo-color-primary-darker !default;
+$kendo-rating-icon-text: $kendo-subtle-text !default;
+$kendo-rating-icon-selected-text: $kendo-color-primary-darker !default;
+$kendo-rating-icon-hover-text: $kendo-color-primary-darker !default;
+$kendo-rating-icon-focus-text: $kendo-color-primary-darker !default;
 
-$rating-icon-focus-shadow: 0 2px 4px rgba( black, .1 ) !default;
-$rating-icon-focus-selected-shadow: 0 2px 4px rgba( black, .1) !default;
+$kendo-rating-icon-focus-shadow: 0 2px 4px rgba( black, .1 ) !default;
+$kendo-rating-icon-focus-selected-shadow: 0 2px 4px rgba( black, .1) !default;

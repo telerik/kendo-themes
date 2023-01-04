@@ -16,8 +16,8 @@
     // Split button arrow
     .k-split-button-arrow {
         width: auto;
-        padding-inline: var( --kendo-split-button-arrow-padding-x, #{$kendo-split-button-arrow-padding-x-md} );
-        padding-block: var( --kendo-split-button-arrow-padding-y , #{$kendo-split-button-arrow-padding-y-md} );
+        padding-inline: var( --kendo-split-button-arrow-padding-x, #{$kendo-split-button-md-arrow-padding-x} );
+        padding-block: var( --kendo-split-button-arrow-padding-y , #{$kendo-split-button-md-arrow-padding-y} );
         aspect-ratio: auto;
         flex: none;
 

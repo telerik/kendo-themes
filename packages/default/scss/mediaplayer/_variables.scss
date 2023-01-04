@@ -1,16 +1,16 @@
 // Media player
-$mediaplayer-border-width: 1px !default;
-$mediaplayer-font-family: $font-family !default;
-$mediaplayer-font-size: $font-size !default;
-$mediaplayer-line-height: $line-height !default;
+$kendo-media-player-border-width: 1px !default;
+$kendo-media-player-font-family: $kendo-font-family !default;
+$kendo-media-player-font-size: $kendo-font-size-md !default;
+$kendo-media-player-line-height: $kendo-line-height-md !default;
 
-$mediaplayer-bg: $kendo-component-bg !default;
-$mediaplayer-text: $kendo-component-text !default;
-$mediaplayer-border: $kendo-component-border !default;
+$kendo-media-player-bg: $kendo-component-bg !default;
+$kendo-media-player-text: $kendo-component-text !default;
+$kendo-media-player-border: $kendo-component-border !default;
 
-$mediaplayer-titlebar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$mediaplayer-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$mediaplayer-titlebar-bg: null !default;
-$mediaplayer-titlebar-text: $mediaplayer-bg !default;
-$mediaplayer-titlebar-border: null !default;
-$mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplayer-text, 0 ) !default;
+$kendo-media-player-titlebar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-media-player-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-media-player-titlebar-bg: null !default;
+$kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
+$kendo-media-player-titlebar-border: null !default;
+$kendo-media-player-titlebar-gradient: rgba( $kendo-media-player-text, .7 ), rgba( $kendo-media-player-text, 0 ) !default;

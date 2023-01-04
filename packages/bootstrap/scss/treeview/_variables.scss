@@ -1,23 +1,20 @@
-@import "../typography/_variables.scss";
-
-
 // Treeview
 
 /// Font family of the treeview component.
 /// @group treeview
-$kendo-treeview-font-family: $font-family !default;
+$kendo-treeview-font-family: $kendo-font-family !default;
 /// Font size of the treeview component.
 /// @group treeview
-$kendo-treeview-font-size: $font-size-md !default;
-$kendo-treeview-font-size-sm: $font-size-sm !default;
-$kendo-treeview-font-size-md: $font-size-md !default;
-$kendo-treeview-font-size-lg: $font-size-md !default;
+$kendo-treeview-font-size: $kendo-font-size-md !default;
+$kendo-treeview-sm-font-size: $kendo-font-size-sm !default;
+$kendo-treeview-md-font-size: $kendo-font-size-md !default;
+$kendo-treeview-lg-font-size: $kendo-font-size-md !default;
 /// Line height of the treeview component.
 /// @group treeview
-$kendo-treeview-line-height: $line-height !default;
-$kendo-treeview-line-height-sm: k-math-div( 20, 14 ) !default;
-$kendo-treeview-line-height-md: $line-height !default;
-$kendo-treeview-line-height-lg: $line-height !default;
+$kendo-treeview-line-height: $kendo-line-height-md !default;
+$kendo-treeview-sm-line-height: k-math-div( 20, 14 ) !default;
+$kendo-treeview-md-line-height: $kendo-line-height-md !default;
+$kendo-treeview-lg-line-height: $kendo-line-height-md !default;
 
 /// Indentation of child groups in treeview component.
 /// @group treeview
@@ -26,15 +23,15 @@ $kendo-treeview-indent: 16px !default;
 /// Horizontal padding of treeview items.
 /// @group treeview
 $kendo-treeview-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
-$kendo-treeview-item-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-treeview-item-padding-x-md: k-map-get( $kendo-spacing, 3 ) !default;
-$kendo-treeview-item-padding-x-lg: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-treeview-sm-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-md-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-treeview-lg-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
 $kendo-treeview-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-treeview-item-padding-y-sm: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-treeview-item-padding-y-md: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-treeview-item-padding-y-lg: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-sm-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-md-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-treeview-lg-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 /// Border width of treeview items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0px !default;
@@ -47,22 +44,22 @@ $kendo-treeview-item-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 /// @group treeview
 $kendo-treeview-sizes: (
     sm: (
-        font-size: $kendo-treeview-font-size-sm,
-        line-height: $kendo-treeview-line-height-sm,
-        item-padding-x: $kendo-treeview-item-padding-x-sm,
-        item-padding-y: $kendo-treeview-item-padding-y-sm
+        font-size: $kendo-treeview-sm-font-size,
+        line-height: $kendo-treeview-sm-line-height,
+        item-padding-x: $kendo-treeview-sm-item-padding-x,
+        item-padding-y: $kendo-treeview-sm-item-padding-y
     ),
     md: (
-        font-size: $kendo-treeview-font-size-md,
-        line-height: $kendo-treeview-line-height-md,
-        item-padding-x: $kendo-treeview-item-padding-x-md,
-        item-padding-y: $kendo-treeview-item-padding-y-md
+        font-size: $kendo-treeview-md-font-size,
+        line-height: $kendo-treeview-md-line-height,
+        item-padding-x: $kendo-treeview-md-item-padding-x,
+        item-padding-y: $kendo-treeview-md-item-padding-y
     ),
     lg: (
-        font-size: $kendo-treeview-font-size-lg,
-        line-height: $kendo-treeview-line-height-lg,
-        item-padding-x: $kendo-treeview-item-padding-x-lg,
-        item-padding-y: $kendo-treeview-item-padding-y-lg
+        font-size: $kendo-treeview-lg-font-size,
+        line-height: $kendo-treeview-lg-line-height,
+        item-padding-x: $kendo-treeview-lg-item-padding-x,
+        item-padding-y: $kendo-treeview-lg-item-padding-y
     )
 ) !default;
 
@@ -112,7 +109,7 @@ $kendo-treeview-item-focus-shadow: inset 0 0 0 2px rgba( $kendo-treeview-text, .
 $kendo-treeview-loadmore-bg: transparent !default;
 /// Text color of load more.
 /// @group treeview
-$kendo-treeview-loadmore-text: $link-text !default;
+$kendo-treeview-loadmore-text: $kendo-link-text !default;
 /// Border color of load more.
 /// @group treeview
 $kendo-treeview-loadmore-border: null !default;
@@ -122,7 +119,7 @@ $kendo-treeview-loadmore-border: null !default;
 $kendo-treeview-loadmore-hover-bg: transparent !default;
 /// Text color of a hovered load more.
 /// @group treeview
-$kendo-treeview-loadmore-hover-text: $link-hover-text !default;
+$kendo-treeview-loadmore-hover-text: $kendo-link-hover-text !default;
 /// Border color of a hovered load more.
 /// @group treeview
 $kendo-treeview-loadmore-hover-border: null !default;
@@ -132,7 +129,7 @@ $kendo-treeview-loadmore-hover-border: null !default;
 $kendo-treeview-loadmore-focus-bg: transparent !default;
 /// Text color of a focused load more.
 /// @group treeview
-$kendo-treeview-loadmore-focus-text: $link-hover-text !default;
+$kendo-treeview-loadmore-focus-text: $kendo-link-hover-text !default;
 /// Border color of a focused load more.
 /// @group treeview
 $kendo-treeview-loadmore-focus-border: null !default;

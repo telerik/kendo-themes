@@ -3,16 +3,16 @@
     // ColorGradient
     .k-colorgradient {
         @include fill(
-            $colorgradient-text,
-            $colorgradient-bg,
-            $colorgradient-border
+            $kendo-color-gradient-text,
+            $kendo-color-gradient-bg,
+            $kendo-color-gradient-border
         );
     }
 
     .k-colorgradient:focus,
     .k-colorgradient.k-focus {
-        @include fill( $border: $colorgradient-focus-border );
-        @include focus-indicator( $colorgradient-focus-shadow );
+        @include fill( $border: $kendo-color-gradient-focus-border );
+        @include focus-indicator( $kendo-color-gradient-focus-shadow );
     }
 
     // Canvas
@@ -23,16 +23,16 @@
     // DragHandle
     .k-colorgradient .k-draghandle {
         @include fill(
-            $colorgradient-draghandle-text,
-            $colorgradient-draghandle-bg,
-            $colorgradient-draghandle-border
+            $kendo-color-gradient-draghandle-text,
+            $kendo-color-gradient-draghandle-bg,
+            $kendo-color-gradient-draghandle-border
         );
-        @include box-shadow( $colorgradient-draghandle-shadow );
+        @include box-shadow( $kendo-color-gradient-draghandle-shadow );
 
         &:focus,
         &.k-focus {
             @include fill( $bg: transparent, $border: $kendo-color-white );
-            @include focus-indicator( $colorgradient-draghandle-focus-shadow );
+            @include focus-indicator( $kendo-color-gradient-draghandle-focus-shadow );
         }
 
         &:hover,
@@ -40,7 +40,7 @@
         &.k-active,
         &:active {
             @include fill( $bg: transparent, $border: $kendo-color-white );
-            @include box-shadow( $colorgradient-draghandle-hover-shadow );
+            @include box-shadow( $kendo-color-gradient-draghandle-hover-shadow );
         }
     }
 
@@ -56,12 +56,12 @@
     }
 
     .k-colorgradient-slider.k-alpha-slider .k-slider-track::before {
-        background: url(k-map-get($data-uris, "alpha-slider-bgr.png")) center repeat;
+        background: url(k-map-get($_kendo-data-uris, "alpha-slider-bgr.png")) center repeat;
     }
 
     // Inputs
     .k-colorgradient-input-label {
-        @include fill( $color: $colorgradient-input-label-text );
+        @include fill( $color: $kendo-color-gradient-input-label-text );
     }
 
 }

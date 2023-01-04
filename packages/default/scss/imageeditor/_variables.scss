@@ -1,42 +1,42 @@
 // ImageEditor
-$imageeditor-margin-y: null !default;
-$imageeditor-margin-x: null !default;
-$imageeditor-padding-y: null !default;
-$imageeditor-padding-x: null !default;
+$kendo-image-editor-margin-y: null !default;
+$kendo-image-editor-margin-x: null !default;
+$kendo-image-editor-padding-y: null !default;
+$kendo-image-editor-padding-x: null !default;
 
-$imageeditor-border-width: 1px !default;
-$imageeditor-font-size: $font-size !default;
-$imageeditor-line-height: $line-height !default;
-$imageeditor-font-family: $font-family !default;
+$kendo-image-editor-border-width: 1px !default;
+$kendo-image-editor-font-size: $kendo-font-size-md !default;
+$kendo-image-editor-line-height: $kendo-line-height-md !default;
+$kendo-image-editor-font-family: $kendo-font-family !default;
 
-$imageeditor-content-border-width: 1px !default;
+$kendo-image-editor-content-border-width: 1px !default;
 
-$imageeditor-action-pane-padding-y: k-map-get( $kendo-spacing, 8 ) !default;
-$imageeditor-action-pane-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$imageeditor-action-pane-width: if( $imageeditor-content-border-width == null, 240px, calc(240px + #{$imageeditor-content-border-width}) ) !default;
+$kendo-image-editor-action-pane-padding-y: k-map-get( $kendo-spacing, 8 ) !default;
+$kendo-image-editor-action-pane-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-image-editor-action-pane-width: if( $kendo-image-editor-content-border-width == null, 240px, calc(240px + #{$kendo-image-editor-content-border-width}) ) !default;
 
-$imageeditor-crop-border-width: 1px !default;
-$imageeditor-crop-border-style: dashed !default;
+$kendo-image-editor-crop-border-width: 1px !default;
+$kendo-image-editor-crop-border-style: dashed !default;
 
-$imageeditor-resize-handle-margin-x: 1px !default;
-$imageeditor-resize-handle-margin-y: 1px !default;
-$imageeditor-resize-handle-border-width: 0 2px 2px 0 !default;
-$imageeditor-resize-handle-size: 15px !default;
+$kendo-image-editor-resize-handle-margin-x: 1px !default;
+$kendo-image-editor-resize-handle-margin-y: 1px !default;
+$kendo-image-editor-resize-handle-border-width: 0 2px 2px 0 !default;
+$kendo-image-editor-resize-handle-size: 15px !default;
 
-$imageeditor-bg: $kendo-component-bg !default;
-$imageeditor-text: $kendo-component-text !default;
-$imageeditor-border: $kendo-component-border !default;
+$kendo-image-editor-bg: $kendo-component-bg !default;
+$kendo-image-editor-text: $kendo-component-text !default;
+$kendo-image-editor-border: $kendo-component-border !default;
 
-$imageeditor-content-bg: #c6c6c6 !default;
-$imageeditor-content-text: null !default;
-$imageeditor-content-border: null !default;
+$kendo-image-editor-content-bg: #c6c6c6 !default;
+$kendo-image-editor-content-text: null !default;
+$kendo-image-editor-content-border: null !default;
 
-$imageeditor-action-pane-bg: $base-bg !default;
-$imageeditor-action-pane-text: null !default;
-$imageeditor-action-pane-border: null !default;
+$kendo-image-editor-action-pane-bg: $kendo-base-bg !default;
+$kendo-image-editor-action-pane-text: null !default;
+$kendo-image-editor-action-pane-border: null !default;
 
-$imageeditor-crop-bg: null !default;
-$imageeditor-crop-text: null !default;
-$imageeditor-crop-border: white !default;
+$kendo-image-editor-crop-bg: null !default;
+$kendo-image-editor-crop-text: null !default;
+$kendo-image-editor-crop-border: white !default;
 
-$imageeditor-crop-overlay-bg: rgba(black, .3) !default;
+$kendo-image-editor-crop-overlay-bg: rgba(black, .3) !default;

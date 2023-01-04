@@ -56,19 +56,19 @@
 
     // Actionsheet
     .k-actionsheet {
-        padding-block: $actionsheet-padding-y;
-        padding-inline: $actionsheet-padding-y;
-        width: var( --kendo-actionsheet-width, #{$actionsheet-width} );
-        height: var( --kendo-actionsheet-height, #{$actionsheet-height} );
-        max-width: var( --kendo-actionsheet-max-width, #{$actionsheet-max-width} );
-        max-height: var( --kendo-actionsheet-max-height, #{$actionsheet-max-height} );
+        padding-block: $kendo-actionsheet-padding-y;
+        padding-inline: $kendo-actionsheet-padding-y;
+        width: var( --kendo-actionsheet-width, #{$kendo-actionsheet-width} );
+        height: var( --kendo-actionsheet-height, #{$kendo-actionsheet-height} );
+        max-width: var( --kendo-actionsheet-max-width, #{$kendo-actionsheet-max-width} );
+        max-height: var( --kendo-actionsheet-max-height, #{$kendo-actionsheet-max-height} );
         border-width: 0;
         border-style: solid;
         border-color: transparent;
         box-sizing: border-box;
-        font-size: $actionsheet-font-size;
-        font-family: $actionsheet-font-family;
-        line-height: $actionsheet-line-height;
+        font-size: $kendo-actionsheet-font-size;
+        font-family: $kendo-actionsheet-font-family;
+        line-height: $kendo-actionsheet-line-height;
         overflow: hidden;
         position: relative;
 
@@ -82,19 +82,19 @@
 
     // Actionsheet titlebar
     .k-actionsheet-titlebar {
-        padding: $actionsheet-titlebar-padding-y $actionsheet-titlebar-padding-x;
+        padding: $kendo-actionsheet-titlebar-padding-y $kendo-actionsheet-titlebar-padding-x;
         border-width: 0;
-        border-bottom-width: if( $actionsheet-titlebar-border-width, $actionsheet-titlebar-border-width, null );
+        border-bottom-width: if( $kendo-actionsheet-titlebar-border-width, $kendo-actionsheet-titlebar-border-width, null );
         border-style: solid;
         border-color: transparent;
-        font-size: $actionsheet-titlebar-font-size;
-        font-family: $actionsheet-titlebar-font-family;
-        line-height: $actionsheet-titlebar-line-height;
+        font-size: $kendo-actionsheet-titlebar-font-size;
+        font-family: $kendo-actionsheet-titlebar-font-family;
+        line-height: $kendo-actionsheet-titlebar-line-height;
         flex: none;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        gap: $actionsheet-titlebar-gap;
+        gap: $kendo-actionsheet-titlebar-gap;
     }
     .k-actionsheet-titlebar-group {
         display: flex;
@@ -106,8 +106,8 @@
         flex: 1;
     }
     .k-actionsheet-subtitle {
-        font-size: $actionsheet-subtitle-font-size;
-        line-height: $actionsheet-subtitle-line-height;
+        font-size: $kendo-actionsheet-subtitle-font-size;
+        line-height: $kendo-actionsheet-subtitle-line-height;
     }
     .k-actionsheet-actions {
         flex: none;
@@ -147,8 +147,8 @@
     }
     .k-actionsheet-action {
         margin: 0;
-        padding: $actionsheet-item-padding-y $actionsheet-item-padding-x;
-        min-height: $actionsheet-item-min-height;
+        padding: $kendo-actionsheet-item-padding-y $kendo-actionsheet-item-padding-x;
+        min-height: $kendo-actionsheet-item-min-height;
         box-sizing: border-box;
         color: inherit;
         text-decoration: none;
@@ -156,21 +156,21 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-start;
-        gap: $actionsheet-item-spacing;
+        gap: $kendo-actionsheet-item-spacing;
     }
     .k-actionsheet-item-icon {
-        font-size: $actionsheet-item-icon-size;
+        font-size: $kendo-actionsheet-item-icon-size;
     }
     .k-actionsheet-item-text {
         display: flex;
         flex-flow: column nowrap;
     }
     .k-actionsheet-item-title {
-        font-weight: $actionsheet-item-title-font-weight;
-        text-transform: $actionsheet-item-title-text-transform;
+        font-weight: $kendo-actionsheet-item-title-font-weight;
+        text-transform: $kendo-actionsheet-item-title-text-transform;
     }
     .k-actionsheet-item-description {
-        font-size: $actionsheet-item-description-font-size;
+        font-size: $kendo-actionsheet-item-description-font-size;
     }
 
 
@@ -184,33 +184,33 @@
 
     // Action sheet position
     .k-actionsheet-top {
-        @include border-bottom-radius( $actionsheet-border-radius );
-        border-width: if( $actionsheet-border-width, $actionsheet-border-width, null );
-        border-top-width: if( $actionsheet-border-width, 0, null );
+        @include border-bottom-radius( $kendo-actionsheet-border-radius );
+        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
+        border-top-width: if( $kendo-actionsheet-border-width, 0, null );
         top: 0;
         left: 50%;
         transform: translateX( -50% );
     }
     .k-actionsheet-bottom {
-        @include border-top-radius( $actionsheet-border-radius );
-        border-width: if( $actionsheet-border-width, $actionsheet-border-width, null );
-        border-bottom-width: if( $actionsheet-border-width, 0, null );
+        @include border-top-radius( $kendo-actionsheet-border-radius );
+        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
+        border-bottom-width: if( $kendo-actionsheet-border-width, 0, null );
         bottom: 0;
         left: 50%;
         transform: translateX( -50% );
     }
     .k-actionsheet-left {
-        @include border-right-radius( $actionsheet-border-radius );
-        border-width: if( $actionsheet-border-width, $actionsheet-border-width, null );
-        border-left-width: if( $actionsheet-border-width, 0, null );
+        @include border-right-radius( $kendo-actionsheet-border-radius );
+        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
+        border-left-width: if( $kendo-actionsheet-border-width, 0, null );
         left: 0;
         top: 50%;
         transform: translateY( -50% );
     }
     .k-actionsheet-right {
-        @include border-left-radius( $actionsheet-border-radius );
-        border-width: if( $actionsheet-border-width, $actionsheet-border-width, null );
-        border-right-width: if( $actionsheet-border-width, 0, null );
+        @include border-left-radius( $kendo-actionsheet-border-radius );
+        border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
+        border-right-width: if( $kendo-actionsheet-border-width, 0, null );
         right: 0;
         top: 50%;
         transform: translateY( -50% );
@@ -243,20 +243,20 @@
         flex-flow: column nowrap;
 
         .k-actionsheet-titlebar {
-            padding: $adaptive-actionsheet-titlebar-padding-y $adaptive-actionsheet-titlebar-padding-x;
-            border-bottom-width: $adaptive-actionsheet-titlebar-border-width;
+            padding: $kendo-adaptive-actionsheet-titlebar-padding-y $kendo-adaptive-actionsheet-titlebar-padding-x;
+            border-bottom-width: $kendo-adaptive-actionsheet-titlebar-border-width;
         }
 
         .k-actionsheet-content {
-            padding: $adaptive-actionsheet-content-padding-y $adaptive-actionsheet-content-padding-x;
+            padding: $kendo-adaptive-actionsheet-content-padding-y $kendo-adaptive-actionsheet-content-padding-x;
         }
 
         .k-actionsheet-footer {
-            padding: $adaptive-actionsheet-footer-padding-y $adaptive-actionsheet-footer-padding-x;
+            padding: $kendo-adaptive-actionsheet-footer-padding-y $kendo-adaptive-actionsheet-footer-padding-x;
         }
 
         .k-actionsheet-filter {
-            width: calc( min(100%, calc( 360px - #{$adaptive-actionsheet-titlebar-padding-x * 2}) ) );
+            width: calc( min(100%, calc( 360px - #{$kendo-adaptive-actionsheet-titlebar-padding-x * 2}) ) );
         }
         .k-actionsheet-content,
         .k-actionsheet-footer {

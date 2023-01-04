@@ -3,19 +3,19 @@
 
     .k-pdf-viewer {
         @include fill(
-            $pdf-viewer-text,
-            $pdf-viewer-bg,
-            $pdf-viewer-border
+            $kendo-pdf-viewer-text,
+            $kendo-pdf-viewer-bg,
+            $kendo-pdf-viewer-border
         );
 
 
         // Toolbar
         .k-toolbar {
             @include fill(
-                $pdf-viewer-toolbar-text,
-                $pdf-viewer-toolbar-bg,
-                $pdf-viewer-toolbar-border,
-                $pdf-viewer-toolbar-gradient
+                $kendo-pdf-viewer-toolbar-text,
+                $kendo-pdf-viewer-toolbar-bg,
+                $kendo-pdf-viewer-toolbar-border,
+                $kendo-pdf-viewer-toolbar-gradient
             );
         }
 
@@ -23,9 +23,9 @@
         // Canvas
         .k-canvas {
             @include fill(
-                $pdf-viewer-canvas-text,
-                $pdf-viewer-canvas-bg,
-                $pdf-viewer-canvas-border
+                $kendo-pdf-viewer-canvas-text,
+                $kendo-pdf-viewer-canvas-bg,
+                $kendo-pdf-viewer-canvas-border
             );
         }
 
@@ -33,36 +33,36 @@
         // Page
         .k-page {
             @include fill(
-                $pdf-viewer-page-text,
-                $pdf-viewer-page-bg,
-                $pdf-viewer-page-border
+                $kendo-pdf-viewer-page-text,
+                $kendo-pdf-viewer-page-bg,
+                $kendo-pdf-viewer-page-border
             );
-            @include box-shadow( $pdf-viewer-page-shadow );
+            @include box-shadow( $kendo-pdf-viewer-page-shadow );
         }
 
         .k-blank-page > .k-icon {
-            @include fill( $color: $pdf-viewer-icon-text );
+            @include fill( $color: $kendo-pdf-viewer-icon-text );
         }
 
 
         // Search
         .k-search-highlight {
-            background-color: $pdf-viewer-search-highlight-bg;
+            background-color: $kendo-pdf-viewer-search-highlight-bg;
         }
 
         .k-search-highlight-mark {
-            @include fill( $bg: $pdf-viewer-search-highlight-mark-bg );
+            @include fill( $bg: $kendo-pdf-viewer-search-highlight-mark-bg );
         }
 
     }
 
     .k-pdf-viewer-canvas > .k-search-panel {
         @include fill(
-            $pdf-viewer-search-panel-text,
-            $pdf-viewer-search-panel-bg,
-            $pdf-viewer-search-panel-border,
+            $kendo-pdf-viewer-search-panel-text,
+            $kendo-pdf-viewer-search-panel-bg,
+            $kendo-pdf-viewer-search-panel-border,
         );
-        @include box-shadow( $pdf-viewer-search-panel-shadow );
+        @include box-shadow( $kendo-pdf-viewer-search-panel-shadow );
     }
 
     .k-search-container {

@@ -1,13 +1,13 @@
 // Wizard
-$wizard-padding-x: $kendo-padding-md-x * 1.25 !default;
-$wizard-padding-y: $wizard-padding-x !default;
-$wizard-content-padding-x: $kendo-padding-md-x * 2 !default;
-$wizard-content-padding-y: $kendo-padding-md-y * 4 !default;
-$wizard-buttons-margin-x: 10px !default;
+$kendo-wizard-padding-x: $kendo-padding-md-x * 1.25 !default;
+$kendo-wizard-padding-y: $kendo-wizard-padding-x !default;
+$kendo-wizard-content-padding-x: $kendo-padding-md-x * 2 !default;
+$kendo-wizard-content-padding-y: $kendo-padding-md-y * 4 !default;
+$kendo-wizard-buttons-margin-x: 10px !default;
 
-$wizard-border-width: 0px !default;
-$wizard-font-size: $font-size !default;
-$wizard-line-height: $line-height !default;
-$wizard-font-family: $font-family !default;
+$kendo-wizard-border-width: 0px !default;
+$kendo-wizard-font-size: $kendo-font-size-md !default;
+$kendo-wizard-line-height: $kendo-line-height-md !default;
+$kendo-wizard-font-family: $kendo-font-family !default;
 
-$wizard-step-focus-border: #656565 !default;
+$kendo-wizard-step-focus-border: #656565 !default;

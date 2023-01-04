@@ -8,31 +8,31 @@
 
             .k-rating-item {
                 > .k-icon {
-                    text-shadow: $rating-icon-focus-shadow;
+                    text-shadow: $kendo-rating-icon-focus-shadow;
                 }
 
                 &.k-selected > .k-icon {
-                    text-shadow: $rating-icon-focus-selected-shadow;
+                    text-shadow: $kendo-rating-icon-focus-selected-shadow;
                 }
             }
         }
     }
 
     .k-rating-item {
-        color: $rating-icon-text;
+        color: $kendo-rating-icon-text;
 
         &.k-selected {
-            color: $rating-icon-selected-text;
+            color: $kendo-rating-icon-selected-text;
 
             &:focus,
             &.k-focus {
-                color: $rating-icon-focus-text;
+                color: $kendo-rating-icon-focus-text;
             }
         }
 
         &:hover,
         &.k-hover {
-            color: $rating-icon-hover-text;
+            color: $kendo-rating-icon-hover-text;
             cursor: pointer;
         }
     }

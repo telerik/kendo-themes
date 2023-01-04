@@ -3,14 +3,14 @@
     // Breadcrumb
     .k-breadcrumb {
         @include fill(
-            $breadcrumb-text,
-            $breadcrumb-bg,
-            $breadcrumb-border
+            $kendo-breadcrumb-text,
+            $kendo-breadcrumb-bg,
+            $kendo-breadcrumb-border
         );
 
         &:focus,
         &.k-focus {
-            @include box-shadow( $breadcrumb-focus-shadow );
+            @include box-shadow( $kendo-breadcrumb-focus-shadow );
         }
     }
 
@@ -18,18 +18,18 @@
     // Breadcrumb link
     .k-breadcrumb-link {
         @include fill(
-            $breadcrumb-link-text,
-            $breadcrumb-link-bg,
-            $breadcrumb-link-border
+            $kendo-breadcrumb-link-text,
+            $kendo-breadcrumb-link-bg,
+            $kendo-breadcrumb-link-border
         );
 
         // Hovered state
         &:hover,
         &.k-hover {
             @include fill(
-                $breadcrumb-link-hover-text,
-                $breadcrumb-link-hover-bg,
-                $breadcrumb-link-hover-border
+                $kendo-breadcrumb-link-hover-text,
+                $kendo-breadcrumb-link-hover-bg,
+                $kendo-breadcrumb-link-hover-border
             );
         }
 
@@ -37,11 +37,11 @@
         &:focus,
         &.k-focus {
             @include fill(
-                $breadcrumb-link-focus-text,
-                $breadcrumb-link-focus-bg,
-                $breadcrumb-link-focus-border
+                $kendo-breadcrumb-link-focus-text,
+                $kendo-breadcrumb-link-focus-bg,
+                $kendo-breadcrumb-link-focus-border
             );
-            @include focus-indicator( $breadcrumb-link-focus-shadow, true );
+            @include focus-indicator( $kendo-breadcrumb-link-focus-shadow );
         }
     }
 
@@ -49,18 +49,18 @@
     // Breadcrumb root link
     .k-breadcrumb-root-link {
         @include fill(
-            $breadcrumb-root-link-text,
-            $breadcrumb-root-link-bg,
-            $breadcrumb-root-link-border
+            $kendo-breadcrumb-root-link-text,
+            $kendo-breadcrumb-root-link-bg,
+            $kendo-breadcrumb-root-link-border
         );
 
         // Hovered state
         &:hover,
         &.k-hover {
             @include fill(
-                $breadcrumb-root-link-hover-text,
-                $breadcrumb-root-link-hover-bg,
-                $breadcrumb-root-link-hover-border
+                $kendo-breadcrumb-root-link-hover-text,
+                $kendo-breadcrumb-root-link-hover-bg,
+                $kendo-breadcrumb-root-link-hover-border
             );
         }
 
@@ -68,12 +68,30 @@
         &:focus,
         &.k-focus {
             @include fill(
-                $breadcrumb-root-link-focus-text,
-                $breadcrumb-root-link-focus-bg,
-                $breadcrumb-root-link-focus-border
+                $kendo-breadcrumb-root-link-focus-text,
+                $kendo-breadcrumb-root-link-focus-bg,
+                $kendo-breadcrumb-root-link-focus-border
             );
-            @include focus-indicator( $breadcrumb-root-link-focus-shadow, true );
+            @include focus-indicator( $kendo-breadcrumb-root-link-focus-shadow );
         }
+    }
+
+
+    // Breadcrumb current (last) item
+    .k-breadcrumb-current-item {
+        .k-breadcrumb-link {
+            @include fill(
+                $kendo-breadcrumb-current-item-text,
+                $kendo-breadcrumb-current-item-bg,
+                $kendo-breadcrumb-current-item-border
+            );
+        }
+    }
+
+
+    // Alias
+    .k-breadcrumb-last-item {
+        @extend .k-breadcrumb-current-item !optional;
     }
 
 }

@@ -17,13 +17,13 @@ $kendo-listbox-default-height: 200px !default;
 $kendo-listbox-border-width: 1px !default;
 /// Font family of the listbox.
 /// @group listbox
-$kendo-listbox-font-family: $font-family !default;
+$kendo-listbox-font-family: $kendo-font-family !default;
 /// Font size of the listbox.
 /// @group listbox
-$kendo-listbox-font-size: $font-size !default;
+$kendo-listbox-font-size: $kendo-font-size-md !default;
 /// Line height of the listbox.
 /// @group listbox
-$kendo-listbox-line-height: $line-height !default;
+$kendo-listbox-line-height: $kendo-line-height-md !default;
 /// Background color of the listbox.
 /// @group listbox
 $kendo-listbox-bg: $kendo-component-bg !default;

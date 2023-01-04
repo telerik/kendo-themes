@@ -6,13 +6,13 @@
             margin: 0;
 
             &::after {
-                $tick-offset: - k-math-div( $slider-tick-size, 2 );
+                $tick-offset: - k-math-div( $kendo-slider-tick-size, 2 );
 
                 content: "";
                 position: absolute;
                 z-index: 1;
-                height: $slider-tick-size;
-                width: $slider-tick-size;
+                height: $kendo-slider-tick-size;
+                width: $kendo-slider-tick-size;
                 top: 50%;
                 left: 50%;
                 margin: $tick-offset 0 0 $tick-offset;

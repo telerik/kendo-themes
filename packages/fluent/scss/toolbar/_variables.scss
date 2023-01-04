@@ -3,21 +3,21 @@
 
 /// The horizontal padding of the toolbar.
 /// @group toolbar
-$kendo-toolbar-padding-x-sm: map.get( $kendo-spacing, 1 ) !default;
-$kendo-toolbar-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-toolbar-padding-x-lg: map.get( $kendo-spacing, 2.5 ) !default;
+$kendo-toolbar-sm-padding-x: map.get( $kendo-spacing, 1 ) !default;
+$kendo-toolbar-md-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-lg-padding-x: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// The vertical padding of the toolbar.
 /// @group toolbar
-$kendo-toolbar-padding-y-sm: map.get( $kendo-spacing, 1 ) !default;
-$kendo-toolbar-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-toolbar-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
+$kendo-toolbar-sm-padding-y: map.get( $kendo-spacing, 1 ) !default;
+$kendo-toolbar-md-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-lg-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// The spacing between the toolbar tools.
 /// @group toolbar
-$kendo-toolbar-spacing-sm: map.get( $kendo-spacing, 2 ) !default;
-$kendo-toolbar-spacing-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-toolbar-spacing-lg: map.get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-sm-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-md-spacing: map.get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-lg-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Width of the border around the toolbar.
 /// @group toolbar
@@ -65,18 +65,18 @@ $kendo-toolbar-item-focus-outline-color: get-theme-color-var( neutral-130 ) !def
 /// @group toolbar
 $kendo-toolbar-sizes: (
     sm: (
-        padding-x: $kendo-toolbar-padding-x-sm,
-        padding-y: $kendo-toolbar-padding-y-sm,
-        spacing: $kendo-toolbar-spacing-sm
+        padding-x: $kendo-toolbar-sm-padding-x,
+        padding-y: $kendo-toolbar-sm-padding-y,
+        spacing: $kendo-toolbar-sm-spacing
     ),
     md: (
-        padding-x: $kendo-toolbar-padding-x-md,
-        padding-y: $kendo-toolbar-padding-y-md,
-        spacing: $kendo-toolbar-spacing-md
+        padding-x: $kendo-toolbar-md-padding-x,
+        padding-y: $kendo-toolbar-md-padding-y,
+        spacing: $kendo-toolbar-md-spacing
     ),
     lg: (
-        padding-x: $kendo-toolbar-padding-x-lg,
-        padding-y: $kendo-toolbar-padding-y-lg,
-        spacing: $kendo-toolbar-spacing-lg
+        padding-x: $kendo-toolbar-lg-padding-x,
+        padding-y: $kendo-toolbar-lg-padding-y,
+        spacing: $kendo-toolbar-lg-spacing
     )
 ) !default;

@@ -1,108 +1,108 @@
 // Tabstrip
-$tabstrip-wrapper-padding-x: 0px !default;
-$tabstrip-wrapper-padding-y: 0px !default;
-$tabstrip-wrapper-border-width: 0px !default;
+$kendo-tabstrip-wrapper-padding-x: 0px !default;
+$kendo-tabstrip-wrapper-padding-y: 0px !default;
+$kendo-tabstrip-wrapper-border-width: 0px !default;
 
-$tabstrip-font-family: $font-family !default;
-$tabstrip-font-size: $font-size !default;
-$tabstrip-line-height: $line-height !default;
-$tabstrip-border-width: 1px !default;
+$kendo-tabstrip-font-family: $kendo-font-family !default;
+$kendo-tabstrip-font-size: $kendo-font-size-md !default;
+$kendo-tabstrip-line-height: $kendo-line-height-md !default;
+$kendo-tabstrip-border-width: 1px !default;
 
-$tabstrip-wrapper-bg: null !default;
-$tabstrip-wrapper-text: null !default;
-$tabstrip-wrapper-border: null !default;
+$kendo-tabstrip-wrapper-bg: null !default;
+$kendo-tabstrip-wrapper-text: null !default;
+$kendo-tabstrip-wrapper-border: null !default;
 
 /// Background color of tabstrip component
 /// @group tabstrip
-$tabstrip-bg: null !default;
+$kendo-tabstrip-bg: null !default;
 /// Text color of tabstrip component
 /// @group tabstrip
-$tabstrip-text: $kendo-component-text !default;
+$kendo-tabstrip-text: $kendo-component-text !default;
 /// Border color of tabstrip component
 /// @group tabstrip
-$tabstrip-border: $kendo-component-border !default;
+$kendo-tabstrip-border: $kendo-component-border !default;
 
 /// Horizontal padding of tabs
 /// @group tabstrip
-$tabstrip-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-tabstrip-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of tabs
 /// @group tabstrip
-$tabstrip-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-tabstrip-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 /// Width of border around tabs
 /// @group tabstrip
-$tabstrip-item-border-width: 1px !default;
+$kendo-tabstrip-item-border-width: 1px !default;
 /// Border radius of tabs
 /// @group tabstrip
-$tabstrip-item-border-radius: $kendo-border-radius-md !default;
+$kendo-tabstrip-item-border-radius: $kendo-border-radius-md !default;
 /// Spacing between tabs
 /// @group tabstrip
-$tabstrip-item-gap: 0 !default;
+$kendo-tabstrip-item-gap: 0 !default;
 
 /// Background color of tabs
 /// @group tabstrip
-$tabstrip-item-bg: $base-bg !default;
+$kendo-tabstrip-item-bg: $kendo-base-bg !default;
 /// Text color of tabs
 /// @group tabstrip
-$tabstrip-item-text: $base-text !default;
+$kendo-tabstrip-item-text: $kendo-base-text !default;
 /// Border color of tabs
 /// @group tabstrip
-$tabstrip-item-border: $base-border !default;
+$kendo-tabstrip-item-border: $kendo-base-border !default;
 /// Background gradient of tabs
 /// @group tabstrip
-$tabstrip-item-gradient: $base-gradient !default;
+$kendo-tabstrip-item-gradient: $kendo-base-gradient !default;
 
 /// Background color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hover-bg: $kendo-hover-bg !default;
+$kendo-tabstrip-item-hover-bg: $kendo-hover-bg !default;
 /// Text color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hover-text: $kendo-hover-text !default;
+$kendo-tabstrip-item-hover-text: $kendo-hover-text !default;
 /// Border color of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hover-border: $kendo-hover-border !default;
+$kendo-tabstrip-item-hover-border: $kendo-hover-border !default;
 /// Background gradient of hovered tabs
 /// @group tabstrip
-$tabstrip-item-hover-gradient: null !default;
+$kendo-tabstrip-item-hover-gradient: null !default;
 
 /// Background color of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-bg: $kendo-component-bg !default;
+$kendo-tabstrip-item-selected-bg: $kendo-component-bg !default;
 /// Text color of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-text: $kendo-component-text !default;
+$kendo-tabstrip-item-selected-text: $kendo-component-text !default;
 /// Border color of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-border: $kendo-component-border !default;
+$kendo-tabstrip-item-selected-border: $kendo-component-border !default;
 /// Background gradient of selected tabs
 /// @group tabstrip
-$tabstrip-item-selected-gradient: false !default;
+$kendo-tabstrip-item-selected-gradient: false !default;
 
-$tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
+$kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
-$tabstrip-item-dragging-shadow: 0px 3px 4px rgba( black, .15 ) !default;
+$kendo-tabstrip-item-dragging-shadow: 0px 3px 4px rgba( black, .15 ) !default;
 
-$tabstrip-indicator-size: null !default;
-$tabstrip-indicator-color: null !default;
+$kendo-tabstrip-indicator-size: null !default;
+$kendo-tabstrip-indicator-color: null !default;
 
 /// Horizontal padding of tabstrip content
 /// @group tabstrip
-$tabstrip-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of tabstrip content
 /// @group tabstrip
-$tabstrip-content-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-tabstrip-content-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
 /// Width of border around tabstrip content
 /// @group tabstrip
-$tabstrip-content-border-width: 1px !default;
+$kendo-tabstrip-content-border-width: 1px !default;
 
 /// Background color of tabstrip content
 /// @group tabstrip
-$tabstrip-content-bg: $kendo-component-bg !default;
+$kendo-tabstrip-content-bg: $kendo-component-bg !default;
 /// Text color of tabstrip content
 /// @group tabstrip
-$tabstrip-content-text: $kendo-component-text !default;
+$kendo-tabstrip-content-text: $kendo-component-text !default;
 /// Border color of tabstrip content
 /// @group tabstrip
-$tabstrip-content-border: $kendo-component-border !default;
+$kendo-tabstrip-content-border: $kendo-component-border !default;
 /// Border color of tabstrip focused content
 /// @group tabstrip
-$tabstrip-content-focus-border: $kendo-component-text !default;
+$kendo-tabstrip-content-focus-border: $kendo-component-text !default;

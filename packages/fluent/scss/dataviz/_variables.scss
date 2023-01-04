@@ -92,9 +92,9 @@ $kendo-chart-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font-size of the chart component.
 /// @group charts
 $kendo-chart-font-size: var( --kendo-font-size, inherit ) !default;
-$kendo-chart-font-size-sm: var( --kendo-font-size-sm, inherit ) !default;
-$kendo-chart-font-size-md: var( --kendo-font-size-md, inherit ) !default;
-$kendo-chart-font-size-lg: var( --kendo-font-size-lg, inherit ) !default;
+$kendo-chart-sm-font-size: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chart-md-font-size: var( --kendo-font-size-md, inherit ) !default;
+$kendo-chart-lg-font-size: var( --kendo-font-size-lg, inherit ) !default;
 /// The line-height of the chart component.
 /// @group charts
 $kendo-chart-line-height: var( --kendo-line-height, normal ) !default;

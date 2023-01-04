@@ -64,7 +64,7 @@ $kendo-font-size-xl: 20px !default;
 $kendo-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !default;
 
 
-/// Line height used along with $font-size.
+/// Line height used along with $kendo-font-size.
 $kendo-line-height: math.div( 20, 14 ) !default;
 $kendo-line-height-xs: 1 !default;
 $kendo-line-height-sm: 1.25 !default;
@@ -80,7 +80,7 @@ $kendo-font-weight-bold: 600 !default;
 
 $kendo-letter-spacing: normal !default;
 
-$default-scrollbar-width: 17px !default;
+$kendo-scrollbar-width: 17px !default;
 
 /// Border radius for all components.
 $kendo-border-radius: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero

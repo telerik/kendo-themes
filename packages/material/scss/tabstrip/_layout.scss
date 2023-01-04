@@ -3,7 +3,7 @@
 @include exports( "tabstrip/layout/material" ) {
 
     .k-tabstrip {
-        line-height: $tabstrip-line-height;
+        line-height: $kendo-tabstrip-line-height;
     }
 
     .k-tabstrip-items {

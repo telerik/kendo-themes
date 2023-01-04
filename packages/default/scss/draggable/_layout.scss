@@ -2,20 +2,20 @@
 
     // Layout
     .k-drag-clue {
-        @include border-radius( $drag-clue-border-radius );
-        padding: $drag-clue-padding-y $drag-clue-padding-x;
-        border-width: $drag-clue-border-width;
-        border-style: if( $drag-clue-border-width == null, null, solid );
+        @include border-radius( $kendo-drag-hint-border-radius );
+        padding: $kendo-drag-hint-padding-y $kendo-drag-hint-padding-x;
+        border-width: $kendo-drag-hint-border-width;
+        border-style: if( $kendo-drag-hint-border-width == null, null, solid );
         box-sizing: border-box;
-        font-size: $drag-clue-font-size;
-        font-family: $drag-clue-font-family;
-        line-height: $drag-clue-line-height;
+        font-size: $kendo-drag-hint-font-size;
+        font-family: $kendo-drag-hint-font-family;
+        line-height: $kendo-drag-hint-line-height;
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
         white-space: nowrap;
-        opacity: $drag-clue-opacity;
+        opacity: $kendo-drag-hint-opacity;
         overflow: hidden;
         position: absolute;
         z-index: 20000;
@@ -31,7 +31,7 @@
     // Drop hint
     .k-drop-hint {
         display: flex;
-        gap: $drop-hint-arrow-spacing;
+        gap: $kendo-drop-hint-arrow-spacing;
         justify-content: space-between;
         align-items: center;
         position: absolute;
@@ -42,31 +42,31 @@
     .k-drop-hint-start,
     .k-drop-hint-end {
         flex-shrink: 0;
-        border-width: k-math-div( $drop-hint-arrow-size, 2 );
+        border-width: k-math-div( $kendo-drop-hint-arrow-size, 2 );
         border-style: solid;
         border-color: transparent;
     }
 
     .k-drop-hint-line {
         flex-grow: 1;
-        background-color: $drop-hint-bg;
+        background-color: $kendo-drop-hint-bg;
     }
 
     .k-drop-hint-h {
         .k-drop-hint-start {
-            border-left-width: ( k-math-div( $drop-hint-arrow-size, 2 ) * $equilateral-index );
-            border-left-color: $drop-hint-bg;
+            border-left-width: ( k-math-div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
+            border-left-color: $kendo-drop-hint-bg;
             border-right-width: 0;
         }
 
         .k-drop-hint-line {
-            width: $drop-hint-line-h-width;
-            height: $drop-hint-line-h-height;
+            width: $kendo-drop-hint-line-h-width;
+            height: $kendo-drop-hint-line-h-height;
         }
 
         .k-drop-hint-end {
-            border-right-width: ( k-math-div( $drop-hint-arrow-size, 2 ) * $equilateral-index );
-            border-right-color: $drop-hint-bg;
+            border-right-width: ( k-math-div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
+            border-right-color: $kendo-drop-hint-bg;
             border-left-width: 0;
         }
     }
@@ -75,19 +75,19 @@
         flex-direction: column;
 
         .k-drop-hint-start {
-            border-top-width: ( k-math-div( $drop-hint-arrow-size, 2 ) * $equilateral-index );
-            border-top-color: $drop-hint-bg;
+            border-top-width: ( k-math-div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
+            border-top-color: $kendo-drop-hint-bg;
             border-bottom-width: 0;
         }
 
         .k-drop-hint-line {
-            width: $drop-hint-line-v-width;
-            height: $drop-hint-line-v-height;
+            width: $kendo-drop-hint-line-v-width;
+            height: $kendo-drop-hint-line-v-height;
         }
 
         .k-drop-hint-end {
-            border-bottom-width: ( k-math-div( $drop-hint-arrow-size, 2 ) * $equilateral-index );
-            border-bottom-color: $drop-hint-bg;
+            border-bottom-width: ( k-math-div( $kendo-drop-hint-arrow-size, 2 ) * $equilateral-index );
+            border-bottom-color: $kendo-drop-hint-bg;
             border-top-width: 0;
         }
     }

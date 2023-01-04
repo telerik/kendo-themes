@@ -3,12 +3,12 @@
     // Theme
     .k-drag-clue {
         @include fill(
-            $drag-clue-text,
-            $drag-clue-bg,
-            $drag-clue-border,
-            $drag-clue-gradient
+            $kendo-drag-hint-text,
+            $kendo-drag-hint-bg,
+            $kendo-drag-hint-border,
+            $kendo-drag-hint-gradient
         );
-        @include box-shadow( $drag-clue-shadow );
+        @include box-shadow( $kendo-drag-hint-shadow );
     }
 
 }

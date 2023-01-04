@@ -15,33 +15,33 @@
 
     // Exported variables
     .k-var--chart-font {
-        font-size: $chart-font-size;
+        font-size: $kendo-chart-font-size;
     }
 
     .k-var--chart-title-font {
-        font-size: $chart-title-font-size;
+        font-size: $kendo-chart-title-font-size;
     }
 
     .k-var--chart-pane-title-font {
-        font-size: $chart-pane-title-font-size;
-        font-weight: $chart-pane-title-font-weight;
+        font-size: $kendo-chart-pane-title-font-size;
+        font-weight: $kendo-chart-pane-title-font-weight;
     }
 
     .k-var--chart-label-font {
-        font-size: $chart-label-font-size;
+        font-size: $kendo-chart-label-font-size;
     }
 
     // Elements
     .k-chart,
     .k-sparkline,
     .k-stockchart {
-        border-width: $chart-border-width;
+        border-width: $kendo-chart-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $chart-font-family;
-        font-size: $chart-font-size;
-        line-height: $chart-line-height;
+        font-family: $kendo-chart-font-family;
+        font-size: $kendo-chart-font-size;
+        line-height: $kendo-chart-line-height;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
     }
@@ -62,7 +62,7 @@
 
     .k-chart-tooltip-wrapper .k-animation-container-shown,
     .k-chart-tooltip-wrapper.k-animation-container-shown {
-        transition: $chart-tooltip-transition;
+        transition: $kendo-chart-tooltip-transition;
     }
 
     .k-sparkline-tooltip-wrapper,
@@ -83,9 +83,9 @@
 
     .k-chart-tooltip {
         @include border-radius( $kendo-border-radius-md );
-        font-size: $chart-tooltip-font-size;
-        line-height: $line-height;
-        padding: $tooltip-padding-y $tooltip-padding-x;
+        font-size: $kendo-chart-tooltip-font-size;
+        line-height: $kendo-line-height-md;
+        padding: $kendo-tooltip-padding-y $kendo-tooltip-padding-x;
     }
 
     .k-chart-tooltip th {
@@ -98,7 +98,7 @@
         width: auto;
         text-align: left;
         padding: $kendo-padding-sm-y $kendo-padding-sm-x;
-        line-height: $line-height;
+        line-height: $kendo-line-height-md;
         vertical-align: middle;
     }
 
@@ -137,8 +137,8 @@
 
     .k-handle {
         @include border-radius( 50% );
-        width: $selection-handle-size;
-        height: $selection-handle-size;
+        width: $kendo-chart-selection-handle-size;
+        height: $kendo-chart-selection-handle-size;
         border-width: 1px;
         border-style: solid;
         z-index: 1;
@@ -152,31 +152,31 @@
     }
 
     .k-left-handle {
-        left: - k-math-div( $selection-handle-size, 2 );
+        left: - k-math-div( $kendo-chart-selection-handle-size, 2 );
     }
 
     .k-right-handle {
-        right: - k-math-div( $selection-handle-size, 2 );
+        right: - k-math-div( $kendo-chart-selection-handle-size, 2 );
     }
 
     .k-left-handle div {
-        margin: -($selection-handle-size) 0 0 (- k-math-div( $selection-handle-size, 1.5 ));
-        padding: ($selection-handle-size * 2) (k-math-div( $selection-handle-size, 1.5 ) * 2) 0 0;
+        margin: -($kendo-chart-selection-handle-size) 0 0 (- k-math-div( $kendo-chart-selection-handle-size, 1.5 ));
+        padding: ($kendo-chart-selection-handle-size * 2) (k-math-div( $kendo-chart-selection-handle-size, 1.5 ) * 2) 0 0;
     }
 
     .k-right-handle div {
-        margin: -($selection-handle-size) 0 0 (- k-math-div( $selection-handle-size, 1.5 ));
-        padding: ($selection-handle-size * 2) 0 0 (k-math-div( $selection-handle-size, 1.5 ) * 2);
+        margin: -($kendo-chart-selection-handle-size) 0 0 (- k-math-div( $kendo-chart-selection-handle-size, 1.5 ));
+        padding: ($kendo-chart-selection-handle-size * 2) 0 0 (k-math-div( $kendo-chart-selection-handle-size, 1.5 ) * 2);
     }
 
     .k-left-handle.k-handle-active div {
-        margin-left: -($selection-handle-size * 2);
-        padding-left: ($selection-handle-size * 2) + k-math-div( $selection-handle-size, 1.5 );
+        margin-left: -($kendo-chart-selection-handle-size * 2);
+        padding-left: ($kendo-chart-selection-handle-size * 2) + k-math-div( $kendo-chart-selection-handle-size, 1.5 );
     }
 
     .k-right-handle.k-handle-active div {
-        margin-left: -($selection-handle-size * 2);
-        padding-right: ($selection-handle-size * 2) + k-math-div( $selection-handle-size, 1.5 );
+        margin-left: -($kendo-chart-selection-handle-size * 2);
+        padding-right: ($kendo-chart-selection-handle-size * 2) + k-math-div( $kendo-chart-selection-handle-size, 1.5 );
     }
 
     .k-mask {
@@ -277,9 +277,9 @@
         border-width: 1px;
         border-style: solid;
         outline: 0;
-        font-family: $treemap-font-family;
-        font-size: $treemap-font-size;
-        line-height: $treemap-line-height;
+        font-family: $kendo-treemap-font-family;
+        font-size: $kendo-treemap-font-size;
+        line-height: $kendo-treemap-line-height;
         display: block;
         overflow: hidden;
         -webkit-touch-callout: none;
@@ -307,13 +307,13 @@
             border-width: 0 0 1px;
             border-style: solid;
             border-color: inherit;
-            font-size: $font-size;
+            font-size: $kendo-font-size-md;
             background-position: 0 0;
             background-repeat: repeat-x;
         }
         .k-treemap-title-vertical {
             padding: $kendo-padding-sm-x $kendo-padding-sm-y;
-            width: $line-height-em;
+            width: $kendo-line-height-em;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -343,10 +343,10 @@
             right: 0;
         }
         .k-treemap-title + .k-treemap-wrap {
-            top: calc( #{$kendo-padding-sm-y * 2} + (#{$line-height} * #{$font-size}) + 1px);
+            top: calc( #{$kendo-padding-sm-y * 2} + (#{$kendo-line-height-md} * #{$kendo-font-size-md}) + 1px);
         }
         .k-treemap-title-vertical + .k-treemap-wrap {
-            left: calc( #{$kendo-padding-sm-y * 2} + (#{$line-height} * #{$font-size}) + 1px);
+            left: calc( #{$kendo-padding-sm-y * 2} + (#{$kendo-line-height-md} * #{$kendo-font-size-md}) + 1px);
         }
 
 
@@ -404,13 +404,13 @@
     $exported: (
         primary: $kendo-color-primary,
         primary-contrast: $kendo-color-primary-contrast,
-        base: $base-bg,
-        background: $chart-bg,
+        base: $kendo-base-bg,
+        background: $kendo-chart-bg,
 
         border-radius: $kendo-border-radius-md,
 
-        normal-background: $base-bg,
-        normal-text-color: $base-text,
+        normal-background: $kendo-base-bg,
+        normal-text-color: $kendo-base-text,
         hover-background: $kendo-hover-bg,
         hover-text-color: $kendo-hover-text,
         selected-background: $kendo-selected-bg,
@@ -421,46 +421,46 @@
         warning: $kendo-color-warning,
         error: $kendo-color-error,
 
-        series-a: $series-a,
-        series-b: $series-b,
-        series-c: $series-c,
-        series-d: $series-d,
-        series-e: $series-e,
-        series-f: $series-f,
+        series-a: $kendo-series-a,
+        series-b: $kendo-series-b,
+        series-c: $kendo-series-c,
+        series-d: $kendo-series-d,
+        series-e: $kendo-series-e,
+        series-f: $kendo-series-f,
 
-        series-1: $series-1,
-        series-2: $series-2,
-        series-3: $series-3,
-        series-4: $series-4,
-        series-5: $series-5,
-        series-6: $series-6,
-        series-7: $series-7,
-        series-8: $series-8,
-        series-9: $series-9,
-        series-10: $series-10,
-        series-11: $series-11,
-        series-12: $series-12,
-        series-13: $series-13,
-        series-14: $series-14,
-        series-15: $series-15,
-        series-16: $series-16,
-        series-17: $series-17,
-        series-18: $series-18,
-        series-19: $series-19,
-        series-20: $series-20,
-        series-21: $series-21,
-        series-22: $series-22,
-        series-23: $series-23,
-        series-24: $series-24,
-        series-25: $series-25,
-        series-26: $series-26,
-        series-27: $series-27,
-        series-28: $series-28,
-        series-29: $series-29,
-        series-30: $series-30,
+        series-1: $kendo-series-1,
+        series-2: $kendo-series-2,
+        series-3: $kendo-series-3,
+        series-4: $kendo-series-4,
+        series-5: $kendo-series-5,
+        series-6: $kendo-series-6,
+        series-7: $kendo-series-7,
+        series-8: $kendo-series-8,
+        series-9: $kendo-series-9,
+        series-10: $kendo-series-10,
+        series-11: $kendo-series-11,
+        series-12: $kendo-series-12,
+        series-13: $kendo-series-13,
+        series-14: $kendo-series-14,
+        series-15: $kendo-series-15,
+        series-16: $kendo-series-16,
+        series-17: $kendo-series-17,
+        series-18: $kendo-series-18,
+        series-19: $kendo-series-19,
+        series-20: $kendo-series-20,
+        series-21: $kendo-series-21,
+        series-22: $kendo-series-22,
+        series-23: $kendo-series-23,
+        series-24: $kendo-series-24,
+        series-25: $kendo-series-25,
+        series-26: $kendo-series-26,
+        series-27: $kendo-series-27,
+        series-28: $kendo-series-28,
+        series-29: $kendo-series-29,
+        series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-color-primary,
-        gauge-track: k-try-shade( $chart-bg )
+        gauge-track: k-try-shade( $kendo-chart-bg )
     );
 
     @each $name, $value in $exported {

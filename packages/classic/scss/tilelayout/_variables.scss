@@ -1,12 +1,12 @@
 // TileLayout
-$tilelayout-border-width: 0px !default;
-$tilelayout-card-border-width: $card-border-width !default;
-$tilelayout-card-focus-shadow: $card-focus-shadow !default;
+$kendo-tile-layout-border-width: 0px !default;
+$kendo-tile-layout-card-border-width: $kendo-card-border-width !default;
+$kendo-tile-layout-card-focus-shadow: $kendo-card-focus-shadow !default;
 
-$tilelayout-hint-border-width: 1px !default;
-$tilelayout-hint-border-radius: $kendo-border-radius-lg !default;
+$kendo-tile-layout-hint-border-width: 1px !default;
+$kendo-tile-layout-hint-border-radius: $kendo-border-radius-lg !default;
 
-$tilelayout-bg: $base-bg !default;
+$kendo-tile-layout-bg: $kendo-base-bg !default;
 
-$tilelayout-hint-bg: rgba( white, .2 ) !default;
-$tilelayout-hint-border: $kendo-component-border !default;
+$kendo-tile-layout-hint-bg: rgba( white, .2 ) !default;
+$kendo-tile-layout-hint-border: $kendo-component-border !default;

@@ -2,14 +2,14 @@
 
     // Captcha
     .k-captcha {
-        width: $captcha-width;
+        width: $kendo-captcha-width;
         box-sizing: border-box;
-        font-size: $captcha-font-size;
-        font-family: $captcha-font-family;
-        line-height: $captcha-line-height;
+        font-size: $kendo-captcha-font-size;
+        font-family: $kendo-captcha-font-family;
+        line-height: $kendo-captcha-line-height;
         display: flex;
         flex-flow: column nowrap;
-        gap: $captcha-gap;
+        gap: $kendo-captcha-gap;
 
         *,
         *::before,
@@ -21,12 +21,12 @@
     // Image
     .k-captcha-image-wrap {
         position: relative;
-        gap: $captcha-image-wrap-gap;
+        gap: $kendo-captcha-image-wrap-gap;
     }
 
     .k-captcha-image-controls {
         position: relative;
-        gap: $captcha-image-controls-gap;
+        gap: $kendo-captcha-image-controls-gap;
     }
 
     .k-captcha-image {
@@ -54,9 +54,9 @@
 
     // Verification Success
     .k-captcha-validation-message {
-        margin-top: $captcha-validation-message-margin-top;
-        font-size: $captcha-validation-message-font-size;
-        font-style: $captcha-validation-message-font-style;
+        margin-top: $kendo-captcha-validation-message-margin-top;
+        font-size: $kendo-captcha-validation-message-font-size;
+        font-style: $kendo-captcha-validation-message-font-style;
     }
 
 }

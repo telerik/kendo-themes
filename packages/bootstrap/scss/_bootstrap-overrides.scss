@@ -1,8 +1,5 @@
-$dark-theme: false !default;
+$kendo-is-dark-theme: false !default;
 
-$font-size-base: 1rem !default;
-
-// stylelint-disable scss/dollar-variable-colon-space-after
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -12,7 +9,6 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-// stylelint-enable scss/dollar-variable-colon-space-after
 
 $kendo-body-bg: $kendo-color-white !default;
 
@@ -24,18 +20,3 @@ $input-bg: $kendo-component-bg !default;
 $input-color: k-contrast-color( $input-bg, $gray-700, $gray-300 ) !default;
 $input-border-color: if( k-is-light( $input-bg ), $gray-400, $gray-600 ) !default;
 $input-placeholder-color: k-contrast-color( $input-bg, $gray-600, $gray-400 ) !default;
-
-$card-bg: $kendo-component-bg !default;
-$card-color: $kendo-component-text !default;
-$card-border-color: $kendo-component-border !default;
-
-$breadcrumb-padding-x: 0px !default;
-$breadcrumb-padding-y: 0px !default;
-$breadcrumb-bg: $kendo-component-bg !default;
-
-$table-bg: $kendo-component-bg !default;
-$table-color: $kendo-component-text !default;
-$table-border-color: $kendo-component-border !default;
-
-$tooltip-bg: if( $dark-theme, $kendo-color-white, $kendo-color-black ) !default;
-$tooltip-color: k-contrast-color( $tooltip-bg ) !default;
