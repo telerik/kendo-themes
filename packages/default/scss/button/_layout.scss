@@ -181,7 +181,7 @@
 
         &:focus::after,
         &.k-focus::after {
-            opacity: .12;
+            opacity: $kendo-flat-button-focus-ring-opacity;
         }
     }
 
