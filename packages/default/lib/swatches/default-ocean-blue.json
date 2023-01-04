@@ -16,42 +16,42 @@
         {
             "name": "Theme colors",
             "variables": {
-                "primary": {
+                "kendo-color-primary": {
                     "name": "Primary",
                     "type": "color",
                     "value": "#1274AC"
                 },
-                "secondary": {
+                "kendo-color-secondary": {
                     "name": "Secondary",
                     "type": "color",
                     "value": "#757575"
                 },
-                "tertiary": {
+                "kendo-color-tertiary": {
                     "name": "Tertiary",
                     "type": "color",
                     "value": "#007F84"
                 },
-                "info": {
+                "kendo-color-info": {
                     "name": "Info",
                     "type": "color",
                     "value": "#0058E9"
                 },
-                "success": {
+                "kendo-color-success": {
                     "name": "Success",
                     "type": "color",
                     "value": "#278200"
                 },
-                "warning": {
+                "kendo-color-warning": {
                     "name": "Warning",
                     "type": "color",
                     "value": "#F5A600"
                 },
-                "error": {
+                "kendo-color-error": {
                     "name": "Error",
                     "type": "color",
                     "value": "#D51923"
                 },
-                "light": {
+                "kendo-color-light": {
                     "name": "Light",
                     "type": "color",
                     "value": "#757575"
@@ -61,27 +61,22 @@
         {
             "name": "Body",
             "variables": {
-                "body-text": {
+                "kendo-body-text": {
                     "name": "Body text color",
                     "type": "color",
                     "value": "#424242"
                 },
-                "body-bg": {
+                "kendo-body-bg": {
                     "name": "Body background",
                     "type": "color",
                     "value": "#ffffff"
                 },
-                "heading-text": {
-                    "name": "Headings text color",
-                    "type": "color",
-                    "value": "#272727"
-                },
-                "subtle-text": {
+                "kendo-subtle-text": {
                     "name": "Subtle text color",
                     "type": "color",
                     "value": "#666666"
                 },
-                "disabled-text": {
+                "kendo-disabled-text": {
                     "name": "Disabled text color",
                     "type": "color",
                     "value": "#8f8f8f"
@@ -91,42 +86,42 @@
         {
             "name": "Components",
             "variables": {
-                "component-text": {
+                "kendo-component-text": {
                     "name": "Component text color",
                     "type": "color",
                     "value": "#424242"
                 },
-                "component-bg": {
+                "kendo-component-bg": {
                     "name": "Component background",
                     "type": "color",
                     "value": "#ffffff"
                 },
-                "base-text": {
+                "kendo-base-text": {
                     "name": "Header text color",
                     "type": "color",
                     "value": "#424242"
                 },
-                "base-bg": {
+                "kendo-base-bg": {
                     "name": "Header background",
                     "type": "color",
                     "value": "#fafafa"
                 },
-                "hovered-text": {
+                "kendo-hover-text": {
                     "name": "Hover text color",
                     "type": "color",
                     "value": "#424242"
                 },
-                "hovered-bg": {
+                "kendo-hover-bg": {
                     "name": "Hover background",
                     "type": "color",
                     "value": "#ececec"
                 },
-                "selected-text": {
+                "kendo-selected-text": {
                     "name": "Selected text color",
                     "type": "color",
                     "value": "#ffffff"
                 },
-                "selected-bg": {
+                "kendo-selected-bg": {
                     "name": "Selected background",
                     "type": "color",
                     "value": "#1274AC"
@@ -235,36 +230,6 @@
                     "name": "Scheduler event selected background",
                     "type": "color",
                     "value": "#0f6190"
-                }
-            }
-        },
-        {
-            "name": "Pager",
-            "variables": {
-                "pager-number-text": {
-                    "name": "Pager number text color",
-                    "type": "color",
-                    "value": "#424242"
-                },
-                "pager-number-hover-bg": {
-                    "name": "Pager number hover background",
-                    "type": "color",
-                    "value": "#ececec"
-                },
-                "pager-number-hover-text": {
-                    "name": "Pager number hover text color",
-                    "type": "color",
-                    "value": "#424242"
-                },
-                "pager-number-selected-bg": {
-                    "name": "Pager number selected background",
-                    "type": "color",
-                    "value": "#1274AC"
-                },
-                "pager-number-selected-text": {
-                    "name": "Pager number selected text color",
-                    "type": "color",
-                    "value": "#ffffff"
                 }
             }
         }
