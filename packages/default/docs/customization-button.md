@@ -841,6 +841,24 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-flat-button-focus-ring-opacity</td>
+    <td>Number</td>
+<td>
+
+`.12`
+
+</td>
+<td>
+
+`0.12`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the flat button focus ring. Used to create border for the flat button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-transition</td>
     <td>List</td>
 <td>
