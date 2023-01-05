@@ -7,33 +7,6 @@
 
 @mixin kendo-icon--layout() {
 
-    .k-svg-icon {
-
-        &.k-flip-h,
-        &.k-flip-v,
-        &.k-flip-h.k-flip-v {
-            transform: none;
-        }
-
-        &.k-flip-h {
-            > svg {
-                transform: scaleX( -1 );
-            }
-        }
-
-        &.k-flip-v {
-            > svg {
-                transform: scaleY( -1 );
-            }
-        }
-
-        &.k-flip-h.k-flip-v {
-            > svg {
-                transform: scale( -1, -1 );
-            }
-        }
-    }
-
     .k-icon-with-modifier {
         position: relative;
         margin: .25em;
