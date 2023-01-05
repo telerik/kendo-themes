@@ -101,10 +101,18 @@ $box-shadow-depth-5: 0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rg
 
 
 // Icons
-$icon-size: 16px !default;
-$icon-size-lg: 32px !default;
-$icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
-$icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-icon-size: 16px !default;
+
+$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
+$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
+$kendo-icon-size-md: $kendo-icon-size !default;
+$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
+$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
+$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
+$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
+
+$kendo-icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
 
 // Metrics
 $kendo-padding-x: 16px !default;

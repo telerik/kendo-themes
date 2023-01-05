@@ -127,7 +127,7 @@
 
         // File preview
         .k-file-preview {
-            margin-right: $icon-spacing;
+            margin-right: $kendo-icon-spacing;
             display: inline-flex;
             flex-direction: row;
             vertical-align: middle;
@@ -233,7 +233,7 @@
         align-items: center;
     }
     .k-filemanager-drag-hint .k-icon {
-        margin-right: $icon-spacing;
+        margin-right: $kendo-icon-spacing;
     }
 
 }

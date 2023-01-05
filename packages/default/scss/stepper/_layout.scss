@@ -110,13 +110,13 @@
             border-width: 0;
         }
         .k-step-label .k-step-text {
-            max-width: calc(10em - (#{$icon-size} + #{$icon-spacing}));
+            max-width: calc(10em - (#{$kendo-icon-size} + #{$kendo-icon-spacing}));
             flex-grow: 1;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
-        .k-step-label .k-icon { margin-left: $icon-spacing; }
+        .k-step-label .k-icon { margin-left: $kendo-icon-spacing; }
 
         .k-step-current .k-step-label {
             font-weight: bold;
@@ -247,7 +247,7 @@
 
         .k-step-label .k-icon {
             margin-left: 0;
-            margin-right: $icon-spacing;
+            margin-right: $kendo-icon-spacing;
         }
 
         // Horizontal

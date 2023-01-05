@@ -551,7 +551,7 @@
 
 @include exports( "spreadsheet/filter/layout" ) {
 
-    $filter-menu-padding-left: calc( #{$icon-size} + #{2 * $kendo-padding-md-y} );
+    $filter-menu-padding-left: calc( #{$kendo-icon-size} + #{2 * $kendo-padding-md-y} );
 
     // Filter button
     .k-spreadsheet .k-filter-wrapper {
@@ -593,7 +593,7 @@
                 padding-left: $filter-menu-padding-left;
             }
             .k-icon {
-                margin-left: calc(-1 * ( #{$icon-size} + #{$kendo-padding-md-y} ) );
+                margin-left: calc(-1 * ( #{$kendo-icon-size} + #{$kendo-padding-md-y} ) );
                 margin-right: $kendo-padding-md-y;
             }
 

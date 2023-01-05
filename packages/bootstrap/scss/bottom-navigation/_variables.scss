@@ -13,7 +13,7 @@ $bottom-nav-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $bottom-nav-item-padding-y: 0 !default;
 $bottom-nav-item-min-width: 72px !default;
 $bottom-nav-item-max-width: null !default;
-$bottom-nav-item-min-height: calc( #{$icon-size * 2.5} + #{k-map-get( $kendo-spacing, 4 )} - #{$bottom-nav-padding-x * 2} ) !default;
+$bottom-nav-item-min-height: calc( #{$kendo-icon-size * 2.5} + #{k-map-get( $kendo-spacing, 4 )} - #{$bottom-nav-padding-x * 2} ) !default;
 $bottom-nav-item-border-radius: null !default;
 $bottom-nav-item-gap: 0 k-map-get( $kendo-spacing, 1 ) !default;
 

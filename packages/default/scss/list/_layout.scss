@@ -93,7 +93,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: $icon-spacing;
+        gap: $kendo-icon-spacing;
         position: relative;
         transition-property: color, background-color, outline-color, box-shadow;
         transition-duration: 200ms;
@@ -136,7 +136,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: $icon-spacing;
+        gap: $kendo-icon-spacing;
         position: relative;
     }
 
