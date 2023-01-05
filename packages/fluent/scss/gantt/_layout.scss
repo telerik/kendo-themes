@@ -21,6 +21,10 @@
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
+        .k-table-td {
+            white-space: nowrap;
+        }
+
         // other
         td {
             overflow: hidden;
