@@ -21887,25 +21887,7 @@ The following table lists the available variables for customizing the Fluent the
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the icons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-icon-size-lg</td>
-    <td></td>
-<td>
-
-`calc( var( --kendo-icon-size, 1rem ) * 2 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the large icons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the icons.</div></div>
     </td>
 </tr>
 <tr>

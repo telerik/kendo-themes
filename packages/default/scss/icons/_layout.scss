@@ -1,5 +1,5 @@
 $ki-embed-font: true;
-$ki-icon-size: $icon-size;
+$ki-icon-size: $kendo-icon-size;
 
 @import "@progress/kendo-font-icons/scss/index.scss";
 
@@ -45,7 +45,7 @@ $ki-icon-size: $icon-size;
     }
 
     .k-icon-action {
-        padding: $icon-padding;
+        padding: $kendo-icon-padding;
         cursor: pointer;
     }
 

@@ -41,7 +41,7 @@ $filemanager-listview-item-bg: null !default;
 $filemanager-listview-item-text: null !default;
 $filemanager-listview-item-border: null !default;
 
-$filemanager-listview-item-icon-size: ($icon-size * 3) !default;
+$filemanager-listview-item-icon-size: ($kendo-icon-size * 3) !default;
 $filemanager-listview-item-icon-bg: null !default;
 $filemanager-listview-item-icon-text: k-try-tint( $filemanager-text, 4 ) !default;
 $filemanager-listview-item-icon-border: null !default;
@@ -63,7 +63,7 @@ $filemanager-preview-bg: null !default;
 $filemanager-preview-text: null !default;
 $filemanager-preview-border: null !default;
 
-$filemanager-preview-icon-size: ($icon-size * 6) !default;
+$filemanager-preview-icon-size: ($kendo-icon-size * 6) !default;
 $filemanager-preview-icon-bg: null !default;
 $filemanager-preview-icon-text: k-try-tint( $filemanager-text, 4 ) !default;
 $filemanager-preview-icon-border: null !default;

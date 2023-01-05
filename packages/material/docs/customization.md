@@ -6167,7 +6167,7 @@ The following table lists the available variables for customizing the Material t
     <td>Calculation</td>
 <td>
 
-`calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$icon-size} )`
+`calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$kendo-icon-size} )`
 
 </td>
 <td>
@@ -6685,7 +6685,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`$icon-spacing`
+`$kendo-icon-spacing`
 
 </td>
 <td>

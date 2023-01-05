@@ -194,7 +194,7 @@
             .k-sort-order {
                 display: inline-block;
                 vertical-align: top;
-                height: $icon-size;
+                height: $kendo-icon-size;
                 font-size: $kendo-grid-sorting-index-font-size;
                 margin-top: $kendo-grid-sorting-index-spacing-y;
                 margin-inline-start: $kendo-grid-sorting-index-spacing-x;
@@ -273,8 +273,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( #{k-math-div( $icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
-            margin-inline-end: k-math-div( $icon-size, 2 );
+            margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
+            margin-inline-end: k-math-div( $kendo-icon-size, 2 );
             text-decoration: none;
         }
 
@@ -925,7 +925,7 @@
             }
 
             .k-grouping-row .k-icon {
-                margin-inline-start: calc( #{k-math-div( $icon-size, 2 )} - #{$_cell-padding-x} );
+                margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$_cell-padding-x} );
             }
 
             .k-grouping-dropclue {
@@ -1209,7 +1209,7 @@
         cursor: pointer;
 
         > .k-icon {
-            margin-inline-end: $icon-spacing;
+            margin-inline-end: $kendo-icon-spacing;
         }
     }
 

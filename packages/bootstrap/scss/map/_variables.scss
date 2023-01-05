@@ -11,7 +11,7 @@ $map-border: $kendo-component-border !default;
 
 $map-navigator-margin: k-map-get( $kendo-spacing, 4 ) !default;
 $map-navigator-padding: 2px !default;
-$map-navigator-width: calc( #{$icon-size * 3} + #{$map-navigator-padding * 2} ) !default;
+$map-navigator-width: calc( #{$kendo-icon-size * 3} + #{$map-navigator-padding * 2} ) !default;
 $map-navigator-height: $map-navigator-width !default;
 $map-navigator-border-width: 1px !default;
 
@@ -24,5 +24,5 @@ $map-attribution-padding-y: $kendo-padding-sm-y !default;
 $map-attribution-font-size: ($map-font-size * .75) !default;
 $map-attribution-bg: rgba( $map-bg, .8 ) !default;
 
-$map-marker-size: $icon-size-lg !default;
+$map-marker-size: $kendo-icon-size-xxl !default;
 $map-marker-fill: $kendo-color-primary !default;

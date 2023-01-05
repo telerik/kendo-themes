@@ -133,8 +133,8 @@
 
         .k-fab-icon {
             &:not(:only-child) {
-                margin-right: -$icon-spacing;
-                margin-left: $icon-spacing;
+                margin-right: -$kendo-icon-spacing;
+                margin-left: $kendo-icon-spacing;
             }
         }
     }

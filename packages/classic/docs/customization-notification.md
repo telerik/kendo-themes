@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$icon-spacing`
+`$kendo-icon-spacing`
 
 </td>
 <td>

@@ -13,7 +13,7 @@ $dropzone-bg: if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 ) !def
 $dropzone-text: $kendo-component-text !default;
 $dropzone-border: $kendo-component-border !default;
 
-$dropzone-icon-size: ( $icon-size * 3 ) !default;
+$dropzone-icon-size: ( $kendo-icon-size * 3 ) !default;
 $dropzone-icon-spacing: k-map-get( $kendo-spacing, 6 ) !default;
 $dropzone-icon-text: k-try-tint( $dropzone-text, 8 ) !default;
 $dropzone-icon-hover-text: $kendo-color-primary !default;

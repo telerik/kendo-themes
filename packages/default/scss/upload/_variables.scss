@@ -26,14 +26,14 @@ $kendo-upload-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-upload-multiple-items-spacing: 12px !default;
 
 $kendo-upload-validation-font-size: 11px !default;
-$kendo-upload-icon-spacing: $icon-spacing !default;
+$kendo-upload-icon-spacing: $kendo-icon-spacing !default;
 $kendo-upload-icon-color: $kendo-subtle-text !default;
 
 $kendo-upload-item-image-width: 30px !default;
 $kendo-upload-item-image-height: 30px !default;
 $kendo-upload-item-image-border: 0px !default; // TODO: remove
 
-$kendo-upload-group-icon-size: $icon-size-lg !default;
+$kendo-upload-group-icon-size: $kendo-icon-size-xxl !default;
 
 $kendo-upload-progress-thickness: 2px !default;
 $kendo-upload-progress-bg: $kendo-color-info !default;
