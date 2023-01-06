@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( var( --kendo-icon-size-lg, 2rem ) * 2 )`
+`calc( var( --kendo-icon-size-xxl, 2rem ) * 2 )`
 
 </td>
 <td>

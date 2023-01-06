@@ -27122,7 +27122,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`var( --kendo-icon-size-lg, 1rem )`
+`var( --kendo-icon-size-xxl, 2rem )`
 
 </td>
 <td>
@@ -37749,7 +37749,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( var( --kendo-icon-size-lg, 2rem ) * 2 )`
+`calc( var( --kendo-icon-size-xxl, 2rem ) * 2 )`
 
 </td>
 <td>
@@ -49312,7 +49312,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`var( --kendo-icon-size-lg, 2rem )`
+`var( --kendo-icon-size-xxl, 2rem )`
 
 </td>
 <td>

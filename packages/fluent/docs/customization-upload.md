@@ -426,7 +426,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-icon-size-lg, 2rem )`
+`var( --kendo-icon-size-xxl, 2rem )`
 
 </td>
 <td>
