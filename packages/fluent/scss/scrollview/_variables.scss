@@ -84,7 +84,7 @@ $kendo-scrollview-pager-dark-bg: rgba( $kendo-color-black, .4 ) !default;
 
 /// Scrollview arrow arrows size.
 /// @group scrollview
-$kendo-scrollview-arrow-icon-size: calc( var( --kendo-icon-size-lg, 2rem ) * 2 ) !default;
+$kendo-scrollview-arrow-icon-size: calc( var( --kendo-icon-size-xxl, 2rem ) * 2 ) !default;
 /// Scrollview navigation text color.
 /// @group scrollview
 $kendo-scrollview-navigation-color: $kendo-color-white !default;
