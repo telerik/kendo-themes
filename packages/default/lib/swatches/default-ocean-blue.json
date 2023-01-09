@@ -16,6 +16,11 @@
         {
             "name": "Theme colors",
             "variables": {
+                "kendo-is-dark-theme": {
+                    "name": "Dark theme",
+                    "type": "boolean",
+                    "value": false
+                },
                 "kendo-color-primary": {
                     "name": "Primary",
                     "type": "color",
@@ -161,12 +166,12 @@
         {
             "name": "Link",
             "variables": {
-                "link-text": {
+                "kendo-link-text": {
                     "name": "Link text color",
                     "type": "color",
                     "value": "#1274AC"
                 },
-                "link-hover-text": {
+                "kendo-link-hover-text": {
                     "name": "Link hover text color",
                     "type": "color",
                     "value": "#0f6190"
@@ -186,32 +191,32 @@
         {
             "name": "Dataviz",
             "variables": {
-                "series-a": {
+                "kendo-series-a": {
                     "name": "Series A",
                     "type": "color",
                     "value": "#1274AC"
                 },
-                "series-b": {
+                "kendo-series-b": {
                     "name": "Series B",
                     "type": "color",
                     "value": "#FFE162"
                 },
-                "series-c": {
+                "kendo-series-c": {
                     "name": "Series C",
                     "type": "color",
                     "value": "#4CD180"
                 },
-                "series-d": {
+                "kendo-series-d": {
                     "name": "Series D",
                     "type": "color",
                     "value": "#0074e6"
                 },
-                "series-e": {
+                "kendo-series-e": {
                     "name": "Series E",
                     "type": "color",
                     "value": "#9B4FE6"
                 },
-                "series-f": {
+                "kendo-series-f": {
                     "name": "Series F",
                     "type": "color",
                     "value": "#FF80AC"
