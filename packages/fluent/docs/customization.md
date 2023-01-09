@@ -6761,7 +6761,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`get-theme-color( series-a, 100 )`
+`get-theme-color-var( series-a-100 )`
 
 </td>
 <td>
@@ -6779,7 +6779,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`get-theme-color( series-b, 100 )`
+`get-theme-color-var( series-b-100 )`
 
 </td>
 <td>
@@ -6797,7 +6797,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`get-theme-color( series-c, 100 )`
+`get-theme-color-var( series-c-100 )`
 
 </td>
 <td>
@@ -6815,7 +6815,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`get-theme-color( series-d, 100 )`
+`get-theme-color-var( series-d-100 )`
 
 </td>
 <td>
@@ -6833,7 +6833,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`get-theme-color( series-e, 100 )`
+`get-theme-color-var( series-e-100 )`
 
 </td>
 <td>
@@ -6851,7 +6851,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`get-theme-color( series-f, 100 )`
+`get-theme-color-var( series-f-100 )`
 
 </td>
 <td>
