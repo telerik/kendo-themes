@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$series-a</td>
+    <td>$kendo-series-a</td>
     <td>Color</td>
 <td>
 
@@ -46,7 +46,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$series-b</td>
+    <td>$kendo-series-b</td>
     <td>Color</td>
 <td>
 
@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$series-c</td>
+    <td>$kendo-series-c</td>
     <td>Color</td>
 <td>
 
@@ -86,7 +86,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$series-d</td>
+    <td>$kendo-series-d</td>
     <td>Color</td>
 <td>
 
@@ -106,7 +106,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$series-e</td>
+    <td>$kendo-series-e</td>
     <td>Color</td>
 <td>
 
@@ -126,7 +126,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$series-f</td>
+    <td>$kendo-series-f</td>
     <td>Color</td>
 <td>
 
@@ -146,11 +146,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$series-1</td>
+    <td>$kendo-series-1</td>
     <td>Color</td>
 <td>
 
-`$series-a`
+`$kendo-series-a`
 
 </td>
 <td>
@@ -166,11 +166,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$chart-major-lines</td>
+    <td>$kendo-chart-major-lines</td>
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
+`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
 
 </td>
 <td>
@@ -186,11 +186,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$chart-minor-lines</td>
+    <td>$kendo-chart-minor-lines</td>
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .04 )`
+`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 )`
 
 </td>
 <td>

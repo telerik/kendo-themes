@@ -354,7 +354,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-button-padding-y-md`
+`$kendo-button-md-padding-y`
 
 </td>
 <td>

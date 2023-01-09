@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-colorgradient-spacer</td>
+    <td>$kendo-color-gradient-spacer</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-width</td>
+    <td>$kendo-color-gradient-width</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-border-width</td>
+    <td>$kendo-color-gradient-border-width</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-border-radius</td>
+    <td>$kendo-color-gradient-border-radius</td>
     <td></td>
 <td>
 
@@ -98,11 +98,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-padding-y</td>
+    <td>$kendo-color-gradient-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-colorgradient-spacer`
+`$kendo-color-gradient-spacer`
 
 </td>
 <td>
@@ -116,11 +116,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-padding-x</td>
+    <td>$kendo-color-gradient-padding-x</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 2 )`
+`math.div( $kendo-color-gradient-spacer, 2 )`
 
 </td>
 <td>
@@ -134,11 +134,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-spacing</td>
+    <td>$kendo-color-gradient-spacing</td>
     <td></td>
 <td>
 
-`$kendo-colorgradient-spacer`
+`$kendo-color-gradient-spacer`
 
 </td>
 <td>
@@ -152,7 +152,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-font-family</td>
+    <td>$kendo-color-gradient-font-family</td>
     <td></td>
 <td>
 
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-font-size</td>
+    <td>$kendo-color-gradient-font-size</td>
     <td></td>
 <td>
 
@@ -188,7 +188,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-line-height</td>
+    <td>$kendo-color-gradient-line-height</td>
     <td></td>
 <td>
 
@@ -206,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-bg</td>
+    <td>$kendo-color-gradient-bg</td>
     <td></td>
 <td>
 
@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-text</td>
+    <td>$kendo-color-gradient-text</td>
     <td></td>
 <td>
 
@@ -242,7 +242,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-border</td>
+    <td>$kendo-color-gradient-border</td>
     <td></td>
 <td>
 
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-shadow</td>
+    <td>$kendo-color-gradient-shadow</td>
     <td></td>
 <td>
 
@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-focus-border</td>
+    <td>$kendo-color-gradient-focus-border</td>
     <td></td>
 <td>
 
@@ -296,7 +296,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-focus-shadow</td>
+    <td>$kendo-color-gradient-focus-shadow</td>
     <td></td>
 <td>
 
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-border-radius</td>
+    <td>$kendo-color-gradient-canvas-border-radius</td>
     <td></td>
 <td>
 
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-border-width</td>
+    <td>$kendo-color-gradient-canvas-border-width</td>
     <td></td>
 <td>
 
@@ -350,11 +350,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-spacing</td>
+    <td>$kendo-color-gradient-canvas-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 2 )`
+`math.div( $kendo-color-gradient-spacer, 2 )`
 
 </td>
 <td>
@@ -368,7 +368,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-rectangle-height</td>
+    <td>$kendo-color-gradient-canvas-rectangle-height</td>
     <td></td>
 <td>
 
@@ -386,7 +386,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-rectangle-border</td>
+    <td>$kendo-color-gradient-canvas-rectangle-border</td>
     <td></td>
 <td>
 
@@ -404,7 +404,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-draghandle-shadow</td>
+    <td>$kendo-color-gradient-canvas-draghandle-shadow</td>
     <td></td>
 <td>
 
@@ -422,7 +422,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-width</td>
+    <td>$kendo-color-gradient-input-width</td>
     <td></td>
 <td>
 
@@ -440,11 +440,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-spacing</td>
+    <td>$kendo-color-gradient-input-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 4 )`
+`math.div( $kendo-color-gradient-spacer, 4 )`
 
 </td>
 <td>
@@ -458,7 +458,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-label-font-size</td>
+    <td>$kendo-color-gradient-input-label-font-size</td>
     <td></td>
 <td>
 
@@ -476,11 +476,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-label-spacing</td>
+    <td>$kendo-color-gradient-input-label-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 4 )`
+`math.div( $kendo-color-gradient-spacer, 4 )`
 
 </td>
 <td>
@@ -494,7 +494,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-label-text</td>
+    <td>$kendo-color-gradient-input-label-text</td>
     <td></td>
 <td>
 
@@ -512,7 +512,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-contrast-ratio-font-weight</td>
+    <td>$kendo-color-gradient-contrast-ratio-font-weight</td>
     <td></td>
 <td>
 
@@ -530,11 +530,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-contrast-spacing</td>
+    <td>$kendo-color-gradient-contrast-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 1.5 )`
+`math.div( $kendo-color-gradient-spacer, 1.5 )`
 
 </td>
 <td>
@@ -548,7 +548,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-track-size</td>
+    <td>$kendo-color-gradient-slider-track-size</td>
     <td></td>
 <td>
 
@@ -566,7 +566,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-border-radius</td>
+    <td>$kendo-color-gradient-slider-border-radius</td>
     <td></td>
 <td>
 
@@ -584,7 +584,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-border-width</td>
+    <td>$kendo-color-gradient-slider-border-width</td>
     <td></td>
 <td>
 
@@ -602,7 +602,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-border</td>
+    <td>$kendo-color-gradient-slider-border</td>
     <td></td>
 <td>
 
@@ -620,7 +620,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-vertical-size</td>
+    <td>$kendo-color-gradient-slider-vertical-size</td>
     <td></td>
 <td>
 
@@ -638,7 +638,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-horizontal-size</td>
+    <td>$kendo-color-gradient-slider-horizontal-size</td>
     <td></td>
 <td>
 
@@ -656,7 +656,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-alpha-bgr</td>
+    <td>$kendo-color-gradient-slider-alpha-bgr</td>
     <td></td>
 <td>
 
@@ -674,7 +674,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-width</td>
+    <td>$kendo-color-gradient-draghandle-width</td>
     <td></td>
 <td>
 
@@ -692,7 +692,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-height</td>
+    <td>$kendo-color-gradient-draghandle-height</td>
     <td></td>
 <td>
 
@@ -710,7 +710,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-border-width</td>
+    <td>$kendo-color-gradient-draghandle-border-width</td>
     <td></td>
 <td>
 
@@ -728,7 +728,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-border</td>
+    <td>$kendo-color-gradient-draghandle-border</td>
     <td></td>
 <td>
 
@@ -746,7 +746,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-shadow</td>
+    <td>$kendo-color-gradient-draghandle-shadow</td>
     <td></td>
 <td>
 
@@ -764,11 +764,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-focus-shadow</td>
+    <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td></td>
 <td>
 
-`$kendo-colorgradient-draghandle-shadow`
+`$kendo-color-gradient-draghandle-shadow`
 
 </td>
 <td>
@@ -782,7 +782,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-focus-border</td>
+    <td>$kendo-color-gradient-draghandle-focus-border</td>
     <td></td>
 <td>
 
@@ -800,11 +800,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-hover-shadow</td>
+    <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td></td>
 <td>
 
-`$kendo-colorgradient-draghandle-focus-shadow`
+`$kendo-color-gradient-draghandle-focus-shadow`
 
 </td>
 <td>
@@ -818,11 +818,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-draghandle-offset-y</td>
+    <td>$kendo-color-gradient-canvas-draghandle-offset-y</td>
     <td></td>
 <td>
 
-`( -1 * math.div( $kendo-colorgradient-draghandle-height, 2 ) )`
+`( -1 * math.div( $kendo-color-gradient-draghandle-height, 2 ) )`
 
 </td>
 <td>
@@ -836,11 +836,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-draghandle-offset-x</td>
+    <td>$kendo-color-gradient-canvas-draghandle-offset-x</td>
     <td></td>
 <td>
 
-`( -1 * math.div( $kendo-colorgradient-draghandle-width, 2 ) )`
+`( -1 * math.div( $kendo-color-gradient-draghandle-width, 2 ) )`
 
 </td>
 <td>

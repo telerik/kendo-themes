@@ -48,7 +48,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$base-bg</td>
+    <td>$kendo-base-bg</td>
     <td>Color</td>
 <td>
 
@@ -70,7 +70,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$base-text</td>
+    <td>$kendo-base-text</td>
     <td>Color</td>
 <td>
 
@@ -90,7 +90,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$base-border</td>
+    <td>$kendo-base-border</td>
     <td>Color</td>
 <td>
 
@@ -110,7 +110,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$base-gradient</td>
+    <td>$kendo-base-gradient</td>
     <td>List</td>
 <td>
 
@@ -132,7 +132,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`k-try-shade( $base-bg, .5 )`
+`k-try-shade( $kendo-base-bg, .5 )`
 
 </td>
 <td>
@@ -152,7 +152,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-base-text`
 
 </td>
 <td>
@@ -172,7 +172,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-border`
+`$kendo-base-border`
 
 </td>
 <td>
@@ -192,7 +192,7 @@ The following table lists the available variables for customizing the Default th
     <td>List</td>
 <td>
 
-`$base-gradient`
+`$kendo-base-gradient`
 
 </td>
 <td>
@@ -250,7 +250,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-border`
+`$kendo-base-border`
 
 </td>
 <td>
@@ -270,7 +270,7 @@ The following table lists the available variables for customizing the Default th
     <td>List</td>
 <td>
 
-`$base-gradient`
+`$kendo-base-gradient`
 
 </td>
 <td>
@@ -327,7 +327,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -345,7 +345,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -363,7 +363,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -514,7 +514,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-xs`
+`$kendo-font-size-xs`
 
 </td>
 <td>
@@ -542,7 +542,7 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -570,25 +570,25 @@ The following table lists the available variables for customizing the Default th
 
 `(
     sm: (
-        padding-x: $kendo-badge-padding-x-sm,
-        padding-y: $kendo-badge-padding-y-sm,
-        font-size: $kendo-badge-font-size-sm,
-        line-height: $kendo-badge-line-height-sm,
-        min-width: $kendo-badge-min-width-sm
+        padding-x: $kendo-badge-sm-padding-x,
+        padding-y: $kendo-badge-sm-padding-y,
+        font-size: $kendo-badge-sm-font-size,
+        line-height: $kendo-badge-sm-line-height,
+        min-width: $kendo-badge-sm-min-width
     ),
     md: (
-        padding-x: $kendo-badge-padding-x-md,
-        padding-y: $kendo-badge-padding-y-md,
-        font-size: $kendo-badge-font-size-md,
-        line-height: $kendo-badge-line-height-md,
-        min-width: $kendo-badge-min-width-md
+        padding-x: $kendo-badge-md-padding-x,
+        padding-y: $kendo-badge-md-padding-y,
+        font-size: $kendo-badge-md-font-size,
+        line-height: $kendo-badge-md-line-height,
+        min-width: $kendo-badge-md-min-width
     ),
     lg: (
-        padding-x: $kendo-badge-padding-x-lg,
-        padding-y: $kendo-badge-padding-y-lg,
-        font-size: $kendo-badge-font-size-lg,
-        line-height: $kendo-badge-line-height-lg,
-        min-width: $kendo-badge-min-width-lg
+        padding-x: $kendo-badge-lg-padding-x,
+        padding-y: $kendo-badge-lg-padding-y,
+        font-size: $kendo-badge-lg-font-size,
+        line-height: $kendo-badge-lg-line-height,
+        min-width: $kendo-badge-lg-min-width
     )
 )`
 
@@ -701,7 +701,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -719,7 +719,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-md`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -737,7 +737,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height-md`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -747,7 +747,7 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -1497,7 +1497,7 @@ The following table lists the available variables for customizing the Default th
 </thead>
 <tbody>
         <tr>
-    <td>$series-a</td>
+    <td>$kendo-series-a</td>
     <td>Color</td>
 <td>
 
@@ -1519,7 +1519,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$series-b</td>
+    <td>$kendo-series-b</td>
     <td>Color</td>
 <td>
 
@@ -1541,7 +1541,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$series-c</td>
+    <td>$kendo-series-c</td>
     <td>Color</td>
 <td>
 
@@ -1563,7 +1563,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$series-d</td>
+    <td>$kendo-series-d</td>
     <td>Color</td>
 <td>
 
@@ -1585,7 +1585,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$series-e</td>
+    <td>$kendo-series-e</td>
     <td>Color</td>
 <td>
 
@@ -1607,7 +1607,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$series-f</td>
+    <td>$kendo-series-f</td>
     <td>Color</td>
 <td>
 
@@ -1629,11 +1629,11 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$series-1</td>
+    <td>$kendo-series-1</td>
     <td>Color</td>
 <td>
 
-`$series-a`
+`$kendo-series-a`
 
 </td>
 <td>
@@ -1649,11 +1649,11 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$chart-major-lines</td>
+    <td>$kendo-chart-major-lines</td>
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
+`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
 
 </td>
 <td>
@@ -1669,11 +1669,11 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$chart-minor-lines</td>
+    <td>$kendo-chart-minor-lines</td>
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .04 )`
+`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 )`
 
 </td>
 <td>
@@ -2364,7 +2364,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>
@@ -2513,7 +2513,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-md`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -2541,7 +2541,7 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -2569,22 +2569,22 @@ The following table lists the available variables for customizing the Default th
 
 `(
     sm: (
-        padding-x: $kendo-chip-padding-x-sm,
-        padding-y: $kendo-chip-padding-y-sm,
-        font-size: $kendo-chip-font-size-sm,
-        line-height: $kendo-chip-line-height-sm
+        padding-x: $kendo-chip-sm-padding-x,
+        padding-y: $kendo-chip-sm-padding-y,
+        font-size: $kendo-chip-sm-font-size,
+        line-height: $kendo-chip-sm-line-height
     ),
     md: (
-        padding-x: $kendo-chip-padding-x-md,
-        padding-y: $kendo-chip-padding-y-md,
-        font-size: $kendo-chip-font-size-md,
-        line-height: $kendo-chip-line-height-md
+        padding-x: $kendo-chip-md-padding-x,
+        padding-y: $kendo-chip-md-padding-y,
+        font-size: $kendo-chip-md-font-size,
+        line-height: $kendo-chip-md-line-height
     ),
     lg: (
-        padding-x: $kendo-chip-padding-x-lg,
-        padding-y: $kendo-chip-padding-y-lg,
-        font-size: $kendo-chip-font-size-lg,
-        line-height: $kendo-chip-line-height-lg
+        padding-x: $kendo-chip-lg-padding-x,
+        padding-y: $kendo-chip-lg-padding-y,
+        font-size: $kendo-chip-lg-font-size,
+        line-height: $kendo-chip-lg-line-height
     )
 )`
 
@@ -2708,7 +2708,7 @@ The following table lists the available variables for customizing the Default th
     <td>List</td>
 <td>
 
-`0 0 0 2px if( $dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) )`
+`0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) )`
 
 </td>
 <td>
@@ -2916,7 +2916,7 @@ The following table lists the available variables for customizing the Default th
     <td>List</td>
 <td>
 
-`0 0 0 2px if( $dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) )`
+`0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) )`
 
 </td>
 <td>
@@ -3315,7 +3315,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`if( $dark-theme, $kendo-color-light, $kendo-color-dark )`
+`if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark )`
 
 </td>
 <td>
@@ -3396,7 +3396,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
+`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
 
 </td>
 <td>
@@ -3516,7 +3516,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -3534,7 +3534,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -3552,7 +3552,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -3768,7 +3768,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-xs`
+`$kendo-font-size-xs`
 
 </td>
 <td>
@@ -4179,7 +4179,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$kendo-table-cell-padding-x-md`
+`$kendo-table-md-cell-padding-x`
 
 </td>
 <td>
@@ -4197,7 +4197,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$kendo-table-cell-padding-y-md`
+`$kendo-table-md-cell-padding-y`
 
 </td>
 <td>
@@ -4872,7 +4872,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -4890,7 +4890,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-md`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -4908,7 +4908,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height-md`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -5776,7 +5776,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -5794,7 +5794,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -5812,7 +5812,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -6019,7 +6019,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$popup-border-width`
+`$kendo-popup-border-width`
 
 </td>
 <td>
@@ -6037,7 +6037,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-md`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -6055,7 +6055,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height-md`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -6065,7 +6065,7 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -6073,7 +6073,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$popup-bg`
+`$kendo-popup-bg`
 
 </td>
 <td>
@@ -6093,7 +6093,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$popup-text`
+`$kendo-popup-text`
 
 </td>
 <td>
@@ -6113,7 +6113,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$popup-border`
+`$kendo-popup-border`
 
 </td>
 <td>
@@ -6201,11 +6201,11 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-icon-margin-start-sm</td>
+    <td>$kendo-menu-popup-sm-item-icon-margin-start</td>
     <td>Number</td>
 <td>
 
-`$kendo-menu-popup-item-padding-x-sm`
+`$kendo-menu-popup-sm-item-padding-x`
 
 </td>
 <td>
@@ -6219,11 +6219,11 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-icon-margin-end-sm</td>
+    <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
 <td>
 
-`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{k-math-div( $kendo-menu-popup-item-padding-x-sm, 2 )}) )`
+`calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) )`
 
 </td>
 <td>
@@ -6483,7 +6483,7 @@ The following table lists the available variables for customizing the Default th
     <td>List</td>
 <td>
 
-`$menu-item-focus-shadow`
+`$kendo-menu-item-focus-shadow`
 
 </td>
 <td>
@@ -6633,7 +6633,7 @@ The following table lists the available variables for customizing the Default th
     <td>List</td>
 <td>
 
-`$popup-shadow`
+`$kendo-popup-shadow`
 
 </td>
 <td>
@@ -6651,7 +6651,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -6669,7 +6669,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-sm`
+`$kendo-font-size-sm`
 
 </td>
 <td>
@@ -6687,7 +6687,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -6854,11 +6854,11 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-item-min-width-sm</td>
+    <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
 <td>
 
-`$kendo-button-calc-size-sm`
+`$kendo-button-sm-calc-size`
 
 </td>
 <td>
@@ -6872,7 +6872,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-item-group-spacing-sm</td>
+    <td>$kendo-pager-sm-item-group-spacing</td>
     <td>Number</td>
 <td>
 
@@ -6912,7 +6912,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -6930,7 +6930,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -6948,7 +6948,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -7392,7 +7392,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-dropdown-width-sm</td>
+    <td>$kendo-pager-sm-dropdown-width</td>
     <td>Number</td>
 <td>
 
@@ -7416,25 +7416,25 @@ The following table lists the available variables for customizing the Default th
 
 `(
     sm: (
-        padding-x: $kendo-pager-padding-x-sm,
-        padding-y: $kendo-pager-padding-y-sm,
-        item-group-spacing: $kendo-pager-item-group-spacing-sm,
-        item-min-width: $kendo-pager-item-min-width-sm,
-        pager-dropdown-width: $kendo-pager-dropdown-width-sm
+        padding-x: $kendo-pager-sm-padding-x,
+        padding-y: $kendo-pager-sm-padding-y,
+        item-group-spacing: $kendo-pager-sm-item-group-spacing,
+        item-min-width: $kendo-pager-sm-item-min-width,
+        pager-dropdown-width: $kendo-pager-sm-dropdown-width
     ),
     md: (
-        padding-x: $kendo-pager-padding-x-md,
-        padding-y: $kendo-pager-padding-y-md,
-        item-group-spacing: $kendo-pager-item-group-spacing-md,
-        item-min-width: $kendo-pager-item-min-width-md,
-        pager-dropdown-width: $kendo-pager-dropdown-width-md
+        padding-x: $kendo-pager-md-padding-x,
+        padding-y: $kendo-pager-md-padding-y,
+        item-group-spacing: $kendo-pager-md-item-group-spacing,
+        item-min-width: $kendo-pager-md-item-min-width,
+        pager-dropdown-width: $kendo-pager-md-dropdown-width
     ),
     lg: (
-        padding-x: $kendo-pager-padding-x-lg,
-        padding-y: $kendo-pager-padding-y-lg,
-        item-group-spacing: $kendo-pager-item-group-spacing-lg,
-        item-min-width: $kendo-pager-item-min-width-lg,
-        pager-dropdown-width: $kendo-pager-dropdown-width-lg
+        padding-x: $kendo-pager-lg-padding-x,
+        padding-y: $kendo-pager-lg-padding-y,
+        item-group-spacing: $kendo-pager-lg-item-group-spacing,
+        item-min-width: $kendo-pager-lg-item-min-width,
+        pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )`
 
@@ -7547,7 +7547,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -7565,7 +7565,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-sm`
+`$kendo-font-size-sm`
 
 </td>
 <td>
@@ -8506,7 +8506,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>
@@ -8992,7 +8992,7 @@ The following table lists the available variables for customizing the Default th
     <td>List</td>
 <td>
 
-`2px solid rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ) , .08 )`
+`2px solid rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ) , .08 )`
 
 </td>
 <td>
@@ -9082,7 +9082,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-bg`
+`$kendo-base-bg`
 
 </td>
 <td>
@@ -9102,7 +9102,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-base-text`
 
 </td>
 <td>
@@ -9122,7 +9122,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-border`
+`$kendo-base-border`
 
 </td>
 <td>
@@ -9544,7 +9544,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-bg`
+`$kendo-base-bg`
 
 </td>
 <td>
@@ -9564,7 +9564,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-base-text`
 
 </td>
 <td>
@@ -9584,7 +9584,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-border`
+`$kendo-base-border`
 
 </td>
 <td>
@@ -9843,22 +9843,22 @@ The following table lists the available variables for customizing the Default th
 
 `(
     sm: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        cell-padding-x: $kendo-table-cell-padding-x-sm,
-        cell-padding-y: $kendo-table-cell-padding-y-sm
+        font-size: $kendo-font-size-md,
+        line-height: $kendo-line-height-md,
+        cell-padding-x: $kendo-table-sm-cell-padding-x,
+        cell-padding-y: $kendo-table-sm-cell-padding-y
     ),
     md: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        cell-padding-x: $kendo-table-cell-padding-x-md,
-        cell-padding-y: $kendo-table-cell-padding-y-md
+        font-size: $kendo-font-size-md,
+        line-height: $kendo-line-height-md,
+        cell-padding-x: $kendo-table-md-cell-padding-x,
+        cell-padding-y: $kendo-table-md-cell-padding-y
     ),
     lg: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        cell-padding-x: $kendo-table-cell-padding-x-lg,
-        cell-padding-y: $kendo-table-cell-padding-y-lg
+        font-size: $kendo-font-size-md,
+        line-height: $kendo-line-height-md,
+        cell-padding-x: $kendo-table-lg-cell-padding-x,
+        cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )`
 
@@ -10393,7 +10393,7 @@ The following table lists the available variables for customizing the Default th
 </thead>
 <tbody>
         <tr>
-    <td>$tabstrip-bg</td>
+    <td>$kendo-tabstrip-bg</td>
     <td>Null</td>
 <td>
 
@@ -10411,7 +10411,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-text</td>
+    <td>$kendo-tabstrip-text</td>
     <td>Color</td>
 <td>
 
@@ -10431,7 +10431,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-border</td>
+    <td>$kendo-tabstrip-border</td>
     <td>Color</td>
 <td>
 
@@ -10451,7 +10451,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-padding-x</td>
+    <td>$kendo-tabstrip-item-padding-x</td>
     <td>Number</td>
 <td>
 
@@ -10469,7 +10469,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-padding-y</td>
+    <td>$kendo-tabstrip-item-padding-y</td>
     <td>Number</td>
 <td>
 
@@ -10487,7 +10487,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-border-width</td>
+    <td>$kendo-tabstrip-item-border-width</td>
     <td>Number</td>
 <td>
 
@@ -10505,7 +10505,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-border-radius</td>
+    <td>$kendo-tabstrip-item-border-radius</td>
     <td>Number</td>
 <td>
 
@@ -10523,7 +10523,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-gap</td>
+    <td>$kendo-tabstrip-item-gap</td>
     <td>Number</td>
 <td>
 
@@ -10541,7 +10541,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-bg</td>
+    <td>$kendo-tabstrip-item-bg</td>
     <td>Null</td>
 <td>
 
@@ -10559,11 +10559,11 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-text</td>
+    <td>$kendo-tabstrip-item-text</td>
     <td>Color</td>
 <td>
 
-`$link-text`
+`$kendo-link-text`
 
 </td>
 <td>
@@ -10579,7 +10579,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-border</td>
+    <td>$kendo-tabstrip-item-border</td>
     <td>Null</td>
 <td>
 
@@ -10597,7 +10597,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-gradient</td>
+    <td>$kendo-tabstrip-item-gradient</td>
     <td>Null</td>
 <td>
 
@@ -10615,7 +10615,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hover-bg</td>
+    <td>$kendo-tabstrip-item-hover-bg</td>
     <td>Null</td>
 <td>
 
@@ -10633,11 +10633,11 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hover-text</td>
+    <td>$kendo-tabstrip-item-hover-text</td>
     <td>Color</td>
 <td>
 
-`$link-hover-text`
+`$kendo-link-hover-text`
 
 </td>
 <td>
@@ -10653,7 +10653,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hover-border</td>
+    <td>$kendo-tabstrip-item-hover-border</td>
     <td>Null</td>
 <td>
 
@@ -10671,7 +10671,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hover-gradient</td>
+    <td>$kendo-tabstrip-item-hover-gradient</td>
     <td>Null</td>
 <td>
 
@@ -10689,7 +10689,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-selected-bg</td>
+    <td>$kendo-tabstrip-item-selected-bg</td>
     <td>Color</td>
 <td>
 
@@ -10709,7 +10709,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-selected-text</td>
+    <td>$kendo-tabstrip-item-selected-text</td>
     <td>Color</td>
 <td>
 
@@ -10729,7 +10729,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-selected-border</td>
+    <td>$kendo-tabstrip-item-selected-border</td>
     <td>Color</td>
 <td>
 
@@ -10749,7 +10749,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-selected-gradient</td>
+    <td>$kendo-tabstrip-item-selected-gradient</td>
     <td>Null</td>
 <td>
 
@@ -10767,7 +10767,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-padding-x</td>
+    <td>$kendo-tabstrip-content-padding-x</td>
     <td>Number</td>
 <td>
 
@@ -10785,7 +10785,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-padding-y</td>
+    <td>$kendo-tabstrip-content-padding-y</td>
     <td>Number</td>
 <td>
 
@@ -10803,7 +10803,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-border-width</td>
+    <td>$kendo-tabstrip-content-border-width</td>
     <td>Number</td>
 <td>
 
@@ -10821,7 +10821,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-bg</td>
+    <td>$kendo-tabstrip-content-bg</td>
     <td>Color</td>
 <td>
 
@@ -10841,7 +10841,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-text</td>
+    <td>$kendo-tabstrip-content-text</td>
     <td>Color</td>
 <td>
 
@@ -10861,7 +10861,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-border</td>
+    <td>$kendo-tabstrip-content-border</td>
     <td>Color</td>
 <td>
 
@@ -10881,7 +10881,7 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-focus-border</td>
+    <td>$kendo-tabstrip-content-focus-border</td>
     <td>Color</td>
 <td>
 
@@ -11016,7 +11016,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -11034,7 +11034,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -11052,7 +11052,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -11070,7 +11070,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-bg`
+`$kendo-base-bg`
 
 </td>
 <td>
@@ -11090,7 +11090,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-base-text`
 
 </td>
 <td>
@@ -11110,7 +11110,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$base-border`
+`$kendo-base-border`
 
 </td>
 <td>
@@ -11222,19 +11222,19 @@ The following table lists the available variables for customizing the Default th
 
 `(
     sm: (
-        padding-x: $kendo-toolbar-padding-x-sm,
-        padding-y: $kendo-toolbar-padding-y-sm,
-        spacing: $kendo-toolbar-spacing-sm
+        padding-x: $kendo-toolbar-sm-padding-x,
+        padding-y: $kendo-toolbar-sm-padding-y,
+        spacing: $kendo-toolbar-sm-spacing
     ),
     md: (
-        padding-x: $kendo-toolbar-padding-x-md,
-        padding-y: $kendo-toolbar-padding-y-md,
-        spacing: $kendo-toolbar-spacing-md
+        padding-x: $kendo-toolbar-md-padding-x,
+        padding-y: $kendo-toolbar-md-padding-y,
+        spacing: $kendo-toolbar-md-spacing
     ),
     lg: (
-        padding-x: $kendo-toolbar-padding-x-lg,
-        padding-y: $kendo-toolbar-padding-y-lg,
-        spacing: $kendo-toolbar-spacing-lg
+        padding-x: $kendo-toolbar-lg-padding-x,
+        padding-y: $kendo-toolbar-lg-padding-y,
+        spacing: $kendo-toolbar-lg-spacing
     )
 )`
 
@@ -11275,7 +11275,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -11293,7 +11293,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$font-size-md`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -11311,7 +11311,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$line-height-md`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -11421,22 +11421,22 @@ The following table lists the available variables for customizing the Default th
 
 `(
     sm: (
-        font-size: $kendo-treeview-font-size-sm,
-        line-height: $kendo-treeview-line-height-sm,
-        item-padding-x: $kendo-treeview-item-padding-x-sm,
-        item-padding-y: $kendo-treeview-item-padding-y-sm
+        font-size: $kendo-treeview-sm-font-size,
+        line-height: $kendo-treeview-sm-line-height,
+        item-padding-x: $kendo-treeview-sm-item-padding-x,
+        item-padding-y: $kendo-treeview-sm-item-padding-y
     ),
     md: (
-        font-size: $kendo-treeview-font-size-md,
-        line-height: $kendo-treeview-line-height-md,
-        item-padding-x: $kendo-treeview-item-padding-x-md,
-        item-padding-y: $kendo-treeview-item-padding-y-md
+        font-size: $kendo-treeview-md-font-size,
+        line-height: $kendo-treeview-md-line-height,
+        item-padding-x: $kendo-treeview-md-item-padding-x,
+        item-padding-y: $kendo-treeview-md-item-padding-y
     ),
     lg: (
-        font-size: $kendo-treeview-font-size-lg,
-        line-height: $kendo-treeview-line-height-lg,
-        item-padding-x: $kendo-treeview-item-padding-x-lg,
-        item-padding-y: $kendo-treeview-item-padding-y-lg
+        font-size: $kendo-treeview-lg-font-size,
+        line-height: $kendo-treeview-lg-line-height,
+        item-padding-x: $kendo-treeview-lg-item-padding-x,
+        item-padding-y: $kendo-treeview-lg-item-padding-y
     )
 )`
 
@@ -11702,7 +11702,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$link-text`
+`$kendo-link-text`
 
 </td>
 <td>
@@ -11760,7 +11760,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$link-hover-text`
+`$kendo-link-hover-text`
 
 </td>
 <td>
@@ -11818,7 +11818,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$link-hover-text`
+`$kendo-link-hover-text`
 
 </td>
 <td>
@@ -11891,7 +11891,7 @@ The following table lists the available variables for customizing the Default th
 </thead>
 <tbody>
         <tr>
-    <td>$font-size</td>
+    <td>$kendo-font-size</td>
     <td>Number</td>
 <td>
 
@@ -11909,25 +11909,25 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$font-family</td>
-    <td>String</td>
+    <td>$kendo-font-family-sans-serif</td>
+    <td>List</td>
 <td>
 
-`inherit`
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
 
 </td>
 <td>
 
-`inherit`
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for text.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$font-family-monospace</td>
+    <td>$kendo-font-family-monospace</td>
     <td>List</td>
 <td>
 
@@ -11945,7 +11945,25 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$line-height</td>
+    <td>$kendo-font-family</td>
+    <td>String</td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+`inherit`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height</td>
     <td>Number</td>
 <td>
 
@@ -11959,25 +11977,7 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$enable-typography</td>
-    <td>Bool</td>
-<td>
-
-`false`
-
-</td>
-<td>
-
-`false`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global typography styles for the Kendo Default theme.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 </tbody>

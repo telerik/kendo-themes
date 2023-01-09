@@ -62,11 +62,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-item-min-width-sm</td>
+    <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
 <td>
 
-`$kendo-button-calc-size-sm`
+`$kendo-button-sm-calc-size`
 
 </td>
 <td>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-item-group-spacing-sm</td>
+    <td>$kendo-pager-sm-item-group-spacing</td>
     <td>Number</td>
 <td>
 
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$font-size`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-dropdown-width-sm</td>
+    <td>$kendo-pager-sm-dropdown-width</td>
     <td>Number</td>
 <td>
 
@@ -624,25 +624,25 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-pager-padding-x-sm,
-        padding-y: $kendo-pager-padding-y-sm,
-        item-group-spacing: $kendo-pager-item-group-spacing-sm,
-        item-min-width: $kendo-pager-item-min-width-sm,
-        pager-dropdown-width: $kendo-pager-dropdown-width-sm
+        padding-x: $kendo-pager-sm-padding-x,
+        padding-y: $kendo-pager-sm-padding-y,
+        item-group-spacing: $kendo-pager-sm-item-group-spacing,
+        item-min-width: $kendo-pager-sm-item-min-width,
+        pager-dropdown-width: $kendo-pager-sm-dropdown-width
     ),
     md: (
-        padding-x: $kendo-pager-padding-x-md,
-        padding-y: $kendo-pager-padding-y-md,
-        item-group-spacing: $kendo-pager-item-group-spacing-md,
-        item-min-width: $kendo-pager-item-min-width-md,
-        pager-dropdown-width: $kendo-pager-dropdown-width-md
+        padding-x: $kendo-pager-md-padding-x,
+        padding-y: $kendo-pager-md-padding-y,
+        item-group-spacing: $kendo-pager-md-item-group-spacing,
+        item-min-width: $kendo-pager-md-item-min-width,
+        pager-dropdown-width: $kendo-pager-md-dropdown-width
     ),
     lg: (
-        padding-x: $kendo-pager-padding-x-lg,
-        padding-y: $kendo-pager-padding-y-lg,
-        item-group-spacing: $kendo-pager-item-group-spacing-lg,
-        item-min-width: $kendo-pager-item-min-width-lg,
-        pager-dropdown-width: $kendo-pager-dropdown-width-lg
+        padding-x: $kendo-pager-lg-padding-x,
+        padding-y: $kendo-pager-lg-padding-y,
+        item-group-spacing: $kendo-pager-lg-item-group-spacing,
+        item-min-width: $kendo-pager-lg-item-min-width,
+        pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )`
 

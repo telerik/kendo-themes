@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .54 )`
+`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 )`
 
 </td>
 <td>
@@ -686,7 +686,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>

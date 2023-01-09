@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`if( $dark-theme, $kendo-color-light, $kendo-color-dark )`
+`if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark )`
 
 </td>
 <td>

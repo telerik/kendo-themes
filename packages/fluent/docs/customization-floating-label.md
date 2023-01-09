@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( #{$kendo-input-padding-x-md} + #{$kendo-input-border-width} )`
+`calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )`
 
 </td>
 <td>
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y-md} )`
+`calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )`
 
 </td>
 <td>

@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-padding-x-sm</td>
+    <td>$kendo-chip-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -296,7 +296,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-padding-y-sm</td>
+    <td>$kendo-chip-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-font-size-sm</td>
+    <td>$kendo-chip-sm-font-size</td>
     <td></td>
 <td>
 
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-line-height-sm</td>
+    <td>$kendo-chip-sm-line-height</td>
     <td></td>
 <td>
 
@@ -346,7 +346,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -354,7 +354,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( #{$kendo-chip-line-height-md} * 1em + #{$kendo-chip-padding-y-md} * 2 + #{$kendo-chip-border-width} * 2 )`
+`calc( #{$kendo-chip-md-line-height} * 1em + #{$kendo-chip-md-padding-y} * 2 + #{$kendo-chip-border-width} * 2 )`
 
 </td>
 <td>
@@ -374,22 +374,22 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-chip-padding-x-sm,
-        padding-y: $kendo-chip-padding-y-sm,
-        font-size: $kendo-chip-font-size-sm,
-        line-height: $kendo-chip-line-height-sm
+        padding-x: $kendo-chip-sm-padding-x,
+        padding-y: $kendo-chip-sm-padding-y,
+        font-size: $kendo-chip-sm-font-size,
+        line-height: $kendo-chip-sm-line-height
     ),
     md: (
-        padding-x: $kendo-chip-padding-x-md,
-        padding-y: $kendo-chip-padding-y-md,
-        font-size: $kendo-chip-font-size-md,
-        line-height: $kendo-chip-line-height-md
+        padding-x: $kendo-chip-md-padding-x,
+        padding-y: $kendo-chip-md-padding-y,
+        font-size: $kendo-chip-md-font-size,
+        line-height: $kendo-chip-md-line-height
     ),
     lg: (
-        padding-x: $kendo-chip-padding-x-lg,
-        padding-y: $kendo-chip-padding-y-lg,
-        font-size: $kendo-chip-font-size-lg,
-        line-height: $kendo-chip-line-height-lg
+        padding-x: $kendo-chip-lg-padding-x,
+        padding-y: $kendo-chip-lg-padding-y,
+        font-size: $kendo-chip-lg-font-size,
+        line-height: $kendo-chip-lg-line-height
     )
 )`
 

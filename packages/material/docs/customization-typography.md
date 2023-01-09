@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$font-size</td>
+    <td>$kendo-font-size</td>
     <td>Number</td>
 <td>
 
@@ -44,7 +44,25 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$font-family</td>
+    <td>$kendo-font-family-sans-serif</td>
+    <td>List</td>
+<td>
+
+`Roboto, "Helvetica Neue", sans-serif`
+
+</td>
+<td>
+
+`Roboto, "Helvetica Neue", sans-serif`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-font-family</td>
     <td>List</td>
 <td>
 
@@ -62,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$font-family-monospace</td>
+    <td>$kendo-font-family-monospace</td>
     <td>List</td>
 <td>
 
@@ -80,7 +98,25 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$line-height</td>
+    <td>$kendo-font-family</td>
+    <td>List</td>
+<td>
+
+`Roboto, "Helvetica Neue", sans-serif`
+
+</td>
+<td>
+
+`Roboto, "Helvetica Neue", sans-serif`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-line-height</td>
     <td>Number</td>
 <td>
 
@@ -94,25 +130,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$enable-typography</td>
-    <td>Bool</td>
-<td>
-
-`false`
-
-</td>
-<td>
-
-`false`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global typography styles for the Kendo Material theme.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 </tbody>

@@ -102,7 +102,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$font-size-md`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -158,22 +158,22 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-chip-padding-x-sm,
-        padding-y: $kendo-chip-padding-y-sm,
-        font-size: $kendo-chip-font-size-sm,
-        line-height: $kendo-chip-line-height-sm
+        padding-x: $kendo-chip-sm-padding-x,
+        padding-y: $kendo-chip-sm-padding-y,
+        font-size: $kendo-chip-sm-font-size,
+        line-height: $kendo-chip-sm-line-height
     ),
     md: (
-        padding-x: $kendo-chip-padding-x-md,
-        padding-y: $kendo-chip-padding-y-md,
-        font-size: $kendo-chip-font-size-md,
-        line-height: $kendo-chip-line-height-md
+        padding-x: $kendo-chip-md-padding-x,
+        padding-y: $kendo-chip-md-padding-y,
+        font-size: $kendo-chip-md-font-size,
+        line-height: $kendo-chip-md-line-height
     ),
     lg: (
-        padding-x: $kendo-chip-padding-x-lg,
-        padding-y: $kendo-chip-padding-y-lg,
-        font-size: $kendo-chip-font-size-lg,
-        line-height: $kendo-chip-line-height-lg
+        padding-x: $kendo-chip-lg-padding-x,
+        padding-y: $kendo-chip-lg-padding-y,
+        font-size: $kendo-chip-lg-font-size,
+        line-height: $kendo-chip-lg-line-height
     )
 )`
 
@@ -297,7 +297,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 0 2px if( $dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )`
+`0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )`
 
 </td>
 <td>
@@ -505,7 +505,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 0 2px if( $dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )`
+`0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )`
 
 </td>
 <td>

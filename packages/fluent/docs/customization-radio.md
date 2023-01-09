@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>

@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -158,25 +158,25 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-badge-padding-x-sm,
-        padding-y: $kendo-badge-padding-y-sm,
-        font-size: $kendo-badge-font-size-sm,
-        line-height: $kendo-badge-line-height-sm,
-        min-width: $kendo-badge-min-width-sm
+        padding-x: $kendo-badge-sm-padding-x,
+        padding-y: $kendo-badge-sm-padding-y,
+        font-size: $kendo-badge-sm-font-size,
+        line-height: $kendo-badge-sm-line-height,
+        min-width: $kendo-badge-sm-min-width
     ),
     md: (
-        padding-x: $kendo-badge-padding-x-md,
-        padding-y: $kendo-badge-padding-y-md,
-        font-size: $kendo-badge-font-size-md,
-        line-height: $kendo-badge-line-height-md,
-        min-width: $kendo-badge-min-width-md
+        padding-x: $kendo-badge-md-padding-x,
+        padding-y: $kendo-badge-md-padding-y,
+        font-size: $kendo-badge-md-font-size,
+        line-height: $kendo-badge-md-line-height,
+        min-width: $kendo-badge-md-min-width
     ),
     lg: (
-        padding-x: $kendo-badge-padding-x-lg,
-        padding-y: $kendo-badge-padding-y-lg,
-        font-size: $kendo-badge-font-size-lg,
-        line-height: $kendo-badge-line-height-lg,
-        min-width: $kendo-badge-min-width-lg
+        padding-x: $kendo-badge-lg-padding-x,
+        padding-y: $kendo-badge-lg-padding-y,
+        font-size: $kendo-badge-lg-font-size,
+        line-height: $kendo-badge-lg-line-height,
+        min-width: $kendo-badge-lg-min-width
     )
 )`
 

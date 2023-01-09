@@ -102,7 +102,7 @@ The following table lists the available variables for customization.
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$font-size-md`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$line-height-md`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -148,7 +148,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -194,7 +194,7 @@ The following table lists the available variables for customization.
 
 `k-map-merge(
     $kendo-theme-colors,
-    ( "base": $base-bg )
+    ( "base": $kendo-base-bg )
 )`
 
 </td>
@@ -213,7 +213,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-bg`
+`$kendo-base-bg`
 
 </td>
 <td>
@@ -233,7 +233,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-base-text`
 
 </td>
 <td>
@@ -273,7 +273,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`$base-gradient`
+`$kendo-base-gradient`
 
 </td>
 <td>

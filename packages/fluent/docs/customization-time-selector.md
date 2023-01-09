@@ -498,7 +498,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-font-size-sm`
+`$kendo-list-sm-font-size`
 
 </td>
 <td>
@@ -516,7 +516,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-line-height-sm`
+`$kendo-list-sm-line-height`
 
 </td>
 <td>
@@ -526,7 +526,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -534,7 +534,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-item-padding-x-sm`
+`$kendo-list-sm-item-padding-x`
 
 </td>
 <td>
@@ -552,7 +552,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-sm`
+`$kendo-list-sm-item-padding-y`
 
 </td>
 <td>

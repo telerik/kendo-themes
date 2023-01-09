@@ -646,16 +646,16 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-fab-padding-x-sm,
-        padding-y: $kendo-fab-padding-y-sm
+        padding-x: $kendo-fab-sm-padding-x,
+        padding-y: $kendo-fab-sm-padding-y
     ),
     md: (
-        padding-x: $kendo-fab-padding-x-md,
-        padding-y: $kendo-fab-padding-y-md
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y
     ),
     lg: (
-        padding-x: $kendo-fab-padding-x-lg,
-        padding-y: $kendo-fab-padding-y-lg
+        padding-x: $kendo-fab-lg-padding-x,
+        padding-y: $kendo-fab-lg-padding-y
     )
 )`
 

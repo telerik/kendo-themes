@@ -282,7 +282,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height} )`
+`calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height-md} )`
 
 </td>
 <td>

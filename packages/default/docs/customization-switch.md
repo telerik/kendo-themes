@@ -364,7 +364,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`2px solid rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ) , .08 )`
+`2px solid rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ) , .08 )`
 
 </td>
 <td>
@@ -454,7 +454,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-bg`
+`$kendo-base-bg`
 
 </td>
 <td>
@@ -474,7 +474,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-base-text`
 
 </td>
 <td>
@@ -494,7 +494,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-border`
+`$kendo-base-border`
 
 </td>
 <td>
@@ -916,7 +916,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-bg`
+`$kendo-base-bg`
 
 </td>
 <td>
@@ -936,7 +936,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-base-text`
 
 </td>
 <td>
@@ -956,7 +956,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-border`
+`$kendo-base-border`
 
 </td>
 <td>

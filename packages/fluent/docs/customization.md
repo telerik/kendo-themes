@@ -292,7 +292,7 @@ The following table lists the available variables for customizing the Fluent the
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -2387,7 +2387,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-badge-padding-x-sm</td>
+    <td>$kendo-badge-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -2405,7 +2405,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-badge-padding-y-sm</td>
+    <td>$kendo-badge-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -2423,7 +2423,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-badge-font-size-sm</td>
+    <td>$kendo-badge-sm-font-size</td>
     <td></td>
 <td>
 
@@ -2441,7 +2441,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-badge-line-height-sm</td>
+    <td>$kendo-badge-sm-line-height</td>
     <td></td>
 <td>
 
@@ -2459,11 +2459,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-badge-min-width-sm</td>
+    <td>$kendo-badge-sm-min-width</td>
     <td></td>
 <td>
 
-`calc( #{$kendo-badge-line-height-sm} * 1em + #{$kendo-badge-padding-y-sm} * 2 + #{$kendo-badge-border-width} * 2 )`
+`calc( #{$kendo-badge-sm-line-height} * 1em + #{$kendo-badge-sm-padding-y} * 2 + #{$kendo-badge-border-width} * 2 )`
 
 </td>
 <td>
@@ -2483,25 +2483,25 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        padding-x: $kendo-badge-padding-x-sm,
-        padding-y: $kendo-badge-padding-y-sm,
-        font-size: $kendo-badge-font-size-sm,
-        line-height: $kendo-badge-line-height-sm,
-        min-width: $kendo-badge-min-width-sm
+        padding-x: $kendo-badge-sm-padding-x,
+        padding-y: $kendo-badge-sm-padding-y,
+        font-size: $kendo-badge-sm-font-size,
+        line-height: $kendo-badge-sm-line-height,
+        min-width: $kendo-badge-sm-min-width
     ),
     md: (
-        padding-x: $kendo-badge-padding-x-md,
-        padding-y: $kendo-badge-padding-y-md,
-        font-size: $kendo-badge-font-size-md,
-        line-height: $kendo-badge-line-height-md,
-        min-width: $kendo-badge-min-width-md
+        padding-x: $kendo-badge-md-padding-x,
+        padding-y: $kendo-badge-md-padding-y,
+        font-size: $kendo-badge-md-font-size,
+        line-height: $kendo-badge-md-line-height,
+        min-width: $kendo-badge-md-min-width
     ),
     lg: (
-        padding-x: $kendo-badge-padding-x-lg,
-        padding-y: $kendo-badge-padding-y-lg,
-        font-size: $kendo-badge-font-size-lg,
-        line-height: $kendo-badge-line-height-lg,
-        min-width: $kendo-badge-min-width-lg
+        padding-x: $kendo-badge-lg-padding-x,
+        padding-y: $kendo-badge-lg-padding-y,
+        font-size: $kendo-badge-lg-font-size,
+        line-height: $kendo-badge-lg-line-height,
+        min-width: $kendo-badge-lg-min-width
     )
 )`
 
@@ -3987,7 +3987,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-padding-x-sm</td>
+    <td>$kendo-button-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -4005,7 +4005,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-padding-y-sm</td>
+    <td>$kendo-button-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -4023,7 +4023,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-font-size-sm</td>
+    <td>$kendo-button-sm-font-size</td>
     <td></td>
 <td>
 
@@ -4041,7 +4041,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-line-height-sm</td>
+    <td>$kendo-button-sm-line-height</td>
     <td></td>
 <td>
 
@@ -4055,7 +4055,7 @@ The following table lists the available variables for customizing the Fluent the
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -4063,7 +4063,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( ( #{$kendo-button-line-height-md} * 1em ) + ( #{$kendo-button-padding-y-md} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )`
+`calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) )`
 
 </td>
 <td>
@@ -4081,7 +4081,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( ( #{$kendo-button-line-height-md} * 1em ) + ( #{$kendo-button-padding-y-md} * 2 ) )`
+`calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) )`
 
 </td>
 <td>
@@ -4101,22 +4101,22 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        padding-x: $kendo-button-padding-x-sm,
-        padding-y: $kendo-button-padding-y-sm,
-        font-size: $kendo-button-font-size-sm,
-        line-height: $kendo-button-line-height-sm
+        padding-x: $kendo-button-sm-padding-x,
+        padding-y: $kendo-button-sm-padding-y,
+        font-size: $kendo-button-sm-font-size,
+        line-height: $kendo-button-sm-line-height
     ),
     md: (
-        padding-x: $kendo-button-padding-x-md,
-        padding-y: $kendo-button-padding-y-md,
-        font-size: $kendo-button-font-size-md,
-        line-height: $kendo-button-line-height-md
+        padding-x: $kendo-button-md-padding-x,
+        padding-y: $kendo-button-md-padding-y,
+        font-size: $kendo-button-md-font-size,
+        line-height: $kendo-button-md-line-height
     ),
     lg: (
-        padding-x: $kendo-button-padding-x-lg,
-        padding-y: $kendo-button-padding-y-lg,
-        font-size: $kendo-button-font-size-lg,
-        line-height: $kendo-button-line-height-lg
+        padding-x: $kendo-button-lg-padding-x,
+        padding-y: $kendo-button-lg-padding-y,
+        font-size: $kendo-button-lg-font-size,
+        line-height: $kendo-button-lg-line-height
     )
 )`
 
@@ -8294,7 +8294,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-x-md`
+`$kendo-toolbar-md-padding-x`
 
 </td>
 <td>
@@ -8312,7 +8312,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-y-md`
+`$kendo-toolbar-md-padding-y`
 
 </td>
 <td>
@@ -8330,7 +8330,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-toolbar-spacing-md`
+`$kendo-toolbar-md-spacing`
 
 </td>
 <td>
@@ -9755,7 +9755,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>
@@ -10078,7 +10078,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-padding-x-sm</td>
+    <td>$kendo-chip-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -10096,7 +10096,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-padding-y-sm</td>
+    <td>$kendo-chip-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -10114,7 +10114,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-font-size-sm</td>
+    <td>$kendo-chip-sm-font-size</td>
     <td></td>
 <td>
 
@@ -10132,7 +10132,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-line-height-sm</td>
+    <td>$kendo-chip-sm-line-height</td>
     <td></td>
 <td>
 
@@ -10146,7 +10146,7 @@ The following table lists the available variables for customizing the Fluent the
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -10154,7 +10154,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( #{$kendo-chip-line-height-md} * 1em + #{$kendo-chip-padding-y-md} * 2 + #{$kendo-chip-border-width} * 2 )`
+`calc( #{$kendo-chip-md-line-height} * 1em + #{$kendo-chip-md-padding-y} * 2 + #{$kendo-chip-border-width} * 2 )`
 
 </td>
 <td>
@@ -10174,22 +10174,22 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        padding-x: $kendo-chip-padding-x-sm,
-        padding-y: $kendo-chip-padding-y-sm,
-        font-size: $kendo-chip-font-size-sm,
-        line-height: $kendo-chip-line-height-sm
+        padding-x: $kendo-chip-sm-padding-x,
+        padding-y: $kendo-chip-sm-padding-y,
+        font-size: $kendo-chip-sm-font-size,
+        line-height: $kendo-chip-sm-line-height
     ),
     md: (
-        padding-x: $kendo-chip-padding-x-md,
-        padding-y: $kendo-chip-padding-y-md,
-        font-size: $kendo-chip-font-size-md,
-        line-height: $kendo-chip-line-height-md
+        padding-x: $kendo-chip-md-padding-x,
+        padding-y: $kendo-chip-md-padding-y,
+        font-size: $kendo-chip-md-font-size,
+        line-height: $kendo-chip-md-line-height
     ),
     lg: (
-        padding-x: $kendo-chip-padding-x-lg,
-        padding-y: $kendo-chip-padding-y-lg,
-        font-size: $kendo-chip-font-size-lg,
-        line-height: $kendo-chip-line-height-lg
+        padding-x: $kendo-chip-lg-padding-x,
+        padding-y: $kendo-chip-lg-padding-y,
+        font-size: $kendo-chip-lg-font-size,
+        line-height: $kendo-chip-lg-line-height
     )
 )`
 
@@ -10248,7 +10248,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-colorgradient-spacer</td>
+    <td>$kendo-color-gradient-spacer</td>
     <td></td>
 <td>
 
@@ -10266,7 +10266,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-width</td>
+    <td>$kendo-color-gradient-width</td>
     <td></td>
 <td>
 
@@ -10284,7 +10284,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-border-width</td>
+    <td>$kendo-color-gradient-border-width</td>
     <td></td>
 <td>
 
@@ -10302,7 +10302,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-border-radius</td>
+    <td>$kendo-color-gradient-border-radius</td>
     <td></td>
 <td>
 
@@ -10320,11 +10320,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-padding-y</td>
+    <td>$kendo-color-gradient-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-colorgradient-spacer`
+`$kendo-color-gradient-spacer`
 
 </td>
 <td>
@@ -10338,11 +10338,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-padding-x</td>
+    <td>$kendo-color-gradient-padding-x</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 2 )`
+`math.div( $kendo-color-gradient-spacer, 2 )`
 
 </td>
 <td>
@@ -10356,11 +10356,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-spacing</td>
+    <td>$kendo-color-gradient-spacing</td>
     <td></td>
 <td>
 
-`$kendo-colorgradient-spacer`
+`$kendo-color-gradient-spacer`
 
 </td>
 <td>
@@ -10374,7 +10374,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-font-family</td>
+    <td>$kendo-color-gradient-font-family</td>
     <td></td>
 <td>
 
@@ -10392,7 +10392,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-font-size</td>
+    <td>$kendo-color-gradient-font-size</td>
     <td></td>
 <td>
 
@@ -10410,7 +10410,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-line-height</td>
+    <td>$kendo-color-gradient-line-height</td>
     <td></td>
 <td>
 
@@ -10428,7 +10428,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-bg</td>
+    <td>$kendo-color-gradient-bg</td>
     <td></td>
 <td>
 
@@ -10446,7 +10446,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-text</td>
+    <td>$kendo-color-gradient-text</td>
     <td></td>
 <td>
 
@@ -10464,7 +10464,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-border</td>
+    <td>$kendo-color-gradient-border</td>
     <td></td>
 <td>
 
@@ -10482,7 +10482,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-shadow</td>
+    <td>$kendo-color-gradient-shadow</td>
     <td></td>
 <td>
 
@@ -10500,7 +10500,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-focus-border</td>
+    <td>$kendo-color-gradient-focus-border</td>
     <td></td>
 <td>
 
@@ -10518,7 +10518,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-focus-shadow</td>
+    <td>$kendo-color-gradient-focus-shadow</td>
     <td></td>
 <td>
 
@@ -10536,7 +10536,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-border-radius</td>
+    <td>$kendo-color-gradient-canvas-border-radius</td>
     <td></td>
 <td>
 
@@ -10554,7 +10554,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-border-width</td>
+    <td>$kendo-color-gradient-canvas-border-width</td>
     <td></td>
 <td>
 
@@ -10572,11 +10572,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-spacing</td>
+    <td>$kendo-color-gradient-canvas-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 2 )`
+`math.div( $kendo-color-gradient-spacer, 2 )`
 
 </td>
 <td>
@@ -10590,7 +10590,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-rectangle-height</td>
+    <td>$kendo-color-gradient-canvas-rectangle-height</td>
     <td></td>
 <td>
 
@@ -10608,7 +10608,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-rectangle-border</td>
+    <td>$kendo-color-gradient-canvas-rectangle-border</td>
     <td></td>
 <td>
 
@@ -10626,7 +10626,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-draghandle-shadow</td>
+    <td>$kendo-color-gradient-canvas-draghandle-shadow</td>
     <td></td>
 <td>
 
@@ -10644,7 +10644,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-width</td>
+    <td>$kendo-color-gradient-input-width</td>
     <td></td>
 <td>
 
@@ -10662,11 +10662,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-spacing</td>
+    <td>$kendo-color-gradient-input-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 4 )`
+`math.div( $kendo-color-gradient-spacer, 4 )`
 
 </td>
 <td>
@@ -10680,7 +10680,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-label-font-size</td>
+    <td>$kendo-color-gradient-input-label-font-size</td>
     <td></td>
 <td>
 
@@ -10698,11 +10698,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-label-spacing</td>
+    <td>$kendo-color-gradient-input-label-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 4 )`
+`math.div( $kendo-color-gradient-spacer, 4 )`
 
 </td>
 <td>
@@ -10716,7 +10716,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-input-label-text</td>
+    <td>$kendo-color-gradient-input-label-text</td>
     <td></td>
 <td>
 
@@ -10734,7 +10734,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-contrast-ratio-font-weight</td>
+    <td>$kendo-color-gradient-contrast-ratio-font-weight</td>
     <td></td>
 <td>
 
@@ -10752,11 +10752,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-contrast-spacing</td>
+    <td>$kendo-color-gradient-contrast-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-colorgradient-spacer, 1.5 )`
+`math.div( $kendo-color-gradient-spacer, 1.5 )`
 
 </td>
 <td>
@@ -10770,7 +10770,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-track-size</td>
+    <td>$kendo-color-gradient-slider-track-size</td>
     <td></td>
 <td>
 
@@ -10788,7 +10788,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-border-radius</td>
+    <td>$kendo-color-gradient-slider-border-radius</td>
     <td></td>
 <td>
 
@@ -10806,7 +10806,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-border-width</td>
+    <td>$kendo-color-gradient-slider-border-width</td>
     <td></td>
 <td>
 
@@ -10824,7 +10824,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-border</td>
+    <td>$kendo-color-gradient-slider-border</td>
     <td></td>
 <td>
 
@@ -10842,7 +10842,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-vertical-size</td>
+    <td>$kendo-color-gradient-slider-vertical-size</td>
     <td></td>
 <td>
 
@@ -10860,7 +10860,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-horizontal-size</td>
+    <td>$kendo-color-gradient-slider-horizontal-size</td>
     <td></td>
 <td>
 
@@ -10878,7 +10878,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-slider-alpha-bgr</td>
+    <td>$kendo-color-gradient-slider-alpha-bgr</td>
     <td></td>
 <td>
 
@@ -10896,7 +10896,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-width</td>
+    <td>$kendo-color-gradient-draghandle-width</td>
     <td></td>
 <td>
 
@@ -10914,7 +10914,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-height</td>
+    <td>$kendo-color-gradient-draghandle-height</td>
     <td></td>
 <td>
 
@@ -10932,7 +10932,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-border-width</td>
+    <td>$kendo-color-gradient-draghandle-border-width</td>
     <td></td>
 <td>
 
@@ -10950,7 +10950,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-border</td>
+    <td>$kendo-color-gradient-draghandle-border</td>
     <td></td>
 <td>
 
@@ -10968,7 +10968,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-shadow</td>
+    <td>$kendo-color-gradient-draghandle-shadow</td>
     <td></td>
 <td>
 
@@ -10986,11 +10986,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-focus-shadow</td>
+    <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td></td>
 <td>
 
-`$kendo-colorgradient-draghandle-shadow`
+`$kendo-color-gradient-draghandle-shadow`
 
 </td>
 <td>
@@ -11004,7 +11004,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-focus-border</td>
+    <td>$kendo-color-gradient-draghandle-focus-border</td>
     <td></td>
 <td>
 
@@ -11022,11 +11022,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-draghandle-hover-shadow</td>
+    <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td></td>
 <td>
 
-`$kendo-colorgradient-draghandle-focus-shadow`
+`$kendo-color-gradient-draghandle-focus-shadow`
 
 </td>
 <td>
@@ -11040,11 +11040,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-draghandle-offset-y</td>
+    <td>$kendo-color-gradient-canvas-draghandle-offset-y</td>
     <td></td>
 <td>
 
-`( -1 * math.div( $kendo-colorgradient-draghandle-height, 2 ) )`
+`( -1 * math.div( $kendo-color-gradient-draghandle-height, 2 ) )`
 
 </td>
 <td>
@@ -11058,11 +11058,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorgradient-canvas-draghandle-offset-x</td>
+    <td>$kendo-color-gradient-canvas-draghandle-offset-x</td>
     <td></td>
 <td>
 
-`( -1 * math.div( $kendo-colorgradient-draghandle-width, 2 ) )`
+`( -1 * math.div( $kendo-color-gradient-draghandle-width, 2 ) )`
 
 </td>
 <td>
@@ -11280,7 +11280,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-coloreditor-spacer</td>
+    <td>$kendo-color-editor-spacer</td>
     <td></td>
 <td>
 
@@ -11298,7 +11298,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-min-width</td>
+    <td>$kendo-color-editor-min-width</td>
     <td></td>
 <td>
 
@@ -11316,7 +11316,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-border-width</td>
+    <td>$kendo-color-editor-border-width</td>
     <td></td>
 <td>
 
@@ -11334,7 +11334,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-border-radius</td>
+    <td>$kendo-color-editor-border-radius</td>
     <td></td>
 <td>
 
@@ -11352,7 +11352,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-font-family</td>
+    <td>$kendo-color-editor-font-family</td>
     <td></td>
 <td>
 
@@ -11370,7 +11370,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-font-size</td>
+    <td>$kendo-color-editor-font-size</td>
     <td></td>
 <td>
 
@@ -11388,7 +11388,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-line-height</td>
+    <td>$kendo-color-editor-line-height</td>
     <td></td>
 <td>
 
@@ -11406,7 +11406,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-bg</td>
+    <td>$kendo-color-editor-bg</td>
     <td></td>
 <td>
 
@@ -11424,7 +11424,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-text</td>
+    <td>$kendo-color-editor-text</td>
     <td></td>
 <td>
 
@@ -11442,7 +11442,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-border</td>
+    <td>$kendo-color-editor-border</td>
     <td></td>
 <td>
 
@@ -11460,7 +11460,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-shadow</td>
+    <td>$kendo-color-editor-shadow</td>
     <td></td>
 <td>
 
@@ -11478,7 +11478,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-focus-border</td>
+    <td>$kendo-color-editor-focus-border</td>
     <td></td>
 <td>
 
@@ -11496,7 +11496,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-focus-shadow</td>
+    <td>$kendo-color-editor-focus-shadow</td>
     <td></td>
 <td>
 
@@ -11514,11 +11514,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-header-padding-y</td>
+    <td>$kendo-color-editor-header-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-spacer`
+`$kendo-color-editor-spacer`
 
 </td>
 <td>
@@ -11532,11 +11532,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-header-padding-x</td>
+    <td>$kendo-color-editor-header-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-header-padding-y`
+`$kendo-color-editor-header-padding-y`
 
 </td>
 <td>
@@ -11550,11 +11550,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-header-actions-spacing</td>
+    <td>$kendo-color-editor-header-actions-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-coloreditor-spacer, 2 )`
+`math.div( $kendo-color-editor-spacer, 2 )`
 
 </td>
 <td>
@@ -11568,7 +11568,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-color-preview-width</td>
+    <td>$kendo-color-editor-color-preview-width</td>
     <td></td>
 <td>
 
@@ -11586,7 +11586,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-color-preview-height</td>
+    <td>$kendo-color-editor-color-preview-height</td>
     <td></td>
 <td>
 
@@ -11604,7 +11604,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-preview-spacing</td>
+    <td>$kendo-color-editor-preview-spacing</td>
     <td></td>
 <td>
 
@@ -11622,11 +11622,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-views-padding-y</td>
+    <td>$kendo-color-editor-views-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-spacer`
+`$kendo-color-editor-spacer`
 
 </td>
 <td>
@@ -11640,11 +11640,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-views-padding-x</td>
+    <td>$kendo-color-editor-views-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-views-padding-y`
+`$kendo-color-editor-views-padding-y`
 
 </td>
 <td>
@@ -11658,11 +11658,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-views-spacing</td>
+    <td>$kendo-color-editor-views-spacing</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-spacer`
+`$kendo-color-editor-spacer`
 
 </td>
 <td>
@@ -11676,7 +11676,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-footer-padding-y</td>
+    <td>$kendo-color-editor-footer-padding-y</td>
     <td></td>
 <td>
 
@@ -11694,7 +11694,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-footer-padding-x</td>
+    <td>$kendo-color-editor-footer-padding-x</td>
     <td></td>
 <td>
 
@@ -11712,7 +11712,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-colorgradient-focus-outline-color</td>
+    <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
     <td></td>
 <td>
 
@@ -11730,7 +11730,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-colorgradient-focus-outline</td>
+    <td>$kendo-color-editor-color-gradient-focus-outline</td>
     <td></td>
 <td>
 
@@ -11748,7 +11748,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-colorgradient-focus-outline-offset</td>
+    <td>$kendo-color-editor-color-gradient-focus-outline-offset</td>
     <td></td>
 <td>
 
@@ -11787,7 +11787,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-colorpalette-font-family</td>
+    <td>$kendo-color-palette-font-family</td>
     <td></td>
 <td>
 
@@ -11805,7 +11805,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-font-size</td>
+    <td>$kendo-color-palette-font-size</td>
     <td></td>
 <td>
 
@@ -11823,7 +11823,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-line-height</td>
+    <td>$kendo-color-palette-line-height</td>
     <td></td>
 <td>
 
@@ -11841,7 +11841,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-outline-width</td>
+    <td>$kendo-color-palette-tile-outline-width</td>
     <td></td>
 <td>
 
@@ -11859,7 +11859,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-outline-style</td>
+    <td>$kendo-color-palette-tile-outline-style</td>
     <td></td>
 <td>
 
@@ -11877,7 +11877,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-outline</td>
+    <td>$kendo-color-palette-tile-outline</td>
     <td></td>
 <td>
 
@@ -11895,7 +11895,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-width</td>
+    <td>$kendo-color-palette-tile-width</td>
     <td></td>
 <td>
 
@@ -11913,11 +11913,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-height</td>
+    <td>$kendo-color-palette-tile-height</td>
     <td></td>
 <td>
 
-`$kendo-colorpalette-tile-width`
+`$kendo-color-palette-tile-width`
 
 </td>
 <td>
@@ -11931,7 +11931,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-focus-outline</td>
+    <td>$kendo-color-palette-tile-focus-outline</td>
     <td></td>
 <td>
 
@@ -11949,7 +11949,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-focus-shadow</td>
+    <td>$kendo-color-palette-tile-focus-shadow</td>
     <td></td>
 <td>
 
@@ -11967,7 +11967,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-hover-outline</td>
+    <td>$kendo-color-palette-tile-hover-outline</td>
     <td></td>
 <td>
 
@@ -11985,11 +11985,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-hover-shadow</td>
+    <td>$kendo-color-palette-tile-hover-shadow</td>
     <td></td>
 <td>
 
-`inset 0 0 0 2px $kendo-colorpalette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white`
+`inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white`
 
 </td>
 <td>
@@ -12003,11 +12003,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-selected-outline</td>
+    <td>$kendo-color-palette-tile-selected-outline</td>
     <td></td>
 <td>
 
-`$kendo-colorpalette-tile-hover-outline`
+`$kendo-color-palette-tile-hover-outline`
 
 </td>
 <td>
@@ -12021,11 +12021,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-selected-shadow</td>
+    <td>$kendo-color-palette-tile-selected-shadow</td>
     <td></td>
 <td>
 
-`$kendo-colorpalette-tile-hover-shadow`
+`$kendo-color-palette-tile-hover-shadow`
 
 </td>
 <td>
@@ -12039,11 +12039,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-selected-hover-outline</td>
+    <td>$kendo-color-palette-tile-selected-hover-outline</td>
     <td></td>
 <td>
 
-`$kendo-colorpalette-tile-focus-outline`
+`$kendo-color-palette-tile-focus-outline`
 
 </td>
 <td>
@@ -14904,7 +14904,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-filemanager-bg</td>
+    <td>$kendo-file-manager-bg</td>
     <td></td>
 <td>
 
@@ -14922,7 +14922,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-text</td>
+    <td>$kendo-file-manager-text</td>
     <td></td>
 <td>
 
@@ -14940,7 +14940,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-border</td>
+    <td>$kendo-file-manager-border</td>
     <td></td>
 <td>
 
@@ -14958,7 +14958,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-toolbar-bg</td>
+    <td>$kendo-file-manager-toolbar-bg</td>
     <td></td>
 <td>
 
@@ -14976,7 +14976,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-toolbar-text</td>
+    <td>$kendo-file-manager-toolbar-text</td>
     <td></td>
 <td>
 
@@ -14994,7 +14994,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-toolbar-border</td>
+    <td>$kendo-file-manager-toolbar-border</td>
     <td></td>
 <td>
 
@@ -15012,11 +15012,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-padding-x</td>
+    <td>$kendo-file-manager-navigation-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -15030,11 +15030,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-padding-y</td>
+    <td>$kendo-file-manager-navigation-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -15048,7 +15048,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-width</td>
+    <td>$kendo-file-manager-navigation-width</td>
     <td></td>
 <td>
 
@@ -15066,11 +15066,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-border-width</td>
+    <td>$kendo-file-manager-navigation-border-width</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-border-width`
+`$kendo-file-manager-border-width`
 
 </td>
 <td>
@@ -15084,7 +15084,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-bg</td>
+    <td>$kendo-file-manager-navigation-bg</td>
     <td></td>
 <td>
 
@@ -15102,7 +15102,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-text</td>
+    <td>$kendo-file-manager-navigation-text</td>
     <td></td>
 <td>
 
@@ -15120,7 +15120,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-border</td>
+    <td>$kendo-file-manager-navigation-border</td>
     <td></td>
 <td>
 
@@ -15138,7 +15138,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-padding-x</td>
+    <td>$kendo-file-manager-breadcrumb-padding-x</td>
     <td></td>
 <td>
 
@@ -15156,7 +15156,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-padding-y</td>
+    <td>$kendo-file-manager-breadcrumb-padding-y</td>
     <td></td>
 <td>
 
@@ -15174,11 +15174,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-border-width</td>
+    <td>$kendo-file-manager-breadcrumb-border-width</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-border-width`
+`$kendo-file-manager-border-width`
 
 </td>
 <td>
@@ -15192,7 +15192,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-bg</td>
+    <td>$kendo-file-manager-breadcrumb-bg</td>
     <td></td>
 <td>
 
@@ -15210,7 +15210,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-text</td>
+    <td>$kendo-file-manager-breadcrumb-text</td>
     <td></td>
 <td>
 
@@ -15228,7 +15228,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-border</td>
+    <td>$kendo-file-manager-breadcrumb-border</td>
     <td></td>
 <td>
 
@@ -15246,7 +15246,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-bg</td>
+    <td>$kendo-file-manager-listview-bg</td>
     <td></td>
 <td>
 
@@ -15264,7 +15264,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-text</td>
+    <td>$kendo-file-manager-listview-text</td>
     <td></td>
 <td>
 
@@ -15282,7 +15282,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-border</td>
+    <td>$kendo-file-manager-listview-border</td>
     <td></td>
 <td>
 
@@ -15300,7 +15300,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-padding-x</td>
+    <td>$kendo-file-manager-listview-item-padding-x</td>
     <td></td>
 <td>
 
@@ -15318,7 +15318,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-padding-y</td>
+    <td>$kendo-file-manager-listview-item-padding-y</td>
     <td></td>
 <td>
 
@@ -15336,7 +15336,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-width</td>
+    <td>$kendo-file-manager-listview-item-width</td>
     <td></td>
 <td>
 
@@ -15354,7 +15354,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-height</td>
+    <td>$kendo-file-manager-listview-item-height</td>
     <td></td>
 <td>
 
@@ -15372,7 +15372,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-size</td>
+    <td>$kendo-file-manager-listview-item-icon-size</td>
     <td></td>
 <td>
 
@@ -15390,7 +15390,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-bg</td>
+    <td>$kendo-file-manager-listview-item-icon-bg</td>
     <td></td>
 <td>
 
@@ -15408,7 +15408,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-text</td>
+    <td>$kendo-file-manager-listview-item-icon-text</td>
     <td></td>
 <td>
 
@@ -15426,7 +15426,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-border</td>
+    <td>$kendo-file-manager-listview-item-icon-border</td>
     <td></td>
 <td>
 
@@ -15444,7 +15444,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-focus-bg</td>
+    <td>$kendo-file-manager-listview-item-icon-focus-bg</td>
     <td></td>
 <td>
 
@@ -15462,7 +15462,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-focus-text</td>
+    <td>$kendo-file-manager-listview-item-icon-focus-text</td>
     <td></td>
 <td>
 
@@ -15480,7 +15480,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-focus-border</td>
+    <td>$kendo-file-manager-listview-item-icon-focus-border</td>
     <td></td>
 <td>
 
@@ -15498,7 +15498,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-selected-bg</td>
+    <td>$kendo-file-manager-listview-item-icon-selected-bg</td>
     <td></td>
 <td>
 
@@ -15516,7 +15516,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-selected-text</td>
+    <td>$kendo-file-manager-listview-item-icon-selected-text</td>
     <td></td>
 <td>
 
@@ -15534,7 +15534,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-selected-border</td>
+    <td>$kendo-file-manager-listview-item-icon-selected-border</td>
     <td></td>
 <td>
 
@@ -15552,7 +15552,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-grid-bg</td>
+    <td>$kendo-file-manager-grid-bg</td>
     <td></td>
 <td>
 
@@ -15570,7 +15570,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-grid-text</td>
+    <td>$kendo-file-manager-grid-text</td>
     <td></td>
 <td>
 
@@ -15588,7 +15588,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-grid-border</td>
+    <td>$kendo-file-manager-grid-border</td>
     <td></td>
 <td>
 
@@ -15606,11 +15606,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-padding-x</td>
+    <td>$kendo-file-manager-preview-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -15624,11 +15624,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-padding-y</td>
+    <td>$kendo-file-manager-preview-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -15642,7 +15642,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-width</td>
+    <td>$kendo-file-manager-preview-width</td>
     <td></td>
 <td>
 
@@ -15660,11 +15660,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-border-width</td>
+    <td>$kendo-file-manager-preview-border-width</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-border-width`
+`$kendo-file-manager-border-width`
 
 </td>
 <td>
@@ -15678,11 +15678,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-spacing</td>
+    <td>$kendo-file-manager-preview-spacing</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -15696,7 +15696,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-column-gap</td>
+    <td>$kendo-file-manager-preview-column-gap</td>
     <td></td>
 <td>
 
@@ -15714,7 +15714,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-bg</td>
+    <td>$kendo-file-manager-preview-bg</td>
     <td></td>
 <td>
 
@@ -15732,7 +15732,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-text</td>
+    <td>$kendo-file-manager-preview-text</td>
     <td></td>
 <td>
 
@@ -15750,7 +15750,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-border</td>
+    <td>$kendo-file-manager-preview-border</td>
     <td></td>
 <td>
 
@@ -15768,7 +15768,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-icon-size</td>
+    <td>$kendo-file-manager-preview-icon-size</td>
     <td></td>
 <td>
 
@@ -15786,7 +15786,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-icon-bg</td>
+    <td>$kendo-file-manager-preview-icon-bg</td>
     <td></td>
 <td>
 
@@ -15804,7 +15804,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-icon-text</td>
+    <td>$kendo-file-manager-preview-icon-text</td>
     <td></td>
 <td>
 
@@ -15822,7 +15822,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-icon-border</td>
+    <td>$kendo-file-manager-preview-icon-border</td>
     <td></td>
 <td>
 
@@ -15861,7 +15861,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-filemanager-spacer</td>
+    <td>$kendo-file-manager-spacer</td>
     <td></td>
 <td>
 
@@ -15879,7 +15879,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-border-width</td>
+    <td>$kendo-file-manager-border-width</td>
     <td></td>
 <td>
 
@@ -15897,7 +15897,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-font-family</td>
+    <td>$kendo-file-manager-font-family</td>
     <td></td>
 <td>
 
@@ -15915,7 +15915,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-font-size</td>
+    <td>$kendo-file-manager-font-size</td>
     <td></td>
 <td>
 
@@ -15933,7 +15933,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-line-height</td>
+    <td>$kendo-file-manager-line-height</td>
     <td></td>
 <td>
 
@@ -15951,11 +15951,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-toolbar-border-width</td>
+    <td>$kendo-file-manager-toolbar-border-width</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-border-width`
+`$kendo-file-manager-border-width`
 
 </td>
 <td>
@@ -16811,16 +16811,16 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        padding-x: $kendo-fab-padding-x-sm,
-        padding-y: $kendo-fab-padding-y-sm
+        padding-x: $kendo-fab-sm-padding-x,
+        padding-y: $kendo-fab-sm-padding-y
     ),
     md: (
-        padding-x: $kendo-fab-padding-x-md,
-        padding-y: $kendo-fab-padding-y-md
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y
     ),
     lg: (
-        padding-x: $kendo-fab-padding-x-lg,
-        padding-y: $kendo-fab-padding-y-lg
+        padding-x: $kendo-fab-lg-padding-x,
+        padding-y: $kendo-fab-lg-padding-y
     )
 )`
 
@@ -17185,7 +17185,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( #{$kendo-input-padding-x-md} + #{$kendo-input-border-width} )`
+`calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )`
 
 </td>
 <td>
@@ -17203,7 +17203,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y-md} )`
+`calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )`
 
 </td>
 <td>
@@ -17760,7 +17760,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-rows-spacing-sm</td>
+    <td>$kendo-form-sm-rows-spacing</td>
     <td></td>
 <td>
 
@@ -17778,11 +17778,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-rows-spacing-md</td>
+    <td>$kendo-form-md-rows-spacing</td>
     <td></td>
 <td>
 
-`$kendo-form-rows-spacing-sm`
+`$kendo-form-sm-rows-spacing`
 
 </td>
 <td>
@@ -17796,11 +17796,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-rows-spacing-lg</td>
+    <td>$kendo-form-lg-rows-spacing</td>
     <td></td>
 <td>
 
-`$kendo-form-rows-spacing-sm`
+`$kendo-form-sm-rows-spacing`
 
 </td>
 <td>
@@ -19480,7 +19480,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-x-md`
+`$kendo-toolbar-md-padding-x`
 
 </td>
 <td>
@@ -19498,7 +19498,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-y-md`
+`$kendo-toolbar-md-padding-y`
 
 </td>
 <td>
@@ -19620,7 +19620,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-size</td>
+    <td>$kendo-grid-group-drop-hint-size</td>
     <td></td>
 <td>
 
@@ -19638,7 +19638,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-line-size</td>
+    <td>$kendo-grid-group-drop-hint-line-size</td>
     <td></td>
 <td>
 
@@ -19656,11 +19656,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-dot-size</td>
+    <td>$kendo-grid-group-drop-hint-dot-size</td>
     <td></td>
 <td>
 
-`$kendo-grid-group-dropclue-size`
+`$kendo-grid-group-drop-hint-size`
 
 </td>
 <td>
@@ -19674,11 +19674,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-height</td>
+    <td>$kendo-grid-group-drop-hint-height</td>
     <td></td>
 <td>
 
-`calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size} )`
+`calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size} )`
 
 </td>
 <td>
@@ -19692,7 +19692,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-top</td>
+    <td>$kendo-grid-group-drop-hint-top</td>
     <td></td>
 <td>
 
@@ -20398,7 +20398,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-x-md`
+`$kendo-toolbar-md-padding-x`
 
 </td>
 <td>
@@ -20416,7 +20416,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-y-md`
+`$kendo-toolbar-md-padding-y`
 
 </td>
 <td>
@@ -20434,7 +20434,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-toolbar-spacing-md`
+`$kendo-toolbar-md-spacing`
 
 </td>
 <td>
@@ -20596,7 +20596,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`var( --kendo-icon-spacing-lg, .5rem )`
+`var( --kendo-icon-lg-spacing, .5rem )`
 
 </td>
 <td>
@@ -20704,7 +20704,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-button-padding-x-md`
+`$kendo-button-md-padding-x`
 
 </td>
 <td>
@@ -20722,7 +20722,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-button-padding-y-md`
+`$kendo-button-md-padding-y`
 
 </td>
 <td>
@@ -20898,7 +20898,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-bg</td>
+    <td>$kendo-grid-group-drop-hint-bg</td>
     <td></td>
 <td>
 
@@ -21316,7 +21316,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-font-size-md`
+`$kendo-list-md-font-size`
 
 </td>
 <td>
@@ -21334,7 +21334,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-line-height-md`
+`$kendo-list-md-line-height`
 
 </td>
 <td>
@@ -21388,7 +21388,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>
@@ -21406,7 +21406,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-item-padding-x-md`
+`$kendo-list-md-item-padding-x`
 
 </td>
 <td>
@@ -21424,7 +21424,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-item-padding-x-md`
+`$kendo-list-md-item-padding-x`
 
 </td>
 <td>
@@ -21948,7 +21948,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-imageeditor-bg</td>
+    <td>$kendo-image-editor-bg</td>
     <td></td>
 <td>
 
@@ -21966,7 +21966,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-text</td>
+    <td>$kendo-image-editor-text</td>
     <td></td>
 <td>
 
@@ -21984,7 +21984,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-border</td>
+    <td>$kendo-image-editor-border</td>
     <td></td>
 <td>
 
@@ -22002,7 +22002,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-margin-y</td>
+    <td>$kendo-image-editor-margin-y</td>
     <td></td>
 <td>
 
@@ -22020,7 +22020,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-margin-x</td>
+    <td>$kendo-image-editor-margin-x</td>
     <td></td>
 <td>
 
@@ -22038,7 +22038,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-padding-y</td>
+    <td>$kendo-image-editor-padding-y</td>
     <td></td>
 <td>
 
@@ -22056,7 +22056,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-padding-x</td>
+    <td>$kendo-image-editor-padding-x</td>
     <td></td>
 <td>
 
@@ -22074,7 +22074,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-border-width</td>
+    <td>$kendo-image-editor-border-width</td>
     <td></td>
 <td>
 
@@ -22092,7 +22092,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-font-size</td>
+    <td>$kendo-image-editor-font-size</td>
     <td></td>
 <td>
 
@@ -22110,7 +22110,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-line-height</td>
+    <td>$kendo-image-editor-line-height</td>
     <td></td>
 <td>
 
@@ -22128,7 +22128,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-font-family</td>
+    <td>$kendo-image-editor-font-family</td>
     <td></td>
 <td>
 
@@ -22146,7 +22146,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-content-bg</td>
+    <td>$kendo-image-editor-content-bg</td>
     <td></td>
 <td>
 
@@ -22164,7 +22164,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-content-text</td>
+    <td>$kendo-image-editor-content-text</td>
     <td></td>
 <td>
 
@@ -22182,7 +22182,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-content-border</td>
+    <td>$kendo-image-editor-content-border</td>
     <td></td>
 <td>
 
@@ -22200,7 +22200,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-content-border-width</td>
+    <td>$kendo-image-editor-content-border-width</td>
     <td></td>
 <td>
 
@@ -22218,7 +22218,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-bg</td>
+    <td>$kendo-image-editor-action-pane-bg</td>
     <td></td>
 <td>
 
@@ -22236,7 +22236,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-text</td>
+    <td>$kendo-image-editor-action-pane-text</td>
     <td></td>
 <td>
 
@@ -22254,7 +22254,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-border</td>
+    <td>$kendo-image-editor-action-pane-border</td>
     <td></td>
 <td>
 
@@ -22272,7 +22272,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-padding-y</td>
+    <td>$kendo-image-editor-action-pane-padding-y</td>
     <td></td>
 <td>
 
@@ -22290,7 +22290,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-padding-x</td>
+    <td>$kendo-image-editor-action-pane-padding-x</td>
     <td></td>
 <td>
 
@@ -22308,11 +22308,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-width</td>
+    <td>$kendo-image-editor-action-pane-width</td>
     <td></td>
 <td>
 
-`if( $kendo-imageeditor-content-border-width == 0, 240px, calc( 240px + #{$kendo-imageeditor-content-border-width}) )`
+`if( $kendo-image-editor-content-border-width == 0, 240px, calc( 240px + #{$kendo-image-editor-content-border-width}) )`
 
 </td>
 <td>
@@ -22326,7 +22326,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-bg</td>
+    <td>$kendo-image-editor-crop-bg</td>
     <td></td>
 <td>
 
@@ -22344,7 +22344,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-text</td>
+    <td>$kendo-image-editor-crop-text</td>
     <td></td>
 <td>
 
@@ -22362,7 +22362,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-border</td>
+    <td>$kendo-image-editor-crop-border</td>
     <td></td>
 <td>
 
@@ -22380,7 +22380,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-overlay-bg</td>
+    <td>$kendo-image-editor-crop-overlay-bg</td>
     <td></td>
 <td>
 
@@ -22398,7 +22398,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-border-width</td>
+    <td>$kendo-image-editor-crop-border-width</td>
     <td></td>
 <td>
 
@@ -22416,7 +22416,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-border-style</td>
+    <td>$kendo-image-editor-crop-border-style</td>
     <td></td>
 <td>
 
@@ -22434,7 +22434,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-handle-margin-x</td>
+    <td>$kendo-image-editor-resize-handle-margin-x</td>
     <td></td>
 <td>
 
@@ -22452,7 +22452,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-handle-margin-y</td>
+    <td>$kendo-image-editor-resize-handle-margin-y</td>
     <td></td>
 <td>
 
@@ -22470,7 +22470,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-handle-border-width</td>
+    <td>$kendo-image-editor-resize-handle-border-width</td>
     <td></td>
 <td>
 
@@ -22488,7 +22488,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-handle-size</td>
+    <td>$kendo-image-editor-resize-handle-size</td>
     <td></td>
 <td>
 
@@ -22506,11 +22506,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-top-offset</td>
+    <td>$kendo-image-editor-resize-top-offset</td>
     <td></td>
 <td>
 
-`math.div( $kendo-imageeditor-resize-handle-size, 2 )`
+`math.div( $kendo-image-editor-resize-handle-size, 2 )`
 
 </td>
 <td>
@@ -22524,11 +22524,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-left-offset</td>
+    <td>$kendo-image-editor-resize-left-offset</td>
     <td></td>
 <td>
 
-`math.div( $kendo-imageeditor-resize-handle-size, 2 )`
+`math.div( $kendo-image-editor-resize-handle-size, 2 )`
 
 </td>
 <td>
@@ -22617,7 +22617,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-padding-x-sm</td>
+    <td>$kendo-input-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -22635,7 +22635,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-padding-y-sm</td>
+    <td>$kendo-input-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -22653,7 +22653,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-font-size-sm</td>
+    <td>$kendo-input-sm-font-size</td>
     <td></td>
 <td>
 
@@ -22671,7 +22671,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-line-height-sm</td>
+    <td>$kendo-input-sm-line-height</td>
     <td></td>
 <td>
 
@@ -24315,34 +24315,34 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        padding-x: $kendo-input-padding-x-sm,
-        padding-y: $kendo-input-padding-y-sm,
-        font-size: $kendo-input-font-size-sm,
-        line-height: $kendo-input-line-height-sm,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-sm * 2} ),
-        button-padding-x: $kendo-input-padding-y-sm,
-        button-padding-y: $kendo-input-padding-y-sm,
-        button-width: $kendo-input-button-width-sm
+        padding-x: $kendo-input-sm-padding-x,
+        padding-y: $kendo-input-sm-padding-y,
+        font-size: $kendo-input-sm-font-size,
+        line-height: $kendo-input-sm-line-height,
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-sm-padding-y * 2} ),
+        button-padding-x: $kendo-input-sm-padding-y,
+        button-padding-y: $kendo-input-sm-padding-y,
+        button-width: $kendo-input-sm-button-width
     ),
     md: (
-        padding-x: $kendo-input-padding-x-md,
-        padding-y: $kendo-input-padding-y-md,
-        font-size: $kendo-input-font-size-md,
-        line-height: $kendo-input-line-height-md,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-md * 2} ),
-        button-padding-x: $kendo-input-padding-y-md,
-        button-padding-y: $kendo-input-padding-y-md,
-        button-width: $kendo-input-button-width-md
+        padding-x: $kendo-input-md-padding-x,
+        padding-y: $kendo-input-md-padding-y,
+        font-size: $kendo-input-md-font-size,
+        line-height: $kendo-input-md-line-height,
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-md-padding-y * 2} ),
+        button-padding-x: $kendo-input-md-padding-y,
+        button-padding-y: $kendo-input-md-padding-y,
+        button-width: $kendo-input-md-button-width
     ),
     lg: (
-        padding-x: $kendo-input-padding-x-lg,
-        padding-y: $kendo-input-padding-y-lg,
-        font-size: $kendo-input-font-size-lg,
-        line-height: $kendo-input-line-height-lg,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-lg * 2} ),
-        button-padding-x: $kendo-input-padding-y-lg,
-        button-padding-y: $kendo-input-padding-y-lg,
-        button-width: $kendo-input-button-width-lg
+        padding-x: $kendo-input-lg-padding-x,
+        padding-y: $kendo-input-lg-padding-y,
+        font-size: $kendo-input-lg-font-size,
+        line-height: $kendo-input-lg-line-height,
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-lg-padding-y * 2} ),
+        button-padding-x: $kendo-input-lg-padding-y,
+        button-padding-y: $kendo-input-lg-padding-y,
+        button-width: $kendo-input-lg-button-width
     )
 )`
 
@@ -24529,7 +24529,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-list-font-size-sm</td>
+    <td>$kendo-list-sm-font-size</td>
     <td></td>
 <td>
 
@@ -24547,7 +24547,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-line-height-sm</td>
+    <td>$kendo-list-sm-line-height</td>
     <td></td>
 <td>
 
@@ -24565,7 +24565,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-padding-x-sm</td>
+    <td>$kendo-list-sm-header-padding-x</td>
     <td></td>
 <td>
 
@@ -24583,7 +24583,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-padding-y-sm</td>
+    <td>$kendo-list-sm-header-padding-y</td>
     <td></td>
 <td>
 
@@ -24619,7 +24619,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-font-size-sm</td>
+    <td>$kendo-list-sm-header-font-size</td>
     <td></td>
 <td>
 
@@ -24637,7 +24637,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-line-height-sm</td>
+    <td>$kendo-list-sm-header-line-height</td>
     <td></td>
 <td>
 
@@ -24673,7 +24673,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-padding-x-sm</td>
+    <td>$kendo-list-sm-item-padding-x</td>
     <td></td>
 <td>
 
@@ -24691,7 +24691,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-padding-y-sm</td>
+    <td>$kendo-list-sm-item-padding-y</td>
     <td></td>
 <td>
 
@@ -24709,7 +24709,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-font-size-sm</td>
+    <td>$kendo-list-sm-item-font-size</td>
     <td></td>
 <td>
 
@@ -24727,7 +24727,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-line-height-sm</td>
+    <td>$kendo-list-sm-item-line-height</td>
     <td></td>
 <td>
 
@@ -24745,7 +24745,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-group-label-font-size-sm</td>
+    <td>$kendo-list-item-group-label-sm-font-size</td>
     <td></td>
 <td>
 
@@ -24763,7 +24763,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-padding-x-sm</td>
+    <td>$kendo-list-sm-group-item-padding-x</td>
     <td></td>
 <td>
 
@@ -24781,7 +24781,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-padding-y-sm</td>
+    <td>$kendo-list-sm-group-item-padding-y</td>
     <td></td>
 <td>
 
@@ -24799,7 +24799,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-group-label-padding-x-sm</td>
+    <td>$kendo-list-item-group-label-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -24817,7 +24817,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-group-label-padding-y-sm</td>
+    <td>$kendo-list-item-group-label-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -24853,7 +24853,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-font-size-sm</td>
+    <td>$kendo-list-sm-group-item-font-size</td>
     <td></td>
 <td>
 
@@ -24871,7 +24871,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-line-height-sm</td>
+    <td>$kendo-list-sm-group-item-line-height</td>
     <td></td>
 <td>
 
@@ -26359,7 +26359,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-segment-size-sm</td>
+    <td>$kendo-loader-sm-segment-size</td>
     <td></td>
 <td>
 
@@ -26377,11 +26377,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-padding-x-sm</td>
+    <td>$kendo-loader-sm-padding-x</td>
     <td></td>
 <td>
 
-`math.div( $kendo-loader-segment-size-sm, 2 )`
+`math.div( $kendo-loader-sm-segment-size, 2 )`
 
 </td>
 <td>
@@ -26395,11 +26395,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-padding-y-sm</td>
+    <td>$kendo-loader-sm-padding-y</td>
     <td></td>
 <td>
 
-`math.div( $kendo-loader-segment-size-sm, 2 )`
+`math.div( $kendo-loader-sm-segment-size, 2 )`
 
 </td>
 <td>
@@ -26431,11 +26431,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-spinner-3-width-sm</td>
+    <td>$kendo-loader-sm-spinner-3-width</td>
     <td></td>
 <td>
 
-`( $kendo-loader-segment-size-sm * 4 )`
+`( $kendo-loader-sm-segment-size * 4 )`
 
 </td>
 <td>
@@ -26449,11 +26449,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-spinner-3-height-sm</td>
+    <td>$kendo-loader-sm-spinner-3-height</td>
     <td></td>
 <td>
 
-`( $kendo-loader-spinner-3-width-sm * $kendo-loader-equilateral-height )`
+`( $kendo-loader-sm-spinner-3-width * $kendo-loader-equilateral-height )`
 
 </td>
 <td>
@@ -26467,11 +26467,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-spinner-4-width-sm</td>
+    <td>$kendo-loader-sm-spinner-4-width</td>
     <td></td>
 <td>
 
-`( $kendo-loader-segment-size-sm * 4 )`
+`( $kendo-loader-sm-segment-size * 4 )`
 
 </td>
 <td>
@@ -26485,11 +26485,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-spinner-4-height-sm</td>
+    <td>$kendo-loader-sm-spinner-4-height</td>
     <td></td>
 <td>
 
-`$kendo-loader-spinner-4-width-sm`
+`$kendo-loader-sm-spinner-4-width`
 
 </td>
 <td>
@@ -26593,7 +26593,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-container-padding-x-sm</td>
+    <td>$kendo-loader-sm-container-padding-x</td>
     <td></td>
 <td>
 
@@ -26611,7 +26611,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-container-padding-y-sm</td>
+    <td>$kendo-loader-sm-container-padding-y</td>
     <td></td>
 <td>
 
@@ -26629,7 +26629,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-container-gap-sm</td>
+    <td>$kendo-loader-sm-container-gap</td>
     <td></td>
 <td>
 
@@ -26647,7 +26647,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-container-font-size-sm</td>
+    <td>$kendo-loader-sm-container-font-size</td>
     <td></td>
 <td>
 
@@ -27014,7 +27014,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-button-padding-y-md`
+`$kendo-button-md-padding-y`
 
 </td>
 <td>
@@ -27175,7 +27175,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-mediaplayer-border-width</td>
+    <td>$kendo-media-player-border-width</td>
     <td></td>
 <td>
 
@@ -27193,7 +27193,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-font-family</td>
+    <td>$kendo-media-player-font-family</td>
     <td></td>
 <td>
 
@@ -27211,7 +27211,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-font-size</td>
+    <td>$kendo-media-player-font-size</td>
     <td></td>
 <td>
 
@@ -27229,7 +27229,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-line-height</td>
+    <td>$kendo-media-player-line-height</td>
     <td></td>
 <td>
 
@@ -27247,7 +27247,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-bg</td>
+    <td>$kendo-media-player-bg</td>
     <td></td>
 <td>
 
@@ -27265,7 +27265,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-text</td>
+    <td>$kendo-media-player-text</td>
     <td></td>
 <td>
 
@@ -27283,7 +27283,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-border</td>
+    <td>$kendo-media-player-border</td>
     <td></td>
 <td>
 
@@ -27301,7 +27301,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-overlay-bg</td>
+    <td>$kendo-media-player-overlay-bg</td>
     <td></td>
 <td>
 
@@ -27319,7 +27319,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-quality-border</td>
+    <td>$kendo-media-player-quality-border</td>
     <td></td>
 <td>
 
@@ -27337,7 +27337,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-titlebar-padding-x</td>
+    <td>$kendo-media-player-titlebar-padding-x</td>
     <td></td>
 <td>
 
@@ -27355,7 +27355,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-titlebar-padding-y</td>
+    <td>$kendo-media-player-titlebar-padding-y</td>
     <td></td>
 <td>
 
@@ -27373,7 +27373,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-titlebar-bg</td>
+    <td>$kendo-media-player-titlebar-bg</td>
     <td></td>
 <td>
 
@@ -27391,11 +27391,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-titlebar-text</td>
+    <td>$kendo-media-player-titlebar-text</td>
     <td></td>
 <td>
 
-`$kendo-mediaplayer-bg`
+`$kendo-media-player-bg`
 
 </td>
 <td>
@@ -27498,7 +27498,7 @@ The following table lists the available variables for customizing the Fluent the
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -28042,11 +28042,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-y-sm</td>
+    <td>$kendo-menu-popup-sm-item-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-sm`
+`$kendo-list-sm-item-padding-y`
 
 </td>
 <td>
@@ -28060,11 +28060,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-end-sm</td>
+    <td>$kendo-menu-popup-sm-item-padding-end</td>
     <td></td>
 <td>
 
-`calc( #{$kendo-menu-popup-item-padding-x-sm * 2} + var( --kendo-icon-size, 1rem ) )`
+`calc( #{$kendo-menu-popup-sm-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) )`
 
 </td>
 <td>
@@ -28078,7 +28078,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-icon-margin-start-sm</td>
+    <td>$kendo-menu-popup-sm-item-icon-margin-start</td>
     <td></td>
 <td>
 
@@ -28096,11 +28096,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-icon-margin-end-sm</td>
+    <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td></td>
 <td>
 
-`calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-item-padding-x-sm}) )`
+`calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) )`
 
 </td>
 <td>
@@ -28156,31 +28156,31 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        group-font-size: $kendo-menu-popup-font-size-sm,
-        group-line-height: $kendo-menu-popup-line-height-sm,
-        link-padding-x: $kendo-menu-popup-item-padding-x-sm,
-        link-padding-y: $kendo-menu-popup-item-padding-y-sm,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-sm,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-sm,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-sm,
+        group-font-size: $kendo-menu-popup-sm-font-size,
+        group-line-height: $kendo-menu-popup-sm-line-height,
+        link-padding-x: $kendo-menu-popup-sm-item-padding-x,
+        link-padding-y: $kendo-menu-popup-sm-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-sm-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-sm-item-icon-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-sm-item-icon-margin-end,
     ),
     md: (
-        group-font-size: $kendo-menu-popup-font-size-md,
-        group-line-height: $kendo-menu-popup-line-height-md,
-        link-padding-x: $kendo-menu-popup-item-padding-x-md,
-        link-padding-y: $kendo-menu-popup-item-padding-y-md,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-md,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-md,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-md,
+        group-font-size: $kendo-menu-popup-md-font-size,
+        group-line-height: $kendo-menu-popup-md-line-height,
+        link-padding-x: $kendo-menu-popup-md-item-padding-x,
+        link-padding-y: $kendo-menu-popup-md-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-md-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-item-icon-md-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-item-icon-md-margin-end,
     ),
     lg: (
-        group-font-size: $kendo-menu-popup-font-size-lg,
-        group-line-height: $kendo-menu-popup-line-height-lg,
-        link-padding-x: $kendo-menu-popup-item-padding-x-lg,
-        link-padding-y: $kendo-menu-popup-item-padding-y-lg,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-lg,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-lg,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-lg
+        group-font-size: $kendo-menu-popup-lg-font-size,
+        group-line-height: $kendo-menu-popup-lg-line-height,
+        link-padding-x: $kendo-menu-popup-lg-item-padding-x,
+        link-padding-y: $kendo-menu-popup-lg-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-lg-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-lg-item-icon-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end
     )
 )`
 
@@ -30209,7 +30209,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-item-group-spacing-sm</td>
+    <td>$kendo-pager-sm-item-group-spacing</td>
     <td></td>
 <td>
 
@@ -30305,19 +30305,19 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        padding-x: $kendo-pager-padding-x-sm,
-        padding-y: $kendo-pager-padding-y-sm,
-        item-group-spacing: $kendo-pager-item-group-spacing-sm
+        padding-x: $kendo-pager-sm-padding-x,
+        padding-y: $kendo-pager-sm-padding-y,
+        item-group-spacing: $kendo-pager-sm-item-group-spacing
     ),
     md: (
-        padding-x: $kendo-pager-padding-x-md,
-        padding-y: $kendo-pager-padding-y-md,
-        item-group-spacing: $kendo-pager-item-group-spacing-md
+        padding-x: $kendo-pager-md-padding-x,
+        padding-y: $kendo-pager-md-padding-y,
+        item-group-spacing: $kendo-pager-md-item-group-spacing
     ),
     lg: (
-        padding-x: $kendo-pager-padding-x-lg,
-        padding-y: $kendo-pager-padding-y-lg,
-        item-group-spacing: $kendo-pager-item-group-spacing-lg
+        padding-x: $kendo-pager-lg-padding-x,
+        padding-y: $kendo-pager-lg-padding-y,
+        item-group-spacing: $kendo-pager-lg-item-group-spacing
     )
 )`
 
@@ -35452,7 +35452,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>
@@ -35797,7 +35797,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height} )`
+`calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height-md} )`
 
 </td>
 <td>
@@ -38189,19 +38189,19 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        padding-x: $kendo-signature-padding-x-sm,
-        padding-y: $kendo-signature-padding-y-sm,
-        line-size: $kendo-signature-line-size-sm
+        padding-x: $kendo-signature-sm-padding-x,
+        padding-y: $kendo-signature-sm-padding-y,
+        line-size: $kendo-signature-sm-line-size
     ),
     md: (
-        padding-x: $kendo-signature-padding-x-md,
-        padding-y: $kendo-signature-padding-y-md,
-        line-size: $kendo-signature-line-size-md
+        padding-x: $kendo-signature-md-padding-x,
+        padding-y: $kendo-signature-md-padding-y,
+        line-size: $kendo-signature-md-line-size
     ),
     lg: (
-        padding-x: $kendo-signature-padding-x-lg,
-        padding-y: $kendo-signature-padding-y-lg,
-        line-size: $kendo-signature-line-size-lg
+        padding-x: $kendo-signature-lg-padding-x,
+        padding-y: $kendo-signature-lg-padding-y,
+        line-size: $kendo-signature-lg-line-size
     )
 )`
 
@@ -39252,11 +39252,11 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-split-button-arrow-padding-y-sm</td>
+    <td>$kendo-split-button-sm-arrow-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-button-padding-y-sm`
+`$kendo-button-sm-padding-y`
 
 </td>
 <td>
@@ -39270,11 +39270,11 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-split-button-arrow-padding-x-sm</td>
+    <td>$kendo-split-button-sm-arrow-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-split-button-arrow-padding-y-sm`
+`$kendo-split-button-sm-arrow-padding-y`
 
 </td>
 <td>
@@ -39347,9 +39347,9 @@ The following table lists the available variables for customizing the Fluent the
 <td>
 
 `(
-    sm: $kendo-split-button-arrow-padding-y-sm,
-    md: $kendo-split-button-arrow-padding-y-md,
-    lg: $kendo-split-button-arrow-padding-y-lg
+    sm: $kendo-split-button-sm-arrow-padding-y,
+    md: $kendo-split-button-md-arrow-padding-y,
+    lg: $kendo-split-button-lg-arrow-padding-y
 )`
 
 </td>
@@ -39928,7 +39928,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$filter-menu-padding-left</td>
+    <td>$kendo-filter-menu-padding-left</td>
     <td></td>
 <td>
 
@@ -42901,29 +42901,29 @@ The following table lists the available variables for customizing the Fluent the
     sm: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-cell-padding-x-sm,
-        cell-padding-y: $kendo-table-cell-padding-y-sm,
-        group-label-padding-x: $kendo-list-item-group-label-padding-x-sm,
-        group-label-padding-y: $kendo-list-item-group-label-padding-y-sm,
-        group-label-font-size: $kendo-list-item-group-label-font-size-sm
+        cell-padding-x: $kendo-table-sm-cell-padding-x,
+        cell-padding-y: $kendo-table-sm-cell-padding-y,
+        group-label-padding-x: $kendo-list-item-group-label-sm-padding-x,
+        group-label-padding-y: $kendo-list-item-group-label-sm-padding-y,
+        group-label-font-size: $kendo-list-item-group-label-sm-font-size
     ),
     md: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-cell-padding-x-md,
-        cell-padding-y: $kendo-table-cell-padding-y-md,
-        group-label-padding-x: $kendo-list-item-group-label-padding-x-md,
-        group-label-padding-y: $kendo-list-item-group-label-padding-y-md,
-        group-label-font-size: $kendo-list-item-group-label-font-size-md
+        cell-padding-x: $kendo-table-md-cell-padding-x,
+        cell-padding-y: $kendo-table-md-cell-padding-y,
+        group-label-padding-x: $kendo-list-item-group-label-md-padding-x,
+        group-label-padding-y: $kendo-list-item-group-label-md-padding-y,
+        group-label-font-size: $kendo-list-item-group-label-md-font-size
     ),
     lg: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-cell-padding-x-lg,
-        cell-padding-y: $kendo-table-cell-padding-y-lg,
-        group-label-padding-x: $kendo-list-item-group-label-padding-x-lg,
-        group-label-padding-y: $kendo-list-item-group-label-padding-y-lg,
-        group-label-font-size: $kendo-list-item-group-label-font-size-lg
+        cell-padding-x: $kendo-table-lg-cell-padding-x,
+        cell-padding-y: $kendo-table-lg-cell-padding-y,
+        group-label-padding-x: $kendo-list-item-group-label-lg-padding-x,
+        group-label-padding-y: $kendo-list-item-group-label-lg-padding-y,
+        group-label-font-size: $kendo-list-item-group-label-lg-font-size
     )
 )`
 
@@ -45540,7 +45540,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-tilelayout-border-width</td>
+    <td>$kendo-tile-layout-border-width</td>
     <td></td>
 <td>
 
@@ -45558,7 +45558,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-bg</td>
+    <td>$kendo-tile-layout-bg</td>
     <td></td>
 <td>
 
@@ -45576,7 +45576,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-hint-border-width</td>
+    <td>$kendo-tile-layout-hint-border-width</td>
     <td></td>
 <td>
 
@@ -45594,7 +45594,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-hint-border</td>
+    <td>$kendo-tile-layout-hint-border</td>
     <td></td>
 <td>
 
@@ -45612,7 +45612,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-hint-border-radius</td>
+    <td>$kendo-tile-layout-hint-border-radius</td>
     <td></td>
 <td>
 
@@ -45630,7 +45630,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-hint-bg</td>
+    <td>$kendo-tile-layout-hint-bg</td>
     <td></td>
 <td>
 
@@ -46141,7 +46141,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-font-size-sm`
+`$kendo-list-sm-font-size`
 
 </td>
 <td>
@@ -46159,7 +46159,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-line-height-sm`
+`$kendo-list-sm-line-height`
 
 </td>
 <td>
@@ -46169,7 +46169,7 @@ The following table lists the available variables for customizing the Fluent the
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -46177,7 +46177,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-item-padding-x-sm`
+`$kendo-list-sm-item-padding-x`
 
 </td>
 <td>
@@ -46195,7 +46195,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-sm`
+`$kendo-list-sm-item-padding-y`
 
 </td>
 <td>
@@ -47350,7 +47350,7 @@ The following table lists the available variables for customizing the Fluent the
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-toolbar-padding-x-sm</td>
+    <td>$kendo-toolbar-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -47368,7 +47368,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-toolbar-padding-y-sm</td>
+    <td>$kendo-toolbar-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -47386,7 +47386,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-toolbar-spacing-sm</td>
+    <td>$kendo-toolbar-sm-spacing</td>
     <td></td>
 <td>
 
@@ -47626,19 +47626,19 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        padding-x: $kendo-toolbar-padding-x-sm,
-        padding-y: $kendo-toolbar-padding-y-sm,
-        spacing: $kendo-toolbar-spacing-sm
+        padding-x: $kendo-toolbar-sm-padding-x,
+        padding-y: $kendo-toolbar-sm-padding-y,
+        spacing: $kendo-toolbar-sm-spacing
     ),
     md: (
-        padding-x: $kendo-toolbar-padding-x-md,
-        padding-y: $kendo-toolbar-padding-y-md,
-        spacing: $kendo-toolbar-spacing-md
+        padding-x: $kendo-toolbar-md-padding-x,
+        padding-y: $kendo-toolbar-md-padding-y,
+        spacing: $kendo-toolbar-md-spacing
     ),
     lg: (
-        padding-x: $kendo-toolbar-padding-x-lg,
-        padding-y: $kendo-toolbar-padding-y-lg,
-        spacing: $kendo-toolbar-spacing-lg
+        padding-x: $kendo-toolbar-lg-padding-x,
+        padding-y: $kendo-toolbar-lg-padding-y,
+        spacing: $kendo-toolbar-lg-spacing
     )
 )`
 
@@ -48113,7 +48113,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-treeview-font-size-sm</td>
+    <td>$kendo-treeview-sm-font-size</td>
     <td></td>
 <td>
 
@@ -48131,7 +48131,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-treeview-line-height-sm</td>
+    <td>$kendo-treeview-sm-line-height</td>
     <td></td>
 <td>
 
@@ -48167,7 +48167,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-treeview-item-padding-x-sm</td>
+    <td>$kendo-treeview-sm-item-padding-x</td>
     <td></td>
 <td>
 
@@ -48185,7 +48185,7 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-treeview-item-padding-y-sm</td>
+    <td>$kendo-treeview-sm-item-padding-y</td>
     <td></td>
 <td>
 
@@ -48281,22 +48281,22 @@ The following table lists the available variables for customizing the Fluent the
 
 `(
     sm: (
-        font-size: $kendo-treeview-font-size-sm,
-        line-height: $kendo-treeview-line-height-sm,
-        item-padding-x: $kendo-treeview-item-padding-x-sm,
-        item-padding-y: $kendo-treeview-item-padding-y-sm
+        font-size: $kendo-treeview-sm-font-size,
+        line-height: $kendo-treeview-sm-line-height,
+        item-padding-x: $kendo-treeview-sm-item-padding-x,
+        item-padding-y: $kendo-treeview-sm-item-padding-y
     ),
     md: (
-        font-size: $kendo-treeview-font-size-md,
-        line-height: $kendo-treeview-line-height-md,
-        item-padding-x: $kendo-treeview-item-padding-x-md,
-        item-padding-y: $kendo-treeview-item-padding-y-md
+        font-size: $kendo-treeview-md-font-size,
+        line-height: $kendo-treeview-md-line-height,
+        item-padding-x: $kendo-treeview-md-item-padding-x,
+        item-padding-y: $kendo-treeview-md-item-padding-y
     ),
     lg: (
-        font-size: $kendo-treeview-font-size-lg,
-        line-height: $kendo-treeview-line-height-lg,
-        item-padding-x: $kendo-treeview-item-padding-x-lg,
-        item-padding-y: $kendo-treeview-item-padding-y-lg
+        font-size: $kendo-treeview-lg-font-size,
+        line-height: $kendo-treeview-lg-line-height,
+        item-padding-x: $kendo-treeview-lg-item-padding-x,
+        item-padding-y: $kendo-treeview-lg-item-padding-y
     )
 )`
 

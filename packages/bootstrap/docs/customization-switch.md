@@ -382,7 +382,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`if( $dark-theme, $gray-800, $gray-200 )`
+`if( $kendo-is-dark-theme, $gray-800, $gray-200 )`
 
 </td>
 <td>

@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$font-size-lg`
+`$kendo-font-size-lg`
 
 </td>
 <td>

@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-filemanager-spacer</td>
+    <td>$kendo-file-manager-spacer</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-border-width</td>
+    <td>$kendo-file-manager-border-width</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-font-family</td>
+    <td>$kendo-file-manager-font-family</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-font-size</td>
+    <td>$kendo-file-manager-font-size</td>
     <td></td>
 <td>
 
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-line-height</td>
+    <td>$kendo-file-manager-line-height</td>
     <td></td>
 <td>
 
@@ -116,11 +116,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-toolbar-border-width</td>
+    <td>$kendo-file-manager-toolbar-border-width</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-border-width`
+`$kendo-file-manager-border-width`
 
 </td>
 <td>

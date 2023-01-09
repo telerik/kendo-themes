@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -638,11 +638,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-y-sm</td>
+    <td>$kendo-menu-popup-sm-item-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-sm`
+`$kendo-list-sm-item-padding-y`
 
 </td>
 <td>
@@ -656,11 +656,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-padding-end-sm</td>
+    <td>$kendo-menu-popup-sm-item-padding-end</td>
     <td></td>
 <td>
 
-`calc( #{$kendo-menu-popup-item-padding-x-sm * 2} + var( --kendo-icon-size, 1rem ) )`
+`calc( #{$kendo-menu-popup-sm-item-padding-x * 2} + var( --kendo-icon-size, 1rem ) )`
 
 </td>
 <td>
@@ -674,7 +674,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-icon-margin-start-sm</td>
+    <td>$kendo-menu-popup-sm-item-icon-margin-start</td>
     <td></td>
 <td>
 
@@ -692,11 +692,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-icon-margin-end-sm</td>
+    <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td></td>
 <td>
 
-`calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-item-padding-x-sm}) )`
+`calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-sm-item-padding-x}) )`
 
 </td>
 <td>
@@ -752,31 +752,31 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        group-font-size: $kendo-menu-popup-font-size-sm,
-        group-line-height: $kendo-menu-popup-line-height-sm,
-        link-padding-x: $kendo-menu-popup-item-padding-x-sm,
-        link-padding-y: $kendo-menu-popup-item-padding-y-sm,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-sm,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-sm,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-sm,
+        group-font-size: $kendo-menu-popup-sm-font-size,
+        group-line-height: $kendo-menu-popup-sm-line-height,
+        link-padding-x: $kendo-menu-popup-sm-item-padding-x,
+        link-padding-y: $kendo-menu-popup-sm-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-sm-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-sm-item-icon-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-sm-item-icon-margin-end,
     ),
     md: (
-        group-font-size: $kendo-menu-popup-font-size-md,
-        group-line-height: $kendo-menu-popup-line-height-md,
-        link-padding-x: $kendo-menu-popup-item-padding-x-md,
-        link-padding-y: $kendo-menu-popup-item-padding-y-md,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-md,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-md,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-md,
+        group-font-size: $kendo-menu-popup-md-font-size,
+        group-line-height: $kendo-menu-popup-md-line-height,
+        link-padding-x: $kendo-menu-popup-md-item-padding-x,
+        link-padding-y: $kendo-menu-popup-md-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-md-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-item-icon-md-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-item-icon-md-margin-end,
     ),
     lg: (
-        group-font-size: $kendo-menu-popup-font-size-lg,
-        group-line-height: $kendo-menu-popup-line-height-lg,
-        link-padding-x: $kendo-menu-popup-item-padding-x-lg,
-        link-padding-y: $kendo-menu-popup-item-padding-y-lg,
-        link-padding-inline-end: $kendo-menu-popup-item-padding-end-lg,
-        arrow-margin-inline-start: $kendo-menu-popup-item-icon-margin-start-lg,
-        arrow-margin-inline-end: $kendo-menu-popup-item-icon-margin-end-lg
+        group-font-size: $kendo-menu-popup-lg-font-size,
+        group-line-height: $kendo-menu-popup-lg-line-height,
+        link-padding-x: $kendo-menu-popup-lg-item-padding-x,
+        link-padding-y: $kendo-menu-popup-lg-item-padding-y,
+        link-padding-inline-end: $kendo-menu-popup-lg-item-padding-end,
+        arrow-margin-inline-start: $kendo-menu-popup-lg-item-icon-margin-start,
+        arrow-margin-inline-end: $kendo-menu-popup-lg-item-icon-margin-end
     )
 )`
 

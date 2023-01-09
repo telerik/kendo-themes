@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$kendo-table-cell-padding-x-md`
+`$kendo-table-md-cell-padding-x`
 
 </td>
 <td>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$kendo-table-cell-padding-y-md`
+`$kendo-table-md-cell-padding-y`
 
 </td>
 <td>

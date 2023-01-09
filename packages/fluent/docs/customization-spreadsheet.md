@@ -206,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$filter-menu-padding-left</td>
+    <td>$kendo-filter-menu-padding-left</td>
     <td></td>
 <td>
 

@@ -364,7 +364,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 3px 1px rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .25 )`
+`0 0 3px 1px rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 )`
 
 </td>
 <td>
@@ -512,7 +512,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`$base-gradient`
+`$kendo-base-gradient`
 
 </td>
 <td>
@@ -828,7 +828,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 3px 1px rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .25 )`
+`0 0 3px 1px rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 )`
 
 </td>
 <td>
@@ -976,7 +976,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`$base-gradient`
+`$kendo-base-gradient`
 
 </td>
 <td>
