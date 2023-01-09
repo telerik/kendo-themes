@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-tilelayout-border-width</td>
+    <td>$kendo-tile-layout-border-width</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-bg</td>
+    <td>$kendo-tile-layout-bg</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-hint-border-width</td>
+    <td>$kendo-tile-layout-hint-border-width</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-hint-border</td>
+    <td>$kendo-tile-layout-hint-border</td>
     <td></td>
 <td>
 
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-hint-border-radius</td>
+    <td>$kendo-tile-layout-hint-border-radius</td>
     <td></td>
 <td>
 
@@ -116,7 +116,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-tilelayout-hint-bg</td>
+    <td>$kendo-tile-layout-hint-bg</td>
     <td></td>
 <td>
 

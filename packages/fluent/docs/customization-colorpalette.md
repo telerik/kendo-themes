@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-colorpalette-font-family</td>
+    <td>$kendo-color-palette-font-family</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-font-size</td>
+    <td>$kendo-color-palette-font-size</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-line-height</td>
+    <td>$kendo-color-palette-line-height</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-outline-width</td>
+    <td>$kendo-color-palette-tile-outline-width</td>
     <td></td>
 <td>
 
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-outline-style</td>
+    <td>$kendo-color-palette-tile-outline-style</td>
     <td></td>
 <td>
 
@@ -116,7 +116,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-outline</td>
+    <td>$kendo-color-palette-tile-outline</td>
     <td></td>
 <td>
 
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-width</td>
+    <td>$kendo-color-palette-tile-width</td>
     <td></td>
 <td>
 
@@ -152,11 +152,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-height</td>
+    <td>$kendo-color-palette-tile-height</td>
     <td></td>
 <td>
 
-`$kendo-colorpalette-tile-width`
+`$kendo-color-palette-tile-width`
 
 </td>
 <td>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-focus-outline</td>
+    <td>$kendo-color-palette-tile-focus-outline</td>
     <td></td>
 <td>
 
@@ -188,7 +188,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-focus-shadow</td>
+    <td>$kendo-color-palette-tile-focus-shadow</td>
     <td></td>
 <td>
 
@@ -206,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-hover-outline</td>
+    <td>$kendo-color-palette-tile-hover-outline</td>
     <td></td>
 <td>
 
@@ -224,11 +224,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-hover-shadow</td>
+    <td>$kendo-color-palette-tile-hover-shadow</td>
     <td></td>
 <td>
 
-`inset 0 0 0 2px $kendo-colorpalette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white`
+`inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white`
 
 </td>
 <td>
@@ -242,11 +242,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-selected-outline</td>
+    <td>$kendo-color-palette-tile-selected-outline</td>
     <td></td>
 <td>
 
-`$kendo-colorpalette-tile-hover-outline`
+`$kendo-color-palette-tile-hover-outline`
 
 </td>
 <td>
@@ -260,11 +260,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-selected-shadow</td>
+    <td>$kendo-color-palette-tile-selected-shadow</td>
     <td></td>
 <td>
 
-`$kendo-colorpalette-tile-hover-shadow`
+`$kendo-color-palette-tile-hover-shadow`
 
 </td>
 <td>
@@ -278,11 +278,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-colorpalette-tile-selected-hover-outline</td>
+    <td>$kendo-color-palette-tile-selected-hover-outline</td>
     <td></td>
 <td>
 
-`$kendo-colorpalette-tile-focus-outline`
+`$kendo-color-palette-tile-focus-outline`
 
 </td>
 <td>

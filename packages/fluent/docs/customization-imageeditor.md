@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-imageeditor-bg</td>
+    <td>$kendo-image-editor-bg</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-text</td>
+    <td>$kendo-image-editor-text</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-border</td>
+    <td>$kendo-image-editor-border</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-margin-y</td>
+    <td>$kendo-image-editor-margin-y</td>
     <td></td>
 <td>
 
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-margin-x</td>
+    <td>$kendo-image-editor-margin-x</td>
     <td></td>
 <td>
 
@@ -116,7 +116,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-padding-y</td>
+    <td>$kendo-image-editor-padding-y</td>
     <td></td>
 <td>
 
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-padding-x</td>
+    <td>$kendo-image-editor-padding-x</td>
     <td></td>
 <td>
 
@@ -152,7 +152,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-border-width</td>
+    <td>$kendo-image-editor-border-width</td>
     <td></td>
 <td>
 
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-font-size</td>
+    <td>$kendo-image-editor-font-size</td>
     <td></td>
 <td>
 
@@ -188,7 +188,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-line-height</td>
+    <td>$kendo-image-editor-line-height</td>
     <td></td>
 <td>
 
@@ -206,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-font-family</td>
+    <td>$kendo-image-editor-font-family</td>
     <td></td>
 <td>
 
@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-content-bg</td>
+    <td>$kendo-image-editor-content-bg</td>
     <td></td>
 <td>
 
@@ -242,7 +242,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-content-text</td>
+    <td>$kendo-image-editor-content-text</td>
     <td></td>
 <td>
 
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-content-border</td>
+    <td>$kendo-image-editor-content-border</td>
     <td></td>
 <td>
 
@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-content-border-width</td>
+    <td>$kendo-image-editor-content-border-width</td>
     <td></td>
 <td>
 
@@ -296,7 +296,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-bg</td>
+    <td>$kendo-image-editor-action-pane-bg</td>
     <td></td>
 <td>
 
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-text</td>
+    <td>$kendo-image-editor-action-pane-text</td>
     <td></td>
 <td>
 
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-border</td>
+    <td>$kendo-image-editor-action-pane-border</td>
     <td></td>
 <td>
 
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-padding-y</td>
+    <td>$kendo-image-editor-action-pane-padding-y</td>
     <td></td>
 <td>
 
@@ -368,7 +368,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-padding-x</td>
+    <td>$kendo-image-editor-action-pane-padding-x</td>
     <td></td>
 <td>
 
@@ -386,11 +386,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-action-pane-width</td>
+    <td>$kendo-image-editor-action-pane-width</td>
     <td></td>
 <td>
 
-`if( $kendo-imageeditor-content-border-width == 0, 240px, calc( 240px + #{$kendo-imageeditor-content-border-width}) )`
+`if( $kendo-image-editor-content-border-width == 0, 240px, calc( 240px + #{$kendo-image-editor-content-border-width}) )`
 
 </td>
 <td>
@@ -404,7 +404,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-bg</td>
+    <td>$kendo-image-editor-crop-bg</td>
     <td></td>
 <td>
 
@@ -422,7 +422,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-text</td>
+    <td>$kendo-image-editor-crop-text</td>
     <td></td>
 <td>
 
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-border</td>
+    <td>$kendo-image-editor-crop-border</td>
     <td></td>
 <td>
 
@@ -458,7 +458,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-overlay-bg</td>
+    <td>$kendo-image-editor-crop-overlay-bg</td>
     <td></td>
 <td>
 
@@ -476,7 +476,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-border-width</td>
+    <td>$kendo-image-editor-crop-border-width</td>
     <td></td>
 <td>
 
@@ -494,7 +494,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-crop-border-style</td>
+    <td>$kendo-image-editor-crop-border-style</td>
     <td></td>
 <td>
 
@@ -512,7 +512,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-handle-margin-x</td>
+    <td>$kendo-image-editor-resize-handle-margin-x</td>
     <td></td>
 <td>
 
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-handle-margin-y</td>
+    <td>$kendo-image-editor-resize-handle-margin-y</td>
     <td></td>
 <td>
 
@@ -548,7 +548,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-handle-border-width</td>
+    <td>$kendo-image-editor-resize-handle-border-width</td>
     <td></td>
 <td>
 
@@ -566,7 +566,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-handle-size</td>
+    <td>$kendo-image-editor-resize-handle-size</td>
     <td></td>
 <td>
 
@@ -584,11 +584,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-top-offset</td>
+    <td>$kendo-image-editor-resize-top-offset</td>
     <td></td>
 <td>
 
-`math.div( $kendo-imageeditor-resize-handle-size, 2 )`
+`math.div( $kendo-image-editor-resize-handle-size, 2 )`
 
 </td>
 <td>
@@ -602,11 +602,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-imageeditor-resize-left-offset</td>
+    <td>$kendo-image-editor-resize-left-offset</td>
     <td></td>
 <td>
 
-`math.div( $kendo-imageeditor-resize-handle-size, 2 )`
+`math.div( $kendo-image-editor-resize-handle-size, 2 )`
 
 </td>
 <td>

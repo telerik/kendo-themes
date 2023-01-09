@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-coloreditor-spacer</td>
+    <td>$kendo-color-editor-spacer</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-min-width</td>
+    <td>$kendo-color-editor-min-width</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-border-width</td>
+    <td>$kendo-color-editor-border-width</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-border-radius</td>
+    <td>$kendo-color-editor-border-radius</td>
     <td></td>
 <td>
 
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-font-family</td>
+    <td>$kendo-color-editor-font-family</td>
     <td></td>
 <td>
 
@@ -116,7 +116,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-font-size</td>
+    <td>$kendo-color-editor-font-size</td>
     <td></td>
 <td>
 
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-line-height</td>
+    <td>$kendo-color-editor-line-height</td>
     <td></td>
 <td>
 
@@ -152,7 +152,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-bg</td>
+    <td>$kendo-color-editor-bg</td>
     <td></td>
 <td>
 
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-text</td>
+    <td>$kendo-color-editor-text</td>
     <td></td>
 <td>
 
@@ -188,7 +188,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-border</td>
+    <td>$kendo-color-editor-border</td>
     <td></td>
 <td>
 
@@ -206,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-shadow</td>
+    <td>$kendo-color-editor-shadow</td>
     <td></td>
 <td>
 
@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-focus-border</td>
+    <td>$kendo-color-editor-focus-border</td>
     <td></td>
 <td>
 
@@ -242,7 +242,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-focus-shadow</td>
+    <td>$kendo-color-editor-focus-shadow</td>
     <td></td>
 <td>
 
@@ -260,11 +260,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-header-padding-y</td>
+    <td>$kendo-color-editor-header-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-spacer`
+`$kendo-color-editor-spacer`
 
 </td>
 <td>
@@ -278,11 +278,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-header-padding-x</td>
+    <td>$kendo-color-editor-header-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-header-padding-y`
+`$kendo-color-editor-header-padding-y`
 
 </td>
 <td>
@@ -296,11 +296,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-header-actions-spacing</td>
+    <td>$kendo-color-editor-header-actions-spacing</td>
     <td></td>
 <td>
 
-`math.div( $kendo-coloreditor-spacer, 2 )`
+`math.div( $kendo-color-editor-spacer, 2 )`
 
 </td>
 <td>
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-color-preview-width</td>
+    <td>$kendo-color-editor-color-preview-width</td>
     <td></td>
 <td>
 
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-color-preview-height</td>
+    <td>$kendo-color-editor-color-preview-height</td>
     <td></td>
 <td>
 
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-preview-spacing</td>
+    <td>$kendo-color-editor-preview-spacing</td>
     <td></td>
 <td>
 
@@ -368,11 +368,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-views-padding-y</td>
+    <td>$kendo-color-editor-views-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-spacer`
+`$kendo-color-editor-spacer`
 
 </td>
 <td>
@@ -386,11 +386,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-views-padding-x</td>
+    <td>$kendo-color-editor-views-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-views-padding-y`
+`$kendo-color-editor-views-padding-y`
 
 </td>
 <td>
@@ -404,11 +404,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-views-spacing</td>
+    <td>$kendo-color-editor-views-spacing</td>
     <td></td>
 <td>
 
-`$kendo-coloreditor-spacer`
+`$kendo-color-editor-spacer`
 
 </td>
 <td>
@@ -422,7 +422,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-footer-padding-y</td>
+    <td>$kendo-color-editor-footer-padding-y</td>
     <td></td>
 <td>
 
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-footer-padding-x</td>
+    <td>$kendo-color-editor-footer-padding-x</td>
     <td></td>
 <td>
 
@@ -458,7 +458,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-colorgradient-focus-outline-color</td>
+    <td>$kendo-color-editor-color-gradient-focus-outline-color</td>
     <td></td>
 <td>
 
@@ -476,7 +476,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-colorgradient-focus-outline</td>
+    <td>$kendo-color-editor-color-gradient-focus-outline</td>
     <td></td>
 <td>
 
@@ -494,7 +494,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-coloreditor-colorgradient-focus-outline-offset</td>
+    <td>$kendo-color-editor-color-gradient-focus-outline-offset</td>
     <td></td>
 <td>
 

@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-filemanager-bg</td>
+    <td>$kendo-file-manager-bg</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-text</td>
+    <td>$kendo-file-manager-text</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-border</td>
+    <td>$kendo-file-manager-border</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-toolbar-bg</td>
+    <td>$kendo-file-manager-toolbar-bg</td>
     <td></td>
 <td>
 
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-toolbar-text</td>
+    <td>$kendo-file-manager-toolbar-text</td>
     <td></td>
 <td>
 
@@ -116,7 +116,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-toolbar-border</td>
+    <td>$kendo-file-manager-toolbar-border</td>
     <td></td>
 <td>
 
@@ -134,11 +134,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-padding-x</td>
+    <td>$kendo-file-manager-navigation-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -152,11 +152,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-padding-y</td>
+    <td>$kendo-file-manager-navigation-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-width</td>
+    <td>$kendo-file-manager-navigation-width</td>
     <td></td>
 <td>
 
@@ -188,11 +188,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-border-width</td>
+    <td>$kendo-file-manager-navigation-border-width</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-border-width`
+`$kendo-file-manager-border-width`
 
 </td>
 <td>
@@ -206,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-bg</td>
+    <td>$kendo-file-manager-navigation-bg</td>
     <td></td>
 <td>
 
@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-text</td>
+    <td>$kendo-file-manager-navigation-text</td>
     <td></td>
 <td>
 
@@ -242,7 +242,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-navigation-border</td>
+    <td>$kendo-file-manager-navigation-border</td>
     <td></td>
 <td>
 
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-padding-x</td>
+    <td>$kendo-file-manager-breadcrumb-padding-x</td>
     <td></td>
 <td>
 
@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-padding-y</td>
+    <td>$kendo-file-manager-breadcrumb-padding-y</td>
     <td></td>
 <td>
 
@@ -296,11 +296,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-border-width</td>
+    <td>$kendo-file-manager-breadcrumb-border-width</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-border-width`
+`$kendo-file-manager-border-width`
 
 </td>
 <td>
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-bg</td>
+    <td>$kendo-file-manager-breadcrumb-bg</td>
     <td></td>
 <td>
 
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-text</td>
+    <td>$kendo-file-manager-breadcrumb-text</td>
     <td></td>
 <td>
 
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-breadcrumb-border</td>
+    <td>$kendo-file-manager-breadcrumb-border</td>
     <td></td>
 <td>
 
@@ -368,7 +368,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-bg</td>
+    <td>$kendo-file-manager-listview-bg</td>
     <td></td>
 <td>
 
@@ -386,7 +386,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-text</td>
+    <td>$kendo-file-manager-listview-text</td>
     <td></td>
 <td>
 
@@ -404,7 +404,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-border</td>
+    <td>$kendo-file-manager-listview-border</td>
     <td></td>
 <td>
 
@@ -422,7 +422,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-padding-x</td>
+    <td>$kendo-file-manager-listview-item-padding-x</td>
     <td></td>
 <td>
 
@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-padding-y</td>
+    <td>$kendo-file-manager-listview-item-padding-y</td>
     <td></td>
 <td>
 
@@ -458,7 +458,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-width</td>
+    <td>$kendo-file-manager-listview-item-width</td>
     <td></td>
 <td>
 
@@ -476,7 +476,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-height</td>
+    <td>$kendo-file-manager-listview-item-height</td>
     <td></td>
 <td>
 
@@ -494,7 +494,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-size</td>
+    <td>$kendo-file-manager-listview-item-icon-size</td>
     <td></td>
 <td>
 
@@ -512,7 +512,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-bg</td>
+    <td>$kendo-file-manager-listview-item-icon-bg</td>
     <td></td>
 <td>
 
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-text</td>
+    <td>$kendo-file-manager-listview-item-icon-text</td>
     <td></td>
 <td>
 
@@ -548,7 +548,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-border</td>
+    <td>$kendo-file-manager-listview-item-icon-border</td>
     <td></td>
 <td>
 
@@ -566,7 +566,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-focus-bg</td>
+    <td>$kendo-file-manager-listview-item-icon-focus-bg</td>
     <td></td>
 <td>
 
@@ -584,7 +584,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-focus-text</td>
+    <td>$kendo-file-manager-listview-item-icon-focus-text</td>
     <td></td>
 <td>
 
@@ -602,7 +602,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-focus-border</td>
+    <td>$kendo-file-manager-listview-item-icon-focus-border</td>
     <td></td>
 <td>
 
@@ -620,7 +620,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-selected-bg</td>
+    <td>$kendo-file-manager-listview-item-icon-selected-bg</td>
     <td></td>
 <td>
 
@@ -638,7 +638,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-selected-text</td>
+    <td>$kendo-file-manager-listview-item-icon-selected-text</td>
     <td></td>
 <td>
 
@@ -656,7 +656,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-listview-item-icon-selected-border</td>
+    <td>$kendo-file-manager-listview-item-icon-selected-border</td>
     <td></td>
 <td>
 
@@ -674,7 +674,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-grid-bg</td>
+    <td>$kendo-file-manager-grid-bg</td>
     <td></td>
 <td>
 
@@ -692,7 +692,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-grid-text</td>
+    <td>$kendo-file-manager-grid-text</td>
     <td></td>
 <td>
 
@@ -710,7 +710,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-grid-border</td>
+    <td>$kendo-file-manager-grid-border</td>
     <td></td>
 <td>
 
@@ -728,11 +728,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-padding-x</td>
+    <td>$kendo-file-manager-preview-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -746,11 +746,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-padding-y</td>
+    <td>$kendo-file-manager-preview-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -764,7 +764,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-width</td>
+    <td>$kendo-file-manager-preview-width</td>
     <td></td>
 <td>
 
@@ -782,11 +782,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-border-width</td>
+    <td>$kendo-file-manager-preview-border-width</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-border-width`
+`$kendo-file-manager-border-width`
 
 </td>
 <td>
@@ -800,11 +800,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-spacing</td>
+    <td>$kendo-file-manager-preview-spacing</td>
     <td></td>
 <td>
 
-`$kendo-filemanager-spacer`
+`$kendo-file-manager-spacer`
 
 </td>
 <td>
@@ -818,7 +818,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-column-gap</td>
+    <td>$kendo-file-manager-preview-column-gap</td>
     <td></td>
 <td>
 
@@ -836,7 +836,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-bg</td>
+    <td>$kendo-file-manager-preview-bg</td>
     <td></td>
 <td>
 
@@ -854,7 +854,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-text</td>
+    <td>$kendo-file-manager-preview-text</td>
     <td></td>
 <td>
 
@@ -872,7 +872,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-border</td>
+    <td>$kendo-file-manager-preview-border</td>
     <td></td>
 <td>
 
@@ -890,7 +890,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-icon-size</td>
+    <td>$kendo-file-manager-preview-icon-size</td>
     <td></td>
 <td>
 
@@ -908,7 +908,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-icon-bg</td>
+    <td>$kendo-file-manager-preview-icon-bg</td>
     <td></td>
 <td>
 
@@ -926,7 +926,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-icon-text</td>
+    <td>$kendo-file-manager-preview-icon-text</td>
     <td></td>
 <td>
 
@@ -944,7 +944,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-filemanager-preview-icon-border</td>
+    <td>$kendo-file-manager-preview-icon-border</td>
     <td></td>
 <td>
 

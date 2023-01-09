@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$font-size`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -326,19 +326,19 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-toolbar-padding-x-sm,
-        padding-y: $kendo-toolbar-padding-y-sm,
-        spacing: $kendo-toolbar-spacing-sm
+        padding-x: $kendo-toolbar-sm-padding-x,
+        padding-y: $kendo-toolbar-sm-padding-y,
+        spacing: $kendo-toolbar-sm-spacing
     ),
     md: (
-        padding-x: $kendo-toolbar-padding-x-md,
-        padding-y: $kendo-toolbar-padding-y-md,
-        spacing: $kendo-toolbar-spacing-md
+        padding-x: $kendo-toolbar-md-padding-x,
+        padding-y: $kendo-toolbar-md-padding-y,
+        spacing: $kendo-toolbar-md-spacing
     ),
     lg: (
-        padding-x: $kendo-toolbar-padding-x-lg,
-        padding-y: $kendo-toolbar-padding-y-lg,
-        spacing: $kendo-toolbar-spacing-lg
+        padding-x: $kendo-toolbar-lg-padding-x,
+        padding-y: $kendo-toolbar-lg-padding-y,
+        spacing: $kendo-toolbar-lg-spacing
     )
 )`
 

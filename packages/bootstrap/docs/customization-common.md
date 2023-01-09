@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$base-bg</td>
+    <td>$kendo-base-bg</td>
     <td>Color</td>
 <td>
 
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$base-text</td>
+    <td>$kendo-base-text</td>
     <td>Color</td>
 <td>
 
@@ -84,11 +84,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$base-border</td>
+    <td>$kendo-base-border</td>
     <td>Color</td>
 <td>
 
-`k-try-shade( $base-bg, 1 )`
+`k-try-shade( $kendo-base-bg, 1 )`
 
 </td>
 <td>
@@ -104,7 +104,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$base-gradient</td>
+    <td>$kendo-base-gradient</td>
     <td>Null</td>
 <td>
 
@@ -146,7 +146,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-base-text`
 
 </td>
 <td>

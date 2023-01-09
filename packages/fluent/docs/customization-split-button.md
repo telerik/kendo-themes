@@ -26,11 +26,11 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-split-button-arrow-padding-y-sm</td>
+    <td>$kendo-split-button-sm-arrow-padding-y</td>
     <td></td>
 <td>
 
-`$kendo-button-padding-y-sm`
+`$kendo-button-sm-padding-y`
 
 </td>
 <td>
@@ -44,11 +44,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-split-button-arrow-padding-x-sm</td>
+    <td>$kendo-split-button-sm-arrow-padding-x</td>
     <td></td>
 <td>
 
-`$kendo-split-button-arrow-padding-y-sm`
+`$kendo-split-button-sm-arrow-padding-y`
 
 </td>
 <td>
@@ -121,9 +121,9 @@ The following table lists the available variables for customization.
 <td>
 
 `(
-    sm: $kendo-split-button-arrow-padding-y-sm,
-    md: $kendo-split-button-arrow-padding-y-md,
-    lg: $kendo-split-button-arrow-padding-y-lg
+    sm: $kendo-split-button-sm-arrow-padding-y,
+    md: $kendo-split-button-md-arrow-padding-y,
+    lg: $kendo-split-button-lg-arrow-padding-y
 )`
 
 </td>

@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$font-size`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$line-height`
+`$kendo-line-height-md`
 
 </td>
 <td>

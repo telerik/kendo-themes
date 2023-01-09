@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$kendo-list-font-size-md`
+`$kendo-list-md-font-size`
 
 </td>
 <td>
@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$kendo-list-line-height-md`
+`$kendo-list-md-line-height`
 
 </td>
 <td>
@@ -234,7 +234,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$kendo-list-item-padding-x-md`
+`$kendo-list-md-item-padding-x`
 
 </td>
 <td>
@@ -252,7 +252,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>

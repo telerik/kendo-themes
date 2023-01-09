@@ -102,7 +102,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>

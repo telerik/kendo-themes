@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-list-font-size-sm</td>
+    <td>$kendo-list-sm-font-size</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-line-height-sm</td>
+    <td>$kendo-list-sm-line-height</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-padding-x-sm</td>
+    <td>$kendo-list-sm-header-padding-x</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-padding-y-sm</td>
+    <td>$kendo-list-sm-header-padding-y</td>
     <td></td>
 <td>
 
@@ -116,7 +116,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-font-size-sm</td>
+    <td>$kendo-list-sm-header-font-size</td>
     <td></td>
 <td>
 
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-header-line-height-sm</td>
+    <td>$kendo-list-sm-header-line-height</td>
     <td></td>
 <td>
 
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-padding-x-sm</td>
+    <td>$kendo-list-sm-item-padding-x</td>
     <td></td>
 <td>
 
@@ -188,7 +188,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-padding-y-sm</td>
+    <td>$kendo-list-sm-item-padding-y</td>
     <td></td>
 <td>
 
@@ -206,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-font-size-sm</td>
+    <td>$kendo-list-sm-item-font-size</td>
     <td></td>
 <td>
 
@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-line-height-sm</td>
+    <td>$kendo-list-sm-item-line-height</td>
     <td></td>
 <td>
 
@@ -242,7 +242,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-group-label-font-size-sm</td>
+    <td>$kendo-list-item-group-label-sm-font-size</td>
     <td></td>
 <td>
 
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-padding-x-sm</td>
+    <td>$kendo-list-sm-group-item-padding-x</td>
     <td></td>
 <td>
 
@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-padding-y-sm</td>
+    <td>$kendo-list-sm-group-item-padding-y</td>
     <td></td>
 <td>
 
@@ -296,7 +296,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-group-label-padding-x-sm</td>
+    <td>$kendo-list-item-group-label-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-item-group-label-padding-y-sm</td>
+    <td>$kendo-list-item-group-label-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-font-size-sm</td>
+    <td>$kendo-list-sm-group-item-font-size</td>
     <td></td>
 <td>
 
@@ -368,7 +368,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-list-group-item-line-height-sm</td>
+    <td>$kendo-list-sm-group-item-line-height</td>
     <td></td>
 <td>
 

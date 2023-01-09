@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-segment-size-sm</td>
+    <td>$kendo-loader-sm-segment-size</td>
     <td></td>
 <td>
 
@@ -62,11 +62,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-padding-x-sm</td>
+    <td>$kendo-loader-sm-padding-x</td>
     <td></td>
 <td>
 
-`math.div( $kendo-loader-segment-size-sm, 2 )`
+`math.div( $kendo-loader-sm-segment-size, 2 )`
 
 </td>
 <td>
@@ -80,11 +80,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-padding-y-sm</td>
+    <td>$kendo-loader-sm-padding-y</td>
     <td></td>
 <td>
 
-`math.div( $kendo-loader-segment-size-sm, 2 )`
+`math.div( $kendo-loader-sm-segment-size, 2 )`
 
 </td>
 <td>
@@ -116,11 +116,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-spinner-3-width-sm</td>
+    <td>$kendo-loader-sm-spinner-3-width</td>
     <td></td>
 <td>
 
-`( $kendo-loader-segment-size-sm * 4 )`
+`( $kendo-loader-sm-segment-size * 4 )`
 
 </td>
 <td>
@@ -134,11 +134,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-spinner-3-height-sm</td>
+    <td>$kendo-loader-sm-spinner-3-height</td>
     <td></td>
 <td>
 
-`( $kendo-loader-spinner-3-width-sm * $kendo-loader-equilateral-height )`
+`( $kendo-loader-sm-spinner-3-width * $kendo-loader-equilateral-height )`
 
 </td>
 <td>
@@ -152,11 +152,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-spinner-4-width-sm</td>
+    <td>$kendo-loader-sm-spinner-4-width</td>
     <td></td>
 <td>
 
-`( $kendo-loader-segment-size-sm * 4 )`
+`( $kendo-loader-sm-segment-size * 4 )`
 
 </td>
 <td>
@@ -170,11 +170,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-spinner-4-height-sm</td>
+    <td>$kendo-loader-sm-spinner-4-height</td>
     <td></td>
 <td>
 
-`$kendo-loader-spinner-4-width-sm`
+`$kendo-loader-sm-spinner-4-width`
 
 </td>
 <td>
@@ -278,7 +278,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-container-padding-x-sm</td>
+    <td>$kendo-loader-sm-container-padding-x</td>
     <td></td>
 <td>
 
@@ -296,7 +296,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-container-padding-y-sm</td>
+    <td>$kendo-loader-sm-container-padding-y</td>
     <td></td>
 <td>
 
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-container-gap-sm</td>
+    <td>$kendo-loader-sm-container-gap</td>
     <td></td>
 <td>
 
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-loader-container-font-size-sm</td>
+    <td>$kendo-loader-sm-container-font-size</td>
     <td></td>
 <td>
 

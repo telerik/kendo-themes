@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-border`
+`$kendo-base-border`
 
 </td>
 <td>

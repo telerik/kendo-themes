@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>String</td>
 <td>
 
-`$font-family`
+`$kendo-font-family`
 
 </td>
 <td>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$font-size-md`
+`$kendo-font-size-md`
 
 </td>
 <td>
@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$line-height-md`
+`$kendo-line-height-md`
 
 </td>
 <td>
@@ -176,22 +176,22 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        font-size: $kendo-treeview-font-size-sm,
-        line-height: $kendo-treeview-line-height-sm,
-        item-padding-x: $kendo-treeview-item-padding-x-sm,
-        item-padding-y: $kendo-treeview-item-padding-y-sm
+        font-size: $kendo-treeview-sm-font-size,
+        line-height: $kendo-treeview-sm-line-height,
+        item-padding-x: $kendo-treeview-sm-item-padding-x,
+        item-padding-y: $kendo-treeview-sm-item-padding-y
     ),
     md: (
-        font-size: $kendo-treeview-font-size-md,
-        line-height: $kendo-treeview-line-height-md,
-        item-padding-x: $kendo-treeview-item-padding-x-md,
-        item-padding-y: $kendo-treeview-item-padding-y-md
+        font-size: $kendo-treeview-md-font-size,
+        line-height: $kendo-treeview-md-line-height,
+        item-padding-x: $kendo-treeview-md-item-padding-x,
+        item-padding-y: $kendo-treeview-md-item-padding-y
     ),
     lg: (
-        font-size: $kendo-treeview-font-size-lg,
-        line-height: $kendo-treeview-line-height-lg,
-        item-padding-x: $kendo-treeview-item-padding-x-lg,
-        item-padding-y: $kendo-treeview-item-padding-y-lg
+        font-size: $kendo-treeview-lg-font-size,
+        line-height: $kendo-treeview-lg-line-height,
+        item-padding-x: $kendo-treeview-lg-item-padding-x,
+        item-padding-y: $kendo-treeview-lg-item-padding-y
     )
 )`
 
@@ -457,7 +457,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$link-text`
+`$kendo-link-text`
 
 </td>
 <td>
@@ -515,7 +515,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$link-hover-text`
+`$kendo-link-hover-text`
 
 </td>
 <td>
@@ -573,7 +573,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$link-hover-text`
+`$kendo-link-hover-text`
 
 </td>
 <td>

@@ -266,19 +266,19 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-signature-padding-x-sm,
-        padding-y: $kendo-signature-padding-y-sm,
-        line-size: $kendo-signature-line-size-sm
+        padding-x: $kendo-signature-sm-padding-x,
+        padding-y: $kendo-signature-sm-padding-y,
+        line-size: $kendo-signature-sm-line-size
     ),
     md: (
-        padding-x: $kendo-signature-padding-x-md,
-        padding-y: $kendo-signature-padding-y-md,
-        line-size: $kendo-signature-line-size-md
+        padding-x: $kendo-signature-md-padding-x,
+        padding-y: $kendo-signature-md-padding-y,
+        line-size: $kendo-signature-md-line-size
     ),
     lg: (
-        padding-x: $kendo-signature-padding-x-lg,
-        padding-y: $kendo-signature-padding-y-lg,
-        line-size: $kendo-signature-line-size-lg
+        padding-x: $kendo-signature-lg-padding-x,
+        padding-y: $kendo-signature-lg-padding-y,
+        line-size: $kendo-signature-lg-line-size
     )
 )`
 

@@ -624,7 +624,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-x-md`
+`$kendo-toolbar-md-padding-x`
 
 </td>
 <td>
@@ -642,7 +642,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-y-md`
+`$kendo-toolbar-md-padding-y`
 
 </td>
 <td>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-toolbar-spacing-md`
+`$kendo-toolbar-md-spacing`
 
 </td>
 <td>

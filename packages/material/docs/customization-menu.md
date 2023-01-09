@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$popup-border-width`
+`$kendo-popup-border-width`
 
 </td>
 <td>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$font-size-lg`
+`$kendo-font-size-lg`
 
 </td>
 <td>
@@ -112,7 +112,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$popup-bg`
+`$kendo-popup-bg`
 
 </td>
 <td>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$popup-text`
+`$kendo-popup-text`
 
 </td>
 <td>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$popup-border`
+`$kendo-popup-border`
 
 </td>
 <td>
@@ -248,11 +248,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-icon-margin-start-sm</td>
+    <td>$kendo-menu-popup-sm-item-icon-margin-start</td>
     <td>Number</td>
 <td>
 
-`$kendo-menu-popup-item-padding-x-sm`
+`$kendo-menu-popup-sm-item-padding-x`
 
 </td>
 <td>
@@ -266,11 +266,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-menu-popup-item-icon-margin-end-sm</td>
+    <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
 <td>
 
-`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{k-math-div( $kendo-menu-popup-item-padding-x-sm, 2 )}) )`
+`calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) )`
 
 </td>
 <td>

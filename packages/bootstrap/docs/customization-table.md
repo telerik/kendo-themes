@@ -158,22 +158,22 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        cell-padding-x: $kendo-table-cell-padding-x-sm,
-        cell-padding-y: $kendo-table-cell-padding-y-sm
+        font-size: $kendo-font-size-md,
+        line-height: $kendo-line-height-md,
+        cell-padding-x: $kendo-table-sm-cell-padding-x,
+        cell-padding-y: $kendo-table-sm-cell-padding-y
     ),
     md: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        cell-padding-x: $kendo-table-cell-padding-x-md,
-        cell-padding-y: $kendo-table-cell-padding-y-md
+        font-size: $kendo-font-size-md,
+        line-height: $kendo-line-height-md,
+        cell-padding-x: $kendo-table-md-cell-padding-x,
+        cell-padding-y: $kendo-table-md-cell-padding-y
     ),
     lg: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        cell-padding-x: $kendo-table-cell-padding-x-lg,
-        cell-padding-y: $kendo-table-cell-padding-y-lg
+        font-size: $kendo-font-size-md,
+        line-height: $kendo-line-height-md,
+        cell-padding-x: $kendo-table-lg-cell-padding-x,
+        cell-padding-y: $kendo-table-lg-cell-padding-y
     )
 )`
 

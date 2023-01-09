@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$kendo-mediaplayer-border-width</td>
+    <td>$kendo-media-player-border-width</td>
     <td></td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-font-family</td>
+    <td>$kendo-media-player-font-family</td>
     <td></td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-font-size</td>
+    <td>$kendo-media-player-font-size</td>
     <td></td>
 <td>
 
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-line-height</td>
+    <td>$kendo-media-player-line-height</td>
     <td></td>
 <td>
 
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-bg</td>
+    <td>$kendo-media-player-bg</td>
     <td></td>
 <td>
 
@@ -116,7 +116,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-text</td>
+    <td>$kendo-media-player-text</td>
     <td></td>
 <td>
 
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-border</td>
+    <td>$kendo-media-player-border</td>
     <td></td>
 <td>
 
@@ -152,7 +152,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-overlay-bg</td>
+    <td>$kendo-media-player-overlay-bg</td>
     <td></td>
 <td>
 
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-quality-border</td>
+    <td>$kendo-media-player-quality-border</td>
     <td></td>
 <td>
 
@@ -188,7 +188,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-titlebar-padding-x</td>
+    <td>$kendo-media-player-titlebar-padding-x</td>
     <td></td>
 <td>
 
@@ -206,7 +206,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-titlebar-padding-y</td>
+    <td>$kendo-media-player-titlebar-padding-y</td>
     <td></td>
 <td>
 
@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-titlebar-bg</td>
+    <td>$kendo-media-player-titlebar-bg</td>
     <td></td>
 <td>
 
@@ -242,11 +242,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-mediaplayer-titlebar-text</td>
+    <td>$kendo-media-player-titlebar-text</td>
     <td></td>
 <td>
 
-`$kendo-mediaplayer-bg`
+`$kendo-media-player-bg`
 
 </td>
 <td>

@@ -386,7 +386,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-rows-spacing-sm</td>
+    <td>$kendo-form-sm-rows-spacing</td>
     <td></td>
 <td>
 
@@ -404,11 +404,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-rows-spacing-md</td>
+    <td>$kendo-form-md-rows-spacing</td>
     <td></td>
 <td>
 
-`$kendo-form-rows-spacing-sm`
+`$kendo-form-sm-rows-spacing`
 
 </td>
 <td>
@@ -422,11 +422,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-form-rows-spacing-lg</td>
+    <td>$kendo-form-lg-rows-spacing</td>
     <td></td>
 <td>
 
-`$kendo-form-rows-spacing-sm`
+`$kendo-form-sm-rows-spacing`
 
 </td>
 <td>

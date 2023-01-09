@@ -296,7 +296,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-item-group-spacing-sm</td>
+    <td>$kendo-pager-sm-item-group-spacing</td>
     <td></td>
 <td>
 
@@ -392,19 +392,19 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-pager-padding-x-sm,
-        padding-y: $kendo-pager-padding-y-sm,
-        item-group-spacing: $kendo-pager-item-group-spacing-sm
+        padding-x: $kendo-pager-sm-padding-x,
+        padding-y: $kendo-pager-sm-padding-y,
+        item-group-spacing: $kendo-pager-sm-item-group-spacing
     ),
     md: (
-        padding-x: $kendo-pager-padding-x-md,
-        padding-y: $kendo-pager-padding-y-md,
-        item-group-spacing: $kendo-pager-item-group-spacing-md
+        padding-x: $kendo-pager-md-padding-x,
+        padding-y: $kendo-pager-md-padding-y,
+        item-group-spacing: $kendo-pager-md-item-group-spacing
     ),
     lg: (
-        padding-x: $kendo-pager-padding-x-lg,
-        padding-y: $kendo-pager-padding-y-lg,
-        item-group-spacing: $kendo-pager-item-group-spacing-lg
+        padding-x: $kendo-pager-lg-padding-x,
+        padding-y: $kendo-pager-lg-padding-y,
+        item-group-spacing: $kendo-pager-lg-item-group-spacing
     )
 )`
 

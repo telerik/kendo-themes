@@ -142,29 +142,29 @@ The following table lists the available variables for customization.
     sm: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-cell-padding-x-sm,
-        cell-padding-y: $kendo-table-cell-padding-y-sm,
-        group-label-padding-x: $kendo-list-item-group-label-padding-x-sm,
-        group-label-padding-y: $kendo-list-item-group-label-padding-y-sm,
-        group-label-font-size: $kendo-list-item-group-label-font-size-sm
+        cell-padding-x: $kendo-table-sm-cell-padding-x,
+        cell-padding-y: $kendo-table-sm-cell-padding-y,
+        group-label-padding-x: $kendo-list-item-group-label-sm-padding-x,
+        group-label-padding-y: $kendo-list-item-group-label-sm-padding-y,
+        group-label-font-size: $kendo-list-item-group-label-sm-font-size
     ),
     md: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-cell-padding-x-md,
-        cell-padding-y: $kendo-table-cell-padding-y-md,
-        group-label-padding-x: $kendo-list-item-group-label-padding-x-md,
-        group-label-padding-y: $kendo-list-item-group-label-padding-y-md,
-        group-label-font-size: $kendo-list-item-group-label-font-size-md
+        cell-padding-x: $kendo-table-md-cell-padding-x,
+        cell-padding-y: $kendo-table-md-cell-padding-y,
+        group-label-padding-x: $kendo-list-item-group-label-md-padding-x,
+        group-label-padding-y: $kendo-list-item-group-label-md-padding-y,
+        group-label-font-size: $kendo-list-item-group-label-md-font-size
     ),
     lg: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: $kendo-table-cell-padding-x-lg,
-        cell-padding-y: $kendo-table-cell-padding-y-lg,
-        group-label-padding-x: $kendo-list-item-group-label-padding-x-lg,
-        group-label-padding-y: $kendo-list-item-group-label-padding-y-lg,
-        group-label-font-size: $kendo-list-item-group-label-font-size-lg
+        cell-padding-x: $kendo-table-lg-cell-padding-x,
+        cell-padding-y: $kendo-table-lg-cell-padding-y,
+        group-label-padding-x: $kendo-list-item-group-label-lg-padding-x,
+        group-label-padding-y: $kendo-list-item-group-label-lg-padding-y,
+        group-label-font-size: $kendo-list-item-group-label-lg-font-size
     )
 )`
 

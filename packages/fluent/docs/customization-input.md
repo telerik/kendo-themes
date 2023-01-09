@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-padding-x-sm</td>
+    <td>$kendo-input-sm-padding-x</td>
     <td></td>
 <td>
 
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-padding-y-sm</td>
+    <td>$kendo-input-sm-padding-y</td>
     <td></td>
 <td>
 
@@ -116,7 +116,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-font-size-sm</td>
+    <td>$kendo-input-sm-font-size</td>
     <td></td>
 <td>
 
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-line-height-sm</td>
+    <td>$kendo-input-sm-line-height</td>
     <td></td>
 <td>
 
@@ -1778,34 +1778,34 @@ The following table lists the available variables for customization.
 
 `(
     sm: (
-        padding-x: $kendo-input-padding-x-sm,
-        padding-y: $kendo-input-padding-y-sm,
-        font-size: $kendo-input-font-size-sm,
-        line-height: $kendo-input-line-height-sm,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-sm * 2} ),
-        button-padding-x: $kendo-input-padding-y-sm,
-        button-padding-y: $kendo-input-padding-y-sm,
-        button-width: $kendo-input-button-width-sm
+        padding-x: $kendo-input-sm-padding-x,
+        padding-y: $kendo-input-sm-padding-y,
+        font-size: $kendo-input-sm-font-size,
+        line-height: $kendo-input-sm-line-height,
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-sm-padding-y * 2} ),
+        button-padding-x: $kendo-input-sm-padding-y,
+        button-padding-y: $kendo-input-sm-padding-y,
+        button-width: $kendo-input-sm-button-width
     ),
     md: (
-        padding-x: $kendo-input-padding-x-md,
-        padding-y: $kendo-input-padding-y-md,
-        font-size: $kendo-input-font-size-md,
-        line-height: $kendo-input-line-height-md,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-md * 2} ),
-        button-padding-x: $kendo-input-padding-y-md,
-        button-padding-y: $kendo-input-padding-y-md,
-        button-width: $kendo-input-button-width-md
+        padding-x: $kendo-input-md-padding-x,
+        padding-y: $kendo-input-md-padding-y,
+        font-size: $kendo-input-md-font-size,
+        line-height: $kendo-input-md-line-height,
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-md-padding-y * 2} ),
+        button-padding-x: $kendo-input-md-padding-y,
+        button-padding-y: $kendo-input-md-padding-y,
+        button-width: $kendo-input-md-button-width
     ),
     lg: (
-        padding-x: $kendo-input-padding-x-lg,
-        padding-y: $kendo-input-padding-y-lg,
-        font-size: $kendo-input-font-size-lg,
-        line-height: $kendo-input-line-height-lg,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-lg * 2} ),
-        button-padding-x: $kendo-input-padding-y-lg,
-        button-padding-y: $kendo-input-padding-y-lg,
-        button-width: $kendo-input-button-width-lg
+        padding-x: $kendo-input-lg-padding-x,
+        padding-y: $kendo-input-lg-padding-y,
+        font-size: $kendo-input-lg-font-size,
+        line-height: $kendo-input-lg-line-height,
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-lg-padding-y * 2} ),
+        button-padding-x: $kendo-input-lg-padding-y,
+        button-padding-y: $kendo-input-lg-padding-y,
+        button-width: $kendo-input-lg-button-width
     )
 )`
 

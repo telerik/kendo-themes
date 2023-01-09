@@ -192,7 +192,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-x-md`
+`$kendo-toolbar-md-padding-x`
 
 </td>
 <td>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-y-md`
+`$kendo-toolbar-md-padding-y`
 
 </td>
 <td>
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-size</td>
+    <td>$kendo-grid-group-drop-hint-size</td>
     <td></td>
 <td>
 
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-line-size</td>
+    <td>$kendo-grid-group-drop-hint-line-size</td>
     <td></td>
 <td>
 
@@ -368,11 +368,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-dot-size</td>
+    <td>$kendo-grid-group-drop-hint-dot-size</td>
     <td></td>
 <td>
 
-`$kendo-grid-group-dropclue-size`
+`$kendo-grid-group-drop-hint-size`
 
 </td>
 <td>
@@ -386,11 +386,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-height</td>
+    <td>$kendo-grid-group-drop-hint-height</td>
     <td></td>
 <td>
 
-`calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size} )`
+`calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-drop-hint-size} )`
 
 </td>
 <td>
@@ -404,7 +404,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-top</td>
+    <td>$kendo-grid-group-drop-hint-top</td>
     <td></td>
 <td>
 
@@ -1110,7 +1110,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-x-md`
+`$kendo-toolbar-md-padding-x`
 
 </td>
 <td>
@@ -1128,7 +1128,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-toolbar-padding-y-md`
+`$kendo-toolbar-md-padding-y`
 
 </td>
 <td>
@@ -1146,7 +1146,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-toolbar-spacing-md`
+`$kendo-toolbar-md-spacing`
 
 </td>
 <td>
@@ -1308,7 +1308,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-icon-spacing-lg, .5rem )`
+`var( --kendo-icon-lg-spacing, .5rem )`
 
 </td>
 <td>
@@ -1416,7 +1416,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-button-padding-x-md`
+`$kendo-button-md-padding-x`
 
 </td>
 <td>
@@ -1434,7 +1434,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-button-padding-y-md`
+`$kendo-button-md-padding-y`
 
 </td>
 <td>
@@ -1610,7 +1610,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-group-dropclue-bg</td>
+    <td>$kendo-grid-group-drop-hint-bg</td>
     <td></td>
 <td>
 
@@ -2028,7 +2028,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-font-size-md`
+`$kendo-list-md-font-size`
 
 </td>
 <td>
@@ -2046,7 +2046,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-line-height-md`
+`$kendo-list-md-line-height`
 
 </td>
 <td>
@@ -2100,7 +2100,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-item-padding-y-md`
+`$kendo-list-md-item-padding-y`
 
 </td>
 <td>
@@ -2118,7 +2118,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-item-padding-x-md`
+`$kendo-list-md-item-padding-x`
 
 </td>
 <td>
@@ -2136,7 +2136,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-list-item-padding-x-md`
+`$kendo-list-md-item-padding-x`
 
 </td>
 <td>

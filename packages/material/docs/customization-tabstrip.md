@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$tabstrip-bg</td>
+    <td>$kendo-tabstrip-bg</td>
     <td>Null</td>
 <td>
 
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-text</td>
+    <td>$kendo-tabstrip-text</td>
     <td>Color</td>
 <td>
 
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-border</td>
+    <td>$kendo-tabstrip-border</td>
     <td>Color</td>
 <td>
 
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-padding-x</td>
+    <td>$kendo-tabstrip-item-padding-x</td>
     <td>Number</td>
 <td>
 
@@ -102,7 +102,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-padding-y</td>
+    <td>$kendo-tabstrip-item-padding-y</td>
     <td>Number</td>
 <td>
 
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-border-width</td>
+    <td>$kendo-tabstrip-item-border-width</td>
     <td>Number</td>
 <td>
 
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-border-radius</td>
+    <td>$kendo-tabstrip-item-border-radius</td>
     <td>Number</td>
 <td>
 
@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-gap</td>
+    <td>$kendo-tabstrip-item-gap</td>
     <td>Number</td>
 <td>
 
@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-bg</td>
+    <td>$kendo-tabstrip-item-bg</td>
     <td>Null</td>
 <td>
 
@@ -192,7 +192,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-text</td>
+    <td>$kendo-tabstrip-item-text</td>
     <td>Color</td>
 <td>
 
@@ -212,7 +212,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-border</td>
+    <td>$kendo-tabstrip-item-border</td>
     <td>Null</td>
 <td>
 
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-gradient</td>
+    <td>$kendo-tabstrip-item-gradient</td>
     <td>Null</td>
 <td>
 
@@ -248,7 +248,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hover-bg</td>
+    <td>$kendo-tabstrip-item-hover-bg</td>
     <td>Color</td>
 <td>
 
@@ -268,7 +268,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hover-text</td>
+    <td>$kendo-tabstrip-item-hover-text</td>
     <td>Color</td>
 <td>
 
@@ -288,7 +288,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hover-border</td>
+    <td>$kendo-tabstrip-item-hover-border</td>
     <td>Null</td>
 <td>
 
@@ -306,7 +306,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-hover-gradient</td>
+    <td>$kendo-tabstrip-item-hover-gradient</td>
     <td>Null</td>
 <td>
 
@@ -324,7 +324,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-selected-bg</td>
+    <td>$kendo-tabstrip-item-selected-bg</td>
     <td>Null</td>
 <td>
 
@@ -342,7 +342,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-selected-text</td>
+    <td>$kendo-tabstrip-item-selected-text</td>
     <td>Color</td>
 <td>
 
@@ -362,7 +362,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-selected-border</td>
+    <td>$kendo-tabstrip-item-selected-border</td>
     <td>Null</td>
 <td>
 
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-item-selected-gradient</td>
+    <td>$kendo-tabstrip-item-selected-gradient</td>
     <td>Null</td>
 <td>
 
@@ -398,7 +398,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-padding-x</td>
+    <td>$kendo-tabstrip-content-padding-x</td>
     <td>Number</td>
 <td>
 
@@ -416,7 +416,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-padding-y</td>
+    <td>$kendo-tabstrip-content-padding-y</td>
     <td>Number</td>
 <td>
 
@@ -434,7 +434,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-border-width</td>
+    <td>$kendo-tabstrip-content-border-width</td>
     <td>Number</td>
 <td>
 
@@ -452,7 +452,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-bg</td>
+    <td>$kendo-tabstrip-content-bg</td>
     <td>Color</td>
 <td>
 
@@ -472,7 +472,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-text</td>
+    <td>$kendo-tabstrip-content-text</td>
     <td>Null</td>
 <td>
 
@@ -490,7 +490,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-border</td>
+    <td>$kendo-tabstrip-content-border</td>
     <td>Null</td>
 <td>
 
@@ -508,7 +508,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$tabstrip-content-focus-border</td>
+    <td>$kendo-tabstrip-content-focus-border</td>
     <td>Color</td>
 <td>
 
