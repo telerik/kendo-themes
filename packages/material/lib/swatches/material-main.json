@@ -14,15 +14,6 @@
     "components": [],
     "groups": [
         {
-            "variables": {
-                "border-radius": {
-                    "name": "Border radius",
-                    "type": "number",
-                    "value": "2px"
-                }
-            }
-        },
-        {
             "name": "Theme colors",
             "variables": {
                 "primary-palette-name": {

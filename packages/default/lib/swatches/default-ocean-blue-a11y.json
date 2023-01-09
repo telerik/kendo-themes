@@ -14,18 +14,13 @@
     "components": [],
     "groups": [
         {
-            "name": "Theme Settings",
-            "variables": {
-                "kendo-enable-focus-contrast": {
-                    "name": "Enable focus indicator contrast",
-                    "type": "boolean",
-                    "value": true
-                }
-            }
-        },
-        {
             "name": "Theme colors",
             "variables": {
+                "kendo-is-dark-theme": {
+                    "name": "Dark theme",
+                    "type": "boolean",
+                    "value": false
+                },
                 "kendo-color-primary": {
                     "name": "Primary",
                     "type": "color",
@@ -189,36 +184,6 @@
             }
         },
         {
-            "name": "Inputs",
-            "variables": {
-                "kendo-input-clear-value-opacity": {
-                    "name": "Input clear value button opacity",
-                    "type": "number",
-                    "value": "80%"
-                }
-            }
-        },
-        {
-            "name": "TaskBoard",
-            "variables": {
-                "kendo-taskboard-column-focus-border": {
-                    "name": "TaskBoard column focus border",
-                    "type": "color",
-                    "value": "#424242"
-                }
-            }
-        },
-        {
-            "name": "ColorEditor",
-            "variables": {
-                "kendo-coloreditor-colorgradient-focus-outline-color": {
-                    "name": "ColorEditor gradient focus outline color",
-                    "type": "color",
-                    "value": "#424242"
-                }
-            }
-        },
-        {
             "name": "Dataviz",
             "variables": {
                 "kendo-series-a": {
@@ -254,8 +219,29 @@
             }
         },
         {
-            "name": "Scheduler",
+            "name": "Contrast improvements",
+            "hidden": true,
             "variables": {
+                "kendo-enable-focus-contrast": {
+                    "name": "Enable focus indicator contrast",
+                    "type": "boolean",
+                    "value": true
+                },
+                "kendo-input-clear-value-opacity": {
+                    "name": "Input clear value button opacity",
+                    "type": "number",
+                    "value": "80%"
+                },
+                "kendo-taskboard-column-focus-border": {
+                    "name": "TaskBoard column focus border",
+                    "type": "color",
+                    "value": "#424242"
+                },
+                "kendo-color-editor-color-gradient-focus-outline-color": {
+                    "name": "ColorEditor gradient focus outline color",
+                    "type": "color",
+                    "value": "#424242"
+                },
                 "kendo-scheduler-event-bg": {
                     "name": "Scheduler event background",
                     "type": "color",

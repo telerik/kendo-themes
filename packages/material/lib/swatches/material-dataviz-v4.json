@@ -16,32 +16,32 @@
         {
             "name": "Dataviz",
             "variables": {
-                "series-a": {
+                "kendo-series-a": {
                     "name": "Series A",
                     "type": "color",
                     "value": "#3f51b5"
                 },
-                "series-b": {
+                "kendo-series-b": {
                     "name": "Series B",
                     "type": "color",
                     "value": "#2196f3"
                 },
-                "series-c": {
+                "kendo-series-c": {
                     "name": "Series C",
                     "type": "color",
                     "value": "#43a047"
                 },
-                "series-d": {
+                "kendo-series-d": {
                     "name": "Series D",
                     "type": "color",
                     "value": "#ffc107"
                 },
-                "series-e": {
+                "kendo-series-e": {
                     "name": "Series E",
                     "type": "color",
                     "value": "#ff5722"
                 },
-                "series-f": {
+                "kendo-series-f": {
                     "name": "Series F",
                     "type": "color",
                     "value": "#e91e63"
