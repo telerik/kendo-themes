@@ -3,51 +3,51 @@
 
 /// The first base series color and its light and dark shades.
 /// @group charts
-$kendo-series-a: get-theme-color( series-a, 100 ) !default;
-$kendo-series-a-dark: get-theme-color( series-a, 130 ) !default;
-$kendo-series-a-darker: get-theme-color( series-a, 160 ) !default;
-$kendo-series-a-light: get-theme-color( series-a, 70 ) !default;
-$kendo-series-a-lighter: get-theme-color( series-a, 40 ) !default;
+$kendo-series-a: get-theme-color-var( series-a-100 ) !default;
+$kendo-series-a-dark: get-theme-color-var( series-a-130 ) !default;
+$kendo-series-a-darker: get-theme-color-var( series-a-160 ) !default;
+$kendo-series-a-light: get-theme-color-var( series-a-70 ) !default;
+$kendo-series-a-lighter: get-theme-color-var( series-a-40 ) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
-$kendo-series-b: get-theme-color( series-b, 100 ) !default;
-$kendo-series-b-dark: get-theme-color( series-b, 130 ) !default;
-$kendo-series-b-darker: get-theme-color( series-b, 160 ) !default;
-$kendo-series-b-light: get-theme-color( series-b, 70 ) !default;
-$kendo-series-b-lighter: get-theme-color( series-b, 40 ) !default;
+$kendo-series-b: get-theme-color-var( series-b-100 ) !default;
+$kendo-series-b-dark: get-theme-color-var( series-b-130 ) !default;
+$kendo-series-b-darker: get-theme-color-var( series-b-160 ) !default;
+$kendo-series-b-light: get-theme-color-var( series-b-70 ) !default;
+$kendo-series-b-lighter: get-theme-color-var( series-b-40 ) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
-$kendo-series-c: get-theme-color( series-c, 100 ) !default;
-$kendo-series-c-dark: get-theme-color( series-c, 130 ) !default;
-$kendo-series-c-darker: get-theme-color( series-c, 160 ) !default;
-$kendo-series-c-light: get-theme-color( series-c, 70 ) !default;
-$kendo-series-c-lighter: get-theme-color( series-c, 40 ) !default;
+$kendo-series-c: get-theme-color-var( series-c-100 ) !default;
+$kendo-series-c-dark: get-theme-color-var( series-c-130 ) !default;
+$kendo-series-c-darker: get-theme-color-var( series-c-160 ) !default;
+$kendo-series-c-light: get-theme-color-var( series-c-70 ) !default;
+$kendo-series-c-lighter: get-theme-color-var( series-c-40 ) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-d: get-theme-color( series-d, 100 ) !default;
-$kendo-series-d-dark: get-theme-color( series-d, 130 ) !default;
-$kendo-series-d-darker: get-theme-color( series-d, 160 ) !default;
-$kendo-series-d-light: get-theme-color( series-d, 70 ) !default;
-$kendo-series-d-lighter: get-theme-color( series-d, 40 ) !default;
+$kendo-series-d: get-theme-color-var( series-d-100 ) !default;
+$kendo-series-d-dark: get-theme-color-var( series-d-130 ) !default;
+$kendo-series-d-darker: get-theme-color-var( series-d-160 ) !default;
+$kendo-series-d-light: get-theme-color-var( series-d-70 ) !default;
+$kendo-series-d-lighter: get-theme-color-var( series-d-40 ) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-e: get-theme-color( series-e, 100 ) !default;
-$kendo-series-e-dark: get-theme-color( series-e, 130 ) !default;
-$kendo-series-e-darker: get-theme-color( series-e, 160 ) !default;
-$kendo-series-e-light: get-theme-color( series-e, 70 ) !default;
-$kendo-series-e-lighter: get-theme-color( series-e, 40 ) !default;
+$kendo-series-e: get-theme-color-var( series-e-100 ) !default;
+$kendo-series-e-dark: get-theme-color-var( series-e-130 ) !default;
+$kendo-series-e-darker: get-theme-color-var( series-e-60 ) !default;
+$kendo-series-e-light: get-theme-color-var( series-e-70 ) !default;
+$kendo-series-e-lighter: get-theme-color-var( series-e-40 ) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-f: get-theme-color( series-f, 100 ) !default;
-$kendo-series-f-dark: get-theme-color( series-f, 130 ) !default;
-$kendo-series-f-darker: get-theme-color( series-f, 160 ) !default;
-$kendo-series-f-light: get-theme-color( series-f, 70 ) !default;
-$kendo-series-f-lighter: get-theme-color( series-f, 40 ) !default;
+$kendo-series-f: get-theme-color-var( series-f-100 ) !default;
+$kendo-series-f-dark: get-theme-color-var( series-f-130 ) !default;
+$kendo-series-f-darker: get-theme-color-var( series-f-160 ) !default;
+$kendo-series-f-light: get-theme-color-var( series-f-70 ) !default;
+$kendo-series-f-lighter: get-theme-color-var( series-f-40 ) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker

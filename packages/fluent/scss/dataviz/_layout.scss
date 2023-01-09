@@ -442,7 +442,7 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-series-f,
-        gauge-track: get-theme-color( neutral, 30 )
+        gauge-track: get-theme-color-var( neutral-30 )
     );
 
     @each $name, $value in $exported {
