@@ -88,6 +88,45 @@
             > .k-button-icon {
                 min-width: calc( #{$_font-size} * #{$_line-height} );
                 min-height: calc( #{$_font-size} * #{$_line-height} );
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                &.k-svg-icon > svg,
+                &.k-icon-md > svg {
+                    width: $kendo-icon-size-md;
+                    height: $kendo-icon-size-md;
+                }
+
+                &.k-icon-xs > svg {
+                    width: $kendo-icon-size-xs;
+                    height: $kendo-icon-size-xs;
+                }
+
+                &.k-icon-sm > svg {
+                    width: $kendo-icon-size-sm;
+                    height: $kendo-icon-size-sm;
+                }
+
+                &.k-icon-lg > svg {
+                    width: $kendo-icon-size-lg;
+                    height: $kendo-icon-size-lg;
+                }
+
+                &.k-icon-xl > svg {
+                    width: $kendo-icon-size-xl;
+                    height: $kendo-icon-size-xl;
+                }
+
+                &.k-icon-xxl > svg {
+                    width: $kendo-icon-size-xxl;
+                    height: $kendo-icon-size-xxl;
+                }
+
+                &.k-icon-xxxl > svg {
+                    width: $kendo-icon-size-xxxl;
+                    height: $kendo-icon-size-xxxl;
+                }
             }
         }
     }
