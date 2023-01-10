@@ -26,6 +26,11 @@ $ki-icon-size: $kendo-icon-size;
         }
     }
 
+    // kendo-icon-wrapper component
+    .k-icon-wrapper-host {
+        display: contents;
+    }
+
     .k-icon-with-modifier {
         position: relative;
         margin: .25em;
