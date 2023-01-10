@@ -4,6 +4,7 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-classic",
     "version": "5.1.2-dev.7",
+    "api": "legacy",
     "previewColors": [
         "#ffffff",
         "#def4fd",

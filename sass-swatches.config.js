@@ -21,17 +21,9 @@ module.exports = {
         },
         {
             cwd: 'packages/fluent',
-            file: 'scss/all.scss',
-            outFile: 'dist/all.css',
-            compiler: 'sass-embedded',
-            api: 'modern'
-        },
-        {
-            cwd: 'packages/fluent',
-            file: 'scss/all.scss',
-            outFile: 'dist/fluent-main.css',
-            compiler: 'sass-embedded',
-            api: 'modern'
+            entry: [ 'dist/!(_|variables)*.scss' ],
+            api: "modern",
+            compiler: "sass-embedded"
         }
     ]
 };
