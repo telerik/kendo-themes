@@ -63,21 +63,41 @@ function writeSwatches( cwds, options ) {
     });
 }
 
-function swatchJsonTransformer(json) {
-    const sassContent = [];
-    let { groups } = json;
+function swatchJsonTransformer( json ) {
+    const variables = [];
 
-    groups.forEach( (group) => {
+    json.groups.forEach( (group) => {
         for ( const [ name, meta ] of Object.entries(group.variables) ) {
-            sassContent.push(`$${name}: ${meta.value};`);
+            variables.push({ name: name, value: meta.value });
         }
     });
 
-    sassContent.push('');
+    const templates = {
+        modern: () => {
+            const sassContent = [];
 
-    sassContent.push(`@import "all.scss";`);
+            sassContent.push(`@use "../scss/index.scss" as kendo-theme;`);
+            sassContent.push(variables.map( (variable) => `kendo-theme.$${variable.name}: ${variable.value};`).join( '\n' ));
+            sassContent.push(`@include kendo-theme.config();`);
+            sassContent.push(`@include kendo-theme.styles();`);
 
-    return sassContent.join( '\n' );
+            return sassContent.join( '\n' );
+        },
+        legacy: () => {
+            const sassContent = [];
+
+            sassContent.push(variables.map( (variable) => `$${variable.name}: ${variable.value};`).join( '\n' ));
+            sassContent.push(`@import "all.scss";`);
+
+            return sassContent.join( '\n' );
+        }
+    };
+
+    if ( json.api === 'modern' ) {
+        return templates.modern();
+    }
+
+    return templates.legacy();
 }
 // #endregion
 
