@@ -12,6 +12,7 @@
             background-color: $kendo-grid-selected-bg;
         }
 
+        .k-table-row.k-selected > td,
         .k-table-row.k-selected > .k-table-td {
             color: inherit;
             background-color: transparent;
@@ -21,10 +22,16 @@
         .k-table {
             > .k-table-row:not(.k-detail-row):hover,
             > .k-table-row:not(.k-detail-row).k-hover,
+            td:focus,
+            td.k-focus,
             .k-table-td:focus,
             .k-table-td.k-focus,
             .k-table-th:focus,
             .k-table-th.k-focus,
+            .k-master-row > td:focus,
+            .k-grouping-row > td:focus,
+            .k-detail-row > td:focus,
+            .k-group-footer > td:focus,
             .k-master-row > .k-table-td:focus,
             .k-grouping-row > .k-table-td:focus,
             .k-detail-row > .k-table-td:focus,
@@ -43,7 +50,12 @@
             }
 
             .k-table-th,
+            td,
             .k-table-td,
+            .k-master-row > td,
+            .k-grouping-row > td,
+            .k-detail-row > td,
+            .k-group-footer > td,
             .k-master-row > .k-table-td,
             .k-grouping-row > .k-table-td,
             .k-detail-row > .k-table-td,
@@ -66,6 +78,7 @@
         }
 
         .k-table-th,
+        td,
         .k-table-td {
             border-inline-start-color: transparent;
         }
@@ -73,11 +86,14 @@
         .k-grid-header-locked,
         .k-grid-content-locked,
         .k-grid-header-locked .k-table-th,
+        .k-grid-content-locked td,
         .k-grid-content-locked .k-table-td {
             border-top-color: $kendo-grid-header-border;
             border-bottom-color: $kendo-grid-header-border;
 
             .k-group-footer {
+                &:hover td,
+                &.k-hover td,
                 &:hover .k-table-td,
                 &.k-hover .k-table-td {
                     color: inherit;
@@ -103,6 +119,8 @@
             border-color: $kendo-grid-sticky-border;
             border-bottom-color: $kendo-grid-header-border;
         }
+
+        .k-grid-row-sticky td,
         .k-grid-row-sticky .k-table-td {
             border-top-color: $kendo-grid-sticky-border;
             border-bottom-color: $kendo-grid-sticky-border;
@@ -155,11 +173,14 @@
     }
 
     .k-group-footer {
+        td,
         .k-table-td,
         .k-grid-footer-sticky {
             background: $kendo-grid-sticky-footer-bg;
         }
 
+        &:hover td,
+        &.k-hover td,
         &:hover .k-table-td,
         &.k-hover .k-table-td {
             @include fill( $bg: $kendo-grid-sticky-footer-hover-bg );

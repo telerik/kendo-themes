@@ -8,6 +8,7 @@
             background-color: inherit;
         }
 
+        td,
         .k-table-td,
         .k-grid-content,
         .k-grid-header-locked,
@@ -30,7 +31,9 @@
 
         // Selected state
         .k-table-th.k-selected,
+        td.k-selected,
         .k-table-td.k-selected,
+        .k-table-row.k-selected > td,
         .k-table-row.k-selected > .k-table-td {
             color: $kendo-grid-selected-text;
             background-color: $kendo-grid-selected-bg;
@@ -38,7 +41,12 @@
 
         // Focused state
         .k-table-th,
+        td,
         .k-table-td,
+        .k-master-row > td,
+        .k-grouping-row > td,
+        .k-detail-row > td,
+        .k-group-footer > td,
         .k-master-row > .k-table-td,
         .k-grouping-row > .k-table-td,
         .k-detail-row > .k-table-td,
@@ -60,6 +68,7 @@
         .k-grid-header-locked,
         .k-grid-content-locked,
         .k-grid-header-locked .k-header,
+        .k-grid-content-locked td,
         .k-grid-content-locked .k-table-td {
             border-color: $kendo-grid-sticky-header-border;
         }
@@ -69,25 +78,31 @@
         }
 
         .k-grid-content-locked {
+            .k-group-footer td,
             .k-group-footer .k-table-td,
             .k-group-cell {
                 @include fill( $border: $kendo-grid-header-border );
             }
 
+            .k-grouping-row + .k-table-row td,
             .k-grouping-row + .k-table-row .k-table-td {
                 border-top-color: $kendo-grid-header-border;
             }
 
             // Selected state
+            .k-selected td,
             .k-selected .k-table-td {
                 @include fill( $bg: $kendo-grid-sticky-selected-bg );
             }
 
+            .k-selected.k-table-alt-row td,
             .k-selected.k-table-alt-row .k-table-td {
                 @include fill( $bg: $kendo-grid-sticky-selected-alt-bg );
             }
 
             // Selected hover
+            .k-selected:hover td,
+            .k-selected.k-hover td,
             .k-selected:hover .k-table-td,
             .k-selected.k-hover .k-table-td {
                 @include fill( $bg: $kendo-grid-sticky-selected-hover-bg );
@@ -184,12 +199,14 @@
         // Selected state
         &.k-selected .k-grid-content-sticky,
         &.k-selected .k-grid-row-sticky,
+        td.k-grid-content-sticky.k-selected,
         .k-table-td.k-grid-content-sticky.k-selected {
             @include fill( $bg: $kendo-grid-sticky-selected-bg );
         }
 
         &.k-selected.k-table-alt-row .k-grid-content-sticky,
         &.k-selected.k-table-alt-row .k-grid-row-sticky,
+        &.k-table-alt-row td.k-grid-content-sticky.k-selected,
         &.k-table-alt-row .k-table-td.k-grid-content-sticky.k-selected {
             @include fill( $bg: $kendo-grid-sticky-selected-alt-bg );
         }
@@ -209,6 +226,8 @@
         &.k-selected.k-hover .k-grid-content-sticky,
         &.k-selected:hover .k-grid-row-sticky,
         &.k-selected.k-hover .k-grid-row-sticky,
+        &:hover td.k-grid-content-sticky.k-selected,
+        &.k-hover td.k-grid-content-sticky.k-selected,
         &:hover .k-table-td.k-grid-content-sticky.k-selected,
         &.k-hover .k-table-td.k-grid-content-sticky.k-selected {
             background-color: $kendo-grid-sticky-selected-hover-bg;
@@ -228,11 +247,14 @@
             }
         }
 
+        .k-grid-row-sticky td,
         .k-grid-row-sticky .k-table-td {
             border-top-color: $kendo-grid-sticky-border;
             border-bottom-color: $kendo-grid-sticky-border;
             background-color: $kendo-grid-sticky-bg;
 
+            &:hover td,
+            &.k-hover td,
             &:hover .k-table-td,
             &.k-hover .k-table-td {
                 background-color: $kendo-grid-sticky-hover-bg;
@@ -240,12 +262,15 @@
         }
 
         .k-table-alt-row .k-grid-content-sticky,
+        .k-grid-row-sticky.k-table-alt-row td,
         .k-grid-row-sticky.k-table-alt-row .k-table-td {
             @include fill( $bg: $kendo-grid-sticky-alt-bg );
         }
 
         // Selected state
         .k-table-row.k-selected .k-grid-content-sticky,
+        .k-selected.k-grid-row-sticky td,
+        .k-grid-row-sticky td.k-selected,
         .k-selected.k-grid-row-sticky .k-table-td,
         .k-grid-row-sticky .k-table-td.k-selected,
         .k-selected.k-grid-content-sticky {
@@ -253,6 +278,7 @@
         }
 
         .k-table-row.k-selected.k-table-alt-row .k-grid-content-sticky,
+        .k-selected.k-table-alt-row.k-grid-row-sticky td,
         .k-selected.k-table-alt-row.k-grid-row-sticky .k-table-td,
         .k-table-alt-row .k-selected.k-grid-content-sticky {
             @include fill( $bg: $kendo-grid-sticky-selected-alt-bg );
@@ -261,6 +287,10 @@
         // Hover state
         .k-table-row:hover .k-grid-content-sticky,
         .k-table-row.k-hover .k-grid-content-sticky,
+        .k-grid-row-sticky:hover td,
+        .k-grid-row-sticky.k-hover td,
+        .k-grid-row-sticky.k-table-alt-row:hover td,
+        .k-grid-row-sticky.k-table-alt-row.k-hover td,
         .k-grid-row-sticky:hover .k-table-td,
         .k-grid-row-sticky.k-hover .k-table-td,
         .k-grid-row-sticky.k-table-alt-row:hover .k-table-td,
@@ -273,12 +303,18 @@
         // Selected + Hover
         .k-table-row.k-selected:hover .k-grid-content-sticky,
         .k-table-row.k-selected.k-hover .k-grid-content-sticky,
+        .k-selected.k-grid-row-sticky:hover td,
+        .k-selected.k-grid-row-sticky.k-hover td,
+        .k-selected.k-table-alt-row.k-grid-row-sticky:hover td,
+        .k-selected.k-table-alt-row.k-grid-row-sticky.k-hover td,
         .k-selected.k-grid-row-sticky:hover .k-table-td,
         .k-selected.k-grid-row-sticky.k-hover .k-table-td,
         .k-selected.k-table-alt-row.k-grid-row-sticky:hover .k-table-td,
         .k-selected.k-table-alt-row.k-grid-row-sticky.k-hover .k-table-td,
         .k-table-row.k-selected.k-table-alt-row:hover .k-grid-content-sticky,
         .k-table-row.k-selected.k-table-alt-row.k-hover .k-grid-content-sticky,
+        .k-grid-row-sticky:hover td.k-selected,
+        .k-grid-row-sticky.k-hover td.k-selected,
         .k-grid-row-sticky:hover .k-table-td.k-selected,
         .k-grid-row-sticky.k-hover .k-table-td.k-selected,
         .k-table-row:hover .k-grid-content-sticky.k-selected,
@@ -299,6 +335,7 @@
     }
 
     .k-group-footer {
+        td,
         .k-table-td,
         .k-grid-footer-sticky {
             @include fill( $bg: $kendo-grid-sticky-footer-bg );

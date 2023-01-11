@@ -33,6 +33,8 @@
             transform: translate(0, -50%);
         }
 
+        .k-table-row.k-footer td,
+        .k-table-row.k-footer-template td,
         .k-table-row.k-footer .k-table-td,
         .k-table-row.k-footer-template .k-table-td {
             border-width: $kendo-treelist-footer-row-border-width 0;
@@ -40,6 +42,7 @@
             font-weight: bold;
         }
 
+        .k-table-row.k-footer + .k-table-row.k-footer td,
         .k-table-row.k-footer + .k-table-row.k-footer .k-table-td {
             border-top-width: 0;
         }
