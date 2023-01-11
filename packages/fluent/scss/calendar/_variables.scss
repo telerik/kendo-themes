@@ -168,7 +168,7 @@ $kendo-calendar-week-number-text: var( --kendo-subtle-text, inherit ) !default;
 $kendo-calendar-other-month-bg: inherit !default;
 /// Text color of the other months calendar cells.
 /// @group calendar
-$kendo-calendar-other-month-text: var( --kendo-subtle-text, inherit ) !default;
+$kendo-calendar-other-month-text: var( --kendo-disabled-text, inherit ) !default;
 
 /// Background color of the calendar cells.
 /// @group calendar
