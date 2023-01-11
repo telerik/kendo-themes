@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/telerik/kendo-themes/compare/v5.12.0...v6.0.0) (2023-01-11)
+
+
+### Bug Fixes
+
+* use utility class names from utils package ([6445d04](https://github.com/telerik/kendo-themes/commit/6445d04a9e48e5307cf7afaf7e81a376fc119cc0))
+
+
+### chore
+
+* rename $spacing to $kendo-spacing ([abdff63](https://github.com/telerik/kendo-themes/commit/abdff63627f593399ea95b8d2a9a45898d6b7da7))
+
+
+### Features
+
+* use utility class names from utils package ([e4ab60e](https://github.com/telerik/kendo-themes/commit/e4ab60ec11b1379269059e32e97494bc7b0c3667))
+
+
+### BREAKING CHANGES
+
+* Use utility class names from utils package
+
+Previously, the utility classes were defined in the default theme and were
+consumed from the derived themes.
+
+While no class names were changed, we did try to move to a more consistent
+naming convention for the class names. For example, the class name for
+`display: flex` was changed from `k-display-flex` to `k-d-flex`, as it's shorter
+and unambiguous. Of course, the old class names are still supported and
+will be removed in the next major version.
+* Added `$kendo-` prefix to `$spacing` map
+
+Renamed `$spacing` to `$kendo-spacing` to avoid conflicts with other libraries.
+
+
+
+
+
 # [5.12.0](https://github.com/telerik/kendo-themes/compare/v5.11.0...v5.12.0) (2022-11-28)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils

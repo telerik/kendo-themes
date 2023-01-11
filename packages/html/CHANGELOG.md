@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/telerik/kendo-themes/compare/v5.12.0...v6.0.0) (2023-01-11)
+
+
+### Bug Fixes
+
+* **editor:** add styles for table inside editor when not using iframe ([4a4b41b](https://github.com/telerik/kendo-themes/commit/4a4b41bf17b3a6ef81f178fcef67ff6205d4e16c))
+* **html:** unify treeview disabled item rendering ([313ae3d](https://github.com/telerik/kendo-themes/commit/313ae3d769cc671c3d8176169b0d2dc6a569ae0f))
+* **html:** update today button to use button instead of anchor or span ([0612e6e](https://github.com/telerik/kendo-themes/commit/0612e6e2ac6dccdf2107ffe48c3734f18a7f2df8))
+
+
+### Features
+
+* **dialog:** add styles for themeColor property ([1653efd](https://github.com/telerik/kendo-themes/commit/1653efdc51bce9b342cd2f7d960a423d04fcfbca))
+* **fab:** remove styles for fab shape property ([e21f33e](https://github.com/telerik/kendo-themes/commit/e21f33e726d930164bfe833e3a509f79e236171b))
+* **grid:** update grid header rendering ([a1ad23f](https://github.com/telerik/kendo-themes/commit/a1ad23f39b94fa0f67c8f1d093c8057759e5dd51))
+* **html:** add appbar html helper ([fcd8c45](https://github.com/telerik/kendo-themes/commit/fcd8c4578f6a2c6ef42ee9141fd959db92d3ed0f))
+* **html:** add chunk-progressbar html helper ([16e552e](https://github.com/telerik/kendo-themes/commit/16e552e9e1609d1e87d36c9a82b69f4d6362400a))
+* **html:** add dialog html helper ([3521a8d](https://github.com/telerik/kendo-themes/commit/3521a8d2e9719fd1d22a164088b89a6effd2d4d0))
+* **html:** add disabled prop to buttongroup ([6c60b08](https://github.com/telerik/kendo-themes/commit/6c60b086f280a1011afc56a8cfa77317b05d6398))
+* **html:** add editor html helper ([e69cb35](https://github.com/telerik/kendo-themes/commit/e69cb352e4a200773350e1cbe6d3e54ea96c56ba))
+* **html:** add html helper for toolbar ([5373b45](https://github.com/telerik/kendo-themes/commit/5373b4535963bbc4f580f7f898b4b91500fec06a))
+* **html:** add listbox html helper ([4ffe868](https://github.com/telerik/kendo-themes/commit/4ffe8682d1313877f3a1db0cd46d614912d30826))
+* **html:** add listview html component ([0f77b2c](https://github.com/telerik/kendo-themes/commit/0f77b2cd3a3abc18feaae470ae5c724941674b24))
+* **html:** add loader html helper ([4009e62](https://github.com/telerik/kendo-themes/commit/4009e62420f88d308b01f23bb66b1d405c4f158e))
+* **html:** add notification helper ([c71ca2b](https://github.com/telerik/kendo-themes/commit/c71ca2b0886cea6bf81d3eef2023459b1d5eb8e4))
+* **html:** add pager html helper ([a3d56b9](https://github.com/telerik/kendo-themes/commit/a3d56b93890650e20a05d8f28d7e772203845d24))
+* **html:** add progressbar html helper ([5af1ff1](https://github.com/telerik/kendo-themes/commit/5af1ff1ad3af1e8b83f2f8889ca336ab627345a2))
+* **html:** add upload html helper ([5191a33](https://github.com/telerik/kendo-themes/commit/5191a33743603a3b967cb0280cd7d0d01cd0285b))
+* **html:** add window html helper ([afa1a72](https://github.com/telerik/kendo-themes/commit/afa1a72daaacfa5872a049c5fcfd1b599b3e6795))
+* **multiselect:** update chip list rendering to comply with accessibility standards ([fcab7e5](https://github.com/telerik/kendo-themes/commit/fcab7e5188f95a410083b961cc72ba7f78abcdf1))
+* **progressbar:** expose k-progressbar-value class ([52e7882](https://github.com/telerik/kendo-themes/commit/52e78823267ce9c1ec2701ec2d7f4feff0af079b))
+* **upload:** update upload styles to match new rendering ([53dfbd6](https://github.com/telerik/kendo-themes/commit/53dfbd62ec042a690cbb861a3822590b446c7770))
+* **window:** add styles for themeColor property ([e3bad3d](https://github.com/telerik/kendo-themes/commit/e3bad3d74222c607c96fee573aef7646b1aa1300))
+
+
+### BREAKING CHANGES
+
+* **grid:** Grid header cell rendering updated
+* **upload:** The following classes are being renamed:
+
+* `k-dropzone-hover/hovered` renamed to `k-hover`
+
+* `k-file-group-wrapper`, `k-file-invalid-group-wrapper`,
+`k-multiple-files-group-wrapper`, `k-multiple-files-invalid-group-wrapper`
+renamed to `k-file-icon-wrapper`
+
+* `k-file-group` replaced with `k-file-icon`
+
+* `k-file-name-size-wrap class` replaced with `k-file-info`
+
+* `k-file-information` class replaced with `k-file-summary`
+
+* upload actions buttons wrapper renamed from `k-upload-status` to `k-upload-actions`
+* **upload:** The following classes are being removed:
+
+* `k-upload-status-total` removed from `k-upload-status`
+
+* `k-validation-icon` removed from upload-status icon
+
+* `k-file-name-invalid` removed from k-file-name
+
+* `k-text-success` and k-text-error removed from `k-validation-message`
+* **upload:** Updated rendering of the upload area with button and input
+* **fab:** Remove styles for fab shape property
+* **progressbar:** The following changes are introduced:
+
+* added `k-progressbar-value` class
+
+* renamed css variable name from `--kendo-progressbar-progress` to `--kendo-progressbar-value`
+* **html:** The `k-overflow-anchor` class is renamed to `k-toolbar-overflow-button`.
+
+
+
+
+
 # [5.12.0](https://github.com/telerik/kendo-themes/compare/v5.11.0...v5.12.0) (2022-11-28)
 
 
