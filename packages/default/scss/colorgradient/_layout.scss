@@ -169,8 +169,9 @@
             }
 
             // Needed for the double check icons
-            .k-icon + .k-icon {
-                margin-left: -13px;
+            .k-icon + .k-icon,
+            .k-icon-wrapper-host + .k-icon-wrapper-host .k-icon {
+                margin-inline-start: -13px;
             }
         }
     }
@@ -184,16 +185,3 @@
 
 }
 
-@include exports( "colorgradient/layout/rtl" ) {
-
-    .k-rtl,
-    [dir="rtl"] {
-
-        .k-colorgradient-color-contrast .k-i-check + .k-i-check {
-            margin-left: 0;
-            margin-right: -13px;
-        }
-
-    }
-
-}

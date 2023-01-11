@@ -173,7 +173,8 @@
             }
 
             // Needed for the double check icons
-            .k-icon + .k-icon {
+            .k-icon + .k-icon,
+            .k-icon-wrapper-host + .k-icon-wrapper-host .k-icon {
                 margin-inline-start: -13px;
             }
         }
