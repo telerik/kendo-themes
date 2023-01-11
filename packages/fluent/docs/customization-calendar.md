@@ -894,7 +894,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-subtle-text, inherit )`
+`var( --kendo-disabled-text, inherit )`
 
 </td>
 <td>
