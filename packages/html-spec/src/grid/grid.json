@@ -342,6 +342,7 @@
                         {
                             "name": "grid-table-cell",
                             "selector": [
+                                "td",
                                 ".k-table-td"
                             ],
                             "states": [
@@ -511,6 +512,7 @@
                                         {
                                             "name": "grid-footer-table-cell",
                                             "selector": [
+                                                "td",
                                                 ".k-table-td"
                                             ],
                                             "states": [
