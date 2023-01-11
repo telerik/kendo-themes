@@ -66,6 +66,7 @@
         }
 
         .k-table-th,
+        td,
         .k-table-td {
             border-width: 0;
             border-inline-start-width: $kendo-grid-cell-vertical-border-width;
@@ -104,6 +105,7 @@
             white-space: nowrap;
         }
 
+        td,
         .k-table-td {
             border-block-end-width: $kendo-grid-cell-horizontal-border-width;
             white-space: unset;
@@ -260,12 +262,17 @@
             align-items: center;
             align-content: center;
         }
+
+        .k-grouping-row td,
         .k-grouping-row .k-table-td {
             overflow: visible;
         }
+
+        .k-grouping-row + .k-table-row td,
         .k-grouping-row + .k-table-row .k-table-td {
             border-top-width: $kendo-grid-grouping-row-border-top;
         }
+
         .k-grouping-row .k-group-cell,
         .k-grouping-row + .k-table-row .k-group-cell {
             border-top-width: 0;
@@ -278,11 +285,13 @@
             text-decoration: none;
         }
 
+        .k-table .k-group-footer td,
         .k-table .k-group-footer .k-table-td {
             border-style: solid;
             border-width: $kendo-grid-group-footer-border-y 0;
         }
 
+        .k-group-footer .k-group-cell + td,
         .k-group-footer .k-group-cell + .k-table-td {
             border-inline-start-width: $kendo-grid-cell-vertical-border-width;
         }
@@ -487,11 +496,15 @@
     .k-grid-footer {
         border-top-width: 1px;
 
+        td,
         .k-table-td {
             height: $kendo-line-height-em;
         }
     }
 
+    .k-grid-footer td,
+    .k-group-footer td,
+    .k-grouping-row td,
     .k-grid-footer .k-table-td,
     .k-group-footer .k-table-td,
     .k-grouping-row .k-table-td {
@@ -514,6 +527,7 @@
     .k-filter-row {
         line-height: $kendo-form-line-height;
 
+        td,
         .k-table-td,
         .k-table-th {
             border-width: 0;
@@ -522,6 +536,7 @@
             white-space: nowrap;
         }
 
+        td:first-child,
         .k-table-td:first-child {
             border-inline-start-width: 0;
         }
@@ -568,6 +583,7 @@
         border-color: inherit;
         outline: 0;
 
+        .k-table-row:last-child > td,
         .k-table-row:last-child > .k-table-td {
             border-bottom-width: 0;
         }
@@ -593,11 +609,13 @@
     // Edit row
     .k-grid .k-edit-cell,
     .k-grid .k-command-cell,
+    .k-grid .k-grid-edit-row td,
     .k-grid .k-grid-edit-row .k-table-td {
         text-overflow: clip;
     }
 
     .k-grid .k-edit-cell,
+    .k-grid .k-grid-edit-row td,
     .k-grid .k-grid-edit-row .k-table-td {
 
         > input:not([type="checkbox"]):not([type="radio"]),
@@ -654,19 +672,19 @@
 
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
-            float: inline-start;
+            float: left;
             width: 100%;
         }
 
         .k-grid-table {
             position: relative;
-            float: inline-start;
+            float: left;
             z-index: 1;
         }
 
         > .k-height-container {
             position: relative;
-            float: inline-start;
+            float: left;
         }
 
         &::after {
@@ -685,6 +703,7 @@
         height: 1px;
     }
 
+    .k-grid-add-row td,
     .k-grid-add-row .k-table-td {
         border-bottom-style: solid;
         border-bottom-width: 1px;
@@ -760,6 +779,7 @@
             z-index: auto;
         }
 
+        .k-grid-row-sticky td,
         .k-grid-row-sticky .k-table-td {
             border-bottom-width: $kendo-grid-border-width;
             border-top-width: $kendo-grid-border-width;
@@ -767,12 +787,11 @@
             position: sticky;
             top: inherit;
             bottom: inherit;
-        }
-
-        .k-grid-row-sticky .k-table-td {
             z-index: 2;
         }
 
+        .k-grid-row-sticky td.k-grid-content-sticky,
+        .k-grid-row-sticky.k-alt td.k-grid-content-sticky,
         .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
         .k-grid-row-sticky.k-alt .k-table-td.k-grid-content-sticky {
             z-index: 3;
@@ -799,6 +818,7 @@
     .k-grid .k-table .k-grid-footer-sticky {
         border-inline-end-width: $kendo-grid-cell-vertical-border-width;
 
+        &:not([style*="display: none"]) + td,
         &:not([style*="display: none"]) + .k-table-td,
         &:not([style*="display: none"]) + .k-table-th {
             border-inline-start-width: 0;
@@ -884,6 +904,7 @@
                 padding: $_header-padding-y $_header-padding-x;
             }
 
+            td,
             .k-table-td {
                 padding: $_cell-padding-y $_cell-padding-x;
             }
@@ -945,6 +966,7 @@
             // Edit row
             .k-edit-cell,
             .k-command-cell,
+            .k-grid-edit-row td,
             .k-grid-edit-row .k-table-td {
                 padding: $_edit-cell-padding-y $_edit-cell-padding-x;
             }
@@ -952,6 +974,7 @@
 
             // Filter row
             .k-filter-row {
+                td,
                 .k-table-td,
                 .k-table-th {
                     padding: $_filter-cell-padding-y $_filter-cell-padding-x;
@@ -1014,7 +1037,7 @@
     // Remove Grid scrollbar during built-in export
     .k-pdf-export-shadow {
         .k-grid {
-            float: inline-start;
+            float: left;
             width: auto !important; // sass-lint:disable-line no-important
         }
 
@@ -1122,6 +1145,7 @@
         table-layout: auto !important;
 
         .k-table-th,
+        td,
         .k-table-td {
             white-space: nowrap !important;
         }
