@@ -12,7 +12,7 @@ root.render(
 
             <span>jquery modern month</span>
             <span>jquery modern weekdays</span>
-            <span></span>
+            <span>jquery modern week number with selected range</span>
 
             <section>
                 <Calendar calendarView="month" showOtherMonth></Calendar>
@@ -20,7 +20,9 @@ root.render(
             <section>
                 <Calendar calendarView="month" showOtherMonth showWeek></Calendar>
             </section>
-            <section></section>
+            <section>
+                <Calendar className="k-calendar-range" calendarView="month" showOtherMonth showWeek selectedRange></Calendar>
+            </section>
 
             <span>jquery modern year</span>
             <span>jquery modern decade</span>
