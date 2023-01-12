@@ -66,6 +66,7 @@
         }
 
         .k-table-th,
+        td,
         .k-table-td {
             border-width: 0;
             padding-inline: var( --INTERNAL--kendo-grid-cell-padding-x, 0 );
@@ -108,6 +109,7 @@
             white-space: nowrap;
         }
 
+        td,
         .k-table-td {
             border-block-end-width: var( --kendo-grid-cell-border-width-y, #{$kendo-grid-cell-border-width-y} );
             border-inline-start-width: var( --kendo-grid-cell-border-width-x, #{$kendo-grid-cell-border-width-x} );
@@ -140,11 +142,13 @@
             align-content: center;
         }
 
+        .k-grouping-row td,
         .k-grouping-row .k-table-td {
             border-block-end-width: 0;
             overflow: visible;
         }
 
+        .k-grouping-row + .k-table-row td,
         .k-grouping-row + .k-table-row .k-table-td {
             border-top-width: var( --kendo-grid-grouping-row-border-width-y, #{$kendo-grid-grouping-row-border-width-y} );
         }
@@ -162,11 +166,14 @@
             text-decoration: none;
         }
 
+        .k-group-footer td,
         .k-group-footer .k-table-td {
             border-style: solid;
             border-inline-width: var( --kendo-grid-group-footer-border-width-x, #{$kendo-grid-group-footer-border-width-x} );
             border-block-start-width: var( --kendo-grid-group-footer-border-width-y, #{$kendo-grid-group-footer-border-width-y} );
         }
+
+        .k-group-footer .k-group-cell + td,
         .k-group-footer .k-group-cell + .k-table-td {
             border-inline-start-width: var( --kendo-grid-group-footer-border-width-x, #{$kendo-grid-group-footer-border-width-x} );
         }
@@ -466,14 +473,18 @@
     .k-grid-footer {
         border-block-start-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
 
+        td,
         .k-table-td {
             height: var( --kendo-line-height-em, normal );
             border-block-end-width: 0;
         }
     }
 
+    .k-grid-footer td,
     .k-grid-footer .k-table-td,
     .k-grid-header .k-table-th,
+    .k-group-footer td,
+    .k-grouping-row td,
     .k-group-footer .k-table-td,
     .k-grouping-row .k-table-td {
         font-weight: var( --kendo-grid-header-font-weight, #{$kendo-grid-header-font-weight} );
@@ -497,6 +508,7 @@
     .k-filter-row {
         line-height: $kendo-form-line-height;
 
+        td,
         .k-table-td,
         .k-table-th {
             padding-inline: var( --INTERNAL--kendo-grid-filter-cell-padding-x, 0 );
@@ -505,6 +517,7 @@
             white-space: nowrap;
         }
 
+        td:first-child,
         .k-table-td:first-child {
             border-left-width: 0;
         }
@@ -552,6 +565,7 @@
         border-color: inherit;
         outline: 0;
 
+        .k-table-row:last-child > td,
         .k-table-row:last-child > .k-table-td {
             border-bottom-width: 0;
         }
@@ -579,14 +593,17 @@
         border-inline-end-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
     }
 
+    .k-master-row.k-expanded td,
     .k-master-row.k-expanded .k-table-td {
         border-block-end-width: 0;
     }
 
+    .k-master-row:has(.k-hierarchy-cell[aria-expanded="true"]) td,
     .k-master-row:has(.k-hierarchy-cell[aria-expanded="true"]) .k-table-td {
         border-block-end-width: 0;
     }
 
+    .k-master-row:last-child td,
     .k-master-row:last-child .k-table-td {
         border-block-end-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
     }
@@ -596,6 +613,7 @@
     // Edit row
     .k-grid .k-edit-cell,
     .k-grid .k-command-cell,
+    .k-grid .k-grid-edit-row td,
     .k-grid .k-grid-edit-row .k-table-td {
         padding-inline: var( --INTERNAL--kendo-grid-edit-cell-padding-x, 0 );
         padding-block: var( --INTERNAL--kendo-grid-edit-cell-padding-y, 0 );
@@ -603,6 +621,7 @@
     }
 
     .k-grid .k-edit-cell,
+    .k-grid .k-grid-edit-row td,
     .k-grid .k-grid-edit-row .k-table-td {
 
         > input:not([type="checkbox"]):not([type="radio"]),
@@ -659,19 +678,19 @@
 
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
-            float: inline-start;
+            float: left;
             width: 100%;
         }
 
         .k-grid-table {
             position: relative;
-            float: inline-start;
+            float: left;
             z-index: 1;
         }
 
         > .k-height-container {
             position: relative;
-            float: inline-start;
+            float: left;
         }
 
         &::after {
@@ -690,6 +709,7 @@
         height: 1px;
     }
 
+    .k-grid-add-row td,
     .k-grid-add-row .k-table-td {
         border-bottom-style: solid;
         border-bottom-width: 1px;
@@ -720,6 +740,7 @@
         border-inline-end-width: 1px;
         box-sizing: content-box;
 
+        td,
         .k-table-td,
         .k-table-th {
             border-inline-start-width: 1px;
@@ -777,6 +798,7 @@
             z-index: auto;
         }
 
+        .k-grid-row-sticky td,
         .k-grid-row-sticky .k-table-td {
             border-block-start-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
             border-block-end-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
@@ -785,10 +807,13 @@
             bottom: inherit;
         }
 
+        .k-grid-row-sticky td,
         .k-grid-row-sticky .k-table-td {
             z-index: 2;
         }
 
+        .k-grid-row-sticky td.k-grid-content-sticky,
+        .k-grid-row-sticky.k-alt td.k-grid-content-sticky,
         .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
         .k-grid-row-sticky.k-alt .k-table-td.k-grid-content-sticky {
             z-index: 3;
@@ -815,6 +840,7 @@
     .k-grid .k-grid-footer-sticky {
         border-inline-end-width: var( --kendo-grid-sticky-cell-border-width, #{$kendo-grid-sticky-cell-border-width} );
 
+        &:not([style*="display: none"]) + td,
         &:not([style*="display: none"]) + .k-table-td,
         &:not([style*="display: none"]) + .k-table-th {
             border-inline-start-width: 0;
@@ -1017,7 +1043,7 @@
     // Remove Grid scrollbar during built-in export
     .k-pdf-export-shadow {
         .k-grid {
-            float: inline-start;
+            float: left;
             width: auto !important; // sass-lint:disable-line no-important
         }
 
@@ -1125,6 +1151,7 @@
         table-layout: auto !important;
 
         .k-table-th,
+        td,
         .k-table-td {
             white-space: nowrap !important;
         }

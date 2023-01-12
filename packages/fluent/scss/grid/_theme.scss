@@ -10,12 +10,14 @@
     .k-grid-header,
     .k-grid-header-wrap,
     .k-grouping-header,
+    .k-grid td,
     .k-grid .k-table-td,
     .k-grid-footer,
     .k-grid-footer-wrap,
     .k-grid-content-locked,
     .k-grid-footer-locked,
     .k-grid-header-locked,
+    .k-filter-row > td,
     .k-filter-row > .k-table-td,
     .k-filter-row > .k-table-th {
         @include fill(
@@ -48,6 +50,8 @@
         @include fill( $bg: var( --kendo-grid-bg, #{$kendo-grid-bg} ) );
     }
 
+    .k-group-footer td,
+    .k-grouping-row td,
     .k-group-footer .k-table-td,
     .k-grouping-row .k-table-td,
     .k-table-tbody .k-group-cell {
@@ -85,6 +89,8 @@
         }
 
         // Selected state
+        td.k-selected,
+        .k-table-row.k-selected > td,
         .k-table-td.k-selected,
         .k-table-row.k-selected > .k-table-td {
             @include fill(
@@ -95,9 +101,13 @@
         }
 
         // Selected hover state
+        .k-table-tbody > .k-table-row:not(.k-detail-row):hover td.k-selected,
+        .k-table-tbody > .k-table-row:not(.k-detail-row).k-hover.k-selected > td,
         .k-table-tbody > .k-table-row:not(.k-detail-row):hover .k-table-td.k-selected,
         .k-table-tbody > .k-table-row:not(.k-detail-row).k-hover.k-selected > .k-table-td,
         .k-table-tbody > .k-table-row:not(.k-detail-row).k-hover.k-selected,
+        .k-table-tbody > .k-table-row:not(.k-detail-row).k-hover td.k-selected,
+        .k-table-tbody > .k-table-row:not(.k-detail-row).k-selected:hover > td,
         .k-table-tbody > .k-table-row:not(.k-detail-row).k-hover .k-table-td.k-selected,
         .k-table-tbody > .k-table-row:not(.k-detail-row).k-selected:hover > .k-table-td {
             @include fill(
@@ -107,10 +117,16 @@
         }
 
         // Focused state
+        td:focus,
+        td.k-focus,
         .k-table-td:focus,
         .k-table-td.k-focus,
         .k-table-th:focus,
         .k-table-th.k-focus,
+        .k-master-row > td:focus,
+        .k-grouping-row > td:focus,
+        .k-detail-row > td:focus,
+        .k-group-footer > td:focus,
         .k-master-row > .k-table-td:focus,
         .k-grouping-row > .k-table-td:focus,
         .k-detail-row > .k-table-td:focus,
@@ -147,29 +163,36 @@
         .k-grid-header-locked,
         .k-grid-content-locked,
         .k-grid-header-locked .k-table-th,
+        .k-grid-content-locked td,
         .k-grid-content-locked .k-table-td {
             border-inline-color: var( --kendo-grid-sticky-header-border, #{$kendo-grid-sticky-header-border} );
         }
 
         .k-grid-content-locked {
+            .k-group-footer td,
             .k-group-footer .k-table-td {
                 @include fill( $border: var( --kendo-grid-header-border, #{$kendo-grid-header-border} ) );
             }
 
+            .k-grouping-row + .k-table-row td,
             .k-grouping-row + .k-table-row .k-table-td {
                 border-top-color: var( --kendo-grid-header-border, #{$kendo-grid-header-border} );
             }
 
             // Selected state
+            .k-selected td,
             .k-selected .k-table-td {
                 @include fill( $bg: var( --kendo-grid-sticky-selected-bg, #{$kendo-grid-sticky-selected-bg} ) );
             }
 
+            .k-selected.k-table-alt-row td,
             .k-selected.k-table-alt-row .k-table-td {
                 @include fill( $bg: var( --kendo-grid-sticky-selected-alt-bg, #{$kendo-grid-sticky-selected-alt-bg} ) );
             }
 
             // Selected hover
+            .k-selected:hover td,
+            .k-selected.k-hover td,
             .k-selected:hover .k-table-td,
             .k-selected.k-hover .k-table-td {
                 @include fill( $bg: var( --kendo-grid-sticky-selected-hover-bg, #{$kendo-grid-sticky-selected-hover-bg} ) );
@@ -225,6 +248,7 @@
         }
 
         .k-table-th.k-grid-header-sticky,
+        td.k-grid-header-sticky,
         .k-table-td.k-grid-header-sticky,
         .k-grid-header-sticky.k-sorted {
             @include fill(
@@ -272,12 +296,14 @@
         // Selected state
         &.k-selected .k-grid-content-sticky,
         &.k-selected .k-grid-row-sticky,
+        td.k-grid-content-sticky.k-selected,
         .k-table-td.k-grid-content-sticky.k-selected {
             @include fill( $bg: var( --kendo-grid-sticky-selected-bg, #{$kendo-grid-sticky-selected-bg} ) );
         }
 
         &.k-selected.k-table-alt-row .k-grid-content-sticky,
         &.k-selected.k-table-alt-row .k-grid-row-sticky,
+        &.k-table-alt-row td.k-grid-content-sticky.k-selected,
         &.k-table-alt-row .k-table-td.k-grid-content-sticky.k-selected {
             @include fill( $bg: var( --kendo-grid-sticky-selected-alt-bg, #{$kendo-grid-sticky-selected-alt-bg} ) );
         }
@@ -297,6 +323,8 @@
         &.k-selected:hover .k-grid-row-sticky,
         &.k-selected.k-hover .k-grid-content-sticky,
         &.k-selected.k-hover .k-grid-row-sticky,
+        &:hover td.k-grid-content-sticky.k-selected,
+        &.k-hover td.k-grid-content-sticky.k-selected,
         &:hover .k-table-td.k-grid-content-sticky.k-selected,
         &.k-hover .k-table-td.k-grid-content-sticky.k-selected {
             @include fill( $bg: var( --kendo-grid-sticky-selected-hover-bg, #{$kendo-grid-sticky-selected-hover-bg} ) );
@@ -316,11 +344,14 @@
         }
 
         .k-grid-row-sticky {
+            td,
             .k-table-td {
                 border-block-color: var( --kendo-grid-sticky-border, #{$kendo-grid-sticky-border} );
                 background-color: var( --kendo-grid-sticky-bg, #{$kendo-grid-sticky-bg} );
             }
 
+            &:hover td,
+            &.k-hover td,
             &:hover .k-table-td,
             &.k-hover .k-table-td {
                 background-color: var( --kendo-grid-sticky-hover-bg, #{$kendo-grid-sticky-hover-bg} );
@@ -328,12 +359,15 @@
         }
 
         .k-table-alt-row .k-grid-content-sticky,
+        .k-grid-row-sticky.k-table-alt-row td,
         .k-grid-row-sticky.k-table-alt-row .k-table-td {
             @include fill( $bg: var( --kendo-grid-sticky-alt-bg, #{$kendo-grid-sticky-alt-bg} ) );
         }
 
         // Selected state
         .k-table-row.k-selected .k-grid-content-sticky,
+        .k-selected.k-grid-row-sticky td,
+        .k-grid-row-sticky td.k-selected,
         .k-selected.k-grid-row-sticky .k-table-td,
         .k-grid-row-sticky .k-table-td.k-selected,
         .k-selected.k-grid-content-sticky {
@@ -341,6 +375,7 @@
         }
 
         .k-table-row.k-selected.k-table-alt-row .k-grid-content-sticky,
+        .k-selected.k-table-alt-row.k-grid-row-sticky td,
         .k-selected.k-table-alt-row.k-grid-row-sticky .k-table-td,
         .k-table-alt-row .k-selected.k-grid-content-sticky {
             @include fill( $bg: var( --kendo-grid-sticky-selected-alt-bg, #{$kendo-grid-sticky-selected-alt-bg} ) );
@@ -349,6 +384,10 @@
         // Hover state
         .k-table-row:hover .k-grid-content-sticky,
         .k-table-row.k-hover .k-grid-content-sticky,
+        .k-grid-row-sticky:hover td,
+        .k-grid-row-sticky.k-hover td,
+        .k-grid-row-sticky.k-table-alt-row:hover td,
+        .k-grid-row-sticky.k-table-alt-row.k-hover td,
         .k-grid-row-sticky:hover .k-table-td,
         .k-grid-row-sticky.k-hover .k-table-td,
         .k-grid-row-sticky.k-table-alt-row:hover .k-table-td,
@@ -361,12 +400,18 @@
         // Selected + Hover
         .k-table-row.k-selected:hover .k-grid-content-sticky,
         .k-table-row.k-selected.k-hover .k-grid-content-sticky,
+        .k-selected.k-grid-row-sticky:hover td,
+        .k-selected.k-grid-row-sticky.k-hover td,
+        .k-selected.k-table-alt-row.k-grid-row-sticky:hover td,
+        .k-selected.k-table-alt-row.k-grid-row-sticky.k-hover td,
         .k-selected.k-grid-row-sticky:hover .k-table-td,
         .k-selected.k-grid-row-sticky.k-hover .k-table-td,
         .k-selected.k-table-alt-row.k-grid-row-sticky:hover .k-table-td,
         .k-selected.k-table-alt-row.k-grid-row-sticky.k-hover .k-table-td,
         .k-table-row.k-selected.k-table-alt-row:hover .k-grid-content-sticky,
         .k-table-row.k-selected.k-table-alt-row.k-hover .k-grid-content-sticky,
+        .k-grid-row-sticky:hover td.k-selected,
+        .k-grid-row-sticky.k-hover td.k-selected,
         .k-grid-row-sticky:hover .k-table-td.k-selected,
         .k-grid-row-sticky.k-hover .k-table-td.k-selected,
         .k-table-row:hover .k-grid-content-sticky.k-selected,

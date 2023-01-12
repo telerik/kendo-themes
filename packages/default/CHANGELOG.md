@@ -3,6 +3,1254 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/telerik/kendo-themes/compare/v5.12.0...v6.0.0) (2023-01-11)
+
+
+### Bug Fixes
+
+* **button:** fix svg icon size inside icon-button ([85429b7](https://github.com/telerik/kendo-themes/commit/85429b7e4fef248f7910bc94ce217d61dd824429))
+* **calendar:** remove redundant today button customization ([57c5307](https://github.com/telerik/kendo-themes/commit/57c5307158fabb92df69b00f52a533d163fceaf8))
+* **drawer:** update hierarchy function and values ([6d1eec0](https://github.com/telerik/kendo-themes/commit/6d1eec0f6c8b87611ec6b7da20f2072fa21c2f3b))
+* **dropdowngrid:** add chip dependency ([8e43add](https://github.com/telerik/kendo-themes/commit/8e43add4c98542c990bd47d892e2f51fcb8a5c16))
+* **editor:** add styles for table inside editor when not using iframe ([4a4b41b](https://github.com/telerik/kendo-themes/commit/4a4b41bf17b3a6ef81f178fcef67ff6205d4e16c))
+* **editor:** remove disabled styling when in readonly mode ([b90a255](https://github.com/telerik/kendo-themes/commit/b90a255659e9f740d0ed4dcee78207ea83051b42))
+* **fluent:** use json transformer for dart sass ([9457acd](https://github.com/telerik/kendo-themes/commit/9457acd6e3b034e02705ce6dd8754f28b5f73add))
+* **gantt:** add a stronger td selector ([1a60837](https://github.com/telerik/kendo-themes/commit/1a6083714f63bb995a40fb7b3fef6db41284403f))
+* **icon:** adjust selectors for the new k-icon-wrapper-host element ([e6422ee](https://github.com/telerik/kendo-themes/commit/e6422ee900d0516afafc053c7ca7736a8abc8d47))
+* **input:** wrong svg icon size inside input ([4b1a384](https://github.com/telerik/kendo-themes/commit/4b1a3844695ed24d08d709cdb7b7150b0764a557))
+* **notification:** apply box-shadow to notification to match design ([d82d9d9](https://github.com/telerik/kendo-themes/commit/d82d9d995427f9a397b1b57c401668c39e6648e6))
+* **popover:** popover inner and popover content should inherit border color ([9f7413f](https://github.com/telerik/kendo-themes/commit/9f7413f8fea342b14cd0c64b285b116b25c72bd7))
+* replace slash division with k-math-div function ([d1de3b7](https://github.com/telerik/kendo-themes/commit/d1de3b7aa664c7eb84f9a09ce7a25f04498b19f7))
+* **textarea:** native textarea should have a scrollbar by default ([b792500](https://github.com/telerik/kendo-themes/commit/b792500b8f3068aba16355e9a1e42314e91cdd83))
+* **timedurationpicker:** fix icons dependency ([72ba9a0](https://github.com/telerik/kendo-themes/commit/72ba9a043c4f942d9d1873b940b836ca03071161))
+* **toolbar:** remove redundant styles ([06c5b42](https://github.com/telerik/kendo-themes/commit/06c5b42042c78d965d1561109a9b23a3affaaf3f))
+* use utility class names from utils package ([6445d04](https://github.com/telerik/kendo-themes/commit/6445d04a9e48e5307cf7afaf7e81a376fc119cc0))
+
+
+### chore
+
+* **appbar:** add kendo- prefix ([d0a24e6](https://github.com/telerik/kendo-themes/commit/d0a24e6907bee1a12da281c0aa5312b1d2d37b30))
+* **dialog:** prefix dialog variables with $kendo- ([1634081](https://github.com/telerik/kendo-themes/commit/1634081133d0b01da170e857f91aeb94f7bcfca5))
+* **drawer:** prefix vars with $kendo ([e295ce5](https://github.com/telerik/kendo-themes/commit/e295ce59dc61c7280e537e08a771b92ebfb08dd0))
+* drop IE support ([7e0487c](https://github.com/telerik/kendo-themes/commit/7e0487c1a5406c11ae588ab69142d87a9b87363b))
+* **editor:** prefix editor variables with $kendo- ([23c1bb6](https://github.com/telerik/kendo-themes/commit/23c1bb6a748e2fd2b4aabdf3c425ecade4b93f5d))
+* **editor:** remove obsolete editor styles ([a920070](https://github.com/telerik/kendo-themes/commit/a9200706f7c599f345a8ad6bcf927df7094058c1))
+* **grid:** add grouping drop container styles ([34bcc02](https://github.com/telerik/kendo-themes/commit/34bcc027e71bceb9a490221d01401167a7fdff5d)), closes [#3776](https://github.com/telerik/kendo-themes/issues/3776)
+* **icons:** update icon sizes and add kendo prefix to vars ([c09c4cb](https://github.com/telerik/kendo-themes/commit/c09c4cbd92c973d649199e10edfb05bc16ae302a))
+* **listbox:** prefix variables with $kendo- ([8c6c4eb](https://github.com/telerik/kendo-themes/commit/8c6c4eb895713595f72b5790f18fb258eda346c2))
+* **loader:** add kendo- prefix ([51e669a](https://github.com/telerik/kendo-themes/commit/51e669afdf31f9b774e2ad15871fd02ae096c2e6))
+* **notification:** prefix variables with $kendo- ([93466a0](https://github.com/telerik/kendo-themes/commit/93466a07337b7814824638d63008eb592904a579))
+* prefix popover variables with `$kendo-` ([fc9e021](https://github.com/telerik/kendo-themes/commit/fc9e0219f188ea250bc11556b88ff2b777166c75))
+* prefix root variables with `$kendo-` ([3ca4739](https://github.com/telerik/kendo-themes/commit/3ca47398fec76386bad9d33d888ab262b615e017))
+* **progressbar:** prefix variables with $kendo- ([41c1a29](https://github.com/telerik/kendo-themes/commit/41c1a293ef44d21ee10009e7257f20944beac5da))
+* remove usages of `$spacer` variable ([32a6899](https://github.com/telerik/kendo-themes/commit/32a6899ca17dcc9944f5416be33391c543cd5170))
+* rename $spacing to $kendo-spacing ([abdff63](https://github.com/telerik/kendo-themes/commit/abdff63627f593399ea95b8d2a9a45898d6b7da7))
+* **treelist:** prefix variables with $kendo- ([61ffde9](https://github.com/telerik/kendo-themes/commit/61ffde99a3a115cdb8ad4d9b065020c432f907c2))
+* update listview styles ([414e586](https://github.com/telerik/kendo-themes/commit/414e58694073a81af444c7f2c1d9bdd7fd7f9c0d))
+* **upload:** prefix upload variables with $kendo- ([d28ff89](https://github.com/telerik/kendo-themes/commit/d28ff899bac9660f069cdcf099c26b7297b37712))
+* use functions and mixins only from theme-core ([5d3fcbe](https://github.com/telerik/kendo-themes/commit/5d3fcbe9a6944161076e871b8fb8fe04e7fc7724))
+* **window:** prefix window variables with $kendo- ([bc3a7bd](https://github.com/telerik/kendo-themes/commit/bc3a7bd10cc30afb07a249893db66ab24fdaf916))
+
+
+### Features
+
+* add default ocean blue a11y swatch ([8ca8d04](https://github.com/telerik/kendo-themes/commit/8ca8d04a55b5fd5241d7ee4bc7b0d278279fcad4))
+* **button:** extract focus ring opacity variable ([f6098db](https://github.com/telerik/kendo-themes/commit/f6098db3ed4b2443b19362ee895aa87071acd524))
+* **dialog:** add styles for themeColor property ([1653efd](https://github.com/telerik/kendo-themes/commit/1653efdc51bce9b342cd2f7d960a423d04fcfbca))
+* **dialog:** update styles to match updated rendering ([bd996b2](https://github.com/telerik/kendo-themes/commit/bd996b211c3eda4bde3054bbfbf8e61e2e3949e9))
+* **fab:** remove styles for fab shape property ([e21f33e](https://github.com/telerik/kendo-themes/commit/e21f33e726d930164bfe833e3a509f79e236171b))
+* **forms:** add sizes ([b9f3c05](https://github.com/telerik/kendo-themes/commit/b9f3c05ded7501f9e97c47c688bccb54b029df56))
+* **grid:** add grid sm and md sizes ([9c197f3](https://github.com/telerik/kendo-themes/commit/9c197f34b822727041a8ea3a94c96698e3f86302))
+* **grid:** update grid header rendering ([a1ad23f](https://github.com/telerik/kendo-themes/commit/a1ad23f39b94fa0f67c8f1d093c8057759e5dd51))
+* **grid:** update styles to support chiplist in grid grouping ([d9e5e9f](https://github.com/telerik/kendo-themes/commit/d9e5e9fbf3a48b9007c29a8e377cb2b195041950))
+* **icons:** use kendo-icons package in themes ([0cfacca](https://github.com/telerik/kendo-themes/commit/0cfacca1cdd2653098caa48eea68c5433b7f6fdd))
+* **listbox:** wrap listbox actions in k-listbox-actions container ([47f6048](https://github.com/telerik/kendo-themes/commit/47f6048bd4b96795a8007496e9d069bf48725d1d))
+* **multiselect:** update chip list rendering to comply with accessibility standards ([fcab7e5](https://github.com/telerik/kendo-themes/commit/fcab7e5188f95a410083b961cc72ba7f78abcdf1))
+* **notification:** add notification action/s classes ([46f5154](https://github.com/telerik/kendo-themes/commit/46f515461936aa1d118bfd7305a91108ba4d7981))
+* **pager:** add pager sizes ([adcb88b](https://github.com/telerik/kendo-themes/commit/adcb88b3ab6c05d917c4172f51aa7fc00116efc1))
+* prefix variables with `$kendo-` ([e9732c9](https://github.com/telerik/kendo-themes/commit/e9732c9e7e7f88802b7e828904c98f453adf739d))
+* **progressbar:** expose chunk-progressbar specific classes ([48bb6c0](https://github.com/telerik/kendo-themes/commit/48bb6c0bb28d4d1d83d22e48c2adf0134cefc052))
+* **progressbar:** expose k-progressbar-value class ([52e7882](https://github.com/telerik/kendo-themes/commit/52e78823267ce9c1ec2701ec2d7f4feff0af079b))
+* **toolbar:** add toolbar sizes ([1db2cb1](https://github.com/telerik/kendo-themes/commit/1db2cb1de466c12b75b42e263fa168e7006ad2a8))
+* update chart tooltip animation ([4c364a0](https://github.com/telerik/kendo-themes/commit/4c364a0c98df55952eb4f1859b3e33228566439d))
+* **upload:** update upload styles to match new rendering ([53dfbd6](https://github.com/telerik/kendo-themes/commit/53dfbd62ec042a690cbb861a3822590b446c7770))
+* use focus-indicator mixin for contrast shadows ([18560fe](https://github.com/telerik/kendo-themes/commit/18560fed1ff625317ed1da56780038539d292814))
+* use utility class names from utils package ([e4ab60e](https://github.com/telerik/kendo-themes/commit/e4ab60ec11b1379269059e32e97494bc7b0c3667))
+* **window:** add styles for themeColor property ([e3bad3d](https://github.com/telerik/kendo-themes/commit/e3bad3d74222c607c96fee573aef7646b1aa1300))
+* **window:** update styles to match updated rendering ([85ed870](https://github.com/telerik/kendo-themes/commit/85ed8705de8fc0c3aa0cdcfffe7f7b41be00ffe6))
+
+
+### BREAKING CHANGES
+
+* Prefix variables with `$kendo-` to avoid conflicts with other libraries.
+
+Streamline variable names to use the same naming convention:
+* size suffixes are now size infixes.
+* add missing medium size
+
+\## Misc variables
+
+| Old name | New name |
+| :--- | :--- |
+| $dark-theme | $kendo-is-dark-theme |
+| $base-bg | $kendo-base-bg |
+| $base-text | $kendo-base-text |
+| $base-border | $kendo-base-border |
+| $base-gradient | $kendo-base-gradient |
+| $link-text | $kendo-link-text |
+| $link-hover-text | $kendo-link-hover-text |
+| $grid-cols | Removed. See @progress/kendo-theme-utils package for alternatives |
+| $grid-rows | Removed. See @progress/kendo-theme-utils package for alternatives |
+| $grid-gap | Removed. See @progress/kendo-theme-utils package for alternatives |
+
+\## Typography
+
+| Old name | New name |
+| :--- | :--- |
+| $enable-typography | $kendo-enable-typography |
+| $font-family | $kendo-font-family |
+| $font-family-monospace | $kendo-font-family-monospace |
+| N/A | (new) $kendo-font-family-sans-serif |
+| $font-size | $kendo-font-size |
+| $font-size-xs | $kendo-font-size-xs |
+| $font-size-sm | $kendo-font-size-sm |
+| $font-size-md | $kendo-font-size-md |
+| $font-size-lg | $kendo-font-size-lg |
+| $font-size-xl | $kendo-font-size-xl |
+| $line-height | $kendo-line-height |
+| $line-height-xs | $kendo-line-height-xs |
+| $line-height-sm | $kendo-line-height-sm |
+| $line-height-md | $kendo-line-height-md |
+| $line-height-lg | $kendo-line-height-lg |
+| $line-height-xl | $kendo-line-height-xl |
+| $line-height-em | $kendo-line-height-em |
+| $font-weight-light | $kendo-font-weight-light |
+| $font-weight-normal | $kendo-font-weight-normal |
+| N/A | (new) $kendo-font-weight-medium |
+| N/A | (new) $kendo-font-weight-semibold |
+| $font-weight-bold | $kendo-font-weight-bold |
+| $letter-spacing | $kendo-letter-spacing |
+| $h1-* | $kendo-h1-* |
+| $h2-* | $kendo-h2-* |
+| $h3-* | $kendo-h3-* |
+| $h4-* | $kendo-h4-* |
+| $h5-* | $kendo-h5-* |
+| $h6-* | $kendo-h6-* |
+| $paragraph-* | $kendo-paragraph-* |
+| $code-* | $kendo-code-* |
+| $pre-* | $kendo-pre-* |
+| $display1-* | $kendo-display1-* |
+| $display2-* | $kendo-display2-* |
+| $display3-* | $kendo-display3-* |
+| $display4-* | $kendo-display4-* |
+
+\## Action buttons
+
+| Old name | New name |
+| :--- | :--- |
+| $actions-* | $kendo-actions-* |
+
+\## Actionsheet
+
+| Old name | New name |
+| :--- | :--- |
+| $actionsheet-* | $kendo-actionsheet-* |
+
+\## Adaptive
+
+| Old name | New name |
+| :--- | :--- |
+| $adaptive-* | $kendo-adaptive-* |
+
+\## Badge
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-badge-padding-x-sm | $kendo-badge-sm-padding-x |
+| $kendo-badge-padding-y-sm | $kendo-badge-sm-padding-y |
+| $kendo-badge-font-size-sm | $kendo-badge-sm-font-size |
+| $kendo-badge-line-height-sm | $kendo-badge-sm-line-height |
+| $kendo-badge-min-width-sm | $kendo-badge-sm-min-width |
+| $kendo-badge-padding-x-md | $kendo-badge-md-padding-x |
+| $kendo-badge-padding-y-md | $kendo-badge-md-padding-y |
+| $kendo-badge-font-size-md | $kendo-badge-md-font-size |
+| $kendo-badge-line-height-md | $kendo-badge-md-line-height |
+| $kendo-badge-min-width-md | $kendo-badge-md-min-width |
+| $kendo-badge-padding-x-lg | $kendo-badge-lg-padding-x |
+| $kendo-badge-padding-y-lg | $kendo-badge-lg-padding-y |
+| $kendo-badge-font-size-lg | $kendo-badge-lg-font-size |
+| $kendo-badge-line-height-lg | $kendo-badge-lg-line-height |
+| $kendo-badge-min-width-lg | $kendo-badge-lg-min-width |
+
+\## Bottom navigation
+
+| Old name | New name |
+| :--- | :--- |
+| $bottom-nav-* | $kendo-bottom-nav-* |
+
+\## Breadcrumb
+
+| Old name | New name |
+| :--- | :--- |
+| $breadcrumb-* | $kendo-breadcrumb-* |
+
+\## Button
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-button-padding-x-sm | $kendo-button-sm-padding-x |
+| $kendo-button-padding-y-sm | $kendo-button-sm-padding-y |
+| $kendo-button-font-size-sm | $kendo-button-sm-font-size |
+| $kendo-button-line-height-sm | $kendo-button-sm-line-height |
+| $kendo-button-calc-size-sm | $kendo-button-sm-calc-size |
+| $kendo-button-inner-calc-size-sm | $kendo-button-sm-inner-calc-size |
+| $kendo-button-padding-x-md | $kendo-button-md-padding-x |
+| $kendo-button-padding-y-md | $kendo-button-md-padding-y |
+| $kendo-button-font-size-md | $kendo-button-md-font-size |
+| $kendo-button-line-height-md | $kendo-button-md-line-height |
+| $kendo-button-calc-size-md | $kendo-button-md-calc-size |
+| $kendo-button-inner-calc-size-md | $kendo-button-md-inner-calc-size |
+| $kendo-button-padding-x-lg | $kendo-button-lg-padding-x |
+| $kendo-button-padding-y-lg | $kendo-button-lg-padding-y |
+| $kendo-button-font-size-lg | $kendo-button-lg-font-size |
+| $kendo-button-line-height-lg | $kendo-button-lg-line-height |
+| $kendo-button-calc-size-lg | $kendo-button-lg-calc-size |
+| $kendo-button-inner-calc-size-lg | $kendo-button-lg-inner-calc-size |
+
+\## Calendar
+
+| Old name | New name |
+| :--- | :--- |
+| $calendar-* | $kendo-calendar-* |
+
+\## Captcha
+
+| Old name | New name |
+| :--- | :--- |
+| $captcha-* | $kendo-captcha-* |
+
+\## Card
+
+| Old name | New name |
+| :--- | :--- |
+| $card-* | $kendo-card-* |
+
+\## Chat
+
+| Old name | New name |
+| :--- | :--- |
+| $chat-* | $kendo-chat-* |
+
+\## Chip
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-chip-padding-x-sm | $kendo-chip-sm-padding-x |
+| $kendo-chip-padding-y-sm | $kendo-chip-sm-padding-y |
+| $kendo-chip-font-size-sm | $kendo-chip-sm-font-size |
+| $kendo-chip-line-height-sm | $kendo-chip-sm-line-height |
+| $kendo-chip-calc-size-sm | $kendo-chip-sm-calc-size |
+| $kendo-chip-padding-x-md | $kendo-chip-md-padding-x |
+| $kendo-chip-padding-y-md | $kendo-chip-md-padding-y |
+| $kendo-chip-font-size-md | $kendo-chip-md-font-size |
+| $kendo-chip-line-height-md | $kendo-chip-md-line-height |
+| $kendo-chip-calc-size-md | $kendo-chip-md-calc-size |
+| $kendo-chip-padding-x-lg | $kendo-chip-lg-padding-x |
+| $kendo-chip-padding-y-lg | $kendo-chip-lg-padding-y |
+| $kendo-chip-font-size-lg | $kendo-chip-lg-font-size |
+| $kendo-chip-line-height-lg | $kendo-chip-lg-line-height |
+| $kendo-chip-calc-size-lg | $kendo-chip-lg-calc-size |
+
+\## Color editor
+
+| Old name | New name |
+| :--- | :--- |
+| $coloreditor-* | $kendo-color-editor-* |
+
+\## Color gradient
+
+| Old name | New name |
+| :--- | :--- |
+| $colorgradient-* | $kendo-color-gradient-* |
+
+\## Color palette
+
+| Old name | New name |
+| :--- | :--- |
+| $colorpalette-* | $kendo-color-palette-* |
+
+\## Color preview
+
+| Old name | New name |
+| :--- | :--- |
+| $color-preview-* | $kendo-color-preview-* |
+
+\## Dataviz
+
+| Old name | New name |
+| :--- | :--- |
+| $series-* | $kendo-series-* |
+| $chart-* | $kendo-chart-* |
+| $treemap-* | $kendo-treemap-* |
+
+\## Date time picker
+
+| Old name | New name |
+| :--- | :--- |
+| $datetime-* | $kendo-datetime-* |
+
+\## Draggable
+
+| Old name | New name |
+| :--- | :--- |
+| $drag-clue-* | $kendo-drag-hint-* |
+| $drop-hint-* | $kendo-drop-hint-* |
+
+\## Dropdown tree
+
+| Old name | New name |
+| :--- | :--- |
+| $dropdowntree-* | $kendo-dropdowntree-* |
+
+\## Dropzone
+
+| Old name | New name |
+| :--- | :--- |
+| $dropzone-* | $kendo-dropzone-* |
+
+\## Expansion panel
+
+| Old name | New name |
+| :--- | :--- |
+| $expander-* | $kendo-expander-* |
+
+\## Floating action button
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-fab-padding-x-sm | $kendo-fab-sm-padding-x |
+| $kendo-fab-padding-y-sm | $kendo-fab-sm-padding-y |
+| $kendo-fab-padding-x-md | $kendo-fab-md-padding-x |
+| $kendo-fab-padding-y-md | $kendo-fab-md-padding-y |
+| $kendo-fab-padding-x-lg | $kendo-fab-lg-padding-x |
+| $kendo-fab-padding-y-lg | $kendo-fab-lg-padding-y |
+
+\## File manager
+
+| Old name | New name |
+| :--- | :--- |
+| $filemanager-* | $kendo-file-manager-* |
+
+\## Filter
+
+| Old name | New name |
+| :--- | :--- |
+| $filter-* | $kendo-filter-* |
+
+\## Floating label
+
+| Old name | New name |
+| :--- | :--- |
+| $floating-label-* | $kendo-floating-label-* |
+
+\## Form
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-form-line-height-sm | $kendo-form-sm-line-height |
+| $kendo-form-line-height-lg | $kendo-form-lg-line-height |
+| $kendo-form-row-spacing-sm | $kendo-form-sm-row-spacing |
+| $kendo-form-row-spacing-md | $kendo-form-md-row-spacing |
+| $kendo-form-row-spacing-lg | $kendo-form-lg-row-spacing |
+
+\## Gantt
+
+| Old name | New name |
+| :--- | :--- |
+| $gantt-* | $kendo-gantt-* |
+
+\## Grid
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-grid-padding-x-sm | $kendo-grid-sm-padding-x |
+| $kendo-grid-padding-y-sm | $kendo-grid-sm-padding-y |
+| $kendo-grid-header-padding-x-sm | $kendo-grid-sm-header-padding-x |
+| $kendo-grid-header-padding-y-sm | $kendo-grid-sm-header-padding-y |
+| $kendo-grid-group-header-padding-x-sm | $kendo-grid-sm-group-header-padding-x |
+| $kendo-grid-group-header-padding-y-sm | $kendo-grid-sm-group-header-padding-y |
+| $kendo-grid-cell-padding-x-sm | $kendo-grid-sm-cell-padding-x |
+| $kendo-grid-cell-padding-y-sm | $kendo-grid-sm-cell-padding-y |
+| $kendo-grid-filter-cell-padding-x-sm | $kendo-grid-sm-filter-cell-padding-x |
+| $kendo-grid-filter-cell-padding-y-sm | $kendo-grid-sm-filter-cell-padding-y |
+| $kendo-grid-edit-cell-padding-x-sm | $kendo-grid-sm-edit-cell-padding-x |
+| $kendo-grid-edit-cell-padding-y-sm | $kendo-grid-sm-edit-cell-padding-y |
+| $kendo-grid-group-dropclue-height-sm | $kendo-grid-sm-group-drop-hint-height |
+| $kendo-grid-padding-x-md | $kendo-grid-md-padding-x |
+| $kendo-grid-padding-y-md | $kendo-grid-md-padding-y |
+| $kendo-grid-header-padding-x-md | $kendo-grid-md-header-padding-x |
+| $kendo-grid-header-padding-y-md | $kendo-grid-md-header-padding-y |
+| $kendo-grid-group-header-padding-x-md | $kendo-grid-md-group-header-padding-x |
+| $kendo-grid-group-header-padding-y-md | $kendo-grid-md-group-header-padding-y |
+| $kendo-grid-cell-padding-x-md | $kendo-grid-md-cell-padding-x |
+| $kendo-grid-cell-padding-y-md | $kendo-grid-md-cell-padding-y |
+| $kendo-grid-filter-cell-padding-x-md | $kendo-grid-md-filter-cell-padding-x |
+| $kendo-grid-filter-cell-padding-y-md | $kendo-grid-md-filter-cell-padding-y |
+| $kendo-grid-edit-cell-padding-x-md | $kendo-grid-md-edit-cell-padding-x |
+| $kendo-grid-edit-cell-padding-y-md | $kendo-grid-md-edit-cell-padding-y |
+| $kendo-grid-group-dropclue-height-md | $kendo-grid-md-group-drop-hint-height |
+| $kendo-grid-padding-x-lg | $kendo-grid-lg-padding-x |
+| $kendo-grid-padding-y-lg | $kendo-grid-lg-padding-y |
+| $kendo-grid-header-padding-x-lg | $kendo-grid-lg-header-padding-x |
+| $kendo-grid-header-padding-y-lg | $kendo-grid-lg-header-padding-y |
+| $kendo-grid-group-header-padding-x-lg | $kendo-grid-lg-group-header-padding-x |
+| $kendo-grid-group-header-padding-y-lg | $kendo-grid-lg-group-header-padding-y |
+| $kendo-grid-cell-padding-x-lg | $kendo-grid-lg-cell-padding-x |
+| $kendo-grid-cell-padding-y-lg | $kendo-grid-lg-cell-padding-y |
+| $kendo-grid-filter-cell-padding-x-lg | $kendo-grid-lg-filter-cell-padding-x |
+| $kendo-grid-filter-cell-padding-y-lg | $kendo-grid-lg-filter-cell-padding-y |
+| $kendo-grid-edit-cell-padding-x-lg | $kendo-grid-lg-edit-cell-padding-x |
+| $kendo-grid-edit-cell-padding-y-lg | $kendo-grid-lg-edit-cell-padding-y |
+| $kendo-grid-group-dropclue-height-lg | $kendo-grid-lg-group-drop-hint-height |
+
+\## Image Editor
+
+| Old name | New name |
+| :--- | :--- |
+| $imageeditor-* | $kendo-image-editor-* |
+
+\## Input
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-input-padding-x-sm | $kendo-input-sm-padding-x |
+| $kendo-input-padding-y-sm | $kendo-input-sm-padding-y |
+| $kendo-input-font-size-sm | $kendo-input-sm-font-size |
+| $kendo-input-line-height-sm | $kendo-input-sm-line-height |
+| $kendo-input-padding-x-md | $kendo-input-md-padding-x |
+| $kendo-input-padding-y-md | $kendo-input-md-padding-y |
+| $kendo-input-font-size-md | $kendo-input-md-font-size |
+| $kendo-input-line-height-md | $kendo-input-md-line-height |
+| $kendo-input-padding-x-lg | $kendo-input-lg-padding-x |
+| $kendo-input-padding-y-lg | $kendo-input-lg-padding-y |
+| $kendo-input-font-size-lg | $kendo-input-lg-font-size |
+| $kendo-input-line-height-lg | $kendo-input-lg-line-height |
+
+\## List
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-list-font-size-sm | $kendo-list-sm-font-size |
+| $kendo-list-line-height-sm | $kendo-list-sm-line-height |
+| $kendo-list-header-padding-x-sm | $kendo-list-sm-header-padding-x |
+| $kendo-list-header-padding-y-sm | $kendo-list-sm-header-padding-y |
+| $kendo-list-header-font-size-sm | $kendo-list-sm-header-font-size |
+| $kendo-list-header-line-height-sm | $kendo-list-sm-header-line-height |
+| $kendo-list-item-padding-x-sm | $kendo-list-sm-item-padding-x |
+| $kendo-list-item-padding-y-sm | $kendo-list-sm-item-padding-y |
+| $kendo-list-item-font-size-sm | $kendo-list-sm-item-font-size |
+| $kendo-list-item-line-height-sm | $kendo-list-sm-item-line-height |
+| $kendo-list-group-item-padding-x-sm | $kendo-list-sm-group-item-padding-x |
+| $kendo-list-group-item-padding-y-sm | $kendo-list-sm-group-item-padding-y |
+| $kendo-list-group-item-font-size-sm | $kendo-list-sm-group-item-font-size |
+| $kendo-list-group-item-line-height-sm | $kendo-list-sm-group-item-line-height |
+| $kendo-list-font-size-md | $kendo-list-md-font-size |
+| $kendo-list-line-height-md | $kendo-list-md-line-height |
+| $kendo-list-header-padding-x-md | $kendo-list-md-header-padding-x |
+| $kendo-list-header-padding-y-md | $kendo-list-md-header-padding-y |
+| $kendo-list-header-font-size-md | $kendo-list-md-header-font-size |
+| $kendo-list-header-line-height-md | $kendo-list-md-header-line-height |
+| $kendo-list-item-padding-x-md | $kendo-list-md-item-padding-x |
+| $kendo-list-item-padding-y-md | $kendo-list-md-item-padding-y |
+| $kendo-list-item-font-size-md | $kendo-list-md-item-font-size |
+| $kendo-list-item-line-height-md | $kendo-list-md-item-line-height |
+| $kendo-list-group-item-padding-x-md | $kendo-list-md-group-item-padding-x |
+| $kendo-list-group-item-padding-y-md | $kendo-list-md-group-item-padding-y |
+| $kendo-list-group-item-font-size-md | $kendo-list-md-group-item-font-size |
+| $kendo-list-group-item-line-height-md | $kendo-list-md-group-item-line-height |
+| $kendo-list-font-size-lg | $kendo-list-lg-font-size |
+| $kendo-list-line-height-lg | $kendo-list-lg-line-height |
+| $kendo-list-header-padding-x-lg | $kendo-list-lg-header-padding-x |
+| $kendo-list-header-padding-y-lg | $kendo-list-lg-header-padding-y |
+| $kendo-list-header-font-size-lg | $kendo-list-lg-header-font-size |
+| $kendo-list-header-line-height-lg | $kendo-list-lg-header-line-height |
+| $kendo-list-item-padding-x-lg | $kendo-list-lg-item-padding-x |
+| $kendo-list-item-padding-y-lg | $kendo-list-lg-item-padding-y |
+| $kendo-list-item-font-size-lg | $kendo-list-lg-item-font-size |
+| $kendo-list-item-line-height-lg | $kendo-list-lg-item-line-height |
+| $kendo-list-group-item-padding-x-lg | $kendo-list-lg-group-item-padding-x |
+| $kendo-list-group-item-padding-y-lg | $kendo-list-lg-group-item-padding-y |
+| $kendo-list-group-item-font-size-lg | $kendo-list-lg-group-item-font-size |
+| $kendo-list-group-item-line-height-lg | $kendo-list-lg-group-item-line-height |
+
+\## Listgroup
+
+| Old name | New name |
+| :--- | :--- |
+| $listgroup-* | $kendo-listgroup-* |
+
+\## Loader
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-loader-segment-size-sm | $kendo-loader-sm-segment-size |
+| $kendo-loader-padding-sm | $kendo-loader-sm-padding |
+| $kendo-loader-spinner-3-width-sm | $kendo-loader-sm-spinner-3-width |
+| $kendo-loader-spinner-3-height-sm | $kendo-loader-sm-spinner-3-height |
+| $kendo-loader-spinner-4-width-sm | $kendo-loader-sm-spinner-4-width |
+| $kendo-loader-spinner-4-height-sm | $kendo-loader-sm-spinner-4-height |
+| $kendo-loader-container-padding-sm | $kendo-loader-sm-container-padding |
+| $kendo-loader-container-gap-sm | $kendo-loader-sm-container-gap |
+| $kendo-loader-container-font-size-sm | $kendo-loader-sm-container-font-size |
+| $kendo-loader-segment-size-md | $kendo-loader-md-segment-size |
+| $kendo-loader-padding-md | $kendo-loader-md-padding |
+| $kendo-loader-spinner-3-width-md | $kendo-loader-md-spinner-3-width |
+| $kendo-loader-spinner-3-height-md | $kendo-loader-md-spinner-3-height |
+| $kendo-loader-spinner-4-width-md | $kendo-loader-md-spinner-4-width |
+| $kendo-loader-spinner-4-height-md | $kendo-loader-md-spinner-4-height |
+| $kendo-loader-container-padding-md | $kendo-loader-md-container-padding |
+| $kendo-loader-container-gap-md | $kendo-loader-md-container-gap |
+| $kendo-loader-container-font-size-md | $kendo-loader-md-container-font-size |
+| $kendo-loader-segment-size-lg | $kendo-loader-lg-segment-size |
+| $kendo-loader-padding-lg | $kendo-loader-lg-padding |
+| $kendo-loader-spinner-3-width-lg | $kendo-loader-lg-spinner-3-width |
+| $kendo-loader-spinner-3-height-lg | $kendo-loader-lg-spinner-3-height |
+| $kendo-loader-spinner-4-width-lg | $kendo-loader-lg-spinner-4-width |
+| $kendo-loader-spinner-4-height-lg | $kendo-loader-lg-spinner-4-height |
+| $kendo-loader-container-padding-lg | $kendo-loader-lg-container-padding |
+| $kendo-loader-container-gap-lg | $kendo-loader-lg-container-gap |
+| $kendo-loader-container-font-size-lg | $kendo-loader-lg-container-font-size |
+
+\## Map
+
+| Old name | New name |
+| :--- | :--- |
+| $map-* | $kendo-map-* |
+
+\## Media player
+
+| Old name | New name |
+| :--- | :--- |
+| $mediaplayer-* | $kendo-media-player-* |
+
+\## Menu
+
+| Old name | New name |
+| :--- | :--- |
+| $menu-* | $kendo-menu-* |
+| $kendo-menu-popup-font-size-sm | $kendo-menu-sm-popup-font-size |
+| $kendo-menu-popup-line-height-sm | $kendo-menu-sm-popup-line-height |
+| $kendo-menu-popup-item-padding-x-sm | $kendo-menu-sm-popup-item-padding-x |
+| $kendo-menu-popup-item-padding-y-sm | $kendo-menu-sm-popup-item-padding-y |
+| $kendo-menu-popup-item-padding-end-sm | $kendo-menu-sm-popup-item-padding-end |
+| $kendo-menu-popup-item-icon-margin-start-sm | $kendo-menu-sm-popup-item-icon-margin-start |
+| $kendo-menu-popup-item-icon-margin-end-sm | $kendo-menu-sm-popup-item-icon-margin-end |
+| $kendo-menu-popup-font-size-md | $kendo-menu-md-popup-font-size |
+| $kendo-menu-popup-line-height-md | $kendo-menu-md-popup-line-height |
+| $kendo-menu-popup-item-padding-x-md | $kendo-menu-md-popup-item-padding-x |
+| $kendo-menu-popup-item-padding-y-md | $kendo-menu-md-popup-item-padding-y |
+| $kendo-menu-popup-item-padding-end-md | $kendo-menu-md-popup-item-padding-end |
+| $kendo-menu-popup-item-icon-margin-start-md | $kendo-menu-md-popup-item-icon-margin-start |
+| $kendo-menu-popup-item-icon-margin-end-md | $kendo-menu-md-popup-item-icon-margin-end |
+| $kendo-menu-popup-font-size-lg | $kendo-menu-lg-popup-font-size |
+| $kendo-menu-popup-line-height-lg | $kendo-menu-lg-popup-line-height |
+| $kendo-menu-popup-item-padding-x-lg | $kendo-menu-lg-popup-item-padding-x |
+| $kendo-menu-popup-item-padding-y-lg | $kendo-menu-lg-popup-item-padding-y |
+| $kendo-menu-popup-item-padding-end-lg | $kendo-menu-lg-popup-item-padding-end |
+| $kendo-menu-popup-item-icon-margin-start-lg | $kendo-menu-lg-popup-item-icon-margin-start |
+| $kendo-menu-popup-item-icon-margin-end-lg | $kendo-menu-lg-popup-item-icon-margin-end |
+
+\## Message box
+
+| Old name | New name |
+| :--- | :--- |
+| $message-box-* | $kendo-message-box-* |
+
+\## Orgchart
+
+| Old name | New name |
+| :--- | :--- |
+| $orgchart-* | $kendo-orgchart-* |
+
+\## Overlay
+
+| Old name | New name |
+| :--- | :--- |
+| $overlay-* | $kendo-overlay-* |
+
+\## Pager
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-pager-padding-x-sm | $kendo-pager-sm-padding-x |
+| $kendo-pager-padding-y-sm | $kendo-pager-sm-padding-y |
+| $kendo-pager-item-min-width-sm | $kendo-pager-sm-item-min-width |
+| $kendo-pager-item-group-spacing-sm | $kendo-pager-sm-item-group-spacing |
+| $kendo-pager-dropdown-width-sm | $kendo-pager-sm-dropdown-width |
+| $kendo-pager-padding-x-md | $kendo-pager-md-padding-x |
+| $kendo-pager-padding-y-md | $kendo-pager-md-padding-y |
+| $kendo-pager-item-min-width-md | $kendo-pager-md-item-min-width |
+| $kendo-pager-item-group-spacing-md | $kendo-pager-md-item-group-spacing |
+| $kendo-pager-dropdown-width-md | $kendo-pager-md-dropdown-width |
+| $kendo-pager-padding-x-lg | $kendo-pager-lg-padding-x |
+| $kendo-pager-padding-y-lg | $kendo-pager-lg-padding-y |
+| $kendo-pager-item-min-width-lg | $kendo-pager-lg-item-min-width |
+| $kendo-pager-item-group-spacing-lg | $kendo-pager-lg-item-group-spacing |
+| $kendo-pager-dropdown-width-lg | $kendo-pager-lg-dropdown-width |
+
+\## Panelbar
+
+| Old name | New name |
+| :--- | :--- |
+| $panelbar-* | $kendo-panelbar-* |
+
+\## PDF viewer
+
+| Old name | New name |
+| :--- | :--- |
+| $pdf-viewer-* | $kendo-pdf-viewer-* |
+
+\## Pivotgrid
+
+| Old name | New name |
+| :--- | :--- |
+| $pivotgrid-* | $kendo-pivotgrid-* |
+
+\## Popup
+
+| Old name | New name |
+| :--- | :--- |
+| $popup-* | $kendo-popup-* |
+
+\## Rating
+
+| Old name | New name |
+| :--- | :--- |
+| $rating-* | $kendo-rating-* |
+
+\## Scheduler
+
+| Old name | New name |
+| :--- | :--- |
+| $scheduler-* | $kendo-scheduler-* |
+
+\## Scrollview
+
+| Old name | New name |
+| :--- | :--- |
+| $scrollview-* | $kendo-scrollview-* |
+
+\## Signature
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-signature-padding-x-sm | $kendo-signature-sm-padding-x |
+| $kendo-signature-padding-y-sm | $kendo-signature-sm-padding-y |
+| $kendo-signature-line-height-sm | $kendo-signature-sm-line-height |
+| $kendo-signature-padding-x-md | $kendo-signature-md-padding-x |
+| $kendo-signature-padding-y-md | $kendo-signature-md-padding-y |
+| $kendo-signature-line-height-md | $kendo-signature-md-line-height |
+| $kendo-signature-padding-x-lg | $kendo-signature-lg-padding-x |
+| $kendo-signature-padding-y-lg | $kendo-signature-lg-padding-y |
+| $kendo-signature-line-height-lg | $kendo-signature-lg-line-height |
+
+\## Skeleton
+
+| Old name | New name |
+| :--- | :--- |
+| $skeleton-* | $kendo-skeleton-* |
+
+\## Slider
+
+| Old name | New name |
+| :--- | :--- |
+| $slider-* | $kendo-slider-* |
+
+\## Split button
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-split-button-arrow-padding-x-sm | $kendo-split-button-sm-arrow-padding-x |
+| $kendo-split-button-arrow-padding-y-sm | $kendo-split-button-sm-arrow-padding-y |
+| $kendo-split-button-arrow-padding-x-md | $kendo-split-button-md-arrow-padding-x |
+| $kendo-split-button-arrow-padding-y-md | $kendo-split-button-md-arrow-padding-y |
+| $kendo-split-button-arrow-padding-x-lg | $kendo-split-button-lg-arrow-padding-x |
+| $kendo-split-button-arrow-padding-y-lg | $kendo-split-button-lg-arrow-padding-y |
+
+\## Splitter
+
+| Old name | New name |
+| :--- | :--- |
+| $splitter-* | $kendo-splitter-* |
+| $splitbar-* | $kendo-splitbar-* |
+
+\## Spreadsheet
+
+| Old name | New name |
+| :--- | :--- |
+| $spreadsheet-* | $kendo-spreadsheet-* |
+
+\## Stepper
+
+| Old name | New name |
+| :--- | :--- |
+| $stepper-* | $kendo-stepper-* |
+
+\## Table
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-table-cell-padding-x-sm | $kendo-table-sm-cell-padding-x |
+| $kendo-table-cell-padding-y-sm | $kendo-table-sm-cell-padding-y |
+| $kendo-table-cell-padding-x-md | $kendo-table-md-cell-padding-x |
+| $kendo-table-cell-padding-y-md | $kendo-table-md-cell-padding-y |
+| $kendo-table-cell-padding-x-lg | $kendo-table-lg-cell-padding-x |
+| $kendo-table-cell-padding-y-lg | $kendo-table-lg-cell-padding-y |
+
+\## Tabstrip
+
+| Old name | New name |
+| :--- | :--- |
+| $tabstrip-* | $kendo-tabstrip-* |
+
+\## Taskboard
+
+| Old name | New name |
+| :--- | :--- |
+| $taskboard-* | $kendo-taskboard-* |
+
+\## Tile layout
+
+| Old name | New name |
+| :--- | :--- |
+| $tilelayout-* | $kendo-tile-layout-* |
+
+\## Timeline
+
+| Old name | New name |
+| :--- | :--- |
+| $timeline-* | $kendo-timeline-* |
+
+\## Time selector
+
+| Old name | New name |
+| :--- | :--- |
+| $time-selector-* | $kendo-time-selector-* |
+
+\## Toolbar
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-toolbar-padding-x-sm | $kendo-toolbar-sm-padding-x |
+| $kendo-toolbar-padding-y-sm | $kendo-toolbar-sm-padding-y |
+| $kendo-toolbar-spacing-sm | $kendo-toolbar-sm-spacing |
+| $kendo-toolbar-padding-x-md | $kendo-toolbar-md-padding-x |
+| $kendo-toolbar-padding-y-md | $kendo-toolbar-md-padding-y |
+| $kendo-toolbar-spacing-md | $kendo-toolbar-md-spacing |
+| $kendo-toolbar-padding-x-lg | $kendo-toolbar-lg-padding-x |
+| $kendo-toolbar-padding-y-lg | $kendo-toolbar-lg-padding-y |
+| $kendo-toolbar-spacing-lg | $kendo-toolbar-lg-spacing |
+
+\## Tooltip
+
+| Old name | New name |
+| :--- | :--- |
+| $tooltip-* | $kendo-tooltip-* |
+
+\## Treeview
+
+| Old name | New name |
+| :--- | :--- |
+| $kendo-treeview-font-size-sm | $kendo-treeview-sm-font-size |
+| $kendo-treeview-line-height-sm | $kendo-treeview-sm-line-height |
+| $kendo-treeview-item-padding-x-sm | $kendo-treeview-sm-item-padding-x |
+| $kendo-treeview-item-padding-y-sm | $kendo-treeview-sm-item-padding-y |
+| $kendo-treeview-font-size-md | $kendo-treeview-md-font-size |
+| $kendo-treeview-line-height-md | $kendo-treeview-md-line-height |
+| $kendo-treeview-item-padding-x-md | $kendo-treeview-md-item-padding-x |
+| $kendo-treeview-item-padding-y-md | $kendo-treeview-md-item-padding-y |
+| $kendo-treeview-font-size-lg | $kendo-treeview-lg-font-size |
+| $kendo-treeview-line-height-lg | $kendo-treeview-lg-line-height |
+| $kendo-treeview-item-padding-x-lg | $kendo-treeview-lg-item-padding-x |
+| $kendo-treeview-item-padding-y-lg | $kendo-treeview-lg-item-padding-y |
+
+\## Wizard
+
+| Old name | New name |
+| :--- | :--- |
+| $wizard-* | $kendo-wizard-* |
+* **icons:** Added kendo prefix to all icon variables:
+
+Change variable names from `$icon-*` to `$kendo-icon-*`.
+* **icons:** Icons font sizes are updated as follows:
+
+* $kendo-icon-size-xs -> 12px (0.75 * $kendo-icon-size)
+* $kendo-icon-size-sm -> 14px (0.875 * $kendo-icon-size)
+* $kendo-icon-size-md -> 16px ($kendo-icon-size)
+* $kendo-icon-size-lg -> 20px (1.25 * $kendo-icon-size)
+* $kendo-icon-size-xl -> 24px (1.5 * $kendo-icon-size)
+* $kendo-icon-size-xxl -> 32px (2 * $kendo-icon-size)
+* $kendo-icon-size-xxxl -> 48px (3 * $kendo-icon-size)
+* **icons:** icons are now consumed from kendo-icons package and
+used in default, bootstrap, material and classic themes
+* Use utility class names from utils package
+
+Previously, the utility classes were defined in the default theme and were
+consumed from the derived themes.
+
+While no class names were changed, we did try to move to a more consistent
+naming convention for the class names. For example, the class name for
+`display: flex` was changed from `k-display-flex` to `k-d-flex`, as it's shorter
+and unambiguous. Of course, the old class names are still supported and
+will be removed in the next major version.
+* Remove usages of `$spacer` variable
+
+The `$spacer` variable is removed in favour of spacing map, which yields
+consistent spacing values across all components.
+* Rename popover variables
+
+| Old name | New name |
+| :--- | :--- |
+| `$popover-border-width` | `$kendo-popover-border-width` |
+| `$popover-border-style` | `$kendo-popover-border-style` |
+| `$popover-border-radius` | `$kendo-popover-border-radius` |
+| `$popover-font-size` | `$kendo-popover-font-size` |
+| `$popover-font-family` | `$kendo-popover-font-family` |
+| `$popover-line-height` | `$kendo-popover-line-height` |
+| `$popover-bg` | `$kendo-popover-bg` |
+| `$popover-text` | `$kendo-popover-text` |
+| `$popover-border` | `$kendo-popover-border` |
+| `$popover-shadow` | `$kendo-popover-shadow` |
+| `$popover-header-padding-y` | `$kendo-popover-header-padding-y` |
+| `$popover-header-padding-x` | `$kendo-popover-header-padding-x` |
+| `$popover-header-border-width` | `$kendo-popover-header-border-width` |
+| `$popover-header-border-style` | `$kendo-popover-header-border-style` |
+| `$popover-header-bg` | `$kendo-popover-header-bg` |
+| `$popover-header-text` | `$kendo-popover-header-text` |
+| `$popover-header-border` | `$kendo-popover-header-border` |
+| `$popover-body-padding-y` | `$kendo-popover-body-padding-y` |
+| `$popover-body-padding-x` | `$kendo-popover-body-padding-x` |
+| `$popover-actions-border-width` | `$kendo-popover-actions-border-width` |
+| `$popover-callout-width` | `$kendo-popover-callout-width` |
+| `$popover-callout-height` | `$kendo-popover-callout-height` |
+| `$popover-callout-border-width` | `$kendo-popover-callout-border-width` |
+| `$popover-callout-border-style` | `$kendo-popover-callout-border-style` |
+| `$popover-callout-bg` | `$kendo-popover-callout-bg` |
+| `$popover-callout-border` | `$kendo-popover-callout-border` |
+* Remove deprecated `$accent` and `$accent-contrast` variables
+
+Use `$kendo-color-primary` and `$kendo-color-primary-contrast` instead.
+* Remove redundant styling modules
+
+The styling module was already included as part of the utils module.
+* Remove redundant cursor module
+
+The cursor module was already included as part of theme utils.
+* Merge placeholder line with skeleton
+
+The styles for the placeholder line were merged with the skeleton styles.
+As a result, the placeholder line is lightly darker and has rounded corners.
+In a future release, the placeholder line will be removed in favor of the skeleton.
+* Rename root variables
+
+This commit introduces a consistent naming convention for root variables:
+
+* Most root variables are prefixed with `$kendo-`.
+* If a variable is a color, it's infixed with `-color-`.
+* If a variable had `-hovered-` infix, it's now `-hover-`.
+* If a variable had `-focused-` infix, it's now `-focus-`.
+* If a variable had size infix and then direction, they are reversed
+
+Here is a list of changes:
+
+| Old name | New name |
+| :--- | :--- |
+| `$enable-rounded` | `$kendo-enable-rounded` |
+| `$enable-shadows` | `$kendo-enable-shadows` |
+| `$enable-gradients` | `$kendo-enable-gradients` |
+| `$enable-transitions` | `$kendo-enable-transitions` |
+| `$enable-flex-classes` | Removed (unused) |
+| `$enable-grid-classes` | Removed (unused) |
+| `$use-calc-badge-size` | Removed (unused) |
+| `$use-input-button-width`| `$kendo-use-input-button-width` |
+| `$use-input-spinner-width` | `$kendo-use-input-spinner-width` |
+| `$use-input-spinner-icon-offset` | Removed (unused) |
+| `$use-picker-select-width` | Removed. Use `$kendo-use-input-button-width` |
+| `$padding-x` | `$kendo-padding-x` |
+| `$padding-y` | `$kendo-padding-y` |
+| `$padding-x-sm` | `$kendo-padding-sm-x` |
+| `$padding-y-sm` | `$kendo-padding-sm-y` |
+| N/A | New. `$kendo-padding-md-x` |
+| N/A | New. `$kendo-padding-md-y` |
+| `$padding-x-lg` | `$kendo-padding-lg-x` |
+| `$padding-y-lg` | `$kendo-padding-lg-y` |
+| `$panel-padding-x` | Removed. Variable was not used consistently, so the usages were replaced with spacing map |
+| `$panel-padding-y` | Removed. Variable was not used consistently, so the usages were replaced with spacing map |
+| `$header-padding-x` | Removed. Variable was not used consistently, so the usages were replaced with spacing map |
+| `$header-padding-y` | Removed. Variable was not used consistently, so the usages were replaced with spacing map |
+| `$nav-item-margin` | Removed. Variable was not used consistently, so the usages were replaced with spacing map |
+| `$nav-item-padding-x` | Removed. Variable was not used consistently, so the usages were replaced with spacing map |
+| `$nav-item-padding-y` | Removed. Variable was not used consistently, so the usages were replaced with spacing map |
+| `$zindex-popup` | `$kendo-zindex-popup` |
+| `$zindex-window` | `$kendo-zindex-window` |
+| `$zindex-loading` | `$kendo-zindex-loading` |
+| `$black` | `$kendo-color-black` |
+| `$white` | `$kendo-color-white` |
+| `$rgba-transparent` | `$kendo-color-rgba-transparent` |
+| `$gradient-transparent-to-black` | `$kendo-gradient-transparent-to-black` |
+| `$gradient-transparent-to-white` | `$kendo-gradient-transparent-to-white` |
+| `$gradient-black-to-transparent` | `$kendo-gradient-black-to-transparent` |
+| `$gradient-white-to-transparent` | `$kendo-gradient-white-to-transparent` |
+| `$accent` | Removed. Use `$kendo-color-primary` |
+| `$accent-contrast` | Removed. Use `$kendo-color-primary-contrast` |
+| `$primary` | `$kendo-color-primary` |
+| `$primary-lighter` | `$kendo-color-primary-lighter` |
+| `$primary-darker` | `$kendo-color-primary-darker` |
+| `$primary-contrast` | `$kendo-color-primary-contrast` |
+| `$secondary` | `$kendo-color-secondary` |
+| `$secondary-lighter` | `$kendo-color-secondary-lighter` |
+| `$secondary-darker` | `$kendo-color-secondary-darker` |
+| `$secondary-contrast` | `$kendo-color-secondary-contrast` |
+| `$tertiary` | `$kendo-color-tertiary` |
+| `$tertiary-lighter` | `$kendo-color-tertiary-lighter` |
+| `$tertiary-darker` | `$kendo-color-tertiary-darker` |
+| `$tertiary-contrast` | `$kendo-color-tertiary-contrast` |
+| `$info` | `$kendo-color-info` |
+| `$info-lighter` | `$kendo-color-info-lighter` |
+| `$info-darker` | `$kendo-color-info-darker` |
+| `$success` | `$kendo-color-success` |
+| `$success-lighter` | `$kendo-color-success-lighter` |
+| `$success-darker` | `$kendo-color-success-darker` |
+| `$warning` | `$kendo-color-warning` |
+| `$warning-lighter` | `$kendo-color-warning-lighter` |
+| `$warning-darker` | `$kendo-color-warning-darker` |
+| `$error` | `$kendo-color-error` |
+| `$error-lighter` | `$kendo-color-error-lighter` |
+| `$error-darker` | `$kendo-color-error-darker` |
+| `$dark` | `$kendo-color-dark` |
+| `$light` | `$kendo-color-light` |
+| `$inverse` | `$kendo-color-inverse` |
+| `$cursors` | Removed (redundant) |
+| `$body-bg` | `$kendo-body-bg` |
+| `$body-text` | `$kendo-body-text` |
+| `$subtle-text` | `$kendo-subtle-text` |
+| `$app-bg` | `$kendo-app-bg` |
+| `$app-text` | `$kendo-app-text` |
+| `$app-border` | `$kendo-app-border` |
+| `$component-bg` | `$kendo-component-bg` |
+| `$component-text` | `$kendo-component-text` |
+| `$component-border` | `$kendo-component-border` |
+| `$header-bg` | `$kendo-component-header-bg` |
+| `$header-text` | `$kendo-component-header-text` |
+| `$header-border` | `$kendo-component-header-border` |
+| `$header-gradient` | `$kendo-component-header-gradient` |
+| `$hovered-bg` | `$kendo-hover-bg` |
+| `$hovered-text` | `$kendo-hover-text` |
+| `$hovered-border` | `$kendo-hover-border` |
+| `$hovered-gradient` | `$kendo-hover-gradient` |
+| `$selected-bg` | `$kendo-selected-bg` |
+| `$selected-text` | `$kendo-selected-text` |
+| `$selected-border` | `$kendo-selected-border` |
+| `$selected-gradient` | `$kendo-selected-gradient` |
+| `$focused-shadow` | `$kendo-focus-shadow` |
+| `$primary-focused-shadow` | Removed (unused) |
+| `$disabled-bg` | `$kendo-disabled-bg` |
+| `$disabled-text` | `$kendo-disabled-text` |
+| `$disabled-border` | `$kendo-disabled-border` |
+| `$disabled-gradient` | `$kendo-disabled-gradient` |
+| `$disabled-filter` | `$kendo-disabled-filter` |
+| `$disabled-opacity` | `$kendo-disabled-opacity` |
+| `$disabled-styling` | `$kendo-disabled-styling` |
+| `$panel-bg` | Removed. Use `$kendo-component-bg` |
+| `$panel-text` | Removed. Use `$kendo-component-text` |
+| `$panel-border` | Removed. Use `$kendo-component-border` |
+| `$grouping-header-bg` | Removed. Use `$kendo-component-header-bg` |
+| `$grouping-header-text` | Removed. Use `$kendo-component-header-text` |
+| `$grouping-header-border` | Removed. Use `$kendo-component-header-border` |
+| `$frozen-grouping-header-text` | Removed (unused) |
+| `$frozen-grouping-header-border-width` | Removed (unused) |
+| `$placeholder-line-width` | Removed (unused) |
+| `$placeholder-line-height` | Removed (unused) |
+| `$placeholder-line-bg` | Removed. $skeleton-item-bg |
+| `$invalid-bg` | `$kendo-invalid-bg` |
+| `$invalid-text` | `$kendo-invalid-text` |
+| `$invalid-border` | `$kendo-invalid-border` |
+| `$invalid-shadow` | `$kendo-invalid-shadow` |
+| `$transition` | `$kendo-transition` |
+| `$breadcrumb-link-hovered-bg` | `$breadcrumb-link-hover-bg` |
+| `$breadcrumb-link-hovered-text` | `$breadcrumb-link-hover-text` |
+| `$breadcrumb-link-hovered-border` | `$breadcrumb-link-hover-border` |
+| `$breadcrumb-link-focused-bg` | `$breadcrumb-link-focus-bg` |
+| `$breadcrumb-link-focused-text` | `$breadcrumb-link-focus-text` |
+| `$breadcrumb-link-focused-border` | `$breadcrumb-link-focus-border` |
+| `$breadcrumb-link-focused-shadow` | `$breadcrumb-link-focus-shadow` |
+| `$breadcrumb-root-link-hovered-bg` | `$breadcrumb-root-link-hover-bg` |
+| `$breadcrumb-root-link-hovered-text` | `$breadcrumb-root-link-hover-text` |
+| `$breadcrumb-root-link-hovered-border` | `$breadcrumb-root-link-hover-border` |
+| `$breadcrumb-root-link-focused-bg` | `$breadcrumb-root-link-focus-bg` |
+| `$breadcrumb-root-link-focused-text` | `$breadcrumb-root-link-focus-text` |
+| `$breadcrumb-root-link-focused-border` | `$breadcrumb-root-link-focus-border` |
+| `$breadcrumb-root-link-focused-shadow` | `$breadcrumb-root-link-focus-shadow` |
+| `$breadcrumb-focused-shadow` | `$breadcrumb-focus-shadow` |
+| `$calendar-cell-focused-shadow` | `$calendar-cell-focus-shadow` |
+| `$kendo-drawer-scrollbar-hovered-color` | `$kendo-drawer-scrollbar-hover-color` |
+| `$kendo-drawer-hovered-bg` | `$kendo-drawer-hover-bg` |
+| `$kendo-drawer-hovered-text` | `$kendo-drawer-hover-text` |
+| `$kendo-drawer-focused-bg` | `$kendo-drawer-focus-bg` |
+| `$kendo-drawer-focused-text` | `$kendo-drawer-focus-text` |
+| `$dropdownlist-*` | Removed (unused) |
+| `$expander-header-focused-bg` | `$expander-header-focus-bg` |
+| `$expander-header-focused-shadow` | `$expander-header-focus-shadow` |
+| `$kendo-grid-hovered-bg` | `$kendo-grid-hover-bg` |
+| `$kendo-grid-hovered-text` | `$kendo-grid-hover-text` |
+| `$kendo-grid-hovered-border` | `$kendo-grid-hover-border` |
+| `$kendo-grid-focused-shadow` | `$kendo-grid-focus-shadow` |
+| `$kendo-grid-sticky-footer-hovered-bg` | `$kendo-grid-sticky-footer-hover-bg` |
+| `$kendo-grid-sticky-hovered-bg` | `$kendo-grid-sticky-hover-bg` |
+| `$kendo-grid-sticky-selected-hovered-bg` | `$kendo-grid-sticky-selected-hover-bg` |
+| `$panelbar-header-hovered-bg` | `$panelbar-header-hover-bg` |
+| `$panelbar-header-hovered-text` | `$panelbar-header-hover-text` |
+| `$panelbar-header-hovered-border` | `$panelbar-header-hover-border` |
+| `$panelbar-header-hovered-gradient` | `$panelbar-header-hover-gradient` |
+| `$panelbar-header-focused-bg` | `$panelbar-header-focus-bg` |
+| `$panelbar-header-focused-text` | `$panelbar-header-focus-text` |
+| `$panelbar-header-focused-border` | `$panelbar-header-focus-border` |
+| `$panelbar-header-focused-gradient` | `$panelbar-header-focus-gradient` |
+| `$panelbar-header-focused-shadow` | `$panelbar-header-focus-shadow` |
+| `$panelbar-header-hovered-focused-bg` | `$panelbar-header-hover-focus-bg` |
+| `$panelbar-header-hovered-focused-text` | `$panelbar-header-hover-focus-text` |
+| `$panelbar-header-hovered-focused-border` | `$panelbar-header-hover-focus-border` |
+| `$panelbar-header-hovered-focused-gradient` | `$panelbar-header-hover-focus-gradient` |
+| `$panelbar-header-selected-hovered-bg` | `$panelbar-header-selected-hover-bg` |
+| `$panelbar-header-selected-hovered-text` | `$panelbar-header-selected-hover-text` |
+| `$panelbar-header-selected-hovered-border` | `$panelbar-header-selected-hover-border` |
+| `$panelbar-header-selected-hovered-gradient` | `$panelbar-header-selected-hover-gradient` |
+| `$panelbar-header-selected-focused-bg` | `$panelbar-header-selected-focus-bg` |
+| `$panelbar-header-selected-focused-text` | `$panelbar-header-selected-focus-text` |
+| `$panelbar-header-selected-focused-border` | `$panelbar-header-selected-focus-border` |
+| `$panelbar-header-selected-focused-gradient` | `$panelbar-header-selected-focus-gradient` |
+| `$panelbar-header-selected-hovered-focused-bg` | `$panelbar-header-selected-hover-focus-bg` |
+| `$panelbar-header-selected-hovered-focused-text` | `$panelbar-header-selected-hover-focus-text` |
+| `$panelbar-header-selected-hovered-focused-border` | `$panelbar-header-selected-hover-focus-border` |
+| `$panelbar-header-selected-hovered-focused-gradient` | `$panelbar-header-selected-hover-focus-gradient` |
+| `$panelbar-item-hovered-bg` | `$panelbar-item-hover-bg` |
+| `$panelbar-item-hovered-text` | `$panelbar-item-hover-text` |
+| `$panelbar-item-hovered-border` | `$panelbar-item-hover-border` |
+| `$panelbar-item-hovered-gradient` | `$panelbar-item-hover-gradient` |
+| `$panelbar-item-focused-bg` | `$panelbar-item-focus-bg` |
+| `$panelbar-item-focused-text` | `$panelbar-item-focus-text` |
+| `$panelbar-item-focused-border` | `$panelbar-item-focus-border` |
+| `$panelbar-item-focused-gradient` | `$panelbar-item-focus-gradient` |
+| `$panelbar-item-focused-shadow` | `$panelbar-item-focus-shadow` |
+| `$panelbar-item-hovered-focused-bg` | `$panelbar-item-hover-focus-bg` |
+| `$panelbar-item-hovered-focused-text` | `$panelbar-item-hover-focus-text` |
+| `$panelbar-item-hovered-focused-border` | `$panelbar-item-hover-focus-border` |
+| `$panelbar-item-hovered-focused-gradient` | `$panelbar-item-hover-focus-gradient` |
+| `$panelbar-item-selected-hovered-bg` | `$panelbar-item-selected-hover-bg` |
+| `$panelbar-item-selected-hovered-text` | `$panelbar-item-selected-hover-text` |
+| `$panelbar-item-selected-hovered-border` | `$panelbar-item-selected-hover-border` |
+| `$panelbar-item-selected-hovered-gradient` | `$panelbar-item-selected-hover-gradient` |
+| `$panelbar-item-selected-focused-bg` | `$panelbar-item-selected-focus-bg` |
+| `$panelbar-item-selected-focused-text` | `$panelbar-item-selected-focus-text` |
+| `$panelbar-item-selected-focused-border` | `$panelbar-item-selected-focus-border` |
+| `$panelbar-item-selected-focused-gradient` | `$panelbar-item-selected-focus-gradient` |
+| `$panelbar-item-selected-hovered-focused-bg` | `$panelbar-item-selected-hover-focus-bg` |
+| `$panelbar-item-selected-hovered-focused-text` | `$panelbar-item-selected-hover-focus-text` |
+| `$panelbar-item-selected-hovered-focused-border` | `$panelbar-item-selected-hover-focus-border` |
+| `$panelbar-item-selected-hovered-focused-gradient` | `$panelbar-item-selected-hover-focus-gradient` |
+| `$rating-icon-focused-text` | `$rating-icon-focus-text` |
+| `$rating-icon-focused-shadow` | `$rating-icon-focus-shadow` |
+| `$rating-icon-focused-selected-shadow` | `$rating-icon-focus-selected-shadow` |
+| `$slider-button-focused-shadow` | `$slider-button-focus-shadow` |
+| `$slider-draghandle-hovered-bg` | `$slider-draghandle-hover-bg` |
+| `$slider-draghandle-hovered-text` | `$slider-draghandle-hover-text` |
+| `$slider-draghandle-hovered-border` | `$slider-draghandle-hover-border` |
+| `$slider-draghandle-hovered-gradient` | `$slider-draghandle-hover-gradient` |
+| `$slider-draghandle-focused-shadow` | `$slider-draghandle-focus-shadow` |
+| `$spreadsheet-insert-image-dialog-overlay-hovered-text` | `$spreadsheet-insert-image-dialog-overlay-hover-text` |
+| `$tabstrip-item-hovered-bg` | `$tabstrip-item-hover-bg` |
+| `$tabstrip-item-hovered-text` | `$tabstrip-item-hover-text` |
+| `$tabstrip-item-hovered-border` | `$tabstrip-item-hover-border` |
+| `$tabstrip-item-hovered-gradient` | `$tabstrip-item-hover-gradient` |
+| `$tabstrip-item-focused-shadow ` | `$tabstrip-item-focus-shadow ` |
+| `$tabstrip-content-border-focused` | `$tabstrip-content-focus-border` |
+| `$time-list-focused-bg` | `$time-list-focus-bg` |
+| `$kendo-upload-focused-shadow` | `$upload-focus-shadow` |
+| `$kendo-window-focused-shadow` | `$window-focus-shadow` |
+| `$kendo-wizard-focused-shadow` | Removed (unused) |
+* Added `$kendo-` prefix to `$spacing` map
+
+Renamed `$spacing` to `$kendo-spacing` to avoid conflicts with other libraries.
+* **grid:** grid grouping header indicators replaced with
+* **treelist:** Added kendo prefix to all treelist variables:
+
+Change variable names from `$treelist-*` to `$kendo-treelist-*`.
+* **grid:** Grid header cell rendering updated
+* **grid:** Added `size` appearance property:
+* `size` controls the overall physical size of the grid and it's components.
+* currently supports small and medium (default) sizes
+
+The `size` property generates component specific class name `k-grid-{size}`.
+* **grid:** Added kendo prefix to all grid variables:
+
+Change variable names from `$grid-*` to `$kendo-grid-*`.
+* Use functions and mixins only from theme-core
+
+All, but two, functions are prefixed with `k-` to avoid conflicts with other libraries:
+
+* `contrast-wcag` is renamed to `k-contrast-legacy`, and
+* `yiq` is renamed to `k-yiq-luma-information`
+
+as the new names describe them better.
+
+Note: `k-contrast-legacy` is deprecated and will be removed.
+* Added kendo prefix to all listview variables
+
+Change variables names from `$listview-*` to `$kendo-listview-*`.
+* **editor:** The Editor now uses div containers instead of table
+* **editor:** `k-editor-toolbar-wrap` wrapper removed
+* **editor:** Toolbar component is used for the Editor toolbar
+* **editor:** Window component is used for all Editor popups
+* **editor:** Form component is used inside popups
+* **editor:** All inputs inside popups are replaced with the
+respective component: TextBox, NumericTextBox, etc
+* **editor:** The following classes are renamed:
+
+* `k-resizable` renamed to `k-editor-resizable`
+
+* `k-editor-table-wizard-dialog` renamed to `k-editor-table-wizard-window`
+* **editor:** Added kendo prefix to all editor variables:
+
+Change variable names from `$editor-*` to `$kendo-editor-*`.
+* **upload:** The following classes are being renamed:
+
+* `k-dropzone-hover/hovered` renamed to `k-hover`
+
+* `k-file-group-wrapper`, `k-file-invalid-group-wrapper`,
+`k-multiple-files-group-wrapper`, `k-multiple-files-invalid-group-wrapper`
+renamed to `k-file-icon-wrapper`
+
+* `k-file-group` replaced with `k-file-icon`
+
+* `k-file-name-size-wrap class` replaced with `k-file-info`
+
+* `k-file-information` class replaced with `k-file-summary`
+
+* upload actions buttons wrapper renamed from `k-upload-status` to `k-upload-actions`
+* **upload:** The following classes are being removed:
+
+* `k-upload-status-total` removed from `k-upload-status`
+
+* `k-validation-icon` removed from upload-status icon
+
+* `k-file-name-invalid` removed from k-file-name
+
+* `k-text-success` and k-text-error removed from `k-validation-message`
+* **upload:** Updated rendering of the upload area with button and input
+* **upload:** Added kendo prefix to all upload variables:
+
+Change variable names from `$upload-*` to `$kendo-upload-*`.
+* **loader:** Added kendo prefix to all loader variables:
+
+Change variable names from `$loader-*` to `$kendo-loader-*`.
+* **fab:** Remove styles for fab shape property
+* **window:** The following classes are being renamed:
+
+* `k-window-actions` renamed to `k-window-titlebar-actions`
+
+* `k-window-buttongroup`, `k-window-buttons` renamed to `k-window-actions`
+* **window:** The following classes are being removed:
+
+* `k-window-titleless` removed
+
+* `k-dialog-*` classes removed
+* **window:** By default, the color of the titlebar is now the base color
+and can be changed via the new themeColor property of the component
+* **dialog:** The following classes are being renamed:
+
+* `k-dialog-actions` renamed to `k-dialog-titlebar-actions`
+
+* `k-dialog-buttongroup` and `k-dialog-buttons` renamed to `k-dialog-actions`
+* **dialog:** By default, the color of the titlebar is now the base color
+and can be changed via the new themeColor property of the component
+* **dialog:** Added kendo prefix to all dialog variables:
+
+Change variable names from `$dialog-*` to `$kendo-dialog-*`.
+* **window:** Added kendo prefix to all window variables:
+
+Change variable names from `$window-*` to `$kendo-window-*`.
+* **notification:** The following changes have been made to the notification classes:
+
+* removed `k-notification-wrap`
+
+* added `k-notification-actions` and `k-notification-action` classes
+* **notification:** Added kendo prefix to all notification variables:
+
+Change variable names from `$notification-` to `$kendo-notification-`
+* **listbox:** Added kendo prefix to all listbox variables:
+
+Change variable names from `$listbox-*` to `$kendo-listbox-*`.
+* **listbox:** The following classes have been renamed:
+
+* `k-listbox-toolbar` renamed to `k-listbox-actions`
+
+* `k-listbox-toolbar-left` renamed to `k-listbox-actions-left`
+
+* `k-listbox-toolbar-right` renamed to `k-listbox-actions-right`
+
+* `k-listbox-toolbar-top` renamed to `k-listbox-actions-top`
+
+* `k-listbox-toolbar-bottom` renamed to `k-listbox-actions-bottom`
+* **progressbar:** Add kendo prefix to all progressbar variables:
+
+Change variable names from `$progressbar-*` to `$kendo-progressbar-*`.
+* **progressbar:** The following changes are introduced:
+
+* added `k-progressbar-value` class
+
+* renamed css variable name from `--kendo-progressbar-progress` to `--kendo-progressbar-value`
+* **progressbar:** Changes to the following Progressbar classes:
+
+* added `k-chunk-progressbar` class
+
+* added `k-progressbar-chunks` class
+
+* `k-item` class is replaced with `k-progressbar-chunk`
+* **appbar:** Added kendo prefix to all appbar variables:
+
+Change variable names from `$appbar-*` to `$kendo-appbar-*`.
+* **drawer:** Added kendo prefix to all drawer variables:
+
+Change variable names from `$drawer-*` to `$kendo-drawer-*`.
+* drop IE support
+* **forms:** Added `size` appearance property.
+
+The `size` appearance property generates component specific class name `k-form-{size}`.
+* **forms:** Added kendo prefix to all form variables
+
+Change variable names from `$form-*` to `$kendo-form-*`.
+* **pager:** Added `size` appearance property:
+
+* `size` controls the overall physical size of the pager and it's components.
+
+Generates pager specific class name `k-pager-{size}`.
+* **pager:** Added kendo prefix to all pager variables:
+
+Change variable names from `$pager-*` to `$kendo-pager-*`.
+* **pager:** Replaced pager numbers with buttons:
+
+The rendering ot the Pager component has been changed to use buttons instead of spans.
+* **toolbar:** Added `size` appearance property.
+
+The `size` appearance property generates component specific class name `k-toolbar-{size}`.
+* **toolbar:** Added kendo prefix to all toolbar variables
+
+Change variable names from `$toolbar-*` to `$kendo-toolbar-*`.
+
+
+
+
+
 # [5.12.0](https://github.com/telerik/kendo-themes/compare/v5.11.0...v5.12.0) (2022-11-28)
 
 

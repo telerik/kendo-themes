@@ -234,6 +234,47 @@
         justify-content: center;
     }
 
+    // Input with SVG icon
+    .k-input-icon,
+    .k-input-validation-icon,
+    .k-input-loading-icon {
+        &.k-svg-icon > svg,
+        &.k-icon-md > svg {
+            width: var( --kendo-icon-size-md, 1rem );
+            height: var( --kendo-icon-size-md, 1rem );
+        }
+
+        &.k-icon-xs > svg {
+            width: var( --kendo-icon-size-sm, 0.75rem );
+            height: var( --kendo-icon-size-sm, 0.75rem )s;
+        }
+
+        &.k-icon-sm > svg {
+            width: var( --kendo-icon-size-sm, 0.875rem );
+            height: var( --kendo-icon-size-sm, 0.875rem );
+        }
+
+        &.k-icon-lg > svg {
+            width: var( --kendo-icon-size-lg, 1.25rem );
+            height: var( --kendo-icon-size-lg, 1.25rem );
+        }
+
+        &.k-icon-xl > svg {
+            width: var( --kendo-icon-size-xl, 1.5rem );
+            height: var( --kendo-icon-size-xl, 1.5rem );
+        }
+
+        &.k-icon-xxl > svg {
+            width: var( --kendo-icon-size-xxl, 2rem );
+            height: var( --kendo-icon-size-xxl, 2rem );
+        }
+
+        &.k-icon-xxxl > svg {
+            width: var( --kendo-icon-size-xxl, 3rem );
+            height: var( --kendo-icon-size-xxl, 3rem );
+        }
+    }
+
 
     // // Clear value
     .k-clear-value {
