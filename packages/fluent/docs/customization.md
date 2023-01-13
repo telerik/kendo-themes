@@ -5165,7 +5165,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`var( --kendo-subtle-text, inherit )`
+`var( --kendo-disabled-text, inherit )`
 
 </td>
 <td>
