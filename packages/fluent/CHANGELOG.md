@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/telerik/kendo-themes/compare/v6.0.0...v6.0.1) (2023-01-13)
+
+
+### Bug Fixes
+
+* **calendar:** update other month color to match design ([b0cdc98](https://github.com/telerik/kendo-themes/commit/b0cdc98e4003e6d01af631efa116dd127ba02b86))
+
+
+
+
+
 # [6.0.0](https://github.com/telerik/kendo-themes/compare/v5.12.0...v6.0.0) (2023-01-11)
 
 
