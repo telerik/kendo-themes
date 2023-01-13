@@ -192,7 +192,7 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-drag-cell k-header"></th>
+                                        <th className="k-table-th k-drag-cell k-header"></th>
                                         <th className="k-table-th k-header">
                                             <span className="k-cell-inner">
                                                 <span className="k-link">
@@ -221,12 +221,12 @@ root.render(
                             </colgroup>
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row k-master-row">
-                                    <td className="k-drag-cell"><Icon name="reorder" /></td>
+                                    <td className="k-table-td k-drag-cell"><Icon name="reorder" /></td>
                                     <td className="k-table-td">Alfreds Futterkiste</td>
                                     <td className="k-table-td">Germany</td>
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-master-row">
-                                    <td className="k-drag-cell"><Icon name="reorder" /></td>
+                                    <td className="k-table-td k-drag-cell"><Icon name="reorder" /></td>
                                     <td className="k-table-td">Ana Trujillo Emparedados y helados</td>
                                     <td className="k-table-td">Mexico</td>
                                 </tr>
