@@ -204,7 +204,6 @@ root.render(
                                 <col />
                             </colgroup>
                             <thead className="k-table-thead">
-                                <tr className="k-table-row"></tr>
                                 <tr className="k-table-row">
                                     <th className="k-table-th k-header" colSpan={1}>
                                         <Checkbox/>
