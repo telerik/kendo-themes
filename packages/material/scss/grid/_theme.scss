@@ -161,15 +161,18 @@
 
         .k-table-thead > .k-table-row:not(:only-child) > .k-table-th {
             &.k-grid-header-sticky {
-                border-right-color: $kendo-grid-sticky-header-border;
-                border-left-color: $kendo-grid-sticky-header-border;
+                border-inline-color: $kendo-grid-sticky-header-border;
             }
         }
 
-    }
+        .k-table-thead > .k-table-row:not(:only-child) > .k-table-th {
+            border-inline-start-color: $kendo-grid-border;
+        }
 
-    .k-table-thead.k-grid-header > .k-table-row:not(:only-child) > .k-table-th {
-        border-inline-start-color: $kendo-grid-border;
+        .k-grid-header-locked .k-table-thead .k-table-row .k-table-th {
+            border-inline-color: $kendo-grid-sticky-header-border;
+        }
+
     }
 
     .k-group-footer {
