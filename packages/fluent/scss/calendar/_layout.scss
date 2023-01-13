@@ -428,6 +428,11 @@
                 inset: 0px;
                 border-style: solid;
             }
+
+            &:hover .k-link,
+            &.k-hover .k-link {
+                border-radius: 0;
+            }
         }
 
         .k-range-mid::before {
