@@ -35,7 +35,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`1rem`
+`16px`
 
 </td>
 </tr>
@@ -53,7 +53,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`1rem`
+`16px`
 
 </td>
 </tr>
@@ -63,7 +63,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-icon-size-lg</td>
-    <td>Number</td>
+    <td>Calculation</td>
 <td>
 
 `1.25rem`
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`1.25rem`
+`calc( 16px * 1.25 )`
 
 </td>
 </tr>
@@ -89,7 +89,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`0.25rem`
+`0.5rem`
 
 </td>
 </tr>
