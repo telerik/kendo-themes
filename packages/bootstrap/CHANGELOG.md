@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/telerik/kendo-themes/compare/v6.0.1...v6.0.2) (2023-01-16)
+
+
+### Bug Fixes
+
+* **checkbox:** override inherited border radius from bootstrap ([782fe27](https://github.com/telerik/kendo-themes/commit/782fe27275cb603dcfab08177c8eefae0bed3766))
+
+
+
+
+
 ## [6.0.1](https://github.com/telerik/kendo-themes/compare/v6.0.0...v6.0.1) (2023-01-13)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap

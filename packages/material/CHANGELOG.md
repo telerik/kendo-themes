@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/telerik/kendo-themes/compare/v6.0.1...v6.0.2) (2023-01-16)
+
+
+### Bug Fixes
+
+* **grid:** multicolumn header vertical border is not visible ([f88229a](https://github.com/telerik/kendo-themes/commit/f88229a9c7989e9bb53485046f3a8020c09323c3))
+
+
+
+
+
 ## [6.0.1](https://github.com/telerik/kendo-themes/compare/v6.0.0...v6.0.1) (2023-01-13)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
