@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-font-style: k-map-get( $kendo-utils, "font-style" ) !default;
+@mixin kendo-utils--typography--font-style() {
 
-@include generate-utils( font, font-style, $kendo-utils-font-style );
+    // Font style utility classes
+    $kendo-utils-font-style: k-map-get( $kendo-utils, "font-style" ) !default;
+    @include generate-utils( font, font-style, $kendo-utils-font-style );
+
+}

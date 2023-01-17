@@ -38,12 +38,16 @@
 /// @group transform
 /// @contextType css
 
-$kendo-utils-rotate: k-map-get( $kendo-utils, "rotate" ) !default;
-
 // sass-lint:disable function-name-format
 @function __rotate( $val ) {
     @return rotate( $val );
 }
 // sass-lint:enable function-name-format
 
-@include generate-utils( rotate, transform, $kendo-utils-rotate, __rotate );
+@mixin kendo-utils--transform--rotate() {
+
+    // Rotate utility classes
+    $kendo-utils-rotate: k-map-get( $kendo-utils, "rotate" ) !default;
+    @include generate-utils( rotate, transform, $kendo-utils-rotate, __rotate );
+
+}

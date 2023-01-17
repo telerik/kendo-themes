@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-zindex: k-map-get( $kendo-utils, "zindex" ) !default;
+@mixin kendo-utils--layout--zindex() {
 
-@include generate-utils( z, z-index, $kendo-utils-zindex );
+    // Z-index utility classes
+    $kendo-utils-zindex: k-map-get( $kendo-utils, "zindex" ) !default;
+    @include generate-utils( z, z-index, $kendo-utils-zindex );
+
+}

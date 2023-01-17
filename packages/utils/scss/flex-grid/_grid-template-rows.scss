@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-grid-template-rows: k-map-get( $kendo-utils, "grid-template-rows" ) !default;
+@mixin kendo-utils--flex-grid--grid-template-rows() {
 
-@include generate-utils( grid-rows, grid-template-rows, $kendo-utils-grid-template-rows );
+    // Grid template rows utility classes
+    $kendo-utils-grid-template-rows: k-map-get( $kendo-utils, "grid-template-rows" ) !default;
+    @include generate-utils( grid-rows, grid-template-rows, $kendo-utils-grid-template-rows );
+
+}

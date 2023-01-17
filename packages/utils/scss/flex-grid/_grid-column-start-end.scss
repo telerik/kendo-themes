@@ -1,21 +1,25 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-grid-column-start: k-map-get( $kendo-utils, "grid-column-start" ) !default;
+@mixin kendo-utils--flex-grid--grid-column-start-end() {
 
-@include generate-utils( col-start, grid-column-start, $kendo-utils-grid-column-start );
-
-
-$kendo-utils-grid-column-end: k-map-get( $kendo-utils, "grid-column-end" ) !default;
-
-@include generate-utils( col-end, grid-column-end, $kendo-utils-grid-column-end );
+    // Grid column start utility classes
+    $kendo-utils-grid-column-start: k-map-get( $kendo-utils, "grid-column-start" ) !default;
+    @include generate-utils( col-start, grid-column-start, $kendo-utils-grid-column-start );
 
 
-$kendo-utils-grid-column-span: k-map-get( $kendo-utils, "grid-column-span" ) !default;
+    // Grid column end utility classes
+    $kendo-utils-grid-column-end: k-map-get( $kendo-utils, "grid-column-end" ) !default;
+    @include generate-utils( col-end, grid-column-end, $kendo-utils-grid-column-end );
 
-@include generate-utils( col-span, grid-column, $kendo-utils-grid-column-span );
+
+    // Grid column span utility classes
+    $kendo-utils-grid-column-span: k-map-get( $kendo-utils, "grid-column-span" ) !default;
+    @include generate-utils( col-span, grid-column, $kendo-utils-grid-column-span );
 
 
-// Legacy aliases
-@include generate-utils( colspan, grid-column, $kendo-utils-grid-column-span );
-.#{$kendo-prefix}colspan-all { @extend .#{$kendo-prefix}colspan-full !optional; } // sass-lint:disable-line class-name-format
-.\!#{$kendo-prefix}colspan-all { @extend .\!#{$kendo-prefix}colspan-full !optional; } // sass-lint:disable-line class-name-format
+    // Legacy aliases
+    @include generate-utils( colspan, grid-column, $kendo-utils-grid-column-span );
+    .#{$kendo-prefix}colspan-all { @extend .#{$kendo-prefix}colspan-full !optional; } // sass-lint:disable-line class-name-format
+    .\!#{$kendo-prefix}colspan-all { @extend .\!#{$kendo-prefix}colspan-full !optional; } // sass-lint:disable-line class-name-format
+
+}

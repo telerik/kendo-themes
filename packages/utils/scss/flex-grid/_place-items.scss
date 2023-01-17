@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-place-items: k-map-get( $kendo-utils, "place-items" ) !default;
+@mixin kendo-utils--flex-grid--place-items() {
 
-@include generate-utils( place-items, place-items, $kendo-utils-place-items );
+    // Place items utility classes
+    $kendo-utils-place-items: k-map-get( $kendo-utils, "place-items" ) !default;
+    @include generate-utils( place-items, place-items, $kendo-utils-place-items );
+
+}

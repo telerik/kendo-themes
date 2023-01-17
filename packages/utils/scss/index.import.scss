@@ -16,3 +16,19 @@
 // transition
 @import "./transform/index.import.scss";
 @import "./interactivity/index.import.scss";
+
+
+// Mixin for all styles
+@mixin kendo-utils() {
+    @include kendo-utils--accessibility();
+    @include kendo-utils--layout();
+    @include kendo-utils--flex-grid();
+    @include kendo-utils--spacing();
+    @include kendo-utils--sizing();
+    @include kendo-utils--typography();
+    @include kendo-utils--background();
+    @include kendo-utils--border();
+    @include kendo-utils--table();
+    @include kendo-utils--transform();
+    @include kendo-utils--interactivity();
+}

@@ -1,9 +1,13 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-text-color: k-map-get( $kendo-utils, "text-color" ) !default;
+@mixin kendo-utils--typography--text-color() {
 
-@include generate-utils( text, color, $kendo-utils-text-color );
+    // Text color utility classes
+    $kendo-utils-text-color: k-map-get( $kendo-utils, "text-color" ) !default;
+    @include generate-utils( text, color, $kendo-utils-text-color );
 
 
-// Legacy aliases
-@include generate-utils( color, color, $kendo-utils-text-color );
+    // Legacy aliases
+    @include generate-utils( color, color, $kendo-utils-text-color );
+
+}

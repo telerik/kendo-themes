@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-align-items: k-map-get( $kendo-utils, "align-items" ) !default;
+@mixin kendo-utils--flex-grid--align-items() {
 
-@include generate-utils( align-items, align-items, $kendo-utils-align-items );
+    // Align items utility classes
+    $kendo-utils-align-items: k-map-get( $kendo-utils, "align-items" ) !default;
+    @include generate-utils( align-items, align-items, $kendo-utils-align-items );
+
+}

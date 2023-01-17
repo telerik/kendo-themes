@@ -13,7 +13,10 @@
 /// @group flex-wrap
 /// @contextType css
 
-// Flex wrap utility classes
-$kendo-utils-flex-wrap: k-map-get( $kendo-utils, "flex-wrap" ) !default;
+@mixin kendo-utils--flex-grid--flex-wrap() {
 
-@include generate-utils( flex, flex-wrap, $kendo-utils-flex-wrap );
+    // Flex wrap utility classes
+    $kendo-utils-flex-wrap: k-map-get( $kendo-utils, "flex-wrap" ) !default;
+    @include generate-utils( flex, flex-wrap, $kendo-utils-flex-wrap );
+
+}

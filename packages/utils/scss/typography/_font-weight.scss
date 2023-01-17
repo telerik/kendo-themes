@@ -1,9 +1,13 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-font-weight: k-map-get( $kendo-utils, "font-weight" ) !default;
+@mixin kendo-utils--typography--font-weight() {
 
-@include generate-utils( font, font-weight, $kendo-utils-font-weight );
+    // Font weight utility classes
+    $kendo-utils-font-weight: k-map-get( $kendo-utils, "font-weight" ) !default;
+    @include generate-utils( font, font-weight, $kendo-utils-font-weight );
 
 
-// Legacy aliases
-@include generate-utils( font-weight, font-weight, $kendo-utils-font-weight );
+    // Legacy aliases
+    @include generate-utils( font-weight, font-weight, $kendo-utils-font-weight );
+
+}

@@ -18,7 +18,10 @@
 /// @group flex
 /// @contextType css
 
-// Flex utility classes
-$kendo-utils-flex: k-map-get( $kendo-utils, "flex" ) !default;
+@mixin kendo-utils--flex-grid--flex() {
 
-@include generate-utils( flex, flex, $kendo-utils-flex );
+    // Flex utility classes
+    $kendo-utils-flex: k-map-get( $kendo-utils, "flex" ) !default;
+    @include generate-utils( flex, flex, $kendo-utils-flex );
+
+}

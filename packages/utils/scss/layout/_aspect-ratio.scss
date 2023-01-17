@@ -20,10 +20,14 @@
 /// @group aspect-ratio
 /// @contextType css
 
-$kendo-utils-aspect-ratio: k-map-get( $kendo-utils, "aspect-ratio" ) !default;
+@mixin kendo-utils--layout--aspect-ratio() {
 
-@include generate-utils( ratio, aspect-ratio, $kendo-utils-aspect-ratio );
+    // Aspect ratio utility classes
+    $kendo-utils-aspect-ratio: k-map-get( $kendo-utils, "aspect-ratio" ) !default;
+    @include generate-utils( ratio, aspect-ratio, $kendo-utils-aspect-ratio );
 
 
-// Legacy aliases
-@include generate-utils( aspect-ratio, aspect-ratio, $kendo-utils-aspect-ratio );
+    // Legacy aliases
+    @include generate-utils( aspect-ratio, aspect-ratio, $kendo-utils-aspect-ratio );
+
+}

@@ -15,6 +15,10 @@
 /// @group float
 /// @contextType css
 
-$kendo-utils-float: k-map-get( $kendo-utils, "float" ) !default;
+@mixin kendo-utils--layout--float() {
 
-@include generate-utils( float, float, $kendo-utils-float );
+    // Float utility classes
+    $kendo-utils-float: k-map-get( $kendo-utils, "float" ) !default;
+    @include generate-utils( float, float, $kendo-utils-float );
+
+}

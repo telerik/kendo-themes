@@ -20,6 +20,10 @@
 /// @group float
 /// @contextType css
 
-$kendo-utils-clear: k-map-get( $kendo-utils, "clear" ) !default;
+@mixin kendo-utils--layout--clear() {
 
-@include generate-utils( clear, clear, $kendo-utils-clear );
+    // Clear utility classes
+    $kendo-utils-clear: k-map-get( $kendo-utils, "clear" ) !default;
+    @include generate-utils( clear, clear, $kendo-utils-clear );
+
+}

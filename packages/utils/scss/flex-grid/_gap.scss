@@ -1,7 +1,11 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
+@mixin kendo-utils--flex-grid--gap() {
 
-@include generate-utils( gap, gap, $kendo-utils-gap );
-@include generate-utils( gap-x, column-gap, $kendo-utils-gap );
-@include generate-utils( gap-y, row-gap, $kendo-utils-gap );
+    // Gap utility classes
+    $kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
+    @include generate-utils( gap, gap, $kendo-utils-gap );
+    @include generate-utils( gap-x, column-gap, $kendo-utils-gap );
+    @include generate-utils( gap-y, row-gap, $kendo-utils-gap );
+
+}

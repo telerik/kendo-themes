@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-align-content: k-map-get( $kendo-utils, "align-content" ) !default;
+@mixin kendo-utils--flex-grid--align-content() {
 
-@include generate-utils( align-content, align-content, $kendo-utils-align-content );
+    // Align content utility classes
+    $kendo-utils-align-content: k-map-get( $kendo-utils, "align-content" ) !default;
+    @include generate-utils( align-content, align-content, $kendo-utils-align-content );
+
+}

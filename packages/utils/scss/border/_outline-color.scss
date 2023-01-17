@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-outline-color: k-map-get( $kendo-utils, "outline-color" ) !default;
+@mixin kendo-utils--border--outline-color() {
 
-@include generate-utils( outline, outline-color, $kendo-utils-outline-color );
+    // Outline color utility classes
+    $kendo-utils-outline-color: k-map-get( $kendo-utils, "outline-color" ) !default;
+    @include generate-utils( outline, outline-color, $kendo-utils-outline-color );
+
+}

@@ -73,7 +73,10 @@
 /// @group overflow
 /// @contextType css
 
-// Overflow utility classes
-$kendo-utils-overflow: k-map-get( $kendo-utils, "overflow" ) !default;
+@mixin kendo-utils--layout--overflow() {
 
-@include generate-utils( overflow, overflow, $kendo-utils-overflow );
+    // Overflow utility classes
+    $kendo-utils-overflow: k-map-get( $kendo-utils, "overflow" ) !default;
+    @include generate-utils( overflow, overflow, $kendo-utils-overflow );
+
+}

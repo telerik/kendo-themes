@@ -13,8 +13,6 @@
 /// @group transform
 /// @contextType css
 
-$kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
-
 // sass-lint:disable function-name-format
 @function __scale( $val ) {
     @return scale( $val );
@@ -27,6 +25,12 @@ $kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
 }
 // sass-lint:enable function-name-format
 
-@include generate-utils( scale, transform, $kendo-utils-scale, __scale );
-@include generate-utils( scale-x, transform, $kendo-utils-scale, __scale-x );
-@include generate-utils( scale-y, transform, $kendo-utils-scale, __scale-y );
+@mixin kendo-utils--transform--scale() {
+
+    // Scale utility classes
+    $kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
+    @include generate-utils( scale, transform, $kendo-utils-scale, __scale );
+    @include generate-utils( scale-x, transform, $kendo-utils-scale, __scale-x );
+    @include generate-utils( scale-y, transform, $kendo-utils-scale, __scale-y );
+
+}

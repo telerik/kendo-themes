@@ -1,11 +1,16 @@
-// TODO DOCS
+// TODO: docs
+// TODO: consider visible and invisible vs visibility-visible and visibility-hidden
 
-$kendo-utils-visibility: k-map-get( $kendo-utils, "visibility" ) !default;
+@mixin kendo-utils--layout--visibility() {
 
-@include generate-utils( visibility, visibility, $kendo-utils-visibility );
+    // Visibility utility classes
+    $kendo-utils-visibility: k-map-get( $kendo-utils, "visibility" ) !default;
+    @include generate-utils( visibility, visibility, $kendo-utils-visibility );
 
-// Aliases
-.#{$kendo-prefix}visible { @extend .#{$kendo-prefix}visibility-visible !optional; }
-.\!#{$kendo-prefix}visible { @extend .\!#{$kendo-prefix}visibility-visible !optional; }
-.#{$kendo-prefix}invisible { @extend .#{$kendo-prefix}visibility-hidden !optional; }
-.\!#{$kendo-prefix}invisible { @extend .\!#{$kendo-prefix}visibility-hidden !optional; }
+    // Legacy aliases
+    .#{$kendo-prefix}visible { @extend .#{$kendo-prefix}visibility-visible !optional; }
+    .\!#{$kendo-prefix}visible { @extend .\!#{$kendo-prefix}visibility-visible !optional; }
+    .#{$kendo-prefix}invisible { @extend .#{$kendo-prefix}visibility-hidden !optional; }
+    .\!#{$kendo-prefix}invisible { @extend .\!#{$kendo-prefix}visibility-hidden !optional; }
+
+}

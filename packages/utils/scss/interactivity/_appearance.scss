@@ -8,7 +8,10 @@
 /// @group appearance
 /// @contextType css
 
-// Appearance utility classes
-$kendo-utils-appearance: k-map-get( $kendo-utils, "appearance" ) !default;
+@mixin kendo-utils--interactivity--appearance() {
 
-@include generate-utils( appearance, appearance, $kendo-utils-appearance );
+    // Appearance utility classes
+    $kendo-utils-appearance: k-map-get( $kendo-utils, "appearance" ) !default;
+    @include generate-utils( appearance, appearance, $kendo-utils-appearance );
+
+}

@@ -1,1 +1,5 @@
 @import "./_screen-readers.scss";
+
+@mixin kendo-utils--accessibility() {
+    @include kendo-utils--accessibility--screen-readers();
+}

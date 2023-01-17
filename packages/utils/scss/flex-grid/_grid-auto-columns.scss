@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-grid-auto-columns: k-map-get( $kendo-utils, "grid-auto-columns" ) !default;
+@mixin kendo-utils--flex-grid--grid-auto-columns() {
 
-@include generate-utils( grid-auto-cols, grid-auto-columns, $kendo-utils-grid-auto-columns );
+    // Grid auto columns utility classes
+    $kendo-utils-grid-auto-columns: k-map-get( $kendo-utils, "grid-auto-columns" ) !default;
+    @include generate-utils( grid-auto-cols, grid-auto-columns, $kendo-utils-grid-auto-columns );
+
+}

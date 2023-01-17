@@ -1,10 +1,24 @@
 @import "./_accent-color.scss";
 @import "./_appearance.scss";
-@import "./_cursor.scss";
 @import "./_caret-color.scss";
+@import "./_cursor.scss";
 @import "./_pointer-events.scss";
 @import "./_resize.scss";
 @import "./_scroll.scss";
 @import "./_touch-action.scss";
 @import "./_user-select.scss";
 @import "./_will-change.scss";
+
+
+@mixin kendo-utils--interactivity() {
+    @include kendo-utils--interactivity--accent-color();
+    @include kendo-utils--interactivity--appearance();
+    @include kendo-utils--interactivity--caret-color();
+    @include kendo-utils--interactivity--cursor();
+    @include kendo-utils--interactivity--pointer-events();
+    @include kendo-utils--interactivity--resize();
+    @include kendo-utils--interactivity--scroll();
+    @include kendo-utils--interactivity--touch-action();
+    @include kendo-utils--interactivity--user-select();
+    @include kendo-utils--interactivity--will-change();
+}

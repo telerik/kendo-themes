@@ -1,2 +1,8 @@
-@import "./_width.scss";
 @import "./_height.scss";
+@import "./_width.scss";
+
+
+@mixin kendo-utils--sizing() {
+    @include kendo-utils--sizing--height();
+    @include kendo-utils--sizing--width();
+}
