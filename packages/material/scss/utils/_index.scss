@@ -5,4 +5,9 @@
 
 
 // Component
-@import "@progress/kendo-theme-utils/scss/all.scss";
+@import "@progress/kendo-theme-utils/scss/index.import.scss";
+
+
+@include exports("kendo-utils") {
+    @include kendo-utils();
+}
