@@ -85,7 +85,7 @@
         .k-button-#{$size}.k-icon-button {
             padding: $_padding-y;
 
-            > .k-button-icon {
+            .k-button-icon {
                 min-width: calc( #{$_font-size} * #{$_line-height} );
                 min-height: calc( #{$_font-size} * #{$_line-height} );
                 display: inline-flex;

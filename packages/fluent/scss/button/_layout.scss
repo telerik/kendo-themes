@@ -91,7 +91,7 @@
             --INTERNAL--kendo-button-padding-x: var( --kendo-icon-button-#{$size}-padding-y, #{$_padding-y} );
             --INTERNAL--kendo-button-padding-y: var( --kendo-icon-button-#{$size}-padding-y, #{$_padding-y} );
 
-            > .k-button-icon {
+            .k-button-icon {
                 min-width: calc( #{$_font-size} * #{$_line-height} );
                 min-height: calc( #{$_font-size} * #{$_line-height} );
                 display: inline-flex;
