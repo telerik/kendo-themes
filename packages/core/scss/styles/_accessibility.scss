@@ -1,10 +1,14 @@
-/// This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
-/// @name .k-sr-only
-/// @group accessibility
-.k-sr-only {
-    position: absolute;
-    left: -1px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+@mixin kendo-core--styles--accessibility() {
+
+    /// This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
+    /// @name .k-sr-only
+    /// @group accessibility
+    .k-sr-only {
+        position: absolute;
+        left: -1px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
 }
