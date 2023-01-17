@@ -368,7 +368,17 @@ $kendo-utils: (
         max: max-content,
         fr: minmax( 0, 1fr ),
     ),
-    "gap": $kendo-spacing,
+    "gap": k-map-merge( $kendo-spacing, (
+        // sass-lint:disable-block indentation
+        // TODO: remove this extension once we fix docs
+        xs: k-map-get( $kendo-spacing, 1 ),
+        sm: k-map-get( $kendo-spacing, 2 ),
+        md: k-map-get( $kendo-spacing, 3 ),
+        lg: k-map-get( $kendo-spacing, 4 ),
+        xl: k-map-get( $kendo-spacing, 6 ),
+        thin: k-map-get( $kendo-spacing, 0.5 ), // sass-lint:disable-line leading-zero
+        hair: k-map-get( $kendo-spacing, 1px )
+    )),
     "align-content": (
         normal: normal,
         stretch: stretch,
@@ -446,8 +456,28 @@ $kendo-utils: (
     ),
 
     // Spacing
-    "margin": $kendo-spacing,
-    "padding": $kendo-spacing,
+    "margin": k-map-merge( $kendo-spacing, (
+        // sass-lint:disable-block indentation
+        // TODO: remove this extension once we fix docs
+        xs: k-map-get( $kendo-spacing, 1 ),
+        sm: k-map-get( $kendo-spacing, 2 ),
+        md: k-map-get( $kendo-spacing, 3 ),
+        lg: k-map-get( $kendo-spacing, 4 ),
+        xl: k-map-get( $kendo-spacing, 6 ),
+        thin: k-map-get( $kendo-spacing, 0.5 ), // sass-lint:disable-line leading-zero
+        hair: k-map-get( $kendo-spacing, 1px )
+    )),
+    "padding": k-map-merge( $kendo-spacing, (
+        // sass-lint:disable-block indentation
+        // TODO: remove this extension once we fix docs
+        xs: k-map-get( $kendo-spacing, 1 ),
+        sm: k-map-get( $kendo-spacing, 2 ),
+        md: k-map-get( $kendo-spacing, 3 ),
+        lg: k-map-get( $kendo-spacing, 4 ),
+        xl: k-map-get( $kendo-spacing, 6 ),
+        thin: k-map-get( $kendo-spacing, 0.5 ), // sass-lint:disable-line leading-zero
+        hair: k-map-get( $kendo-spacing, 1px )
+    )),
     "space-between": (),
 
     // Sizing
