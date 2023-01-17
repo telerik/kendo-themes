@@ -1,7 +1,9 @@
-@use "./_variables.scss" as *;
+@use "../core/_variables.scss" as *;
 
 @use "@progress/kendo-theme-utils/scss/all.scss" with (
-    $kendo-utils-border-radius: $kendo-utils-border-radius
+    $kendo-spacing: $kendo-spacing,
+    $kendo-border-radii: $kendo-border-radii,
+    $kendo-font-sizes: $kendo-font-sizes
 );
 
 @mixin kendo-utils--layout() {}
