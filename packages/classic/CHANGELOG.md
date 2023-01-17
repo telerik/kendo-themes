@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.3](https://github.com/telerik/kendo-themes/compare/v6.0.2...v6.0.3) (2023-01-17)
+
+
+### Bug Fixes
+
+* explicitly invoke utils mixin ([e9a4976](https://github.com/telerik/kendo-themes/commit/e9a4976ce61e91bca3ed9af7972a97a1bd52b53d))
+* include core and icon styles with explicit mixin invokation ([b2e32de](https://github.com/telerik/kendo-themes/commit/b2e32ded41a0f80aa69907ce91ac1ed3859a9c8f))
+
+
+
+
+
 ## [6.0.2](https://github.com/telerik/kendo-themes/compare/v6.0.1...v6.0.2) (2023-01-16)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic

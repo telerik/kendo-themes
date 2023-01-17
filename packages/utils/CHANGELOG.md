@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.3](https://github.com/telerik/kendo-themes/compare/v6.0.2...v6.0.3) (2023-01-17)
+
+
+### Bug Fixes
+
+* organize utils to generate classes upon explicit mixin invocation ([27cd43f](https://github.com/telerik/kendo-themes/commit/27cd43f13017d708bc44af726a07dd24c9899b26))
+* **utils:** extend margin/padding/gap maps with backward compatible values ([520103e](https://github.com/telerik/kendo-themes/commit/520103e4ced0c843596622b8dd07c60bc9844fe5))
+* **utils:** set the font-size property in $kendo-utils to $kendo-font-sizes ([dc1377c](https://github.com/telerik/kendo-themes/commit/dc1377c5d3d71ee09536fa02599a910ae437ec4b))
+
+
+
+
+
 ## [6.0.2](https://github.com/telerik/kendo-themes/compare/v6.0.1...v6.0.2) (2023-01-16)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils
