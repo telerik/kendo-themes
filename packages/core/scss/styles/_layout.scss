@@ -1,91 +1,95 @@
-// Basic layout
-.k-hstack {
-    display: flex;
-    flex-flow: row nowrap;
+@mixin kendo-core--styles--layout() {
+
+    // Basic layout
+    .k-hstack {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .k-vstack {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    // Spacer
+    .k-spacer {
+        flex: 1 1 auto;
+    }
+    .k-spacer-sized {
+        flex: none;
+    }
+
+
+    // Float wrap
+    .k-float-wrap::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+
+    // Stack layout
+    .k-stack-layout {}
+
+
+    // Flex layout
+    .k-flex-layout {
+        display: flex;
+    }
+
+
+    // Grid layout
+    .k-grid-layout {
+        display: grid;
+    }
+
+
+    // Separator
+    .k-separator {
+        width: auto;
+        height: 0;
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: inherit;
+        display: block;
+        flex-grow: 0 !important; // sass-lint:disable-line no-important
+        flex-shrink: 0 !important; // sass-lint:disable-line no-important
+        align-self: stretch;
+    }
+    .k-separator-horizontal,
+    .k-vstack > .k-separator {
+        width: auto;
+        height: 0;
+        border-width: 1px 0 0;
+    }
+    .k-separator-vertical,
+    .k-hstack > .k-separator {
+        width: 0;
+        height: auto;
+        border-width: 0 0 0 1px;
+    }
+
+    hr.k-separator {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    // Hidden
+    .k-hidden {
+        display: none !important; // sass-lint:disable-line no-important
+    }
+
+
+    // RTL
+    .k-rtl {
+        direction: rtl;
+    }
+
+
+    // Legacy aliases
+    .k-hbox { @extend .k-hstack !optional; }
+    .k-vbox { @extend .k-vstack !optional; }
+    .k-floatwrap { @extend .k-float-wrap !optional; }
+    .k-flex { @extend .k-spacer !optional; }
+
 }
-.k-vstack {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-// Spacer
-.k-spacer {
-    flex: 1 1 auto;
-}
-.k-spacer-sized {
-    flex: none;
-}
-
-
-// Float wrap
-.k-float-wrap::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-
-// Stack layout
-.k-stack-layout {}
-
-
-// Flex layout
-.k-flex-layout {
-    display: flex;
-}
-
-
-// Grid layout
-.k-grid-layout {
-    display: grid;
-}
-
-
-// Separator
-.k-separator {
-    width: auto;
-    height: 0;
-    border-width: 1px 0 0;
-    border-style: solid;
-    border-color: inherit;
-    display: block;
-    flex-grow: 0 !important; // sass-lint:disable-line no-important
-    flex-shrink: 0 !important; // sass-lint:disable-line no-important
-    align-self: stretch;
-}
-.k-separator-horizontal,
-.k-vstack > .k-separator {
-    width: auto;
-    height: 0;
-    border-width: 1px 0 0;
-}
-.k-separator-vertical,
-.k-hstack > .k-separator {
-    width: 0;
-    height: auto;
-    border-width: 0 0 0 1px;
-}
-
-hr.k-separator {
-    margin: 0;
-    padding: 0;
-}
-
-
-// Hidden
-.k-hidden {
-    display: none !important; // sass-lint:disable-line no-important
-}
-
-
-// RTL
-.k-rtl {
-    direction: rtl;
-}
-
-
-// Legacy aliases
-.k-hbox { @extend .k-hstack !optional; }
-.k-vbox { @extend .k-vstack !optional; }
-.k-floatwrap { @extend .k-float-wrap !optional; }
-.k-flex { @extend .k-spacer !optional; }

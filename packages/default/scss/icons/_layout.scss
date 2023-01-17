@@ -5,6 +5,8 @@ $ki-icon-size: $kendo-icon-size;
 
 @include exports( "icons/layout" ) {
 
+    @include kendo-icon-styles();
+
     // Icon wrap
     .k-icon-wrap {
         flex: none;

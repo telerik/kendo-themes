@@ -1,4 +1,8 @@
-.k-theme-test-class,
-.k-common-test-class {
-    opacity: 0;
+@mixin kendo-core--styles--asp-fallback() {
+
+    .k-theme-test-class,
+    .k-common-test-class {
+        opacity: 0;
+    }
+
 }
