@@ -1,9 +1,12 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-font-size: k-map-get( $kendo-utils, "font-size" ) !default;
+@mixin kendo-utils--typography--font-size() {
 
-@include generate-utils( font-size, font-size, $kendo-utils-font-size );
+    // Font size utility classes
+    $kendo-utils-font-size: k-map-get( $kendo-utils, "font-size" ) !default;
+    @include generate-utils( font-size, font-size, $kendo-utils-font-size );
 
+    // Legacy aliases
+    @include generate-utils( fs, font-size, $kendo-utils-font-size );
 
-// Legacy aliases
-@include generate-utils( fs, font-size, $kendo-utils-font-size );
+}

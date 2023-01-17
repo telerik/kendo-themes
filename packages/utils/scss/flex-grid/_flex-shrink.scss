@@ -8,8 +8,11 @@
 /// @group flex-shrink
 /// @contextType css
 
-// Flex shrink utility classes
-$kendo-utils-flex-shrink: k-map-get( $kendo-utils, "flex-shrink" ) !default;
+@mixin kendo-utils--flex-grid--flex-shrink() {
 
-@include generate-utils( shrink, flex-shrink, $kendo-utils-flex-shrink );
-@include generate-utils( flex-shrink, flex-shrink, $kendo-utils-flex-shrink );
+    // Flex shrink utility classes
+    $kendo-utils-flex-shrink: k-map-get( $kendo-utils, "flex-shrink" ) !default;
+    @include generate-utils( shrink, flex-shrink, $kendo-utils-flex-shrink );
+    @include generate-utils( flex-shrink, flex-shrink, $kendo-utils-flex-shrink );
+
+}

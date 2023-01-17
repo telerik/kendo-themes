@@ -1,15 +1,17 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-height: k-map-get( $kendo-utils, "height" ) !default;
+@mixin kendo-utils--sizing--height() {
 
-@include generate-utils( h, height, $kendo-utils-height );
+    // Height utility classes
+    $kendo-utils-height: k-map-get( $kendo-utils, "height" ) !default;
+    @include generate-utils( h, height, $kendo-utils-height );
 
+    // Min height utility classes
+    $kendo-utils-min-height: k-map-get( $kendo-utils, "min-height" ) !default;
+    @include generate-utils( min-h, min-height, $kendo-utils-min-height );
 
-$kendo-utils-min-height: k-map-get( $kendo-utils, "min-height" ) !default;
+    // Max height utility classes
+    $kendo-utils-max-height: k-map-get( $kendo-utils, "max-height" ) !default;
+    @include generate-utils( max-h, max-height, $kendo-utils-max-height );
 
-@include generate-utils( min-h, min-height, $kendo-utils-min-height );
-
-
-$kendo-utils-max-height: k-map-get( $kendo-utils, "max-height" ) !default;
-
-@include generate-utils( max-h, max-height, $kendo-utils-max-height );
+}

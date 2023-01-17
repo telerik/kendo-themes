@@ -15,7 +15,10 @@
 /// @group text-transform
 /// @contextType css
 
-// Text transform utility classes
-$kendo-utils-text-transform: k-map-get( $kendo-utils, "text-transform" ) !default;
+@mixin kendo-utils--typography--text-transform() {
 
-@include generate-utils( text, text-transform, $kendo-utils-text-transform );
+    // Text transform utility classes
+    $kendo-utils-text-transform: k-map-get( $kendo-utils, "text-transform" ) !default;
+    @include generate-utils( text, text-transform, $kendo-utils-text-transform );
+
+}

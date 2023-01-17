@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-justify-self: k-map-get( $kendo-utils, "justify-self" ) !default;
+@mixin kendo-utils--flex-grid--justify-self() {
 
-@include generate-utils( justify-self, justify-self, $kendo-utils-justify-self );
+    // Justify self utility classes
+    $kendo-utils-justify-self: k-map-get( $kendo-utils, "justify-self" ) !default;
+    @include generate-utils( justify-self, justify-self, $kendo-utils-justify-self );
+
+}

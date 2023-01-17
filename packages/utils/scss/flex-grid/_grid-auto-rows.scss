@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-grid-auto-rows: k-map-get( $kendo-utils, "grid-auto-rows" ) !default;
+@mixin kendo-utils--flex-grid--grid-auto-rows() {
 
-@include generate-utils( grid-auto-rows, grid-auto-rows, $kendo-utils-grid-auto-rows );
+    // Grid auto rows utility classes
+    $kendo-utils-grid-auto-rows: k-map-get( $kendo-utils, "grid-auto-rows" ) !default;
+    @include generate-utils( grid-auto-rows, grid-auto-rows, $kendo-utils-grid-auto-rows );
+
+}

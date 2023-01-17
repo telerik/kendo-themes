@@ -1,2 +1,8 @@
 @import "./_border-collapse.scss";
 @import "./_table-layout.scss";
+
+
+@mixin kendo-utils--table() {
+    @include kendo-utils--table--border-collapse();
+    @include kendo-utils--table--table-layout();
+}

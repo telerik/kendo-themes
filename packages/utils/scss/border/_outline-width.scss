@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-outline-width: k-map-get( $kendo-utils, "outline-width" ) !default;
+@mixin kendo-utils--border--outline-width() {
 
-@include generate-utils( outline, outline-width, $kendo-utils-outline-width );
+    // Outline width utility classes
+    $kendo-utils-outline-width: k-map-get( $kendo-utils, "outline-width" ) !default;
+    @include generate-utils( outline, outline-width, $kendo-utils-outline-width );
+
+}

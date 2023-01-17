@@ -1,6 +1,4 @@
-// TODO DOCS
-
-$kendo-utils-skew: k-map-get( $kendo-utils, "skew" ) !default;
+// TODO: docs
 
 // sass-lint:disable function-name-format
 @function __skew-x( $val ) {
@@ -11,5 +9,11 @@ $kendo-utils-skew: k-map-get( $kendo-utils, "skew" ) !default;
 }
 // sass-lint:enable function-name-format
 
-@include generate-utils( skew-x, transform, $kendo-utils-skew, __skew-x );
-@include generate-utils( skew-y, transform, $kendo-utils-skew, __skew-y );
+@mixin kendo-utils--transform--skew() {
+
+    // Transform skew utility classes
+    $kendo-utils-skew: k-map-get( $kendo-utils, "skew" ) !default;
+    @include generate-utils( skew-x, transform, $kendo-utils-skew, __skew-x );
+    @include generate-utils( skew-y, transform, $kendo-utils-skew, __skew-y );
+
+}

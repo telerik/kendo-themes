@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-caret-color: k-map-get( $kendo-utils, "caret-color" ) !default;
+@mixin kendo-utils--interactivity--caret-color() {
 
-@include generate-utils( caret, caret-color, $kendo-utils-caret-color );
+    // Caret color utility classes
+    $kendo-utils-caret-color: k-map-get( $kendo-utils, "caret-color" ) !default;
+    @include generate-utils( caret, caret-color, $kendo-utils-caret-color );
+
+}

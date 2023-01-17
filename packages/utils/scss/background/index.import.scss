@@ -1,1 +1,6 @@
 @import "./_background-color.scss";
+
+
+@mixin kendo-utils--background() {
+    @include kendo-utils--background--background-color();
+}

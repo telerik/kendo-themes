@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-align-self: k-map-get( $kendo-utils, "align-self" ) !default;
+@mixin kendo-utils--flex-grid--align-self() {
 
-@include generate-utils( align-self, align-self, $kendo-utils-align-self );
+    // Align self utility classes
+    $kendo-utils-align-self: k-map-get( $kendo-utils, "align-self" ) !default;
+    @include generate-utils( align-self, align-self, $kendo-utils-align-self );
+
+}

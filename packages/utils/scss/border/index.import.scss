@@ -1,8 +1,20 @@
-@import "./_border-width.scss";
-@import "./_border-style.scss";
 @import "./_border-color.scss";
 @import "./_border-radius.scss";
-@import "./_outline-width.scss";
-@import "./_outline-style.scss";
+@import "./_border-style.scss";
+@import "./_border-width.scss";
 @import "./_outline-color.scss";
 @import "./_outline-offset.scss";
+@import "./_outline-style.scss";
+@import "./_outline-width.scss";
+
+
+@mixin kendo-utils--border() {
+    @include kendo-utils--border--border-color();
+    @include kendo-utils--border--border-radius();
+    @include kendo-utils--border--border-style();
+    @include kendo-utils--border--border-width();
+    @include kendo-utils--border--outline-color();
+    @include kendo-utils--border--outline-offset();
+    @include kendo-utils--border--outline-style();
+    @include kendo-utils--border--outline-width();
+}

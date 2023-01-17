@@ -1,11 +1,15 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-border-style: k-map-get( $kendo-utils, "border-style" ) !default;
+@mixin kendo-utils--border--border-style() {
 
-@include generate-utils( border, border-style, $kendo-utils-border-style );
-@include generate-utils( border-t, border-top-style, $kendo-utils-border-style );
-@include generate-utils( border-r, border-right-style, $kendo-utils-border-style );
-@include generate-utils( border-b, border-bottom-style, $kendo-utils-border-style );
-@include generate-utils( border-l, border-left-style, $kendo-utils-border-style );
-@include generate-utils( border-x, border-inline-style, $kendo-utils-border-style );
-@include generate-utils( border-y, border-block-style, $kendo-utils-border-style );
+    // Border style utility classes
+    $kendo-utils-border-style: k-map-get( $kendo-utils, "border-style" ) !default;
+    @include generate-utils( border, border-style, $kendo-utils-border-style );
+    @include generate-utils( border-t, border-top-style, $kendo-utils-border-style );
+    @include generate-utils( border-r, border-right-style, $kendo-utils-border-style );
+    @include generate-utils( border-b, border-bottom-style, $kendo-utils-border-style );
+    @include generate-utils( border-l, border-left-style, $kendo-utils-border-style );
+    @include generate-utils( border-x, border-inline-style, $kendo-utils-border-style );
+    @include generate-utils( border-y, border-block-style, $kendo-utils-border-style );
+
+}

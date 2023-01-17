@@ -43,19 +43,6 @@
 /// @group transform
 /// @contextType css
 
-$kendo-utils-translate: k-map-get( $kendo-utils, "translate" ) !default;
-$kendo-utils-translate-xy: (
-    "0": ( 0, 0 ),
-    "0-50": ( 0, 50% ),
-    "0-100": ( 0, 100% ),
-    "50-0": ( 50%, 0 ),
-    "50-50": ( 50%, 50% ),
-    "50-100": ( 50%, 100% ),
-    "100-0": ( 100%, 0 ),
-    "100-50": ( 100%, 50% ),
-    "100-100": ( 100%, 100% )
-) !default;
-
 // sass-lint:disable function-name-format
 @function __translate( $val ) {
     @return translate( $val );
@@ -68,6 +55,23 @@ $kendo-utils-translate-xy: (
 }
 // sass-lint:enable function-name-format
 
-@include generate-utils( translate, transform, $kendo-utils-translate-xy, __translate );
-@include generate-utils( translate-x, transform, $kendo-utils-translate, __translate-x );
-@include generate-utils( translate-y, transform, $kendo-utils-translate, __translate-y );
+@mixin kendo-utils--transform--translate() {
+
+    // Translate utility classes
+    $kendo-utils-translate: k-map-get( $kendo-utils, "translate" ) !default;
+    $kendo-utils-translate-xy: (
+        "0": ( 0, 0 ),
+        "0-50": ( 0, 50% ),
+        "0-100": ( 0, 100% ),
+        "50-0": ( 50%, 0 ),
+        "50-50": ( 50%, 50% ),
+        "50-100": ( 50%, 100% ),
+        "100-0": ( 100%, 0 ),
+        "100-50": ( 100%, 50% ),
+        "100-100": ( 100%, 100% )
+    ) !default;
+    @include generate-utils( translate, transform, $kendo-utils-translate-xy, __translate );
+    @include generate-utils( translate-x, transform, $kendo-utils-translate, __translate-x );
+    @include generate-utils( translate-y, transform, $kendo-utils-translate, __translate-y );
+
+}

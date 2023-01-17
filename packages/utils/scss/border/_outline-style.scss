@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-outline-style: k-map-get( $kendo-utils, "outline-style" ) !default;
+@mixin kendo-utils--border--outline-style() {
 
-@include generate-utils( outline, outline-style, $kendo-utils-outline-style );
+    // Outline style utility classes
+    $kendo-utils-outline-style: k-map-get( $kendo-utils, "outline-style" ) !default;
+    @include generate-utils( outline, outline-style, $kendo-utils-outline-style );
+
+}

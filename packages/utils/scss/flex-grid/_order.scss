@@ -18,6 +18,10 @@
 /// @group order
 /// @contextType css
 
-$kendo-utils-order: k-map-get( $kendo-utils, "order" ) !default;
+@mixin kendo-utils--flex-grid--order() {
 
-@include generate-utils( order, order, $kendo-utils-order );
+    // Order utility classes
+    $kendo-utils-order: k-map-get( $kendo-utils, "order" ) !default;
+    @include generate-utils( order, order, $kendo-utils-order );
+
+}

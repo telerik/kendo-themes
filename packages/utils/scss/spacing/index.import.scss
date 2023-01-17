@@ -1,3 +1,10 @@
 @import "./_margin.scss";
 @import "./_padding.scss";
 @import "./_space-between.scss";
+
+
+@mixin kendo-utils--spacing() {
+    @include kendo-utils--spacing--margin();
+    @include kendo-utils--spacing--padding();
+    @include kendo-utils--spacing--space-between();
+}

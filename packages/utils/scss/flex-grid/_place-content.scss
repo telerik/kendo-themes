@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-place-content: k-map-get( $kendo-utils, "place-content" ) !default;
+@mixin kendo-utils--flex-grid--place-content() {
 
-@include generate-utils( place-content, place-content, $kendo-utils-place-content );
+    // Place content utility classes
+    $kendo-utils-place-content: k-map-get( $kendo-utils, "place-content" ) !default;
+    @include generate-utils( place-content, place-content, $kendo-utils-place-content );
+
+}

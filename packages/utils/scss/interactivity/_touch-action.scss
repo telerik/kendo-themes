@@ -1,4 +1,4 @@
-// TODO DOCS
+// TODO: docs
 
 /// This is equivalent to `touch-action: none;`. Disable browser handling of all panning and zooming gestures.
 /// @name .k-touch-action-none
@@ -10,7 +10,10 @@
 /// @group touch-action
 /// @contextType css
 
-// Touch-action utility classes
-$kendo-utils-touch-action: k-map-get( $kendo-utils, "touch-action" ) !default;
+@mixin kendo-utils--interactivity--touch-action() {
 
-@include generate-utils( touch-action, touch-action, $kendo-utils-touch-action );
+    // Touch-action utility classes
+    $kendo-utils-touch-action: k-map-get( $kendo-utils, "touch-action" ) !default;
+    @include generate-utils( touch-action, touch-action, $kendo-utils-touch-action );
+
+}

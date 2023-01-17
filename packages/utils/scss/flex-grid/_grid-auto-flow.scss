@@ -1,5 +1,9 @@
-// TODO DOCS
+// TODO: docs
 
-$kendo-utils-grid-auto-flow: k-map-get( $kendo-utils, "grid-auto-flow" ) !default;
+@mixin kendo-utils--flex-grid--grid-auto-flow() {
 
-@include generate-utils( grid-flow, grid-auto-flow, $kendo-utils-grid-auto-flow );
+    // Grid auto flow utility classes
+    $kendo-utils-grid-auto-flow: k-map-get( $kendo-utils, "grid-auto-flow" ) !default;
+    @include generate-utils( grid-flow, grid-auto-flow, $kendo-utils-grid-auto-flow );
+
+}

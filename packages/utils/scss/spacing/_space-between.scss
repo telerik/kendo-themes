@@ -1,0 +1,18 @@
+// TODO: docs
+
+@mixin kendo-utils--spacing--space-between() {
+
+    // Space between utility classes
+    $kendo-utils-space-between: k-map-get( $kendo-utils, "space-between" ) !default;
+    @each $key, $value in $kendo-utils-space-between {
+        $_key: k-escape-class-name( $key );
+
+        .#{$kendo-prefix}space-x-#{$_key} > * + * {
+            margin-inline-start: $value;
+        }
+        .#{$kendo-prefix}space-y-#{$_key} > * + * {
+            margin-block-start: $value;
+        }
+    }
+
+}
