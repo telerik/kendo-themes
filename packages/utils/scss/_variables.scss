@@ -496,7 +496,7 @@ $kendo-utils: (
 
     // Typography
     "font-family": (),
-    "font-size": (),
+    "font-size": $kendo-font-sizes,
     "font-smoothing": (),
     "font-style": (
         italic: italic,
