@@ -5610,6 +5610,60 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the range selection in the calendar.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-calendar-start-range-hover-shadow</td>
+    <td></td>
+<td>
+
+`inset 1px -1px 0 0 get-theme-color-var( neutral-130 ), inset 0 1px 0 0 get-theme-color-var( neutral-130 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover shadow of the start range selection in the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-mid-range-hover-shadow</td>
+    <td></td>
+<td>
+
+`inset 0 -1px 0 0 get-theme-color-var( neutral-130 ), inset 0 1px 0 0 get-theme-color-var( neutral-130 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover shadow of the mid range selection in the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-end-range-hover-shadow</td>
+    <td></td>
+<td>
+
+`inset -1px -1px 0 0 get-theme-color-var( neutral-130 ), inset 0 1px 0 0 get-theme-color-var( neutral-130 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover shadow of the end range selection in the calendar.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
