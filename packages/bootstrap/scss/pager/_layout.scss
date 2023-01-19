@@ -14,12 +14,4 @@
         .k-pager-last { @include border-left-radius-only( $kendo-pager-item-border-radius ); }
     }
 
-
-    // Pager refresh
-    .k-pager-refresh {
-        @include border-radius( $kendo-pager-item-border-radius );
-        border-width: $kendo-pager-item-border-width;
-        border-style: solid;
-    }
-
 }
