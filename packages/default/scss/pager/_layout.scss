@@ -168,15 +168,9 @@
 
     // Pager refresh
     .k-pager-refresh {
-        @extend %base-pager-item;
-        margin-left: auto;
+        margin-inline-start: auto;
+        color: inherit;
         order: 10;
-
-        .k-rtl &,
-        [dir="rtl"] & {
-            margin-left: 0;
-            margin-right: auto;
-        }
     }
 
     // Responsive
