@@ -99,6 +99,13 @@ $kendo-fab-disabled-shadow: 0 6px 10px k-try-tint( rgba( black, .14 ), .5 ), 0 1
 /// The active shadow of the FAB.
 /// @group floating-action-button
 $kendo-fab-active-shadow: null !default;
+/// The outline style of the FAB.
+/// @group floating-action-button
+$kendo-fab-outline-style: solid !default;
+/// The outline width of the FAB.
+/// @group floating-action-button
+$kendo-fab-outline-width: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+
 
 /// The base text color of the FAB item.
 /// @group floating-action-button
@@ -129,3 +136,12 @@ $kendo-fab-item-disabled-shadow: $kendo-fab-disabled-shadow !default;
 /// The active shadow of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-active-shadow: $kendo-fab-active-shadow !default;
+/// The outline style of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-outline-style: solid !default;
+/// The outline width of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-outline-width: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+/// The outline color of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-outline-color: rgba(0, 0, 0, .08) !default;
