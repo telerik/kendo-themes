@@ -4,7 +4,7 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-fab-solid-#{$name} {
             @include box-shadow( $kendo-fab-shadow );
-            outline: $kendo-fab-border-width solid $color;
+            outline: $kendo-fab-border-width $kendo-fab-outline-style $color;
             outline-offset: -$kendo-fab-border-width;
             border-color: $color;
             color: k-contrast-color( $color );
@@ -26,8 +26,8 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-fab-solid-#{$name}:focus,
         .k-fab-solid-#{$name}.k-focus {
-            outline-style: solid;
-            outline-width: 3px;
+            outline-style: $kendo-fab-outline-style;
+            outline-width: $kendo-fab-outline-width;
             outline-color: rgba( $color, .5 );
         }
     }
@@ -71,7 +71,7 @@
             $kendo-fab-item-icon-border
         );
         @include box-shadow( $kendo-fab-item-shadow );
-        outline: $kendo-fab-border-width solid $kendo-button-bg;
+        outline: $kendo-fab-border-width $kendo-fab-item-outline-style $kendo-fab-item-outline-color;
         outline-offset: -$kendo-fab-border-width;
     }
 
@@ -79,7 +79,7 @@
     .k-fab-item:hover .k-fab-item-icon,
     .k-fab-item.k-hover .k-fab-item-icon {
         @include box-shadow( $kendo-fab-item-shadow );
-        outline: $kendo-fab-border-width solid k-color-darken( $kendo-fab-item-icon-border, 10% );
+        outline: $kendo-fab-border-width $kendo-fab-item-outline-style k-try-darken( $kendo-fab-item-icon-border, 10% );
         outline-offset: -$kendo-fab-border-width;
         border-color: k-color-darken( $kendo-fab-item-icon-border, 10% );
         color: k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 7.5% ) );
@@ -91,8 +91,8 @@
     .k-fab-item.k-focus .k-fab-item-text,
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
-        outline-style: solid;
-        outline-width: 3px;
+        outline-style: $kendo-fab-item-outline-style;
+        outline-width: $kendo-fab-item-outline-width;
         outline-color: rgba( $kendo-fab-item-icon-border, .5 );
     }
 
