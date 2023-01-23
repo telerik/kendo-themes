@@ -23,7 +23,7 @@ module.exports = {
             cwd: 'packages/fluent',
             entry: [ 'dist/!(_|variables)*.scss' ],
             api: "modern",
-            compiler: "sass-embedded"
+            compiler: "sass"
         }
     ]
 };
