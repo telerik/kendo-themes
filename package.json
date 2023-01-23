@@ -25,7 +25,7 @@
     "lint-staged": "^13.0.3",
     "node-sass": "^7.0.1",
     "nunjucks": "^3.2.3",
-    "pastshots": "^1.6.1",
+    "pastshots": "^1.6.2",
     "sass": "^1.54.9",
     "sass-build": "^1.1.2",
     "sass-embedded": "^1.54.9",
