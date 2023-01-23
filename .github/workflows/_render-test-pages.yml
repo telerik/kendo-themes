@@ -4,10 +4,10 @@ on:
   workflow_call:
     inputs:
       node-version:
-        description: 'Version of node tp use'
+        description: 'Version of node to use'
         required: false
         type: number
-        default: 14
+        default: 16
       force-render:
         description: 'Always render images, regardless of git changes'
         required: false
