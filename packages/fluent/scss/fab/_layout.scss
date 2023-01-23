@@ -58,6 +58,7 @@
         width: var( --kendo-fab-icon-width, #{$kendo-fab-icon-width} );
         height: var( --kendo-fab-icon-height, #{$kendo-fab-icon-height} );
 
+        .k-icon-wrapper-host:not(:only-child) &,
         &:not(:only-child) {
             margin-inline-end: var( --kendo-fab-icon-spacing, #{$kendo-fab-icon-spacing} );
             margin-inline-start: calc( var( --kendo-fab-icon-spacing, #{$kendo-fab-icon-spacing} ) * -1 );

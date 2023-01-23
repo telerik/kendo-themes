@@ -39,6 +39,7 @@
         width: $kendo-fab-icon-width;
         height: $kendo-fab-icon-height;
 
+        .k-icon-wrapper-host:not(:only-child) &,
         &:not(:only-child) {
             margin-right: $kendo-fab-icon-spacing;
             margin-left: -$kendo-fab-icon-spacing;
