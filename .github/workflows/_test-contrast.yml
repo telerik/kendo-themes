@@ -2,17 +2,41 @@ name: CI | A11y
 
 on:
   workflow_call:
+    inputs:
+      max-chunks:
+        required: false
+        type: number
+        default: 1
 
-concurrency:
-  group: test-contrast-${{ github.ref }}
-  cancel-in-progress: true
+# concurrency:
+#   group: test-contrast-${{ github.ref }}
+#   cancel-in-progress: true
 
 jobs:
 
-  run-checks:
-    name: Run checks
-
+  prepare:
     runs-on: ubuntu-latest
+    outputs:
+      chunk-var: ${{ steps.generate-matrix.outputs.MATRIX }}
+
+    steps:
+
+      - id: generate-matrix
+        run: |
+          MATRIX=$(echo $(seq ${{ inputs.max-chunks }}) | sed 's/ /, /g')
+          MATRIX="[ $MATRIX ]"
+
+          echo $MATRIX
+          echo "MATRIX=$MATRIX" >> $GITHUB_OUTPUT
+
+  run-checks:
+    runs-on: ubuntu-latest
+    needs: [ prepare ]
+
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.prepare.outputs.chunk-var) }}
 
     steps:
 
@@ -26,7 +50,7 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 16
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
@@ -40,20 +64,19 @@ jobs:
         run: |
           npm ci --no-optional --no-audit --no-fund
 
-      - name: Bootstrap
-        run: |
-          npm run bootstrap
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: .tmp
 
-      - name: Build test pages
-        run: |
-          npm run build:tests
+      - name: Unpack artifacts
+        run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
-      - name: Build swatches
-        run: |
-          npm run sass:swatches
-
-      - name: Test contrast
+      - name: Test contrast (${{ matrix.chunk }} of ${{ matrix.max-chunks }})
         run: xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test-contrast
+        env:
+          MAX_CHUNKS: ${{ inputs.max-chunks }}
+          CURRENT_CHUNK: ${{ matrix.chunk }}
 
       - name: Done
         run: echo "Done!"

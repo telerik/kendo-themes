@@ -27,7 +27,7 @@
     "nunjucks": "^3.2.3",
     "pastshots": "^1.6.2",
     "sass": "^1.54.9",
-    "sass-build": "^1.1.2",
+    "sass-build": "^1.1.5",
     "sass-embedded": "^1.54.9",
     "sass-lint": "^1.13.1",
     "sassdoc": "^2.7.4",

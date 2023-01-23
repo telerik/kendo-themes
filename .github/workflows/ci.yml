@@ -119,7 +119,10 @@ jobs:
 
   ci-a11y:
     name: Status check > A11y
+    needs: [ compile-themes, render-test-pages ]
     uses: ./.github/workflows/_test-contrast.yml
+    with:
+      max-chunks: 4
 
   # placeholder
   # replace placeholder with ci

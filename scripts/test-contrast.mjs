@@ -4,9 +4,16 @@ import AxeBuilder from '@axe-core/webdriverjs';
 import { createServer } from 'http-server';
 import glob from 'glob';
 
+let ENV_MAX_CHUNKS = process.env.MAX_CHUNKS || 1;
+let ENV_CURRENT_CHUNK = (process.env.CURRENT_CHUNK || 1) - 1;
+
+if (ENV_CURRENT_CHUNK > ENV_MAX_CHUNKS) {
+    throw new Error('ENV_CURRENT_CHUNK cannot be greater than ENV_MAX_CHUNKS');
+}
+
 const PORT = 18111;
 const HOST = 'localhost';
-const TESTS_PATH = './packages/html/src';
+const TESTS_PATH = './tests';
 const COMPONENT_PAGE_EXT = '.html';
 const THEME = "default";
 const SWATCH = "default-ocean-blue-a11y";
@@ -29,17 +36,17 @@ const EXCLUDED_ELEMENTS_FOCUS = [
 // Below are elements with failing text contrast ratio requirement
 const EXCLUDED_PAGES_TEXT = [
     // BottomNavigation does not cover contras requirements for the text of its items
-    `${TESTS_PATH}/bottom-nav/tests/bottom-nav-colors.html`,
+    `${TESTS_PATH}/bottom-nav/bottom-nav-colors.html`,
     // Colored chips do not cover minimum contrast requirements for text
-    `${TESTS_PATH}/chip/tests/chip-solid.html`,
+    `${TESTS_PATH}/chip/chip-solid.html`,
     // ButtonGroup test page contains customizations that break contrast
-    `${TESTS_PATH}/button-group/tests/button-group.html`,
+    `${TESTS_PATH}/button-group/button-group.html`,
     // TreeMap colors do not ensure contrast
-    `${TESTS_PATH}/treemap/tests/treemap.html`,
+    `${TESTS_PATH}/treemap/treemap.html`,
     // Loader with no panel does not cover contras requirements for its text
-    `${TESTS_PATH}/loader/tests/loader-container-overlay.html`,
-    // Loader with no panel does not cover contras requirements for its text
-    `${TESTS_PATH}/editor/tests/editor-iFrameContent.html`
+    `${TESTS_PATH}/loader/loader-container-overlay.html`,
+    // Editor iframe test page is not actionable
+    `${TESTS_PATH}/editor/editor-iFrameContent.html`
 ];
 
 let count = {
@@ -54,6 +61,21 @@ let incompleteTypes = {
     pseudo: 0,
     one: 0
 };
+
+function arrayChunks( array, chunkCount ) {
+    const result = [];
+    const chunkSize = Math.ceil(array.length / chunkCount);
+
+    if (chunkCount === 1) {
+        return [ array ];
+    }
+
+    for (let i = 0; i < array.length; i += chunkSize) {
+        result.push(array.slice(i, i + chunkSize));
+    }
+
+    return result;
+}
 
 const pathUrl = ( path ) => `http://${HOST}:${PORT}/${path.replace('./', '')}?theme=${THEME}&swatch=${SWATCH}&gradientoff=true`;
 
@@ -437,7 +459,15 @@ const getFocusReport = async(el, browser) => {
 
 const getContrastViolations = async() => {
     const files = glob.sync(`${TESTS_PATH}/**/*${COMPONENT_PAGE_EXT}`);
-    const pages = files.map(path => [ path, pathUrl(path) ]);
+    const pages = files.filter( path => (
+        // Skipped components:
+        // MediaPlayer is not WCAG compliant
+        // Barcode represents an image of black lines on white (transparent) background
+        // CircularProgressBar has a black text label element overlapping an svg with white background
+        path.indexOf('mediaplayer') === -1
+        || path.indexOf('barcode') === -1
+        || path.indexOf('circular-progressbar') === -1
+    )).map(path => [ path, pathUrl(path) ]);
 
     let violations = {};
     let incomplete = {};
@@ -452,25 +482,18 @@ const getContrastViolations = async() => {
     });
     server.listen(PORT, HOST);
 
-    for (let i = 0; i < pages.length; i++) {
-        const [ filePath, url ] = pages[i];
+    const chunks = arrayChunks( pages, ENV_MAX_CHUNKS );
+    const chunk = chunks[ENV_CURRENT_CHUNK];
 
-        // Skipped components:
-        // MediaPlayer is not WCAG compliant
-        // Barcode represents an image of black lines on white (transparent) background
-        // CircularProgressBar has a black text label element overlapping an svg with white background
-        if (filePath.indexOf('mediaplayer') > -1 ||
-                filePath.indexOf('barcode') > -1 ||
-                filePath.indexOf('circular-progressbar') > -1) {
-            continue;
-        }
+    for (let i = 0; i < chunk.length; i++) {
+        const [ filePath, url ] = chunk[i];
+
+        await browser.navigateTo(url);
+
+        // eslint-disable-next-line no-console
+        console.log(`Analyzing ${filePath}...`);
 
         if (EXCLUDED_PAGES_TEXT.indexOf(filePath) === -1) {
-            browser.navigateTo(url);
-
-            // wait for the component script to be loaded
-            await browser.wait(async() => await browser.isVisible(By.id('test-area')));
-            await browser.sleep(200);
 
             const axe = new AxeBuilder(browser.driver);
             axe.withRules([ 'color-contrast' ]);
@@ -530,18 +553,18 @@ const printViolations = (result) => {
     let aaViolatedComponents = [];
 
     Object.keys(violations).forEach((key) => {
-        const componet = key.split('/')[2];
+        const component = key.split('/')[2];
 
-        if (!violatedComponents.includes(componet)) {
-            violatedComponents.push(componet);
+        if (!violatedComponents.includes(component)) {
+            violatedComponents.push(component);
         }
     });
 
     Object.keys(aaa).forEach((key) => {
-        const componet = key.split('/')[2];
+        const component = key.split('/')[2];
 
-        if (!aaViolatedComponents.includes(componet)) {
-            aaViolatedComponents.push(componet);
+        if (!aaViolatedComponents.includes(component)) {
+            aaViolatedComponents.push(component);
         }
     });
 
