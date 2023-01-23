@@ -43,10 +43,16 @@ jobs:
         run: |
           npm run sass
 
+      - name: Build swatch for a11y tests
+        run: |
+          npm run dist:swatches
+          npx sass-build build --file packages/default/dist/default-ocean-blue-a11y.scss --outFile packages/default/dist/default-ocean-blue-a11y.css
+
       - name: Pack themes
         run: |
           tar -cf themes.tar \
             packages/default/dist/all.css \
+            packages/default/dist/default-ocean-blue-a11y.css \
             packages/bootstrap/dist/all.css \
             packages/classic/dist/all.css \
             packages/fluent/dist/all.css \
