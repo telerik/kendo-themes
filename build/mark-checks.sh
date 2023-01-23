@@ -25,7 +25,7 @@ do
     echo "Marking '$check' as successful..."
     curl -s \
         -X POST \
-        -H "Authorization: token $GH_TOKEN" \
+        -H "Authorization: Bearer $GH_TOKEN" \
         -d "{ \"state\": \"success\", \"context\": \"$check\" }" \
         "https://api.github.com/repos/telerik/kendo-themes/statuses/$COMMIT_REF"
 done
