@@ -47,17 +47,14 @@
 
 
     // Sizes
-    .k-fab-sm {
-        padding-block: $kendo-fab-sm-padding-y;
-        padding-inline: $kendo-fab-sm-padding-x;
-    }
-    .k-fab-md {
-        padding-block: $kendo-fab-padding-y;
-        padding-inline: $kendo-fab-padding-x;
-    }
-    .k-fab-lg {
-        padding-block: $kendo-fab-lg-padding-y;
-        padding-inline: $kendo-fab-lg-padding-x;
+    @each $size, $size-props in $kendo-fab-sizes {
+        $_padding-x: k-map-get( $size-props, padding-x );
+        $_padding-y: k-map-get( $size-props, padding-y );
+
+        .k-fab-#{$size} {
+            padding: $_padding-y $_padding-x;
+        }
+
     }
 
     // Items

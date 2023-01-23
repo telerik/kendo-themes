@@ -90,6 +90,23 @@ $kendo-fab-item-icon-height: $kendo-fab-item-icon-width !default;
 /// @group floating-action-button
 $kendo-fab-theme-colors: $kendo-theme-colors !default;
 
+/// Size map for the FAB.
+/// @group floating-action-button
+$kendo-fab-sizes: (
+    sm: (
+        padding-x: $kendo-fab-sm-padding-x,
+        padding-y: $kendo-fab-sm-padding-y
+    ),
+    md: (
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y
+    ),
+    lg: (
+        padding-x: $kendo-fab-lg-padding-x,
+        padding-y: $kendo-fab-lg-padding-y
+    )
+) !default;
+
 /// The base shadow of the FAB.
 /// @group floating-action-button
 $kendo-fab-shadow: 0 6px 10px rgba( black, .14 ), 0 1px 18px rgba( black, .12 ), 0 3px 5px rgba( black, .2 ) !default;
