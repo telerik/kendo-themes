@@ -6,22 +6,12 @@ const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
 );
 
-const styles = `
-    #test-area h2 {
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        margin: 0;
-    }
-`;
-
 root.render(
     <>
-        <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-2">
-            <h2>Drawer Push Mode</h2>
+        <div id="test-area" className="k-d-grid k-grid-cols-1">
+            <h2 className="k-col-start-1 k-col-end-2 k-text-center">Drawer Push Mode</h2>
+            <span>Drawer mini left</span>
             <section>
-                <h4>Drawer mini left</h4>
                 <div className="k-drawer-container k-drawer-left k-drawer-push k-drawer-mini k-drawer-expanded">
                     <div className="k-widget k-drawer">
                         <div className="k-drawer-wrapper">
@@ -60,8 +50,8 @@ root.render(
                 </div>
             </section>
 
+            <span>Drawer mini right</span>
             <section>
-                <h4> Drawer mini right</h4>
                 <div className="k-drawer-container k-drawer-right k-drawer-push k-drawer-mini k-drawer-expanded">
                     <div className="k-widget k-drawer">
                         <div className="k-drawer-wrapper">
@@ -101,8 +91,8 @@ root.render(
             </section>
 
 
+            <span>Drawer left</span>
             <section>
-                <h4>Drawer left</h4>
                 <div className="k-drawer-container k-drawer-left k-drawer-push k-drawer-expanded">
                     <div className="k-widget k-drawer">
                         <div className="k-drawer-wrapper" style={{ width: "280px" }}>
@@ -176,8 +166,8 @@ root.render(
                 </div>
             </section>
 
+            <span>Drawer right</span>
             <section>
-                <h4>Drawer right</h4>
                 <div className="k-drawer-container k-drawer-right k-drawer-push k-drawer-expanded">
                     <div className="k-widget k-drawer">
                         <div className="k-drawer-wrapper" style={{ width: "280px" }}>
