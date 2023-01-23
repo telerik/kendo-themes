@@ -38,8 +38,8 @@ root.render(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
+            <span>Appbar Sticky and Inherit ThemeColor</span>
             <section>
-                <h4>Appbar Sticky and Inherit ThemeColor</h4>
                 <div style={{ background: "#1976d2", color: "#fff" }}>
                     <Appbar positionMode={'sticky'} themeColor={'inherit'}>
                         <AppbarSection>
@@ -74,9 +74,8 @@ root.render(
                 </div>
             </section>
 
-
+            <span>Appbar Light ThemeColor</span>
             <section>
-                <h4>Appbar Light ThemeColor</h4>
                 <Appbar themeColor={'light'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -109,9 +108,8 @@ root.render(
                 </Appbar>
             </section>
 
-
+            <span>Appbar Dark ThemeColor</span>
             <section>
-                <h4>Appbar Dark ThemeColor</h4>
                 <Appbar themeColor={'dark'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -144,8 +142,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Appbar Primary ThemeColor</span>
             <section>
-                <h4>Appbar Primary ThemeColor</h4>
                 <Appbar themeColor={'primary'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -178,8 +176,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Appbar Secondary ThemeColor</span>
             <section>
-                <h4>Appbar Secondary ThemeColor</h4>
                 <Appbar themeColor={'secondary'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -212,8 +210,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Appbar Tertiary ThemeColor</span>
             <section>
-                <h4>Appbar Tertiary ThemeColor</h4>
                 <Appbar themeColor={'tertiary'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -246,8 +244,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Appbar Info ThemeColor</span>
             <section>
-                <h4>Appbar Info ThemeColor</h4>
                 <Appbar themeColor={'info'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -280,8 +278,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Appbar Success ThemeColor</span>
             <section>
-                <h4>Appbar Success ThemeColor</h4>
                 <Appbar themeColor={'success'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -314,8 +312,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Appbar Warning ThemeColor</span>
             <section>
-                <h4>Appbar Warning ThemeColor</h4>
                 <Appbar themeColor={'warning'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -348,8 +346,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Appbar Error ThemeColor</span>
             <section>
-                <h4>Appbar Error ThemeColor</h4>
                 <Appbar themeColor={'error'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -382,8 +380,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Appbar Inverse ThemeColor</span>
             <section>
-                <h4>Appbar Inverse ThemeColor</h4>
                 <Appbar themeColor={'inverse'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -416,8 +414,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>Sticky AppBar</span>
             <section>
-                <h4>Sticky AppBar</h4>
                 <Appbar themeColor={'light'} positionMode={'sticky'}>
                     <AppbarSection>
                         <Icon name="menu" />
@@ -450,8 +448,8 @@ root.render(
                 </Appbar>
             </section>
 
+            <span>RTL AppBar</span>
             <section>
-                <h4>RTL AppBar</h4>
                 <Appbar themeColor={'light'} dir="rtl">
                     <AppbarSection>
                         <Icon name="menu" />

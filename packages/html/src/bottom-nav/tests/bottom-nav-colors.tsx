@@ -23,7 +23,7 @@ root.render(
             <h2>Solid Colors</h2>
             <div className="colors k-d-grid k-grid-cols-2">
                 <section>
-                    <h4>Primary ThemeColor</h4>
+                    <span className="k-col-start-1">Primary ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-primary k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -45,7 +45,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Secondary ThemeColor</h4>
+                    <span>Secondary ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-secondary k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -67,7 +67,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Tertiary ThemeColor</h4>
+                    <span>Tertiary ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-tertiary k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -89,7 +89,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Info ThemeColor</h4>
+                    <span>Info ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-info k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -111,7 +111,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Success ThemeColor</h4>
+                    <span>Success ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-success k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -133,7 +133,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Warning ThemeColor</h4>
+                    <span>Warning ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-warning k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -155,7 +155,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Error ThemeColor</h4>
+                    <span>Error ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-error k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -177,7 +177,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Dark ThemeColor</h4>
+                    <span>Dark ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-dark k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -199,7 +199,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Light ThemeColor</h4>
+                    <span>Light ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-light k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -224,7 +224,7 @@ root.render(
             <h2>Flat Colors</h2>
             <div className="colors colors-flat k-d-grid k-grid-cols-2">
                 <section>
-                    <h4>Primary ThemeColor</h4>
+                    <span>Primary ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -246,7 +246,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Secondary ThemeColor</h4>
+                    <span>Secondary ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-secondary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -268,7 +268,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Tertiary ThemeColor</h4>
+                    <span>Tertiary ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-tertiary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -290,7 +290,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Info ThemeColor</h4>
+                    <span>Info ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-info k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -312,7 +312,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Success ThemeColor</h4>
+                    <span>Success ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-success k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -334,7 +334,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Warning ThemeColor</h4>
+                    <span>Warning ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-warning k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -356,7 +356,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Error ThemeColor</h4>
+                    <span>Error ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-error k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -378,7 +378,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Dark ThemeColor</h4>
+                    <span>Dark ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-dark k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
@@ -400,7 +400,7 @@ root.render(
                 </section>
 
                 <section>
-                    <h4>Light ThemeColor</h4>
+                    <span>Light ThemeColor</span>
                     <nav className="k-bottom-nav k-bottom-nav-light k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                         <span className="k-bottom-nav-item">
                             <Icon className="k-bottom-nav-item-icon" name="email" />

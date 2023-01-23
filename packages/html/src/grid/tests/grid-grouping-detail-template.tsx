@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <>
         <div id="test-area" className="k-d-grid">
-            <h3>Base</h3>
+            <span>Base</span>
             <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header">
                     <div className="k-grouping-drop-container">
@@ -96,7 +96,7 @@ root.render(
                     </div>
                 </div>
             </div>
-            <h3>Single Group</h3>
+            <span>Single Group</span>
             <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header">
                     <ChipList>
@@ -196,7 +196,7 @@ root.render(
                     </div>
                 </div>
             </div>
-            <h3>Two Groups</h3>
+            <span>Two Groups</span>
             <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header">
                     <ChipList>
@@ -314,7 +314,7 @@ root.render(
                     </div>
                 </div>
             </div>
-            <h3>Expanded Template</h3>
+            <span>Expanded Template</span>
             <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header">
                     <ChipList>

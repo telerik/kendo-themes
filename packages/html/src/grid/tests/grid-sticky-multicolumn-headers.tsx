@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <>
         <div id="test-area" className="k-d-grid">
-            <h3>LTR</h3>
+            <span>LTR</span>
             <div className="test-grid k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "300px", width: "800px" }}>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap k-auto-scrollable">
@@ -99,7 +99,7 @@ root.render(
                 </div>
             </div>
 
-            <h3>RTL</h3>
+            <span>RTL</span>
             <div className="k-rtl k-d-flex k-justify-content-end">
                 <div className="test-grid k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "300px", width: "800px" }}>
                     <div className="k-grid-header">
