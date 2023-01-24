@@ -15,7 +15,6 @@
     "esbuild": "^0.16.13",
     "eslint": "^8.17.0",
     "eslint-plugin-react": "^7.30.0",
-    "geckodriver": "^3.2.0",
     "glob": "^8.0.3",
     "gulp": "^4.0.2",
     "html-validate": "^7.1.1",
