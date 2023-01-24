@@ -98,6 +98,42 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-spreadsheet-view-font-size</td>
+    <td></td>
+<td>
+
+`12px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the spreadsheet view.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-view-line-height</td>
+    <td></td>
+<td>
+
+`math.div( 18, 12 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the spreadsheet view.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-spreadsheet-popup-menu-padding-x</td>
     <td></td>
 <td>

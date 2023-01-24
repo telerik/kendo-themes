@@ -250,7 +250,8 @@
     .k-spreadsheet-view {
         height: auto !important;
         border-color: inherit;
-        font-size: 12px;
+        font-size: $kendo-spreadsheet-view-font-size;
+        line-height: $kendo-spreadsheet-view-line-height;
         font-family: Arial, Verdana, Sans-serif;
         flex: 1;
         position: relative;
@@ -418,10 +419,10 @@
 
     // Cells
     .k-spreadsheet-cell {
-        padding: 1px;
+        padding-left: 2px;
+        padding-right: 2px;
         box-sizing: border-box;
         position: absolute;
-        line-height: normal;
         white-space: pre;
         overflow: hidden;
     }

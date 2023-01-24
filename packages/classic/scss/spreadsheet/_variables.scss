@@ -8,6 +8,9 @@ $kendo-spreadsheet-bg: $kendo-component-bg !default;
 $kendo-spreadsheet-text: $kendo-component-text !default;
 $kendo-spreadsheet-border: $kendo-component-border !default;
 
+$kendo-spreadsheet-view-font-size: 12px !default;
+$kendo-spreadsheet-view-line-height: k-math-div( 18, 12 ) !default;
+
 $kendo-spreadsheet-insert-image-dialog-border-style: dashed !default;
 $kendo-spreadsheet-insert-image-dialog-border-width: 2px !default;
 $kendo-spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;

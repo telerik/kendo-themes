@@ -1,5 +1,6 @@
 @use "sass:color";
 @use "sass:map";
+@use "sass:math";
 @use "../core/" as *;
 @use "../table/_variables.scss" as *;
 
@@ -15,6 +16,13 @@ $kendo-spreadsheet-font-size: var( --kendo-font-size, initial ) !default;
 /// Line height of the spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-line-height: var( --kendo-line-height, initial ) !default;
+
+/// Font size of the spreadsheet view.
+/// @group spreadsheet
+$kendo-spreadsheet-view-font-size: 12px !default;
+/// Line height of the spreadsheet view.
+/// @group spreadsheet
+$kendo-spreadsheet-view-line-height: math.div( 18, 12 ) !default;
 
 /// Horizontal padding of the spreadsheet popup menu.
 /// @group spreadsheet
