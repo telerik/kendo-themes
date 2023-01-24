@@ -9,6 +9,10 @@ $kendo-floating-label-scale: 1 !default;
 /// @group floating-label
 $kendo-floating-label-font-size: var( --kendo-font-size, inherit ) !default;
 
+/// The max-width of the floating label
+/// @group floating-label
+$kendo-floating-label-max-width: 90% !default;
+
 /// The font weight of the floating label
 /// @group floating-label
 $kendo-floating-label-font-weight: var( --kendo-font-weight-bold, inherit ) !default;

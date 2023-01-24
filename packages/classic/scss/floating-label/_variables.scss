@@ -1,6 +1,7 @@
 // Floating label
 $kendo-floating-label-scale: 1 !default;
 $kendo-floating-label-font-size: $kendo-input-font-size !default;
+$kendo-floating-label-max-width: 90% !default;
 $kendo-floating-label-line-height: $kendo-input-line-height !default;
 $kendo-floating-label-height: calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} ) !default;
 $kendo-floating-label-offset-x: calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} ) !default;
