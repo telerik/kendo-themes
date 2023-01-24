@@ -53,6 +53,7 @@ body {
 .k-loading-image::before,
 .k-loading-image::after  {
     animation: none !important;
+    transition: none !important;
 }
 
 /* Manually import Roboto font from https://fonts.googleapis.com/css?family=Roboto:300,400,500,700 */
