@@ -19,7 +19,7 @@
         }
 
         > .k-label {
-            max-width: 90%;
+            max-width: $kendo-floating-label-max-width;
             font-size: var( --kendo-floating-label-font-size, #{$kendo-floating-label-font-size} );
             font-weight: var( --kendo-floating-label-font-weight, #{$kendo-floating-label-font-weight} );
             line-height: var( --kendo-floating-label-line-height, #{$kendo-floating-label-line-height} );
