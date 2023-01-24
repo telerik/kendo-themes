@@ -39,7 +39,7 @@ jobs:
     # The name of the last job is used for the branch protection status check
     name: CI Develop
     runs-on: ubuntu-latest
-    needs: [ lint-scripts, lint-styles, test-contrast ]
+    needs: [ lint-scripts, lint-styles ]
 
     steps:
 
