@@ -11,7 +11,7 @@
     <div id="test-area" class="k-d-grid k-grid-cols-3">
         <span>jquery classic month</span>
         <span>jquery classic weeknumber</span>
-        <span></span>
+        <span>jquery classic weeknumber with selected range</span>
         <section>
             <div class="k-widget k-calendar k-calendar-md">
                 <div class="k-header k-hstack">
@@ -369,7 +369,188 @@
                 </div>
             </div>
         </section>
-        <section></section>
+        <section>
+            <div class="k-widget k-calendar k-week-number k-calendar-range k-calendar-md">
+                <div class="k-header k-hstack">
+                    <button class="k-calendar-nav-prev k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-calendar-nav-today k-flex k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-text">March 2018</span>
+                    </button>
+                    <button class="k-calendar-nav-next k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
+                </div>
+                <div class="k-calendar-view k-calendar-monthview">
+                    <table class="k-calendar-table k-month">
+                        <thead class="k-calendar-thead">
+                            <tr class="k-calendar-tr">
+                                <th class="k-calendar-th">Wk</th>
+                                <th class="k-calendar-th">Su</th>
+                                <th class="k-calendar-th">Mo</th>
+                                <th class="k-calendar-th">Tu</th>
+                                <th class="k-calendar-th">We</th>
+                                <th class="k-calendar-th">Th</th>
+                                <th class="k-calendar-th">Fr</th>
+                                <th class="k-calendar-th">Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody class="k-calendar-tbody">
+                            <tr class="k-calendar-tr">
+                                <td class="k-calendar-td k-alt">9</td>
+                                <td class="k-calendar-td k-other-month k-weekend">
+                                    <a class="k-link">25</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month">
+                                    <a class="k-link">26</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month">
+                                    <a class="k-link">27</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month">
+                                    <a class="k-link">28</a>
+                                </td>
+                                <td class="k-calendar-td k-range-start k-selected k-hover">
+                                    <a class="k-link">1</a>
+                                </td>
+                                <td class="k-calendar-td k-range-mid">
+                                    <a class="k-link">2</a>
+                                </td>
+                                <td class="k-calendar-td k-weekend k-range-mid">
+                                    <a class="k-link">3</a>
+                                </td>
+                            </tr>
+                            <tr class="k-calendar-tr">
+                                <td class="k-calendar-td k-alt">10</td>
+                                <td class="k-calendar-td k-weekend k-range-mid">
+                                    <a class="k-link">4</a>
+                                </td>
+                                <td class="k-calendar-td k-range-mid k-hover">
+                                    <a class="k-link">5</a>
+                                </td>
+                                <td class="k-calendar-td k-range-mid">
+                                    <a class="k-link">6</a>
+                                </td>
+                                <td class="k-calendar-td k-range-mid">
+                                    <a class="k-link">7</a>
+                                </td>
+                                <td class="k-calendar-td k-range-end k-selected k-hover">
+                                    <a class="k-link">8</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">9</a>
+                                </td>
+                                <td class="k-calendar-td k-weekend">
+                                    <a class="k-link">10</a>
+                                </td>
+                            </tr>
+                            <tr class="k-calendar-tr">
+                                <td class="k-calendar-td k-alt">11</td>
+                                <td class="k-calendar-td k-weekend">
+                                    <a class="k-link">11</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">12</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">13</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">14</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">15</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">16</a>
+                                </td>
+                                <td class="k-calendar-td k-weekend">
+                                    <a class="k-link">17</a>
+                                </td>
+                            </tr>
+                            <tr class="k-calendar-tr">
+                                <td class="k-calendar-td k-alt">12</td>
+                                <td class="k-calendar-td k-weekend">
+                                    <a class="k-link">18</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">19</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">20</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">21</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">22</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">23</a>
+                                </td>
+                                <td class="k-calendar-td k-weekend">
+                                    <a class="k-link">24</a>
+                                </td>
+                            </tr>
+                            <tr class="k-calendar-tr">
+                                <td class="k-calendar-td k-alt">13</td>
+                                <td class="k-calendar-td k-weekend">
+                                    <a class="k-link">25</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">26</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">27</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">28</a>
+                                </td>
+                                <td class="k-calendar-td k-today">
+                                    <a class="k-link">29</a>
+                                </td>
+                                <td class="k-calendar-td">
+                                    <a class="k-link">30</a>
+                                </td>
+                                <td class="k-calendar-td k-weekend">
+                                    <a class="k-link">31</a>
+                                </td>
+                            </tr>
+                            <tr class="k-calendar-tr">
+                                <td class="k-calendar-td k-alt">14</td>
+                                <td class="k-calendar-td k-other-month k-weekend">
+                                    <a class="k-link">1</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month">
+                                    <a class="k-link">2</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month">
+                                    <a class="k-link">3</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month">
+                                    <a class="k-link">4</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month">
+                                    <a class="k-link">5</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month">
+                                    <a class="k-link">6</a>
+                                </td>
+                                <td class="k-calendar-td k-other-month k-weekend">
+                                    <a class="k-link">7</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="k-footer">
+                    <button class="k-calendar-nav-today k-flex k-disabled k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-text">Thursday, March 29, 2018</span>
+                    </button>
+                </div>
+            </div>
+        </section>
         <span>jquery classic year</span>
         <span>jquery classic decade</span>
         <span>jquery classic century</span>
