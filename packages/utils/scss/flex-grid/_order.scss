@@ -13,11 +13,6 @@
 /// @group order
 /// @contextType css
 
-/// This is equivalent to `order: 1;`, `order: 2;`, `order: 12;`, etc.
-/// @name .from k-order-1 to k-order-12
-/// @group order
-/// @contextType css
-
 @mixin kendo-utils--flex-grid--order() {
 
     // Order utility classes

@@ -1,63 +1,168 @@
+/// Returns the alpha channel of a color.
+/// @param {Color} $color - The color to get the alpha channel for.
+/// @return {Number} - The alpha channel of the color.
+///
+/// @example scss - Usage
+///   @debug k-color-alpha( rgba( 0, 0, 0, 0.5 ) ); // => 0.5
+///   @debug k-color-alpha( #000 ); // => 1
 @function k-color-alpha( $color ) {
     @return alpha( $color );
 }
 
+/// Returns the red channel of a color.
+/// @param {Color} $color - The color to get the red channel for.
+/// @return {Number} - The red channel of the color.
+///
+/// @example scss - Usage
+///   @debug k-color-red( #ff0000 ); // => 255
 @function k-color-red( $color ) {
     @return red( $color );
 }
 
+/// Returns the green channel of a color.
+/// @param {Color} $color - The color to get the green channel for.
+/// @return {Number} - The green channel of the color.
+///
+/// @example scss - Usage
+///   @debug k-color-green( #00ff00 ); // => 255
 @function k-color-green( $color ) {
     @return green( $color );
 }
 
+/// Returns the blue channel of a color.
+/// @param {Color} $color - The color to get the blue channel for.
+/// @return {Number} - The blue channel of the color.
+///
+/// @example scss - Usage
+///   @debug k-color-blue( #0000ff ); // => 255
 @function k-color-blue( $color ) {
     @return blue( $color );
 }
 
+/// Returns the hue of a color.
+/// @param {Color} $color - The color to get the hue for.
+/// @return {Number} - The hue of the color.
+///
+/// @example scss - Usage
+///   @debug k-color-hue( #e1d7d2 ); // => 20deg
 @function k-color-hue( $color ) {
     @return hue( $color );
 }
 
+/// Returns the saturation of a color.
+/// @param {Color} $color - The color to get the saturation for.
+/// @return {Number} - The saturation of the color.
+///
+/// @example scss - Usage
+///   @debug k-color-saturation( #e1d7d2 ); // => 20%
 @function k-color-saturation( $color ) {
     @return saturation( $color );
 }
 
+/// Returns the lightness of a color.
+/// @param {Color} $color - The color to get the lightness for.
+/// @return {Number} - The lightness of the color.
+///
+/// @example scss - Usage
+///   @debug k-color-lightness( #e1d7d2 ); // => 80%
 @function k-color-lightness( $color ) {
     @return lightness( $color );
 }
 
+/// Returns a color that is a mix of two colors.
+/// @param {Color} $color1 - The first color.
+/// @param {Color} $color2 - The second color.
+/// @param {Number} $weight - The weight of the first color in the mix.
+/// @return {Color} - The mixed color.
+///
+/// @example scss - Usage
+///   @debug k-color-mix( #f00, #00f ); // => #800080
 @function k-color-mix( $color1, $color2, $weight: 50% ) {
     @return mix( $color1, $color2, $weight );
 }
 
+/// Makes a color darker by decreasing its lightness.
+/// @param {Color} $color - The color to darken.
+/// @param {Number} $amount - The amount to darken the color.
+/// @return {Color} - The darkened color.
+///
+/// @example scss - Usage
+///   @debug k-color-darken( #f00, 10% ); // => #e60000
 @function k-color-darken( $color, $amount) {
     @return darken( $color, $amount );
 }
 
+/// Makes a color lighter by increasing its lightness.
+/// @param {Color} $color - The color to lighten.
+/// @param {Number} $amount - The amount to lighten the color.
+/// @return {Color} - The lightened color.
+///
+/// @example scss - Usage
+///   @debug k-color-lighten( #f00, 10% ); // => #ff1a1a
 @function k-color-lighten( $color, $amount) {
     @return lighten( $color, $amount );
 }
 
+/// Increases or decreases the hue of a color.
+/// @param {Color} $color - The color to adjust the hue for.
+/// @param {Number} $degrees - The amount to adjust the hue.
+/// @return {Color} - The adjusted color.
+///
+/// @example scss - Usage
+///   @debug k-color-adjust-hue( #f00, 10deg ); // => #ff1a00
 @function k-color-adjust-hue( $color, $degrees ) {
     @return adjust-hue( $color, $degrees );
 }
 
+/// Increases the saturation of a color.
+/// @param {Color} $color - The color to saturate.
+/// @param {Number} $amount - The amount to saturate the color.
+/// @return {Color} - The saturated color.
+///
+/// @example scss - Usage
+///   @debug k-color-saturate( #f00, 10% ); // => #ff3333
 @function k-color-saturate( $color, $amount ) {
     @return saturate( $color, $amount );
 }
 
+/// Decreases the saturation of a color.
+/// @param {Color} $color - The color to desaturate.
+/// @param {Number} $amount - The amount to desaturate the color.
+/// @return {Color} - The desaturated color.
+///
+/// @example scss - Usage
+///   @debug k-color-desaturate( #f00, 10% ); // => #e60000
 @function k-color-desaturate( $color, $amount ) {
     @return desaturate( $color, $amount );
 }
 
+/// Returns a gray color with the same lightness as the input color.
+/// @param {Color} $color - The color to convert to grayscale.
+/// @return {Color} - The grayscale color.
+///
+/// @example scss - Usage
+///   @debug k-color-grayscale( #f00 ); // => #808080
 @function k-color-grayscale( $color ) {
     @return grayscale( $color );
 }
 
+/// Returns the RGB complement of a color. This identical to adjusting the hue
+/// by 180 degrees.
+/// @param {Color} $color - The color to get the complement for.
+/// @return {Color} - The complement color.
+///
+/// @example scss - Usage
+///   @debug k-color-complement( #f00 ); // => #00ffff
 @function k-color-complement( $color ) {
     @return complement( $color );
 }
 
+/// Returns the inverse of a color.
+/// @param {Color} $color - The color to invert.
+/// @return {Color} - The inverted color.
+///
+/// @example scss - Usage
+///   @debug k-color-invert( #f00 ); // => #00ffff
 @function k-color-invert( $color ) {
     @return invert( $color );
 }

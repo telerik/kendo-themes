@@ -1,20 +1,57 @@
+/// Returns the first index of `$substring` in `$string`, or `null` if `$string` doesn’t contain `$substring`.
+/// @param {String} $string - The string to process.
+/// @param {String} $substring - The substring to look for.
+/// @return {Number} - The first index of `$substring` in `$string`, or `null` if `$string` doesn’t contain `$substring`.
+///
+/// @example scss - Usage
+///   @debug k-string-index( "foo bar", "bar" ); // => 5
 @function k-string-index( $string, $substring ) {
     @return str-index( $string, $substring );
 }
 
+/// Returns a copy of `$string` with `$insert` inserted at `$index`.
+/// @param {String} $string - The string to process.
+/// @param {String} $insert - The string to insert.
+/// @param {Number} $index - The index at which to insert `$insert`.
+/// @return {String} - The resulting string.
+///
+/// @example scss - Usage
+///   @debug k-string-insert( "foo bar", "baz", 5 ); // => "foo baz bar"
 @function k-string-insert( $string, $insert, $index ) {
     @return str-insert( $string, $insert, $index );
 }
 
+/// Returns the length of `$string`.
+/// @param {String} $string - The string to process.
+/// @return {Number} - The length of `$string`.
+///
+/// @example scss - Usage
+///   @debug k-string-length( "foo bar" ); // => 7
 @function k-string-length( $string ) {
     @return str-length( $string );
 }
 
+/// Returns a copy of `$string` with quotes added.
+/// @param {String} $string - The string to process.
+/// @return {String} - The resulting string.
+///
+/// @example scss - Usage
+///   @debug k-string-quote( "foo bar" ); // => "foo bar"
 @function k-string-quote( $string ) {
     @return quote( $string );
 }
 
-// See https://www.sassmeister.com/gist/1b4f2da5527830088e4d
+/// Returns a copy of `$string` with all occurrences of `$search`
+/// replaced by `$replace`.
+/// @param {String} $string - The string to process.
+/// @param {String} $search - The substring to look for.
+/// @param {String} $replace - The replacement string.
+/// @return {String} - The resulting string.
+///
+/// @link https://www.sassmeister.com/gist/1b4f2da5527830088e4d
+///
+/// @example scss - Usage
+///   @debug k-string-replace( "foo bar", "bar", "baz" ); // => "foo baz"
 @function k-string-replace( $string, $search, $replace: "" ) {
     @if k-meta-type-of( $string ) == number {
         $string: $string + "";
@@ -29,22 +66,53 @@
     @return $string;
 }
 
+/// Returns a substring of `$string` starting at `$start-at` and ending at `$end-at`.
+/// @param {String} $string - The string to process.
+/// @param {Number} $start-at - The index at which to start the substring.
+/// @param {Number} $end-at - The index at which to end the substring.
+/// @return {String} - The resulting string.
+///
+/// @example scss - Usage
+///   @debug k-string-slice( "foo bar", 5 ); // => "bar"
 @function k-string-slice( $string, $start-at, $end-at: -1 ) {
     @return str-slice( $string, $start-at, $end-at );
 }
 
+/// Returns a copy of `$string` with all uppercase letters converted to lowercase.
+/// @param {String} $string - The string to process.
+/// @return {String} - The resulting string.
+///
+/// @example scss - Usage
+///   @debug k-string-to-lower-case( "FOO BAR" ); // => "foo bar"
 @function k-string-to-lower-case( $string ) {
     @return to-lower-case( $string );
 }
 
+/// Returns a copy of `$string` with all lowercase letters converted to uppercase.
+/// @param {String} $string - The string to process.
+/// @return {String} - The resulting string.
+///
+/// @example scss - Usage
+///   @debug k-string-to-upper-case( "foo bar" ); // => "FOO BAR"
 @function k-string-to-upper-case( $string ) {
     @return to-upper-case( $string );
 }
 
+/// Returns a unique identifier.
+/// @return {String} - The unique identifier.
+///
+/// @example scss - Usage
+///   @debug k-string-unique-id(); // => UNIQUE_ID
 @function k-string-unique-id() {
     @return unique-id();
 }
 
+/// Returns a copy of `$string` with quotes removed.
+/// @param {String} $string - The string to process.
+/// @return {String} - The resulting string.
+///
+/// @example scss - Usage
+///   @debug k-string-unquote( "foo bar" ); // => foo bar
 @function k-string-unquote( $string ) {
     @return unquote( $string );
 }
