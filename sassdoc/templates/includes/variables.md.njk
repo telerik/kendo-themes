@@ -1,0 +1,14 @@
+{%- for group in variableGroups -%}
+
+### {{ group.title }}
+
+<table class="theme-variables">
+    {% include "./theme-variables-thead.md.njk" -%}
+    <tbody>
+        {%- for variable in group.variables -%}
+        {%- include "./theme-variables-row.md.njk" -%}
+        {%- endfor -%}
+    </tbody>
+</table>
+
+{% endfor %}
