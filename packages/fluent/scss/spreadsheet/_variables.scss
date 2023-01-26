@@ -40,10 +40,10 @@ $kendo-spreadsheet-sheets-bar-padding-y: 0 !default;
 
 /// Horizontal margin of the spreadsheet sheets remove.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-remove-inline-start: - map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-remove-inline-start: - map.get( $kendo-spacing, 1 ) !default;
 /// Vertical margin of the spreadsheet sheets remove.
 /// @group spreadsheet
-$kendo-spreadsheet-sheets-remove-inline-end:  map.get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-remove-inline-end:  map.get( $kendo-spacing, 1 ) !default;
 
 /// Left padding of the spreadsheet sheets menu.
 /// @group spreadsheet

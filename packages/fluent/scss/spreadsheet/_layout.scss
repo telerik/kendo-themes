@@ -202,8 +202,7 @@
 
     // Cell editor
     .k-spreadsheet-cell-editor {
-        padding: 0 3px;
-        line-height: var( --kendo-spreadsheet-line-height, $kendo-spreadsheet-line-height );
+        padding-inline: 2px;
         display: none;
         overflow: hidden;
         position: absolute;
@@ -248,7 +247,7 @@
 
             .k-spreadsheet-sheets-remove {
                 margin-inline-start: var( --kendo-spreadsheet-sheets-remove-inline-start, $kendo-spreadsheet-sheets-remove-inline-start );
-                margin-inline-end: ( --kendo-spreadsheet-sheets-remove-inline-end, $kendo-spreadsheet-sheets-remove-inline-end );
+                margin-inline-end: var( --kendo-spreadsheet-sheets-remove-inline-end, $kendo-spreadsheet-sheets-remove-inline-end );
                 padding: 0;
                 line-height: 1;
                 display: inline-flex;
@@ -432,7 +431,6 @@
         padding-inline-end: 2px;
         box-sizing: border-box;
         position: absolute;
-        line-height: normal;
         white-space: pre;
         overflow: hidden;
     }
