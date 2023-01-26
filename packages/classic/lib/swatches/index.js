@@ -10,3 +10,4 @@ module.exports.opal = require('./classic-opal.json');
 module.exports.opalDark = require('./classic-opal-dark.json');
 module.exports.silver = require('./classic-silver.json');
 module.exports.silverDark = require('./classic-silver-dark.json');
+module.exports.uniform = require('./classic-uniform.json');
