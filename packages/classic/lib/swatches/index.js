@@ -1,5 +1,6 @@
 module.exports.main = require('./classic-main.json');
 module.exports.mainDark = require('./classic-main-dark.json');
+module.exports.moonlight = require('./classic-moonlight.json');
 module.exports.green = require('./classic-green.json');
 module.exports.greenDark = require('./classic-green-dark.json');
 module.exports.lavender = require('./classic-lavender.json');
