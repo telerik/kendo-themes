@@ -311,7 +311,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $kendo-button-bg, 7.5% )`
+`k-color-darken( $kendo-button-bg, 7.5% )`
 
 </td>
 <td>
@@ -349,7 +349,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $kendo-button-bg, 10% )`
+`k-color-darken( $kendo-button-bg, 10% )`
 
 </td>
 <td>
@@ -405,7 +405,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $kendo-button-bg, 10% )`
+`k-color-darken( $kendo-button-bg, 10% )`
 
 </td>
 <td>
@@ -443,7 +443,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $kendo-button-bg, 12.5% )`
+`k-color-darken( $kendo-button-bg, 12.5% )`
 
 </td>
 <td>
@@ -499,7 +499,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $kendo-color-primary, 10% )`
+`k-color-darken( $kendo-color-primary, 10% )`
 
 </td>
 <td>
@@ -539,7 +539,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $kendo-color-primary, 12.5% )`
+`k-color-darken( $kendo-color-primary, 12.5% )`
 
 </td>
 <td>
@@ -595,7 +595,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $kendo-button-bg, 10% )`
+`k-color-darken( $kendo-button-bg, 10% )`
 
 </td>
 <td>
@@ -633,7 +633,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-darken( $kendo-button-bg, 12.5% )`
+`k-color-darken( $kendo-button-bg, 12.5% )`
 
 </td>
 <td>
