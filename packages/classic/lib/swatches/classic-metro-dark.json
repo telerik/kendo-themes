@@ -241,6 +241,11 @@
                     "name": "Treeview item focus shadow",
                     "type": "shadow",
                     "value": "$kendo-focus-inset-shadow"
+                },
+                "kendo-grid-alt-bg": {
+                    "name": "Grid alternate row background",
+                    "type": "color",
+                    "value": "#1d1d1d"
                 }
             }
         }
