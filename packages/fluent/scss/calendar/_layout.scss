@@ -427,30 +427,48 @@
                 position: absolute;
                 inset: 0px;
                 border-style: solid;
-                border-width: var( --INTERNAL--kendo-calendar-range-border-width, 0 );
+            }
+
+            &:hover .k-link,
+            &.k-hover .k-link {
+                border-radius: 0;
             }
         }
 
+        .k-range-mid::before {
+            border-width: var( --INTERNAL--kendo-calendar-range-border-width, 1px );
+            border-inline-width: 0;
+            border-radius: 0;
+        }
+
         .k-range-start::before,
-        .k-range-mid:first-child::before {
-            --INTERNAL--kendo-calendar-range-border-width: 1px 0 1px 1px;
-            @include border-left-radius(var( --kendo-calendar-cell-border-radius, #{$kendo-calendar-cell-border-radius} ));
+        .k-range-mid:not(
+            .k-range-start + .k-range-mid,
+            .k-range-mid + .k-range-mid,
+            :last-child
+        )::before {
+            border-width: var( --INTERNAL--kendo-calendar-range-border-width, 1px );
+            border-inline-end-width: 0;
+            border-radius: 0;
+
+            @if ( $kendo-enable-rounded ) {
+                border-start-start-radius: var( --kendo-calendar-cell-border-radius, #{$kendo-calendar-cell-border-radius} );
+                border-end-start-radius: var( --kendo-calendar-cell-border-radius, #{$kendo-calendar-cell-border-radius} );
+            }
         }
 
         .k-range-end::before,
         .k-range-mid:last-child::before {
-            --INTERNAL--kendo-calendar-range-border-width: 1px 1px 1px 0;
-            @include border-right-radius(var( --kendo-calendar-cell-border-radius, #{$kendo-calendar-cell-border-radius} ));
+            border-width: var( --INTERNAL--kendo-calendar-range-border-width, 1px );
+            border-inline-start-width: 0;
+            border-radius: 0;
+
+            @if ( $kendo-enable-rounded ) {
+                border-start-end-radius: var( --kendo-calendar-cell-border-radius, #{$kendo-calendar-cell-border-radius} );
+                border-end-end-radius: var( --kendo-calendar-cell-border-radius, #{$kendo-calendar-cell-border-radius} );
+            }
         }
 
-        .k-range-mid::before {
-            --INTERNAL--kendo-calendar-range-border-width: 1px 0;
-        }
-
-        .k-range-start:last-child::before,
-        .k-range-end:first-child::before {
-            --INTERNAL--kendo-calendar-range-border-width: 1px;
-        }
     }
 
 

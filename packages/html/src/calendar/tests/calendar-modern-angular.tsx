@@ -12,7 +12,7 @@ root.render(
 
             <span>angular modern month</span>
             <span>angular modern week number</span>
-            <span></span>
+            <span>angular modern week number with selected range</span>
 
             <section>
                 <Calendar calendarView="month" showOtherMonth></Calendar>
@@ -22,7 +22,9 @@ root.render(
                 <Calendar calendarView="month" showOtherMonth showWeek></Calendar>
             </section>
 
-            <section></section>
+            <section>
+                <Calendar className="k-calendar-range" calendarView="month" showOtherMonth showWeek selectedRange></Calendar>
+            </section>
 
             <span>angular modern year</span>
             <span>angular modern decade</span>

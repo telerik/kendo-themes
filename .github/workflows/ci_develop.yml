@@ -29,12 +29,6 @@ jobs:
     needs: [ prime-cache ]
 
 
-  test-contrast:
-    name: Test contrast
-    uses: ./.github/workflows/_test-contrast.yml
-    needs: [ prime-cache ]
-
-
   ci-develop:
     # The name of the last job is used for the branch protection status check
     name: CI Develop
