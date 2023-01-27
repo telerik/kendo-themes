@@ -1167,7 +1167,7 @@
         width: var( --kendo-grid-column-menu-width, #{$kendo-grid-column-menu-width} );
         box-sizing: border-box;
 
-        .k-popup > & {
+        &.k-popup {
             max-width: 100%;
         }
 
