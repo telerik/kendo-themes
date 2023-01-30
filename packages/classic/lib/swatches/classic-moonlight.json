@@ -1,15 +1,15 @@
 {
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.14.0/lib/schemas/kendo-swatch.json",
-    "name": "Classic Opal Dark",
+    "name": "Classic Moonlight",
     "product": "kendo",
     "base": "@progress/kendo-theme-classic",
     "version": "5.1.2-dev.7",
     "api": "legacy",
     "previewColors": [
-        "#000000",
-        "#272727",
-        "#0066cc",
-        "#0073e6",
+        "#1f2a35",
+        "#303742",
+        "#f4af03",
+        "#ffb700",
         "#ffffff"
     ],
     "components": [],
@@ -25,32 +25,32 @@
                 "kendo-color-primary": {
                     "name": "Primary",
                     "type": "color",
-                    "value": "#0066cc"
+                    "value": "#f4af03"
                 },
                 "kendo-color-secondary": {
                     "name": "Secondary",
                     "type": "color",
-                    "value": "#2a2a2a"
+                    "value": "#212a33"
                 },
                 "kendo-color-info": {
                     "name": "Info",
                     "type": "color",
-                    "value": "#007bc3"
+                    "value": "#0c779b"
                 },
                 "kendo-color-success": {
                     "name": "Success",
                     "type": "color",
-                    "value": "#3ea44e"
+                    "value": "#2b893c"
                 },
                 "kendo-color-warning": {
                     "name": "Warning",
                     "type": "color",
-                    "value": "#ff9800"
+                    "value": "#ea9d07"
                 },
                 "kendo-color-error": {
                     "name": "Error",
                     "type": "color",
-                    "value": "#d92800"
+                    "value": "#be5138"
                 }
             }
         },
@@ -60,7 +60,7 @@
                 "kendo-body-bg": {
                     "name": "Body background",
                     "type": "color",
-                    "value": "#000000"
+                    "value": "#1f2a35"
                 },
                 "kendo-body-text": {
                     "name": "Body text color",
@@ -85,7 +85,7 @@
                 "kendo-component-bg": {
                     "name": "Component background",
                     "type": "color",
-                    "value": "#000000"
+                    "value": "#303742"
                 },
                 "kendo-component-text": {
                     "name": "Component text color",
@@ -95,12 +95,12 @@
                 "kendo-component-border": {
                     "name": "Component border color",
                     "type": "color",
-                    "value": "#4d4d4d"
+                    "value": "#394958"
                 },
                 "kendo-base-bg": {
                     "name": "Header background",
                     "type": "color",
-                    "value": "#272727"
+                    "value": "#414550"
                 },
                 "kendo-base-text": {
                     "name": "Header text color",
@@ -110,12 +110,12 @@
                 "kendo-base-border": {
                     "name": "Header border color",
                     "type": "color",
-                    "value": "#4d4d4d"
+                    "value": "#394958"
                 },
                 "kendo-hover-bg": {
                     "name": "Hover background",
                     "type": "color",
-                    "value": "#2a2a2a"
+                    "value": "#3f4450"
                 },
                 "kendo-hover-text": {
                     "name": "Hover text color",
@@ -125,22 +125,17 @@
                 "kendo-hover-border": {
                     "name": "Hover border color",
                     "type": "color",
-                    "value": "#4d4d4d"
+                    "value": "#394958"
                 },
                 "kendo-selected-bg": {
                     "name": "Selected background",
                     "type": "color",
-                    "value": "#0066cc"
+                    "value": "#f4af03"
                 },
                 "kendo-selected-text": {
                     "name": "Selected text color",
                     "type": "color",
-                    "value": "#ffffff"
-                },
-                "kendo-selected-border": {
-                    "name": "Selected border color",
-                    "type": "color",
-                    "value": "#0066cc"
+                    "value": "#000000"
                 }
             }
         },
@@ -150,7 +145,7 @@
                 "kendo-button-bg": {
                     "name": "Button background",
                     "type": "color",
-                    "value": "#272727"
+                    "value": "#212a33"
                 },
                 "kendo-button-text": {
                     "name": "Button text color",
@@ -160,7 +155,7 @@
                 "kendo-button-border": {
                     "name": "Button border color",
                     "type": "color",
-                    "value": "#4d4d4d"
+                    "value": "#394958"
                 }
             }
         },
@@ -170,12 +165,12 @@
                 "kendo-link-text": {
                     "name": "Link text color",
                     "type": "color",
-                    "value": "#0073e6"
+                    "value": "#f4af03"
                 },
                 "kendo-link-hover-text": {
                     "name": "Link hover text color",
                     "type": "color",
-                    "value": "#3298ff"
+                    "value": "#ffb700"
                 }
             }
         },
@@ -211,6 +206,41 @@
                     "name": "Series F",
                     "type": "color",
                     "value": "#430b62"
+                }
+            }
+        },
+        {
+            "hidden": true,
+            "variables": {
+                "kendo-enable-rounded": {
+                    "name": "Enable rounded corners",
+                    "type": "boolean",
+                    "value": false
+                },
+                "kendo-focus-shadow": {
+                    "name": "Focus shadow",
+                    "type": "shadow",
+                    "value": "0 0 0 2px rgba( 255, 255, 255, .75 )"
+                },
+                "kendo-focus-inset-shadow": {
+                    "name": "Inset focus shadow",
+                    "type": "shadow",
+                    "value": "inset 0 0 0 2px rgba( 255, 255, 255, .75 )"
+                },
+                "kendo-list-item-focus-shadow": {
+                    "name": "List item focus shadow",
+                    "type": "shadow",
+                    "value": "$kendo-focus-inset-shadow"
+                },
+                "kendo-treeview-item-focus-shadow": {
+                    "name": "Treeview item focus shadow",
+                    "type": "shadow",
+                    "value": "$kendo-focus-inset-shadow"
+                },
+                "kendo-grid-alt-bg": {
+                    "name": "Grid alternate background",
+                    "type": "color",
+                    "value": "#212a33"
                 }
             }
         }
