@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
+import { Slider, SliderTick } from '../../slider';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -35,370 +35,206 @@ root.render(
 
 
             <section>
-                <div className="k-widget k-slider k-slider-horizontal">
-                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
-                    <div className="k-slider-track-wrap">
-                        <ul className="k-reset k-slider-items">
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">0</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">25</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">50</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">75</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">100</span>
-                            </li>
-                        </ul>
-                        <div className="k-slider-track">
-                            <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
-                        </div>
-                    </div>
-                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
-                </div>
+                <Slider>
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="25"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="50"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="75"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="100"/>
+                </Slider>
             </section>
             <section>
-                <div className="k-widget k-slider k-range-slider k-slider-horizontal">
-                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
-                    <div className="k-slider-track-wrap">
-                        <ul className="k-reset k-slider-items">
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">0</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">25</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">50</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">75</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">100</span>
-                            </li>
-                        </ul>
-                        <div className="k-slider-track">
-                            <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-start"></a>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
-                        </div>
-                    </div>
-                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
-                </div>
+                <Slider type="range">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="25"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="50"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="75"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="100"/>
+                </Slider>
             </section>
             <section dir="rtl">
-                <div className="k-widget k-slider k-slider-horizontal">
-                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
-                    <div className="k-slider-track-wrap">
-                        <ul className="k-reset k-slider-items">
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">0</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">25</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">50</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">75</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">100</span>
-                            </li>
-                        </ul>
-                        <div className="k-slider-track">
-                            <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
-                        </div>
-                    </div>
-                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
-                </div>
+                <Slider dir="rtl">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="25"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="50"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="75"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="100"/>
+                </Slider>
             </section>
             <section dir="rtl">
-                <div className="k-widget k-slider k-range-slider k-slider-horizontal">
-                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
-                    <div className="k-slider-track-wrap">
-                        <ul className="k-reset k-slider-items">
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">0</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">25</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">50</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">75</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">100</span>
-                            </li>
-                        </ul>
-                        <div className="k-slider-track">
-                            <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-start"></a>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
-                        </div>
-                    </div>
-                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
-                </div>
+                <Slider type="range" dir="rtl">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="25"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="50"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="75"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="100"/>
+                </Slider>
             </section>
 
 
             <section>
-                <div className="k-widget k-slider k-slider-vertical">
-                    <Button icon="caret-alt-down" rounded="full" className="k-button-decrease"></Button>
-                    <div className="k-slider-track-wrap">
-                        <ul className="k-reset k-slider-items">
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">0</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">25</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">50</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">75</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">100</span>
-                            </li>
-                        </ul>
-                        <div className="k-slider-track">
-                            <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
-                        </div>
-                    </div>
-                    <Button icon="caret-alt-up" rounded="full" className="k-button-increase"></Button>
-                </div>
+                <Slider orientation="vertical">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="25"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="50"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="75"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="100"/>
+                </Slider>
             </section>
             <section>
-                <div className="k-widget k-slider k-range-slider k-slider-vertical">
-                    <Button icon="caret-alt-down" rounded="full" className="k-button-decrease"></Button>
-                    <div className="k-slider-track-wrap">
-                        <ul className="k-reset k-slider-items">
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">0</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">25</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">50</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">75</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">100</span>
-                            </li>
-                        </ul>
-                        <div className="k-slider-track">
-                            <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-start"></a>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
-                        </div>
-                    </div>
-                    <Button icon="caret-alt-up" rounded="full" className="k-button-increase"></Button>
-                </div>
+                <Slider type="range" orientation="vertical">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="25"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="50"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="75"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="100"/>
+                </Slider>
             </section>
             <section dir="rtl">
-                <div className="k-widget k-slider k-slider-vertical">
-                    <Button icon="caret-alt-down" rounded="full" className="k-button-decrease"></Button>
-                    <div className="k-slider-track-wrap">
-                        <ul className="k-reset k-slider-items">
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">0</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">25</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">50</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">75</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">100</span>
-                            </li>
-                        </ul>
-                        <div className="k-slider-track">
-                            <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
-                        </div>
-                    </div>
-                    <Button icon="caret-alt-up" rounded="full" className="k-button-increase"></Button>
-                </div>
+                <Slider orientation="vertical" dir="rtl">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="25"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="50"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="75"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="100"/>
+                </Slider>
             </section>
             <section dir="rtl">
-                <div className="k-widget k-slider k-range-slider k-slider-vertical">
-                    <Button icon="caret-alt-down" rounded="full" className="k-button-decrease"></Button>
-                    <div className="k-slider-track-wrap">
-                        <ul className="k-reset k-slider-items">
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">0</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">25</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">50</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">75</span>
-                            </li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick"></li>
-                            <li className="k-tick k-tick-large">
-                                <span className="k-label">100</span>
-                            </li>
-                        </ul>
-                        <div className="k-slider-track">
-                            <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-start"></a>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
-                        </div>
-                    </div>
-                    <Button icon="caret-alt-up" rounded="full" className="k-button-increase"></Button>
-                </div>
+                <Slider type="range" orientation="vertical" dir="rtl">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="25"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="50"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="75"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="100"/>
+                </Slider>
             </section>
 
         </div>

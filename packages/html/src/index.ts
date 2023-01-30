@@ -31,7 +31,7 @@ export * from './checkbox/index';
 export * from './radio/index';
 // export * from './listbox/index';
 // export * from './progressbar/index';
-// export * from './slider/index';
+export * from './slider/index';
 
 // Augmented inputs
 export * from './floating-label/index';

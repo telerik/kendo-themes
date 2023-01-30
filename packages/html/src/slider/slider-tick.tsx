@@ -1,0 +1,52 @@
+import { classNames } from '../utils';
+
+const SLIDER_TICK_CLASSNAME = 'k-tick';
+
+const states = [];
+
+const options = {};
+
+export type KendoSliderTickProps = {
+    style?: React.CSSProperties,
+    label?: boolean,
+    orientation?: null | 'horizontal' | 'vertical',
+    large?: boolean,
+    text?: string
+};
+
+const defaultProps = {
+    label: false
+};
+
+export const SliderTick = (
+    props: KendoSliderTickProps &
+        React.HTMLAttributes<HTMLLIElement>
+) => {
+    const {
+        style,
+        label = defaultProps.label,
+        orientation,
+        large,
+        text
+    } = props;
+
+    return (
+        <li className={classNames(
+            props.className,
+            SLIDER_TICK_CLASSNAME,
+            {
+                [`k-tick-${orientation}`]: orientation,
+                'k-tick-large': large
+            }
+        )} style={style} >
+            {label && <span className="k-label">{text}</span>}
+        </li>
+    );
+};
+
+SliderTick.states = states;
+SliderTick.options = options;
+SliderTick.className = SLIDER_TICK_CLASSNAME;
+SliderTick.defaultProps = defaultProps;
+
+export default SliderTick;
