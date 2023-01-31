@@ -363,13 +363,6 @@
         }
     }
 
-
-    // Pager
-    .k-grid-pager {
-        @include fill( $kendo-grid-header-text, $kendo-grid-header-bg, $kendo-grid-header-border );
-    }
-
-
     // Grouping
     .k-grouping-row,
     .k-group-cell {
