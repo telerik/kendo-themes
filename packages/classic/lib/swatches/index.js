@@ -1,8 +1,14 @@
 module.exports.main = require('./classic-main.json');
 module.exports.mainDark = require('./classic-main-dark.json');
+module.exports.moonlight = require('./classic-moonlight.json');
 module.exports.green = require('./classic-green.json');
 module.exports.greenDark = require('./classic-green-dark.json');
+module.exports.lavender = require('./classic-lavender.json');
+module.exports.lavenderDark = require('./classic-lavender-dark.json');
+module.exports.metro = require('./classic-metro.json');
+module.exports.metroDark = require('./classic-metro-dark.json');
 module.exports.opal = require('./classic-opal.json');
 module.exports.opalDark = require('./classic-opal-dark.json');
 module.exports.silver = require('./classic-silver.json');
 module.exports.silverDark = require('./classic-silver-dark.json');
+module.exports.uniform = require('./classic-uniform.json');

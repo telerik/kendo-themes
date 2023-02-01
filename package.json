@@ -15,7 +15,6 @@
     "esbuild": "^0.16.13",
     "eslint": "^8.17.0",
     "eslint-plugin-react": "^7.30.0",
-    "geckodriver": "^3.2.0",
     "glob": "^8.0.3",
     "gulp": "^4.0.2",
     "html-validate": "^7.1.1",
@@ -33,7 +32,7 @@
     "sassdoc": "^2.7.4",
     "semver": "^7.3.7",
     "stylelint": "^14.8.5",
-    "stylelint-config-standard": "^28.0.0",
+    "stylelint-config-standard": "^29.0.0",
     "stylelint-scss": "^4.2.0",
     "typescript": "^4.7.2"
   },
