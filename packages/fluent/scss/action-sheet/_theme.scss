@@ -89,6 +89,11 @@
         }
     }
 
+    // Actionsheet separator
+    .k-actionsheet .k-hr {
+        border-color: var( --kendo-actionsheet-border, #{$kendo-actionsheet-border} );
+    }
+
     // Adaptive Actionsheet
     .k-adaptive-actionsheet .k-actionsheet-titlebar {
             border-color: var( --kendo-adaptive-actionsheet-header-border, #{$kendo-adaptive-actionsheet-header-border} );

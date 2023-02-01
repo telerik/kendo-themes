@@ -83,6 +83,11 @@
     // Actionsheet action
     .k-actionsheet-action {}
 
+    // Actionsheet separator
+    .k-actionsheet .k-hr {
+        border-color: $kendo-actionsheet-border;
+    }
+
 
     // Adaptive Actionsheet
     .k-adaptive-actionsheet .k-actionsheet-titlebar {
