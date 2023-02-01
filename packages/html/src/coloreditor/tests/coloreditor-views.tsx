@@ -1,10 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { ActionButtons } from '../../action-buttons';
-import { Button } from '../../button';
-import { ColorPalette } from '../../colorpalette';
-import { ColorPreview } from '../../color-preview';
-import { NumericTextbox } from '../../numerictextbox';
-import { PALETTEPRESETS } from '../../colorpalette/colorpalette-presets';
+import { ColorEditor } from '../../coloreditor';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -30,110 +25,11 @@ root.render(
             <span>ColorPalette View</span>
 
             <section>
-                <div className="k-flatcolorpicker k-coloreditor">
-                    <div className="k-coloreditor-header k-hstack">
-                        <div className="k-coloreditor-header-actions k-hstack">
-                            <div className="k-button-group">
-                                <Button fillMode="flat" icon="color-canvas" selected></Button>
-                                <Button fillMode="flat" icon="palette"></Button>
-                            </div>
-                        </div>
-                        <div className="k-spacer"></div>
-                        <div className="k-coloreditor-header-actions k-hstack">
-                            <Button fillMode="flat" icon="reset-color"></Button>
-                            <div className="k-coloreditor-preview k-vstack">
-                                <ColorPreview className="k-coloreditor-preview-color" color="rgba(0,0,0, 0.5)" />
-                                <ColorPreview className="k-coloreditor-current-color" color="fuchsia"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="k-coloreditor-views k-vstack">
-                        <div className="k-colorgradient">
-                            <div className="k-colorgradient-canvas k-hstack">
-                                <div className="k-hsv-rectangle" style={{ background: "rgb(255, 0, 0)" }}>
-                                    <div className="k-hsv-gradient">
-                                        <div className="k-hsv-draghandle k-draghandle" style={{ top: '50px', left: "73px" }}></div>
-                                    </div>
-                                </div>
-                                <div className="k-hsv-controls k-hstack">
-                                    <div className="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider">
-                                        <div className="k-slider-track-wrap">
-                                            <div className="k-slider-track">
-                                                <div className="k-slider-selection"></div>
-                                                <a className="k-draghandle k-draghandle-end"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider">
-                                        <div className="k-slider-track-wrap">
-                                            <div className="k-slider-track" style={{ background: "linear-gradient(to top, transparent, rgb(255, 0, 0))" }}>
-                                                <div className="k-slider-selection"></div>
-                                                <a className="k-draghandle k-draghandle-end"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="k-colorgradient-inputs k-hstack">
-                                <div className="k-vstack">
-                                    <Button fillMode="flat" icon="arrows-kpi" className="k-colorgradient-toggle-mode" />
-                                </div>
-
-                                <div className="k-vstack">
-                                    <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
-                                    <label className="k-colorgradient-input-label">R</label>
-                                </div>
-
-                                <div className="k-vstack">
-                                    <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
-                                    <label className="k-colorgradient-input-label">G</label>
-                                </div>
-
-                                <div className="k-vstack">
-                                    <NumericTextbox showSpinButton={false} showClearButton={false} value="132" />
-                                    <label className="k-colorgradient-input-label">B</label>
-                                </div>
-
-                                <div className="k-vstack">
-                                    <NumericTextbox showSpinButton={false} showClearButton={false} value="1.00" />
-                                    <label className="k-colorgradient-input-label">A</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <ActionButtons className="k-coloreditor-footer" alignment="end">
-                        <Button className="k-coloreditor-cancel">Cancel</Button>
-                        <Button themeColor="primary" className="k-coloreditor-apply">Apply</Button>
-                    </ActionButtons>
-                </div>
+                <ColorEditor group color="rgba(0,0,0, 0.5)" />
             </section>
 
             <section>
-                <div className="k-flatcolorpicker k-coloreditor">
-                    <div className="k-coloreditor-header k-hstack">
-                        <div className="k-coloreditor-header-actions k-hstack">
-                            <div className="k-button-group">
-                                <Button fillMode="flat" icon="color-canvas"></Button>
-                                <Button fillMode="flat" icon="palette" selected></Button>
-                            </div>
-                        </div>
-                        <div className="k-spacer"></div>
-                        <div className="k-coloreditor-header-actions k-hstack">
-                            <Button fillMode="flat" icon="reset-color"></Button>
-                            <div className="k-coloreditor-preview k-vstack">
-                                <ColorPreview className="k-coloreditor-preview-color" color="rgba(0,0,0, 0.5)" />
-                                <ColorPreview className="k-coloreditor-current-color" color="fuchsia" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="k-coloreditor-views k-vstack">
-                        <ColorPalette palette={PALETTEPRESETS.office}></ColorPalette>
-                    </div>
-                    <ActionButtons className="k-coloreditor-footer" alignment="end">
-                        <Button className="k-coloreditor-cancel">Cancel</Button>
-                        <Button themeColor="primary" className="k-coloreditor-apply">Apply</Button>
-                    </ActionButtons>
-                </div>
+                <ColorEditor group view="palette" color="rgba(0,0,0, 0.5)" />
             </section>
 
         </div>
