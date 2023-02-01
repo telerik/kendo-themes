@@ -7,22 +7,52 @@
 /// @group checkbox
 $kendo-checkbox-border-width: 1px !default;
 
-// Checkbox sizes
+/// Size of a small checkbox.
+/// @group checkbox
+$kendo-checkbox-sm-size: k-map-get( $kendo-spacing, 3 ) !default;
+/// Size of a medium checkbox.
+/// @group checkbox
+$kendo-checkbox-md-size: k-map-get( $kendo-spacing, 4 ) !default;
+/// Size of a large checkbox.
+/// @group checkbox
+$kendo-checkbox-lg-size: k-map-get( $kendo-spacing, 5 ) !default;
+
+/// Glyph size of a small checkbox.
+/// @group checkbox
+$kendo-checkbox-sm-glyph-size: k-map-get( $kendo-spacing, 2.5 ) !default;
+/// Glyph size of a medium checkbox.
+/// @group checkbox
+$kendo-checkbox-md-glyph-size: k-map-get( $kendo-spacing, 3.5 ) !default;
+/// Glyph size of a large checkbox.
+/// @group checkbox
+$kendo-checkbox-lg-glyph-size: k-map-get( $kendo-spacing, 4.5 ) !default;
+
+/// Ripple size of a small checkbox.
+/// @group checkbox
+$kendo-checkbox-sm-ripple-size: 300% !default;
+/// Ripple size of a medium checkbox.
+/// @group checkbox
+$kendo-checkbox-md-ripple-size: 300% !default;
+/// Ripple size of a large checkbox.
+/// @group checkbox
+$kendo-checkbox-lg-ripple-size: 300% !default;
+
+// Map with the different checkbox sizes
 $kendo-checkbox-sizes: (
     sm: (
-        size: k-map-get( $kendo-spacing, 3 ),
-        glyph-size: k-map-get( $kendo-spacing, 2.5 ),
-        ripple-size: 300%
+        size: $kendo-checkbox-sm-size,
+        glyph-size: $kendo-checkbox-sm-glyph-size,
+        ripple-size: $kendo-checkbox-sm-ripple-size
     ),
     md: (
-        size: k-map-get( $kendo-spacing, 4 ),
-        glyph-size: k-map-get( $kendo-spacing, 3.5 ),
-        ripple-size: 300%
+        size: $kendo-checkbox-md-size,
+        glyph-size: $kendo-checkbox-md-glyph-size,
+        ripple-size: $kendo-checkbox-md-ripple-size
     ),
     lg: (
-        size: k-map-get( $kendo-spacing, 5 ),
-        glyph-size: k-map-get( $kendo-spacing, 4.5 ),
-        ripple-size: 300%
+        size: $kendo-checkbox-lg-size,
+        glyph-size: $kendo-checkbox-lg-glyph-size,
+        ripple-size: $kendo-checkbox-lg-ripple-size
     )
 ) !default;
 
