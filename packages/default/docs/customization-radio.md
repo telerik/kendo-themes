@@ -62,6 +62,168 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-radio-sm-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a small radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-md-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 4 )`
+
+</td>
+<td>
+
+`16px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a medium radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-lg-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 5 )`
+
+</td>
+<td>
+
+`20px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a large radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-sm-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2.5 )`
+
+</td>
+<td>
+
+`10px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a small radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-md-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3.5 )`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a medium radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-lg-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 4.5 )`
+
+</td>
+<td>
+
+`18px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a large radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-sm-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a small radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-md-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a medium radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-lg-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a large radio button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-radio-bg</td>
     <td>Color</td>
 <td>

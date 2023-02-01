@@ -80,6 +80,60 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-sm-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-padding-x`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-padding-y</td>
     <td>Number</td>
 <td>
@@ -95,6 +149,60 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 0.5 )`
+
+</td>
+<td>
+
+`2px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the small button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-padding-y`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the medium button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the large button.</div></div>
     </td>
 </tr>
 <tr>
@@ -130,7 +238,61 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-md`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the small button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-font-size`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the medium button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-lg`
+
+</td>
+<td>
+
+`16px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the large button.</div></div>
     </td>
 </tr>
 <tr>
@@ -148,43 +310,61 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-calc-size</td>
-    <td>Calculation</td>
+    <td>$kendo-button-sm-line-height</td>
+    <td>Number</td>
 <td>
 
-`calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )`
+`$kendo-line-height-md`
 
 </td>
 <td>
 
-`calc( 1.4285714286em + 8px + 2px )`
+`1.4285714286`
 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the small button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-inner-calc-size</td>
-    <td>Calculation</td>
+    <td>$kendo-button-md-line-height</td>
+    <td>Number</td>
 <td>
 
-`calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} )`
+`$kendo-button-line-height`
 
 </td>
 <td>
 
-`calc( 1.4285714286em + 8px )`
+`1.4285714286`
 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated inner height of the button. Without the border width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the medium button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-line-height-lg`
+
+</td>
+<td>
+
+`1.5`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the large button.</div></div>
     </td>
 </tr>
 <tr>
