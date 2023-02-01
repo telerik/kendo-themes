@@ -105,7 +105,7 @@
     }
 
     .k-colorgradient-slider.k-alpha-slider .k-slider-track::before {
-        background: url( $kendo-color-gradient-slider-alpha-bgr ) center repeat;
+        background: url(#{$kendo-color-gradient-slider-alpha-bgr}) center repeat;
     }
 
     // Inputs

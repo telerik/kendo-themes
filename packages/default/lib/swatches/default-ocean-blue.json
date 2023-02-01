@@ -227,12 +227,12 @@
         {
             "name": "Scheduler",
             "variables": {
-                "scheduler-event-bg": {
+                "kendo-scheduler-event-bg": {
                     "name": "Scheduler event background",
                     "type": "color",
                     "value": "#1274AC"
                 },
-                "scheduler-event-selected-bg": {
+                "kendo-scheduler-event-selected-bg": {
                     "name": "Scheduler event selected background",
                     "type": "color",
                     "value": "#0f6190"
