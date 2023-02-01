@@ -38,6 +38,7 @@ export * from './floating-label/index';
 export * from './autocomplete/index';
 export * from './colorpalette/index';
 export * from './colorgradient/index';
+export * from './coloreditor/index';
 export * from './captcha/index';
 export * from './colorpicker/index';
 export * from './combobox/index';
