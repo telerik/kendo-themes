@@ -55,9 +55,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #656565"></span>
+<span class="color-preview" style="background-color: #494949"></span>
 
-`#656565`
+`#494949`
 
 </td>
 </tr>
@@ -75,9 +75,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+<span class="color-preview" style="background-color: #ededed"></span>
 
-`rgba(0, 0, 0, 0.08)`
+`#ededed`
 
 </td>
 </tr>

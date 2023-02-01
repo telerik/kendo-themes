@@ -102,12 +102,12 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`1.25rem`
+`1.25`
 
 </td>
 <td>
 
-`1.25rem`
+`1.25`
 
 </td>
 </tr>
