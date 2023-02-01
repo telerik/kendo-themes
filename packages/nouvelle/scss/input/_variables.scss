@@ -142,7 +142,10 @@ $kendo-input-theme-matrix: (
 
 ) !default;
 
-$kendo-input-theme: k-process-variant-matrices( $kendo-input-theme-matrix, null ) !default;
+$kendo-input-theme: k-process-variant-matrices(
+    $kendo-input-theme-matrix,
+    null
+) !default;
 
 
 // Picker theme
@@ -197,7 +200,10 @@ $kendo-picker-theme-matrix: (
 
 ) !default;
 
-$kendo-picker-theme: k-process-variant-matrices( $kendo-picker-theme-matrix, null ) !default;
+$kendo-picker-theme: k-process-variant-matrices(
+    $kendo-picker-theme-matrix,
+    null
+) !default;
 
 
 // Placeholder

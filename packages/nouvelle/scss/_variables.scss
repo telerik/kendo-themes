@@ -49,6 +49,31 @@ $kendo-spacing: (
     24: 6rem
 ) !default;
 
+$kendo-border-radii: (
+    // sass-lint:disable-block leading-zero
+    DEFAULT: k-map-get( $kendo-spacing, 1),
+    0: 0,
+    sm: k-map-get( $kendo-spacing, 0.5),
+    md: k-map-get( $kendo-spacing, 1),
+    lg: k-map-get( $kendo-spacing, 2),
+    full: 9999px
+) !default;
+
+
+// Icons
+$kendo-icon-size: 16px !default;
+
+$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
+$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
+$kendo-icon-size-md: $kendo-icon-size !default;
+$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
+$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
+$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
+$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
+
+$kendo-icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
+
 
 // Color settings
 $kendo-is-dark-theme: false !default;
@@ -132,8 +157,8 @@ $kendo-theme-colors: (
 $kendo-font-size-xs: .75rem !default;
 $kendo-font-size-sm: .875rem !default;
 $kendo-font-size-md: 1rem !default;
-$kendo-font-size-lg: 1.125rem !default;
-$kendo-font-size-xl: 1.25rem !default;
+$kendo-font-size-lg: 1.25rem !default;
+$kendo-font-size-xl: 1.5rem !default;
 
 $kendo-font-sizes: (
     xs: $kendo-font-size-xs,
@@ -157,9 +182,9 @@ $kendo-font-family: null !default;
 
 /// Line height used along with $kendo-font-size.
 /// @group typography
-$kendo-line-height-sm: 1.25rem !default;
-$kendo-line-height-md: 1.5rem !default;
-$kendo-line-height-lg: 1.75rem !default;
+$kendo-line-height-sm: 1.25 !default;
+$kendo-line-height-md: 1.5 !default;
+$kendo-line-height-lg: 1.75 !default;
 
 // Font weight
 $kendo-font-weight-light: 300 !default;
@@ -175,12 +200,14 @@ $kendo-letter-spacing: null !default;
 // Generic styles
 
 // Root styles
-$kendo-body-bg: #ffffff !default;
-$kendo-body-text: #656565 !default;
+$kendo-body-bg: k-get-theme-color( neutral, 0 ) !default;
+$kendo-body-text: k-get-theme-color( neutral, 700 ) !default;
 
-$kendo-app-bg: #f6f6f6 !default;
-$kendo-app-text: #656565 !default;
-$kendo-app-border: rgba( black, .08 ) !default;
+$kendo-subtle-text: k-get-theme-color( neutral, 600 ) !default;
+
+$kendo-app-bg: k-get-theme-color( neutral, 50 ) !default;
+$kendo-app-text: k-get-theme-color( neutral, 700 ) !default;
+$kendo-app-border: k-get-theme-color( neutral, 50 ) !default;
 
 // Link
 $kendo-link-text: $kendo-color-primary !default;
@@ -193,15 +220,15 @@ $kendo-link-hover-text: $kendo-color-primary-darker !default;
 /// Background color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.
 /// @group component
-$kendo-component-bg: $kendo-body-bg !default;
+$kendo-component-bg: k-get-theme-color( neutral, 0 ) !default;
 /// Text color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.
 /// @group component
-$kendo-component-text: $kendo-body-text !default;
+$kendo-component-text: k-get-theme-color( neutral, 700 ) !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.
 /// @group component
-$kendo-component-border: rgba( black, .08 ) !default;
+$kendo-component-border: k-get-theme-color( neutral, 100 ) !default;
 
 /// The background of the components' chrome area.
 $kendo-interactive-bg: #f6f6f6 !default;
@@ -229,3 +256,13 @@ $kendo-selected-text: k-contrast-color( $kendo-selected-bg ) !default;
 $kendo-selected-border: rgba( black, .1 ) !default;
 /// The gradient background of selected items.
 $kendo-selected-gradient: none !default;
+
+$kendo-focus-shadow: null !default;
+$kendo-inset-focus-shadow: null !default;
+
+
+// Validator
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: $kendo-color-error !default;
+$kendo-invalid-border: $kendo-color-error !default;
+$kendo-invalid-shadow: null !default;
