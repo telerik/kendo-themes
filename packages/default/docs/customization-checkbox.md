@@ -44,6 +44,168 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-sm-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a small checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-md-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 4 )`
+
+</td>
+<td>
+
+`16px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a medium checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-lg-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 5 )`
+
+</td>
+<td>
+
+`20px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a large checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-sm-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2.5 )`
+
+</td>
+<td>
+
+`10px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a small checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-md-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3.5 )`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a medium checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-lg-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 4.5 )`
+
+</td>
+<td>
+
+`18px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a large checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-sm-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a small checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-md-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a medium checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-lg-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a large checkbox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-bg</td>
     <td>Color</td>
 <td>

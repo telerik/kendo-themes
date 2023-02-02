@@ -679,6 +679,60 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-sm-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-padding-x`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-padding-y</td>
     <td>Number</td>
 <td>
@@ -694,6 +748,60 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 0.5 )`
+
+</td>
+<td>
+
+`2px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the small button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-padding-y`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the medium button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the large button.</div></div>
     </td>
 </tr>
 <tr>
@@ -729,7 +837,61 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-md`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the small button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-font-size`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the medium button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-lg`
+
+</td>
+<td>
+
+`16px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the large button.</div></div>
     </td>
 </tr>
 <tr>
@@ -747,43 +909,61 @@ The following table lists the available variables for customizing the Default th
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-calc-size</td>
-    <td>Calculation</td>
+    <td>$kendo-button-sm-line-height</td>
+    <td>Number</td>
 <td>
 
-`calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )`
+`$kendo-line-height-md`
 
 </td>
 <td>
 
-`calc( 1.4285714286em + 8px + 2px )`
+`1.4285714286`
 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the small button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-inner-calc-size</td>
-    <td>Calculation</td>
+    <td>$kendo-button-md-line-height</td>
+    <td>Number</td>
 <td>
 
-`calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} )`
+`$kendo-button-line-height`
 
 </td>
 <td>
 
-`calc( 1.4285714286em + 8px )`
+`1.4285714286`
 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated inner height of the button. Without the border width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the medium button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-line-height-lg`
+
+</td>
+<td>
+
+`1.5`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the large button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1728,6 +1908,168 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-sm-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a small checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-md-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 4 )`
+
+</td>
+<td>
+
+`16px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a medium checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-lg-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 5 )`
+
+</td>
+<td>
+
+`20px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a large checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-sm-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2.5 )`
+
+</td>
+<td>
+
+`10px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a small checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-md-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3.5 )`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a medium checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-lg-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 4.5 )`
+
+</td>
+<td>
+
+`18px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a large checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-sm-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a small checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-md-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a medium checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-lg-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a large checkbox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-bg</td>
     <td>Color</td>
 <td>
@@ -2491,6 +2833,60 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-sm-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-md-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-padding-x`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-padding-y</td>
     <td>Number</td>
 <td>
@@ -2506,6 +2902,60 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-sm-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 0.5 )`
+
+</td>
+<td>
+
+`2px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the small chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-md-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-padding-y`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the medium chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 1.5 )`
+
+</td>
+<td>
+
+`6px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the large chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2527,6 +2977,60 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-sm-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-md`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the small chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-md-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-font-size`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the medium chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-md`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the large chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-line-height</td>
     <td>Number</td>
 <td>
@@ -2542,6 +3046,60 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-sm-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-line-height`
+
+</td>
+<td>
+
+`1`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the small chip that are connected to the $kendo-font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-md-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-line-height`
+
+</td>
+<td>
+
+`1`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the medium chip that are connected to the $kendo-font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-line-height`
+
+</td>
+<td>
+
+`1`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the large chip that are connected to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -4850,6 +5408,60 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-input-sm-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of small input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-input-padding-x`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of medium input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of large input components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-padding-y</td>
     <td>Number</td>
 <td>
@@ -4865,6 +5477,60 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sm-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 0.5 )`
+
+</td>
+<td>
+
+`2px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of small input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-input-padding-y`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of medium input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of large input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -4904,6 +5570,60 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-input-sm-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-md`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of small input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-input-font-size`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of medium input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-lg`
+
+</td>
+<td>
+
+`16px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of large input components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-line-height</td>
     <td>Number</td>
 <td>
@@ -4919,6 +5639,60 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sm-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-line-height-md`
+
+</td>
+<td>
+
+`1.4285714286`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of small input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-input-line-height`
+
+</td>
+<td>
+
+`1.4285714286`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of medium input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-line-height-lg`
+
+</td>
+<td>
+
+`1.5`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of large input components.</div></div>
     </td>
 </tr>
 </tbody>
@@ -7945,6 +8719,168 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-sm-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a small radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-md-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 4 )`
+
+</td>
+<td>
+
+`16px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a medium radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-lg-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 5 )`
+
+</td>
+<td>
+
+`20px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a large radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-sm-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2.5 )`
+
+</td>
+<td>
+
+`10px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a small radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-md-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 3.5 )`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a medium radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-lg-glyph-size</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 4.5 )`
+
+</td>
+<td>
+
+`18px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a large radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-sm-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a small radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-md-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a medium radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-lg-ripple-size</td>
+    <td>Number</td>
+<td>
+
+`300%`
+
+</td>
+<td>
+
+`300%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a large radio button.</div></div>
     </td>
 </tr>
 <tr>
