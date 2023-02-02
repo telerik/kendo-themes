@@ -18,17 +18,16 @@ $kendo-appbar-theme-matrix: (
         DEFAULT: ( 0, 700, 0 ),
     ),
     primary: (
-        PALETTE: primerBlue,
+        PALETTE: marsala,
         DEFAULT: ( 700, 0, 700 ),
     ),
-    light: (
-        PALETTE: neutral,
-        DEFAULT: ( 50, 700, 50 ),
-    ),
-    dark: (
+    inverse: (
         PALETTE: neutral,
         DEFAULT: ( 700, 0, 700 ),
     )
 ) !default;
 
-$kendo-appbar-theme: k-process-variant-matrices( $kendo-appbar-theme-matrix, null ) !default;
+$kendo-appbar-theme: k-process-variant-matrices(
+    $kendo-appbar-theme-matrix,
+    null
+) !default;

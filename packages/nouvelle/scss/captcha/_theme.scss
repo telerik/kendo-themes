@@ -1,4 +1,13 @@
-@mixin kendo-captcha--theme() {}
+@mixin kendo-captcha--theme() {
+
+    // Captcha
+    .k-captcha {
+        background-color: var( --kendo-captcha-bg, #{$kendo-captcha-bg} );
+        color: var( --kendo-captcha-text, #{$kendo-captcha-text} );
+        border-color: var( --kendo-captcha-border, #{$kendo-captcha-border} );
+    }
+
+}
 
 
 

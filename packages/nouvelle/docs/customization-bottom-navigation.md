@@ -1,0 +1,270 @@
+---
+title: Customizing Bottom-navigation
+description: "Refer to the list of the Kendo UI Nouvelle theme variables available for customization."
+slug: variables_kendothemenouvelle_bottom-navigation
+position: 9
+---
+
+# Customizing Bottom-navigation
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-bottom-nav-padding-x</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the bottom navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-padding-y</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the bottom navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-gap</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the bottom navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-border-width</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the bottom navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-font-family</td>
+    <td>Null</td>
+<td>
+
+`$kendo-font-family`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the bottom navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-font-size</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the bottom navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-line-height</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the bottom navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+`0.25rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-min-width</td>
+    <td>Number</td>
+<td>
+
+`72px`
+
+</td>
+<td>
+
+`72px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Minimum width of the bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-max-width</td>
+    <td>String</td>
+<td>
+
+`none`
+
+</td>
+<td>
+
+`none`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Maximum width of the bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-border-radius</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the bottom navigation item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-item-gap</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+`0.25rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the bottom navigation item.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+

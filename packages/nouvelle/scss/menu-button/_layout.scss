@@ -1,8 +1,22 @@
 @mixin kendo-menu-button--layout() {
 
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-menu-button {
-        display: none !important;
+    // Menu button
+    .k-menu-button {
+
+        // Menu button arrow
+        .k-button-arrow {
+            width: auto;
+
+            .k-button-icon {
+                min-width: 0;
+            }
+        }
+    }
+
+
+    // Legacy aliases
+    .k-dropdown-button {
+        @extend .k-menu-button !optional;
     }
 
 }

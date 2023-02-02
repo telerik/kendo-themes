@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$kendo-body-bg`
+`k-get-theme-color( neutral, 0 )`
 
 </td>
 <td>
@@ -50,14 +50,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$kendo-body-text`
+`k-get-theme-color( neutral, 700 )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #656565"></span>
+<span class="color-preview" style="background-color: #494949"></span>
 
-`#656565`
+`#494949`
 
 </td>
 </tr>
@@ -70,14 +70,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( black, .08 )`
+`k-get-theme-color( neutral, 100 )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+<span class="color-preview" style="background-color: #ededed"></span>
 
-`rgba(0, 0, 0, 0.08)`
+`#ededed`
 
 </td>
 </tr>

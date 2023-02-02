@@ -50,7 +50,7 @@ export class UploadDropzone extends React.Component<UploadDropzoneProps> {
                     <Button className="k-upload-button">
                         Select files...
                     </Button>
-                    <input id="upload-input" />
+                    <input id="upload-input" className="k-hidden" />
                 </div>
                 <span className={classNames(
                     'k-dropzone-hint',

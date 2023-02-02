@@ -11,7 +11,7 @@
             var( --kendo-dropzone-border, #{$kendo-dropzone-border} )
         );
 
-        > .k-icon,
+        .k-icon,
         .k-dropzone-icon {
             color: var( --kendo-dropzone-icon-text, #{$kendo-dropzone-icon-text} );
         }
