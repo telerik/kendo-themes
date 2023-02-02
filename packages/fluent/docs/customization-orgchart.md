@@ -606,7 +606,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-font-size, inherit )`
+`$kendo-card-title-font-size`
 
 </td>
 <td>
