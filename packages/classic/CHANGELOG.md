@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
+
+
+### Features
+
+* add metro and lavender swatches to classic theme ([f830a21](https://github.com/telerik/kendo-themes/commit/f830a214ab564d89bc08ec8630adecf64ea42455))
+* **classic:** add moonlight swatch ([72a996d](https://github.com/telerik/kendo-themes/commit/72a996d624fad256dc4057701481357dae2c0495))
+* **classic:** add uniform swatch ([6eea351](https://github.com/telerik/kendo-themes/commit/6eea35136565687090194efc41b4a8c409040d61))
+
+
+
+
+
 ## [6.0.3](https://github.com/telerik/kendo-themes/compare/v6.0.2...v6.0.3) (2023-01-17)
 
 

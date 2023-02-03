@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
+
+
+### Bug Fixes
+
+* **calendar:** add missing border when calendar range spans on multiple lines ([e818f19](https://github.com/telerik/kendo-themes/commit/e818f19efbdc128afc2bd3299c931bc3db66316a))
+* **calendar:** update calendar range hover state to match design ([de27d97](https://github.com/telerik/kendo-themes/commit/de27d973d482f930924b5a818d79c7d57aec94d1))
+* **drawer:** fix svg-icon misplacement inside drawer items ([e5352b0](https://github.com/telerik/kendo-themes/commit/e5352b0287244ea2f2b094ee1769412baf33859e))
+* **drawer:** set correct color for svg-icons in drawer items ([e959682](https://github.com/telerik/kendo-themes/commit/e95968256e8edaf3a62bca5db4a1917bbd736de1))
+* **dropzone:** adjust selector for the new k-icon-wrapper-host element ([a5baca5](https://github.com/telerik/kendo-themes/commit/a5baca5bbdb123e254f971b0aa709ce77d145c18))
+* interpolate variables and functions when inside url function ([eda032d](https://github.com/telerik/kendo-themes/commit/eda032dac5881fb1f89c78eaafdf6e83166d7b84))
+* **pager:** remove redundant pager styles ([d85c00d](https://github.com/telerik/kendo-themes/commit/d85c00d9d2047a74628049b82c972e3f0488aaad))
+* **spreadsheet:** correct position of cell selection ([b304913](https://github.com/telerik/kendo-themes/commit/b3049135b27df8d025a07c7952257027482c8eab))
+
+
+
+
+
 ## [6.0.3](https://github.com/telerik/kendo-themes/compare/v6.0.2...v6.0.3) (2023-01-17)
 
 
