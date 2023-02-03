@@ -55,6 +55,7 @@ jobs:
         run: |
           npm run sass
           npm run sass:swatches
+          npm run docs
 
       - name: Pack nuget
         run: |
