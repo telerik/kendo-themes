@@ -10,24 +10,20 @@
 @import "./_text-align.scss";
 @import "./_text-color.scss";
 // text decoration
+@import "./_text-overflow.scss";
 @import "./_text-transform.scss";
-// text overflow
 // text indent
 // vertical align
 @import "./_white-space.scss";
 
 
 @mixin kendo-utils--typography() {
-    /// This is equivalent to `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;`.
-    /// @name .k-text-ellipsis
-    /// @group text
-    .#{$kendo-prefix}text-ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } // sass-lint:disable-line one-declaration-per-line
-
     @include kendo-utils--typography--font-size();
     @include kendo-utils--typography--font-style();
     @include kendo-utils--typography--font-weight();
     @include kendo-utils--typography--text-align();
     @include kendo-utils--typography--text-color();
+    @include kendo-utils--typography--text-overflow();
     @include kendo-utils--typography--text-transform();
     @include kendo-utils--typography--white-space();
 }

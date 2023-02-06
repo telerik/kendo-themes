@@ -1,0 +1,24 @@
+@mixin kendo-utils--typography--text-overflow() {
+
+    // Text overflow utility classes
+    $kendo-utils-text-overflow: k-map-get( $kendo-utils, "text-overflow" ) !default;
+    @include generate-utils( text, text-overflow, $kendo-utils-text-overflow );
+
+
+    // Text truncate utility classes
+    .#{$kendo-prefix}text-truncate {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .\!#{$kendo-prefix}text-truncate {
+        white-space: nowrap !important; // sass-lint:disable-line no-important
+        overflow: hidden !important; // sass-lint:disable-line no-important
+        text-overflow: ellipsis !important; // sass-lint:disable-line no-important
+    }
+
+    // Legacy aliases
+    .#{$kendo-prefix}text-ellipsis { @extend .#{$kendo-prefix}text-truncate !optional; }
+    .\!#{$kendo-prefix}text-ellipsis { @extend .\!#{$kendo-prefix}text-truncate !optional; }
+
+}

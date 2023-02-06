@@ -628,7 +628,10 @@ $kendo-utils: (
         capitalize: capitalize,
         normal-case: none
     ),
-    "text-overflow": (),
+    "text-overflow": (
+        clip: clip,
+        ellipsis: ellipsis
+    ),
     "text-indent": (),
     "vertical-align": (),
     "white-space": (
