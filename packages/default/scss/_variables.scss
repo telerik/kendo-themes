@@ -55,34 +55,70 @@ $kendo-spacing: (
 ) !default;
 
 
-// Icons
+/// Icon size.
+/// @group common
 $kendo-icon-size: 16px !default;
-
+/// xtra small icon size.
+/// @group common
 $kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
+/// Small icon size.
+/// @group common
 $kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
+/// Medium icon size.
+/// @group common
 $kendo-icon-size-md: $kendo-icon-size !default;
+/// Large icon size.
+/// @group common
 $kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
+/// Extra large icon size.
+/// @group common
 $kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
+/// Double extra large icon size.
+/// @group common
 $kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
+/// Triple extra large icon size.
+/// @group common
 $kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
 $kendo-icon-spacing: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
 
-// Metrics
+/// Horizontal padding.
+/// @group common
 $kendo-padding-x: 8px !default;
+/// Vertical padding.
+/// @group common
 $kendo-padding-y: 4px !default;
+/// Small horizontal padding.
+/// @group common
 $kendo-padding-sm-x: k-map-get( $kendo-spacing, 1 ) !default;
+/// Small vertical padding.
+/// @group common
 $kendo-padding-sm-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+/// Medium horizontal padding.
+/// @group common
 $kendo-padding-md-x: k-map-get( $kendo-spacing, 2 ) !default;
+/// Medium vertical padding.
+/// @group common
 $kendo-padding-md-y: k-map-get( $kendo-spacing, 1 ) !default;
+/// Large horizontal padding.
+/// @group common
 $kendo-padding-lg-x: k-map-get( $kendo-spacing, 3 ) !default;
+/// Large vertical padding.
+/// @group common
 $kendo-padding-lg-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// Border radius for all components.
+/// @group common
 $kendo-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+/// Small border radius.
+/// @group common
 $kendo-border-radius-sm: $kendo-border-radius - k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+/// Medium border radius.
+/// @group common
 $kendo-border-radius-md: $kendo-border-radius !default;
+/// Large border radius.
+/// @group common
 $kendo-border-radius-lg: $kendo-border-radius + k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 
 $kendo-border-radii: (
@@ -206,10 +242,20 @@ $kendo-theme-colors: (
 /// Base font size across all components.
 /// @group typography
 $kendo-font-size: 14px !default;
+/// Extra small font size across all components.
+/// @group typography
 $kendo-font-size-xs: 10px !default;
+/// Small font size across all components.
+/// @group typography
 $kendo-font-size-sm: 12px !default;
+/// Medium font size across all components.
+/// @group typography
 $kendo-font-size-md: $kendo-font-size !default;
+/// Large font size across all components.
+/// @group typography
 $kendo-font-size-lg: 16px !default;
+/// Extra large font size across all components.
+/// @group typography
 $kendo-font-size-xl: 20px !default;
 
 $kendo-font-sizes: (
@@ -235,29 +281,52 @@ $kendo-font-family: inherit !default;
 /// Line height used along with $kendo-font-size.
 /// @group typography
 $kendo-line-height: k-math-div( 20, 14 ) !default;
+/// Extra small line height used along with $kendo-font-size-xs.
+/// @group typography
 $kendo-line-height-xs: 1 !default;
+/// Small line height used along with $kendo-font-size-sm.
+/// @group typography
 $kendo-line-height-sm: 1.25 !default;
+/// Medium line height used along with $kendo-font-size-md.
+/// @group typography
 $kendo-line-height-md: $kendo-line-height !default;
+/// Large line height used along with $kendo-font-size-lg.
+/// @group typography
 $kendo-line-height-lg: 1.5 !default;
 $kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
 
-// Font weight
+/// Light font weight.
+/// @group typography
 $kendo-font-weight-light: 300 !default;
+/// Normal font weight.
+/// @group typography
 $kendo-font-weight-normal: 400 !default;
+/// Medium font weight.
+/// @group typography
 $kendo-font-weight-medium: 500 !default;
+/// Semibold font weight.
+/// @group typography
 $kendo-font-weight-semibold: 600 !default;
+/// Bold font weight.
+/// @group typography
 $kendo-font-weight-bold: 700 !default;
 
-// Letter Spacing
+/// Letter spacing.
+/// @group typography
 $kendo-letter-spacing: null !default;
 
 
 // Generic styles
 
-// Root styles
+/// Background color of the body.
+/// @group common
 $kendo-body-bg: $kendo-color-white !default;
+/// Text color of the body.
+/// @group common
 $kendo-body-text: #424242 !default;
 
+/// Subtle text color.
+/// @group common
 $kendo-subtle-text: #666666 !default;
 
 $kendo-app-bg: k-try-shade( $kendo-body-bg, .25 ) !default;
@@ -265,7 +334,11 @@ $kendo-app-text: $kendo-body-text !default;
 $kendo-app-border: rgba( $kendo-color-black, .08 ) !default;
 
 // Link
+/// Text color of the links.
+/// @group common
 $kendo-link-text: $kendo-color-primary !default;
+/// Text color of the links on hover.
+/// @group common
 $kendo-link-hover-text: $kendo-color-primary-darker !default;
 
 
@@ -313,20 +386,28 @@ $kendo-selected-border: $kendo-base-border !default;
 /// The gradient background of selected items.
 $kendo-selected-gradient: $kendo-base-gradient !default;
 
+/// The background of selected and hovered items.
 $kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
+/// The text color of selected and hovered items.
 $kendo-selected-hover-text: $kendo-selected-text !default;
+/// The border of selected and hovered items.
 $kendo-selected-hover-border: $kendo-base-border !default;
+/// The gradient of selected and hovered items.
 $kendo-selected-hover-gradient: $kendo-base-gradient !default;
 
 // TODO: refactor
+/// Box shadow of focused items.
 $kendo-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
+/// Transition used across all components.
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
 
-// Disabled mixin variables
+/// Text color of disabled items.
 $kendo-disabled-text: #8f8f8f !default;
+/// Filter used for disabled items.
 $kendo-disabled-filter: grayscale(.1) !default;
+/// Opacity used for disabled items.
 $kendo-disabled-opacity: .6 !default;
 
 $kendo-disabled-styling: (
@@ -337,18 +418,29 @@ $kendo-disabled-styling: (
 
 // Generic styles
 
-// TODO: refactor once we extract drag drop as separate module
-
-
-// Header
+/// Background color of the component header.
+/// @group component
 $kendo-component-header-bg: $kendo-base-bg !default;
+/// Text color of the component header.
+/// @group component
 $kendo-component-header-text: $kendo-base-text !default;
+/// Border color of the component header.
+/// @group component
 $kendo-component-header-border: $kendo-base-border !default;
+/// Gradient of the component header.
+/// @group component
 $kendo-component-header-gradient: null !default;
 
 
-// Validator
+/// Background color of the invalid items.
+/// @group component
 $kendo-invalid-bg: null !default;
+/// Text color of the invalid items.
+/// @group component
 $kendo-invalid-text: $kendo-color-error !default;
+/// Border color of the invalid items.
+/// @group component
 $kendo-invalid-border: $kendo-color-error !default;
+/// Shadow of the invalid items.
+/// @group component
 $kendo-invalid-shadow: null !default;
