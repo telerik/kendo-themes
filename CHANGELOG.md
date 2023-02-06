@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
+
+
+### Bug Fixes
+
+* **bootstrap:** use logic from bootstrap dark theme to implement dark swatches ([adff721](https://github.com/telerik/kendo-themes/commit/adff721b24181c10c5bd8aee376fa2d85b25c4b0))
+* **calendar:** add missing border when calendar range spans on multiple lines ([e818f19](https://github.com/telerik/kendo-themes/commit/e818f19efbdc128afc2bd3299c931bc3db66316a))
+* **calendar:** update calendar range hover state to match design ([de27d97](https://github.com/telerik/kendo-themes/commit/de27d973d482f930924b5a818d79c7d57aec94d1))
+* correctly detect kendo-is-dark-theme variable ([2dcb6d8](https://github.com/telerik/kendo-themes/commit/2dcb6d868d2b0576c77708b841b9b743948cf299))
+* **drawer:** fix svg-icon misplacement inside drawer items ([e5352b0](https://github.com/telerik/kendo-themes/commit/e5352b0287244ea2f2b094ee1769412baf33859e))
+* **drawer:** set correct color for svg-icons in drawer items ([e959682](https://github.com/telerik/kendo-themes/commit/e95968256e8edaf3a62bca5db4a1917bbd736de1))
+* **dropzone:** adjust selector for the new k-icon-wrapper-host element ([a5baca5](https://github.com/telerik/kendo-themes/commit/a5baca5bbdb123e254f971b0aa709ce77d145c18))
+* **html:** hide upload input to allow select button hover ([450ecbc](https://github.com/telerik/kendo-themes/commit/450ecbc75df02f7d30e82f69b86559e6802e5fdb))
+* interpolate variables and functions when inside url function ([eda032d](https://github.com/telerik/kendo-themes/commit/eda032dac5881fb1f89c78eaafdf6e83166d7b84))
+* **pager:** remove grid pager overrides in bootstrap ([14280f9](https://github.com/telerik/kendo-themes/commit/14280f9e0bf4e002ab92338309af47256d55efa5))
+* **pager:** remove redundant pager styles ([d85c00d](https://github.com/telerik/kendo-themes/commit/d85c00d9d2047a74628049b82c972e3f0488aaad))
+* **scheduler:** variables name in ocean-blue swatch ([2ab572d](https://github.com/telerik/kendo-themes/commit/2ab572d3ca550322e3b43cbc1bd805baf000c88d))
+* **spreadsheet:** correct position of cell selection ([b304913](https://github.com/telerik/kendo-themes/commit/b3049135b27df8d025a07c7952257027482c8eab))
+* update nouvelle styles using the color system ([42c2439](https://github.com/telerik/kendo-themes/commit/42c2439ab861e2db6b7a91aee69f3ae6d404c6d7))
+
+
+### Features
+
+* add metro and lavender swatches to classic theme ([f830a21](https://github.com/telerik/kendo-themes/commit/f830a214ab564d89bc08ec8630adecf64ea42455))
+* **classic:** add moonlight swatch ([72a996d](https://github.com/telerik/kendo-themes/commit/72a996d624fad256dc4057701481357dae2c0495))
+* **classic:** add uniform swatch ([6eea351](https://github.com/telerik/kendo-themes/commit/6eea35136565687090194efc41b4a8c409040d61))
+
+
+
+
+
 ## [6.0.3](https://github.com/telerik/kendo-themes/compare/v6.0.2...v6.0.3) (2023-01-17)
 
 

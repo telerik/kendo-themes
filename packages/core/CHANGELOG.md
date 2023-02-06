@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
+
+
+### Bug Fixes
+
+* correctly detect kendo-is-dark-theme variable ([2dcb6d8](https://github.com/telerik/kendo-themes/commit/2dcb6d868d2b0576c77708b841b9b743948cf299))
+
+
+
+
+
 ## [6.0.3](https://github.com/telerik/kendo-themes/compare/v6.0.2...v6.0.3) (2023-01-17)
 
 

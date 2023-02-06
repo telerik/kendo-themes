@@ -13,29 +13,53 @@ $kendo-chip-spacing: k-map-get( $kendo-spacing, 1 ) !default;
 /// Horizontal padding of the chip.
 /// @group chip
 $kendo-chip-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+/// Horizontal padding of the small chip.
+/// @group chip
 $kendo-chip-sm-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-chip-md-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+/// Horizontal padding of the medium chip.
+/// @group chip
+$kendo-chip-md-padding-x: $kendo-chip-padding-x !default;
+/// Horizontal padding of the large chip.
+/// @group chip
 $kendo-chip-lg-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 
 /// Vertical padding of the chip.
 /// @group chip
 $kendo-chip-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+/// Vertical padding of the small chip.
+/// @group chip
 $kendo-chip-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-$kendo-chip-md-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+/// Vertical padding of the medium chip.
+/// @group chip
+$kendo-chip-md-padding-y: $kendo-chip-padding-y !default;
+/// Vertical padding of the large chip.
+/// @group chip
 $kendo-chip-lg-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 
 /// Font sizes of the chip.
 /// @group chip
 $kendo-chip-font-size: $kendo-font-size-md !default;
+/// Font sizes of the small chip.
+/// @group chip
 $kendo-chip-sm-font-size: $kendo-font-size-md !default;
-$kendo-chip-md-font-size: $kendo-font-size-md !default;
+/// Font sizes of the medium chip.
+/// @group chip
+$kendo-chip-md-font-size: $kendo-chip-font-size !default;
+/// Font sizes of the large chip.
+/// @group chip
 $kendo-chip-lg-font-size: $kendo-font-size-md !default;
 
 /// Line heights of the chip that are connected to the $kendo-font-size.
 /// @group chip
 $kendo-chip-line-height: 1 !default;
+/// Line heights of the small chip that are connected to the $kendo-font-size.
+/// @group chip
 $kendo-chip-sm-line-height: $kendo-chip-line-height !default;
+/// Line heights of the medium chip that are connected to the $kendo-font-size.
+/// @group chip
 $kendo-chip-md-line-height: $kendo-chip-line-height !default;
+/// Line heights of the large chip that are connected to the $kendo-font-size.
+/// @group chip
 $kendo-chip-lg-line-height: $kendo-chip-line-height !default;
 
 /// Calculated height of the chip.

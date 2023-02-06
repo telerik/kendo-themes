@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
+
+
+### Bug Fixes
+
+* **html:** hide upload input to allow select button hover ([450ecbc](https://github.com/telerik/kendo-themes/commit/450ecbc75df02f7d30e82f69b86559e6802e5fdb))
+
+
+
+
+
 ## [6.0.2](https://github.com/telerik/kendo-themes/compare/v6.0.1...v6.0.2) (2023-01-16)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

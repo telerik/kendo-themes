@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
+
+
+### Bug Fixes
+
+* **bootstrap:** use logic from bootstrap dark theme to implement dark swatches ([adff721](https://github.com/telerik/kendo-themes/commit/adff721b24181c10c5bd8aee376fa2d85b25c4b0))
+* **pager:** remove grid pager overrides in bootstrap ([14280f9](https://github.com/telerik/kendo-themes/commit/14280f9e0bf4e002ab92338309af47256d55efa5))
+* **pager:** remove redundant pager styles ([d85c00d](https://github.com/telerik/kendo-themes/commit/d85c00d9d2047a74628049b82c972e3f0488aaad))
+
+
+
+
+
 ## [6.0.3](https://github.com/telerik/kendo-themes/compare/v6.0.2...v6.0.3) (2023-01-17)
 
 

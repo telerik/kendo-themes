@@ -9,8 +9,7 @@
     }
 
 
-
-
+    // Theme
     @each $variant, $theme-props in $kendo-appbar-theme {
         $suffix: if( $variant == DEFAULT, "", "-#{$variant}" );
 
@@ -26,6 +25,13 @@
             --kendo-appbar-shadow: #{k-var( --kendo-appbar-#{$variant}-shadow, $_shadow )};
         }
     }
+
+
+    // Legacy aliases
+    .k-appbar-secondary {
+        @extend .k-appbar-neutral !optional;
+    }
+
 }
 
 

@@ -80,6 +80,60 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-sm-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-md-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-padding-x`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-padding-y</td>
     <td>Number</td>
 <td>
@@ -95,6 +149,60 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-sm-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 0.5 )`
+
+</td>
+<td>
+
+`2px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the small chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-md-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-padding-y`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the medium chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-padding-y</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $kendo-spacing, 1.5 )`
+
+</td>
+<td>
+
+`6px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the large chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -116,6 +224,60 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-sm-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-md`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the small chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-md-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-font-size`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the medium chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-font-size</td>
+    <td>Number</td>
+<td>
+
+`$kendo-font-size-md`
+
+</td>
+<td>
+
+`14px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the large chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-line-height</td>
     <td>Number</td>
 <td>
@@ -131,6 +293,60 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-sm-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-line-height`
+
+</td>
+<td>
+
+`1`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the small chip that are connected to the $kendo-font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-md-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-line-height`
+
+</td>
+<td>
+
+`1`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the medium chip that are connected to the $kendo-font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-lg-line-height</td>
+    <td>Number</td>
+<td>
+
+`$kendo-chip-line-height`
+
+</td>
+<td>
+
+`1`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the large chip that are connected to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>

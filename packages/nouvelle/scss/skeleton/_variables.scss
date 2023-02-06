@@ -1,0 +1,22 @@
+// Skeleton
+
+/// Text transform scale of the skeleton.
+/// @group skeleton
+$kendo-skeleton-text-transform: scale( 1, .6 ) !default;
+/// Border radius of the skeleton text.
+/// @group skeleton
+$kendo-skeleton-text-border-radius: k-map-get( $kendo-border-radii, md ) !default;
+
+/// Border radius of the rectangle skeleton.
+/// @group skeleton
+$kendo-skeleton-rect-border-radius: k-map-get( $kendo-border-radii, md ) !default;
+/// Border radius of the circle skeleton.
+/// @group skeleton
+$kendo-skeleton-circle-border-radius: 9999px !default;
+
+/// Background color of the skeleton item.
+/// @group skeleton
+$kendo-skeleton-item-bg: k-get-theme-color( neutral, 100 ) !default;
+/// Background color of the skeleton wave animation.
+/// @group skeleton
+$kendo-skeleton-wave-bg: k-get-theme-color( neutral, 50 ) !default;

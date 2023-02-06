@@ -72,11 +72,11 @@
     }
 
     .k-slider-horizontal .k-tick {
-        background-image: url( $kendo-slider-tick-v-image );
+        background-image: url(#{$kendo-slider-tick-v-image});
     }
 
     .k-slider-vertical .k-tick {
-        background-image: url( $kendo-slider-tick-h-image );
+        background-image: url(#{$kendo-slider-tick-h-image});
     }
 
 
