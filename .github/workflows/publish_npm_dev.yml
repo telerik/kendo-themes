@@ -77,6 +77,7 @@ jobs:
 
       - name: Push release commit
         run: |
+          git pull --rebase origin develop:tmp-release-dev
           git push origin develop:tmp-release-dev
 
       - name: Mark checks as successful
