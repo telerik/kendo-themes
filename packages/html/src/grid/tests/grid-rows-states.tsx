@@ -96,7 +96,7 @@ root.render(
                                 <td className="k-table-td">N/A</td>
                                 <td className="k-table-td k-selected">Focus + Selected</td>
                             </tr>
-                            <tr className="k-alt k-focus">
+                            <tr className="k-table-row k-table-alt-row k-alt k-focus">
                                 <td className="k-table-td">
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
