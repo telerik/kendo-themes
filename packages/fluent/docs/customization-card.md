@@ -314,6 +314,42 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-card-header-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size-lg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text size of the card header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-header-font-family</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-family, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the card header text.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-card-header-font-weight</td>
     <td></td>
 <td>
@@ -329,6 +365,24 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text weight of the card header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-header-line-height</td>
+    <td></td>
+<td>
+
+`var( --kendo-line-height, normal )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the card header.</div></div>
     </td>
 </tr>
 <tr>
@@ -584,6 +638,42 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-card-title-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size-lg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text size of the card title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-title-font-family</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-family, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the card title.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-card-title-font-weight</td>
     <td></td>
 <td>
@@ -602,6 +692,24 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-card-title-line-height</td>
+    <td></td>
+<td>
+
+`var( --kendo-line-height, normal )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the card title.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-card-title-margin-bottom</td>
     <td></td>
 <td>
@@ -617,6 +725,60 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Bottom margin of the card title.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-subtitle-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size-sm, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the card subtitle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-subtitle-font-family</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-family, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the card subtitle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-card-subtitle-line-height</td>
+    <td></td>
+<td>
+
+`var( --kendo-line-height, normal )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the card subtitle.</div></div>
     </td>
 </tr>
 <tr>

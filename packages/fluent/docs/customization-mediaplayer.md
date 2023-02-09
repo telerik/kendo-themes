@@ -188,6 +188,24 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-media-player-title-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size-xl, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Media player title font size.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-media-player-titlebar-padding-x</td>
     <td></td>
 <td>
