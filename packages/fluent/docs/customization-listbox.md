@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Listbox
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-listbox-spacing</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin between the listbox elements.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-button-spacing</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin between the listbox buttons.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-width</td>
     <td></td>
-<td>
-
-`10em`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>10em</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the listbox.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-height</td>
     <td></td>
-<td>
-
-`200px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>200px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the listbox.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-border-width</td>
     <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the listbox.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-font-family</td>
     <td></td>
-<td>
-
-`var( --kendo-font-family, normal )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-family, normal )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the listbox.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-font-size</td>
     <td></td>
-<td>
-
-`var( --kendo-font-size, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the listbox.</div></div>
@@ -154,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-line-height</td>
     <td></td>
-<td>
-
-`var( --kendo-line-height, normal )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the listbox.</div></div>
@@ -172,16 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-bg</td>
     <td></td>
-<td>
-
-`var( --kendo-component-bg, transparent )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-bg, transparent )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the listbox component.</div></div>
@@ -190,16 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-text</td>
     <td></td>
-<td>
-
-`var( --kendo-component-text, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-text, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the listbox component.</div></div>
@@ -208,16 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-border</td>
     <td></td>
-<td>
-
-`var( --kendo-component-border, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-border, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the listbox component.</div></div>
@@ -226,16 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-drop-hint-width</td>
     <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the drop hint.</div></div>
@@ -244,16 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listbox-drop-hint-border-color</td>
     <td></td>
-<td>
-
-`get-theme-color-var( primary-100 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the drop hint.</div></div>

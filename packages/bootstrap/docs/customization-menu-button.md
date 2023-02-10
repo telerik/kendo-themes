@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Menu-button
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-menu-button-arrow-padding-x</td>
     <td>Number</td>
-<td>
-
-`$kendo-button-padding-y`
-
-</td>
-<td>
-
-`0.375rem`
-
-</td>
+    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>0.375rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>

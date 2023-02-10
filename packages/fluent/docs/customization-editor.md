@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Editor
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-editor-border-width</td>
     <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the editor</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-font-family</td>
     <td></td>
-<td>
-
-`var( --kendo-font-family, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the editor</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-font-size</td>
     <td></td>
-<td>
-
-`var( --kendo-font-size, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the editor</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-line-height</td>
     <td></td>
-<td>
-
-`var( --kendo-line-height, normal )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the editor</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-text</td>
     <td></td>
-<td>
-
-`var( --kendo-component-text, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-text, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the editor</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-bg</td>
     <td></td>
-<td>
-
-`var( --kendo-component-bg, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-bg, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the editor</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-border</td>
     <td></td>
-<td>
-
-`var( --kendo-component-border, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-border, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around editor</div></div>
@@ -154,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-placeholder-text</td>
     <td></td>
-<td>
-
-`var( --kendo-input-placeholder-text, #{$kendo-input-placeholder-text} )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-input-placeholder-text, #{$kendo-input-placeholder-text} )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The placeholder text color of the editor</div></div>
@@ -172,16 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-placeholder-opacity</td>
     <td></td>
-<td>
-
-`var( --kendo-input-placeholder-opacity, #{$kendo-input-placeholder-opacity} )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-input-placeholder-opacity, #{$kendo-input-placeholder-opacity} )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The placeholder opacity of the editor</div></div>
@@ -190,16 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-content-outline-color</td>
     <td></td>
-<td>
-
-`var( --kendo-body-text, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-body-text, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the editor content</div></div>
@@ -208,16 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-resize-handle-size</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the editor resize handle</div></div>
@@ -226,16 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-resize-handle-border-width</td>
     <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the editor resize handle</div></div>
@@ -244,16 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-export-tool-icon-margin-x</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the editor export tool icon</div></div>
@@ -262,16 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-selectednode-outline-width</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 0.5 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> The outline width of the editor selected node</div></div>
@@ -280,16 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-selected-text</td>
     <td></td>
-<td>
-
-`$kendo-color-white`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-color-white</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected text color of the editor</div></div>
@@ -298,16 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-selected-bg</td>
     <td></td>
-<td>
-
-`get-theme-color-var( primary-100 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The selected background color of the editor</div></div>
@@ -316,16 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td></td>
-<td>
-
-`get-theme-color-var( primary-60 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>get-theme-color-var( primary-60 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The highlighted background color of the editor</div></div>
@@ -334,16 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-resize-handle-border</td>
     <td></td>
-<td>
-
-`$kendo-color-black`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-color-black</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the editor resize handle</div></div>
@@ -352,16 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-resize-handle-bg</td>
     <td></td>
-<td>
-
-`$kendo-color-white`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-color-white</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the editor resize handle</div></div>
@@ -370,16 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-selectednode-outline-color</td>
     <td></td>
-<td>
-
-`get-theme-color-var( primary-100 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the editor selected node</div></div>
@@ -388,16 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-inline-td-border</td>
     <td></td>
-<td>
-
-`var( --kendo-component-border, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-border, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the inline editor data cell</div></div>
@@ -406,16 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-inline-hover-border</td>
     <td></td>
-<td>
-
-`var( --kendo-component-border, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-border, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the inline editor</div></div>

@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Dialog
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,20 +30,12 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-dialog-theme-colors</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     "primary": k-map-get($kendo-theme-colors, "primary"),
     "light": k-map-get($kendo-theme-colors, "light"),
     "dark": k-map-get($kendo-theme-colors, "dark")
-)`
-
-</td>
-<td>
-
-`("primary": #f35800, "light": #ebebeb, "dark": #404040)`
-
-</td>
+)</code></td>
+    <td><code>("primary": #f35800, "light": #ebebeb, "dark": #404040)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the dialog.</div></div>

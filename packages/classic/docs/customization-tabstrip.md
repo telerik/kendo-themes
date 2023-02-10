@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Tabstrip
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-tabstrip-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabstrip component</div></div>
@@ -46,18 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip component</div></div>
@@ -66,18 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
@@ -86,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`8px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of tabs</div></div>
@@ -104,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`4px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of tabs</div></div>
@@ -122,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabs</div></div>
@@ -140,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-border-radius</td>
     <td>Number</td>
-<td>
-
-`$kendo-border-radius-md`
-
-</td>
-<td>
-
-`4px`
-
-</td>
+    <td><code>$kendo-border-radius-md</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of tabs</div></div>
@@ -158,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-gap</td>
     <td>Number</td>
-<td>
-
-`0`
-
-</td>
-<td>
-
-`0`
-
-</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between tabs</div></div>
@@ -176,18 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-base-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f0f0f0"></span>
-
-`#f0f0f0`
-
-</td>
+    <td><code>$kendo-base-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabs</div></div>
@@ -196,18 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-base-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-base-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabs</div></div>
@@ -216,18 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-base-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-base-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabs</div></div>
@@ -236,16 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-gradient</td>
     <td>List</td>
-<td>
-
-`$kendo-base-gradient`
-
-</td>
-<td>
-
-`rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)`
-
-</td>
+    <td><code>$kendo-base-gradient</code></td>
+    <td><code>rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of tabs</div></div>
@@ -254,18 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-hover-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-hover-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #dddddd"></span>
-
-`#dddddd`
-
-</td>
+    <td><code>$kendo-hover-bg</code></td>
+    <td><span class="color-preview" style="background-color: #dddddd"></span><code>#dddddd</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered tabs</div></div>
@@ -274,18 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-hover-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-hover-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-hover-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered tabs</div></div>
@@ -294,18 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-hover-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-hover-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #bababa"></span>
-
-`#bababa`
-
-</td>
+    <td><code>$kendo-hover-border</code></td>
+    <td><span class="color-preview" style="background-color: #bababa"></span><code>#bababa</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered tabs</div></div>
@@ -314,16 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-hover-gradient</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of hovered tabs</div></div>
@@ -332,18 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected tabs</div></div>
@@ -352,18 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected tabs</div></div>
@@ -372,18 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected tabs</div></div>
@@ -392,16 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-gradient</td>
     <td>Bool</td>
-<td>
-
-`false`
-
-</td>
-<td>
-
-`false`
-
-</td>
+    <td><code>false</code></td>
+    <td><code>false</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of selected tabs</div></div>
@@ -410,16 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of tabstrip content</div></div>
@@ -428,16 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of tabstrip content</div></div>
@@ -446,16 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabstrip content</div></div>
@@ -464,18 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabstrip content</div></div>
@@ -484,18 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tabstrip content</div></div>
@@ -504,18 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>
@@ -524,18 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-content-focus-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip focused content</div></div>

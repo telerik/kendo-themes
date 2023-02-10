@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Charts
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,20 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-series-a</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #ff6358"></span>
-
-`#ff6358`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ff6358"></span>
-
-`#ff6358`
-
-</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The first base series color and its light and dark shades.</div></div>
@@ -50,20 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffe162"></span>
-
-`#ffe162`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffe162"></span>
-
-`#ffe162`
-
-</td>
+    <td><span class="color-preview" style="background-color: #ffe162"></span><code>#ffe162</code></td>
+    <td><span class="color-preview" style="background-color: #ffe162"></span><code>#ffe162</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second base series color and its light and dark shades.</div></div>
@@ -72,20 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #4cd180"></span>
-
-`#4cd180`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #4cd180"></span>
-
-`#4cd180`
-
-</td>
+    <td><span class="color-preview" style="background-color: #4cd180"></span><code>#4cd180</code></td>
+    <td><span class="color-preview" style="background-color: #4cd180"></span><code>#4cd180</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third base series color and its light and dark shades.</div></div>
@@ -94,20 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #4b5ffa"></span>
-
-`#4b5ffa`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #4b5ffa"></span>
-
-`#4b5ffa`
-
-</td>
+    <td><span class="color-preview" style="background-color: #4b5ffa"></span><code>#4b5ffa</code></td>
+    <td><span class="color-preview" style="background-color: #4b5ffa"></span><code>#4b5ffa</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fourth base series color and its light and dark shades.</div></div>
@@ -116,20 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #ac58ff"></span>
-
-`#ac58ff`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ac58ff"></span>
-
-`#ac58ff`
-
-</td>
+    <td><span class="color-preview" style="background-color: #ac58ff"></span><code>#ac58ff</code></td>
+    <td><span class="color-preview" style="background-color: #ac58ff"></span><code>#ac58ff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fifth base series color and its light and dark shades.</div></div>
@@ -138,20 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #ff5892"></span>
-
-`#ff5892`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ff5892"></span>
-
-`#ff5892`
-
-</td>
+    <td><span class="color-preview" style="background-color: #ff5892"></span><code>#ff5892</code></td>
+    <td><span class="color-preview" style="background-color: #ff5892"></span><code>#ff5892</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sixth base series color and its light and dark shades.</div></div>
@@ -160,18 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-1</td>
     <td>Color</td>
-<td>
-
-`$kendo-series-a`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ff6358"></span>
-
-`#ff6358`
-
-</td>
+    <td><code>$kendo-series-a</code></td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series colors in order:<br />base, light, dark, lighter, darker</div></div>
@@ -180,18 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>Color</td>
-<td>
-
-`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
-
-`rgba(0, 0, 0, 0.08)`
-
-</td>
+    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Chart grid lines (major).</div></div>
@@ -200,18 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>Color</td>
-<td>
-
-`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span>
-
-`rgba(0, 0, 0, 0.04)`
-
-</td>
+    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Chart grid lines (minor).</div></div>

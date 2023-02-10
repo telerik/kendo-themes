@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Chip
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-chip-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the chip.</div></div>
@@ -64,9 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-list-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         spacing: k-map-get( $kendo-spacing, 1 )
     ),
@@ -76,14 +60,8 @@ The following table lists the available variables for customization.
     lg: (
         spacing: k-map-get( $kendo-spacing, 1 )
     )
-)`
-
-</td>
-<td>
-
-`(sm: (spacing: 0.25rem), md: (spacing: 0.25rem), lg: (spacing: 0.25rem))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (spacing: 0.25rem), md: (spacing: 0.25rem), lg: (spacing: 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
