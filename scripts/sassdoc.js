@@ -8,7 +8,7 @@ const srcTheme = require('../sassdoc/sassdoc-theme.js');
 
 const themeDir = process.cwd();
 const config = JSON.parse( fs.readFileSync( path.resolve( themeDir, '.sassdocrc' ) ) );
-const resolvedVars = JSON.parse( fs.readFileSync( path.resolve( themeDir, 'dist', 'variables.json' ) ) );
+const resolvedVars = JSON.parse( fs.readFileSync( path.resolve( themeDir, 'dist/meta', 'variables.json' ) ) );
 const defaults = {
     src: 'scss',
     dest: 'docs',
@@ -42,7 +42,7 @@ function _capitalize(string) {
 
     // Write raw data to file
     fs.writeFileSync(
-        path.resolve( themeDir, 'dist', 'sassdoc-raw-data.json' ),
+        path.resolve( themeDir, 'dist/meta', 'sassdoc-raw-data.json' ),
         JSON.stringify( rawData, null, 4 )
     );
 
@@ -180,7 +180,7 @@ function _capitalize(string) {
 
     // Write data to file
     fs.writeFileSync(
-        path.resolve( themeDir, 'dist', 'sassdoc-data.json' ),
+        path.resolve( themeDir, 'dist/meta', 'sassdoc-data.json' ),
         JSON.stringify( data, null, 4 )
     );
 

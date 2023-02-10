@@ -21,6 +21,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: develop
+          fetch-depth: '0'
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup git
@@ -56,6 +57,7 @@ jobs:
           npm run sass
           npm run sass:flat
           npm run dist:swatches
+          npm run docs
 
       - name: Lerna publish
         run: |
