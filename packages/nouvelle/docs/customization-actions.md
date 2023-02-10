@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Actions
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-actions-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of actions container.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actions-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of actions container.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actions-border-width</td>
     <td>List</td>
-<td>
-
-`0 0 0 0`
-
-</td>
-<td>
-
-`0 0 0 0`
-
-</td>
+    <td><code>0 0 0 0</code></td>
+    <td><code>0 0 0 0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around actions container.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actions-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of actions container.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actions-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of actions container.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actions-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of actions container.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-actions-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items in actions container</div></div>

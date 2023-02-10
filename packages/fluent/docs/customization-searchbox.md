@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Searchbox
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-searchbox-icon-color</td>
     <td></td>
-<td>
-
-`get-theme-color-var( primary-100 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the searchbox icon.</div></div>

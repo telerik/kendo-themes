@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Avatar
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-avatar-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the avatar.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-font-family</td>
     <td>String</td>
-<td>
-
-`$kendo-font-family`
-
-</td>
-<td>
-
-`inherit`
-
-</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>inherit</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the avatar.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`14px`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the avatar.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.4285714286`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.4285714286</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the avatar.</div></div>
@@ -100,20 +70,12 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: k-map-get( $kendo-spacing, 4 ),
     md: k-map-get( $kendo-spacing, 8 ),
     lg: k-map-get( $kendo-spacing, 16 )
-)`
-
-</td>
-<td>
-
-`(sm: 16px, md: 32px, lg: 64px)`
-
-</td>
+)</code></td>
+    <td><code>(sm: 16px, md: 32px, lg: 64px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the avatar.</div></div>
@@ -122,16 +84,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-theme-colors</td>
     <td>Map</td>
-<td>
-
-`$kendo-theme-colors`
-
-</td>
-<td>
-
-`("primary": #f35800, "secondary": #e9e9e9, "tertiary": #03a9f4, "info": #2498bc, "success": #3ea44e, "warning": #ff9800, "error": #d92800, "dark": #404040, "light": #ebebeb, "inverse": #404040)`
-
-</td>
+    <td><code>$kendo-theme-colors</code></td>
+    <td><code>("primary": #f35800, "secondary": #e9e9e9, "tertiary": #03a9f4, "info": #2498bc, "success": #3ea44e, "warning": #ff9800, "error": #d92800, "dark": #404040, "light": #ebebeb, "inverse": #404040)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the avatar.</div></div>

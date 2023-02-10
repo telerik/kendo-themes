@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Listview
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-listview-padding-x</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of listview.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-padding-y</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of listview.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-border-width</td>
     <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of listview.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-header-padding-x</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of listview header.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-header-padding-y</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of listview header.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-footer-padding-x</td>
     <td></td>
-<td>
-
-`$kendo-listview-header-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-listview-header-padding-x</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of listview footer.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-footer-padding-y</td>
     <td></td>
-<td>
-
-`$kendo-listview-header-padding-y`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-listview-header-padding-y</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of listview footer.</div></div>
@@ -154,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-padding-x</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of listview items.</div></div>
@@ -172,16 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-padding-y</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of listview items.</div></div>
@@ -190,16 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-font-family</td>
     <td></td>
-<td>
-
-`var( --kendo-font-family, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-family, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of listview.</div></div>
@@ -208,16 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-font-size</td>
     <td></td>
-<td>
-
-`var( --kendo-font-size, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-size, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of listview.</div></div>
@@ -226,16 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-line-height</td>
     <td></td>
-<td>
-
-`var( --kendo-line-height, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-line-height, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of listview.</div></div>
@@ -244,16 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-grid-gap</td>
     <td></td>
-<td>
-
-`map.get( $kendo-spacing, 0 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>map.get( $kendo-spacing, 0 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gap between items of grid listview.</div></div>
@@ -262,16 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-text</td>
     <td></td>
-<td>
-
-`var( --kendo-component-text, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-text, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of listview.</div></div>
@@ -280,16 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-bg</td>
     <td></td>
-<td>
-
-`var( --kendo-component-bg, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-bg, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of listview.</div></div>
@@ -298,16 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-border</td>
     <td></td>
-<td>
-
-`var( --kendo-component-border, initial )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-component-border, initial )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of listview.</div></div>
@@ -316,16 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-focus-text</td>
     <td></td>
-<td>
-
-`initial`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>initial</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused listview items.</div></div>
@@ -334,16 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-focus-bg</td>
     <td></td>
-<td>
-
-`initial`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>initial</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused listview items.</div></div>
@@ -352,16 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-focus-shadow</td>
     <td></td>
-<td>
-
-`var( --kendo-list-item-focus-shadow, $kendo-list-item-focus-shadow )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-list-item-focus-shadow, $kendo-list-item-focus-shadow )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused listview items.</div></div>
@@ -370,16 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-selected-text</td>
     <td></td>
-<td>
-
-`initial`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>initial</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected listview items.</div></div>
@@ -388,16 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td></td>
-<td>
-
-`get-theme-color-var( neutral-20 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected listview items.</div></div>
@@ -406,16 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-header-text</td>
     <td></td>
-<td>
-
-`initial`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>initial</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of listview header.</div></div>
@@ -424,16 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-header-bg</td>
     <td></td>
-<td>
-
-`initial`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>initial</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of listview.</div></div>
@@ -442,16 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-header-border</td>
     <td></td>
-<td>
-
-`$kendo-listview-border`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-listview-border</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of listview.</div></div>
@@ -460,16 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-footer-text</td>
     <td></td>
-<td>
-
-`initial`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>initial</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of listview footer.</div></div>
@@ -478,16 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-footer-bg</td>
     <td></td>
-<td>
-
-`initial`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>initial</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of listview.</div></div>

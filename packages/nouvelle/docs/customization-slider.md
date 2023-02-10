@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Slider
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-slider-inline-size</td>
     <td>Number</td>
-<td>
-
-`20em`
-
-</td>
-<td>
-
-`20em`
-
-</td>
+    <td><code>20em</code></td>
+    <td><code>20em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default slider size.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-block-size</td>
     <td>Number</td>
-<td>
-
-`22px`
-
-</td>
-<td>
-
-`22px`
-
-</td>
+    <td><code>22px</code></td>
+    <td><code>22px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default slider track wrap size.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the slider.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the slider.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the slider.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the slider.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-track-size</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the slider track.</div></div>
@@ -154,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-track-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the slider track.</div></div>
@@ -172,16 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-size</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the slider thumb.</div></div>
@@ -190,16 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-border-width</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 0.5 )`
-
-</td>
-<td>
-
-`0.125rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>0.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border width of the slider thumb.</div></div>
@@ -208,16 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-border-radius</td>
     <td>Number</td>
-<td>
-
-`9999px`
-
-</td>
-<td>
-
-`9999px`
-
-</td>
+    <td><code>9999px</code></td>
+    <td><code>9999px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the slider thumb.</div></div>
@@ -226,16 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-active-scale</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active transition scale of the slider thumb.</div></div>
@@ -244,16 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-active-size</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active size of the slider thumb.</div></div>
@@ -262,16 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-speed</td>
     <td>Number</td>
-<td>
-
-`.3s`
-
-</td>
-<td>
-
-`0.3s`
-
-</td>
+    <td><code>.3s</code></td>
+    <td><code>0.3s</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the slider.</div></div>
@@ -280,16 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td>String</td>
-<td>
-
-`ease-out`
-
-</td>
-<td>
-
-`ease-out`
-
-</td>
+    <td><code>ease-out</code></td>
+    <td><code>ease-out</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function function.</div></div>
@@ -298,16 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-transition-speed</td>
     <td>Number</td>
-<td>
-
-`.4s`
-
-</td>
-<td>
-
-`0.4s`
-
-</td>
+    <td><code>.4s</code></td>
+    <td><code>0.4s</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the slider thumb.</div></div>
@@ -316,16 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-transition-function</td>
     <td>String</td>
-<td>
-
-`cubic-bezier(.25, .8, .25, 1)`
-
-</td>
-<td>
-
-`cubic-bezier(0.25, 0.8, 0.25, 1)`
-
-</td>
+    <td><code>cubic-bezier(.25, .8, .25, 1)</code></td>
+    <td><code>cubic-bezier(0.25, 0.8, 0.25, 1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the slider thumb.</div></div>

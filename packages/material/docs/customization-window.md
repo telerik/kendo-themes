@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Window
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,20 +30,12 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-window-theme-colors</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     "primary": k-map-get($kendo-theme-colors, "primary"),
     "light": k-map-get($kendo-theme-colors, "light"),
     "dark": k-map-get($kendo-theme-colors, "dark")
-)`
-
-</td>
-<td>
-
-`("primary": #3f51b5, "light": #f5f5f5, "dark": #424242)`
-
-</td>
+)</code></td>
+    <td><code>("primary": #3f51b5, "light": #f5f5f5, "dark": #424242)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the window.</div></div>

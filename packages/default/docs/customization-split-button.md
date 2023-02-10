@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Split-button
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-split-button-focus-shadow</td>
     <td>List</td>
-<td>
-
-`$kendo-button-focus-shadow`
-
-</td>
-<td>
-
-`0 0 0 2px rgba(0, 0, 0, 0.08)`
-
-</td>
+    <td><code>$kendo-button-focus-shadow</code></td>
+    <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the split button.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-arrow-padding-x</td>
     <td>Number</td>
-<td>
-
-`$kendo-button-padding-y`
-
-</td>
-<td>
-
-`4px`
-
-</td>
+    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-split-button-arrow-padding-y</td>
     <td>Number</td>
-<td>
-
-`$kendo-button-padding-y`
-
-</td>
-<td>
-
-`4px`
-
-</td>
+    <td><code>$kendo-button-padding-y</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the arrow button.</div></div>

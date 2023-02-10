@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Treeview
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-treeview-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the treeview component.</div></div>
@@ -46,9 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     // sass-lint:disable-block leading-zero
     sm: (
         font-size: $kendo-font-size-sm,
@@ -86,14 +78,8 @@ The following table lists the available variables for customization.
         item-padding-y: k-map-get( $kendo-spacing, 2 ),
         item-border-radius: k-map-get( $kendo-spacing, 2 )
     )
-)`
-
-</td>
-<td>
-
-`(sm: (font-size: 0.875rem, line-height: 1.25, filter-padding-x: 0.25rem, filter-padding-y: 0.25rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.5rem, item-padding-y: 0.25rem, item-border-radius: 0.125rem), md: (font-size: 1rem, line-height: 1.5, filter-padding-x: 0.5rem, filter-padding-y: 0.5rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.625rem, item-padding-y: 0.375rem, item-border-radius: 0.25rem), lg: (font-size: 1.25rem, line-height: 1.75, filter-padding-x: 0.75rem, filter-padding-y: 0.75rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.75rem, item-padding-y: 0.5rem, item-border-radius: 0.5rem))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (font-size: 0.875rem, line-height: 1.25, filter-padding-x: 0.25rem, filter-padding-y: 0.25rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.5rem, item-padding-y: 0.25rem, item-border-radius: 0.125rem), md: (font-size: 1rem, line-height: 1.5, filter-padding-x: 0.5rem, filter-padding-y: 0.5rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.625rem, item-padding-y: 0.375rem, item-border-radius: 0.25rem), lg: (font-size: 1.25rem, line-height: 1.75, filter-padding-x: 0.75rem, filter-padding-y: 0.75rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.75rem, item-padding-y: 0.5rem, item-border-radius: 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the treeview.</div></div>
