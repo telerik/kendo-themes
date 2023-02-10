@@ -47,6 +47,12 @@ function _capitalize(string) {
     );
 
     const data = rawData
+        // Normalize paths
+        .map((item) => {
+            item.file.path = item.file.path.replace(/\\/g, '/');
+            return item;
+        })
+
         // Filter out private items
         .filter((item) => item.access === 'public')
 
