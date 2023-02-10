@@ -7,9 +7,12 @@ position: 9
 
 # Customization
 
-The following table lists the available variables for customizing the Nouvelle theme.
+
+
 
 ## Variables
+
+The following table lists the available variables for customizing the Nouvelle theme.
 
 ### Common
 
@@ -28,24 +31,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-interactive-bg</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #f6f6f6"></span>
-
-`#f6f6f6`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f6f6f6"></span>
-
-`#f6f6f6`
-
-</td>
+    <td><span class="color-preview" style="background-color: #f6f6f6"></span><code>#f6f6f6</code></td>
+    <td><span class="color-preview" style="background-color: #f6f6f6"></span><code>#f6f6f6</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -54,20 +44,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-interactive-text</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #656565"></span>
-
-`#656565`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #656565"></span>
-
-`#656565`
-
-</td>
+    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
+    <td><span class="color-preview" style="background-color: #656565"></span><code>#656565</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
@@ -76,18 +54,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-interactive-border</td>
     <td>Color</td>
-<td>
-
-`rgba( black, .08 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
-
-`rgba(0, 0, 0, 0.08)`
-
-</td>
+    <td><code>rgba( black, .08 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the components' chrome area.</div></div>
@@ -96,16 +64,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-interactive-gradient</td>
     <td>List</td>
-<td>
-
-`rgba( black, 0 ), rgba( black, .02 )`
-
-</td>
-<td>
-
-`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
-
-</td>
+    <td><code>rgba( black, 0 ), rgba( black, .02 )</code></td>
+    <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
@@ -114,18 +74,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-hover-bg</td>
     <td>Color</td>
-<td>
-
-`k-color-shade( $kendo-component-bg, .5 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: whitesmoke"></span>
-
-`whitesmoke`
-
-</td>
+    <td><code>k-color-shade( $kendo-component-bg, .5 )</code></td>
+    <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
@@ -134,18 +84,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-hover-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hover items.</div></div>
@@ -154,18 +94,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-hover-border</td>
     <td>Color</td>
-<td>
-
-`rgba( black, .15 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.15)"></span>
-
-`rgba(0, 0, 0, 0.15)`
-
-</td>
+    <td><code>rgba( black, .15 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.15)"></span><code>rgba(0, 0, 0, 0.15)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hover items.</div></div>
@@ -174,16 +104,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-hover-gradient</td>
     <td>List</td>
-<td>
-
-`rgba( black, 0 ), rgba( black, .02 )`
-
-</td>
-<td>
-
-`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
-
-</td>
+    <td><code>rgba( black, 0 ), rgba( black, .02 )</code></td>
+    <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hover items.</div></div>
@@ -192,18 +114,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-selected-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-color-primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -212,18 +124,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-selected-text</td>
     <td>Color</td>
-<td>
-
-`k-contrast-color( $kendo-selected-bg )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>k-contrast-color( $kendo-selected-bg )</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected items.</div></div>
@@ -232,18 +134,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-selected-border</td>
     <td>Color</td>
-<td>
-
-`rgba( black, .1 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span>
-
-`rgba(0, 0, 0, 0.1)`
-
-</td>
+    <td><code>rgba( black, .1 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span><code>rgba(0, 0, 0, 0.1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
@@ -252,16 +144,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-selected-gradient</td>
     <td>String</td>
-<td>
-
-`none`
-
-</td>
-<td>
-
-`none`
-
-</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
@@ -287,20 +171,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-actions-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of actions container.</div></div>
@@ -309,16 +184,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-actions-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of actions container.</div></div>
@@ -327,16 +194,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-actions-border-width</td>
     <td>List</td>
-<td>
-
-`0 0 0 0`
-
-</td>
-<td>
-
-`0 0 0 0`
-
-</td>
+    <td><code>0 0 0 0</code></td>
+    <td><code>0 0 0 0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around actions container.</div></div>
@@ -345,16 +204,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-actions-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of actions container.</div></div>
@@ -363,16 +214,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-actions-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of actions container.</div></div>
@@ -381,16 +224,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-actions-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of actions container.</div></div>
@@ -399,16 +234,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-actions-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items in actions container</div></div>
@@ -434,20 +261,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-actions-list-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items in actions list</div></div>
@@ -473,20 +291,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-avatar-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the avatar.</div></div>
@@ -495,16 +304,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-avatar-font-family</td>
     <td>Null</td>
-<td>
-
-`$kendo-font-family`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the avatar.</div></div>
@@ -513,16 +314,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-avatar-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the avatar.</div></div>
@@ -531,16 +324,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-avatar-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the avatar.</div></div>
@@ -549,20 +334,12 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-avatar-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: k-map-get( $kendo-spacing, 4 ),
     md: k-map-get( $kendo-spacing, 8 ),
     lg: k-map-get( $kendo-spacing, 16 )
-)`
-
-</td>
-<td>
-
-`(sm: 1rem, md: 2rem, lg: 4rem)`
-
-</td>
+)</code></td>
+    <td><code>(sm: 1rem, md: 2rem, lg: 4rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the avatar.</div></div>
@@ -571,19 +348,11 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-avatar-theme</td>
     <td>Map</td>
-<td>
-
-`k-process-variant-matrices(
+    <td><code>k-process-variant-matrices(
     $kendo-avatar-theme-matrix,
     $kendo-avatar-palette-matrix
-)`
-
-</td>
-<td>
-
-`(solid-neutral: (bg: #ededed, text: #494949, border: #ededed, gradient: null, shadow: null, outline: null), solid-inverse: (bg: #494949, text: #ffffff, border: #494949, gradient: null, shadow: null, outline: null), solid-primary: (bg: #622331, text: #ffffff, border: #622331, gradient: null, shadow: null, outline: null), solid-info: (bg: #0969da, text: #ffffff, border: #0969da, gradient: null, shadow: null, outline: null), solid-success: (bg: #1a7f37, text: #ffffff, border: #1a7f37, gradient: null, shadow: null, outline: null), solid-warning: (bg: #bc4c00, text: #ffffff, border: #bc4c00, gradient: null, shadow: null, outline: null), solid-error: (bg: #cf222e, text: #ffffff, border: #cf222e, gradient: null, shadow: null, outline: null), outline-neutral: (bg: transparent, text: #767676, border: #767676, gradient: null, shadow: null, outline: null), outline-inverse: (bg: transparent, text: #494949, border: #494949, gradient: null, shadow: null, outline: null), outline-primary: (bg: transparent, text: #622331, border: #622331, gradient: null, shadow: null, outline: null), outline-info: (bg: transparent, text: #0969da, border: #0969da, gradient: null, shadow: null, outline: null), outline-success: (bg: transparent, text: #1a7f37, border: #1a7f37, gradient: null, shadow: null, outline: null), outline-warning: (bg: transparent, text: #bc4c00, border: #bc4c00, gradient: null, shadow: null, outline: null), outline-error: (bg: transparent, text: #cf222e, border: #cf222e, gradient: null, shadow: null, outline: null))`
-
-</td>
+)</code></td>
+    <td><code>(solid-neutral: (bg: #ededed, text: #494949, border: #ededed, gradient: null, shadow: null, outline: null), solid-inverse: (bg: #494949, text: #ffffff, border: #494949, gradient: null, shadow: null, outline: null), solid-primary: (bg: #622331, text: #ffffff, border: #622331, gradient: null, shadow: null, outline: null), solid-info: (bg: #0969da, text: #ffffff, border: #0969da, gradient: null, shadow: null, outline: null), solid-success: (bg: #1a7f37, text: #ffffff, border: #1a7f37, gradient: null, shadow: null, outline: null), solid-warning: (bg: #bc4c00, text: #ffffff, border: #bc4c00, gradient: null, shadow: null, outline: null), solid-error: (bg: #cf222e, text: #ffffff, border: #cf222e, gradient: null, shadow: null, outline: null), outline-neutral: (bg: transparent, text: #767676, border: #767676, gradient: null, shadow: null, outline: null), outline-inverse: (bg: transparent, text: #494949, border: #494949, gradient: null, shadow: null, outline: null), outline-primary: (bg: transparent, text: #622331, border: #622331, gradient: null, shadow: null, outline: null), outline-info: (bg: transparent, text: #0969da, border: #0969da, gradient: null, shadow: null, outline: null), outline-success: (bg: transparent, text: #1a7f37, border: #1a7f37, gradient: null, shadow: null, outline: null), outline-warning: (bg: transparent, text: #bc4c00, border: #bc4c00, gradient: null, shadow: null, outline: null), outline-error: (bg: transparent, text: #cf222e, border: #cf222e, gradient: null, shadow: null, outline: null))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the avatar.</div></div>
@@ -609,20 +378,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-badge-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the badge.</div></div>
@@ -631,16 +391,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-font-family</td>
     <td>Null</td>
-<td>
-
-`$kendo-font-family`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the badge.</div></div>
@@ -649,16 +401,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-font-weight</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the badge.</div></div>
@@ -667,16 +411,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-sm-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 0.5 )`
-
-</td>
-<td>
-
-`0.125rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>0.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the badge.</div></div>
@@ -685,16 +421,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-sm-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 0.5 )`
-
-</td>
-<td>
-
-`0.125rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>0.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the badge.</div></div>
@@ -703,16 +431,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-sm-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-xs`
-
-</td>
-<td>
-
-`0.75rem`
-
-</td>
+    <td><code>$kendo-font-size-xs</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the badge.</div></div>
@@ -721,16 +441,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-sm-line-height</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the badge.</div></div>
@@ -739,16 +451,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-sm-min-width</td>
     <td>Calculation</td>
-<td>
-
-`calc( #{$kendo-badge-sm-line-height} * 1em + #{$kendo-badge-sm-padding-y} * 2 + #{$kendo-badge-border-width} * 2 )`
-
-</td>
-<td>
-
-`calc(  * 1em + 0.125rem * 2 + 1px * 2 )`
-
-</td>
+    <td><code>calc( #{$kendo-badge-sm-line-height} * 1em + #{$kendo-badge-sm-padding-y} * 2 + #{$kendo-badge-border-width} * 2 )</code></td>
+    <td><code>calc(  * 1em + 0.125rem * 2 + 1px * 2 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Badge min width used for circle badge.</div></div>
@@ -757,9 +461,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         padding-x: $kendo-badge-sm-padding-x,
         padding-y: $kendo-badge-sm-padding-y,
@@ -781,14 +483,8 @@ The following table lists the available variables for customizing the Nouvelle t
         line-height: $kendo-badge-lg-line-height,
         min-width: $kendo-badge-lg-min-width
     )
-)`
-
-</td>
-<td>
-
-`(sm: (padding-x: 0.125rem, padding-y: 0.125rem, font-size: 0.75rem, line-height: null, min-width: calc(  * 1em + 0.125rem * 2 + 1px * 2 )), md: (padding-x: 0.25rem, padding-y: 0.25rem, font-size: 0.875rem, line-height: null, min-width: calc(  * 1em + 0.25rem * 2 + 1px * 2 )), lg: (padding-x: 0.375rem, padding-y: 0.375rem, font-size: 1rem, line-height: null, min-width: calc(  * 1em + 0.375rem * 2 + 1px * 2 )))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (padding-x: 0.125rem, padding-y: 0.125rem, font-size: 0.75rem, line-height: null, min-width: calc(  * 1em + 0.125rem * 2 + 1px * 2 )), md: (padding-x: 0.25rem, padding-y: 0.25rem, font-size: 0.875rem, line-height: null, min-width: calc(  * 1em + 0.25rem * 2 + 1px * 2 )), lg: (padding-x: 0.375rem, padding-y: 0.375rem, font-size: 1rem, line-height: null, min-width: calc(  * 1em + 0.375rem * 2 + 1px * 2 )))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size map for the badge.</div></div>
@@ -797,19 +493,11 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-badge-theme</td>
     <td>Map</td>
-<td>
-
-`k-process-variant-matrices(
+    <td><code>k-process-variant-matrices(
     $kendo-badge-theme-matrix,
     $kendo-badge-palette-matrix
-)`
-
-</td>
-<td>
-
-`(solid-neutral: (bg: #ededed, text: #494949, border: #ededed, gradient: null, shadow: null, outline: null), solid-inverse: (bg: #494949, text: #ffffff, border: #494949, gradient: null, shadow: null, outline: null), solid-primary: (bg: #622331, text: #ffffff, border: #622331, gradient: null, shadow: null, outline: null), solid-info: (bg: #0969da, text: #ffffff, border: #0969da, gradient: null, shadow: null, outline: null), solid-success: (bg: #1a7f37, text: #ffffff, border: #1a7f37, gradient: null, shadow: null, outline: null), solid-warning: (bg: #bc4c00, text: #ffffff, border: #bc4c00, gradient: null, shadow: null, outline: null), solid-error: (bg: #cf222e, text: #ffffff, border: #cf222e, gradient: null, shadow: null, outline: null), outline-neutral: (bg: transparent, text: #767676, border: #767676, gradient: null, shadow: null, outline: null), outline-inverse: (bg: transparent, text: #494949, border: #494949, gradient: null, shadow: null, outline: null), outline-primary: (bg: transparent, text: #622331, border: #622331, gradient: null, shadow: null, outline: null), outline-info: (bg: transparent, text: #0969da, border: #0969da, gradient: null, shadow: null, outline: null), outline-success: (bg: transparent, text: #1a7f37, border: #1a7f37, gradient: null, shadow: null, outline: null), outline-warning: (bg: transparent, text: #bc4c00, border: #bc4c00, gradient: null, shadow: null, outline: null), outline-error: (bg: transparent, text: #cf222e, border: #cf222e, gradient: null, shadow: null, outline: null))`
-
-</td>
+)</code></td>
+    <td><code>(solid-neutral: (bg: #ededed, text: #494949, border: #ededed, gradient: null, shadow: null, outline: null), solid-inverse: (bg: #494949, text: #ffffff, border: #494949, gradient: null, shadow: null, outline: null), solid-primary: (bg: #622331, text: #ffffff, border: #622331, gradient: null, shadow: null, outline: null), solid-info: (bg: #0969da, text: #ffffff, border: #0969da, gradient: null, shadow: null, outline: null), solid-success: (bg: #1a7f37, text: #ffffff, border: #1a7f37, gradient: null, shadow: null, outline: null), solid-warning: (bg: #bc4c00, text: #ffffff, border: #bc4c00, gradient: null, shadow: null, outline: null), solid-error: (bg: #cf222e, text: #ffffff, border: #cf222e, gradient: null, shadow: null, outline: null), outline-neutral: (bg: transparent, text: #767676, border: #767676, gradient: null, shadow: null, outline: null), outline-inverse: (bg: transparent, text: #494949, border: #494949, gradient: null, shadow: null, outline: null), outline-primary: (bg: transparent, text: #622331, border: #622331, gradient: null, shadow: null, outline: null), outline-info: (bg: transparent, text: #0969da, border: #0969da, gradient: null, shadow: null, outline: null), outline-success: (bg: transparent, text: #1a7f37, border: #1a7f37, gradient: null, shadow: null, outline: null), outline-warning: (bg: transparent, text: #bc4c00, border: #bc4c00, gradient: null, shadow: null, outline: null), outline-error: (bg: transparent, text: #cf222e, border: #cf222e, gradient: null, shadow: null, outline: null))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the badge.</div></div>
@@ -835,20 +523,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-bottom-nav-shadow</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the bottom navigation.</div></div>
@@ -857,16 +536,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-focus-offset</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the focused bottom navigation item.</div></div>
@@ -875,16 +546,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-focus-outline-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline width of the focused bottom navigation item.</div></div>
@@ -893,16 +556,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-focus-outline-style</td>
     <td>String</td>
-<td>
-
-`solid`
-
-</td>
-<td>
-
-`solid`
-
-</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline style of the focused bottom navigation item.</div></div>
@@ -911,16 +566,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-icon-size</td>
     <td>Calculation</td>
-<td>
-
-`$kendo-icon-size-xxl`
-
-</td>
-<td>
-
-`calc( 16px * 2 )`
-
-</td>
+    <td><code>$kendo-icon-size-xxl</code></td>
+    <td><code>calc( 16px * 2 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the focused bottom navigation item icon.</div></div>
@@ -929,16 +576,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-icon-margin-x</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the focused bottom navigation item icon.</div></div>
@@ -947,16 +586,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-icon-margin-y</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the focused bottom navigation item icon.</div></div>
@@ -982,20 +613,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-bottom-nav-padding-x</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the bottom navigation.</div></div>
@@ -1004,16 +626,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-padding-y</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the bottom navigation.</div></div>
@@ -1022,16 +636,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-gap</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the bottom navigation.</div></div>
@@ -1040,16 +646,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-border-width</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the bottom navigation.</div></div>
@@ -1058,16 +656,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-font-family</td>
     <td>Null</td>
-<td>
-
-`$kendo-font-family`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the bottom navigation.</div></div>
@@ -1076,16 +666,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-font-size</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the bottom navigation.</div></div>
@@ -1094,16 +676,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-line-height</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the bottom navigation.</div></div>
@@ -1112,16 +686,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the bottom navigation item.</div></div>
@@ -1130,16 +696,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the bottom navigation item.</div></div>
@@ -1148,16 +706,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-min-width</td>
     <td>Number</td>
-<td>
-
-`72px`
-
-</td>
-<td>
-
-`72px`
-
-</td>
+    <td><code>72px</code></td>
+    <td><code>72px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Minimum width of the bottom navigation item.</div></div>
@@ -1166,16 +716,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-max-width</td>
     <td>String</td>
-<td>
-
-`none`
-
-</td>
-<td>
-
-`none`
-
-</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Maximum width of the bottom navigation item.</div></div>
@@ -1184,16 +726,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-border-radius</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the bottom navigation item.</div></div>
@@ -1202,16 +736,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-bottom-nav-item-gap</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the bottom navigation item.</div></div>
@@ -1237,20 +763,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-captcha-width</td>
     <td>Number</td>
-<td>
-
-`280px`
-
-</td>
-<td>
-
-`280px`
-
-</td>
+    <td><code>280px</code></td>
+    <td><code>280px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the captcha.</div></div>
@@ -1259,16 +776,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-font-family</td>
     <td>Null</td>
-<td>
-
-`$kendo-font-family`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the captcha.</div></div>
@@ -1277,16 +786,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the captcha.</div></div>
@@ -1295,16 +796,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the captcha.</div></div>
@@ -1313,16 +806,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the captcha.</div></div>
@@ -1331,18 +816,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the captcha.</div></div>
@@ -1351,18 +826,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the captcha.</div></div>
@@ -1371,18 +836,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the captcha.</div></div>
@@ -1391,16 +846,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-image-wrap-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the captcha image wrapper.</div></div>
@@ -1409,16 +856,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-image-controls-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the captcha image controls.</div></div>
@@ -1427,16 +866,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-validation-offset-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the captcha validation text.</div></div>
@@ -1445,16 +876,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-captcha-validation-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-sm`
-
-</td>
-<td>
-
-`0.875rem`
-
-</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font-size of the captcha validation text.</div></div>
@@ -1480,20 +903,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-card-padding-x</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card.</div></div>
@@ -1502,16 +916,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-padding-y</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card.</div></div>
@@ -1520,16 +926,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the card.</div></div>
@@ -1538,16 +936,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-border-radii, md )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-border-radii, md )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the card.</div></div>
@@ -1556,16 +946,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the card.</div></div>
@@ -1574,16 +956,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-font-size</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the card.</div></div>
@@ -1592,16 +966,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-line-height</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the card.</div></div>
@@ -1610,16 +976,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-deck-gap</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the cards in the card deck.</div></div>
@@ -1628,18 +986,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the card.</div></div>
@@ -1648,18 +996,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the card.</div></div>
@@ -1668,18 +1006,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the card.</div></div>
@@ -1688,16 +1016,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-shadow</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the card.</div></div>
@@ -1706,18 +1026,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-focus-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-card-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-card-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the card when focused.</div></div>
@@ -1726,16 +1036,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-focus-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the card when focused.</div></div>
@@ -1744,16 +1046,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-focus-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the card when focused.</div></div>
@@ -1762,16 +1056,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-focus-shadow</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the card when focused.</div></div>
@@ -1780,16 +1066,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-header-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card header.</div></div>
@@ -1798,16 +1076,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-header-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card header.</div></div>
@@ -1816,16 +1086,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-header-border-width</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Bottom border width of the card header.</div></div>
@@ -1834,16 +1096,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-header-font-weight</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text weight of the card header.</div></div>
@@ -1852,18 +1106,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-header-bg</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 50 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f8f8f8"></span>
-
-`#f8f8f8`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 50 )</code></td>
+    <td><span class="color-preview" style="background-color: #f8f8f8"></span><code>#f8f8f8</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the card header.</div></div>
@@ -1872,18 +1116,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-header-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-card-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-card-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the card header.</div></div>
@@ -1892,18 +1126,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-header-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-card-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-card-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the card header.</div></div>
@@ -1912,16 +1136,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-body-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card body.</div></div>
@@ -1930,16 +1146,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-body-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card body.</div></div>
@@ -1948,16 +1156,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-footer-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card footer.</div></div>
@@ -1966,16 +1166,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-footer-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card footer.</div></div>
@@ -1984,16 +1176,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-footer-border-width</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top border width of the card footer.</div></div>
@@ -2002,16 +1186,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-footer-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the card footer.</div></div>
@@ -2020,16 +1196,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-footer-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the card footer.</div></div>
@@ -2038,18 +1206,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-footer-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-card-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-card-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the card footer.</div></div>
@@ -2058,16 +1216,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-title-margin-bottom</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Bottom margin of the card title.</div></div>
@@ -2076,16 +1226,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-title-font-weight</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the card title.</div></div>
@@ -2094,16 +1236,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-title-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the card subtitle.</div></div>
@@ -2112,16 +1246,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-subtitle-margin-bottom</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Bottom margin of the card subtitle.</div></div>
@@ -2130,16 +1256,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-subtitle-font-weight</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the card title.</div></div>
@@ -2148,18 +1266,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-subtitle-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-subtle-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #5f5f5f"></span>
-
-`#5f5f5f`
-
-</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: #5f5f5f"></span><code>#5f5f5f</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the card subtitle.</div></div>
@@ -2168,16 +1276,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-img-max-width</td>
     <td>Number</td>
-<td>
-
-`100px`
-
-</td>
-<td>
-
-`100px`
-
-</td>
+    <td><code>100px</code></td>
+    <td><code>100px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Maximum width of the card image.</div></div>
@@ -2186,16 +1286,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-avatar-size</td>
     <td>Number</td>
-<td>
-
-`3rem`
-
-</td>
-<td>
-
-`3rem`
-
-</td>
+    <td><code>3rem</code></td>
+    <td><code>3rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the avatar in the card.</div></div>
@@ -2204,16 +1296,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-actions-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the card actions.</div></div>
@@ -2222,16 +1306,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-actions-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the card actions.</div></div>
@@ -2240,16 +1316,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-actions-border-width</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top border of the card actions.</div></div>
@@ -2258,16 +1326,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-actions-gap</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the card actions.</div></div>
@@ -2276,16 +1336,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-deck-scroll-button-radius</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the scroll button in the card deck.</div></div>
@@ -2294,16 +1346,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-card-callout-size</td>
     <td>Number</td>
-<td>
-
-`20px`
-
-</td>
-<td>
-
-`20px`
-
-</td>
+    <td><code>20px</code></td>
+    <td><code>20px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the card callout.</div></div>
@@ -2329,20 +1373,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-checkbox-border-radius</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of checkbox</div></div>
@@ -2351,16 +1386,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of checkbox.</div></div>
@@ -2369,18 +1396,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checkbox.</div></div>
@@ -2389,16 +1406,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checkbox.</div></div>
@@ -2407,18 +1416,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checkbox.</div></div>
@@ -2427,16 +1426,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered checkbox.</div></div>
@@ -2445,16 +1436,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of hovered checkbox.</div></div>
@@ -2463,16 +1446,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered checkbox.</div></div>
@@ -2481,16 +1456,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-focus-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused checkbox.</div></div>
@@ -2499,16 +1466,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-focus-shadow</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused checkbox.</div></div>
@@ -2517,16 +1476,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-focus-outline</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of a focused checkbox.</div></div>
@@ -2535,18 +1486,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-checked-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-color-primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checked checkbox.</div></div>
@@ -2555,18 +1496,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>Color</td>
-<td>
-
-`k-contrast-color( $kendo-checkbox-checked-bg )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>k-contrast-color( $kendo-checkbox-checked-bg )</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked checkbox.</div></div>
@@ -2575,18 +1506,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-checked-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-checkbox-checked-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-checkbox-checked-bg</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checked checkbox.</div></div>
@@ -2595,16 +1516,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-checked-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background of hovered and checked checkbox.</div></div>
@@ -2613,16 +1526,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-checked-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked checkbox.</div></div>
@@ -2631,16 +1536,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-checked-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border of hovered and checked checkbox.</div></div>
@@ -2649,18 +1546,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-indeterminate-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-checkbox-checked-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-checkbox-checked-bg</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of indeterminate checkbox.</div></div>
@@ -2669,18 +1556,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-indeterminate-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-checkbox-checked-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>$kendo-checkbox-checked-text</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of indeterminate checkbox.</div></div>
@@ -2689,18 +1566,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-indeterminate-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-checkbox-checked-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-checkbox-checked-border</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of indeterminate checkbox.</div></div>
@@ -2709,16 +1576,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered and indeterminate checkbox.</div></div>
@@ -2727,16 +1586,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered and indeterminate checkbox.</div></div>
@@ -2745,16 +1596,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered and indeterminate checkbox.</div></div>
@@ -2763,16 +1606,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled checkbox.</div></div>
@@ -2781,16 +1616,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled checkbox.</div></div>
@@ -2799,16 +1626,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled checkbox.</div></div>
@@ -2817,16 +1636,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-checked-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled and checked checkbox.</div></div>
@@ -2835,16 +1646,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled and checked checkbox.</div></div>
@@ -2853,16 +1656,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-checked-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and checked checkbox.</div></div>
@@ -2871,16 +1666,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled and indeterminate checkbox.</div></div>
@@ -2889,16 +1676,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and indeterminate checkbox.</div></div>
@@ -2907,16 +1686,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and indeterminate checkbox.</div></div>
@@ -2925,18 +1696,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-invalid-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-checkbox-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-checkbox-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of invalid checkbox.</div></div>
@@ -2945,18 +1706,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-invalid-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-invalid-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cf222e"></span>
-
-`#cf222e`
-
-</td>
+    <td><code>$kendo-invalid-text</code></td>
+    <td><span class="color-preview" style="background-color: #cf222e"></span><code>#cf222e</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of invalid checkbox.</div></div>
@@ -2965,18 +1716,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-invalid-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-invalid-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cf222e"></span>
-
-`#cf222e`
-
-</td>
+    <td><code>$kendo-invalid-border</code></td>
+    <td><span class="color-preview" style="background-color: #cf222e"></span><code>#cf222e</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of invalid checkbox.</div></div>
@@ -2985,16 +1726,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-indicator-type</td>
     <td>String</td>
-<td>
-
-`glyph`
-
-</td>
-<td>
-
-`glyph`
-
-</td>
+    <td><code>glyph</code></td>
+    <td><code>glyph</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Type of checkbox indicator.</div></div>
@@ -3003,16 +1736,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-glyph-font-family</td>
     <td>List</td>
-<td>
-
-`"WebComponentsIcons", monospace`
-
-</td>
-<td>
-
-`"WebComponentsIcons", monospace`
-
-</td>
+    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>"WebComponentsIcons", monospace</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph font family of checkbox indicator.</div></div>
@@ -3021,16 +1746,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-checked-glyph</td>
     <td>String</td>
-<td>
-
-`"\e118"`
-
-</td>
-<td>
-
-`"\e118"`
-
-</td>
+    <td><code>"\e118"</code></td>
+    <td><code>"\e118"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph of checkbox indicator.</div></div>
@@ -3039,16 +1756,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-indeterminate-glyph</td>
     <td>String</td>
-<td>
-
-`"\e121"`
-
-</td>
-<td>
-
-`"\e121"`
-
-</td>
+    <td><code>"\e121"</code></td>
+    <td><code>"\e121"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph of indeterminate checkbox indicator.</div></div>
@@ -3057,16 +1766,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checkbox indicator.</div></div>
@@ -3075,16 +1776,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered checkbox indicator.</div></div>
@@ -3093,16 +1786,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-checked-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked checkbox indicator.</div></div>
@@ -3111,16 +1796,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-indeterminate-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of indeterminate checkbox indicator.</div></div>
@@ -3129,16 +1806,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-checked-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered and checked checkbox indicator.</div></div>
@@ -3147,16 +1816,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered and indeterminate checkbox indicator.</div></div>
@@ -3165,16 +1826,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-checked-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked checkbox indicator.</div></div>
@@ -3183,16 +1836,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of indeterminate checkbox indicator.</div></div>
@@ -3201,16 +1846,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-list-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items of horizontal checkbox list.</div></div>
@@ -3219,16 +1856,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-list-item-padding-x</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of checkbox list items.</div></div>
@@ -3237,16 +1866,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-list-item-padding-y</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of checkbox list items.</div></div>
@@ -3255,16 +1876,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-list-item-spacing</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between checkbox and text.</div></div>
@@ -3273,18 +1886,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-ripple-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-color-primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checkbox ripple.</div></div>
@@ -3293,16 +1896,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-checkbox-ripple-opacity</td>
     <td>Number</td>
-<td>
-
-`.25`
-
-</td>
-<td>
-
-`0.25`
-
-</td>
+    <td><code>.25</code></td>
+    <td><code>0.25</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of checkbox ripple.</div></div>
@@ -3328,20 +1923,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-chip-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
@@ -3350,16 +1936,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-chip-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the chip.</div></div>
@@ -3368,9 +1946,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-chip-list-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         spacing: k-map-get( $kendo-spacing, 1 )
     ),
@@ -3380,14 +1956,8 @@ The following table lists the available variables for customizing the Nouvelle t
     lg: (
         spacing: k-map-get( $kendo-spacing, 1 )
     )
-)`
-
-</td>
-<td>
-
-`(sm: (spacing: 0.25rem), md: (spacing: 0.25rem), lg: (spacing: 0.25rem))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (spacing: 0.25rem), md: (spacing: 0.25rem), lg: (spacing: 0.25rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
@@ -3413,24 +1983,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-color-primary</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
@@ -3439,18 +1996,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-color-primary-contrast</td>
     <td>Color</td>
-<td>
-
-`k-contrast-color( $kendo-color-primary )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>k-contrast-color( $kendo-color-primary )</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $kendo-color-primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -3459,20 +2006,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-color-info</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #0969da"></span>
-
-`#0969da`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #0969da"></span>
-
-`#0969da`
-
-</td>
+    <td><span class="color-preview" style="background-color: #0969da"></span><code>#0969da</code></td>
+    <td><span class="color-preview" style="background-color: #0969da"></span><code>#0969da</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for informational messages and states.</div></div>
@@ -3481,20 +2016,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-color-success</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #1a7f37"></span>
-
-`#1a7f37`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #1a7f37"></span>
-
-`#1a7f37`
-
-</td>
+    <td><span class="color-preview" style="background-color: #1a7f37"></span><code>#1a7f37</code></td>
+    <td><span class="color-preview" style="background-color: #1a7f37"></span><code>#1a7f37</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for success messages and states.</div></div>
@@ -3503,20 +2026,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-color-warning</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #bc4c00"></span>
-
-`#bc4c00`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #bc4c00"></span>
-
-`#bc4c00`
-
-</td>
+    <td><span class="color-preview" style="background-color: #bc4c00"></span><code>#bc4c00</code></td>
+    <td><span class="color-preview" style="background-color: #bc4c00"></span><code>#bc4c00</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for warning messages and states.</div></div>
@@ -3525,20 +2036,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-color-error</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #cf222e"></span>
-
-`#cf222e`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cf222e"></span>
-
-`#cf222e`
-
-</td>
+    <td><span class="color-preview" style="background-color: #cf222e"></span><code>#cf222e</code></td>
+    <td><span class="color-preview" style="background-color: #cf222e"></span><code>#cf222e</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color for error messages and states.</div></div>
@@ -3547,20 +2046,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-color-dark</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #404040"></span>
-
-`#404040`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #404040"></span>
-
-`#404040`
-
-</td>
+    <td><span class="color-preview" style="background-color: #404040"></span><code>#404040</code></td>
+    <td><span class="color-preview" style="background-color: #404040"></span><code>#404040</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The dark color of the theme.</div></div>
@@ -3569,20 +2056,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-color-light</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #ebebeb"></span>
-
-`#ebebeb`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ebebeb"></span>
-
-`#ebebeb`
-
-</td>
+    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
+    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The light color of the theme.</div></div>
@@ -3591,18 +2066,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-color-inverse</td>
     <td>Color</td>
-<td>
-
-`if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #404040"></span>
-
-`#404040`
-
-</td>
+    <td><code>if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark )</code></td>
+    <td><span class="color-preview" style="background-color: #404040"></span><code>#404040</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>
@@ -3628,22 +2093,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-component-bg</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 0 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 0 )</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.</div></div>
@@ -3652,18 +2106,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-component-text</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 700 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 700 )</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.</div></div>
@@ -3672,18 +2116,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-component-border</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 100 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 100 )</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.</div></div>
@@ -3709,20 +2143,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-icon-size</td>
     <td>Number</td>
-<td>
-
-`1rem`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>1rem</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the icons.</div></div>
@@ -3731,16 +2156,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-icon-size-md</td>
     <td>Number</td>
-<td>
-
-`1rem`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>1rem</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the icons.</div></div>
@@ -3749,16 +2166,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-icon-size-lg</td>
     <td>Calculation</td>
-<td>
-
-`1.25rem`
-
-</td>
-<td>
-
-`calc( 16px * 1.25 )`
-
-</td>
+    <td><code>1.25rem</code></td>
+    <td><code>calc( 16px * 1.25 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the large icons.</div></div>
@@ -3767,16 +2176,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-icon-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the icons.</div></div>
@@ -3802,22 +2203,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-list-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the list.</div></div>
@@ -3826,18 +2216,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-list-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the list.</div></div>
@@ -3846,18 +2226,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-list-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the list.</div></div>
@@ -3883,22 +2253,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-popup-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the popup.</div></div>
@@ -3907,18 +2266,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-popup-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the popup.</div></div>
@@ -3927,18 +2276,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-popup-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the popup.</div></div>
@@ -3964,20 +2303,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-progressbar-inline-size</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inline size of the progressbar. Width when horizontal, height when vertical.</div></div>
@@ -3986,16 +2316,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-block-size</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Block size of the progressbar. Height when horizontal, width when vertical.</div></div>
@@ -4004,16 +2326,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-border-width</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the progressbar.</div></div>
@@ -4022,16 +2336,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-border-radius</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the progressbar.</div></div>
@@ -4040,16 +2346,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the progressbar.</div></div>
@@ -4058,16 +2356,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-font-size</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the progressbar.</div></div>
@@ -4076,16 +2366,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-line-height</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the progressbar.</div></div>
@@ -4094,16 +2376,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-animation-timing</td>
     <td>List</td>
-<td>
-
-`1s linear infinite`
-
-</td>
-<td>
-
-`1s linear infinite`
-
-</td>
+    <td><code>1s linear infinite</code></td>
+    <td><code>1s linear infinite</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Animation timing of the progressbar.</div></div>
@@ -4112,16 +2386,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-status-padding-x</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inline padding of the progressbar status.</div></div>
@@ -4130,16 +2396,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-status-padding-y</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Block padding of the progressbar status.</div></div>
@@ -4148,18 +2406,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td>Color</td>
-<td>
-
-`k-try-shade( $kendo-component-bg, 1 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ebebeb"></span>
-
-`#ebebeb`
-
-</td>
+    <td><code>k-try-shade( $kendo-component-bg, 1 )</code></td>
+    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the progressbar.</div></div>
@@ -4168,18 +2416,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the progressbar.</div></div>
@@ -4188,18 +2426,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the progressbar.</div></div>
@@ -4208,16 +2436,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-gradient</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of the progressbar.</div></div>
@@ -4226,18 +2446,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-value-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-color-primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Progress background color of the progressbar.</div></div>
@@ -4246,18 +2456,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-value-text</td>
     <td>Color</td>
-<td>
-
-`k-contrast-legacy( $kendo-progressbar-value-bg )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>k-contrast-legacy( $kendo-progressbar-value-bg )</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Progress text color of the progressbar.</div></div>
@@ -4266,18 +2466,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-value-border</td>
     <td>Color</td>
-<td>
-
-`k-try-shade( $kendo-progressbar-value-bg )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #5a202d"></span>
-
-`#5a202d`
-
-</td>
+    <td><code>k-try-shade( $kendo-progressbar-value-bg )</code></td>
+    <td><span class="color-preview" style="background-color: #5a202d"></span><code>#5a202d</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Progress border color of the progressbar.</div></div>
@@ -4286,16 +2476,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-value-gradient</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Progress background gradient of the progressbar.</div></div>
@@ -4304,18 +2486,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-indeterminate-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-progressbar-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ebebeb"></span>
-
-`#ebebeb`
-
-</td>
+    <td><code>$kendo-progressbar-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the indeterminate progressbar.</div></div>
@@ -4324,18 +2496,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-indeterminate-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-progressbar-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-progressbar-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the indeterminate progressbar.</div></div>
@@ -4344,18 +2506,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-indeterminate-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-progressbar-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-progressbar-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the indeterminate progressbar.</div></div>
@@ -4364,16 +2516,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-indeterminate-gradient</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of the indeterminate progressbar.</div></div>
@@ -4382,18 +2526,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-chunk-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-body-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-body-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the chunk progressbar.</div></div>
@@ -4402,18 +2536,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-circular-progressbar-arc-stroke</td>
     <td>Color</td>
-<td>
-
-`$kendo-color-primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Arc stroke color of the circular progressbar.</div></div>
@@ -4422,18 +2546,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-circular-progressbar-scale-stroke</td>
     <td>Color</td>
-<td>
-
-`$kendo-progressbar-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ebebeb"></span>
-
-`#ebebeb`
-
-</td>
+    <td><code>$kendo-progressbar-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Scale stroke background color of the circular progressbar.</div></div>
@@ -4442,9 +2556,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-progressbar-theme</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     DEFAULT: (
         bg: k-get-theme-color( neutral, 100 ),
         text: k-get-theme-color( neutral, 700 ),
@@ -4454,14 +2566,8 @@ The following table lists the available variables for customizing the Nouvelle t
         value-text: k-get-theme-color( marsala, 0 ),
         value-border: k-get-theme-color( marsala, 500 )
     )
-)`
-
-</td>
-<td>
-
-`(DEFAULT: (bg: #ededed, text: #494949, border: #d6d6d6, value-bg: #622331, value-text: #ffffff, value-border: #622331))`
-
-</td>
+)</code></td>
+    <td><code>(DEFAULT: (bg: #ededed, text: #494949, border: #d6d6d6, value-bg: #622331, value-text: #ffffff, value-border: #622331))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the progressbar.</div></div>
@@ -4487,20 +2593,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-radio-border-radius</td>
     <td>Number</td>
-<td>
-
-`50%`
-
-</td>
-<td>
-
-`50%`
-
-</td>
+    <td><code>50%</code></td>
+    <td><code>50%</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of radio button.</div></div>
@@ -4509,16 +2606,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of radio.</div></div>
@@ -4527,18 +2616,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio.</div></div>
@@ -4547,16 +2626,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of radio.</div></div>
@@ -4565,18 +2636,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of radio.</div></div>
@@ -4585,16 +2646,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-hover-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered radio.</div></div>
@@ -4603,16 +2656,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-hover-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of hovered radio.</div></div>
@@ -4621,16 +2666,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-hover-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered radio.</div></div>
@@ -4639,16 +2676,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-focus-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused radio.</div></div>
@@ -4657,16 +2686,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-focus-shadow</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused radio.</div></div>
@@ -4675,16 +2696,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-focus-outline</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of a focused radio.</div></div>
@@ -4693,18 +2706,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-checked-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-color-primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checked radio.</div></div>
@@ -4713,18 +2716,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-checked-text</td>
     <td>Color</td>
-<td>
-
-`k-contrast-color( $kendo-radio-checked-bg )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>k-contrast-color( $kendo-radio-checked-bg )</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked radio.</div></div>
@@ -4733,18 +2726,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-checked-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-radio-checked-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-radio-checked-bg</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checked radio.</div></div>
@@ -4753,16 +2736,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-hover-checked-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background of hovered and checked radio.</div></div>
@@ -4771,16 +2746,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-hover-checked-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked radio.</div></div>
@@ -4789,16 +2756,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-hover-checked-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border of hovered and checked radio.</div></div>
@@ -4807,16 +2766,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-disabled-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled radio.</div></div>
@@ -4825,16 +2776,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-disabled-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled radio.</div></div>
@@ -4843,16 +2786,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-disabled-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled radio.</div></div>
@@ -4861,16 +2796,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-disabled-checked-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled and checked radio.</div></div>
@@ -4879,16 +2806,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-disabled-checked-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled and checked radio.</div></div>
@@ -4897,16 +2816,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-disabled-checked-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and checked radio.</div></div>
@@ -4915,18 +2826,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-invalid-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-radio-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-radio-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of invalid radio.</div></div>
@@ -4935,18 +2836,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-invalid-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-invalid-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cf222e"></span>
-
-`#cf222e`
-
-</td>
+    <td><code>$kendo-invalid-text</code></td>
+    <td><span class="color-preview" style="background-color: #cf222e"></span><code>#cf222e</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of invalid radio.</div></div>
@@ -4955,18 +2846,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-invalid-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-invalid-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cf222e"></span>
-
-`#cf222e`
-
-</td>
+    <td><code>$kendo-invalid-border</code></td>
+    <td><span class="color-preview" style="background-color: #cf222e"></span><code>#cf222e</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of invalid radio.</div></div>
@@ -4975,16 +2856,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-indicator-type</td>
     <td>String</td>
-<td>
-
-`pseudo`
-
-</td>
-<td>
-
-`pseudo`
-
-</td>
+    <td><code>pseudo</code></td>
+    <td><code>pseudo</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Type of radio indicator.</div></div>
@@ -4993,16 +2866,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-indicator-border-radius</td>
     <td>Number</td>
-<td>
-
-`50%`
-
-</td>
-<td>
-
-`50%`
-
-</td>
+    <td><code>50%</code></td>
+    <td><code>50%</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius radio button indicator.</div></div>
@@ -5011,16 +2876,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-glyph-font-family</td>
     <td>List</td>
-<td>
-
-`"WebComponentsIcons", monospace`
-
-</td>
-<td>
-
-`"WebComponentsIcons", monospace`
-
-</td>
+    <td><code>"WebComponentsIcons", monospace</code></td>
+    <td><code>"WebComponentsIcons", monospace</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph font family of radio indicator.</div></div>
@@ -5029,16 +2886,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-checked-glyph</td>
     <td>String</td>
-<td>
-
-`"\e308"`
-
-</td>
-<td>
-
-`"\e308"`
-
-</td>
+    <td><code>"\e308"</code></td>
+    <td><code>"\e308"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph of radio indicator.</div></div>
@@ -5047,16 +2896,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of radio indicator.</div></div>
@@ -5065,16 +2906,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-hover-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered radio indicator.</div></div>
@@ -5083,16 +2916,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-checked-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked radio indicator.</div></div>
@@ -5101,16 +2926,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-hover-checked-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered and checked radio indicator.</div></div>
@@ -5119,16 +2936,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-disabled-checked-image</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked radio indicator.</div></div>
@@ -5137,16 +2946,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-list-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items of horizontal radio list.</div></div>
@@ -5155,16 +2956,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-list-item-padding-x</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of radio list items.</div></div>
@@ -5173,16 +2966,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-list-item-padding-y</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of radio list items.</div></div>
@@ -5191,16 +2976,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-list-item-spacing</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between radio and text.</div></div>
@@ -5209,18 +2986,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-ripple-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-color-primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #622331"></span>
-
-`#622331`
-
-</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio ripple.</div></div>
@@ -5229,16 +2996,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-radio-ripple-opacity</td>
     <td>Number</td>
-<td>
-
-`.25`
-
-</td>
-<td>
-
-`0.25`
-
-</td>
+    <td><code>.25</code></td>
+    <td><code>0.25</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio ripple.</div></div>
@@ -5264,20 +3023,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-skeleton-text-transform</td>
     <td>String</td>
-<td>
-
-`scale( 1, .6 )`
-
-</td>
-<td>
-
-`scale(1, 0.6)`
-
-</td>
+    <td><code>scale( 1, .6 )</code></td>
+    <td><code>scale(1, 0.6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text transform scale of the skeleton.</div></div>
@@ -5286,16 +3036,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-skeleton-text-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-border-radii, md )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-border-radii, md )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the skeleton text.</div></div>
@@ -5304,16 +3046,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-skeleton-rect-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-border-radii, md )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-border-radii, md )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the rectangle skeleton.</div></div>
@@ -5322,16 +3056,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-skeleton-circle-border-radius</td>
     <td>Number</td>
-<td>
-
-`9999px`
-
-</td>
-<td>
-
-`9999px`
-
-</td>
+    <td><code>9999px</code></td>
+    <td><code>9999px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the circle skeleton.</div></div>
@@ -5340,18 +3066,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 100 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 100 )</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the skeleton item.</div></div>
@@ -5360,18 +3076,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-skeleton-wave-bg</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 50 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f8f8f8"></span>
-
-`#f8f8f8`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 50 )</code></td>
+    <td><span class="color-preview" style="background-color: #f8f8f8"></span><code>#f8f8f8</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the skeleton wave animation.</div></div>
@@ -5397,20 +3103,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-slider-inline-size</td>
     <td>Number</td>
-<td>
-
-`20em`
-
-</td>
-<td>
-
-`20em`
-
-</td>
+    <td><code>20em</code></td>
+    <td><code>20em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default slider size.</div></div>
@@ -5419,16 +3116,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-block-size</td>
     <td>Number</td>
-<td>
-
-`22px`
-
-</td>
-<td>
-
-`22px`
-
-</td>
+    <td><code>22px</code></td>
+    <td><code>22px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default slider track wrap size.</div></div>
@@ -5437,16 +3126,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the slider.</div></div>
@@ -5455,16 +3136,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the slider.</div></div>
@@ -5473,16 +3146,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the slider.</div></div>
@@ -5491,16 +3156,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the slider.</div></div>
@@ -5509,16 +3166,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-track-size</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the slider track.</div></div>
@@ -5527,16 +3176,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-track-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the slider track.</div></div>
@@ -5545,16 +3186,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-thumb-size</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default size of the slider thumb.</div></div>
@@ -5563,16 +3196,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-thumb-border-width</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 0.5 )`
-
-</td>
-<td>
-
-`0.125rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>0.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default border width of the slider thumb.</div></div>
@@ -5581,16 +3206,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-thumb-border-radius</td>
     <td>Number</td>
-<td>
-
-`9999px`
-
-</td>
-<td>
-
-`9999px`
-
-</td>
+    <td><code>9999px</code></td>
+    <td><code>9999px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the slider thumb.</div></div>
@@ -5599,16 +3216,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-thumb-active-scale</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active transition scale of the slider thumb.</div></div>
@@ -5617,16 +3226,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-thumb-active-size</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active size of the slider thumb.</div></div>
@@ -5635,16 +3236,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-transition-speed</td>
     <td>Number</td>
-<td>
-
-`.3s`
-
-</td>
-<td>
-
-`0.3s`
-
-</td>
+    <td><code>.3s</code></td>
+    <td><code>0.3s</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the slider.</div></div>
@@ -5653,16 +3246,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td>String</td>
-<td>
-
-`ease-out`
-
-</td>
-<td>
-
-`ease-out`
-
-</td>
+    <td><code>ease-out</code></td>
+    <td><code>ease-out</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function function.</div></div>
@@ -5671,16 +3256,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-thumb-transition-speed</td>
     <td>Number</td>
-<td>
-
-`.4s`
-
-</td>
-<td>
-
-`0.4s`
-
-</td>
+    <td><code>.4s</code></td>
+    <td><code>0.4s</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition speed of the slider thumb.</div></div>
@@ -5689,16 +3266,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-slider-thumb-transition-function</td>
     <td>String</td>
-<td>
-
-`cubic-bezier(.25, .8, .25, 1)`
-
-</td>
-<td>
-
-`cubic-bezier(0.25, 0.8, 0.25, 1)`
-
-</td>
+    <td><code>cubic-bezier(.25, .8, .25, 1)</code></td>
+    <td><code>cubic-bezier(0.25, 0.8, 0.25, 1)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition function of the slider thumb.</div></div>
@@ -5724,20 +3293,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-switch-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the switch.</div></div>
@@ -5746,16 +3306,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-switch-track-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the switch track.</div></div>
@@ -5764,16 +3316,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-switch-thumb-border-width</td>
     <td>Number</td>
-<td>
-
-`0`
-
-</td>
-<td>
-
-`0`
-
-</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the switch thumb.</div></div>
@@ -5782,16 +3326,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-switch-label-text-transform</td>
     <td>String</td>
-<td>
-
-`uppercase`
-
-</td>
-<td>
-
-`uppercase`
-
-</td>
+    <td><code>uppercase</code></td>
+    <td><code>uppercase</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text transform of the switch label.</div></div>
@@ -5800,16 +3336,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-switch-label-display</td>
     <td>String</td>
-<td>
-
-`none`
-
-</td>
-<td>
-
-`none`
-
-</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Display of the switch label.</div></div>
@@ -5818,9 +3346,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-switch-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         font-size: $kendo-font-size-sm,
         track-width: 36px,
@@ -5848,14 +3374,8 @@ The following table lists the available variables for customizing the Nouvelle t
         thumb-offset: 5px,
         label-offset: 6px
     )
-)`
-
-</td>
-<td>
-
-`(sm: (font-size: 0.875rem, track-width: 36px, track-height: 16px, thumb-width: 10px, thumb-height: 10px, thumb-offset: 3px, label-offset: 4px), md: (font-size: 0.875rem, track-width: 40px, track-height: 20px, thumb-width: 12px, thumb-height: 12px, thumb-offset: 4px, label-offset: 5px), lg: (font-size: 0.875rem, track-width: 44px, track-height: 24px, thumb-width: 14px, thumb-height: 14px, thumb-offset: 5px, label-offset: 6px))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (font-size: 0.875rem, track-width: 36px, track-height: 16px, thumb-width: 10px, thumb-height: 10px, thumb-offset: 3px, label-offset: 4px), md: (font-size: 0.875rem, track-width: 40px, track-height: 20px, thumb-width: 12px, thumb-height: 12px, thumb-offset: 4px, label-offset: 5px), lg: (font-size: 0.875rem, track-width: 44px, track-height: 24px, thumb-width: 14px, thumb-height: 14px, thumb-offset: 5px, label-offset: 6px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map with the different switch sizes.</div></div>
@@ -5881,20 +3401,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-table-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the table border.</div></div>
@@ -5903,16 +3414,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-table-cell-vertical-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of vertical border of table cells.</div></div>
@@ -5921,16 +3424,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-table-cell-horizontal-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of horizontal border of table cells.</div></div>
@@ -5939,16 +3434,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-table-header-font-weight</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the table header cells.</div></div>
@@ -5957,9 +3444,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-table-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         font-size: $kendo-font-size-sm,
         line-height: $kendo-line-height-sm,
@@ -5993,14 +3478,8 @@ The following table lists the available variables for customizing the Nouvelle t
         group-label-padding-y: k-map-get( $kendo-spacing, 1 ),
         group-label-font-size: .875em
     )
-)`
-
-</td>
-<td>
-
-`(sm: (font-size: 0.875rem, line-height: 1.25, cell-padding-x: 0.5rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), md: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), lg: (font-size: 1.25rem, line-height: 1.75, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (font-size: 0.875rem, line-height: 1.25, cell-padding-x: 0.5rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), md: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), lg: (font-size: 1.25rem, line-height: 1.75, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
@@ -6026,20 +3505,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-tabstrip-wrapper-padding-x</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tabstrip wrapper</div></div>
@@ -6048,16 +3518,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-wrapper-padding-y</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the tabstrip wrapper</div></div>
@@ -6066,16 +3528,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-wrapper-border-width</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the tabstrip wrapper</div></div>
@@ -6084,16 +3538,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the tabstrip</div></div>
@@ -6102,16 +3548,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the tabstrip</div></div>
@@ -6120,16 +3558,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the tabstrip</div></div>
@@ -6138,16 +3568,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the tabstrip</div></div>
@@ -6156,16 +3578,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-spacing</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The space between the tabstrip items</div></div>
@@ -6174,16 +3588,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-item-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tabstrip item</div></div>
@@ -6192,16 +3598,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-item-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the tabstrip item</div></div>
@@ -6210,16 +3608,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-item-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the tabstrip item</div></div>
@@ -6228,16 +3618,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-item-border-style</td>
     <td>String</td>
-<td>
-
-`solid`
-
-</td>
-<td>
-
-`solid`
-
-</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of the border around the tabstrip item</div></div>
@@ -6246,16 +3628,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-item-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-border-radii, md )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-border-radii, md )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the tabstrip item</div></div>
@@ -6264,16 +3638,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-item-focus-shadow</td>
     <td>List</td>
-<td>
-
-`$kendo-list-item-focus-shadow`
-
-</td>
-<td>
-
-`inset 0 0 0 2px rgba(0, 0, 0, 0.8)`
-
-</td>
+    <td><code>$kendo-list-item-focus-shadow</code></td>
+    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the tabstrip item</div></div>
@@ -6282,16 +3648,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-indicator-size</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 0.5 )`
-
-</td>
-<td>
-
-`0.125rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>0.125rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the tabstrip indicator</div></div>
@@ -6300,16 +3658,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-indicator-color</td>
     <td>String</td>
-<td>
-
-`get-theme-color-var( primary-100 )`
-
-</td>
-<td>
-
-`get-theme-color-var(primary-100)`
-
-</td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>get-theme-color-var(primary-100)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the tabstrip ripple</div></div>
@@ -6318,16 +3668,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-content-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of tabstrip content</div></div>
@@ -6336,16 +3678,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-content-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of tabstrip content</div></div>
@@ -6354,16 +3688,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-content-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of border around tabstrip content</div></div>
@@ -6372,16 +3698,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-content-border-style</td>
     <td>String</td>
-<td>
-
-`solid`
-
-</td>
-<td>
-
-`solid`
-
-</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The style of border around tabstrip content</div></div>
@@ -6390,16 +3708,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-scrollable-button-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal button padding of the scrollable tabstrip</div></div>
@@ -6408,16 +3718,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tabstrip-scrollable-button-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container">
@@ -6443,20 +3745,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-toolbar-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the toolbar.</div></div>
@@ -6465,16 +3758,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-toolbar-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the toolbar.</div></div>
@@ -6483,16 +3768,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-toolbar-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the toolbar.</div></div>
@@ -6501,16 +3778,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-toolbar-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the toolbar.</div></div>
@@ -6519,16 +3788,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-toolbar-input-width</td>
     <td>Number</td>
-<td>
-
-`10em`
-
-</td>
-<td>
-
-`10em`
-
-</td>
+    <td><code>10em</code></td>
+    <td><code>10em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the input in the toolbar.</div></div>
@@ -6537,16 +3798,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-toolbar-item-focus-outline-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the focused toolbar item.</div></div>
@@ -6555,16 +3808,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-toolbar-item-focus-outline-style</td>
     <td>String</td>
-<td>
-
-`solid`
-
-</td>
-<td>
-
-`solid`
-
-</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border style of the focused toolbar item.</div></div>
@@ -6573,9 +3818,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-toolbar-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         padding-x: $kendo-toolbar-sm-padding-x,
         padding-y: $kendo-toolbar-sm-padding-y,
@@ -6591,14 +3834,8 @@ The following table lists the available variables for customizing the Nouvelle t
         padding-y: $kendo-toolbar-lg-padding-y,
         spacing: $kendo-toolbar-lg-spacing
     )
-)`
-
-</td>
-<td>
-
-`(sm: (padding-x: 0.25rem, padding-y: 0.25rem, spacing: 0.25rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: 0.5rem))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, spacing: 0.25rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the toolbar.</div></div>
@@ -6624,20 +3861,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-tooltip-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-border-radii, md )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-border-radii, md )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the tooltip</div></div>
@@ -6646,16 +3874,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the tooltip</div></div>
@@ -6664,16 +3884,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the tooltip</div></div>
@@ -6682,16 +3894,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-border-width</td>
     <td>Number</td>
-<td>
-
-`0px`
-
-</td>
-<td>
-
-`0px`
-
-</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the tooltip</div></div>
@@ -6700,16 +3904,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the tooltip</div></div>
@@ -6718,16 +3914,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-sm`
-
-</td>
-<td>
-
-`0.875rem`
-
-</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the tooltip</div></div>
@@ -6736,16 +3924,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-sm`
-
-</td>
-<td>
-
-`1.25`
-
-</td>
+    <td><code>$kendo-line-height-sm</code></td>
+    <td><code>1.25</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the tooltip</div></div>
@@ -6754,16 +3934,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-title-margin</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the tooltip title</div></div>
@@ -6772,16 +3944,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-title-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the tooltip title</div></div>
@@ -6790,16 +3954,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-title-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the tooltip title</div></div>
@@ -6808,16 +3964,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-title-font-weight</td>
     <td>String</td>
-<td>
-
-`normal`
-
-</td>
-<td>
-
-`normal`
-
-</td>
+    <td><code>normal</code></td>
+    <td><code>normal</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The went weight of the tooltip title</div></div>
@@ -6826,16 +3974,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-tooltip-callout-size</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the tooltip callout</div></div>
@@ -6861,20 +4001,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-treeview-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the treeview component.</div></div>
@@ -6883,9 +4014,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-treeview-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     // sass-lint:disable-block leading-zero
     sm: (
         font-size: $kendo-font-size-sm,
@@ -6923,14 +4052,8 @@ The following table lists the available variables for customizing the Nouvelle t
         item-padding-y: k-map-get( $kendo-spacing, 2 ),
         item-border-radius: k-map-get( $kendo-spacing, 2 )
     )
-)`
-
-</td>
-<td>
-
-`(sm: (font-size: 0.875rem, line-height: 1.25, filter-padding-x: 0.25rem, filter-padding-y: 0.25rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.5rem, item-padding-y: 0.25rem, item-border-radius: 0.125rem), md: (font-size: 1rem, line-height: 1.5, filter-padding-x: 0.5rem, filter-padding-y: 0.5rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.625rem, item-padding-y: 0.375rem, item-border-radius: 0.25rem), lg: (font-size: 1.25rem, line-height: 1.75, filter-padding-x: 0.75rem, filter-padding-y: 0.75rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.75rem, item-padding-y: 0.5rem, item-border-radius: 0.5rem))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (font-size: 0.875rem, line-height: 1.25, filter-padding-x: 0.25rem, filter-padding-y: 0.25rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.5rem, item-padding-y: 0.25rem, item-border-radius: 0.125rem), md: (font-size: 1rem, line-height: 1.5, filter-padding-x: 0.5rem, filter-padding-y: 0.5rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.625rem, item-padding-y: 0.375rem, item-border-radius: 0.25rem), lg: (font-size: 1.25rem, line-height: 1.75, filter-padding-x: 0.75rem, filter-padding-y: 0.75rem, indent: 1rem, icon-spacing: 0.25rem, checkbox-spacing: 0.25rem, item-padding-x: 0.75rem, item-padding-y: 0.5rem, item-border-radius: 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the treeview.</div></div>
@@ -6956,20 +4079,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-font-size-xs</td>
     <td>Number</td>
-<td>
-
-`.75rem`
-
-</td>
-<td>
-
-`0.75rem`
-
-</td>
+    <td><code>.75rem</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
@@ -6978,16 +4092,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-font-family-sans-serif</td>
     <td>List</td>
-<td>
-
-`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
-
-</td>
-<td>
-
-`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
-
-</td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for text.</div></div>
@@ -6996,16 +4102,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-font-family-monospace</td>
     <td>List</td>
-<td>
-
-`SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace`
-
-</td>
-<td>
-
-`SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace`
-
-</td>
+    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td><code>SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for monospaced text. Used for styling the code.</div></div>
@@ -7014,16 +4112,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
@@ -7032,16 +4122,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-line-height-sm</td>
     <td>Number</td>
-<td>
-
-`1.25`
-
-</td>
-<td>
-
-`1.25`
-
-</td>
+    <td><code>1.25</code></td>
+    <td><code>1.25</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
@@ -7067,20 +4149,11 @@ The following table lists the available variables for customizing the Nouvelle t
         <th>Computed value</th>
     </tr>
 </thead>
-<tbody>
-        <tr>
+<tbody><tr>
     <td>$kendo-window-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the window.</div></div>
@@ -7089,16 +4162,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-border-radii, md )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-border-radii, md )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the window.</div></div>
@@ -7107,16 +4172,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the window.</div></div>
@@ -7125,16 +4182,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the window.</div></div>
@@ -7143,16 +4192,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the window.</div></div>
@@ -7161,16 +4202,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-titlebar-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the window titlebar.</div></div>
@@ -7179,16 +4212,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-titlebar-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 3 )`
-
-</td>
-<td>
-
-`0.75rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the window titlebar.</div></div>
@@ -7197,16 +4222,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-titlebar-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between title and actions in window titlebar.</div></div>
@@ -7215,16 +4232,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-titlebar-border-width</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the top border of the window titlebar.</div></div>
@@ -7233,16 +4242,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-titlebar-border-style</td>
     <td>String</td>
-<td>
-
-`solid`
-
-</td>
-<td>
-
-`solid`
-
-</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Style of the top border of the window titlebar.</div></div>
@@ -7251,16 +4252,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-title-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-lg`
-
-</td>
-<td>
-
-`1.25rem`
-
-</td>
+    <td><code>$kendo-font-size-lg</code></td>
+    <td><code>1.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the title of the window.</div></div>
@@ -7269,16 +4262,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-title-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-sm`
-
-</td>
-<td>
-
-`1.25`
-
-</td>
+    <td><code>$kendo-line-height-sm</code></td>
+    <td><code>1.25</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the title of the window.</div></div>
@@ -7287,16 +4272,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-title-font-weight</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the title of the window.</div></div>
@@ -7305,16 +4282,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-titlebar-actions-spacing</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the buttons in the header of the window.</div></div>
@@ -7323,16 +4292,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-titlebar-action-opacity</td>
     <td>Number</td>
-<td>
-
-`1`
-
-</td>
-<td>
-
-`1`
-
-</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of the buttons in the header of the window.</div></div>
@@ -7341,16 +4302,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-titlebar-action-hover-opacity</td>
     <td>Number</td>
-<td>
-
-`1`
-
-</td>
-<td>
-
-`1`
-
-</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of the buttons when hovered in the header of the window.</div></div>
@@ -7359,16 +4312,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-inner-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the content of the window.</div></div>
@@ -7377,16 +4322,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-inner-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the content of the window.</div></div>
@@ -7395,16 +4332,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-actions-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the window action buttons.</div></div>
@@ -7413,16 +4342,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-actions-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the window action buttons.</div></div>
@@ -7431,16 +4352,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-actions-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the top border of the window action buttons.</div></div>
@@ -7449,16 +4362,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-actions-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the action buttons of the window.</div></div>
@@ -7467,18 +4372,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the window.</div></div>
@@ -7487,18 +4382,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the window.</div></div>
@@ -7507,18 +4392,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the window.</div></div>
@@ -7527,16 +4402,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-shadow</td>
     <td>String</td>
-<td>
-
-`none`
-
-</td>
-<td>
-
-`none`
-
-</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow around the window.</div></div>
@@ -7545,16 +4412,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-window-focus-shadow</td>
     <td>String</td>
-<td>
-
-`none`
-
-</td>
-<td>
-
-`none`
-
-</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow around the window when hovered.</div></div>
@@ -7566,7 +4425,6 @@ The following table lists the available variables for customizing the Nouvelle t
 
 
 
-## Mixins
 
 
 
@@ -7576,4 +4434,3 @@ The following table lists the available variables for customizing the Nouvelle t
 * [Styling Overview]({% slug themesandstyles %})
 * [Web Font Icons]({% slug icons %})
 * [Preview of the Themed Components](../)
-

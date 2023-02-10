@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Component
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,18 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-component-bg</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 0 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 0 )</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.</div></div>
@@ -48,18 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-component-text</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 700 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #494949"></span>
-
-`#494949`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 700 )</code></td>
+    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.</div></div>
@@ -68,18 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-component-border</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 100 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 100 )</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.</div></div>

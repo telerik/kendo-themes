@@ -7,27 +7,33 @@ position: 9
 
 # Customization
 
-The following table lists the available variables for customizing the {{ meta.friendlyName }} theme.
+{% if functions.length -%}
+## Functions
 
+{% include "./includes/functions.md.njk" %}
+{%- endif %}
+
+
+{% if variableGroups.length -%}
 ## Variables
 
-{% for group in variableGroups -%}
-### {{ group.title }}
+The following table lists the available variables for customizing the {{ meta.friendlyName }} theme.
 
-<table class="theme-variables">
-    {% include "./includes/theme-variables-thead.md.njk" -%}
-    <tbody>
-        {% for variable in group.variables -%}
-        {% include "./includes/theme-variables-row.md.njk" %}
-        {%- endfor -%}
-    </tbody>
-</table>
-
-{% endfor %}
+{% include "./includes/variables.md.njk" %}
+{%- endif %}
 
 
+{% if mixins.length -%}
 ## Mixins
 
 {% include "./includes/mixins.md.njk" %}
+{%- endif %}
 
-{% include "./includes/suggested-links.md.njk" %}
+
+{% if css.length -%}
+## Classnames
+
+{% include "./includes/css.md.njk" %}
+{%- endif %}
+
+{%- include "./includes/suggested-links.md.njk" -%}

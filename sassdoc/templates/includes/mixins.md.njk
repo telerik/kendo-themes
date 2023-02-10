@@ -1,10 +1,45 @@
-{% for m in mixin -%}
-### `{{ m.context.name }}`
-{{ m.description }}
-{% if m.parameter %}
+{% import "./_utils.njk" as utils %}
+
+{% for mx in mixins -%}
+### `{{ mx.context.name }}`
+
+{{ mx.description }}
+
+#### Syntax
+
+```scss
+@include {{ mx.context.signature }};
+```
+
+{%- if mx.parameters.length %}
 #### Parameters
-{% for p in m.parameter -%}
-- {{ p.name }} : `{{ p.type }}` - {{ p.description }}
+
+{% for param in mx.parameters %}
+`<{{ param.type }}> ${{ param.name }}`
+: {{ param.description }}
 {% endfor -%}
-{% endif -%}
-{% endfor %}
+{%- endif %}
+
+{%- if mx.examples.length %}
+#### Examples
+
+{% for example in mx.examples -%}
+```{{example.type}}
+{%- if example.description %}
+{{ example.description }}
+{%- endif %}
+{{ example.code | trim }}
+```
+{% endfor -%}
+{%- endif %}
+
+#### Source
+
+```scss
+// Location {{ utils.sourceLink(mx.file.path, mx.context.line.start, mx.context.line.end) }}
+@mixin {{ mx.context.signature }} {
+    {{mx.context.code | trim}}
+}
+```
+
+{% endfor -%}

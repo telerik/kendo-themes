@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Skeleton
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-skeleton-text-transform</td>
     <td>String</td>
-<td>
-
-`scale( 1, .6 )`
-
-</td>
-<td>
-
-`scale(1, 0.6)`
-
-</td>
+    <td><code>scale( 1, .6 )</code></td>
+    <td><code>scale(1, 0.6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text transform scale of the skeleton.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-text-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-border-radii, md )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-border-radii, md )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the skeleton text.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-rect-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-border-radii, md )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-border-radii, md )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the rectangle skeleton.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-circle-border-radius</td>
     <td>Number</td>
-<td>
-
-`9999px`
-
-</td>
-<td>
-
-`9999px`
-
-</td>
+    <td><code>9999px</code></td>
+    <td><code>9999px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the circle skeleton.</div></div>
@@ -100,18 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 100 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ededed"></span>
-
-`#ededed`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 100 )</code></td>
+    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the skeleton item.</div></div>
@@ -120,18 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-skeleton-wave-bg</td>
     <td>Color</td>
-<td>
-
-`k-get-theme-color( neutral, 50 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f8f8f8"></span>
-
-`#f8f8f8`
-
-</td>
+    <td><code>k-get-theme-color( neutral, 50 )</code></td>
+    <td><span class="color-preview" style="background-color: #f8f8f8"></span><code>#f8f8f8</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the skeleton wave animation.</div></div>

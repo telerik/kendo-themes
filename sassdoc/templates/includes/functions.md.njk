@@ -1,0 +1,45 @@
+{% import "./_utils.njk" as utils %}
+
+{% for fn in functions -%}
+### `{{ fn.context.name }}`
+
+{{ fn.description }}
+
+#### Syntax
+
+```scss
+{{ fn.context.signature }} // => {{ fn.return.type }}
+```
+
+{% if fn.parameters.length -%}
+#### Parameters
+
+{% for param in fn.parameters %}
+`<{{ param.type }}> ${{ param.name }}`
+: {{ param.description }}
+{% endfor -%}
+{%- endif %}
+
+{% if fn.examples.length -%}
+#### Examples
+
+{% for example in fn.examples -%}
+```{{example.type}}
+{%- if example.description %}
+// {{ example.description }}
+{%- endif %}
+{{ example.code | trim }}
+```
+{% endfor -%}
+{%- endif %}
+
+#### Source
+
+```scss
+// Location {{ utils.sourceLink(fn.file.path, fn.context.line.start, fn.context.line.end) }}
+@function {{ fn.context.signature }} {
+    {{fn.context.code | trim}}
+}
+```
+
+{% endfor -%}

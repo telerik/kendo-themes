@@ -7,7 +7,11 @@ $_kendo-svg-escaped-characters: (
     (")", "%29")
 ) !default;
 
-// See https://codepen.io/kevinweber/pen/dXWoRw
+/// Escapes SVG characters in a string
+/// @param {String} $string - The string to escape
+/// @return {String} - The escaped string
+///
+/// @link https://codepen.io/kevinweber/pen/dXWoRw
 @function k-escape-svg($string) {
     @if k-string-index($string, "data:image/svg+xml") {
         @each $char, $encoded in $_kendo-svg-escaped-characters {
@@ -30,6 +34,9 @@ $_kendo-escape-class-name: (
     "/": "\\/"
 );
 
+/// Escapes special characters in a class name
+/// @param {String} $text - The string to escape
+/// @return {String} - The escaped string
 @function k-escape-class-name( $text ) {
     $_text: $text;
 

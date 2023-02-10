@@ -21,6 +21,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: develop
+          fetch-depth: '0'
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup git
@@ -56,38 +57,10 @@ jobs:
           npm run sass
           npm run sass:flat
           npm run dist:swatches
-
-      - name: Determine correct version to publish
-        run: |
-          DEV_VERSION=$(npm info @progress/kendo-theme-default@dev version)
-          LATEST_VERSION=$(npm info @progress/kendo-theme-default@latest version)
-          VERSION=$(node ./scripts/semver-dev-inc.js --dev $DEV_VERSION --latest $LATEST_VERSION)
-          echo "Lerna should publish using $VERSION"
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-
-      - name: Prepare release
-        run: |
-          npx lerna version $VERSION --no-changelog --no-git-tag-version --no-push
-          git add .
-          git commit -m "chore(release): v$VERSION"
+          npm run docs
 
       - name: Lerna publish
         run: |
-          npx lerna publish from-package --dist-tag dev
-
-      - name: Push release commit
-        run: |
-          git pull --rebase origin develop:tmp-release-dev
-          git push origin develop:tmp-release-dev
-
-      - name: Mark checks as successful
-        run: |
-          commit=$(git rev-parse HEAD)
-          ./build/mark-checks.sh $commit
+          npx lerna publish --canary --preid dev --dist-tag dev --allow-branch develop --force-publish --yes
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Push release commit to develop
-        run: |
-          git push origin develop
-          git push --delete origin tmp-release-dev

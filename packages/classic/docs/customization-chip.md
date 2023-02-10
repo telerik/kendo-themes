@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Chip
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-chip-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`4px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the text and the icons of the chip.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`4px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the chip.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`4px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the chip.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`14px`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the chip.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-line-height</td>
     <td>Number</td>
-<td>
-
-`1`
-
-</td>
-<td>
-
-`1`
-
-</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
-<td>
-
-`calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} )`
-
-</td>
-<td>
-
-`calc( 1em + 8px + 2px )`
-
-</td>
+    <td><code>calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} )</code></td>
+    <td><code>calc( 1em + 8px + 2px )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the chip.</div></div>
@@ -154,9 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         padding-x: $kendo-chip-sm-padding-x,
         padding-y: $kendo-chip-sm-padding-y,
@@ -175,14 +119,8 @@ The following table lists the available variables for customization.
         font-size: $kendo-chip-lg-font-size,
         line-height: $kendo-chip-lg-line-height
     )
-)`
-
-</td>
-<td>
-
-`(sm: (padding-x: 4px, padding-y: 2px, font-size: 14px, line-height: 1), md: (padding-x: 4px, padding-y: 4px, font-size: 14px, line-height: 1), lg: (padding-x: 4px, padding-y: 6px, font-size: 14px, line-height: 1))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (padding-x: 4px, padding-y: 2px, font-size: 14px, line-height: 1), md: (padding-x: 4px, padding-y: 4px, font-size: 14px, line-height: 1), lg: (padding-x: 4px, padding-y: 6px, font-size: 14px, line-height: 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the chip.</div></div>
@@ -191,18 +129,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-base-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-button-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f0f0f0"></span>
-
-`#f0f0f0`
-
-</td>
+    <td><code>$kendo-button-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the chip.</div></div>
@@ -211,22 +139,14 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-theme-colors</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     "base": $kendo-chip-base-bg,
     "error": k-map-get( $kendo-theme-colors, "error" ),
     "info": k-map-get( $kendo-theme-colors, "info" ),
     "warning": k-map-get( $kendo-theme-colors, "warning" ),
     "success": k-map-get( $kendo-theme-colors, "success" )
-)`
-
-</td>
-<td>
-
-`("base": #f0f0f0, "error": #d92800, "info": #2498bc, "warning": #ff9800, "success": #3ea44e)`
-
-</td>
+)</code></td>
+    <td><code>("base": #f0f0f0, "error": #d92800, "info": #2498bc, "warning": #ff9800, "success": #3ea44e)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the chip.</div></div>
@@ -235,18 +155,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-chip-base-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f0f0f0"></span>
-
-`#f0f0f0`
-
-</td>
+    <td><code>$kendo-chip-base-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of solid chip.</div></div>
@@ -255,18 +165,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-button-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-button-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of solid chip.</div></div>
@@ -275,18 +175,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-button-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-button-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of solid chip.</div></div>
@@ -295,16 +185,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-shadow</td>
     <td>List</td>
-<td>
-
-`0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )`
-
-</td>
-<td>
-
-`0 0 0 2px rgba(0, 0, 0, 0.16)`
-
-</td>
+    <td><code>0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )</code></td>
+    <td><code>0 0 0 2px rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of solid chip.</div></div>
@@ -313,16 +195,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-gradient</td>
     <td>List</td>
-<td>
-
-`$kendo-button-gradient`
-
-</td>
-<td>
-
-`rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)`
-
-</td>
+    <td><code>$kendo-button-gradient</code></td>
+    <td><code>rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of solid chip.</div></div>
@@ -331,16 +205,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-focus-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of focused solid chip.</div></div>
@@ -349,16 +215,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-focus-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of focused solid chip.</div></div>
@@ -367,18 +225,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-hover-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-button-hover-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #dddddd"></span>
-
-`#dddddd`
-
-</td>
+    <td><code>$kendo-button-hover-bg</code></td>
+    <td><span class="color-preview" style="background-color: #dddddd"></span><code>#dddddd</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of hovered solid chip.</div></div>
@@ -387,16 +235,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-hover-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered solid chip.</div></div>
@@ -405,18 +245,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-selected-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-button-active-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-button-active-bg</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected solid chip.</div></div>
@@ -425,16 +255,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-selected-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected solid chip.</div></div>
@@ -443,18 +265,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of outline chip.</div></div>
@@ -463,18 +275,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-chip-solid-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-chip-solid-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of outline chip.</div></div>
@@ -483,18 +285,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-chip-outline-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-chip-outline-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of outline chip.</div></div>
@@ -503,16 +295,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-shadow</td>
     <td>List</td>
-<td>
-
-`0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )`
-
-</td>
-<td>
-
-`0 0 0 2px rgba(0, 0, 0, 0.16)`
-
-</td>
+    <td><code>0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )</code></td>
+    <td><code>0 0 0 2px rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of outline chip.</div></div>
@@ -521,18 +305,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-hover-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-chip-outline-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-chip-outline-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of hovered outline chip.</div></div>
@@ -541,18 +315,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
     <td>Color</td>
-<td>
-
-`k-contrast-legacy( $kendo-chip-outline-hover-bg )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>k-contrast-legacy( $kendo-chip-outline-hover-bg )</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered outline chip.</div></div>
@@ -561,18 +325,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-selected-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-chip-outline-hover-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-chip-outline-hover-bg</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected outline chip.</div></div>
@@ -581,18 +335,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-selected-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-chip-outline-hover-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>$kendo-chip-outline-hover-text</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected outline chip.</div></div>
@@ -601,20 +345,12 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-list-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: k-map-get( $kendo-spacing, 1 ),
     md: k-map-get( $kendo-spacing, 1 ),
     lg: k-map-get( $kendo-spacing, 1 )
-)`
-
-</td>
-<td>
-
-`(sm: 4px, md: 4px, lg: 4px)`
-
-</td>
+)</code></td>
+    <td><code>(sm: 4px, md: 4px, lg: 4px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>

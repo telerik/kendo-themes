@@ -106,7 +106,7 @@ $kendo-orgchart-card-focus-shadow: $kendo-card-focus-shadow !default;
 $kendo-orgchart-card-title-margin-y: 0px !default;
 /// Font size of the orgchart card title.
 /// @group orgchart
-$kendo-orgchart-card-title-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-orgchart-card-title-font-size: $kendo-card-title-font-size !default;
 /// Line height of the orgchart card title.
 /// @group orgchart
 $kendo-orgchart-card-title-line-height: var( --kendo-line-height, normal ) !default;

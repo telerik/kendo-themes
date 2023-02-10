@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Grid
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-grid-padding-x</td>
     <td>Number</td>
-<td>
-
-`$kendo-table-md-cell-padding-x`
-
-</td>
-<td>
-
-`24px`
-
-</td>
+    <td><code>$kendo-table-md-cell-padding-x</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-padding-y</td>
     <td>Number</td>
-<td>
-
-`$kendo-table-md-cell-padding-y`
-
-</td>
-<td>
-
-`10px`
-
-</td>
+    <td><code>$kendo-table-md-cell-padding-y</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-padding-x</td>
     <td>Number</td>
-<td>
-
-`$kendo-grid-padding-x`
-
-</td>
-<td>
-
-`24px`
-
-</td>
+    <td><code>$kendo-grid-padding-x</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-padding-y</td>
     <td>Number</td>
-<td>
-
-`16px`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-grouping-header-padding-x</td>
     <td>Number</td>
-<td>
-
-`8px`
-
-</td>
-<td>
-
-`8px`
-
-</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-grouping-header-padding-y</td>
     <td>Number</td>
-<td>
-
-`$kendo-grid-grouping-header-padding-x`
-
-</td>
-<td>
-
-`8px`
-
-</td>
+    <td><code>$kendo-grid-grouping-header-padding-x</code></td>
+    <td><code>8px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-cell-padding-x</td>
     <td>Number</td>
-<td>
-
-`$kendo-grid-padding-x`
-
-</td>
-<td>
-
-`24px`
-
-</td>
+    <td><code>$kendo-grid-padding-x</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
@@ -154,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-cell-padding-y</td>
     <td>Number</td>
-<td>
-
-`$kendo-grid-padding-y`
-
-</td>
-<td>
-
-`10px`
-
-</td>
+    <td><code>$kendo-grid-padding-y</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
@@ -172,16 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-filter-cell-padding-x</td>
     <td>Number</td>
-<td>
-
-`$kendo-grid-padding-x`
-
-</td>
-<td>
-
-`24px`
-
-</td>
+    <td><code>$kendo-grid-padding-x</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter cell.</div></div>
@@ -190,16 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-filter-cell-padding-y</td>
     <td>Number</td>
-<td>
-
-`$kendo-grid-padding-y`
-
-</td>
-<td>
-
-`10px`
-
-</td>
+    <td><code>$kendo-grid-padding-y</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
@@ -208,16 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-edit-cell-padding-x</td>
     <td>Number</td>
-<td>
-
-`$kendo-grid-cell-padding-x`
-
-</td>
-<td>
-
-`24px`
-
-</td>
+    <td><code>$kendo-grid-cell-padding-x</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cell.</div></div>
@@ -226,16 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-edit-cell-padding-y</td>
     <td>Number</td>
-<td>
-
-`6px`
-
-</td>
-<td>
-
-`6px`
-
-</td>
+    <td><code>6px</code></td>
+    <td><code>6px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cell.</div></div>
@@ -244,18 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-table-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid component</div></div>
@@ -264,18 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
-
-`rgba(0, 0, 0, 0.87)`
-
-</td>
+    <td><code>$kendo-table-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid component</div></div>
@@ -284,18 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
-
-`rgba(0, 0, 0, 0.12)`
-
-</td>
+    <td><code>$kendo-table-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
@@ -304,18 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-table-header-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header</div></div>
@@ -324,18 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span>
-
-`rgba(0, 0, 0, 0.54)`
-
-</td>
+    <td><code>$kendo-table-header-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header</div></div>
@@ -344,18 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
-
-`rgba(0, 0, 0, 0.12)`
-
-</td>
+    <td><code>$kendo-table-header-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid header</div></div>
@@ -364,16 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-gradient</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of grid header</div></div>
@@ -382,18 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-footer-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-footer-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-table-footer-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid footer</div></div>
@@ -402,18 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-footer-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-footer-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span>
-
-`rgba(0, 0, 0, 0.54)`
-
-</td>
+    <td><code>$kendo-table-footer-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid footer</div></div>
@@ -422,18 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-footer-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-footer-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
-
-`rgba(0, 0, 0, 0.12)`
-
-</td>
+    <td><code>$kendo-table-footer-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>
@@ -442,18 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-alt-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-alt-row-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: transparent"></span>
-
-`transparent`
-
-</td>
+    <td><code>$kendo-table-alt-row-bg</code></td>
+    <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid</div></div>
@@ -462,16 +260,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-alt-text</td>
     <td>Null</td>
-<td>
-
-`$kendo-table-alt-row-text`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-table-alt-row-text</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in grid</div></div>
@@ -480,16 +270,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-alt-border</td>
     <td>Null</td>
-<td>
-
-`$kendo-table-alt-row-border`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-table-alt-row-border</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in grid</div></div>
@@ -498,18 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-hover-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-hover-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span>
-
-`rgba(0, 0, 0, 0.07)`
-
-</td>
+    <td><code>$kendo-table-hover-bg</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span><code>rgba(0, 0, 0, 0.07)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in grid</div></div>
@@ -518,16 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-hover-text</td>
     <td>Null</td>
-<td>
-
-`$kendo-table-hover-text`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-table-hover-text</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in grid</div></div>
@@ -536,18 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-hover-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-hover-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
-
-`rgba(0, 0, 0, 0.12)`
-
-</td>
+    <td><code>$kendo-table-hover-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in grid</div></div>
@@ -556,18 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-selected-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-selected-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span>
-
-`rgba(0, 0, 0, 0.04)`
-
-</td>
+    <td><code>$kendo-table-selected-bg</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
@@ -576,16 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-selected-text</td>
     <td>Null</td>
-<td>
-
-`$kendo-table-selected-text`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-table-selected-text</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in grid</div></div>
@@ -594,16 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-selected-border</td>
     <td>Null</td>
-<td>
-
-`$kendo-table-selected-border`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-table-selected-border</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>

@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Floating-label
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-floating-label-scale</td>
     <td></td>
-<td>
-
-`1`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The resize scale of the floating label</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-font-size</td>
     <td></td>
-<td>
-
-`var( --kendo-font-size, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the floating label</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-font-weight</td>
     <td></td>
-<td>
-
-`var( --kendo-font-weight-bold, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-weight-bold, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the floating label</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-line-height</td>
     <td></td>
-<td>
-
-`var( --kendo-line-height, normal )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the floating label</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-height</td>
     <td></td>
-<td>
-
-`calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the floating label</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-offset-x</td>
     <td></td>
-<td>
-
-`calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>calc( #{$kendo-input-md-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the floating label</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-offset-y</td>
     <td></td>
-<td>
-
-`calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-md-padding-y} )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the floating label</div></div>
@@ -154,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-focus-scale</td>
     <td></td>
-<td>
-
-`1`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus resize scale of the floating label</div></div>
@@ -172,16 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-focus-offset-x</td>
     <td></td>
-<td>
-
-`0`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>0</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal focus offset of the floating label</div></div>
@@ -190,16 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-focus-offset-y</td>
     <td></td>
-<td>
-
-`0`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>0</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical focus offset of the floating label</div></div>
@@ -208,16 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-transition</td>
     <td></td>
-<td>
-
-`.2s ease-out`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>.2s ease-out</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the floating label</div></div>
@@ -226,16 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-bg</td>
     <td></td>
-<td>
-
-`inherit`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>inherit</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the floating label</div></div>
@@ -244,16 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-text</td>
     <td></td>
-<td>
-
-`inherit`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>inherit</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the floating label</div></div>
@@ -262,16 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-focus-bg</td>
     <td></td>
-<td>
-
-`inherit`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>inherit</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the floating label</div></div>
@@ -280,16 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-focus-text</td>
     <td></td>
-<td>
-
-`inherit`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>inherit</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the floating label</div></div>
@@ -298,16 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-invalid-text</td>
     <td></td>
-<td>
-
-`var( --kendo-invalid-text, #{$kendo-invalid-text} )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-invalid-text, #{$kendo-invalid-text} )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the floating label</div></div>

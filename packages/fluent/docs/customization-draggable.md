@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Draggable
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-drag-clue-border-radius</td>
     <td></td>
-<td>
-
-`var( --kendo-border-radius-md, 0 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Borer radius of the drag clue.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-border-width</td>
     <td></td>
-<td>
-
-`0px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>0px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Borer width of the drag clue.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-border-style</td>
     <td></td>
-<td>
-
-`solid`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>solid</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Borer style of the drag clue.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-padding-x</td>
     <td></td>
-<td>
-
-`$kendo-padding-lg-x`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-padding-lg-x</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the drag clue.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-padding-y</td>
     <td></td>
-<td>
-
-`$kendo-padding-lg-y`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-padding-lg-y</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the drag clue.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-font-family</td>
     <td></td>
-<td>
-
-`var( --kendo-font-family, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the drag clue.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-font-size</td>
     <td></td>
-<td>
-
-`var( --kendo-font-size, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the drag clue.</div></div>
@@ -154,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-line-height</td>
     <td></td>
-<td>
-
-`var( --kendo-line-height, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-line-height, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the drag clue.</div></div>
@@ -172,16 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-spacing</td>
     <td></td>
-<td>
-
-`.4ex`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>.4ex</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the drag clue.</div></div>
@@ -190,16 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-opacity</td>
     <td></td>
-<td>
-
-`.8`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>.8</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of the drag clue.</div></div>
@@ -208,16 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-text</td>
     <td></td>
-<td>
-
-`var( --kendo-selected-text, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-selected-text, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the drag clue.</div></div>
@@ -226,16 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-bg</td>
     <td></td>
-<td>
-
-`var( --kendo-selected-bg, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-selected-bg, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the drag clue.</div></div>
@@ -244,16 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-border</td>
     <td></td>
-<td>
-
-`var( --kendo-selected-border, inherit )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-selected-border, inherit )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the drag clue.</div></div>
@@ -262,16 +160,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-gradient</td>
     <td></td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>null</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gradient of the drag clue.</div></div>
@@ -280,16 +170,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drag-clue-shadow</td>
     <td></td>
-<td>
-
-`var( --kendo-box-shadow-depth-2, none )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the drag clue.</div></div>
@@ -298,16 +180,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drop-hint-arrow-size</td>
     <td></td>
-<td>
-
-`6px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>6px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Arrow size of the drop hint.</div></div>
@@ -316,16 +190,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drop-hint-arrow-spacing</td>
     <td></td>
-<td>
-
-`math.div( $kendo-drop-hint-arrow-size, 2 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>math.div( $kendo-drop-hint-arrow-size, 2 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Arrow spacing of the drop hint.</div></div>
@@ -334,16 +200,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drop-hint-line-h-width</td>
     <td></td>
-<td>
-
-`20px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>20px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the horizontal drop hint line.</div></div>
@@ -352,16 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drop-hint-line-h-height</td>
     <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the horizontal drop hint line.</div></div>
@@ -370,16 +220,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drop-hint-line-v-width</td>
     <td></td>
-<td>
-
-`$kendo-drop-hint-line-h-height`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-drop-hint-line-h-height</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the vertical drop hint line.</div></div>
@@ -388,16 +230,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drop-hint-line-v-height</td>
     <td></td>
-<td>
-
-`$kendo-drop-hint-line-h-width`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-drop-hint-line-h-width</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the vertical drop hint line.</div></div>
@@ -406,16 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drop-hint-bg</td>
     <td></td>
-<td>
-
-`get-theme-color-var( primary-100 )`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background-color of the drop hint.</div></div>

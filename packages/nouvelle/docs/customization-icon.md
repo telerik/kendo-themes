@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Icon
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-icon-size</td>
     <td>Number</td>
-<td>
-
-`1rem`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>1rem</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the icons.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-md</td>
     <td>Number</td>
-<td>
-
-`1rem`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>1rem</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the icons.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-size-lg</td>
     <td>Calculation</td>
-<td>
-
-`1.25rem`
-
-</td>
-<td>
-
-`calc( 16px * 1.25 )`
-
-</td>
+    <td><code>1.25rem</code></td>
+    <td><code>calc( 16px * 1.25 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the large icons.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-icon-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the icons.</div></div>

@@ -7,6 +7,9 @@ position: 9
 
 # Customizing {{ title }}
 
+{% if variables.length -%}
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -17,5 +20,6 @@ The following table lists the available variables for customization.
         {%- endfor -%}
     </tbody>
 </table>
+{%- endif %}
 
 {% include "./includes/suggested-links.md.njk" %}

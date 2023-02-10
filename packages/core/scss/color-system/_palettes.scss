@@ -1,3 +1,72 @@
+/// Color palettes to be used in the Kendo UI themes.
+/// @access private
+/// @type Record<String, ColorMap>
+/// @prop {ColorMap} neutral - The neutral palette
+/// @prop {ColorMap} marsala - The marsala palette
+/// @prop {ColorMap} bootstrapGray - The Bootstrap gray palette
+/// @prop {ColorMap} bootstrapBlue - The Bootstrap blue palette
+/// @prop {ColorMap} bootstrapIndigo - The Bootstrap indigo palette
+/// @prop {ColorMap} bootstrapPurple - The Bootstrap purple palette
+/// @prop {ColorMap} bootstrapPink - The Bootstrap pink palette
+/// @prop {ColorMap} bootstrapRed - The Bootstrap red palette
+/// @prop {ColorMap} bootstrapOrange - The Bootstrap orange palette
+/// @prop {ColorMap} bootstrapYellow - The Bootstrap yellow palette
+/// @prop {ColorMap} bootstrapGreen - The Bootstrap green palette
+/// @prop {ColorMap} bootstrapTeal - The Bootstrap teal palette
+/// @prop {ColorMap} bootstrapCyan - The Bootstrap cyan palette
+/// @prop {ColorMap} fluentNeutral - The Fluent neutral palette
+/// @prop {ColorMap} materialGray - The Material gray palette
+/// @prop {ColorMap} materialBlueGray - The Material blue gray palette
+/// @prop {ColorMap} materialRed - The Material red palette
+/// @prop {ColorMap} materialPink - The Material pink palette
+/// @prop {ColorMap} materialPurple - The Material purple palette
+/// @prop {ColorMap} materialDeepPurple - The Material deep purple palette
+/// @prop {ColorMap} materialIndigo - The Material indigo palette
+/// @prop {ColorMap} materialBlue - The Material blue palette
+/// @prop {ColorMap} materialLightBlue - The Material light blue palette
+/// @prop {ColorMap} materialCyan - The Material cyan palette
+/// @prop {ColorMap} materialTeal - The Material teal palette
+/// @prop {ColorMap} materialGreen - The Material green palette
+/// @prop {ColorMap} materialLightGreen - The Material light green palette
+/// @prop {ColorMap} materialLime - The Material lime palette
+/// @prop {ColorMap} materialYellow - The Material yellow palette
+/// @prop {ColorMap} materialAmber - The Material amber palette
+/// @prop {ColorMap} materialOrange - The Material orange palette
+/// @prop {ColorMap} materialDeepOrange - The Material deep orange palette
+/// @prop {ColorMap} materialBrown - The Material brown palette
+/// @prop {ColorMap} primerGray - The Primer gray palette
+/// @prop {ColorMap} primerBlue - The Primer blue palette
+/// @prop {ColorMap} primerGreen - The Primer green palette
+/// @prop {ColorMap} primerYellow - The Primer yellow palette
+/// @prop {ColorMap} primerOrange - The Primer orange palette
+/// @prop {ColorMap} primerRed - The Primer red palette
+/// @prop {ColorMap} primerPurple - The Primer purple palette
+/// @prop {ColorMap} primerPink - The Primer pink palette
+/// @prop {ColorMap} primerCoral - The Primer coral palette
+/// @prop {ColorMap} tailwindNeutral - The Tailwind neutral palette
+/// @prop {ColorMap} tailwindSlate - The Tailwind slate palette
+/// @prop {ColorMap} tailwindGray - The Tailwind gray palette
+/// @prop {ColorMap} tailwindZinc - The Tailwind zinc palette
+/// @prop {ColorMap} tailwindStone - The Tailwind stone palette
+/// @prop {ColorMap} tailwindRed - The Tailwind red palette
+/// @prop {ColorMap} tailwindOrange - The Tailwind orange palette
+/// @prop {ColorMap} tailwindAmber - The Tailwind amber palette
+/// @prop {ColorMap} tailwindYellow - The Tailwind yellow palette
+/// @prop {ColorMap} tailwindLime - The Tailwind lime palette
+/// @prop {ColorMap} tailwindGreen - The Tailwind green palette
+/// @prop {ColorMap} tailwindEmerald - The Tailwind emerald palette
+/// @prop {ColorMap} tailwindTeal - The Tailwind teal palette
+/// @prop {ColorMap} tailwindCyan - The Tailwind cyan palette
+/// @prop {ColorMap} tailwindSky - The Tailwind sky palette
+/// @prop {ColorMap} tailwindBlue - The Tailwind blue palette
+/// @prop {ColorMap} tailwindIndigo - The Tailwind indigo palette
+/// @prop {ColorMap} tailwindViolet - The Tailwind violet palette
+/// @prop {ColorMap} tailwindPurple - The Tailwind purple palette
+/// @prop {ColorMap} tailwindFuchsia - The Tailwind fuchsia palette
+/// @prop {ColorMap} tailwindPink - The Tailwind pink palette
+/// @prop {ColorMap} tailwindRose - The Tailwind rose palette
+///
+/// @group color-system
 $kendo-palettes: (
 
     // Kendo

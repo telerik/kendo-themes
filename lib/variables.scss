@@ -1,5 +1,5 @@
 @use "sass:meta";
-@use "all.scss";
+@use "../all.scss";
 
 $_vars: meta.module-variables("all");
 
