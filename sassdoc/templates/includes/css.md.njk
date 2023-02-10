@@ -1,0 +1,21 @@
+{% import "./_utils.njk" as utils %}
+
+{% for selector in css -%}
+### `{{ selector.context.name }}`
+
+{{ selector.description }}
+
+{% if selector.examples.length -%}
+#### Examples
+
+{% for example in selector.examples -%}
+```{{example.type}}
+{%- if example.description %}
+/* {{ example.description }} */
+{%- endif %}
+{{ example.code | trim }}
+```
+{% endfor -%}
+{%- endif %}
+
+{% endfor -%}

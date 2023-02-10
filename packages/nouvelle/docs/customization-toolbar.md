@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Toolbar
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-toolbar-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the toolbar.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the toolbar.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the toolbar.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the toolbar.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-input-width</td>
     <td>Number</td>
-<td>
-
-`10em`
-
-</td>
-<td>
-
-`10em`
-
-</td>
+    <td><code>10em</code></td>
+    <td><code>10em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the input in the toolbar.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-item-focus-outline-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the focused toolbar item.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-item-focus-outline-style</td>
     <td>String</td>
-<td>
-
-`solid`
-
-</td>
-<td>
-
-`solid`
-
-</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border style of the focused toolbar item.</div></div>
@@ -154,9 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-toolbar-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         padding-x: $kendo-toolbar-sm-padding-x,
         padding-y: $kendo-toolbar-sm-padding-y,
@@ -172,14 +116,8 @@ The following table lists the available variables for customization.
         padding-y: $kendo-toolbar-lg-padding-y,
         spacing: $kendo-toolbar-lg-spacing
     )
-)`
-
-</td>
-<td>
-
-`(sm: (padding-x: 0.25rem, padding-y: 0.25rem, spacing: 0.25rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: 0.5rem))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, spacing: 0.25rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the toolbar.</div></div>

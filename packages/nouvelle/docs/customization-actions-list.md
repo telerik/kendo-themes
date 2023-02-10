@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Actions-list
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-actions-list-spacing</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`0.25rem`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items in actions list</div></div>

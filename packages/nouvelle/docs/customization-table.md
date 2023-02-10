@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Table
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-table-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the table border.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-vertical-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of vertical border of table cells.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-horizontal-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of horizontal border of table cells.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-font-weight</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the table header cells.</div></div>
@@ -100,9 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         font-size: $kendo-font-size-sm,
         line-height: $kendo-line-height-sm,
@@ -136,14 +104,8 @@ The following table lists the available variables for customization.
         group-label-padding-y: k-map-get( $kendo-spacing, 1 ),
         group-label-font-size: .875em
     )
-)`
-
-</td>
-<td>
-
-`(sm: (font-size: 0.875rem, line-height: 1.25, cell-padding-x: 0.5rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), md: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), lg: (font-size: 1.25rem, line-height: 1.75, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (font-size: 0.875rem, line-height: 1.25, cell-padding-x: 0.5rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), md: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em), lg: (font-size: 1.25rem, line-height: 1.75, cell-padding-x: 0.75rem, cell-padding-y: 0.25rem, group-row-padding-x: 0, group-row-padding-y: 0.25rem, group-label-padding-x: 0.5rem, group-label-padding-y: 0.25rem, group-label-font-size: 0.875em))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>

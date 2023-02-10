@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Input
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-input-default-width</td>
     <td>Number</td>
-<td>
-
-`100%`
-
-</td>
-<td>
-
-`100%`
-
-</td>
+    <td><code>100%</code></td>
+    <td><code>100%</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of input components.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of input components.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-border-radius</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of input components.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-padding-x</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 4 )`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of input components.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-padding-y</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 2 )`
-
-</td>
-<td>
-
-`8px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of input components.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-lg`
-
-</td>
-<td>
-
-`16px`
-
-</td>
+    <td><code>$kendo-font-size-lg</code></td>
+    <td><code>16px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of input components.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-line-height</td>
     <td>Number</td>
-<td>
-
-`1.25`
-
-</td>
-<td>
-
-`1.25`
-
-</td>
+    <td><code>1.25</code></td>
+    <td><code>1.25</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of input components.</div></div>

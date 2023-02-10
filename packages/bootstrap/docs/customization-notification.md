@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Notification
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-notification-padding-x</td>
     <td>Number</td>
-<td>
-
-`$alert-padding-x`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$alert-padding-x</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the notification container.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-padding-y</td>
     <td>Number</td>
-<td>
-
-`$alert-padding-y`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$alert-padding-y</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the notification.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-border-width</td>
     <td>Number</td>
-<td>
-
-`$alert-border-width`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>$alert-border-width</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the notification.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-border-radius</td>
     <td>Number</td>
-<td>
-
-`$alert-border-radius`
-
-</td>
-<td>
-
-`0.375rem`
-
-</td>
+    <td><code>$alert-border-radius</code></td>
+    <td><code>0.375rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the notification.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-shadow</td>
     <td>List</td>
-<td>
-
-`$kendo-popup-shadow`
-
-</td>
-<td>
-
-`0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04)`
-
-</td>
+    <td><code>$kendo-popup-shadow</code></td>
+    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the notification.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-font-family</td>
     <td>List</td>
-<td>
-
-`$kendo-font-family`
-
-</td>
-<td>
-
-`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
-
-</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the notification.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-sm`
-
-</td>
-<td>
-
-`0.875rem`
-
-</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the notification.</div></div>
@@ -154,16 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the notification.</div></div>
@@ -172,16 +110,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-icon-spacing</td>
     <td>Number</td>
-<td>
-
-`$kendo-icon-spacing`
-
-</td>
-<td>
-
-`0.5rem`
-
-</td>
+    <td><code>$kendo-icon-spacing</code></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal spacing of the notification icon.</div></div>
@@ -190,18 +120,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the notification.</div></div>
@@ -210,18 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #212529"></span>
-
-`#212529`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the notification.</div></div>
@@ -230,18 +140,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #dee2e6"></span>
-
-`#dee2e6`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the notification.</div></div>
@@ -250,16 +150,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-notification-theme-colors</td>
     <td>Map</td>
-<td>
-
-`$kendo-theme-colors`
-
-</td>
-<td>
-
-`("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)`
-
-</td>
+    <td><code>$kendo-theme-colors</code></td>
+    <td><code>("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors of the notification.</div></div>

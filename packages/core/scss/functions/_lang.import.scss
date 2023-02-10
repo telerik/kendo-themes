@@ -1,3 +1,14 @@
+/// Returns the value of a variable if it is not null,
+/// otherwise returns the fallback value.
+/// @param {Any} $var - The variable to check.
+/// @param {Any} $fallback - The fallback value.
+/// @return {Any} - The value of the variable or the fallback value.
+///
+/// @example scss - Usage
+///   $foo: null;
+///   @debug k-if-var( $foo, "bar" ); // => "bar"
+///   $foo: "baz";
+///   @debug k-if-var( $foo, "bar" ); // => "baz"
 @function k-if-var( $var, $fallback ) {
     @return if( $var != null, $var, $fallback );
 }

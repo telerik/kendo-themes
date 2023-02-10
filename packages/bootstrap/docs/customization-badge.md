@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Badge
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-badge-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the badge.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-border-radius</td>
     <td>Number</td>
-<td>
-
-`$badge-border-radius`
-
-</td>
-<td>
-
-`0.375rem`
-
-</td>
+    <td><code>$badge-border-radius</code></td>
+    <td><code>0.375rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the badge.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-padding-x</td>
     <td>Number</td>
-<td>
-
-`$badge-padding-x`
-
-</td>
-<td>
-
-`0.65em`
-
-</td>
+    <td><code>$badge-padding-x</code></td>
+    <td><code>0.65em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the badge.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-padding-y</td>
     <td>Number</td>
-<td>
-
-`$badge-padding-y`
-
-</td>
-<td>
-
-`0.35em`
-
-</td>
+    <td><code>$badge-padding-y</code></td>
+    <td><code>0.35em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the badge.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-font-size</td>
     <td>Number</td>
-<td>
-
-`$badge-font-size`
-
-</td>
-<td>
-
-`0.75em`
-
-</td>
+    <td><code>$badge-font-size</code></td>
+    <td><code>0.75em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the badge.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-line-height</td>
     <td>Number</td>
-<td>
-
-`1`
-
-</td>
-<td>
-
-`1`
-
-</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
-<td>
-
-`calc( #{$kendo-badge-line-height * 1em} + #{$kendo-badge-padding-y * 2} + #{$kendo-badge-border-width * 2})`
-
-</td>
-<td>
-
-`calc( 1em + 0.7em + 2px)`
-
-</td>
+    <td><code>calc( #{$kendo-badge-line-height * 1em} + #{$kendo-badge-padding-y * 2} + #{$kendo-badge-border-width * 2})</code></td>
+    <td><code>calc( 1em + 0.7em + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Badge min width used for circle badge.</div></div>
@@ -154,9 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-badge-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         padding-x: $kendo-badge-sm-padding-x,
         padding-y: $kendo-badge-sm-padding-y,
@@ -178,14 +122,8 @@ The following table lists the available variables for customization.
         line-height: $kendo-badge-lg-line-height,
         min-width: $kendo-badge-lg-min-width
     )
-)`
-
-</td>
-<td>
-
-`(sm: (padding-x: 0.325em, padding-y: 0.175em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.35em + 2px )), md: (padding-x: 0.65em, padding-y: 0.35em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.7em + 2px )), lg: (padding-x: 0.975em, padding-y: 0.525em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 1.05em + 2px )))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (padding-x: 0.325em, padding-y: 0.175em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.35em + 2px )), md: (padding-x: 0.65em, padding-y: 0.35em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.7em + 2px )), lg: (padding-x: 0.975em, padding-y: 0.525em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 1.05em + 2px )))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the badge.</div></div>

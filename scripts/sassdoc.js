@@ -104,6 +104,25 @@ function _capitalize(string) {
             css: []
         });
 
+    // Rename some properties
+    data.functions.forEach( fnObj => {
+        fnObj.examples = fnObj.example || [];
+        fnObj.parameters = fnObj.parameter || [];
+        fnObj.context.signature = `${fnObj.context.name}(${fnObj.parameters.map( param => `$${param.name}` ).join(', ')})`;
+
+        delete fnObj.example;
+        delete fnObj.parameter;
+    });
+
+    data.mixins.forEach( mxObj => {
+        mxObj.examples = mxObj.example || [];
+        mxObj.parameters = mxObj.parameter || [];
+        mxObj.context.signature = `${mxObj.context.name}(${mxObj.parameters.map( param => `$${param.name}` ).join(', ')})`;
+
+        delete mxObj.example;
+        delete mxObj.parameter;
+    });
+
     // // Sort data by name
     // Object.keys( data ).forEach( key => {
     //     data[key].sort( (a, b) => {

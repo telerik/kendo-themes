@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Table
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-table-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the table border.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-vertical-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of vertical border of table cells.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-horizontal-border-width</td>
     <td>Number</td>
-<td>
-
-`0px`
-
-</td>
-<td>
-
-`0px`
-
-</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of horizontal border of table cells.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-font-size</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the table if no size is specified.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-line-height</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the table if no size is specified.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-padding-x</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table if no size is specified.</div></div>
@@ -136,16 +90,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-cell-padding-y</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the table if no size is specified.</div></div>
@@ -154,9 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         font-size: $kendo-font-size-md,
         line-height: $kendo-line-height-md,
@@ -175,14 +119,8 @@ The following table lists the available variables for customization.
         cell-padding-x: $kendo-table-lg-cell-padding-x,
         cell-padding-y: $kendo-table-lg-cell-padding-y
     )
-)`
-
-</td>
-<td>
-
-`(sm: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 4px, cell-padding-y: 4px), md: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 8px, cell-padding-y: 8px), lg: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 8px, cell-padding-y: 10px))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 4px, cell-padding-y: 4px), md: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 8px, cell-padding-y: 8px), lg: (font-size: 14px, line-height: 1.4285714286, cell-padding-x: 8px, cell-padding-y: 10px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
@@ -191,18 +129,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tables.</div></div>
@@ -211,18 +139,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tables.</div></div>
@@ -231,18 +149,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tables.</div></div>
@@ -251,18 +159,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-header-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f0f0f0"></span>
-
-`#f0f0f0`
-
-</td>
+    <td><code>$kendo-component-header-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table headers.</div></div>
@@ -271,18 +169,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-header-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-component-header-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table headers.</div></div>
@@ -291,18 +179,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-component-header-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-component-header-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table headers.</div></div>
@@ -311,16 +189,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-gradient</td>
     <td>List</td>
-<td>
-
-`$kendo-component-header-gradient`
-
-</td>
-<td>
-
-`rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)`
-
-</td>
+    <td><code>$kendo-component-header-gradient</code></td>
+    <td><code>rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gradient of table headers.</div></div>
@@ -329,18 +199,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-footer-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f0f0f0"></span>
-
-`#f0f0f0`
-
-</td>
+    <td><code>$kendo-table-header-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table footers.</div></div>
@@ -349,18 +209,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-footer-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-table-header-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table footers.</div></div>
@@ -369,18 +219,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-footer-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-table-header-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table footers.</div></div>
@@ -389,18 +229,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-group-row-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f0f0f0"></span>
-
-`#f0f0f0`
-
-</td>
+    <td><code>$kendo-table-header-bg</code></td>
+    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group rows in table.</div></div>
@@ -409,18 +239,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-group-row-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #272727"></span>
-
-`#272727`
-
-</td>
+    <td><code>$kendo-table-header-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of group rows in table.</div></div>
@@ -429,18 +249,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-group-row-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-table-header-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #cacaca"></span>
-
-`#cacaca`
-
-</td>
+    <td><code>$kendo-table-header-border</code></td>
+    <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of group rows in table.</div></div>
@@ -449,18 +259,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-alt-row-bg</td>
     <td>Color</td>
-<td>
-
-`k-try-shade( $kendo-table-bg, .5 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: whitesmoke"></span>
-
-`whitesmoke`
-
-</td>
+    <td><code>k-try-shade( $kendo-table-bg, .5 )</code></td>
+    <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in table.</div></div>
@@ -469,16 +269,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-alt-row-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in table.</div></div>
@@ -487,16 +279,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-alt-row-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of alternating rows in table.</div></div>
@@ -505,18 +289,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>Color</td>
-<td>
-
-`k-try-shade( $kendo-table-bg, 1 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ebebeb"></span>
-
-`#ebebeb`
-
-</td>
+    <td><code>k-try-shade( $kendo-table-bg, 1 )</code></td>
+    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in table.</div></div>
@@ -525,16 +299,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-hover-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in table.</div></div>
@@ -543,16 +309,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-hover-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in table.</div></div>
@@ -561,16 +319,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-focus-bg</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused rows in table.</div></div>
@@ -579,16 +329,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-focus-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused rows in table.</div></div>
@@ -597,16 +339,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-focus-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused rows in table.</div></div>
@@ -615,16 +349,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-focus-shadow</td>
     <td>List</td>
-<td>
-
-`$kendo-list-item-focus-shadow`
-
-</td>
-<td>
-
-`inset 0 0 0 2px rgba(0, 0, 0, 0.12)`
-
-</td>
+    <td><code>$kendo-list-item-focus-shadow</code></td>
+    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
@@ -633,18 +359,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>Color</td>
-<td>
-
-`rgba( $kendo-selected-bg, .25 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span>
-
-`rgba(243, 88, 0, 0.25)`
-
-</td>
+    <td><code>rgba( $kendo-selected-bg, .25 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span><code>rgba(243, 88, 0, 0.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in table.</div></div>
@@ -653,16 +369,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-text</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in table.</div></div>
@@ -671,16 +379,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-border</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in table.</div></div>

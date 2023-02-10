@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Avatar
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-avatar-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the avatar.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-font-family</td>
     <td>Null</td>
-<td>
-
-`$kendo-font-family`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the avatar.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-font-size</td>
     <td>Number</td>
-<td>
-
-`$kendo-font-size-md`
-
-</td>
-<td>
-
-`1rem`
-
-</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the avatar.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-line-height</td>
     <td>Number</td>
-<td>
-
-`$kendo-line-height-md`
-
-</td>
-<td>
-
-`1.5`
-
-</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the avatar.</div></div>
@@ -100,20 +70,12 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: k-map-get( $kendo-spacing, 4 ),
     md: k-map-get( $kendo-spacing, 8 ),
     lg: k-map-get( $kendo-spacing, 16 )
-)`
-
-</td>
-<td>
-
-`(sm: 1rem, md: 2rem, lg: 4rem)`
-
-</td>
+)</code></td>
+    <td><code>(sm: 1rem, md: 2rem, lg: 4rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the avatar.</div></div>
@@ -122,19 +84,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-avatar-theme</td>
     <td>Map</td>
-<td>
-
-`k-process-variant-matrices(
+    <td><code>k-process-variant-matrices(
     $kendo-avatar-theme-matrix,
     $kendo-avatar-palette-matrix
-)`
-
-</td>
-<td>
-
-`(solid-neutral: (bg: #ededed, text: #494949, border: #ededed, gradient: null, shadow: null, outline: null), solid-inverse: (bg: #494949, text: #ffffff, border: #494949, gradient: null, shadow: null, outline: null), solid-primary: (bg: #622331, text: #ffffff, border: #622331, gradient: null, shadow: null, outline: null), solid-info: (bg: #0969da, text: #ffffff, border: #0969da, gradient: null, shadow: null, outline: null), solid-success: (bg: #1a7f37, text: #ffffff, border: #1a7f37, gradient: null, shadow: null, outline: null), solid-warning: (bg: #bc4c00, text: #ffffff, border: #bc4c00, gradient: null, shadow: null, outline: null), solid-error: (bg: #cf222e, text: #ffffff, border: #cf222e, gradient: null, shadow: null, outline: null), outline-neutral: (bg: transparent, text: #767676, border: #767676, gradient: null, shadow: null, outline: null), outline-inverse: (bg: transparent, text: #494949, border: #494949, gradient: null, shadow: null, outline: null), outline-primary: (bg: transparent, text: #622331, border: #622331, gradient: null, shadow: null, outline: null), outline-info: (bg: transparent, text: #0969da, border: #0969da, gradient: null, shadow: null, outline: null), outline-success: (bg: transparent, text: #1a7f37, border: #1a7f37, gradient: null, shadow: null, outline: null), outline-warning: (bg: transparent, text: #bc4c00, border: #bc4c00, gradient: null, shadow: null, outline: null), outline-error: (bg: transparent, text: #cf222e, border: #cf222e, gradient: null, shadow: null, outline: null))`
-
-</td>
+)</code></td>
+    <td><code>(solid-neutral: (bg: #ededed, text: #494949, border: #ededed, gradient: null, shadow: null, outline: null), solid-inverse: (bg: #494949, text: #ffffff, border: #494949, gradient: null, shadow: null, outline: null), solid-primary: (bg: #622331, text: #ffffff, border: #622331, gradient: null, shadow: null, outline: null), solid-info: (bg: #0969da, text: #ffffff, border: #0969da, gradient: null, shadow: null, outline: null), solid-success: (bg: #1a7f37, text: #ffffff, border: #1a7f37, gradient: null, shadow: null, outline: null), solid-warning: (bg: #bc4c00, text: #ffffff, border: #bc4c00, gradient: null, shadow: null, outline: null), solid-error: (bg: #cf222e, text: #ffffff, border: #cf222e, gradient: null, shadow: null, outline: null), outline-neutral: (bg: transparent, text: #767676, border: #767676, gradient: null, shadow: null, outline: null), outline-inverse: (bg: transparent, text: #494949, border: #494949, gradient: null, shadow: null, outline: null), outline-primary: (bg: transparent, text: #622331, border: #622331, gradient: null, shadow: null, outline: null), outline-info: (bg: transparent, text: #0969da, border: #0969da, gradient: null, shadow: null, outline: null), outline-success: (bg: transparent, text: #1a7f37, border: #1a7f37, gradient: null, shadow: null, outline: null), outline-warning: (bg: transparent, text: #bc4c00, border: #bc4c00, gradient: null, shadow: null, outline: null), outline-error: (bg: transparent, text: #cf222e, border: #cf222e, gradient: null, shadow: null, outline: null))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the avatar.</div></div>

@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Component
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,18 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-component-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-body-bg`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ffffff"></span>
-
-`#ffffff`
-
-</td>
+    <td><code>$kendo-body-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.</div></div>
@@ -48,18 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-component-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-body-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #424242"></span>
-
-`#424242`
-
-</td>
+    <td><code>$kendo-body-text</code></td>
+    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.</div></div>
@@ -68,18 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-component-border</td>
     <td>Color</td>
-<td>
-
-`rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
-
-`rgba(0, 0, 0, 0.08)`
-
-</td>
+    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.</div></div>
