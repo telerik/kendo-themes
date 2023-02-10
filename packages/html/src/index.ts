@@ -84,7 +84,7 @@ export * from './treeview/index';
 
 // Layout & containers
 export * from './card/index';
-// export * from './expander/index';
+export * from './expansion-panel/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';
 // export * from './tile-layout/index';
