@@ -1,3 +1,9 @@
+/// Returns the value at `$key` in `$map`.
+/// @param {Map} $map - The map to get the value from.
+/// @param {Any} $key - The key to get the value for.
+///
+/// @example scss - Usage
+///   @debug k-map-get( ( "foo": "bar" ), "foo" ); // => "bar"
 @function k-map-get( $map, $keys... ) {
     @each $key in $keys {
         $map: map-get( $map, $key );
@@ -5,14 +11,35 @@
     @return $map;
 }
 
+/// Returns whether `$map` has a value at `$key`.
+/// @param {Map} $map - The map to check.
+/// @param {Any} $key - The key to check.
+/// @return {Boolean} - Whether `$map` has a value at `$key`.
+///
+/// @example scss - Usage
+///   @debug k-map-has( ( "foo": "bar" ), "foo" ); // => true
+///   @debug k-map-has( ( "foo": "bar" ), "bar" ); // => false
 @function k-map-has-key( $map, $key ) {
     @return map-has-key( $map, $key );
 }
 
+/// Returns a comma separated list of the keys in `$map`.
+/// @param {Map} $map - The map to get the keys from.
+/// @return {List} - A comma separated list of the keys in `$map`.
+///
+/// @example scss - Usage
+///   @debug k-map-keys( ( "foo": "bar", "baz": "qux" ) ); // => "foo, baz"
 @function k-map-keys( $map ) {
     @return map-keys( $map );
 }
 
+/// Returns a map with the keys and values from `$map` and `$args`.
+/// @param {Map} $map - The map to merge.
+/// @param {Map} $args - The map to merge into `$map`.
+/// @return {Map} - A map with the keys and values from `$map` and `$args`.
+///
+/// @example scss - Usage
+///   @debug k-map-merge( ( "foo": "bar" ), ( "baz": "qux" ) ); // => ( "foo": "bar", "baz": "qux" )
 @function k-map-merge( $map, $args... ) {
     @each $arg in $args {
         $map: map-merge( $map, $arg );
@@ -20,14 +47,35 @@
     @return $map;
 }
 
+/// Returns a map with the keys and values from `$map` except for `$keys`.
+/// @param {Map} $map - The map to remove keys from.
+/// @param {Any} $keys - The keys to remove from `$map`.
+/// @return {Map} - A map with the keys and values from `$map` except for `$keys`.
+///
+/// @example scss - Usage
+///   @debug k-map-remove( ( "foo": "bar", "baz": "qux" ), "foo" ); // => ( "baz": "qux" )
 @function k-map-remove( $map, $keys... ) {
     @return map-remove( $map, $keys... );
 }
 
+/// Sets a single key and value in `$map`.
+/// @param {Map} $map - The map to set the value in.
+/// @param {Any} $key - The key to set the value for.
+/// @param {Any} $value - The value to set.
+/// @return {Map} - A map with the key and value set.
+///
+/// @example scss - Usage
+///   @debug k-map-set( ( "foo": "bar" ), "baz", "qux" ); // => ( "foo": "bar", "baz": "qux" )
 @function k-map-set( $map, $key, $value ) {
     @return k-map-merge( $map, ( $key: $value ) );
 }
 
+/// Returns a comma separated list of the values in `$map`.
+/// @param {Map} $map - The map to get the values from.
+/// @return {List} - A comma separated list of the values in `$map`.
+///
+/// @example scss - Usage
+///   @debug k-map-values( ( "foo": "bar", "baz": "qux" ) ); // => "bar, qux"
 @function k-map-values( $map ) {
     @return map-values( $map );
 }

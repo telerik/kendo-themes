@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Common
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -26,40 +28,260 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-icon-size</td>
+    <td>Number</td>
+    <td><code>16px</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-xs</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-icon-size} * .75 )</code></td>
+    <td><code>calc( 16px * .75 )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">xtra small icon size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-sm</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-icon-size} * .875 )</code></td>
+    <td><code>calc( 16px * .875 )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small icon size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-md</td>
+    <td>Number</td>
+    <td><code>$kendo-icon-size</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium icon size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-lg</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-icon-size} * 1.25 )</code></td>
+    <td><code>calc( 16px * 1.25 )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large icon size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-xl</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-icon-size} * 1.5 )</code></td>
+    <td><code>calc( 16px * 1.5 )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Extra large icon size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-xxl</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-icon-size} * 2 )</code></td>
+    <td><code>calc( 16px * 2 )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Double extra large icon size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-icon-size-xxxl</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-icon-size} * 3 )</code></td>
+    <td><code>calc( 16px * 3 )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Triple extra large icon size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-x</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-y</td>
+    <td>Number</td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-sm-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-md-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-padding-lg-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>6px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-border-radius</td>
     <td>Number</td>
-<td>
-
-`k-map-get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-`4px`
-
-</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
     </td>
 </tr>
 <tr>
+    <td>$kendo-border-radius-sm</td>
+    <td>Number</td>
+    <td><code>$kendo-border-radius - k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small border radius.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-md</td>
+    <td>Number</td>
+    <td><code>$kendo-border-radius</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Medium border radius.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-border-radius-lg</td>
+    <td>Number</td>
+    <td><code>$kendo-border-radius + k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>6px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large border radius.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-body-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-color-white</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-body-text</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-subtle-text</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
+    <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Subtle text color.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the links.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary-darker</code></td>
+    <td><span class="color-preview" style="background-color: #d6534a"></span><code>#d6534a</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the links on hover.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-base-bg</td>
     <td>Color</td>
-<td>
-
-<span class="color-preview" style="background-color: #fafafa"></span>
-
-`#fafafa`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #fafafa"></span>
-
-`#fafafa`
-
-</td>
+    <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
+    <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -68,18 +290,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-base-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-body-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #424242"></span>
-
-`#424242`
-
-</td>
+    <td><code>$kendo-body-text</code></td>
+    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
@@ -88,18 +300,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-base-border</td>
     <td>Color</td>
-<td>
-
-`rgba( black, .08 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
-
-`rgba(0, 0, 0, 0.08)`
-
-</td>
+    <td><code>rgba( black, .08 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the components' chrome area.</div></div>
@@ -108,16 +310,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-base-gradient</td>
     <td>List</td>
-<td>
-
-`rgba( black, 0 ), rgba( black, .02 )`
-
-</td>
-<td>
-
-`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
-
-</td>
+    <td><code>rgba( black, 0 ), rgba( black, .02 )</code></td>
+    <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
@@ -126,18 +320,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-hover-bg</td>
     <td>Color</td>
-<td>
-
-`k-try-shade( $kendo-base-bg, .5 )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #f0f0f0"></span>
-
-`#f0f0f0`
-
-</td>
+    <td><code>k-try-shade( $kendo-base-bg, .5 )</code></td>
+    <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
@@ -146,18 +330,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-hover-text</td>
     <td>Color</td>
-<td>
-
-`$kendo-base-text`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #424242"></span>
-
-`#424242`
-
-</td>
+    <td><code>$kendo-base-text</code></td>
+    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
@@ -166,18 +340,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-hover-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-base-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
-
-`rgba(0, 0, 0, 0.08)`
-
-</td>
+    <td><code>$kendo-base-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
@@ -186,16 +350,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-hover-gradient</td>
     <td>List</td>
-<td>
-
-`$kendo-base-gradient`
-
-</td>
-<td>
-
-`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
-
-</td>
+    <td><code>$kendo-base-gradient</code></td>
+    <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hovered items.</div></div>
@@ -204,18 +360,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-bg</td>
     <td>Color</td>
-<td>
-
-`$kendo-color-primary`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: #ff6358"></span>
-
-`#ff6358`
-
-</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -224,18 +370,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-text</td>
     <td>Color</td>
-<td>
-
-`k-contrast-legacy( $kendo-selected-bg )`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: white"></span>
-
-`white`
-
-</td>
+    <td><code>k-contrast-legacy( $kendo-selected-bg )</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected items.</div></div>
@@ -244,18 +380,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-border</td>
     <td>Color</td>
-<td>
-
-`$kendo-base-border`
-
-</td>
-<td>
-
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
-
-`rgba(0, 0, 0, 0.08)`
-
-</td>
+    <td><code>$kendo-base-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
@@ -264,19 +390,101 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-gradient</td>
     <td>List</td>
-<td>
-
-`$kendo-base-gradient`
-
-</td>
-<td>
-
-`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
-
-</td>
+    <td><code>$kendo-base-gradient</code></td>
+    <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-selected-hover-bg</td>
+    <td>Color</td>
+    <td><code>k-try-shade( $kendo-selected-bg, .5 )</code></td>
+    <td><span class="color-preview" style="background-color: #f55f54"></span><code>#f55f54</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected and hovered items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-selected-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-selected-text</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected and hovered items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-selected-hover-border</td>
+    <td>Color</td>
+    <td><code>$kendo-base-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of selected and hovered items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-selected-hover-gradient</td>
+    <td>List</td>
+    <td><code>$kendo-base-gradient</code></td>
+    <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of selected and hovered items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-focus-shadow</td>
+    <td>List</td>
+    <td><code>inset 0 0 0 2px rgba(0, 0, 0, .13)</code></td>
+    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.13)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-transition</td>
+    <td>List</td>
+    <td><code>color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out</code></td>
+    <td><code>color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transition used across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-text</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #8f8f8f"></span><code>#8f8f8f</code></td>
+    <td><span class="color-preview" style="background-color: #8f8f8f"></span><code>#8f8f8f</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-filter</td>
+    <td>String</td>
+    <td><code>grayscale(.1)</code></td>
+    <td><code>grayscale(0.1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Filter used for disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-opacity</td>
+    <td>Number</td>
+    <td><code>.6</code></td>
+    <td><code>0.6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity used for disabled items.</div></div>
     </td>
 </tr>
 </tbody>

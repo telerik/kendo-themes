@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Treelist
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-treelist-footer-row-bg</td>
     <td></td>
-<td>
-
-`$kendo-grid-hover-bg`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>$kendo-grid-hover-bg</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the treelist footer row.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treelist-footer-row-border-width</td>
     <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
+    <td><code>1px</code></td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the treelist footer row.</div></div>

@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Switch
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-switch-font-family</td>
     <td>Null</td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-`null`
-
-</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the switch.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-track-border-width</td>
     <td>Number</td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-`1px`
-
-</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the switch track.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-thumb-border-width</td>
     <td>Number</td>
-<td>
-
-`0`
-
-</td>
-<td>
-
-`0`
-
-</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the switch thumb.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-label-text-transform</td>
     <td>String</td>
-<td>
-
-`uppercase`
-
-</td>
-<td>
-
-`uppercase`
-
-</td>
+    <td><code>uppercase</code></td>
+    <td><code>uppercase</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text transform of the switch label.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-label-display</td>
     <td>String</td>
-<td>
-
-`none`
-
-</td>
-<td>
-
-`none`
-
-</td>
+    <td><code>none</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Display of the switch label.</div></div>
@@ -118,9 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-sizes</td>
     <td>Map</td>
-<td>
-
-`(
+    <td><code>(
     sm: (
         font-size: $kendo-font-size-sm,
         track-width: 36px,
@@ -148,14 +108,8 @@ The following table lists the available variables for customization.
         thumb-offset: 5px,
         label-offset: 6px
     )
-)`
-
-</td>
-<td>
-
-`(sm: (font-size: 0.875rem, track-width: 36px, track-height: 16px, thumb-width: 10px, thumb-height: 10px, thumb-offset: 3px, label-offset: 4px), md: (font-size: 0.875rem, track-width: 40px, track-height: 20px, thumb-width: 12px, thumb-height: 12px, thumb-offset: 4px, label-offset: 5px), lg: (font-size: 0.875rem, track-width: 44px, track-height: 24px, thumb-width: 14px, thumb-height: 14px, thumb-offset: 5px, label-offset: 6px))`
-
-</td>
+)</code></td>
+    <td><code>(sm: (font-size: 0.875rem, track-width: 36px, track-height: 16px, thumb-width: 10px, thumb-height: 10px, thumb-offset: 3px, label-offset: 4px), md: (font-size: 0.875rem, track-width: 40px, track-height: 20px, thumb-width: 12px, thumb-height: 12px, thumb-offset: 4px, label-offset: 5px), lg: (font-size: 0.875rem, track-width: 44px, track-height: 24px, thumb-width: 14px, thumb-height: 14px, thumb-offset: 5px, label-offset: 6px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map with the different switch sizes.</div></div>

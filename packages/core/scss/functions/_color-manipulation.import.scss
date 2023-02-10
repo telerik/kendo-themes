@@ -20,13 +20,38 @@ $kendo-color-level-step: 8% !default;
     @return k-color-mix( $base, $color, $level * $kendo-color-level-step );
 }
 
+/// Makes a color lighter by mixing it with white
+/// @param {Color} $color - The color to lighten
+/// @param {Number} $level - The amount to lighten the color
+/// @return {Color} - The lightened color
+///
+/// @group color-system
+///
+/// @example scss - Usage
+///   @debug k-color-tint( #f00, 1 ); // => #ff1a1a
 @function k-color-tint( $color, $level: 1 ) {
     @return k-color-level( $color, -$level );
 }
+
+/// Makes a color darker by mixing it with black
+/// @param {Color} $color - The color to darken
+/// @param {Number} $level - The amount to darken the color
+/// @return {Color} - The darkened color
+///
+/// @group color-system
+///
+/// @example scss - Usage
+///   @debug k-color-shade( #f00, 1 ); // => #e60000
 @function k-color-shade( $color, $level: 1 ) {
     @return k-color-level( $color, $level );
 }
 
+/// Shades the color in light themes and tints it in dark themes
+/// @param {Color} $color - The color to shade or tint
+/// @param {Number} $level - The amount to shade or tint the color
+/// @return {Color} - The shaded or tinted color
+///
+/// @group color-system
 @function k-try-shade( $color, $level: 1 ) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -36,6 +61,13 @@ $kendo-color-level-step: 8% !default;
 
     @return k-color-shade( $color, $level );
 }
+
+/// Tints the color in light themes and shades it in dark themes
+/// @param {Color} $color - The color to tint or shade
+/// @param {Number} $level - The amount to tint or shade the color
+/// @return {Color} - The tinted or shaded color
+///
+/// @group color-system
 @function k-try-tint( $color, $level: 1 ) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -46,7 +78,12 @@ $kendo-color-level-step: 8% !default;
     @return k-color-tint( $color, $level );
 }
 
-
+/// Darkens the color in light themes and lightens it in dark themes
+/// @param {Color} $color - The color to darken or lighten
+/// @param {Number} $level - The amount to darken or lighten the color
+/// @return {Color} - The darkened or lightened color
+///
+/// @group color-system
 @function k-try-darken( $color, $amount ) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -56,6 +93,12 @@ $kendo-color-level-step: 8% !default;
     @return k-color-darken( $color, $amount );
 }
 
+/// Lightens the color in light themes and darkens it in dark themes
+/// @param {Color} $color - The color to lighten or darken
+/// @param {Number} $level - The amount to lighten or darken the color
+/// @return {Color} - The lightened or darkened color
+///
+/// @group color-system
 @function k-try-lighten( $color, $amount ) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -65,6 +108,15 @@ $kendo-color-level-step: 8% !default;
     @return k-color-lighten( $color, $amount );
 }
 
+/// Converts a color with alpha to solid color mixed with a background color
+/// @param {Color} $color - The color to convert
+/// @param {Color} $bg - The background color
+/// @return {Color} - The converted color
+///
+/// @group color-system
+///
+/// @example scss - Usage
+///   @debug k-rgba-to-mix( rgba( #f00, 0.5 ), #fff ); // => #ff8080
 @function k-rgba-to-mix( $color, $bg ) {
     $percent: k-color-alpha( $color ) * 100%;
 

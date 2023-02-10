@@ -1,50 +1,43 @@
+{%- import "./_utils.njk" as utils -%}
+
 <tr>
     <td>${{ variable.context.name }}</td>
     <td>{{ variable.resolvedType }}</td>
-<td>
+    <td>
+        {%- if variable.context.value | is_color === true -%}
+        <span class="color-preview" style="background-color: {{variable.context.value}}"></span>
+        {%- endif -%}
 
-{%
-    if variable.context.value | is_color === true
-%}<span class="color-preview" style="background-color: {{variable.context.value}}"></span>
+        {%- if variable.context.value -%}
+        {{ utils.code( variable.context.value ) }}
+        {%- endif -%}
+    </td>
+    <td>
+        {%- if variable.resolvedType === 'Color' -%}
+        <span class="color-preview" style="background-color: {{variable.resolvedValue}}"></span>
+        {%- endif -%}
 
-{%
-    endif
-%}{%
-    if variable.context.value
-%}`{{ variable.context.value }}`{%
-    endif
-%}
-
-</td>
-<td>
-
-{%
-    if variable.resolvedType === 'Color'
-%}<span class="color-preview" style="background-color: {{variable.resolvedValue}}"></span>
-
-{%
-    endif
-%}{%
-    if variable.resolvedValue
-%}`{{ variable.resolvedValue }}`{% endif %}
-
-</td>
+        {%- if variable.resolvedValue -%}
+        {{ utils.code( variable.resolvedValue ) }}
+        {%- endif -%}
+    </td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container">
         {%- if variable.deprecated == '' %}<div><b>Deprecated</b></div>{% endif %}
         {%- if variable.deprecated %}<div><b>Deprecated</b><div class="theme-variables-description">{{ variable.deprecated  }}</div></div>{% endif %}
         {%- if variable.description %}<div><b>Description</b><div class="theme-variables-description">{{ variable.description | format_text }}</div></div>{% endif %}
-        {%- if variable.example %}
+        {%- if variable.examples %}
         <div>
             <b>Example</b>
-            {% for ex in variable.example -%}
-            <pre>
-<code>
-{{ ex.code }}
-</code>
-            </pre>
-            {%- endfor %}
-        </div>{% endif %}
+            {% for example in variable.examples %}
+
+```
+{{ example.code }}
+```
+
+            {% endfor %}
+        </div>
+        {%- endif %}
     </td>
 </tr>

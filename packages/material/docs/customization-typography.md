@@ -7,6 +7,8 @@ position: 9
 
 # Customizing Typography
 
+## Variables
+
 The following table lists the available variables for customization.
 
 <table class="theme-variables">
@@ -28,16 +30,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-font-size</td>
     <td>Number</td>
-<td>
-
-`14px`
-
-</td>
-<td>
-
-`14px`
-
-</td>
+    <td><code>14px</code></td>
+    <td><code>14px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
@@ -46,16 +40,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-family-sans-serif</td>
     <td>List</td>
-<td>
-
-`Roboto, "Helvetica Neue", sans-serif`
-
-</td>
-<td>
-
-`Roboto, "Helvetica Neue", sans-serif`
-
-</td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for text.</div></div>
@@ -64,16 +50,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-family</td>
     <td>List</td>
-<td>
-
-`Roboto, "Helvetica Neue", sans-serif`
-
-</td>
-<td>
-
-`Roboto, "Helvetica Neue", sans-serif`
-
-</td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
@@ -82,16 +60,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-family-monospace</td>
     <td>List</td>
-<td>
-
-`Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace`
-
-</td>
-<td>
-
-`Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace`
-
-</td>
+    <td><code>Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
+    <td><code>Consolas, "Ubuntu Mono", "Lucida Console", "Courier New", monospace</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for monospaced text. Used for styling the code.</div></div>
@@ -100,16 +70,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-font-family</td>
     <td>List</td>
-<td>
-
-`Roboto, "Helvetica Neue", sans-serif`
-
-</td>
-<td>
-
-`Roboto, "Helvetica Neue", sans-serif`
-
-</td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
@@ -118,16 +80,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-line-height</td>
     <td>Number</td>
-<td>
-
-`k-math-div( 28, 14 )`
-
-</td>
-<td>
-
-`2`
-
-</td>
+    <td><code>k-math-div( 28, 14 )</code></td>
+    <td><code>2</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
