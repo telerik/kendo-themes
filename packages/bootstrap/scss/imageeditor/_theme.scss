@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/imageeditor/_theme.scss";
+
+
+@mixin kendo-image-editor--theme() {
+    @include kendo-image-editor--theme-base();
+}

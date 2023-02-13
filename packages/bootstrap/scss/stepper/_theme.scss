@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/stepper/_theme.scss";
+
+
+@mixin kendo-stepper--theme() {
+    @include kendo-stepper--theme-base();
+}

@@ -1,7 +1,9 @@
 @import "@progress/kendo-theme-default/scss/loader/_layout.scss";
 
 
-@include exports( "loader/from-common/bootstrap" ) {
+@mixin kendo-loader--layout() {
+
+    @include kendo-loader--layout-base();
 
     .k-i-loading,
     .k-loading-image {

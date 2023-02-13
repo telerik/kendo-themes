@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/checkbox/_layout.scss";
 
-@include exports( "checkbox/layout/bootstrap" ) {
+
+@mixin kendo-checkbox--layout() {
+
+    @include kendo-checkbox--layout-base();
 
     // Override inherited bootstrap border radius
     .k-checkbox.k-rounded-sm {
