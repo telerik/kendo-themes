@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/list/_layout.scss";
+
+
+@mixin kendo-list--layout() {
+    @include kendo-list--layout-base();
+}

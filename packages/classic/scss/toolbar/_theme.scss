@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/toolbar/_theme.scss";
+
+
+@mixin kendo-toolbar--theme() {
+    @include kendo-toolbar--theme-base();
+}

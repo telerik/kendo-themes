@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/map/_layout.scss";
+
+
+@mixin kendo-map--layout() {
+    @include kendo-map--layout-base();
+}

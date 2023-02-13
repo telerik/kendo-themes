@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/validator/_layout.scss";
+
+
+@mixin kendo-validator--layout() {
+    @include kendo-validator--layout-base();
+}

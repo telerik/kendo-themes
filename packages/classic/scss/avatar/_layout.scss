@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/avatar/_layout.scss";
+
+
+@mixin kendo-avatar--layout() {
+    @include kendo-avatar--layout-base();
+}

@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/menu/_theme.scss";
+
+
+@mixin kendo-menu--theme() {
+    @include kendo-menu--theme-base();
+}

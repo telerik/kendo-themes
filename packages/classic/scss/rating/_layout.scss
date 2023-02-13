@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/rating/_layout.scss";
+
+
+@mixin kendo-rating--layout() {
+    @include kendo-rating--layout-base();
+}

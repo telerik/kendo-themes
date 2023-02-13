@@ -16,3 +16,21 @@ $_kendo-module-meta: (
 @import "./_variables.scss";
 @import "./_layout.scss";
 @import "./_theme.scss";
+
+
+// Register
+@import "../core/module-system/index.import.scss";
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin kendo-checkbox--styles() {
+    @include module-render( "checkbox" ) {
+        @include kendo-checkbox--layout();
+        @include kendo-checkbox--theme();
+    }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-checkbox--styles();
+}
