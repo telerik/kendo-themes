@@ -1,4 +1,4 @@
-@include exports("dropdownlist/layout") {
+@mixin kendo-dropdown-list--layout-base() {
 
     // Dropdown list
     .k-dropdown-list {}
@@ -29,10 +29,16 @@
         }
     }
 
-    // Alias
+
+    // Legacy aliases
     .k-dropdown,
     .k-dropdownlist {
         @extend .k-dropdown-list !optional;
     }
 
+}
+
+
+@mixin kendo-dropdown-list--layout() {
+    @include kendo-dropdown-list--layout-base();
 }

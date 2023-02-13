@@ -1,4 +1,4 @@
-@include exports("treelist/theme") {
+@mixin kendo-treelist--theme-base() {
 
     // Theme
     .k-treelist {
@@ -8,4 +8,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-treelist--theme() {
+    @include kendo-treelist--theme-base();
 }

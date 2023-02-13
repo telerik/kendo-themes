@@ -1,4 +1,4 @@
-@include exports("pivotgrid/layout") {
+@mixin kendo-pivotgrid--layout-base() {
 
     // Pivotgrid
     .k-pivotgrid {
@@ -161,13 +161,8 @@
         overflow: auto;
     }
 
-}
 
-
-
-@include exports("pivotgrid/layout/configurator") {
-
-    // Configurator
+    // Pivotgrid configurator
     .k-pivotgrid-configurator {
         display: flex;
     }
@@ -445,26 +440,9 @@
         }
     }
 
-}
 
 
-
-@include exports("pivotgrid/layout/rtl") {
-
-    .k-pivotgrid {
-        .k-rtl &,
-        &.k-rtl,
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-
-        }
-    }
-
-}
-
-
-@include exports( "pivotgrid/layout/export" ) {
-
+    // Pivotgrid export
     .k-pdf-export-shadow {
 
         .k-pivotgrid {
@@ -481,11 +459,10 @@
         }
 
     }
-}
 
 
-@include exports("pivotgrid/layout/legacy") {
-
+    // Legacy pivotgrid
+    // TODO: remove
     .k-pivot {
         border-width: $kendo-pivotgrid-border-width;
         border-style: solid;
@@ -596,15 +573,9 @@
         max-height: 600px;
     }
 
-}
-
-
-
-
-@include exports("pivotgrid/configurator/layout/legacy") {
-
 
     // jquery specific -- old pivot
+    // TODO: remove
     .k-pivotgrid-wrapper {
         box-sizing: border-box;
         display: flex;
@@ -668,4 +639,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-pivotgrid--layout() {
+    @include kendo-pivotgrid--layout-base();
 }

@@ -1,6 +1,6 @@
-@include exports( "draggable/theme" ) {
+@mixin kendo-draggable--theme-base() {
 
-    // Theme
+    // Drag hint
     .k-drag-clue {
         @include fill(
             $kendo-drag-hint-text,
@@ -11,4 +11,9 @@
         @include box-shadow( $kendo-drag-hint-shadow );
     }
 
+}
+
+
+@mixin kendo-draggable--theme() {
+    @include kendo-draggable--theme-base();
 }

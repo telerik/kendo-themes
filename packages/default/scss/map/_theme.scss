@@ -1,5 +1,6 @@
-@include exports("map/theme") {
+@mixin kendo-map--theme-base() {
 
+    // Map theme
     .k-map {
         @include fill(
             $kendo-map-text,
@@ -26,4 +27,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-map--theme() {
+    @include kendo-map--theme-base();
 }

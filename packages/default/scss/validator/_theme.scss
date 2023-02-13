@@ -1,1 +1,11 @@
-@include exports( "validator/theme" ) {}
+@mixin kendo-validator--theme-base() {
+
+    // Validator
+    .k-validator {}
+
+}
+
+
+@mixin kendo-validator--theme() {
+    @include kendo-validator--theme-base();
+}

@@ -1,4 +1,4 @@
-@include exports("menu/layout") {
+@mixin kendo-menu--layout-base() {
 
     // Menu bar
     .k-menu-bar {
@@ -373,4 +373,9 @@
 
     }
 
+}
+
+
+@mixin kendo-menu--layout() {
+    @include kendo-menu--layout-base();
 }

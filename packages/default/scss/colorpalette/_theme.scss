@@ -1,4 +1,4 @@
-@include exports("colorpalette/theme") {
+@mixin kendo-color-palette--theme-base() {
 
     // Tile
     .k-colorpalette-tile {
@@ -20,4 +20,9 @@
 
     }
 
+}
+
+
+@mixin kendo-color-palette--theme() {
+    @include kendo-color-palette--theme-base();
 }

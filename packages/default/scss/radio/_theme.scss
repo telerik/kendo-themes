@@ -1,4 +1,4 @@
-@include exports( "radio/theme" ) {
+@mixin kendo-radio--theme-base() {
 
     // Radio
     .k-radio {
@@ -85,4 +85,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-radio--theme() {
+    @include kendo-radio--theme-base();
 }

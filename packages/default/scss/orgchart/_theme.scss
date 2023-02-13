@@ -1,4 +1,4 @@
-@include exports("orgchart/theme") {
+@mixin kendo-orgchart--theme-base() {
 
     // OrgChart
     .k-orgchart {
@@ -47,4 +47,9 @@
         @include fill( $color: $kendo-orgchart-line-fill );
     }
 
+}
+
+
+@mixin kendo-orgchart--theme() {
+    @include kendo-orgchart--theme-base();
 }

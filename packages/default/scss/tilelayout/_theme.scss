@@ -1,4 +1,4 @@
-@include exports("tilelayout/theme") {
+@mixin kendo-tile-layout--theme-base() {
 
     .k-tilelayout {
         @include fill(
@@ -18,4 +18,9 @@
         );
     }
 
+}
+
+
+@mixin kendo-tile-layout--theme() {
+    @include kendo-tile-layout--theme-base();
 }

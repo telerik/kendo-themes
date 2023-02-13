@@ -1,4 +1,4 @@
-@include exports("calendar/layout") {
+@mixin kendo-calendar--layout-base() {
 
     // Base
     .k-calendar {
@@ -313,16 +313,12 @@
 
 
 
-    // Alias
+    // Legacy aliases
     .k-link {
         @extend .k-calendar-cell-inner !optional;
     }
-}
 
 
-
-
-@include exports( "infinite-calendar/layout" ) {
 
 
     // Infinite calendar
@@ -451,12 +447,8 @@
         // }
     }
 
-}
 
 
-
-
-@include exports( "multiview-calendar/layout" ) {
 
     // Multiview calendar
     .k-calendar-range {
@@ -491,12 +483,10 @@
         }
     }
 
-}
 
 
 
-@include exports("calendar/layout/rtl") {
-
+    // RTL
     .k-rtl .k-calendar,
     .k-calendar[dir="rtl"] {
 
@@ -512,4 +502,9 @@
 
     }
 
+}
+
+
+@mixin kendo-calendar--layout() {
+    @include kendo-calendar--layout-base();
 }

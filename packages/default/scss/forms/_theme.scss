@@ -1,4 +1,4 @@
-@include exports( "forms/theme" ) {
+@mixin kendo-form--theme-base() {
 
     .k-form,
     .k-form-inline {
@@ -33,4 +33,9 @@
         @include fill( $border: $kendo-form-separator-border-color );
     }
 
+}
+
+
+@mixin kendo-form--theme() {
+    @include kendo-form--theme-base();
 }

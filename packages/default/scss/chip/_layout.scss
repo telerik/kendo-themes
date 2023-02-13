@@ -1,4 +1,4 @@
-@include exports("chip/layout") {
+@mixin kendo-chip--layout-base() {
 
     // Chip
     .k-chip {
@@ -155,4 +155,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-chip--layout() {
+    @include kendo-chip--layout-base();
 }

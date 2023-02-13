@@ -1,4 +1,4 @@
-@include exports("dropdowntree/layout") {
+@mixin kendo-dropdown-tree--layout-base() {
 
     // Dropdown tree
     .k-dropdown-tree {}
@@ -17,4 +17,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-dropdown-tree--layout() {
+    @include kendo-dropdown-tree--layout-base();
 }

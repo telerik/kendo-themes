@@ -1,5 +1,6 @@
-@include exports( "listview/layout" ) {
+@mixin kendo-listview--layout-base() {
 
+    // Listview
     .k-listview {
         margin: 0;
         padding: 0;
@@ -134,4 +135,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-listview--layout() {
+    @include kendo-listview--layout-base();
 }

@@ -1,4 +1,4 @@
-@include exports("captcha/layout") {
+@mixin kendo-captcha--layout-base() {
 
     // Captcha
     .k-captcha {
@@ -59,4 +59,9 @@
         font-style: $kendo-captcha-validation-message-font-style;
     }
 
+}
+
+
+@mixin kendo-captcha--layout() {
+    @include kendo-captcha--layout-base();
 }

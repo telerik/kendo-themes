@@ -1,4 +1,4 @@
-@include exports( "colorpicker/layout" ) {
+@mixin kendo-color-picker--layout-base() {
 
     // Color picker
     .k-color-picker {
@@ -10,4 +10,9 @@
         @extend .k-color-picker !optional;
     }
 
+}
+
+
+@mixin kendo-color-picker--layout() {
+    @include kendo-color-picker--layout-base();
 }

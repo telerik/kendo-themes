@@ -1,4 +1,5 @@
-@include exports("tooltip/theme") {
+@mixin kendo-tooltip--theme-base() {
+
     .k-tooltip-wrapper {
         .k-tooltip {
             box-shadow: $kendo-popup-shadow;
@@ -76,4 +77,10 @@
             color: $kendo-tooltip-error-bg;
         }
     }
+
+}
+
+
+@mixin kendo-tooltip--theme() {
+    @include kendo-tooltip--theme-base();
 }

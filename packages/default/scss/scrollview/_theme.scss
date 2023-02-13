@@ -1,4 +1,4 @@
-@include exports("scrollview/theme") {
+@mixin kendo-scrollview--theme-base() {
 
     kendo-scrollview.k-scrollview-wrap,
     kendo-scrollview.k-scrollview,
@@ -92,4 +92,9 @@
         box-shadow: inset 0 0 2px rgba(0, 0, 0, .08);
     }
 
+}
+
+
+@mixin kendo-scrollview--theme() {
+    @include kendo-scrollview--theme-base();
 }

@@ -1,6 +1,6 @@
-@include exports("map/layout") {
+@mixin kendo-map--layout-base() {
 
-    // Layout
+    // Map
     .k-map {
         height: 600px;
         box-sizing: border-box;
@@ -131,4 +131,9 @@
         .k-pdf-export & { display: none; }
     }
 
+}
+
+
+@mixin kendo-map--layout() {
+    @include kendo-map--layout-base();
 }

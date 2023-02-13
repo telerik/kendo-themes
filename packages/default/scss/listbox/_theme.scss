@@ -1,5 +1,6 @@
-@include exports("listbox/theme") {
+@mixin kendo-listbox--theme-base() {
 
+    // Listbox
     .k-listbox {
         .k-list-scroller {
             @include fill(
@@ -13,4 +14,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-listbox--theme() {
+    @include kendo-listbox--theme-base();
 }

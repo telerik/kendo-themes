@@ -1,4 +1,4 @@
-@include exports( "timeselector/layout" ) {
+@mixin kendo-time-selector--layout-base() {
 
     // Time selector
     .k-timeselector {
@@ -240,9 +240,7 @@
         }
     }
 
-}
 
-@include exports("timeselector/layout/rtl") {
 
     .k-rtl,
     [dir="rtl"] {
@@ -254,4 +252,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-time-selector--layout() {
+    @include kendo-time-selector--layout-base();
 }

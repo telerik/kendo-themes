@@ -1,4 +1,4 @@
-@include exports( "floating-label/layout" ) {
+@mixin kendo-floating-label--layout-base() {
 
 
     // Floating label
@@ -90,4 +90,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-floating-label--layout() {
+    @include kendo-floating-label--layout-base();
 }

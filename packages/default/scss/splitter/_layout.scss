@@ -1,4 +1,4 @@
-@include exports("splitter/layout") {
+@mixin kendo-splitter--layout-base() {
 
     // Base
     .k-splitter {
@@ -198,4 +198,10 @@
             flex-direction: column;
         }
     }
+
+}
+
+
+@mixin kendo-splitter--layout() {
+    @include kendo-splitter--layout-base();
 }

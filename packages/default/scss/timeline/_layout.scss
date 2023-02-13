@@ -1,4 +1,4 @@
-@include exports("timeline/layout") {
+@mixin kendo-timeline--layout-base() {
 
     .k-timeline {
         box-sizing: border-box;
@@ -439,4 +439,10 @@
             }
         }
     }
+
+}
+
+
+@mixin kendo-timeline--layout() {
+    @include kendo-timeline--layout-base();
 }

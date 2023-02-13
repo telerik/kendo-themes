@@ -1,4 +1,4 @@
-@include exports("adaptive/layout") {
+@mixin kendo-adaptive--layout-base() {
 
     .k-pane-wrapper {
         border-width: $kendo-adaptive-border-width;
@@ -54,11 +54,10 @@
         }
     }
 
-}
 
 
-@include exports("adaptive/layout/grid") {
 
+    // Grid specific styles
     .k-pane-wrapper {
 
         > div.k-pane {
@@ -114,10 +113,11 @@
             user-select: none;
         }
     }
-}
 
-@include exports("adaptive/layout/scheduler") {
 
+
+
+    // Scheduler specific styles
     .k-pane-wrapper {
 
         .k-scheduler-edit-form {
@@ -344,10 +344,11 @@
             border-bottom-width: 0;
         }
     }
-}
 
-@include exports("adaptive/layout/common") {
 
+
+
+    // Common styles for the Adaptive Layout
     .k-pane-wrapper {
 
         .k-appbar {
@@ -489,4 +490,10 @@
             }
         }
     }
+
+}
+
+
+@mixin kendo-adaptive--layout() {
+    @include kendo-adaptive--layout-base();
 }

@@ -1,4 +1,4 @@
-@include exports("colorgradient/theme") {
+@mixin kendo-color-gradient--theme-base() {
 
     // ColorGradient
     .k-colorgradient {
@@ -65,9 +65,8 @@
         @include fill( $color: $kendo-color-gradient-input-label-text );
     }
 
-}
 
-@include exports("colorgradient/theme/rtl") {
+    // RTL
     .k-rtl,
     [dir="rtl"] {
         .k-colorgradient {
@@ -78,4 +77,10 @@
 
         }
     }
+
+}
+
+
+@mixin kendo-color-gradient--theme() {
+    @include kendo-color-gradient--theme-base();
 }

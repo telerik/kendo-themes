@@ -1,4 +1,4 @@
-@include exports("coloreditor/theme") {
+@mixin kendo-color-editor--theme-base() {
 
     // ColorEditor/FlatColorPicker
     .k-coloreditor {
@@ -21,4 +21,9 @@
         outline-color: $kendo-color-editor-color-gradient-focus-outline-color;
     }
 
+}
+
+
+@mixin kendo-color-editor--theme() {
+    @include kendo-color-editor--theme-base();
 }

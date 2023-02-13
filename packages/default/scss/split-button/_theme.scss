@@ -1,4 +1,4 @@
-@include exports("split-button/theme") {
+@mixin kendo-split-button--theme-base() {
 
     // Split button
     .k-split-button:focus,
@@ -6,4 +6,9 @@
         @include focus-indicator( $kendo-split-button-focus-shadow );
     }
 
+}
+
+
+@mixin kendo-split-button--theme() {
+    @include kendo-split-button--theme-base();
 }

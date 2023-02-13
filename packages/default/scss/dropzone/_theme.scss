@@ -1,4 +1,4 @@
-@include exports( "dropzone/theme" ) {
+@mixin kendo-dropzone--theme-base() {
 
     // Dropzone
     .k-dropzone-inner {
@@ -30,4 +30,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-dropzone--theme() {
+    @include kendo-dropzone--theme-base();
 }

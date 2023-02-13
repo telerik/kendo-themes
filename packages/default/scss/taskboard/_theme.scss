@@ -1,4 +1,4 @@
-@include exports("taskboard/theme") {
+@mixin kendo-task-board--theme-base() {
 
     // TaskBoard
     .k-taskboard {
@@ -105,4 +105,9 @@
         );
     }
 
+}
+
+
+@mixin kendo-task-board--theme() {
+    @include kendo-task-board--theme-base();
 }

@@ -1,4 +1,4 @@
-@include exports("tabstrip/layout") {
+@mixin kendo-tabstrip--layout-base() {
 
     // Tabstrip wrapper
     .k-tabstrip-wrapper {
@@ -379,4 +379,9 @@
 
     }
 
+}
+
+
+@mixin kendo-tabstrip--layout() {
+    @include kendo-tabstrip--layout-base();
 }

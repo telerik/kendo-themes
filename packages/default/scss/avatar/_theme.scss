@@ -1,4 +1,4 @@
-@include exports( "avatar/theme" ) {
+@mixin kendo-avatar--theme-base() {
 
     // Solid Avatars
     @each $name, $color in $kendo-avatar-theme-colors {
@@ -20,4 +20,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-avatar--theme() {
+    @include kendo-avatar--theme-base();
 }

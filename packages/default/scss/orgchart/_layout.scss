@@ -1,4 +1,4 @@
-@include exports("orgchart/layout") {
+@mixin kendo-orgchart--layout-base() {
 
     // OrgChart
     .k-orgchart {
@@ -106,4 +106,9 @@
     .k-orgchart-button {
         z-index: 1;
     }
+}
+
+
+@mixin kendo-orgchart--layout() {
+    @include kendo-orgchart--layout-base();
 }

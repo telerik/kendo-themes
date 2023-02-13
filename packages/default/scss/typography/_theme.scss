@@ -1,4 +1,4 @@
-@include exports("typography/theme") {
+@mixin kendo-typography--theme-base() {
 
     .k-body {
         @include fill(
@@ -16,4 +16,10 @@
             $kendo-code-border
         );
     }
+
+}
+
+
+@mixin kendo-typography--theme() {
+    @include kendo-typography--theme-base();
 }

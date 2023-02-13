@@ -1,4 +1,4 @@
-@include exports("overlay/theme") {
+@mixin kendo-overlay--theme-base() {
 
     // Overlay
     .k-overlay {
@@ -12,4 +12,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-overlay--theme() {
+    @include kendo-overlay--theme-base();
 }
