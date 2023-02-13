@@ -1,4 +1,4 @@
-@mixin kendo-taskboard--layout() {
+@mixin kendo-task-board--layout() {
 
     // sass-lint:disable-block no-important no-ids
     #test-area .k-taskboard {
@@ -6,8 +6,3 @@
     }
 
 }
-
-
-
-
-@mixin kendo-taskboard--extended-layout() {}

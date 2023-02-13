@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "scroller",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin scroller-styles() {
+@mixin kendo-scroller--styles() {
     @include module-render( "scroller" ) {
         @include kendo-scroller--layout();
-        @include kendo-scroller--extended-layout();
         @include kendo-scroller--theme();
-        @include kendo-scroller--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-scroller--styles();
 }

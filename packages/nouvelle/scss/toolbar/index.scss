@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "toolbar",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin toolbar-styles() {
+@mixin kendo-toolbar--styles() {
     @include module-render( "toolbar" ) {
         @include kendo-toolbar--layout();
-        @include kendo-toolbar--extended-layout();
         @include kendo-toolbar--theme();
-        @include kendo-toolbar--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-toolbar--styles();
 }

@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "stepper",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin stepper-styles() {
+@mixin kendo-stepper--styles() {
     @include module-render( "stepper" ) {
         @include kendo-stepper--layout();
-        @include kendo-stepper--extended-layout();
         @include kendo-stepper--theme();
-        @include kendo-stepper--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-stepper--styles();
 }

@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "searchbox",
@@ -16,15 +19,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin searchbox-styles() {
+@mixin kendo-searchbox--styles() {
     @include module-render( "searchbox" ) {
         @include kendo-searchbox--layout();
-        @include kendo-searchbox--extended-layout();
         @include kendo-searchbox--theme();
-        @include kendo-searchbox--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-searchbox--styles();
 }

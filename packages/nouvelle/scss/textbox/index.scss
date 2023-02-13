@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "textbox",
@@ -16,15 +19,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin textbox-styles() {
+@mixin kendo-textbox--styles() {
     @include module-render( "textbox" ) {
         @include kendo-textbox--layout();
-        @include kendo-textbox--extended-layout();
         @include kendo-textbox--theme();
-        @include kendo-textbox--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-textbox--styles();
 }

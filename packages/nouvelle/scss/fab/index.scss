@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "fab",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin fab-styles() {
+@mixin kendo-fab--styles() {
     @include module-render( "fab" ) {
         @include kendo-fab--layout();
-        @include kendo-fab--extended-layout();
         @include kendo-fab--theme();
-        @include kendo-fab--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-fab--styles();
 }

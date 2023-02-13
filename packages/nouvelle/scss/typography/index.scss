@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "typography",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin typography-styles() {
+@mixin kendo-typography--styles() {
     @include module-render( "typography" ) {
         @include kendo-typography--layout();
-        @include kendo-typography--extended-layout();
         @include kendo-typography--theme();
-        @include kendo-typography--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-typography--styles();
 }

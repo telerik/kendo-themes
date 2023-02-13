@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "popup",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin popup-styles() {
+@mixin kendo-popup--styles() {
     @include module-render( "popup" ) {
         @include kendo-popup--layout();
-        @include kendo-popup--extended-layout();
         @include kendo-popup--theme();
-        @include kendo-popup--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-popup--styles();
 }

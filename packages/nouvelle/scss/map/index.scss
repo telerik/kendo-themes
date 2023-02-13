@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "map",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin map-styles() {
+@mixin kendo-map--styles() {
     @include module-render( "map" ) {
         @include kendo-map--layout();
-        @include kendo-map--extended-layout();
         @include kendo-map--theme();
-        @include kendo-map--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-map--styles();
 }

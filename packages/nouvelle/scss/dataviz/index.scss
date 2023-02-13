@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "dataviz",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin dataviz-styles() {
+@mixin kendo-dataviz--styles() {
     @include module-render( "dataviz" ) {
         @include kendo-dataviz--layout();
-        @include kendo-dataviz--extended-layout();
         @include kendo-dataviz--theme();
-        @include kendo-dataviz--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-dataviz--styles();
 }

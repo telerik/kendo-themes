@@ -1,11 +1,6 @@
-@mixin kendo-dropdownlist--theme() {
+@mixin kendo-dropdown-list--theme() {
 
-    // Dropdownlist
-    .k-dropdown {}
+    // Dropdown list
+    .k-dropdown-list {}
 
 }
-
-
-
-
-@mixin kendo-dropdownlist--extended-theme() {}

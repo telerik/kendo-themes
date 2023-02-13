@@ -1,6 +1,10 @@
-@mixin kendo-dateinput--layout() {}
+@mixin kendo-dateinput--layout() {
+
+    // Date input
+    .k-date-input {}
 
 
+    // Legacy aliases
+    .k-dateinput { @extend .k-date-input !optional; }
 
-
-@mixin kendo-dateinput--extended-layout() {}
+}

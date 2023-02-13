@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "radio",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin radio-styles() {
+@mixin kendo-radio--styles() {
     @include module-render( "radio" ) {
         @include kendo-radio--layout();
-        @include kendo-radio--extended-layout();
         @include kendo-radio--theme();
-        @include kendo-radio--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-radio--styles();
 }

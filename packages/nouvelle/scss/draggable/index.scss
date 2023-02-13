@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "draggable",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin draggable-styles() {
+@mixin kendo-draggable--styles() {
     @include module-render( "draggable" ) {
         @include kendo-draggable--layout();
-        @include kendo-draggable--extended-layout();
         @include kendo-draggable--theme();
-        @include kendo-draggable--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-draggable--styles();
 }

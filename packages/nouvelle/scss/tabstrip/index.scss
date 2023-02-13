@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "tabstrip",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin tabstrip-styles() {
+@mixin kendo-tabstrip--styles() {
     @include module-render( "tabstrip" ) {
         @include kendo-tabstrip--layout();
-        @include kendo-tabstrip--extended-layout();
         @include kendo-tabstrip--theme();
-        @include kendo-tabstrip--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-tabstrip--styles();
 }

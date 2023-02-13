@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "overlay",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin overlay-styles() {
+@mixin kendo-overlay--styles() {
     @include module-render( "overlay" ) {
         @include kendo-overlay--layout();
-        @include kendo-overlay--extended-layout();
         @include kendo-overlay--theme();
-        @include kendo-overlay--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-overlay--styles();
 }

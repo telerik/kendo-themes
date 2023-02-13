@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "combobox",
@@ -17,15 +20,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin combobox-styles() {
+@mixin kendo-combobox--styles() {
     @include module-render( "combobox" ) {
         @include kendo-combobox--layout();
-        @include kendo-combobox--extended-layout();
         @include kendo-combobox--theme();
-        @include kendo-combobox--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-combobox--styles();
 }

@@ -1,6 +1,9 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
-    name: "numerictextbox",
+    name: "numeric-textbox",
     dependencies: (
         "input",
         "icon",
@@ -16,15 +19,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin numerictextbox-styles() {
-    @include module-render( "numerictextbox" ) {
-        @include kendo-numerictextbox--layout();
-        @include kendo-numerictextbox--extended-layout();
-        @include kendo-numerictextbox--theme();
-        @include kendo-numerictextbox--extended-theme();
+@mixin kendo-numeric-textbox--styles() {
+    @include module-render( "numeric-textbox" ) {
+        @include kendo-numeric-textbox--layout();
+        @include kendo-numeric-textbox--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-numeric-textbox--styles();
 }

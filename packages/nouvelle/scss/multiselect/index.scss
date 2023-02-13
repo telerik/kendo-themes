@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "multiselect",
@@ -19,15 +22,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin multiselect-styles() {
+@mixin kendo-multiselect--styles() {
     @include module-render( "multiselect" ) {
         @include kendo-multiselect--layout();
-        @include kendo-multiselect--extended-layout();
         @include kendo-multiselect--theme();
-        @include kendo-multiselect--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-multiselect--styles();
 }

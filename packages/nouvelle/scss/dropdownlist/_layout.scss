@@ -1,11 +1,10 @@
-@mixin kendo-dropdownlist--layout() {
+@mixin kendo-dropdown-list--layout() {
 
-    // Dropdownlist
-    .k-dropdown {}
+    // Dropdown list
+    .k-dropdown-list {}
+
+
+    // Legacy aliases
+    .k-dropdown { @extend .k-dropdown-list !optional; }
 
 }
-
-
-
-
-@mixin kendo-dropdownlist--extended-layout() {}

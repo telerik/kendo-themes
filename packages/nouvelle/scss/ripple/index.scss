@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "ripple",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin ripple-styles() {
+@mixin kendo-ripple--styles() {
     @include module-render( "ripple" ) {
         @include kendo-ripple--layout();
-        @include kendo-ripple--extended-layout();
         @include kendo-ripple--theme();
-        @include kendo-ripple--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-ripple--styles();
 }

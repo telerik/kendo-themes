@@ -1,6 +1,9 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
-    name: "dropdowntree",
+    name: "dropdown-tree",
     dependencies: (
         "input",
         "icon",
@@ -18,15 +21,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin dropdowntree-styles() {
-    @include module-render( "dropdowntree" ) {
-        @include kendo-dropdowntree--layout();
-        @include kendo-dropdowntree--extended-layout();
-        @include kendo-dropdowntree--theme();
-        @include kendo-dropdowntree--extended-theme();
+@mixin kendo-dropdown-tree--styles() {
+    @include module-render( "dropdown-tree" ) {
+        @include kendo-dropdown-tree--layout();
+        @include kendo-dropdown-tree--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-dropdown-tree--styles();
 }
