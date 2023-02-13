@@ -16,8 +16,6 @@ $_kendo-module-meta: (
 );
 
 
-
-
 // Dependencies
 @import "../common/_index.scss";
 @import "../input/_index.scss";
@@ -30,3 +28,21 @@ $_kendo-module-meta: (
 @import "./_variables.scss";
 @import "./_layout.scss";
 @import "./_theme.scss";
+
+
+// Register
+@import "../core/module-system/index.import.scss";
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin kendo-date-range-picker--styles() {
+    @include module-render( "date-range-picker" ) {
+        @include kendo-date-range-picker--layout();
+        @include kendo-date-range-picker--theme();
+    }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-date-range-picker--styles();
+}

@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/forms/_layout.scss";
 
-@include exports("edit-form/layout/material") {
+
+@mixin kendo-form--layout() {
+
+    @include kendo-form--layout-base();
 
     // Fields
     .k-edit-label {

@@ -1,6 +1,10 @@
 @import "@progress/kendo-theme-default/scss/slider/_layout.scss";
 
-@include exports("slider/layout/material") {
+
+@mixin kendo-slider--layout() {
+
+    @include kendo-slider--layout-base();
+
     .k-slider {
         .k-tick {
             margin: 0;
@@ -47,4 +51,5 @@
             }
         }
     }
+
 }

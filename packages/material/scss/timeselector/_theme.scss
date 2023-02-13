@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/timeselector/_theme.scss";
 
-@include exports( "timeselector/theme/material" ) {
+
+@mixin kendo-time-selector--theme() {
+
+    @include kendo-time-selector--theme-base();
 
     // Time selector
     .k-timeselector {}

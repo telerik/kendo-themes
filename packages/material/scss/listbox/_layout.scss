@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/listbox/_layout.scss";
 
-@include exports( "listbox/layout/material" ) {
+
+@mixin kendo-listbox--layout() {
+
+    @include kendo-listbox--layout-base();
 
     .k-listbox {
         .k-item {

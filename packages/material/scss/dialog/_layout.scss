@@ -1,7 +1,11 @@
 @import "@progress/kendo-theme-default/scss/dialog/_layout.scss";
 
-@include exports("dialog/layout/material") {
 
+@mixin kendo-dialog--layout() {
+
+    @include kendo-dialog--layout-base();
+
+    // Dialog
     .k-dialog-content.k-scroll {
         border-width: 1px 0;
         border-style: solid;

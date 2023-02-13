@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/ripple/_layout.scss";
+
+
+@mixin kendo-ripple--layout() {
+    @include kendo-ripple--layout-base();
+}

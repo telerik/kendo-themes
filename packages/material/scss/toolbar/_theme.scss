@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/toolbar/_theme.scss";
 
-@include exports("toolbar/theme/material") {
+
+@mixin kendo-toolbar--theme() {
+
+    @include kendo-toolbar--theme-base();
 
     .k-toolbar {
 

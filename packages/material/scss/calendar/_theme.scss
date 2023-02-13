@@ -1,7 +1,11 @@
 @import "@progress/kendo-theme-default/scss/calendar/_theme.scss";
 
-@include exports("calendar/theme/material") {
 
+@mixin kendo-calendar--theme() {
+
+    @include kendo-calendar--theme-base();
+
+    // Calendar
     .k-calendar {
 
         .k-focus .k-link {
@@ -20,4 +24,5 @@
         }
 
     }
+
 }

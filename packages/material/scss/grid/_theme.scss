@@ -1,6 +1,10 @@
 @import "@progress/kendo-theme-default/scss/grid/_theme.scss";
 
-@include exports ("grid/theme/material") {
+
+@mixin kendo-grid--theme() {
+
+    @include kendo-grid--theme-base();
+
     $kendo-grid-filter-button-focus: rgba( black, .12 ) !default;
 
     .k-grid {
@@ -240,4 +244,5 @@
             }
         }
     }
+
 }

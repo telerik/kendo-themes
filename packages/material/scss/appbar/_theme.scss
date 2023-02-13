@@ -1,2 +1,6 @@
 @import "@progress/kendo-theme-default/scss/appbar/_theme.scss";
 
+
+@mixin kendo-appbar--theme() {
+    @include kendo-appbar--theme-base();
+}

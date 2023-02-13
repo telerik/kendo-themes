@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/overlay/_layout.scss";
+
+
+@mixin kendo-overlay--layout() {
+    @include kendo-overlay--layout-base();
+}

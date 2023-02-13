@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/scheduler/_theme.scss";
 
-@include exports("scheduler/theme/material") {
+
+@mixin kendo-scheduler--theme() {
+
+    @include kendo-scheduler--theme-base();
 
     // Events
     .k-event {
@@ -17,13 +20,6 @@
             background-color: $kendo-color-primary-contrast;
         }
     }
-
-}
-
-
-
-
-@include exports("scheduler-edit-form/theme/material") {
 
     .k-scheduler-edit-form {
         .k-edit-label {

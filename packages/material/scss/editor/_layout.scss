@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/editor/_layout.scss";
 
-@include exports("editor/layout/material") {
+
+@mixin kendo-editor--layout() {
+
+    @include kendo-editor--layout-base();
 
     // Insert table
     .k-ct-popup {

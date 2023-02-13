@@ -1,7 +1,11 @@
 @import "@progress/kendo-theme-default/scss/pager/_layout.scss";
 
-@include exports("pager/layout/material") {
 
+@mixin kendo-pager--layout() {
+
+    @include kendo-pager--layout-base();
+
+    // Pager
     .k-pager {
 
         .k-pager-numbers-wrap {
