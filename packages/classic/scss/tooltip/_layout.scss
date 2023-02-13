@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/tooltip/_layout.scss";
+
+
+@mixin kendo-tooltip--layout() {
+    @include kendo-tooltip--layout-base();
+}

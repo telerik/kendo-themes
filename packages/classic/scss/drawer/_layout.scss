@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/drawer/_layout.scss";
+
+
+@mixin kendo-drawer--layout() {
+    @include kendo-drawer--layout-base();
+}

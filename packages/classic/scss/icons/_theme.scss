@@ -1,0 +1,6 @@
+@import "@progress/kendo-theme-default/scss/icons/_theme.scss";
+
+
+@mixin kendo-icon--theme() {
+    @include kendo-icon--theme-base();
+}

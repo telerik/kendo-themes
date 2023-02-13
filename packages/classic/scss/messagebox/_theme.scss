@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/messagebox/_theme.scss";
+
+
+@mixin kendo-messagebox--theme() {
+    @include kendo-messagebox--theme-base();
+}
