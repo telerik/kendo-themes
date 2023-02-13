@@ -1,6 +1,8 @@
 @import "@progress/kendo-theme-default/scss/spreadsheet/_layout.scss";
 
-@include exports( "spreadsheet/filter/layout/bootstrap" ) {
+@mixin kendo-spreadsheet--layout() {
+
+    @include kendo-spreadsheet--layout-base();
 
     // Filter menu
     .k-spreadsheet-filter-menu {

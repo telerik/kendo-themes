@@ -1,7 +1,8 @@
 @import "@progress/kendo-theme-default/scss/pager/_layout.scss";
 
-@include exports( "pager/layout/bootstrap" ) {
+@mixin kendo-pager--layout() {
 
+    @include kendo-pager--layout-base();
 
     // Pager items
     .k-pager-nav { @include border-radius( 0 ); }

@@ -27,3 +27,21 @@ $_kendo-module-meta: (
 @import "./_variables.scss";
 @import "./_layout.scss";
 @import "./_theme.scss";
+
+
+// Register
+@import "../core/module-system/index.import.scss";
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin kendo-autocomplete--styles() {
+    @include module-render( "autocomplete" ) {
+        @include kendo-autocomplete--layout();
+        @include kendo-autocomplete--theme();
+    }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-autocomplete--styles();
+}

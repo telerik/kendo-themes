@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/splitter/_layout.scss";
+
+
+@mixin kendo-splitter--layout() {
+    @include kendo-splitter--layout-base();
+}

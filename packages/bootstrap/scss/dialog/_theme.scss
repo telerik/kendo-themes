@@ -1,27 +1,6 @@
-@include exports( "dialog/theme" ) {
+@import "@progress/kendo-theme-default/scss/dialog/_theme.scss";
 
-    .k-dialog {}
 
-    // Titlebar
-    .k-dialog-titlebar {
-        @include fill(
-            $kendo-dialog-titlebar-text,
-            $kendo-dialog-titlebar-bg,
-            $kendo-dialog-titlebar-border
-        );
-    }
-
-    // Buttons
-    .k-dialog-actions {
-        border-color: $kendo-window-titlebar-border;
-    }
-
-    // Dialog theme colors
-    @each $name, $color in $kendo-dialog-theme-colors {
-        .k-dialog-#{$name} .k-dialog-titlebar {
-            color: k-contrast-legacy( $color );
-            background-color: $color;
-        }
-    }
-
+@mixin kendo-dialog--theme() {
+    @include kendo-dialog--theme-base();
 }

@@ -1,4 +1,7 @@
-@include exports( "scrollview/theme" ) {
+@import "@progress/kendo-theme-default/scss/scrollview/_theme.scss";
+
+
+@mixin kendo-scrollview--theme() {
 
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,

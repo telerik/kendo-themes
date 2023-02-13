@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/calendar/_layout.scss";
+
+
+@mixin kendo-calendar--layout() {
+    @include kendo-calendar--layout-base();
+}

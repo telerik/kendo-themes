@@ -1,6 +1,8 @@
 @import "@progress/kendo-theme-default/scss/switch/_layout.scss";
 
-@include exports( "switch/layout/bootstrap" ) {
+@mixin kendo-switch--layout() {
+
+    @include kendo-switch--layout-base();
 
     // Switch
     .k-switch.k-disabled {

@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/action-sheet/_theme.scss";
+
+
+@mixin kendo-action-sheet--theme() {
+    @include kendo-action-sheet--theme-base();
+}

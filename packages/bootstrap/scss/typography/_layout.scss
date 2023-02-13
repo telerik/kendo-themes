@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/typography/_layout.scss";
+
+
+@mixin kendo-typography--layout() {
+    @include kendo-typography--layout-base();
+}

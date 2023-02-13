@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/menu-button/_theme.scss";
+
+
+@mixin kendo-menu-button--theme() {
+    @include kendo-menu-button--theme-base();
+}

@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/draggable/_layout.scss";
+
+
+@mixin kendo-draggable--layout() {
+    @include kendo-draggable--layout-base();
+}

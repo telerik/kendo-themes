@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/treeview/_layout.scss";
 
-@include exports( "treeview/layout/bootstrap" ) {
+
+@mixin kendo-treeview--layout() {
+
+    @include kendo-treeview--layout-base();
 
     // Treeview
     .k-treeview {}

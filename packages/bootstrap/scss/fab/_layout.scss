@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/fab/_layout.scss";
+
+
+@mixin kendo-fab--layout() {
+    @include kendo-fab--layout-base();
+}

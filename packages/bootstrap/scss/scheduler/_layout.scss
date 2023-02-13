@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/scheduler/_layout.scss";
 
-@include exports("scheduler/layout/bootstrap") {
+
+@mixin kendo-scheduler--layout() {
+
+    @include kendo-scheduler--layout-base();
 
     // Appointments
     kendo-scheduler .k-event,

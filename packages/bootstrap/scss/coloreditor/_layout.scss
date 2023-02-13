@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/coloreditor/_layout.scss";
+
+
+@mixin kendo-color-editor--layout() {
+    @include kendo-color-editor--layout-base();
+}
