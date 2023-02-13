@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "grid",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin grid-styles() {
+@mixin kendo-grid--styles() {
     @include module-render( "grid" ) {
         @include kendo-grid--layout();
-        @include kendo-grid--extended-layout();
         @include kendo-grid--theme();
-        @include kendo-grid--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-grid--styles();
 }

@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "chip",
@@ -14,15 +17,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin chip-styles() {
+@mixin kendo-chip--styles() {
     @include module-render( "chip" ) {
         @include kendo-chip--layout();
-        @include kendo-chip--extended-layout();
         @include kendo-chip--theme();
-        @include kendo-chip--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-chip--styles();
 }

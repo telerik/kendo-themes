@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "time-duration-picker",
@@ -18,15 +21,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin time-duration-picker-styles() {
+@mixin kendo-time-duration-picker--styles() {
     @include module-render( "time-duration-picker" ) {
         @include kendo-time-duration-picker--layout();
-        @include kendo-time-duration-picker--extended-layout();
         @include kendo-time-duration-picker--theme();
-        @include kendo-time-duration-picker--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-time-duration-picker--styles();
 }

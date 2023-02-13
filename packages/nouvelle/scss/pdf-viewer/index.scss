@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "pdf-viewer",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin pdf-viewer-styles() {
+@mixin kendo-pdf-viewer--styles() {
     @include module-render( "pdf-viewer" ) {
         @include kendo-pdf-viewer--layout();
-        @include kendo-pdf-viewer--extended-layout();
         @include kendo-pdf-viewer--theme();
-        @include kendo-pdf-viewer--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-pdf-viewer--styles();
 }

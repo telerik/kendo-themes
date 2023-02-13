@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "avatar",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin avatar-styles() {
+@mixin kendo-avatar--styles() {
     @include module-render( "avatar" ) {
         @include kendo-avatar--layout();
-        @include kendo-avatar--extended-layout();
         @include kendo-avatar--theme();
-        @include kendo-avatar--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-avatar--styles();
 }

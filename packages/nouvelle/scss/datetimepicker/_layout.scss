@@ -1,6 +1,9 @@
-@mixin kendo-datetimepicker--layout() {}
+@mixin kendo-date-time-picker--layout() {
 
+    // Date time picker
+    .k-date-time-picker {}
 
+    // Legacy aliases
+    .k-datetimepicker { @extend .k-date-time-picker !optional; }
 
-
-@mixin kendo-datetimepicker--extended-layout() {}
+}

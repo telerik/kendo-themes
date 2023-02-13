@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "notification",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin notification-styles() {
+@mixin kendo-notification--styles() {
     @include module-render( "notification" ) {
         @include kendo-notification--layout();
-        @include kendo-notification--extended-layout();
         @include kendo-notification--theme();
-        @include kendo-notification--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-notification--styles();
 }

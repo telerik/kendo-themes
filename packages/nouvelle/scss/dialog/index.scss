@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "dialog",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin dialog-styles() {
+@mixin kendo-dialog--styles() {
     @include module-render( "dialog" ) {
         @include kendo-dialog--layout();
-        @include kendo-dialog--extended-layout();
         @include kendo-dialog--theme();
-        @include kendo-dialog--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-dialog--styles();
 }

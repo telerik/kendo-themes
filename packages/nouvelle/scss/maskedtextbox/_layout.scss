@@ -1,6 +1,10 @@
-@mixin kendo-maskedtextbox--layout() {}
+@mixin kendo-masked-textbox--layout() {
+
+    // Masked textbox
+    .k-masked-textbox {}
 
 
+    // Legacy aliases
+    .k-maskedtextbox { @extend .k-masked-textbox !optional; }
 
-
-@mixin kendo-maskedtextbox--extended-layout() {}
+}

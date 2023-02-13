@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "breadcrumb",
@@ -15,15 +18,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin breadcrumb-styles() {
+@mixin kendo-breadcrumb--styles() {
     @include module-render( "breadcrumb" ) {
         @include kendo-breadcrumb--layout();
-        @include kendo-breadcrumb--extended-layout();
         @include kendo-breadcrumb--theme();
-        @include kendo-breadcrumb--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-breadcrumb--styles();
 }

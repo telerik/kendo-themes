@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "rating",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin rating-styles() {
+@mixin kendo-rating--styles() {
     @include module-render( "rating" ) {
         @include kendo-rating--layout();
-        @include kendo-rating--extended-layout();
         @include kendo-rating--theme();
-        @include kendo-rating--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-rating--styles();
 }

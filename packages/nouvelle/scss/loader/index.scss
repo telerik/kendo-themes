@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "loader",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin loader-styles() {
+@mixin kendo-loader--styles() {
     @include module-render( "loader" ) {
         @include kendo-loader--layout();
-        @include kendo-loader--extended-layout();
         @include kendo-loader--theme();
-        @include kendo-loader--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-loader--styles();
 }

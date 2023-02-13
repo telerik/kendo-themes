@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "floating-label",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin floating-label-styles() {
+@mixin kendo-floating-label--styles() {
     @include module-render( "floating-label" ) {
         @include kendo-floating-label--layout();
-        @include kendo-floating-label--extended-layout();
         @include kendo-floating-label--theme();
-        @include kendo-floating-label--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-floating-label--styles();
 }
