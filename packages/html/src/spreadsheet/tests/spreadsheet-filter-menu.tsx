@@ -38,7 +38,9 @@ root.render(
                                 <div className="k-columnmenu-item">
                                     Filter by condition
                                     <span className="k-spacer"></span>
-                                    <Icon className="k-expander-indicator" name="arrow-chevron-down"></Icon>
+                                    <span className="k-expander-indicator">
+                                        <Icon name="arrow-chevron-down" />
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +49,9 @@ root.render(
                                 <div className="k-columnmenu-item">
                                     Filter by value
                                     <span className="k-spacer"></span>
-                                    <Icon className="k-expander-indicator" name="arrow-chevron-up"></Icon>
+                                    <span className="k-expander-indicator">
+                                        <Icon name="arrow-chevron-up" />
+                                    </span>
                                 </div>
                                 <div className="k-columnmenu-item-content">
                                     <Searchbox placeholder="Search..." />

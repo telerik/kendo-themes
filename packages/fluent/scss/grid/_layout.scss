@@ -1306,7 +1306,8 @@
         cursor: pointer;
 
         > .k-icon,
-        > .k-svg-icon {
+        > .k-svg-icon,
+        > .k-expander-indicator {
             margin-inline-end: var( --kendo-grid-column-menu-item-icon-spacing, #{$kendo-grid-column-menu-item-icon-spacing} );
         }
     }
