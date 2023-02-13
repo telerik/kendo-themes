@@ -1,4 +1,4 @@
-@include exports("adaptive/theme") {
+@mixin kendo-adaptive--theme-base() {
 
     .k-pane-wrapper,
     .k-view {
@@ -92,4 +92,10 @@
         }
 
     }
+
+}
+
+
+@mixin kendo-adaptive--theme() {
+    @include kendo-adaptive--theme-base();
 }

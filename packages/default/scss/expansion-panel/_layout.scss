@@ -1,4 +1,4 @@
-@include exports("expansion-panel/layout") {
+@mixin kendo-expander--layout-base() {
 
     // Base
     .k-expander {
@@ -73,4 +73,9 @@
     .k-expander:not(.k-expanded) + .k-expander:not(.k-expanded) {
         border-top-width: 0;
     }
+}
+
+
+@mixin kendo-expander--layout() {
+    @include kendo-expander--layout-base();
 }

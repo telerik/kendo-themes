@@ -1,4 +1,4 @@
-@include exports("gantt/layout") {
+@mixin kendo-gantt--layout-base() {
 
     $row-height: #{$kendo-line-height-em} + #{2 * $kendo-table-md-cell-padding-y} + #{$kendo-grid-cell-horizontal-border-width};
 
@@ -246,7 +246,7 @@
     }
 
 
-    // Gant content
+    // Gantt content
     .k-gantt-content {
         display: flex;
         flex-flow: row nowrap;
@@ -761,10 +761,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-}
 
-@include exports("gantt/export") {
 
+
+
+    // Gantt export
     .k-pdf-export-shadow {
         .k-gantt {
             float: left;
@@ -787,12 +788,9 @@
         }
     }
 
-}
 
 
-@include exports("gantt-edit-form/layout") {
-
-
+    // Gantt edit form
     .k-gantt-edit-form {}
 
     .k-gantt-edit-form .k-gantt-update {}
@@ -801,11 +799,10 @@
         float: left;
     }
 
-}
 
 
-@include exports("gantt/rtl") {
 
+    // Gantt RTL
     .k-rtl,
     [dir="rtl"] {
 
@@ -889,4 +886,10 @@
             right: 0;
         }
     }
+
+}
+
+
+@mixin kendo-gantt--layout() {
+    @include kendo-gantt--layout-base();
 }

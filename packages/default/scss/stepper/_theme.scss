@@ -1,4 +1,4 @@
-@include exports("stepper/theme") {
+@mixin kendo-stepper--theme-base() {
 
     // Base
     .k-stepper {
@@ -200,4 +200,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-stepper--theme() {
+    @include kendo-stepper--theme-base();
 }

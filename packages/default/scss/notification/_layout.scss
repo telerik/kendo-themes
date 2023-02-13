@@ -1,4 +1,4 @@
-@include exports("notification/layout") {
+@mixin kendo-notification--layout-base() {
 
     // Base
     .k-notification-group {
@@ -68,4 +68,9 @@
         align-self: center;
     }
 
+}
+
+
+@mixin kendo-notification--layout() {
+    @include kendo-notification--layout-base();
 }

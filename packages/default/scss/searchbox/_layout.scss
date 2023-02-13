@@ -1,6 +1,11 @@
-@include exports("searchbox/layout") {
+@mixin kendo-searchbox--layout-base() {
 
     // Searchbox
     .k-searchbox {}
 
+}
+
+
+@mixin kendo-searchbox--layout() {
+    @include kendo-searchbox--layout-base();
 }

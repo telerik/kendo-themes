@@ -1,4 +1,4 @@
-@include exports("toolbar/layout") {
+@mixin kendo-toolbar--layout-base() {
 
     // Base
     .k-toolbar {
@@ -152,12 +152,7 @@
         height: $kendo-button-lg-calc-size;
     }
 
-}
 
-
-
-
-@include exports( "floating-toolbar/layout" ) {
 
     // sass-lint:disable class-name-format
     .k-floating-toolbar,
@@ -188,14 +183,9 @@
     }
     // sass-lint:enable class-name-format
 
-}
 
-
-
-
-// Remove once the Overflow Popup uses
-// the proper Menu rendering in all suites.
-@include exports("toolbar/layout/legacy") {
+    // Remove once the Overflow Popup uses
+    // the proper Menu rendering in all suites.
 
     // Overflow container
     .k-overflow-container {
@@ -261,4 +251,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-toolbar--layout() {
+    @include kendo-toolbar--layout-base();
 }

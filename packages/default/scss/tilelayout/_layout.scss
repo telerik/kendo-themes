@@ -1,4 +1,4 @@
-@include exports("tilelayout/layout") {
+@mixin kendo-tile-layout--layout-base() {
 
     .k-tilelayout {
         border-width: $kendo-tile-layout-border-width;
@@ -39,4 +39,9 @@
         min-height: 0;
     }
 
+}
+
+
+@mixin kendo-tile-layout--layout() {
+    @include kendo-tile-layout--layout-base();
 }

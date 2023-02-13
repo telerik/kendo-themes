@@ -1,4 +1,4 @@
-@include exports("signature/layout") {
+@mixin kendo-signature--layout-base() {
 
     .k-signature {
         width: $kendo-signature-width;
@@ -68,4 +68,9 @@
         min-height: $kendo-signature-lg-min-height;
     }
 
+}
+
+
+@mixin kendo-signature--layout() {
+    @include kendo-signature--layout-base();
 }

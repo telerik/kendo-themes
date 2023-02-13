@@ -1,5 +1,11 @@
-@include exports("timedurationpicker/theme") {
+@mixin kendo-time-duration-picker--theme-base() {
 
-    // TimeDuration picker
-    .k-timedurationpicker {}
+    // Time duration picker
+    .k-time-duration-picker {}
+
+}
+
+
+@mixin kendo-time-duration-picker--theme() {
+    @include kendo-time-duration-picker--theme-base();
 }

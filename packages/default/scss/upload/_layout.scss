@@ -1,4 +1,4 @@
-@include exports("upload/layout") {
+@mixin kendo-upload--layout-base() {
 
     .k-upload {
         border-width: $kendo-upload-border-width;
@@ -246,4 +246,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-upload--layout() {
+    @include kendo-upload--layout-base();
 }

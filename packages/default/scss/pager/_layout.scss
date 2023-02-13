@@ -1,4 +1,4 @@
-@include exports("pager/layout") {
+@mixin kendo-pager--layout-base() {
 
     .k-pager {
         padding: 0;
@@ -234,4 +234,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-pager--layout() {
+    @include kendo-pager--layout-base();
 }

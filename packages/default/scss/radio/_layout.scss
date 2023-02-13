@@ -1,4 +1,4 @@
-@include exports( "radio/layout" ) {
+@mixin kendo-radio--layout-base() {
 
     // Radio
     .k-radio {
@@ -208,4 +208,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-radio--layout() {
+    @include kendo-radio--layout-base();
 }

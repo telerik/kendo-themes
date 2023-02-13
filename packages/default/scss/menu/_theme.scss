@@ -1,4 +1,4 @@
-@include exports("menu/theme") {
+@mixin kendo-menu--theme-base() {
 
     .k-menu:not(.k-context-menu) {
         @include fill(
@@ -113,4 +113,9 @@
             }
         }
     }
+}
+
+
+@mixin kendo-menu--theme() {
+    @include kendo-menu--theme-base();
 }

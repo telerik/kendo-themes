@@ -1,4 +1,4 @@
-@include exports("scheduler/theme") {
+@mixin kendo-scheduler--theme-base() {
 
     // Appearance
     .k-scheduler {
@@ -152,12 +152,7 @@
         }
     }
 
-}
 
-
-
-
-@include exports("scheduler-views/theme") {
 
     // Day view
     .k-scheduler-dayview {}
@@ -231,13 +226,9 @@
         }
     }
 
-}
 
 
-
-
-@include exports("scheduler-tooltip/theme") {
-
+    // Scheduler tooltip
     .k-tooltip.k-scheduler-tooltip {
         @include fill(
             $kendo-scheduler-tooltip-text,
@@ -251,13 +242,13 @@
         }
     }
 
+
+    // Scheduler edit form
+    .k-scheduler-edit-form {}
+
 }
 
 
-
-
-@include exports("scheduler-edit-form/theme") {
-
-    .k-scheduler-edit-form {}
-
+@mixin kendo-scheduler--theme() {
+    @include kendo-scheduler--theme-base();
 }

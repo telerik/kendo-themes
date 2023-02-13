@@ -1,4 +1,4 @@
-@include exports( "checkbox/layout" ) {
+@mixin kendo-checkbox--layout-base() {
 
     // Checkbox
     .k-checkbox {
@@ -211,4 +211,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-checkbox--layout() {
+    @include kendo-checkbox--layout-base();
 }

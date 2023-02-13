@@ -1,4 +1,4 @@
-@include exports( "popup/theme" ) {
+@mixin kendo-popup--theme-base() {
 
     .k-popup {
         @include fill(
@@ -13,4 +13,9 @@
         @include border-bottom-radius-only( $kendo-border-radius );
     }
 
+}
+
+
+@mixin kendo-popup--theme() {
+    @include kendo-popup--theme-base();
 }

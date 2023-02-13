@@ -1,4 +1,4 @@
-@include exports( "breadcrumb/layout" ) {
+@mixin kendo-breadcrumb--layout-base() {
 
     // Breadcrumb
     .k-breadcrumb {
@@ -118,4 +118,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-breadcrumb--layout() {
+    @include kendo-breadcrumb--layout-base();
 }

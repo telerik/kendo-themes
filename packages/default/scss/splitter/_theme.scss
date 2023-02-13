@@ -1,5 +1,6 @@
-@include exports("splitter/theme") {
+@mixin kendo-splitter--theme-base() {
 
+    // Splitter
     .k-splitter {
         @include fill(
             $kendo-splitter-text,
@@ -31,4 +32,9 @@
         background-color: $kendo-splitbar-hover-bg;
     }
 
+}
+
+
+@mixin kendo-splitter--theme() {
+    @include kendo-splitter--theme-base();
 }

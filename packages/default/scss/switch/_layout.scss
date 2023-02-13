@@ -1,4 +1,4 @@
-@include exports("switch/layout") {
+@mixin kendo-switch--layout-base() {
 
     .k-switch {
         box-sizing: border-box;
@@ -151,4 +151,9 @@
 
     }
 
+}
+
+
+@mixin kendo-switch--layout() {
+    @include kendo-switch--layout-base();
 }

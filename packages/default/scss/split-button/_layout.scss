@@ -1,5 +1,7 @@
-@include exports("split-button/layout") {
+@mixin kendo-split-button--layout-base() {
 
+    // Split button
+    .k-split-button {}
 
     // Split button arrow
     .k-split-button .k-split-button-arrow {
@@ -29,5 +31,9 @@
         }
     }
 
+}
 
+
+@mixin kendo-split-button--layout() {
+    @include kendo-split-button--layout-base();
 }

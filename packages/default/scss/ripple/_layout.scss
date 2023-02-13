@@ -1,4 +1,5 @@
-@include exports( "ripple/layout" ) {
+@mixin kendo-ripple--layout-base() {
+
     .k-ripple-target {
         position: relative;
     }
@@ -46,4 +47,10 @@
             transform: translate(-50%, -50%) scale(1);
         }
     }
+
+}
+
+
+@mixin kendo-ripple--layout() {
+    @include kendo-ripple--layout-base();
 }

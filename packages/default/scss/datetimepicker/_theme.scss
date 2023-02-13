@@ -1,6 +1,11 @@
-@include exports( "datetimepicker/theme" ) {
+@mixin kendo-date-time-picker--theme-base() {
 
     // Datetime picker
     .k-datetimepicker {}
 
+}
+
+
+@mixin kendo-date-time-picker--theme() {
+    @include kendo-date-time-picker--theme-base();
 }

@@ -1,4 +1,4 @@
-@include exports("menu-button/layout") {
+@mixin kendo-menu-button--layout-base() {
 
     // Menu button
     .k-menu-button,
@@ -26,4 +26,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-menu-button--layout() {
+    @include kendo-menu-button--layout-base();
 }

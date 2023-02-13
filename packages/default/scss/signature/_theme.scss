@@ -1,4 +1,4 @@
-@include exports("signature/theme") {
+@mixin kendo-signature--theme-base() {
 
     // Solid signature
     .k-signature {
@@ -8,5 +8,9 @@
         }
     }
 
+}
 
+
+@mixin kendo-signature--theme() {
+    @include kendo-signature--theme-base();
 }

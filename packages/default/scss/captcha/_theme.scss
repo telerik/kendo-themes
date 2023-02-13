@@ -1,4 +1,4 @@
-@include exports("captcha/theme") {
+@mixin kendo-captcha--theme-base() {
 
     // Captcha
     .k-captcha {
@@ -9,4 +9,9 @@
         );
     }
 
+}
+
+
+@mixin kendo-captcha--theme() {
+    @include kendo-captcha--theme-base();
 }

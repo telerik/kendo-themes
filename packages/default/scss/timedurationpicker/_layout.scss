@@ -1,1 +1,17 @@
-@include exports("timedurationpicker/layout") {}
+@mixin kendo-time-duration-picker--layout-base() {
+
+    // Time duration picker
+    .k-time-duration-picker {}
+
+
+    // Legacy aliases
+    .k-timedurationpicker {
+        @extend .k-time-duration-picker;
+    }
+
+}
+
+
+@mixin kendo-time-duration-picker--layout() {
+    @include kendo-time-duration-picker--layout-base();
+}

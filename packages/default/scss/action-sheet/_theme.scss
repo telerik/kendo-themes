@@ -1,4 +1,4 @@
-@include exports("action-sheet/theme") {
+@mixin kendo-action-sheet--theme-base() {
 
     // Actionsheet
     .k-actionsheet {
@@ -94,4 +94,9 @@
         @include fill( $border: $kendo-adaptive-actionsheet-titlebar-border );
     }
 
+}
+
+
+@mixin kendo-action-sheet--theme() {
+    @include kendo-action-sheet--theme-base();
 }

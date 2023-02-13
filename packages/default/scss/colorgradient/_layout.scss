@@ -1,4 +1,4 @@
-@include exports("colorgradient/layout") {
+@mixin kendo-color-gradient--layout-base() {
 
     // ColorGradient
     .k-colorgradient {
@@ -186,4 +186,9 @@
         pointer-events: none;
     }
 
+}
+
+
+@mixin kendo-color-gradient--layout() {
+    @include kendo-color-gradient--layout-base();
 }

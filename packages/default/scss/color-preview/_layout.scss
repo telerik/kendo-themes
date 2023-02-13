@@ -1,4 +1,4 @@
-@include exports( "color-preview/layout" ) {
+@mixin kendo-color-preview--layout-base() {
 
     // Color Preview
     .k-color-preview {
@@ -74,4 +74,9 @@
         background-position: 0 0;
     }
 
+}
+
+
+@mixin kendo-color-preview--layout() {
+    @include kendo-color-preview--layout-base();
 }
