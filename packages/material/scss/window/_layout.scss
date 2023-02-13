@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/window/_layout.scss";
+
+
+@mixin kendo-window--layout() {
+    @include kendo-window--layout-base();
+}

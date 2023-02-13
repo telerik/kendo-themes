@@ -1,3 +1,6 @@
+@import "../button/_variables.scss";
+
+
 // Actions
 $kendo-actions-margin-top: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-actions-padding-x: k-map-get( $kendo-spacing, 2 ) !default;

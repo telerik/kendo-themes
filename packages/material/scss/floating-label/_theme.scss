@@ -1,7 +1,9 @@
 @import "@progress/kendo-theme-default/scss/floating-label/_theme.scss";
 
 
-@include exports( "floating-label/theme/material" ) {
+@mixin kendo-floating-label--theme() {
+
+    @include kendo-floating-label--theme-base();
 
     // Floating label
     .k-floating-label-container {

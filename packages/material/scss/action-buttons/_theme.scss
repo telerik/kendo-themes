@@ -1,7 +1,11 @@
 @import "@progress/kendo-theme-default/scss/action-buttons/_theme.scss";
 
-@include exports("action-buttons/theme/material") {
 
+@mixin kendo-actions--theme() {
+
+    @include kendo-actions--theme-base();
+
+    // Actions
     .k-actions {
 
         .k-button-solid-base {

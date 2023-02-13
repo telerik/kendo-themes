@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/switch/_layout.scss";
 
-@include exports( "switch/layout/material" ) {
+
+@mixin kendo-switch--layout() {
+
+    @include kendo-switch--layout-base();
 
     // Switch
     .k-switch {

@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/tabstrip/_layout.scss";
 
-@include exports( "tabstrip/layout/material" ) {
+
+@mixin kendo-tabstrip--layout() {
+
+    @include kendo-tabstrip--layout-base();
 
     .k-tabstrip-items {
         text-transform: uppercase;

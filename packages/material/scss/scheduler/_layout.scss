@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/scheduler/_layout.scss";
 
-@include exports("scheduler/layout/material") {
+
+@mixin kendo-scheduler--layout() {
+
+    @include kendo-scheduler--layout-base();
 
 
     .k-scheduler-footer {
@@ -117,12 +120,6 @@
     .k-scheduler-layout-flex .k-scheduler-cell {
         min-height: $kendo-line-height-em;
     }
-}
-
-
-
-
-@include exports("scheduler-views/layout/material") {
 
     // Month view
     .k-scheduler-monthview {
@@ -130,13 +127,6 @@
             height: 85px;
         }
     }
-
-}
-
-
-
-
-@include exports("scheduler-edit-form/layout/material") {
 
 
     .k-scheduler-edit-form {

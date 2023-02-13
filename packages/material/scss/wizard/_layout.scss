@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/wizard/_layout.scss";
+
+
+@mixin kendo-wizard--layout() {
+    @include kendo-wizard--layout-base();
+}

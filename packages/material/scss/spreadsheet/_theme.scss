@@ -1,4 +1,7 @@
-@include exports("sreadsheet/theme/material") {
+@import "@progress/kendo-theme-default/scss/spreadsheet/_theme.scss";
+
+
+@mixin kendo-spreadsheet--theme() {
 
     // Spreadsheet
     .k-spreadsheet {
@@ -143,12 +146,6 @@
         border-color: $kendo-color-error transparent transparent $kendo-color-error;
     }
 
-}
-
-
-
-
-@include exports( "spreadsheet/filter/theme" ) {
 
     // Filter button
     .k-spreadsheet .k-filter-range {
@@ -196,12 +193,6 @@
         }
     }
 
-}
-
-
-
-
-@include exports( "spreadsheet/drawing/theme" ) {
 
     .k-spreadsheet-insert-image-dialog {
         border-color: $kendo-spreadsheet-insert-image-dialog-preview-border;
@@ -234,12 +225,6 @@
         background: $kendo-spreadsheet-drawing-anchor-bg;
     }
 
-}
-
-
-
-
-@include exports( "spreadsheet/tools/theme" ) {
 
     .k-spreadsheet-popup {
 
@@ -264,12 +249,6 @@
 
     }
 
-}
-
-
-
-
-@include exports("spreadsheet/rtl/theme") {
 
     .k-rtl .k-spreadsheet,
     .k-spreadsheet[dir="rtl"],

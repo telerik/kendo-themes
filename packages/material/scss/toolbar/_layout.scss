@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/toolbar/_layout.scss";
 
-@include exports("toolbar/layout/material") {
+
+@mixin kendo-toolbar--layout() {
+
+    @include kendo-toolbar--layout-base();
 
     .k-toolbar {
 
@@ -21,15 +24,6 @@
             @include box-shadow( none );
         }
     }
-
-}
-
-
-
-
-// Remove once the Overflow Popup uses
-// the proper Menu rendering in all suites.
-@include exports("toolbar/layout/material/legacy") {
 
     // Overflow container
     .k-overflow-container {

@@ -1,7 +1,9 @@
 @import "@progress/kendo-theme-default/scss/gantt/_theme.scss";
 
-@include exports("gantt/theme/material") {
 
+@mixin kendo-gantt--theme() {
+
+    @include kendo-gantt--theme-base();
 
     // Timeline
     .k-gantt-timeline {

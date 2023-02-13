@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/skeleton/_theme.scss";
+
+
+@mixin kendo-skeleton--theme() {
+    @include kendo-skeleton--theme-base();
+}

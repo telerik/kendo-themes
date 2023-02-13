@@ -47,7 +47,10 @@
     }
 }
 
-@include exports("progressbar/theme/material") {
+@mixin kendo-progressbar--theme() {
+
+    @include kendo-progressbar--theme-base();
+
     @include kendo-progressbar-indeterminate-animation(horizontal);
     @include kendo-progressbar-indeterminate-animation(vertical);
 
@@ -59,4 +62,5 @@
             background: $kendo-progressbar-value-bg;
         }
     }
+
 }
