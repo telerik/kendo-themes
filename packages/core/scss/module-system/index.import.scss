@@ -46,3 +46,12 @@ $_imported: () !default;
     }
 }
 @include verify-dependencies();
+
+@mixin verify-rendered() {
+    @each $component in $kendo-components {
+        @if (k-list-index( $_imported, $component ) == null) {
+            // sass-lint:disable-block no-warn
+            @error "Module '#{$component}' has not been rendered.";
+        }
+    }
+}
