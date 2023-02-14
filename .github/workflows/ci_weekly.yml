@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  ci-nightly:
+  ci-weekly:
     runs-on: ubuntu-latest
 
     strategy:
@@ -79,10 +79,6 @@ jobs:
       - name: Build swatches using node-sass
         run: |
           npm run sass:swatches
-
-      - name: Test Contrast
-        run: |
-          npm run test-contrast
 
       - name: Build docs
         run: |
