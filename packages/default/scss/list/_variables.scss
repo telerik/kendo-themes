@@ -55,7 +55,7 @@ $kendo-list-header-font-weight: null !default;
 $kendo-list-item-padding-x: null !default;
 $kendo-list-sm-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-list-md-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-list-lg-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-list-lg-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list items, when no size is set.
 /// @group list
