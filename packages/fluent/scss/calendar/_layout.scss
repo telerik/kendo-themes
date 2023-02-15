@@ -261,7 +261,7 @@
             block-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_century-cell-size} );
         }
         .k-link {
-            text-align: left;
+            text-align: start;
         }
     }
 

@@ -14,7 +14,7 @@
         font-size: var( --kendo-pivotgrid-font-size, #{$kendo-pivotgrid-font-size} );
         font-family: var( --kendo-pivotgrid-font-family, #{$kendo-pivotgrid-font-family} );
         line-height: var( --kendo-pivotgrid-line-height, #{$kendo-pivotgrid-line-height} );
-        text-align: left;
+        text-align: start;
         vertical-align: top;
         display: grid;
         grid-template-columns: var( --kendo-pivotgrid-row-header-width, #{$kendo-pivotgrid-row-header-width} ) auto;
@@ -30,6 +30,7 @@
             border-collapse: separate;
             border-spacing: 0;
             outline: 0;
+            text-align: inherit;
             empty-cells: show;
         }
 
@@ -39,6 +40,7 @@
         tr,
         td {
             border-color: inherit;
+            text-align: inherit;
         }
     }
 

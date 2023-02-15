@@ -237,7 +237,10 @@
 
         th {
             font-weight: bold;
-            text-align: left;
+            text-align: start;
+        }
+        td {
+            text-align: start;
         }
 
         // Give selected cells a blue overlay

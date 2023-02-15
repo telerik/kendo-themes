@@ -342,7 +342,7 @@
 
         th {
             border-width: 0 1px 1px 0;
-            text-align: right;
+            text-align: end;
         }
 
         .k-slot-cell,
@@ -389,7 +389,7 @@
         border-width: 0;
         border-style: solid;
         border-radius: $kendo-scheduler-event-border-radius;
-        text-align: left;
+        text-align: start;
         outline: 0;
         cursor: default;
         position: absolute;
@@ -692,7 +692,7 @@
         }
         .k-scheduler-table td {
             height: 80px;
-            text-align: right;
+            text-align: end;
         }
         .k-scheduler-body .k-scheduler-cell {
             min-height: 80px;
@@ -983,7 +983,6 @@
         }
 
         .k-event {
-            text-align: right;
             padding-right: 0;
             padding-left: $kendo-padding-md-x;
 

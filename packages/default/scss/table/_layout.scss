@@ -8,7 +8,7 @@
         border-style: solid;
         font-size: $kendo-table-font-size;
         line-height: $kendo-table-line-height;
-        text-align: left;
+        text-align: start;
         border-collapse: collapse;
         border-spacing: 0;
         empty-cells: show;
@@ -245,7 +245,6 @@
     [dir="rtl"] {
         &.k-table,
         .k-table {
-            text-align: right;
 
             .k-table-th,
             .k-table-td {

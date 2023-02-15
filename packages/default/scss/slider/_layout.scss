@@ -215,12 +215,12 @@
         flex-flow: column-reverse nowrap;
 
         .k-tick {
-            text-align: right;
+            text-align: end;
             margin-left: 2px;
         }
 
         .k-slider-topleft .k-tick {
-            text-align: left;
+            text-align: start;
         }
 
         // ticks
@@ -255,7 +255,7 @@
         // labels
 
         .k-label {
-            text-align: left;
+            text-align: start;
             left: 120%;
             top: 50%;
             transform: translateY(-50%);

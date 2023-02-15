@@ -61,7 +61,7 @@
         }
         .k-message-group:not(.k-alt) {
             align-items: flex-start;
-            text-align: left;
+            text-align: start;
 
             .k-message-time {
                 margin-inline-start: var( --kendo-chat-item-spacing-x, #{ $kendo-chat-item-spacing-x } );
@@ -83,7 +83,7 @@
         .k-message-group.k-alt {
             align-self: flex-end;
             align-items: flex-end;
-            text-align: right;
+            text-align: end;
 
             .k-message-time {
                 margin-inline-end: var( --kendo-chat-item-spacing-x, #{ $kendo-chat-item-spacing-x } );

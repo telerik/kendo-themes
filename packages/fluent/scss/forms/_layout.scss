@@ -223,7 +223,7 @@
 
         legend {
             font-size: var( --kendo-font-size-sm, #{$kendo-font-size-sm} );
-            text-align: left;
+            text-align: start;
             font-weight: 600;
             line-height: 1;
             margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-lg-y} ) * 2 );
@@ -235,12 +235,12 @@
         .k-form-field {
             display: flex;
             align-items: flex-start;
-            text-align: left;
+            text-align: start;
             margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-lg-y} ) * 2 );
 
             > span:not(.k-widget) {
                 width: var( --kendo-inline-form-element-width, #{$kendo-inline-form-element-width} );
-                text-align: right;
+                text-align: end;
                 line-height: var( --kendo-line-height, #{$kendo-line-height-md} );
                 padding-block: calc( #{$kendo-padding-md-y} + #{$kendo-input-border-width} );
                 padding-inline-end: var( --kendo-padding-x-lg, #{$kendo-padding-lg-x} );
@@ -294,7 +294,7 @@
         padding-block: calc( #{$kendo-input-md-padding-y} + #{$kendo-input-border-width} );
         width: 30%;
         line-height: var( --kendo-form-line-height, #{$kendo-form-line-height} );
-        text-align: right;
+        text-align: end;
         float: left;
         clear: both;
     }
