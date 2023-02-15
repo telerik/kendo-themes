@@ -227,7 +227,7 @@ k-color-tint($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L32-L34
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L37-L39
 @function k-color-tint($color, $level) {
     @return k-color-level( $color, -$level );
 }
@@ -265,7 +265,7 @@ k-color-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L45-L47
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L50-L52
 @function k-color-shade($color, $level) {
     @return k-color-level( $color, $level );
 }
@@ -297,7 +297,7 @@ k-try-shade($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L55-L63
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L60-L68
 @function k-try-shade($color, $level) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -335,7 +335,7 @@ k-try-tint($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L71-L79
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L76-L84
 @function k-try-tint($color, $level) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -373,7 +373,7 @@ k-try-darken($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L87-L94
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L92-L99
 @function k-try-darken($color, $level) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -410,7 +410,7 @@ k-try-lighten($color, $level) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L102-L109
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L107-L114
 @function k-try-lighten($color, $level) {
     $_dark-theme: if( k-meta-variable-exists( kendo-is-dark-theme ), $kendo-is-dark-theme, false );
 
@@ -453,7 +453,7 @@ k-rgba-to-mix($color, $bg) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L120-L124
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-manipulation.import.scss#L125-L129
 @function k-rgba-to-mix($color, $bg) {
     $percent: k-color-alpha( $color ) * 100%;
 
