@@ -778,15 +778,6 @@ This class could be assigned to elements which should be visually hidden, but re
 
 
 
-### `.#{$kendo-prefix}text-ellipsis`
-
-This is equivalent to `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;`.
-    @name .k-text-ellipsis
-    @group text
-
-
-
-
 ### `.k-user-select-none`
 
 This is equivalent to `user-select: none;`. The text of the element and its sub-elements is not selectable. Note that the Selection object can contain these elements.
