@@ -96,7 +96,7 @@
 
     .k-chart-tooltip td {
         width: auto;
-        text-align: left;
+        text-align: start;
         padding: $kendo-padding-sm-y $kendo-padding-sm-x;
         line-height: $kendo-line-height-md;
         vertical-align: middle;
@@ -361,7 +361,7 @@
 @include exports("dataviz/gauge/layout") {
 
     .k-gauge {
-        text-align: left;
+        text-align: start;
         position: relative;
     }
 

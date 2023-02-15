@@ -159,7 +159,7 @@
     // Pager info
     .k-pager-info {
         @extend %base-pager-section !optional;
-        text-align: right;
+        text-align: end;
         justify-content: flex-end;
         flex: 1 1 0%;
         order: 9;

@@ -98,7 +98,7 @@
 
     .k-chart-tooltip td {
         width: auto;
-        text-align: left;
+        text-align: start;
         padding-inline: var( --kendo-padding-x-sm, #{$kendo-padding-sm-x} );
         padding-block: var( --kendo-padding-y-sm, #{$kendo-padding-sm-y} );
         line-height: var( --kendo-chart-tooltip-line-height, #{$kendo-chart-tooltip-line-height} );
@@ -358,7 +358,7 @@
     }
 
     .k-gauge {
-        text-align: left;
+        text-align: start;
         position: relative;
     }
 

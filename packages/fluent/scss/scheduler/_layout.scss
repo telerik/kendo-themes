@@ -349,7 +349,7 @@
         th {
             border-inline-width: 0 1px;
             border-block-width: 0 1px;
-            text-align: right;
+            text-align: end;
         }
 
         .k-slot-cell,
@@ -674,7 +674,7 @@
 
         .k-scheduler-table td {
             height: 80px;
-            text-align: right;
+            text-align: end;
         }
 
         .k-scheduler-body .k-scheduler-cell {

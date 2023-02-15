@@ -57,7 +57,7 @@
         }
         .k-message-group:not(.k-alt) {
             align-items: flex-start;
-            text-align: left;
+            text-align: start;
 
             .k-message-time {
                 margin-left: $kendo-chat-item-spacing-x;
@@ -79,7 +79,7 @@
         .k-message-group.k-alt {
             align-self: flex-end;
             align-items: flex-end;
-            text-align: right;
+            text-align: end;
 
             .k-message-time {
                 margin-right: $kendo-chat-item-spacing-x;
@@ -483,8 +483,6 @@
 
         // Text align
         .k-message-group:not(.k-alt) {
-            text-align: right;
-
             .k-message-time {
                 margin-left: 0;
                 margin-right: $kendo-chat-item-spacing-x;
@@ -497,8 +495,6 @@
             }
         }
         .k-message-group.k-alt {
-            text-align: left;
-
             .k-message-time {
                 margin-right: 0;
                 margin-left: $kendo-chat-item-spacing-x;

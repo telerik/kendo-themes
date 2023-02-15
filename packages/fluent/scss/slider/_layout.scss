@@ -266,11 +266,11 @@
 
         // Slider ticks
         .k-tick {
-            text-align: right;
+            text-align: end;
             margin-left: 2px;
         }
         .k-slider-topleft .k-tick {
-            text-align: left;
+            text-align: start;
         }
 
         .k-tick { background-position: -94px center; }
@@ -298,7 +298,7 @@
 
         // Slider labels
         .k-label {
-            text-align: left;
+            text-align: start;
             inset-inline-start: 120%;
             inset-inline-end: auto;
             top: 50%;

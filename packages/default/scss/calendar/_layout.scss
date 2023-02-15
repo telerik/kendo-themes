@@ -51,7 +51,7 @@
         font-size: $kendo-calendar-caption-font-size;
         line-height: $kendo-calendar-caption-line-height;
         text-transform: none;
-        text-align: left;
+        text-align: start;
         font-weight: $kendo-calendar-caption-font-weight;
         cursor: default;
     }
@@ -222,7 +222,7 @@
             block-size: var( --INTERNAL--kendo-calendar-cell-size, #{$_century-cell-size} );
         }
         .k-calendar-cell-inner {
-            text-align: left;
+            text-align: start;
         }
     }
 
@@ -499,11 +499,6 @@
         .k-content.k-scrollable,
         .k-calendar-content.k-scrollable {
             @include hide-scrollbar("left");
-        }
-
-        tbody th,
-        .k-calendar-tbody .k-calendar-th {
-            text-align: right;
         }
 
     }

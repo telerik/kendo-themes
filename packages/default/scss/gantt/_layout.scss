@@ -811,10 +811,6 @@
         }
 
         .k-gantt-timeline {
-
-            .k-gantt-tasks tbody {
-                text-align: left;
-            }
             .k-header {
                 border-width: 0 $kendo-grid-cell-vertical-border-width 1px 0;
             }
@@ -834,7 +830,7 @@
         }
 
         .k-task-content {
-            text-align: right;
+            text-align: end;
         }
 
         .k-task-complete {

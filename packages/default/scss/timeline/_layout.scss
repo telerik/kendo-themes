@@ -161,7 +161,7 @@
             padding-right: $kendo-timeline-items-padding;
             margin-top: $kendo-timeline-track-event-offset;
             transform: translate(-100%, -50%);
-            text-align: right;
+            text-align: end;
         }
 
         .k-timeline-event {
@@ -243,7 +243,7 @@
                     flex-direction: row-reverse;
 
                     .k-timeline-date-wrap {
-                        text-align: left;
+                        text-align: start;
                         padding-right: 0;
                         padding-left: $kendo-timeline-items-padding;
                     }
