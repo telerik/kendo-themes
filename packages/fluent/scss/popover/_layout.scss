@@ -40,7 +40,7 @@
 
     // Header
     .k-popover-header {
-        @extend .k-card-title;
+        @extend .k-card-title !optional;
         border-width: 0 0 var( --kendo-popover-header-border-width, #{$kendo-popover-header-border-width} );
         border-style: var( --kendo-popover-header-border-style, #{$kendo-popover-header-border-style} );
         padding-inline: var( --kendo-popover-header-padding-x, #{$kendo-popover-header-padding-x} );

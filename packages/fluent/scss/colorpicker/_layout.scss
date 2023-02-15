@@ -9,7 +9,7 @@
 
     // Alias
     .k-colorpicker {
-        @extend .k-color-picker;
+        @extend .k-color-picker !optional;
     }
 
 }

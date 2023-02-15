@@ -22,7 +22,7 @@
 
     // Angular specific
     kendo-daterange {
-        // @extend .k-daterangepicker;
+        // @extend .k-daterangepicker !optional;
     }
 
 
@@ -37,7 +37,7 @@
 
     // Alias
     .k-daterangepicker {
-        @extend .k-daterange-picker;
+        @extend .k-daterange-picker !optional;
     }
 
 }

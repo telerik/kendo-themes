@@ -362,7 +362,7 @@
     [dir="rtl"] .k-slider,
     .k-slider.k-rtl,
     .k-rtl .k-slider {
-        @extend .k-slider-rtl;
+        @extend .k-slider-rtl !optional;
     }
 
 
@@ -379,14 +379,14 @@
 
 
     // Aliases
-    .k-slider .k-button { @extend .k-slider-button; }
-    .k-tick { @extend .k-slider-tick; }
-    .k-draghandle { @extend .k-slider-thumb; }
-    .k-draghandle-start { @extend .k-slider-thumb-start; }
-    .k-draghandle-end { @extend .k-slider-thumb-end; }
-    .k-slider-horizontal { @extend .k-horizontal-slider; }
-    .k-slider-vertical { @extend .k-vertical-slider; }
-    .k-tick-horizontal { @extend .k-slider-tick-vertical; }
-    .k-tick-vertical { @extend .k-slider-tick-horizontal; }
+    .k-slider .k-button { @extend .k-slider-button !optional; }
+    .k-tick { @extend .k-slider-tick !optional; }
+    .k-draghandle { @extend .k-slider-thumb !optional; }
+    .k-draghandle-start { @extend .k-slider-thumb-start !optional; }
+    .k-draghandle-end { @extend .k-slider-thumb-end !optional; }
+    .k-slider-horizontal { @extend .k-horizontal-slider !optional; }
+    .k-slider-vertical { @extend .k-vertical-slider !optional; }
+    .k-tick-horizontal { @extend .k-slider-tick-vertical !optional; }
+    .k-tick-vertical { @extend .k-slider-tick-horizontal !optional; }
 
 }

@@ -309,7 +309,7 @@
 
     // Alias
     .k-link {
-        @extend .k-calendar-cell-inner;
+        @extend .k-calendar-cell-inner !optional;
     }
 }
 

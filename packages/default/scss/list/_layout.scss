@@ -118,7 +118,7 @@
         }
     }
     .k-list-optionlabel {
-        @extend .k-list-item;
+        @extend .k-list-item !optional;
     }
 
 

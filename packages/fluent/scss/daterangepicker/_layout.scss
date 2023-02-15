@@ -35,6 +35,6 @@
 
     // Alias
     .k-daterangepicker {
-        @extend .k-daterange-picker;
+        @extend .k-daterange-picker !optional;
     }
 }

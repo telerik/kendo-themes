@@ -126,7 +126,7 @@
 
     // Form Buttons Container
     .k-form-buttons {
-        @extend .k-actions;
+        @extend .k-actions !optional;
         padding: 0;
         overflow: visible;
     }

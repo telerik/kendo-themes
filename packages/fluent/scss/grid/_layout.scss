@@ -331,7 +331,7 @@
 
     // Alias used in jQuery
     .k-reorder-cue {
-        @extend .k-grouping-dropclue;
+        @extend .k-grouping-dropclue !optional;
     }
 
     // Grid header / footer

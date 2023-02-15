@@ -79,7 +79,7 @@
 
     // Pager items
     .k-pager-nav {
-        @extend %base-pager-item;
+        @extend %base-pager-item !optional;
         @include border-radius( var( --kendo-pager-item-border-radius, #{$kendo-pager-item-border-radius} ) );
     }
 
@@ -127,7 +127,7 @@
 
     // Pager input
     .k-pager-input {
-        @extend %base-pager-section;
+        @extend %base-pager-section !optional;
 
         .k-textbox {
             margin-inline: 1ex;
@@ -139,7 +139,7 @@
 
     // Pager sizes
     .k-pager-sizes {
-        @extend %base-pager-section;
+        @extend %base-pager-section !optional;
 
         .k-dropdown-list,
         > select {
@@ -156,7 +156,7 @@
 
     // Pager info
     .k-pager-info {
-        @extend %base-pager-section;
+        @extend %base-pager-section !optional;
         text-align: right;
         justify-content: flex-end;
         flex: 1 1 0%;
@@ -178,7 +178,7 @@
         // Show native select
         .k-pager-numbers-wrap {
             select.k-dropdown-list {
-                @extend %base-pager-section;
+                @extend %base-pager-section !optional;
                 @if ($kendo-pager-section-spacing) {
                     margin-left: $kendo-pager-section-spacing;
                     margin-right: $kendo-pager-section-spacing;
