@@ -283,7 +283,7 @@
     .k-button {
 
         &::before {
-            @extend .k-button-overlay;
+            @extend .k-button-overlay !optional;
         }
 
         // Hovered state
