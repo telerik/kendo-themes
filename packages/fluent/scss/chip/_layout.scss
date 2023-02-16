@@ -34,6 +34,11 @@
             display: none !important; // sass-lint:disable-line no-important
         }
 
+        // Adjustment for kendo-icon-wrapper
+        .k-icon-wrapper-host {
+            display: initial;
+        }
+
         &:hover,
         &:focus {
             outline: 0;
