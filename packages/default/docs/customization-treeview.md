@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
         item-padding-y: $kendo-treeview-lg-item-padding-y
     )
 )</code></td>
-    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 8px, item-padding-y: 2px), md: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 8px, item-padding-y: 4px), lg: (font-size: 16px, line-height: 1.5, item-padding-x: 12px, item-padding-y: 8px))</code></td>
+    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 8px, item-padding-y: 2px), md: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 8px, item-padding-y: 4px), lg: (font-size: 16px, line-height: 1.5, item-padding-x: 8px, item-padding-y: 8px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the treeview.</div></div>

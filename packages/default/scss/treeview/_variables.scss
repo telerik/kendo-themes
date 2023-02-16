@@ -24,7 +24,7 @@ $kendo-treeview-indent: 16px !default;
 $kendo-treeview-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-treeview-sm-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-treeview-md-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-treeview-lg-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-treeview-lg-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
 $kendo-treeview-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
