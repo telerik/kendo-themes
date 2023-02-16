@@ -4,7 +4,8 @@
 
     .k-listbox {
         .k-item {
-            padding: $kendo-listbox-item-padding-y $kendo-listbox-item-padding-x;
+            padding-block: $kendo-listbox-item-padding-y;
+            padding-inline: $kendo-listbox-item-padding-x;
         }
     }
 

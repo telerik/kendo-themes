@@ -50,7 +50,8 @@
 
     // Header
     .k-card-header {
-        padding: $kendo-card-header-padding-y $kendo-card-header-padding-x;
+        padding-block: $kendo-card-header-padding-y;
+        padding-inline: $kendo-card-header-padding-x;
         border-width: 0 0 $kendo-card-header-border-width;
         border-style: solid;
         outline: 0;
@@ -72,7 +73,8 @@
 
     // Footer
     .k-card-footer {
-        padding: $kendo-card-footer-padding-y $kendo-card-footer-padding-x;
+        padding-block: $kendo-card-footer-padding-y;
+        padding-inline: $kendo-card-footer-padding-x;
         border-width: $kendo-card-footer-border-width 0 0;
         border-style: solid;
         outline: 0;
@@ -82,7 +84,8 @@
 
     // Body
     .k-card-body {
-        padding: $kendo-card-body-padding-y $kendo-card-body-padding-x;
+        padding-block: $kendo-card-body-padding-y;
+        padding-inline: $kendo-card-body-padding-x;
         outline: 0;
         flex: 1 1 auto;
 
@@ -185,7 +188,8 @@
 
     // Card actions
     .k-card-actions {
-        padding: $kendo-card-actions-padding-y $kendo-card-actions-padding-x;
+        padding-block: $kendo-card-actions-padding-y;
+        padding-inline: $kendo-card-actions-padding-x;
         border-width: 0;
         border-style: solid;
         border-color: inherit;

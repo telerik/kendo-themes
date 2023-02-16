@@ -26,7 +26,8 @@
     // Time selector header
     .k-time-header,
     .k-time-selector-header {
-        padding: $kendo-time-selector-header-padding-y $kendo-time-selector-header-padding-x;
+        padding-block: $kendo-time-selector-header-padding-y;
+        padding-inline: $kendo-time-selector-header-padding-x;
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -35,7 +36,8 @@
 
         .k-title,
         .k-time-selector-header-title {
-            padding: $kendo-button-padding-y $kendo-button-padding-x;
+            padding-block: $kendo-button-padding-y;
+            padding-inline: $kendo-button-padding-x;
             font-weight: bold;
             display: inline-block;
         }
@@ -189,7 +191,8 @@
     // Time list item
     .k-time-list-item,
     .k-time-list .k-item {
-        padding: $kendo-time-list-item-padding-y $kendo-time-list-item-padding-x;
+        padding-block: $kendo-time-list-item-padding-y;
+        padding-inline: $kendo-time-list-item-padding-x;
     }
 
 
@@ -231,7 +234,8 @@
 
             .k-time-list-item,
             .k-time-list .k-item {
-                padding: $_list-item-padding-y $_list-item-padding-x;
+                padding-block: $_list-item-padding-y;
+                padding-inline: $_list-item-padding-x;
             }
         }
     }

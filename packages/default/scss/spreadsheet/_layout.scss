@@ -122,7 +122,8 @@
         flex: 1;
 
         > .k-i-formula-fx {
-            padding: 0 $kendo-padding-md-y;
+            padding-block: 0;
+            padding-inline: $kendo-padding-md-y;
             box-sizing: content-box;
             border-width: 0 1px 0 0;
             border-style: solid;
@@ -137,7 +138,8 @@
         }
 
         .k-spreadsheet-formula-input {
-            padding: $kendo-input-padding-y $kendo-input-padding-x;
+            padding-block: $kendo-input-padding-y;
+            padding-inline: $kendo-input-padding-x;
             line-height: $kendo-input-line-height;
 
             &.k-spreadsheet-array-formula {
@@ -177,7 +179,8 @@
         min-width: 100px;
 
         .k-item {
-            padding: $kendo-list-md-item-padding-y $kendo-list-md-item-padding-x;
+            padding-block: $kendo-list-md-item-padding-y;
+            padding-inline: $kendo-list-md-item-padding-x;
         }
     }
     .k-syntax-func,
@@ -188,7 +191,8 @@
 
     // Cell editor
     .k-spreadsheet-cell-editor {
-        padding: 0 3px;
+        padding-block: 0;
+        padding-inline: 3px;
         line-height: 20px;
         display: none;
         overflow: hidden;
@@ -626,7 +630,8 @@
         }
         .k-details-summary,
         .k-columnmenu-item {
-            padding: $kendo-menu-popup-item-padding-y $kendo-menu-popup-item-padding-x;
+            padding-block: $kendo-menu-popup-item-padding-y;
+            padding-inline: $kendo-menu-popup-item-padding-x;
             display: flex;
             align-items: center;
             cursor: pointer;

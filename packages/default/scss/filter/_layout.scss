@@ -33,7 +33,8 @@
         .k-filter-toolbar {
             display: inline-flex;
             position: relative;
-            padding: $kendo-filter-padding-y 0;
+            padding-block: $kendo-filter-padding-y;
+            padding-inline: 0;
 
             &::before {
                 content: "";

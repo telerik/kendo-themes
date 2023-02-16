@@ -15,7 +15,8 @@
         overflow: hidden;
 
         .k-datetime-buttongroup {
-            padding: $kendo-actions-padding-y $kendo-actions-padding-x;
+            padding-block: $kendo-actions-padding-y;
+            padding-inline: $kendo-actions-padding-x;
         }
 
         .k-calendar,

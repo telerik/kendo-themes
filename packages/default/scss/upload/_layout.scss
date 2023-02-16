@@ -26,7 +26,8 @@
         // Drop zone
         .k-dropzone,
         .k-upload-dropzone {
-            padding: $kendo-upload-dropzone-padding-y $kendo-upload-dropzone-padding-x;
+            padding-block: $kendo-upload-dropzone-padding-y;
+            padding-inline: $kendo-upload-dropzone-padding-x;
             border-width: 0;
             text-align: end;
             display: flex;

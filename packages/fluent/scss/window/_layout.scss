@@ -47,7 +47,8 @@
 
     // Title bar title text
     .k-window-title {
-        padding: .5em 0;
+        padding-block: .5em;
+        padding-inline: 0;
         margin: -.5em 0;
         font-size: var( --kendo-window-title-font-size, #{$kendo-window-title-font-size} );
         line-height: var( --kendo-window-title-line-height, #{$kendo-window-title-line-height} );

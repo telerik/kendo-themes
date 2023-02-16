@@ -2,7 +2,8 @@
 
     // TaskBoard
     .k-taskboard {
-        padding: $kendo-taskboard-padding-y $kendo-taskboard-padding-x;
+        padding-block: $kendo-taskboard-padding-y;
+        padding-inline: $kendo-taskboard-padding-x;
         box-sizing: border-box;
         font-size: $kendo-taskboard-font-size;
         font-family: $kendo-taskboard-font-family;
@@ -20,7 +21,8 @@
 
     // Toolbar
     .k-taskboard-toolbar {
-        padding: $kendo-taskboard-toolbar-padding-y $kendo-taskboard-toolbar-padding-x;
+        padding-block: $kendo-taskboard-toolbar-padding-y;
+        padding-inline: $kendo-taskboard-toolbar-padding-x;
         border-width: 0;
         box-shadow: none;
         background: none;
@@ -58,7 +60,8 @@
     }
 
     .k-taskboard-column-header {
-        padding: $kendo-taskboard-column-header-padding-y $kendo-taskboard-column-header-padding-x;
+        padding-block: $kendo-taskboard-column-header-padding-y;
+        padding-inline: $kendo-taskboard-column-header-padding-x;
         font-weight: $kendo-taskboard-column-header-font-weight;
         display: flex;
         flex-direction: row;
@@ -75,14 +78,16 @@
 
     .k-taskboard-column-cards-container {
         margin-bottom: $kendo-taskboard-column-container-spacing-y;
-        padding: $kendo-taskboard-column-container-padding-y $kendo-taskboard-column-container-padding-x;
+        padding-block: $kendo-taskboard-column-container-padding-y;
+        padding-inline: $kendo-taskboard-column-container-padding-x;
         outline: none;
         overflow: auto;
         flex: 1 1 auto;
     }
 
     .k-taskboard-column-cards {
-        padding: $kendo-taskboard-column-cards-padding-y $kendo-taskboard-column-cards-padding-x;
+        padding-block: $kendo-taskboard-column-cards-padding-y;
+        padding-inline: $kendo-taskboard-column-cards-padding-x;
         min-height: 100%;
         display: flex;
         flex-direction: column;
@@ -108,7 +113,8 @@
 
     // Preview/Edit Pane
     .k-taskboard-pane {
-        padding: $kendo-taskboard-pane-padding-y $kendo-taskboard-pane-padding-x;
+        padding-block: $kendo-taskboard-pane-padding-y;
+        padding-inline: $kendo-taskboard-pane-padding-x;
         width: $kendo-taskboard-pane-width;
         border-width: $kendo-taskboard-pane-border-width;
         border-style: solid;
@@ -123,7 +129,8 @@
     }
 
     .k-taskboard-pane-header {
-        padding: $kendo-taskboard-pane-header-padding-y $kendo-taskboard-pane-header-padding-x;
+        padding-block: $kendo-taskboard-pane-header-padding-y;
+        padding-inline: $kendo-taskboard-pane-header-padding-x;
         font-weight: $kendo-taskboard-pane-header-font-weight;
         display: flex;
         flex-direction: row;
@@ -141,13 +148,15 @@
     }
 
     .k-taskboard-pane-content {
-        padding: $kendo-taskboard-pane-content-padding-y $kendo-taskboard-pane-content-padding-x;
+        padding-block: $kendo-taskboard-pane-content-padding-y;
+        padding-inline: $kendo-taskboard-pane-content-padding-x;
         overflow: auto;
         flex: 1 1 auto;
     }
 
     .k-taskboard-pane-actions {
-        padding: $kendo-taskboard-pane-actions-padding-y $kendo-taskboard-pane-actions-padding-x;
+        padding-block: $kendo-taskboard-pane-actions-padding-y;
+        padding-inline: $kendo-taskboard-pane-actions-padding-x;
     }
 
     .k-taskboard-pane-start {
@@ -167,7 +176,8 @@
         .k-card-header
         .k-card-body,
         .k-card-footer {
-            padding: $kendo-taskboard-card-padding-y $kendo-taskboard-card-padding-x;
+            padding-block: $kendo-taskboard-card-padding-y;
+            padding-inline: $kendo-taskboard-card-padding-x;
         }
 
         .k-card-header {

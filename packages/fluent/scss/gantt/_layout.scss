@@ -85,7 +85,8 @@
             }
             .k-grid-header th:last-child {
                 .k-header {
-                    padding: $kendo-grid-header-padding-y $kendo-grid-header-padding-x;
+                    padding-block: $kendo-grid-header-padding-y;
+                    padding-inline: $kendo-grid-header-padding-x;
                     border-width: 0 0 1px $kendo-grid-cell-border-width-y;
                     white-space: nowrap;
                 }
@@ -299,7 +300,8 @@
             overflow-x: scroll;
         }
         .k-header {
-            padding: $kendo-grid-header-padding-y $kendo-grid-header-padding-x;
+            padding-block: $kendo-grid-header-padding-y;
+            padding-inline: $kendo-grid-header-padding-x;
             border-block-start-width: 0;
             border-block-end-width: 1px;
             border-inline-start-width: $kendo-grid-cell-border-width-y;
@@ -390,7 +392,8 @@
 
     .k-task-wrap {
         margin: 0 -21px;
-        padding: 5px 21px;
+        padding-block: 5px;
+        padding-inline: 21px;
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -605,7 +608,8 @@
 
     // Task tooltip
     .k-task-details {
-        padding: $kendo-padding-md-y $kendo-padding-md-x;
+        padding-block: $kendo-padding-md-y;
+        padding-inline: $kendo-padding-md-x;
         white-space: nowrap;
 
         strong {

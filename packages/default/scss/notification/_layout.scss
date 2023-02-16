@@ -22,7 +22,8 @@
 
     .k-notification {
         @include border-radius( $kendo-notification-border-radius );
-        padding: $kendo-notification-padding-y $kendo-notification-padding-x;
+        padding-block: $kendo-notification-padding-y;
+        padding-inline: $kendo-notification-padding-x;
         border-width: $kendo-notification-border-width;
         border-style: solid;
         box-sizing: border-box;

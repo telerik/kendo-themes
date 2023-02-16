@@ -3,21 +3,25 @@
 
     // Split button arrow
     .k-split-button .k-split-button-arrow {
-        padding: $kendo-split-button-arrow-padding-y $kendo-split-button-arrow-padding-x;
+        padding-block: $kendo-split-button-arrow-padding-y;
+        padding-inline: $kendo-split-button-arrow-padding-x;
         width: auto;
         aspect-ratio: auto;
         flex: none;
 
         &.k-button-sm {
-            padding: $kendo-split-button-sm-arrow-padding-y $kendo-split-button-sm-arrow-padding-x;
+            padding-block: $kendo-split-button-sm-arrow-padding-y;
+            padding-inline: $kendo-split-button-sm-arrow-padding-x;
         }
 
         &.k-button-md {
-            padding: $kendo-split-button-md-arrow-padding-y $kendo-split-button-md-arrow-padding-x;
+            padding-block: $kendo-split-button-md-arrow-padding-y;
+            padding-inline: $kendo-split-button-md-arrow-padding-x;
         }
 
         &.k-button-lg {
-            padding: $kendo-split-button-lg-arrow-padding-y $kendo-split-button-lg-arrow-padding-x;
+            padding-block: $kendo-split-button-lg-arrow-padding-y;
+            padding-inline: $kendo-split-button-lg-arrow-padding-x;
         }
 
         .k-button-icon {

@@ -46,7 +46,8 @@
 
         // Attribution
         .k-attribution {
-            padding: $kendo-map-attribution-padding-y $kendo-map-attribution-padding-x;
+            padding-block: $kendo-map-attribution-padding-y;
+            padding-inline: $kendo-map-attribution-padding-x;
             border-width: 0;
             font-size: $kendo-map-attribution-font-size;
             z-index: 1000;

@@ -30,7 +30,8 @@
             scroll-behavior: smooth;
         }
         .k-message-list-content {
-            padding: $kendo-chat-message-list-padding-y $kendo-chat-message-list-padding-x;
+            padding-block: $kendo-chat-message-list-padding-y;
+            padding-inline: $kendo-chat-message-list-padding-x;
             width: 100%;
             box-sizing: border-box;
             position: relative;
@@ -137,7 +138,8 @@
         // Bubble
         .k-bubble {
             @include border-radius( $kendo-chat-bubble-border-radius );
-            padding: $kendo-chat-bubble-padding-y $kendo-chat-bubble-padding-x;
+            padding-block: $kendo-chat-bubble-padding-y;
+            padding-inline: $kendo-chat-bubble-padding-x;
             border-width: 1px;
             border-style: solid;
             line-height: $kendo-chat-bubble-line-height;
@@ -225,7 +227,8 @@
         @include border-radius( 100px );
         margin-right: $kendo-chat-quick-reply-spacing;
         margin-bottom: k-math-div( $kendo-chat-quick-reply-spacing, 2 );
-        padding: $kendo-chat-quick-reply-padding-y $kendo-chat-quick-reply-padding-x;
+        padding-block: $kendo-chat-quick-reply-padding-y;
+        padding-inline: $kendo-chat-quick-reply-padding-x;
         border-width: 1px;
         border-style: solid;
         line-height: $kendo-chat-quick-reply-line-height;
@@ -416,7 +419,8 @@
 
     .k-chat-toolbar,
     .k-chat .k-toolbar-box {
-        padding: $kendo-chat-toolbar-padding-y $kendo-chat-toolbar-padding-x;
+        padding-block: $kendo-chat-toolbar-padding-y;
+        padding-inline: $kendo-chat-toolbar-padding-x;
         width: 100%;
         border-width: 1px 0 0;
         box-sizing: border-box;

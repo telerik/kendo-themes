@@ -31,7 +31,8 @@
     // Inline editor
     .k-editor-inline {
         @include border-radius( $kendo-border-radius-md );
-        padding: $kendo-padding-sm-y $kendo-padding-sm-x;
+        padding-block: $kendo-padding-sm-y;
+        padding-inline: $kendo-padding-sm-x;
         border: 1px solid transparent;
         word-wrap: break-word;
         overflow: auto;
@@ -229,7 +230,8 @@
         th {
             min-width: 1em;
             border: 1px solid;
-            padding: 3px 5px;
+            padding-block: 3px;
+            padding-inline: 5px;
             vertical-align: top;
             box-sizing: border-box;
             position: relative;
@@ -261,7 +263,8 @@
         flex: 1 1 auto;
         overflow: auto;
         margin: (-$kendo-window-inner-padding-y) (-$kendo-window-inner-padding-x);
-        padding: $kendo-window-inner-padding-y $kendo-window-inner-padding-x;
+        padding-block: $kendo-window-inner-padding-y;
+        padding-inline: $kendo-window-inner-padding-x;
     }
 
 
@@ -416,7 +419,8 @@
             height: 390px;
             max-height: 50vh;
             margin: 0 0 k-map-get( $kendo-spacing, 4 ) 0;
-            padding: $kendo-padding-md-y $kendo-padding-md-x;
+            padding-block: $kendo-padding-md-y;
+            padding-inline: $kendo-padding-md-x;
             border-top-width: 0;
             overflow: auto;
         }
@@ -424,7 +428,8 @@
         .k-tile {
             width: 33%;
             height: 90px;
-            padding: $kendo-padding-md-y $kendo-padding-md-x;
+            padding-block: $kendo-padding-md-y;
+            padding-inline: $kendo-padding-md-x;
             box-sizing: border-box;
             white-space: nowrap;
             overflow: hidden;
@@ -543,7 +548,8 @@
 
             td {
                 min-width: 1px;
-                padding: $kendo-padding-sm-y $kendo-padding-sm-x;
+                padding-block: $kendo-padding-sm-y;
+                padding-inline: $kendo-padding-sm-x;
             }
         }
 

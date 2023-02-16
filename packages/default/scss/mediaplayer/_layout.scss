@@ -31,7 +31,8 @@
 
     // Title bar
     .k-mediaplayer-titlebar {
-        padding: $kendo-media-player-titlebar-padding-y $kendo-media-player-titlebar-padding-x;
+        padding-block: $kendo-media-player-titlebar-padding-y;
+        padding-inline: $kendo-media-player-titlebar-padding-x;
         position: absolute;
         z-index: 2;
         top: 0;

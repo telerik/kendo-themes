@@ -49,7 +49,8 @@
 
     // Menu link
     .k-menu-link {
-        padding: $kendo-menu-item-padding-y $kendo-menu-item-padding-x;
+        padding-block: $kendo-menu-item-padding-y;
+        padding-inline: $kendo-menu-item-padding-x;
         outline: 0;
         color: inherit;
         display: flex;
@@ -111,7 +112,8 @@
         }
 
         > .k-menu-item > .k-menu-link {
-            padding: $kendo-menu-popup-item-padding-y $kendo-menu-popup-item-padding-x;
+            padding-block: $kendo-menu-popup-item-padding-y;
+            padding-inline: $kendo-menu-popup-item-padding-x;
             padding-right: $kendo-menu-popup-item-padding-end;
         }
 
@@ -133,7 +135,8 @@
 
     // Menu popup
     .k-menu-popup {
-        padding: $kendo-menu-popup-padding-y $kendo-menu-popup-padding-x;
+        padding-block: $kendo-menu-popup-padding-y;
+        padding-inline: $kendo-menu-popup-padding-x;
         box-sizing: border-box;
         border-width: $kendo-menu-popup-border-width;
         border-style: solid;
@@ -187,7 +190,8 @@
         }
 
         .k-menu-link {
-            padding: $kendo-menu-popup-sm-item-padding-y $kendo-menu-popup-sm-item-padding-x;
+            padding-block: $kendo-menu-popup-sm-item-padding-y;
+            padding-inline: $kendo-menu-popup-sm-item-padding-x;
             padding-inline-end: $kendo-menu-popup-sm-item-padding-end;
         }
 
@@ -207,7 +211,8 @@
         }
 
         .k-menu-link {
-            padding: $kendo-menu-popup-md-item-padding-y $kendo-menu-popup-md-item-padding-x;
+            padding-block: $kendo-menu-popup-md-item-padding-y;
+            padding-inline: $kendo-menu-popup-md-item-padding-x;
             padding-inline-end: $kendo-menu-popup-md-item-padding-end;
         }
 
@@ -227,7 +232,8 @@
         }
 
         .k-menu-link {
-            padding: $kendo-menu-popup-lg-item-padding-y $kendo-menu-popup-lg-item-padding-x;
+            padding-block: $kendo-menu-popup-lg-item-padding-y;
+            padding-inline: $kendo-menu-popup-lg-item-padding-x;
             padding-inline-end: $kendo-menu-popup-lg-item-padding-end;
         }
 
@@ -247,12 +253,14 @@
     }
     .k-context-menu {
         margin: 0;
-        padding: $kendo-menu-popup-padding-y $kendo-menu-popup-padding-x;
+        padding-block: $kendo-menu-popup-padding-y;
+        padding-inline: $kendo-menu-popup-padding-x;
         border-width: $kendo-menu-popup-border-width;
         border-style: solid;
 
         &.k-menu-horizontal {
-            padding: $kendo-menu-popup-padding-x $kendo-menu-popup-padding-y;
+            padding-block: $kendo-menu-popup-padding-x;
+            padding-inline: $kendo-menu-popup-padding-y;
         }
     }
     .k-animation-container .k-context-menu.k-menu-horizontal {

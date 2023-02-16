@@ -85,7 +85,8 @@
         @include border-radius( $kendo-border-radius-md );
         font-size: $kendo-chart-tooltip-font-size;
         line-height: $kendo-line-height-md;
-        padding: $kendo-tooltip-padding-y $kendo-tooltip-padding-x;
+        padding-block: $kendo-tooltip-padding-y;
+        padding-inline: $kendo-tooltip-padding-x;
     }
 
     .k-chart-tooltip th {
@@ -97,7 +98,8 @@
     .k-chart-tooltip td {
         width: auto;
         text-align: start;
-        padding: $kendo-padding-sm-y $kendo-padding-sm-x;
+        padding-block: $kendo-padding-sm-y;
+        padding-inline: $kendo-padding-sm-x;
         line-height: $kendo-line-height-md;
         vertical-align: middle;
     }
@@ -303,7 +305,8 @@
 
         // Title
         .k-treemap-title {
-            padding: $kendo-padding-sm-y $kendo-padding-sm-x;
+            padding-block: $kendo-padding-sm-y;
+            padding-inline: $kendo-padding-sm-x;
             border-width: 0 0 1px;
             border-style: solid;
             border-color: inherit;
@@ -312,7 +315,8 @@
             background-repeat: repeat-x;
         }
         .k-treemap-title-vertical {
-            padding: $kendo-padding-sm-x $kendo-padding-sm-y;
+            padding-block: $kendo-padding-sm-x;
+            padding-inline: $kendo-padding-sm-y;
             width: $kendo-line-height-em;
             white-space: nowrap;
             overflow: hidden;

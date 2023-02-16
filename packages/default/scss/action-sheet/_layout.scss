@@ -82,7 +82,8 @@
 
     // Actionsheet titlebar
     .k-actionsheet-titlebar {
-        padding: $kendo-actionsheet-titlebar-padding-y $kendo-actionsheet-titlebar-padding-x;
+        padding-block: $kendo-actionsheet-titlebar-padding-y;
+        padding-inline: $kendo-actionsheet-titlebar-padding-x;
         border-width: 0;
         border-bottom-width: if( $kendo-actionsheet-titlebar-border-width, $kendo-actionsheet-titlebar-border-width, null );
         border-style: solid;
@@ -147,7 +148,8 @@
     }
     .k-actionsheet-action {
         margin: 0;
-        padding: $kendo-actionsheet-item-padding-y $kendo-actionsheet-item-padding-x;
+        padding-block: $kendo-actionsheet-item-padding-y;
+        padding-inline: $kendo-actionsheet-item-padding-x;
         min-height: $kendo-actionsheet-item-min-height;
         box-sizing: border-box;
         color: inherit;
@@ -242,16 +244,19 @@
         flex-flow: column nowrap;
 
         .k-actionsheet-titlebar {
-            padding: $kendo-adaptive-actionsheet-titlebar-padding-y $kendo-adaptive-actionsheet-titlebar-padding-x;
+            padding-block: $kendo-adaptive-actionsheet-titlebar-padding-y;
+            padding-inline: $kendo-adaptive-actionsheet-titlebar-padding-x;
             border-bottom-width: $kendo-adaptive-actionsheet-titlebar-border-width;
         }
 
         .k-actionsheet-content {
-            padding: $kendo-adaptive-actionsheet-content-padding-y $kendo-adaptive-actionsheet-content-padding-x;
+            padding-block: $kendo-adaptive-actionsheet-content-padding-y;
+            padding-inline: $kendo-adaptive-actionsheet-content-padding-x;
         }
 
         .k-actionsheet-footer {
-            padding: $kendo-adaptive-actionsheet-footer-padding-y $kendo-adaptive-actionsheet-footer-padding-x;
+            padding-block: $kendo-adaptive-actionsheet-footer-padding-y;
+            padding-inline: $kendo-adaptive-actionsheet-footer-padding-x;
         }
 
         .k-actionsheet-filter {

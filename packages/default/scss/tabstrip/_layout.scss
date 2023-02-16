@@ -1,7 +1,8 @@
 @include exports("tabstrip/layout") {
 
     .k-tabstrip-wrapper {
-        padding: $kendo-tabstrip-wrapper-padding-y $kendo-tabstrip-wrapper-padding-x;
+        padding-block: $kendo-tabstrip-wrapper-padding-y;
+        padding-inline: $kendo-tabstrip-wrapper-padding-x;
         box-sizing: border-box;
         border-width: $kendo-tabstrip-wrapper-border-width;
         border-style: solid;
@@ -69,7 +70,8 @@
         }
 
         .k-link {
-            padding: $kendo-tabstrip-item-padding-y $kendo-tabstrip-item-padding-x;
+            padding-block: $kendo-tabstrip-item-padding-y;
+            padding-inline: $kendo-tabstrip-item-padding-x;
             color: inherit;
             cursor: pointer;
             display: inline-flex;
@@ -84,7 +86,8 @@
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
         margin: 0 !important; // sass-lint:disable-line no-important
-        padding: $kendo-tabstrip-content-padding-y $kendo-tabstrip-content-padding-x;
+        padding-block: $kendo-tabstrip-content-padding-y;
+        padding-inline: $kendo-tabstrip-content-padding-x;
         box-sizing: border-box;
         border-width: $kendo-tabstrip-content-border-width;
         border-style: solid;

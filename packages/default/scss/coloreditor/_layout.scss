@@ -48,7 +48,8 @@
     // Views
     .k-coloreditor-views {
         min-width: calc( var(--kendo-color-preview-width, #{$kendo-color-palette-tile-width}) * var(--kendo-color-preview-columns, 10) );
-        padding: $kendo-color-editor-views-padding-y $kendo-color-editor-views-padding-x;
+        padding-block: $kendo-color-editor-views-padding-y;
+        padding-inline: $kendo-color-editor-views-padding-x;
         gap: $kendo-color-editor-views-gap;
 
         .k-colorgradient {

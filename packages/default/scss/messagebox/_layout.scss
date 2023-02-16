@@ -3,7 +3,8 @@
     // Base
     .k-messagebox {
         margin: $kendo-message-box-margin;
-        padding: $kendo-message-box-padding-y $kendo-message-box-padding-x;
+        padding-block: $kendo-message-box-padding-y;
+        padding-inline: $kendo-message-box-padding-x;
         border-width: $kendo-message-box-border-width;
         border-style: solid;
         box-sizing: border-box;

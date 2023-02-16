@@ -46,7 +46,8 @@
         .k-event-template {
             // Angular fix for stronger selector and smaller padding
             & {
-                padding: $kendo-padding-sm-y $kendo-padding-sm-x;
+                padding-block: $kendo-padding-sm-y;
+                padding-inline: $kendo-padding-sm-x;
             }
         }
 

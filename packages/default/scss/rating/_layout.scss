@@ -33,7 +33,8 @@
         .k-rating-item {
             display: inline-flex;
             position: relative;
-            padding: $kendo-rating-item-padding-y $kendo-rating-item-padding-x;
+            padding-block: $kendo-rating-item-padding-y;
+            padding-inline: $kendo-rating-item-padding-x;
             align-items: center;
             vertical-align: middle;
             margin: 0;

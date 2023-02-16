@@ -60,7 +60,8 @@
         $_min-width: k-map-get( $size-props, min-width );
 
         .k-badge-#{$size} {
-            padding: $_padding-y $_padding-x;
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
             font-size: $_font-size;
             line-height: $_line-height;
             min-width: $_min-width;
