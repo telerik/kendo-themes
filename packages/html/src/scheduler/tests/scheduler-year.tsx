@@ -20,16 +20,14 @@ root.render(
                         2021
                     </Button>
                     <span className="k-spacer"></span>
-                    <span className="k-scheduler-views-wrapper">
-                        <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
-                            <option>Year</option>
-                        </select>
-                        <span className="k-button-group k-scheduler-views">
-                            <Button>Day</Button>
-                            <Button>Week</Button>
-                            <Button>Month</Button>
-                            <Button selected>Year</Button>
-                        </span>
+                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
+                        <option>Year</option>
+                    </select>
+                    <span className="k-button-group k-scheduler-views">
+                        <Button>Day</Button>
+                        <Button>Week</Button>
+                        <Button>Month</Button>
+                        <Button selected>Year</Button>
                     </span>
                 </Toolbar>
 
