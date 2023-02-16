@@ -23,11 +23,9 @@ root.render(
                                         <Button className="k-create-event" icon="add"></Button>
                                     </span>
                                     <span className="k-spacer"></span>
-                                    <span className="k-scheduler-views-wrapper">
-                                        <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
-                                            <option>Day</option>
-                                        </select>
-                                    </span>
+                                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
+                                        <option>Day</option>
+                                    </select>
                                 </Toolbar>
                                 <Toolbar className="k-scheduler-toolbar">
                                     <span className="k-scheduler-navigation">

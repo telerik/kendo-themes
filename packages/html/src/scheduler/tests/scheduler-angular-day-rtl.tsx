@@ -25,15 +25,13 @@ root.render(
                         </Button>
                     </div>
                     <span className="k-spacer"></span>
-                    <div className="k-scheduler-views-wrapper">
-                        <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md"></select>
-                        <div className="k-scheduler-views k-button-group">
-                            <Button selected>Day</Button>
-                            <Button>Week</Button>
-                            <Button>Month</Button>
-                            <Button>Timeline</Button>
-                            <Button>Agenda</Button>
-                        </div>
+                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md"></select>
+                    <div className="k-scheduler-views k-button-group">
+                        <Button selected>Day</Button>
+                        <Button>Week</Button>
+                        <Button>Month</Button>
+                        <Button>Timeline</Button>
+                        <Button>Agenda</Button>
                     </div>
                 </Toolbar>
                 <div style={{ display: "block" }}>

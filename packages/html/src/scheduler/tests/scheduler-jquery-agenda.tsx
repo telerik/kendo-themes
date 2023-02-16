@@ -28,17 +28,15 @@ root.render(
                         Monday, June 10, 2013 - Friday, June 14, 2013
                     </Button>
                     <span className="k-spacer"></span>
-                    <span className="k-scheduler-views-wrapper">
-                        <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
-                            <option>Agenda</option>
-                        </select>
-                        <span className="k-button-group k-scheduler-views">
-                            <Button >Day</Button>
-                            <Button >Week</Button>
-                            <Button >Month</Button>
-                            <Button >Timeline</Button>
-                            <Button selected>Agenda</Button>
-                        </span>
+                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
+                        <option>Agenda</option>
+                    </select>
+                    <span className="k-button-group k-scheduler-views">
+                        <Button >Day</Button>
+                        <Button >Week</Button>
+                        <Button >Month</Button>
+                        <Button >Timeline</Button>
+                        <Button selected>Agenda</Button>
                     </span>
                 </Toolbar>
                 <table className="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda k-scrollbar-h">
