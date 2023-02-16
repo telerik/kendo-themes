@@ -38,7 +38,8 @@
     }
     .k-table-th,
     .k-table-td {
-        padding: $kendo-table-cell-padding-y $kendo-table-cell-padding-x;
+        padding-block: $kendo-table-cell-padding-y;
+        padding-inline: $kendo-table-cell-padding-x;
         border-width: 0 0 $kendo-table-cell-horizontal-border-width $kendo-table-cell-vertical-border-width;
         border-style: solid;
         border-color: inherit;
@@ -132,7 +133,8 @@
 
             &::before {
                 content: "\200b";
-                padding: $kendo-table-cell-padding-y 0;
+                padding-block: $kendo-table-cell-padding-y;
+                padding-inline: 0;
                 width: 0;
                 display: block;
                 overflow: hidden;
@@ -225,7 +227,8 @@
 
         .k-table-#{$size} .k-table-th,
         .k-table-#{$size} .k-table-td {
-            padding: $_cell-padding-y $_cell-padding-x;
+            padding-block: $_cell-padding-y;
+            padding-inline: $_cell-padding-x;
         }
 
         .k-table-#{$size} .k-table-list .k-table-group-td > span {

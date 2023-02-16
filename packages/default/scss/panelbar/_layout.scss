@@ -33,7 +33,8 @@
             display: block;
 
             > .k-link {
-                padding: $kendo-panelbar-header-padding-y $kendo-panelbar-header-padding-x;
+                padding-block: $kendo-panelbar-header-padding-y;
+                padding-inline: $kendo-panelbar-header-padding-x;
                 color: inherit;
                 background: none;
                 text-decoration: none;
@@ -71,7 +72,8 @@
             display: block;
 
             > .k-link {
-                padding: $kendo-panelbar-item-padding-y $kendo-panelbar-item-padding-x;
+                padding-block: $kendo-panelbar-item-padding-y;
+                padding-inline: $kendo-panelbar-item-padding-x;
                 color: inherit;
                 text-decoration: none;
                 display: flex;

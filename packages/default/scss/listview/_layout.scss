@@ -51,7 +51,8 @@
         &::after { display: none; }
     }
     .k-listview-content-padding-rectangle {
-        padding: $kendo-listview-padding-y $kendo-listview-padding-x;
+        padding-block: $kendo-listview-padding-y;
+        padding-inline: $kendo-listview-padding-x;
     }
     .k-listview-content-padding-square {
         padding: $kendo-listview-padding-y;
@@ -68,11 +69,13 @@
         flex-shrink: 0;
     }
     .k-listview-item-padding-rectangle {
-        padding: $kendo-listview-item-padding-y $kendo-listview-item-padding-x;
+        padding-block: $kendo-listview-item-padding-y;
+        padding-inline: $kendo-listview-item-padding-x;
     }
     .k-listview-item-padding-rectangle .k-listview-link {
         margin: (-$kendo-listview-item-padding-y) (-$kendo-listview-item-padding-x);
-        padding: $kendo-listview-item-padding-y $kendo-listview-item-padding-x;
+        padding-block: $kendo-listview-item-padding-y;
+        padding-inline: $kendo-listview-item-padding-x;
     }
     .k-listview-item-padding-square {
         padding: $kendo-listview-item-padding-y;

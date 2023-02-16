@@ -39,7 +39,8 @@
 
     // Navigation
     .k-filemanager-navigation {
-        padding: $kendo-file-manager-navigation-padding-y $kendo-file-manager-navigation-padding-x;
+        padding-block: $kendo-file-manager-navigation-padding-y;
+        padding-inline: $kendo-file-manager-navigation-padding-x;
         width: $kendo-file-manager-navigation-width;
         border-width: 0;
         border-right-width: $kendo-file-manager-navigation-border-width;
@@ -73,7 +74,8 @@
     .k-filemanager-breadcrumb {
         border-width: 0;
         border-bottom-width: $kendo-file-manager-breadcrumb-border-width;
-        padding: $kendo-file-manager-breadcrumb-padding-y $kendo-file-manager-breadcrumb-padding-x;
+        padding-block: $kendo-file-manager-breadcrumb-padding-y;
+        padding-inline: $kendo-file-manager-breadcrumb-padding-x;
         flex-shrink: 0;
     }
 
@@ -85,7 +87,8 @@
 
         // Listview item
         .k-listview-item {
-            padding: $kendo-file-manager-listview-item-padding-y $kendo-file-manager-listview-item-padding-x;
+            padding-block: $kendo-file-manager-listview-item-padding-y;
+            padding-inline: $kendo-file-manager-listview-item-padding-x;
             width: $kendo-file-manager-listview-item-width;
             height: $kendo-file-manager-listview-item-height;
             text-align: center;

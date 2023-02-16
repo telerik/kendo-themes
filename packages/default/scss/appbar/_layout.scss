@@ -3,7 +3,8 @@
     // Appbar
     .k-appbar {
         margin: $kendo-appbar-margin-y $kendo-appbar-margin-x;
-        padding: $kendo-appbar-padding-y $kendo-appbar-padding-x;
+        padding-block: $kendo-appbar-padding-y;
+        padding-inline: $kendo-appbar-padding-x;
         border-width: $kendo-appbar-border-width;
         border-style: solid;
         box-sizing: border-box;

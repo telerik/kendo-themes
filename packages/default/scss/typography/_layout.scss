@@ -119,7 +119,8 @@
     }
 
     .k-pre {
-        padding: $kendo-pre-padding-y $kendo-pre-padding-x;
+        padding-block: $kendo-pre-padding-y;
+        padding-inline: $kendo-pre-padding-x;
         overflow: auto;
     }
 
@@ -133,7 +134,8 @@
     }
 
     .k-code {
-        padding: $kendo-code-padding-y $kendo-code-padding-x;
+        padding-block: $kendo-code-padding-y;
+        padding-inline: $kendo-code-padding-x;
     }
 
     // Display

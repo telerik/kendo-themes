@@ -202,7 +202,8 @@
 
     // Cell editor
     .k-spreadsheet-cell-editor {
-        padding: 0 3px;
+        padding-block: 0;
+        padding-inline: 3px;
         line-height: var( --kendo-spreadsheet-line-height, $kendo-spreadsheet-line-height );
         display: none;
         overflow: hidden;

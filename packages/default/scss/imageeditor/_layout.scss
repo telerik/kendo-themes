@@ -3,7 +3,8 @@
     // Image Editor
     .k-imageeditor {
         margin: $kendo-image-editor-margin-y $kendo-image-editor-margin-x;
-        padding: $kendo-image-editor-padding-y $kendo-image-editor-padding-x;
+        padding-block: $kendo-image-editor-padding-y;
+        padding-inline: $kendo-image-editor-padding-x;
         border-width: $kendo-image-editor-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -56,7 +57,8 @@
 
     // Action Pane
     .k-imageeditor-action-pane {
-        padding: $kendo-image-editor-action-pane-padding-y $kendo-image-editor-action-pane-padding-x;
+        padding-block: $kendo-image-editor-action-pane-padding-y;
+        padding-inline: $kendo-image-editor-action-pane-padding-x;
         width: $kendo-image-editor-action-pane-width;
         border-width: 0;
         border-left-width: $kendo-image-editor-content-border-width;

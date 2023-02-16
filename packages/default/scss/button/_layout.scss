@@ -77,7 +77,8 @@
         $_line-height: k-map-get( $size-props, line-height );
 
         .k-button-#{$size} {
-            padding: $_padding-y $_padding-x;
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
             font-size: $_font-size;
             line-height: $_line-height;
         }

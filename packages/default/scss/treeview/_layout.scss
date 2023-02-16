@@ -100,7 +100,8 @@
     // Treeview leaf
     .k-treeview-leaf {
         @include border-radius( $kendo-treeview-item-border-radius );
-        padding: $kendo-treeview-item-padding-y $kendo-treeview-item-padding-x;
+        padding-block: $kendo-treeview-item-padding-y;
+        padding-inline: $kendo-treeview-item-padding-x;
         border: $kendo-treeview-item-border-width solid transparent;
         text-decoration: none;
         display: inline-flex;
@@ -179,7 +180,8 @@
             line-height: $_line-height;
 
             .k-treeview-leaf {
-                padding: $_item-padding-y $_item-padding-x;
+                padding-block: $_item-padding-y;
+                padding-inline: $_item-padding-x;
             }
         }
     }

@@ -39,7 +39,8 @@
     // Title bar
     .k-window-titlebar {
         @include border-top-radius( $kendo-window-border-radius );
-        padding: $kendo-window-titlebar-padding-y $kendo-window-titlebar-padding-x;
+        padding-block: $kendo-window-titlebar-padding-y;
+        padding-inline: $kendo-window-titlebar-padding-x;
         border-width: $kendo-window-titlebar-border-width;
         border-style: $kendo-window-titlebar-border-style;
         white-space: nowrap;
@@ -55,7 +56,8 @@
 
     // Title bar title text
     .k-window-title {
-        padding: .5em 0;
+        padding-block: .5em;
+        padding-inline: 0;
         margin: -.5em 0;
         font-size: $kendo-window-title-font-size;
         line-height: $kendo-window-title-line-height;
@@ -96,7 +98,8 @@
     // Content
     .k-window-content,
     .k-prompt-container {
-        padding: $kendo-window-inner-padding-y $kendo-window-inner-padding-x;
+        padding-block: $kendo-window-inner-padding-y;
+        padding-inline: $kendo-window-inner-padding-x;
         border-width: 0;
         border-color: inherit;
         color: inherit;
@@ -131,7 +134,8 @@
     // Buttons Layout
     .k-window-actions {
         @include border-bottom-radius( $kendo-window-border-radius );
-        padding: $kendo-window-buttongroup-padding-y $kendo-window-buttongroup-padding-x;
+        padding-block: $kendo-window-buttongroup-padding-y;
+        padding-inline: $kendo-window-buttongroup-padding-x;
         border-width: $kendo-window-buttongroup-border-width 0 0;
         border-style: solid;
         border-color: inherit;

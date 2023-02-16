@@ -166,7 +166,8 @@
         }
 
         .k-scheduler-toolbar {
-            padding: $kendo-toolbar-md-padding-y $kendo-toolbar-md-padding-x;
+            padding-block: $kendo-toolbar-md-padding-y;
+            padding-inline: $kendo-toolbar-md-padding-x;
 
             > * {
                 margin: 0;
@@ -201,7 +202,8 @@
         }
 
         .k-scheduler-footer {
-            padding: $kendo-toolbar-md-padding-y $kendo-toolbar-md-padding-x;
+            padding-block: $kendo-toolbar-md-padding-y;
+            padding-inline: $kendo-toolbar-md-padding-x;
             display: flex;
             justify-content: space-between;
 
@@ -360,12 +362,14 @@
 
         .k-list-title,
         .k-filter-help-text {
-            padding: $kendo-listgroup-item-padding-y $kendo-listgroup-item-padding-x;
+            padding-block: $kendo-listgroup-item-padding-y;
+            padding-inline: $kendo-listgroup-item-padding-x;
             display: block;
         }
 
         .k-listgroup-title {
-            padding: $kendo-listgroup-item-padding-y $kendo-listgroup-item-padding-x;
+            padding-block: $kendo-listgroup-item-padding-y;
+            padding-inline: $kendo-listgroup-item-padding-x;
             font-weight: bold;
             text-transform: uppercase;
         }

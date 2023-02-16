@@ -2,7 +2,8 @@
 
     // Chip
     .k-chip {
-        padding: $kendo-chip-padding-y $kendo-chip-padding-x;
+        padding-block: $kendo-chip-padding-y;
+        padding-inline: $kendo-chip-padding-x;
         border-width: $kendo-chip-border-width;
         border-style: solid;
         outline: 0;
@@ -33,7 +34,8 @@
 
     // Chip content
     .k-chip-content {
-        padding: .5em 0;
+        padding-block: .5em;
+        padding-inline: 0;
         margin: -.5em 0;
         min-width: 0;
         display: flex;
@@ -125,7 +127,8 @@
         $_avatar-size: 1em;
 
         .k-chip-#{$size} {
-            padding: $_padding-y $_padding-x;
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
             font-size: $_font-size;
             line-height: $_line-height;
         }

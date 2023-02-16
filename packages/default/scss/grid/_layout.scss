@@ -302,7 +302,8 @@
             overflow: visible;
 
             > .k-icon {
-                padding: $kendo-grid-cell-padding-y 0;
+                padding-block: $kendo-grid-cell-padding-y;
+                padding-inline: 0;
                 width: 100%;
                 height: 100%;
                 // That causes an issue with grid material. Commenting it for now
@@ -520,7 +521,8 @@
         position: initial;
         display: inline-block;
         margin: -4px 0;
-        padding: 4px 8px;
+        padding-block: 4px;
+        padding-inline: 8px;
     }
 
     // Filter row
@@ -901,16 +903,19 @@
         .k-grid-#{$size} {
 
             .k-table-th {
-                padding: $_header-padding-y $_header-padding-x;
+                padding-block: $_header-padding-y;
+                padding-inline: $_header-padding-x;
             }
 
             td,
             .k-table-td {
-                padding: $_cell-padding-y $_cell-padding-x;
+                padding-block: $_cell-padding-y;
+                padding-inline: $_cell-padding-x;
             }
 
             .k-grouping-header {
-                padding: $_grouping-header-padding-y $_grouping-header-padding-x;
+                padding-block: $_grouping-header-padding-y;
+                padding-inline: $_grouping-header-padding-x;
                 gap: $_grouping-header-padding-y;
 
                 &::before {
@@ -921,7 +926,8 @@
             .k-grid-header {
                 .k-table-th > .k-link {
                     margin: (-$_header-padding-y) (-$_header-padding-x);
-                    padding: $_header-padding-y $_header-padding-x;
+                    padding-block: $_header-padding-y;
+                    padding-inline: $_header-padding-x;
                 }
 
                 .k-grid-filter,
@@ -940,7 +946,8 @@
                     margin: (-$_header-padding-y) (-$_header-padding-x);
 
                     > .k-link {
-                        padding: $_header-padding-y $_header-padding-x;
+                        padding-block: $_header-padding-y;
+                        padding-inline: $_header-padding-x;
                     }
                 }
             }
@@ -958,7 +965,8 @@
                 padding: 0;
 
                 > .k-icon {
-                    padding: $_cell-padding-y 0;
+                    padding-block: $_cell-padding-y;
+                    padding-inline: 0;
                 }
             }
 
@@ -968,7 +976,8 @@
             .k-command-cell,
             .k-grid-edit-row td,
             .k-grid-edit-row .k-table-td {
-                padding: $_edit-cell-padding-y $_edit-cell-padding-x;
+                padding-block: $_edit-cell-padding-y;
+                padding-inline: $_edit-cell-padding-x;
             }
 
 
@@ -977,7 +986,8 @@
                 td,
                 .k-table-td,
                 .k-table-th {
-                    padding: $_filter-cell-padding-y $_filter-cell-padding-x;
+                    padding-block: $_filter-cell-padding-y;
+                    padding-inline: $_filter-cell-padding-x;
                 }
             }
 
@@ -1125,7 +1135,8 @@
 
         .k-item,
         .k-check-all-wrap {
-            padding: $kendo-grid-column-menu-list-item-padding-y $kendo-grid-column-menu-list-item-padding-x;
+            padding-block: $kendo-grid-column-menu-list-item-padding-y;
+            padding-inline: $kendo-grid-column-menu-list-item-padding-x;
             display: flex;
             flex-flow: row nowrap;
         }
@@ -1166,7 +1177,8 @@
         box-sizing: border-box;
 
         &.k-popup {
-            padding: $kendo-grid-column-menu-popup-padding-y $kendo-grid-column-menu-popup-padding-x;
+            padding-block: $kendo-grid-column-menu-popup-padding-y;
+            padding-inline: $kendo-grid-column-menu-popup-padding-x;
             max-width: 100%;
         }
 
@@ -1204,7 +1216,8 @@
 
     .k-column-chooser-title,
     .k-column-list-item {
-        padding: $kendo-grid-column-menu-list-item-padding-y $kendo-grid-column-menu-list-item-padding-x;
+        padding-block: $kendo-grid-column-menu-list-item-padding-y;
+        padding-inline: $kendo-grid-column-menu-list-item-padding-x;
     }
 
     .k-column-list-item {
@@ -1222,11 +1235,13 @@
     }
 
     .k-columns-items-wrap {
-        padding: $kendo-grid-column-menu-items-wrap-padding-y $kendo-grid-column-menu-items-wrap-padding-x;
+        padding-block: $kendo-grid-column-menu-items-wrap-padding-y;
+        padding-inline: $kendo-grid-column-menu-items-wrap-padding-x;
     }
 
     .k-columnmenu-item {
-        padding: $kendo-grid-column-menu-item-padding-y $kendo-grid-column-menu-item-padding-x;
+        padding-block: $kendo-grid-column-menu-item-padding-y;
+        padding-inline: $kendo-grid-column-menu-item-padding-x;
         outline: 0;
         cursor: pointer;
 
@@ -1245,7 +1260,8 @@
     }
 
     .k-column-menu-group-header {
-        padding: $kendo-grid-column-menu-group-header-padding-y $kendo-grid-column-menu-group-header-padding-x;
+        padding-block: $kendo-grid-column-menu-group-header-padding-y;
+        padding-inline: $kendo-grid-column-menu-group-header-padding-x;
         display: flex;
         flex: 0 0 auto;
         position: relative;

@@ -3,7 +3,8 @@
     .k-tooltip {
         @include border-radius( $kendo-tooltip-border-radius );
         margin: 0;
-        padding: $kendo-tooltip-padding-y $kendo-tooltip-padding-x;
+        padding-block: $kendo-tooltip-padding-y;
+        padding-inline: $kendo-tooltip-padding-x;
         // max-width: $kendo-tooltip-max-width;
         border-width: $kendo-tooltip-border-width;
         border-style: solid;

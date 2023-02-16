@@ -134,7 +134,8 @@
     }
     .k-radio-item,
     .k-radio-list-item {
-        padding: $kendo-radio-list-item-padding-y $kendo-radio-list-item-padding-x;
+        padding-block: $kendo-radio-list-item-padding-y;
+        padding-inline: $kendo-radio-list-item-padding-x;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;

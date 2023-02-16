@@ -45,7 +45,8 @@
     .k-calendar-caption.k-calendar-th,
     .k-calendar .k-meta-header,
     .k-calendar .k-month-header {
-        padding: $kendo-calendar-caption-padding-y $kendo-calendar-caption-padding-x;
+        padding-block: $kendo-calendar-caption-padding-y;
+        padding-inline: $kendo-calendar-caption-padding-x;
         height: $kendo-calendar-caption-height;
         box-sizing: border-box;
         font-size: $kendo-calendar-caption-font-size;
@@ -69,7 +70,8 @@
         cursor: default;
     }
     .k-calendar-th {
-        padding: $kendo-calendar-header-cell-padding-y $kendo-calendar-header-cell-padding-x;
+        padding-block: $kendo-calendar-header-cell-padding-y;
+        padding-inline: $kendo-calendar-header-cell-padding-x;
         width: $kendo-calendar-header-cell-width;
         height: $kendo-calendar-header-cell-height;
         font-size: $kendo-calendar-header-cell-font-size;
@@ -89,7 +91,6 @@
     // Remove .k-calendar once we remove k-link
     .k-calendar .k-calendar-cell-inner {
         @include border-radius( $kendo-calendar-cell-border-radius );
-        padding: $kendo-calendar-cell-padding-y $kendo-calendar-cell-padding-x;
         padding-inline: var( --INTERNAL--kendo-calendar-cell-padding-x, #{$kendo-calendar-cell-padding-x} );
         padding-block: var( --INTERNAL--kendo-calendar-cell-padding-y, #{$kendo-calendar-cell-padding-y} );
         width: 100%;
@@ -107,7 +108,8 @@
 
     // Calendar header
     .k-calendar .k-header {
-        padding: $kendo-calendar-header-padding-y $kendo-calendar-header-padding-x;
+        padding-block: $kendo-calendar-header-padding-y;
+        padding-inline: $kendo-calendar-header-padding-x;
         border-bottom-width: $kendo-calendar-header-border-width;
         border-bottom-style: solid;
         display: flex;
@@ -121,7 +123,8 @@
 
     // Calendar header
     .k-calendar-header {
-        padding: $kendo-calendar-header-padding-y $kendo-calendar-header-padding-x;
+        padding-block: $kendo-calendar-header-padding-y;
+        padding-inline: $kendo-calendar-header-padding-x;
         min-width: ($kendo-calendar-cell-size * 8);
         box-sizing: border-box;
         display: flex;
@@ -146,7 +149,8 @@
     // Calendar footer
     .k-calendar-footer,
     .k-calendar .k-footer {
-        padding: $kendo-calendar-footer-padding-y $kendo-calendar-footer-padding-x;
+        padding-block: $kendo-calendar-footer-padding-y;
+        padding-inline: $kendo-calendar-footer-padding-x;
         text-align: center;
         clear: both;
     }
@@ -155,7 +159,8 @@
     // Calendar view wrapper
     .k-calendar-view {
         margin: auto;
-        padding: 0 $kendo-calendar-header-padding-x;
+        padding-block: 0;
+        padding-inline: $kendo-calendar-header-padding-x;
         // setting width / height prevents layout changes in meta views
         width: $kendo-calendar-view-width;
         inline-size: var( --INTERNAL--kendo-calendar-view-width, #{$kendo-calendar-view-width});
@@ -326,7 +331,8 @@
         flex-flow: row nowrap;
 
         .k-calendar-view {
-            padding: $kendo-infinite-calendar-view-padding-y $kendo-infinite-calendar-view-padding-x;
+            padding-block: $kendo-infinite-calendar-view-padding-y;
+            padding-inline: $kendo-infinite-calendar-view-padding-x;
             height: $kendo-infinite-calendar-view-height;
             flex: 0 0 auto;
             display: flex;
@@ -355,7 +361,8 @@
         .k-calendar-header {
             margin-left: -$kendo-infinite-calendar-view-padding-x;
             margin-right: -$kendo-infinite-calendar-view-padding-x;
-            padding: $kendo-infinite-calendar-header-padding-y $kendo-infinite-calendar-header-padding-x;
+            padding-block: $kendo-infinite-calendar-header-padding-y;
+            padding-inline: $kendo-infinite-calendar-header-padding-x;
             width: auto;
             min-width: 0;
         }
@@ -411,7 +418,8 @@
                 height: $kendo-calendar-navigation-item-height;
                 line-height: $kendo-calendar-navigation-item-height;
                 cursor: pointer;
-                padding: 0 1em;
+                padding-block: 0;
+                padding-inline: 1em;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: clip;

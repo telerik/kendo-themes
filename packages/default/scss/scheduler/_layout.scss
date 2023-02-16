@@ -46,7 +46,8 @@
 
         td,
         th {
-            padding: $kendo-scheduler-cell-padding-y $kendo-scheduler-cell-padding-x;
+            padding-block: $kendo-scheduler-cell-padding-y;
+            padding-inline: $kendo-scheduler-cell-padding-x;
             height: $kendo-scheduler-cell-height;
             overflow: hidden;
             white-space: nowrap;
@@ -140,7 +141,8 @@
         .k-scheduler-cell {
             display: flex;
             flex: 1 1 100%;
-            padding: $kendo-scheduler-cell-padding-y $kendo-scheduler-cell-padding-y;
+            padding-block: $kendo-scheduler-cell-padding-y;
+            padding-inline: $kendo-scheduler-cell-padding-y;
             min-height: 1.5em;
             overflow: hidden;
             white-space: nowrap;
@@ -404,7 +406,8 @@
         // Template
         .k-event-template {
             line-height: $kendo-scheduler-event-line-height;
-            padding: $kendo-padding-md-y $kendo-padding-md-x;
+            padding-block: $kendo-padding-md-y;
+            padding-inline: $kendo-padding-md-x;
             // TODO: incompatible units
             // padding-right: $kendo-padding-sm-x + k-map-get( $kendo-spacing, 4 );
         }
@@ -807,7 +810,8 @@
     // Year view
     .k-scheduler-yearview {
         .k-scheduler-body {
-            padding: $kendo-scheduler-yearview-padding-y $kendo-scheduler-yearview-padding-x;
+            padding-block: $kendo-scheduler-yearview-padding-y;
+            padding-inline: $kendo-scheduler-yearview-padding-x;
             justify-content: center;
         }
 
@@ -850,7 +854,8 @@
 @include exports("scheduler-tooltip/layout") {
 
     .k-scheduler-tooltip {
-        padding: $kendo-scheduler-tooltip-padding-y $kendo-scheduler-tooltip-padding-x;
+        padding-block: $kendo-scheduler-tooltip-padding-y;
+        padding-inline: $kendo-scheduler-tooltip-padding-x;
         border-width: $kendo-scheduler-tooltip-border-width;
         color: inherit;
 
@@ -879,7 +884,8 @@
         }
 
         .k-tooltip-event {
-            padding: $kendo-scheduler-tooltip-event-padding-y $kendo-scheduler-tooltip-event-padding-x;
+            padding-block: $kendo-scheduler-tooltip-event-padding-y;
+            padding-inline: $kendo-scheduler-tooltip-event-padding-x;
             border-radius: $kendo-scheduler-tooltip-event-border-radius;
             box-sizing: border-box;
             display: flex;

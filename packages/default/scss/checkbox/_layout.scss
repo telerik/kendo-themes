@@ -142,7 +142,8 @@
     }
     .k-checkbox-item,
     .k-checkbox-list-item {
-        padding: $kendo-checkbox-list-item-padding-y $kendo-checkbox-list-item-padding-x;
+        padding-block: $kendo-checkbox-list-item-padding-y;
+        padding-inline: $kendo-checkbox-list-item-padding-x;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;

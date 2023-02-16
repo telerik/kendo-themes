@@ -3,7 +3,8 @@
     // Base
     .k-stepper {
         margin: $kendo-stepper-margin-y $kendo-stepper-margin-x;
-        padding: $kendo-stepper-padding-y $kendo-stepper-padding-x;
+        padding-block: $kendo-stepper-padding-y;
+        padding-inline: $kendo-stepper-padding-x;
         border-width: $kendo-stepper-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -106,7 +107,8 @@
         }
         .k-step-label:only-child {
             @include border-radius( k-math-div( ( $kendo-stepper-indicator-height + 2 * $kendo-stepper-indicator-border-width ), 2 ) );
-            padding: $kendo-stepper-label-padding-y $kendo-stepper-label-padding-x;
+            padding-block: $kendo-stepper-label-padding-y;
+            padding-inline: $kendo-stepper-label-padding-x;
             border-width: 0;
         }
         .k-step-label .k-step-text {
@@ -233,7 +235,8 @@
             flex-direction: column;
             justify-content: space-between;
             margin-left: $kendo-stepper-indicator-width + 2 * $kendo-stepper-indicator-border-width;
-            padding: $kendo-stepper-inline-content-padding-x $kendo-stepper-inline-content-padding-y;
+            padding-block: $kendo-stepper-inline-content-padding-x;
+            padding-inline: $kendo-stepper-inline-content-padding-y;
         }
     }
 }

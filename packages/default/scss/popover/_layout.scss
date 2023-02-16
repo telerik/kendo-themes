@@ -34,7 +34,8 @@
     // Header
     .k-popover-header {
         @include border-top-radius( $kendo-popover-border-radius );
-        padding: $kendo-popover-header-padding-y $kendo-popover-header-padding-x;
+        padding-block: $kendo-popover-header-padding-y;
+        padding-inline: $kendo-popover-header-padding-x;
         border-width: 0 0 $kendo-popover-header-border-width;
         border-style: $kendo-popover-header-border-style;
         border-color: inherit;
@@ -42,7 +43,8 @@
 
     // Body
     .k-popover-body {
-        padding: $kendo-popover-body-padding-y $kendo-popover-body-padding-x;
+        padding-block: $kendo-popover-body-padding-y;
+        padding-inline: $kendo-popover-body-padding-x;
     }
 
     // Actions

@@ -3,10 +3,12 @@
 @include exports( "menu/layout/bootstrap" ) {
 
     .k-menu.k-menu-horizontal:not(.k-context-menu) {
-        padding: $navbar-padding-y $navbar-padding-x;
+        padding-block: $navbar-padding-y;
+        padding-inline: $navbar-padding-x;
     }
     .k-menu.k-menu-vertical:not(.k-context-menu) {
-        padding: $navbar-padding-y 0;
+        padding-block: $navbar-padding-y;
+        padding-inline: 0;
     }
 
     .k-menu-group,

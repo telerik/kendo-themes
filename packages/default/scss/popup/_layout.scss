@@ -4,7 +4,8 @@
         @include border-radius( $kendo-popup-border-radius );
         margin: 0;
         padding: 0;
-        // padding: $kendo-popup-padding-y $kendo-popup-padding-x;
+        // padding-block: $kendo-popup-padding-y;
+        // padding-inline: $kendo-popup-padding-x;
         border-width: $kendo-popup-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -27,7 +28,8 @@
     }
 
     .k-popup > .k-colorpalette {
-        padding: $kendo-popup-content-padding-y $kendo-popup-content-padding-x;
+        padding-block: $kendo-popup-content-padding-y;
+        padding-inline: $kendo-popup-content-padding-x;
     }
 
     // Transparent popup

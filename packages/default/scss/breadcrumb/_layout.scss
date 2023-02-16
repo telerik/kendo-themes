@@ -3,7 +3,8 @@
     // Breadcrumb
     .k-breadcrumb {
         margin: $kendo-breadcrumb-margin-y $kendo-breadcrumb-margin-x;
-        padding: $kendo-breadcrumb-padding-y $kendo-breadcrumb-padding-x;
+        padding-block: $kendo-breadcrumb-padding-y;
+        padding-inline: $kendo-breadcrumb-padding-x;
         border-width: $kendo-breadcrumb-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -67,7 +68,8 @@
     .k-breadcrumb-link,
     .k-breadcrumb-root-link {
         @include border-radius( $kendo-breadcrumb-link-border-radius );
-        padding: $kendo-breadcrumb-link-padding-y $kendo-breadcrumb-link-padding-x;
+        padding-block: $kendo-breadcrumb-link-padding-y;
+        padding-inline: $kendo-breadcrumb-link-padding-x;
         color: $kendo-breadcrumb-link-initial-text;
         text-decoration: none;
         white-space: nowrap;
@@ -91,7 +93,8 @@
     }
 
     .k-breadcrumb-icon-link {
-        padding: $kendo-breadcrumb-icon-link-padding-y $kendo-breadcrumb-icon-link-padding-x;
+        padding-block: $kendo-breadcrumb-icon-link-padding-y;
+        padding-inline: $kendo-breadcrumb-icon-link-padding-x;
     }
 
 

@@ -130,7 +130,8 @@
         align-items: stretch;
     }
     .k-drawer-item {
-        padding: $kendo-drawer-item-padding-y $kendo-drawer-item-padding-x;
+        padding-block: $kendo-drawer-item-padding-y;
+        padding-inline: $kendo-drawer-item-padding-x;
         outline: 0;
         color: inherit;
         font-size: $kendo-drawer-item-font-size;
@@ -142,7 +143,8 @@
 
         > .k-drawer-link {
             margin: (-$kendo-drawer-item-padding-y) (-$kendo-drawer-item-padding-x);
-            padding: $kendo-drawer-item-padding-y $kendo-drawer-item-padding-x;
+            padding-block: $kendo-drawer-item-padding-y;
+            padding-inline: $kendo-drawer-item-padding-x;
             color: inherit;
             display: flex;
             flex-flow: row nowrap;

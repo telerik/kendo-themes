@@ -2,7 +2,8 @@
 
     // Pivotgrid
     .k-pivotgrid {
-        padding: $kendo-pivotgrid-padding-y $kendo-pivotgrid-padding-x;
+        padding-block: $kendo-pivotgrid-padding-y;
+        padding-inline: $kendo-pivotgrid-padding-x;
         border-width: $kendo-pivotgrid-border-width;
         border-style: solid;
         box-sizing: content-box;
@@ -131,7 +132,8 @@
     }
 
     .k-pivotgrid-cell {
-        padding: $kendo-pivotgrid-cell-padding-y $kendo-pivotgrid-cell-padding-x;
+        padding-block: $kendo-pivotgrid-cell-padding-y;
+        padding-inline: $kendo-pivotgrid-cell-padding-x;
         text-overflow: ellipsis;
         white-space: nowrap;
         vertical-align: top;
@@ -153,7 +155,8 @@
 
     // Column menus
     .k-column-menu .k-treeview {
-        padding: $kendo-pivotgrid-treeview-padding-y $kendo-pivotgrid-treeview-padding-x;
+        padding-block: $kendo-pivotgrid-treeview-padding-y;
+        padding-inline: $kendo-pivotgrid-treeview-padding-x;
         overflow: auto;
     }
 
@@ -169,7 +172,8 @@
     }
 
     .k-pivotgrid-configurator-panel {
-        padding: $kendo-pivotgrid-configurator-padding-y $kendo-pivotgrid-configurator-padding-x;
+        padding-block: $kendo-pivotgrid-configurator-padding-y;
+        padding-inline: $kendo-pivotgrid-configurator-padding-x;
         border-width: $kendo-pivotgrid-configurator-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -181,7 +185,8 @@
 
     // Configurator Button
     .k-pivotgrid-configurator-button {
-        padding: $kendo-pivotgrid-configurator-button-padding-y $kendo-pivotgrid-configurator-button-padding-x;
+        padding-block: $kendo-pivotgrid-configurator-button-padding-y;
+        padding-inline: $kendo-pivotgrid-configurator-button-padding-x;
         border-width: $kendo-pivotgrid-configurator-button-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -234,7 +239,8 @@
 
     // Panel Content
     .k-pivotgrid-configurator-header {
-        padding: $kendo-pivotgrid-configurator-header-padding-y $kendo-pivotgrid-configurator-header-padding-x;
+        padding-block: $kendo-pivotgrid-configurator-header-padding-y;
+        padding-inline: $kendo-pivotgrid-configurator-header-padding-x;
         font-size: $kendo-pivotgrid-configurator-header-font-size;
         font-weight: $kendo-pivotgrid-configurator-header-font-weight;
         display: flex;
@@ -248,7 +254,8 @@
     }
 
     .k-pivotgrid-configurator-content {
-        padding: $kendo-pivotgrid-configurator-content-padding-y $kendo-pivotgrid-configurator-content-padding-x;
+        padding-block: $kendo-pivotgrid-configurator-content-padding-y;
+        padding-inline: $kendo-pivotgrid-configurator-content-padding-x;
         flex: 1 1 auto;
         overflow: auto;
 
@@ -301,7 +308,8 @@
         }
 
         .k-treeview {
-            padding: $kendo-pivotgrid-treeview-padding-y $kendo-pivotgrid-treeview-padding-x;
+            padding-block: $kendo-pivotgrid-treeview-padding-y;
+            padding-inline: $kendo-pivotgrid-treeview-padding-x;
             overflow: auto;
         }
     }
@@ -309,7 +317,8 @@
 
     // Calculated field
     .k-calculated-field {
-        padding: $kendo-pivotgrid-calculated-field-padding-y $kendo-pivotgrid-calculated-field-padding-x;
+        padding-block: $kendo-pivotgrid-calculated-field-padding-y;
+        padding-inline: $kendo-pivotgrid-calculated-field-padding-x;
         border-width: $kendo-pivotgrid-calculated-field-border-width;
         border-radius: $kendo-pivotgrid-calculated-field-border-radius;
         border-style: solid;

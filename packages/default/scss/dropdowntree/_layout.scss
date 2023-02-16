@@ -12,7 +12,8 @@
         }
 
         .k-treeview {
-            padding: $kendo-dropdowntree-popup-padding-y $kendo-dropdowntree-popup-padding-x;
+            padding-block: $kendo-dropdowntree-popup-padding-y;
+            padding-inline: $kendo-dropdowntree-popup-padding-x;
         }
     }
 

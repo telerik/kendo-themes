@@ -3,7 +3,8 @@
     // Base
     .k-toolbar {
         margin: 0;
-        padding: $kendo-toolbar-padding-y $kendo-toolbar-padding-x;
+        padding-block: $kendo-toolbar-padding-y;
+        padding-inline: $kendo-toolbar-padding-x;
         border-width: $kendo-toolbar-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -126,7 +127,8 @@
         $_spacing: k-map-get( $size-props, spacing );
 
         .k-toolbar-#{$size} {
-            padding: $_padding-y $_padding-x;
+            padding-block: $_padding-y;
+            padding-inline: $_padding-x;
             gap: $_spacing;
 
             // Remove once we decide to not size empty containers
@@ -160,7 +162,8 @@
     // sass-lint:disable class-name-format
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
-        padding: $kendo-toolbar-md-padding-y $kendo-toolbar-md-padding-x !important; // sass-lint:disable-line no-important
+        padding-block: $kendo-toolbar-md-padding-y !important; // sass-lint:disable-line no-important
+        padding-inline: $kendo-toolbar-md-padding-x !important; // sass-lint:disable-line no-important
         border-width: $kendo-toolbar-border-width;
         border-style: solid;
         display: flex;
@@ -214,7 +217,8 @@
 
         // Button
         .k-overflow-button {
-            padding: $kendo-menu-popup-md-item-padding-y $kendo-menu-popup-md-item-padding-x;
+            padding-block: $kendo-menu-popup-md-item-padding-y;
+            padding-inline: $kendo-menu-popup-md-item-padding-x;
             width: 100%;
             height: auto;
             border-width: 0;

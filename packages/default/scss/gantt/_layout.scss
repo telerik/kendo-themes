@@ -81,7 +81,8 @@
             }
             .k-grid-header th:last-child {
                 .k-header {
-                    padding: $kendo-grid-header-padding-y $kendo-grid-header-padding-x;
+                    padding-block: $kendo-grid-header-padding-y;
+                    padding-inline: $kendo-grid-header-padding-x;
                     border-width: 0 0 1px $kendo-grid-cell-vertical-border-width;
                     white-space: nowrap;
                 }
@@ -108,7 +109,8 @@
                 }
             }
             .k-task-content {
-                padding: $kendo-gantt-task-padding-y $kendo-gantt-task-padding-x;
+                padding-block: $kendo-gantt-task-padding-y;
+                padding-inline: $kendo-gantt-task-padding-x;
                 display: block;
                 line-height: normal;
                 flex: 1 1 auto;
@@ -301,7 +303,8 @@
             overflow-x: scroll;
         }
         .k-header {
-            padding: $kendo-grid-header-padding-y $kendo-grid-header-padding-x;
+            padding-block: $kendo-grid-header-padding-y;
+            padding-inline: $kendo-grid-header-padding-x;
             border-width: 0 0 1px $kendo-grid-cell-vertical-border-width;
             white-space: nowrap;
         }
@@ -390,7 +393,8 @@
 
     .k-task-wrap {
         margin: 0 -21px;
-        padding: 5px 21px;
+        padding-block: 5px;
+        padding-inline: 21px;
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -564,7 +568,8 @@
         white-space: nowrap;
     }
     .k-task-template {
-        padding: $kendo-gantt-task-padding-y $kendo-gantt-task-padding-x;
+        padding-block: $kendo-gantt-task-padding-y;
+        padding-inline: $kendo-gantt-task-padding-x;
         line-height: normal;
         flex: 1;
         overflow: hidden;
@@ -601,7 +606,8 @@
 
     // Task tooltip
     .k-task-details {
-        padding: $kendo-padding-md-y $kendo-padding-md-x;
+        padding-block: $kendo-padding-md-y;
+        padding-inline: $kendo-padding-md-x;
         white-space: nowrap;
 
         strong {

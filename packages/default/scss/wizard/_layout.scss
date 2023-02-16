@@ -1,6 +1,7 @@
 @include exports("wizard/layout") {
     .k-wizard {
-        padding: $kendo-wizard-padding-y $kendo-wizard-padding-x;
+        padding-block: $kendo-wizard-padding-y;
+        padding-inline: $kendo-wizard-padding-x;
         border-width: $kendo-wizard-border-width;
         border-style: solid;
         box-sizing: border-box;

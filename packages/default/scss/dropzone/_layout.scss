@@ -9,7 +9,8 @@
 
     // Dropzpne inner
     .k-dropzone-inner {
-        padding: $kendo-dropzone-padding-y $kendo-dropzone-padding-x;
+        padding-block: $kendo-dropzone-padding-y;
+        padding-inline: $kendo-dropzone-padding-x;
         border-width: $kendo-dropzone-border-width;
         border-style: solid;
         box-sizing: border-box;

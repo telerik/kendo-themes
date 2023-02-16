@@ -34,7 +34,8 @@
 
     // Header
     .k-expander-header {
-        padding: $kendo-expander-header-padding-y $kendo-expander-header-padding-x;
+        padding-block: $kendo-expander-header-padding-y;
+        padding-inline: $kendo-expander-header-padding-x;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,7 +60,8 @@
 
     // Expander content
     .k-expander-content {
-        padding: $kendo-expander-content-padding-y $kendo-expander-content-padding-x;
+        padding-block: $kendo-expander-content-padding-y;
+        padding-inline: $kendo-expander-content-padding-x;
     }
 
     // Multiple expanders

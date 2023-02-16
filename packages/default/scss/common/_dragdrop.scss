@@ -3,7 +3,8 @@
     // Layout
     .k-drag-clue {
         @include border-radius( $kendo-drag-hint-border-radius );
-        padding: $kendo-drag-hint-padding-y $kendo-drag-hint-padding-x;
+        padding-block: $kendo-drag-hint-padding-y;
+        padding-inline: $kendo-drag-hint-padding-x;
         border-width: $kendo-drag-hint-border-width;
         border-style: if( $kendo-drag-hint-border-width == null, null, solid );
         box-sizing: border-box;

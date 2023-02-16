@@ -125,7 +125,8 @@
     }
 
     .k-search-panel {
-        padding: $kendo-pdf-viewer-search-dialog-padding-y $kendo-pdf-viewer-search-dialog-padding-x;
+        padding-block: $kendo-pdf-viewer-search-dialog-padding-y;
+        padding-inline: $kendo-pdf-viewer-search-dialog-padding-x;
         display: flex;
         gap: $kendo-pdf-viewer-search-dialog-spacing;
         flex-flow: row nowrap;

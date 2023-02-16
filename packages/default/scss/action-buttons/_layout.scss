@@ -1,7 +1,8 @@
 @include exports("action-buttons/layout") {
 
     .k-actions {
-        padding: $kendo-actions-padding-y $kendo-actions-padding-x;
+        padding-block: $kendo-actions-padding-y;
+        padding-inline: $kendo-actions-padding-x;
         box-sizing: border-box;
         border-width: $kendo-actions-border-width 0 0 0;
         border-style: solid;

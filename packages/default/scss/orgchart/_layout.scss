@@ -3,7 +3,8 @@
     // OrgChart
     .k-orgchart {
         width: 100%;
-        padding: $kendo-orgchart-padding-x $kendo-orgchart-padding-y;
+        padding-block: $kendo-orgchart-padding-x;
+        padding-inline: $kendo-orgchart-padding-y;
         box-sizing: border-box;
         font-size: $kendo-orgchart-font-size;
         font-family: $kendo-orgchart-font-family;
@@ -39,7 +40,8 @@
 
     .k-orgchart-node-group-container {
         @include border-radius( $kendo-orgchart-node-group-border-radius );
-        padding: $kendo-orgchart-node-group-padding-y $kendo-orgchart-node-group-padding-x;
+        padding-block: $kendo-orgchart-node-group-padding-y;
+        padding-inline: $kendo-orgchart-node-group-padding-x;
         border-width: $kendo-orgchart-node-group-border-width;
         border-style: solid;
         outline: 0;
