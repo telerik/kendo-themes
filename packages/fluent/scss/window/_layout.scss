@@ -49,7 +49,8 @@
     .k-window-title {
         padding-block: .5em;
         padding-inline: 0;
-        margin: -.5em 0;
+        margin-block: -.5em;
+        margin-inline: 0;
         font-size: var( --kendo-window-title-font-size, #{$kendo-window-title-font-size} );
         line-height: var( --kendo-window-title-line-height, #{$kendo-window-title-line-height} );
         font-weight: var( --kendo-window-title-font-weight, #{$kendo-window-title-font-weight} );
@@ -68,7 +69,8 @@
 
     // Actions
     .k-window-titlebar-actions {
-        margin: -5em 0;
+        margin-block: -5em;
+        margin-inline: 0;
         margin-inline-end: ( $kendo-window-titlebar-padding-y - $kendo-window-titlebar-padding-x );
         line-height: 1;
         display: flex;

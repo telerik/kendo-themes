@@ -65,7 +65,8 @@
 
         .k-page {
             position: relative;
-            margin: $kendo-pdf-viewer-page-spacing auto;
+            margin-block: $kendo-pdf-viewer-page-spacing;
+            margin-inline: auto;
 
             canvas {
                 direction: ltr;

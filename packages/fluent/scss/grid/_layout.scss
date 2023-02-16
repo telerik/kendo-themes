@@ -888,7 +888,8 @@
 
     .k-grid-norecords-template {
         box-sizing: border-box;
-        margin: 0 auto;
+        margin-block: 0;
+        margin-inline: auto;
         width: 20em;
         height: 4em;
         border: 1px solid;

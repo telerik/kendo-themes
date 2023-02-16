@@ -36,7 +36,8 @@
     .k-chip-content {
         padding-block: .5em;
         padding-inline: 0;
-        margin: -.5em 0;
+        margin-block: -.5em;
+        margin-inline: 0;
         min-width: 0;
         display: flex;
         flex-flow: row nowrap;
@@ -83,7 +84,8 @@
 
     // Actions
     .k-chip-actions {
-        margin: -5em 0;
+        margin-block: -5em;
+        margin-inline: 0;
         flex: none;
         display: flex;
         flex-flow: row nowrap;

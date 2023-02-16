@@ -391,7 +391,8 @@
     }
 
     .k-task-wrap {
-        margin: 0 -21px;
+        margin-block: 0;
+        margin-inline: -21px;
         padding-block: 5px;
         padding-inline: 21px;
         display: inline-flex;
@@ -601,7 +602,8 @@
         white-space: nowrap;
 
         .k-resource {
-            margin: 0 5px;
+            margin-block: 0;
+            margin-inline: 5px;
         }
     }
 

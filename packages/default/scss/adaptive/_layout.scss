@@ -134,7 +134,8 @@
 
             .k-recur-items-wrap {
                 width: 100%;
-                margin: -1px 0;
+                margin-block: -1px;
+                margin-inline: 0;
             }
 
             .k-scheduler-recur-end-wrap {

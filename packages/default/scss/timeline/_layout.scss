@@ -114,7 +114,8 @@
     .k-timeline-horizontal {
         padding-block: 0;
         padding-inline: $kendo-timeline-spacing-x;
-        margin: $kendo-timeline-spacing-y 0;
+        margin-block: $kendo-timeline-spacing-y;
+        margin-inline: 0;
         width: 100%;
         position: relative;
         border: 0;
@@ -200,7 +201,8 @@
             }
 
             .k-event-collapse {
-                margin: -$kendo-icon-spacing 0;
+                margin-block: -$kendo-icon-spacing;
+                margin-inline: 0;
                 transform: rotate(90deg);
                 transition: transform .2s ease-in-out;
             }
@@ -346,7 +348,8 @@
 
             .k-timeline-track {
                 overflow: hidden;
-                margin: 0 $kendo-timeline-track-arrow-width;
+                margin-block: 0;
+                margin-inline: $kendo-timeline-track-arrow-width;
                 position: relative;
                 z-index: 2;
 
@@ -402,7 +405,8 @@
     .k-timeline-mobile {
         padding-block: 0;
         padding-inline: $kendo-timeline-mobile-spacing-x;
-        margin: $kendo-timeline-mobile-spacing-y 0;
+        margin-block: $kendo-timeline-mobile-spacing-y;
+        margin-inline: 0;
 
         .k-timeline-flag {
             max-width: $kendo-timeline-mobile-flag-max-width;

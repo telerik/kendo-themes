@@ -94,7 +94,8 @@
         }
 
         > .k-separator {
-            margin: 0 $kendo-menu-separator-spacing;
+            margin-block: 0;
+            margin-inline: $kendo-menu-separator-spacing;
             width: 0;
             height: auto;
             border-width: 0 0 0 1px;
@@ -123,7 +124,8 @@
         }
 
         > .k-separator {
-            margin: $kendo-menu-separator-spacing 0;
+            margin-block: $kendo-menu-separator-spacing;
+            margin-inline: 0;
             height: 0;
             border-width: 1px 0 0;
             border-style: solid;
@@ -165,7 +167,8 @@
         }
 
         .k-separator {
-            margin: $kendo-menu-separator-spacing 0;
+            margin-block: $kendo-menu-separator-spacing;
+            margin-inline: 0;
             height: 0;
             border-width: 1px 0 0;
             border-style: solid;

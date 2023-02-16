@@ -392,7 +392,8 @@
     }
 
     .k-task-wrap {
-        margin: 0 -21px;
+        margin-block: 0;
+        margin-inline: -21px;
         padding-block: 5px;
         padding-inline: 21px;
         display: inline-flex;
@@ -461,7 +462,8 @@
 
     // Milestone
     .k-milestone-wrap {
-        margin: 0 -2em;
+        margin-block: 0;
+        margin-inline: -2em;
     }
     .k-task-milestone {
         width: 1em;
@@ -599,7 +601,8 @@
         white-space: nowrap;
 
         .k-resource {
-            margin: 0 5px;
+            margin-block: 0;
+            margin-inline: 5px;
         }
     }
 
@@ -813,7 +816,8 @@
         }
 
         .k-task-wrap:not(.k-milestone-wrap) {
-            margin: 0 -26px;
+            margin-block: 0;
+            margin-inline: -26px;
         }
 
         .k-gantt-timeline {

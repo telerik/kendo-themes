@@ -333,7 +333,8 @@
             aspect-ratio: auto;
 
             .k-button-icon {
-                margin: -1em 0;
+                margin-block: -1em;
+                margin-inline: 0;
                 min-width: auto !important; // sass-lint:disable-line no-important
                 min-height: auto !important; // sass-lint:disable-line no-important
             }
