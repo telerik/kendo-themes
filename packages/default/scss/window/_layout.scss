@@ -58,7 +58,8 @@
     .k-window-title {
         padding-block: .5em;
         padding-inline: 0;
-        margin: -.5em 0;
+        margin-block: -.5em;
+        margin-inline: 0;
         font-size: $kendo-window-title-font-size;
         line-height: $kendo-window-title-line-height;
         text-overflow: ellipsis;
@@ -76,7 +77,8 @@
 
     // Actions
     .k-window-titlebar-actions {
-        margin: -5em 0;
+        margin-block: -5em;
+        margin-inline: 0;
         margin-inline-end: calc( #{$kendo-window-titlebar-padding-y} - #{$kendo-window-titlebar-padding-x} );
         line-height: 1;
         display: flex;

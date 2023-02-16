@@ -2,7 +2,8 @@
 
     // Base
     .k-stepper {
-        margin: $kendo-stepper-margin-y $kendo-stepper-margin-x;
+        margin-block: $kendo-stepper-margin-y;
+        margin-inline: $kendo-stepper-margin-x;
         padding-block: $kendo-stepper-padding-y;
         padding-inline: $kendo-stepper-padding-x;
         border-width: $kendo-stepper-border-width;

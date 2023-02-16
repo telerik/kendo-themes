@@ -48,7 +48,8 @@
         position: relative;
 
         > .k-link {
-            margin: (-$kendo-listgroup-item-padding-y) (-$kendo-listgroup-item-padding-x);
+            margin-block: (-$kendo-listgroup-item-padding-y);
+            margin-inline: (-$kendo-listgroup-item-padding-x);
             padding-block: $kendo-listgroup-item-padding-y;
             padding-inline: $kendo-listgroup-item-padding-x;
             color: inherit;
@@ -93,7 +94,8 @@
 
     // Forms in listgroup
     .k-listgroup-form-row {
-        margin: (-$kendo-listgroup-item-padding-y) (-$kendo-listgroup-item-padding-x);
+        margin-block: (-$kendo-listgroup-item-padding-y);
+        margin-inline: (-$kendo-listgroup-item-padding-x);
         padding-block: $kendo-listgroup-item-padding-y;
         padding-inline: $kendo-listgroup-item-padding-x;
         display: flex;

@@ -2,7 +2,8 @@
 
     // Image Editor
     .k-imageeditor {
-        margin: $kendo-image-editor-margin-y $kendo-image-editor-margin-x;
+        margin-block: $kendo-image-editor-margin-y;
+        margin-inline: $kendo-image-editor-margin-x;
         padding-block: $kendo-image-editor-padding-y;
         padding-inline: $kendo-image-editor-padding-x;
         border-width: $kendo-image-editor-border-width;
@@ -93,7 +94,8 @@
         position: absolute;
 
         .k-resize-handle {
-            margin: $kendo-image-editor-resize-handle-margin-y $kendo-image-editor-resize-handle-margin-x;
+            margin-block: $kendo-image-editor-resize-handle-margin-y;
+            margin-inline: $kendo-image-editor-resize-handle-margin-x;
             border-style: solid;
             border-width: $kendo-image-editor-resize-handle-border-width;
         }

@@ -20,7 +20,8 @@
     }
 
     .k-orgchart-container {
-        margin: 0 auto;
+        margin-block: 0;
+        margin-inline: auto;
         width: 100%;
         height: 100%;
         position: relative;
@@ -108,7 +109,8 @@
     }
 
     .k-orgchart-line-v {
-        margin: 0 auto;
+        margin-block: 0;
+        margin-inline: auto;
         width: var( --kendo-orgchart-line-size, #{$kendo-orgchart-line-size} );
         height: var( --kendo-orgchart-line-v-height, #{$kendo-orgchart-line-v-height} );
     }

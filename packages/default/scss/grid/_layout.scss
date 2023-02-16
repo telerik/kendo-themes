@@ -520,7 +520,8 @@
     .k-grid-column-menu-standalone a.k-grid-filter {
         position: initial;
         display: inline-block;
-        margin: -4px 0;
+        margin-block: -4px;
+        margin-inline: 0;
         padding-block: 4px;
         padding-inline: 8px;
     }
@@ -867,7 +868,8 @@
 
     .k-grid-norecords-template {
         box-sizing: border-box;
-        margin: 0 auto;
+        margin-block: 0;
+        margin-inline: auto;
         width: 20em;
         height: 4em;
         border: 1px solid;
@@ -925,7 +927,8 @@
 
             .k-grid-header {
                 .k-table-th > .k-link {
-                    margin: (-$_header-padding-y) (-$_header-padding-x);
+                    margin-block: (-$_header-padding-y);
+                    margin-inline: (-$_header-padding-x);
                     padding-block: $_header-padding-y;
                     padding-inline: $_header-padding-x;
                 }
@@ -943,7 +946,8 @@
 
             .k-table-th {
                 > .k-cell-inner {
-                    margin: (-$_header-padding-y) (-$_header-padding-x);
+                    margin-block: (-$_header-padding-y);
+                    margin-inline: (-$_header-padding-x);
 
                     > .k-link {
                         padding-block: $_header-padding-y;

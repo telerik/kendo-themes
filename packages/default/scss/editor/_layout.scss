@@ -262,7 +262,8 @@
     .k-edit-form-content {
         flex: 1 1 auto;
         overflow: auto;
-        margin: (-$kendo-window-inner-padding-y) (-$kendo-window-inner-padding-x);
+        margin-block: (-$kendo-window-inner-padding-y);
+        margin-inline: (-$kendo-window-inner-padding-x);
         padding-block: $kendo-window-inner-padding-y;
         padding-inline: $kendo-window-inner-padding-x;
     }
@@ -613,7 +614,8 @@
                 .k-column-resize-marker {
                     width: 2px;
                     height: 100%;
-                    margin: 0 auto;
+                    margin-block: 0;
+                    margin-inline: auto;
                     display: none;
                     opacity: .8;
                 }

@@ -28,7 +28,8 @@
     .k-rating-container {
         flex: 0 1 auto;
         position: relative;
-        margin: 0 $kendo-rating-container-margin-x;
+        margin-block: 0;
+        margin-inline: $kendo-rating-container-margin-x;
 
         .k-rating-item {
             display: inline-flex;
@@ -74,7 +75,8 @@
         align-items: center;
         vertical-align: middle;
         line-height: $kendo-rating-label-line-height;
-        margin: $kendo-rating-label-margin-y $kendo-rating-label-margin-x;
+        margin-block: $kendo-rating-label-margin-y;
+        margin-inline: $kendo-rating-label-margin-x;
     }
 
     .k-rtl,

@@ -122,7 +122,8 @@
             }
 
             .k-upload-pct {
-                margin: 0 $kendo-upload-icon-spacing;
+                margin-block: 0;
+                margin-inline: $kendo-upload-icon-spacing;
                 font-weight: normal;
                 vertical-align: middle;
             }

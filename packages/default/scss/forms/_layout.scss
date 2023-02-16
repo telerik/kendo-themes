@@ -132,7 +132,8 @@
             display: inline-block;
             font-size: $kendo-font-size-xs;
             line-height: 1;
-            margin: 0 $kendo-padding-md-x;
+            margin-block: 0;
+            margin-inline: $kendo-padding-md-x;
         }
 
 

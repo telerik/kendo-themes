@@ -142,7 +142,8 @@
         cursor: pointer;
 
         > .k-drawer-link {
-            margin: (-$kendo-drawer-item-padding-y) (-$kendo-drawer-item-padding-x);
+            margin-block: (-$kendo-drawer-item-padding-y);
+            margin-inline: (-$kendo-drawer-item-padding-x);
             padding-block: $kendo-drawer-item-padding-y;
             padding-inline: $kendo-drawer-item-padding-x;
             color: inherit;

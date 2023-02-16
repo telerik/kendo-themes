@@ -283,7 +283,8 @@
 
         // Values
         .k-value-fields {
-            margin: $kendo-pivotgrid-configurator-fields-margin-y $kendo-pivotgrid-configurator-fields-margin-x;
+            margin-block: $kendo-pivotgrid-configurator-fields-margin-y;
+            margin-inline: $kendo-pivotgrid-configurator-fields-margin-x;
             display: flex;
             flex-direction: column;
             gap: k-math-div( $kendo-pivotgrid-spacer, 2 );

@@ -2,7 +2,8 @@
 
     // Breadcrumb
     .k-breadcrumb {
-        margin: $kendo-breadcrumb-margin-y $kendo-breadcrumb-margin-x;
+        margin-block: $kendo-breadcrumb-margin-y;
+        margin-inline: $kendo-breadcrumb-margin-x;
         padding-block: $kendo-breadcrumb-padding-y;
         padding-inline: $kendo-breadcrumb-padding-x;
         border-width: $kendo-breadcrumb-border-width;

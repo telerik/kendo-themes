@@ -73,7 +73,8 @@
         padding-inline: $kendo-listview-item-padding-x;
     }
     .k-listview-item-padding-rectangle .k-listview-link {
-        margin: (-$kendo-listview-item-padding-y) (-$kendo-listview-item-padding-x);
+        margin-block: (-$kendo-listview-item-padding-y);
+        margin-inline: (-$kendo-listview-item-padding-x);
         padding-block: $kendo-listview-item-padding-y;
         padding-inline: $kendo-listview-item-padding-x;
     }
