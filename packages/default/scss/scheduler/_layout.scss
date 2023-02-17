@@ -203,8 +203,8 @@
 
     // Header and footer
     .k-scheduler-toolbar {
-        border-width: 0;
-        border-bottom-width: $kendo-toolbar-border-width;
+        // TODO: component should render k-toolbar-top class
+        @extend .k-toolbar-top !optional;
         white-space: nowrap;
         flex-shrink: 0;
         position: relative;

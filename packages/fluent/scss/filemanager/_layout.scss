@@ -21,8 +21,8 @@
         border-color: inherit;
     }
     .k-filemanager-toolbar {
-        border-width: 0;
-        border-bottom-width: var( --kendo-file-manager-toolbar-border-width, #{$kendo-file-manager-toolbar-border-width} );
+        // TODO: component should render k-toolbar-top class
+        @extend .k-toolbar-top !optional;
         border-color: inherit;
         flex-shrink: 0;
     }

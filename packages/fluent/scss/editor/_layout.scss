@@ -143,9 +143,10 @@
     }
 
 
-    // Тoolbar
+    // Toolbar
     .k-editor-toolbar {
-        border-width: 0 0 $kendo-toolbar-border-width 0;
+        // TODO: component should render k-toolbar-top class
+        @extend .k-toolbar-top !optional;
         flex-shrink: 0;
 
         .k-editor-export {

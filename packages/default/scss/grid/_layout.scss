@@ -378,11 +378,14 @@
 
     // Toolbar
     .k-grid-toolbar {
-        border-width: 0 0 $kendo-grid-toolbar-border-width;
+        // TODO: component should render k-toolbar-top class
+        @extend .k-toolbar-top !optional;
         flex-shrink: 0;
     }
     .k-grid-toolbar-bottom {
-        border-width: $kendo-grid-toolbar-border-width 0 0;
+        // TODO: component should render k-toolbar-bottom class
+        @extend .k-toolbar-bottom !optional;
+        flex-shrink: 0;
     }
 
 

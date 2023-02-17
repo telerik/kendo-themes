@@ -29,7 +29,8 @@
 
     // Image editor toolbar
     .k-imageeditor-toolbar {
-        border-width: 0;
+        // TODO: component should render k-toolbar-top class
+        @extend .k-toolbar-top !optional;
     }
 
 
