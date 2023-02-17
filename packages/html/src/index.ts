@@ -91,3 +91,6 @@ export * from './card/index';
 
 // Editors
 export * from './editor/index';
+
+// Tables
+export * from './table/index';
