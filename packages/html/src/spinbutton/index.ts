@@ -1,1 +1,1 @@
-export * from './spinbutton';
+export * from './spinbutton.spec';
