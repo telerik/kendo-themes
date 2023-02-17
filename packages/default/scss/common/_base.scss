@@ -118,8 +118,7 @@
 
     // Disabled state
     .k-disabled,
-    .k-widget[disabled],
-    .k-disabled {
+    .k-widget[disabled] {
         @include disabled( $kendo-disabled-styling );
 
 
