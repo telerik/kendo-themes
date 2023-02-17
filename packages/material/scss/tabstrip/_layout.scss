@@ -9,14 +9,14 @@
     .k-tabstrip-items {
         text-transform: uppercase;
 
-        .k-tabstrip-left & .k-link {
-            justify-content: flex-end;
-        }
-
         .k-disabled {
             opacity: 1;
             filter: none;
         }
+    }
+
+    .k-tabstrip-left .k-tabstrip-items .k-link {
+        justify-content: flex-end;
     }
 
 }

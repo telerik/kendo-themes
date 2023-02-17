@@ -30,10 +30,9 @@
         flex-flow: column nowrap;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        .k-tabstrip-wrapper > & {
-            flex: 1 1 auto;
-        }
+    }
+    .k-tabstrip-wrapper > .k-tabstrip {
+        flex: 1 1 auto;
     }
 
 
@@ -279,20 +278,6 @@
                 transform: scaleY(0);
                 pointer-events: none;
                 transition: opacity .3s, transform .3s;
-
-                // Variants
-                .k-tabstrip-top > & {
-                    border-bottom-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
-                }
-                .k-tabstrip-bottom > & {
-                    border-top-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
-                }
-                .k-tabstrip-left > & {
-                    border-right-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
-                }
-                .k-tabstrip-right > & {
-                    border-left-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
-                }
             }
             .k-item:active::after,
             .k-item.k-active::after,
@@ -305,6 +290,22 @@
                 z-index: 1;
             }
         }
+
+
+        // Variants
+        .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item::after {
+            border-bottom-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+        }
+        .k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-item::after {
+            border-top-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+        }
+        .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
+            border-right-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+        }
+        .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
+            border-left-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+        }
+
 
         // Hide tabstrip indicator when dragging
         .k-tabstrip-items-wrapper .k-item.k-tabstrip-dragging {
