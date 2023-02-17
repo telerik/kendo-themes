@@ -1,0 +1,15 @@
+export enum States {
+    'open' = 'open',
+    'hover' = 'hover',
+    'focus' = 'focus',
+    'active' = 'active',
+    'selected' = 'selected',
+    'disabled' = 'disabled',
+    'valid' = 'valid',
+    'invalid' = 'invalid',
+    'loading' = 'loading',
+    'required' = 'required',
+    'empty' = 'empty',
+    'indeterminate' = 'indeterminate',
+    'checked' = 'checked',
+  }
