@@ -1,1 +1,1 @@
-export * from './numerictextbox';
+export * from './numerictextbox.spec';
