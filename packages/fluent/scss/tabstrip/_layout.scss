@@ -3,6 +3,7 @@
 
 @mixin kendo-tabstrip--layout() {
 
+    // Tabstrip wrapper
     .k-tabstrip-wrapper {
         padding-inline: var( --kendo-tabstrip-wrapper-padding-x, #{ $kendo-tabstrip-wrapper-padding-x} );
         padding-block: var( --kendo-tabstrip-wrapper-padding-y, #{ $kendo-tabstrip-wrapper-padding-y} );
@@ -13,6 +14,8 @@
         flex-direction: column;
     }
 
+
+    // Tabstrip
     .k-tabstrip {
         border-width: 0;
         border-color: transparent;
@@ -33,6 +36,8 @@
         }
     }
 
+
+    // Tabstrip items wrapper
     .k-tabstrip-items-wrapper {
         box-sizing: border-box;
         border-width: 0;
@@ -41,6 +46,8 @@
         position: relative;
     }
 
+
+    // Tabstrip items
     .k-tabstrip-items {
         box-sizing: border-box;
         outline: 0;
@@ -93,6 +100,8 @@
         }
     }
 
+
+    // Tabstrip content
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
         margin: 0 !important; // sass-lint:disable-line no-important
@@ -113,7 +122,8 @@
         }
     }
 
-    // Loading
+
+    // Loading indicator
     .k-tabstrip-items .k-loading {
         width: 20%;
         height: 0;
@@ -147,6 +157,8 @@
             }
 
             > .k-button {
+                padding-block: var( --kendo-tabstrip-scrollable-button-padding-y, #{$kendo-tabstrip-scrollable-button-padding-y} );
+                padding-inline: var( --kendo-tabstrip-scrollable-button-padding-x, #{$kendo-tabstrip-scrollable-button-padding-x} );
                 width: auto;
                 height: auto;
                 flex: none;
@@ -158,25 +170,23 @@
                     min-height: auto;
                 }
             }
-            // TODO: Think of a less verbose name
-            &.k-hstack {
-                > .k-button {
-                    padding-inline: var( --kendo-tabstrip-scrollable-button-padding-x, #{$kendo-tabstrip-scrollable-button-padding-x} );
-                }
-            }
-
-            &.k-vstack {
-                > .k-button {
-                    padding-block: var( --kendo-tabstrip-scrollable-button-padding-y, #{$kendo-tabstrip-scrollable-button-padding-y} );
-                }
-            }
         }
+    }
+
+
+    // Tabstrip orientation
+    .k-tabstrip-horizontal {
+        flex-direction: row;
+    }
+    .k-tabstrip-vertical {
+        flex-direction: column;
     }
 
 
     // Tabstrip position
     .k-tabstrip-top {
         > .k-tabstrip-items-wrapper {
+            @extend .k-tabstrip-horizontal !optional;
             border-bottom-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
 
             .k-item {
@@ -187,6 +197,7 @@
     }
     .k-tabstrip-bottom {
         > .k-tabstrip-items-wrapper {
+            @extend .k-tabstrip-horizontal !optional;
             border-top-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
 
             .k-item {
@@ -199,6 +210,7 @@
         flex-direction: row;
 
         > .k-tabstrip-items-wrapper {
+            @extend .k-tabstrip-vertical !optional;
             border-right-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
 
             > .k-tabstrip-items {
@@ -215,6 +227,7 @@
         flex-direction: row-reverse;
 
         > .k-tabstrip-items-wrapper {
+            @extend .k-tabstrip-vertical !optional;
             border-left-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
 
             > .k-tabstrip-items {
@@ -302,6 +315,8 @@
 
     }
 
+
+    // RTL
     .k-rtl .k-tabstrip,
     .k-tabstrip[dir="rtl"] {
 
