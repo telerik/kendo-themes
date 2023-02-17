@@ -97,6 +97,14 @@
             align-content: center;
             align-items: center;
         }
+
+
+        // Disabled state
+        .k-item.k-disabled,
+        .k-item[disabled] {
+            opacity: $kendo-tabstrip-item-disabled-opacity;
+            filter: $kendo-tabstrip-item-disabled-filter;
+        }
     }
 
 
