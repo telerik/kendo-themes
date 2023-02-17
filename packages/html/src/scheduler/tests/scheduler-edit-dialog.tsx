@@ -7,7 +7,7 @@ import { DatePicker } from '../../datepicker';
 import { NumericTextbox } from '../../numerictextbox';
 import { RadioButton } from '../../radio';
 import { Textarea } from '../../textarea/textarea';
-import { Textbox } from '../../textbox/textbox';
+import { Textbox } from '../../textbox';
 import { TimePicker } from '../../timepicker';
 
 const root = ReactDOM.createRoot(
