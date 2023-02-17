@@ -1,26 +1,28 @@
-import * as React from 'react';
 import { Icon } from '../icon';
+import { classNames, States } from '../utils-new';
 
-export interface InputLoadingIconProps {
-    className?: string;
-    loading?: boolean;
-    disabled?: boolean;
-}
+const className = `k-input-loading-icon`;
 
-export class InputLoadingIcon extends React.Component<InputLoadingIconProps> {
+const states = [
+    States.disabled,
+    States.loading
+];
 
-    render() {
-        const {
-            loading,
-            disabled
-        } = this.props;
+export type InputLoadingIconState = { [K in (typeof states)[number]]?: boolean };
 
-        if (disabled || !loading) {
-            return <></>;
-        }
+export const InputLoadingIcon = (
+    props: InputLoadingIconState &
+      React.HTMLAttributes<HTMLInputElement>
+) => {
+    const {
+        disabled,
+        loading } = props;
 
-        return (
-            <Icon className="k-input-loading-icon" name="loading" />
-        );
+    if (disabled || !loading) {
+        return <></>;
     }
-}
+
+    return (
+        <Icon className={classNames(props.className, className)} name="loading" />
+    );
+};

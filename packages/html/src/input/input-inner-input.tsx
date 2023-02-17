@@ -1,37 +1,51 @@
-import * as React from 'react';
+import { classNames, optionClassNames } from '../utils-new';
 
-export interface InputInnerInputProps {
-    className?: string;
+const className = `k-input-inner`;
+
+const states = [];
+
+const options = {};
+
+export type InputInnerInputProps = {
     value?: string;
     type?: string;
     placeholder?: string;
     autocomplete?: string;
-}
+};
 
-export class InputInnerInput extends React.Component<InputInnerInputProps> {
+const defaultProps = {
+    type: 'text',
+    autocomplete: 'off',
+    value: '',
+    placeholder: ''
+} as const;
 
-    static defaultProps = {
-        type: 'text',
-        autocomplete: 'off',
-        value: '',
-        placeholder: ''
-    };
+export const InputInnerInput = (
+    props: InputInnerInputProps &
+      React.HTMLAttributes<HTMLInputElement>
+) => {
+    const {
+        value = defaultProps.value,
+        type = defaultProps.type,
+        placeholder = defaultProps.placeholder,
+        autocomplete = defaultProps.autocomplete,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            type,
-            value,
-            placeholder,
-            autocomplete
-        } = this.props;
+    return (
+        <input
+            {...other}
+            type={type}
+            className={classNames(props.className, className, optionClassNames(className, props))}
+            placeholder={placeholder}
+            autoComplete={autocomplete}
+            defaultValue={value}
+        />
+    );
+};
 
-        return (
-            <input
-                type={type}
-                className="k-input-inner"
-                placeholder={placeholder}
-                autoComplete={autocomplete}
-                defaultValue={value} />
-        );
-    }
-}
+InputInnerInput.states = states;
+InputInnerInput.options = options;
+InputInnerInput.className = className;
+
+export default InputInnerInput;

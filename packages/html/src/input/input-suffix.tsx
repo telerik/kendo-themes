@@ -1,31 +1,16 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames } from '../utils-new';
 
-export interface InputSuffixProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-input-suffix`;
 
-export class InputSuffix extends React.Component<InputSuffixProps> {
+export const InputSuffix = (props: React.HTMLAttributes<HTMLSpanElement>) => {
 
-    render() {
-        const {
-            className,
-            children
-        } = this.props;
-
-        if (!children) {
-            return <></>;
-        }
-
-        return (
-            <span
-                className={classNames(
-                    className,
-                    'k-input-suffix'
-                )}>
-                {children}
-            </span>
-        );
+    if (!props.children) {
+        return <></>;
     }
-}
+
+    return (
+        <span className={classNames(className, props.className)}>
+            {props.children}
+        </span>
+    );
+};
