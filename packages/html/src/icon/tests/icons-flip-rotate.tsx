@@ -30,28 +30,28 @@ root.render(
             <span>315deg</span>
 
             <span>
-                <Icon name="hand" size="xl" rotate="0" />
+                <Icon name="hand" size="xlarge" rotate="0" />
             </span>
             <span>
-                <Icon name="hand" size="xl" rotate="45" />
+                <Icon name="hand" size="xlarge" rotate="45" />
             </span>
             <span>
-                <Icon name="hand" size="xl" rotate="90" />
+                <Icon name="hand" size="xlarge" rotate="90" />
             </span>
             <span>
-                <Icon name="hand" size="xl" rotate="135" />
+                <Icon name="hand" size="xlarge" rotate="135" />
             </span>
             <span>
-                <Icon name="hand" size="xl" rotate="180" />
+                <Icon name="hand" size="xlarge" rotate="180" />
             </span>
             <span>
-                <Icon name="hand" size="xl" rotate="225" />
+                <Icon name="hand" size="xlarge" rotate="225" />
             </span>
             <span>
-                <Icon name="hand" size="xl" rotate="270" />
+                <Icon name="hand" size="xlarge" rotate="270" />
             </span>
             <span>
-                <Icon name="hand" size="xl" rotate="315" />
+                <Icon name="hand" size="xlarge" rotate="315" />
             </span>
 
             <span>Flip</span>
@@ -63,13 +63,13 @@ root.render(
             <span className="k-colspan-5"></span>
 
             <span>
-                <Icon name="folder-open" size="xl" />
+                <Icon name="folder-open" size="xlarge" />
             </span>
             <span>
-                <Icon name="folder-open" size="xl" flip="v" />
+                <Icon name="folder-open" size="xlarge" flip="v" />
             </span>
             <span>
-                <Icon name="folder-open" size="xl" flip="h" />
+                <Icon name="folder-open" size="xlarge" flip="h" />
             </span>
 
         </div>
