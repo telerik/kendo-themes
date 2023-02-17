@@ -27,10 +27,9 @@
         flex-flow: column nowrap;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        .k-tabstrip-wrapper > & {
-            flex: 1 1 auto;
-        }
+    }
+    .k-tabstrip-wrapper > .k-tabstrip {
+        flex: 1 1 auto;
     }
 
 
@@ -315,20 +314,6 @@
                 bottom: 0;
                 left: 0;
                 pointer-events: none;
-
-                // Variants
-                .k-tabstrip-top > & {
-                    border-bottom-width: $kendo-tabstrip-indicator-size;
-                }
-                .k-tabstrip-bottom > & {
-                    border-top-width: $kendo-tabstrip-indicator-size;
-                }
-                .k-tabstrip-left > & {
-                    border-right-width: $kendo-tabstrip-indicator-size;
-                }
-                .k-tabstrip-right > & {
-                    border-left-width: $kendo-tabstrip-indicator-size;
-                }
             }
             .k-item.k-active::after {
                 display: block;
@@ -336,6 +321,29 @@
 
             .k-item > .k-link {
                 z-index: 1;
+            }
+        }
+
+
+        // Variants
+        .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item::after {
+            border-bottom-width: $kendo-tabstrip-indicator-size;
+        }
+        .k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-item::after {
+            border-top-width: $kendo-tabstrip-indicator-size;
+        }
+        .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
+            border-right-width: $kendo-tabstrip-indicator-size;
+        }
+        .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
+            border-left-width: $kendo-tabstrip-indicator-size;
+        }
+
+
+        // Hide tabstrip indicator when dragging
+        .k-tabstrip-items-wrapper .k-item.k-tabstrip-dragging {
+            &::after {
+                display: none !important; // sass-lint:disable-line no-important
             }
         }
 
