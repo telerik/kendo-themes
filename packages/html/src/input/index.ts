@@ -1,4 +1,4 @@
-export * from './input';
+export * from './input.spec';
 export * from './picker';
 export * from './input-clear-value';
 export * from './input-inner-input';

@@ -1,31 +1,16 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames } from '../utils-new';
 
-export interface InputPrefixProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-input-prefix`;
 
-export class InputPrefix extends React.Component<InputPrefixProps> {
+export const InputPrefix = (props: React.HTMLAttributes<HTMLSpanElement>) => {
 
-    render() {
-        const {
-            className,
-            children,
-        } = this.props;
-
-        if (!children) {
-            return <></>;
-        }
-
-        return (
-            <span
-                className={classNames(
-                    className,
-                    'k-input-prefix'
-                )}>
-                {children}
-            </span>
-        );
+    if (!props.children) {
+        return <></>;
     }
-}
+
+    return (
+        <span className={classNames(className, props.className)}>
+            {props.children}
+        </span>
+    );
+};
