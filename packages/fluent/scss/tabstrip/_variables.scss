@@ -76,6 +76,8 @@ $kendo-tabstrip-item-disabled-bg: none !default;
 /// The border color of the disabled tabstrip item
 /// @group tabstrip
 $kendo-tabstrip-item-disabled-border: var( --kendo-disabled-border, initial ) !default;
+$kendo-tabstrip-item-disabled-opacity: null !default;
+$kendo-tabstrip-item-disabled-filter: null !default;
 
 /// The background color of hovered tabs
 /// @group tabstrip

@@ -55,6 +55,18 @@
             &.k-tabstrip-dragging {
                 @include focus-indicator( $kendo-tabstrip-item-dragging-shadow );
             }
+
+
+            // Disabled
+            &.k-disabled,
+            &[disabled] {
+                @include fill(
+                    $kendo-tabstrip-item-disabled-text,
+                    $kendo-tabstrip-item-disabled-bg,
+                    $kendo-tabstrip-item-disabled-border,
+                    $kendo-tabstrip-item-disabled-gradient
+                );
+            }
         }
 
     }

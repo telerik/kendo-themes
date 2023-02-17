@@ -2,17 +2,8 @@
 
 @include exports( "tabstrip/layout/material" ) {
 
-    .k-tabstrip {
-        line-height: $kendo-tabstrip-line-height;
-    }
-
     .k-tabstrip-items {
         text-transform: uppercase;
-
-        .k-disabled {
-            opacity: 1;
-            filter: none;
-        }
     }
 
     .k-tabstrip-left .k-tabstrip-items .k-link {
