@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Table, TableGroupRow, TableRow, TableTbody, TableTd, TableTfoot, TableTh, TableThead } from '../../table';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -21,195 +22,183 @@ root.render(
             <span>Native table large</span>
 
             <section>
-                <table className="k-table k-table-sm">
+                <Table size="small">
                     <colgroup>
                         <col style={{ width: '50px' }} />
                         <col />
                         <col />
                     </colgroup>
-                    <thead className="k-table-thead">
-                        <tr className="k-table-row">
-                            <th className="k-table-th">ID</th>
-                            <th className="k-table-th">Name</th>
-                            <th className="k-table-th">Job Title</th>
-                        </tr>
-                    </thead>
-                    <tbody className="k-table-tbody">
-                        <tr className="k-table-group-row">
-                            <th colSpan={3} className="k-table-th">
-                                Group row
-                            </th>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">1</td>
-                            <td className="k-table-td">Data 1.2</td>
-                            <td className="k-table-td">Data 1.3</td>
-                        </tr>
-                        <tr className="k-table-row k-table-alt-row">
-                            <td className="k-table-td">2</td>
-                            <td className="k-table-td">Data 2.2 (alt)</td>
-                            <td className="k-table-td">Data 2.3</td>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">3</td>
-                            <td className="k-table-td">Data 3.2</td>
-                            <td className="k-table-td">Data 3.3</td>
-                        </tr>
-                        <tr className="k-table-group-row">
-                            <th colSpan={3} className="k-table-th">
-                                Group row
-                            </th>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">4</td>
-                            <td className="k-table-td">Data 4.2</td>
-                            <td className="k-table-td">Data 4.3</td>
-                        </tr>
-                        <tr className="k-table-row k-table-alt-row">
-                            <td className="k-table-td">5</td>
-                            <td className="k-table-td">Data 5.2 (alt)</td>
-                            <td className="k-table-td">Data 5.3</td>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">6</td>
-                            <td className="k-table-td">Data 6.2</td>
-                            <td className="k-table-td">Data 6.3</td>
-                        </tr>
-                    </tbody>
-                    <tfoot className="k-table-tfoot">
-                        <tr className="k-table-row">
-                            <td colSpan={3} className="k-table-td">30 records in total</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                    <TableThead>
+                        <TableRow>
+                            <TableTh text="ID"></TableTh>
+                            <TableTh text="Name"></TableTh>
+                            <TableTh text="Job Title"></TableTh>
+                        </TableRow>
+                    </TableThead>
+                    <TableTbody>
+                        <TableGroupRow>
+                            <TableTh text="Group row" colspan="3"></TableTh>
+                        </TableGroupRow>
+                        <TableRow>
+                            <TableTd text="1"></TableTd>
+                            <TableTd text="Data 1.2"></TableTd>
+                            <TableTd text="Data 1.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt>
+                            <TableTd text="2"></TableTd>
+                            <TableTd text="Data 2.2 (alt)"></TableTd>
+                            <TableTd text="Data 2.3"></TableTd>
+                        </TableRow>
+                        <TableRow>
+                            <TableTd text="3"></TableTd>
+                            <TableTd text="Data 3.2"></TableTd>
+                            <TableTd text="Data 3.3"></TableTd>
+                        </TableRow>
+                        <TableGroupRow>
+                            <TableTh text="Group row" colspan="3"></TableTh>
+                        </TableGroupRow>
+                        <TableRow>
+                            <TableTd text="4"></TableTd>
+                            <TableTd text="Data 4.2"></TableTd>
+                            <TableTd text="Data 4.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt>
+                            <TableTd text="5"></TableTd>
+                            <TableTd text="Data 5.2 (alt)"></TableTd>
+                            <TableTd text="Data 5.3"></TableTd>
+                        </TableRow>
+                        <TableRow>
+                            <TableTd text="6"></TableTd>
+                            <TableTd text="Data 6.2"></TableTd>
+                            <TableTd text="Data 6.3"></TableTd>
+                        </TableRow>
+                    </TableTbody>
+                    <TableTfoot>
+                        <TableRow>
+                            <TableTd text="30 records in total" colspan="3"></TableTd>
+                        </TableRow>
+                    </TableTfoot>
+                </Table>
             </section>
 
             <section>
-                <table className="k-table k-table-md">
+                <Table size="medium">
                     <colgroup>
                         <col style={{ width: '50px' }} />
                         <col />
                         <col />
                     </colgroup>
-                    <thead className="k-table-thead">
-                        <tr className="k-table-row">
-                            <th className="k-table-th">ID</th>
-                            <th className="k-table-th">Name</th>
-                            <th className="k-table-th">Job Title</th>
-                        </tr>
-                    </thead>
-                    <tbody className="k-table-tbody">
-                        <tr className="k-table-group-row">
-                            <th colSpan={3} className="k-table-th">
-                                Group row
-                            </th>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">1</td>
-                            <td className="k-table-td">Data 1.2</td>
-                            <td className="k-table-td">Data 1.3</td>
-                        </tr>
-                        <tr className="k-table-row k-table-alt-row">
-                            <td className="k-table-td">2</td>
-                            <td className="k-table-td">Data 2.2 (alt)</td>
-                            <td className="k-table-td">Data 2.3</td>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">3</td>
-                            <td className="k-table-td">Data 3.2</td>
-                            <td className="k-table-td">Data 3.3</td>
-                        </tr>
-                        <tr className="k-table-group-row">
-                            <th colSpan={3} className="k-table-th">
-                                Group row
-                            </th>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">4</td>
-                            <td className="k-table-td">Data 4.2</td>
-                            <td className="k-table-td">Data 4.3</td>
-                        </tr>
-                        <tr className="k-table-row k-table-alt-row">
-                            <td className="k-table-td">5</td>
-                            <td className="k-table-td">Data 5.2 (alt)</td>
-                            <td className="k-table-td">Data 5.3</td>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">6</td>
-                            <td className="k-table-td">Data 6.2</td>
-                            <td className="k-table-td">Data 6.3</td>
-                        </tr>
-                    </tbody>
-                    <tfoot className="k-table-tfoot">
-                        <tr className="k-table-row">
-                            <td colSpan={3} className="k-table-td">30 records in total</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                    <TableThead>
+                        <TableRow>
+                            <TableTh text="ID"></TableTh>
+                            <TableTh text="Name"></TableTh>
+                            <TableTh text="Job Title"></TableTh>
+                        </TableRow>
+                    </TableThead>
+                    <TableTbody>
+                        <TableGroupRow>
+                            <TableTh text="Group row" colspan="3"></TableTh>
+                        </TableGroupRow>
+                        <TableRow>
+                            <TableTd text="1"></TableTd>
+                            <TableTd text="Data 1.2"></TableTd>
+                            <TableTd text="Data 1.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt>
+                            <TableTd text="2"></TableTd>
+                            <TableTd text="Data 2.2 (alt)"></TableTd>
+                            <TableTd text="Data 2.3"></TableTd>
+                        </TableRow>
+                        <TableRow>
+                            <TableTd text="3"></TableTd>
+                            <TableTd text="Data 3.2"></TableTd>
+                            <TableTd text="Data 3.3"></TableTd>
+                        </TableRow>
+                        <TableGroupRow>
+                            <TableTh text="Group row" colspan="3"></TableTh>
+                        </TableGroupRow>
+                        <TableRow>
+                            <TableTd text="4"></TableTd>
+                            <TableTd text="Data 4.2"></TableTd>
+                            <TableTd text="Data 4.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt>
+                            <TableTd text="5"></TableTd>
+                            <TableTd text="Data 5.2 (alt)"></TableTd>
+                            <TableTd text="Data 5.3"></TableTd>
+                        </TableRow>
+                        <TableRow>
+                            <TableTd text="6"></TableTd>
+                            <TableTd text="Data 6.2"></TableTd>
+                            <TableTd text="Data 6.3"></TableTd>
+                        </TableRow>
+                    </TableTbody>
+                    <TableTfoot>
+                        <TableRow>
+                            <TableTd text="30 records in total" colspan="3"></TableTd>
+                        </TableRow>
+                    </TableTfoot>
+                </Table>
             </section>
 
             <section>
-                <table className="k-table k-table-lg">
+                <Table size="large">
                     <colgroup>
                         <col style={{ width: '50px' }} />
                         <col />
                         <col />
                     </colgroup>
-                    <thead className="k-table-thead">
-                        <tr className="k-table-row">
-                            <th className="k-table-th">ID</th>
-                            <th className="k-table-th">Name</th>
-                            <th className="k-table-th">Job Title</th>
-                        </tr>
-                    </thead>
-                    <tbody className="k-table-tbody">
-                        <tr className="k-table-group-row">
-                            <th colSpan={3} className="k-table-th">
-                                Group row
-                            </th>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">1</td>
-                            <td className="k-table-td">Data 1.2</td>
-                            <td className="k-table-td">Data 1.3</td>
-                        </tr>
-                        <tr className="k-table-row k-table-alt-row">
-                            <td className="k-table-td">2</td>
-                            <td className="k-table-td">Data 2.2 (alt)</td>
-                            <td className="k-table-td">Data 2.3</td>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">3</td>
-                            <td className="k-table-td">Data 3.2</td>
-                            <td className="k-table-td">Data 3.3</td>
-                        </tr>
-                        <tr className="k-table-group-row">
-                            <th colSpan={3} className="k-table-th">
-                                Group row
-                            </th>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">4</td>
-                            <td className="k-table-td">Data 4.2</td>
-                            <td className="k-table-td">Data 4.3</td>
-                        </tr>
-                        <tr className="k-table-row k-table-alt-row">
-                            <td className="k-table-td">5</td>
-                            <td className="k-table-td">Data 5.2 (alt)</td>
-                            <td className="k-table-td">Data 5.3</td>
-                        </tr>
-                        <tr className="k-table-row">
-                            <td className="k-table-td">6</td>
-                            <td className="k-table-td">Data 6.2</td>
-                            <td className="k-table-td">Data 6.3</td>
-                        </tr>
-                    </tbody>
-                    <tfoot className="k-table-tfoot">
-                        <tr className="k-table-row">
-                            <td colSpan={3} className="k-table-td">30 records in total</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                    <TableThead>
+                        <TableRow>
+                            <TableTh text="ID"></TableTh>
+                            <TableTh text="Name"></TableTh>
+                            <TableTh text="Job Title"></TableTh>
+                        </TableRow>
+                    </TableThead>
+                    <TableTbody>
+                        <TableGroupRow>
+                            <TableTh text="Group row" colspan="3"></TableTh>
+                        </TableGroupRow>
+                        <TableRow>
+                            <TableTd text="1"></TableTd>
+                            <TableTd text="Data 1.2"></TableTd>
+                            <TableTd text="Data 1.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt>
+                            <TableTd text="2"></TableTd>
+                            <TableTd text="Data 2.2 (alt)"></TableTd>
+                            <TableTd text="Data 2.3"></TableTd>
+                        </TableRow>
+                        <TableRow>
+                            <TableTd text="3"></TableTd>
+                            <TableTd text="Data 3.2"></TableTd>
+                            <TableTd text="Data 3.3"></TableTd>
+                        </TableRow>
+                        <TableGroupRow>
+                            <TableTh text="Group row" colspan="3"></TableTh>
+                        </TableGroupRow>
+                        <TableRow>
+                            <TableTd text="4"></TableTd>
+                            <TableTd text="Data 4.2"></TableTd>
+                            <TableTd text="Data 4.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt>
+                            <TableTd text="5"></TableTd>
+                            <TableTd text="Data 5.2 (alt)"></TableTd>
+                            <TableTd text="Data 5.3"></TableTd>
+                        </TableRow>
+                        <TableRow>
+                            <TableTd text="6"></TableTd>
+                            <TableTd text="Data 6.2"></TableTd>
+                            <TableTd text="Data 6.3"></TableTd>
+                        </TableRow>
+                    </TableTbody>
+                    <TableTfoot>
+                        <TableRow>
+                            <TableTd text="30 records in total" colspan="3"></TableTd>
+                        </TableRow>
+                    </TableTfoot>
+                </Table>
             </section>
 
         </div>
