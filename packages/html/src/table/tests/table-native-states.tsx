@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Table, TableRow, TableTbody, TableTd, TableTh, TableThead } from '../../table';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -13,72 +14,72 @@ root.render(
             <span></span>
 
             <section>
-                <table className="k-table k-table-md">
+                <Table size="medium">
                     <colgroup>
                         <col style={{ width: '50px' }} />
                         <col />
                         <col />
                     </colgroup>
-                    <thead className="k-table-thead">
-                        <tr className="k-table-row">
-                            <th className="k-table-th">ID</th>
-                            <th className="k-table-th">Name</th>
-                            <th className="k-table-th">Job Title</th>
-                        </tr>
-                    </thead>
-                    <tbody className="k-table-tbody">
-                        <tr className="k-table-row">
-                            <td className="k-table-td">1</td>
-                            <td className="k-table-td">Normal</td>
-                            <td className="k-table-td">Data 1.3</td>
-                        </tr>
-                        <tr className="k-table-row k-table-alt-row">
-                            <td className="k-table-td">2</td>
-                            <td className="k-table-td">Normal (alt)</td>
-                            <td className="k-table-td">Data 2.3</td>
-                        </tr>
-                        <tr className="k-table-row k-hover">
-                            <td className="k-table-td">3</td>
-                            <td className="k-table-td">Hover</td>
-                            <td className="k-table-td">Data 3.3</td>
-                        </tr>
-                        <tr className="k-table-row k-hover k-table-alt-row">
-                            <td className="k-table-td">4</td>
-                            <td className="k-table-td">Hover (alt)</td>
-                            <td className="k-table-td">Data 4.3</td>
-                        </tr>
-                        <tr className="k-table-row k-focus">
-                            <td className="k-table-td">5</td>
-                            <td className="k-table-td">Focus (alt)</td>
-                            <td className="k-table-td">Data 5.3</td>
-                        </tr>
-                        <tr className="k-table-row k-focus k-table-alt-row">
-                            <td className="k-table-td">6</td>
-                            <td className="k-table-td">Focus (even)</td>
-                            <td className="k-table-td">Data 6.3</td>
-                        </tr>
-                        <tr className="k-table-row k-selected">
-                            <td className="k-table-td">7</td>
-                            <td className="k-table-td">Selected</td>
-                            <td className="k-table-td">Data 7.3</td>
-                        </tr>
-                        <tr className="k-table-row k-selected k-table-alt-row">
-                            <td className="k-table-td">8</td>
-                            <td className="k-table-td">Selected (alt)</td>
-                            <td className="k-table-td">Data 8.3</td>
-                        </tr>
-                        <tr className="k-table-row k-focus k-selected">
-                            <td className="k-table-td">9</td>
-                            <td className="k-table-td">Focus selected</td>
-                            <td className="k-table-td">Data 9.3</td>
-                        </tr>
-                        <tr className="k-table-row k-focus k-selected k-table-alt-row">
-                            <td className="k-table-td">10</td>
-                            <td className="k-table-td">Focus selected (alt)</td>
-                            <td className="k-table-td">Data 10.3</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <TableThead>
+                        <TableRow>
+                            <TableTh text="ID"></TableTh>
+                            <TableTh text="Name"></TableTh>
+                            <TableTh text="Job Title"></TableTh>
+                        </TableRow>
+                    </TableThead>
+                    <TableTbody>
+                        <TableRow>
+                            <TableTd text="1"></TableTd>
+                            <TableTd text="Normal"></TableTd>
+                            <TableTd text="Data 1.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt>
+                            <TableTd text="2"></TableTd>
+                            <TableTd text="Normal (alt)"></TableTd>
+                            <TableTd text="Data 2.3"></TableTd>
+                        </TableRow>
+                        <TableRow hover>
+                            <TableTd text="3"></TableTd>
+                            <TableTd text="Hover"></TableTd>
+                            <TableTd text="Data 3.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt hover>
+                            <TableTd text="4"></TableTd>
+                            <TableTd text="Hover (alt)"></TableTd>
+                            <TableTd text="Data 4.3"></TableTd>
+                        </TableRow>
+                        <TableRow focus>
+                            <TableTd text="5"></TableTd>
+                            <TableTd text="Focus (alt)"></TableTd>
+                            <TableTd text="Data 5.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt focus>
+                            <TableTd text="6"></TableTd>
+                            <TableTd text="Focus (even)"></TableTd>
+                            <TableTd text="Data 6.3"></TableTd>
+                        </TableRow>
+                        <TableRow selected>
+                            <TableTd text="7"></TableTd>
+                            <TableTd text="Selected"></TableTd>
+                            <TableTd text="Data 7.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt selected>
+                            <TableTd text="8"></TableTd>
+                            <TableTd text="Selected (alt)"></TableTd>
+                            <TableTd text="Data 8.3"></TableTd>
+                        </TableRow>
+                        <TableRow focus selected>
+                            <TableTd text="9"></TableTd>
+                            <TableTd text="Focus selected"></TableTd>
+                            <TableTd text="Data 9.3"></TableTd>
+                        </TableRow>
+                        <TableRow alt focus selected>
+                            <TableTd text="10"></TableTd>
+                            <TableTd text="Focus selected (alt)"></TableTd>
+                            <TableTd text="Data 10.3"></TableTd>
+                        </TableRow>
+                    </TableTbody>
+                </Table>
             </section>
 
         </div>
