@@ -1,6 +1,7 @@
 
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
 
@@ -20,25 +21,22 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <div className="k-widget k-scheduler k-scheduler-flex" style={{ height: "900px" }} >
                 <Toolbar className="k-scheduler-toolbar">
-                    <span className="k-button-group k-scheduler-navigation">
+                    <ButtonGroup className="k-scheduler-navigation">
                         <Button>Today</Button>
                         <Button icon="caret-alt-left"></Button>
                         <Button icon="caret-alt-right"></Button>
-                    </span>
+                    </ButtonGroup>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         Wednesday, June 24, 2020 - Thursday, June 25, 2020
                     </Button>
                     <span className="k-spacer"></span>
-                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
-                        <option>Timeline Multiday</option>
-                    </select>
-                    <span className="k-button-group k-scheduler-views">
+                    <ButtonGroup className="k-scheduler-views">
                         <Button>Day</Button>
                         <Button>Week</Button>
                         <Button>Month</Button>
                         <Button selected>Timeline</Button>
                         <Button>Agenda</Button>
-                    </span>
+                    </ButtonGroup>
                 </Toolbar>
                 <div className="k-scheduler-layout k-scheduler-layout-flex k-scheduler-timeline-view">
                     <div className="k-scheduler-head" style={{ width: "14401px" }} >

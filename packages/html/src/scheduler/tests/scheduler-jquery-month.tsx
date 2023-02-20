@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
 
@@ -34,25 +35,22 @@ root.render(
 
             <div className="k-widget k-scheduler">
                 <Toolbar className="k-scheduler-toolbar">
-                    <span className="k-scheduler-navigation k-button-group">
+                    <ButtonGroup className="k-scheduler-navigation">
                         <Button>Today</Button>
                         <Button icon="caret-alt-left"></Button>
                         <Button icon="caret-alt-right"></Button>
-                    </span>
+                    </ButtonGroup>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         June, 2013
                     </Button>
                     <span className="k-spacer"></span>
-                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
-                        <option>Month</option>
-                    </select>
-                    <span className="k-scheduler-views k-button-group">
+                    <ButtonGroup className="k-scheduler-views">
                         <Button>Day</Button>
                         <Button>Week</Button>
                         <Button selected>Month</Button>
                         <Button>Timeline</Button>
                         <Button>Agenda</Button>
-                    </span>
+                    </ButtonGroup>
                 </Toolbar>
                 <table className="k-scheduler-layout k-scheduler-monthview k-scrollbar-v">
                     <tbody>
