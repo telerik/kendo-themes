@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Window } from '../../window';
-import { Textarea } from '../../textarea/textarea';
+import { Textarea } from '../../textarea';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
