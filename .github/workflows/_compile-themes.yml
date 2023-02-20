@@ -21,7 +21,7 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18.x
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
