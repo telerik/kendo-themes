@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
-import { Combobox } from '../../combobox/combobox';
+import { Combobox } from '../../combobox';
 import { DropdownList } from '../../dropdownlist';
 import { Icon } from '../../icon';
 import { MenuButton } from '../../menu-button';
