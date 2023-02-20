@@ -20,6 +20,10 @@
     // Spreadsheet tabstrip
     .k-spreadsheet-tabstrip {
         padding-top: 0;
+
+        .k-tabstrip-items-wrapper {
+            border-width: 0;
+        }
     }
 
 
