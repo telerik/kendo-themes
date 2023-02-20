@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
 
@@ -17,24 +18,24 @@ root.render(
                         <div className="k-stretched-view k-content">
                             <div id="scheduler" className="k-widget k-scheduler k-scheduler-mobile">
                                 <Toolbar className="k-scheduler-toolbar">
-                                    <span className="k-scheduler-tools k-button-group">
+                                    <ButtonGroup className="k-scheduler-tools">
                                         <Button className="k-pdf" icon="file-pdf"></Button>
                                         <Button className="k-nav-calendar" icon="calendar"></Button>
                                         <Button className="k-create-event" icon="add"></Button>
-                                    </span>
+                                    </ButtonGroup>
                                     <span className="k-spacer"></span>
                                     <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
                                         <option>Month</option>
                                     </select>
                                 </Toolbar>
                                 <Toolbar className="k-scheduler-toolbar">
-                                    <span className="k-scheduler-navigation">
-                                        <Button className="k-nav-prev" icon="arrow-chevron-left"></Button>
-                                        <Button className="k-nav-current" fillMode="flat" >
-                                            June, 2013
-                                        </Button>
-                                        <Button className="k-nav-next" icon="arrow-chevron-right"></Button>
-                                    </span>
+                                    <Button className="k-nav-prev" icon="arrow-chevron-left"></Button>
+                                    <span className="k-spacer"></span>
+                                    <Button className="k-nav-current" fillMode="flat" >
+                                        June, 2013
+                                    </Button>
+                                    <span className="k-spacer"></span>
+                                    <Button className="k-nav-next" icon="arrow-chevron-right"></Button>
                                 </Toolbar>
                                 <table className="k-scheduler-layout k-scheduler-monthview">
                                     <tbody>

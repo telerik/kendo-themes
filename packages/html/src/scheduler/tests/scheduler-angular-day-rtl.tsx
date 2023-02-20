@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
 
@@ -13,26 +14,23 @@ root.render(
             <div className="k-widget k-scheduler k-rtl" dir="rtl">
                 <Toolbar className="k-scheduler-toolbar">
                     <div className="k-toolbar-group">
-                        <div className="k-scheduler-navigation">
-                            <div className="k-button-group">
-                                <Button>Today</Button>
-                                <Button icon="caret-alt-left"></Button>
-                                <Button icon="caret-alt-right"></Button>
-                            </div>
-                        </div>
+                        <ButtonGroup className="k-scheduler-navigation">
+                            <Button>Today</Button>
+                            <Button icon="caret-alt-left"></Button>
+                            <Button icon="caret-alt-right"></Button>
+                        </ButtonGroup>
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                             Monday, June 24, 2013
                         </Button>
                     </div>
                     <span className="k-spacer"></span>
-                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md"></select>
-                    <div className="k-scheduler-views k-button-group">
+                    <ButtonGroup className="k-scheduler-views">
                         <Button selected>Day</Button>
                         <Button>Week</Button>
                         <Button>Month</Button>
                         <Button>Timeline</Button>
                         <Button>Agenda</Button>
-                    </div>
+                    </ButtonGroup>
                 </Toolbar>
                 <div style={{ display: "block" }}>
                     <div className="k-scheduler-layout k-scheduler-flex-layout k-scheduler-dayview">
