@@ -225,7 +225,7 @@ root.render(
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row k-master-row k-expanded">
                                     <td className="k-table-td k-hierarchy-cell">
-                                        <Icon name="collapse" />
+                                        <Icon name="caret-alt-down" />
                                     </td>
                                     <td className="k-table-td">1</td>
                                     <td className="k-table-td">Text</td>
@@ -244,7 +244,7 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-master-row">
                                     <td className="k-table-td k-hierarchy-cell">
-                                        <Icon name="expand" />
+                                        <Icon name="caret-alt-right" />
                                     </td>
                                     <td className="k-table-td">2</td>
                                     <td className="k-table-td">Text</td>
@@ -409,7 +409,7 @@ root.render(
                                 <tr className="k-table-row k-table-group-row k-grouping-row">
                                     <td className="k-table-td" colSpan={5}>
                                         <p className="k-reset">
-                                            <Icon name="expand" />
+                                            <Icon name="caret-alt-right" />
                                             Price: 19
                                         </p>
                                     </td>
@@ -417,7 +417,7 @@ root.render(
                                 <tr className="k-table-row k-table-group-row k-grouping-row">
                                     <td className="k-table-td" colSpan={5}>
                                         <p className="k-reset">
-                                            <Icon name="collapse" />
+                                            <Icon name="caret-alt-down" />
                                             Price: 30
                                         </p>
                                     </td>

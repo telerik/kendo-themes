@@ -120,7 +120,7 @@ root.render(
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="collapse" />7
+                                        <Icon name="caret-alt-down" />7
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Software validation, research and implementation
@@ -153,7 +153,7 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" /><Icon name="collapse" />11
+                                        <Icon name="none" /><Icon name="caret-alt-down" />11
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Research
@@ -249,7 +249,7 @@ root.render(
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon name="none" />
-                                        <Icon name="collapse" />12
+                                        <Icon name="caret-alt-down" />12
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Design</td>
                                     <td className="k-table-td">
@@ -313,7 +313,7 @@ root.render(
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon name="none" />
-                                        <Icon name="collapse" />13
+                                        <Icon name="caret-alt-down" />13
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Implementation</td>
                                     <td className="k-table-td">
@@ -451,7 +451,7 @@ root.render(
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon name="none" />
-                                        <Icon name="expand" />14
+                                        <Icon name="caret-alt-right" />14
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Testing</td>
                                     <td className="k-table-td">
@@ -467,7 +467,7 @@ root.render(
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon name="none" />
-                                        <Icon name="expand" />30
+                                        <Icon name="caret-alt-right" />30
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Documentation</td>
                                     <td className="k-table-td">
@@ -483,7 +483,7 @@ root.render(
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon name="none" />
-                                        <Icon name="expand" />31
+                                        <Icon name="caret-alt-right" />31
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Demos</td>
                                     <td className="k-table-td">

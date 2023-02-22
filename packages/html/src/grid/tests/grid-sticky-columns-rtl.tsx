@@ -100,7 +100,7 @@ root.render(
                                 <tbody className="k-table-tbody">
                                     <tr className="k-table-row k-table-group-row k-grouping-row" role="row">
                                         <td className="k-table-td" colSpan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon name="collapse" />Lehmanns Marktstand</p>
+                                            <p className="k-reset"><Icon name="caret-alt-down" />Lehmanns Marktstand</p>
                                         </td>
                                     </tr>
                                     <tr className="k-table-row k-master-row" role="row">
@@ -125,7 +125,7 @@ root.render(
                                     </tr>
                                     <tr className="k-table-row k-table-group-row k-grouping-row" role="row">
                                         <td className="k-table-td" colSpan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon name="collapse" />Split Rail Beer &amp; Ale</p>
+                                            <p className="k-reset"><Icon name="caret-alt-down" />Split Rail Beer &amp; Ale</p>
                                         </td>
                                     </tr>
                                     <tr className="k-table-row k-master-row" role="row">
@@ -150,7 +150,7 @@ root.render(
                                     </tr>
                                     <tr className="k-table-row k-table-group-row k-grouping-row" role="row">
                                         <td className="k-table-td" colSpan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon name="collapse" />Wartian Herkku</p>
+                                            <p className="k-reset"><Icon name="caret-alt-down" />Wartian Herkku</p>
                                         </td>
                                     </tr>
                                     <tr className="k-table-row k-master-row" role="row">

@@ -59,7 +59,7 @@ export class TreeviewItem extends React.Component<TreeviewItemProps> {
                                     'k-disabled': disabled
                                 }
                             )}>
-                            <Icon name={expanded ? 'collapse' : 'expand'} />
+                            <Icon name={expanded ? 'caret-alt-down' : 'caret-alt-right'} />
                         </span>
                     )}
                     {showCheckbox && (
