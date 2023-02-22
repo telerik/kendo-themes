@@ -1,3 +1,3 @@
 export * from './chip-action';
-export * from './chip';
-export * from './chip-list';
+export * from './chip.spec';
+export * from './chip-list.spec';
