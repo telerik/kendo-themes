@@ -50,7 +50,7 @@ root.render(
                             </colgroup>
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row">
-                                    <td className="k-table-td"><Icon name="expand"></Icon>Daryl</td>
+                                    <td className="k-table-td"><Icon name="caret-alt-right"></Icon>Daryl</td>
                                     <td className="k-table-td">Sweeney</td>
                                 </tr>
                             </tbody>
@@ -110,23 +110,23 @@ root.render(
                             </colgroup>
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td"><Icon name="collapse"></Icon>Daryl</td>
+                                    <td className="k-table-td"><Icon name="caret-alt-down"></Icon>Daryl</td>
                                     <td className="k-table-td">Sweeney</td>
                                     <td className="k-table-td">CEO</td>
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="collapse"></Icon>Guy
+                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="caret-alt-down"></Icon>Guy
                                     </td>
                                     <td className="k-table-td">Wooten</td>
                                     <td className="k-table-td">Chief Technical Officer</td>
                                 </tr>
                                 <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="collapse"></Icon>Buffy</td>
+                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="caret-alt-down"></Icon>Buffy</td>
                                     <td className="k-table-td">Weber</td>
                                     <td className="k-table-td">VP, Engineering</td>
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="collapse"></Icon>Hyacinth
+                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="caret-alt-down"></Icon>Hyacinth
                                     </td>
                                     <td className="k-table-td">Hood</td>
                                     <td className="k-table-td">Team Lead</td>

@@ -27,27 +27,27 @@ root.render(
                         </thead>
                         <tbody className="k-table-tbody">
                             <tr className="k-table-row k-master-row">
-                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="collapse"></Icon>Daryl Sweeney</td>
+                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="caret-alt-down"></Icon>Daryl Sweeney</td>
                                 <td colSpan={1} className="k-table-td">CEO</td>
                                 <td colSpan={1} className="k-table-td">March 7, 2012</td>
                             </tr>
                             <tr className="k-table-row k-master-row">
-                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="expand"></Icon>Guy Wooten</td>
+                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="caret-alt-right"></Icon>Guy Wooten</td>
                                 <td colSpan={1} className="k-table-td">Chief Technical Officer</td>
                                 <td colSpan={1} className="k-table-td">April 3, 2010</td>
                             </tr>
                             <tr className="k-table-row k-master-row">
-                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="expand"></Icon>Priscilla Frank</td>
+                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="caret-alt-right"></Icon>Priscilla Frank</td>
                                 <td colSpan={1} className="k-table-td">Chief Product Officer</td>
                                 <td colSpan={1} className="k-table-td">December 30, 2014</td>
                             </tr>
                             <tr className="k-table-row k-master-row">
-                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="collapse"></Icon>Anika Vega</td>
+                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="caret-alt-down"></Icon>Anika Vega</td>
                                 <td colSpan={1} className="k-table-td">Chief Process Officer</td>
                                 <td colSpan={1} className="k-table-td">March 25, 2010</td>
                             </tr>
                             <tr className="k-table-row k-master-row">
-                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="expand"></Icon>Vernon Ballard</td>
+                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="caret-alt-right"></Icon>Vernon Ballard</td>
                                 <td colSpan={1} className="k-table-td">Director Facilities</td>
                                 <td colSpan={1} className="k-table-td">July 26, 2015</td>
                             </tr>
@@ -57,12 +57,12 @@ root.render(
                                 <td colSpan={1} className="k-table-td">Last employee hired on August 30, 2015</td>
                             </tr>
                             <tr className="k-table-row k-master-row">
-                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="expand"></Icon>Nevada Hart</td>
+                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="caret-alt-right"></Icon>Nevada Hart</td>
                                 <td colSpan={1} className="k-table-td">Chief Financial Officer</td>
                                 <td colSpan={1} className="k-table-td">September 17, 2015</td>
                             </tr>
                             <tr className="k-table-row k-master-row">
-                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="expand"></Icon>Hunter Fry</td>
+                                <td className="k-table-td k-text-nowrap" colSpan={1}><Icon name="none"></Icon><Icon name="caret-alt-right"></Icon>Hunter Fry</td>
                                 <td colSpan={1} className="k-table-td">General Counsel</td>
                                 <td colSpan={1} className="k-table-td">March 12, 2011</td>
                             </tr>

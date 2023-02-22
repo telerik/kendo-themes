@@ -85,7 +85,7 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td">7</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="collapse" />Software validation, research and implementation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="caret-alt-down" />Software validation, research and implementation</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">18</td>
@@ -93,7 +93,7 @@ root.render(
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td">11</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="collapse" />Research</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Research</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">19</td>
@@ -109,7 +109,7 @@ root.render(
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td">12</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="collapse" />Design</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Design</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">22</td>
@@ -121,7 +121,7 @@ root.render(
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td">13</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="collapse" />Implementation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Implementation</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">24</td>
@@ -145,7 +145,7 @@ root.render(
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td">14</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="collapse" />Testing</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Testing</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">32</td>
@@ -157,7 +157,7 @@ root.render(
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td">30</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="collapse" />Documentation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Documentation</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">34</td>
@@ -169,7 +169,7 @@ root.render(
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td">31</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="expand" />Demos</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-right" />Demos</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">17</td>

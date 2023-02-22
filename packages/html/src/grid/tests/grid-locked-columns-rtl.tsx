@@ -110,7 +110,7 @@ root.render(
                                         <tr className="k-table-row k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                             <td className="k-table-td" colSpan={3}>
                                                 <p className="k-reset">
-                                                    <Icon name="collapse" />
+                                                    <Icon name="caret-alt-down" />
 
                                                     Discontinued: false
                                                 </p>
@@ -160,7 +160,7 @@ root.render(
                                         <tr className="k-table-row k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                             <td className="k-table-td" colSpan={3}>
                                                 <p className="k-reset">
-                                                    <Icon name="collapse" />
+                                                    <Icon name="caret-alt-down" />
                                                     Discontinued: true
                                                 </p>
                                             </td>

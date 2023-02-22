@@ -85,7 +85,7 @@ root.render(
                         <tbody className="k-table-tbody">
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="collapse"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                     1
                                 </td>
                                 <td className="k-table-td">Furniture</td>
@@ -128,7 +128,7 @@ root.render(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="collapse"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                     2
                                 </td>
                                 <td className="k-table-td">Decor</td>
@@ -150,7 +150,7 @@ root.render(
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
                                     <Icon name="none"></Icon>
-                                    <Icon name="collapse"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                     2.2
                                 </td>
                                 <td className="k-table-td">Curtains &amp; Blinds</td>

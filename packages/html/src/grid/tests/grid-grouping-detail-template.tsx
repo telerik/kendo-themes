@@ -162,7 +162,7 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="collapse" /> ID: 1 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 1 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-master-row" role="row">
@@ -175,7 +175,7 @@ root.render(
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="collapse" /> ID: 2 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 2 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-master-row" role="row">
@@ -266,13 +266,13 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={7}>
-                                                <p className="k-reset"><Icon name="collapse" /> ID: 1 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 1 </p>
                                             </td>
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="collapse" /> Name: Product1 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> Name: Product1 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-master-row" role="row">
@@ -286,13 +286,13 @@ root.render(
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={7}>
-                                                <p className="k-reset"><Icon name="collapse" /> ID: 2 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 2 </p>
                                             </td>
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="collapse" /> Name: Product2 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> Name: Product2 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-master-row" role="row">
@@ -384,13 +384,13 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={7}>
-                                                <p className="k-reset"><Icon name="collapse" /> ID: 1 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 1 </p>
                                             </td>
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="collapse" /> Name: Product1 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> Name: Product1 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-master-row k-expanded" role="row">
@@ -410,13 +410,13 @@ root.render(
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={7}>
-                                                <p className="k-reset"><Icon name="collapse" /> ID: 2 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 2 </p>
                                             </td>
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="collapse" /> Name: Product2 </p>
+                                                <p className="k-reset"><Icon name="caret-alt-down" /> Name: Product2 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-master-row k-expanded" role="row">
