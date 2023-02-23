@@ -37,12 +37,6 @@
         overflow: hidden;
     }
 
-    .k-breadcrumb-container {
-        // TODO: use !k-flex-wrap in rendering
-        &.k-flex-wrap {
-            flex-wrap: wrap;
-        }
-    }
     .k-breadcrumb-root-item-container {
         align-items: flex-start;
         flex-shrink: 0;
