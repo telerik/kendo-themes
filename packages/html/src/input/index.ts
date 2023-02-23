@@ -1,5 +1,5 @@
 export * from './input.spec';
-export * from './picker';
+export * from './picker.spec';
 export * from './input-clear-value';
 export * from './input-inner-input';
 export * from './input-inner-span';
