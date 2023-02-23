@@ -1,1 +1,1 @@
-export * from './dropdownlist';
+export * from './dropdownlist.spec';
