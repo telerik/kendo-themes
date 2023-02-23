@@ -1,5 +1,6 @@
 @include exports("tabstrip/layout") {
 
+    // Tabstrip wrapper
     .k-tabstrip-wrapper {
         padding-block: $kendo-tabstrip-wrapper-padding-y;
         padding-inline: $kendo-tabstrip-wrapper-padding-x;
@@ -10,6 +11,8 @@
         flex-direction: column;
     }
 
+
+    // Tabstrip
     .k-tabstrip {
         border-width: 0;
         border-color: transparent;
@@ -24,12 +27,13 @@
         flex-flow: column nowrap;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
-
-        .k-tabstrip-wrapper > & {
-            flex: 1 1 auto;
-        }
+    }
+    .k-tabstrip-wrapper > .k-tabstrip {
+        flex: 1 1 auto;
     }
 
+
+    // Tabstrip items wrapper
     .k-tabstrip-items-wrapper {
         box-sizing: border-box;
         border-width: 0;
@@ -38,11 +42,14 @@
         position: relative;
     }
 
+
+    // Tabstrip items
     .k-tabstrip-items {
         box-sizing: border-box;
         outline: 0;
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: inherit;
+        flex-wrap: wrap;
         flex: 1 1 auto;
         gap: $kendo-tabstrip-item-gap;
 
@@ -81,8 +88,18 @@
             align-content: center;
             align-items: center;
         }
+
+
+        // Disabled state
+        .k-item.k-disabled,
+        .k-item[disabled] {
+            opacity: $kendo-tabstrip-item-disabled-opacity;
+            filter: $kendo-tabstrip-item-disabled-filter;
+        }
     }
 
+
+    // Tabstrip content
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
         margin: 0 !important; // sass-lint:disable-line no-important
@@ -109,7 +126,8 @@
         }
     }
 
-    // Loading
+
+    // Loading indicator
     .k-tabstrip-items .k-loading {
         width: 20%;
         height: 0;
@@ -143,6 +161,8 @@
             }
 
             > .k-button {
+                padding-block: k-map-get( $kendo-spacing, 1 );
+                padding-inline: k-map-get( $kendo-spacing, 1 );
                 width: auto;
                 height: auto;
                 flex: none;
@@ -154,34 +174,34 @@
                     min-height: auto;
                 }
             }
-
-            &.k-hstack {
-                > .k-button {
-                    padding: 0 k-map-get( $kendo-spacing, 1 );
-                }
-            }
-
-            &.k-vstack {
-                > .k-button {
-                    padding: k-map-get( $kendo-spacing, 1 ) 0;
-                }
-            }
         }
+    }
+
+
+    // Tabstrip orientation
+    .k-tabstrip-horizontal {
+        flex-direction: row;
+    }
+    .k-tabstrip-vertical {
+        flex-direction: column;
     }
 
 
     // Tabstrip position
     .k-tabstrip-top {
         > .k-tabstrip-items-wrapper {
+            @extend .k-tabstrip-horizontal !optional;
             border-bottom-width: $kendo-tabstrip-border-width;
 
             .k-item {
                 @include border-top-radius( $kendo-tabstrip-item-border-radius );
-                margin-bottom: -$kendo-tabstrip-border-width;
+                border-bottom-width: 0;
             }
-
+            .k-item:active,
             .k-item.k-active {
-                border-bottom-color: transparent;
+                margin-bottom: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
+                border-bottom-width: $kendo-tabstrip-border-width;
+                border-bottom-color: transparent !important; // sass-lint:disable-line no-important
             }
         }
 
@@ -193,15 +213,18 @@
     }
     .k-tabstrip-bottom {
         > .k-tabstrip-items-wrapper {
+            @extend .k-tabstrip-horizontal !optional;
             border-top-width: $kendo-tabstrip-border-width;
 
             .k-item {
                 @include border-bottom-radius( $kendo-tabstrip-item-border-radius );
-                margin-top: -$kendo-tabstrip-border-width;
+                border-top-width: 0;
             }
-
+            .k-item:active,
             .k-item.k-active {
-                border-top-color: transparent;
+                margin-top: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
+                border-top-width: $kendo-tabstrip-border-width;
+                border-top-color: transparent !important; // sass-lint:disable-line no-important
             }
         }
 
@@ -215,19 +238,18 @@
         flex-direction: row;
 
         > .k-tabstrip-items-wrapper {
+            @extend .k-tabstrip-vertical !optional;
             border-right-width: $kendo-tabstrip-border-width;
-
-            > .k-tabstrip-items {
-                flex-direction: column;
-            }
 
             .k-item {
                 @include border-left-radius( $kendo-tabstrip-item-border-radius );
-                margin-right: -$kendo-tabstrip-border-width;
+                border-right-width: 0;
             }
-
+            .k-item:active,
             .k-item.k-active {
-                border-right-color: transparent;
+                margin-right: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
+                border-right-width: $kendo-tabstrip-border-width;
+                border-right-color: transparent !important; // sass-lint:disable-line no-important
             }
         }
 
@@ -242,19 +264,18 @@
         flex-direction: row-reverse;
 
         > .k-tabstrip-items-wrapper {
+            @extend .k-tabstrip-vertical !optional;
             border-left-width: $kendo-tabstrip-border-width;
-
-            > .k-tabstrip-items {
-                flex-direction: column;
-            }
 
             .k-item {
                 @include border-right-radius( $kendo-tabstrip-item-border-radius );
-                margin-left: -$kendo-tabstrip-border-width;
+                border-left-width: 0;
             }
-
+            .k-item:active,
             .k-item.k-active {
-                border-left-color: transparent;
+                margin-left: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
+                border-left-width: $kendo-tabstrip-border-width;
+                border-left-color: transparent !important; // sass-lint:disable-line no-important
             }
         }
 
@@ -301,20 +322,6 @@
                 bottom: 0;
                 left: 0;
                 pointer-events: none;
-
-                // Variants
-                .k-tabstrip-top > & {
-                    border-bottom-width: $kendo-tabstrip-indicator-size;
-                }
-                .k-tabstrip-bottom > & {
-                    border-top-width: $kendo-tabstrip-indicator-size;
-                }
-                .k-tabstrip-left > & {
-                    border-right-width: $kendo-tabstrip-indicator-size;
-                }
-                .k-tabstrip-right > & {
-                    border-left-width: $kendo-tabstrip-indicator-size;
-                }
             }
             .k-item.k-active::after {
                 display: block;
@@ -325,14 +332,33 @@
             }
         }
 
+
+        // Variants
+        .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item::after {
+            border-bottom-width: $kendo-tabstrip-indicator-size;
+        }
+        .k-tabstrip-bottom > .k-tabstrip-items-wrapper .k-item::after {
+            border-top-width: $kendo-tabstrip-indicator-size;
+        }
+        .k-tabstrip-left > .k-tabstrip-items-wrapper .k-item::after {
+            border-right-width: $kendo-tabstrip-indicator-size;
+        }
+        .k-tabstrip-right > .k-tabstrip-items-wrapper .k-item::after {
+            border-left-width: $kendo-tabstrip-indicator-size;
+        }
+
+
+        // Hide tabstrip indicator when dragging
+        .k-tabstrip-items-wrapper .k-item.k-tabstrip-dragging {
+            &::after {
+                display: none !important; // sass-lint:disable-line no-important
+            }
+        }
+
     }
 
-}
 
-
-
-
-@include exports("tabstrip/layout/rtl") {
+    // RTL
     .k-rtl .k-tabstrip,
     .k-tabstrip[dir="rtl"] {
 
