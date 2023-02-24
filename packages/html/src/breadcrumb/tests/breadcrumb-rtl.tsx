@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 import { Textbox } from '../../textbox';
+import { Breadcrumb, BreadcrumbContainer, BreadcrumbInputContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbRootItemContainer } from '../../breadcrumb';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -11,300 +12,343 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-2 k-rtl">
             <span className="k-colspan-all k-col-span-full">Wrapping</span>
             <div>
-                <div style={{ width: "400px" }} className="k-widget k-breadcrumb k-breadcrumb-wrap" dir="rtl">
-                    <ol className="k-breadcrumb-root-item-container">
-                        <li className="k-flex-none k-breadcrumb-root-item k-breadcrumb-item">
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-root-link k-breadcrumb-icontext-link">
+                <Breadcrumb collapsing="wrap" style={{ width: "400px" }} dir="rtl">
+                    <BreadcrumbRootItemContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root icontext>
                                 <Icon name="home" />
-                                Start item
-                            </span>
-                        </li>
-                    </ol>
+                                <BreadcrumbItemText text="Start item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbRootItemContainer>
 
-                    <ol className="k-breadcrumb-container k-flex-wrap">
-                        <li className="k-flex-none k-breadcrumb-item">
+                    <BreadcrumbContainer collapsing="wrap">
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled k-breadcrumb-icontext-link">
+                            <BreadcrumbLink disabled icontext>
                                 <Icon name="clock" />
-                                First item
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link">
+                            <BreadcrumbLink>
                                 <img className="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" />
-                                Second item
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                                <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link"> <span className="test"></span> Third item </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                            <BreadcrumbLink>
+                                <span className="test"></span>
+                                <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-breadcrumb-icon-link">
+                            <BreadcrumbLink icon>
                                 <Icon name="clock" />
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled">
-                                Fifth item
-                            </span>
-                        </li>
-                    </ol>
-                </div>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Fifth item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
 
             <div>
-                <div style={{ width: "400px" }} className="k-widget k-breadcrumb k-breadcrumb-wrap" dir="rtl">
-                    <ol className="k-breadcrumb-root-item-container">
-                        <li className="k-flex-none k-breadcrumb-root-item k-breadcrumb-item">
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-root-link">
-                                Start item
-                            </span>
-                        </li>
-                    </ol>
+                <Breadcrumb collapsing="wrap" style={{ width: "400px" }} dir="rtl">
+                    <BreadcrumbRootItemContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root>
+                                <BreadcrumbItemText text="Start item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbRootItemContainer>
 
-                    <ol className="k-breadcrumb-container k-flex-wrap">
-                        <li className="k-flex-none k-breadcrumb-item">
+                    <BreadcrumbContainer collapsing="wrap">
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled k-breadcrumb-icontext-link">
+                            <BreadcrumbLink disabled icontext>
                                 <Icon name="clock" />
-                                First item
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link">
+                            <BreadcrumbLink>
                                 <img className="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" />
-                                Second item
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                                <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link"> <span className="test"></span> Third item </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                            <BreadcrumbLink>
+                                <span className="test"></span>
+                                <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-breadcrumb-icon-link">
+                            <BreadcrumbLink icon>
                                 <Icon name="clock" />
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled">
-                                Fifth item
-                            </span>
-                        </li>
-                    </ol>
-                </div>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Fifth item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
 
             <div>
-                <div style={{ width: "400px" }} className="k-widget k-breadcrumb k-breadcrumb-wrap" dir="rtl">
-                    <ol className="k-breadcrumb-root-item-container">
-                        <li className="k-flex-none k-breadcrumb-root-item k-breadcrumb-item">
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-root-link k-breadcrumb-icon-link">
+                <Breadcrumb collapsing="wrap" style={{ width: "400px" }} dir="rtl">
+                    <BreadcrumbRootItemContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root icon>
                                 <Icon name="home" />
-                            </span>
-                        </li>
-                    </ol>
-                    <ol className="k-breadcrumb-container k-flex-wrap">
-                        <li className="k-flex-none k-breadcrumb-item">
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbRootItemContainer>
+
+                    <BreadcrumbContainer collapsing="wrap">
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled k-breadcrumb-icontext-link">
+                            <BreadcrumbLink disabled icontext>
                                 <Icon name="clock" />
-                                First item
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link">
+                            <BreadcrumbLink>
                                 <img className="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" />
-                                Second item
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                                <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link"> <span className="test"></span> Third item </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-item">
+                            <BreadcrumbLink>
+                                <span className="test"></span>
+                                <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-breadcrumb-icon-link">
+                            <BreadcrumbLink icon>
                                 <Icon name="clock" />
-                            </span>
-                        </li>
-                        <li className="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled">
-                                Fifth item
-                            </span>
-                        </li>
-                    </ol>
-                </div>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Fifth item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
 
             <span className="k-colspan-all k-col-span-full">Navigation Mode</span>
             <div>
-                <nav id="breadcrumbs" className="k-widget k-breadcrumb">
-                    <ol className="k-breadcrumb-container">
-                        <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link">
+                <Breadcrumb>
+                    <BreadcrumbContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root icon>
                                 <Icon name="home" />
-                            </a>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link" href="#">First item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink>
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link" href="#">Second item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink>
+                                <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
-                        </li>
-                    </ol>
-                </nav>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
 
             <div>
-                <nav id="breadcrumbs" className="k-widget k-breadcrumb">
-                    <ol className="k-breadcrumb-container">
-                        <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-focus">
+                <Breadcrumb>
+                    <BreadcrumbContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root icon focus>
                                 <Icon name="home" />
-                            </a>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link k-focus" href="#">First item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink focus>
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link" href="#">Second item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink>
+                                <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
-                        </li>
-                    </ol>
-                </nav>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
 
             <div>
-                <nav id="breadcrumbs" className="k-widget k-breadcrumb">
-                    <ol className="k-breadcrumb-container">
-                        <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-hover">
+                <Breadcrumb>
+                    <BreadcrumbContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root icon hover>
                                 <Icon name="home" />
-                            </a>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link k-hover" href="#">First item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink hover>
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link" href="#">Second item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink>
+                                <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
-                        </li>
-                    </ol>
-                </nav>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
 
             <div>
-                <nav id="breadcrumbs" className="k-widget k-breadcrumb">
-                    <ol className="k-breadcrumb-container">
-                        <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-hover">
+                <Breadcrumb>
+                    <BreadcrumbContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root icon hover>
                                 <Icon name="home" />
-                            </a>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link k-breadcrumb-icontext-link" href="#">
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink icontext>
                                 <Icon name="cloud" />
-                                First item
-                            </a>
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link k-breadcrumb-icon-link" href="#">
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink icon>
                                 <Icon name="photo-camera" />
-                            </a>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
-                        </li>
-                    </ol>
-                </nav>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
 
             <span className="k-colspan-all k-col-span-full">Edit Mode</span>
             <div>
-                <nav id="breadcrumbs" className="k-widget k-breadcrumb k-focus">
-                    <ol className="k-breadcrumb-container">
-                        <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link">
+                <Breadcrumb focus>
+                    <BreadcrumbContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root icon>
                                 <Icon name="home" />
-                            </a>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link" href="#">First item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink>
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link" href="#">Second item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink>
+                                <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
-                        </li>
-                    </ol>
-                </nav>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
 
             <div>
-                <nav id="breadcrumbs" className="k-widget k-breadcrumb">
-                    <div className="k-breadcrumb-input-container">
+                <Breadcrumb>
+                    <BreadcrumbInputContainer>
                         <Textbox showClearButton={false} value="First item/Second item/Breadcrumb Pattern/Third item" />
-                    </div>
-                </nav>
+                    </BreadcrumbInputContainer>
+                </Breadcrumb>
             </div>
 
             <span className="k-colspan-all k-col-span-full">Overflow</span>
             <div>
-                <nav id="breadcrumbs" className="k-widget k-breadcrumb">
-                    <ol className="k-breadcrumb-container">
-                        <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link">
+                <Breadcrumb>
+                    <BreadcrumbContainer>
+                        <BreadcrumbItem root>
+                            <BreadcrumbLink root icon>
                                 <Icon name="home" />
-                            </a>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" name="arrow-chevron-right" />
                             <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" name="arrow-chevron-right" />
-                        </li>
-                        <li className="k-breadcrumb-item" hidden>
-                            <a className="k-breadcrumb-link" href="#">First item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem hidden>
+                            <BreadcrumbLink>
+                                <BreadcrumbItemText text="First item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item" hidden>
-                            <a className="k-breadcrumb-link" href="#">Second item</a>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem hidden>
+                            <BreadcrumbLink>
+                                <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
+                            </BreadcrumbLink>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                        </li>
-                        <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-disabled" href="#">Breadcrumb item </a>
-                        </li>
-                    </ol>
-                </nav>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem last>
+                            <BreadcrumbLink disabled>
+                                <BreadcrumbItemText text="Breadcrumb item "></BreadcrumbItemText>
+                            </BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </BreadcrumbContainer>
+                </Breadcrumb>
             </div>
         </div>
+
     </>
 );
