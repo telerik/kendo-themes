@@ -278,6 +278,29 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-fab-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-fab-sm-padding-x,
+        padding-y: $kendo-fab-sm-padding-y
+    ),
+    md: (
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y
+    ),
+    lg: (
+        padding-x: $kendo-fab-lg-padding-x,
+        padding-y: $kendo-fab-lg-padding-y
+    )
+)</code></td>
+    <td><code>(sm: (padding-x: 0.5rem, padding-y: 0.5rem), md: (padding-x: 1rem, padding-y: 1rem), lg: (padding-x: 1.5rem, padding-y: 1.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size map for the FAB.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fab-shadow</td>
     <td>List</td>
     <td><code>0px 6px 10px rgba( black, .14 ), 0px 1px 18px rgba( black, .12 ), 0px 3px 5px rgba( black, .2 )</code></td>
@@ -305,6 +328,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active shadow of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-outline-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-outline-width</td>
+    <td>Number</td>
+    <td><code>3px</code></td>
+    <td><code>3px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -395,6 +438,36 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active shadow of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-outline-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-outline-width</td>
+    <td>Number</td>
+    <td><code>3px</code></td>
+    <td><code>3px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-outline-color</td>
+    <td>Color</td>
+    <td><code>$kendo-button-bg</code></td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span><code>#e4e7eb</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the FAB item.</div></div>
     </td>
 </tr>
 </tbody>
