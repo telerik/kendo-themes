@@ -278,6 +278,29 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-fab-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-fab-sm-padding-x,
+        padding-y: $kendo-fab-sm-padding-y
+    ),
+    md: (
+        padding-x: $kendo-fab-md-padding-x,
+        padding-y: $kendo-fab-md-padding-y
+    ),
+    lg: (
+        padding-x: $kendo-fab-lg-padding-x,
+        padding-y: $kendo-fab-lg-padding-y
+    )
+)</code></td>
+    <td><code>(sm: (padding-x: 8px, padding-y: 8px), md: (padding-x: 16px, padding-y: 16px), lg: (padding-x: 24px, padding-y: 24px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size map for the FAB.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-fab-shadow</td>
     <td>List</td>
     <td><code>0px 3px 5px -1px rgba( black, .2 ), 0px 6px 10px rgba( black, .14 ), 0px 1px 18px rgba( black, .12 )</code></td>
