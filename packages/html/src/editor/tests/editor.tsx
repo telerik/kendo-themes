@@ -172,28 +172,28 @@ root.render(
                 <Editor readonly style={{ height: "350px" }}>
                     <EditorToolbar>
                         <ButtonGroup disabled>
-                            <Button icon="bold"></Button>
-                            <Button icon="italic"></Button>
-                            <Button icon="underline"></Button>
-                            <Button icon="strikethrough"></Button>
+                            <Button icon="bold" disabled></Button>
+                            <Button icon="italic" disabled></Button>
+                            <Button icon="underline" disabled></Button>
+                            <Button icon="strikethrough" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="subscript"></Button>
-                            <Button icon="superscript"></Button>
+                            <Button icon="subscript" disabled></Button>
+                            <Button icon="superscript" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="align-left"></Button>
-                            <Button icon="align-center"></Button>
-                            <Button icon="align-right"></Button>
-                            <Button icon="align-justify"></Button>
+                            <Button icon="align-left" disabled></Button>
+                            <Button icon="align-center" disabled></Button>
+                            <Button icon="align-right" disabled></Button>
+                            <Button icon="align-justify" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="indent-increase"></Button>
-                            <Button icon="indent-decrease"></Button>
+                            <Button icon="indent-increase" disabled></Button>
+                            <Button icon="indent-decrease" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="list-ordered"></Button>
-                            <Button icon="list-unordered"></Button>
+                            <Button icon="list-ordered" disabled></Button>
+                            <Button icon="list-unordered" disabled></Button>
                         </ButtonGroup>
                         <ToolbarItem>
                             <DropdownList value="Font Size" disabled />
@@ -205,29 +205,29 @@ root.render(
                             <DropdownList value="Paragraph" disabled />
                         </ToolbarItem>
                         <ButtonGroup disabled>
-                            <Button icon="undo"></Button>
-                            <Button icon="redo"></Button>
+                            <Button icon="undo" disabled></Button>
+                            <Button icon="redo" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="link-horizontal"></Button>
-                            <Button icon="unlink-horizontal"></Button>
-                            <Button icon="image"></Button>
-                            <Button icon="html"></Button>
+                            <Button icon="link-horizontal" disabled></Button>
+                            <Button icon="unlink-horizontal" disabled></Button>
+                            <Button icon="image" disabled></Button>
+                            <Button icon="html" disabled></Button>
                         </ButtonGroup>
                         <Button icon="table-insert" disabled />
                         <ButtonGroup disabled>
-                            <Button icon="table-row-insert-below"></Button>
-                            <Button icon="table-column-insert-left"></Button>
-                            <Button icon="table-column-insert-right"></Button>
+                            <Button icon="table-row-insert-below" disabled></Button>
+                            <Button icon="table-column-insert-left" disabled></Button>
+                            <Button icon="table-column-insert-right" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="table-row-delete"></Button>
-                            <Button icon="table-column-delete"></Button>
-                            <Button icon="table-delete"></Button>
+                            <Button icon="table-row-delete" disabled></Button>
+                            <Button icon="table-column-delete" disabled></Button>
+                            <Button icon="table-delete" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="cells-merge"></Button>
-                            <Button icon="cell-split-horizontally"></Button>
+                            <Button icon="cells-merge" disabled></Button>
+                            <Button icon="cell-split-horizontally" disabled></Button>
                         </ButtonGroup>
                         <ToolbarItem>
                             <ColorPicker value="red" valueIconName="foreground-color" disabled />
