@@ -1,29 +1,9 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames } from '../utils-new';
 
-export interface ListHeaderProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-list-group-sticky-header`;
 
-
-export class ListHeader extends React.Component<ListHeaderProps> {
-
-    render() {
-        const {
-            children,
-            className,
-        } = this.props;
-
-        return (
-            <div
-                className={classNames(
-                    className,
-                    'k-list-group-sticky-header'
-                )}>
-                <div className="k-list-header-text">{children}</div>
-            </div>
-
-        );
-    }
-}
+export const ListHeader = (props: React.HTMLAttributes<HTMLDivElement>) => (
+    <div className={classNames(className, props.className)}>
+        <div className="k-list-header-text">{props.children}</div>
+    </div>
+);

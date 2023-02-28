@@ -1,28 +1,24 @@
-import * as React from 'react';
 import { ListHeader, ListContent } from '../list';
 
-export interface ListGroupProps {
-    children?: React.ReactNode;
-    label?: string;
+export type KendoListGroupProps = {
     root?: boolean;
     virtualization?: boolean;
-}
+    label?: string;
+};
 
+export const ListGroup = (
+    props: KendoListGroupProps &
+    React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        virtualization,
+        label,
+    } = props;
 
-export class ListGroup extends React.Component<ListGroupProps> {
-
-    render() {
-        const {
-            children,
-            label,
-        } = this.props;
-
-
-        return (
-            <>
-                {label && <ListHeader>{label}</ListHeader>}
-                {children && <ListContent virtualization>{children}</ListContent>}
-            </>
-        );
-    }
-}
+    return (
+        <>
+            {label && <ListHeader>{label}</ListHeader>}
+            {props.children && <ListContent virtualization={virtualization}>{props.children}</ListContent>}
+        </>
+    );
+};
