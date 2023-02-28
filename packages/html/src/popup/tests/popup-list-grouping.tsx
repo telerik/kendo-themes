@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { List, ListGroup, ListItem } from '../../list';
+import { List, ListAngular, ListGroup, ListItem } from '../../list';
 import { Popup } from '../../popup';
 
 const root = ReactDOM.createRoot(
@@ -124,7 +124,7 @@ root.render(
             <section>
                 <div className="k-animation-container">
                     <Popup className="k-list-container">
-                        <List framework="angular">
+                        <ListAngular>
                             <ListGroup label="Group 1" root>
                                 <ListItem>List item 1.1</ListItem>
                                 <ListItem>List item 1.2</ListItem>
@@ -135,7 +135,7 @@ root.render(
                                 <ListItem>List item 2.2</ListItem>
                                 <ListItem>List item 2.3</ListItem>
                             </ListGroup>
-                        </List>
+                        </ListAngular>
                     </Popup>
                 </div>
             </section>
@@ -143,7 +143,7 @@ root.render(
             <section>
                 <div className="k-animation-container">
                     <Popup className="k-list-container">
-                        <List framework="angular" virtualization>
+                        <ListAngular virtualization>
                             <ListGroup label="Group 1" root>
                                 <ListItem>List item 1.1</ListItem>
                                 <ListItem>List item 1.2</ListItem>
@@ -154,7 +154,7 @@ root.render(
                                 <ListItem>List item 2.2</ListItem>
                                 <ListItem>List item 2.3</ListItem>
                             </ListGroup>
-                        </List>
+                        </ListAngular>
                     </Popup>
                 </div>
             </section>
@@ -162,7 +162,7 @@ root.render(
             <section dir="rtl">
                 <div className="k-animation-container">
                     <Popup className="k-list-container">
-                        <List framework="angular">
+                        <ListAngular>
                             <ListGroup label="Group 1" root>
                                 <ListItem>List item 1.1</ListItem>
                                 <ListItem>List item 1.2</ListItem>
@@ -173,7 +173,7 @@ root.render(
                                 <ListItem>List item 2.2</ListItem>
                                 <ListItem>List item 2.3</ListItem>
                             </ListGroup>
-                        </List>
+                        </ListAngular>
                     </Popup>
                 </div>
             </section>
@@ -181,7 +181,7 @@ root.render(
             <section dir="rtl">
                 <div className="k-animation-container">
                     <Popup className="k-list-container">
-                        <List framework="angular" virtualization>
+                        <ListAngular virtualization>
                             <ListGroup label="Group 1" root>
                                 <ListItem>List item 1.1</ListItem>
                                 <ListItem>List item 1.2</ListItem>
@@ -192,7 +192,7 @@ root.render(
                                 <ListItem>List item 2.2</ListItem>
                                 <ListItem>List item 2.3</ListItem>
                             </ListGroup>
-                        </List>
+                        </ListAngular>
                     </Popup>
                 </div>
             </section>
