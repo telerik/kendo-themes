@@ -174,7 +174,7 @@ root.render(
 
             <section dir="rtl">
                 <div className="k-animation-container k-animation-container-shown">
-                    <Popup className="k-popup">
+                    <Popup className="k-list-container">
                         <ListAngular virtualization>
                             <ListItem>Baseball</ListItem>
                             <ListItem>Basketball</ListItem>
