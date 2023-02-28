@@ -1,17 +1,39 @@
-// Popup
-
+/// Horizontal padding of the popup.
+/// @group popup
 $kendo-popup-padding-x: null !default;
+/// Vertical padding of the popup.
+/// @group popup
 $kendo-popup-padding-y: null !default;
+/// Width of the border around the popup.
+/// @group popup
 $kendo-popup-border-width: 1px !default;
+/// Border radius of the popup.
+/// @group popup
 $kendo-popup-border-radius: $kendo-border-radius-md !default;
 
+/// Font size of the popup.
+/// @group popup
 $kendo-popup-font-size: $kendo-font-size-md !default;
+/// Line height of the popup.
+/// @group popup
 $kendo-popup-line-height: $kendo-line-height-md !default;
 
+/// Horizontal padding of the popup content.
+/// @group popup
 $kendo-popup-content-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+/// Vertical padding of the popup content.
+/// @group popup
 $kendo-popup-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
+/// Background color of the popup.
+/// @group popup
 $kendo-popup-bg: $kendo-component-bg !default;
+/// Text color of the popup.
+/// @group popup
 $kendo-popup-text: $kendo-component-text !default;
+/// Border color of the popup.
+/// @group popup
 $kendo-popup-border: $kendo-component-border !default;
+/// Box shadow of the popup.
+/// @group popup
 $kendo-popup-shadow: 0 2px 4px 0 rgba( black, .03 ), 0 4px 5px 0 rgba( black, .04 ) !default;
