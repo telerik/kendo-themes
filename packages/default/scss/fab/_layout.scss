@@ -41,8 +41,8 @@
 
         .k-icon-wrapper-host:not(:only-child) &,
         &:not(:only-child) {
-            margin-right: $kendo-fab-icon-spacing;
-            margin-left: -$kendo-fab-icon-spacing;
+            margin-inline-end: $kendo-fab-icon-spacing;
+            margin-inline-start: -$kendo-fab-icon-spacing;
         }
     }
 
@@ -70,19 +70,19 @@
         flex-direction: column;
     }
     .k-fab-items-bottom .k-fab-item:last-child {
-        margin-bottom: 0;
+        margin-block-end: 0;
     }
 
     .k-fab-items-top {
         flex-direction: column-reverse;
     }
     .k-fab-items-top .k-fab-item:first-child {
-        margin-bottom: 0;
+        margin-block-end: 0;
     }
 
     .k-fab-item {
         list-style-type: none;
-        margin-bottom: k-map-get( $kendo-spacing, 2 );
+        margin-block-end: k-map-get( $kendo-spacing, 2 );
         outline: none;
         white-space: nowrap;
         display: flex;
@@ -94,6 +94,7 @@
             flex-direction: row;
 
             .k-fab-item-text {
+                // Needed for fab item positioning in RTL
                 margin-right: k-map-get( $kendo-spacing, 2 );
             }
         }
@@ -101,6 +102,7 @@
             flex-direction: row-reverse;
 
             .k-fab-item-text {
+                // Needed for fab item positioning in RTL
                 margin-left: k-map-get( $kendo-spacing, 2 );
             }
         }
@@ -130,19 +132,6 @@
 
 @include exports("fab/layout/rtl") {
 
-    .k-rtl .k-fab,
-    .k-fab[dir="rtl"],
-    [dir="rtl"] .k-fab {
-        direction: rtl;
-
-        .k-fab-icon {
-            &:not(:only-child) {
-                margin-right: -$kendo-icon-spacing;
-                margin-left: $kendo-icon-spacing;
-            }
-        }
-    }
-
     .k-rtl .k-fab-popup,
     [dir="rtl"] .k-fab-popup {
         .k-fab-item.k-text-left {
@@ -153,5 +142,4 @@
             flex-direction: row-reverse;
         }
     }
-
 }
