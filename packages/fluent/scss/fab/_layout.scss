@@ -127,7 +127,8 @@
             flex-direction: row;
 
             .k-fab-item-text {
-                margin-inline-end: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
+                // Needed for fab item positioning in RTL
+                margin-right: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
             }
         }
 
@@ -135,7 +136,8 @@
             flex-direction: row-reverse;
 
             .k-fab-item-text {
-                margin-inline-start: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
+                // Needed for fab item positioning in RTL
+                margin-left: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
             }
         }
     }
@@ -164,6 +166,17 @@
 
         &::after {
             border-radius: inherit;
+        }
+    }
+
+    .k-rtl .k-fab-popup,
+    [dir="rtl"] .k-fab-popup {
+        .k-fab-item.k-text-left {
+            flex-direction: row;
+        }
+
+        .k-fab-item.k-text-right {
+            flex-direction: row-reverse;
         }
     }
 
