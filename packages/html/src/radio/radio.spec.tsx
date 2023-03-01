@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils-new';
 
 export const RADIOBUTTON_CLASSNAME = `k-radio`;
 
@@ -12,8 +12,8 @@ const states = [
     States.checked,
 ];
 
-export const options = {
-    size: [ "small", "medium", "large" ],
+const options = {
+    size: [ Size.small, Size.medium, Size.large ],
 };
 
 export type RadioButtonProps = RadioButtonOptions & {
@@ -27,7 +27,7 @@ export type RadioButtonOptions = {
 };
 
 const defaultProps = {
-    size: "medium",
+    size: Size.medium,
 };
 
 export const RadioButton = (

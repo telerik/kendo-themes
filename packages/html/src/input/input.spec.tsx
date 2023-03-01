@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../utils-new';
 
 export const INPUT_CLASSNAME = `k-input`;
 
@@ -13,9 +13,9 @@ export const states = [
 ];
 
 export const options = {
-    size: [ "small", "medium", "large" ],
-    rounded: [ "small", "medium", "large", "full" ],
-    fillMode: [ "solid", "flat", "outline" ],
+    size: [ Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
 export type InputState = { [K in (typeof states)[number]]?: boolean };
@@ -26,9 +26,9 @@ export type InputOptions = {
 };
 
 export const defaultProps = {
-    size: "medium",
-    rounded: "medium",
-    fillMode: "solid",
+    size: Size.medium,
+    rounded: Size.medium,
+    fillMode: FillMode.solid,
 };
 
 export const Input = (

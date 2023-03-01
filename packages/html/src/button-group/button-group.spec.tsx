@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, FillMode } from '../utils-new';
 
 export const BUTTONGROUP_CLASSNAME = `k-button-group`;
 
@@ -7,7 +7,7 @@ const states = [
 ];
 
 const options = {
-    fillMode: [ "solid", "flat", "outline", "clear", "link" ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
 };
 
 export type KendoButtonGroupOptions = {
@@ -21,7 +21,7 @@ export type KendoButtonGroupProps = KendoButtonGroupOptions & {
 export type KendoButtonGroupState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    fillMode: "solid",
+    fillMode: FillMode.solid,
 };
 
 export const ButtonGroup = (

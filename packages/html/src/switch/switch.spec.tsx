@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils-new';
 
 export const SWITCH_CLASSNAME = `k-switch`;
 
@@ -10,7 +10,7 @@ const states = [
 ];
 
 const options = {
-    size: [ "small", "medium", "large" ],
+    size: [ Size.small, Size.medium, Size.large ],
 };
 
 export type KendoSwitchOptions = {
@@ -27,7 +27,7 @@ export type KendoSwitchProps = KendoSwitchOptions & {
 export type KendoSwitchState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    size: "medium",
+    size: Size.medium,
     trackRounded: "full",
     thumbRounded: "full"
 };

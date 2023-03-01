@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames, optionClassNames, States } from '../utils-new';
+import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils-new';
 
 export const SPLITBUTTON_CLASSNAME = `k-split-button`;
 
@@ -12,19 +12,21 @@ const states = [
 ];
 
 const options = {
-    size: [ "small", "medium", "large" ],
-    rounded: [ "small", "medium", "large", "full" ],
-    fillMode: [ "solid", "flat", "outline", "clear", "link" ],
+    size: [ Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
     themeColor: [
-        "primary",
-        "secondary",
-        "tertiary",
-        "success",
-        "warning",
-        "error",
-        "info",
-        "light",
-        "dark"
+        ThemeColor.base,
+        ThemeColor.primary,
+        ThemeColor.secondary,
+        ThemeColor.tertiary,
+        ThemeColor.success,
+        ThemeColor.warning,
+        ThemeColor.error,
+        ThemeColor.info,
+        ThemeColor.light,
+        ThemeColor.dark,
+        ThemeColor.inverse
     ],
 };
 
@@ -46,10 +48,10 @@ export type KendoSplitButtonProps = KendoSplitButtonOptions & {
 export type KendoSplitButtonState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    size: "medium",
-    rounded: "medium",
-    fillMode: "solid",
-    themeColor: "base",
+    size: Size.medium,
+    rounded: Roundness.medium,
+    fillMode: FillMode.solid,
+    themeColor: ThemeColor.base,
     arrowIconName: "arrow-s"
 };
 

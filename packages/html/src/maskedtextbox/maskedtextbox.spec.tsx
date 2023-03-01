@@ -1,4 +1,4 @@
-import { classNames, States } from '../utils-new';
+import { classNames, States, Size, Roundness, FillMode } from '../utils-new';
 import {
     Input,
     InputInnerInput,
@@ -20,9 +20,9 @@ const states = [
 ];
 
 const options = {
-    size: [ "small", "medium", "large" ],
-    rounded: [ "small", "medium", "large", "full" ],
-    fillMode: [ "solid", "flat", "outline" ],
+    size: [ Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
 export type KendoMaskedTextboxOptions = {

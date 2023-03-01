@@ -1,13 +1,13 @@
 import { Button } from '../button';
-import { classNames } from '../utils-new';
+import { classNames, Size, FillMode } from '../utils-new';
 
 export const SPINBUTTON_CLASSNAME = `k-spin-button`;
 
 const states = [];
 
 const options = {
-    size: [ "small", "medium", "large" ],
-    fillMode: [ "solid", "flat", "outline", "clear", "link" ],
+    size: [ Size.small, Size.medium, Size.large ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
 };
 
 export type KendoSpinButtonOptions = {
@@ -21,8 +21,8 @@ export type KendoSpinButtonProps = KendoSpinButtonOptions & {
 };
 
 const defaultProps = {
-    size: "medium",
-    fillMode: "solid",
+    size: Size.medium,
+    fillMode: FillMode.solid,
 };
 
 export const SpinButton = (
