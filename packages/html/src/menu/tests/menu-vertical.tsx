@@ -38,7 +38,7 @@ root.render(
                         <span className="k-link k-menu-link">
                             <span className="k-menu-link-text">Hover</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="arrow-60-right"></Icon>
+                                <Icon name="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
@@ -46,7 +46,7 @@ root.render(
                         <span className="k-link k-menu-link">
                             <span className="k-menu-link-text">Active</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="arrow-60-right"></Icon>
+                                <Icon name="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
@@ -60,7 +60,7 @@ root.render(
                             <Icon name="folder"></Icon>
                             <span className="k-menu-link-text">Normal with icon</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="arrow-60-right"></Icon>
+                                <Icon name="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
@@ -69,7 +69,7 @@ root.render(
                             <Icon name="folder"></Icon>
                             <span className="k-menu-link-text">Hover with icon</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="arrow-60-right"></Icon>
+                                <Icon name="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
@@ -78,7 +78,7 @@ root.render(
                             <Icon name="folder"></Icon>
                             <span className="k-menu-link-text">Active with icon</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="arrow-60-right"></Icon>
+                                <Icon name="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
@@ -87,7 +87,7 @@ root.render(
                             <Icon name="folder"></Icon>
                             <span className="k-menu-link-text">Focus with icon</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="arrow-60-right"></Icon>
+                                <Icon name="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>

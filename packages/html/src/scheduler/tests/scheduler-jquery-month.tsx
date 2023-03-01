@@ -255,7 +255,7 @@ root.render(
                                         <div><div className="k-event-template">Grand Canyon tour</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", "--span": "2", "--col": "1", "--row": "3", "--slot": "1", height: "25px" } as React.CSSProperties} className="k-event">
-                                        <span className="k-event-actions"><Icon name="arrow-w"></Icon></span>
+                                        <span className="k-event-actions"><Icon name="caret-alt-left"></Icon></span>
                                         <div><div className="k-event-template">Attending HR Conference</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", "--span": "1", "--col": "3", "--row": "3", "--slot": "1", height: "25px" } as React.CSSProperties} className="k-event">
@@ -275,7 +275,7 @@ root.render(
                                         <div><div className="k-event-template">Bob&apos;s Birthday Party</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", "--span": "1", "--col": "1", "--row": "3", "--slot": "2", height: "25px" } as React.CSSProperties} className="k-event">
-                                        <span className="k-event-actions"><Icon name="arrow-w"></Icon></span>
+                                        <span className="k-event-actions"><Icon name="caret-alt-left"></Icon></span>
                                         <div><div className="k-event-template">Grand Canyon tour</div></div>
                                     </div>
                                     <div style={{ "--span": "1", "--col": "2", "--row": "3", "--slot": "2", height: "25px" } as React.CSSProperties} className="k-event">

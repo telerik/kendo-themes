@@ -694,7 +694,7 @@ root.render(
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "2321px", top: "485px", width: "291px" }}><span className="k-arrow-e"></span></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "2613px", top: "521px", width: "510px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-v" style={{ left: "3121px", top: "485px", height: "38px" }}></div>
-                                    <div className="k-gantt-line k-gantt-line-h" style={{ left: "3114px", top: "485px", width: "7px" }}><span className="k-arrow-w"></span></div>
+                                    <div className="k-gantt-line k-gantt-line-h" style={{ left: "3114px", top: "485px", width: "7px" }}><span className="k-caret-alt-left"></span></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "3113px", top: "485px", width: "10px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-v" style={{ left: "3121px", top: "485px", height: "18px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "2903px", top: "503px", width: "220px" }}></div>
@@ -712,7 +712,7 @@ root.render(
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "2503px", top: "737px", width: "9px" }}><span className="k-arrow-e"></span></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "3413px", top: "593px", width: "10px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-v" style={{ left: "3421px", top: "593px", height: "38px" }}></div>
-                                    <div className="k-gantt-line k-gantt-line-h" style={{ left: "3414px", top: "629px", width: "7px" }}><span className="k-arrow-w"></span></div>
+                                    <div className="k-gantt-line k-gantt-line-h" style={{ left: "3414px", top: "629px", width: "7px" }}><span className="k-caret-alt-left"></span></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "3413px", top: "629px", width: "10px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-v" style={{ left: "3421px", top: "629px", height: "180px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "3421px", top: "809px", width: "679.5px" }}><span className="k-arrow-e"></span></div>
@@ -721,7 +721,7 @@ root.render(
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "3421px", top: "809px", width: "679.5px" }}><span className="k-arrow-e"></span></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "3113px", top: "341px", width: "10px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-v" style={{ left: "3121px", top: "341px", height: "146px" }}></div>
-                                    <div className="k-gantt-line k-gantt-line-h" style={{ left: "3114px", top: "485px", width: "7px" }}><span className="k-arrow-w"></span></div>
+                                    <div className="k-gantt-line k-gantt-line-h" style={{ left: "3114px", top: "485px", width: "7px" }}><span className="k-caret-alt-left"></span></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "124.5px", top: "53px", width: "10px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-v" style={{ left: "132.5px", top: "53px", height: "18px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "103px", top: "71px", width: "31.5px" }}></div>

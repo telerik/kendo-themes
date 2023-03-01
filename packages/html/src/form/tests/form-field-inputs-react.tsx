@@ -108,7 +108,7 @@ root.render(
                     <div className="k-form-field">
                         <label className="k-label">Slider:</label>
                         <div className="k-slider k-slider-horizontal">
-                            <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                            <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                             <div className="k-slider-track-wrap">
                                 <ul className="k-reset k-slider-items">
                                     <li className="k-tick k-tick-large">
@@ -134,7 +134,7 @@ root.render(
                                     <a href="#" className="k-draghandle k-draghandle-end"></a>
                                 </div>
                             </div>
-                            <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                            <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                         </div>
                     </div>
 
@@ -254,7 +254,7 @@ root.render(
                         <label className="k-label">Slider:</label>
                         <div className="k-form-field-wrap">
                             <div className="k-slider k-slider-horizontal">
-                                <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                                <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                                 <div className="k-slider-track-wrap">
                                     <ul className="k-reset k-slider-items">
                                         <li className="k-tick k-tick-large">
@@ -280,7 +280,7 @@ root.render(
                                         <a href="#" className="k-draghandle k-draghandle-end"></a>
                                     </div>
                                 </div>
-                                <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                                <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                             </div>
                         </div>
                     </div>

@@ -59,8 +59,8 @@ export class MenuItem extends React.Component<MenuItemProps> {
 
         if ( !expandArrowName ) {
             expandArrowName = dir === 'rtl'
-                ? 'arrow-w'
-                : 'arrow-e';
+                ? 'caret-alt-left'
+                : 'caret-alt-right';
         }
 
         return (
