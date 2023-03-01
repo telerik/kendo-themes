@@ -1,4 +1,4 @@
-import { classNames, optionClassNames } from '../utils-new';
+import { classNames, optionClassNames, Size } from '../utils-new';
 import { ListItem, ListGroup, ListContent, ListGroupItem } from '../list';
 import { NoData } from '../nodata';
 
@@ -7,7 +7,7 @@ export const LISTANGULAR_CLASSNAME = `k-list`;
 const states = [];
 
 const options = {
-    size: [ "small", "medium", "large" ],
+    size: [ Size.small, Size.medium, Size.large ],
 };
 
 export type KendoListAngularOptions = {
@@ -22,7 +22,7 @@ export type KendoListAngularProps = KendoListAngularOptions & {
 export type KendoListAngularState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    size: "medium",
+    size: Size.medium,
 };
 
 export const ListAngular = (

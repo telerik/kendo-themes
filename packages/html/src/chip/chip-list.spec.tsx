@@ -1,11 +1,11 @@
-import { classNames, optionClassNames } from '../utils-new';
+import { classNames, optionClassNames, Size } from '../utils-new';
 
 export const CHIPLIST_CLASSNAME = `k-chip-list`;
 
 const states = [];
 
 const options = {
-    size: [ "small", "medium", "large" ],
+    size: [ Size.small, Size.medium, Size.large ],
 };
 
 export type KendoChipListOptions = {
@@ -13,10 +13,7 @@ export type KendoChipListOptions = {
 };
 
 const defaultProps = {
-    size: "medium",
-    rounded: "medium",
-    fillMode: "solid",
-    themeColor: "base",
+    size: Size.medium,
 };
 
 export const ChipList = (

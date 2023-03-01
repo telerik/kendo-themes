@@ -1,6 +1,6 @@
 import { Icon } from '../icon';
 import { Avatar } from '../avatar';
-import { classNames, optionClassNames, stateClassNames, States } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils-new';
 
 export const CHIP_CLASSNAME = `k-chip`;
 
@@ -13,15 +13,15 @@ const states = [
 ];
 
 const options = {
-    size: [ "small", "medium", "large" ],
-    rounded: [ "small", "medium", "large", "full" ],
-    fillMode: [ "solid", "outline" ],
+    size: [ Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    fillMode: [ FillMode.solid, FillMode.outline, ],
     themeColor: [
-        "base",
-        "success",
-        "warning",
-        "error",
-        "info",
+        ThemeColor.base,
+        ThemeColor.success,
+        ThemeColor.warning,
+        ThemeColor.error,
+        ThemeColor.info,
     ],
 };
 
@@ -42,10 +42,10 @@ export type KendoChipProps = KendoChipOptions & {
 export type KendoChipState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    size: "medium",
-    rounded: "medium",
-    fillMode: "solid",
-    themeColor: "base",
+    size: Size.medium,
+    rounded: Roundness.medium,
+    fillMode: FillMode.solid,
+    themeColor: ThemeColor.base,
 };
 
 export const Chip = (

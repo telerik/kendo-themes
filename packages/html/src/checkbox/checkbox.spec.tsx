@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness } from '../utils-new';
 
 export const CHECKBOX_CLASSNAME = `k-checkbox`;
 
@@ -13,9 +13,9 @@ const states = [
     States.indeterminate
 ];
 
-export const options = {
-    size: [ "small", "medium", "large" ],
-    rounded: [ "small", "medium", "large", "full" ],
+const options = {
+    size: [ Size.small, Size.medium, Size.large ],
+    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
 };
 
 export type CheckboxProps = CheckboxOptions & {
@@ -29,9 +29,9 @@ export type CheckboxOptions = {
   rounded?: (typeof options.rounded)[number] | null;
 };
 
-export const defaultProps = {
-    size: "medium",
-    rounded: "medium",
+const defaultProps = {
+    size: Size.medium,
+    rounded: Roundness.medium,
 };
 
 export const Checkbox = (

@@ -1,21 +1,22 @@
-import { classNames, optionClassNames } from '../utils-new';
+import { classNames, optionClassNames, Size, ThemeColor } from '../utils-new';
 
 export const ICON_CLASSNAME = `k-icon`;
 
-export const states = [];
+const states = [];
 
-export const options = {
-    size: [ "xsmall", "small", "medium", "large", "xlarge", "xxlarge", "xxxlarge" ],
+const options = {
+    size: [ Size.xsmall, Size.small, Size.medium, Size.large, Size.xlarge, Size.xxlarge, Size.xxxlarge ],
     themeColor: [
-        "primary",
-        "secondary",
-        "tertiary",
-        "success",
-        "warning",
-        "error",
-        "info",
-        "light",
-        "dark"
+        ThemeColor.base,
+        ThemeColor.primary,
+        ThemeColor.secondary,
+        ThemeColor.tertiary,
+        ThemeColor.success,
+        ThemeColor.warning,
+        ThemeColor.error,
+        ThemeColor.info,
+        ThemeColor.light,
+        ThemeColor.dark,
     ],
 };
 
@@ -32,17 +33,12 @@ export type IconProps = IconOptions & {
     flip?: null | 'v' | 'h';
 }
 
-const defaultProps = {
-    size: "medium",
-    themeColor: "base",
-};
-
 export const Icon = (
     props: IconProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
-        size = defaultProps.themeColor,
-        themeColor = defaultProps.themeColor,
+        size,
+        themeColor,
         name,
         rotate,
         flip,
