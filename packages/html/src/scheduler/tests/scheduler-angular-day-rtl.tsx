@@ -62,7 +62,7 @@ root.render(
                                             </tbody>
                                         </table>
                                         <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "454px", right: "1px", top: '0px', height: "25px" }} className="k-event">
-                                            <span className="k-event-actions"><Icon name="arrow-e"></Icon></span>
+                                            <span className="k-event-actions"><Icon name="caret-alt-right"></Icon></span>
                                             <div><div className="k-event-template">Attending HR Conference</div></div>
                                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
                                             <span className="k-resize-handle k-resize-w"></span>

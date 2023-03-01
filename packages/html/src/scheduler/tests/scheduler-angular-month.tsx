@@ -244,7 +244,7 @@ root.render(
                                     <div><div className="k-event-template">Grand Canyon tour</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "325px", left: '0px', top: "220px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="arrow-w"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="caret-alt-left"></Icon></span>
                                     <div><div className="k-event-template">Attending HR Conference</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", left: "327px", top: "220px", height: "25px" }} className="k-event">
@@ -264,7 +264,7 @@ root.render(
                                     <div><div className="k-event-template">Bob&apos;s Birthday Party</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", left: '0px', top: "247px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="arrow-w"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="caret-alt-left"></Icon></span>
                                     <div><div className="k-event-template">Grand Canyon tour</div></div>
                                 </div>
                                 <div style={{ width: "162px", left: "163px", top: "247px", height: "25px" }} className="k-event">

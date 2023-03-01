@@ -30,10 +30,10 @@ root.render(
             <section>
                 <ListBox>
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -49,10 +49,10 @@ root.render(
             <section dir="rtl">
                 <ListBox>
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -68,10 +68,10 @@ root.render(
             <section>
                 <ListBox actionsPosition="right">
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -87,10 +87,10 @@ root.render(
             <section dir="rtl">
                 <ListBox actionsPosition="right">
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -106,10 +106,10 @@ root.render(
             <section>
                 <ListBox actionsPosition="top">
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -125,10 +125,10 @@ root.render(
             <section dir="rtl">
                 <ListBox actionsPosition="top">
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-e"></Button>
-                        <Button icon="arrow-w"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-right"></Button>
+                        <Button icon="caret-alt-left"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -144,10 +144,10 @@ root.render(
             <section>
                 <ListBox actionsPosition="bottom">
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -163,10 +163,10 @@ root.render(
             <section dir="rtl">
                 <ListBox actionsPosition="bottom">
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-e"></Button>
-                        <Button icon="arrow-w"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-right"></Button>
+                        <Button icon="caret-alt-left"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>

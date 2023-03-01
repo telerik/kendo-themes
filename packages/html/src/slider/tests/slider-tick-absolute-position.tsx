@@ -66,7 +66,7 @@ root.render(
 
             <section>
                 <div className="k-widget k-slider k-slider-vertical">
-                    <Button icon="arrow-s" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-down" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items" style={{ position: 'relative' }}>
                             <li className="k-tick k-tick-large k-tick-vertical" style={{ zIndex: 1, position: 'absolute', bottom: '100%' }}>
@@ -93,7 +93,7 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end" style={{ bottom: '33%', zIndex: 1 }}></a>
                         </div>
                     </div>
-                    <Button icon="arrow-n" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-up" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
 

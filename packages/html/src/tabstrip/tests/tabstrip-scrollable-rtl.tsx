@@ -26,7 +26,7 @@ root.render(
             <section>
                 <div className="k-widget k-tabstrip k-header k-tabstrip-top k-tabstrip-scrollable" dir="rtl">
                     <div className="k-tabstrip-items-wrapper k-hstack">
-                        <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-left" className="k-tabstrip-prev"></Button>
+                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-left" className="k-tabstrip-prev"></Button>
                         <ul className="k-reset k-tabstrip-items">
                             <li className="k-item k-first k-active">
                                 <span className="k-link">First</span>
@@ -39,7 +39,7 @@ root.render(
                                 <span className="k-link">Focused</span>
                             </li>
                         </ul>
-                        <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-right" className="k-tabstrip-next"></Button>
+                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-right" className="k-tabstrip-next"></Button>
                     </div>
                     <div className="k-tabstrip-content k-active k-focus">
                         <div>Top scrollable</div>
@@ -53,7 +53,7 @@ root.render(
                         <div>Bottom scrollable</div>
                     </div>
                     <div className="k-tabstrip-items-wrapper k-hstack">
-                        <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-left" className="k-tabstrip-prev"></Button>
+                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-left" className="k-tabstrip-prev"></Button>
                         <ul className="k-reset k-tabstrip-items">
                             <li className="k-item k-first k-active">
                                 <span className="k-link">First</span>
@@ -66,7 +66,7 @@ root.render(
                                 <span className="k-link">Focused</span>
                             </li>
                         </ul>
-                        <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-right" className="k-tabstrip-next"></Button>
+                        <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-right" className="k-tabstrip-next"></Button>
                     </div>
                 </div>
             </section>
