@@ -57,6 +57,11 @@
             font-size: var( --kendo-rating-icon-size, #{$kendo-rating-icon-size} );
         }
 
+        .k-svg-icon {
+            width: var( --kendo-rating-icon-size, #{$kendo-rating-icon-size} );
+            height: var( --kendo-rating-icon-size, #{$kendo-rating-icon-size} );
+        }
+
         svg {
             fill: currentColor;
         }

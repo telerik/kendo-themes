@@ -15,7 +15,8 @@
         text-transform: uppercase;
         font-size: $kendo-font-size-md;
 
-        .k-icon {
+        .k-icon,
+        .k-svg-icon {
             margin-left: $kendo-editor-export-tool-icon-margin-x;
         }
     }

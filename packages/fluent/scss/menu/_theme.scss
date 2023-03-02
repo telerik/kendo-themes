@@ -37,7 +37,8 @@
             }
         }
 
-        .k-link > .k-icon {
+        .k-link > .k-icon,
+        .k-link > .k-svg-icon {
             color: var( --kendo-menu-icon-color, $kendo-menu-icon-color );
         }
 

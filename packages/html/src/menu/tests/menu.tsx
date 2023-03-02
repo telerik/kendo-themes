@@ -40,7 +40,7 @@ root.render(
                         <span className="k-link k-menu-link">
                             <span className="k-menu-link-text">Hover</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="arrow-s"></Icon>
+                                <Icon name="caret-alt-down"></Icon>
                             </span>
                         </span>
                     </li>
@@ -48,7 +48,7 @@ root.render(
                         <span className="k-link k-menu-link k-active">
                             <span className="k-menu-link-text">Active</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="arrow-s"></Icon>
+                                <Icon name="caret-alt-down"></Icon>
                             </span>
                         </span>
                         <div className="k-animation-container k-animation-container-fixed k-animation-container-shown">
@@ -100,8 +100,8 @@ root.render(
                             <span className="k-link k-menu-link">Item 6</span>
                         </li>
                     </ul>
-                    <Button icon="arrow-60-left" className="k-menu-scroll-button k-scroll-left"></Button>
-                    <Button icon="arrow-60-right" className="k-menu-scroll-button k-scroll-right"></Button>
+                    <Button icon="caret-alt-left" className="k-menu-scroll-button k-scroll-left"></Button>
+                    <Button icon="caret-alt-right" className="k-menu-scroll-button k-scroll-right"></Button>
                 </div>
             </section>
         </div>

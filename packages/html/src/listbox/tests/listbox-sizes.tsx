@@ -30,10 +30,10 @@ root.render(
             <section>
                 <ListBox size="small">
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -49,10 +49,10 @@ root.render(
             <section>
                 <ListBox>
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>
@@ -68,10 +68,10 @@ root.render(
             <section>
                 <ListBox size="large">
                     <ListBoxActions>
-                        <Button icon="arrow-n"></Button>
-                        <Button icon="arrow-s"></Button>
-                        <Button icon="arrow-w"></Button>
-                        <Button icon="arrow-e"></Button>
+                        <Button icon="caret-alt-up"></Button>
+                        <Button icon="caret-alt-down"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </ListBoxActions>
                     <List>
                         <ListItem>Item</ListItem>

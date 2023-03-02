@@ -441,22 +441,22 @@ root.render(
                             <div className="k-filter-wrapper">
                                 <div className="k-filter-range" style={{ width: "816px", height: "206px", top: "90px", left: "32px" }}></div>
                                 <span className="k-spreadsheet-filter" style={{ left: "113px", top: "93px" }}>
-                                    <Icon name="arrow-s"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "328px", top: "93px" }}>
-                                    <Icon name="arrow-s"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "443px", top: "93px" }}>
-                                    <Icon name="arrow-s"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "558px", top: "93px" }}>
-                                    <Icon name="arrow-s"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "673px", top: "93px" }}>
-                                    <Icon name="arrow-s"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "828px", top: "93px" }}>
-                                    <Icon name="arrow-s"></Icon>
+                                    <Icon name="caret-alt-down"></Icon>
                                 </span>
                             </div>
                             <div className="k-spreadsheet-row-header" style={{ width: "32px", top: "20px" }}>
@@ -569,7 +569,7 @@ root.render(
                     <Button icon="add" className="k-spreadsheet-sheets-bar-add"></Button>
                     <div className="k-spreadsheet-sheets-items k-tabstrip-scrollable k-tabstrip k-tabstrip-bottom">
                         <div className="k-tabstrip-items-wrapper k-hstack">
-                            <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-left" className="k-tabstrip-prev"></Button>
+                            <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-left" className="k-tabstrip-prev"></Button>
                             <ul className="k-reset k-tabstrip-items">
                                 <li className="k-item k-active k-tab-on-top k-spreadsheet-sheets-bar-active">
                                     <span className="k-link">Food Order</span>
@@ -580,7 +580,7 @@ root.render(
                                     <Button fillMode="flat" icon="close" className="k-spreadsheet-sheets-remove k-remove-tab"></Button>
                                 </li>
                             </ul>
-                            <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-right" className="k-tabstrip-next"></Button>
+                            <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-right" className="k-tabstrip-next"></Button>
                         </div>
                     </div>
                 </div>

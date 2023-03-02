@@ -33,7 +33,8 @@
             );
         }
 
-        .k-blank-page > .k-icon {
+        .k-blank-page > .k-icon,
+        .k-blank-page > .k-svg-icon {
             @include fill(
                 $color: var( --kendo-pdf-viewer-icon-text, #{$kendo-pdf-viewer-icon-text} )
             );

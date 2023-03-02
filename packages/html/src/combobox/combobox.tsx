@@ -72,7 +72,7 @@ export class Combobox extends React.Component<ComboboxProps> {
                 <InputClearValue {...this.props} />
                 <Button
                     className="k-input-button"
-                    icon="arrow-s"
+                    icon="caret-alt-down"
                     rounded={null}
                     size={this.props.size}
                     fillMode={this.props.fillMode}

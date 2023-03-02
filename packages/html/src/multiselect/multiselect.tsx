@@ -85,7 +85,7 @@ export class MultiSelect extends React.Component<MultiSelectProps> {
                 {showArrowButton && (
                     <Button
                         className="k-input-button"
-                        icon="arrow-s"
+                        icon="caret-alt-down"
                         rounded={null}
                         size={size}
                         fillMode={fillMode}

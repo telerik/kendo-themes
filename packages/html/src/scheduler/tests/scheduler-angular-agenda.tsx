@@ -76,7 +76,7 @@ root.render(
                                                         <span className="k-scheduler-agendadate">Jun 2013</span>
                                                     </td>
                                                     <td className="k-scheduler-timecolumn">
-                                                        <div><Icon name="arrow-w"></Icon> all day</div>
+                                                        <div><Icon name="caret-alt-left"></Icon> all day</div>
                                                     </td>
                                                     <td>
                                                         <div className="k-task">
@@ -189,7 +189,7 @@ root.render(
                                                         <span className="k-scheduler-agendadate">Jun 2013</span>
                                                     </td>
                                                     <td className="k-scheduler-timecolumn">
-                                                        <div><Icon name="arrow-w"></Icon> all day</div>
+                                                        <div><Icon name="caret-alt-left"></Icon> all day</div>
                                                     </td>
                                                     <td>
                                                         <div className="k-task">
