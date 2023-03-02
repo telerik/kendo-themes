@@ -1115,7 +1115,11 @@
         kendo-grid-string-filter-menu,
         kendo-grid-date-filter-menu,
         kendo-grid-numeric-filter-menu,
-        kendo-grid-filter-menu-input-wrapper {
+        kendo-grid-filter-menu-input-wrapper,
+        kendo-treelist-string-filter-menu,
+        kendo-treelist-date-filter-menu,
+        kendo-treelist-numeric-filter-menu,
+        kendo-treelist-filter-menu-input-wrapper {
             display: flex;
             flex-flow: column nowrap;
             align-items: stretch;
