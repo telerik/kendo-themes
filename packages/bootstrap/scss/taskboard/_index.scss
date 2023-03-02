@@ -1,4 +1,5 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
 
 
 // Dependencies
@@ -11,6 +12,7 @@
 @import "../searchbox/_index.scss";
 @import "../toolbar/_index.scss";
 @import "../card/_index.scss";
+
 
 // Component
 @import "./_variables.scss";
