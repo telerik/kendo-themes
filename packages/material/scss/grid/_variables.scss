@@ -127,6 +127,7 @@ $kendo-grid-cell-vertical-border-width: $kendo-table-cell-vertical-border-width 
 
 $kendo-grid-cell-placeholder-line-width: 80% !default;
 
+
 /// Background color of the grid component
 /// @group grid
 $kendo-grid-bg: $kendo-table-bg !default;
@@ -136,6 +137,7 @@ $kendo-grid-text: $kendo-table-text !default;
 /// Border color of the grid component
 /// @group grid
 $kendo-grid-border: $kendo-table-border !default;
+
 
 /// Background color of grid header
 /// @group grid
@@ -150,6 +152,7 @@ $kendo-grid-header-border: $kendo-table-header-border !default;
 /// @group grid
 $kendo-grid-header-gradient: null !default;
 
+
 /// Background color of grid footer
 /// @group grid
 $kendo-grid-footer-bg: $kendo-table-footer-bg !default;
@@ -159,6 +162,7 @@ $kendo-grid-footer-text: $kendo-table-footer-text !default;
 /// Border color of grid footer
 /// @group grid
 $kendo-grid-footer-border: $kendo-table-footer-border !default;
+
 
 // TODO(ZHEKOV): we need this, so k-alt won't override it. When we remove k-alt, we can make this null.
 /// Background color of alternating rows in grid
@@ -171,6 +175,7 @@ $kendo-grid-alt-text: $kendo-table-alt-row-text !default;
 /// @group grid
 $kendo-grid-alt-border: $kendo-table-alt-row-border !default;
 
+
 /// Background color of hovered rows in grid
 /// @group grid
 $kendo-grid-hover-bg: $kendo-table-hover-bg !default;
@@ -180,6 +185,21 @@ $kendo-grid-hover-text: $kendo-table-hover-text !default;
 /// Border color of hovered rows in grid
 /// @group grid
 $kendo-grid-hover-border: $kendo-table-hover-border !default;
+
+
+/// Background color of focused rows in grid.
+/// @group grid
+$kendo-grid-focus-bg: $kendo-table-focus-bg !default;
+/// Text color of focused rows in grid.
+/// @group grid
+$kendo-grid-focus-text: $kendo-table-focus-text !default;
+/// Border color of focused rows in grid.
+/// @group grid
+$kendo-grid-focus-border: $kendo-table-focus-border !default;
+/// Box shadow of focused rows in grid.
+/// @group grid
+$kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
+
 
 /// Background color of selected rows in grid
 /// @group grid
@@ -191,6 +211,29 @@ $kendo-grid-selected-text: $kendo-table-selected-text !default;
 /// @group grid
 $kendo-grid-selected-border: $kendo-table-selected-border !default;
 
+
+/// Background color of selected alternating rows in grid.
+/// @group grid
+$kendo-grid-alt-selected-bg: null !default;
+/// Text color of selected alternating rows in grid.
+/// @group grid
+$kendo-grid-alt-selected-text: null !default;
+/// Border color of selected alternating rows in grid.
+/// @group grid
+$kendo-grid-alt-selected-border: null !default;
+
+
+/// Background color of hovered and selected rows in grid
+/// @group grid
+$kendo-grid-selected-hover-bg: $kendo-table-selected-bg !default;
+/// Text color of hovered and selected rows in grid
+/// @group grid
+$kendo-grid-selected-hover-text: $kendo-table-selected-text !default;
+/// Border color of hovered and selected rows in grid
+/// @group grid
+$kendo-grid-selected-hover-border: $kendo-table-selected-border !default;
+
+
 $kendo-grid-grouping-row-bg: transparent !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
@@ -201,8 +244,6 @@ $kendo-grid-sorting-index-font-size: $kendo-font-size-sm !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
 $kendo-grid-sorting-index-spacing-y: k-math-div( $kendo-icon-spacing, 2 ) !default;
 $kendo-grid-sorting-index-spacing-x: -$kendo-grid-sorting-index-spacing-y !default;
-
-$kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
 
 $kendo-grid-command-cell-button-spacing: k-map-get( $kendo-spacing, 2 ) !default;
 // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38

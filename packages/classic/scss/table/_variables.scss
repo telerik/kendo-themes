@@ -114,7 +114,7 @@ $kendo-table-group-row-border: $kendo-table-header-border !default;
 $kendo-table-alt-row-bg: k-try-shade( $kendo-table-bg, .5 ) !default;
 /// Text color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-text: null !default;
+$kendo-table-alt-row-text: $kendo-table-text !default;
 /// Border color of alternating rows in table.
 /// @group table
 $kendo-table-alt-row-border: null !default;
@@ -125,7 +125,7 @@ $kendo-table-alt-row-border: null !default;
 $kendo-table-hover-bg: k-try-shade( $kendo-table-bg, 1 ) !default;
 /// Text color of hovered rows in table.
 /// @group table
-$kendo-table-hover-text: null !default;
+$kendo-table-hover-text: $kendo-table-text !default;
 /// Border color of hovered rows in table.
 /// @group table
 $kendo-table-hover-border: null !default;
@@ -147,10 +147,32 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-table-selected-bg: k-rgba-to-mix( rgba( $kendo-selected-bg, .25 ), $kendo-table-bg ) !default;
 /// Text color of selected rows in table.
 /// @group table
-$kendo-table-selected-text: null !default;
+$kendo-table-selected-text: $kendo-table-text !default;
 /// Border color of selected rows in table.
 /// @group table
 $kendo-table-selected-border: null !default;
+
+
+/// Background color of selected alternating rows in table.
+/// @group table
+$kendo-table-alt-selected-bg: k-try-shade( $kendo-table-selected-bg, .5 ) !default;
+/// Text color of selected alternating rows in table.
+/// @group table
+$kendo-table-alt-selected-text: $kendo-table-text !default;
+/// Border color of selected alternating rows in table.
+/// @group table
+$kendo-table-alt-selected-border: null !default;
+
+
+/// Background color of hovered and selected rows in table.
+/// @group table
+$kendo-table-selected-hover-bg: k-try-shade( $kendo-table-selected-bg, 1 ) !default;
+/// Text color of hovered and selected rows in table.
+/// @group table
+$kendo-table-selected-hover-text: $kendo-table-text !default;
+/// Border color of hovered and selected rows in table.
+/// @group table
+$kendo-table-selected-hover-border: null !default;
