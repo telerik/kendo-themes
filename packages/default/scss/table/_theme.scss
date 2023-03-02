@@ -75,8 +75,10 @@
 
 
     // Selected state
-    .k-table-tbody .k-table-row.k-selected > .k-table-td,
-    .k-table-list .k-table-row.k-selected {
+    .k-table-tbody .k-table-row.k-selected,
+    .k-table-tbody .k-table-row > .k-selected,
+    .k-table-list .k-table-row.k-selected,
+    .k-table-list .k-table-row > .k-selected {
         border-color: $kendo-table-selected-border;
         color: $kendo-table-selected-text;
         background-color: $kendo-table-selected-bg;
