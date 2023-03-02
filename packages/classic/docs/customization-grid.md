@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-alt-text</td>
-    <td>Null</td>
+    <td>Color</td>
     <td><code>$kendo-table-alt-row-text</code></td>
-    <td><code>null</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in grid</div></div>
@@ -309,9 +309,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-hover-text</td>
-    <td>Null</td>
+    <td>Color</td>
     <td><code>$kendo-table-hover-text</code></td>
-    <td><code>null</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in grid</div></div>
@@ -328,10 +328,50 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-focus-bg</td>
+    <td>Null</td>
+    <td><code>$kendo-table-focus-bg</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused rows in grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-focus-text</td>
+    <td>Null</td>
+    <td><code>$kendo-table-focus-text</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused rows in grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-focus-border</td>
+    <td>Null</td>
+    <td><code>$kendo-table-focus-border</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused rows in grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-focus-shadow</td>
+    <td>List</td>
+    <td><code>$kendo-table-focus-shadow</code></td>
+    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.12)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in grid.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-selected-bg</td>
     <td>Color</td>
     <td><code>$kendo-table-selected-bg</code></td>
-    <td><span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span><code>rgba(243, 88, 0, 0.25)</code></td>
+    <td><span class="color-preview" style="background-color: #fcd5bf"></span><code>#fcd5bf</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
@@ -339,9 +379,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-selected-text</td>
-    <td>Null</td>
+    <td>Color</td>
     <td><code>$kendo-table-selected-text</code></td>
-    <td><code>null</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in grid</div></div>
@@ -355,6 +395,66 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-alt-selected-bg</td>
+    <td>Color</td>
+    <td><code>k-try-shade( $kendo-grid-selected-bg, .5 )</code></td>
+    <td><span class="color-preview" style="background-color: #f2ccb7"></span><code>#f2ccb7</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected alternating rows in grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-alt-selected-text</td>
+    <td>Color</td>
+    <td><code>$kendo-grid-selected-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected alternating rows in grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-alt-selected-border</td>
+    <td>Null</td>
+    <td><code>$kendo-grid-selected-border</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected alternating rows in grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selected-hover-bg</td>
+    <td>Color</td>
+    <td><code>k-try-shade( $kendo-grid-selected-bg, 1 )</code></td>
+    <td><span class="color-preview" style="background-color: #e8c4b0"></span><code>#e8c4b0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered and selected rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selected-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-grid-selected-text</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered and selected rows in grid</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selected-hover-border</td>
+    <td>Null</td>
+    <td><code>$kendo-grid-selected-border</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered and selected rows in grid</div></div>
     </td>
 </tr>
 </tbody>
