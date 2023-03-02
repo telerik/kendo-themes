@@ -526,4 +526,16 @@
         border-color: $kendo-grid-border;
     }
 
+    .k-row-resizer {
+        @include fill (
+            $bg: var( --kendo-grid-row-resizer-bg, #{$kendo-grid-row-resizer-bg} ),
+         );
+
+        &.k-active {
+            @include fill (
+                $bg: var( --kendo-grid-row-resizer-active-bg, #{$kendo-grid-row-resizer-active-bg} ),
+             );
+        }
+    }
+
 }

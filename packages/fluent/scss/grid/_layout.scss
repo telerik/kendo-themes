@@ -475,6 +475,15 @@
         cursor: col-resize;
     }
 
+    .k-row-resizer {
+        width: 100%;
+        height: 2px;
+        display: block;
+        position: absolute;
+        inset-block-end: 0;
+        cursor: row-resize;
+    }
+
     .k-grid-footer {
         border-block-start-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
 
