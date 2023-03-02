@@ -2,6 +2,16 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "popover",
+    dependencies: (
+        "card",
+        "popup",
+    )
+);
+
+
 // Dependencies
 @import "../common/_index.scss";
 @import "../card/_index.scss";

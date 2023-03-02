@@ -2,6 +2,16 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "badge",
+    dependencies: (
+        "icon",
+        // "utils/layout/position",
+    )
+);
+
+
 // Dependencies
 // @import "../utils/_position.scss";
 @import "../icons/_index.scss";

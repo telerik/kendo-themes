@@ -2,6 +2,23 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "captcha",
+    dependencies: (
+        "button",
+        "icon",
+        "input",
+        "slider",
+        "textbox",
+        // "utils/layout/position",
+        // "utils/typography/text-color",
+    )
+);
+
+
+
+
 // Dependencies
 // @import "../utils/_index.scss";
 @import "../common/_index.scss";

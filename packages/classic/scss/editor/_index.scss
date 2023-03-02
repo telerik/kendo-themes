@@ -2,6 +2,24 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "editor",
+    dependencies: (
+        "button",
+        "checkbox",
+        "color-picker",
+        "combobox",
+        "dropdown-list",
+        "file-manager",
+        "icon",
+        "toolbar",
+        "upload",
+        "window",
+    )
+);
+
+
 // Dependencies
 @import "../common/_index.scss";
 @import "../button/_index.scss";

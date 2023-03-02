@@ -2,6 +2,18 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "color-editor",
+    dependencies: (
+        "actions",
+        "color-gradient",
+        "color-palette",
+        "color-preview",
+    )
+);
+
+
 // Dependencies
 @import "../common/_index.scss";
 @import "../action-buttons/_index.scss";

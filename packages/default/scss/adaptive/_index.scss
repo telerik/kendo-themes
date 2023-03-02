@@ -2,6 +2,19 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "adaptive",
+    dependencies: (
+        "checkbox",
+        "listgroup",
+        "radio",
+        "switch",
+        "toolbar",
+    )
+);
+
+
 // Dependencies (TODO: extract variables)
 @import "../listgroup/_index.scss";
 @import "../checkbox/_index.scss";
