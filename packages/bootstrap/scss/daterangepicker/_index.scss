@@ -2,6 +2,22 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "date-range-picker",
+    dependencies: (
+        "calendar",
+        "date-input",
+        "date-picker",
+        "icon",
+        "input",
+        "popup",
+    )
+);
+
+
+
+
 // Dependencies
 @import "../common/_index.scss";
 @import "../input/_index.scss";

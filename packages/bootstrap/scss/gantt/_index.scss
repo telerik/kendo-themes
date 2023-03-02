@@ -2,6 +2,23 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "gantt",
+    dependencies: (
+        "button",
+        "date-time-picker",
+        "icon",
+        "input",
+        "numeric-textbox",
+        "splitter",
+        "treelist",
+        "validator",
+        "window",
+    )
+);
+
+
 // Dependencies
 @import "../common/_index.scss";
 @import "../button/_index.scss";

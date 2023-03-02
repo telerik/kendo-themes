@@ -2,6 +2,16 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "date-input",
+    dependencies: (
+        "icon",
+        "input",
+    )
+);
+
+
 // Dependencies
 @import "../input/_index.scss";
 

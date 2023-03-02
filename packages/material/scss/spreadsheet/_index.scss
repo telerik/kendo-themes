@@ -2,6 +2,29 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "spreadsheet",
+    dependencies: (
+        "button",
+        "checkbox",
+        "color-picker",
+        "combobox",
+        "date-time-picker",
+        "dropdown-list",
+        "icon",
+        "list",
+        "menu",
+        "radio",
+        "tabstrip",
+        "toolbar",
+        "treeview",
+        "upload",
+        "window",
+    )
+);
+
+
 // Dependencies
 @import "../common/_index.scss";
 @import "../button/_index.scss";

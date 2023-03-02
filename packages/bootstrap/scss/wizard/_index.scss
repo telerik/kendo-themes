@@ -2,6 +2,18 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "wizard",
+    dependencies: (
+        "button",
+        "form",
+        "icon",
+        "stepper",
+    )
+);
+
+
 // Dependencies
 @import "../common/_index.scss";
 @import "../button/_index.scss";

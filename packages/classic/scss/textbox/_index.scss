@@ -2,6 +2,16 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "textbox",
+    dependencies: (
+        "icon",
+        "input",
+    )
+);
+
+
 // Dependencies
 @import "../common/_index.scss";
 @import "../input/_index.scss";

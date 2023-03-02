@@ -2,6 +2,17 @@
 @import "../utils/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "form",
+    dependencies: (
+        "actions",
+        "icon",
+        "toolbar",
+    )
+);
+
+
 // Dependencies // TODO: extract variables
 @import "../common/_index.scss";
 @import "../toolbar/_index.scss";
