@@ -30,6 +30,11 @@
             font-size: $kendo-dropzone-icon-size;
         }
 
+        .k-svg-icon {
+            width: $kendo-dropzone-icon-size;
+            height: $kendo-dropzone-icon-size;
+        }
+
         .k-dropzone-hint {
             margin-bottom: $kendo-dropzone-hint-spacing;
             font-size: $kendo-dropzone-hint-font-size;

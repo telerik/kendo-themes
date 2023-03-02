@@ -234,9 +234,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-    }
-    .k-filemanager-drag-hint .k-icon {
-        margin-right: $kendo-icon-spacing;
+        gap: $kendo-icon-spacing;
     }
 
 }

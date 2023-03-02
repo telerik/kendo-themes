@@ -10,9 +10,15 @@
                 > .k-icon {
                     text-shadow: $kendo-rating-icon-focus-shadow;
                 }
+                > .k-svg-icon {
+                    filter: drop-shadow( $kendo-rating-icon-focus-shadow );
+                }
 
                 &.k-selected > .k-icon {
                     text-shadow: $kendo-rating-icon-focus-selected-shadow;
+                }
+                &.k-selected > .k-svg-icon {
+                    filter: drop-shadow( $kendo-rating-icon-focus-selected-shadow );
                 }
             }
         }

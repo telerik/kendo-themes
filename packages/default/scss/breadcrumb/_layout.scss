@@ -85,12 +85,13 @@
     }
 
     .k-breadcrumb-root-link {
-        margin-right: $kendo-breadcrumb-root-link-spacing;
+        margin-inline-end: $kendo-breadcrumb-root-link-spacing;
     }
 
     .k-breadcrumb-link > .k-image,
-    .k-breadcrumb-icontext-link .k-icon {
-        margin-right: $kendo-breadcrumb-link-icon-spacing;
+    .k-breadcrumb-icontext-link .k-icon,
+    .k-breadcrumb-icontext-link .k-svg-icon {
+        margin-inline-end: $kendo-breadcrumb-link-icon-spacing;
     }
 
     .k-breadcrumb-icon-link {
@@ -115,26 +116,6 @@
         .k-breadcrumb-input-container {
             border-color: transparent;
         }
-    }
-
-    @include exports("breadcrumb/layout/rtl") {
-
-        .k-breadcrumb {
-            &[dir="rtl"],
-            .k-rtl & {
-                .k-breadcrumb-root-link {
-                    margin-right: 0;
-                    margin-left: $kendo-breadcrumb-root-link-spacing;
-                }
-
-                .k-breadcrumb-link > .k-image,
-                .k-breadcrumb-icontext-link .k-icon {
-                    margin-right: 0;
-                    margin-left: $kendo-breadcrumb-link-icon-spacing;
-                }
-            }
-        }
-
     }
 
 }
