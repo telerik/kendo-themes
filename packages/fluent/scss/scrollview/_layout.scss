@@ -160,6 +160,11 @@
             font-size: var( --kendo-scrollview-arrow-icon-size, #{$kendo-scrollview-arrow-icon-size} );
             font-weight: normal;
         }
+
+        .k-svg-icon {
+            width: var( --kendo-scrollview-arrow-icon-size, #{$kendo-scrollview-arrow-icon-size} );
+            height: var( --kendo-scrollview-arrow-icon-size, #{$kendo-scrollview-arrow-icon-size} );
+        }
     }
 
     .k-scrollview-prev {

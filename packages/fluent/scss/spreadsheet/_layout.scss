@@ -595,7 +595,8 @@
             .k-link {
                 padding-inline-start: var( --filter-menu-padding-left, #{$kendo-filter-menu-padding-left} );
             }
-            .k-icon {
+            .k-icon,
+            .k-svg-icon {
                 margin-inline-start: calc(-1 * ( var( --kendo-icon-size, 1rem ) + #{$kendo-padding-md-y} ) );
                 margin-inline-end: $kendo-padding-md-y;
             }
@@ -635,7 +636,8 @@
             align-items: center;
             cursor: pointer;
 
-            > .k-icon {
+            > .k-icon,
+            > .k-svg-icon {
                 margin-inline-end: $kendo-padding-md-y;
             }
         }
@@ -762,6 +764,11 @@
 
             .k-icon {
                 font-size: 6em;
+            }
+
+            .k-svg-icon {
+                width: 6em;
+                height: 6em;
             }
         }
     }

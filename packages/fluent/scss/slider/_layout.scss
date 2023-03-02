@@ -350,7 +350,9 @@
             }
 
             .k-button-increase .k-icon,
-            .k-button-decrease .k-icon {
+            .k-button-increase .k-svg-icon,
+            .k-button-decrease .k-icon,
+            .k-button-decrease .k-svg-icon {
                 transform: scaleX(-1);
             }
         }

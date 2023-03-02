@@ -138,7 +138,8 @@
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu,
-        .k-hierarchy-cell .k-icon {
+        .k-hierarchy-cell .k-icon,
+        .k-hierarchy-cell .k-svg-icon {
             @include fill( $color: var( --kendo-grid-header-text, #{$kendo-grid-header-text} ) );
         }
 
@@ -147,7 +148,8 @@
                 $bg: var( --kendo-grid-grouping-row-bg, #{$kendo-grid-grouping-row-bg} )
             );
 
-            .k-icon {
+            .k-icon,
+            .k-svg-icon {
                 @include fill(
                     $color: var( --kendo-grid-header-text, #{$kendo-grid-header-text} )
                 );
@@ -228,7 +230,8 @@
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu,
-        .k-hierarchy-cell .k-icon {
+        .k-hierarchy-cell .k-icon,
+        .k-hierarchy-cell .k-svg-icon {
             &:hover {
                 @include fill(
                     $color: var( --kendo-hover-text, inherit ),
@@ -454,7 +457,8 @@
                 var( --kendo-grid-column-menu-item-bg, #{$kendo-grid-column-menu-item-bg} )
             );
 
-            .k-icon {
+            .k-icon,
+            .k-svg-icon {
                 @include fill(
                     var( --kendo-grid-column-menu-item-icon-text, #{$kendo-grid-column-menu-item-icon-text} )
                 );
@@ -487,7 +491,8 @@
             }
 
             &.k-disabled .k-link,
-            &.k-disabled .k-icon {
+            &.k-disabled .k-icon,
+            &.k-disabled .k-svg-icon {
                 @include disabled(
                     var( --kendo-disabled-text, inherit )
                 );
