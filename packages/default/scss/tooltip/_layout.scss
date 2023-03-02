@@ -51,7 +51,8 @@
         margin-inline-start: $kendo-icon-spacing;
         flex-shrink: 0;
 
-        .k-icon {
+        .k-icon,
+        .k-svg-icon {
             color: inherit;
             vertical-align: top;
         }

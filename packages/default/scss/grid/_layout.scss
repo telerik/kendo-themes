@@ -189,7 +189,8 @@
                 }
             }
 
-            .k-cell-inner > .k-link > .k-sort-icon .k-icon {
+            .k-cell-inner > .k-link > .k-sort-icon .k-icon,
+            .k-cell-inner > .k-link > .k-sort-icon .k-svg-icon {
                 display: flex;
             }
 
@@ -279,7 +280,8 @@
             text-overflow: clip;
         }
 
-        .k-grouping-row .k-icon {
+        .k-grouping-row .k-icon,
+        .k-grouping-row .k-svg-icon {
             margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
             margin-inline-end: k-math-div( $kendo-icon-size, 2 );
             text-decoration: none;
@@ -956,7 +958,8 @@
                 }
             }
 
-            .k-grouping-row .k-icon {
+            .k-grouping-row .k-icon,
+            .k-grouping-row .k-svg-icon {
                 margin-inline-start: calc( #{k-math-div( $kendo-icon-size, 2 )} - #{$_cell-padding-x} );
             }
 
@@ -968,7 +971,8 @@
             .k-drag-cell {
                 padding: 0;
 
-                > .k-icon {
+                > .k-icon,
+                > .k-svg-icon {
                     padding-block: $_cell-padding-y;
                     padding-inline: 0;
                 }
@@ -1249,7 +1253,8 @@
         outline: 0;
         cursor: pointer;
 
-        > .k-icon {
+        > .k-icon,
+        > .k-svg-icon {
             margin-inline-end: $kendo-icon-spacing;
         }
     }

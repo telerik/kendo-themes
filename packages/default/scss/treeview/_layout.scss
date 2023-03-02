@@ -111,6 +111,7 @@
         position: relative;
 
         .k-icon,
+        .k-svg-icon,
         .k-image,
         .k-sprite {
             margin-right: $kendo-icon-spacing;
@@ -161,6 +162,7 @@
         .k-treeview-leaf,
         .k-in {
             .k-icon,
+            .k-svg-icon,
             .k-image,
             .k-sprite {
                 margin-right: 0;

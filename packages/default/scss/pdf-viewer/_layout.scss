@@ -116,6 +116,10 @@
             > .k-icon {
                 font-size: $kendo-pdf-viewer-icon-size;
             }
+            > .k-svg-icon {
+                width: $kendo-pdf-viewer-icon-size;
+                height: $kendo-pdf-viewer-icon-size;
+            }
         }
 
     }
