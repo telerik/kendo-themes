@@ -268,3 +268,10 @@ $kendo-grid-hierarchy-col-width: ($kendo-icon-size * 2) !default;
 $kendo-grid-grouping-row-border-top: 1px !default;
 $kendo-grid-group-footer-border-y: 1px !default;
 $kendo-grid-group-footer-second-cell-border: 1px !default;
+
+/// Background color of the grid row resize indicator
+/// @group grid
+$kendo-grid-row-resizer-bg: rgba( k-contrast-color( $kendo-grid-bg ), .12 ) !default;
+/// Active background color of the grid row resize indicator
+/// @group grid
+$kendo-grid-row-resizer-active-bg: $kendo-color-primary !default;

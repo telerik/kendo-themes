@@ -450,4 +450,13 @@
         background-color: $kendo-grid-bg;
         border-color: $kendo-grid-border;
     }
+
+    //Row resize indicator
+    .k-row-resizer {
+        @include fill ( $bg: $kendo-grid-row-resizer-bg );
+
+        &.k-active {
+            @include fill ( $bg: $kendo-grid-row-resizer-active-bg );
+        }
+    }
 }
