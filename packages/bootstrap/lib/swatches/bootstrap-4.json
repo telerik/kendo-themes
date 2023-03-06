@@ -187,6 +187,16 @@
                     "value": "#d9534f"
                 }
             }
+        },
+        {
+            "hidden": true,
+            "variables": {
+                "primary": {
+                    "name": "Override bootstrap primary",
+                    "type": "variable",
+                    "value": "$kendo-color-primary"
+                }
+            }
         }
     ]
 }

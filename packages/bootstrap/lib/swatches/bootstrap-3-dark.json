@@ -196,6 +196,11 @@
         {
             "hidden": true,
             "variables": {
+                "primary": {
+                    "name": "Override bootstrap primary",
+                    "type": "variable",
+                    "value": "$kendo-color-primary"
+                },
                 "gray-100": {
                     "name": "Gray 100",
                     "type": "color",
