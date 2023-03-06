@@ -1,4 +1,20 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "filter",
+    dependencies: (
+        "button",
+        "checkbox",
+        "date-time-picker",
+        "dropdown-list",
+        "input",
+        "numeric-textbox",
+        "toolbar",
+    )
+);
 
 
 // Dependencies

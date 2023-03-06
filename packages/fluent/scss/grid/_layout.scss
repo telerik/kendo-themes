@@ -160,7 +160,8 @@
             text-overflow: clip;
         }
 
-        .k-grouping-row .k-icon {
+        .k-grouping-row .k-icon,
+        .k-grouping-row .k-svg-icon {
             margin-inline-start: calc( ( var( --kendo-icon-size, 1rem ) / 2 ) - var( --INTERNAL--kendo-grid-cell-padding-x, 0 ) );
             margin-inline-end: calc( var( --kendo-icon-size, 1rem ) / 2 );
             text-decoration: none;
@@ -184,7 +185,8 @@
             padding: 0;
             overflow: visible;
 
-            > .k-icon {
+            > .k-icon,
+            > .k-svg-icon {
                 padding-inline: 0;
                 padding-block: var( --INTERNAL--kendo-grid-cell-padding-y, 0 );
                 width: 100%;
@@ -237,7 +239,8 @@
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu,
-        .k-hierarchy-cell .k-icon {
+        .k-hierarchy-cell .k-icon,
+        .k-hierarchy-cell .k-svg-icon {
             border-width: 0;
         }
 
@@ -412,7 +415,8 @@
             text-overflow: ellipsis;
             outline: 0;
 
-            > .k-icon {
+            > .k-icon,
+            > .k-svg-icon {
                 margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
             }
         }
@@ -447,6 +451,7 @@
         }
 
         .k-cell-inner > .k-link > .k-icon,
+        .k-cell-inner > .k-link > .k-svg-icon,
         .k-cell-inner > .k-link > .k-sort-icon {
             vertical-align: text-top;
             margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
@@ -927,7 +932,8 @@
             flex: 1;
             overflow: hidden;
 
-            > .k-icon {
+            > .k-icon,
+            > .k-svg-icon {
                 margin-left: 0;
                 display: inline-block;
                 flex-shrink: 0;
@@ -950,7 +956,8 @@
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu,
-        .k-hierarchy-cell .k-icon {
+        .k-hierarchy-cell .k-icon,
+        .k-hierarchy-cell .k-svg-icon {
             text-align: center;
             display: inline-block;
             flex-shrink: 0;
@@ -1235,7 +1242,8 @@
         outline: 0;
         cursor: pointer;
 
-        > .k-icon {
+        > .k-icon,
+        > .k-svg-icon {
             margin-inline-end: var( --kendo-grid-column-menu-item-icon-spacing, #{$kendo-grid-column-menu-item-icon-spacing} );
         }
     }

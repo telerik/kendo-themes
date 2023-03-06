@@ -1,4 +1,19 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "time-duration-picker",
+    dependencies: (
+        "button",
+        "icon",
+        "input",
+        "list",
+        "popup",
+        "time-selector",
+    )
+);
 
 
 // Dependencies

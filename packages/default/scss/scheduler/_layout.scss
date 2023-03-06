@@ -440,7 +440,8 @@
                 }
             }
 
-            .k-icon {
+            .k-icon,
+            .k-svg-icon {
                 line-height: normal;
                 font-size: inherit;
             }
@@ -545,7 +546,8 @@
         position: absolute;
         justify-content: center;
 
-        > .k-icon {
+        > .k-icon,
+        > .k-svg-icon {
             position: absolute;
             top: 50%;
             left: 50%;

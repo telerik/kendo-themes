@@ -1,4 +1,17 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "date-picker",
+    dependencies: (
+        "calendar",
+        "icon",
+        "input",
+        "popup",
+    )
+);
 
 
 // Dependencies

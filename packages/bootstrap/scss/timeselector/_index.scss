@@ -1,11 +1,23 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "time-selector",
+    dependencies: (
+        "actions",
+        "button",
+        "icon",
+        "list",
+    )
+);
 
 
 // Dependencies
 @import "../list/_index.scss";
 @import "../action-buttons/_index.scss";
 @import "../button/_index.scss";
-@import "../icons/_index.scss";
 
 
 // Component

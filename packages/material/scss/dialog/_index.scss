@@ -1,13 +1,21 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "dialog",
+    dependencies: (
+        "button",
+        "icon",
+        "window",
+    )
+);
 
 
 // Dependencies
 @import "../common/_index.scss";
-@import "../forms/_index.scss";
-@import "../button/_index.scss";
-@import "../action-buttons/_index.scss";
 @import "../window/_index.scss";
-@import "../icons/_index.scss";
 
 
 // Component

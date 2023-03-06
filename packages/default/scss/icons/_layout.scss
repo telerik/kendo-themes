@@ -60,9 +60,9 @@ $ki-icon-size: $kendo-icon-size;
     .k-rtl .k-i-indent-increase,
     .k-rtl .k-i-indent-decrease,
     .k-rtl .k-i-caret-alt-right,
-    .k-rtl .k-i-caret-alt-down,
+    .k-rtl .k-i-caret-alt-left,
     [dir="rtl"] .k-i-caret-alt-right,
-    [dir="rtl"] .k-i-caret-alt-down {
+    [dir="rtl"] .k-i-caret-alt-left {
         transform: scaleX(-1);
     }
 

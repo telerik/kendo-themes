@@ -1,6 +1,13 @@
 @import "../core/_index.scss";
 
 
+// Module meta
+$_kendo-module-meta: (
+    name: "utils",
+    dependencies: ()
+);
+
+
 // Dependencies
 
 

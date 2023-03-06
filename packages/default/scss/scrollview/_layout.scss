@@ -156,7 +156,8 @@
         user-select: none;
         cursor: pointer;
 
-        .k-icon {
+        .k-icon,
+        .k-svg-icon {
             display: table-cell;
             overflow: visible;
             margin: 0;
@@ -164,6 +165,11 @@
             vertical-align: middle;
             font-size: $kendo-scrollview-arrow-icon-size;
             font-weight: normal;
+        }
+        .k-svg-icon {
+            font-size: inherit;
+            width: $kendo-scrollview-arrow-icon-size;
+            height: $kendo-scrollview-arrow-icon-size;
         }
     }
 

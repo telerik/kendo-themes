@@ -1,4 +1,19 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "color-gradient",
+    dependencies: (
+        "button",
+        "icon",
+        "numeric-textbox",
+        "slider",
+        "textbox",
+        "utils/flex-grid",
+    )
+);
 
 
 // Dependencies

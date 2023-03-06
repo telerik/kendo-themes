@@ -1,4 +1,21 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "orgchart",
+    dependencies: (
+        "card",
+        "dropdown-list",
+        "form",
+        "icon",
+        "menu",
+        "textbox",
+        "upload",
+        "window",
+    )
+);
 
 
 // Dependencies
@@ -12,6 +29,7 @@
 @import "../menu/_index.scss";
 @import "../card/_index.scss";
 @import "../window/_index.scss";
+
 
 // Component
 @import "./_variables.scss";

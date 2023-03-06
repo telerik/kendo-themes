@@ -55,7 +55,8 @@
                 align-items: center;
                 position: relative;
 
-                > .k-icon {
+                > .k-icon,
+                > .k-svg-icon {
                     margin-inline-end: var( --kendo-upload-icon-spacing, #{$kendo-upload-icon-spacing} );
                 }
             }
@@ -122,12 +123,6 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 position: relative;
-            }
-
-            .k-upload-status {
-                .k-icon {
-                    vertical-align: middle;
-                }
             }
 
             .k-upload-pct {

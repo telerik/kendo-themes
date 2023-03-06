@@ -36,10 +36,10 @@ root.render(
                 </div>
                 <div className="k-map-controls k-pos-top k-pos-left">
                     <div className="k-widget k-navigator">
-                        <Button className="k-navigator-n" icon="arrow-n" fillMode="flat" rounded="full" size={null}></Button>
-                        <Button className="k-navigator-e" icon="arrow-e" fillMode="flat" rounded="full" size={null}></Button>
-                        <Button className="k-navigator-s" icon="arrow-s" fillMode="flat" rounded="full" size={null}></Button>
-                        <Button className="k-navigator-w" icon="arrow-w" fillMode="flat" rounded="full" size={null}></Button>
+                        <Button className="k-navigator-n" icon="caret-alt-up" fillMode="flat" rounded="full" size={null}></Button>
+                        <Button className="k-navigator-e" icon="caret-alt-right" fillMode="flat" rounded="full" size={null}></Button>
+                        <Button className="k-navigator-s" icon="caret-alt-down" fillMode="flat" rounded="full" size={null}></Button>
+                        <Button className="k-navigator-w" icon="caret-alt-left" fillMode="flat" rounded="full" size={null}></Button>
                     </div>
                     <div className="k-widget k-zoom-control k-button-group k-group-horizontal">
                         <Button icon="plus" className="k-zoom-in"></Button>

@@ -1,4 +1,36 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "grid",
+    dependencies: (
+        "actions",
+        "autocomplete",
+        "badge",
+        "button",
+        "checkbox",
+        "chip",
+        "date-time-picker",
+        "dialog",
+        "dropdown-list",
+        "icon",
+        "input",
+        "list",
+        "menu",
+        "numeric-textbox",
+        "pager",
+        "progressbar",
+        "radio",
+        "skeleton",
+        "table",
+        "textbox",
+        "toolbar",
+        "validator",
+        "utils/layout/float",
+    )
+);
 
 
 // Dependencies

@@ -1,8 +1,21 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "signature",
+    dependencies: (
+        "button",
+        "input",
+    )
+);
+
 
 // Dependencies
 @import "../button/_index.scss";
 @import "../input/_index.scss";
+
 
 // Component
 @import "./_variables.scss";

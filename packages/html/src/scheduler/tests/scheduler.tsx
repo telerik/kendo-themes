@@ -76,14 +76,14 @@ root.render(
                                             </table>
                                             <div style={{ backgroundColor: "rgb(81, 160, 237)", borderColor: "rgb(81, 160, 237)", left: '0px', width: "888px", top: '0px' }} className="k-event k-event-inverse">
                                                 <span className="k-event-actions">
-                                                    <Icon name="arrow-w"></Icon>
+                                                    <Icon name="caret-alt-left"></Icon>
                                                 </span>
                                                 <div>
                                                     <div className="k-event-template">Two Weeks in NZ</div>
                                                 </div>
                                                 <span className="k-event-actions">
                                                     <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
-                                                    <Icon name="arrow-e"></Icon>
+                                                    <Icon name="caret-alt-right"></Icon>
                                                 </span>
                                                 <span className="k-resize-handle k-resize-w"></span>
                                                 <span className="k-resize-handle k-resize-e"></span>
@@ -548,8 +548,8 @@ root.render(
                                         <span className="k-event-actions">
                                             <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
                                         </span>
-                                        <span className="k-event-top-actions"><Icon name="arrow-n"></Icon></span>
-                                        <span className="k-event-bottom-actions"><Icon name="arrow-s"></Icon></span>
+                                        <span className="k-event-top-actions"><Icon name="caret-alt-up"></Icon></span>
+                                        <span className="k-event-bottom-actions"><Icon name="caret-alt-down"></Icon></span>
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
                                     </div>

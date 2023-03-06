@@ -50,6 +50,10 @@
             .k-icon {
                 font-size: $kendo-rating-icon-size;
             }
+            .k-svg-icon {
+                width: $kendo-rating-icon-size;
+                height: $kendo-rating-icon-size;
+            }
 
             .k-rating-precision-part,
             .k-rating-precision-complement {

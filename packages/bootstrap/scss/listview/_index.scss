@@ -1,4 +1,16 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "listview",
+    dependencies: (
+        "icon",
+        "pager",
+        // "utils/flex-grid",
+    )
+);
 
 
 // Dependencies

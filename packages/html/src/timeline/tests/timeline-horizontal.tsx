@@ -24,8 +24,8 @@ root.render(
         <div id="test-area">
             <div className="k-timeline k-timeline-horizontal">
                 <div className="k-timeline-track-wrap">
-                    <Button icon="arrow-60-left" className="k-timeline-arrow k-timeline-arrow-left"></Button>
-                    <Button icon="arrow-60-right" className="k-timeline-arrow k-timeline-arrow-right"></Button>
+                    <Button icon="caret-alt-left" className="k-timeline-arrow k-timeline-arrow-left"></Button>
+                    <Button icon="caret-alt-right" className="k-timeline-arrow k-timeline-arrow-right"></Button>
 
                     <div className="k-timeline-track">
                         <ul className="k-timeline-scrollable-wrap">

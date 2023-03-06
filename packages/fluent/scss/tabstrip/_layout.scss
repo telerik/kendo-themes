@@ -339,8 +339,8 @@
             > .k-tabstrip-content { order: 0; }
         }
 
-        .k-tabstrip-prev,
-        .k-tabstrip-next {
+        .k-tabstrip-prev .k-button-icon,
+        .k-tabstrip-next .k-button-icon {
             transform: scaleX(-1);
         }
 

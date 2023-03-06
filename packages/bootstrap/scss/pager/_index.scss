@@ -1,11 +1,22 @@
 @import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "pager",
+    dependencies: (
+        "button",
+        "dropdown-list",
+        "icon",
+    )
+);
 
 
 // Dependencies
 @import "../common/_index.scss";
 @import "../dropdownlist/_index.scss";
 @import "../icons/_index.scss";
-@import "../list/_index.scss";
 @import "../button/_index.scss";
 
 
