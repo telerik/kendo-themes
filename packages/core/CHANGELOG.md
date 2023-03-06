@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
+
+
+### Bug Fixes
+
+* **color-system:** use separate steps for color manip in light and dark themes ([d6ad992](https://github.com/telerik/kendo-themes/commit/d6ad992e26559c283af7104e412ae186d5cae445))
+
+
+
+
+
 # [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
 
 

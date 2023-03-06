@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
+
+
+### Bug Fixes
+
+* add missing dependency to utils in all components ([3db490b](https://github.com/telerik/kendo-themes/commit/3db490bcf7da905f5a8912af1cc9563287208664))
+* **icons:** size and position svg icons in bootstrap, fluent and material themes ([ba05f9d](https://github.com/telerik/kendo-themes/commit/ba05f9d6c3f71f3ecbede4a63ed2369d9af04ae7))
+* **spreadsheet:** remove bottom border from spreadsheet tabstrip ([01a16c9](https://github.com/telerik/kendo-themes/commit/01a16c9b43bab4186a204395333ca7da400235ed))
+* **tabstrip:** unnest selectors to produce correct output when theme is nested ([b827781](https://github.com/telerik/kendo-themes/commit/b827781f25f873641e92062f6541dc1573b5f150))
+* use logical text align ([aa958e7](https://github.com/telerik/kendo-themes/commit/aa958e799058a9c7372f2d24aa65dafd74d096c8))
+
+
+### Features
+
+* **floating-label:** expose label max-width variable ([614c928](https://github.com/telerik/kendo-themes/commit/614c928f2412fbe800581f8e4c21c8153f931f2a))
+* **tabstrip:** add variables for styling disabled tabstrip items for all themes ([56aa4e8](https://github.com/telerik/kendo-themes/commit/56aa4e8b05600e065f1c1238a3c56585ca6400f5))
+
+
+
+
+
 # [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
 
 **Note:** Version bump only for package @progress/kendo-theme-material

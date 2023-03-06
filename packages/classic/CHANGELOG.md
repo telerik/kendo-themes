@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
+
+
+### Bug Fixes
+
+* add missing dependency to utils in all components ([3db490b](https://github.com/telerik/kendo-themes/commit/3db490bcf7da905f5a8912af1cc9563287208664))
+
+
+### Features
+
+* **floating-label:** expose label max-width variable ([614c928](https://github.com/telerik/kendo-themes/commit/614c928f2412fbe800581f8e4c21c8153f931f2a))
+* **tabstrip:** add variables for styling disabled tabstrip items for all themes ([56aa4e8](https://github.com/telerik/kendo-themes/commit/56aa4e8b05600e065f1c1238a3c56585ca6400f5))
+
+
+
+
+
 # [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
 
 

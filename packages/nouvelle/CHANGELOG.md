@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
+
+
+### Bug Fixes
+
+* always use optional flag when extending ([d556d20](https://github.com/telerik/kendo-themes/commit/d556d20167046914402fe4ec788f4803982c9a4f))
+* **chip:** chipmenu popup not properly positioned ([d096bfa](https://github.com/telerik/kendo-themes/commit/d096bfae64f50c0bee1305929aa83c679a7fe67a))
+* **icons:** size and position svg icons in bootstrap, fluent and material themes ([ba05f9d](https://github.com/telerik/kendo-themes/commit/ba05f9d6c3f71f3ecbede4a63ed2369d9af04ae7))
+* **icons:** update expand/collapse icons aliases ([5105dad](https://github.com/telerik/kendo-themes/commit/5105dadb4dfb38188c686b942e61cfbc1a43800e))
+
+
+
+
+
 # [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
 
 

@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
+
+
+### Bug Fixes
+
+* **actionsheet:** update selector to match new rendering ([925c27a](https://github.com/telerik/kendo-themes/commit/925c27a96a9c3ef3dc546518e2ab4c375daea604))
+* add missing dependency to utils in all components ([3db490b](https://github.com/telerik/kendo-themes/commit/3db490bcf7da905f5a8912af1cc9563287208664))
+* add missing values for flex-grid align, justify and place ([2e4867d](https://github.com/telerik/kendo-themes/commit/2e4867dae3192791c831a0f200761e05f4630df9))
+* always use optional flag when extending ([d556d20](https://github.com/telerik/kendo-themes/commit/d556d20167046914402fe4ec788f4803982c9a4f))
+* bootstrap swatches do not override inherited primary color ([f30ce5b](https://github.com/telerik/kendo-themes/commit/f30ce5b097c572a075c882d5c74c0aa50d0bcfed))
+* **chip:** chipmenu popup not properly positioned ([d096bfa](https://github.com/telerik/kendo-themes/commit/d096bfae64f50c0bee1305929aa83c679a7fe67a))
+* **color-system:** use separate steps for color manip in light and dark themes ([d6ad992](https://github.com/telerik/kendo-themes/commit/d6ad992e26559c283af7104e412ae186d5cae445))
+* do not increase horizontal padding with large size ([656d978](https://github.com/telerik/kendo-themes/commit/656d9781a9ea570d1af1824fca328982ded62e31))
+* **dropzone:** inner dropzone should not be clickable ([5e3517e](https://github.com/telerik/kendo-themes/commit/5e3517e318480e5f96729380b836e4d304300b32))
+* **fluent:** adjust lg/xl font sizes ([f19ee97](https://github.com/telerik/kendo-themes/commit/f19ee9725c44703f5919040a0dc7ee2d5e2d07bd))
+* **grid:** replace k-alt selector with k-table-alt-row in grid ([a1b38eb](https://github.com/telerik/kendo-themes/commit/a1b38eb4ddab6857670553500016eedb91171444))
+* **icons:** size and position svg icons in bootstrap, fluent and material themes ([ba05f9d](https://github.com/telerik/kendo-themes/commit/ba05f9d6c3f71f3ecbede4a63ed2369d9af04ae7))
+* **icons:** size and position svg icons in components ([3bf1e5f](https://github.com/telerik/kendo-themes/commit/3bf1e5faaa39fa665baced159c5836a2226b0e6d))
+* **icons:** update expand/collapse icons aliases ([5105dad](https://github.com/telerik/kendo-themes/commit/5105dadb4dfb38188c686b942e61cfbc1a43800e))
+* **pivotgrid:** fix vertical alignment of pivotgrid cells ([0f24a48](https://github.com/telerik/kendo-themes/commit/0f24a481223c5b602db0abe20097d733cf23bd39))
+* **pivotgrid:** scope pivot k-alt style ([d9f91a7](https://github.com/telerik/kendo-themes/commit/d9f91a7730f6cbf62879436ebbe133ea79144d56))
+* remove duplicate selector for disabled ([f55fb09](https://github.com/telerik/kendo-themes/commit/f55fb09f87964e73e30473bbbb864ba92cf0e8e2))
+* **spreadsheet:** remove bottom border from spreadsheet tabstrip ([01a16c9](https://github.com/telerik/kendo-themes/commit/01a16c9b43bab4186a204395333ca7da400235ed))
+* **stepper:** svg icon creates stacking index in rtl ([609e5aa](https://github.com/telerik/kendo-themes/commit/609e5aaf9cff1fe41d15f0ae18364777107c3f7d))
+* **tabstrip:** icons direction in rtl ([7a9a730](https://github.com/telerik/kendo-themes/commit/7a9a7301a8030da19cbe81b7cc372f2f970895c7))
+* **tabstrip:** refactor directional styles for tabstrip and items ([b564b31](https://github.com/telerik/kendo-themes/commit/b564b31c884fadaddacf4736025443d2a91791d4))
+* **tabstrip:** unnest selectors to produce correct output when theme is nested ([b827781](https://github.com/telerik/kendo-themes/commit/b827781f25f873641e92062f6541dc1573b5f150))
+* **treelist:** no spacing between the elements in the angular treelist filter menu ([c496c3a](https://github.com/telerik/kendo-themes/commit/c496c3a1041caa37d20db56e36f4e9a01fe5fe62))
+* **typography:** streamline text overflow and text truncate styles ([8058111](https://github.com/telerik/kendo-themes/commit/8058111c476983ea7f9d4289e8f0176a8a1c1a6c))
+* use logical text align ([aa958e7](https://github.com/telerik/kendo-themes/commit/aa958e799058a9c7372f2d24aa65dafd74d096c8))
+
+
+### Features
+
+* **floating-label:** expose label max-width variable ([614c928](https://github.com/telerik/kendo-themes/commit/614c928f2412fbe800581f8e4c21c8153f931f2a))
+* **tabstrip:** add variables for styling disabled tabstrip items for all themes ([56aa4e8](https://github.com/telerik/kendo-themes/commit/56aa4e8b05600e065f1c1238a3c56585ca6400f5))
+
+
+
+
+
 # [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
 
 

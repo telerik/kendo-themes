@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
+
+
+### Bug Fixes
+
+* add missing dependency to utils in all components ([3db490b](https://github.com/telerik/kendo-themes/commit/3db490bcf7da905f5a8912af1cc9563287208664))
+* bootstrap swatches do not override inherited primary color ([f30ce5b](https://github.com/telerik/kendo-themes/commit/f30ce5b097c572a075c882d5c74c0aa50d0bcfed))
+* **icons:** size and position svg icons in bootstrap, fluent and material themes ([ba05f9d](https://github.com/telerik/kendo-themes/commit/ba05f9d6c3f71f3ecbede4a63ed2369d9af04ae7))
+* **tabstrip:** refactor directional styles for tabstrip and items ([b564b31](https://github.com/telerik/kendo-themes/commit/b564b31c884fadaddacf4736025443d2a91791d4))
+
+
+### Features
+
+* **floating-label:** expose label max-width variable ([614c928](https://github.com/telerik/kendo-themes/commit/614c928f2412fbe800581f8e4c21c8153f931f2a))
+* **tabstrip:** add variables for styling disabled tabstrip items for all themes ([56aa4e8](https://github.com/telerik/kendo-themes/commit/56aa4e8b05600e065f1c1238a3c56585ca6400f5))
+
+
+
+
+
 # [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
 
 

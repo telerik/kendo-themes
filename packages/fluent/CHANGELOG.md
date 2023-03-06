@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
+
+
+### Bug Fixes
+
+* **actionsheet:** update selector to match new rendering ([925c27a](https://github.com/telerik/kendo-themes/commit/925c27a96a9c3ef3dc546518e2ab4c375daea604))
+* always use optional flag when extending ([d556d20](https://github.com/telerik/kendo-themes/commit/d556d20167046914402fe4ec788f4803982c9a4f))
+* **chip:** chipmenu popup not properly positioned ([d096bfa](https://github.com/telerik/kendo-themes/commit/d096bfae64f50c0bee1305929aa83c679a7fe67a))
+* **dropzone:** inner dropzone should not be clickable ([5e3517e](https://github.com/telerik/kendo-themes/commit/5e3517e318480e5f96729380b836e4d304300b32))
+* **fluent:** adjust lg/xl font sizes ([f19ee97](https://github.com/telerik/kendo-themes/commit/f19ee9725c44703f5919040a0dc7ee2d5e2d07bd))
+* **icons:** size and position svg icons in bootstrap, fluent and material themes ([ba05f9d](https://github.com/telerik/kendo-themes/commit/ba05f9d6c3f71f3ecbede4a63ed2369d9af04ae7))
+* **icons:** update expand/collapse icons aliases ([5105dad](https://github.com/telerik/kendo-themes/commit/5105dadb4dfb38188c686b942e61cfbc1a43800e))
+* **pivotgrid:** fix vertical alignment of pivotgrid cells ([0f24a48](https://github.com/telerik/kendo-themes/commit/0f24a481223c5b602db0abe20097d733cf23bd39))
+* **tabstrip:** icons direction in rtl ([7a9a730](https://github.com/telerik/kendo-themes/commit/7a9a7301a8030da19cbe81b7cc372f2f970895c7))
+* **tabstrip:** refactor directional styles for tabstrip and items ([b564b31](https://github.com/telerik/kendo-themes/commit/b564b31c884fadaddacf4736025443d2a91791d4))
+* **tabstrip:** unnest selectors to produce correct output when theme is nested ([b827781](https://github.com/telerik/kendo-themes/commit/b827781f25f873641e92062f6541dc1573b5f150))
+* **treelist:** no spacing between the elements in the angular treelist filter menu ([c496c3a](https://github.com/telerik/kendo-themes/commit/c496c3a1041caa37d20db56e36f4e9a01fe5fe62))
+* use logical text align ([aa958e7](https://github.com/telerik/kendo-themes/commit/aa958e799058a9c7372f2d24aa65dafd74d096c8))
+
+
+### Features
+
+* **floating-label:** expose label max-width variable ([614c928](https://github.com/telerik/kendo-themes/commit/614c928f2412fbe800581f8e4c21c8153f931f2a))
+* **tabstrip:** add variables for styling disabled tabstrip items for all themes ([56aa4e8](https://github.com/telerik/kendo-themes/commit/56aa4e8b05600e065f1c1238a3c56585ca6400f5))
+
+
+
+
+
 # [6.1.0](https://github.com/telerik/kendo-themes/compare/v6.0.3...v6.1.0) (2023-02-03)
 
 
