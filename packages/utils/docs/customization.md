@@ -62,6 +62,97 @@ This is equivalent to `aspect-ratio: 16 / 9;`. The box's preferred aspect ratio 
 
 
 
+### `.k-columns-1`
+
+This is equivalent to `columns: 1;`. Element's content is displayed into 1 column.
+
+
+
+
+### `.k-columns-2`
+
+This is equivalent to `columns: 2;`. Element's content is broken into 2 columns.
+
+
+
+
+### `.k-columns-3`
+
+This is equivalent to `columns: 3;`. Element's content is broken into 3 columns.
+
+
+
+
+### `.k-columns-4`
+
+This is equivalent to `columns: 4;`. Element's content is broken into 4 columns.
+
+
+
+
+### `.k-columns-5`
+
+This is equivalent to `columns: 5;`. Element's content is broken into 5 columns.
+
+
+
+
+### `.k-columns-6`
+
+This is equivalent to `columns: 6;`. Element's content is broken into 6 columns.
+
+
+
+
+### `.k-columns-7`
+
+This is equivalent to `columns: 7;`. Element's content is broken into 7 columns.
+
+
+
+
+### `.k-columns-8`
+
+This is equivalent to `columns: 8;`. Element's content is broken into 8 columns.
+
+
+
+
+### `.k-columns-9`
+
+This is equivalent to `columns: 9;`. Element's content is broken into 9 columns.
+
+
+
+
+### `.k-columns-10`
+
+This is equivalent to `columns: 10;`. Element's content is broken into 10 columns.
+
+
+
+
+### `.k-columns-11`
+
+This is equivalent to `columns: 11;`. Element's content is broken into 11 columns.
+
+
+
+
+### `.k-columns-12`
+
+This is equivalent to `columns: 12;`. Element's content is broken into 12 columns.
+
+
+
+
+### `.k-columns-auto`
+
+This is equivalent to `columns: auto;`.The number of columns is determined by other CSS properties, such as column-width.
+
+
+
+
 ### `.k-d-none`
 
 This is equivalent to `display: none;`. Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
@@ -447,6 +538,34 @@ This is equivalent to `pointer-events: auto;`. The element behaves as it would i
 
 
 
+### `.k-pos-top`
+
+This is equivalent to `top: 0;`.
+
+
+
+
+### `.k-pos-right`
+
+This is equivalent to `right: 0;`.
+
+
+
+
+### `.k-pos-bottom`
+
+This is equivalent to `bottom: 0;`.
+
+
+
+
+### `.k-pos-left`
+
+This is equivalent to `left: 0;`.
+
+
+
+
 ### `.k-pos-static`
 
 This is equivalent to `position: static;`. The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
@@ -478,34 +597,6 @@ This is equivalent to `position: fixed;`. The element is removed from the normal
 ### `.k-pos-sticky`
 
 This is equivalent to `position: sticky;`. The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
-
-
-
-
-### `.k-pos-top`
-
-This is equivalent to `top: 0;`.
-
-
-
-
-### `.k-pos-right`
-
-This is equivalent to `right: 0;`.
-
-
-
-
-### `.k-pos-bottom`
-
-This is equivalent to `bottom: 0;`.
-
-
-
-
-### `.k-pos-left`
-
-This is equivalent to `left: 0;`.
 
 
 

@@ -102,14 +102,32 @@ $kendo-utils: (
         video: k-string-unquote("16 / 9")
     ),
     "container": (),
-    "columns": (),
+    "columns": (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+        10: 10,
+        11: 11,
+        12: 12,
+        auto: auto
+    ),
     "break-after": (),
     "break-before": (),
     "break-inside": (),
     "box-decoration-break": (),
-    "box-sizing": (),
+    "box-sizing": (
+        border: border-box,
+        content: content-box
+    ),
     "display": (
         none,
+        contents,
         block,
         inline,
         inline-block,
@@ -119,6 +137,8 @@ $kendo-utils: (
         inline-grid,
         table,
         inline-table,
+        table-row,
+        table-cell,
         list-item
     ),
     "float": (
@@ -133,26 +153,37 @@ $kendo-utils: (
         none
     ),
     "isolation": (),
-    "object-fit": (),
-    "object-position": (),
+    "object-fit": (
+        contain,
+        cover,
+        fill,
+        scale-down,
+        initial,
+        none
+    ),
+    "object-position": (
+        center: center,
+        top: top,
+        right: right,
+        bottom: bottom,
+        left: left,
+        top-left: top left,
+        top-right: top right,
+        bottom-left: bottom left,
+        bottom-right: bottom right
+    ),
     "overflow": (
         auto: auto,
         hidden: hidden,
         visible: visible,
         scroll: scroll,
-        clip: clip,
-        x-auto: auto,
-        x-hidden: hidden,
-        x-visible: visible,
-        x-scroll: scroll,
-        x-clip: clip,
-        y-auto: auto,
-        y-hidden: hidden,
-        y-visible: visible,
-        y-scroll: scroll,
-        y-clip: clip
+        clip: clip
     ),
     "overscroll": (),
+    "placement": k-map-merge( $kendo-spacing, (
+        // sass-lint:disable-block indentation
+        -1: -1px
+    )),
     "position": (
         static,
         relative,
@@ -166,8 +197,9 @@ $kendo-utils: (
         -1: -1px
     ),
     "visibility": (
-        visible,
-        hidden
+        visible: visible,
+        invisible: hidden,
+        collapse: collapse
     ),
     "zindex": (
         0: 0,
@@ -267,6 +299,19 @@ $kendo-utils: (
         11: 11,
         12: 12,
         13: 13,
+        -1: -1,
+        -2: -2,
+        -3: -3,
+        -4: -4,
+        -5: -5,
+        -6: -6,
+        -7: -7,
+        -8: -8,
+        -9: -9,
+        -10: -10,
+        -11: -11,
+        -12: -12,
+        -13: -13,
         auto: auto
     ),
     "grid-column-end": (
@@ -283,6 +328,19 @@ $kendo-utils: (
         11: 11,
         12: 12,
         13: 13,
+        -1: -1,
+        -2: -2,
+        -3: -3,
+        -4: -4,
+        -5: -5,
+        -6: -6,
+        -7: -7,
+        -8: -8,
+        -9: -9,
+        -10: -10,
+        -11: -11,
+        -12: -12,
+        -13: -13,
         auto: auto
     ),
     "grid-column-span": (
@@ -315,6 +373,19 @@ $kendo-utils: (
         11: 11,
         12: 12,
         13: 13,
+        -1: -1,
+        -2: -2,
+        -3: -3,
+        -4: -4,
+        -5: -5,
+        -6: -6,
+        -7: -7,
+        -8: -8,
+        -9: -9,
+        -10: -10,
+        -11: -11,
+        -12: -12,
+        -13: -13,
         auto: auto
     ),
     "grid-row-end": (
@@ -331,6 +402,19 @@ $kendo-utils: (
         11: 11,
         12: 12,
         13: 13,
+        -1: -1,
+        -2: -2,
+        -3: -3,
+        -4: -4,
+        -5: -5,
+        -6: -6,
+        -7: -7,
+        -8: -8,
+        -9: -9,
+        -10: -10,
+        -11: -11,
+        -12: -12,
+        -13: -13,
         auto: auto
     ),
     "grid-row-span": (
@@ -352,6 +436,7 @@ $kendo-utils: (
     "grid-auto-flow": (
         row: row,
         col: column,
+        dense: dense,
         row-dense: row dense,
         col-dense: column dense,
         unset: unset
@@ -511,7 +596,8 @@ $kendo-utils: (
     ),
 
     // Spacing
-    "margin": k-map-merge( $kendo-spacing, (
+    "margin": k-map-merge( $kendo-spacing,
+        k-map-negate( $kendo-spacing), (
         // sass-lint:disable-block indentation
         // TODO: remove this extension once we fix docs
         xs: k-map-get( $kendo-spacing, 1 ),
@@ -520,7 +606,8 @@ $kendo-utils: (
         lg: k-map-get( $kendo-spacing, 4 ),
         xl: k-map-get( $kendo-spacing, 6 ),
         thin: k-map-get( $kendo-spacing, 0.5 ), // sass-lint:disable-line leading-zero
-        hair: k-map-get( $kendo-spacing, 1px )
+        hair: k-map-get( $kendo-spacing, 1px ),
+        auto: auto
     )),
     "padding": k-map-merge( $kendo-spacing, (
         // sass-lint:disable-block indentation
@@ -601,13 +688,19 @@ $kendo-utils: (
     "font-variant-numeric": (),
     "letter-spacing": (),
     "line-height": (),
-    "list-style-type": (),
+    "list-style-type": (
+        none,
+        disc,
+        decimal
+    ),
     "list-style-position": (),
     "text-align": (
         left,
         right,
         center,
-        justify
+        justify,
+        start,
+        end
     ),
     "text-color": k-map-merge( $kendo-theme-colors, (
         // sass-lint:disable-block indentation
@@ -617,7 +710,12 @@ $kendo-utils: (
         "black": black,
         "white": white
     )),
-    "text-decoration": (),
+    "text-decoration": (
+        underline: underline,
+        overline: overline,
+        line-through: line-through,
+        no-underline: none
+    ),
     "text-decoration-width": (),
     "text-decoration-style": (),
     "text-decoration-color": (),
@@ -633,7 +731,16 @@ $kendo-utils: (
         ellipsis: ellipsis
     ),
     "text-indent": (),
-    "vertical-align": (),
+    "vertical-align": (
+        baseline,
+        top,
+        middle,
+        bottom,
+        text-top,
+        text-bottom,
+        sub,
+        super
+    ),
     "white-space": (
         normal,
         nowrap,
@@ -645,6 +752,12 @@ $kendo-utils: (
     "word-break": (),
 
     // Background
+    "background-clip": (
+        border: border-box,
+        padding: padding-box,
+        content: content-box,
+        text: text
+    ),
     "background-color": k-map-merge( $kendo-theme-colors, (
         // sass-lint:disable-block indentation
         "inherit": inherit,
@@ -666,6 +779,10 @@ $kendo-utils: (
         dashed,
         dotted,
         double,
+        // groove,
+        // ridge,
+        inset,
+        outset,
         hidden,
         none
     ),
@@ -690,13 +807,20 @@ $kendo-utils: (
         dashed,
         dotted,
         double,
-        groove,
-        ridge,
+        // groove,
+        // ridge,
         inset,
         outset,
         none
     ),
-    "outline-color": (),
+    "outline-color": k-map-merge( $kendo-theme-colors, (
+        // sass-lint:disable-block indentation
+        "inherit": inherit,
+        "current": currentColor,
+        "transparent": transparent,
+        "black": black,
+        "white": white
+    )),
     "outline-offset": (
         0: 0,
         1: 1px,
@@ -706,8 +830,32 @@ $kendo-utils: (
     ),
 
     // Effects
+    "box-shadow": (),
+    "box-shadow-color": (),
+    "opacity": (
+        // sass-lint:disable-block leading-zero
+        0: 0,
+        5: 0.05,
+        10: 0.1,
+        20: 0.2,
+        30: 0.3,
+        40: 0.4,
+        50: 0.5,
+        60: 0.6,
+        70: 0.7,
+        80: 0.8,
+        90: 0.9,
+        100: 1
+    ),
 
     // Filter
+    "backdrop-blur": (
+        DEFAULT: blur(8px),
+        none: blur(0),
+        sm: blur(4px),
+        md: blur(6px),
+        lg: blur(12px)
+    ),
 
     // Table
     "border-collapse": (
@@ -874,5 +1022,13 @@ $kendo-utils: (
         scroll: scroll-position,
         contents: contents,
         transform: transform
+    ),
+    "fill-stroke": (
+        none: none,
+        inherit: inherit,
+        current: currentColor,
+        "transparent": transparent,
+        "black": black,
+        "white": white
     )
 ) !default;

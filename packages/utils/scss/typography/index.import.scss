@@ -6,14 +6,14 @@
 // font variant
 // letter spacing
 // line height
-// list style
+@import "./_list-style.scss";
 @import "./_text-align.scss";
 @import "./_text-color.scss";
-// text decoration
+@import "./_text-decoration.scss";
 @import "./_text-overflow.scss";
 @import "./_text-transform.scss";
 // text indent
-// vertical align
+@import "./_vertical-align.scss";
 @import "./_white-space.scss";
 
 
@@ -21,9 +21,12 @@
     @include kendo-utils--typography--font-size();
     @include kendo-utils--typography--font-style();
     @include kendo-utils--typography--font-weight();
+    @include kendo-utils--typography--list-style-type();
     @include kendo-utils--typography--text-align();
     @include kendo-utils--typography--text-color();
+    @include kendo-utils--typography--text-decoration();
     @include kendo-utils--typography--text-overflow();
     @include kendo-utils--typography--text-transform();
+    @include kendo-utils--typography--vertical-align();
     @include kendo-utils--typography--white-space();
 }

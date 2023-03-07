@@ -78,5 +78,6 @@
     // Overflow utility classes
     $kendo-utils-overflow: k-map-get( $kendo-utils, "overflow" ) !default;
     @include generate-utils( overflow, overflow, $kendo-utils-overflow );
-
+    @include generate-utils( overflow-x, overflow-x, $kendo-utils-overflow );
+    @include generate-utils( overflow-y, overflow-y, $kendo-utils-overflow );
 }

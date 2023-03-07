@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--svg--fill() {
+
+    // fill utility classes
+    $kendo-utils-fill: k-map-get( $kendo-utils, "fill-stroke" ) !default;
+    @include generate-utils( fill, fill, $kendo-utils-fill );
+
+}

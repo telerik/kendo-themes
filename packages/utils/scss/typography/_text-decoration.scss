@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--typography--text-decoration() {
+
+    // text-decoration utility classes
+    $kendo-utils-text-decoration: k-map-get( $kendo-utils, "text-decoration" ) !default;
+    @include generate-utils( text, text-decoration, $kendo-utils-text-decoration );
+
+}
