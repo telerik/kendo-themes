@@ -31,11 +31,6 @@
             display: none !important; // sass-lint:disable-line no-important
         }
 
-        // Adjustment for kendo-icon-wrapper
-        .k-icon-wrapper-host {
-            display: initial;
-        }
-
         &:hover,
         &:focus {
             outline: 0;
@@ -55,6 +50,11 @@
         align-items: center;
         overflow: hidden;
         flex: 1 1 auto;
+
+        // Adjustment for kendo-icon-wrapper
+        .k-icon-wrapper-host {
+            display: initial;
+        }
     }
 
 
