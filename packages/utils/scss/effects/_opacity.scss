@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--effects--opacity() {
+
+    // opacity utility classes
+    $kendo-utils-opacity: k-map-get( $kendo-utils, "opacity" ) !default;
+    @include generate-utils( opacity, opacity, $kendo-utils-opacity );
+
+}

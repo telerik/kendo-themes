@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--layout--object-position() {
+
+    // object-position utility classes
+    $kendo-utils-object-position: k-map-get( $kendo-utils, "object-position" ) !default;
+    @include generate-utils( object-position, object-position, $kendo-utils-object-position );
+
+}

@@ -25,30 +25,6 @@
 /// @group position
 /// @contextType css
 
-
-// TODO: inset docs
-
-
-/// This is equivalent to `top: 0;`.
-/// @name .k-pos-top
-/// @group position
-/// @contextType css
-
-/// This is equivalent to `right: 0;`.
-/// @name .k-pos-right
-/// @group position
-/// @contextType css
-
-/// This is equivalent to `bottom: 0;`.
-/// @name .k-pos-bottom
-/// @group position
-/// @contextType css
-
-/// This is equivalent to `left: 0;`.
-/// @name .k-pos-left
-/// @group position
-/// @contextType css
-
 @mixin kendo-utils--layout--position() {
 
     // Position utility classes
@@ -67,85 +43,5 @@
     .\!#{$kendo-prefix}fixed { @extend .\!#{$kendo-prefix}pos-fixed !optional; }
     .#{$kendo-prefix}sticky { @extend .#{$kendo-prefix}pos-sticky !optional; }
     .\!#{$kendo-prefix}sticky { @extend .\!#{$kendo-prefix}pos-sticky !optional; }
-
-
-    // Inset utility classes
-    $kendo-utils-inset: k-map-get( $kendo-utils, "inset" ) !default;
-    @include generate-utils( inset, inset, $kendo-utils-inset );
-    @include generate-utils( inset-x, inset-inline, $kendo-utils-inset );
-    @include generate-utils( inset-y, inset-block, $kendo-utils-inset );
-    @include generate-utils( top, top, $kendo-utils-inset );
-    @include generate-utils( right, right, $kendo-utils-inset );
-    @include generate-utils( bottom, bottom, $kendo-utils-inset );
-    @include generate-utils( left, left, $kendo-utils-inset );
-    @include generate-utils( top-left, ( top, left ), $kendo-utils-inset );
-    @include generate-utils( top-right, ( top, right ), $kendo-utils-inset );
-    @include generate-utils( bottom-left, ( bottom, left ), $kendo-utils-inset );
-    @include generate-utils( bottom-right, ( bottom, right ), $kendo-utils-inset );
-
-
-    // Legacy aliases
-    .#{$kendo-prefix}top-start,
-    .#{$kendo-prefix}pos-top-start {
-        top: 0;
-        inset-inline-start: 0;
-    }
-
-    .#{$kendo-prefix}top-end,
-    .#{$kendo-prefix}pos-top-end {
-        top: 0;
-        inset-inline-end: 0;
-    }
-
-    .#{$kendo-prefix}bottom-start,
-    .#{$kendo-prefix}pos-bottom-start {
-        bottom: 0;
-        inset-inline-start: 0;
-    }
-
-    .#{$kendo-prefix}bottom-end,
-    .#{$kendo-prefix}pos-bottom-end {
-        bottom: 0;
-        inset-inline-end: 0;
-    }
-
-    .#{$kendo-prefix}top-center,
-    .#{$kendo-prefix}pos-top-center {
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .#{$kendo-prefix}middle-left,
-    .#{$kendo-prefix}middle-start,
-    .#{$kendo-prefix}pos-middle-start {
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
-    .#{$kendo-prefix}middle-center {
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%);
-    }
-    .#{$kendo-prefix}middle-right,
-    .#{$kendo-prefix}middle-end,
-    .#{$kendo-prefix}pos-middle-end {
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-    }
-    .#{$kendo-prefix}bottom-center,
-    .#{$kendo-prefix}pos-bottom-center {
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-
-    // Position length utility classes
-    @each $side in (top, right, bottom, left) {
-        .#{$kendo-prefix}#{$side},
-        .#{$kendo-prefix}pos-#{$side} { #{$side}: 0; } // sass-lint:disable-line brace-style
-    }
 
 }
