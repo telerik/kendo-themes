@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--typography--vertical-align() {
+
+    // vertical-align utility classes
+    $kendo-utils-vertical-align: k-map-get( $kendo-utils, "vertical-align" ) !default;
+    @include generate-utils( align, vertical-align, $kendo-utils-vertical-align );
+
+}

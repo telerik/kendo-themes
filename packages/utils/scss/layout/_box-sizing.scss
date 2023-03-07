@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--layout--box-sizing() {
+
+    // box-sizing utility classes
+    $kendo-utils-box-sizing: k-map-get( $kendo-utils, "box-sizing" ) !default;
+    @include generate-utils( box-sizing, box-sizing, $kendo-utils-box-sizing );
+
+}

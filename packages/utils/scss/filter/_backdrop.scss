@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--filter--backdrop() {
+
+    // backdrop utility classes
+    $kendo-utils-backdrop-blur: k-map-get( $kendo-utils, "backdrop-blur" ) !default;
+    @include generate-utils( backdrop-blur, backdrop-filter, $kendo-utils-backdrop-blur );
+
+}

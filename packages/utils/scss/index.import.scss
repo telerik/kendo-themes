@@ -10,12 +10,13 @@
 @import "./typography/index.import.scss";
 @import "./background/index.import.scss";
 @import "./border/index.import.scss";
-// effects
-// filter
+@import "./effects/index.import.scss";
+@import "./filter/index.import.scss";
 @import "./table/index.import.scss";
 // transition
 @import "./transform/index.import.scss";
 @import "./interactivity/index.import.scss";
+@import "./svg/index.import.scss";
 
 
 // Mixin for all styles
@@ -28,7 +29,10 @@
     @include kendo-utils--typography();
     @include kendo-utils--background();
     @include kendo-utils--border();
+    @include kendo-utils--effects();
+    @include kendo-utils--filter();
     @include kendo-utils--table();
     @include kendo-utils--transform();
     @include kendo-utils--interactivity();
+    @include kendo-utils--svg();
 }

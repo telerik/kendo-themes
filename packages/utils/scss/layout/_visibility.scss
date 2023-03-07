@@ -5,7 +5,7 @@
 
     // Visibility utility classes
     $kendo-utils-visibility: k-map-get( $kendo-utils, "visibility" ) !default;
-    @include generate-utils( visibility, visibility, $kendo-utils-visibility );
+    @include generate-utils( null, visibility, $kendo-utils-visibility );
 
     // Legacy aliases
     .#{$kendo-prefix}visible { @extend .#{$kendo-prefix}visibility-visible !optional; }
