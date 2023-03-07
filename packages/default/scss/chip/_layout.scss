@@ -29,11 +29,6 @@
         .k-selected-icon-wrapper {
             display: none !important; // sass-lint:disable-line no-important
         }
-
-        // Adjustment for kendo-icon-wrapper
-        .k-icon-wrapper-host {
-            display: initial;
-        }
     }
 
 
@@ -49,6 +44,11 @@
         align-items: center;
         overflow: hidden;
         flex: 1 1 auto;
+
+        // Adjustment for kendo-icon-wrapper
+        .k-icon-wrapper-host {
+            display: initial;
+        }
     }
     .k-chip-content:first-child {
         margin-inline-start: $kendo-chip-spacing;
