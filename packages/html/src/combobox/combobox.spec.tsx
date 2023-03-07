@@ -9,7 +9,7 @@ import {
     InputValidationIcon
 } from '../input';
 import { Button } from '../button';
-
+import { Popup } from '../popup';
 
 export const COMBOBOX_CLASSNAME = `k-combobox`;
 
@@ -40,6 +40,8 @@ export type KendoComboboxProps = KendoComboboxOptions & {
     suffix?: JSX.Element;
     value?: string;
     placeholder?: string;
+    list?: JSX.Element;
+    opened?: boolean;
 };
 
 export type KendoComboboxState = { [K in (typeof states)[number]]?: boolean };
@@ -64,39 +66,48 @@ export const Combobox = (
         required,
         loading,
         disabled,
+        list,
+        opened,
         ...other
     } = props;
 
 
     return (
-        <Input
-            {...other}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            hover={hover}
-            focus={focus}
-            valid={valid}
-            invalid={invalid}
-            required={required}
-            loading={loading}
-            disabled={disabled}
-            className={classNames(props.className, COMBOBOX_CLASSNAME)}
-        >
-            <InputPrefix>{prefix}</InputPrefix>
-            <InputInnerInput placeholder={placeholder} value={value} />
-            <InputValidationIcon {...props} />
-            <InputLoadingIcon {...props} />
-            <InputClearValue {...props} />
-            <InputSuffix>{suffix}</InputSuffix>
-            <Button
-                className="k-input-button"
-                icon="caret-alt-down"
-                rounded={null}
+        <>
+            <Input
+                {...other}
                 size={size}
+                rounded={rounded}
                 fillMode={fillMode}
-            />
-        </Input>
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(props.className, COMBOBOX_CLASSNAME)}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputValidationIcon {...props} />
+                <InputLoadingIcon {...props} />
+                <InputClearValue {...props} />
+                <InputSuffix>{suffix}</InputSuffix>
+                <Button
+                    className="k-input-button"
+                    icon="caret-alt-down"
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}
+                />
+            </Input>
+            { opened && list &&
+                <Popup>
+                    {list}
+                </Popup>
+            }
+        </>
     );
 };
 

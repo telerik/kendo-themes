@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction } from '../../chip';
+import { List, ListItem } from '../../list';
 import { MultiSelect } from '../../multiselect';
 
 const root = ReactDOM.createRoot(
@@ -172,6 +173,44 @@ root.render(
                             <Chip text="Multi-line" actions={ <ChipAction type="remove"/> } />
                             <Chip text="Multi-line + Overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
                         </>
+                    )}
+                />
+            </div>
+
+            <div>Opened</div>
+            <div>
+                <MultiSelect opened
+                    tags={(
+                        <>
+                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
+                        </>
+                    )}
+                    list={(
+                        <List>
+                            <ListItem>List item</ListItem>
+                            <ListItem selected>List item</ListItem>
+                            <ListItem>List item</ListItem>
+                            <ListItem selected>List item</ListItem>
+                        </List>
+                    )}
+                />
+            </div>
+            <div dir="rtl">
+                <MultiSelect opened
+                    tags={(
+                        <>
+                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
+                        </>
+                    )}
+                    list={(
+                        <List>
+                            <ListItem>List item</ListItem>
+                            <ListItem selected>List item</ListItem>
+                            <ListItem>List item</ListItem>
+                            <ListItem selected>List item</ListItem>
+                        </List>
                     )}
                 />
             </div>

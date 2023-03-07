@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { DropdownList } from '../../dropdownlist';
+import { List, ListItem } from '../../list';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -74,6 +75,29 @@ root.render(
             </div>
             <div dir="rtl">
                 <DropdownList value="Loading..." loading />
+            </div>
+
+            <div>
+                <DropdownList value="Opened" opened
+                    list={(
+                        <List>
+                            <ListItem>List item</ListItem>
+                            <ListItem>List item</ListItem>
+                            <ListItem>List item</ListItem>
+                        </List>
+                    )}
+                />
+            </div>
+            <div dir="rtl">
+                <DropdownList value="Opened" opened
+                    list={(
+                        <List>
+                            <ListItem>List item</ListItem>
+                            <ListItem>List item</ListItem>
+                            <ListItem>List item</ListItem>
+                        </List>
+                    )}
+                />
             </div>
 
         </div>

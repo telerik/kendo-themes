@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Combobox } from '../../combobox';
+import { List, ListItem } from '../../list';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -74,6 +75,29 @@ root.render(
             </div>
             <div dir="rtl">
                 <Combobox value="Loading..." loading />
+            </div>
+
+            <div>
+                <Combobox value="Opened" opened
+                    list={(
+                        <List>
+                            <ListItem>List item</ListItem>
+                            <ListItem selected>List item</ListItem>
+                            <ListItem>List item</ListItem>
+                        </List>
+                    )}
+                />
+            </div>
+            <div dir="rtl">
+                <Combobox value="Opened" opened
+                    list={(
+                        <List>
+                            <ListItem>List item</ListItem>
+                            <ListItem selected>List item</ListItem>
+                            <ListItem>List item</ListItem>
+                        </List>
+                    )}
+                />
             </div>
 
         </div>
