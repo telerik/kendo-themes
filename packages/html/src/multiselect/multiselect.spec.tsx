@@ -10,6 +10,7 @@ import {
 } from '../input';
 import { Button } from '../button';
 import { ChipList } from '../chip';
+import { Popup } from '../popup';
 
 export const MULTISELECT_CLASSNAME = `k-multiselect`;
 
@@ -42,7 +43,9 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     value?: string;
     placeholder?: string;
     tags?: JSX.Element;
+    list?: JSX.Element;
     showArrowButton?: boolean;
+    opened?: boolean;
 };
 
 export type KendoMultiSelectState = { [K in (typeof states)[number]]?: boolean };
@@ -58,6 +61,7 @@ export const MultiSelect = (
         value,
         placeholder,
         tags,
+        list,
         size,
         rounded,
         fillMode,
@@ -69,48 +73,56 @@ export const MultiSelect = (
         required,
         loading,
         disabled,
+        opened,
         ...other
     } = props;
 
 
     return (
-        <Input
-            {...other}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            hover={hover}
-            focus={focus}
-            valid={valid}
-            invalid={invalid}
-            required={required}
-            loading={loading}
-            disabled={disabled}
-            className={classNames(props.className, MULTISELECT_CLASSNAME)}
-        >
-            <InputPrefix>{prefix}</InputPrefix>
-            <div className="k-input-values">
-                <ChipList size={size}>
-                    <>
-                        {tags}
-                    </>
-                </ChipList>
-                <InputInnerInput placeholder={placeholder} value={value}/>
-            </div>
-            <InputSuffix>{suffix}</InputSuffix>
-            <InputValidationIcon {...props} />
-            <InputLoadingIcon {...props} />
-            <InputClearValue value={tags ? 'value' : ''} {...props} />
-            {showArrowButton && (
-                <Button
-                    className="k-input-button"
-                    icon="arrow-s"
-                    rounded={null}
-                    size={size}
-                    fillMode={fillMode}
-                />
-            )}
-        </Input>
+        <>
+            <Input
+                {...other}
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(props.className, MULTISELECT_CLASSNAME)}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <div className="k-input-values">
+                    <ChipList size={size}>
+                        <>
+                            {tags}
+                        </>
+                    </ChipList>
+                    <InputInnerInput placeholder={placeholder} value={value}/>
+                </div>
+                <InputValidationIcon {...props} />
+                <InputLoadingIcon {...props} />
+                <InputClearValue value={tags ? 'value' : ''} {...props} />
+                <InputSuffix>{suffix}</InputSuffix>
+                {showArrowButton && (
+                    <Button
+                        className="k-input-button"
+                        icon="arrow-s"
+                        rounded={null}
+                        size={size}
+                        fillMode={fillMode}
+                    />
+                )}
+            </Input>
+            { opened && list &&
+                <Popup>
+                    {list}
+                </Popup>
+            }
+        </>
     );
 };
 
