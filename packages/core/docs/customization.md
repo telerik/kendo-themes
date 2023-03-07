@@ -1867,6 +1867,54 @@ k-map-values($map) // => List
 }
 ```
 
+### `k-map-negate`
+
+Returns negative values of a number or numbers in a list.
+
+
+#### Syntax
+
+```scss
+k-map-negate($map) // => Map
+```
+
+#### Parameters
+
+
+`<Map> $map`
+: The map to get the values from.
+
+
+#### Examples
+
+```scss
+// Usage
+@debug k-map-negate( ( 0: 0, 1: 1px, 2: 2px ) ); // => ("-1": -1px, "-2": -2px)
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L89-L105
+@function k-map-negate($map) {
+    $_map-neg: ();
+
+    @if( k-meta-type-of($map) != map ) {
+        @error "expected type of #{$map} is map, was #{k-meta-type-of($map)}";
+    };
+    @each $key, $value in $map {
+        $_key-neg: "-" + $key;
+
+        @if( k-meta-type-of($value) == number and $value != 0) {
+            $_map-neg: k-map-set($_map-neg, $_key-neg, -1 * $value );
+        }
+    }
+
+    @return $_map-neg;
+}
+```
+
 ### `k-math-abs`
 
 Returns the absolute value of a number.
