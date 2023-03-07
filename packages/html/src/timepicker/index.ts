@@ -1,1 +1,1 @@
-export * from './timepicker';
+export * from './timepicker.spec';
