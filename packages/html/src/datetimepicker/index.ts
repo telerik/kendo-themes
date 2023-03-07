@@ -1,1 +1,1 @@
-export * from './datetimepicker';
+export * from './datetimepicker.spec';
