@@ -1,29 +1,37 @@
 @use "../core/" as *;
 @use "../button/variables" as *;
 
-/// Vertical padding of the split button arrow.
+/// The vertical padding of the small arrow Button.
 /// @group split-button
 $kendo-split-button-sm-arrow-padding-y: $kendo-button-sm-padding-y !default;
+/// The vertical padding of the medium arrow Button.
+/// @group split-button
 $kendo-split-button-md-arrow-padding-y: $kendo-button-md-padding-y !default;
+/// The vertical padding of the large arrow Button.
+/// @group split-button
 $kendo-split-button-lg-arrow-padding-y: $kendo-button-lg-padding-y !default;
 
-/// Horizontal padding of the split button arrow.
+/// The horizontal padding of the small arrow Button.
 /// @group split-button
 $kendo-split-button-sm-arrow-padding-x: $kendo-split-button-sm-arrow-padding-y !default;
+/// The horizontal padding of the medium arrow Button.
+/// @group split-button
 $kendo-split-button-md-arrow-padding-x: $kendo-split-button-md-arrow-padding-y !default;
+/// The horizontal padding of the large arrow Button.
+/// @group split-button
 $kendo-split-button-lg-arrow-padding-x: $kendo-split-button-lg-arrow-padding-y !default;
 
-/// Height of the split button arrow delimiter.
+/// The height of the SplitButton arrow delimiter.
 /// @group split-button
 $kendo-split-button-arrow-delimiter-size: calc( #{$kendo-button-inner-calc-size} / 2 ) !default;
-/// Width of the split button arrow delimiter.
+/// The width of the SplitButton arrow delimiter.
 /// @group split-button
 $kendo-split-button-arrow-delimiter-line-size: 1px !default;
-/// Background color of the split button arrow delimiter.
+/// The background color of the SplitButton arrow delimiter.
 /// @group split-button
 $kendo-split-button-arrow-delimiter-bg: get-theme-color-var( neutral-60 ) !default;
 
-/// Sizes map for the split button.
+/// The sizes map for the SplitButton.
 /// @group split-button
 $kendo-split-button-sizes: (
     sm: $kendo-split-button-sm-arrow-padding-y,
