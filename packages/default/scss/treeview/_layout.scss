@@ -138,6 +138,8 @@
 
     // RTL
     .k-rtl .k-treeview,
+    [dir="rtl"] .k-treeview,
+    .k-treeview.k-rtl,
     .k-treeview[dir="rtl"] {
 
         // Treeview item
