@@ -28,7 +28,7 @@ export const optionClassNames = (componentClassName: string, props: any) => {
     );
 };
 
-export const stateClassNames = (_componentClassName: string, props: any) => {
+export const stateClassNames = (_componentClassName: string | undefined, props: any) => {
     return classNames({
         'k-valid': props.valid,
         'k-invalid': props.invalid,

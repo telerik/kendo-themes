@@ -1,24 +1,9 @@
-import * as React from 'react';
-import { classNames } from '../utils';
-import { TreeviewItemProps } from './treeview-item';
+import { classNames } from '../utils-new';
 
-export interface TreeviewGroupProps {
-    className?: string;
-    children?: React.ReactElement<TreeviewItemProps> | React.ReactElement<TreeviewItemProps>[];
-}
+const className = `k-treeview-group`;
 
-export class TreeviewGroup extends React.Component<TreeviewGroupProps> {
-
-    render() {
-        const {
-            className,
-            children
-        } = this.props;
-
-        return (
-            <ul className={classNames(className, 'k-treeview-group')}>
-                {children}
-            </ul>
-        );
-    }
-}
+export const TreeviewGroup = (props: React.HTMLAttributes<HTMLUListElement>) => (
+    <ul className={classNames(props.className, className)}>
+        {props.children}
+    </ul>
+);
