@@ -4,10 +4,10 @@
         $_fn: if( k-meta-function-exists( $function ), k-meta-get-function( $function ), null );
 
         @each $key, $val in $values {
-            $_key: k-escape-class-name( $key );
+            $_key: if( $name == null, k-escape-class-name( $key ), "-" + k-escape-class-name( $key ));
             $_val: if( k-meta-type-of($values) == list, $key, $val );
-            $_name: k-escape-class-name( $name );
-            $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
+            $_name: if( $name == null , null, k-escape-class-name( $name ) );
+            $_selector: if( $key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}#{$_key});
 
             @if $important != only {
                 .#{$_selector} {
