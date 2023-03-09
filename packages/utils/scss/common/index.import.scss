@@ -1,0 +1,5 @@
+@import "./_reset.scss";
+
+@mixin kendo-utils--common() {
+    @include kendo-utils--common--reset();
+}

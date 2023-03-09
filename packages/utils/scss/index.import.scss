@@ -2,6 +2,7 @@
 @import "./_variables.scss";
 @import "./_mixins.scss";
 
+@import "./common/index.import.scss";
 @import "./accessibility/index.import.scss";
 @import "./layout/index.import.scss";
 @import "./flex-grid/index.import.scss";
@@ -21,6 +22,7 @@
 
 // Mixin for all styles
 @mixin kendo-utils() {
+    @include kendo-utils--common();
     @include kendo-utils--accessibility();
     @include kendo-utils--layout();
     @include kendo-utils--flex-grid();
