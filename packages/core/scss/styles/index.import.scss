@@ -2,6 +2,7 @@
 @import "./_asp-fallback.scss";
 @import "./_layout";
 @import "./_normalize.scss";
+@import "./_reset.scss";
 
 
 @mixin kendo-core--styles() {
@@ -9,4 +10,5 @@
     @include kendo-core--styles--asp-fallback();
     @include kendo-core--styles--layout();
     @include kendo-core--styles--normalize();
+    @include kendo-core--styles--reset();
 }
