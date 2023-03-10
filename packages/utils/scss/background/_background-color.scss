@@ -1,4 +1,24 @@
-// TODO: docs
+// Background-color documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/background-color.
+
+/// This is equivalent to `background-color: inherit;`. Sets the inherited background color.
+/// @name .k-bg-inherit
+/// @group background-color
+/// @contextType css
+
+/// This is equivalent to `background-color: transparent;`. Sets transparent background color.
+/// @name .k-bg-transparent
+/// @group background-color
+/// @contextType css
+
+/// This is equivalent to `background-color: black;`. Sets the black background color.
+/// @name .k-bg-black
+/// @group background-color
+/// @contextType css
+
+/// This is equivalent to `background-color: white;`. Sets the white background color.
+/// @name .k-bg-white
+/// @group background-color
+/// @contextType css
 
 @mixin kendo-utils--background--background-color() {
 

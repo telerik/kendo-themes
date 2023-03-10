@@ -1,5 +1,12 @@
+// Display documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/display.
+
 /// This is equivalent to `display: none;`. Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
 /// @name .k-d-none
+/// @group display
+/// @contextType css
+
+/// This is equivalent to `display: contents;`. These elements don't produce a specific box by themselves. They are replaced by their pseudo-box and their child boxes.
+/// @name .k-d-contents
 /// @group display
 /// @contextType css
 
@@ -53,7 +60,15 @@
 /// @group display
 /// @contextType css
 
-// TODO tables' parts
+/// This is equivalent to `display: table-row;`. These elements behave like <tr> HTML elements.
+/// @name .k-d-table-row
+/// @group display
+/// @contextType css
+
+/// This is equivalent to `display: table-cell;`. These elements behave like <td> HTML elements.
+/// @name .k-d-table-cell
+/// @group display
+/// @contextType css
 
 @mixin kendo-utils--layout--display() {
 

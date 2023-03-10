@@ -1,4 +1,24 @@
-// TODO: docs
+// Background-clip documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip.
+
+/// This is equivalent to `background-clip: border-box;`. The background extends to the outside edge of the border (but underneath the border in z-ordering).
+/// @name .k-bg-clip-border
+/// @group background-clip
+/// @contextType css
+
+/// This is equivalent to `padding: padding-box;`. The background extends to the outside edge of the border (but underneath the border in z-ordering).
+/// @name .k-bg-clip-padding
+/// @group background-clip
+/// @contextType css
+
+/// This is equivalent to `content: content-box;`. The background extends to the outside edge of the border (but underneath the border in z-ordering).
+/// @name .k-bg-clip-content
+/// @group background-clip
+/// @contextType css
+
+/// This is equivalent to `text: text;`. The background extends to the outside edge of the border (but underneath the border in z-ordering).
+/// @name .k-bg-clip-text
+/// @group background-clip
+/// @contextType css
 
 @mixin kendo-utils--background--background-clip() {
 

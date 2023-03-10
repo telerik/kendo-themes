@@ -1,4 +1,23 @@
-// TODO: docs
+// cursor documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/cursor.
+
+/// This is equivalent to `cursor: none;`. No cursor is rendered.
+/// @name .k-cursor-none
+/// @group cursor
+/// @contextType css
+
+/// This is equivalent to `cursor: auto;`. The UA will determine the cursor to display based on the current context. E.g., equivalent to text when hovering text.
+/// @name .k-cursor-auto
+/// @group cursor
+/// @contextType css
+
+/// This is equivalent to `cursor: default;`. Displays he platform-dependent default cursor. Typically an arrow.
+/// @name .k-cursor-default
+/// @group cursor
+/// @contextType css
+
+/// This is equivalent to `cursor: pointer;`. The cursor is a pointer that indicates a link. Typically an image of a pointing hand.
+/// @name .k-cursor-pointer
+/// @group cursor
 
 @mixin kendo-utils--interactivity--cursor() {
 

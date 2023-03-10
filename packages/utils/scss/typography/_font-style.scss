@@ -1,4 +1,14 @@
-// TODO: docs
+// Font-style documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/font-style.
+
+/// This is equivalent to `font-style: italic;`. Sets italic font style to the element.
+/// @name .k-font-italic
+/// @group font-style
+/// @contextType css
+
+/// This is equivalent to `font-style: normal;`. Sets normal font style to the element.
+/// @name .k-font-non-italic
+/// @group font-style
+/// @contextType css
 
 @mixin kendo-utils--typography--font-style() {
 

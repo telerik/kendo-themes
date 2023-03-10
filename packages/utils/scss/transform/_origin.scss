@@ -1,4 +1,49 @@
-// TODO: docs
+// transform-origin documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin.
+
+/// This is equivalent to `transform-origin: center;`. Sets the origin for an element's transformations to be in the center.
+/// @name .origin-center
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top;`. Sets the origin for an element's transformations to be in the top.
+/// @name .origin-top
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: right;`. Sets the origin for an element's transformations to be in the right.
+/// @name .origin-right
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom;`. Sets the origin for an element's transformations to be in the bottom.
+/// @name .origin-bottom
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: left;`. Sets the origin for an element's transformations to be in the left.
+/// @name .origin-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top-left;`. Sets the origin for an element's transformations to be in the top-left.
+/// @name .origin-top-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top-right;`. Sets the origin for an element's transformations to be in the top-right.
+/// @name .origin-top-right
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom-left;`. Sets the origin for an element's transformations to be in the bottom-left.
+/// @name .origin-bottom-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom-right;`. Sets the origin for an element's transformations to be in the bottom-right.
+/// @name .origin-bottom-right
+/// @group transform-origin
+/// @contextType css
 
 @mixin kendo-utils--transform--origin() {
 

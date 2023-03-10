@@ -1,9 +1,16 @@
-/// This is equivalent to `order: -9999;`.
+// place-self documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/place-self.
+
+/// This is equivalent to `order: 1;`. An item is in the first ordinal group in a flex or grid container.
 /// @name .k-order-first
 /// @group order
 /// @contextType css
 
-/// This is equivalent to `order: 9999;`.
+/// This is equivalent to `order: -9999;`. An item is in the very first ordinal group in a flex or grid container.
+/// @name .k-order-first
+/// @group order
+/// @contextType css
+
+/// This is equivalent to `order: 9999;`. An item is in the very last ordinal group in a flex or grid container.
 /// @name .k-order-last
 /// @group order
 /// @contextType css

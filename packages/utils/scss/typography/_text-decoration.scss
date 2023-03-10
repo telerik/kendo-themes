@@ -1,4 +1,24 @@
-// TODO: docs
+// Text-decoration documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration.
+
+/// This is equivalent to `text-decoration: underline;`. Text of the content is underlined.
+/// @name .k-underline
+/// @group text-decoration
+/// @contextType css
+
+/// This is equivalent to `text-decoration: overline;`. Text of the content is overlined.
+/// @name .k-overline
+/// @group text-decoration
+/// @contextType css
+
+/// This is equivalent to `text-decoration: line-through;`. Text of the content is strikeout.
+/// @name .k-line-through
+/// @group text-decoration
+/// @contextType css
+
+/// This is equivalent to `text-decoration: none-decoration;`. Text of the content is not decorated.
+/// @name .k-none-decoration
+/// @group text-decoration
+/// @contextType css
 
 @mixin kendo-utils--typography--text-decoration() {
 

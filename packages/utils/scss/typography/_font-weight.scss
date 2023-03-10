@@ -1,4 +1,49 @@
-// TODO: docs
+// Font-weight documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight.
+
+/// This is equivalent to `font-weight: 100;`. Sets 100 font weight to the element.
+/// @name .k-font-thin
+/// @group font-weight
+/// @contextType css
+
+/// This is equivalent to `font-weight: 200;`. Sets 200 font weight to the element.
+/// @name .k-font-extralight
+/// @group font-weight
+/// @contextType css
+
+/// This is equivalent to `font-weight: 300;`. Sets 300 font weight to the element.
+/// @name .k-font-normal
+/// @group font-weight
+/// @contextType css
+
+/// This is equivalent to `font-weight: 400;`. Sets 400 font weight to the element.
+/// @name .k-font-light
+/// @group font-weight
+/// @contextType css
+
+/// This is equivalent to `font-weight: 500;`. Sets 500 font weight to the element.
+/// @name .k-font-medium
+/// @group font-weight
+/// @contextType css
+
+/// This is equivalent to `font-weight: 600;`. Sets 600 font weight to the element.
+/// @name .k-font-semibold
+/// @group font-weight
+/// @contextType css
+
+/// This is equivalent to `font-weight: 700;`. Sets 700 font weight to the element.
+/// @name .k-font-bold
+/// @group font-weight
+/// @contextType css
+
+/// This is equivalent to `font-weight: 800;`. Sets 800 font weight to the element.
+/// @name .k-font-extrabold
+/// @group font-weight
+/// @contextType css
+
+/// This is equivalent to `font-weight: 900;`. Sets 900 font weight to the element.
+/// @name .k-font-black
+/// @group font-weight
+/// @contextType css
 
 @mixin kendo-utils--typography--font-weight() {
 

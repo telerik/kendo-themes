@@ -1,4 +1,459 @@
-// TODO: docs
+// Margin documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/margin.
+
+/// This is equivalent to `margin: 0;`. Specifies 0px margin on all four sides of an element.
+/// @name .k-m-0
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 1px;`. Specifies 1px margin on all four sides of an element.
+/// @name .k-m-1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 0.25rem;`. Specifies 0.25rem margin on all four sides of an element.
+/// @name .k-m-1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: -1px;`. Specifies 1px margin on all four sides of an element.
+/// @name .k-m--1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: -0.25rem;`. Specifies 0.25rem margin on all four sides of an element.
+/// @name .k-m--1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 0.25rem;`. Specifies 0.25rem margin on all four sides of an element.
+/// @name .k-m-xs
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 0.5rem;`. Specifies 0.5rem margin on all four sides of an element.
+/// @name .k-m-sm
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 0.75rem;`. Specifies 0.75rem margin on all four sides of an element.
+/// @name .k-m-md
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 1rem;`. Specifies 1rem margin on all four sides of an element.
+/// @name .k-m-lg
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 1.5rem;`. Specifies 1.5rem margin on all four sides of an element.
+/// @name .k-m-xl
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 0.125rem;`. Specifies 0.125rem margin on all four sides of an element.
+/// @name .k-m-thin
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: 1px;`. Specifies 1px margin on all four sides of an element.
+/// @name .k-m-hair
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin: auto;`. The browser selects a suitable margin to use on all four sides of an element.
+/// @name .k-m-auto
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 0;`. Specifies 0px top margin of an element.
+/// @name .k-mt-0
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 1px;`. Specifies 1px top margin of an element.
+/// @name .k-mt-1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 0.25rem;`. Specifies 0.25rem top margin of an element.
+/// @name .k-mt-1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: -1px;`. Specifies 1px top margin of an element.
+/// @name .k-mt--1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: -0.25rem;`. Specifies 0.25rem top margin of an element.
+/// @name .k-mt--1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 0.25rem;`. Specifies 0.25rem top margin of an element.
+/// @name .k-mt-xs
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 0.5rem;`. Specifies 0.5rem top margin of an element.
+/// @name .k-mt-sm
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 0.75rem;`. Specifies 0.75rem top margin of an element.
+/// @name .k-mt-md
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 1rem;`. Specifies 1rem top margin of an element.
+/// @name .k-mt-lg
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 1.5rem;`. Specifies 1.5rem top margin of an element.
+/// @name .k-mt-xl
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 0.125rem;`. Specifies 0.125rem top margin of an element.
+/// @name .k-mt-thin
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: 1px;`. Specifies 1px top margin of an element.
+/// @name .k-mt-hair
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-top: auto;`. The browser selects a suitable margin to the top side of an element.
+/// @name .k-mt-auto
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 0;`. Specifies 0px right margin of an element.
+/// @name .k-mr-0
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 1px;`. Specifies 1px right margin of an element.
+/// @name .k-mr-1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 0.25rem;`. Specifies 0.25rem right margin of an element.
+/// @name .k-mr-1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: -1px;`. Specifies 1px right margin of an element.
+/// @name .k-mr--1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: -0.25rem;`. Specifies 0.25rem right margin of an element.
+/// @name .k-mr--1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 0.25rem;`. Specifies 0.25rem right margin of an element.
+/// @name .k-mr-xs
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 0.5rem;`. Specifies 0.5rem right margin of an element.
+/// @name .k-mr-sm
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 0.75rem;`. Specifies 0.75rem right margin of an element.
+/// @name .k-mr-md
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 1rem;`. Specifies 1rem right margin of an element.
+/// @name .k-mr-lg
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 1.5rem;`. Specifies 1.5rem right margin of an element.
+/// @name .k-mr-xl
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 0.125rem;`. Specifies 0.125rem right margin of an element.
+/// @name .k-mr-thin
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: 1px;`. Specifies 1px right margin of an element.
+/// @name .k-mr-hair
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-right: auto;`. The browser selects a suitable margin to the right side of an element.
+/// @name .k-mr-auto
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 0;`. Specifies 0px bottom margin of an element.
+/// @name .k-mb-0
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 1px;`. Specifies 1px bottom margin of an element.
+/// @name .k-mb-1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 0.25rem;`. Specifies 0.25rem bottom margin of an element.
+/// @name .k-mb-1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: -1px;`. Specifies 1px bottom margin of an element.
+/// @name .k-mb--1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: -0.25rem;`. Specifies 0.25rem bottom margin of an element.
+/// @name .k-mb--1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 0.25rem;`. Specifies 0.25rem bottom margin of an element.
+/// @name .k-mb-xs
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 0.5rem;`. Specifies 0.5rem bottom margin of an element.
+/// @name .k-mb-sm
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 0.75rem;`. Specifies 0.75rem bottom margin of an element.
+/// @name .k-mb-md
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 1rem;`. Specifies 1rem bottom margin of an element.
+/// @name .k-mb-lg
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 1.5rem;`. Specifies 1.5rem bottom margin of an element.
+/// @name .k-mb-xl
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 0.125rem;`. Specifies 0.125rem bottom margin of an element.
+/// @name .k-mb-thin
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: 1px;`. Specifies 1px bottom margin of an element.
+/// @name .k-mb-hair
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-bottom: auto;`. The browser selects a suitable margin to the bottom side of an element.
+/// @name .k-mb-auto
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 0;`. Specifies 0px left margin of an element.
+/// @name .k-ml-0
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 1px;`. Specifies 1px left margin of an element.
+/// @name .k-ml-1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 0.25rem;`. Specifies 0.25rem left margin of an element.
+/// @name .k-ml-1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: -1px;`. Specifies 1px left margin of an element.
+/// @name .k-ml--1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: -0.25rem;`. Specifies 0.25rem left margin of an element.
+/// @name .k-ml--1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 0.25rem;`. Specifies 0.25rem left margin of an element.
+/// @name .k-ml-xs
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 0.5rem;`. Specifies 0.5rem left margin of an element.
+/// @name .k-ml-sm
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 0.75rem;`. Specifies 0.75rem left margin of an element.
+/// @name .k-ml-md
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 1rem;`. Specifies 1rem left margin of an element.
+/// @name .k-ml-lg
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 1.5rem;`. Specifies 1.5rem left margin of an element.
+/// @name .k-ml-xl
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 0.125rem;`. Specifies 0.125rem left margin of an element.
+/// @name .k-ml-thin
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: 1px;`. Specifies 1px left margin of an element.
+/// @name .k-ml-hair
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-left: auto;`. The browser selects a suitable margin to the left side of an element.
+/// @name .k-ml-auto
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 0;`. Specifies 0px inline margin of an element.
+/// @name .k-mx-0
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 1px;`. Specifies 1px inline margin of an element.
+/// @name .k-mx-1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 0.25rem;`. Specifies 0.25rem inline margin of an element.
+/// @name .k-mx-1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: -1px;`. Specifies 1px inline margin of an element.
+/// @name .k-mx--1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: -0.25rem;`. Specifies 0.25rem inline margin of an element.
+/// @name .k-mx--1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 0.25rem;`. Specifies 0.25rem inline margin of an element.
+/// @name .k-mx-xs
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 0.5rem;`. Specifies 0.5rem inline margin of an element.
+/// @name .k-mx-sm
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 0.75rem;`. Specifies 0.75rem inline margin of an element.
+/// @name .k-mx-md
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 1rem;`. Specifies 1rem inline margin of an element.
+/// @name .k-mx-lg
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 1.5rem;`. Specifies 1.5rem inline margin of an element.
+/// @name .k-mx-xl
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 0.125rem;`. Specifies 0.125rem inline margin of an element.
+/// @name .k-mx-thin
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: 1px;`. Specifies 1px inline margin of an element.
+/// @name .k-mx-hair
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-inline: auto;`. The browser selects a suitable margin to the left and right sides of an element.
+/// @name .k-mx-auto
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 0;`. Specifies 0px block margin of an element.
+/// @name .k-my-0
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 1px;`. Specifies 1px block margin of an element.
+/// @name .k-my-1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 0.25rem;`. Specifies 0.25rem block margin of an element.
+/// @name .k-my-1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: -1px;`. Specifies 1px block margin of an element.
+/// @name .k-my--1px
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: -0.25rem;`. Specifies 0.25rem block margin of an element.
+/// @name .k-my--1
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 0.25rem;`. Specifies 0.25rem block margin of an element.
+/// @name .k-my-xs
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 0.5rem;`. Specifies 0.5rem block margin of an element.
+/// @name .k-my-sm
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 0.75rem;`. Specifies 0.75rem block margin of an element.
+/// @name .k-my-md
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 1rem;`. Specifies 1rem block margin of an element.
+/// @name .k-my-lg
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 1.5rem;`. Specifies 1.5rem block margin of an element.
+/// @name .k-my-xl
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 0.125rem;`. Specifies 0.125rem block margin of an element.
+/// @name .k-my-thin
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: 1px;`. Specifies 1px block margin of an element.
+/// @name .k-my-hair
+/// @group margin
+/// @contextType css
+
+/// This is equivalent to `margin-block: auto;`. The browser selects a suitable margin to the top and bottom sides of an element.
+/// @name .k-my-auto
+/// @group margin
+/// @contextType css
 
 @mixin kendo-utils--spacing--margin() {
 
