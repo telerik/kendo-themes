@@ -9,6 +9,9 @@ import {
     InputValidationIcon
 } from '../input';
 import { Button } from '../button';
+import { Popup } from '../popup';
+import { TimeSelector, TimeSelectorHeader } from '../time-selector';
+import { ActionButtons } from '../action-buttons';
 
 export const TIMEPICKER_CLASSNAME = `k-timepicker`;
 
@@ -39,6 +42,7 @@ export type KendoTimePickerProps = KendoTimePickerOptions & {
     suffix?: JSX.Element;
     value?: string;
     placeholder?: string;
+    opened?: boolean;
 };
 
 export type KendoTimePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -63,39 +67,55 @@ export const TimePicker = (
         required,
         loading,
         disabled,
+        opened,
         ...other
     } = props;
 
 
     return (
-        <Input
-            {...other}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            hover={hover}
-            focus={focus}
-            valid={valid}
-            invalid={invalid}
-            required={required}
-            loading={loading}
-            disabled={disabled}
-            className={classNames(props.className, TIMEPICKER_CLASSNAME)}
-        >
-            <InputPrefix>{prefix}</InputPrefix>
-            <InputInnerInput placeholder={placeholder} value={value} />
-            <InputValidationIcon {...props} />
-            <InputLoadingIcon {...props} />
-            <InputClearValue {...props} />
-            <InputSuffix>{suffix}</InputSuffix>
-            <Button
-                className="k-input-button"
-                icon="clock"
-                rounded={null}
+        <>
+            <Input
+                {...other}
                 size={size}
+                rounded={rounded}
                 fillMode={fillMode}
-            />
-        </Input>
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(props.className, TIMEPICKER_CLASSNAME)}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputValidationIcon {...props} />
+                <InputLoadingIcon {...props} />
+                <InputClearValue {...props} />
+                <InputSuffix>{suffix}</InputSuffix>
+                <Button
+                    className="k-input-button"
+                    icon="clock"
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}
+                />
+            </Input>
+            { opened &&
+                <Popup>
+                    <TimeSelector columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="mm" header={(
+                        <TimeSelectorHeader title="10:00:00 AM">
+                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
+                    <ActionButtons alignment="stretched" className="k-time-footer">
+                        <Button className="k-time-cancel">Cancel</Button>
+                        <Button themeColor="primary" className="k-time-accept">Set</Button>
+                    </ActionButtons>
+                </Popup>
+            }
+        </>
     );
 };
 

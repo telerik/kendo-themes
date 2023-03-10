@@ -9,6 +9,8 @@ import {
     InputValidationIcon
 } from '../input';
 import { Button } from '../button';
+import { Popup } from '../popup';
+import { Calendar } from '../calendar';
 
 export const DATEPICKER_CLASSNAME = `k-datepicker`;
 
@@ -39,6 +41,7 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
     suffix?: JSX.Element;
     value?: string;
     placeholder?: string;
+    opened?: boolean;
 };
 
 export type KendoDatePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -63,39 +66,47 @@ export const DatePicker = (
         required,
         loading,
         disabled,
+        opened,
         ...other
     } = props;
 
 
     return (
-        <Input
-            {...other}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            hover={hover}
-            focus={focus}
-            valid={valid}
-            invalid={invalid}
-            required={required}
-            loading={loading}
-            disabled={disabled}
-            className={classNames(props.className, DATEPICKER_CLASSNAME)}
-        >
-            <InputPrefix>{prefix}</InputPrefix>
-            <InputInnerInput placeholder={placeholder} value={value} />
-            <InputValidationIcon {...props} />
-            <InputLoadingIcon {...props} />
-            <InputClearValue {...props} />
-            <InputSuffix>{suffix}</InputSuffix>
-            <Button
-                className="k-input-button"
-                icon="calendar"
-                rounded={null}
+        <>
+            <Input
+                {...other}
                 size={size}
+                rounded={rounded}
                 fillMode={fillMode}
-            />
-        </Input>
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(props.className, DATEPICKER_CLASSNAME)}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputValidationIcon {...props} />
+                <InputLoadingIcon {...props} />
+                <InputClearValue {...props} />
+                <InputSuffix>{suffix}</InputSuffix>
+                <Button
+                    className="k-input-button"
+                    icon="calendar"
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}
+                />
+            </Input>
+            { opened &&
+                <Popup>
+                    <Calendar />
+                </Popup>
+            }
+        </>
     );
 };
 

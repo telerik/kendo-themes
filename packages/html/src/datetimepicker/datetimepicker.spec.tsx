@@ -9,6 +9,8 @@ import {
     InputValidationIcon
 } from '../input';
 import { Button } from '../button';
+import { Popup } from '../popup';
+import { DateTimeSelector } from '../datetime-selector';
 
 export const DATETIMEPICKER_CLASSNAME = `k-datetimepicker`;
 
@@ -39,9 +41,15 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
     suffix?: JSX.Element;
     value?: string;
     placeholder?: string;
+    opened?: boolean;
+    tab?: 'time' | 'date';
 };
 
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
+
+const defaultProps = {
+    tab: 'date'
+} as const;
 
 export const DateTimePicker = (
     props: KendoDateTimePickerProps &
@@ -63,39 +71,48 @@ export const DateTimePicker = (
         required,
         loading,
         disabled,
+        opened,
+        tab = defaultProps.tab,
         ...other
     } = props;
 
 
     return (
-        <Input
-            {...other}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            hover={hover}
-            focus={focus}
-            valid={valid}
-            invalid={invalid}
-            required={required}
-            loading={loading}
-            disabled={disabled}
-            className={classNames(props.className, DATETIMEPICKER_CLASSNAME)}
-        >
-            <InputPrefix>{prefix}</InputPrefix>
-            <InputInnerInput placeholder={placeholder} value={value} />
-            <InputValidationIcon {...props} />
-            <InputLoadingIcon {...props} />
-            <InputClearValue {...props} />
-            <InputSuffix>{suffix}</InputSuffix>
-            <Button
-                className="k-input-button"
-                icon="calendar"
-                rounded={null}
+        <>
+            <Input
+                {...other}
                 size={size}
+                rounded={rounded}
                 fillMode={fillMode}
-            />
-        </Input>
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(props.className, DATETIMEPICKER_CLASSNAME)}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputValidationIcon {...props} />
+                <InputLoadingIcon {...props} />
+                <InputClearValue {...props} />
+                <InputSuffix>{suffix}</InputSuffix>
+                <Button
+                    className="k-input-button"
+                    icon={tab === 'time' ? "clock" : "calendar"}
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}
+                />
+            </Input>
+            { opened &&
+                <Popup>
+                    <DateTimeSelector tab={tab} />
+                </Popup>
+            }
+        </>
     );
 };
 
