@@ -1,4 +1,328 @@
-// TODO: docs
+// Border-radius documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius.
+
+/// This is equivalent to `border-radius: 0.25rem;`. Rounds all corners of an element's outer border edge with 0.25rem radius.
+/// @example border-radius: 0.25rem;
+/// @name .k-rounded
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-radius: 0;`. Do not rounds all corners of an element's outer border edge.
+/// @example border-radius: 0;
+/// @name .k-rounded-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-radius: 0.125rem;`. Rounds all corners of an element's outer border edge with 0.125rem radius.
+/// @example border-radius: 0.125rem;
+/// @name .k-rounded-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-radius: 0.25rem;`. Rounds all corners of an element's outer border edge with 0.25rem radius.
+/// @example border-radius: 0.25rem;
+/// @name .k-rounded-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-radius: 0.5rem;`. Rounds all corners of an element's outer border edge with 0.5rem radius.
+/// @example border-radius: 0.5rem;
+/// @name .k-rounded-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-radius: 9999px;`. Rounds all corners of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side, so square element is displayed as circle.
+/// @example border-radius: 9999px;
+/// @name .k-rounded-full
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-left-radius: 0.25rem;`. Rounds top left corner of an element's outer border edge with 0.25rem radius.
+/// @example border-top-left-radius: 0.25rem;
+/// @name .k-rounded-tl
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-left-radius: 0;`. Do not rounds top left corner of an element's outer border edge.
+/// @example border-top-left-radius: 0;
+/// @name .k-rounded-tl-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-left-radius: 0.125rem;`. Rounds top left corner of an element's outer border edge with 0.125rem radius.
+/// @example border-top-left-radius: 0.125rem;
+/// @name .k-rounded-tl-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-left-radius: 0.25rem;`. Rounds top left corner of an element's outer border edge with 0.25rem radius.
+/// @example border-top-left-radius: 0.25rem;
+/// @name .k-rounded-tl-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-left-radius: 0.5rem;`. Rounds top left corner of an element's outer border edge with 0.5rem radius.
+/// @example border-top-left-radius: 0.5rem;
+/// @name .k-rounded-tl-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-left-radius: 9999px;`. Rounds top left corner of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side.
+/// @example border-top-left-radius: 9999px;
+/// @name .k-rounded-tl-full
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-right-radius: 0.25rem;`. Rounds top right corner of an element's outer border edge with 0.25rem radius.
+/// @example border-top-right-radius: 0.25rem;
+/// @name .k-rounded-tr
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-right-radius: 0;`. Do not rounds top right corner of an element's outer border edge.
+/// @example border-top-right-radius: 0;
+/// @name .k-rounded-tr-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-right-radius: 0.125rem;`. Rounds top right corner of an element's outer border edge with 0.125rem radius.
+/// @example border-top-right-radius: 0.125rem;
+/// @name .k-rounded-tr-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-right-radius: 0.25rem;`. Rounds top right corner of an element's outer border edge with 0.25rem radius.
+/// @example border-top-right-radius: 0.25rem;
+/// @name .k-rounded-tr-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-right-radius: 0.5rem;`. Rounds top right corner of an element's outer border edge with 0.5rem radius.
+/// @example border-top-right-radius: 0.5rem;
+/// @name .k-rounded-tr-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-right-radius: 9999px;`. Rounds top right corner of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side.
+/// @example border-top-right-radius: 9999px;
+/// @name .k-rounded-tr-full
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-right-radius: 0.25rem;`. Rounds bottom right corner of an element's outer border edge with 0.25rem radius.
+/// @example border-bottom-right-radius: 0.25rem;
+/// @name .k-rounded-br
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-right-radius: 0;`. Do not rounds bottom right corner of an element's outer border edge.
+/// @example border-bottom-right-radius: 0;
+/// @name .k-rounded-br-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-right-radius: 0.125rem;`. Rounds bottom right corner of an element's outer border edge with 0.125rem radius.
+/// @example border-bottom-right-radius: 0.125rem;
+/// @name .k-rounded-br-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-right-radius: 0.25rem;`. Rounds bottom right corner of an element's outer border edge with 0.25rem radius.
+/// @example border-bottom-right-radius: 0.25rem;
+/// @name .k-rounded-br-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-right-radius: 0.5rem;`. Rounds bottom right corner of an element's outer border edge with 0.5rem radius.
+/// @example border-bottom-right-radius: 0.5rem;
+/// @name .k-rounded-br-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-right-radius: 9999px;`. Rounds bottom right corner of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side.
+/// @example border-bottom-right-radius: 9999px;
+/// @name .k-rounded-br-full
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-left-radius: 0.25rem;`. Rounds bottom left corner of an element's outer border edge with 0.25rem radius.
+/// @example border-bottom-left-radius: 0.25rem;
+/// @name .k-rounded-bl
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-left-radius: 0;`. Do not rounds bottom left corner of an element's outer border edge.
+/// @example border-bottom-left-radius: 0;
+/// @name .k-rounded-bl-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-left-radius: 0.125rem;`. Rounds bottom left corner of an element's outer border edge with 0.125rem radius.
+/// @example border-bottom-left-radius: 0.125rem;
+/// @name .k-rounded-bl-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-left-radius: 0.25rem;`. Rounds bottom left corner of an element's outer border edge with 0.25rem radius.
+/// @example border-bottom-left-radius: 0.25rem;
+/// @name .k-rounded-bl-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-left-radius: 0.5rem;`. Rounds bottom left corner of an element's outer border edge with 0.5rem radius.
+/// @example border-bottom-left-radius: 0.5rem;
+/// @name .k-rounded-bl-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-right-radius: 9999px;`. Rounds bottom left corner of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side.
+/// @example border-bottom-right-radius: 9999px;
+/// @name .k-rounded-bl-full
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-radius: 0.25rem;`. Rounds top corners of an element's outer border edge with 0.25rem radius.
+/// @example border-top-radius: 0.25rem;
+/// @name .k-rounded-t
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-radius: 0;`. Do not rounds top corners of an element's outer border edge.
+/// @example border-top-radius: 0;
+/// @name .k-rounded-t-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-radius: 0.125rem;`. Rounds top corners of an element's outer border edge with 0.125rem radius.
+/// @example border-top-radius: 0.125rem;
+/// @name .k-rounded-t-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-radius: 0.25rem;`. Rounds top corners of an element's outer border edge with 0.25rem radius.
+/// @example border-top-radius: 0.25rem;
+/// @name .k-rounded-t-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-radius: 0.5rem;`. Rounds top corners of an element's outer border edge with 0.5rem radius.
+/// @example border-top-radius: 0.5rem;
+/// @name .k-rounded-t-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-top-radius: 9999px;`. Rounds top corners of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side.
+/// @example border-top-radius: 9999px;
+/// @name .k-rounded-t-full
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-right-radius: 0.25rem;`. Rounds right corners of an element's outer border edge with 0.25rem radius.
+/// @example border-right-radius: 0.25rem;
+/// @name .k-rounded-r
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-right-radius: 0;`. Do not rounds right corners of an element's outer border edge.
+/// @example border-right-radius: 0;
+/// @name .k-rounded-r-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-right-radius: 0.125rem;`. Rounds right corners of an element's outer border edge with 0.125rem radius.
+/// @example border-right-radius: 0.125rem;
+/// @name .k-rounded-r-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-right-radius: 0.25rem;`. Rounds right corners of an element's outer border edge with 0.25rem radius.
+/// @example border-right-radius: 0.25rem;
+/// @name .k-rounded-r-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-right-radius: 0.5rem;`. Rounds right corners of an element's outer border edge with 0.5rem radius.
+/// @example border-right-radius: 0.5rem;
+/// @name .k-rounded-r-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-right-radius: 9999px;`. Rounds right corners of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side.
+/// @example border-right-radius: 9999px;
+/// @name .k-rounded-r-full
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-radius: 0.25rem;`. Rounds bottom corners of an element's outer border edge with 0.25rem radius.
+/// @example border-bottom-radius: 0.25rem;
+/// @name .k-rounded-b
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-radius: 0;`. Do not rounds bottom corners of an element's outer border edge.
+/// @example border-bottom-radius: 0;
+/// @name .k-rounded-b-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-radius: 0.125rem;`. Rounds bottom corners of an element's outer border edge with 0.125rem radius.
+/// @example border-bottom-radius: 0.125rem;
+/// @name .k-rounded-b-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-radius: 0.25rem;`. Rounds bottom corners of an element's outer border edge with 0.25rem radius.
+/// @example border-bottom-radius: 0.25rem;
+/// @name .k-rounded-b-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-radius: 0.5rem;`. Rounds bottom corners of an element's outer border edge with 0.5rem radius.
+/// @example border-bottom-radius: 0.5rem;
+/// @name .k-rounded-b-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-bottom-radius: 9999px;`. Rounds bottom corners of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side.
+/// @example border-bottom-radius: 9999px;
+/// @name .k-rounded-b-full
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-left-radius: 0.25rem;`. Rounds left corners of an element's outer border edge with 0.25rem radius.
+/// @example border-left-radius: 0.25rem;
+/// @name .k-rounded-l
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-left-radius: 0;`. Do not rounds left corners of an element's outer border edge.
+/// @example border-left-radius: 0;
+/// @name .k-rounded-l-0
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-left-radius: 0.125rem;`. Rounds left corners of an element's outer border edge with 0.125rem radius.
+/// @example border-left-radius: 0.125rem;
+/// @name .k-rounded-l-sm
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-left-radius: 0.25rem;`. Rounds left corners of an element's outer border edge with 0.25rem radius.
+/// @example border-left-radius: 0.25rem;
+/// @name .k-rounded-l-md
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-left-radius: 0.5rem;`. Rounds left corners of an element's outer border edge with 0.5rem radius.
+/// @example border-left-radius: 0.5rem;
+/// @name .k-rounded-l-lg
+/// @group border-radius
+/// @contextType css
+
+/// This is equivalent to `border-left-radius: 9999px;`. Rounds left corners of an element's outer border edge with 9999px radius. Resolved border radius is equal to half of the shortest adjacent side.
+/// @example border-left-radius: 9999px;
+/// @name .k-rounded-l-full
+/// @group border-radius
+/// @contextType css
 
 @mixin kendo-utils--border--border-radius() {
 

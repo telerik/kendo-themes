@@ -1,16 +1,19 @@
 // Text-transform documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform.
 
 /// This is equivalent to `text-transform: lowercase;`. Is a keyword that converts all characters to lowercase.
+/// @example text-transform: lowercase;
 /// @name k-text-lowercase
 /// @group text-transform
 /// @contextType css
 
 /// This is equivalent to `text-transform: uppercase;`. Is a keyword that converts all characters to uppercase.
+/// @example text-transform: uppercase;
 /// @name k-text-uppercase
 /// @group text-transform
 /// @contextType css
 
 /// This is equivalent to `text-transform: capitalize;`. Is a keyword that converts the first letter of each word to uppercase. Other characters remain unchanged (they retain their original case as written in the element's text).
+/// @example text-transform: capitalize;
 /// @name k-text-capitalize
 /// @group text-transform
 /// @contextType css

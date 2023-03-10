@@ -1,44 +1,53 @@
 /// This is equivalent to `transform: translate( 0, 0 );`. The element does not move.
+/// @example transform: translate( 0, 0 );
 /// @name .k-translate-0
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: translate( 0, 50% );`. The element moves vertically by 50% of its height.
+/// @example transform: translate( 0, 50% );
 /// @name .k-translate-0-50
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: translate( 0, 100% );`. The element moves vertically by 100% of its height.
+/// @example transform: translate( 0, 100% );
 /// @name .k-translate-0-100
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: translate( 50%, 0 );`. The element moves horizontally by 50% of its width.
+/// @example transform: translate( 50%, 0 );
 /// @name .k-translate-50-0
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: translate( 50%, 50% );`. The element moves horizontally by 50% of its width and vertically by 50% of its height.
+/// @example transform: translate( 50%, 50% );
 /// @name .k-translate-50-50
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: translate( 50%, 100% );`. The element moves horizontally by 50% of its width and vertically by 100% of its height.
+/// @example transform: translate( 50%, 100% );
 /// @name .k-translate-50-100
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: translate( 100%, 0 );`. The element moves horizontally by 100% of its width.
+/// @example transform: translate( 100%, 0 );
 /// @name .k-translate-100-0
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: translate( 100%, 50% );`. The element moves horizontally by 100% of its width and vertically by 50% of its height.
+/// @example transform: translate( 100%, 50% );
 /// @name .k-translate-100-50
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: translate( 100%, 100% );`. The element moves horizontally by 100% of its width and vertically by 100% of its height.
+/// @example transform: translate( 100%, 100% );
 /// @name .k-translate-100-100
 /// @group transform
 /// @contextType css

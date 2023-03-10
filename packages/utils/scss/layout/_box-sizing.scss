@@ -1,4 +1,16 @@
-// TODO: docs
+// Box-sizing documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing.
+
+/// This is equivalent to `box-sizing: border-box;`. The width and height properties include the content, padding, and border, but do not include the margin.
+/// @example box-sizing: border-box;
+/// @name .k-box-sizing-border
+/// @group box-sizing
+/// @contextType css
+
+/// This is equivalent to `box-sizing: content-box;`. This is the initial and default value as specified by the CSS standard. The width and height properties include the content, but does not include the padding, border, or margin.
+/// @example box-sizing: content-box;
+/// @name .k-box-sizing-content
+/// @group box-sizing
+/// @contextType css
 
 @mixin kendo-utils--layout--box-sizing() {
 

@@ -1,4 +1,76 @@
-// TODO: docs
+// Align-items documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/align-items.
+
+/// This is equivalent to `align-items: normal;`. The effect of this keyword is dependent of the layout mode we are in: 1) In absolutely-positioned layouts, the keyword behaves like start on replaced absolutely-positioned boxes, and as stretch on all other absolutely-positioned boxes. 2) In static position of absolutely-positioned layouts, the keyword behaves as stretch. 3) For flex items, the keyword behaves as stretch. 4) For grid items, this keyword leads to a behavior similar to the one of stretch, except for boxes with an aspect ratio or an intrinsic sizes where it behaves like start. 5) The property doesn't apply to block-level boxes, and to table cells.
+/// @example align-items: normal;
+/// @name .k-align-items-normal
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: stretch;`. Flex items are stretched such that the cross-size of the item's margin box is the same as the line while respecting width and height constraints.
+/// @example align-items: stretch;
+/// @name .k-align-items-stretch
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: center;`. The flex items' margin boxes are centered within the line on the cross-axis. If the cross-size of an item is larger than the flex container, it will overflow equally in both directions.
+/// @example align-items: center;
+/// @name .k-align-items-stretch
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: start;`. The items are packed flush to each other toward the start edge of the alignment container in the appropriate axis..
+/// @example align-items: start;
+/// @name .k-align-items-start
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: end;`. The items are packed flush to each other toward the end edge of the alignment container in the appropriate axis.
+/// @example align-items: end;
+/// @name .k-align-items-end
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: flex-start;`. The items are packed flush to the edge of the alignment container's start side of the item, in the appropriate axis.
+/// @example align-items: flex-start;
+/// @name .k-align-items-flex-start
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: flex-end;`. The items are packed flush to the edge of the alignment container's end side of the item, in the appropriate axis.
+/// @example align-items: flex-end;
+/// @name .k-align-items-flex-end
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: baseline;`. Aligns the alignment baseline of the box's baseline set with the corresponding baseline in the shared baseline set of all the boxes in its baseline-sharing group.
+/// @example align-items: baseline;
+/// @name .k-align-items-baseline
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: first baseline;`. Aligns the alignment baseline of the box's first baseline.
+/// @example align-items: first baseline;
+/// @name .k-align-items-first-baseline
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: last baseline;`. Aligns the alignment baseline of the box's last baseline.
+/// @example align-items: last baseline;
+/// @name .k-align-items-last-baseline
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: self-start;`. The items are packed flush to the edge of the alignment container's start side of the item, in the appropriate axis.
+/// @example align-items: self-start;
+/// @name .k-align-items-self-start
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: self-end;`. The items are packed flush to the edge of the alignment container's end side of the item, in the appropriate axis.
+/// @example align-items: self-end;
+/// @name .k-align-items-self-end
+/// @group align-items
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--align-items() {
 

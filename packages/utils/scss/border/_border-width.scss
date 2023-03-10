@@ -1,4 +1,216 @@
-// TODO: docs
+// Border-width documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/border-width.
+
+/// This is equivalent to `border-width: 1px;`. Sets 1px width of an element's border.
+/// @example border-width: 1px;
+/// @name .k-border
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-width: 0;`. Sets 0px width of an element's border.
+/// @example border-width: 0;
+/// @name .k-border-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-width: 2px;`. Sets 2px width of an element's border.
+/// @example border-width: 2px;
+/// @name .k-border-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-width: 4px;`. Sets 4px width of an element's border.
+/// @example border-width: 4px;
+/// @name .k-border-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-width: 8px;`. Sets 8px width of an element's border.
+/// @example border-width: 8px;
+/// @name .k-border-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 1px;`. Sets 1px width of an top element's border.
+/// @example border-top-width: 1px;
+/// @name .k-border-t
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 0px;`. Sets 0px width of an top element's border.
+/// @example border-top-width: 0px;
+/// @name .k-border-t-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 2px;`. Sets 2px width of an top element's border.
+/// @example border-top-width: 2px;
+/// @name .k-border-t-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 4px;`. Sets 4px width of an top element's border.
+/// @example border-top-width: 4px;
+/// @name .k-border-t-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 8px;`. Sets 8px width of an top element's border.
+/// @example border-top-width: 8px;
+/// @name .k-border-t-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 1px;`. Sets 1px width of an right element's border.
+/// @example border-right-width: 1px;
+/// @name .k-border-r
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 0px;`. Sets 0px width of an right element's border.
+/// @example border-right-width: 0px;
+/// @name .k-border-r-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 2px;`. Sets 2px width of an right element's border.
+/// @example border-right-width: 2px;
+/// @name .k-border-r-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 4px;`. Sets 4px width of an right element's border.
+/// @example border-right-width: 4px;
+/// @name .k-border-r-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 8px;`. Sets 8px width of an right element's border.
+/// @example border-right-width: 8px;
+/// @name .k-border-r-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 1px;`. Sets 1px width of an bottom element's border.
+/// @example border-bottom-width: 1px;
+/// @name .k-border-b
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 0px;`. Sets 0px width of an bottom element's border.
+/// @example border-bottom-width: 0px;
+/// @name .k-border-b-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 2px;`. Sets 2px width of an bottom element's border.
+/// @example border-bottom-width: 2px;
+/// @name .k-border-b-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 4px;`. Sets 4px width of an bottom element's border.
+/// @example border-bottom-width: 4px;
+/// @name .k-border-b-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 8px;`. Sets 8px width of an bottom element's border.
+/// @example border-bottom-width: 8px;
+/// @name .k-border-b-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 1px;`. Sets 1px width of an left element's border.
+/// @example border-left-width: 1px;
+/// @name .k-border-l
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 0px;`. Sets 0px width of an left element's border.
+/// @example border-left-width: 0px;
+/// @name .k-border-l-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 2px;`. Sets 2px width of an left element's border.
+/// @example border-left-width: 2px;
+/// @name .k-border-l-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 4px;`. Sets 4px width of an left element's border.
+/// @example border-left-width: 4px;
+/// @name .k-border-l-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 8px;`. Sets 8px width of an left element's border.
+/// @example border-left-width: 8px;
+/// @name .k-border-l-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 1px;`. Sets 1px width of an inline element's border.
+/// @example border-inline-width: 1px;
+/// @name .k-border-x
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 0px;`. Sets 0px width of an inline element's border.
+/// @example border-inline-width: 0px;
+/// @name .k-border-x-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 2px;`. Sets 2px width of an inline element's border.
+/// @example border-inline-width: 2px;
+/// @name .k-border-x-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 4px;`. Sets 4px width of an inline element's border.
+/// @example border-inline-width: 4px;
+/// @name .k-border-x-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 8px;`. Sets 8px width of an inline element's border.
+/// @example border-inline-width: 8px;
+/// @name .k-border-x-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 1px;`. Sets 1px width of an block element's border.
+/// @example border-block-width: 1px;
+/// @name .k-border-y
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 0px;`. Sets 0px width of an block element's border.
+/// @example border-block-width: 0px;
+/// @name .k-border-y-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 2px;`. Sets 2px width of an block element's border.
+/// @example border-block-width: 2px;
+/// @name .k-border-y-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 4px;`. Sets 4px width of an block element's border.
+/// @example border-block-width: 4px;
+/// @name .k-border-y-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 8px;`. Sets 8px width of an block element's border.
+/// @example border-block-width: 8px;
+/// @name .k-border-y-8
+/// @group border-width
+/// @contextType css
+
+
 
 @mixin kendo-utils--border--border-width() {
 

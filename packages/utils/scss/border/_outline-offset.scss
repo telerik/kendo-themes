@@ -1,4 +1,34 @@
-// TODO: docs
+// Outline-offset documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/outline-offset.
+
+/// This is equivalent to `outline-offset: 1px;`. Sets 1px space between an outline and the edge or border of an element.
+/// @example outline-offset: 1px;
+/// @name .k-outline
+/// @group outline-offset
+/// @contextType css
+
+/// This is equivalent to `outline-offset: 0;`. Sets 0px space between an outline and the edge or border of an element.
+/// @example outline-offset: 0;
+/// @name .k-outline-0
+/// @group outline-offset
+/// @contextType css
+
+/// This is equivalent to `outline-offset: 2px;`. Sets 2px space between an outline and the edge or border of an element.
+/// @example outline-offset: 2px;
+/// @name .k-outline-2
+/// @group outline-offset
+/// @contextType css
+
+/// This is equivalent to `outline-offset: 4px;`. Sets 4px space between an outline and the edge or border of an element.
+/// @example outline-offset: 4px;
+/// @name .k-outline-4
+/// @group outline-offset
+/// @contextType css
+
+/// This is equivalent to `outline-offset: 8px;`. Sets 8px space between an outline and the edge or border of an element.
+/// @example outline-offset: 8px;
+/// @name .k-outline-8
+/// @group outline-offset
+/// @contextType css
 
 @mixin kendo-utils--border--outline-offset() {
 

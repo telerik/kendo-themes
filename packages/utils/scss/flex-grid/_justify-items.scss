@@ -1,4 +1,87 @@
-// TODO: docs
+// Justify-items documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items.
+
+/// This is equivalent to `justify-items: normal;`. Defines the default justify-self for all items of the box, giving them all a default way of justifying each box along the appropriate axis. The effect of this keyword is dependent of the layout mode we are in: 1) In block-level layouts, the keyword is a synonym of start. 2) In absolutely-positioned layouts, the keyword behaved like start on replaced absolutely-positioned boxes, and as stretch on all other absolutely-positioned boxes. 3) In table cell layouts, this keyword has no meaning as this property is ignored. 4) In flexbox layouts, this keyword has no meaning as this property is ignored. 5) In grid layouts, this keyword leads to a behavior similar to the one of stretch, except for boxes with an aspect ratio or an intrinsic sizes where it behaves like start.
+/// @example justify-items: normal;
+/// @name .k-justify-items-normal
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: stretch;`. If the combined size of the items is less than the size of the alignment container, any auto-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by max-height/max-width (or equivalent functionality), so that the combined size exactly fills the alignment container.
+/// @example justify-items: stretch;
+/// @name .k-justify-items-stretch
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: center;`. The items are packed flush to each other toward the center of the alignment container.
+/// @example justify-items: center;
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: start;`. The item is packed flush to each other toward the start edge of the alignment container in the appropriate axis.
+/// @example justify-items: start;
+/// @name .k-justify-items-start
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: end;`. The item is packed flush to each other toward the end edge of the alignment container in the appropriate axis.
+/// @example justify-items: end;
+/// @name .k-justify-items-end
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: flex-start;`. For items that are not children of a flex container, this value is treated like start.
+/// @example justify-items: flex-start;
+/// @name .k-justify-items-selft-start
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: flex-end;`. For items that are not children of a flex container, this value is treated like end.
+/// @example justify-items: flex-end;
+/// @name .k-justify-items-self-end
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: self-start;`. The item is packed flush to the edge of the alignment container of the start side of the item, in the appropriate axis.
+/// @example justify-items: self-start;
+/// @name .k-justify-items-selft-start
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: self-end;`. The item is packed flush to the edge of the alignment container of the end side of the item, in the appropriate axis.
+/// @example justify-items: self-end;
+/// @name .k-justify-items-self-end
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: left;`. The items are packed flush to each other toward the left edge of the alignment container. If the property's axis is not parallel with the inline axis, this value behaves like start.
+/// @example justify-items: left;
+/// @name .k-justify-items-left
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: right;`. The items are packed flush to each other toward the right edge of the alignment container in the appropriate axis. If the property's axis is not parallel with the inline axis, this value behaves like start.
+/// @example justify-items: right;
+/// @name .k-justify-items-right
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: baseline;`. Specifies participation in baseline alignment: aligns the alignment baseline of the box's baseline set with the corresponding baseline in the shared baseline set of all the boxes in its baseline-sharing group.
+/// @example justify-items: baseline;
+/// @name .k-justify-items-baseline
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: first baseline;`. Specifies participation in first baseline alignment: aligns the alignment baseline of the box's first baseline set with the corresponding baseline in the shared first baseline set of all the boxes in its baseline-sharing group.
+/// @example justify-items: first baseline;
+/// @name .k-justify-items-first-baseline
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: last baseline;`. Specifies participation in last baseline alignment: aligns the alignment baseline of the box's last baseline set with the corresponding baseline in the shared last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+/// @example justify-items: last baseline;
+/// @name .k-justify-items-last-baseline
+/// @group justify-items
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--justify-items() {
 

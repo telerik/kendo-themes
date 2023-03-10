@@ -1,4 +1,69 @@
-// TODO: docs
+// place-self documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/place-self.
+
+/// This is equivalent to `place-self: auto;`. This property sets the way a box is justified inside its alignment container along the appropriate axis. The value used is the value of the justify-items property of the parents box, unless the box has no parent, or is absolutely positioned, in these cases, auto represents normal.
+/// @example place-self: auto;
+/// @name .k-place-self-auto
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: normal;`. This property sets the way a box is justified inside its alignment container along the appropriate axis. This property can take one of three different forms: 1) Basic keywords: one of the keyword values normal, auto, or stretch. 2) Baseline alignment: the baseline keyword, plus optionally one of first or last. 3) Positional alignment: a) one of: center, start, end, flex-start, flex-end, self-start, self-end, left, or right. b) Plus optionally safe or unsafe.
+/// @example place-self: normal;
+/// @name .k-place-self-normal
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: stretch;`. If the combined size of the items is less than the size of the alignment container, any auto-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by max-height/max-width (or equivalent functionality), so that the combined size exactly fills the alignment container.
+/// @example place-self: stretch;
+/// @name .k-place-self-stretch
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: center;`. The items are packed flush to each other toward the center of the alignment container.
+/// @example place-self: center;
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: start;`. The item is packed flush to each other toward the start edge of the alignment container in the appropriate axis.
+/// @example place-self: start;
+/// @name .k-place-self-start
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: end;`. The item is packed flush to each other toward the end edge of the alignment container in the appropriate axis.
+/// @example place-self: end;
+/// @name .k-place-self-end
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: flex-start;`. For items that are not children of a flex container, this value is treated like start.
+/// @example place-self: flex-start;
+/// @name .k-place-self-flex-start
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: flex-end;`. For items that are not children of a flex container, this value is treated like end.
+/// @example place-self: flex-end;
+/// @name .k-place-self-flex-end
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: self-start;`. The item is packed flush to the edge of the alignment container of the start side of the item, in the appropriate axis.
+/// @example place-self: self-start;
+/// @name .k-place-self-self-start
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: self-end;`. The item is packed flush to the edge of the alignment container of the end side of the item, in the appropriate axis.
+/// @example place-self: self-end;
+/// @name .k-place-self-self-end
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: baseline;`. Specifies participation in baseline alignment: aligns the alignment baseline of the box's baseline set with the corresponding baseline in the shared baseline set of all the boxes in its baseline-sharing group.
+/// @example place-self: baseline;
+/// @name .k-place-self-baseline
+/// @group place-self
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--place-self() {
 

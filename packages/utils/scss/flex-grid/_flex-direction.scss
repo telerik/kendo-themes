@@ -1,19 +1,23 @@
-/// This is equivalent to `flex-direction: row`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: left to right in `ltr`; right to left in `rtl`.
+/// This is equivalent to `flex-direction: row;`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: left to right in `ltr`; right to left in `rtl`.
+/// @example flex-direction: row;
 /// @name .k-flex-row
 /// @group flex-direction
 /// @contextType css
 
-/// This is equivalent to `flex-direction: row-reverse`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: right to left in `ltr`; left to right in `rtl`.
+/// This is equivalent to `flex-direction: row-reverse;`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: right to left in `ltr`; left to right in `rtl`.
+/// @example flex-direction: row-reverse;
 /// @name .k-flex-row-reverse
 /// @group flex-direction
 /// @contextType css
 
-/// This is equivalent to `flex-direction: column`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: top to bottom.
+/// This is equivalent to `flex-direction: column;`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: top to bottom.
+/// @example flex-direction: column;
 /// @name .k-flex-col
 /// @group flex-direction
 /// @contextType css
 
-/// This is equivalent to `flex-direction: column-reverse`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: bottom to top.
+/// This is equivalent to `flex-direction: column-reverse;`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: bottom to top.
+/// @example flex-direction: column-reverse;
 /// @name .k-flex-col-reverse
 /// @group flex-direction
 /// @contextType css

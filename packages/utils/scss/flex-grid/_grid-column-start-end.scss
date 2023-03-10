@@ -1,4 +1,22 @@
-// TODO: docs
+// Grid-column-start documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start.
+
+/// This is equivalent to `grid-column-start: 1;`. This specifies a grid item's start position on the first grid line within the grid column. This start position defines the block-start edge of the grid area.
+/// @example grid-column-start: 1;
+/// @name .k-col-start-1
+/// @group grid-column-start
+/// @contextType css
+
+/// This is equivalent to `grid-column-start: -1;`. This specifies a grid item's start position on the first grid line within the grid column. This start position defines the block-start edge of the grid area counting backwards.
+/// @example grid-column-start: -1;
+/// @name .k-col-start--1
+/// @group grid-column-start
+/// @contextType css
+
+/// This is equivalent to `grid-column-start: auto;`. This property contributes nothing to the grid item's placement, indicating auto-placement, an automatic span, or a default span of 1.
+/// @example grid-column-start: auto;
+/// @name .k-col-start-auto
+/// @group grid-column-start
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--grid-column-start-end() {
 

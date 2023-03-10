@@ -1,4 +1,28 @@
-// TODO: docs
+// Grid-auto-rows documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows.
+
+/// This is equivalent to `grid-auto-rows: auto;`. Specifies auto size of an implicitly-created grid row track or pattern of tracks. It is identical to maximal content if it's a maximum. As a minimum it represents the largest minimum size (as specified by min-width/min-height) of the grid items occupying the grid track.
+/// @example grid-auto-rows: auto;
+/// @name .k-grid-auto-rows-auto
+/// @group grid-auto-rows
+/// @contextType css
+
+/// This is equivalent to `grid-auto-rows: min-content;`. Specifies minimal size of an implicitly-created grid row track or pattern of tracks. It represent the largest minimal content contribution of the grid items occupying the grid track.
+/// @example grid-auto-rows: min-content;
+/// @name .k-grid-auto-rows-min
+/// @group grid-auto-rows
+/// @contextType css
+
+/// This is equivalent to `grid-auto-rows: max-content;`. Specifies maximal size of an implicitly-created grid row track or pattern of tracks. It represent the largest maximal content contribution of the grid items occupying the grid track.
+/// @example grid-auto-rows: max-content;
+/// @name .k-grid-auto-rows-max
+/// @group grid-auto-rows
+/// @contextType css
+
+/// This is equivalent to `grid-auto-rows: minmax( 0, 1fr );`. Specifies minimal and maximal size of an implicitly-created grid row track or pattern of tracks. It defines a size range greater than or equal to min and less than or equal to max.
+/// @example grid-auto-rows: minmax( 0, 1fr );
+/// @name .k-grid-auto-rows-fr
+/// @group grid-auto-rows
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--grid-auto-rows() {
 

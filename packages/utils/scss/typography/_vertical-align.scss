@@ -1,4 +1,40 @@
-// TODO: docs
+// Text-align documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/text-align.
+
+/// This is equivalent to `text-align: left;`. The inline contents are aligned to the left edge of the line box.
+/// @example text-align: left;
+/// @name .k-left
+/// @group text-align
+/// @contextType css
+
+/// This is equivalent to `text-align: right;`. The inline contents are aligned to the right edge of the line box.
+/// @example text-align: right;
+/// @name .k-right
+/// @group text-align
+/// @contextType css
+
+/// This is equivalent to `text-align: center;`. The inline contents are centered within the line box.
+/// @example text-align: center;
+/// @name .k-center
+/// @group text-align
+/// @contextType css
+
+/// This is equivalent to `text-align: justify;`. The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.
+/// @example text-align: justify;
+/// @name .k-justify
+/// @group text-align
+/// @contextType css
+
+/// This is equivalent to `text-align: start;`. The same as left if direction is left-to-right and right if direction is right-to-left.
+/// @example text-align: start;
+/// @name .k-start
+/// @group text-align
+/// @contextType css
+
+/// This is equivalent to `text-align: end;`. The same as right if direction is left-to-right and left if direction is right-to-left.
+/// @example text-align: end;
+/// @name .k-end
+/// @group text-align
+/// @contextType css
 
 @mixin kendo-utils--typography--vertical-align() {
 

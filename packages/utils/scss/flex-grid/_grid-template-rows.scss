@@ -1,4 +1,22 @@
-// TODO: docs
+// Grid-template-rows documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows.
+
+/// This is equivalent to `grid-template-rows: repeat(1, minmax(0, 1fr));`. Sets one column expanded maximum to the entire width.
+/// @example grid-template-rows: repeat(1, minmax(0, 1fr));
+/// @name .k-grid-rows-1
+/// @group grid-template-rows
+/// @contextType css
+
+/// This is equivalent to `grid-template-rows: repeat(2, minmax(0, 1fr));`. Sets two equal rows expanded maximum to the entire width.
+/// @example grid-template-rows: repeat(2, minmax(0, 1fr));
+/// @name .k-grid-rows-2
+/// @group grid-template-rows
+/// @contextType css
+
+/// This is equivalent to `grid-template-rows: none;`. ndicates that there is no explicit grid. Any rows will be implicitly generated and their size will be determined by the grid-auto-rows property.
+/// @example grid-template-rows: none;
+/// @name .k-grid-rows-none
+/// @group grid-template-rows
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--grid-template-rows() {
 

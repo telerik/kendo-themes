@@ -1,4 +1,58 @@
-// TODO: docs
+// transform-origin documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin.
+
+/// This is equivalent to `transform-origin: center;`. Sets the origin for an element's transformations to be in the center.
+/// @example transform-origin: center;
+/// @name .origin-center
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top;`. Sets the origin for an element's transformations to be in the top.
+/// @example transform-origin: top;
+/// @name .origin-top
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: right;`. Sets the origin for an element's transformations to be in the right.
+/// @example transform-origin: right;
+/// @name .origin-right
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom;`. Sets the origin for an element's transformations to be in the bottom.
+/// @example transform-origin: bottom;
+/// @name .origin-bottom
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: left;`. Sets the origin for an element's transformations to be in the left.
+/// @example transform-origin: left;
+/// @name .origin-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top-left;`. Sets the origin for an element's transformations to be in the top-left.
+/// @example transform-origin: top-left;
+/// @name .origin-top-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top-right;`. Sets the origin for an element's transformations to be in the top-right.
+/// @example transform-origin: top-right;
+/// @name .origin-top-right
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom-left;`. Sets the origin for an element's transformations to be in the bottom-left.
+/// @example transform-origin: bottom-left;
+/// @name .origin-bottom-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom-right;`. Sets the origin for an element's transformations to be in the bottom-right.
+/// @example transform-origin: bottom-right;
+/// @name .origin-bottom-right
+/// @group transform-origin
+/// @contextType css
 
 @mixin kendo-utils--transform--origin() {
 

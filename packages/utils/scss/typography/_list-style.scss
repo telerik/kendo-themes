@@ -1,4 +1,22 @@
-// TODO: docs
+// List-style documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/list-style.
+
+/// This is equivalent to `list-style-typ: none;`. No list style is used.
+/// @example list-style-typ: none;
+/// @name .k-list-none
+/// @group list-style
+/// @contextType css
+
+/// This is equivalent to `list-style-typ: disc;`. The marker of list items is a filled circle.
+/// @example list-style-typ: disc;
+/// @name .k-list-disc
+/// @group list-style
+/// @contextType css
+
+/// This is equivalent to `list-style-typ: decimal;`.The marker of list items is a number.
+/// @example list-style-typ: decimal;
+/// @name .k-list-decimal
+/// @group list-style
+/// @contextType css
 
 @mixin kendo-utils--typography--list-style-type() {
 

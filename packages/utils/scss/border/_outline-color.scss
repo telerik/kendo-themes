@@ -1,4 +1,34 @@
-// TODO: docs
+// Outline-color documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/outline-color.
+
+/// This is equivalent to `outline-color: inherit;`. Define the inherited outline color
+/// @example outline-color: inherit;
+/// @name .k-outline-inherit
+/// @group outline-color
+/// @contextType css
+
+/// This is equivalent to `outline-color: currentColor;`. Define inherited outline color
+/// @example outline-color: currentColor;
+/// @name .k-outline-currentColor
+/// @group outline-color
+/// @contextType css
+
+/// This is equivalent to `outline-color: transparent;`. Define transparent outline color
+/// @example outline-color: transparent;
+/// @name .k-outline-transparent
+/// @group outline-color
+/// @contextType css
+
+/// This is equivalent to `outline-color: black;`. Define black outline color
+/// @example outline-color: black;
+/// @name .k-outline-black
+/// @group outline-color
+/// @contextType css
+
+/// This is equivalent to `outline-color: white;`. Define white outline color
+/// @example outline-color: white;
+/// @name .k-outline-white
+/// @group outline-color
+/// @contextType css
 
 @mixin kendo-utils--border--outline-color() {
 

@@ -1,4 +1,34 @@
-// TODO: docs
+// backdrop-blur documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-blur.
+
+/// This is equivalent to `backdrop-filter: blur(8px);`. Apply blurring effect 8px to the area behind an element.
+/// @example backdrop-filter: blur(8px);
+/// @name .k-backdrop-blur
+/// @group backdrop-blur
+/// @contextType css
+
+/// This is equivalent to `backdrop-filter: blur(0);`. Apply blurring effect 0 to the area behind an element.
+/// @example backdrop-filter: blur(0);
+/// @name .k-backdrop-blur-none
+/// @group backdrop-blur
+/// @contextType css
+
+/// This is equivalent to `backdrop-filter: blur(4px);`. Apply blurring effect 4px to the area behind an element.
+/// @example backdrop-filter: blur(4px);
+/// @name .k-backdrop-blur-sm
+/// @group backdrop-blur
+/// @contextType css
+
+/// This is equivalent to `backdrop-filter: blur(6px);`. Apply blurring effect 6px to the area behind an element.
+/// @example backdrop-filter: blur(6px);
+/// @name .k-backdrop-blur-md
+/// @group backdrop-blur
+/// @contextType css
+
+/// This is equivalent to `backdrop-filter: blur(12px);`. Apply blurring effect 12px to the area behind an element.
+/// @example backdrop-filter: blur(12px);
+/// @name .k-backdrop-blur-lg
+/// @group backdrop-blur
+/// @contextType css
 
 @mixin kendo-utils--filter--backdrop() {
 

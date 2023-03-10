@@ -1,4 +1,38 @@
-// TODO: docs
+/// This is equivalent to `fill: none;`. SVG shape filling color will not be overriden.
+/// @example fill: none;
+/// @name .k-fill-none
+/// @group fill
+/// @contextType css
+
+/// This is equivalent to `fill: inherit;`. Sets inherited filling color of a SVG shape.
+/// @example fill: inherit;
+/// @name .k-fill-inherit
+/// @group fill
+/// @contextType css
+
+/// This is equivalent to `fill: currentColor;`. Sets element's color as filling color of a SVG shape.
+/// @example fill: currentColor;
+/// @name .k-fill-currentColor
+/// @group fill
+/// @contextType css
+
+/// This is equivalent to `fill: transparent;`. Sets transparent filling color of a SVG shape.
+/// @example fill: transparent;
+/// @name .k-fill-transparent
+/// @group fill
+/// @contextType css
+
+/// This is equivalent to `fill: black;`. Sets black filling color of a SVG shape.
+/// @example fill: black;
+/// @name .k-fill-black
+/// @group fill
+/// @contextType css
+
+/// This is equivalent to `fill: white;`. Sets white filling color of a SVG shape.
+/// @example fill: white;
+/// @name .k-fill-white
+/// @group fill
+/// @contextType css
 
 @mixin kendo-utils--svg--fill() {
 

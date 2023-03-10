@@ -1,4 +1,52 @@
-// TODO: docs
+// Z-index documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/z-index.
+
+/// This is equivalent to `z-index: 0;`. This is the 0 stack level of the generated box in the current stacking context.
+/// @example z-index: 0;
+/// @name .k-zindex-0
+/// @group zindex
+/// @contextType css
+
+/// This is equivalent to `z-index: 0;`. This is the 0 stack level of the generated box in the current stacking context.
+/// @example z-index: 0;
+/// @name .k-zindex-0
+/// @group zindex
+/// @contextType css
+
+/// This is equivalent to `z-index: 10;`. This is the 0 stack level of the generated box in the current stacking context.
+/// @example z-index: 10;
+/// @name .k-zindex-10
+/// @group zindex
+/// @contextType css
+
+/// This is equivalent to `z-index: 20;`. This is the 0 stack level of the generated box in the current stacking context.
+/// @example z-index: 20;
+/// @name .k-zindex-20
+/// @group zindex
+/// @contextType css
+
+/// This is equivalent to `z-index: 30;`. This is the 0 stack level of the generated box in the current stacking context.
+/// @example z-index: 30;
+/// @name .k-zindex-30
+/// @group zindex
+/// @contextType css
+
+/// This is equivalent to `z-index: 40;`. This is the 0 stack level of the generated box in the current stacking context.
+/// @example z-index: 40;
+/// @name .k-zindex-40
+/// @group zindex
+/// @contextType css
+
+/// This is equivalent to `z-index: 50;`. This is the 0 stack level of the generated box in the current stacking context.
+/// @example z-index: 50;
+/// @name .k-zindex-50
+/// @group zindex
+/// @contextType css
+
+/// This is equivalent to `z-index: auto;`. The box does not establish a new local stacking context. The stack level of the generated box in the current stacking context is 0.
+/// @example z-index: auto;
+/// @name .k-zindex-auto
+/// @group zindex
+/// @contextType css
 
 @mixin kendo-utils--layout--zindex() {
 

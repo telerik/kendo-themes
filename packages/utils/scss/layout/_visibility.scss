@@ -1,5 +1,22 @@
-// TODO: docs
-// TODO: consider visible and invisible vs visibility-visible and visibility-hidden
+// Visibility documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/visibility.
+
+/// This is equivalent to `visibility: visble;`. The element box is visible.
+/// @example visibility: visble;
+/// @name .k-visible
+/// @group visibility
+/// @contextType css
+
+/// This is equivalent to `visibility: hidden;`. The element box is invisible (not drawn), but still affects layout as normal. Descendants of the element will be visible if they have visibility set to visible.
+/// @example visibility: hidden;
+/// @name .k-invisible
+/// @group visibility
+/// @contextType css
+
+/// This is equivalent to `visibility: collapse;`. The collapse keyword has different effects for different elements: For <table> rows, columns, column groups, and row groups, the row(s) or column(s) are hidden and the space they would have occupied is removed (as if display: none were applied to the column/row of the table). However, the size of other rows and columns is still calculated as though the cells in the collapsed row(s) or column(s) are present. This value allows for the fast removal of a row or column from a table without forcing the recalculation of widths and heights for the entire table. Collapsed flex items and ruby annotations are hidden, and the space they would have occupied is removed. For other elements, collapse is treated the same as hidden.
+/// @example visibility: collapse;
+/// @name .k-collapse
+/// @group visibility
+/// @contextType css
 
 @mixin kendo-utils--layout--visibility() {
 
