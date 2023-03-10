@@ -1,4 +1,154 @@
-// TODO: docs
+// width documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/width.
+
+/// This is equivalent to `width: 0;`. Specifies 0px width of an element.
+/// @example width: 0;
+/// @name .k-w-0
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: 1px;`. Specifies 1px width of an element.
+/// @example width: 1px;
+/// @name .k-w-1px
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: 0.25rem;`. Specifies 0.25rem width of an element.
+/// @example width: 0.25rem;
+/// @name .k-w-1
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 100%;`. Specifies element's width as 100% of the containing block's width.
+/// @example min-width: 100%;
+/// @name .k-w-full
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: 100vh;`. Specifies 0.25rem width of an element.
+/// @example width: 100vh;
+/// @name .k-w-screen
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: 100vh;`. Specifies  element's width to be the same as the viewport width.
+/// @example width: 100vh;
+/// @name .k-w-screen
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: min-content;`. Specifies the intrinsic minimum width of the element.
+/// @example width: min-content;
+/// @name .k-w-min
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: max-content;`. Specifies the intrinsic preferred width of the element.
+/// @example width: max-content;
+/// @name .k-w-max
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: fit-content;`. width of the element will use the available space, but never more than max-content
+/// @example width: fit-content;
+/// @name .k-w-fit
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 0;`. Specifies 0px minimum width of an element.
+/// @example min-width: 0;
+/// @name .k-min-w-0
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 1px;`. Specifies 1px minimum width of an element.
+/// @example min-width: 1px;
+/// @name .k-min-w-1px
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 0.25rem;`. Specifies 0.25rem minimum width of an element.
+/// @example min-width: 0.25rem;
+/// @name .k-min-w-1
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 100%;`. Specifies minimum element's width as 100% of the containing block's width.
+/// @example min-width: 100%;
+/// @name .k-min-w-full
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 100vh;`. Specifies minimum element's width to be as the viewport width.
+/// @example min-width: 100vh;
+/// @name .k-min-w-screen
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: min-content;`. Specifies minimum element's width to be as the intrinsic width of the element.
+/// @example min-width: min-content;
+/// @name .k-min-w-min
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: max-content;`. Specifies minimum element's width to be as the preferred width of the element.
+/// @example min-width: max-content;
+/// @name .k-min-w-max
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: fit-content;`. Minimum width of the element will use the available space, but never more than max-content
+/// @example min-width: fit-content;
+/// @name .k-min-w-fit
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 0;`. Specifies 0px maximum width of an element.
+/// @example max-width: 0;
+/// @name .k-max-w-0
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 1px;`. Specifies 1px maximum width of an element.
+/// @example max-width: 1px;
+/// @name .k-max-w-1px
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 0.25rem;`. Specifies 0.25rem maximum width of an element.
+/// @example max-width: 0.25rem;
+/// @name .k-max-w-1
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 100%;`. Specifies maximum element's width as 100% of the containing block's width.
+/// @example max-width: 100%;
+/// @name .k-max-w-full
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 100vh;`. Specifies maximum element's width to be as the viewport width.
+/// @example max-width: 100vh;
+/// @name .k-max-w-screen
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: min-content;`. Specifies maximum element's width to be as the intrinsic width of the element.
+/// @example max-width: min-content;
+/// @name .k-max-w-min
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: max-content;`. Specifies maximum element's width to be as the preferred width of the element.
+/// @example max-width: max-content;
+/// @name .k-max-w-max
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: fit-content;`. Maximum width of the element will use the available space, but never more than max-content
+/// @example max-width: fit-content;
+/// @name .k-max-w-fit
+/// @group width
+/// @contextType css
 
 @mixin kendo-utils--sizing--width() {
 

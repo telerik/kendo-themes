@@ -1,21 +1,25 @@
 // Resize documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/resize.
 
 /// This is equivalent to `resize: both;`. The element displays a mechanism for allowing the user to resize it, which may be resized both horizontally and vertically.
+/// @example resize: both;
 /// @name .k-resize
 /// @group resize
 /// @contextType css
 
 /// This is equivalent to `resize: none;`. The element offers no user-controllable method for resizing it.
+/// @example resize: none;
 /// @name .k-resize-none
 /// @group resize
 /// @contextType css
 
 /// This is equivalent to `resize: horizontal;`. The element displays a mechanism for allowing the user to resize it in the horizontal direction.
+/// @example resize: horizontal;
 /// @name .k-resize-x
 /// @group resize
 /// @contextType css
 
 /// This is equivalent to `resize: vertical;`. The element displays a mechanism for allowing the user to resize it in the vertical direction.
+/// @example resize: vertical;
 /// @name .k-resize-y
 /// @group resize
 /// @contextType css

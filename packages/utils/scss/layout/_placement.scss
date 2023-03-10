@@ -1,26 +1,92 @@
 // Position documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/position.
 
-
-// TODO: inset docs
-
-
 /// This is equivalent to `top: 0;`.
-/// @name .k-pos-top
+/// @example top: 0;
+/// @name .k-top-0
 /// @group position
 /// @contextType css
 
 /// This is equivalent to `right: 0;`.
-/// @name .k-pos-right
+/// @example right: 0;
+/// @name .k-right-0
 /// @group position
 /// @contextType css
 
 /// This is equivalent to `bottom: 0;`.
-/// @name .k-pos-bottom
+/// @example bottom: 0;
+/// @name .k-bottom-0
 /// @group position
 /// @contextType css
 
 /// This is equivalent to `left: 0;`.
-/// @name .k-pos-left
+/// @example left: 0;
+/// @name .k-left-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `top: 0;`.
+/// @example top: 0;
+/// @name .k-pos-top-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `right: 0;`.
+/// @example right: 0;
+/// @name .k-pos-right-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `bottom: 0;`.
+/// @example bottom: 0;
+/// @name .k-pos-bottom-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `left: 0;`.
+/// @example left: 0;
+/// @name .k-pos-left-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `top: 0; left: 0;`.
+/// @example top: 0; left: 0;
+/// @name .k-top-left-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `top: 0; right: 0;`.
+/// @example top: 0; right: 0;
+/// @name .k-top-left-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `bottom: 0; left: 0;`.
+/// @example bottom: 0; left: 0;
+/// @name .k-top-left-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `bottom: 0; right: 0;`.
+/// @example bottom: 0; right: 0;
+/// @name .k-top-left-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `inset: 0;`.This is a shorthand that corresponds to the top: 0; right: 0; bottom: 0; and/or left: 0 properties. It has the same multi-value syntax of the margin shorthand.
+/// @example inset: 0;
+/// @name .k-inset-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `inset-inline: 0;`. This defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the "right: 0; left: 0", or "top: 0; bottom: 0" properties depending on the values defined for writing-mode, direction, and text-orientation.
+/// @example inset-inline: 0;
+/// @name .k-inset-x-0
+/// @group position
+/// @contextType css
+
+/// This is equivalent to `inset-inline: 0;`. The inset-block CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the "top: 0; bottom: 0", or "right: 0; left: 0" properties depending on the values defined for writing-mode, direction, and text-orientation.
+/// @example inset-inline: 0;
+/// @name .k-inset-x-0
 /// @group position
 /// @contextType css
 

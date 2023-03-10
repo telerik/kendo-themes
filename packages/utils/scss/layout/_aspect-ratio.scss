@@ -1,21 +1,25 @@
 // Aspect-ratio documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio.
 
 /// This is equivalent to `aspect-ratio: auto;`. Replaced elements with an intrinsic aspect ratio use that aspect ratio, otherwise the box has no preferred aspect ratio. Size calculations involving intrinsic aspect ratio always work with the content box dimensions.
+/// @example aspect-ratio: auto;
 /// @name .k-aspect-ratio-auto
 /// @group aspect-ratio
 /// @contextType css
 
 /// This is equivalent to `aspect-ratio: 1;`. The box's preferred aspect ratio is the specified ratio of 1. Size calculations involving preferred aspect ratio work with the dimensions of the box specified by box-sizing.
+/// @example aspect-ratio: 1;
 /// @name .k-aspect-ratio-1
 /// @group aspect-ratio
 /// @contextType css
 
 /// This is equivalent to `aspect-ratio: 1 / 1;`. The box's preferred aspect ratio is the specified ratio of 1. Size calculations involving preferred aspect ratio work with the dimensions of the box specified by box-sizing.
+/// @example aspect-ratio: 1 / 1;
 /// @name .k-aspect-ratio-square
 /// @group aspect-ratio
 /// @contextType css
 
 /// This is equivalent to `aspect-ratio: 16 / 9;`. The box's preferred aspect ratio is the specified ratio of 16 : 9. Size calculations involving preferred aspect ratio work with the dimensions of the box specified by box-sizing.
+/// @example aspect-ratio: 16 / 9;
 /// @name .k-aspect-ratio-video
 /// @group aspect-ratio
 /// @contextType css

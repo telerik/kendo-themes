@@ -1,14 +1,17 @@
 /// This is equivalent to `transform: scale( 0, 0 );`. The element is shrunk and no longer visible.
+/// @example transform: scale( 0, 0 );
 /// @name .k-scale-0
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: scale( 1, 1 );`. The element has its default scale.
+/// @example transform: scale( 1, 1 );
 /// @name .k-scale-1
 /// @group transform
 /// @contextType css
 
 /// This is equivalent to `transform: scale( 2, 2 );`. The element is scaling two times in both directions.
+/// @example transform: scale( 2, 2 );
 /// @name .k-scale-2
 /// @group transform
 /// @contextType css

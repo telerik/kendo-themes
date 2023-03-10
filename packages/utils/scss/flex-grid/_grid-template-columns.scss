@@ -1,4 +1,22 @@
-// TODO: docs
+// Grid-template-columns documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns.
+
+/// This is equivalent to `grid-template-columns: repeat(1, minmax(0, 1fr));`. Sets one column expanded maximum to the entire width.
+/// @example grid-template-columns: repeat(1, minmax(0, 1fr));
+/// @name .k-grid-cols-1
+/// @group grid-template-columns
+/// @contextType css
+
+/// This is equivalent to `grid-template-columns: repeat(2, minmax(0, 1fr));`. Sets two equal columns expanded maximum to the entire width.
+/// @example grid-template-columns: repeat(2, minmax(0, 1fr));
+/// @name .k-grid-cols-2
+/// @group grid-template-columns
+/// @contextType css
+
+/// This is equivalent to `grid-template-columns: none;`. ndicates that there is no explicit grid. Any columns will be implicitly generated and their size will be determined by the grid-auto-columns property.
+/// @example grid-template-columns: none;
+/// @name .k-grid-cols-none
+/// @group grid-template-columns
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--grid-template-columns() {
 

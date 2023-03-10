@@ -1,9 +1,43 @@
-// TODO: docs
+/// This is equivalent to `stroke: none;`. SVG shape stroke color will not be overriden.
+/// @example stroke: none;
+/// @name .k-stroke-none
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: inherit;`. Sets inherited stroke color of a SVG shape.
+/// @example stroke: inherit;
+/// @name .k-stroke-inherit
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: currentColor;`. Sets element's color as stroke color of a SVG shape.
+/// @example stroke: currentColor;
+/// @name .k-stroke-currentColor
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: transparent;`. Sets transparent stroke color of a SVG shape.
+/// @example stroke: transparent;
+/// @name .k-stroke-transparent
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: black;`. Sets black stroke color of a SVG shape.
+/// @example stroke: black;
+/// @name .k-stroke-black
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: white;`. Sets white stroke color of a SVG shape.
+/// @example stroke: white;
+/// @name .k-stroke-white
+/// @group stroke
+/// @contextType css
 
 @mixin kendo-utils--svg--stroke() {
 
     // stroke utility classes
-    $kendo-utils-stroke: k-map-get( $kendo-utils, "fill-stroke" ) !default;
+    $kendo-utils-stroke: k-map-get( $kendo-utils, "stroke-stroke" ) !default;
     @include generate-utils( stroke, stroke, $kendo-utils-stroke );
 
 }

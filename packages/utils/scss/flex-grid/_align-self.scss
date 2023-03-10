@@ -1,4 +1,82 @@
-// TODO: docs
+// Align-self documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/align-self.
+
+/// This is equivalent to `align-self: auto;`. Computes to the parent's align-items value.
+/// @example align-self: auto;
+/// @name .k-align-self-auto
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: normal;`. The effect of this keyword is dependent of the layout mode we are in: 1) In absolutely-positioned layouts, the keyword behaves like start on replaced absolutely-positioned boxes, and as stretch on all other absolutely-positioned boxes. 2) In static position of absolutely-positioned layouts, the keyword behaves as stretch. 3) For flex items, the keyword behaves as stretch. 4) For grid items, this keyword leads to a behavior similar to the one of stretch, except for boxes with an aspect ratio or an intrinsic sizes where it behaves like start. 5) The property doesn't apply to block-level boxes, and to table cells.
+/// @example align-self: normal;
+/// @name .k-align-self-normal
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: stretch;`. If the combined size of the items along the cross axis is less than the size of the alignment container and the item is auto-sized, its size is increased equally (not proportionally), while still respecting the constraints imposed by max-height/max-width (or equivalent functionality), so that the combined size of all auto-sized items exactly fills the alignment container along the cross axis.
+/// @example align-self: stretch;
+/// @name .k-align-self-stretch
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: center;`. The flex item's margin box is centered within the line on the cross-axis. If the cross-size of the item is larger than the flex container, it will overflow equally in both directions.
+/// @example align-self: center;
+/// @name .k-align-self-center
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: start;`. The cross-start margin edge of the item is flushed with the cross-start edge of the line.
+/// @example align-self: start;
+/// @name .k-align-self-start
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: end;`. The cross-end margin edge of the item is flushed with the cross-end edge of the line.
+/// @example align-self: end;
+/// @name .k-align-self-end
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: flex-start;`. The cross-start margin edge of the item is flushed with the cross-start edge of the line.
+/// @example align-self: flex-start;
+/// @name .k-align-self-flex-start
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: flex-end;`. The cross-end margin edge of the flex item is flushed with the cross-end edge of the line.
+/// @example align-self: flex-end;
+/// @name .k-align-self-flex-end
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: baseline;`. Specifies participation in baseline alignment: aligns the alignment baseline of the box's baseline set with the corresponding baseline in the shared baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+/// @example align-self: baseline;
+/// @name .k-align-self-baseline
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: first baseline;`. Specifies participation in first baseline alignment: aligns the alignment baseline of the box's first baseline set with the corresponding baseline in the shared first baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+/// @example align-self: first baseline;
+/// @name .k-align-self-first-baseline
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: last baseline;`. Specifies participation in last baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared last baseline set of all the boxes in its baseline-sharing group. The fallback alignment for first baseline is start, the one for last baseline is end.
+/// @example align-self: last baseline;
+/// @name .k-align-self-last-baseline
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: self-start;`. Aligns the items to be flush with the edge of the alignment container corresponding to the item's start side in the cross axis.
+/// @example align-self: self-start;
+/// @name .k-align-self-self-start
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: self-end;`. Aligns the items to be flush with the edge of the alignment container corresponding to the item's end side in the cross axis.
+/// @example align-self: self-end;
+/// @name .k-align-self-self-end
+/// @group align-self
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--align-self() {
 

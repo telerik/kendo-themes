@@ -1,9 +1,11 @@
-/// This is equivalent to `flex-basis: auto`. It specifies the initial size of the flex item, before any available space is distributed according to the flex factors. It sizes the element according to its size property.
+/// This is equivalent to `flex-basis: auto;`. It specifies the initial size of the flex item, before any available space is distributed according to the flex factors. It sizes the element according to its size property.
+/// @example flex-basis: auto;
 /// @name .k-flex-basis-auto
 /// @group flex-basis
 /// @contextType css
 
-/// This is equivalent to `flex-basis: 0`. It specifies the initial size of the flex item, before any available space is distributed according to the flex factors. It disregards the element' size property.
+/// This is equivalent to `flex-basis: 0;`. It specifies the initial size of the flex item, before any available space is distributed according to the flex factors. It disregards the element' size property.
+/// @example flex-basis: 0;
 /// @name .k-flex-basis-0
 /// @group flex-basis
 /// @contextType css

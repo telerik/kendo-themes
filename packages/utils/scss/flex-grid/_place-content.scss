@@ -1,4 +1,81 @@
-// TODO: docs
+// Place-content documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/place-content.
+
+/// This is equivalent to `place-content: normal;`. Defines the default placing for all items of the box, giving them all a default way of justifying each box along the appropriate axis. The effect of this keyword is dependent of the layout mode we are in: 1) In block-level layouts, the keyword is a synonym of start. 2) In absolutely-positioned layouts, the keyword behaved like start on replaced absolutely-positioned boxes, and as stretch on all other absolutely-positioned boxes. 3) In table cell layouts, this keyword has no meaning as this property is ignored. 4) In flexbox layouts, this keyword has no meaning as this property is ignored. 5) In grid layouts, this keyword leads to a behavior similar to the one of stretch, except for boxes with an aspect ratio or an intrinsic sizes where it behaves like start.
+/// @example place-content: normal;
+/// @name .k-place-content-normal
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: stretch;`. If the combined size of the items is less than the size of the alignment container, any auto-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by max-height/max-width (or equivalent functionality), so that the combined size exactly fills the alignment container.
+/// @example place-content: stretch;
+/// @name .k-place-content-stretch
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: center;`. The items are packed flush to each other toward the center of the alignment container.
+/// @example place-content: center;
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: start;`. The item is packed flush to each other toward the start edge of the alignment container in the appropriate axis.
+/// @example place-content: start;
+/// @name .k-place-content-start
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: end;`. The item is packed flush to each other toward the end edge of the alignment container in the appropriate axis.
+/// @example place-content: end;
+/// @name .k-place-content-end
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: flex-start;`. For items that are not children of a flex container, this value is treated like start.
+/// @example place-content: flex-start;
+/// @name .k-place-content-selft-start
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: flex-end;`. For items that are not children of a flex container, this value is treated like end.
+/// @example place-content: flex-end;
+/// @name .k-place-content-self-end
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: self-start;`. The item is packed flush to the edge of the alignment container of the start side of the item, in the appropriate axis.
+/// @example place-content: self-start;
+/// @name .k-place-content-selft-start
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: self-end;`. The item is packed flush to the edge of the alignment container of the end side of the item, in the appropriate axis.
+/// @example place-content: self-end;
+/// @name .k-place-content-self-end
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: baseline;`. Specifies participation in baseline alignment: aligns the alignment baseline of the box's baseline set with the corresponding baseline in the shared baseline set of all the boxes in its baseline-sharing group.
+/// @example place-content: baseline;
+/// @name .k-place-content-baseline
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: space-between;`. The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The first item is flush with the main-start edge, and the last item is flush with the main-end edge.
+/// @example place-content: space-between;
+/// @name .k-place-content-between
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: space-around;`. The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The empty space before the first and after the last item equals half of the space between each pair of adjacent items.
+/// @example place-content: space-around;
+/// @name .k-place-content-around
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: space-evenly;`. The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same.
+/// @example place-content: space-evenly;
+/// @name .k-place-content-evenly
+/// @group place-content
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--place-content() {
 

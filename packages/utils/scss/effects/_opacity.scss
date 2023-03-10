@@ -1,4 +1,16 @@
-// TODO: docs
+// Opacity documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/opacity.
+
+/// This is equivalent to `opacity: 0;`. Sets zero degree of the opacity of the object. The object is transparent.
+/// @example opacity: 0;
+/// @name .k-opacity-0
+/// @group opacity
+/// @contextType css
+
+/// This is equivalent to `opacity: 1;`. Sets one degree of the opacity of the object. This is the max value of the opacity and the object is non-transparent.
+/// @example opacity: 1;
+/// @name .k-opacity-1
+/// @group opacity
+/// @contextType css
 
 @mixin kendo-utils--effects--opacity() {
 
