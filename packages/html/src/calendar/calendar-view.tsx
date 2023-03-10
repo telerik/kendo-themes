@@ -1,65 +1,64 @@
-import * as React from 'react';
-import { classNames, kendoThemeMaps } from '../utils';
+import { classNames } from '../utils-new';
 import { CalendarTable } from '../calendar';
 
-export interface CalendarViewProps {
-    className?: string;
+const className = `k-calendar-view`;
+
+export type KendoCalendarViewProps = {
     orientation?: 'vertical' | 'horizontal',
     calendarView?: 'month' | 'year' | 'decade' | 'century';
-    viewsCount?: string;
+    viewsCount?: number;
     showWeek?: boolean;
     showOtherMonth?: boolean;
     showCalendarCaption?: boolean;
     selectedRange?: boolean;
-}
+};
 
-export class CalendarView extends React.Component<CalendarViewProps> {
+const defaultProps = {
+    viewsCount: 1,
+    orientation: 'horizontal',
+    calendarView: 'month',
+} as const;
 
-    static defaultProps = {
-        viewsCount: '1',
-        orientation: 'horizontal',
-        calendarView: 'month',
-    };
+export const CalendarView = (
+    props: KendoCalendarViewProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        orientation = defaultProps.orientation,
+        calendarView = defaultProps.calendarView,
+        viewsCount = defaultProps.viewsCount,
+        showWeek,
+        showOtherMonth,
+        showCalendarCaption,
+        selectedRange,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            className,
-            orientation,
-            calendarView,
-            viewsCount,
-            showWeek,
-            showOtherMonth,
-            showCalendarCaption,
-            selectedRange,
-            ...htmlAttributes
-        } = this.props;
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                className,
+                `k-calendar-${calendarView}view`,
+                'k-align-items-start',
+                'k-justify-content-center',
+                {
+                    'k-hstack': orientation === 'horizontal',
+                    'k-vstack': orientation === 'vertical',
+                }
+            )}>
+            {[ ...Array(viewsCount) ].map((_e, i) =>
+                <CalendarTable key={i}
+                    calendarView={calendarView}
+                    showWeek={showWeek}
+                    showOtherMonth={showOtherMonth}
+                    showCalendarCaption={showCalendarCaption}
+                    selectedRange={selectedRange}
+                />
+            )}
+        </div>
+    );
+};
 
-        const views = Number(viewsCount);
-
-        return (
-            <div
-                {...htmlAttributes}
-                className={classNames(
-                    className,
-                    'k-calendar-view',
-                    `k-calendar-${calendarView}view`,
-                    'k-align-items-start',
-                    'k-justify-content-center',
-                    {
-                        [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
-                    }
-                )}>
-
-                { [ ...Array(views) ].map((_e, i) =>
-                    <CalendarTable key={i}
-                        calendarView={calendarView}
-                        showWeek={showWeek}
-                        showOtherMonth={showOtherMonth}
-                        showCalendarCaption={showCalendarCaption}
-                        selectedRange={selectedRange}
-                    />
-                )}
-            </div>
-        );
-    }
-}
+export default CalendarView;

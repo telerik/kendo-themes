@@ -1,29 +1,10 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames } from '../utils-new';
 import { Button } from '../button';
 
+const className = `k-calendar-footer`;
 
-export interface CalendarFooterProps {
-    className?: string;
-}
-
-export class CalendarFooter extends React.Component<CalendarFooterProps> {
-
-    render() {
-        const {
-            className,
-            ...htmlAttributes
-        } = this.props;
-
-        return (
-            <div
-                {...htmlAttributes}
-                className={classNames(
-                    className,
-                    'k-calendar-footer'
-                )}>
-                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Monday, October 29, 2021</Button>
-            </div>
-        );
-    }
-}
+export const CalendarFooter = (props: React.HTMLAttributes<HTMLDivElement>) => (
+    <div {...props} className={classNames(props.className, className)}>
+        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Monday, October 29, 2021</Button>
+    </div>
+);
