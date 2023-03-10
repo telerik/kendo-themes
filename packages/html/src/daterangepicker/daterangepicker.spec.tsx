@@ -2,6 +2,8 @@ import { classNames, stateClassNames, States, Size, Roundness, FillMode } from '
 import { DateInput } from '../dateinput';
 import { FloatingLabel } from '../floating-label';
 import { Button } from '../button';
+import { MultiViewCalendar } from '../multiviewcalendar';
+import { Popup } from '../popup';
 
 export const DATERANGEPICKER_CLASSNAME = `k-daterangepicker`;
 
@@ -23,6 +25,7 @@ export type KendoDateRangePickerOptions = {
 
 export type KendoDateRangePickerProps = KendoDateRangePickerOptions & {
     swapButton?: boolean;
+    opened?: boolean;
 };
 
 export type KendoDateRangePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -38,45 +41,53 @@ export const DateRangePicker = (
         fillMode,
         disabled,
         swapButton,
+        opened,
         ...other
     } = props;
 
 
     return (
-        <span
-            {...other}
-            className={classNames(
-                props.className,
-                DATERANGEPICKER_CLASSNAME,
-                stateClassNames(DATERANGEPICKER_CLASSNAME, { disabled }),
-            )}
-        >
-            <FloatingLabel label="Start">
-                <DateInput
-                    showSpinButton={false}
-                    size={size}
-                    rounded={rounded}
-                    fillMode={fillMode}
-                />
-            </FloatingLabel>
-            {swapButton && (
-                <Button
-                    rounded={rounded}
-                    size={size}
-                    fillMode="flat"
-                    icon="arrows-swap"
-                    iconClassName="k-rotate-90"
-                />
-            )}
-            <FloatingLabel label="End">
-                <DateInput
-                    showSpinButton={false}
-                    size={size}
-                    rounded={rounded}
-                    fillMode={fillMode}
-                />
-            </FloatingLabel>
-        </span>
+        <>
+            <span
+                {...other}
+                className={classNames(
+                    props.className,
+                    DATERANGEPICKER_CLASSNAME,
+                    stateClassNames(DATERANGEPICKER_CLASSNAME, { disabled }),
+                )}
+            >
+                <FloatingLabel label="Start">
+                    <DateInput
+                        showSpinButton={false}
+                        size={size}
+                        rounded={rounded}
+                        fillMode={fillMode}
+                    />
+                </FloatingLabel>
+                {swapButton && (
+                    <Button
+                        rounded={rounded}
+                        size={size}
+                        fillMode="flat"
+                        icon="arrows-swap"
+                        iconClassName="k-rotate-90"
+                    />
+                )}
+                <FloatingLabel label="End">
+                    <DateInput
+                        showSpinButton={false}
+                        size={size}
+                        rounded={rounded}
+                        fillMode={fillMode}
+                    />
+                </FloatingLabel>
+            </span>
+            { opened &&
+                <Popup>
+                    <MultiViewCalendar />
+                </Popup>
+            }
+        </>
     );
 };
 

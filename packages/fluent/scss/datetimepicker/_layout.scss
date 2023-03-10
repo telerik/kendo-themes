@@ -49,12 +49,12 @@
         transform: translateX(-100%);
     }
 
-    k-datetimepicker {
+    .k-time-tab .k-datetime-selector {
+        &.k-rtl,
         &[dir="rtl"],
-        .k-rtl & {
-            .k-time-tab .k-datetime-selector {
-                transform: translateX(100%);
-            }
+        .k-rtl &,
+        [dir="rtl"] & {
+            transform: translateX(100%);
         }
     }
 }

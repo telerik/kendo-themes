@@ -11,6 +11,10 @@ const styles = `
     #test-area {
         max-width: 660px;
     }
+
+    .k-popup {
+        width: max-content;
+    }
 `;
 
 root.render(
@@ -75,6 +79,13 @@ root.render(
             </div>
             <div dir="rtl">
                 <DatePicker value="Loading..." loading />
+            </div>
+
+            <div>
+                <DatePicker value="Opened" opened />
+            </div>
+            <div dir="rtl">
+                <DatePicker value="Opened" opened />
             </div>
 
         </div>
