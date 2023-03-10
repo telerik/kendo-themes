@@ -1,9 +1,14 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames, stateClassNames, States } from '../utils-new';
 
+const states = [
+    States.hover,
+    States.focus,
+    States.active,
+    States.selected,
+    States.disabled
+];
 
-export interface CalendarCellProps {
-    className?: string;
+export type KendoCalendarCellProps = {
     text?: string;
     headerCell?: boolean;
     today?: boolean;
@@ -11,84 +16,84 @@ export interface CalendarCellProps {
     otherMonth?: boolean;
     showOtherMonth?: boolean;
     weekCell?: boolean;
-    hover?: boolean;
-    focus?: boolean;
-    active?: boolean;
-    selected?: boolean;
-    disabled?: boolean;
     rangeStart?: boolean;
     rangeMid?: boolean;
     rangeEnd?: boolean;
-}
+};
 
-export class CalendarCell extends React.Component<CalendarCellProps> {
+export type KendoCalendarCellState = { [K in (typeof states)[number]]?: boolean };
 
-    render() {
-        const {
-            className,
-            text,
-            headerCell,
-            today,
-            weekend,
-            otherMonth,
-            showOtherMonth,
-            weekCell,
+export const CalendarCell = (
+    props: KendoCalendarCellProps &
+        KendoCalendarCellState &
+        React.HTMLAttributes<HTMLElement>
+) => {
+    const {
+        text,
+        headerCell,
+        today,
+        weekend,
+        otherMonth,
+        showOtherMonth,
+        weekCell,
+        rangeStart,
+        rangeMid,
+        rangeEnd,
+        hover,
+        focus,
+        active,
+        selected,
+        disabled,
+        ...other
+    } = props;
+
+    const cellType = headerCell ? 'th' : 'td';
+
+    const CALENDARCELL_CLASSNAME = `k-calendar-${cellType}`;
+
+    const calendarCellClasses = [
+        props.className,
+        CALENDARCELL_CLASSNAME,
+        stateClassNames(CALENDARCELL_CLASSNAME, {
             hover,
             focus,
             active,
             selected,
             disabled,
-            rangeStart,
-            rangeMid,
-            rangeEnd,
-            ...htmlAttributes
-        } = this.props;
-
-        const cellType = headerCell ? 'th' : 'td';
-
-        const calendarCellClasses = [
-            className,
-            `k-calendar-${cellType}`,
-            {
-                'k-hover': hover,
-                'k-focus': focus,
-                'k-active': active,
-                'k-selected': selected,
-                'k-disabled': disabled,
-                'k-today': today,
-                'k-weekend': weekend,
-                'k-other-month': otherMonth,
-                'k-alt': weekCell,
-                'k-range-start': rangeStart,
-                'k-range-mid': rangeMid,
-                'k-range-end': rangeEnd
-            }
-        ];
-
-        if (headerCell) {
-            return (
-                <th {...htmlAttributes} className={classNames(calendarCellClasses)}>
-                    {text}
-                </th>
-            );
+        }),
+        {
+            'k-today': today,
+            'k-weekend': weekend,
+            'k-other-month': otherMonth,
+            'k-alt': weekCell,
+            'k-range-start': rangeStart,
+            'k-range-mid': rangeMid,
+            'k-range-end': rangeEnd
         }
+    ];
 
-        if (weekCell) {
-            return (
-                <td {...htmlAttributes} className={classNames(calendarCellClasses)}>
-                    {text}
-                </td>
-            );
-        }
-
+    if (headerCell) {
         return (
-            <td {...htmlAttributes} className={classNames(calendarCellClasses)}>
-                {otherMonth && !showOtherMonth
-                    ? ''
-                    : <span className="k-link">{text}</span>
-                }
+            <th {...other} className={classNames(calendarCellClasses)}>
+                {text}
+            </th>
+        );
+    }
+
+    if (weekCell) {
+        return (
+            <td {...other} className={classNames(calendarCellClasses)}>
+                {text}
             </td>
         );
-
     }
-}
+
+    return (
+        <td {...other} className={classNames(calendarCellClasses)}>
+            {otherMonth && !showOtherMonth
+                ? ''
+                : <span className="k-link">{text}</span>
+            }
+        </td>
+    );
+};
