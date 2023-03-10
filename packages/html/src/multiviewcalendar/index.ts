@@ -1,1 +1,1 @@
-export * from './multiviewcalendar';
+export * from './multiviewcalendar.spec';
