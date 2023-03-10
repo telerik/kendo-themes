@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Table, TableBody, TableFooter, TableGroupRow, TableGroupStickyHeader, TableHeader, TableRow, TableTable, TableTd, TableTh, TableThead } from '../../table';
+import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../../table';
 import { Popup } from '..';
 
 const root = ReactDOM.createRoot(
@@ -26,7 +26,7 @@ root.render(
                 <div className="k-animation-container k-animation-container-shown">
                     <div className="k-child-animation-container">
                         <Popup className="k-dropdowngrid-popup">
-                            <Table size="medium">
+                            <DataTable size="medium">
                                 <TableHeader>
                                     <colgroup>
                                         <col style={{ width: '50px' }} />
@@ -34,57 +34,57 @@ root.render(
                                         <col />
                                     </colgroup>
                                     <TableThead>
-                                        <TableRow table>
-                                            <TableTh text="ID" table></TableTh>
-                                            <TableTh text="Name" table></TableTh>
-                                            <TableTh text="Job Title" table></TableTh>
+                                        <TableRow>
+                                            <TableTh text="ID"></TableTh>
+                                            <TableTh text="Name"></TableTh>
+                                            <TableTh text="Job Title"></TableTh>
                                         </TableRow>
                                     </TableThead>
                                 </TableHeader>
                                 <TableGroupStickyHeader>
-                                    <TableTh text="Initial group"></TableTh>
+                                    <TableListTh text="Initial group"></TableListTh>
                                 </TableGroupStickyHeader>
                                 <TableBody>
-                                    <TableTable>
-                                        <TableRow>
-                                            <TableTd text="1" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 1.2" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 1.3"></TableTd>
-                                        </TableRow>
-                                        <TableRow alt>
-                                            <TableTd text="2" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 2.3"></TableTd>
-                                        </TableRow>
-                                        <TableRow>
-                                            <TableTd text="3" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 3.2" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 3.3"></TableTd>
-                                        </TableRow>
-                                        <TableGroupRow>
-                                            <TableTh text="Group"></TableTh>
-                                        </TableGroupRow>
-                                        <TableRow>
-                                            <TableTd text="4" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 4.2" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 4.3"></TableTd>
-                                        </TableRow>
-                                        <TableRow alt>
-                                            <TableTd text="5" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 5.2 (alt)" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 5.3"></TableTd>
-                                        </TableRow>
-                                        <TableRow>
-                                            <TableTd text="6" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 6.2" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 6.3"></TableTd>
-                                        </TableRow>
-                                    </TableTable>
+                                    <TableList>
+                                        <TableListRow>
+                                            <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 1.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListRow alt>
+                                            <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 2.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListRow>
+                                            <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 3.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListGroupRow>
+                                            <TableListTh text="Group"></TableListTh>
+                                        </TableListGroupRow>
+                                        <TableListRow>
+                                            <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 4.2" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 4.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListRow alt>
+                                            <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 5.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 5.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListRow>
+                                            <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 6.2" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 6.3"></TableListTd>
+                                        </TableListRow>
+                                    </TableList>
                                 </TableBody>
                                 <TableFooter>
-                                    <TableTd text="30 records in total"></TableTd>
+                                    <TableListTd text="30 records in total"></TableListTd>
                                 </TableFooter>
-                            </Table>
+                            </DataTable>
                         </Popup>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ root.render(
                 <div className="k-animation-container k-animation-container-shown">
                     <div className="k-child-animation-container">
                         <Popup className="k-dropdowngrid-popup">
-                            <Table size="medium">
+                            <DataTable size="medium">
                                 <TableHeader>
                                     <colgroup>
                                         <col style={{ width: '50px' }} />
@@ -102,57 +102,57 @@ root.render(
                                         <col />
                                     </colgroup>
                                     <TableThead>
-                                        <TableRow table>
-                                            <TableTh text="ID" table></TableTh>
-                                            <TableTh text="Name" table></TableTh>
-                                            <TableTh text="Job Title" table></TableTh>
+                                        <TableRow>
+                                            <TableTh text="ID"></TableTh>
+                                            <TableTh text="Name"></TableTh>
+                                            <TableTh text="Job Title"></TableTh>
                                         </TableRow>
                                     </TableThead>
                                 </TableHeader>
                                 <TableGroupStickyHeader>
-                                    <TableTh text="Initial group"></TableTh>
+                                    <TableListTh text="Initial group"></TableListTh>
                                 </TableGroupStickyHeader>
                                 <TableBody>
-                                    <TableTable>
-                                        <TableRow>
-                                            <TableTd text="1" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 1.2" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 1.3"></TableTd>
-                                        </TableRow>
-                                        <TableRow alt>
-                                            <TableTd text="2" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 2.3"></TableTd>
-                                        </TableRow>
-                                        <TableRow>
-                                            <TableTd text="3" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 3.2" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 3.3"></TableTd>
-                                        </TableRow>
-                                        <TableGroupRow>
-                                            <TableTh text="Group"></TableTh>
-                                        </TableGroupRow>
-                                        <TableRow>
-                                            <TableTd text="4" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 4.2" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 4.3"></TableTd>
-                                        </TableRow>
-                                        <TableRow alt>
-                                            <TableTd text="5" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 5.2 (alt)" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 5.3"></TableTd>
-                                        </TableRow>
-                                        <TableRow>
-                                            <TableTd text="6" style={{ width: '50px' }}></TableTd>
-                                            <TableTd text="Data 6.2" style={{ width: '160px' }}></TableTd>
-                                            <TableTd text="Data 6.3"></TableTd>
-                                        </TableRow>
-                                    </TableTable>
+                                    <TableList>
+                                        <TableListRow>
+                                            <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 1.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListRow alt>
+                                            <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 2.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListRow>
+                                            <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 3.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListGroupRow>
+                                            <TableListTh text="Group"></TableListTh>
+                                        </TableListGroupRow>
+                                        <TableListRow>
+                                            <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 4.2" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 4.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListRow alt>
+                                            <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 5.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 5.3"></TableListTd>
+                                        </TableListRow>
+                                        <TableListRow>
+                                            <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
+                                            <TableListTd text="Data 6.2" style={{ width: '160px' }}></TableListTd>
+                                            <TableListTd text="Data 6.3"></TableListTd>
+                                        </TableListRow>
+                                    </TableList>
                                 </TableBody>
                                 <TableFooter>
-                                    <TableTd text="30 records in total"></TableTd>
+                                    <TableListTd text="30 records in total"></TableListTd>
                                 </TableFooter>
-                            </Table>
+                            </DataTable>
                         </Popup>
                     </div>
                 </div>
