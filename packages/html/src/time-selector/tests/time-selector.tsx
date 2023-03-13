@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { TimeSelector } from '../time-selector';
+import { TimeSelector } from '../time-selector.spec';
 import { Button } from '../../button';
 import { ActionButtons } from '../../action-buttons';
 import { TimeSelectorHeader } from '../time-selector-header';
