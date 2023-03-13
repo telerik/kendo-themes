@@ -1,33 +1,16 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames } from '../utils-new';
 
+const className = `k-menu-item-content`;
 
-export interface MenuItemContentProps {
-    className?: string;
-    children?: React.ReactNode;
-}
+export const MenuItemContent = (props: React.HTMLAttributes<HTMLSpanElement>) => {
 
-export class MenuItemContent extends React.Component<MenuItemContentProps> {
-
-
-    render() {
-        const {
-            className,
-            children,
-        } = this.props;
-
-        if (!children) {
-            return <></>;
-        }
-
-        return (
-            <span
-                className={classNames(
-                    className,
-                    'k-menu-item-content',
-                )}>
-                {children}
-            </span>
-        );
+    if (!props.children) {
+        return <></>;
     }
-}
+
+    return (
+        <span className={classNames(className, props.className)}>
+            {props.children}
+        </span>
+    );
+};
