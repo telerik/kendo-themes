@@ -20,6 +20,10 @@ export const optionClassNames = (componentClassName: string, props: any) => {
             props.fillMode && props.themeColor,
         },
         {
+            [`${componentClassName}-${props.themeColor}`]:
+            props.themeColor && props.fillMode === undefined,
+        },
+        {
             'k-rounded-sm': props.rounded === "small",
             'k-rounded-md': props.rounded === "medium",
             'k-rounded-lg': props.rounded === "large",
