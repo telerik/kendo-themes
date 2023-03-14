@@ -1,5 +1,5 @@
 import React from 'react';
-import { LoaderContainer } from '../loader-container';
+import { LoaderContainer } from '../../loader';
 import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(

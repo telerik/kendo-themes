@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { LoaderContainer } from '../loader-container';
+import { LoaderContainer } from '../../loader';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
