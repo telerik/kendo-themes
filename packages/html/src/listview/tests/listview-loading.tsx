@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ListView } from '../listview';
-import { ListViewItem } from '../listview-item';
+import { ListView, ListViewItem } from '../../listview';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement

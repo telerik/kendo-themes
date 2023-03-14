@@ -1,2 +1,2 @@
-export * from './listview';
-export * from './listview-item';
+export * from './listview.spec';
+export * from './listview-item.spec';
