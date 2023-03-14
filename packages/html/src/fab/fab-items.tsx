@@ -1,32 +1,31 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface FloatingActionButtonItemsProps {
-    className?: string;
+const className = `k-fab-items`;
+
+export type KendoFloatingActionButtonItemsProps = {
     position?: null | 'top' | 'bottom';
-    children?: React.ReactNode;
-}
+};
 
-export class FloatingActionButtonItems extends React.Component<FloatingActionButtonItemsProps> {
+export const FloatingActionButtonItems = (
+    props: KendoFloatingActionButtonItemsProps &
+        React.HTMLAttributes<HTMLUListElement>
+) => {
+    const {
+        position,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            className,
-            position,
-            children
-        } = this.props;
-
-        return (
-            <ul className={classNames(
+    return (
+        <ul
+            {...other}
+            className={classNames(
+                props.className,
                 className,
-                'k-fab-items',
                 {
                     [`k-fab-items-${position}`]: position
                 }
             )}>
-                {children}
-            </ul>
-        );
-
-    }
-}
+            {props.children}
+        </ul>
+    );
+};
