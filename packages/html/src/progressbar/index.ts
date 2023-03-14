@@ -1,2 +1,2 @@
-export * from './progressbar';
-export * from './chunk-progressbar';
+export * from './progressbar.spec';
+export * from './chunk-progressbar.spec';
