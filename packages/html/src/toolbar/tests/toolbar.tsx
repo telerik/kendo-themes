@@ -5,10 +5,8 @@ import { SplitButton } from '../../split-button';
 import { MenuButton } from '../../menu-button';
 import { ColorPicker } from '../../colorpicker';
 import { Switch } from '../../switch';
-import { Toolbar } from '../toolbar';
 import { ButtonGroup } from '../../button-group';
-import { ToolbarSeparator } from '../toolbar-separator';
-import { ToolbarItem } from '../toolbar-item';
+import { Toolbar, ToolbarItem, ToolbarSeparator } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement

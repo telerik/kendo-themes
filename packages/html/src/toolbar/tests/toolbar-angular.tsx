@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { SplitButton } from '../../split-button';
 import { MenuButton } from '../../menu-button';
-import { Toolbar } from '../toolbar';
+import { ToolbarAngular, ToolbarSeparator } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
-import { ToolbarSeparator } from '../toolbar-separator';
 
 
 const root = ReactDOM.createRoot(
@@ -18,34 +17,26 @@ root.render(
 
             <span className="k-colspan-all k-col-span-full">Angular specific rendering and spacing</span>
             <section className="k-colspan-all k-col-span-full">
-                <Toolbar>
-                    <div className="k-toolbar-renderer">
-                        <Button>Button</Button>
-                    </div>
+                <ToolbarAngular>
+                    <Button>Button</Button>
                     <div className="k-toolbar-renderer">
                         <ToolbarSeparator></ToolbarSeparator>
                     </div>
-                    <div className="k-toolbar-renderer">
-                        <SplitButton>Split button</SplitButton>
-                    </div>
+                    <SplitButton>Split button</SplitButton>
                     <div className="k-toolbar-renderer">
                         <ToolbarSeparator></ToolbarSeparator>
                     </div>
-                    <div className="k-toolbar-renderer">
-                        <MenuButton text="Menu button"></MenuButton>
-                    </div>
+                    <MenuButton text="Menu button"></MenuButton>
                     <div className="k-toolbar-renderer">
                         <ToolbarSeparator></ToolbarSeparator>
                     </div>
-                    <div className="k-toolbar-renderer">
-                        <ButtonGroup>
-                            <Button icon="align-left"></Button>
-                            <Button icon="align-center"></Button>
-                            <Button icon="align-right"></Button>
-                            <Button icon="align-justify"></Button>
-                        </ButtonGroup>
-                    </div>
-                </Toolbar>
+                    <ButtonGroup>
+                        <Button icon="align-left"></Button>
+                        <Button icon="align-center"></Button>
+                        <Button icon="align-right"></Button>
+                        <Button icon="align-justify"></Button>
+                    </ButtonGroup>
+                </ToolbarAngular>
             </section>
 
 
@@ -53,46 +44,30 @@ root.render(
             <span>rtl</span>
 
             <section>
-                <Toolbar>
-                    <div className="k-toolbar-renderer">
-                        <Button>Button</Button>
-                    </div>
-                    <div className="k-toolbar-renderer">
-                        <SplitButton>Split button</SplitButton>
-                    </div>
-                    <div className="k-toolbar-renderer">
-                        <MenuButton text="Menu button"></MenuButton>
-                    </div>
-                    <div className="k-toolbar-renderer">
-                        <ButtonGroup>
-                            <Button icon="align-left">Left</Button>
-                            <Button icon="align-center">Center</Button>
-                            <Button icon="align-right">Right</Button>
-                            <Button icon="align-justify">Justify</Button>
-                        </ButtonGroup>
-                    </div>
-                </Toolbar>
+                <ToolbarAngular>
+                    <Button>Button</Button>
+                    <SplitButton>Split button</SplitButton>
+                    <MenuButton text="Menu button"></MenuButton>
+                    <ButtonGroup>
+                        <Button icon="align-left">Left</Button>
+                        <Button icon="align-center">Center</Button>
+                        <Button icon="align-right">Right</Button>
+                        <Button icon="align-justify">Justify</Button>
+                    </ButtonGroup>
+                </ToolbarAngular>
             </section>
             <section dir="rtl">
-                <Toolbar>
-                    <div className="k-toolbar-renderer">
-                        <Button>Button</Button>
-                    </div>
-                    <div className="k-toolbar-renderer">
-                        <SplitButton>Split button</SplitButton>
-                    </div>
-                    <div className="k-toolbar-renderer">
-                        <MenuButton text="Menu button"></MenuButton>
-                    </div>
-                    <div className="k-toolbar-renderer">
-                        <ButtonGroup>
-                            <Button icon="align-left">Left</Button>
-                            <Button icon="align-center">Center</Button>
-                            <Button icon="align-right">Right</Button>
-                            <Button icon="align-justify">Justify</Button>
-                        </ButtonGroup>
-                    </div>
-                </Toolbar>
+                <ToolbarAngular>
+                    <Button>Button</Button>
+                    <SplitButton>Split button</SplitButton>
+                    <MenuButton text="Menu button"></MenuButton>
+                    <ButtonGroup>
+                        <Button icon="align-left">Left</Button>
+                        <Button icon="align-center">Center</Button>
+                        <Button icon="align-right">Right</Button>
+                        <Button icon="align-justify">Justify</Button>
+                    </ButtonGroup>
+                </ToolbarAngular>
             </section>
 
         </div>
