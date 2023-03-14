@@ -1,2 +1,2 @@
-export * from './appbar';
+export * from './appbar.spec';
 export * from './appbar-section';

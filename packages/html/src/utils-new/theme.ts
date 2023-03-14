@@ -24,6 +24,7 @@ export const FillMode = {
 } as const;
 
 export const ThemeColor = {
+    'inherit': 'inherit',
     'base': 'base',
     'primary': 'primary',
     'secondary': 'secondary',

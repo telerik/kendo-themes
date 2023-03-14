@@ -1,17 +1,9 @@
-import * as React from 'react';
+import { classNames } from '../utils-new';
 
-export interface AppbarSectionProps {
-    children?: React.ReactNode;
-}
+const className = `k-appbar-section`;
 
-export class AppbarSection extends React.Component<AppbarSectionProps> {
-    render() {
-        const { children } = this.props;
-
-        return (
-            <div className="k-appbar-section">
-                {children}
-            </div>
-        );
-    }
-}
+export const AppbarSection = (props: React.HTMLAttributes<HTMLSpanElement>) => (
+    <div className={classNames(className, props.className)}>
+        {props.children}
+    </div>
+);
