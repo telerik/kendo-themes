@@ -1,48 +1,58 @@
-import * as React from 'react';
-import { classNames } from '../utils';
 import { Icon } from '../icon';
+import { classNames, stateClassNames, States } from '../utils';
 
-export interface FloatingActionButtonItemProps {
-    className?: string;
+const className = `k-fab-item`;
+
+const states = [
+    States.hover,
+    States.focus,
+    States.active,
+    States.disabled
+];
+
+export type KendoFloatingActionButtonItemProps = {
     align?: 'left' | 'right';
     text?: string;
     icon?: string;
-    hover?: boolean;
-    focus?: boolean;
-    active?: boolean;
-    disabled?: boolean;
-}
+};
 
-export class FloatingActionButtonItem extends React.Component<FloatingActionButtonItemProps> {
+export type KendoFloatingActionButtonItemState = { [K in (typeof states)[number]]?: boolean };
 
-    render() {
-        const {
-            className,
-            align,
-            text,
-            icon,
-            hover,
-            focus,
-            active,
-            disabled
-        } = this.props;
 
-        return (
-            <li className={classNames(
+export const FloatingActionButtonItem = (
+    props: KendoFloatingActionButtonItemProps &
+        KendoFloatingActionButtonItemState &
+        React.HTMLAttributes<HTMLLIElement>
+) => {
+    const {
+        text,
+        icon,
+        align,
+        hover,
+        focus,
+        active,
+        disabled,
+        ...other
+    } = props;
+
+    return (
+        <li
+            {...other}
+            className={classNames(
+                props.className,
                 className,
-                'k-fab-item',
                 {
                     [`k-text-${align}`]: align,
-                    'k-hover': hover,
-                    'k-focus': focus,
-                    'k-active': active,
-                    'k-disabled': disabled
-                }
+                },
+                stateClassNames(className, {
+                    hover,
+                    focus,
+                    active,
+                    disabled,
+                }),
             )}>
-                <span className="k-fab-item-text">{text}</span>
-                <Icon className="k-fab-item-icon" name={icon} />
-            </li>
-        );
-
-    }
-}
+            <span className="k-fab-item-text">{text}</span>
+            <Icon className="k-fab-item-icon" name={icon} />
+        </li>
+    );
+};
