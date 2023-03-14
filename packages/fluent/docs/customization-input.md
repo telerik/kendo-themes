@@ -34,7 +34,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of he border around the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the border around the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +64,27 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +94,27 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +124,27 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -94,7 +154,107 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sm-button-width</td>
+    <td></td>
+    <td><code>calc( #{$kendo-button-sm-line-height} * 1em + #{$kendo-button-sm-padding-y} * 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small Input button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-button-width</td>
+    <td></td>
+    <td><code>calc( #{$kendo-button-md-line-height} * 1em + #{$kendo-button-md-padding-y} * 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium Input button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-button-width</td>
+    <td></td>
+    <td><code>calc( #{$kendo-button-lg-line-height} * 1em + #{$kendo-button-lg-padding-y} * 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large Input button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-button-border-width</td>
+    <td></td>
+    <td><code>1px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Input button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sm-spinner-width</td>
+    <td></td>
+    <td><code>$kendo-input-sm-button-width</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the small Input spinner button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-spinner-width</td>
+    <td></td>
+    <td><code>$kendo-input-md-button-width</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the medium Input spinner button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-spinner-width</td>
+    <td></td>
+    <td><code>$kendo-input-lg-button-width</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the large Input spinner button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-spinner-icon-offset</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon offset of the Input spinner button.</div></div>
     </td>
 </tr>
 <tr>
@@ -104,7 +264,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the solid input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -114,7 +274,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the solid input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -124,7 +284,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the solid input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -134,7 +294,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the solid input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -144,7 +304,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -154,7 +314,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -164,7 +324,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the solid input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -174,7 +334,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the solid input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -184,7 +344,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the solid input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -194,7 +354,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus text color of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -204,7 +364,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus background color of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -214,7 +374,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus border color of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -224,7 +384,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -234,7 +394,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background color of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -244,7 +404,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the input</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled solid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -254,7 +414,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -264,7 +424,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -274,7 +434,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -284,7 +444,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -294,7 +454,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -304,7 +464,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -314,7 +474,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -324,7 +484,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -334,7 +494,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -344,7 +504,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus text color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -354,7 +514,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus background color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -364,7 +524,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus border color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -374,7 +534,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -384,7 +544,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -394,7 +554,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the outline input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -404,7 +564,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -414,7 +574,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -424,7 +584,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -434,7 +594,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -444,7 +604,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -454,7 +614,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -464,7 +624,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -474,7 +634,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -484,7 +644,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -494,7 +654,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus text color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -504,7 +664,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus background color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -514,7 +674,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus border color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -524,7 +684,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -534,7 +694,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -544,7 +704,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the flat input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -554,7 +714,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -564,7 +724,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -574,7 +734,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -584,7 +744,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -594,7 +754,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered the solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -604,7 +764,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -614,7 +774,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -624,7 +784,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -634,7 +794,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -644,7 +804,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus text color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -654,7 +814,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus background color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -664,7 +824,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus border color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -674,7 +834,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -684,7 +844,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -694,7 +854,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the solid picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled solid Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -704,7 +864,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -714,7 +874,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -724,7 +884,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -734,7 +894,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -744,7 +904,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -754,7 +914,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -764,7 +924,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -774,7 +934,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -784,7 +944,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -794,7 +954,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus text color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -804,7 +964,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus background color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -814,7 +974,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -824,7 +984,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -834,7 +994,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -844,7 +1004,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the outline picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -854,7 +1014,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -864,7 +1024,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -874,7 +1034,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -884,7 +1044,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover text color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -894,7 +1054,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover background color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -904,7 +1064,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover border color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -914,7 +1074,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus text color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -924,7 +1084,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus background color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -934,7 +1094,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus border color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -944,7 +1104,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus text color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered and focused flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -954,7 +1114,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus background color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered and focused flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -964,7 +1124,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover-focus border color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered and focused flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -974,7 +1134,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled text color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -984,7 +1144,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled background color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -994,7 +1154,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled border color of the flat picker.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -1035,7 +1195,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map of the input.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -1178,6 +1338,106 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Colors map of the input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-prefix-bg</td>
+    <td></td>
+    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input prefix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-suffix-bg</td>
+    <td></td>
+    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input suffix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-invalid-border</td>
+    <td></td>
+    <td><code>var( --kendo-invalid-border, #{$kendo-invalid-border} )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-invalid-text</td>
+    <td></td>
+    <td><code>var( --kendo-invalid-text, #{$kendo-invalid-text} )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the invalid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-placeholder-text</td>
+    <td></td>
+    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-placeholder-opacity</td>
+    <td></td>
+    <td><code>1</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-clear-value-text</td>
+    <td></td>
+    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input clear value icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-clear-value-opacity</td>
+    <td></td>
+    <td><code>.6</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input clear value icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-clear-value-hover-text</td>
+    <td></td>
+    <td><code>inherit</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered Input clear value icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-clear-value-hover-opacity</td>
+    <td></td>
+    <td><code>1</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered Input clear value icon.</div></div>
     </td>
 </tr>
 </tbody>

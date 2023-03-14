@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +54,27 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +84,27 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +114,27 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +144,47 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the large Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-font-family</td>
+    <td></td>
+    <td><code>var( --kendo-font-family, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-font-weight</td>
+    <td></td>
+    <td><code>var( --kendo-font-weight-bold, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -94,7 +194,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -104,7 +204,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated inner height of the button. Without the border width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
     </td>
 </tr>
 <tr>
@@ -133,7 +233,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -143,7 +243,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Content spacing of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The content spacing of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -153,7 +253,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -163,7 +263,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline width of the focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Outline width of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -173,7 +273,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline style of the focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -183,7 +283,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the flat focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the flat focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -193,7 +293,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline width of the flat focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the flat focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -203,7 +303,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the link focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the link focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -213,7 +313,17 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline width of the flat focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the flat focused Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-theme-colors</td>
+    <td></td>
+    <td><code>()</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>
     </td>
 </tr>
 </tbody>

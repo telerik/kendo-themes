@@ -34,7 +34,7 @@ The following table lists the available variables for customization.
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +54,37 @@ The following table lists the available variables for customization.
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +94,37 @@ The following table lists the available variables for customization.
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>6px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>10px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +134,7 @@ The following table lists the available variables for customization.
     <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +144,37 @@ The following table lists the available variables for customization.
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sm-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -98,13 +188,43 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-sm-line-height</td>
+    <td>Number</td>
+    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>1.4285714286</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the small Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-md-line-height</td>
+    <td>Number</td>
+    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>1.4285714286</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the medium Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-lg-line-height</td>
+    <td>Number</td>
+    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>1.4285714286</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the large Button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )</code></td>
     <td><code>calc( 1.4285714286em + 16px + 2px )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -114,7 +234,36 @@ The following table lists the available variables for customization.
     <td><code>calc( 1.4285714286em + 16px )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated inner height of the button. Without the border width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-button-sm-padding-x,
+        padding-y: $kendo-button-sm-padding-y,
+        font-size: $kendo-button-sm-font-size,
+        line-height: $kendo-button-sm-line-height
+    ),
+    md: (
+        padding-x: $kendo-button-md-padding-x,
+        padding-y: $kendo-button-md-padding-y,
+        font-size: $kendo-button-md-font-size,
+        line-height: $kendo-button-md-line-height
+    ),
+    lg: (
+        padding-x: $kendo-button-lg-padding-x,
+        padding-y: $kendo-button-lg-padding-y,
+        font-size: $kendo-button-lg-font-size,
+        line-height: $kendo-button-lg-line-height
+    )
+)</code></td>
+    <td><code>(sm: (padding-x: 16px, padding-y: 6px, font-size: 14px, line-height: 1.4285714286), md: (padding-x: 16px, padding-y: 8px, font-size: 14px, line-height: 1.4285714286), lg: (padding-x: 16px, padding-y: 10px, font-size: 14px, line-height: 1.4285714286))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -127,7 +276,7 @@ The following table lists the available variables for customization.
     <td><code>("primary": #3f51b5, "secondary": #e51a5f, "tertiary": #00695c, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #f5f5f5, "inverse": #424242, "base": #ffffff)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -137,7 +286,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -147,7 +296,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -157,7 +306,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -167,7 +316,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -177,7 +326,7 @@ The following table lists the available variables for customization.
     <td><code>0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -187,7 +336,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -197,7 +346,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -207,7 +356,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -217,7 +366,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -227,7 +376,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -237,7 +386,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -247,7 +396,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -257,7 +406,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -267,7 +416,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -277,7 +426,7 @@ The following table lists the available variables for customization.
     <td><code>0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -287,7 +436,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -297,7 +446,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -307,7 +456,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of selected button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -317,7 +466,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of selected button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -327,7 +476,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of selected button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -337,7 +486,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -347,7 +496,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -357,7 +506,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -367,7 +516,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -377,7 +526,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -387,7 +536,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -397,7 +546,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -407,7 +556,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -417,7 +566,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -427,7 +576,7 @@ The following table lists the available variables for customization.
     <td><code>none</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -437,7 +586,7 @@ The following table lists the available variables for customization.
     <td><code>0.08</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of hovered flat button. Used to create background for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the hovered flat Button. Used to create a background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -447,7 +596,7 @@ The following table lists the available variables for customization.
     <td><code>0.12</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of focused flat button. Used to create background for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the focused flat Button. Used to create a background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -457,7 +606,7 @@ The following table lists the available variables for customization.
     <td><code>0.16</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of active flat button. Used to create background for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the active flat Button. Used to create a background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -467,7 +616,7 @@ The following table lists the available variables for customization.
     <td><code>0.22</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of selected flat button. Used to create background for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the selected flat Button. Used to create a background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -477,7 +626,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the flat button focus ring. Used to create border for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the flat Button focus ring. Used to create a border for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -487,7 +636,7 @@ The following table lists the available variables for customization.
     <td><code>box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box-shadow transition of the Button.</div></div>
     </td>
 </tr>
 </tbody>

@@ -34,7 +34,7 @@ The following table lists the available variables for customization.
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the text and the icons of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the text and the icons of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ The following table lists the available variables for customization.
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the small chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the medium chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@ The following table lists the available variables for customization.
     <td><code>6px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the large chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ The following table lists the available variables for customization.
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the small chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ The following table lists the available variables for customization.
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the medium chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -164,7 +164,7 @@ The following table lists the available variables for customization.
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the large chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Chip's line height that is related to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@ The following table lists the available variables for customization.
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the small chip that are connected to the $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small Chip's line height that is related to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -194,7 +194,7 @@ The following table lists the available variables for customization.
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the medium chip that are connected to the $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium Chip's line height that is related to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@ The following table lists the available variables for customization.
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the large chip that are connected to the $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large Chip's line height that is related to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
     <td><code>calc( 1em + 8px + 2px )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -243,7 +243,7 @@ The following table lists the available variables for customization.
     <td><code>(sm: (padding-x: 4px, padding-y: 2px, font-size: 14px, line-height: 1), md: (padding-x: 4px, padding-y: 4px, font-size: 14px, line-height: 1), lg: (padding-x: 4px, padding-y: 6px, font-size: 14px, line-height: 1))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -269,7 +269,7 @@ The following table lists the available variables for customization.
     <td><code>("base": #f5f5f5, "error": #f31700, "info": #0058e9, "warning": #ffc000, "success": #37b400)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -279,7 +279,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -289,7 +289,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -299,7 +299,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ The following table lists the available variables for customization.
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -319,7 +319,7 @@ The following table lists the available variables for customization.
     <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -329,7 +329,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of focused solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the focused solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -339,7 +339,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of focused solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the focused solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -349,7 +349,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of hovered solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -359,7 +359,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the hovered solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -369,7 +369,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #d8d8d8"></span><code>#d8d8d8</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -389,7 +389,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -399,7 +399,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -409,7 +409,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -419,7 +419,7 @@ The following table lists the available variables for customization.
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -429,7 +429,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of hovered outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -439,7 +439,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the hovered outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -449,7 +449,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -459,7 +459,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -473,7 +473,7 @@ The following table lists the available variables for customization.
     <td><code>(sm: 4px, md: 4px, lg: 4px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the Chip list.</div></div>
     </td>
 </tr>
 </tbody>

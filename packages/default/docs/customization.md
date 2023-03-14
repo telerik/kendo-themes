@@ -724,7 +724,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -734,7 +734,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -744,7 +744,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -754,7 +754,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -764,7 +764,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -774,7 +774,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -784,7 +784,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -794,7 +794,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the small button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -804,7 +804,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the medium button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -814,7 +814,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the large button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -824,7 +824,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -834,7 +834,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -844,7 +844,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the small button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -854,7 +854,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the medium button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -864,7 +864,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the large button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -874,7 +874,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -884,7 +884,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the small button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the small Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -894,7 +894,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the medium button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the medium Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -904,7 +904,56 @@ The following table lists the available variables for customizing the Default th
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $kendo-font-size of the large button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the large Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )</code></td>
+    <td><code>calc( 1.4285714286em + 8px + 2px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-inner-calc-size</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} )</code></td>
+    <td><code>calc( 1.4285714286em + 8px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-button-sm-padding-x,
+        padding-y: $kendo-button-sm-padding-y,
+        font-size: $kendo-button-sm-font-size,
+        line-height: $kendo-button-sm-line-height
+    ),
+    md: (
+        padding-x: $kendo-button-md-padding-x,
+        padding-y: $kendo-button-md-padding-y,
+        font-size: $kendo-button-md-font-size,
+        line-height: $kendo-button-md-line-height
+    ),
+    lg: (
+        padding-x: $kendo-button-lg-padding-x,
+        padding-y: $kendo-button-lg-padding-y,
+        font-size: $kendo-button-lg-font-size,
+        line-height: $kendo-button-lg-line-height
+    )
+)</code></td>
+    <td><code>(sm: (padding-x: 8px, padding-y: 2px, font-size: 14px, line-height: 1.4285714286), md: (padding-x: 8px, padding-y: 4px, font-size: 14px, line-height: 1.4285714286), lg: (padding-x: 8px, padding-y: 8px, font-size: 16px, line-height: 1.5))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -917,7 +966,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>("primary": #ff6358, "secondary": #666666, "tertiary": #03a9f4, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #ebebeb, "inverse": #424242, "base": #f5f5f5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -927,7 +976,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -937,7 +986,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -947,7 +996,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -957,7 +1006,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -967,7 +1016,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -977,7 +1026,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -987,7 +1036,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -997,7 +1046,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1007,7 +1056,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1017,7 +1066,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of hovered button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the hovered Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1027,7 +1076,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #d8d8d8"></span><code>#d8d8d8</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1037,7 +1086,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1047,7 +1096,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1057,7 +1106,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1067,7 +1116,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of active button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the active Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1077,7 +1126,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1087,7 +1136,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1097,7 +1146,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1107,7 +1156,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of selected buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1117,7 +1166,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of selected button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the selected Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1127,7 +1176,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1137,7 +1186,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1147,7 +1196,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1157,7 +1206,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1167,7 +1216,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the focused Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1177,7 +1226,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1187,7 +1236,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1197,7 +1246,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of disabled buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1207,7 +1256,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1217,7 +1266,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of disabled button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the disabled Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1227,7 +1276,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.04</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of hovered flat button. Used to create background for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the hovered flat Button. Used to create a background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1237,7 +1286,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of focused flat button. Used to create background for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the focused flat Button. Used to create a background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1247,7 +1296,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.16</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of active flat button. Used to create background for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the active flat Button. Used to create background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1257,7 +1306,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.2</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of selected flat button. Used to create background for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of the selected flat Button. Used to create background for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1267,7 +1316,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.12</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the flat button focus ring. Used to create border for the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the flat Button focus ring. Used to create a border for the flat Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -1277,7 +1326,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>color 0.2s ease-in-out</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transition of the flat button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transition of the flat Button.</div></div>
     </td>
 </tr>
 </tbody>
@@ -1417,7 +1466,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1427,7 +1476,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>12px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a small checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a small CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1437,7 +1486,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a medium checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a medium CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1447,7 +1496,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>20px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a large checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a large CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1457,7 +1506,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>10px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a small checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a small CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1467,7 +1516,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a medium checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a medium CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1477,7 +1526,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>18px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a large checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a large CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1487,7 +1536,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a small checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a small CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1497,7 +1546,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a medium checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a medium CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1507,7 +1556,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a large checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a large CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1517,7 +1566,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1527,7 +1576,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1537,7 +1586,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1547,7 +1596,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1557,7 +1606,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of hovered checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1567,7 +1616,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1577,7 +1626,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1587,7 +1636,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1597,7 +1646,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1607,7 +1656,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of indeterminate checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the indeterminate CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1617,7 +1666,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of indeterminate checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the indeterminate CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1627,7 +1676,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of indeterminate checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the indeterminate CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1637,7 +1686,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1647,7 +1696,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.06)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1657,7 +1706,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused and checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused and checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1667,7 +1716,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(255, 99, 88, 0.3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused and checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1677,7 +1726,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1687,7 +1736,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1697,7 +1746,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1707,7 +1756,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled and checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled and checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1717,7 +1766,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled and checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled and checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1727,7 +1776,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled and checked CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1737,7 +1786,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of invalid checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of an invalid CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1747,7 +1796,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of invalid checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of an invalid CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1757,7 +1806,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of invalid checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of an invalid CheckBox.</div></div>
     </td>
 </tr>
 <tr>
@@ -1767,7 +1816,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>image</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Type of checkbox indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The type of the CheckBox indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -1777,7 +1826,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>"WebComponentsIcons", monospace</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph font family of checkbox indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the CheckBox indicator glyph.</div></div>
     </td>
 </tr>
 <tr>
@@ -1787,7 +1836,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>"\e118"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph of checkbox indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph of the CheckBox indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -1797,7 +1846,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>"\e121"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph of indeterminate checkbox indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph of the indeterminate CheckBox indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -1807,7 +1856,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked checkbox indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image for a checked CheckBox indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -1817,7 +1866,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ff6358' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image image of checked checkbox indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image for a indeterminate CheckBox indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -1827,7 +1876,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the checkbox inside a label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the CheckBox inside a label.</div></div>
     </td>
 </tr>
 <tr>
@@ -1837,7 +1886,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between items of horizontal checkbox list.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the items in a horizontal CheckBox list.</div></div>
     </td>
 </tr>
 <tr>
@@ -1847,7 +1896,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of checkbox list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the CheckBox list items.</div></div>
     </td>
 </tr>
 <tr>
@@ -1857,7 +1906,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of checkbox list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the CheckBox list items.</div></div>
     </td>
 </tr>
 <tr>
@@ -1867,7 +1916,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checkbox ripple.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the CheckBox' ripple.</div></div>
     </td>
 </tr>
 <tr>
@@ -1877,7 +1926,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.25</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of checkbox ripple.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the CheckBox' ripple.</div></div>
     </td>
 </tr>
 </tbody>
@@ -1907,7 +1956,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1917,7 +1966,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the text and the icons of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the text and the icons of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1927,7 +1976,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1937,7 +1986,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1947,7 +1996,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1957,7 +2006,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1967,7 +2016,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1977,7 +2026,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the small chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1987,7 +2036,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the medium chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -1997,7 +2046,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>6px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the large chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2007,7 +2056,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2017,7 +2066,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the small chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2027,7 +2076,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the medium chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2037,7 +2086,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the large chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2047,7 +2096,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The Chip's line height that is related to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -2057,7 +2106,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the small chip that are connected to the $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The small Chip's line height that is related to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -2067,7 +2116,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the medium chip that are connected to the $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The medium Chip's line height that is related to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -2077,7 +2126,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the large chip that are connected to the $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The large Chip's line height that is related to the $kendo-font-size.</div></div>
     </td>
 </tr>
 <tr>
@@ -2087,7 +2136,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>calc( 1em + 8px + 2px )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2116,7 +2165,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>(sm: (padding-x: 4px, padding-y: 2px, font-size: 14px, line-height: 1), md: (padding-x: 4px, padding-y: 4px, font-size: 14px, line-height: 1), lg: (padding-x: 4px, padding-y: 6px, font-size: 14px, line-height: 1))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2126,7 +2175,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2142,7 +2191,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>("base": #f5f5f5, "error": #f31700, "info": #0058e9, "warning": #ffc000, "success": #37b400)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2152,7 +2201,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2162,7 +2211,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2172,7 +2221,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2182,7 +2231,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2192,7 +2241,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of the solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2202,7 +2251,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of focused solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the focused solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2212,7 +2261,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of focused solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the focused solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2222,7 +2271,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of hovered solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2232,7 +2281,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the hovered solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2242,7 +2291,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #d8d8d8"></span><code>#d8d8d8</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2252,7 +2301,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected solid chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected solid Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2262,7 +2311,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2272,7 +2321,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2282,7 +2331,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2292,7 +2341,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2302,7 +2351,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of hovered outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the hovered outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2312,7 +2361,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the hovered outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2322,7 +2371,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2332,7 +2381,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected outline chip.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the selected outline Chip.</div></div>
     </td>
 </tr>
 <tr>
@@ -2346,7 +2395,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>(sm: 4px, md: 4px, lg: 4px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the Chip list.</div></div>
     </td>
 </tr>
 </tbody>
@@ -3410,7 +3459,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>100%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3420,7 +3469,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3430,7 +3479,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3440,7 +3489,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3450,7 +3499,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of small input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3460,7 +3509,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of medium input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3470,7 +3519,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of large input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3480,7 +3529,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3490,7 +3539,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of small input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3500,7 +3549,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of medium input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3510,7 +3559,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of large input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3520,7 +3569,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3530,7 +3579,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3540,7 +3589,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of small input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3550,7 +3599,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of medium input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3560,7 +3609,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of large input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3570,7 +3619,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3580,7 +3629,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of small input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3590,7 +3639,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of medium input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3600,7 +3649,45 @@ The following table lists the available variables for customizing the Default th
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of large input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-input-sm-padding-x,
+        padding-y: $kendo-input-sm-padding-y,
+        font-size: $kendo-input-sm-font-size,
+        line-height: $kendo-input-sm-line-height,
+        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-sm-padding-y * 2} ),
+        button-padding-x: $kendo-input-sm-padding-y,
+        button-padding-y: $kendo-input-sm-padding-y
+    ),
+    md: (
+        padding-x: $kendo-input-md-padding-x,
+        padding-y: $kendo-input-md-padding-y,
+        font-size: $kendo-input-md-font-size,
+        line-height: $kendo-input-md-line-height,
+        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-md-padding-y * 2} ),
+        button-padding-x: $kendo-input-md-padding-y,
+        button-padding-y: $kendo-input-md-padding-y
+    ),
+    lg: (
+        padding-x: $kendo-input-lg-padding-x,
+        padding-y: $kendo-input-lg-padding-y,
+        font-size: $kendo-input-lg-font-size,
+        line-height: $kendo-input-lg-line-height,
+        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-lg-padding-y * 2} ),
+        button-padding-x: $kendo-input-lg-padding-y,
+        button-padding-y: $kendo-input-lg-padding-y
+    )
+)</code></td>
+    <td><code>(sm: (padding-x: 8px, padding-y: 2px, font-size: 14px, line-height: 1.4285714286, icon-size: calc( 16px + 4px ), button-padding-x: 2px, button-padding-y: 2px), md: (padding-x: 8px, padding-y: 4px, font-size: 14px, line-height: 1.4285714286, icon-size: calc( 16px + 8px ), button-padding-x: 4px, button-padding-y: 4px), lg: (padding-x: 8px, padding-y: 8px, font-size: 16px, line-height: 1.5, icon-size: calc( 16px + 16px ), button-padding-x: 8px, button-padding-y: 8px))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3610,7 +3697,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3620,7 +3707,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3630,7 +3717,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3640,7 +3727,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3650,7 +3737,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3660,7 +3747,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3670,7 +3757,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.16)"></span><code>rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3680,7 +3767,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3690,7 +3777,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3700,7 +3787,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3710,7 +3797,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.16)"></span><code>rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3720,7 +3807,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3730,7 +3817,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3740,7 +3827,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3750,7 +3837,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3760,7 +3847,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3770,7 +3857,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3780,7 +3867,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of disabled input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the disabled Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3790,7 +3877,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of disabled input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3800,7 +3887,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of outline input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3810,7 +3897,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of outline input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3820,7 +3907,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.5)"></span><code>rgba(66, 66, 66, 0.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of outline input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3830,7 +3917,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of outline hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3840,7 +3927,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of outline hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3850,7 +3937,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.8)"></span><code>rgba(66, 66, 66, 0.8)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of outline hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3860,7 +3947,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of outline focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3870,7 +3957,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of outline focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3880,7 +3967,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of outline focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3890,7 +3977,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of outline focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3900,7 +3987,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of flat input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3910,7 +3997,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of flat input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3920,7 +4007,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of flat input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3930,7 +4017,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of flat hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3940,7 +4027,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of flat hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3950,7 +4037,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.16)"></span><code>rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of flat hovered input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3960,7 +4047,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of flat focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3970,7 +4057,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of flat focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3980,7 +4067,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of flat focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -3990,7 +4077,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of flat focused input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -4000,7 +4087,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the input placeholder.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input placeholder.</div></div>
     </td>
 </tr>
 <tr>
@@ -4010,7 +4097,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the input placeholder.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input placeholder.</div></div>
     </td>
 </tr>
 <tr>
@@ -4020,7 +4107,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the input clear value icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input clear value icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -4030,7 +4117,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the input clear value icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input clear value icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -4040,7 +4127,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered input clear value icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered Input clear value icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -4050,7 +4137,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered input clear value icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered Input clear value icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -4080,7 +4167,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>calc( 1.4285714286em + 8px )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the input button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input button.</div></div>
     </td>
 </tr>
 <tr>
@@ -4090,7 +4177,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the input button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Input button.</div></div>
     </td>
 </tr>
 <tr>
@@ -4100,7 +4187,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>calc( 1.4285714286em + 8px )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the input spinner button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input spinner button.</div></div>
     </td>
 </tr>
 <tr>
@@ -4110,7 +4197,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon offset of the input spinner button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon offset of the Input spinner button.</div></div>
     </td>
 </tr>
 <tr>
@@ -4120,7 +4207,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the input separator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
     </td>
 </tr>
 <tr>
@@ -4130,7 +4217,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of the input separator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input separator.</div></div>
     </td>
 </tr>
 <tr>
@@ -4140,7 +4227,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the invalid input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -4150,7 +4237,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the invalid input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
     </td>
 </tr>
 </tbody>
@@ -4180,7 +4267,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List component, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4190,7 +4277,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List component, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4200,7 +4287,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list header, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4210,7 +4297,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list header, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4220,7 +4307,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of list header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List header.</div></div>
     </td>
 </tr>
 <tr>
@@ -4230,7 +4317,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list header, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4240,7 +4327,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list header, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4250,7 +4337,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of list header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of the List header.</div></div>
     </td>
 </tr>
 <tr>
@@ -4260,7 +4347,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list items, when no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List items, when no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4270,7 +4357,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items, when no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List items, when no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4280,7 +4367,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list items, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List items, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4290,7 +4377,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list items, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List items, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4300,7 +4387,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list group items, when no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the List group items, when no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4310,7 +4397,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list group items, when no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the List group items, when no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4320,7 +4407,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px 0 0</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of list group items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the List group items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4330,7 +4417,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list group items, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the List group items, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4340,7 +4427,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list group items, if no size is set.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the List group items, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
@@ -4350,7 +4437,66 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of list group item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font weight of a List group item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-list-sm-font-size,
+        line-height: $kendo-list-sm-line-height,
+        header-padding-x: $kendo-list-sm-header-padding-x,
+        header-padding-y: $kendo-list-sm-header-padding-y,
+        header-font-size: null,
+        header-line-height: null,
+        item-padding-x: $kendo-list-sm-item-padding-x,
+        item-padding-y: $kendo-list-sm-item-padding-y,
+        item-font-size: null,
+        item-line-height: null,
+        group-item-padding-x: $kendo-list-sm-group-item-padding-x,
+        group-item-padding-y: $kendo-list-sm-group-item-padding-y,
+        group-item-font-size: null,
+        group-item-line-height: null
+    ),
+    md: (
+        font-size: $kendo-list-md-font-size,
+        line-height: $kendo-list-md-line-height,
+        header-padding-x: $kendo-list-md-header-padding-x,
+        header-padding-y: $kendo-list-md-header-padding-y,
+        header-font-size: null,
+        header-line-height: null,
+        item-padding-x: $kendo-list-md-item-padding-x,
+        item-padding-y: $kendo-list-md-item-padding-y,
+        item-font-size: null,
+        item-line-height: null,
+        group-item-padding-x: $kendo-list-md-group-item-padding-x,
+        group-item-padding-y: $kendo-list-md-group-item-padding-y,
+        group-item-font-size: null,
+        group-item-line-height: null
+    ),
+    lg: (
+        font-size: $kendo-list-lg-font-size,
+        line-height: $kendo-list-lg-line-height,
+        header-padding-x: $kendo-list-lg-header-padding-x,
+        header-padding-y: $kendo-list-lg-header-padding-y,
+        header-font-size: null,
+        header-line-height: null,
+        item-padding-x: $kendo-list-lg-item-padding-x,
+        item-padding-y: $kendo-list-lg-item-padding-y,
+        item-font-size: null,
+        item-line-height: null,
+        group-item-padding-x: $kendo-list-lg-group-item-padding-x,
+        group-item-padding-y: $kendo-list-lg-group-item-padding-y,
+        group-item-font-size: null,
+        group-item-line-height: null
+    )
+)</code></td>
+    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, header-padding-x: 8px, header-padding-y: 2px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 2px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 2px, group-item-font-size: null, group-item-line-height: null), md: (font-size: 14px, line-height: 1.4285714286, header-padding-x: 8px, header-padding-y: 4px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 4px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 4px, group-item-font-size: null, group-item-line-height: null), lg: (font-size: 16px, line-height: 1.5, header-padding-x: 8px, header-padding-y: 6px, header-font-size: null, header-line-height: null, item-padding-x: 8px, item-padding-y: 8px, item-font-size: null, item-line-height: null, group-item-padding-x: 8px, group-item-padding-y: 6px, group-item-font-size: null, group-item-line-height: null))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.</div></div>
     </td>
 </tr>
 <tr>
@@ -4360,7 +4506,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the list component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the List component.</div></div>
     </td>
 </tr>
 <tr>
@@ -4370,7 +4516,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the list component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List component.</div></div>
     </td>
 </tr>
 <tr>
@@ -4380,7 +4526,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the list component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the List component.</div></div>
     </td>
 </tr>
 <tr>
@@ -4390,7 +4536,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the List header.</div></div>
     </td>
 </tr>
 <tr>
@@ -4400,7 +4546,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List header.</div></div>
     </td>
 </tr>
 <tr>
@@ -4410,7 +4556,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of list header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the List header.</div></div>
     </td>
 </tr>
 <tr>
@@ -4420,7 +4566,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 5px 10px 0 rgba(0, 0, 0, 0.06)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of list header.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the List header.</div></div>
     </td>
 </tr>
 <tr>
@@ -4430,7 +4576,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4440,7 +4586,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4450,7 +4596,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4460,7 +4606,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4470,7 +4616,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4480,7 +4626,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4490,7 +4636,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4500,7 +4646,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4510,7 +4656,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected List items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4520,7 +4666,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list group items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the List group items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4530,7 +4676,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list group items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the List group items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4540,7 +4686,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of list group items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the List group items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4550,7 +4696,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of list group items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the List group items.</div></div>
     </td>
 </tr>
 <tr>
@@ -4560,7 +4706,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the 'No Data' text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the 'No Data' text.</div></div>
     </td>
 </tr>
 </tbody>
@@ -5612,7 +5758,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5622,7 +5768,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5632,7 +5778,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5642,7 +5788,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5652,7 +5798,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5662,7 +5808,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5672,7 +5818,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5682,7 +5828,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5692,7 +5838,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5702,7 +5848,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5712,7 +5858,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5722,7 +5868,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5732,7 +5878,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5742,7 +5888,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5752,7 +5898,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5762,7 +5908,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of disabled picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5772,7 +5918,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of disabled picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5782,7 +5928,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5792,7 +5938,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of disabled picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the disabled Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5802,7 +5948,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of disabled picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5812,7 +5958,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of outline picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5822,7 +5968,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of outline picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5832,7 +5978,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.5)"></span><code>rgba(66, 66, 66, 0.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of outline picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5842,7 +5988,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of outline hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5852,7 +5998,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of outline hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5862,7 +6008,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of outline hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5872,7 +6018,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of outline focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5882,7 +6028,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of outline focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5892,7 +6038,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of outline focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5902,7 +6048,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of outline focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5912,7 +6058,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of outline hovered and focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline hovered and focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5922,7 +6068,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of outline hovered and focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline hovered and focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5932,7 +6078,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of outline hovered and focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered and focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5942,7 +6088,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of flat picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5952,7 +6098,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of flat picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5962,7 +6108,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of flat picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5972,7 +6118,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.04)"></span><code>rgba(66, 66, 66, 0.04)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of flat hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5982,7 +6128,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of flat hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -5992,7 +6138,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.16)"></span><code>rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of flat hovered picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -6002,7 +6148,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of flat focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -6012,7 +6158,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of flat focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -6022,7 +6168,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of flat focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -6032,7 +6178,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of flat focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -6042,7 +6188,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of flat hovered and focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat hovered and focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -6052,7 +6198,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of flat hovered and focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat hovered and focused Picker components.</div></div>
     </td>
 </tr>
 <tr>
@@ -6062,7 +6208,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of flat hovered and focused picker components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered and focused Picker components.</div></div>
     </td>
 </tr>
 </tbody>
@@ -6472,7 +6618,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>50%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6482,7 +6628,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6492,7 +6638,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>12px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a small radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a small RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6502,7 +6648,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a medium radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a medium RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6512,7 +6658,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>20px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a large radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a large RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6522,7 +6668,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>10px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a small radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a small RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6532,7 +6678,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a medium radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a medium RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6542,7 +6688,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>18px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a large radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a large RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6552,7 +6698,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a small radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a small RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6562,7 +6708,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a medium radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a medium RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6572,7 +6718,33 @@ The following table lists the available variables for customizing the Default th
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a large radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a large RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        size: $kendo-radio-sm-size,
+        glyph-size: $kendo-radio-sm-glyph-size,
+        ripple-size: $kendo-radio-sm-ripple-size
+    ),
+    md: (
+        size: $kendo-radio-md-size,
+        glyph-size: $kendo-radio-md-glyph-size,
+        ripple-size: $kendo-radio-md-ripple-size
+    ),
+    lg: (
+        size: $kendo-radio-lg-size,
+        glyph-size: $kendo-radio-lg-glyph-size,
+        ripple-size: $kendo-radio-lg-ripple-size
+    )
+)</code></td>
+    <td><code>(sm: (size: 12px, glyph-size: 10px, ripple-size: 300%), md: (size: 16px, glyph-size: 14px, ripple-size: 300%), lg: (size: 20px, glyph-size: 18px, ripple-size: 300%))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different RadioButton sizes.</div></div>
     </td>
 </tr>
 <tr>
@@ -6582,7 +6754,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6592,7 +6764,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6602,7 +6774,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6612,7 +6784,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6622,7 +6794,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of hovered radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6632,7 +6804,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6642,7 +6814,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6652,7 +6824,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6662,7 +6834,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6672,7 +6844,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6682,7 +6854,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.06)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6692,7 +6864,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6702,7 +6874,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(255, 99, 88, 0.3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6712,7 +6884,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6722,7 +6894,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the disabled RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6732,7 +6904,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6742,7 +6914,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6752,7 +6924,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the disabled and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6762,7 +6934,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6772,7 +6944,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of invalid radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the invalid RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6782,7 +6954,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of invalid radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the invalid RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6792,7 +6964,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of invalid radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6802,7 +6974,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>image</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Type of radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The type of the RadioButton indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -6812,7 +6984,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>"WebComponentsIcons", monospace</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph font family of radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the RadioButton indicator glyph.</div></div>
     </td>
 </tr>
 <tr>
@@ -6822,7 +6994,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>"\e308"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph of radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph of the RadioButton indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -6832,7 +7004,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='white'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the checked RadioButton indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -6842,7 +7014,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of disabled and checked radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the disabled and checked RadioButton indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -6852,7 +7024,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the radio button inside of a label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the RadioButton inside of a label.</div></div>
     </td>
 </tr>
 <tr>
@@ -6862,7 +7034,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal list item margin of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal list item margin of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6872,7 +7044,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal list item padding of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal list item padding of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6882,7 +7054,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical list item padding of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical list item padding of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6892,7 +7064,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button ripple.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple.</div></div>
     </td>
 </tr>
 <tr>
@@ -6902,7 +7074,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0.25</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio button ripple.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the RadioButton ripple.</div></div>
     </td>
 </tr>
 </tbody>
@@ -6932,7 +7104,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the split button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus shadow of the SplitButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -6942,7 +7114,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -6952,7 +7124,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the small arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -6962,7 +7134,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the medium arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -6972,7 +7144,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the large arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -6982,7 +7154,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -6992,7 +7164,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the small arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -7002,7 +7174,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the medium arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -7012,7 +7184,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>8px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the large arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large arrow Button.</div></div>
     </td>
 </tr>
 </tbody>
@@ -7042,7 +7214,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the switch.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Switch.</div></div>
     </td>
 </tr>
 <tr>
@@ -7052,7 +7224,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the switch track.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Switch track.</div></div>
     </td>
 </tr>
 <tr>
@@ -7062,7 +7234,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the switch thumb.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Switch thumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -7072,7 +7244,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>uppercase</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text transform of the switch label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text transform of the Switch label.</div></div>
     </td>
 </tr>
 <tr>
@@ -7082,7 +7254,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>inline</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Display of the switch label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The display of the Switch label.</div></div>
     </td>
 </tr>
 <tr>
@@ -7096,7 +7268,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>(sm: (font-size: 10px, track-width: 52px, track-height: 26px, thumb-width: 26px, thumb-height: 26px, thumb-offset: 0px, label-offset: 4px), md: (font-size: 10px, track-width: 60px, track-height: 30px, thumb-width: 30px, thumb-height: 30px, thumb-offset: 0px, label-offset: 6px), lg: (font-size: 10px, track-width: 68px, track-height: 34px, thumb-width: 34px, thumb-height: 34px, thumb-offset: 0px, label-offset: 8px))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map with the different switch sizes.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different Switch sizes.</div></div>
     </td>
 </tr>
 <tr>
@@ -7106,7 +7278,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7116,7 +7288,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7126,7 +7298,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7136,7 +7308,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7146,7 +7318,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7156,7 +7328,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7166,7 +7338,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the hovered switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the hovered Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7176,7 +7348,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the hovered switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the hovered Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7186,7 +7358,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7196,7 +7368,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7206,7 +7378,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7216,7 +7388,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the focused switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the focused Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7226,7 +7398,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px solid rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7236,7 +7408,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7246,7 +7418,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7256,7 +7428,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the disabled switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the disabled Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7266,7 +7438,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the disabled switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the disabled Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7276,7 +7448,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7286,7 +7458,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7296,7 +7468,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7306,7 +7478,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7316,7 +7488,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the hovered switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the hovered Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7326,7 +7498,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the hovered switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the hovered Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7336,7 +7508,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the hovered switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the hovered Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7346,7 +7518,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the hovered switch is not checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the hovered Switch is not checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7356,7 +7528,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7366,7 +7538,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7376,7 +7548,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7386,7 +7558,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7396,7 +7568,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7406,7 +7578,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7416,7 +7588,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the hovered switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7426,7 +7598,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the hovered switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7436,7 +7608,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7446,7 +7618,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7456,7 +7628,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7466,7 +7638,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the focused switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7476,7 +7648,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>2px solid rgba(255, 99, 88, 0.25)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7486,7 +7658,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7496,7 +7668,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7506,7 +7678,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the disabled switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the disabled Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7516,7 +7688,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the disabled switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the disabled Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7526,7 +7698,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7536,7 +7708,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7546,7 +7718,7 @@ The following table lists the available variables for customizing the Default th
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7556,7 +7728,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7566,7 +7738,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the hovered switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7576,7 +7748,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the hovered switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7586,7 +7758,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the hovered switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 <tr>
@@ -7596,7 +7768,7 @@ The following table lists the available variables for customizing the Default th
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the hovered switch is checked.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the hovered Switch is checked.</div></div>
     </td>
 </tr>
 </tbody>
