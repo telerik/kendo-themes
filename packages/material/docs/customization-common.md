@@ -158,13 +158,62 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-font-family</td>
-    <td>List</td>
-    <td><code>$kendo-font-family</code></td>
-    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+    <td>$kendo-list-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        font-size: $kendo-list-sm-font-size,
+        line-height: $kendo-list-sm-line-height,
+        header-padding-x: $kendo-list-sm-header-padding-x,
+        header-padding-y: $kendo-list-sm-header-padding-y,
+        header-font-size: null,
+        header-line-height: null,
+        item-padding-x: $kendo-list-sm-item-padding-x,
+        item-padding-y: $kendo-list-sm-item-padding-y,
+        item-font-size: null,
+        item-line-height: null,
+        group-item-padding-x: $kendo-list-sm-group-item-padding-x,
+        group-item-padding-y: $kendo-list-sm-group-item-padding-y,
+        group-item-font-size: null,
+        group-item-line-height: null
+    ),
+    md: (
+        font-size: $kendo-list-md-font-size,
+        line-height: $kendo-list-md-line-height,
+        header-padding-x: $kendo-list-md-header-padding-x,
+        header-padding-y: $kendo-list-md-header-padding-y,
+        header-font-size: null,
+        header-line-height: null,
+        item-padding-x: $kendo-list-md-item-padding-x,
+        item-padding-y: $kendo-list-md-item-padding-y,
+        item-font-size: null,
+        item-line-height: null,
+        group-item-padding-x: $kendo-list-md-group-item-padding-x,
+        group-item-padding-y: $kendo-list-md-group-item-padding-y,
+        group-item-font-size: null,
+        group-item-line-height: null
+    ),
+    lg: (
+        font-size: $kendo-list-lg-font-size,
+        line-height: $kendo-list-lg-line-height,
+        header-padding-x: $kendo-list-lg-header-padding-x,
+        header-padding-y: $kendo-list-lg-header-padding-y,
+        header-font-size: null,
+        header-line-height: null,
+        item-padding-x: $kendo-list-lg-item-padding-x,
+        item-padding-y: $kendo-list-lg-item-padding-y,
+        item-font-size: null,
+        item-line-height: null,
+        group-item-padding-x: $kendo-list-lg-group-item-padding-x,
+        group-item-padding-y: $kendo-list-lg-group-item-padding-y,
+        group-item-font-size: null,
+        group-item-line-height: null
+    )
+)</code></td>
+    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, header-padding-x: 16px, header-padding-y: 6px, header-font-size: null, header-line-height: null, item-padding-x: 16px, item-padding-y: 6px, item-font-size: null, item-line-height: null, group-item-padding-x: 16px, group-item-padding-y: 6px, group-item-font-size: null, group-item-line-height: null), md: (font-size: 14px, line-height: 1.4285714286, header-padding-x: 16px, header-padding-y: 8px, header-font-size: null, header-line-height: null, item-padding-x: 16px, item-padding-y: 8px, item-font-size: null, item-line-height: null, group-item-padding-x: 16px, group-item-padding-y: 8px, group-item-font-size: null, group-item-line-height: null), lg: (font-size: 16px, line-height: 1.5, header-padding-x: 16px, header-padding-y: 8px, header-font-size: null, header-line-height: null, item-padding-x: 16px, item-padding-y: 8px, item-font-size: null, item-line-height: null, group-item-padding-x: 16px, group-item-padding-y: 10px, group-item-font-size: null, group-item-line-height: null))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of input components.<br /> @group input</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the sizes of the List.<br /> @group list</div></div>
     </td>
 </tr>
 </tbody>
