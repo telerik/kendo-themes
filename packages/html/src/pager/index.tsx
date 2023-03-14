@@ -1,1 +1,1 @@
-export * from './pager';
+export * from './pager.spec';
