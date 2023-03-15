@@ -60,5 +60,9 @@ export const kendoThemeMaps = {
         bottom: 's',
         left: 'w',
         right: 'e'
-    }
+    },
+    orientationMap: {
+        vertical: 'vstack',
+        horizontal: 'hstack',
+    },
 } as const;
