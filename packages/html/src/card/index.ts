@@ -1,4 +1,4 @@
-export * from './card';
+export * from './card.spec';
 export * from './card-callout';
 export * from './card-title';
 export * from './card-subtitle';

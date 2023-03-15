@@ -1,53 +1,51 @@
-import * as React from 'react';
-import { classNames } from '../utils';
-import { CardTitle, CardSubtitle } from '../card';
 import { Button } from '../button';
+import { classNames } from '../utils-new';
+import { CardSubtitle } from './card-subtitle';
+import { CardTitle } from './card-title';
 
-export interface CardHeaderProps {
-    children?: React.ReactNode;
-    className?: string;
+export const CARDHEADER_CLASSNAME = `k-card-header`;
+
+export type KendoCardHeaderProps = {
     title?: string;
     subtitle?: string;
     details?: boolean;
-}
+};
 
-export class CardHeader extends React.Component<CardHeaderProps> {
+export const CardHeader = (
+    props: KendoCardHeaderProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        title,
+        subtitle,
+        details,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            title,
-            subtitle,
-            details,
-            ...htmlAttributes
-        } = this.props;
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                CARDHEADER_CLASSNAME,
+            )}>
+            {title && <CardTitle>{title}</CardTitle>}
+            {subtitle && <CardSubtitle>{subtitle}</CardSubtitle>}
 
-        return (
-            <div
-                {...htmlAttributes}
-                className={classNames(
-                    'k-card-header',
-                    className
-                )}>
-                {title && <CardTitle>{title}</CardTitle>}
-                {subtitle && <CardSubtitle>{subtitle}</CardSubtitle>}
+            <>{props.children}</>
 
-                <>{children}</>
-
-                {details &&
-                    <span className="k-card-header-actions">
-                        <Button
-                            className="k-card-details"
-                            icon="more-vertical"
-                            rounded="medium"
-                            size="medium"
-                            fillMode="flat"
-                            themeColor="base"
-                        />
-                    </span>
-                }
-            </div>
-        );
-    }
-}
+            {details &&
+                <span className="k-card-header-actions">
+                    <Button
+                        className="k-card-details"
+                        icon="more-vertical"
+                        rounded="medium"
+                        size="medium"
+                        fillMode="flat"
+                        themeColor="base"
+                    />
+                </span>
+            }
+        </div>
+    );
+};
