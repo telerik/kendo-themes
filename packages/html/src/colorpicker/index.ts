@@ -1,1 +1,1 @@
-export * from './colorpicker';
+export * from './colorpicker.spec';

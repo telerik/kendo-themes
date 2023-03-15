@@ -1,48 +1,63 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames, stateClassNames, States } from '../utils-new';
 
-export interface ColorPaletteTileProps {
-    className?: string;
+export const COLORPALETTETILE_CLASSNAME = `k-colorpalette-tile`;
+
+const states = [
+    States.hover,
+    States.focus,
+    States.selected
+];
+
+const options = {};
+
+export type KendoColorPaletteTileProps = {
     color?: string;
     tileSize?: string;
-    hover?: boolean;
-    focus?: boolean;
-    selected?: boolean;
-}
+};
 
-export class ColorPaletteTile extends React.Component<ColorPaletteTileProps> {
+export type KendoColorPaletteTileState = { [K in (typeof states)[number]]?: boolean };
 
 
-    render() {
-        const {
-            className,
-            color,
-            tileSize,
-            hover,
-            focus,
-            selected,
-        } = this.props;
+export const ColorPaletteTile = (
+    props: KendoColorPaletteTileProps &
+        KendoColorPaletteTileState &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        color,
+        tileSize,
+        hover,
+        focus,
+        selected,
+        ...other
+    } = props;
 
-        const styles = {
-            'background-color': color,
-            'width': tileSize ? tileSize + 'px' : '',
-            'height': tileSize ? tileSize + 'px' : ''
-        };
+    const styles = {
+        'background-color': color,
+        'width': tileSize ? tileSize + 'px' : '',
+        'height': tileSize ? tileSize + 'px' : ''
+    };
 
-        return (
-            <td
-                className={classNames(
-                    className,
-                    'k-colorpalette-tile',
-                    {
-                        'k-hover': hover,
-                        'k-focus': focus,
-                        'k-selected': selected,
-                    }
-                )}
-                style={styles}
-            >
-            </td>
-        );
-    }
-}
+    return (
+        <td
+            {...other}
+            className={classNames(
+                props.className,
+                COLORPALETTETILE_CLASSNAME,
+                stateClassNames(COLORPALETTETILE_CLASSNAME, {
+                    hover,
+                    focus,
+                    selected
+                }),
+            )}
+            style={styles}
+        >
+        </td>
+    );
+};
+
+ColorPaletteTile.states = states;
+ColorPaletteTile.options = options;
+ColorPaletteTile.className = COLORPALETTETILE_CLASSNAME;
+
+export default ColorPaletteTile;
