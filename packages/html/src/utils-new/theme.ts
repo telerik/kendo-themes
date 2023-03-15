@@ -53,3 +53,12 @@ export const States = {
     'indeterminate': 'indeterminate',
     'checked': 'checked',
 } as const;
+
+export const kendoThemeMaps = {
+    calloutMap: {
+        top: 'n',
+        bottom: 's',
+        left: 'w',
+        right: 'e'
+    }
+} as const;

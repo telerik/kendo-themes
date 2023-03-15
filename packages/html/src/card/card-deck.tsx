@@ -1,30 +1,22 @@
-import * as React from 'react';
-import { classNames } from '../utils';
-import { CardProps } from '../card';
+import { classNames } from '../utils-new';
 
-export interface CardDeckProps {
-    children?: React.ReactElement<CardProps>[];
-    className?: string;
-}
+export const CARDDECK_CLASSNAME = `k-card-deck`;
 
-export class CardDeck extends React.Component<CardDeckProps> {
+export const CardDeck = (
+    props: React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            ...htmlAttributes
-        } = this.props;
-
-        return (
-            <div
-                {...htmlAttributes}
-                className={classNames(
-                    'k-card-deck',
-                    className
-                )}>
-                {children}
-            </div>
-        );
-    }
-}
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                CARDDECK_CLASSNAME,
+            )}>
+            {props.children}
+        </div>
+    );
+};
