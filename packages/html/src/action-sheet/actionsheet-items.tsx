@@ -1,27 +1,20 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames } from "../utils-new";
 
-export interface ActionSheetItemsProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+export const ActionSheetItems = (
+    props: React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        ...other
+    } = props;
 
-
-export class ActionSheetItems extends React.Component<ActionSheetItemsProps> {
-
-    render() {
-        const {
-            children,
-            className,
-        } = this.props;
-
-        return (
-            <div className={classNames(
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
                 'k-list-ul',
-                className
             )}>
-                {children}
-            </div>
-        );
-    }
-}
+            {props.children}
+        </div>
+    );
+};
