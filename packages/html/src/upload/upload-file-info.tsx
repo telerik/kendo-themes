@@ -1,26 +1,34 @@
-import * as React from 'react';
+import { classNames } from "../utils-new";
 
-export interface UploadFileInfoProps {
+export const UPLOADFILEINFO_CLASSNAME = `k-file-info`;
+
+export type KendoUploadFileInfoProps = {
     name?: string;
     size?: string;
     validationMsg?: string;
-}
+};
 
-export class UploadFileInfo extends React.Component<UploadFileInfoProps> {
+export const UploadFileInfo = (
+    props: KendoUploadFileInfoProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        name,
+        size,
+        validationMsg,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            name,
-            size,
-            validationMsg,
-        } = this.props;
-
-        return (
-            <div className="k-file-info">
-                {name && <span className="k-file-name">{name}</span>}
-                {size && <span className="k-file-size">{size}</span>}
-                {validationMsg && <span className="k-file-validation-message">{validationMsg}</span>}
-            </div>
-        );
-    }
-}
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                UPLOADFILEINFO_CLASSNAME,
+            )}>
+            {name && <span className="k-file-name">{name}</span>}
+            {size && <span className="k-file-size">{size}</span>}
+            {validationMsg && <span className="k-file-validation-message">{validationMsg}</span>}
+        </div>
+    );
+};
