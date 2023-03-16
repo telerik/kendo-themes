@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Upload } from '../upload';
-import { UploadFile } from '../upload-file';
-import { UploadFileMultiple } from '../upload-file-multiple';
-import { UploadFileInfo } from '../upload-file-info';
+import { Upload, UploadFile, UploadFileMultiple, UploadFileInfo } from '../../upload';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement

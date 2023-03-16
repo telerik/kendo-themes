@@ -1,71 +1,78 @@
-import * as React from 'react';
-import { classNames } from '../utils';
 import { Button } from '../button';
 import { Icon } from '../icon';
+import { classNames, stateClassNames, States } from '../utils-new';
 
-export interface UploadDropzoneProps {
-    className?: string;
+export const UPLOADDROPZONE_CLASSNAME = `k-upload-dropzone`;
+
+const states = [
+    States.hover,
+];
+
+export type KendoUploadDropzoneProps = {
     status?: 'upload' | 'uploading' | 'done' | 'failed';
-    hover?: boolean;
-}
+};
 
-export class UploadDropzone extends React.Component<UploadDropzoneProps> {
+export type KendoUploadDropzoneState = { [K in (typeof states)[number]]?: boolean };
 
-    render() {
-        const {
-            className,
-            status,
-            hover
-        } = this.props;
+export const UploadDropzone = (
+    props: KendoUploadDropzoneProps &
+        KendoUploadDropzoneState &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        hover,
+        status,
+        ...other
+    } = props;
 
-        let statusMsg = <></>;
+    let statusMsg = <></>;
 
-        switch (status) {
-            case 'uploading':
-                statusMsg = <><Icon name="upload"></Icon>Uploading...</>;
-                break;
-            case 'done':
-                statusMsg = <><Icon name="check"></Icon>Done</>;
-                break;
-            case 'failed':
-                statusMsg = <><Icon name="warning"></Icon>Done</>;
-                break;
-            default:
-                statusMsg = <></>;
-                break;
-        }
-
-        return (
-            <div
-                className={classNames(
-                    className,
-                    'k-dropzone',
-                    'k-upload-dropzone',
-                    {
-                        'k-hover': hover
-                    }
-                )}
-            >
-                <div className="k-upload-button-wrap">
-                    <Button className="k-upload-button">
-                        Select files...
-                    </Button>
-                    <input id="upload-input" className="k-hidden" />
-                </div>
-                <span className={classNames(
-                    'k-dropzone-hint',
-                    {
-                        'k-hidden': status !== "upload"
-                    }
-                )}
-                >
-                Drop files here to upload</span>
-                {status !== "upload" &&
-                    <span className="k-upload-status">
-                        {statusMsg}
-                    </span>
-                }
-            </div>
-        );
+    switch (status) {
+        case 'uploading':
+            statusMsg = <><Icon name="upload"></Icon>Uploading...</>;
+            break;
+        case 'done':
+            statusMsg = <><Icon name="check"></Icon>Done</>;
+            break;
+        case 'failed':
+            statusMsg = <><Icon name="warning"></Icon>Done</>;
+            break;
+        default:
+            statusMsg = <></>;
+            break;
     }
-}
+
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                UPLOADDROPZONE_CLASSNAME,
+                'k-dropzone',
+                stateClassNames(UPLOADDROPZONE_CLASSNAME, {
+                    hover,
+                })
+            )}
+        >
+            <div className="k-upload-button-wrap">
+                <Button className="k-upload-button">
+                    Select files...
+                </Button>
+                <input id="upload-input" className="k-hidden" />
+            </div>
+            <span className={classNames(
+                'k-dropzone-hint',
+                {
+                    'k-hidden': status !== "upload"
+                }
+            )}
+            >
+            Drop files here to upload</span>
+            {status !== "upload" &&
+                <span className="k-upload-status">
+                    {statusMsg}
+                </span>
+            }
+        </div>
+    );
+};
