@@ -1,1 +1,1 @@
-export * from './searchbar';
+export * from './searchbar.spec';
