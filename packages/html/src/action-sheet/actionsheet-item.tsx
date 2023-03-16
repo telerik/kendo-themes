@@ -1,59 +1,63 @@
-import * as React from 'react';
-import { classNames } from '../utils';
 import { Icon } from '../icon';
+import { classNames, stateClassNames, States } from '../utils-new';
 
-export interface ActionSheetItemProps {
-    children?: React.ReactNode;
-    className?: string;
+export const ACTIONSHEETITEM_CLASSNAME = `k-actionsheet-item`;
+
+const states = [
+    States.hover,
+    States.focus,
+    States.selected,
+    States.disabled
+];
+
+export type KendoActionSheetItemProps = {
     text?: string;
     description?: string;
     iconName?: string;
-    hover?: boolean;
-    focus?: boolean;
-    selected?: boolean;
-    disabled?: boolean;
 }
 
+export type KendoActionSheetItemState = { [K in (typeof states)[number]]?: boolean };
 
-export class ActionSheetItem extends React.Component<ActionSheetItemProps> {
+export const ActionSheetItem = (
+    props: KendoActionSheetItemProps &
+        KendoActionSheetItemState &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        iconName,
+        text,
+        description,
+        hover,
+        focus,
+        selected,
+        disabled,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            iconName,
-            text,
-            description,
-            hover,
-            focus,
-            selected,
-            disabled,
-        } = this.props;
 
-
-        return (
-            <span
-                className={classNames(
-                    className,
-                    'k-actionsheet-item',
-                    {
-                        'k-hover': hover,
-                        'k-focus': focus,
-                        'k-selected': selected,
-                        'k-disabled': disabled
-                    }
-                )}>
-                {!children && (text !== '' || description !== '' || iconName !== '') && <>
-                    <span className="k-actionsheet-action">
-                        { iconName !== '' && <span className="k-icon-wrap"><Icon className="k-actionsheet-item-icon" name={iconName} /></span> }
-                        <span className="k-actionsheet-item-text">
-                            { text !== '' && <span className="k-actionsheet-item-title">{text}</span> }
-                            { description !== '' && <span className="k-actionsheet-item-description">{description}</span> }
-                        </span>
+    return (
+        <span
+            {...other}
+            className={classNames(
+                props.className,
+                ACTIONSHEETITEM_CLASSNAME,
+                stateClassNames(ACTIONSHEETITEM_CLASSNAME, {
+                    hover,
+                    focus,
+                    selected,
+                    disabled,
+                }),
+            )}>
+            {!props.children && (text !== '' || description !== '' || iconName !== '') && <>
+                <span className="k-actionsheet-action">
+                    { iconName !== '' && <span className="k-icon-wrap"><Icon className="k-actionsheet-item-icon" name={iconName} /></span> }
+                    <span className="k-actionsheet-item-text">
+                        { text !== '' && <span className="k-actionsheet-item-title">{text}</span> }
+                        { description !== '' && <span className="k-actionsheet-item-description">{description}</span> }
                     </span>
-                </>}
-                {children}
-            </span>
-        );
-    }
-}
+                </span>
+            </>}
+            {props.children}
+        </span>
+    );
+};

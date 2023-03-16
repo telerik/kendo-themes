@@ -1,42 +1,46 @@
-import * as React from 'react';
+import ActionButtons from '../action-buttons/action-buttons.spec';
 import { Button } from '../button';
-import { ActionButtons } from '../action-buttons';
+import { classNames } from '../utils-new';
 
-export interface ActionSheetFooterProps {
+export const ACTIONSHEETFOOTER_CLASSNAME = `k-actionsheet-footer`;
+
+export type KendoActionSheetFooterProps = {
     actions?: string[];
-    children?: React.ReactNode;
-    className?: string;
 }
 
+export const ActionSheetFooter = (
+    props: KendoActionSheetFooterProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        actions,
+        ...other
+    } = props;
 
-export class ActionSheetFooter extends React.Component<ActionSheetFooterProps> {
+    return (
+        <ActionButtons
+            {...other}
+            className={classNames(
+                props.className,
+                ACTIONSHEETFOOTER_CLASSNAME
+            )}
+            alignment="stretched">
+            <>
+                {actions && actions.map( (action, index) => {
+                    if (action === '|') {
+                        return <span key={index} className="k-separator"></span>;
+                    }
+                    if (action === ' ') {
+                        return <span key={index} className="k-spacer"></span>;
+                    }
 
-    render() {
-        const {
-            children,
-            actions
-        } = this.props;
+                    const importantFlag = action.startsWith('!');
+                    const actionName = importantFlag ? action.substring(1) : action;
 
-
-        return (
-            <ActionButtons className="k-actionsheet-footer" alignment="stretched">
-                <>
-                    {actions && actions.map( (action, index) => {
-                        if (action === '|') {
-                            return <span key={index} className="k-separator"></span>;
-                        }
-                        if (action === ' ') {
-                            return <span key={index} className="k-spacer"></span>;
-                        }
-
-                        const importantFlag = action.startsWith('!');
-                        const actionName = importantFlag ? action.substring(1) : action;
-
-                        return <Button key={index} text={actionName} size="large" themeColor={importantFlag ? 'primary' : 'base'} />;
-                    })}
-                    {!actions && children}
-                </>
-            </ActionButtons>
-        );
-    }
-}
+                    return <Button key={index} text={actionName} size="large" themeColor={importantFlag ? 'primary' : 'base'} />;
+                })}
+                {!actions && props.children}
+            </>
+        </ActionButtons>
+    );
+};
