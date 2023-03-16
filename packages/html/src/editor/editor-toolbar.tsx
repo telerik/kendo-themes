@@ -1,30 +1,29 @@
-import * as React from 'react';
 import { Toolbar } from '../toolbar';
-import { classNames } from '../utils';
+import { classNames } from '../utils-new';
 
-export interface EditorToolbarProps {
-    children?: React.ReactElement[] | React.ReactElement;
-    className?: string;
+export const EDITORTOOLBAR_CLASSNAME = `k-editor-toolbar`;
+
+export type KendoEditorToolbarProps = {
     resizable?: boolean;
 }
 
-export class EditorToolbar extends React.Component<EditorToolbarProps> {
+export const EditorToolbar = (
+    props: KendoEditorToolbarProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        resizable,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            resizable,
-        } = this.props;
-
-
-        return (
-            <Toolbar className={classNames(
-                'k-editor-toolbar',
-                className
+    return (
+        <Toolbar
+            {...other}
+            className={classNames(
+                props.className,
+                EDITORTOOLBAR_CLASSNAME,
             )} resizable={resizable}>
-                {children}
-            </Toolbar>
-        );
-    }
-}
+            {props.children}
+        </Toolbar>
+    );
+};

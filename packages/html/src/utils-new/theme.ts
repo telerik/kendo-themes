@@ -52,6 +52,7 @@ export const States = {
     'empty': 'empty',
     'indeterminate': 'indeterminate',
     'checked': 'checked',
+    'readonly': 'readonly',
 } as const;
 
 export const kendoThemeMaps = {

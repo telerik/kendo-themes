@@ -45,5 +45,6 @@ export const stateClassNames = (_componentClassName: string | undefined, props: 
         'k-indeterminate': props.indeterminate && !props.checked,
         'k-loading': props.loading,
         'k-empty': props.empty,
+        'k-readonly': props.readonly,
     });
 };
