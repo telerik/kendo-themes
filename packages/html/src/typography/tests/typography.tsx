@@ -1,5 +1,4 @@
 /* eslint-disable indent */
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Typography } from '../../typography';
 import { Button } from '../../button';

@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ActionSheet, ActionSheetHeader } from '../../action-sheet';
 import { Treeview, TreeviewItem } from '../../treeview';

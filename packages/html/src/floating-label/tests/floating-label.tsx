@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { FloatingLabel } from '../../floating-label';
 import { Textbox } from '../../textbox';

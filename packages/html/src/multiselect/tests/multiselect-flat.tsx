@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction } from '../../chip';
 import { MultiSelect } from '../../multiselect';

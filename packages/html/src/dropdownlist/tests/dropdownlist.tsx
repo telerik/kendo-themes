@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { DropdownList } from '../../dropdownlist';
 import { List, ListItem } from '../../list';

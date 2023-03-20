@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { TimeSelector } from '../time-selector.spec';
 import { Button } from '../../button';
