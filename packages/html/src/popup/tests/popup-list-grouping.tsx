@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { List, ListAngular, ListGroup, ListItem } from '../../list';
 import { Popup } from '../../popup';

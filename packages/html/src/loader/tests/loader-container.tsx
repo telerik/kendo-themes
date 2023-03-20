@@ -1,4 +1,3 @@
-import React from 'react';
 import { LoaderContainer } from '../../loader';
 import ReactDOM from 'react-dom/client';
 

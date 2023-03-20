@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Dialog } from '../../dialog';
 import { Upload } from '../../upload';

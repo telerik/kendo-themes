@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Card, CardHeader, CardBody, CardFooter } from '../../card';
 import { ActionButtons } from '../../action-buttons';

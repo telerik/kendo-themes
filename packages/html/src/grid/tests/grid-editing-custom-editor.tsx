@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Autocomplete } from '../../autocomplete';
 import { Combobox } from '../../combobox';

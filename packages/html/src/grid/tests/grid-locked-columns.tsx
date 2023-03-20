@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';

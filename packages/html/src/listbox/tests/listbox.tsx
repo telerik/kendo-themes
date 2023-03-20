@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ListItem } from '../../list';
 import { ListBox } from '../../listbox';
