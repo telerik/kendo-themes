@@ -108,7 +108,7 @@ export const DateTimePicker = (
                 />
             </Input>
             { opened &&
-                <Popup>
+                <Popup className="k-datetimepicker-popup">
                     <DateTimeSelector tab={tab} />
                 </Popup>
             }

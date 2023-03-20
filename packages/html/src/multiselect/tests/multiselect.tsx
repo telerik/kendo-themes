@@ -1,6 +1,5 @@
 import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction } from '../../chip';
-import { List, ListItem } from '../../list';
 import { MultiSelect } from '../../multiselect';
 
 const root = ReactDOM.createRoot(
@@ -176,43 +175,6 @@ root.render(
                 />
             </div>
 
-            <div>Opened</div>
-            <div>
-                <MultiSelect opened
-                    tags={(
-                        <>
-                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
-                        </>
-                    )}
-                    list={(
-                        <List>
-                            <ListItem>List item</ListItem>
-                            <ListItem selected>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem selected>List item</ListItem>
-                        </List>
-                    )}
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect opened
-                    tags={(
-                        <>
-                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
-                        </>
-                    )}
-                    list={(
-                        <List>
-                            <ListItem>List item</ListItem>
-                            <ListItem selected>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem selected>List item</ListItem>
-                        </List>
-                    )}
-                />
-            </div>
         </div>
     </>
 );

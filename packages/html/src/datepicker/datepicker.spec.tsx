@@ -102,7 +102,7 @@ export const DatePicker = (
                 />
             </Input>
             { opened &&
-                <Popup>
+                <Popup className="k-datepicker-popup">
                     <Calendar />
                 </Popup>
             }

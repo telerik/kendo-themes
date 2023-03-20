@@ -1,6 +1,5 @@
 import ReactDOM from 'react-dom/client';
 import { DropdownTree } from '../../dropdowntree';
-import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -74,47 +73,6 @@ root.render(
             </div>
             <div dir="rtl">
                 <DropdownTree value="Loading..." loading />
-            </div>
-
-            <div>
-                <DropdownTree value="Opened" opened
-                    tree={(
-                        <Treeview>
-                            <TreeviewItem text="Root 1" />
-                            <TreeviewItem text="Root 2" expanded>
-                                <TreeviewGroup>
-                                    <TreeviewItem text="Child 2.1" expanded>
-                                        <TreeviewGroup>
-                                            <TreeviewItem text="Child 2.1.1" />
-                                        </TreeviewGroup>
-                                    </TreeviewItem>
-                                    <TreeviewItem text="Child 2.2" />
-                                    <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more ..." />
-                                </TreeviewGroup>
-                            </TreeviewItem>
-                        </Treeview>
-                    )}
-                />
-            </div>
-            <div dir="rtl">
-                <DropdownTree value="Opened" opened
-                    tree={(
-                        <Treeview>
-                            <TreeviewItem text="Root 1" />
-                            <TreeviewItem text="Root 2" expanded>
-                                <TreeviewGroup>
-                                    <TreeviewItem text="Child 2.1" expanded>
-                                        <TreeviewGroup>
-                                            <TreeviewItem text="Child 2.1.1" />
-                                        </TreeviewGroup>
-                                    </TreeviewItem>
-                                    <TreeviewItem text="Child 2.2" />
-                                    <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more ..." />
-                                </TreeviewGroup>
-                            </TreeviewItem>
-                        </Treeview>
-                    )}
-                />
             </div>
 
         </div>

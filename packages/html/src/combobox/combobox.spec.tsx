@@ -40,7 +40,7 @@ export type KendoComboboxProps = KendoComboboxOptions & {
     suffix?: JSX.Element;
     value?: string;
     placeholder?: string;
-    list?: JSX.Element;
+    popup?: JSX.Element;
     opened?: boolean;
 };
 
@@ -66,7 +66,7 @@ export const Combobox = (
         required,
         loading,
         disabled,
-        list,
+        popup,
         opened,
         ...other
     } = props;
@@ -102,9 +102,9 @@ export const Combobox = (
                     fillMode={fillMode}
                 />
             </Input>
-            { opened && list &&
-                <Popup>
-                    {list}
+            { opened && popup &&
+                <Popup className="k-combobox-popup">
+                    {popup}
                 </Popup>
             }
         </>

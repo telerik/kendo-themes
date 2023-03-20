@@ -42,7 +42,7 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     value?: string;
     placeholder?: string;
     showValue?: boolean;
-    tree?: JSX.Element;
+    popup?: JSX.Element;
     opened?: boolean;
 };
 
@@ -76,7 +76,7 @@ export const DropdownTree = (
         loading,
         disabled,
         showValue = defaultProps.showValue,
-        tree,
+        popup,
         opened,
         ...other
     } = props;
@@ -122,9 +122,9 @@ export const DropdownTree = (
                     fillMode={props.fillMode}
                 />
             </Picker>
-            { opened && tree &&
-                <Popup>
-                    {tree}
+            { opened && popup &&
+                <Popup className="k-dropdowntree-popup">
+                    {popup}
                 </Popup>
             }
         </>

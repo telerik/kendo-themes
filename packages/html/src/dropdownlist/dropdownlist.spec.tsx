@@ -42,7 +42,7 @@ export type KendoDropdownListProps = KendoDropdownListOptions & {
     value?: string;
     placeholder?: string;
     showValue?: boolean;
-    list?: JSX.Element;
+    popup?: JSX.Element;
     opened?: boolean;
 };
 
@@ -76,7 +76,7 @@ export const DropdownList = (
         loading,
         disabled,
         showValue = defaultProps.showValue,
-        list,
+        popup,
         opened,
         ...other
     } = props;
@@ -122,9 +122,9 @@ export const DropdownList = (
                     fillMode={props.fillMode}
                 />
             </Picker>
-            { opened && list &&
-                <Popup>
-                    {list}
+            { opened && popup &&
+                <Popup className="k-dropdownlist-popup">
+                    {popup}
                 </Popup>
             }
         </>
