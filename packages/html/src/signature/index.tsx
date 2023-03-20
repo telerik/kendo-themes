@@ -1,1 +1,1 @@
-export * from './signature';
+export * from './signature.spec';
