@@ -1,2 +1,1 @@
-export * from './listbox';
-export * from './listbox-actions';
+export * from './listbox.spec';
