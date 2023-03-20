@@ -83,7 +83,7 @@ export const DateRangePicker = (
                 </FloatingLabel>
             </span>
             { opened &&
-                <Popup>
+                <Popup className="k-daterangepicker-popup">
                     <MultiViewCalendar />
                 </Popup>
             }

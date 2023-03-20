@@ -75,13 +75,6 @@ root.render(
                 <TimePicker value="Loading..." loading />
             </div>
 
-            <div>
-                <TimePicker value="Opened" opened />
-            </div>
-            <div dir="rtl">
-                <TimePicker value="Opened" opened />
-            </div>
-
         </div>
     </>
 );

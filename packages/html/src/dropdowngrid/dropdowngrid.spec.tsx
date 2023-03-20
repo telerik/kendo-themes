@@ -9,6 +9,7 @@ import {
     InputValidationIcon
 } from '../input';
 import { Button } from '../button';
+import { Popup } from '../popup';
 
 export const DROPDOWNGRID_CLASSNAME = `k-dropdowngrid`;
 
@@ -41,6 +42,8 @@ export type KendoDropdownGridProps = KendoDropdownGridOptions & {
     value?: string;
     placeholder?: string;
     autocomplete?: string;
+    popup?: JSX.Element;
+    opened?: boolean;
 };
 
 export type KendoDropdownGridState = { [K in (typeof states)[number]]?: boolean };
@@ -65,39 +68,52 @@ export const DropdownGrid = (
         required,
         loading,
         disabled,
+        popup,
+        opened,
         ...other
     } = props;
 
 
     return (
-        <Input
-            {...other}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            hover={hover}
-            focus={focus}
-            valid={valid}
-            invalid={invalid}
-            required={required}
-            loading={loading}
-            disabled={disabled}
-            className={classNames(props.className, DROPDOWNGRID_CLASSNAME)}
-        >
-            <InputPrefix>{prefix}</InputPrefix>
-            <InputInnerInput placeholder={placeholder} value={value} />
-            <InputLoadingIcon {...props} />
-            <InputValidationIcon {...props} />
-            <InputClearValue {...props} />
-            <InputSuffix>{suffix}</InputSuffix>
-            <Button
-                className="k-input-button"
-                icon="caret-alt-down"
-                rounded={null}
+        <>
+            <Input
+                {...other}
                 size={size}
+                rounded={rounded}
                 fillMode={fillMode}
-            />
-        </Input>
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(
+                    props.className,
+                    DROPDOWNGRID_CLASSNAME,
+                    'k-combobox'
+                )}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputLoadingIcon {...props} />
+                <InputValidationIcon {...props} />
+                <InputClearValue {...props} />
+                <InputSuffix>{suffix}</InputSuffix>
+                <Button
+                    className="k-input-button"
+                    icon="caret-alt-down"
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}
+                />
+            </Input>
+            { opened && popup &&
+                <Popup className="k-dropdowngrid-popup">
+                    {popup}
+                </Popup>
+            }
+        </>
     );
 };
 

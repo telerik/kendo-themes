@@ -103,7 +103,7 @@ export const TimeDurationPicker = (
                 />
             </Input>
             { opened &&
-                <Popup>
+                <Popup className="k-timedurationpicker-popup">
                     <TimeSelector columns={[ "dd", "HH", "mm" ]} focusedColumn="HH" fastSelection={(<TimeSelectorFastSelection/>)}/>
                     <ActionButtons alignment="stretched" className="k-timeduration-footer">
                         <Button className="k-time-cancel">Cancel</Button>

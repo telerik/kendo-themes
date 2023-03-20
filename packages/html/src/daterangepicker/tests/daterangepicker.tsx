@@ -54,14 +54,6 @@ root.render(
                 <DateRangePicker fillMode="outline" />
             </div>
 
-            <span>DateRangePicker Opened</span>
-            <span>DateRangePicker Opened</span>
-            <div>
-                <DateRangePicker opened />
-            </div>
-            <div dir="rtl">
-                <DateRangePicker opened />
-            </div>
         </div>
     </>
 );

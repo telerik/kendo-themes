@@ -43,7 +43,7 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     value?: string;
     placeholder?: string;
     tags?: JSX.Element;
-    list?: JSX.Element;
+    popup?: JSX.Element;
     showArrowButton?: boolean;
     opened?: boolean;
 };
@@ -61,7 +61,7 @@ export const MultiSelect = (
         value,
         placeholder,
         tags,
-        list,
+        popup,
         size,
         rounded,
         fillMode,
@@ -117,9 +117,9 @@ export const MultiSelect = (
                     />
                 )}
             </Input>
-            { opened && list &&
-                <Popup>
-                    {list}
+            { opened && popup &&
+                <Popup className="k-multiselect-popup">
+                    {popup}
                 </Popup>
             }
         </>
