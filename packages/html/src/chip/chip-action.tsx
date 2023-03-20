@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames } from '../utils-new';
+import { classNames } from '../utils';
 
 export const CHIPACTION_CLASSNAME = `k-chip-action`;
 

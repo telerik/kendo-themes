@@ -1,4 +1,4 @@
-import { classNames, kendoThemeMaps } from '../utils-new';
+import { classNames, kendoThemeMaps } from '../utils';
 import { OrgchartNode } from '../orgchart';
 
 export const ORGCHART_CLASSNAME = `k-orgchart`;

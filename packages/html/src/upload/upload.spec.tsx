@@ -1,6 +1,6 @@
 import ActionButtons from '../action-buttons/action-buttons.spec';
 import { Button } from '../button';
-import { classNames, stateClassNames, States } from '../utils-new';
+import { classNames, stateClassNames, States } from '../utils';
 import { UploadDropzone } from './upload-dropzone';
 
 export const UPLOAD_CLASSNAME = `k-upload`;

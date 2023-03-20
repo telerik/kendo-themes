@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils-new';
+import { classNames, stateClassNames, States } from '../utils';
 
 export const TOOLBARITEM_CLASSNAME = `k-toolbar-item`;
 

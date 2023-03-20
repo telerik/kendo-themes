@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames, stateClassNames, States } from '../utils-new';
+import { classNames, stateClassNames, States } from '../utils';
 
 export const TREEVIEWLEAF_CLASSNAME = `k-treeview-leaf`;
 

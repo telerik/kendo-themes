@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils-new';
+import { classNames, optionClassNames, Size } from '../utils';
 
 export const CHIPLIST_CLASSNAME = `k-chip-list`;
 

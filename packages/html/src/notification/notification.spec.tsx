@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames, optionClassNames, ThemeColor } from '../utils-new';
+import { classNames, optionClassNames, ThemeColor } from '../utils';
 
 export const NOTIFICATION_CLASSNAME = `k-notification`;
 

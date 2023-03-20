@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size, ThemeColor } from '../utils-new';
+import { classNames, optionClassNames, Size, ThemeColor } from '../utils';
 
 export const LOADER_CLASSNAME = `k-loader`;
 

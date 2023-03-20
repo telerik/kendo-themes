@@ -1,4 +1,4 @@
-import { classNames } from '../utils-new';
+import { classNames } from '../utils';
 import { Icon } from '../icon';
 
 export const COLORPREVIEW_CLASSNAME = `k-color-preview`;

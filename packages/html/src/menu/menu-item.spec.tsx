@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames, stateClassNames, States } from '../utils-new';
+import { classNames, stateClassNames, States } from '../utils';
 
 export const MENUITEM_CLASSNAME = `k-menu-item`;
 

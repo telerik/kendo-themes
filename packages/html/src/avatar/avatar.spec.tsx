@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils-new';
+import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils';
 
 export const AVATAR_CLASSNAME = `k-avatar`;
 

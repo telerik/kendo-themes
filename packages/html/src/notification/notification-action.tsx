@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames } from '../utils-new';
+import { classNames } from '../utils';
 
 export enum notificatonActionType {
     CLOSE = 'close'

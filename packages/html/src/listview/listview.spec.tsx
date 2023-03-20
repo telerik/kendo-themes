@@ -1,5 +1,5 @@
 import { Pager } from '../pager';
-import { classNames, States } from '../utils-new';
+import { classNames, States } from '../utils';
 
 export const LISTVIEW_CLASSNAME = `k-listview`;
 

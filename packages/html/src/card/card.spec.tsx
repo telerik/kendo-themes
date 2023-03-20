@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States, ThemeColor } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, ThemeColor } from '../utils';
 import { CardCallout } from './card-callout';
 
 export const CARD_CLASSNAME = `k-card`;

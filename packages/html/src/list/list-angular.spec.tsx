@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils-new';
+import { classNames, optionClassNames, Size } from '../utils';
 import { ListItem, ListGroup, ListContent, ListGroupItem } from '../list';
 import { NoData } from '../nodata';
 

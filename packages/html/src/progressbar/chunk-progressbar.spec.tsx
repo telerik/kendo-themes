@@ -1,4 +1,4 @@
-import { classNames, States, } from '../utils-new';
+import { classNames, States, } from '../utils';
 import { PROGRESSBAR_CLASSNAME } from './progressbar.spec';
 
 export const CHUNKPROGRESSBAR_CLASSNAME = `k-chunk-progressbar`;

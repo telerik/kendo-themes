@@ -1,4 +1,4 @@
-import { classNames } from '../utils-new';
+import { classNames } from '../utils';
 import { Card, CardBody, CardSubtitle, CardTitle } from '../card';
 import { Avatar } from '../avatar';
 import { Button } from '../button';

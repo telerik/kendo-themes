@@ -1,4 +1,4 @@
-import { classNames } from "../utils-new";
+import { classNames } from "../utils";
 
 export const UPLOADFILEINFO_CLASSNAME = `k-file-info`;
 

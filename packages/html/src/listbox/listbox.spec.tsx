@@ -1,6 +1,6 @@
 import { Button } from '../button';
 import List from '../list/list.spec';
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils';
 
 export const LISTBOX_CLASSNAME = `k-listbox`;
 

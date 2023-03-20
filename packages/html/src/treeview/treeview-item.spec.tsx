@@ -1,6 +1,6 @@
 import { Checkbox } from '../checkbox';
 import { Icon } from '../icon';
-import { classNames, stateClassNames, States } from '../utils-new';
+import { classNames, stateClassNames, States } from '../utils';
 import TreeviewLeaf from './treeview-leaf';
 
 export const TREEVIEWITEM_CLASSNAME = `k-treeview-item`;

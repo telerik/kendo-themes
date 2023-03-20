@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils';
 
 export const RADIOBUTTON_CLASSNAME = `k-radio`;
 

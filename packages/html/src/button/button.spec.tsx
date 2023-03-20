@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils';
 
 export const BUTTON_CLASSNAME = `k-button`;
 

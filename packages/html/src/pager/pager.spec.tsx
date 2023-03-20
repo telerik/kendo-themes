@@ -1,7 +1,7 @@
 import { Button } from '../button';
 import { DropdownList } from '../dropdownlist';
 import { Textbox } from '../textbox';
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils';
 
 export const PAGER_CLASSNAME = `k-pager`;
 

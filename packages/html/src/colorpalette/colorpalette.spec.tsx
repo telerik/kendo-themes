@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils-new';
+import { classNames, stateClassNames, States } from '../utils';
 import { PALETTEPRESETS } from './colorpalette-presets';
 import { ColorPaletteRow } from './colorpalette-row';
 import { ColorPaletteTile } from './colorpalette-tile';

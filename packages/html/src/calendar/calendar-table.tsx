@@ -1,4 +1,4 @@
-import { classNames } from '../utils-new';
+import { classNames } from '../utils';
 import { CalendarCell, CalendarTableHead } from '../calendar';
 
 export const CALENDARTABLE_CLASSNAME = `k-calendar-table`;

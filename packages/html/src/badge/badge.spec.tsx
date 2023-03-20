@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size, Roundness, FillMode, ThemeColor } from '../utils-new';
+import { classNames, optionClassNames, Size, Roundness, FillMode, ThemeColor } from '../utils';
 
 export const BADGE_CLASSNAME = `k-badge`;
 
