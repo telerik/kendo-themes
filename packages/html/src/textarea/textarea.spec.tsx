@@ -1,4 +1,4 @@
-import { classNames, States, Size, Roundness, FillMode } from '../utils-new';
+import { classNames, States, Size, Roundness, FillMode } from '../utils';
 import {
     Input,
     InputInnerTextarea

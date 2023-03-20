@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States, FillMode } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, FillMode } from '../utils';
 
 export const BUTTONGROUP_CLASSNAME = `k-button-group`;
 

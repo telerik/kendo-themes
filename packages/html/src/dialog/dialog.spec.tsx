@@ -1,6 +1,6 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
-import { classNames, optionClassNames, ThemeColor } from '../utils-new';
+import { classNames, optionClassNames, ThemeColor } from '../utils';
 
 export const DIALOG_CLASSNAME = `k-dialog`;
 

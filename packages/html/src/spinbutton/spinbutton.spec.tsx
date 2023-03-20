@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames, Size, FillMode } from '../utils-new';
+import { classNames, Size, FillMode } from '../utils';
 
 export const SPINBUTTON_CLASSNAME = `k-spin-button`;
 

@@ -1,4 +1,4 @@
-import { classNames, optionClassNames } from '../utils-new';
+import { classNames, optionClassNames } from '../utils';
 
 const className = `k-input-inner`;
 

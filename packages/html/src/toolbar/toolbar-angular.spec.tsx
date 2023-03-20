@@ -5,7 +5,7 @@ import { Combobox } from '../combobox';
 import { DropdownList } from '../dropdownlist';
 import { MenuButton } from '../menu-button';
 import SplitButton from '../split-button/split-button.spec';
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils-new';
+import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils';
 
 export const TOOLBARANGULAR_CLASSNAME = `k-toolbar`;
 

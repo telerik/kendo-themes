@@ -1,4 +1,4 @@
-import { classNames } from '../utils-new';
+import { classNames } from '../utils';
 import { Button } from '../button';
 
 const className = `k-calendar-footer`;

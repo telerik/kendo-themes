@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils-new';
+import { classNames, optionClassNames, Size } from '../utils';
 
 export const MENULIST_CLASSNAME = `k-menu-group`;
 

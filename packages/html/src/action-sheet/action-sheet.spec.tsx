@@ -1,4 +1,4 @@
-import { classNames } from '../utils-new';
+import { classNames } from '../utils';
 import { ActionSheetHeader, ActionSheetItems, ActionSheetFooter } from '../action-sheet';
 
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;

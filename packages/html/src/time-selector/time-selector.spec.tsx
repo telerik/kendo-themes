@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils-new';
+import { classNames, optionClassNames, Size } from '../utils';
 import { TimeSelectorColumn } from '.';
 
 export type timeType = 'dd' | 'HH' | 'mm' | 'ss' | 'SSS' | 'tt';

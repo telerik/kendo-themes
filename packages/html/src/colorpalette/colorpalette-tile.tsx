@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils-new';
+import { classNames, stateClassNames, States } from '../utils';
 
 export const COLORPALETTETILE_CLASSNAME = `k-colorpalette-tile`;
 

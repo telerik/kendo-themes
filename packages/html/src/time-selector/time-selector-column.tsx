@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils-new';
+import { classNames, stateClassNames, States } from '../utils';
 import { timeType } from './time-selector.spec';
 
 const states = [

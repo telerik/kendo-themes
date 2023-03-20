@@ -1,4 +1,4 @@
-import { classNames, kendoThemeMaps } from '../utils-new';
+import { classNames, kendoThemeMaps } from '../utils';
 
 export const POPOVER_CLASSNAME = `k-popover`;
 

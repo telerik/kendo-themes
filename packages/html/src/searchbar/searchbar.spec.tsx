@@ -1,4 +1,4 @@
-import { classNames } from '../utils-new';
+import { classNames } from '../utils';
 import { InputInnerInput } from '../input';
 
 export const SEARCHBAR_CLASSNAME = `k-searchbar`;

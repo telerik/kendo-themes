@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size, ThemeColor } from '../utils-new';
+import { classNames, optionClassNames, Size, ThemeColor } from '../utils';
 
 export const ICON_CLASSNAME = `k-icon`;
 
