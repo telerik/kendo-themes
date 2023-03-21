@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--background--background-clip() {
+
+    // Background color utility classes
+    $kendo-utils-background-clip: k-map-get( $kendo-utils, "background-clip" ) !default;
+    @include generate-utils( bg-clip, background-clip, $kendo-utils-background-clip );
+
+}

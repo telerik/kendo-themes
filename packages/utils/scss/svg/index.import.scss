@@ -1,0 +1,7 @@
+@import "./_fill.scss";
+@import "./_stroke.scss";
+
+@mixin kendo-utils--svg() {
+    @include kendo-utils--svg--fill();
+    @include kendo-utils--svg--stroke();
+}

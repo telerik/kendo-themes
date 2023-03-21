@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--layout--object-fit() {
+
+    // object-fit utility classes
+    $kendo-utils-object-fit: k-map-get( $kendo-utils, "object-fit" ) !default;
+    @include generate-utils( object-fit, object-fit, $kendo-utils-object-fit );
+
+}

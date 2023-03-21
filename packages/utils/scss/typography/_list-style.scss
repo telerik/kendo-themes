@@ -1,0 +1,9 @@
+// TODO: docs
+
+@mixin kendo-utils--typography--list-style-type() {
+
+    // list-style-type utility classes
+    $kendo-utils-list-style-type: k-map-get( $kendo-utils, "list-style-type" ) !default;
+    @include generate-utils( list, list-style-type, $kendo-utils-list-style-type );
+
+}

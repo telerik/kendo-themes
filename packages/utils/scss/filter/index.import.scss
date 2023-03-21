@@ -1,0 +1,5 @@
+@import "./_backdrop.scss";
+
+@mixin kendo-utils--filter() {
+    @include kendo-utils--filter--backdrop();
+}
