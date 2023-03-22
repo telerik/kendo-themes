@@ -8,7 +8,7 @@ $kendo-progressbar-height: $progress-height !default;
 $kendo-progressbar-horizontal-width: 100% !default;
 /// Animation timing of the progressbar.
 /// @group progressbar
-$kendo-progressbar-animation-timing: progress-bar-animation-timing !default;
+$kendo-progressbar-animation-timing: $progress-bar-animation-timing !default;
 /// Border width of the progressbar.
 /// @group progressbar
 $kendo-progressbar-border-width: 0px !default;
