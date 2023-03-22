@@ -5983,9 +5983,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-animation-timing</td>
-    <td>String</td>
-    <td><code>progress-bar-animation-timing</code></td>
-    <td><code>progress-bar-animation-timing</code></td>
+    <td>List</td>
+    <td><code>$progress-bar-animation-timing</code></td>
+    <td><code>1s linear infinite</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Animation timing of the progressbar.</div></div>
