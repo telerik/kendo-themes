@@ -34,7 +34,7 @@ The following table lists the available variables for customization.
     <td><code>50%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ The following table lists the available variables for customization.
     <td><code>12px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a small radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a small RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a medium radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a medium RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@ The following table lists the available variables for customization.
     <td><code>20px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of a large radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a large RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td><code>10px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a small radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a small RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a medium radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a medium RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ The following table lists the available variables for customization.
     <td><code>18px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph size of a large radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph size of a large RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ The following table lists the available variables for customization.
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a small radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a small RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@ The following table lists the available variables for customization.
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a medium radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a medium RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -134,7 +134,33 @@ The following table lists the available variables for customization.
     <td><code>300%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Ripple size of a large radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ripple size of a large RadioButton.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        size: $kendo-radio-sm-size,
+        glyph-size: $kendo-radio-sm-glyph-size,
+        ripple-size: $kendo-radio-sm-ripple-size
+    ),
+    md: (
+        size: $kendo-radio-md-size,
+        glyph-size: $kendo-radio-md-glyph-size,
+        ripple-size: $kendo-radio-md-ripple-size
+    ),
+    lg: (
+        size: $kendo-radio-lg-size,
+        glyph-size: $kendo-radio-lg-glyph-size,
+        ripple-size: $kendo-radio-lg-ripple-size
+    )
+)</code></td>
+    <td><code>(sm: (size: 12px, glyph-size: 10px, ripple-size: 300%), md: (size: 16px, glyph-size: 14px, ripple-size: 300%), lg: (size: 20px, glyph-size: 18px, ripple-size: 300%))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The map with the different RadioButton sizes.</div></div>
     </td>
 </tr>
 <tr>
@@ -144,7 +170,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -154,7 +180,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -164,7 +190,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -174,7 +200,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -184,7 +210,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of hovered radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -194,7 +220,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -204,7 +230,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -214,7 +240,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -224,7 +250,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -234,7 +260,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -244,7 +270,7 @@ The following table lists the available variables for customization.
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.06)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -254,7 +280,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -264,7 +290,7 @@ The following table lists the available variables for customization.
     <td><code>0 0 0 2px rgba(255, 99, 88, 0.3)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -274,7 +300,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -284,7 +310,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the disabled RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -294,7 +320,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -304,7 +330,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -314,7 +340,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the disabled and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -324,7 +350,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of disabled and checked RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -334,7 +360,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of invalid radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the invalid RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -344,7 +370,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of invalid radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the invalid RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -354,7 +380,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of invalid radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -364,7 +390,7 @@ The following table lists the available variables for customization.
     <td><code>image</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Type of radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The type of the RadioButton indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -374,7 +400,7 @@ The following table lists the available variables for customization.
     <td><code>"WebComponentsIcons", monospace</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph font family of radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the RadioButton indicator glyph.</div></div>
     </td>
 </tr>
 <tr>
@@ -384,7 +410,7 @@ The following table lists the available variables for customization.
     <td><code>"\e308"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph of radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The glyph of the RadioButton indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -394,7 +420,7 @@ The following table lists the available variables for customization.
     <td><code>url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3e%3ccircle cx='50%25' cy='50%25' r='4' fill='white'/%3e%3c/svg%3e")</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the checked RadioButton indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -404,7 +430,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of disabled and checked radio button indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The image of the disabled and checked RadioButton indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -414,7 +440,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the radio button inside of a label.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the RadioButton inside of a label.</div></div>
     </td>
 </tr>
 <tr>
@@ -424,7 +450,7 @@ The following table lists the available variables for customization.
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal list item margin of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal list item margin of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -434,7 +460,7 @@ The following table lists the available variables for customization.
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal list item padding of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal list item padding of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -444,7 +470,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical list item padding of radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical list item padding of the RadioButton.</div></div>
     </td>
 </tr>
 <tr>
@@ -454,7 +480,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button ripple.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the RadioButton ripple.</div></div>
     </td>
 </tr>
 <tr>
@@ -464,7 +490,7 @@ The following table lists the available variables for customization.
     <td><code>0.25</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio button ripple.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the RadioButton ripple.</div></div>
     </td>
 </tr>
 </tbody>

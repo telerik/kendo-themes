@@ -1,129 +1,130 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Font size of the list component.
+/// The font size of the List component.
 /// @group list
 $kendo-list-sm-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-list-md-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-list-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
-/// Line height of the list component.
+/// The line height of the List component.
 /// @group list
 $kendo-list-sm-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-md-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-lg-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Horizontal padding of list header.
+/// The horizontal padding of the List header.
 /// @group list
 $kendo-list-sm-header-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-md-header-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-lg-header-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
-/// Vertical padding of list header.
+/// The vertical padding of the List header.
 /// @group list
 $kendo-list-sm-header-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-md-header-padding-y: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-lg-header-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
 
-/// Border width of list header.
+/// The border width of the List header.
 /// @group list
 $kendo-list-header-border-width: 0 !default;
 
-/// Font size of list header.
+/// The font size of the List header.
 /// @group list
 $kendo-list-sm-header-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-list-md-header-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-list-lg-header-font-size: var( --kendo-font-size, inherit ) !default;
 
-/// Line height of list header.
+/// The line height of the List header.
 /// @group list
 $kendo-list-sm-header-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-md-header-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-lg-header-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Font weight of list header.
+/// The font weight of the List header.
 /// @group list
 $kendo-list-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
-/// Horizontal padding of list items.
+/// The horizontal padding of the List items.
 /// @group list
 $kendo-list-sm-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-md-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-lg-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
-/// Vertical padding of list items.
+/// The vertical padding of the List items.
 /// @group list
 $kendo-list-sm-item-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-md-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-lg-item-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
 
-/// Font size of list items.
+/// The font size of the List items.
 /// @group list
 $kendo-list-sm-item-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-list-md-item-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-list-lg-item-font-size: var( --kendo-font-size, inherit ) !default;
 
-/// Line height of list items.
+/// The line height of the List items.
 /// @group list
 $kendo-list-sm-item-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-md-item-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-lg-item-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Font size of list item group label.
+/// The font size of the List item group label.
 /// @group list
 $kendo-list-item-group-label-sm-font-size: var( --kendo-font-size-xs, inherit ) !default;
 $kendo-list-item-group-label-md-font-size: var( --kendo-font-size-xs, inherit ) !default;
 $kendo-list-item-group-label-lg-font-size: var( --kendo-font-size-xs, inherit ) !default;
 
-/// Horizontal padding of list group items.
+/// The horizontal padding of the List group items.
 /// @group list
 $kendo-list-sm-group-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-md-group-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-lg-group-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
-/// Vertical padding of list group items.
+/// The vertical padding of the List group items.
 /// @group list
 $kendo-list-sm-group-item-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-md-group-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
 $kendo-list-lg-group-item-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
 
-/// Horizontal padding of list item group label.
+/// The horizontal padding of the List item group label.
 /// @group list
 $kendo-list-item-group-label-sm-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-list-item-group-label-md-padding-x: map.get( $kendo-spacing, 1 ) !default;
 $kendo-list-item-group-label-lg-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
 
-/// Vertical padding of list item group label.
+/// The vertical padding of the List item group label.
 /// @group list
 $kendo-list-item-group-label-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-list-item-group-label-md-padding-y: map.get( $kendo-spacing, 1 ) !default;
 $kendo-list-item-group-label-lg-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 
-/// Border width of list group items.
+/// The border width of the List group items.
 /// @group list
 $kendo-list-group-item-border-width: 1px 0 0 !default;
 
-/// Font size of list group items.
+/// The font size of the List group items.
 /// @group list
 $kendo-list-sm-group-item-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-list-md-group-item-font-size: var( --kendo-font-size, inherit ) !default;
 $kendo-list-lg-group-item-font-size: var( --kendo-font-size, inherit ) !default;
 
-/// Line height of list group items.
+/// The line height of the List group items.
 /// @group list
 $kendo-list-sm-group-item-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-md-group-item-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-list-lg-group-item-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Font weight of list group item.
+/// The font weight of the List group item.
 /// @group list
 $kendo-list-group-item-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
-/// Color of the list item icon
+/// The text color of the List item icon
 /// @group list
 $kendo-list-item-icon-text: get-theme-color-var( primary-100 ) !default;
 
-// Kendo list sizes
+/// The map with the sizes of the List.
+/// @group list
 $kendo-list-sizes: (
     sm: (
         font-size: $kendo-list-sm-font-size,
@@ -185,89 +186,89 @@ $kendo-list-sizes: (
 ) !default;
 
 
-/// Background color of the list component.
+/// The background color of the List component.
 /// @group list
 $kendo-list-bg: var( --kendo-component-bg, transparent ) !default;
-/// Text color of the list component.
+/// The text color of the List component.
 /// @group list
 $kendo-list-text: var( --kendo-component-text, inherit ) !default;
-/// Border color of the list component.
+/// The border color of the List component.
 /// @group list
 $kendo-list-border: var( --kendo-component-border, inherit ) !default;
 
 
-/// Background color of list header.
+/// The background color of the List header.
 /// @group list
 $kendo-list-header-bg: $kendo-color-white !default;
-/// Text color of list header.
+/// The text color of the List header.
 /// @group list
 $kendo-list-header-text: get-theme-color-var( primary-100 ) !default;
-/// Border color of list header.
+/// The border color of the List header.
 /// @group list
 $kendo-list-header-border: inherit !default;
-/// Box shadow of list header.
+/// The box shadow of the List header.
 /// @group list
 $kendo-list-header-shadow: $kendo-box-shadow-depth-3 !default;
 
 
-/// Background color of list items.
+/// The background color of the List items.
 /// @group list
 $kendo-list-item-bg: $kendo-color-white !default;
-/// Text color of list items.
+/// The text color of the List items.
 /// @group list
 $kendo-list-item-text: get-theme-color-var( neutral-160 ) !default;
 
-/// Background color of hovered list items.
+/// The background color of the hovered List items.
 /// @group list
 $kendo-list-item-hover-bg: get-theme-color-var( neutral-20 ) !default;
-/// Text color of hovered list items.
+/// The text color of the hovered List items.
 /// @group list
 $kendo-list-item-hover-text: get-theme-color-var( neutral-190 ) !default;
 
-/// Background color of focused list items.
+/// The background color of the focused List items.
 /// @group list
 $kendo-list-item-focus-bg: $kendo-color-white !default;
-/// Text color of focused list items.
+/// The text color of the focused List items.
 /// @group list
 $kendo-list-item-focus-text: get-theme-color-var( neutral-160 ) !default;
-/// Box shadow of focused list items.
+/// The box shadow of the focused List items.
 /// @group list
 $kendo-list-item-focus-shadow: inset 0 0 0 1px get-theme-color-var( neutral-130 ) !default;
 
-/// Background color of selected list items.
+/// The background color of the selected List items.
 /// @group list
 $kendo-list-item-selected-bg: get-theme-color-var( neutral-40 ) !default;
-/// Text color of selected list items.
+/// The text color of the selected List items.
 /// @group list
 $kendo-list-item-selected-text: get-theme-color-var( neutral-190 ) !default;
 
-/// Background color of selected hovered list items.
+/// The background color of the selected hovered List items.
 /// @group list
 $kendo-list-item-selected-hover-bg: get-theme-color-var( neutral-50 ) !default;
-/// Text color of selected hovered list items.
+/// The text color of the selected hovered List items.
 /// @group list
 $kendo-list-item-selected-hover-text: get-theme-color-var( neutral-190 ) !default;
 
-/// Background color of disabled list items.
+/// The background color of the disabled List items.
 /// @group list
 $kendo-list-item-disabled-bg: $kendo-color-white !default;
-/// Text color of disabled list items.
+/// The text color of the disabled List items.
 /// @group list
 $kendo-list-item-disabled-text: get-theme-color-var( neutral-90 ) !default;
 
-/// Background color of list group items.
+/// The background color of the List group items.
 /// @group list
 $kendo-list-group-item-bg: $kendo-color-white !default;
-/// Text color of list group items.
+/// The text color of the List group items.
 /// @group list
 $kendo-list-group-item-text: get-theme-color-var( primary-100 ) !default;
-/// The border color of list group items.
+/// The border color of the List group items.
 /// @group list
 $kendo-list-group-item-border: inherit !default;
-/// The base shadow of list group items.
+/// The base shadow of the List group items.
 /// @group list
 $kendo-list-group-item-shadow: none !default;
 
-/// Text color of the 'No Data' text.
+/// The text color of the 'No Data' text.
 /// @group list
 $kendo-list-no-data-text: get-theme-color-var( neutral-160 ) !default;

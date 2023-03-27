@@ -3,82 +3,98 @@
 
 // Chip
 
-/// Width of the border around the button.
+/// The width of the border around the Chip.
 /// @group chip
 $kendo-chip-border-width: 1px !default;
-/// The spacing between the text and the icons of the chip.
+/// The spacing between the text and the icons of the Chip.
 /// @group chip
 $kendo-chip-spacing: map.get( $kendo-spacing, 1 ) !default;
 
-/// The font family of the chip.
+/// The font family of the Chip.
 /// @group chip
 $kendo-chip-font-family: var( --kendo-font-family, inherit ) !default;
 
-/// The chip avatar width.
+/// The width of the Chip' avatar.
 /// @group chip
 $kendo-chip-avatar-width: 1em !default;
-/// The chip avatar height.
+/// The height of the Chip' avatar.
 /// @group chip
 $kendo-chip-avatar-height: 1em !default;
-/// The chip avatar flex basis.
+/// The flex basis of the Chip' avatar.
 /// @group chip
 $kendo-chip-avatar-flex-basis: 1em !default;
-/// The text color of disabled chip.
+/// The text color of the disabled Chip.
 /// @group chip
 $kendo-chip-disabled-text: var( --kendo-disabled-text, inherit ) !default;
-/// The background of solid disabled chip.
+/// The background color of the solid disabled Chip.
 /// @group chip
 $kendo-chip-solid-disabled-bg: var( --kendo-disabled-bg, transparent ) !default;
-/// The border of solid disabled chip.
+/// The border color of the solid disabled Chip.
 /// @group chip
 $kendo-chip-solid-disabled-border: var( --kendo-disabled-border, inherit ) !default;
-/// The background of outline disabled chip.
+/// The background color of the outline disabled Chip.
 /// @group chip
 $kendo-chip-outline-disabled-bg: var( $kendo-component-bg, transparent ) !default;
-/// The border of outline disabled chip.
+/// The border color of the outline disabled Chip.
 /// @group chip
 $kendo-chip-outline-disabled-border: get-theme-color-var( neutral-90 ) !default;
 
-/// Offset of the outline focused chip.
+/// The offset of the outline focused Chip.
 /// @group chip
 $kendo-chip-focus-offset: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-/// Outline width of the outline focused button.
+/// The outline width of the outline focused Chip.
 /// @group chip
 $kendo-chip-focus-outline-width: 1px !default;
-/// Outline style of the outline focused button.
+/// The outline style of the outline focused Chip.
 /// @group chip
 $kendo-chip-focus-outline-style: solid !default;
 
-/// Horizontal padding of the chip.
+/// The horizontal padding of the small Chip.
 /// @group chip
 $kendo-chip-sm-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// The horizontal padding of the medium Chip.
+/// @group chip
 $kendo-chip-md-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// The horizontal padding of the large Chip.
+/// @group chip
 $kendo-chip-lg-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
-/// Vertical padding of the chip.
+/// The vertical padding of the small Chip.
 /// @group chip
 $kendo-chip-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+/// The vertical padding of the medium Chip.
+/// @group chip
 $kendo-chip-md-padding-y: map.get( $kendo-spacing, 1 ) !default;
+/// The vertical padding of the large Chip.
+/// @group chip
 $kendo-chip-lg-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 
-/// Font sizes of the chip.
+/// The font size of the small Chip.
 /// @group chip
 $kendo-chip-sm-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the medium Chip.
+/// @group chip
 $kendo-chip-md-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the large Chip.
+/// @group chip
 $kendo-chip-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
-/// Line heights of the chip that are connected to the $kendo-font-size.
+/// The small Chip's line height that is related to the $kendo-font-size.
 /// @group chip
 $kendo-chip-sm-line-height: var( --kendo-line-height, normal ) !default;
+/// The medium Chip's line height that is related to the $kendo-font-size.
+/// @group chip
 $kendo-chip-md-line-height: var( --kendo-line-height, normal ) !default;
+/// The large Chip's line height that is related to the $kendo-font-size.
+/// @group chip
 $kendo-chip-lg-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Calculated height of the chip.
+/// The calculated height of the Chip.
 /// @group chip
 $kendo-chip-calc-size: calc( #{$kendo-chip-md-line-height} * 1em + #{$kendo-chip-md-padding-y} * 2 + #{$kendo-chip-border-width} * 2 ) !default;
 $kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height} * 1em + #{$kendo-chip-sm-padding-y} * 2 + #{$kendo-chip-border-width} * 2 ) !default;
 
-/// Sizes map for the chip.
+/// The map with the sizes of the Chip.
 /// @group chip
 $kendo-chip-sizes: (
     sm: (
@@ -106,7 +122,7 @@ $kendo-chip-brand-colors: ( error, success, info ) !default;
 
 // Matrices with theme colors in the order: bg, color, border, outline
 
-// Color matrix for the base chip
+// The color matrix for the base Chip
 $_tc-base-matrix: (
     solid: (
         normal: (20, 160, 20),
@@ -128,7 +144,7 @@ $_tc-base-matrix: (
     ),
 ) !default;
 
-// Color matrix for error, success, info chips
+// The color matrix for the error, success and info Chips
 $_tc-brand-matrix: (
     solid: (
         normal: (20, 160, 20),
@@ -150,7 +166,7 @@ $_tc-brand-matrix: (
     )
 ) !default;
 
-// Color matrix for warning chips
+// The color matrix for the warning Chips
 $_tc-warning-matrix: (
     solid: (
         normal: (20, get-theme-color-var( grey-160 ), 20),
@@ -172,10 +188,10 @@ $_tc-warning-matrix: (
     )
 ) !default;
 
-/// Theme colors map for the button.
+/// The theme colors map for the Chip.
 $kendo-chip-theme-colors: () !default;
 
-// Map for base theme color
+// Map for the base theme color
 @each $fill-mode, $ui-states in $_tc-base-matrix {
     $kendo-chip-theme-colors: map.deep-merge(
         $kendo-chip-theme-colors,
@@ -183,7 +199,7 @@ $kendo-chip-theme-colors: () !default;
     );
 }
 
-// Map for brand theme colors
+// Map for the brand theme colors
 @each $fill-mode, $ui-states in $_tc-brand-matrix {
     @each $brand-color in $kendo-chip-brand-colors {
         $kendo-chip-theme-colors: map.deep-merge(
@@ -193,7 +209,7 @@ $kendo-chip-theme-colors: () !default;
     }
 }
 
-// Map for warning theme color
+// Map for the warning theme color
 @each $fill-mode, $ui-states in $_tc-warning-matrix {
     $kendo-chip-theme-colors: map.deep-merge(
         $kendo-chip-theme-colors,
@@ -204,7 +220,7 @@ $kendo-chip-theme-colors: () !default;
 
 // Chip List
 
-/// The sizes of the chip list.
+/// The sizes of the Chip list.
 /// @group chip
 $kendo-chip-list-sizes: (
     sm: map.get( $kendo-spacing, 1 ),

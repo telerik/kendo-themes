@@ -34,7 +34,27 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the split button arrow.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small arrow Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-split-button-md-arrow-padding-y</td>
+    <td></td>
+    <td><code>$kendo-button-md-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium arrow Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-split-button-lg-arrow-padding-y</td>
+    <td></td>
+    <td><code>$kendo-button-lg-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +64,27 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the split button arrow.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small arrow Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-split-button-md-arrow-padding-x</td>
+    <td></td>
+    <td><code>$kendo-split-button-md-arrow-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium arrow Button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-split-button-lg-arrow-padding-x</td>
+    <td></td>
+    <td><code>$kendo-split-button-lg-arrow-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large arrow Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +94,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the split button arrow delimiter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the SplitButton arrow delimiter.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +104,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the split button arrow delimiter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the SplitButton arrow delimiter.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +114,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the split button arrow delimiter.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the SplitButton arrow delimiter.</div></div>
     </td>
 </tr>
 <tr>
@@ -88,7 +128,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the split button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the SplitButton.</div></div>
     </td>
 </tr>
 </tbody>

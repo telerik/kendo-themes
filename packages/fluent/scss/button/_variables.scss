@@ -2,55 +2,73 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Width of the border around the button.
+/// The width of the border around the Button.
 /// @group button
 $kendo-button-border-width: 1px !default;
 
-/// Horizontal padding of the button.
+/// The horizontal padding of the small Button.
 /// @group button
 $kendo-button-sm-padding-x: map.get( $kendo-spacing, 5 ) !default;
+/// The horizontal padding of the medium Button.
+/// @group button
 $kendo-button-md-padding-x: map.get( $kendo-spacing, 5 ) !default;
+/// The horizontal padding of the large Button.
+/// @group button
 $kendo-button-lg-padding-x: map.get( $kendo-spacing, 5 ) !default;
 
-/// Vertical padding of the button.
+/// The vertical padding of the small Button.
 /// @group button
 $kendo-button-sm-padding-y: map.get( $kendo-spacing, 1 ) !default;
+/// The vertical padding of the medium Button.
+/// @group button
 $kendo-button-md-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+/// The vertical padding of the large Button.
+/// @group button
 $kendo-button-lg-padding-y: map.get( $kendo-spacing, 2 ) !default;
 
-/// Font sizes of the button.
+/// The font size of the small Button.
 /// @group button
 $kendo-button-sm-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the medium Button.
+/// @group button
 $kendo-button-md-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the large Button.
+/// @group button
 $kendo-button-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
-/// Line heights used along with $kendo-font-size.
+/// The line height used along with the $kendo-font-size of the small Button.
 /// @group button
 $kendo-button-sm-line-height: var( --kendo-line-height, normal ) !default;
+/// The line height used along with the $kendo-font-size of the medium Button.
+/// @group button
 $kendo-button-md-line-height: var( --kendo-line-height, normal ) !default;
+/// The line height used along with the $kendo-font-size of the large Button.
+/// @group button
 $kendo-button-lg-line-height: var( --kendo-line-height, normal ) !default;
 
-// Font family of the button.
+/// The font family of the Button.
+/// @group button
 $kendo-button-font-family: var( --kendo-font-family, inherit ) !default;
 
-// Font weight of the button.
+/// The font weight of the Button.
+/// @group button
 $kendo-button-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
-/// Calculated height of the button.
+/// The calculated height of the Button.
 /// @group button
 $kendo-button-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-sm-calc-size: calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-md-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 $kendo-button-lg-calc-size: calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
 
-/// Calculated inner height of the button. Without the border width.
+/// The calculated inner height of the Button excluding the border width.
 /// @group button
 $kendo-button-inner-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) ) !default;
 $kendo-button-sm-inner-calc-size: calc( ( #{$kendo-button-sm-line-height} * 1em ) + ( #{$kendo-button-sm-padding-y} * 2 ) ) !default;
 $kendo-button-md-inner-calc-size: calc( ( #{$kendo-button-md-line-height} * 1em ) + ( #{$kendo-button-md-padding-y} * 2 ) ) !default;
 $kendo-button-lg-inner-calc-size: calc( ( #{$kendo-button-lg-line-height} * 1em ) + ( #{$kendo-button-lg-padding-y} * 2 ) ) !default;
 
-/// Sizes map for the button.
+/// The sizes map for the Button.
 /// @group button
 $kendo-button-sizes: (
     sm: (
@@ -73,35 +91,35 @@ $kendo-button-sizes: (
     )
 ) !default;
 
-/// Content spacing of the button.
+/// The content spacing of the Button.
 /// @group button
 $kendo-button-spacing: map.get( $kendo-spacing, 2 ) !default;
 
-/// Offset of the focused button.
+/// The offset of the focused Button.
 /// @group button
 $kendo-button-focus-offset: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-/// Outline width of the focused button.
+/// The Outline width of the focused Button.
 /// @group button
 $kendo-button-focus-outline-width: 1px !default;
-/// Outline style of the focused button.
+/// The outline style of the focused Button.
 /// @group button
 $kendo-button-focus-outline-style: solid !default;
 
-/// Offset of the flat focused button.
+/// The offset of the flat focused Button.
 /// @group button
 $kendo-button-flat-focus-offset: 1px !default;
-/// Outline width of the flat focused button.
+/// The outline width of the flat focused Button.
 /// @group button
 $kendo-button-flat-focus-outline-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 
-/// Offset of the link focused button.
+/// The offset of the link focused Button.
 /// @group button
 $kendo-button-link-focus-offset: 0 !default;
-/// Outline width of the flat focused button.
+/// The outline width of the flat focused Button.
 /// @group button
 $kendo-button-link-focus-outline-width: 1px !default;
 
-// Theme variations for the button.
+// The theme variations for the Button.
 
 $kendo-button-brand-colors: (
     primary: primary,
@@ -115,7 +133,7 @@ $kendo-button-brand-colors: (
 
 // Matrices with theme colors in the order: bg, color, border, outline
 
-// Color matrix for the base button
+// The color matrix for the base Button
 $_tc-base-matrix: (
     solid: (
         normal: ($kendo-color-white, 160, 110),
@@ -155,7 +173,7 @@ $_tc-base-matrix: (
     )
 ) !default;
 
-// Color matrix for primary, error, success, info, secondary, tertiary buttons
+// The color matrix for primary, error, success, info, secondary, tertiary Buttons
 $_tc-brand-matrix: (
     solid: (
         normal: (100, $kendo-color-white, 100),
@@ -204,7 +222,7 @@ $_tc-brand-matrix: (
     )
 ) !default;
 
-// Color matrix for warning buttons
+// The color matrix for warning Buttons
 $_tc-warning-matrix: (
     solid: (
         normal: (100, get-theme-color-var( neutral-160 ), 100),
@@ -253,7 +271,7 @@ $_tc-warning-matrix: (
     )
 ) !default;
 
-// Color matrix for dark buttons
+// The color matrix for dark Buttons
 $_tc-dark-matrix: (
     solid: (
         normal: (160, $kendo-color-white, 160),
@@ -302,7 +320,7 @@ $_tc-dark-matrix: (
     )
 ) !default;
 
-// Color matrix for light buttons
+// The color matrix for light Buttons
 $_tc-light-matrix: (
     solid: (
         normal: (50, 160, 50),
@@ -351,10 +369,11 @@ $_tc-light-matrix: (
     )
 ) !default;
 
-/// Theme colors map for the button.
+/// The theme colors map for the Button.
+/// @group button
 $kendo-button-theme-colors: () !default;
 
-// Map for base theme color
+// The map for the base theme color
 @each $fill-mode, $ui-states in $_tc-base-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
@@ -362,7 +381,7 @@ $kendo-button-theme-colors: () !default;
     );
 }
 
-// Map for brand theme colors
+// The map for the brand theme colors
 @each $fill-mode, $ui-states in $_tc-brand-matrix {
     @each $brand-color, $palette in $kendo-button-brand-colors {
         $kendo-button-theme-colors: map.deep-merge(
@@ -372,7 +391,7 @@ $kendo-button-theme-colors: () !default;
     }
 }
 
-// Map for warning theme colors
+// The map for the warning theme colors
 @each $fill-mode, $ui-states in $_tc-warning-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
@@ -380,7 +399,7 @@ $kendo-button-theme-colors: () !default;
     );
 }
 
-// Map for dark theme colors
+// The map for the dark theme colors
 @each $fill-mode, $ui-states in $_tc-dark-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
@@ -388,7 +407,7 @@ $kendo-button-theme-colors: () !default;
     );
 }
 
-// Map for light theme colors
+// The map for the light theme colors
 @each $fill-mode, $ui-states in $_tc-light-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,

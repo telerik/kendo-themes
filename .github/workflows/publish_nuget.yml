@@ -32,7 +32,7 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 18.x
 
       - name: Setup nuget
         uses: nuget/setup-nuget@v1

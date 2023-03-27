@@ -103,27 +103,6 @@ $kendo-theme-colors: (
 ) !default;
 
 
-// Text colors
-@each $theme-color, $color-props in $kendo-theme-colors {
-    // sass-lint:disable-line no-important
-    // sass-lint:disable-line class-name-format
-    $_color: map.get( $color-props, text );
-
-    .k-text-#{$theme-color} {
-        color: var( --kendo-text-#{$theme-color}, #{$_color} );
-    }
-    .\!k-text-#{$theme-color} {
-        color: var( --kendo-text-#{$theme-color}, #{$_color} ) !important;
-    }
-
-    .k-bg-#{$theme-color} {
-        background-color: var( --kendo-bg-#{$theme-color}, #{$_color} );
-    }
-    .\!k-bg-#{$theme-color} {
-        background-color: var( --kendo-bg-#{$theme-color}, #{$_color} ) !important;
-    }
-};
-
 @mixin color-system-styles() {
     :root {
         @include css-vars( $kendo-fluent-palettes );
@@ -169,4 +148,27 @@ $kendo-theme-colors: (
         --kendo-invalid-border: #{$kendo-invalid-border};
         --kendo-invalid-shadow: #{$kendo-invalid-shadow};
     }
+
+    // Text colors
+    @each $theme-color, $color-props in $kendo-theme-colors {
+        // sass-lint:disable-line no-important
+        // sass-lint:disable-line class-name-format
+        $_color: map.get( $color-props, text );
+
+        .k-text-#{$theme-color},
+        .k-color-#{$theme-color} {
+            color: var( --kendo-text-#{$theme-color}, #{$_color} );
+        }
+        .\!k-text-#{$theme-color},
+        .\!k-color-#{$theme-color} {
+            color: var( --kendo-text-#{$theme-color}, #{$_color} ) !important;
+        }
+
+        .k-bg-#{$theme-color} {
+            background-color: var( --kendo-bg-#{$theme-color}, #{$_color} );
+        }
+        .\!k-bg-#{$theme-color} {
+            background-color: var( --kendo-bg-#{$theme-color}, #{$_color} ) !important;
+        }
+    };
 }

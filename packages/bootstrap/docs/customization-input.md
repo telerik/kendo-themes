@@ -34,7 +34,7 @@ The following table lists the available variables for customization.
     <td><code>100%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +64,37 @@ The following table lists the available variables for customization.
     <td><code>0.75rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>$input-padding-x-sm</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-padding-x</td>
+    <td>Number</td>
+    <td><code>$input-padding-x</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-padding-x</td>
+    <td>Number</td>
+    <td><code>$input-padding-x-lg</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +104,37 @@ The following table lists the available variables for customization.
     <td><code>0.375rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>$input-padding-y-sm</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-padding-y</td>
+    <td>Number</td>
+    <td><code>$input-padding-y</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-padding-y</td>
+    <td>Number</td>
+    <td><code>$input-padding-y-lg</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +144,7 @@ The following table lists the available variables for customization.
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -94,7 +154,37 @@ The following table lists the available variables for customization.
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sm-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>0.875rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Input components.</div></div>
     </td>
 </tr>
 <tr>
@@ -104,7 +194,605 @@ The following table lists the available variables for customization.
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of input components.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sm-line-height</td>
+    <td>Number</td>
+    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>1.4285714286</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-md-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-lg-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        padding-x: $kendo-input-sm-padding-x,
+        padding-y: $kendo-input-sm-padding-y,
+        font-size: $kendo-input-sm-font-size,
+        line-height: $kendo-input-sm-line-height,
+        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-sm-padding-y * 2} ),
+        button-padding-x: $kendo-input-sm-padding-y,
+        button-padding-y: $kendo-input-sm-padding-y
+    ),
+    md: (
+        padding-x: $kendo-input-md-padding-x,
+        padding-y: $kendo-input-md-padding-y,
+        font-size: $kendo-input-md-font-size,
+        line-height: $kendo-input-md-line-height,
+        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-md-padding-y * 2} ),
+        button-padding-x: $kendo-input-md-padding-y,
+        button-padding-y: $kendo-input-md-padding-y
+    ),
+    lg: (
+        padding-x: $kendo-input-lg-padding-x,
+        padding-y: $kendo-input-lg-padding-y,
+        font-size: $kendo-input-lg-font-size,
+        line-height: $kendo-input-lg-line-height,
+        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-lg-padding-y * 2} ),
+        button-padding-x: $kendo-input-lg-padding-y,
+        button-padding-y: $kendo-input-lg-padding-y
+    )
+)</code></td>
+    <td><code>(sm: (padding-x: 0.5rem, padding-y: 0.25rem, font-size: 0.875rem, line-height: 1.4285714286, icon-size: calc( 16px + 0.5rem ), button-padding-x: 0.25rem, button-padding-y: 0.25rem), md: (padding-x: 0.75rem, padding-y: 0.375rem, font-size: 1rem, line-height: 1.5, icon-size: calc( 16px + 0.75rem ), button-padding-x: 0.375rem, button-padding-y: 0.375rem), lg: (padding-x: 1rem, padding-y: 0.5rem, font-size: 1rem, line-height: 1.5, icon-size: calc( 16px + 1rem ), button-padding-x: 0.5rem, button-padding-y: 0.5rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-bg</td>
+    <td>Color</td>
+    <td><code>$input-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-text</td>
+    <td>Color</td>
+    <td><code>$input-color</code></td>
+    <td><span class="color-preview" style="background-color: #495057"></span><code>#495057</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-border</td>
+    <td>Color</td>
+    <td><code>$input-border-color</code></td>
+    <td><span class="color-preview" style="background-color: #ced4da"></span><code>#ced4da</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-hover-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-hover-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-hover-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-focus-bg</td>
+    <td>Color</td>
+    <td><code>$input-focus-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-focus-text</td>
+    <td>Color</td>
+    <td><code>$input-focus-color</code></td>
+    <td><span class="color-preview" style="background-color: #495057"></span><code>#495057</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-focus-border</td>
+    <td>Color</td>
+    <td><code>$input-focus-border-color</code></td>
+    <td><span class="color-preview" style="background-color: #86b7fe"></span><code>#86b7fe</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-focus-shadow</td>
+    <td>List</td>
+    <td><code>$input-focus-box-shadow</code></td>
+    <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-selected-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-selected-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-disabled-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the disabled Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-disabled-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-disabled-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the disabled Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-disabled-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the disabled Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-disabled-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-text</td>
+    <td>Color</td>
+    <td><code>$kendo-base-text</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-border</td>
+    <td>Color</td>
+    <td><code>rgba( $kendo-base-text, .5 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(33, 37, 41, 0.5)"></span><code>rgba(33, 37, 41, 0.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-hover-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-hover-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-focus-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the outline focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-focus-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-focus-border</td>
+    <td>Color</td>
+    <td><code>$kendo-input-focus-border</code></td>
+    <td><span class="color-preview" style="background-color: #86b7fe"></span><code>#86b7fe</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-outline-focus-shadow</td>
+    <td>List</td>
+    <td><code>$kendo-input-focus-shadow</code></td>
+    <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the outline focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-text</td>
+    <td>Color</td>
+    <td><code>$kendo-input-text</code></td>
+    <td><span class="color-preview" style="background-color: #495057"></span><code>#495057</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-border</td>
+    <td>Color</td>
+    <td><code>$kendo-input-border</code></td>
+    <td><span class="color-preview" style="background-color: #ced4da"></span><code>#ced4da</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-hover-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-hover-border</td>
+    <td>Null</td>
+    <td><code>$kendo-input-hover-border</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat hovered Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-focus-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the flat focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-focus-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-focus-border</td>
+    <td>Color</td>
+    <td><code>$kendo-input-focus-border</code></td>
+    <td><span class="color-preview" style="background-color: #86b7fe"></span><code>#86b7fe</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the flat focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-flat-focus-shadow</td>
+    <td>List</td>
+    <td><code>$kendo-input-focus-shadow</code></td>
+    <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the flat focused Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-placeholder-text</td>
+    <td>Color</td>
+    <td><code>$input-placeholder-color</code></td>
+    <td><span class="color-preview" style="background-color: #6c757d"></span><code>#6c757d</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-placeholder-opacity</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input placeholder.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-clear-value-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input clear value icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-clear-value-opacity</td>
+    <td>Number</td>
+    <td><code>.5</code></td>
+    <td><code>0.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input clear value icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-clear-value-hover-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the hovered Input clear value icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-clear-value-hover-opacity</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the hovered Input clear value icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-button-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-button-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Input button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-spinner-width</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Input spinner button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-spinner-icon-offset</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The icon offset of the Input spinner button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-separator-color</td>
+    <td>Color</td>
+    <td><code>$kendo-input-text</code></td>
+    <td><span class="color-preview" style="background-color: #495057"></span><code>#495057</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-separator-opacity</td>
+    <td>Number</td>
+    <td><code>.5</code></td>
+    <td><code>0.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-invalid-border</td>
+    <td>Color</td>
+    <td><code>$kendo-invalid-border</code></td>
+    <td><span class="color-preview" style="background-color: #dc3545"></span><code>#dc3545</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-invalid-shadow</td>
+    <td>List</td>
+    <td><code>$kendo-invalid-shadow</code></td>
+    <td><code>0 0 0 0.25rem rgba(220, 53, 69, 0.25)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
     </td>
 </tr>
 </tbody>

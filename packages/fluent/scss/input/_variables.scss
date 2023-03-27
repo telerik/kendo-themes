@@ -2,425 +2,454 @@
 @use "../core/" as *;
 @use "../button/_variables.scss"as *;
 
-/// Width of the input.
+/// The width of the Input components.
 /// @group input
 $kendo-input-width: 100% !default;
 
-/// Width of the border around the input.
+/// The width of the border around the Input components.
 /// @group input
 $kendo-input-border-width: 1px !default;
 
-// Width of the border around the input when focused.
+// The width of the border around the focused Input components.
 $kendo-input-focus-border-width: 2px !default;
 
-/// Height of he border around the input.
+/// The height of the border around the Input components.
 /// @group input
 $kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
 
-/// Horizontal padding of the input.
+/// The horizontal padding of the small Input components.
 /// @group input
 $kendo-input-sm-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// The horizontal padding of the medium Input components.
+/// @group input
 $kendo-input-md-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// The horizontal padding of the large Input components.
+/// @group input
 $kendo-input-lg-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
-/// Vertical padding of the input.
+/// The vertical padding of the small Input components.
 /// @group input
 $kendo-input-sm-padding-y: map.get( $kendo-spacing, 1 ) !default;
+/// The vertical padding of the medium Input components.
+/// @group input
 $kendo-input-md-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+/// The vertical padding of the large Input components.
+/// @group input
 $kendo-input-lg-padding-y: map.get( $kendo-spacing, 2 ) !default;
 
-/// Font sizes of the input.
+/// The font size of the small Input components.
 /// @group input
 $kendo-input-sm-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the medium Input components.
+/// @group input
 $kendo-input-md-font-size: var( --kendo-font-size, inherit ) !default;
+/// The font size of the large Input components.
+/// @group input
 $kendo-input-lg-font-size: var( --kendo-font-size, inherit ) !default;
 
-/// Line heights of the input.
+/// The line height of the small Input components.
 /// @group input
 $kendo-input-sm-line-height: var( --kendo-line-height, normal ) !default;
+/// The line height of the medium Input components.
+/// @group input
 $kendo-input-md-line-height: var( --kendo-line-height, normal ) !default;
+/// The line height of the large Input components.
+/// @group input
 $kendo-input-lg-line-height: var( --kendo-line-height, normal ) !default;
 
-// Font family of the input.
+// The font family of the Input components.
 $kendo-input-font-family: var( --kendo-font-family, inherit) !default;
 
-// Font weight of the input.
+// The font weight of the Input components.
 $kendo-input-font-weight: var( --kendo-font-weight, normal ) !default;
 
-// Input actions
+/// The width of the small Input button.
+/// @group input
 $kendo-input-sm-button-width: calc( #{$kendo-button-sm-line-height} * 1em + #{$kendo-button-sm-padding-y} * 2 ) !default;
+/// The width of the medium Input button.
+/// @group input
 $kendo-input-md-button-width: calc( #{$kendo-button-md-line-height} * 1em + #{$kendo-button-md-padding-y} * 2 ) !default;
+/// The width of the large Input button.
+/// @group input
 $kendo-input-lg-button-width: calc( #{$kendo-button-lg-line-height} * 1em + #{$kendo-button-lg-padding-y} * 2 ) !default;
-
+/// The border width of the Input button.
+/// @group input
 $kendo-input-button-border-width: 1px !default;
 
+/// The width of the small Input spinner button.
+/// @group input
 $kendo-input-sm-spinner-width: $kendo-input-sm-button-width !default;
+/// The width of the medium Input spinner button.
+/// @group input
 $kendo-input-md-spinner-width: $kendo-input-md-button-width !default;
+/// The width of the large Input spinner button.
+/// @group input
 $kendo-input-lg-spinner-width: $kendo-input-lg-button-width !default;
-
+/// The icon offset of the Input spinner button.
+/// @group input
 $kendo-input-spinner-icon-offset: null !default;
 
-/// The text color of the solid input.
+/// The text color of the solid Input components.
 /// @group input
 $kendo-input-solid-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The background color of the solid input.
+/// The background color of the solid Input components.
 /// @group input
 $kendo-input-solid-bg: $kendo-color-white !default;
 
-/// The border color of the solid input.
+/// The border color of the solid Input components.
 /// @group input
 $kendo-input-solid-border: get-theme-color-var( neutral-130 ) !default;
 
-/// The hover text color of the solid input.
+/// The text color of the hovered solid Input components.
 /// @group input
 $kendo-input-solid-hover-text: get-theme-color-var( neutral-190 ) !default;
 
-/// The hover background color of the input.
+/// The background color of the hovered solid Input components.
 /// @group input
 $kendo-input-solid-hover-bg: $kendo-input-solid-bg !default;
 
-/// The hover border color of the input.
+/// The border color of the hovered solid Input components.
 /// @group input
 $kendo-input-solid-hover-border: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus text color of the solid input.
+/// The text color of the focused solid Input components.
 /// @group input
 $kendo-input-solid-focus-text: $kendo-input-solid-text !default;
 
-/// The focus background color of the solid input.
+/// The background color of the focused solid Input components.
 /// @group input
 $kendo-input-solid-focus-bg: $kendo-input-solid-bg !default;
 
-/// The focus border color of the solid input.
+/// The border color of the focused solid Input components.
 /// @group input
 $kendo-input-solid-focus-border: get-theme-color-var( primary-100 ) !default;
 
-/// The hover-focus text color of the input.
+/// The text color of the hovered and focused solid Input components.
 /// @group input
 $kendo-input-solid-hover-focus-text: $kendo-input-solid-focus-text !default;
 
-/// The hover-focus background color of the input.
+/// The background color of the hovered and focused solid Input components.
 /// @group input
 $kendo-input-solid-hover-focus-bg: $kendo-input-solid-focus-bg !default;
 
-/// The hover-focus border color of the input.
+/// The border color of the hovered and focused solid Input components.
 /// @group input
 $kendo-input-solid-hover-focus-border: $kendo-input-solid-focus-border !default;
 
-/// The disabled text color of the input.
+/// The text color of the disabled solid Input components.
 /// @group input
 $kendo-input-solid-disabled-text: $kendo-disabled-text !default;
 
-/// The disabled background color of the input.
+/// The background color of the disabled solid Input components.
 /// @group input
 $kendo-input-solid-disabled-bg: $kendo-disabled-bg !default;
 
-/// The disabled border color of the input
+/// The border color of the disabled solid Input components.
 /// @group input
 $kendo-input-solid-disabled-border: $kendo-disabled-border !default;
 
-/// The text color of the outline input.
+/// The text color of the outline Input components.
 /// @group input
 $kendo-input-outline-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The background color of the outline input.
+/// The background color of the outline Input components.
 /// @group input
 $kendo-input-outline-bg: $kendo-color-white !default;
 
-/// The border color of the outline input.
+/// The border color of the outline Input components.
 /// @group input
 $kendo-input-outline-border: get-theme-color-var( neutral-130 ) !default;
 
-/// The hover text color of the outline input.
+/// The text color of the hovered outline Input components.
 /// @group input
 $kendo-input-outline-hover-text: get-theme-color-var( neutral-190 ) !default;
 
-/// The hover background color of the outline input.
+/// The background color of the hovered outline Input components.
 /// @group input
 $kendo-input-outline-hover-bg: $kendo-color-white !default;
 
-/// The hover border color of the outline input.
+/// The border color of the hovered outline Input components.
 /// @group input
 $kendo-input-outline-hover-border: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus text color of the outline input.
+/// The text color of the focused outline Input components.
 /// @group input
 $kendo-input-outline-focus-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus background color of the outline input.
+/// The background color of the focused outline Input components.
 /// @group input
 $kendo-input-outline-focus-bg: $kendo-color-white !default;
 
-/// The focus border color of the outline input.
+/// The border color of the focused outline Input components.
 /// @group input
 $kendo-input-outline-focus-border: get-theme-color-var( primary-100 ) !default;
 
-/// The hover-focus text color of the outline input.
+/// The text color of the hovered and focused outline Input components.
 /// @group input
 $kendo-input-outline-hover-focus-text: $kendo-input-outline-focus-text !default;
 
-/// The hover-focus background color of the outline input.
+/// The background color of the hovered and focused outline Input components.
 /// @group input
 $kendo-input-outline-hover-focus-bg: $kendo-input-outline-focus-bg !default;
 
-/// The hover-focus border color of the outline input.
+/// The border color of the hovered and focused outline Input components.
 /// @group input
 $kendo-input-outline-hover-focus-border: $kendo-input-outline-focus-border !default;
 
-/// The disabled text color of the outline input.
+/// The text color of the disabled outline Input components.
 /// @group input
 $kendo-input-outline-disabled-text: $kendo-disabled-text !default;
 
-/// The disabled background color of the outline input.
+/// The background color of the disabled outline Input components.
 /// @group input
 $kendo-input-outline-disabled-bg: none !default;
 
-/// The disabled border color of the outline input.
+/// The border color of the disabled outline Input components.
 /// @group input
 $kendo-input-outline-disabled-border: $kendo-disabled-text !default;
 
-/// The text color of the flat input.
+/// The text color of the flat Input components.
 /// @group input
 $kendo-input-flat-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The background color of the flat input.
+/// The background color of the flat Input components.
 /// @group input
 $kendo-input-flat-bg: $kendo-color-white !default;
 
-/// The border color of the flat input.
+/// The border color of the flat Input components.
 /// @group input
 $kendo-input-flat-border: get-theme-color-var( neutral-130 ) !default;
 
-/// The hover text color of the flat input.
+/// The text color of the hovered flat Input components.
 /// @group input
 $kendo-input-flat-hover-text: get-theme-color-var( neutral-190 ) !default;
 
-/// The hover background color of the flat input.
+/// The background color of the hovered flat Input components.
 /// @group input
 $kendo-input-flat-hover-bg: $kendo-color-white !default;
 
-/// The hover border color of the flat input.
+/// The border color of the hovered flat Input components.
 /// @group input
 $kendo-input-flat-hover-border: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus text color of the flat input.
+/// The text color of the focused flat Input components.
 /// @group input
 $kendo-input-flat-focus-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus background color of the flat input.
+/// The background color of the focused flat Input components.
 /// @group input
 $kendo-input-flat-focus-bg: $kendo-color-white !default;
 
-/// The focus border color of the flat input.
+/// The border color of the focused flat Input components.
 /// @group input
 $kendo-input-flat-focus-border: get-theme-color-var( primary-100 ) !default;
 
-/// The hover-focus text color of the flat input.
+/// The text color of the hovered and focused flat Input components.
 /// @group input
 $kendo-input-flat-hover-focus-text: $kendo-input-flat-focus-text !default;
 
-/// The hover-focus background color of the flat input.
+/// The background color of the hovered and focused flat Input components.
 /// @group input
 $kendo-input-flat-hover-focus-bg: $kendo-input-flat-focus-bg !default;
 
-/// The hover-focus border color of the flat input.
+/// The border color of the hovered and focused flat Input components.
 /// @group input
 $kendo-input-flat-hover-focus-border: $kendo-input-flat-focus-border !default;
 
-/// The disabled text color of the flat input.
+/// The text color of the disabled flat Input components.
 /// @group input
 $kendo-input-flat-disabled-text: $kendo-disabled-text !default;
 
-/// The disabled background color of the flat input.
+/// The background color of the disabled flat Input components.
 /// @group input
 $kendo-input-flat-disabled-bg: none !default;
 
-/// The disabled border color of the flat input.
+/// The border color of the disabled flat Input components.
 /// @group input
 $kendo-input-flat-disabled-border: $kendo-disabled-text !default;
 
-/// The text color of the solid picker.
+/// The text color of the solid Picker components.
 /// @group input
 $kendo-picker-solid-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The background color of the solid picker.
+/// The background color of the solid Picker components.
 /// @group input
 $kendo-picker-solid-bg: $kendo-color-white !default;
 
-/// The border color of the solid picker.
+/// The border color of the solid Picker components.
 /// @group input
 $kendo-picker-solid-border: get-theme-color-var( neutral-130 )!default;
 
-/// The hover text color of the solid picker.
+/// The text color of the hovered solid Picker components.
 /// @group input
 $kendo-picker-solid-hover-text: get-theme-color-var( neutral-190 ) !default;
 
-/// The hover background color of the solid picker.
+/// The background color of hovered the solid Picker components.
 /// @group input
 $kendo-picker-solid-hover-bg: $kendo-color-white !default;
 
-/// The hover border color of the solid picker.
+/// The border color of the hovered solid Picker components.
 /// @group input
 $kendo-picker-solid-hover-border: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus text color of the solid picker.
+/// The text color of the focused solid Picker components.
 /// @group input
 $kendo-picker-solid-focus-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus background color of the solid picker.
+/// The background color of the focused solid Picker components.
 /// @group input
 $kendo-picker-solid-focus-bg: $kendo-color-white !default;
 
-/// The focus border color of the solid picker.
+/// The border color of the focused solid Picker components.
 /// @group input
 $kendo-picker-solid-focus-border: get-theme-color-var( primary-100 ) !default;
 
-/// The hover-focus text color of the solid picker.
+/// The text color of the hovered and focused solid Picker components.
 /// @group input
 $kendo-picker-solid-hover-focus-text: $kendo-picker-solid-focus-text !default;
 
-/// The hover-focus background color of the solid picker.
+/// The background color of the hovered and focused solid Picker components.
 /// @group input
 $kendo-picker-solid-hover-focus-bg: $kendo-picker-solid-focus-bg !default;
 
-/// The hover-focus border color of the solid picker.
+/// The border color of the hovered and focused solid Picker components.
 /// @group input
 $kendo-picker-solid-hover-focus-border: $kendo-picker-solid-focus-border !default;
 
-/// The disabled text color of the solid picker.
+/// The text color of the disabled solid Picker components.
 /// @group input
 $kendo-picker-solid-disabled-text: $kendo-disabled-text !default;
 
-/// The disabled background color of the solid picker.
+/// The background color of the disabled solid Picker components.
 /// @group input
 $kendo-picker-solid-disabled-bg: get-theme-color-var( neutral-30 ) !default;
 
-/// The disabled border color of the solid picker.
+/// The border color of the disabled solid Picker components.
 /// @group input
 $kendo-picker-solid-disabled-border: $kendo-disabled-border !default;
 
-/// The text color of the outline picker.
+/// The text color of the outline Picker components.
 /// @group input
 $kendo-picker-outline-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The background color of the outline picker.
+/// The background color of the outline Picker components.
 /// @group input
 $kendo-picker-outline-bg: none !default;
 
-/// The border color of the outline picker.
+/// The border color of the outline Picker components.
 /// @group input
 $kendo-picker-outline-border: get-theme-color-var( neutral-160 ) !default;
 
-/// The hover text color of the outline picker.
+/// The text color of the hovered outline Picker components.
 /// @group input
 $kendo-picker-outline-hover-text: $kendo-color-white !default;
 
-/// The hover background color of the outline picker.
+/// The background color of the hovered outline Picker components.
 /// @group input
 $kendo-picker-outline-hover-bg: get-theme-color-var( neutral-190 ) !default;
 
-/// The hover border color of the outline picker.
+/// The border color of the hovered outline Picker components.
 /// @group input
 $kendo-picker-outline-hover-border: $kendo-picker-outline-hover-bg!default;
 
-/// The focus text color of the outline picker.
+/// The text color of the focused outline Picker components.
 /// @group input
 $kendo-picker-outline-focus-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus background color of the outline picker.
+/// The background color of the focused outline Picker components.
 /// @group input
 $kendo-picker-outline-focus-bg: $kendo-color-white!default;
 
-/// The focus border color of the outline picker.
+/// The border color of the focused outline Picker components.
 /// @group input
 $kendo-picker-outline-focus-border: get-theme-color-var( primary-100 ) !default;
 
-/// The hover-focus text color of the outline picker.
+/// The text color of the hovered and focused outline Picker components.
 /// @group input
 $kendo-picker-outline-hover-focus-text: $kendo-color-white !default;
 
-/// The hover-focus background color of the outline picker.
+/// The background color of the hovered and focused outline Picker components.
 /// @group input
 $kendo-picker-outline-hover-focus-bg: get-theme-color-var( neutral-190 ) !default;
 
-/// The focus border color of the outline picker.
+/// The border color of the hovered and focused outline Picker components.
 /// @group input
 $kendo-picker-outline-hover-focus-border: get-theme-color-var( primary-100 ) !default;
 
-/// The disabled text color of the outline picker.
+/// The text color of the disabled outline Picker components.
 /// @group input
 $kendo-picker-outline-disabled-text: $kendo-disabled-text !default;
 
-/// The disabled background color of the outline picker.
+/// The background color of the disabled outline Picker components.
 /// @group input
 $kendo-picker-outline-disabled-bg: none !default;
 
-/// The disabled border color of the outline picker.
+/// The border color of the disabled outline Picker components.
 /// @group input
 $kendo-picker-outline-disabled-border: $kendo-picker-outline-disabled-text!default;
 
-/// The text color of the flat picker.
+/// The text color of the flat Picker components.
 /// @group input
 $kendo-picker-flat-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The background color of the flat picker.
+/// The background color of the flat Picker components.
 /// @group input
 $kendo-picker-flat-bg: $kendo-color-white !default;
 
-/// The border color of the flat picker.
+/// The border color of the flat Picker components.
 /// @group input
 $kendo-picker-flat-border: get-theme-color-var( neutral-130 ) !default;
 
-/// The hover text color of the flat picker.
+/// The text color of the hovered flat Picker components.
 /// @group input
 $kendo-picker-flat-hover-text: get-theme-color-var( neutral-190 ) !default;
 
-/// The hover background color of the flat picker.
+/// The background color of the hovered flat Picker components.
 /// @group input
 $kendo-picker-flat-hover-bg: get-theme-color-var( neutral-20 ) !default;
 
-/// The hover border color of the flat picker.
+/// The border color of the hovered flat Picker components.
 /// @group input
 $kendo-picker-flat-hover-border: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus text color of the flat picker.
+/// The text color of the focused flat Picker components.
 /// @group input
 $kendo-picker-flat-focus-text: get-theme-color-var( neutral-160 ) !default;
 
-/// The focus background color of the flat picker.
+/// The background color of the focused flat Picker components.
 /// @group input
 $kendo-picker-flat-focus-bg: $kendo-color-white !default;
 
-/// The focus border color of the flat picker.
+/// The border color of the focused flat Picker components.
 /// @group input
 $kendo-picker-flat-focus-border: get-theme-color-var( primary-100 ) !default;
 
-/// The hover-focus text color of the flat picker.
+/// The text color of the hovered and focused flat Picker components.
 /// @group input
 $kendo-picker-flat-hover-focus-text: $kendo-picker-flat-hover-text !default;
 
-/// The hover-focus background color of the flat picker.
+/// The background color of the hovered and focused flat Picker components.
 /// @group input
 $kendo-picker-flat-hover-focus-bg: $kendo-picker-flat-hover-bg !default;
 
-/// The hover-focus border color of the flat picker.
+/// The border color of the hovered and focused flat Picker components.
 /// @group input
 $kendo-picker-flat-hover-focus-border: $kendo-picker-flat-border !default;
 
-/// The disabled text color of the flat picker.
+/// The text color of the disabled flat Picker components.
 /// @group input
 $kendo-picker-flat-disabled-text: $kendo-disabled-text !default;
 
-/// The disabled background color of the flat picker.
+/// The background color of the disabled flat Picker components.
 /// @group input
 $kendo-picker-flat-disabled-bg: none !default;
 
-/// The disabled border color of the flat picker.
+/// The border color of the disabled flat Picker components.
 /// @group input
 $kendo-picker-flat-disabled-border: $kendo-picker-flat-disabled-text !default;
 
-/// Sizes map of the input.
+/// The sizes map for the Input components.
 /// @group input
 $kendo-input-sizes: (
     sm: (
@@ -591,22 +620,37 @@ $kendo-input-theme-colors: (
     )
 ) !default;
 
-// Prefix background color
+/// The background color of the Input prefix.
+/// @group input
 $kendo-input-prefix-bg: get-theme-color-var( neutral-20 ) !default;
 
-// Suffix background color
+/// The background color of the Input suffix.
+/// @group input
 $kendo-input-suffix-bg: get-theme-color-var( neutral-20 ) !default;
 
-// Invalid
+/// The border color of the invalid Input components.
+/// @group input
 $kendo-input-invalid-border: var( --kendo-invalid-border, #{$kendo-invalid-border} ) !default;
+/// The text color of the invalid Input components.
+/// @group input
 $kendo-input-invalid-text: var( --kendo-invalid-text, #{$kendo-invalid-text} ) !default;
 
-// Placeholder
+/// The text color of the Input placeholder.
+/// @group input
 $kendo-input-placeholder-text: get-theme-color-var( neutral-130 ) !default;
+/// The opacity of the Input placeholder.
+/// @group input
 $kendo-input-placeholder-opacity: 1 !default;
 
-// Clear value
+/// The color of the Input clear value icon.
+/// @group input
 $kendo-input-clear-value-text: get-theme-color-var( neutral-130 ) !default;
+/// The opacity of the Input clear value icon.
+/// @group input
 $kendo-input-clear-value-opacity: .6 !default;
+/// The color of the hovered Input clear value icon.
+/// @group input
 $kendo-input-clear-value-hover-text: inherit !default;
+/// The opacity of the hovered Input clear value icon.
+/// @group input
 $kendo-input-clear-value-hover-opacity: 1 !default;
