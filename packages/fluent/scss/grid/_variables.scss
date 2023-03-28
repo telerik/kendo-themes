@@ -531,3 +531,10 @@ $kendo-grid-hierarchy-col-width: calc( var( --kendo-icon-size, 1rem ) * 2 ) !def
 /// Spacing of the grid filterable icon.
 /// @group grid
 $kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo-grid-header-menu-spacing} ) !default;
+
+/// Background color of the grid row resize indicator
+/// @group grid
+$kendo-grid-row-resizer-bg: get-theme-color-var( neutral-90 ) !default;
+/// Active background color of the grid row indicator
+/// @group grid
+$kendo-grid-row-resizer-active-bg: get-theme-color-var( primary-100 ) !default;

@@ -7,9 +7,9 @@
     @return if($direction == horizontal, scaleX($value), scaleY($value));
 }
 
-@mixin progressbar-indeterminate-animation($direction) {
-    $primary-animation-name: progressbar-primary-indeterminate-#{$direction};
-    $secondary-animation-name: progressbar-secondary-indeterminate-#{$direction};
+@mixin kendo-progressbar-indeterminate-animation($direction) {
+    $primary-animation-name: kendo-progressbar-primary-indeterminate-#{$direction};
+    $secondary-animation-name: kendo-progressbar-secondary-indeterminate-#{$direction};
 
     @keyframes #{$primary-animation-name} {
         0% {
@@ -48,8 +48,8 @@
 }
 
 @include exports("progressbar/theme/material") {
-    @include progressbar-indeterminate-animation(horizontal);
-    @include progressbar-indeterminate-animation(vertical);
+    @include kendo-progressbar-indeterminate-animation(horizontal);
+    @include kendo-progressbar-indeterminate-animation(vertical);
 
     .k-progressbar-indeterminate {
         background-image: none;

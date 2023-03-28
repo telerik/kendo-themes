@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
+import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../../table';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -36,69 +37,65 @@ root.render(
                         title="Select Item">
                     </ActionSheetHeader>
                     <div className="k-list-container">
-                        <div className="k-data-table k-table-lg">
-                            <div className="k-table-header">
-                                <div className="k-table-header-wrap">
-                                    <table className="k-table">
-                                        <colgroup>
-                                            <col style={{ width: '50px' }} />
-                                            <col style={{ width: "160px" }} />
-                                            <col />
-                                        </colgroup>
-                                        <thead className="k-table-thead">
-                                            <tr className="k-table-row">
-                                                <th className="k-table-th">ID</th>
-                                                <th className="k-table-th">Name</th>
-                                                <th className="k-table-th">Job Title</th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                </div>
-                            </div>
-                            <div className="k-table-group-sticky-header">
-                                <span className="k-table-th">Initial group</span>
-                            </div>
-                            <div className="k-table-scroller">
-                                <ul className="k-table k-table-list">
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">1</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 1.2</span>
-                                        <span className="k-table-td">Data 1.3</span>
-                                    </li>
-                                    <li className="k-table-row k-table-alt-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">2</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 2.2 (alt)</span>
-                                        <span className="k-table-td">Data 2.3</span>
-                                    </li>
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">3</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 3.2</span>
-                                        <span className="k-table-td">Data 3.3</span>
-                                    </li>
-                                    <li className="k-table-group-row">
-                                        <span className="k-table-th">Group</span>
-                                    </li>
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">4</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 4.2</span>
-                                        <span className="k-table-td">Data 4.3</span>
-                                    </li>
-                                    <li className="k-table-row k-table-alt-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">5</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 5.2 (alt)</span>
-                                        <span className="k-table-td">Data 5.3</span>
-                                    </li>
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">6</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 6.2</span>
-                                        <span className="k-table-td">Data 6.3</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="k-table-footer">
-                                <span className="k-table-td">30 records in total</span>
-                            </div>
-                        </div>
+                        <DataTable size="large">
+                            <TableHeader>
+                                <colgroup>
+                                    <col style={{ width: '50px' }} />
+                                    <col style={{ width: '160px' }} />
+                                    <col />
+                                </colgroup>
+                                <TableThead>
+                                    <TableRow>
+                                        <TableTh text="ID"></TableTh>
+                                        <TableTh text="Name"></TableTh>
+                                        <TableTh text="Job Title"></TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </TableHeader>
+                            <TableGroupStickyHeader>
+                                <TableListTh text="Initial group"></TableListTh>
+                            </TableGroupStickyHeader>
+                            <TableBody>
+                                <TableList>
+                                    <TableListRow>
+                                        <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 1.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListRow alt>
+                                        <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 2.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListRow>
+                                        <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 3.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListGroupRow>
+                                        <TableListTh text="Group"></TableListTh>
+                                    </TableListGroupRow>
+                                    <TableListRow>
+                                        <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 4.2" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 4.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListRow alt>
+                                        <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 5.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 5.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListRow>
+                                        <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 6.2" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 6.3"></TableListTd>
+                                    </TableListRow>
+                                </TableList>
+                            </TableBody>
+                            <TableFooter>
+                                <TableListTd text="30 records in total"></TableListTd>
+                            </TableFooter>
+                        </DataTable>
                     </div>
                     <ActionSheetFooter actions={[ '!Apply', 'Cancel' ]} />
                 </ActionSheet>
@@ -112,87 +109,65 @@ root.render(
                         title="Select Item">
                     </ActionSheetHeader>
                     <div className="k-list-container">
-                        <div className="k-data-table k-table-lg">
-                            <div className="k-table-header">
-                                <div className="k-table-header-wrap">
-                                    <table className="k-table">
-                                        <colgroup>
-                                            <col style={{ width: '50px' }} />
-                                            <col style={{ width: "160px" }} />
-                                            <col />
-                                        </colgroup>
-                                        <thead className="k-table-thead">
-                                            <tr className="k-table-row">
-                                                <th className="k-table-th">ID</th>
-                                                <th className="k-table-th">Name</th>
-                                                <th className="k-table-th">Job Title</th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                </div>
-                            </div>
-                            <div className="k-table-group-sticky-header">
-                                <span className="k-table-th">Initial group</span>
-                            </div>
-                            <div className="k-table-scroller">
-                                <ul className="k-table k-table-list">
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">1</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 1.2</span>
-                                        <span className="k-table-td">Data 1.3</span>
-                                    </li>
-                                    <li className="k-table-row k-table-alt-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">2</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 2.2 (alt)</span>
-                                        <span className="k-table-td">Data 2.3</span>
-                                    </li>
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">3</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 3.2</span>
-                                        <span className="k-table-td">Data 3.3</span>
-                                    </li>
-                                    <li className="k-table-group-row">
-                                        <span className="k-table-th">Group</span>
-                                    </li>
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">4</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 4.2</span>
-                                        <span className="k-table-td">Data 4.3</span>
-                                    </li>
-                                    <li className="k-table-row k-table-alt-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">5</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 5.2 (alt)</span>
-                                        <span className="k-table-td">Data 5.3</span>
-                                    </li>
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">6</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 6.2</span>
-                                        <span className="k-table-td">Data 6.3</span>
-                                    </li>
-                                    <li className="k-table-group-row">
-                                        <span className="k-table-th">Group</span>
-                                    </li>
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">4</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 4.2</span>
-                                        <span className="k-table-td">Data 4.3</span>
-                                    </li>
-                                    <li className="k-table-row k-table-alt-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">5</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 5.2 (alt)</span>
-                                        <span className="k-table-td">Data 5.3</span>
-                                    </li>
-                                    <li className="k-table-row">
-                                        <span style={{ width: '50px' }} className="k-table-td">6</span>
-                                        <span style={{ width: "160px" }} className="k-table-td">Data 6.2</span>
-                                        <span className="k-table-td">Data 6.3</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="k-table-footer">
-                                <span className="k-table-td">30 records in total</span>
-                            </div>
-                        </div>
+                        <DataTable size="large">
+                            <TableHeader>
+                                <colgroup>
+                                    <col style={{ width: '50px' }} />
+                                    <col style={{ width: '160px' }} />
+                                    <col />
+                                </colgroup>
+                                <TableThead>
+                                    <TableRow>
+                                        <TableTh text="ID"></TableTh>
+                                        <TableTh text="Name"></TableTh>
+                                        <TableTh text="Job Title"></TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </TableHeader>
+                            <TableGroupStickyHeader>
+                                <TableListTh text="Initial group"></TableListTh>
+                            </TableGroupStickyHeader>
+                            <TableBody>
+                                <TableList>
+                                    <TableListRow>
+                                        <TableListTd text="1" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 1.2" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 1.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListRow alt>
+                                        <TableListTd text="2" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 2.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 2.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListRow>
+                                        <TableListTd text="3" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 3.2" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 3.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListGroupRow>
+                                        <TableListTh text="Group"></TableListTh>
+                                    </TableListGroupRow>
+                                    <TableListRow>
+                                        <TableListTd text="4" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 4.2" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 4.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListRow alt>
+                                        <TableListTd text="5" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 5.2 (alt)" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 5.3"></TableListTd>
+                                    </TableListRow>
+                                    <TableListRow>
+                                        <TableListTd text="6" style={{ width: '50px' }}></TableListTd>
+                                        <TableListTd text="Data 6.2" style={{ width: '160px' }}></TableListTd>
+                                        <TableListTd text="Data 6.3"></TableListTd>
+                                    </TableListRow>
+                                </TableList>
+                            </TableBody>
+                            <TableFooter>
+                                <TableListTd text="30 records in total"></TableListTd>
+                            </TableFooter>
+                        </DataTable>
                     </div>
                     <ActionSheetFooter actions={[ '!Apply', 'Cancel' ]} />
                 </ActionSheet>
