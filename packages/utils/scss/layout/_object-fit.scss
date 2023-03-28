@@ -1,35 +1,34 @@
-// Object-fit documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit.
-
-/// This is equivalent to `object-fit: contain;`. The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box. The entire object is made to fill the box, while preserving its aspect ratio, so the object will be "letterboxed" if its aspect ratio does not match the aspect ratio of the box.
+/// This is equivalent to `object-fit: contain;`.
 /// @example object-fit: contain;
 /// @name .k-object-fit-contain
 /// @group object-fit
 /// @contextType css
 
-/// This is equivalent to `object-fit: cover;`. The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+/// This is equivalent to `object-fit: cover;`.
 /// @example object-fit: cover;
 /// @name .k-object-fit-cover
 /// @group object-fit
 /// @contextType css
 
-/// This is equivalent to `object-fit: fill;`. The replaced content is sized to fill the element's content box. The entire object will completely fill the box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be stretched to fit.
+/// This is equivalent to `object-fit: fill;`.
 /// @example object-fit: fill;
 /// @name .k-object-fit-fill
 /// @group object-fit
 /// @contextType css
 
-/// This is equivalent to `object-fit: scale-down;`. The content is sized as if none or contain were specified, whichever would result in a smaller concrete object size.
+/// This is equivalent to `object-fit: scale-down;`.
 /// @example object-fit: scale-down;
+/// @name .k-object-fit-scale-down
 /// @group object-fit
 /// @contextType css
 
-/// This is equivalent to `object-fit: initial;`. Apply the initial value which is the same as the fill value.
+/// This is equivalent to `object-fit: initial;`.
 /// @example object-fit: initial;
 /// @name .k-object-fit-initial
 /// @group object-fit
 /// @contextType css
 
-/// This is equivalent to `object-fit: none;`. The replaced content is not resized.
+/// This is equivalent to `object-fit: none;`.
 /// @example object-fit: none;
 /// @name .k-object-fit-none
 /// @group object-fit

@@ -1,18 +1,16 @@
-// Grid-row-start documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start.
-
-/// This is equivalent to `grid-row-start: 1;`. This specifies a grid item's start position on the first grid line within the grid row. This start position defines the block-start edge of the grid area.
+/// This is equivalent to `grid-row-start: 1;`.
 /// @example grid-row-start: 1;
 /// @name .k-row-start-1
 /// @group grid-row-start
 /// @contextType css
 
-/// This is equivalent to `grid-row-start: -1;`. This specifies a grid item's start position on the first grid line within the grid row. This start position defines the block-start edge of the grid area counting backwards.
+/// This is equivalent to `grid-row-start: -1;`.
 /// @example grid-row-start: -1;
 /// @name .k-row-start--1
 /// @group grid-row-start
 /// @contextType css
 
-/// This is equivalent to `grid-row-start: auto;`. This property contributes nothing to the grid item's placement, indicating auto-placement, an automatic span, or a default span of 1.
+/// This is equivalent to `grid-row-start: auto;`.
 /// @example grid-row-start: auto;
 /// @name .k-row-start-auto
 /// @group grid-row-start

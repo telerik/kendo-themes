@@ -1,12 +1,10 @@
-// Border-collapse documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse.
-
-/// This is equivalent to `border-collapse: collapse;`. Adjacent cells have shared borders (the collapsed-border table rendering model).
+/// This is equivalent to `border-collapse: collapse;`.
 /// @example border-collapse: collapse;
 /// @name .k-border-collapse
 /// @group border-collapse
 /// @contextType css
 
-/// This is equivalent to `border-collapse: separate;`. Adjacent cells have distinct borders (the separated-border table rendering model).
+/// This is equivalent to `border-collapse: separate;`.
 /// @example border-collapse: separate;
 /// @name .k-border-separate
 /// @group border-collapse

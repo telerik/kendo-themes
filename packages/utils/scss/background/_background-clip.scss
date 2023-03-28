@@ -1,24 +1,22 @@
-// Background-clip documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip.
-
-/// This is equivalent to `background-clip: border-box;`. The background extends to the outside edge of the border (but underneath the border in z-ordering).
+/// This is equivalent to `background-clip: border-box;`.
 /// @example background-clip: border-box;
 /// @name .k-bg-clip-border
 /// @group background-clip
 /// @contextType css
 
-/// This is equivalent to `background-clip: padding-box;`. The background extends to the outside edge of the border (but underneath the border in z-ordering).
+/// This is equivalent to `background-clip: padding-box;`.
 /// @example background-clip: padding-box;
 /// @name .k-bg-clip-padding
 /// @group background-clip
 /// @contextType css
 
-/// This is equivalent to `background-clip: content-box;`. The background extends to the outside edge of the border (but underneath the border in z-ordering).
+/// This is equivalent to `background-clip: content-box;`.
 /// @example background-clip: content-box;
 /// @name .k-bg-clip-content
 /// @group background-clip
 /// @contextType css
 
-/// This is equivalent to `background-clip: text;`. The background extends to the outside edge of the border (but underneath the border in z-ordering).
+/// This is equivalent to `background-clip: text;`.
 /// @example background-clip: text;
 /// @name .k-bg-clip-text
 /// @group background-clip

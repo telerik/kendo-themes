@@ -1,24 +1,22 @@
-// Text-align documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/text-align.
-
-/// This is equivalent to `text-align: left;`. The inline contents are aligned to the left edge of the line box.
+/// This is equivalent to `text-align: left;`.
 /// @example text-align: left;
 /// @name .k-text-left
 /// @group text-align
 /// @contextType css
 
-/// This is equivalent to `text-align: right;`. The inline contents are aligned to the right edge of the line box.
+/// This is equivalent to `text-align: right;`.
 /// @example text-align: right;
 /// @name .k-text-right
 /// @group text-align
 /// @contextType css
 
-/// This is equivalent to `text-align: center;`. The inline contents are centered within the line box.
+/// This is equivalent to `text-align: center;`.
 /// @example text-align: center;
 /// @name .k-text-center
 /// @group text-align
 /// @contextType css
 
-/// This is equivalent to `text-align: justify;`. The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.
+/// This is equivalent to `text-align: justify;`.
 /// @example text-align: justify;
 /// @name .k-text-justify
 /// @group text-align

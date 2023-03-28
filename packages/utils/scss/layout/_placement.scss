@@ -1,5 +1,3 @@
-// Position documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/position.
-
 /// This is equivalent to `top: 0;`.
 /// @example top: 0;
 /// @name .k-top-0
@@ -56,19 +54,19 @@
 
 /// This is equivalent to `top: 0; right: 0;`.
 /// @example top: 0; right: 0;
-/// @name .k-top-left-0
+/// @name .k-top-right-0
 /// @group position
 /// @contextType css
 
 /// This is equivalent to `bottom: 0; left: 0;`.
 /// @example bottom: 0; left: 0;
-/// @name .k-top-left-0
+/// @name .k-bottom-left-0
 /// @group position
 /// @contextType css
 
 /// This is equivalent to `bottom: 0; right: 0;`.
 /// @example bottom: 0; right: 0;
-/// @name .k-top-left-0
+/// @name .k-bottom-right-0
 /// @group position
 /// @contextType css
 
@@ -78,15 +76,15 @@
 /// @group position
 /// @contextType css
 
-/// This is equivalent to `inset-inline: 0;`. This defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the "right: 0; left: 0", or "top: 0; bottom: 0" properties depending on the values defined for writing-mode, direction, and text-orientation.
+/// This is equivalent to `inset-inline: 0;`.
 /// @example inset-inline: 0;
 /// @name .k-inset-x-0
 /// @group position
 /// @contextType css
 
-/// This is equivalent to `inset-inline: 0;`. The inset-block CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the "top: 0; bottom: 0", or "right: 0; left: 0" properties depending on the values defined for writing-mode, direction, and text-orientation.
-/// @example inset-inline: 0;
-/// @name .k-inset-x-0
+/// This is equivalent to `inset-block: 0;`.
+/// @example inset-block: 0;
+/// @name .k-inset-y-0
 /// @group position
 /// @contextType css
 

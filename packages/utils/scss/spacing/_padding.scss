@@ -1,546 +1,544 @@
-// padding documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/padding.
-
-/// This is equivalent to `padding: 0;`. Specifies 0px padding on all four sides of an element.
+/// This is equivalent to `padding: 0;`.
 /// @example padding: 0;
 /// @name .k-p-0
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 1px;`. Specifies 1px padding on all four sides of an element.
+/// This is equivalent to `padding: 1px;`.
 /// @example padding: 1px;
 /// @name .k-p-1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 0.25rem;`. Specifies 0.25rem padding on all four sides of an element.
+/// This is equivalent to `padding: 0.25rem;`.
 /// @example padding: 0.25rem;
 /// @name .k-p-1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: -1px;`. Specifies 1px padding on all four sides of an element.
+/// This is equivalent to `padding: -1px;`.
 /// @example padding: -1px;
 /// @name .k-p--1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: -0.25rem;`. Specifies 0.25rem padding on all four sides of an element.
+/// This is equivalent to `padding: -0.25rem;`.
 /// @example padding: -0.25rem;
 /// @name .k-p--1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 0.25rem;`. Specifies 0.25rem padding on all four sides of an element.
+/// This is equivalent to `padding: 0.25rem;`.
 /// @example padding: 0.25rem;
 /// @name .k-p-xs
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 0.5rem;`. Specifies 0.5rem padding on all four sides of an element.
+/// This is equivalent to `padding: 0.5rem;`.
 /// @example padding: 0.5rem;
 /// @name .k-p-sm
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 0.75rem;`. Specifies 0.75rem padding on all four sides of an element.
+/// This is equivalent to `padding: 0.75rem;`.
 /// @example padding: 0.75rem;
 /// @name .k-p-pd
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 1rem;`. Specifies 1rem padding on all four sides of an element.
+/// This is equivalent to `padding: 1rem;`.
 /// @example padding: 1rem;
 /// @name .k-p-lg
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 1.5rem;`. Specifies 1.5rem padding on all four sides of an element.
+/// This is equivalent to `padding: 1.5rem;`.
 /// @example padding: 1.5rem;
 /// @name .k-p-xl
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 0.125rem;`. Specifies 0.125rem padding on all four sides of an element.
+/// This is equivalent to `padding: 0.125rem;`.
 /// @example padding: 0.125rem;
 /// @name .k-p-thin
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: 1px;`. Specifies 1px padding on all four sides of an element.
+/// This is equivalent to `padding: 1px;`.
 /// @example padding: 1px;
 /// @name .k-p-hair
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding: auto;`. The browser selects a suitable padding to use on all four sides of an element.
+/// This is equivalent to `padding: auto;`.
 /// @example padding: auto;
 /// @name .k-p-auto
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 0;`. Specifies 0px top padding of an element.
+/// This is equivalent to `padding-top: 0;`.
 /// @example padding-top: 0;
 /// @name .k-pt-0
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 1px;`. Specifies 1px top padding of an element.
+/// This is equivalent to `padding-top: 1px;`.
 /// @example padding-top: 1px;
 /// @name .k-pt-1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 0.25rem;`. Specifies 0.25rem top padding of an element.
+/// This is equivalent to `padding-top: 0.25rem;`.
 /// @example padding-top: 0.25rem;
 /// @name .k-pt-1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: -1px;`. Specifies 1px top padding of an element.
+/// This is equivalent to `padding-top: -1px;`.
 /// @example padding-top: -1px;
 /// @name .k-pt--1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: -0.25rem;`. Specifies 0.25rem top padding of an element.
+/// This is equivalent to `padding-top: -0.25rem;`.
 /// @example padding-top: -0.25rem;
 /// @name .k-pt--1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 0.25rem;`. Specifies 0.25rem top padding of an element.
+/// This is equivalent to `padding-top: 0.25rem;`.
 /// @example padding-top: 0.25rem;
 /// @name .k-pt-xs
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 0.5rem;`. Specifies 0.5rem top padding of an element.
+/// This is equivalent to `padding-top: 0.5rem;`.
 /// @example padding-top: 0.5rem;
 /// @name .k-pt-sm
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 0.75rem;`. Specifies 0.75rem top padding of an element.
+/// This is equivalent to `padding-top: 0.75rem;`.
 /// @example padding-top: 0.75rem;
 /// @name .k-pt-md
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 1rem;`. Specifies 1rem top padding of an element.
+/// This is equivalent to `padding-top: 1rem;`.
 /// @example padding-top: 1rem;
 /// @name .k-pt-lg
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 1.5rem;`. Specifies 1.5rem top padding of an element.
+/// This is equivalent to `padding-top: 1.5rem;`.
 /// @example padding-top: 1.5rem;
 /// @name .k-pt-xl
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 0.125rem;`. Specifies 0.125rem top padding of an element.
+/// This is equivalent to `padding-top: 0.125rem;`.
 /// @example padding-top: 0.125rem;
 /// @name .k-pt-thin
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: 1px;`. Specifies 1px top padding of an element.
+/// This is equivalent to `padding-top: 1px;`.
 /// @example padding-top: 1px;
 /// @name .k-pt-hair
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-top: auto;`. The browser selects a suitable padding to the top side of an element.
+/// This is equivalent to `padding-top: auto;`.
 /// @example padding-top: auto;
 /// @name .k-pt-auto
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 0;`. Specifies 0px right padding of an element.
+/// This is equivalent to `padding-right: 0;`.
 /// @example padding-right: 0;
 /// @name .k-pr-0
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 1px;`. Specifies 1px right padding of an element.
+/// This is equivalent to `padding-right: 1px;`.
 /// @example padding-right: 1px;
 /// @name .k-pr-1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 0.25rem;`. Specifies 0.25rem right padding of an element.
+/// This is equivalent to `padding-right: 0.25rem;`.
 /// @example padding-right: 0.25rem;
 /// @name .k-pr-1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: -1px;`. Specifies 1px right padding of an element.
+/// This is equivalent to `padding-right: -1px;`.
 /// @example padding-right: -1px;
 /// @name .k-pr--1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: -0.25rem;`. Specifies 0.25rem right padding of an element.
+/// This is equivalent to `padding-right: -0.25rem;`.
 /// @example padding-right: -0.25rem;
 /// @name .k-pr--1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 0.25rem;`. Specifies 0.25rem right padding of an element.
+/// This is equivalent to `padding-right: 0.25rem;`.
 /// @example padding-right: 0.25rem;
 /// @name .k-pr-xs
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 0.5rem;`. Specifies 0.5rem right padding of an element.
+/// This is equivalent to `padding-right: 0.5rem;`.
 /// @example padding-right: 0.5rem;
 /// @name .k-pr-sm
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 0.75rem;`. Specifies 0.75rem right padding of an element.
+/// This is equivalent to `padding-right: 0.75rem;`.
 /// @example padding-right: 0.75rem;
 /// @name .k-pr-md
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 1rem;`. Specifies 1rem right padding of an element.
+/// This is equivalent to `padding-right: 1rem;`.
 /// @example padding-right: 1rem;
 /// @name .k-pr-lg
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 1.5rem;`. Specifies 1.5rem right padding of an element.
+/// This is equivalent to `padding-right: 1.5rem;`.
 /// @example padding-right: 1.5rem;
 /// @name .k-pr-xl
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 0.125rem;`. Specifies 0.125rem right padding of an element.
+/// This is equivalent to `padding-right: 0.125rem;`.
 /// @example padding-right: 0.125rem;
 /// @name .k-pr-thin
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: 1px;`. Specifies 1px right padding of an element.
+/// This is equivalent to `padding-right: 1px;`.
 /// @example padding-right: 1px;
 /// @name .k-pr-hair
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-right: auto;`. The browser selects a suitable padding to the right side of an element.
+/// This is equivalent to `padding-right: auto;`.
 /// @example padding-right: auto;
 /// @name .k-pr-auto
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 0;`. Specifies 0px bottom padding of an element.
+/// This is equivalent to `padding-bottom: 0;`.
 /// @example padding-bottom: 0;
 /// @name .k-pb-0
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 1px;`. Specifies 1px bottom padding of an element.
+/// This is equivalent to `padding-bottom: 1px;`.
 /// @example padding-bottom: 1px;
 /// @name .k-pb-1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 0.25rem;`. Specifies 0.25rem bottom padding of an element.
+/// This is equivalent to `padding-bottom: 0.25rem;`.
 /// @example padding-bottom: 0.25rem;
 /// @name .k-pb-1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: -1px;`. Specifies 1px bottom padding of an element.
+/// This is equivalent to `padding-bottom: -1px;`.
 /// @example padding-bottom: -1px;
 /// @name .k-pb--1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: -0.25rem;`. Specifies 0.25rem bottom padding of an element.
+/// This is equivalent to `padding-bottom: -0.25rem;`.
 /// @example padding-bottom: -0.25rem;
 /// @name .k-pb--1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 0.25rem;`. Specifies 0.25rem bottom padding of an element.
+/// This is equivalent to `padding-bottom: 0.25rem;`.
 /// @example padding-bottom: 0.25rem;
 /// @name .k-pb-xs
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 0.5rem;`. Specifies 0.5rem bottom padding of an element.
+/// This is equivalent to `padding-bottom: 0.5rem;`.
 /// @example padding-bottom: 0.5rem;
 /// @name .k-pb-sm
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 0.75rem;`. Specifies 0.75rem bottom padding of an element.
+/// This is equivalent to `padding-bottom: 0.75rem;`.
 /// @example padding-bottom: 0.75rem;
 /// @name .k-pb-md
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 1rem;`. Specifies 1rem bottom padding of an element.
+/// This is equivalent to `padding-bottom: 1rem;`.
 /// @example padding-bottom: 1rem;
 /// @name .k-pb-lg
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 1.5rem;`. Specifies 1.5rem bottom padding of an element.
+/// This is equivalent to `padding-bottom: 1.5rem;`.
 /// @example padding-bottom: 1.5rem;
 /// @name .k-pb-xl
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 0.125rem;`. Specifies 0.125rem bottom padding of an element.
+/// This is equivalent to `padding-bottom: 0.125rem;`.
 /// @example padding-bottom: 0.125rem;
 /// @name .k-pb-thin
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: 1px;`. Specifies 1px bottom padding of an element.
+/// This is equivalent to `padding-bottom: 1px;`.
 /// @example padding-bottom: 1px;
 /// @name .k-pb-hair
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-bottom: auto;`. The browser selects a suitable padding to the bottom side of an element.
+/// This is equivalent to `padding-bottom: auto;`.
 /// @example padding-bottom: auto;
 /// @name .k-pb-auto
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 0;`. Specifies 0px left padding of an element.
+/// This is equivalent to `padding-left: 0;`.
 /// @example padding-left: 0;
 /// @name .k-pl-0
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 1px;`. Specifies 1px left padding of an element.
+/// This is equivalent to `padding-left: 1px;`.
 /// @example padding-left: 1px;
 /// @name .k-pl-1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 0.25rem;`. Specifies 0.25rem left padding of an element.
+/// This is equivalent to `padding-left: 0.25rem;`.
 /// @example padding-left: 0.25rem;
 /// @name .k-pl-1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: -1px;`. Specifies 1px left padding of an element.
+/// This is equivalent to `padding-left: -1px;`.
 /// @example padding-left: -1px;
 /// @name .k-pl--1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: -0.25rem;`. Specifies 0.25rem left padding of an element.
+/// This is equivalent to `padding-left: -0.25rem;`.
 /// @example padding-left: -0.25rem;
 /// @name .k-pl--1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 0.25rem;`. Specifies 0.25rem left padding of an element.
+/// This is equivalent to `padding-left: 0.25rem;`.
 /// @example padding-left: 0.25rem;
 /// @name .k-pl-xs
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 0.5rem;`. Specifies 0.5rem left padding of an element.
+/// This is equivalent to `padding-left: 0.5rem;`.
 /// @example padding-left: 0.5rem;
 /// @name .k-pl-sm
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 0.75rem;`. Specifies 0.75rem left padding of an element.
+/// This is equivalent to `padding-left: 0.75rem;`.
 /// @example padding-left: 0.75rem;
 /// @name .k-pl-md
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 1rem;`. Specifies 1rem left padding of an element.
+/// This is equivalent to `padding-left: 1rem;`.
 /// @example padding-left: 1rem;
 /// @name .k-pl-lg
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 1.5rem;`. Specifies 1.5rem left padding of an element.
+/// This is equivalent to `padding-left: 1.5rem;`.
 /// @example padding-left: 1.5rem;
 /// @name .k-pl-xl
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 0.125rem;`. Specifies 0.125rem left padding of an element.
+/// This is equivalent to `padding-left: 0.125rem;`.
 /// @example padding-left: 0.125rem;
 /// @name .k-pl-thin
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: 1px;`. Specifies 1px left padding of an element.
+/// This is equivalent to `padding-left: 1px;`.
 /// @example padding-left: 1px;
 /// @name .k-pl-hair
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-left: auto;`. The browser selects a suitable padding to the left side of an element.
+/// This is equivalent to `padding-left: auto;`.
 /// @example padding-left: auto;
 /// @name .k-pl-auto
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 0;`. Specifies 0px inline padding of an element.
+/// This is equivalent to `padding-inline: 0;`.
 /// @example padding-inline: 0;
 /// @name .k-px-0
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 1px;`. Specifies 1px inline padding of an element.
+/// This is equivalent to `padding-inline: 1px;`.
 /// @example padding-inline: 1px;
 /// @name .k-px-1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 0.25rem;`. Specifies 0.25rem inline padding of an element.
+/// This is equivalent to `padding-inline: 0.25rem;`.
 /// @example padding-inline: 0.25rem;
 /// @name .k-px-1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: -1px;`. Specifies 1px inline padding of an element.
+/// This is equivalent to `padding-inline: -1px;`.
 /// @example padding-inline: -1px;
 /// @name .k-px--1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: -0.25rem;`. Specifies 0.25rem inline padding of an element.
+/// This is equivalent to `padding-inline: -0.25rem;`.
 /// @example padding-inline: -0.25rem;
 /// @name .k-px--1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 0.25rem;`. Specifies 0.25rem inline padding of an element.
+/// This is equivalent to `padding-inline: 0.25rem;`.
 /// @example padding-inline: 0.25rem;
 /// @name .k-px-xs
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 0.5rem;`. Specifies 0.5rem inline padding of an element.
+/// This is equivalent to `padding-inline: 0.5rem;`.
 /// @example padding-inline: 0.5rem;
 /// @name .k-px-sm
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 0.75rem;`. Specifies 0.75rem inline padding of an element.
+/// This is equivalent to `padding-inline: 0.75rem;`.
 /// @example padding-inline: 0.75rem;
 /// @name .k-px-md
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 1rem;`. Specifies 1rem inline padding of an element.
+/// This is equivalent to `padding-inline: 1rem;`.
 /// @example padding-inline: 1rem;
 /// @name .k-px-lg
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 1.5rem;`. Specifies 1.5rem inline padding of an element.
+/// This is equivalent to `padding-inline: 1.5rem;`.
 /// @example padding-inline: 1.5rem;
 /// @name .k-px-xl
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 0.125rem;`. Specifies 0.125rem inline padding of an element.
+/// This is equivalent to `padding-inline: 0.125rem;`.
 /// @example padding-inline: 0.125rem;
 /// @name .k-px-thin
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: 1px;`. Specifies 1px inline padding of an element.
+/// This is equivalent to `padding-inline: 1px;`.
 /// @example padding-inline: 1px;
 /// @name .k-px-hair
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-inline: auto;`. The browser selects a suitable padding to the left and right sides of an element.
+/// This is equivalent to `padding-inline: auto;`.
 /// @example padding-inline: auto;
 /// @name .k-px-auto
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 0;`. Specifies 0px block padding of an element.
+/// This is equivalent to `padding-block: 0;`.
 /// @example padding-block: 0;
 /// @name .k-py-0
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 1px;`. Specifies 1px block padding of an element.
+/// This is equivalent to `padding-block: 1px;`.
 /// @example padding-block: 1px;
 /// @name .k-py-1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 0.25rem;`. Specifies 0.25rem block padding of an element.
+/// This is equivalent to `padding-block: 0.25rem;`.
 /// @example padding-block: 0.25rem;
 /// @name .k-py-1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: -1px;`. Specifies 1px block padding of an element.
+/// This is equivalent to `padding-block: -1px;`.
 /// @example padding-block: -1px;
 /// @name .k-py--1px
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: -0.25rem;`. Specifies 0.25rem block padding of an element.
+/// This is equivalent to `padding-block: -0.25rem;`.
 /// @example padding-block: -0.25rem;
 /// @name .k-py--1
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 0.25rem;`. Specifies 0.25rem block padding of an element.
+/// This is equivalent to `padding-block: 0.25rem;`.
 /// @example padding-block: 0.25rem;
 /// @name .k-py-xs
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 0.5rem;`. Specifies 0.5rem block padding of an element.
+/// This is equivalent to `padding-block: 0.5rem;`.
 /// @example padding-block: 0.5rem;
 /// @name .k-py-sm
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 0.75rem;`. Specifies 0.75rem block padding of an element.
+/// This is equivalent to `padding-block: 0.75rem;`.
 /// @example padding-block: 0.75rem;
 /// @name .k-py-md
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 1rem;`. Specifies 1rem block padding of an element.
+/// This is equivalent to `padding-block: 1rem;`.
 /// @example padding-block: 1rem;
 /// @name .k-py-lg
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 1.5rem;`. Specifies 1.5rem block padding of an element.
+/// This is equivalent to `padding-block: 1.5rem;`.
 /// @example padding-block: 1.5rem;
 /// @name .k-py-xl
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 0.125rem;`. Specifies 0.125rem block padding of an element.
+/// This is equivalent to `padding-block: 0.125rem;`.
 /// @example padding-block: 0.125rem;
 /// @name .k-py-thin
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: 1px;`. Specifies 1px block padding of an element.
+/// This is equivalent to `padding-block: 1px;`.
 /// @example padding-block: 1px;
 /// @name .k-py-hair
 /// @group padding
 /// @contextType css
 
-/// This is equivalent to `padding-block: auto;`. The browser selects a suitable padding to the top and bottom sides of an element.
+/// This is equivalent to `padding-block: auto;`.
 /// @example padding-block: auto;
 /// @name .k-py-auto
 /// @group padding

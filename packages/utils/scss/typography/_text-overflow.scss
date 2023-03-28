@@ -1,12 +1,10 @@
-// text-overflow documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow.
-
-/// This is equivalent to `text-overflow: clip;`. This keyword value will truncate the text at the limit of the content area, therefore the truncation can happen in the middle of a character. To clip at the transition between characters you can specify text-overflow as an empty string, if that is supported in your target browsers: text-overflow: '';.
+/// This is equivalent to `text-overflow: clip;`.
 /// @example text-overflow: clip;
 /// @name .k-text-clip
 /// @group text-overflow
 /// @contextType css
 
-/// This is equivalent to `text-overflow: ellipsis; white-space: nowrap; overflow: hidden;`. This keyword value will display an ellipsis ('…', U+2026 HORIZONTAL ELLIPSIS) to represent clipped text. The ellipsis is displayed inside the content area, decreasing the amount of text displayed. If there is not enough space to display the ellipsis, it is clipped.
+/// This is equivalent to `text-overflow: ellipsis; white-space: nowrap; overflow: hidden;`.
 /// @example text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
 /// @name .k-text-ellipsis
 /// @group text-overflow

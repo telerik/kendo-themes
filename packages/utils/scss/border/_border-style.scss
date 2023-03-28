@@ -1,246 +1,244 @@
-// Border-style documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/border-style.
-
-/// This is equivalent to `border-style: solid;`. Displays all borders of the elements as single, straight, solid line.
+/// This is equivalent to `border-style: solid;`.
 /// @example border-style: solid;
 /// @name .k-border-solid
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-style: dashed;`. Displays all borders of the elements as a series of short square-ended dashes or line segments.
+/// This is equivalent to `border-style: dashed;`.
 /// @example border-style: dashed;
 /// @name .k-border-dashed
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-style: dotted;`. Displays all borders of the elements as a series of rounded dots.
+/// This is equivalent to `border-style: dotted;`.
 /// @example border-style: dotted;
 /// @name .k-border-dotted
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-style: double;`. Displays all borders of the elements as two straight lines that add up to the pixel size defined by border-style.
+/// This is equivalent to `border-style: double;`.
 /// @example border-style: double;
 /// @name .k-border-double
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-style: hidden;`. Displays no border. In the case of table cell and border collapsing, the hidden value has the highest priority: if any other conflicting border is set, it won't be displayed.
+/// This is equivalent to `border-style: hidden;`.
 /// @example border-style: hidden;
 /// @name .k-border-hidden
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-style: none;`. Displays no border. In the case of table cell and border collapsing, the none value has the lowest priority: if any other conflicting border is set, it will be displayed.
+/// This is equivalent to `border-style: none;`.
 /// @example border-style: none;
 /// @name .k-border-none
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-top-style: solid;`. Displays top border of the elements as single, straight, solid line.
+/// This is equivalent to `border-top-style: solid;`.
 /// @example border-top-style: solid;
 /// @name .k-border-t-solid
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-top-style: dashed;`. Displays top border of the elements as a series of short square-ended dashes or line segments.
+/// This is equivalent to `border-top-style: dashed;`.
 /// @example border-top-style: dashed;
 /// @name .k-border-t-dashed
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-top-style: dotted;`. Displays top border of the elements as a series of rounded dots.
+/// This is equivalent to `border-top-style: dotted;`.
 /// @example border-top-style: dotted;
 /// @name .k-border-t-dotted
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-top-style: double;`. Displays top border of the elements as two straight lines that add up to the pixel size defined by border-style.
+/// This is equivalent to `border-top-style: double;`.
 /// @example border-top-style: double;
 /// @name .k-border-t-double
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-top-style: hidden;`. Displays no top border. In the case of table cell and border collapsing, the hidden value has the highest priority: if any other conflicting border is set, it won't be displayed.
+/// This is equivalent to `border-top-style: hidden;`.
 /// @example border-top-style: hidden;
 /// @name .k-border-t-hidden
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-top-style: none;`. Displays no top border. In the case of table cell and border collapsing, the none value has the lowest priority: if any other conflicting border is set, it will be displayed.
+/// This is equivalent to `border-top-style: none;`.
 /// @example border-top-style: none;
 /// @name .k-border-t-none
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-right-style: solid;`. Displays right border of the elements as single, straight, solid line.
+/// This is equivalent to `border-right-style: solid;`.
 /// @example border-right-style: solid;
 /// @name .k-border-r-solid
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-right-style: dashed;`. Displays right border of the elements as a series of short square-ended dashes or line segments.
+/// This is equivalent to `border-right-style: dashed;`.
 /// @example border-right-style: dashed;
 /// @name .k-border-r-dashed
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-right-style: dotted;`. Displays right border of the elements as a series of rounded dots.
+/// This is equivalent to `border-right-style: dotted;`.
 /// @example border-right-style: dotted;
 /// @name .k-border-r-dotted
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-right-style: double;`. Displays right border of the elements as two straight lines that add up to the pixel size defined by border-style.
+/// This is equivalent to `border-right-style: double;`.
 /// @example border-right-style: double;
 /// @name .k-border-r-double
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-right-style: hidden;`. Displays no right border. In the case of table cell and border collapsing, the hidden value has the highest priority: if any other conflicting border is set, it won't be displayed.
+/// This is equivalent to `border-right-style: hidden;`.
 /// @example border-right-style: hidden;
 /// @name .k-border-r-hidden
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-right-style: none;`. Displays no right border. In the case of table cell and border collapsing, the none value has the lowest priority: if any other conflicting border is set, it will be displayed.
+/// This is equivalent to `border-right-style: none;`.
 /// @example border-right-style: none;
 /// @name .k-border-r-none
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-bottom-style: solid;`. Displays bottom border of the elements as single, straight, solid line.
+/// This is equivalent to `border-bottom-style: solid;`.
 /// @example border-bottom-style: solid;
 /// @name .k-border-b-solid
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-bottom-style: dashed;`. Displays bottom border of the elements as a series of short square-ended dashes or line segments.
+/// This is equivalent to `border-bottom-style: dashed;`.
 /// @example border-bottom-style: dashed;
 /// @name .k-border-b-dashed
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-bottom-style: dotted;`. Displays bottom border of the elements as a series of rounded dots.
+/// This is equivalent to `border-bottom-style: dotted;`.
 /// @example border-bottom-style: dotted;
 /// @name .k-border-b-dotted
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-bottom-style: double;`. Displays bottom border of the elements as two straight lines that add up to the pixel size defined by border-style.
+/// This is equivalent to `border-bottom-style: double;`.
 /// @example border-bottom-style: double;
 /// @name .k-border-b-double
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-bottom-style: hidden;`. Displays no bottom border. In the case of table cell and border collapsing, the hidden value has the highest priority: if any other conflicting border is set, it won't be displayed.
+/// This is equivalent to `border-bottom-style: hidden;`.
 /// @example border-bottom-style: hidden;
 /// @name .k-border-b-hidden
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-bottom-style: none;`. Displays no bottom border. In the case of table cell and border collapsing, the none value has the lowest priority: if any other conflicting border is set, it will be displayed.
+/// This is equivalent to `border-bottom-style: none;`.
 /// @example border-bottom-style: none;
 /// @name .k-border-b-none
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-left-style: solid;`. Displays left border of the elements as single, straight, solid line.
+/// This is equivalent to `border-left-style: solid;`.
 /// @example border-left-style: solid;
 /// @name .k-border-l-solid
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-left-style: dashed;`. Displays left border of the elements as a series of short square-ended dashes or line segments.
+/// This is equivalent to `border-left-style: dashed;`.
 /// @example border-left-style: dashed;
 /// @name .k-border-l-dashed
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-left-style: dotted;`. Displays left border of the elements as a series of rounded dots.
+/// This is equivalent to `border-left-style: dotted;`.
 /// @example border-left-style: dotted;
 /// @name .k-border-l-dotted
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-left-style: double;`. Displays left border of the elements as two straight lines that add up to the pixel size defined by border-style.
+/// This is equivalent to `border-left-style: double;`.
 /// @example border-left-style: double;
 /// @name .k-border-l-double
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-left-style: hidden;`. Displays no left border. In the case of table cell and border collapsing, the hidden value has the highest priority: if any other conflicting border is set, it won't be displayed.
+/// This is equivalent to `border-left-style: hidden;`.
 /// @example border-left-style: hidden;
 /// @name .k-border-l-hidden
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-inline-style: solid;`. Displays inline border of the elements as single, straight, solid line. Border-inline corresponds to the border-top and border-bottom or border-right, and border-left properties, depending on the values defined for writing-mode, direction, and text-orientation.
+/// This is equivalent to `border-inline-style: solid;`.
 /// @example border-inline-style: solid;
 /// @name .k-border-x-solid
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-inline-style: dashed;`. Displays inline border of the elements as a series of short square-ended dashes or line segments.
+/// This is equivalent to `border-inline-style: dashed;`.
 /// @example border-inline-style: dashed;
 /// @name .k-border-x-dashed
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-inline-style: dotted;`. Displays inline border of the elements as a series of rounded dots.
+/// This is equivalent to `border-inline-style: dotted;`.
 /// @example border-inline-style: dotted;
 /// @name .k-border-x-dotted
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-inline-style: double;`. Displays inline border of the elements as two straight lines that add up to the pixel size defined by border-style.
+/// This is equivalent to `border-inline-style: double;`.
 /// @example border-inline-style: double;
 /// @name .k-border-x-double
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-inline-style: hidden;`. Displays no inline border. In the case of table cell and border collapsing, the hidden value has the highest priority: if any other conflicting border is set, it won't be displayed.
+/// This is equivalent to `border-inline-style: hidden;`.
 /// @example border-inline-style: hidden;
 /// @name .k-border-x-hidden
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-inline-style: none;`. Displays no inline border. In the case of table cell and border collapsing, the none value has the lowest priority: if any other conflicting border is set, it will be displayed.
+/// This is equivalent to `border-inline-style: none;`.
 /// @example border-inline-style: none;
 /// @name .k-border-x-none
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-block-style: solid;`. Displays block border of the elements as single, straight, solid line. Border-block corresponds to the border-top and border-bottom or border-right, and border-left properties, depending on the values defined for writing-mode, direction, and text-orientation.
+/// This is equivalent to `border-block-style: solid;`.
 /// @example border-block-style: solid;
 /// @name .k-border-y-solid
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-block-style: dashed;`. Displays block border of the elements as a series of short square-ended dashes or line segments.
+/// This is equivalent to `border-block-style: dashed;`.
 /// @example border-block-style: dashed;
 /// @name .k-border-y-dashed
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-block-style: dotted;`. Displays block border of the elements as a series of rounded dots.
+/// This is equivalent to `border-block-style: dotted;`.
 /// @example border-block-style: dotted;
 /// @name .k-border-y-dotted
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-block-style: double;`. Displays block border of the elements as two straight lines that add up to the pixel size defined by border-style.
+/// This is equivalent to `border-block-style: double;`.
 /// @example border-block-style: double;
 /// @name .k-border-y-double
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-block-style: hidden;`. Displays no block border. In the case of table cell and border collapsing, the hidden value has the highest priority: if any other conflicting border is set, it won't be displayed.
+/// This is equivalent to `border-block-style: hidden;`.
 /// @example border-block-style: hidden;
 /// @name .k-border-y-hidden
 /// @group border-style
 /// @contextType css
 
-/// This is equivalent to `border-block-style: none;`. Displays no block border. In the case of table cell and border collapsing, the none value has the lowest priority: if any other conflicting border is set, it will be displayed.
+/// This is equivalent to `border-block-style: none;`.
 /// @example border-block-style: none;
 /// @name .k-border-y-none
 /// @group border-style

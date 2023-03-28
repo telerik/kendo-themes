@@ -1,19 +1,17 @@
-// List-style documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/list-style.
-
-/// This is equivalent to `list-style-typ: none;`. No list style is used.
-/// @example list-style-typ: none;
+/// This is equivalent to `list-style-type: none;`.
+/// @example list-style-type: none;
 /// @name .k-list-none
 /// @group list-style
 /// @contextType css
 
-/// This is equivalent to `list-style-typ: disc;`. The marker of list items is a filled circle.
-/// @example list-style-typ: disc;
+/// This is equivalent to `list-style-type: disc;`.
+/// @example list-style-type: disc;
 /// @name .k-list-disc
 /// @group list-style
 /// @contextType css
 
-/// This is equivalent to `list-style-typ: decimal;`.The marker of list items is a number.
-/// @example list-style-typ: decimal;
+/// This is equivalent to `list-style-type: decimal;`.The marker of list items is a number.
+/// @example list-style-type: decimal;
 /// @name .k-list-decimal
 /// @group list-style
 /// @contextType css
