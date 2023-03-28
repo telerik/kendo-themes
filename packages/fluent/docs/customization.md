@@ -12808,6 +12808,26 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the grid filterable icon.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-grid-row-resizer-bg</td>
+    <td></td>
+    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid row resize indicator</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-row-resizer-active-bg</td>
+    <td></td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Active background color of the grid row indicator</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

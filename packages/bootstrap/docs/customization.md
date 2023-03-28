@@ -3042,6 +3042,26 @@ The following table lists the available variables for customizing the Bootstrap 
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-grid-row-resizer-bg</td>
+    <td>Color</td>
+    <td><code>rgba( k-contrast-color( $kendo-grid-bg ), .12 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid row resize indicator</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-row-resizer-active-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Active background color of the grid row resize indicator</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -5983,9 +6003,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-progressbar-animation-timing</td>
-    <td>String</td>
-    <td><code>progress-bar-animation-timing</code></td>
-    <td><code>progress-bar-animation-timing</code></td>
+    <td>List</td>
+    <td><code>$progress-bar-animation-timing</code></td>
+    <td><code>1s linear infinite</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Animation timing of the progressbar.</div></div>

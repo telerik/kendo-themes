@@ -337,6 +337,26 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-grid-row-resizer-bg</td>
+    <td>Color</td>
+    <td><code>rgba( k-contrast-color( $kendo-grid-bg ), .24 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.24)"></span><code>rgba(0, 0, 0, 0.24)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid row resize indicator</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-row-resizer-active-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #3f51b5"></span><code>#3f51b5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Active background color of the grid row resize indicator</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
