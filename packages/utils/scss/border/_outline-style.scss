@@ -1,36 +1,34 @@
-// outline-style documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/outline-style.
-
-/// This is equivalent to `outline-style: solid;`. Displays outlines of the elements as single, straight, solid line.
+/// This is equivalent to `outline-style: solid;`.
 /// @example outline-style: solid;
 /// @name .k-outline-solid
 /// @group outline-style
 /// @contextType css
 
-/// This is equivalent to `outline-style: dashed;`. Displays outlines of the elements as a series of short square-ended dashes or line segments.
+/// This is equivalent to `outline-style: dashed;`.
 /// @example outline-style: dashed;
 /// @name .k-outline-dashed
 /// @group outline-style
 /// @contextType css
 
-/// This is equivalent to `outline-style: dotted;`. Displays outlines of the elements as a series of rounded dots.
+/// This is equivalent to `outline-style: dotted;`.
 /// @example outline-style: dotted;
 /// @name .k-outline-dotted
 /// @group outline-style
 /// @contextType css
 
-/// This is equivalent to `outline-style: double;`. Displays outlines of the elements as two straight lines that add up to the pixel size defined by outline-style.
+/// This is equivalent to `outline-style: double;`.
 /// @example outline-style: double;
 /// @name .k-outline-double
 /// @group outline-style
 /// @contextType css
 
-/// This is equivalent to `outline-style: hidden;`. Displays no outline. In the case of table cell and outline collapsing, the hidden value has the highest priority: if any other conflicting outline is set, it won't be displayed.
+/// This is equivalent to `outline-style: hidden;`.
 /// @example outline-style: hidden;
 /// @name .k-outline-hidden
 /// @group outline-style
 /// @contextType css
 
-/// This is equivalent to `outline-style: none;`. Displays no outline. In the case of table cell and outline collapsing, the none value has the lowest priority: if any other conflicting outline is set, it will be displayed.
+/// This is equivalent to `outline-style: none;`.
 /// @example outline-style: none;
 /// @name .k-outline-none
 /// @group outline-style

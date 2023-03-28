@@ -1,324 +1,322 @@
-// scroll documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/scroll.
-
-/// This is equivalent to `scroll-behavior: auto;`. The scrolling box scrolls instantly.
+/// This is equivalent to `scroll-behavior: auto;`.
 /// @example scroll-behavior: auto;
 /// @name .k-scroll-auto
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-behavior: smooth;`. The scrolling box scrolls in a smooth fashion using a user-agent-defined timing function over a user-agent-defined period of time. User agents should follow platform conventions, if any.
+/// This is equivalent to `scroll-behavior: smooth;`.
 /// @example scroll-behavior: smooth;
 /// @name .k-scroll-smooth
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-snap-type: x var(--k-scroll-snap-strictness);`. The scroll container snaps to snap positions in its horizontal axis only. Value of the --k-scroll-snap-strictness custom property is set by .k-scroll-snap-mandatory and .k-scroll-snap-proximity classes.
+/// This is equivalent to `scroll-snap-type: x var(--k-scroll-snap-strictness);`.
 /// @example scroll-snap-type: x var(--k-scroll-snap-strictness);
 /// @name .k-scroll-snap-snap-x
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-snap-type: y var(--k-scroll-snap-strictness);`. The scroll container snaps to snap positions in its vertical axis only. Value of the --k-scroll-snap-strictness custom property is set by .k-scroll-snap-mandatory and .k-scroll-snap-proximity classes.
+/// This is equivalent to `scroll-snap-type: y var(--k-scroll-snap-strictness);`.
 /// @example scroll-snap-type: y var(--k-scroll-snap-strictness);
 /// @name .k-scroll-snap-snap-y
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `--k-scroll-snap-strictness: mandatory;`. This set strictness of the snap point when scroll snap type is set. The visual viewport of this scroll container will rest on a snap point if it isn't currently scrolled. That means it snaps on that point when the scroll action finished, if possible. If content is added, moved, deleted or resized the scroll offset will be adjusted to maintain the resting on that snap point.
+/// This is equivalent to `--k-scroll-snap-strictness: mandatory;`.
 /// @example --k-scroll-snap-strictness: mandatory;
 /// @name .k-scroll-snap-mandatory
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `--k-scroll-snap-strictness: proximity;`. This set strictness of the snap point when scroll snap type is set. The visual viewport of this scroll container may come to rest on a snap point if it isn't currently scrolled considering the user agent's scroll parameters. If content is added, moved, deleted or resized the scroll offset may be adjusted to maintain the resting on that snap point.
+/// This is equivalent to `--k-scroll-snap-strictness: proximity;`.
 /// @example --k-scroll-snap-strictness: proximity;
 /// @name .k-scroll-snap-proximity
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-snap-stop: normal;`. When the visual viewport of this element's scroll container is scrolled, it may "pass over" possible snap positions. The effect of this property can be noticed on devices with a touchpad.
+/// This is equivalent to `scroll-snap-stop: normal;`.
 /// @example scroll-snap-stop: normal;
 /// @name .k-scroll-snap-stop-normal
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-snap-stop: always;`. The scroll container must not "pass over" a possible snap position; and must snap to the first of this elements' snap positions. The effect of this property can be noticed on devices with a touchpad.
+/// This is equivalent to `scroll-snap-stop: always;`.
 /// @example scroll-snap-stop: always;
 /// @name .k-scroll-snap-stop-always
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-snap-align: start;`. The start alignment of this box's scroll snap area, within the scroll container's snapport is a snap position in this axis.
+/// This is equivalent to `scroll-snap-align: start;`.
 /// @example scroll-snap-align: start;
 /// @name .k-scroll-snap-align-start
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-snap-align: end;`. The end alignment of this box's scroll snap area, within the scroll container's snapport is a snap position in this axis.
+/// This is equivalent to `scroll-snap-align: end;`.
 /// @example scroll-snap-align: end;
 /// @name .k-scroll-snap-align-end
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-snap-align: center;`. The center alignment of this box's scroll snap area, within the scroll container's snapport is a snap position in this axis.
+/// This is equivalent to `scroll-snap-align: center;`.
 /// @example scroll-snap-align: center;
 /// @name .k-scroll-snap-align-center
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-snap-align: none;`. The box does not define a snap position in that axis.
+/// This is equivalent to `scroll-snap-align: none;`.
 /// @example scroll-snap-align: none;
 /// @name .k-scroll-snap-align-none
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin: 0;`. Sets 0px margin outset from the corresponding edge of the scroll container.
+/// This is equivalent to `scroll-margin: 0;`.
 /// @example scroll-margin: 0;
 /// @name .k-scroll-m-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin: 1px;`. Sets 1px margin outset from the corresponding edge of the scroll container.
+/// This is equivalent to `scroll-margin: 1px;`.
 /// @example scroll-margin: 1px;
 /// @name .k-scroll-m-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin: 0.25rem;`. Sets 0.25rem margin outset from the corresponding edge of the scroll container.
+/// This is equivalent to `scroll-margin: 0.25rem;`.
 /// @example scroll-margin: 0.25rem;
 /// @name .k-scroll-m-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-top: 0;`. Sets all of the scroll margin outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-margin-top: 0;`.
 /// @example scroll-margin-top: 0;
 /// @name .k-scroll-m-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-top: 1px;`. Sets all of the scroll margin outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-margin-top: 1px;`.
 /// @example scroll-margin-top: 1px;
 /// @name .k-scroll-m-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-top: 0.25rem;`. Sets all of the scroll margin outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-margin-top: 0.25rem;`.
 /// @example scroll-margin-top: 0.25rem;
 /// @name .k-scroll-m-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-right: 0;`. Sets the right scroll margin outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-margin-right: 0;`.
 /// @example scroll-margin-right: 0;
 /// @name .k-scroll-mr-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-right: 1px;`. Sets the right scroll margin outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-margin-right: 1px;`.
 /// @example scroll-margin-right: 1px;
 /// @name .k-scroll-mr-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-right: 0.25rem;`. Sets the right scroll margin outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-margin-right: 0.25rem;`.
 /// @example scroll-margin-right: 0.25rem;
 /// @name .k-scroll-mr-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-bottom: 0;`. Sets the bottom scroll margin outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-margin-bottom: 0;`.
 /// @example scroll-margin-bottom: 0;
 /// @name .k-scroll-mb-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-bottom: 1px;`. Sets the bottom scroll margin outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-margin-bottom: 1px;`.
 /// @example scroll-margin-bottom: 1px;
 /// @name .k-scroll-mb-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-bottom: 0.25rem;`. Sets the bottom scroll margin outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-margin-bottom: 0.25rem;`.
 /// @example scroll-margin-bottom: 0.25rem;
 /// @name .k-scroll-mb-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-left: 0;`. Sets the left scroll margin outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-margin-left: 0;`.
 /// @example scroll-margin-left: 0;
 /// @name .k-scroll-ml-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-left: 1px;`. Set the left scroll margin outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-margin-left: 1px;`.
 /// @example scroll-margin-left: 1px;
 /// @name .k-scroll-ml-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-left: 0.25rem;`. Sets the left scroll margin outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-margin-left: 0.25rem;`.
 /// @example scroll-margin-left: 0.25rem;
 /// @name .k-scroll-ml-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-inline: 0;`. Sets inline margin outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-margin-inline: 0;`.
 /// @example scroll-margin-inline: 0;
 /// @name .k-scroll-x-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-inline: 1px;`. Sets inline scroll margin outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-margin-inline: 1px;`.
 /// @example scroll-margin-inline: 1px;
 /// @name .k-scroll-x-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-inline: 0.25rem;`. Sets inline scroll margin outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-margin-inline: 0.25rem;`.
 /// @example scroll-margin-inline: 0.25rem;
 /// @name .k-scroll-x-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-block: 0;`. Sets block margin outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-margin-block: 0;`.
 /// @example scroll-margin-block: 0;
 /// @name .k-scroll-y-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-block: 1px;`. Sets block scroll margin outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-margin-block: 1px;`.
 /// @example scroll-margin-block: 1px;
 /// @name .k-scroll-y-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-margin-block: 0.25rem;`. Sets block scroll margin outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-margin-block: 0.25rem;`.
 /// @example scroll-margin-block: 0.25rem;
 /// @name .k-scroll-y-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding: 0;`. Sets 0px padding outset from the corresponding edge of the scroll container.
+/// This is equivalent to `scroll-padding: 0;`.
 /// @example scroll-padding: 0;
 /// @name .k-scroll-p-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding: 1px;`. Sets 1px padding outset from the corresponding edge of the scroll container.
+/// This is equivalent to `scroll-padding: 1px;`.
 /// @example scroll-padding: 1px;
 /// @name .k-scroll-p-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding: 0.25rem;`. Sets 0.25rem padding outset from the corresponding edge of the scroll container.
+/// This is equivalent to `scroll-padding: 0.25rem;`.
 /// @example scroll-padding: 0.25rem;
 /// @name .k-scroll-p-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-top: 0;`. Sets all of the scroll padding outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-padding-top: 0;`.
 /// @example scroll-padding-top: 0;
 /// @name .k-scroll-p-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-top: 1px;`. Sets all of the scroll padding outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-padding-top: 1px;`.
 /// @example scroll-padding-top: 1px;
 /// @name .k-scroll-p-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-top: 0.25rem;`. Sets all of the scroll padding outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-padding-top: 0.25rem;`.
 /// @example scroll-padding-top: 0.25rem;
 /// @name .k-scroll-p-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-right: 0;`. Sets the right scroll padding outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-padding-right: 0;`.
 /// @example scroll-padding-right: 0;
 /// @name .k-scroll-pr-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-right: 1px;`. Sets the right scroll padding outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-padding-right: 1px;`.
 /// @example scroll-padding-right: 1px;
 /// @name .k-scroll-pr-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-right: 0.25rem;`. Sets the right scroll padding outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-padding-right: 0.25rem;`.
 /// @example scroll-padding-right: 0.25rem;
 /// @name .k-scroll-pr-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-bottom: 0;`. Sets the bottom scroll padding outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-padding-bottom: 0;`.
 /// @example scroll-padding-bottom: 0;
 /// @name .k-scroll-pb-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-bottom: 1px;`. Sets the bottom scroll padding outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-padding-bottom: 1px;`.
 /// @example scroll-padding-bottom: 1px;
 /// @name .k-scroll-pb-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-bottom: 0.25rem;`. Sets the bottom scroll padding outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-padding-bottom: 0.25rem;`.
 /// @example scroll-padding-bottom: 0.25rem;
 /// @name .k-scroll-pb-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-left: 0;`. Sets the left scroll padding outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-padding-left: 0;`.
 /// @example scroll-padding-left: 0;
 /// @name .k-scroll-pl-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-left: 1px;`. Set the left scroll padding outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-padding-left: 1px;`.
 /// @example scroll-padding-left: 1px;
 /// @name .k-scroll-pl-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-left: 0.25rem;`. Sets the left scroll padding outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-padding-left: 0.25rem;`.
 /// @example scroll-padding-left: 0.25rem;
 /// @name .k-scroll-pl-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-inline: 0;`. Sets inline padding outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-padding-inline: 0;`.
 /// @example scroll-padding-inline: 0;
 /// @name .k-scroll-x-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-inline: 1px;`. Sets inline scroll padding outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-padding-inline: 1px;`.
 /// @example scroll-padding-inline: 1px;
 /// @name .k-scroll-x-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-inline: 0.25rem;`. Sets inline scroll padding outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-padding-inline: 0.25rem;`.
 /// @example scroll-padding-inline: 0.25rem;
 /// @name .k-scroll-x-1
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-block: 0;`. Sets block padding outset from the corresponding edge of the scroll container to zero.
+/// This is equivalent to `scroll-padding-block: 0;`.
 /// @example scroll-padding-block: 0;
 /// @name .k-scroll-y-0
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-block: 1px;`. Sets block scroll padding outset from the corresponding edge of the scroll container to 1px.
+/// This is equivalent to `scroll-padding-block: 1px;`.
 /// @example scroll-padding-block: 1px;
 /// @name .k-scroll-y-1px
 /// @group scroll
 /// @contextType css
 
-/// This is equivalent to `scroll-padding-block: 0.25rem;`. Sets block scroll padding outset from the corresponding edge of the scroll container to 0.25rem.
+/// This is equivalent to `scroll-padding-block: 0.25rem;`.
 /// @example scroll-padding-block: 0.25rem;
 /// @name .k-scroll-y-1
 /// @group scroll

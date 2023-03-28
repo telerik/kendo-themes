@@ -1,150 +1,142 @@
-// Height documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/height.
-
-/// This is equivalent to `height: 0;`. Specifies 0px height of an element.
+/// This is equivalent to `height: 0;`.
 /// @example height: 0;
 /// @name .k-h-0
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `height: 1px;`. Specifies 1px height of an element.
+/// This is equivalent to `height: 1px;`.
 /// @example height: 1px;
 /// @name .k-h-1px
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `height: 0.25rem;`. Specifies 0.25rem height of an element.
+/// This is equivalent to `height: 0.25rem;`.
 /// @example height: 0.25rem;
 /// @name .k-h-1
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: 100%;`. Specifies element's height as 100% of the containing block's height.
+/// This is equivalent to `min-height: 100%;`.
 /// @example min-height: 100%;
 /// @name .k-h-full
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `height: 100vh;`. Specifies element's height the same as the viewport height.
+/// This is equivalent to `height: 100vh;`.
 /// @example height: 100vh;
 /// @name .k-h-screen
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `height: 100vh;`. Specifies  element's height to be the same as the viewport height.
-/// @example height: 100vh;
-/// @name .k-h-screen
-/// @group height
-/// @contextType css
-
-/// This is equivalent to `height: min-content;`. Specifies the intrinsic minimum height of the element.
+/// This is equivalent to `height: min-content;`.
 /// @example height: min-content;
 /// @name .k-h-min
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `height: max-content;`. Specifies the intrinsic preferred height of the element.
+/// This is equivalent to `height: max-content;`.
 /// @example height: max-content;
 /// @name .k-h-max
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `height: fit-content;`. Height of the element will use the available space, but never more than max-content
+/// This is equivalent to `height: fit-content;`.
 /// @example height: fit-content;
 /// @name .k-h-fit
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: 0;`. Specifies 0px minimum height of an element.
+/// This is equivalent to `min-height: 0;`.
 /// @example min-height: 0;
 /// @name .k-min-h-0
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: 1px;`. Specifies 1px minimum height of an element.
+/// This is equivalent to `min-height: 1px;`.
 /// @example min-height: 1px;
 /// @name .k-min-h-1px
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: 0.25rem;`. Specifies 0.25rem minimum height of an element.
+/// This is equivalent to `min-height: 0.25rem;`.
 /// @example min-height: 0.25rem;
 /// @name .k-min-h-1
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: 100%;`. Specifies minimum element's height as 100% of the containing block's height.
+/// This is equivalent to `min-height: 100%;`.
 /// @example min-height: 100%;
 /// @name .k-min-h-full
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: 100vh;`. Specifies minimum element's height to be as the viewport height.
+/// This is equivalent to `min-height: 100vh;`.
 /// @example min-height: 100vh;
 /// @name .k-min-h-screen
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: min-content;`. Specifies minimum element's height to be as the intrinsic height of the element.
+/// This is equivalent to `min-height: min-content;`.
 /// @example min-height: min-content;
 /// @name .k-min-h-min
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: max-content;`. Specifies minimum element's height to be as the preferred height of the element.
+/// This is equivalent to `min-height: max-content;`.
 /// @example min-height: max-content;
 /// @name .k-min-h-max
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `min-height: fit-content;`. Minimum height of the element will use the available space, but never more than max-content
+/// This is equivalent to `min-height: fit-content;`.
 /// @example min-height: fit-content;
 /// @name .k-min-h-fit
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `max-height: 0;`. Specifies 0px maximum height of an element.
+/// This is equivalent to `max-height: 0;`.
 /// @example max-height: 0;
 /// @name .k-max-h-0
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `max-height: 1px;`. Specifies 1px maximum height of an element.
+/// This is equivalent to `max-height: 1px;`.
 /// @example max-height: 1px;
 /// @name .k-max-h-1px
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `max-height: 0.25rem;`. Specifies 0.25rem maximum height of an element.
+/// This is equivalent to `max-height: 0.25rem;`.
 /// @example max-height: 0.25rem;
 /// @name .k-max-h-1
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `max-height: 100%;`. Specifies maximum element's height as 100% of the containing block's height.
+/// This is equivalent to `max-height: 100%;`.
 /// @example max-height: 100%;
 /// @name .k-max-h-full
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `max-height: 100vh;`. Specifies maximum element's height to be as the viewport height.
+/// This is equivalent to `max-height: 100vh;`.
 /// @example max-height: 100vh;
 /// @name .k-max-h-screen
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `max-height: min-content;`. Specifies maximum element's height to be as the intrinsic height of the element.
+/// This is equivalent to `max-height: min-content;`.
 /// @example max-height: min-content;
 /// @name .k-max-h-min
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `max-height: max-content;`. Specifies maximum element's height to be as the preferred height of the element.
+/// This is equivalent to `max-height: max-content;`.
 /// @example max-height: max-content;
 /// @name .k-max-h-max
 /// @group height
 /// @contextType css
 
-/// This is equivalent to `max-height: fit-content;`. Maximum height of the element will use the available space, but never more than max-content
+/// This is equivalent to `max-height: fit-content;`.
 /// @example max-height: fit-content;
 /// @name .k-max-h-fit
 /// @group height

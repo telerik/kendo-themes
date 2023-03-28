@@ -1,24 +1,22 @@
-// Clear documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/clear.
-
-/// This is equivalent to `clear: left;`. Is a keyword indicating that the element is moved down to clear past left floats.
+/// This is equivalent to `clear: left;`.
 /// @example clear: left;
 /// @name .k-clear-left
 /// @group float
 /// @contextType css
 
-/// This is equivalent to `clear: right;`. Is a keyword indicating that the element is moved down to clear past right floats.
+/// This is equivalent to `clear: right;`.
 /// @example clear: right;
 /// @name .k-clear-right
 /// @group float
 /// @contextType css
 
-/// This is equivalent to `clear: both;`. Is a keyword indicating that the element is moved down to clear past both left and right floats.
+/// This is equivalent to `clear: both;`.
 /// @example clear: both;
 /// @name .k-clear-both
 /// @group float
 /// @contextType css
 
-/// This is equivalent to `clear: none;`. Is a keyword indicating that the element is not moved down to clear past floating elements.
+/// This is equivalent to `clear: none;`.
 /// @example clear: none;
 /// @name .k-clear-none
 /// @group float

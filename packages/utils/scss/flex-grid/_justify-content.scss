@@ -1,77 +1,76 @@
-// Justify-content documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content.
-
-/// This is equivalent to `justify-content: normal;`. The items are packed in their default position as if no justify-content value was set. This value behaves as stretch in grid and flex containers.
+/// This is equivalent to `justify-content: normal;`.
 /// @example justify-content: normal;
 /// @name .k-justify-content-normal
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: stretch;`. If the combined size of the items along the main axis is less than the size of the alignment container, any auto-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by max-height/max-width (or equivalent functionality), so that the combined size exactly fills the alignment container along the main axis.
+/// This is equivalent to `justify-content: stretch;`.
 /// @example justify-content: stretch;
 /// @name .k-justify-content-stretch
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: center;`. The items are packed flush to each other toward the center of the alignment container along the main axis.
+/// This is equivalent to `justify-content: center;`.
 /// @example justify-content: center;
+/// @name .k-justify-content-center
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: start;`. The items are packed flush to each other toward the start edge of the alignment container in the main axis.
+/// This is equivalent to `justify-content: start;`.
 /// @example justify-content: start;
 /// @name .k-justify-content-start
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: end;`. The items are packed flush to each other toward the end edge of the alignment container in the main axis.
+/// This is equivalent to `justify-content: end;`.
 /// @example justify-content: end;
 /// @name .k-justify-content-end
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: flex-start;`. The items are packed flush to each other toward the edge of the alignment container depending on the flex container's main-start side. This only applies to flex layout items. For items that are not children of a flex container, this value is treated like start.
+/// This is equivalent to `justify-content: flex-start;`.
 /// @example justify-content: flex-start;
 /// @name .k-justify-content-selft-start
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: flex-end;`. The items are packed flush to each other toward the edge of the alignment container depending on the flex container's main-end side. This only applies to flex layout items. For items that are not children of a flex container, this value is treated like end.
+/// This is equivalent to `justify-content: flex-end;`.
 /// @example justify-content: flex-end;
 /// @name .k-justify-content-self-end
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: baseline;`. Specifies participation in baseline alignment: aligns the alignment baseline of the box's baseline set with the corresponding baseline in the shared baseline set of all the boxes in its baseline-sharing group.
+/// This is equivalent to `justify-content: baseline;`.
 /// @example justify-content: baseline;
 /// @name .k-justify-content-baseline
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: first baseline;`. Specifies participation in first baseline alignment: aligns the alignment baseline of the box's first  baseline set with the corresponding baseline in the shared first baseline set of all the boxes in its baseline-sharing group.
+/// This is equivalent to `justify-content: first baseline;`.
 /// @example justify-content: first baseline;
 /// @name .k-justify-content-first-baseline
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: last baseline;`. Specifies participation in last-baseline alignment: aligns the alignment baseline of the box's last baseline set with the corresponding baseline in the shared last baseline set of all the boxes in its baseline-sharing group.
+/// This is equivalent to `justify-content: last baseline;`.
 /// @example justify-content: last baseline;
 /// @name .k-justify-content-last-baseline
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: space-between;`. The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The first item is flush with the main-start edge, and the last item is flush with the main-end edge.
+/// This is equivalent to `justify-content: space-between;`.
 /// @example justify-content: space-between;
 /// @name .k-justify-content-between
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: space-around;`. The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The empty space before the first and after the last item equals half of the space between each pair of adjacent items.
+/// This is equivalent to `justify-content: space-around;`.
 /// @example justify-content: space-around;
 /// @name .k-justify-content-around
 /// @group justify-content
 /// @contextType css
 
-/// This is equivalent to `justify-content: space-evenly;`. The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same.
+/// This is equivalent to `justify-content: space-evenly;`.
 /// @example justify-content: space-evenly;
 /// @name .k-justify-content-evenly
 /// @group justify-content
