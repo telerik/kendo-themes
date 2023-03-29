@@ -1,28 +1,16 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface TableGroupStickyHeaderProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-table-group-sticky-header`;
 
-
-export class TableGroupStickyHeader extends React.Component<TableGroupStickyHeaderProps> {
-
-    render() {
-        const {
-            children,
+export const TableGroupStickyHeader = (
+    props: React.HTMLAttributes<HTMLDivElement>
+) => (
+    <div
+        className={classNames(
+            props.className,
             className,
-        } = this.props;
-
-        return (
-            <div
-                className={classNames(
-                    className,
-                    'k-table-group-sticky-header'
-                )}>
-                {children}
-            </div>
-        );
-    }
-}
+        )}
+    >
+        {props.children}
+    </div>
+);

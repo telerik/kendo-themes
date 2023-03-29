@@ -1,28 +1,16 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface TableFooterProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-table-footer`;
 
-
-export class TableFooter extends React.Component<TableFooterProps> {
-
-    render() {
-        const {
-            children,
+export const TableFooter = (
+    props: React.HTMLAttributes<HTMLDivElement>
+) => (
+    <div
+        className={classNames(
+            props.className,
             className,
-        } = this.props;
-
-        return (
-            <div
-                className={classNames(
-                    className,
-                    'k-table-footer'
-                )}>
-                {children}
-            </div>
-        );
-    }
-}
+        )}
+    >
+        {props.children}
+    </div>
+);

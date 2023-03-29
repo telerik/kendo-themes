@@ -1,31 +1,19 @@
-import * as React from 'react';
 import { classNames } from '../utils';
-import { Table } from './table';
+import { Table } from './../table';
 
-export interface TableHeaderProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-table-header`;
 
-
-export class TableHeader extends React.Component<TableHeaderProps> {
-
-    render() {
-        const {
-            children,
+export const TableHeader = (
+    props: React.HTMLAttributes<HTMLDivElement>
+) => (
+    <div
+        className={classNames(
+            props.className,
             className,
-        } = this.props;
-
-        return (
-            <div
-                className={classNames(
-                    className,
-                    'k-table-header'
-                )}>
-                <div className="k-table-header-wrap">
-                    <Table>{children}</Table>
-                </div>
-            </div>
-        );
-    }
-}
+        )}
+    >
+        <div className="k-table-header-wrap">
+            <Table>{props.children}</Table>
+        </div>
+    </div>
+);

@@ -1,45 +1,53 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames, stateClassNames, States } from '../utils';
 
-export interface TableRowProps {
-    children?: React.ReactNode;
-    className?: string;
+export const TABLEROW_CLASSNAME = `k-table-row`;
+
+const states = [
+    States.hover,
+    States.focus,
+    States.selected,
+    States.disabled
+];
+
+export type KendoTableRowProps = {
     alt?: boolean;
-    hover?: boolean;
-    focus?: boolean;
-    selected?: boolean;
-    disabled?: boolean;
-}
+};
+
+export type KendoTableRowState = { [K in (typeof states)[number]]?: boolean };
 
 
-export class TableRow extends React.Component<TableRowProps> {
+export const TableRow = (
+    props: KendoTableRowProps &
+        KendoTableRowState &
+        React.HTMLAttributes<HTMLTableRowElement>
+) => {
+    const {
+        hover,
+        focus,
+        selected,
+        disabled,
+        alt,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            alt,
-            hover,
-            focus,
-            selected,
-            disabled,
-        } = this.props;
-
-        return (
-            <tr
-                className={classNames(
-                    className,
-                    'k-table-row',
-                    {
-                        'k-table-alt-row': alt,
-                        'k-hover': hover,
-                        'k-focus': focus,
-                        'k-selected': selected,
-                        'k-disabled': disabled
-                    }
-                )}>
-                {children}
-            </tr>
-        );
-    }
-}
+    return (
+        <tr
+            {...other}
+            className={classNames(
+                props.className,
+                TABLEROW_CLASSNAME,
+                {
+                    ['k-table-alt-row']: alt,
+                },
+                stateClassNames(TABLEROW_CLASSNAME, {
+                    hover,
+                    focus,
+                    disabled,
+                    selected,
+                })
+            )}
+        >
+            {props.children}
+        </tr>
+    );
+};
