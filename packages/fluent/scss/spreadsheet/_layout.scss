@@ -460,13 +460,10 @@
         box-sizing: border-box;
         position: absolute;
     }
-    .k-spreadsheet .k-selection-wrapper .k-spreadsheet-editor-button {
+    .k-spreadsheet .k-spreadsheet-editor-button {
         position: absolute;
         padding: 0;
         z-index: 60;
-    }
-    .k-spreadsheet .k-selection-wrapper .k-spreadsheet-editor-button.k-spreadsheet-last-column {
-        transform: translateX(-100%);
     }
 
     .k-spreadsheet-active-cell {
