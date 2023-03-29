@@ -1,28 +1,16 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface TableGroupRowProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-table-group-row`;
 
-
-export class TableGroupRow extends React.Component<TableGroupRowProps> {
-
-    render() {
-        const {
-            children,
+export const TableGroupRow = (
+    props: React.HTMLAttributes<HTMLTableRowElement>
+) => (
+    <tr
+        className={classNames(
+            props.className,
             className,
-        } = this.props;
-
-        return (
-            <tr
-                className={classNames(
-                    className,
-                    'k-table-group-row'
-                )}>
-                {children}
-            </tr>
-        );
-    }
-}
+        )}
+    >
+        {props.children}
+    </tr>
+);
