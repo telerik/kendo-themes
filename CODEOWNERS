@@ -3,17 +3,3 @@
 
 # Global ownership of all assets
 * @telerik/kendo-front-end
-
-# Production themes
-/packages/default @telerik/kendo-front-end @telerik/kendo-theme-reviewers
-/packages/bootstrap @telerik/kendo-front-end @telerik/kendo-theme-reviewers
-/packages/material @telerik/kendo-front-end @telerik/kendo-theme-reviewers
-/packages/classic @telerik/kendo-front-end @telerik/kendo-theme-reviewers
-/packages/nouvelle @telerik/kendo-front-end @telerik/kendo-theme-reviewers
-/packages/fluent @telerik/kendo-front-end @telerik/kendo-theme-reviewers
-
-# Visual tests
-/tests/visual @telerik/kendo-front-end @telerik/kendo-theme-reviewers
-
-# Documentation
-/docs @telerik/kendo-front-end @telerik/kendo-theme-reviewers
