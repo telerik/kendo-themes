@@ -87,6 +87,7 @@ export class Pager extends React.Component<PagerProps> {
                     <select
                         className={classNames(
                             'k-picker',
+                            'k-picker-solid',
                             'k-dropdown-list',
                             'k-dropdown',
                             'k-rounded-md',
