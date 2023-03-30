@@ -26,7 +26,7 @@ root.render(
 
             <section>
                 <div className="k-animation-container k-animation-container-shown">
-                    <Popup className="k-popup-dropdowntree">
+                    <Popup className="k-dropdowntree-popup">
                         <div className="k-check-all">
                             <Checkbox/>
                             <span className="k-checkbox-label">
