@@ -62,7 +62,7 @@ export class DropdownGrid extends React.Component<DropdownGridProps> {
                 required={required}
                 loading={loading}
                 disabled={disabled}
-                className={classNames(className, 'k-dropdowngrid')}
+                className={classNames(className, 'k-combobox', 'k-dropdowngrid')}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerInput placeholder={placeholder} value={value} />
