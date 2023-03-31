@@ -133,14 +133,6 @@ jobs:
       - name: Done
         run: echo "Done!"
 
-  placeholder-html-spec:
-    name: Status check > HTML spec
-    runs-on: ubuntu-latest
-    steps:
-      - name: Done
-        run: echo "Done!"
-
-
   # temporary until we change checks
   temp-unit:
     name: CI | Unit

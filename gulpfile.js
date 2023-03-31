@@ -15,7 +15,7 @@ const paths = {
     sass: {
         all: "packages/*/scss/**/*.scss",
         assets: "packages/*/scss/**/*.{png,gif,ttf,woff}",
-        themes: "packages/!(html|html-spec)",
+        themes: "packages/!(html)",
         theme: "scss/all.scss",
         swatches: "lib/swatches/*.json",
         inline: "dist/all.scss",
