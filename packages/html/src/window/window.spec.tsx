@@ -24,7 +24,7 @@ export type KendoWindowProps = KendoWindowOptions & {
     title?: string;
     actions?: string[];
     minimized?: boolean;
-    actionButtons?: boolean;
+    actionButtons?: JSX.Element;
     actionButtonsAlign?: "start" | "end" | "center" | "stretched"
 };
 
@@ -76,8 +76,7 @@ export const Window = (
             </div>
             {actionButtons &&
                 <ActionButtons alignment={actionButtonsAlign} className="k-window-actions">
-                    <Button>Cancel</Button>
-                    <Button themeColor="primary">Update</Button>
+                    {actionButtons}
                 </ActionButtons>
             }
         </div>

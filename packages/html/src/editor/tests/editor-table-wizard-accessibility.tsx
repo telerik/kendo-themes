@@ -5,6 +5,7 @@ import { NumericTextbox } from '../../numerictextbox';
 import { Textarea } from '../../textarea';
 import { Textbox } from '../../textbox';
 import { Form, FormField } from '../../form';
+import { Button } from '../../button';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -25,7 +26,12 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <section>
-                <Window className="k-editor-window k-editor-table-wizard-window" title="Table Wizard" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
+                <Window className="k-editor-window k-editor-table-wizard-window" title="Table Wizard" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                    <>
+                        <Button>Cancel</Button>
+                        <Button themeColor="primary">Update</Button>
+                    </>
+                }>
                     <div className="k-tabstrip k-tabstrip-top">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">

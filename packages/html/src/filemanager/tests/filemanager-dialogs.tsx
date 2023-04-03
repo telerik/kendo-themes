@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import { Button } from '../../button';
 import { Dialog } from '../../dialog';
 import { Upload } from '../../upload';
 
@@ -20,7 +21,12 @@ root.render(
 
             {/* Upload Dialog */}
             <section>
-                <Dialog title="Upload Files" actions={[ 'close' ]} actionButtons actionButtonsAlign="end" className="k-filemanager-upload-dialog">
+                <Dialog title="Upload Files" actions={[ 'close' ]} actionButtonsAlign="end" className="k-filemanager-upload-dialog" actionButtons={
+                    <>
+                        <Button>Action</Button>
+                        <Button themeColor="primary">Primary</Button>
+                    </>
+                }>
                     <Upload async empty status="upload"></Upload>
                 </Dialog>
 
@@ -30,7 +36,12 @@ root.render(
             {/* Move/Copy Dialog */}
             <section>
 
-                <Dialog title="Confirm" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
+                <Dialog title="Confirm" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                    <>
+                        <Button>Action</Button>
+                        <Button themeColor="primary">Primary</Button>
+                    </>
+                }>
                     <p>Do you want to move or copy?</p>
                 </Dialog>
 
@@ -39,7 +50,12 @@ root.render(
             {/* Delete Dialog */}
             <section>
 
-                <Dialog title="Confirm" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
+                <Dialog title="Confirm" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                    <>
+                        <Button>Action</Button>
+                        <Button themeColor="primary">Primary</Button>
+                    </>
+                }>
                     <p>Are you sure you want to delete this file?</p>
                     <p>You can&apos;t undo this action.</p>
                 </Dialog>

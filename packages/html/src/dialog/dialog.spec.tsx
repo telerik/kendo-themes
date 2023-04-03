@@ -23,7 +23,7 @@ export type KendoDialogOptions = {
 export type KendoDialogProps = KendoDialogOptions & {
     title?: string;
     actions?: string[];
-    actionButtons?: boolean;
+    actionButtons?: JSX.Element;
     actionButtonsAlign?: "start" | "end" | "center" | "stretched"
 };
 
@@ -67,8 +67,7 @@ export const Dialog = (
             </div>
             {actionButtons &&
                 <ActionButtons alignment={actionButtonsAlign} className="k-window-actions k-dialog-actions">
-                    <Button>Action</Button>
-                    <Button themeColor="primary">Primary</Button>
+                    {actionButtons}
                 </ActionButtons>
             }
         </div>
