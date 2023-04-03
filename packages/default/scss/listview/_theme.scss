@@ -1,4 +1,4 @@
-@include exports( "listview/theme" ) {
+@mixin kendo-listview--theme-base() {
 
     // Listview
     .k-listview {
@@ -37,4 +37,9 @@
         border-color: $kendo-listview-border;
     }
 
+}
+
+
+@mixin kendo-listview--theme() {
+    @include kendo-listview--theme-base();
 }

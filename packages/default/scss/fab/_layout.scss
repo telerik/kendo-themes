@@ -1,4 +1,4 @@
-@include exports( "fab/layout" ) {
+@mixin kendo-fab--layout-base() {
 
     // Floating Action Button (FAB)
     .k-fab {
@@ -128,9 +128,7 @@
         outline: none;
     }
 
-}
 
-@include exports("fab/layout/rtl") {
 
     .k-rtl .k-fab-popup,
     [dir="rtl"] .k-fab-popup {
@@ -142,4 +140,9 @@
             flex-direction: row-reverse;
         }
     }
+}
+
+
+@mixin kendo-fab--layout() {
+    @include kendo-fab--layout-base();
 }

@@ -1,4 +1,4 @@
-@include exports("timeline/theme") {
+@mixin kendo-timeline--theme-base() {
 
     .k-timeline {
         .k-timeline-flag {
@@ -64,4 +64,10 @@
     .k-timeline-track-item.k-focus .k-timeline-circle {
         @include focus-indicator( $kendo-timeline-track-item-focus-shadow );
     }
+
+}
+
+
+@mixin kendo-timeline--theme() {
+    @include kendo-timeline--theme-base();
 }

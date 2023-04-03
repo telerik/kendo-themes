@@ -1,5 +1,6 @@
-@include exports("gantt/theme") {
+@mixin kendo-gantt--theme-base() {
 
+    // Gantt
     .k-gantt {
         @include fill(
             $kendo-gantt-text,
@@ -271,4 +272,10 @@
             background-color: $kendo-gantt-validation-tooltip-invalid-border;
         }
     }
+
+}
+
+
+@mixin kendo-gantt--theme() {
+    @include kendo-gantt--theme-base();
 }

@@ -1,4 +1,4 @@
-@include exports("grid/theme") {
+@mixin kendo-grid--theme-base() {
 
     .k-grid-header,
     .k-grid-header-wrap,
@@ -485,4 +485,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-grid--theme() {
+    @include kendo-grid--theme-base();
 }

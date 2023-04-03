@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/mediaplayer/_layout.scss";
+
+
+@mixin kendo-media-player--layout() {
+    @include kendo-media-player--layout-base();
+}

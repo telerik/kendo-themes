@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "treelist",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin treelist-styles() {
+@mixin kendo-treelist--styles() {
     @include module-render( "treelist" ) {
         @include kendo-treelist--layout();
-        @include kendo-treelist--extended-layout();
         @include kendo-treelist--theme();
-        @include kendo-treelist--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-treelist--styles();
 }

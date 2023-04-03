@@ -1,4 +1,4 @@
-@include exports("messagebox/theme") {
+@mixin kendo-messagebox--theme-base() {
 
     @each $color-name, $color in $kendo-theme-colors {
         .k-messagebox-#{$color-name} {
@@ -10,4 +10,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-messagebox--theme() {
+    @include kendo-messagebox--theme-base();
 }

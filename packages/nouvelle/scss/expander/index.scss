@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "expander",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin expander-styles() {
+@mixin kendo-expander--styles() {
     @include module-render( "expander" ) {
         @include kendo-expander--layout();
-        @include kendo-expander--extended-layout();
         @include kendo-expander--theme();
-        @include kendo-expander--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-expander--styles();
 }

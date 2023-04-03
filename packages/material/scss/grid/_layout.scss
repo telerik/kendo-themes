@@ -1,7 +1,11 @@
 @import "@progress/kendo-theme-default/scss/grid/_layout.scss";
 
-@include exports ("grid/layout/material") {
 
+@mixin kendo-grid--layout() {
+
+    @include kendo-grid--layout-base();
+
+    // Grid
     .k-grid {
 
         .k-group-footer td,
@@ -14,6 +18,7 @@
         }
     }
 
+    // Grid header
     .k-grid-header {
 
         .k-table-th {
@@ -98,4 +103,5 @@
             }
         }
     }
+
 }

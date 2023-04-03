@@ -1,4 +1,4 @@
-@include exports( "mediaplayer/theme" ) {
+@mixin kendo-media-player--theme-base() {
 
     // Theme
     .k-mediaplayer {
@@ -17,4 +17,9 @@
         text-shadow: 0 0 2px rgba( $kendo-media-player-text, .5 );
     }
 
+}
+
+
+@mixin kendo-media-player--theme() {
+    @include kendo-media-player--theme-base();
 }

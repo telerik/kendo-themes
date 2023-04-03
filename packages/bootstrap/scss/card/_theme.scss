@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/card/_theme.scss";
+
+
+@mixin kendo-card--theme() {
+    @include kendo-card--theme-base();
+}

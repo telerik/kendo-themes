@@ -1,6 +1,8 @@
 @import "@progress/kendo-theme-default/scss/popup/_layout.scss";
 
-@include exports( "popup/layout/bootstrap" ) {
+@mixin kendo-popup--layout() {
+
+    @include kendo-popup--layout-base();
 
     .k-popup.k-column-menu {
         padding-top: 0;

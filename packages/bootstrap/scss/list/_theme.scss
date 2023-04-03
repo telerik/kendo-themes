@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/list/_theme.scss";
+
+
+@mixin kendo-list--theme() {
+    @include kendo-list--theme-base();
+}

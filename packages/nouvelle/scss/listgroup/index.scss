@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "listgroup",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin listgroup-styles() {
+@mixin kendo-listgroup--styles() {
     @include module-render( "listgroup" ) {
         @include kendo-listgroup--layout();
-        @include kendo-listgroup--extended-layout();
         @include kendo-listgroup--theme();
-        @include kendo-listgroup--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-listgroup--styles();
 }

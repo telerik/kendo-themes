@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "input",
@@ -15,15 +18,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin input-styles() {
+@mixin kendo-input--styles() {
     @include module-render( "input" ) {
         @include kendo-input--layout();
-        @include kendo-input--extended-layout();
         @include kendo-input--theme();
-        @include kendo-input--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-input--styles();
 }

@@ -1,5 +1,6 @@
-@include exports("dialog/theme") {
-    // Titlebar
+@mixin kendo-dialog--theme-base() {
+
+    // Dialog titlebar
     .k-dialog-titlebar {
         @include fill(
             $kendo-dialog-titlebar-text,
@@ -16,4 +17,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-dialog--theme() {
+    @include kendo-dialog--theme-base();
 }

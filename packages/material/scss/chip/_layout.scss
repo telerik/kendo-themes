@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/chip/_layout.scss";
+
+
+@mixin kendo-chip--layout() {
+    @include kendo-chip--layout-base();
+}

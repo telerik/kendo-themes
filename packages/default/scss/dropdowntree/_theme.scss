@@ -1,6 +1,11 @@
-@include exports("dropdowntree/theme") {
+@mixin kendo-dropdown-tree--theme-base() {
 
     // Dropdown tree
     .k-dropdown-tree {}
 
+}
+
+
+@mixin kendo-dropdown-tree--theme() {
+    @include kendo-dropdown-tree--theme-base();
 }

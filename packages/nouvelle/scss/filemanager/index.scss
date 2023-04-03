@@ -1,6 +1,9 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
-    name: "filemanager",
+    name: "file-manager",
     dependencies: ()
 );
 
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin filemanager-styles() {
-    @include module-render( "filemanager" ) {
+@mixin kendo-file-manager--styles() {
+    @include module-render( "file-manager" ) {
         @include kendo-file-manager--layout();
-        @include kendo-file-manager--extended-layout();
         @include kendo-file-manager--theme();
-        @include kendo-file-manager--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-file-manager--styles();
 }

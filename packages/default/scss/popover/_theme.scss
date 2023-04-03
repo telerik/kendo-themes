@@ -1,4 +1,4 @@
-@include exports("popover/theme") {
+@mixin kendo-popover--theme-base() {
 
     // Popover
     .k-popover {
@@ -35,4 +35,9 @@
         @include box-shadow( inherit )
     }
 
+}
+
+
+@mixin kendo-popover--theme() {
+    @include kendo-popover--theme-base();
 }

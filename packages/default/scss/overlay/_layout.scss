@@ -1,4 +1,4 @@
-@include exports("overlay/layout") {
+@mixin kendo-overlay--layout-base() {
 
     // Overlay
     .k-overlay {
@@ -11,4 +11,9 @@
         z-index: 10001;
     }
 
+}
+
+
+@mixin kendo-overlay--layout() {
+    @include kendo-overlay--layout-base();
 }

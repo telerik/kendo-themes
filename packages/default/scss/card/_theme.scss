@@ -1,4 +1,4 @@
-@include exports("card/theme") {
+@mixin kendo-card--theme-base() {
 
     // Card
     .k-card {
@@ -96,4 +96,9 @@
         @include box-shadow( inherit );
     }
 
+}
+
+
+@mixin kendo-card--theme() {
+    @include kendo-card--theme-base();
 }

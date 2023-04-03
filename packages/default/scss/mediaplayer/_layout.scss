@@ -1,4 +1,4 @@
-@include exports("mediaplayer/layout") {
+@mixin kendo-media-player--layout-base() {
 
     // Base
     .k-mediaplayer {
@@ -104,4 +104,9 @@
         // sass-lint:enable no-important
     }
 
+}
+
+
+@mixin kendo-media-player--layout() {
+    @include kendo-media-player--layout-base();
 }

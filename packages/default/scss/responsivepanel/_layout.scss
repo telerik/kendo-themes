@@ -1,4 +1,4 @@
-@include exports("responsivepanel/layout") {
+@mixin kendo-responsive-panel--layout-base() {
 
     .k-rpanel {}
 
@@ -46,4 +46,9 @@
         touch-action: manipulation;
     }
 
+}
+
+
+@mixin kendo-responsive-panel--layout() {
+    @include kendo-responsive-panel--layout-base();
 }

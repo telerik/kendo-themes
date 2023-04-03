@@ -15,6 +15,9 @@ $wcag-min-contrast-ratio: 4.5 !default;
 // Common styles
 @import "./styles/index.import.scss";
 
+// Variables
+@import "../_variables.scss";
+
 // Expose
 @include exports("kendo-core-styles") {
     @include kendo-core--styles();

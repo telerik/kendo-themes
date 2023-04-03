@@ -1,4 +1,4 @@
-@include exports("upload/theme") {
+@mixin kendo-upload--theme-base() {
 
     .k-upload {
         @include fill(
@@ -66,7 +66,7 @@
             }
         }
 
-        // Upload satus: error
+        // Upload status: error
         .k-file-error {
             .k-file-validation-message {
                 color: $kendo-upload-error-text;
@@ -99,4 +99,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-upload--theme() {
+    @include kendo-upload--theme-base();
 }

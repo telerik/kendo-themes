@@ -1,5 +1,6 @@
-@include exports("pivotgrid/theme") {
+@mixin kendo-pivotgrid--theme-base() {
 
+    // PivotGrid
     .k-pivotgrid {
         @include fill (
             $kendo-pivotgrid-text,
@@ -80,12 +81,8 @@
         );
     }
 
-}
 
-
-
-@include exports("pivotgrid/theme/configurator") {
-
+    // Pivotgrid configurator
     .k-pivotgrid-configurator-button,
     .k-pivotgrid-configurator-panel {
         @include fill (
@@ -154,12 +151,10 @@
             @include box-shadow( $kendo-pivotgrid-configurator-bottom-shadow );
         }
     }
-}
 
 
-
-@include exports("pivotgrid/theme/legacy") {
-
+    // Legacy pivotgrid
+    // TODO: remove
     .k-pivot {
         @include fill (
             $kendo-pivotgrid-text,
@@ -240,6 +235,11 @@
         .k-column-fields {
             border-color: $kendo-component-border;
         }
-
     }
+
+}
+
+
+@mixin kendo-pivotgrid--theme() {
+    @include kendo-pivotgrid--theme-base();
 }

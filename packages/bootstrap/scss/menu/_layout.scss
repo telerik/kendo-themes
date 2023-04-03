@@ -1,6 +1,8 @@
 @import "@progress/kendo-theme-default/scss/menu/_layout.scss";
 
-@include exports( "menu/layout/bootstrap" ) {
+@mixin kendo-menu--layout() {
+
+    @include kendo-menu--layout-base();
 
     .k-menu.k-menu-horizontal:not(.k-context-menu) {
         padding-block: $navbar-padding-y;
@@ -33,4 +35,5 @@
             font-weight: inherit;
         }
     }
+
 }

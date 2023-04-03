@@ -1,4 +1,4 @@
-@include exports("spreadsheet/layout") {
+@mixin kendo-spreadsheet--layout-base() {
 
     // Spreadsheet
     .k-spreadsheet {
@@ -546,12 +546,9 @@
         left: 0;
         right: auto;
     }
-}
 
 
-
-@include exports( "spreadsheet/filter/layout" ) {
-
+    // Spreadsheet filter
     $kendo-filter-menu-padding-left: calc( #{$kendo-icon-size} + #{2 * $kendo-padding-md-y} );
 
     // Filter button
@@ -658,13 +655,9 @@
         }
     }
 
-}
 
 
-
-
-@include exports( "spreadsheet/tools/layout" ) {
-
+    // Spreadsheet toolbar
     .k-spreadsheet-popup {
         padding: 0;
 
@@ -700,12 +693,7 @@
     .k-spreadsheet-sample {
         opacity: .7;
     }
-}
 
-
-
-
-@include exports( "spreadsheet/clipboard/layout" ) {
 
     .k-spreadsheet-clipboard,
     .k-spreadsheet-clipboard-paste {
@@ -721,13 +709,9 @@
         overflow: hidden;
     }
 
-}
 
 
-
-
-@include exports( "spreadsheet/window/layout" ) {
-
+    // Spreadsheet window
     .k-spreadsheet-window {}
     .k-spreadsheet-window .k-edit-form-container {
         width: auto;
@@ -839,13 +823,9 @@
         }
     }
 
-}
 
 
-
-
-@include exports("spreadsheet/layout/images") {
-
+    // Spreadsheet drawing
     .k-spreadsheet-drawing {
         position: absolute;
         box-sizing: border-box;
@@ -899,12 +879,9 @@
         }
     }
 
-}
 
 
-
-
-@include exports("spreadsheet/layout/rtl") {
+    // RTL
     .k-rtl .k-spreadsheet,
     .k-spreadsheet[dir="rtl"] {
 
@@ -920,4 +897,9 @@
 
     }
 
+}
+
+
+@mixin kendo-spreadsheet--layout() {
+    @include kendo-spreadsheet--layout-base();
 }

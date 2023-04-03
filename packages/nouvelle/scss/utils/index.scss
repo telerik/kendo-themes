@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "utils",
@@ -5,14 +8,22 @@ $_kendo-module-meta: (
 );
 
 
+// Component
+@import "@progress/kendo-theme-utils/scss/all.scss";
+
+
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin utils-styles() {
+@mixin kendo-utils--styles() {
     @include module-render( "utils" ) {
-        // @import "@progress/kendo-theme-utils/scss/all.scss";
+        @include kendo-utils();
     }
 }
-@import "@progress/kendo-theme-utils/scss/all.scss";
+
+@if $kendo-auto-bootstrap {
+    @include kendo-utils--styles();
+}

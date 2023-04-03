@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "dateinput",
@@ -16,15 +19,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin dateinput-styles() {
+@mixin kendo-date-input--styles() {
     @include module-render( "dateinput" ) {
-        @include kendo-dateinput--layout();
-        @include kendo-dateinput--extended-layout();
-        @include kendo-dateinput--theme();
-        @include kendo-dateinput--extended-theme();
+        @include kendo-date-input--layout();
+        @include kendo-date-input--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-date-input--styles();
 }

@@ -187,7 +187,7 @@
         right: 0;
     }
 
-    [dir = "rtl"],
+    [dir="rtl"],
     .k-rtl {
         .k-dirty {
             border-color: transparent transparent $kendo-color-error $kendo-color-error;

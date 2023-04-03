@@ -1,7 +1,11 @@
 @import "@progress/kendo-theme-default/scss/calendar/_layout.scss";
 
-@include exports ( "calendar/layout/material" ) {
 
+@mixin kendo-calendar--layout() {
+
+    @include kendo-calendar--layout-base();
+
+    // Calendar
     .k-calendar {
 
         .k-title,

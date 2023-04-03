@@ -1,5 +1,11 @@
-@include exports("dialog/theme") {
+@import "@progress/kendo-theme-default/scss/dialog/_theme.scss";
 
+
+@mixin kendo-dialog--theme() {
+
+    @include kendo-dialog--theme-base();
+
+    // Dialog
     .k-dialog {}
 
 
@@ -16,6 +22,5 @@
     .k-dialog-content.k-scroll {
         border-color: $kendo-component-border;
     }
-
 
 }

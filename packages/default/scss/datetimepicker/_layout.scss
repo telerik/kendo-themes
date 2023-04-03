@@ -1,4 +1,4 @@
-@include exports( "datetimepicker/layout" ) {
+@mixin kendo-date-time-picker--layout-base() {
 
     // Datetime container
     .k-datetime-container {}
@@ -41,10 +41,8 @@
         transform: translateX(-100%);
     }
 
-}
 
-@include exports( "datetimepicker/layout/rtl" ) {
-
+    // RTL
     .k-datetimepicker {
         &[dir="rtl"],
         .k-rtl & {
@@ -54,4 +52,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-date-time-picker--layout() {
+    @include kendo-date-time-picker--layout-base();
 }

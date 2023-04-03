@@ -1,5 +1,6 @@
-@include exports("dataviz/barcode/layout") {
+@mixin kendo-dataviz--layout-base() {
 
+    // Barcode
     .k-barcode {
         display: inline-block;
 
@@ -8,10 +9,6 @@
         }
     }
 
-}
-
-
-@include exports("dataviz/charts/layout") {
 
     // Exported variables
     .k-var--chart-font {
@@ -242,11 +239,11 @@
             }
         }
     }
-}
 
 
-@include exports("dataviz/diagram/layout") {
 
+
+    // Diagram
     .k-diagram {
         height: 600px;
     }
@@ -267,12 +264,11 @@
         width: 100%;
         height: 100%;
     }
-}
 
 
-@include exports("dataviz/treemap/layout") {
 
-    // Base
+
+    // Treemap
     .k-treemap {
         height: 400px;
         box-sizing: border-box;
@@ -359,11 +355,11 @@
             padding: $kendo-padding-sm-x;
         }
     }
-}
 
 
-@include exports("dataviz/gauge/layout") {
 
+
+    // Gauge
     .k-gauge {
         text-align: start;
         position: relative;
@@ -382,13 +378,8 @@
         margin: 0;
     }
 
-}
 
-
-
-
-@include exports("dataviz/qrcode/layout") {
-
+    // qrcode
     .k-qrcode {
         display: inline-block;
 
@@ -397,12 +388,8 @@
         }
     }
 
-}
 
 
-
-
-@include exports("chart/variables") {
 
     // export variables to allow use in scripts
     $exported: (
@@ -480,4 +467,10 @@
             }
         }
     }
+
+}
+
+
+@mixin kendo-dataviz--layout() {
+    @include kendo-dataviz--layout-base();
 }

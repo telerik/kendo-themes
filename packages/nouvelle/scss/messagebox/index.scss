@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "messagebox",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin messagebox-styles() {
+@mixin kendo-messagebox--styles() {
     @include module-render( "messagebox" ) {
         @include kendo-messagebox--layout();
-        @include kendo-messagebox--extended-layout();
         @include kendo-messagebox--theme();
-        @include kendo-messagebox--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-messagebox--styles();
 }

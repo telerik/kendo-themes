@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "menu",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin menu-styles() {
+@mixin kendo-menu--styles() {
     @include module-render( "menu" ) {
         @include kendo-menu--layout();
-        @include kendo-menu--extended-layout();
         @include kendo-menu--theme();
-        @include kendo-menu--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-menu--styles();
 }

@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/breadcrumb/_layout.scss";
+
+
+@mixin kendo-breadcrumb--layout() {
+    @include kendo-breadcrumb--layout-base();
+}

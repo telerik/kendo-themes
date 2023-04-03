@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/radio/_layout.scss";
 
-@include exports( "radio/layout/material" ) {
+
+@mixin kendo-radio--layout() {
+
+    @include kendo-radio--layout-base();
 
     .k-radio::before {
         transition: transform linear 280ms;

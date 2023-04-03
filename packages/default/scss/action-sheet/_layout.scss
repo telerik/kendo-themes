@@ -1,4 +1,4 @@
-@include exports("action-sheet/layout") {
+@mixin kendo-action-sheet--layout-base() {
 
     // Action sheet container
     .k-actionsheet-container {
@@ -338,10 +338,9 @@
         }
     }
 
-}
 
-@include exports("action-sheet/layout/legacy") {
-
+    // Legacy action sheet
+    // TODO: remove when kendo-jquery migrate
     .k-actionsheet-jq {
         &.k-actionsheet {
             height: auto;
@@ -357,4 +356,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-action-sheet--layout() {
+    @include kendo-action-sheet--layout-base();
 }

@@ -1,6 +1,5 @@
 @mixin kendo-card--layout() {
 
-
     // Card
     .k-card {
         @include border-radius( var( --kendo-card-border-radius, #{k-if-var( $kendo-card-border-radius, 0 )} ) );
@@ -327,8 +326,3 @@
     }
 
 }
-
-
-
-
-@mixin kendo-card--extended-layout() {}

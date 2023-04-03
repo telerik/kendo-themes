@@ -1,4 +1,4 @@
-@include exports("forms/layout") {
+@mixin kendo-form--layout-base() {
 
     // Common
     .k-form,
@@ -320,9 +320,8 @@
         }
     }
 
-}
 
-@include exports("edit-form/layout") {
+
 
     // Edit form
     .k-edit-form-container {
@@ -390,4 +389,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-form--layout() {
+    @include kendo-form--layout-base();
 }

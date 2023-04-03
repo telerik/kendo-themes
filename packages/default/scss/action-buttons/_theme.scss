@@ -1,5 +1,6 @@
-@include exports("action-buttons/theme") {
+@mixin kendo-actions--theme-base() {
 
+    // Actions
     .k-actions {
         @include fill(
             $kendo-actions-text,
@@ -9,4 +10,9 @@
         );
     }
 
+}
+
+
+@mixin kendo-actions--theme() {
+    @include kendo-actions--theme-base();
 }

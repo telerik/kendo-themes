@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "icon",
@@ -13,13 +16,18 @@ $_kendo-module-meta: (
 
 // Register
 @import "../core/module-system/index.import.scss";
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin icon-styles() {
+@mixin kendo-icon--styles() {
     @include module-render( "icon" ) {
         @include kendo-icon--layout();
         @include kendo-icon--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-icon--styles();
 }

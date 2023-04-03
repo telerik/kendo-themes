@@ -1,7 +1,11 @@
 @import "@progress/kendo-theme-default/scss/action-buttons/_layout.scss";
 
-@include exports("action-buttons/layout/material") {
 
+@mixin kendo-actions--layout() {
+
+    @include kendo-actions--layout-base();
+
+    // Actions
     .k-actions {
 
         // Button
@@ -20,6 +24,7 @@
         .k-split-button {
             @include box-shadow( none );
         }
+
     }
 
 }

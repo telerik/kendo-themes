@@ -1,4 +1,4 @@
-@include exports( "listbox/layout" ) {
+@mixin kendo-listbox--layout-base() {
 
     .k-listbox {
         width: $kendo-listbox-width;
@@ -89,4 +89,9 @@
         cursor: default;
     }
 
+}
+
+
+@mixin kendo-listbox--layout() {
+    @include kendo-listbox--layout-base();
 }

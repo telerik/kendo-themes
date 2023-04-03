@@ -1,4 +1,4 @@
-@include exports( "filemanager/layout" ) {
+@mixin kendo-file-manager--layout-base() {
 
     // File Manager
     .k-filemanager {
@@ -237,4 +237,9 @@
         gap: $kendo-icon-spacing;
     }
 
+}
+
+
+@mixin kendo-file-manager--layout() {
+    @include kendo-file-manager--layout-base();
 }

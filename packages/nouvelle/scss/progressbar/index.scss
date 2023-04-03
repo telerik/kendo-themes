@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "progressbar",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin progressbar-styles() {
+@mixin kendo-progressbar--styles() {
     @include module-render( "progressbar" ) {
         @include kendo-progressbar--layout();
-        @include kendo-progressbar--extended-layout();
         @include kendo-progressbar--theme();
-        @include kendo-progressbar--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-progressbar--styles();
 }

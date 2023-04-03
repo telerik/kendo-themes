@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/treelist/_theme.scss";
 
-@include exports("treelist/theme/material") {
+@mixin kendo-treelist--theme() {
+
+    @include kendo-treelist--theme-base();
+
     .k-treelist {
         tr.k-footer,
         tr.k-footer-template {
@@ -24,4 +27,5 @@
             background-color: $kendo-treelist-footer-row-bg;
         }
     }
+
 }

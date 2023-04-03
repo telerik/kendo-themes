@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "signature",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin signature-styles() {
+@mixin kendo-signature--styles() {
     @include module-render( "signature" ) {
         @include kendo-signature--layout();
-        @include kendo-signature--extended-layout();
         @include kendo-signature--theme();
-        @include kendo-signature--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-signature--styles();
 }

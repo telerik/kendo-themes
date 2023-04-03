@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/searchbox/_layout.scss";
+
+
+@mixin kendo-searchbox--layout() {
+    @include kendo-searchbox--layout-base();
+}

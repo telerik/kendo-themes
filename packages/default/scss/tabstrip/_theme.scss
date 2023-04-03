@@ -1,4 +1,4 @@
-@include exports("tabstrip/theme") {
+@mixin kendo-tabstrip--theme-base() {
 
     // Wrapper
     .k-tabstrip-wrapper {
@@ -98,4 +98,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-tabstrip--theme() {
+    @include kendo-tabstrip--theme-base();
 }

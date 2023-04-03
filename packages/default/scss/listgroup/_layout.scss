@@ -1,4 +1,4 @@
-@include exports( "listgroup/layout" ) {
+@mixin kendo-listgroup--layout-base() {
 
     .k-listgroup {
         @include border-radius( $kendo-listgroup-border-radius );
@@ -144,11 +144,6 @@
         margin: 0;
     }
 
-}
-
-
-
-@include exports( "listgroup/layout/rtl" ) {
 
     [dir="rtl"] {
 
@@ -188,13 +183,8 @@
         }
     }
 
-}
 
-
-
-
-@include exports( "listgroup/layout/noflexbox" ) {
-
+    // No flexbox fix
     .k-noflexbox {
         .k-listgroup,
         .k-listgroup > ul
@@ -204,4 +194,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-listgroup--layout() {
+    @include kendo-listgroup--layout-base();
 }

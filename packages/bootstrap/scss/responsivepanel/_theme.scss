@@ -1,0 +1,6 @@
+@import "@progress/kendo-theme-default/scss/responsivepanel/_theme.scss";
+
+
+@mixin kendo-responsive-panel--theme() {
+    @include kendo-responsive-panel--theme-base();
+}

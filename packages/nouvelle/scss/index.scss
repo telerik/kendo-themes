@@ -1,5 +1,5 @@
 // Core
-@import "./core/index.scss";
+@import "./core/index.import.scss";
 @import "./_variables.scss";
 
 
@@ -160,163 +160,169 @@
 @import "./signature/index.scss";
 
 
-// Setup
-@mixin theme-config($config: null ) {
-    @include core-configure($config: $config);
-}
-@mixin kendo-styles() {
+// Configuration
+@mixin kendo-theme--config($config: null ) {}
+
+
+// Styles
+@mixin kendo-theme--styles() {
+    // Core
+    @include kendo-core--styles();
+
+    // Color system
+
     // Typography and utils
-    @include typography-styles();
-    @include utils-styles();
+    @include kendo-typography--styles();
+    @include kendo-utils--styles();
 
 
     // Generic content
-    @include icon-styles();
-    @include messagebox-styles();
+    @include kendo-icon--styles();
+    @include kendo-messagebox--styles();
 
 
     // Primitive components
-    @include actions-styles();
-    @include list-styles();
-    @include listgroup-styles();
-    @include overlay-styles();
-    @include popup-styles();
-    @include ripple-styles();
-    @include table-styles();
-    @include virtual-scroller-styles();
+    @include kendo-actions--styles();
+    @include kendo-list--styles();
+    @include kendo-listgroup--styles();
+    @include kendo-overlay--styles();
+    @include kendo-popup--styles();
+    @include kendo-ripple--styles();
+    @include kendo-table--styles();
+    @include kendo-virtual-scroller--styles();
 
 
     // Indicators
-    @include avatar-styles();
-    @include badge-styles();
-    @include chip-styles();
-    @include color-preview-styles();
-    @include loader-styles();
-    @include skeleton-styles();
-    @include tooltip-styles();
+    @include kendo-avatar--styles();
+    @include kendo-badge--styles();
+    @include kendo-chip--styles();
+    @include kendo-color-preview--styles();
+    @include kendo-loader--styles();
+    @include kendo-skeleton--styles();
+    @include kendo-tooltip--styles();
 
 
     // Form helpers
-    @include form-styles();
-    @include validator-styles();
-    @include floating-label-styles();
+    @include kendo-form--styles();
+    @include kendo-validator--styles();
+    @include kendo-floating-label--styles();
 
 
     // Native forms
-    @include button-styles();
-    @include split-button-styles();
-    @include menu-button-styles();
-    @include input-styles();
-    @include textbox-styles();
-    @include textarea-styles();
-    @include checkbox-styles();
-    @include listbox-styles();
-    @include progressbar-styles();
-    @include radio-styles();
-    @include slider-styles();
+    @include kendo-button--styles();
+    @include kendo-split-button--styles();
+    @include kendo-menu-button--styles();
+    @include kendo-input--styles();
+    @include kendo-textbox--styles();
+    @include kendo-textarea--styles();
+    @include kendo-checkbox--styles();
+    @include kendo-listbox--styles();
+    @include kendo-progressbar--styles();
+    @include kendo-radio--styles();
+    @include kendo-slider--styles();
 
 
     // Form requirements
-    @include calendar-styles();
-    @include time-selector-styles();
+    @include kendo-calendar--styles();
+    @include kendo-time-selector--styles();
 
 
     // Augmented forms
-    @include autocomplete-styles();
-    @include captcha-styles();
-    @include color-palette-styles();
-    @include color-gradient-styles();
-    @include color-editor-styles();
-    @include colorpicker-styles();
-    @include combobox-styles();
-    @include dateinput-styles();
-    @include datepicker-styles();
-    @include timepicker-styles();
-    @include time-duration-picker-styles();
-    @include datetimepicker-styles();
-    @include daterangepicker-styles();
-    @include dropdowngrid-styles();
-    @include dropdownlist-styles();
-    @include dropdowntree-styles();
-    @include maskedtextbox-styles();
-    @include multiselect-styles();
-    @include numerictextbox-styles();
-    @include rating-styles();
-    @include searchbox-styles();
-    @include switch-styles();
-    @include upload-styles();
-    @include dropzone-styles();
+    @include kendo-autocomplete--styles();
+    @include kendo-captcha--styles();
+    @include kendo-color-palette--styles();
+    @include kendo-color-gradient--styles();
+    @include kendo-color-editor--styles();
+    @include kendo-color-picker--styles();
+    @include kendo-combobox--styles();
+    @include kendo-date-input--styles();
+    @include kendo-date-picker--styles();
+    @include kendo-time-picker--styles();
+    @include kendo-time-duration-picker--styles();
+    @include kendo-date-time-picker--styles();
+    @include kendo-date-range-picker--styles();
+    @include kendo-dropdown-grid--styles();
+    @include kendo-dropdown-list--styles();
+    @include kendo-dropdown-tree--styles();
+    @include kendo-masked-textbox--styles();
+    @include kendo-multiselect--styles();
+    @include kendo-numeric-textbox--styles();
+    @include kendo-rating--styles();
+    @include kendo-searchbox--styles();
+    @include kendo-switch--styles();
+    @include kendo-upload--styles();
+    @include kendo-dropzone--styles();
 
 
     // Command interfaces
-    @include appbar-styles();
-    @include fab-styles();
-    @include menu-styles();
-    @include toolbar-styles();
+    @include kendo-appbar--styles();
+    @include kendo-fab--styles();
+    @include kendo-menu--styles();
+    @include kendo-toolbar--styles();
 
 
     // Popups and modals
-    @include window-styles();
-    @include action-sheet-styles();
-    @include dialog-styles();
-    @include drawer-styles();
-    @include notification-styles();
-    @include popover-styles();
-    @include responsive-panel-styles();
+    @include kendo-window--styles();
+    @include kendo-action-sheet--styles();
+    @include kendo-dialog--styles();
+    @include kendo-drawer--styles();
+    @include kendo-notification--styles();
+    @include kendo-popover--styles();
+    @include kendo-responsive-panel--styles();
 
 
     // Navigation
-    @include bottom-nav-styles();
-    @include breadcrumb-styles();
-    @include pager-styles();
-    @include stepper-styles();
-    @include tabstrip-styles();
-    @include treeview-styles();
-    @include wizard-styles();
+    @include kendo-bottom-navigation--styles();
+    @include kendo-breadcrumb--styles();
+    @include kendo-pager--styles();
+    @include kendo-stepper--styles();
+    @include kendo-tabstrip--styles();
+    @include kendo-treeview--styles();
+    @include kendo-wizard--styles();
 
 
     // Layout & containers
-    @include card-styles();
-    @include expander-styles();
-    @include panelbar-styles();
-    @include splitter-styles();
-    @include tilelayout-styles();
+    @include kendo-card--styles();
+    @include kendo-expander--styles();
+    @include kendo-panelbar--styles();
+    @include kendo-splitter--styles();
+    @include kendo-tile-layout--styles();
 
 
     // Data management
-    @include grid-styles();
-    @include listview-styles();
-    @include spreadsheet-styles();
-    @include pivotgrid-styles();
-    @include treelist-styles();
-    @include filter-styles();
-    @include filemanager-styles();
-    @include taskboard-styles();
+    @include kendo-grid--styles();
+    @include kendo-listview--styles();
+    @include kendo-spreadsheet--styles();
+    @include kendo-pivotgrid--styles();
+    @include kendo-treelist--styles();
+    @include kendo-filter--styles();
+    @include kendo-file-manager--styles();
+    @include kendo-task-board--styles();
 
 
     // Editors
-    @include editor-styles();
-    @include imageeditor-styles();
+    @include kendo-editor--styles();
+    @include kendo-image-editor--styles();
 
 
     // Scheduling
-    @include gantt-styles();
-    @include scheduler-styles();
+    @include kendo-gantt--styles();
+    @include kendo-scheduler--styles();
 
 
     // Misc
-    @include adaptive-styles();
-    @include chat-styles();
-    @include mediaplayer-styles();
-    @include timeline-styles();
-    @include pdf-viewer-styles();
-    @include scroller-styles();
-    @include scrollview-styles();
+    @include kendo-adaptive--styles();
+    @include kendo-chat--styles();
+    @include kendo-media-player--styles();
+    @include kendo-timeline--styles();
+    @include kendo-pdf-viewer--styles();
+    @include kendo-scroller--styles();
+    @include kendo-scrollview--styles();
 
 
     // Dataviz
-    @include dataviz-styles();
-    @include map-styles();
-    @include orgchart-styles();
-    @include signature-styles();
+    @include kendo-dataviz--styles();
+    @include kendo-map--styles();
+    @include kendo-orgchart--styles();
+    @include kendo-signature--styles();
 }

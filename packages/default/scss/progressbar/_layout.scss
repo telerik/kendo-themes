@@ -1,4 +1,4 @@
-@include exports("progressbar/layout") {
+@mixin kendo-progressbar--layout-base() {
 
     // Base
     .k-progressbar {
@@ -190,22 +190,15 @@
         }
     }
 
-}
 
-
-
-
-@include exports("progressbar/layout/rtl") {
-
+    // RTL
     .k-rtl .k-progressbar,
     .k-progressbar[dir="rtl"] {
         direction: rtl;
     }
 
-}
 
-@include exports("circular-progressbar/layout") {
-
+    // Circular progressbar
     .k-circular-progressbar {
         display: inline-block;
         text-align: start;
@@ -245,4 +238,9 @@
         margin: 0;
     }
 
+}
+
+
+@mixin kendo-progressbar--layout() {
+    @include kendo-progressbar--layout-base();
 }
