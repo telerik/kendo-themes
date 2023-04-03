@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import { Button } from '../../button';
 import { Textbox } from '../../textbox';
 import { Window } from '../../window';
 import { Form, FormField } from '../../form';
@@ -23,13 +24,46 @@ root.render(
             <span></span>
 
             <section>
-                <Window title="Insert Image" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
-                    <Form tag="div" orientation="horizontal">
-                        <FormField label="Web address:" editor={ <Textbox showClearButton={false} /> } />
-                        <FormField label="Alternate text:" editor={ <Textbox showClearButton={false} /> } />
-                        <FormField label="Width:" editor={ <Textbox showClearButton={false} /> } />
-                        <FormField label="Height:" editor={ <Textbox showClearButton={false} /> } />
-                    </Form>
+                <Window title="Insert Image" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                    <>
+                        <Button>Cancel</Button>
+                        <Button themeColor="primary">Update</Button>
+                    </>
+                }>
+                    <div className="k-form k-form-md k-form-horizontal">
+                        <div className="k-form-field">
+                            <div className="k-form-label">
+                                <label>Web address:</label>
+                            </div>
+                            <div className="k-form-field-wrap">
+                                <Textbox showClearButton={false} />
+                            </div>
+                        </div>
+                        <div className="k-form-field">
+                            <div className="k-form-label">
+                                <label>Alternate text:</label>
+                            </div>
+                            <div className="k-form-field-wrap">
+                                <Textbox showClearButton={false} />
+                            </div>
+                        </div>
+                        <div className="k-form-field">
+                            <div className="k-form-label">
+                                <label>Width:</label>
+                            </div>
+                            <div className="k-form-field-wrap">
+                                <Textbox showClearButton={false} />
+                            </div>
+                        </div>
+                        <div className="k-form-field">
+                            <div className="k-form-label">
+                                <label>Height:</label>
+                            </div>
+                            <div className="k-form-field-wrap">
+                                <Textbox showClearButton={false} />
+                            </div>
+                        </div>
+                    </div>
                 </Window>
             </section>
 

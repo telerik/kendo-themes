@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import { Button } from '../../button';
 import { Dialog } from '../../dialog';
 
 const root = ReactDOM.createRoot(
@@ -23,7 +24,12 @@ root.render(
         <div id="test-area" className="k-grid-cols-1">
             <div className="k-dialog-wrapper">
                 <div className="k-overlay"></div>
-                <Dialog title="Title" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
+                <Dialog title="Title" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                    <>
+                        <Button>Action</Button>
+                        <Button themeColor="primary">Primary</Button>
+                    </>
+                }>
                     Dialog content template
                 </Dialog>
             </div>

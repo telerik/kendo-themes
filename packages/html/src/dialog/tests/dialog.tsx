@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import { Button } from '../../button';
 import { Dialog } from '../../dialog';
 
 
@@ -19,17 +20,32 @@ root.render(
 
             <Dialog title="Title
                         g y p
-                        t d l" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
+                        t d l" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                <>
+                    <Button>Action</Button>
+                    <Button themeColor="primary">Primary</Button>
+                </>
+            }>
                 Dialog content template
             </Dialog>
 
             <Dialog title="Cursive
                         g y p
-                        t d l" actionButtons actionButtonsAlign="end">
+                        t d l" actionButtonsAlign="end" actionButtons={
+                <>
+                    <Button>Action</Button>
+                    <Button themeColor="primary">Primary</Button>
+                </>
+            }>
                 Dialog without titlebar actions
             </Dialog>
 
-            <Dialog title="" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
+            <Dialog title="" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                <>
+                    <Button>Action</Button>
+                    <Button themeColor="primary">Primary</Button>
+                </>
+            }>
                 Dialog with empty title and actions
             </Dialog>
 
@@ -37,11 +53,21 @@ root.render(
                 Dialog with empty title and no actions
             </Dialog>
 
-            <Dialog actionButtons actionButtonsAlign="end">
+            <Dialog actionButtonsAlign="end" actionButtons={
+                <>
+                    <Button>Action</Button>
+                    <Button themeColor="primary">Primary</Button>
+                </>
+            }>
                 Dialog without title
             </Dialog>
 
-            <Dialog title="Scrolling" actions={[ 'close' ]} actionButtons actionButtonsAlign="end" style={{ height: "170px" }}>
+            <Dialog title="Scrolling" actions={[ 'close' ]} actionButtonsAlign="end" style={{ height: "170px" }} actionButtons={
+                <>
+                    <Button>Action</Button>
+                    <Button themeColor="primary">Primary</Button>
+                </>
+            }>
                 <p>Dialog content template with long text and vertical scrolling.</p>
                 <p>Dialog content template with long text and vertical scrolling.</p>
                 <p>Dialog content template with long text and vertical scrolling.</p>
