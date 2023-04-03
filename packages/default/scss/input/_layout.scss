@@ -1,4 +1,4 @@
-@include exports( "input/layout" ) {
+@mixin kendo-input--layout-base() {
 
     // Generic input
     .k-input,
@@ -466,12 +466,7 @@
     }
 
 
-}
 
-
-
-
-@include exports("input/layout/autofill-fix") {
 
     // This is needed for the textbox container to capture browser autofill
     @keyframes autoFillStart {
@@ -499,4 +494,9 @@
         animation-name: autoFillEnd;
     }
 
+}
+
+
+@mixin kendo-input--layout() {
+    @include kendo-input--layout-base();
 }

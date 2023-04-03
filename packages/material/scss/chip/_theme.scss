@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/chip/_theme.scss";
 
-@include exports( "chip/theme/material" ) {
+
+@mixin kendo-chip--theme() {
+
+    @include kendo-chip--theme-base();
 
     // Solid
     .k-chip-solid {

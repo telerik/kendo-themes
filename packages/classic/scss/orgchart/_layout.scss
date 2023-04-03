@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/orgchart/_layout.scss";
+
+
+@mixin kendo-orgchart--layout() {
+    @include kendo-orgchart--layout-base();
+}

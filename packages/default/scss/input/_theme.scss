@@ -1,4 +1,4 @@
-@include exports( "input/theme" ) {
+@mixin kendo-input--theme-base() {
 
     // Solid input
     .k-input-solid {
@@ -468,4 +468,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-input--theme() {
+    @include kendo-input--theme-base();
 }

@@ -1,4 +1,4 @@
-@include exports("filter/theme") {
+@mixin kendo-filter--theme-base() {
 
     .k-filter {
         color: $kendo-component-text;
@@ -26,4 +26,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-filter--theme() {
+    @include kendo-filter--theme-base();
 }

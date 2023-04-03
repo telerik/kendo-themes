@@ -1,4 +1,4 @@
-@include exports("treeview/layout") {
+@mixin kendo-treeview--layout-base() {
 
     // Treeview
     .k-treeview {
@@ -188,4 +188,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-treeview--layout() {
+    @include kendo-treeview--layout-base();
 }

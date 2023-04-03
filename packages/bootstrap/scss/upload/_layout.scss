@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/upload/_layout.scss";
+
+
+@mixin kendo-upload--layout() {
+    @include kendo-upload--layout-base();
+}

@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/table/_theme.scss";
 
-@include exports( "table/theme/material" ) {
+
+@mixin kendo-table--theme() {
+
+    @include kendo-table--theme-base();
 
     // Selected state
     .k-table-tbody .k-table-row.k-selected,

@@ -1,6 +1,11 @@
-@include exports( "textarea/layout" ) {
+@mixin kendo-textarea--layout-base() {
 
     // Textarea
     .k-textarea {}
 
+}
+
+
+@mixin kendo-textarea--layout() {
+    @include kendo-textarea--layout-base();
 }

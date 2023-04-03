@@ -1,4 +1,4 @@
-@include exports("editor/theme") {
+@mixin kendo-editor--theme-base() {
 
     .k-editor {
         @include fill(
@@ -97,4 +97,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-editor--theme() {
+    @include kendo-editor--theme-base();
 }

@@ -1,4 +1,4 @@
-@include exports( "checkbox/theme" ) {
+@mixin kendo-checkbox--theme-base () {
 
     // Checkbox
     .k-checkbox {
@@ -98,4 +98,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-checkbox--theme() {
+    @include kendo-checkbox--theme-base();
 }

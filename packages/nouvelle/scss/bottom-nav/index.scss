@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "bottom-navigation",
@@ -14,15 +17,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin bottom-nav-styles() {
+@mixin kendo-bottom-navigation--styles() {
     @include module-render( "bottom-navigation" ) {
-        @include kendo-bottom-nav--layout();
-        @include kendo-bottom-nav--extended-layout();
-        @include kendo-bottom-nav--theme();
-        @include kendo-bottom-nav--extended-theme();
+        @include kendo-bottom-navigation--layout();
+        @include kendo-bottom-navigation--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-bottom-navigation--styles();
 }

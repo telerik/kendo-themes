@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/pivotgrid/_theme.scss";
 
-@include exports("pivotgrid/theme/material") {
+
+@mixin kendo-pivotgrid--theme() {
+
+    @include kendo-pivotgrid--theme-base();
 
     // Hover and Focus state have the same bg color
     .k-pivotgrid-cell:focus,

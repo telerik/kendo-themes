@@ -1,4 +1,4 @@
-@include exports( "timeselector/theme" ) {
+@mixin kendo-time-selector--theme-base() {
 
     // Time selector
     .k-timeselector {
@@ -69,4 +69,9 @@
         );
     }
 
+}
+
+
+@mixin kendo-time-selector--theme() {
+    @include kendo-time-selector--theme-base();
 }

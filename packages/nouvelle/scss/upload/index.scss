@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "upload",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin upload-styles() {
+@mixin kendo-upload--styles() {
     @include module-render( "upload" ) {
         @include kendo-upload--layout();
-        @include kendo-upload--extended-layout();
         @include kendo-upload--theme();
-        @include kendo-upload--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-upload--styles();
 }

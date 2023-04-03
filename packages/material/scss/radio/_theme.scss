@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/radio/_theme.scss";
 
-@include exports( "radio/theme/material" ) {
+
+@mixin kendo-radio--theme() {
+
+    @include kendo-radio--theme-base();
 
     // Radio
     .k-radio-label {

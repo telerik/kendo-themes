@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/checkbox/_theme.scss";
 
-@include exports( "checkbox/theme/material" ) {
+
+@mixin kendo-checkbox--theme() {
+
+    @include kendo-checkbox--theme-base();
 
     // Checkbox
     .k-checkbox-label {

@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "action-sheet",
@@ -14,15 +17,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin action-sheet-styles() {
+@mixin kendo-action-sheet--styles() {
     @include module-render( "action-sheet" ) {
         @include kendo-action-sheet--layout();
-        @include kendo-action-sheet--extended-layout();
         @include kendo-action-sheet--theme();
-        @include kendo-action-sheet--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-action-sheet--styles();
 }

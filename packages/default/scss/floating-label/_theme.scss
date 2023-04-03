@@ -1,4 +1,4 @@
-@include exports( "floating-label/theme" ) {
+@mixin kendo-floating-label--theme-base() {
 
     // Floating label
     .k-floating-label-container {
@@ -19,4 +19,9 @@
 
     }
 
+}
+
+
+@mixin kendo-floating-label--theme() {
+    @include kendo-floating-label--theme-base();
 }

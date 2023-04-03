@@ -1,6 +1,9 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
-    name: "dropdownlist",
+    name: "dropdown-list",
     dependencies: (
         "input",
         "icon",
@@ -18,15 +21,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin dropdownlist-styles() {
-    @include module-render( "dropdownlist" ) {
-        @include kendo-dropdownlist--layout();
-        @include kendo-dropdownlist--extended-layout();
-        @include kendo-dropdownlist--theme();
-        @include kendo-dropdownlist--extended-theme();
+@mixin kendo-dropdown-list--styles() {
+    @include module-render( "dropdown-list" ) {
+        @include kendo-dropdown-list--layout();
+        @include kendo-dropdown-list--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-dropdown-list--styles();
 }

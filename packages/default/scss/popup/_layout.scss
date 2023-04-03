@@ -1,4 +1,4 @@
-@include exports("popup/layout") {
+@mixin kendo-popup--layout-base() {
 
     .k-popup {
         @include border-radius( $kendo-popup-border-radius );
@@ -48,14 +48,16 @@
     .k-popup > .k-coloreditor {
         border-width: 0;
     }
-}
 
 
-
-@include exports( "common/decoration/shadow/legacy" ) {
-
+    // Legacy shadow
     .k-shadow {
         box-shadow: $kendo-popup-shadow;
     }
 
+}
+
+
+@mixin kendo-popup--layout() {
+    @include kendo-popup--layout-base();
 }

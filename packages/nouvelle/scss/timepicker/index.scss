@@ -1,6 +1,9 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
-    name: "timepicker",
+    name: "time-picker",
     dependencies: (
         "input",
         "icon",
@@ -18,15 +21,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin timepicker-styles() {
-    @include module-render( "timepicker" ) {
-        @include kendo-timepicker--layout();
-        @include kendo-timepicker--extended-layout();
-        @include kendo-timepicker--theme();
-        @include kendo-timepicker--extended-theme();
+@mixin kendo-time-picker--styles() {
+    @include module-render( "time-picker" ) {
+        @include kendo-time-picker--layout();
+        @include kendo-time-picker--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-time-picker--styles();
 }

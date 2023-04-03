@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "scrollview",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin scrollview-styles() {
+@mixin kendo-scrollview--styles() {
     @include module-render( "scrollview" ) {
         @include kendo-scrollview--layout();
-        @include kendo-scrollview--extended-layout();
         @include kendo-scrollview--theme();
-        @include kendo-scrollview--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-scrollview--styles();
 }

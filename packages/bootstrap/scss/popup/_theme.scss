@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/popup/_theme.scss";
+
+
+@mixin kendo-popup--theme() {
+    @include kendo-popup--theme-base();
+}

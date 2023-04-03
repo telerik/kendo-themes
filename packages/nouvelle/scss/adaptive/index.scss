@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "adaptive",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin adaptive-styles() {
+@mixin kendo-adaptive--styles() {
     @include module-render( "adaptive" ) {
         @include kendo-adaptive--layout();
-        @include kendo-adaptive--extended-layout();
         @include kendo-adaptive--theme();
-        @include kendo-adaptive--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-adaptive--styles();
 }

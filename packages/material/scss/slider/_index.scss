@@ -22,7 +22,23 @@ $_kendo-module-meta: (
 
 // Component
 @import "./_variables.scss";
-@import "./images/slider-h.scss";
-@import "./images/slider-v.scss";
 @import "./_layout.scss";
 @import "./_theme.scss";
+
+
+// Register
+@import "../core/module-system/index.import.scss";
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin kendo-slider--styles() {
+    @include module-render( "slider" ) {
+        @include kendo-slider--layout();
+        @include kendo-slider--theme();
+    }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-slider--styles();
+}

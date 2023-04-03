@@ -1,4 +1,4 @@
-@include exports("dropzone/layout") {
+@mixin kendo-dropzone--layout-base() {
 
     // Dropzone
     .k-external-dropzone {
@@ -7,7 +7,7 @@
         flex-flow: row nowrap;
     }
 
-    // Dropzpne inner
+    // Dropzone inner
     .k-dropzone-inner {
         padding-block: $kendo-dropzone-padding-y;
         padding-inline: $kendo-dropzone-padding-x;
@@ -46,4 +46,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-dropzone--layout() {
+    @include kendo-dropzone--layout-base();
 }

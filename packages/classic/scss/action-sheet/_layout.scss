@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/action-sheet/_layout.scss";
+
+
+@mixin kendo-action-sheet--layout() {
+    @include kendo-action-sheet--layout-base();
+}

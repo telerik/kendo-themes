@@ -1,4 +1,4 @@
-@include exports("stepper/layout") {
+@mixin kendo-stepper--layout-base() {
 
     // Base
     .k-stepper {
@@ -244,11 +244,9 @@
             padding-inline: $kendo-stepper-inline-content-padding-y;
         }
     }
-}
 
 
-@include exports("stepper/layout/rtl") {
-
+    // Stepper rtl
     .k-rtl .k-stepper,
     .k-stepper[dir="rtl"] {
         direction: rtl;
@@ -276,4 +274,10 @@
             }
         }
     }
+
+}
+
+
+@mixin kendo-stepper--layout() {
+    @include kendo-stepper--layout-base();
 }

@@ -1,6 +1,10 @@
-@include exports( "colorpicker/theme" ) {
+@mixin kendo-color-picker--theme-base() {
 
     // Color picker
     .k-color-picker {}
 
+}
+
+@mixin kendo-color-picker--theme() {
+    @include kendo-color-picker--theme-base();
 }

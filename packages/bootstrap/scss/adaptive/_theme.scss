@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/adaptive/_theme.scss";
+
+
+@mixin kendo-adaptive--theme() {
+    @include kendo-adaptive--theme-base();
+}

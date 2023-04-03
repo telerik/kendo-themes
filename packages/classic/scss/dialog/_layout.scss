@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/dialog/_layout.scss";
+
+
+@mixin kendo-dialog--layout() {
+    @include kendo-dialog--layout-base();
+}

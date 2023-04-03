@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "dropzone",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin dropzone-styles() {
+@mixin kendo-dropzone--styles() {
     @include module-render( "dropzone" ) {
         @include kendo-dropzone--layout();
-        @include kendo-dropzone--extended-layout();
         @include kendo-dropzone--theme();
-        @include kendo-dropzone--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-dropzone--styles();
 }

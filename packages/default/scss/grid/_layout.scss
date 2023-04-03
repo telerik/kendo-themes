@@ -1,5 +1,6 @@
-@include exports("grid/layout") {
+@mixin kendo-grid--layout-base() {
 
+    // Grid
     .k-grid {
         border-width: $kendo-grid-border-width;
         border-style: solid;
@@ -1017,9 +1018,8 @@
         }
 
     }
-}
 
-@include exports( "grid/pdf-export" ) {
+
     // PDF export
     .k-loading-pdf-mask {
         position: absolute;
@@ -1090,9 +1090,7 @@
             padding: 0 !important; // sass-lint:disable-line no-important
         }
     }
-}
 
-@include exports( "filtermenu/layout" ) {
 
     // Filter menu
     .k-filter-menu-popup {
@@ -1187,9 +1185,7 @@
         }
     }
 
-}
 
-@include exports("columnmenu/layout") {
 
     // Column menu
     .k-column-menu-popup,
@@ -1300,4 +1296,9 @@
         flex: 1 1 auto;
     }
 
+}
+
+
+@mixin kendo-grid--layout() {
+    @include kendo-grid--layout-base();
 }

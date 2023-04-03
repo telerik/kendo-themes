@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "spreadsheet",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin spreadsheet-styles() {
+@mixin kendo-spreadsheet--styles() {
     @include module-render( "spreadsheet" ) {
         @include kendo-spreadsheet--layout();
-        @include kendo-spreadsheet--extended-layout();
         @include kendo-spreadsheet--theme();
-        @include kendo-spreadsheet--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-spreadsheet--styles();
 }

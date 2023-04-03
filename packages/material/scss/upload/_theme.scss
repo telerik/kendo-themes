@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/upload/_theme.scss";
 
-@include exports("upload/theme/material") {
+
+@mixin kendo-upload--theme() {
+
+    @include kendo-upload--theme-base();
 
     // Upload
     .k-upload {
@@ -9,4 +12,5 @@
             background-color: k-try-shade( $kendo-upload-dropzone-bg );
         }
     }
+
 }

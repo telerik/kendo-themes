@@ -1,4 +1,4 @@
-@include exports("drawer/layout") {
+@mixin kendo-drawer--layout-base() {
 
     .k-drawer-container {
         display: flex;
@@ -241,4 +241,9 @@
             order: 0;
         }
     }
+}
+
+
+@mixin kendo-drawer--layout() {
+    @include kendo-drawer--layout-base();
 }

@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "actions",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin actions-styles() {
+@mixin kendo-actions--styles() {
     @include module-render( "actions" ) {
         @include kendo-actions--layout();
-        @include kendo-actions--extended-layout();
         @include kendo-actions--theme();
-        @include kendo-actions--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-actions--styles();
 }

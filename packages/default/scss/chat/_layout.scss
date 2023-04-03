@@ -1,5 +1,6 @@
-@include exports("chat/layout") {
+@mixin kendo-chat--layout-base() {
 
+    // Chat
     .k-chat {
         margin: auto;
         max-width: $kendo-chat-width;
@@ -310,13 +311,10 @@
         }
     }
 
-}
 
 
 
-
-@include exports( "chat/cards/layout" ) {
-
+    // Card list
     .k-chat .k-card-list {
         margin: $kendo-chat-bubble-spacing 0 0;
     }
@@ -367,12 +365,7 @@
             background: none;
         }
     }
-}
 
-
-
-
-@include exports( "chat/typingindicator/layout" ) {
 
     // Local variables
     $kendo-chat-typing-indicator-dot-size: 8px !default;
@@ -410,13 +403,8 @@
 
     }
 
-}
 
-
-
-
-@include exports( "chat/toolbar/layout" ) {
-
+    // Chat toolbar
     .k-chat-toolbar,
     .k-chat .k-toolbar-box {
         padding-block: $kendo-chat-toolbar-padding-y;
@@ -472,15 +460,10 @@
 
     }
 
-}
 
 
 
-
-@include exports( "chat/layout/rtl" ) {
-
-
-    // Quick replies
+    // RTL
     .k-rtl,
     [dir="rtl"] {
 
@@ -548,5 +531,9 @@
 
     }
 
+}
 
+
+@mixin kendo-chat--layout() {
+    @include kendo-chat--layout-base();
 }

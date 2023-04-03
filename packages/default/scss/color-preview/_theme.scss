@@ -1,4 +1,4 @@
-@include exports( "color-preview/theme" ) {
+@mixin kendo-color-preview--theme-base() {
 
     // Color Preview
     .k-color-preview {
@@ -14,4 +14,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-color-preview--theme() {
+    @include kendo-color-preview--theme-base();
 }

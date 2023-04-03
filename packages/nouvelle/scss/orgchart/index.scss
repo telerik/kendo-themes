@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "orgchart",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin orgchart-styles() {
+@mixin kendo-orgchart--styles() {
     @include module-render( "orgchart" ) {
         @include kendo-orgchart--layout();
-        @include kendo-orgchart--extended-layout();
         @include kendo-orgchart--theme();
-        @include kendo-orgchart--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-orgchart--styles();
 }

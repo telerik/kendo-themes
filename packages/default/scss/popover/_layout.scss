@@ -1,4 +1,4 @@
-@include exports("popover/layout") {
+@mixin kendo-popover--layout-base() {
 
     // Popover
     .k-popover {
@@ -52,10 +52,8 @@
         border-width: $kendo-popover-actions-border-width 0 0;
     }
 
-}
 
-@include exports( "popover/layout/callout" ) {
-
+    // Popover callout
     .k-popover-callout {
         margin: 0;
         width: $kendo-popover-callout-width;
@@ -89,4 +87,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-popover--layout() {
+    @include kendo-popover--layout-base();
 }

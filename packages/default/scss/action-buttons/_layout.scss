@@ -1,5 +1,6 @@
-@include exports("action-buttons/layout") {
+@mixin kendo-actions--layout-base() {
 
+    // Actions
     .k-actions {
         padding-block: $kendo-actions-padding-y;
         padding-inline: $kendo-actions-padding-x;
@@ -29,14 +30,6 @@
         margin-top: $kendo-actions-margin-top;
     }
 
-
-    // Aliases
-    .k-edit-buttons,
-    .k-action-buttons,
-    .k-columnmenu-actions {
-        @extend .k-actions !optional;
-    }
-
     // Actions align
     .k-actions-start {
         justify-content: flex-start;
@@ -51,6 +44,7 @@
         flex: 1 0 0%;
     }
 
+
     // Actions orientation
     .k-actions-horizontal {
         width: 100%;
@@ -60,4 +54,17 @@
         flex-flow: column nowrap;
     }
 
+
+    // Aliases
+    .k-edit-buttons,
+    .k-action-buttons,
+    .k-columnmenu-actions {
+        @extend .k-actions !optional;
+    }
+
+}
+
+
+@mixin kendo-actions--layout() {
+    @include kendo-actions--layout-base();
 }

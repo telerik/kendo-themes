@@ -1,6 +1,9 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
-    name: "daterangepicker",
+    name: "date-range-picker",
     dependencies: (
         "input",
         "icon",
@@ -18,15 +21,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin daterangepicker-styles() {
-    @include module-render( "daterangepicker" ) {
-        @include kendo-daterangepicker--layout();
-        @include kendo-daterangepicker--extended-layout();
-        @include kendo-daterangepicker--theme();
-        @include kendo-daterangepicker--extended-theme();
+@mixin kendo-date-range-picker--styles() {
+    @include module-render( "date-range-picker" ) {
+        @include kendo-date-range-picker--layout();
+        @include kendo-date-range-picker--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-date-range-picker--styles();
 }

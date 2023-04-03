@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "panelbar",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin panelbar-styles() {
+@mixin kendo-panelbar--styles() {
     @include module-render( "panelbar" ) {
         @include kendo-panelbar--layout();
-        @include kendo-panelbar--extended-layout();
         @include kendo-panelbar--theme();
-        @include kendo-panelbar--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-panelbar--styles();
 }

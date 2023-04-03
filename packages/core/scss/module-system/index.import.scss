@@ -1,8 +1,8 @@
 @import "./_components.scss";
 @import "./_dependencies.scss";
 
-$_deps: ();
-$_imported: ();
+$_deps: () !default;
+$_imported: () !default;
 
 @mixin module-register( $name: null, $dependencies: null ) {
     @if (k-list-index( $kendo-components, $name) != null) {
@@ -31,8 +31,8 @@ $_imported: ();
         }
     }
 
-    @if ( k-list-index( $kendo-components, $name ) != null ) and ( k-list-index( $_imported, $name ) == null )  {
-        $_imported: k-list-append( $_imported, $name );
+    @if ( k-list-index( $kendo-components, $name ) != null ) and ( k-list-index( $_imported, $name ) == null ) {
+        $_imported: k-list-append( $_imported, $name ) !global;
         @content;
     }
 }
@@ -46,3 +46,12 @@ $_imported: ();
     }
 }
 @include verify-dependencies();
+
+@mixin verify-rendered() {
+    @each $component in $kendo-components {
+        @if (k-list-index( $_imported, $component ) == null) {
+            // sass-lint:disable-block no-warn
+            @error "Module '#{$component}' has not been rendered.";
+        }
+    }
+}

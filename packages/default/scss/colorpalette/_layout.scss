@@ -1,4 +1,4 @@
-@include exports("colorpalette/layout") {
+@mixin kendo-color-palette--layout-base() {
 
     // ColorPalette
     .k-colorpalette {
@@ -51,4 +51,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-color-palette--layout() {
+    @include kendo-color-palette--layout-base();
 }

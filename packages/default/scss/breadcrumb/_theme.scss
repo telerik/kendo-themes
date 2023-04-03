@@ -1,4 +1,4 @@
-@include exports( "breadcrumb/theme" ) {
+@mixin kendo-breadcrumb--theme-base() {
 
     // Breadcrumb
     .k-breadcrumb {
@@ -94,4 +94,9 @@
         @extend .k-breadcrumb-current-item !optional;
     }
 
+}
+
+
+@mixin kendo-breadcrumb--theme() {
+    @include kendo-breadcrumb--theme-base();
 }

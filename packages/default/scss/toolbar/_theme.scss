@@ -1,4 +1,4 @@
-@include exports("toolbar/theme") {
+@mixin kendo-toolbar--theme-base() {
 
     // Theme
     .k-toolbar {
@@ -30,13 +30,6 @@
 
     }
 
-}
-
-
-
-
-@include exports("floating-toolbar/theme") {
-
     // sass-lint:disable-block class-name-format
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
@@ -47,15 +40,6 @@
             $kendo-toolbar-gradient
         );
     }
-
-}
-
-
-
-
-// Remove once the Overflow Popup uses
-// the proper Menu rendering in all suites.
-@include exports("toolbar/theme/legacy") {
 
     // Overflow container
     .k-overflow-container {
@@ -97,4 +81,9 @@
 
     }
 
+}
+
+
+@mixin kendo-toolbar--theme() {
+    @include kendo-toolbar--theme-base();
 }

@@ -1,4 +1,4 @@
-@include exports( "virtual-scroller/layout" ) {
+@mixin kendo-virtual-scroller--layout-base() {
 
     // Virtual scroller
     .k-virtual-scroller {
@@ -32,4 +32,9 @@
         z-index: 0;
     }
 
+}
+
+
+@mixin kendo-virtual-scroller--layout() {
+    @include kendo-virtual-scroller--layout-base();
 }

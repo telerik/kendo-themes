@@ -1,4 +1,4 @@
-@include exports("bottom-navigation/layout") {
+@mixin kendo-bottom-navigation--layout-base() {
 
     // Bottom Navigation
     .k-bottom-nav {
@@ -113,4 +113,10 @@
         bottom: 0;
         z-index: 1;
     }
+
+}
+
+
+@mixin kendo-bottom-navigation--layout() {
+    @include kendo-bottom-navigation--layout-base();
 }

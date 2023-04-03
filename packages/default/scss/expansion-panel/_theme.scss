@@ -1,4 +1,4 @@
-@include exports("expansion-panel/theme") {
+@mixin kendo-expander--theme-base() {
 
     .k-expander {
         @include fill(
@@ -38,4 +38,9 @@
     .k-expander-sub-title {
         color: $kendo-expander-header-sub-title-text;
     }
+}
+
+
+@mixin kendo-expander--theme() {
+    @include kendo-expander--theme-base();
 }

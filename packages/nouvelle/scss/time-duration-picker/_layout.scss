@@ -1,6 +1,10 @@
-@mixin kendo-time-duration-picker--layout() {}
+@mixin kendo-time-duration-picker--layout() {
+
+    // Time duration picker
+    .k-time-duration-picker {}
 
 
+    // Legacy aliases
+    .k-timedurationpicker { @extend .k-time-duration-picker !optional; }
 
-
-@mixin kendo-time-duration-picker--extended-layout() {}
+}

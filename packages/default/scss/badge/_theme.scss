@@ -1,4 +1,4 @@
-@include exports( "badge/theme" ) {
+@mixin kendo-badge--theme-base() {
 
     // Solid badges
     @each $name, $color in $kendo-theme-colors {
@@ -20,4 +20,10 @@
             color: $color;
         }
     }
+
+}
+
+
+@mixin kendo-badge--theme() {
+    @include kendo-badge--theme-base();
 }

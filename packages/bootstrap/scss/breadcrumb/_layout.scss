@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/breadcrumb/_layout.scss";
 
-@include exports( "breadcrumb/layout/bootstrap" ) {
+
+@mixin kendo-breadcrumb--layout() {
+
+    @include kendo-breadcrumb--layout-base();
 
     // Breadcrumb links
     .k-breadcrumb-link,

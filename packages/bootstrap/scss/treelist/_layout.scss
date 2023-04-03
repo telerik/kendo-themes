@@ -1,6 +1,10 @@
 @import "@progress/kendo-theme-default/scss/treelist/_layout.scss";
 
-@include exports( "treelist/layout/bootstrap" ) {
+
+@mixin kendo-treelist--layout() {
+
+    @include kendo-treelist--layout-base();
+
     .k-treelist {
         tr.k-footer td,
         tr.k-footer-template td {
@@ -13,4 +17,5 @@
             font-weight: normal;
         }
     }
+
 }

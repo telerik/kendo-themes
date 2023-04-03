@@ -1,4 +1,4 @@
-@include exports("scrollview/layout") {
+@mixin kendo-scrollview--layout-base() {
 
     kendo-scrollview.k-scrollview-wrap,
     kendo-scrollview.k-scrollview,
@@ -204,4 +204,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-scrollview--layout() {
+    @include kendo-scrollview--layout-base();
 }

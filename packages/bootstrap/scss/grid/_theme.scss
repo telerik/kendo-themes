@@ -1,4 +1,7 @@
-@include exports( "grid/theme" ) {
+@import "@progress/kendo-theme-default/scss/grid/_theme.scss";
+
+
+@mixin kendo-grid--theme() {
 
     // Theme
     .k-grid {
@@ -459,4 +462,5 @@
             @include fill ( $bg: $kendo-grid-row-resizer-active-bg );
         }
     }
+
 }

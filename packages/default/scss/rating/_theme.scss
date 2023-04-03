@@ -1,4 +1,4 @@
-@include exports("rating/theme") {
+@mixin kendo-rating--theme-base() {
 
     .k-rating {
         color: $kendo-component-text;
@@ -42,4 +42,10 @@
             cursor: pointer;
         }
     }
+
+}
+
+
+@mixin kendo-rating--theme() {
+    @include kendo-rating--theme-base();
 }

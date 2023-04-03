@@ -15,6 +15,18 @@ $_kendo-module-meta: (
 @import "@progress/kendo-theme-utils/scss/index.import.scss";
 
 
-@include exports("kendo-utils") {
-    @include kendo-utils();
+// Register
+@import "../core/module-system/index.import.scss";
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin kendo-utils--styles() {
+    @include module-render( "utils" ) {
+        @include kendo-utils();
+    }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-utils--styles();
 }

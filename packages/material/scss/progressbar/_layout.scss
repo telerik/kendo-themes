@@ -1,6 +1,10 @@
 @import "@progress/kendo-theme-default/scss/progressbar/_layout.scss";
 
-@include exports("progressbar/layout/material") {
+
+@mixin kendo-progressbar--layout() {
+
+    @include kendo-progressbar--layout-base();
+
     $kendo-progressbar-status-font-size: 11px !default;
     $kendo-progressbar-indeterminate-animation-timing: 2s infinite !default;
 

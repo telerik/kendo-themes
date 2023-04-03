@@ -1,4 +1,4 @@
-@include exports( "daterangepicker/layout" ) {
+@mixin kendo-date-range-picker--layout-base() {
 
     // Daterange picker
     .k-daterange-picker {
@@ -40,4 +40,9 @@
         @extend .k-daterange-picker !optional;
     }
 
+}
+
+
+@mixin kendo-date-range-picker--layout() {
+    @include kendo-date-range-picker--layout-base();
 }

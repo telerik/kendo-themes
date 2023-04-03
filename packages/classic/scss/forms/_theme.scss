@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/forms/_theme.scss";
+
+
+@mixin kendo-form--theme() {
+    @include kendo-form--theme-base();
+}

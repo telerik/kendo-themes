@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "pivotgrid",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin pivotgrid-styles() {
+@mixin kendo-pivotgrid--styles() {
     @include module-render( "pivotgrid" ) {
         @include kendo-pivotgrid--layout();
-        @include kendo-pivotgrid--extended-layout();
         @include kendo-pivotgrid--theme();
-        @include kendo-pivotgrid--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-pivotgrid--styles();
 }

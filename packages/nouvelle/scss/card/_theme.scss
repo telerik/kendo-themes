@@ -1,6 +1,5 @@
 @mixin kendo-card--theme() {
 
-
     // Card
     .k-card {
         @include box-shadow( var( --kendo-card-shadow, #{k-if-var( $kendo-card-shadow, none )} ) );
@@ -77,8 +76,3 @@
     }
 
 }
-
-
-
-
-@mixin kendo-card--extended-theme() {}

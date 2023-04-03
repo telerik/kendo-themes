@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "color-editor",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin color-editor-styles() {
+@mixin kendo-color-editor--styles() {
     @include module-render( "color-editor" ) {
         @include kendo-color-editor--layout();
-        @include kendo-color-editor--extended-layout();
         @include kendo-color-editor--theme();
-        @include kendo-color-editor--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-color-editor--styles();
 }

@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "color-gradient",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin color-gradient-styles() {
+@mixin kendo-color-gradient--styles() {
     @include module-render( "color-gradient" ) {
         @include kendo-color-gradient--layout();
-        @include kendo-color-gradient--extended-layout();
         @include kendo-color-gradient--theme();
-        @include kendo-color-gradient--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-color-gradient--styles();
 }

@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/menu/_theme.scss";
 
-@include exports("menu/theme/material") {
+
+@mixin kendo-menu--theme() {
+
+    @include kendo-menu--theme-base();
 
     .k-menu:not(.k-context-menu) {
 
