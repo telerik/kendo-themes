@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { ColorPalette, ColorPaletteRow, ColorPaletteTile } from '../../colorpalette';
+import { PALETTEPRESETS } from '../colorpalette-presets';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -11,7 +12,7 @@ root.render(
 
             <span>Disabled</span>
             <section>
-                <ColorPalette palette="basic" disabled></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.basic} disabled></ColorPalette>
             </section>
 
             <span>Item States</span>
