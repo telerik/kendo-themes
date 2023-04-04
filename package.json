@@ -15,7 +15,7 @@
     "esbuild": "^0.17.15",
     "eslint": "^8.17.0",
     "eslint-plugin-react": "^7.30.0",
-    "glob": "^8.0.3",
+    "glob": "^9.3.4",
     "gulp": "^4.0.2",
     "html-validate": "^7.1.1",
     "http-server": "^14.1.1",
