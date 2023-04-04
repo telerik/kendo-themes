@@ -3,7 +3,11 @@ import { classNames, States } from '../utils';
 
 const className = `k-clear-value`;
 
-const states = [ States.disabled ];
+const states = [
+    States.disabled,
+    States.loading,
+    States.readonly,
+];
 
 const options = {};
 

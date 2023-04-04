@@ -21,7 +21,8 @@ const states = [
     States.invalid,
     States.required,
     States.disabled,
-    States.loading
+    States.loading,
+    States.readonly
 ];
 
 const options = {
@@ -71,6 +72,7 @@ export const DateTimePicker = (
         required,
         loading,
         disabled,
+        readonly,
         opened,
         tab = defaultProps.tab,
         ...other
@@ -91,13 +93,24 @@ export const DateTimePicker = (
                 required={required}
                 loading={loading}
                 disabled={disabled}
+                readonly={readonly}
                 className={classNames(props.className, DATETIMEPICKER_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerInput placeholder={placeholder} value={value} />
-                <InputValidationIcon {...props} />
-                <InputLoadingIcon {...props} />
-                <InputClearValue {...props} />
+                <InputValidationIcon
+                    valid={valid}
+                    invalid={invalid}
+                    loading={loading}
+                    disabled={disabled} />
+                <InputLoadingIcon
+                    loading={loading}
+                    disabled={disabled} />
+                <InputClearValue
+                    loading={loading}
+                    disabled={disabled}
+                    readonly={readonly}
+                    value={value} />
                 <InputSuffix>{suffix}</InputSuffix>
                 <Button
                     className="k-input-button"

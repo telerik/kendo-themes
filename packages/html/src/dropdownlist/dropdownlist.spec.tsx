@@ -19,7 +19,8 @@ const states = [
     States.invalid,
     States.required,
     States.disabled,
-    States.loading
+    States.loading,
+    States.readonly
 ];
 
 const options = {
@@ -75,6 +76,7 @@ export const DropdownList = (
         required,
         loading,
         disabled,
+        readonly,
         showValue = defaultProps.showValue,
         popup,
         opened,
@@ -96,6 +98,7 @@ export const DropdownList = (
                 required={required}
                 loading={loading}
                 disabled={disabled}
+                readonly={readonly}
                 className={classNames(
                     props.className,
                     DROPDOWNLIST_CLASSNAME,
@@ -111,8 +114,14 @@ export const DropdownList = (
                     showValue={showValue}
                     valueIconName={valueIconName}
                 />
-                <InputValidationIcon {...props} />
-                <InputLoadingIcon {...props} />
+                <InputValidationIcon
+                    valid={valid}
+                    invalid={invalid}
+                    loading={loading}
+                    disabled={disabled} />
+                <InputLoadingIcon
+                    loading={loading}
+                    disabled={disabled} />
                 <InputSuffix>{suffix}</InputSuffix>
                 <Button
                     className="k-input-button"

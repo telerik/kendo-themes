@@ -19,6 +19,7 @@ const states = [
     States.loading,
     States.required,
     States.disabled,
+    States.readonly
 ];
 
 const options = {
@@ -65,6 +66,7 @@ export const NumericTextbox = (
         required,
         loading,
         disabled,
+        readonly,
         showClearButton = defaultProps.showClearButton,
         showSpinButton = defaultProps.showSpinButton,
         ...other
@@ -84,12 +86,23 @@ export const NumericTextbox = (
             required={required}
             loading={loading}
             disabled={disabled}
+            readonly={readonly}
             className={classNames(props.className, NUMERICTEXTBOX_CLASSNAME)}
         >
             <InputInnerInput placeholder={placeholder} value={value} />
-            <InputValidationIcon {...props} />
-            <InputLoadingIcon {...props} />
-            {showClearButton && (<InputClearValue {...props} />)}
+            <InputValidationIcon
+                valid={valid}
+                invalid={invalid}
+                loading={loading}
+                disabled={disabled} />
+            <InputLoadingIcon
+                loading={loading}
+                disabled={disabled} />
+            {showClearButton && <InputClearValue
+                loading={loading}
+                disabled={disabled}
+                readonly={readonly}
+                value={value} />}
             {showSpinButton && (
                 <SpinButton
                     className="k-input-spinner"

@@ -21,6 +21,7 @@ const states = [
     States.loading,
     States.required,
     States.disabled,
+    States.readonly
 ];
 
 const options = {
@@ -68,6 +69,7 @@ export const Combobox = (
         disabled,
         popup,
         opened,
+        readonly,
         ...other
     } = props;
 
@@ -86,13 +88,24 @@ export const Combobox = (
                 required={required}
                 loading={loading}
                 disabled={disabled}
+                readonly={readonly}
                 className={classNames(props.className, COMBOBOX_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerInput placeholder={placeholder} value={value} />
-                <InputValidationIcon {...props} />
-                <InputLoadingIcon {...props} />
-                <InputClearValue {...props} />
+                <InputValidationIcon
+                    valid={valid}
+                    invalid={invalid}
+                    loading={loading}
+                    disabled={disabled} />
+                <InputLoadingIcon
+                    loading={loading}
+                    disabled={disabled} />
+                <InputClearValue
+                    loading={loading}
+                    disabled={disabled}
+                    readonly={readonly}
+                    value={value} />
                 <InputSuffix>{suffix}</InputSuffix>
                 <Button
                     className="k-input-button"
