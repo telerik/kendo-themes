@@ -4,6 +4,7 @@ import { Button } from '../../button';
 import { ColorPalette } from '../../colorpalette';
 import { ColorPreview } from '../../color-preview';
 import { NumericTextbox } from '../../numerictextbox';
+import { PALETTEPRESETS } from '../../colorpalette/colorpalette-presets';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -126,7 +127,7 @@ root.render(
                         </div>
                     </div>
                     <div className="k-coloreditor-views k-vstack">
-                        <ColorPalette palette="office"></ColorPalette>
+                        <ColorPalette palette={PALETTEPRESETS.office}></ColorPalette>
                     </div>
                     <ActionButtons className="k-coloreditor-footer" alignment="end">
                         <Button className="k-coloreditor-cancel">Cancel</Button>

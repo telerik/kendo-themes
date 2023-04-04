@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { ColorPalette } from '../../colorpalette';
+import { PALETTEPRESETS } from '../colorpalette-presets';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -15,19 +16,19 @@ root.render(
             <span>Clarity</span>
 
             <section>
-                <ColorPalette palette="office"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.office}></ColorPalette>
             </section>
 
             <section>
-                <ColorPalette palette="apex"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.apex}></ColorPalette>
             </section>
 
             <section>
-                <ColorPalette palette="austin"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.austin}></ColorPalette>
             </section>
 
             <section>
-                <ColorPalette palette="clarity"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.clarity}></ColorPalette>
             </section>
 
             <span>Slipstream</span>
@@ -36,19 +37,19 @@ root.render(
             <span>Hardcover</span>
 
             <section>
-                <ColorPalette palette="slipstream"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.slipstream}></ColorPalette>
             </section>
 
             <section>
-                <ColorPalette palette="metro"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.metro}></ColorPalette>
             </section>
 
             <section>
-                <ColorPalette palette="flow"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.flow}></ColorPalette>
             </section>
 
             <section>
-                <ColorPalette palette="hardcover"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.hardcover}></ColorPalette>
             </section>
 
             <span>Trek</span>
@@ -57,22 +58,30 @@ root.render(
             <span>Monochrome</span>
 
             <section>
-                <ColorPalette palette="trek"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.trek}></ColorPalette>
             </section>
 
             <section>
-                <ColorPalette palette="verve"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.verve}></ColorPalette>
             </section>
 
             <section>
 
-                <ColorPalette palette="basic"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.basic}></ColorPalette>
             </section>
 
             <section>
-                <ColorPalette palette="monochrome"></ColorPalette>
+                <ColorPalette palette={PALETTEPRESETS.monochrome}></ColorPalette>
             </section>
 
+            <span>Custom</span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <section>
+                <ColorPalette palette={[ "#37399b", "#a81c85", "#0ab3cc", "#2f7d20", "#a21616" ]}></ColorPalette>
+            </section>
         </div>
     </>
 );
