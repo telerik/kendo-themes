@@ -1,6 +1,11 @@
-@include exports("dateinput/layout") {
+@mixin kendo-date-input--layout-base() {
 
     // Date input
     .k-dateinput {}
 
+}
+
+
+@mixin kendo-date-input--layout() {
+    @include kendo-date-input--layout-base();
 }

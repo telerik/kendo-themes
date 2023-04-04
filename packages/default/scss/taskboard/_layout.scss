@@ -1,4 +1,4 @@
-@include exports("taskboard/layout") {
+@mixin kendo-task-board--layout-base() {
 
     // TaskBoard
     .k-taskboard {
@@ -211,10 +211,10 @@
         position: relative;
     }
 
-}
 
-@include exports( "taskboard/layout/rtl" ) {
 
+
+    // RTL
     .k-taskboard-card.k-taskboard-card-category {
         .k-rtl &,
         &.k-rtl,
@@ -225,4 +225,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-task-board--layout() {
+    @include kendo-task-board--layout-base();
 }

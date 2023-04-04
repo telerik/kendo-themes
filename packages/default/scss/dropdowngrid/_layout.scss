@@ -1,9 +1,10 @@
-@include exports("dropdowngrid/layout") {
+@mixin kendo-dropdown-grid--layout-base() {
 
-    // DropdownGrid
+    // Dropdown grid
     .k-dropdown-grid {}
 
-    // DropdowGrid Popup
+
+    // Dropdown grid popup
     .k-dropdowngrid-popup {
         overflow: hidden;
     }
@@ -11,4 +12,9 @@
         border-width: 0;
     }
 
+}
+
+
+@mixin kendo-dropdown-grid--layout() {
+    @include kendo-dropdown-grid--layout-base();
 }

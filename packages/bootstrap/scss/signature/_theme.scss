@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/signature/_theme.scss";
+
+
+@mixin kendo-signature--theme() {
+    @include kendo-signature--theme-base();
+}

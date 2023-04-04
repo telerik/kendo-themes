@@ -1,4 +1,4 @@
-@include exports("editor/layout") {
+@mixin kendo-editor--layout-base() {
 
     // Base
     .k-editor {
@@ -132,7 +132,7 @@
     }
 
 
-    // Тoolbar
+    // Toolbar
     .k-editor-toolbar {
         border-width: 0 0 $kendo-toolbar-border-width 0;
         flex-shrink: 0;
@@ -345,9 +345,9 @@
             align-items: center;
         }
     }
-}
 
-@include exports( "editor/dialog/layout" ) {
+
+
 
     // Text area in editor dialog
     .k-textarea.k-editor-textarea {
@@ -356,13 +356,11 @@
         resize: none;
     }
 
-}
 
 
 
-@include exports( "editor/filebrowser/layout" ) {
-
-
+    // File browser
+    // TODO: replace with file manager component
     .k-filebrowser {
         max-width: 100%;
 
@@ -492,13 +490,10 @@
         }
     }
 
-}
 
 
 
-
-@include exports( "editor/table-wizard/layout" ) {
-
+    // Table wizard dialog
     .k-editor-table-wizard-window {
 
         // Tabstrip wrapper
@@ -658,4 +653,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-editor--layout() {
+    @include kendo-editor--layout-base();
 }

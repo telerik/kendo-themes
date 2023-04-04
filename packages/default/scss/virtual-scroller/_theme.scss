@@ -1,3 +1,11 @@
-@include exports( "virtual-scroller/theme" ) {
+@mixin kendo-virtual-scroller--theme-base() {
 
+    // Virtual scroller
+    .k-virtual-scroller {}
+
+}
+
+
+@mixin kendo-virtual-scroller--theme() {
+    @include kendo-virtual-scroller--theme-base();
 }

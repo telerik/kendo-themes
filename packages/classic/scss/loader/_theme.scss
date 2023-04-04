@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/loader/_theme.scss";
+
+
+@mixin kendo-loader--theme() {
+    @include kendo-loader--theme-base();
+}

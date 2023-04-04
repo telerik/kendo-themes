@@ -1,4 +1,20 @@
-// TODO: docs
+/// This is equivalent to `grid-template-rows: repeat(1, minmax(0, 1fr));`.
+/// @example grid-template-rows: repeat(1, minmax(0, 1fr));
+/// @name .k-grid-rows-1
+/// @group grid-template-rows
+/// @contextType css
+
+/// This is equivalent to `grid-template-rows: repeat(2, minmax(0, 1fr));`.
+/// @example grid-template-rows: repeat(2, minmax(0, 1fr));
+/// @name .k-grid-rows-2
+/// @group grid-template-rows
+/// @contextType css
+
+/// This is equivalent to `grid-template-rows: none;`.
+/// @example grid-template-rows: none;
+/// @name .k-grid-rows-none
+/// @group grid-template-rows
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--grid-template-rows() {
 

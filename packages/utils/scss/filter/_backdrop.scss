@@ -1,4 +1,32 @@
-// TODO: docs
+/// This is equivalent to `backdrop-filter: blur(8px);`.
+/// @example backdrop-filter: blur(8px);
+/// @name .k-backdrop-blur
+/// @group backdrop-blur
+/// @contextType css
+
+/// This is equivalent to `backdrop-filter: blur(0);`.
+/// @example backdrop-filter: blur(0);
+/// @name .k-backdrop-blur-none
+/// @group backdrop-blur
+/// @contextType css
+
+/// This is equivalent to `backdrop-filter: blur(4px);`.
+/// @example backdrop-filter: blur(4px);
+/// @name .k-backdrop-blur-sm
+/// @group backdrop-blur
+/// @contextType css
+
+/// This is equivalent to `backdrop-filter: blur(6px);`.
+/// @example backdrop-filter: blur(6px);
+/// @name .k-backdrop-blur-md
+/// @group backdrop-blur
+/// @contextType css
+
+/// This is equivalent to `backdrop-filter: blur(12px);`.
+/// @example backdrop-filter: blur(12px);
+/// @name .k-backdrop-blur-lg
+/// @group backdrop-blur
+/// @contextType css
 
 @mixin kendo-utils--filter--backdrop() {
 

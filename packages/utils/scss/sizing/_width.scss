@@ -1,4 +1,146 @@
-// TODO: docs
+/// This is equivalent to `width: 0;`.
+/// @example width: 0;
+/// @name .k-w-0
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: 1px;`.
+/// @example width: 1px;
+/// @name .k-w-1px
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: 0.25rem;`.
+/// @example width: 0.25rem;
+/// @name .k-w-1
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 100%;`.
+/// @example min-width: 100%;
+/// @name .k-w-full
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: 100vw;`.
+/// @example width: 100vw;
+/// @name .k-w-screen
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: min-content;`.
+/// @example width: min-content;
+/// @name .k-w-min
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: max-content;`.
+/// @example width: max-content;
+/// @name .k-w-max
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `width: fit-content;`.
+/// @example width: fit-content;
+/// @name .k-w-fit
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 0;`.
+/// @example min-width: 0;
+/// @name .k-min-w-0
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 1px;`.
+/// @example min-width: 1px;
+/// @name .k-min-w-1px
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 0.25rem;`.
+/// @example min-width: 0.25rem;
+/// @name .k-min-w-1
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 100%;`.
+/// @example min-width: 100%;
+/// @name .k-min-w-full
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: 100vw;`.
+/// @example min-width: 100vw;
+/// @name .k-min-w-screen
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: min-content;`.
+/// @example min-width: min-content;
+/// @name .k-min-w-min
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: max-content;`.
+/// @example min-width: max-content;
+/// @name .k-min-w-max
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `min-width: fit-content;`.
+/// @example min-width: fit-content;
+/// @name .k-min-w-fit
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 0;`.
+/// @example max-width: 0;
+/// @name .k-max-w-0
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 1px;`.
+/// @example max-width: 1px;
+/// @name .k-max-w-1px
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 0.25rem;`.
+/// @example max-width: 0.25rem;
+/// @name .k-max-w-1
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 100%;`.
+/// @example max-width: 100%;
+/// @name .k-max-w-full
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: 100vh;`.
+/// @example max-width: 100vh;
+/// @name .k-max-w-screen
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: min-content;`.
+/// @example max-width: min-content;
+/// @name .k-max-w-min
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: max-content;`.
+/// @example max-width: max-content;
+/// @name .k-max-w-max
+/// @group width
+/// @contextType css
+
+/// This is equivalent to `max-width: fit-content;`.
+/// @example max-width: fit-content;
+/// @name .k-max-w-fit
+/// @group width
+/// @contextType css
 
 @mixin kendo-utils--sizing--width() {
 

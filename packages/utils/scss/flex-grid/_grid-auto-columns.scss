@@ -1,4 +1,26 @@
-// TODO: docs
+/// This is equivalent to `grid-auto-columns: auto;`.
+/// @example grid-auto-columns: auto;
+/// @name .k-grid-auto-cols-auto
+/// @group grid-auto-columns
+/// @contextType css
+
+/// This is equivalent to `grid-auto-columns: min-content;`.
+/// @example grid-auto-columns: min-content;
+/// @name .k-grid-auto-cols-min
+/// @group grid-auto-columns
+/// @contextType css
+
+/// This is equivalent to `grid-auto-columns: max-content;`.
+/// @example grid-auto-columns: max-content;
+/// @name .k-grid-auto-cols-max
+/// @group grid-auto-columns
+/// @contextType css
+
+/// This is equivalent to `grid-auto-columns: minmax( 0, 1fr );`.
+/// @example grid-auto-columns: minmax( 0, 1fr );
+/// @name .k-grid-auto-cols-fr
+/// @group grid-auto-columns
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--grid-auto-columns() {
 

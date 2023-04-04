@@ -1,4 +1,26 @@
-// TODO: docs
+/// This is equivalent to `transform: skewX(0deg);`.
+/// @example transform: skewX(0deg);
+/// @name .k-skew-x-0
+/// @group skew
+/// @contextType css
+
+/// This is equivalent to `transform: skewX(1deg);`.
+/// @example transform: skewX(1deg);
+/// @name .k-skew-x-1
+/// @group skew
+/// @contextType css
+
+/// This is equivalent to `transform: skewY(0deg);`.
+/// @example transform: skewY(0deg);
+/// @name .k-skew-y-0
+/// @group skew
+/// @contextType css
+
+/// This is equivalent to `transform: skewY(1deg);`.
+/// @example transform: skewY(1deg);
+/// @name .k-skew-y-1
+/// @group skew
+/// @contextType css
 
 // sass-lint:disable function-name-format
 @function __skew-x( $val ) {

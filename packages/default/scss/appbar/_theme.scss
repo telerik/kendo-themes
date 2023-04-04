@@ -1,4 +1,4 @@
-@include exports("appbar/theme") {
+@mixin kendo-appbar--theme-base() {
 
     .k-appbar {
         @include box-shadow( $kendo-appbar-box-shadow );
@@ -24,4 +24,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-appbar--theme() {
+    @include kendo-appbar--theme-base();
 }

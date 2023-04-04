@@ -1,4 +1,32 @@
-// TODO: docs
+/// This is equivalent to `outline-offset: 1px;`.
+/// @example outline-offset: 1px;
+/// @name .k-outline-offset
+/// @group outline-offset
+/// @contextType css
+
+/// This is equivalent to `outline-offset: 0;`.
+/// @example outline-offset: 0;
+/// @name .k-outline-offset-0
+/// @group outline-offset
+/// @contextType css
+
+/// This is equivalent to `outline-offset: 2px;`.
+/// @example outline-offset: 2px;
+/// @name .k-outline-offset-2
+/// @group outline-offset
+/// @contextType css
+
+/// This is equivalent to `outline-offset: 4px;`.
+/// @example outline-offset: 4px;
+/// @name .k-outline-offset-4
+/// @group outline-offset
+/// @contextType css
+
+/// This is equivalent to `outline-offset: 8px;`.
+/// @example outline-offset: 8px;
+/// @name .k-outline-offset-8
+/// @group outline-offset
+/// @contextType css
 
 @mixin kendo-utils--border--outline-offset() {
 

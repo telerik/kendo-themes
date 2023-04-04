@@ -1,6 +1,8 @@
 @import "@progress/kendo-theme-default/scss/input/_layout.scss";
 
-@include exports( "input/layout/bootstrap" ) {
+@mixin kendo-input--layout() {
+
+    @include kendo-input--layout-base();
 
     // Input, Textbox
     .k-textbox {

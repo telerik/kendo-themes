@@ -1,4 +1,4 @@
-@include exports( "list/theme" ) {
+@mixin kendo-list--theme-base() {
 
     // List
     .k-list {
@@ -88,4 +88,9 @@
         color: $kendo-list-no-data-text;
     }
 
+}
+
+
+@mixin kendo-list--theme() {
+    @include kendo-list--theme-base();
 }

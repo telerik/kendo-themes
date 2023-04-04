@@ -3,7 +3,7 @@ $ki-icon-size: $kendo-icon-size;
 
 @import "@progress/kendo-font-icons/scss/index.scss";
 
-@include exports( "icons/layout" ) {
+@mixin kendo-icon--layout-base() {
 
     @include kendo-icon-styles();
 
@@ -80,4 +80,9 @@ $ki-icon-size: $kendo-icon-size;
     .k-image {
         display: inline-block;
     }
+}
+
+
+@mixin kendo-icon--layout() {
+    @include kendo-icon--layout-base();
 }

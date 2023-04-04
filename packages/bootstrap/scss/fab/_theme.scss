@@ -1,4 +1,7 @@
-@include exports( "fab/theme/bootstrap" ) {
+@import "@progress/kendo-theme-default/scss/fab/_theme.scss";
+
+
+@mixin kendo-fab--theme() {
 
     // Normal state
     @each $name, $color in $kendo-fab-theme-colors {

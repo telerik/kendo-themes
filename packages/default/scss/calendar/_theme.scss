@@ -1,8 +1,4 @@
-// Styling of today date
-// color - mark the today date with a different text color
-// box - instead of changing the text color, show a box around the date
-
-@include exports("calendar/theme") {
+@mixin kendo-calendar--theme-base() {
 
     .k-calendar {
         @include fill(
@@ -155,13 +151,10 @@
         );
     }
 
-}
 
 
 
-
-@include exports( "multiview-calendar/theme" ) {
-
+    // Multiview calendar
     .k-calendar {
 
         $kendo-calendar-range-gap: 1px !default;
@@ -220,4 +213,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-calendar--theme() {
+    @include kendo-calendar--theme-base();
 }

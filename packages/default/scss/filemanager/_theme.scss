@@ -1,4 +1,4 @@
-@include exports( "filemanager/theme") {
+@mixin kendo-file-manager--theme-base() {
 
     // Filemanager
     .k-filemanager {
@@ -106,4 +106,9 @@
 
     }
 
+}
+
+
+@mixin kendo-file-manager--theme() {
+    @include kendo-file-manager--theme-base();
 }

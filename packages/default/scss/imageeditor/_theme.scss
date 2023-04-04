@@ -1,4 +1,4 @@
-@include exports("imageeditor/theme") {
+@mixin kendo-image-editor--theme-base() {
 
     // Image Editor
     .k-imageeditor {
@@ -48,4 +48,9 @@
         );
     }
 
+}
+
+
+@mixin kendo-image-editor--theme() {
+    @include kendo-image-editor--theme-base();
 }

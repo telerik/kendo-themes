@@ -1,4 +1,32 @@
-// TODO: docs
+/// This is equivalent to `outline-width: 1px;`.
+/// @example outline-width: 1px;
+/// @name .k-outline
+/// @group outline-width
+/// @contextType css
+
+/// This is equivalent to `outline-width: 0;`.
+/// @example outline-width: 0;
+/// @name .k-outline-0
+/// @group outline-width
+/// @contextType css
+
+/// This is equivalent to `outline-width: 2px;`.
+/// @example outline-width: 2px;
+/// @name .k-outline-2
+/// @group outline-width
+/// @contextType css
+
+/// This is equivalent to `outline-width: 4px;`.
+/// @example outline-width: 4px;
+/// @name .k-outline-4
+/// @group outline-width
+/// @contextType css
+
+/// This is equivalent to `outline-width: 8px;`.
+/// @example outline-width: 8px;
+/// @name .k-outline-8
+/// @group outline-width
+/// @contextType css
 
 @mixin kendo-utils--border--outline-width() {
 

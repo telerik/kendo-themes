@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "filter",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin filter-styles() {
+@mixin kendo-filter--styles() {
     @include module-render( "filter" ) {
         @include kendo-filter--layout();
-        @include kendo-filter--extended-layout();
         @include kendo-filter--theme();
-        @include kendo-filter--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-filter--styles();
 }

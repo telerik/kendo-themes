@@ -577,8 +577,8 @@ $kendo-utils: (
         end: end,
         flex-start: flex-start,
         flex-end: flex-end,
-        self-start: flex-start,
-        self-end: flex-end,
+        self-start: self-start,
+        self-end: self-end,
         baseline: baseline
     ),
     "place-self": (
@@ -586,12 +586,12 @@ $kendo-utils: (
         normal: normal,
         stretch: stretch,
         center: center,
-        start: flex-start,
-        end: flex-end,
+        start: start,
+        end: end,
         flex-start: flex-start,
         flex-end: flex-end,
-        self-start: flex-start,
-        self-end: flex-end,
+        self-start: self-start,
+        self-end: self-end,
         baseline: baseline
     ),
 

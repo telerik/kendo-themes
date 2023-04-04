@@ -1,4 +1,38 @@
-// TODO: docs
+/// This is equivalent to `outline-style: solid;`.
+/// @example outline-style: solid;
+/// @name .k-outline-solid
+/// @group outline-style
+/// @contextType css
+
+/// This is equivalent to `outline-style: dashed;`.
+/// @example outline-style: dashed;
+/// @name .k-outline-dashed
+/// @group outline-style
+/// @contextType css
+
+/// This is equivalent to `outline-style: dotted;`.
+/// @example outline-style: dotted;
+/// @name .k-outline-dotted
+/// @group outline-style
+/// @contextType css
+
+/// This is equivalent to `outline-style: double;`.
+/// @example outline-style: double;
+/// @name .k-outline-double
+/// @group outline-style
+/// @contextType css
+
+/// This is equivalent to `outline-style: hidden;`.
+/// @example outline-style: hidden;
+/// @name .k-outline-hidden
+/// @group outline-style
+/// @contextType css
+
+/// This is equivalent to `outline-style: none;`.
+/// @example outline-style: none;
+/// @name .k-outline-none
+/// @group outline-style
+/// @contextType css
 
 @mixin kendo-utils--border--outline-style() {
 

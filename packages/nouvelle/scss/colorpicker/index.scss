@@ -1,6 +1,9 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
-    name: "colorpicker",
+    name: "color-picker",
     dependencies: (
         "input",
         "icon",
@@ -17,15 +20,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin colorpicker-styles() {
+@mixin kendo-color-picker--styles() {
     @include module-render( "colorpicker" ) {
-        @include kendo-colorpicker--layout();
-        @include kendo-colorpicker--extended-layout();
-        @include kendo-colorpicker--theme();
-        @include kendo-colorpicker--extended-theme();
+        @include kendo-color-picker--layout();
+        @include kendo-color-picker--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-color-picker--styles();
 }

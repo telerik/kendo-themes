@@ -1,4 +1,4 @@
-@include exports("treelist/layout") {
+@mixin kendo-treelist--layout-base() {
 
     // Base
     .k-treelist {
@@ -100,4 +100,9 @@
         margin-inline: .5em;
     }
 
+}
+
+
+@mixin kendo-treelist--layout() {
+    @include kendo-treelist--layout-base();
 }

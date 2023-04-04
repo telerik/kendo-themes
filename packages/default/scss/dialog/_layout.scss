@@ -1,4 +1,4 @@
-@include exports("dialog/layout") {
+@mixin kendo-dialog--layout-base() {
 
     .k-dialog-wrapper {
         display: flex;
@@ -66,4 +66,9 @@
         overflow: hidden;
     }
 
+}
+
+
+@mixin kendo-dialog--layout() {
+    @include kendo-dialog--layout-base();
 }

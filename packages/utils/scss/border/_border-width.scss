@@ -1,4 +1,214 @@
-// TODO: docs
+/// This is equivalent to `border-width: 1px;`.
+/// @example border-width: 1px;
+/// @name .k-border
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-width: 0;`.
+/// @example border-width: 0;
+/// @name .k-border-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-width: 2px;`.
+/// @example border-width: 2px;
+/// @name .k-border-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-width: 4px;`.
+/// @example border-width: 4px;
+/// @name .k-border-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-width: 8px;`.
+/// @example border-width: 8px;
+/// @name .k-border-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 1px;`.
+/// @example border-top-width: 1px;
+/// @name .k-border-t
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 0px;`.
+/// @example border-top-width: 0px;
+/// @name .k-border-t-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 2px;`.
+/// @example border-top-width: 2px;
+/// @name .k-border-t-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 4px;`.
+/// @example border-top-width: 4px;
+/// @name .k-border-t-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-top-width: 8px;`.
+/// @example border-top-width: 8px;
+/// @name .k-border-t-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 1px;`.
+/// @example border-right-width: 1px;
+/// @name .k-border-r
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 0px;`.
+/// @example border-right-width: 0px;
+/// @name .k-border-r-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 2px;`.
+/// @example border-right-width: 2px;
+/// @name .k-border-r-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 4px;`.
+/// @example border-right-width: 4px;
+/// @name .k-border-r-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-right-width: 8px;`.
+/// @example border-right-width: 8px;
+/// @name .k-border-r-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 1px;`.
+/// @example border-bottom-width: 1px;
+/// @name .k-border-b
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 0px;`.
+/// @example border-bottom-width: 0px;
+/// @name .k-border-b-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 2px;`.
+/// @example border-bottom-width: 2px;
+/// @name .k-border-b-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 4px;`.
+/// @example border-bottom-width: 4px;
+/// @name .k-border-b-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-bottom-width: 8px;`.
+/// @example border-bottom-width: 8px;
+/// @name .k-border-b-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 1px;`.
+/// @example border-left-width: 1px;
+/// @name .k-border-l
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 0px;`.
+/// @example border-left-width: 0px;
+/// @name .k-border-l-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 2px;`.
+/// @example border-left-width: 2px;
+/// @name .k-border-l-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 4px;`.
+/// @example border-left-width: 4px;
+/// @name .k-border-l-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-left-width: 8px;`.
+/// @example border-left-width: 8px;
+/// @name .k-border-l-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 1px;`.
+/// @example border-inline-width: 1px;
+/// @name .k-border-x
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 0px;`.
+/// @example border-inline-width: 0px;
+/// @name .k-border-x-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 2px;`.
+/// @example border-inline-width: 2px;
+/// @name .k-border-x-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 4px;`.
+/// @example border-inline-width: 4px;
+/// @name .k-border-x-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-inline-width: 8px;`.
+/// @example border-inline-width: 8px;
+/// @name .k-border-x-8
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 1px;`.
+/// @example border-block-width: 1px;
+/// @name .k-border-y
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 0px;`.
+/// @example border-block-width: 0px;
+/// @name .k-border-y-0
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 2px;`.
+/// @example border-block-width: 2px;
+/// @name .k-border-y-2
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 4px;`.
+/// @example border-block-width: 4px;
+/// @name .k-border-y-4
+/// @group border-width
+/// @contextType css
+
+/// This is equivalent to `border-block-width: 8px;`.
+/// @example border-block-width: 8px;
+/// @name .k-border-y-8
+/// @group border-width
+/// @contextType css
+
+
 
 @mixin kendo-utils--border--border-width() {
 

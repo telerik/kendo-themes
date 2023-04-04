@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "listbox",
@@ -14,15 +17,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin listbox-styles() {
+@mixin kendo-listbox--styles() {
     @include module-render( "listbox" ) {
         @include kendo-listbox--layout();
-        @include kendo-listbox--extended-layout();
         @include kendo-listbox--theme();
-        @include kendo-listbox--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-listbox--styles();
 }

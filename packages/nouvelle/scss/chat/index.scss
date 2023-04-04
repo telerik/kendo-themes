@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "chat",
@@ -18,15 +21,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin chat-styles() {
+@mixin kendo-chat--styles() {
     @include module-render( "chat" ) {
         @include kendo-chat--layout();
-        @include kendo-chat--extended-layout();
         @include kendo-chat--theme();
-        @include kendo-chat--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-chat--styles();
 }

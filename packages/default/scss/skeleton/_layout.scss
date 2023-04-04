@@ -1,4 +1,4 @@
-@include exports("skeleton/layout") {
+@mixin kendo-skeleton--layout-base() {
 
     .k-skeleton {
         display: block;
@@ -28,11 +28,8 @@
         @extend .k-skeleton-text !optional;
     }
 
-}
 
-
-@include exports("skeleton/layout/wave") {
-
+    // Skeleton wave
     @keyframes k-skeleton-wave {
         0% {
             transform: translateX(-100%);
@@ -65,11 +62,9 @@
         }
 
     }
-}
 
 
-@include exports("skeleton/layout/pulse") {
-
+    // Skeleton pulse
     @keyframes k-skeleton-pulse {
         0% {
             opacity: 1;
@@ -90,4 +85,10 @@
         }
 
     }
+
+}
+
+
+@mixin kendo-skeleton--layout() {
+    @include kendo-skeleton--layout-base();
 }

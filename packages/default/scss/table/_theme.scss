@@ -1,4 +1,4 @@
-@include exports( "table/theme" ) {
+@mixin kendo-table--theme-base() {
 
     // Table
     .k-table,
@@ -82,4 +82,9 @@
         background-color: $kendo-table-selected-bg;
     }
 
+}
+
+
+@mixin kendo-table--theme() {
+    @include kendo-table--theme-base();
 }

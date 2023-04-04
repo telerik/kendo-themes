@@ -1,4 +1,4 @@
-@include exports("notification/theme") {
+@mixin kendo-notification--theme-base() {
 
     // Theme
     .k-notification {
@@ -20,4 +20,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-notification--theme() {
+    @include kendo-notification--theme-base();
 }

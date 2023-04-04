@@ -1,4 +1,80 @@
-// TODO: docs
+/// This is equivalent to `align-content: normal;`.
+/// @example align-content: normal;
+/// @name .k-align-content-normal
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: stretch;`.
+/// @example align-content: stretch;
+/// @name .k-align-content-stretch
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: center;`.
+/// @example align-content: center;
+/// @name .k-align-content-center
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: start;`.
+/// @example align-content: start;
+/// @name .k-align-content-start
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: end;`.
+/// @example align-content: end;
+/// @name .k-align-content-end
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: flex-start;`.
+/// @example align-content: flex-start;
+/// @name .k-align-content-flex-start
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: flex-end;`.
+/// @example align-content: flex-end;
+/// @name .k-align-content-flex-end
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: baseline;`.
+/// @example align-content: baseline;
+/// @name .k-align-content-baseline
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: first baseline;`.
+/// @example align-content: first baseline;
+/// @name .k-align-content-first-baseline
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: last baseline;`.
+/// @example align-content: last baseline;
+/// @name .k-align-content-last-baseline
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: space-between;`.
+/// @example align-content: space-between;
+/// @name .k-align-content-between
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: space-around;`.
+/// @example align-content: space-around;
+/// @name .k-align-content-around
+/// @group align-content
+/// @contextType css
+
+/// This is equivalent to `align-content: space-evenly;`.
+/// @example align-content: space-evenly;
+/// @name .k-align-content-evenly
+/// @group align-content
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--align-content() {
 

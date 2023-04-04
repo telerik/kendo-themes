@@ -1,9 +1,11 @@
-/// This is equivalent to `flex-shrink: 1`. It determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row.
+/// This is equivalent to `flex-shrink: 1;`.
+/// @example flex-shrink: 1;
 /// @name .k-flex-shrink
 /// @group flex-shrink
 /// @contextType css
 
-/// This is equivalent to `flex-shrink: 0`. The item will not shrink.
+/// This is equivalent to `flex-shrink: 0;`.
+/// @example flex-shrink: 0;
 /// @name .k-flex-shrink-0
 /// @group flex-shrink
 /// @contextType css

@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/pivotgrid/_layout.scss";
 
-@include exports ("pivotgrid/layout/material/legacy") {
+
+@mixin kendo-pivotgrid--layout() {
+
+    @include kendo-pivotgrid--layout-base();
 
     .k-pivot-rowheaders .k-grid tr .k-grid-footer {
         border-bottom-width: 0;

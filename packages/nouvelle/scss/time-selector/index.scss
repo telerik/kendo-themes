@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "time-selector",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin time-selector-styles() {
+@mixin kendo-time-selector--styles() {
     @include module-render( "time-selector" ) {
         @include kendo-time-selector--layout();
-        @include kendo-time-selector--extended-layout();
         @include kendo-time-selector--theme();
-        @include kendo-time-selector--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-time-selector--styles();
 }

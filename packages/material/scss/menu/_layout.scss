@@ -1,7 +1,11 @@
 @import "@progress/kendo-theme-default/scss/menu/_layout.scss";
 
-@include exports("menu/layout/material") {
 
+@mixin kendo-menu--layout() {
+
+    @include kendo-menu--layout-base();
+
+    // Menubar
     .k-menu:not(.k-context-menu) {
 
         // Root items
@@ -25,4 +29,5 @@
             height: calc( #{$kendo-line-height-em} + #{k-map-get( $kendo-spacing, 1 )});
         }
     }
+
 }

@@ -1,4 +1,74 @@
-// TODO: docs
+/// This is equivalent to `align-items: normal;`.
+/// @example align-items: normal;
+/// @name .k-align-items-normal
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: stretch;`.
+/// @example align-items: stretch;
+/// @name .k-align-items-stretch
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: center;`.
+/// @example align-items: center;
+/// @name .k-align-items-stretch
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: start;`.
+/// @example align-items: start;
+/// @name .k-align-items-start
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: end;`.
+/// @example align-items: end;
+/// @name .k-align-items-end
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: flex-start;`.
+/// @example align-items: flex-start;
+/// @name .k-align-items-flex-start
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: flex-end;`.
+/// @example align-items: flex-end;
+/// @name .k-align-items-flex-end
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: baseline;`.
+/// @example align-items: baseline;
+/// @name .k-align-items-baseline
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: first baseline;`.
+/// @example align-items: first baseline;
+/// @name .k-align-items-first-baseline
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: last baseline;`.
+/// @example align-items: last baseline;
+/// @name .k-align-items-last-baseline
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: self-start;`.
+/// @example align-items: self-start;
+/// @name .k-align-items-self-start
+/// @group align-items
+/// @contextType css
+
+/// This is equivalent to `align-items: self-end;`.
+/// @example align-items: self-end;
+/// @name .k-align-items-self-end
+/// @group align-items
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--align-items() {
 

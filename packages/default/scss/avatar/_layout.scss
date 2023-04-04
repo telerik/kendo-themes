@@ -1,4 +1,4 @@
-@include exports( "avatar/layout" ) {
+@mixin kendo-avatar--layout-base() {
 
     // Avatar
     .k-avatar {
@@ -75,3 +75,7 @@
 
 }
 
+
+@mixin kendo-avatar--layout() {
+    @include kendo-avatar--layout-base();
+}

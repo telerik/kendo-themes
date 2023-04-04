@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/floating-label/_layout.scss";
+
+
+@mixin kendo-floating-label--layout() {
+    @include kendo-floating-label--layout-base();
+}

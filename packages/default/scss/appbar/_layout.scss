@@ -1,4 +1,4 @@
-@include exports("appbar/layout") {
+@mixin kendo-appbar--layout-base() {
 
     // Appbar
     .k-appbar {
@@ -109,4 +109,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-appbar--layout() {
+    @include kendo-appbar--layout-base();
 }

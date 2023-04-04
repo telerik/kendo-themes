@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "tooltip",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin tooltip-styles() {
+@mixin kendo-tooltip--styles() {
     @include module-render( "tooltip" ) {
         @include kendo-tooltip--layout();
-        @include kendo-tooltip--extended-layout();
         @include kendo-tooltip--theme();
-        @include kendo-tooltip--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-tooltip--styles();
 }

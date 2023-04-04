@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/stepper/_layout.scss";
 
-@include exports("stepper/layout/material") {
+
+@mixin kendo-stepper--layout() {
+
+    @include kendo-stepper--layout-base();
 
     // Stepper
     .k-stepper {}

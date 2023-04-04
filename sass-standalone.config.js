@@ -18,6 +18,10 @@ module.exports = {
         {
             cwd: 'packages/material',
             entry: [ 'scss/!(common|styling)*/_index.scss' ]
+        },
+        {
+            cwd: 'packages/nouvelle',
+            entry: [ 'scss/*/index.scss' ]
         }
     ]
 };

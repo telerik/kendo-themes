@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/listview/_theme.scss";
 
-@include exports( "listview/theme/material" ) {
+
+@mixin kendo-listview--theme() {
+
+    @include kendo-listview--theme-base();
 
     // Listview
     .k-listview {}

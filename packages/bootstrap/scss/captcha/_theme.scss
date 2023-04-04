@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/captcha/_theme.scss";
+
+
+@mixin kendo-captcha--theme() {
+    @include kendo-captcha--theme-base();
+}

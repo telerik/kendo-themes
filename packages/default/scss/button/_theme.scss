@@ -1,4 +1,4 @@
-@include exports( "button/theme" ) {
+@mixin kendo-button--theme-base() {
 
     // Solid button
     .k-button-solid-base {
@@ -276,4 +276,9 @@
     .k-button-group {}
 
 
+}
+
+
+@mixin kendo-button--theme() {
+    @include kendo-button--theme-base();
 }

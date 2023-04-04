@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/button/_layout.scss";
 
-@include exports("button/layout/material") {
+
+@mixin kendo-button--layout() {
+
+    @include kendo-button--layout-base();
 
     // Button
     .k-button {

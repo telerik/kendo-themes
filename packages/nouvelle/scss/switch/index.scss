@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "switch",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin switch-styles() {
+@mixin kendo-switch--styles() {
     @include module-render( "switch" ) {
         @include kendo-switch--layout();
-        @include kendo-switch--extended-layout();
         @include kendo-switch--theme();
-        @include kendo-switch--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-switch--styles();
 }

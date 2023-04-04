@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/input/_layout.scss";
 
-@include exports("input/layout/material") {
+
+@mixin kendo-input--layout() {
+
+    @include kendo-input--layout-base();
 
     // Fill mode
     .k-input-solid,

@@ -1,5 +1,4 @@
-// TODO: modal variables
-@include exports("scheduler/layout") {
+@mixin kendo-scheduler--layout-base() {
 
     // Layout
     .k-scheduler {
@@ -36,7 +35,7 @@
         }
     }
 
-    // Commmon
+    // Common
     .k-scheduler-table {
         width: 100%;
         max-width: none;
@@ -668,12 +667,7 @@
     kendo-scheduler .k-recurrence-editor {
         display: block;
     }
-}
 
-
-
-
-@include exports("scheduler-views/layout") {
 
     // Day view
     .k-scheduler-dayview {}
@@ -850,11 +844,9 @@
         }
     }
 
-}
 
 
-@include exports("scheduler-tooltip/layout") {
-
+    // Scheduler tooltip
     .k-scheduler-tooltip {
         padding-block: $kendo-scheduler-tooltip-padding-y;
         padding-inline: $kendo-scheduler-tooltip-padding-x;
@@ -910,11 +902,9 @@
         }
     }
 
-}
 
 
-@include exports("scheduler-edit-form/layout") {
-
+    // Scheduler edit dialog
     .k-scheduler-edit-dialog {
         .k-dialog {
             max-height: 100vh;
@@ -959,13 +949,9 @@
 
     }
 
-}
 
 
-
-
-@include exports("scheduler/rtl") {
-
+    // Scheduler rtl
     .k-rtl {
         .k-scheduler-header th,
         .k-scheduler-table td {
@@ -1076,12 +1062,6 @@
             }
         }
     }
-}
-
-
-
-
-@include exports("scheduler/layout/compatibility") {
 
     .k-safari {
         .k-scheduler-tooltip .k-tooltip-event:not(:last-child) {
@@ -1094,4 +1074,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-scheduler--layout() {
+    @include kendo-scheduler--layout-base();
 }

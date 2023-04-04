@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/notification/_layout.scss";
+
+
+@mixin kendo-notification--layout() {
+    @include kendo-notification--layout-base();
+}

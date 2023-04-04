@@ -1,6 +1,9 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
-    name: "dropdowngrid",
+    name: "dropdown-grid",
     dependencies: (
         "input",
         "icon",
@@ -18,15 +21,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin dropdowngrid-styles() {
-    @include module-render( "dropdowngrid" ) {
-        @include kendo-dropdowngrid--layout();
-        @include kendo-dropdowngrid--extended-layout();
-        @include kendo-dropdowngrid--theme();
-        @include kendo-dropdowngrid--extended-theme();
+@mixin kendo-dropdown-grid--styles() {
+    @include module-render( "dropdown-grid" ) {
+        @include kendo-dropdown-grid--layout();
+        @include kendo-dropdown-grid--theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-dropdown-grid--styles();
 }

@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "autocomplete",
@@ -17,15 +20,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin autocomplete-styles() {
+@mixin kendo-autocomplete--styles() {
     @include module-render( "autocomplete" ) {
         @include kendo-autocomplete--layout();
-        @include kendo-autocomplete--extended-layout();
         @include kendo-autocomplete--theme();
-        @include kendo-autocomplete--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-autocomplete--styles();
 }

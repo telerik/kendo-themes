@@ -1,5 +1,6 @@
-@include exports("panelbar/theme") {
+@mixin kendo-panelbar--theme-base() {
 
+    // Panelbar
     .k-panelbar {
         @include fill(
             $kendo-panelbar-text,
@@ -219,4 +220,9 @@
 
     }
 
+}
+
+
+@mixin kendo-panelbar--theme() {
+    @include kendo-panelbar--theme-base();
 }

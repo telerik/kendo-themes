@@ -1,14 +1,17 @@
-/// This is equivalent to `flex-wrap: wrap`. It allows flex items to wrap as needed onto multiple lines, from top to bottom.
+/// This is equivalent to `flex-wrap: wrap;`.
+/// @example flex-wrap: wrap
 /// @name .k-flex-wrap
 /// @group flex-wrap
 /// @contextType css
 
-/// This is equivalent to `flex-wrap: nowrap`. All flex items will be on one line.
+/// This is equivalent to `flex-wrap: nowrap;`.
+/// @example flex-wrap: nowrap
 /// @name .k-flex-nowrap
 /// @group flex-wrap
 /// @contextType css
 
-/// This is equivalent to `flex-wrap: wrap-reverse`. It allows flex items to wrap as needed onto multiple lines, from bottom to top.
+/// This is equivalent to `flex-wrap: wrap-reverse;`.
+/// @example flex-wrap: wrap-reverse
 /// @name .k-flex-wrap-reverse
 /// @group flex-wrap
 /// @contextType css

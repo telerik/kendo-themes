@@ -1,4 +1,62 @@
-// TODO: docs
+/// This is equivalent to `place-items: normal;`.
+/// @example place-items: normal;
+/// @name .k-place-items-normal
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: stretch;`.
+/// @example place-items: stretch;
+/// @name .k-place-items-stretch
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: center;`.
+/// @example place-items: center;
+/// @name .k-place-items-center
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: start;`.
+/// @example place-items: start;
+/// @name .k-place-items-start
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: end;`.
+/// @example place-items: end;
+/// @name .k-place-items-end
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: flex-start;`.
+/// @example place-items: flex-start;
+/// @name .k-place-items-flex-start
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: flex-end;`.
+/// @example place-items: flex-end;
+/// @name .k-place-items-flex-end
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: self-start;`.
+/// @example place-items: self-start;
+/// @name .k-place-items-self-start
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: self-end;`.
+/// @example place-items: self-end;
+/// @name .k-place-items-self-end
+/// @group place-items
+/// @contextType css
+
+/// This is equivalent to `place-items: baseline;`.
+/// @example place-items: baseline;
+/// @name .k-place-items-baseline
+/// @group place-items
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--place-items() {
 

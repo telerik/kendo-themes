@@ -1,4 +1,4 @@
-@include exports("messagebox/layout") {
+@mixin kendo-messagebox--layout-base() {
 
     // Base
     .k-messagebox {
@@ -18,4 +18,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-messagebox--layout() {
+    @include kendo-messagebox--layout-base();
 }

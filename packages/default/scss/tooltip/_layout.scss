@@ -1,4 +1,4 @@
-@include exports("tooltip/layout") {
+@mixin kendo-tooltip--layout-base() {
 
     .k-tooltip {
         @include border-radius( $kendo-tooltip-border-radius );
@@ -111,4 +111,9 @@
         pointer-events: none;
     }
 
+}
+
+
+@mixin kendo-tooltip--layout() {
+    @include kendo-tooltip--layout-base();
 }

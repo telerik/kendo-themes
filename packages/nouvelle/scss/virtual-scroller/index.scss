@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "virtual-scroller",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin virtual-scroller-styles() {
+@mixin kendo-virtual-scroller--styles() {
     @include module-render( "virtual-scroller" ) {
         @include kendo-virtual-scroller--layout();
-        @include kendo-virtual-scroller--extended-layout();
         @include kendo-virtual-scroller--theme();
-        @include kendo-virtual-scroller--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-virtual-scroller--styles();
 }

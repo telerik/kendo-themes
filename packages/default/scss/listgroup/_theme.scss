@@ -1,5 +1,6 @@
-@include exports( "listgroup/theme" ) {
+@mixin kendo-listgroup--theme-base() {
 
+    // Listgroup
     .k-listgroup {
         @include fill(
             $kendo-listgroup-text,
@@ -8,4 +9,9 @@
         );
     }
 
+}
+
+
+@mixin kendo-listgroup--theme() {
+    @include kendo-listgroup--theme-base();
 }

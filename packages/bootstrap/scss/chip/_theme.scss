@@ -1,6 +1,8 @@
 @import "@progress/kendo-theme-default/scss/chip/_theme.scss";
 
-@include exports( "chip/theme/bootstrap" ) {
+@mixin kendo-chip--theme() {
+
+    @include kendo-chip--theme-base();
 
     @each $name, $color in $kendo-chip-theme-colors {
         .k-chip-outline-#{$name} {
@@ -23,4 +25,5 @@
             }
         }
     }
+
 }

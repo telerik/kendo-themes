@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "treeview",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin treeview-styles() {
+@mixin kendo-treeview--styles() {
     @include module-render( "treeview" ) {
         @include kendo-treeview--layout();
-        @include kendo-treeview--extended-layout();
         @include kendo-treeview--theme();
-        @include kendo-treeview--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-treeview--styles();
 }

@@ -1,4 +1,4 @@
-@include exports( "loader/layout" ) {
+@mixin kendo-loader--layout-base() {
 
     .k-loader {
         position: relative;
@@ -49,14 +49,10 @@
         }
     }
 
-}
 
 
 
-
-@include exports( "loader/pulsing/2" ) {
-
-    // Animation
+    // Loader pulsing 2
     @keyframes pulsing-2-segment {
         0% { transform: scale(1); }
         50% { transform: scale(1.5); }
@@ -106,14 +102,10 @@
         }
     }
 
-}
 
 
 
-
-@include exports( "loader/spinner/3" ) {
-
-    // Animation
+    // Loader spinner 3
     @keyframes spinner-3-segment {
         0% {
             top: 0;
@@ -192,14 +184,10 @@
         }
     }
 
-}
 
 
 
-
-@include exports( "loader/spinner/4" ) {
-
-    // Animation
+    // Loader spinner 4
     @keyframes spinner-4-segment-1 {
         0% {
             top: 50%;
@@ -366,13 +354,11 @@
             }
         }
     }
-}
 
 
 
 
-@include exports( "loader-container/layout" ) {
-
+    // Loader container
     .k-loader-container {
         display: flex;
         align-items: center;
@@ -458,12 +444,8 @@
         }
     }
 
-}
 
 
-
-
-@include exports( "loader/from-common" ) {
 
     // Loading mask
     .k-loading-mask,
@@ -598,4 +580,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-loader--layout() {
+    @include kendo-loader--layout-base();
 }

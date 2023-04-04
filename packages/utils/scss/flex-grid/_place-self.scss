@@ -1,4 +1,68 @@
-// TODO: docs
+/// This is equivalent to `place-self: auto;`.
+/// @example place-self: auto;
+/// @name .k-place-self-auto
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: normal;`.
+/// @example place-self: normal;
+/// @name .k-place-self-normal
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: stretch;`.
+/// @example place-self: stretch;
+/// @name .k-place-self-stretch
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: center;`.
+/// @example place-self: center;
+/// @name .k-place-self-center
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: start;`.
+/// @example place-self: start;
+/// @name .k-place-self-start
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: end;`.
+/// @example place-self: end;
+/// @name .k-place-self-end
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: flex-start;`.
+/// @example place-self: flex-start;
+/// @name .k-place-self-flex-start
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: flex-end;`.
+/// @example place-self: flex-end;
+/// @name .k-place-self-flex-end
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: self-start;`.
+/// @example place-self: self-start;
+/// @name .k-place-self-self-start
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: self-end;`.
+/// @example place-self: self-end;
+/// @name .k-place-self-self-end
+/// @group place-self
+/// @contextType css
+
+/// This is equivalent to `place-self: baseline;`.
+/// @example place-self: baseline;
+/// @name .k-place-self-baseline
+/// @group place-self
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--place-self() {
 

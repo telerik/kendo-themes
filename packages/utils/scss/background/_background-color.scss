@@ -1,4 +1,26 @@
-// TODO: docs
+/// This is equivalent to `background-color: inherit;`.
+/// @example background-color: inherit;
+/// @name .k-bg-inherit
+/// @group background-color
+/// @contextType css
+
+/// This is equivalent to `background-color: transparent;`.
+/// @example background-color: transparent;
+/// @name .k-bg-transparent
+/// @group background-color
+/// @contextType css
+
+/// This is equivalent to `background-color: black;`.
+/// @example background-color: black;
+/// @name .k-bg-black
+/// @group background-color
+/// @contextType css
+
+/// This is equivalent to `background-color: white;`.
+/// @example background-color: white;
+/// @name .k-bg-white
+/// @group background-color
+/// @contextType css
 
 @mixin kendo-utils--background--background-color() {
 

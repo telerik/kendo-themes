@@ -1,12 +1,60 @@
-// TODO: docs
-
-/// This is equivalent to `touch-action: none;`. Disable browser handling of all panning and zooming gestures.
+/// This is equivalent to `touch-action: none;`.
+/// @example touch-action: none;
 /// @name .k-touch-action-none
 /// @group touch-action
 /// @contextType css
 
-/// This is equivalent to `touch-action: auto;`. Enable browser handling of all panning and zooming gestures.
+/// This is equivalent to `touch-action: auto;`.
+/// @example touch-action: auto;
 /// @name .k-touch-action-auto
+/// @group touch-action
+/// @contextType css
+
+/// This is equivalent to `touch-action: pan-x;`.
+/// @example touch-action: pan-x;
+/// @name .k-touch-action-pan-x
+/// @group touch-action
+/// @contextType css
+
+/// This is equivalent to `touch-action: pan-y;`.
+/// @example touch-action: pan-y;
+/// @name .k-touch-action-pan-y
+/// @group touch-action
+/// @contextType css
+
+/// This is equivalent to `touch-action: pan-left;`.
+/// @example touch-action: pan-left;
+/// @name .k-touch-action-pan-left
+/// @group touch-action
+/// @contextType css
+
+/// This is equivalent to `touch-action: pan-right;`.
+/// @example touch-action: pan-right;
+/// @name .k-touch-action-pan-right
+/// @group touch-action
+/// @contextType css
+
+/// This is equivalent to `touch-action: pan-up;`.
+/// @example touch-action: pan-up;
+/// @name .k-touch-action-pan-up
+/// @group touch-action
+/// @contextType css
+
+/// This is equivalent to `touch-action: pan-down;`.
+/// @example touch-action: pan-down;
+/// @name .k-touch-action-pan-down
+/// @group touch-action
+/// @contextType css
+
+/// This is equivalent to `touch-action: pinch-zoom;`.
+/// @example touch-action: pinch-zoom;
+/// @name .k-touch-action-pinch-zoom
+/// @group touch-action
+/// @contextType css
+
+/// This is equivalent to `touch-action: manipulation;`.
+/// @example touch-action: manipulation;
+/// @name .k-touch-action-manipulation
 /// @group touch-action
 /// @contextType css
 

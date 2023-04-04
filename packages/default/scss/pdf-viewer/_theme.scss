@@ -1,6 +1,6 @@
-@include exports("pdf-viewer/theme") {
+@mixin kendo-pdf-viewer--theme-base() {
 
-
+    // PDF Viewer
     .k-pdf-viewer {
         @include fill(
             $kendo-pdf-viewer-text,
@@ -70,4 +70,9 @@
         @extend .k-search-panel !optional;
     }
 
+}
+
+
+@mixin kendo-pdf-viewer--theme() {
+    @include kendo-pdf-viewer--theme-base();
 }

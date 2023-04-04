@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/slider/_theme.scss";
 
-@include exports("slider/theme/material") {
+
+@mixin kendo-slider--theme() {
+
+    @include kendo-slider--theme-base();
 
     .k-slider {
         cursor: pointer;
@@ -36,4 +39,5 @@
             }
         }
     }
+
 }

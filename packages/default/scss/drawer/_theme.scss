@@ -1,4 +1,4 @@
-@include exports("drawer/theme") {
+@mixin kendo-drawer--theme-base() {
 
     .k-drawer {
         @include fill(
@@ -57,4 +57,9 @@
         background-color: $kendo-drawer-border;
     }
 
+}
+
+
+@mixin kendo-drawer--theme() {
+    @include kendo-drawer--theme-base();
 }

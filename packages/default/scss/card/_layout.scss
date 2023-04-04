@@ -1,4 +1,4 @@
-@include exports("card/layout") {
+@mixin kendo-card--layout-base() {
 
 
     // Angular elements
@@ -319,17 +319,15 @@
     }
 
 
-}
 
 
-
-
-@include exports( "card/layout/callout" ) {
-
+    // Card with callout
     .k-card-with-callout {
         overflow: visible;
     }
 
+
+    // Card callout
     .k-card-callout {
         margin: 0;
         width: $kendo-card-callout-width;
@@ -361,13 +359,6 @@
         transform: translate(-50%, -50%) rotate(45deg);
     }
 
-}
-
-
-
-
-@include exports( "card/layout/fill" ) {
-
 
     // Solid card
     .k-card-solid {
@@ -380,4 +371,9 @@
         @include box-shadow( none );
     }
 
+}
+
+
+@mixin kendo-card--layout() {
+    @include kendo-card--layout-base();
 }

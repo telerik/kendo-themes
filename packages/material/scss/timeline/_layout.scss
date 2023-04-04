@@ -1,6 +1,10 @@
 @import "@progress/kendo-theme-default/scss/timeline/_layout.scss";
 
-@include exports( "timeline/layout/material" ) {
+
+@mixin kendo-timeline--layout() {
+
+    @include kendo-timeline--layout-base();
+
     .k-timeline-horizontal .k-timeline-card {
         padding: 0 5px 5px;
     }
@@ -17,4 +21,5 @@
     .k-timeline-track-item.k-focus .k-timeline-circle::before {
         opacity: $kendo-flat-button-focus-opacity;
     }
+
 }

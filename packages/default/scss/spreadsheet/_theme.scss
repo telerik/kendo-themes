@@ -1,4 +1,4 @@
-@include exports("sreadsheet/theme") {
+@mixin kendo-spreadsheet--theme-base() {
 
     // Spreadsheet
     .k-spreadsheet {
@@ -115,12 +115,7 @@
         border-color: $kendo-color-error transparent transparent $kendo-color-error;
     }
 
-}
 
-
-
-
-@include exports( "spreadsheet/filter/theme" ) {
 
     // Filter button
     .k-spreadsheet .k-filter-range {
@@ -179,12 +174,7 @@
         }
     }
 
-}
 
-
-
-
-@include exports( "spreadsheet/tools/theme" ) {
 
     .k-spreadsheet-popup {
 
@@ -209,12 +199,7 @@
 
     }
 
-}
 
-
-
-
-@include exports( "spreadsheet/drawing/theme" ) {
 
     .k-spreadsheet-insert-image-dialog {
         border-color: $kendo-spreadsheet-insert-image-dialog-preview-border;
@@ -247,12 +232,7 @@
         background: $kendo-spreadsheet-drawing-anchor-bg;
     }
 
-}
 
-
-
-
-@include exports("spreadsheet/rtl/theme") {
 
     .k-rtl .k-spreadsheet,
     .k-spreadsheet[dir="rtl"],
@@ -268,4 +248,10 @@
 
     }
 
+}
+
+
+
+@mixin kendo-spreadsheet--theme() {
+    @include kendo-spreadsheet--theme-base();
 }

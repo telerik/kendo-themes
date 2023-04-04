@@ -1,9 +1,11 @@
-/// This is equivalent to `appearance: none;`. Resets any browser specific styling on an element.
+/// This is equivalent to `appearance: none;`.
+/// @example appearance: none;
 /// @name .k-appearance-none
 /// @group appearance
 /// @contextType css
 
-/// This is equivalent to `appearance: auto;`. The user agent selects the appropriate special styling based on the element. Acts as `none` on elements with no special styling.
+/// This is equivalent to `appearance: auto;`.
+/// @example appearance: auto;
 /// @name .k-appearance-auto
 /// @group appearance
 /// @contextType css

@@ -1,2 +1,6 @@
 @import "@progress/kendo-theme-default/scss/pager/_theme.scss";
 
+
+@mixin kendo-pager--theme() {
+    @include kendo-pager--theme-base();
+}

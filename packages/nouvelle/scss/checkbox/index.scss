@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "checkbox",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin checkbox-styles() {
+@mixin kendo-checkbox--styles() {
     @include module-render( "checkbox" ) {
         @include kendo-checkbox--layout();
-        @include kendo-checkbox--extended-layout();
         @include kendo-checkbox--theme();
-        @include kendo-checkbox--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-checkbox--styles();
 }

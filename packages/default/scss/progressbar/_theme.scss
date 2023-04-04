@@ -1,4 +1,4 @@
-@include exports("progressbar/theme") {
+@mixin kendo-progressbar--theme-base() {
 
     @keyframes kendo-progressbar-indeterminate-animation {
         from { background-position: 0 0; }
@@ -34,10 +34,8 @@
         animation: kendo-progressbar-indeterminate-animation $kendo-progressbar-animation-timing;
     }
 
-}
 
-@include exports("circular-progressbar/theme") {
-
+    // Circular progressbar
     .k-circular-progressbar-scale {
         stroke: $kendo-circular-progressbar-scale-stroke;
     }
@@ -47,4 +45,9 @@
         transition: stroke .5s ease;
     }
 
+}
+
+
+@mixin kendo-progressbar--theme() {
+    @include kendo-progressbar--theme-base();
 }

@@ -1,4 +1,4 @@
-@include exports("window/theme") {
+@mixin kendo-window--theme-base() {
 
     // Window
     .k-window {
@@ -36,4 +36,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-window--theme() {
+    @include kendo-window--theme-base();
 }

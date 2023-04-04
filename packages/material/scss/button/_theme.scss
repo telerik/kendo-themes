@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/button/_theme.scss";
 
-@include exports( "button/theme/material" ) {
+
+@mixin kendo-button--theme() {
+
+    @include kendo-button--theme-base();
 
     // Solid button
     @each $name, $color in $kendo-button-theme-colors {

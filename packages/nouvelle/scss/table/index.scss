@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "table",
@@ -12,15 +15,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin table-styles() {
+@mixin kendo-table--styles() {
     @include module-render( "table" ) {
         @include kendo-table--layout();
-        @include kendo-table--extended-layout();
         @include kendo-table--theme();
-        @include kendo-table--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-table--styles();
 }

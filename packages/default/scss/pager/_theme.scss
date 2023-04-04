@@ -1,5 +1,6 @@
-@include exports("pager/theme") {
+@mixin kendo-pager--theme-base() {
 
+    // Pager
     .k-pager {
         @include fill(
             $kendo-pager-text,
@@ -14,4 +15,9 @@
         }
     }
 
+}
+
+
+@mixin kendo-pager--theme() {
+    @include kendo-pager--theme-base();
 }

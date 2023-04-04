@@ -1,4 +1,4 @@
-@include exports("button/layout") {
+@mixin kendo-button--layout-base() {
 
     // Button
     .k-button {
@@ -256,12 +256,8 @@
         box-shadow: none !important; // sass-lint:disable-line no-important
     }
 
-}
 
 
-
-
-@include exports( "button/layout/overlay" ) {
 
     // Button overlay
     .k-button-overlay {
@@ -326,13 +322,10 @@
 
     }
 
-}
 
 
 
-
-@include exports( "button/layout/focus-ring" ) {
-
+    // Button focus ring
     .k-button {
 
         &::after {
@@ -350,4 +343,10 @@
             transition: opacity .2s ease-in-out;
         }
     }
+
+}
+
+
+@mixin kendo-button--layout() {
+    @include kendo-button--layout-base();
 }

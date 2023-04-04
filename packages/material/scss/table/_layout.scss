@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/table/_layout.scss";
+
+
+@mixin kendo-table--layout() {
+    @include kendo-table--layout-base();
+}

@@ -1,4 +1,4 @@
-@include exports("slider/layout") {
+@mixin kendo-slider--layout-base() {
 
     // Slider
     .k-slider {
@@ -446,4 +446,9 @@
         padding-bottom: calc( #{$kendo-slider-draghandle-size} / 2 );
     }
 
+}
+
+
+@mixin kendo-slider--layout() {
+    @include kendo-slider--layout-base();
 }

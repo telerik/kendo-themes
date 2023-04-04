@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "button",
@@ -15,15 +18,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin button-styles() {
+@mixin kendo-button--styles() {
     @include module-render( "button" ) {
         @include kendo-button--layout();
-        @include kendo-button--extended-layout();
         @include kendo-button--theme();
-        @include kendo-button--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-button--styles();
 }

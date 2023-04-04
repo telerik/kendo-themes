@@ -1,4 +1,26 @@
-// TODO: docs
+/// This is equivalent to `text-decoration: underline;`.
+/// @example text-decoration: underline;
+/// @name .k-underline
+/// @group text-decoration
+/// @contextType css
+
+/// This is equivalent to `text-decoration: overline;`.
+/// @example text-decoration: overline;
+/// @name .k-overline
+/// @group text-decoration
+/// @contextType css
+
+/// This is equivalent to `text-decoration: line-through;`.
+/// @example text-decoration: line-through;
+/// @name .k-line-through
+/// @group text-decoration
+/// @contextType css
+
+/// This is equivalent to `text-decoration: none-decoration;`.
+/// @example text-decoration: none-decoration;
+/// @name .k-none-decoration
+/// @group text-decoration
+/// @contextType css
 
 @mixin kendo-utils--typography--text-decoration() {
 

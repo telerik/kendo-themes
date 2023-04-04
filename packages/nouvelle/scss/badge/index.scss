@@ -1,3 +1,6 @@
+@import "../core/index.import.scss";
+
+
 // Module meta
 $_kendo-module-meta: (
     name: "badge",
@@ -14,15 +17,18 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
 // Expose
-@mixin badge-styles() {
+@mixin kendo-badge--styles() {
     @include module-render( "badge" ) {
         @include kendo-badge--layout();
-        @include kendo-badge--extended-layout();
         @include kendo-badge--theme();
-        @include kendo-badge--extended-theme();
     }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-badge--styles();
 }

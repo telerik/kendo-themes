@@ -1,6 +1,9 @@
 @import "@progress/kendo-theme-default/scss/treeview/_theme.scss";
 
-@include exports( "treeview/theme/material" ) {
+
+@mixin kendo-treeview--theme() {
+
+    @include kendo-treeview--theme-base();
 
     // Treeview
     .k-treeview {}

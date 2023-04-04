@@ -1,1 +1,6 @@
 @import "@progress/kendo-theme-default/scss/daterangepicker/_theme.scss";
+
+
+@mixin kendo-date-range-picker--theme() {
+    @include kendo-date-range-picker--theme-base();
+}

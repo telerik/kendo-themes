@@ -1,66 +1,77 @@
-// Columns documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/columns.
-
-/// This is equivalent to `columns: 1;`. Element's content is displayed into 1 column.
+/// This is equivalent to `columns: 1;`.
+/// @example columns: 1;
 /// @name .k-columns-1
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 2;`. Element's content is broken into 2 columns.
+/// This is equivalent to `columns: 2;`.
+/// @example columns: 2;
 /// @name .k-columns-2
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 3;`. Element's content is broken into 3 columns.
+/// This is equivalent to `columns: 3;`.
+/// @example columns: 3;
 /// @name .k-columns-3
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 4;`. Element's content is broken into 4 columns.
+/// This is equivalent to `columns: 4;`.
+/// @example columns: 4;
 /// @name .k-columns-4
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 5;`. Element's content is broken into 5 columns.
+/// This is equivalent to `columns: 5;`.
+/// @example columns: 5;
 /// @name .k-columns-5
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 6;`. Element's content is broken into 6 columns.
+/// This is equivalent to `columns: 6;`.
+/// @example columns: 6;
 /// @name .k-columns-6
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 7;`. Element's content is broken into 7 columns.
+/// This is equivalent to `columns: 7;`.
+/// @example columns: 7;
 /// @name .k-columns-7
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 8;`. Element's content is broken into 8 columns.
+/// This is equivalent to `columns: 8;`.
+/// @example columns: 8;
 /// @name .k-columns-8
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 9;`. Element's content is broken into 9 columns.
+/// This is equivalent to `columns: 9;`.
+/// @example columns: 9;
 /// @name .k-columns-9
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 10;`. Element's content is broken into 10 columns.
+/// This is equivalent to `columns: 10;`.
+/// @example columns: 10;
 /// @name .k-columns-10
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 11;`. Element's content is broken into 11 columns.
+/// This is equivalent to `columns: 11;`.
+/// @example columns: 11;
 /// @name .k-columns-11
 /// @group columns
 /// @contextType css
 
-/// This is equivalent to `columns: 12;`. Element's content is broken into 12 columns.
+/// This is equivalent to `columns: 12;`.
+/// @example columns: 12;
 /// @name .k-columns-12
 /// @group columns
 /// @contextType css
 
 /// This is equivalent to `columns: auto;`.The number of columns is determined by other CSS properties, such as column-width.
+/// @example columns: auto;
 /// @name .k-columns-auto
 /// @group columns
 /// @contextType css

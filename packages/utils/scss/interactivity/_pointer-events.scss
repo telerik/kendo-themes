@@ -1,11 +1,11 @@
-// Pointer-events documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events.
-
-/// This is equivalent to `pointer-events: none;`. The element is never the target of pointer events; however, pointer events may target its descendant elements if those descendants have pointer-events set to some other value. In these circumstances, pointer events will trigger event listeners on this parent element as appropriate on their way to/from the descendant during the event capture/bubble phases.
+/// This is equivalent to `pointer-events: none;`.
+/// @example pointer-events: none;
 /// @name .k-pointer-events-none
 /// @group pointer-events
 /// @contextType css
 
-/// This is equivalent to `pointer-events: auto;`. The element behaves as it would if the pointer-events property were not specified. In SVG content, this value and the value visiblePainted have the same effect.
+/// This is equivalent to `pointer-events: auto;`.
+/// @example pointer-events: auto;
 /// @name .k-pointer-events-auto
 /// @group pointer-events
 /// @contextType css
