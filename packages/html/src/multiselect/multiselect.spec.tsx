@@ -21,7 +21,8 @@ const states = [
     States.invalid,
     States.required,
     States.disabled,
-    States.loading
+    States.loading,
+    States.readonly
 ];
 
 const options = {
@@ -73,6 +74,7 @@ export const MultiSelect = (
         required,
         loading,
         disabled,
+        readonly,
         opened,
         ...other
     } = props;
@@ -92,6 +94,7 @@ export const MultiSelect = (
                 required={required}
                 loading={loading}
                 disabled={disabled}
+                readonly={readonly}
                 className={classNames(props.className, MULTISELECT_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
@@ -103,9 +106,19 @@ export const MultiSelect = (
                     </ChipList>
                     <InputInnerInput placeholder={placeholder} value={value}/>
                 </div>
-                <InputValidationIcon {...props} />
-                <InputLoadingIcon {...props} />
-                <InputClearValue value={tags ? 'value' : ''} {...props} />
+                <InputValidationIcon
+                    valid={valid}
+                    invalid={invalid}
+                    loading={loading}
+                    disabled={disabled} />
+                <InputLoadingIcon
+                    loading={loading}
+                    disabled={disabled} />
+                <InputClearValue
+                    loading={loading}
+                    disabled={disabled}
+                    readonly={readonly}
+                    value={tags ? 'value' : ''} />
                 <InputSuffix>{suffix}</InputSuffix>
                 {showArrowButton && (
                     <Button

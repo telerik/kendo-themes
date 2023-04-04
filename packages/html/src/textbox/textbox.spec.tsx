@@ -18,7 +18,8 @@ const states = [
     States.invalid,
     States.required,
     States.disabled,
-    States.loading
+    States.loading,
+    States.readonly
 ];
 
 const options = {
@@ -69,6 +70,7 @@ export const Textbox = (
         required,
         loading,
         disabled,
+        readonly,
         showClearButton = defaultProps.showClearButton,
         ...other
     } = props;
@@ -87,13 +89,24 @@ export const Textbox = (
             required={required}
             loading={loading}
             disabled={disabled}
+            readonly={readonly}
             className={classNames(props.className, TEXTBOX_CLASSNAME)}
         >
             <InputPrefix>{prefix}</InputPrefix>
             <InputInnerInput placeholder={placeholder} value={value} />
-            <InputLoadingIcon {...props} />
-            <InputValidationIcon {...props} />
-            { showClearButton && <InputClearValue {...props} /> }
+            <InputValidationIcon
+                valid={valid}
+                invalid={invalid}
+                loading={loading}
+                disabled={disabled} />
+            <InputLoadingIcon
+                loading={loading}
+                disabled={disabled} />
+            { showClearButton && <InputClearValue
+                loading={loading}
+                disabled={disabled}
+                readonly={readonly}
+                value={value} />}
             <InputSuffix>{suffix}</InputSuffix>
         </Input>
     );

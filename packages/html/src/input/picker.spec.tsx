@@ -10,6 +10,7 @@ export const pickerStates = [
     States.required,
     States.disabled,
     States.loading,
+    States.readonly
 ];
 
 export const pickerOptions = {
@@ -27,9 +28,9 @@ export type PickerOptions = {
 };
 
 export const pickerDefaultProps = {
-    size: "medium",
-    rounded: "medium",
-    fillMode: "solid",
+    size: Size.medium,
+    rounded: Roundness.medium,
+    fillMode: FillMode.solid,
 };
 
 export const Picker = (
@@ -42,6 +43,7 @@ export const Picker = (
         invalid,
         valid,
         loading,
+        readonly,
         size = pickerDefaultProps.size,
         rounded = pickerDefaultProps.rounded,
         fillMode = pickerDefaultProps.fillMode,
@@ -55,7 +57,7 @@ export const Picker = (
                 props.className,
                 PICKER_CLASSNAME,
                 optionClassNames(PICKER_CLASSNAME, { size, rounded, fillMode }),
-                stateClassNames(PICKER_CLASSNAME, { hover, focus, disabled, invalid, valid, loading }),
+                stateClassNames(PICKER_CLASSNAME, { hover, focus, disabled, invalid, valid, loading, readonly }),
             )}>
             {props.children}
         </span>

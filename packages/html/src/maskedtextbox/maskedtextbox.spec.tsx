@@ -16,7 +16,8 @@ const states = [
     States.invalid,
     States.required,
     States.disabled,
-    States.loading
+    States.loading,
+    States.readonly
 ];
 
 const options = {
@@ -62,6 +63,7 @@ export const MaskedTextbox = (
         required,
         loading,
         disabled,
+        readonly,
         showClearButton = defaultProps.showClearButton,
         ...other
     } = props;
@@ -80,12 +82,23 @@ export const MaskedTextbox = (
             required={required}
             loading={loading}
             disabled={disabled}
+            readonly={readonly}
             className={classNames(props.className, MASKEDTEXTBOX_CLASSNAME)}
         >
             <InputInnerInput placeholder={placeholder} value={value} />
-            <InputValidationIcon {...props} />
-            <InputLoadingIcon {...props} />
-            { showClearButton && <InputClearValue {...props} /> }
+            <InputValidationIcon
+                valid={valid}
+                invalid={invalid}
+                loading={loading}
+                disabled={disabled} />
+            <InputLoadingIcon
+                loading={loading}
+                disabled={disabled} />
+            { showClearButton && <InputClearValue
+                loading={loading}
+                disabled={disabled}
+                readonly={readonly}
+                value={value} /> }
         </Input>
     );
 };

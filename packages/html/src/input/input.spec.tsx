@@ -10,6 +10,7 @@ export const states = [
     States.required,
     States.disabled,
     States.loading,
+    States.readonly
 ];
 
 export const options = {
@@ -41,6 +42,7 @@ export const Input = (
         invalid,
         valid,
         loading,
+        readonly,
         size = defaultProps.size,
         rounded = defaultProps.rounded,
         fillMode = defaultProps.fillMode,
@@ -54,7 +56,7 @@ export const Input = (
                 props.className,
                 INPUT_CLASSNAME,
                 optionClassNames(INPUT_CLASSNAME, { size, rounded, fillMode }),
-                stateClassNames(INPUT_CLASSNAME, { hover, focus, disabled, invalid, valid, loading }),
+                stateClassNames(INPUT_CLASSNAME, { hover, focus, disabled, invalid, valid, loading, readonly }),
             )}
         />
     );

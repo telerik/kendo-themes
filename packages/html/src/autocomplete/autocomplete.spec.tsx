@@ -18,7 +18,8 @@ const states = [
     States.invalid,
     States.required,
     States.disabled,
-    States.loading
+    States.loading,
+    States.readonly
 ];
 
 const options = {
@@ -62,6 +63,7 @@ export const Autocomplete = (
         required,
         loading,
         disabled,
+        readonly,
         ...other
     } = props;
 
@@ -79,13 +81,24 @@ export const Autocomplete = (
             required={required}
             loading={loading}
             disabled={disabled}
+            readonly={readonly}
             className={classNames(props.className, AUTOCOMPLETE_CLASSNAME)}
         >
             <InputPrefix>{prefix}</InputPrefix>
             <InputInnerInput placeholder={placeholder} value={value} />
-            <InputValidationIcon {...props} />
-            <InputLoadingIcon {...props} />
-            <InputClearValue {...props} />
+            <InputValidationIcon
+                valid={valid}
+                invalid={invalid}
+                loading={loading}
+                disabled={disabled} />
+            <InputLoadingIcon
+                loading={loading}
+                disabled={disabled} />
+            <InputClearValue
+                loading={loading}
+                disabled={disabled}
+                readonly={readonly}
+                value={value} />
             <InputSuffix>{suffix}</InputSuffix>
         </Input>
     );
