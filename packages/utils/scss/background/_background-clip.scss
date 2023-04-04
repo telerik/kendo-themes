@@ -1,4 +1,26 @@
-// TODO: docs
+/// This is equivalent to `background-clip: border-box;`.
+/// @example background-clip: border-box;
+/// @name .k-bg-clip-border
+/// @group background-clip
+/// @contextType css
+
+/// This is equivalent to `background-clip: padding-box;`.
+/// @example background-clip: padding-box;
+/// @name .k-bg-clip-padding
+/// @group background-clip
+/// @contextType css
+
+/// This is equivalent to `background-clip: content-box;`.
+/// @example background-clip: content-box;
+/// @name .k-bg-clip-content
+/// @group background-clip
+/// @contextType css
+
+/// This is equivalent to `background-clip: text;`.
+/// @example background-clip: text;
+/// @name .k-bg-clip-text
+/// @group background-clip
+/// @contextType css
 
 @mixin kendo-utils--background--background-clip() {
 

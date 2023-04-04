@@ -1,4 +1,38 @@
-// TODO: docs
+/// This is equivalent to `object-fit: contain;`.
+/// @example object-fit: contain;
+/// @name .k-object-fit-contain
+/// @group object-fit
+/// @contextType css
+
+/// This is equivalent to `object-fit: cover;`.
+/// @example object-fit: cover;
+/// @name .k-object-fit-cover
+/// @group object-fit
+/// @contextType css
+
+/// This is equivalent to `object-fit: fill;`.
+/// @example object-fit: fill;
+/// @name .k-object-fit-fill
+/// @group object-fit
+/// @contextType css
+
+/// This is equivalent to `object-fit: scale-down;`.
+/// @example object-fit: scale-down;
+/// @name .k-object-fit-scale-down
+/// @group object-fit
+/// @contextType css
+
+/// This is equivalent to `object-fit: initial;`.
+/// @example object-fit: initial;
+/// @name .k-object-fit-initial
+/// @group object-fit
+/// @contextType css
+
+/// This is equivalent to `object-fit: none;`.
+/// @example object-fit: none;
+/// @name .k-object-fit-none
+/// @group object-fit
+/// @contextType css
 
 @mixin kendo-utils--layout--object-fit() {
 

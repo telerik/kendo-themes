@@ -1,31 +1,35 @@
-// White-space documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/white-space.
-
-/// This is equivalent to `white-space: normal;`. Sequences of white space are collapsed. Newline characters in the source are handled the same as other white space. Lines are broken as necessary to fill line boxes.
+/// This is equivalent to `white-space: normal;`.
+/// @example white-space: normal;
 /// @name .k-white-space-normal
 /// @group white-space
 /// @contextType css
 
-/// This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+/// This is equivalent to `white-space: nowrap;`.
+/// @example white-space: nowrap;
 /// @name .k-white-space-nowrap
 /// @group white-space
 /// @contextType css
 
-/// This is equivalent to `white-space: pre;`. Sequences of white space are preserved. Lines are only broken at newline characters in the source and at <br> elements.
+/// This is equivalent to `white-space: pre;`.
+/// @example white-space: pre;
 /// @name .k-white-space-pre
 /// @group white-space
 /// @contextType css
 
-/// This is equivalent to `white-space: pre-wrap;`. Sequences of white space are preserved. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+/// This is equivalent to `white-space: pre-wrap;`.
+/// @example white-space: pre-wrap;
 /// @name .k-white-space-pre-wrap
 /// @group white-space
 /// @contextType css
 
-/// This is equivalent to `white-space: pre-line;`. Sequences of white space are collapsed. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+/// This is equivalent to `white-space: pre-line;`.
+/// @example white-space: pre-line;
 /// @name .k-white-space-pre-line
 /// @group white-space
 /// @contextType css
 
-/// This is equivalent to `white-space: break-spaces;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+/// This is equivalent to `white-space: break-spaces;`.
+/// @example white-space: break-spaces;
 /// @name .k-white-space-break-spaces
 /// @group white-space
 /// @contextType css

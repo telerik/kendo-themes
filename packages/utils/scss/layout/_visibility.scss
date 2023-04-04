@@ -1,5 +1,20 @@
-// TODO: docs
-// TODO: consider visible and invisible vs visibility-visible and visibility-hidden
+/// This is equivalent to `visibility: visble;`.
+/// @example visibility: visble;
+/// @name .k-visible
+/// @group visibility
+/// @contextType css
+
+/// This is equivalent to `visibility: hidden;`.
+/// @example visibility: hidden;
+/// @name .k-invisible
+/// @group visibility
+/// @contextType css
+
+/// This is equivalent to `visibility: collapse;`.
+/// @example visibility: collapse;
+/// @name .k-collapse
+/// @group visibility
+/// @contextType css
 
 @mixin kendo-utils--layout--visibility() {
 

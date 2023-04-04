@@ -1,9 +1,11 @@
-/// This is equivalent to `flex-grow: 1`. It defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+/// This is equivalent to `flex-grow: 1;`.
+/// @example flex-grow: 1;
 /// @name .k-flex-grow
 /// @group flex-grow
 /// @contextType css
 
-/// This is equivalent to `flex-grow: 0`. The item will not grow.
+/// This is equivalent to `flex-grow: 0;`.
+/// @example flex-grow: 0;
 /// @name .k-flex-grow-0
 /// @group flex-grow
 /// @contextType css

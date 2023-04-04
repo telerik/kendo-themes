@@ -1,4 +1,80 @@
-// TODO: docs
+/// This is equivalent to `align-self: auto;`.
+/// @example align-self: auto;
+/// @name .k-align-self-auto
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: normal;`.
+/// @example align-self: normal;
+/// @name .k-align-self-normal
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: stretch;`.
+/// @example align-self: stretch;
+/// @name .k-align-self-stretch
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: center;`.
+/// @example align-self: center;
+/// @name .k-align-self-center
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: start;`.
+/// @example align-self: start;
+/// @name .k-align-self-start
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: end;`.
+/// @example align-self: end;
+/// @name .k-align-self-end
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: flex-start;`.
+/// @example align-self: flex-start;
+/// @name .k-align-self-flex-start
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: flex-end;`.
+/// @example align-self: flex-end;
+/// @name .k-align-self-flex-end
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: baseline;`.
+/// @example align-self: baseline;
+/// @name .k-align-self-baseline
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: first baseline;`.
+/// @example align-self: first baseline;
+/// @name .k-align-self-first-baseline
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: last baseline;`.
+/// @example align-self: last baseline;
+/// @name .k-align-self-last-baseline
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: self-start;`.
+/// @example align-self: self-start;
+/// @name .k-align-self-self-start
+/// @group align-self
+/// @contextType css
+
+/// This is equivalent to `align-self: self-end;`.
+/// @example align-self: self-end;
+/// @name .k-align-self-self-end
+/// @group align-self
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--align-self() {
 

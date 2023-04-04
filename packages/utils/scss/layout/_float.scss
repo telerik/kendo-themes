@@ -1,16 +1,17 @@
-// Float documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/float.
-
-/// This is equivalent to `float: left;`. The element must float on the left side of its containing block.
+/// This is equivalent to `float: left;`.
+/// @example float: left;
 /// @name .k-float-left
 /// @group float
 /// @contextType css
 
-/// This is equivalent to `float: right;`. The element must float on the right side of its containing block.
+/// This is equivalent to `float: right;`.
+/// @example float: right;
 /// @name .k-float-right
 /// @group float
 /// @contextType css
 
-/// This is equivalent to `float: none;`. The element must not float.
+/// This is equivalent to `float: none;`.
+/// @example float: none;
 /// @name .k-float-none
 /// @group float
 /// @contextType css

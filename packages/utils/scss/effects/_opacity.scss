@@ -1,4 +1,14 @@
-// TODO: docs
+/// This is equivalent to `opacity: 0;`.
+/// @example opacity: 0;
+/// @name .k-opacity-0
+/// @group opacity
+/// @contextType css
+
+/// This is equivalent to `opacity: 1;`.
+/// @example opacity: 1;
+/// @name .k-opacity-1
+/// @group opacity
+/// @contextType css
 
 @mixin kendo-utils--effects--opacity() {
 

@@ -1,9 +1,43 @@
-// TODO: docs
+/// This is equivalent to `stroke: none;`.
+/// @example stroke: none;
+/// @name .k-stroke-none
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: inherit;`.
+/// @example stroke: inherit;
+/// @name .k-stroke-inherit
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: currentColor;`.
+/// @example stroke: currentColor;
+/// @name .k-stroke-currentColor
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: transparent;`.
+/// @example stroke: transparent;
+/// @name .k-stroke-transparent
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: black;`.
+/// @example stroke: black;
+/// @name .k-stroke-black
+/// @group stroke
+/// @contextType css
+
+/// This is equivalent to `stroke: white;`.
+/// @example stroke: white;
+/// @name .k-stroke-white
+/// @group stroke
+/// @contextType css
 
 @mixin kendo-utils--svg--stroke() {
 
     // stroke utility classes
-    $kendo-utils-stroke: k-map-get( $kendo-utils, "fill-stroke" ) !default;
+    $kendo-utils-stroke: k-map-get( $kendo-utils, "stroke-stroke" ) !default;
     @include generate-utils( stroke, stroke, $kendo-utils-stroke );
 
 }

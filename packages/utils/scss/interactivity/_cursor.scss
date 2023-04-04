@@ -1,4 +1,26 @@
-// TODO: docs
+/// This is equivalent to `cursor: none;`.
+/// @example cursor: none;
+/// @name .k-cursor-none
+/// @group cursor
+/// @contextType css
+
+/// This is equivalent to `cursor: auto;`.
+/// @example cursor: auto;
+/// @name .k-cursor-auto
+/// @group cursor
+/// @contextType css
+
+/// This is equivalent to `cursor: default;`.
+/// @example cursor: default;
+/// @name .k-cursor-default
+/// @group cursor
+/// @contextType css
+
+/// This is equivalent to `cursor: pointer;`.
+/// @example cursor: pointer;
+/// @name .k-cursor-pointer
+/// @group cursor
+/// @contextType css
 
 @mixin kendo-utils--interactivity--cursor() {
 

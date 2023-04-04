@@ -1,4 +1,86 @@
-// TODO: docs
+/// This is equivalent to `justify-items: normal;`.
+/// @example justify-items: normal;
+/// @name .k-justify-items-normal
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: stretch;`.
+/// @example justify-items: stretch;
+/// @name .k-justify-items-stretch
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: center;`.
+/// @example justify-items: center;
+/// @name .k-justify-items-center
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: start;`.
+/// @example justify-items: start;
+/// @name .k-justify-items-start
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: end;`.
+/// @example justify-items: end;
+/// @name .k-justify-items-end
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: flex-start;`.
+/// @example justify-items: flex-start;
+/// @name .k-justify-items-selft-start
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: flex-end;`.
+/// @example justify-items: flex-end;
+/// @name .k-justify-items-self-end
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: self-start;`.
+/// @example justify-items: self-start;
+/// @name .k-justify-items-selft-start
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: self-end;`.
+/// @example justify-items: self-end;
+/// @name .k-justify-items-self-end
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: left;`.
+/// @example justify-items: left;
+/// @name .k-justify-items-left
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: right;`.
+/// @example justify-items: right;
+/// @name .k-justify-items-right
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: baseline;`.
+/// @example justify-items: baseline;
+/// @name .k-justify-items-baseline
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: first baseline;`.
+/// @example justify-items: first baseline;
+/// @name .k-justify-items-first-baseline
+/// @group justify-items
+/// @contextType css
+
+/// This is equivalent to `justify-items: last baseline;`.
+/// @example justify-items: last baseline;
+/// @name .k-justify-items-last-baseline
+/// @group justify-items
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--justify-items() {
 

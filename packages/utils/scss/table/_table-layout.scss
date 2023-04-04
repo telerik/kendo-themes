@@ -1,12 +1,12 @@
-// Table-layout documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout.
-
-/// This is equivalent to `table-layout: auto;`. By default, most browsers use an automatic table layout algorithm. The widths of the table and its cells are adjusted to fit the content.
-/// @name .k-table-layout-auto
+/// This is equivalent to `table-layout: auto;`.
+/// @example table-layout: auto;
+/// @name .k-table-auto
 /// @group table-layout
 /// @contextType css
 
-/// This is equivalent to `table-layout: fixed;`. Table and column widths are set by the widths of table and col elements or by the width of the first row of cells. Cells in subsequent rows do not affect column widths.
-/// @name .k-table-layout-fixed
+/// This is equivalent to `table-layout: fixed;`.
+/// @example table-layout: fixed;
+/// @name .k-table-fixed
 /// @group table-layout
 /// @contextType css
 

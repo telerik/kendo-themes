@@ -1,4 +1,56 @@
-// TODO: docs
+/// This is equivalent to `transform-origin: center;`.
+/// @example transform-origin: center;
+/// @name .k-origin-center
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top;`.
+/// @example transform-origin: top;
+/// @name .k-origin-top
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: right;`.
+/// @example transform-origin: right;
+/// @name .k-origin-right
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom;`.
+/// @example transform-origin: bottom;
+/// @name .k-origin-bottom
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: left;`.
+/// @example transform-origin: left;
+/// @name .k-origin-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top-left;`.
+/// @example transform-origin: top-left;
+/// @name .k-origin-top-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: top-right;`.
+/// @example transform-origin: top-right;
+/// @name .k-origin-top-right
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom-left;`.
+/// @example transform-origin: bottom-left;
+/// @name .k-origin-bottom-left
+/// @group transform-origin
+/// @contextType css
+
+/// This is equivalent to `transform-origin: bottom-right;`.
+/// @example transform-origin: bottom-right;
+/// @name .k-origin-bottom-right
+/// @group transform-origin
+/// @contextType css
 
 @mixin kendo-utils--transform--origin() {
 

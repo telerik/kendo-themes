@@ -1,4 +1,32 @@
-// TODO: docs
+/// This is equivalent to `font-size: 10px;`.
+/// @example font-size: 10px;
+/// @name .k-font-xs
+/// @group font-size
+/// @contextType css
+
+/// This is equivalent to `font-size: 12px;`.
+/// @example font-size: 12px;
+/// @name .k-font-sm
+/// @group font-size
+/// @contextType css
+
+/// This is equivalent to `font-size: 14px;`.
+/// @example font-size: 14px;
+/// @name .k-font-md
+/// @group font-size
+/// @contextType css
+
+/// This is equivalent to `font-size: 16px;`.
+/// @example font-size: 16px;
+/// @name .k-font-lg
+/// @group font-size
+/// @contextType css
+
+/// This is equivalent to `font-size: 20px;`.
+/// @example font-size: 20px;
+/// @name .k-font-xl
+/// @group font-size
+/// @contextType css
 
 @mixin kendo-utils--typography--font-size() {
 

@@ -1,4 +1,56 @@
-// TODO: docs
+/// This is equivalent to `object-position: center;`.
+/// @example object-position: center;
+/// @name .k-object-position-center
+/// @group object-position
+/// @contextType css
+
+/// This is equivalent to `object-position: top;`.
+/// @example object-position: top;
+/// @name .k-object-position-top
+/// @group object-position
+/// @contextType css
+
+/// This is equivalent to `object-position: right;`.
+/// @example object-position: right;
+/// @name .k-object-position-right
+/// @group object-position
+/// @contextType css
+
+/// This is equivalent to `object-position: bottom;`.
+/// @example object-position: bottom;
+/// @name .k-object-position-bottom
+/// @group object-position
+/// @contextType css
+
+/// This is equivalent to `object-position: left;`.
+/// @example object-position: left;
+/// @name .k-object-position-left
+/// @group object-position
+/// @contextType css
+
+/// This is equivalent to `object-position: top left;`.
+/// @example object-position: top left;
+/// @name .k-object-position-top-left
+/// @group object-position
+/// @contextType css
+
+/// This is equivalent to `object-position: top right;`.
+/// @example object-position: top right;
+/// @name .k-object-position-top-right
+/// @group object-position
+/// @contextType css
+
+/// This is equivalent to `object-position: bottom left;`.
+/// @example object-position: bottom left;
+/// @name .k-object-position-bottom-left
+/// @group object-position
+/// @contextType css
+
+/// This is equivalent to `object-position: bottom right;`.
+/// @example object-position: bottom right;
+/// @name .k-object-position-bottom-right
+/// @group object-position
+/// @contextType css
 
 @mixin kendo-utils--layout--object-position() {
 

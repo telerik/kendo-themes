@@ -1,4 +1,50 @@
-// TODO: docs
+/// This is equivalent to `vertical-align: baseline;`.
+/// @example vertical-align: baseline;
+/// @name .k-align-baseline
+/// @group vertical-align
+/// @contextType css
+
+/// This is equivalent to `vertical-align: top;`.
+/// @example vertical-align: top;
+/// @name .k-align-top
+/// @group vertical-align
+/// @contextType css
+
+/// This is equivalent to `vertical-align: middle;`.
+/// @example vertical-align: middle;
+/// @name .k-align-middle
+/// @group vertical-align
+/// @contextType css
+
+/// This is equivalent to `vertical-align: bottom;`.
+/// @example vertical-align: bottom;
+/// @name .k-align-bottom
+/// @group vertical-align
+/// @contextType css
+
+/// This is equivalent to `vertical-align: text-top;`.
+/// @example vertical-align: text-top;
+/// @name .k-align-text-top
+/// @group vertical-align
+/// @contextType css
+
+/// This is equivalent to `vertical-align: text-bottom;`.
+/// @example vertical-align: text-bottom;
+/// @name .k-align-text-bottom
+/// @group vertical-align
+/// @contextType css
+
+/// This is equivalent to `vertical-align: sub;`.
+/// @example vertical-align: sub;
+/// @name .k-align-sub
+/// @group vertical-align
+/// @contextType css
+
+/// This is equivalent to `vertical-align: super;`.
+/// @example vertical-align: super;
+/// @name .k-align-super
+/// @group vertical-align
+/// @contextType css
 
 @mixin kendo-utils--typography--vertical-align() {
 

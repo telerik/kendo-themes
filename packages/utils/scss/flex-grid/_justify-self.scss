@@ -1,4 +1,80 @@
-// TODO: docs
+/// This is equivalent to `justify-self: auto;`.
+/// @example justify-self: auto;
+/// @name .k-justify-self-auto
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: normal;`.
+/// @example justify-self: normal;
+/// @name .k-justify-self-normal
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: stretch;`.
+/// @example justify-self: stretch;
+/// @name .k-justify-self-stretch
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: center;`.
+/// @example justify-self: center;
+/// @name .k-justify-self-center
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: start;`.
+/// @example justify-self: start;
+/// @name .k-justify-self-start
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: end;`.
+/// @example justify-self: end;
+/// @name .k-justify-self-end
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: flex-start;`.
+/// @example justify-self: flex-start;
+/// @name .k-justify-self-selft-start
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: flex-end;`.
+/// @example justify-self: flex-end;
+/// @name .k-justify-self-self-end
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: self-start;`.
+/// @example justify-self: self-start;
+/// @name .k-justify-self-selft-start
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: self-end;`.
+/// @example justify-self: self-end;
+/// @name .k-justify-self-self-end
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: baseline;`.
+/// @example justify-self: baseline;
+/// @name .k-justify-self-baseline
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: first baseline;`.
+/// @example justify-self: first baseline;
+/// @name .k-justify-self-first-baseline
+/// @group justify-self
+/// @contextType css
+
+/// This is equivalent to `justify-self: last baseline;`.
+/// @example justify-self: last baseline;
+/// @name .k-justify-self-last-baseline
+/// @group justify-self
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--justify-self() {
 
