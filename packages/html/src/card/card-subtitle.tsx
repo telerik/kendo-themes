@@ -1,29 +1,22 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface CardSubtitleProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+export const CARDSUBTITLE_CLASSNAME = `k-card-subtitle`;
 
-export class CardSubtitle extends React.Component<CardSubtitleProps> {
+export const CardSubtitle = (
+    props: React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            ...htmlAttributes
-        } = this.props;
-
-        return (
-            <div
-                {...htmlAttributes}
-                className={classNames(
-                    'k-card-subtitle',
-                    className
-                )}>
-                {children}
-            </div>
-        );
-    }
-}
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                CARDSUBTITLE_CLASSNAME,
+            )}>
+            {props.children}
+        </div>
+    );
+};

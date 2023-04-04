@@ -1,33 +1,33 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames, stateClassNames, States } from '../utils';
 
-export interface EditorContentProps {
-    children?: React.ReactNode;
-    className?: string;
-    focus?: boolean;
-}
+export const EDITORCONTENT_CLASSNAME = `k-editor-content`;
 
-export class EditorContent extends React.Component<EditorContentProps> {
+const states = [
+    States.focus,
+];
 
-    render() {
-        const {
-            children,
-            className,
-            focus,
-        } = this.props;
+export type KendoEditorContentState = { [K in (typeof states)[number]]?: boolean };
 
+export const EditorContent = (
+    props: KendoEditorContentState &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        focus,
+        ...other
+    } = props;
 
-        return (
-            <div
-                className={classNames(
-                    'k-editor-content',
-                    {
-                        'k-focus': focus
-                    },
-                    className
-                )}>
-                {children}
-            </div>
-        );
-    }
-}
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                EDITORCONTENT_CLASSNAME,
+                stateClassNames(EDITORCONTENT_CLASSNAME, {
+                    focus,
+                }),
+            )}>
+            {props.children}
+        </div>
+    );
+};

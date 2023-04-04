@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Switch } from '../../switch';
 
@@ -44,62 +43,62 @@ root.render(
 
             <span>small</span>
             <span>
-                <Switch checked size="small" onLabel="On" trackRounded="small" thumbRounded="small" />
+                <Switch checked size="small" onLabel="On" trackRounded="sm" thumbRounded="sm" />
             </span>
             <span>
-                <Switch size="small" offLabel="Off" trackRounded="small" thumbRounded="small" />
+                <Switch size="small" offLabel="Off" trackRounded="sm" thumbRounded="sm" />
             </span>
             <span>
-                <Switch checked size="medium" onLabel="On" trackRounded="small" thumbRounded="small" />
+                <Switch checked size="medium" onLabel="On" trackRounded="sm" thumbRounded="sm" />
             </span>
             <span>
-                <Switch size="medium" offLabel="Off" trackRounded="small" thumbRounded="small" />
+                <Switch size="medium" offLabel="Off" trackRounded="sm" thumbRounded="sm" />
             </span>
             <span>
-                <Switch checked size="large" onLabel="On" trackRounded="small" thumbRounded="small" />
+                <Switch checked size="large" onLabel="On" trackRounded="sm" thumbRounded="sm" />
             </span>
             <span>
-                <Switch size="large" offLabel="Off" trackRounded="small" thumbRounded="small" />
+                <Switch size="large" offLabel="Off" trackRounded="sm" thumbRounded="sm" />
             </span>
 
             <span>medium</span>
             <span>
-                <Switch checked size="small" onLabel="On" trackRounded="medium" thumbRounded="medium" />
+                <Switch checked size="small" onLabel="On" trackRounded="md" thumbRounded="md" />
             </span>
             <span>
-                <Switch size="small" offLabel="Off" trackRounded="medium" thumbRounded="medium" />
+                <Switch size="small" offLabel="Off" trackRounded="md" thumbRounded="md" />
             </span>
             <span>
-                <Switch checked size="medium" onLabel="On" trackRounded="medium" thumbRounded="medium" />
+                <Switch checked size="medium" onLabel="On" trackRounded="md" thumbRounded="md" />
             </span>
             <span>
-                <Switch size="medium" offLabel="Off" trackRounded="medium" thumbRounded="medium" />
+                <Switch size="medium" offLabel="Off" trackRounded="md" thumbRounded="md" />
             </span>
             <span>
-                <Switch checked size="large" onLabel="On" trackRounded="medium" thumbRounded="medium" />
+                <Switch checked size="large" onLabel="On" trackRounded="md" thumbRounded="md" />
             </span>
             <span>
-                <Switch size="large" offLabel="Off" trackRounded="medium" thumbRounded="medium" />
+                <Switch size="large" offLabel="Off" trackRounded="md" thumbRounded="md" />
             </span>
 
             <span>large</span>
             <span>
-                <Switch checked size="small" onLabel="On" trackRounded="large" thumbRounded="large" />
+                <Switch checked size="small" onLabel="On" trackRounded="lg" thumbRounded="lg" />
             </span>
             <span>
-                <Switch size="small" offLabel="Off" trackRounded="large" thumbRounded="large" />
+                <Switch size="small" offLabel="Off" trackRounded="lg" thumbRounded="lg" />
             </span>
             <span>
-                <Switch checked size="medium" onLabel="On" trackRounded="large" thumbRounded="large" />
+                <Switch checked size="medium" onLabel="On" trackRounded="lg" thumbRounded="lg" />
             </span>
             <span>
-                <Switch size="medium" offLabel="Off" trackRounded="large" thumbRounded="large" />
+                <Switch size="medium" offLabel="Off" trackRounded="lg" thumbRounded="lg" />
             </span>
             <span>
-                <Switch checked size="large" onLabel="On" trackRounded="large" thumbRounded="large" />
+                <Switch checked size="large" onLabel="On" trackRounded="lg" thumbRounded="lg" />
             </span>
             <span>
-                <Switch size="large" offLabel="Off" trackRounded="large" thumbRounded="large" />
+                <Switch size="large" offLabel="Off" trackRounded="lg" thumbRounded="lg" />
             </span>
 
             <span>full</span>

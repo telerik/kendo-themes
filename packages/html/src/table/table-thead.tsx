@@ -1,28 +1,16 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface TableTheadProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-table-thead`;
 
-
-export class TableThead extends React.Component<TableTheadProps> {
-
-    render() {
-        const {
-            children,
+export const TableThead = (
+    props: React.HTMLAttributes<HTMLTableSectionElement>
+) => (
+    <thead
+        className={classNames(
+            props.className,
             className,
-        } = this.props;
-
-        return (
-            <thead
-                className={classNames(
-                    className,
-                    'k-table-thead'
-                )}>
-                {children}
-            </thead>
-        );
-    }
-}
+        )}
+    >
+        {props.children}
+    </thead>
+);

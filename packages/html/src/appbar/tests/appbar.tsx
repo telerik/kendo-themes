@@ -1,7 +1,5 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Appbar } from '../appbar';
-import { AppbarSection } from '../appbar-section';
+import { Appbar, AppbarSection } from '../../appbar';
 import { Icon } from '../../icon';
 import { Textbox } from '../../textbox';
 

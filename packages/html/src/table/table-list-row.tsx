@@ -1,45 +1,53 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames, stateClassNames, States } from '../utils';
 
-export interface TableListRowProps {
-    children?: React.ReactNode;
-    className?: string;
+export const TABLELISTROW_CLASSNAME = `k-table-row`;
+
+const states = [
+    States.hover,
+    States.focus,
+    States.selected,
+    States.disabled
+];
+
+export type KendoTableListRowProps = {
     alt?: boolean;
-    hover?: boolean;
-    focus?: boolean;
-    selected?: boolean;
-    disabled?: boolean;
-}
+};
+
+export type KendoTableListRowState = { [K in (typeof states)[number]]?: boolean };
 
 
-export class TableListRow extends React.Component<TableListRowProps> {
+export const TableListRow = (
+    props: KendoTableListRowProps &
+        KendoTableListRowState &
+        React.HTMLAttributes<HTMLLIElement>
+) => {
+    const {
+        hover,
+        focus,
+        selected,
+        disabled,
+        alt,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            alt,
-            hover,
-            focus,
-            selected,
-            disabled,
-        } = this.props;
-
-        return (
-            <li
-                className={classNames(
-                    className,
-                    'k-table-row',
-                    {
-                        'k-table-alt-row': alt,
-                        'k-hover': hover,
-                        'k-focus': focus,
-                        'k-selected': selected,
-                        'k-disabled': disabled
-                    }
-                )}>
-                {children}
-            </li>
-        );
-    }
-}
+    return (
+        <li
+            {...other}
+            className={classNames(
+                props.className,
+                TABLELISTROW_CLASSNAME,
+                {
+                    ['k-table-alt-row']: alt,
+                },
+                stateClassNames(TABLELISTROW_CLASSNAME, {
+                    hover,
+                    focus,
+                    disabled,
+                    selected,
+                })
+            )}
+        >
+            {props.children}
+        </li>
+    );
+};

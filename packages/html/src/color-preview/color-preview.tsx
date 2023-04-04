@@ -1,41 +1,53 @@
-import * as React from 'react';
-import { Icon } from '../icon';
 import { classNames } from '../utils';
+import { Icon } from '../icon';
 
-export interface ColorPreviewProps {
-    className?: string;
+export const COLORPREVIEW_CLASSNAME = `k-color-preview`;
+
+const states = [];
+
+const options = {};
+
+export type KendoColorPreviewProps = {
     color?: string;
     iconName?: string;
-}
+};
 
-export class ColorPreview extends React.Component<ColorPreviewProps> {
+export const ColorPreview = (
+    props: KendoColorPreviewProps &
+        React.HTMLAttributes<HTMLSpanElement>
+) => {
+    const {
+        color,
+        iconName,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            className,
-            color,
-            iconName
-        } = this.props;
 
-        return (
+    return (
+        <span
+            {...other}
+            className={classNames(
+                props.className,
+                COLORPREVIEW_CLASSNAME,
+                {
+                    'k-icon-color-preview': iconName,
+                    'k-no-color': !color
+                },
+            )}
+        >
+            {iconName && (
+                <Icon name={iconName} className="k-color-preview-icon" />
+            )}
             <span
-                className={classNames(
-                    'k-color-preview',
-                    {
-                        'k-icon-color-preview': iconName,
-                        'k-no-color': !color
-                    },
-                    className
-                )}
-            >
-                {iconName && (
-                    <Icon name={iconName} className="k-color-preview-icon" />
-                )}
-                <span
-                    className="k-color-preview-mask"
-                    style={{ backgroundColor: color }}>
-                </span>
+                className="k-color-preview-mask"
+                style={{ backgroundColor: color }}>
             </span>
-        );
-    }
-}
+        </span>
+    );
+};
+
+ColorPreview.states = states;
+ColorPreview.options = options;
+ColorPreview.className = COLORPREVIEW_CLASSNAME;
+
+export default ColorPreview;

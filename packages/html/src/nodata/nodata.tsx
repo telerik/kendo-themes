@@ -1,27 +1,9 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface NoDataProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-nodata`;
 
-export class NoData extends React.Component<NoDataProps> {
-
-    render() {
-        const {
-            children,
-            className
-        } = this.props;
-
-        return (
-            <div
-                className={classNames(
-                    className,
-                    'k-nodata',
-                )}>
-                {children}
-            </div>
-        );
-    }
-}
+export const NoData = (props: React.HTMLAttributes<HTMLSpanElement>) => (
+    <span className={classNames(className, props.className)}>
+        {props.children}
+    </span>
+);

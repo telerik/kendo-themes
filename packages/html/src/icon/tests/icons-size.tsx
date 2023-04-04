@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Icon } from '..';
 
@@ -25,25 +24,25 @@ root.render(
             <span>xxxl</span>
 
             <span>
-                <Icon name="star" size="xs" />
+                <Icon name="star" size="xsmall" />
             </span>
             <span>
-                <Icon name="star" size="sm" />
+                <Icon name="star" size="small" />
             </span>
             <span>
-                <Icon name="star" size="md" />
+                <Icon name="star" size="medium" />
             </span>
             <span>
-                <Icon name="star" size="lg" />
+                <Icon name="star" size="large" />
             </span>
             <span>
-                <Icon name="star" size="xl" />
+                <Icon name="star" size="xlarge" />
             </span>
             <span>
-                <Icon name="star" size="xxl" />
+                <Icon name="star" size="xxlarge" />
             </span>
             <span>
-                <Icon name="star" size="xxxl" />
+                <Icon name="star" size="xxxlarge" />
             </span>
         </div>
     </>

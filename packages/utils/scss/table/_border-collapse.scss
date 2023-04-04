@@ -1,4 +1,14 @@
-// TODO: docs
+/// This is equivalent to `border-collapse: collapse;`.
+/// @example border-collapse: collapse;
+/// @name .k-border-collapse
+/// @group border-collapse
+/// @contextType css
+
+/// This is equivalent to `border-collapse: separate;`.
+/// @example border-collapse: separate;
+/// @name .k-border-separate
+/// @group border-collapse
+/// @contextType css
 
 @mixin kendo-utils--table--border-collapse() {
 

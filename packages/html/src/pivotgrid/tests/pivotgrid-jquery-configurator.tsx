@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction, ChipList } from '../../chip';
 import { Treeview, TreeviewItem } from '../../treeview';

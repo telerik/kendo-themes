@@ -1,4 +1,20 @@
-// TODO: docs
+/// This is equivalent to `list-style-type: none;`.
+/// @example list-style-type: none;
+/// @name .k-list-none
+/// @group list-style
+/// @contextType css
+
+/// This is equivalent to `list-style-type: disc;`.
+/// @example list-style-type: disc;
+/// @name .k-list-disc
+/// @group list-style
+/// @contextType css
+
+/// This is equivalent to `list-style-type: decimal;`.The marker of list items is a number.
+/// @example list-style-type: decimal;
+/// @name .k-list-decimal
+/// @group list-style
+/// @contextType css
 
 @mixin kendo-utils--typography--list-style-type() {
 

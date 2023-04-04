@@ -1,1 +1,1 @@
-export * from './floating-label';
+export * from './floating-label.spec';

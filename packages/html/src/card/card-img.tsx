@@ -1,46 +1,41 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface CardImageProps {
-    children?: React.ReactNode;
-    className?: string;
-    style?: React.CSSProperties;
+export const CARDIMAGE_CLASSNAME = `k-card-image`;
+
+export type KendoCardImageProps = {
     src?: string;
-}
+};
 
-export class CardImage extends React.Component<CardImageProps> {
+export const CardImage = (
+    props: KendoCardImageProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        src,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            src,
-            ...htmlAttributes
-        } = this.props;
+    return (
+        <>
+            {
+                src
+                    ? <img
+                        {...other}
+                        className={classNames(
+                            props.className,
+                            CARDIMAGE_CLASSNAME,
+                        )}
+                        src={src}
+                    />
+                    : <span
+                        {...other}
+                        className={classNames(
+                            props.className,
+                            CARDIMAGE_CLASSNAME,
+                        )}
+                    ><>{props.children}</></span>
+            }
+        </>
 
-        return (
-            <>
-                {
-                    src
-                        ? <img
-                            style={this.props.style}
-                            {...htmlAttributes}
-                            className={classNames(
-                                'k-card-image',
-                                className
-                            )}
-                            src={src}
-                        />
-                        : <span
-                            style={this.props.style}
-                            {...htmlAttributes}
-                            className={classNames(
-                                'k-card-image',
-                                className
-                            )}
-                        ><>{children}</></span>
-                }
-            </>
-        );
-    }
-}
+    );
+};

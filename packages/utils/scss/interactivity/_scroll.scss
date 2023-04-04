@@ -1,4 +1,328 @@
-// TODO: docs
+/// This is equivalent to `scroll-behavior: auto;`.
+/// @example scroll-behavior: auto;
+/// @name .k-scroll-auto
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-behavior: smooth;`.
+/// @example scroll-behavior: smooth;
+/// @name .k-scroll-smooth
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-snap-type: x var(--k-scroll-snap-strictness);`.
+/// @example scroll-snap-type: x var(--k-scroll-snap-strictness);
+/// @name .k-scroll-snap-snap-x
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-snap-type: y var(--k-scroll-snap-strictness);`.
+/// @example scroll-snap-type: y var(--k-scroll-snap-strictness);
+/// @name .k-scroll-snap-snap-y
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `--k-scroll-snap-strictness: mandatory;`.
+/// @example --k-scroll-snap-strictness: mandatory;
+/// @name .k-scroll-snap-mandatory
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `--k-scroll-snap-strictness: proximity;`.
+/// @example --k-scroll-snap-strictness: proximity;
+/// @name .k-scroll-snap-proximity
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-snap-stop: normal;`.
+/// @example scroll-snap-stop: normal;
+/// @name .k-scroll-snap-stop-normal
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-snap-stop: always;`.
+/// @example scroll-snap-stop: always;
+/// @name .k-scroll-snap-stop-always
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-snap-align: start;`.
+/// @example scroll-snap-align: start;
+/// @name .k-scroll-snap-align-start
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-snap-align: end;`.
+/// @example scroll-snap-align: end;
+/// @name .k-scroll-snap-align-end
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-snap-align: center;`.
+/// @example scroll-snap-align: center;
+/// @name .k-scroll-snap-align-center
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-snap-align: none;`.
+/// @example scroll-snap-align: none;
+/// @name .k-scroll-snap-align-none
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin: 0;`.
+/// @example scroll-margin: 0;
+/// @name .k-scroll-m-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin: 1px;`.
+/// @example scroll-margin: 1px;
+/// @name .k-scroll-m-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin: 0.25rem;`.
+/// @example scroll-margin: 0.25rem;
+/// @name .k-scroll-m-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-top: 0;`.
+/// @example scroll-margin-top: 0;
+/// @name .k-scroll-m-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-top: 1px;`.
+/// @example scroll-margin-top: 1px;
+/// @name .k-scroll-m-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-top: 0.25rem;`.
+/// @example scroll-margin-top: 0.25rem;
+/// @name .k-scroll-m-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-right: 0;`.
+/// @example scroll-margin-right: 0;
+/// @name .k-scroll-mr-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-right: 1px;`.
+/// @example scroll-margin-right: 1px;
+/// @name .k-scroll-mr-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-right: 0.25rem;`.
+/// @example scroll-margin-right: 0.25rem;
+/// @name .k-scroll-mr-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-bottom: 0;`.
+/// @example scroll-margin-bottom: 0;
+/// @name .k-scroll-mb-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-bottom: 1px;`.
+/// @example scroll-margin-bottom: 1px;
+/// @name .k-scroll-mb-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-bottom: 0.25rem;`.
+/// @example scroll-margin-bottom: 0.25rem;
+/// @name .k-scroll-mb-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-left: 0;`.
+/// @example scroll-margin-left: 0;
+/// @name .k-scroll-ml-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-left: 1px;`.
+/// @example scroll-margin-left: 1px;
+/// @name .k-scroll-ml-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-left: 0.25rem;`.
+/// @example scroll-margin-left: 0.25rem;
+/// @name .k-scroll-ml-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-inline: 0;`.
+/// @example scroll-margin-inline: 0;
+/// @name .k-scroll-x-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-inline: 1px;`.
+/// @example scroll-margin-inline: 1px;
+/// @name .k-scroll-x-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-inline: 0.25rem;`.
+/// @example scroll-margin-inline: 0.25rem;
+/// @name .k-scroll-x-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-block: 0;`.
+/// @example scroll-margin-block: 0;
+/// @name .k-scroll-y-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-block: 1px;`.
+/// @example scroll-margin-block: 1px;
+/// @name .k-scroll-y-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-margin-block: 0.25rem;`.
+/// @example scroll-margin-block: 0.25rem;
+/// @name .k-scroll-y-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding: 0;`.
+/// @example scroll-padding: 0;
+/// @name .k-scroll-p-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding: 1px;`.
+/// @example scroll-padding: 1px;
+/// @name .k-scroll-p-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding: 0.25rem;`.
+/// @example scroll-padding: 0.25rem;
+/// @name .k-scroll-p-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-top: 0;`.
+/// @example scroll-padding-top: 0;
+/// @name .k-scroll-p-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-top: 1px;`.
+/// @example scroll-padding-top: 1px;
+/// @name .k-scroll-p-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-top: 0.25rem;`.
+/// @example scroll-padding-top: 0.25rem;
+/// @name .k-scroll-p-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-right: 0;`.
+/// @example scroll-padding-right: 0;
+/// @name .k-scroll-pr-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-right: 1px;`.
+/// @example scroll-padding-right: 1px;
+/// @name .k-scroll-pr-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-right: 0.25rem;`.
+/// @example scroll-padding-right: 0.25rem;
+/// @name .k-scroll-pr-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-bottom: 0;`.
+/// @example scroll-padding-bottom: 0;
+/// @name .k-scroll-pb-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-bottom: 1px;`.
+/// @example scroll-padding-bottom: 1px;
+/// @name .k-scroll-pb-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-bottom: 0.25rem;`.
+/// @example scroll-padding-bottom: 0.25rem;
+/// @name .k-scroll-pb-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-left: 0;`.
+/// @example scroll-padding-left: 0;
+/// @name .k-scroll-pl-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-left: 1px;`.
+/// @example scroll-padding-left: 1px;
+/// @name .k-scroll-pl-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-left: 0.25rem;`.
+/// @example scroll-padding-left: 0.25rem;
+/// @name .k-scroll-pl-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-inline: 0;`.
+/// @example scroll-padding-inline: 0;
+/// @name .k-scroll-x-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-inline: 1px;`.
+/// @example scroll-padding-inline: 1px;
+/// @name .k-scroll-x-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-inline: 0.25rem;`.
+/// @example scroll-padding-inline: 0.25rem;
+/// @name .k-scroll-x-1
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-block: 0;`.
+/// @example scroll-padding-block: 0;
+/// @name .k-scroll-y-0
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-block: 1px;`.
+/// @example scroll-padding-block: 1px;
+/// @name .k-scroll-y-1px
+/// @group scroll
+/// @contextType css
+
+/// This is equivalent to `scroll-padding-block: 0.25rem;`.
+/// @example scroll-padding-block: 0.25rem;
+/// @name .k-scroll-y-1
+/// @group scroll
+/// @contextType css
+
+
 
 @mixin kendo-utils--interactivity--scroll() {
 

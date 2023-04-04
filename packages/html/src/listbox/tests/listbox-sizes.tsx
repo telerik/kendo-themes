@@ -1,8 +1,6 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
-import { List, ListItem } from '../../list';
-import { ListBox, ListBoxActions } from '../../listbox';
+import { ListItem } from '../../list';
+import { ListBox } from '../../listbox';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -28,59 +26,35 @@ root.render(
             <span>Large</span>
 
             <section>
-                <ListBox size="small">
-                    <ListBoxActions>
-                        <Button icon="caret-alt-up"></Button>
-                        <Button icon="caret-alt-down"></Button>
-                        <Button icon="caret-alt-left"></Button>
-                        <Button icon="caret-alt-right"></Button>
-                    </ListBoxActions>
-                    <List>
-                        <ListItem>Item</ListItem>
-                        <ListItem hover>Hover</ListItem>
-                        <ListItem focus>Focus</ListItem>
-                        <ListItem selected>Selected</ListItem>
-                        <ListItem hover selected>Hover selected</ListItem>
-                        <ListItem disabled>Disabled</ListItem>
-                    </List>
+                <ListBox size="small" actions={[ 'up', 'down', 'left', 'right' ]}>
+                    <ListItem>Item</ListItem>
+                    <ListItem hover>Hover</ListItem>
+                    <ListItem focus>Focus</ListItem>
+                    <ListItem selected>Selected</ListItem>
+                    <ListItem hover selected>Hover selected</ListItem>
+                    <ListItem disabled>Disabled</ListItem>
                 </ListBox>
             </section>
 
             <section>
-                <ListBox>
-                    <ListBoxActions>
-                        <Button icon="caret-alt-up"></Button>
-                        <Button icon="caret-alt-down"></Button>
-                        <Button icon="caret-alt-left"></Button>
-                        <Button icon="caret-alt-right"></Button>
-                    </ListBoxActions>
-                    <List>
-                        <ListItem>Item</ListItem>
-                        <ListItem hover>Hover</ListItem>
-                        <ListItem focus>Focus</ListItem>
-                        <ListItem selected>Selected</ListItem>
-                        <ListItem hover selected>Hover selected</ListItem>
-                        <ListItem disabled>Disabled</ListItem>
-                    </List>
+                <ListBox actions={[ 'up', 'down', 'left', 'right' ]}>
+                    <ListItem>Item</ListItem>
+                    <ListItem hover>Hover</ListItem>
+                    <ListItem focus>Focus</ListItem>
+                    <ListItem selected>Selected</ListItem>
+                    <ListItem hover selected>Hover selected</ListItem>
+                    <ListItem disabled>Disabled</ListItem>
                 </ListBox>
             </section>
 
             <section>
-                <ListBox size="large">
-                    <ListBoxActions>
-                        <Button icon="caret-alt-up"></Button>
-                        <Button icon="caret-alt-down"></Button>
-                        <Button icon="caret-alt-left"></Button>
-                        <Button icon="caret-alt-right"></Button>
-                    </ListBoxActions>
-                    <List>
-                        <ListItem>Item</ListItem>
-                        <ListItem hover>Hover</ListItem>
-                        <ListItem focus>Focus</ListItem>
-                        <ListItem selected>Selected</ListItem>
-                        <ListItem hover selected>Hover selected</ListItem>
-                        <ListItem disabled>Disabled</ListItem>
-                    </List>
+                <ListBox size="large" actions={[ 'up', 'down', 'left', 'right' ]}>
+                    <ListItem>Item</ListItem>
+                    <ListItem hover>Hover</ListItem>
+                    <ListItem focus>Focus</ListItem>
+                    <ListItem selected>Selected</ListItem>
+                    <ListItem hover selected>Hover selected</ListItem>
+                    <ListItem disabled>Disabled</ListItem>
                 </ListBox>
             </section>
         </div>

@@ -1,55 +1,51 @@
-import * as React from 'react';
-import { classNames } from '../utils';
-import { CardTitle, CardSubtitle } from '../card';
 import { Button } from '../button';
+import { classNames } from '../utils';
+import { CardSubtitle } from './card-subtitle';
+import { CardTitle } from './card-title';
 
-export interface CardBodyProps {
-    children?: React.ReactNode;
-    className?: string;
-    style?: React.CSSProperties;
+export const CARDBODY_CLASSNAME = `k-card-body`;
+
+export type KendoCardBodyProps = {
     title?: string;
     subtitle?: string;
     details?: boolean;
-}
+};
 
-export class CardBody extends React.Component<CardBodyProps> {
+export const CardBody = (
+    props: KendoCardBodyProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        title,
+        subtitle,
+        details,
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            title,
-            subtitle,
-            details,
-            ...htmlAttributes
-        } = this.props;
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                CARDBODY_CLASSNAME,
+            )}>
+            {title && <CardTitle>{title}</CardTitle>}
+            {subtitle && <CardSubtitle>{subtitle}</CardSubtitle>}
 
-        return (
-            <div
-                style={this.props.style}
-                {...htmlAttributes}
-                className={classNames(
-                    'k-card-body',
-                    className
-                )}>
-                {title && <CardTitle>{title}</CardTitle>}
-                {subtitle && <CardSubtitle>{subtitle}</CardSubtitle>}
+            <>{props.children}</>
 
-                <>{children}</>
-
-                {details &&
-                    <span className="k-card-body-actions">
-                        <Button
-                            className="k-card-details"
-                            icon="more-vertical"
-                            rounded="medium"
-                            size="medium"
-                            fillMode="flat"
-                            themeColor="base"
-                        />
-                    </span>
-                }
-            </div>
-        );
-    }
-}
+            {details &&
+                <span className="k-card-header-actions">
+                    <Button
+                        className="k-card-details"
+                        icon="more-vertical"
+                        rounded="medium"
+                        size="medium"
+                        fillMode="flat"
+                        themeColor="base"
+                    />
+                </span>
+            }
+        </div>
+    );
+};

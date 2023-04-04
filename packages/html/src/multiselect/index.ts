@@ -1,1 +1,1 @@
-export * from './multiselect';
+export * from './multiselect.spec';

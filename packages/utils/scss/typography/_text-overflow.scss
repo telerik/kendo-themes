@@ -1,3 +1,15 @@
+/// This is equivalent to `text-overflow: clip;`.
+/// @example text-overflow: clip;
+/// @name .k-text-clip
+/// @group text-overflow
+/// @contextType css
+
+/// This is equivalent to `text-overflow: ellipsis; white-space: nowrap; overflow: hidden;`.
+/// @example text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+/// @name .k-text-ellipsis
+/// @group text-overflow
+/// @contextType css
+
 @mixin kendo-utils--typography--text-overflow() {
 
     // Text overflow utility classes

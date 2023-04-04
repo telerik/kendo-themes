@@ -1,74 +1,89 @@
-/// This is equivalent to `overflow: auto;`. Depends on the user agent. If content fits inside the padding box, it looks the same as visible, but still establishes a new block formatting context. Desktop browsers provide scrollbar if content overflows.
+/// This is equivalent to `overflow: auto;`.
+/// @example overflow: auto;
 /// @name .k-overflow-auto
 /// @group overflow
 /// @contextType css
 
-/// This is equivalent to `overflow: hidden;`. Content is clipped if necessary to fit the padding box. No scrollbar is provided, and no support for allowing the user to scroll (such as by dragging or using a scroll wheel) is allowed. The content can be scrolled programmatically (for example, by setting the value of a property such as offsetLeft), so the element is still a scroll container.
+/// This is equivalent to `overflow: hidden;`.
+/// @example overflow: hidden;
 /// @name .k-overflow-hidden
 /// @group overflow
 /// @contextType css
 
-/// This is equivalent to `overflow: visible;`. Content is not clipped and may be rendered outside the padding box.
+/// This is equivalent to `overflow: visible;`.
+/// @example overflow: visible;
 /// @name .k-overflow-visible
 /// @group overflow
 /// @contextType css
 
-/// This is equivalent to `overflow: scroll;`. Content is clipped if necessary to fit the padding box. Browsers always display scrollbar whether or not any content is actually clipped, preventing scrollbar from appearing or disappearing as content changes. Printers may still print overflowing content.
+/// This is equivalent to `overflow: scroll;`.
+/// @example overflow: scroll;
 /// @name .k-overflow-scroll
 /// @group overflow
 /// @contextType css
 
-/// This is equivalent to `overflow: clip;`. Like for hidden, the content is clipped to the element's padding box. The difference between clip and hidden is that the clip keyword also forbids all scrolling, including programmatic scrolling.
+/// This is equivalent to `overflow: clip;`.
+/// @example overflow: clip;
 /// @name .k-overflow-clip
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-x: auto;`.
+/// @example overflow-x: auto;
 /// @name .k-overflow-x-auto
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-x: hidden;`.
+/// @example overflow-x: hidden;
 /// @name .k-overflow-x-hidden
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-x: visible;`.
+/// @example overflow-x: visible;
 /// @name .k-overflow-x-visible
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-x: scroll;`.
+/// @example overflow-x: scroll;
 /// @name .k-overflow-x-scroll
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-x: clip;`.
+/// @example overflow-x: clip;
 /// @name .k-overflow-x-clip
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-y: auto;`.
+/// @example overflow-y: auto;
 /// @name .k-overflow-y-auto
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-y: hidden;`.
+/// @example overflow-y: hidden;
 /// @name .k-overflow-y-hidden
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-y: visible;`.
+/// @example overflow-y: visible;
 /// @name .k-overflow-y-visible
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-y: scroll;`.
+/// @example overflow-y: scroll;
 /// @name .k-overflow-y-scroll
 /// @group overflow
 /// @contextType css
 
 /// This is equivalent to `overflow-y: clip;`.
+/// @example overflow-y: clip;
 /// @name .k-overflow-y-clip
 /// @group overflow
 /// @contextType css

@@ -1,32 +1,43 @@
-import * as React from 'react';
 import { Icon } from '../icon';
+import { classNames, States } from '../utils';
 
-export interface InputClearValueProps {
-    className?: string;
-    value?: string;
-    readonly?: boolean;
-    loading?: boolean;
-    disabled?: boolean;
-}
+const className = `k-clear-value`;
 
-export class InputClearValue extends React.Component<InputClearValueProps> {
+const states = [
+    States.disabled,
+    States.loading,
+    States.readonly,
+];
 
-    render() {
-        const {
-            readonly,
-            loading,
-            disabled,
-            value
-        } = this.props;
+const options = {};
 
-        if (disabled || readonly || loading || !value ) {
-            return <></>;
-        }
+export type InputClearValueState = { [K in (typeof states)[number]]?: boolean };
+export type InputClearValueOptions = Record<string, unknown>;
 
-        return (
-            <span className="k-clear-value">
-                <Icon name="x" />
-            </span>
-        );
+export const InputClearValue = (
+    props: InputClearValueOptions &
+      InputClearValueState &
+      React.HTMLAttributes<HTMLInputElement>
+) => {
+    const {
+        disabled,
+        loading,
+        readonly,
+        value } = props;
+
+    if (disabled || readonly || loading || !value ) {
+        return <></>;
     }
-}
+
+    return (
+        <span className={classNames(props.className, className)}>
+            <Icon name="x" />
+        </span>
+    );
+};
+
+InputClearValue.states = states;
+InputClearValue.options = options;
+InputClearValue.className = className;
+
+export default InputClearValue;

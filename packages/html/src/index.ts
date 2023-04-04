@@ -48,7 +48,7 @@ export * from './daterangepicker/index';
 export * from './timedurationpicker/index';
 export * from './dropdowngrid/index';
 export * from './dropdownlist/index';
-// export * from './dropdowntree/index';
+export * from './dropdowntree/index';
 export * from './maskedtextbox/index';
 export * from './multiselect/index';
 export * from './numerictextbox/index';

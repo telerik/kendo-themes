@@ -6,7 +6,9 @@
     .k-dropdown-tree {}
 
     // Dropdowntree popup
-    .k-popup-dropdowntree {
+    .k-popup-dropdowntree, // remove legacy class once updated in components
+    .k-dropdowntree-popup,
+    .k-multiselecttree-popup {
         padding: 0;
 
         .k-check-all {

@@ -1,4 +1,14 @@
-// TODO: docs
+/// This is equivalent to `font-style: italic;`.
+/// @example font-style: italic;
+/// @name .k-font-italic
+/// @group font-style
+/// @contextType css
+
+/// This is equivalent to `font-style: normal;`.
+/// @example font-style: normal;
+/// @name .k-font-non-italic
+/// @group font-style
+/// @contextType css
 
 @mixin kendo-utils--typography--font-style() {
 

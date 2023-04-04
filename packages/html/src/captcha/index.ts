@@ -1,1 +1,1 @@
-export * from './captcha';
+export * from './captcha.spec';

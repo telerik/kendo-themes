@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { DatePicker } from '../../datepicker';
 
@@ -10,6 +9,10 @@ const root = ReactDOM.createRoot(
 const styles = `
     #test-area {
         max-width: 660px;
+    }
+
+    .k-popup {
+        width: max-content;
     }
 `;
 

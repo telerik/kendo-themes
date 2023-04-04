@@ -1,12 +1,9 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
-import { Editor } from '../editor';
-import { EditorContent } from '../editor-content';
-import { EditorToolbar } from '../editor-toolbar';
+import { Editor, EditorContent, EditorToolbar } from '../../editor';
 import { Window } from '../../window';
 import { ButtonGroup } from '../../button-group';
 

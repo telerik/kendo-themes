@@ -1,4 +1,20 @@
-// TODO: docs
+/// This is equivalent to `grid-row-start: 1;`.
+/// @example grid-row-start: 1;
+/// @name .k-row-start-1
+/// @group grid-row-start
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: -1;`.
+/// @example grid-row-start: -1;
+/// @name .k-row-start--1
+/// @group grid-row-start
+/// @contextType css
+
+/// This is equivalent to `grid-row-start: auto;`.
+/// @example grid-row-start: auto;
+/// @name .k-row-start-auto
+/// @group grid-row-start
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--grid-row-start-end() {
 

@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "es6",
         "moduleResolution": "node",
-        "jsx": "react",
+        "jsx": "react-jsx",
         "isolatedModules": true,
         "esModuleInterop": true,
         "emitDeclarationOnly": true,

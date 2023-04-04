@@ -1,1 +1,1 @@
-export * from './daterangepicker';
+export * from './daterangepicker.spec';

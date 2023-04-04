@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { DataTable, Table, TableBody, TableFooter, TableGroupRow, TableHeader, TableRow, TableTbody, TableTd, TableTfoot, TableTh, TableThead } from '../../table';
 

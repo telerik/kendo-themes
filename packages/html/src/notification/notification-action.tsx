@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Icon } from '../icon';
 import { classNames } from '../utils';
 
@@ -6,40 +5,37 @@ export enum notificatonActionType {
     CLOSE = 'close'
 }
 
-export interface NotificationActionProps {
-    className?: string;
+const className = `k-notification-action`;
+
+export type KendoNotificationActionProps = {
     type?: notificatonActionType | string;
-}
+};
 
-export class NotificationAction extends React.Component<NotificationActionProps> {
+export const NotificationAction = (
+    props: KendoNotificationActionProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        type
+    } = props;
 
-    render() {
+    let icon;
 
-        const {
-            className,
-            type
-        } = this.props;
-
-        let icon;
-
-        switch (type) {
-            case notificatonActionType.CLOSE:
-                icon = <Icon name="x" />;
-                break;
-            default:
-                return <Icon name={type} />;
-        }
-
-        return (
-            <span
-                className={classNames(
-                    className,
-                    'k-notification-action',
-                    `k-notification-${type}-action`
-                )}
-            >
-                {icon}
-            </span>
-        );
+    switch (type) {
+        case notificatonActionType.CLOSE:
+            icon = <Icon name="x" />;
+            break;
+        default:
+            return <Icon name={type} />;
     }
-}
+
+    return (
+        <span className={classNames(
+            props.className,
+            className,
+            `k-notification-${type}-action`
+        )}>
+            {icon}
+        </span>
+    );
+};

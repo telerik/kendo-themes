@@ -1,1 +1,1 @@
-export * from './timedurationpicker';
+export * from './timedurationpicker.spec';

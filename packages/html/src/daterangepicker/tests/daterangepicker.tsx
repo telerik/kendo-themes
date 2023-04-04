@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { DateRangePicker } from '../../daterangepicker';
 
@@ -54,6 +53,7 @@ root.render(
             <div dir="rtl">
                 <DateRangePicker fillMode="outline" />
             </div>
+
         </div>
     </>
 );

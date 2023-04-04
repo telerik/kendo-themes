@@ -32,8 +32,7 @@
   "scripts": {
     "build": "node ./scripts/build.js",
     "build:tests": "node ./scripts/build-tests.js",
-    "watch:tests": "node ./scripts/build-tests.js --watch",
-    "check-types": "npx tsc src/index.ts --noEmit --emitDeclarationOnly false --jsx react",
+    "check-types": "npx tsc src/index.ts --noEmit --emitDeclarationOnly false --jsx react-jsx",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {

@@ -1,4 +1,80 @@
-// TODO: docs
+/// This is equivalent to `place-content: normal;`.
+/// @example place-content: normal;
+/// @name .k-place-content-normal
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: stretch;`.
+/// @example place-content: stretch;
+/// @name .k-place-content-stretch
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: center;`.
+/// @example place-content: center;
+/// @name .k-place-content-center
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: start;`.
+/// @example place-content: start;
+/// @name .k-place-content-start
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: end;`.
+/// @example place-content: end;
+/// @name .k-place-content-end
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: flex-start;`.
+/// @example place-content: flex-start;
+/// @name .k-place-content-selft-start
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: flex-end;`.
+/// @example place-content: flex-end;
+/// @name .k-place-content-self-end
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: self-start;`.
+/// @example place-content: self-start;
+/// @name .k-place-content-selft-start
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: self-end;`.
+/// @example place-content: self-end;
+/// @name .k-place-content-self-end
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: baseline;`.
+/// @example place-content: baseline;
+/// @name .k-place-content-baseline
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: space-between;`.
+/// @example place-content: space-between;
+/// @name .k-place-content-between
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: space-around;`.
+/// @example place-content: space-around;
+/// @name .k-place-content-around
+/// @group place-content
+/// @contextType css
+
+/// This is equivalent to `place-content: space-evenly;`.
+/// @example place-content: space-evenly;
+/// @name .k-place-content-evenly
+/// @group place-content
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--place-content() {
 

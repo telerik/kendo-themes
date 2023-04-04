@@ -1,9 +1,11 @@
-/// This is equivalent to `transform: scaleX( -1 );`. Flips the element horizontally.
+/// This is equivalent to `transform: scaleX( -1 );`.
+/// @example transform: scaleX( -1 );
 /// @name .k-flip-h
 /// @group transform
 /// @contextType css
 
-/// This is equivalent to `transform: scaleY( -1 );`. Flips the element vertically.
+/// This is equivalent to `transform: scaleY( -1 );`.
+/// @example transform: scaleY( -1 );
 /// @name .k-flip-v
 /// @group transform
 /// @contextType css

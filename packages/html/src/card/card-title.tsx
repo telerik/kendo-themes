@@ -1,37 +1,36 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames, stateClassNames, States } from '../utils';
 
-export interface CardTitleProps {
-    children?: React.ReactNode;
-    className?: string;
-    hover?: boolean;
-    focus?: boolean;
-}
+export const CARDTITLE_CLASSNAME = `k-card-title`;
 
-export class CardTitle extends React.Component<CardTitleProps> {
+const states = [
+    States.hover,
+    States.focus,
+];
 
-    render() {
-        const {
-            children,
-            className,
-            hover,
-            focus,
-            ...htmlAttributes
-        } = this.props;
+export type KendoCardTitleState = { [K in (typeof states)[number]]?: boolean };
 
-        return (
-            <div
-                {...htmlAttributes}
-                className={classNames(
-                    'k-card-title',
-                    {
-                        'k-hover': hover,
-                        'k-focus': focus,
-                    },
-                    className
-                )}>
-                {children}
-            </div>
-        );
-    }
-}
+export const CardTitle = (
+    props: KendoCardTitleState &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        hover,
+        focus,
+        ...other
+    } = props;
+
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                CARDTITLE_CLASSNAME,
+                stateClassNames(CARDTITLE_CLASSNAME, {
+                    hover,
+                    focus
+                }),
+            )}>
+            {props.children}
+        </div>
+    );
+};

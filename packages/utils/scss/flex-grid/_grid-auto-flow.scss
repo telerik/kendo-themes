@@ -1,4 +1,38 @@
-// TODO: docs
+/// This is equivalent to `grid-auto-flow: row;`.
+/// @example grid-auto-flow: row;
+/// @name .k-grid-auto-flow-row
+/// @group grid-auto-flow
+/// @contextType css
+
+/// This is equivalent to `grid-auto-flow: column;`.
+/// @example grid-auto-flow: column;
+/// @name .k-grid-auto-flow-column
+/// @group grid-auto-flow
+/// @contextType css
+
+/// This is equivalent to `grid-auto-flow: dense;`.
+/// @example grid-auto-flow: dense;
+/// @name .k-grid-auto-flow-dense
+/// @group grid-auto-flow
+/// @contextType css
+
+/// This is equivalent to `grid-auto-flow: row dense;`.
+/// @example grid-auto-flow: row dense;
+/// @name .k-grid-auto-flow-row-dense
+/// @group grid-auto-flow
+/// @contextType css
+
+/// This is equivalent to `grid-auto-flow: col dense;`.
+/// @example grid-auto-flow: col dense;
+/// @name .k-grid-auto-flow-col-dense
+/// @group grid-auto-flow
+/// @contextType css
+
+/// This is equivalent to `grid-auto-flow: unset;`.
+/// @example grid-auto-flow: unset;
+/// @name .k-grid-auto-flow-unset
+/// @group grid-auto-flow
+/// @contextType css
 
 @mixin kendo-utils--flex-grid--grid-auto-flow() {
 

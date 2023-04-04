@@ -9,11 +9,8 @@
 </head>
 <body id="app" class="k-body">
     <style>
-        .k-animation-container {
-            width: min-content;
-            max-width: 100%;
-            position: relative;
-            overflow: visible;
+        #test-area {
+            max-width: 660px;
         }
 
     </style>
@@ -27,17 +24,7 @@
                     <span class="k-button-icon k-icon k-i-clock-arrow-rotate"></span>
                 </button>
             </span>
-        </div>
-        <div dir="rtl">
-            <span class="k-timedurationpicker k-input k-input-md k-input-solid k-rounded-md">
-                <input type="text" class="k-input-inner" placeholder="02 days : 01 hours : 30 mins" autocomplete="off" value="">
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-icon k-i-clock-arrow-rotate"></span>
-                </button>
-            </span>
-        </div>
-        <div class="k-animation-container">
-            <div class="k-popup k-reset">
+            <div class="k-timedurationpicker-popup k-popup">
                 <div class="k-timeselector k-timeselector-md">
                     <div class="k-actions k-actions-start k-actions-horizontal k-time-fast-selection">
                         <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
@@ -186,8 +173,14 @@
                 </div>
             </div>
         </div>
-        <div class="k-animation-container">
-            <div class="k-popup k-reset k-rtl">
+        <div dir="rtl">
+            <span class="k-timedurationpicker k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="02 days : 01 hours : 30 mins" autocomplete="off" value="">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-clock-arrow-rotate"></span>
+                </button>
+            </span>
+            <div class="k-timedurationpicker-popup k-popup">
                 <div class="k-timeselector k-timeselector-md">
                     <div class="k-actions k-actions-start k-actions-horizontal k-time-fast-selection">
                         <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">

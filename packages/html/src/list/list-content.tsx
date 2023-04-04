@@ -1,34 +1,25 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface ListContentProps {
-    children?: React.ReactNode;
-    className?: string;
-    virtualization?: boolean,
-}
+const className = `k-list-content`;
 
+export type KendoListContentProps = {
+    virtualization?: boolean;
+};
 
-export class ListContent extends React.Component<ListContentProps> {
+export const ListContent = (
+    props: KendoListContentProps &
+    React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        virtualization,
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            virtualization,
-        } = this.props;
-
-        return (
-            <div
-                className={classNames(
-                    className,
-                    'k-list-content'
-                )}>
-                <ul className={classNames('k-list-ul')}>
-                    {children}
-                </ul>
-                { virtualization && <div className="k-height-container"><div></div></div> }
-            </div>
-
-        );
-    }
-}
+    return (
+        <div className={classNames(className, props.className)}>
+            <ul className={classNames('k-list-ul')}>
+                {props.children}
+            </ul>
+            { virtualization && <div className="k-height-container"><div></div></div> }
+        </div>
+    );
+};

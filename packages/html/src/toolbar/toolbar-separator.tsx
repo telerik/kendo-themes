@@ -1,19 +1,7 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface ToolbarSeparatorProps {
-    className?: string;
-}
+const className = `k-separator`;
 
-export class ToolbarSeparator extends React.Component<ToolbarSeparatorProps> {
-
-    render() {
-        const {
-            className
-        } = this.props;
-
-        return (
-            <div className={classNames(className, 'k-separator')}></div>
-        );
-    }
-}
+export const ToolbarSeparator = (props: React.HTMLAttributes<HTMLSpanElement>) => (
+    <div className={classNames(className, props.className)}></div>
+);

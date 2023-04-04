@@ -1,29 +1,22 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface CardFooterProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+export const CARDFOOTER_CLASSNAME = `k-card-footer`;
 
-export class CardFooter extends React.Component<CardFooterProps> {
+export const CardFooter = (
+    props: React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        ...other
+    } = props;
 
-    render() {
-        const {
-            children,
-            className,
-            ...htmlAttributes
-        } = this.props;
-
-        return (
-            <div
-                {...htmlAttributes}
-                className={classNames(
-                    'k-card-footer',
-                    className
-                )}>
-                {children}
-            </div>
-        );
-    }
-}
+    return (
+        <div
+            {...other}
+            className={classNames(
+                props.className,
+                CARDFOOTER_CLASSNAME,
+            )}>
+            {props.children}
+        </div>
+    );
+};

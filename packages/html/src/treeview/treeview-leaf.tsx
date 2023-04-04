@@ -1,47 +1,62 @@
-import * as React from 'react';
 import { Icon } from '../icon';
-import { classNames } from '../utils';
+import { classNames, stateClassNames, States } from '../utils';
 
-export interface TreeViewLeafProps {
-    className?: string;
+export const TREEVIEWLEAF_CLASSNAME = `k-treeview-leaf`;
+
+const states = [
+    States.hover,
+    States.focus,
+    States.selected,
+];
+
+const options = {};
+
+export type KendoTreeviewLeafProps = {
     text?: string;
     showIcon?: boolean;
     icon?: string;
-    hover?: boolean;
-    focus?: boolean;
-    selected?: boolean;
-}
+};
 
-export class TreeViewLeaf extends React.Component<TreeViewLeafProps> {
+export type KendoTreeviewLeafState = { [K in (typeof states)[number]]?: boolean };
 
-    render() {
-        const {
-            className,
-            text,
-            showIcon,
-            icon,
-            hover,
-            focus,
-            selected
-        } = this.props;
+export const TreeviewLeaf = (
+    props: KendoTreeviewLeafProps &
+        KendoTreeviewLeafState &
+        React.HTMLAttributes<HTMLLIElement>
+) => {
+    const {
+        text,
+        showIcon,
+        icon,
+        hover,
+        focus,
+        selected,
+        ...other
+    } = props;
 
-        return (
-            <span
-                className={classNames(
-                    className,
-                    'k-treeview-leaf',
-                    {
-                        'k-hover': hover,
-                        'k-focus': focus,
-                        'k-selected': selected
-                    }
-                )}
-            >
-                {showIcon && <Icon name={icon} />}
-                <span className="k-treeview-leaf-text">
-                    {text}
-                </span>
+    return (
+        <span
+            {...other}
+            className={classNames(
+                props.className,
+                TREEVIEWLEAF_CLASSNAME,
+                stateClassNames(TREEVIEWLEAF_CLASSNAME, {
+                    hover,
+                    focus,
+                    selected
+                })
+            )}
+        >
+            {showIcon && <Icon name={icon} />}
+            <span className="k-treeview-leaf-text">
+                {text}
             </span>
-        );
-    }
-}
+        </span>
+    );
+};
+
+TreeviewLeaf.states = states;
+TreeviewLeaf.options = options;
+TreeviewLeaf.className = TREEVIEWLEAF_CLASSNAME;
+
+export default TreeviewLeaf;

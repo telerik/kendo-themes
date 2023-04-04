@@ -1,36 +1,28 @@
-import * as React from 'react';
-import { Button } from '../button';
 import { ActionButtons } from '../action-buttons';
+import { Button } from '../button';
 import { classNames } from '../utils';
 
-export interface TimeSelectorFastSelectionProps {
-    className?: null | string;
-}
+const className = `k-time-fast-selection`;
 
-export class TimeSelectorFastSelection extends React.Component<TimeSelectorFastSelectionProps> {
+export const TimeSelectorFastSelection = (
+    props: React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        ...other
+    } = props;
 
-    render() {
-
-        const {
-            className
-        } = this.props;
-
-
-        return (
-            <>
-                <ActionButtons alignment="start" className={classNames(
-                    'k-time-fast-selection',
-                    className
-                )}
-                >
-                    <Button>1 d</Button>
-                    <Button>1 h</Button>
-                    <Button>15 m</Button>
-                </ActionButtons>
-            </>
-        );
-
-
-    }
-
-}
+    return (
+        <ActionButtons
+            {...other}
+            alignment="start"
+            className={classNames(
+                props.className,
+                className,
+            )}
+        >
+            <Button>1 d</Button>
+            <Button>1 h</Button>
+            <Button>15 m</Button>
+        </ActionButtons>
+    );
+};

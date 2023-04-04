@@ -1,4 +1,14 @@
-// TODO: docs
+/// This is equivalent to `box-sizing: border-box;`.
+/// @example box-sizing: border-box;
+/// @name .k-box-sizing-border
+/// @group box-sizing
+/// @contextType css
+
+/// This is equivalent to `box-sizing: content-box;`.
+/// @example box-sizing: content-box;
+/// @name .k-box-sizing-content
+/// @group box-sizing
+/// @contextType css
 
 @mixin kendo-utils--layout--box-sizing() {
 

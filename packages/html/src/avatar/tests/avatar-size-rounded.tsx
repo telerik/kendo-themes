@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Avatar } from '../../avatar';
 import { Icon } from '../../icon';

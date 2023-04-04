@@ -1,35 +1,46 @@
-import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames, optionClassNames } from '../utils';
 
-export interface InputInnerTextareaProps {
-    className?: string;
+const defaultProps = {
+    value: '',
+    placeholder: ''
+};
+
+const className = `k-input-inner`;
+
+const states = [];
+
+const options = {};
+
+export type InputInnerTextareaProps = {
     value?: string;
     placeholder?: string;
     rows?: number;
-}
+};
 
-export class InputInnerTextarea extends React.Component<InputInnerTextareaProps> {
+export const InputInnerTextarea = (
+    props: InputInnerTextareaProps &
+      React.HTMLAttributes<HTMLTextAreaElement>
+) => {
+    const {
+        value = defaultProps.value,
+        placeholder = defaultProps.placeholder,
+        rows,
+        ...other
+    } = props;
 
-    static defaultProps = {
-        value: '',
-        placeholder: ''
-    };
+    return (
+        <textarea
+            {...other}
+            className={classNames(props.className, className, optionClassNames(className, props))}
+            placeholder={placeholder}
+            rows={rows}>
+            {value}
+        </textarea>
+    );
+};
 
-    render() {
-        const {
-            value,
-            className,
-            placeholder,
-            rows
-        } = this.props;
+InputInnerTextarea.states = states;
+InputInnerTextarea.options = options;
+InputInnerTextarea.className = className;
 
-        return (
-            <textarea
-                className={classNames( 'k-input-inner', className )}
-                placeholder={placeholder}
-                rows={rows}>
-                {value}
-            </textarea>
-        );
-    }
-}
+export default InputInnerTextarea;

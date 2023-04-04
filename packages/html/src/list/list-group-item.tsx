@@ -1,29 +1,9 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface ListGroupItemProps {
-    children?: React.ReactNode;
-    className?: string;
-}
+const className = `k-list-group-item`;
 
-
-export class ListGroupItem extends React.Component<ListGroupItemProps> {
-
-    render() {
-        const {
-            children,
-            className,
-        } = this.props;
-
-
-        return (
-            <li
-                className={classNames(
-                    className,
-                    'k-list-group-item'
-                )}>
-                <span className="k-list-item-text">{children}</span>
-            </li>
-        );
-    }
-}
+export const ListGroupItem = (props: React.HTMLAttributes<HTMLLIElement>) => (
+    <li className={classNames(className, props.className)}>
+        <span className="k-list-item-text">{props.children}</span>
+    </li>
+);

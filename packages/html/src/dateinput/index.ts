@@ -1,1 +1,1 @@
-export * from './dateinput';
+export * from './dateinput.spec';

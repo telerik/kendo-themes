@@ -1,1 +1,1 @@
-export * from './dropdowngrid';
+export * from './dropdowngrid.spec';

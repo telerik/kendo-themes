@@ -1,39 +1,36 @@
-import * as React from 'react';
 import { classNames } from '../utils';
 
-export interface TableTdProps {
-    children?: React.ReactNode;
-    className?: string;
+const className = `k-table-td`;
+
+export type KendoTableTdProps = {
     text?: string;
     colspan?: any;
-}
+};
 
+export const TableTd = (
+    props: KendoTableTdProps &
+    React.HTMLAttributes<HTMLTableCellElement>
+) => {
+    const {
+        text,
+        colspan,
+        ...other
+    } = props;
 
-export class TableTd extends React.Component<TableTdProps> {
+    const textOrChildren = text
+        ? text
+        : props.children;
 
-    render() {
-        const {
-            children,
-            className,
-            text,
-            colspan,
-            ...htmlAttributes
-        } = this.props;
-
-        const textOrChildren = text
-            ? text
-            : children;
-
-        return (
-            <td
-                colSpan={colspan}
-                {...htmlAttributes}
-                className={classNames(
-                    className,
-                    'k-table-td'
-                )}>
-                {textOrChildren}
-            </td>
-        );
-    }
-}
+    return (
+        <td
+            colSpan={colspan}
+            {...other}
+            className={classNames(
+                props.className,
+                className,
+            )}
+        >
+            {textOrChildren}
+        </td>
+    );
+};
