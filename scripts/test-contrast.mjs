@@ -2,7 +2,7 @@
 import { Browser, By } from '@progress/kendo-e2e';
 import AxeBuilder from '@axe-core/webdriverjs';
 import { createServer } from 'http-server';
-import glob from 'glob';
+import { globSync } from 'glob';
 
 let ENV_MAX_CHUNKS = process.env.MAX_CHUNKS || 1;
 let ENV_CURRENT_CHUNK = (process.env.CURRENT_CHUNK || 1) - 1;
@@ -458,7 +458,8 @@ const getFocusReport = async(el, browser) => {
 };
 
 const getContrastViolations = async() => {
-    const files = glob.sync(`${TESTS_PATH}/**/*${COMPONENT_PAGE_EXT}`);
+    const files = globSync(`${TESTS_PATH}/**/*${COMPONENT_PAGE_EXT}`, { dotRelative: true });
+
     const pages = files.filter( path => (
         // Skipped components:
         // MediaPlayer is not WCAG compliant
