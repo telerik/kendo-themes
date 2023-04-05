@@ -9,6 +9,7 @@
     "@progress/dss": "^1.0.1",
     "@progress/kendo-e2e": "^1.0.0",
     "@progress/kendo-theme-tasks": "^1.17.5",
+    "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "chai": "^4.3.6",
