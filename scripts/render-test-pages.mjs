@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Browser, snapshotMarkup } from '@progress/kendo-e2e';
 import { createServer } from 'http-server';
-import glob from 'glob';
+import { globSync } from 'glob';
 import fs from 'fs';
 import path from 'path';
 
@@ -15,7 +15,7 @@ function pathUrl(path) {
     return `http://${HOST}:${PORT}/${path.replace('./', '')}`;
 }
 
-const files = glob.sync(`${TESTS_PATH}/**/*${COMPONENT_PAGE_EXT}`);
+const files = globSync(`${TESTS_PATH}/**/*${COMPONENT_PAGE_EXT}`, { dotRelative: true });
 const pages = files.map(path => [ path, pathUrl(path) ]);
 
 function arrayChunks( array, chunkCount ) {

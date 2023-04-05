@@ -1,7 +1,7 @@
 const esbuild = require('esbuild');
-const glob = require('glob');
+const { globSync } = require('glob');
 
-const tests = glob.sync('./src/**/tests/**/*.tsx');
+const tests = globSync('./src/**/tests/**/*.tsx', { dotRelative: true });
 
 esbuild.buildSync({
     logLevel: 'error',

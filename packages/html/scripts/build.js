@@ -1,7 +1,7 @@
 const esbuild = require('esbuild');
-const glob = require('glob');
+const { globSync } = require('glob');
 
-const components = glob.sync('./src/**/*.tsx');
+const components = globSync('./src/**/*.tsx', { dotRelative: true });
 components.push('./src/index.ts');
 
 esbuild.buildSync({

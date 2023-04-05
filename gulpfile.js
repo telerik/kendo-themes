@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const glob = require("glob");
+const { globSync } = require("glob");
 const gulp = require("gulp");
 
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
@@ -47,7 +47,7 @@ function writeSwatches( cwds, options ) {
 
     cwds.forEach( cwd => {
         let fileGlob = path.resolve( cwd, options.swatches ).split(path.sep).join(path.posix.sep);
-        let files = glob.sync( fileGlob );
+        let files = globSync( fileGlob );
 
         files.forEach( file => {
             let json = JSON.parse( fs.readFileSync( file, 'utf-8' ) );
@@ -104,7 +104,7 @@ function swatchJsonTransformer( json ) {
 
 // #region assets
 gulp.task("assets", function() {
-    let files = glob.sync(paths.sass.assets);
+    let files = globSync(paths.sass.assets);
     let template = fs.readFileSync('lib/data-uri.template', 'utf8');
 
     files.forEach( file => {
@@ -127,7 +127,7 @@ gulp.task("assets", function() {
 function distFlat() {
     let file = paths.sass.theme;
     let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let themes = globSync( getArg('--theme') || paths.sass.themes );
 
     flattenAll( themes, { file, output } );
 
@@ -138,7 +138,7 @@ gulp.task("dist:flat", distFlat);
 function distSwatches() {
     let file = paths.sass.theme;
     let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let themes = globSync( getArg('--theme') || paths.sass.themes );
     let swatches = paths.sass.swatches;
 
     flattenAll( themes, { file, output } );
