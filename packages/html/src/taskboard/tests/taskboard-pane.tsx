@@ -5,6 +5,7 @@ import { Card, CardBody, CardHeader } from '../../card';
 import { Searchbox } from '../../searchbox';
 import { Textbox } from '../../textbox';
 import { Toolbar } from '../../toolbar';
+import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -125,14 +126,9 @@ root.render(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <form className="k-form k-form-md k-form-vertical">
-                            <div className="k-form-field">
-                                <label className="k-label">Textbox:</label>
-                                <div>
-                                    <Textbox />
-                                </div>
-                            </div>
-                        </form>
+                        <Form orientation="vertical">
+                            <FormField label="Textbox:" editor={ <Textbox /> } ></FormField>
+                        </Form>
                     </div>
                     <ActionButtons alignment="end" className="k-taskboard-pane-actions">
                         <Button icon="trash">Delete</Button>
@@ -246,14 +242,9 @@ root.render(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <form className="k-form k-form-md k-form-vertical">
-                            <div className="k-form-field">
-                                <label className="k-label">Textbox:</label>
-                                <div>
-                                    <Textbox />
-                                </div>
-                            </div>
-                        </form>
+                        <Form orientation="vertical">
+                            <FormField label="Textbox:" editor={ <Textbox /> } ></FormField>
+                        </Form>
                     </div>
                     <ActionButtons alignment="end" className="k-taskboard-pane-actions">
                         <Button icon="trash">Delete</Button>

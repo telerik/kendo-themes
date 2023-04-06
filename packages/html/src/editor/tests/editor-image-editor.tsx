@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { Textbox } from '../../textbox';
 import { Window } from '../../window';
+import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -23,40 +24,12 @@ root.render(
 
             <section>
                 <Window title="Insert Image" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
-                    <div className="k-form k-form-md k-form-horizontal">
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Web address:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox showClearButton={false} />
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Alternate text:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox showClearButton={false} />
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Width:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox showClearButton={false} />
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Height:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox showClearButton={false} />
-                            </div>
-                        </div>
-                    </div>
+                    <Form tag="div" orientation="horizontal">
+                        <FormField label="Web address:" editor={ <Textbox showClearButton={false} /> } />
+                        <FormField label="Alternate text:" editor={ <Textbox showClearButton={false} /> } />
+                        <FormField label="Width:" editor={ <Textbox showClearButton={false} /> } />
+                        <FormField label="Height:" editor={ <Textbox showClearButton={false} /> } />
+                    </Form>
                 </Window>
             </section>
 

@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { Window } from '../../window';
 import { Textarea } from '../../textarea';
+import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -24,16 +25,9 @@ root.render(
             <section>
 
                 <Window title="Insert comment" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
-                    <div className="k-form k-form-md k-form-horizontal">
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Comment:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textarea />
-                            </div>
-                        </div>
-                    </div>
+                    <Form tag="div" orientation="horizontal">
+                        <FormField label="Comment:" editor={ <Textarea /> } />
+                    </Form>
                 </Window>
             </section>
 

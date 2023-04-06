@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
 import { DropdownList } from '../../dropdownlist';
 import { Textbox } from '../../textbox';
+import { Button } from '../../button';
+import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -15,39 +16,28 @@ root.render(
             <span></span>
 
             <section>
-                <form className="k-form k-form-md">
-
-                    <fieldset className="k-form-fieldset">
-                        <legend className="k-form-legend">Shipping Address</legend>
-
-                        <div className="k-form-layout k-d-grid k-grid-cols-2" style={{ gap: "0px 16px" }}>
-                            <div className="k-form-field k-colspan-1 k-col-span-1">
-                                <label className="k-label k-form-label">Country</label>
-                                <DropdownList value="France" />
-                            </div>
-
-                            <div className="k-form-field k-colspan-1 k-col-span-1">
-                                <label className="k-label k-form-label">City</label>
-                                <div className="k-form-field-wrap">
-                                    <Textbox />
-                                </div>
-                            </div>
-
-                            <div className="k-form-field k-colspan-2 k-col-span-2">
-                                <label className="k-label k-form-label">Address Line</label>
-                                <div className="k-form-field-wrap">
-                                    <Textbox />
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <div className="k-form-buttons">
-                        <Button themeColor="primary" className="k-form-submit">Submit</Button>
-                        <Button className="k-form-clear">Clear</Button>
-                    </div>
-
-                </form>
+                <Form layout="grid" legend="Shipping Address" cols={2} gapX={4} formButtons={
+                    <>
+                        <Button className="k-form-submit" themeColor="primary">Submit</Button>
+                        <Button className="k-form-clear" >Clear</Button>
+                    </>
+                } >
+                    <FormField
+                        className="k-col-span-1"
+                        label="Country"
+                        editor={ <DropdownList value="France"/>}
+                    />
+                    <FormField
+                        className="k-col-span-1"
+                        label="City"
+                        editor={ <Textbox/> }
+                    />
+                    <FormField
+                        className="k-col-span-2"
+                        label="Address Line"
+                        editor={ <Textbox/> }
+                    />
+                </Form>
             </section>
 
         </div>
