@@ -95,6 +95,8 @@ $kendo-grid-sm-filter-cell-padding-y: map.get( $kendo-spacing, 2 ) !default;
 $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-edit-cell-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
+$kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
+$kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-padding-y !default;
 
 $kendo-grid-md-padding-x: $kendo-grid-padding-x !default;
 $kendo-grid-md-padding-y: $kendo-grid-padding-y !default;
@@ -109,6 +111,8 @@ $kendo-grid-md-filter-cell-padding-y: $kendo-grid-filter-cell-padding-y !default
 $kendo-grid-md-edit-cell-padding-x: $kendo-grid-edit-cell-padding-x !default;
 $kendo-grid-md-edit-cell-padding-y: $kendo-grid-edit-cell-padding-y !default;
 $kendo-grid-md-group-dropclue-height: $kendo-grid-group-drop-hint-height !default;
+$kendo-grid-md-selection-aggregates-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-x !default;
 
 
 // Kendo Grid sizes
@@ -126,7 +130,9 @@ $kendo-grid-sizes: (
         edit-cell-padding-y: $kendo-grid-sm-edit-cell-padding-y,
         button-padding-y: $kendo-button-sm-padding-y,
         button-calc-size: $kendo-button-sm-calc-size,
-        group-dropclue-height: $kendo-grid-sm-group-dropclue-height
+        group-dropclue-height: $kendo-grid-sm-group-dropclue-height,
+        selection-aggregates-padding-x: $kendo-grid-sm-selection-aggregates-padding-x,
+        selection-aggregates-padding-y: $kendo-grid-sm-selection-aggregates-padding-y
     ),
     md: (
         header-padding-x: $kendo-grid-md-header-padding-x,
@@ -141,7 +147,9 @@ $kendo-grid-sizes: (
         edit-cell-padding-y: $kendo-grid-md-edit-cell-padding-y,
         button-padding-y: $kendo-button-md-padding-y,
         button-calc-size: $kendo-button-md-calc-size,
-        group-dropclue-height: $kendo-grid-sm-group-dropclue-height
+        group-dropclue-height: $kendo-grid-sm-group-dropclue-height,
+        selection-aggregates-padding-x: $kendo-grid-md-selection-aggregates-padding-x,
+        selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
 ) !default;
 
@@ -239,6 +247,28 @@ $kendo-grid-footer-text: $kendo-table-footer-text !default;
 /// Border color of grid footer.
 /// @group grid
 $kendo-grid-footer-border: $kendo-table-footer-border !default;
+
+/// Background color of the selection aggregates container
+/// @group grid
+$kendo-grid-selection-aggregates-bg: $kendo-toolbar-bg !default;
+/// Text color of the selection aggregates container
+/// @group grid
+$kendo-grid-selection-aggregates-text: $kendo-grid-text !default;
+/// Border color of the selection aggregates container
+/// @group grid
+$kendo-grid-selection-aggregates-border: $kendo-grid-border !default;
+/// Border width of the selection aggregates container
+/// @group grid
+$kendo-grid-selection-aggregates-border-width: $kendo-grid-border-width !default;
+/// Spacing between the selection aggregates items
+/// @group grid
+$kendo-grid-selection-aggregates-spacing: map.get( $kendo-spacing, 2 ) !default;
+/// Line height of the selection aggregates container
+/// @group grid
+$kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
+/// Font weight of the selection aggregates container
+/// @group grid
+$kendo-grid-selection-aggregates-font-weight: $kendo-font-weight-bold !default;
 
 /// Background color of the grid grouping header.
 /// @group grid
