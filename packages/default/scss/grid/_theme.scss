@@ -238,6 +238,15 @@
         }
     }
 
+    // Selection Aggregates
+    .k-selection-aggregates {
+        @include fill(
+            $kendo-grid-selection-aggregates-text,
+            $kendo-grid-selection-aggregates-bg,
+            $kendo-grid-selection-aggregates-border
+        );
+    }
+
     // Content
     .k-master-row {
         .k-grid-content-sticky {

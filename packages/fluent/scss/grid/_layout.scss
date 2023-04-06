@@ -672,6 +672,22 @@
     }
 
 
+    // Selection Aggregates
+    .k-selection-aggregates {
+        padding-inline: var( --INTERNAL--kendo-grid-selection-aggregates-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-grid-selection-aggregates-padding-y, 0 );
+        border-width: var( --kendo-grid-selection-aggregates-border-width, #{$kendo-grid-selection-aggregates-border-width} ) 0 0;
+        border-style: solid;
+        line-height: var( --kendo-grid-selection-aggregates-line-height, #{$kendo-grid-selection-aggregates-line-height} );
+        display: flex;
+        justify-content: flex-end;
+        gap: var( --kendo-grid-selection-aggregates-spacing, #{$kendo-grid-selection-aggregates-spacing} );
+    }
+    .k-selection-aggregates-item-value {
+        font-weight: var( --kendo-grid-selection-aggregates-font-weight, #{$kendo-grid-selection-aggregates-font-weight} );
+    }
+
+
     // Pager
     .k-grid-pager {
         border-width: 1px 0 0;
@@ -997,6 +1013,8 @@
         $_button-calc-size: map.get( $size-props, button-calc-size );
         $_button-line-height: map.get( $size-props, button-line-height );
         $_group-dropclue-height: map.get( $size-props, group-dropclue-height );
+        $_selection-aggregates-padding-x: map.get( $size-props, selection-aggregates-padding-x );
+        $_selection-aggregates-padding-y: map.get( $size-props, selection-aggregates-padding-y );
 
         .k-grid-#{$size} {
             --INTERNAL--kendo-grid-header-padding-x: var( --kendo-grid-header-padding-x-#{$size}, #{$_header-padding-x} );
@@ -1013,6 +1031,8 @@
             --INTERNAL--kendo-button-calc-size: var( --kendo-button-calc-size-#{$size}, #{$_button-calc-size} );
             --INTERNAL--kendo-button-line-height: var( --kendo-button-line-height-#{$size}, #{$_button-line-height} );
             --INTERNAL--kendo-grid-group-drop-hint-height: var( --kendo-group-dropclue-height-#{$size}, #{$_group-dropclue-height} );
+            --INTERNAL--kendo-grid-selection-aggregates-padding-x: var( --kendo-grid-selection-aggregates-padding-x-#{$size}, #{$_selection-aggregates-padding-x} );
+            --INTERNAL--kendo-grid-selection-aggregates-padding-y: var( --kendo-grid-selection-aggregates-padding-y-#{$size}, #{$_selection-aggregates-padding-y} );
         }
     }
 
