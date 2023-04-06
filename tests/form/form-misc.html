@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Form Misc</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        section {
+            padding: 20px;
+            border: 1px dashed gray;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>Vertical Form</span>
+        <span>Horizontal Form</span>
+        <section>
+            <div class="k-messagebox k-messagebox-error">Error: The quick brown fox jumps over the lazy dog.</div>
+            <form class="k-form k-form-md k-form-vertical">
+                <div class="k-form-field">
+                    <label class="k-label k-form-label">Normal:<span class="k-label-optional">(Optional)</span>
+                    </label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                        </span>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-field k-form-field-error">
+                    <label class="k-label k-form-label">Error:<span class="k-field-info">(field info)</span>
+                    </label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                            <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                            <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                        </span>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-field k-disabled">
+                    <label class="k-label k-form-label">Disabled:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+                        </span>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-field">
+                    <label class="k-label k-form-label">Checkbox:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-checkbox-wrap">
+                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                        </span>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-field">
+                    <div class="k-form-field-wrap">
+                        <span class="k-checkbox-wrap">
+                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                        </span>
+                        <label class="k-checkbox-label">Label after the box</label>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-buttons">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-text">Submit</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Clear</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <div class="k-messagebox k-messagebox-error">Error: The quick brown fox jumps over the lazy dog.</div>
+            <form class="k-form k-form-md k-form-horizontal">
+                <div class="k-form-field">
+                    <label class="k-label k-form-label">Normal:<span class="k-label-optional">(Optional)</span>
+                    </label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                        </span>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-field k-form-field-error">
+                    <label class="k-label k-form-label">Error:<span class="k-field-info">(field info)</span>
+                    </label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                            <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                            <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                        </span>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-field k-disabled">
+                    <label class="k-label k-form-label">Disabled:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+                        </span>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-field">
+                    <label class="k-label k-form-label">Checkbox:</label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-checkbox-wrap">
+                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                        </span>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-field">
+                    <label class="k-label k-form-label k-label-empty"> </label>
+                    <div class="k-form-field-wrap">
+                        <span class="k-checkbox-wrap">
+                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                        </span>
+                        <label class="k-checkbox-label">Label after the box</label>
+                        <div class="k-form-hint">Hint: hint message</div>
+                        <div class="k-form-error">Error: error message</div>
+                    </div>
+                </div>
+                <div class="k-form-buttons">
+                    <button class="k-form-submit k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
+                        <span class="k-button-text">Submit</span>
+                    </button>
+                    <button class="k-form-clear k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Clear</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
