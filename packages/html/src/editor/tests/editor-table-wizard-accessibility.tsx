@@ -4,6 +4,7 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textarea } from '../../textarea';
 import { Textbox } from '../../textbox';
+import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -34,56 +35,25 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <div className="k-form k-form-md k-form-horizontal">
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Header Rows</label>
-                                    </div>
-                                    <div className="k-form-field-wrap">
-                                        <NumericTextbox />
-                                    </div>
-                                </div>
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Header Cols</label>
-                                    </div>
-                                    <div className="k-form-field-wrap">
-                                        <NumericTextbox />
-                                    </div>
-                                </div>
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Caption</label>
-                                    </div>
-                                    <div className="k-form-field-wrap">
-                                        <Textbox />
-                                    </div>
-                                </div>
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Alignment</label>
-                                    </div>
-                                    <div className="k-form-field-wrap">
-                                        <DropdownList className="k-align" showValue={false} value="Remove align" valueIconName="align-remove" style={{ width: "min-content" }} />
-                                    </div>
-                                </div>
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Summary</label>
-                                    </div>
-                                    <div className="k-form-field-wrap">
-                                        <Textarea className="k-editor-accessibility-summary" placeholder="Summary attribute is not HTML5 compatible." />
-                                    </div>
-                                </div>
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Associate headers</label>
-                                    </div>
-                                    <div className="k-form-field-wrap">
-                                        <DropdownList value="None" />
-                                    </div>
-                                </div>
-                            </div>
+                            <Form tag="div" orientation="horizontal">
+                                <FormField label="Header Rows" editor={ <NumericTextbox /> } />
+                                <FormField label="Header Cols" editor={ <NumericTextbox /> } />
+                                <FormField label="Caption" editor={ <Textbox /> } />
+                                <FormField label="Alignment" editor={
+                                    <DropdownList
+                                        className="k-align"
+                                        showValue={false}
+                                        value="Remove align"
+                                        valueIconName="align-remove"
+                                        style={{ width: "min-content" }} /> }
+                                />
+                                <FormField label="Summary" editor={
+                                    <Textarea
+                                        className="k-editor-accessibility-summary"
+                                        placeholder="Summary attribute is not HTML5 compatible."/> }
+                                />
+                                <FormField label="Associate headers" editor={ <DropdownList value="None" /> } />
+                            </Form>
                         </div>
                     </div>
                 </Window>

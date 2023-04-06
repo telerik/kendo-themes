@@ -8,6 +8,8 @@ import { RadioButton } from '../../radio';
 import { Textarea } from '../../textarea';
 import { Textbox } from '../../textbox';
 import { TimePicker } from '../../timepicker';
+import { Form, FormField } from '../../form';
+import { ButtonGroup } from '../../button-group';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -31,115 +33,76 @@ root.render(
             <section>
 
                 <Window title="Event" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
-                    <div className="k-scheduler-edit-form k-form k-form-md k-form-horizontal">
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label htmlFor="k-event-title">Title</label>
+                    <Form tag="div" orientation="horizontal" className="k-scheduler-edit-form">
+                        <FormField label="Title" editor={ <Textbox placeholder="Title..." /> } />
+                        <FormField label="Start" editor={
+                            <div className="k-scheduler-datetime-picker">
+                                <DatePicker />
+                                <TimePicker />
                             </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox placeholder="Title..." />
+                        } />
+                        <FormField label="End" editor={
+                            <div className="k-scheduler-datetime-picker">
+                                <DatePicker />
+                                <TimePicker />
                             </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Start</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <div className="k-scheduler-datetime-picker">
-                                    <DatePicker />
-                                    <TimePicker />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>End</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <div className="k-scheduler-datetime-picker">
-                                    <DatePicker />
-                                    <TimePicker />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label k-empty"></div>
-                            <div className="k-form-field-wrap">
+                        } />
+                        <FormField label=" " editor={
+                            <>
                                 <Checkbox id="k-is-allday-chkbox" />
-                                <label className="k-checkbox-label" htmlFor="k-is-allday-chkbox">All Day Event</label>
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label k-empty"></div>
-                            <div className="k-form-field-wrap">
+                                <label htmlFor="k-is-allday-chkbox" className="k-checkbox-label">All Day Event</label>
+                            </>
+                        } />
+                        <FormField label=" " editor={
+                            <>
                                 <Checkbox id="k-set-timezone" />
-                                <label className="k-checkbox-label" htmlFor="k-set-timezone">Specify Time Zone</label>
-                            </div>
-                        </div>
+                                <label htmlFor="k-set-timezone" className="k-checkbox-label">Specify Time Zone</label>
+                            </>
+                        } />
                         <div className="k-recurrence-editor">
-                            <div className="k-form-field">
-                                <div className="k-form-label">
-                                    <label>Repeat</label>
-                                </div>
-                                <div className="k-form-field-wrap">
-                                    <div className="k-scheduler-recurrence-repeat k-button-group k-button-group-stretched">
-                                        <Button>Never</Button>
-                                        <Button selected>Daily</Button>
-                                        <Button>Weekly</Button>
-                                        <Button>Monthly</Button>
-                                        <Button>Yearly</Button>
-                                    </div>
-                                </div>
-                            </div>
+                            <FormField label="Repeat" editor={
+                                <ButtonGroup className="k-scheduler-recurrence-repeat k-button-group-stretched" >
+                                    <Button>Never</Button>
+                                    <Button selected>Daily</Button>
+                                    <Button>Weekly</Button>
+                                    <Button>Monthly</Button>
+                                    <Button>Yearly</Button>
+                                </ButtonGroup>
+                            } />
                             <div className="k-recur-view">
                                 <div className="k-scheduler-recurrence-interval-editor">
-                                    <div className="k-form-field">
-                                        <div className="k-form-label">
-                                            <label>Repeat every</label>
-                                        </div>
-                                        <div className="k-form-field-wrap">
+                                    <FormField label="Repeat every" editor={
+                                        <>
                                             <NumericTextbox className="k-recur-interval" />
                                             <span>day(s)</span>
-                                        </div>
-                                    </div>
+                                        </>
+                                    } />
                                 </div>
                                 <div className="k-scheduler-recurrence-end-rule-editor">
-                                    <div className="k-form-field">
-                                        <div className="k-form-label">
-                                            <label>End</label>
-                                        </div>
-                                        <div className="k-form-field-wrap">
-                                            <ul className="k-radio-list">
-                                                <li className="k-radio-list-item">
-                                                    <RadioButton id="k-endrule-never" />
-                                                    <label className="k-radio-label" htmlFor="k-endrule-never">Never</label>
-                                                </li>
-                                                <li className="k-radio-list-item">
-                                                    <RadioButton id="k-endrule-count" />
-                                                    <label className="k-radio-label" htmlFor="k-endrule-count">After</label>
-                                                    <NumericTextbox className="k-recur-count" />
-                                                    <span>occurrence(s)</span>
-                                                </li>
-                                                <li className="k-radio-list-item">
-                                                    <RadioButton id="k-endrule-until" />
-                                                    <label className="k-radio-label" htmlFor="k-endrule-until">On</label>
-                                                    <DatePicker className="k-recur-until" disabled />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <FormField label="End" editor={
+                                        <ul className="k-radio-list">
+                                            <li className="k-radio-list-item">
+                                                <RadioButton id="k-endrule-never" />
+                                                <label className="k-radio-label" htmlFor="k-endrule-never">Never</label>
+                                            </li>
+                                            <li className="k-radio-list-item">
+                                                <RadioButton id="k-endrule-count" />
+                                                <label className="k-radio-label" htmlFor="k-endrule-count">After</label>
+                                                <NumericTextbox className="k-recur-count" />
+                                                <span>occurrence(s)</span>
+                                            </li>
+                                            <li className="k-radio-list-item">
+                                                <RadioButton id="k-endrule-until" />
+                                                <label className="k-radio-label" htmlFor="k-endrule-until">On</label>
+                                                <DatePicker className="k-recur-until" disabled />
+                                            </li>
+                                        </ul>
+                                    } />
                                 </div>
                             </div>
                         </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label htmlFor="k-event-description">Description</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textarea />
-                            </div>
-                        </div>
-                    </div>
+                        <FormField label="Description" editor={ <Textarea /> } />
+                    </Form>
                 </Window>
 
             </section>

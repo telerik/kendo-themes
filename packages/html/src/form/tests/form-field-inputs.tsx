@@ -9,6 +9,7 @@ import { RadioButton } from '../../radio';
 import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
 import { Upload, UploadFile } from '../../upload';
+import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -31,55 +32,54 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>Vertical Form (Angular)</span>
-            <span>Horizontal Form (Angular)</span>
+            <span>Vertical Form</span>
+            <span>Horizontal Form</span>
 
             <section>
-                <form className="k-form k-form-md k-form-vertical">
+                <Form orientation="vertical">
 
-                    <div className="k-form-field">
-                        <label className="k-label">Textbox:</label>
-                        <div>
-                            <Textbox />
-                        </div>
-                    </div>
+                    <FormField
+                        label="Textbox:"
+                        editor={ <Textbox/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Checkbox:</label>
-                        <div>
-                            <Checkbox />
-                        </div>
-                    </div>
+                    <FormField
+                        label="Checkbox:"
+                        editor={ <Checkbox/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <div>
-                            <div className="k-form-field-checkbox-wrap">
-                                <Checkbox />
+                    <FormField
+                        editor={
+                            <>
+                                <Checkbox/>
                                 <label className="k-checkbox-label">Label after the box</label>
-                            </div>
-                        </div>
-                    </div>
+                            </>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Radio (Y):</label>
-                        <div>
+                    <FormField
+                        label="Radio (Y):"
+                        editor={
                             <ul className="k-radio-list">
                                 <li className="k-radio-list-item">
                                     <RadioButton />
                                     <label className="k-radio-label">Male</label>
                                 </li>
-
                                 <li className="k-radio-list-item">
                                     <RadioButton />
                                     <label className="k-radio-label">Female</label>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Radio (X):</label>
-                        <div>
+                    <FormField
+                        label="Radio (X):"
+                        editor={
                             <ul className="k-radio-list k-list-horizontal">
                                 <li className="k-radio-list-item">
                                     <RadioButton />
@@ -91,40 +91,37 @@ root.render(
                                     <label className="k-radio-label">Female</label>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Colorpicker:</label>
-                        <div>
-                            <ColorPicker />
-                        </div>
-                    </div>
+                    <FormField
+                        label="Colorpicker:"
+                        editor={ <ColorPicker/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">MaskedTextBox:</label>
-                        <div>
-                            <MaskedTextbox />
-                        </div>
-                    </div>
+                    <FormField
+                        label="MaskedTextBox:"
+                        editor={ <MaskedTextbox/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">NumericTextBox:</label>
-                        <div>
-                            <NumericTextbox />
-                        </div>
-                    </div>
+                    <FormField
+                        label="NumericTextBox:"
+                        editor={ <NumericTextbox/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Switch:</label>
-                        <div>
-                            <Switch onLabel="On" offLabel="Off" checked />
-                        </div>
-                    </div>
+                    <FormField
+                        label="Switch:"
+                        editor={ <Switch onLabel="On" offLabel="Off" checked /> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Slider:</label>
-                        <div>
+                    <FormField
+                        label="Slider:"
+                        editor={
                             <div className="k-slider k-slider-horizontal">
                                 <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                                 <div className="k-slider-track-wrap">
@@ -154,66 +151,71 @@ root.render(
                                 </div>
                                 <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                             </div>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <div>
+                    <FormField
+                        editor={
                             <FloatingLabel label="FloatingLabel" empty>
                                 <Textbox />
                             </FloatingLabel>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <div>
+                    <FormField
+                        editor={
                             <FloatingLabel label="FloatingLabel (Focused)" empty focus>
                                 <Textbox focus />
                             </FloatingLabel>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Upload</label>
-                        <div className="k-form-field-wrap">
+                    <FormField
+                        label="Upload"
+                        editor={
                             <Upload async status="done">
-                                <UploadFile progress={100} status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
+                                <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
                             </Upload>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                </form>
+                </Form>
             </section>
 
 
             <section>
-                <form className="k-form k-form-md k-form-horizontal">
+                <Form orientation="horizontal">
 
-                    <div className="k-form-field">
-                        <label className="k-label">Textbox:</label>
-                        <div className="k-form-field-wrap">
-                            <Textbox />
-                        </div>
-                    </div>
+                    <FormField
+                        label="Textbox:"
+                        editor={ <Textbox/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Checkbox:</label>
-                        <div className="k-form-field-wrap">
-                            <Checkbox />
-                        </div>
-                    </div>
+                    <FormField
+                        label="Checkbox:"
+                        editor={ <Checkbox/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <span className="k-label k-label-empty"></span>
-                        <div className="k-form-field-wrap">
-                            <Checkbox />
-                            <label className="k-checkbox-label">Label after the box</label>
-                        </div>
-                    </div>
+                    <FormField
+                        label=" "
+                        editor={
+                            <>
+                                <Checkbox/>
+                                <label className="k-checkbox-label">Label after the box</label>
+                            </>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Radio (Y):</label>
-                        <div className="k-form-field-wrap">
+                    <FormField
+                        label="Radio (Y):"
+                        editor={
                             <ul className="k-radio-list">
                                 <li className="k-radio-list-item">
                                     <RadioButton />
@@ -225,12 +227,13 @@ root.render(
                                     <label className="k-radio-label">Female</label>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Radio (X):</label>
-                        <div className="k-form-field-wrap">
+                    <FormField
+                        label="Radio (X):"
+                        editor={
                             <ul className="k-radio-list k-list-horizontal">
                                 <li className="k-radio-list-item">
                                     <RadioButton />
@@ -242,40 +245,37 @@ root.render(
                                     <label className="k-radio-label">Female</label>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Colorpicker:</label>
-                        <div className="k-form-field-wrap">
-                            <ColorPicker />
-                        </div>
-                    </div>
+                    <FormField
+                        label="Colorpicker:"
+                        editor={ <ColorPicker/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">MaskedTextBox:</label>
-                        <div className="k-form-field-wrap">
-                            <MaskedTextbox />
-                        </div>
-                    </div>
+                    <FormField
+                        label="MaskedTextBox:"
+                        editor={ <MaskedTextbox/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">NumericTextBox:</label>
-                        <div className="k-form-field-wrap">
-                            <NumericTextbox />
-                        </div>
-                    </div>
+                    <FormField
+                        label="NumericTextBox:"
+                        editor={ <NumericTextbox/> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Switch:</label>
-                        <div className="k-form-field-wrap">
-                            <Switch onLabel="On" offLabel="Off" checked />
-                        </div>
-                    </div>
+                    <FormField
+                        label="Switch:"
+                        editor={ <Switch onLabel="On" offLabel="Off" checked /> }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Slider:</label>
-                        <div className="k-form-field-wrap">
+                    <FormField
+                        label="Slider"
+                        editor={
                             <div className="k-slider k-slider-horizontal">
                                 <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                                 <div className="k-slider-track-wrap">
@@ -305,39 +305,41 @@ root.render(
                                 </div>
                                 <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                             </div>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <span className="k-label k-label-empty"></span>
-                        <div className="k-form-field-wrap">
+                    <FormField
+                        label=" "
+                        editor={
                             <FloatingLabel label="FloatingLabel" empty>
                                 <Textbox />
                             </FloatingLabel>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <span className="k-label k-label-empty"></span>
-                        <div className="k-form-field-wrap">
+                    <FormField
+                        label=" "
+                        editor={
                             <FloatingLabel label="FloatingLabel (Focused)" empty focus>
                                 <Textbox focus />
                             </FloatingLabel>
-                        </div>
-                    </div>
+                        }
+                    >
+                    </FormField>
 
-                    <div className="k-form-field">
-                        <label className="k-label">Upload</label>
-                        <div className="k-form-field-wrap">
-                            <div>
-                                <Upload async status="done">
-                                    <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
-                                </Upload>
-                            </div>
-                        </div>
-                    </div>
+                    <FormField
+                        label="Upload"
+                        editor={
+                            <Upload async status="done">
+                                <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
+                            </Upload>
+                        }
+                    >
+                    </FormField>
 
-                </form>
+                </Form>
             </section>
 
         </div>

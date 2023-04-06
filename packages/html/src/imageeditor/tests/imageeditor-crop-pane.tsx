@@ -4,6 +4,8 @@ import { Checkbox } from '../../checkbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Toolbar, ToolbarSeparator } from '../../toolbar';
+import { ButtonGroup } from '../../button-group';
+import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -59,50 +61,28 @@ root.render(
 
                     {/* Crop Pane */}
                     <div className="k-imageeditor-action-pane">
-                        <div className="k-imageeditor-pane-form k-widget k-form k-form-md">
-                            <fieldset className="k-form-fieldset">
-                                <legend className="k-form-legend">Crop Image</legend>
-                                <div className="k-form-layout k-d-grid k-grid-cols-2" style={{ gap: "0px 8px" }}>
-                                    <div className="k-form-field k-colspan-2 k-col-span-2">
-                                        <label className="k-label k-form-label">Aspect Ratio:</label>
-                                        <div className="k-form-field-wrap">
-                                            <DropdownList value="Original ratio" />
-                                        </div>
-                                    </div>
-                                    <div className="k-form-field k-colspan-2 k-col-span-2">
-                                        <label className="k-label k-form-label">Orientation:</label>
-                                        <div className="k-form-field-wrap">
-                                            <div className="k-widget k-button-group">
-                                                <Button selected>Portrait</Button>
-                                                <Button>Landscape</Button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="k-form-field k-colspan-1 k-col-span-1">
-                                        <label className="k-label k-form-label">Width:</label>
-                                        <div className="k-form-field-wrap">
-                                            <NumericTextbox showClearButton={false} value="61" />
-                                        </div>
-                                    </div>
-                                    <div className="k-form-field k-colspan-1 k-col-span-1">
-                                        <label className="k-label k-form-label">Height:</label>
-                                        <div className="k-form-field-wrap">
-                                            <NumericTextbox showClearButton={false} value="68" />
-                                        </div>
-                                    </div>
-                                    <div className="k-form-field k-colspan-2 k-col-span-2">
-                                        <label className="k-label k-form-label">Lock aspect ratio:</label>
-                                        <div className="k-form-field-wrap">
-                                            <Checkbox />
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <div className="k-form-buttons">
-                                <Button>Cancel</Button>
-                                <Button themeColor="primary">Confirm</Button>
-                            </div>
-                        </div>
+                        <Form
+                            tag="div"
+                            className="k-imageeditor-pane-form"
+                            layout="grid" cols={2} legend="Crop Image"
+                            gapX={2}
+                            formButtons={
+                                <>
+                                    <Button>Cancel</Button>
+                                    <Button themeColor="primary">Confirm</Button>
+                                </>
+                            }>
+                            <FormField className="k-col-span-2" label="Aspect Ratio:" editor={ <DropdownList value="Original ratio" /> } />
+                            <FormField className="k-col-span-2" label="Orientation:" editor={
+                                <ButtonGroup>
+                                    <Button selected>Portrait</Button>
+                                    <Button>Landscape</Button>
+                                </ButtonGroup> }
+                            />
+                            <FormField className="k-col-span-1" label="Width:" editor={ <NumericTextbox showClearButton={false} value="61" /> }/>
+                            <FormField className="k-col-span-1" label="Height:" editor={ <NumericTextbox showClearButton={false} value="68" /> } />
+                            <FormField className="k-col-span-2" label="Lock aspect ratio:" editor={ <Checkbox /> } />
+                        </Form>
                     </div>
                 </div>
 

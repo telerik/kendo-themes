@@ -6,6 +6,7 @@ import { Textbox } from '../../textbox';
 import { Editor, EditorContent, EditorToolbar } from '../../editor';
 import { Window } from '../../window';
 import { ButtonGroup } from '../../button-group';
+import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -22,6 +23,9 @@ const styles = `
     /* needed for test */
     .k-editor-content > .ProseMirror {
         white-space: normal;
+    }
+    .k-form-horizontal .k-form-field:nth-child(3) .k-form-field-wrap {
+        max-width: initial;
     }
 `;
 
@@ -47,43 +51,34 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <div className="k-form k-form-md k-form-horizontal">
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Find What:</label>
+                            <Form tag="div" orientation="horizontal">
+                                <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
+                                <FormField editor={
+                                    <div className="k-search-options k-checkbox-list">
+                                        <span className="k-checkbox-list-item">
+                                            <Checkbox />
+                                            <label className="k-checkbox-label">Match case</label>
+                                        </span>
+                                        <span className="k-checkbox-list-item">
+                                            <Checkbox />
+                                            <label className="k-checkbox-label">Match whole word only</label>
+                                        </span>
+                                        <span className="k-checkbox-list-item">
+                                            <Checkbox />
+                                            <label className="k-checkbox-label">Match cyclic (Wrap around)</label>
+                                        </span>
+                                        <span className="k-checkbox-list-item">
+                                            <Checkbox />
+                                            <label className="k-checkbox-label">Regular Expression</label>
+                                        </span>
                                     </div>
-                                    <div className="k-form-field-wrap">
-                                        <Textbox showClearButton={false} value="editor" />
-                                    </div>
-                                </div>
-                                <div className="k-form-field">
-                                    <div className="k-form-field-wrap">
-                                        <div className="k-search-options k-checkbox-list">
-                                            <span className="k-checkbox-list-item">
-                                                <Checkbox />
-                                                <label className="k-checkbox-label">Match case</label>
-                                            </span>
-                                            <span className="k-checkbox-list-item">
-                                                <Checkbox />
-                                                <label className="k-checkbox-label">Match whole word only</label>
-                                            </span>
-                                            <span className="k-checkbox-list-item">
-                                                <Checkbox />
-                                                <label className="k-checkbox-label">Match cyclic (Wrap around)</label>
-                                            </span>
-                                            <span className="k-checkbox-list-item">
-                                                <Checkbox />
-                                                <label className="k-checkbox-label">Regular Expression</label>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
+                                } />
                                 <div className="k-matches-container">
                                     <Button themeColor="primary" fillMode="flat" icon="arrow-chevron-left">Prev</Button>
                                     <span>1 of 3 matches</span>
                                     <Button themeColor="primary" fillMode="flat" icon="arrow-chevron-right">Next</Button>
                                 </div>
-                            </div>
+                            </Form>
                         </div>
                     </div>
                 </Window>
@@ -103,57 +98,41 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <div className="k-form k-form-md k-form-horizontal">
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Find What:</label>
-                                    </div>
-                                    <div className="k-form-field-wrap">
-                                        <Textbox showClearButton={false} value="editor" />
-                                    </div>
-                                </div>
-                                <div className="k-form-field">
-                                    <div className="k-form-label">
-                                        <label>Replace With:</label>
-                                    </div>
-                                    <div className="k-form-field-wrap">
-                                        <Textbox showClearButton={false} value="grid" />
-                                    </div>
-                                </div>
-                                <div className="k-form-field">
+                            <Form tag="div" orientation="horizontal">
+                                <FormField label="Find What:" editor={ <Textbox showClearButton={false} value="editor" /> } />
+                                <FormField label="Replace With:" editor={ <Textbox showClearButton={false} value="grid" /> } />
+                                <FormField editor={
                                     <ActionButtons alignment="end">
                                         <Button>Replace</Button>
                                         <Button>Replace All</Button>
                                     </ActionButtons>
-                                </div>
-                                <div className="k-form-field">
-                                    <div className="k-form-field-wrap">
-                                        <div className="k-search-options k-checkbox-list">
-                                            <span className="k-checkbox-list-item">
-                                                <Checkbox />
-                                                <label className="k-checkbox-label">Match case</label>
-                                            </span>
-                                            <span className="k-checkbox-list-item">
-                                                <Checkbox />
-                                                <label className="k-checkbox-label">Match whole word only</label>
-                                            </span>
-                                            <span className="k-checkbox-list-item">
-                                                <Checkbox />
-                                                <label className="k-checkbox-label">Match cyclic (Wrap around)</label>
-                                            </span>
-                                            <span className="k-checkbox-list-item">
-                                                <Checkbox />
-                                                <label className="k-checkbox-label">Regular Expression</label>
-                                            </span>
-                                        </div>
+                                } />
+                                <FormField editor={
+                                    <div className="k-search-options k-checkbox-list">
+                                        <span className="k-checkbox-list-item">
+                                            <Checkbox />
+                                            <label className="k-checkbox-label">Match case</label>
+                                        </span>
+                                        <span className="k-checkbox-list-item">
+                                            <Checkbox />
+                                            <label className="k-checkbox-label">Match whole word only</label>
+                                        </span>
+                                        <span className="k-checkbox-list-item">
+                                            <Checkbox />
+                                            <label className="k-checkbox-label">Match cyclic (Wrap around)</label>
+                                        </span>
+                                        <span className="k-checkbox-list-item">
+                                            <Checkbox />
+                                            <label className="k-checkbox-label">Regular Expression</label>
+                                        </span>
                                     </div>
-                                </div>
+                                } />
                                 <div className="k-matches-container">
                                     <Button themeColor="primary" fillMode="flat" icon="arrow-chevron-left">Prev</Button>
                                     <span>1 of 3 matches</span>
                                     <Button themeColor="primary" fillMode="flat" icon="arrow-chevron-right">Next</Button>
                                 </div>
-                            </div>
+                            </Form>
                         </div>
                     </div>
                 </Window>
