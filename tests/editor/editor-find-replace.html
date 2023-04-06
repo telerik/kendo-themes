@@ -20,6 +20,9 @@
         .k-editor-content>.ProseMirror {
             white-space: normal;
         }
+        .k-form-horizontal .k-form-field:nth-child(3) .k-form-field-wrap {
+            max-width: initial;
+        }
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-2">
@@ -50,9 +53,7 @@
                         <div class="k-tabstrip-content k-active">
                             <div class="k-form k-form-md k-form-horizontal">
                                 <div class="k-form-field">
-                                    <div class="k-form-label">
-                                        <label>Find What:</label>
-                                    </div>
+                                    <label class="k-label k-form-label">Find What:</label>
                                     <div class="k-form-field-wrap">
                                         <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
                                             <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="editor">
@@ -131,9 +132,7 @@
                         <div class="k-tabstrip-content k-active">
                             <div class="k-form k-form-md k-form-horizontal">
                                 <div class="k-form-field">
-                                    <div class="k-form-label">
-                                        <label>Find What:</label>
-                                    </div>
+                                    <label class="k-label k-form-label">Find What:</label>
                                     <div class="k-form-field-wrap">
                                         <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
                                             <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="editor">
@@ -141,9 +140,7 @@
                                     </div>
                                 </div>
                                 <div class="k-form-field">
-                                    <div class="k-form-label">
-                                        <label>Replace With:</label>
-                                    </div>
+                                    <label class="k-label k-form-label">Replace With:</label>
                                     <div class="k-form-field-wrap">
                                         <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
                                             <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="grid">
@@ -151,13 +148,15 @@
                                     </div>
                                 </div>
                                 <div class="k-form-field">
-                                    <div class="k-actions k-actions-end k-actions-horizontal">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Replace</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Replace All</span>
-                                        </button>
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-actions k-actions-end k-actions-horizontal">
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Replace</span>
+                                            </button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Replace All</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="k-form-field">
