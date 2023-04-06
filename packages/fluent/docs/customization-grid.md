@@ -538,6 +538,76 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-selection-aggregates-bg</td>
+    <td></td>
+    <td><code>$kendo-toolbar-bg</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selection aggregates container</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selection-aggregates-text</td>
+    <td></td>
+    <td><code>$kendo-grid-text</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the selection aggregates container</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selection-aggregates-border</td>
+    <td></td>
+    <td><code>$kendo-grid-border</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selection aggregates container</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selection-aggregates-border-width</td>
+    <td></td>
+    <td><code>$kendo-grid-border-width</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the selection aggregates container</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selection-aggregates-spacing</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the selection aggregates items</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selection-aggregates-line-height</td>
+    <td></td>
+    <td><code>$kendo-grid-line-height</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the selection aggregates container</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-selection-aggregates-font-weight</td>
+    <td></td>
+    <td><code>$kendo-font-weight-bold</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the selection aggregates container</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-grouping-header-bg</td>
     <td></td>
     <td><code>$kendo-toolbar-bg</code></td>
