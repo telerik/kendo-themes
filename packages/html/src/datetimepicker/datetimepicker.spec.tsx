@@ -49,7 +49,10 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    tab: 'date'
+    tab: 'date',
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
 } as const;
 
 export const DateTimePicker = (

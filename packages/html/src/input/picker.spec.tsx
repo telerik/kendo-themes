@@ -19,7 +19,6 @@ export const pickerOptions = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
-const defaultProps = {};
 
 export type PickerState = { [K in (typeof pickerStates)[number]]?: boolean };
 
@@ -29,7 +28,7 @@ export type PickerOptions = {
   fillMode?: (typeof pickerOptions.fillMode)[number] | null;
 };
 
-export const pickerDefaultProps = {
+const defaultProps = {
     size: Size.medium,
     rounded: Roundness.medium,
     fillMode: FillMode.solid,
@@ -46,9 +45,9 @@ export const Picker = (
         valid,
         loading,
         readonly,
-        size = pickerDefaultProps.size,
-        rounded = pickerDefaultProps.rounded,
-        fillMode = pickerDefaultProps.fillMode,
+        size = defaultProps.size,
+        rounded = defaultProps.rounded,
+        fillMode = defaultProps.fillMode,
         ...other
     } = props;
 
