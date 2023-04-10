@@ -51,7 +51,10 @@ export type KendoDropdownTreeState = { [K in (typeof states)[number]]?: boolean 
 
 const defaultProps = {
     showValue: true,
-    arrowIconName: 'arrow-s'
+    arrowIconName: 'arrow-s',
+    size: Size.medium,
+    rounded: Roundness.medium,
+    fillMode: FillMode.solid,
 };
 
 export const DropdownTree = (

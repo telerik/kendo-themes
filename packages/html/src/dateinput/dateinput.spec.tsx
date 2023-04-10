@@ -42,7 +42,10 @@ export type KendoDateInputProps = KendoDateInputOptions & {
 export type KendoDateInputState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    showSpinButton: true
+    showSpinButton: true,
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
 };
 
 export const DateInput = (

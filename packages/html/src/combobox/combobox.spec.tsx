@@ -24,7 +24,11 @@ const states = [
     States.readonly
 ];
 
-const defaultProps = {};
+const defaultProps = {
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
+};
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],

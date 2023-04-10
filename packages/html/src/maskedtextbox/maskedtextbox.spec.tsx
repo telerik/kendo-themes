@@ -42,7 +42,10 @@ export type KendoMaskedTextboxProps = KendoMaskedTextboxOptions & {
 export type KendoMaskedTextboxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    showClearButton: true
+    showClearButton: true,
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
 };
 
 export const MaskedTextbox = (
