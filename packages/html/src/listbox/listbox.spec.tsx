@@ -82,5 +82,6 @@ export const ListBox = (
 ListBox.states = states;
 ListBox.options = options;
 ListBox.className = LISTBOX_CLASSNAME;
+ListBox.defaultProps = defaultProps;
 
 export default ListBox;

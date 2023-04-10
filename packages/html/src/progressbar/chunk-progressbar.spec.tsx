@@ -72,5 +72,6 @@ export const ChunkProgressBar = (
 ChunkProgressBar.states = states;
 ChunkProgressBar.options = options;
 ChunkProgressBar.className = CHUNKPROGRESSBAR_CLASSNAME;
+ChunkProgressBar.defaultProps = defaultProps;
 
 export default ChunkProgressBar;

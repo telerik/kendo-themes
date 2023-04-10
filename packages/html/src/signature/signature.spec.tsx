@@ -132,5 +132,6 @@ export const Signature = (
 Signature.states = states;
 Signature.options = options;
 Signature.className = SIGNATURE_CLASSNAME;
+Signature.defaultProps = defaultProps;
 
 export default Signature;

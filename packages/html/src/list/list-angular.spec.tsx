@@ -110,5 +110,6 @@ export const ListAngular = (
 ListAngular.states = states;
 ListAngular.options = options;
 ListAngular.className = LISTANGULAR_CLASSNAME;
+ListAngular.defaultProps = defaultProps;
 
 export default ListAngular;

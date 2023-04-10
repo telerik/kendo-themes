@@ -85,5 +85,6 @@ export const Badge = (
 Badge.states = states;
 Badge.options = options;
 Badge.className = BADGE_CLASSNAME;
+Badge.defaultProps = defaultProps;
 
 export default Badge;

@@ -197,5 +197,6 @@ export const ToolbarAngular = (
 ToolbarAngular.states = states;
 ToolbarAngular.options = options;
 ToolbarAngular.className = TOOLBARANGULAR_CLASSNAME;
+ToolbarAngular.defaultProps = defaultProps;
 
 export default ToolbarAngular;

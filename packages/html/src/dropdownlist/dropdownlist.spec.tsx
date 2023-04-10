@@ -143,5 +143,6 @@ export const DropdownList = (
 DropdownList.states = states;
 DropdownList.options = options;
 DropdownList.className = DROPDOWNLIST_CLASSNAME;
+DropdownList.defaultProps = defaultProps;
 
 export default DropdownList;

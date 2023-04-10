@@ -44,5 +44,6 @@ export const ChipList = (
 ChipList.states = states;
 ChipList.options = options;
 ChipList.className = CHIPLIST_CLASSNAME;
+ChipList.defaultProps = defaultProps;
 
 export default ChipList;

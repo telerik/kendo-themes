@@ -90,5 +90,6 @@ export const LoaderContainer = (
 LoaderContainer.states = states;
 LoaderContainer.options = options;
 LoaderContainer.className = LOADERCONTAINER_CLASSNAME;
+LoaderContainer.defaultProps = defaultProps;
 
 export default LoaderContainer;

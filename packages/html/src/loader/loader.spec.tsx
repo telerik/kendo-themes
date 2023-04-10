@@ -103,5 +103,6 @@ export const Loader = (
 Loader.states = states;
 Loader.options = options;
 Loader.className = LOADER_CLASSNAME;
+Loader.defaultProps = defaultProps;
 
 export default Loader;

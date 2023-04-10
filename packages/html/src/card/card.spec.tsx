@@ -20,6 +20,8 @@ const options = {
     ],
 };
 
+const defaultProps = {};
+
 export type KendoCardOptions = {
   themeColor?: (typeof options.themeColor)[number] | null;
 };
@@ -79,5 +81,6 @@ export const Card = (
 Card.states = states;
 Card.options = options;
 Card.className = CARD_CLASSNAME;
+Card.defaultProps = defaultProps;
 
 export default Card;

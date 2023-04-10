@@ -90,5 +90,6 @@ export const ProgressBar = (
 ProgressBar.states = states;
 ProgressBar.options = options;
 ProgressBar.className = PROGRESSBAR_CLASSNAME;
+ProgressBar.defaultProps = defaultProps;
 
 export default ProgressBar;

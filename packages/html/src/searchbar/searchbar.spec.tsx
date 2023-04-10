@@ -7,6 +7,8 @@ const states = [];
 
 const options = {};
 
+const defaultProps = {};
+
 export type KendoSearchBarProps = {
     placeholder?: string;
 };
@@ -34,5 +36,6 @@ export const SearchBar = (
 SearchBar.states = states;
 SearchBar.options = options;
 SearchBar.className = SEARCHBAR_CLASSNAME;
+SearchBar.defaultProps = defaultProps;
 
 export default SearchBar;

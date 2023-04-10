@@ -179,5 +179,6 @@ export const Toolbar = (
 Toolbar.states = states;
 Toolbar.options = options;
 Toolbar.className = TOOLBAR_CLASSNAME;
+Toolbar.defaultProps = defaultProps;
 
 export default Toolbar;

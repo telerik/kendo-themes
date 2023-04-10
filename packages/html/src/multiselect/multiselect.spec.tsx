@@ -31,6 +31,8 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
+const defaultProps = {};
+
 export type KendoMultiSelectOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -142,5 +144,6 @@ export const MultiSelect = (
 MultiSelect.states = states;
 MultiSelect.options = options;
 MultiSelect.className = MULTISELECT_CLASSNAME;
+MultiSelect.defaultProps = defaultProps;
 
 export default MultiSelect;

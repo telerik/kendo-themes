@@ -115,5 +115,6 @@ export const Chip = (
 Chip.states = states;
 Chip.options = options;
 Chip.className = CHIP_CLASSNAME;
+Chip.defaultProps = defaultProps;
 
 export default Chip;

@@ -12,6 +12,7 @@ const states = [
 ];
 
 const options = {};
+const defaultProps = {};
 
 export type KendoCaptchaProps = {
     value?: string;
@@ -86,5 +87,6 @@ export const Captcha = (
 Captcha.states = states;
 Captcha.options = options;
 Captcha.className = CAPTCHA_CLASSNAME;
+Captcha.defaultProps = defaultProps;
 
 export default Captcha;

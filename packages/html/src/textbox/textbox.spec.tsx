@@ -115,5 +115,6 @@ export const Textbox = (
 Textbox.states = states;
 Textbox.options = options;
 Textbox.className = TEXTBOX_CLASSNAME;
+Textbox.defaultProps = defaultProps;
 
 export default Textbox;

@@ -20,6 +20,8 @@ const options = {
     ],
 };
 
+const defaultProps = {};
+
 export type IconState = { [K in (typeof states)[number]]?: boolean };
 
 export type IconOptions = {
@@ -72,5 +74,6 @@ export const Icon = (
 Icon.states = states;
 Icon.options = options;
 Icon.className = ICON_CLASSNAME;
+Icon.defaultProps = defaultProps;
 
 export default Icon;

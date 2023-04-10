@@ -109,5 +109,6 @@ export const List = (
 List.states = states;
 List.options = options;
 List.className = LIST_CLASSNAME;
+List.defaultProps = defaultProps;
 
 export default List;

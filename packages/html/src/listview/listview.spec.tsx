@@ -95,5 +95,6 @@ export const ListView = (
 ListView.states = states;
 ListView.options = options;
 ListView.className = LISTVIEW_CLASSNAME;
+ListView.defaultProps = defaultProps;
 
 export default ListView;

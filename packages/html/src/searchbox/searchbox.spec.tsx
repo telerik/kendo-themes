@@ -98,5 +98,6 @@ export const Searchbox = (
 Searchbox.states = states;
 Searchbox.options = options;
 Searchbox.className = SEARCHBOX_CLASSNAME;
+Searchbox.defaultProps = defaultProps;
 
 export default Searchbox;

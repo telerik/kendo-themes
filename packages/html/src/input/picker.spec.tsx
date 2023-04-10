@@ -19,6 +19,8 @@ export const pickerOptions = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
+const defaultProps = {};
+
 export type PickerState = { [K in (typeof pickerStates)[number]]?: boolean };
 
 export type PickerOptions = {
@@ -67,5 +69,6 @@ export const Picker = (
 Picker.states = pickerStates;
 Picker.options = pickerOptions;
 Picker.className = PICKER_CLASSNAME;
+Picker.defaultProps = defaultProps;
 
 export default Picker;
