@@ -99,5 +99,6 @@ export const Avatar = (
 Avatar.states = states;
 Avatar.options = options;
 Avatar.className = AVATAR_CLASSNAME;
+Avatar.defaultProps = defaultProps;
 
 export default Avatar;

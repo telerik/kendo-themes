@@ -113,5 +113,6 @@ export const DateInput = (
 DateInput.states = states;
 DateInput.options = options;
 DateInput.className = DATEINPUT_CLASSNAME;
+DateInput.defaultProps = defaultProps;
 
 export default DateInput;

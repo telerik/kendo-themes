@@ -93,6 +93,7 @@ export const Form = (
 Form.states = states;
 Form.options = options;
 Form.className = FORM_CLASSNAME;
+Form.defaultProps = defaultProps;
 
 export default Form;
 

@@ -89,5 +89,6 @@ export const Calendar = (
 Calendar.states = states;
 Calendar.options = options;
 Calendar.className = CALENDAR_CLASSNAME;
+Calendar.defaultProps = defaultProps;
 
 export default Calendar;

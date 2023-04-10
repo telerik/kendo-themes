@@ -74,5 +74,6 @@ export const Checkbox = (
 Checkbox.states = states;
 Checkbox.options = options;
 Checkbox.className = CHECKBOX_CLASSNAME;
+Checkbox.defaultProps = defaultProps;
 
 export default Checkbox;

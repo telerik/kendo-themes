@@ -97,5 +97,6 @@ export const Switch = (
 Switch.states = states;
 Switch.options = options;
 Switch.className = SWITCH_CLASSNAME;
+Switch.defaultProps = defaultProps;
 
 export default Switch;

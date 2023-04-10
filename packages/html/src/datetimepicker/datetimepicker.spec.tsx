@@ -132,5 +132,6 @@ export const DateTimePicker = (
 DateTimePicker.states = states;
 DateTimePicker.options = options;
 DateTimePicker.className = DATETIMEPICKER_CLASSNAME;
+DateTimePicker.defaultProps = defaultProps;
 
 export default DateTimePicker;

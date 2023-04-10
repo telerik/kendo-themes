@@ -118,5 +118,6 @@ export const SplitButton = (
 SplitButton.states = states;
 SplitButton.options = options;
 SplitButton.className = SPLITBUTTON_CLASSNAME;
+SplitButton.defaultProps = defaultProps;
 
 export default SplitButton;

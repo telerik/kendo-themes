@@ -12,6 +12,8 @@ const states = [
 
 const options = {};
 
+const defaultProps = {};
+
 export type FloatingLabelState = { [K in (typeof states)[number]]?: boolean };
 
 export type KendoFloatingLabelrProps = {
@@ -53,5 +55,6 @@ export const FloatingLabel = (
 FloatingLabel.states = states;
 FloatingLabel.options = options;
 FloatingLabel.className = FLOATINGLABEL_CLASSNAME;
+FloatingLabel.defaultProps = defaultProps;
 
 export default FloatingLabel;

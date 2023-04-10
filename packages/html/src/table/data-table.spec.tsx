@@ -44,5 +44,6 @@ export const DataTable = (
 DataTable.states = states;
 DataTable.options = options;
 DataTable.className = DATATABLE_CLASSNAME;
+DataTable.defaultProps = defaultProps;
 
 export default DataTable;

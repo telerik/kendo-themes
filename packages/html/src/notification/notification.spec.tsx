@@ -86,5 +86,6 @@ export const Notification = (
 Notification.states = states;
 Notification.options = options;
 Notification.className = NOTIFICATION_CLASSNAME;
+Notification.defaultProps = defaultProps;
 
 export default Notification;

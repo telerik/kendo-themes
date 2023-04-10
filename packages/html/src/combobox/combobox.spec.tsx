@@ -24,6 +24,8 @@ const states = [
     States.readonly
 ];
 
+const defaultProps = {};
+
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
@@ -127,5 +129,6 @@ export const Combobox = (
 Combobox.states = states;
 Combobox.options = options;
 Combobox.className = COMBOBOX_CLASSNAME;
+Combobox.defaultProps = defaultProps;
 
 export default Combobox;

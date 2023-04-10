@@ -82,5 +82,6 @@ export const ColorPalette = (
 ColorPalette.states = states;
 ColorPalette.options = options;
 ColorPalette.className = COLORPALETTE_CLASSNAME;
+ColorPalette.defaultProps = defaultProps;
 
 export default ColorPalette;

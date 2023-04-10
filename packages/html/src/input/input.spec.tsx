@@ -65,5 +65,6 @@ export const Input = (
 Input.states = states;
 Input.options = options;
 Input.className = INPUT_CLASSNAME;
+Input.defaultProps = defaultProps;
 
 export default Input;

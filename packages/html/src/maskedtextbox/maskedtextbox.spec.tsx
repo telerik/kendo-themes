@@ -106,5 +106,6 @@ export const MaskedTextbox = (
 MaskedTextbox.states = states;
 MaskedTextbox.options = options;
 MaskedTextbox.className = MASKEDTEXTBOX_CLASSNAME;
+MaskedTextbox.defaultProps = defaultProps;
 
 export default MaskedTextbox;

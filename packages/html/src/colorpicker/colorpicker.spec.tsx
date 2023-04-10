@@ -119,5 +119,6 @@ export const ColorPicker = (
 ColorPicker.states = states;
 ColorPicker.options = options;
 ColorPicker.className = COLORPICKER_CLASSNAME;
+ColorPicker.defaultProps = defaultProps;
 
 export default ColorPicker;

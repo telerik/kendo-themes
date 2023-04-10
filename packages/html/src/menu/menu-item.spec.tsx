@@ -106,5 +106,6 @@ export const MenuItem = (
 MenuItem.states = states;
 MenuItem.options = options;
 MenuItem.className = MENUITEM_CLASSNAME;
+MenuItem.defaultProps = defaultProps;
 
 export default MenuItem;

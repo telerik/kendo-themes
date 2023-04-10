@@ -131,5 +131,6 @@ export const Button = (
 Button.states = states;
 Button.options = options;
 Button.className = BUTTON_CLASSNAME;
+Button.defaultProps = defaultProps;
 
 export default Button;

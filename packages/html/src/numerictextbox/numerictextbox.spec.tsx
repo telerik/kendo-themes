@@ -117,5 +117,6 @@ export const NumericTextbox = (
 NumericTextbox.states = states;
 NumericTextbox.options = options;
 NumericTextbox.className = NUMERICTEXTBOX_CLASSNAME;
+NumericTextbox.defaultProps = defaultProps;
 
 export default NumericTextbox;

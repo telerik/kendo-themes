@@ -32,6 +32,8 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
+const defaultProps = {};
+
 export type KendoTimeDurationPickerOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -131,5 +133,6 @@ export const TimeDurationPicker = (
 TimeDurationPicker.states = states;
 TimeDurationPicker.options = options;
 TimeDurationPicker.className = TIMEDURATIONPICKER_CLASSNAME;
+TimeDurationPicker.defaultProps = defaultProps;
 
 export default TimeDurationPicker;

@@ -8,6 +8,8 @@ const states = [
 
 const options = {};
 
+const defaultProps = {};
+
 export type KendoEditorState = { [K in (typeof states)[number]]?: boolean };
 
 export const Editor = (
@@ -37,5 +39,6 @@ export const Editor = (
 Editor.states = states;
 Editor.options = options;
 Editor.className = EDITOR_CLASSNAME;
+Editor.defaultProps = defaultProps;
 
 export default Editor;

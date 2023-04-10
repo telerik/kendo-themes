@@ -97,5 +97,6 @@ export const Orgchart = (
 Orgchart.states = states;
 Orgchart.options = options;
 Orgchart.className = ORGCHART_CLASSNAME;
+Orgchart.defaultProps = defaultProps;
 
 export default Orgchart;

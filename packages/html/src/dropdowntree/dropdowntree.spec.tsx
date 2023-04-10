@@ -143,5 +143,6 @@ export const DropdownTree = (
 DropdownTree.states = states;
 DropdownTree.options = options;
 DropdownTree.className = DROPDOWNTREE_CLASSNAME;
+DropdownTree.defaultProps = defaultProps;
 
 export default DropdownTree;

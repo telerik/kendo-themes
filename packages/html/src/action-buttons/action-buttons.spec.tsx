@@ -45,5 +45,6 @@ export const ActionButtons = (
 ActionButtons.states = states;
 ActionButtons.options = options;
 ActionButtons.className = ACTIONBUTTONS_CLASSNAME;
+ActionButtons.defaultProps = defaultProps;
 
 export default ActionButtons;

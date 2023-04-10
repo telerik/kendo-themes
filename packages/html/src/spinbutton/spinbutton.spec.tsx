@@ -63,5 +63,6 @@ export const SpinButton = (
 SpinButton.states = states;
 SpinButton.options = options;
 SpinButton.className = SPINBUTTON_CLASSNAME;
+SpinButton.defaultProps = defaultProps;
 
 export default SpinButton;
