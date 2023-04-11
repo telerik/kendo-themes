@@ -115,7 +115,7 @@ root.render(
                                                         <span className="k-column-title">Default</span>
                                                     </span>
                                                     <a className="k-grid-filter-menu k-grid-header-menu">
-                                                        <Icon name="filter" />
+                                                        <Icon icon="filter" />
                                                     </a>
                                                 </span>
                                             </th>
@@ -125,7 +125,7 @@ root.render(
                                                         <span className="k-column-title">Hover</span>
                                                     </span>
                                                     <a className="k-grid-filter-menu k-grid-header-menu">
-                                                        <Icon name="filter" />
+                                                        <Icon icon="filter" />
                                                     </a>
                                                 </span>
                                             </th>
@@ -135,7 +135,7 @@ root.render(
                                                         <span className="k-column-title">Focus</span>
                                                     </span>
                                                     <a className="k-grid-filter-menu k-grid-header-menu">
-                                                        <Icon name="filter" />
+                                                        <Icon icon="filter" />
                                                     </a>
                                                 </span>
                                             </th>
@@ -145,7 +145,7 @@ root.render(
                                                         <span className="k-column-title">Active</span>
                                                     </span>
                                                     <a className="k-grid-filter-menu k-grid-header-menu k-active">
-                                                        <Icon name="filter" />
+                                                        <Icon icon="filter" />
                                                     </a>
                                                 </span>
                                             </th>
@@ -158,7 +158,7 @@ root.render(
                                                         </span>
                                                     </span>
                                                     <a className="k-grid-filter-menu k-grid-header-menu">
-                                                        <Icon name="filter" />
+                                                        <Icon icon="filter" />
                                                     </a>
                                                 </span>
                                             </th>
@@ -181,7 +181,7 @@ root.render(
                                         </colgroup>
                                         <tbody className="k-table-tbody">
                                             <tr className="k-table-row k-master-row k-expanded">
-                                                <td className="k-table-td k-hierarchy-cell"><Icon name="minus" /></td>
+                                                <td className="k-table-td k-hierarchy-cell"><Icon icon="minus" /></td>
                                                 <td className="k-table-td"><Checkbox /><label className="k-checkbox-label"></label></td>
                                                 <td className="k-table-td">1</td>
                                                 <td className="k-table-td">Text</td>
@@ -200,7 +200,7 @@ root.render(
                                             </tr>
                                             <tr className="k-table-row k-table-alt-row k-alt k-master-row">
                                                 <td className="k-table-td k-hierarchy-cell">
-                                                    <Icon name="plus" />
+                                                    <Icon icon="plus" />
                                                 </td>
                                                 <td className="k-table-td"><Checkbox /><label className="k-checkbox-label"></label></td>
                                                 <td className="k-table-td">2</td>

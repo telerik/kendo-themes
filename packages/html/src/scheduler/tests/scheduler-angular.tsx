@@ -82,7 +82,7 @@ root.render(
                                         <div className="k-event" style={{ width: "300px", left: "304px", top: '0px', height: "25px" }} >
                                             <span className="k-event-actions"></span>
                                             <div><div className="k-event-template">Attending HR Conference</div></div>
-                                            <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                            <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -361,21 +361,21 @@ root.render(
                                     </tbody>
                                 </table>
                                 <div className="k-event" style={{ width: "150px", left: "306px", top: '0px', height: "73px" }} >
-                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="arrow-rotate-cw"></Icon></span>
                                     <div>
                                         <div className="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
                                         <div className="k-event-template">HR Lecture</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                 </div>
 
                                 <div className="k-event k-event-drag-hint" style={{ width: "150px", left: "631px", top: '0px', height: "73px" }} >
-                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="arrow-rotate-cw"></Icon></span>
                                     <div>
                                         <div className="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
                                         <div className="k-event-template">HR Lecture</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                 </div>
                             </div>
                         </div>

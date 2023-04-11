@@ -89,7 +89,7 @@ export const Searchbox = (
             disabled={disabled}
             className={classNames(props.className, SEARCHBOX_CLASSNAME)}
         >
-            { showIcon && (<Icon className="k-input-icon" name={icon} />) }
+            { showIcon && (<Icon className="k-input-icon" icon={icon} />) }
             <InputInnerInput placeholder={placeholder} value={value} />
             <InputLoadingIcon {...props} />
             <InputValidationIcon {...props} />

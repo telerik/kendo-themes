@@ -119,7 +119,7 @@ root.render(
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="caret-alt-down" />7
+                                        <Icon icon="caret-alt-down" />7
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Software validation, research and implementation
@@ -136,8 +136,8 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />18
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />18
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Project Kickoff
@@ -152,7 +152,7 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" /><Icon name="caret-alt-down" />11
+                                        <Icon icon="none" /><Icon icon="caret-alt-down" />11
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Research
@@ -169,9 +169,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />19
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />19
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Validation with Customers
@@ -182,7 +182,7 @@ root.render(
                                             <div className="k-task-content">Validation with Customers</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -195,9 +195,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />20
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />20
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Market Research
@@ -208,7 +208,7 @@ root.render(
                                             <div className="k-task-content">Market Research</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -221,9 +221,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />39
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />39
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         Functional and Technical Specification
@@ -234,7 +234,7 @@ root.render(
                                             <div className="k-task-content">Functional and Technical Specification</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -247,8 +247,8 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="caret-alt-down" />12
+                                        <Icon icon="none" />
+                                        <Icon icon="caret-alt-down" />12
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Design</td>
                                     <td className="k-table-td">
@@ -263,9 +263,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />22
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />22
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>UI Design</td>
                                     <td className="k-table-td">
@@ -274,7 +274,7 @@ root.render(
                                             <div className="k-task-content">UI Design</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -287,9 +287,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row k-selected" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />23
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />23
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>HTML Prototype</td>
                                     <td className="k-table-td">
@@ -298,7 +298,7 @@ root.render(
                                             <div className="k-task-content">HTML Prototype</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -311,8 +311,8 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="caret-alt-down" />13
+                                        <Icon icon="none" />
+                                        <Icon icon="caret-alt-down" />13
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Implementation</td>
                                     <td className="k-table-td">
@@ -327,9 +327,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />24
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />24
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Prototype</td>
                                     <td className="k-table-td">
@@ -338,7 +338,7 @@ root.render(
                                             <div className="k-task-content">Prototype</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -351,9 +351,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />26
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />26
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Architecture</td>
                                     <td className="k-table-td">
@@ -362,7 +362,7 @@ root.render(
                                             <div className="k-task-content">Architecture</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -375,9 +375,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />27
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />27
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Data Layer</td>
                                     <td className="k-table-td">
@@ -386,7 +386,7 @@ root.render(
                                             <div className="k-task-content">Data Layer</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -399,9 +399,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />29
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />29
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>
                                         UI and Interaction
@@ -412,7 +412,7 @@ root.render(
                                             <div className="k-task-content">UI and Interaction</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -425,9 +425,9 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />
-                                        <Icon name="none" />28
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />28
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Unit Tests</td>
                                     <td className="k-table-td">
@@ -436,7 +436,7 @@ root.render(
                                             <div className="k-task-content">Unit Tests</div>
                                             <span className="k-task-actions">
                                                 <a className="k-link k-task-delete">
-                                                    <Icon name="x" />
+                                                    <Icon icon="x" />
                                                 </a>
                                             </span>
                                             <span className="k-resize-handle k-resize-w"></span>
@@ -449,8 +449,8 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="caret-alt-right" />14
+                                        <Icon icon="none" />
+                                        <Icon icon="caret-alt-right" />14
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Testing</td>
                                     <td className="k-table-td">
@@ -465,8 +465,8 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="caret-alt-right" />30
+                                        <Icon icon="none" />
+                                        <Icon icon="caret-alt-right" />30
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Documentation</td>
                                     <td className="k-table-td">
@@ -481,8 +481,8 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-master-row k-alt" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="caret-alt-right" />31
+                                        <Icon icon="none" />
+                                        <Icon icon="caret-alt-right" />31
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Demos</td>
                                     <td className="k-table-td">
@@ -497,8 +497,8 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-master-row" style={{ height: "40px" }}>
                                     <td className="k-table-td k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
-                                        <Icon name="none" />
-                                        <Icon name="none" />17
+                                        <Icon icon="none" />
+                                        <Icon icon="none" />17
                                     </td>
                                     <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "100px", right: '0px', borderRightWidth: "1px" }}>Release</td>
                                     <td className="k-table-td">

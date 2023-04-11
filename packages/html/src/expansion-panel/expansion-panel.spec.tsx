@@ -63,7 +63,7 @@ export const ExpansionPanel = (
                 <span className="k-spacer"></span>
                 <div className="k-expander-sub-title">{subtitle}</div>
                 <span className="k-expander-indicator">
-                    { !expanded ? <Icon name="chevron-down" /> : <Icon name="chevron-up" /> }
+                    { !expanded ? <Icon icon="chevron-down" /> : <Icon icon="chevron-up" /> }
                 </span>
             </div>
             <div className={classNames(

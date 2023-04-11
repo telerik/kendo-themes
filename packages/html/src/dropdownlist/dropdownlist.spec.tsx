@@ -51,7 +51,7 @@ export type KendoDropdownListState = { [K in (typeof states)[number]]?: boolean 
 
 const defaultProps = {
     showValue: true,
-    arrowIconName: 'arrow-s',
+    arrowIconName: 'caret-alt-down',
     size: Size.medium,
     rounded: Roundness.medium,
     fillMode: FillMode.solid,

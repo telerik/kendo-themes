@@ -252,7 +252,7 @@ root.render(
                                         <tr className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={5}>
                                                 <p className="k-reset">
-                                                    <Icon name="caret-alt-right" />
+                                                    <Icon icon="caret-alt-right" />
                                                     Price: 19
                                                 </p>
                                             </td>
@@ -260,7 +260,7 @@ root.render(
                                         <tr className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={5}>
                                                 <p className="k-reset">
-                                                    <Icon name="caret-alt-down" />
+                                                    <Icon icon="caret-alt-down" />
                                                     Price: 30
                                                 </p>
                                             </td>
@@ -348,7 +348,7 @@ root.render(
                             <tr className="k-table-row k-table-group-row k-grouping-row">
                                 <td className="k-table-td" colSpan={5}>
                                     <p className="k-reset">
-                                        <Icon name="caret-alt-right" />
+                                        <Icon icon="caret-alt-right" />
                                         Price: 19
                                     </p>
                                 </td>
@@ -356,7 +356,7 @@ root.render(
                             <tr className="k-table-row k-table-group-row k-grouping-row">
                                 <td className="k-table-td" colSpan={5}>
                                     <p className="k-reset">
-                                        <Icon name="caret-alt-down" />
+                                        <Icon icon="caret-alt-down" />
                                         Price: 30
                                     </p>
                                 </td>
@@ -377,11 +377,11 @@ root.render(
             <span>jquery grid drag clue</span>
 
             <section className="section">
-                <div className="k-header k-drag-clue"><Icon className="k-drag-status" name="cancel" />Drag clue</div>
+                <div className="k-header k-drag-clue"><Icon className="k-drag-status" icon="cancel" />Drag clue</div>
             </section>
 
             <section className="section">
-                <div className="k-header k-drag-clue k-group-clue"><Icon className="k-drag-status" name="plus" />Drag clue</div>
+                <div className="k-header k-drag-clue k-group-clue"><Icon className="k-drag-status" icon="plus" />Drag clue</div>
             </section>
 
         </div>

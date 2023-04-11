@@ -50,7 +50,7 @@ root.render(
                             <BreadcrumbContainer>
                                 <BreadcrumbItem root>
                                     <BreadcrumbLink root icon>
-                                        <Icon name="home" />
+                                        <Icon icon="home" />
                                     </BreadcrumbLink>
                                 </BreadcrumbItem>
                             </BreadcrumbContainer>
@@ -60,11 +60,11 @@ root.render(
                         <div className="k-widget k-listview k-selectable k-filemanager-listview">
                             <div className="k-listview-content k-d-flex k-flex-row k-flex-wrap">
                                 <div className="k-listview-item">
-                                    <span className="k-file-preview"><Icon className="k-file-icon" name="folder" /></span>
+                                    <span className="k-file-preview"><Icon className="k-file-icon" icon="folder" /></span>
                                     <span className="k-file-name">Folder</span>
                                 </div>
                                 <div className="k-listview-item">
-                                    <span className="k-file-preview"><Icon className="k-file-icon" name="file-image" /></span>
+                                    <span className="k-file-preview"><Icon className="k-file-icon" icon="file-image" /></span>
                                     <span className="k-file-name">file.png</span>
                                 </div>
                             </div>

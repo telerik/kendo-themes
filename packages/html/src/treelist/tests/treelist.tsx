@@ -25,7 +25,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">First Name</span>
                                                 </span>
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable">
@@ -33,7 +33,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Last Name</span>
                                                 </span>
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                             </span>
                                         </th>
                                     </tr>
@@ -49,7 +49,7 @@ root.render(
                             </colgroup>
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row">
-                                    <td className="k-table-td"><Icon name="caret-alt-right"></Icon>Daryl</td>
+                                    <td className="k-table-td"><Icon icon="caret-alt-right"></Icon>Daryl</td>
                                     <td className="k-table-td">Sweeney</td>
                                 </tr>
                             </tbody>
@@ -76,7 +76,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">First Name</span>
                                                 </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable">
@@ -84,7 +84,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Last Name</span>
                                                 </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable">
@@ -92,7 +92,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Position</span>
                                                 </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
                                             </span>
                                         </th>
                                     </tr>
@@ -109,29 +109,29 @@ root.render(
                             </colgroup>
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td"><Icon name="caret-alt-down"></Icon>Daryl</td>
+                                    <td className="k-table-td"><Icon icon="caret-alt-down"></Icon>Daryl</td>
                                     <td className="k-table-td">Sweeney</td>
                                     <td className="k-table-td">CEO</td>
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="caret-alt-down"></Icon>Guy
+                                    <td className="k-table-td"><Icon icon="none"></Icon><Icon icon="caret-alt-down"></Icon>Guy
                                     </td>
                                     <td className="k-table-td">Wooten</td>
                                     <td className="k-table-td">Chief Technical Officer</td>
                                 </tr>
                                 <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="caret-alt-down"></Icon>Buffy</td>
+                                    <td className="k-table-td"><Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="caret-alt-down"></Icon>Buffy</td>
                                     <td className="k-table-td">Weber</td>
                                     <td className="k-table-td">VP, Engineering</td>
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="caret-alt-down"></Icon>Hyacinth
+                                    <td className="k-table-td"><Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="caret-alt-down"></Icon>Hyacinth
                                     </td>
                                     <td className="k-table-td">Hood</td>
                                     <td className="k-table-td">Team Lead</td>
                                 </tr>
                                 <tr className="k-table-row">
-                                    <td className="k-table-td"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon>Akeem</td>
+                                    <td className="k-table-td"><Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="none"></Icon>Akeem</td>
                                     <td className="k-table-td">Carr</td>
                                     <td className="k-table-td">Junior Software Developer</td>
                                 </tr>

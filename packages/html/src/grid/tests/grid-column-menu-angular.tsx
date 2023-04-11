@@ -30,7 +30,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Name</span>
                                                 </span>
-                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable" rowSpan={1} colSpan={1}>
@@ -38,7 +38,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Command</span>
                                                 </span>
-                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                             </span>
                                         </th>
                                     </tr>
@@ -97,7 +97,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Name</span>
                                                 </span>
-                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable" rowSpan={1} colSpan={1}>
@@ -105,7 +105,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Command</span>
                                                 </span>
-                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                             </span>
                                         </th>
                                     </tr>
@@ -164,7 +164,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Name</span>
                                                 </span>
-                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable" rowSpan={1} colSpan={1}>
@@ -172,7 +172,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Command</span>
                                                 </span>
-                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                                <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                             </span>
                                         </th>
                                     </tr>

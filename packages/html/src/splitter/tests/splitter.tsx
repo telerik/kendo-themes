@@ -35,7 +35,7 @@ root.render(
                         </div>
                         <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "1" }}>
                             <div className="k-collapse-prev">
-                                <Icon name="caret-alt-left"></Icon>
+                                <Icon icon="caret-alt-left"></Icon>
                             </div>
                             <div className="k-resize-handle"></div>
                             <Icon />
@@ -44,34 +44,34 @@ root.render(
                             <Icon />
                             <div className="k-resize-handle"></div>
                             <div className="k-collapse-next">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </div>
                         </div>
                         <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "5" }}>
                             <div className="k-collapse-prev">
-                                <Icon name="caret-alt-left"></Icon>
+                                <Icon icon="caret-alt-left"></Icon>
                             </div>
                             <div className="k-resize-handle"></div>
                             <div className="k-collapse-next">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </div>
                         </div>
                         <div className="k-splitbar k-hover k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "7" }}>
                             <div className="k-collapse-prev">
-                                <Icon name="caret-alt-left"></Icon>
+                                <Icon icon="caret-alt-left"></Icon>
                             </div>
                             <div className="k-resize-handle"></div>
                             <div className="k-collapse-next">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </div>
                         </div>
                         <div className="k-splitbar k-focus k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "9" }}>
                             <div className="k-collapse-prev">
-                                <Icon name="caret-alt-left"></Icon>
+                                <Icon icon="caret-alt-left"></Icon>
                             </div>
                             <div className="k-resize-handle"></div>
                             <div className="k-collapse-next">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </div>
                         </div>
                     </div>

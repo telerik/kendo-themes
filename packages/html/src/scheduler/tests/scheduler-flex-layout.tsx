@@ -109,7 +109,7 @@ root.render(
                             </div>
                             <span className="k-event-actions">
                                 <a href="#" className="k-link k-event-delete">
-                                    <Icon name="x"></Icon>
+                                    <Icon icon="x"></Icon>
                                 </a>
                             </span>
                             <span className="k-resize-handle k-resize-w"></span>
@@ -122,7 +122,7 @@ root.render(
                             </div>
                             <span className="k-event-actions">
                                 <a href="#" className="k-link k-event-delete">
-                                    <Icon name="x"></Icon>
+                                    <Icon icon="x"></Icon>
                                 </a>
                             </span>
                             <span className="k-resize-handle k-resize-w"></span>
@@ -135,7 +135,7 @@ root.render(
                             </div>
                             <span className="k-event-actions">
                                 <a href="#" className="k-link k-event-delete">
-                                    <Icon name="x"></Icon>
+                                    <Icon icon="x"></Icon>
                                 </a>
                             </span>
                             <span className="k-resize-handle k-resize-w"></span>
@@ -148,7 +148,7 @@ root.render(
                             </div>
                             <span className="k-event-actions">
                                 <a href="#" className="k-link k-event-delete">
-                                    <Icon name="x"></Icon>
+                                    <Icon icon="x"></Icon>
                                 </a>
                             </span>
                             <span className="k-resize-handle k-resize-w"></span>
@@ -465,7 +465,7 @@ root.render(
                             </div>
                             <span className="k-event-actions">
                                 <a href="#" className="k-link k-event-delete">
-                                    <Icon name="x"></Icon>
+                                    <Icon icon="x"></Icon>
                                 </a>
                             </span>
                             <span className="k-resize-handle k-resize-n"></span>
@@ -479,7 +479,7 @@ root.render(
                             </div>
                             <span className="k-event-actions">
                                 <a href="#" className="k-link k-event-delete">
-                                    <Icon name="x"></Icon>
+                                    <Icon icon="x"></Icon>
                                 </a>
                             </span>
                             <span className="k-resize-handle k-resize-n"></span>

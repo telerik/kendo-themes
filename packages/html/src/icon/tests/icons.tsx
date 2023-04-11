@@ -593,7 +593,7 @@ const icons = [
     "chart-radar-filled",
     "chart-rose",
     "chart-choropleth",
-    "color-canvas",
+    "droplet-slider",
     "handle-resize-alt",
     "handle-resize",
     "right-double-quotes",

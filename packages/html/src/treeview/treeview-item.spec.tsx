@@ -67,7 +67,7 @@ export const TreeviewItem = (
                             "k-treeview-toggle",
                             stateClassNames("k-treeview-toggle", { disabled })
                         )}>
-                        <Icon name={expanded ? 'caret-alt-down' : 'caret-alt-right'} />
+                        <Icon icon={expanded ? 'caret-alt-down' : 'caret-alt-right'} />
                     </span>
                 )}
                 {showCheckbox && (

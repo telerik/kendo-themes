@@ -46,9 +46,9 @@ export const CalendarHeader = (
             <Button className="k-calendar-title" text={calendarHeaderText} size={size} fillMode="flat"></Button>
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
-                <Button className="k-calendar-nav-prev" icon="arrow-chevron-left" size={size} fillMode="flat"></Button>
+                <Button className="k-calendar-nav-prev" icon="chevron-left" size={size} fillMode="flat"></Button>
                 {showToday && <Button size={size} fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>}
-                <Button className="k-calendar-nav-next" icon="arrow-chevron-right" size={size} fillMode="flat"></Button>
+                <Button className="k-calendar-nav-next" icon="chevron-right" size={size} fillMode="flat"></Button>
             </span>
         </div>
     );

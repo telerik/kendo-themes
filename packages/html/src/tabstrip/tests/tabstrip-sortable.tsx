@@ -18,7 +18,7 @@ root.render(
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
-                                <Button fillMode="flat" icon="close" className="k-remove-tab"></Button>
+                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
                             </li>
                             <li className="k-item k-focus">
                                 <span className="k-link">Focused</span>
@@ -43,7 +43,7 @@ root.render(
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
-                                <Button fillMode="flat" icon="close" className="k-remove-tab"></Button>
+                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
                             </li>
                             <li className="k-item k-focus">
                                 <span className="k-link">Focused</span>
@@ -71,7 +71,7 @@ root.render(
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
-                                <Button fillMode="flat" icon="close" className="k-remove-tab"></Button>
+                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
                             </li>
                             <li className="k-item k-last k-disabled">
                                 <span className="k-link">Disabled</span>
@@ -102,7 +102,7 @@ root.render(
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
-                                <Button fillMode="flat" icon="close" className="k-remove-tab"></Button>
+                                <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
                             </li>
                             <li className="k-item k-last k-disabled">
                                 <span className="k-link">Disabled</span>

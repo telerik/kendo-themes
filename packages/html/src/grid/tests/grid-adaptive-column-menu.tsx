@@ -15,7 +15,7 @@ root.render(
                 <div className="k-pane">
                     <div className="k-grid-column-menu k-view k-widget">
                         <div className="k-appbar k-appbar-primary">
-                            <Button className="k-header-cancel" fillMode="flat" icon="arrow-chevron-left"></Button>
+                            <Button className="k-header-cancel" fillMode="flat" icon="chevron-left"></Button>
                             <span className="k-spacer"></span>
                             <span>Edit Column Settings</span>
                             <span className="k-spacer"></span>
@@ -27,33 +27,33 @@ root.render(
                                 <ul className="k-listgroup k-listgroup-flush">
                                     <li className="k-item k-listgroup-item k-sort-asc k-selected">
                                         <span className="k-link">
-                                            <Icon name="sort-asc-small" />
+                                            <Icon icon="sort-asc-small" />
                                             <span className="k-item-title">Sort Ascending</span>
                                         </span>
                                     </li>
                                     <li className="k-item k-listgroup-item k-sort-desc">
                                         <span className="k-link">
-                                            <Icon name="sort-desc-small" />
+                                            <Icon icon="sort-desc-small" />
                                             <span className="k-item-title">Sort Descending</span>
                                         </span>
                                     </li>
                                     <li className="k-item k-listgroup-item k-lock">
                                         <span className="k-link">
-                                            <Icon name="lock" />
+                                            <Icon icon="lock" />
                                             <span className="k-item-title">Lock</span>
                                         </span>
                                     </li>
                                     <li className="k-item k-listgroup-item k-unlock k-disabled">
                                         <span className="k-link">
-                                            <Icon name="unlock" />
+                                            <Icon icon="unlock" />
                                             <span className="k-item-title">Unlock</span>
                                         </span>
                                     </li>
                                     <li className="k-item k-listgroup-item k-filter-item">
                                         <span className="k-link k-filterable">
-                                            <Icon name="filter" />
+                                            <Icon icon="filter" />
                                             <span className="k-item-title">Filter</span>
-                                            <span className="k-select"><Icon name="arrow-chevron-right" /></span>
+                                            <span className="k-select"><Icon icon="chevron-right" /></span>
                                         </span>
                                     </li>
                                 </ul>

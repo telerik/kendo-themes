@@ -47,7 +47,7 @@ export const TreeviewLeaf = (
                 })
             )}
         >
-            {showIcon && <Icon name={icon} />}
+            {showIcon && <Icon icon={icon} />}
             <span className="k-treeview-leaf-text">
                 {text}
             </span>

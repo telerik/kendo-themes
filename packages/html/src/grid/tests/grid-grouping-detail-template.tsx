@@ -72,14 +72,14 @@ root.render(
                                     </colgroup>
                                     <tbody className="k-table-tbody">
                                         <tr className="k-table-row k-master-row" role="row">
-                                            <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                            <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox id="k-grid0-checkbox0" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>1</td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>Product1</td>
                                             <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-master-row" role="row">
-                                            <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                            <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox id="k-grid0-checkbox1" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>2</td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>Product2</td>
@@ -161,12 +161,12 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 1 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> ID: 1 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-master-row" role="row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
-                                            <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                            <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>1</td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>Product1</td>
@@ -174,12 +174,12 @@ root.render(
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 2 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> ID: 2 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-master-row" role="row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
-                                            <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                            <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>2</td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>Product2</td>
@@ -265,19 +265,19 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={7}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 1 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> ID: 1 </p>
                                             </td>
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> Name: Product1 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> Name: Product1 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-master-row" role="row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
-                                            <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                            <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>1</td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>Product1</td>
@@ -285,19 +285,19 @@ root.render(
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={7}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 2 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> ID: 2 </p>
                                             </td>
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> Name: Product2 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> Name: Product2 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-master-row" role="row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
-                                            <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                            <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>2</td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>Product2</td>
@@ -383,19 +383,19 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={7}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 1 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> ID: 1 </p>
                                             </td>
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> Name: Product1 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> Name: Product1 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-master-row k-expanded" role="row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
-                                            <td className="k-table-td k-hierarchy-cell"><Icon name="minus" /></td>
+                                            <td className="k-table-td k-hierarchy-cell"><Icon icon="minus" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>1</td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>Product1</td>
@@ -409,19 +409,19 @@ root.render(
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={7}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> ID: 2 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> ID: 2 </p>
                                             </td>
                                         </tr>
                                         <tr role="row" className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td" colSpan={6}>
-                                                <p className="k-reset"><Icon name="caret-alt-down" /> Name: Product2 </p>
+                                                <p className="k-reset"><Icon icon="caret-alt-down" /> Name: Product2 </p>
                                             </td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-master-row k-expanded" role="row">
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
                                             <td className="k-table-td k-table-group-td k-group-cell"></td>
-                                            <td className="k-table-td k-hierarchy-cell"><Icon name="minus" /></td>
+                                            <td className="k-table-td k-hierarchy-cell"><Icon icon="minus" /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>2</td>
                                             <td className="k-table-td k-touch-action-auto" colSpan={1}>Product2</td>

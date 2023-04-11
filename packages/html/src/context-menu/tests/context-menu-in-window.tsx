@@ -29,7 +29,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <section>
-                <Window title="Window" actions={[ 'window-minimize', 'window-maximize', 'close' ]}>
+                <Window title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>
                     Target
                 </Window>
                 <div className="k-animation-container">

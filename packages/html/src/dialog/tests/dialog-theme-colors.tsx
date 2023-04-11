@@ -18,7 +18,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <Dialog title="Title" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+            <Dialog title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -27,7 +27,7 @@ root.render(
                 Dialog with default theme color
             </Dialog>
 
-            <Dialog themeColor="primary" title="Title" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+            <Dialog themeColor="primary" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -36,7 +36,7 @@ root.render(
                 Dialog with primary theme color
             </Dialog>
 
-            <Dialog themeColor="dark" title="Title" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+            <Dialog themeColor="dark" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -45,7 +45,7 @@ root.render(
                 Dialog with dark theme color
             </Dialog>
 
-            <Dialog themeColor="light" title="Title" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+            <Dialog themeColor="light" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>

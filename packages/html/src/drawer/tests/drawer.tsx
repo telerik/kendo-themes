@@ -17,24 +17,24 @@ root.render(
                             <div className="k-drawer-items">
                                 <ul>
                                     <li className="k-drawer-item">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Item</span>
                                     </li>
                                     <li className="k-drawer-item k-drawer-separator"></li>
                                     <li className="k-drawer-item k-hover">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Hover</span>
                                     </li>
                                     <li className="k-drawer-item k-selected">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Selected</span>
                                     </li>
                                     <li className="k-drawer-item k-selected k-hover">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Selected hover</span>
                                     </li>
                                     <li className="k-drawer-item k-focus">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Focus</span>
                                     </li>
                                 </ul>
@@ -57,24 +57,24 @@ root.render(
                             <div className="k-drawer-items">
                                 <ul>
                                     <li className="k-drawer-item">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Item</span>
                                     </li>
                                     <li className="k-drawer-item k-drawer-separator"></li>
                                     <li className="k-drawer-item k-hover">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Hover</span>
                                     </li>
                                     <li className="k-drawer-item k-selected">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Selected</span>
                                     </li>
                                     <li className="k-drawer-item k-selected k-hover">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Selected hover</span>
                                     </li>
                                     <li className="k-drawer-item k-focus">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Focus</span>
                                     </li>
                                 </ul>
@@ -98,16 +98,16 @@ root.render(
                             <div className="k-drawer-items">
                                 <ul>
                                     <li className="k-drawer-item">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Item</span>
                                     </li>
                                     <li className="k-drawer-item k-drawer-separator"></li>
                                     <li className="k-drawer-item k-hover">
-                                        <Icon name="twitter" />
+                                        <Icon icon="twitter" />
                                         <span className="k-item-text">Hover</span>
                                     </li>
                                     <li className="k-drawer-item k-selected">
-                                        <Icon name="anchor" />
+                                        <Icon icon="anchor" />
                                         <span className="k-item-text">Selected</span>
                                     </li>
                                     <li className="k-drawer-item">
@@ -116,7 +116,7 @@ root.render(
                                     <li className="k-drawer-item k-drawer-separator"></li>
                                     <li className="k-drawer-item">
                                         <span className="k-drawer-link">
-                                            <Icon name="anchor" />
+                                            <Icon icon="anchor" />
                                             <span className="k-item-text">Drawer Link</span>
                                         </span>
                                     </li>
@@ -130,27 +130,27 @@ root.render(
                                         <span className="k-item-text">Selected focus</span>
                                     </li>
                                     <li className="k-drawer-item">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Collapsed</span>
                                         <span className="k-spacer"></span>
                                         <span className="k-drawer-toggle">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                         </span>
                                     </li>
                                     <li className="k-drawer-item">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Expanded</span>
                                         <span className="k-spacer"></span>
                                         <span className="k-drawer-toggle">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                         </span>
                                     </li>
                                     <li className="k-drawer-item k-level-1">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Child Lvl 1</span>
                                     </li>
                                     <li className="k-drawer-item k-level-2">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Child Lvl 2</span>
                                     </li>
                                 </ul>
@@ -173,16 +173,16 @@ root.render(
                             <div className="k-drawer-items">
                                 <ul>
                                     <li className="k-drawer-item">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Item</span>
                                     </li>
                                     <li className="k-drawer-item k-drawer-separator"></li>
                                     <li className="k-drawer-item k-hover">
-                                        <Icon name="twitter" />
+                                        <Icon icon="twitter" />
                                         <span className="k-item-text">Hover</span>
                                     </li>
                                     <li className="k-drawer-item k-selected">
-                                        <Icon name="anchor" />
+                                        <Icon icon="anchor" />
                                         <span className="k-item-text">Selected</span>
                                     </li>
                                     <li className="k-drawer-item">
@@ -191,7 +191,7 @@ root.render(
                                     <li className="k-drawer-item k-drawer-separator"></li>
                                     <li className="k-drawer-item">
                                         <span className="k-drawer-link">
-                                            <Icon name="anchor" />
+                                            <Icon icon="anchor" />
                                             <span className="k-item-text">Drawer Link</span>
                                         </span>
                                     </li>
@@ -205,27 +205,27 @@ root.render(
                                         <span className="k-item-text">Selected focus</span>
                                     </li>
                                     <li className="k-drawer-item">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Collapsed</span>
                                         <span className="k-spacer"></span>
                                         <span className="k-drawer-toggle">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                         </span>
                                     </li>
                                     <li className="k-drawer-item">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Expanded</span>
                                         <span className="k-spacer"></span>
                                         <span className="k-drawer-toggle">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                         </span>
                                     </li>
                                     <li className="k-drawer-item k-level-1">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Child Lvl 1</span>
                                     </li>
                                     <li className="k-drawer-item k-level-2">
-                                        <Icon name="star-outline" />
+                                        <Icon icon="star-outline" />
                                         <span className="k-item-text">Child Lvl 2</span>
                                     </li>
                                 </ul>

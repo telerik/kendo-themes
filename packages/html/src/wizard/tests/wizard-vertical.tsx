@@ -52,7 +52,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Account Info with too long text</span>
-                                            <Icon name="check"></Icon>
+                                            <Icon icon="check"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -63,7 +63,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Personal Info</span>
-                                            <Icon className="k-validation-icon" name="warning"></Icon>
+                                            <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -113,7 +113,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Account Info with too long text</span>
-                                            <Icon name="check"></Icon>
+                                            <Icon icon="check"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -124,7 +124,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Personal Info</span>
-                                            <Icon className="k-validation-icon" name="warning"></Icon>
+                                            <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -176,7 +176,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Account Info with too long text</span>
-                                            <Icon name="check"></Icon>
+                                            <Icon icon="check"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -187,7 +187,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Personal Info</span>
-                                            <Icon className="k-validation-icon" name="warning"></Icon>
+                                            <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -237,7 +237,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Account Info with too long text</span>
-                                            <Icon name="check"></Icon>
+                                            <Icon icon="check"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -248,7 +248,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Personal Info</span>
-                                            <Icon className="k-validation-icon" name="warning"></Icon>
+                                            <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -300,7 +300,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Account Info with too long text</span>
-                                            <Icon name="check"></Icon>
+                                            <Icon icon="check"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -311,7 +311,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Personal Info</span>
-                                            <Icon className="k-validation-icon" name="warning"></Icon>
+                                            <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -361,7 +361,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Account Info with too long text</span>
-                                            <Icon name="check"></Icon>
+                                            <Icon icon="check"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -372,7 +372,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Personal Info</span>
-                                            <Icon className="k-validation-icon" name="warning"></Icon>
+                                            <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -422,7 +422,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Account Info with too long text</span>
-                                            <Icon name="check"></Icon>
+                                            <Icon icon="check"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -433,7 +433,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Personal Info</span>
-                                            <Icon className="k-validation-icon" name="warning"></Icon>
+                                            <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -483,7 +483,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Account Info with too long text</span>
-                                            <Icon name="check"></Icon>
+                                            <Icon icon="check"></Icon>
                                         </span>
                                     </a>
                                 </li>
@@ -494,7 +494,7 @@ root.render(
                                         </span>
                                         <span className="k-step-label">
                                             <span className="k-step-text">Personal Info</span>
-                                            <Icon className="k-validation-icon" name="warning"></Icon>
+                                            <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                         </span>
                                     </a>
                                 </li>

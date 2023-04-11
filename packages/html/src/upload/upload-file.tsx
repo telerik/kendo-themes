@@ -49,7 +49,7 @@ export const UploadFile = (
                     }
                 )} value={progress} label={false} />
                 <span className="k-file-icon-wrapper">
-                    <Icon className="k-file-icon" name={icon}></Icon>
+                    <Icon className="k-file-icon" icon={icon}></Icon>
                     {state && <span className="k-file-state">{state}</span>}
                 </span>
                 <UploadFileInfo name={name} size={size} validationMsg={validationMsg}></UploadFileInfo>
@@ -61,7 +61,7 @@ export const UploadFile = (
                             <Button icon="pause-sm" fillMode="flat" className="k-upload-action"></Button>
                             <Button icon="cancel" fillMode="flat" className="k-upload-action"></Button>
                         </>
-                        : <Button icon="close" fillMode="flat" className="k-upload-action"></Button>
+                        : <Button icon="x" fillMode="flat" className="k-upload-action"></Button>
                     }
                 </div>
             </div>
