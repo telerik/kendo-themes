@@ -6,6 +6,8 @@ const states = [];
 
 const options = {};
 
+const defaultProps = {};
+
 export const Popup = (
     props: React.HTMLAttributes<HTMLDivElement>
 ) => {
@@ -24,5 +26,6 @@ export const Popup = (
 Popup.states = states;
 Popup.options = options;
 Popup.className = POPUP_CLASSNAME;
+Popup.defaultProps = defaultProps;
 
 export default Popup;

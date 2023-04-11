@@ -44,5 +44,6 @@ export const MenuList = (
 MenuList.states = states;
 MenuList.options = options;
 MenuList.className = MENULIST_CLASSNAME;
+MenuList.defaultProps = defaultProps;
 
 export default MenuList;

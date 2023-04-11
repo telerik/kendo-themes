@@ -105,5 +105,6 @@ export const MenuButton = (
 MenuButton.states = states;
 MenuButton.options = options;
 MenuButton.className = MENUBUTTON_CLASSNAME;
+MenuButton.defaultProps = defaultProps;
 
 export default MenuButton;

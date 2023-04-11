@@ -85,5 +85,6 @@ export const TimeSelector = (
 TimeSelector.states = states;
 TimeSelector.options = options;
 TimeSelector.className = TIMESELECTOR_CLASSNAME;
+TimeSelector.defaultProps = defaultProps;
 
 export default TimeSelector;

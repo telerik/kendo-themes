@@ -61,5 +61,6 @@ export const ButtonGroup = (
 ButtonGroup.states = states;
 ButtonGroup.options = options;
 ButtonGroup.className = BUTTONGROUP_CLASSNAME;
+ButtonGroup.defaultProps = defaultProps;
 
 export default ButtonGroup;

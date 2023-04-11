@@ -47,7 +47,10 @@ export type KendoTextboxProps = KendoTextboxOptions & {
 export type KendoTextboxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    showClearButton: true
+    showClearButton: true,
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
 };
 
 export const Textbox = (
@@ -115,5 +118,6 @@ export const Textbox = (
 Textbox.states = states;
 Textbox.options = options;
 Textbox.className = TEXTBOX_CLASSNAME;
+Textbox.defaultProps = defaultProps;
 
 export default Textbox;

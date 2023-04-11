@@ -78,5 +78,6 @@ export const DateTimeSelector = (
 DateTimeSelector.states = states;
 DateTimeSelector.options = options;
 DateTimeSelector.className = DATETIMESELECTOR_CLASSNAME;
+DateTimeSelector.defaultProps = defaultProps;
 
 export default DateTimeSelector;

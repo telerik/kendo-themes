@@ -13,6 +13,8 @@ const states = [
 
 const options = {};
 
+const defaultProps = {};
+
 export type KendoListItemProps = {
     text?: string;
     groupLabel?: string;
@@ -72,5 +74,6 @@ export const ListItem = (
 ListItem.states = states;
 ListItem.options = options;
 ListItem.className = LISTITEM_CLASSNAME;
+ListItem.defaultProps = defaultProps;
 
 export default ListItem;

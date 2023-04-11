@@ -45,7 +45,10 @@ export type KendoNumericTextboxState = { [K in (typeof states)[number]]?: boolea
 
 const defaultProps = {
     showSpinButton: true,
-    showClearButton: true
+    showClearButton: true,
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
 };
 
 export const NumericTextbox = (
@@ -117,5 +120,6 @@ export const NumericTextbox = (
 NumericTextbox.states = states;
 NumericTextbox.options = options;
 NumericTextbox.className = NUMERICTEXTBOX_CLASSNAME;
+NumericTextbox.defaultProps = defaultProps;
 
 export default NumericTextbox;

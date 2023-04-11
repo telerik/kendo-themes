@@ -73,5 +73,6 @@ export const MultiViewCalendar = (
 MultiViewCalendar.states = states;
 MultiViewCalendar.options = options;
 MultiViewCalendar.className = MULTIVIEWCALENDAR_CLASSNAME;
+MultiViewCalendar.defaultProps = defaultProps;
 
 export default MultiViewCalendar;

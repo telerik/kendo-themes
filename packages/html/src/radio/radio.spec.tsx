@@ -68,5 +68,6 @@ export const RadioButton = (
 RadioButton.states = states;
 RadioButton.options = options;
 RadioButton.className = RADIOBUTTON_CLASSNAME;
+RadioButton.defaultProps = defaultProps;
 
 export default RadioButton;

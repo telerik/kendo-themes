@@ -31,6 +31,12 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
+const defaultProps = {
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
+};
+
 export type KendoDatePickerOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -126,5 +132,6 @@ export const DatePicker = (
 DatePicker.states = states;
 DatePicker.options = options;
 DatePicker.className = DATEPICKER_CLASSNAME;
+DatePicker.defaultProps = defaultProps;
 
 export default DatePicker;

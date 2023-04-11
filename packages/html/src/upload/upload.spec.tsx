@@ -12,6 +12,8 @@ const states = [
 
 const options = {};
 
+const defaultProps = {};
+
 export type KendoUploadProps = {
     async?: boolean;
     empty?: boolean;
@@ -69,5 +71,6 @@ export const Upload = (
 Upload.states = states;
 Upload.options = options;
 Upload.className = UPLOAD_CLASSNAME;
+Upload.defaultProps = defaultProps;
 
 export default Upload;

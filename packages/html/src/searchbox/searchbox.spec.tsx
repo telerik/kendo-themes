@@ -44,7 +44,10 @@ export type KendoSearchboxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
     showIcon: true,
-    icon: "search"
+    icon: "search",
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
 };
 
 export const Searchbox = (
@@ -98,5 +101,6 @@ export const Searchbox = (
 Searchbox.states = states;
 Searchbox.options = options;
 Searchbox.className = SEARCHBOX_CLASSNAME;
+Searchbox.defaultProps = defaultProps;
 
 export default Searchbox;

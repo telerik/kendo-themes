@@ -14,6 +14,8 @@ const options = {
     ],
 };
 
+const defaultProps = {};
+
 export type KendoDialogOptions = {
   themeColor?: (typeof options.themeColor)[number] | null;
 };
@@ -76,5 +78,6 @@ export const Dialog = (
 Dialog.states = states;
 Dialog.options = options;
 Dialog.className = DIALOG_CLASSNAME;
+Dialog.defaultProps = defaultProps;
 
 export default Dialog;

@@ -22,6 +22,12 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
+const defaultProps = {
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
+};
+
 export type KendoTextareaOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -87,5 +93,6 @@ export const Textarea = (
 Textarea.states = states;
 Textarea.options = options;
 Textarea.className = TEXTAREA_CLASSNAME;
+Textarea.defaultProps = defaultProps;
 
 export default Textarea;

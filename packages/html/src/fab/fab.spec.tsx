@@ -109,5 +109,6 @@ export const FloatingActionButton = (
 FloatingActionButton.states = states;
 FloatingActionButton.options = options;
 FloatingActionButton.className = FLOATINGACTIONBUTTON_CLASSNAME;
+FloatingActionButton.defaultProps = defaultProps;
 
 export default FloatingActionButton;

@@ -51,7 +51,10 @@ export type KendoDropdownListState = { [K in (typeof states)[number]]?: boolean 
 
 const defaultProps = {
     showValue: true,
-    arrowIconName: 'arrow-s'
+    arrowIconName: 'arrow-s',
+    size: Size.medium,
+    rounded: Roundness.medium,
+    fillMode: FillMode.solid,
 };
 
 export const DropdownList = (
@@ -143,5 +146,6 @@ export const DropdownList = (
 DropdownList.states = states;
 DropdownList.options = options;
 DropdownList.className = DROPDOWNLIST_CLASSNAME;
+DropdownList.defaultProps = defaultProps;
 
 export default DropdownList;

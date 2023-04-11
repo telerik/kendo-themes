@@ -243,5 +243,6 @@ export const Pager = (
 Pager.states = states;
 Pager.options = options;
 Pager.className = PAGER_CLASSNAME;
+Pager.defaultProps = defaultProps;
 
 export default Pager;

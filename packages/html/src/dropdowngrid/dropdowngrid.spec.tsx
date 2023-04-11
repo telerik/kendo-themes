@@ -30,6 +30,12 @@ const options = {
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
 };
 
+const defaultProps = {
+    size: Input.defaultProps.size,
+    rounded: Input.defaultProps.rounded,
+    fillMode: Input.defaultProps.fillMode
+};
+
 export type KendoDropdownGridOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
@@ -133,5 +139,6 @@ export const DropdownGrid = (
 DropdownGrid.states = states;
 DropdownGrid.options = options;
 DropdownGrid.className = DROPDOWNGRID_CLASSNAME;
+DropdownGrid.defaultProps = defaultProps;
 
 export default DropdownGrid;

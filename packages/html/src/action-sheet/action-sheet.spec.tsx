@@ -119,5 +119,6 @@ export const ActionSheet = (
 ActionSheet.states = states;
 ActionSheet.options = options;
 ActionSheet.className = ACTIONSHEET_CLASSNAME;
+ActionSheet.defaultProps = defaultProps;
 
 export default ActionSheet;
