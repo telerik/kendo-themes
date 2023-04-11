@@ -46,10 +46,6 @@
                 top: 50%;
                 inset-inline-start: calc( var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} ) * -1 );
             }
-
-            .k-toolbar {
-                border-style: solid;
-            }
         }
         .k-filter-operator .k-dropdown-list {
             width: var( --kendo-filter-operator-dropdown-width, #{$kendo-filter-operator-dropdown-width} );

@@ -20,8 +20,8 @@
 
         // Toolbar
         .k-toolbar {
-            border-block-start-width: 0;
-            border-inline-width: 0;
+            // TODO: component should render k-toolbar-top class
+            @extend .k-toolbar-top !optional;
             border-color: inherit;
             flex: 0 0 auto;
             z-index: 2;

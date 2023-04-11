@@ -90,6 +90,7 @@
 
     }
 
+
     // Toolbar group
     .k-toolbar-group {
         display: flex;
@@ -98,11 +99,45 @@
         gap: inherit;
     }
 
+
+    // Toolbar orientation
+    .k-toolbar-horizontal {
+        flex-direction: row;
+    }
+    .k-toolbar-vertical {
+        flex-direction: column;
+    }
+
+
+    // Toolbar position
+    .k-toolbar-top {
+        border-width: 0;
+        border-bottom-width: $kendo-toolbar-border-width;
+        flex-direction: row;
+    }
+    .k-toolbar-bottom {
+        border-width: 0;
+        border-top-width: $kendo-toolbar-border-width;
+        flex-direction: row;
+    }
+    .k-toolbar-left {
+        border-width: 0;
+        border-right-width: $kendo-toolbar-border-width;
+        flex-direction: column;
+    }
+    .k-toolbar-right {
+        border-width: 0;
+        border-left-width: $kendo-toolbar-border-width;
+        flex-flow: column;
+    }
+
+
     // Angular specific
     .k-toolbar-renderer {
         display: inline-block;
         border-color: inherit;
     }
+
 
     // Toolbar sizes
     @each $size, $size-props in $kendo-toolbar-sizes {
