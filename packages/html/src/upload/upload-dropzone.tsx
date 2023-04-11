@@ -29,13 +29,13 @@ export const UploadDropzone = (
 
     switch (status) {
         case 'uploading':
-            statusMsg = <><Icon name="upload"></Icon>Uploading...</>;
+            statusMsg = <><Icon icon="upload"></Icon>Uploading...</>;
             break;
         case 'done':
-            statusMsg = <><Icon name="check"></Icon>Done</>;
+            statusMsg = <><Icon icon="check"></Icon>Done</>;
             break;
         case 'failed':
-            statusMsg = <><Icon name="warning"></Icon>Done</>;
+            statusMsg = <><Icon icon="exclamation-circle"></Icon>Done</>;
             break;
         default:
             statusMsg = <></>;

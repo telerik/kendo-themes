@@ -15,7 +15,7 @@ root.render(
                     <div className="k-pane">
                         <div className="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view k-widget">
                             <div className="k-appbar k-appbar-primary">
-                                <Button className="k-header-cancel" fillMode="flat" icon="arrow-chevron-left"></Button>
+                                <Button className="k-header-cancel" fillMode="flat" icon="chevron-left"></Button>
                                 <span className="k-spacer"></span>
                                 <span>Event</span>
                                 <span className="k-spacer"></span>
@@ -62,7 +62,7 @@ root.render(
                                             <span className="k-item-title k-listgroup-form-field-label">Timezone</span>
                                             <div className="k-listgroup-form-field-wrapper">
                                                 <span className="k-timezone-label">No timezone</span>
-                                                <Icon name="arrow-chevron-right"></Icon>
+                                                <Icon icon="chevron-right"></Icon>
                                             </div>
                                         </label>
                                     </li>
@@ -73,7 +73,7 @@ root.render(
                                             <span className="k-item-title k-listgroup-form-field-label">Repeat</span>
                                             <div className="k-listgroup-form-field-wrapper">
                                                 <span>Never</span>
-                                                <Icon name="arrow-chevron-right"></Icon>
+                                                <Icon icon="chevron-right"></Icon>
                                             </div>
                                         </label>
                                     </li>

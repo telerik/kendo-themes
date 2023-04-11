@@ -19,6 +19,10 @@ const styles = `
         width: 30px;
         text-align: center;
     }
+    .k-svg-icon {
+        margin-inline: 7px;
+        text-align: center;
+    }
     ul {
         font-size: 12px;
         list-style-type: none;
@@ -41,7 +45,7 @@ root.render(
                 <div style={{ background: "#1976d2", color: "#fff" }}>
                     <Appbar positionMode={'sticky'} themeColor={'inherit'}>
                         <AppbarSection>
-                            <Icon name="menu" />
+                            <Icon icon="menu" />
                         </AppbarSection>
                         <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                         <AppbarSection>
@@ -63,10 +67,10 @@ root.render(
                         </AppbarSection>
 
                         <AppbarSection>
-                            <Icon name="sliders" />
-                            <Icon name="bell" />
+                            <Icon icon="sliders" />
+                            <Icon icon="bell" />
                             <span className="k-appbar-separator"></span>
-                            <Icon name="user" />
+                            <Icon icon="user" />
                         </AppbarSection>
                     </Appbar>
                 </div>
@@ -76,7 +80,7 @@ root.render(
             <section>
                 <Appbar themeColor={'light'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -98,10 +102,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -110,7 +114,7 @@ root.render(
             <section>
                 <Appbar themeColor={'dark'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -132,10 +136,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -144,7 +148,7 @@ root.render(
             <section>
                 <Appbar themeColor={'primary'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -166,10 +170,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -178,7 +182,7 @@ root.render(
             <section>
                 <Appbar themeColor={'secondary'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -200,10 +204,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -212,7 +216,7 @@ root.render(
             <section>
                 <Appbar themeColor={'tertiary'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -234,10 +238,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -246,7 +250,7 @@ root.render(
             <section>
                 <Appbar themeColor={'info'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -268,10 +272,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -280,7 +284,7 @@ root.render(
             <section>
                 <Appbar themeColor={'success'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -302,10 +306,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -314,7 +318,7 @@ root.render(
             <section>
                 <Appbar themeColor={'warning'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -336,10 +340,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -348,7 +352,7 @@ root.render(
             <section>
                 <Appbar themeColor={'error'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -370,10 +374,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -382,7 +386,7 @@ root.render(
             <section>
                 <Appbar themeColor={'inverse'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -404,10 +408,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -416,7 +420,7 @@ root.render(
             <section>
                 <Appbar themeColor={'light'} positionMode={'sticky'}>
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -438,10 +442,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>
@@ -450,7 +454,7 @@ root.render(
             <section>
                 <Appbar themeColor={'light'} dir="rtl">
                     <AppbarSection>
-                        <Icon name="menu" />
+                        <Icon icon="menu" />
                     </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
                     <AppbarSection>
@@ -472,10 +476,10 @@ root.render(
                     </AppbarSection>
 
                     <AppbarSection>
-                        <Icon name="sliders" />
-                        <Icon name="bell" />
+                        <Icon icon="sliders" />
+                        <Icon icon="bell" />
                         <span className="k-appbar-separator"></span>
-                        <Icon name="user" />
+                        <Icon icon="user" />
                     </AppbarSection>
                 </Appbar>
             </section>

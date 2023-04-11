@@ -25,13 +25,13 @@ export const ChipAction = (
 
     switch (type) {
         case chipActionType.REMOVE:
-            icon = <Icon name="x-circle" />;
+            icon = <Icon icon="x-circle" />;
             break;
         case chipActionType.MORE:
-            icon = <Icon name="more-vertical" />;
+            icon = <Icon icon="more-vertical" />;
             break;
         default:
-            return <Icon name={type} />;
+            return <Icon icon={type} />;
     }
 
     return (

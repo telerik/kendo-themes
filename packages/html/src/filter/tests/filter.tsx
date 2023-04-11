@@ -33,7 +33,7 @@ root.render(
                                     <Button icon="filter-add-group">Add Group</Button>
                                 </ToolbarItem>
                                 <ToolbarItem className="k-filter-toolbar-item">
-                                    <Button fillMode="flat" icon="close"></Button>
+                                    <Button fillMode="flat" icon="x"></Button>
                                 </ToolbarItem>
                             </Toolbar>
                         </div>
@@ -51,7 +51,7 @@ root.render(
                                             <Textbox placeholder="James"/>
                                         </ToolbarItem>
                                         <ToolbarItem className="k-filter-toolbar-item">
-                                            <Button fillMode="flat" icon="close"></Button>
+                                            <Button fillMode="flat" icon="x"></Button>
                                         </ToolbarItem>
                                     </Toolbar>
                                 </div>
@@ -69,7 +69,7 @@ root.render(
                                             <NumericTextbox placeholder="100,00"/>
                                         </ToolbarItem>
                                         <ToolbarItem className="k-filter-toolbar-item">
-                                            <Button fillMode="flat" icon="close"></Button>
+                                            <Button fillMode="flat" icon="x"></Button>
                                         </ToolbarItem>
                                     </Toolbar>
                                 </div>
@@ -87,7 +87,7 @@ root.render(
                                             <DropdownList value="False"/>
                                         </ToolbarItem>
                                         <ToolbarItem className="k-filter-toolbar-item">
-                                            <Button fillMode="flat" icon="close"></Button>
+                                            <Button fillMode="flat" icon="x"></Button>
                                         </ToolbarItem>
                                     </Toolbar>
                                 </div>
@@ -107,7 +107,7 @@ root.render(
                                             <DatePicker placeholder="1/21/2021" />
                                         </ToolbarItem>
                                         <ToolbarItem className="k-filter-toolbar-item">
-                                            <Button fillMode="flat" icon="close"></Button>
+                                            <Button fillMode="flat" icon="x"></Button>
                                         </ToolbarItem>
                                     </Toolbar>
                                 </div>
@@ -127,7 +127,7 @@ root.render(
                                                 <Button icon="filter-add-group">Add Group</Button>
                                             </ToolbarItem>
                                             <ToolbarItem className="k-filter-toolbar-item">
-                                                <Button fillMode="flat" icon="close"></Button>
+                                                <Button fillMode="flat" icon="x"></Button>
                                             </ToolbarItem>
                                         </Toolbar>
                                     </div>
@@ -142,7 +142,7 @@ root.render(
                                                         <DropdownList value="Is empty" />
                                                     </ToolbarItem>
                                                     <ToolbarItem className="k-filter-toolbar-item">
-                                                        <Button fillMode="flat" icon="close"></Button>
+                                                        <Button fillMode="flat" icon="x"></Button>
                                                     </ToolbarItem>
                                                 </Toolbar>
                                             </div>
@@ -157,7 +157,7 @@ root.render(
                                                         <DropdownList value="Is not null" />
                                                     </ToolbarItem>
                                                     <ToolbarItem className="k-filter-toolbar-item">
-                                                        <Button fillMode="flat" icon="close"></Button>
+                                                        <Button fillMode="flat" icon="x"></Button>
                                                     </ToolbarItem>
                                                 </Toolbar>
                                             </div>

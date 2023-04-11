@@ -37,7 +37,7 @@ root.render(
                         <span className="k-link k-menu-link">
                             <span className="k-menu-link-text">Hover</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
@@ -45,7 +45,7 @@ root.render(
                         <span className="k-link k-menu-link">
                             <span className="k-menu-link-text">Active</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
@@ -56,37 +56,37 @@ root.render(
                     </li>
                     <li className="k-item k-menu-item">
                         <span className="k-link k-menu-link">
-                            <Icon name="folder"></Icon>
+                            <Icon icon="folder"></Icon>
                             <span className="k-menu-link-text">Normal with icon</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
                     <li className="k-item k-menu-item k-hover">
                         <span className="k-link k-menu-link">
-                            <Icon name="folder"></Icon>
+                            <Icon icon="folder"></Icon>
                             <span className="k-menu-link-text">Hover with icon</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
                     <li className="k-item k-menu-item k-active">
                         <span className="k-link k-menu-link">
-                            <Icon name="folder"></Icon>
+                            <Icon icon="folder"></Icon>
                             <span className="k-menu-link-text">Active with icon</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
                     <li className="k-item k-menu-item k-focus">
                         <span className="k-link k-menu-link">
-                            <Icon name="folder"></Icon>
+                            <Icon icon="folder"></Icon>
                             <span className="k-menu-link-text">Focus with icon</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="caret-alt-right"></Icon>
+                                <Icon icon="caret-alt-right"></Icon>
                             </span>
                         </span>
                     </li>
@@ -127,8 +127,8 @@ root.render(
                             </span>
                         </li>
                     </ul>
-                    <Button icon="arrow-60-up" className="k-menu-scroll-button k-scroll-up"></Button>
-                    <Button icon="arrow-60-down" className="k-menu-scroll-button k-scroll-down"></Button>
+                    <Button icon="caret-alt-up" className="k-menu-scroll-button k-scroll-up"></Button>
+                    <Button icon="caret-alt-down" className="k-menu-scroll-button k-scroll-down"></Button>
                 </div>
             </section>
         </div>

@@ -31,7 +31,7 @@ export const InputClearValue = (
 
     return (
         <span className={classNames(props.className, className)}>
-            <Icon name="x" />
+            <Icon icon="x" />
         </span>
     );
 };

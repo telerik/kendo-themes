@@ -33,12 +33,12 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window title="Edit event" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                <Window title="Edit event" actions={[ 'window-minimize', 'window', 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary" icon="save">Save</Button>
                         <Button icon="cancel">Cancel</Button>
                         <span className="k-spacer"></span>
-                        <Button fillMode="flat" themeColor="primary" icon="delete">Delete</Button>
+                        <Button fillMode="flat" themeColor="primary" icon="trash">Delete</Button>
                     </>
                 }>
                     <Form tag="div" className="k-scheduler-edit-form" orientation="vertical">

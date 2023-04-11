@@ -52,7 +52,7 @@ export const FloatingActionButtonItem = (
                 }),
             )}>
             <span className="k-fab-item-text">{text}</span>
-            <Icon className="k-fab-item-icon" name={icon} />
+            <Icon className="k-fab-item-icon" icon={icon} />
         </li>
     );
 };

@@ -14,7 +14,7 @@ root.render(
             <h3>Edit Row</h3>
             <div dir="ltr" className="k-grid k-grid-md">
                 <Toolbar className="k-grid-toolbar">
-                    <Button icon="add">Add</Button>
+                    <Button icon="plus">Add</Button>
                 </Toolbar>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
@@ -88,7 +88,7 @@ root.render(
             <h3>New Row</h3>
             <div dir="ltr" className="k-grid k-grid-md">
                 <Toolbar className="k-grid-toolbar">
-                    <Button icon="add">Add</Button>
+                    <Button icon="plus">Add</Button>
                 </Toolbar>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">

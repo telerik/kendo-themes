@@ -103,7 +103,7 @@ root.render(
 
             <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <Toolbar className="k-grid-toolbar">
-                    <Button icon="add">Add new record</Button>
+                    <Button icon="plus">Add new record</Button>
                 </Toolbar>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
@@ -152,7 +152,7 @@ root.render(
                                 </td>
                                 <td className="k-table-td">
                                     <NumericTextbox invalid />
-                                    <div className="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><Icon className="k-tooltip-icon" name="warning" /><span className="k-tooltip-content">Price</span><div className="k-callout k-callout-n"></div></div>
+                                    <div className="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><Icon className="k-tooltip-icon" icon="exclamation-circle" /><span className="k-tooltip-content">Price</span><div className="k-callout k-callout-n"></div></div>
                                 </td>
                                 <td className="k-table-td"><Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" /><label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label></td>
                                 <td className="k-table-td k-command-cell">
@@ -168,8 +168,8 @@ root.render(
                                 <td className="k-table-td">18</td>
                                 <td className="k-table-td">false</td>
                                 <td className="k-table-td k-command-cell">
-                                    <Button icon="edit">Edit</Button>
-                                    <Button icon="close">Delete</Button>
+                                    <Button icon="pencil">Edit</Button>
+                                    <Button icon="x">Delete</Button>
                                 </td>
                             </tr>
                             <tr className="k-table-row">
@@ -177,8 +177,8 @@ root.render(
                                 <td className="k-table-td">19</td>
                                 <td className="k-table-td">false</td>
                                 <td className="k-table-td k-command-cell">
-                                    <Button icon="edit">Edit</Button>
-                                    <Button icon="close">Delete</Button>
+                                    <Button icon="pencil">Edit</Button>
+                                    <Button icon="x">Delete</Button>
                                 </td>
                             </tr>
                         </tbody>

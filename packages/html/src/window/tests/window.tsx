@@ -18,11 +18,11 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Window" actions={[ 'window-minimize', 'window-maximize', 'close' ]}>Window content</Window>
+                <Window title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>Window content</Window>
             </section>
 
             <section>
-                <Window title="" actions={[ 'window-minimize', 'window-maximize', 'close' ]}>Window with no title specified</Window>
+                <Window title="" actions={[ 'window-minimize', 'window', 'x' ]}>Window with no title specified</Window>
             </section>
 
             <section>
@@ -34,7 +34,7 @@ root.render(
             </section>
 
             <section>
-                <Window title="Window minimized" actions={[ 'window-minimize', 'window-maximize', 'close' ]} minimized>Window content</Window>
+                <Window title="Window minimized" actions={[ 'window-minimize', 'window', 'x' ]} minimized>Window content</Window>
             </section>
         </div>
     </>

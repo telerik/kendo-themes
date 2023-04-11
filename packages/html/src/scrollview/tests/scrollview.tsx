@@ -38,10 +38,10 @@ root.render(
                 </div>
                 <div className="k-scrollview-elements">
                     <a className="k-scrollview-prev">
-                        <Icon name="arrowhead-w"></Icon>
+                        <Icon icon="chevron-left"></Icon>
                     </a>
                     <a className="k-scrollview-next">
-                        <Icon name="arrowhead-e"></Icon>
+                        <Icon icon="chevron-right"></Icon>
                     </a>
                     <div className="k-scrollview-nav-wrap">
                         <ul className="k-scrollview-nav">
@@ -66,10 +66,10 @@ root.render(
                 </div>
                 <div className="k-scrollview-elements">
                     <a className="k-scrollview-prev">
-                        <Icon name="arrowhead-w"></Icon>
+                        <Icon icon="chevron-left"></Icon>
                     </a>
                     <a className="k-scrollview-next">
-                        <Icon name="arrowhead-e"></Icon>
+                        <Icon icon="chevron-right"></Icon>
                     </a>
                     <div className="k-scrollview-nav-wrap">
                         <ul className="k-scrollview-nav">
@@ -98,10 +98,10 @@ root.render(
                 </div>
                 <div className="k-scrollview-elements">
                     <a className="k-scrollview-prev">
-                        <Icon name="arrowhead-w"></Icon>
+                        <Icon icon="chevron-left"></Icon>
                     </a>
                     <a className="k-scrollview-next">
-                        <Icon name="arrowhead-e"></Icon>
+                        <Icon icon="chevron-right"></Icon>
                     </a>
                     <div className="k-scrollview-nav-wrap">
                         <ul className="k-scrollview-nav">

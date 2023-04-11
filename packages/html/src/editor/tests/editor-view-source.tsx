@@ -24,7 +24,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
-                <Window className="k-editor-window" title="View HTML" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
+                <Window className="k-editor-window" title="View HTML" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Update</Button>
                         <Button>Cancel</Button>

@@ -27,10 +27,10 @@ root.render(
                     <div className="k-spreadsheet-filter-menu k-popup k-group k-reset">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-asc-small"></Icon>Sort range A to Z
+                                <Icon icon="sort-asc-small"></Icon>Sort range A to Z
                             </div>
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-desc-small"></Icon>Sort range Z to A
+                                <Icon icon="sort-desc-small"></Icon>Sort range Z to A
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">
@@ -39,7 +39,7 @@ root.render(
                                     Filter by condition
                                     <span className="k-spacer"></span>
                                     <span className="k-expander-indicator">
-                                        <Icon name="arrow-chevron-down" />
+                                        <Icon icon="chevron-down" />
                                     </span>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ root.render(
                                     Filter by value
                                     <span className="k-spacer"></span>
                                     <span className="k-expander-indicator">
-                                        <Icon name="arrow-chevron-up" />
+                                        <Icon icon="chevron-up" />
                                     </span>
                                 </div>
                                 <div className="k-columnmenu-item-content">

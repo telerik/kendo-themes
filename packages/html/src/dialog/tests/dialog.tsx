@@ -20,7 +20,7 @@ root.render(
 
             <Dialog title="Title
                         g y p
-                        t d l" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                        t d l" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -40,7 +40,7 @@ root.render(
                 Dialog without titlebar actions
             </Dialog>
 
-            <Dialog title="" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+            <Dialog title="" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -62,7 +62,7 @@ root.render(
                 Dialog without title
             </Dialog>
 
-            <Dialog title="Scrolling" actions={[ 'close' ]} actionButtonsAlign="end" style={{ height: "170px" }} actionButtons={
+            <Dialog title="Scrolling" actions={[ 'x' ]} actionButtonsAlign="end" style={{ height: "170px" }} actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>

@@ -32,8 +32,8 @@ root.render(
                     <ListItem disabled>Disabled</ListItem>
                     <ListItem>List item with very long text, that spans on multiple lines</ListItem>
                     <ListItem showCheckbox>Checkbox</ListItem>
-                    <ListItem showIcon iconName="cog">Icon</ListItem>
-                    <ListItem showCheckbox showIcon iconName="cog">Checkbox icon</ListItem>
+                    <ListItem showIcon iconName="gear">Icon</ListItem>
+                    <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
                 </List>
             </section>
 
@@ -47,8 +47,8 @@ root.render(
                     <ListItem disabled>Disabled</ListItem>
                     <ListItem>List item with very long text, that spans on multiple lines</ListItem>
                     <ListItem showCheckbox>Checkbox</ListItem>
-                    <ListItem showIcon iconName="cog">Icon</ListItem>
-                    <ListItem showCheckbox showIcon iconName="cog">Checkbox icon</ListItem>
+                    <ListItem showIcon iconName="gear">Icon</ListItem>
+                    <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
                 </List>
             </section>
 
@@ -62,8 +62,8 @@ root.render(
                     <ListItem disabled>Disabled</ListItem>
                     <ListItem>List item with very long text, that spans on multiple lines</ListItem>
                     <ListItem showCheckbox>Checkbox</ListItem>
-                    <ListItem showIcon iconName="cog">Icon</ListItem>
-                    <ListItem showCheckbox showIcon iconName="cog">Checkbox icon</ListItem>
+                    <ListItem showIcon iconName="gear">Icon</ListItem>
+                    <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
                 </List>
             </section>
 
@@ -77,8 +77,8 @@ root.render(
                     <ListItem disabled>Disabled</ListItem>
                     <ListItem>List item with very long text, that spans on multiple lines</ListItem>
                     <ListItem showCheckbox>Checkbox</ListItem>
-                    <ListItem showIcon iconName="cog">Icon</ListItem>
-                    <ListItem showCheckbox showIcon iconName="cog">Checkbox icon</ListItem>
+                    <ListItem showIcon iconName="gear">Icon</ListItem>
+                    <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
                 </List>
             </section>
 

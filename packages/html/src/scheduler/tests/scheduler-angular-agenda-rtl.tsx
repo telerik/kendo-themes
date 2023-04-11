@@ -71,13 +71,13 @@ root.render(
                                                         <span className="k-scheduler-agendadate">Jun 2013</span>
                                                     </td>
                                                     <td className="k-scheduler-timecolumn">
-                                                        <div><Icon name="caret-alt-right"></Icon> all day</div>
+                                                        <div><Icon icon="caret-alt-right"></Icon> all day</div>
                                                     </td>
                                                     <td>
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             All day event
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -89,7 +89,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(245, 138, 138)" }} ></span>
                                                             Event 1
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -101,7 +101,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(245, 138, 138)" }} ></span>
                                                             Event 2
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -113,7 +113,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(245, 138, 138)" }} ></span>
                                                             Event 3
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -125,7 +125,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(245, 138, 138)" }} ></span>
                                                             Event 4
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -137,7 +137,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             Event 5
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -149,7 +149,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             Event 6
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -161,7 +161,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             Event 7
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -173,7 +173,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             Event 8
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -184,13 +184,13 @@ root.render(
                                                         <span className="k-scheduler-agendadate">Jun 2013</span>
                                                     </td>
                                                     <td className="k-scheduler-timecolumn">
-                                                        <div><Icon name="caret-alt-right"></Icon> all day</div>
+                                                        <div><Icon icon="caret-alt-right"></Icon> all day</div>
                                                     </td>
                                                     <td>
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             All day event
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -202,7 +202,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(245, 138, 138)" }} ></span>
                                                             Event 1
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -214,7 +214,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(245, 138, 138)" }} ></span>
                                                             Event 2
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -226,7 +226,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(245, 138, 138)" }} ></span>
                                                             Event 3
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -238,7 +238,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(245, 138, 138)" }} ></span>
                                                             Event 4
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -250,7 +250,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             Event 5
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -262,7 +262,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             Event 6
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -274,7 +274,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             Event 7
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -286,7 +286,7 @@ root.render(
                                                         <div className="k-task">
                                                             <span className="k-scheduler-mark" style={{ backgroundColor: "rgb(110, 179, 250)" }} ></span>
                                                             Event 8
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </div>
                                                     </td>
                                                 </tr>

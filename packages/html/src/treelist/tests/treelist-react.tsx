@@ -84,7 +84,7 @@ root.render(
                         <tbody className="k-table-tbody">
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                     1
                                 </td>
                                 <td className="k-table-td">Furniture</td>
@@ -94,8 +94,8 @@ root.render(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="none"></Icon>
-                                    <Icon name="none"></Icon>
+                                    <Icon icon="none"></Icon>
+                                    <Icon icon="none"></Icon>
                                     1.1
                                 </td>
                                 <td className="k-table-td">Tables &amp; Chairs</td>
@@ -105,8 +105,8 @@ root.render(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="none"></Icon>
-                                    <Icon name="none"></Icon>
+                                    <Icon icon="none"></Icon>
+                                    <Icon icon="none"></Icon>
                                     1.2
                                 </td>
                                 <td className="k-table-td">Sofas</td>
@@ -116,8 +116,8 @@ root.render(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="none"></Icon>
-                                    <Icon name="none"></Icon>
+                                    <Icon icon="none"></Icon>
+                                    <Icon icon="none"></Icon>
                                     1.3
                                 </td>
                                 <td className="k-table-td">Occasional Furniture</td>
@@ -127,7 +127,7 @@ root.render(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                     2
                                 </td>
                                 <td className="k-table-td">Decor</td>
@@ -137,8 +137,8 @@ root.render(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="none"></Icon>
-                                    <Icon name="none"></Icon>
+                                    <Icon icon="none"></Icon>
+                                    <Icon icon="none"></Icon>
                                     2.1
                                 </td>
                                 <td className="k-table-td">Bed Linen</td>
@@ -148,8 +148,8 @@ root.render(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="none"></Icon>
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="none"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                     2.2
                                 </td>
                                 <td className="k-table-td">Curtains &amp; Blinds</td>
@@ -159,9 +159,9 @@ root.render(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon name="none"></Icon>
-                                    <Icon name="none"></Icon>
-                                    <Icon name="none"></Icon>
+                                    <Icon icon="none"></Icon>
+                                    <Icon icon="none"></Icon>
+                                    <Icon icon="none"></Icon>
                                     2.2.1
                                 </td>
                                 <td className="k-table-td">Carpets</td>

@@ -43,7 +43,7 @@ root.render(
                                     {/* Four Rows for Date.Calendar Column grouping field */}
                                     <tr className="k-pivotgrid-row k-pivotgrid-column-total">
                                         <th colSpan={9} className="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">All Periods</span>
                                         </th>
                                         <th colSpan={1} rowSpan={4} className="k-pivotgrid-cell k-pivotgrid-header-total k-pivotgrid-header-root">
@@ -52,25 +52,25 @@ root.render(
                                     </tr>
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={6} className="k-pivotgrid-cell k-pivotgrid-expanded">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">CY 2010</span>
                                         </th>
                                         <th colSpan={1} rowSpan={3} className="k-pivotgrid-cell">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">CY 2011</span>
                                         </th>
                                         <th colSpan={1} rowSpan={3} className="k-pivotgrid-cell">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">CY 2012</span>
                                         </th>
                                         <th colSpan={1} rowSpan={3} className="k-pivotgrid-cell">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">CY 2013</span>
                                         </th>
                                     </tr>
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={1} className="k-pivotgrid-cell k-pivotgrid-expanded">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">H2 CY 2010</span>
                                         </th>
                                         <th colSpan={5} rowSpan={2} className="k-pivotgrid-cell">
@@ -79,7 +79,7 @@ root.render(
                                     </tr>
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={1} className="k-pivotgrid-cell">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">Q4 CY 2010</span>
                                         </th>
                                     </tr>
@@ -87,30 +87,30 @@ root.render(
                                     {/* Table for Product.Category Column grouping field */}
                                     <tr className="k-pivotgrid-row k-pivotgrid-column-total">
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={4} className="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-total k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                     </tr>
@@ -141,7 +141,7 @@ root.render(
                                 <tbody className="k-pivotgrid-tbody">
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={1} rowSpan={9} className="k-pivotgrid-cell k-pivotgrid-row-total k-pivotgrid-expanded k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">All Geographies</span>
                                         </th>
                                         <th colSpan={1} className="k-pivotgrid-cell">
@@ -640,20 +640,20 @@ root.render(
                                         <div className="k-calculated-field">
                                             <div className="k-calculated-field-header">
                                                 <div className="k-calculated-field-header-text">Calculated Field 1</div>
-                                                <Button fillMode="flat" icon="edit"></Button>
+                                                <Button fillMode="flat" icon="pencil"></Button>
                                                 <span className="k-spacer"></span>
                                                 <div className="k-calculated-field-header-actions">
-                                                    <Button fillMode="flat" icon="close"></Button>
+                                                    <Button fillMode="flat" icon="x"></Button>
                                                 </div>
                                             </div>
                                             <div className="k-calculated-field-content">
                                                 <Textbox showClearButton={false} placeholder="Custom function" />
                                             </div>
                                             <div className="k-calculated-field-actions">
-                                                <Icon name="formula-fx" />
+                                                <Icon icon="formula-fx" />
                                                 <DropdownList value="Custom" />
                                                 <span className="k-spacer"></span>
-                                                <Icon name="preview" />
+                                                <Icon icon="eye" />
                                                 <DropdownList value="Default" />
                                             </div>
                                         </div>
@@ -668,7 +668,7 @@ root.render(
                                                 />
                                                 <span className="k-spacer"></span>
                                                 <div className="k-calculated-field-header-actions">
-                                                    <Button fillMode="flat" icon="close"></Button>
+                                                    <Button fillMode="flat" icon="x"></Button>
                                                 </div>
                                             </div>
                                             <div className="k-calculated-field-content">
@@ -676,15 +676,15 @@ root.render(
                                                     showClearButton={false}
                                                     value="=IF(Amount>100, 3%*Amount)"
                                                     prefix={
-                                                        <Icon name="formula-fx" />
+                                                        <Icon icon="formula-fx" />
                                                     }
                                                 />
                                             </div>
                                             <div className="k-calculated-field-actions">
-                                                <Icon name="formula-fx" />
+                                                <Icon icon="formula-fx" />
                                                 <DropdownList value="Custom" />
                                                 <span className="k-spacer"></span>
-                                                <Icon name="preview" />
+                                                <Icon icon="eye" />
                                                 <DropdownList value="Default" />
                                             </div>
                                         </div>
@@ -693,14 +693,14 @@ root.render(
                                                 <div className="k-calculated-field-header-text">Date.Calendar</div>
                                                 <span className="k-spacer"></span>
                                                 <div className="k-calculated-field-header-actions">
-                                                    <Button fillMode="flat" icon="close"></Button>
+                                                    <Button fillMode="flat" icon="x"></Button>
                                                 </div>
                                             </div>
                                             <div className="k-calculated-field-actions">
-                                                <Icon name="sum" />
+                                                <Icon icon="sum" />
                                                 <DropdownList value="SUM" />
                                                 <span className="k-spacer"></span>
-                                                <Icon name="preview" />
+                                                <Icon icon="eye" />
                                                 <DropdownList value="Default" />
                                             </div>
                                         </div>
@@ -709,14 +709,14 @@ root.render(
                                                 <div className="k-calculated-field-header-text">Date.Calendar</div>
                                                 <span className="k-spacer"></span>
                                                 <div className="k-calculated-field-header-actions">
-                                                    <Button fillMode="flat" icon="close"></Button>
+                                                    <Button fillMode="flat" icon="x"></Button>
                                                 </div>
                                             </div>
                                             <div className="k-calculated-field-actions">
-                                                <Icon name="sum" />
+                                                <Icon icon="sum" />
                                                 <DropdownList value="SUM" />
                                                 <span className="k-spacer"></span>
-                                                <Icon name="preview" />
+                                                <Icon icon="eye" />
                                                 <DropdownList value="Default" />
                                             </div>
                                         </div>
@@ -725,14 +725,14 @@ root.render(
                                                 <div className="k-calculated-field-header-text">Date.Calendar</div>
                                                 <span className="k-spacer"></span>
                                                 <div className="k-calculated-field-header-actions">
-                                                    <Button fillMode="flat" icon="close"></Button>
+                                                    <Button fillMode="flat" icon="x"></Button>
                                                 </div>
                                             </div>
                                             <div className="k-calculated-field-actions">
-                                                <Icon name="sum" />
+                                                <Icon icon="sum" />
                                                 <DropdownList value="SUM" />
                                                 <span className="k-spacer"></span>
-                                                <Icon name="preview" />
+                                                <Icon icon="eye" />
                                                 <DropdownList value="Default" />
                                             </div>
                                         </div>
@@ -748,7 +748,7 @@ root.render(
                     <div className="k-pivotgrid-configurator-button">
                         <span>
                             Change settings
-                            <Icon name="cog" />
+                            <Icon icon="gear" />
                         </span>
                     </div>
                 </div>

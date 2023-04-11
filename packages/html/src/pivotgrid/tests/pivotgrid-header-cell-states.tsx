@@ -22,7 +22,7 @@ root.render(
                                     {/* Four Rows for Date.Calendar Column grouping field */}
                                     <tr className="k-pivotgrid-row k-pivotgrid-column-total">
                                         <th colSpan={10} className="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">All Periods</span>
                                         </th>
                                     </tr>
@@ -36,7 +36,7 @@ root.render(
                                     </tr>
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={10} className="k-pivotgrid-cell k-pivotgrid-expanded">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">CY 2010</span>
                                         </th>
                                     </tr>
@@ -50,7 +50,7 @@ root.render(
                                 <tbody className="k-pivotgrid-tbody">
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={1} rowSpan={9} className="k-pivotgrid-cell k-pivotgrid-row-total k-pivotgrid-expanded k-pivotgrid-header-root">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">All Geographies</span>
                                         </th>
                                         <th colSpan={1} className="k-pivotgrid-cell">

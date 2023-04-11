@@ -113,7 +113,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Default</span>
                                                 </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-hover">
@@ -121,7 +121,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Hover</span>
                                                 </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-focus">
@@ -129,7 +129,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Focus</span>
                                                 </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-active">
@@ -137,16 +137,16 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Active</span>
                                                 </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu k-active"><Icon name="filter" /></a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu k-active"><Icon icon="filter" /></a>
                                             </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-sorted">
                                             <span className="k-cell-inner">
                                                 <span className="k-link">
                                                     <span className="k-column-title">Sorted</span>
-                                                    <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                    <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                 </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
                                             </span>
                                         </th>
                                     </tr>
@@ -224,7 +224,7 @@ root.render(
                             <tbody className="k-table-tbody">
                                 <tr className="k-master-row k-table-row k-expanded">
                                     <td className="k-hierarchy-cell k-table-td">
-                                        <Icon name="caret-alt-down" />
+                                        <Icon icon="caret-alt-down" />
                                     </td>
                                     <td className="k-table-td">1</td>
                                     <td className="k-table-td">Text</td>
@@ -243,7 +243,7 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-master-row">
                                     <td className="k-hierarchy-cell k-table-td">
-                                        <Icon name="caret-alt-right" />
+                                        <Icon icon="caret-alt-right" />
                                     </td>
                                     <td className="k-table-td">2</td>
                                     <td className="k-table-td">Text</td>
@@ -261,7 +261,7 @@ root.render(
             <section className="col-2">
                 <div className="k-grid k-grid-sm k-grid-no-scrollbar">
                     <Toolbar className="k-grid-toolbar">
-                        <Button icon="add">Add new record</Button>
+                        <Button icon="plus">Add new record</Button>
                     </Toolbar>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
@@ -310,7 +310,7 @@ root.render(
                                     </td>
                                     <td className="k-table-td">
                                         <NumericTextbox invalid />
-                                        <div className="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><Icon className="k-tooltip-icon" name="warning" /><span className="k-tooltip-content">Price</span><div className="k-callout k-callout-n"></div></div>
+                                        <div className="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><Icon className="k-tooltip-icon" icon="exclamation-circle" /><span className="k-tooltip-content">Price</span><div className="k-callout k-callout-n"></div></div>
                                     </td>
                                     <td className="k-table-td"><Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" /><label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label></td>
                                     <td className="k-table-td k-command-cell">
@@ -326,8 +326,8 @@ root.render(
                                     <td className="k-table-td">18</td>
                                     <td className="k-table-td">false</td>
                                     <td className="k-table-td k-command-cell">
-                                        <Button icon="edit">Edit</Button>
-                                        <Button icon="close">Delete</Button>
+                                        <Button icon="pencil">Edit</Button>
+                                        <Button icon="x">Delete</Button>
                                     </td>
                                 </tr>
                                 <tr className="k-table-row">
@@ -335,8 +335,8 @@ root.render(
                                     <td className="k-table-td">19</td>
                                     <td className="k-table-td">false</td>
                                     <td className="k-table-td k-command-cell">
-                                        <Button icon="edit">Edit</Button>
-                                        <Button icon="close">Delete</Button>
+                                        <Button icon="pencil">Edit</Button>
+                                        <Button icon="x">Delete</Button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -408,7 +408,7 @@ root.render(
                                 <tr className="k-table-row k-table-group-row k-grouping-row">
                                     <td className="k-table-td" colSpan={5}>
                                         <p className="k-reset">
-                                            <Icon name="caret-alt-right" />
+                                            <Icon icon="caret-alt-right" />
                                             Price: 19
                                         </p>
                                     </td>
@@ -416,7 +416,7 @@ root.render(
                                 <tr className="k-table-row k-table-group-row k-grouping-row">
                                     <td className="k-table-td" colSpan={5}>
                                         <p className="k-reset">
-                                            <Icon name="caret-alt-down" />
+                                            <Icon icon="caret-alt-down" />
                                             Price: 30
                                         </p>
                                     </td>

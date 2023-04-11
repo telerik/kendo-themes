@@ -44,7 +44,7 @@ export type KendoColorPickerProps = KendoColorPickerOptions & {
 export type KendoColorPickerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    arrowIconName: 'arrow-s',
+    arrowIconName: 'caret-alt-down',
     size: Picker.defaultProps.size,
     rounded: Picker.defaultProps.rounded,
     fillMode: Picker.defaultProps.fillMode

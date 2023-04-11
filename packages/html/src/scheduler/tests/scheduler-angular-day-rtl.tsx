@@ -57,9 +57,9 @@ root.render(
                                             </tbody>
                                         </table>
                                         <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "454px", right: "1px", top: '0px', height: "25px" }} className="k-event">
-                                            <span className="k-event-actions"><Icon name="caret-alt-right"></Icon></span>
+                                            <span className="k-event-actions"><Icon icon="caret-alt-right"></Icon></span>
                                             <div><div className="k-event-template">Attending HR Conference</div></div>
-                                            <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                            <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                             <span className="k-resize-handle k-resize-w"></span>
                                             <span className="k-resize-handle k-resize-e"></span>
                                         </div>
@@ -151,7 +151,7 @@ root.render(
                                         <div className="k-event-template k-event-time">8:30 AM - 2:30 PM</div>
                                         <div className="k-event-template">Car Service</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -161,7 +161,7 @@ root.render(
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                         <div className="k-event-template">Event 4</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -171,7 +171,7 @@ root.render(
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                         <div className="k-event-template">Event 5</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -181,7 +181,7 @@ root.render(
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                         <div className="k-event-template">Event 6</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -191,7 +191,7 @@ root.render(
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                         <div className="k-event-template">Event 1</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -201,7 +201,7 @@ root.render(
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                         <div className="k-event-template">Event 2</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -211,7 +211,7 @@ root.render(
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                         <div className="k-event-template">Event 3</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -221,7 +221,7 @@ root.render(
                                         <div className="k-event-template k-event-time">1:00 PM - 2:00 PM</div>
                                         <div className="k-event-template">Replace the printer on the 1st floor</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -231,7 +231,7 @@ root.render(
                                         <div className="k-event-template k-event-time">11:30 AM - 12:00 PM</div>
                                         <div className="k-event-template">Breakfast with Tom</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -241,7 +241,7 @@ root.render(
                                         <div className="k-event-template k-event-time">12:30 PM - 1:00 PM</div>
                                         <div className="k-event-template">Team planning meeting</div>
                                     </div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>

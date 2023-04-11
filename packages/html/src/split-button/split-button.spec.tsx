@@ -52,7 +52,7 @@ const defaultProps = {
     rounded: Roundness.medium,
     fillMode: FillMode.solid,
     themeColor: ThemeColor.base,
-    arrowIconName: "arrow-s"
+    arrowIconName: "caret-alt-down"
 };
 
 export const SplitButton = (

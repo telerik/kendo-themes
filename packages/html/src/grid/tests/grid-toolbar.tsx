@@ -131,7 +131,7 @@ root.render(
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
-                        <Button icon="add">Add new record</Button>
+                        <Button icon="plus">Add new record</Button>
                         <Button icon="check">Save changes</Button>
                         <Button icon="cancel">Cancel changes</Button>
                     </Toolbar>
@@ -146,7 +146,7 @@ root.render(
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
-                        <Button icon="add">Add new record</Button>
+                        <Button icon="plus">Add new record</Button>
                         <Button icon="check">Save changes</Button>
                         <Button icon="cancel">Cancel changes</Button>
                     </Toolbar>

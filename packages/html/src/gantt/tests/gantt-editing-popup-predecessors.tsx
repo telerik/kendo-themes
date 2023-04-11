@@ -23,12 +23,12 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Edit task" actions={[ 'window-minimize', 'window-maximize', 'close' ]} actionButtons={
+                <Window title="Edit task" actions={[ 'window-minimize', 'window', 'x' ]} actionButtons={
                     <>
                         <Button icon="save" themeColor="primary">Save</Button>
                         <Button icon="cancel">Cancel</Button>
                         <span className="k-spacer"></span>
-                        <Button icon="delete" fillMode="flat" themeColor="primary">Delete</Button>
+                        <Button icon="trash" fillMode="flat" themeColor="primary">Delete</Button>
                     </>
                 }>
                     <div className="k-tabstrip k-tabstrip-top">
@@ -51,7 +51,7 @@ root.render(
                         <div className="k-tabstrip-content k-active">
                             <div className="k-grid k-grid-md k-grid-no-scrollbar">
                                 <Toolbar className="k-grid-toolbar">
-                                    <Button icon="add">Add</Button>
+                                    <Button icon="plus">Add</Button>
                                     <Button icon="minus">Remove</Button>
                                 </Toolbar>
                                 <div className="k-grid-header">
@@ -67,7 +67,7 @@ root.render(
                                                         <span className="k-cell-inner">
                                                             <span className="k-link">
                                                                 <span className="k-column-title">Name</span>
-                                                                <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                                <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                             </span>
                                                         </span>
                                                     </th>
@@ -75,7 +75,7 @@ root.render(
                                                         <span className="k-cell-inner">
                                                             <span className="k-link">
                                                                 <span className="k-column-title">Type</span>
-                                                                <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                                <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                             </span>
                                                         </span>
                                                     </th>
