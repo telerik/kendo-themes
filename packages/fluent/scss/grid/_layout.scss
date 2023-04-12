@@ -5,6 +5,7 @@
 @use "../chip/_variables.scss" as *;
 @use "../forms/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
+@use "../tabstrip/_variables.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-grid--layout() {
@@ -1232,6 +1233,27 @@
                 display: flex;
                 align-items: center;
             }
+        }
+    }
+    .k-column-menu-tabbed {
+        border-radius: var( --kendo-tabstrip-item-border-radius, #{$kendo-tabstrip-item-border-radius} ) var( --kendo-tabstrip-item-border-radius, #{$kendo-tabstrip-item-border-radius} ) 0 0;
+
+        .k-tabstrip-items {
+            margin: calc( var( --kendo-tabstrip-item-border-width, #{$kendo-tabstrip-item-border-width} ) * -1 ) calc( var( --kendo-tabstrip-item-border-width, #{$kendo-tabstrip-item-border-width} ) * -1 ) 0;
+
+            .k-item {
+                flex: 1;
+            }
+
+            .k-link {
+                justify-content: center;
+            }
+        }
+
+        .k-tabstrip-content {
+            padding-inline: var( --kendo-grid-column-menu-tabbed-tabstrip-content-padding-x, #{$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x} );
+            padding-block: var( --kendo-grid-column-menu-tabbed-tabstrip-content-padding-y, #{$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y} );
+            border-width: 0;
         }
     }
 
