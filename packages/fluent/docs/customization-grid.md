@@ -1478,6 +1478,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x</td>
+    <td></td>
+    <td><code>0</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the tabstrip content in the grid tabbed column menu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the tabstrip content in the grid tabbed column menu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-column-menu-tabbed-bg</td>
+    <td></td>
+    <td><code>var( --kendo-base-bg, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid tabbed column menu.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-drag-cell-width</td>
     <td></td>
     <td><code>calc( var( --kendo-icon-size, 1rem ) * 2.25 )</code></td>
