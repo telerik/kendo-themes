@@ -552,6 +552,17 @@ $kendo-grid-column-menu-group-header-text: var( --kendo-component-text, inherit 
 /// @group grid
 $kendo-grid-column-menu-group-header-border: var( --kendo-component-border, inherit) !default;
 
+/// Horizontal padding of the tabstrip content in the grid tabbed column menu.
+/// @group grid
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-x: 0 !default;
+/// Vertical padding of the tabstrip content in the grid tabbed column menu.
+/// @group grid
+$kendo-grid-column-menu-tabbed-tabstrip-content-padding-y: map.get( $kendo-spacing, 3 ) !default;
+
+/// Background color of the grid tabbed column menu.
+/// @group grid
+$kendo-grid-column-menu-tabbed-bg: var( --kendo-base-bg, inherit ) !default;
+
 /// Default width of the grid drag cell.
 /// @group grid
 $kendo-grid-drag-cell-width: calc( var( --kendo-icon-size, 1rem ) * 2.25 ) !default;

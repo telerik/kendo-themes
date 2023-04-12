@@ -467,6 +467,9 @@
             }
         }
     }
+    .k-column-menu-tabbed {
+        background-color: $kendo-grid-column-menu-tabbed-bg;
+    }
 
     .k-column-menu-group-header-text {
         @include fill(

@@ -25,6 +25,7 @@ $_kendo-module-meta: (
         "radio",
         "skeleton",
         "table",
+        "tabstrip",
         "textbox",
         "toolbar",
         "validator",
@@ -58,6 +59,7 @@ $_kendo-module-meta: (
 // @import "../utils/_spacer.scss";
 @import "../list/_index.scss";
 @import "../table/_index.scss";
+@import "../tabstrip/_index.scss";
 
 
 // Component

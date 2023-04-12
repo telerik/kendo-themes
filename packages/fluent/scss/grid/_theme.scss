@@ -528,6 +528,9 @@
             }
         }
     }
+    .k-column-menu-tabbed {
+        background-color: var( --kendo-grid-column-menu-tabbed-bg, #{$kendo-grid-column-menu-tabbed-bg} );
+    }
 
 
     .k-grid-norecords-template {
