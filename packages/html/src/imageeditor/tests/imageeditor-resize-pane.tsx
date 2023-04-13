@@ -46,22 +46,37 @@ root.render(
                     </div>
 
                     <div className="k-imageeditor-action-pane">
-                        <Form
-                            tag="div"
-                            className="k-imageeditor-pane-form"
-                            layout="grid" cols={2} gapX={2}
-                            legend="Resize image"
-                            formButtons={
-                                <>
-                                    <Button>Cancel</Button>
-                                    <Button themeColor="primary" >Confirm</Button>
-                                </>
-                            } >
-                            <FormField className="k-col-span-1" label="Width:" editor={ <NumericTextbox showClearButton={false} value="61" /> } />
-                            <FormField className="k-col-span-1" label="&nbsp;" editor={ <DropdownList value="Pixels" /> } />
-                            <FormField className="k-col-span-1" label="Height:" editor={ <NumericTextbox showClearButton={false} value="68" /> } />
-                            <FormField className="k-col-span-1" label="&nbsp;" editor={ <DropdownList value="Pixels" /> } />
-                            <FormField className="k-col-span-2" label="Lock aspect ratio:" editor={ <Checkbox /> } />
+                        <Form tag="div" className="k-imageeditor-pane-form" layout="grid" legend="Resize Image" cols={2} gapX={2} formButtons={
+                            <>
+                                <Button themeColor="primary">Confirm</Button>
+                                <Button>Cancel</Button>
+                            </>
+                        }>
+                            <FormField
+                                className="k-col-span-1"
+                                label="Width:"
+                                editor={ <NumericTextbox showClearButton={false} value="61" /> }
+                            />
+                            <FormField
+                                className="k-col-span-1"
+                                label="&nbsp;"
+                                editor={ <DropdownList value="Pixels" /> }
+                            />
+                            <FormField
+                                className="k-col-span-1"
+                                label="Height:"
+                                editor={ <NumericTextbox showClearButton={false} value="68" /> }
+                            />
+                            <FormField
+                                className="k-col-span-1"
+                                label="&nbsp;"
+                                editor={ <DropdownList value="Pixels" /> }
+                            />
+                            <FormField
+                                className="k-col-span-2"
+                                label="Lock aspect ratio:"
+                                editor={ <Checkbox /> }
+                            />
                         </Form>
                     </div>
 

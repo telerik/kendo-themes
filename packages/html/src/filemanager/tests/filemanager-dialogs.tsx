@@ -21,10 +21,10 @@ root.render(
 
             {/* Upload Dialog */}
             <section>
-                <Dialog title="Upload Files" actions={[ 'close' ]} actionButtonsAlign="end" className="k-filemanager-upload-dialog" actionButtons={
+                <Dialog title="Upload Files" actions={[ 'close' ]} actionButtonsAlign="start" className="k-filemanager-upload-dialog" actionButtons={
                     <>
-                        <Button>Action</Button>
-                        <Button themeColor="primary">Primary</Button>
+                        <Button themeColor="primary">Upload</Button>
+                        <Button>Cancel</Button>
                     </>
                 }>
                     <Upload async empty status="upload"></Upload>
@@ -36,10 +36,10 @@ root.render(
             {/* Move/Copy Dialog */}
             <section>
 
-                <Dialog title="Confirm" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                <Dialog title="Confirm" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
                     <>
-                        <Button>Action</Button>
-                        <Button themeColor="primary">Primary</Button>
+                        <Button themeColor="primary">Confirm</Button>
+                        <Button>Cancel</Button>
                     </>
                 }>
                     <p>Do you want to move or copy?</p>
@@ -50,10 +50,10 @@ root.render(
             {/* Delete Dialog */}
             <section>
 
-                <Dialog title="Confirm" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                <Dialog title="Confirm" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
                     <>
-                        <Button>Action</Button>
-                        <Button themeColor="primary">Primary</Button>
+                        <Button themeColor="primary">Confirm</Button>
+                        <Button>Cancel</Button>
                     </>
                 }>
                     <p>Are you sure you want to delete this file?</p>

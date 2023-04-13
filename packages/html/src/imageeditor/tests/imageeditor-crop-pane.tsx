@@ -61,27 +61,42 @@ root.render(
 
                     {/* Crop Pane */}
                     <div className="k-imageeditor-action-pane">
-                        <Form
-                            tag="div"
-                            className="k-imageeditor-pane-form"
-                            layout="grid" cols={2} legend="Crop Image"
-                            gapX={2}
-                            formButtons={
-                                <>
-                                    <Button>Cancel</Button>
-                                    <Button themeColor="primary">Confirm</Button>
-                                </>
-                            }>
-                            <FormField className="k-col-span-2" label="Aspect Ratio:" editor={ <DropdownList value="Original ratio" /> } />
-                            <FormField className="k-col-span-2" label="Orientation:" editor={
-                                <ButtonGroup>
-                                    <Button selected>Portrait</Button>
-                                    <Button>Landscape</Button>
-                                </ButtonGroup> }
+                        <Form tag="div" className="k-imageeditor-pane-form" layout="grid" legend="Crop Image" cols={2} gapX={2} formButtons={
+                            <>
+                                <Button themeColor="primary">Confirm</Button>
+                                <Button>Cancel</Button>
+                            </>
+                        }>
+                            <FormField
+                                className="k-col-span-2"
+                                label="Aspect Ratio:"
+                                editor={ <DropdownList value="Original ratio" /> }
                             />
-                            <FormField className="k-col-span-1" label="Width:" editor={ <NumericTextbox showClearButton={false} value="61" /> }/>
-                            <FormField className="k-col-span-1" label="Height:" editor={ <NumericTextbox showClearButton={false} value="68" /> } />
-                            <FormField className="k-col-span-2" label="Lock aspect ratio:" editor={ <Checkbox /> } />
+                            <FormField
+                                className="k-col-span-2"
+                                label="Orientation:"
+                                editor={
+                                    <ButtonGroup>
+                                        <Button selected>Portrait</Button>
+                                        <Button>Landscape</Button>
+                                    </ButtonGroup>
+                                }
+                            />
+                            <FormField
+                                className="k-col-span-1"
+                                label="Width:"
+                                editor={ <NumericTextbox showClearButton={false} value="61" /> }
+                            />
+                            <FormField
+                                className="k-col-span-1"
+                                label="Height:"
+                                editor={ <NumericTextbox showClearButton={false} value="68" /> }
+                            />
+                            <FormField
+                                className="k-col-span-2"
+                                label="Lock aspect ratio:"
+                                editor={ <Checkbox /> }
+                            />
                         </Form>
                     </div>
                 </div>

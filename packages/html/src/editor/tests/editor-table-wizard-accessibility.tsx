@@ -26,10 +26,10 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <section>
-                <Window className="k-editor-window k-editor-table-wizard-window" title="Table Wizard" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                <Window className="k-editor-window k-editor-table-wizard-window" title="Table Wizard" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
                     <>
-                        <Button>Cancel</Button>
                         <Button themeColor="primary">Update</Button>
+                        <Button>Cancel</Button>
                     </>
                 }>
                     <div className="k-tabstrip k-tabstrip-top">

@@ -68,8 +68,8 @@ export const DateTimeSelector = (
             </div>
 
             <ActionButtons className="k-datetime-footer" alignment="stretched">
-                <Button className="k-time-cancel">Cancel</Button>
                 <Button themeColor="primary" className="k-time-accept">Set</Button>
+                <Button className="k-time-cancel">Cancel</Button>
             </ActionButtons>
         </div>
     );
