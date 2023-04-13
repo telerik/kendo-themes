@@ -467,12 +467,16 @@
     }
 
     //Row resize indicator
-    .k-row-resizer {
-        @include fill ( $bg: $kendo-grid-row-resizer-bg );
+    .k-resizer-wrap {
 
-        &.k-active {
-            @include fill ( $bg: $kendo-grid-row-resizer-active-bg );
+        &.k-hover .k-row-resizer {
+            @include fill( $bg: $kendo-grid-row-resizer-hover-bg );
         }
+
+        &.k-active .k-row-resizer {
+            @include fill( $bg: $kendo-grid-row-resizer-active-bg );
+        }
+
     }
 
 }
