@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Treelist Editing Popup</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            width: 500px;
+        }
+        .k-window {
+            min-width: 400px;
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Add item</span>
+                    <div class="k-window-titlebar-actions">
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-minimize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-maximize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-window-content">
+                    <div class="k-form k-form-md k-form-vertical">
+                        <div class="k-form-field k-form-field-error">
+                            <label class="k-label k-form-label">Text data field label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid">
+                                    <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                                    <span class="k-clear-value">
+                                        <span class="k-icon k-i-x"></span>
+                                    </span>
+                                </span>
+                                <div class="k-form-error">Error</div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Date data field label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="dd/MM/yyyy" autocomplete="off" value="">
+                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Numeric data field label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="##,###" autocomplete="off" value="">
+                                    <span class="k-spin-button k-input-spinner">
+                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                        </button>
+                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label k-label-empty"> </label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                </span>
+                                <label class="k-checkbox-label">Boolean data field label</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-save"></span>
+                        <span class="k-button-text">Save</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-cancel"></span>
+                        <span class="k-button-text">Cancel</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
