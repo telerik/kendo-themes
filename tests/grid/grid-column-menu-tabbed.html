@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Grid Column Menu Tabbed Interface</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        .k-animation-container,
+        .k-popup {
+            position: relative;
+            overflow: visible;
+        }
+        .k-grid-columnmenu-popup {
+            width: 100%;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+        <span>Tab Filter</span>
+        <span>Tab More</span>
+        <span>Tab Column Visibility</span>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-column-menu k-column-menu-tabbed k-popup k-grid-columnmenu-popup">
+                    <div class="k-tabstrip k-tabstrip-top k-overflow-hidden">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-reset k-tabstrip-items">
+                                <li class="k-item k-active">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-filter"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-more-horizontal"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-columns"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <form class="k-filter-menu k-group k-reset">
+                                <div class="k-filter-menu-container">
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">Contains</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input type="text" class="k-input-inner" placeholder="Filter..." autocomplete="off" value="">
+                                    </span>
+                                    <span class="k-filter-and k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">And</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">Contains</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input type="text" class="k-input-inner" placeholder="Filter..." autocomplete="off" value="">
+                                    </span>
+                                    <div class="k-actions k-actions-start k-actions-horizontal">
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                            <span class="k-button-text">Filter</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Clear</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-column-menu k-column-menu-tabbed k-popup k-grid-columnmenu-popup">
+                    <div class="k-tabstrip k-tabstrip-top k-overflow-hidden">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-reset k-tabstrip-items">
+                                <li class="k-item">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-filter"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item k-active">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-more-horizontal"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-columns"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item">
+                                    <span class="k-icon k-i-group"></span>Group Column
+                                </div>
+                            </div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item">
+                                    <span class="k-icon k-i-sort-asc-small"></span>Sort Ascending
+                                </div>
+                                <div class="k-columnmenu-item">
+                                    <span class="k-icon k-i-sort-desc-small"></span>Sort Descending
+                                </div>
+                            </div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-columnmenu-item">
+                                    <span class="k-icon k-i-max-width"></span>Autosize This Column
+                                </div>
+                                <div class="k-columnmenu-item">
+                                    <span class="k-icon k-i-display-inline-flex"></span>Autosize All Columns
+                                </div>
+                            </div>
+                            <div class="k-columnmenu-item-wrapper">
+                                <div class="k-expander">
+                                    <div class="k-columnmenu-item">
+                                        <span class="k-icon k-i-set-column-position"></span>Set Column Position<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-column-menu k-column-menu-tabbed k-popup k-grid-columnmenu-popup">
+                    <div class="k-tabstrip k-tabstrip-top k-overflow-hidden">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-reset k-tabstrip-items">
+                                <li class="k-item">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-filter"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-more-horizontal"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item k-active">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-columns"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <form class="k-filter-menu k-group k-reset">
+                                <div class="k-filter-menu-container">
+                                    <span class="k-searchbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <span class="k-input-icon k-icon k-i-search"></span>
+                                        <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
+                                    </span>
+                                    <ul class="k-reset k-multicheck-wrap">
+                                        <li class="k-item k-check-all-wrap">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>(Select all)</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                        <li class="k-item">
+                                            <label class="k-label k-checkbox-label">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <span>Column Name</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <div class="k-filter-selected-items">0 selected items</div>
+                                    <div class="k-actions k-actions-start k-actions-horizontal">
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                            <span class="k-button-text">Apply</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Reset</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <span>2 Tab Set</span>
+        <span>Single Tab Set</span>
+        <span></span>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-column-menu k-column-menu-tabbed k-popup k-grid-columnmenu-popup">
+                    <div class="k-tabstrip k-tabstrip-top k-overflow-hidden">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-reset k-tabstrip-items">
+                                <li class="k-item k-active">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-filter"></span>
+                                    </span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-more-horizontal"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <form class="k-filter-menu k-group k-reset">
+                                <div class="k-filter-menu-container">
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">Contains</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input type="text" class="k-input-inner" placeholder="Filter..." autocomplete="off" value="">
+                                    </span>
+                                    <span class="k-filter-and k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">And</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">Contains</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input type="text" class="k-input-inner" placeholder="Filter..." autocomplete="off" value="">
+                                    </span>
+                                    <div class="k-actions k-actions-start k-actions-horizontal">
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                            <span class="k-button-text">Filter</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Clear</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-column-menu k-column-menu-tabbed k-popup k-grid-columnmenu-popup">
+                    <div class="k-tabstrip k-tabstrip-top k-overflow-hidden">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-reset k-tabstrip-items">
+                                <li class="k-item k-active">
+                                    <span class="k-link">
+                                        <span class="k-icon k-i-filter"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <form class="k-filter-menu k-group k-reset">
+                                <div class="k-filter-menu-container">
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">Contains</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input type="text" class="k-input-inner" placeholder="Filter..." autocomplete="off" value="">
+                                    </span>
+                                    <span class="k-filter-and k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">And</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                        <span class="k-input-inner">
+                                            <span class="k-input-value-text">Contains</span>
+                                        </span>
+                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <input type="text" class="k-input-inner" placeholder="Filter..." autocomplete="off" value="">
+                                    </span>
+                                    <div class="k-actions k-actions-start k-actions-horizontal">
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                            <span class="k-button-text">Filter</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Clear</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
