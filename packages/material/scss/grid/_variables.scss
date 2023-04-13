@@ -307,7 +307,10 @@ $kendo-grid-group-footer-second-cell-border: 0px !default;
 
 /// Background color of the grid row resize indicator
 /// @group grid
-$kendo-grid-row-resizer-bg: rgba( k-contrast-color( $kendo-grid-bg ), .24 ) !default;
+$kendo-grid-row-resizer-hover-bg: rgba( k-contrast-color( $kendo-grid-bg ), .24 ) !default;
 /// Active background color of the grid row resize indicator
 /// @group grid
 $kendo-grid-row-resizer-active-bg: $kendo-color-primary !default;
+/// Height of the grid row resize indicator
+/// @group grid
+$kendo-grid-row-resizer-height: k-map-get( $kendo-spacing, .5 ) !default;

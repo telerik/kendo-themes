@@ -476,14 +476,22 @@
         cursor: col-resize;
     }
 
-    .k-row-resizer {
-        width: 100%;
-        height: 2px;
+    .k-resizer-wrap {
         display: block;
+        width: 100%;
+        padding-block-start: calc( var( --INTERNAL--kendo-grid-edit-cell-padding-x, 0 ) - #{$kendo-grid-row-resizer-height} );
+        padding-block-end: var( --INTERNAL--kendo-grid-edit-cell-padding-x, 0 );
         position: absolute;
-        inset-block-end: 0;
+        background: none;
         cursor: row-resize;
     }
+
+    .k-row-resizer {
+        display: block;
+        height: var( --kendo-grid-row-resizer-height, #{$kendo-grid-row-resizer-height} );
+        width: 100%;
+        background: none;
+     }
 
     .k-grid-footer {
         border-block-start-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );

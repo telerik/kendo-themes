@@ -498,12 +498,10 @@
     }
 
     .k-row-resizer {
-        width: 100%;
-        height: 2px;
         display: block;
-        position: absolute;
-        bottom: 0;
-        cursor: row-resize;
+        height: $kendo-grid-row-resizer-height;
+        width: 100%;
+        background: none;
     }
 
     .k-grid-footer {
@@ -1037,6 +1035,17 @@
             .k-selection-aggregates {
                 padding-block: $_selection-aggregates-padding-x;
                 padding-inline: $_selection-aggregates-padding-y;
+            }
+
+            // Resizing wrapper
+            .k-resizer-wrap {
+                display: block;
+                width: 100%;
+                padding-block-start: calc( #{$_edit-cell-padding-y} - #{$kendo-grid-row-resizer-height} );
+                padding-block-end: $_edit-cell-padding-y;
+                position: absolute;
+                background: none;
+                cursor: row-resize;
             }
         }
 

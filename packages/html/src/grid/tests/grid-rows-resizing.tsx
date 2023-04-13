@@ -10,7 +10,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
     <>
-
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <span className="col-2">Resizing Row / Hover</span>
@@ -100,7 +99,9 @@ root.render(
                                 </tr>
                             </tbody>
                         </table>
-                        <span className="k-row-resizer" style={{ top: "34px" }}></span>
+                        <span className="k-resizer-wrap k-hover" style={{ top: "34px" }}>
+                            <span className="k-row-resizer"></span>
+                        </span>
                     </div>
                 </div>
             </section>
@@ -192,7 +193,9 @@ root.render(
                                 </tr>
                             </tbody>
                         </table>
-                        <span className="k-row-resizer k-active" style={{ top: "54px" }}></span>
+                        <span className="k-resizer-wrap k-active" style={{ top: "54px" }}>
+                            <span className="k-row-resizer"></span>
+                        </span>
                     </div>
                 </div>
             </section>

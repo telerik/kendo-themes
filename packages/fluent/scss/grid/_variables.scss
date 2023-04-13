@@ -575,7 +575,10 @@ $kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo
 
 /// Background color of the grid row resize indicator
 /// @group grid
-$kendo-grid-row-resizer-bg: get-theme-color-var( neutral-90 ) !default;
+$kendo-grid-row-resizer-hover-bg: get-theme-color-var( neutral-90 ) !default;
 /// Active background color of the grid row indicator
 /// @group grid
 $kendo-grid-row-resizer-active-bg: get-theme-color-var( primary-100 ) !default;
+/// Height of the grid row resize indicator
+/// @group grid
+$kendo-grid-row-resizer-height: map-get( $kendo-spacing, 0.5 ) !default;
