@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Gantt - Editing Popup Other</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        .k-window {
+            min-width: 580px;
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Edit task</span>
+                    <div class="k-window-titlebar-actions">
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-window-content">
+                    <div class="k-tabstrip k-tabstrip-top">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-reset k-tabstrip-items">
+                                <li class="k-item k-first">
+                                    <span class="k-link">General</span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">Resources</span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">Predecessors</span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">Successors</span>
+                                </li>
+                                <li class="k-item k-last k-active">
+                                    <span class="k-link">Other</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <form class="k-form k-form-md k-form-vertical">
+                                <div class="k-form-field">
+                                    <label class="k-label k-form-label">Notes<span class="k-label-optional">(Optional)</span>
+                                    </label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                                            <textarea class="!k-overflow-auto k-input-inner" placeholder="Placeholder"></textarea>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-label k-form-label">Text data field label</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="Placeholder" autocomplete="off" value="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-label k-form-label">Date data field label</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="dd/MM/yyyy" autocomplete="off" value="">
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-calendar"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-label k-form-label">Numeric data field label</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="##,##" autocomplete="off" value="">
+                                            <span class="k-spin-button k-input-spinner">
+                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                </button>
+                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                </button>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-checkbox-wrap">
+                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                        </span>
+                                        <label class="k-checkbox-label">Boolean data field label</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-save"></span>
+                        <span class="k-button-text">Save</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-cancel"></span>
+                        <span class="k-button-text">Cancel</span>
+                    </button>
+                    <span class="k-spacer"></span>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-delete"></span>
+                        <span class="k-button-text">Delete</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

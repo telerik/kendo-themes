@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Scheduler Recurrence Editor Views</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            width: 700px;
+        }
+        .k-window {
+            min-width: 400px;
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Edit event</span>
+                    <div class="k-window-titlebar-actions">
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-minimize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-maximize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-window-content">
+                    <div class="k-scheduler-edit-form k-form k-form-md k-form-vertical">
+                        <div class="k-form-field k-form-field-error">
+                            <label class="k-label k-form-label">Title</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid">
+                                    <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                                    <span class="k-clear-value">
+                                        <span class="k-icon k-i-x"></span>
+                                    </span>
+                                </span>
+                                <div class="k-form-error">Error</div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Start</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-datetimepicker k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="dd/MM/yyyy hh:mm AM" autocomplete="off" value="">
+                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label k-label-empty"> </label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                </span>
+                                <label class="k-checkbox-label">Specify Time Zone</label>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Start Time Zone</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="Eastern European Summer Time (Sofia-Bulgaria)" autocomplete="off" value="">
+                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-caret-alt-down"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">End</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-datetimepicker k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="dd/MM/yyyy hh:mm AM" autocomplete="off" value="">
+                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label k-label-empty"> </label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                </span>
+                                <label class="k-checkbox-label">End in different Time Zone</label>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">End Time Zone</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="Select Time Zone, Country, City" autocomplete="off" value="">
+                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-caret-alt-down"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label k-label-empty"> </label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
+                                <label class="k-checkbox-label">All Day Event</label>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Repeat</label>
+                            <div class="k-form-field-wrap">
+                                <div class="k-recurrence-editor">
+                                    <div class="k-scheduler-recurrence-repeat k-button-group k-button-group-solid k-button-group-stretched">
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Never</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Daily</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                            <span class="k-button-text">Weekly</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Monthly</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Yearly</span>
+                                        </button>
+                                    </div>
+                                    <div class="k-recur-view">
+                                        <div class="k-scheduler-recurrence-interval-editor">
+                                            <div class="k-form-field">
+                                                <label class="k-label k-form-label">Repeat every:</label>
+                                                <div class="k-form-field-wrap">
+                                                    <span class="k-recur-interval k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                                        <span class="k-spin-button k-input-spinner">
+                                                            <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                            </button>
+                                                            <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                    <span> weeks(s)</span>
+                                                </div>
+                                            </div>
+                                            <div class="k-form-field">
+                                                <label class="k-label k-form-label">Repeat on:</label>
+                                                <div class="k-form-field-wrap">
+                                                    <div class="k-button-group k-button-group-solid k-button-group-stretched">
+                                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                            <span class="k-button-text">Sun</span>
+                                                        </button>
+                                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                                            <span class="k-button-text">Mon</span>
+                                                        </button>
+                                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                            <span class="k-button-text">Tue</span>
+                                                        </button>
+                                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                            <span class="k-button-text">Wed</span>
+                                                        </button>
+                                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                            <span class="k-button-text">Thu</span>
+                                                        </button>
+                                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                            <span class="k-button-text">Fri</span>
+                                                        </button>
+                                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                            <span class="k-button-text">Sat</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-scheduler-recurrence-end-rule-editor">
+                                            <div class="k-form-field">
+                                                <label class="k-label k-form-label">End</label>
+                                                <div class="k-form-field-wrap">
+                                                    <ul class="k-radio-list">
+                                                        <li class="k-radio-list-item">
+                                                            <span class="k-radio-wrap">
+                                                                <input id="k-endrule-never" type="radio" class="k-radio k-radio-md">
+                                                            </span>
+                                                            <label class="k-radio-label" for="k-endrule-never">Never</label>
+                                                        </li>
+                                                        <li class="k-radio-list-item">
+                                                            <span class="k-radio-wrap">
+                                                                <input id="k-endrule-count" type="radio" class="k-radio k-radio-md">
+                                                            </span>
+                                                            <label class="k-radio-label" for="k-endrule-count">After</label>
+                                                            <span class="k-recur-count k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                                                <span class="k-spin-button k-input-spinner">
+                                                                    <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                        <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                                    </button>
+                                                                    <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                                    </button>
+                                                                </span>
+                                                            </span>
+                                                            <span>occurrence(s)</span>
+                                                        </li>
+                                                        <li class="k-radio-list-item">
+                                                            <span class="k-radio-wrap">
+                                                                <input id="k-endrule-until" type="radio" class="k-radio k-radio-md">
+                                                            </span>
+                                                            <label class="k-radio-label" for="k-endrule-until">On</label>
+                                                            <span class="k-recur-until k-datepicker k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                                                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                                                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-i-calendar"></span>
+                                                                </button>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Description</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                                    <textarea class="!k-overflow-auto k-input-inner" placeholder=""></textarea>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Owner</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="Select owner" autocomplete="off" value="">
+                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-caret-alt-down"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Atendee<span class="k-label-optional">(Optional)</span>
+                            </label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-multiselect k-input k-input-md k-input-solid k-rounded-md">
+                                    <div class="k-input-values">
+                                        <div class="k-chip-list k-chip-list-md"></div>
+                                        <input type="text" class="k-input-inner" placeholder="Invite people" autocomplete="off" value="">
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-save"></span>
+                        <span class="k-button-text">Save</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-cancel"></span>
+                        <span class="k-button-text">Cancel</span>
+                    </button>
+                    <span class="k-spacer"></span>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-delete"></span>
+                        <span class="k-button-text">Delete</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

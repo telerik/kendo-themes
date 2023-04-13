@@ -13,7 +13,7 @@
             width: 500px;
         }
         .k-window {
-            width: 100%;
+            min-width: 400px;
             position: relative;
         }
 
@@ -22,31 +22,50 @@
         <section>
             <div class="k-window">
                 <div class="k-window-titlebar">
-                    <span class="k-window-title">Edit</span>
+                    <span class="k-window-title">Edit task</span>
                     <div class="k-window-titlebar-actions">
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-minimize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-maximize"></span>
+                        </button>
                         <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                             <span class="k-button-icon k-icon k-i-close"></span>
                         </button>
                     </div>
                 </div>
                 <div class="k-window-content">
-                    <div class="k-form k-form-md k-form-horizontal">
-                        <div class="k-form-field">
-                            <label class="k-label k-form-label">Product Name</label>
+                    <div class="k-form k-form-md k-form-vertical">
+                        <div class="k-form-field k-form-field-error">
+                            <label class="k-label k-form-label">Text data field label</label>
                             <div class="k-form-field-wrap">
-                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Chai">
+                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid">
+                                    <span class="k-input-validation-icon k-icon k-i-warning"></span>
                                     <span class="k-clear-value">
                                         <span class="k-icon k-i-x"></span>
                                     </span>
                                 </span>
+                                <div class="k-form-error">Error</div>
                             </div>
                         </div>
                         <div class="k-form-field">
-                            <label class="k-label k-form-label">Unit Price</label>
+                            <label class="k-label k-form-label">Date data field label</label>
+                            <div class="k-form-field-wrap">
+                                <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="dd/MM/yyyy" autocomplete="off" value="">
+                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <label class="k-label k-form-label">Numeric data field label</label>
                             <div class="k-form-field-wrap">
                                 <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
-                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                    <input type="text" class="k-input-inner" placeholder="##,###" autocomplete="off" value="">
                                     <span class="k-spin-button k-input-spinner">
                                         <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
                                             <span class="k-button-icon k-icon k-i-arrow-n"></span>
@@ -56,89 +75,40 @@
                                         </button>
                                     </span>
                                 </span>
-                                <div class="k-tooltip k-tooltip-error k-validator-tooltip k-invalid-msg">
-                                    <span class="k-tooltip-icon k-icon k-i-warning"></span>
-                                    <span class="k-tooltip-content">Unit Price is required</span>
-                                    <span class="k-callout k-callout-n"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="k-form-field">
-                            <label class="k-label k-form-label">Units In Stock</label>
-                            <div class="k-form-field-wrap">
-                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
-                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
-                                    <span class="k-spin-button k-input-spinner">
-                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
-                                        </button>
-                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
-                                        </button>
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="k-form-field">
-                            <label class="k-label k-form-label">Discontinued</label>
+                            <label class="k-label k-form-label k-label-empty"> </label>
                             <div class="k-form-field-wrap">
                                 <span class="k-checkbox-wrap">
-                                    <input id="Discontinued" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
                                 </span>
-                                <label class="k-checkbox-label">​</label>
+                                <label class="k-checkbox-label">Boolean data field label</label>
                             </div>
                         </div>
                         <div class="k-form-field">
-                            <label class="k-label k-form-label">Files</label>
+                            <label class="k-label k-form-label">Boolean data field label</label>
                             <div class="k-form-field-wrap">
-                                <div class="k-upload k-upload-async">
-                                    <div class="k-upload-dropzone k-dropzone">
-                                        <div class="k-upload-button-wrap">
-                                            <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                                <span class="k-button-text">Select files...</span>
-                                            </button>
-                                            <input id="upload-input" class="k-hidden">
-                                        </div>
-                                        <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
-                                        <span class="k-upload-status">
-                                            <span class="k-icon k-i-check"></span>Done
-                                        </span>
-                                    </div>
-                                    <ul class="k-upload-files">
-                                        <li class="k-file k-file-success">
-                                            <div class="k-file-single">
-                                                <div class="k-hidden k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value:100;">
-                                                    <span class="k-progress-status-wrap k-progress-start"></span>
-                                                    <div class="k-progressbar-value k-selected">
-                                                        <span class="k-progress-status-wrap k-progress-start"></span>
-                                                    </div>
-                                                </div>
-                                                <span class="k-file-icon-wrapper">
-                                                    <span class="k-file-icon k-icon k-i-file-image"></span>
-                                                </span>
-                                                <div class="k-file-info">
-                                                    <span class="k-file-name">67409197_2322469807839836_4126207508270284800_n.png</span>
-                                                    <span class="k-file-size">24.34 KB</span>
-                                                </div>
-                                                <div class="k-upload-actions">
-                                                    <button class="k-upload-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                                        <span class="k-button-icon k-icon k-i-close"></span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                    <span class="k-input-inner">
+                                        <span class="k-input-value-text">True</span>
+                                    </span>
+                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                    </button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="k-actions k-actions-end k-actions-horizontal k-window-actions">
-                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                        <span class="k-button-text">Cancel</span>
-                    </button>
+                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions">
                     <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                        <span class="k-button-text">Update</span>
+                        <span class="k-button-icon k-icon k-i-save"></span>
+                        <span class="k-button-text">Save</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-cancel"></span>
+                        <span class="k-button-text">Cancel</span>
                     </button>
                 </div>
             </div>

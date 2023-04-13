@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Gantt - Editing Popup Resources</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        .k-window {
+            min-width: 580px;
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Edit task</span>
+                    <div class="k-window-titlebar-actions">
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-window-content">
+                    <div class="k-tabstrip k-tabstrip-top">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-reset k-tabstrip-items">
+                                <li class="k-item k-first">
+                                    <span class="k-link">General</span>
+                                </li>
+                                <li class="k-item k-active">
+                                    <span class="k-link">Resources</span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">Predecessors</span>
+                                </li>
+                                <li class="k-item k-last">
+                                    <span class="k-link">Successors</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <div class="k-grid k-grid-md k-grid-no-scrollbar">
+                                <div class="k-grid-toolbar k-toolbar k-toolbar-md">
+                                    <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-icon k-icon k-i-add"></span>
+                                        <span class="k-button-text">Add</span>
+                                    </button>
+                                    <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-icon k-icon k-i-minus"></span>
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </div>
+                                <div class="k-grid-header">
+                                    <div class="k-grid-header-wrap">
+                                        <table class="k-table k-table-md k-grid-header-table">
+                                            <colgroup>
+                                                <col style="width: 42px;">
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead class="k-table-thead">
+                                                <tr class="k-table-row">
+                                                    <th class="k-table-th k-header">
+                                                        <span class="k-checkbox-wrap">
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                        </span>
+                                                        <label class="k-checkbox-label"></label>
+                                                    </th>
+                                                    <th class="k-table-th k-header k-filterable">
+                                                        <span class="k-cell-inner">
+                                                            <span class="k-link">
+                                                                <span class="k-column-title">Resources</span>
+                                                                <span class="k-sort-icon">
+                                                                    <span class="k-icon k-i-sort-asc-small"></span>
+                                                                </span>
+                                                            </span>
+                                                            <div>
+                                                                <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                                    <span class="k-icon k-i-filter"></span>
+                                                                </a>
+                                                            </div>
+                                                        </span>
+                                                    </th>
+                                                    <th class="k-table-th k-header k-filterable">
+                                                        <span class="k-cell-inner">
+                                                            <span class="k-link">
+                                                                <span class="k-column-title">Units</span>
+                                                                <span class="k-sort-icon">
+                                                                    <span class="k-icon k-i-sort-asc-small"></span>
+                                                                </span>
+                                                            </span>
+                                                            <div>
+                                                                <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                                    <span class="k-icon k-i-filter"></span>
+                                                                </a>
+                                                            </div>
+                                                        </span>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="k-grid-content">
+                                    <table class="k-table k-table-md k-grid-table">
+                                        <colgroup>
+                                            <col style="width: 42px;">
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody class="k-table-tbody">
+                                            <tr class="k-table-row">
+                                                <td class="k-table-td">
+                                                    <span class="k-checkbox-wrap">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                        </span>
+                                                        <label class="k-checkbox-label"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="k-table-td">
+                                                    <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                        <span class="k-input-inner">-Select resource-</span>
+                                                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </td>
+                                                <td class="k-table-td">
+                                                    <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="40">
+                                                        <span class="k-clear-value">
+                                                            <span class="k-icon k-i-x"></span>
+                                                        </span>
+                                                        <span class="k-spin-button k-input-spinner">
+                                                            <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                            </button>
+                                                            <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                            </button>
+                                                        </span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="k-table-row k-table-alt-row k-alt">
+                                                <td class="k-table-td">
+                                                    <span class="k-checkbox-wrap">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                        </span>
+                                                        <label class="k-checkbox-label"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                            </tr>
+                                            <tr class="k-table-row">
+                                                <td class="k-table-td">
+                                                    <span class="k-checkbox-wrap">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                        </span>
+                                                        <label class="k-checkbox-label"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                            </tr>
+                                            <tr class="k-table-row k-table-alt-row k-alt">
+                                                <td class="k-table-td">
+                                                    <span class="k-checkbox-wrap">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                        </span>
+                                                        <label class="k-checkbox-label"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                            </tr>
+                                            <tr class="k-table-row">
+                                                <td class="k-table-td">
+                                                    <span class="k-checkbox-wrap">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                        </span>
+                                                        <label class="k-checkbox-label"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                            </tr>
+                                            <tr class="k-table-row k-table-alt-row k-alt">
+                                                <td class="k-table-td">
+                                                    <span class="k-checkbox-wrap">
+                                                        <span class="k-checkbox-wrap">
+                                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                        </span>
+                                                        <label class="k-checkbox-label"></label>
+                                                    </span>
+                                                </td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                                <td class="k-table-td">Grid Cell</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-save"></span>
+                        <span class="k-button-text">Save</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-cancel"></span>
+                        <span class="k-button-text">Cancel</span>
+                    </button>
+                    <span class="k-spacer"></span>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-delete"></span>
+                        <span class="k-button-text">Delete</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
