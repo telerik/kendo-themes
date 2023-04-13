@@ -129,8 +129,8 @@ export const TimePicker = (
                         </TimeSelectorHeader>
                     )}/>
                     <ActionButtons alignment="stretched" className="k-time-footer">
-                        <Button className="k-time-cancel">Cancel</Button>
                         <Button themeColor="primary" className="k-time-accept">Set</Button>
+                        <Button className="k-time-cancel">Cancel</Button>
                     </ActionButtons>
                 </Popup>
             }

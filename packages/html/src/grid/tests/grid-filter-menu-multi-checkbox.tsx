@@ -47,8 +47,8 @@ root.render(
                             </ul>
                             <div className="k-filter-selected-items">0 selected items</div>
                             <ActionButtons alignment="stretched">
-                                <Button>Clear</Button>
                                 <Button themeColor="primary">Filter</Button>
+                                <Button>Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>
@@ -68,8 +68,8 @@ root.render(
                             </ul>
                             <div className="k-filter-selected-items">0 selected items</div>
                             <ActionButtons alignment="stretched">
-                                <Button>Clear</Button>
                                 <Button themeColor="primary">Filter</Button>
+                                <Button>Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>
@@ -90,8 +90,8 @@ root.render(
                                 <li className="k-item"><label className="k-label k-checkbox-label"><Checkbox /><span>is undefined</span></label></li>
                             </ul>
                             <ActionButtons alignment="stretched">
-                                <Button>Clear</Button>
                                 <Button themeColor="primary">Filter</Button>
+                                <Button>Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>
@@ -109,8 +109,8 @@ root.render(
                                 <li className="k-item"><label className="k-label k-checkbox-label"><Checkbox /><span>is undefined</span></label></li>
                             </ul>
                             <ActionButtons alignment="stretched">
-                                <Button>Clear</Button>
                                 <Button themeColor="primary">Filter</Button>
+                                <Button>Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>

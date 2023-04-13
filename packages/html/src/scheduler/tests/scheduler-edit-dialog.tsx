@@ -2,14 +2,16 @@ import ReactDOM from 'react-dom/client';
 import { Window } from '../../window';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
-import { DatePicker } from '../../datepicker';
-import { NumericTextbox } from '../../numerictextbox';
-import { RadioButton } from '../../radio';
 import { Textarea } from '../../textarea';
 import { Textbox } from '../../textbox';
-import { TimePicker } from '../../timepicker';
+import { DateTimePicker } from '../../datetimepicker';
+import { Combobox } from '../../combobox';
+import { MultiSelect } from '../../multiselect';
 import { Form, FormField } from '../../form';
 import { ButtonGroup } from '../../button-group';
+import { RadioButton } from '../../radio';
+import { NumericTextbox } from '../../numerictextbox';
+import { DatePicker } from '../../datepicker';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -20,7 +22,7 @@ const style = `
         width: 700px;
     }
     .k-window {
-        width: 100%;
+        min-width: 400px;
         position: relative;
     }
 `;
@@ -31,50 +33,46 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-
-                <Window title="Event" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
-                    <Form tag="div" orientation="horizontal" className="k-scheduler-edit-form">
-                        <FormField label="Title" editor={ <Textbox placeholder="Title..." /> } />
-                        <FormField label="Start" editor={
-                            <div className="k-scheduler-datetime-picker">
-                                <DatePicker />
-                                <TimePicker />
-                            </div>
-                        } />
-                        <FormField label="End" editor={
-                            <div className="k-scheduler-datetime-picker">
-                                <DatePicker />
-                                <TimePicker />
-                            </div>
-                        } />
+                <Window title="Edit event" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                    <>
+                        <Button themeColor="primary" icon="save">Save</Button>
+                        <Button icon="cancel">Cancel</Button>
+                        <span className="k-spacer"></span>
+                        <Button fillMode="flat" themeColor="primary" icon="delete">Delete</Button>
+                    </>
+                }>
+                    <Form tag="div" className="k-scheduler-edit-form" orientation="vertical">
+                        <FormField className="k-form-field-error" label="Title" error="Error" editor={ <Textbox invalid value="Invalid" /> }/>
+                        <FormField label="Start" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
+                        <FormField label="End" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
                         <FormField label=" " editor={
                             <>
-                                <Checkbox id="k-is-allday-chkbox" />
-                                <label htmlFor="k-is-allday-chkbox" className="k-checkbox-label">All Day Event</label>
+                                <Checkbox />
+                                <label className="k-checkbox-label">All Day Event</label>
                             </>
-                        } />
+                        }/>
                         <FormField label=" " editor={
                             <>
-                                <Checkbox id="k-set-timezone" />
-                                <label htmlFor="k-set-timezone" className="k-checkbox-label">Specify Time Zone</label>
+                                <Checkbox />
+                                <label className="k-checkbox-label">Specify Time Zone</label>
                             </>
-                        } />
+                        }/>
                         <div className="k-recurrence-editor">
                             <FormField label="Repeat" editor={
-                                <ButtonGroup className="k-scheduler-recurrence-repeat k-button-group-stretched" >
+                                <ButtonGroup stretched className="k-scheduler-recurrence-repeat">
                                     <Button>Never</Button>
-                                    <Button selected>Daily</Button>
+                                    <Button selected >Daily</Button>
                                     <Button>Weekly</Button>
                                     <Button>Monthly</Button>
                                     <Button>Yearly</Button>
                                 </ButtonGroup>
-                            } />
+                            }/>
                             <div className="k-recur-view">
                                 <div className="k-scheduler-recurrence-interval-editor">
                                     <FormField label="Repeat every" editor={
                                         <>
                                             <NumericTextbox className="k-recur-interval" />
-                                            <span>day(s)</span>
+                                            <span> day(s)</span>
                                         </>
                                     } />
                                 </div>
@@ -101,12 +99,12 @@ root.render(
                                 </div>
                             </div>
                         </div>
-                        <FormField label="Description" editor={ <Textarea /> } />
+                        <FormField label="Description" editor={ <Textarea /> }/>
+                        <FormField label="Owner" editor={ <Combobox placeholder="Select owner" /> }/>
+                        <FormField label="Atendee" optional editor={ <MultiSelect placeholder="Invite people" /> }/>
                     </Form>
                 </Window>
-
             </section>
-
         </div>
     </>
 );

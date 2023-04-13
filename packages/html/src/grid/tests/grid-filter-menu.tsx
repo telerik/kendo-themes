@@ -37,8 +37,8 @@ root.render(
                             <DropdownList value="Is equal to" />
                             <NumericTextbox />
                             <ActionButtons alignment="stretched">
-                                <Button>Clear</Button>
                                 <Button themeColor="primary">Filter</Button>
+                                <Button>Clear</Button>
                             </ActionButtons>
                         </div>
                     </form>

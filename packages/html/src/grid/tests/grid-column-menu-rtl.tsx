@@ -107,8 +107,8 @@ root.render(
                                         </div>
                                     </div>
                                     <ActionButtons alignment="stretched">
-                                        <Button>Reset</Button>
                                         <Button themeColor="primary">Apply</Button>
+                                        <Button>Reset</Button>
                                     </ActionButtons>
                                 </div>
                             </div>
@@ -186,8 +186,8 @@ root.render(
                                         </div>
                                     </div>
                                     <ActionButtons alignment="stretched">
-                                        <Button>Reset</Button>
                                         <Button themeColor="primary">Apply</Button>
+                                        <Button>Reset</Button>
                                     </ActionButtons>
                                 </div>
                             </div>
@@ -316,8 +316,8 @@ root.render(
                                             <DropdownList value="Contains" />
                                             <Textbox placeholder="Filter..." />
                                             <ActionButtons alignment="stretched">
-                                                <Button>Clear</Button>
                                                 <Button themeColor="primary">Filter</Button>
+                                                <Button>Clear</Button>
                                             </ActionButtons>
                                         </div>
                                     </form>
@@ -381,8 +381,8 @@ root.render(
                                             </ul>
                                             <div className="k-filter-selected-items">0 selected items</div>
                                             <ActionButtons alignment="stretched">
-                                                <Button>Clear</Button>
                                                 <Button themeColor="primary">Filter</Button>
+                                                <Button>Clear</Button>
                                             </ActionButtons>
                                         </div>
                                     </form>

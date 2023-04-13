@@ -24,46 +24,18 @@ root.render(
             <span></span>
 
             <section>
-                <Window title="Insert Image" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                <Window title="Insert Image" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
                     <>
+                        <Button themeColor="primary">Insert</Button>
                         <Button>Cancel</Button>
-                        <Button themeColor="primary">Update</Button>
                     </>
                 }>
-                    <div className="k-form k-form-md k-form-horizontal">
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Web address:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox showClearButton={false} />
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Alternate text:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox showClearButton={false} />
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Width:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox showClearButton={false} />
-                            </div>
-                        </div>
-                        <div className="k-form-field">
-                            <div className="k-form-label">
-                                <label>Height:</label>
-                            </div>
-                            <div className="k-form-field-wrap">
-                                <Textbox showClearButton={false} />
-                            </div>
-                        </div>
-                    </div>
+                    <Form tag="div" orientation="vertical">
+                        <FormField label="Web address:" editor={ <Textbox showClearButton={false} /> } />
+                        <FormField label="Alternate text:" editor={ <Textbox showClearButton={false} /> } />
+                        <FormField label="Width:" editor={ <Textbox showClearButton={false} /> } />
+                        <FormField label="Height:" editor={ <Textbox showClearButton={false} /> } />
+                    </Form>
                 </Window>
             </section>
 

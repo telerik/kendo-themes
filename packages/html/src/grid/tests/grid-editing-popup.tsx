@@ -1,10 +1,11 @@
 import ReactDOM from 'react-dom/client';
 import { Window } from '../../window';
 import { Checkbox } from '../../checkbox';
-import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
-import { Upload, UploadFile } from '../../upload';
+import { Button } from '../../button';
+import { DropdownList } from '../../dropdownlist';
+import { DatePicker } from '../../datepicker';
 import { Form, FormField } from '../../form';
 
 const root = ReactDOM.createRoot(
@@ -16,7 +17,7 @@ const styles = `
         width: 500px;
     }
     .k-window {
-        width: 100%;
+        min-width: 400px;
         position: relative;
     }
 `;
@@ -27,36 +28,23 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window title="Edit" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
-                    <Form tag="div" orientation="horizontal" >
-                        <FormField label="Product Name" editor={ <Textbox value="Chai" /> } />
-                        <FormField label="Unit Price" editor={
+                <Window title="Edit task" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                    <>
+                        <Button themeColor="primary" icon="save">Save</Button>
+                        <Button icon="cancel">Cancel</Button>
+                    </>
+                }>
+                    <Form tag="div" orientation="vertical">
+                        <FormField className="k-form-field-error" label="Text data field label" error="Error" editor={ <Textbox value="Invalid" invalid showClearButton /> } />
+                        <FormField label="Date data field label" editor={ <DatePicker placeholder="dd/MM/yyyy" /> } />
+                        <FormField label="Numeric data field label" editor={ <NumericTextbox placeholder="##,###" /> } />
+                        <FormField label=" " editor={
                             <>
-                                <NumericTextbox />
-                                <div className="k-tooltip k-tooltip-error k-validator-tooltip k-invalid-msg">
-                                    <Icon className="k-tooltip-icon" name="warning" />
-                                    <span className="k-tooltip-content">Unit Price is required</span>
-                                    <span className="k-callout k-callout-n"></span>
-                                </div>
-                            </> }
-                        />
-                        <FormField label="Units In Stock" editor={ <NumericTextbox /> } />
-                        <FormField label="Discontinued" editor={
-                            <>
-                                <Checkbox id="Discontinued" />
-                                <label className="k-checkbox-label">&#8203;</label>
+                                <Checkbox checked />
+                                <label className="k-checkbox-label">Boolean data field label</label>
                             </>
                         } />
-                        <FormField label="Files" editor={
-                            <Upload async status="done">
-                                <UploadFile progress="100"
-                                    status="success"
-                                    name="67409197_2322469807839836_4126207508270284800_n.png"
-                                    icon="file-image"
-                                    size="24.34 KB" />
-                            </Upload>
-                        }
-                        />
+                        <FormField label="Boolean data field label" editor={ <DropdownList value="True" /> } />
                     </Form>
                 </Window>
             </section>

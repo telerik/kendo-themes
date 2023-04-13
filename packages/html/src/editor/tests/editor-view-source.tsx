@@ -24,10 +24,10 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
-                <Window className="k-editor-window" title="View HTML" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                <Window className="k-editor-window" title="View HTML" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
                     <>
-                        <Button>Cancel</Button>
                         <Button themeColor="primary">Update</Button>
+                        <Button>Cancel</Button>
                     </>
                 }>
                     <Textarea className="k-editor-textarea"></Textarea>
