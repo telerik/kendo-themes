@@ -1538,7 +1538,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-row-resizer-bg</td>
+    <td>$kendo-grid-row-resizer-hover-bg</td>
     <td></td>
     <td><code>get-theme-color-var( neutral-90 )</code></td>
     <td></td>
@@ -1555,6 +1555,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Active background color of the grid row indicator</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-row-resizer-height</td>
+    <td></td>
+    <td><code>map-get( $kendo-spacing, 0.5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid row resize indicator</div></div>
     </td>
 </tr>
 </tbody>
