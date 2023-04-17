@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/telerik/kendo-themes/compare/v6.2.0...v6.3.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* align how we use module system with the rest of the themes ([690aafa](https://github.com/telerik/kendo-themes/commit/690aafae52dc922849044e0bcc91a1590bd23c45))
+* **chip:** close icon not properly aligned ([7a0fad8](https://github.com/telerik/kendo-themes/commit/7a0fad8063cd9fe27e17a9898e289cca17895c32))
+* **dropdowntree:** rename dropdowntree popup class ([d755cb1](https://github.com/telerik/kendo-themes/commit/d755cb1647b87918bc043f45c107c0fbebec9506))
+* **editor:** remove editor z-index ([11ca05a](https://github.com/telerik/kendo-themes/commit/11ca05ae129666f4ab9b4ecd25194b577ddfa8c3))
+* **fab:** add styles for icon-wrapper-host element in angular ([b07ffe2](https://github.com/telerik/kendo-themes/commit/b07ffe2abe7bb6ed91f613ad1426150f711dc241))
+* **fluent:** add missing color class names ([79dd700](https://github.com/telerik/kendo-themes/commit/79dd700c627f9d132a97c8fa78f2478d9b204c60))
+* **grid:** increase sticky content selector specificity ([7780eb7](https://github.com/telerik/kendo-themes/commit/7780eb72a9b41b851c1f48e17422323fa2fca2ac))
+* **html:** add k-picker-solid class to pager select ([e536e6b](https://github.com/telerik/kendo-themes/commit/e536e6bbc2926404a0f2ca372111be0c0bb9dcbc))
+* **module-system:** add missing default and global flags in module system ([5ef0aca](https://github.com/telerik/kendo-themes/commit/5ef0aca74a960f375aecb639f97eebc745ba1113))
+* **module-system:** remove cursor from component list since it is utils now ([6c58be9](https://github.com/telerik/kendo-themes/commit/6c58be92ef0c261f27dcc98aab4a525ac1a50e71))
+* **module-system:** use scrollview for component name instead of scroll-view ([e7c714d](https://github.com/telerik/kendo-themes/commit/e7c714d2ed3d7e7eb15565da3c09b08d56741982))
+* **progressbar:** fix indeterminate animation ([fad4a96](https://github.com/telerik/kendo-themes/commit/fad4a9674d8d838953c2b10325727984d2d87e36))
+* **spreadsheet:** update editor button style ([7ed0999](https://github.com/telerik/kendo-themes/commit/7ed0999109fae8964f09dc7ca55e641dbaf48db4))
+* **swatches:** update default-main-dark variables based on latest design ([0142fb9](https://github.com/telerik/kendo-themes/commit/0142fb9a750698a9fa88a29fd957becc8a9d1447))
+
+
+### Features
+
+* **fab:** extract outline variables ([cd2dac4](https://github.com/telerik/kendo-themes/commit/cd2dac4c6d11ad1e6d8d8f68e5aa12250c021d6f))
+* **fab:** extract size map variable ([42e0bb1](https://github.com/telerik/kendo-themes/commit/42e0bb16704d2a5e85d827cabf34b7057f96afaa))
+* **grid:** add row-resizer styles ([c7de0cd](https://github.com/telerik/kendo-themes/commit/c7de0cdb91ea5fab117c21293a37e54be910a2b1))
+* **grid:** add selection aggregates styles ([34de2a8](https://github.com/telerik/kendo-themes/commit/34de2a8409de81e20b31697303ec4fdcc4be6069))
+* **grid:** add tabbed column menu styles ([75f28b7](https://github.com/telerik/kendo-themes/commit/75f28b7fcc7da1a1c24aa57dfe3cdab1b3ab0896))
+* **html:** add fab-items helper ([1a99f9c](https://github.com/telerik/kendo-themes/commit/1a99f9cd9dfeba9326fbc438fe6982a572d32f70))
+* **html:** add forms helper ([9af79bd](https://github.com/telerik/kendo-themes/commit/9af79bd358f8d21c01ccfd05a5862e2aebcbf851))
+* **html:** add table helper ([9ac6e60](https://github.com/telerik/kendo-themes/commit/9ac6e6011d916bdba5443591d01c99528e4ab963))
+* **module-system:** add functionality to verify rendered modules ([26b2b07](https://github.com/telerik/kendo-themes/commit/26b2b0713aa35516aa2c93548aaa26cea7dde2b9))
+* **module-system:** integrate module system in bootstrap theme ([3fa375d](https://github.com/telerik/kendo-themes/commit/3fa375d18585268077a754fef66457b398ff0422))
+* **module-system:** integrate module system in classic theme ([51e1ee7](https://github.com/telerik/kendo-themes/commit/51e1ee7e35d6447950651ad2259b6347e71cbd0a))
+* **module-system:** integrate module system in default theme ([0e5e949](https://github.com/telerik/kendo-themes/commit/0e5e949e386c779d90c4ff4bd0097cb86a57e314))
+* **module-system:** integrate module system in material theme ([0235af2](https://github.com/telerik/kendo-themes/commit/0235af29771ca3923eceb88e2697a15db91de2a2))
+* **utils:** extend the package ([472b728](https://github.com/telerik/kendo-themes/commit/472b7283e1a7536962bebe50fa05f65a2b2949a4))
+
+
+
+
+
 # [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
 
 

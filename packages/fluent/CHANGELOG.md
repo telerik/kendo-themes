@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/telerik/kendo-themes/compare/v6.2.0...v6.3.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* **chip:** close icon not properly aligned ([7a0fad8](https://github.com/telerik/kendo-themes/commit/7a0fad8063cd9fe27e17a9898e289cca17895c32))
+* **dropdowntree:** rename dropdowntree popup class ([d755cb1](https://github.com/telerik/kendo-themes/commit/d755cb1647b87918bc043f45c107c0fbebec9506))
+* **editor:** remove editor z-index ([11ca05a](https://github.com/telerik/kendo-themes/commit/11ca05ae129666f4ab9b4ecd25194b577ddfa8c3))
+* **fab:** add styles for icon-wrapper-host element in angular ([b07ffe2](https://github.com/telerik/kendo-themes/commit/b07ffe2abe7bb6ed91f613ad1426150f711dc241))
+* **fluent:** add missing color class names ([79dd700](https://github.com/telerik/kendo-themes/commit/79dd700c627f9d132a97c8fa78f2478d9b204c60))
+* **module-system:** remove cursor from component list since it is utils now ([6c58be9](https://github.com/telerik/kendo-themes/commit/6c58be92ef0c261f27dcc98aab4a525ac1a50e71))
+* **spreadsheet:** update editor button style ([7ed0999](https://github.com/telerik/kendo-themes/commit/7ed0999109fae8964f09dc7ca55e641dbaf48db4))
+
+
+### Features
+
+* **grid:** add row-resizer styles ([c7de0cd](https://github.com/telerik/kendo-themes/commit/c7de0cdb91ea5fab117c21293a37e54be910a2b1))
+* **grid:** add selection aggregates styles ([34de2a8](https://github.com/telerik/kendo-themes/commit/34de2a8409de81e20b31697303ec4fdcc4be6069))
+* **grid:** add tabbed column menu styles ([75f28b7](https://github.com/telerik/kendo-themes/commit/75f28b7fcc7da1a1c24aa57dfe3cdab1b3ab0896))
+
+
+
+
+
 # [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
 
 

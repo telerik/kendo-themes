@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/telerik/kendo-themes/compare/v6.2.0...v6.3.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* align how we use module system with the rest of the themes ([690aafa](https://github.com/telerik/kendo-themes/commit/690aafae52dc922849044e0bcc91a1590bd23c45))
+* **chip:** close icon not properly aligned ([7a0fad8](https://github.com/telerik/kendo-themes/commit/7a0fad8063cd9fe27e17a9898e289cca17895c32))
+
+
+
+
+
 # [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
 
 

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/telerik/kendo-themes/compare/v6.2.0...v6.3.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* **module-system:** add missing default and global flags in module system ([5ef0aca](https://github.com/telerik/kendo-themes/commit/5ef0aca74a960f375aecb639f97eebc745ba1113))
+* **module-system:** remove cursor from component list since it is utils now ([6c58be9](https://github.com/telerik/kendo-themes/commit/6c58be92ef0c261f27dcc98aab4a525ac1a50e71))
+* **module-system:** use scrollview for component name instead of scroll-view ([e7c714d](https://github.com/telerik/kendo-themes/commit/e7c714d2ed3d7e7eb15565da3c09b08d56741982))
+
+
+### Features
+
+* **module-system:** add functionality to verify rendered modules ([26b2b07](https://github.com/telerik/kendo-themes/commit/26b2b0713aa35516aa2c93548aaa26cea7dde2b9))
+
+
+
+
+
 # [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
 
 

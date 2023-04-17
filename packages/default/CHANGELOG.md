@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/telerik/kendo-themes/compare/v6.2.0...v6.3.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* **chip:** close icon not properly aligned ([7a0fad8](https://github.com/telerik/kendo-themes/commit/7a0fad8063cd9fe27e17a9898e289cca17895c32))
+* **dropdowntree:** rename dropdowntree popup class ([d755cb1](https://github.com/telerik/kendo-themes/commit/d755cb1647b87918bc043f45c107c0fbebec9506))
+* **editor:** remove editor z-index ([11ca05a](https://github.com/telerik/kendo-themes/commit/11ca05ae129666f4ab9b4ecd25194b577ddfa8c3))
+* **fab:** add styles for icon-wrapper-host element in angular ([b07ffe2](https://github.com/telerik/kendo-themes/commit/b07ffe2abe7bb6ed91f613ad1426150f711dc241))
+* **grid:** increase sticky content selector specificity ([7780eb7](https://github.com/telerik/kendo-themes/commit/7780eb72a9b41b851c1f48e17422323fa2fca2ac))
+* **spreadsheet:** update editor button style ([7ed0999](https://github.com/telerik/kendo-themes/commit/7ed0999109fae8964f09dc7ca55e641dbaf48db4))
+* **swatches:** update default-main-dark variables based on latest design ([0142fb9](https://github.com/telerik/kendo-themes/commit/0142fb9a750698a9fa88a29fd957becc8a9d1447))
+
+
+### Features
+
+* **fab:** extract outline variables ([cd2dac4](https://github.com/telerik/kendo-themes/commit/cd2dac4c6d11ad1e6d8d8f68e5aa12250c021d6f))
+* **fab:** extract size map variable ([42e0bb1](https://github.com/telerik/kendo-themes/commit/42e0bb16704d2a5e85d827cabf34b7057f96afaa))
+* **grid:** add row-resizer styles ([c7de0cd](https://github.com/telerik/kendo-themes/commit/c7de0cdb91ea5fab117c21293a37e54be910a2b1))
+* **grid:** add selection aggregates styles ([34de2a8](https://github.com/telerik/kendo-themes/commit/34de2a8409de81e20b31697303ec4fdcc4be6069))
+* **grid:** add tabbed column menu styles ([75f28b7](https://github.com/telerik/kendo-themes/commit/75f28b7fcc7da1a1c24aa57dfe3cdab1b3ab0896))
+* **module-system:** integrate module system in default theme ([0e5e949](https://github.com/telerik/kendo-themes/commit/0e5e949e386c779d90c4ff4bd0097cb86a57e314))
+
+
+
+
+
 # [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
 
 

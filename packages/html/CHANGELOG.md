@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/telerik/kendo-themes/compare/v6.2.0...v6.3.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* **dropdowntree:** rename dropdowntree popup class ([d755cb1](https://github.com/telerik/kendo-themes/commit/d755cb1647b87918bc043f45c107c0fbebec9506))
+* **html:** add k-picker-solid class to pager select ([e536e6b](https://github.com/telerik/kendo-themes/commit/e536e6bbc2926404a0f2ca372111be0c0bb9dcbc))
+
+
+### Features
+
+* **html:** add fab-items helper ([1a99f9c](https://github.com/telerik/kendo-themes/commit/1a99f9cd9dfeba9326fbc438fe6982a572d32f70))
+* **html:** add forms helper ([9af79bd](https://github.com/telerik/kendo-themes/commit/9af79bd358f8d21c01ccfd05a5862e2aebcbf851))
+* **html:** add table helper ([9ac6e60](https://github.com/telerik/kendo-themes/commit/9ac6e6011d916bdba5443591d01c99528e4ab963))
+
+
+
+
+
 # [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/telerik/kendo-themes/compare/v6.2.0...v6.3.0) (2023-04-17)
+
+
+### Features
+
+* **fab:** extract outline variables ([cd2dac4](https://github.com/telerik/kendo-themes/commit/cd2dac4c6d11ad1e6d8d8f68e5aa12250c021d6f))
+* **fab:** extract size map variable ([42e0bb1](https://github.com/telerik/kendo-themes/commit/42e0bb16704d2a5e85d827cabf34b7057f96afaa))
+* **grid:** add row-resizer styles ([c7de0cd](https://github.com/telerik/kendo-themes/commit/c7de0cdb91ea5fab117c21293a37e54be910a2b1))
+* **grid:** add selection aggregates styles ([34de2a8](https://github.com/telerik/kendo-themes/commit/34de2a8409de81e20b31697303ec4fdcc4be6069))
+* **grid:** add tabbed column menu styles ([75f28b7](https://github.com/telerik/kendo-themes/commit/75f28b7fcc7da1a1c24aa57dfe3cdab1b3ab0896))
+* **module-system:** integrate module system in classic theme ([51e1ee7](https://github.com/telerik/kendo-themes/commit/51e1ee7e35d6447950651ad2259b6347e71cbd0a))
+
+
+
+
+
 # [6.2.0](https://github.com/telerik/kendo-themes/compare/v6.1.0...v6.2.0) (2023-03-06)
 
 
