@@ -1166,7 +1166,7 @@ The following table lists the available variables for customization.
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-sm-padding-y * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-md-padding-y * 2} ),
         button-padding-x: $kendo-input-sm-padding-y,
         button-padding-y: $kendo-input-sm-padding-y,
         button-width: $kendo-input-sm-button-width
@@ -1176,7 +1176,7 @@ The following table lists the available variables for customization.
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-md-padding-y * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-sm-padding-y * 2} ),
         button-padding-x: $kendo-input-md-padding-y,
         button-padding-y: $kendo-input-md-padding-y,
         button-width: $kendo-input-md-button-width

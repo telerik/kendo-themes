@@ -98,23 +98,23 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-width</td>
+    <td>$kendo-fab-icon-padding-x</td>
     <td>Number</td>
-    <td><code>20px</code></td>
-    <td><code>20px</code></td>
+    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-height</td>
+    <td>$kendo-fab-icon-padding-y</td>
     <td>Number</td>
-    <td><code>$kendo-fab-icon-width</code></td>
-    <td><code>20px</code></td>
+    <td><code>$kendo-fab-icon-padding-x</code></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon height.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -210,8 +210,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-fab-item-icon-padding-x</td>
     <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>8px</code></td>
+    <td><code>k-map-get( $kendo-spacing, 2 ) + $kendo-fab-icon-padding-x</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon horizontal padding.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-fab-item-icon-padding-y</td>
     <td>Number</td>
     <td><code>$kendo-fab-item-icon-padding-x</code></td>
-    <td><code>8px</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon vertical padding.</div></div>
@@ -245,26 +245,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-width</td>
-    <td>Number</td>
-    <td><code>20px</code></td>
-    <td><code>20px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-height</td>
-    <td>Number</td>
-    <td><code>$kendo-fab-item-icon-width</code></td>
-    <td><code>20px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the FAB item icon.</div></div>
     </td>
 </tr>
 <tr>
