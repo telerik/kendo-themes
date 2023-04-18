@@ -309,15 +309,11 @@
         .k-task {
             display: flex;
             align-items: center;
+            gap: .5em;
 
             .k-scheduler-mark {
                 border-radius: 50%;
-            }
-
-            .k-i-reload,
-            .k-i-arrow-rotate-cw {
-                font-size: 1em;
-                margin-right: .5em;
+                margin: 0;
             }
 
             .k-scheduler-task-text {
@@ -464,8 +460,9 @@
         &[dir="rtl"],
         [dir="rtl"] & {
 
-            .k-header-cancel .k-i-arrow-chevron-left,
-            .k-listgroup-item .k-select .k-i-arrow-chevron-right {
+            .k-header-cancel .k-button-icon,
+            .k-listgroup-item .k-select .k-svg-icon,
+            .k-listgroup-item .k-select .k-icon {
                 transform: scaleX( -1 );
             }
 

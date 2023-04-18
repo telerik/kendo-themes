@@ -28,13 +28,16 @@
     }
 
     // RTL icons
-    .k-rtl .k-i-indent-increase,
-    .k-rtl .k-i-indent-decrease,
-    .k-rtl .k-i-caret-alt-right,
-    .k-rtl .k-i-caret-alt-down,
-    [dir="rtl"] .k-i-caret-alt-right,
-    [dir="rtl"] .k-i-caret-alt-down {
-        transform: scaleX(-1);
+    .k-rtl,
+    [dir="rtl"] {
+        .k-i-indent-increase,
+        .k-i-indent-decrease,
+        .k-i-caret-alt-right,
+        .k-i-caret-alt-left,
+        .k-svg-i-caret-alt-right,
+        .k-svg-i-caret-alt-left {
+            transform: scaleX(-1);
+        }
     }
 
     .k-icon-action {

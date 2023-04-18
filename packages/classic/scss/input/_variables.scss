@@ -77,7 +77,6 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-sm-padding-y * 2} ),
         button-padding-x: $kendo-input-sm-padding-y,
         button-padding-y: $kendo-input-sm-padding-y
     ),
@@ -86,7 +85,6 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-md-padding-y * 2} ),
         button-padding-x: $kendo-input-md-padding-y,
         button-padding-y: $kendo-input-md-padding-y
     ),
@@ -95,7 +93,6 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-lg-padding-y,
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-lg-padding-y * 2} ),
         button-padding-x: $kendo-input-lg-padding-y,
         button-padding-y: $kendo-input-lg-padding-y
     )

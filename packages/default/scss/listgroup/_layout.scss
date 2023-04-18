@@ -69,7 +69,7 @@
                 flex: 0 0 auto;
                 position: absolute;
                 top: 50%;
-                right: 0;
+                inset-inline-end: 0;
                 transform: translateY(-50%);
             }
         }
