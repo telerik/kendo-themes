@@ -236,7 +236,6 @@ The following table lists the available variables for customization.
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-sm-padding-y * 2} ),
         button-padding-x: k-map-get( $kendo-spacing, 1 ),
         button-padding-y: k-map-get( $kendo-spacing, 1 )
     ),
@@ -245,7 +244,6 @@ The following table lists the available variables for customization.
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-md-padding-y * 2} ),
         button-padding-x: k-map-get( $kendo-spacing, 1 ),
         button-padding-y: k-map-get( $kendo-spacing, 1 )
     ),
@@ -254,12 +252,11 @@ The following table lists the available variables for customization.
         padding-y: $kendo-input-lg-padding-y,
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-lg-padding-y * 2} ),
         button-padding-x: k-map-get( $kendo-spacing, 1 ),
         button-padding-y: k-map-get( $kendo-spacing, 1 )
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 16px, padding-y: 6px, font-size: 16px, line-height: 1.25, icon-size: calc( 16px + 12px ), button-padding-x: 4px, button-padding-y: 4px), md: (padding-x: 16px, padding-y: 8px, font-size: 16px, line-height: 1.25, icon-size: calc( 16px + 16px ), button-padding-x: 4px, button-padding-y: 4px), lg: (padding-x: 16px, padding-y: 8px, font-size: 16px, line-height: 1.5, icon-size: calc( 16px + 16px ), button-padding-x: 4px, button-padding-y: 4px))</code></td>
+    <td><code>(sm: (padding-x: 16px, padding-y: 6px, font-size: 16px, line-height: 1.25, button-padding-x: 4px, button-padding-y: 4px), md: (padding-x: 16px, padding-y: 8px, font-size: 16px, line-height: 1.25, button-padding-x: 4px, button-padding-y: 4px), lg: (padding-x: 16px, padding-y: 8px, font-size: 16px, line-height: 1.5, button-padding-x: 4px, button-padding-y: 4px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>

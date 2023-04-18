@@ -2413,23 +2413,23 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-width</td>
+    <td>$kendo-fab-icon-padding-x</td>
     <td>Number</td>
-    <td><code>24px</code></td>
-    <td><code>24px</code></td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-height</td>
+    <td>$kendo-fab-icon-padding-y</td>
     <td>Number</td>
-    <td><code>$kendo-fab-icon-width</code></td>
-    <td><code>24px</code></td>
+    <td><code>$kendo-fab-icon-padding-x</code></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon height.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -2525,8 +2525,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-fab-item-icon-padding-x</td>
     <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>k-map-get( $kendo-spacing, 2 ) + $kendo-fab-icon-padding-x</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon horizontal padding.</div></div>
@@ -2536,7 +2536,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-fab-item-icon-padding-y</td>
     <td>Number</td>
     <td><code>$kendo-fab-item-icon-padding-x</code></td>
-    <td><code>0.5rem</code></td>
+    <td><code>0.75rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon vertical padding.</div></div>
@@ -2560,26 +2560,6 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-width</td>
-    <td>Number</td>
-    <td><code>24px</code></td>
-    <td><code>24px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-height</td>
-    <td>Number</td>
-    <td><code>$kendo-fab-item-icon-width</code></td>
-    <td><code>24px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">height of the FAB item icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -3444,7 +3424,6 @@ The following table lists the available variables for customizing the Bootstrap 
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-sm-padding-y * 2} ),
         button-padding-x: $kendo-input-sm-padding-y,
         button-padding-y: $kendo-input-sm-padding-y
     ),
@@ -3453,7 +3432,6 @@ The following table lists the available variables for customizing the Bootstrap 
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-md-padding-y * 2} ),
         button-padding-x: $kendo-input-md-padding-y,
         button-padding-y: $kendo-input-md-padding-y
     ),
@@ -3462,12 +3440,11 @@ The following table lists the available variables for customizing the Bootstrap 
         padding-y: $kendo-input-lg-padding-y,
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-lg-padding-y * 2} ),
         button-padding-x: $kendo-input-lg-padding-y,
         button-padding-y: $kendo-input-lg-padding-y
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 0.5rem, padding-y: 0.25rem, font-size: 0.875rem, line-height: 1.4285714286, icon-size: calc( 16px + 0.5rem ), button-padding-x: 0.25rem, button-padding-y: 0.25rem), md: (padding-x: 0.75rem, padding-y: 0.375rem, font-size: 1rem, line-height: 1.5, icon-size: calc( 16px + 0.75rem ), button-padding-x: 0.375rem, button-padding-y: 0.375rem), lg: (padding-x: 1rem, padding-y: 0.5rem, font-size: 1rem, line-height: 1.5, icon-size: calc( 16px + 1rem ), button-padding-x: 0.5rem, button-padding-y: 0.5rem))</code></td>
+    <td><code>(sm: (padding-x: 0.5rem, padding-y: 0.25rem, font-size: 0.875rem, line-height: 1.4285714286, button-padding-x: 0.25rem, button-padding-y: 0.25rem), md: (padding-x: 0.75rem, padding-y: 0.375rem, font-size: 1rem, line-height: 1.5, button-padding-x: 0.375rem, button-padding-y: 0.375rem), lg: (padding-x: 1rem, padding-y: 0.5rem, font-size: 1rem, line-height: 1.5, button-padding-x: 0.5rem, button-padding-y: 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>
