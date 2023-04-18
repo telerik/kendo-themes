@@ -43,12 +43,12 @@ $kendo-fab-focus-outline-width: $kendo-button-focus-outline-width !default;
 /// @group floating-action-button
 $kendo-fab-focus-outline-style: $kendo-button-focus-outline-style !default;
 
-/// FAB icon width.
+/// Horizontal padding of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-width: 20px !default;
-/// FAB icon height.
+$kendo-fab-icon-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+/// Vertical padding of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-height: $kendo-fab-icon-width !default;
+$kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;
 /// FAB icon spacing.
 /// @group floating-action-button
 $kendo-fab-icon-spacing: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
@@ -97,10 +97,10 @@ $kendo-fab-item-focus-outline-style: $kendo-button-focus-outline-style !default;
 
 /// FAB item icon horizontal padding.
 /// @group floating-action-button
-$kendo-fab-item-icon-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-fab-item-icon-padding-x: map.get( $kendo-spacing, 2 ) + $kendo-fab-icon-padding-x !default;
 /// FAB item icon vertical padding.
 /// @group floating-action-button
-$kendo-fab-item-icon-padding-y: map.get( $kendo-spacing, 2 ) !default;
+$kendo-fab-item-icon-padding-y: $kendo-fab-item-icon-padding-x !default;
 /// Width of the FAB item icon border.
 /// @group floating-action-button
 $kendo-fab-item-icon-border-width: 1px !default;
@@ -110,12 +110,6 @@ $kendo-fab-item-icon-border-style: solid !default;
 /// Border radius of the FAB item icon.
 /// @group floating-action-button
 $kendo-fab-item-icon-border-radius: 50% !default;
-/// Width of the FAB item icon.
-/// @group floating-action-button
-$kendo-fab-item-icon-width: 20px !default;
-/// Height of the FAB item icon.
-/// @group floating-action-button
-$kendo-fab-item-icon-height: $kendo-fab-item-icon-width !default;
 
 /// Theme colors map for the FAB.
 /// @group floating-action-button

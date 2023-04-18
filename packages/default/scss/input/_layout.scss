@@ -226,6 +226,7 @@
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
+        box-sizing: content-box;
     }
 
     // Input with SVG icon
@@ -398,7 +399,6 @@
         $_padding-y: k-map-get( $size-props, padding-y );
         $_font-size: k-map-get( $size-props, font-size );
         $_line-height: k-map-get( $size-props, line-height );
-        $_icon-size: k-map-get( $size-props, icon-size );
         $_button-padding-x: k-map-get( $size-props, button-padding-x );
         $_button-padding-y: k-map-get( $size-props, button-padding-y );
 
@@ -436,8 +436,9 @@
             .k-input-prefix > .k-svg-icon,
             .k-input-suffix > .k-icon,
             .k-input-suffix > .k-svg-icon {
-                width: $_icon-size;
-                height: $_icon-size;
+                padding-block: $_padding-y;
+                padding-inline: $_padding-y;
+                box-sizing: content-box;
             }
 
             &.k-icon-picker .k-input-inner {

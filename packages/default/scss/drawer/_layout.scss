@@ -155,14 +155,24 @@
 
         .k-svg-icon,
         .k-icon {
-            height: auto;
-            font-size: $kendo-drawer-icon-size;
-            line-height: $kendo-drawer-item-line-height;
             flex-shrink: 0;
+            padding-inline: $kendo-drawer-icon-padding-x;
+            padding-block: $kendo-drawer-icon-padding-y;
+            box-sizing: content-box;
 
             &.k-i-none {
                 margin: 0;
             }
+        }
+
+        .k-icon {
+            height: auto;
+            font-size: $kendo-drawer-icon-size;
+        }
+
+        .k-svg-icon {
+            width: $kendo-drawer-icon-size;
+            height: $kendo-drawer-icon-size;
         }
 
         .k-item-text {
