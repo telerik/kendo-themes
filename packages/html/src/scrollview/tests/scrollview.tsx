@@ -27,7 +27,7 @@ root.render(
             <span>Normal</span>
             <span>Dark mode</span>
 
-            <div className="k-widget k-scrollview k-scrollview-light">
+            <div className="k-scrollview k-scrollview-light">
                 <div className="k-scrollview-wrap" style={{ transform: "translateX(0px)" }}>
                     <div>
                     </div>
@@ -55,7 +55,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-scrollview">
+            <div className="k-scrollview">
                 <div className="k-scrollview-wrap" style={{ transform: "translateX(0px)" }}>
                     <div>
                     </div>
@@ -87,7 +87,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-scrollview k-scrollview-dark">
+            <div className="k-scrollview k-scrollview-dark">
                 <div className="k-scrollview-wrap" style={{ transform: "translateX(0px)" }}>
                     <div>
                     </div>
@@ -112,6 +112,38 @@ root.render(
                             <li className="k-link"></li>
                             <li className="k-link" style={{ transform: "scale(0.65)" }}></li>
                             <li className="k-link" style={{ transform: "scale(0.5)" }}></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <span>RTL</span>
+            <span></span>
+            <span></span>
+
+            <div className="k-scrollview k-rtl">
+                <div className="k-scrollview-wrap" style={{ transform: "translateX(0px)" }}>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div className="k-scrollview-elements">
+                    <a className="k-scrollview-prev">
+                        <Icon icon="chevron-left"></Icon>
+                    </a>
+                    <a className="k-scrollview-next">
+                        <Icon icon="chevron-right"></Icon>
+                    </a>
+                    <div className="k-scrollview-nav-wrap">
+                        <ul className="k-scrollview-nav">
+                            <li className="k-link"></li>
+                            <li className="k-link k-primary"></li>
+                            <li className="k-link k-primary k-focus"></li>
+                            <li className="k-link k-focus"></li>
+                            <li className="k-link"></li>
                         </ul>
                     </div>
                 </div>
