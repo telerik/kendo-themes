@@ -60,7 +60,6 @@ jobs:
           npm run docs
 
       - name: Lerna publish
-        run: |
-          npx lerna publish --canary --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
+        run: npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
