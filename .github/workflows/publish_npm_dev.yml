@@ -63,3 +63,10 @@ jobs:
         run: npx lerna publish --conventional-commits --conventional-prerelease --create-release github --preid dev --dist-tag dev --allow-branch develop --force-publish --exact --yes
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Mark checks as successful
+        run: |
+          commit=$(git rev-parse HEAD)
+          ./build/mark-checks.sh $commit
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
