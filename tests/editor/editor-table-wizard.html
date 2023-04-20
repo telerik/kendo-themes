@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Editor Table Wizard</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        .k-window {
+            width: 100%;
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <section>
+            <div class="k-editor-window k-editor-table-wizard-window k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Table properties</span>
+                    <div class="k-window-titlebar-actions">
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-minimize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-maximize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-window-content">
+                    <div class="k-tabstrip k-tabstrip-top">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-tabstrip-items k-reset">
+                                <li class="k-item k-first k-active">
+                                    <span class="k-link">General</span>
+                                </li>
+                                <li class="k-item k-last">
+                                    <span class="k-link">Advanced</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <div class="k-form k-form-md">
+                                <fieldset class="k-form-fieldset">
+                                    <div class="k-form-layout k-d-grid k-grid-cols-4 k-gap-x-4">
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Rows</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="3">
+                                                    <span class="k-clear-value">
+                                                        <span class="k-icon k-i-x"></span>
+                                                    </span>
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Columns</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="4">
+                                                    <span class="k-clear-value">
+                                                        <span class="k-icon k-i-x"></span>
+                                                    </span>
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-1">
+                                            <label class="k-label k-form-label">Width</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-1">
+                                            <label class="k-label k-form-label">&nbsp;</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">%</span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-1">
+                                            <label class="k-label k-form-label">Height</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Auto" autocomplete="off" value="">
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-1">
+                                            <label class="k-label k-form-label">&nbsp;</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">px</span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Position</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-prefix">
+                                                        <span class="k-icon k-i-table-position-start"></span>
+                                                    </span>
+                                                    <span class="k-input-inner">Left</span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Alignment</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-prefix">
+                                                        <span class="k-icon k-i-table-align-middle-left"></span>
+                                                    </span>
+                                                    <span class="k-input-inner">Middle Left</span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Cell spacing</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Auto" autocomplete="off" value="">
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Cell padding</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Auto" autocomplete="off" value="">
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-full">
+                                            <label class="k-label k-form-label">Table background</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-value-icon k-color-preview k-no-color">
+                                                            <span class="k-color-preview-mask"></span>
+                                                        </span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-1">
+                                            <label class="k-label k-form-label">Border width</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                                                    <span class="k-clear-value">
+                                                        <span class="k-icon k-i-x"></span>
+                                                    </span>
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-1">
+                                            <label class="k-label k-form-label">Border color</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-value-icon k-color-preview k-no-color">
+                                                            <span class="k-color-preview-mask"></span>
+                                                        </span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Border style</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Solid</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-full">
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
+                                                <label class="k-checkbox-label">Collapse borders</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-text">Save</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Cancel</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-editor-window k-editor-table-wizard-window k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Table properties</span>
+                    <div class="k-window-titlebar-actions">
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-minimize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-maximize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-window-content">
+                    <div class="k-tabstrip k-tabstrip-top">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-tabstrip-items k-reset">
+                                <li class="k-item k-first">
+                                    <span class="k-link">General</span>
+                                </li>
+                                <li class="k-item k-last k-active">
+                                    <span class="k-link">Advanced</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-active">
+                            <div class="k-form k-form-md k-form-vertical">
+                                <div class="k-form-field">
+                                    <label class="k-label k-form-label">ID<span class="k-label-optional">(Optional)</span>
+                                    </label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field">
+                                    <label class="k-label k-form-label">CSS class<span class="k-label-optional">(Optional)</span>
+                                    </label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <fieldset class="k-form-fieldset">
+                                    <legend class="k-form-legend">Accessibility</legend>
+                                    <div class="k-d-grid k-grid-cols-4 k-gap-x-4">
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Caption<span class="k-label-optional">(Optional)</span>
+                                            </label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Caption alignment</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-prefix">
+                                                        <span class="k-icon k-i-table-align-middle-left"></span>
+                                                    </span>
+                                                    <span class="k-input-inner">Middle Left</span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-1">
+                                            <label class="k-label k-form-label">Header rows</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="0">
+                                                    <span class="k-clear-value">
+                                                        <span class="k-icon k-i-x"></span>
+                                                    </span>
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-1">
+                                            <label class="k-label k-form-label">Header cols</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="0">
+                                                    <span class="k-clear-value">
+                                                        <span class="k-icon k-i-x"></span>
+                                                    </span>
+                                                    <span class="k-spin-button k-input-spinner">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-2">
+                                            <label class="k-label k-form-label">Associate headers</label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Using 'scope' attribu...</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="k-form-field k-col-span-full">
+                                            <label class="k-label k-form-label">Summary<span class="k-label-optional">(Optional)</span>
+                                            </label>
+                                            <div class="k-form-field-wrap">
+                                                <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                                                    <textarea class="!k-overflow-auto k-input-inner" placeholder="Summary attribute is not HTML5 compatible" rows="3"></textarea>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-text">Save</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Cancel</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-editor-window k-editor-table-wizard-window k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Cell properties</span>
+                    <div class="k-window-titlebar-actions">
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-minimize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-maximize"></span>
+                        </button>
+                        <button class="k-window-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="k-window-content">
+                    <div class="k-form k-form-md">
+                        <fieldset class="k-form-fieldset">
+                            <div class="k-form-layout k-d-grid k-grid-cols-4 k-gap-x-4">
+                                <div class="k-form-field k-col-span-full">
+                                    <label class="k-label k-form-label k-label-empty"> </label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-checkbox-wrap">
+                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                        </span>
+                                        <label class="k-checkbox-label">Apply to all cells</label>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-1">
+                                    <label class="k-label k-form-label">Width</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                            <span class="k-spin-button k-input-spinner">
+                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                </button>
+                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                </button>
+                                            </span>
+                                        </span>
+                                        <div class="k-form-hint">apply to column</div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-1">
+                                    <label class="k-label k-form-label">&nbsp;</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">px</span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-1">
+                                    <label class="k-label k-form-label">Height</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="Auto" autocomplete="off" value="">
+                                            <span class="k-spin-button k-input-spinner">
+                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                </button>
+                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                </button>
+                                            </span>
+                                        </span>
+                                        <div class="k-form-hint">apply to row</div>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-1">
+                                    <label class="k-label k-form-label">&nbsp;</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">px</span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-2">
+                                    <label class="k-label k-form-label">Alignment</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-prefix">
+                                                <span class="k-icon k-i-table-align-middle-left"></span>
+                                            </span>
+                                            <span class="k-input-inner">Middle Left</span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-2">
+                                    <label class="k-label k-form-label">Text control</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-prefix">
+                                                <span class="k-icon k-i-text-wrap"></span>
+                                            </span>
+                                            <span class="k-input-inner">Wrap</span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-2">
+                                    <label class="k-label k-form-label">Cell spacing</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="Auto" autocomplete="off" value="">
+                                            <span class="k-spin-button k-input-spinner">
+                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                </button>
+                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                </button>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-2">
+                                    <label class="k-label k-form-label">Cell padding</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="Auto" autocomplete="off" value="">
+                                            <span class="k-spin-button k-input-spinner">
+                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                </button>
+                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                </button>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-1">
+                                    <label class="k-label k-form-label">Border width</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1">
+                                            <span class="k-clear-value">
+                                                <span class="k-icon k-i-x"></span>
+                                            </span>
+                                            <span class="k-spin-button k-input-spinner">
+                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                </button>
+                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                </button>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-1">
+                                    <label class="k-label k-form-label">Border color</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-value-icon k-color-preview k-no-color">
+                                                    <span class="k-color-preview-mask"></span>
+                                                </span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-2">
+                                    <label class="k-label k-form-label">Border style</label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">Solid</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-full">
+                                    <label class="k-label k-form-label">ID<span class="k-label-optional">(Optional)</span>
+                                    </label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="k-form-field k-col-span-full">
+                                    <label class="k-label k-form-label">CSS class<span class="k-label-optional">(Optional)</span>
+                                    </label>
+                                    <div class="k-form-field-wrap">
+                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="k-actions k-actions-start k-actions-horizontal k-window-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-text">Save</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Cancel</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
