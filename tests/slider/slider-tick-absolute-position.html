@@ -24,35 +24,53 @@
             --kendo-slider-start: 20;
             --kendo-slider-end: 60;
         }
+        .k-slider-items {
+            position: relative;
+        }
+        .k-slider-horizontal .k-slider-track .k-slider-selection {
+            width: 33%;
+        }
+        .k-slider-horizontal .k-slider-track .k-draghandle-end {
+            left: 33%;
+            z-index: 1;
+        }
+        .k-slider-vertical .k-slider-track .k-slider-selection {
+            bottom: 0;
+            height: 33%;
+        }
+        .k-slider-vertical .k-slider-track .k-draghandle-end {
+            bottom: 33%;
+            z-index: 1;
+        }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-4">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
-            <div class="k-widget k-slider k-slider-horizontal">
+            <div class="k-slider k-slider-horizontal">
                 <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
                     <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
                 </button>
                 <div class="k-slider-track-wrap">
-                    <ul class="k-reset k-slider-items" style="position: relative;">
-                        <li class="k-tick k-tick-large k-tick-horizontal" style="z-index: 1; position: absolute; left: 0%;">
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-horizontal k-tick-large" style="z-index: 1; position: absolute; left: 0%;">
                             <span class="k-label">0</span>
                         </li>
-                        <li class="k-tick k-tick-large k-tick-horizontal" style="z-index: 1; position: absolute; left: 33%;">
+                        <li class="k-tick k-tick-horizontal k-tick-large" style="z-index: 1; position: absolute; left: 33%;">
                             <span class="k-label">33</span>
                         </li>
-                        <li class="k-tick k-tick-large k-tick-horizontal" style="z-index: 1; position: absolute; left: 50%;">
+                        <li class="k-tick k-tick-horizontal k-tick-large" style="z-index: 1; position: absolute; left: 50%;">
                             <span class="k-label">50</span>
                         </li>
-                        <li class="k-tick k-tick-large k-tick-horizontal" style="z-index: 1; position: absolute; left: 75%;">
+                        <li class="k-tick k-tick-horizontal k-tick-large" style="z-index: 1; position: absolute; left: 75%;">
                             <span class="k-label">75</span>
                         </li>
-                        <li class="k-tick k-tick-large k-tick-horizontal" style="z-index: 1; position: absolute; left: 100%;">
+                        <li class="k-tick k-tick-horizontal k-tick-large" style="z-index: 1; position: absolute; left: 100%;">
                             <span class="k-label">100</span>
                         </li>
                     </ul>
                     <div class="k-slider-track">
-                        <div class="k-slider-selection" style="width: 33%;"></div>
-                        <a href="#" class="k-draghandle k-draghandle-end" style="left: 33%; z-index: 1;"></a>
+                        <div class="k-slider-selection"></div>
+                        <span class="k-draghandle k-draghandle-end"></span>
                     </div>
                 </div>
                 <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
@@ -60,32 +78,32 @@
                 </button>
             </div>
         </section>
-        <section>
-            <div class="k-widget k-slider k-slider-vertical">
+        <section style="justify-self: center;">
+            <div class="k-slider k-slider-vertical">
                 <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
                     <span class="k-button-icon k-icon k-i-caret-alt-down"></span>
                 </button>
                 <div class="k-slider-track-wrap">
-                    <ul class="k-reset k-slider-items" style="position: relative;">
-                        <li class="k-tick k-tick-large k-tick-vertical" style="z-index: 1; position: absolute; bottom: 100%;">
-                            <span class="k-label">100</span>
+                    <ul class="k-reset k-slider-items">
+                        <li class="k-tick k-tick-vertical k-tick-large" style="z-index: 1; position: absolute; bottom: 0%;">
+                            <span class="k-label">0</span>
                         </li>
-                        <li class="k-tick k-tick-large k-tick-vertical" style="z-index: 1; position: absolute; bottom: 75%;">
-                            <span class="k-label">75</span>
-                        </li>
-                        <li class="k-tick k-tick-large k-tick-vertical" style="z-index: 1; position: absolute; bottom: 50%;">
-                            <span class="k-label">50</span>
-                        </li>
-                        <li class="k-tick k-tick-large k-tick-vertical" style="z-index: 1; position: absolute; bottom: 33%;">
+                        <li class="k-tick k-tick-vertical k-tick-large" style="z-index: 1; position: absolute; bottom: 33%;">
                             <span class="k-label">33</span>
                         </li>
-                        <li class="k-tick k-tick-large k-tick-vertical" style="z-index: 1; position: absolute; bottom: 0px;">
-                            <span class="k-label">0</span>
+                        <li class="k-tick k-tick-vertical k-tick-large" style="z-index: 1; position: absolute; bottom: 50%;">
+                            <span class="k-label">50</span>
+                        </li>
+                        <li class="k-tick k-tick-vertical k-tick-large" style="z-index: 1; position: absolute; bottom: 75%;">
+                            <span class="k-label">75</span>
+                        </li>
+                        <li class="k-tick k-tick-vertical k-tick-large" style="z-index: 1; position: absolute; bottom: 100%;">
+                            <span class="k-label">100</span>
                         </li>
                     </ul>
                     <div class="k-slider-track">
-                        <div class="k-slider-selection" style="bottom: 0px; height: 33%;"></div>
-                        <a href="#" class="k-draghandle k-draghandle-end" style="bottom: 33%; z-index: 1;"></a>
+                        <div class="k-slider-selection"></div>
+                        <span class="k-draghandle k-draghandle-end"></span>
                     </div>
                 </div>
                 <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
