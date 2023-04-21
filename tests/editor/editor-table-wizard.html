@@ -315,30 +315,11 @@
                             </ul>
                         </div>
                         <div class="k-tabstrip-content k-active">
-                            <div class="k-form k-form-md k-form-vertical">
-                                <div class="k-form-field">
-                                    <label class="k-label k-form-label">ID<span class="k-label-optional">(Optional)</span>
-                                    </label>
-                                    <div class="k-form-field-wrap">
-                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="k-form-field">
-                                    <label class="k-label k-form-label">CSS class<span class="k-label-optional">(Optional)</span>
-                                    </label>
-                                    <div class="k-form-field-wrap">
-                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="k-form k-form-md">
                                 <fieldset class="k-form-fieldset">
-                                    <legend class="k-form-legend">Accessibility</legend>
-                                    <div class="k-d-grid k-grid-cols-4 k-gap-x-4">
-                                        <div class="k-form-field k-col-span-2">
-                                            <label class="k-label k-form-label">Caption<span class="k-label-optional">(Optional)</span>
+                                    <div class="k-form-layout k-d-grid">
+                                        <div class="k-form-field">
+                                            <label class="k-label k-form-label">ID<span class="k-label-optional">(Optional)</span>
                                             </label>
                                             <div class="k-form-field-wrap">
                                                 <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
@@ -346,80 +327,103 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="k-form-field k-col-span-2">
-                                            <label class="k-label k-form-label">Caption alignment</label>
-                                            <div class="k-form-field-wrap">
-                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
-                                                    <span class="k-input-prefix">
-                                                        <span class="k-icon k-i-table-align-middle-left"></span>
-                                                    </span>
-                                                    <span class="k-input-inner">Middle Left</span>
-                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
-                                                    </button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="k-form-field k-col-span-1">
-                                            <label class="k-label k-form-label">Header rows</label>
-                                            <div class="k-form-field-wrap">
-                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
-                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="0">
-                                                    <span class="k-clear-value">
-                                                        <span class="k-icon k-i-x"></span>
-                                                    </span>
-                                                    <span class="k-spin-button k-input-spinner">
-                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
-                                                        </button>
-                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
-                                                        </button>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="k-form-field k-col-span-1">
-                                            <label class="k-label k-form-label">Header cols</label>
-                                            <div class="k-form-field-wrap">
-                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
-                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="0">
-                                                    <span class="k-clear-value">
-                                                        <span class="k-icon k-i-x"></span>
-                                                    </span>
-                                                    <span class="k-spin-button k-input-spinner">
-                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
-                                                        </button>
-                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
-                                                        </button>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="k-form-field k-col-span-2">
-                                            <label class="k-label k-form-label">Associate headers</label>
-                                            <div class="k-form-field-wrap">
-                                                <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
-                                                    <span class="k-input-inner">
-                                                        <span class="k-input-value-text">Using 'scope' attribu...</span>
-                                                    </span>
-                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
-                                                    </button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="k-form-field k-col-span-full">
-                                            <label class="k-label k-form-label">Summary<span class="k-label-optional">(Optional)</span>
+                                        <div class="k-form-field">
+                                            <label class="k-label k-form-label">CSS class<span class="k-label-optional">(Optional)</span>
                                             </label>
                                             <div class="k-form-field-wrap">
-                                                <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
-                                                    <textarea class="!k-overflow-auto k-input-inner" placeholder="Summary attribute is not HTML5 compatible" rows="3"></textarea>
+                                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
                                                 </span>
                                             </div>
                                         </div>
+                                        <fieldset class="k-form-fieldset">
+                                            <legend class="k-form-legend">Accessibility</legend>
+                                            <div class="k-d-grid k-grid-cols-4 k-gap-x-4">
+                                                <div class="k-form-field k-col-span-2">
+                                                    <label class="k-label k-form-label">Caption<span class="k-label-optional">(Optional)</span>
+                                                    </label>
+                                                    <div class="k-form-field-wrap">
+                                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="k-form-field k-col-span-2">
+                                                    <label class="k-label k-form-label">Caption alignment</label>
+                                                    <div class="k-form-field-wrap">
+                                                        <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                            <span class="k-input-prefix">
+                                                                <span class="k-icon k-i-table-align-middle-left"></span>
+                                                            </span>
+                                                            <span class="k-input-inner">Middle Left</span>
+                                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="k-form-field k-col-span-1">
+                                                    <label class="k-label k-form-label">Header rows</label>
+                                                    <div class="k-form-field-wrap">
+                                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="0">
+                                                            <span class="k-clear-value">
+                                                                <span class="k-icon k-i-x"></span>
+                                                            </span>
+                                                            <span class="k-spin-button k-input-spinner">
+                                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                                </button>
+                                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                                </button>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="k-form-field k-col-span-1">
+                                                    <label class="k-label k-form-label">Header cols</label>
+                                                    <div class="k-form-field-wrap">
+                                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="0">
+                                                            <span class="k-clear-value">
+                                                                <span class="k-icon k-i-x"></span>
+                                                            </span>
+                                                            <span class="k-spin-button k-input-spinner">
+                                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                                </button>
+                                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                                </button>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="k-form-field k-col-span-2">
+                                                    <label class="k-label k-form-label">Associate headers</label>
+                                                    <div class="k-form-field-wrap">
+                                                        <span class="k-dropdownlist k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                            <span class="k-input-inner">
+                                                                <span class="k-input-value-text">Using 'scope' attribu...</span>
+                                                            </span>
+                                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="k-form-field k-col-span-full">
+                                                    <label class="k-label k-form-label">Summary<span class="k-label-optional">(Optional)</span>
+                                                    </label>
+                                                    <div class="k-form-field-wrap">
+                                                        <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                                                            <textarea class="!k-overflow-auto k-input-inner" placeholder="Summary attribute is not HTML5 compatible" rows="3"></textarea>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
                                     </div>
                                 </fieldset>
                             </div>
