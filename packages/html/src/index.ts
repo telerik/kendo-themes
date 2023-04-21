@@ -31,12 +31,14 @@ export * from './checkbox/index';
 export * from './radio/index';
 // export * from './listbox/index';
 // export * from './progressbar/index';
-// export * from './slider/index';
+export * from './slider/index';
 
 // Augmented inputs
 export * from './floating-label/index';
 export * from './autocomplete/index';
 export * from './colorpalette/index';
+export * from './colorgradient/index';
+export * from './coloreditor/index';
 export * from './captcha/index';
 export * from './colorpicker/index';
 export * from './combobox/index';
@@ -75,7 +77,7 @@ export * from './window/index';
 
 // Navigation
 export * from './appbar/index';
-// export * from './bottom-nav/index';
+export * from './bottom-nav/index';
 // export * from './breadcrumb/index';
 export * from './pager/index';
 // export * from './stepper/index';
@@ -85,7 +87,7 @@ export * from './treeview/index';
 
 // Layout & containers
 export * from './card/index';
-// export * from './expander/index';
+export * from './expansion-panel/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';
 // export * from './tile-layout/index';

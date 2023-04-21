@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
 import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
@@ -11,26 +12,21 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <div id="scheduler" className="k-widget k-scheduler">
                 <Toolbar className="k-scheduler-toolbar">
-                    <span className="k-button-group k-scheduler-navigation">
+                    <ButtonGroup className="k-scheduler-navigation">
                         <Button>Today</Button>
                         <Button icon="caret-alt-left"></Button>
                         <Button icon="caret-alt-right"></Button>
-                    </span>
+                    </ButtonGroup>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         2021
                     </Button>
                     <span className="k-spacer"></span>
-                    <span className="k-scheduler-views-wrapper">
-                        <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
-                            <option>Year</option>
-                        </select>
-                        <span className="k-button-group k-scheduler-views">
-                            <Button>Day</Button>
-                            <Button>Week</Button>
-                            <Button>Month</Button>
-                            <Button selected>Year</Button>
-                        </span>
-                    </span>
+                    <ButtonGroup className="k-scheduler-views">
+                        <Button>Day</Button>
+                        <Button>Week</Button>
+                        <Button>Month</Button>
+                        <Button selected>Year</Button>
+                    </ButtonGroup>
                 </Toolbar>
 
                 <div className="k-scheduler-layout k-scheduler-layout-flex k-scheduler-yearview">
