@@ -508,24 +508,6 @@
             }
         }
 
-        // Generic widgets
-        .k-numerictextbox {
-            width: 10em;
-
-            & + .k-dropdown-list {
-                width: 5em;
-            }
-
-            & + .k-color-picker,
-            & + .k-dropdown-list {
-                margin-left: k-map-get( $kendo-spacing, 2 );
-            }
-        }
-
-        .k-color-picker {
-            vertical-align: middle;
-        }
-
         .k-edit-field > .k-checkbox {
             position: relative; // fix scrolling
         }
