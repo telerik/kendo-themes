@@ -1,0 +1,25 @@
+/// This is equivalent to `background-size: auto;`.
+/// @example background-size: auto;
+/// @name .k-bg-auto
+/// @group background-size
+/// @contextType css
+
+/// This is equivalent to `background-size: cover;`.
+/// @example background-size: cover;
+/// @name .k-bg-cover
+/// @group background-size
+/// @contextType css
+
+/// This is equivalent to `background-size: contain;`.
+/// @example background-size: contain;
+/// @name .k-bg-contain
+/// @group background-size
+/// @contextType css
+
+@mixin kendo-utils--background--background-size() {
+
+    // Background size utility classes
+    $kendo-utils-background-size: k-map-get( $kendo-utils, "background-size" ) !default;
+    @include generate-utils( bg, background-size, $kendo-utils-background-size );
+
+}

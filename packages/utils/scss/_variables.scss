@@ -765,6 +765,22 @@ $kendo-utils: (
         "black": black,
         "white": white
     )),
+    "background-position": (
+        center: center,
+        top: top,
+        right: right,
+        bottom: bottom,
+        left: left,
+        top-left: top left,
+        top-right: top right,
+        bottom-left: bottom left,
+        bottom-right: bottom right
+    ),
+    "background-size": (
+        auto,
+        cover,
+        contain
+    ),
 
     // Border
     "border-width": (

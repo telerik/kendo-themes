@@ -419,6 +419,90 @@ This is equivalent to `background-color: white;`.
 
 
 
+### `.k-bg-center`
+
+This is equivalent to `background-position: center;`.
+
+
+
+
+### `.k-bg-top`
+
+This is equivalent to `background-position: top;`.
+
+
+
+
+### `.k-bg-right`
+
+This is equivalent to `background-position: right;`.
+
+
+
+
+### `.k-bg-bottom`
+
+This is equivalent to `background-position: bottom;`.
+
+
+
+
+### `.k-bg-left`
+
+This is equivalent to `background-position: left;`.
+
+
+
+
+### `.k-bg-top-left`
+
+This is equivalent to `background-position: top left;`.
+
+
+
+
+### `.k-bg-top-right`
+
+This is equivalent to `background-position: top right;`.
+
+
+
+
+### `.k-bg-bottom-left`
+
+This is equivalent to `background-position: bottom left;`.
+
+
+
+
+### `.k-bg-bottom-right`
+
+This is equivalent to `background-position: bottom right;`.
+
+
+
+
+### `.k-bg-auto`
+
+This is equivalent to `background-size: auto;`.
+
+
+
+
+### `.k-bg-cover`
+
+This is equivalent to `background-size: cover;`.
+
+
+
+
+### `.k-bg-contain`
+
+This is equivalent to `background-size: contain;`.
+
+
+
+
 ### `.k-border-collapse`
 
 This is equivalent to `border-collapse: collapse;`.
