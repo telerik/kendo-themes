@@ -140,7 +140,7 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" orientation="vertical">
+                            <Form tag="div" layout="grid">
                                 <FormField label="ID" optional editor={ <Textbox /> } />
                                 <FormField label="CSS class" optional editor={ <Textbox /> } />
                                 <Fieldset legend="Accessibility">
