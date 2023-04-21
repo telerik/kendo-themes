@@ -43,8 +43,8 @@ root.render(
                 </ActionSheet>
             </section>
 
-            <section>
-                <ActionSheet title="Header" className="k-rtl">
+            <section className="k-rtl">
+                <ActionSheet title="Header">
                     <ActionSheetItems>
                         <ActionSheetItem text="Action" description="Action description" iconName="cog" />
                         <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
