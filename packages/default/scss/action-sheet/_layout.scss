@@ -189,7 +189,7 @@
         border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
         border-top-width: if( $kendo-actionsheet-border-width, 0, null );
         top: 0;
-        left: 50%;
+        inset-inline-start: 50%;
         transform: translateX( -50% );
     }
     .k-actionsheet-bottom {
@@ -197,7 +197,7 @@
         border-width: if( $kendo-actionsheet-border-width, $kendo-actionsheet-border-width, null );
         border-bottom-width: if( $kendo-actionsheet-border-width, 0, null );
         bottom: 0;
-        left: 50%;
+        inset-inline-start: 50%;
         transform: translateX( -50% );
     }
     .k-actionsheet-left {
@@ -353,6 +353,15 @@
 
         .k-actionsheet-action {
             align-items: center;
+        }
+    }
+
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        .k-actionsheet-top,
+        .k-actionsheet-bottom {
+            transform: translateX( 50% );
         }
     }
 
