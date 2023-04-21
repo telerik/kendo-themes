@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
+import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
 
@@ -20,28 +21,23 @@ root.render(
             <div className="k-widget k-scheduler k-rtl" dir="rtl">
                 <Toolbar className="k-scheduler-toolbar">
                     <div className="k-toolbar-group">
-                        <div className="k-scheduler-navigation">
-                            <div className="k-button-group">
-                                <Button>Today</Button>
-                                <Button icon="caret-alt-left"></Button>
-                                <Button icon="caret-alt-right"></Button>
-                            </div>
-                        </div>
+                        <ButtonGroup className="k-scheduler-navigation">
+                            <Button>Today</Button>
+                            <Button icon="caret-alt-left"></Button>
+                            <Button icon="caret-alt-right"></Button>
+                        </ButtonGroup>
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                             Sunday, June 23, 2019 - Saturday, June 29, 2019
                         </Button>
                     </div>
                     <span className="k-spacer"></span>
-                    <div className="k-scheduler-views-wrapper">
-                        <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md"></select>
-                        <div className="k-scheduler-views k-button-group">
-                            <Button>Day</Button>
-                            <Button>Week</Button>
-                            <Button>Month</Button>
-                            <Button>Timeline</Button>
-                            <Button selected>Agenda</Button>
-                        </div>
-                    </div>
+                    <ButtonGroup className="k-scheduler-views">
+                        <Button>Day</Button>
+                        <Button>Week</Button>
+                        <Button>Month</Button>
+                        <Button>Timeline</Button>
+                        <Button selected>Agenda</Button>
+                    </ButtonGroup>
                 </Toolbar>
                 <div>
                     <table className="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda">

@@ -240,21 +240,9 @@
     // Scheduler navigation
     .k-scheduler-navigation {}
 
-
-    // View switcher
-    .k-scheduler-views-wrapper {
-
-        // Views dropdown
-        .k-views-dropdown {
-            width: auto;
-            font: inherit;
-            display: none;
-        }
-
-        @media (max-width: 1024px) {
-            .k-scheduler-views { display: none; }
-            .k-views-dropdown { display: inline-block; }
-        }
+    .k-scheduler-toolbar .k-views-dropdown {
+        width: auto;
+        font: inherit;
     }
 
 

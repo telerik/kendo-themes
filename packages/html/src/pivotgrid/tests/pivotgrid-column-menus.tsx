@@ -44,7 +44,9 @@ root.render(
                                     <div className="k-columnmenu-item">
                                         <Icon name="grid-layout" />Include Fields
                                         <span className="k-spacer"></span>
-                                        <Icon className="k-expander-indicator" name="arrow-chevron-down" />
+                                        <span className="k-expander-indicator">
+                                            <Icon name="arrow-chevron-down" />
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +55,9 @@ root.render(
                                     <div className="k-columnmenu-item">
                                         <Icon name="filter" />Filter Fields
                                         <span className="k-spacer"></span>
-                                        <Icon className="k-expander-indicator" name="arrow-chevron-down" />
+                                        <span className="k-expander-indicator">
+                                            <Icon name="arrow-chevron-down" />
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +83,9 @@ root.render(
                                     <div className="k-columnmenu-item">
                                         <Icon name="grid-layout" />Include Fields
                                         <span className="k-spacer"></span>
-                                        <Icon className="k-expander-indicator" name="arrow-chevron-up" />
+                                        <span className="k-expander-indicator">
+                                            <Icon name="arrow-chevron-up" />
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-content k-columns-item" style={{ width: '100%', height: 'auto', overflow: 'hidden' }}>
@@ -146,7 +152,9 @@ root.render(
                                     <div className="k-columnmenu-item">
                                         <Icon name="filter" />Filter Fields
                                         <span className="k-spacer"></span>
-                                        <Icon className="k-expander-indicator" name="arrow-chevron-down" />
+                                        <span className="k-expander-indicator">
+                                            <Icon name="arrow-chevron-down" />
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +180,9 @@ root.render(
                                     <div className="k-columnmenu-item">
                                         <Icon name="grid-layout" />Include Fields
                                         <span className="k-spacer"></span>
-                                        <Icon className="k-expander-indicator" name="arrow-chevron-up" />
+                                        <span className="k-expander-indicator">
+                                            <Icon name="arrow-chevron-up" />
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-content" style={{ width: '100%', height: 'auto', overflow: 'hidden' }}>
@@ -210,7 +220,9 @@ root.render(
                                     <div className="k-columnmenu-item">
                                         <Icon name="filter" />Filter Fields
                                         <span className="k-spacer"></span>
-                                        <Icon className="k-expander-indicator" name="arrow-chevron-down" />
+                                        <span className="k-expander-indicator">
+                                            <Icon name="arrow-chevron-down" />
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -236,7 +248,9 @@ root.render(
                                     <div className="k-columnmenu-item">
                                         <Icon name="grid-layout" />Include Fields
                                         <span className="k-spacer"></span>
-                                        <Icon className="k-expander-indicator" name="arrow-chevron-down" />
+                                        <span className="k-expander-indicator">
+                                            <Icon name="arrow-chevron-down" />
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +259,9 @@ root.render(
                                     <div className="k-columnmenu-item">
                                         <Icon name="filter" />Filter Fields
                                         <span className="k-spacer"></span>
-                                        <Icon className="k-expander-indicator" name="arrow-chevron-up" />
+                                        <span className="k-expander-indicator">
+                                            <Icon name="arrow-chevron-up" />
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-content">

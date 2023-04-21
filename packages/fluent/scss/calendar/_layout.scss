@@ -86,8 +86,8 @@
     .k-calendar-th {
         padding-inline: var( --kendo-calendar-header-cell-padding-x, #{$kendo-calendar-header-cell-padding-x} );
         padding-block: var( --kendo-calendar-header-cell-padding-y, #{$kendo-calendar-header-cell-padding-y} );
-        width: var( --kendo-calendar-header-cell-width, #{$kendo-calendar-header-cell-width} );
-        height: var( --kendo-calendar-header-cell-height, #{$kendo-calendar-header-cell-height} );
+        inline-size: var( --INTERNAL--kendo-calendar-cell-size, var( --kendo-calendar-header-cell-width, #{$kendo-calendar-header-cell-width} ) );
+        block-size: var( --INTERNAL--kendo-calendar-cell-size, var( --kendo-calendar-header-cell-height, #{$kendo-calendar-header-cell-height} ) );
         font-size: var( --kendo-calendar-header-cell-font-size, #{$kendo-calendar-header-cell-font-size} );
         line-height: var( --kendo-calendar-header-cell-line-height, #{$kendo-calendar-header-cell-line-height} );
         text-transform: uppercase;
