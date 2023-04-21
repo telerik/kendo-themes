@@ -1158,6 +1158,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-column-menu-max-width</td>
+    <td></td>
+    <td><code>320px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Max width of the grid column menu.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-column-menu-spacing</td>
     <td></td>
     <td><code>map.get( $kendo-spacing, 2 )</code></td>
