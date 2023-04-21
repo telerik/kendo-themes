@@ -63,6 +63,9 @@
     // Expand / collapse icon
     .k-expander-indicator {
         margin-inline-start: var( --kendo-expander-indicator-margin-x, #{$kendo-expander-indicator-margin-x} );
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     // Expander content

@@ -473,7 +473,7 @@
                 );
             }
 
-            .k-expander-indicator {
+            .k-expander-indicator > .k-icon {
                 @include fill(
                     var( --kendo-grid-column-menu-item-text, #{$kendo-grid-column-menu-item-text} )
                 );

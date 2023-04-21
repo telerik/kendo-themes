@@ -76,7 +76,7 @@ export * from './window/index';
 
 // Navigation
 export * from './appbar/index';
-// export * from './bottom-nav/index';
+export * from './bottom-nav/index';
 // export * from './breadcrumb/index';
 export * from './pager/index';
 // export * from './stepper/index';
@@ -86,7 +86,7 @@ export * from './treeview/index';
 
 // Layout & containers
 export * from './card/index';
-// export * from './expander/index';
+export * from './expansion-panel/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';
 // export * from './tile-layout/index';
