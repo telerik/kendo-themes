@@ -218,7 +218,7 @@
         border-width: var( --kendo-actionsheet-border-width, #{$kendo-actionsheet-border-width} );
         border-top-width: 0;
         top: 0;
-        left: 50%;
+        inset-inline-start: 50%;
         transform: translateX( -50% );
     }
 
@@ -227,7 +227,7 @@
         border-width: var( --kendo-actionsheet-border-width, #{$kendo-actionsheet-border-width} );
         border-bottom-width: 0;
         bottom: 0;
-        left: 50%;
+        inset-inline-start: 50%;
         transform: translateX( -50% );
     }
 
@@ -361,6 +361,15 @@
             overflow: hidden;
             display: flex;
             flex-flow: column nowrap;
+        }
+    }
+
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        .k-actionsheet-top,
+        .k-actionsheet-bottom {
+            transform: translateX( 50% );
         }
     }
 }
