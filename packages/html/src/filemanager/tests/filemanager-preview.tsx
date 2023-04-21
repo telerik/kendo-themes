@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import { Breadcrumb, BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
@@ -32,15 +33,15 @@ root.render(
 
                     {/* Content */}
                     <div className="k-filemanager-content">
-                        <nav className="k-filemanager-breadcrumb k-widget k-breadcrumb">
-                            <ol className="k-breadcrumb-container">
-                                <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                                    <a className="k-breadcrumb-root-link  k-breadcrumb-icon-link">
+                        <Breadcrumb className="k-filemanager-breadcrumb">
+                            <BreadcrumbContainer>
+                                <BreadcrumbItem root>
+                                    <BreadcrumbLink root icon>
                                         <Icon name="home" />
-                                    </a>
-                                </li>
-                            </ol>
-                        </nav>
+                                    </BreadcrumbLink>
+                                </BreadcrumbItem>
+                            </BreadcrumbContainer>
+                        </Breadcrumb>
 
                         {/* View */}
                         <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
@@ -157,15 +158,15 @@ root.render(
 
                     {/* Content */}
                     <div className="k-filemanager-content">
-                        <nav className="k-filemanager-breadcrumb k-widget k-breadcrumb">
-                            <ol className="k-breadcrumb-container">
-                                <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                                    <a className="k-breadcrumb-root-link  k-breadcrumb-icon-link">
+                        <Breadcrumb className="k-filemanager-breadcrumb">
+                            <BreadcrumbContainer>
+                                <BreadcrumbItem root>
+                                    <BreadcrumbLink root icon>
                                         <Icon name="home" />
-                                    </a>
-                                </li>
-                            </ol>
-                        </nav>
+                                    </BreadcrumbLink>
+                                </BreadcrumbItem>
+                            </BreadcrumbContainer>
+                        </Breadcrumb>
 
                         {/* View */}
                         <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
@@ -273,15 +274,15 @@ root.render(
 
                     {/* Content */}
                     <div className="k-filemanager-content">
-                        <nav className="k-filemanager-breadcrumb k-widget k-breadcrumb">
-                            <ol className="k-breadcrumb-container">
-                                <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                                    <a className="k-breadcrumb-root-link  k-breadcrumb-icon-link">
+                        <Breadcrumb className="k-filemanager-breadcrumb">
+                            <BreadcrumbContainer>
+                                <BreadcrumbItem root>
+                                    <BreadcrumbLink root icon>
                                         <Icon name="home" />
-                                    </a>
-                                </li>
-                            </ol>
-                        </nav>
+                                    </BreadcrumbLink>
+                                </BreadcrumbItem>
+                            </BreadcrumbContainer>
+                        </Breadcrumb>
 
                         {/* View */}
                         <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">

@@ -40,12 +40,6 @@
         overflow: hidden;
     }
 
-    .k-breadcrumb-container {
-
-        &.k-flex-wrap {
-            flex-wrap: wrap;
-        }
-    }
     .k-breadcrumb-root-item-container {
         align-items: flex-start;
         flex-shrink: 0;
@@ -57,6 +51,7 @@
         vertical-align: middle;
         display: inline-flex;
         flex-direction: row;
+        flex: none;
         align-items: center;
         overflow: hidden;
     }
