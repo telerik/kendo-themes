@@ -634,7 +634,8 @@
             cursor: pointer;
 
             > .k-icon,
-            > .k-svg-icon {
+            > .k-svg-icon,
+            > .k-expander-indicator {
                 margin-inline-end: $kendo-padding-md-y;
             }
         }

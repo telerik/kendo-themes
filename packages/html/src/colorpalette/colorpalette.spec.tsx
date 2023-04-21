@@ -70,11 +70,11 @@ export const ColorPalette = (
                     disabled,
                 }),
             )}>
-            <div className="k-colorpalette-table-wrap">
-                <table className="k-colorpalette-table k-palette">
-                    {newChildren.length > 0 ? newChildren : props.children}
-                </table>
-            </div>
+
+            <table className="k-colorpalette-table">
+                {newChildren.length > 0 ? newChildren : props.children}
+            </table>
+
         </div>
     );
 };
