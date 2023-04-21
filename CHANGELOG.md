@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.3.0...v6.3.1-dev.0) (2023-04-20)
+
+
+### Bug Fixes
+
+* **calendar:** fix th and td cell alignment in infinite adaptive calendar ([756bc1f](https://github.com/telerik/kendo-themes/commit/756bc1fa58b24bd02ece7df57f1317a4285828ca))
+
+
+
+
+
 # [6.3.0](https://github.com/telerik/kendo-themes/compare/v6.2.0...v6.3.0) (2023-04-17)
 
 
