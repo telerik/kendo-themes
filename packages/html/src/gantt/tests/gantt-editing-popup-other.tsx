@@ -54,7 +54,7 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form orientation="vertical">
+                            <Form tag="div" orientation="vertical">
                                 <FormField
                                     label="Notes"
                                     optional
