@@ -154,7 +154,7 @@ root.render(
             <h3>With Toolbar</h3>
             <div className="k-grid k-grid-md telerik-blazor">
                 <Toolbar className="k-grid-toolbar">
-                    <Button icon="add">Add</Button>
+                    <Button icon="plus">Add</Button>
                 </Toolbar>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">

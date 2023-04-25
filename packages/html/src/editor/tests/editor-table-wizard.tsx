@@ -74,12 +74,12 @@ root.render(
                                 <FormField
                                     className="k-col-span-2"
                                     label="Position"
-                                    editor={ <DropdownList prefix={ <Icon name="table-position-start" /> } placeholder="Left" />}
+                                    editor={ <DropdownList prefix={ <Icon icon="table-position-start" /> } placeholder="Left" />}
                                 />
                                 <FormField
                                     className="k-col-span-2"
                                     label="Alignment"
-                                    editor={ <DropdownList prefix={ <Icon name="table-align-middle-left" /> } placeholder="Middle Left" />}
+                                    editor={ <DropdownList prefix={ <Icon icon="table-align-middle-left" /> } placeholder="Middle Left" />}
                                 />
                                 <FormField
                                     className="k-col-span-2"
@@ -154,7 +154,7 @@ root.render(
                                         <FormField
                                             className="k-col-span-2"
                                             label="Caption alignment"
-                                            editor={ <DropdownList prefix={ <Icon name="table-align-middle-left"/> } placeholder="Middle Left" /> }
+                                            editor={ <DropdownList prefix={ <Icon icon="table-align-middle-left"/> } placeholder="Middle Left" /> }
                                         />
                                         <FormField
                                             className="k-col-span-1"
@@ -228,12 +228,12 @@ root.render(
                         <FormField
                             className="k-col-span-2"
                             label="Alignment"
-                            editor={ <DropdownList prefix={ <Icon name="table-align-middle-left" /> } placeholder="Middle Left" />}
+                            editor={ <DropdownList prefix={ <Icon icon="table-align-middle-left" /> } placeholder="Middle Left" />}
                         />
                         <FormField
                             className="k-col-span-2"
                             label="Text control"
-                            editor={ <DropdownList prefix={ <Icon name="text-wrap" /> } placeholder="Wrap" /> }
+                            editor={ <DropdownList prefix={ <Icon icon="text-wrap" /> } placeholder="Wrap" /> }
                         />
                         <FormField
                             className="k-col-span-2"

@@ -20,8 +20,8 @@ root.render(
                                 <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                 <span className="k-spacer"></span>
                                 <div className="k-taskboard-column-header-actions">
-                                    <Button fillMode="flat" icon="add"></Button>
-                                    <Button fillMode="flat" icon="close"></Button>
+                                    <Button fillMode="flat" icon="plus"></Button>
+                                    <Button fillMode="flat" icon="x"></Button>
                                 </div>
                             </div>
                             <div className="k-taskboard-column-cards-container">

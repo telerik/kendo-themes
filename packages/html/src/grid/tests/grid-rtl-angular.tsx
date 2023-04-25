@@ -109,7 +109,7 @@ root.render(
                                                     <span className="k-link">
                                                         <span className="k-column-title">Default</span>
                                                     </span>
-                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a></div>
+                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a></div>
                                                 </span>
                                             </th>
                                             <th className="k-table-th k-header k-filterable">
@@ -117,7 +117,7 @@ root.render(
                                                     <span className="k-link">
                                                         <span className="k-column-title">Hover</span>
                                                     </span>
-                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a></div>
+                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a></div>
                                                 </span>
                                             </th>
                                             <th className="k-table-th k-header k-filterable k-focus">
@@ -125,7 +125,7 @@ root.render(
                                                     <span className="k-link">
                                                         <span className="k-column-title">Focus</span>
                                                     </span>
-                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a></div>
+                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a></div>
                                                 </span>
                                             </th>
                                             <th className="k-table-th k-header k-filterable">
@@ -133,16 +133,16 @@ root.render(
                                                     <span className="k-link">
                                                         <span className="k-column-title">Active</span>
                                                     </span>
-                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu k-active"><Icon name="filter" /></a></div>
+                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu k-active"><Icon icon="filter" /></a></div>
                                                 </span>
                                             </th>
                                             <th className="k-table-th k-header k-filterable k-sorted">
                                                 <span className="k-cell-inner">
                                                     <span className="k-link">
                                                         <span className="k-column-title">Sorted</span>
-                                                        <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                        <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                     </span>
-                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a></div>
+                                                    <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a></div>
                                                 </span>
                                             </th>
                                         </tr>
@@ -159,7 +159,7 @@ root.render(
                                         </colgroup>
                                         <tbody className="k-table-tbody">
                                             <tr className="k-table-row k-master-row k-expanded">
-                                                <td className="k-table-td k-hierarchy-cell"><Icon name="minus" /></td>
+                                                <td className="k-table-td k-hierarchy-cell"><Icon icon="minus" /></td>
                                                 <td className="k-table-td">1</td>
                                                 <td className="k-table-td">Text</td>
                                                 <td className="k-table-td">Text</td>
@@ -177,7 +177,7 @@ root.render(
                                             </tr>
                                             <tr className="k-table-row k-table-alt-row k-alt k-master-row">
                                                 <td className="k-table-td k-hierarchy-cell">
-                                                    <Icon name="plus" />
+                                                    <Icon icon="plus" />
                                                 </td>
                                                 <td className="k-table-td">2</td>
                                                 <td className="k-table-td">Text</td>

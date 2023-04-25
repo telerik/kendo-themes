@@ -24,7 +24,7 @@ root.render(
             <span></span>
 
             <section>
-                <Window title="Insert Image" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
+                <Window title="Insert Image" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Insert</Button>
                         <Button>Cancel</Button>

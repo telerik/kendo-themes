@@ -38,7 +38,7 @@ root.render(
             <span>Replace Window</span>
 
             <section>
-                <Window title="Find and Replace" actions={[ 'close' ]}>
+                <Window title="Find and Replace" actions={[ 'x' ]}>
                     <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">
@@ -74,9 +74,9 @@ root.render(
                                     </div>
                                 } />
                                 <div className="k-matches-container">
-                                    <Button themeColor="primary" fillMode="flat" icon="arrow-chevron-left">Prev</Button>
+                                    <Button themeColor="primary" fillMode="flat" icon="chevron-left">Prev</Button>
                                     <span>1 of 3 matches</span>
-                                    <Button themeColor="primary" fillMode="flat" icon="arrow-chevron-right">Next</Button>
+                                    <Button themeColor="primary" fillMode="flat" icon="chevron-right">Next</Button>
                                 </div>
                             </Form>
                         </div>
@@ -85,7 +85,7 @@ root.render(
             </section>
 
             <section>
-                <Window className="k-editor-window" title="Find and Replace" actions={[ 'close' ]}>
+                <Window className="k-editor-window" title="Find and Replace" actions={[ 'x' ]}>
                     <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">
@@ -128,9 +128,9 @@ root.render(
                                     </div>
                                 } />
                                 <div className="k-matches-container">
-                                    <Button themeColor="primary" fillMode="flat" icon="arrow-chevron-left">Prev</Button>
+                                    <Button themeColor="primary" fillMode="flat" icon="chevron-left">Prev</Button>
                                     <span>1 of 3 matches</span>
-                                    <Button themeColor="primary" fillMode="flat" icon="arrow-chevron-right">Next</Button>
+                                    <Button themeColor="primary" fillMode="flat" icon="chevron-right">Next</Button>
                                 </div>
                             </Form>
                         </div>
@@ -149,7 +149,7 @@ root.render(
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
-                            <Button icon="find" selected></Button>
+                            <Button icon="binoculars" selected></Button>
                         </ButtonGroup>
                     </EditorToolbar>
                     <EditorContent>

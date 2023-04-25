@@ -18,7 +18,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <Dialog title="Title" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
+            <Dialog title="Title" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -27,7 +27,7 @@ root.render(
                 Action Buttons at start position
             </Dialog>
 
-            <Dialog title="Title" actions={[ 'close' ]} actionButtonsAlign="center" actionButtons={
+            <Dialog title="Title" actions={[ 'x' ]} actionButtonsAlign="center" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -36,7 +36,7 @@ root.render(
                 Action Buttons at center position
             </Dialog>
 
-            <Dialog title="Title" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+            <Dialog title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -45,7 +45,7 @@ root.render(
                 Action Buttons at end position
             </Dialog>
 
-            <Dialog title="Title" actions={[ 'close' ]} actionButtonsAlign="stretched" actionButtons={
+            <Dialog title="Title" actions={[ 'x' ]} actionButtonsAlign="stretched" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>

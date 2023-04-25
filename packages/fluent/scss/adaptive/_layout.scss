@@ -315,15 +315,11 @@
         .k-task {
             display: flex;
             align-items: center;
+            gap: .5em;
 
             .k-scheduler-mark {
                 border-radius: 50%;
-            }
-
-            .k-i-reload,
-            .k-i-arrow-rotate-cw {
-                font-size: 1em;
-                margin-right: .5em;
+                margin: 0;
             }
 
             .k-scheduler-task-text {

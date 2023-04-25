@@ -21,7 +21,7 @@ root.render(
                                     <ButtonGroup className="k-scheduler-tools">
                                         <Button className="k-pdf" icon="file-pdf"></Button>
                                         <Button className="k-nav-calendar" icon="calendar"></Button>
-                                        <Button className="k-create-event" icon="add"></Button>
+                                        <Button className="k-create-event" icon="plus"></Button>
                                     </ButtonGroup>
                                     <span className="k-spacer"></span>
                                     <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
@@ -29,13 +29,13 @@ root.render(
                                     </select>
                                 </Toolbar>
                                 <Toolbar className="k-scheduler-toolbar">
-                                    <Button className="k-nav-prev" icon="arrow-chevron-left"></Button>
+                                    <Button className="k-nav-prev" icon="chevron-left"></Button>
                                     <span className="k-spacer"></span>
                                     <Button className="k-nav-current" fillMode="flat" >
                                         Jun 13, 2013
                                     </Button>
                                     <span className="k-spacer"></span>
-                                    <Button className="k-nav-next" icon="arrow-chevron-right"></Button>
+                                    <Button className="k-nav-next" icon="chevron-right"></Button>
                                 </Toolbar>
                                 <table className="k-scheduler-layout k-scheduler-dayview k-scrollbar-v">
                                     <tbody>
@@ -177,7 +177,7 @@ root.render(
                                                             <div className="k-event-template">Test</div>
                                                         </div>
                                                         <span className="k-event-actions">
-                                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                         </span>
                                                         <span className="k-event-top-actions"></span>
                                                         <span className="k-event-bottom-actions"></span>

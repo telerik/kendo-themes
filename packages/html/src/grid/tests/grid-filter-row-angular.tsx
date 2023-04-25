@@ -118,7 +118,7 @@ root.render(
             <h3>With Toolbar</h3>
             <div dir="ltr" className="k-grid k-grid-md">
                 <Toolbar className="k-grid-toolbar">
-                    <Button icon="add">Add</Button>
+                    <Button icon="plus">Add</Button>
                 </Toolbar>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">

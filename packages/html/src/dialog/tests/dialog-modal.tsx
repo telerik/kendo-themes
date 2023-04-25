@@ -24,7 +24,7 @@ root.render(
         <div id="test-area" className="k-grid-cols-1">
             <div className="k-dialog-wrapper">
                 <div className="k-overlay"></div>
-                <Dialog title="Title" actions={[ 'close' ]} actionButtonsAlign="end" actionButtons={
+                <Dialog title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                     <>
                         <Button>Action</Button>
                         <Button themeColor="primary">Primary</Button>

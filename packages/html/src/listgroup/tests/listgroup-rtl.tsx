@@ -28,12 +28,12 @@ root.render(
                     <li className="k-listgroup-item">
                         <a href="#" className="k-link">
                             Link
-                            <span className="k-select"><Icon name="arrow-chevron-right" /></span>
+                            <span className="k-select"><Icon icon="chevron-right" /></span>
                         </a>
                     </li>
                     <li className="k-listgroup-item k-listgroup-item-segmented">
                         <span className="k-link">Pseudo link</span>
-                        <span className="k-select"><Icon name="arrow-chevron-right" /></span>
+                        <span className="k-select"><Icon icon="chevron-right" /></span>
                     </li>
                 </ul>
             </section>

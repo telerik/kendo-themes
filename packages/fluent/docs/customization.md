@@ -7874,6 +7874,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-icon-padding-x</td>
+    <td></td>
+    <td><code>0</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the drawer icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-icon-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the drawer icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-mini-initial-width</td>
     <td></td>
     <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size} )</code></td>
@@ -9714,23 +9734,23 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-width</td>
+    <td>$kendo-fab-icon-padding-x</td>
     <td></td>
-    <td><code>20px</code></td>
+    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-height</td>
+    <td>$kendo-fab-icon-padding-y</td>
     <td></td>
-    <td><code>$kendo-fab-icon-width</code></td>
+    <td><code>$kendo-fab-icon-padding-x</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon height.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -9876,7 +9896,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-icon-padding-x</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>map.get( $kendo-spacing, 2 ) + $kendo-fab-icon-padding-x</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9886,7 +9906,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-icon-padding-y</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>$kendo-fab-item-icon-padding-x</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9921,26 +9941,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-width</td>
-    <td></td>
-    <td><code>20px</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-height</td>
-    <td></td>
-    <td><code>$kendo-fab-item-icon-width</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the FAB item icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -14497,7 +14497,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-sm-padding-y * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-md-padding-y * 2} ),
         button-padding-x: $kendo-input-sm-padding-y,
         button-padding-y: $kendo-input-sm-padding-y,
         button-width: $kendo-input-sm-button-width
@@ -14507,7 +14507,7 @@ The following table lists the available variables for customizing the Fluent the
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-md-padding-y * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-sm-padding-y * 2} ),
         button-padding-x: $kendo-input-md-padding-y,
         button-padding-y: $kendo-input-md-padding-y,
         button-width: $kendo-input-md-button-width

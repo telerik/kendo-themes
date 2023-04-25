@@ -25,35 +25,35 @@ root.render(
                 <div className="k-widget k-panelbar" dir="rtl">
                     <div className="k-item">
                         <span className="k-link k-header">
-                            <Icon name="cog" className="k-panelbar-item-icon" />
+                            <Icon icon="gear" className="k-panelbar-item-icon" />
                             Root
-                            <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                            <Icon className="k-panelbar-expand" icon="chevron-down" />
                         </span>
                     </div>
                     <div className="k-item">
                         <span className="k-link k-header k-hover">
                             <span className="k-image k-panelbar-item-icon"></span>
                             Root hover
-                            <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                            <Icon className="k-panelbar-expand" icon="chevron-down" />
                         </span>
                     </div>
                     <div className="k-item">
                         <span className="k-link k-header k-focus">
                             <span className="k-sprite"></span>
                             Root focus
-                            <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                            <Icon className="k-panelbar-expand" icon="chevron-down" />
                         </span>
                     </div>
                     <div className="k-item">
                         <span className="k-link k-header k-selected">
                             Root selected
-                            <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                            <Icon className="k-panelbar-expand" icon="chevron-down" />
                         </span>
                     </div>
                     <div className="k-item">
                         <span className="k-link k-header k-disabled">
                             Root disabled
-                            <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                            <Icon className="k-panelbar-expand" icon="chevron-down" />
                         </span>
                     </div>
                     <div className="k-item">
@@ -72,7 +72,7 @@ root.render(
                     <div className="k-item k-expanded">
                         <span className="k-link k-header">
                             Middle expanded
-                            <Icon className="k-panelbar-collapse" name="arrow-chevron-up" />
+                            <Icon className="k-panelbar-collapse" icon="chevron-up" />
                         </span>
                         <div>
                             <div className="k-panel k-group">
@@ -82,25 +82,25 @@ root.render(
                                 <div className="k-item">
                                     <span className="k-link k-hover">
                                         Child hover
-                                        <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                                        <Icon className="k-panelbar-expand" icon="chevron-down" />
                                     </span>
                                 </div>
                                 <div className="k-item">
                                     <span className="k-link k-focus">
                                         Child focus
-                                        <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                                        <Icon className="k-panelbar-expand" icon="chevron-down" />
                                     </span>
                                 </div>
                                 <div className="k-item">
                                     <span className="k-link k-selected">
                                         Child selected
-                                        <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                                        <Icon className="k-panelbar-expand" icon="chevron-down" />
                                     </span>
                                 </div>
                                 <div className="k-item k-expanded">
                                     <span className="k-link">
                                         Child expanded
-                                        <Icon className="k-panelbar-collapse" name="arrow-chevron-up" />
+                                        <Icon className="k-panelbar-collapse" icon="chevron-up" />
                                     </span>
                                     <div>
                                         <div className="k-panel k-group">
@@ -119,7 +119,7 @@ root.render(
                                 <div className="k-item">
                                     <span className="k-link k-disabled">
                                         Child disabled
-                                        <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
+                                        <Icon className="k-panelbar-expand" icon="chevron-down" />
                                     </span>
                                 </div>
                                 <div className="k-item">
@@ -143,7 +143,7 @@ root.render(
                     <div className="k-item k-expanded">
                         <span className="k-link k-header">
                             First expanded
-                            <Icon className="k-panelbar-collapse" name="arrow-chevron-up" />
+                            <Icon className="k-panelbar-collapse" icon="chevron-up" />
                         </span>
                         <div>
                             <div className="k-panelbar-content">
@@ -172,7 +172,7 @@ root.render(
                     <div className="k-item k-expanded">
                         <span className="k-link k-header">
                             Last expanded
-                            <Icon className="k-panelbar-collapse" name="arrow-chevron-up" />
+                            <Icon className="k-panelbar-collapse" icon="chevron-up" />
                         </span>
                         <div>
                             <div className="k-panelbar-content">

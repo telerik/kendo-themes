@@ -75,7 +75,7 @@ root.render(
                     placeholder="Prefix..."
                     prefix={
                         <>
-                            <Icon name="menu" />
+                            <Icon icon="menu" />
                             <Button fillMode="clear" icon="calendar"></Button>
                             <span className="k-input-separator"></span>
                         </>
@@ -87,7 +87,7 @@ root.render(
                     placeholder="Prefix..."
                     prefix={
                         <>
-                            <Icon name="menu" />
+                            <Icon icon="menu" />
                             <Button fillMode="clear" icon="calendar"></Button>
                             <span className="k-input-separator"></span>
                         </>
@@ -102,7 +102,7 @@ root.render(
                         <>
                             <span className="k-input-separator"></span>
                             <Button fillMode="clear" icon="calendar"></Button>
-                            <Icon name="bell" />
+                            <Icon icon="bell" />
                         </>
                     }
                 />
@@ -114,7 +114,7 @@ root.render(
                         <>
                             <span className="k-input-separator"></span>
                             <Button fillMode="clear" icon="calendar"></Button>
-                            <Icon name="bell" />
+                            <Icon icon="bell" />
                         </>
                     }
                 />

@@ -68,7 +68,7 @@ root.render(
                                                     <div className="k-task">
                                                         <span className="k-scheduler-mark"></span>
                                                         <span className="k-scheduler-task-text">Normal</span>
-                                                        <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                        <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -79,7 +79,7 @@ root.render(
                                                     <div className="k-task">
                                                         <span className="k-scheduler-mark"></span>
                                                         <span className="k-scheduler-task-text">Hover</span>
-                                                        <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                        <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -90,7 +90,7 @@ root.render(
                                                     <div className="k-task">
                                                         <span className="k-scheduler-mark"></span>
                                                         <span className="k-scheduler-task-text">Selected</span>
-                                                        <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                                        <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -100,7 +100,7 @@ root.render(
                                                 <td>
                                                     <div className="k-task">
                                                         <span className="k-scheduler-mark"></span>
-                                                        <Icon name="arrow-rotate-cw"></Icon>
+                                                        <Icon icon="arrow-rotate-cw"></Icon>
                                                         <span className="k-scheduler-task-text">Recurring</span>
                                                     </div>
                                                 </td>

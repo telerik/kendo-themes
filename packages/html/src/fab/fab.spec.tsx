@@ -100,7 +100,7 @@ export const FloatingActionButton = (
                     [`!k-pos-absolute k-${position}`]: position,
                 }
             )}>
-            {icon && <Icon className="k-fab-icon" name={icon} /> }
+            {icon && <Icon className="k-fab-icon" icon={icon} /> }
             {text && <span className="k-fab-text">{text}</span>}
         </button>
     );

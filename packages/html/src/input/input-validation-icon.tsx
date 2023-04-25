@@ -24,7 +24,7 @@ export const InputValidationIcon = (
         disabled,
         loading } = props;
 
-    const iconName = invalid ? 'warning' : 'check';
+    const iconName = invalid ? 'exclamation-circle' : 'check';
     const renderValidationIcon = Boolean( valid || invalid );
 
     if (disabled || loading || !renderValidationIcon) {
@@ -32,7 +32,7 @@ export const InputValidationIcon = (
     }
 
     return (
-        <Icon className={classNames(className)} name={iconName} />
+        <Icon className={classNames(className)} icon={iconName} />
     );
 };
 

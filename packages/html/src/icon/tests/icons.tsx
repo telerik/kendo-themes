@@ -593,7 +593,7 @@ const icons = [
     "chart-radar-filled",
     "chart-rose",
     "chart-choropleth",
-    "color-canvas",
+    "droplet-slider",
     "handle-resize-alt",
     "handle-resize",
     "right-double-quotes",
@@ -622,7 +622,7 @@ root.render(
         <div id="test-area" className="k-d-grid">
             {icons.map((icon, index) => (
                 <span key={index}>
-                    <Icon name={icon} />
+                    <Icon icon={icon} type="font" />
                 </span>
             ))}
         </div>

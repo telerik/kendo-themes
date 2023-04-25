@@ -63,7 +63,7 @@ export const Notification = (
                     'k-notification-closable': closable
                 }
             )}>
-            {icon && <Icon className="k-notification-status" name={icon} />}
+            {icon && <Icon className="k-notification-status" icon={icon} />}
 
             {props.children
                 ?

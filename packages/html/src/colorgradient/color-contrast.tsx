@@ -15,22 +15,22 @@ export const ColorContrast = (
         <div className="k-contrast-ratio">
             <span className="k-contrast-ratio-text">Contrast ratio: 7.1</span>
             <span className="k-contrast-validation !k-text-success">
-                <Icon name="check" />
-                <Icon name="check" />
+                <Icon icon="check" />
+                <Icon icon="check" />
             </span>
         </div>
         <div>
             <span>AA: 4.5</span>
             <span className="k-contrast-validation !k-text-success">
                     Pass
-                <Icon name="check" />
+                <Icon icon="check" />
             </span>
         </div>
         <div>
             <span>AAA: 7.0</span>
             <span className="k-contrast-validation !k-text-error">
                     Fail
-                <Icon name="x" />
+                <Icon icon="x" />
             </span>
         </div>
     </div>

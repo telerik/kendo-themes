@@ -14,7 +14,7 @@ root.render(
             <h3>Edit Row</h3>
             <div className="k-grid k-grid-md telerik-blazor">
                 <Toolbar className="k-grid-toolbar">
-                    <Button icon="add">Add</Button>
+                    <Button icon="plus">Add</Button>
                 </Toolbar>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
@@ -86,7 +86,7 @@ root.render(
                                             </td>
                                             <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span className="k-d-flex k-gap-1">
-                                                    <Button icon="edit">Edit</Button>
+                                                    <Button icon="pencil">Edit</Button>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
                                             </td>
@@ -104,7 +104,7 @@ root.render(
             <h3>New Row</h3>
             <div className="k-grid k-grid-md telerik-blazor">
                 <Toolbar className="k-grid-toolbar">
-                    <Button icon="add">Add</Button>
+                    <Button icon="plus">Add</Button>
                 </Toolbar>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
@@ -176,7 +176,7 @@ root.render(
                                             </td>
                                             <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span className="k-d-flex k-gap-1">
-                                                    <Button icon="edit">Edit</Button>
+                                                    <Button icon="pencil">Edit</Button>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
                                             </td>
@@ -192,7 +192,7 @@ root.render(
                                             </td>
                                             <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span className="k-d-flex k-gap-1">
-                                                    <Button icon="edit">Edit</Button>
+                                                    <Button icon="pencil">Edit</Button>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
                                             </td>

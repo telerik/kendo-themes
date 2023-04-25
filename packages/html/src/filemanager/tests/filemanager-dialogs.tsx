@@ -21,7 +21,7 @@ root.render(
 
             {/* Upload Dialog */}
             <section>
-                <Dialog title="Upload Files" actions={[ 'close' ]} actionButtonsAlign="start" className="k-filemanager-upload-dialog" actionButtons={
+                <Dialog title="Upload Files" actions={[ 'x' ]} actionButtonsAlign="start" className="k-filemanager-upload-dialog" actionButtons={
                     <>
                         <Button themeColor="primary">Upload</Button>
                         <Button>Cancel</Button>
@@ -36,7 +36,7 @@ root.render(
             {/* Move/Copy Dialog */}
             <section>
 
-                <Dialog title="Confirm" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
+                <Dialog title="Confirm" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Confirm</Button>
                         <Button>Cancel</Button>
@@ -50,7 +50,7 @@ root.render(
             {/* Delete Dialog */}
             <section>
 
-                <Dialog title="Confirm" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
+                <Dialog title="Confirm" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Confirm</Button>
                         <Button>Cancel</Button>

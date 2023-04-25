@@ -36,7 +36,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Order ID</span>
                                             </span>
-                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                         </span>
                                     </th>
                                     <th className="k-table-th k-header k-filterable">
@@ -44,7 +44,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Ship Name</span>
                                             </span>
-                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                         </span>
                                     </th>
                                 </tr>
@@ -65,7 +65,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Ship Country</span>
                                             </span>
-                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                         </span>
                                     </th>
                                     <th className="k-table-th k-header k-filterable">
@@ -73,7 +73,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Ship City</span>
                                             </span>
-                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                         </span>
                                     </th>
                                     <th className="k-table-th k-header k-filterable">
@@ -81,7 +81,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Ship Address</span>
                                             </span>
-                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                         </span>
                                     </th>
                                 </tr>
@@ -210,7 +210,7 @@ root.render(
                                             <span className="k-cell-inner">
                                                 <span className="k-link">
                                                     <span className="k-column-title">Ship Name</span>
-                                                    <span className="k-sort-icon"><Icon name="sort-desc-small" /></span>
+                                                    <span className="k-sort-icon"><Icon icon="sort-desc-small" /></span>
                                                     <span className="k-sort-order">1</span>
                                                 </span>
                                             </span>
@@ -231,7 +231,7 @@ root.render(
                                             <span className="k-cell-inner">
                                                 <span className="k-link">
                                                     <span className="k-column-title">Ship Country</span>
-                                                    <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                    <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                     <span className="k-sort-order">2</span>
                                                 </span>
                                             </span>
@@ -404,7 +404,7 @@ root.render(
                                             <tr className="k-table-row k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                                 <td className="k-table-td" colSpan={3}>
                                                     <p className="k-reset">
-                                                        <Icon name="caret-alt-down" />
+                                                        <Icon icon="caret-alt-down" />
 
                                                     Discontinued: false
                                                     </p>
@@ -454,7 +454,7 @@ root.render(
                                             <tr className="k-table-row k-table-group-row k-grouping-row" style={{ height: "37px" }}>
                                                 <td className="k-table-td" colSpan={3}>
                                                     <p className="k-reset">
-                                                        <Icon name="caret-alt-down" />
+                                                        <Icon icon="caret-alt-down" />
                                                     Discontinued: true
                                                     </p>
                                                 </td>

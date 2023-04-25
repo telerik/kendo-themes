@@ -28,7 +28,7 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window title="Edit task" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                <Window title="Edit task" actions={[ 'window-minimize', 'window', 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary" icon="save">Save</Button>
                         <Button icon="cancel">Cancel</Button>

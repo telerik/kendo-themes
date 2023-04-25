@@ -76,11 +76,8 @@
         &[dir="rtl"],
         [dir="rtl"] & {
 
-            &.k-listbox-actions-left,
-            &.k-listbox-actions-right {
-                .k-listbox-actions {
-                    transform: scaleX(-1);
-                }
+            .k-listbox-actions .k-button-icon {
+                transform: scaleX(-1);
             }
         }
     }

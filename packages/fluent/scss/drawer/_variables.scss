@@ -68,6 +68,12 @@ $kendo-drawer-item-level-count: 5 !default;
 /// Icon size of the drawer item.
 /// @group drawer
 $kendo-drawer-icon-size: var( --kendo-icon-size, 1rem ) !default;
+/// Horizontal padding of the drawer icon.
+/// @group drawer
+$kendo-drawer-icon-padding-x: 0 !default;
+/// Vertical padding of the drawer icon.
+/// @group drawer
+$kendo-drawer-icon-padding-y: map.get( $kendo-spacing, 1 ) !default;
 
 /// Initial width of the mini drawer.
 /// @group drawer

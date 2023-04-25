@@ -17,7 +17,7 @@ root.render(
             <section className="col-2">
                 <div className="k-grid k-grid-md k-grid-display-block">
                     <Toolbar className="k-grid-toolbar">
-                        <Button className="k-toolbar-button" icon="add">Add new record</Button>
+                        <Button className="k-toolbar-button" icon="plus">Add new record</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..."/>
                     </Toolbar>
@@ -111,7 +111,7 @@ root.render(
             <section className="col-2">
                 <div className="k-grid k-grid-md k-grid-display-block">
                     <Toolbar className="k-grid-toolbar">
-                        <Button className="k-toolbar-button" icon="add">Add new record</Button>
+                        <Button className="k-toolbar-button" icon="plus">Add new record</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..."/>
                     </Toolbar>
