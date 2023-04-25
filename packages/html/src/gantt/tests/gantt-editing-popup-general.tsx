@@ -50,7 +50,7 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form layout="grid" cols={4} gapX={2}>
+                            <Form tag="div" layout="grid" cols={4} gapX={2}>
                                 <FormField
                                     className="k-form-field-error k-col-span-full"
                                     label="Title" error="Error"
