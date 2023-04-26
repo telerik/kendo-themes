@@ -128,16 +128,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-dropzone-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * 3 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-dropzone-icon-spacing</td>
     <td></td>
     <td><code>map.get( $kendo-spacing, 6 )</code></td>

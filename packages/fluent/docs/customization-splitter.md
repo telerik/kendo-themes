@@ -100,21 +100,11 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-splitter-splitbar-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>map.get( $kendo-spacing, 3 )</code></td>
     <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the splitter splitbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-splitter-resize-icon-size</td>
-    <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon size of the splitter splitbar.</div></div>
     </td>
 </tr>
 <tr>

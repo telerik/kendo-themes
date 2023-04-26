@@ -268,16 +268,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-map-marker-size</td>
-    <td></td>
-    <td><code>var( --kendo-icon-size-xxl, 2rem )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map marker size.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-map-marker-fill</td>
     <td></td>
     <td><code>get-theme-color-var( primary-100 )</code></td>

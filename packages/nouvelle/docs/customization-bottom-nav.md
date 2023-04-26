@@ -68,16 +68,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-bottom-nav-item-icon-size</td>
-    <td>Calculation</td>
-    <td><code>$kendo-icon-size-xxl</code></td>
-    <td><code>calc( 16px * 2 )</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the focused bottom navigation item icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-bottom-nav-item-icon-margin-x</td>
     <td>Null</td>
     <td><code>null</code></td>

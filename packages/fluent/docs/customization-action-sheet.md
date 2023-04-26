@@ -368,16 +368,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-actionsheet-item-icon-size</td>
-    <td></td>
-    <td><code>var( --kendo-icon-size, 1rem )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the action sheet item icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-actionsheet-item-icon-color</td>
     <td></td>
     <td><code>get-theme-color-var( primary-110 )</code></td>

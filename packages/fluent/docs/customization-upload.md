@@ -248,16 +248,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-upload-group-icon-size</td>
-    <td></td>
-    <td><code>var( --kendo-icon-size-xxl, 2rem )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the file icons in the upload.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-upload-progress-thickness</td>
     <td></td>
     <td><code>2px</code></td>
