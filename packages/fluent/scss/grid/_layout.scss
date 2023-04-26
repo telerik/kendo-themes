@@ -190,11 +190,15 @@
             > .k-svg-icon {
                 padding-inline: 0;
                 padding-block: var( --INTERNAL--kendo-grid-cell-padding-y, 0 );
-                width: 100%;
-                height: 100%;
                 display: inline-block;
                 outline: 0;
             }
+
+            > .k-icon {
+                width: 100%;
+                height: 100%;
+            }
+
         }
 
         .k-hierarchy-cell + .k-grid-content-sticky {
