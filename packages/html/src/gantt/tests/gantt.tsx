@@ -29,7 +29,7 @@ root.render(
             <div id="gantt" className="k-widget k-gantt">
                 <Toolbar className="k-gantt-toolbar k-gantt-header">
                     <Button className="k-gantt-toggle" icon="layout-1-by-4"></Button>
-                    <Button className="k-gantt-create" icon="add">Add Task</Button>
+                    <Button className="k-gantt-create" icon="plus">Add Task</Button>
                     <span className="k-spacer"></span>
                     <div className="k-gantt-views-wrapper">
                         <select className="k-picker k-dropdown-list k-dropdown k-views-dropdown">
@@ -84,95 +84,95 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td">7</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="caret-alt-down" />Software validation, research and implementation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="caret-alt-down" />Software validation, research and implementation</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">18</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" />Project Kickoff</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" />Project Kickoff</td>
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td">11</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Research</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Research</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">19</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Validation with Customers</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Validation with Customers</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">20</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Market Research</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Market Research</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">39</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Functional and Technical Specification</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Functional and Technical Specification</td>
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td">12</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Design</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Design</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">22</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />UI Design</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />UI Design</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">23</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />HTML Prototype</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />HTML Prototype</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td">13</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Implementation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Implementation</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">24</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Prototype</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Prototype</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">26</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Architecture</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Architecture</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">27</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Data Layer</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Data Layer</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">29</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />UI and Interaction</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />UI and Interaction</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">28</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Unit Tests</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Unit Tests</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td">14</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Testing</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Testing</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">32</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Integration Testing</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Integration Testing</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">33</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Load Testing</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Load Testing</td>
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td">30</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-down" />Documentation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Documentation</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">34</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Structure</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Structure</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">35</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" /><Icon name="none" />Articles</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Articles</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td">31</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="caret-alt-right" />Demos</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-right" />Demos</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td">17</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon name="none" /><Icon name="none" />Release</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" />Release</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -363,7 +363,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: '50px' }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Validation with Customers</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -379,7 +379,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "164px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Market Research</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -395,7 +395,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "69px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Functional and Technical Specification</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -424,7 +424,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "112px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">UI Design</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -440,7 +440,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "192px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">HTML Prototype</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -469,7 +469,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "462px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Prototype</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -485,7 +485,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "82px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Architecture</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -501,7 +501,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "600px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Data Layer</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -517,7 +517,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "300px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">UI and Interaction</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -533,7 +533,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "612px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Unit Tests</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -562,7 +562,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "470px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Integration Testing</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -578,7 +578,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: '50px' }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Load Testing</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -607,7 +607,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: "84px" }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Structure</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -623,7 +623,7 @@ root.render(
                                                             <div className="k-task-complete" style={{ width: '0px' }}></div>
                                                             <div className="k-task-content">
                                                                 <div className="k-task-template">Articles</div>
-                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon name="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                                                                <span className="k-task-actions"><a className="k-link k-task-delete"><Icon icon="x" /></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                                                             </div>
                                                         </div>
                                                         <div className="k-task-dot k-task-start"></div>
@@ -745,7 +745,7 @@ root.render(
                     </div>
                 </div>
                 <Toolbar className="k-gantt-toolbar k-gantt-footer">
-                    <Button className="k-gantt-create" icon="add">Add Task</Button>
+                    <Button className="k-gantt-create" icon="plus">Add Task</Button>
                 </Toolbar>
             </div>
 

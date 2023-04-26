@@ -33,19 +33,19 @@ root.render(
                         <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-columnmenu-item">
-                                    <Icon name="sort-asc-small" />Sort Ascending
+                                    <Icon icon="sort-asc-small" />Sort Ascending
                                 </div>
                                 <div className="k-columnmenu-item">
-                                    <Icon name="sort-desc-small" />Sort Descending
+                                    <Icon icon="sort-desc-small" />Sort Descending
                                 </div>
                             </div>
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-widget k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="grid-layout" />Include Fields
+                                        <Icon icon="grid-layout" />Include Fields
                                         <span className="k-spacer"></span>
                                         <span className="k-expander-indicator">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                         </span>
                                     </div>
                                 </div>
@@ -53,10 +53,10 @@ root.render(
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-widget k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="filter" />Filter Fields
+                                        <Icon icon="filter" />Filter Fields
                                         <span className="k-spacer"></span>
                                         <span className="k-expander-indicator">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                         </span>
                                     </div>
                                 </div>
@@ -72,19 +72,19 @@ root.render(
                         <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-columnmenu-item">
-                                    <Icon name="sort-asc-small" />Sort Ascending
+                                    <Icon icon="sort-asc-small" />Sort Ascending
                                 </div>
                                 <div className="k-columnmenu-item">
-                                    <Icon name="sort-desc-small" />Sort Descending
+                                    <Icon icon="sort-desc-small" />Sort Descending
                                 </div>
                             </div>
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-widget k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="grid-layout" />Include Fields
+                                        <Icon icon="grid-layout" />Include Fields
                                         <span className="k-spacer"></span>
                                         <span className="k-expander-indicator">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                         </span>
                                     </div>
                                 </div>
@@ -150,10 +150,10 @@ root.render(
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-widget k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="filter" />Filter Fields
+                                        <Icon icon="filter" />Filter Fields
                                         <span className="k-spacer"></span>
                                         <span className="k-expander-indicator">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                         </span>
                                     </div>
                                 </div>
@@ -169,19 +169,19 @@ root.render(
                         <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-columnmenu-item">
-                                    <Icon name="sort-asc-small" />Sort Ascending
+                                    <Icon icon="sort-asc-small" />Sort Ascending
                                 </div>
                                 <div className="k-columnmenu-item">
-                                    <Icon name="sort-desc-small" />Sort Descending
+                                    <Icon icon="sort-desc-small" />Sort Descending
                                 </div>
                             </div>
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-widget k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="grid-layout" />Include Fields
+                                        <Icon icon="grid-layout" />Include Fields
                                         <span className="k-spacer"></span>
                                         <span className="k-expander-indicator">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                         </span>
                                     </div>
                                 </div>
@@ -218,10 +218,10 @@ root.render(
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-widget k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="filter" />Filter Fields
+                                        <Icon icon="filter" />Filter Fields
                                         <span className="k-spacer"></span>
                                         <span className="k-expander-indicator">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                         </span>
                                     </div>
                                 </div>
@@ -237,19 +237,19 @@ root.render(
                         <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-columnmenu-item">
-                                    <Icon name="sort-asc-small" />Sort Ascending
+                                    <Icon icon="sort-asc-small" />Sort Ascending
                                 </div>
                                 <div className="k-columnmenu-item">
-                                    <Icon name="sort-desc-small" />Sort Descending
+                                    <Icon icon="sort-desc-small" />Sort Descending
                                 </div>
                             </div>
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-widget k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="grid-layout" />Include Fields
+                                        <Icon icon="grid-layout" />Include Fields
                                         <span className="k-spacer"></span>
                                         <span className="k-expander-indicator">
-                                            <Icon name="arrow-chevron-down" />
+                                            <Icon icon="chevron-down" />
                                         </span>
                                     </div>
                                 </div>
@@ -257,10 +257,10 @@ root.render(
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-widget k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="filter" />Filter Fields
+                                        <Icon icon="filter" />Filter Fields
                                         <span className="k-spacer"></span>
                                         <span className="k-expander-indicator">
-                                            <Icon name="arrow-chevron-up" />
+                                            <Icon icon="chevron-up" />
                                         </span>
                                     </div>
                                 </div>

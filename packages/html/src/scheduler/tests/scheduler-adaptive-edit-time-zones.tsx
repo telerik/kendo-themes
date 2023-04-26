@@ -14,7 +14,7 @@ root.render(
                     <div className="k-pane">
                         <div className="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view k-widget">
                             <div className="k-appbar k-appbar-primary">
-                                <Button className="k-header-cancel" fillMode="flat" icon="arrow-chevron-left"></Button>
+                                <Button className="k-header-cancel" fillMode="flat" icon="chevron-left"></Button>
                                 <span className="k-spacer"></span>
                                 <span>Time zones</span>
                                 <span className="k-spacer"></span>

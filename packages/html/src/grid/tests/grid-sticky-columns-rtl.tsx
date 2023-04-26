@@ -45,7 +45,7 @@ root.render(
                                         <span className="k-cell-inner">
                                             <span className="k-link">
                                                 <span className="k-column-title">customerID</span>
-                                                <span className="k-sort-icon"><Icon name="sort-desc-small" /></span>
+                                                <span className="k-sort-icon"><Icon icon="sort-desc-small" /></span>
                                             </span>
                                         </span>
                                     </th>
@@ -99,12 +99,12 @@ root.render(
                                 <tbody className="k-table-tbody">
                                     <tr className="k-table-row k-table-group-row k-grouping-row" role="row">
                                         <td className="k-table-td" colSpan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon name="caret-alt-down" />Lehmanns Marktstand</p>
+                                            <p className="k-reset"><Icon icon="caret-alt-down" />Lehmanns Marktstand</p>
                                         </td>
                                     </tr>
                                     <tr className="k-table-row k-master-row" role="row">
                                         <td className="k-table-td k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></td>
-                                        <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                        <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                         <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "90px", right: '0px' }}>LEHMS</td>
                                         <td className="k-table-td" colSpan={1}>Saturday, January 13, 1996</td>
                                         <td className="k-table-td" colSpan={1}>Lehmanns Marktstand</td>
@@ -114,7 +114,7 @@ root.render(
                                     </tr>
                                     <tr className="k-table-row k-table-alt-row k-master-row k-alt" role="row">
                                         <td className="k-table-td k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></td>
-                                        <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                        <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                         <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "90px", right: '0px' }}>LEHMS</td>
                                         <td className="k-table-td" colSpan={1}>Saturday, January 13, 1996</td>
                                         <td className="k-table-td" colSpan={1}>Lehmanns Marktstand</td>
@@ -124,12 +124,12 @@ root.render(
                                     </tr>
                                     <tr className="k-table-row k-table-group-row k-grouping-row" role="row">
                                         <td className="k-table-td" colSpan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon name="caret-alt-down" />Split Rail Beer &amp; Ale</p>
+                                            <p className="k-reset"><Icon icon="caret-alt-down" />Split Rail Beer &amp; Ale</p>
                                         </td>
                                     </tr>
                                     <tr className="k-table-row k-master-row" role="row">
                                         <td className="k-table-td k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></td>
-                                        <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                        <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                         <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "90px", right: '0px' }}>SPLIR</td>
                                         <td className="k-table-td" colSpan={1}>Monday, January 1, 1996</td>
                                         <td className="k-table-td" colSpan={1}>Split Rail Beer &amp; Ale</td>
@@ -139,7 +139,7 @@ root.render(
                                     </tr>
                                     <tr className="k-table-row k-table-alt-row k-master-row k-alt" role="row">
                                         <td className="k-table-td k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></td>
-                                        <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                        <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                         <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "90px", right: '0px' }}>SPLIR</td>
                                         <td className="k-table-td" colSpan={1}>Monday, January 1, 1996</td>
                                         <td className="k-table-td" colSpan={1}>Split Rail Beer &amp; Ale</td>
@@ -149,12 +149,12 @@ root.render(
                                     </tr>
                                     <tr className="k-table-row k-table-group-row k-grouping-row" role="row">
                                         <td className="k-table-td" colSpan={8} style={{ left: '0px', right: '0px' }}>
-                                            <p className="k-reset"><Icon name="caret-alt-down" />Wartian Herkku</p>
+                                            <p className="k-reset"><Icon icon="caret-alt-down" />Wartian Herkku</p>
                                         </td>
                                     </tr>
                                     <tr className="k-table-row k-master-row" role="row">
                                         <td className="k-table-td k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></td>
-                                        <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                        <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                         <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "90px", right: '0px' }}>WARTH</td>
                                         <td className="k-table-td" colSpan={1}>Friday, January 26, 1996</td>
                                         <td className="k-table-td" colSpan={1}>Wartian Herkku</td>
@@ -164,7 +164,7 @@ root.render(
                                     </tr>
                                     <tr className="k-table-row k-table-alt-row k-master-row k-alt" role="row">
                                         <td className="k-table-td k-table-group-td k-group-cell" style={{ left: '0px', right: '0px' }}></td>
-                                        <td className="k-table-td k-hierarchy-cell"><Icon name="plus" /></td>
+                                        <td className="k-table-td k-hierarchy-cell"><Icon icon="plus" /></td>
                                         <td className="k-table-td k-grid-content-sticky" colSpan={1} style={{ left: "90px", right: '0px' }}>WARTH</td>
                                         <td className="k-table-td" colSpan={1}>Friday, January 26, 1996</td>
                                         <td className="k-table-td" colSpan={1}>Wartian Herkku</td>

@@ -26,43 +26,43 @@ root.render(
                         <div className="k-drawer-items">
                             <ul>
                                 <li className="k-drawer-item">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Item</span>
                                 </li>
                                 <li className="k-drawer-item k-drawer-separator"></li>
                                 <li className="k-drawer-item k-hover">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Hovered Item</span>
                                 </li>
                                 <li className="k-drawer-item k-selected">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Selected Item</span>
                                 </li>
                                 <li className="k-drawer-item k-selected k-hover">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Selected and hovered item</span>
                                 </li>
                                 <li className="k-drawer-item k-focus">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Focused item</span>
                                 </li>
 
                                 {/* React and Angular rendering */}
                                 <li className="k-drawer-item">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                                 <li className="k-drawer-item k-drawer-separator"></li>
                                 <li className="k-drawer-item k-hover">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                                 <li className="k-drawer-item k-selected">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                                 <li className="k-drawer-item k-selected k-hover">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                                 <li className="k-drawer-item k-focus">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                             </ul>
                         </div>
@@ -77,43 +77,43 @@ root.render(
                         <div className="k-drawer-items">
                             <ul>
                                 <li className="k-drawer-item">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Item</span>
                                 </li>
                                 <li className="k-drawer-item k-drawer-separator"></li>
                                 <li className="k-drawer-item k-hover">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Hovered Item</span>
                                 </li>
                                 <li className="k-drawer-item k-selected">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Selected Item</span>
                                 </li>
                                 <li className="k-drawer-item k-selected k-hover">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Selected and hovered item</span>
                                 </li>
                                 <li className="k-drawer-item k-focus">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                     <span className="k-item-text">Focused item</span>
                                 </li>
 
                                 {/* React and Angular rendering */}
                                 <li className="k-drawer-item">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                                 <li className="k-drawer-item k-drawer-separator"></li>
                                 <li className="k-drawer-item k-hover">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                                 <li className="k-drawer-item k-selected">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                                 <li className="k-drawer-item k-selected k-hover">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                                 <li className="k-drawer-item k-focus">
-                                    <Icon name="star-outline" />
+                                    <Icon icon="star-outline" />
                                 </li>
                             </ul>
                         </div>

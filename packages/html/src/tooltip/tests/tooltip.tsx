@@ -150,7 +150,7 @@ root.render(
                 <div className="k-animation-container">
                     <div className="k-tooltip k-tooltip-closable">
                         <div className="k-tooltip-content">tooltip content</div>
-                        <div className="k-tooltip-button"><Icon name="x"></Icon></div>
+                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@ root.render(
                 <div className="k-animation-container">
                     <div className="k-tooltip k-tooltip-closable">
                         <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
-                        <div className="k-tooltip-button"><Icon name="x"></Icon></div>
+                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ root.render(
                             <div className="k-tooltip-title">Tooltip title</div>
                             tooltip content
                         </div>
-                        <div className="k-tooltip-button"><Icon name="x"></Icon></div>
+                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@ root.render(
                             </div>
                             long tooltip content. Enough so it goes on another line
                         </div>
-                        <div className="k-tooltip-button"><Icon name="x"></Icon></div>
+                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
                 </div>

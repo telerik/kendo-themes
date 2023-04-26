@@ -38,22 +38,22 @@ root.render(
             </span>
             <span>
                 <Badge size="small" themeColor="success">
-                    <Icon className="k-badge-icon" name="check"></Icon>
+                    <Icon className="k-badge-icon" icon="check"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="small" rounded="small" themeColor="success">
-                    <Icon className="k-badge-icon" name="check"></Icon>
+                    <Icon className="k-badge-icon" icon="check"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="small" rounded="full" themeColor="success">
-                    <Icon className="k-badge-icon" name="check"></Icon>
+                    <Icon className="k-badge-icon" icon="check"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="small" rounded="full" themeColor="success">
-                    <Icon className="k-badge-icon" name="check"></Icon>
+                    <Icon className="k-badge-icon" icon="check"></Icon>
                 </Badge>
             </span>
 
@@ -63,22 +63,22 @@ root.render(
             </span>
             <span>
                 <Badge fillMode="outline" size="small">
-                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="x-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge fillMode="outline" size="small" rounded="small">
-                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="x-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge fillMode="outline" size="small" rounded="full">
-                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="x-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge fillMode="outline" size="small" rounded="full">
-                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="x-circle"></Icon>
                 </Badge>
             </span>
 
@@ -89,22 +89,22 @@ root.render(
             </span>
             <span>
                 <Badge themeColor="info">
-                    <Icon className="k-badge-icon" name="calendar"></Icon>
+                    <Icon className="k-badge-icon" icon="calendar"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge themeColor="info" rounded="medium">
-                    <Icon className="k-badge-icon" name="calendar"></Icon>
+                    <Icon className="k-badge-icon" icon="calendar"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge themeColor="info" rounded="full">
-                    <Icon className="k-badge-icon" name="calendar"></Icon>
+                    <Icon className="k-badge-icon" icon="calendar"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge themeColor="info" rounded="full">
-                    <Icon className="k-badge-icon" name="calendar"></Icon>
+                    <Icon className="k-badge-icon" icon="calendar"></Icon>
                 </Badge>
             </span>
 
@@ -114,22 +114,22 @@ root.render(
             </span>
             <span>
                 <Badge fillMode="outline" themeColor="tertiary">
-                    <Icon className="k-badge-icon" name="plus-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="plus-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge fillMode="outline" themeColor="tertiary" rounded="medium">
-                    <Icon className="k-badge-icon" name="plus-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="plus-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge fillMode="outline" themeColor="tertiary" rounded="full">
-                    <Icon className="k-badge-icon" name="plus-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="plus-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge fillMode="outline" themeColor="tertiary" rounded="full">
-                    <Icon className="k-badge-icon" name="plus-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="plus-circle"></Icon>
                 </Badge>
             </span>
 
@@ -140,22 +140,22 @@ root.render(
             </span>
             <span>
                 <Badge size="large" themeColor="warning">
-                    <Icon className="k-badge-icon" name="bell"></Icon>
+                    <Icon className="k-badge-icon" icon="bell"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="large" themeColor="warning" rounded="large">
-                    <Icon className="k-badge-icon" name="bell"></Icon>
+                    <Icon className="k-badge-icon" icon="bell"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="large" themeColor="warning" rounded="full">
-                    <Icon className="k-badge-icon" name="bell"></Icon>
+                    <Icon className="k-badge-icon" icon="bell"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="large" themeColor="warning" rounded="full">
-                    <Icon className="k-badge-icon" name="bell"></Icon>
+                    <Icon className="k-badge-icon" icon="bell"></Icon>
                 </Badge>
             </span>
 
@@ -165,22 +165,22 @@ root.render(
             </span>
             <span>
                 <Badge size="large" fillMode="outline" themeColor="error">
-                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="x-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="large" fillMode="outline" themeColor="error" rounded="large">
-                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="x-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="large" fillMode="outline" themeColor="error" rounded="full">
-                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="x-circle"></Icon>
                 </Badge>
             </span>
             <span>
                 <Badge size="large" fillMode="outline" themeColor="error" rounded="full">
-                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                    <Icon className="k-badge-icon" icon="x-circle"></Icon>
                 </Badge>
             </span>
 

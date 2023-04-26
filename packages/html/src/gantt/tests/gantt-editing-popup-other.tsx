@@ -25,12 +25,12 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Edit task" actions={[ 'window-minimize', 'window-maximize', 'close' ]} actionButtons={
+                <Window title="Edit task" actions={[ 'window-minimize', 'window', 'x' ]} actionButtons={
                     <>
                         <Button icon="save" themeColor="primary">Save</Button>
                         <Button icon="cancel">Cancel</Button>
                         <span className="k-spacer"></span>
-                        <Button icon="delete" fillMode="flat" themeColor="primary">Delete</Button>
+                        <Button icon="trash" fillMode="flat" themeColor="primary">Delete</Button>
                     </>
                 }>
                     <div className="k-tabstrip k-tabstrip-top">
@@ -54,7 +54,7 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form orientation="vertical">
+                            <Form tag="div" orientation="vertical">
                                 <FormField
                                     label="Notes"
                                     optional

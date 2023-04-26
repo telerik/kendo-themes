@@ -40,8 +40,8 @@ root.render(
                             <ListItem text="Disabled" disabled />
                             <ListItem text="List item with very long text, that spans on multiple lines" />
                             <ListItem text="Checkbox" showCheckbox />
-                            <ListItem text="Icon" showIcon iconName="cog" />
-                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="cog" />
+                            <ListItem text="Icon" showIcon iconName="gear" />
+                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="gear" />
                         </List>
                     </div>
                     <ActionSheetFooter actions={[ "Cancel", "!Select" ]} />
@@ -61,8 +61,8 @@ root.render(
                             <ListItem text="Disabled" disabled />
                             <ListItem text="List item with very long text, that spans on multiple lines" />
                             <ListItem text="Checkbox" showCheckbox />
-                            <ListItem text="Icon" showIcon iconName="cog" />
-                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="cog" />
+                            <ListItem text="Icon" showIcon iconName="gear" />
+                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="gear" />
                         </List>
                     </div>
                     <ActionSheetFooter actions={[ "Cancel", "!Select" ]} />

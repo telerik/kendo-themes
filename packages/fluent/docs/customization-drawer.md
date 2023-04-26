@@ -238,6 +238,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-drawer-icon-padding-x</td>
+    <td></td>
+    <td><code>0</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the drawer icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-drawer-icon-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the drawer icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-drawer-mini-initial-width</td>
     <td></td>
     <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size} )</code></td>

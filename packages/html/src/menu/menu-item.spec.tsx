@@ -94,9 +94,9 @@ export const MenuItem = (
                         disabled
                     }),
                 )}>
-                {icon && <Icon className="k-menu-link-icon" name={icon} />}
+                {icon && <Icon className="k-menu-link-icon" icon={icon} />}
                 <span className="k-menu-link-text">{text}</span>
-                {showArrow && <span className="k-menu-expand-arrow"><Icon name={expandArrowName} /></span>}
+                {showArrow && <span className="k-menu-expand-arrow"><Icon icon={expandArrowName} /></span>}
             </span>
             {contentTemplate}
         </li>

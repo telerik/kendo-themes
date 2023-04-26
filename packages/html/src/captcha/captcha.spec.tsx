@@ -62,7 +62,7 @@ export const Captcha = (
                 </div>
                 <div className="k-captcha-image-controls k-vstack">
                     <Button icon="volume-up" disabled={loading === true}></Button>
-                    <Button icon="reload" disabled={loading === true}></Button>
+                    <Button icon="arrow-rotate-cw" disabled={loading === true}></Button>
                 </div>
                 <div className="k-captcha-volume-control k-vstack k-pos-absolute k-hidden">
                     <div className="k-widget k-slider k-slider-vertical"></div>

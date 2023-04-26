@@ -19,20 +19,20 @@ root.render(
             <section>
                 <h4>Bottom Navigation RTL Horizontal</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border dir="rtl">
-                    <BottomNavItem icon="email" text="Normal" />
-                    <BottomNavItem icon="email" text="Focused" focus />
-                    <BottomNavItem icon="email" text="Selected" selected />
-                    <BottomNavItem icon="email" text="Disabled" disabled />
+                    <BottomNavItem icon="envelop" text="Normal" />
+                    <BottomNavItem icon="envelop" text="Focused" focus />
+                    <BottomNavItem icon="envelop" text="Selected" selected />
+                    <BottomNavItem icon="envelop" text="Disabled" disabled />
                 </BottomNav>
             </section>
 
             <section>
                 <h4>Bottom Navigation RTL Vertical</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border flow="vertical" dir="rtl">
-                    <BottomNavItem icon="email" text="Normal" />
-                    <BottomNavItem icon="email" text="Focused" focus />
-                    <BottomNavItem icon="email" text="Selected" selected />
-                    <BottomNavItem icon="email" text="Disabled" disabled />
+                    <BottomNavItem icon="envelop" text="Normal" />
+                    <BottomNavItem icon="envelop" text="Focused" focus />
+                    <BottomNavItem icon="envelop" text="Selected" selected />
+                    <BottomNavItem icon="envelop" text="Disabled" disabled />
                 </BottomNav>
             </section>
         </div>

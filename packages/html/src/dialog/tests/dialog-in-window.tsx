@@ -28,11 +28,11 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
 
-                <Window title="Window with dialog" actions={[ 'window-minimize', 'window-maximize', 'close' ]} className="k-window-wrapper">
+                <Window title="Window with dialog" actions={[ 'window-minimize', 'window', 'x' ]} className="k-window-wrapper">
                     Window content
                     <div className="k-dialog-wrapper">
                         <div className="k-overlay"></div>
-                        <Dialog title="Dialog in window" actions={[ 'close' ]}>
+                        <Dialog title="Dialog in window" actions={[ 'x' ]}>
                             Dialog content
                         </Dialog>
                     </div>

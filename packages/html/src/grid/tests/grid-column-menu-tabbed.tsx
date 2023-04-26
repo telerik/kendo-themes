@@ -40,17 +40,17 @@ root.render(
                                 <ul className="k-reset k-tabstrip-items">
                                     <li className="k-item k-active">
                                         <span className="k-link">
-                                            <Icon name="filter" />
+                                            <Icon icon="filter" />
                                         </span>
                                     </li>
                                     <li className="k-item">
                                         <span className="k-link">
-                                            <Icon name="more-horizontal" />
+                                            <Icon icon="more-horizontal" />
                                         </span>
                                     </li>
                                     <li className="k-item">
                                         <span className="k-link">
-                                            <Icon name="columns" />
+                                            <Icon icon="columns" />
                                         </span>
                                     </li>
                                 </ul>
@@ -83,17 +83,17 @@ root.render(
                                 <ul className="k-reset k-tabstrip-items">
                                     <li className="k-item">
                                         <span className="k-link">
-                                            <Icon name="filter" />
+                                            <Icon icon="filter" />
                                         </span>
                                     </li>
                                     <li className="k-item k-active">
                                         <span className="k-link">
-                                            <Icon name="more-horizontal" />
+                                            <Icon icon="more-horizontal" />
                                         </span>
                                     </li>
                                     <li className="k-item">
                                         <span className="k-link">
-                                            <Icon name="columns" />
+                                            <Icon icon="columns" />
                                         </span>
                                     </li>
                                 </ul>
@@ -101,31 +101,31 @@ root.render(
                             <div className="k-tabstrip-content k-active">
                                 <div className="k-columnmenu-item-wrapper">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="group" />Group Column
+                                        <Icon icon="group" />Group Column
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-wrapper">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-asc-small" />Sort Ascending
+                                        <Icon icon="sort-asc-small" />Sort Ascending
                                     </div>
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-desc-small" />Sort Descending
+                                        <Icon icon="sort-desc-small" />Sort Descending
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-wrapper">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="max-width" />Autosize This Column
+                                        <Icon icon="max-width" />Autosize This Column
                                     </div>
                                     <div className="k-columnmenu-item">
-                                        <Icon name="display-inline-flex" />Autosize All Columns
+                                        <Icon icon="display-inline-flex" />Autosize All Columns
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-wrapper">
                                     <div className="k-expander">
                                         <div className="k-columnmenu-item">
-                                            <Icon name="set-column-position" />Set Column Position
+                                            <Icon icon="set-column-position" />Set Column Position
                                             <span className="k-spacer"></span>
-                                            <Icon className="k-expander-indicator" name="arrow-chevron-down" />
+                                            <Icon className="k-expander-indicator" icon="chevron-down" />
                                         </div>
                                     </div>
                                 </div>
@@ -143,17 +143,17 @@ root.render(
                                 <ul className="k-reset k-tabstrip-items">
                                     <li className="k-item">
                                         <span className="k-link">
-                                            <Icon name="filter" />
+                                            <Icon icon="filter" />
                                         </span>
                                     </li>
                                     <li className="k-item">
                                         <span className="k-link">
-                                            <Icon name="more-horizontal" />
+                                            <Icon icon="more-horizontal" />
                                         </span>
                                     </li>
                                     <li className="k-item k-active">
                                         <span className="k-link">
-                                            <Icon name="columns" />
+                                            <Icon icon="columns" />
                                         </span>
                                     </li>
                                 </ul>
@@ -269,12 +269,12 @@ root.render(
                                 <ul className="k-reset k-tabstrip-items">
                                     <li className="k-item k-active">
                                         <span className="k-link">
-                                            <Icon name="filter" />
+                                            <Icon icon="filter" />
                                         </span>
                                     </li>
                                     <li className="k-item">
                                         <span className="k-link">
-                                            <Icon name="more-horizontal" />
+                                            <Icon icon="more-horizontal" />
                                         </span>
                                     </li>
                                 </ul>
@@ -307,7 +307,7 @@ root.render(
                                 <ul className="k-reset k-tabstrip-items">
                                     <li className="k-item k-active">
                                         <span className="k-link">
-                                            <Icon name="filter" />
+                                            <Icon icon="filter" />
                                         </span>
                                     </li>
                                 </ul>

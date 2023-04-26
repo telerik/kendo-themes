@@ -1,14 +1,10 @@
 import { Icon } from '../icon';
 import { classNames } from '../utils';
 
-export enum notificatonActionType {
-    CLOSE = 'close'
-}
-
 const className = `k-notification-action`;
 
 export type KendoNotificationActionProps = {
-    type?: notificatonActionType | string;
+    type?: string;
 };
 
 export const NotificationAction = (
@@ -22,11 +18,11 @@ export const NotificationAction = (
     let icon;
 
     switch (type) {
-        case notificatonActionType.CLOSE:
-            icon = <Icon name="x" />;
+        case 'close':
+            icon = <Icon icon="x" />;
             break;
         default:
-            return <Icon name={type} />;
+            return <Icon icon={type} />;
     }
 
     return (

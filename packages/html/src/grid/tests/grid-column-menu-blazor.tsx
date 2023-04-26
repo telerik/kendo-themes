@@ -29,7 +29,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Name</span>
                                             </span>
-                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                         </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
@@ -37,7 +37,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Command</span>
                                             </span>
-                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                         </span>
                                     </th>
                                 </tr>
@@ -119,11 +119,11 @@ root.render(
                                                 <span className="k-column-title">
                                                     Name
                                                 </span>
-                                                <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                             </span>
                                         </span>
                                         <span className="k-grid-header-menu k-grid-column-menu">
-                                            <Icon name="more-vertical" />
+                                            <Icon icon="more-vertical" />
                                         </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
@@ -131,7 +131,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Command</span>
                                             </span>
-                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                         </span>
                                     </th>
                                 </tr>
@@ -217,7 +217,7 @@ root.render(
                                             </span>
                                         </span>
                                         <span className="k-grid-header-menu k-grid-column-menu">
-                                            <Icon name="more-vertical" />
+                                            <Icon icon="more-vertical" />
                                         </span>
                                         <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
                                     </th>
@@ -226,7 +226,7 @@ root.render(
                                             <span className="k-link">
                                                 <span className="k-column-title">Command</span>
                                             </span>
-                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
+                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a></div>
                                         </span>
                                         <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
                                     </th>

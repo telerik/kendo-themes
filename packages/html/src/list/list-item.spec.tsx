@@ -64,7 +64,7 @@ export const ListItem = (
             )}
         >
             {showCheckbox && <Checkbox checked={checked} />}
-            {showIcon && <Icon name={iconName} />}
+            {showIcon && <Icon icon={iconName} />}
             <span className="k-list-item-text">{textOrChildren}</span>
             {groupLabel && groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
         </li>

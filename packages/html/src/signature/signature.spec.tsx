@@ -119,7 +119,7 @@ export const Signature = (
                         'k-signature-action',
                         'k-signature-clear',
                     )}
-                    icon="close"
+                    icon="x"
                     rounded={props.rounded}
                     size={props.size}
                     fillMode="flat"

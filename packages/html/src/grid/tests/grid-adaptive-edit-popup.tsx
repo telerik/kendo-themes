@@ -12,7 +12,7 @@ root.render(
                 <div className="k-pane">
                     <div className="k-grid-edit-form k-view k-widget">
                         <div className="k-appbar k-appbar-primary">
-                            <Button className="k-header-cancel" fillMode="flat" icon="arrow-chevron-left"></Button>
+                            <Button className="k-header-cancel" fillMode="flat" icon="chevron-left"></Button>
                             <span className="k-spacer"></span>
                             <span>Edit</span>
                             <span className="k-spacer"></span>

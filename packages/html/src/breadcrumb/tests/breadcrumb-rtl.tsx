@@ -16,7 +16,7 @@ root.render(
                     <BreadcrumbRootItemContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icontext>
-                                <Icon name="home" />
+                                <Icon icon="home" />
                                 <BreadcrumbItemText text="Start item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
@@ -24,34 +24,34 @@ root.render(
 
                     <BreadcrumbContainer collapsing="wrap">
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink disabled icontext>
-                                <Icon name="clock" />
+                                <Icon icon="clock" />
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink>
                                 <img className="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" />
                                 <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink>
                                 <span className="test"></span>
                                 <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink icon>
-                                <Icon name="clock" />
+                                <Icon icon="clock" />
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink disabled>
                                 <BreadcrumbItemText text="Fifth item"></BreadcrumbItemText>
                             </BreadcrumbLink>
@@ -72,34 +72,34 @@ root.render(
 
                     <BreadcrumbContainer collapsing="wrap">
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink disabled icontext>
-                                <Icon name="clock" />
+                                <Icon icon="clock" />
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink>
                                 <img className="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" />
                                 <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink>
                                 <span className="test"></span>
                                 <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink icon>
-                                <Icon name="clock" />
+                                <Icon icon="clock" />
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink disabled>
                                 <BreadcrumbItemText text="Fifth item"></BreadcrumbItemText>
                             </BreadcrumbLink>
@@ -113,41 +113,41 @@ root.render(
                     <BreadcrumbRootItemContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon>
-                                <Icon name="home" />
+                                <Icon icon="home" />
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                     </BreadcrumbRootItemContainer>
 
                     <BreadcrumbContainer collapsing="wrap">
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink disabled icontext>
-                                <Icon name="clock" />
+                                <Icon icon="clock" />
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink>
                                 <img className="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" />
                                 <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink>
                                 <span className="test"></span>
                                 <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink icon>
-                                <Icon name="clock" />
+                                <Icon icon="clock" />
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                             <BreadcrumbLink disabled>
                                 <BreadcrumbItemText text="Fifth item"></BreadcrumbItemText>
                             </BreadcrumbLink>
@@ -162,21 +162,21 @@ root.render(
                     <BreadcrumbContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon>
-                                <Icon name="home" />
+                                <Icon icon="home" />
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink>
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink>
                                 <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
                             <BreadcrumbLink disabled>
@@ -192,21 +192,21 @@ root.render(
                     <BreadcrumbContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon focus>
-                                <Icon name="home" />
+                                <Icon icon="home" />
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink focus>
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink>
                                 <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
                             <BreadcrumbLink disabled>
@@ -222,21 +222,21 @@ root.render(
                     <BreadcrumbContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon hover>
-                                <Icon name="home" />
+                                <Icon icon="home" />
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink hover>
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink>
                                 <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
                             <BreadcrumbLink disabled>
@@ -252,22 +252,22 @@ root.render(
                     <BreadcrumbContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon hover>
-                                <Icon name="home" />
+                                <Icon icon="home" />
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink icontext>
-                                <Icon name="cloud" />
+                                <Icon icon="cloud" />
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink icon>
-                                <Icon name="photo-camera" />
+                                <Icon icon="camera" />
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
                             <BreadcrumbLink disabled>
@@ -284,21 +284,21 @@ root.render(
                     <BreadcrumbContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon>
-                                <Icon name="home" />
+                                <Icon icon="home" />
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink>
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem>
                             <BreadcrumbLink>
                                 <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
                             <BreadcrumbLink disabled>
@@ -323,22 +323,22 @@ root.render(
                     <BreadcrumbContainer>
                         <BreadcrumbItem root>
                             <BreadcrumbLink root icon>
-                                <Icon name="home" />
+                                <Icon icon="home" />
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" name="arrow-chevron-right" />
-                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" name="arrow-chevron-right" />
+                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" icon="chevron-right" />
+                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" icon="chevron-right" />
                         </BreadcrumbItem>
                         <BreadcrumbItem hidden>
                             <BreadcrumbLink>
                                 <BreadcrumbItemText text="First item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem hidden>
                             <BreadcrumbLink>
                                 <BreadcrumbItemText text="Second item"></BreadcrumbItemText>
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem last>
                             <BreadcrumbLink disabled>

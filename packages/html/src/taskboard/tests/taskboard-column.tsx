@@ -22,9 +22,9 @@ root.render(
                                     <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                     <span className="k-spacer"></span>
                                     <div className="k-taskboard-column-header-actions">
-                                        <Button fillMode="flat" icon="edit"></Button>
-                                        <Button fillMode="flat" icon="add"></Button>
-                                        <Button fillMode="flat" icon="close"></Button>
+                                        <Button fillMode="flat" icon="pencil"></Button>
+                                        <Button fillMode="flat" icon="plus"></Button>
+                                        <Button fillMode="flat" icon="x"></Button>
                                     </div>
                                 </div>
                                 <div className="k-taskboard-column-cards-container">
@@ -58,9 +58,9 @@ root.render(
                                     <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                     <span className="k-spacer"></span>
                                     <div className="k-taskboard-column-header-actions">
-                                        <Button fillMode="flat" icon="edit"></Button>
-                                        <Button fillMode="flat" icon="add"></Button>
-                                        <Button fillMode="flat" icon="close"></Button>
+                                        <Button fillMode="flat" icon="pencil"></Button>
+                                        <Button fillMode="flat" icon="plus"></Button>
+                                        <Button fillMode="flat" icon="x"></Button>
                                     </div>
                                 </div>
                                 <div className="k-taskboard-column-cards-container">
@@ -96,9 +96,9 @@ root.render(
                                     </div>
                                     <span className="k-spacer"></span>
                                     <div className="k-taskboard-column-header-actions">
-                                        <Button fillMode="flat" icon="edit"></Button>
-                                        <Button fillMode="flat" icon="close"></Button>
-                                        <Button fillMode="flat" icon="add"></Button>
+                                        <Button fillMode="flat" icon="pencil"></Button>
+                                        <Button fillMode="flat" icon="x"></Button>
+                                        <Button fillMode="flat" icon="plus"></Button>
                                     </div>
                                 </div>
 
@@ -135,9 +135,9 @@ root.render(
                                     </div>
                                     <span className="k-spacer"></span>
                                     <div className="k-taskboard-column-header-actions">
-                                        <Button fillMode="flat" icon="edit"></Button>
-                                        <Button fillMode="flat" icon="close"></Button>
-                                        <Button fillMode="flat" icon="add"></Button>
+                                        <Button fillMode="flat" icon="pencil"></Button>
+                                        <Button fillMode="flat" icon="x"></Button>
+                                        <Button fillMode="flat" icon="plus"></Button>
                                     </div>
                                 </div>
                             </div>
@@ -158,9 +158,9 @@ root.render(
                                     <div className="k-taskboard-column-header-text k-text-ellipsis">Column with a very very very very very very very very long title</div>
                                     <span className="k-spacer"></span>
                                     <div className="k-taskboard-column-header-actions">
-                                        <Button fillMode="flat" icon="edit"></Button>
-                                        <Button fillMode="flat" icon="add"></Button>
-                                        <Button fillMode="flat" icon="close"></Button>
+                                        <Button fillMode="flat" icon="pencil"></Button>
+                                        <Button fillMode="flat" icon="plus"></Button>
+                                        <Button fillMode="flat" icon="x"></Button>
                                     </div>
                                 </div>
                                 <div className="k-taskboard-column-cards-container">

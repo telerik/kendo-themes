@@ -237,7 +237,7 @@ root.render(
                                         <tr className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={6}>
                                                 <p className="k-reset">
-                                                    <Icon name="caret-alt-down" />
+                                                    <Icon icon="caret-alt-down" />
                                                     <span>Currently active projects: 2 &nbsp;</span>
                                                 </p>
                                             </td>
@@ -290,9 +290,9 @@ root.render(
                                         <tr className="k-table-row k-table-group-row k-grouping-row">
                                             <td className="k-table-td" colSpan={6}>
                                                 <p className="k-reset">
-                                                    <Icon name="caret-alt-down" />
+                                                    <Icon icon="caret-alt-down" />
                                                     <span>Currently active projects: 5 &nbsp;</span>
-                                                    <span className="warning">These people work on too many projects</span>
+                                                    <span classicon="exclamation-circle">These people work on too many projects</span>
                                                 </p>
                                             </td>
                                         </tr>

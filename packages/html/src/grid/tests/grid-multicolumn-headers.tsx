@@ -164,7 +164,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Company</span>
                                                 </span>
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                             </span>
                                         </th>
                                         <th scope="col" colSpan={5} className="k-table-th k-header">
@@ -181,7 +181,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">First Name</span>
                                                 </span>
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                             </span>
                                         </th>
                                         <th scope="col" rowSpan={2} className="k-table-th k-header k-filterable">
@@ -189,7 +189,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Last Name</span>
                                                 </span>
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                             </span>
                                         </th>
                                         <th scope="col" colSpan={2} className="k-table-th k-header">
@@ -204,7 +204,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Phone</span>
                                                 </span>
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                             </span>
                                         </th>
                                     </tr>
@@ -214,7 +214,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">Country</span>
                                                 </span>
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                             </span>
                                         </th>
                                         <th scope="col" className="k-table-th k-header k-filterable">
@@ -222,7 +222,7 @@ root.render(
                                                 <span className="k-link">
                                                     <span className="k-column-title">City</span>
                                                 </span>
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
                                             </span>
                                         </th>
                                     </tr>

@@ -185,14 +185,24 @@
 
         .k-svg-icon,
         .k-icon {
-            height: auto;
-            font-size: var( --kendo-drawer-icon-size, #{$kendo-drawer-icon-size} );
-            line-height: var( --kendo-drawer-item-line-height, #{$kendo-drawer-item-line-height} );
             flex-shrink: 0;
+            padding-inline: var( --kendo-drawer-icon-padding-x, #{$kendo-drawer-icon-padding-x} );
+            padding-block: var( --kendo-drawer-icon-padding-y, #{$kendo-drawer-icon-padding-y} );
+            box-sizing: content-box;
 
             &.k-i-none {
                 margin: 0;
             }
+        }
+
+        .k-icon {
+            height: auto;
+            font-size: var( --kendo-drawer-icon-size, #{$kendo-drawer-icon-size} );
+        }
+
+        .k-svg-icon {
+            width: var( --kendo-drawer-icon-size, #{$kendo-drawer-icon-size} );
+            height: var( --kendo-drawer-icon-size, #{$kendo-drawer-icon-size} );
         }
 
         .k-item-text {

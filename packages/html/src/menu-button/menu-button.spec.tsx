@@ -52,7 +52,7 @@ const defaultProps = {
     fillMode: FillMode.solid,
     themeColor: ThemeColor.base,
     showArrow: true,
-    arrowIconName: "arrow-s"
+    arrowIconName: "caret-alt-down"
 };
 
 export const MenuButton = (

@@ -102,7 +102,7 @@ root.render(
                         </ButtonGroup>
                         <ButtonGroup>
                             <Button icon="subscript"></Button>
-                            <Button icon="superscript"></Button>
+                            <Button icon="supscript"></Button>
                         </ButtonGroup>
                         <ButtonGroup>
                             <Button icon="align-left"></Button>
@@ -111,8 +111,8 @@ root.render(
                             <Button icon="align-justify"></Button>
                         </ButtonGroup>
                         <ButtonGroup>
-                            <Button icon="indent-increase"></Button>
-                            <Button icon="indent-decrease"></Button>
+                            <Button icon="indent"></Button>
+                            <Button icon="outdent"></Button>
                         </ButtonGroup>
                         <ButtonGroup>
                             <Button icon="list-ordered"></Button>
@@ -132,12 +132,12 @@ root.render(
                             <Button icon="redo"></Button>
                         </ButtonGroup>
                         <ButtonGroup>
-                            <Button icon="link-horizontal"></Button>
-                            <Button icon="unlink-horizontal"></Button>
+                            <Button icon="link"></Button>
+                            <Button icon="unlink"></Button>
                             <Button icon="image"></Button>
-                            <Button icon="html"></Button>
+                            <Button icon="code"></Button>
                         </ButtonGroup>
-                        <Button icon="table-insert"></Button>
+                        <Button icon="table-add"></Button>
                         <ButtonGroup>
                             <Button icon="table-row-insert-above"></Button>
                             <Button icon="table-row-insert-below"></Button>
@@ -157,7 +157,7 @@ root.render(
                             <ColorPicker value="red" valueIconName="foreground-color" />
                         </ToolbarItem>
                         <ToolbarItem>
-                            <ColorPicker value="fuchsia" valueIconName="paint" />
+                            <ColorPicker value="fuchsia" valueIconName="droplet" />
                         </ToolbarItem>
                         <Button icon="clear-css"></Button>
                     </EditorToolbar>
@@ -178,7 +178,7 @@ root.render(
                         </ButtonGroup>
                         <ButtonGroup disabled>
                             <Button icon="subscript" disabled></Button>
-                            <Button icon="superscript" disabled></Button>
+                            <Button icon="supscript" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
                             <Button icon="align-left" disabled></Button>
@@ -187,8 +187,8 @@ root.render(
                             <Button icon="align-justify" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="indent-increase" disabled></Button>
-                            <Button icon="indent-decrease" disabled></Button>
+                            <Button icon="indent" disabled></Button>
+                            <Button icon="outdent" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
                             <Button icon="list-ordered" disabled></Button>
@@ -208,12 +208,12 @@ root.render(
                             <Button icon="redo" disabled></Button>
                         </ButtonGroup>
                         <ButtonGroup disabled>
-                            <Button icon="link-horizontal" disabled></Button>
-                            <Button icon="unlink-horizontal" disabled></Button>
+                            <Button icon="link" disabled></Button>
+                            <Button icon="unlink" disabled></Button>
                             <Button icon="image" disabled></Button>
-                            <Button icon="html" disabled></Button>
+                            <Button icon="code" disabled></Button>
                         </ButtonGroup>
-                        <Button icon="table-insert" disabled />
+                        <Button icon="table-add" disabled />
                         <ButtonGroup disabled>
                             <Button icon="table-row-insert-below" disabled></Button>
                             <Button icon="table-column-insert-left" disabled></Button>
@@ -232,7 +232,7 @@ root.render(
                             <ColorPicker value="red" valueIconName="foreground-color" disabled />
                         </ToolbarItem>
                         <ToolbarItem>
-                            <ColorPicker value="fuchsia" valueIconName="paint" disabled />
+                            <ColorPicker value="fuchsia" valueIconName="droplet" disabled />
                         </ToolbarItem>
                         <Button icon="clear-css" disabled />
                     </EditorToolbar>

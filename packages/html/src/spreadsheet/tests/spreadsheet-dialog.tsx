@@ -25,7 +25,7 @@ root.render(
 
             <section>
 
-                <Window title="Insert comment" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
+                <Window title="Insert comment" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Update</Button>
                         <Button>Cancel</Button>
@@ -38,7 +38,7 @@ root.render(
             </section>
 
             <section>
-                <Window title="Insert image" actions={[ 'close' ]} actionButtonsAlign="start" actionButtons={
+                <Window title="Insert image" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Update</Button>
                         <Button>Cancel</Button>

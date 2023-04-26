@@ -73,14 +73,14 @@ root.render(
                                             </table>
                                             <div style={{ backgroundColor: "rgb(81, 160, 237)", borderColor: "rgb(81, 160, 237)", left: '0px', width: "888px", top: '0px' }} className="k-event k-event-inverse">
                                                 <span className="k-event-actions">
-                                                    <Icon name="caret-alt-left"></Icon>
+                                                    <Icon icon="caret-alt-left"></Icon>
                                                 </span>
                                                 <div>
                                                     <div className="k-event-template">Two Weeks in NZ</div>
                                                 </div>
                                                 <span className="k-event-actions">
-                                                    <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
-                                                    <Icon name="caret-alt-right"></Icon>
+                                                    <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
+                                                    <Icon icon="caret-alt-right"></Icon>
                                                 </span>
                                                 <span className="k-resize-handle k-resize-w"></span>
                                                 <span className="k-resize-handle k-resize-e"></span>
@@ -454,7 +454,7 @@ root.render(
                                             <div className="k-event-template">Event title</div>
                                         </div>
                                         <span className="k-event-actions">
-                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                         </span>
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
@@ -466,21 +466,21 @@ root.render(
                                             <div className="k-event-template">Event title that is long and overflows, testing multiline and overflow styles</div>
                                         </div>
                                         <span className="k-event-actions">
-                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                         </span>
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
                                     </div>
                                     <div style={{ top: "36px", height: "108px", width: "166px", left: "348px" }} className="k-event k-hover k-event-ongoing">
                                         <span className="k-event-actions">
-                                            <Icon name="arrow-rotate-cw"></Icon>
+                                            <Icon icon="arrow-rotate-cw"></Icon>
                                         </span>
                                         <div>
                                             <div className="k-event-template k-event-time">7:30 AM - 9:00 AM</div>
                                             <div className="k-event-template">Hovered Recurring event</div>
                                         </div>
                                         <span className="k-event-actions">
-                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                         </span>
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
@@ -492,7 +492,7 @@ root.render(
                                             <div className="k-event-template">Selected event</div>
                                         </div>
                                         <span className="k-event-actions">
-                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                         </span>
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
@@ -504,7 +504,7 @@ root.render(
                                             <div className="k-event-template">Custom color event</div>
                                         </div>
                                         <span className="k-event-actions">
-                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                         </span>
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
@@ -516,7 +516,7 @@ root.render(
                                             <div className="k-event-template">Drag hint</div>
                                         </div>
                                         <span className="k-event-actions">
-                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                         </span>
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
@@ -530,7 +530,7 @@ root.render(
                                         </div>
                                         <span className="k-event-actions">
                                             <a className="k-link k-event-delete">
-                                                <Icon name="x"></Icon>
+                                                <Icon icon="x"></Icon>
                                             </a>
                                         </span>
                                         <span className="k-resize-handle k-resize-n"></span>
@@ -543,10 +543,10 @@ root.render(
                                             <div className="k-event-template">Multi-Day event</div>
                                         </div>
                                         <span className="k-event-actions">
-                                            <a className="k-link k-event-delete"><Icon name="x"></Icon></a>
+                                            <a className="k-link k-event-delete"><Icon icon="x"></Icon></a>
                                         </span>
-                                        <span className="k-event-top-actions"><Icon name="caret-alt-up"></Icon></span>
-                                        <span className="k-event-bottom-actions"><Icon name="caret-alt-down"></Icon></span>
+                                        <span className="k-event-top-actions"><Icon icon="caret-alt-up"></Icon></span>
+                                        <span className="k-event-bottom-actions"><Icon icon="caret-alt-down"></Icon></span>
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
                                     </div>

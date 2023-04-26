@@ -254,20 +254,20 @@ root.render(
                                         <div className="k-calculated-field">
                                             <div className="k-calculated-field-header">
                                                 <div className="k-calculated-field-header-text">Calculated Field 1</div>
-                                                <Button fillMode="flat" icon="edit"></Button>
+                                                <Button fillMode="flat" icon="pencil"></Button>
                                                 <span className="k-spacer"></span>
                                                 <div className="k-calculated-field-header-actions">
-                                                    <Button fillMode="flat" icon="close"></Button>
+                                                    <Button fillMode="flat" icon="x"></Button>
                                                 </div>
                                             </div>
                                             <div className="k-calculated-field-content">
                                                 <Textbox showClearButton={false} placeholder="Custom function" />
                                             </div>
                                             <div className="k-calculated-field-actions">
-                                                <Icon name="formula-fx" />
+                                                <Icon icon="formula-fx" />
                                                 <DropdownList value="Custom" />
                                                 <span className="k-spacer"></span>
-                                                <Icon name="preview" />
+                                                <Icon icon="eye" />
                                                 <DropdownList value="Default" />
                                             </div>
                                         </div>
@@ -281,7 +281,7 @@ root.render(
                                                     } />
                                                 <span className="k-spacer"></span>
                                                 <div className="k-calculated-field-header-actions">
-                                                    <Button fillMode="flat" icon="close"></Button>
+                                                    <Button fillMode="flat" icon="x"></Button>
                                                 </div>
                                             </div>
                                             <div className="k-calculated-field-content">
@@ -289,15 +289,15 @@ root.render(
                                                     showClearButton={false}
                                                     value="=IF(Amount>100, 3%*Amount)"
                                                     prefix={
-                                                        <Icon name="formula-fx" />
+                                                        <Icon icon="formula-fx" />
                                                     }
                                                 />
                                             </div>
                                             <div className="k-calculated-field-actions">
-                                                <Icon name="formula-fx" />
+                                                <Icon icon="formula-fx" />
                                                 <DropdownList value="Custom" />
                                                 <span className="k-spacer"></span>
-                                                <Icon name="preview" />
+                                                <Icon icon="eye" />
                                                 <DropdownList value="Default" />
                                             </div>
                                         </div>
@@ -306,14 +306,14 @@ root.render(
                                                 <div className="k-calculated-field-header-text">Date.Calendar</div>
                                                 <span className="k-spacer"></span>
                                                 <div className="k-calculated-field-header-actions">
-                                                    <Button fillMode="flat" icon="close"></Button>
+                                                    <Button fillMode="flat" icon="x"></Button>
                                                 </div>
                                             </div>
                                             <div className="k-calculated-field-actions">
-                                                <Icon name="sum" />
+                                                <Icon icon="sum" />
                                                 <DropdownList value="SUM" />
                                                 <span className="k-spacer"></span>
-                                                <Icon name="preview" />
+                                                <Icon icon="eye" />
                                                 <DropdownList value="Default" />
                                             </div>
                                         </div>

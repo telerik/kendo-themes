@@ -26,7 +26,7 @@ root.render(
                 <div className="k-taskboard-header">
                     <div className="k-taskboard-header">
                         <Toolbar className="k-taskboard-toolbar">
-                            <Button icon="add">Add Column</Button>
+                            <Button icon="plus">Add Column</Button>
                             <span className="k-spacer"></span>
                             <Searchbox placeholder="Search..." />
                         </Toolbar>
@@ -39,9 +39,9 @@ root.render(
                                 <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                 <span className="k-spacer"></span>
                                 <div className="k-taskboard-column-header-actions">
-                                    <Button fillMode="flat" icon="edit"></Button>
-                                    <Button fillMode="flat" icon="add"></Button>
-                                    <Button fillMode="flat" icon="close"></Button>
+                                    <Button fillMode="flat" icon="pencil"></Button>
+                                    <Button fillMode="flat" icon="plus"></Button>
+                                    <Button fillMode="flat" icon="x"></Button>
                                 </div>
                             </div>
                             <div className="k-taskboard-column-cards-container">
@@ -72,9 +72,9 @@ root.render(
                                 <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                 <span className="k-spacer"></span>
                                 <div className="k-taskboard-column-header-actions">
-                                    <Button fillMode="flat" icon="edit"></Button>
-                                    <Button fillMode="flat" icon="add"></Button>
-                                    <Button fillMode="flat" icon="close"></Button>
+                                    <Button fillMode="flat" icon="pencil"></Button>
+                                    <Button fillMode="flat" icon="plus"></Button>
+                                    <Button fillMode="flat" icon="x"></Button>
                                 </div>
                             </div>
                             <div className="k-taskboard-column-cards-container">
@@ -96,9 +96,9 @@ root.render(
                                 <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                 <span className="k-spacer"></span>
                                 <div className="k-taskboard-column-header-actions">
-                                    <Button fillMode="flat" icon="edit"></Button>
-                                    <Button fillMode="flat" icon="add"></Button>
-                                    <Button fillMode="flat" icon="close"></Button>
+                                    <Button fillMode="flat" icon="pencil"></Button>
+                                    <Button fillMode="flat" icon="plus"></Button>
+                                    <Button fillMode="flat" icon="x"></Button>
                                 </div>
                             </div>
                             <div className="k-taskboard-column-cards-container">
@@ -122,7 +122,7 @@ root.render(
                         <div className="k-taskboard-pane-header-text">Card X</div>
                         <span className="k-spacer"></span>
                         <div className="k-taskboard-pane-header-actions">
-                            <Button fillMode="flat" icon="close"></Button>
+                            <Button fillMode="flat" icon="x"></Button>
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
@@ -132,7 +132,7 @@ root.render(
                     </div>
                     <ActionButtons alignment="end" className="k-taskboard-pane-actions">
                         <Button icon="trash">Delete</Button>
-                        <Button themeColor="primary" icon="edit">Edit</Button>
+                        <Button themeColor="primary" icon="pencil">Edit</Button>
                     </ActionButtons>
                 </div>
             </div>
@@ -142,7 +142,7 @@ root.render(
                 <div className="k-taskboard-header">
                     <div className="k-taskboard-header">
                         <Toolbar className="k-taskboard-toolbar">
-                            <Button icon="add">Add Column</Button>
+                            <Button icon="plus">Add Column</Button>
                             <span className="k-spacer"></span>
                             <Searchbox placeholder="Search..." />
                         </Toolbar>
@@ -155,9 +155,9 @@ root.render(
                                 <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                 <span className="k-spacer"></span>
                                 <div className="k-taskboard-column-header-actions">
-                                    <Button fillMode="flat" icon="edit"></Button>
-                                    <Button fillMode="flat" icon="add"></Button>
-                                    <Button fillMode="flat" icon="close"></Button>
+                                    <Button fillMode="flat" icon="pencil"></Button>
+                                    <Button fillMode="flat" icon="plus"></Button>
+                                    <Button fillMode="flat" icon="x"></Button>
                                 </div>
                             </div>
                             <div className="k-taskboard-column-cards-container">
@@ -188,9 +188,9 @@ root.render(
                                 <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                 <span className="k-spacer"></span>
                                 <div className="k-taskboard-column-header-actions">
-                                    <Button fillMode="flat" icon="edit"></Button>
-                                    <Button fillMode="flat" icon="add"></Button>
-                                    <Button fillMode="flat" icon="close"></Button>
+                                    <Button fillMode="flat" icon="pencil"></Button>
+                                    <Button fillMode="flat" icon="plus"></Button>
+                                    <Button fillMode="flat" icon="x"></Button>
                                 </div>
                             </div>
                             <div className="k-taskboard-column-cards-container">
@@ -212,9 +212,9 @@ root.render(
                                 <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                 <span className="k-spacer"></span>
                                 <div className="k-taskboard-column-header-actions">
-                                    <Button fillMode="flat" icon="edit"></Button>
-                                    <Button fillMode="flat" icon="add"></Button>
-                                    <Button fillMode="flat" icon="close"></Button>
+                                    <Button fillMode="flat" icon="pencil"></Button>
+                                    <Button fillMode="flat" icon="plus"></Button>
+                                    <Button fillMode="flat" icon="x"></Button>
                                 </div>
                             </div>
                             <div className="k-taskboard-column-cards-container">
@@ -238,7 +238,7 @@ root.render(
                         <div className="k-taskboard-pane-header-text">Card X</div>
                         <span className="k-spacer"></span>
                         <div className="k-taskboard-pane-header-actions">
-                            <Button fillMode="flat" icon="close"></Button>
+                            <Button fillMode="flat" icon="x"></Button>
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
@@ -248,7 +248,7 @@ root.render(
                     </div>
                     <ActionButtons alignment="end" className="k-taskboard-pane-actions">
                         <Button icon="trash">Delete</Button>
-                        <Button themeColor="primary" icon="edit">Edit</Button>
+                        <Button themeColor="primary" icon="pencil">Edit</Button>
                     </ActionButtons>
                 </div>
             </div>

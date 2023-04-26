@@ -42,7 +42,7 @@ root.render(
                             <BreadcrumbContainer>
                                 <BreadcrumbItem root>
                                     <BreadcrumbLink root icon>
-                                        <Icon name="home" />
+                                        <Icon icon="home" />
                                     </BreadcrumbLink>
                                 </BreadcrumbItem>
                             </BreadcrumbContainer>
@@ -65,7 +65,7 @@ root.render(
                                                         <span className="k-link">
                                                             <span className="k-column-title">Name</span>
                                                             <span className="k-sort-icon">
-                                                                <Icon name="sort-asc-small" />
+                                                                <Icon icon="sort-asc-small" />
                                                             </span>
                                                         </span>
                                                     </span>
@@ -99,7 +99,7 @@ root.render(
                                     <tbody className="k-table-tbody">
                                         <tr className="k-table-row">
                                             <td className="k-table-td">
-                                                <span className="k-file-preview"><Icon className="k-file-icon" name="folder" /></span>
+                                                <span className="k-file-preview"><Icon className="k-file-icon" icon="folder" /></span>
                                                 <span className="k-file-name">Folder</span>
                                             </td>
                                             <td className="k-table-td">13/12/2019 at 12:22:04 PM</td>
@@ -107,7 +107,7 @@ root.render(
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td">
-                                                <span className="k-file-preview"><Icon className="k-file-icon" name="file" /></span>
+                                                <span className="k-file-preview"><Icon className="k-file-icon" icon="file" /></span>
                                                 <span className="k-file-name">file.png</span>
                                             </td>
                                             <td className="k-table-td">13/12/2019 at 12:22:04 PM</td>
@@ -160,7 +160,7 @@ root.render(
                             <BreadcrumbContainer>
                                 <BreadcrumbItem root>
                                     <BreadcrumbLink root icon>
-                                        <Icon name="home" />
+                                        <Icon icon="home" />
                                     </BreadcrumbLink>
                                 </BreadcrumbItem>
                             </BreadcrumbContainer>
@@ -184,7 +184,7 @@ root.render(
                                                             <span className="k-link">
                                                                 <span className="k-column-title">Name</span>
                                                                 <span className="k-sort-icon">
-                                                                    <Icon name="sort-asc-small" />
+                                                                    <Icon icon="sort-asc-small" />
                                                                 </span>
                                                             </span>
                                                         </span>
@@ -218,7 +218,7 @@ root.render(
                                         <tbody className="k-table-tbody">
                                             <tr className="k-table-row">
                                                 <td className="k-table-td">
-                                                    <span className="k-file-preview"><Icon className="k-file-icon" name="folder" /></span>
+                                                    <span className="k-file-preview"><Icon className="k-file-icon" icon="folder" /></span>
                                                     <span className="k-file-name">Folder</span>
                                                 </td>
                                                 <td className="k-table-td">13/12/2019 at 12:22:04 PM</td>
@@ -226,7 +226,7 @@ root.render(
                                             </tr>
                                             <tr className="k-table-row k-table-alt-row k-alt">
                                                 <td className="k-table-td">
-                                                    <span className="k-file-preview"><Icon className="k-file-icon" name="file" /></span>
+                                                    <span className="k-file-preview"><Icon className="k-file-icon" icon="file" /></span>
                                                     <span className="k-file-name">file.png</span>
                                                 </td>
                                                 <td className="k-table-td">13/12/2019 at 12:22:04 PM</td>

@@ -36,7 +36,7 @@ export const ColorPreview = (
             )}
         >
             {iconName && (
-                <Icon name={iconName} className="k-color-preview-icon" />
+                <Icon icon={iconName} className="k-color-preview-icon" />
             )}
             <span
                 className="k-color-preview-mask"

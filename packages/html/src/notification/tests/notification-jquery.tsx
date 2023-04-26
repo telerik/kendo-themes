@@ -54,22 +54,22 @@ root.render(
             </div>
             <div>
                 <div className="k-animation-container">
-                    <Notification themeColor="info" text="Info notification" icon="info" />
+                    <Notification themeColor="info" text="Info notification" icon="info-circle" />
                 </div>
             </div>
             <div>
                 <div className="k-animation-container">
-                    <Notification themeColor="success" text="Success notification" icon="success" />
+                    <Notification themeColor="success" text="Success notification" icon="check-outline" />
                 </div>
             </div>
             <div>
                 <div className="k-animation-container">
-                    <Notification themeColor="warning" text="Warning notification" icon="warning" />
+                    <Notification themeColor="warning" text="Warning notification" icon="exclamation-circle" />
                 </div>
             </div>
             <div>
                 <div className="k-animation-container">
-                    <Notification themeColor="error" text="Error notification" icon="error" />
+                    <Notification themeColor="error" text="Error notification" icon="x-outline" />
                 </div>
             </div>
             <div>
@@ -116,22 +116,22 @@ root.render(
             </div>
             <div dir="rtl">
                 <div className="k-animation-container">
-                    <Notification themeColor="info" text="Info notification" icon="info" />
+                    <Notification themeColor="info" text="Info notification" icon="info-circle" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-animation-container">
-                    <Notification themeColor="success" text="Success notification" icon="success" />
+                    <Notification themeColor="success" text="Success notification" icon="check-outline" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-animation-container">
-                    <Notification themeColor="warning" text="Warning notification" icon="warning" />
+                    <Notification themeColor="warning" text="Warning notification" icon="exclamation-circle" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-animation-container">
-                    <Notification themeColor="error" text="Error notification" icon="error" />
+                    <Notification themeColor="error" text="Error notification" icon="x-outline" />
                 </div>
             </div>
             <div dir="rtl">

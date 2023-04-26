@@ -26,40 +26,40 @@ root.render(
             <section>
                 <ActionSheet side="left" title="Left action sheet">
                     <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="cog" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="cog" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="cog" disabled />
+                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
+                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
+                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
+                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
                     </ActionSheetItems>
                 </ActionSheet>
             </section>
             <section>
                 <ActionSheet side="right" title="Right action sheet">
                     <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="cog" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="cog" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="cog" disabled />
+                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
+                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
+                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
+                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
                     </ActionSheetItems>
                 </ActionSheet>
             </section>
             <section>
                 <ActionSheet side="top" title="Top action sheet">
                     <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="cog" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="cog" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="cog" disabled />
+                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
+                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
+                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
+                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
                     </ActionSheetItems>
                 </ActionSheet>
             </section>
             <section>
                 <ActionSheet side="bottom" title="Bottom action sheet">
                     <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="cog" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="cog" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="cog" disabled />
+                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
+                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
+                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
+                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
                     </ActionSheetItems>
                 </ActionSheet>
             </section>

@@ -123,4 +123,9 @@
         }
     }
 
+    // Popup
+    .k-fab-popup {
+        @include box-shadow( none );
+    }
+
 }

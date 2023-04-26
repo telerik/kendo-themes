@@ -132,7 +132,8 @@
         align-items: center;
         flex: 1;
 
-        > .k-i-formula-fx {
+        > .k-icon,
+        > .k-svg-icon {
             padding-inline: var( --kendo-padding-y, #{$kendo-padding-md-y} );
             padding-block: 0;
             box-sizing: content-box;
