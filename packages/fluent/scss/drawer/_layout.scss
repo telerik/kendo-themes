@@ -195,16 +195,6 @@
             }
         }
 
-        .k-icon {
-            height: auto;
-            font-size: var( --kendo-drawer-icon-size, #{$kendo-drawer-icon-size} );
-        }
-
-        .k-svg-icon {
-            width: var( --kendo-drawer-icon-size, #{$kendo-drawer-icon-size} );
-            height: var( --kendo-drawer-icon-size, #{$kendo-drawer-icon-size} );
-        }
-
         .k-item-text {
             display: inline-block;
             white-space: nowrap;

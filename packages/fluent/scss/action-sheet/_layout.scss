@@ -186,10 +186,6 @@
         gap: var( --kendo-actionsheet-item-spacing, #{$kendo-actionsheet-item-spacing} );
     }
 
-    .k-actionsheet-item-icon {
-        font-size: var( --kendo-actionsheet-item-icon-size, #{$kendo-actionsheet-item-icon-size} );
-    }
-
     .k-actionsheet-item-text {
         display: flex;
         flex-flow: column nowrap;

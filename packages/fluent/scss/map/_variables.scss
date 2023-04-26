@@ -80,9 +80,6 @@ $kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75 ) !default
 /// @group map
 $kendo-map-attribution-bg: $kendo-color-white !default;
 
-/// Map marker size.
-/// @group map
-$kendo-map-marker-size: var( --kendo-icon-size-xxl, 2rem ) !default;
 /// Map marker fill color.
 /// @group map
 $kendo-map-marker-fill: get-theme-color-var( primary-100 ) !default;

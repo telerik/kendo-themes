@@ -165,10 +165,6 @@
 
             .k-file-icon-wrapper {
 
-                .k-file-icon {
-                    font-size: $kendo-upload-group-icon-size;
-                }
-
                 .k-file-state {
                     position: absolute;
                 }
@@ -180,7 +176,7 @@
         }
 
         .k-upload-files .k-file-info {
-            min-height: $kendo-upload-group-icon-size;
+            min-height: $kendo-icon-size-xxl;
             display: block;
             overflow: hidden;
             flex: 1 0 0;
@@ -189,7 +185,7 @@
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-info {
             margin-inline-start: $kendo-padding-md-x;
-            min-height: $kendo-upload-group-icon-size;
+            min-height: $kendo-icon-size-xxl;
             display: block;
             overflow: hidden;
             flex: 1 0 0;

@@ -112,9 +112,6 @@ $kendo-actionsheet-item-border-width: 1px !default;
 /// @group action-sheet
 $kendo-actionsheet-item-spacing: map.get( $kendo-spacing, 2 ) !default;
 
-/// Size of the action sheet item icon.
-/// @group action-sheet
-$kendo-actionsheet-item-icon-size: var( --kendo-icon-size, 1rem ) !default;
 /// Color of the action sheet item icon.
 /// @group action-sheet
 $kendo-actionsheet-item-icon-color: get-theme-color-var( primary-110 ) !default;

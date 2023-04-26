@@ -26,10 +26,7 @@ $kendo-splitter-border: var( --kendo-component-border, initial ) !default;
 
 /// Size of the splitter splitbar.
 /// @group splitter
-$kendo-splitter-splitbar-size: map.get( $kendo-spacing, 2 ) !default;
-/// Icon size of the splitter splitbar.
-/// @group splitter
-$kendo-splitter-resize-icon-size: map.get( $kendo-spacing, 2.5 ) !default;
+$kendo-splitter-splitbar-size: map.get( $kendo-spacing, 3 ) !default;
 /// Length of the splitter drag handle.
 /// @group splitter
 $kendo-splitter-drag-handle-length: map.get( $kendo-spacing, 5 ) !default;

@@ -39,7 +39,6 @@
         // Marker
         .k-marker {
             transform: translate(-50%, -100%);
-            font-size: var( --kendo-map-marker-size, #{$kendo-map-marker-size} );
             cursor: pointer;
             position: absolute;
             overflow: visible;

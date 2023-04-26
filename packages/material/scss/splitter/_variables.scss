@@ -8,8 +8,7 @@ $kendo-splitter-bg: $kendo-component-bg !default;
 $kendo-splitter-text: $kendo-component-text !default;
 $kendo-splitter-border: $kendo-component-border !default;
 
-$kendo-splitter-splitbar-size: 8px !default;
-$kendo-splitter-resize-icon-size: 10px !default;
+$kendo-splitter-splitbar-size: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-splitter-drag-handle-length: 20px !default;
 $kendo-splitter-drag-handle-thickness: 2px !default;
 $kendo-splitter-drag-icon-margin: 7px !default;

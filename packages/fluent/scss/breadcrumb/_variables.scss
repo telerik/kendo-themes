@@ -166,10 +166,6 @@ $kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-link-padding-x !default
 /// @group breadcrumb
 $kendo-breadcrumb-icon-link-padding-y: $kendo-breadcrumb-icon-link-padding-x !default;
 
-/// The font size of the breadcrumb delimiter icon
-/// @group breadcrumb
-$kendo-breadcrumb-delimiter-icon-font-size: var( --kendo-font-size-sm, inherit ) !default;
-
 // Root link spacing
 $kendo-breadcrumb-root-link-spacing: 0px !default;
 $kendo-breadcrumb-link-icon-spacing: var( --kendo-icon-spacing, #{$kendo-icon-spacing} ) !default;

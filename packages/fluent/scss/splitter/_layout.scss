@@ -61,15 +61,6 @@
             cursor: pointer;
         }
 
-        .k-icon {
-            font-size: var( --kendo-splitter-resize-icon-size, #{$kendo-splitter-resize-icon-size} );
-        }
-
-        .k-svg-icon {
-            width: var( --kendo-splitter-resize-icon-size, #{$kendo-splitter-resize-icon-size} );
-            height: var( --kendo-splitter-resize-icon-size, #{$kendo-splitter-resize-icon-size} );
-        }
-
     }
 
     .k-splitbar-draggable-horizontal { cursor: col-resize; }
