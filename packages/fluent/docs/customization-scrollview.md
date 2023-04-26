@@ -278,16 +278,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-arrow-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size-xxl, 2rem ) * 2 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Scrollview arrow arrows size.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scrollview-navigation-color</td>
     <td></td>
     <td><code>$kendo-color-white</code></td>

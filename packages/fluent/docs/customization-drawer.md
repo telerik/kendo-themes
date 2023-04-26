@@ -228,16 +228,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-drawer-icon-size</td>
-    <td></td>
-    <td><code>var( --kendo-icon-size, 1rem )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon size of the drawer item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-drawer-icon-padding-x</td>
     <td></td>
     <td><code>0</code></td>
@@ -260,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-mini-initial-width</td>
     <td></td>
-    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size} )</code></td>
+    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) )</code></td>
     <td></td>
 </tr>
 <tr>

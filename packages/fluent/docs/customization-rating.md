@@ -167,16 +167,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected hover color of the rating item.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-rating-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height-md} )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon size of the rating.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

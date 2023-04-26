@@ -816,16 +816,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-actionsheet-item-icon-size</td>
-    <td></td>
-    <td><code>var( --kendo-icon-size, 1rem )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the action sheet item icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-actionsheet-item-icon-color</td>
     <td></td>
     <td><code>get-theme-color-var( primary-110 )</code></td>
@@ -1492,16 +1482,6 @@ The following table lists the available variables for customizing the Fluent the
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-bottom-nav-item-icon-size</td>
-    <td></td>
-    <td><code>map.get( $kendo-spacing, 6 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the focused bottom navigation item icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-bottom-nav-item-focus-offset</td>
     <td></td>
     <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
@@ -1704,7 +1684,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-item-min-height</td>
     <td></td>
-    <td><code>calc( #{$kendo-bottom-nav-item-icon-size} + #{$kendo-bottom-nav-item-icon-size} + (#{$kendo-bottom-nav-item-padding-y} * 2) )</code></td>
+    <td><code>calc( var( --kendo-icon-size, 1.5rem ) * 2 + (#{$kendo-bottom-nav-item-padding-y} * 2) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2269,16 +2249,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the breadcrumb link icon</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-breadcrumb-delimiter-icon-font-size</td>
-    <td></td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the breadcrumb delimiter icon</div></div>
     </td>
 </tr>
 </tbody>
@@ -7864,16 +7834,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-drawer-icon-size</td>
-    <td></td>
-    <td><code>var( --kendo-icon-size, 1rem )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon size of the drawer item.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-drawer-icon-padding-x</td>
     <td></td>
     <td><code>0</code></td>
@@ -7896,7 +7856,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-mini-initial-width</td>
     <td></td>
-    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size} )</code></td>
+    <td><code>calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8201,16 +8161,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the dropzone.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-dropzone-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * 3 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -9154,16 +9104,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-file-manager-listview-item-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * 3 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the listview item icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-file-manager-listview-item-icon-bg</td>
     <td></td>
     <td><code>transparent</code></td>
@@ -9371,16 +9311,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the preview.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-file-manager-preview-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * 6 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the preview icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -16340,16 +16270,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-map-marker-size</td>
-    <td></td>
-    <td><code>var( --kendo-icon-size-xxl, 2rem )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map marker size.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-map-marker-fill</td>
     <td></td>
     <td><code>get-theme-color-var( primary-100 )</code></td>
@@ -19234,16 +19154,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-pdf-viewer-icon-size</td>
-    <td></td>
-    <td><code>$kendo-dropzone-icon-size</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the PDF viewer icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pdf-viewer-icon-text</td>
     <td></td>
     <td><code>$kendo-dropzone-icon-text</code></td>
@@ -21352,16 +21262,6 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected hover color of the rating item.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-rating-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height-md} )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon size of the rating.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -22453,16 +22353,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-arrow-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size-xxl, 2rem ) * 2 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Scrollview arrow arrows size.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scrollview-navigation-color</td>
     <td></td>
     <td><code>$kendo-color-white</code></td>
@@ -23535,21 +23425,11 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitter-splitbar-size</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td><code>map.get( $kendo-spacing, 3 )</code></td>
     <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the splitter splitbar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-splitter-resize-icon-size</td>
-    <td></td>
-    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon size of the splitter splitbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -29136,16 +29016,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the icons in the upload.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-upload-group-icon-size</td>
-    <td></td>
-    <td><code>var( --kendo-icon-size-xxl, 2rem )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the file icons in the upload.</div></div>
     </td>
 </tr>
 <tr>

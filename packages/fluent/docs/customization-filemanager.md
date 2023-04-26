@@ -288,16 +288,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-file-manager-listview-item-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * 3 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the listview item icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-file-manager-listview-item-icon-bg</td>
     <td></td>
     <td><code>transparent</code></td>
@@ -505,16 +495,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the preview.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-file-manager-preview-icon-size</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) * 6 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the preview icon.</div></div>
     </td>
 </tr>
 <tr>

@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-bottom-nav-item-min-height</td>
     <td></td>
-    <td><code>calc( #{$kendo-bottom-nav-item-icon-size} + #{$kendo-bottom-nav-item-icon-size} + (#{$kendo-bottom-nav-item-padding-y} * 2) )</code></td>
+    <td><code>calc( var( --kendo-icon-size, 1.5rem ) * 2 + (#{$kendo-bottom-nav-item-padding-y} * 2) )</code></td>
     <td></td>
 </tr>
 <tr>

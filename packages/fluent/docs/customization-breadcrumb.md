@@ -547,16 +547,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the breadcrumb link icon</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-breadcrumb-delimiter-icon-font-size</td>
-    <td></td>
-    <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the breadcrumb delimiter icon</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

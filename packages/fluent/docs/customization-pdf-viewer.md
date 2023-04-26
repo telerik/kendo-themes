@@ -318,16 +318,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-pdf-viewer-icon-size</td>
-    <td></td>
-    <td><code>$kendo-dropzone-icon-size</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the PDF viewer icon.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pdf-viewer-icon-text</td>
     <td></td>
     <td><code>$kendo-dropzone-icon-text</code></td>
