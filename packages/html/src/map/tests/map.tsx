@@ -23,7 +23,7 @@ root.render(
                     <div className="km-scroll-header"></div>
                     <div className="km-scroll-container" style={{ transformOrigin: "left top 0px" }}>
                         <div className="k-layer" style={{ zIndex: "1000" }}>
-                            <Icon className="k-marker" icon="map-marker-target" style={{ zIndex: "1000", left: "500px", top: "300px" }} />
+                            <Icon className="k-marker" icon="map-marker-target" size="xxlarge" style={{ zIndex: "1000", left: "500px", top: "300px" }} />
                         </div>
                         <div className="k-layer"></div>
                     </div>

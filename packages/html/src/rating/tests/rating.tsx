@@ -18,22 +18,22 @@ root.render(
                 <span className="k-rating k-widget">
                     <span className="k-rating-container">
                         <span className="k-rating-item k-hover">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-hover">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-hover">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                             <span className="k-rating-precision-part" style={{ width: `calc( --var() )` }}>
-                                <Icon icon="star"></Icon>
+                                <Icon icon="star" size="xlarge"></Icon>
                             </span>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -42,19 +42,19 @@ root.render(
                 <span className="k-rating k-widget">
                     <span className="k-rating-container">
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-hover">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -65,19 +65,19 @@ root.render(
                 <span className="k-rating k-widget k-focus">
                     <span className="k-rating-container">
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected k-focus">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -86,19 +86,19 @@ root.render(
                 <span className="k-rating k-widget k-focus">
                     <span className="k-rating-container">
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected k-focus">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -109,19 +109,19 @@ root.render(
                 <span className="k-rating k-widget">
                     <span className="k-rating-container">
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -130,19 +130,19 @@ root.render(
                 <span className="k-rating k-widget">
                     <span className="k-rating-container">
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -153,19 +153,19 @@ root.render(
                 <span className="k-rating k-widget">
                     <span className="k-rating-container">
                         <span className="k-rating-item k-selected k-hover">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected k-hover">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected k-hover">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -174,19 +174,19 @@ root.render(
                 <span className="k-rating k-widget">
                     <span className="k-rating-container">
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected k-hover">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -197,19 +197,19 @@ root.render(
                 <span className="k-rating k-widget">
                     <span className="k-rating-container">
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                     <span className="k-rating-label">
@@ -221,22 +221,22 @@ root.render(
                 <span className="k-rating k-widget">
                     <span className="k-rating-container">
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                             <span className="k-rating-precision-part" style={{ clipPath: "inset(0px 50% 0px 0px)" }}>
-                                <Icon icon="star"></Icon>
+                                <Icon icon="star" size="xlarge"></Icon>
                             </span>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                     <span className="k-rating-label">
@@ -251,19 +251,19 @@ root.render(
                     <span className="k-rating k-widget k-focus">
                         <span className="k-rating-container">
                             <span className="k-rating-item k-selected">
-                                <Icon icon="star"></Icon>
+                                <Icon icon="star" size="xlarge"></Icon>
                             </span>
                             <span className="k-rating-item k-selected">
-                                <Icon icon="star"></Icon>
+                                <Icon icon="star" size="xlarge"></Icon>
                             </span>
                             <span className="k-rating-item k-selected k-focus">
-                                <Icon icon="star"></Icon>
+                                <Icon icon="star" size="xlarge"></Icon>
                             </span>
                             <span className="k-rating-item">
-                                <Icon icon="star-outline"></Icon>
+                                <Icon icon="star-outline" size="xlarge"></Icon>
                             </span>
                             <span className="k-rating-item">
-                                <Icon icon="star-outline"></Icon>
+                                <Icon icon="star-outline" size="xlarge"></Icon>
                             </span>
                         </span>
                     </span>
@@ -274,19 +274,19 @@ root.render(
                     <span className="k-rating k-widget k-focus">
                         <span className="k-rating-container">
                             <span className="k-rating-item">
-                                <Icon icon="star-outline"></Icon>
+                                <Icon icon="star-outline" size="xlarge"></Icon>
                             </span>
                             <span className="k-rating-item k-selected k-focus">
-                                <Icon icon="star"></Icon>
+                                <Icon icon="star" size="xlarge"></Icon>
                             </span>
                             <span className="k-rating-item">
-                                <Icon icon="star-outline"></Icon>
+                                <Icon icon="star-outline" size="xlarge"></Icon>
                             </span>
                             <span className="k-rating-item">
-                                <Icon icon="star-outline"></Icon>
+                                <Icon icon="star-outline" size="xlarge"></Icon>
                             </span>
                             <span className="k-rating-item">
-                                <Icon icon="star-outline"></Icon>
+                                <Icon icon="star-outline" size="xlarge"></Icon>
                             </span>
                         </span>
                     </span>
@@ -365,19 +365,19 @@ root.render(
                 <span className="k-rating k-widget k-readonly">
                     <span className="k-rating-container">
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>
@@ -386,19 +386,19 @@ root.render(
                 <span className="k-rating k-widget k-readonly">
                     <span className="k-rating-container">
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item k-selected">
-                            <Icon icon="star"></Icon>
+                            <Icon icon="star" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                         <span className="k-rating-item">
-                            <Icon icon="star-outline"></Icon>
+                            <Icon icon="star-outline" size="xlarge"></Icon>
                         </span>
                     </span>
                 </span>

@@ -117,7 +117,7 @@ root.render(
                     {/* Preview */}
                     <div className="k-filemanager-preview">
                         <div className="k-file-info">
-                            <span className="k-file-preview"><Icon className="k-file-icon" icon="file-image" /></span>
+                            <span className="k-file-preview"><Icon className="k-file-icon" icon="file-image" size="xxxlarge" /></span>
                             <span className="k-file-name k-single-file-selected">file.png</span>
                             <dl className="k-file-meta">
                                 <dt className="k-file-meta-label">Type: </dt>
@@ -247,7 +247,7 @@ root.render(
                     {/* Preview */}
                     <div className="k-filemanager-preview" style={{ width: "234px" }}>
                         <div className="k-file-info">
-                            <span className="k-file-preview"><Icon className="k-file-icon" icon="none" /></span>
+                            <span className="k-file-preview"><Icon className="k-file-icon" icon="none" size="xxxlarge" /></span>
                             <span className="k-file-name k-no-file-selected">No File Selected</span>
                         </div>
                     </div>
@@ -358,7 +358,7 @@ root.render(
                     {/* Preview */}
                     <div className="k-filemanager-preview">
                         <div className="k-file-info">
-                            <span className="k-file-preview"><Icon className="k-file-icon" icon="file" /></span>
+                            <span className="k-file-preview"><Icon className="k-file-icon" icon="file" size="xxxlarge" /></span>
                             <span className="k-file-name k-multiple-files-selected">3 items</span>
                         </div>
                     </div>

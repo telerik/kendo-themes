@@ -32,19 +32,19 @@ root.render(
                 <h4>Bottom Navigation with BUTTON</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border flow="vertical">
                     <button className="k-bottom-nav-item">
-                        <Icon className="k-bottom-nav-item-icon" icon="envelop" />
+                        <Icon className="k-bottom-nav-item-icon" icon="envelop" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Normal</span>
                     </button>
                     <button className="k-bottom-nav-item k-focus">
-                        <Icon className="k-bottom-nav-item-icon" icon="envelop" />
+                        <Icon className="k-bottom-nav-item-icon" icon="envelop" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Focused</span>
                     </button>
                     <button className="k-bottom-nav-item k-selected">
-                        <Icon className="k-bottom-nav-item-icon" icon="envelop" />
+                        <Icon className="k-bottom-nav-item-icon" icon="envelop" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Selected</span>
                     </button>
                     <button className="k-bottom-nav-item k-disabled">
-                        <Icon className="k-bottom-nav-item-icon" icon="envelop" />
+                        <Icon className="k-bottom-nav-item-icon" icon="envelop" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </button>
                 </BottomNav>
@@ -54,19 +54,19 @@ root.render(
                 <h4>Bottom Navigation with A</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border flow="vertical">
                     <a className="k-bottom-nav-item">
-                        <Icon className="k-bottom-nav-item-icon" icon="envelop" />
+                        <Icon className="k-bottom-nav-item-icon" icon="envelop" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Normal</span>
                     </a>
                     <a className="k-bottom-nav-item k-focus" href="#">
-                        <Icon className="k-bottom-nav-item-icon" icon="envelop" />
+                        <Icon className="k-bottom-nav-item-icon" icon="envelop" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Focused</span>
                     </a>
                     <a className="k-bottom-nav-item k-selected">
-                        <Icon className="k-bottom-nav-item-icon" icon="envelop" />
+                        <Icon className="k-bottom-nav-item-icon" icon="envelop" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Selected</span>
                     </a>
                     <a className="k-bottom-nav-item k-disabled">
-                        <Icon className="k-bottom-nav-item-icon" icon="envelop" />
+                        <Icon className="k-bottom-nav-item-icon" icon="envelop" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </a>
                 </BottomNav>

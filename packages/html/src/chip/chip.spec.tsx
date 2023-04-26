@@ -91,7 +91,7 @@ export const Chip = (
                 }),
             )}
         >
-            {icon && <Icon className="k-chip-icon" icon={icon} /> }
+            {icon && <Icon className="k-chip-icon" icon={icon} size="small" /> }
             {showAvatar && (
                 <Avatar className="k-chip-avatar" type="image" >
                     <img src="/packages/html/assets/avatar.jpg" />

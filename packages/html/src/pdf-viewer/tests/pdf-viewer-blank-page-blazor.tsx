@@ -31,7 +31,7 @@ root.render(
                 <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto">
                     <div className="k-pdf-viewer-pages">
                         <div className="k-page k-blank-page">
-                            <Icon icon="folder-open"></Icon>
+                            <Icon icon="folder-open" size="xxxlarge"></Icon>
                             <Upload async empty></Upload>
                         </div>
                     </div>

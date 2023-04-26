@@ -57,11 +57,11 @@ root.render(
                         <div className="k-widget k-listview k-selectable k-filemanager-listview">
                             <div className="k-listview-content k-d-flex k-flex-row k-flex-wrap">
                                 <div className="k-listview-item">
-                                    <span className="k-file-preview"><Icon className="k-file-icon" icon="folder" /></span>
+                                    <span className="k-file-preview"><Icon className="k-file-icon" icon="folder" size="xxxlarge" /></span>
                                     <span className="k-file-name">Folder</span>
                                 </div>
                                 <div className="k-listview-item k-selected">
-                                    <span className="k-file-preview"><Icon className="k-file-icon" icon="file-image" /></span>
+                                    <span className="k-file-preview"><Icon className="k-file-icon" icon="file-image" size="xxxlarge" /></span>
                                     <span className="k-file-name">file.png</span>
                                 </div>
                             </div>

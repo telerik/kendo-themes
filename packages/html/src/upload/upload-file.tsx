@@ -49,7 +49,7 @@ export const UploadFile = (
                     }
                 )} value={progress} label={false} />
                 <span className="k-file-icon-wrapper">
-                    <Icon className="k-file-icon" icon={icon}></Icon>
+                    <Icon className="k-file-icon" icon={icon} size="xxlarge"></Icon>
                     {state && <span className="k-file-state">{state}</span>}
                 </span>
                 <UploadFileInfo name={name} size={size} validationMsg={validationMsg}></UploadFileInfo>
