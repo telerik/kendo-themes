@@ -45,7 +45,7 @@ export const BottomNavItem = (
                 disabled
             })
         )}>
-            { icon && <Icon className="k-bottom-nav-item-icon" icon={icon} /> }
+            { icon && <Icon className="k-bottom-nav-item-icon" icon={icon} size="xlarge" /> }
 
             { text && <span className="k-bottom-nav-item-text">{text}</span> }
 

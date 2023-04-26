@@ -43,7 +43,7 @@ export const UploadFileMultiple = (
                     }
                 )} value={progress} label={false} />
                 <span className="k-file-icon-wrapper">
-                    <Icon className="k-file-icon" icon="copy"></Icon>
+                    <Icon className="k-file-icon" icon="copy" size="xxlarge"></Icon>
                 </span>
                 <div className="k-multiple-files-wrapper">
                     {props.children}
