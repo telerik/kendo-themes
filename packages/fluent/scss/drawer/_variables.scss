@@ -65,9 +65,6 @@ $kendo-drawer-item-level-padding-x: $kendo-drawer-item-padding-x !default;
 /// @group drawer
 $kendo-drawer-item-level-count: 5 !default;
 
-/// Icon size of the drawer item.
-/// @group drawer
-$kendo-drawer-icon-size: var( --kendo-icon-size, 1rem ) !default;
 /// Horizontal padding of the drawer icon.
 /// @group drawer
 $kendo-drawer-icon-padding-x: 0 !default;
@@ -77,7 +74,7 @@ $kendo-drawer-icon-padding-y: map.get( $kendo-spacing, 1 ) !default;
 
 /// Initial width of the mini drawer.
 /// @group drawer
-$kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size} ) !default;
+$kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + var( --kendo-icon-size, 1rem ) ) !default;
 
 /// The border width of the drawer item ripple
 /// @group drawer

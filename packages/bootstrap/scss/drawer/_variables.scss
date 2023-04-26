@@ -23,11 +23,10 @@ $kendo-drawer-item-line-height: $kendo-line-height-lg !default;
 $kendo-drawer-item-level-padding-x: $kendo-drawer-item-padding-x !default;
 $kendo-drawer-item-level-count: 5 !default;
 
-$kendo-drawer-icon-size: $kendo-icon-size !default;
 $kendo-drawer-icon-padding-x: 0 !default;
 $kendo-drawer-icon-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
-$kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size} ) !default;
+$kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-icon-size} ) !default;
 
 $kendo-drawer-hover-bg: $kendo-hover-bg !default;
 $kendo-drawer-hover-text: $kendo-hover-text !default;

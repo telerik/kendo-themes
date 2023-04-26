@@ -160,9 +160,6 @@
         align-items: flex-start;
         gap: $kendo-actionsheet-item-spacing;
     }
-    .k-actionsheet-item-icon {
-        font-size: $kendo-actionsheet-item-icon-size;
-    }
     .k-actionsheet-item-text {
         display: flex;
         flex-flow: column nowrap;

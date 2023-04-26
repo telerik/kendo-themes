@@ -101,11 +101,6 @@
             justify-content: center;
         }
 
-        // File icon
-        .k-file-icon {
-            font-size: $kendo-file-manager-listview-item-icon-size;
-        }
-
         // File name
         .k-file-name {
             margin-top: k-math-div( $kendo-file-manager-spacer, 2 );
@@ -152,7 +147,7 @@
     .k-filemanager-preview {
         padding: ($kendo-file-manager-preview-padding-y * 3) $kendo-file-manager-preview-padding-x $kendo-file-manager-preview-padding-y;
         width: $kendo-file-manager-preview-width;
-        min-height: calc( #{$kendo-file-manager-preview-padding-y * 4} + #{$kendo-file-manager-preview-icon-size * 2} + #{$kendo-file-manager-preview-spacing * 3} );
+        min-height: calc( #{$kendo-file-manager-preview-padding-y * 4} + #{$kendo-icon-size-xxxl} * 2 + #{$kendo-file-manager-preview-spacing * 3} );
         border-width: 0;
         border-left-width: $kendo-file-manager-preview-border-width;
         border-style: solid;
@@ -167,11 +162,6 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-        }
-
-        // File icon
-        .k-file-icon {
-            font-size: $kendo-file-manager-preview-icon-size;
         }
 
         // File name

@@ -169,10 +169,6 @@
 
             .k-file-icon-wrapper {
 
-                .k-file-icon {
-                    font-size: var( --kendo-upload-group-icon-size, #{$kendo-upload-group-icon-size} );
-                }
-
                 .k-file-state {
                     position: absolute;
                 }
@@ -182,7 +178,7 @@
         .k-upload-files .k-file-info {
             margin-inline-start: 0;
             margin-inline-end: 0;
-            min-height: var( --kendo-upload-group-icon-size, #{$kendo-upload-group-icon-size} );
+            min-height: var( --kendo-icon-size-xxl, 2rem );
             display: block;
             overflow: hidden;
             flex: 1 0 0;
@@ -192,7 +188,7 @@
         .k-file-single > .k-file-info {
             margin-inline-start: var( --kendo-padding-x, #{$kendo-padding-md-x} );
             margin-inline-end: 0;
-            min-height: var( --kendo-upload-group-icon-size, #{$kendo-upload-group-icon-size} );
+            min-height: var( --kendo-icon-size-xxl, 2rem );
             display: block;
             overflow: hidden;
             flex: 1 0 0;

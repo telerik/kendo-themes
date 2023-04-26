@@ -105,9 +105,6 @@ $kendo-file-manager-listview-item-width: 120px !default;
 /// @group filemanager
 $kendo-file-manager-listview-item-height: 120px !default;
 
-/// Size of the listview item icon.
-/// @group filemanager
-$kendo-file-manager-listview-item-icon-size: calc( var( --kendo-icon-size, 1rem ) * 3 ) !default;
 /// Background color of the listview item icon.
 /// @group filemanager
 $kendo-file-manager-listview-item-icon-bg: transparent !default;
@@ -174,9 +171,6 @@ $kendo-file-manager-preview-text: inherit !default;
 /// @group filemanager
 $kendo-file-manager-preview-border: inherit !default;
 
-/// Size of the preview icon.
-/// @group filemanager
-$kendo-file-manager-preview-icon-size: calc( var( --kendo-icon-size, 1rem ) * 6 ) !default;
 /// Background color of the preview icon.
 /// @group filemanager
 $kendo-file-manager-preview-icon-bg: transparent !default;

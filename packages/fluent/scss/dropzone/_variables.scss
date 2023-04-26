@@ -35,9 +35,6 @@ $kendo-dropzone-text: var( --kendo-component-text, inherit ) !default;
 /// @group dropzone
 $kendo-dropzone-border: var( --kendo-component-border, initial ) !default;
 
-/// Size of the icon.
-/// @group dropzone
-$kendo-dropzone-icon-size: calc( var( --kendo-icon-size, 1rem ) * 3 ) !default;
 /// Spacing below the icon.
 /// @group dropzone
 $kendo-dropzone-icon-spacing: map.get( $kendo-spacing, 6 ) !default;

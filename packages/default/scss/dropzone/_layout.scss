@@ -24,15 +24,8 @@
         justify-content: center;
         position: relative;
 
-        .k-icon,
         .k-dropzone-icon {
             margin-bottom: $kendo-dropzone-icon-spacing;
-            font-size: $kendo-dropzone-icon-size;
-        }
-
-        .k-svg-icon {
-            width: $kendo-dropzone-icon-size;
-            height: $kendo-dropzone-icon-size;
         }
 
         .k-dropzone-hint {

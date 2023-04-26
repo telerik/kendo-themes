@@ -45,7 +45,3 @@ $kendo-rating-item-selected-text: get-theme-color-var( neutral-160 ) !default;
 /// Selected hover color of the rating item.
 /// @group rating
 $kendo-rating-item-selected-hover-text: get-theme-color-var( primary-120 ) !default;
-
-/// Icon size of the rating.
-/// @group rating
-$kendo-rating-icon-size: calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height-md} ) !default;

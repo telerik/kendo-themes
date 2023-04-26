@@ -69,15 +69,12 @@
             line-height: normal;
 
             .k-icon {
-                font-size: $kendo-font-size-sm;
                 padding: calc( #{$kendo-font-size-md} - #{$kendo-font-size-sm} );
                 box-sizing: content-box;
                 vertical-align: unset;
             }
 
             .k-svg-icon {
-                width: $kendo-font-size-sm;
-                height: $kendo-font-size-sm;
                 padding: calc( #{$kendo-font-size-md} - #{$kendo-font-size-sm} );
                 box-sizing: content-box;
                 vertical-align: unset;

@@ -1,4 +1,4 @@
-@use "../icon/_variables.scss"as *;
+@use "../icon/_variables.scss" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-file-manager--layout() {
@@ -104,11 +104,6 @@
             justify-content: center;
         }
 
-        // File icon
-        .k-file-icon {
-            font-size: var( --kendo-file-manager-listview-item-icon-size, #{$kendo-file-manager-listview-item-icon-size} );
-        }
-
         // File name
         .k-file-name {
             margin-block-start: calc( var( --kendo-file-manager-spacer, #{$kendo-file-manager-spacer} ) / 2 );
@@ -155,7 +150,7 @@
         padding-block-start:  calc( var( --kendo-file-manager-preview-padding-y, #{$kendo-file-manager-preview-padding-y} ) * 3 );
         padding-block-end: var( --kendo-file-manager-preview-padding-y, #{$kendo-file-manager-preview-padding-y} );
         width: var( --kendo-file-manager-preview-width, #{$kendo-file-manager-preview-width} );
-        min-height: calc( ( var( --kendo-file-manager-preview-padding-y, #{$kendo-file-manager-preview-padding-y} ) * 4 ) + ( var( --kendo-file-manager-preview-icon-size, #{$kendo-file-manager-preview-icon-size} ) * 2 ) + ( var( --kendo-file-manager-preview-spacing, #{$kendo-file-manager-preview-spacing} ) * 3 ) );
+        min-height: calc( ( var( --kendo-file-manager-preview-padding-y, #{$kendo-file-manager-preview-padding-y} ) * 4 ) + var( --kendo-icon-size, 1rem ) * 2 + ( var( --kendo-file-manager-preview-spacing, #{$kendo-file-manager-preview-spacing} ) * 3 ) );
         border-width: 0;
         border-left-width: var( --kendo-file-manager-preview-border-width, #{$kendo-file-manager-preview-border-width} );
         border-style: solid;
@@ -170,11 +165,6 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-        }
-
-        // File icon
-        .k-file-icon {
-            font-size: var( --kendo-file-manager-preview-icon-size, #{$kendo-file-manager-preview-icon-size} );
         }
 
         // File name
