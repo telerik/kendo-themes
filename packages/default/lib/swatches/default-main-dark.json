@@ -60,12 +60,12 @@
                 "kendo-color-light": {
                     "name": "Light",
                     "type": "color",
-                    "value": "#292929"
+                    "value": "#BDBDBD"
                 },
                 "kendo-color-dark": {
                     "name": "Dark",
                     "type": "color",
-                    "value": "#BDBDBD"
+                    "value": "#292929"
                 }
             }
         },
@@ -158,7 +158,7 @@
                     "value": "#1D1D1D"
                 },
                 "kendo-button-border": {
-                    "name": "Button background",
+                    "name": "Button border",
                     "type": "color",
                     "value": "#383838"
                 }
