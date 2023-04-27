@@ -33,7 +33,7 @@ export const InputInnerSpan = (
             {...other}
             className={classNames(props.className, className, optionClassNames(className, props))}>
             {valueIcon}
-            {!valueIcon && valueIconName && <Icon className="k-input-value-icon" name={valueIconName} />}
+            {!valueIcon && valueIconName && <Icon className="k-input-value-icon" icon={valueIconName} />}
             {showValue && !value && placeholder}
             {showValue && value && <span className="k-input-value-text">{value}</span>}
         </span>

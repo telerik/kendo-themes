@@ -37,10 +37,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="primary"></Avatar>
 
             <Avatar type="icon" themeColor="primary">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="primary" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="primary">JO</Avatar>
@@ -58,10 +58,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="secondary"></Avatar>
 
             <Avatar type="icon" themeColor="secondary">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="secondary" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="secondary">JO</Avatar>
@@ -79,10 +79,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="tertiary"></Avatar>
 
             <Avatar type="icon" themeColor="tertiary">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="tertiary" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="tertiary">JO</Avatar>
@@ -100,10 +100,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="info"></Avatar>
 
             <Avatar type="icon" themeColor="info">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="info" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="info">JO</Avatar>
@@ -121,10 +121,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="success"></Avatar>
 
             <Avatar type="icon" themeColor="success">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="success" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="success">JO</Avatar>
@@ -142,10 +142,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="warning"></Avatar>
 
             <Avatar type="icon" themeColor="warning">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="warning" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="warning">JO</Avatar>
@@ -163,10 +163,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="error"></Avatar>
 
             <Avatar type="icon" themeColor="error">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="error" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="error">JO</Avatar>
@@ -184,10 +184,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="dark"></Avatar>
 
             <Avatar type="icon" themeColor="dark">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="dark" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="dark">JO</Avatar>
@@ -205,10 +205,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="light"></Avatar>
 
             <Avatar type="icon" themeColor="light">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="light" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="light">JO</Avatar>
@@ -226,10 +226,10 @@ root.render(
             <Avatar type="image" fillMode="outline" themeColor="inverse"></Avatar>
 
             <Avatar type="icon" themeColor="inverse">
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
             <Avatar type="icon" fillMode="outline" themeColor="inverse" border>
-                <Icon name="x" />
+                <Icon icon="x" />
             </Avatar>
 
             <Avatar type="text" themeColor="inverse">JO</Avatar>

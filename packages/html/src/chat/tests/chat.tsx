@@ -99,19 +99,19 @@ root.render(
                         }
                     />
                     <Toolbar className="k-chat-toolbar">
-                        <Button className="k-scroll-button k-scroll-button-left k-hidden" fillMode="flat" rounded={null} size={null} icon="arrow-chevron-left"></Button>
+                        <Button className="k-scroll-button k-scroll-button-left k-hidden" fillMode="flat" rounded={null} size={null} icon="chevron-left"></Button>
                         <div className="k-toolbar-group k-button-list">
-                            <Button fillMode="flat" icon="reload"></Button>
-                            <Button fillMode="flat" icon="cog"></Button>
+                            <Button fillMode="flat" icon="arrow-rotate-cw"></Button>
+                            <Button fillMode="flat" icon="gear"></Button>
                             <Button fillMode="flat" icon="wrench"></Button>
                             <Button fillMode="flat" icon="plus"></Button>
-                            <Button fillMode="flat" icon="zoom"></Button>
+                            <Button fillMode="flat" icon="search"></Button>
                             <Button fillMode="flat" icon="star"></Button>
                             <Button fillMode="flat" icon="bell"></Button>
-                            <Button fillMode="flat" icon="help"></Button>
+                            <Button fillMode="flat" icon="question-circle"></Button>
                             <Button fillMode="flat" icon="trash"></Button>
                         </div>
-                        <Button className="k-scroll-button k-scroll-button-right" fillMode="flat" rounded={null} size={null} icon="arrow-chevron-right"></Button>
+                        <Button className="k-scroll-button k-scroll-button-right" fillMode="flat" rounded={null} size={null} icon="chevron-right"></Button>
                     </Toolbar>
                 </div>
             </section>

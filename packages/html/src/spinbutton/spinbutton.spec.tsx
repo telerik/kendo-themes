@@ -44,14 +44,14 @@ export const SpinButton = (
             )}>
             <Button
                 className="k-spinner-increase"
-                icon="arrow-n"
+                icon="caret-alt-up"
                 rounded={null}
                 size={size}
                 fillMode={fillMode}>
             </Button>
             <Button
                 className="k-spinner-decrease"
-                icon="arrow-s"
+                icon="caret-alt-down"
                 rounded={null}
                 size={size}
                 fillMode={fillMode}>

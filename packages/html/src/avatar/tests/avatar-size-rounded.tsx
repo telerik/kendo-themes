@@ -29,7 +29,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="small" themeColor="primary" rounded={null}>
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="small" themeColor="primary" rounded={null} fillMode="outline" border>JO</Avatar>
             </span>
@@ -38,7 +38,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="medium" themeColor="primary" rounded={null}>
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="medium" themeColor="primary" rounded={null} fillMode="outline" border>JO</Avatar>
             </span>
@@ -47,7 +47,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="large" themeColor="primary" rounded={null}>
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="large" themeColor="primary" rounded={null} fillMode="outline" border>JO</Avatar>
             </span>
@@ -58,7 +58,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="small" themeColor="primary" rounded="small">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="small" themeColor="primary" rounded="small" fillMode="outline" border>JO</Avatar>
             </span>
@@ -67,7 +67,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="medium" themeColor="primary" rounded="small">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="medium" themeColor="primary" rounded="small" fillMode="outline" border>JO</Avatar>
             </span>
@@ -76,7 +76,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="large" themeColor="primary" rounded="small">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="large" themeColor="primary" rounded="small" fillMode="outline" border>JO</Avatar>
             </span>
@@ -87,7 +87,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="small" themeColor="primary" rounded="medium">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="small" themeColor="primary" rounded="medium" fillMode="outline" border>JO</Avatar>
             </span>
@@ -96,7 +96,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="medium" themeColor="primary" rounded="medium">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="medium" themeColor="primary" rounded="medium" fillMode="outline" border>JO</Avatar>
             </span>
@@ -105,7 +105,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="large" themeColor="primary" rounded="medium">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="large" themeColor="primary" rounded="medium" fillMode="outline" border>JO</Avatar>
             </span>
@@ -116,7 +116,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="small" themeColor="primary" rounded="large">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="small" themeColor="primary" rounded="large" fillMode="outline" border>JO</Avatar>
             </span>
@@ -125,7 +125,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="medium" themeColor="primary" rounded="large">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="medium" themeColor="primary" rounded="large" fillMode="outline" border>JO</Avatar>
             </span>
@@ -134,7 +134,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="large" themeColor="primary" rounded="large">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="large" themeColor="primary" rounded="large" fillMode="outline" border>JO</Avatar>
             </span>
@@ -145,7 +145,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="small" themeColor="primary" rounded="full">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="small" themeColor="primary" rounded="full" fillMode="outline" border>JO</Avatar>
             </span>
@@ -154,7 +154,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="medium" themeColor="primary" rounded="full">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="medium" themeColor="primary" rounded="full" fillMode="outline" border>JO</Avatar>
             </span>
@@ -163,7 +163,7 @@ root.render(
                     <img src="/packages/html/assets/avatar.jpg" />
                 </Avatar>
                 <Avatar type="icon" size="large" themeColor="primary" rounded="full">
-                    <Icon name="x" />
+                    <Icon icon="x" />
                 </Avatar>
                 <Avatar type="text" size="large" themeColor="primary" rounded="full" fillMode="outline" border>JO</Avatar>
             </span>

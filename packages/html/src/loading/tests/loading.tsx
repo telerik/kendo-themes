@@ -20,7 +20,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <span>icon</span>
-            <section><Icon name="loading" /></section>
+            <section><Icon icon="loading" type="font" /></section>
 
             <span>loading image</span>
             <section className="loading-container"><span className="k-loading-image"></span></section>

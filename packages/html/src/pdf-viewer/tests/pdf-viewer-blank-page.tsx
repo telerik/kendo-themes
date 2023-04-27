@@ -36,7 +36,7 @@ root.render(
                         <div className="k-page k-blank-page">
                             <div className="k-external-dropzone">
                                 <div className="k-dropzone-inner">
-                                    <Icon name="upload" />
+                                    <Icon icon="upload" className="k-dropzone-icon" />
                                     <span className="k-dropzone-hint">Drag and drop files here to upload</span>
                                 </div>
                             </div>

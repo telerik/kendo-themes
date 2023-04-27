@@ -33,7 +33,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -66,7 +66,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info</span>
@@ -137,7 +137,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -170,7 +170,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info</span>
@@ -239,7 +239,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -272,7 +272,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info</span>
@@ -343,7 +343,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -376,7 +376,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info</span>

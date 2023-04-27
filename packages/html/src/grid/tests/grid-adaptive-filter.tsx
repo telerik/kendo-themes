@@ -14,7 +14,7 @@ root.render(
                 <div className="k-pane">
                     <div className="k-grid-filter-menu k-view k-widget">
                         <div className="k-appbar k-appbar-primary">
-                            <Button className="k-header-cancel" fillMode="flat" icon="arrow-chevron-left"></Button>
+                            <Button className="k-header-cancel" fillMode="flat" icon="chevron-left"></Button>
                             <span className="k-spacer"></span>
                             <span>Filter in ProductID</span>
                             <span className="k-spacer"></span>

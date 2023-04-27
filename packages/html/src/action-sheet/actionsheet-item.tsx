@@ -50,7 +50,7 @@ export const ActionSheetItem = (
             )}>
             {!props.children && (text !== '' || description !== '' || iconName !== '') && <>
                 <span className="k-actionsheet-action">
-                    { iconName !== '' && <span className="k-icon-wrap"><Icon className="k-actionsheet-item-icon" name={iconName} /></span> }
+                    { iconName !== '' && <span className="k-icon-wrap"><Icon className="k-actionsheet-item-icon" icon={iconName} /></span> }
                     <span className="k-actionsheet-item-text">
                         { text !== '' && <span className="k-actionsheet-item-title">{text}</span> }
                         { description !== '' && <span className="k-actionsheet-item-description">{description}</span> }

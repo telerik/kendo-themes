@@ -62,7 +62,7 @@ root.render(
                                 <div className="k-button-group">
                                     <Button icon="cut"></Button>
                                     <Button icon="copy"></Button>
-                                    <Button icon="paste"></Button>
+                                    <Button icon="clipboard"></Button>
                                 </div>
                                 <span className="k-separator"></span>
                                 <div className="k-button-group">
@@ -71,11 +71,11 @@ root.render(
                                     <Button icon="underline"></Button>
                                 </div>
                                 <span className="k-separator"></span>
-                                <Button icon="link-horizontal"></Button>
+                                <Button icon="link"></Button>
                                 <span className="k-separator"></span>
                                 <Button icon="comment"></Button>
                                 <span className="k-separator"></span>
-                                <MenuButton icon="paint" showArrow></MenuButton>
+                                <MenuButton icon="droplet" showArrow></MenuButton>
                                 <span className="k-separator"></span>
                                 <MenuButton icon="foreground-color" showArrow></MenuButton>
                                 <span className="k-separator"></span>
@@ -112,7 +112,7 @@ root.render(
                         <Combobox placeholder="Combobox..." />
                     </div>
                     <div className="k-spreadsheet-formula-bar">
-                        <Icon name="formula-fx"></Icon>
+                        <Icon icon="formula-fx"></Icon>
                         <div className="k-spreadsheet-formula-input k-spreadsheet-array-formula">
                             <span className="k-syntax-startexp k-syntax-at-point">=</span>
                             <span className="k-syntax-func">Product</span>
@@ -430,7 +430,7 @@ root.render(
                             </div>
                             <div className="k-selection-wrapper">
                                 <div className="k-spreadsheet-selection k-single-selection" style={{ width: "216px", height: "21px", top: "135px", left: "132px" }}></div>
-                                <div className="k-button k-spreadsheet-editor-button" style={{ left: "347px", top: "135px", height: "20px" }}><Icon name="calendar"></Icon></div>
+                                <div className="k-button k-spreadsheet-editor-button" style={{ left: "347px", top: "135px", height: "20px" }}><Icon icon="calendar"></Icon></div>
                                 <div className="k-spreadsheet-cell k-spreadsheet-active-cell k-top k-single" style={{ outline: "rgb(86, 163, 230) solid 1px", backgroundColor: "rgb(96, 181, 255)", color: "rgb(0, 62, 117)", fontFamily: "Arial", textAlign: "center", fontSize: "32px", left: "33px", top: "21px", width: "878px", height: "69px" }}>
                                     <div className="k-vertical-align-bottom">Invoice #52 - 06/23/2015</div>
                                 </div>
@@ -440,22 +440,22 @@ root.render(
                             <div className="k-filter-wrapper">
                                 <div className="k-filter-range" style={{ width: "816px", height: "206px", top: "90px", left: "32px" }}></div>
                                 <span className="k-spreadsheet-filter" style={{ left: "113px", top: "93px" }}>
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "328px", top: "93px" }}>
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "443px", top: "93px" }}>
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "558px", top: "93px" }}>
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "673px", top: "93px" }}>
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                 </span>
                                 <span className="k-spreadsheet-filter" style={{ left: "828px", top: "93px" }}>
-                                    <Icon name="caret-alt-down"></Icon>
+                                    <Icon icon="caret-alt-down"></Icon>
                                 </span>
                             </div>
                             <div className="k-spreadsheet-row-header" style={{ width: "32px", top: "20px" }}>
@@ -565,18 +565,18 @@ root.render(
                     <div className="k-list-scroller"></div>
                 </div>
                 <div className="k-spreadsheet-sheets-bar k-widget k-header">
-                    <Button icon="add" className="k-spreadsheet-sheets-bar-add"></Button>
+                    <Button icon="plus" className="k-spreadsheet-sheets-bar-add"></Button>
                     <div className="k-spreadsheet-sheets-items k-tabstrip-scrollable k-tabstrip k-tabstrip-bottom">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-left" className="k-tabstrip-prev"></Button>
                             <ul className="k-reset k-tabstrip-items">
                                 <li className="k-item k-active k-tab-on-top k-spreadsheet-sheets-bar-active">
                                     <span className="k-link">Food Order</span>
-                                    <Button fillMode="flat" icon="close" className="k-spreadsheet-sheets-remove k-remove-tab"></Button>
+                                    <Button fillMode="flat" icon="x" className="k-spreadsheet-sheets-remove k-remove-tab"></Button>
                                 </li>
                                 <li className="k-item k-spreadsheet-sheets-bar-inactive">
                                     <span className="k-link">Balance Sheet</span>
-                                    <Button fillMode="flat" icon="close" className="k-spreadsheet-sheets-remove k-remove-tab"></Button>
+                                    <Button fillMode="flat" icon="x" className="k-spreadsheet-sheets-remove k-remove-tab"></Button>
                                 </li>
                             </ul>
                             <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-right" className="k-tabstrip-next"></Button>

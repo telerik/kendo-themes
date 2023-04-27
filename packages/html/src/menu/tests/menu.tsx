@@ -39,7 +39,7 @@ root.render(
                         <span className="k-link k-menu-link">
                             <span className="k-menu-link-text">Hover</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="caret-alt-down"></Icon>
+                                <Icon icon="caret-alt-down"></Icon>
                             </span>
                         </span>
                     </li>
@@ -47,7 +47,7 @@ root.render(
                         <span className="k-link k-menu-link k-active">
                             <span className="k-menu-link-text">Active</span>
                             <span className="k-menu-expand-arrow">
-                                <Icon name="caret-alt-down"></Icon>
+                                <Icon icon="caret-alt-down"></Icon>
                             </span>
                         </span>
                         <div className="k-animation-container k-animation-container-fixed k-animation-container-shown">
@@ -70,7 +70,7 @@ root.render(
                     </li>
                     <li className="k-item k-menu-item k-last">
                         <span className="k-link k-menu-link">
-                            <Icon name="folder"></Icon>
+                            <Icon icon="folder"></Icon>
                             <span className="k-menu-link-text">Normal</span>
                         </span>
                     </li>

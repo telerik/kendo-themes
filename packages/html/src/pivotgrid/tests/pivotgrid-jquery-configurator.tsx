@@ -26,9 +26,9 @@ root.render(
                                 <strong>Fields</strong>
                                 <div className="k-fields-list-wrapper">
                                     <Treeview>
-                                        <TreeviewItem hasChildren showIcon icon="arrows-dimensions" text="Axis" />
+                                        <TreeviewItem hasChildren showIcon icon="arrows-axes" text="Axis" />
                                         <TreeviewItem hasChildren showIcon icon="sum" text="Sum" />
-                                        <TreeviewItem hasChildren showIcon icon="arrows-kpi" text="KPI" />
+                                        <TreeviewItem hasChildren showIcon icon="caret-alt-expand" text="KPI" />
                                     </Treeview>
                                 </div>
                             </div>
@@ -154,9 +154,9 @@ root.render(
                                 <strong>Fields</strong>
                                 <div className="k-fields-list-wrapper">
                                     <Treeview>
-                                        <TreeviewItem hasChildren showIcon icon="arrows-dimensions" text="Axis" />
+                                        <TreeviewItem hasChildren showIcon icon="arrows-axes" text="Axis" />
                                         <TreeviewItem hasChildren showIcon icon="sum" text="Sum" />
-                                        <TreeviewItem hasChildren showIcon icon="arrows-kpi" text="KPI" />
+                                        <TreeviewItem hasChildren showIcon icon="caret-alt-expand" text="KPI" />
                                     </Treeview>
                                 </div>
                             </div>

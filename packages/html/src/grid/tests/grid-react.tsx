@@ -98,7 +98,7 @@ root.render(
                                     </colgroup>
                                     <tbody className="k-table-tbody">
                                         <tr className="k-table-row k-master-row">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">1</td>
                                             <td className="k-table-td">Normal</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$18.00</td>
@@ -108,7 +108,7 @@ root.render(
                                             <td className="k-table-td">10 boxes x 20 bags</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-master-row k-alt">
-                                            <td className="k-table-td k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td k-selected">2</td>
                                             <td className="k-table-td">Drag Selection Alt</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$19.00</td>
@@ -118,7 +118,7 @@ root.render(
                                             <td className="k-table-td">24 - 12 oz bottles</td>
                                         </tr>
                                         <tr className="k-table-row k-master-row">
-                                            <td className="k-table-td k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td k-selected">3</td>
                                             <td className="k-table-td">Drag Selection</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$10.00</td>
@@ -128,7 +128,7 @@ root.render(
                                             <td className="k-table-td">12 - 550 ml bottles</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-master-row k-alt k-selected">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">4</td>
                                             <td className="k-table-td">Row Selection Alt</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$22.00</td>
@@ -138,7 +138,7 @@ root.render(
                                             <td className="k-table-td">48 - 6 oz jars</td>
                                         </tr>
                                         <tr className="k-table-row k-master-row k-selected">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">5</td>
                                             <td className="k-table-td">Row Selection</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$21.35</td>
@@ -148,7 +148,7 @@ root.render(
                                             <td className="k-table-td">36 boxes</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-master-row k-alt k-hover">
-                                            <td className="k-table-td k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td k-selected">6</td>
                                             <td className="k-table-td">Drag Selection Alt Hover</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$25.00</td>
@@ -158,7 +158,7 @@ root.render(
                                             <td className="k-table-td">12 - 8 oz jars</td>
                                         </tr>
                                         <tr className="k-table-row k-master-row k-hover">
-                                            <td className="k-table-td k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky k-selected" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td k-selected">7</td>
                                             <td className="k-table-td">Drag Selection Hover</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$30.00</td>
@@ -168,7 +168,7 @@ root.render(
                                             <td className="k-table-td">12 - 1 lb pkgs.</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-master-row k-alt k-hover">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">8</td>
                                             <td className="k-table-td">Hover</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$40.00</td>
@@ -178,7 +178,7 @@ root.render(
                                             <td className="k-table-td">12 - 12 oz jars</td>
                                         </tr>
                                         <tr className="k-table-row k-master-row">
-                                            <td className="k-table-td k-grid-content-sticky k-focus" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky k-focus" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">9</td>
                                             <td className="k-table-td">Focus sticky cell</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$97.00</td>
@@ -188,7 +188,7 @@ root.render(
                                             <td className="k-table-td">18 - 500 g pkgs.</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-master-row k-alt">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td k-focus">10</td>
                                             <td className="k-table-td">Focus normal cell</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$31.00</td>
@@ -198,7 +198,7 @@ root.render(
                                             <td className="k-table-td">12 - 200 ml jars</td>
                                         </tr>
                                         <tr className="k-table-row k-master-row">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">11</td>
                                             <td className="k-table-td">Queso Cabrales</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$21.00</td>
@@ -208,7 +208,7 @@ root.render(
                                             <td className="k-table-td">1 kg pkg.</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-master-row k-alt">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">12</td>
                                             <td className="k-table-td">Queso Manchego La Pastora</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$38.00</td>
@@ -218,7 +218,7 @@ root.render(
                                             <td className="k-table-td">10 - 500 g pkgs.</td>
                                         </tr>
                                         <tr className="k-table-row k-master-row">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">13</td>
                                             <td className="k-table-td">Konbu</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$6.00</td>
@@ -228,7 +228,7 @@ root.render(
                                             <td className="k-table-td">2 kg box</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-master-row k-alt">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">14</td>
                                             <td className="k-table-td">Tofu</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$23.25</td>
@@ -238,7 +238,7 @@ root.render(
                                             <td className="k-table-td">40 - 100 g pkgs.</td>
                                         </tr>
                                         <tr className="k-table-row k-master-row">
-                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon name="unpin" /></td>
+                                            <td className="k-table-td k-grid-content-sticky" style={{ left: '0px', right: "240px" }}><Icon icon="unpin" /></td>
                                             <td className="k-table-td">15</td>
                                             <td className="k-table-td">Genen Shouyu</td>
                                             <td className="k-table-td k-grid-content-sticky" style={{ left: "60px", right: "120px" }}>$15.50</td>

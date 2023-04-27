@@ -2452,23 +2452,23 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-width</td>
+    <td>$kendo-fab-icon-padding-x</td>
     <td>Number</td>
-    <td><code>20px</code></td>
-    <td><code>20px</code></td>
+    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon width.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-fab-icon-height</td>
+    <td>$kendo-fab-icon-padding-y</td>
     <td>Number</td>
-    <td><code>$kendo-fab-icon-width</code></td>
-    <td><code>20px</code></td>
+    <td><code>$kendo-fab-icon-padding-x</code></td>
+    <td><code>2px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon height.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -2564,8 +2564,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-fab-item-icon-padding-x</td>
     <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
-    <td><code>8px</code></td>
+    <td><code>k-map-get( $kendo-spacing, 2 ) + $kendo-fab-icon-padding-x</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon horizontal padding.</div></div>
@@ -2575,7 +2575,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-fab-item-icon-padding-y</td>
     <td>Number</td>
     <td><code>$kendo-fab-item-icon-padding-x</code></td>
-    <td><code>8px</code></td>
+    <td><code>10px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon vertical padding.</div></div>
@@ -2599,26 +2599,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-width</td>
-    <td>Number</td>
-    <td><code>20px</code></td>
-    <td><code>20px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-fab-item-icon-height</td>
-    <td>Number</td>
-    <td><code>$kendo-fab-item-icon-width</code></td>
-    <td><code>20px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the FAB item icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -3433,7 +3413,6 @@ The following table lists the available variables for customizing the Material t
         padding-y: $kendo-input-sm-padding-y,
         font-size: $kendo-input-sm-font-size,
         line-height: $kendo-input-sm-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-sm-padding-y * 2} ),
         button-padding-x: k-map-get( $kendo-spacing, 1 ),
         button-padding-y: k-map-get( $kendo-spacing, 1 )
     ),
@@ -3442,7 +3421,6 @@ The following table lists the available variables for customizing the Material t
         padding-y: $kendo-input-md-padding-y,
         font-size: $kendo-input-md-font-size,
         line-height: $kendo-input-md-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-md-padding-y * 2} ),
         button-padding-x: k-map-get( $kendo-spacing, 1 ),
         button-padding-y: k-map-get( $kendo-spacing, 1 )
     ),
@@ -3451,12 +3429,11 @@ The following table lists the available variables for customizing the Material t
         padding-y: $kendo-input-lg-padding-y,
         font-size: $kendo-input-lg-font-size,
         line-height: $kendo-input-lg-line-height,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-lg-padding-y * 2} ),
         button-padding-x: k-map-get( $kendo-spacing, 1 ),
         button-padding-y: k-map-get( $kendo-spacing, 1 )
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 16px, padding-y: 6px, font-size: 16px, line-height: 1.25, icon-size: calc( 16px + 12px ), button-padding-x: 4px, button-padding-y: 4px), md: (padding-x: 16px, padding-y: 8px, font-size: 16px, line-height: 1.25, icon-size: calc( 16px + 16px ), button-padding-x: 4px, button-padding-y: 4px), lg: (padding-x: 16px, padding-y: 8px, font-size: 16px, line-height: 1.5, icon-size: calc( 16px + 16px ), button-padding-x: 4px, button-padding-y: 4px))</code></td>
+    <td><code>(sm: (padding-x: 16px, padding-y: 6px, font-size: 16px, line-height: 1.25, button-padding-x: 4px, button-padding-y: 4px), md: (padding-x: 16px, padding-y: 8px, font-size: 16px, line-height: 1.25, button-padding-x: 4px, button-padding-y: 4px), lg: (padding-x: 16px, padding-y: 8px, font-size: 16px, line-height: 1.5, button-padding-x: 4px, button-padding-y: 4px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Input components.</div></div>

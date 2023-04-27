@@ -30,31 +30,31 @@ root.render(
             <section>
                 <ActionSheet title="Header">
                     <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="cog" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="cog" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="cog" disabled />
-                        <ActionSheetItem text="Action" description="Some longer subtitle to break on multiple rows, for testing purposes" iconName="cog" />
+                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
+                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
+                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
+                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
+                        <ActionSheetItem text="Action" description="Some longer subtitle to break on multiple rows, for testing purposes" iconName="gear" />
                     </ActionSheetItems>
                     <hr className="k-hr" />
                     <ActionSheetItems>
-                        <ActionSheetItem text="Cancel" description="Action in a second group" iconName="cog" />
+                        <ActionSheetItem text="Cancel" description="Action in a second group" iconName="gear" />
                     </ActionSheetItems>
                 </ActionSheet>
             </section>
 
-            <section>
-                <ActionSheet title="Header" className="k-rtl">
+            <section className="k-rtl">
+                <ActionSheet title="Header">
                     <ActionSheetItems>
-                        <ActionSheetItem text="Action" description="Action description" iconName="cog" />
-                        <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
-                        <ActionSheetItem text="Focus action" description="Action description" iconName="cog" focus />
-                        <ActionSheetItem text="Disabled action" description="Action description" iconName="cog" disabled />
-                        <ActionSheetItem text="Action" description="Some longer subtitle to break on multiple rows, for testing purposes" iconName="cog" />
+                        <ActionSheetItem text="Action" description="Action description" iconName="gear" />
+                        <ActionSheetItem text="Hover action" description="Action description" iconName="gear" hover />
+                        <ActionSheetItem text="Focus action" description="Action description" iconName="gear" focus />
+                        <ActionSheetItem text="Disabled action" description="Action description" iconName="gear" disabled />
+                        <ActionSheetItem text="Action" description="Some longer subtitle to break on multiple rows, for testing purposes" iconName="gear" />
                     </ActionSheetItems>
                     <hr className="k-hr" />
                     <ActionSheetItems>
-                        <ActionSheetItem text="Cancel" description="Action in a second group" iconName="cog" />
+                        <ActionSheetItem text="Cancel" description="Action in a second group" iconName="gear" />
                     </ActionSheetItems>
                 </ActionSheet>
             </section>

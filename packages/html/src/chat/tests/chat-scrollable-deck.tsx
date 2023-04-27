@@ -39,7 +39,7 @@ root.render(
                                 </div>
                             </div>
                             <div className="k-card-deck-scrollwrap">
-                                <Button icon="arrow-chevron-left"></Button>
+                                <Button icon="chevron-left"></Button>
                                 <CardDeck>
                                     <Card orientation="horizontal">
                                         <CardBody>
@@ -70,7 +70,7 @@ root.render(
                                         </CardBody>
                                     </Card>
                                 </CardDeck>
-                                <Button icon="arrow-chevron-right"></Button>
+                                <Button icon="chevron-right"></Button>
                             </div>
                         </div>
                     </div>

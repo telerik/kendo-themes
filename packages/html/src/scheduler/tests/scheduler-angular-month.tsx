@@ -208,18 +208,18 @@ root.render(
                                 </table>
 
                                 <div style={{ width: "162px", left: "163px", top: "123px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Dance Practice</div></div>
-                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
+                                    <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-w"></span>
                                     <span className="k-resize-handle k-resize-e"></span>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", left: "327px", top: "123px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">HR Lecture</div></div>
                                 </div>
                                 <div style={{ width: "162px", left: "490px", top: "123px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Dance Practice</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "488px", left: "653px", top: "123px", height: "25px" }} className="k-event">
@@ -231,7 +231,7 @@ root.render(
                                     <div><div className="k-event-template">Software updates</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", left: "490px", top: "150px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Helpdesk weekly meeting</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "488px", left: "653px", top: "150px", height: "25px" }} className="k-event">
@@ -239,7 +239,7 @@ root.render(
                                     <div><div className="k-event-template">Grand Canyon tour</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "325px", left: '0px', top: "220px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="caret-alt-left"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="caret-alt-left"></Icon></span>
                                     <div><div className="k-event-template">Attending HR Conference</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", left: "327px", top: "220px", height: "25px" }} className="k-event">
@@ -259,7 +259,7 @@ root.render(
                                     <div><div className="k-event-template">Bob&apos;s Birthday Party</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", left: '0px', top: "247px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="caret-alt-left"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="caret-alt-left"></Icon></span>
                                     <div><div className="k-event-template">Grand Canyon tour</div></div>
                                 </div>
                                 <div style={{ width: "162px", left: "163px", top: "247px", height: "25px" }} className="k-event">
@@ -267,7 +267,7 @@ root.render(
                                     <div><div className="k-event-template">Car Service</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", left: "327px", top: "247px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">HR Lecture</div></div>
                                 </div>
                                 <div style={{ width: "162px", left: "490px", top: "247px", height: "25px" }} className="k-event">

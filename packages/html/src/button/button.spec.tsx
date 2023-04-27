@@ -53,7 +53,7 @@ const defaultProps = {
     fillMode: FillMode.solid,
     themeColor: ThemeColor.base,
     showArrow: false,
-    arrowIconName: "arrow-s"
+    arrowIconName: "caret-alt-down"
 };
 
 export const Button = (
@@ -109,7 +109,7 @@ export const Button = (
             {icon && (
                 <Icon
                     className={classNames(iconClassName, 'k-button-icon')}
-                    name= {icon}
+                    icon= {icon}
                 />
             )}
 
@@ -122,7 +122,7 @@ export const Button = (
                 : props.children && <span className="k-button-text">{props.children}</span>
             }
 
-            {showArrow && (<span className="k-menu-button-arrow k-button-arrow"><Icon name= {arrowIconName} /></span>)}
+            {showArrow && (<span className="k-menu-button-arrow k-button-arrow"><Icon icon= {arrowIconName} /></span>)}
 
         </button>
     );

@@ -36,8 +36,9 @@
 
     // FAB Icon
     .k-fab-icon {
-        width: $kendo-fab-icon-width;
-        height: $kendo-fab-icon-height;
+        padding-inline: $kendo-fab-icon-padding-x;
+        padding-block: $kendo-fab-icon-padding-y;
+        box-sizing: content-box;
 
         .k-icon-wrapper-host:not(:only-child) &,
         &:not(:only-child) {
@@ -118,8 +119,6 @@
     }
 
     .k-fab-item-icon {
-        width: $kendo-fab-item-icon-width;
-        height: $kendo-fab-item-icon-height;
         padding-block: $kendo-fab-item-icon-padding-y;
         padding-inline: $kendo-fab-item-icon-padding-x;
         border-width: $kendo-fab-item-icon-border-width;

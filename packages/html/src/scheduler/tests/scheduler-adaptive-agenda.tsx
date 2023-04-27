@@ -21,7 +21,7 @@ root.render(
                                     <ButtonGroup className="k-scheduler-tools">
                                         <Button className="k-pdf" icon="file-pdf"></Button>
                                         <Button className="k-nav-calendar" icon="calendar"></Button>
-                                        <Button className="k-create-event" icon="add"></Button>
+                                        <Button className="k-create-event" icon="plus"></Button>
                                     </ButtonGroup>
                                     <span className="k-spacer"></span>
                                     <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
@@ -29,13 +29,13 @@ root.render(
                                     </select>
                                 </Toolbar>
                                 <Toolbar className="k-scheduler-toolbar">
-                                    <Button className="k-nav-prev" icon="arrow-chevron-left"></Button>
+                                    <Button className="k-nav-prev" icon="chevron-left"></Button>
                                     <span className="k-spacer"></span>
                                     <Button className="k-nav-current" fillMode="flat" >
                                         Jun 13 - 20, 2013
                                     </Button>
                                     <span className="k-spacer"></span>
-                                    <Button className="k-nav-next" icon="arrow-chevron-right"></Button>
+                                    <Button className="k-nav-next" icon="chevron-right"></Button>
                                 </Toolbar>
                                 <table className="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda k-scrollbar-v">
                                     <tbody>
@@ -78,7 +78,7 @@ root.render(
                                                                 <td>
                                                                     <div className="k-task">
                                                                         <span className="k-scheduler-mark" style={{ backgroundColor: "#f8a398" }}></span>
-                                                                        <Icon name="arrow-rotate-cw"></Icon>
+                                                                        <Icon icon="arrow-rotate-cw"></Icon>
                                                                         <span className="k-scheduler-task-text">HR Lecture</span>
                                                                     </div>
                                                                 </td>

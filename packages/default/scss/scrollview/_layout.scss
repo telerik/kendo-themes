@@ -174,11 +174,11 @@
     }
 
     .k-scrollview-prev {
-        left: 0;
+        inset-inline-start: 0;
     }
 
     .k-scrollview-next {
-        right: 0;
+        inset-inline-end: 0;
     }
 
 
@@ -201,6 +201,17 @@
         kendo-scrollview.k-scrollview ul.k-scrollview-wrap li > *,
         div.k-scrollview ul.k-scrollview-wrap li > * {
             pointer-events: none;
+        }
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        .k-scrollview-prev,
+        .k-scrollview-next {
+            .k-icon,
+            .k-svg-icon {
+                transform: scaleX(-1);
+            }
         }
     }
 

@@ -23,6 +23,6 @@ export const InputLoadingIcon = (
     }
 
     return (
-        <Icon className={classNames(props.className, className)} name="loading" />
+        <Icon className={classNames(props.className, className)} icon="loading" type="font" />
     );
 };

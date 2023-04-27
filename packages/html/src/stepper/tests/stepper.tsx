@@ -41,7 +41,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -78,7 +78,7 @@ root.render(
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info with too long label</span>
-                                    <Icon name="check"></Icon>
+                                    <Icon icon="check"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -89,7 +89,7 @@ root.render(
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Personal Info</span>
-                                    <Icon className="k-validation-icon" name="warning"></Icon>
+                                    <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -116,21 +116,21 @@ root.render(
                         <li className="k-step k-step-first k-step-done" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="lock"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="lock"></Icon>
                                 </span>
                             </a>
                         </li>
                         <li className="k-step k-step-current k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="user"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="user"></Icon>
                                 </span>
                             </a>
                         </li>
                         <li className="k-step k-step-last k-step-optional" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="track-changes"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="track-changes"></Icon>
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-label-optional">(Optional)</span>
@@ -149,7 +149,7 @@ root.render(
                         <li className="k-step k-step-first k-step-done" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="lock"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="lock"></Icon>
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info</span>
@@ -159,7 +159,7 @@ root.render(
                         <li className="k-step k-step-current k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="user"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="user"></Icon>
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Personal Info</span>
@@ -169,7 +169,7 @@ root.render(
                         <li className="k-step k-step-last k-step-optional" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" name="track-changes"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="track-changes"></Icon>
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Payment Details</span>

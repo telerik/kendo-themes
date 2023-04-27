@@ -129,7 +129,7 @@ export const MultiSelect = (
                 {showArrowButton && (
                     <Button
                         className="k-input-button"
-                        icon="arrow-s"
+                        icon="caret-alt-down"
                         rounded={null}
                         size={size}
                         fillMode={fillMode}

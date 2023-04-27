@@ -39,7 +39,7 @@ root.render(
                                 <Textbox
                                     prefix={
                                         <>
-                                            <Icon name="search" />
+                                            <Icon icon="search" />
                                         </>
                                     }
                                 />
@@ -83,7 +83,7 @@ root.render(
                                 <Textbox
                                     prefix={
                                         <>
-                                            <Icon name="search" />
+                                            <Icon icon="search" />
                                         </>
                                     }
                                 />

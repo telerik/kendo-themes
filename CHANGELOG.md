@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.3.1-dev.0...v6.4.0-dev.0) (2023-04-24)
+
+
+### Bug Fixes
+
+* **bottom-nav:** rename themeColor class to match current convention ([7ad724a](https://github.com/telerik/kendo-themes/commit/7ad724ad0209844660cd8a350ff9a5e4f453a580))
+* **breadcrumb:** adjust styles for the updated rendering ([b55226c](https://github.com/telerik/kendo-themes/commit/b55226cb34d0ba7582c015e1081e95c08ddafe0c))
+
+
+### Features
+
+* **html:** add bottom-nav helper ([1ec7eea](https://github.com/telerik/kendo-themes/commit/1ec7eea8e07c7f5db0f21412cdd1ee6e1a052d82))
+* **html:** add breadcrumb helper ([c47d013](https://github.com/telerik/kendo-themes/commit/c47d013b14e44e8fca8d5e276f898c6cf00a46a9))
+* **html:** add color-editor helper ([367241b](https://github.com/telerik/kendo-themes/commit/367241b6a8d7961f902d3f32bb16550f82e9e9cb))
+* **html:** add colorgradient helper ([c0c299a](https://github.com/telerik/kendo-themes/commit/c0c299a3ac85fbf9c78158e57894ad2c206de6d8))
+* **html:** add expansion-panel helper ([cb25287](https://github.com/telerik/kendo-themes/commit/cb25287029fcd7a6dd1c0bf04e24539f7d91ea6b))
+* **html:** add html helper for multiselecttree ([006014d](https://github.com/telerik/kendo-themes/commit/006014d0c8de05c8b8be42f41308e0f884a0168f))
+* **html:** add slider helper ([0e2a064](https://github.com/telerik/kendo-themes/commit/0e2a064726bb886916402758a539d501a1213c9b))
+
+
+
+
+
 ## [6.3.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.3.0...v6.3.1-dev.0) (2023-04-20)
 
 
