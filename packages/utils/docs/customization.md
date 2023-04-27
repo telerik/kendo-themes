@@ -1392,6 +1392,34 @@ This is equivalent to `box-sizing: content-box;`.
 
 
 
+### `.k-clear-left`
+
+This is equivalent to `clear: left;`.
+
+
+
+
+### `.k-clear-right`
+
+This is equivalent to `clear: right;`.
+
+
+
+
+### `.k-clear-both`
+
+This is equivalent to `clear: both;`.
+
+
+
+
+### `.k-clear-none`
+
+This is equivalent to `clear: none;`.
+
+
+
+
 ### `.k-columns-1`
 
 This is equivalent to `columns: 1;`.
@@ -1770,34 +1798,6 @@ This is equivalent to `flex-wrap: wrap-reverse;`.
 
 
 
-### `.k-clear-left`
-
-This is equivalent to `clear: left;`.
-
-
-
-
-### `.k-clear-right`
-
-This is equivalent to `clear: right;`.
-
-
-
-
-### `.k-clear-both`
-
-This is equivalent to `clear: both;`.
-
-
-
-
-### `.k-clear-none`
-
-This is equivalent to `clear: none;`.
-
-
-
-
 ### `.k-float-left`
 
 This is equivalent to `float: left;`.
@@ -2169,42 +2169,42 @@ This is equivalent to `grid-auto-columns: minmax( 0, 1fr );`.
 
 
 
-### `.k-grid-auto-flow-row`
+### `.k-grid-flow-row`
 
 This is equivalent to `grid-auto-flow: row;`.
 
 
 
 
-### `.k-grid-auto-flow-column`
+### `.k-grid-flow-column`
 
 This is equivalent to `grid-auto-flow: column;`.
 
 
 
 
-### `.k-grid-auto-flow-dense`
+### `.k-grid-flow-dense`
 
 This is equivalent to `grid-auto-flow: dense;`.
 
 
 
 
-### `.k-grid-auto-flow-row-dense`
+### `.k-grid-flow-row-dense`
 
 This is equivalent to `grid-auto-flow: row dense;`.
 
 
 
 
-### `.k-grid-auto-flow-col-dense`
+### `.k-grid-flow-col-dense`
 
 This is equivalent to `grid-auto-flow: col dense;`.
 
 
 
 
-### `.k-grid-auto-flow-unset`
+### `.k-grid-flow-unset`
 
 This is equivalent to `grid-auto-flow: unset;`.
 
@@ -3877,7 +3877,7 @@ This is equivalent to `padding: 0.5rem;`.
 
 
 
-### `.k-p-pd`
+### `.k-p-md`
 
 This is equivalent to `padding: 0.75rem;`.
 
@@ -4703,20 +4703,6 @@ This is equivalent to `place-self: baseline;`.
 
 
 
-### `.k-pointer-events-none`
-
-This is equivalent to `pointer-events: none;`.
-
-
-
-
-### `.k-pointer-events-auto`
-
-This is equivalent to `pointer-events: auto;`.
-
-
-
-
 ### `.k-top-0`
 
 This is equivalent to `top: 0;`.
@@ -4803,7 +4789,7 @@ This is equivalent to `bottom: 0; right: 0;`.
 
 ### `.k-inset-0`
 
-This is equivalent to `inset: 0;`.This is a shorthand that corresponds to the top: 0; right: 0; bottom: 0; and/or left: 0 properties. It has the same multi-value syntax of the margin shorthand.
+This is equivalent to `inset: 0;`.
 
 
 
@@ -4818,6 +4804,20 @@ This is equivalent to `inset-inline: 0;`.
 ### `.k-inset-y-0`
 
 This is equivalent to `inset-block: 0;`.
+
+
+
+
+### `.k-pointer-events-none`
+
+This is equivalent to `pointer-events: none;`.
+
+
+
+
+### `.k-pointer-events-auto`
+
+This is equivalent to `pointer-events: auto;`.
 
 
 

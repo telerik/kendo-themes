@@ -1,25 +1,25 @@
 /// This is equivalent to `clear: left;`.
 /// @example clear: left;
 /// @name .k-clear-left
-/// @group float
+/// @group clear
 /// @contextType css
 
 /// This is equivalent to `clear: right;`.
 /// @example clear: right;
 /// @name .k-clear-right
-/// @group float
+/// @group clear
 /// @contextType css
 
 /// This is equivalent to `clear: both;`.
 /// @example clear: both;
 /// @name .k-clear-both
-/// @group float
+/// @group clear
 /// @contextType css
 
 /// This is equivalent to `clear: none;`.
 /// @example clear: none;
 /// @name .k-clear-none
-/// @group float
+/// @group clear
 /// @contextType css
 
 @mixin kendo-utils--layout--clear() {
