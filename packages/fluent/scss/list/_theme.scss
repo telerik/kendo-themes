@@ -76,6 +76,21 @@
         );
     }
 
+    // Option Label
+    .k-list-optionlabel,
+    .k-list-optionlabel.k-hover,
+    .k-list-optionlabel:hover {
+        @include fill(
+            $color: var( --kendo-list-option-label-text, #{$kendo-list-option-label-text} )
+        );
+    }
+
+    .k-list-optionlabel:disabled,
+    .k-list-optionlabel.k-disabled {
+            @include fill(
+                $color: var( --kendo-list-option-label-disabled-text, #{$kendo-list-option-label-disabled-text} )
+            )
+    }
 
     // List group item
     .k-list-group-item {
