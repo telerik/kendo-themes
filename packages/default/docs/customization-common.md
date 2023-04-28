@@ -487,6 +487,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity used for disabled items.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-floating-label-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-input-font-size</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Floating Label.<br /> @group floating-label</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

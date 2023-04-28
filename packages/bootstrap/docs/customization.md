@@ -182,6 +182,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-floating-label-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-input-font-size</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Floating Label.<br /> @group floating-label</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-values-margin-y</td>
     <td>Number</td>
     <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
@@ -228,7 +238,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the avatar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Avatar.</div></div>
     </td>
 </tr>
 <tr>
@@ -238,7 +248,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the avatar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Avatar.</div></div>
     </td>
 </tr>
 <tr>
@@ -248,7 +258,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the avatar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Avatar.</div></div>
     </td>
 </tr>
 <tr>
@@ -258,7 +268,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the avatar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Avatar.</div></div>
     </td>
 </tr>
 <tr>
@@ -272,7 +282,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>(sm: 1rem, md: 2rem, lg: 4rem)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the avatar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Avatar.</div></div>
     </td>
 </tr>
 <tr>
@@ -282,7 +292,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the avatar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map of the Avatar.</div></div>
     </td>
 </tr>
 </tbody>
@@ -312,7 +322,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -322,7 +332,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.375rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -332,7 +342,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.65em</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>k-math-div( $badge-padding-x, 2 )</code></td>
+    <td><code>0.325em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-md-padding-x</td>
+    <td>Number</td>
+    <td><code>$badge-padding-x</code></td>
+    <td><code>0.65em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-lg-padding-x</td>
+    <td>Number</td>
+    <td><code>( $badge-padding-x * 1.5 )</code></td>
+    <td><code>0.975em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -342,7 +382,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.35em</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>k-math-div( $badge-padding-y, 2 )</code></td>
+    <td><code>0.175em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-md-padding-y</td>
+    <td>Number</td>
+    <td><code>$badge-padding-y</code></td>
+    <td><code>0.35em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-lg-padding-y</td>
+    <td>Number</td>
+    <td><code>( $badge-padding-y * 1.5 )</code></td>
+    <td><code>0.525em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -352,7 +422,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.75em</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font sizes of the Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-sm-font-size</td>
+    <td>Number</td>
+    <td><code>$badge-font-size</code></td>
+    <td><code>0.75em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-md-font-size</td>
+    <td>Number</td>
+    <td><code>$badge-font-size</code></td>
+    <td><code>0.75em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-lg-font-size</td>
+    <td>Number</td>
+    <td><code>$badge-font-size</code></td>
+    <td><code>0.75em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -362,7 +462,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line heights used along with the $kendo-font-size variable.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-sm-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-badge-line-height</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-md-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-badge-line-height</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the medium Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-lg-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-badge-line-height</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the large Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -372,7 +502,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>calc( 1em + 0.7em + 2px)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Badge min width used for circle badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the circular Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-sm-min-width</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-badge-sm-line-height * 1em} + #{$kendo-badge-sm-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
+    <td><code>calc( 1em + 0.35em + 2px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the small circular Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-md-min-width</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-badge-md-line-height * 1em} + #{$kendo-badge-md-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
+    <td><code>calc( 1em + 0.7em + 2px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the medium circular Badge.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-badge-lg-min-width</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-badge-lg-line-height * 1em} + #{$kendo-badge-lg-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
+    <td><code>calc( 1em + 1.05em + 2px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the large circular Badge.</div></div>
     </td>
 </tr>
 <tr>
@@ -404,7 +564,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>(sm: (padding-x: 0.325em, padding-y: 0.175em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.35em + 2px )), md: (padding-x: 0.65em, padding-y: 0.35em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.7em + 2px )), lg: (padding-x: 0.975em, padding-y: 0.525em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 1.05em + 2px )))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the badge.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
     </td>
 </tr>
 </tbody>
@@ -584,7 +744,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with $kendo-font-size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable.</div></div>
     </td>
 </tr>
 <tr>
@@ -594,7 +754,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.4285714286</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the small Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -604,7 +764,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size of the medium Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the medium Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -614,7 +774,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> The line height used along with the $kendo-font-size of the large Button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description"> The line height used along with the $kendo-font-size variable of the large Button.</div></div>
     </td>
 </tr>
 <tr>
@@ -2325,6 +2485,46 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Dropdowntree
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-dropdowntree-popup-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the DropdownTree popup</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropdowntree-popup-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the DropdownTree popup</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Floating-action-button
 
 <table class="theme-variables">
@@ -2349,7 +2549,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2359,7 +2559,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.1875rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2369,7 +2569,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2379,7 +2579,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2389,7 +2589,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2399,7 +2599,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-fab-padding-x, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-md-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-fab-padding-x</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-padding-x</td>
+    <td>Number</td>
+    <td><code>( $kendo-fab-padding-x * 1.5 )</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2409,7 +2639,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-fab-padding-y, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-md-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-fab-padding-y</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-lg-padding-y</td>
+    <td>Number</td>
+    <td><code>( $kendo-fab-padding-y * 1.5 )</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2419,7 +2679,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the FAB icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -2429,7 +2689,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the FAB icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -2439,7 +2699,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.125rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon spacing.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FAB icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -2449,7 +2709,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB items horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB items.</div></div>
     </td>
 </tr>
 <tr>
@@ -2459,7 +2719,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB items vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB items.</div></div>
     </td>
 </tr>
 <tr>
@@ -2469,7 +2729,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item text horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB item text.</div></div>
     </td>
 </tr>
 <tr>
@@ -2479,7 +2739,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item text vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB item text.</div></div>
     </td>
 </tr>
 <tr>
@@ -2489,7 +2749,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item text border.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FAB item text border.</div></div>
     </td>
 </tr>
 <tr>
@@ -2499,7 +2759,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB item text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB item text.</div></div>
     </td>
 </tr>
 <tr>
@@ -2509,7 +2769,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.75rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the FAB item text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the FAB item text.</div></div>
     </td>
 </tr>
 <tr>
@@ -2519,7 +2779,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>14px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the FAB item text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FAB item text.</div></div>
     </td>
 </tr>
 <tr>
@@ -2529,7 +2789,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.75rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon horizontal padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FAB item icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -2539,7 +2799,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.75rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon vertical padding.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FAB item icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -2549,7 +2809,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item icon border.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FAB item icon border.</div></div>
     </td>
 </tr>
 <tr>
@@ -2559,7 +2819,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>50%</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB item icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the FAB item icon.</div></div>
     </td>
 </tr>
 <tr>
@@ -2569,7 +2829,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2592,7 +2852,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>(sm: (padding-x: 0.5rem, padding-y: 0.5rem), md: (padding-x: 1rem, padding-y: 1rem), lg: (padding-x: 1.5rem, padding-y: 1.5rem))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size map for the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size map for the FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2612,7 +2872,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0px 6px 10px rgba(91, 91, 91, 0.1744), 0px 1px 18px rgba(101, 101, 101, 0.1552), 0px 3px 5px rgba(70, 70, 70, 0.232)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled shadow of the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2622,7 +2882,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active shadow of the FAB.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the active FAB.</div></div>
     </td>
 </tr>
 <tr>
@@ -2722,7 +2982,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0px 6px 10px rgba(91, 91, 91, 0.1744), 0px 1px 18px rgba(101, 101, 101, 0.1552), 0px 3px 5px rgba(70, 70, 70, 0.232)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled shadow of the FAB item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB item.</div></div>
     </td>
 </tr>
 <tr>
@@ -2732,7 +2992,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active shadow of the FAB item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the active FAB item.</div></div>
     </td>
 </tr>
 <tr>
@@ -2763,6 +3023,646 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the FAB item.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Floating-label
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-floating-label-scale</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-max-width</td>
+    <td>Number</td>
+    <td><code>90%</code></td>
+    <td><code>90%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-input-line-height</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-height</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} )</code></td>
+    <td><code>calc( 1.5 * 1rem )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-offset-x</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} )</code></td>
+    <td><code>calc( 0.75rem + 1px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-offset-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} )</code></td>
+    <td><code>calc( calc( 1.5 * 1rem ) + 1px + 0.375rem )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-focus-scale</td>
+    <td>Number</td>
+    <td><code>1</code></td>
+    <td><code>1</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the focused Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-focus-offset-x</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the focused Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-focus-offset-y</td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the focused Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-transition</td>
+    <td>List</td>
+    <td><code>.2s ease-out</code></td>
+    <td><code>0.2s ease-out</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-focus-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-focus-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Floating Label.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Form
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-form-spacer</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-x * 2</code></td>
+    <td><code>2rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the inline Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-line-height</td>
+    <td>Number</td>
+    <td><code>$input-btn-line-height</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-line-height-em</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-form-line-height} * 1em )</code></td>
+    <td><code>calc( 1.5 * 1em )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form in em units.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-sm-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-sm</code></td>
+    <td><code>1.25</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-lg-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-lg</code></td>
+    <td><code>2</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-fieldset-margin</td>
+    <td>List</td>
+    <td><code>2rem 0 0</code></td>
+    <td><code>2rem 0 0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form fieldset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-fieldset-padding</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Form fieldset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-legend-margin</td>
+    <td>List</td>
+    <td><code>0 0 1rem</code></td>
+    <td><code>0 0 1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-legend-padding</td>
+    <td>Number</td>
+    <td><code>0px</code></td>
+    <td><code>0px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-legend-border-width</td>
+    <td>List</td>
+    <td><code>0 0 2px</code></td>
+    <td><code>0 0 2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-legend-border-style</td>
+    <td>String</td>
+    <td><code>solid</code></td>
+    <td><code>solid</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-legend-border-color</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-legend-width</td>
+    <td>Number</td>
+    <td><code>100%</code></td>
+    <td><code>100%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-legend-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>0.875rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-legend-text-transform</td>
+    <td>String</td>
+    <td><code>uppercase</code></td>
+    <td><code>uppercase</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text capitalization of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-label-margin-bottom</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom margin of the Form label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-button-margin-x</td>
+    <td>Number</td>
+    <td><code>8px</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Form buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-hint-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-xs</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-hint-font-style</td>
+    <td>String</td>
+    <td><code>normal</code></td>
+    <td><code>normal</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the Form hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-hint-margin-top</td>
+    <td>Number</td>
+    <td><code>4px</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the Form hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-sm-rows-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the small Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-md-rows-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-form-sm-rows-spacing</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the medium Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-lg-rows-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-form-sm-rows-spacing</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row spacing of the large Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-separator-margin</td>
+    <td>List</td>
+    <td><code>$kendo-form-md-rows-spacing 0 0</code></td>
+    <td><code>1rem 0 0</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-separator-border-color</td>
+    <td>Color</td>
+    <td><code>$kendo-form-legend-border-color</code></td>
+    <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-horizontal-form-label-padding-top</td>
+    <td>Number</td>
+    <td><code>5px</code></td>
+    <td><code>5px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top padding of the label in the horizontal Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-horizontal-form-label-margin-x</td>
+    <td>Number</td>
+    <td><code>10px</code></td>
+    <td><code>10px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the label in the horizontal Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-horizontal-form-label-width</td>
+    <td>Number</td>
+    <td><code>25%</code></td>
+    <td><code>25%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the label in the horizontal Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-horizontal-form-label-align</td>
+    <td>String</td>
+    <td><code>flex-end</code></td>
+    <td><code>flex-end</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal alignment of the label in the horizontal Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-horizontal-form-field-wrap-max-width</td>
+    <td>Calculation</td>
+    <td><code>calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} )</code></td>
+    <td><code>calc( ( 100% - 25% ) - 10px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the field wrap in the horizontal Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-inline-form-element-width</td>
+    <td>Number</td>
+    <td><code>25%</code></td>
+    <td><code>25%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the inline Form element.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-forms-invalid-color</td>
+    <td>Color</td>
+    <td><code>$kendo-color-error</code></td>
+    <td><span class="color-preview" style="background-color: #dc3545"></span><code>#dc3545</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The invalid text color of the Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-margin-x</td>
+    <td>Number</td>
+    <td><code>6px</code></td>
+    <td><code>6px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the optional label in the Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-xs</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the optional label in the Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-label-optional-font-style</td>
+    <td>String</td>
+    <td><code>italic</code></td>
+    <td><code>italic</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the optional label in the Form.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-margin</td>
+    <td>Number</td>
+    <td><code>30px</code></td>
+    <td><code>30px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin of the Form fieldset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-h4-font-size</code></td>
+    <td><code>1.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Form fieldset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Form fieldset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form fieldset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form fieldset.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-legend-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-legend-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fieldset-legend-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Form legend.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-form-sizes</td>
+    <td>Map</td>
+    <td><code>(
+    sm: (
+        form-rows-spacing: $kendo-form-sm-rows-spacing
+    ),
+    md: (
+        form-rows-spacing: $kendo-form-md-rows-spacing
+    ),
+    lg: (
+        form-rows-spacing: $kendo-form-lg-rows-spacing
+    )
+)</code></td>
+    <td><code>(sm: (form-rows-spacing: 1rem), md: (form-rows-spacing: 1rem), lg: (form-rows-spacing: 1rem))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Form.</div></div>
     </td>
 </tr>
 </tbody>
@@ -4956,7 +5856,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.375rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button.</div></div>
     </td>
 </tr>
 </tbody>
@@ -5136,7 +6036,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.5rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the pager according to the pager size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-md-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-lg-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5146,7 +6076,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.5rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the pager according to the pager size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-pager-sm-padding-x</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-md-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-pager-md-padding-x</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-lg-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-pager-lg-padding-x</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5156,7 +6116,27 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>calc( 1.4285714286em + 0.5rem + 2px )</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Minimum width of the pager items according to the pager size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the small Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-md-item-min-width</td>
+    <td>Calculation</td>
+    <td><code>$kendo-button-md-calc-size</code></td>
+    <td><code>calc( 1.5em + 0.75rem + 2px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the medium Pagers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-lg-item-min-width</td>
+    <td>Calculation</td>
+    <td><code>$kendo-button-lg-calc-size</code></td>
+    <td><code>calc( 1.5em + 1rem + 2px )</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the large Pagers.</div></div>
     </td>
 </tr>
 <tr>
@@ -5166,7 +6146,27 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.875rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin between pager item groups according to the pager size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the small Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-md-item-group-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the medium Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-lg-item-group-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4.5 )</code></td>
+    <td><code>1.125rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The margin between the item groups in the large Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5176,7 +6176,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5186,7 +6186,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5196,7 +6196,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5206,7 +6206,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5216,7 +6216,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5226,7 +6226,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5236,7 +6236,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5246,7 +6246,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the focused pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5256,7 +6256,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the focused pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5266,7 +6266,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the pager sections.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Pager sections.</div></div>
     </td>
 </tr>
 <tr>
@@ -5276,7 +6276,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5286,7 +6286,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5296,7 +6296,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>-1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing around the Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5306,7 +6306,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5316,7 +6316,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5326,7 +6326,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5336,7 +6336,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the hovered pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5346,7 +6346,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0a58ca"></span><code>#0a58ca</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the hovered pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5356,7 +6356,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #d6d9dc"></span><code>#d6d9dc</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the hovered pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5366,7 +6366,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selected pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5376,7 +6376,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the selected pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5386,7 +6386,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selected pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5396,7 +6396,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of the focused pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the focused Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5406,7 +6406,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the focused pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5416,7 +6416,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0 0 0 3px rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the focused pager items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Pager items.</div></div>
     </td>
 </tr>
 <tr>
@@ -5426,7 +6426,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the pager numbers.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager numbers.</div></div>
     </td>
 </tr>
 <tr>
@@ -5436,7 +6436,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>5em</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the pager inputs.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Inputs in the Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5446,7 +6446,27 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>5em</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the pager dropdowns according to the pager size.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DropDowns in the small Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-md-dropdown-width</td>
+    <td>Number</td>
+    <td><code>5em</code></td>
+    <td><code>5em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DropDowns in the medium Pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-lg-dropdown-width</td>
+    <td>Number</td>
+    <td><code>6em</code></td>
+    <td><code>6em</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DropDowns in the large Pager.</div></div>
     </td>
 </tr>
 <tr>
@@ -5478,7 +6498,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, item-group-spacing: 0.875rem, item-min-width: calc( 1.4285714286em + 0.5rem + 2px ), pager-dropdown-width: 5em), md: (padding-x: 0.5rem, padding-y: 0.5rem, item-group-spacing: 1rem, item-min-width: calc( 1.5em + 0.75rem + 2px ), pager-dropdown-width: 5em), lg: (padding-x: 0.625rem, padding-y: 0.625rem, item-group-spacing: 1.125rem, item-min-width: calc( 1.5em + 1rem + 2px ), pager-dropdown-width: 6em))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map of the pager.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
     </td>
 </tr>
 </tbody>
@@ -8217,7 +9237,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-md-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-lg-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8227,7 +9277,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-md-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-lg-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8237,7 +9317,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the toolbar tools.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Toolbar tools.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-sm-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the small Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-md-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the medium Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-lg-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the large Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8247,7 +9357,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8257,7 +9367,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8267,7 +9377,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8277,7 +9387,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8287,7 +9397,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8297,7 +9407,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8307,7 +9417,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8317,7 +9427,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the border around the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8327,7 +9437,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gradient of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8337,7 +9447,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8347,7 +9457,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the separator border of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the separator border of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8357,7 +9467,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>10em</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the input in the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the input in the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -8367,7 +9477,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the focused toolbar item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>
     </td>
 </tr>
 <tr>
@@ -8393,7 +9503,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, spacing: 0.375rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: 0.625rem))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Toolbar.</div></div>
     </td>
 </tr>
 </tbody>
@@ -8423,7 +9533,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the treeview component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8433,7 +9543,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the treeview component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-sm-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>0.875rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-md-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-lg-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8443,7 +9583,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the treeview component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-sm-line-height</td>
+    <td>Number</td>
+    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>1.4285714286</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the small TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-md-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the medium TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-lg-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the large TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8453,7 +9623,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>16px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Indentation of child groups in treeview component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indentation of child groups in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8463,7 +9633,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.75rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-sm-item-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-md-item-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-lg-item-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 3 )</code></td>
+    <td><code>0.75rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8473,7 +9673,37 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-sm-item-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-md-item-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium TreeView items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-lg-item-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8483,7 +9713,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8493,7 +9723,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8522,7 +9752,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>(sm: (font-size: 0.875rem, line-height: 1.4285714286, item-padding-x: 0.5rem, item-padding-y: 0.25rem), md: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.25rem), lg: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.5rem))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the treeview.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8532,7 +9762,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the treeview component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8542,7 +9772,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the treeview component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8552,7 +9782,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the treeview component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8562,7 +9792,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8572,7 +9802,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8582,7 +9812,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #e9ecef"></span><code>#e9ecef</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8592,7 +9822,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of hovered treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of hovered TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8602,7 +9832,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8612,7 +9842,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8622,7 +9852,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8632,7 +9862,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of selected treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of selected TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8642,7 +9872,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>inset 0 0 0 2px rgba(33, 37, 41, 0.15)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused treeview items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of focused TreeView items.</div></div>
     </td>
 </tr>
 <tr>
@@ -8652,7 +9882,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8662,7 +9892,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0d6efd"></span><code>#0d6efd</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8672,7 +9902,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8682,7 +9912,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a hovered load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the hovered Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8692,7 +9922,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0a58ca"></span><code>#0a58ca</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a hovered load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8702,7 +9932,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a hovered load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the hovered Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8712,7 +9942,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: transparent"></span><code>transparent</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a focused load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8722,7 +9952,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><span class="color-preview" style="background-color: #0a58ca"></span><code>#0a58ca</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a focused load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8732,7 +9962,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a focused load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Load More button in the TreeView.</div></div>
     </td>
 </tr>
 <tr>
@@ -8742,7 +9972,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td><code>inset 0 0 0 2px rgba(33, 37, 41, 0.15)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of a focused load more.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
     </td>
 </tr>
 </tbody>
