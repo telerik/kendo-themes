@@ -62,6 +62,12 @@
         }
     }
 
+    // Option Label
+    .k-list-optionlabel,
+    .k-list-optionlabel.k-hover,
+    .k-list-optionlabel:hover {
+        color: $kendo-list-option-label-text;
+    }
 
     // List group item
     .k-list-group-item {

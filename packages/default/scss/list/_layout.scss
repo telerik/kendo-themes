@@ -122,6 +122,7 @@
     }
     .k-list-optionlabel {
         @extend .k-list-item !optional;
+        column-gap: 0;
     }
 
 
