@@ -34,7 +34,37 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-sm-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-md-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-lg-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +74,37 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-sm-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>0.25rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-md-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-lg-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +114,37 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the toolbar tools.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Toolbar tools.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-sm-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1.5 )</code></td>
+    <td><code>0.375rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the small Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-md-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the medium Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-lg-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2.5 )</code></td>
+    <td><code>0.625rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the tools of the large Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +154,7 @@ The following table lists the available variables for customization.
     <td><code>1px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +164,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +174,7 @@ The following table lists the available variables for customization.
     <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -94,7 +184,7 @@ The following table lists the available variables for customization.
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -104,7 +194,7 @@ The following table lists the available variables for customization.
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -114,7 +204,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -124,7 +214,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -134,7 +224,7 @@ The following table lists the available variables for customization.
     <td><span class="color-preview" style="background-color: #dee2e6"></span><code>#dee2e6</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the border around the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -144,7 +234,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gradient of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -154,7 +244,7 @@ The following table lists the available variables for customization.
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -164,7 +254,7 @@ The following table lists the available variables for customization.
     <td><code>inherit</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the separator border of the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the separator border of the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -174,7 +264,7 @@ The following table lists the available variables for customization.
     <td><code>10em</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the input in the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the input in the Toolbar.</div></div>
     </td>
 </tr>
 <tr>
@@ -184,7 +274,7 @@ The following table lists the available variables for customization.
     <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the focused toolbar item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Toolbar item.</div></div>
     </td>
 </tr>
 <tr>
@@ -210,7 +300,7 @@ The following table lists the available variables for customization.
     <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, spacing: 0.375rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: 0.625rem))</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Toolbar.</div></div>
     </td>
 </tr>
 </tbody>

@@ -55,43 +55,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-avatar-theme-colors</td>
-    <td></td>
-    <td><code>()</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the avatar variations.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-badge-brand-colors</td>
-    <td></td>
-    <td><code>(
-    primary: primary,
-    error: error,
-    success: success,
-    info: info,
-    secondary: neutral,
-    tertiary: tertiary,
- )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme variations for the badge.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-badge-theme-colors</td>
-    <td></td>
-    <td><code>()</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the badge variations.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-bottom-nav-theme-colors</td>
     <td></td>
     <td><code>()</code></td>
@@ -251,16 +214,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the dialog variations.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-horizontal-form-label-align</td>
-    <td></td>
-    <td><code>flex-end</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal alignment of the form label</div></div>
     </td>
 </tr>
 <tr>

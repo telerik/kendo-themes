@@ -34,7 +34,7 @@ The following table lists the available variables for customization.
     <td><code>4px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the button arrow in the Menu Button..</div></div>
     </td>
 </tr>
 </tbody>
