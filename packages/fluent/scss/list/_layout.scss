@@ -19,6 +19,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: var( --kendo-list-font-family, #{$kendo-list-font-family} );
         font-size: var( --INTERNAL--kendo-list-font-size, 1rem );
         line-height: var( --INTERNAL--kendo-list-line-height, normal );
         display: flex;
