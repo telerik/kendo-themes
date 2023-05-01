@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-list-font-family</td>
+    <td>String</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the List components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-font-size</td>
     <td>Null</td>
     <td><code>null</code></td>
