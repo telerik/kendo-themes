@@ -30,7 +30,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "build": "node ./scripts/build.js && npm run typegen",
+    "typegen": "tsc --emitDeclarationOnly --declaration --declarationDir dist/",
     "build:tests": "node ./scripts/build-tests.js",
     "check-types": "npx tsc src/index.ts --noEmit --emitDeclarationOnly false --jsx react-jsx",
     "prepublishOnly": "npm run build"
