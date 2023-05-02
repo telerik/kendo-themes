@@ -1,91 +1,91 @@
 /// This is equivalent to `top: 0;`.
 /// @example top: 0;
 /// @name .k-top-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `right: 0;`.
 /// @example right: 0;
 /// @name .k-right-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `bottom: 0;`.
 /// @example bottom: 0;
 /// @name .k-bottom-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `left: 0;`.
 /// @example left: 0;
 /// @name .k-left-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `top: 0;`.
 /// @example top: 0;
 /// @name .k-pos-top-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `right: 0;`.
 /// @example right: 0;
 /// @name .k-pos-right-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `bottom: 0;`.
 /// @example bottom: 0;
 /// @name .k-pos-bottom-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `left: 0;`.
 /// @example left: 0;
 /// @name .k-pos-left-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `top: 0; left: 0;`.
 /// @example top: 0; left: 0;
 /// @name .k-top-left-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `top: 0; right: 0;`.
 /// @example top: 0; right: 0;
 /// @name .k-top-right-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `bottom: 0; left: 0;`.
 /// @example bottom: 0; left: 0;
 /// @name .k-bottom-left-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `bottom: 0; right: 0;`.
 /// @example bottom: 0; right: 0;
 /// @name .k-bottom-right-0
-/// @group position
+/// @group placement
 /// @contextType css
 
-/// This is equivalent to `inset: 0;`.This is a shorthand that corresponds to the top: 0; right: 0; bottom: 0; and/or left: 0 properties. It has the same multi-value syntax of the margin shorthand.
+/// This is equivalent to `inset: 0;`.
 /// @example inset: 0;
 /// @name .k-inset-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `inset-inline: 0;`.
 /// @example inset-inline: 0;
 /// @name .k-inset-x-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 /// This is equivalent to `inset-block: 0;`.
 /// @example inset-block: 0;
 /// @name .k-inset-y-0
-/// @group position
+/// @group placement
 /// @contextType css
 
 @mixin kendo-utils--layout--placement() {
@@ -97,7 +97,7 @@
     @include generate-utils( left, left, $kendo-utils-placement );
 
 
-    // Position length utility classes
+    // placement length utility classes
     @each $side in (top, right, bottom, left) {
         .#{$kendo-prefix}#{$side},
         .#{$kendo-prefix}pos-#{$side} { #{$side}: 0; } // sass-lint:disable-line brace-style

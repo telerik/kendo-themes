@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.0...v6.4.0-dev.1) (2023-05-01)
+
+
+### Bug Fixes
+
+* **scrollview:** fix prev and next icons position in RTL ([1c4ebe3](https://github.com/telerik/kendo-themes/commit/1c4ebe3908cce81b3e2655ef3cc8c16c0104db24))
+
+
+
+
+
 # [6.4.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.3.1-dev.0...v6.4.0-dev.0) (2023-04-24)
 
 

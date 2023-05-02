@@ -56,7 +56,7 @@ const defaultProps = {
 export const Textbox = (
     props: KendoTextboxProps &
         KendoTextboxState &
-        React.HTMLAttributes<HTMLSpanElement>
+        Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
         prefix,

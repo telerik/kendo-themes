@@ -1,0 +1,61 @@
+/// This is equivalent to `background-position: center;`.
+/// @example background-position: center;
+/// @name .k-bg-center
+/// @group background-position
+/// @contextType css
+
+/// This is equivalent to `background-position: top;`.
+/// @example background-position: top;
+/// @name .k-bg-top
+/// @group background-position
+/// @contextType css
+
+/// This is equivalent to `background-position: right;`.
+/// @example background-position: right;
+/// @name .k-bg-right
+/// @group background-position
+/// @contextType css
+
+/// This is equivalent to `background-position: bottom;`.
+/// @example background-position: bottom;
+/// @name .k-bg-bottom
+/// @group background-position
+/// @contextType css
+
+/// This is equivalent to `background-position: left;`.
+/// @example background-position: left;
+/// @name .k-bg-left
+/// @group background-position
+/// @contextType css
+
+/// This is equivalent to `background-position: top left;`.
+/// @example background-position: top left;
+/// @name .k-bg-top-left
+/// @group background-position
+/// @contextType css
+
+/// This is equivalent to `background-position: top right;`.
+/// @example background-position: top right;
+/// @name .k-bg-top-right
+/// @group background-position
+/// @contextType css
+
+/// This is equivalent to `background-position: bottom left;`.
+/// @example background-position: bottom left;
+/// @name .k-bg-bottom-left
+/// @group background-position
+/// @contextType css
+
+/// This is equivalent to `background-position: bottom right;`.
+/// @example background-position: bottom right;
+/// @name .k-bg-bottom-right
+/// @group background-position
+/// @contextType css
+
+@mixin kendo-utils--background--background-position() {
+
+    // Background position utility classes
+    $kendo-utils-background-position: k-map-get( $kendo-utils, "background-position" ) !default;
+    @include generate-utils( bg, background-position, $kendo-utils-background-position );
+
+}

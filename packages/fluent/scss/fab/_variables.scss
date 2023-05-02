@@ -3,121 +3,133 @@
 @use "../core/" as *;
 @use "../button/_variables.scss" as *;
 
-/// Width of the border around the FAB.
+/// The width of the border around the FAB.
 /// @group floating-action-button
 $kendo-fab-border-width: 1px !default;
-/// Border radius of the FAB.
+/// The border radius of the FAB.
 /// @group floating-action-button
 $kendo-fab-border-radius: var( --kendo-border-radius-md, 0 ) !default;
-/// Font family of the FAB.
+/// The font family of the FAB.
 /// @group floating-action-button
 $kendo-fab-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the FAB.
+/// The font size of the FAB.
 /// @group floating-action-button
 $kendo-fab-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the FAB.
+/// The line height of the FAB.
 /// @group floating-action-button
 $kendo-fab-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Horizontal padding of the FAB.
+/// The horizontal padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-x: map.get( $kendo-spacing, 4 ) !default;
+/// The horizontal padding of the small FAB.
+/// @group floating-action-button
 $kendo-fab-sm-padding-x: math.div( $kendo-fab-padding-x, 2 ) !default;
+/// The horizontal padding of the medium FAB.
+/// @group floating-action-button
 $kendo-fab-md-padding-x: $kendo-fab-padding-x !default;
+/// The horizontal padding of the large FAB.
+/// @group floating-action-button
 $kendo-fab-lg-padding-x: ( $kendo-fab-padding-x * 1.5 ) !default;
 
-/// Vertical padding of the FAB.
+/// The vertical padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-y: $kendo-fab-padding-x !default;
+/// The vertical padding of the small FAB.
+/// @group floating-action-button
 $kendo-fab-sm-padding-y: math.div( $kendo-fab-padding-y, 2 ) !default;
+/// The vertical padding of the medium FAB.
+/// @group floating-action-button
 $kendo-fab-md-padding-y: $kendo-fab-padding-y !default;
+/// The vertical padding of the large FAB.
+/// @group floating-action-button
 $kendo-fab-lg-padding-y: ( $kendo-fab-padding-y * 1.5 ) !default;
 
-/// Offset of the focused FAB.
+/// The offset of the focused FAB.
 /// @group floating-action-button
 $kendo-fab-focus-offset: $kendo-button-focus-offset !default;
-/// Outline width of the focused FAB.
+/// The outline width of the focused FAB.
 /// @group floating-action-button
 $kendo-fab-focus-outline-width: $kendo-button-focus-outline-width !default;
-/// Outline style of the focused FAB.
+/// The outline style of the focused FAB.
 /// @group floating-action-button
 $kendo-fab-focus-outline-style: $kendo-button-focus-outline-style !default;
 
-/// Horizontal padding of the FAB icon.
+/// The horizontal padding of the FAB icon.
 /// @group floating-action-button
 $kendo-fab-icon-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-/// Vertical padding of the FAB icon.
+/// The vertical padding of the FAB icon.
 /// @group floating-action-button
 $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;
-/// FAB icon spacing.
+/// The spacing of the FAB icon.
 /// @group floating-action-button
 $kendo-fab-icon-spacing: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 
-/// FAB items horizontal padding.
+/// The horizontal padding of the FAB items.
 /// @group floating-action-button
 $kendo-fab-items-padding-x: 0px !default;
-/// FAB items vertical padding.
+/// The vertical padding of the FAB items.
 /// @group floating-action-button
 $kendo-fab-items-padding-y: map.get( $kendo-spacing, 4 ) !default;
 
-/// FAB item text horizontal padding.
+/// The horizontal padding of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-padding-x: map.get( $kendo-spacing, 1 ) !default;
-/// FAB item text vertical padding.
+/// The vertical padding of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-padding-y: map.get( $kendo-spacing, 1 ) !default;
-/// Width of the FAB item text border.
+/// The width of the FAB item text border.
 /// @group floating-action-button
 $kendo-fab-item-text-border-width: 1px !default;
-/// Border style of the FAB item text.
+/// The border style of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-border-style: solid !default;
-/// Border radius of the FAB item text.
+/// The border radius of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-border-radius: var( --kendo-border-radius-md, 0 ) !default;
-/// Font size of the FAB item text.
+/// The font size of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-font-size: var( --kendo-font-size-sm, inherit ) !default;
-/// Line height of the FAB item text.
+/// The line height of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-line-height: var( --kendo-line-height-sm, inherit ) !default;
-/// The bottom margin of the FAB item.
+/// The bottom margin of the FAB item text.
 /// @group floating-action-button
 $kendo-fab-item-text-offset-x: map.get( $kendo-spacing, 2 ) !default;
 
-/// Offset of the focused FAB item.
+/// The offset of the focused FAB item.
 /// @group floating-action-button
 $kendo-fab-item-focus-offset: $kendo-button-focus-offset !default;
-/// Outline width of the focused FAB item.
+/// The outline width of the focused FAB item.
 /// @group floating-action-button
 $kendo-fab-item-focus-outline-width: $kendo-button-focus-outline-width !default;
-/// Outline style of the focused FAB item.
+/// The outline style of the focused FAB item.
 /// @group floating-action-button
 $kendo-fab-item-focus-outline-style: $kendo-button-focus-outline-style !default;
 
-/// FAB item icon horizontal padding.
+/// The horizontal padding of the FAB item icon.
 /// @group floating-action-button
 $kendo-fab-item-icon-padding-x: map.get( $kendo-spacing, 2 ) + $kendo-fab-icon-padding-x !default;
-/// FAB item icon vertical padding.
+/// The vertical padding of the FAB item icon.
 /// @group floating-action-button
 $kendo-fab-item-icon-padding-y: $kendo-fab-item-icon-padding-x !default;
-/// Width of the FAB item icon border.
+/// The border width of the FAB item icon.
 /// @group floating-action-button
 $kendo-fab-item-icon-border-width: 1px !default;
-/// Border style of the FAB item icon.
+/// The border style of the FAB item icon.
 /// @group floating-action-button
 $kendo-fab-item-icon-border-style: solid !default;
-/// Border radius of the FAB item icon.
+/// The border radius of the FAB item icon.
 /// @group floating-action-button
 $kendo-fab-item-icon-border-radius: 50% !default;
 
-/// Theme colors map for the FAB.
+/// The theme colors map for the FAB.
 /// @group floating-action-button
 $kendo-fab-theme-colors: (
     solid: map.get( $kendo-button-theme-colors, "solid")
 ) !default;
 
-/// Sizes map for the FAB.
+/// The size map for the FAB.
 /// @group floating-action-button
 $kendo-fab-sizes: (
     sm: (
@@ -146,30 +158,30 @@ $kendo-fab-item-bg: var( --kendo-component-bg, inherit ) !default;
 /// The base border color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-border: get-theme-color-var( neutral-110 ) !default;
-/// The hover text color of the FAB item.
+/// The text color of the hovered FAB item.
 /// @group floating-action-button
 $kendo-fab-item-hover-text: var( --kendo-hover-text, inherit ) !default;
-/// The hover background color of the FAB item.
+/// The background color of the hovered FAB item.
 /// @group floating-action-button
 $kendo-fab-item-hover-bg: var( --kendo-hover-bg, inherit ) !default;
-/// The hover border color of the FAB item.
+/// The border color of the hovered FAB item.
 /// @group floating-action-button
 $kendo-fab-item-hover-border: get-theme-color-var( neutral-110 ) !default;
-/// The focus text color of the FAB item.
+/// The text color of the focused FAB item.
 /// @group floating-action-button
 $kendo-fab-item-focus-text: get-theme-color-var( neutral-160 ) !default;
-/// The focus background color of the FAB item.
+/// The background color of the focused FAB item.
 /// @group floating-action-button
 $kendo-fab-item-focus-bg: var( --kendo-component-bg, inherit ) !default;
-/// The focus border color of the FAB item.
+/// The border color of the focused FAB item.
 /// @group floating-action-button
 $kendo-fab-item-focus-border: get-theme-color-var( neutral-110 ) !default;
-/// The active text color of the FAB item.
+/// The text color of the active FAB item.
 /// @group floating-action-button
 $kendo-fab-item-active-text: var( --kendo-selected-text, inherit ) !default;
-/// The active background color of the FAB item.
+/// The background color of the active FAB item.
 /// @group floating-action-button
 $kendo-fab-item-active-bg: var( --kendo-selected-bg, inherit ) !default;
-/// The active border color of the FAB item.
+/// The border color of the active FAB item.
 /// @group floating-action-button
 $kendo-fab-item-active-border: get-theme-color-var( neutral-110 ) !default;

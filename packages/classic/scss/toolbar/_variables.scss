@@ -1,72 +1,90 @@
 // Toolbar
 
-/// The horizontal padding of the toolbar.
+/// The horizontal padding of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-padding-x: null !default;
+/// The horizontal padding of the small Toolbar.
+/// @group toolbar
 $kendo-toolbar-sm-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+/// The horizontal padding of the medium Toolbar.
+/// @group toolbar
 $kendo-toolbar-md-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+/// The horizontal padding of the large Toolbar.
+/// @group toolbar
 $kendo-toolbar-lg-padding-x: k-map-get( $kendo-spacing, 2.5 ) !default;
 
-/// The vertical padding of the toolbar.
+/// The vertical padding of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-padding-y: null !default;
+/// The vertical padding of the small Toolbar.
+/// @group toolbar
 $kendo-toolbar-sm-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+/// The vertical padding of the medium Toolbar.
+/// @group toolbar
 $kendo-toolbar-md-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+/// The vertical padding of the large Toolbar.
+/// @group toolbar
 $kendo-toolbar-lg-padding-y: k-map-get( $kendo-spacing, 2.5 ) !default;
 
-/// The spacing between the toolbar tools.
+/// The spacing between the Toolbar tools.
 /// @group toolbar
 $kendo-toolbar-spacing: null !default;
+/// The spacing between the tools of the small Toolbar.
+/// @group toolbar
 $kendo-toolbar-sm-spacing: k-map-get( $kendo-spacing, 1.5 ) !default;
+/// The spacing between the tools of the medium Toolbar.
+/// @group toolbar
 $kendo-toolbar-md-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+/// The spacing between the tools of the large Toolbar.
+/// @group toolbar
 $kendo-toolbar-lg-spacing: k-map-get( $kendo-spacing, 2.5 ) !default;
 
-/// Width of the border around the toolbar.
+/// The width of the border around the Toolbar.
 /// @group toolbar
 $kendo-toolbar-border-width: 1px !default;
-/// Border radius of the toolbar.
+/// The border radius of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-border-radius: null !default;
 
-/// Font family of the toolbar.
+/// The font family of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-font-family: $kendo-font-family !default;
-/// Font size of the toolbar.
+/// The font size of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-font-size: $kendo-font-size-md !default;
-/// Line height of the toolbar.
+/// The line height of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-line-height: $kendo-line-height-md !default;
 
-/// Background color of the toolbar.
+/// The background color of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-bg: $kendo-button-bg !default;
-/// Text color of the toolbar.
+/// The text color of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-text: $kendo-button-text !default;
-/// Color of the border around the toolbar.
+/// The color of the border around the Toolbar.
 /// @group toolbar
 $kendo-toolbar-border: $kendo-button-border !default;
-/// Gradient of the toolbar.
+/// The gradient of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-gradient: null !default;
-/// Box shadow of the toolbar.
+/// The box shadow of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-shadow: null !default;
 
-/// Color of the separator border of the toolbar.
+/// The color of the separator border of the Toolbar.
 /// @group toolbar
 $kendo-toolbar-separator-border: inherit !default;
 
-/// The width of the input in the toolbar.
+/// The width of the input in the Toolbar.
 /// @group toolbar
 $kendo-toolbar-input-width: 10em !default;
 
-/// Box shadow of the focused toolbar item.
+/// The box shadow of the focused Toolbar item.
 /// @group toolbar
 $kendo-toolbar-item-shadow: $kendo-button-focus-shadow !default;
 
-/// Sizes map for the toolbar.
+/// The sizes map for the Toolbar.
 /// @group toolbar
 $kendo-toolbar-sizes: (
     sm: (

@@ -51,16 +51,16 @@ $kendo-button-md-font-size: $kendo-font-size-md !default;
 /// @group button
 $kendo-button-lg-font-size: $kendo-font-size-md !default;
 
-/// Line heights used along with $kendo-font-size.
+/// Line heights used along with the $kendo-font-size variable.
 /// @group button
 $kendo-button-line-height: k-math-div( 20, 14 ) !default;
-/// The line height used along with the $kendo-font-size of the small Button.
+/// The line height used along with the $kendo-font-size variable of the small Button.
 /// @group button
 $kendo-button-sm-line-height: k-math-div( 20, 14 ) !default;
-/// The line height used along with the $kendo-font-size of the medium Button.
+/// The line height used along with the $kendo-font-size variable of the medium Button.
 /// @group button
 $kendo-button-md-line-height: k-math-div( 20, 14 ) !default;
-/// The line height used along with the $kendo-font-size of the large Button.
+/// The line height used along with the $kendo-font-size variable of the large Button.
 /// @group button
 $kendo-button-lg-line-height: k-math-div( 20, 14 ) !default;
 

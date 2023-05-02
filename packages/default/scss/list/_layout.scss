@@ -16,6 +16,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: $kendo-list-font-family;
         font-size: $kendo-list-font-size;
         line-height: $kendo-list-line-height;
         display: flex;
@@ -121,6 +122,7 @@
     }
     .k-list-optionlabel {
         @extend .k-list-item !optional;
+        column-gap: 0;
     }
 
 

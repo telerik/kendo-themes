@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.0...v6.4.0-dev.1) (2023-05-01)
+
+
+### Features
+
+* **utils:** add background position and size ([1681b4f](https://github.com/telerik/kendo-themes/commit/1681b4ff2aedc92abe01192a45bea4e6410d25e6))
+
+
+
+
+
 # [6.4.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.3.1-dev.0...v6.4.0-dev.0) (2023-04-24)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils

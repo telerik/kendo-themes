@@ -28,6 +28,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-list-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the List components.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-font-size</td>
     <td>Null</td>
     <td><code>null</code></td>
@@ -415,6 +425,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the 'No Data' text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-option-label-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the 'Option Label' text.</div></div>
     </td>
 </tr>
 </tbody>

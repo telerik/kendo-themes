@@ -1,8 +1,12 @@
 @import "./_background-clip.scss";
 @import "./_background-color.scss";
+@import "./_background-position.scss";
+@import "./_background-size.scss";
 
 
 @mixin kendo-utils--background() {
     @include kendo-utils--background--background-clip();
     @include kendo-utils--background--background-color();
+    @include kendo-utils--background--background-position();
+    @include kendo-utils--background--background-size();
 }

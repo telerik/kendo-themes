@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-themes-html",
   "description": "A collection of HTML helpers used for developing Kendo UI themes",
-  "version": "6.4.0-dev.0",
+  "version": "6.4.0-dev.1",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -30,13 +30,14 @@
     "access": "public"
   },
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "build": "node ./scripts/build.js && npm run typegen",
+    "typegen": "tsc --emitDeclarationOnly --declaration --declarationDir dist/",
     "build:tests": "node ./scripts/build-tests.js",
     "check-types": "npx tsc src/index.ts --noEmit --emitDeclarationOnly false --jsx react-jsx",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@progress/kendo-svg-icons": "^1.4.2",
+    "@progress/kendo-svg-icons": "^1.5.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

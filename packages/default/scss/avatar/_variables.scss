@@ -1,20 +1,20 @@
 // Avatar
 
-/// Border width of the avatar.
+/// The border width of the Avatar.
 /// @group avatar
 $kendo-avatar-border-width: 1px !default;
 
-/// Font family of the avatar.
+/// The font family of the Avatar.
 /// @group avatar
 $kendo-avatar-font-family: $kendo-font-family !default;
-/// Font size of the avatar.
+/// The font size of the Avatar.
 /// @group avatar
 $kendo-avatar-font-size: $kendo-font-size-md !default;
-/// Line height of the avatar.
+/// The line height of the Avatar.
 /// @group avatar
 $kendo-avatar-line-height: $kendo-line-height-md !default;
 
-/// The sizes of the avatar.
+/// The sizes map of the Avatar.
 /// @group avatar
 $kendo-avatar-sizes: (
     sm: k-map-get( $kendo-spacing, 4 ),
@@ -22,6 +22,6 @@ $kendo-avatar-sizes: (
     lg: k-map-get( $kendo-spacing, 16 )
 ) !default;
 
-/// Theme colors map of the avatar.
+/// The theme colors map of the Avatar.
 /// @group avatar
 $kendo-avatar-theme-colors: $kendo-theme-colors !default;
