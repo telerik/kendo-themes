@@ -1,5 +1,9 @@
 // List
 
+/// The font family of the List components.
+/// @group list
+$kendo-list-font-family: $kendo-font-family !default;
+
 /// The font size of the List component, if no size is set.
 /// @group list
 $kendo-list-font-size: null !default;

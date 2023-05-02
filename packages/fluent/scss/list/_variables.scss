@@ -1,6 +1,10 @@
 @use "sass:map";
 @use "../core/" as *;
 
+/// The font family of the List components.
+/// @group list
+$kendo-list-font-family: var( --kendo-font-family, inherit) !default;
+
 /// The font size of the List component.
 /// @group list
 $kendo-list-sm-font-size: var( --kendo-font-size, inherit ) !default;
