@@ -14,7 +14,7 @@ export type KendoTreeviewOptions = {
 };
 
 export type KendoTreeviewProps = KendoTreeviewOptions & {
-    children?: JSX.Element[];
+    children?: JSX.Element | JSX.Element[];
 };
 
 export type KendoTreeviewState = { [K in (typeof states)[number]]?: boolean };

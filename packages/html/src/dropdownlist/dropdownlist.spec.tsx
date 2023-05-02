@@ -60,7 +60,7 @@ const defaultProps = {
 export const DropdownList = (
     props: KendoDropdownListProps &
         KendoDropdownListState &
-        React.HTMLAttributes<HTMLSpanElement>
+        Omit<React.HTMLAttributes<HTMLSpanElement>, 'prefix'>
 ) => {
     const {
         valueIconName,
