@@ -17,6 +17,7 @@ export type KendoListOptions = {
 export type KendoListProps = KendoListOptions & {
     virtualization?: boolean;
     children?: JSX.Element[];
+    optionLabel?: JSX.Element;
 };
 
 export type KendoListState = { [K in (typeof states)[number]]?: boolean };
@@ -34,6 +35,7 @@ export const List = (
         size = defaultProps.size,
         virtualization,
         children,
+        optionLabel,
         ...other
     } = props;
 
@@ -100,6 +102,7 @@ export const List = (
                     ['k-virtual-list']: virtualization,
                 }
             )}>
+            {optionLabel}
             {listGroup}
             {listContent}
         </div>

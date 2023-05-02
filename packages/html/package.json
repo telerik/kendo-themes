@@ -37,7 +37,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@progress/kendo-svg-icons": "^1.4.2",
+    "@progress/kendo-svg-icons": "^1.5.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
