@@ -1,0 +1,51 @@
+{
+    "extends": "stylelint-config-standard-scss",
+    "plugins": [
+        "stylelint-scss"
+    ],
+    "rules": {
+        "alpha-value-notation": "number",
+        "selector-not-notation": null,
+        "value-keyword-case": null,
+        "custom-property-pattern": null,
+        "number-max-precision": 6,
+
+        "at-rule-no-unknown": null,
+        "at-rule-empty-line-before": null,
+
+        "color-function-notation": null,
+        "color-named": null,
+        "color-no-invalid-hex": true,
+        "color-hex-length": "long",
+
+        "rule-empty-line-before": null,
+        "declaration-empty-line-before": null,
+        "custom-property-empty-line-before" : null,
+
+        "block-no-empty": null,
+        "comment-no-empty": null,
+        "no-empty-source": null,
+        "length-zero-no-unit": null,
+        "property-no-vendor-prefix": null,
+        "custom-property-no-missing-var-function": null,
+
+        "no-duplicate-selectors": null,
+        "no-descending-specificity": null,
+
+        "declaration-no-important": true,
+        "declaration-block-no-redundant-longhand-properties": [
+            true,
+            { "ignoreShorthands": [ "inset" ] }
+        ],
+
+        "scss/at-import-partial-extension": "always",
+        "scss/at-import-no-partial-leading-underscore": null,
+        "scss/at-mixin-argumentless-call-parentheses": "always",
+        "scss/at-mixin-pattern": null,
+        "scss/at-rule-conditional-no-parentheses": null,
+        "scss/at-extend-no-missing-placeholder": null,
+        "scss/dollar-variable-pattern": null,
+        "scss/dollar-variable-empty-line-before": null,
+        "scss/double-slash-comment-empty-line-before": null
+    }
+}
