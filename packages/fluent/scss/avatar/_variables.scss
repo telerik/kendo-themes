@@ -1,21 +1,21 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Border width of the avatar.
+/// The border width of the Avatar.
 /// @group avatar
 $kendo-avatar-border-width: 1px !default;
 
-/// Font family of the avatar.
+/// The font family of the Avatar.
 /// @group avatar
 $kendo-avatar-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the avatar.
+/// The font size of the Avatar.
 /// @group avatar
 $kendo-avatar-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the avatar.
+/// The line height of the Avatar.
 /// @group avatar
 $kendo-avatar-line-height: var( --kendo-line-height, inherit ) !default;
 
-/// The sizes of the avatar.
+/// The sizes map of the Avatar.
 /// @group avatar
 $kendo-avatar-sizes: (
     sm: map.get( $kendo-spacing, 4 ),
@@ -23,7 +23,8 @@ $kendo-avatar-sizes: (
     lg: map.get( $kendo-spacing, 16 )
 ) !default;
 
-// Theme variations for the avatar.
+/// The theme variations for the Avatar.
+/// @group avatar
 $kendo-avatar-brand-colors: (
     primary: primary,
     error: error,
@@ -33,7 +34,7 @@ $kendo-avatar-brand-colors: (
     tertiary: tertiary,
  ) !default;
 
-// Matrix with avatar theme colors in the order: bg, color, border
+// Matrices with Avatar theme colors in the order: bg, color, border
 $_tc-avatar-matrix: (
     solid: (
         normal: (100, $kendo-color-white, 100)
@@ -70,7 +71,8 @@ $_tc-avatar-light-matrix: (
     )
 ) !default;
 
-/// Theme colors map for the avatar variations.
+/// The theme colors map for the Avatar variations.
+/// @group avatar
 $kendo-avatar-theme-colors: () !default;
 
 @each $fill-mode, $ui-states in $_tc-avatar-matrix {
