@@ -25,7 +25,7 @@ root.render(
             <span>Empty body fixed height</span>
 
             <section>
-                <Popover callout="top" title="Title" body="Body content">
+                <Popover callout="top" title="Title" body={<>Body content</>}>
                     <ActionButtons className="k-popover-actions" alignment="stretched">
                         <Button fillMode="flat">Action</Button>
                         <Button fillMode="flat" themeColor="primary">Primary</Button>
@@ -34,7 +34,7 @@ root.render(
             </section>
 
             <section>
-                <Popover callout="right" title="Title" body="Body content">
+                <Popover callout="right" title="Title" body={<>Body content</>}>
                     <ActionButtons className="k-popover-actions" alignment="stretched">
                         <Button fillMode="flat">Action</Button>
                         <Button fillMode="flat" themeColor="primary">Primary</Button>
@@ -43,7 +43,7 @@ root.render(
             </section>
 
             <section>
-                <Popover callout="bottom" title="Title" body="Body content">
+                <Popover callout="bottom" title="Title" body={<>Body content</>}>
                     <ActionButtons className="k-popover-actions" alignment="stretched">
                         <Button fillMode="flat">Action</Button>
                         <Button fillMode="flat" themeColor="primary">Primary</Button>
@@ -52,7 +52,7 @@ root.render(
             </section>
 
             <section>
-                <Popover callout="left" title="Title" body="Body content">
+                <Popover callout="left" title="Title" body={<>Body content</>}>
                     <ActionButtons className="k-popover-actions" alignment="stretched">
                         <Button fillMode="flat">Action</Button>
                         <Button fillMode="flat" themeColor="primary">Primary</Button>
@@ -61,7 +61,7 @@ root.render(
             </section>
 
             <section>
-                <Popover callout="left" title="Title" body="" style={{ height: "150px" }}>
+                <Popover callout="left" title="Title" style={{ height: "150px" }}>
                 </Popover>
             </section>
         </div>

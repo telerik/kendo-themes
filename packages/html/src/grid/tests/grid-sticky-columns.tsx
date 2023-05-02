@@ -292,7 +292,7 @@ root.render(
                                                 <p className="k-reset">
                                                     <Icon icon="caret-alt-down" />
                                                     <span>Currently active projects: 5 &nbsp;</span>
-                                                    <span classicon="exclamation-circle">These people work on too many projects</span>
+                                                    <span>These people work on too many projects</span>
                                                 </p>
                                             </td>
                                         </tr>
