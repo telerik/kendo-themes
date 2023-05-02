@@ -1,5 +1,9 @@
 @use "../core/" as *;
 @use "../popup/_variables.scss" as *;
 
+/// The horizontal padding of the DropdownTree popup
+/// @group dropdowntree
 $kendo-dropdowntree-popup-padding-x: $kendo-popup-content-padding-x !default;
+/// The vertical padding of the DropdownTree popup
+/// @group dropdowntree
 $kendo-dropdowntree-popup-padding-y: $kendo-popup-content-padding-y !default;
