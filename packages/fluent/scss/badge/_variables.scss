@@ -1,56 +1,76 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Background color of the badge.
+/// The background color of the Badge.
 /// @group badge
 $kendo-badge-bg: var( --kendo-component-bg, initial ) !default;
-/// Text color of the badge.
+/// The text color of the Badge.
 /// @group badge
 $kendo-badge-text: var( --kendo-component-text, initial ) !default;
-/// Border color of the badge.
+/// The border color of the Badge.
 /// @group badge
 $kendo-badge-border: var( --kendo-component-border, initial ) !default;
 
-/// Border width of the badge.
+/// The border width of the Badge.
 /// @group badge
 $kendo-badge-border-width: 1px !default;
 
-/// Font weight of the badge.
+/// The font weight of the Badge.
 /// @group badge
 $kendo-badge-font-weight: var( --kendo-font-weight, normal ) !default;
 
-/// Horizontal padding of the badge.
+/// Horizontal padding of the small Badge.
 /// @group badge
 $kendo-badge-sm-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+/// Horizontal padding of the medium Badge.
+/// @group badge
 $kendo-badge-md-padding-x: map.get( $kendo-spacing, 1 ) !default;
+/// Horizontal padding of the large Badge.
+/// @group badge
 $kendo-badge-lg-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
 
-/// Vertical padding of the badge.
+/// Vertical padding of the small Badge.
 /// @group badge
 $kendo-badge-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+/// Vertical padding of the medium Badge.
+/// @group badge
 $kendo-badge-md-padding-y: map.get( $kendo-spacing, 1 ) !default;
+/// Vertical padding of the large Badge.
+/// @group badge
 $kendo-badge-lg-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 
-/// Font sizes of the badge.
+/// The font size of the small Badge.
 /// @group badge
 $kendo-badge-sm-font-size: var( --kendo-font-size-xs, inherit ) !default;
+/// The font size of the medium Badge.
+/// @group badge
 $kendo-badge-md-font-size: var( --kendo-font-size-xs, inherit ) !default;
+/// The font size of the large Badge.
+/// @group badge
 $kendo-badge-lg-font-size: var( --kendo-font-size-xs, inherit ) !default;
 
-/// Line heights of the badge.
+/// The line height used along with the $kendo-font-size variable of the small Badge.
 /// @group badge
 $kendo-badge-sm-line-height: var( --kendo-line-height-xs, normal ) !default;
+/// The line height used along with the $kendo-font-size variable of the medium Badge.
+/// @group badge
 $kendo-badge-md-line-height: var( --kendo-line-height-xs, normal ) !default;
+/// The line height used along with the $kendo-font-size variable of the large Badge.
+/// @group badge
 $kendo-badge-lg-line-height: var( --kendo-line-height-xs, normal ) !default;
 
-/// Badge min width used for circle badge.
+/// The calculated minimum width of the small circular Badge.
 /// @group badge
 $kendo-badge-sm-min-width: calc( #{$kendo-badge-sm-line-height} * 1em + #{$kendo-badge-sm-padding-y} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
+/// The calculated minimum width of the medium circular Badge.
+/// @group badge
 $kendo-badge-md-min-width: calc( #{$kendo-badge-md-line-height} * 1em + #{$kendo-badge-md-padding-y} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
+/// The calculated minimum width of the large circular Badge.
+/// @group badge
 $kendo-badge-lg-min-width: calc( #{$kendo-badge-lg-line-height} * 1em + #{$kendo-badge-lg-padding-y} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
 
 
-/// Sizes map for the badge.
+/// The sizes map for the Badge.
 /// @group badge
 $kendo-badge-sizes: (
     sm: (
@@ -77,7 +97,8 @@ $kendo-badge-sizes: (
 ) !default;
 
 
-/// Theme variations for the badge.
+/// The theme variations for the Badge.
+/// @group badge
 $kendo-badge-brand-colors: (
     primary: primary,
     error: error,
@@ -87,7 +108,7 @@ $kendo-badge-brand-colors: (
     tertiary: tertiary,
  ) !default;
 
-// Matrix with badge theme colors in the order: bg, color, border
+// Matrices with Badge theme colors in the order: bg, color, border
 $_tc-badge-matrix: (
     solid: (
         normal: (100, $kendo-color-white, 100)
@@ -124,7 +145,8 @@ $_tc-badge-light-matrix: (
     )
 ) !default;
 
-/// Theme colors map for the badge variations.
+/// The theme colors map for the Badge variations.
+/// @group badge
 $kendo-badge-theme-colors: () !default;
 
 @each $fill-mode, $ui-states in $_tc-badge-matrix {
