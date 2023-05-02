@@ -2,86 +2,102 @@
 @use "../core/" as *;
 @use "../button/_variables.scss" as *;
 
-/// Horizontal padding of the pager.
+/// The horizontal padding of the Pager.
 /// @group pager
 $kendo-pager-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// The horizontal padding of the small Pager.
+/// @group pager
 $kendo-pager-sm-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
+/// The horizontal padding of the medium Pager.
+/// @group pager
 $kendo-pager-md-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// The horizontal padding of the large Pager.
+/// @group pager
 $kendo-pager-lg-padding-x: map.get( $kendo-spacing, 2.5 ) !default;
 
-/// Vertical padding of the pager.
+/// The vertical padding of the Pager.
 /// @group pager
 $kendo-pager-padding-y: map.get( $kendo-spacing, 2 ) !default;
+/// The vertical padding of the small Pager.
+/// @group pager
 $kendo-pager-sm-padding-y: $kendo-pager-sm-padding-x !default;
+/// The vertical padding of the medium Pager.
+/// @group pager
 $kendo-pager-md-padding-y: $kendo-pager-md-padding-x !default;
+/// The vertical padding of the large Pager.
+/// @group pager
 $kendo-pager-lg-padding-y: $kendo-pager-lg-padding-x !default;
-/// Border width of the pager.
+/// The border width of the Pager.
 /// @group pager
 $kendo-pager-border-width: 1px !default;
 
-/// Font family of the pager.
+/// The font family of the Pager.
 /// @group pager
 $kendo-pager-font-family: var( --kendo-font-family, normal ) !default;
-/// Font size of the pager.
+/// The font size of the Pager.
 /// @group pager
 $kendo-pager-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the pager.
+/// The line height of the Pager.
 /// @group pager
 $kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Background color of the pager.
+/// The background color of the Pager.
 /// @group pager
 $kendo-pager-bg: get-theme-color-var( neutral-10 ) !default;
-/// Text color of the pager.
+/// The text color of the Pager.
 /// @group pager
 $kendo-pager-text: var( --kendo-component-text, inherit ) !default;
-/// Border color of the pager.
+/// The border color of the Pager.
 /// @group pager
 $kendo-pager-border: var( --kendo-component-border, inherit ) !default;
 
-/// Background color of the focused pager.
+/// The background color of the focused Pager.
 /// @group pager
 $kendo-pager-focus-bg: var( --kendo-pager-bg, #{$kendo-pager-bg}) !default;
-/// Text color of the focused pager.
+/// The text color of the focused Pager.
 /// @group pager
 $kendo-pager-focus-text: var( --kendo-pager-text, #{$kendo-pager-text}) !default;
-/// Border color of the focused pager.
+/// The border color of the focused Pager.
 /// @group pager
 $kendo-pager-focus-border: get-theme-color-var( neutral-130 ) !default;
 
-/// Spacing between the pager sections.
+/// The spacing between the Pager sections.
 /// @group pager
 $kendo-pager-section-spacing: 1em !default;
 
-/// Border radius of the pager items.
+/// The border radius of the Pager items.
 /// @group pager
 $kendo-pager-item-border-radius: 0 !default;
-/// Spacing around the pager items.
+/// The spacing around the Pager items.
 /// @group pager
 $kendo-pager-item-spacing: null !default;
 
-/// Spacing between the pager item groups according to the pager size.
+/// The spacing between the item groups of the small Pager.
 /// @group pager
 $kendo-pager-sm-item-group-spacing: map.get( $kendo-spacing, 2 ) !default;
+/// The spacing between the item groups of the medium Pager.
+/// @group pager
 $kendo-pager-md-item-group-spacing: map.get( $kendo-spacing, 2 ) !default;
+/// The spacing between the item groups of the large Pager.
+/// @group pager
 $kendo-pager-lg-item-group-spacing: map.get( $kendo-spacing, 2 ) !default;
 
-/// Text color of the pager sizes label.
+/// The text color of the Pagers' sizes label.
 /// @group pager
 $kendo-pager-sizes-label-text: get-theme-color-var( neutral-190 ) !default;
 
-/// Text color of the pager info label.
+/// The text color of the Pagers' info label.
 /// @group pager
 $kendo-pager-info-label-text: get-theme-color-var( neutral-130 ) !default;
 
-/// Width of the pager inputs.
+/// The width of the Inputs in the Pager.
 /// @group pager
 $kendo-pager-input-width: 5em !default;
-/// Width of the pager dropdowns.
+/// The width of the DropDowns in the Pager.
 /// @group pager
 $kendo-pager-dropdown-width: 5em !default;
 
-/// Sizes map of the pager.
+/// The sizes map of the Pager.
 /// @group pager
 $kendo-pager-sizes: (
     sm: (
