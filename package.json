@@ -49,7 +49,7 @@
     "sass": "sass-build",
     "sass:flat": "npm run dist:flat && sass-build --config sass-flat.config.js",
     "sass:swatches": "npm run dist:swatches && sass-build --config sass-swatches.config.js",
-    "sass:standalone": "sass-build --config sass-standalone.config.js",
+    "sass:standalone": "lerna run sass:standalone",
     "build": "npm run sass && npm run build:scripts",
     "build:scripts": "npm run build --prefix packages/html",
     "build:tests": "npm run build:tests --prefix packages/html",

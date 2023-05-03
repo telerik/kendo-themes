@@ -39,6 +39,7 @@
   "scripts": {
     "build": "sass-build",
     "sass": "sass-build",
+    "sass:standalone": "sass-build -c sass-standalone.config.js",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
