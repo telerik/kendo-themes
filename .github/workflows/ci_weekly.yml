@@ -62,7 +62,7 @@ jobs:
 
       - name: Lint styles
         run: |
-          npm run sasslint
+          npm run stylelint
 
       - name: Ensure standalone build
         run: |

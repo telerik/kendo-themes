@@ -56,10 +56,9 @@
     "serve": "npm run sass && npm run build:scripts && npm run build:tests && npm run serve-tests",
     "eslint": "eslint \"**/*.{js,jsx,ts,tsx,mjs}\"",
     "check-types": "npm run check-types --prefix packages/html",
-    "sasslint": "sass-lint -v -q ",
     "stylelint": "stylelint \"**/*.scss\"",
     "html-validate": "html-validate tests",
-    "lint": "npm run eslint && npm run sasslint",
+    "lint": "npm run eslint && npm run stylelint",
     "lint-staged": "lint-staged --verbose",
     "docs": "lerna run docs",
     "docs:check": "npm run docs && lerna exec -- git diff --exit-code --quiet -- docs/",
@@ -77,7 +76,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run sasslint && npm run lint-staged",
+      "pre-commit": "npm run stylelint && npm run lint-staged",
       "pre-push": "npm run sass && npm run docs:check",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }

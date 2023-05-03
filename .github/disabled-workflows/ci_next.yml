@@ -51,7 +51,7 @@ jobs:
         run: npm run eslint
 
       - name: Lint styles
-        run: npm run sasslint
+        run: npm run stylelint
 
       - name: Build docs
         run: npm run docs
