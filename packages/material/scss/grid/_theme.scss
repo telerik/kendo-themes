@@ -166,13 +166,11 @@
         }
 
         .k-table-thead > .k-table-row:not(:only-child) > .k-table-th {
+            border-inline-start-color: $kendo-grid-border;
+
             &.k-grid-header-sticky {
                 border-inline-color: $kendo-grid-sticky-header-border;
             }
-        }
-
-        .k-table-thead > .k-table-row:not(:only-child) > .k-table-th {
-            border-inline-start-color: $kendo-grid-border;
         }
 
         .k-grid-header-locked .k-table-thead .k-table-row .k-table-th {

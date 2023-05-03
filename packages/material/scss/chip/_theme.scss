@@ -29,7 +29,7 @@
                     @include box-shadow( none );
                     @include fill( $bg: k-try-tint( $color, 88% ) );
                 }
-            } @else if($name == "warning") {
+            } @else if ($name == "warning") {
                 @include fill(
                     $color: if( $kendo-is-dark-theme, k-try-shade( $color, 50% ), $kendo-chip-outline-text)
                 );

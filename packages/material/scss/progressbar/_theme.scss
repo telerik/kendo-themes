@@ -1,9 +1,9 @@
 @import "@progress/kendo-theme-default/scss/progressbar/_theme.scss";
 
-@function _translate($direction, $value) {
+@function _translate($direction, $value) { // stylelint-disable-line
     @return if($direction == horizontal, translateX($value), translateY($value));
 }
-@function _scale($direction, $value) {
+@function _scale($direction, $value) { // stylelint-disable-line
     @return if($direction == horizontal, scaleX($value), scaleY($value));
 }
 
