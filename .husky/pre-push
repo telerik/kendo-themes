@@ -2,6 +2,6 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # npm run eslint
-# npm run sasslint
+# npm run stylelint
 npm run sass
 npm run docs:check

@@ -19,7 +19,7 @@ The following npm commands are available:
 * To build all swatches with node-sass, run `npm run sass:swatches`.
 * To build all themes with dart-sass, run `npm run dart`.
 * To build all swatches with dart-sass, run `npm run dart:swatches`.
-* To lint all themes, run `npm run sasslint`.
+* To lint all themes, run `npm run stylelint`.
 
 There are additional commands, which can be found in [`package.json`](package.json) and [`gulpfile.js`](gulpfile.js).
 
