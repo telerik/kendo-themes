@@ -13,6 +13,10 @@ jobs:
   run:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        theme: [default, bootstrap, material, classic, nouvelle, fluent]
+
     steps:
 
       - name: Checkout branch
@@ -46,7 +50,7 @@ jobs:
 
       - name: Ensure standalone build
         run: |
-          npm run sass:standalone
+          npm run sass:standalone --prefix packages/${{ matrix.theme }}
 
       - name: Ensure flat build
         run: |
