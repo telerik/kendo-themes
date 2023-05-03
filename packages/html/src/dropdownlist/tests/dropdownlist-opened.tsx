@@ -12,8 +12,8 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>DropdownList Popup Opened</span>
-            <span>DropdownList Popup Opened RTL</span>
+            <span>DropdownList</span>
+            <span>DropdownList RTL</span>
 
             <div>
                 <DropdownListPopup value="Opened" />
