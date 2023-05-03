@@ -1,6 +1,7 @@
 @mixin kendo-dataviz--theme-base() {
 
     // Exported variables
+    // stylelint-disable  selector-class-pattern
     .k-var--chart-inactive {
         background-color: $kendo-chart-inactive;
     }
@@ -44,6 +45,7 @@
     .k-var--chart-error-bars-background {
         background-color: $kendo-chart-error-bars-background;
     }
+    // stylelint-enable  selector-class-pattern
 
     // Elements
     .k-chart,

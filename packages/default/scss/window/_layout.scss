@@ -159,7 +159,7 @@
     }
 
     // Resize Handles
-    .k-window {
+    .k-window { // stylelint-disable-line
         .k-resize-n { top: 0; }
         .k-resize-e { right: 0; }
         .k-resize-s { bottom: 0; }

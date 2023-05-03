@@ -117,12 +117,13 @@
         }
     }
 
-    .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
+    // stylelint-disable selector-no-vendor-prefix, selector-class-pattern
+    .ProseMirror-selectednode {
         outline-width: $kendo-editor-selectednode-outline-width;
         outline-style: solid;
 
     }
-    .ProseMirror-hideselection { // sass-lint:disable-line class-name-format
+    .ProseMirror-hideselection {
         caret-color: transparent;
 
         *::selection,
@@ -130,7 +131,7 @@
             background: transparent;
         }
     }
-
+    // stylelint-enable selector-no-vendor-prefix, selector-class-pattern
 
     // Toolbar
     .k-editor-toolbar {
@@ -163,7 +164,7 @@
             display: block;
         }
 
-        > .ProseMirror { // sass-lint:disable-line class-name-format
+        > .ProseMirror { // stylelint-disable-line
             padding: $kendo-padding-md-x;
             width: 100%;
             height: 100%;
@@ -202,7 +203,7 @@
                     pointer-events: none;
                 }
 
-                & .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
+                & .ProseMirror-selectednode { // stylelint-disable-line
                     outline: none;
                 }
             }
@@ -247,7 +248,7 @@
         }
 
         // Give selected cells a blue overlay
-        .selectedCell::after { // sass-lint:disable-line class-name-format
+        .selectedCell::after { // stylelint-disable-line
             z-index: 2;
             position: absolute;
             content: "";

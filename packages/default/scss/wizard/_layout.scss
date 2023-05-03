@@ -99,6 +99,7 @@
     .k-wizard-vertical {
 
         .k-wizard-steps {
+            margin-left: $kendo-wizard-content-padding-x;
             flex: 1 0 0%;
         }
 
@@ -106,9 +107,6 @@
             flex: 1 1 0%;
         }
 
-        .k-wizard-steps {
-            margin-left: $kendo-wizard-content-padding-x;
-        }
     }
 
     .k-wizard-left {

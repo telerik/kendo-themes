@@ -152,11 +152,8 @@
         height: $kendo-button-lg-calc-size;
     }
 
-
-
-    // sass-lint:disable class-name-format
     .k-floating-toolbar,
-    .editorToolbarWindow.k-window-content {
+    .editorToolbarWindow.k-window-content { // stylelint-disable-line
         padding-block: $kendo-toolbar-md-padding-y !important; // sass-lint:disable-line no-important
         padding-inline: $kendo-toolbar-md-padding-x !important; // sass-lint:disable-line no-important
         border-width: $kendo-toolbar-border-width;
@@ -174,14 +171,14 @@
             background: none;
         }
     }
-    .k-editortoolbar-dragHandle {
+    .k-editortoolbar-dragHandle { // stylelint-disable-line
         cursor: move;
         display: flex;
         align-items: center;
         align-self: stretch;
         flex-shrink: 0;
     }
-    // sass-lint:enable class-name-format
+
 
 
     // Remove once the Overflow Popup uses

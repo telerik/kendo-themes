@@ -442,8 +442,8 @@
             }
 
             &.k-icon-picker .k-input-inner {
-                width: calc( #{$_line-height * 1em} );
-                height: calc( #{$_line-height * 1em} );
+                width: calc( #{ $_line-height * 1em } );
+                height: calc( #{ $_line-height * 1em } );
                 padding: $_padding-y;
                 box-sizing: content-box;
             }
@@ -470,11 +470,11 @@
 
 
     // This is needed for the textbox container to capture browser autofill
-    @keyframes autoFillStart {
+    @keyframes autoFillStart { // stylelint-disable-line
         from {}
         to {}
     }
-    @keyframes autoFillEnd {
+    @keyframes autoFillEnd { // stylelint-disable-line
         from {}
         to {}
     }

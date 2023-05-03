@@ -9,8 +9,7 @@
         box-sizing: border-box;
         border-style: solid;
         display: inline-flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         position: relative;
         overflow: hidden;
 

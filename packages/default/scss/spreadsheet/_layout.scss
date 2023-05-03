@@ -859,7 +859,7 @@
             position: absolute;
             transform: translate(-50%, -50%);
 
-            // sass-lint:disable class-name-format, one-declaration-per-line
+            // stylelint-disable declaration-block-single-line-max-declarations, selector-class-pattern
             &.N { left: 50%; top: 0; cursor: ns-resize; }
             &.NE { left: 100%; top: 0; cursor: nesw-resize; }
             &.E { left: 100%; top: 50%; cursor: ew-resize; }
@@ -868,7 +868,7 @@
             &.SW { left: 0; top: 100%; cursor: nesw-resize; }
             &.W { left: 0; top: 50%; cursor: ew-resize; }
             &.NW { left: 0; top: 0; cursor: nwse-resize; }
-            // sass-lint:enable class-name-format, one-declaration-per-line
+            // stylelint-enable declaration-block-single-line-max-declarations, selector-class-pattern
         }
 
         .k-spreadsheet-insert-image-dialog {

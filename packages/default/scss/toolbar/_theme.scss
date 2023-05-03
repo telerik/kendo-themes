@@ -30,9 +30,8 @@
 
     }
 
-    // sass-lint:disable-block class-name-format
     .k-floating-toolbar,
-    .editorToolbarWindow.k-window-content {
+    .editorToolbarWindow.k-window-content { // stylelint-disable-line
         @include fill(
             $kendo-toolbar-text,
             $kendo-toolbar-bg,

@@ -16,10 +16,8 @@
     }
 
     .k-loader-container-inner {
-        // sass-lint:disable-block no-important
-        // sass-lint:disable-block class-name-format
         .k-text-secondary,
-        .\!k-text-secondary {
+        .\!k-text-secondary { // stylelint-disable-line
             color: $kendo-loader-secondary-bg !important;
         }
     }
