@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-equilateral-height</td>
     <td></td>
-    <td><code>.8660254038</code></td>
+    <td><code>.8660</code></td>
     <td></td>
 </tr>
 <tr>

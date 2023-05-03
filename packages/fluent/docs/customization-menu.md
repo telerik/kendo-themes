@@ -615,6 +615,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of scroll hover menu buttons.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-menu-icon-color</td>
+    <td></td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of menu items icon.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

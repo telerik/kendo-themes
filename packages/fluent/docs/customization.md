@@ -69,16 +69,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-calendar-header-cell-bg</td>
-    <td></td>
-    <td><code>inherit</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar header cell.<br /> @group calendar</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-card-brand-colors</td>
     <td></td>
     <td><code>( primary, error, warning, success, info )</code></td>
@@ -246,16 +236,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the loader variations.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-menu-icon-color</td>
-    <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of menu items icon.<br /> @group menu</div></div>
     </td>
 </tr>
 <tr>
@@ -2975,6 +2955,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-cell-bg</td>
+    <td></td>
+    <td><code>inherit</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar header cell.</div></div>
     </td>
 </tr>
 <tr>
@@ -13238,7 +13228,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-row-resizer-height</td>
     <td></td>
-    <td><code>map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16279,7 +16269,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-equilateral-height</td>
     <td></td>
-    <td><code>.8660254038</code></td>
+    <td><code>.8660</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17452,6 +17442,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of scroll hover menu buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-icon-color</td>
+    <td></td>
+    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of menu items icon.</div></div>
     </td>
 </tr>
 </tbody>

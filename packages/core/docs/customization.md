@@ -34,7 +34,7 @@ k-color-luminance($color) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L299-L305
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L298-L304
 @function k-color-luminance($color) {
     $red: k-list-nth( $_linear-channel-values, k-color-red( $color ) + 1 );
     $green: k-list-nth( $_linear-channel-values, k-color-green( $color ) + 1 );
@@ -70,9 +70,8 @@ k-color-contrast-ratio($background, $foreground) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L316-L322
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L315-L320
 @function k-color-contrast-ratio($background, $foreground) {
-    // sass-lint:disable-block variable-name-format
     $backLum: k-color-luminance( $background ) + .05;
     $foreLum: k-color-luminance( $foreground ) + .05;
 
@@ -103,7 +102,7 @@ k-is-dark($color) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L329-L331
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L327-L329
 @function k-is-dark($color) {
     @return if( k-color-luminance( $color ) < .5, true, false );
 }
@@ -132,7 +131,7 @@ k-is-light($color) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L338-L340
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L336-L338
 @function k-is-light($color) {
     @return if( k-color-luminance( $color ) < .5, false, true );
 }
@@ -171,7 +170,7 @@ k-contrast-color($background, $dark, $light, $min-ratio) // => Color
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L352-L372
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_color-contrast.import.scss#L350-L369
 @function k-contrast-color($background, $dark, $light, $min-ratio) {
     $foregrounds: $light, $dark, #ffffff, #000000;
     $max-ratio: 0;
@@ -188,7 +187,6 @@ k-contrast-color($background, $dark, $light, $min-ratio) // => Color
         }
     }
 
-    // sass-lint:disable-block no-warn
     @warn "Found no color leading to #{$min-ratio}:1 contrast ratio against #{$background}...";
 
     @return $max-ratio-color;
@@ -1462,7 +1460,7 @@ k-list-reverse($list) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L88-L104
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L88-L103
 @function k-list-reverse($list) {
     $result: ();
 
@@ -1476,7 +1474,6 @@ k-list-reverse($list) // => List
         @return $result;
     }
 
-    // sass-lint:disable-block no-warn
     @warn "No list passed.";
     @return $result;
 }
@@ -1511,7 +1508,7 @@ k-list-separator($list) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L112-L114
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L111-L113
 @function k-list-separator($list) {
     @return list-separator( $list );
 }
@@ -1552,7 +1549,7 @@ k-list-set-nth($list, $n, $val) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L124-L126
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L123-L125
 @function k-list-set-nth($list, $n, $val) {
     @return set-nth( $list, $n, $value );
 }
@@ -1590,7 +1587,7 @@ k-list-zip($list1, $list2) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L135-L137
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_list.import.scss#L134-L136
 @function k-list-zip($list1, $list2) {
     @return zip( $lists... );
 }
@@ -1632,7 +1629,7 @@ k-map-get($map, $key) // =>
 // Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L7-L12
 @function k-map-get($map, $key) {
     @each $key in $keys {
-        $map: map-get( $map, $key );
+        $map: map-get( $map, $key ); // stylelint-disable-line
     }
     @return $map;
 }
@@ -1747,7 +1744,7 @@ k-map-merge($map, $args) // => Map
 // Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L43-L48
 @function k-map-merge($map, $args) {
     @each $arg in $args {
-        $map: map-merge( $map, $arg );
+        $map: map-merge( $map, $arg ); // stylelint-disable-line
     }
     @return $map;
 }
@@ -2453,7 +2450,7 @@ k-math-random($limit) // => Number
 ```scss
 // Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_math.import.scss#L172-L178
 @function k-math-random($limit) {
-    @if ( $limit == null ) {
+    @if ( $limit == null ) { // stylelint-disable-line
         @return random();
     }
 
@@ -3838,7 +3835,7 @@ Outputs a module once, no matter how many times it is included.
 ```scss
 // Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/mixins/_import-once.scss#L9-L14
 @mixin exports($name) {
-    @if (k-list-index( $_kendo-imported-modules, $name ) == null) {
+    @if (k-list-index( $_kendo-imported-modules, $name ) == null) { // stylelint-disable-line
         $_kendo-imported-modules: k-list-append( $_kendo-imported-modules, $name ) !global;
         @content;
     }

@@ -1560,7 +1560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-row-resizer-height</td>
     <td></td>
-    <td><code>map-get( $kendo-spacing, 0.5 )</code></td>
+    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
     <td></td>
 </tr>
 <tr>

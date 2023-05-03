@@ -308,6 +308,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-calendar-header-cell-bg</td>
+    <td></td>
+    <td><code>inherit</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-calendar-header-cell-text</td>
     <td></td>
     <td><code>inherit</code></td>
