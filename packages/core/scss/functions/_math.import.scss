@@ -170,7 +170,7 @@
 /// @example scss - Usage
 ///   @debug k-math-random(); // => 0.123456789
 @function k-math-random( $limit: null ) {
-    @if ( $limit == null ) {
+    @if ( $limit == null ) { // stylelint-disable-line
         @return random();
     }
 

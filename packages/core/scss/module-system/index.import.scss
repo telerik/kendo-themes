@@ -4,6 +4,7 @@
 $_deps: () !default;
 $_imported: () !default;
 
+// stylelint-disable scss/at-if-no-null
 @mixin module-register( $name: null, $dependencies: null ) {
     @if (k-list-index( $kendo-components, $name) != null) {
         $_deps: k-map-merge( $_deps, ( $name: $dependencies ) );
@@ -11,7 +12,6 @@ $_imported: () !default;
         @if $dependencies {
             @each $dep in $dependencies {
                 @if ( k-list-index( $kendo-components, $dep ) == null ) {
-                    // sass-lint:disable-block no-warn
                     @warn "The module \"#{$name}\" depends on module \"#{$dep}\", but the styles will not be loaded!";
                 }
             }
@@ -25,7 +25,6 @@ $_imported: () !default;
     @if $dependencies {
         @each $dep in $dependencies {
             @if ( k-list-index( $_imported, $dep ) == null ) {
-                // sass-lint:disable-block no-warn
                 @warn "The module \"#{$name}\" depends on module \"#{$dep}\", but the styles have not been loaded yet!";
             }
         }
@@ -40,7 +39,6 @@ $_imported: () !default;
 @mixin verify-dependencies() {
     @each $component in $kendo-components {
         @if (k-map-has-key( $_kendo-dependencies, $component ) == false) {
-            // sass-lint:disable-block no-warn
             @error "Module '#{$component}' is not defined.";
         }
     }
@@ -50,8 +48,8 @@ $_imported: () !default;
 @mixin verify-rendered() {
     @each $component in $kendo-components {
         @if (k-list-index( $_imported, $component ) == null) {
-            // sass-lint:disable-block no-warn
             @error "Module '#{$component}' has not been rendered.";
         }
     }
 }
+// stylelint-enable scss/at-if-no-null
