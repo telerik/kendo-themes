@@ -58,7 +58,7 @@
 
 
     // Grid specific styles
-    .k-pane-wrapper {
+    .k-pane-wrapper { // stylelint-disable-line
 
         > div.k-pane {
             box-shadow: none;
@@ -118,7 +118,7 @@
 
 
     // Scheduler specific styles
-    .k-pane-wrapper {
+    .k-pane-wrapper { // stylelint-disable-line
 
         .k-scheduler-edit-form {
 
@@ -345,7 +345,7 @@
 
 
     // Common styles for the Adaptive Layout
-    .k-pane-wrapper {
+    .k-pane-wrapper { // stylelint-disable-line
 
         .k-appbar {
             padding: k-map-get( $kendo-spacing, 1 );

@@ -11,6 +11,7 @@
 
 
     // Exported variables
+    // stylelint-disable selector-class-pattern
     .k-var--chart-font {
         font-size: $kendo-chart-font-size;
     }
@@ -27,6 +28,7 @@
     .k-var--chart-label-font {
         font-size: $kendo-chart-label-font-size;
     }
+    // stylelint-enable selector-class-pattern
 
     // Elements
     .k-chart,

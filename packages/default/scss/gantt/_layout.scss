@@ -219,7 +219,7 @@
 
 
     // Responsive gantt toolbar
-    @media (max-width: 480px) {
+    @media (max-width: 480px) { // stylelint-disable-line
 
         .k-gantt-toolbar {
             .k-gantt-toggle {
@@ -240,7 +240,7 @@
 
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1024px) { // stylelint-disable-line
         .k-gantt-views-wrapper .k-gantt-views { display: none; }
         .k-gantt-views-wrapper .k-views-dropdown { display: flex; }
     }

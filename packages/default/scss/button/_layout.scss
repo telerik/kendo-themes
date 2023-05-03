@@ -277,7 +277,7 @@
     }
 
 
-    .k-button {
+    .k-button { // stylelint-disable-line
 
         &::before {
             @extend .k-button-overlay !optional;
@@ -326,7 +326,7 @@
 
 
     // Button focus ring
-    .k-button {
+    .k-button { // stylelint-disable-line
 
         &::after {
             @include border-radius( inherit );

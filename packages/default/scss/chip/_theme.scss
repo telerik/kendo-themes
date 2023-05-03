@@ -1,4 +1,4 @@
-@mixin kendo-chip--theme-base () {
+@mixin kendo-chip--theme-base() {
 
     // Solid
     @each $name, $color in $kendo-chip-theme-colors {

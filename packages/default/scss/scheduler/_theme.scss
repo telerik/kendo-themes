@@ -53,7 +53,7 @@
     }
 
 
-    //Scheduler navigation
+    // Scheduler navigation
     .k-scheduler-navigation {}
 
 
@@ -159,9 +159,7 @@
 
 
     // Workweek view
-    // sass-lint:disable class-name-format
-    .k-scheduler-workWeekview {}
-    // sass-lint:enable class-name-format
+    .k-scheduler-workWeekview {} // stylelint-disable-line
 
 
     // Week view

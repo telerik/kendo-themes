@@ -155,7 +155,7 @@
 
 
     // Multiview calendar
-    .k-calendar {
+    .k-calendar { // stylelint-disable-line
 
         $kendo-calendar-range-gap: 1px !default;
         $kendo-calendar-range-bg: rgba( $kendo-calendar-cell-selected-bg, .25 );

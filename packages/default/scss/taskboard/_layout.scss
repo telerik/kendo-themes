@@ -170,7 +170,7 @@
         border-width: $kendo-taskboard-card-border-width;
 
         &.k-taskboard-card-category {
-            border-left-width: $kendo-taskboard-card-category-border-width;
+            border-inline-start-width: $kendo-taskboard-card-category-border-width;
         }
 
         .k-card-header
@@ -209,20 +209,6 @@
         border-width: $kendo-taskboard-drag-placeholder-border-width;
         border-style: solid;
         position: relative;
-    }
-
-
-
-
-    // RTL
-    .k-taskboard-card.k-taskboard-card-category {
-        .k-rtl &,
-        &.k-rtl,
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-            border-left-width: $kendo-taskboard-card-border-width;
-            border-right-width: $kendo-taskboard-card-category-border-width;
-        }
     }
 
 }

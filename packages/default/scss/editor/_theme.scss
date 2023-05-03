@@ -56,7 +56,7 @@
         background-color: $kendo-editor-resize-handle-bg;
         border-color: $kendo-editor-resize-handle-border;
     }
-    .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
+    .ProseMirror-selectednode { // stylelint-disable-line
         outline-color: $kendo-editor-selectednode-outline-color;
     }
 
@@ -92,7 +92,7 @@
             border-color: #dddddd;
         }
 
-        .selectedCell::after { // sass-lint:disable-line class-name-format
+        .selectedCell::after { // stylelint-disable-line
             background-color: rgba(200, 200, 255, .4);
         }
     }
