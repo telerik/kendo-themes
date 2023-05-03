@@ -29,9 +29,7 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-fab-solid-#{$name}:focus,
         .k-fab-solid-#{$name}.k-focus {
-            outline-style: $kendo-fab-outline-style;
-            outline-width: $kendo-fab-outline-width;
-            outline-color: rgba( $color, .5 );
+            outline: $kendo-fab-outline-width $kendo-fab-outline-style rgba( $color, .5 );
         }
     }
 
@@ -94,9 +92,7 @@
     .k-fab-item.k-focus .k-fab-item-text,
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
-        outline-style: $kendo-fab-item-outline-style;
-        outline-width: $kendo-fab-item-outline-width;
-        outline-color: rgba( $kendo-fab-item-icon-border, .5 );
+        outline: $kendo-fab-item-outline-width $kendo-fab-item-outline-style rgba( $kendo-fab-item-icon-border, .5 );
     }
 
     // Active state
