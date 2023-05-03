@@ -1,5 +1,4 @@
-import { DropdownList } from '..';
-import { List, ListItem } from '../../list';
+import { DropdownListPopup } from '../../dropdownlist';
 
 
 const styles = `
@@ -13,30 +12,14 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>DropdownList</span>
-            <span>DropdownList RTL</span>
+            <span>DropdownList Popup Opened</span>
+            <span>DropdownList Popup Opened RTL</span>
 
             <div>
-                <DropdownList value="Opened" opened
-                    popup={(
-                        <List>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                        </List>
-                    )}
-                />
+                <DropdownListPopup value="Opened" />
             </div>
             <div dir="rtl">
-                <DropdownList value="Opened" opened
-                    popup={(
-                        <List>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                        </List>
-                    )}
-                />
+                <DropdownListPopup value="Opened" />
             </div>
 
         </div>
