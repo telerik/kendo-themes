@@ -22,14 +22,14 @@
 /// @group skew
 /// @contextType css
 
-// sass-lint:disable function-name-format
+// stylelint-disable scss/at-function-pattern
 @function __skew-x( $val ) {
     @return skewX( $val );
 }
 @function __skew-y( $val ) {
     @return skewY( $val );
 }
-// sass-lint:enable function-name-format
+// stylelint-enable scss/at-function-pattern
 
 @mixin kendo-utils--transform--skew() {
 
