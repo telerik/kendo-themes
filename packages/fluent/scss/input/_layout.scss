@@ -473,11 +473,11 @@
     }
 
     // This is needed for the textbox container to capture browser autofill
-    @keyframes autoFillStart {
+    @keyframes autoFillStart { // stylelint-disable-line
         from {}
         to {}
     }
-    @keyframes autoFillEnd {
+    @keyframes autoFillEnd { // stylelint-disable-line
         from {}
         to {}
     }

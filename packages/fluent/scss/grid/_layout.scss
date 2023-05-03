@@ -326,7 +326,7 @@
             height: var( --kendo-grid-group-drop-hint-dot-size, #{$kendo-grid-group-drop-hint-dot-size} );
             border-radius: 50%;
             top: 0;
-            left: calc( var( --kendo-grid-group-drop-hint-dot-size, #{$kendo-grid-group-drop-hint-dot-size} )  / 2 );
+            left: calc( var( --kendo-grid-group-drop-hint-dot-size, #{$kendo-grid-group-drop-hint-dot-size} ) / 2 );
         }
 
         &::after {
@@ -651,7 +651,7 @@
     .k-grid .k-grid-edit-row td,
     .k-grid .k-grid-edit-row .k-table-td {
 
-        > input:not([type="checkbox"]):not([type="radio"]),
+        > input:not([type="checkbox"], [type="radio"]),
         > select,
         > .k-widget:not(.k-switch) {
             width: 100%;

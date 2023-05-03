@@ -54,7 +54,7 @@
                 &.k-selected {
                     font-weight: var( --kendo-font-weight-bold, #{$kendo-font-weight-bold} );
 
-                    &:before {
+                    &::before {
                         content: '';
                         width: 2px;
                         height: 100%;
@@ -112,7 +112,7 @@
                 &.k-selected {
                     font-weight: var( --kendo-font-weight-bold, #{$kendo-font-weight-bold} );
 
-                    &:before {
+                    &::before {
                         content: '';
                         width: 2px;
                         height: 100%;

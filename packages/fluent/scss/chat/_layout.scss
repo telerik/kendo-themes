@@ -191,7 +191,7 @@
             }
         }
         .k-avatars {
-            .k-message-group:not(.k-alt):not(.k-no-avatar) {
+            .k-message-group:not(.k-alt, .k-no-avatar) {
                 padding-inline-start: calc( #{$kendo-chat-avatar-size} + #{ $kendo-chat-avatar-spacing } );
             }
             .k-message-group.k-alt:not(.k-no-avatar) {

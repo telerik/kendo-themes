@@ -14,8 +14,9 @@
         }
     }
 
-     // Exported variables
-     .k-var--chart-font {
+    // Exported variables
+    // stylelint-disable selector-class-pattern
+    .k-var--chart-font {
         font-size: var( --kendo-chart-font-size, #{$kendo-chart-font-size} );
     }
 
@@ -31,6 +32,7 @@
     .k-var--chart-label-font {
         font-size: var( --kendo-chart-label-font-size, #{$kendo-chart-label-font-size} );
     }
+    // stylelint-enable selector-class-pattern
 
     // Elements
     .k-chart,

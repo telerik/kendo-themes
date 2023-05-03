@@ -94,7 +94,7 @@ $kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit ) !def
 /// Line height of the calendar header cell.
 /// @group calendar
 $kendo-calendar-header-cell-line-height: 2 !default;
-///Background color of the calendar header cell.
+/// Background color of the calendar header cell.
 /// @group calendar
 $kendo-calendar-header-cell-bg: inherit !default;
 /// Text color of the calendar header cell.
@@ -202,7 +202,7 @@ $kendo-calendar-cell-selected-shadow: inset 0 0 0 1px $kendo-calendar-cell-selec
 $kendo-calendar-cell-selected-hover-bg: var( --kendo-selected-hover-bg, inherit ) !default;
 /// Text color of the selected calendar cell when hovered.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-text:var( --kendo-selected-hover-text, inherit ) !default;
+$kendo-calendar-cell-selected-hover-text: var( --kendo-selected-hover-text, inherit ) !default;
 
 /// Shadow of the selected calendar cell when focused.
 /// @group calendar
