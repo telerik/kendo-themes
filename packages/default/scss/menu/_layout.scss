@@ -268,7 +268,7 @@
     }
     .k-animation-container .k-context-menu.k-menu-horizontal {
         // kendo-jquery adds `display: block` via js and we need to override it.
-        display: flex !important; // sass-lint:disable-line no-important
+        display: flex !important; // stylelint-disable-line declaration-no-important
         flex-wrap: nowrap;
     }
     .k-context-menu-popup {

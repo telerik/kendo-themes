@@ -1,7 +1,7 @@
 @mixin kendo-messagebox--layout() {
 
     #test-area .k-messagebox {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

@@ -151,8 +151,6 @@ $kendo-theme-colors: (
 
     // Text colors
     @each $theme-color, $color-props in $kendo-theme-colors {
-        // sass-lint:disable-line no-important
-
         $_color: map.get( $color-props, text );
 
         .k-text-#{$theme-color},
@@ -161,14 +159,14 @@ $kendo-theme-colors: (
         }
         .\!k-text-#{$theme-color},
         .\!k-color-#{$theme-color} {
-            color: var( --kendo-text-#{$theme-color}, #{$_color} ) !important;
+            color: var( --kendo-text-#{$theme-color}, #{$_color} ) !important; // stylelint-disable-line declaration-no-important
         }
 
         .k-bg-#{$theme-color} {
             background-color: var( --kendo-bg-#{$theme-color}, #{$_color} );
         }
         .\!k-bg-#{$theme-color} {
-            background-color: var( --kendo-bg-#{$theme-color}, #{$_color} ) !important;
+            background-color: var( --kendo-bg-#{$theme-color}, #{$_color} ) !important; // stylelint-disable-line declaration-no-important
         }
     };
 }

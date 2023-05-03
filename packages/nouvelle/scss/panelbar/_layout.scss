@@ -1,7 +1,7 @@
 @mixin kendo-panelbar--layout() {
 
     #test-area .k-panelbar {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

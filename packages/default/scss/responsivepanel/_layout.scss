@@ -36,9 +36,7 @@
     }
     .k-rpanel-top.k-rpanel-expanded {
         max-height: 568px;
-        // sass-lint:disable no-important
-        overflow: visible !important;
-        // sass-lint:enable no-important
+        overflow: visible !important; // stylelint-disable-line declaration-no-important
     }
 
     // Toggle button

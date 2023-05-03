@@ -14,7 +14,6 @@ $kendo-auto-bootstrap: false !default;
 
 // Spacing
 $kendo-spacing: (
-    // sass-lint:disable-block leading-zero
     0: 0,
     1px: 1px,
     0.5: .125rem,
@@ -52,7 +51,6 @@ $kendo-spacing: (
 ) !default;
 
 $kendo-border-radii: (
-    // sass-lint:disable-block leading-zero
     DEFAULT: k-map-get( $kendo-spacing, 1),
     0: 0,
     sm: k-map-get( $kendo-spacing, 0.5),

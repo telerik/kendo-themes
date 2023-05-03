@@ -196,18 +196,18 @@
         }
 
         .k-table-spacer-td {
-            padding: 0 !important; // sass-lint:disable-line no-important
-            width: 0 !important; // sass-lint:disable-line no-important
-            border-left-width: 0 !important; // sass-lint:disable-line no-important
-            border-right-width: 0 !important; // sass-lint:disable-line no-important
+            padding: 0 !important; // stylelint-disable-line declaration-no-important
+            width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-right-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
 
         .k-table-group-td {
-            padding: 0 !important; // sass-lint:disable-line no-important
-            width: 0 !important; // sass-lint:disable-line no-important
-            border-left-width: 0 !important; // sass-lint:disable-line no-important
-            border-right-width: 0 !important; // sass-lint:disable-line no-important
-            overflow: visible; // sass-lint:disable-line no-important
+            padding: 0 !important; // stylelint-disable-line declaration-no-important
+            width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
+            border-right-width: 0 !important; // stylelint-disable-line declaration-no-important
+            overflow: visible; // stylelint-disable-line declaration-no-important
 
             > span {
                 padding-inline: var( --kendo-table-group-label-padding-x, 0 );

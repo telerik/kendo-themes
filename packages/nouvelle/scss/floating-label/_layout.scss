@@ -1,7 +1,7 @@
 @mixin kendo-floating-label--layout() {
 
     #test-area .k-floating-label {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

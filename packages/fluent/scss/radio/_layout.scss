@@ -157,7 +157,7 @@
 
         .k-ripple {
             // Hide ripple temporarily
-            visibility: hidden !important; // sass-lint:disable-line no-important
+            visibility: hidden !important; // stylelint-disable-line declaration-no-important
         }
     }
     .k-radio + .k-label,
@@ -171,7 +171,7 @@
 
     // Empty label
     .k-radio-label:empty {
-        display: none !important; // sass-lint:disable-line no-important
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
     .k-radio-label.k-no-text {
         min-width: 1px;
@@ -232,8 +232,8 @@
 
         .k-radio:focus,
         .k-radio.k-focus {
-            box-shadow: none !important; // sass-lint:disable-line no-important
-            outline: none !important; // sass-lint:disable-line no-important
+            box-shadow: none !important; // stylelint-disable-line declaration-no-important
+            outline: none !important; // stylelint-disable-line declaration-no-important
         }
 
         .k-radio:disabled::after,

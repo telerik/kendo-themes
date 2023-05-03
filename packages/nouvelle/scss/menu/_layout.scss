@@ -2,7 +2,7 @@
 
     #test-area .k-menu,
     #test-area .k-menu-popup {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

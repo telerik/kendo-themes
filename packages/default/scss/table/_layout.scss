@@ -150,18 +150,19 @@
             }
         }
 
+        // stylelint-disable declaration-no-important
         .k-table-spacer-td {
-            padding: 0 !important; // sass-lint:disable-line no-important
-            width: 0 !important; // sass-lint:disable-line no-important
-            border-left-width: 0 !important; // sass-lint:disable-line no-important
-            border-right-width: 0 !important; // sass-lint:disable-line no-important
+            padding: 0 !important;
+            width: 0 !important;
+            border-left-width: 0 !important;
+            border-right-width: 0 !important;
         }
         .k-table-group-td {
-            padding: 0 !important; // sass-lint:disable-line no-important
-            width: 0 !important; // sass-lint:disable-line no-important
-            border-left-width: 0 !important; // sass-lint:disable-line no-important
-            border-right-width: 0 !important; // sass-lint:disable-line no-important
-            overflow: visible; // sass-lint:disable-line no-important
+            padding: 0 !important;
+            width: 0 !important;
+            border-left-width: 0 !important;
+            border-right-width: 0 !important;
+            overflow: visible;
 
             > span {
                 font-size: .75em;
@@ -170,6 +171,7 @@
                 right: 0;
             }
         }
+        // stylelint-enable declaration-no-important
     }
 
 

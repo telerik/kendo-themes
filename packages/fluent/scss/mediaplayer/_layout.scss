@@ -61,9 +61,7 @@
     }
     .k-mediaplayer-toolbar {
         border-width: 0;
-        // sass-lint:disable no-important
-        width: 100% !important;
-        // sass-lint:enable no-important
+        width: 100% !important; // stylelint-disable-line declaration-no-important
         box-shadow: none;
 
         .k-dropdown-list {
@@ -94,10 +92,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        // sass-lint:disable no-important
-        width: 100% !important;
-        height: 100% !important;
-        // sass-lint:enable no-important
+        width: 100% !important; // stylelint-disable-line declaration-no-important
+        height: 100% !important; // stylelint-disable-line declaration-no-important
     }
 
 }

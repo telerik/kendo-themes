@@ -1,7 +1,7 @@
 @mixin kendo-color-gradient--layout() {
 
     #test-area .k-color-gradient {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

@@ -1,7 +1,7 @@
 @mixin kendo-task-board--layout() {
 
     #test-area .k-taskboard {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

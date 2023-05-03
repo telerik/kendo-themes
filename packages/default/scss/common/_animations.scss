@@ -352,9 +352,8 @@
         }
 
         &-exit-active {
-            // sass-lint:disable-block no-important
             // override any max-height set to element to allow animation
-            max-height: 0 !important;
+            max-height: 0 !important; // stylelint-disable-line declaration-no-important
             transition: max-height 300ms ease-in-out;
         }
     }
@@ -371,9 +370,8 @@
         }
 
         &-exit-active {
-            // sass-lint:disable-block no-important
             // override any max-height set to element to allow animation
-            max-width: 0 !important;
+            max-width: 0 !important; // stylelint-disable-line declaration-no-important
             transition: max-width 300ms ease-in-out;
         }
     }
@@ -402,8 +400,7 @@
 
     .k-fx-hidden,
     .k-fx-hidden * {
-        // sass-lint:disable-block no-important
-        visibility: hidden !important;
+        visibility: hidden !important; // stylelint-disable-line declaration-no-important
     }
 
     .k-fx-reverse {
@@ -417,8 +414,8 @@
     }
 
     // Zoom
+    // stylelint-disable declaration-no-important
     .k-fx-zoom {
-        // sass-lint:disable-block no-important
         &.k-fx-start .k-fx-next {
             transform: scale(0) !important;
         }
@@ -442,6 +439,7 @@
             }
         }
     }
+    // stylelint-enable declaration-no-important
 
     // Fade
     .k-fx-fade {

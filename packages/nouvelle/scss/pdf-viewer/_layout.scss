@@ -1,7 +1,7 @@
 @mixin kendo-pdf-viewer--layout() {
 
     #test-area .k-pdf-viewer {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

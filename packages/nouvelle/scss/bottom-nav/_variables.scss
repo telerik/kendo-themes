@@ -29,7 +29,7 @@ $kendo-bottom-nav-shadow: null !default;
 $kendo-bottom-nav-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the bottom navigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default; // sass-lint:disable-line leading-zero
+$kendo-bottom-nav-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 /// Minimum width of the bottom navigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-min-width: 72px !default;

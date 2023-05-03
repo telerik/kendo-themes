@@ -111,7 +111,7 @@
     // Tabstrip content
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
-        margin: 0 !important; // sass-lint:disable-line no-important
+        margin: 0 !important; // stylelint-disable-line declaration-no-important
         padding-inline: var( --kendo-tabstrip-content-padding-x, #{$kendo-tabstrip-content-padding-x} );
         padding-block: var( --kendo-tabstrip-content-padding-y, #{$kendo-tabstrip-content-padding-y} );
         box-sizing: border-box;
@@ -318,7 +318,7 @@
         // Hide tabstrip indicator when dragging
         .k-tabstrip-items-wrapper .k-item.k-tabstrip-dragging {
             &::after {
-                display: none !important; // sass-lint:disable-line no-important
+                display: none !important; // stylelint-disable-line declaration-no-important
             }
         }
 

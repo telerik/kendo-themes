@@ -158,7 +158,7 @@
     // Flat button
     .k-button-flat {
         color: inherit;
-        border-color: transparent !important; // sass-lint:disable-line no-important
+        border-color: transparent !important; // stylelint-disable-line declaration-no-important
         box-shadow: none;
 
         &:focus::after,
@@ -171,8 +171,8 @@
 
     .k-button-flat-base {
         color: inherit;
-        background: none !important;
-        border-color: transparent !important;
+        background: none !important; // stylelint-disable-line declaration-no-important
+        border-color: transparent !important; // stylelint-disable-line declaration-no-important
 
         // Overlay
         &::before {
@@ -207,7 +207,7 @@
             }
 
             &::after {
-                outline-color: currentColor !important;
+                outline-color: currentColor !important; // stylelint-disable-line declaration-no-important
                 opacity: .13;
             }
 
@@ -273,7 +273,7 @@
 
     // Link button
     .k-button-link {
-        border-color: transparent !important; // sass-lint:disable-line no-important
+        border-color: transparent !important; // stylelint-disable-line declaration-no-important
         text-decoration: none;
         background: none;
 
@@ -295,7 +295,7 @@
 
     // Clear button
     .k-button-clear {
-        border-color: transparent !important; // sass-lint:disable-line no-important
+        border-color: transparent !important; // stylelint-disable-line declaration-no-important
         color: inherit;
         background: none;
 
