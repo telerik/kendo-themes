@@ -41,7 +41,6 @@ The following table lists the available variables for customization.
     <td>$kendo-treeview-sizes</td>
     <td>Map</td>
     <td><code>(
-    // sass-lint:disable-block leading-zero
     sm: (
         font-size: $kendo-font-size-sm,
         line-height: $kendo-line-height-sm,

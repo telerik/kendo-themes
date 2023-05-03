@@ -38,6 +38,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-floating-label-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-input-font-size</code></td>
+    <td><code>1rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-floating-label-max-width</td>
     <td>Number</td>
     <td><code>90%</code></td>

@@ -158,16 +158,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-md-size</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of a medium CheckBox.<br /> @group checkbox</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chip-lg-font-size</td>
     <td>Number</td>
     <td><code>$kendo-font-size-md</code></td>
@@ -175,36 +165,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large Chip.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-floating-label-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-input-font-size</code></td>
-    <td><code>1rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Floating Label.<br /> @group floating-label</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-values-margin-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 0.5 )</code></td>
-    <td><code>0.125rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the clear value icon.<br /> @group input</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-input-values-margin-x</td>
-    <td>Number</td>
-    <td><code>$kendo-input-values-margin-y</code></td>
-    <td><code>0.125rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the clear value icon.<br /> @group input</div></div>
     </td>
 </tr>
 </tbody>

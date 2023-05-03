@@ -161,16 +161,6 @@ The following table lists the available variables for customizing the Classic th
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-floating-label-font-size</td>
-    <td>Number</td>
-    <td><code>$kendo-input-font-size</code></td>
-    <td><code>14px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Floating Label.<br /> @group floating-label</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 
@@ -3033,6 +3023,16 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transformation scale of the Floating Label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-floating-label-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-input-font-size</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Floating Label.</div></div>
     </td>
 </tr>
 <tr>
