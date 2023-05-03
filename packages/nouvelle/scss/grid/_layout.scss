@@ -2,7 +2,7 @@
 
     #test-area .k-grid,
     #test-area .k-column-menu {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

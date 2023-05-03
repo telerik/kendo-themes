@@ -1,7 +1,7 @@
 @mixin kendo-popover--layout() {
 
     #test-area .k-popover {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

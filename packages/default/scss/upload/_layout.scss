@@ -224,7 +224,7 @@
 
         input {
             // font should not depend on outside styles, otherwise upload may break
-            font: 170px monospace !important; // sass-lint:disable-block no-important
+            font: 170px monospace !important; // stylelint-disable-line declaration-no-important
             margin: 0;
             padding: 0;
             width: 100%;

@@ -189,7 +189,7 @@
             }
 
             &[contenteditable="false"] {
-                cursor: unset !important; // sass-lint:disable-line no-important
+                cursor: unset !important; // stylelint-disable-line declaration-no-important
 
                 .k-editor-resize-handles-wrapper,
                 .k-editor-resize-handle,

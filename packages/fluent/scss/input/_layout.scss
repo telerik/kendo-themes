@@ -38,7 +38,7 @@
 
         > .k-input,
         > .k-picker {
-            border-width: 0 !important; // sass-lint:disable-line no-important
+            border-width: 0 !important; // stylelint-disable-line declaration-no-important
             color: inherit;
             background: none;
             font: inherit;
@@ -315,8 +315,8 @@
         box-shadow: none;
 
         > .k-button-icon {
-            min-width: auto !important; // sass-lint:disable-line no-important
-            // min-height: auto !important; // sass-lint:disable-line no-important
+            min-width: auto !important; // stylelint-disable-line declaration-no-important
+            // min-height: auto !important; // stylelint-disable-line declaration-no-important
         }
 
         &:focus::after {
@@ -355,8 +355,8 @@
             .k-button-icon {
                 margin-block: -1em;
                 margin-inline: 0;
-                min-width: auto !important; // sass-lint:disable-line no-important
-                min-height: auto !important; // sass-lint:disable-line no-important
+                min-width: auto !important; // stylelint-disable-line declaration-no-important
+                min-height: auto !important; // stylelint-disable-line declaration-no-important
             }
         }
         .k-spinner-increase .k-icon,
@@ -397,9 +397,9 @@
     // Fill mode
     .k-input-flat,
     .k-picker-flat {
-        @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
+        @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
         border-width: var( --kendo-input-border-width, #{$kendo-input-border-width} ) 0;
-        border-top-color: transparent !important; // sass-lint:disable-line no-important
+        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
 
         &:focus,
         &.k-focus,
@@ -428,7 +428,7 @@
 
     .k-input-flat,
     .k-input-outline {
-        background: none !important; // sass-lint:disable-line no-important
+        background: none !important; // stylelint-disable-line declaration-no-important
     }
 
     // Sizing

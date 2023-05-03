@@ -51,9 +51,7 @@
     }
     .k-mediaplayer-toolbar {
         border-width: 0;
-        // sass-lint:disable no-important
-        width: 100% !important;
-        // sass-lint:enable no-important
+        width: 100% !important; // stylelint-disable-line declaration-no-important
         box-shadow: none;
 
 
@@ -84,9 +82,7 @@
         transform: translateY( -50% );
     }
     .k-mediaplayer-seekbar .k-slider-track {
-        // sass-lint:disable no-important
-        width: 100% !important;
-        // sass-lint:enable no-important
+        width: 100% !important; // stylelint-disable-line declaration-no-important
         border-radius: 0;
     }
     .k-mediaplayer-seekbar .k-slider-selection {
@@ -98,10 +94,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        // sass-lint:disable no-important
-        width: 100% !important;
-        height: 100% !important;
-        // sass-lint:enable no-important
+        width: 100% !important; // stylelint-disable-line declaration-no-important
+        height: 100% !important; // stylelint-disable-line declaration-no-important
     }
 
 }

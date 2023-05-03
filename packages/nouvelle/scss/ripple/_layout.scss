@@ -1,7 +1,7 @@
 @mixin kendo-ripple--layout() {
 
     #test-area .k-ripple {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

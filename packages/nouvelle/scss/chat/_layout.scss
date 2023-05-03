@@ -1,8 +1,7 @@
 @mixin kendo-chat--layout() {
 
-    // sass-lint:disable-block no-important no-ids
     #test-area .k-chat {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

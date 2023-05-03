@@ -102,7 +102,7 @@
     // Tabstrip content
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
-        margin: 0 !important; // sass-lint:disable-line no-important
+        margin: 0 !important; // stylelint-disable-line declaration-no-important
         padding-block: $kendo-tabstrip-content-padding-y;
         padding-inline: $kendo-tabstrip-content-padding-x;
         box-sizing: border-box;
@@ -201,14 +201,14 @@
             .k-item.k-active {
                 margin-bottom: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
                 border-bottom-width: $kendo-tabstrip-border-width;
-                border-bottom-color: transparent !important; // sass-lint:disable-line no-important
+                border-bottom-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
 
         > .k-content,
         > .k-tabstrip-content {
             @include border-bottom-radius( $kendo-tabstrip-item-border-radius );
-            border-top-width: 0 !important; // sass-lint:disable-line no-important
+            border-top-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
     }
     .k-tabstrip-bottom {
@@ -224,14 +224,14 @@
             .k-item.k-active {
                 margin-top: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
                 border-top-width: $kendo-tabstrip-border-width;
-                border-top-color: transparent !important; // sass-lint:disable-line no-important
+                border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
 
         > .k-content,
         > .k-tabstrip-content {
             @include border-top-radius( $kendo-tabstrip-item-border-radius );
-            border-bottom-width: 0 !important; // sass-lint:disable-line no-important
+            border-bottom-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
     }
     .k-tabstrip-left {
@@ -249,14 +249,14 @@
             .k-item.k-active {
                 margin-right: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
                 border-right-width: $kendo-tabstrip-border-width;
-                border-right-color: transparent !important; // sass-lint:disable-line no-important
+                border-right-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
 
         > .k-content,
         > .k-tabstrip-content {
             @include border-right-radius( $kendo-tabstrip-item-border-radius );
-            border-left-width: 0 !important; // sass-lint:disable-line no-important
+            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
 
     }
@@ -275,7 +275,7 @@
             .k-item.k-active {
                 margin-left: if( $kendo-tabstrip-border-width, -$kendo-tabstrip-border-width, null );
                 border-left-width: $kendo-tabstrip-border-width;
-                border-left-color: transparent !important; // sass-lint:disable-line no-important
+                border-left-color: transparent !important; // stylelint-disable-line declaration-no-important
             }
         }
 
@@ -351,7 +351,7 @@
         // Hide tabstrip indicator when dragging
         .k-tabstrip-items-wrapper .k-item.k-tabstrip-dragging {
             &::after {
-                display: none !important; // sass-lint:disable-line no-important
+                display: none !important; // stylelint-disable-line declaration-no-important
             }
         }
 

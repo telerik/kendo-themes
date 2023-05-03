@@ -276,8 +276,8 @@
         box-sizing: border-box;
         border-width: 1px 0 0;
         border-style: solid;
-        border-color: inherit !important; // sass-lint:disable-line no-important
-        border-radius: 0 !important; // sass-lint:disable-line no-important
+        border-color: inherit !important; // stylelint-disable-line declaration-no-important
+        border-radius: 0 !important; // stylelint-disable-line declaration-no-important
         flex: none;
         display: flex;
         flex-flow: row nowrap;

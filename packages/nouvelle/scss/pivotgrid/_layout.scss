@@ -5,7 +5,7 @@
     #test-area .k-fieldselector,
     #test-area .k-pivotgrid-configurator,
     #test-area .k-calculated-field {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

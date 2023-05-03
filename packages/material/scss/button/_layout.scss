@@ -15,7 +15,7 @@
             transition: opacity .4s cubic-bezier( .25, .8, .25, 1 );
         }
         &::after {
-            display: none !important; // sass-lint:disable-line no-important
+            display: none !important; // stylelint-disable-line declaration-no-important
         }
 
         &:disabled,
@@ -28,8 +28,8 @@
 
     // Outline button
     .k-button-outline {
-        background-color: transparent !important; // sass-lint:disable-line no-important
-        box-shadow: none !important; // sass-lint:disable-line no-important
+        background-color: transparent !important; // stylelint-disable-line declaration-no-important
+        box-shadow: none !important; // stylelint-disable-line declaration-no-important
     }
 
 

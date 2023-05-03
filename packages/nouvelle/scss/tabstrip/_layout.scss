@@ -101,7 +101,7 @@
 
     // Tabstrip content
     .k-tabstrip-content {
-        margin: 0 !important; // sass-lint:disable-line no-important
+        margin: 0 !important; // stylelint-disable-line declaration-no-important
         padding-inline: var( --kendo-tabstrip-content-padding-x, #{k-if-var( $kendo-tabstrip-content-padding-x, 0 )} );
         padding-block: var( --kendo-tabstrip-content-padding-y, #{k-if-var( $kendo-tabstrip-content-padding-y, 0 )} );
         border-width: var( --kendo-tabstrip-content-border-width, #{k-if-var( $kendo-tabstrip-content-border-width, 1px )} );
@@ -208,7 +208,7 @@
         }
 
         > .k-tabstrip-content {
-            border-top-width: 0 !important; // sass-lint:disable-line no-important
+            border-top-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
     }
     .k-tabstrip-bottom {
@@ -230,7 +230,7 @@
         }
 
         > .k-tabstrip-content {
-            border-bottom-width: 0 !important; // sass-lint:disable-line no-important
+            border-bottom-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
     }
     .k-tabstrip-left {
@@ -255,7 +255,7 @@
         }
 
         > .k-tabstrip-content {
-            border-left-width: 0 !important; // sass-lint:disable-line no-important
+            border-left-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
 
     }
@@ -354,7 +354,7 @@
         // Hide tabstrip indicator when dragging
         .k-tabstrip-items-wrapper .k-tabstrip-item.k-tabstrip-dragging {
             &::after {
-                display: none !important; // sass-lint:disable-line no-important
+                display: none !important; // stylelint-disable-line declaration-no-important
             }
         }
 

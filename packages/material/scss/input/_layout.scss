@@ -8,9 +8,9 @@
     // Fill mode
     .k-input-solid,
     .k-picker-solid {
-        @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
+        @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
         border-width: $kendo-input-border-width 0;
-        border-top-color: transparent !important; // sass-lint:disable-line no-important
+        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
 
         .k-input-button,
         .k-input-spinner .k-spinner-increase,

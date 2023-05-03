@@ -10,11 +10,11 @@
 
         &::before {
             border-color: currentColor;
-            border-right-color: transparent !important; // sass-lint:disable-line no-important
+            border-right-color: transparent !important; // stylelint-disable-line declaration-no-important
         }
 
         &::after {
-            display: none !important; // sass-lint:disable-line no-important
+            display: none !important; // stylelint-disable-line declaration-no-important
         }
     }
 

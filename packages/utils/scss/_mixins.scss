@@ -19,7 +19,7 @@
             @if $important {
                 .\!#{$_selector} {
                     @each $prop in $_props {
-                        #{$prop}:  if( $_fn, k-meta-call($_fn, $_val), $_val ) !important; // sass-lint:disable-line no-important
+                        #{$prop}:  if( $_fn, k-meta-call($_fn, $_val), $_val ) !important; // stylelint-disable-line declaration-no-important
                     }
                 }
             }

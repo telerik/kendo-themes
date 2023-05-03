@@ -85,6 +85,6 @@
 
     // Custom justify-content classes
     .#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0%; }
-    .\!.#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0% !important; } // sass-lint:disable-line no-important class-name-format
+    .\!.#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0% !important; } // stylelint-disable-line declaration-no-important
 
 }

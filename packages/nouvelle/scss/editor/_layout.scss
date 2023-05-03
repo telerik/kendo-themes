@@ -1,7 +1,7 @@
 @mixin kendo-editor--layout() {
 
     #test-area .k-editor {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

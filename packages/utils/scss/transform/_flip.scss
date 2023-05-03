@@ -18,11 +18,11 @@
     $kendo-utils-flip: k-map-get( $kendo-utils, "flip" ) !default;
     @if $kendo-utils-flip {
         .#{$kendo-prefix}flip-h { transform: scaleX( -1 ); }
-        .\!#{$kendo-prefix}flip-h { transform: scaleX( -1 ) !important; } // sass-lint:disable-line no-important
+        .\!#{$kendo-prefix}flip-h { transform: scaleX( -1 ) !important; } // stylelint-disable-line declaration-no-important
         .#{$kendo-prefix}flip-v { transform: scaleY( -1 ); }
-        .\!#{$kendo-prefix}flip-v { transform: scaleY( -1 ) !important; } // sass-lint:disable-line no-important
+        .\!#{$kendo-prefix}flip-v { transform: scaleY( -1 ) !important; } // stylelint-disable-line declaration-no-important
         .#{$kendo-prefix}flip-h.#{$kendo-prefix}flip-v { transform: scale( -1, -1 ); }
-        .\!#{$kendo-prefix}flip-h.\!#{$kendo-prefix}flip-v { transform: scale( -1, -1 ) !important; } // sass-lint:disable-line no-important
+        .\!#{$kendo-prefix}flip-h.\!#{$kendo-prefix}flip-v { transform: scale( -1, -1 ) !important; } // stylelint-disable-line declaration-no-important
 
         // Legacy aliases
         .#{$kendo-prefix}flip-x { @extend .#{$kendo-prefix}flip-h !optional; }

@@ -1,7 +1,7 @@
 @mixin kendo-overlay--layout() {
 
     #test-area .k-overlay {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

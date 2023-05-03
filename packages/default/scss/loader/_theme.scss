@@ -18,7 +18,7 @@
     .k-loader-container-inner {
         .k-text-secondary,
         .\!k-text-secondary { // stylelint-disable-line
-            color: $kendo-loader-secondary-bg !important;
+            color: $kendo-loader-secondary-bg !important; // stylelint-disable-line declaration-no-important
         }
     }
 

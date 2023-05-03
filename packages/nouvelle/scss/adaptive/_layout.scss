@@ -1,9 +1,8 @@
 @mixin kendo-adaptive--layout() {
 
-    // sass-lint:disable-block no-important no-ids
     #test-area .k-pane,
     #test-area .k-pane-wrapper {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

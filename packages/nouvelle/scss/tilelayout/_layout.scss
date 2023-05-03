@@ -1,7 +1,7 @@
 @mixin kendo-tile-layout--layout() {
 
     #test-area .k-tilelayout {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

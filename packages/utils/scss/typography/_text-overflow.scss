@@ -24,9 +24,9 @@
         text-overflow: ellipsis;
     }
     .\!#{$kendo-prefix}text-truncate {
-        white-space: nowrap !important; // sass-lint:disable-line no-important
-        overflow: hidden !important; // sass-lint:disable-line no-important
-        text-overflow: ellipsis !important; // sass-lint:disable-line no-important
+        white-space: nowrap !important; // stylelint-disable-line declaration-no-important
+        overflow: hidden !important; // stylelint-disable-line declaration-no-important
+        text-overflow: ellipsis !important; // stylelint-disable-line declaration-no-important
     }
 
     // Legacy aliases

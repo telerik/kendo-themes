@@ -600,8 +600,8 @@
         }
     }
 
-    // sass-lint:disable no-important
     // remove scrollbars during PDF export
+    // stylelint-disable declaration-no-important
     .k-pdf-export-shadow .k-scheduler,
     .k-scheduler-pdf-export .k-scheduler-content,
     .k-scheduler-pdf-export .k-scheduler-times {
@@ -625,7 +625,7 @@
             width: 100% !important;
         }
     }
-    // sass-lint:enable no-important
+    // stylelint-enable declaration-no-important
 
 
     // TODO: add this class to jQuery rendering
@@ -667,14 +667,12 @@
             min-height: 80px;
         }
 
-        // sass-lint:disable no-important
         // hidden cells must have no layout
         .k-hidden {
-            padding-inline: 0 !important;
-            border-inline-end-width: 0 !important;
+            padding-inline: 0 !important; // stylelint-disable-line declaration-no-important
+            border-inline-end-width: 0 !important; // stylelint-disable-line declaration-no-important
         }
 
-        // sass-lint:enable no-important
         .k-scheduler-table-auto,
         .k-scheduler-table-auto td,
         .k-scheduler-content .k-scheduler-table-auto {

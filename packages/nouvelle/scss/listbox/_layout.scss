@@ -1,7 +1,7 @@
 @mixin kendo-listbox--layout() {
 
     #test-area .k-listbox {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }

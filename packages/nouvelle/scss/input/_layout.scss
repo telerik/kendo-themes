@@ -236,8 +236,8 @@
         box-shadow: none;
 
         > .k-button-icon {
-            min-width: auto !important; // sass-lint:disable-line no-important
-            // min-height: auto !important; // sass-lint:disable-line no-important
+            min-width: auto !important; // stylelint-disable-line declaration-no-important
+            // min-height: auto !important; // stylelint-disable-line declaration-no-important
         }
 
         &:focus::after {
@@ -251,11 +251,11 @@
         border-inline-start-width: var( --kendo-input-button-border-width, 1px );
     }
     .k-picker .k-input-button {
-        color: inherit !important; // sass-lint:disable-line no-important
-        background: none !important; // sass-lint:disable-line no-important
-        border-width: 0 !important; // sass-lint:disable-line no-important
-        box-shadow: none !important; // sass-lint:disable-line no-important
-        outline: 0 !important; // sass-lint:disable-line no-important
+        color: inherit !important; // stylelint-disable-line declaration-no-important
+        background: none !important; // stylelint-disable-line declaration-no-important
+        border-width: 0 !important; // stylelint-disable-line declaration-no-important
+        box-shadow: none !important; // stylelint-disable-line declaration-no-important
+        outline: 0 !important; // stylelint-disable-line declaration-no-important
     }
 
 
@@ -282,8 +282,8 @@
             > .k-button-icon {
                 margin-block: -1em;
                 margin-inline: 0;
-                min-width: auto !important; // sass-lint:disable-line no-important
-                min-height: auto !important; // sass-lint:disable-line no-important
+                min-width: auto !important; // stylelint-disable-line declaration-no-important
+                min-height: auto !important; // stylelint-disable-line declaration-no-important
             }
         }
         .k-spinner-increase .k-icon {
@@ -341,9 +341,9 @@
     // Fill mode
     .k-input-flat,
     .k-picker-flat {
-        @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
-        border-inline-width: 0 !important; // sass-lint:disable-line no-important
-        border-top-color: transparent !important; // sass-lint:disable-line no-important
+        @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
+        border-inline-width: 0 !important; // stylelint-disable-line declaration-no-important
+        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
 
         &:focus,
         &.k-focus,
@@ -358,7 +358,7 @@
 
     .k-input-flat,
     .k-input-outline {
-        background: none !important; // sass-lint:disable-line no-important
+        background: none !important; // stylelint-disable-line declaration-no-important
     }
 
 

@@ -1,7 +1,7 @@
 @mixin kendo-color-preview--layout() {
 
     #test-area .k-color-preview {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
     }
 
 }
