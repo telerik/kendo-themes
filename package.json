@@ -39,6 +39,7 @@
     "typescript": "^5.0.3"
   },
   "scripts": {
+    "start": "node ./scripts/start-dev-server.js",
     "setup": "bash ./scripts/setup.sh",
     "clean": "find . -name \"node_modules\" -type d -prune | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune -maxdepth 2 | xargs rm -rf",
