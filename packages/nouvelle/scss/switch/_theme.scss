@@ -132,69 +132,69 @@
     @each $variant, $theme-props in $kendo-switch-theme {
         $suffix: if( $variant == DEFAULT, "", "-#{$variant}" );
 
-        $_off-track-bg: map-get( $theme-props, off-track-bg );
-        $_off-track-text: map-get( $theme-props, off-track-text );
-        $_off-track-border: map-get( $theme-props, off-track-border );
+        $_off-track-bg: k-map-get( $theme-props, off-track-bg );
+        $_off-track-text: k-map-get( $theme-props, off-track-text );
+        $_off-track-border: k-map-get( $theme-props, off-track-border );
 
-        $_off-track-hover-bg: map-get( $theme-props, off-track-hover-bg );
-        $_off-track-hover-text: map-get( $theme-props, off-track-hover-text );
-        $_off-track-hover-border: map-get( $theme-props, off-track-hover-border );
+        $_off-track-hover-bg: k-map-get( $theme-props, off-track-hover-bg );
+        $_off-track-hover-text: k-map-get( $theme-props, off-track-hover-text );
+        $_off-track-hover-border: k-map-get( $theme-props, off-track-hover-border );
 
-        $_off-track-focus-bg: map-get( $theme-props, off-track-focus-bg );
-        $_off-track-focus-text: map-get( $theme-props, off-track-focus-text );
-        $_off-track-focus-border: map-get( $theme-props, off-track-focus-border );
+        $_off-track-focus-bg: k-map-get( $theme-props, off-track-focus-bg );
+        $_off-track-focus-text: k-map-get( $theme-props, off-track-focus-text );
+        $_off-track-focus-border: k-map-get( $theme-props, off-track-focus-border );
 
-        $_off-track-disabled-bg: map-get( $theme-props, off-track-disabled-bg );
-        $_off-track-disabled-text: map-get( $theme-props, off-track-disabled-text );
-        $_off-track-disabled-border: map-get( $theme-props, off-track-disabled-border );
+        $_off-track-disabled-bg: k-map-get( $theme-props, off-track-disabled-bg );
+        $_off-track-disabled-text: k-map-get( $theme-props, off-track-disabled-text );
+        $_off-track-disabled-border: k-map-get( $theme-props, off-track-disabled-border );
 
-        $_off-thumb-bg: map-get( $theme-props, off-thumb-bg );
-        $_off-thumb-text: map-get( $theme-props, off-thumb-text );
-        $_off-thumb-border: map-get( $theme-props, off-thumb-border );
+        $_off-thumb-bg: k-map-get( $theme-props, off-thumb-bg );
+        $_off-thumb-text: k-map-get( $theme-props, off-thumb-text );
+        $_off-thumb-border: k-map-get( $theme-props, off-thumb-border );
 
-        $_off-thumb-hover-bg: map-get( $theme-props, off-thumb-hover-bg );
-        $_off-thumb-hover-text: map-get( $theme-props, off-thumb-hover-text );
-        $_off-thumb-hover-border: map-get( $theme-props, off-thumb-hover-border );
+        $_off-thumb-hover-bg: k-map-get( $theme-props, off-thumb-hover-bg );
+        $_off-thumb-hover-text: k-map-get( $theme-props, off-thumb-hover-text );
+        $_off-thumb-hover-border: k-map-get( $theme-props, off-thumb-hover-border );
 
-        $_off-thumb-focus-bg: map-get( $theme-props, off-thumb-focus-bg );
-        $_off-thumb-focus-text: map-get( $theme-props, off-thumb-focus-text );
-        $_off-thumb-focus-border: map-get( $theme-props, off-thumb-focus-border );
+        $_off-thumb-focus-bg: k-map-get( $theme-props, off-thumb-focus-bg );
+        $_off-thumb-focus-text: k-map-get( $theme-props, off-thumb-focus-text );
+        $_off-thumb-focus-border: k-map-get( $theme-props, off-thumb-focus-border );
 
-        $_off-thumb-disabled-bg: map-get( $theme-props, off-thumb-disabled-bg );
-        $_off-thumb-disabled-text: map-get( $theme-props, off-thumb-disabled-text );
-        $_off-thumb-disabled-border: map-get( $theme-props, off-thumb-disabled-border );
+        $_off-thumb-disabled-bg: k-map-get( $theme-props, off-thumb-disabled-bg );
+        $_off-thumb-disabled-text: k-map-get( $theme-props, off-thumb-disabled-text );
+        $_off-thumb-disabled-border: k-map-get( $theme-props, off-thumb-disabled-border );
 
-        $_on-track-bg: map-get( $theme-props, on-track-bg );
-        $_on-track-text: map-get( $theme-props, on-track-text );
-        $_on-track-border: map-get( $theme-props, on-track-border );
+        $_on-track-bg: k-map-get( $theme-props, on-track-bg );
+        $_on-track-text: k-map-get( $theme-props, on-track-text );
+        $_on-track-border: k-map-get( $theme-props, on-track-border );
 
-        $_on-track-hover-bg: map-get( $theme-props, on-track-hover-bg );
-        $_on-track-hover-text: map-get( $theme-props, on-track-hover-text );
-        $_on-track-hover-border: map-get( $theme-props, on-track-hover-border );
+        $_on-track-hover-bg: k-map-get( $theme-props, on-track-hover-bg );
+        $_on-track-hover-text: k-map-get( $theme-props, on-track-hover-text );
+        $_on-track-hover-border: k-map-get( $theme-props, on-track-hover-border );
 
-        $_on-track-focus-bg: map-get( $theme-props, on-track-focus-bg );
-        $_on-track-focus-text: map-get( $theme-props, on-track-focus-text );
-        $_on-track-focus-border: map-get( $theme-props, on-track-focus-border );
+        $_on-track-focus-bg: k-map-get( $theme-props, on-track-focus-bg );
+        $_on-track-focus-text: k-map-get( $theme-props, on-track-focus-text );
+        $_on-track-focus-border: k-map-get( $theme-props, on-track-focus-border );
 
-        $_on-track-disabled-bg: map-get( $theme-props, on-track-disabled-bg );
-        $_on-track-disabled-text: map-get( $theme-props, on-track-disabled-text );
-        $_on-track-disabled-border: map-get( $theme-props, on-track-disabled-border );
+        $_on-track-disabled-bg: k-map-get( $theme-props, on-track-disabled-bg );
+        $_on-track-disabled-text: k-map-get( $theme-props, on-track-disabled-text );
+        $_on-track-disabled-border: k-map-get( $theme-props, on-track-disabled-border );
 
-        $_on-thumb-bg: map-get( $theme-props, on-thumb-bg );
-        $_on-thumb-text: map-get( $theme-props, on-thumb-text );
-        $_on-thumb-border: map-get( $theme-props, on-thumb-border );
+        $_on-thumb-bg: k-map-get( $theme-props, on-thumb-bg );
+        $_on-thumb-text: k-map-get( $theme-props, on-thumb-text );
+        $_on-thumb-border: k-map-get( $theme-props, on-thumb-border );
 
-        $_on-thumb-hover-bg: map-get( $theme-props, on-thumb-hover-bg );
-        $_on-thumb-hover-text: map-get( $theme-props, on-thumb-hover-text );
-        $_on-thumb-hover-border: map-get( $theme-props, on-thumb-hover-border );
+        $_on-thumb-hover-bg: k-map-get( $theme-props, on-thumb-hover-bg );
+        $_on-thumb-hover-text: k-map-get( $theme-props, on-thumb-hover-text );
+        $_on-thumb-hover-border: k-map-get( $theme-props, on-thumb-hover-border );
 
-        $_on-thumb-focus-bg: map-get( $theme-props, on-thumb-focus-bg );
-        $_on-thumb-focus-text: map-get( $theme-props, on-thumb-focus-text );
-        $_on-thumb-focus-border: map-get( $theme-props, on-thumb-focus-border );
+        $_on-thumb-focus-bg: k-map-get( $theme-props, on-thumb-focus-bg );
+        $_on-thumb-focus-text: k-map-get( $theme-props, on-thumb-focus-text );
+        $_on-thumb-focus-border: k-map-get( $theme-props, on-thumb-focus-border );
 
-        $_on-thumb-disabled-bg: map-get( $theme-props, on-thumb-disabled-bg );
-        $_on-thumb-disabled-text: map-get( $theme-props, on-thumb-disabled-text );
-        $_on-thumb-disabled-border: map-get( $theme-props, on-thumb-disabled-border );
+        $_on-thumb-disabled-bg: k-map-get( $theme-props, on-thumb-disabled-bg );
+        $_on-thumb-disabled-text: k-map-get( $theme-props, on-thumb-disabled-text );
+        $_on-thumb-disabled-border: k-map-get( $theme-props, on-thumb-disabled-border );
 
         .k-switch#{$suffix} {
             --kendo-switch-off-track-bg: #{k-var( --kendo-switch-#{$variant}-off-track-bg, $_off-track-bg )};

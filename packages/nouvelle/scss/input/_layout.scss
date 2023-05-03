@@ -332,7 +332,7 @@
             border-start-start-radius: 0;
             border-end-start-radius: 0;
         }
-        > :not(:first-child):not(:last-child) {
+        > :not(:first-child, :last-child) {
             border-radius: 0;
         }
     }
@@ -394,11 +394,11 @@
 
     // Autofill fix
     // This is needed for the textbox container to capture browser autofill
-    @keyframes autoFillStart {
+    @keyframes autoFillStart { // stylelint-disable-line
         from {}
         to {}
     }
-    @keyframes autoFillEnd {
+    @keyframes autoFillEnd { // stylelint-disable-line
         from {}
         to {}
     }
