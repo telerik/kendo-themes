@@ -37,7 +37,7 @@ $kendo-slider-draghandle-pressed-text: k-contrast-color( $kendo-color-primary ) 
 $kendo-slider-draghandle-pressed-border: k-try-darken( $kendo-color-primary, 12.5% ) !default;
 $kendo-slider-draghandle-pressed-gradient: null !default;
 
-$kendo-slider-draghandle-focus-shadow:  0 0 0 3px rgba( $kendo-color-primary, .5 ) !default;
+$kendo-slider-draghandle-focus-shadow: 0 0 0 3px rgba( $kendo-color-primary, .5 ) !default;
 
 $kendo-slider-transition-speed: .3s !default;
 $kendo-slider-transition-function: ease-out !default;

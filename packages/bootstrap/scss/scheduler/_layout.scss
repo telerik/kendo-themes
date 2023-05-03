@@ -17,9 +17,9 @@
             }
         }
 
+        // Angular fix for stronger selector and smaller padding
         .k-event-template {
-            // Angular fix for stronger selector and smaller padding
-            & {
+            & { // stylelint-disable-line
                 padding-block: $kendo-padding-sm-y;
                 padding-inline: $kendo-padding-sm-x;
                 font-size: $kendo-font-size-sm;

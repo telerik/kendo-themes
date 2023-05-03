@@ -166,14 +166,6 @@
         }
     }
 
-    // Grid footer
-    .k-grid-footer {
-        .k-grid-footer-sticky {
-            @include fill(
-                $bg: $kendo-grid-sticky-footer-bg
-            );
-        }
-    }
 
     // Selection Aggregates
     .k-selection-aggregates {
@@ -466,7 +458,7 @@
         border-color: $kendo-grid-border;
     }
 
-    //Row resize indicator
+    // Row resize indicator
     .k-resizer-wrap {
 
         &.k-hover .k-row-resizer {
