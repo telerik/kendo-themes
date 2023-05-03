@@ -1,4 +1,3 @@
-import { Button } from '../../button';
 import { TextButton } from '../templates/text-button';
 import { IconTextButton } from '../templates/icon-text-button';
 import { IconButton } from '../templates/icon-button';
@@ -38,8 +37,8 @@ export default () => (
             </section>
             <section>
                 <TextButton size="large" rounded={null}></TextButton>
-                <Button size="large" rounded={null} ></Button>
-                <Button size="large" rounded={null} ></Button>
+                <IconTextButton size="large" rounded={null} ></IconTextButton>
+                <IconButton size="large" rounded={null} ></IconButton>
             </section>
 
             <span>small</span>
