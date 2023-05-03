@@ -50,7 +50,7 @@ entryPoints.forEach((point) => entiresMap.add(point));
 
             if (entiresMap.has(url.pathname.replace(/^./, ""))) {
                 res.writeHead(200, { "Content-Type": "text/html" });
-                res.end(html.replace(SCRIPT_PATH, `${options.path.replace("/packages/html/src", "/packages/html/dist").replace(`.${extension}`, `.js`)}`));
+                res.end(html.replace(SCRIPT_PATH, `${options.path.replace("/packages/html/src", "/tmp").replace(`.${extension}`, `.js`)}`));
                 return;
             }
 
