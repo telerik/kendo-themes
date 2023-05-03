@@ -45,13 +45,13 @@ $kendo-fab-lg-padding-y: ( $kendo-fab-padding-y * 1.5 ) !default;
 
 /// The horizontal padding of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-padding-x: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-fab-icon-padding-x: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The vertical padding of the FAB icon.
 /// @group floating-action-button
 $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;
 /// The spacing of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-spacing: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-fab-icon-spacing: k-map-get( $kendo-spacing, 0.5 ) !default;
 
 /// The horizontal padding of the FAB items.
 /// @group floating-action-button
@@ -127,7 +127,7 @@ $kendo-fab-active-shadow: null !default;
 $kendo-fab-outline-style: solid !default;
 /// The outline width of the FAB.
 /// @group floating-action-button
-$kendo-fab-outline-width: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-fab-outline-width: k-map-get( $kendo-spacing, 0.5 ) !default;
 
 /// The base text color of the FAB item.
 /// @group floating-action-button
@@ -163,7 +163,7 @@ $kendo-fab-item-active-shadow: $kendo-fab-active-shadow !default;
 $kendo-fab-item-outline-style: solid !default;
 /// The outline width of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-outline-width: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-fab-item-outline-width: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The outline color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-outline-color: rgba(0, 0, 0, .08) !default;

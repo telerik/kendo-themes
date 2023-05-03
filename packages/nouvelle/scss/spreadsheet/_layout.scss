@@ -1,6 +1,5 @@
 @mixin kendo-spreadsheet--layout() {
 
-    // sass-lint:disable-block no-important no-ids
     #test-area .k-spreadsheet {
         display: none !important;
     }

@@ -42,7 +42,6 @@ $kendo-notification-border: $kendo-component-border !default;
 @function notification-theme( $colors ) {
     $_theme: ();
 
-    // sass-lint:disable-block indentation
     @each $name, $color in $colors {
         $_theme: k-map-merge(( $name: (
             color: k-color-shade( $color, 6 ),

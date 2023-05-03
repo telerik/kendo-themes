@@ -19,7 +19,6 @@ $kendo-auto-bootstrap: true !default;
 
 // Spacing
 $kendo-spacing: (
-    // sass-lint:disable-block leading-zero
     0: 0,
     1px: 1px,
     0.5: 2px,
@@ -96,7 +95,7 @@ $kendo-padding-y: 4px !default;
 $kendo-padding-sm-x: k-map-get( $kendo-spacing, 1 ) !default;
 /// Small vertical padding.
 /// @group common
-$kendo-padding-sm-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-padding-sm-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// Medium horizontal padding.
 /// @group common
 $kendo-padding-md-x: k-map-get( $kendo-spacing, 2 ) !default;
@@ -115,13 +114,13 @@ $kendo-padding-lg-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 $kendo-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 /// Small border radius.
 /// @group common
-$kendo-border-radius-sm: $kendo-border-radius - k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-border-radius-sm: $kendo-border-radius - k-map-get( $kendo-spacing, 0.5 ) !default;
 /// Medium border radius.
 /// @group common
 $kendo-border-radius-md: $kendo-border-radius !default;
 /// Large border radius.
 /// @group common
-$kendo-border-radius-lg: $kendo-border-radius + k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-border-radius-lg: $kendo-border-radius + k-map-get( $kendo-spacing, 0.5 ) !default;
 
 $kendo-border-radii: (
     DEFAULT: $kendo-border-radius-md,

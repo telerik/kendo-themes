@@ -93,7 +93,7 @@ $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-filter-cell-padding-x: $kendo-grid-sm-padding-x !default;
 $kendo-grid-sm-filter-cell-padding-y: map.get( $kendo-spacing, 2 ) !default;
 $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-padding-x !default;
-$kendo-grid-sm-edit-cell-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-grid-sm-edit-cell-padding-y: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 $kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-padding-y !default;
@@ -334,7 +334,7 @@ $kendo-grid-sort-index-height: var( --kendo-icon-size, 1rem ) !default;
 $kendo-grid-sort-index-spacing-y: calc( var( --kendo-icon-spacing, .5rem ) / 4 ) !default;
 /// Vertical offset of the grid sort index.
 /// @group grid
-$kendo-grid-sort-index-spacing-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-grid-sort-index-spacing-x: map.get( $kendo-spacing, 0.5 ) !default;
 /// Spacing of the grid sort icon.
 /// @group grid
 $kendo-grid-sort-icon-spacing: var( --kendo-icon-lg-spacing, .5rem ) !default;

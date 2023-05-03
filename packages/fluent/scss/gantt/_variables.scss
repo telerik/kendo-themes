@@ -49,7 +49,7 @@ $kendo-gantt-line-selected-fill: get-theme-color-var( primary-120 ) !default;
 $kendo-gantt-dot-size: 8px !default;
 /// Spacing of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-spacing: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-gantt-dot-spacing: map.get( $kendo-spacing, 0.5 ) !default;
 /// Background color of the gantt task dot.
 /// @group gantt
 $kendo-gantt-dot-bg: $kendo-color-black !default;

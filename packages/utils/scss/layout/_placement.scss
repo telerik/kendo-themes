@@ -100,7 +100,7 @@
     // placement length utility classes
     @each $side in (top, right, bottom, left) {
         .#{$kendo-prefix}#{$side},
-        .#{$kendo-prefix}pos-#{$side} { #{$side}: 0; } // sass-lint:disable-line brace-style
+        .#{$kendo-prefix}pos-#{$side} { #{$side}: 0; }
     }
 
     // Inset utility classes

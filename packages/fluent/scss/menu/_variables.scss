@@ -37,7 +37,7 @@ $kendo-menu-separator-width: 1px !default;
 
 /// The base outline of focused menu item.
 /// @group menu
-$kendo-menu-item-focus-outline-offset: - map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-menu-item-focus-outline-offset: - map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-menu-item-focus-outline-width: 1px !default;
 $kendo-menu-item-focus-outline-style: solid !default;
 

@@ -92,7 +92,7 @@ $kendo-timeline-flag-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-timeline-flag-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// The border radius of the flag in the timeline.
 /// @group timeline
-$kendo-timeline-flag-border-radius: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-timeline-flag-border-radius: map.get( $kendo-spacing, 0.5 ) !default;
 /// The line height of the flag in the timeline.
 /// @group timeline
 $kendo-timeline-flag-line-height: var( --kendo-line-height, normal ) !default;
@@ -151,7 +151,7 @@ $kendo-timeline-card-scroll-thumb-hover: var( --kendo-hover-border, initial ) !d
 $kendo-timeline-date-body-text: var( --kendo-body-text, initial ) !default;
 /// The width of the date in the timeline.
 /// @group timeline
-$kendo-timeline-date-width: map.get( $kendo-spacing, 12 ) + map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-timeline-date-width: map.get( $kendo-spacing, 12 ) + map.get( $kendo-spacing, 0.5 ) !default;
 /// The bottom margin of the date in the timeline.
 /// @group timeline
 $kendo-timeline-date-margin-bottom: map.get( $kendo-spacing, 2 ) !default;

@@ -21,7 +21,6 @@
         $outline: $outline-prop;
 
         $result: k-map-merge($result, (
-            // sass-lint:disable-block indentation
             #{$prefix}bg: $bg,
             #{$prefix}text: $text,
             #{$prefix}border: $border,

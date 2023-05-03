@@ -97,7 +97,7 @@
 
         > .k-progressbar-value {
             width: 0;
-            width: calc( var( --kendo-progressbar-value, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
+            width: calc( var( --kendo-progressbar-value, 0 ) * 1% );
             flex-direction: row;
 
             > .k-progress-status-wrap {
@@ -146,13 +146,13 @@
         }
 
         > .k-progressbar-value {
-            height: calc( var( --kendo-progressbar-value, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
+            height: calc( var( --kendo-progressbar-value, 0 ) * 1% );
             flex-direction: column-reverse;
             align-self: flex-end;
             align-items: flex-end;
 
             > .k-progress-status-wrap {
-                height: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
+                height: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) );
             }
 
             .k-progress-status {

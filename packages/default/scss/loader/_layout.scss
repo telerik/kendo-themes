@@ -551,7 +551,7 @@
         content: "";
         // See https://github.com/telerik/kendo-themes/issues/1925
         border-width: 1px; // TODO: Remove once we drop IE support
-        border-width: clamp( .015em, 1px, 1px ); // sass-lint:disable-line no-duplicate-properties
+        border-width: clamp( .015em, 1px, 1px );
         font-size: 4em;
     }
 

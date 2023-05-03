@@ -50,7 +50,7 @@ $kendo-fab-icon-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;
 /// The spacing of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-spacing: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-fab-icon-spacing: k-map-get( $kendo-spacing, 0.5 ) !default;
 
 /// The horizontal padding of the FAB items.
 /// @group floating-action-button

@@ -51,7 +51,7 @@
         flex-flow: row nowrap;
         flex: 1 0 auto;
         position: relative;
-        transition: all 100ms ease-in-out; // sass-lint:disable-line no-transition-all
+        transition: all 100ms ease-in-out;
     }
 
 
@@ -72,7 +72,7 @@
         display: block;
         position: absolute;
         transform: translate( -50%, -50% );
-        transition: all 100ms ease-in-out; // sass-lint:disable-line no-transition-all
+        transition: all 100ms ease-in-out;
     }
     .k-switch-on .k-switch-thumb-wrap {
         inset-inline-start: calc( 100% - ( var( --kendo-switch-thumb-width, auto ) / 2 ) - var( --kendo-switch-thumb-offset, 0 ) );

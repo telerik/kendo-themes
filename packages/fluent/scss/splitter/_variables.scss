@@ -60,4 +60,4 @@ $kendo-splitbar-selected-text: var( --kendo-component-bg, inherit ) !default;
 
 /// Size of the splitter static splitbar.
 /// @group splitter
-$kendo-splitter-splitbar-static-size: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-splitter-splitbar-static-size: map.get( $kendo-spacing, 0.5 ) !default;

@@ -37,7 +37,7 @@ $kendo-map-navigator-margin-x: map.get( $kendo-spacing, 4 ) !default;
 $kendo-map-navigator-margin-y: map.get( $kendo-spacing, 4 ) !default;
 /// Map navigator padding.
 /// @group map
-$kendo-map-navigator-padding: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-map-navigator-padding: map.get( $kendo-spacing, 0.5 ) !default;
 /// Map navigator width.
 /// @group map
 $kendo-map-navigator-width: calc( var( --kendo-icon-size) * 3 + #{$kendo-map-navigator-padding * 2} ) !default;

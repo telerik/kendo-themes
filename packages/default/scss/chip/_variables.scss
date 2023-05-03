@@ -28,7 +28,7 @@ $kendo-chip-lg-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-chip-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 /// The vertical padding of the small Chip.
 /// @group chip
-$kendo-chip-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-chip-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The vertical padding of the medium Chip.
 /// @group chip
 $kendo-chip-md-padding-y: $kendo-chip-padding-y !default;

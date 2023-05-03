@@ -62,7 +62,7 @@ $kendo-grid-sm-cell-padding-y: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-filter-cell-padding-x: k-map-get( $kendo-spacing, 1.5 ) !default;
 $kendo-grid-sm-filter-cell-padding-y: $kendo-grid-sm-filter-cell-padding-x !default;
 $kendo-grid-sm-edit-cell-padding-x: $kendo-grid-sm-cell-padding-x !default;
-$kendo-grid-sm-edit-cell-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-grid-sm-edit-cell-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 $kendo-grid-sm-group-dropclue-height: calc( #{$kendo-chip-sm-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
 $kendo-grid-sm-selection-aggregates-padding-x: $kendo-grid-sm-padding-y !default;
 $kendo-grid-sm-selection-aggregates-padding-y: $kendo-grid-sm-padding-y !default;

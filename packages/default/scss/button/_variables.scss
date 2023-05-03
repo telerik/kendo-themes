@@ -26,7 +26,7 @@ $kendo-button-lg-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-button-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 /// The vertical padding of the small Button.
 /// @group button
-$kendo-button-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-button-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The vertical padding of the medium Button.
 /// @group button
 $kendo-button-md-padding-y: $kendo-button-padding-y !default;

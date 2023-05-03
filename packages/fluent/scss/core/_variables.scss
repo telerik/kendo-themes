@@ -13,7 +13,6 @@ $kendo-use-input-spinner-width: true !default;
 $kendo-use-input-spinner-icon-offset: false !default;
 
 $kendo-spacing: (
-    // sass-lint:disable-block leading-zero
     0: 0,
     1px: 1px,
     0.5: .125rem,
@@ -91,7 +90,7 @@ $kendo-letter-spacing: normal !default;
 $kendo-scrollbar-width: 17px !default;
 
 /// Border radius for all components.
-$kendo-border-radius: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-border-radius: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-border-radius-sm: math.div( $kendo-border-radius, 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: ( $kendo-border-radius * 2 ) !default;
@@ -115,7 +114,7 @@ $kendo-padding-sm-y: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-padding-md-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-padding-md-y: map.get( $kendo-spacing, 1 ) !default;
 $kendo-padding-lg-x: map.get( $kendo-spacing, 3 ) !default;
-$kendo-padding-lg-y: map.get( $kendo-spacing, 1.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-padding-lg-y: map.get( $kendo-spacing, 1.5 ) !default;
 
 // Default transition
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out, opacity .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out !default;

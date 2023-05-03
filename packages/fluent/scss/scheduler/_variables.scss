@@ -73,7 +73,7 @@ $kendo-scheduler-event-line-height: $kendo-scheduler-line-height !default;
 $kendo-scheduler-event-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-scheduler-event-padding-y: map.get( $kendo-spacing, 0.5 ) !default;
 /// Minumum height of the scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-min-height: calc( #{$kendo-scheduler-line-height} + 2 * #{$kendo-scheduler-event-padding-y} ) !default;
@@ -251,7 +251,7 @@ $kendo-scheduler-tooltip-event-padding-y: $kendo-scheduler-event-padding-y !defa
 $kendo-scheduler-tooltip-event-border-radius: $kendo-scheduler-event-border-radius !default;
 /// Spacing between the events items inside the scheduler tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-event-gap: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-scheduler-tooltip-event-gap: map.get( $kendo-spacing, 0.5 ) !default;
 
 /// Color of the scheduler tooltip callout.
 /// @group scheduler

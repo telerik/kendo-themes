@@ -33,7 +33,7 @@ $kendo-slider-track-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-slider-thumb-size: k-map-get( $kendo-spacing, 4 ) !default;
 /// The default border width of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-border-width: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-slider-thumb-border-width: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The border radius of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-border-radius: 9999px !default;

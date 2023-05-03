@@ -1,6 +1,5 @@
 @mixin kendo-responsive-panel--layout() {
 
-    // sass-lint:disable-block no-important no-ids
     #test-area .k-responsive-panel {
         display: none !important;
     }

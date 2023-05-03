@@ -98,7 +98,6 @@
         @return $result;
     }
 
-    // sass-lint:disable-block no-warn
     @warn "No list passed.";
     @return $result;
 }

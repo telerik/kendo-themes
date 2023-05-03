@@ -40,7 +40,7 @@ $kendo-form-legend-padding: 0px !default;
 
 /// The border width of the Form legend.
 /// @group form
-$kendo-form-legend-border-width: 0 0 map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-form-legend-border-width: 0 0 map.get( $kendo-spacing, 0.5 ) !default;
 
 /// The border style of the Form legend.
 /// @group form

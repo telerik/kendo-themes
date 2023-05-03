@@ -45,7 +45,7 @@ $kendo-fab-lg-padding-y: ( $kendo-fab-padding-y * 1.5 ) !default;
 
 /// The horizontal padding of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-padding-x: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-fab-icon-padding-x: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The vertical padding of the FAB icon.
 /// @group floating-action-button
 $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;

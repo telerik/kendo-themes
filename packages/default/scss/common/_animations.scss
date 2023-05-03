@@ -385,7 +385,7 @@
 
     .k-fx-end .k-fx-next,
     .k-fx-end .k-fx-current {
-        transition: all $fx-duration ease-out; // sass-lint:disable-line no-transition-all
+        transition: all $fx-duration ease-out;
     }
 
     .k-fx {
@@ -480,7 +480,7 @@
         &.k-fx-end .k-fx-current .km-content,
         &.k-fx-end .k-fx-current .km-header,
         &.k-fx-end .k-fx-current .km-footer {
-            transition: all $fx-duration ease-out; // sass-lint:disable-line no-transition-all
+            transition: all $fx-duration ease-out;
         }
 
         // left
