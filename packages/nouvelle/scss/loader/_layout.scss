@@ -1,6 +1,5 @@
 @mixin kendo-loader--layout() {
 
-    // sass-lint:disable-block no-important no-ids
     #test-area .k-loader {
         display: none !important;
     }

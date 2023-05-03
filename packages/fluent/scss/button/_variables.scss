@@ -97,7 +97,7 @@ $kendo-button-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// The offset of the focused Button.
 /// @group button
-$kendo-button-focus-offset: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-button-focus-offset: map.get( $kendo-spacing, 0.5 ) !default;
 /// The Outline width of the focused Button.
 /// @group button
 $kendo-button-focus-outline-width: 1px !default;
@@ -110,7 +110,7 @@ $kendo-button-focus-outline-style: solid !default;
 $kendo-button-flat-focus-offset: 1px !default;
 /// The outline width of the flat focused Button.
 /// @group button
-$kendo-button-flat-focus-outline-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-button-flat-focus-outline-width: map.get( $kendo-spacing, 0.5 ) !default;
 
 /// The offset of the link focused Button.
 /// @group button

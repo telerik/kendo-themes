@@ -35,7 +35,7 @@
 
     // Legacy aliases
     @include generate-utils( rowspan, grid-row, $kendo-utils-grid-row-span );
-    .#{$kendo-prefix}rowspan-all { @extend .#{$kendo-prefix}rowspan-full !optional; } // sass-lint:disable-line class-name-format
-    .\!#{$kendo-prefix}rowspan-all { @extend .\!#{$kendo-prefix}rowspan-full !optional; } // sass-lint:disable-line class-name-format
+    .#{$kendo-prefix}rowspan-all { @extend .#{$kendo-prefix}rowspan-full !optional; }
+    .\!#{$kendo-prefix}rowspan-all { @extend .\!#{$kendo-prefix}rowspan-full !optional; }
 
 }

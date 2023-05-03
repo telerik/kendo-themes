@@ -57,13 +57,13 @@ $kendo-fab-focus-outline-style: $kendo-button-focus-outline-style !default;
 
 /// The horizontal padding of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-fab-icon-padding-x: map.get( $kendo-spacing, 0.5 ) !default;
 /// The vertical padding of the FAB icon.
 /// @group floating-action-button
 $kendo-fab-icon-padding-y: $kendo-fab-icon-padding-x !default;
 /// The spacing of the FAB icon.
 /// @group floating-action-button
-$kendo-fab-icon-spacing: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-fab-icon-spacing: map.get( $kendo-spacing, 0.5 ) !default;
 
 /// The horizontal padding of the FAB items.
 /// @group floating-action-button

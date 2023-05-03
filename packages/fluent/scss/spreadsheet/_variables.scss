@@ -120,7 +120,7 @@ $kendo-spreadsheet-error-border: get-theme-color-var( error-190 ) !default;
 $kendo-spreadsheet-insert-image-dialog-border-style: dashed !default;
 /// Border width of the spreadsheet image dialog.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-border-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-spreadsheet-insert-image-dialog-border-width: map.get( $kendo-spacing, 0.5 ) !default;
 /// Bottom margin of the spreadsheet image dialog.
 /// @group spreadsheet
 $kendo-spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;
@@ -179,7 +179,7 @@ $kendo-spreadsheet-drawing-handle-border-radius: var( --kendo-border-radius-lg, 
 $kendo-spreadsheet-drawing-outline-style: solid !default;
 /// Outline width of the spreadsheet drawing.
 /// @group spreadsheet
-$kendo-spreadsheet-drawing-outline-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-spreadsheet-drawing-outline-width: map.get( $kendo-spacing, 0.5 ) !default;
 
 /// Bacground color of the spreadsheet drawing anchor.
 /// @group spreadsheet

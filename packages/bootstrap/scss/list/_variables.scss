@@ -92,7 +92,7 @@ $kendo-list-lg-group-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 /// The vertical padding of the List group items, when no size is set.
 /// @group list
 $kendo-list-group-item-padding-y: null !default;
-$kendo-list-sm-group-item-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-list-sm-group-item-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 $kendo-list-md-group-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-list-lg-group-item-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 

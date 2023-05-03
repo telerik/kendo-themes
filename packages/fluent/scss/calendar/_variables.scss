@@ -275,8 +275,8 @@ $kendo-calendar-end-range-hover-shadow: inset -1px -1px 0 0 get-theme-color-var(
 $kendo-calendar-sm-font-size: $kendo-font-size-sm !default;
 $kendo-calendar-sm-line-height: $kendo-line-height-sm !default;
 $kendo-calendar-sm-cell-size: 24px !default;
-$kendo-calendar-sm-cell-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
-$kendo-calendar-sm-cell-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-calendar-sm-cell-padding-x: map.get( $kendo-spacing, 0.5 ) !default;
+$kendo-calendar-sm-cell-padding-y: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-calendar-sm-cell-font-size: $kendo-font-size-sm !default;
 
 $kendo-calendar-md-font-size: $kendo-font-size-md !default;

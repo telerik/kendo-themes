@@ -1,6 +1,5 @@
 @mixin kendo-scroller--layout() {
 
-    // sass-lint:disable-block no-important no-ids
     #test-area .k-scroller {
         display: none !important;
     }

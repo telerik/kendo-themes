@@ -48,7 +48,7 @@ $kendo-treeview-lg-item-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-treeview-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 /// The vertical padding of the small TreeView items.
 /// @group treeview
-$kendo-treeview-sm-item-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-treeview-sm-item-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The vertical padding of the medium TreeView items.
 /// @group treeview
 $kendo-treeview-md-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;

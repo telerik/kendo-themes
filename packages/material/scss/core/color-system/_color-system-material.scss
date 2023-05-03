@@ -735,7 +735,6 @@ $material-light-complimentary: (
 
     // stylelint-disable-next-line function-comma-newline-after
     $result: k-map-merge($base-palette, (
-        // sass-lint:disable-block indentation
         main: k-map-get($base-palette, $main),
         lighter: k-map-get($base-palette, $lighter),
         darker: k-map-get($base-palette, $darker),
@@ -748,7 +747,6 @@ $material-light-complimentary: (
     @each $hue, $color in $base-palette {
         // stylelint-disable-next-line function-comma-newline-after
         $result: k-map-merge($result, (
-            // sass-lint:disable-block indentation
             "#{$hue}-contrast": material-contrast($base-palette, $hue)
         ));
     }
@@ -782,7 +780,6 @@ $material-light-complimentary: (
 @function material-theme($kendo-color-primary, $kendo-color-secondary, $theme-type, $warn: material-palette(red)) {
     $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
     @return k-map-merge((
-        // sass-lint:disable-block indentation
         primary: $kendo-color-primary,
         secondary: $kendo-color-secondary,
         warn: $warn

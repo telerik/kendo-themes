@@ -101,7 +101,7 @@ $kendo-menu-popup-lg-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-menu-popup-sm-item-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-menu-popup-sm-item-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 $kendo-menu-popup-md-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-menu-popup-lg-item-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 

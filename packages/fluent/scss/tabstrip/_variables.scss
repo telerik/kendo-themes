@@ -110,7 +110,7 @@ $kendo-tabstrip-item-dragging-text: get-theme-color-var( primary-100 ) !default;
 // Indicator
 /// The border width of the tabstrip indicator
 /// @group tabstrip
-$kendo-tabstrip-indicator-size: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-tabstrip-indicator-size: map.get( $kendo-spacing, 0.5 ) !default;
 /// The border color of the tabstrip ripple
 /// @group tabstrip
 $kendo-tabstrip-indicator-color: get-theme-color-var( primary-100 ) !default;

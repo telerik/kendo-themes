@@ -9,7 +9,6 @@ $kendo-chip-font-family: null !default;
 
 // Sizing
 $kendo-chip-sizes: (
-    // sass-lint:disable-block leading-zero
     sm: (
         padding-x: k-map-get( $kendo-spacing, 1 ),
         padding-y: k-map-get( $kendo-spacing, 0.5 ),

@@ -22,7 +22,7 @@ $kendo-signature-lg-padding-x: $kendo-signature-padding-x !default;
 /// The vertical paddings of the signature component.
 /// @group signature
 $kendo-signature-padding-y: $kendo-signature-padding-x !default;
-$kendo-signature-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-signature-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-signature-md-padding-y: map.get( $kendo-spacing, 1 ) !default;
 $kendo-signature-lg-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 

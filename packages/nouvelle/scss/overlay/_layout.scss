@@ -1,6 +1,5 @@
 @mixin kendo-overlay--layout() {
 
-    // sass-lint:disable-block no-important no-ids
     #test-area .k-overlay {
         display: none !important;
     }

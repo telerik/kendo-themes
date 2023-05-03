@@ -17,7 +17,6 @@
 }
 
 @mixin checkerboard-gradient( $primary-color: white, $secondary-color: rgba( black, .09 ), $size: 10px ) {
-    // sass-lint:disable-block indentation
     $_position: calc( #{$size} / 2 );
 
     background:

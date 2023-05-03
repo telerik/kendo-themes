@@ -313,7 +313,6 @@ $wcag-light: white !default;
 /// @link https://www.w3.org/TR/WCAG/#dfn-contrast-ratio
 /// @link https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
 @function k-color-contrast-ratio( $background, $foreground ) {
-    // sass-lint:disable-block variable-name-format
     $backLum: k-color-luminance( $background ) + .05;
     $foreLum: k-color-luminance( $foreground ) + .05;
 
@@ -364,7 +363,6 @@ $wcag-light: white !default;
         }
     }
 
-    // sass-lint:disable-block no-warn
     @warn "Found no color leading to #{$min-ratio}:1 contrast ratio against #{$background}...";
 
     @return $max-ratio-color;

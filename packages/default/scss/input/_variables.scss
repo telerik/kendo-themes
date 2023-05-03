@@ -30,7 +30,7 @@ $kendo-input-lg-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-input-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 /// The vertical padding of the small Input components.
 /// @group input
-$kendo-input-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-input-sm-padding-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The vertical padding of the medium Input components.
 /// @group input
 $kendo-input-md-padding-y: $kendo-input-padding-y !default;
@@ -247,7 +247,7 @@ $kendo-input-clear-value-hover-opacity: 1 !default;
 
 /// The vertical margin of the clear value icon.
 /// @group input
-$kendo-input-values-margin-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-input-values-margin-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The horizontal margin of the clear value icon.
 /// @group input
 $kendo-input-values-margin-x: $kendo-input-values-margin-y !default;

@@ -93,13 +93,13 @@ $kendo-list-lg-group-item-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// The horizontal padding of the List item group label.
 /// @group list
-$kendo-list-item-group-label-sm-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-list-item-group-label-sm-padding-x: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-list-item-group-label-md-padding-x: map.get( $kendo-spacing, 1 ) !default;
 $kendo-list-item-group-label-lg-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// The vertical padding of the List item group label.
 /// @group list
-$kendo-list-item-group-label-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-list-item-group-label-sm-padding-y: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-list-item-group-label-md-padding-y: map.get( $kendo-spacing, 1 ) !default;
 $kendo-list-item-group-label-lg-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 

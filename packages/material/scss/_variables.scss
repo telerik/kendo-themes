@@ -19,7 +19,6 @@ $kendo-auto-bootstrap: true !default;
 
 // Spacing
 $kendo-spacing: (
-    // sass-lint:disable-block leading-zero
     0: 0,
     1px: 1px,
     0.5: 2px,
@@ -120,7 +119,7 @@ $kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-padding-x: 16px !default;
 $kendo-padding-y: 4px !default;
 $kendo-padding-sm-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-padding-sm-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-padding-sm-y: k-map-get( $kendo-spacing, 0.5 ) !default;
 $kendo-padding-md-x: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-padding-md-y: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-padding-lg-x: k-map-get( $kendo-spacing, 6 ) !default;

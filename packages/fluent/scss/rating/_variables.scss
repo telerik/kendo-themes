@@ -17,7 +17,7 @@ $kendo-rating-spacing: map.get( $kendo-spacing, 1 ) !default;
 
 /// Horizontal padding of the rating item.
 /// @group rating
-$kendo-rating-item-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-rating-item-padding-x: map.get( $kendo-spacing, 0.5 ) !default;
 /// Vertical padding of the rating item.
 /// @group rating
 $kendo-rating-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
