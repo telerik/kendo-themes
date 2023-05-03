@@ -73,8 +73,7 @@
     .k-window-titlebar-actions {
         margin-block: -5em;
         margin-inline-end: calc(
-            var( --kendo-window-titlebar-padding-y, #{k-if-var( $kendo-window-titlebar-padding-y, 0 )} )
-            - var( --kendo-window-titlebar-padding-x, #{k-if-var( $kendo-window-titlebar-padding-x, 0 )} )
+            var( --kendo-window-titlebar-padding-y, #{k-if-var( $kendo-window-titlebar-padding-y, 0 )} ) - var( --kendo-window-titlebar-padding-x, #{k-if-var( $kendo-window-titlebar-padding-x, 0 )} )
         );
         line-height: 1;
         display: flex;

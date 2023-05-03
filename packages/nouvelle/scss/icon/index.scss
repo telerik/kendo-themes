@@ -16,7 +16,6 @@ $_kendo-module-meta: (
 
 // Register
 @import "../core/module-system/index.import.scss";
-@import "../core/module-system/index.import.scss";
 @include module-register( $_kendo-module-meta... );
 
 
