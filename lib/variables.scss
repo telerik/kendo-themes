@@ -5,6 +5,6 @@ $_vars: meta.module-variables("all");
 
 body {
     @each $key, $val in $_vars {
-        var: k-resolve-var( unquote($key), meta.type-of( $val ), $val );
+        var: k-resolve-var( unquote($key), meta.type-of( $val ), $val ); // stylelint-disable-line
     }
 }
