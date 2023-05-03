@@ -6,7 +6,7 @@
 ///   @debug k-map-get( ( "foo": "bar" ), "foo" ); // => "bar"
 @function k-map-get( $map, $keys... ) {
     @each $key in $keys {
-        $map: map-get( $map, $key );
+        $map: map-get( $map, $key ); // stylelint-disable-line
     }
     @return $map;
 }
@@ -42,7 +42,7 @@
 ///   @debug k-map-merge( ( "foo": "bar" ), ( "baz": "qux" ) ); // => ( "foo": "bar", "baz": "qux" )
 @function k-map-merge( $map, $args... ) {
     @each $arg in $args {
-        $map: map-merge( $map, $arg );
+        $map: map-merge( $map, $arg ); // stylelint-disable-line
     }
     @return $map;
 }

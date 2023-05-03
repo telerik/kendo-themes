@@ -51,7 +51,7 @@
         $src-palette-name: k-map-get( $definition, PALETTE );
         $matrix: k-map-remove( $definition, PALETTE );
 
-        @if ($tc-index == null ) {
+        @if ($tc-index == null ) { // stylelint-disable-line
             $tmp-result: k-generate-theme-variant( $variant, $matrix, $src-palette-name );
             $result: k-map-merge( $result, $tmp-result);
         } @else {
