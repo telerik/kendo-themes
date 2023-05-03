@@ -73,7 +73,7 @@
             .k-clear,
             .k-select-all,
             .k-scheduler-delete,
-            .k-scheduler-resetSeries { // sass-lint:disable-line class-name-format
+            .k-scheduler-resetSeries { // stylelint-disable-line
                 color: var( --kendo-adaptive-menu-clear-text, #{$kendo-adaptive-menu-clear-text} );
             }
         }

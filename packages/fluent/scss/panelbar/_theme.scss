@@ -90,7 +90,7 @@
                         color: inherit;
                     }
 
-                    &:before {
+                    &::before {
                         background-color: var( --kendo-panelbar-selected-marker, #{$kendo-panelbar-selected-marker} );
                     }
 
@@ -195,7 +195,7 @@
                     --INTERNAL--kendo-panelbar-item-bg: var( --kendo-panelbar-item-selected-bg, #{$kendo-panelbar-item-selected-bg} );
                     --INTERNAL--kendo-panelbar-item-border: var( --kendo-panelbar-item-selected-border, #{$kendo-panelbar-item-selected-border} );
 
-                    &:before {
+                    &::before {
                         background-color: var( --kendo-panelbar-selected-marker, #{$kendo-panelbar-selected-marker} );
                     }
 

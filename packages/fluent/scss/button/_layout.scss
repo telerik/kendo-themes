@@ -336,7 +336,7 @@
             z-index: 2;
         }
 
-        .k-button:not(:first-child):not(:last-child) {
+        .k-button:not(:first-child, :last-child) {
             border-start-end-radius: 0;
             border-end-end-radius: 0;
             border-start-start-radius: 0;

@@ -127,7 +127,7 @@
         height: var( --kendo-button-lg-inner-calc-size, #{$kendo-button-lg-inner-calc-size} );
     }
 
-    // sass-lint:disable class-name-format
+    // stylelint-disable selector-class-pattern
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
         padding-inline: var( --kendo-toolbar-md-padding-x, #{$kendo-toolbar-md-padding-x} ) !important; // sass-lint:disable-line no-important
@@ -155,6 +155,7 @@
         align-self: stretch;
         flex-shrink: 0;
     }
+    // stylelint-enable selector-class-pattern
 
 
     // Remove once the Overflow Popup uses

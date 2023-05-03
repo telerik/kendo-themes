@@ -22,14 +22,14 @@
 
     }
 
-    // sass-lint:disable-block class-name-format
+    // stylelint-disable selector-class-pattern
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
         color: var( --kendo-toolbar-text, #{$kendo-toolbar-text} );
         background-color: var( --kendo-toolbar-bg, #{$kendo-toolbar-bg} );
         border-color: var( --kendo-toolbar-border, #{$kendo-toolbar-border} );
     }
-
+    // stylelint-enable selector-class-pattern
 
     // Remove once the Overflow Popup uses
     // the proper Menu rendering in all suites.

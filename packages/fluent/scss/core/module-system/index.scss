@@ -6,6 +6,7 @@ $components: _.$components !default;
 $_deps: ();
 $_imported: ();
 
+// stylelint-disable scss/at-if-no-null
 @mixin register( $name: null, $dependencies: null ) {
     @if ( list.index( $components, $name) != null ) {
         $_deps: map.set( $_deps, $name, $dependencies );
@@ -36,3 +37,4 @@ $_imported: ();
         @content;
     }
 }
+// stylelint-enable scss/at-if-no-null

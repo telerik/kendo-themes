@@ -19,8 +19,7 @@
     @if $gradient and $kendo-enable-gradients {
         @if $gradient == none {
             background-image: none;
-        }
-        @else {
+        } @else {
             background-image: linear-gradient( $gradient );
         }
     }

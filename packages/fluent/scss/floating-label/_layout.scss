@@ -57,7 +57,7 @@
         }
 
 
-        &.k-empty:not(.k-focus):not(:focus-within) ::placeholder {
+        &.k-empty:not(.k-focus, :focus-within) ::placeholder {
             color: transparent;
         }
 
