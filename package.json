@@ -29,7 +29,6 @@
     "sass": "^1.54.9",
     "sass-build": "^1.1.5",
     "sass-embedded": "^1.54.9",
-    "sass-lint": "^1.13.1",
     "sass-unused": "^0.5.0",
     "sassdoc": "^2.7.4",
     "semver": "^7.3.7",
