@@ -46,11 +46,11 @@
 /// @group transform
 /// @contextType css
 
-// sass-lint:disable function-name-format
+// stylelint-disable scss/at-function-pattern
 @function __rotate( $val ) {
     @return rotate( $val );
 }
-// sass-lint:enable function-name-format
+// stylelint-enable scss/at-function-pattern
 
 @mixin kendo-utils--transform--rotate() {
 
