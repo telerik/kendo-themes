@@ -1,4 +1,7 @@
 import { Button } from '../../button';
+import { TextButton } from '../templates/text-button';
+import { IconTextButton } from '../templates/icon-text-button';
+import { IconButton } from '../templates/icon-button';
 
 
 const styles = `
@@ -24,87 +27,87 @@ export default () => (
 
             <span>null</span>
             <section>
-                <Button size="small" rounded={null}>Button</Button>
-                <Button size="small" rounded={null} icon="folder">Button</Button>
-                <Button size="small" rounded={null} icon="folder"></Button>
+                <TextButton size="small" rounded={null}></TextButton>
+                <IconTextButton size="small" rounded={null} ></IconTextButton>
+                <IconButton size="small" rounded={null} ></IconButton>
             </section>
             <section>
-                <Button size="medium" rounded={null}>Button</Button>
-                <Button size="medium" rounded={null} icon="folder">Button</Button>
-                <Button size="medium" rounded={null} icon="folder"></Button>
+                <TextButton size="medium" rounded={null}></TextButton>
+                <IconTextButton size="medium" rounded={null} ></IconTextButton>
+                <IconButton size="medium" rounded={null} ></IconButton>
             </section>
             <section>
-                <Button size="large" rounded={null}>Button</Button>
-                <Button size="large" rounded={null} icon="folder">Button</Button>
-                <Button size="large" rounded={null} icon="folder"></Button>
+                <TextButton size="large" rounded={null}></TextButton>
+                <Button size="large" rounded={null} ></Button>
+                <Button size="large" rounded={null} ></Button>
             </section>
 
             <span>small</span>
             <section>
-                <Button size="small" rounded="small">Button</Button>
-                <Button size="small" rounded="small" icon="folder">Button</Button>
-                <Button size="small" rounded="small" icon="folder"></Button>
+                <TextButton size="small" rounded="small"></TextButton>
+                <IconTextButton size="small" rounded="small" ></IconTextButton>
+                <IconButton size="small" rounded="small" ></IconButton>
             </section>
             <section>
-                <Button size="medium" rounded="small">Button</Button>
-                <Button size="medium" rounded="small" icon="folder">Button</Button>
-                <Button size="medium" rounded="small" icon="folder"></Button>
+                <TextButton size="medium" rounded="small"></TextButton>
+                <IconTextButton size="medium" rounded="small" ></IconTextButton>
+                <IconButton size="medium" rounded="small" ></IconButton>
             </section>
             <section>
-                <Button size="large" rounded="small">Button</Button>
-                <Button size="large" rounded="small" icon="folder">Button</Button>
-                <Button size="large" rounded="small" icon="folder"></Button>
+                <TextButton size="large" rounded="small"></TextButton>
+                <IconTextButton size="large" rounded="small" ></IconTextButton>
+                <IconButton size="large" rounded="small" ></IconButton>
             </section>
 
             <span>medium</span>
             <section>
-                <Button size="small" rounded="medium">Button</Button>
-                <Button size="small" rounded="medium" icon="folder">Button</Button>
-                <Button size="small" rounded="medium" icon="folder"></Button>
+                <TextButton size="small" rounded="medium"></TextButton>
+                <IconTextButton size="small" rounded="medium" ></IconTextButton>
+                <IconButton size="small" rounded="medium" ></IconButton>
             </section>
             <section>
-                <Button size="medium" rounded="medium">Button</Button>
-                <Button size="medium" rounded="medium" icon="folder">Button</Button>
-                <Button size="medium" rounded="medium" icon="folder"></Button>
+                <TextButton size="medium" rounded="medium"></TextButton>
+                <IconTextButton size="medium" rounded="medium" ></IconTextButton>
+                <IconButton size="medium" rounded="medium" ></IconButton>
             </section>
             <section>
-                <Button size="large" rounded="medium">Button</Button>
-                <Button size="large" rounded="medium" icon="folder">Button</Button>
-                <Button size="large" rounded="medium" icon="folder"></Button>
+                <TextButton size="large" rounded="medium"></TextButton>
+                <IconTextButton size="large" rounded="medium" ></IconTextButton>
+                <IconButton size="large" rounded="medium" ></IconButton>
             </section>
 
             <span>large</span>
             <section>
-                <Button size="small" rounded="large">Button</Button>
-                <Button size="small" rounded="large" icon="folder">Button</Button>
-                <Button size="small" rounded="large" icon="folder"></Button>
+                <TextButton size="small" rounded="large"></TextButton>
+                <IconTextButton size="small" rounded="large" ></IconTextButton>
+                <IconButton size="small" rounded="large" ></IconButton>
             </section>
             <section>
-                <Button size="medium" rounded="large">Button</Button>
-                <Button size="medium" rounded="large" icon="folder">Button</Button>
-                <Button size="medium" rounded="large" icon="folder"></Button>
+                <TextButton size="medium" rounded="large"></TextButton>
+                <IconTextButton size="medium" rounded="large" ></IconTextButton>
+                <IconButton size="medium" rounded="large" ></IconButton>
             </section>
             <section>
-                <Button size="large" rounded="large">Button</Button>
-                <Button size="large" rounded="large" icon="folder">Button</Button>
-                <Button size="large" rounded="large" icon="folder"></Button>
+                <TextButton size="large" rounded="large"></TextButton>
+                <IconTextButton size="large" rounded="large" ></IconTextButton>
+                <IconButton size="large" rounded="large" ></IconButton>
             </section>
 
             <span>full</span>
             <section>
-                <Button size="small" rounded="full">Button</Button>
-                <Button size="small" rounded="full" icon="folder">Button</Button>
-                <Button size="small" rounded="full" icon="folder"></Button>
+                <TextButton size="small" rounded="full"></TextButton>
+                <IconTextButton size="small" rounded="full" ></IconTextButton>
+                <IconButton size="small" rounded="full" ></IconButton>
             </section>
             <section>
-                <Button size="medium" rounded="full">Button</Button>
-                <Button size="medium" rounded="full" icon="folder">Button</Button>
-                <Button size="medium" rounded="full" icon="folder"></Button>
+                <TextButton size="medium" rounded="full"></TextButton>
+                <IconTextButton size="medium" rounded="full" ></IconTextButton>
+                <IconButton size="medium" rounded="full" ></IconButton>
             </section>
             <section>
-                <Button size="large" rounded="full">Button</Button>
-                <Button size="large" rounded="full" icon="folder">Button</Button>
-                <Button size="large" rounded="full" icon="folder"></Button>
+                <TextButton size="large" rounded="full"></TextButton>
+                <IconTextButton size="large" rounded="full" ></IconTextButton>
+                <IconButton size="large" rounded="full" ></IconButton>
             </section>
 
         </div>
