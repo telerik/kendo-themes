@@ -31,6 +31,7 @@
     "access": "public"
   },
   "scripts": {
+    "start": "node ./scripts/start",
     "build": "node ./scripts/build.js && npm run typegen",
     "typegen": "tsc --emitDeclarationOnly --declaration --declarationDir dist/",
     "build:tests": "node ./scripts/build-tests.js",
@@ -39,6 +40,7 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^1.5.0",
+    "@progress/kendo-theme-default": "*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
