@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.1...v6.4.0-dev.2) (2023-05-04)
+
+
+### Bug Fixes
+
+* **grid:** fix grid grouping template icon size in fluent ([84fb58a](https://github.com/telerik/kendo-themes/commit/84fb58aaa02da6fd1fac738fea88087666aa41f3))
+* **list:** missing font-family property ([92cb702](https://github.com/telerik/kendo-themes/commit/92cb702ad7660ea40eab8dc709fba4e2c2d4abb5))
+* remove icon sizes overrides inside components ([184fb82](https://github.com/telerik/kendo-themes/commit/184fb8205fe221f1203f7793307d7e2afa30eedf))
+
+
+### Features
+
+* **list:** update option-label styles to match design ([7b57567](https://github.com/telerik/kendo-themes/commit/7b57567105dc72e2e88304985446af999ee9ec07))
+
+
+
+
+
 # [6.4.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.0...v6.4.0-dev.1) (2023-05-01)
 
 

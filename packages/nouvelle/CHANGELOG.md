@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.1...v6.4.0-dev.2) (2023-05-04)
+
+
+### Bug Fixes
+
+* remove icon sizes overrides inside components ([184fb82](https://github.com/telerik/kendo-themes/commit/184fb8205fe221f1203f7793307d7e2afa30eedf))
+
+
+
+
+
 # [6.4.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.0...v6.4.0-dev.1) (2023-05-01)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle
