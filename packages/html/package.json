@@ -40,7 +40,6 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "^1.5.0",
-    "@progress/kendo-theme-default": "*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
