@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
 <head>
-    <title>Button Solid</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" href="/packages/html/assets/styles.css">
-    <script src="/packages/html/assets/scripts.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -364,5 +366,10 @@
             </button>
         </span>
     </div>
+    <script>
+        // Live-reload?
+        new EventSource("/esbuild").addEventListener("change", () => location.reload());
+
+    </script>
 </body>
 </html>

@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { Card, CardBody, CardHeader } from '../../card';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area">
             <div id="tilelayout" className="k-widget k-tilelayout" style={{ gridTemplateColumns: "repeat(5, minmax(0px, 1fr))", gridTemplateRows: "repeat(5, minmax(0px, 1fr))", gap: "16px", width: "1000px", padding: "16px" }}>

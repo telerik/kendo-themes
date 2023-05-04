@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { Window } from '../../window';
 import { Textarea } from '../../textarea';
 import { Button } from '../../button';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     #test-area {
@@ -19,7 +15,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">

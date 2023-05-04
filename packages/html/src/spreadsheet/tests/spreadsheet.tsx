@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Combobox } from '../../combobox';
 import { DropdownList } from '../../dropdownlist';
@@ -6,9 +5,6 @@ import { Icon } from '../../icon';
 import { MenuButton } from '../../menu-button';
 import { Toolbar } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     .k-spreadsheet-view {
@@ -27,7 +23,7 @@ const style = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area">

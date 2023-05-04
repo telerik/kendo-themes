@@ -1,13 +1,9 @@
 /* eslint-disable indent */
-import ReactDOM from 'react-dom/client';
 import { Typography } from '../../typography';
 import { Button } from '../../button';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 

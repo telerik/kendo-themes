@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Window } from '../../window';
 import { Textbox } from '../../textbox';
@@ -7,9 +6,6 @@ import { NumericTextbox } from '../../numerictextbox';
 import { DropdownList } from '../../dropdownlist';
 import { Form, FormField } from '../../form';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-window {
@@ -18,7 +14,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

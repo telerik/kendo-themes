@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <h2 className="k-col-start-1 k-col-end-2 k-text-center">Drawer Push Mode</h2>

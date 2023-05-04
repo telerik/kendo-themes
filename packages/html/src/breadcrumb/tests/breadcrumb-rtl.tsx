@@ -1,13 +1,9 @@
-import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 import { Textbox } from '../../textbox';
 import { Breadcrumb, BreadcrumbContainer, BreadcrumbInputContainer, BreadcrumbItem, BreadcrumbItemText, BreadcrumbLink, BreadcrumbRootItemContainer } from '../../breadcrumb';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2 k-rtl">
             <span className="k-colspan-all k-col-span-full">Wrapping</span>

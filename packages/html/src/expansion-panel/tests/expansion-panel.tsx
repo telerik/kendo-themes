@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { ExpansionPanel } from '../../expansion-panel';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area">
             <ExpansionPanel title="Collapsed panel" subtitle="South America"></ExpansionPanel>

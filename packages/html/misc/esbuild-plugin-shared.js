@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const fs = require("fs");
 const p = require("path");
 const glob = require("glob");
@@ -16,10 +17,8 @@ module.exports = ({ dir: sharedDir, main: mainFile }) => ({
         const sharedApp = fs.readFileSync(sharedMain, "utf-8");
 
         build.onStart(() => {
-            // eslint-disable-next-line no-console
-            console.clear();
-            if (fs.existsSync(`./${build.initialOptions.outdir}`)) {
-                fs.rmSync(p.resolve(`./${build.initialOptions.outdir}`), {
+            if (fs.existsSync(build.initialOptions.outdir)) {
+                fs.rmSync(build.initialOptions.outdir, {
                     recursive: true,
                 });
             }
@@ -38,8 +37,7 @@ module.exports = ({ dir: sharedDir, main: mainFile }) => ({
             const modifiedContent = sharedApp.replace("%MAIN_FILE%", `./${filename}`);
 
             return {
-                watchFiles: [ args.path, sharedMain ],
-                watchDirs: [ sharedDir ],
+                watchFiles: [ args.path ],
                 contents: modifiedContent,
                 loader: ext.replace(/^./, ""),
                 resolveDir: p.dirname(dirname),
@@ -57,14 +55,17 @@ module.exports = ({ dir: sharedDir, main: mainFile }) => ({
                     if (output.entryPoint) {
                         const destination = p.resolve(key);
                         const dirname = p.dirname(destination);
-
                         const statics = glob.sync(`${sharedDir}/**/*.{html,css,png,jpg,jpeg,gif,svg,js}`);
 
                         statics.forEach((file) => {
-                            fs.copyFileSync(file, p.join(dirname, p.basename(file)));
+                            const filename = p.join(dirname, p.basename(file));
+                            if (!fs.existsSync(filename)) {
+                                fs.copyFileSync(file, filename);
+                            }
                         });
                     }
                 });
+                console.info("Compilation successful!");
             }
         });
     },

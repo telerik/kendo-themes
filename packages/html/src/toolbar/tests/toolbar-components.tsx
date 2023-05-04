@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { SplitButton } from '../../split-button';
 import { MenuButton } from '../../menu-button';
@@ -8,11 +7,8 @@ import { Toolbar } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
 
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 

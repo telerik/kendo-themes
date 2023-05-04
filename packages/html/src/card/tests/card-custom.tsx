@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import ReactDOM from 'react-dom/client';
 import { Card, CardHeader, CardBody, CardFooter, CardTitle, CardSubtitle, CardImage } from '../../card';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
@@ -7,11 +6,8 @@ import { Layout } from '../../layout';
 import { Avatar } from '../../avatar';
 import { Typography } from '../../typography';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 

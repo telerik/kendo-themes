@@ -1,12 +1,8 @@
-import ReactDOM from 'react-dom/client';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Card, CardBody, CardCallout, CardHeader, CardImage, CardSubtitle, CardTitle } from '../../card';
 
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     .k-card-image {
@@ -17,7 +13,7 @@ const style = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid">

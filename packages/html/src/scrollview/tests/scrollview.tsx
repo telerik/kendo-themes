@@ -1,9 +1,5 @@
-import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     .k-scrollview {
@@ -16,7 +12,7 @@ const style = `
     .k-scrollview-light { background: black !important; }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">

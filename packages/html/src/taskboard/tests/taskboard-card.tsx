@@ -1,14 +1,10 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Card, CardBody, CardHeader } from '../../card';
 import { Searchbox } from '../../searchbox';
 import { Toolbar } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area">
 

@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { Popover } from '../../popover';
 import { Button } from '../../button';
 import { ActionButtons } from '../../action-buttons';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-popover {
@@ -14,7 +10,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-5">

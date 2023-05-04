@@ -1,9 +1,5 @@
-import ReactDOM from 'react-dom/client';
 import { List, ListAngular, ListGroup, ListItem } from '../../list';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     .k-virtual-list > .k-item,
@@ -13,7 +9,7 @@ const style = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">

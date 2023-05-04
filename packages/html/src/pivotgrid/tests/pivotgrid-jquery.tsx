@@ -1,13 +1,9 @@
-import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction } from '../../chip';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area">
 
