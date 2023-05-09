@@ -6,8 +6,6 @@ import { Combobox } from '../../combobox';
 import { Toolbar } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
 
-
-
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">

@@ -1,7 +1,5 @@
 import { ProgressBar, ChunkProgressBar } from '../../progressbar';
 
-
-
 const style = `
     .k-progressbar-indeterminate,
     .k-progressbar-indeterminate::before,

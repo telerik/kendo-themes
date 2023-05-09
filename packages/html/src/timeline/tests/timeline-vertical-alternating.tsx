@@ -2,8 +2,6 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Card, CardBody, CardCallout, CardHeader, CardImage, CardSubtitle, CardTitle } from '../../card';
 
-
-
 const style = `
     .k-card-image {
         display: block;

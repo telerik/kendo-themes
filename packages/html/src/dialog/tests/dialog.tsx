@@ -1,8 +1,6 @@
 import { Button } from '../../button';
 import { Dialog } from '../../dialog';
 
-
-
 const styles = `
     .k-dialog {
         position: relative;

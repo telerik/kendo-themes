@@ -1,8 +1,6 @@
 import { DropdownGrid } from '..';
 import { DataTable, TableBody, TableFooter, TableGroupStickyHeader, TableHeader, TableList, TableListGroupRow, TableListRow, TableListTd, TableListTh, TableRow, TableTh, TableThead } from '../../table';
 
-
-
 const styles = `
     #test-area {
         max-width: 660px;

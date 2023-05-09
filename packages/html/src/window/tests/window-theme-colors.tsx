@@ -1,7 +1,5 @@
 import { Window } from '..';
 
-
-
 const style = `
     .k-window {
         position: relative;

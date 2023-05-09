@@ -1,7 +1,5 @@
 import { Badge } from '../../badge';
 
-
-
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-9">

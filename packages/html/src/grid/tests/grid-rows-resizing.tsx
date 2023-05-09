@@ -2,8 +2,6 @@ import { Button } from '../../button';
 import { Toolbar } from '../../toolbar';
 import { Searchbox } from '../../searchbox';
 
-
-
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

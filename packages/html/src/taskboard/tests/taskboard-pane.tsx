@@ -6,8 +6,6 @@ import { Textbox } from '../../textbox';
 import { Toolbar } from '../../toolbar';
 import { Form, FormField } from '../../form';
 
-
-
 const style = `
     #test-area { max-width: 1037px; }
 `;

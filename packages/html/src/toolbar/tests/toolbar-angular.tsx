@@ -4,8 +4,6 @@ import { MenuButton } from '../../menu-button';
 import { ToolbarAngular, ToolbarSeparator } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
 
-
-
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

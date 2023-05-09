@@ -1,7 +1,5 @@
 import { DatePicker } from '..';
 
-
-
 const styles = `
     #test-area {
         max-width: 660px;

@@ -12,8 +12,6 @@ import { NumericTextbox } from '../../numerictextbox';
 import { RadioButton } from '../../radio';
 import { DatePicker } from '../../datepicker';
 
-
-
 const style = `
     #test-area {
         width: 700px;
