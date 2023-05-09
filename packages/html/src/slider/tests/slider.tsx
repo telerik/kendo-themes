@@ -176,6 +176,53 @@ root.render(
                 </Slider>
             </section>
 
+            <span>RTL</span>
+            <section>
+                <Slider className="k-slider-0" dir="rtl">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="5"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="10"/>
+                </Slider>
+            </section>
+            <section>
+                <Slider className="k-slider-50" dir="rtl">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="5"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="10"/>
+                </Slider>
+            </section>
+            <section>
+                <Slider className="k-slider-100" dir="rtl">
+                    <SliderTick label large text="0"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="5"/>
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick />
+                    <SliderTick label large text="10"/>
+                </Slider>
+            </section>
+
         </div>
     </>
 );
