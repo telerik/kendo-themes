@@ -51,16 +51,6 @@
                 cursor: default;
             }
         }
-
-        .k-rtl &,
-        &.k-rtl,
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-            .k-slider-selection {
-                left: auto;
-                right: 0;
-            }
-        }
     }
 
 
@@ -143,36 +133,13 @@
 
                 .k-slider-selection {
                     width: calc( (var(--kendo-slider-end, 0) - var(--kendo-slider-start, 0)) * 1% );
-                    left: calc( var(--kendo-slider-start, 0) * 1% );
+                    inset-inline-start: calc( var(--kendo-slider-start, 0) * 1% );
                 }
                 .k-draghandle-start {
-                    left: calc( var(--kendo-slider-start, 0) * 1% );
+                    inset-inline-start: calc( var(--kendo-slider-start, 0) * 1% );
                 }
                 .k-draghandle-end {
-                    left: calc( var(--kendo-slider-end, 0) * 1% );
-                }
-
-                [dir="rtl"] & {
-                    .k-slider-selection {
-                        left: unset;
-                        right: calc( var(--kendo-slider-start, 0) * 1% );
-                    }
-                    .k-draghandle-start {
-                        left: unset;
-                        right: calc( var(--kendo-slider-start, 0) * 1% );
-                    }
-                    .k-draghandle-end {
-                        left: unset;
-                        right: calc( var(--kendo-slider-end, 0) * 1% );
-                    }
-
-                    .k-draghandle {
-                        transform: translate(50%, -50%);
-                    }
-                    .k-draghandle:focus,
-                    .k-draghandle:active {
-                        transform: translate(50%, -50%) scale($kendo-slider-draghandle-active-scale);
-                    }
+                    inset-inline-start: calc( var(--kendo-slider-end, 0) * 1% );
                 }
             }
         }
@@ -256,7 +223,7 @@
 
         .k-label {
             text-align: start;
-            left: 120%;
+            inset-inline-start: 120%;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -264,23 +231,8 @@
         .k-last .k-label { top: 0; }
 
         .k-slider-topleft .k-label {
-            left: auto;
-            right: 120%;
-        }
-
-        .k-rtl &,
-        &.k-rtl,
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-            .k-label {
-                left: auto;
-                right: 120%;
-            }
-
-            .k-slider-topleft .k-label {
-                left: 120%;
-                right: auto;
-            }
+            inset-inline-start: auto;
+            inset-inline-end: 120%;
         }
 
     }
@@ -316,33 +268,15 @@
         // labels
 
         .k-label {
-            left: 50%;
+            inset-inline-start: 50%;
             bottom: -1.2em;
             transform: translateX(-50%);
         }
-        .k-first .k-label { left: 0; }
-        .k-last .k-label { left: 100%; }
+        .k-first .k-label { inset-inline-start: 0; }
+        .k-last .k-label { inset-inline-start: 100%; }
 
         .k-slider-topleft .k-label {
             top: -1.2em;
-        }
-
-        .k-rtl &,
-        &.k-rtl,
-        [dir="rtl"] &,
-        &[dir="rtl"] {
-            .k-slider-track,
-            .k-slider-selection {
-                right: 0;
-                left: auto;
-            }
-
-            .k-button-increase .k-icon,
-            .k-button-increase .k-svg-icon,
-            .k-button-decrease .k-icon,
-            .k-button-decrease .k-svg-icon {
-                transform: scaleX(-1);
-            }
         }
     }
 
@@ -423,7 +357,7 @@
     .k-slider-tooltip {
         .k-callout-n,
         .k-callout-s {
-            margin-left: - k-math-div( $kendo-tooltip-callout-size, 2 );
+            margin-inline-start: - k-math-div( $kendo-tooltip-callout-size, 2 );
         }
 
         .k-callout-w,
@@ -432,20 +366,57 @@
         }
     }
 
+    // RTL
+    .k-slider-rtl {
+        &.k-slider-horizontal {
+
+            .k-draghandle {
+                transform: translate(50%, -50%);
+            }
+
+            .k-draghandle:focus,
+            .k-draghandle:active {
+                transform: if( $kendo-slider-draghandle-active-scale, translate(50%, -50%) scale($kendo-slider-draghandle-active-scale), null );
+            }
+
+            .k-label {
+                transform: translateX(50%);
+            }
+
+            .k-button-increase .k-icon,
+            .k-button-increase .k-svg-icon,
+            .k-button-decrease .k-icon,
+            .k-button-decrease .k-svg-icon {
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    .k-slider[dir="rtl"],
+    [dir="rtl"] .k-slider,
+    .k-slider.k-rtl,
+    .k-rtl .k-slider {
+        @extend .k-slider-rtl !optional;
+    }
+
 
     // Angular specific
     .k-slider kendo-resize-sensor {
         position: absolute;
     }
     .k-slider-horizontal .k-slider-wrap:not(.k-slider-buttons) {
-        padding-left: calc( #{$kendo-slider-draghandle-size} / 2 );
-        padding-right: calc( #{$kendo-slider-draghandle-size} / 2 );
+        padding-inline-start: calc( #{$kendo-slider-draghandle-size} / 2 );
+        padding-inline-end: calc( #{$kendo-slider-draghandle-size} / 2 );
     }
     .k-slider-vertical .k-slider-wrap:not(.k-slider-buttons) {
         padding-top: calc( #{$kendo-slider-draghandle-size} / 2 );
         padding-bottom: calc( #{$kendo-slider-draghandle-size} / 2 );
     }
 
+    // Aliases
+    .k-draghandle { @extend .k-slider-thumb !optional; }
+    .k-draghandle-start { @extend .k-slider-thumb-start !optional; }
+    .k-draghandle-end { @extend .k-slider-thumb-end !optional; }
 }
 
 
