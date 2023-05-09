@@ -13,6 +13,7 @@
   "main": "dist/index.js",
   "files": [
     "dist/**/*.js",
+    "dist/**/*.d.ts",
     "dist/**/*.js.map",
     "src/**/**.ts",
     "src/**/**.tsx"
