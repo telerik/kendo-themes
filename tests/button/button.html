@@ -6,14 +6,318 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="/packages/html/dist/button/tests/button/styles.css">
+    <script src="/packages/html/dist/button/tests/button/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <script>
-        // Live-reload?
-        new EventSource("/esbuild").addEventListener("change", () => location.reload());
+    <style>
+        #test-area {
+            grid-template-columns: 120px repeat(6, 1fr);
+        }
 
-    </script>
+    </style>
+    <div id="test-area" class="k-d-grid">
+        <span></span>
+        <span>Normal</span>
+        <span>Hover</span>
+        <span>Focus</span>
+        <span>Active</span>
+        <span>Selected</span>
+        <span>Disabled</span>
+        <span>base</span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
+        </span>
+        <span>^ text + icon</span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Normal</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Hover</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Focus</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Active</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Selected</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Disabled</span>
+            </button>
+        </span>
+        <span>^ icon</span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>primary</span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
+        </span>
+        <span>^ text + icon</span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Normal</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Hover</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Focus</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Active</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Selected</span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-disabled">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+                <span class="k-button-text">Disabled</span>
+            </button>
+        </span>
+        <span>^ icon</span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-disabled k-icon-button">
+                <span class="k-button-icon k-svg-icon k-svg-i-folder">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m242.8 128-32-32H96v288h320V192H128v-32h288c17.7 0 32 14.3 32 32v192c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32h128l64 64"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+    </div>
 </body>
 </html>
