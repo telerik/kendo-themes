@@ -20,7 +20,7 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid">
+        <div id="test-area" className="k-d-grid k-bg-gray-100">
 
             <span>Default</span>
             <section className="col-4">

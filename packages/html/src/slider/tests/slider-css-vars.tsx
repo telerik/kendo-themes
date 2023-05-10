@@ -22,7 +22,7 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid k-grid-cols-4 k-bg-gray-50">
 
             <span>Single</span>
             <span>Range</span>

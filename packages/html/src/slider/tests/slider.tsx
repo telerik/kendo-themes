@@ -24,7 +24,7 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid">
+        <div id="test-area" className="k-d-grid k-bg-gray-50">
             <span></span>
             <span>Empty</span>
             <span>Not Empty</span>
