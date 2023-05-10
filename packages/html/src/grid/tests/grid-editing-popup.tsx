@@ -38,7 +38,7 @@ root.render(
                         <FormField className="k-form-field-error" label="Text data field label" error="Error" editor={ <Textbox value="Invalid" invalid showClearButton /> } />
                         <FormField label="Date data field label" editor={ <DatePicker placeholder="dd/MM/yyyy" /> } />
                         <FormField label="Numeric data field label" editor={ <NumericTextbox placeholder="##,###" /> } />
-                        <FormField label=" " editor={
+                        <FormField editor={
                             <>
                                 <Checkbox checked />
                                 <label className="k-checkbox-label">Boolean data field label</label>

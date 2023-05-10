@@ -121,7 +121,6 @@ root.render(
                     />
 
                     <FormField
-                        label=" "
                         hint="Hint: hint message"
                         error="Error: error message"
                         editor={

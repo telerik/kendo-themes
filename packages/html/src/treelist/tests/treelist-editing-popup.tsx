@@ -49,7 +49,6 @@ root.render(
                             editor={ <NumericTextbox placeholder="##,###" /> }
                         />
                         <FormField
-                            label=" "
                             editor={
                                 <>
                                     <Checkbox checked />

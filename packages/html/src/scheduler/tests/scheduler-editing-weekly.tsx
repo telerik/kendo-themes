@@ -46,7 +46,7 @@ root.render(
                     <Form tag="div" className="k-scheduler-edit-form" orientation="vertical">
                         <FormField className="k-form-field-error" label="Title" error="Error" editor={ <Textbox invalid value="Invalid" /> }/>
                         <FormField label="Start" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
-                        <FormField label=" " editor={
+                        <FormField editor={
                             <>
                                 <Checkbox checked />
                                 <label className="k-checkbox-label">Specify Time Zone</label>
@@ -56,7 +56,7 @@ root.render(
                             <Combobox placeholder="Eastern European Summer Time (Sofia-Bulgaria)" />
                         } />
                         <FormField label="End" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
-                        <FormField label=" " editor={
+                        <FormField editor={
                             <>
                                 <Checkbox checked />
                                 <label className="k-checkbox-label">End in different Time Zone</label>
@@ -65,7 +65,7 @@ root.render(
                         <FormField label="End Time Zone" editor={
                             <Combobox placeholder="Select Time Zone, Country, City" />
                         } />
-                        <FormField label=" " editor={
+                        <FormField editor={
                             <>
                                 <Checkbox />
                                 <label className="k-checkbox-label">All Day Event</label>
