@@ -54,10 +54,7 @@ Promise.all(chunks.map(async( chunk, index ) => {
             fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
             await snapshotMarkup(browser.driver, 'html', outputPath, {
-                template: (output) => `<!doctype html>${output
-                    .replace('./styles.css', path.join('/', path.dirname(filePath), 'styles.css'))
-                    .replace('./scripts.js', path.join('/', path.dirname(filePath), 'scripts.js'))
-                }`,
+                template: (output) => `<!doctype html>${output}`,
                 preserveAttributes: true,
                 preserveCommentNodes: true,
                 beautifyOptions: {
