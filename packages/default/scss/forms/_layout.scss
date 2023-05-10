@@ -61,8 +61,8 @@
     .k-form {
         border: 0;
 
-        .k-label,
-        kendo-label,
+        .k-form-field > .k-label,
+        .k-form-field > kendo-label,
         .k-form-label {
             margin-bottom: $kendo-form-label-margin-bottom;
             display: flex;
