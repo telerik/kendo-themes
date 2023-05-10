@@ -1,5 +1,6 @@
 import { classNames, optionClassNames, Size } from '../utils';
 import { Fieldset } from './fieldset';
+import { FormField } from './form-field';
 
 export const FORM_CLASSNAME = 'k-form';
 
@@ -22,6 +23,7 @@ export type KendoFormProps = KendoFormOptions & {
     gapX?: number;
     gapY?: number;
     tag?: string;
+    children?: JSX.Element | JSX.Element[];
 };
 
 const defaultProps = {
@@ -44,11 +46,31 @@ export const Form = (
         gapX,
         gapY,
         tag = defaultProps.tag,
+        children
     } = props;
 
     const ConditionalWrapper = ({ condition, wrapper, children }) => (condition ? wrapper(children) : children);
 
     const Parent = ({ tag, className, children }) => ( tag === 'form' ? <form className={className}>{children}</form> : <div className={className}>{children}</div> );
+
+    const formChildren: JSX.Element | JSX.Element[] = [];
+
+    if (children) {
+        if ( Array.isArray(children) ) {
+            children.map( (child, index) => {
+                if ( child.type === FormField ) {
+                    formChildren.push(
+                        <FormField {...child.props} orientation={orientation} key={index} />
+                    );
+                } else {
+                    formChildren.push(child);
+                }
+            } );
+        } else {
+            children.type === FormField && formChildren.push( <FormField {...children.props} orientation={orientation} /> );
+        }
+
+    }
 
     return (
         <Parent tag={tag} className={classNames(
@@ -79,7 +101,7 @@ export const Form = (
                     </Fieldset>
                 }
             >
-                {props.children}
+                {formChildren}
             </ConditionalWrapper>
             { formButtons &&
                 <div className="k-form-buttons">

@@ -45,13 +45,13 @@ root.render(
                         <FormField className="k-form-field-error" label="Title" error="Error" editor={ <Textbox invalid value="Invalid" /> }/>
                         <FormField label="Start" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
                         <FormField label="End" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
-                        <FormField label=" " editor={
+                        <FormField editor={
                             <>
                                 <Checkbox />
                                 <label className="k-checkbox-label">All Day Event</label>
                             </>
                         }/>
-                        <FormField label=" " editor={
+                        <FormField editor={
                             <>
                                 <Checkbox />
                                 <label className="k-checkbox-label">Specify Time Zone</label>

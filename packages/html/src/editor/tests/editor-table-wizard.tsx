@@ -195,7 +195,6 @@ root.render(
                     <Form tag="div" layout="grid" cols={4} gapX={4}>
                         <FormField
                             className="k-col-span-full"
-                            label=" "
                             editor={
                                 <>
                                     <Checkbox />

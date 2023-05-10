@@ -8,6 +8,7 @@ const states = [
 
 export type KendoFormFieldProps = {
     label?: null | string;
+    orientation?: string;
     optional?: boolean;
     editor?: JSX.Element | string;
     hint?: null | string;
@@ -27,6 +28,7 @@ export const FormField = (
 ) => {
     const {
         label,
+        orientation,
         optional,
         editor,
         hint,
@@ -46,16 +48,14 @@ export const FormField = (
             {label &&
                             <label className={classNames(
                                 'k-label',
-                                'k-form-label',
-                                {
-                                    'k-label-empty': label === ' '
-                                }
+                                'k-form-label'
                             )}>
                                 {label}
                                 {optional && <span className="k-label-optional">(Optional)</span>}
                                 {info && <span className="k-field-info">(field info)</span>}
                             </label>
             }
+            { orientation === 'horizontal' && !label && <span className="k-label k-form-label k-label-empty"></span> }
             <div className="k-form-field-wrap">
                 {editor}
                 {hint && <div className="k-form-hint">{hint}</div>}

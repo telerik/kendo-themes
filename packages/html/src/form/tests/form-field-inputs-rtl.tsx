@@ -219,7 +219,6 @@ root.render(
 
                     <FormField
                         dir="rtl"
-                        label=" "
                         editor={
                             <>
                                 <Checkbox/>
@@ -334,7 +333,6 @@ root.render(
 
                     <FormField
                         dir="rtl"
-                        label=" "
                         editor={
                             <FloatingLabel label="FloatingLabel" empty>
                                 <Textbox />
@@ -345,7 +343,6 @@ root.render(
 
                     <FormField
                         dir="rtl"
-                        label=" "
                         editor={
                             <FloatingLabel label="FloatingLabel (Focused)" empty focus>
                                 <Textbox focus />
