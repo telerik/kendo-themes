@@ -4,7 +4,6 @@
 node_modules/
 dist/
 modules/
-tmp/
 
 # Log files
 npm-debug.log

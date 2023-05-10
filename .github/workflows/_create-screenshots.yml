@@ -49,6 +49,10 @@ jobs:
       - name: Unpack artifacts
         run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
+      - name: Build test pages
+        run: |
+          npm run build:tests
+
       - name: Create screenshots
         run: ./build/create-screenshots.sh ${{ matrix.theme }}
 
