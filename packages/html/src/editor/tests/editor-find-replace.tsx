@@ -51,7 +51,7 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" orientation="horizontal">
+                            <Form tag="div" orientation="vertical">
                                 <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
                                 <FormField editor={
                                     <div className="k-search-options k-checkbox-list">
@@ -98,7 +98,7 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" orientation="horizontal">
+                            <Form tag="div" orientation="vertical">
                                 <FormField label="Find What:" editor={ <Textbox showClearButton={false} value="editor" /> } />
                                 <FormField label="Replace With:" editor={ <Textbox showClearButton={false} value="grid" /> } />
                                 <FormField editor={
