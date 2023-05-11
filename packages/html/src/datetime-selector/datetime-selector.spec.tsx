@@ -12,7 +12,8 @@ const states = [];
 const options = {};
 
 export type KendoDateTimeSelectorProps = {
-    tab?: 'time' | 'date'
+    tab?: 'time' | 'date',
+    dir?: 'ltr' | 'rtl'
 };
 
 const defaultProps = {
@@ -25,6 +26,7 @@ export const DateTimeSelector = (
 ) => {
     const {
         tab = defaultProps.tab,
+        dir,
         ...other
     } = props;
 
@@ -60,7 +62,7 @@ export const DateTimeSelector = (
                     </>
                     : <>
                         <div className="k-datetime-calendar-wrap">
-                            <Calendar showOtherMonth></Calendar>
+                            <Calendar showOtherMonth dir={dir}></Calendar>
                         </div>
                         <div className="k-datetime-time-wrap"></div>
                     </>

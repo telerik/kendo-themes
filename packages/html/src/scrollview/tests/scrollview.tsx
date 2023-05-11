@@ -132,10 +132,10 @@ root.render(
                 </div>
                 <div className="k-scrollview-elements">
                     <a className="k-scrollview-prev">
-                        <Icon icon="chevron-left" size="xxxlarge"></Icon>
+                        <Icon icon="chevron-right" size="xxxlarge"></Icon>
                     </a>
                     <a className="k-scrollview-next">
-                        <Icon icon="chevron-right" size="xxxlarge"></Icon>
+                        <Icon icon="chevron-left" size="xxxlarge"></Icon>
                     </a>
                     <div className="k-scrollview-nav-wrap">
                         <ul className="k-scrollview-nav">

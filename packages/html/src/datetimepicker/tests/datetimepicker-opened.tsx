@@ -22,15 +22,15 @@ root.render(
             <div>
                 <DateTimePicker value="Opened Date" opened />
             </div>
-            <div dir="rtl">
-                <DateTimePicker value="Opened Date" opened />
+            <div>
+                <DateTimePicker value="Opened Date" opened dir="rtl" />
             </div>
 
             <div>
                 <DateTimePicker value="Opened Time" opened tab="time" />
             </div>
-            <div dir="rtl">
-                <DateTimePicker value="Opened Time" opened tab="time" />
+            <div>
+                <DateTimePicker value="Opened Time" opened tab="time" dir="rtl" />
             </div>
 
         </div>

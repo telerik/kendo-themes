@@ -28,6 +28,7 @@ export type KendoDateRangePickerOptions = {
 export type KendoDateRangePickerProps = KendoDateRangePickerOptions & {
     swapButton?: boolean;
     opened?: boolean;
+    dir?: 'ltr' | 'rtl'
 };
 
 export type KendoDateRangePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -44,6 +45,7 @@ export const DateRangePicker = (
         disabled,
         swapButton,
         opened,
+        dir,
         ...other
     } = props;
 
@@ -52,6 +54,7 @@ export const DateRangePicker = (
         <>
             <span
                 {...other}
+                dir={dir}
                 className={classNames(
                     props.className,
                     DATERANGEPICKER_CLASSNAME,
@@ -86,7 +89,7 @@ export const DateRangePicker = (
             </span>
             { opened &&
                 <Popup className="k-daterangepicker-popup">
-                    <MultiViewCalendar />
+                    <MultiViewCalendar dir={dir} />
                 </Popup>
             }
         </>

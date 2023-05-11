@@ -1,5 +1,5 @@
 import { classNames, optionClassNames, Size } from '../utils';
-import { TreeviewGroup } from '../treeview';
+import { TreeviewGroup, TreeviewItem } from '../treeview';
 
 export const TREEVIEW_CLASSNAME = `k-treeview`;
 
@@ -15,6 +15,7 @@ export type KendoTreeviewOptions = {
 
 export type KendoTreeviewProps = KendoTreeviewOptions & {
     children?: JSX.Element | JSX.Element[];
+    dir?: 'ltr' | 'rtl'
 };
 
 export type KendoTreeviewState = { [K in (typeof states)[number]]?: boolean };
@@ -31,12 +32,46 @@ export const Treeview = (
     const {
         size = defaultProps.size,
         children,
+        dir,
         ...other
     } = props;
+
+    const listChildren : JSX.Element[] = [];
+
+    if (children) {
+        if (Array.isArray(children)) {
+            children.map((child, index) => {
+                if ( child.type === TreeviewItem) {
+                    listChildren.push(
+                        <TreeviewItem {...child.props} dir={dir} key={index} />
+                    );
+                }
+
+                if ( child.type === TreeviewGroup) {
+                    listChildren.push(
+                        <TreeviewGroup {...child.props} dir={dir} key={index} />
+                    );
+                }
+            });
+        } else {
+            if ( children.type === TreeviewItem) {
+                listChildren.push(
+                    <TreeviewItem {...children.props} dir={dir} />
+                );
+            }
+
+            if ( children.type === TreeviewGroup) {
+                listChildren.push(
+                    <TreeviewGroup {...children.props} dir={dir} />
+                );
+            }
+        }
+    }
 
     return (
         <div
             {...other}
+            dir={dir}
             className={classNames(
                 props.className,
                 TREEVIEW_CLASSNAME,
@@ -45,8 +80,8 @@ export const Treeview = (
                 })
             )}
         >
-            <TreeviewGroup className="k-treeview-lines">
-                {children}
+            <TreeviewGroup className="k-treeview-lines" dir={dir}>
+                {listChildren}
             </TreeviewGroup>
         </div>
     );

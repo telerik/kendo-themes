@@ -45,6 +45,7 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     showValue?: boolean;
     popup?: JSX.Element;
     opened?: boolean;
+    dir?: 'ltr' | 'rtl'
 };
 
 export type KendoDropdownTreeState = { [K in (typeof states)[number]]?: boolean };
@@ -83,6 +84,7 @@ export const DropdownTree = (
         showValue = defaultProps.showValue,
         popup,
         opened,
+        dir,
         ...other
     } = props;
 
@@ -91,6 +93,7 @@ export const DropdownTree = (
         <>
             <Picker
                 {...other}
+                dir={dir}
                 size={size}
                 rounded={rounded}
                 fillMode={fillMode}
@@ -135,7 +138,7 @@ export const DropdownTree = (
                 />
             </Picker>
             { opened && popup &&
-                <Popup className="k-dropdowntree-popup">
+                <Popup className="k-dropdowntree-popup" dir={dir}>
                     {popup}
                 </Popup>
             }

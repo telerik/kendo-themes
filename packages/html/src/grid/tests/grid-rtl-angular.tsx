@@ -86,7 +86,7 @@ root.render(
                             </div>
                         </div>
                     </div>
-                    <Pager className="k-grid-pager" />
+                    <Pager className="k-grid-pager" dir="rtl" />
                 </div>
                 <div className="k-marquee"><div className="k-marquee-color"></div></div>
             </section>

@@ -24,6 +24,7 @@ export type KendoPagerProps = KendoPagerOptions & {
     pageSizes?: boolean,
     refresh?: boolean,
     info?: boolean,
+    dir?: 'ltr' | 'rtl'
 };
 
 export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
@@ -51,11 +52,13 @@ export const Pager = (
         info = defaultProps.info,
         focus,
         disabled,
+        dir,
         ...other
     } = props;
 
     return (
         <div
+            dir={dir}
             {...other}
             className={classNames(
                 props.className,
@@ -85,7 +88,7 @@ export const Pager = (
                     fillMode="flat"
                     size={size}
                     rounded={null}
-                    icon="caret-alt-to-left"
+                    icon={dir === "rtl" ? "caret-alt-to-right" : "caret-alt-to-left" }
                 >
                 </Button>
                 <Button
@@ -96,7 +99,7 @@ export const Pager = (
                     fillMode="flat"
                     size={size}
                     rounded={null}
-                    icon="caret-alt-left"
+                    icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left" }
                 >
                 </Button>
                 <select
@@ -192,7 +195,7 @@ export const Pager = (
                     fillMode="flat"
                     size={size}
                     rounded={null}
-                    icon="caret-alt-right"
+                    icon={dir === "rtl" ? "caret-alt-left" : "caret-alt-right" }
                 >
                 </Button>
                 <Button
@@ -203,7 +206,7 @@ export const Pager = (
                     fillMode="flat"
                     size={size}
                     rounded={null}
-                    icon="caret-alt-to-right"
+                    icon={dir === "rtl" ? "caret-alt-to-left" : "caret-alt-to-right" }
                 >
                 </Button>
             </div>

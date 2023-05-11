@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
 import { FloatingLabel } from '../../floating-label';
@@ -10,6 +9,7 @@ import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
 import { Upload, UploadFile } from '../../upload';
 import { Form, FormField } from '../../form';
+import { Slider, SliderTick } from '../../slider';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -132,35 +132,19 @@ root.render(
                         dir="rtl"
                         label="Slider:"
                         editor={
-                            <div className="k-slider k-slider-horizontal">
-                                <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
-                                <div className="k-slider-track-wrap">
-                                    <ul className="k-reset k-slider-items">
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">0</span>
-                                        </li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">5</span>
-                                        </li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">10</span>
-                                        </li>
-                                    </ul>
-                                    <div className="k-slider-track">
-                                        <div className="k-slider-selection"></div>
-                                        <a href="#" className="k-draghandle k-draghandle-end"></a>
-                                    </div>
-                                </div>
-                                <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
-                            </div>
+                            <Slider dir="rtl">
+                                <SliderTick label large text="0"/>
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick label large text="5"/>
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick label large text="10"/>
+                            </Slider>
                         }
                     >
                     </FormField>
@@ -298,35 +282,19 @@ root.render(
                         dir="rtl"
                         label="Slider"
                         editor={
-                            <div className="k-slider k-slider-horizontal">
-                                <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
-                                <div className="k-slider-track-wrap">
-                                    <ul className="k-reset k-slider-items">
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">0</span>
-                                        </li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">5</span>
-                                        </li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">10</span>
-                                        </li>
-                                    </ul>
-                                    <div className="k-slider-track">
-                                        <div className="k-slider-selection"></div>
-                                        <a href="#" className="k-draghandle k-draghandle-end"></a>
-                                    </div>
-                                </div>
-                                <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
-                            </div>
+                            <Slider dir="rtl">
+                                <SliderTick label large text="0"/>
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick label large text="5"/>
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick />
+                                <SliderTick label large text="10"/>
+                            </Slider>
                         }
                     >
                     </FormField>

@@ -70,8 +70,8 @@ root.render(
                     )}
                 />
             </div>
-            <div dir="rtl">
-                <MultiSelectTree opened
+            <div>
+                <MultiSelectTree opened dir="rtl"
                     tags={(
                         <>
                             <Chip text="Furniture" actions={ <ChipAction type="remove"/> } />
@@ -94,7 +94,7 @@ root.render(
                                     Check all
                                 </span>
                             </div>
-                            <Treeview>
+                            <Treeview dir="rtl">
                                 <TreeviewItem text="Furniture" showCheckbox checked>
                                     <TreeviewGroup>
                                         <TreeviewItem text="Child 1" showCheckbox />

@@ -51,6 +51,7 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     popup?: JSX.Element;
     showArrowButton?: boolean;
     opened?: boolean;
+    dir?: 'ltr' | 'rtl'
 };
 
 export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boolean };
@@ -79,6 +80,7 @@ export const MultiSelectTree = (
         disabled,
         readonly,
         opened,
+        dir,
         ...other
     } = props;
 
@@ -87,6 +89,7 @@ export const MultiSelectTree = (
         <>
             <Input
                 {...other}
+                dir={dir}
                 size={size}
                 rounded={rounded}
                 fillMode={fillMode}
@@ -134,7 +137,7 @@ export const MultiSelectTree = (
                 )}
             </Input>
             { opened && popup &&
-                <Popup className="k-multiselecttree-popup">
+                <Popup className="k-multiselecttree-popup" dir={dir}>
                     {popup}
                 </Popup>
             }

@@ -20,6 +20,7 @@ export type KendoListBoxProps = KendoListBoxOptions & {
     children?: JSX.Element[];
     actionsPosition?: 'left' | 'right' | 'top' | 'bottom';
     actions?: string[];
+    dir?: 'ltr' | 'rtl'
 };
 
 export type KendoListBoxState = { [K in (typeof states)[number]]?: boolean };
@@ -40,12 +41,14 @@ export const ListBox = (
         children,
         actionsPosition = defaultProps.actionsPosition,
         actions,
+        dir,
         ...other
     } = props;
 
     return (
         <div
             {...other}
+            dir={dir}
             className={classNames(
                 props.className,
                 LISTBOX_CLASSNAME,
@@ -62,9 +65,19 @@ export const ListBox = (
         >
             { actions && (
                 <div className="k-listbox-actions">
-                    {actions.map(action =>
-                        <Button icon={`caret-alt-${action}`} size={size} />
-                    )}
+                    {actions.map(action => {
+
+                        let icon = action;
+                        if (dir === "rtl") {
+                            if ( action === "left") {
+                                icon = "right";
+                            } else if ( action === "right" ) {
+                                icon = "left";
+                            }
+                        }
+
+                        return <Button icon={`caret-alt-${icon}`} size={size} />;
+                    })}
                 </div>
             )}
             <div className={classNames(

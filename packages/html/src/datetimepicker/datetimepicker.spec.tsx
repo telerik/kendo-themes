@@ -44,6 +44,7 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
     placeholder?: string;
     opened?: boolean;
     tab?: 'time' | 'date';
+    dir?: 'ltr' | 'rtl'
 };
 
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -78,6 +79,7 @@ export const DateTimePicker = (
         readonly,
         opened,
         tab = defaultProps.tab,
+        dir,
         ...other
     } = props;
 
@@ -86,6 +88,7 @@ export const DateTimePicker = (
         <>
             <Input
                 {...other}
+                dir={dir}
                 size={size}
                 rounded={rounded}
                 fillMode={fillMode}
@@ -124,8 +127,8 @@ export const DateTimePicker = (
                 />
             </Input>
             { opened &&
-                <Popup className="k-datetimepicker-popup">
-                    <DateTimeSelector tab={tab} />
+                <Popup className="k-datetimepicker-popup" dir={dir}>
+                    <DateTimeSelector tab={tab} dir={dir} />
                 </Popup>
             }
         </>

@@ -36,8 +36,8 @@ root.render(
                 </ListBox>
             </section>
 
-            <section dir="rtl">
-                <ListBox actions={[ 'up', 'down', 'left', 'right' ]}>
+            <section>
+                <ListBox actions={[ 'up', 'down', 'left', 'right' ]} dir="rtl">
                     <ListItem>Item</ListItem>
                     <ListItem hover>Hover</ListItem>
                     <ListItem focus>Focus</ListItem>
@@ -58,8 +58,8 @@ root.render(
                 </ListBox>
             </section>
 
-            <section dir="rtl">
-                <ListBox actionsPosition="right" actions={[ 'up', 'down', 'left', 'right' ]}>
+            <section>
+                <ListBox actionsPosition="right" actions={[ 'up', 'down', 'left', 'right' ]} dir="rtl">
                     <ListItem>Item</ListItem>
                     <ListItem hover>Hover</ListItem>
                     <ListItem focus>Focus</ListItem>
@@ -80,8 +80,8 @@ root.render(
                 </ListBox>
             </section>
 
-            <section dir="rtl">
-                <ListBox actionsPosition="top" actions={[ 'up', 'down', 'right', 'left' ]}>
+            <section>
+                <ListBox actionsPosition="top" actions={[ 'up', 'down', 'right', 'left' ]} dir="rtl">
                     <ListItem>Item</ListItem>
                     <ListItem hover>Hover</ListItem>
                     <ListItem focus>Focus</ListItem>
@@ -102,8 +102,8 @@ root.render(
                 </ListBox>
             </section>
 
-            <section dir="rtl">
-                <ListBox actionsPosition="bottom" actions={[ 'up', 'down', 'right', 'left' ]}>
+            <section>
+                <ListBox actionsPosition="bottom" actions={[ 'up', 'down', 'right', 'left' ]} dir="rtl">
                     <ListItem>Item</ListItem>
                     <ListItem hover>Hover</ListItem>
                     <ListItem focus>Focus</ListItem>

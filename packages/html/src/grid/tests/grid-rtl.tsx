@@ -72,7 +72,7 @@ root.render(
                             </tbody>
                         </table>
                     </div>
-                    <Pager className="k-grid-pager" />
+                    <Pager className="k-grid-pager" dir="rtl" />
                 </div>
             </section>
 
@@ -162,7 +162,7 @@ root.render(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-master-row">
                                     <td className="k-table-td k-hierarchy-cell">
-                                        <Icon icon="caret-alt-right" />
+                                        <Icon icon="caret-alt-left" />
                                     </td>
                                     <td className="k-table-td">2</td>
                                     <td className="k-table-td">Text</td>

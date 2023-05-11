@@ -16,8 +16,8 @@ root.render(
                     <div className="k-toolbar-group">
                         <ButtonGroup className="k-scheduler-navigation">
                             <Button>Today</Button>
-                            <Button icon="caret-alt-left"></Button>
                             <Button icon="caret-alt-right"></Button>
+                            <Button icon="caret-alt-left"></Button>
                         </ButtonGroup>
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                             Monday, June 24, 2013
@@ -57,7 +57,7 @@ root.render(
                                             </tbody>
                                         </table>
                                         <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "454px", right: "1px", top: '0px', height: "25px" }} className="k-event">
-                                            <span className="k-event-actions"><Icon icon="caret-alt-right"></Icon></span>
+                                            <span className="k-event-actions"><Icon icon="caret-alt-left"></Icon></span>
                                             <div><div className="k-event-template">Attending HR Conference</div></div>
                                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon icon="x"></Icon></a></span>
                                             <span className="k-resize-handle k-resize-w"></span>

@@ -153,7 +153,7 @@ root.render(
                             <div className="k-pivotgrid-fields k-pivotgrid-configurator-section">
                                 <strong>Fields</strong>
                                 <div className="k-fields-list-wrapper">
-                                    <Treeview>
+                                    <Treeview dir="rtl">
                                         <TreeviewItem hasChildren showIcon icon="arrows-axes" text="Axis" />
                                         <TreeviewItem hasChildren showIcon icon="sum" text="Sum" />
                                         <TreeviewItem hasChildren showIcon icon="caret-alt-expand" text="KPI" />
