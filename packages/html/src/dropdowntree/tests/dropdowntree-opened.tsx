@@ -49,8 +49,8 @@ root.render(
                     )}
                 />
             </div>
-            <div dir="rtl">
-                <DropdownTree value="Opened" opened
+            <div>
+                <DropdownTree value="Opened" opened dir="rtl"
                     popup={(
                         <>
                             <div className="k-check-all">
@@ -59,7 +59,7 @@ root.render(
                                     Check all
                                 </span>
                             </div>
-                            <Treeview>
+                            <Treeview dir="rtl">
                                 <TreeviewItem text="Root 1" />
                                 <TreeviewItem text="Root 2" expanded>
                                     <TreeviewGroup>

@@ -49,6 +49,7 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
     value?: string;
     placeholder?: string;
     opened?: boolean;
+    dir?: 'ltr' | 'rtl'
 };
 
 export type KendoDatePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -75,6 +76,7 @@ export const DatePicker = (
         disabled,
         readonly,
         opened,
+        dir,
         ...other
     } = props;
 
@@ -83,6 +85,7 @@ export const DatePicker = (
         <>
             <Input
                 {...other}
+                dir={dir}
                 size={size}
                 rounded={rounded}
                 fillMode={fillMode}
@@ -122,7 +125,7 @@ export const DatePicker = (
             </Input>
             { opened &&
                 <Popup className="k-datepicker-popup">
-                    <Calendar />
+                    <Calendar dir={dir} />
                 </Popup>
             }
         </>

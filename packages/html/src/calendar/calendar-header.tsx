@@ -12,6 +12,7 @@ export type KendoCalendarHeaderProps = {
     showToday?: boolean;
     size?: (typeof options.size)[number] | null;
     orientation?: 'vertical' | 'horizontal';
+    dir?: 'ltr' | 'rtl'
 };
 
 const defaultProps = {
@@ -30,8 +31,12 @@ export const CalendarHeader = (
         showToday = defaultProps.showToday,
         orientation = defaultProps.orientation,
         size = defaultProps.size,
+        dir,
         ...other
     } = props;
+
+    const iconPrev = dir === 'rtl' ? 'chevron-right' : 'chevron-left';
+    const iconNext = dir === 'rtl' ? 'chevron-left' : 'chevron-right';
 
     return (
         <div
@@ -46,9 +51,9 @@ export const CalendarHeader = (
             <Button className="k-calendar-title" text={calendarHeaderText} size={size} fillMode="flat"></Button>
             <span className="k-spacer"></span>
             <span className="k-calendar-nav">
-                <Button className="k-calendar-nav-prev" icon="chevron-left" size={size} fillMode="flat"></Button>
+                <Button className="k-calendar-nav-prev" icon={iconPrev} size={size} fillMode="flat"></Button>
                 {showToday && <Button size={size} fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>}
-                <Button className="k-calendar-nav-next" icon="chevron-right" size={size} fillMode="flat"></Button>
+                <Button className="k-calendar-nav-next" icon={iconNext} size={size} fillMode="flat"></Button>
             </span>
         </div>
     );

@@ -325,8 +325,8 @@ root.render(
                             <BreadcrumbLink root icon>
                                 <Icon icon="home" />
                             </BreadcrumbLink>
-                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" icon="chevron-right" />
-                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" icon="chevron-right" />
+                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" icon="chevron-left" />
+                            <Icon className="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" icon="chevron-left" />
                         </BreadcrumbItem>
                         <BreadcrumbItem hidden>
                             <BreadcrumbLink>

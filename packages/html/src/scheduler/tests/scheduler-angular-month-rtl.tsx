@@ -23,8 +23,8 @@ root.render(
                     <div className="k-toolbar-group">
                         <ButtonGroup className="k-scheduler-navigation">
                             <Button>Today</Button>
-                            <Button icon="caret-alt-left"></Button>
                             <Button icon="caret-alt-right"></Button>
+                            <Button icon="caret-alt-left"></Button>
                         </ButtonGroup>
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                             June 2013
@@ -239,7 +239,7 @@ root.render(
                                     <div><div className="k-event-template">Grand Canyon tour</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "325px", right: '0px', top: "220px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon icon="caret-alt-right"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="caret-alt-left"></Icon></span>
                                     <div><div className="k-event-template">Attending HR Conference</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "327px", top: "220px", height: "25px" }} className="k-event">
@@ -259,7 +259,7 @@ root.render(
                                     <div><div className="k-event-template">Bob&apos;s Birthday Party</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: '0px', top: "247px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon icon="caret-alt-right"></Icon></span>
+                                    <span className="k-event-actions"><Icon icon="caret-alt-left"></Icon></span>
                                     <div><div className="k-event-template">Grand Canyon tour</div></div>
                                 </div>
                                 <div style={{ width: "162px", right: "163px", top: "247px", height: "25px" }} className="k-event">

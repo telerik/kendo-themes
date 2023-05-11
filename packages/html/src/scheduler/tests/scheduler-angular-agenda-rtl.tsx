@@ -23,8 +23,8 @@ root.render(
                     <div className="k-toolbar-group">
                         <ButtonGroup className="k-scheduler-navigation">
                             <Button>Today</Button>
-                            <Button icon="caret-alt-left"></Button>
                             <Button icon="caret-alt-right"></Button>
+                            <Button icon="caret-alt-left"></Button>
                         </ButtonGroup>
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                             Sunday, June 23, 2019 - Saturday, June 29, 2019
@@ -71,7 +71,7 @@ root.render(
                                                         <span className="k-scheduler-agendadate">Jun 2013</span>
                                                     </td>
                                                     <td className="k-scheduler-timecolumn">
-                                                        <div><Icon icon="caret-alt-right"></Icon> all day</div>
+                                                        <div><Icon icon="caret-alt-left"></Icon> all day</div>
                                                     </td>
                                                     <td>
                                                         <div className="k-task">
@@ -184,7 +184,7 @@ root.render(
                                                         <span className="k-scheduler-agendadate">Jun 2013</span>
                                                     </td>
                                                     <td className="k-scheduler-timecolumn">
-                                                        <div><Icon icon="caret-alt-right"></Icon> all day</div>
+                                                        <div><Icon icon="caret-alt-left"></Icon> all day</div>
                                                     </td>
                                                     <td>
                                                         <div className="k-task">

@@ -178,7 +178,7 @@ root.render(
                         <div className="k-height-container"><div></div></div>
                     </div>
                 </div>
-                <Pager className="k-grid-pager" mobile="small" />
+                <Pager className="k-grid-pager" mobile="small" dir="rtl" />
             </div>
         </div>
     </>

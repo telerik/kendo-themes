@@ -16,7 +16,7 @@ root.render(
                 <DateRangePicker opened />
             </div>
             <div dir="rtl">
-                <DateRangePicker opened />
+                <DateRangePicker opened dir="rtl" />
             </div>
         </div>
     </>

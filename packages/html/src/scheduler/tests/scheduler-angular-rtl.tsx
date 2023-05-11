@@ -23,8 +23,8 @@ root.render(
                     <div className="k-toolbar-group">
                         <ButtonGroup className="k-scheduler-navigation">
                             <Button>Today</Button>
-                            <Button icon="caret-alt-left"></Button>
                             <Button icon="caret-alt-right"></Button>
+                            <Button icon="caret-alt-left"></Button>
                         </ButtonGroup>
                         <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                             Sunday, June 23, 2019 - Saturday, June 29, 2019

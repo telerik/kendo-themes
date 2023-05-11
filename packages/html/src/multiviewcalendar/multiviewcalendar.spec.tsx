@@ -22,6 +22,7 @@ export type KendoMultiViewCalendarProps = KendoMultiViewCalendarOptions & {
     showWeek?: boolean;
     showOtherMonth?: boolean;
     showCalendarCaption?: boolean;
+    dir?: 'ltr' | 'rtl'
 };
 
 const defaultProps = {
@@ -46,6 +47,7 @@ export const MultiViewCalendar = (
         showWeek,
         showOtherMonth,
         showCalendarCaption,
+        dir,
         ...other
     } = props;
 
@@ -66,6 +68,7 @@ export const MultiViewCalendar = (
             showOtherMonth={showOtherMonth}
             showCalendarCaption={showCalendarCaption}
             selectedRange={true}
+            dir={dir}
         />
     );
 };

@@ -26,8 +26,8 @@ root.render(
                     <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..."/>
                 </Treeview>
             </section>
-            <section className="k-rtl">
-                <Treeview>
+            <section>
+                <Treeview dir="rtl">
                     <TreeviewItem text="Normal" />
                     <TreeviewItem text="Hover" hover />
                     <TreeviewItem text="Focus" focus/>
@@ -62,8 +62,8 @@ root.render(
                     </TreeviewItem>
                 </Treeview>
             </section>
-            <section className="k-rtl">
-                <Treeview>
+            <section>
+                <Treeview dir="rtl">
                     <TreeviewItem text="Root 1" />
                     <TreeviewItem text="Root 2" expanded>
                         <TreeviewGroup>
@@ -117,8 +117,8 @@ root.render(
                     </TreeviewItem>
                 </Treeview>
             </section>
-            <section className="k-rtl">
-                <Treeview>
+            <section>
+                <Treeview dir="rtl">
                     <TreeviewItem text="Root 1" />
                     <TreeviewItem text="Root 2" showIcon icon="folder" expanded>
                         <TreeviewGroup>
@@ -164,8 +164,8 @@ root.render(
                     </TreeviewItem>
                 </Treeview>
             </section>
-            <section className="k-rtl">
-                <Treeview>
+            <section>
+                <Treeview dir="rtl">
                     <TreeviewItem text="Root 1" />
                     <TreeviewItem text="Root 2" showCheckbox expanded checked>
                         <TreeviewGroup>

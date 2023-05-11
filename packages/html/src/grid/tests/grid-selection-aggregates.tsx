@@ -183,7 +183,7 @@ root.render(
                             <span className="k-selection-aggregates-item-value">4</span>
                         </div>
                     </div>
-                    <Pager className="k-grid-pager" />
+                    <Pager className="k-grid-pager" dir="rtl" />
                 </div>
             </section>
 

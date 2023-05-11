@@ -23,6 +23,7 @@ export type KendoCalendarProps = KendoCalendarOptions & {
     showCalendarCaption?: boolean;
     showCalendarFooter?: boolean;
     selectedRange?: boolean;
+    dir?: 'ltr' | 'rtl',
 };
 
 const defaultProps = {
@@ -48,12 +49,14 @@ export const Calendar = (
         showCalendarCaption,
         showCalendarFooter,
         selectedRange,
+        dir,
         ...other
     } = props;
 
     return (
         <div
             {...other}
+            dir={dir}
             className={classNames(
                 props.className,
                 CALENDAR_CLASSNAME,
@@ -69,6 +72,7 @@ export const Calendar = (
                 calendarHeaderText={calendarHeaderText}
                 orientation={orientation}
                 size={size}
+                dir={dir}
             />
 
             <CalendarView
