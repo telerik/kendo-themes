@@ -8,8 +8,16 @@ const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
 );
 
+const styles = `
+    .k-card-image {
+        height: 100px;
+        background: #cccccc;
+    }
+`;
+
 root.render(
     <>
+        <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3 k-rtl">
 
             <Card orientation="vertical">
@@ -41,7 +49,7 @@ root.render(
             </Card>
 
             <Card orientation="horizontal">
-                <CardImage src="http://via.placeholder.com/80x80" />
+                <CardImage />
                 <div className="k-d-flex k-flex-column">
                     <CardHeader title="RTL Horizontal Card" subtitle="Card Subtitle"></CardHeader>
                     <CardBody>
