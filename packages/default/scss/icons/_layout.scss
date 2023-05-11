@@ -60,19 +60,6 @@ $ki-icon-size: $kendo-icon-size;
         cursor: pointer;
     }
 
-    // RTL icons
-    .k-rtl,
-    [dir="rtl"] {
-        .k-i-indent-increase,
-        .k-i-indent-decrease,
-        .k-i-caret-alt-right,
-        .k-i-caret-alt-left,
-        .k-svg-i-caret-alt-right,
-        .k-svg-i-caret-alt-left {
-            transform: scaleX(-1);
-        }
-    }
-
     .k-sprite {
         display: inline-block;
         width: 16px;

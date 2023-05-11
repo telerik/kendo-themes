@@ -71,15 +71,6 @@
         .k-ghost {
             opacity: .5;
         }
-
-        .k-rtl &,
-        &[dir="rtl"],
-        [dir="rtl"] & {
-
-            .k-listbox-actions .k-button-icon {
-                transform: scaleX(-1);
-            }
-        }
     }
 
     .k-item {

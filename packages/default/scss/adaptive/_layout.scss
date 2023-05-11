@@ -460,23 +460,11 @@
         &[dir="rtl"],
         [dir="rtl"] & {
 
-            .k-header-cancel .k-button-icon,
-            .k-listgroup-item .k-select .k-svg-icon,
-            .k-listgroup-item .k-select .k-icon {
-                transform: scaleX( -1 );
-            }
-
             .k-scheduler-mobile {
 
                 .k-scheduler-toolbar {
-
                     > ul > li {
                         border: 0;
-                    }
-
-                    .k-nav-prev,
-                    .k-nav-next {
-                        transform: scaleX(-1);
                     }
                 }
 

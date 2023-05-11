@@ -162,11 +162,6 @@
                 > .k-select {
                     right: auto;
                     left: 0;
-
-                    .k-icon,
-                    .k-svg-icon {
-                        transform: scaleX(-1);
-                    }
                 }
 
             }
@@ -177,11 +172,6 @@
             > .k-select {
                 border-right-width: 1px;
                 border-left-width: 0;
-
-                .k-icon,
-                .k-svg-icon {
-                    transform: scaleX(-1);
-                }
             }
 
         }

@@ -31,19 +31,6 @@
         height: 1em;
     }
 
-    // RTL icons
-    .k-rtl,
-    [dir="rtl"] {
-        .k-i-indent-increase,
-        .k-i-indent-decrease,
-        .k-i-caret-alt-right,
-        .k-i-caret-alt-left,
-        .k-svg-i-caret-alt-right,
-        .k-svg-i-caret-alt-left {
-            transform: scaleX(-1);
-        }
-    }
-
     .k-icon-action {
         padding: var( --kendo-icon-padding, 0 );
         cursor: pointer;
