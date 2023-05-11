@@ -515,17 +515,4 @@
             }
         }
     }
-
-
-    // RTL
-    .k-rtl .k-calendar,
-    [dir="rtl"] .k-calendar,
-    .k-calendar.k-rtl,
-    .k-calendar[dir="rtl"] {
-
-        .k-calendar-nav-prev,
-        .k-calendar-nav-next {
-            transform: scaleX(-1);
-        }
-    }
 }

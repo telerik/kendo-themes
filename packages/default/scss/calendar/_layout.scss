@@ -492,11 +492,6 @@
     .k-calendar.k-rtl,
     .k-calendar[dir="rtl"] {
 
-        .k-calendar-nav-prev,
-        .k-calendar-nav-next {
-            transform: scaleX(-1);
-        }
-
         .k-content.k-scrollable,
         .k-calendar-content.k-scrollable {
             @include hide-scrollbar("left");

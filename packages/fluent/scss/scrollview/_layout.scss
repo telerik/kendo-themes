@@ -191,15 +191,4 @@
             pointer-events: none;
         }
     }
-
-    .k-rtl,
-    [dir="rtl"] {
-        .k-scrollview-prev,
-        .k-scrollview-next {
-            .k-icon,
-            .k-svg-icon {
-                transform: scaleX(-1);
-            }
-        }
-    }
 }

@@ -24,15 +24,6 @@
         *::after {
             box-sizing: border-box;
         }
-
-        .k-rtl &,
-        &[dir="rtl"],
-        [dir="rtl"] & {
-            .k-pager-nav .k-button-icon {
-                transform: scaleX(-1);
-            }
-        }
-
     }
 
 
