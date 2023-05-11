@@ -1,6 +1,6 @@
-export function TextAlignJustifyUtils () {
-  
-  return (
-    <p className='k-text-justify k-w-1/3'>Build feature-rich, modern experiences for Web,Cross-Platform, Mobile and Desktop, faster than ever with Telerik and Kendo UI components.</p>
-  );
+export function TextAlignJustifyUtils() {
+
+    return (
+        <p className="k-text-justify k-w-1/3">Build feature-rich, modern experiences for Web,Cross-Platform, Mobile and Desktop, faster than ever with Telerik and Kendo UI components.</p>
+    );
 }

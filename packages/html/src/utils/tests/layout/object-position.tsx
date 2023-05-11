@@ -5,7 +5,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             {Object.keys(ObjectPosition).map((key) => {
                 const Component = ObjectPosition[key];
-                 return (
+                return (
                     <div key={key}>
                         <span>{key}</span>
                         <section>

@@ -5,7 +5,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             {Object.keys(Translate).map((key) => {
                 const Component = Translate[key];
-                 return (
+                return (
                     <div key={key}>
                         <span>{key}</span>
                         <section>

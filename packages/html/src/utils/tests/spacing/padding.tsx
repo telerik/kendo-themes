@@ -5,7 +5,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             {Object.keys(Padding).map((key) => {
                 const Component = Padding[key];
-                 return (
+                return (
                     <div key={key}>
                         <span>{key}</span>
                         <section>

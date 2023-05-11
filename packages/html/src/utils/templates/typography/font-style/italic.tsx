@@ -1,6 +1,6 @@
-export function FontStyleItalicUtils () {
-  
-  return (
-    <div className="k-font-italic">Lorem Ipsum</div>
-  );
+export function FontStyleItalicUtils() {
+
+    return (
+        <div className="k-font-italic">Lorem Ipsum</div>
+    );
 }

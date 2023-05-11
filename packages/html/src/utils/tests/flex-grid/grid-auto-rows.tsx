@@ -5,7 +5,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             {Object.keys(GridAutoRows).map((key) => {
                 const Component = GridAutoRows[key];
-                 return (
+                return (
                     <div key={key}>
                         <span>{key}</span>
                         <section>

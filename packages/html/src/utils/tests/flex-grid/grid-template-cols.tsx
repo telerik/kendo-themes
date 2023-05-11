@@ -5,7 +5,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             {Object.keys(GridTemplateCols).map((key) => {
                 const Component = GridTemplateCols[key];
-                 return (
+                return (
                     <div key={key}>
                         <span>{key}</span>
                         <section>

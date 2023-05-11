@@ -5,7 +5,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             {Object.keys(BorderRadius).map((key) => {
                 const Component = BorderRadius[key];
-                 return (
+                return (
                     <div key={key}>
                         <span>{key}</span>
                         <section>

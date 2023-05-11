@@ -5,7 +5,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             {Object.keys(TextTransform).map((key) => {
                 const Component = TextTransform[key];
-                 return (
+                return (
                     <div key={key}>
                         <span>{key}</span>
                         <section>

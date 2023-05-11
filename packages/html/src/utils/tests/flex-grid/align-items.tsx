@@ -5,7 +5,7 @@ export default () => (
         <div id="test-area" className="k-d-grid">
             {Object.keys(AlignItems).map((key) => {
                 const Component = AlignItems[key];
-                 return (
+                return (
                     <div key={key}>
                         <span>{key}</span>
                         <section>

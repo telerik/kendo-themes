@@ -1,4 +1,4 @@
-export function WhiteSpaceNowrapUtils () {
+export function WhiteSpaceNowrapUtils() {
     const test = `
         Need to build a new solution from scratch with the Telerik technologies?
         Looking for help to customize and implement a single Telerik component?
@@ -8,7 +8,7 @@ export function WhiteSpaceNowrapUtils () {
       Our highly experienced, results-driven software engineers are proud to have led and contributed to the engineering effort at Telerik.
     `;
 
-  return (
-    <p className='k-white-space-nowrap k-mb-6 k-w-1/3 k-border k-border-solid k-border-secondary'>{test}</p>
-  );
+    return (
+        <p className="k-white-space-nowrap k-mb-6 k-w-1/3 k-border k-border-solid k-border-secondary">{test}</p>
+    );
 }
