@@ -1,6 +1,6 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
-import { classNames, optionClassNames, ThemeColor } from '../utils';
+import { classNames, optionClassNames, ThemeColor } from '../misc';
 
 export const WINDOW_CLASSNAME = `k-window`;
 

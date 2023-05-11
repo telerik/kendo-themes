@@ -1,6 +1,6 @@
 import ActionButtons from '../action-buttons/action-buttons.spec';
 import { Button } from '../button';
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 export const ACTIONSHEETFOOTER_CLASSNAME = `k-actionsheet-footer`;
 

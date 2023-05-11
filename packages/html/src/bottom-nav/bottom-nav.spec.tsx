@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, FillMode, ThemeColor } from '../utils';
+import { classNames, optionClassNames, FillMode, ThemeColor } from '../misc';
 
 export const BOTTOM_NAV_CLASSNAME = 'k-bottom-nav';
 

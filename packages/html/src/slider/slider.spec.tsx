@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 import { Button } from '../button';
 
 const SLIDER_CLASSNAME = 'k-slider';

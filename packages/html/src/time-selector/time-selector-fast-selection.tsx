@@ -1,6 +1,6 @@
 import { ActionButtons } from '../action-buttons';
 import { Button } from '../button';
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 const className = `k-time-fast-selection`;
 

@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States, Size, Roundness, FillMode } from '../utils';
+import { classNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 import { DateInput } from '../dateinput';
 import { FloatingLabel } from '../floating-label';
 import { Button } from '../button';

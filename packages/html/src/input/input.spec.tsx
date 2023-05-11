@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../utils';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 
 export const INPUT_CLASSNAME = `k-input`;
 

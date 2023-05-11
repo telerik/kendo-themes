@@ -1,4 +1,4 @@
-import { classNames, Size } from '../utils';
+import { classNames, Size } from '../misc';
 import { Calendar } from '../calendar';
 
 const MULTIVIEWCALENDAR_CLASSNAME = `k-calendar-range`;

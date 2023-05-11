@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../utils';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode } from '../misc';
 
 export const SIGNATURE_CLASSNAME = `k-signature`;
 

@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils';
+import { classNames, optionClassNames, Size } from '../misc';
 import { Fieldset } from './fieldset';
 
 export const FORM_CLASSNAME = 'k-form';

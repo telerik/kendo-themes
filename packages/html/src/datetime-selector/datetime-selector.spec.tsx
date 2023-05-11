@@ -3,7 +3,7 @@ import { Button } from '../button';
 import { ButtonGroup } from '../button-group';
 import { Calendar } from '../calendar';
 import { TimeSelector, TimeSelectorHeader } from '../time-selector';
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 const DATETIMESELECTOR_CLASSNAME = `k-datetime-wrap`;
 

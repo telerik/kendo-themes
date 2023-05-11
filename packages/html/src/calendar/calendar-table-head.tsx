@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 import { CalendarCell } from '../calendar';
 
 const className = `k-calendar-thead`;

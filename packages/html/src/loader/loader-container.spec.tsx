@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size, ThemeColor } from '../utils';
+import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 import Loader from './loader.spec';
 
 export const LOADERCONTAINER_CLASSNAME = `k-loader-container`;

@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 import { Card, CardBody, CardSubtitle, CardTitle } from '../card';
 import { Avatar } from '../avatar';
 import { Button } from '../button';

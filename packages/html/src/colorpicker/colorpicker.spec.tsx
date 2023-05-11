@@ -1,4 +1,4 @@
-import { classNames, States, Size, Roundness, FillMode } from '../utils';
+import { classNames, States, Size, Roundness, FillMode } from '../misc';
 import {
     InputPrefix,
     InputSuffix,

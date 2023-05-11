@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 import { Button } from '../button';
 import { NumericTextbox } from '../numerictextbox';
 import { Textbox } from '../textbox';

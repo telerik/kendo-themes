@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../utils';
+import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
 export const SWITCH_CLASSNAME = `k-switch`;
 
