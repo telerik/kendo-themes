@@ -160,6 +160,7 @@
         border-style: solid;
         border-radius: var( --kendo-pdf-viewer-search-panel-border-radius, #{$kendo-pdf-viewer-search-panel-border-radius} );
         z-index: 10;
+        cursor: default;
     }
 
     // Alias
