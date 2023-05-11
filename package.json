@@ -72,7 +72,8 @@
     "test-contrast": "node ./scripts/test-contrast.mjs"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs}": "eslint"
+    "*.{js,jsx,ts,tsx,mjs}": "eslint",
+    "*.{css,scss}": "stylelint"
   },
   "husky": {
     "hooks": {
