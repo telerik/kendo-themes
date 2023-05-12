@@ -524,7 +524,8 @@
     }
 
     .k-grid-filter-popup {
-        min-width: 200px;
+        min-width: $kendo-grid-column-menu-width;
+        max-width: $kendo-grid-column-menu-max-width;
     }
 
     // Standalone column menu
@@ -1129,7 +1130,8 @@
 
     // Filter menu
     .k-filter-menu-popup {
-        width: $kendo-grid-column-menu-width;
+        min-width: $kendo-grid-column-menu-width;
+        max-width: $kendo-grid-column-menu-max-width;
     }
     .k-filter-menu {
         box-sizing: border-box;
@@ -1173,7 +1175,8 @@
     .k-grid-filter-popup.k-popup {
 
         .k-filter-menu-container {
-            width: $kendo-grid-column-menu-width;
+            min-width: $kendo-grid-column-menu-width;
+            max-width: $kendo-grid-column-menu-max-width;
         }
     }
 
@@ -1223,13 +1226,13 @@
     // Column menu
     .k-column-menu-popup,
     .k-grid-columnmenu-popup {
-        width: $kendo-grid-column-menu-width;
+        min-width: $kendo-grid-column-menu-width;
         box-sizing: border-box;
 
         &.k-popup {
             padding-block: $kendo-grid-column-menu-popup-padding-y;
             padding-inline: $kendo-grid-column-menu-popup-padding-x;
-            max-width: 100%;
+            max-width: $kendo-grid-column-menu-max-width;
         }
 
         .k-actions {

@@ -450,6 +450,9 @@ $kendo-filter-menu-container-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Default width of the grid column menu.
 /// @group grid
 $kendo-grid-column-menu-width: 230px !default;
+/// Max width of the grid column menu.
+/// @group grid
+$kendo-grid-column-menu-max-width: 320px !default;
 /// Spacing of the grid column menu.
 /// @group grid
 $kendo-grid-column-menu-spacing: map.get( $kendo-spacing, 2 ) !default;
