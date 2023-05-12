@@ -7,7 +7,7 @@ import path from 'path';
 
 const PORT = 18111;
 const HOST = 'localhost';
-const TESTS_PATH = './packages/html/src';
+const TESTS_PATH = './packages/html/dist';
 const OUTPUT_PATH = './tests';
 const COMPONENT_PAGE_EXT = '.html';
 
@@ -47,9 +47,8 @@ Promise.all(chunks.map(async( chunk, index ) => {
 
             await browser.navigateTo(url);
 
-            const fileName = path.basename(filePath);
-            const folderName = path.basename(path.dirname(path.dirname(filePath)));
-            const outputPath = `${OUTPUT_PATH}/${folderName}/${fileName}`;
+            const [ /** index.html */, folderName, /** /tests */, componentName ] = filePath.split('/').reverse();
+            const outputPath = `${OUTPUT_PATH}/${componentName}/${folderName}.html`;
 
             fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
@@ -74,5 +73,4 @@ Promise.all(chunks.map(async( chunk, index ) => {
         await browser.close();
         server.close();
     });
-
 }));
