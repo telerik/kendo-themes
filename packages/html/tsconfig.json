@@ -1,11 +1,10 @@
 {
     "compilerOptions": {
-        "target": "es6",
+        "target": "esnext",
         "moduleResolution": "node",
         "jsx": "react-jsx",
         "isolatedModules": true,
         "esModuleInterop": true,
-        "emitDeclarationOnly": true,
         "declaration": true,
         "strictFunctionTypes": true,
         "noImplicitAny": false,

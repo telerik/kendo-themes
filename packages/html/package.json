@@ -31,10 +31,11 @@
     "access": "public"
   },
   "scripts": {
+    "start": "node ./scripts/start",
     "build": "node ./scripts/build.js && npm run typegen",
     "typegen": "tsc --emitDeclarationOnly --declaration --declarationDir dist/",
     "build:tests": "node ./scripts/build-tests.js",
-    "check-types": "npx tsc src/index.ts --noEmit --emitDeclarationOnly false --jsx react-jsx",
+    "check-types": "npx tsc --noEmit --emitDeclarationOnly false --project tsconfig.json ",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
