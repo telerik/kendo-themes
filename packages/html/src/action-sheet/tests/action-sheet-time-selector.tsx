@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
 import { Button } from '../../button';
 import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     #test-area {
@@ -21,7 +17,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

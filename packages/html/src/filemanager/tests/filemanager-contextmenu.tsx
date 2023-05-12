@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Breadcrumb, BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
@@ -7,9 +6,6 @@ import { Popup } from '../../popup';
 import { Toolbar } from '../../toolbar';
 import { Treeview, TreeviewItem } from '../../treeview';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     #filemanager-context-menu {
@@ -21,7 +17,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">

@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { Treeview, TreeviewItem, TreeviewGroup } from '../../treeview';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 

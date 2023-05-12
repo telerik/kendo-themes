@@ -1,13 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import ReactDOM from 'react-dom/client';
 import { Avatar } from '../../avatar';
 import { Button } from '../../button';
 import { Textbox } from '../../textbox';
 import { Toolbar } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     /* needed for test */
@@ -16,7 +12,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

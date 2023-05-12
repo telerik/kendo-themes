@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 
 export const EDITORCONTENT_CLASSNAME = `k-editor-content`;
 

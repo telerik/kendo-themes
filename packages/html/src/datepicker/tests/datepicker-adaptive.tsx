@@ -1,10 +1,6 @@
-import ReactDOM from 'react-dom/client';
 import { ActionSheet, ActionSheetHeader, ActionSheetFooter } from '../../action-sheet';
 import { Calendar } from '../../calendar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     #test-area > section {
@@ -15,7 +11,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

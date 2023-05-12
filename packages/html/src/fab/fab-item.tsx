@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 
 const className = `k-fab-item`;
 

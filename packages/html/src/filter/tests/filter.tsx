@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { DatePicker } from '../../datepicker';
@@ -7,11 +6,8 @@ import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Toolbar, ToolbarItem } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 

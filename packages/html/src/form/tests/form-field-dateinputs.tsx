@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { DateInput } from '../../dateinput';
 import { DatePicker } from '../../datepicker';
 import { DateRangePicker } from '../../daterangepicker';
@@ -6,9 +5,6 @@ import { DateTimePicker } from '../../datetimepicker';
 import { TimePicker } from '../../timepicker';
 import { Form, FormField } from '../../form';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     section {
@@ -17,7 +13,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

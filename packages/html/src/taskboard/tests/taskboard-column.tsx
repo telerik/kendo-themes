@@ -1,13 +1,9 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Card, CardBody, CardHeader } from '../../card';
 import { Textbox } from '../../textbox';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 

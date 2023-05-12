@@ -1,4 +1,4 @@
-import { classNames, optionClassNames } from '../utils';
+import { classNames, optionClassNames } from '../misc';
 
 const defaultProps = {
     value: '',

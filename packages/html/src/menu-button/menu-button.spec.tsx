@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils';
+import { classNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 export const MENUBUTTON_CLASSNAME = `k-menu-button`;
 

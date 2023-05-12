@@ -1,10 +1,6 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Textbox } from '../../textbox';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     #test-area .k-pdf-viewer {
@@ -12,7 +8,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">

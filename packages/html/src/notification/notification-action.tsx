@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 const className = `k-notification-action`;
 

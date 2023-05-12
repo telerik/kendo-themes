@@ -1,6 +1,6 @@
 import { Button } from '../button';
 import { Icon } from '../icon';
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 
 export const UPLOADDROPZONE_CLASSNAME = `k-upload-dropzone`;
 

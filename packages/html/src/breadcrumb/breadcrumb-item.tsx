@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 export const BREADCRUMBITEM_CLASSNAME = `k-breadcrumb-item`;
 

@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { Chip, ChipList } from '../../chip';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
             <span>Solid chip List</span>

@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 export const CARDDECK_CLASSNAME = `k-card-deck`;
 

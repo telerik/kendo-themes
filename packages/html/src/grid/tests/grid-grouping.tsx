@@ -1,13 +1,9 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
 import { Chip, ChipList, ChipAction } from '../../chip';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-grouping-header .k-grouping-dropclue {
@@ -18,7 +14,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

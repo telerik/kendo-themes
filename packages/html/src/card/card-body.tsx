@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 import { CardSubtitle } from './card-subtitle';
 import { CardTitle } from './card-title';
 

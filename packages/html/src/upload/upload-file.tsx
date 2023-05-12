@@ -1,7 +1,7 @@
 import { Button } from '../button';
 import { Icon } from '../icon';
 import { ProgressBar } from '../progressbar';
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 import { UploadFileInfo } from './upload-file-info';
 
 export const UPLOADFILE_CLASSNAME = `k-file`;

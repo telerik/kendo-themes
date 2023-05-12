@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 
 export const FLOATINGLABEL_CLASSNAME = `k-floating-label-container`;
 

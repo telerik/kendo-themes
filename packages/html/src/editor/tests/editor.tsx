@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { ColorPicker } from '../../colorpicker';
@@ -8,9 +7,6 @@ import { EditorContent } from '../editor-content';
 import { EditorToolbar } from '../editor-toolbar';
 import { ToolbarItem } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-editor .k-dialog-wrapper {
@@ -22,7 +18,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

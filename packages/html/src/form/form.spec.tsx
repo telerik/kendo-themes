@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils';
+import { classNames, optionClassNames, Size } from '../misc';
 import { Fieldset } from './fieldset';
 import { FormField } from './form-field';
 

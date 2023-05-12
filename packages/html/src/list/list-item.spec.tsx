@@ -1,6 +1,6 @@
 import { Checkbox } from '../checkbox';
 import { Icon } from '../icon';
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 
 export const LISTITEM_CLASSNAME = `k-list-item`;
 

@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 import { Icon } from '../icon';
 
 const COLOR_CONTRAST_CLASSNAME = 'k-colorgradient-color-contrast';

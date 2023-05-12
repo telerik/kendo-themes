@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 import { Slider } from '../slider';
 import { ColorInput } from './color-input';
 import { ColorContrast } from './color-contrast';

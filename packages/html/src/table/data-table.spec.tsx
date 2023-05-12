@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils';
+import { classNames, optionClassNames, Size } from '../misc';
 
 export const DATATABLE_CLASSNAME = `k-data-table`;
 

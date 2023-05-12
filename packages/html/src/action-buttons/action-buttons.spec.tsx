@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 export const ACTIONBUTTONS_CLASSNAME = `k-actions`;
 

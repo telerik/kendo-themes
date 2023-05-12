@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
@@ -9,9 +8,6 @@ import { Searchbox } from '../../searchbox';
 import { Textbox } from '../../textbox';
 import { Treeview, TreeviewItem, TreeviewGroup } from '../../treeview';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-pivotgrid-configurator-panel { position: static; height: 750px; }
@@ -22,7 +18,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
