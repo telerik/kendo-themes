@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction } from '../../chip';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-6">
             <span><small>state / themeColor</small></span>

@@ -1,8 +1,8 @@
 /* eslint-disable no-nested-ternary */
 import { Checkbox } from '../checkbox';
 import { Icon } from '../icon';
-import { classNames, stateClassNames, States } from '../utils';
 import { TreeviewGroup } from './treeview-group';
+import { classNames, stateClassNames, States } from '../misc';
 import TreeviewLeaf from './treeview-leaf';
 
 export const TREEVIEWITEM_CLASSNAME = `k-treeview-item`;

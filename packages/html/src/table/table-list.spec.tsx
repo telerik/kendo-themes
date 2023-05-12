@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils';
+import { classNames, optionClassNames, Size } from '../misc';
 
 export const TABLELIST_CLASSNAME = `k-table-list`;
 

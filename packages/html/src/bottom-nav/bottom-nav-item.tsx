@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 import { Icon } from '../icon';
 
 const BOTTOM_NAV_ITEM_CLASSNAME = 'k-bottom-nav-item';

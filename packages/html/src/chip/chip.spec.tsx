@@ -1,6 +1,6 @@
 import { Icon } from '../icon';
 import { Avatar } from '../avatar';
-import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 export const CHIP_CLASSNAME = `k-chip`;
 

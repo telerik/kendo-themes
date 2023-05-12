@@ -1,11 +1,7 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
 import { ProgressBar } from '../../progressbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     #test-area hr {
@@ -20,10 +16,10 @@ const style = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid k-grid-cols-4 k-bg-gray-100">
 
             <span>Indicator</span>
             <span>Indicator + label</span>

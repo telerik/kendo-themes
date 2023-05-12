@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, Size } from '../utils';
+import { classNames, optionClassNames, Size } from '../misc';
 import { CalendarView, CalendarHeader, CalendarFooter } from '.';
 
 const CALENDAR_CLASSNAME = `k-calendar`;

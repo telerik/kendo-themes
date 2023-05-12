@@ -1,14 +1,10 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
 import { Toolbar } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Edit Row</h3>

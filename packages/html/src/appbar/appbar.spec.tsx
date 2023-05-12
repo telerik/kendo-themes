@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, ThemeColor } from '../utils';
+import { classNames, optionClassNames, ThemeColor } from '../misc';
 
 export const APPBAR_CLASSNAME = `k-appbar`;
 

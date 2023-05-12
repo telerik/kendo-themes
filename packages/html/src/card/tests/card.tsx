@@ -1,12 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import ReactDOM from 'react-dom/client';
 import { Card, CardHeader, CardBody, CardImage } from '../../card';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-card-image {
@@ -15,7 +11,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">

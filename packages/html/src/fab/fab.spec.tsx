@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 export const FLOATINGACTIONBUTTON_CLASSNAME = `k-fab`;
 

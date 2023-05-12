@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 
 export const CARDTITLE_CLASSNAME = `k-card-title`;
 

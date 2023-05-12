@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../utils';
+import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
 
 export const SPLITBUTTON_CLASSNAME = `k-split-button`;
 

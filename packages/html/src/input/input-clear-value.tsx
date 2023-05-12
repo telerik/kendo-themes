@@ -1,5 +1,5 @@
 import { Icon } from '../icon';
-import { classNames, States } from '../utils';
+import { classNames, States } from '../misc';
 
 const className = `k-clear-value`;
 

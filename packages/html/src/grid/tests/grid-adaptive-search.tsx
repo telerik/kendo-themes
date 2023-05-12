@@ -1,13 +1,9 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Searchbox } from '../../searchbox';
 import { Toolbar } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <div className="k-pane-wrapper k-widget" style={{ height: "100px" }}>

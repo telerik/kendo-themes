@@ -1,9 +1,5 @@
-import ReactDOM from 'react-dom/client';
 import { Layout } from '../../layout';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const LayoutStyle = {
     height: "300px"
@@ -18,7 +14,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

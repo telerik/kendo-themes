@@ -1,12 +1,8 @@
-import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 import { Pager } from '../../pager';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <span>jQuery grid</span>

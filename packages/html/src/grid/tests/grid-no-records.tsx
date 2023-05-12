@@ -1,10 +1,6 @@
-import ReactDOM from 'react-dom/client';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area">
             <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "350px" }}>

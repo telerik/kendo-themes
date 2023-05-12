@@ -1,5 +1,5 @@
-import { classNames } from '../utils';
 import TreeviewItem from './treeview-item.spec';
+import { classNames } from '../misc';
 
 const className = `k-treeview-group`;
 

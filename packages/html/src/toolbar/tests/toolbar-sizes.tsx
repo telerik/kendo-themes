@@ -1,15 +1,11 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ColorPicker } from '../../colorpicker';
 import { Switch } from '../../switch';
 import { ButtonGroup } from '../../button-group';
 import { Toolbar, ToolbarItem, ToolbarSeparator } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 

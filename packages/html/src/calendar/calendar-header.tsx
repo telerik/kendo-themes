@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames, Size } from '../utils';
+import { classNames, Size } from '../misc';
 
 const className = `k-calendar-header`;
 

@@ -1,10 +1,6 @@
-import ReactDOM from 'react-dom/client';
 import { MenuItem, MenuList } from '../../menu';
 import { Popup } from '../../popup';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .wrap,
@@ -20,7 +16,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">

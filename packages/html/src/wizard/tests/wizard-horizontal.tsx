@@ -1,12 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 import { Button } from '../../button';
 import { ProgressBar } from '../../progressbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     section {
@@ -34,7 +30,7 @@ const stepListStyle = {
 };
 
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid">
