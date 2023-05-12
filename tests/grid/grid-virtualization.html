@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Grid with Virtualization</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span class="col-2">Grid with Virtualization</span>
+        <section class="col-2">
+            <div class="k-grid k-grid-md k-grid-virtual" style="height: 220px; width: 500px;">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table class="k-grid-header-table k-table k-table-md">
+                            <colgroup>
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                            </colgroup>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 1</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 2</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 3</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 4</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 5</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 6</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 7</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 8</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 9</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 10</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-container">
+                    <div class="k-grid-content k-virtual-scroller">
+                        <div class="k-virtual-scroller-wrap">
+                            <div class="k-virtual-scroller-content" style="transform: translateY(-600px);">
+                                <table data-role="grid" class="k-grid-table k-table k-table-md" style="height: auto;">
+                                    <colgroup>
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row" style="height: 60px;">
+                                            <td class="k-table-td">Row: 1, Col: 1</td>
+                                            <td class="k-table-td">Row: 1, Col: 2</td>
+                                            <td class="k-table-td">Row: 1, Col: 3</td>
+                                            <td class="k-table-td">Row: 1, Col: 4</td>
+                                            <td class="k-table-td">Row: 1, Col: 5</td>
+                                            <td class="k-table-td">Row: 1, Col: 6</td>
+                                            <td class="k-table-td">Row: 1, Col: 7</td>
+                                            <td class="k-table-td">Row: 1, Col: 8</td>
+                                            <td class="k-table-td">Row: 1, Col: 9</td>
+                                            <td class="k-table-td">Row: 1, Col: 10</td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td">Row: 2, Col: 1</td>
+                                            <td class="k-table-td">Row: 2, Col: 2</td>
+                                            <td class="k-table-td">Row: 2, Col: 3</td>
+                                            <td class="k-table-td">Row: 2, Col: 4</td>
+                                            <td class="k-table-td">Row: 2, Col: 5</td>
+                                            <td class="k-table-td">Row: 2, Col: 6</td>
+                                            <td class="k-table-td">Row: 2, Col: 7</td>
+                                            <td class="k-table-td">Row: 2, Col: 8</td>
+                                            <td class="k-table-td">Row: 2, Col: 9</td>
+                                            <td class="k-table-td">Row: 2, Col: 10</td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row" style="height: 60px;">
+                                            <td class="k-table-td">Row: 3, Col: 1</td>
+                                            <td class="k-table-td">Row: 3, Col: 2</td>
+                                            <td class="k-table-td">Row: 3, Col: 3</td>
+                                            <td class="k-table-td">Row: 3, Col: 4</td>
+                                            <td class="k-table-td">Row: 3, Col: 5</td>
+                                            <td class="k-table-td">Row: 3, Col: 6</td>
+                                            <td class="k-table-td">Row: 3, Col: 7</td>
+                                            <td class="k-table-td">Row: 3, Col: 8</td>
+                                            <td class="k-table-td">Row: 3, Col: 9</td>
+                                            <td class="k-table-td">Row: 3, Col: 10</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-virtual-scroller-size" style="height: 30000px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <span class="col-2">Grid with Virtualization RTL</span>
+        <section class="col-2">
+            <div class="k-grid k-grid-md k-grid-virtual" dir="rtl" style="height: 220px; width: 500px;">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table class="k-grid-header-table k-table k-table-md">
+                            <colgroup>
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                                <col style="width: 110px;">
+                            </colgroup>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 1</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 2</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 3</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 4</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 5</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 6</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 7</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 8</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 9</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                    <th class="k-header k-touch-action-none k-table-th ">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Field 10</span>
+                                            </span>
+                                        </span>
+                                        <span class="k-column-resizer k-touch-action-none"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-container">
+                    <div class="k-grid-content k-virtual-scroller">
+                        <div class="k-virtual-scroller-wrap">
+                            <div class="k-virtual-scroller-content" style="transform: translateY(-600px);">
+                                <table data-role="grid" class="k-grid-table k-table k-table-md" style="height: auto;">
+                                    <colgroup>
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                        <col style="width: 110px;">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody">
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row " style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                            <td class="k-table-td ">
+                                                <span class="k-placeholder-line"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row" style="height: 60px;">
+                                            <td class="k-table-td">Row: 1, Col: 1</td>
+                                            <td class="k-table-td">Row: 1, Col: 2</td>
+                                            <td class="k-table-td">Row: 1, Col: 3</td>
+                                            <td class="k-table-td">Row: 1, Col: 4</td>
+                                            <td class="k-table-td">Row: 1, Col: 5</td>
+                                            <td class="k-table-td">Row: 1, Col: 6</td>
+                                            <td class="k-table-td">Row: 1, Col: 7</td>
+                                            <td class="k-table-td">Row: 1, Col: 8</td>
+                                            <td class="k-table-td">Row: 1, Col: 9</td>
+                                            <td class="k-table-td">Row: 1, Col: 10</td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row k-alt k-table-alt-row" style="height: 60px;">
+                                            <td class="k-table-td">Row: 2, Col: 1</td>
+                                            <td class="k-table-td">Row: 2, Col: 2</td>
+                                            <td class="k-table-td">Row: 2, Col: 3</td>
+                                            <td class="k-table-td">Row: 2, Col: 4</td>
+                                            <td class="k-table-td">Row: 2, Col: 5</td>
+                                            <td class="k-table-td">Row: 2, Col: 6</td>
+                                            <td class="k-table-td">Row: 2, Col: 7</td>
+                                            <td class="k-table-td">Row: 2, Col: 8</td>
+                                            <td class="k-table-td">Row: 2, Col: 9</td>
+                                            <td class="k-table-td">Row: 2, Col: 10</td>
+                                        </tr>
+                                        <tr class="k-master-row k-table-row" style="height: 60px;">
+                                            <td class="k-table-td">Row: 3, Col: 1</td>
+                                            <td class="k-table-td">Row: 3, Col: 2</td>
+                                            <td class="k-table-td">Row: 3, Col: 3</td>
+                                            <td class="k-table-td">Row: 3, Col: 4</td>
+                                            <td class="k-table-td">Row: 3, Col: 5</td>
+                                            <td class="k-table-td">Row: 3, Col: 6</td>
+                                            <td class="k-table-td">Row: 3, Col: 7</td>
+                                            <td class="k-table-td">Row: 3, Col: 8</td>
+                                            <td class="k-table-td">Row: 3, Col: 9</td>
+                                            <td class="k-table-td">Row: 3, Col: 10</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-virtual-scroller-size" style="height: 30000px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
