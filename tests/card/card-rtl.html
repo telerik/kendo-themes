@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
 <head>
     <title>Card RTL</title>
     <meta charset="utf-8">
@@ -8,6 +8,13 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        .k-card-image {
+            height: 100px;
+            background: #cccccc;
+        }
+
+    </style>
     <div id="test-area" class="k-d-grid k-grid-cols-3 k-rtl">
         <div class="k-card k-card-vertical">
             <div class="k-card-body">
@@ -47,7 +54,7 @@
             </div>
         </div>
         <div class="k-card k-card-horizontal">
-            <img class="k-card-image" src="http://via.placeholder.com/80x80">
+            <span class="k-card-image"></span>
             <div class="k-d-flex k-flex-column">
                 <div class="k-card-header">
                     <div class="k-card-title">RTL Horizontal Card</div>
