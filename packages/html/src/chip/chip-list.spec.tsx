@@ -5,7 +5,7 @@ export const CHIPLIST_CLASSNAME = `k-chip-list`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 export type KendoChipListOptions = {
@@ -13,7 +13,7 @@ export type KendoChipListOptions = {
 };
 
 const defaultProps = {
-    size: Size.medium,
+    size: Size.medium
 };
 
 export const ChipList = (

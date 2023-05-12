@@ -22,7 +22,7 @@ export type KendoSpinButtonProps = KendoSpinButtonOptions & {
 
 const defaultProps = {
     size: Size.medium,
-    fillMode: FillMode.solid,
+    fillMode: FillMode.solid
 };
 
 export const SpinButton = (

@@ -9,11 +9,11 @@ const states = [
     States.invalid,
     States.required,
     States.disabled,
-    States.checked,
+    States.checked
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 export type RadioButtonProps = RadioButtonOptions & {
@@ -27,7 +27,7 @@ export type RadioButtonOptions = {
 };
 
 const defaultProps = {
-    size: Size.medium,
+    size: Size.medium
 };
 
 export const RadioButton = (

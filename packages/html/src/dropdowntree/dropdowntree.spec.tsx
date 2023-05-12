@@ -26,7 +26,7 @@ const states = [
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 export type KendoDropdownTreeOptions = {
@@ -45,7 +45,7 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     showValue?: boolean;
     popup?: JSX.Element;
     opened?: boolean;
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 export type KendoDropdownTreeState = { [K in (typeof states)[number]]?: boolean };
@@ -55,7 +55,7 @@ const defaultProps = {
     arrowIconName: 'caret-alt-down',
     size: Size.medium,
     rounded: Roundness.medium,
-    fillMode: FillMode.solid,
+    fillMode: FillMode.solid
 };
 
 export const DropdownTree = (

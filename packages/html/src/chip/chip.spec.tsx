@@ -21,8 +21,8 @@ const options = {
         ThemeColor.success,
         ThemeColor.warning,
         ThemeColor.error,
-        ThemeColor.info,
-    ],
+        ThemeColor.info
+    ]
 };
 
 export type KendoChipOptions = {
@@ -45,7 +45,7 @@ const defaultProps = {
     size: Size.medium,
     rounded: Roundness.medium,
     fillMode: FillMode.solid,
-    themeColor: ThemeColor.base,
+    themeColor: ThemeColor.base
 };
 
 export const Chip = (

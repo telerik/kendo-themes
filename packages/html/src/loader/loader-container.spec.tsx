@@ -31,7 +31,7 @@ export type KendoLoaderContainerProps = KendoLoaderContainerOptions & {
     loaderType?: 'pulsing' | 'infinite-spinner' | 'converging-spinner';
     position?: 'top' | 'end' | 'start';
     overlay?: 'dark' | 'light';
-    panel?: boolean
+    panel?: boolean;
 };
 
 const defaultProps = {

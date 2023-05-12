@@ -15,7 +15,7 @@ const states = [
 const options = {};
 
 export type KendoColorGradientProps = {
-    mode: 'rgba' | 'rgb' | 'hsva' | 'hsv' | 'hex'
+    mode: 'rgba' | 'rgb' | 'hsva' | 'hsv' | 'hex';
     dir?: 'ltr' | 'rtl';
     contrast?: boolean;
     hoverHandle?: boolean;

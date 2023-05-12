@@ -35,7 +35,7 @@ const defaultProps = {
     fillMode: FillMode.solid,
     themeColor: ThemeColor.primary,
     flow: 'horizontal',
-    border: false,
+    border: false
 };
 
 export const BottomNav = (

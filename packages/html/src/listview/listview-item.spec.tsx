@@ -4,7 +4,7 @@ export const LISTVIEWITEM_CLASSNAME = `k-listview-item`;
 
 const states = [
     States.focus,
-    States.selected,
+    States.selected
 ];
 
 const options = {};
@@ -32,7 +32,7 @@ export const ListViewItem = (
                 stateClassNames(LISTVIEWITEM_CLASSNAME, {
                     focus,
                     selected,
-                }),
+                })
             )}>
             {props.children}
         </div>

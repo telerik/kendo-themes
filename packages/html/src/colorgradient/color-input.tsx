@@ -10,7 +10,7 @@ const states = [];
 const options = {};
 
 export type KendoColorInputOptions = {
-    mode: 'rgba' | 'rgb' | 'hsva' | 'hsv' | 'hex'
+    mode: 'rgba' | 'rgb' | 'hsva' | 'hsv' | 'hex';
 };
 
 const defaultProps = {

@@ -7,11 +7,11 @@ const states = [];
 const options = {};
 
 export type KendoSliderTickProps = {
-    style?: React.CSSProperties,
-    label?: boolean,
-    orientation?: null | 'horizontal' | 'vertical',
-    large?: boolean,
-    text?: string
+    style?: React.CSSProperties;
+    label?: boolean;
+    orientation?: null | 'horizontal' | 'vertical';
+    large?: boolean;
+    text?: string;
 };
 
 const defaultProps = {

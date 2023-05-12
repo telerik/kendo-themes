@@ -6,7 +6,7 @@ const MULTIVIEWCALENDAR_CLASSNAME = `k-calendar-range`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 export type KendoMultiViewCalendarOptions = {
@@ -22,7 +22,7 @@ export type KendoMultiViewCalendarProps = KendoMultiViewCalendarOptions & {
     showWeek?: boolean;
     showOtherMonth?: boolean;
     showCalendarCaption?: boolean;
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 const defaultProps = {
@@ -30,7 +30,7 @@ const defaultProps = {
     calendarHeaderText: 'October 2021 - November 2021',
     viewsCount: 2,
     orientation: 'horizontal',
-    calendarView: 'month',
+    calendarView: 'month'
 } as const;
 
 export const MultiViewCalendar = (

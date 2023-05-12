@@ -28,7 +28,7 @@ const states = [
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 const defaultProps = {
@@ -49,7 +49,7 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
     value?: string;
     placeholder?: string;
     opened?: boolean;
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 export type KendoDatePickerState = { [K in (typeof states)[number]]?: boolean };

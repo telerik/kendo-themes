@@ -16,7 +16,7 @@ const options = {
         ThemeColor.error,
         ThemeColor.info,
         ThemeColor.light,
-        ThemeColor.dark,
+        ThemeColor.dark
     ],
 };
 

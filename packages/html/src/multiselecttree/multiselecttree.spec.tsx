@@ -27,7 +27,7 @@ const states = [
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 const defaultProps = {
@@ -51,7 +51,7 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     popup?: JSX.Element;
     showArrowButton?: boolean;
     opened?: boolean;
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boolean };

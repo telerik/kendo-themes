@@ -21,7 +21,7 @@ export type KendoButtonGroupProps = KendoButtonGroupOptions & {
 export type KendoButtonGroupState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    fillMode: FillMode.solid,
+    fillMode: FillMode.solid
 };
 
 export const ButtonGroup = (

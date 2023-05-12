@@ -16,7 +16,7 @@ export type KendoCalendarViewProps = {
 const defaultProps = {
     viewsCount: 1,
     orientation: 'horizontal',
-    calendarView: 'month',
+    calendarView: 'month'
 } as const;
 
 export const CalendarView = (

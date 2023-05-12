@@ -12,8 +12,8 @@ const states = [];
 const options = {};
 
 export type KendoDateTimeSelectorProps = {
-    tab?: 'time' | 'date',
-    dir?: 'ltr' | 'rtl'
+    tab?: 'time' | 'date';
+    dir?: 'ltr' | 'rtl';
 };
 
 const defaultProps = {

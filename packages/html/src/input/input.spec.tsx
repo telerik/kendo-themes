@@ -16,7 +16,7 @@ export const states = [
 export const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 export type InputState = { [K in (typeof states)[number]]?: boolean };
@@ -29,7 +29,7 @@ export type InputOptions = {
 export const defaultProps = {
     size: Size.medium,
     rounded: Size.medium,
-    fillMode: FillMode.solid,
+    fillMode: FillMode.solid
 };
 
 export const Input = (

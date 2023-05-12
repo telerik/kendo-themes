@@ -11,7 +11,7 @@ const states = [
     States.hover,
     States.focus,
     States.selected,
-    States.disabled,
+    States.disabled
 ];
 
 const options = {};
@@ -28,7 +28,7 @@ export type KendoTreeviewItemProps = {
     icon?: string;
     showCheckbox?: boolean;
     checked?: boolean;
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 export type KendoTreeviewItemState = { [K in (typeof states)[number]]?: boolean };

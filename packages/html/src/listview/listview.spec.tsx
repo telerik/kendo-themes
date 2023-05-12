@@ -4,7 +4,7 @@ import { classNames, States } from '../utils';
 export const LISTVIEW_CLASSNAME = `k-listview`;
 
 const states = [
-    States.loading,
+    States.loading
 ];
 
 const options = {};

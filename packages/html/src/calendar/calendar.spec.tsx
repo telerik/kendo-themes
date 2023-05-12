@@ -23,7 +23,7 @@ export type KendoCalendarProps = KendoCalendarOptions & {
     showCalendarCaption?: boolean;
     showCalendarFooter?: boolean;
     selectedRange?: boolean;
-    dir?: 'ltr' | 'rtl',
+    dir?: 'ltr' | 'rtl';
 };
 
 const defaultProps = {

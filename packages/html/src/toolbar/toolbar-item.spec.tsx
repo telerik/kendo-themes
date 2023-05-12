@@ -3,7 +3,7 @@ import { classNames, stateClassNames, States } from '../utils';
 export const TOOLBARITEM_CLASSNAME = `k-toolbar-item`;
 
 const states = [
-    States.focus,
+    States.focus
 ];
 
 const options = {};

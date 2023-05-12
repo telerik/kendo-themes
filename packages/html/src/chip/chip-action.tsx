@@ -5,11 +5,11 @@ export const CHIPACTION_CLASSNAME = `k-chip-action`;
 
 export enum chipActionType {
     REMOVE = 'remove',
-    MORE = 'more',
+    MORE = 'more'
 }
 
 export type KendoChipActionProps = {
-    type?: chipActionType | string
+    type?: chipActionType | string;
 };
 
 export const ChipAction = (

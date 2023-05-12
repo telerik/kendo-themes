@@ -3,7 +3,7 @@ import { classNames, stateClassNames, States } from '../utils';
 export const EDITORCONTENT_CLASSNAME = `k-editor-content`;
 
 const states = [
-    States.focus,
+    States.focus
 ];
 
 export type KendoEditorContentState = { [K in (typeof states)[number]]?: boolean };

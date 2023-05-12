@@ -5,7 +5,7 @@ export const TABLELIST_CLASSNAME = `k-table-list`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 const defaultProps = {};

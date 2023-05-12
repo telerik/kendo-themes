@@ -28,7 +28,7 @@ export type KendoToolbarProps = KendoToolbarOptions & {
 export type KendoToolbarState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    size: Size.medium,
+    size: Size.medium
 };
 
 export const Toolbar = (

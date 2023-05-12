@@ -5,7 +5,7 @@ import { classNames, stateClassNames, States } from '../utils';
 export const UPLOADDROPZONE_CLASSNAME = `k-upload-dropzone`;
 
 const states = [
-    States.hover,
+    States.hover
 ];
 
 export type KendoUploadDropzoneProps = {
