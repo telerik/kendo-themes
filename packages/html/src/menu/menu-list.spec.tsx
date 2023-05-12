@@ -1,4 +1,5 @@
 import { classNames, optionClassNames, Size } from '../utils';
+import MenuItem from './menu-item.spec';
 
 export const MENULIST_CLASSNAME = `k-menu-group`;
 
@@ -9,11 +10,14 @@ const options = {
 };
 
 export type KendoMenuListOptions = {
-  size?: (typeof options.size)[number] | null;
+    children?: JSX.Element | JSX.Element[];
+    size?: (typeof options.size)[number] | null;
+    dir?: string;
 };
 
 const defaultProps = {
-    size: Size.medium
+    size: Size.medium,
+    dir: 'ltr'
 };
 
 export const MenuList = (
@@ -21,10 +25,27 @@ export const MenuList = (
         React.HTMLAttributes<HTMLUListElement>
 ) => {
     const {
+        children,
         size = defaultProps.size,
+        dir = defaultProps.dir,
         ...other
     } = props;
 
+    const listChildren : JSX.Element[] = [];
+
+    if (children) {
+        if (Array.isArray(children)) {
+            children.map((child, index) => {
+                if ( child.type === MenuItem) {
+                    listChildren.push(
+                        <MenuItem {...child.props} dir={dir} key={index} />
+                    );
+                } else {
+                    listChildren.push(child);
+                }
+            });
+        }
+    }
 
     return (
         <ul
@@ -36,7 +57,7 @@ export const MenuList = (
                     size,
                 })
             )}>
-            {props.children}
+            {listChildren}
         </ul>
     );
 };

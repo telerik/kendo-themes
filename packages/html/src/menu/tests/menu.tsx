@@ -132,7 +132,7 @@ root.render(
                         </span>
                         <div className="k-animation-container k-animation-container-fixed k-animation-container-shown">
                             <Popup className="k-menu-popup">
-                                <MenuList>
+                                <MenuList dir="rtl">
                                     <MenuItem text="Disabled" disabled></MenuItem>
                                     <MenuItem text="Normal"></MenuItem>
                                     <MenuItem text="Hover" hover showArrow></MenuItem>
