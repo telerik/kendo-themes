@@ -13,7 +13,7 @@ export type KendoMenuListOptions = {
 };
 
 const defaultProps = {
-    size: Size.medium,
+    size: Size.medium
 };
 
 export const MenuList = (

@@ -8,7 +8,7 @@ const states = [
     States.hover,
     States.focus,
     States.selected,
-    States.disabled,
+    States.disabled
 ];
 
 const options = {};

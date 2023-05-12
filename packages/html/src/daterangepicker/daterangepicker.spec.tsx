@@ -14,7 +14,7 @@ const states = [
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 const defaultProps = {};
@@ -28,7 +28,7 @@ export type KendoDateRangePickerOptions = {
 export type KendoDateRangePickerProps = KendoDateRangePickerOptions & {
     swapButton?: boolean;
     opened?: boolean;
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 export type KendoDateRangePickerState = { [K in (typeof states)[number]]?: boolean };

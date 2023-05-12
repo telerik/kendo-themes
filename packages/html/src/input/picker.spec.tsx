@@ -16,7 +16,7 @@ export const pickerStates = [
 export const pickerOptions = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 
@@ -31,7 +31,7 @@ export type PickerOptions = {
 const defaultProps = {
     size: Size.medium,
     rounded: Roundness.medium,
-    fillMode: FillMode.solid,
+    fillMode: FillMode.solid
 };
 
 export const Picker = (

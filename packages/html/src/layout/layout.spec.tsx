@@ -10,7 +10,7 @@ export type KendoLayoutProps = {
     alignItems?: null | 'start' | 'center' | 'end' | 'stretch';
     justifyContent?: null | 'start' | 'center' | 'end' | 'stretch';
     justifyItems?: null | 'start' | 'center' | 'end' | 'stretch';
-    wrap?: boolean
+    wrap?: boolean;
 };
 
 const defaultProps = {
@@ -19,7 +19,7 @@ const defaultProps = {
     alignItems: null,
     justifyContent: null,
     justifyItems: null,
-    wrap: false,
+    wrap: false
 };
 
 export const Layout = (

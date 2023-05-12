@@ -10,7 +10,7 @@ const options = {
     themeColor: [
         ThemeColor.primary,
         ThemeColor.light,
-        ThemeColor.dark,
+        ThemeColor.dark
     ],
 };
 
@@ -24,7 +24,7 @@ export type KendoDialogProps = KendoDialogOptions & {
     title?: string;
     actions?: string[];
     actionButtons?: JSX.Element;
-    actionButtonsAlign?: "start" | "end" | "center" | "stretched"
+    actionButtonsAlign?: "start" | "end" | "center" | "stretched";
 };
 
 export const Dialog = (

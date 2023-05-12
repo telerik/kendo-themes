@@ -3,7 +3,7 @@ import { classNames, stateClassNames, States } from '../utils';
 export const EDITOR_CLASSNAME = `k-editor`;
 
 const states = [
-    States.readonly,
+    States.readonly
 ];
 
 const options = {};

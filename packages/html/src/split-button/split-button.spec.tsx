@@ -27,7 +27,7 @@ const options = {
         ThemeColor.light,
         ThemeColor.dark,
         ThemeColor.inverse
-    ],
+    ]
 };
 
 export type KendoSplitButtonOptions = {

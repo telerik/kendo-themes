@@ -6,7 +6,7 @@ const className = `k-clear-value`;
 const states = [
     States.disabled,
     States.loading,
-    States.readonly,
+    States.readonly
 ];
 
 const options = {};
@@ -23,7 +23,8 @@ export const InputClearValue = (
         disabled,
         loading,
         readonly,
-        value } = props;
+        value
+    } = props;
 
     if (disabled || readonly || loading || !value ) {
         return <></>;

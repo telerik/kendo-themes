@@ -15,7 +15,7 @@ const states = [
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
-    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ]
 };
 
 export type CheckboxProps = CheckboxOptions & {
@@ -31,7 +31,7 @@ export type CheckboxOptions = {
 
 const defaultProps = {
     size: Size.medium,
-    rounded: Roundness.medium,
+    rounded: Roundness.medium
 };
 
 export const Checkbox = (

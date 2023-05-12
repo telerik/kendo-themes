@@ -14,11 +14,11 @@ const states = [
 const options = {};
 
 export type KendoSliderProps = {
-    type?: 'single' | 'range' | 'gradient',
-    orientation?: 'horizontal' | 'vertical',
-    dir?: 'ltr' | 'rtl',
-    handlePosition?: 'start' | 'end',
-    trackStyle?: React.CSSProperties
+    type?: 'single' | 'range' | 'gradient';
+    orientation?: 'horizontal' | 'vertical';
+    dir?: 'ltr' | 'rtl';
+    handlePosition?: 'start' | 'end';
+    trackStyle?: React.CSSProperties;
 };
 
 export type KendoSliderState = { [K in (typeof states)[number]]?: boolean };

@@ -7,7 +7,7 @@ const EXPANSION_PANEL_CLASSNAME = 'k-expander';
 const states = [
     States.hover,
     States.focus,
-    States.disabled,
+    States.disabled
 ];
 
 const options = {};

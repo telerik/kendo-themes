@@ -9,7 +9,7 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 export type KendoListBoxOptions = {
@@ -20,14 +20,14 @@ export type KendoListBoxProps = KendoListBoxOptions & {
     children?: JSX.Element[];
     actionsPosition?: 'left' | 'right' | 'top' | 'bottom';
     actions?: string[];
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 export type KendoListBoxState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
     size: Size.medium,
-    actionsPosition: 'left',
+    actionsPosition: 'left'
 } as const;
 
 export const ListBox = (

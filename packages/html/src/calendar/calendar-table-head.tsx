@@ -4,7 +4,7 @@ import { CalendarCell } from '../calendar';
 const className = `k-calendar-thead`;
 
 export type KendoCalendarTableHeadProps = {
-    showWeek?: boolean,
+    showWeek?: boolean;
 };
 
 export const CalendarTableHead = (

@@ -7,7 +7,7 @@ const states = [
     States.valid,
     States.invalid,
     States.empty,
-    States.disabled,
+    States.disabled
 ];
 
 const options = {};

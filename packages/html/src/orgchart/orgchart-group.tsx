@@ -4,7 +4,7 @@ import { Button } from '../button';
 export const ORGCHARTGROUP_CLASSNAME = `k-orgchart-node-group`;
 
 const states = [
-    States.focus,
+    States.focus
 ];
 
 export type KendoOrgchartGroupProps = {

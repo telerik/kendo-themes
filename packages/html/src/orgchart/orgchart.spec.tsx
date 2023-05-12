@@ -8,17 +8,17 @@ const states = [];
 const options = {};
 
 export type KendoOrgchartProps = {
-    children?: JSX.Element | JSX.Element[],
-    width?: string,
-    height?: string,
-    orientation?: 'horizontal' | 'vertical',
-    justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around',
+    children?: JSX.Element | JSX.Element[];
+    width?: string;
+    height?: string;
+    orientation?: 'horizontal' | 'vertical';
+    justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around';
 };
 
 const defaultProps = {
     width: '100%',
     height: '300px',
-    orientation: 'horizontal',
+    orientation: 'horizontal'
 };
 
 export const Orgchart = (

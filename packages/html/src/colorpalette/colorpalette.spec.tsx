@@ -19,7 +19,7 @@ export type KendoColorPaletteProps = {
 export type KendoColorPaletteState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    columns: 10,
+    columns: 10
 };
 
 export const ColorPalette = (

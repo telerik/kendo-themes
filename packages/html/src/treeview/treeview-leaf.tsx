@@ -6,7 +6,7 @@ export const TREEVIEWLEAF_CLASSNAME = `k-treeview-leaf`;
 const states = [
     States.hover,
     States.focus,
-    States.selected,
+    States.selected
 ];
 
 const options = {};

@@ -8,7 +8,7 @@ const TIMESELECTOR_CLASSNAME = `k-timeselector`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 export type KendoTimeSelectorOptions = {
@@ -24,7 +24,7 @@ export type KendoTimeSelectorProps = KendoTimeSelectorOptions & {
 };
 
 const defaultProps = {
-    size: Size.medium,
+    size: Size.medium
 } as const;
 
 export const TimeSelector = (

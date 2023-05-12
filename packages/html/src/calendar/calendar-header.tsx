@@ -12,7 +12,7 @@ export type KendoCalendarHeaderProps = {
     showToday?: boolean;
     size?: (typeof options.size)[number] | null;
     orientation?: 'vertical' | 'horizontal';
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 const defaultProps = {

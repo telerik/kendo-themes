@@ -11,7 +11,7 @@ const states = [
 ];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 export type KendoPagerOptions = {
@@ -21,10 +21,10 @@ export type KendoPagerOptions = {
 export type KendoPagerProps = KendoPagerOptions & {
     mobile?: null | 'small' | 'medium';
     type?: 'numeric' | 'input';
-    pageSizes?: boolean,
-    refresh?: boolean,
-    info?: boolean,
-    dir?: 'ltr' | 'rtl'
+    pageSizes?: boolean;
+    refresh?: boolean;
+    info?: boolean;
+    dir?: 'ltr' | 'rtl';
 };
 
 export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };

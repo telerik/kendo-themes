@@ -14,7 +14,7 @@ const states = [
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
-    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ],
+    fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline ]
 };
 
 export type KendoSignatureOptions = {
@@ -24,7 +24,7 @@ export type KendoSignatureOptions = {
 };
 
 export type KendoSignatureProps = KendoSignatureOptions & {
-    maximized?: boolean
+    maximized?: boolean;
 };
 
 export type KendoSignatureState = { [K in (typeof states)[number]]?: boolean };
@@ -32,7 +32,7 @@ export type KendoSignatureState = { [K in (typeof states)[number]]?: boolean };
 const defaultProps = {
     size: Size.medium,
     rounded: Roundness.medium,
-    fillMode: FillMode.solid,
+    fillMode: FillMode.solid
 };
 
 export const Signature = (

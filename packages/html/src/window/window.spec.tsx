@@ -10,7 +10,7 @@ const options = {
     themeColor: [
         ThemeColor.primary,
         ThemeColor.light,
-        ThemeColor.dark,
+        ThemeColor.dark
     ],
 };
 
@@ -25,7 +25,7 @@ export type KendoWindowProps = KendoWindowOptions & {
     actions?: string[];
     minimized?: boolean;
     actionButtons?: JSX.Element;
-    actionButtonsAlign?: "start" | "end" | "center" | "stretched"
+    actionButtonsAlign?: "start" | "end" | "center" | "stretched";
 };
 
 export const Window = (

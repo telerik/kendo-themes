@@ -6,7 +6,7 @@ export const TREEVIEW_CLASSNAME = `k-treeview`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 export type KendoTreeviewOptions = {
@@ -15,13 +15,13 @@ export type KendoTreeviewOptions = {
 
 export type KendoTreeviewProps = KendoTreeviewOptions & {
     children?: JSX.Element | JSX.Element[];
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 export type KendoTreeviewState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    size: Size.medium,
+    size: Size.medium
 };
 
 export const Treeview = (

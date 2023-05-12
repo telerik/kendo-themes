@@ -7,7 +7,7 @@ export const LIST_CLASSNAME = `k-list`;
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ],
+    size: [ Size.small, Size.medium, Size.large ]
 };
 
 export type KendoListOptions = {
@@ -23,7 +23,7 @@ export type KendoListProps = KendoListOptions & {
 export type KendoListState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    size: Size.medium,
+    size: Size.medium
 };
 
 export const List = (

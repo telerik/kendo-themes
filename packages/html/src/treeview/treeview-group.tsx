@@ -5,7 +5,7 @@ const className = `k-treeview-group`;
 
 export type KendoTreeviewGroupProps = {
     children?: JSX.Element | JSX.Element[];
-    dir?: 'ltr' | 'rtl'
+    dir?: 'ltr' | 'rtl';
 };
 
 export const TreeviewGroup = (
@@ -14,7 +14,7 @@ export const TreeviewGroup = (
 ) => {
     const {
         children,
-        dir,
+        dir
     } = props;
 
     const listChildren : JSX.Element[] = [];
