@@ -42,9 +42,11 @@ In your custom scss file, you can import the entirety of the theme, by importing
 @use "~@progress/kendo-theme-fluent/scss/index.scss" as kendo-theme;
 
 @include kendo-theme.config(
-    $components: (
-        "button",
-        "grid"
+    $config: (
+        "components": (
+            "button",
+            "grid"
+        )
     )
 );
 @include kendo-theme.styles();
