@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.4](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.3...v6.4.0-dev.4) (2023-05-15)
+
+
+### Bug Fixes
+
+* remove icons flipping styles in rtl ([7f5e54c](https://github.com/telerik/kendo-themes/commit/7f5e54cc75c5647f02e53fe3faa97bdef7b82f24))
+
+
+
+
+
 # [6.4.0-dev.3](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.2...v6.4.0-dev.3) (2023-05-08)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.4](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.3...v6.4.0-dev.4) (2023-05-15)
+
+
+### Bug Fixes
+
+* **html:** render empty label only in horizontal form ([efdb49b](https://github.com/telerik/kendo-themes/commit/efdb49b0857459aeaac6a1737a15170b8f7a16f4))
+
+
+
+
+
 # [6.4.0-dev.3](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.2...v6.4.0-dev.3) (2023-05-08)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

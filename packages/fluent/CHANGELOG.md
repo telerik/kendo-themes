@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.4](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.3...v6.4.0-dev.4) (2023-05-15)
+
+
+### Bug Fixes
+
+* **editor:** table tool selection not working in fluent ([5c9043f](https://github.com/telerik/kendo-themes/commit/5c9043fd4b23e931bee849c0ec5a0fadd7856cb1))
+* **form:** fix label position outsite of checkbox container ([f10b924](https://github.com/telerik/kendo-themes/commit/f10b924f43364dd503a8a8a20ba8a0ab36aa7e48))
+* **grid:** add rtl styles for grid with virtualization ([93ba668](https://github.com/telerik/kendo-themes/commit/93ba66868b2afc0e53ea9eadb1e0cb9c7f9a56ec))
+* **grid:** fix grid column menu width ([2d62d41](https://github.com/telerik/kendo-themes/commit/2d62d4197e971d76bad4604e469b2f28ad6ea337))
+* **icon:** wrong icon size when svg is used with k-icon-modifier ([94ea968](https://github.com/telerik/kendo-themes/commit/94ea968c7f354459192a2288b1802fdafef835d2))
+* **pdf-viewer:** wrong cursor in search panel ([1139f96](https://github.com/telerik/kendo-themes/commit/1139f963ca386b93603bee3ce1d7c52a2edf01f9))
+* remove icons flipping styles in rtl ([7f5e54c](https://github.com/telerik/kendo-themes/commit/7f5e54cc75c5647f02e53fe3faa97bdef7b82f24))
+
+
+
+
+
 # [6.4.0-dev.3](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.2...v6.4.0-dev.3) (2023-05-08)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
