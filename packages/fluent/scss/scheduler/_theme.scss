@@ -128,16 +128,16 @@
             );
             @include box-shadow( var( --kendo-scheduler-event-selected-shadow, #{$kendo-scheduler-event-selected-shadow} ) );
         }
+
+        &.k-event-ongoing {
+            @include box-shadow( var( --kendo-scheduler-event-ongoing-shadow, #{$kendo-scheduler-event-ongoing-shadow} ) );
+        }
+
     }
 
    // .k-event-inverse {
    //     color: k-contrast-legacy( $kendo-scheduler-event-text );
    // }
-
-    .k-event-ongoing {
-        @include box-shadow( var( --kendo-scheduler-event-ongoing-shadow, #{$kendo-scheduler-event-ongoing-shadow} ) );
-    }
-
 
     // Drag hint
     .k-event-drag-hint {}
