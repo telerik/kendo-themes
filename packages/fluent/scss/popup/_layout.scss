@@ -21,6 +21,7 @@
             outline: none;
         }
     }
+
     .k-animation-container {
       @include border-bottom-radius-only( var( --kendo-popup-border-radius, #{$kendo-popup-border-radius} ) );
     }
@@ -48,6 +49,7 @@
     // Child components
     .k-popup > .k-coloreditor {
         border-width: 0;
+        box-shadow: none;
     }
 
 }
