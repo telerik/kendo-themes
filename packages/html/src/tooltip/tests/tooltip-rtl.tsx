@@ -1,4 +1,5 @@
 import { Icon } from '../../icon';
+import { AnimationContainer } from '../../animation-container';
 
 
 const style = `
@@ -21,41 +22,41 @@ export default () =>(
 
             <span className="col-4">RTL</span>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip" dir="rtl">
                         <div className="k-tooltip-content">tooltip content</div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip k-tooltip-closable" dir="rtl">
                         <div className="k-tooltip-content">tooltip content</div>
                         <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip" dir="rtl">
                         <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip k-tooltip-closable" dir="rtl">
                         <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
                         <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip" dir="rtl">
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title">Tooltip title</div>
@@ -63,10 +64,10 @@ export default () =>(
                         </div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip k-tooltip-closable" dir="rtl">
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title">Tooltip title</div>
@@ -75,10 +76,10 @@ export default () =>(
                         <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip" dir="rtl">
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title">
@@ -89,10 +90,10 @@ export default () =>(
                         </div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip k-tooltip-closable" dir="rtl">
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title">
@@ -104,7 +105,7 @@ export default () =>(
                         <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
         </div>
     </>

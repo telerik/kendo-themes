@@ -5,21 +5,29 @@ import { Table, TableThead, TableTbody, TableRow, TableTh, TableTd } from '../..
 import { Toolbar } from '../../toolbar';
 import { Popup } from '../../popup';
 
-
 const styles = `
     .k-animation-container,
     .k-popup {
         position: relative;
         overflow: visible;
-        top: -139px;
+    }
+
+    #discontinued {
+        top: -114px;
+        left: 254px;
+    }
+
+    #category {
+        top: -337px;
         left: 120px;
     }
 `;
 
-export default () => (
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area">
+
             <section>
                 <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <Toolbar className="k-grid-toolbar">
@@ -54,10 +62,10 @@ export default () => (
                                                     <span className="k-column-title">Product Id</span>
                                                     <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                 </span>
-                                                <a href="#" className="k-grid-header-menu k-grid-column-menu">
-                                                    <Icon icon="more-vertical" />
-                                                </a>
                                             </span>
+                                            <a href="#" className="k-grid-header-menu k-grid-column-menu">
+                                                <Icon icon="more-vertical" />
+                                            </a>
                                         </TableTh>
                                         <TableTh className="k-header k-sorted">
                                             <span className="k-cell-inner">
@@ -65,10 +73,10 @@ export default () => (
                                                     <span className="k-column-title">Unit Price</span>
                                                     <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                 </span>
-                                                <a href="#" className="k-grid-header-menu k-grid-column-menu">
-                                                    <Icon icon="more-vertical" />
-                                                </a>
                                             </span>
+                                            <a href="#" className="k-grid-header-menu k-grid-column-menu">
+                                                <Icon icon="more-vertical" />
+                                            </a>
                                         </TableTh>
                                         <TableTh className="k-header k-sorted">
                                             <span className="k-cell-inner">
@@ -76,10 +84,10 @@ export default () => (
                                                     <span className="k-column-title">Discontinued</span>
                                                     <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                 </span>
-                                                <a href="#" className="k-grid-header-menu k-grid-column-menu">
-                                                    <Icon icon="more-vertical" />
-                                                </a>
                                             </span>
+                                            <a href="#" className="k-grid-header-menu k-grid-column-menu">
+                                                <Icon icon="more-vertical" />
+                                            </a>
                                         </TableTh>
                                         <TableTh className="k-header k-sorted">
                                             <span className="k-cell-inner">
@@ -87,10 +95,10 @@ export default () => (
                                                     <span className="k-column-title">Category</span>
                                                     <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
                                                 </span>
-                                                <a href="#" className="k-grid-header-menu k-grid-column-menu">
-                                                    <Icon icon="more-vertical" />
-                                                </a>
                                             </span>
+                                            <a href="#" className="k-grid-header-menu k-grid-column-menu">
+                                                <Icon icon="more-vertical" />
+                                            </a>
                                         </TableTh>
                                     </TableRow>
                                 </TableThead>
@@ -140,9 +148,89 @@ export default () => (
                     </div>
                     <Pager refresh={false} className="k-grid-pager"/>
                 </div>
+
             </section>
 
-            <Popup className="k-column-menu k-grid-columnmenu-popup">
+            <Popup id="discontinued" className="k-column-menu k-grid-columnmenu-popup">
+                <div className="k-columnmenu-item-wrapper">
+                    <div className="k-columnmenu-item">
+                        <Icon icon="group"/>Group column
+                    </div>
+                    <div className="k-columnmenu-item-wrapper">
+                        <div className="k-columnmenu-item">
+                            <Icon icon="sort-asc-small" />Sort ascending
+                        </div>
+                        <div className="k-columnmenu-item">
+                            <Icon icon="sort-desc-small" />Sort descending
+                        </div>
+                    </div>
+                    <div className="k-columnmenu-item-wrapper">
+                        <div className="k-expander">
+                            <div className="k-columnmenu-item">
+                                <Icon icon="columns"/>Columns
+                                <span className="k-spacer"></span>
+                                <span className="k-expander-indicator">
+                                    <Icon icon="chevron-down"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="k-columnmenu-item-wrapper">
+                        <div className="k-columnmenu-item">
+                            <Icon icon="max-width"/>Autosize This Column
+                        </div>
+                        <div className="k-columnmenu-item">
+                            <Icon icon="display-inline-flex"/>Autosize All Columns
+                        </div>
+                    </div>
+                    <div className="k-columnmenu-item-wrapper">
+                        <div className="k-expander">
+                            <div className="k-columnmenu-item">
+                                <Icon icon="set-column-position" />Set Column Position
+                                <span className="k-spacer"></span>
+                                <span className="k-expander-indicator">
+                                    <Icon icon="chevron-up"/>
+                                </span>
+                            </div>
+                            <div className="k-columnmenu-item-content k-columns-item">
+                                <div className="k-column-list-wrapper">
+                                    <div className="k-column-list" style={{ maxHeight: "260px", overflowY: "hidden" }}>
+                                        <div className="k-column-list-item">
+                                            <Icon icon="lock"/>Lock Column
+                                        </div>
+                                        <div className="k-column-list-item k-disabled">
+                                            <Icon icon="unlock"/>Unlock Column
+                                        </div>
+                                        <div className="k-column-list-item">
+                                            <Icon icon="stick"/>Stick Column
+                                        </div>
+                                        <div className="k-column-list-item k-disabled">
+                                            <Icon icon="unstick"/>Unstick Column
+                                        </div>
+                                        <div className="k-column-list-item">
+                                            <Icon icon="caret-alt-left"/>Move Previous
+                                        </div>
+                                        <div className="k-column-list-item">
+                                            <Icon icon="caret-alt-right"/>Move Next
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="k-columnmenu-item-wrapper">
+                        <div className="k-expander">
+                            <div className="k-columnmenu-item">
+                                <Icon icon="filter"/>Filter
+                                <span className="k-spacer"></span>
+                                <Icon icon="chevron-down"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Popup>
+
+            <Popup id="category" className="k-column-menu k-grid-columnmenu-popup">
                 <div className="k-columnmenu-item-wrapper">
                     <div className="k-columnmenu-item">
                         <div className="k-column-list-item">
@@ -157,5 +245,3 @@ export default () => (
         </div>
     </>
 );
-
-

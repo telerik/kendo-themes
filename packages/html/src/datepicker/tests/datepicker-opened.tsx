@@ -5,6 +5,10 @@ const styles = `
         max-width: 660px;
     }
 
+    .k-animation-container {
+        position: relative;
+    }
+
     .k-popup {
         width: max-content;
     }

@@ -2,6 +2,7 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
+import { AnimationContainer } from '../../animation-container';
 
 
 const styles = `
@@ -23,7 +24,7 @@ export default () =>(
 
             {/* jQuery rendering */}
             <section>
-                <div className="k-animation-container" style={{ overflow: "visible" }}>
+                <AnimationContainer>
                     <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <div className="k-filter-help-text">Show items with value that:</div>
@@ -38,7 +39,7 @@ export default () =>(
                             </ActionButtons>
                         </div>
                     </form>
-                </div>
+                </AnimationContainer>
             </section>
 
         </div>

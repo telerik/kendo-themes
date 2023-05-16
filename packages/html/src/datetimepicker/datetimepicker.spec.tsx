@@ -127,7 +127,7 @@ export const DateTimePicker = (
                 />
             </Input>
             { opened &&
-                <Popup className="k-datetimepicker-popup" dir={dir}>
+                <Popup className={`k-${tab === "time" ? "list" : "calendar"}-container k-datetimepicker-popup`} dir={dir}>
                     <DateTimeSelector tab={tab} dir={dir} />
                 </Popup>
             }

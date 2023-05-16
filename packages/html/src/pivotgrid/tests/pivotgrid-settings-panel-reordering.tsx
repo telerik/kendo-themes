@@ -5,9 +5,19 @@ import { ChipList, Chip, ChipAction } from '../../chip';
 import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Treeview, TreeviewItem, TreeviewGroup } from '../../treeview';
+import { Popup } from '../../popup';
+
+const style = `
+    .k-animation-container {
+        bottom: 160px;
+        left: 110px;
+        position: relative;
+    }
+`;
 
 export default () => (
     <>
+        <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
                 <div className="k-d-flex k-flex-row k-pos-relative">
@@ -631,45 +641,41 @@ export default () => (
                 </div>
             </section>
 
-            <div className="k-animation-container" style={{ position: "relative", bottom: "160px", left: "110px" }} >
-                <div className="k-child-animation-container">
-                    <div className="k-column-menu k-popup k-grid-columnmenu-popup">
-                        <div className="k-columnmenu-item-wrapper">
+            <Popup className="k-column-menu k-grid-columnmenu-popup">
+                <div className="k-columnmenu-item-wrapper">
+                    <div className="k-columnmenu-item">
+                        <Icon icon="sort-asc-small"/>Sort ascending
+                    </div>
+                    <div className="k-columnmenu-item">
+                        <Icon icon="sort-desc-small" />Sort descending
+                    </div>
+                    <div className="k-columnmen-item-wrapper">
+                        <div className="k-expander">
                             <div className="k-columnmenu-item">
-                                <Icon icon="sort-asc-small"/>Sort ascending
-                            </div>
-                            <div className="k-columnmenu-item">
-                                <Icon icon="sort-desc-small" />Sort descending
-                            </div>
-                            <div className="k-columnmen-item-wrapper">
-                                <div className="k-expander">
-                                    <div className="k-columnmenu-item">
-                                        <Icon icon="grid-layout" />Include Fields
-                                        <span className="k-spacer"></span>
-                                        <span className="k-expander-indicator">
-                                            <Icon icon="chevron-down" />
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="k-columnmenu-item-wrapper">
-                                <div className="k-columnmenu-item k-disabled">
-                                    <Icon icon="caret-alt-left" />Move Previous
-                                </div>
-                                <div className="k-columnmenu-item">
-                                    <Icon icon="caret-alt-right" />Move Next
-                                </div>
-                                <div className="k-columnmenu-item">
-                                    <Icon icon="caret-alt-down" />Move to Rows
-                                </div>
-                                <div className="k-columnmenu-item">
-                                    <Icon icon="caret-alt-to-bottom" />Move to Values
-                                </div>
+                                <Icon icon="grid-layout" />Include Fields
+                                <span className="k-spacer"></span>
+                                <span className="k-expander-indicator">
+                                    <Icon icon="chevron-down" />
+                                </span>
                             </div>
                         </div>
                     </div>
+                    <div className="k-columnmenu-item-wrapper">
+                        <div className="k-columnmenu-item k-disabled">
+                            <Icon icon="caret-alt-left" />Move Previous
+                        </div>
+                        <div className="k-columnmenu-item">
+                            <Icon icon="caret-alt-right" />Move Next
+                        </div>
+                        <div className="k-columnmenu-item">
+                            <Icon icon="caret-alt-down" />Move to Rows
+                        </div>
+                        <div className="k-columnmenu-item">
+                            <Icon icon="caret-alt-to-bottom" />Move to Values
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </Popup>
         </div>
     </>
 );

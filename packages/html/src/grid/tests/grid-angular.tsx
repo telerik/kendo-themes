@@ -298,31 +298,29 @@ export default () =>(
                 </div>
             </section>
             <section className="col-1">
-                <div className="k-animation-container k-animation-container-shown">
-                    <Popup>
-                        <span className="k-column-chooser-title">Columns</span>
-                        <div className="k-column-list-wrapper">
-                            <div className="k-column-list">
-                                <label className="k-column-list-item">
-                                    <Checkbox />
-                                    <span className="k-checkbox-label">ID</span>
-                                </label>
-                                <label className="k-column-list-item">
-                                    <Checkbox />
-                                    <span className="k-checkbox-label">Name</span>
-                                </label>
-                                <label className="k-column-list-item">
-                                    <Checkbox />
-                                    <span className="k-checkbox-label">Category</span>
-                                </label>
-                            </div>
-                            <ActionButtons>
-                                <Button>Reset</Button>
-                                <Button themeColor="primary">Apply</Button>
-                            </ActionButtons>
+                <Popup>
+                    <span className="k-column-chooser-title">Columns</span>
+                    <div className="k-column-list-wrapper">
+                        <div className="k-column-list">
+                            <label className="k-column-list-item">
+                                <Checkbox />
+                                <span className="k-checkbox-label">ID</span>
+                            </label>
+                            <label className="k-column-list-item">
+                                <Checkbox />
+                                <span className="k-checkbox-label">Name</span>
+                            </label>
+                            <label className="k-column-list-item">
+                                <Checkbox />
+                                <span className="k-checkbox-label">Category</span>
+                            </label>
                         </div>
-                    </Popup>
-                </div>
+                        <ActionButtons>
+                            <Button>Reset</Button>
+                            <Button themeColor="primary">Apply</Button>
+                        </ActionButtons>
+                    </div>
+                </Popup>
             </section>
 
         </div>

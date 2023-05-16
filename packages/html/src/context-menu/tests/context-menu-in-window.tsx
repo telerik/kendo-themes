@@ -28,18 +28,16 @@ export default () =>(
                 <Window title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>
                     Target
                 </Window>
-                <div className="k-animation-container">
-                    <Popup className="k-menu-popup">
-                        <MenuList className="k-context-menu">
-                            <MenuItem text="Item 1" showArrow></MenuItem>
-                            <MenuItem text="Item 2" showArrow></MenuItem>
-                            <MenuItem text="Item 3" showArrow></MenuItem>
-                            <MenuItem text="Item 4" showArrow></MenuItem>
-                            <MenuItem text="Item 5" showArrow></MenuItem>
-                            <MenuItem text="Item 6" showArrow></MenuItem>
-                        </MenuList>
-                    </Popup>
-                </div>
+                <Popup className="k-menu-popup">
+                    <MenuList className="k-context-menu">
+                        <MenuItem text="Item 1" showArrow></MenuItem>
+                        <MenuItem text="Item 2" showArrow></MenuItem>
+                        <MenuItem text="Item 3" showArrow></MenuItem>
+                        <MenuItem text="Item 4" showArrow></MenuItem>
+                        <MenuItem text="Item 5" showArrow></MenuItem>
+                        <MenuItem text="Item 6" showArrow></MenuItem>
+                    </MenuList>
+                </Popup>
             </section>
         </div>
     </>

@@ -3,6 +3,7 @@ import { Button } from '../../button';
 import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
+import { AnimationContainer } from '../../animation-container';
 
 
 const style = `
@@ -19,7 +20,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
 
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-spreadsheet-filter-menu k-column-menu k-popup k-group k-reset">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
@@ -76,7 +77,7 @@ export default () =>(
                             </div>
                         </div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
         </div>
     </>

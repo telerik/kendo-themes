@@ -2,6 +2,7 @@ import { TimeSelector } from '../time-selector.spec';
 import { Button } from '../../button';
 import { ActionButtons } from '../../action-buttons';
 import { TimeSelectorHeader } from '../time-selector-header';
+import { Popup } from '../../popup';
 
 
 const style = `
@@ -21,49 +22,43 @@ export default () =>(
             <span>HH:mm:ss tt</span>
             <span>HH</span>
             <section>
-                <div className="k-animation-container">
-                    <div className="k-popup k-reset">
-                        <TimeSelector columns={[ "HH", "mm", "ss", "SSS", "tt" ]} focusedColumn="HH" header={(
-                            <TimeSelectorHeader title="13:14:07:189 PM">
-                                <Button fillMode="flat" className="k-time-now">Now</Button>
-                            </TimeSelectorHeader>
-                        )}/>
-                        <ActionButtons alignment="stretched" className="k-time-footer">
-                            <Button className="k-time-cancel">Cancel</Button>
-                            <Button themeColor="primary" className="k-time-accept">Set</Button>
-                        </ActionButtons>
-                    </div>
-                </div>
+                <Popup>
+                    <TimeSelector columns={[ "HH", "mm", "ss", "SSS", "tt" ]} focusedColumn="HH" header={(
+                        <TimeSelectorHeader title="13:14:07:189 PM">
+                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
+                    <ActionButtons alignment="stretched" className="k-time-footer">
+                        <Button className="k-time-cancel">Cancel</Button>
+                        <Button themeColor="primary" className="k-time-accept">Set</Button>
+                    </ActionButtons>
+                </Popup>
             </section>
             <section>
-                <div className="k-animation-container">
-                    <div className="k-popup k-reset">
-                        <TimeSelector columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="mm" header={(
-                            <TimeSelectorHeader title="10:00:00 AM">
-                                <Button fillMode="flat" className="k-time-now">Now</Button>
-                            </TimeSelectorHeader>
-                        )}/>
-                        <ActionButtons alignment="stretched" className="k-time-footer">
-                            <Button className="k-time-cancel">Cancel</Button>
-                            <Button themeColor="primary" className="k-time-accept">Set</Button>
-                        </ActionButtons>
-                    </div>
-                </div>
+                <Popup>
+                    <TimeSelector columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="mm" header={(
+                        <TimeSelectorHeader title="10:00:00 AM">
+                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
+                    <ActionButtons alignment="stretched" className="k-time-footer">
+                        <Button className="k-time-cancel">Cancel</Button>
+                        <Button themeColor="primary" className="k-time-accept">Set</Button>
+                    </ActionButtons>
+                </Popup>
             </section>
             <section>
-                <div className="k-animation-container">
-                    <div className="k-popup k-reset">
-                        <TimeSelector columns={[ "HH" ]} header={(
-                            <TimeSelectorHeader title="10">
-                                <Button fillMode="flat" className="k-time-now">Now</Button>
-                            </TimeSelectorHeader>
-                        )}/>
-                        <ActionButtons alignment="stretched" className="k-time-footer">
-                            <Button className="k-time-cancel">Cancel</Button>
-                            <Button themeColor="primary" className="k-time-accept">Set</Button>
-                        </ActionButtons>
-                    </div>
-                </div>
+                <Popup>
+                    <TimeSelector columns={[ "HH" ]} header={(
+                        <TimeSelectorHeader title="10">
+                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
+                    <ActionButtons alignment="stretched" className="k-time-footer">
+                        <Button className="k-time-cancel">Cancel</Button>
+                        <Button themeColor="primary" className="k-time-accept">Set</Button>
+                    </ActionButtons>
+                </Popup>
             </section>
         </div>
     </>
