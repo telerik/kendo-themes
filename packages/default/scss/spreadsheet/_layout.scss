@@ -29,6 +29,7 @@
             transform: translateY( -100% );
         }
 
+
     }
 
 
@@ -110,9 +111,6 @@
     }
     .k-spreadsheet-name-editor {
         width: 10em;
-        border-width: 0 1px 0 0;
-        border-style: solid;
-        border-color: inherit;
     }
     .k-spreadsheet-formula-bar {
         border-color: inherit;
@@ -120,6 +118,7 @@
         flex-direction: row;
         align-items: center;
         flex: 1;
+        gap: $kendo-padding-md-y;
 
         > .k-icon,
         > .k-svg-icon {
@@ -676,14 +675,11 @@
         .k-reset-color { border-bottom-width: 1px; }
         .k-custom-color { border-top-width: 1px; }
         .k-spreadsheet-border-type-palette {
-            width: 12.5rem;
-            height: 5rem;
-            display: flex;
-            flex-flow: row wrap;
-            align-content: space-around;
-            justify-content: space-around;
+            padding: k-map-get( $kendo-spacing, 2 );
+            display: grid;
+            grid-template-columns: repeat(5, max-content);
+            gap: k-map-get( $kendo-spacing, 2 );
         }
-
     }
 
     .k-spreadsheet-format-popup {
@@ -693,7 +689,6 @@
     .k-spreadsheet-sample {
         opacity: .7;
     }
-
 
     .k-spreadsheet-clipboard,
     .k-spreadsheet-clipboard-paste {
@@ -712,7 +707,10 @@
 
 
     // Spreadsheet window
-    .k-spreadsheet-window {}
+    .k-spreadsheet-window .k-external-dropzone {
+        margin-block-end: $kendo-spreadsheet-dropzone-spacing-y;
+    }
+
     .k-spreadsheet-window .k-edit-form-container {
         width: auto;
         min-width: 0;
