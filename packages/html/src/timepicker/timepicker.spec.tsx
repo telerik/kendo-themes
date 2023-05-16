@@ -122,7 +122,7 @@ export const TimePicker = (
                 />
             </Input>
             { opened &&
-                <Popup className="k-timepicker-popup">
+                <Popup className="k-list-container k-timepicker-popup">
                     <TimeSelector columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="mm" header={(
                         <TimeSelectorHeader title="10:00:00 AM">
                             <Button fillMode="flat" className="k-time-now">Now</Button>

@@ -73,14 +73,12 @@ export default () =>(
                 </div>
             </div>
 
-            <div className="k-animation-container k-context-menu-popup" id="filemanager-context-menu">
-                <Popup className="k-menu-popup">
-                    <MenuList>
-                        <MenuItem text="Rename" icon="pencil"></MenuItem>
-                        <MenuItem text="Delete" icon="trash"></MenuItem>
-                    </MenuList>
-                </Popup>
-            </div>
+            <Popup id="filemanager-context-menu" className="k-menu-popup k-context-menu-popup">
+                <MenuList>
+                    <MenuItem text="Rename" icon="pencil"></MenuItem>
+                    <MenuItem text="Delete" icon="trash"></MenuItem>
+                </MenuList>
+            </Popup>
 
         </div>
     </>

@@ -135,7 +135,7 @@ export const DropdownList = (
                 />
             </Picker>
             { opened && popup &&
-                <Popup className="k-dropdownlist-popup">
+                <Popup className="k-list-container k-dropdownlist-popup">
                     {popup}
                 </Popup>
             }

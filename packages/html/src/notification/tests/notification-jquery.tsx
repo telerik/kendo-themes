@@ -1,4 +1,5 @@
 import { Notification, NotificationAction } from '../../notification';
+import { AnimationContainer } from '../../animation-container';
 
 
 const styles = `
@@ -24,126 +25,126 @@ export default () =>(
             <span className="k-colspan-all k-col-span-full">LTR</span>
 
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification text="Default notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification closable={true} text="Closable notification" actions={ <NotificationAction type="close" /> } />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="primary" text="Primary notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="secondary" text="Secondary notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="tertiary" text="Tertiary notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="info" text="Info notification" icon="info-circle" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="success" text="Success notification" icon="check-outline" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="warning" text="Warning notification" icon="exclamation-circle" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="error" text="Error notification" icon="x-outline" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="dark" text="Dark notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="light" text="Light notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="inverse" text="Inverse notification" />
-                </div>
+                </AnimationContainer>
             </div>
 
             <span className="k-colspan-all k-col-span-full">RTL</span>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification text="Default notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification closable={true} text="Closable notification" actions={ <NotificationAction type="close" /> } />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="primary" text="Primary notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="secondary" text="Secondary notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="tertiary" text="Tertiary notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="info" text="Info notification" icon="info-circle" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="success" text="Success notification" icon="check-outline" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="warning" text="Warning notification" icon="exclamation-circle" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="error" text="Error notification" icon="x-outline" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="dark" text="Dark notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="light" text="Light notification" />
-                </div>
+                </AnimationContainer>
             </div>
             <div dir="rtl">
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <Notification themeColor="inverse" text="Inverse notification" />
-                </div>
+                </AnimationContainer>
             </div>
 
         </div>

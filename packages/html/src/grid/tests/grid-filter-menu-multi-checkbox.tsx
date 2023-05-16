@@ -2,6 +2,7 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Searchbox } from '../../searchbox';
+import { AnimationContainer } from '../../animation-container';
 
 
 const styles = `
@@ -31,7 +32,7 @@ export default () =>(
             <span className="k-rtl">Multi Checkboxes</span>
 
             <section>
-                <div className="k-animation-container" style={{ overflow: "visible" }}>
+                <AnimationContainer>
                     <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <Searchbox placeholder="Search..." />
@@ -48,11 +49,11 @@ export default () =>(
                             </ActionButtons>
                         </div>
                     </form>
-                </div>
+                </AnimationContainer>
             </section>
 
             <section className="k-rtl">
-                <div className="k-animation-container" style={{ overflow: "visible" }}>
+                <AnimationContainer>
                     <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <Searchbox placeholder="Search..." />
@@ -69,14 +70,14 @@ export default () =>(
                             </ActionButtons>
                         </div>
                     </form>
-                </div>
+                </AnimationContainer>
             </section>
 
             <span>Boolean</span>
             <span className="k-rtl">Boolean</span>
 
             <section>
-                <div className="k-animation-container" style={{ overflow: "visible" }}>
+                <AnimationContainer>
                     <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <div className="k-filter-help-text">Show items with value that:</div>
@@ -91,11 +92,11 @@ export default () =>(
                             </ActionButtons>
                         </div>
                     </form>
-                </div>
+                </AnimationContainer>
             </section>
 
             <section className="k-rtl">
-                <div className="k-animation-container" style={{ overflow: "visible" }}>
+                <AnimationContainer>
                     <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <div className="k-filter-help-text">Show items with value that:</div>
@@ -110,7 +111,7 @@ export default () =>(
                             </ActionButtons>
                         </div>
                     </form>
-                </div>
+                </AnimationContainer>
             </section>
 
         </div>

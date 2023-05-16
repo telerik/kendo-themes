@@ -21,45 +21,37 @@ export default () =>(
             <span>w/ filtering (rtl)</span>
 
             <section>
-                <div className="k-animation-container">
-                    <Popup className="k-list-container">
-                        <List>
-                        </List>
-                    </Popup>
-                </div>
+                <Popup className="k-list-container">
+                    <List>
+                    </List>
+                </Popup>
             </section>
 
             <section dir="rtl">
-                <div className="k-animation-container">
-                    <Popup className="k-list-container">
-                        <List>
-                        </List>
-                    </Popup>
-                </div>
+                <Popup className="k-list-container">
+                    <List>
+                    </List>
+                </Popup>
             </section>
 
             <section>
-                <div className="k-animation-container">
-                    <Popup className="k-list-container">
-                        <div className="k-list-filter">
-                            <Searchbox placeholder="Filter..." />
-                        </div>
-                        <List>
-                        </List>
-                    </Popup>
-                </div>
+                <Popup className="k-list-container">
+                    <div className="k-list-filter">
+                        <Searchbox placeholder="Filter..." />
+                    </div>
+                    <List>
+                    </List>
+                </Popup>
             </section>
 
             <section dir="rtl">
-                <div className="k-animation-container">
-                    <Popup className="k-list-container">
-                        <div className="k-list-filter">
-                            <Searchbox placeholder="Filter..." />
-                        </div>
-                        <List>
-                        </List>
-                    </Popup>
-                </div>
+                <Popup className="k-list-container">
+                    <div className="k-list-filter">
+                        <Searchbox placeholder="Filter..." />
+                    </div>
+                    <List>
+                    </List>
+                </Popup>
             </section>
 
         </div>

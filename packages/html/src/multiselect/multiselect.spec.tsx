@@ -137,7 +137,7 @@ export const MultiSelect = (
                 )}
             </Input>
             { opened && popup &&
-                <Popup className="k-multiselect-popup">
+                <Popup className="k-list-container k-multiselect-popup">
                     {popup}
                 </Popup>
             }

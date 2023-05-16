@@ -6,6 +6,9 @@ const styles = `
     #test-area {
         max-width: 660px;
     }
+    .k-animation-container {
+        position: relative;
+    }
 `;
 
 export default () =>(

@@ -1,5 +1,6 @@
 import { classNames } from '../misc';
 import { ActionSheetHeader, ActionSheetItems, ActionSheetFooter } from '../action-sheet';
+import { AnimationContainer } from '../animation-container';
 
 export const ACTIONSHEET_CLASSNAME = `k-actionsheet`;
 
@@ -77,41 +78,39 @@ export const ActionSheet = (
     return (
         <div className="k-actionsheet-container">
             <div className="k-overlay"></div>
-            <div className="k-animation-container">
-                <div className="k-child-animation-container"
-                    style={{
-                        [`${ fullscreen === true ? 'top' : side }`]: 0,
-                        [`${ fullscreen === true ? 'width' : null }`]: '100%',
-                        [`${ fullscreen === true ? 'height' : null }`]: '100%',
-                        [`${ side === 'top' || side === 'bottom' ? 'width' : null }`]: '100%',
-                        [`${ side === 'left' || side === 'right' ? 'height' : null }`]: '100%'
-                    }}>
-                    <div
-                        {...other}
-                        className={classNames(
-                            props.className,
-                            ACTIONSHEET_CLASSNAME,
+            <AnimationContainer
+                animationStyle={{
+                    [`${ fullscreen === true ? 'top' : side }`]: 0,
+                    [`${ fullscreen === true ? 'width' : null }`]: '100%',
+                    [`${ fullscreen === true ? 'height' : null }`]: '100%',
+                    [`${ side === 'top' || side === 'bottom' ? 'width' : null }`]: '100%',
+                    [`${ side === 'left' || side === 'right' ? 'height' : null }`]: '100%'
+                }}>
+                <div
+                    {...other}
+                    className={classNames(
+                        props.className,
+                        ACTIONSHEET_CLASSNAME,
+                        {
+                            [`k-actionsheet-${side}`]: fullscreen === false,
+                            'k-actionsheet-fullscreen': fullscreen === true,
+                            'k-adaptive-actionsheet': adaptive
+                        },
+                    )}>
+                    <>
+                        {_ActionSheetHeader}
+                        <div className={classNames(
+                            'k-actionsheet-content',
                             {
-                                [`k-actionsheet-${side}`]: fullscreen === false,
-                                'k-actionsheet-fullscreen': fullscreen === true,
-                                'k-adaptive-actionsheet': adaptive
-                            },
+                                '!k-overflow-hidden': adaptive
+                            }
                         )}>
-                        <>
-                            {_ActionSheetHeader}
-                            <div className={classNames(
-                                'k-actionsheet-content',
-                                {
-                                    '!k-overflow-hidden': adaptive
-                                }
-                            )}>
-                                {_ActionSheetContent}
-                            </div>
-                            {_ActionSheetFooter}
-                        </>
-                    </div>
+                            {_ActionSheetContent}
+                        </div>
+                        {_ActionSheetFooter}
+                    </>
                 </div>
-            </div>
+            </AnimationContainer>
         </div>
     );
 };

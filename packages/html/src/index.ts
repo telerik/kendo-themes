@@ -67,6 +67,7 @@ export * from './menu/index';
 export * from './toolbar/index';
 
 // Popups and modals
+export * from './animation-container';
 export * from './action-sheet/index';
 export * from './dialog/index';
 // export * from './drawer/index';

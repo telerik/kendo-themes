@@ -122,7 +122,7 @@ export const Combobox = (
                 />
             </Input>
             { opened && popup &&
-                <Popup className="k-combobox-popup">
+                <Popup className="k-list-container k-combobox-popup">
                     {popup}
                 </Popup>
             }

@@ -10,6 +10,10 @@ const styles = `
     #test-area {
         grid-template-columns: 160px repeat(2, 300px);
     }
+
+    .k-animation-container {
+        position: relative;
+    }
 `;
 
 export default () =>(

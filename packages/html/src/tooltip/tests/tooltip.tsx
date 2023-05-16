@@ -1,4 +1,5 @@
 import { Icon } from '../../icon';
+import { AnimationContainer } from '../../animation-container';
 
 
 const style = `
@@ -25,108 +26,108 @@ export default () =>(
             <span>Callout left</span>
 
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-popup k-popup-transparent">
                         <div className="k-tooltip">
                             <div className="k-tooltip-content">angular tooltip</div>
                             <div className="k-callout k-callout-n"></div>
                         </div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-popup k-popup-transparent">
                         <div className="k-tooltip">
                             <div className="k-tooltip-content">angular tooltip</div>
                             <div className="k-callout k-callout-e"></div>
                         </div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-popup k-popup-transparent">
                         <div className="k-tooltip">
                             <div className="k-tooltip-content">angular tooltip</div>
                             <div className="k-callout k-callout-s"></div>
                         </div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-popup k-popup-transparent">
                         <div className="k-tooltip">
                             <div className="k-tooltip-content">angular tooltip</div>
                             <div className="k-callout k-callout-w"></div>
                         </div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-widget k-popup k-tooltip">
                         <div className="k-tooltip-content">jquery tooltip</div>
                         <div className="k-callout k-callout-n"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-widget k-popup k-tooltip">
                         <div className="k-tooltip-content">jquery tooltip</div>
                         <div className="k-callout k-callout-e"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-widget k-popup k-tooltip">
                         <div className="k-tooltip-content">jquery tooltip</div>
                         <div className="k-callout k-callout-s"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-widget k-popup k-tooltip">
                         <div className="k-tooltip-content">jquery tooltip</div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip">
                         <div className="k-tooltip-content">react tooltip</div>
                         <div className="k-callout k-callout-n"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip">
                         <div className="k-tooltip-content">react tooltip</div>
                         <div className="k-callout k-callout-e"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip">
                         <div className="k-tooltip-content">react tooltip</div>
                         <div className="k-callout k-callout-s"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip">
                         <div className="k-tooltip-content">react tooltip</div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
 
             <span>Content</span>
@@ -135,38 +136,38 @@ export default () =>(
             <span>Long content closable</span>
 
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip">
                         <div className="k-tooltip-content">tooltip content</div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip k-tooltip-closable">
                         <div className="k-tooltip-content">tooltip content</div>
                         <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip">
                         <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip k-tooltip-closable">
                         <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
                         <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
 
             <span>Title</span>
@@ -175,7 +176,7 @@ export default () =>(
             <span>Title with glyphs closable</span>
 
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip">
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title">Tooltip title</div>
@@ -183,10 +184,10 @@ export default () =>(
                         </div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip k-tooltip-closable">
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title">Tooltip title</div>
@@ -195,10 +196,10 @@ export default () =>(
                         <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip">
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title">
@@ -209,10 +210,10 @@ export default () =>(
                         </div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
             <section>
-                <div className="k-animation-container">
+                <AnimationContainer>
                     <div className="k-tooltip k-tooltip-closable">
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title">
@@ -224,7 +225,7 @@ export default () =>(
                         <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
                         <div className="k-callout k-callout-w"></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
         </div>
     </>
