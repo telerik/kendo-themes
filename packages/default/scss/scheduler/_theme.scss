@@ -125,12 +125,14 @@
             );
             @include box-shadow( $kendo-scheduler-event-selected-shadow );
         }
-    }
-    .k-event-inverse {
-        color: k-contrast-legacy( $kendo-scheduler-event-text );
-    }
-    .k-event-ongoing {
-        @include box-shadow( $kendo-scheduler-event-ongoing-shadow );
+
+        &.k-event-inverse {
+            color: k-contrast-legacy( $kendo-scheduler-event-text );
+        }
+
+        &.k-event-ongoing {
+            @include box-shadow( $kendo-scheduler-event-ongoing-shadow );
+        }
     }
 
 
