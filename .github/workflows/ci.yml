@@ -38,7 +38,6 @@ jobs:
     needs: [ render-test-pages, create-screenshots ]
 
     steps:
-
       - name: Checkout branch
         uses: actions/checkout@v3
 
@@ -67,7 +66,7 @@ jobs:
       - name: Push changes to GitHub
         if: ${{ (env.HAS_CHANGES == 1 || env.HAS_NEW == 1) }}
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           echo "Visual tests have detected changes. Updating markup and screenshots."
 

@@ -7,15 +7,32 @@ jobs:
 
   release-stable:
     runs-on: ubuntu-latest
+    environment: upload
+
+    permissions:
+        id-token: write # Required by Akeyless
+        contents: read
+        packages: read
 
     steps:
+      - name: Import Secrets
+        id: import-secrets
+        uses: LanceMcCarthy/akeyless-action@v3
+        with:
+          access-id: ${{ secrets.GH_AKEYLESS_ACCESS_ID }}
+          static-secrets: |
+            {
+              "/WebComponents/prod/tokens/GH_TOKEN": "GH_TOKEN",
+              "/WebComponents/prod/tokens/PROGRESS_NPM_REGISTRY_TOKEN": "NPM_TOKEN"
+            }
+          export-secrets-to-environment: false
 
       - name: Checkout branch
         uses: actions/checkout@v3
         with:
           ref: master
           fetch-depth: '0'
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Setup git
         run: |
@@ -35,7 +52,7 @@ jobs:
           node-version: 18.x
           registry-url: 'https://registry.npmjs.org'
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ steps.import-secrets.outputs.NPM_TOKEN }}
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
@@ -62,14 +79,14 @@ jobs:
         run: |
           npx lerna publish --conventional-commits --conventional-graduate --create-release github --force-publish --exact
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Mark checks as successful
         run: |
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ steps.import-secrets.outputs.GH_TOKEN }}
 
       - name: Push to GitHub
         run: |
