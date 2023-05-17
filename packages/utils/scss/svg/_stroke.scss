@@ -37,7 +37,7 @@
 @mixin kendo-utils--svg--stroke() {
 
     // stroke utility classes
-    $kendo-utils-stroke: k-map-get( $kendo-utils, "stroke-stroke" ) !default;
+    $kendo-utils-stroke: k-map-get( $kendo-utils, "fill-stroke" ) !default;
     @include generate-utils( stroke, stroke, $kendo-utils-stroke );
 
 }
