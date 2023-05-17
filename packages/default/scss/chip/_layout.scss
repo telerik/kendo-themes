@@ -137,6 +137,10 @@
             padding-inline: $_padding-x;
             font-size: $_font-size;
             line-height: $_line-height;
+
+            .k-chip-action {
+                padding: $_padding-y;
+            }
         }
 
         .k-chip-avatar {
