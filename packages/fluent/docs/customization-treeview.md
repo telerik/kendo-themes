@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-indent</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>map.get( $kendo-spacing, 6 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -524,6 +524,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-checkbox-wrap-padding</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, .5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the checkbox wrapper in the TreeView.</div></div>
     </td>
 </tr>
 </tbody>
