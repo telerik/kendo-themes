@@ -138,6 +138,26 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-splitter-collapse-icon-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the collapse icon in the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-collapse-icon-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, .5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the collapse icon in the splitter.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-splitbar-bg</td>
     <td></td>
     <td><code>get-theme-color-var( neutral-10 )</code></td>

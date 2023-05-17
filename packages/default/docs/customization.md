@@ -10039,8 +10039,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-treeview-indent</td>
     <td>Number</td>
-    <td><code>16px</code></td>
-    <td><code>16px</code></td>
+    <td><code>24px</code></td>
+    <td><code>24px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The indentation of child groups in the TreeView.</div></div>
@@ -10147,6 +10147,66 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-treeview-sm-checkbox-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the checkbox in the small TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-md-checkbox-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-treeview-sm-checkbox-padding-x</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the checkbox in the medium TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-lg-checkbox-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-treeview-sm-checkbox-padding-x</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the checkbox in the large TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-sm-checkbox-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, .5 )</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the checkbox in the small TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-md-checkbox-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-treeview-sm-checkbox-padding-y</code></td>
+    <td><code>2px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the checkbox in the medium TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-lg-checkbox-padding-y</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the checkbox in the large TreeView.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-treeview-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -10154,22 +10214,28 @@ The following table lists the available variables for customizing the Default th
         font-size: $kendo-treeview-sm-font-size,
         line-height: $kendo-treeview-sm-line-height,
         item-padding-x: $kendo-treeview-sm-item-padding-x,
-        item-padding-y: $kendo-treeview-sm-item-padding-y
+        item-padding-y: $kendo-treeview-sm-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y
     ),
     md: (
         font-size: $kendo-treeview-md-font-size,
         line-height: $kendo-treeview-md-line-height,
         item-padding-x: $kendo-treeview-md-item-padding-x,
-        item-padding-y: $kendo-treeview-md-item-padding-y
+        item-padding-y: $kendo-treeview-md-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-md-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y
     ),
     lg: (
         font-size: $kendo-treeview-lg-font-size,
         line-height: $kendo-treeview-lg-line-height,
         item-padding-x: $kendo-treeview-lg-item-padding-x,
-        item-padding-y: $kendo-treeview-lg-item-padding-y
+        item-padding-y: $kendo-treeview-lg-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-lg-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
     )
 )</code></td>
-    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 8px, item-padding-y: 2px), md: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 8px, item-padding-y: 4px), lg: (font-size: 16px, line-height: 1.5, item-padding-x: 8px, item-padding-y: 8px))</code></td>
+    <td><code>(sm: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 8px, item-padding-y: 2px, checkbox-padding-x: 4px, checkbox-padding-y: 2px), md: (font-size: 14px, line-height: 1.4285714286, item-padding-x: 8px, item-padding-y: 4px, checkbox-padding-x: 4px, checkbox-padding-y: 2px), lg: (font-size: 16px, line-height: 1.5, item-padding-x: 8px, item-padding-y: 8px, checkbox-padding-x: 4px, checkbox-padding-y: null))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the TreeView.</div></div>

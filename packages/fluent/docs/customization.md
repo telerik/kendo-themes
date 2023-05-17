@@ -8180,6 +8180,16 @@ The following table lists the available variables for customizing the Fluent the
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the DropdownTree popup</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-dropdowntree-check-all-padding</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the check-all CheckBox inside the DropDownTree popup</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -23960,6 +23970,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-splitter-collapse-icon-padding-x</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the collapse icon in the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-collapse-icon-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, .5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the collapse icon in the splitter.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-splitbar-bg</td>
     <td></td>
     <td><code>get-theme-color-var( neutral-10 )</code></td>
@@ -28959,7 +28989,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-indent</td>
     <td></td>
-    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td><code>map.get( $kendo-spacing, 6 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29383,6 +29413,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Load More button in the TreeView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-checkbox-wrap-padding</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, .5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the checkbox wrapper in the TreeView.</div></div>
     </td>
 </tr>
 </tbody>

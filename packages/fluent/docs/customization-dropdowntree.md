@@ -47,6 +47,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the DropdownTree popup</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-dropdowntree-check-all-padding</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The padding of the check-all CheckBox inside the DropDownTree popup</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
