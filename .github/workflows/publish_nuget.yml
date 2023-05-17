@@ -20,8 +20,24 @@ jobs:
 
   nuget-publish:
     runs-on: ubuntu-latest
+    environment: upload
+
+    permissions:
+        id-token: write # Required by Akeyless
+        contents: read
+        packages: read
 
     steps:
+      - name: Import Secrets
+        id: import-secrets
+        uses: LanceMcCarthy/akeyless-action@v3
+        with:
+          access-id: ${{ secrets.GH_AKEYLESS_ACCESS_ID }}
+          static-secrets: |
+            {
+              "/WebComponents/prod/tokens/GH_TOKEN_PUBLISH": "GH_TOKEN_PUBLISH",
+            }
+          export-secrets-to-environment: false
 
       - name: Checkout branch
         uses: actions/checkout@v3
@@ -66,4 +82,4 @@ jobs:
           nuget sources add -username ${{ env.NUGET_USER }} -password %NUGET_API_KEY% -StorePasswordInClearText -Name github -Source ${{ env.NUGET_FEED }}
           npx lerna run nuget-push
         env:
-          NUGET_API_KEY: ${{ secrets.GH_TOKEN_PUBLISH }}
+          NUGET_API_KEY: ${{ steps.import-secrets.outputs.GH_TOKEN_PUBLISH }}
