@@ -56,52 +56,73 @@ export default () =>(
                             </colgroup>
                             <tbody className="k-table-tbody">
                                 <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon icon="caret-alt-down"></Icon>Daryl Sweeney</td>
+                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}>
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        Daryl Sweeney
+                                    </td>
                                     <td className="k-table-td">CEO</td>
                                     <td className="k-table-td">February 7, 2012</td>
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon icon="none"></Icon><Icon icon="caret-alt-right"></Icon>Guy Wooten</td>
+                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        Guy Wooten
+                                    </td>
                                     <td className="k-table-td">Chief Technical Officer</td>
                                     <td className="k-table-td">March 3, 2010</td>
                                 </tr>
                                 <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon icon="none"></Icon><Icon icon="caret-alt-right"></Icon>Priscilla Frank</td>
+                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        Priscilla Frank
+                                    </td>
                                     <td className="k-table-td">Chief Product Officer</td>
                                     <td className="k-table-td">November 30, 2014</td>
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon icon="none"></Icon><Icon icon="caret-alt-down"></Icon>Anika Vega</td>
+                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        Anika Vega
+                                    </td>
                                     <td className="k-table-td">Chief Process Officer</td>
                                     <td className="k-table-td">February 25, 2010</td>
                                 </tr>
                                 <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="caret-alt-right"></Icon>Vernon Ballard</td>
+                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        Vernon Ballard
+                                    </td>
                                     <td className="k-table-td">Director Facilities</td>
                                     <td className="k-table-td">June 26, 2015</td>
                                 </tr>
                                 <tr className="k-table-row k-footer-template">
-                                    <td className="k-table-td k-focus"><Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="none"></Icon>7 employee(s)</td>
+                                    <td className="k-table-td k-focus"><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>7 employee(s)</td>
                                     <td className="k-table-td"></td>
                                     <td className="k-table-td">Last employee hired on July 30, 2015</td>
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon icon="none"></Icon><Icon icon="caret-alt-right"></Icon>Nevada Hart</td>
+                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        Nevada Hart
+                                    </td>
                                     <td className="k-table-td">Chief Financial Officer</td>
                                     <td className="k-table-td">August 17, 2015</td>
                                 </tr>
                                 <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon icon="none"></Icon><Icon icon="caret-alt-right"></Icon>Hunter Fry</td>
+                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                        Hunter Fry
+                                    </td>
                                     <td className="k-table-td">General Counsel</td>
                                     <td className="k-table-td">February 12, 2011</td>
                                 </tr>
                                 <tr className="k-table-row k-footer-template">
-                                    <td className="k-table-td"><Icon icon="none"></Icon><Icon icon="none"></Icon>98 employee(s)</td>
+                                    <td className="k-table-td"><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>98 employee(s)</td>
                                     <td className="k-table-td"></td>
                                     <td className="k-table-td">Last employee hired on August 17, 2015</td>
                                 </tr>
                                 <tr className="k-table-row k-footer-template">
-                                    <td className="k-table-td"><Icon icon="none"></Icon>99 employee(s)</td>
+                                    <td className="k-table-td"><Icon className="k-treelist-toggle" icon="none"></Icon>99 employee(s)</td>
                                     <td className="k-table-td"></td>
                                     <td className="k-table-td">Last employee hired on August 17, 2015</td>
                                 </tr>
@@ -163,7 +184,7 @@ export default () =>(
                                         <tbody className="k-table-tbody">
                                             <tr className="k-table-row">
                                                 <td colSpan={1} className="k-table-td">
-                                                    <Icon icon="caret-alt-down"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                                     Daryl Sweeney
                                                 </td>
                                                 <td colSpan={1} className="k-table-td">
@@ -173,8 +194,8 @@ export default () =>(
                                             </tr>
                                             <tr className="k-table-row k-table-alt-row k-alt">
                                                 <td colSpan={1} className="k-table-td">
-                                                    <Icon icon="none"></Icon>
-                                                    <Icon icon="caret-alt-down"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                                     Guy Wooten
                                                 </td>
                                                 <td colSpan={1} className="k-table-td">
@@ -184,8 +205,8 @@ export default () =>(
                                             </tr>
                                             <tr className="k-table-row">
                                                 <td colSpan={1} className="k-table-td">
-                                                    <Icon icon="none"></Icon><Icon icon="none"></Icon>
-                                                    <Icon icon="caret-alt-right"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="caret-alt-right" />
                                                     Buffy Weber
                                                 </td>
                                                 <td colSpan={1} className="k-table-td">
@@ -195,7 +216,7 @@ export default () =>(
                                             </tr>
                                             <tr className="k-table-row k-footer">
                                                 <td className="k-table-td k-focus">
-                                                    <Icon icon="none"></Icon><Icon icon="none"></Icon><Icon icon="none"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
                                                     35 employee(s)
                                                 </td>
                                                 <td className="k-table-td"></td>
@@ -205,8 +226,8 @@ export default () =>(
                                             </tr>
                                             <tr className="k-table-row k-table-alt-row k-alt">
                                                 <td colSpan={1} className="k-table-td">
-                                                    <Icon icon="none"></Icon>
-                                                    <Icon icon="caret-alt-right"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="caret-alt-right"></Icon>
                                                     Priscilla Frank
                                                 </td>
                                                 <td colSpan={1} className="k-table-td">
@@ -216,7 +237,7 @@ export default () =>(
                                             </tr>
                                             <tr className="k-footer">
                                                 <td className="k-table-td">
-                                                    <Icon icon="none"></Icon><Icon icon="none"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
                                                     42 employee(s)
                                                 </td>
                                                 <td className="k-table-td"></td>
@@ -226,7 +247,7 @@ export default () =>(
                                             </tr>
                                             <tr className="k-table-row k-footer">
                                                 <td className="k-table-td">
-                                                    <Icon icon="none"></Icon>
+                                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
                                                     43 employee(s)
                                                 </td>
                                                 <td className="k-table-td"></td>

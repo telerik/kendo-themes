@@ -80,7 +80,7 @@ export default () =>(
                         <tbody className="k-table-tbody">
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                     1
                                 </td>
                                 <td className="k-table-td">Furniture</td>
@@ -90,8 +90,8 @@ export default () =>(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon icon="none"></Icon>
-                                    <Icon icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     1.1
                                 </td>
                                 <td className="k-table-td">Tables &amp; Chairs</td>
@@ -101,8 +101,8 @@ export default () =>(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon icon="none"></Icon>
-                                    <Icon icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     1.2
                                 </td>
                                 <td className="k-table-td">Sofas</td>
@@ -112,8 +112,8 @@ export default () =>(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon icon="none"></Icon>
-                                    <Icon icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     1.3
                                 </td>
                                 <td className="k-table-td">Occasional Furniture</td>
@@ -123,7 +123,7 @@ export default () =>(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                     2
                                 </td>
                                 <td className="k-table-td">Decor</td>
@@ -133,8 +133,8 @@ export default () =>(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon icon="none"></Icon>
-                                    <Icon icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     2.1
                                 </td>
                                 <td className="k-table-td">Bed Linen</td>
@@ -144,8 +144,8 @@ export default () =>(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon icon="none"></Icon>
-                                    <Icon icon="caret-alt-down"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                     2.2
                                 </td>
                                 <td className="k-table-td">Curtains &amp; Blinds</td>
@@ -155,9 +155,9 @@ export default () =>(
                             </tr>
                             <tr className="k-table-row k-master-row">
                                 <td className="k-table-td">
-                                    <Icon icon="none"></Icon>
-                                    <Icon icon="none"></Icon>
-                                    <Icon icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
+                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     2.2.1
                                 </td>
                                 <td className="k-table-td">Carpets</td>
