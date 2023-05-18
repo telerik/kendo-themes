@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
-import { Icon } from '../../icon';
 import { Upload } from '../../upload';
 import { Toolbar } from '../../toolbar';
 import { Pager } from '../../pager';
+import { Dropzone } from '../../dropzone';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -34,12 +34,7 @@ root.render(
                 <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto">
                     <div className="k-pdf-viewer-pages">
                         <div className="k-page k-blank-page">
-                            <div className="k-external-dropzone">
-                                <div className="k-dropzone-inner">
-                                    <Icon icon="upload" className="k-dropzone-icon" size="xxxlarge" />
-                                    <span className="k-dropzone-hint">Drag and drop files here to upload</span>
-                                </div>
-                            </div>
+                            <Dropzone note={false}/>
                             <Upload async empty status="upload"></Upload>
                         </div>
                     </div>
