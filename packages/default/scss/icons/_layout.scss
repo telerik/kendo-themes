@@ -56,7 +56,11 @@ $ki-icon-size: $kendo-icon-size;
     }
 
     .k-icon-action {
+        display: inline-flex;
         padding: $kendo-icon-padding;
+        line-height: 1;
+        align-items: center;
+        vertical-align: middle;
         cursor: pointer;
     }
 

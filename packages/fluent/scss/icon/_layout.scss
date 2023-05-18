@@ -32,7 +32,11 @@
     }
 
     .k-icon-action {
-        padding: var( --kendo-icon-padding, 0 );
+        display: inline-flex;
+        padding: var( --kendo-icon-padding, .25rem );
+        line-height: 1;
+        align-items: center;
+        vertical-align: middle;
         cursor: pointer;
     }
 
