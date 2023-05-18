@@ -6,6 +6,7 @@ import { DropdownList } from '../../dropdownlist';
 import { Icon } from '../../icon';
 import { MenuButton } from '../../menu-button';
 import { Toolbar, ToolbarSeparator } from '../../toolbar';
+import { MenuItem, MenuList } from '../../menu';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -77,26 +78,27 @@ root.render(
                                 <MenuButton icon="foreground-color" showArrow></MenuButton>
                                 <ToolbarSeparator></ToolbarSeparator>
                                 <MenuButton icon="droplet" showArrow></MenuButton>
-                                <MenuButton icon="borders-all" showArrow></MenuButton>
+                                <MenuButton icon="borders-all" showArrow ></MenuButton>
                                 <ToolbarSeparator></ToolbarSeparator>
-                                <MenuButton icon="align-left" showArrow></MenuButton>
-                                <Button icon="text-wrap"></Button>
-                                <ToolbarSeparator></ToolbarSeparator>
-                                <ButtonGroup>
+                                <MenuButton icon="align-left" showArrow className="k-hidden"></MenuButton>
+                                <Button icon="text-wrap" className="k-hidden"></Button>
+                                <ToolbarSeparator className="k-hidden"></ToolbarSeparator>
+                                <ButtonGroup className="k-hidden">
                                     <Button icon="decimal-decrease"></Button>
                                     <Button icon="decimal-increase"></Button>
                                 </ButtonGroup>
-                                <ToolbarSeparator></ToolbarSeparator>
-                                <Button icon="filter"></Button>
-                                <DropdownList value="Custom format" showValue={false} valueIconName="custom-format" />
-                                <Button icon="link"></Button>
-                                <ToolbarSeparator></ToolbarSeparator>
-                                <Button icon="image"></Button>
-                                <Button icon="comment"></Button>
-                                <ToolbarSeparator></ToolbarSeparator>
-                                <MenuButton icon="pane-freeze" showArrow></MenuButton>
-                                <MenuButton icon="cells-merge" showArrow></MenuButton>
-                                <Button icon="borders-none"></Button>
+                                <Button icon="more-vertical"></Button>
+                                <ToolbarSeparator className="k-hidden"></ToolbarSeparator>
+                                <Button icon="filter" className="k-hidden"></Button>
+                                <DropdownList className="k-hidden" value="Custom format" showValue={false} valueIconName="custom-format" />
+                                <Button className="k-hidden" icon="link"></Button>
+                                <ToolbarSeparator className="k-hidden"></ToolbarSeparator>
+                                <Button className="k-hidden" icon="image"></Button>
+                                <Button className="k-hidden" icon="comment"></Button>
+                                <ToolbarSeparator className="k-hidden"></ToolbarSeparator>
+                                <MenuButton className="k-hidden" icon="pane-freeze" showArrow></MenuButton>
+                                <MenuButton className="k-hidden" icon="cells-merge" showArrow></MenuButton>
+                                <Button className="k-hidden" icon="borders-none"></Button>
                             </Toolbar>
                         </div>
                     </div>
@@ -576,6 +578,29 @@ root.render(
                             <Button fillMode="flat" rounded={null} size={null} icon="caret-alt-right" className="k-tabstrip-next"></Button>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="k-animation-container" style={{ position: "absolute", top: "110px", left: "780px" }}>
+                <div className="k-toolbar-popup k-popup k-menu-popup">
+                    <MenuList>
+                        <MenuItem text="Alignment" icon="align-left"></MenuItem>
+                        <MenuItem text="Wrap text" icon="text-wrap"></MenuItem>
+                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuItem text="Decrease decimal" icon="decimal-decrease"></MenuItem>
+                        <MenuItem text="Increase decimal" icon="decimal-increase"></MenuItem>
+                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuItem text="Filter" icon="filter"></MenuItem>
+                        <MenuItem text="Custom format" icon="custom-format"></MenuItem>
+                        <MenuItem text="Link" icon="link"></MenuItem>
+                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuItem text="Insert image" icon="image"></MenuItem>
+                        <MenuItem text="Insert comment" icon="comment"></MenuItem>
+                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuItem text="Freeze panes" icon="pane-freeze"></MenuItem>
+                        <MenuItem text="Merge cells" icon="cells-merge"></MenuItem>
+                        <MenuItem text="Toggle gridlines" icon="borders-none"></MenuItem>
+                    </MenuList>
                 </div>
             </div>
         </div>

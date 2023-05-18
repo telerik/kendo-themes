@@ -24,7 +24,7 @@ root.render(
 
             <section>
                 <div className="k-animation-container">
-                    <div className="k-spreadsheet-filter-menu k-popup k-group k-reset">
+                    <div className="k-spreadsheet-filter-menu k-column-menu k-popup k-group k-reset">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
                                 <Icon icon="sort-asc-small"></Icon>Sort range A to Z
@@ -34,7 +34,7 @@ root.render(
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">
-                            <div className="k-spreadsheet-condition-filter k-widget k-expander">
+                            <div className="k-spreadsheet-condition-filter k-expander">
                                 <div className="k-columnmenu-item">
                                     Filter by condition
                                     <span className="k-spacer"></span>
@@ -45,7 +45,7 @@ root.render(
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">
-                            <div className="k-widget k-expander">
+                            <div className="k-expander">
                                 <div className="k-columnmenu-item">
                                     Filter by value
                                     <span className="k-spacer"></span>
@@ -82,7 +82,6 @@ root.render(
                     </div>
                 </div>
             </section>
-
         </div>
     </>
 );
