@@ -84,6 +84,11 @@
         align-items: center;
         cursor: pointer;
     }
+    .k-treeview-toggle .k-icon,
+    .k-treeview-toggle .k-svg-icon {
+        padding: var( --kendo-icon-padding, .25rem );
+        box-sizing: content-box;
+    }
 
 
     // Loading icon
@@ -95,8 +100,7 @@
     // Checkbox
     .k-treeview .k-checkbox-wrap,
     .k-treeview .k-checkbox-wrapper {
-        margin-inline-start: var( --kendo-icon-spacing, .5rem );
-        margin-inline-end: var( --kendo-icon-spacing, .5rem );
+        padding: var( --kendo-treeview-checkbox-wrap-padding, #{$kendo-treeview-checkbox-wrap-padding} );
         align-self: center;
     }
 
