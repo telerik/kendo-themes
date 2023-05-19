@@ -1,13 +1,8 @@
-import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction, ChipList } from '../../chip';
 import { Icon } from '../../icon';
 import { Pager } from '../../pager';
 import { Table, TableThead, TableTbody, TableRow, TableTh, TableTd } from '../../table';
 import { Toolbar } from '../../toolbar';
-
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-animation-container,
@@ -19,7 +14,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area">

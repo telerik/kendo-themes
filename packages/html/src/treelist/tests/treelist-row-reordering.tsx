@@ -1,11 +1,6 @@
-import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
-
-root.render(
+export default () => (
     <>
         <div id="test-area">
             <div id="treelist" className="k-treelist k-grid k-grid-md k-grid-no-scrollbar">

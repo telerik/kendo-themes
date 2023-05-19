@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
@@ -7,11 +6,7 @@ import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Treeview, TreeviewItem, TreeviewGroup } from '../../treeview';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
-
-root.render(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
