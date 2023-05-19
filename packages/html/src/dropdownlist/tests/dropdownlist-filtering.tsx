@@ -1,4 +1,4 @@
-import { DropdownListGrouping } from "../../dropdownlist";
+import { DropdownListFiltering } from "../../dropdownlist";
 
 const styles = `
     #test-area {
@@ -14,10 +14,10 @@ export default () => (
             <span>DropdownList Filtering RTL</span>
 
             <div>
-                <DropdownListGrouping placeholder="DropdownList..." />
+                <DropdownListFiltering placeholder="DropdownList..." />
             </div>
             <div dir="rtl">
-                <DropdownListGrouping placeholder="DropdownList..." />
+                <DropdownListFiltering placeholder="DropdownList..." />
             </div>
         </div>
     </>
