@@ -1,0 +1,73 @@
+@mixin kendo-core--styles--reset() {
+
+    @if $kendo-reset {
+
+        body,
+        ul,
+        ol,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        pre,
+        blockquote {
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        hr {
+            height: 0;
+            border-top-width: 1px;
+            border-bottom-width: 0;
+        }
+
+
+        *,
+        ::before,
+        ::after {
+            content: "";
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            margin: 0;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    };
+
+}
