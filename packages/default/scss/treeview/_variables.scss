@@ -29,7 +29,7 @@ $kendo-treeview-md-line-height: $kendo-line-height-md !default;
 $kendo-treeview-lg-line-height: $kendo-line-height-lg !default;
 /// The indentation of child groups in the TreeView.
 /// @group treeview
-$kendo-treeview-indent: 16px !default;
+$kendo-treeview-indent: 24px !default;
 
 /// The horizontal padding of the TreeView items.
 /// @group treeview
@@ -62,6 +62,25 @@ $kendo-treeview-item-border-width: 0px !default;
 /// @group treeview
 $kendo-treeview-item-border-radius: $kendo-border-radius-md !default;
 
+/// The horizontal padding of the checkbox in the small TreeView.
+/// @group treeview
+$kendo-treeview-sm-checkbox-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+/// The horizontal padding of the checkbox in the medium TreeView.
+/// @group treeview
+$kendo-treeview-md-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x !default;
+/// The horizontal padding of the checkbox in the large TreeView.
+/// @group treeview
+$kendo-treeview-lg-checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x !default;
+/// The vertical padding of the checkbox in the small TreeView.
+/// @group treeview
+$kendo-treeview-sm-checkbox-padding-y: k-map-get( $kendo-spacing, .5 ) !default;
+/// The vertical padding of the checkbox in the medium TreeView.
+/// @group treeview
+$kendo-treeview-md-checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y !default;
+/// The vertical padding of the checkbox in the large TreeView.
+/// @group treeview
+$kendo-treeview-lg-checkbox-padding-y: null !default;
+
 
 /// The sizes map of the TreeView.
 /// @group treeview
@@ -70,19 +89,25 @@ $kendo-treeview-sizes: (
         font-size: $kendo-treeview-sm-font-size,
         line-height: $kendo-treeview-sm-line-height,
         item-padding-x: $kendo-treeview-sm-item-padding-x,
-        item-padding-y: $kendo-treeview-sm-item-padding-y
+        item-padding-y: $kendo-treeview-sm-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-sm-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-sm-checkbox-padding-y
     ),
     md: (
         font-size: $kendo-treeview-md-font-size,
         line-height: $kendo-treeview-md-line-height,
         item-padding-x: $kendo-treeview-md-item-padding-x,
-        item-padding-y: $kendo-treeview-md-item-padding-y
+        item-padding-y: $kendo-treeview-md-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-md-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-md-checkbox-padding-y
     ),
     lg: (
         font-size: $kendo-treeview-lg-font-size,
         line-height: $kendo-treeview-lg-line-height,
         item-padding-x: $kendo-treeview-lg-item-padding-x,
-        item-padding-y: $kendo-treeview-lg-item-padding-y
+        item-padding-y: $kendo-treeview-lg-item-padding-y,
+        checkbox-padding-x: $kendo-treeview-lg-checkbox-padding-x,
+        checkbox-padding-y: $kendo-treeview-lg-checkbox-padding-y
     )
 ) !default;
 
@@ -159,3 +184,4 @@ $kendo-treeview-loadmore-focus-border: null !default;
 /// The box shadow of the focused Load More button in the TreeView.
 /// @group treeview
 $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !default;
+

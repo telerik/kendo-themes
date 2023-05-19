@@ -73,12 +73,17 @@
 
     // Treeview toggle
     .k-treeview-toggle {
-        margin-left: -$kendo-treeview-indent;
+        margin-inline-start: -$kendo-treeview-indent;
         flex: none;
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
         cursor: pointer;
+    }
+    .k-treeview-toggle .k-icon,
+    .k-treeview-toggle .k-svg-icon {
+        padding: $kendo-icon-padding;
+        box-sizing: content-box;
     }
 
 
@@ -91,8 +96,6 @@
     // Checkbox
     .k-treeview .k-checkbox-wrap,
     .k-treeview .k-checkbox-wrapper {
-        margin-left: $kendo-icon-spacing;
-        margin-right: $kendo-icon-spacing;
         align-self: center;
     }
 
@@ -148,12 +151,6 @@
             padding-right: $kendo-treeview-indent;
         }
 
-        // Treeview toggle
-        .k-treeview-toggle {
-            margin-left: 0;
-            margin-right: -$kendo-treeview-indent;
-        }
-
         // Loading
         .k-treeview-loading {
             margin-right: 0;
@@ -178,6 +175,8 @@
         $_line-height: k-map-get( $size-props, line-height);
         $_item-padding-x: k-map-get( $size-props, item-padding-x);
         $_item-padding-y: k-map-get( $size-props, item-padding-y);
+        $_checkbox-padding-x: k-map-get( $size-props, checkbox-padding-x );
+        $_checkbox-padding-y: k-map-get( $size-props, checkbox-padding-y );
 
         .k-treeview-#{$size} {
             font-size: $_font-size;
@@ -186,6 +185,11 @@
             .k-treeview-leaf {
                 padding-block: $_item-padding-y;
                 padding-inline: $_item-padding-x;
+            }
+
+            .k-checkbox-wrap {
+                padding-block: $_checkbox-padding-y;
+                padding-inline: $_checkbox-padding-x;
             }
         }
     }
