@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States, Size, Roundness } from '../utils';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness } from '../misc';
 
 export const CHECKBOX_CLASSNAME = `k-checkbox`;
 

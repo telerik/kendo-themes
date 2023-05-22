@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
 import { FloatingLabel } from '../../floating-label';
@@ -11,9 +10,6 @@ import { Upload, UploadFile } from '../../upload';
 import { Form, FormField } from '../../form';
 import { Slider, SliderTick } from '../../slider';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     section {
@@ -27,7 +23,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

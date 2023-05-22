@@ -1,6 +1,6 @@
 import { Button } from '../button';
 import { Textbox } from '../textbox';
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 
 export const CAPTCHA_CLASSNAME = `k-captcha`;
 

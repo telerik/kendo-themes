@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Autocomplete } from '../../autocomplete';
 import { Chip, ChipAction } from '../../chip';
 import { Combobox } from '../../combobox';
@@ -6,9 +5,6 @@ import { DropdownList } from '../../dropdownlist';
 import { MultiSelect } from '../../multiselect';
 import { Form, FormField } from '../../form';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     section {
@@ -17,7 +13,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

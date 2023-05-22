@@ -1,9 +1,5 @@
-import ReactDOM from 'react-dom/client';
 import { TimeDurationPicker } from '../../timedurationpicker';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     #test-area {
@@ -11,7 +7,7 @@ const style = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
 

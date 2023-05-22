@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 import { Table } from './../table';
 
 const className = `k-table-header`;

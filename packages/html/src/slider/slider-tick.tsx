@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 const SLIDER_TICK_CLASSNAME = 'k-tick';
 

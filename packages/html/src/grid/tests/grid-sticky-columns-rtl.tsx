@@ -1,13 +1,9 @@
-import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 import { Pager } from '../../pager';
 import { Chip, ChipList, ChipAction } from '../../chip';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
             <p>React Grid - Sticky columns - RTL</p>

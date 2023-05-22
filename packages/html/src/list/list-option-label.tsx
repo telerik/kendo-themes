@@ -1,4 +1,4 @@
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 
 const LIST_OPTIONLABEL_CLASSNAME = `k-list-optionlabel`;
 

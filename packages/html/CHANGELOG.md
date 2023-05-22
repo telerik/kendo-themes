@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.5](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.4...v6.4.0-dev.5) (2023-05-22)
+
+
+### Features
+
+* **html:** add dropzone component and use it in tests ([c34b650](https://github.com/telerik/kendo-themes/commit/c34b6504510703dd20b27ce9dc07a35c1cbf45e2))
+
+
+
+
+
 # [6.4.0-dev.4](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.3...v6.4.0-dev.4) (2023-05-15)
 
 

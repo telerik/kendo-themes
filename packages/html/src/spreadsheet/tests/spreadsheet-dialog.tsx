@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Window } from '../../window';
 import { Textarea } from '../../textarea';
 import { Button } from '../../button';
@@ -9,9 +8,6 @@ import { DropdownList } from '../../dropdownlist';
 import { Upload } from '../../upload';
 import { Dropzone } from '../../dropzone';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     .k-window {
@@ -20,7 +16,7 @@ const style = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

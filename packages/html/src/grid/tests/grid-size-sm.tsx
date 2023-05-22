@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Chip, ChipAction, ChipList } from '../../chip';
@@ -9,9 +8,6 @@ import { Pager } from '../../pager';
 import { Textbox } from '../../textbox';
 import { Toolbar } from '../../toolbar';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-grouping-header .k-grouping-dropclue {
@@ -22,7 +18,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">

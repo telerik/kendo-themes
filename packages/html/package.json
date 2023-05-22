@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-themes-html",
   "description": "A collection of HTML helpers used for developing Kendo UI themes",
-  "version": "6.4.0-dev.4",
+  "version": "6.4.0-dev.5",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -10,7 +10,12 @@
     "HTML",
     "Helpers"
   ],
-  "main": "dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "types": "./dist/types/index.d.ts"
+  },
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts",
@@ -31,10 +36,11 @@
     "access": "public"
   },
   "scripts": {
+    "start": "node ./scripts/start",
     "build": "node ./scripts/build.js && npm run typegen",
-    "typegen": "tsc --emitDeclarationOnly --declaration --declarationDir dist/",
+    "typegen": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types/",
     "build:tests": "node ./scripts/build-tests.js",
-    "check-types": "npx tsc src/index.ts --noEmit --emitDeclarationOnly false --jsx react-jsx",
+    "check-types": "npx tsc --noEmit --emitDeclarationOnly false --project tsconfig.json ",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {

@@ -1,5 +1,5 @@
-import { classNames, optionClassNames, Size } from '../utils';
 import { TreeviewGroup, TreeviewItem } from '../treeview';
+import { classNames, optionClassNames, Size } from '../misc';
 
 export const TREEVIEW_CLASSNAME = `k-treeview`;
 

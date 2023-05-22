@@ -1,4 +1,4 @@
-import { Size, ThemeColor } from '../utils';
+import { Size, ThemeColor } from '../misc';
 import FontIcon from './font-icon.spec';
 import SvgIcon from './svg-icon.spec';
 import * as SVGIcons from '@progress/kendo-svg-icons';

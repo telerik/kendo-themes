@@ -1,16 +1,12 @@
-import ReactDOM from 'react-dom/client';
 import { DropdownList } from '../../dropdownlist';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
 import { Form, FormField } from '../../form';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = { border: '1px solid grey', padding: '10px' };
 
-root.render(
+export default () =>(
     <>
         <div id="test-area">
             <div>Form Sizes</div>

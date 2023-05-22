@@ -1,5 +1,5 @@
 import { Toolbar } from '../toolbar';
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 export const EDITORTOOLBAR_CLASSNAME = `k-editor-toolbar`;
 

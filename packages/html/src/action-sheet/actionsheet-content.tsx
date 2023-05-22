@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 export const ACTIONSHEETCONTENT_CLASSNAME = `k-actionsheet-titlebar`;
 

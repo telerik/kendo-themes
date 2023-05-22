@@ -1,9 +1,5 @@
-import ReactDOM from 'react-dom/client';
 import { RadioButton } from '../../radio';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-ripple-container .k-radio:focus::after,
@@ -12,7 +8,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">

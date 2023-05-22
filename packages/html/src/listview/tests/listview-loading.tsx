@@ -1,9 +1,5 @@
-import ReactDOM from 'react-dom/client';
 import { ListView, ListViewItem } from '../../listview';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-listview {
@@ -11,7 +7,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area">

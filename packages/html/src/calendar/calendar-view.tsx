@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 import { CalendarTable } from '../calendar';
 
 const className = `k-calendar-view`;

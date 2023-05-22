@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { classNames, stateClassNames, States } from '../utils';
+import { classNames, stateClassNames, States } from '../misc';
 import { Icon } from '../icon';
 
 const EXPANSION_PANEL_CLASSNAME = 'k-expander';

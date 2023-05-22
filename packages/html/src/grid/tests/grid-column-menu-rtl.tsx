@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
@@ -7,9 +6,6 @@ import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Textbox } from '../../textbox';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     .k-animation-container,
@@ -23,7 +19,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3 k-rtl" dir="rtl">

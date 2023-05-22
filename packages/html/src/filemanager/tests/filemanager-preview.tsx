@@ -1,15 +1,11 @@
-import ReactDOM from 'react-dom/client';
 import { Breadcrumb, BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
 import { Treeview, TreeviewItem } from '../../treeview';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 

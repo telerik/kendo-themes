@@ -1,4 +1,4 @@
-import { classNames } from '../utils';
+import { classNames } from '../misc';
 
 export const CARDFOOTER_CLASSNAME = `k-card-footer`;
 

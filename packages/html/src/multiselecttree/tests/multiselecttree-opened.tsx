@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction } from '../../chip';
 import { MultiSelectTree } from '..';
 import { Checkbox } from '../../checkbox';
@@ -6,9 +5,6 @@ import { Textbox } from '../../textbox';
 import { Icon } from '../../icon';
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const styles = `
     #test-area {
@@ -16,7 +12,7 @@ const styles = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">

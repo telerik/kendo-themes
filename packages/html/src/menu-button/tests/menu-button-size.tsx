@@ -1,9 +1,5 @@
-import ReactDOM from 'react-dom/client';
 import { MenuButton } from '../../menu-button';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
 const style = `
     #test-area {
@@ -16,7 +12,7 @@ const style = `
     }
 `;
 
-root.render(
+export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid">

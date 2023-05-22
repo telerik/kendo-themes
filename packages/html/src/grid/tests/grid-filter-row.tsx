@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client';
 import { Autocomplete } from '../../autocomplete';
 import { Button } from '../../button';
 import { ColorPicker } from '../../colorpicker';
@@ -10,11 +9,8 @@ import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { TimePicker } from '../../timepicker';
 
-const root = ReactDOM.createRoot(
-    document.getElementById('app') as HTMLElement
-);
 
-root.render(
+export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
