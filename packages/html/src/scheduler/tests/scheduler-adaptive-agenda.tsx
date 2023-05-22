@@ -24,7 +24,7 @@ root.render(
                                         <Button className="k-create-event" icon="plus"></Button>
                                     </ButtonGroup>
                                     <span className="k-spacer"></span>
-                                    <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
+                                    <select className="k-views-dropdown k-picker k-picker-solid k-dropdown-list k-dropdown k-rounded-md">
                                         <option>Agenda</option>
                                     </select>
                                 </Toolbar>
