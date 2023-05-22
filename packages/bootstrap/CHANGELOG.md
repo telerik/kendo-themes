@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.5](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.4...v6.4.0-dev.5) (2023-05-22)
+
+
+### Features
+
+* **spreadsheet:** adopt design revision ([f2f8a57](https://github.com/telerik/kendo-themes/commit/f2f8a57e30e4215c56942da48771f129526e1e7c))
+
+
+
+
+
 # [6.4.0-dev.4](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.3...v6.4.0-dev.4) (2023-05-15)
 
 
