@@ -29,7 +29,7 @@ root.render(
                                 <Button selected>Week</Button>
                                 <Button>Month</Button>
                             </ButtonGroup>
-                            <select className="k-picker k-dropdown-list k-dropdown k-views-dropdown k-rounded-md">
+                            <select className="k-picker k-picker-solid k-dropdown-list k-dropdown k-views-dropdown k-rounded-md">
                                 <option value="day">Day</option>
                                 <option value="week">Week</option>
                                 <option value="month">Month</option>
