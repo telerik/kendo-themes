@@ -488,6 +488,7 @@
         position: absolute;
         background: none;
         cursor: row-resize;
+        z-index: 2;
     }
 
     .k-row-resizer {
