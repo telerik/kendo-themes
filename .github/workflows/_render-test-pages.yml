@@ -112,7 +112,6 @@ jobs:
 
       - name: Build test assets
         run: |
-          npm run build:scripts
           npm run build:tests
 
       - name: Update markup snapshots
