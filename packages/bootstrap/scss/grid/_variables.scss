@@ -84,6 +84,21 @@ $kendo-grid-md-group-dropclue-height: $kendo-grid-group-drop-hint-height !defaul
 $kendo-grid-md-selection-aggregates-padding-x: $kendo-grid-padding-y !default;
 $kendo-grid-md-selection-aggregates-padding-y: $kendo-grid-padding-y !default;
 
+$kendo-grid-lg-padding-x: $kendo-table-lg-cell-padding-x !default;
+$kendo-grid-lg-padding-y: $kendo-table-lg-cell-padding-y !default;
+$kendo-grid-lg-header-padding-x: $kendo-grid-lg-padding-x !default;
+$kendo-grid-lg-header-padding-y: $kendo-grid-lg-padding-y !default;
+$kendo-grid-lg-grouping-header-padding-x: $kendo-grid-lg-padding-x !default;
+$kendo-grid-lg-grouping-header-padding-y: $kendo-grid-lg-padding-y !default;
+$kendo-grid-lg-cell-padding-x: $kendo-grid-lg-padding-x !default;
+$kendo-grid-lg-cell-padding-y: $kendo-grid-lg-padding-y !default;
+$kendo-grid-lg-filter-cell-padding-x: $kendo-grid-lg-padding-y !default;
+$kendo-grid-lg-filter-cell-padding-y: $kendo-grid-lg-filter-cell-padding-x !default;
+$kendo-grid-lg-edit-cell-padding-x: $kendo-grid-lg-cell-padding-x !default;
+$kendo-grid-lg-edit-cell-padding-y: 6px !default;
+$kendo-grid-lg-group-dropclue-height: calc( #{$kendo-chip-lg-calc-size} + #{$kendo-grid-group-drop-hint-size}) !default;
+$kendo-grid-lg-selection-aggregates-padding-x: $kendo-grid-lg-padding-y !default;
+$kendo-grid-lg-selection-aggregates-padding-y: $kendo-grid-lg-padding-y !default;
 
 // Kendo Grid sizes
 $kendo-grid-sizes: (
@@ -121,6 +136,23 @@ $kendo-grid-sizes: (
         selection-aggregates-padding-x: $kendo-grid-md-selection-aggregates-padding-x,
         selection-aggregates-padding-y: $kendo-grid-md-selection-aggregates-padding-y
     ),
+    lg: (
+        header-padding-x: $kendo-grid-lg-header-padding-x,
+        header-padding-y: $kendo-grid-lg-header-padding-y,
+        grouping-header-padding-x: $kendo-grid-lg-grouping-header-padding-x,
+        grouping-header-padding-y: $kendo-grid-lg-grouping-header-padding-y,
+        cell-padding-x: $kendo-grid-lg-cell-padding-x,
+        cell-padding-y: $kendo-grid-lg-cell-padding-y,
+        filter-cell-padding-x: $kendo-grid-lg-filter-cell-padding-x,
+        filter-cell-padding-y: $kendo-grid-lg-filter-cell-padding-y,
+        edit-cell-padding-x: $kendo-grid-lg-edit-cell-padding-x,
+        edit-cell-padding-y: $kendo-grid-lg-edit-cell-padding-y,
+        button-padding-y: $kendo-button-lg-padding-y,
+        button-calc-size: $kendo-button-lg-calc-size,
+        group-dropclue-height: $kendo-grid-lg-group-dropclue-height,
+        selection-aggregates-padding-x: $kendo-grid-lg-selection-aggregates-padding-x,
+        selection-aggregates-padding-y: $kendo-grid-lg-selection-aggregates-padding-y,
+    )
 ) !default;
 
 $kendo-grid-header-font-size: null !default;

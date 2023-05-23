@@ -66,6 +66,7 @@ $kendo-chip-lg-line-height: $kendo-chip-line-height !default;
 /// @group chip
 $kendo-chip-calc-size: calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} ) !default;
 $kendo-chip-sm-calc-size: calc( #{$kendo-chip-sm-line-height * 1em} + #{$kendo-chip-sm-padding-y * 2} + #{$kendo-chip-border-width * 2} ) !default;
+$kendo-chip-lg-calc-size: calc( #{$kendo-chip-lg-line-height * 1em} + #{$kendo-chip-lg-padding-y * 2} + #{$kendo-chip-border-width * 2} ) !default;
 
 /// The map with the sizes of the Chip.
 /// @group chip
