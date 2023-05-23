@@ -9,13 +9,13 @@ const PORT = 18111;
 const HOST = 'localhost';
 const TESTS_PATH = './packages/html/dist';
 const OUTPUT_PATH = './tests';
-const COMPONENT_PAGE_EXT = '.html';
+const COMPONENT_PAGE_EXT = 'app.js';
 
-function pathUrl(path) {
-    return `http://${HOST}:${PORT}/${path.replace('./', '')}`;
+function pathUrl(url) {
+    return `http://${HOST}:${PORT}/${path.dirname(url).replace('./', '')}`;
 }
 
-const files = globSync(`${TESTS_PATH}/**/*${COMPONENT_PAGE_EXT}`, { dotRelative: true });
+const files = globSync(`${TESTS_PATH}/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true });
 const pages = files.map(path => [ path, pathUrl(path) ]);
 
 function arrayChunks( array, chunkCount ) {
