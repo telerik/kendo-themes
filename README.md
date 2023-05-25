@@ -26,7 +26,6 @@ There are additional commands, which can be found in [`package.json`](package.js
 ## Directory structure
 
 * [build](build) -- various bash scripts
-* [docs](docs) -- seed for documentation site
 * [lib](lib) -- files which we didn't put elsewhere
 * [packages](packages)
   * theme-name
@@ -36,7 +35,7 @@ There are additional commands, which can be found in [`package.json`](package.js
     * scripts -- theme specific javascript files
     * scss -- source of the themes
 * [scripts](scripts) -- various javascript files
-* [tests](tests) -- unit and visual tests
+* [tests](tests) -- visual tests
 
 ## Development
 
