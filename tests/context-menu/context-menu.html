@@ -9,63 +9,64 @@
 </head>
 <body id="app" class="k-body">
     <style>
-        .wrap,
-        .k-animation-container {
+        .wrap {
+            position: relative;
+            width: min-content;
+        }
+        .k-animation-container:first-of-type {
             width: min-content;
             position: relative;
-            overflow: visible;
-        }
-        .child-menu {
-            position: absolute;
-            left: 100%;
-            top: 0;
         }
 
     </style>
     <div id="test-area" class="k-d-grid">
         <section class="wrap">
-            <div class="k-animation-container">
-                <div class="k-menu-popup k-popup">
-                    <ul class="k-context-menu k-menu-group k-menu-group-md">
-                        <li class="k-menu-item k-item">
-                            <span class="k-link k-menu-link k-selected">
-                                <span class="k-menu-link-text">Item 1</span>
-                                <span class="k-menu-expand-arrow">
-                                    <span class="k-svg-icon k-svg-i-caret-alt-right">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M352 256 160 384V128l192 128z"></path>
-                                        </svg>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-menu-popup k-popup">
+                        <ul class="k-context-menu k-menu-group k-menu-group-md">
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link k-selected">
+                                    <span class="k-menu-link-text">Item 1</span>
+                                    <span class="k-menu-expand-arrow">
+                                        <span class="k-svg-icon k-svg-i-caret-alt-right">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M352 256 160 384V128l192 128z"></path>
+                                            </svg>
+                                        </span>
                                     </span>
                                 </span>
-                            </span>
-                        </li>
-                        <li class="k-menu-item k-item">
-                            <span class="k-link k-menu-link">
-                                <span class="k-menu-link-text">Item 2</span>
-                            </span>
-                        </li>
-                        <li class="k-menu-item k-item">
-                            <span class="k-link k-menu-link">
-                                <span class="k-menu-link-text">Item 3</span>
-                            </span>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Item 2</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Item 3</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="k-animation-container child-menu">
-                <div class="k-menu-popup k-popup">
-                    <ul class="k-context-menu k-menu-group k-menu-group-md">
-                        <li class="k-menu-item k-item">
-                            <span class="k-link k-menu-link">
-                                <span class="k-menu-link-text">Item 1.1</span>
-                            </span>
-                        </li>
-                        <li class="k-menu-item k-item">
-                            <span class="k-link k-menu-link">
-                                <span class="k-menu-link-text">Item 1.2</span>
-                            </span>
-                        </li>
-                    </ul>
+            <div class="k-animation-container k-animation-container-shown" style="left: 100%; top: 0px;">
+                <div class="k-child-animation-container">
+                    <div class="k-menu-popup k-popup">
+                        <ul class="k-context-menu k-menu-group k-menu-group-md">
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Item 1.1</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Item 1.2</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
