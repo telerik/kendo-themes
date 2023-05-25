@@ -3,6 +3,7 @@ import { Icon } from '../../icon';
 import { Pager } from '../../pager';
 import { Table, TableThead, TableTbody, TableRow, TableTh, TableTd } from '../../table';
 import { Toolbar } from '../../toolbar';
+import { Popup } from '../../popup';
 
 
 const styles = `
@@ -141,22 +142,18 @@ export default () => (
                 </div>
             </section>
 
-            <div className="k-animation-container">
-                <div className="k-child-animation-container">
-                    <div className="k-column-menu k-popup k-grid-columnmenu-popup">
-                        <div className="k-columnmenu-item-wrapper">
-                            <div className="k-columnmenu-item">
-                                <div className="k-column-list-item">
-                                    <Icon icon="caret-alt-left"/>Move Previous
-                                </div>
-                                <div className="k-column-list-item">
-                                    <Icon icon="caret-alt-right"/>Move Next
-                                </div>
-                            </div>
+            <Popup className="k-column-menu k-grid-columnmenu-popup">
+                <div className="k-columnmenu-item-wrapper">
+                    <div className="k-columnmenu-item">
+                        <div className="k-column-list-item">
+                            <Icon icon="caret-alt-left"/>Move Previous
+                        </div>
+                        <div className="k-column-list-item">
+                            <Icon icon="caret-alt-right"/>Move Next
                         </div>
                     </div>
                 </div>
-            </div>
+            </Popup>
         </div>
     </>
 );

@@ -46,18 +46,16 @@ export default () =>(
                                 <Icon icon="caret-alt-down"></Icon>
                             </span>
                         </span>
-                        <div className="k-animation-container k-animation-container-fixed k-animation-container-shown">
-                            <Popup className="k-menu-popup">
-                                <MenuList>
-                                    <MenuItem text="Disabled" disabled></MenuItem>
-                                    <MenuItem text="Normal"></MenuItem>
-                                    <MenuItem text="Hover" hover showArrow></MenuItem>
-                                    <MenuItem text="Active" active showArrow></MenuItem>
-                                    <MenuItem text="Focus" focus></MenuItem>
-                                    <MenuItem text="Focus & Active" active focus></MenuItem>
-                                </MenuList>
-                            </Popup>
-                        </div>
+                        <Popup className="k-menu-popup" positionMode="fixed">
+                            <MenuList>
+                                <MenuItem text="Disabled" disabled></MenuItem>
+                                <MenuItem text="Normal"></MenuItem>
+                                <MenuItem text="Hover" hover showArrow></MenuItem>
+                                <MenuItem text="Active" active showArrow></MenuItem>
+                                <MenuItem text="Focus" focus></MenuItem>
+                                <MenuItem text="Focus & Active" active focus></MenuItem>
+                            </MenuList>
+                        </Popup>
                     </li>
                     <li className="k-item k-menu-item k-focus">
                         <span className="k-link k-menu-link">
@@ -126,18 +124,16 @@ export default () =>(
                                 <Icon icon="caret-alt-down"></Icon>
                             </span>
                         </span>
-                        <div className="k-animation-container k-animation-container-fixed k-animation-container-shown">
-                            <Popup className="k-menu-popup">
-                                <MenuList dir="rtl">
-                                    <MenuItem text="Disabled" disabled></MenuItem>
-                                    <MenuItem text="Normal"></MenuItem>
-                                    <MenuItem text="Hover" hover showArrow></MenuItem>
-                                    <MenuItem text="Active" active showArrow></MenuItem>
-                                    <MenuItem text="Focus" focus></MenuItem>
-                                    <MenuItem text="Focus & Active" active focus></MenuItem>
-                                </MenuList>
-                            </Popup>
-                        </div>
+                        <Popup className="k-menu-popup" positionMode="fixed">
+                            <MenuList dir="rtl">
+                                <MenuItem text="Disabled" disabled></MenuItem>
+                                <MenuItem text="Normal"></MenuItem>
+                                <MenuItem text="Hover" hover showArrow></MenuItem>
+                                <MenuItem text="Active" active showArrow></MenuItem>
+                                <MenuItem text="Focus" focus></MenuItem>
+                                <MenuItem text="Focus & Active" active focus></MenuItem>
+                            </MenuList>
+                        </Popup>
                     </li>
                     <li className="k-item k-menu-item k-focus">
                         <span className="k-link k-menu-link">

@@ -1,3 +1,4 @@
+import { AnimationContainer } from '../../animation-container';
 
 
 const style = `
@@ -25,7 +26,7 @@ export default () =>(
             <span>No Data</span>
 
             <section>
-                <div className="k-animation-container" style={{ width: "220px" }} >
+                <AnimationContainer style={{ width: "220px" }} >
                     <div className="k-widget k-tooltip k-scheduler-tooltip" style={{ width: "220px" }} >
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title k-text-center">
@@ -54,11 +55,11 @@ export default () =>(
                         </div>
                         <div className="k-callout k-callout-w" style={{ top: "45px" }} ></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
 
             <section>
-                <div className="k-animation-container" style={{ width: "220px" }} >
+                <AnimationContainer style={{ width: "220px" }} >
                     <div className="k-widget k-tooltip k-scheduler-tooltip" style={{ width: "220px" }} >
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title k-text-center">
@@ -69,7 +70,7 @@ export default () =>(
                         </div>
                         <div className="k-callout k-callout-w" style={{ top: "45px" }} ></div>
                     </div>
-                </div>
+                </AnimationContainer>
             </section>
 
         </div>

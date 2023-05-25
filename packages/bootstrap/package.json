@@ -38,6 +38,7 @@
   },
   "scripts": {
     "build": "sass-build",
+    "watch": "node ../../scripts/watch-theme",
     "sass": "sass-build",
     "sass:standalone": "sass-build -c sass-standalone.config.js",
     "docs": "node ../../scripts/sassdoc.js",

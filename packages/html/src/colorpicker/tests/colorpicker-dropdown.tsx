@@ -1,5 +1,6 @@
 import { ColorPicker } from '../../colorpicker';
 import { ColorEditor } from '../../coloreditor';
+import { Popup } from '../../popup';
 
 
 const styles = `
@@ -25,28 +26,19 @@ export default () =>(
                 <div style={{ position: "relative" }}>
                     <ColorPicker />
 
-                    <div className="k-animation-container k-animation-container-shown" style={{ position: "relative", width: "min-content" }}>
-                        <div className="k-child-animation-container">
-                            <div className="k-popup k-color-picker-popup">
-                                <ColorEditor group color="rgba(0,0,0, 0.5)" currentColor="fuchsia" />
-                            </div>
-                        </div>
-                    </div>
+                    <Popup className="k-color-picker-popup">
+                        <ColorEditor group color="rgba(0,0,0, 0.5)" currentColor="fuchsia" />
+                    </Popup>
                 </div>
-
             </section>
 
             <section>
                 <div style={{ position: "relative" }}>
                     <ColorPicker value="fuchsia" />
 
-                    <div className="k-animation-container k-animation-container-shown">
-                        <div className="k-child-animation-container">
-                            <div className="k-popup k-color-picker-popup">
-                                <ColorEditor group view="palette" color="rgba(0,0,0, 0.5)" currentColor="fuchsia" />
-                            </div>
-                        </div>
-                    </div>
+                    <Popup className="k-color-picker-popup">
+                        <ColorEditor group view="palette" color="rgba(0,0,0, 0.5)" currentColor="fuchsia" />
+                    </Popup>
                 </div>
 
             </section>

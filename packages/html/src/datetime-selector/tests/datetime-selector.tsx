@@ -1,4 +1,5 @@
-import DateTimeSelector from '../datetime-selector.spec';
+import { DateTimeSelector } from '..';
+import { Popup } from '../../popup';
 
 
 const style = `
@@ -6,7 +7,6 @@ const style = `
         width: min-content;
         max-width: 100%;
         position: relative;
-        overflow: visible;
     }
 `;
 
@@ -19,19 +19,15 @@ export default () =>(
             <span>Time tab</span>
 
             <section>
-                <div className="k-animation-container">
-                    <div className="k-popup k-reset k-datetime-container">
-                        <DateTimeSelector />
-                    </div>
-                </div>
+                <Popup className="k-datetime-container">
+                    <DateTimeSelector />
+                </Popup>
             </section>
 
             <section>
-                <div className="k-animation-container">
-                    <div className="k-popup k-reset k-datetime-container">
-                        <DateTimeSelector tab="time" />
-                    </div>
-                </div>
+                <Popup className="k-datetime-container">
+                    <DateTimeSelector tab="time" />
+                </Popup>
             </section>
 
         </div>

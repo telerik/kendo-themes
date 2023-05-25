@@ -138,7 +138,7 @@ export const DropdownTree = (
                 />
             </Picker>
             { opened && popup &&
-                <Popup className="k-dropdowntree-popup" dir={dir}>
+                <Popup className="k-list-container k-dropdowntree-popup" dir={dir}>
                     {popup}
                 </Popup>
             }
