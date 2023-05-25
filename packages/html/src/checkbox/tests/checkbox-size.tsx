@@ -1,4 +1,4 @@
-import { Checkbox } from '../../checkbox';
+import { Checkbox, CheckboxLabel } from '../../checkbox';
 
 
 const styles = `
@@ -18,103 +18,53 @@ export default () =>(
             <span>Large</span>
 
             <span></span>
-            <div>
-                <Checkbox size="small" id="ch1" checked />
-                <label className="k-checkbox-label" htmlFor="ch1">Checked</label>
-            </div>
-            <div>
-                <Checkbox size="medium" id="ch1" checked />
-                <label className="k-checkbox-label" htmlFor="ch1">Checked</label>
-            </div>
-            <div>
-                <Checkbox size="large" id="ch1" checked />
-                <label className="k-checkbox-label" htmlFor="ch1">Checked</label>
-            </div>
+            {Checkbox.options.size.map((size) => (
+                <div key={size}>
+                    <CheckboxLabel size={size} id="ch1" checked >Checked</CheckboxLabel>
+                </div>
+            ))}
 
             <span></span>
-            <div>
-                <Checkbox size="small" id="ch2" disabled checked />
-                <label className="k-checkbox-label" htmlFor="ch2">Checked</label>
-            </div>
-            <div>
-                <Checkbox size="medium" id="ch2" disabled checked />
-                <label className="k-checkbox-label" htmlFor="ch2">Checked</label>
-            </div>
-            <div>
-                <Checkbox size="large" id="ch2" disabled checked />
-                <label className="k-checkbox-label" htmlFor="ch2">Checked</label>
-            </div>
+            {Checkbox.options.size.map((size) => (
+                <div key={size}>
+                    <CheckboxLabel size={size} id="ch1" disabled checked >Checked</CheckboxLabel>
+                </div>
+            ))}
 
             <span></span>
-            <div>
-                <Checkbox size="small" id="ch3" />
-                <label className="k-checkbox-label" htmlFor="ch3">Unchecked</label>
-            </div>
-            <div>
-                <Checkbox size="medium" id="ch3" />
-                <label className="k-checkbox-label" htmlFor="ch3">Unchecked</label>
-            </div>
-            <div>
-                <Checkbox size="large" id="ch3" />
-                <label className="k-checkbox-label" htmlFor="ch3">Unchecked</label>
-            </div>
+            {Checkbox.options.size.map((size) => (
+                <div key={size}>
+                    <CheckboxLabel size={size} id="ch3" >Unchecked</CheckboxLabel>
+                </div>
+            ))}
 
             <span></span>
-            <div>
-                <Checkbox size="small" id="ch4" disabled />
-                <label className="k-checkbox-label" htmlFor="ch4">Unchecked</label>
-            </div>
-            <div>
-                <Checkbox size="medium" id="ch4" disabled />
-                <label className="k-checkbox-label" htmlFor="ch4">Unchecked</label>
-            </div>
-            <div>
-                <Checkbox size="large" id="ch4" disabled />
-                <label className="k-checkbox-label" htmlFor="ch4">Unchecked</label>
-            </div>
+            {Checkbox.options.size.map((size) => (
+                <div key={size}>
+                    <CheckboxLabel size={size} id="ch4" disabled >Unchecked</CheckboxLabel>
+                </div>
+            ))}
 
             <span></span>
-            <div>
-                <Checkbox size="small" id="chInd" indeterminate />
-                <label className="k-checkbox-label" htmlFor="chInd">Indeterminate</label>
-            </div>
-            <div>
-                <Checkbox size="medium" id="chInd" indeterminate />
-                <label className="k-checkbox-label" htmlFor="chInd">Indeterminate</label>
-            </div>
-            <div>
-                <Checkbox size="large" id="chInd" indeterminate />
-                <label className="k-checkbox-label" htmlFor="chInd">Indeterminate</label>
-            </div>
+            {Checkbox.options.size.map((size) => (
+                <div key={size}>
+                    <CheckboxLabel size={size} id="chInd" indeterminate >Indeterminate</CheckboxLabel>
+                </div>
+            ))}
 
             <span></span>
-            <div>
-                <Checkbox size="small" id="chIndDis" indeterminate disabled />
-                <label className="k-checkbox-label" htmlFor="chIndDis">Indeterminate</label>
-            </div>
-            <div>
-                <Checkbox size="medium" id="chIndDis" indeterminate disabled />
-                <label className="k-checkbox-label" htmlFor="chIndDis">Indeterminate</label>
-            </div>
-            <div>
-                <Checkbox size="large" id="chIndDis" indeterminate disabled />
-                <label className="k-checkbox-label" htmlFor="chIndDis">Indeterminate</label>
-            </div>
+            {Checkbox.options.size.map((size) => (
+                <div key={size}>
+                    <CheckboxLabel size={size} id="chIndDis" indeterminate disabled >Indeterminate</CheckboxLabel>
+                </div>
+            ))}
 
             <span></span>
-            <div>
-                <Checkbox size="small" id="chError" invalid required/>
-                <label className="k-checkbox-label" htmlFor="chError">Invalid</label>
-            </div>
-            <div>
-                <Checkbox size="medium" id="chError" invalid required/>
-                <label className="k-checkbox-label" htmlFor="chError">Invalid</label>
-            </div>
-            <div>
-                <Checkbox size="large" id="chError" invalid required/>
-                <label className="k-checkbox-label" htmlFor="chError">Invalid</label>
-            </div>
-
+            {Checkbox.options.size.map((size) => (
+                <div key={size}>
+                    <CheckboxLabel size={size} id="chError" invalid required>Invalid</CheckboxLabel>
+                </div>
+            ))}
         </div>
     </>
 );

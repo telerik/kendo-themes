@@ -1,4 +1,4 @@
-import { Checkbox } from '../../checkbox';
+import { Checkbox, CheckboxNormal } from '../../checkbox';
 
 
 const styles = `
@@ -17,48 +17,23 @@ export default () =>(
             <span>medium</span>
             <span>large</span>
 
-            <span>small</span>
-            <span>
-                <Checkbox size="small" rounded="small" checked />
-                checkbox
-            </span>
-            <span>
-                <Checkbox size="medium" rounded="small" checked />
-                checkbox
-            </span>
-            <span>
-                <Checkbox size="large" rounded="small" checked />
-                checkbox
-            </span>
-
-            <span>medium</span>
-            <span>
-                <Checkbox size="small" rounded="medium" checked />
-                checkbox
-            </span>
-            <span>
-                <Checkbox size="medium" rounded="medium" checked />
-                checkbox
-            </span>
-            <span>
-                <Checkbox size="large" rounded="medium" checked />
-                checkbox
-            </span>
-
-            <span>large</span>
-            <span>
-                <Checkbox size="small" rounded="large" checked />
-                checkbox
-            </span>
-            <span>
-                <Checkbox size="medium" rounded="large" checked />
-                checkbox
-            </span>
-            <span>
-                <Checkbox size="large" rounded="large" checked />
-                checkbox
-            </span>
-
+            {[ null,...Checkbox.options.rounded ].map((rounded) => (
+                <>
+                    <span>{rounded || 'none'}</span>
+                    <span>
+                        <CheckboxNormal size="small" rounded={rounded} checked />
+                        checkbox
+                    </span>
+                    <span>
+                        <CheckboxNormal size="medium" rounded={rounded} checked />
+                        checkbox
+                    </span>
+                    <span>
+                        <CheckboxNormal size="large" rounded={rounded} checked />
+                        checkbox
+                    </span>
+                </>
+            ))}
         </div>
     </>
 );
