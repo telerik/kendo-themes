@@ -15,7 +15,7 @@ function pathUrl(url) {
     return `http://${HOST}:${PORT}/${path.dirname(url).replace('./', '')}`;
 }
 
-const files = globSync(`${TESTS_PATH}/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true });
+const files = globSync(`${TESTS_PATH}/!(utils)/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true });
 const pages = files.map(path => [ path, pathUrl(path) ]);
 
 function arrayChunks( array, chunkCount ) {
