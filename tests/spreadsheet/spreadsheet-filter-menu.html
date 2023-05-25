@@ -18,179 +18,181 @@
     </style>
     <div id="test-area" class="k-d-grid">
         <section>
-            <div class="k-animation-container">
-                <div class="k-spreadsheet-filter-menu k-column-menu k-popup k-group k-reset">
-                    <div class="k-columnmenu-item-wrapper">
-                        <div class="k-columnmenu-item">
-                            <span class="k-svg-icon k-svg-i-sort-asc-small">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M256 192v224h-32V192h-96L240 64l112 128h-96z"></path>
-                                </svg>
-                            </span>Sort range A to Z
-                        </div>
-                        <div class="k-columnmenu-item">
-                            <span class="k-svg-icon k-svg-i-sort-desc-small">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M352 288 240 416 128 288h96V64h32v224h96z"></path>
-                                </svg>
-                            </span>Sort range Z to A
-                        </div>
-                    </div>
-                    <div class="k-columnmenu-item-wrapper">
-                        <div class="k-spreadsheet-condition-filter k-expander">
-                            <div class="k-columnmenu-item">Filter by condition<span class="k-spacer"></span>
-                                <span class="k-expander-indicator">
-                                    <span class="k-svg-icon k-svg-i-chevron-down">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
-                                        </svg>
-                                    </span>
-                                </span>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-spreadsheet-filter-menu k-column-menu k-popup k-group k-reset">
+                        <div class="k-columnmenu-item-wrapper">
+                            <div class="k-columnmenu-item">
+                                <span class="k-svg-icon k-svg-i-sort-asc-small">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256 192v224h-32V192h-96L240 64l112 128h-96z"></path>
+                                    </svg>
+                                </span>Sort range A to Z
+                            </div>
+                            <div class="k-columnmenu-item">
+                                <span class="k-svg-icon k-svg-i-sort-desc-small">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M352 288 240 416 128 288h96V64h32v224h96z"></path>
+                                    </svg>
+                                </span>Sort range Z to A
                             </div>
                         </div>
-                    </div>
-                    <div class="k-columnmenu-item-wrapper">
-                        <div class="k-expander">
-                            <div class="k-columnmenu-item">Filter by value<span class="k-spacer"></span>
-                                <span class="k-expander-indicator">
-                                    <span class="k-svg-icon k-svg-i-chevron-up">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
-                                        </svg>
+                        <div class="k-columnmenu-item-wrapper">
+                            <div class="k-spreadsheet-condition-filter k-expander">
+                                <div class="k-columnmenu-item">Filter by condition<span class="k-spacer"></span>
+                                    <span class="k-expander-indicator">
+                                        <span class="k-svg-icon k-svg-i-chevron-down">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
+                                            </svg>
+                                        </span>
                                     </span>
-                                </span>
-                            </div>
-                            <div class="k-columnmenu-item-content">
-                                <span class="k-searchbox k-input k-input-md k-input-solid k-rounded-md">
-                                    <span class="k-input-icon k-svg-icon k-svg-i-search">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3L365.3 320zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192z"></path>
-                                        </svg>
-                                    </span>
-                                    <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
-                                </span>
-                                <div class="k-spreadsheet-value-treeview-wrapper">
-                                    <div class="k-treeview k-treeview-md">
-                                        <ul class="k-treeview-lines k-treeview-group">
-                                            <li class="k-treeview-item">
-                                                <span class="k-treeview-mid">
-                                                    <span class="k-treeview-toggle">
-                                                        <span class="k-svg-icon k-svg-i-caret-alt-down">
-                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                                <path d="M256 352 128 160h256L256 352z"></path>
-                                                            </svg>
-                                                        </span>
-                                                    </span>
-                                                    <span class="k-checkbox-wrap">
-                                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                    </span>
-                                                    <span class="k-treeview-leaf">
-                                                        <span class="k-treeview-leaf-text">All</span>
-                                                    </span>
-                                                </span>
-                                                <ul class="k-treeview-group">
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$14.87</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$21.10</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$16.79</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$11.39</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$41.36</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$13.19</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$41.94</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$23.95</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="k-treeview-item">
-                                                        <span class="k-treeview-mid">
-                                                            <span class="k-checkbox-wrap">
-                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                            </span>
-                                                            <span class="k-treeview-leaf">
-                                                                <span class="k-treeview-leaf-text">$16.16</span>
-                                                            </span>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
-                                <div class="k-actions k-actions-stretched k-actions-horizontal">
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                        <span class="k-button-text">Apply</span>
-                                    </button>
-                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                        <span class="k-button-text">Clear</span>
-                                    </button>
+                            </div>
+                        </div>
+                        <div class="k-columnmenu-item-wrapper">
+                            <div class="k-expander">
+                                <div class="k-columnmenu-item">Filter by value<span class="k-spacer"></span>
+                                    <span class="k-expander-indicator">
+                                        <span class="k-svg-icon k-svg-i-chevron-up">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="k-columnmenu-item-content">
+                                    <span class="k-searchbox k-input k-input-md k-input-solid k-rounded-md">
+                                        <span class="k-input-icon k-svg-icon k-svg-i-search">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3L365.3 320zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192z"></path>
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
+                                    </span>
+                                    <div class="k-spreadsheet-value-treeview-wrapper">
+                                        <div class="k-treeview k-treeview-md">
+                                            <ul class="k-treeview-lines k-treeview-group">
+                                                <li class="k-treeview-item">
+                                                    <span class="k-treeview-mid">
+                                                        <span class="k-treeview-toggle">
+                                                            <span class="k-svg-icon k-svg-i-caret-alt-down">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M256 352 128 160h256L256 352z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-checkbox-wrap">
+                                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                        </span>
+                                                        <span class="k-treeview-leaf">
+                                                            <span class="k-treeview-leaf-text">All</span>
+                                                        </span>
+                                                    </span>
+                                                    <ul class="k-treeview-group">
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$14.87</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$21.10</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$16.79</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$11.39</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$41.36</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$13.19</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$41.94</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$23.95</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="k-treeview-item">
+                                                            <span class="k-treeview-mid">
+                                                                <span class="k-checkbox-wrap">
+                                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                </span>
+                                                                <span class="k-treeview-leaf">
+                                                                    <span class="k-treeview-leaf-text">$16.16</span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="k-actions k-actions-stretched k-actions-horizontal">
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                            <span class="k-button-text">Apply</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Clear</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
