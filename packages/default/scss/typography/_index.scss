@@ -1,5 +1,4 @@
 @import "../core/_index.scss";
-@import "../utils/_index.scss";
 
 
 // Module meta
@@ -30,7 +29,7 @@ $_kendo-module-meta: (
         @include kendo-typography--theme();
     }
 }
-
+    
 @if $kendo-auto-bootstrap {
     @include kendo-typography--styles();
 }
