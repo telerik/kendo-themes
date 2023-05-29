@@ -26,11 +26,11 @@ entryPoints.forEach((point) => entiresMap.add(point));
         servedir: "./",
         port: 8000,
     });
-    const outputs = glob.sync(`./packages/html/dist/**/tests/**/app.js`, { dotRelative: true });
+    const outputs = glob.sync(`./packages/html/dist/**/tests/**/app.js`, { dotRelative: false });
 
     // Then start a proxy server on port 3000
     http.createServer((req, res) => {
-        const tests = outputs.map((point) => path.join(path.dirname(point)));
+        const tests = outputs.map(t => t.replace(/\\/g, '/')).map((point) => path.dirname(point));
 
         const options = {
             hostname: host,
