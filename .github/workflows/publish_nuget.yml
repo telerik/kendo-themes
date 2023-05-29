@@ -33,10 +33,7 @@ jobs:
         uses: LanceMcCarthy/akeyless-action@v3
         with:
           access-id: ${{ secrets.GH_AKEYLESS_ACCESS_ID }}
-          static-secrets: |
-            {
-              "/WebComponents/prod/tokens/GH_TOKEN_PUBLISH": "GH_TOKEN_PUBLISH",
-            }
+          static-secrets: '{ "/WebComponents/prod/tokens/GH_TOKEN_PUBLISH": "GH_TOKEN_PUBLISH" }'
           export-secrets-to-environment: false
 
       - name: Checkout branch
