@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0-dev.6](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.5...v6.4.0-dev.6) (2023-05-29)
+
+
+### Bug Fixes
+
+* **gantt:** use required picker classes for native select ([13e9f5d](https://github.com/telerik/kendo-themes/commit/13e9f5dd9e234208d210a3d71a5f96688620de20))
+* **scheduler:** use required picker classes for native select ([b3a8183](https://github.com/telerik/kendo-themes/commit/b3a818322846704c600184895443ec92e07f3dde))
+
+
+### Features
+
+* **html:** add animation-container and reuse it in tests ([5f7d756](https://github.com/telerik/kendo-themes/commit/5f7d756c59a532afb0975adc5b6a0a421e10fa0a))
+
+
+
+
+
 # [6.4.0-dev.5](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.4...v6.4.0-dev.5) (2023-05-22)
 
 
