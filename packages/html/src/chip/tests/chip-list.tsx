@@ -1,4 +1,5 @@
-import { Chip, ChipList } from '../../chip';
+import { ChipList } from '../../chip';
+import { ChipNormal } from '../templates/chip-normal';
 
 
 export default () =>(
@@ -11,27 +12,27 @@ export default () =>(
 
             <section>
                 <ChipList>
-                    <Chip>First</Chip>
-                    <Chip selected>Selected</Chip>
+                    <ChipNormal>First</ChipNormal>
+                    <ChipNormal selected>Selected</ChipNormal>
                 </ChipList>
             </section>
             <section className="k-rtl">
                 <ChipList>
-                    <Chip>First</Chip>
-                    <Chip selected>Selected</Chip>
+                    <ChipNormal>First</ChipNormal>
+                    <ChipNormal selected>Selected</ChipNormal>
                 </ChipList>
             </section>
 
             <section>
                 <ChipList>
-                    <Chip fillMode="outline">First</Chip>
-                    <Chip fillMode="outline" selected>Selected</Chip>
+                    <ChipNormal fillMode="outline">First</ChipNormal>
+                    <ChipNormal fillMode="outline" selected>Selected</ChipNormal>
                 </ChipList>
             </section>
             <section className="k-rtl">
                 <ChipList>
-                    <Chip fillMode="outline">First</Chip>
-                    <Chip fillMode="outline" selected>Selected</Chip>
+                    <ChipNormal fillMode="outline">First</ChipNormal>
+                    <ChipNormal fillMode="outline" selected>Selected</ChipNormal>
                 </ChipList>
             </section>
         </div>
