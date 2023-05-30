@@ -34,7 +34,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the focused bottom navigation item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the focused BottomNavigation item.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline width of the focused bottom navigation item.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline width of the focused BottomNavigation item.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,27 +54,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Outline style of the focused bottom navigation item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-nav-item-icon-margin-y</td>
-    <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the focused bottom navigation item icon.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-bottom-nav-item-icon-margin-x</td>
-    <td></td>
-    <td><code>$kendo-bottom-nav-item-icon-margin-y</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the focused bottom navigation item icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline style of the focused BottomNavigation item.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +64,34 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the bottom navigation.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the BottomNavigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-brand-colors</td>
+    <td></td>
+    <td><code>(
+    primary: primary,
+    error: error,
+    success: success,
+    info: info,
+    secondary: neutral,
+    tertiary: tertiary,
+ )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme variations for the BottomNavigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-bottom-nav-theme-colors</td>
+    <td></td>
+    <td><code>()</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the BottomNavigation variations.</div></div>
     </td>
 </tr>
 </tbody>
