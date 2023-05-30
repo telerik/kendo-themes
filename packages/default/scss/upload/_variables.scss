@@ -1,46 +1,99 @@
 // Upload
 
+/// The width of the border around the Upload.
+/// @group upload
 $kendo-upload-border-width: 1px !default;
+/// The font family of the Upload.
+/// @group upload
 $kendo-upload-font-family: $kendo-font-family !default;
+/// The font size of the Upload.
+/// @group upload
 $kendo-upload-font-size: $kendo-font-size-md !default;
+/// The line height of the Upload.
+/// @group upload
 $kendo-upload-line-height: $kendo-line-height-md !default;
+/// The maximum height of the list with uploaded items.
+/// @group upload
 $kendo-upload-max-height: 300px !default;
 
-$kendo-upload-bg: $kendo-component-bg !default;
+/// The text color of the Upload.
+/// @group upload
 $kendo-upload-text: $kendo-component-text !default;
+/// The background color of the Upload.
+/// @group upload
+$kendo-upload-bg: $kendo-component-bg !default;
+/// The border color of the Upload.
+/// @group upload
 $kendo-upload-border: $kendo-component-border !default;
 
+/// The horizontal padding of the Upload dropzone.
+/// @group upload
 $kendo-upload-dropzone-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+/// The vertical padding of the Upload dropzone.
+/// @group upload
 $kendo-upload-dropzone-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-upload-dropzone-bg: $kendo-component-header-bg !default;
+/// The text color of the Upload dropzone.
+/// @group upload
 $kendo-upload-dropzone-text: $kendo-component-header-text !default;
+/// The background color of the Upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-bg: $kendo-component-header-bg !default;
+/// The border color of the Upload dropzone.
+/// @group upload
 $kendo-upload-dropzone-border: $kendo-upload-border !default;
+/// The background color of the hovered Upload dropzone.
+/// @group upload
 $kendo-upload-dropzone-hover-bg: $kendo-hover-bg !default;
 
+/// The text color of the Upload status message.
+/// @group upload
 $kendo-upload-status-text: $kendo-subtle-text !default;
+/// The opacity of the Upload status message.
+/// @group upload
 $kendo-upload-status-text-opacity: null !default;
 
+/// The horizontal padding of an uploaded item.
+/// @group upload
 $kendo-upload-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+/// The vertical padding of an uploaded item.
+/// @group upload
 $kendo-upload-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
+/// The vertical spacing between uploaded batch items.
+/// @group upload
 $kendo-upload-multiple-items-spacing: 12px !default;
 
+/// The font size of the Upload validation message.
+/// @group upload
 $kendo-upload-validation-font-size: 11px !default;
+/// The horizontal spacing of the Upload status icon.
+/// @group upload
 $kendo-upload-icon-spacing: $kendo-icon-spacing !default;
+/// The color of the uploaded items icon.
+/// @group upload
 $kendo-upload-icon-color: $kendo-subtle-text !default;
 
-$kendo-upload-item-image-width: 30px !default;
-$kendo-upload-item-image-height: 30px !default;
-$kendo-upload-item-image-border: 0px !default; // TODO: remove
-
+/// The thickness of the Upload progress bar.
+/// @group upload
 $kendo-upload-progress-thickness: 2px !default;
+/// The background color of the Upload progress bar.
+/// @group upload
 $kendo-upload-progress-bg: $kendo-color-info !default;
 
-$kendo-upload-success-bg: $kendo-color-success !default;
+/// The success text color of the Upload.
+/// @group upload
 $kendo-upload-success-text: $kendo-color-success !default;
+/// The success background color of the Upload progress bar.
+/// @group upload
+$kendo-upload-success-bg: $kendo-color-success !default;
 
-$kendo-upload-error-bg: $kendo-color-error !default;
+/// The error text color of the Upload.
+/// @group upload
 $kendo-upload-error-text: $kendo-color-error !default;
-$kendo-upload-error-border: $kendo-color-error !default;
+/// The error background color of the Upload progress bar.
+/// @group upload
+$kendo-upload-error-bg: $kendo-color-error !default;
 
+/// The shadow of the focused Upload button, actions and uploaded items.
+/// @group upload
 $kendo-upload-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
