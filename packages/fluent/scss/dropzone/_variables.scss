@@ -27,7 +27,7 @@ $kendo-dropzone-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Background color of the dropzone.
 /// @group dropzone
-$kendo-dropzone-bg: get-theme-color-var( neutral-10 ) !default;
+$kendo-dropzone-bg: k-get-theme-color-var( neutral-10 ) !default;
 /// Text color of the dropzone.
 /// @group dropzone
 $kendo-dropzone-text: var( --kendo-component-text, inherit ) !default;
@@ -40,10 +40,10 @@ $kendo-dropzone-border: var( --kendo-component-border, initial ) !default;
 $kendo-dropzone-icon-spacing: map.get( $kendo-spacing, 6 ) !default;
 /// Text color of the icon.
 /// @group dropzone
-$kendo-dropzone-icon-text: get-theme-color-var( neutral-90 ) !default;
+$kendo-dropzone-icon-text: k-get-theme-color-var( neutral-90 ) !default;
 /// Text color of the icon when the dropzone is hovered.
 /// @group dropzone
-$kendo-dropzone-icon-hover-text: get-theme-color-var( primary-100 ) !default;
+$kendo-dropzone-icon-hover-text: k-get-theme-color-var( primary-100 ) !default;
 
 /// Font size of the hint.
 /// @group dropzone

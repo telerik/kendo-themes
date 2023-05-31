@@ -28,7 +28,7 @@ $kendo-scheduler-border: var( --kendo-component-border, initial ) !default;
 
 /// Background color of the selected row in scheduler.
 /// @group scheduler
-$kendo-scheduler-selected-bg: get-theme-color-var( primary-20 ) !default;
+$kendo-scheduler-selected-bg: k-get-theme-color-var( primary-20 ) !default;
 /// Text color of the selected row in scheduler.
 /// @group scheduler
 $kendo-scheduler-selected-text: $kendo-scheduler-text !default;
@@ -80,7 +80,7 @@ $kendo-scheduler-event-min-height: calc( #{$kendo-scheduler-line-height} + 2 * #
 
 /// Background color of the scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-scheduler-event-bg: k-get-theme-color-var( primary-100 ) !default;
 /// Text color of the scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-text: $kendo-color-white !default;
@@ -112,7 +112,7 @@ $kendo-scheduler-event-hover-shadow: null !default;
 
 /// Background color of the selected scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-bg: get-theme-color-var( primary-120 ) !default;
+$kendo-scheduler-event-selected-bg: k-get-theme-color-var( primary-120 ) !default;
 /// Text color of the selected scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-selected-text: $kendo-scheduler-event-text !default;
@@ -152,7 +152,7 @@ $kendo-scheduler-current-time-color: #ff0000 !default;
 
 /// Background color of the non-working hours in the scheduler.
 /// @group scheduler
-$kendo-scheduler-nonwork-bg: get-theme-color-var( neutral-10 ) !default;
+$kendo-scheduler-nonwork-bg: k-get-theme-color-var( neutral-10 ) !default;
 /// Text color of the non-working hours in the scheduler.
 /// @group scheduler
 $kendo-scheduler-nonwork-text: null !default;
@@ -166,7 +166,7 @@ $kendo-scheduler-weekend-text: null !default;
 
 /// Background color of the other months in the scheduler.
 /// @group scheduler
-$kendo-scheduler-othermonth-bg: get-theme-color-var( neutral-10 ) !default;
+$kendo-scheduler-othermonth-bg: k-get-theme-color-var( neutral-10 ) !default;
 /// Text color of the other months in the scheduler.
 /// @group scheduler
 $kendo-scheduler-othermonth-text: null !default;
@@ -196,7 +196,7 @@ $kendo-scheduler-yearview-indicator-calc-offset-left: calc( 50% - (#{$kendo-sche
 $kendo-scheduler-yearview-indicator-border-radius: 50% !default;
 /// Background color of the days with events indicator in the scheduler year view.
 /// @group scheduler
-$kendo-scheduler-yearview-indicator-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-scheduler-yearview-indicator-bg: k-get-theme-color-var( primary-100 ) !default;
 /// Background color of the selected days with events indicator in the scheduler year view.
 /// @group scheduler
 $kendo-scheduler-yearview-indicator-selected-bg: $kendo-color-white !default;
@@ -215,7 +215,7 @@ $kendo-scheduler-tooltip-border-width: 0 !default;
 $kendo-scheduler-tooltip-bg: $kendo-color-white !default;
 /// Text color of the scheduler tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-text: get-theme-color-var( neutral-130 ) !default;
+$kendo-scheduler-tooltip-text: k-get-theme-color-var( neutral-130 ) !default;
 /// Border color of the scheduler tooltip.
 /// @group scheduler
 $kendo-scheduler-tooltip-border: null !default;
@@ -267,4 +267,4 @@ $kendo-scheduler-more-btn-height: 13px !default;
 
 /// Color of the scheduler marquee.
 /// @group scheduler
-$kendo-scheduler-marquee-color: get-theme-color-var( primary-100 ) !default;
+$kendo-scheduler-marquee-color: k-get-theme-color-var( primary-100 ) !default;

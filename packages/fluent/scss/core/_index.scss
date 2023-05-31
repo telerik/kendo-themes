@@ -1,23 +1,18 @@
 @use "sass:map";
 
-// Functions
-@forward "./functions";
+// Palettes
+@use "./color-system/palettes" as *;
 
 // Variables
+@use "./variables" as *;
 @forward "./variables";
 
-// Mixins
-@forward "./mixins";
-
-// Color System
-@forward "./color-system";
+@forward "@progress/kendo-theme-core/scss/index.import.scss" with (
+    $kendo-palettes: $kendo-fluent-palettes
+);
 
 // Helpers
 @use "./helpers";
-
-// Common styles
-@use "./layout";
-@use "./theme";
 
 // Module System
 @use "./module-system/" as module;

@@ -77,7 +77,7 @@ $kendo-dialog-theme-colors: () !default;
     @each $brand-color, $palette in $kendo-dialog-brand-colors {
         $kendo-dialog-theme-colors: map.deep-merge(
             $kendo-dialog-theme-colors,
-            generate-theme-variation( $brand-color, $palette, $ui-states )
+            k-generate-theme-variation( $brand-color, $palette, $ui-states )
         );
     };
 }
@@ -85,13 +85,13 @@ $kendo-dialog-theme-colors: () !default;
 @each $ui-states in $_tc-dialog-dark-matrix {
     $kendo-dialog-theme-colors: map.deep-merge(
         $kendo-dialog-theme-colors,
-        generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, neutral, $ui-states )
     );
 }
 
 @each $ui-states in $_tc-dialog-light-matrix {
     $kendo-dialog-theme-colors: map.deep-merge(
         $kendo-dialog-theme-colors,
-        generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, neutral, $ui-states )
     );
 }

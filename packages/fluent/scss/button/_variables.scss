@@ -225,12 +225,12 @@ $_tc-brand-matrix: (
 // The color matrix for warning Buttons
 $_tc-warning-matrix: (
     solid: (
-        normal: (100, get-theme-color-var( neutral-160 ), 100),
-        hover: (110, get-theme-color-var( neutral-190 ), 110),
-        focus: (100, get-theme-color-var( neutral-160 ), 100, $kendo-color-white),
-        focus-hover: (110, get-theme-color-var( neutral-190 ), 110, $kendo-color-white),
-        active: (120, get-theme-color-var( neutral-190 ), 120),
-        active-hover: (110, get-theme-color-var( neutral-190 ), 110),
+        normal: (100, k-get-theme-color-var( neutral-160 ), 100),
+        hover: (110, k-get-theme-color-var( neutral-190 ), 110),
+        focus: (100, k-get-theme-color-var( neutral-160 ), 100, $kendo-color-white),
+        focus-hover: (110, k-get-theme-color-var( neutral-190 ), 110, $kendo-color-white),
+        active: (120, k-get-theme-color-var( neutral-190 ), 120),
+        active-hover: (110, k-get-theme-color-var( neutral-190 ), 110),
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
     ),
     flat: (
@@ -377,7 +377,7 @@ $kendo-button-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-base-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, base, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, base, neutral, $ui-states )
     );
 }
 
@@ -386,7 +386,7 @@ $kendo-button-theme-colors: () !default;
     @each $brand-color, $palette in $kendo-button-brand-colors {
         $kendo-button-theme-colors: map.deep-merge(
             $kendo-button-theme-colors,
-            generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
+            k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
         )
     }
 }
@@ -395,7 +395,7 @@ $kendo-button-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-warning-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
     );
 }
 
@@ -403,7 +403,7 @@ $kendo-button-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-dark-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
     );
 }
 
@@ -411,6 +411,6 @@ $kendo-button-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-light-matrix {
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
     );
 }

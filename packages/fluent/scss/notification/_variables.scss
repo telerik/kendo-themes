@@ -82,7 +82,7 @@ $kendo-notification-theme-colors: () !default;
     @each $brand-color, $palette in $kendo-notification-brand-colors {
         $kendo-notification-theme-colors: map.deep-merge(
             $kendo-notification-theme-colors,
-            generate-theme-variation( $brand-color, $palette, $ui-states )
+            k-generate-theme-variation( $brand-color, $palette, $ui-states )
         );
     };
 }
@@ -90,13 +90,13 @@ $kendo-notification-theme-colors: () !default;
 @each $ui-states in $_tc-notification-dark-matrix {
     $kendo-notification-theme-colors: map.deep-merge(
         $kendo-notification-theme-colors,
-        generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, neutral, $ui-states )
     );
 }
 
 @each $ui-states in $_tc-notification-light-matrix {
     $kendo-notification-theme-colors: map.deep-merge(
         $kendo-notification-theme-colors,
-        generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, neutral, $ui-states )
     );
 }

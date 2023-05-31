@@ -52,11 +52,11 @@ $kendo-tooltip-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
 
 /// The text color of the tooltip button
 /// @group tooltip
-$kendo-tooltip-button-text: get-theme-color-var( neutral-130, initial ) !default;
+$kendo-tooltip-button-text: k-get-theme-color-var( neutral-130, initial ) !default;
 
 /// The primary background color of the tooltip
 /// @group tooltip
-$kendo-tooltip-primary-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-tooltip-primary-bg: k-get-theme-color-var( primary-100 ) !default;
 /// The primary text color of the tooltip
 /// @group tooltip
 $kendo-tooltip-primary-text: $kendo-color-white !default;
@@ -82,7 +82,7 @@ $kendo-tooltip-theme-colors: () !default;
 @each $ui-states in $_tc-tooltip-primary-matrix {
     $kendo-tooltip-theme-colors: map.deep-merge(
         $kendo-tooltip-theme-colors,
-        generate-theme-variation( primary, primary, $ui-states )
+        k-generate-theme-variation( primary, primary, $ui-states )
     );
 }
 
@@ -90,7 +90,7 @@ $kendo-tooltip-theme-colors: () !default;
     @each $brand-color in $kendo-tooltip-brand-colors {
         $kendo-tooltip-theme-colors: map.deep-merge(
             $kendo-tooltip-theme-colors,
-            generate-theme-variation( $brand-color, $brand-color, $ui-states )
+            k-generate-theme-variation( $brand-color, $brand-color, $ui-states )
         );
     };
 }

@@ -37,7 +37,7 @@ $kendo-chip-solid-disabled-border: var( --kendo-disabled-border, inherit ) !defa
 $kendo-chip-outline-disabled-bg: var( $kendo-component-bg, transparent ) !default;
 /// The border color of the outline disabled Chip.
 /// @group chip
-$kendo-chip-outline-disabled-border: get-theme-color-var( neutral-90 ) !default;
+$kendo-chip-outline-disabled-border: k-get-theme-color-var( neutral-90 ) !default;
 
 /// The offset of the outline focused Chip.
 /// @group chip
@@ -129,8 +129,8 @@ $_tc-base-matrix: (
         hover: (30, 190, 30),
         focus: (20, 160, 130),
         focus-hover: (20, 190, 130),
-        selected: (get-theme-color-var( primary-100 ), $kendo-color-white, get-theme-color-var( primary-100 )),
-        selected-hover: (get-theme-color-var( primary-100 ), $kendo-color-white, get-theme-color-var( primary-100 )),
+        selected: (k-get-theme-color-var( primary-100 ), $kendo-color-white, k-get-theme-color-var( primary-100 )),
+        selected-hover: (k-get-theme-color-var( primary-100 ), $kendo-color-white, k-get-theme-color-var( primary-100 )),
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
     ),
     outline: (
@@ -169,12 +169,12 @@ $_tc-brand-matrix: (
 // The color matrix for the warning Chips
 $_tc-warning-matrix: (
     solid: (
-        normal: (20, get-theme-color-var( grey-160 ), 20),
-        hover: (30, get-theme-color-var( grey-190 ), 30),
-        focus: (20, get-theme-color-var( grey-160 ), 160),
-        focus-hover: (20, get-theme-color-var( grey-190 ), 160),
-        selected: (40, get-theme-color-var( grey-190 ), 40),
-        selected-hover: (30, get-theme-color-var( grey-190 ), 30),
+        normal: (20, k-get-theme-color-var( grey-160 ), 20),
+        hover: (30, k-get-theme-color-var( grey-190 ), 30),
+        focus: (20, k-get-theme-color-var( grey-160 ), 160),
+        focus-hover: (20, k-get-theme-color-var( grey-190 ), 160),
+        selected: (40, k-get-theme-color-var( grey-190 ), 40),
+        selected-hover: (30, k-get-theme-color-var( grey-190 ), 30),
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
     ),
     outline: (
@@ -195,7 +195,7 @@ $kendo-chip-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-base-matrix {
     $kendo-chip-theme-colors: map.deep-merge(
         $kendo-chip-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, base, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, base, neutral, $ui-states )
     );
 }
 
@@ -204,7 +204,7 @@ $kendo-chip-theme-colors: () !default;
     @each $brand-color in $kendo-chip-brand-colors {
         $kendo-chip-theme-colors: map.deep-merge(
             $kendo-chip-theme-colors,
-            generate-fill-mode-theme-variation( $fill-mode, $brand-color, $brand-color, $ui-states )
+            k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $brand-color, $ui-states )
         )
     }
 }
@@ -213,7 +213,7 @@ $kendo-chip-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-warning-matrix {
     $kendo-chip-theme-colors: map.deep-merge(
         $kendo-chip-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
     );
 }
 

@@ -44,10 +44,10 @@ $kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, 0.5 ) !defaul
 $kendo-editor-selected-text: $kendo-color-white !default;
 /// The selected background color of the Editor.
 /// @group editor
-$kendo-editor-selected-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-editor-selected-bg: k-get-theme-color-var( primary-100 ) !default;
 /// The highlighted background color of the Editor.
 /// @group editor
-$kendo-editor-highlighted-bg: get-theme-color-var( primary-60 ) !default;
+$kendo-editor-highlighted-bg: k-get-theme-color-var( primary-60 ) !default;
 
 /// The size of the Editor's resize handle.
 /// @group editor
@@ -64,7 +64,7 @@ $kendo-editor-resize-handle-bg: $kendo-color-white !default;
 
 /// The outline color of the Editor's selected node.
 /// @group editor
-$kendo-editor-selectednode-outline-color: get-theme-color-var( primary-100 ) !default;
+$kendo-editor-selectednode-outline-color: k-get-theme-color-var( primary-100 ) !default;
 
 /// The border color of the Inline Editor data cell.
 /// @group editor
