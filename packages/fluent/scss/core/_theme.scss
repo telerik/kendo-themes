@@ -1,9 +1,0 @@
-@use "./mixins" as *;
-@use "./color-system" as *;
-
-.k-body {
-    @include fill(
-        var( --kendo-body-text, initial ),
-        var( --kendo-body-bg, initial )
-    );
-}

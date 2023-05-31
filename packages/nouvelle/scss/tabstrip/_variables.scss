@@ -59,7 +59,7 @@ $kendo-tabstrip-item-dragging-text: null !default;
 $kendo-tabstrip-indicator-size: k-map-get( $kendo-spacing, 0.5 ) !default;
 /// The border color of the tabstrip ripple
 /// @group tabstrip
-$kendo-tabstrip-indicator-color: get-theme-color-var( primary-100 ) !default;
+$kendo-tabstrip-indicator-color: k-get-theme-color-var( primary-100 ) !default;
 
 /// The horizontal padding of tabstrip content
 /// @group tabstrip

@@ -81,7 +81,7 @@ $kendo-card-header-border-width: 0 !default;
 $kendo-card-header-bg: inherit !default;
 /// Text color of the card header.
 /// @group card
-$kendo-card-header-text: get-theme-color-var( neutral-190 ) !default; // header-text
+$kendo-card-header-text: k-get-theme-color-var( neutral-190 ) !default; // header-text
 /// Border color of the card header.
 /// @group card
 $kendo-card-header-border: inherit !default; // header-border
@@ -190,7 +190,7 @@ $kendo-card-theme-colors: () !default;
     @each $brand-color in $kendo-card-brand-colors {
         $kendo-card-theme-colors: map.deep-merge(
             $kendo-card-theme-colors,
-            generate-theme-variation( $brand-color, $brand-color, $ui-states )
+            k-generate-theme-variation( $brand-color, $brand-color, $ui-states )
         );
     };
 }

@@ -82,7 +82,7 @@ $_tc-bottom-nav-matrix: (
         disabled: ( inherit, 40, var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($kendo-color-white, get-theme-color-var( neutral-130 ), get-theme-color-var( neutral-30 )),
+        normal: ($kendo-color-white, k-get-theme-color-var( neutral-130 ), k-get-theme-color-var( neutral-30 )),
         focus: (inherit, 100, transparent, 100),
         active: (inherit, 100, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
@@ -91,13 +91,13 @@ $_tc-bottom-nav-matrix: (
 
 $_tc-bottom-nav-warning-matrix: (
     solid: (
-        normal: (100, get-theme-color-var( neutral-160 ), 100),
-        focus: (100, get-theme-color-var( neutral-160 ), 100, $kendo-color-white),
-        active: (120, get-theme-color-var( neutral-190 ), 120),
-        disabled: (inherit, get-theme-color-var( neutral-120 ), var( --kendo-disabled-border, inherit ))
+        normal: (100, k-get-theme-color-var( neutral-160 ), 100),
+        focus: (100, k-get-theme-color-var( neutral-160 ), 100, $kendo-color-white),
+        active: (120, k-get-theme-color-var( neutral-190 ), 120),
+        disabled: (inherit, k-get-theme-color-var( neutral-120 ), var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($kendo-color-white, get-theme-color-var( neutral-130 ), 100),
+        normal: ($kendo-color-white, k-get-theme-color-var( neutral-130 ), 100),
         focus: (inherit, 100, transparent, 100),
         active: (inherit, 100, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
@@ -112,7 +112,7 @@ $_tc-bottom-nav-dark-matrix: (
         disabled: (inherit, 60 , var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($kendo-color-white, get-theme-color-var( neutral-130 ), get-theme-color-var( neutral-140 )),
+        normal: ($kendo-color-white, k-get-theme-color-var( neutral-130 ), k-get-theme-color-var( neutral-140 )),
         focus: (inherit, 160, transparent, 130),
         active: (inherit, 170, transparent),
         disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
@@ -121,13 +121,13 @@ $_tc-bottom-nav-dark-matrix: (
 
 $_tc-bottom-nav-light-matrix: (
     solid: (
-        normal: (50, get-theme-color-var( neutral-160 ), 50),
+        normal: (50, k-get-theme-color-var( neutral-160 ), 50),
         focus: (50, 190, 50, $kendo-color-white),
         active: (70, 190, 70),
         disabled: (inherit, 120 , var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($kendo-color-white, get-theme-color-var( neutral-130 ), transparent),
+        normal: ($kendo-color-white, k-get-theme-color-var( neutral-130 ), transparent),
         focus: (inherit, 130, transparent, 130),
         active: (inherit, 130, transparent),
         disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
@@ -142,7 +142,7 @@ $kendo-bottom-nav-theme-colors: () !default;
     @each $brand-color, $palette in $kendo-bottom-nav-brand-colors {
         $kendo-bottom-nav-theme-colors: map.deep-merge(
             $kendo-bottom-nav-theme-colors,
-            generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
+            k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
         );
     };
 }
@@ -150,20 +150,20 @@ $kendo-bottom-nav-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-bottom-nav-warning-matrix {
     $kendo-bottom-nav-theme-colors: map.deep-merge(
         $kendo-bottom-nav-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
     );
 }
 
 @each $fill-mode, $ui-states in $_tc-bottom-nav-dark-matrix {
     $kendo-bottom-nav-theme-colors: map.deep-merge(
         $kendo-bottom-nav-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
     );
 }
 
 @each $fill-mode, $ui-states in $_tc-bottom-nav-light-matrix {
     $kendo-bottom-nav-theme-colors: map.deep-merge(
         $kendo-bottom-nav-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
     );
 }

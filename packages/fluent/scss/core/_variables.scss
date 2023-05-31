@@ -2,53 +2,9 @@
 @use "sass:math";
 @use "sass:meta";
 
-// Options
-$kendo-enable-shadows: true !default;
-$kendo-enable-rounded: true !default;
-$kendo-enable-gradients: true !default;
-$kendo-enable-transitions: true !default;
-
 $kendo-use-input-button-width: true !default;
 $kendo-use-input-spinner-width: true !default;
 $kendo-use-input-spinner-icon-offset: false !default;
-
-$kendo-spacing: (
-    0: 0,
-    1px: 1px,
-    0.5: .125rem,
-    1: .25rem,
-    1.5: .375rem,
-    2: .5rem,
-    2.5: .625rem,
-    3: .75rem,
-    3.5: .875rem,
-    4: 1rem,
-    4.5: 1.125rem,
-    5: 1.25rem,
-    5.5: 1.375rem,
-    6: 1.5rem,
-    6.5: 1.625rem,
-    7: 1.75rem,
-    7.5: 1.875rem,
-    8: 2rem,
-    9: 2.25rem,
-    10: 2.5rem,
-    11: 2.75rem,
-    12: 3rem,
-    13: 3.25rem,
-    14: 3.5rem,
-    15: 3.75rem,
-    16: 4rem,
-    17: 4.25rem,
-    18: 4.5rem,
-    19: 4.75rem,
-    20: 5rem,
-    21: 5.25rem,
-    22: 5.5rem,
-    23: 5.75rem,
-    24: 6rem
-) !default;
-
 
 /// Base font size across all components.
 $kendo-font-size: 14px !default;
@@ -87,34 +43,7 @@ $kendo-font-weight-bold: 600 !default;
 
 $kendo-letter-spacing: normal !default;
 
-$kendo-scrollbar-width: 17px !default;
-
-/// Border radius for all components.
-$kendo-border-radius: map.get( $kendo-spacing, 0.5 ) !default;
-$kendo-border-radius-sm: math.div( $kendo-border-radius, 2 ) !default;
-$kendo-border-radius-md: $kendo-border-radius !default;
-$kendo-border-radius-lg: ( $kendo-border-radius * 2 ) !default;
-
-$kendo-border-radii: (
-    DEFAULT: var( --kendo-border-radius-md, $kendo-border-radius-md ),
-    0: 0,
-    sm: var( --kendo-border-radius-sm, $kendo-border-radius-sm ),
-    md: var( --kendo-border-radius-md, $kendo-border-radius-md ),
-    lg: var( --kendo-border-radius-lg, $kendo-border-radius-lg ),
-    none: 0,
-    full: 9999px
-) !default;
-
-
-// Metrics
-$kendo-padding-x: map.get( $kendo-spacing, 2 ) !default;
-$kendo-padding-y: map.get( $kendo-spacing, 1 ) !default;
-$kendo-padding-sm-x: map.get( $kendo-spacing, 1 ) !default;
-$kendo-padding-sm-y: map.get( $kendo-spacing, 0.5 ) !default;
-$kendo-padding-md-x: map.get( $kendo-spacing, 2 ) !default;
-$kendo-padding-md-y: map.get( $kendo-spacing, 1 ) !default;
-$kendo-padding-lg-x: map.get( $kendo-spacing, 3 ) !default;
-$kendo-padding-lg-y: map.get( $kendo-spacing, 1.5 ) !default;
+// $kendo-scrollbar-width: 17px !default;
 
 // Default transition
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out, opacity .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out !default;
@@ -146,9 +75,6 @@ $kendo-zindex-loading: 100 !default;
 
         --kendo-letter-spacing: #{$kendo-letter-spacing};
 
-        --kendo-border-radius-sm: #{$kendo-border-radius-sm};
-        --kendo-border-radius-md: #{$kendo-border-radius-md};
-        --kendo-border-radius-lg: #{$kendo-border-radius-lg};
 
         --kendo-transition: #{$kendo-transition};
     }

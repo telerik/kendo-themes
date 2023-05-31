@@ -1,3 +1,5 @@
+@import "./_palettes.scss";
+
 @function k-generate-theme-variant( $variant, $matrix, $src-palette-name ) {
     $result: ();
 
@@ -87,4 +89,56 @@
 
 @function k-get-theme-color-var( $name, $fallback: "inherit", $prefix: "kendo-" ) {
     @return var( --#{$prefix}#{$name}, #{$fallback} );
+}
+
+@function k-generate-theme-variation( $theme-color, $source-palette-name, $mapping ) {
+    $temp: ( );
+
+    @each $ui-state, $indices in $mapping {
+        $prefix: if( $ui-state == normal, '', '#{$ui-state}-' );
+
+        $bg-prop: k-list-nth($indices, 1);
+        $text-prop: k-list-nth($indices, 2);
+        $border-prop: k-list-nth($indices, 3);
+
+        // Take value from the palette only if it is a number
+        $bg: if( k-meta-type-of($bg-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$bg-prop} ), $bg-prop );
+        $text: if( k-meta-type-of($text-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$text-prop} ), $text-prop );
+        $border: if( k-meta-type-of($border-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$border-prop} ), $border-prop );
+
+
+        $temp: k-map-deep-merge( $temp, (
+            #{$prefix}bg: $bg,
+            #{$prefix}text: $text,
+            #{$prefix}border: $border
+        ));
+
+        // Add outline if provided in the map
+        @if ( k-list-length($indices) > 3 ) {
+            $outline-prop: k-list-nth($indices, 4);
+            $outline: if( k-meta-type-of($outline-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$outline-prop} ), $outline-prop );
+
+            $temp: k-map-deep-merge( $temp, (
+                #{$prefix}outline: $outline
+            ));
+        }
+    }
+
+    $map: (
+        #{$theme-color}: $temp
+    );
+
+    @return $map;
+
+};
+
+@function k-generate-fill-mode-theme-variation( $fill-mode, $theme-color, $source-palette-name, $mapping ) {
+
+    $map: k-generate-theme-variation( $theme-color, $source-palette-name, $mapping );
+
+    $result: (
+       #{$fill-mode}: $map
+    );
+
+    @return $result;
 }

@@ -30,7 +30,7 @@ $kendo-switch-sizes: (
 
 /// The ring around the focused Switch.
 /// @group switch
-$kendo-switch-focus-ring: 1px solid get-theme-color-var( neutral-130 ) !default;
+$kendo-switch-focus-ring: 1px solid k-get-theme-color-var( neutral-130 ) !default;
 
 /// The background of the track when the Switch is not checked.
 /// @group switch
@@ -40,7 +40,7 @@ $kendo-switch-off-track-bg: var( --kendo-component-bg, transparent ) !default;
 $kendo-switch-off-track-text: var( --kendo-component-text, inherit ) !default;
 /// The border color of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-border: get-theme-color-var( neutral-110 ) !default;
+$kendo-switch-off-track-border: k-get-theme-color-var( neutral-110 ) !default;
 
 /// The background of the track when the hovered Switch is not checked.
 /// @group switch
@@ -50,7 +50,7 @@ $kendo-switch-off-track-hover-bg: var( --kendo-component-bg, transparent ) !defa
 $kendo-switch-off-track-hover-text: var( --kendo-component-text, inherit ) !default;
 /// The border color of the track when the hovered Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-hover-border: get-theme-color-var( neutral-160 ) !default;
+$kendo-switch-off-track-hover-border: k-get-theme-color-var( neutral-160 ) !default;
 
 /// The background of the track when the focused Switch is not checked.
 /// @group switch
@@ -60,7 +60,7 @@ $kendo-switch-off-track-focus-bg: var( --kendo-component-bg, transparent ) !defa
 $kendo-switch-off-track-focus-text: var( --kendo-component-text, inherit ) !default;
 /// The border color of the track when the focused Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-border: get-theme-color-var( neutral-110 ) !default;
+$kendo-switch-off-track-focus-border: k-get-theme-color-var( neutral-110 ) !default;
 
 /// The background of the track when the disabled Switch is not checked.
 /// @group switch
@@ -70,42 +70,42 @@ $kendo-switch-off-track-disabled-bg: var( --kendo-component-bg, transparent ) !d
 $kendo-switch-off-track-disabled-text: var( --kendo-component-text, inherit ) !default;
 /// The border color of the track when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-disabled-border: get-theme-color-var( neutral-60 ) !default;
+$kendo-switch-off-track-disabled-border: k-get-theme-color-var( neutral-60 ) !default;
 
 /// The background of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-bg: get-theme-color-var( neutral-130 ) !default;
+$kendo-switch-off-thumb-bg: k-get-theme-color-var( neutral-130 ) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-text: inherit !default;
 /// The border color of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-border: get-theme-color-var( neutral-130 ) !default;
+$kendo-switch-off-thumb-border: k-get-theme-color-var( neutral-130 ) !default;
 
 /// The background of the thumb when the hovered Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-hover-bg: get-theme-color-var( neutral-160 ) !default;
+$kendo-switch-off-thumb-hover-bg: k-get-theme-color-var( neutral-160 ) !default;
 /// The text color of the thumb when the hovered Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-hover-text: inherit !default;
 /// The border color of the thumb when the hovered Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-hover-border: get-theme-color-var( neutral-160 ) !default;
+$kendo-switch-off-thumb-hover-border: k-get-theme-color-var( neutral-160 ) !default;
 
 /// The background of the thumb when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-disabled-bg: get-theme-color-var( neutral-60 ) !default;
+$kendo-switch-off-thumb-disabled-bg: k-get-theme-color-var( neutral-60 ) !default;
 /// The text color of the thumb when the disabled Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-disabled-text: inherit !default;
 /// The border color of the thumb when the disabled Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-disabled-border: get-theme-color-var( neutral-60 ) !default;
+$kendo-switch-off-thumb-disabled-border: k-get-theme-color-var( neutral-60 ) !default;
 
 
 /// The background of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-switch-on-track-bg: k-get-theme-color-var( primary-100 ) !default;
 /// The text color of the track when the Switch is checked.
 /// @group switch
 $kendo-switch-on-track-text: $kendo-color-white !default;
@@ -115,7 +115,7 @@ $kendo-switch-on-track-border: $kendo-switch-on-track-bg !default;
 
 /// The background of the track when the hovered Switch is checked.
 /// @group switch
-$kendo-switch-on-track-hover-bg: get-theme-color-var( primary-110 ) !default;
+$kendo-switch-on-track-hover-bg: k-get-theme-color-var( primary-110 ) !default;
 /// The text color of the track when the hovered Switch is checked.
 /// @group switch
 $kendo-switch-on-track-hover-text: $kendo-color-white !default;
@@ -125,7 +125,7 @@ $kendo-switch-on-track-hover-border: $kendo-switch-on-track-hover-bg !default;
 
 /// The background of the track when the focused Switch is checked.
 /// @group switch
-$kendo-switch-on-track-focus-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-switch-on-track-focus-bg: k-get-theme-color-var( primary-100 ) !default;
 /// The text color of the track when the focused Switch is checked.
 /// @group switch
 $kendo-switch-on-track-focus-text: $kendo-color-white !default;
@@ -135,7 +135,7 @@ $kendo-switch-on-track-focus-border: $kendo-switch-on-track-focus-bg !default;
 
 /// The background of the track when the disabled Switch is checked.
 /// @group switch
-$kendo-switch-on-track-disabled-bg: get-theme-color-var( neutral-60 ) !default;
+$kendo-switch-on-track-disabled-bg: k-get-theme-color-var( neutral-60 ) !default;
 /// The text color of the track when the disabled Switch is checked.
 /// @group switch
 $kendo-switch-on-track-disabled-text: $kendo-color-white !default;
@@ -165,10 +165,10 @@ $kendo-switch-on-thumb-hover-border: inherit !default;
 
 /// The background of the thumb when the disabled Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-disabled-bg: get-theme-color-var( neutral-20 ) !default;
+$kendo-switch-on-thumb-disabled-bg: k-get-theme-color-var( neutral-20 ) !default;
 /// The text color of the thumb when the disabled Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-disabled-text: inherit !default;
 /// The border color of the thumb when the disabled Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-disabled-border: get-theme-color-var( neutral-20 ) !default;
+$kendo-switch-on-thumb-disabled-border: k-get-theme-color-var( neutral-20 ) !default;
