@@ -1,9 +1,0 @@
-@mixin disabled-color( $color: null, $bg: null, $border: null ) {
-    outline: none;
-    cursor: default;
-    background-color: $bg;
-    color: $color;
-    border-color: $border;
-    pointer-events: none;
-    box-shadow: none;
-}

@@ -2,6 +2,9 @@
 @import "./_asp-fallback.scss";
 @import "./_layout.scss";
 @import "./_normalize.scss";
+@import "./_base.scss";
+@import "./_loading.scss";
+@import "./_selection.scss";
 
 
 @mixin kendo-core--styles() {
