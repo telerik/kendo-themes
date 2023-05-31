@@ -1,3 +1,12 @@
+$svg-escaped-characters: (
+    ("%", "%25"),
+    ("<", "%3c"),
+    (">", "%3e"),
+    ("#", "%23"),
+    ("(", "%28"),
+    (")", "%29")
+) !default;
+
 /// Returns the first index of `$substring` in `$string`, or `null` if `$string` doesn’t contain `$substring`.
 /// @param {String} $string - The string to process.
 /// @param {String} $substring - The substring to look for.
@@ -115,4 +124,32 @@
 ///   @debug k-string-unquote( "foo bar" ); // => foo bar
 @function k-string-unquote( $string ) {
     @return unquote( $string );
+}
+
+
+// See https://www.sassmeister.com/gist/1b4f2da5527830088e4d
+@function str-replace($string, $search, $replace: "") {
+    $index: k-string-index($string, $search);
+
+    @if $index {
+        @return k-string-slice($string, 1, $index - 1) + $replace + str-replace(k-string-slice($string, $index + k-string-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+// See https://codepen.io/kevinweber/pen/dXWoRw
+@function escape-svg($string) {
+    @if k-string-index($string, "data:image/svg+xml") {
+        @each $char, $encoded in $svg-escaped-characters {
+            // Do not escape the url brackets
+            @if k-string-index($string, "url(") == 1 {
+                $string: url("#{str-replace(k-string-slice($string, 6, -3), $char, $encoded)}");
+            } @else {
+                $string: str-replace($string, $char, $encoded);
+            }
+        }
+    }
+
+    @return $string;
 }

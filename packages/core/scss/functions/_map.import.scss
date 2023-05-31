@@ -47,6 +47,36 @@
     @return $map;
 }
 
+/// Returns a deep-map with the keys and values from `$map` and `$args`.
+/// @param {Map} $maps - The maps to deep-merge.
+/// @return {Map} - A map with the keys and values from `$map` and `$args`.
+///
+/// @example scss - Usage
+///   @debug k-map-deep-merge( ( "foo": ("bar": "baz", "baz": "qux" ) ), ( "foo": ("bar": "foo") ) ); // => ( "foo": ("bar": "foo", "baz": "qux" ))
+@function k-map-deep-merge($maps...) {
+    $merged: ();
+  
+    @each $map in $maps {
+      @each $key, $val in $map {
+        @if (k-meta-type-of($val) == 'map') {
+          $current: k-map-get($merged, $key);
+          @if (k-meta-type-of($current) == 'map') {
+            $val: k-map-deep-merge($current, $val);
+            $map: k-map-merge(
+              $map,
+              (
+                $key: $val
+              )
+            );
+          }
+        }
+      }
+      $merged: k-map-merge($merged, $map);
+    }
+  
+    @return $merged;
+  }
+
 /// Returns a map with the keys and values from `$map` except for `$keys`.
 /// @param {Map} $map - The map to remove keys from.
 /// @param {Any} $keys - The keys to remove from `$map`.

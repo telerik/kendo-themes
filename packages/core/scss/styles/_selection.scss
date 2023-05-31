@@ -1,0 +1,27 @@
+@mixin kendo-core--styles--selection() {
+    .k-marquee {
+        border-width: 1px;
+        border-style: solid;
+        border-color: k-get-theme-color-var( primary-100 );
+        position: absolute;
+        z-index: 100000;
+    }
+
+    .k-marquee-color,
+    .k-marquee-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .k-marquee-color {
+        color: $kendo-color-white;
+        background-color: k-get-theme-color-var( primary-100 );
+        opacity: .3;
+    }
+    .k-marquee-text {
+        color: $kendo-color-white;
+    }
+}

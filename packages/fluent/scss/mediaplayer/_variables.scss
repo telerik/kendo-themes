@@ -26,11 +26,11 @@ $kendo-media-player-border: var( --kendo-component-border, inherit ) !default;
 
 /// Mediaplayer overlay background color.
 /// @group mediaplayer
-$kendo-media-player-overlay-bg: get-theme-color-var( neutral-130 ) !default;
+$kendo-media-player-overlay-bg: k-get-theme-color-var( neutral-130 ) !default;
 
 /// Mediaplayer quality button border color.
 /// @group mediaplayer
-$kendo-media-player-quality-border: get-theme-color-var( neutral-110 ) !default;
+$kendo-media-player-quality-border: k-get-theme-color-var( neutral-110 ) !default;
 
 /// Media player title font size.
 /// @group mediaplayer

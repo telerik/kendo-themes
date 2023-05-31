@@ -3,7 +3,7 @@
 
 /// Background color of the appbar.
 /// @group appbar
-$kendo-appbar-bg: get-theme-color-var( neutral-10 ) !default;
+$kendo-appbar-bg: k-get-theme-color-var( neutral-10 ) !default;
 /// Text color of the appbar.
 /// @group appbar
 $kendo-appbar-text: var( --kendo-component-text, initial ) !default;
@@ -60,7 +60,7 @@ $_tc-appbar-matrix: (
 ) !default;
 
 $_tc-appbar-warning-matrix: (
-    (normal: (100, get-theme-color-var( neutral-160 ), 100)),
+    (normal: (100, k-get-theme-color-var( neutral-160 ), 100)),
 ) !default;
 
 $_tc-appbar-dark-matrix: (
@@ -78,7 +78,7 @@ $kendo-appbar-theme-colors: () !default;
     @each $brand-color, $palette in $kendo-appbar-brand-colors {
         $kendo-appbar-theme-colors: map.deep-merge(
             $kendo-appbar-theme-colors,
-            generate-theme-variation( $brand-color, $palette, $ui-states )
+            k-generate-theme-variation( $brand-color, $palette, $ui-states )
         );
     };
 }
@@ -86,20 +86,20 @@ $kendo-appbar-theme-colors: () !default;
 @each $ui-states in $_tc-appbar-warning-matrix {
     $kendo-appbar-theme-colors: map.deep-merge(
         $kendo-appbar-theme-colors,
-        generate-theme-variation( warning, warning, $ui-states )
+        k-generate-theme-variation( warning, warning, $ui-states )
     );
 }
 
 @each $ui-states in $_tc-appbar-dark-matrix {
     $kendo-appbar-theme-colors: map.deep-merge(
         $kendo-appbar-theme-colors,
-        generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, neutral, $ui-states )
     );
 }
 
 @each $ui-states in $_tc-appbar-light-matrix {
     $kendo-appbar-theme-colors: map.deep-merge(
         $kendo-appbar-theme-colors,
-        generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, neutral, $ui-states )
     );
 }

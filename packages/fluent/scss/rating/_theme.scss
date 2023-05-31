@@ -36,7 +36,7 @@
         }
 
         &.k-disabled {
-            @include disabled(
+            @include disabled-color(
                 var( --kendo-disabled-text, inherit ),
                 inherit,
                 var( --kendo-disabled-border, inherit )

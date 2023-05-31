@@ -46,7 +46,7 @@ $_tc-avatar-matrix: (
 
 $_tc-avatar-warning-matrix: (
     solid: (
-        normal: (100, get-theme-color-var( neutral-160 ), 100)
+        normal: (100, k-get-theme-color-var( neutral-160 ), 100)
     ),
     outline: (
         normal: ($kendo-color-white, 100, 100)
@@ -79,7 +79,7 @@ $kendo-avatar-theme-colors: () !default;
     @each $brand-color, $palette in $kendo-avatar-brand-colors {
         $kendo-avatar-theme-colors: map.deep-merge(
             $kendo-avatar-theme-colors,
-            generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
+            k-generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
         );
     };
 }
@@ -87,20 +87,20 @@ $kendo-avatar-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-avatar-warning-matrix {
     $kendo-avatar-theme-colors: map.deep-merge(
         $kendo-avatar-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
     );
 }
 
 @each $fill-mode, $ui-states in $_tc-avatar-dark-matrix {
     $kendo-avatar-theme-colors: map.deep-merge(
         $kendo-avatar-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
     );
 }
 
 @each $fill-mode, $ui-states in $_tc-avatar-light-matrix {
     $kendo-avatar-theme-colors: map.deep-merge(
         $kendo-avatar-theme-colors,
-        generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
     );
 }

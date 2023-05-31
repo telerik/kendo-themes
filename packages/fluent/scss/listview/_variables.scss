@@ -72,7 +72,7 @@ $kendo-listview-item-focus-shadow: var( --kendo-list-item-focus-shadow, $kendo-l
 $kendo-listview-item-selected-text: initial !default;
 /// Background color of selected listview items.
 /// @group listview
-$kendo-listview-item-selected-bg: get-theme-color-var( neutral-20 ) !default;
+$kendo-listview-item-selected-bg: k-get-theme-color-var( neutral-20 ) !default;
 
 /// Text color of listview header.
 /// @group listview

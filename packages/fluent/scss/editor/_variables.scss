@@ -53,10 +53,10 @@ $ct-cell-size: 20px !default;
 $kendo-editor-selected-text: $kendo-color-white !default;
 /// The selected background color of the editor
 /// @group editor
-$kendo-editor-selected-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-editor-selected-bg: k-get-theme-color-var( primary-100 ) !default;
 /// The highlighted background color of the editor
 /// @group editor
-$kendo-editor-highlighted-bg: get-theme-color-var( primary-60 ) !default;
+$kendo-editor-highlighted-bg: k-get-theme-color-var( primary-60 ) !default;
 
 /// The border color of the editor resize handle
 /// @group editor
@@ -67,7 +67,7 @@ $kendo-editor-resize-handle-bg: $kendo-color-white !default;
 
 /// The outline color of the editor selected node
 /// @group editor
-$kendo-editor-selectednode-outline-color: get-theme-color-var( primary-100 ) !default;
+$kendo-editor-selectednode-outline-color: k-get-theme-color-var( primary-100 ) !default;
 
 /// The border color of the inline editor data cell
 /// @group editor

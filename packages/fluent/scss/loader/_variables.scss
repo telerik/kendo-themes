@@ -123,7 +123,7 @@ $kendo-loader-theme-colors: () !default;
     @each $brand-color, $palette in $kendo-loader-brand-colors {
         $kendo-loader-theme-colors: map.deep-merge(
             $kendo-loader-theme-colors,
-            generate-theme-variation( $brand-color, $palette, $ui-states )
+            k-generate-theme-variation( $brand-color, $palette, $ui-states )
         );
     };
 }
@@ -131,13 +131,13 @@ $kendo-loader-theme-colors: () !default;
 @each $ui-states in $_tc-loader-dark-matrix {
     $kendo-loader-theme-colors: map.deep-merge(
         $kendo-loader-theme-colors,
-        generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, neutral, $ui-states )
     );
 }
 
 @each $ui-states in $_tc-loader-light-matrix {
     $kendo-loader-theme-colors: map.deep-merge(
         $kendo-loader-theme-colors,
-        generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, neutral, $ui-states )
     );
 }

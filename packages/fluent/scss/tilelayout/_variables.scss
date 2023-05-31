@@ -7,7 +7,7 @@
 $kendo-tile-layout-border-width: 0px !default;
 /// Background color of the tilelayout.
 /// @group tilelayout
-$kendo-tile-layout-bg: get-theme-color-var( neutral-10 ) !default;
+$kendo-tile-layout-bg: k-get-theme-color-var( neutral-10 ) !default;
 
 /// Width of the border around the tilelayout hint.
 /// @group tilelayout
