@@ -1,50 +1,126 @@
 // Loader
 
+/// The border radius of the Loader segment.
+/// @group loader
 $kendo-loader-segment-border-radius: 50% !default;
+
+/// The size of the small Loader segment.
+/// @group loader
 $kendo-loader-sm-segment-size: k-map-get( $kendo-spacing, 1 ) !default;
+/// The size of the medium Loader segment.
+/// @group loader
 $kendo-loader-md-segment-size: k-map-get( $kendo-spacing, 2 ) !default;
+/// The size of the large Loader segment.
+/// @group loader
 $kendo-loader-lg-segment-size: k-map-get( $kendo-spacing, 4 ) !default;
 
+/// The padding of the small Loader.
+/// @group loader
 $kendo-loader-sm-padding: k-math-div( $kendo-loader-sm-segment-size, 2 ) !default;
+/// The padding of the medium Loader.
+/// @group loader
 $kendo-loader-md-padding: k-math-div( $kendo-loader-md-segment-size, 2 ) !default;
+/// The padding of the large Loader.
+/// @group loader
 $kendo-loader-lg-padding: k-math-div( $kendo-loader-lg-segment-size, 2 ) !default;
 
+/// The width of the small spinner-3 Loader.
+/// @group loader
 $kendo-loader-sm-spinner-3-width: ( $kendo-loader-sm-segment-size * 4 ) !default;
-$kendo-loader-sm-spinner-3-height: ( $kendo-loader-sm-spinner-3-width * $equilateral-height ) !default;
+/// The width of the medium spinner-3 Loader.
+/// @group loader
 $kendo-loader-md-spinner-3-width: ( $kendo-loader-md-segment-size * 4 ) !default;
-$kendo-loader-md-spinner-3-height: ( $kendo-loader-md-spinner-3-width * $equilateral-height ) !default;
+/// The width of the large spinner-3 Loader.
+/// @group loader
 $kendo-loader-lg-spinner-3-width: ( $kendo-loader-lg-segment-size * 4 ) !default;
+
+/// The height of the small spinner-3 Loader.
+/// @group loader
+$kendo-loader-sm-spinner-3-height: ( $kendo-loader-sm-spinner-3-width * $equilateral-height ) !default;
+/// The height of the medium spinner-3 Loader.
+/// @group loader
+$kendo-loader-md-spinner-3-height: ( $kendo-loader-md-spinner-3-width * $equilateral-height ) !default;
+/// The height of the large spinner-3 Loader.
+/// @group loader
 $kendo-loader-lg-spinner-3-height: ( $kendo-loader-lg-spinner-3-width * $equilateral-height ) !default;
 
+/// The width of the small spinner-4 Loader.
+/// @group loader
 $kendo-loader-sm-spinner-4-width: $kendo-loader-sm-segment-size * 4 !default;
-$kendo-loader-sm-spinner-4-height: $kendo-loader-sm-spinner-4-width !default;
+/// The width of the medium spinner-4 Loader.
+/// @group loader
 $kendo-loader-md-spinner-4-width: $kendo-loader-md-segment-size * 4 !default;
-$kendo-loader-md-spinner-4-height: $kendo-loader-md-spinner-4-width !default;
+/// The width of the large spinner-4 Loader.
+/// @group loader
 $kendo-loader-lg-spinner-4-width: $kendo-loader-lg-segment-size * 4 !default;
+
+/// The height of the small spinner-4 Loader.
+/// @group loader
+$kendo-loader-sm-spinner-4-height: $kendo-loader-sm-spinner-4-width !default;
+/// The height of the medium spinner-4 Loader.
+/// @group loader
+$kendo-loader-md-spinner-4-height: $kendo-loader-md-spinner-4-width !default;
+/// The height of the large spinner-4 Loader.
+/// @group loader
 $kendo-loader-lg-spinner-4-height: $kendo-loader-lg-spinner-4-width !default;
 
+/// The color of the Loader based on the secondary theme color.
+/// @group loader
 $kendo-loader-secondary-bg: #656565 !default;
 
+/// The border width of the container panel.
+/// @group loader
 $kendo-loader-container-panel-border-width: 1px !default;
+/// The border style of the container panel.
+/// @group loader
 $kendo-loader-container-panel-border-style: solid !default;
+/// The border color of the container panel.
+/// @group loader
 $kendo-loader-container-panel-border-color: $kendo-component-border !default;
+/// The border radius of the container panel.
+/// @group loader
 $kendo-loader-container-panel-border-radius: $kendo-border-radius-md !default;
+/// The background color of the container panel.
+/// @group loader
 $kendo-loader-container-panel-bg: $kendo-color-white !default;
 
+/// The padding of the small Loader container.
+/// @group loader
 $kendo-loader-sm-container-padding: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-loader-sm-container-gap: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-loader-sm-container-font-size: $kendo-font-size-sm !default;
-
+/// The padding of the medium Loader container.
+/// @group loader
 $kendo-loader-md-container-padding: k-map-get( $kendo-spacing, 5 ) !default;
-$kendo-loader-md-container-gap: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-loader-md-container-font-size: $kendo-font-size-md !default;
-
+/// The padding of the large Loader container.
+/// @group loader
 $kendo-loader-lg-container-padding: k-map-get( $kendo-spacing, 6 ) !default;
+
+/// The gap of the small Loader container.
+/// @group loader
+$kendo-loader-sm-container-gap: k-map-get( $kendo-spacing, 1 ) !default;
+/// The gap of the medium Loader container.
+/// @group loader
+$kendo-loader-md-container-gap: k-map-get( $kendo-spacing, 2 ) !default;
+/// The gap of the large Loader container.
+/// @group loader
 $kendo-loader-lg-container-gap: k-map-get( $kendo-spacing, 3 ) !default;
+
+/// The font size of the small Loader container.
+/// @group loader
+$kendo-loader-sm-container-font-size: $kendo-font-size-sm !default;
+/// The font size of the medium Loader container.
+/// @group loader
+$kendo-loader-md-container-font-size: $kendo-font-size-md !default;
+/// The font size of the large Loader container.
+/// @group loader
 $kendo-loader-lg-container-font-size: $kendo-font-size-lg !default;
 
-
-// Loading
+// Loading indicator
+/// The background color of the Loading indicator.
+/// @group loading
 $kendo-loading-bg: $kendo-component-bg !default;
+/// The text color of the Loading indicator.
+/// @group loading
 $kendo-loading-text: currentColor !default;
+/// The opacity of the Loading indicator.
+/// @group loading
 $kendo-loading-opacity: .3 !default;
