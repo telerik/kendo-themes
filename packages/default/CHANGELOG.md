@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.6...v6.4.0) (2023-05-29)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+# [6.4.0-dev.6](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.5...v6.4.0-dev.6) (2023-05-29)
+
+
+### Bug Fixes
+
+* **grid:** row resizer is not visible with sticky columns ([2411983](https://github.com/telerik/kendo-themes/commit/2411983f57c044d676f1d5a51aa4a479f08674e1))
+
+
+
+
+
 # [6.4.0-dev.5](https://github.com/telerik/kendo-themes/compare/v6.4.0-dev.4...v6.4.0-dev.5) (2023-05-22)
 
 
