@@ -1,6 +1,16 @@
 @import "./core/functions/index.import.scss";
-@import "./core/color-system/index.import.scss";
 
+/// The color white.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+
+/// The color black.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
 
 // Options
 $kendo-enable-rounded: true !default;
@@ -445,3 +455,7 @@ $kendo-invalid-border: $kendo-color-error !default;
 /// Shadow of the invalid items.
 /// @group component
 $kendo-invalid-shadow: null !default;
+
+// Loading
+$kendo-loading-opacity: .3 !default;
+$kendo-zindex-loading: 100 !default;

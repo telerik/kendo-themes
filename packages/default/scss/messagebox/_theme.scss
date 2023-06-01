@@ -1,5 +1,4 @@
 @mixin kendo-messagebox--theme-base() {
-
     @each $color-name, $color in $kendo-theme-colors {
         .k-messagebox-#{$color-name} {
             @include fill(

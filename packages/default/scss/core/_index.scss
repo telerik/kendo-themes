@@ -1,22 +1,9 @@
 $wcag-min-contrast-ratio: 4.5 !default;
 
-// Functions
-@import "./functions/index.import.scss";
-
-// Color system
-@import "./color-system/index.import.scss";
-
-// Mixins
-@import "./mixins/index.import.scss";
-
-// Module system
-@import "./module-system/index.import.scss";
-
-// Common styles
-@import "./styles/index.import.scss";
-
 // Variables
 @import "../_variables.scss";
+
+@import "@progress/kendo-theme-core/scss/index.import.scss";
 
 // Expose
 @include exports("kendo-core-styles") {
