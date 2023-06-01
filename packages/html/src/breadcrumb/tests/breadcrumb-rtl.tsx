@@ -36,7 +36,6 @@ export default () =>(
                         <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" size="xsmall" />
                             <BreadcrumbLink>
-                                <span className="test"></span>
                                 <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
@@ -84,7 +83,6 @@ export default () =>(
                         <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" size="xsmall" />
                             <BreadcrumbLink>
-                                <span className="test"></span>
                                 <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
@@ -132,7 +130,6 @@ export default () =>(
                         <BreadcrumbItem>
                             <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-left" size="xsmall" />
                             <BreadcrumbLink>
-                                <span className="test"></span>
                                 <BreadcrumbItemText text="Third item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>

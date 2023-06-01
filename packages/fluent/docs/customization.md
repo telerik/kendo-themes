@@ -1724,7 +1724,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1734,7 +1734,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1744,7 +1744,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1754,7 +1754,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1764,7 +1764,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1774,7 +1774,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1784,7 +1784,37 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container">
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-sm-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the small breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-md-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the medium breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-lg-font-size</td>
+    <td></td>
+    <td><code>var( --kendo-font-size-md, inherit )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the large breadcrumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -1794,7 +1824,37 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the Breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-sm-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the small breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-md-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the medium breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-lg-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-line-height, normal )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height used along with the $kendo-font-size variable of the large breadcrumb.</div></div>
     </td>
 </tr>
 <tr>
@@ -1804,7 +1864,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1814,7 +1874,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1824,7 +1884,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the breadcrumb</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Breadcrumb</div></div>
     </td>
 </tr>
 <tr>
@@ -1844,17 +1904,77 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Breadcrumb link</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-sm-link-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Breadcrumb link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-md-link-padding-x</td>
+    <td></td>
+    <td><code>$kendo-breadcrumb-link-padding-x</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Breadcrumb link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-lg-link-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Breadcrumb link.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-breadcrumb-link-padding-y</td>
     <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Breadcrumb link</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-sm-link-padding-y</td>
+    <td></td>
     <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Breadcrumb link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-md-link-padding-y</td>
+    <td></td>
+    <td><code>$kendo-breadcrumb-link-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Breadcrumb link.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-lg-link-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Breadcrumb link.</div></div>
     </td>
 </tr>
 <tr>
@@ -1864,7 +1984,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The radius of the border around the Breadcrumb link</div></div>
     </td>
 </tr>
 <tr>
@@ -1874,7 +1994,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial text color of the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The initial text color of the Breadcrumb link</div></div>
     </td>
 </tr>
 <tr>
@@ -1884,7 +2004,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Breadcrumb link</div></div>
     </td>
 </tr>
 <tr>
@@ -1894,7 +2014,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Breadcrumb link</div></div>
     </td>
 </tr>
 <tr>
@@ -1904,7 +2024,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The borer color of the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The borer color of the Breadcrumb link</div></div>
     </td>
 </tr>
 <tr>
@@ -2004,7 +2124,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus and hover background color of the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus and hover background color of the Breadcrumb link</div></div>
     </td>
 </tr>
 <tr>
@@ -2044,7 +2164,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected the breadcrumb link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected the Breadcrumb link</div></div>
     </td>
 </tr>
 <tr>
@@ -2084,7 +2204,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the breadcrumb root link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Breadcrumb root link</div></div>
     </td>
 </tr>
 <tr>
@@ -2094,7 +2214,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the breadcrumb root link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Breadcrumb root link</div></div>
     </td>
 </tr>
 <tr>
@@ -2104,7 +2224,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the breadcrumb root link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Breadcrumb root link</div></div>
     </td>
 </tr>
 <tr>
@@ -2204,7 +2324,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus and hover background color of the breadcrumb root link</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus and hover background color of the Breadcrumb root link</div></div>
     </td>
 </tr>
 <tr>
@@ -2218,23 +2338,118 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-breadcrumb-icon-link-padding-x</td>
+    <td>$kendo-breadcrumb-icon-link-padding-y</td>
     <td></td>
-    <td><code>$kendo-breadcrumb-link-padding-x</code></td>
+    <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the breadcrumb link icon</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Breadcrumb link icon</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-breadcrumb-icon-link-padding-y</td>
+    <td>$kendo-breadcrumb-sm-icon-link-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Breadcrumb link icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-md-icon-link-padding-y</td>
+    <td></td>
+    <td><code>$kendo-breadcrumb-icon-link-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Breadcrumb link icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-lg-icon-link-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Breadcrumb link icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-icon-link-padding-x</td>
+    <td></td>
+    <td><code>$kendo-breadcrumb-icon-link-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Breadcrumb link icon</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-sm-icon-link-padding-x</td>
+    <td></td>
+    <td><code>$kendo-breadcrumb-sm-icon-link-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Breadcrumb link icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-md-icon-link-padding-x</td>
     <td></td>
     <td><code>$kendo-breadcrumb-icon-link-padding-x</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the breadcrumb link icon</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Breadcrumb link icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-lg-icon-link-padding-x</td>
+    <td></td>
+    <td><code>$kendo-breadcrumb-lg-icon-link-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Breadcrumb link icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-breadcrumb-sizes</td>
+    <td></td>
+    <td><code>(
+    sm: (
+        link-padding-x: $kendo-breadcrumb-sm-link-padding-x,
+        link-padding-y: $kendo-breadcrumb-sm-link-padding-y,
+        icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-x,
+        icon-link-padding-y: $kendo-breadcrumb-sm-icon-link-padding-y,
+        font-size: $kendo-breadcrumb-sm-font-size,
+        line-height: $kendo-breadcrumb-sm-line-height
+    ),
+    md: (
+        link-padding-x: $kendo-breadcrumb-md-link-padding-x,
+        link-padding-y: $kendo-breadcrumb-md-link-padding-y,
+        icon-link-padding-x: $kendo-breadcrumb-md-icon-link-padding-x,
+        icon-link-padding-y: $kendo-breadcrumb-md-icon-link-padding-y,
+        font-size: $kendo-breadcrumb-md-font-size,
+        line-height: $kendo-breadcrumb-md-line-height
+    ),
+    lg: (
+        link-padding-x: $kendo-breadcrumb-lg-link-padding-x,
+        link-padding-y: $kendo-breadcrumb-lg-link-padding-y,
+        icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-x,
+        icon-link-padding-y: $kendo-breadcrumb-lg-icon-link-padding-y,
+        font-size: $kendo-breadcrumb-lg-font-size,
+        line-height: $kendo-breadcrumb-lg-line-height
+    )
+)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Breadcrumb.</div></div>
     </td>
 </tr>
 </tbody>
