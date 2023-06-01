@@ -22,6 +22,8 @@ $kendo-color-level-step: 8% !default;
         @return k-color-mix( $base, $color, $level );
     }
 
+    // @debug $color;
+
     @return k-color-mix( $base, $color, k-math-clamp( $level * $_color-level-step, 0%, 100% ) );
 }
 
