@@ -2,81 +2,87 @@
 @use "../core/" as *;
 @use "../input/_variables.scss" as *;
 
-/// The width of the border around the editor
+/// The width of the border around the Еditor.
 /// @group editor
 $kendo-editor-border-width: 1px !default;
-/// The font family of the editor
+/// The font family of the Еditor.
 /// @group editor
 $kendo-editor-font-family: var( --kendo-font-family, inherit ) !default;
-/// The font size of the editor
+/// The font size of the Еditor.
 /// @group editor
 $kendo-editor-font-size: var( --kendo-font-size, inherit ) !default;
-/// The line height of the editor
+/// The line height of the Еditor.
 /// @group editor
 $kendo-editor-line-height: var( --kendo-line-height, normal ) !default;
-/// The text color of the editor
+/// The text color of the Editor.
 /// @group editor
 $kendo-editor-text: var( --kendo-component-text, initial ) !default;
-/// The background color of the editor
+/// The background color of the Editor.
 /// @group editor
 $kendo-editor-bg: var( --kendo-component-bg, initial ) !default;
-/// The color of the border around editor
+/// The color of the border around Editor.
 /// @group editor
 $kendo-editor-border: var( --kendo-component-border, initial ) !default;
-/// The placeholder text color of the editor
+/// The text color of the Еditor's placeholder.
 /// @group editor
 $kendo-editor-placeholder-text: var( --kendo-input-placeholder-text, #{$kendo-input-placeholder-text} ) !default;
-/// The placeholder opacity of the editor
+/// The opacity of the Editor's placeholder.
 /// @group editor
 $kendo-editor-placeholder-opacity: var( --kendo-input-placeholder-opacity, #{$kendo-input-placeholder-opacity} ) !default;
-/// The outline color of the editor content
+/// The outline color of the Editor's content.
 /// @group editor
 $kendo-editor-content-outline-color: var( --kendo-body-text, initial ) !default;
-/// The size of the editor resize handle
-/// @group editor
-$kendo-editor-resize-handle-size: map.get( $kendo-spacing, 2 ) !default;
-/// The border width of the editor resize handle
-/// @group editor
-$kendo-editor-resize-handle-border-width: 1px !default;
-/// The horizontal margin of the editor export tool icon
+/// The horizontal margin of the Editor's export tool icon.
 /// @group editor
 $kendo-editor-export-tool-icon-margin-x: map.get( $kendo-spacing, 1 ) !default;
-///  The outline width of the editor selected node
+/// The outline width of the Editor's selected node.
 /// @group editor
 $kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, 0.5 ) !default;
 
-// Cell size
-$ct-cell-size: 20px !default;
-
-/// The selected text color of the editor
+/// The selected text color of the Editor.
 /// @group editor
 $kendo-editor-selected-text: $kendo-color-white !default;
-/// The selected background color of the editor
+/// The selected background color of the Editor.
 /// @group editor
 $kendo-editor-selected-bg: get-theme-color-var( primary-100 ) !default;
-/// The highlighted background color of the editor
+/// The highlighted background color of the Editor.
 /// @group editor
 $kendo-editor-highlighted-bg: get-theme-color-var( primary-60 ) !default;
 
-/// The border color of the editor resize handle
+/// The size of the Editor's resize handle.
+/// @group editor
+$kendo-editor-resize-handle-size: map.get( $kendo-spacing, 2 ) !default;
+/// The border width of the Editor's resize handle.
+/// @group editor
+$kendo-editor-resize-handle-border-width: 1px !default;
+/// The border color of the Editor's resize handle.
 /// @group editor
 $kendo-editor-resize-handle-border: $kendo-color-black !default;
-/// The background color of the editor resize handle
+/// The background color of the Editor's resize handle.
 /// @group editor
 $kendo-editor-resize-handle-bg: $kendo-color-white !default;
 
-/// The outline color of the editor selected node
+/// The outline color of the Editor's selected node.
 /// @group editor
 $kendo-editor-selectednode-outline-color: get-theme-color-var( primary-100 ) !default;
 
-/// The border color of the inline editor data cell
+/// The border color of the Inline Editor data cell.
 /// @group editor
 $kendo-editor-inline-td-border: var( --kendo-component-border, initial ) !default;
-/// The hover border color of the inline editor
+/// The hover border color of the Inline Editor.
 /// @group editor
 $kendo-editor-inline-hover-border: var( --kendo-component-border, initial ) !default;
 
 // Insert table
+/// The size of the cell in the Insert table popup.
+/// @group editor
+$ct-cell-size: 20px !default;
+/// The text color of the selected cells in the Insert table popup.
+/// @group editor
 $kendo-editor-ct-popup-text: var( --kendo-selected-text, initial ) !default;
+/// The background color of the selected cells in the Insert table popup.
+/// @group editor
 $kendo-editor-ct-popup-bg: var( --kendo-selected-bg, initial ) !default;
+/// The border color of the selected cells in the Insert table popup.
+/// @group editor
 $kendo-editor-ct-popup-border: var( --kendo-selected-border, initial ) !default;
