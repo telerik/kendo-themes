@@ -1,6 +1,16 @@
 @import "./core/functions/index.import.scss";
-@import "./core/color-system/index.import.scss";
 
+/// The color white.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+
+/// The color black.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
 
 // Options
 $kendo-enable-rounded: true !default;
@@ -79,6 +89,7 @@ $theme: material-theme(
 /// Color of shadows
 /// @group shadows
 $elevation: k-map-get( $theme, elevation ) !default;
+
 /// Shadow for switch.
 /// Equivalent to material elevation 1.
 /// @group shadows
@@ -400,3 +411,7 @@ $kendo-invalid-bg: null !default;
 $kendo-invalid-text: $kendo-color-error !default;
 $kendo-invalid-border: $kendo-color-error !default;
 $kendo-invalid-shadow: null !default;
+
+// Loading
+$kendo-loading-opacity: .3 !default;
+$kendo-zindex-loading: 100 !default;
