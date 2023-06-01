@@ -2790,9 +2790,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-invalid-bg</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td><code>initial</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the invalid items.</div></div>
@@ -2820,9 +2820,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-invalid-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>null</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the invalid items.</div></div>
@@ -5282,9 +5282,9 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td>$kendo-input-invalid-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-invalid-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
