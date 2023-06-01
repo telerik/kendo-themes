@@ -1,58 +1,58 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Width of the border around the dialog.
+/// The width of the border around the Dialog.
 /// @group dialog
 $kendo-dialog-border-width: 0 !default;
 
-/// The background color of the dialog title bar.
+/// The background color of the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-bg: var( --kendo-component-bg, initial ) !default;
-/// The text color of the dialog title bar.
+/// The text color of the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-text: var( --kendo-component-text, initial ) !default;
-/// The border color of the dialog title bar.
+/// The border color of the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-border: var( --kendo-component-border, initial ) !default;
-/// Width of the border around the dialog title bar.
+/// The width of the border around the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-border-width: 0 !default;
-/// Horizontal padding of the dialog title bar.
+/// The horizontal padding of the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-padding-x: map.get( $kendo-spacing, 6 ) !default;
-/// Vertical padding of the dialog title bar.
+/// The vertical padding of the Dialog titlebar.
 /// @group dialog
 $kendo-dialog-titlebar-padding-y: map.get( $kendo-spacing, 4 ) !default;
 
-/// Horizontal padding of the content of the dialog.
+/// The horizontal padding of the content of the Dialog.
 /// @group dialog
 $kendo-dialog-inner-padding-x: map.get( $kendo-spacing, 6 ) !default;
-/// Vertical padding of the content of the dialog.
+/// The vertical padding of the content of the Dialog.
 /// @group dialog
 $kendo-dialog-inner-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
-/// Horizontal padding of the dialog action buttons.
+/// The horizontal padding of the Dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-padding-x: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-x
-/// Vertical padding of the dialog action buttons.
+/// The vertical padding of the Dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-padding-y: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-y
-/// Width of the top border of the dialog action buttons.
+/// The width of the top border of the Dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-border-width: 0 !default;
-/// Spacing between the action buttons of the dialog.
+/// The spacing between the Dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-spacing: map.get( $kendo-spacing, 3 ) !default;
 
-/// Spacing between the buttons in the header of the dialog.
+/// The spacing between the Dialog action buttons.
 /// @group dialog
 $kendo-dialog-button-spacing: map.get( $kendo-spacing, 2 ) !default; // $kendo-actions-padding-y
 
-/// Box shadow around the dialog.
+/// The box shadow around the Dialog.
 /// @group dialog
 $kendo-dialog-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 
-/// Theme variations for the dialog.
+/// The theme variations for the Dialog.
 $kendo-dialog-brand-colors: (
     primary: primary
  ) !default;
@@ -70,7 +70,7 @@ $_tc-dialog-light-matrix: (
     (normal: (50, 160, 50)),
 ) !default;
 
-/// Theme colors map for the dialog variations.
+/// The theme colors map for the Dialog.
 $kendo-dialog-theme-colors: () !default;
 
 @each $ui-states in $_tc-dialog-matrix {
