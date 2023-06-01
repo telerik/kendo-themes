@@ -1,3 +1,15 @@
+/// The color white.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+
+/// The color black.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+
 // Adapted from https://github.com/angular/material2/blob/master/src/lib/core/theming/_palette.scss
 // Adapted from https://github.com/angular/components/blob/master/src/material/core/theming/_theming.scss
 
