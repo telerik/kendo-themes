@@ -1,3 +1,18 @@
+@import "@progress/kendo-theme-core/scss/functions/index.import.scss";
+@import "@progress/kendo-theme-core/scss/color-system/_functions.import.scss";
+
+/// The color white.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+
+/// The color black.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+
 // Options
 $kendo-enable-rounded: true !default;
 $kendo-enable-shadows: true !default;
@@ -266,3 +281,7 @@ $kendo-invalid-bg: null !default;
 $kendo-invalid-text: $kendo-color-error !default;
 $kendo-invalid-border: $kendo-color-error !default;
 $kendo-invalid-shadow: null !default;
+
+// Loading
+$kendo-loading-opacity: .3 !default;
+$kendo-zindex-loading: 100 !default;
