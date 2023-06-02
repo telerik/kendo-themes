@@ -1,73 +1,74 @@
-// Progressbar
+// ProgressBar
 
-/// Height of the progressbar.
+/// The height of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-height: 22px !default;
-/// Horizontal width of the progressbar.
+/// The horizontal width of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-horizontal-width: 100% !default;
-/// Animation timing of the progressbar.
+/// The animation timing of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-animation-timing: 1s linear infinite !default;
-/// Border width of the progressbar.
+/// The width of the border around the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-border-width: 0px !default;
-/// Font family of the progressbar.
+/// The font family of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-font-family: $kendo-font-family !default;
-/// Font size of the progressbar.
+/// The font size of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-font-size: $kendo-font-size-sm !default;
-/// Line height of the progressbar.
+/// The line height of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-line-height: 1 !default;
-/// Background color of the progressbar.
+
+/// The background color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-bg: k-try-shade( $kendo-component-bg, 1 ) !default;
-/// Text color of the progressbar.
+/// The text color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-text: $kendo-component-text !default;
-/// Border color of the progressbar.
+/// The border color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-border: $kendo-component-border !default;
-/// Background gradient of the progressbar.
+/// The background gradient of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-gradient: null !default;
 
-/// Progress background color of the progressbar.
+/// The progress background color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-value-bg: $kendo-color-primary !default;
-/// Progress text color of the progressbar.
+/// The progress text color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-value-text: k-contrast-legacy( $kendo-progressbar-value-bg ) !default;
-/// Progress border color of the progressbar.
+/// The progress border color of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-value-border: k-try-shade( $kendo-progressbar-value-bg ) !default;
-/// Progress background gradient of the progressbar.
+/// The progress background gradient of the ProgressBar.
 /// @group progressbar
 $kendo-progressbar-value-gradient: null !default;
 
-/// Background color of the indeterminate progressbar.
+/// The background color of the indeterminate ProgressBar.
 /// @group progressbar
 $kendo-progressbar-indeterminate-bg: $kendo-progressbar-bg !default;
-/// Text color of the indeterminate progressbar.
+/// The text color of the indeterminate ProgressBar.
 /// @group progressbar
 $kendo-progressbar-indeterminate-text: $kendo-progressbar-text !default;
-/// Border color of the indeterminate progressbar.
+/// The border color of the indeterminate ProgressBar.
 /// @group progressbar
 $kendo-progressbar-indeterminate-border: $kendo-progressbar-border !default;
-/// Background gradient of the indeterminate progressbar.
+/// The background gradient of the indeterminate ProgressBar.
 /// @group progressbar
 $kendo-progressbar-indeterminate-gradient: null !default;
 
-/// Border color of the chunk progressbar.
+/// The border color of the chunk ProgressBar.
 /// @group progressbar
 $kendo-progressbar-chunk-border: $kendo-body-bg !default;
 
 // Circular Progressbar
-/// Arc stroke color of the circular progressbar.
+/// The arc stroke color of the circular ProgressBar.
 /// @group progressbar
 $kendo-circular-progressbar-arc-stroke: $kendo-color-primary !default;
-/// Scale stroke background color of the circular progressbar.
+/// The scale stroke background color of the circular ProgressBar.
 /// @group progressbar
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;
