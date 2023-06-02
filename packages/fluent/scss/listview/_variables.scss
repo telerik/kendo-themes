@@ -2,91 +2,91 @@
 @use "../core/" as *;
 @use "../list/_variables.scss"as *;
 
-/// Horizontal padding of listview.
+/// The horizontal padding of the ListView.
 /// @group listview
 $kendo-listview-padding-x: map.get( $kendo-spacing, 1 ) !default;
-/// Vertical padding of listview.
+/// The vertical padding of the ListView.
 /// @group listview
 $kendo-listview-padding-y: map.get( $kendo-spacing, 1 ) !default;
-/// Width of listview.
+/// The width of the border around bordered ListView.
 /// @group listview
 $kendo-listview-border-width: 1px !default;
 
-/// Horizontal padding of listview header.
+/// The horizontal padding of the ListView header.
 /// @group listview
 $kendo-listview-header-padding-x: map.get( $kendo-spacing, 4 ) !default;
-/// Vertical padding of listview header.
+/// The vertical padding of the ListView header.
 /// @group listview
 $kendo-listview-header-padding-y: map.get( $kendo-spacing, 2 ) !default;
 
-/// Horizontal padding of listview footer.
+/// The horizontal padding of the ListView footer.
 /// @group listview
 $kendo-listview-footer-padding-x: $kendo-listview-header-padding-x !default;
-/// Vertical padding of listview footer.
+/// The vertical padding of the ListView footer.
 /// @group listview
 $kendo-listview-footer-padding-y: $kendo-listview-header-padding-y !default;
 
-/// Horizontal padding of listview items.
+/// The horizontal padding of the ListView items.
 /// @group listview
 $kendo-listview-item-padding-x: map.get( $kendo-spacing, 1 ) !default;
-/// Vertical padding of listview items.
+/// The vertical padding of the ListView items.
 /// @group listview
 $kendo-listview-item-padding-y: map.get( $kendo-spacing, 1 ) !default;
 
-/// Font family of listview.
+/// The font family of the ListView.
 /// @group listview
 $kendo-listview-font-family: var( --kendo-font-family, initial ) !default;
-/// Font size of listview.
+/// The font size of the ListView.
 /// @group listview
 $kendo-listview-font-size: var( --kendo-font-size, initial ) !default;
-/// Line height of listview.
+/// The line height of the ListView.
 /// @group listview
 $kendo-listview-line-height: var( --kendo-line-height, initial ) !default;
 
-/// Gap between items of grid listview.
+/// The gap between items of ListView with grid layout.
 /// @group listview
 $kendo-listview-grid-gap: map.get( $kendo-spacing, 0 ) !default;
 
-/// Text color of listview.
+/// The text color of the ListView.
 /// @group listview
 $kendo-listview-text: var( --kendo-component-text, initial ) !default;
-/// Background color of listview.
+/// The background color of the ListView.
 /// @group listview
 $kendo-listview-bg: var( --kendo-component-bg, initial ) !default;
-/// Border color of listview.
+/// The border color of the ListView.
 /// @group listview
 $kendo-listview-border: var( --kendo-component-border, initial ) !default;
 
-/// Text color of focused listview items.
-/// @group listview
-$kendo-listview-item-focus-text: initial !default;
-/// Background color of focused listview items.
-/// @group listview
-$kendo-listview-item-focus-bg: initial !default;
-/// Box shadow of focused listview items.
-/// @group listview
-$kendo-listview-item-focus-shadow: var( --kendo-list-item-focus-shadow, $kendo-list-item-focus-shadow ) !default;
-
-/// Text color of selected listview items.
-/// @group listview
-$kendo-listview-item-selected-text: initial !default;
-/// Background color of selected listview items.
-/// @group listview
-$kendo-listview-item-selected-bg: get-theme-color-var( neutral-20 ) !default;
-
-/// Text color of listview header.
+/// The text color of the ListView header.
 /// @group listview
 $kendo-listview-header-text: initial !default;
-/// Background color of listview.
+/// The background color of the ListView header.
 /// @group listview
 $kendo-listview-header-bg: initial !default;
-/// Border color of listview.
+/// The border color of the ListView header.
 /// @group listview
 $kendo-listview-header-border: $kendo-listview-border !default;
 
-/// Text color of listview footer.
+/// The text color of the ListView footer.
 /// @group listview
 $kendo-listview-footer-text: initial !default;
-/// Background color of listview.
+/// The background color of the ListView footer.
 /// @group listview
 $kendo-listview-footer-bg: initial !default;
+
+/// The text color of the selected ListView items.
+/// @group listview
+$kendo-listview-item-selected-text: initial !default;
+/// The background color of the selected ListView items.
+/// @group listview
+$kendo-listview-item-selected-bg: get-theme-color-var( neutral-20 ) !default;
+
+/// The text color of the focused ListView items.
+/// @group listview
+$kendo-listview-item-focus-text: initial !default;
+/// The background color of the focused ListView items.
+/// @group listview
+$kendo-listview-item-focus-bg: initial !default;
+/// The box shadow of the focused ListView items.
+/// @group listview
+$kendo-listview-item-focus-shadow: var( --kendo-list-item-focus-shadow, $kendo-list-item-focus-shadow ) !default;
