@@ -1,33 +1,77 @@
-// Expansion panel
+// ExpansionPanel
+
+/// The vertical spacing of the ExpansionPanel.
+/// @group expander
 $kendo-expander-spacing-y: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-expander-font-family: $kendo-font-family !default;
-$kendo-expander-font-size: $kendo-font-size-md !default;
-$kendo-expander-line-height: $kendo-line-height-md !default;
+/// The width of the border around the ExpansionPanel.
+/// @group expander
 $kendo-expander-border-width: 1px !default;
+/// The font family of the ExpansionPanel.
+/// @group expander
+$kendo-expander-font-family: $kendo-font-family !default;
+/// The font size of the ExpansionPanel.
+/// @group expander
+$kendo-expander-font-size: $kendo-font-size-md !default;
+/// The hine height of the ExpansionPanel.
+/// @group expander
+$kendo-expander-line-height: $kendo-line-height-md !default;
 
-$kendo-expander-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
-$kendo-expander-header-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
-
-$kendo-expander-indicator-margin-x: k-map-get( $kendo-spacing, 3 ) !default;
-
-$kendo-expander-bg: $kendo-component-bg !default;
+/// The text color of the ExpansionPanel.
+/// @group expander
 $kendo-expander-text: $kendo-component-text !default;
+/// The background color of the ExpansionPanel.
+/// @group expander
+$kendo-expander-bg: $kendo-component-bg !default;
+/// The border color of the ExpansionPanel.
+/// @group expander
 $kendo-expander-border: $kendo-component-border !default;
 
+/// The box shadow of the focused ExpansionPanel.
+/// @group expander
 $kendo-expander-focus-shadow: $kendo-list-item-focus-shadow !default;
 
-$kendo-expander-header-bg: transparent !default;
+/// The horizontal padding of the ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+/// The vertical padding of the ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
+
+/// The text color of the ExpansionPanel header.
+/// @group expander
 $kendo-expander-header-text: $kendo-expander-text !default;
+/// The background color of the ExpansionPanel header.
+/// @group expander
+$kendo-expander-header-bg: transparent !default;
+/// The border color of the ExpansionPanel header.
+/// @group expander
 $kendo-expander-header-border: null !default;
 
+/// The background color of the hovered ExpansionPanel header.
+/// @group expander
 $kendo-expander-header-hover-bg: rgba(0, 0, 0, .04) !default;
-
+/// The background color of the focused ExpansionPanel header.
+/// @group expander
 $kendo-expander-header-focus-bg: null !default;
+/// The box shadow of the focused ExpansionPanel header.
+/// @group expander
 $kendo-expander-header-focus-shadow: $kendo-list-item-focus-shadow !default;
 
+/// The text color of the ExpansionPanel title.
+/// @group expander
 $kendo-expander-title-text: $kendo-color-primary !default;
 
+/// The text color of the ExpansionPanel sub-title.
+/// @group expander
 $kendo-expander-header-sub-title-text: $kendo-subtle-text !default;
 
+/// The horizontal margin of the ExpansionPanel indicator.
+/// @group expander
+$kendo-expander-indicator-margin-x: k-map-get( $kendo-spacing, 3 ) !default;
+
+/// The horizontal padding of the ExpansionPanel content.
+/// @group expander
 $kendo-expander-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+/// The vertical padding of the ExpansionPanel content.
+/// @group expander
 $kendo-expander-content-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
