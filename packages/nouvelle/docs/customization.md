@@ -1974,6 +1974,26 @@ The following table lists the available variables for customizing the Nouvelle t
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-color-white</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color white.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-black</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color black.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-primary</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #622331"></span><code>#622331</code></td>
