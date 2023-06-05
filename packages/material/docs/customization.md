@@ -3773,6 +3773,26 @@ The following table lists the available variables for customizing the Material t
     </tr>
 </thead>
 <tbody><tr>
+    <td>$kendo-color-white</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color white.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-black</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color black.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-primary</td>
     <td>Color</td>
     <td><code>material-color( $primary-palette, main )</code></td>
@@ -3900,6 +3920,26 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-white</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color white.<br />Note: you cannot change this value.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-black</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color black.<br />Note: you cannot change this value.</div></div>
     </td>
 </tr>
 </tbody>
@@ -7306,9 +7346,9 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td>$kendo-input-invalid-shadow</td>
-    <td>Null</td>
+    <td>String</td>
     <td><code>$kendo-invalid-shadow</code></td>
-    <td><code>null</code></td>
+    <td><code>none</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
