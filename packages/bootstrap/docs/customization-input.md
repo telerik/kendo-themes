@@ -266,7 +266,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-bg</td>
     <td>Color</td>
     <td><code>$input-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><span class="color-preview" style="background-color: #fff"></span><code>#fff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input components.</div></div>
@@ -276,7 +276,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-text</td>
     <td>Color</td>
     <td><code>$input-color</code></td>
-    <td><span class="color-preview" style="background-color: #495057"></span><code>#495057</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input components.</div></div>
@@ -346,7 +346,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-focus-bg</td>
     <td>Color</td>
     <td><code>$input-focus-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><span class="color-preview" style="background-color: #fff"></span><code>#fff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Input components.</div></div>
@@ -356,7 +356,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-focus-text</td>
     <td>Color</td>
     <td><code>$input-focus-color</code></td>
-    <td><span class="color-preview" style="background-color: #495057"></span><code>#495057</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Input components.</div></div>
@@ -566,7 +566,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-flat-text</td>
     <td>Color</td>
     <td><code>$kendo-input-text</code></td>
-    <td><span class="color-preview" style="background-color: #495057"></span><code>#495057</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Input components.</div></div>
@@ -776,7 +776,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-separator-color</td>
     <td>Color</td>
     <td><code>$kendo-input-text</code></td>
-    <td><span class="color-preview" style="background-color: #495057"></span><code>#495057</code></td>
+    <td><span class="color-preview" style="background-color: #212529"></span><code>#212529</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
