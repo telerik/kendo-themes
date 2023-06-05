@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-line-selected-fill</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-120 )</code></td>
+    <td><code>k-get-theme-color-var( primary-120 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-milestone-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-milestone-selected-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-progress-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-50 )</code></td>
+    <td><code>k-get-theme-color-var( primary-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-summary-progress-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-progress-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-50 )</code></td>
+    <td><code>k-get-theme-color-var( primary-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-task-progress-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-planned-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -630,7 +630,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( error-160 )</code></td>
+    <td><code>k-get-theme-color-var( error-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -640,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-bg-lighter</td>
     <td></td>
-    <td><code>get-theme-color-var( error-110)</code></td>
+    <td><code>k-get-theme-color-var( error-110)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -650,7 +650,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-delayed-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( error-190 )</code></td>
+    <td><code>k-get-theme-color-var( error-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -660,7 +660,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-advanced-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( success-160 )</code></td>
+    <td><code>k-get-theme-color-var( success-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-advanced-bg-lighter</td>
     <td></td>
-    <td><code>get-theme-color-var( success-110 )</code></td>
+    <td><code>k-get-theme-color-var( success-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -680,7 +680,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-advanced-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( success-190 )</code></td>
+    <td><code>k-get-theme-color-var( success-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -740,7 +740,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-valid-border</td>
     <td></td>
-    <td><code>get-theme-color-var( success-100 )</code></td>
+    <td><code>k-get-theme-color-var( success-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -750,7 +750,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td></td>
-    <td><code>get-theme-color-var( error-100 )</code></td>
+    <td><code>k-get-theme-color-var( error-100 )</code></td>
     <td></td>
 </tr>
 <tr>

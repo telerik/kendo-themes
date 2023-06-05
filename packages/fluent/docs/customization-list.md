@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-icon-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-header-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -408,7 +408,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -418,7 +418,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -428,7 +428,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -448,7 +448,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -458,7 +458,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -468,7 +468,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-40 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-40 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -478,7 +478,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -488,7 +488,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-50 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -498,7 +498,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-selected-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -518,7 +518,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-disabled-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -538,7 +538,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-group-item-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -568,7 +568,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-no-data-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>

@@ -168,7 +168,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-header-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -408,7 +408,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-20 )</code></td>
+    <td><code>k-get-theme-color-var( primary-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -438,7 +438,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-table-selected-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-30 )</code></td>
+    <td><code>k-get-theme-color-var( primary-30 )</code></td>
     <td></td>
 </tr>
 <tr>

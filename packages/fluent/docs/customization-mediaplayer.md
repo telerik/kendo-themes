@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-overlay-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-media-player-quality-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
