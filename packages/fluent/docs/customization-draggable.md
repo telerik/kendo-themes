@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drop-hint-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>

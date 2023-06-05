@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-canvas-rectangle-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-slider-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>

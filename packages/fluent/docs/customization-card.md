@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-card-header-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>

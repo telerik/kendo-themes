@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-preview-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-preview-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-preview-no-color-text</td>
     <td></td>
-    <td><code>get-theme-color( error, 190 )</code></td>
+    <td><code>k-get-theme-color( error, 190 )</code></td>
     <td></td>
 </tr>
 <tr>

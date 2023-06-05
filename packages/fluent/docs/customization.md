@@ -102,56 +102,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-border-radius</td>
-    <td></td>
-    <td><code>map.get( $kendo-spacing, 0.5 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-box-shadow-depth-1</td>
-    <td></td>
-    <td><code>0 1.6px 3.6px rgba( $kendo-color-black, 0.132 ), 0 0.3px 0.9px rgba( $kendo-color-black, 0.108 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for cards and grid item thumbnails.<br />Equivalent to fluent depth 4.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-box-shadow-depth-2</td>
-    <td></td>
-    <td><code>0 3.2px 7.2px rgba( $kendo-color-black, 0.132 ), 0 0.6px 1.8px rgba( $kendo-color-black, 0.108 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for command bars and dropdowns.<br />Equivalent to fluent depth 8.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-box-shadow-depth-3</td>
-    <td></td>
-    <td><code>0 6.4px 14.4px rgba( $kendo-color-black, 0.132 ), 0 1.2px 3.6px rgba( $kendo-color-black, 0.108 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for teaching callouts and hover cards / tooltips.<br />Equivalent to fluent depth 16.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-box-shadow-depth-4</td>
-    <td></td>
-    <td><code>0 25.6px 57.6px rgba( $kendo-color-black, 0.22 ), 0 4.8px 14.4px rgba( $kendo-color-black, 0.18 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for panels and pop up dialogs.<br />Equivalent to fluent depth 64.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-dialog-brand-colors</td>
     <td></td>
     <td><code>(
@@ -636,7 +586,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-item-icon-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1870,7 +1820,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1890,7 +1840,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px get-theme-color-var( neutral-30 )</code></td>
+    <td><code>0 0 0 1px k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2010,7 +1960,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2040,7 +1990,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2080,7 +2030,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-active-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2100,7 +2050,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2110,7 +2060,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2170,7 +2120,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-breadcrumb-link-selected-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2904,7 +2854,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-header-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3214,7 +3164,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-today-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3234,7 +3184,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-today-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-120 )</code></td>
+    <td><code>k-get-theme-color-var( primary-120 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3394,7 +3344,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130)</code></td>
+    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3434,7 +3384,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-navigation-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3504,7 +3454,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-range-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3524,7 +3474,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-range-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3534,7 +3484,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-start-range-hover-shadow</td>
     <td></td>
-    <td><code>inset 1px -1px 0 0 get-theme-color-var( neutral-130 ), inset 0 1px 0 0 get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 1px -1px 0 0 k-get-theme-color-var( neutral-130 ), inset 0 1px 0 0 k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3544,7 +3494,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-mid-range-hover-shadow</td>
     <td></td>
-    <td><code>inset 0 -1px 0 0 get-theme-color-var( neutral-130 ), inset 0 1px 0 0 get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 -1px 0 0 k-get-theme-color-var( neutral-130 ), inset 0 1px 0 0 k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3554,7 +3504,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-end-range-hover-shadow</td>
     <td></td>
-    <td><code>inset -1px -1px 0 0 get-theme-color-var( neutral-130 ), inset 0 1px 0 0 get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset -1px -1px 0 0 k-get-theme-color-var( neutral-130 ), inset 0 1px 0 0 k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -3974,7 +3924,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-card-header-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4324,7 +4274,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-series-a</td>
     <td></td>
-    <td><code>get-theme-color-var( series-a-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-a-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4334,7 +4284,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-b</td>
     <td></td>
-    <td><code>get-theme-color-var( series-b-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-b-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4344,7 +4294,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-c</td>
     <td></td>
-    <td><code>get-theme-color-var( series-c-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-c-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4354,7 +4304,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-d</td>
     <td></td>
-    <td><code>get-theme-color-var( series-d-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-d-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4364,7 +4314,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-e</td>
     <td></td>
-    <td><code>get-theme-color-var( series-e-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-e-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4374,7 +4324,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-series-f</td>
     <td></td>
-    <td><code>get-theme-color-var( series-f-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-f-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4484,7 +4434,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4494,7 +4444,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4594,7 +4544,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-color</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4624,7 +4574,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-notes-background</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4654,7 +4604,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chart-handle-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4714,7 +4664,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-error-bars-background</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -4804,7 +4754,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treemap-title-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5284,7 +5234,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5294,7 +5244,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5304,7 +5254,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5374,7 +5324,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5444,7 +5394,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5454,7 +5404,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5464,7 +5414,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5484,7 +5434,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-quick-reply-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5554,7 +5504,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5574,7 +5524,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-text</td>
     <td></td>
-    <td><code>get-theme-color( neutral, 130 )</code></td>
+    <td><code>k-get-theme-color( neutral, 130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5594,7 +5544,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-checked-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5624,7 +5574,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-checked-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5674,7 +5624,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-focus-outline</td>
     <td></td>
-    <td><code>1px solid get-theme-color-var( neutral-130 )</code></td>
+    <td><code>1px solid k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5694,7 +5644,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-indeterminate-text</td>
     <td></td>
-    <td><code>get-theme-color( primary, 100 )</code></td>
+    <td><code>k-get-theme-color( primary, 100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5704,7 +5654,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-indeterminate-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5724,7 +5674,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-text</td>
     <td></td>
-    <td><code>get-theme-color( primary, 110 )</code></td>
+    <td><code>k-get-theme-color( primary, 110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5734,7 +5684,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5754,7 +5704,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5764,7 +5714,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5774,7 +5724,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-checked-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5794,7 +5744,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-checked-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5814,7 +5764,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-text</td>
     <td></td>
-    <td><code>get-theme-color( neutral, 60 )</code></td>
+    <td><code>k-get-theme-color( neutral, 60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5824,7 +5774,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6014,7 +5964,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-checkbox-ripple-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6154,7 +6104,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chip-outline-disabled-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6527,7 +6477,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6587,7 +6537,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-canvas-rectangle-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6637,7 +6587,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-slider-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6707,7 +6657,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6727,7 +6677,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6907,7 +6857,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-preview-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6917,7 +6867,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-preview-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6937,7 +6887,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-preview-no-color-text</td>
     <td></td>
-    <td><code>get-theme-color( error, 190 )</code></td>
+    <td><code>k-get-theme-color( error, 190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7087,7 +7037,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7347,7 +7297,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-palette-tile-focus-outline</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7367,7 +7317,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-palette-tile-hover-outline</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7817,7 +7767,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drop-hint-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7947,7 +7897,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-scrollbar-color</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7957,7 +7907,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-scrollbar-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-40 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-40 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7977,7 +7927,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8087,7 +8037,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-ripple-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8117,7 +8067,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-icon-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8137,7 +8087,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8147,7 +8097,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-hover-icon-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8177,7 +8127,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8227,7 +8177,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-drawer-item-selected-icon-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-120 )</code></td>
+    <td><code>k-get-theme-color-var( primary-120 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8397,7 +8347,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8437,7 +8387,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8447,7 +8397,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dropzone-icon-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8687,7 +8637,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8697,7 +8647,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-60 )</code></td>
+    <td><code>k-get-theme-color-var( primary-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8747,7 +8697,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-editor-selectednode-outline-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8897,7 +8847,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8917,7 +8867,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 2px get-theme-color-var( neutral-30 )</code></td>
+    <td><code>inset 0 0 0 2px k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -8987,7 +8937,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-focus-outline</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9007,7 +8957,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-focus-shadow</td>
     <td></td>
-    <td><code>inset 0px 0px 0px 2px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0px 0px 0px 2px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9037,7 +8987,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-header-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9057,7 +9007,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-header-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9067,7 +9017,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-expander-title-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9837,7 +9787,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-filter-toolbar-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10282,7 +10232,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10302,7 +10252,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10332,7 +10282,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10342,7 +10292,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10362,7 +10312,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10392,7 +10342,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-active-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -10832,7 +10782,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-form-hint-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11052,7 +11002,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fieldset-legend-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11232,7 +11182,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-line-selected-fill</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-120 )</code></td>
+    <td><code>k-get-theme-color-var( primary-120 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11322,7 +11272,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-milestone-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11332,7 +11282,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-milestone-selected-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11342,7 +11292,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11352,7 +11302,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-progress-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11362,7 +11312,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-50 )</code></td>
+    <td><code>k-get-theme-color-var( primary-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11372,7 +11322,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-summary-progress-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11412,7 +11362,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11442,7 +11392,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-progress-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11452,7 +11402,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-progress-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11462,7 +11412,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-50 )</code></td>
+    <td><code>k-get-theme-color-var( primary-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11492,7 +11442,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-task-progress-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11682,7 +11632,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-planned-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11692,7 +11642,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-planned-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11712,7 +11662,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-delayed-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( error-160 )</code></td>
+    <td><code>k-get-theme-color-var( error-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11722,7 +11672,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-delayed-bg-lighter</td>
     <td></td>
-    <td><code>get-theme-color-var( error-110)</code></td>
+    <td><code>k-get-theme-color-var( error-110)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11732,7 +11682,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-delayed-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( error-190 )</code></td>
+    <td><code>k-get-theme-color-var( error-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11742,7 +11692,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-advanced-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( success-160 )</code></td>
+    <td><code>k-get-theme-color-var( success-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11752,7 +11702,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-advanced-bg-lighter</td>
     <td></td>
-    <td><code>get-theme-color-var( success-110 )</code></td>
+    <td><code>k-get-theme-color-var( success-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11762,7 +11712,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-advanced-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( success-190 )</code></td>
+    <td><code>k-get-theme-color-var( success-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11822,7 +11772,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-validation-tooltip-valid-border</td>
     <td></td>
-    <td><code>get-theme-color-var( success-100 )</code></td>
+    <td><code>k-get-theme-color-var( success-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -11832,7 +11782,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-gantt-validation-tooltip-invalid-border</td>
     <td></td>
-    <td><code>get-theme-color-var( error-100 )</code></td>
+    <td><code>k-get-theme-color-var( error-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12332,7 +12282,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-header-icon-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12652,7 +12602,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sort-indicator-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12662,7 +12612,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sort-indicator-order-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12672,7 +12622,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sorted-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12772,7 +12722,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-indicator-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12782,7 +12732,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-indicator-icon-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12812,7 +12762,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-drop-hint-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12852,7 +12802,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-sticky-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13382,7 +13332,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-row-resizer-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13392,7 +13342,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-row-resizer-active-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13502,7 +13452,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -13592,7 +13542,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-image-editor-content-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-50 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14062,7 +14012,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14082,7 +14032,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14092,7 +14042,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14112,7 +14062,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14142,7 +14092,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-solid-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14212,7 +14162,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14232,7 +14182,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14242,7 +14192,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14262,7 +14212,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14272,7 +14222,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14292,7 +14242,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-outline-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14362,7 +14312,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14382,7 +14332,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14392,7 +14342,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14412,7 +14362,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14422,7 +14372,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14442,7 +14392,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-flat-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14512,7 +14462,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14532,7 +14482,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )!default</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )!default</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14542,7 +14492,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14562,7 +14512,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14572,7 +14522,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14592,7 +14542,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14642,7 +14592,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-solid-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14662,7 +14612,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14682,7 +14632,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14702,7 +14652,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14722,7 +14672,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14742,7 +14692,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14762,7 +14712,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-focus-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14772,7 +14722,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-outline-hover-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14812,7 +14762,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14832,7 +14782,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14842,7 +14792,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14852,7 +14802,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14862,7 +14812,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14872,7 +14822,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -14892,7 +14842,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15145,7 +15095,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-prefix-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15155,7 +15105,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-suffix-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15185,7 +15135,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-placeholder-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15205,7 +15155,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-input-clear-value-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15485,7 +15435,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-icon-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15603,7 +15553,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-header-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15643,7 +15593,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15653,7 +15603,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15663,7 +15613,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15683,7 +15633,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15693,7 +15643,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15703,7 +15653,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-40 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-40 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15713,7 +15663,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-selected-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15723,7 +15673,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-selected-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-50 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15733,7 +15683,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-selected-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15753,7 +15703,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-item-disabled-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15773,7 +15723,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-group-item-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15803,7 +15753,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-list-no-data-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15973,7 +15923,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listbox-drop-hint-border-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16901,7 +16851,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17001,7 +16951,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17011,7 +16961,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-navigator-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17091,7 +17041,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-map-marker-fill</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17191,7 +17141,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-overlay-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17201,7 +17151,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-media-player-quality-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17779,7 +17729,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-item-focus-outline</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17869,7 +17819,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-icon-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18397,7 +18347,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18407,7 +18357,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18417,7 +18367,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18677,7 +18627,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-line-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18887,7 +18837,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -18937,7 +18887,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19007,7 +18957,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-sizes-label-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19017,7 +18967,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pager-info-label-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19313,7 +19263,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-header-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19433,7 +19383,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-selected-marker</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19573,7 +19523,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-panelbar-item-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19873,7 +19823,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-canvas-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20303,7 +20253,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-headers-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20323,7 +20273,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-total-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20573,7 +20523,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-configurator-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21353,7 +21303,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21393,7 +21343,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-value-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21483,7 +21433,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-value-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-30 )</code></td>
+    <td><code>k-get-theme-color-var( primary-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21493,7 +21443,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-indeterminate-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21513,7 +21463,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-indeterminate-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21523,7 +21473,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-indeterminate-gradient-horizontal</td>
     <td></td>
-    <td><code>linear-gradient(270deg, get-theme-color-var( neutral-30 ) 15%, get-theme-color-var( primary-100 ) 50%, get-theme-color-var( neutral-30 ) 85%)</code></td>
+    <td><code>linear-gradient(270deg, k-get-theme-color-var( neutral-30 ) 15%, k-get-theme-color-var( primary-100 ) 50%, k-get-theme-color-var( neutral-30 ) 85%)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21533,7 +21483,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-progressbar-indeterminate-gradient-vertical</td>
     <td></td>
-    <td><code>linear-gradient(180deg, get-theme-color-var( neutral-30 ) 15%, get-theme-color-var( primary-100 ) 50%, get-theme-color-var( neutral-30 ) 85%)</code></td>
+    <td><code>linear-gradient(180deg, k-get-theme-color-var( neutral-30 ) 15%, k-get-theme-color-var( primary-100 ) 50%, k-get-theme-color-var( neutral-30 ) 85%)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21573,7 +21523,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-circular-progressbar-arc-stroke</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21682,7 +21632,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21702,7 +21652,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-hover-text</td>
     <td></td>
-    <td><code>get-theme-color( neutral, 130 )</code></td>
+    <td><code>k-get-theme-color( neutral, 130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21732,7 +21682,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-checked-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21742,7 +21692,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-checked-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21762,7 +21712,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-hover-checked-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21772,7 +21722,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-hover-checked-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21802,7 +21752,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-focus-outline</td>
     <td></td>
-    <td><code>1px solid get-theme-color-var( neutral-130 )</code></td>
+    <td><code>1px solid k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21832,7 +21782,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-disabled-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21842,7 +21792,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-disabled-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22022,7 +21972,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-radio-ripple-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22122,7 +22072,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22132,7 +22082,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22182,7 +22132,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-selected-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22192,7 +22142,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-rating-item-selected-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-120 )</code></td>
+    <td><code>k-get-theme-color-var( primary-120 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22292,7 +22242,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-20 )</code></td>
+    <td><code>k-get-theme-color-var( primary-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22452,7 +22402,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22552,7 +22502,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-120 )</code></td>
+    <td><code>k-get-theme-color-var( primary-120 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22672,7 +22622,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-nonwork-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22712,7 +22662,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-othermonth-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22802,7 +22752,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-yearview-indicator-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -22862,7 +22812,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-tooltip-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23012,7 +22962,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-marquee-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23142,7 +23092,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23162,7 +23112,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-hover-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px get-theme-color-var( neutral-30 )</code></td>
+    <td><code>0 0 0 1px k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23172,7 +23122,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23182,7 +23132,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-hover-shadow</td>
     <td></td>
-    <td><code>0 0 0 2px get-theme-color-var( neutral-30 )</code></td>
+    <td><code>0 0 0 2px k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23192,7 +23142,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 2px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>0 0 0 2px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23272,7 +23222,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scrollview-navigation-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23352,7 +23302,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-searchbox-icon-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23472,7 +23422,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-signature-line-color</td>
     <td></td>
-    <td><code>rgba( get-theme-color( info, 100 ), .4 )</code></td>
+    <td><code>rgba( k-get-theme-color( info, 100 ), .4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23482,7 +23432,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-signature-line-disabled-color</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23628,7 +23578,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-50 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23638,7 +23588,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-skeleton-wave-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23758,7 +23708,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23778,7 +23728,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23798,7 +23748,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-focus-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23818,7 +23768,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-selection-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23898,7 +23848,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23938,7 +23888,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-120 )</code></td>
+    <td><code>k-get-theme-color-var( primary-120 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23978,7 +23928,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-active-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-130 )</code></td>
+    <td><code>k-get-theme-color-var( primary-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24038,7 +23988,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-disabled-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24048,7 +23998,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-track-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24058,7 +24008,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-selection-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24068,7 +24018,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-disabled-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24218,7 +24168,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-split-button-arrow-delimiter-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24392,7 +24342,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitbar-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24412,7 +24362,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitbar-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24432,7 +24382,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-splitbar-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24622,7 +24572,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-primary-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24632,7 +24582,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-primary-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24672,7 +24622,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-selected-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-160 )</code></td>
+    <td><code>k-get-theme-color-var( primary-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24682,7 +24632,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-30 )</code></td>
+    <td><code>k-get-theme-color-var( primary-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24692,7 +24642,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-selected-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24702,7 +24652,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24722,7 +24672,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24732,7 +24682,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24742,7 +24692,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24752,7 +24702,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24762,7 +24712,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-active-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24772,7 +24722,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-active-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24782,7 +24732,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-button-active-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24792,7 +24742,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-filter-menu-icon-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24802,7 +24752,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-error-border</td>
     <td></td>
-    <td><code>get-theme-color-var( error-190 )</code></td>
+    <td><code>k-get-theme-color-var( error-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24972,7 +24922,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-outline-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24982,7 +24932,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-spreadsheet-drawing-handle-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25292,7 +25242,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25362,7 +25312,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-done-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25392,7 +25342,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-done-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25422,7 +25372,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-done-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-30 )</code></td>
+    <td><code>k-get-theme-color-var( primary-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25452,7 +25402,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-indicator-current-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-120 )</code></td>
+    <td><code>k-get-theme-color-var( primary-120 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25552,7 +25502,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-label-success-text</td>
     <td></td>
-    <td><code>get-theme-color-var( success-190 )</code></td>
+    <td><code>k-get-theme-color-var( success-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25562,7 +25512,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-label-error-text</td>
     <td></td>
-    <td><code>get-theme-color-var( error-190 )</code></td>
+    <td><code>k-get-theme-color-var( error-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25602,7 +25552,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-stepper-optional-label-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25756,7 +25706,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-focus-ring</td>
     <td></td>
-    <td><code>1px solid get-theme-color-var( neutral-130 )</code></td>
+    <td><code>1px solid k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25786,7 +25736,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25816,7 +25766,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25846,7 +25796,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25876,7 +25826,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-track-disabled-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25886,7 +25836,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25906,7 +25856,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25916,7 +25866,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25936,7 +25886,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-hover-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25946,7 +25896,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25966,7 +25916,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-off-thumb-disabled-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -25976,7 +25926,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26006,7 +25956,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-110 )</code></td>
+    <td><code>k-get-theme-color-var( primary-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26036,7 +25986,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-focus-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26066,7 +26016,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-track-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26156,7 +26106,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-thumb-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26176,7 +26126,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-switch-on-thumb-disabled-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26344,7 +26294,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-header-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26584,7 +26534,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-20 )</code></td>
+    <td><code>k-get-theme-color-var( primary-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26614,7 +26564,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-table-selected-hover-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-30 )</code></td>
+    <td><code>k-get-theme-color-var( primary-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26944,7 +26894,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26954,7 +26904,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-selected-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26984,7 +26934,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-dragging-text</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27004,7 +26954,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-indicator-color</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27324,7 +27274,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27374,7 +27324,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27674,7 +27624,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-card-selected-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27734,7 +27684,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-50 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-50 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -27784,7 +27734,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tile-layout-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28373,7 +28323,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28383,7 +28333,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-track-border-color</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28533,7 +28483,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28603,7 +28553,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-card-header-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28613,7 +28563,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-card-body-scroll-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28743,7 +28693,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-circle-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28943,7 +28893,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28973,7 +28923,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-separator-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-60 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29013,7 +28963,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-toolbar-item-focus-outline-color</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29219,7 +29169,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-button-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130, initial )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130, initial )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29229,7 +29179,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-primary-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29648,7 +29598,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29988,7 +29938,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-dropzone-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30008,7 +29958,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-dropzone-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30118,7 +30068,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-progress-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30128,7 +30078,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-success-text</td>
     <td></td>
-    <td><code>get-theme-color-var( success-190 )</code></td>
+    <td><code>k-get-theme-color-var( success-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30148,7 +30098,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-upload-error-text</td>
     <td></td>
-    <td><code>get-theme-color-var( error-190 )</code></td>
+    <td><code>k-get-theme-color-var( error-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30428,7 +30378,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-border</td>
     <td></td>
-    <td><code>get-theme-color-var( primary-100 )</code></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -30684,7 +30634,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-wizard-step-focus-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
