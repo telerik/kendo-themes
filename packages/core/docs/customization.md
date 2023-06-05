@@ -1750,6 +1750,61 @@ k-map-merge($map, $args) // => Map
 }
 ```
 
+### `k-map-deep-merge`
+
+Returns a deep-map with the keys and values from `$map` and `$args`.
+
+
+#### Syntax
+
+```scss
+k-map-deep-merge($maps) // => Map
+```
+
+#### Parameters
+
+
+`<Map> $maps`
+: The maps to deep-merge.
+
+
+#### Examples
+
+```scss
+// Usage
+@debug k-map-deep-merge( ( "foo": ("bar": "baz", "baz": "qux" ) ), ( "foo": ("bar": "foo") ) ); // => ( "foo": ("bar": "foo", "baz": "qux" ))
+```
+
+
+#### Source
+
+```scss
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L56-L78
+@function k-map-deep-merge($maps) {
+    $merged: ();
+  
+    @each $map in $maps {
+      @each $key, $val in $map {
+        @if (k-meta-type-of($val) == 'map') {
+          $current: k-map-get($merged, $key);
+          @if (k-meta-type-of($current) == 'map') {
+            $val: k-map-deep-merge($current, $val);
+            $map: k-map-merge(
+              $map,
+              (
+                $key: $val
+              )
+            );
+          }
+        }
+      }
+      $merged: k-map-merge($merged, $map);
+    }
+  
+    @return $merged;
+}
+```
+
 ### `k-map-remove`
 
 Returns a map with the keys and values from `$map` except for `$keys`.
@@ -1782,7 +1837,7 @@ k-map-remove($map, $keys) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L57-L59
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L87-L89
 @function k-map-remove($map, $keys) {
     @return map-remove( $map, $keys... );
 }
@@ -1823,7 +1878,7 @@ k-map-set($map, $key, $value) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L69-L71
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L99-L101
 @function k-map-set($map, $key, $value) {
     @return k-map-merge( $map, ( $key: $value ) );
 }
@@ -1858,7 +1913,7 @@ k-map-values($map) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L79-L81
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L109-L111
 @function k-map-values($map) {
     @return map-values( $map );
 }
@@ -1893,7 +1948,7 @@ k-map-negate($map) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L89-L105
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_map.import.scss#L119-L135
 @function k-map-negate($map) {
     $_map-neg: ();
 
@@ -3303,7 +3358,7 @@ k-string-index($string, $substring) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L8-L10
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L17-L19
 @function k-string-index($string, $substring) {
     @return str-index( $string, $substring );
 }
@@ -3344,7 +3399,7 @@ k-string-insert($string, $insert, $index) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L20-L22
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L29-L31
 @function k-string-insert($string, $insert, $index) {
     @return str-insert( $string, $insert, $index );
 }
@@ -3379,7 +3434,7 @@ k-string-length($string) // => Number
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L30-L32
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L39-L41
 @function k-string-length($string) {
     @return str-length( $string );
 }
@@ -3414,7 +3469,7 @@ k-string-quote($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L40-L42
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L49-L51
 @function k-string-quote($string) {
     @return quote( $string );
 }
@@ -3456,7 +3511,7 @@ k-string-replace($string, $search, $replace) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L55-L67
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L64-L76
 @function k-string-replace($string, $search, $replace) {
     @if k-meta-type-of( $string ) == number {
         $string: $string + "";
@@ -3507,7 +3562,7 @@ k-string-slice($string, $start-at, $end-at) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L77-L79
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L86-L88
 @function k-string-slice($string, $start-at, $end-at) {
     @return str-slice( $string, $start-at, $end-at );
 }
@@ -3542,7 +3597,7 @@ k-string-to-lower-case($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L87-L89
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L96-L98
 @function k-string-to-lower-case($string) {
     @return to-lower-case( $string );
 }
@@ -3577,7 +3632,7 @@ k-string-to-upper-case($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L97-L99
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L106-L108
 @function k-string-to-upper-case($string) {
     @return to-upper-case( $string );
 }
@@ -3607,7 +3662,7 @@ k-string-unique-id() // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L106-L108
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L115-L117
 @function k-string-unique-id() {
     @return unique-id();
 }
@@ -3642,7 +3697,7 @@ k-string-unquote($string) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L116-L118
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_string.import.scss#L125-L127
 @function k-string-unquote($string) {
     @return unquote( $string );
 }
@@ -3654,6 +3709,76 @@ k-string-unquote($string) // => String
 ## Variables
 
 The following table lists the available variables for customizing the Theme Core theme.
+
+### Common
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-border-radius</td>
+    <td>Number</td>
+    <td><code>k-map-get($kendo-spacing, 0.5)</code></td>
+    <td><code>0.125rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-1</td>
+    <td>List</td>
+    <td><code>0 1.6px 3.6px rgba( $kendo-color-black, 0.132 ), 0 0.3px 0.9px rgba( $kendo-color-black, 0.108 )</code></td>
+    <td><code>0 1.6px 3.6px rgba(0, 0, 0, 0.132), 0 0.3px 0.9px rgba(0, 0, 0, 0.108)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for cards and grid item thumbnails.<br />Equivalent to fluent depth 4.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-2</td>
+    <td>List</td>
+    <td><code>0 3.2px 7.2px rgba( $kendo-color-black, 0.132 ), 0 0.6px 1.8px rgba( $kendo-color-black, 0.108 )</code></td>
+    <td><code>0 3.2px 7.2px rgba(0, 0, 0, 0.132), 0 0.6px 1.8px rgba(0, 0, 0, 0.108)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for command bars and dropdowns.<br />Equivalent to fluent depth 8.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-3</td>
+    <td>List</td>
+    <td><code>0 6.4px 14.4px rgba( $kendo-color-black, 0.132 ), 0 1.2px 3.6px rgba( $kendo-color-black, 0.108 )</code></td>
+    <td><code>0 6.4px 14.4px rgba(0, 0, 0, 0.132), 0 1.2px 3.6px rgba(0, 0, 0, 0.108)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for teaching callouts and hover cards / tooltips.<br />Equivalent to fluent depth 16.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-4</td>
+    <td>List</td>
+    <td><code>0 25.6px 57.6px rgba( $kendo-color-black, 0.22 ), 0 4.8px 14.4px rgba( $kendo-color-black, 0.18 )</code></td>
+    <td><code>0 25.6px 57.6px rgba(0, 0, 0, 0.22), 0 4.8px 14.4px rgba(0, 0, 0, 0.18)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for panels and pop up dialogs.<br />Equivalent to fluent depth 64.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
 
 ### Accessibility
 
