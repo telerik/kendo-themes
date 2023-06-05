@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px get-theme-color-var( neutral-30 )</code></td>
+    <td><code>0 0 0 1px k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-hover-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-active-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-focus-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-selected-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>

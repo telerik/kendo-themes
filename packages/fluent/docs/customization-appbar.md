@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-appbar-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>

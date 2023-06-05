@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-series-a</td>
     <td></td>
-    <td><code>get-theme-color-var( series-a-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-a-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b</td>
     <td></td>
-    <td><code>get-theme-color-var( series-b-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-b-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c</td>
     <td></td>
-    <td><code>get-theme-color-var( series-c-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-c-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d</td>
     <td></td>
-    <td><code>get-theme-color-var( series-d-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-d-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e</td>
     <td></td>
-    <td><code>get-theme-color-var( series-e-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-e-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f</td>
     <td></td>
-    <td><code>get-theme-color-var( series-f-100 )</code></td>
+    <td><code>k-get-theme-color-var( series-f-100 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-crosshair-shared-tooltip-color</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-160 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-notes-background</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-handle-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-error-bars-background</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-110 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treemap-title-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>

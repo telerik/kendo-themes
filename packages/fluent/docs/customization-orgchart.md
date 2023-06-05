@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-190 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-node-group-border</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-orgchart-line-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-30 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
     <td></td>
 </tr>
 <tr>

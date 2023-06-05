@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-focus-outline</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-130 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-hover-outline</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
