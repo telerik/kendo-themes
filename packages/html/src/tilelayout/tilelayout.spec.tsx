@@ -1,0 +1,59 @@
+import { classNames } from '../misc';
+
+export const TILELAYOUT_CLASSNAME = `k-tilelayout`;
+
+const states = [];
+
+const options = {};
+
+export type KendoTileLayoutProps = {
+    gap?: string;
+    padding?: string;
+    columns?: number;
+    columnWidth?: string,
+    rowHeight?: string,
+    style?: React.CSSProperties;
+    children?: React.ReactNode;
+};
+
+const defaultProps = {};
+
+export const TileLayout = (
+    props: KendoTileLayoutProps & React.HTMLAttributes<HTMLSpanElement>
+) => {
+    const {
+        gap,
+        padding,
+        columns,
+        columnWidth,
+        rowHeight,
+        style,
+        children
+    } = props;
+
+    const tileLayoutStyles = {
+        gridTemplateColumns: `repeat(${columns}, minmax(0px, ${columnWidth}))`,
+        gridAutoRows: `minmax(0px, ${rowHeight})`,
+        gap: gap,
+        padding: padding,
+        ...style
+    };
+
+    return (
+        <div className={classNames(
+            props.className,
+            TILELAYOUT_CLASSNAME,
+        )}
+        style={tileLayoutStyles}
+        >
+            {children}
+        </div>
+    );
+};
+
+TileLayout.states = states;
+TileLayout.options = options;
+TileLayout.className = TILELAYOUT_CLASSNAME;
+TileLayout.defaultProps = defaultProps;
+
+export default TileLayout;
