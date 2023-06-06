@@ -8,7 +8,6 @@ const options = {};
 
 export type KendoTileLayoutProps = {
     gap?: string;
-    padding?: string;
     columns?: number;
     columnWidth?: string,
     rowHeight?: string,
@@ -23,7 +22,6 @@ export const TileLayout = (
 ) => {
     const {
         gap,
-        padding,
         columns,
         columnWidth,
         rowHeight,
@@ -35,7 +33,6 @@ export const TileLayout = (
         gridTemplateColumns: `repeat(${columns}, minmax(0px, ${columnWidth}))`,
         gridAutoRows: `minmax(0px, ${rowHeight})`,
         gap: gap,
-        padding: padding,
         ...style
     };
 
