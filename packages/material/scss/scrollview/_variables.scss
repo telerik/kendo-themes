@@ -55,11 +55,6 @@ $kendo-scrollview-pager-item-border-width: 0px !default;
 /// @group scrollview
 $kendo-scrollview-pager-height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} ) !default;
 
-// ToDo - remove
-$kendo-scrollview-pager-multidot-threshold: 10 !default;
-$kendo-scrollview-pager-multidot-intermediate: 3 !default;
-$kendo-scrollview-pager-multidot-step: 1px !default;
-
 /// The text color of the highlight over the tapped ScrollView navigation arrows.
 /// @group scrollview
 $kendo-scrollview-arrow-tap-highlight-color: $kendo-color-rgba-transparent !default;

@@ -47,11 +47,6 @@ $kendo-bottom-nav-item-border-radius: $kendo-border-radius-md !default;
 /// @group bottom-navigation
 $kendo-bottom-nav-item-gap: 0 k-map-get( $kendo-spacing, 1 ) !default;
 
-// ToDo -> remove
-$kendo-bottom-nav-item-icon-margin-y: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-bottom-nav-item-icon-margin-x: $kendo-bottom-nav-item-icon-margin-y !default;
-$kendo-bottom-nav-item-disabled-opacity: .5 !default;
-
 /// The box shadow of the BottomNavigation.
 /// @group bottom-navigation
 $kendo-bottom-nav-shadow: 0px 0px 5px rgba(0, 0, 0, .12) !default;

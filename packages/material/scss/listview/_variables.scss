@@ -29,10 +29,6 @@ $kendo-listview-bg: $kendo-component-bg !default;
 /// @group listview
 $kendo-listview-border: $kendo-component-border !default;
 
-/// The gap between items of ListView with grid layout.
-/// @group listview
-$kendo-listview-grid-gap: 10px !default;
-
 /// The horizontal padding of the ListView items.
 /// @group listview
 $kendo-listview-item-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
