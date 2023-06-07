@@ -58,13 +58,6 @@ $kendo-bottom-nav-item-focus-outline-width: 1px !default;
 /// @group bottom-navigation
 $kendo-bottom-nav-item-focus-outline-style: solid !default;
 
-/// The vertical margin of the focused BottomNavigation item icon.
-/// @group bottom-nav
-$kendo-bottom-nav-item-icon-margin-y: map.get( $kendo-spacing, 2 ) !default;
-/// The horizontal margin of the focused BottomNavigation item icon.
-/// @group bottom-nav
-$kendo-bottom-nav-item-icon-margin-x: $kendo-bottom-nav-item-icon-margin-y !default;
-
 /// The box shadow of the BottomNavigation.
 /// @group bottom-navigation
 $kendo-bottom-nav-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
