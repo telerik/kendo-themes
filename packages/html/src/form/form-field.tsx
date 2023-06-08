@@ -16,6 +16,7 @@ export type KendoFormFieldProps = {
     info?: null | string;
     disabled?: boolean;
     dir?: "ltr" | "rtl";
+    colSpan?: string ;
 };
 
 export type KendoFormFieldState = { [K in (typeof states)[number]]?: boolean };
@@ -35,7 +36,8 @@ export const FormField = (
         error,
         info,
         disabled,
-        dir
+        dir,
+        colSpan
     } = props;
 
     return (
@@ -43,7 +45,10 @@ export const FormField = (
             className={classNames(
                 FORMFIELD_CLASSNAME,
                 props.className,
-                stateClassNames(FORMFIELD_CLASSNAME, { disabled })
+                stateClassNames(FORMFIELD_CLASSNAME, { disabled }),
+                {
+                    [`k-col-span-${colSpan}`]: colSpan
+                }
             )} dir={dir}>
             {label &&
                             <label className={classNames(
