@@ -4,7 +4,7 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Toolbar, ToolbarSeparator } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
-import { Form, FormField } from '../../form';
+import { Form, FormField, Fieldset } from '../../form';
 
 
 export default () =>(
@@ -57,42 +57,44 @@ export default () =>(
 
                     {/* Crop Pane */}
                     <div className="k-imageeditor-action-pane">
-                        <Form tag="div" className="k-imageeditor-pane-form" layout="grid" legend="Crop Image" cols={2} gapX={2} formButtons={
+                        <Form tag="div" className="k-imageeditor-pane-form" formButtons={
                             <>
                                 <Button themeColor="primary">Confirm</Button>
                                 <Button>Cancel</Button>
                             </>
                         }>
-                            <FormField
-                                className="k-col-span-2"
-                                label="Aspect Ratio:"
-                                editor={ <DropdownList value="Original ratio" /> }
-                            />
-                            <FormField
-                                className="k-col-span-2"
-                                label="Orientation:"
-                                editor={
-                                    <ButtonGroup>
-                                        <Button selected>Portrait</Button>
-                                        <Button>Landscape</Button>
-                                    </ButtonGroup>
-                                }
-                            />
-                            <FormField
-                                className="k-col-span-1"
-                                label="Width:"
-                                editor={ <NumericTextbox showClearButton={false} value="61" /> }
-                            />
-                            <FormField
-                                className="k-col-span-1"
-                                label="Height:"
-                                editor={ <NumericTextbox showClearButton={false} value="68" /> }
-                            />
-                            <FormField
-                                className="k-col-span-2"
-                                label="Lock aspect ratio:"
-                                editor={ <Checkbox /> }
-                            />
+                            <Fieldset layout="grid" legend="Crop Image" cols={2} gapX={2}>
+                                <FormField
+                                    colSpan="2"
+                                    label="Aspect Ratio:"
+                                    editor={ <DropdownList value="Original ratio" /> }
+                                />
+                                <FormField
+                                    colSpan="2"
+                                    label="Orientation:"
+                                    editor={
+                                        <ButtonGroup>
+                                            <Button selected>Portrait</Button>
+                                            <Button>Landscape</Button>
+                                        </ButtonGroup>
+                                    }
+                                />
+                                <FormField
+                                    colSpan="1"
+                                    label="Width:"
+                                    editor={ <NumericTextbox showClearButton={false} value="61" /> }
+                                />
+                                <FormField
+                                    colSpan="1"
+                                    label="Height:"
+                                    editor={ <NumericTextbox showClearButton={false} value="68" /> }
+                                />
+                                <FormField
+                                    colSpan="2"
+                                    label="Lock aspect ratio:"
+                                    editor={ <Checkbox /> }
+                                />
+                            </Fieldset>
                         </Form>
                     </div>
                 </div>

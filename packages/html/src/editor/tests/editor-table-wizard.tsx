@@ -38,77 +38,77 @@ export default () =>(
                         <div className="k-tabstrip-content k-active" >
                             <Form tag="div" layout="grid" cols={4} gapX={4}>
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Rows"
                                     editor={ <NumericTextbox value="3" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Columns"
                                     editor={ <NumericTextbox value="4" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-1"
+                                    colSpan="1"
                                     label="Width"
                                     editor={ <NumericTextbox /> }
                                 />
                                 <FormField
-                                    className="k-col-span-1"
+                                    colSpan="1"
                                     label="&nbsp;"
                                     editor={ <DropdownList placeholder="%" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-1"
+                                    colSpan="1"
                                     label="Height"
                                     editor={ <NumericTextbox placeholder="Auto" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-1"
+                                    colSpan="1"
                                     label="&nbsp;"
                                     editor={ <DropdownList placeholder="px" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Position"
                                     editor={ <DropdownList prefix={ <Icon icon="table-position-start" /> } placeholder="Left" />}
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Alignment"
                                     editor={ <DropdownList prefix={ <Icon icon="table-align-middle-left" /> } placeholder="Middle Left" />}
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Cell spacing"
                                     editor={ <NumericTextbox placeholder="Auto" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Cell padding"
                                     editor={ <NumericTextbox placeholder="Auto" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-full"
+                                    colSpan="full"
                                     label="Table background"
                                     editor={ <ColorPicker /> }
                                 />
                                 <FormField
-                                    className="k-col-span-1"
+                                    colSpan="1"
                                     label="Border width"
                                     editor={ <NumericTextbox value="1" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-1"
+                                    colSpan="1"
                                     label="Border color"
                                     editor={ <ColorPicker /> }
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Border style"
                                     editor={ <DropdownList value="Solid" />}
                                 />
                                 <FormField
-                                    className="k-col-span-full"
+                                    colSpan="full"
                                     editor={
                                         <>
                                             <Checkbox />
@@ -139,41 +139,39 @@ export default () =>(
                             <Form tag="div" layout="grid">
                                 <FormField label="ID" optional editor={ <Textbox /> } />
                                 <FormField label="CSS class" optional editor={ <Textbox /> } />
-                                <Fieldset legend="Accessibility">
-                                    <div className="k-d-grid k-grid-cols-4 k-gap-x-4">
-                                        <FormField
-                                            className="k-col-span-2"
-                                            label="Caption"
-                                            optional
-                                            editor={ <Textbox /> }
-                                        />
-                                        <FormField
-                                            className="k-col-span-2"
-                                            label="Caption alignment"
-                                            editor={ <DropdownList prefix={ <Icon icon="table-align-middle-left"/> } placeholder="Middle Left" /> }
-                                        />
-                                        <FormField
-                                            className="k-col-span-1"
-                                            label="Header rows"
-                                            editor={ <NumericTextbox value="0" /> }
-                                        />
-                                        <FormField
-                                            className="k-col-span-1"
-                                            label="Header cols"
-                                            editor={ <NumericTextbox value="0" /> }
-                                        />
-                                        <FormField
-                                            className="k-col-span-2"
-                                            label="Associate headers"
-                                            editor={ <DropdownList value="Using 'scope' attribu..." /> }
-                                        />
-                                        <FormField
-                                            className="k-col-span-full"
-                                            label="Summary"
-                                            optional
-                                            editor={ <Textarea rows={3} placeholder="Summary attribute is not HTML5 compatible"/> }
-                                        />
-                                    </div>
+                                <Fieldset legend="Accessibility" layout="grid" cols={4} gapX={4} >
+                                    <FormField
+                                        colSpan="2"
+                                        label="Caption"
+                                        optional
+                                        editor={ <Textbox /> }
+                                    />
+                                    <FormField
+                                        colSpan="2"
+                                        label="Caption alignment"
+                                        editor={ <DropdownList prefix={ <Icon icon="table-align-middle-left"/> } placeholder="Middle Left" /> }
+                                    />
+                                    <FormField
+                                        colSpan="1"
+                                        label="Header rows"
+                                        editor={ <NumericTextbox value="0" /> }
+                                    />
+                                    <FormField
+                                        colSpan="1"
+                                        label="Header cols"
+                                        editor={ <NumericTextbox value="0" /> }
+                                    />
+                                    <FormField
+                                        colSpan="2"
+                                        label="Associate headers"
+                                        editor={ <DropdownList value="Using 'scope' attribu..." /> }
+                                    />
+                                    <FormField
+                                        colSpan="full"
+                                        label="Summary"
+                                        optional
+                                        editor={ <Textarea rows={3} placeholder="Summary attribute is not HTML5 compatible"/> }
+                                    />
                                 </Fieldset>
                             </Form>
                         </div>
@@ -190,7 +188,7 @@ export default () =>(
                 }>
                     <Form tag="div" layout="grid" cols={4} gapX={4}>
                         <FormField
-                            className="k-col-span-full"
+                            colSpan="full"
                             editor={
                                 <>
                                     <Checkbox />
@@ -199,70 +197,70 @@ export default () =>(
                             }
                         />
                         <FormField
-                            className="k-col-span-1"
+                            colSpan="1"
                             label="Width"
                             editor={ <NumericTextbox /> }
                             hint="apply to column"
                         />
                         <FormField
-                            className="k-col-span-1"
+                            colSpan="1"
                             label="&nbsp;"
                             editor={ <DropdownList placeholder="px" /> }
                         />
                         <FormField
-                            className="k-col-span-1"
+                            colSpan="1"
                             label="Height"
                             editor={ <NumericTextbox placeholder="Auto" /> }
                             hint="apply to row"
                         />
                         <FormField
-                            className="k-col-span-1"
+                            colSpan="1"
                             label="&nbsp;"
                             editor={ <DropdownList placeholder="px" /> }
                         />
                         <FormField
-                            className="k-col-span-2"
+                            colSpan="2"
                             label="Alignment"
                             editor={ <DropdownList prefix={ <Icon icon="table-align-middle-left" /> } placeholder="Middle Left" />}
                         />
                         <FormField
-                            className="k-col-span-2"
+                            colSpan="2"
                             label="Text control"
                             editor={ <DropdownList prefix={ <Icon icon="text-wrap" /> } placeholder="Wrap" /> }
                         />
                         <FormField
-                            className="k-col-span-2"
+                            colSpan="2"
                             label="Cell spacing"
                             editor={ <NumericTextbox placeholder="Auto" /> }
                         />
                         <FormField
-                            className="k-col-span-2"
+                            colSpan="2"
                             label="Cell padding"
                             editor={ <NumericTextbox placeholder="Auto" /> }
                         />
                         <FormField
-                            className="k-col-span-1"
+                            colSpan="1"
                             label="Border width"
                             editor={ <NumericTextbox value="1" /> }
                         />
                         <FormField
-                            className="k-col-span-1"
+                            colSpan="1"
                             label="Border color"
                             editor={ <ColorPicker /> }
                         />
                         <FormField
-                            className="k-col-span-2"
+                            colSpan="2"
                             label="Border style"
                             editor={ <DropdownList value="Solid" />}
                         />
                         <FormField
-                            className="k-col-span-full"
+                            colSpan="full"
                             label="ID"
                             optional
                             editor={ <Textbox /> }
                         />
                         <FormField
-                            className="k-col-span-full"
+                            colSpan="full"
                             label="CSS class"
                             optional
                             editor={ <Textbox /> }
