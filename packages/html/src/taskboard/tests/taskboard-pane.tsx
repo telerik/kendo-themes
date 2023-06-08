@@ -120,7 +120,7 @@ export default () =>(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <Form orientation="vertical">
+                        <Form>
                             <FormField label="Textbox:" editor={ <Textbox /> } ></FormField>
                         </Form>
                     </div>
@@ -236,7 +236,7 @@ export default () =>(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <Form orientation="vertical">
+                        <Form>
                             <FormField label="Textbox:" editor={ <Textbox /> } ></FormField>
                         </Form>
                     </div>

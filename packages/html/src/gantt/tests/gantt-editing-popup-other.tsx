@@ -50,7 +50,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" orientation="vertical">
+                            <Form tag="div">
                                 <FormField
                                     label="Notes"
                                     optional

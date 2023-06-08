@@ -47,7 +47,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" orientation="vertical">
+                            <Form tag="div">
                                 <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
                                 <FormField editor={
                                     <div className="k-search-options k-checkbox-list">
@@ -94,7 +94,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" orientation="vertical">
+                            <Form tag="div">
                                 <FormField label="Find What:" editor={ <Textbox showClearButton={false} value="editor" /> } />
                                 <FormField label="Replace With:" editor={ <Textbox showClearButton={false} value="grid" /> } />
                                 <FormField editor={
