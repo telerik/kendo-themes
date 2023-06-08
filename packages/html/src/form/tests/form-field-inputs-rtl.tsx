@@ -32,7 +32,7 @@ export default () =>(
             <span>Horizontal Form</span>
 
             <section>
-                <Form orientation="vertical">
+                <Form>
 
                     <FormField
                         dir="rtl"
