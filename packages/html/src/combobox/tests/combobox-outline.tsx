@@ -1,4 +1,4 @@
-import { Combobox } from '../../combobox';
+import { Combobox, ComboboxNormal } from '../../combobox';
 
 
 const styles = `
@@ -16,61 +16,30 @@ export default () =>(
             <span>ComboBox Outline RTL</span>
 
             <div>
-                <Combobox fillMode="outline" placeholder="ComboBox..." />
+                <ComboboxNormal fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <Combobox fillMode="outline" placeholder="ComboBox..." />
+                <ComboboxNormal fillMode="outline" placeholder="placeholder..." />
             </div>
+
+            {[ 'normal', ...Combobox.states ].map((state) => (
+                <>
+                    <div>
+                        <ComboboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <ComboboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <Combobox fillMode="outline" value="Normal" />
+                <ComboboxNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
             <div dir="rtl">
-                <Combobox fillMode="outline" value="Normal" />
+                <ComboboxNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
-
-            <div>
-                <Combobox fillMode="outline" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <Combobox fillMode="outline" value="Hover" hover />
-            </div>
-
-            <div>
-                <Combobox fillMode="outline" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <Combobox fillMode="outline" value="Focus" focus />
-            </div>
-
-            <div>
-                <Combobox fillMode="outline" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <Combobox fillMode="outline" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <Combobox fillMode="outline" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <Combobox fillMode="outline" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <Combobox fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Combobox fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <Combobox fillMode="outline" value="Loading..." loading />
-            </div>
-            <div dir="rtl">
-                <Combobox fillMode="outline" value="Loading..." loading />
-            </div>
-
         </div>
     </>
 );

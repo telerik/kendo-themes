@@ -1,27 +1,27 @@
-import { ComboboxPopup } from '../../combobox';
+import { ComboboxGrouping } from "../../combobox";
 
 const styles = `
     #test-area {
         max-width: 660px;
     }
+
     .k-animation-container {
         position: relative;
     }
 `;
 
-export default () =>(
+export default () => (
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
-
-            <span>ComboBox Popup Opened</span>
-            <span>ComboBox Popup Opened RTL</span>
+            <span>Combobox Grouping</span>
+            <span>Combobox Grouping RTL</span>
 
             <div>
-                <ComboboxPopup value="Opened" />
+                <ComboboxGrouping placeholder="Combobox..." />
             </div>
             <div dir="rtl">
-                <ComboboxPopup value="Opened" />
+                <ComboboxGrouping placeholder="Combobox..." />
             </div>
         </div>
     </>

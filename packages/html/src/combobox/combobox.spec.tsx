@@ -10,6 +10,8 @@ import {
 } from '../input';
 import { Button } from '../button';
 import { Popup } from '../popup';
+import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
+import { List, ListItem } from '../list';
 
 export const COMBOBOX_CLASSNAME = `k-combobox`;
 
@@ -49,6 +51,8 @@ export type KendoComboboxProps = KendoComboboxOptions & {
     placeholder?: string;
     popup?: JSX.Element;
     opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
 };
 
 export type KendoComboboxState = { [K in (typeof states)[number]]?: boolean };
@@ -76,6 +80,8 @@ export const Combobox = (
         popup,
         opened,
         readonly,
+        adaptive,
+        adaptiveSettings,
         ...other
     } = props;
 
@@ -125,6 +131,22 @@ export const Combobox = (
                 <Popup className="k-list-container k-combobox-popup">
                     {popup}
                 </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        filter={true}
+                        title="Select Item">
+                    </ActionSheetHeader>
+                    <div className="k-list-container">
+                        <List size="large">
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                        </List>
+                    </div>
+                </ActionSheet>
             }
         </>
     );
