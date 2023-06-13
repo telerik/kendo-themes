@@ -1,4 +1,4 @@
-import { DatePicker } from '..';
+import { DatePickerPopup } from '../../datepicker';
 
 const styles = `
     #test-area {
@@ -23,10 +23,10 @@ export default () =>(
             <span>DatePicker RTL</span>
 
             <div>
-                <DatePicker value="Opened" opened />
+                <DatePickerPopup value="Opened" />
             </div>
             <div dir="rtl">
-                <DatePicker value="Opened" opened dir="rtl" />
+                <DatePickerPopup value="Opened" dir="rtl" />
             </div>
 
         </div>
