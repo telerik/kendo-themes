@@ -1,9 +1,15 @@
-import { DateTimePicker } from '..';
+import { DateTimePickerPopup } from '../../datetimepicker';
 
 
 const styles = `
     #test-area {
         max-width: 740px;
+    }
+
+    #test-area > div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
     }
 
     .k-animation-container {
@@ -20,17 +26,17 @@ export default () =>(
             <span>DateTimePicker RTL</span>
 
             <div>
-                <DateTimePicker value="Opened Date" opened />
+                <DateTimePickerPopup value="Opened Date" />
             </div>
             <div>
-                <DateTimePicker value="Opened Date" opened dir="rtl" />
+                <DateTimePickerPopup value="Opened Date" dir="rtl" />
             </div>
 
             <div>
-                <DateTimePicker value="Opened Time" opened tab="time" />
+                <DateTimePickerPopup value="Opened Time" tab="time" />
             </div>
             <div>
-                <DateTimePicker value="Opened Time" opened tab="time" dir="rtl" />
+                <DateTimePickerPopup value="Opened Time" tab="time" dir="rtl" />
             </div>
 
         </div>

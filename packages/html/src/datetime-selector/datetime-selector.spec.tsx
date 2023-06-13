@@ -3,21 +3,30 @@ import { Button } from '../button';
 import { ButtonGroup } from '../button-group';
 import { Calendar } from '../calendar';
 import { TimeSelector, TimeSelectorHeader } from '../time-selector';
-import { classNames } from '../misc';
+import { classNames, optionClassNames, Size } from '../misc';
 
 const DATETIMESELECTOR_CLASSNAME = `k-datetime-wrap`;
 
 const states = [];
 
-const options = {};
+const options = {
+    size: [ Size.small, Size.medium, Size.large ]
+};
 
-export type KendoDateTimeSelectorProps = {
+export type KendoDateTimeSelectorOptions = {
+    size?: (typeof options.size)[number] | null;
+};
+
+export type KendoDateTimeSelectorProps = KendoDateTimeSelectorOptions & {
     tab?: 'time' | 'date';
     dir?: 'ltr' | 'rtl';
+    actionButtons?: boolean;
 };
 
 const defaultProps = {
-    tab: 'date'
+    tab: 'date',
+    size: Size.medium,
+    actionButtons: true
 } as const;
 
 export const DateTimeSelector = (
@@ -25,7 +34,9 @@ export const DateTimeSelector = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        size = defaultProps.size,
         tab = defaultProps.tab,
+        actionButtons = defaultProps.actionButtons,
         dir,
         ...other
     } = props;
@@ -40,12 +51,15 @@ export const DateTimeSelector = (
                 {
                     'k-date-tab': tab === 'date',
                     'k-time-tab': tab === 'time',
-                }
+                },
+                optionClassNames(DATETIMESELECTOR_CLASSNAME, {
+                    size
+                })
             )}>
             <div className="k-datetime-buttongroup">
                 <ButtonGroup stretched>
-                    <Button className="k-group-start" selected={tab === 'date'}>Date</Button>
-                    <Button className="k-group-end" selected={tab === 'time'}>Time</Button>
+                    <Button className="k-group-start" size={size} selected={tab === 'date'}>Date</Button>
+                    <Button className="k-group-end" size={size} selected={tab === 'time'}>Time</Button>
                 </ButtonGroup>
             </div>
             <div className="k-datetime-selector">
@@ -53,26 +67,28 @@ export const DateTimeSelector = (
                     ? <>
                         <div className="k-datetime-calendar-wrap"></div>
                         <div className="k-datetime-time-wrap">
-                            <TimeSelector columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="mm" header={(
+                            <TimeSelector size={size} columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="mm" header={(
                                 <TimeSelectorHeader title="10:00:00 AM">
-                                    <Button fillMode="flat" className="k-time-now">Now</Button>
+                                    <Button size={size} fillMode="flat" className="k-time-now">Now</Button>
                                 </TimeSelectorHeader>
                             )}/>
                         </div>
                     </>
                     : <>
                         <div className="k-datetime-calendar-wrap">
-                            <Calendar showOtherMonth dir={dir}></Calendar>
+                            <Calendar size={size} showOtherMonth dir={dir}></Calendar>
                         </div>
                         <div className="k-datetime-time-wrap"></div>
                     </>
                 }
             </div>
 
-            <ActionButtons className="k-datetime-footer" alignment="stretched">
-                <Button themeColor="primary" className="k-time-accept">Set</Button>
-                <Button className="k-time-cancel">Cancel</Button>
-            </ActionButtons>
+            { actionButtons &&
+                <ActionButtons className="k-datetime-footer" alignment="stretched">
+                    <Button size={size} themeColor="primary" className="k-time-accept">Set</Button>
+                    <Button size={size} className="k-time-cancel">Cancel</Button>
+                </ActionButtons>
+            }
         </div>
     );
 };
