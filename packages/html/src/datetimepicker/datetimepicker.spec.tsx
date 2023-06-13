@@ -11,6 +11,7 @@ import {
 import { Button } from '../button';
 import { Popup } from '../popup';
 import { DateTimeSelector } from '../datetime-selector';
+import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
 export const DATETIMEPICKER_CLASSNAME = `k-datetimepicker`;
 
@@ -45,6 +46,8 @@ export type KendoDateTimePickerProps = KendoDateTimePickerOptions & {
     opened?: boolean;
     tab?: 'time' | 'date';
     dir?: 'ltr' | 'rtl';
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
 };
 
 export type KendoDateTimePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -80,6 +83,8 @@ export const DateTimePicker = (
         opened,
         tab = defaultProps.tab,
         dir,
+        adaptive,
+        adaptiveSettings,
         ...other
     } = props;
 
@@ -130,6 +135,19 @@ export const DateTimePicker = (
                 <Popup className={`k-${tab === "time" ? "list" : "calendar"}-container k-datetimepicker-popup`} dir={dir}>
                     <DateTimeSelector tab={tab} dir={dir} />
                 </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        title="Select Date & Time"
+                        subTitle="DD / MM / YY">
+                    </ActionSheetHeader>
+
+                    <DateTimeSelector size="large" tab={tab} actionButtons={false} />
+
+                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
+                </ActionSheet>
             }
         </>
     );
