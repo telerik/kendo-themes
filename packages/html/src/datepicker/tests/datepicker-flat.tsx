@@ -1,4 +1,4 @@
-import { DatePicker } from '../../datepicker';
+import { DatePicker, DatePickerNormal } from '../../datepicker';
 
 
 const styles = `
@@ -16,59 +16,29 @@ export default () =>(
             <span>DatePicker Flat RTL</span>
 
             <div>
-                <DatePicker fillMode="flat" placeholder="DatePicker..." />
+                <DatePickerNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DatePicker fillMode="flat" placeholder="DatePicker..." />
+                <DatePickerNormal fillMode="flat" placeholder="placeholder..." />
             </div>
 
-            <div>
-                <DatePicker fillMode="flat" value="Normal" />
-            </div>
-            <div dir="rtl">
-                <DatePicker fillMode="flat" value="Normal" />
-            </div>
+            {[ 'normal', ...DatePicker.states ].map((state) => (
+                <>
+                    <div>
+                        <DatePickerNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <DatePickerNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <DatePicker fillMode="flat" value="Hover" hover />
+                <DatePickerNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
             <div dir="rtl">
-                <DatePicker fillMode="flat" value="Hover" hover />
-            </div>
-
-            <div>
-                <DatePicker fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <DatePicker fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <DatePicker fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <DatePicker fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <DatePicker fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <DatePicker fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <DatePicker fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <DatePicker fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <DatePicker fillMode="flat" value="Loading..." loading />
-            </div>
-            <div dir="rtl">
-                <DatePicker fillMode="flat" value="Loading..." loading />
+                <DatePickerNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
 
         </div>

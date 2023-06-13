@@ -1,10 +1,13 @@
-import { ActionSheet, ActionSheetHeader, ActionSheetFooter } from '../../action-sheet';
-import { Calendar } from '../../calendar';
-
+import { DatePickerAdaptive } from '../../datepicker';
 
 const styles = `
+    #test-area {
+        --kendo-actionsheet-height: 500px;
+        --kendo-actionsheet-max-height: 500px;
+    }
     #test-area > section {
         height: 600px;
+        outline: 1px dotted;
         overflow: hidden;
         position: relative;
         transform: translateZ(0);
@@ -20,19 +23,11 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <ActionSheet className="k-adaptive-actionsheet">
-                    <ActionSheetHeader className="k-text-center" title="Select dates" subTitle="DD / MM / YY" actions={[ 'x' ]} />
-                    <Calendar size="large"></Calendar>
-                    <ActionSheetFooter actions={[ 'Cancel', '!Select Date' ]} />
-                </ActionSheet>
+                <DatePickerAdaptive />
             </section>
 
             <section>
-                <ActionSheet fullscreen={true} className="k-adaptive-actionsheet">
-                    <ActionSheetHeader className="k-text-center" title="Select dates" subTitle="DD / MM / YY" actions={[ 'x' ]} />
-                    <Calendar size="large"></Calendar>
-                    <ActionSheetFooter actions={[ 'Cancel', '!Select Date' ]} />
-                </ActionSheet>
+                <DatePickerAdaptive adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
     </>

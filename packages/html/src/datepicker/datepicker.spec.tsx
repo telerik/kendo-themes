@@ -11,6 +11,7 @@ import {
 import { Button } from '../button';
 import { Popup } from '../popup';
 import { Calendar } from '../calendar';
+import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
 export const DATEPICKER_CLASSNAME = `k-datepicker`;
 
@@ -49,6 +50,8 @@ export type KendoDatePickerProps = KendoDatePickerOptions & {
     value?: string;
     placeholder?: string;
     opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
     dir?: 'ltr' | 'rtl';
 };
 
@@ -76,6 +79,8 @@ export const DatePicker = (
         disabled,
         readonly,
         opened,
+        adaptive,
+        adaptiveSettings,
         dir,
         ...other
     } = props;
@@ -127,6 +132,16 @@ export const DatePicker = (
                 <Popup className="k-calendar-container k-datepicker-popup">
                     <Calendar dir={dir} />
                 </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        title="Select Dates"
+                        subTitle="DD / MM / YY">
+                    </ActionSheetHeader>
+                    <Calendar size="large"></Calendar>
+                </ActionSheet>
             }
         </>
     );
