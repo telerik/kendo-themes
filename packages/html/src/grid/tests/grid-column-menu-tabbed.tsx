@@ -41,7 +41,7 @@ export default () =>(
                                 </li>
                                 <li className="k-item">
                                     <span className="k-link">
-                                        <Icon icon="more-horizontal" />
+                                        <Icon icon="sliders" />
                                     </span>
                                 </li>
                                 <li className="k-item">
@@ -82,7 +82,7 @@ export default () =>(
                                 </li>
                                 <li className="k-item k-active">
                                     <span className="k-link">
-                                        <Icon icon="more-horizontal" />
+                                        <Icon icon="sliders" />
                                     </span>
                                 </li>
                                 <li className="k-item">
@@ -140,7 +140,7 @@ export default () =>(
                                 </li>
                                 <li className="k-item">
                                     <span className="k-link">
-                                        <Icon icon="more-horizontal" />
+                                        <Icon icon="sliders" />
                                     </span>
                                 </li>
                                 <li className="k-item k-active">
@@ -264,7 +264,7 @@ export default () =>(
                                 </li>
                                 <li className="k-item">
                                     <span className="k-link">
-                                        <Icon icon="more-horizontal" />
+                                        <Icon icon="sliders" />
                                     </span>
                                 </li>
                             </ul>
