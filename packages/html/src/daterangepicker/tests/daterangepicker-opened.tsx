@@ -1,4 +1,4 @@
-import { DateRangePicker } from '..';
+import { DateRangePickerPopup } from '..';
 
 const styles = `
     .k-animation-container {
@@ -15,10 +15,10 @@ export default () =>(
             <span>DateRangePicker Opened RTL</span>
 
             <div>
-                <DateRangePicker opened />
+                <DateRangePickerPopup />
             </div>
             <div dir="rtl">
-                <DateRangePicker opened dir="rtl" />
+                <DateRangePickerPopup dir="rtl" />
             </div>
         </div>
     </>
