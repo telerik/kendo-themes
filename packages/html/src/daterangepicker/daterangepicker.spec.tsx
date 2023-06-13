@@ -4,6 +4,7 @@ import { FloatingLabel } from '../floating-label';
 import { Button } from '../button';
 import { MultiViewCalendar } from '../multiviewcalendar';
 import { Popup } from '../popup';
+import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
 export const DATERANGEPICKER_CLASSNAME = `k-daterangepicker`;
 
@@ -28,6 +29,8 @@ export type KendoDateRangePickerOptions = {
 export type KendoDateRangePickerProps = KendoDateRangePickerOptions & {
     swapButton?: boolean;
     opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
     dir?: 'ltr' | 'rtl';
 };
 
@@ -45,6 +48,8 @@ export const DateRangePicker = (
         disabled,
         swapButton,
         opened,
+        adaptive,
+        adaptiveSettings,
         dir,
         ...other
     } = props;
@@ -91,6 +96,18 @@ export const DateRangePicker = (
                 <Popup className="k-calendar-container k-daterangepicker-popup">
                     <MultiViewCalendar dir={dir} />
                 </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        title="Select Dates"
+                        subTitle="DD / MM / YY">
+                    </ActionSheetHeader>
+                    <div className="k-scrollable-wrap">
+                        <MultiViewCalendar size="large" calendarView="month" orientation="vertical" showCalendarCaption />
+                    </div>
+                </ActionSheet>
             }
         </>
     );

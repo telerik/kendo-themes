@@ -1,5 +1,4 @@
-import { DateRangePicker } from '../../daterangepicker';
-
+import { DateRangePicker, DateRangePickerNormal } from '../../daterangepicker';
 
 const styles = `
     #test-area {
@@ -19,48 +18,18 @@ export default () =>(
             <span>medium</span>
             <span>large</span>
 
-            <span>small</span>
-            <div>
-                <DateRangePicker size="small" rounded="small" />
-            </div>
-            <div>
-                <DateRangePicker size="medium" rounded="small" />
-            </div>
-            <div>
-                <DateRangePicker size="large" rounded="small" />
-            </div>
-            <span>medium</span>
-            <div>
-                <DateRangePicker size="small" rounded="medium" />
-            </div>
-            <div>
-                <DateRangePicker size="medium" rounded="medium" />
-            </div>
-            <div>
-                <DateRangePicker size="large" rounded="medium" />
-            </div>
-
-            <span>large</span>
-            <div>
-                <DateRangePicker size="small" rounded="large" />
-            </div>
-            <div>
-                <DateRangePicker size="medium" rounded="large" />
-            </div>
-            <div>
-                <DateRangePicker size="large" rounded="large" />
-            </div>
-
-            <span>full</span>
-            <div>
-                <DateRangePicker size="small" rounded="full" />
-            </div>
-            <div>
-                <DateRangePicker size="medium" rounded="full" />
-            </div>
-            <div>
-                <DateRangePicker size="large" rounded="full" />
-            </div>
+            { DateRangePicker.options.rounded.map((rounded) => (
+                <>
+                    <span>{ rounded }</span>
+                    { DateRangePicker.options.size.map((size) => (
+                        <>
+                            <div>
+                                <DateRangePickerNormal size={size} rounded={rounded} />
+                            </div>
+                        </>
+                    ))}
+                </>
+            ))}
         </div>
     </>
 );
