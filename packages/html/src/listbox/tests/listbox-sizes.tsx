@@ -1,5 +1,5 @@
 import { ListItem } from '../../list';
-import { ListBox } from '../../listbox';
+import { ListBox, ListBoxNormal } from '../../listbox';
 
 
 const styles = `
@@ -17,42 +17,21 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
-            <span>Small</span>
-            <span>Medium</span>
-            <span>Large</span>
-
-            <section>
-                <ListBox size="small" actions={[ 'up', 'down', 'left', 'right' ]}>
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-            <section>
-                <ListBox actions={[ 'up', 'down', 'left', 'right' ]}>
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-            <section>
-                <ListBox size="large" actions={[ 'up', 'down', 'left', 'right' ]}>
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
+            {ListBox.options.size.map((size) => (
+                <>
+                    <div>
+                        <span>{size}</span>
+                        <ListBoxNormal size={size} actions={[ 'up', 'down', 'left', 'right' ]}>
+                            <ListItem>List item 1</ListItem>
+                            <ListItem>List item 2</ListItem>
+                            <ListItem>List item 3</ListItem>
+                            <ListItem>List item 4</ListItem>
+                            <ListItem>List item 5</ListItem>
+                            <ListItem>List item 6</ListItem>
+                        </ListBoxNormal>
+                    </div>
+                </>
+            ))}
         </div>
     </>
 );
