@@ -1,4 +1,4 @@
-import { DropdownTree } from '../../dropdowntree';
+import { DropdownTree, DropdownTreeNormal } from '../../dropdowntree';
 
 
 const styles = `
@@ -16,61 +16,30 @@ export default () =>(
             <span>DropdownTree Outline RTL</span>
 
             <div>
-                <DropdownTree fillMode="outline" placeholder="DropdownTree..." />
+                <DropdownTreeNormal fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DropdownTree fillMode="outline" placeholder="DropdownTree..." />
+                <DropdownTreeNormal fillMode="outline" placeholder="placeholder..." />
             </div>
+
+            {[ 'normal', ...DropdownTree.states ].map((state) => (
+                <>
+                    <div>
+                        <DropdownTreeNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <DropdownTreeNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <DropdownTree fillMode="outline" value="Normal" />
+                <DropdownTreeNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
             <div dir="rtl">
-                <DropdownTree fillMode="outline" value="Normal" />
+                <DropdownTreeNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
-
-            <div>
-                <DropdownTree fillMode="outline" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <DropdownTree fillMode="outline" value="Hover" hover />
-            </div>
-
-            <div>
-                <DropdownTree fillMode="outline" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <DropdownTree fillMode="outline" value="Focus" focus />
-            </div>
-
-            <div>
-                <DropdownTree fillMode="outline" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <DropdownTree fillMode="outline" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <DropdownTree fillMode="outline" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <DropdownTree fillMode="outline" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <DropdownTree fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <DropdownTree fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <DropdownTree fillMode="outline" value="Loading..." loading />
-            </div>
-            <div dir="rtl">
-                <DropdownTree fillMode="outline" value="Loading..." loading />
-            </div>
-
         </div>
     </>
 );

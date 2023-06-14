@@ -9,6 +9,8 @@ import {
     InputValidationIcon
 } from '../input';
 import { Popup } from '../popup';
+import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
+import { Treeview, TreeviewGroup, TreeviewItem } from '../treeview';
 
 export const DROPDOWNTREE_CLASSNAME = `k-dropdowntree`;
 
@@ -45,6 +47,8 @@ export type KendoDropdownTreeProps = KendoDropdownTreeOptions & {
     showValue?: boolean;
     popup?: JSX.Element;
     opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
     dir?: 'ltr' | 'rtl';
 };
 
@@ -84,6 +88,8 @@ export const DropdownTree = (
         showValue = defaultProps.showValue,
         popup,
         opened,
+        adaptive,
+        adaptiveSettings,
         dir,
         ...other
     } = props;
@@ -141,6 +147,35 @@ export const DropdownTree = (
                 <Popup className="k-list-container k-dropdowntree-popup" dir={dir}>
                     {popup}
                 </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader actions={[ 'x' ]}>
+                        <div className="k-text-center">Select value</div>
+                    </ActionSheetHeader>
+                    <Treeview size="large">
+                        <TreeviewItem text="Root 1" />
+                        <TreeviewItem text="Root 2" expanded>
+                            <TreeviewGroup>
+                                <TreeviewItem text="Child 2.1" />
+                                <TreeviewItem text="Child 2.2">
+                                    <TreeviewGroup>
+                                        <TreeviewItem text="Child 2.2.1" />
+                                    </TreeviewGroup>
+                                </TreeviewItem>
+                                <TreeviewItem text="Child 2.3" />
+                                <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more ..." />
+                            </TreeviewGroup>
+                        </TreeviewItem>
+                        <TreeviewItem text="Root 3">
+                            <TreeviewGroup>
+                                <TreeviewItem text="Child 3.1" />
+                                <TreeviewItem text="Child 3.2" />
+                                <TreeviewItem text="Child 3.3" />
+                            </TreeviewGroup>
+                        </TreeviewItem>
+                    </Treeview>
+                </ActionSheet>
             }
         </>
     );
