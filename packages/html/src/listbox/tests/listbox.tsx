@@ -1,6 +1,5 @@
 import { ListItem } from '../../list';
-import { ListBox } from '../../listbox';
-
+import { ListBoxNormal } from '../../listbox';
 
 const styles = `
     #test-area {
@@ -13,103 +12,36 @@ const styles = `
     }
 `;
 
+const actionPositions = [ 'left', 'right', 'top', 'bottom' ];
+
 export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
-
             <span>Listbox</span>
             <span>Listbox RTL</span>
 
-            <section>
-                <ListBox actions={[ 'up', 'down', 'left', 'right' ]}>
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
+            {actionPositions.map(position => (
+                <>
+                    <ListBoxNormal actionsPosition={position} actions={[ 'up', 'down', 'left', 'right' ]}>
+                        <ListItem>List item 1</ListItem>
+                        <ListItem>List item 2</ListItem>
+                        <ListItem>List item 3</ListItem>
+                        <ListItem>List item 4</ListItem>
+                        <ListItem>List item 5</ListItem>
+                        <ListItem>List item 6</ListItem>
+                    </ListBoxNormal>
 
-            <section>
-                <ListBox actions={[ 'up', 'down', 'left', 'right' ]} dir="rtl">
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-            <section>
-                <ListBox actionsPosition="right" actions={[ 'up', 'down', 'left', 'right' ]}>
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-            <section>
-                <ListBox actionsPosition="right" actions={[ 'up', 'down', 'left', 'right' ]} dir="rtl">
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-            <section>
-                <ListBox actionsPosition="top" actions={[ 'up', 'down', 'left', 'right' ]}>
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-            <section>
-                <ListBox actionsPosition="top" actions={[ 'up', 'down', 'right', 'left' ]} dir="rtl">
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-            <section>
-                <ListBox actionsPosition="bottom" actions={[ 'up', 'down', 'left', 'right' ]}>
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-            <section>
-                <ListBox actionsPosition="bottom" actions={[ 'up', 'down', 'right', 'left' ]} dir="rtl">
-                    <ListItem>Item</ListItem>
-                    <ListItem hover>Hover</ListItem>
-                    <ListItem focus>Focus</ListItem>
-                    <ListItem selected>Selected</ListItem>
-                    <ListItem hover selected>Hover selected</ListItem>
-                    <ListItem disabled>Disabled</ListItem>
-                </ListBox>
-            </section>
-
-
+                    <ListBoxNormal actionsPosition={position} actions={[ 'up', 'down', 'left', 'right' ]} dir="rtl">
+                        <ListItem>List item 1</ListItem>
+                        <ListItem>List item 2</ListItem>
+                        <ListItem>List item 3</ListItem>
+                        <ListItem>List item 4</ListItem>
+                        <ListItem>List item 5</ListItem>
+                        <ListItem>List item 6</ListItem>
+                    </ListBoxNormal>
+                </>
+            ))}
         </div>
     </>
 );
