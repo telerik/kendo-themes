@@ -1,5 +1,4 @@
-import { DateInput } from '../../dateinput';
-
+import { DateInput, DateInputNormal } from '../../dateinput';
 
 const styles = `
     #test-area {
@@ -16,61 +15,30 @@ export default () =>(
             <span>DateInput Flat RTL</span>
 
             <div>
-                <DateInput fillMode="flat" placeholder="DateInput..." />
+                <DateInputNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DateInput fillMode="flat" placeholder="DateInput..." />
+                <DateInputNormal fillMode="flat" placeholder="placeholder..." />
             </div>
+
+            {[ 'normal', ...DateInput.states ].map((state) => (
+                <>
+                    <div>
+                        <DateInputNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <DateInputNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <DateInput fillMode="flat" value="Normal" />
+                <DateInputNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
             <div dir="rtl">
-                <DateInput fillMode="flat" value="Normal" />
+                <DateInputNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
-
-            <div>
-                <DateInput fillMode="flat" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <DateInput fillMode="flat" value="Hover" hover />
-            </div>
-
-            <div>
-                <DateInput fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <DateInput fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <DateInput fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <DateInput fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <DateInput fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <DateInput fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <DateInput fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <DateInput fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <DateInput fillMode="flat" value="Loading..." loading />
-            </div>
-            <div dir="rtl">
-                <DateInput fillMode="flat" value="Loading..." loading />
-            </div>
-
         </div>
     </>
 );
