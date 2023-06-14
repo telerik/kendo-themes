@@ -11,33 +11,33 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>DropdownGrid Flat</span>
-            <span>DropdownGrid Flat RTL</span>
+            <span>DropdownGrid</span>
+            <span>DropdownGrid RTL</span>
 
             <div>
-                <DropdownGridNormal fillMode="flat" placeholder="placeholder..." />
+                <DropdownGridNormal placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal fillMode="flat" placeholder="placeholder..." />
+                <DropdownGridNormal placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DropdownGrid.states ].map((state) => (
                 <>
                     <div>
-                        <DropdownGridNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                        <DropdownGridNormal { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DropdownGridNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                        <DropdownGridNormal { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DropdownGridNormal fillMode="flat" value="invalid focus" invalid focus />
+                <DropdownGridNormal value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DropdownGridNormal fillMode="flat" value="invalid focus" invalid focus />
+                <DropdownGridNormal value="invalid focus" invalid focus />
             </div>
         </div>
     </>
