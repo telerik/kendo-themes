@@ -6,7 +6,7 @@
 $kendo-window-border-width: map.get( $kendo-spacing, 1 ) 0 0 !default;
 /// The border radius of the Window.
 /// @group window
-$kendo-window-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+$kendo-window-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// The font family of the Window.
 /// @group window
 $kendo-window-font-family: var( --kendo-font-family, inherit ) !default;

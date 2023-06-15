@@ -366,7 +366,7 @@ $kendo-grid-group-indicator-padding-y: $kendo-button-md-padding-y !default;
 $kendo-grid-group-indicator-border-width: $kendo-button-border-width !default;
 /// Border radius of the grid group indicator.
 /// @group grid
-$kendo-grid-group-indicator-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+$kendo-grid-group-indicator-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// Spacing of the grid group indicator.
 /// @group grid
 $kendo-grid-group-indicator-gap: $kendo-table-cell-padding-y !default;
