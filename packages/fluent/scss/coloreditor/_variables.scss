@@ -14,7 +14,7 @@ $kendo-color-editor-min-width: 260px !default;
 $kendo-color-editor-border-width: 1px !default;
 /// Border radius of the color editor.
 /// @group coloreditor
-$kendo-color-editor-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+$kendo-color-editor-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// Font family of the color editor.
 /// @group coloreditor
 $kendo-color-editor-font-family: var( --kendo-font-family, inherit ) !default;

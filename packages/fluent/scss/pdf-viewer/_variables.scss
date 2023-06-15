@@ -66,7 +66,7 @@ $kendo-pdf-viewer-search-dialog-spacing: map.get( $kendo-spacing, 2 ) !default;
 $kendo-pdf-viewer-search-panel-border-width: 1px !default;
 /// Border radius of the PDF viewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+$kendo-pdf-viewer-search-panel-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// Background color of the PDF viewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-bg: var( --kendo-component-bg, inherit ) !default;

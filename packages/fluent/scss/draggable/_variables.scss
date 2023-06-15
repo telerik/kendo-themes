@@ -3,7 +3,7 @@
 
 /// Borer radius of the drag clue.
 /// @group draggable
-$kendo-drag-clue-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+$kendo-drag-clue-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// Borer width of the drag clue.
 /// @group draggable
 $kendo-drag-clue-border-width: 0px !default;
