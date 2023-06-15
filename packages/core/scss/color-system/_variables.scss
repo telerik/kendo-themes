@@ -184,6 +184,10 @@ $kendo-theme-colors: (
         --kendo-invalid-text: #{$kendo-invalid-text};
         --kendo-invalid-border: #{$kendo-invalid-border};
         --kendo-invalid-shadow: #{$kendo-invalid-shadow};
+
+        --kendo-border-radius-sm: #{$kendo-border-radius-sm};
+        --kendo-border-radius-md: #{$kendo-border-radius-md};
+        --kendo-border-radius-lg: #{$kendo-border-radius-lg};
     }
 
     // Text colors
