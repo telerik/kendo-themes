@@ -74,7 +74,7 @@ $kendo-calendar-cell-padding-y: $kendo-calendar-cell-padding-x !default;
 $kendo-calendar-cell-line-height: $kendo-calendar-line-height !default;
 /// Border radius of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+$kendo-calendar-cell-border-radius: var( --kendo-border-radius-md, 0) !default;
 
 /// Horizontal padding of the calendar header cell.
 /// @group calendar
