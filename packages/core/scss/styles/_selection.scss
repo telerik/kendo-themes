@@ -2,7 +2,7 @@
     .k-marquee {
         border-width: 1px;
         border-style: solid;
-        border-color: k-get-theme-color-var( primary-100 );
+        border-color: k-get-theme-color-var( primary-100, transparent );
         position: absolute;
         z-index: 100000;
     }
@@ -18,7 +18,7 @@
 
     .k-marquee-color {
         color: $kendo-color-white;
-        background-color: k-get-theme-color-var( primary-100 );
+        background-color: k-get-theme-color-var( primary-100, transparent );
         opacity: .3;
     }
     .k-marquee-text {
