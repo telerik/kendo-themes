@@ -1,8 +1,5 @@
 @mixin kendo-core--styles--selection() {
     .k-marquee {
-        border-width: 1px;
-        border-style: solid;
-        border-color: k-get-theme-color-var( primary-100, transparent );
         position: absolute;
         z-index: 100000;
     }
@@ -17,11 +14,12 @@
     }
 
     .k-marquee-color {
-        color: $kendo-color-white;
-        background-color: k-get-theme-color-var( primary-100, transparent );
-        opacity: .3;
+        color: $kendo-selected-text;
+        background-color: k-get-theme-color-var( primary-60, #{$kendo-selected-bg} );
+        border-color: k-get-theme-color-var( primary-100, #{$kendo-selected-border} );
+        opacity: .6;
     }
     .k-marquee-text {
-        color: $kendo-color-white;
+        color: $kendo-selected-text;
     }
 }
