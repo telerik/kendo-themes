@@ -169,7 +169,7 @@
         overflow-x: hidden;
         overflow-y: scroll;
 
-        @include hide-scrollbar();
+        @include hide-scrollbar-dir-agnostic();
 
         > ul {
             height: auto;

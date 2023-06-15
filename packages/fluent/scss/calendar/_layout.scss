@@ -288,7 +288,7 @@
         overflow-y: auto;
         display: block;
 
-        @include hide-scrollbar();
+        @include hide-scrollbar-dir-agnostic();
     }
 
     // scoped in calendar until it is used elsewhere
