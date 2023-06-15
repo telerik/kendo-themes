@@ -327,6 +327,9 @@
 
 // Output styles
 @mixin styles() {
+    // Core
+    @include kendo-core--styles();
+
     // Core css variables
     @include core-styles();
 
