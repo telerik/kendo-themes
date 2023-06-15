@@ -1,3 +1,3 @@
-import { Button, KendoButtonProps } from "../button.spec";
+import { Button } from "../button.spec";
 
-export const TextButton = (props: KendoButtonProps) => <Button children="Button" {...props} />;
+export const TextButton = (props) => <Button children="Button" {...props} />;
