@@ -20,6 +20,10 @@
 /// @example scss - Usage
 ///   @debug k-meta-function-exists( "k-string-replace" ); // => true
 @function k-meta-function-exists( $name ) {
+    @if $name == "" {
+        @return false;
+    }
+
     @return function-exists( $name );
 }
 
