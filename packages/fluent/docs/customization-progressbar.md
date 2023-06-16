@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-disabled-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-20 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-disabled-text</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-90 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
     <td></td>
 </tr>
 <tr>

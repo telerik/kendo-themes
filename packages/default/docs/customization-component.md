@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-invalid-shadow</td>
-    <td>String</td>
+    <td>Null</td>
     <td><code>null</code></td>
-    <td><code>none</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the invalid items.</div></div>

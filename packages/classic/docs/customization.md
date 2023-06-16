@@ -7327,9 +7327,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-input-invalid-shadow</td>
-    <td>String</td>
+    <td>Null</td>
     <td><code>$kendo-invalid-shadow</code></td>
-    <td><code>none</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>

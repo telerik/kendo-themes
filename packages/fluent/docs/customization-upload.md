@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( neutral-10 )</code></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( success-190 )</code></td>
+    <td><code>k-get-theme-color-var( success-190 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-bg</td>
     <td></td>
-    <td><code>get-theme-color-var( error-190 )</code></td>
+    <td><code>k-get-theme-color-var( error-190 )</code></td>
     <td></td>
 </tr>
 <tr>
