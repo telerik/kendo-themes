@@ -1731,7 +1731,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-item-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -2840,7 +2840,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-calendar-cell-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, 0)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6253,7 +6253,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6383,7 +6383,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-canvas-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6523,7 +6523,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-slider-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6703,7 +6703,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-color-preview-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6843,7 +6843,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-editor-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -7443,7 +7443,7 @@ The following table lists the available variables for customizing the Fluent the
 <tbody><tr>
     <td>$kendo-drag-clue-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9673,7 +9673,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9913,7 +9913,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-fab-item-text-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -12528,7 +12528,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-group-indicator-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -15809,7 +15809,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-listgroup-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -16319,7 +16319,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-loader-container-panel-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17907,7 +17907,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-orgchart-node-group-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -19513,7 +19513,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20223,7 +20223,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-calculated-field-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20663,7 +20663,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popup-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21922,7 +21922,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-event-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23148,7 +23148,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-skeleton-text-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23158,7 +23158,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-skeleton-rect-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26374,7 +26374,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tabstrip-item-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26864,7 +26864,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-column-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28243,7 +28243,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-vertical-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-lg, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-lg} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29019,7 +29019,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treeview-item-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29758,7 +29758,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>

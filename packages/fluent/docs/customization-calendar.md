@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-calendar-cell-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, 0)</code></td>
     <td></td>
 </tr>
 <tr>
