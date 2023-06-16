@@ -1,5 +1,4 @@
 @use "./index.scss" as kendo-theme;
 
-@include kendo-theme.kendo-core--styles--layout();
 @include kendo-theme.config();
 @include kendo-theme.styles();
