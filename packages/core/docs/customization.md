@@ -2646,8 +2646,12 @@ k-meta-function-exists($name) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L22-L24
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L22-L28
 @function k-meta-function-exists($name) {
+    @if $name == "" {
+        @return false;
+    }
+
     @return function-exists( $name );
 }
 ```
@@ -2688,7 +2692,7 @@ k-meta-get-function($name, $css, $module) // => Function
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L35-L37
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L39-L41
 @function k-meta-get-function($name, $css, $module) {
     @return get-function( $name, $args... );
 }
@@ -2724,7 +2728,7 @@ k-meta-inspect($value) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L46-L48
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L50-L52
 @function k-meta-inspect($value) {
     @return inspect( $value );
 }
@@ -2760,7 +2764,7 @@ k-meta-keywords($args) // => Map
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L57-L59
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L61-L63
 @function k-meta-keywords($args) {
     @return keywords( $args );
 }
@@ -2796,7 +2800,7 @@ k-meta-type-of($value) // => String
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L68-L70
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L72-L74
 @function k-meta-type-of($value) {
     @return type-of( $value );
 }
@@ -2832,7 +2836,7 @@ k-meta-variable-exists($name) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L79-L81
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L83-L85
 @function k-meta-variable-exists($name) {
     @return variable-exists( $name );
 }
@@ -2868,7 +2872,7 @@ k-meta-is-number($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L92-L94
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L96-L98
 @function k-meta-is-number($value) {
     @return k-meta-type-of( $value ) == "number";
 }
@@ -2904,7 +2908,7 @@ k-meta-is-integer($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L105-L107
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L109-L111
 @function k-meta-is-integer($value) {
     @return k-meta-is-number( $value ) and k-math-round( $value ) == $value;
 }
@@ -2940,7 +2944,7 @@ k-meta-is-time($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L118-L120
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L122-L124
 @function k-meta-is-time($value) {
     @return k-meta-is-number( $value ) and k-string-index( "ms" "s", k-math-unit( $value ) ) != null;
 }
@@ -2976,7 +2980,7 @@ k-meta-is-duration($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L131-L133
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L135-L137
 @function k-meta-is-duration($value) {
     @return k-meta-is-time( $value );
 }
@@ -3012,7 +3016,7 @@ k-meta-is-angle($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L144-L146
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L148-L150
 @function k-meta-is-angle($value) {
     @return k-meta-is-number( $value ) and k-string-index( "deg" "rad" "grad" "turn", k-math-unit( $value ) ) != null;
 }
@@ -3048,7 +3052,7 @@ k-meta-is-frequency($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L157-L159
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L161-L163
 @function k-meta-is-frequency($value) {
     @return k-meta-is-number( $value ) and k-string-index( "Hz" "kHz", k-math-unit( $value ) ) != null;
 }
@@ -3085,7 +3089,7 @@ k-meta-is-relative-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L172-L174
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L176-L178
 @function k-meta-is-relative-length($value) {
     @return k-meta-is-number( $value ) and k-string-index( "em" "ex" "ch" "rem" "vw" "vh" "vmin" "vmax", k-math-unit( $value ) ) != null;
 }
@@ -3121,7 +3125,7 @@ k-meta-is-absolute-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L185-L187
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L189-L191
 @function k-meta-is-absolute-length($value) {
     @return k-meta-is-number( $value ) and k-string-index( "cm" "mm" "in" "px" "pt" "pc", k-math-unit( $value ) ) != null;
 }
@@ -3157,7 +3161,7 @@ k-meta-is-percentage($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L198-L200
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L202-L204
 @function k-meta-is-percentage($value) {
     @return k-meta-is-number( $value ) and k-math-unit( $value ) == "%";
 }
@@ -3194,7 +3198,7 @@ k-meta-is-length($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L212-L214
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L216-L218
 @function k-meta-is-length($value) {
     @return k-meta-is-relative-length( $value ) or k-meta-is-absolute-length( $value );
 }
@@ -3230,7 +3234,7 @@ k-meta-is-resolution($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L225-L227
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L229-L231
 @function k-meta-is-resolution($value) {
     @return k-meta-is-number( $value ) and k-string-index( "dpi" "dpcm" "dppx", k-math-unit( $value ) ) != null;
 }
@@ -3265,7 +3269,7 @@ k-meta-is-position($value) // => Boolean
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L237-L239
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_meta.import.scss#L241-L243
 @function k-meta-is-position($value) {
     @return k-meta-is-length( $value ) or k-meta-is-percentage( $value ) or k-string-index( "top" "right" "bottom" "left" "center", $value ) != null;
 }
