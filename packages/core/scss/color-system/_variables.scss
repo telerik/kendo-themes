@@ -98,7 +98,7 @@ $kendo-link-hover-text: k-get-theme-color-var( primary-120 ) !default;
 $kendo-invalid-bg: initial !default;
 $kendo-invalid-text: k-get-theme-color-var( error-190 ) !default;
 $kendo-invalid-border: k-get-theme-color-var( error-190 ) !default;
-$kendo-invalid-shadow: none !default;
+$kendo-invalid-shadow: null !default;
 
 // Disabled Styling
 $kendo-disabled-bg: k-get-theme-color-var( neutral-20 ) !default;

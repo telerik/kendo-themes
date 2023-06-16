@@ -360,7 +360,7 @@ $kendo-component-header-gradient: $kendo-base-gradient !default;
 $kendo-invalid-bg: null !default;
 $kendo-invalid-text: $kendo-color-error !default;
 $kendo-invalid-border: $kendo-color-error !default;
-$kendo-invalid-shadow: 0 0 4px 0 rgba( $kendo-base-border, .75 ) !default;
+$kendo-invalid-shadow: null !default;
 
 // Loading
 $kendo-loading-opacity: .3 !default;
