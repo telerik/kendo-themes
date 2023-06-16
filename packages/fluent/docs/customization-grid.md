@@ -900,7 +900,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-group-indicator-border-radius</td>
     <td></td>
-    <td><code>var( --kendo-border-radius-md, 0 )</code></td>
+    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
     <td></td>
 </tr>
 <tr>
