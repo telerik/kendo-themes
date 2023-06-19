@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.5.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.4.1-dev.1...v6.5.0-dev.0) (2023-06-19)
+
+
+### Bug Fixes
+
+* **list:** empty sticky header has a wrong height ([23561d4](https://github.com/telerik/kendo-themes/commit/23561d4a9b49f1382dcf5e22e5079c7d9ecd470d))
+* **list:** incorrect font weight of the group header ([cb6ac5c](https://github.com/telerik/kendo-themes/commit/cb6ac5c6fa04c416479ae8e0515e389da8e9f205))
+* **scheduler:** wrong border color of the dialog titlebar in the popup edit form ([0a9a5ed](https://github.com/telerik/kendo-themes/commit/0a9a5edd51b29f45f8fedee791d9587a2254b737))
+
+
+### Features
+
+* **chip:** adjust actions target size ([814f466](https://github.com/telerik/kendo-themes/commit/814f466c0110d6ed7e4a94bf4a372259fbdc27e7))
+* **splitter:** adjust collapse icon target size ([dc37803](https://github.com/telerik/kendo-themes/commit/dc37803f4b8a9df4947d18f9a102bfcdb8d0fb43))
+* **treeview:** adjust interactive elements target size ([c45354c](https://github.com/telerik/kendo-themes/commit/c45354ca6544de3f7a966b43c912f6aba98b65cd))
+
+
+
+
+
 ## [6.4.1-dev.1](https://github.com/telerik/kendo-themes/compare/v6.4.1-dev.0...v6.4.1-dev.1) (2023-06-12)
 
 **Note:** Version bump only for package @progress/kendo-theme-default

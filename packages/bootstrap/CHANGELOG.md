@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.5.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.4.1-dev.1...v6.5.0-dev.0) (2023-06-19)
+
+
+### Bug Fixes
+
+* **list:** incorrect font weight of the group header ([cb6ac5c](https://github.com/telerik/kendo-themes/commit/cb6ac5c6fa04c416479ae8e0515e389da8e9f205))
+
+
+### Features
+
+* **splitter:** adjust collapse icon target size ([dc37803](https://github.com/telerik/kendo-themes/commit/dc37803f4b8a9df4947d18f9a102bfcdb8d0fb43))
+* **treeview:** adjust interactive elements target size ([c45354c](https://github.com/telerik/kendo-themes/commit/c45354ca6544de3f7a966b43c912f6aba98b65cd))
+
+
+
+
+
 ## [6.4.1-dev.1](https://github.com/telerik/kendo-themes/compare/v6.4.1-dev.0...v6.4.1-dev.1) (2023-06-12)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap
