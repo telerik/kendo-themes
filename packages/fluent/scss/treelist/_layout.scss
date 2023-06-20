@@ -96,4 +96,10 @@
         margin-inline: .5em;
     }
 
+    .k-treelist-toggle {
+        margin-block: calc( var( --kendo-icon-padding ) * -1 );
+        padding: var( --kendo-icon-padding, .25rem );
+        cursor: pointer;
+    }
+
 }

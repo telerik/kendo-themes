@@ -83,117 +83,117 @@ export default () => (
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">7</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="caret-alt-down" />Software validation, research and implementation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="caret-alt-down" />Software validation, research and implementation</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">18</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" />Project Kickoff</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Project Kickoff</td>
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">11</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Research</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="caret-alt-down" />Research</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">19</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Validation with Customers</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Validation with Customers</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">20</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Market Research</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Market Research</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">39</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Functional and Technical Specification</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Functional and Technical Specification</td>
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">12</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Design</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="caret-alt-down" />Design</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">22</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />UI Design</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />UI Design</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">23</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />HTML Prototype</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />HTML Prototype</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">13</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Implementation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="caret-alt-down" />Implementation</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">24</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Prototype</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Prototype</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">26</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Architecture</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Architecture</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">27</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Data Layer</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Data Layer</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">29</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />UI and Interaction</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />UI and Interaction</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">28</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Unit Tests</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Unit Tests</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">14</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Testing</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="caret-alt-down" />Testing</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">32</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Integration Testing</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Integration Testing</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">33</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Load Testing</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Load Testing</td>
                                         </tr>
                                         <tr className="k-table-row k-treelist-group">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">30</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-down" />Documentation</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="caret-alt-down" />Documentation</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">34</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Structure</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Structure</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">35</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" /><Icon icon="none" />Articles</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Articles</td>
                                         </tr>
                                         <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">31</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="caret-alt-right" />Demos</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon icon="caret-alt-right" />Demos</td>
                                         </tr>
                                         <tr className="k-table-row">
                                             <td className="k-table-td k-drag-cell"><Icon icon="reorder" /></td>
                                             <td className="k-table-td">17</td>
-                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon icon="none" /><Icon icon="none" />Release</td>
+                                            <td style={{ whiteSpace: "nowrap" }} className="k-table-td"><Icon className="k-treelist-toggle" icon="none" /><Icon className="k-treelist-toggle" icon="none" />Release</td>
                                         </tr>
                                     </tbody>
                                 </table>

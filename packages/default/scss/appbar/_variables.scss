@@ -1,22 +1,54 @@
-// Appbar
-$kendo-appbar-margin-y: null !default;
+// AppBar
+
+/// The horizontal margin of the AppBar.
+/// @group appbar
 $kendo-appbar-margin-x: null !default;
-$kendo-appbar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+/// The vertical margin of the AppBar.
+/// @group appbar
+$kendo-appbar-margin-y: null !default;
+/// The horizontal padding of the AppBar.
+/// @group appbar
 $kendo-appbar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+/// The vertical padding of the AppBar.
+/// @group appbar
+$kendo-appbar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+/// The width of the border around the AppBar.
+/// @group appbar
 $kendo-appbar-border-width: 0px !default;
-
+/// The z-index of the AppBar.
+/// @group appbar
 $kendo-appbar-zindex: 1000 !default;
-
-$kendo-appbar-font-size: $kendo-font-size-md !default;
-$kendo-appbar-line-height: $kendo-line-height-md !default;
+/// The font family of the AppBar.
+/// @group appbar
 $kendo-appbar-font-family: $kendo-font-family !default;
+/// The font size of the AppBar.
+/// @group appbar
+$kendo-appbar-font-size: $kendo-font-size-md !default;
+/// The line height of the AppBar.
+/// @group appbar
+$kendo-appbar-line-height: $kendo-line-height-md !default;
+
+/// The spacing between the AppBar sections.
+/// @group appbar
 $kendo-appbar-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
+/// The background color of the AppBar based on light theme color.
+/// @group appbar
 $kendo-appbar-light-bg: $kendo-color-light !default;
+/// The text color of the AppBar based on light theme color.
+/// @group appbar
 $kendo-appbar-light-text: k-contrast-legacy( $kendo-color-light ) !default;
 
+/// The background color of the AppBar based on dark theme color.
+/// @group appbar
 $kendo-appbar-dark-bg: $kendo-color-dark !default;
+/// The text color of the AppBar based on dark theme color.
+/// @group appbar
 $kendo-appbar-dark-text: k-contrast-legacy( $kendo-color-dark ) !default;
 
+/// The box shadow of the AppBar.
+/// @group appbar
 $kendo-appbar-box-shadow: 0px 1px 1px rgba(0, 0, 0, .16) !default;
+/// The box shadow of the AppBar with bottom position.
+/// @group appbar
 $kendo-appbar-bottom-box-shadow: 0px -1px 1px rgba(0, 0, 0, .16) !default;

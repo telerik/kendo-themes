@@ -1,3 +1,3 @@
-import { Button, KendoButtonProps } from "../button.spec";
+import { Button } from "../button.spec";
 
-export const IconButton = (props: KendoButtonProps) => <Button icon="folder" {...props} children={undefined} />;
+export const IconButton = (props) => <Button icon="folder" {...props} children={undefined} />;

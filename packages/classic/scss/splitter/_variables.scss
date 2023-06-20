@@ -12,6 +12,8 @@ $kendo-splitter-splitbar-size: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-splitter-drag-handle-length: 20px !default;
 $kendo-splitter-drag-handle-thickness: 2px !default;
 $kendo-splitter-drag-icon-margin: 7px !default;
+$kendo-splitter-collapse-icon-padding-x: null !default;
+$kendo-splitter-collapse-icon-padding-y: k-map-get( $kendo-spacing, .5 ) !default;
 
 $kendo-splitbar-bg: $kendo-base-bg !default;
 $kendo-splitbar-text: $kendo-base-text !default;

@@ -1,104 +1,102 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Width of the border around the window.
+/// The width of the border around the Window.
 /// @group window
 $kendo-window-border-width: map.get( $kendo-spacing, 1 ) 0 0 !default;
-/// Border radius of the window.
+/// The border radius of the Window.
 /// @group window
 $kendo-window-border-radius: var( --kendo-border-radius-md, 0 ) !default;
-/// Font family of the window.
+/// The font family of the Window.
 /// @group window
 $kendo-window-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the window.
+/// The font size of the Window.
 /// @group window
 $kendo-window-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the window.
+/// The line height of the Window.
 /// @group window
 $kendo-window-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Horizontal padding of the window titlebar.
+/// The horizontal padding of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-padding-x: map.get( $kendo-spacing, 6 ) !default;
-/// Vertical padding of the window titlebar.
+/// The vertical padding of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-padding-y: map.get( $kendo-spacing, 5 ) !default;
-/// Width of the top border of the window titlebar.
+/// The width of the border of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border-width: 0 !default;
-/// Style of the top border of the window titlebar.
+/// The style of the border of the Window titlebar.
 /// @group window
 $kendo-window-titlebar-border-style: solid !default;
 
-/// Font size of the title of the window.
+/// The font size of the title of the Window.
 /// @group window
 $kendo-window-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
-/// Line height of the title of the window.
+/// The line height of the title of the Window.
 /// @group window
 $kendo-window-title-line-height: var( --kendo-line-height, normal ) !default;
-/// Font weight of the title of the window.
+/// The font weight of the title of the Window.
 /// @group window
 $kendo-window-title-font-weight: var( --kendo-font-weight-bold, bold ) !default;
 
-/// Spacing between the buttons in the header of the window.
+/// The spacing between the buttons in the Window titlebar.
 /// @group window
 $kendo-window-actions-gap: 0px !default;
-
-/// Opacity of the buttons in the header of the window.
+/// OThe opacity of the buttons in the Window titlebar.
 /// @group window
 $kendo-window-action-opacity: 1 !default;
-/// Opacity of the buttons when hovered in the header of the window.
+/// The opacity of the hovered buttons in the Window titlebar.
 /// @group window
 $kendo-window-action-hover-opacity: 1 !default;
 
-/// Horizontal padding of the content of the window.
+/// The horizontal padding of the content of the Window.
 /// @group window
 $kendo-window-inner-padding-x: map.get( $kendo-spacing, 6 ) !default;
-/// Vertical padding of the content of the window.
+/// The vertical padding of the content of the Window.
 /// @group window
 $kendo-window-inner-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
-/// Horizontal padding of the window action buttons.
+/// The horizontal padding of the Window action buttons.
 /// @group window
 $kendo-window-buttongroup-padding-x: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-x
-/// Vertical padding of the window action buttons.
+/// The vertical padding of the Window action buttons.
 /// @group window
 $kendo-window-buttongroup-padding-y: map.get( $kendo-spacing, 6 ) !default; // $kendo-actions-padding-y
-/// Width of the top border of the window action buttons.
+/// The width of the top border of the Window action buttons.
 /// @group window
 $kendo-window-buttongroup-border-width: 0 !default;
-/// Spacing between the action buttons of the window.
+/// The spacing between the Window action buttons.
 /// @group window
 $kendo-window-buttongroup-spacing: map.get( $kendo-spacing, 3 ) !default;
 
-/// Background color of the window.
+/// The background color of the Window.
 /// @group window
 $kendo-window-bg: var( --kendo-component-bg, initial ) !default;
-/// Text color of the window.
+/// The text color of the Window.
 /// @group window
 $kendo-window-text: var( --kendo-component-text, initial ) !default;
-/// Border color of the window.
+/// The border color of the Window.
 /// @group window
 $kendo-window-border: get-theme-color-var( primary-100 ) !default;
-
-/// Background color of the window titlebar.
-/// @group window
-$kendo-window-titlebar-bg: var( --kendo-component-bg, initial ) !default; // $kendo-component-header-bg
-/// Text color of the window titlebar.
-/// @group window
-$kendo-window-titlebar-text: get-theme-color-var( primary-100 ) !default; // $kendo-component-header-text
-/// Border color of the window titlebar.
-/// @group window
-$kendo-window-titlebar-border: get-theme-color-var( primary-100 ) !default;
-
-/// Box shadow around the window.
+/// The box shadow of the Window.
 /// @group window
 $kendo-window-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
-/// Box shadow around the window when hovered.
+/// The box shadow of the focused Window.
 /// @group window
 $kendo-window-focus-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 
-/// Map of the width of the different window sizes.
+/// The background color of the Window titlebar.
+/// @group window
+$kendo-window-titlebar-bg: var( --kendo-component-bg, initial ) !default; // $kendo-component-header-bg
+/// The text color of the Window titlebar.
+/// @group window
+$kendo-window-titlebar-text: get-theme-color-var( primary-100 ) !default; // $kendo-component-header-text
+/// The border color of the Window titlebar.
+/// @group window
+$kendo-window-titlebar-border: get-theme-color-var( primary-100 ) !default;
+
+/// The map of the width of the different Window sizes.
 /// @group window
 $kendo-window-sizes: (
     sm: 300px,
@@ -106,7 +104,8 @@ $kendo-window-sizes: (
     lg: 1200px
 ) !default;
 
-/// Theme variations for the window.
+/// The theme variations for the Window.
+/// @group window
 $kendo-window-brand-colors: (
     primary: primary
  ) !default;
@@ -124,7 +123,8 @@ $_tc-window-light-matrix: (
     (normal: (50, 160, 50)),
 ) !default;
 
-/// Theme colors map for the window variations.
+/// The theme colors map for the Window.
+/// @group window
 $kendo-window-theme-colors: () !default;
 
 @each $ui-states in $_tc-window-matrix {

@@ -1,4 +1,4 @@
-import { Button } from '../../button';
+import { IconButton, IconTextButton, TextButton } from '../../button';
 
 const styles = `
     #test-area {
@@ -20,53 +20,52 @@ export default () => (
             <span>Disabled</span>
 
             <span>base</span>
-            <span dir="rtl"><Button>Normal</Button></span>
-            <span dir="rtl"><Button hover={true}>Hover</Button></span>
-            <span dir="rtl"><Button focus={true}>Focus</Button></span>
-            <span dir="rtl"><Button active={true}>Active</Button></span>
-            <span dir="rtl"><Button selected={true}>Selected</Button></span>
-            <span dir="rtl"><Button disabled={true}>Disabled</Button></span>
+            <span dir="rtl"><TextButton>Normal</TextButton></span>
+            <span dir="rtl"><TextButton hover={true}>Hover</TextButton></span>
+            <span dir="rtl"><TextButton focus={true}>Focus</TextButton></span>
+            <span dir="rtl"><TextButton active={true}>Active</TextButton></span>
+            <span dir="rtl"><TextButton selected={true}>Selected</TextButton></span>
+            <span dir="rtl"><TextButton disabled={true}>Disabled</TextButton></span>
 
             <span>^ text + icon</span>
-            <span dir="rtl"><Button icon="folder">Normal</Button></span>
-            <span dir="rtl"><Button icon="folder" hover={true}>Hover</Button></span>
-            <span dir="rtl"><Button icon="folder" focus={true}>Focus</Button></span>
-            <span dir="rtl"><Button icon="folder" active={true}>Active</Button></span>
-            <span dir="rtl"><Button icon="folder" selected={true}>Selected</Button></span>
-            <span dir="rtl"><Button icon="folder" disabled={true}>Disabled</Button></span>
+            <span dir="rtl"><IconTextButton>Normal</IconTextButton></span>
+            <span dir="rtl"><IconTextButton hover={true}>Hover</IconTextButton></span>
+            <span dir="rtl"><IconTextButton focus={true}>Focus</IconTextButton></span>
+            <span dir="rtl"><IconTextButton active={true}>Active</IconTextButton></span>
+            <span dir="rtl"><IconTextButton selected={true}>Selected</IconTextButton></span>
+            <span dir="rtl"><IconTextButton disabled={true}>Disabled</IconTextButton></span>
 
             <span>^ icon</span>
-            <span dir="rtl"><Button icon="folder"></Button></span>
-            <span dir="rtl"><Button icon="folder" hover></Button></span>
-            <span dir="rtl"><Button icon="folder" focus={true}></Button></span>
-            <span dir="rtl"><Button icon="folder" active={true}></Button></span>
-            <span dir="rtl"><Button icon="folder" selected={true}></Button></span>
-            <span dir="rtl"><Button icon="folder" disabled={true}></Button></span>
+            <span dir="rtl"><IconButton></IconButton></span>
+            <span dir="rtl"><IconButton hover></IconButton></span>
+            <span dir="rtl"><IconButton focus={true}></IconButton></span>
+            <span dir="rtl"><IconButton active={true}></IconButton></span>
+            <span dir="rtl"><IconButton selected={true}></IconButton></span>
+            <span dir="rtl"><IconButton disabled={true}></IconButton></span>
 
             <span>primary</span>
-            <span dir="rtl"><Button themeColor="primary">Normal</Button></span>
-            <span dir="rtl"><Button themeColor="primary" hover={true}>Hover</Button></span>
-            <span dir="rtl"><Button themeColor="primary" focus={true}>Focus</Button></span>
-            <span dir="rtl"><Button themeColor="primary" active={true}>Active</Button></span>
-            <span dir="rtl"><Button themeColor="primary" selected={true}>Selected</Button></span>
-            <span dir="rtl"><Button themeColor="primary" disabled={true}>Disabled</Button></span>
+            <span dir="rtl"><TextButton themeColor="primary">Normal</TextButton></span>
+            <span dir="rtl"><TextButton themeColor="primary" hover={true}>Hover</TextButton></span>
+            <span dir="rtl"><TextButton themeColor="primary" focus={true}>Focus</TextButton></span>
+            <span dir="rtl"><TextButton themeColor="primary" active={true}>Active</TextButton></span>
+            <span dir="rtl"><TextButton themeColor="primary" selected={true}>Selected</TextButton></span>
+            <span dir="rtl"><TextButton themeColor="primary" disabled={true}>Disabled</TextButton></span>
 
             <span>^ text + icon</span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder">Normal</Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" hover={true}>Hover</Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" focus={true}>Focus</Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" active={true}>Active</Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" selected={true}>Selected</Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" disabled={true}>Disabled</Button></span>
+            <span dir="rtl"><IconTextButton themeColor="primary">Normal</IconTextButton></span>
+            <span dir="rtl"><IconTextButton themeColor="primary" hover={true}>Hover</IconTextButton></span>
+            <span dir="rtl"><IconTextButton themeColor="primary" focus={true}>Focus</IconTextButton></span>
+            <span dir="rtl"><IconTextButton themeColor="primary" active={true}>Active</IconTextButton></span>
+            <span dir="rtl"><IconTextButton themeColor="primary" selected={true}>Selected</IconTextButton></span>
+            <span dir="rtl"><IconTextButton themeColor="primary" disabled={true}>Disabled</IconTextButton></span>
 
             <span>^ icon</span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder"></Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" hover={true}></Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" focus={true}></Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" active={true}></Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" selected={true}></Button></span>
-            <span dir="rtl"><Button themeColor="primary" icon="folder" disabled={true}></Button></span>
+            <span dir="rtl"><IconButton themeColor="primary"></IconButton></span>
+            <span dir="rtl"><IconButton themeColor="primary" hover></IconButton></span>
+            <span dir="rtl"><IconButton themeColor="primary" focus={true}></IconButton></span>
+            <span dir="rtl"><IconButton themeColor="primary" active={true}></IconButton></span>
+            <span dir="rtl"><IconButton themeColor="primary" selected={true}></IconButton></span>
+            <span dir="rtl"><IconButton themeColor="primary" disabled={true}></IconButton></span>
         </div>
-
     </>
 );

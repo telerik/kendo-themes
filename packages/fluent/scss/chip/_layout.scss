@@ -150,6 +150,10 @@
             --INTERNAL-kendo-chip-padding-y: #{ $_padding-y };
             --INTERNAL-kendo-chip-font-size: #{ $_font-size };
             --INTERNAL-kendo-chip-line-height: #{ $_line-height };
+
+            .k-chip-action {
+                padding: $_padding-y;
+            }
         }
     }
 

@@ -24,7 +24,7 @@ $kendo-treeview-md-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-treeview-lg-line-height: var( --kendo-line-height, normal ) !default;
 /// The indentation of child groups in the TreeView.
 /// @group treeview
-$kendo-treeview-indent: map.get( $kendo-spacing, 4 ) !default;
+$kendo-treeview-indent: map.get( $kendo-spacing, 6 ) !default;
 
 /// The horizontal padding of the small TreeView items.
 /// @group treeview
@@ -178,3 +178,7 @@ $kendo-treeview-loadmore-focus-border: inherit !default;
 /// The box shadow of the focused Load More button in the TreeView.
 /// @group treeview
 $kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !default;
+
+/// The padding of the checkbox wrapper in the TreeView.
+/// @group treeview
+$kendo-treeview-checkbox-wrap-padding: map.get( $kendo-spacing, .5 ) !default;

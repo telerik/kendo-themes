@@ -1,53 +1,108 @@
 @import "../action-buttons/_variables.scss";
 
-
 // Window
 
+/// The width of the border around the Window.
+/// @group window
 $kendo-window-border-width: 0px !default;
+/// The border radius of the Window.
+/// @group window
 $kendo-window-border-radius: 0px !default;
+/// The font family of the Window.
+/// @group window
 $kendo-window-font-family: $kendo-font-family !default;
+/// The font size of the Window.
+/// @group window
 $kendo-window-font-size: $kendo-font-size-md !default;
+/// The line height of the Window.
+/// @group window
 $kendo-window-line-height: 1.25 !default;
 
+/// The horizontal padding of the Window titlebar.
+/// @group window
 $kendo-window-titlebar-padding-x: 16px !default;
+/// The vertical padding of the Window titlebar.
+/// @group window
 $kendo-window-titlebar-padding-y: 12px !default;
+/// The width of the border of the Window titlebar.
+/// @group window
 $kendo-window-titlebar-border-width: 0 0 1px !default;
+/// The style of the border of the Window titlebar.
+/// @group window
 $kendo-window-titlebar-border-style: solid !default;
 
+/// The font size of the title of the Window.
+/// @group window
 $kendo-window-title-font-size: $kendo-font-size-lg !default;
+/// The line height of the title of the Window.
+/// @group window
 $kendo-window-title-line-height: 1.25 !default;
 
+/// The spacing between the buttons in the Window titlebar.
+/// @group window
 $kendo-window-actions-gap: null !default;
-
+/// The opacity of the buttons in the Window titlebar.
+/// @group window
 $kendo-window-action-opacity: null !default;
+/// The opacity of the hovered buttons in the Window titlebar.
+/// @group window
 $kendo-window-action-hover-opacity: null !default;
 
+/// The horizontal padding of the content of the Window.
+/// @group window
 $kendo-window-inner-padding-x: 16px !default;
+/// The vertical padding of the content of the Window.
+/// @group window
 $kendo-window-inner-padding-y: 16px !default;
 
+/// The horizontal padding of the Window action buttons.
+/// @group window
 $kendo-window-buttongroup-padding-x: $kendo-actions-padding-x !default;
+/// The vertical padding of the Window action buttons.
+/// @group window
 $kendo-window-buttongroup-padding-y: $kendo-actions-padding-y !default;
+/// The width of the top border of the Window action buttons.
+/// @group window
 $kendo-window-buttongroup-border-width: 1px !default;
 
+/// The background color of the Window.
+/// @group window
 $kendo-window-bg: $kendo-component-bg !default;
+/// The text color of the Window.
+/// @group window
 $kendo-window-text: $kendo-component-text !default;
+/// The border color of the Window.
+/// @group window
 $kendo-window-border: $kendo-component-border !default;
-
-$kendo-window-titlebar-bg: $kendo-component-header-bg !default;
-$kendo-window-titlebar-text: $kendo-component-header-text !default;
-$kendo-window-titlebar-border: inherit !default;
-$kendo-window-titlebar-gradient: null !default;
-
+/// The box shadow of the Window.
+/// @group window
 $kendo-window-shadow: 0 3px 3px 0 rgba(0, 0, 0, .06) !default;
+/// The box shadow of the focused Window.
+/// @group window
 $kendo-window-focus-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
 
+/// The background color of the Window titlebar.
+/// @group window
+$kendo-window-titlebar-bg: $kendo-component-header-bg !default;
+/// The text color of the Window titlebar.
+/// @group window
+$kendo-window-titlebar-text: $kendo-component-header-text !default;
+/// The border color of the Window titlebar.
+/// @group window
+$kendo-window-titlebar-border: inherit !default;
+/// The background gradient of the Window titlebar.
+/// @group window
+$kendo-window-titlebar-gradient: null !default;
+
+/// The map of the width for the different Window sizes.
+/// @group window
 $kendo-window-sizes: (
     sm: 300px,
     md: 800px,
     lg: 1200px
 ) !default;
 
-/// Theme colors map for the window.
+/// The theme colors map for the Window.
 /// @group window
 $kendo-window-theme-colors: (
     "primary": k-map-get($kendo-theme-colors, "primary"),

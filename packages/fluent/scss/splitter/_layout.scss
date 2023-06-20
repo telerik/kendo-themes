@@ -59,6 +59,7 @@
         .k-collapse-prev,
         .k-collapse-next {
             cursor: pointer;
+            padding: var( --kendo-splitter-collapse-icon-padding-y, #{$kendo-splitter-collapse-icon-padding-y} ) var( --kendo-splitter-collapse-icon-padding-x, #{$kendo-splitter-collapse-icon-padding-x} );
         }
 
     }

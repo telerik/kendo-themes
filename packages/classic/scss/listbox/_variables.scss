@@ -1,49 +1,50 @@
-// Listbox
+// ListBox
 
-/// Margin between the listbox elements.
+/// The spacing between the ListBox elements.
 /// @group listbox
 $kendo-listbox-spacing: k-map-get( $kendo-spacing, 2 ) !default;
-/// Margin between the listbox buttons.
+/// The spacing between the ListBox buttons.
 /// @group listbox
 $kendo-listbox-button-spacing: k-map-get( $kendo-spacing, 2 ) !default;
-/// Width of the listbox.
+/// The width of the ListBox.
 /// @group listbox
 $kendo-listbox-width: 10em !default;
-/// Height of the listbox.
+/// The height of the ListBox.
 /// @group listbox
 $kendo-listbox-default-height: 200px !default;
-/// Width of the border around the listbox.
+/// The width of the border around the ListBox.
 /// @group listbox
 $kendo-listbox-border-width: 1px !default;
-/// Font family of the listbox.
+/// The font family of the ListBox.
 /// @group listbox
 $kendo-listbox-font-family: $kendo-font-family !default;
-/// Font size of the listbox.
+/// The font size of the ListBox.
 /// @group listbox
 $kendo-listbox-font-size: $kendo-font-size-md !default;
-/// Line height of the listbox.
+/// The line height of the ListBox.
 /// @group listbox
 $kendo-listbox-line-height: $kendo-line-height-md !default;
-/// Background color of the listbox.
-/// @group listbox
-$kendo-listbox-bg: $kendo-component-bg !default;
-/// Text color of the listbox.
+
+/// The text color of the ListBox.
 /// @group listbox
 $kendo-listbox-text: $kendo-component-text !default;
-/// Border color of the listbox.
+/// The background color of the ListBox.
+/// @group listbox
+$kendo-listbox-bg: $kendo-component-bg !default;
+/// The border color of the ListBox.
 /// @group listbox
 $kendo-listbox-border: $kendo-component-border !default;
 
-/// Inline item padding of the listbox.
+/// The inline padding of the ListBox item.
 /// @group listbox
 $kendo-listbox-item-padding-x: null !default;
-/// Block item padding of the listbox.
+/// The block padding of the ListBox item.
 /// @group listbox
 $kendo-listbox-item-padding-y: null !default;
 
-/// Width of the border around the drop hint.
-/// @group listbox
-$kendo-listbox-drop-hint-border-width: null !default;
-/// Width of the drop hint.
+/// The width of the ListBox drop hint.
 /// @group listbox
 $kendo-listbox-drop-hint-width: 1px !default;
+/// The width of the border around the ListBox drop hint.
+/// @group listbox
+$kendo-listbox-drop-hint-border-width: null !default;
