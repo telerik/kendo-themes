@@ -1,7 +1,4 @@
-import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
-import { Button } from '../../button';
-import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
-
+import { TimePickerAdaptive } from '../../timepicker';
 
 const styles = `
     #test-area {
@@ -26,36 +23,11 @@ export default () =>(
             <span>full screen</span>
 
             <section>
-                <ActionSheet adaptive={true}>
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Select Dates"
-                        subTitle="DD / MM / YY">
-                    </ActionSheetHeader>
-                    <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
-                        <TimeSelectorHeader title="10:00:00 АМ">
-                            <Button fillMode="flat" className="k-time-now">Now</Button>
-                        </TimeSelectorHeader>
-                    )}/>
-                    <ActionSheetFooter actions={[ '!Select Date' ]} />
-                </ActionSheet>
+                <TimePickerAdaptive />
             </section>
             <section>
-                <ActionSheet adaptive={true} fullscreen>
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Select Dates"
-                        subTitle="DD / MM / YY">
-                    </ActionSheetHeader>
-                    <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
-                        <TimeSelectorHeader title="10:00:00 АМ">
-                            <Button fillMode="flat" className="k-time-now">Now</Button>
-                        </TimeSelectorHeader>
-                    )}/>
-                    <ActionSheetFooter actions={[ '!Select Date' ]} />
-                </ActionSheet>
+                <TimePickerAdaptive adaptiveSettings={{ fullscreen: true }} />
             </section>
         </div>
-
     </>
 );

@@ -12,6 +12,7 @@ import { Button } from '../button';
 import { Popup } from '../popup';
 import { TimeSelector, TimeSelectorHeader } from '../time-selector';
 import { ActionButtons } from '../action-buttons';
+import { ActionSheet, ActionSheetFooter, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
 
 export const TIMEPICKER_CLASSNAME = `k-timepicker`;
 
@@ -50,6 +51,8 @@ export type KendoTimePickerProps = KendoTimePickerOptions & {
     value?: string;
     placeholder?: string;
     opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
 };
 
 export type KendoTimePickerState = { [K in (typeof states)[number]]?: boolean };
@@ -76,6 +79,8 @@ export const TimePicker = (
         disabled,
         readonly,
         opened,
+        adaptive,
+        adaptiveSettings,
         ...other
     } = props;
 
@@ -133,6 +138,21 @@ export const TimePicker = (
                         <Button className="k-time-cancel">Cancel</Button>
                     </ActionButtons>
                 </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        title="Set Time"
+                        subTitle="DD / MM / YY">
+                    </ActionSheetHeader>
+                    <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
+                        <TimeSelectorHeader title="10:00:00 АМ">
+                            <Button size="large" fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
+                    <ActionSheetFooter actions={[ 'Cancel', '!Set time' ]} />
+                </ActionSheet>
             }
         </>
     );

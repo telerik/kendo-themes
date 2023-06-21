@@ -1,5 +1,4 @@
-import { TimePicker } from '..';
-
+import { TimePickerPopup } from '..';
 
 const styles = `
     #test-area {
@@ -20,10 +19,10 @@ export default () =>(
             <span>TimePicker RTL</span>
 
             <div>
-                <TimePicker value="Opened" opened />
+                <TimePickerPopup value="Opened" />
             </div>
             <div dir="rtl">
-                <TimePicker value="Opened" opened />
+                <TimePickerPopup value="Opened" />
             </div>
 
         </div>
