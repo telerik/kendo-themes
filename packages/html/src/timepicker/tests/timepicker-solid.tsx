@@ -12,33 +12,33 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>TimePicker Outline</span>
-            <span>TimePicker Outline RTL</span>
+            <span>TimePicker</span>
+            <span>TimePicker RTL</span>
 
             <div>
-                <TimePickerNormal fillMode="outline" placeholder="placeholder..." />
+                <TimePickerNormal placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <TimePickerNormal fillMode="outline" placeholder="placeholder..." />
+                <TimePickerNormal placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...TimePicker.states ].map((state) => (
                 <>
                     <div>
-                        <TimePickerNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                        <TimePickerNormal { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <TimePickerNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                        <TimePickerNormal { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <TimePickerNormal value="invalid focus" fillMode="outline" invalid focus />
+                <TimePickerNormal value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <TimePickerNormal value="invalid focus" fillMode="outline" invalid focus />
+                <TimePickerNormal value="invalid focus" invalid focus />
             </div>
         </div>
     </>

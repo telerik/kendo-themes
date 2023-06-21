@@ -1,4 +1,4 @@
-import { TimePicker } from '../../timepicker';
+import { TimePicker, TimePickerNormal } from '../../timepicker';
 
 
 const styles = `
@@ -16,61 +16,30 @@ export default () =>(
             <span>TimePicker Flat RTL</span>
 
             <div>
-                <TimePicker fillMode="flat" placeholder="TimePicker..." />
+                <TimePickerNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <TimePicker fillMode="flat" placeholder="TimePicker..." />
+                <TimePickerNormal fillMode="flat" placeholder="placeholder..." />
             </div>
+
+            {[ 'normal', ...TimePicker.states ].map((state) => (
+                <>
+                    <div>
+                        <TimePickerNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <TimePickerNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <TimePicker fillMode="flat" value="Normal" />
+                <TimePickerNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
             <div dir="rtl">
-                <TimePicker fillMode="flat" value="Normal" />
+                <TimePickerNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
-
-            <div>
-                <TimePicker fillMode="flat" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <TimePicker fillMode="flat" value="Hover" hover />
-            </div>
-
-            <div>
-                <TimePicker fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <TimePicker fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <TimePicker fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <TimePicker fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <TimePicker fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <TimePicker fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <TimePicker fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <TimePicker fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <TimePicker fillMode="flat" value="Loading..." loading />
-            </div>
-            <div dir="rtl">
-                <TimePicker fillMode="flat" value="Loading..." loading />
-            </div>
-
         </div>
     </>
 );
