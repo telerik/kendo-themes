@@ -1,5 +1,4 @@
-import { Autocomplete } from '../../autocomplete';
-
+import { Autocomplete, AutocompleteNormal } from '../../autocomplete';
 
 const styles = `
     #test-area {
@@ -16,61 +15,30 @@ export default () =>(
             <span>Autocomplete Flat RTL</span>
 
             <div>
-                <Autocomplete fillMode="flat" placeholder="Autocomplete..." />
+                <AutocompleteNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <Autocomplete fillMode="flat" placeholder="Autocomplete..." />
+                <AutocompleteNormal fillMode="flat" placeholder="placeholder..." />
             </div>
+
+            {[ 'normal', ...Autocomplete.states ].map((state) => (
+                <>
+                    <div>
+                        <AutocompleteNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <AutocompleteNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <Autocomplete fillMode="flat" value="Normal"/>
+                <AutocompleteNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
             <div dir="rtl">
-                <Autocomplete fillMode="flat" value="Normal" />
+                <AutocompleteNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
-
-            <div>
-                <Autocomplete fillMode="flat" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <Autocomplete fillMode="flat" value="Hover" hover />
-            </div>
-
-            <div>
-                <Autocomplete fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <Autocomplete fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <Autocomplete fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <Autocomplete fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <Autocomplete fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <Autocomplete fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <Autocomplete fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Autocomplete fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <Autocomplete fillMode="flat" value="Loading..." loading />
-            </div>
-            <div dir="rtl">
-                <Autocomplete fillMode="flat" value="Loading..." loading />
-            </div>
-
         </div>
     </>
 );

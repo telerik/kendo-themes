@@ -8,6 +8,9 @@ import {
     InputLoadingIcon,
     InputValidationIcon
 } from '../input';
+import { Popup } from '../popup';
+import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
+import { List, ListItem } from '../list';
 
 export const AUTOCOMPLETE_CLASSNAME = `k-autocomplete`;
 
@@ -44,6 +47,10 @@ export type KendoAutocompleteProps = KendoAutocompleteOptions & {
     suffix?: JSX.Element;
     value?: string;
     placeholder?: string;
+    popup?: JSX.Element;
+    opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
 };
 
 export type KendoAutocompleteState = { [K in (typeof states)[number]]?: boolean };
@@ -68,44 +75,71 @@ export const Autocomplete = (
         required,
         loading,
         disabled,
+        popup,
+        opened,
         readonly,
+        adaptive,
+        adaptiveSettings,
         ...other
     } = props;
 
 
     return (
-        <Input
-            {...other}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            hover={hover}
-            focus={focus}
-            valid={valid}
-            invalid={invalid}
-            required={required}
-            loading={loading}
-            disabled={disabled}
-            readonly={readonly}
-            className={classNames(props.className, AUTOCOMPLETE_CLASSNAME)}
-        >
-            <InputPrefix>{prefix}</InputPrefix>
-            <InputInnerInput placeholder={placeholder} value={value} />
-            <InputValidationIcon
+        <>
+            <Input
+                {...other}
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                hover={hover}
+                focus={focus}
                 valid={valid}
                 invalid={invalid}
-                loading={loading}
-                disabled={disabled} />
-            <InputLoadingIcon
-                loading={loading}
-                disabled={disabled} />
-            <InputClearValue
+                required={required}
                 loading={loading}
                 disabled={disabled}
                 readonly={readonly}
-                value={value} />
-            <InputSuffix>{suffix}</InputSuffix>
-        </Input>
+                className={classNames(props.className, AUTOCOMPLETE_CLASSNAME)}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputValidationIcon
+                    valid={valid}
+                    invalid={invalid}
+                    loading={loading}
+                    disabled={disabled} />
+                <InputLoadingIcon
+                    loading={loading}
+                    disabled={disabled} />
+                <InputClearValue
+                    loading={loading}
+                    disabled={disabled}
+                    readonly={readonly}
+                    value={value} />
+                <InputSuffix>{suffix}</InputSuffix>
+            </Input>
+            { opened && popup &&
+                <Popup className="k-list-container k-autocomplete-popup">
+                    {popup}
+                </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        filter={true}
+                        title="Select Item">
+                    </ActionSheetHeader>
+                    <div className="k-list-container">
+                        <List size="large">
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                        </List>
+                    </div>
+                </ActionSheet>
+            }
+        </>
     );
 };
 
