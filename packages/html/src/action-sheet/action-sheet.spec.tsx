@@ -16,13 +16,15 @@ export type KendoActionSheetProps = {
     actions?: string[];
     fullscreen?: boolean;
     adaptive?: boolean;
+    overlay?: boolean;
     side?: 'top' | 'right' | 'bottom' | 'left';
 }
 
 const defaultProps = {
     side: 'bottom',
     fullscreen: false,
-    adaptive: false
+    adaptive: false,
+    overlay: true
 };
 
 // eslint-disable-next-line complexity
@@ -39,8 +41,10 @@ export const ActionSheet = (
         side = defaultProps.side,
         fullscreen = defaultProps.fullscreen,
         adaptive = defaultProps.adaptive,
+        overlay = defaultProps.overlay,
         ...other
     } = props;
+
 
     // eslint-disable-next-line no-nested-ternary
     const _ActionSheetHeader = title
@@ -77,7 +81,7 @@ export const ActionSheet = (
 
     return (
         <div className="k-actionsheet-container">
-            <div className="k-overlay"></div>
+            {overlay && <div className="k-overlay"></div>}
             <AnimationContainer
                 animationStyle={{
                     [`${ fullscreen === true ? 'top' : side }`]: 0,
