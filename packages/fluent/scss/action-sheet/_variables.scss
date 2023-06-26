@@ -179,6 +179,9 @@ $kendo-actionsheet-item-disabled-border: var( --kendo-disabled-border, inherit )
 
 // Adaptive Actionsheet
 
+/// Font size of the adaptive action sheet.
+$kendo-adaptive-actionsheet-font-size: $kendo-font-size-lg !default;
+
 /// Border width of the adaptive action sheet titlebar.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-header-border-width: 1px !default;
