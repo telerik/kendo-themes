@@ -5,7 +5,7 @@ import { DropdownList } from '../../dropdownlist';
 import { Icon } from '../../icon';
 import { MenuButton } from '../../menu-button';
 import { Toolbar, ToolbarSeparator } from '../../toolbar';
-import { MenuItem, MenuList } from '../../menu';
+import { MenuItem, MenuList, MenuSeparator } from '../../menu';
 
 const style = `
     .k-spreadsheet-view {
@@ -581,17 +581,17 @@ export default () => (
                     <MenuList>
                         <MenuItem text="Alignment" icon="align-left"></MenuItem>
                         <MenuItem text="Wrap text" icon="text-wrap"></MenuItem>
-                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuSeparator></MenuSeparator>
                         <MenuItem text="Decrease decimal" icon="decimal-decrease"></MenuItem>
                         <MenuItem text="Increase decimal" icon="decimal-increase"></MenuItem>
-                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuSeparator></MenuSeparator>
                         <MenuItem text="Filter" icon="filter"></MenuItem>
                         <MenuItem text="Custom format" icon="custom-format"></MenuItem>
                         <MenuItem text="Link" icon="link"></MenuItem>
-                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuSeparator></MenuSeparator>
                         <MenuItem text="Insert image" icon="image"></MenuItem>
                         <MenuItem text="Insert comment" icon="comment"></MenuItem>
-                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuSeparator></MenuSeparator>
                         <MenuItem text="Freeze panes" icon="pane-freeze"></MenuItem>
                         <MenuItem text="Merge cells" icon="cells-merge"></MenuItem>
                         <MenuItem text="Toggle gridlines" icon="borders-none"></MenuItem>

@@ -1,4 +1,5 @@
 import MenuItem from './menu-item.spec';
+import MenuSeparator from './menu-separator.spec';
 import { classNames, optionClassNames, Size } from '../misc';
 
 export const MENULIST_CLASSNAME = `k-menu-group`;
@@ -39,6 +40,10 @@ export const MenuList = (
                 if ( child.type === MenuItem) {
                     listChildren.push(
                         <MenuItem {...child.props} dir={dir} key={index} />
+                    );
+                } else if ( child.type === MenuSeparator ) {
+                    listChildren.push(
+                        <MenuSeparator />
                     );
                 } else {
                     listChildren.push(child);

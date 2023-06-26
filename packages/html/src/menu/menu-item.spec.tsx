@@ -76,7 +76,7 @@ export const MenuItem = (
             {...other}
             className={classNames(
                 props.className,
-                MENUITEM_CLASSNAME,
+                MENUITEM_CLASSNAME, //TODO
                 "k-item",
                 stateClassNames(MENUITEM_CLASSNAME, {
                     focus,
