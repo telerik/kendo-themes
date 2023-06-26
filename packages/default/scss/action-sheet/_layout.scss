@@ -230,6 +230,7 @@
     .k-adaptive-actionsheet {
         max-width: 100%;
         width: 100%;
+        font-size: $kendo-adaptive-actionsheet-font-size;
 
         // TMP: this should be moved to action sheet
         display: flex;
@@ -267,6 +268,12 @@
         .k-list-filter {
             width: 100%;
             padding-inline: 0;
+        }
+
+        .k-menu-group {
+            height: 100%;
+            overflow: auto;
+            position: static;
         }
 
         .k-calendar {
