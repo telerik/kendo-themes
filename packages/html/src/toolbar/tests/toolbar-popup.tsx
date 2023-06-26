@@ -1,4 +1,4 @@
-import { MenuItem, MenuList } from '../../menu';
+import { MenuItem, MenuSeparator, MenuList } from '../../menu';
 import { Popup } from '../../popup';
 
 
@@ -29,7 +29,7 @@ export default () =>(
                         <MenuItem text="Active" active></MenuItem>
                         <MenuItem text="Disabled" disabled></MenuItem>
                         <MenuItem text="Disabled focus" disabled focus></MenuItem>
-                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuSeparator></MenuSeparator>
                         <MenuItem text="Item after separator"></MenuItem>
                     </MenuList>
                 </Popup>
@@ -83,7 +83,7 @@ export default () =>(
                         <MenuItem text="Active" active></MenuItem>
                         <MenuItem text="Disabled" disabled></MenuItem>
                         <MenuItem text="Disabled focus" disabled focus></MenuItem>
-                        <div className="k-separator k-separator-horizontal"></div>
+                        <MenuSeparator></MenuSeparator>
                         <MenuItem text="Item after separator"></MenuItem>
                     </MenuList>
                 </Popup>
