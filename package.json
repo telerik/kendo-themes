@@ -21,7 +21,7 @@
     "husky": "^7.0.4",
     "lerna": "^5.5.2",
     "lint-staged": "^13.0.3",
-    "node-sass": "^8.0.0",
+    "node-sass": "^9.0.0",
     "nunjucks": "^3.2.3",
     "pastshots": "^1.6.2",
     "sass": "^1.54.9",
