@@ -9,8 +9,13 @@
 </head>
 <body id="app" class="k-body">
     <style>
+        #test-area {
+            --kendo-actionsheet-height: 500px;
+            --kendo-actionsheet-max-height: 500px;
+        }
         #test-area>section {
             height: 600px;
+            outline: 1px dotted;
             overflow: hidden;
             position: relative;
             transform: translateZ(0);
@@ -21,15 +26,25 @@
         <span>partial</span>
         <span>full screen</span>
         <section>
+            <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                    <span class="k-button-icon k-svg-icon k-svg-i-calendar">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 416H288V288h128v128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32zm-32 128H64v255.9l.1.1 383.9-.1V192zm0-127.9c-.1-.1-.1-.1 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384V64.1z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
             <div class="k-actionsheet-container">
                 <div class="k-overlay"></div>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
-                        <div class="k-adaptive-actionsheet k-actionsheet k-actionsheet-bottom">
-                            <div class="k-text-center k-actionsheet-titlebar">
+                        <div class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
                                 <div class="k-actionsheet-titlebar-group k-hbox">
                                     <div class="k-actionsheet-title">
-                                        <div class="k-text-center">Select dates</div>
+                                        <div class="k-text-center">Select Dates</div>
                                         <div class="k-actionsheet-subtitle k-text-center">DD / MM / YY</div>
                                     </div>
                                     <div class="k-actionsheet-actions">
@@ -43,7 +58,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="k-actionsheet-content">
+                            <div class="k-actionsheet-content !k-overflow-hidden">
                                 <div class="k-calendar k-calendar-lg">
                                     <div class="k-calendar-header">
                                         <button class="k-calendar-title k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md">
@@ -204,14 +219,6 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
-                                    <span class="k-button-text">Cancel</span>
-                                </button>
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
-                                    <span class="k-button-text">Select Date</span>
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -219,15 +226,25 @@
             </div>
         </section>
         <section>
+            <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                    <span class="k-button-icon k-svg-icon k-svg-i-calendar">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 416H288V288h128v128zm64-352v384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V64c0-17.6 14.4-32 32-32h64V0h64v32h128V0h64v32h64c17.6 0 32 14.4 32 32zm-32 128H64v255.9l.1.1 383.9-.1V192zm0-127.9c-.1-.1-.1-.1 0 0l-64-.1v32h-64V64H192v32h-64V64H64.1l-.1.1V160h384V64.1z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </span>
             <div class="k-actionsheet-container">
                 <div class="k-overlay"></div>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
-                        <div class="k-adaptive-actionsheet k-actionsheet k-actionsheet-fullscreen">
-                            <div class="k-text-center k-actionsheet-titlebar">
+                        <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
                                 <div class="k-actionsheet-titlebar-group k-hbox">
                                     <div class="k-actionsheet-title">
-                                        <div class="k-text-center">Select dates</div>
+                                        <div class="k-text-center">Select Dates</div>
                                         <div class="k-actionsheet-subtitle k-text-center">DD / MM / YY</div>
                                     </div>
                                     <div class="k-actionsheet-actions">
@@ -241,7 +258,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="k-actionsheet-content">
+                            <div class="k-actionsheet-content !k-overflow-hidden">
                                 <div class="k-calendar k-calendar-lg">
                                     <div class="k-calendar-header">
                                         <button class="k-calendar-title k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md">
@@ -402,14 +419,6 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
-                                    <span class="k-button-text">Cancel</span>
-                                </button>
-                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
-                                    <span class="k-button-text">Select Date</span>
-                                </button>
                             </div>
                         </div>
                     </div>
