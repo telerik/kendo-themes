@@ -1,5 +1,5 @@
-@import "../core/_index.scss";
-@import "../utils/_index.scss";
+// @import "../core/_index.scss";
+// @import "../utils/_index.scss";
 
 
 // Module meta
@@ -13,29 +13,28 @@ $_kendo-module-meta: (
 
 
 // Dependencies
-@import "../badge/_index.scss";
-@import "../icons/_index.scss";
+// @import "../badge/_index.scss";
+// @import "../icons/_index.scss";
 
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
+@import "@progress/kendo-theme-core/scss/components/button/index";
 @import "./_theme.scss";
 
 
 // Register
 @import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
+// @include module-register( $_kendo-module-meta... );
 
 
 // Expose
 @mixin kendo-button--styles() {
-    @include module-render( "button" ) {
-        @include kendo-button--layout();
+    // @include module-render( "button" ) {
+        @include kendo-button--core();
         @include kendo-button--theme();
-    }
+    // }
 }
 
-@if $kendo-auto-bootstrap {
+// @if $kendo-auto-bootstrap {
     @include kendo-button--styles();
-}
+// }

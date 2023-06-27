@@ -1,0 +1,27 @@
+@import "../../variables";
+// @import "../utils/_index.scss";
+
+// Module meta
+$_kendo-module-meta: (
+    name: "button",
+    dependencies: (
+        "badge",
+        "icon",
+    ),
+);
+
+// Dependencies
+// @import "../badge/_index.scss";
+// @import "../icons/_index.scss";
+
+// Component
+@import "./_variables.scss";
+@import "./_layout.scss";
+
+// Register
+@import "../../module-system/index.import.scss";
+
+// Expose
+@mixin kendo-button--core() {
+    @include kendo-button--layout();
+}

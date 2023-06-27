@@ -1,7 +1,7 @@
 @mixin kendo-button--layout-base() {
-
     // Button
     .k-button {
+        border-color: transparent;
         box-sizing: border-box;
         border-width: $kendo-button-border-width;
         border-style: solid;
@@ -32,7 +32,7 @@
 
         &:disabled,
         &.k-disabled {
-            @include disabled( $kendo-disabled-styling );
+            @include disabled($kendo-disabled-styling);
         }
 
         &::-moz-focus-inner {
@@ -48,7 +48,6 @@
         }
     }
 
-
     // Icon Button
     .k-icon-button {
         gap: 0;
@@ -58,7 +57,6 @@
         }
     }
 
-
     // Content
     .k-button-icon {
         color: inherit;
@@ -66,15 +64,15 @@
         position: relative;
     }
 
-    .k-button-text {}
-
+    .k-button-text {
+    }
 
     // Sizes
     @each $size, $size-props in $kendo-button-sizes {
-        $_padding-x: k-map-get( $size-props, padding-x );
-        $_padding-y: k-map-get( $size-props, padding-y );
-        $_font-size: k-map-get( $size-props, font-size );
-        $_line-height: k-map-get( $size-props, line-height );
+        $_padding-x: k-map-get($size-props, padding-x);
+        $_padding-y: k-map-get($size-props, padding-y);
+        $_font-size: k-map-get($size-props, font-size);
+        $_line-height: k-map-get($size-props, line-height);
 
         .k-button-#{$size} {
             padding-block: $_padding-y;
@@ -87,8 +85,8 @@
             padding: $_padding-y;
 
             .k-button-icon {
-                min-width: calc( #{$_font-size} * #{$_line-height} );
-                min-height: calc( #{$_font-size} * #{$_line-height} );
+                min-width: calc(#{$_font-size} * #{$_line-height});
+                min-height: calc(#{$_font-size} * #{$_line-height});
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
@@ -132,12 +130,10 @@
         }
     }
 
-
     // Button shape
     .k-button-square {
         aspect-ratio: 1;
     }
-
 
     // Button group
     .k-button-group {
@@ -155,7 +151,7 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         > .k-button + .k-button {
-            margin-inline-start: if( $kendo-button-border-width == 0, null, -$kendo-button-border-width );
+            margin-inline-start: if($kendo-button-border-width == 0, null, -$kendo-button-border-width);
         }
 
         > .k-button:hover,
@@ -200,7 +196,6 @@
         }
     }
 
-
     // Flat button
     .k-button-flat {
         border-color: transparent !important; // stylelint-disable-line declaration-no-important
@@ -225,15 +220,6 @@
         }
     }
 
-
-    // Outline button
-    .k-button-outline {
-        border-color: currentColor;
-        color: inherit;
-        background: none;
-    }
-
-
     // Link button
     .k-button-link {
         border-color: transparent;
@@ -247,7 +233,6 @@
         }
     }
 
-
     // Clear button
     .k-button-clear {
         border-color: transparent !important; // stylelint-disable-line declaration-no-important
@@ -256,12 +241,9 @@
         box-shadow: none !important; // stylelint-disable-line declaration-no-important
     }
 
-
-
-
     // Button overlay
     .k-button-overlay {
-        @include border-radius( inherit );
+        @include border-radius(inherit);
         content: "";
         background: currentColor;
         opacity: 0;
@@ -273,11 +255,11 @@
         top: -$kendo-button-border-width;
         bottom: -$kendo-button-border-width;
         z-index: 0;
-        transition: opacity .2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
     }
 
-
-    .k-button { // stylelint-disable-line
+    .k-button {
+        // stylelint-disable-line
 
         &::before {
             @extend .k-button-overlay !optional;
@@ -319,17 +301,14 @@
                 opacity: $kendo-flat-button-selected-opacity;
             }
         }
-
     }
 
-
-
-
     // Button focus ring
-    .k-button { // stylelint-disable-line
+    .k-button {
+        // stylelint-disable-line
 
         &::after {
-            @include border-radius( inherit );
+            @include border-radius(inherit);
             content: "";
             opacity: 0;
             display: none;
@@ -340,12 +319,10 @@
             top: -$kendo-button-border-width;
             bottom: -$kendo-button-border-width;
             z-index: 0;
-            transition: opacity .2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
         }
     }
-
 }
-
 
 @mixin kendo-button--layout() {
     @include kendo-button--layout-base();

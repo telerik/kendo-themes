@@ -1,7 +1,5 @@
 @import "./core/functions/index.import.scss";
-
-$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
-$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+@import "./colors/swatch";
 
 // Options
 $kendo-enable-rounded: true !default;
@@ -16,7 +14,6 @@ $kendo-use-input-spinner-width: true !default;
 $kendo-use-input-spinner-icon-offset: false !default;
 
 $kendo-auto-bootstrap: true !default;
-
 
 // Spacing
 $kendo-spacing: (
@@ -53,37 +50,36 @@ $kendo-spacing: (
     21: 84px,
     22: 88px,
     23: 92px,
-    24: 96px
+    24: 96px,
 ) !default;
-
 
 /// Icon size.
 /// @group common
 $kendo-icon-size: 16px !default;
 /// xtra small icon size.
 /// @group common
-$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
+$kendo-icon-size-xs: calc(#{$kendo-icon-size} * 0.75) !default;
 /// Small icon size.
 /// @group common
-$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
+$kendo-icon-size-sm: calc(#{$kendo-icon-size} * 0.875) !default;
 /// Medium icon size.
 /// @group common
 $kendo-icon-size-md: $kendo-icon-size !default;
 /// Large icon size.
 /// @group common
-$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
+$kendo-icon-size-lg: calc(#{$kendo-icon-size} * 1.25) !default;
 /// Extra large icon size.
 /// @group common
-$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
+$kendo-icon-size-xl: calc(#{$kendo-icon-size} * 1.5) !default;
 /// Double extra large icon size.
 /// @group common
-$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
+$kendo-icon-size-xxl: calc(#{$kendo-icon-size} * 2) !default;
 /// Triple extra large icon size.
 /// @group common
-$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
+$kendo-icon-size-xxxl: calc(#{$kendo-icon-size} * 3) !default;
 
-$kendo-icon-spacing: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-icon-spacing: k-map-get($kendo-spacing, 1) !default;
+$kendo-icon-padding: k-map-get($kendo-spacing, 1) !default;
 
 /// Horizontal padding.
 /// @group common
@@ -93,35 +89,35 @@ $kendo-padding-x: 8px !default;
 $kendo-padding-y: 4px !default;
 /// Small horizontal padding.
 /// @group common
-$kendo-padding-sm-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-padding-sm-x: k-map-get($kendo-spacing, 1) !default;
 /// Small vertical padding.
 /// @group common
-$kendo-padding-sm-y: k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-padding-sm-y: k-map-get($kendo-spacing, 0.5) !default;
 /// Medium horizontal padding.
 /// @group common
-$kendo-padding-md-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-padding-md-x: k-map-get($kendo-spacing, 2) !default;
 /// Medium vertical padding.
 /// @group common
-$kendo-padding-md-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-padding-md-y: k-map-get($kendo-spacing, 1) !default;
 /// Large horizontal padding.
 /// @group common
-$kendo-padding-lg-x: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-padding-lg-x: k-map-get($kendo-spacing, 3) !default;
 /// Large vertical padding.
 /// @group common
-$kendo-padding-lg-y: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-padding-lg-y: k-map-get($kendo-spacing, 1.5) !default;
 
 /// Border radius for all components.
 /// @group common
-$kendo-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-border-radius: k-map-get($kendo-spacing, 1) !default;
 /// Small border radius.
 /// @group common
-$kendo-border-radius-sm: $kendo-border-radius - k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-border-radius-sm: $kendo-border-radius - k-map-get($kendo-spacing, 0.5) !default;
 /// Medium border radius.
 /// @group common
 $kendo-border-radius-md: $kendo-border-radius !default;
 /// Large border radius.
 /// @group common
-$kendo-border-radius-lg: $kendo-border-radius + k-map-get( $kendo-spacing, 0.5 ) !default;
+$kendo-border-radius-lg: $kendo-border-radius + k-map-get($kendo-spacing, 0.5) !default;
 
 $kendo-border-radii: (
     DEFAULT: $kendo-border-radius-md,
@@ -129,115 +125,19 @@ $kendo-border-radii: (
     sm: $kendo-border-radius-sm,
     md: $kendo-border-radius-md,
     lg: $kendo-border-radius-lg,
-    full: 9999px
+    full: 9999px,
 ) !default;
-
 
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
 $kendo-zindex-loading: 100 !default;
 
-
 // Color settings
 $kendo-is-dark-theme: false !default;
 
-// Theme colors
-/// The color that focuses the user attention.
-/// Used for primary buttons and for elements of primary importance across the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-primary: #ff6358 !default;
-$kendo-color-primary-lighter: k-color-tint( $kendo-color-primary, 2 ) !default;
-$kendo-color-primary-darker: k-color-shade( $kendo-color-primary, 2 ) !default;
-
-/// The color used along with the primary color denoted by $kendo-color-primary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-primary-contrast: k-contrast-legacy( $kendo-color-primary ) !default;
-
-/// The secondary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary: #666666 !default;
-$kendo-color-secondary-lighter: k-color-tint( $kendo-color-secondary, 2 ) !default;
-$kendo-color-secondary-darker: k-color-shade( $kendo-color-secondary, 2 ) !default;
-
-/// The color used along with the secondary color denoted by $kendo-color-secondary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary-contrast: k-contrast-legacy( $kendo-color-secondary ) !default;
-
-/// The tertiary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary: #03a9f4 !default;
-$kendo-color-tertiary-lighter: k-color-tint( $kendo-color-tertiary, 2 ) !default;
-$kendo-color-tertiary-darker: k-color-shade( $kendo-color-tertiary, 2 ) !default;
-
-/// The color used along with the tertiary color denoted by $kendo-color-tertiary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary-contrast: k-contrast-legacy( $kendo-color-tertiary ) !default;
-
-/// The color for informational messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-info: #0058e9 !default;
-$kendo-color-info-lighter: k-color-tint( $kendo-color-info, 2 ) !default;
-$kendo-color-info-darker: k-color-shade( $kendo-color-info, 2 ) !default;
-
-/// The color for success messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-success: #37b400 !default;
-$kendo-color-success-lighter: k-color-tint( $kendo-color-success, 2 ) !default;
-$kendo-color-success-darker: k-color-shade( $kendo-color-success, 2 ) !default;
-
-/// The color for warning messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-warning: #ffc000 !default;
-$kendo-color-warning-lighter: k-color-tint( $kendo-color-warning, 2 ) !default;
-$kendo-color-warning-darker: k-color-shade( $kendo-color-warning, 2 ) !default;
-
-/// The color for error messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-error: #f31700 !default;
-$kendo-color-error-lighter: k-color-tint( $kendo-color-error, 2 ) !default;
-$kendo-color-error-darker: k-color-shade( $kendo-color-error, 2 ) !default;
-
-/// The dark color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-dark: #424242 !default;
-
-/// The light color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-light: #ebebeb !default;
-
 /// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
-$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
-
-
-$kendo-theme-colors: (
-    "primary": $kendo-color-primary,
-    "secondary": $kendo-color-secondary,
-    "tertiary": $kendo-color-tertiary,
-    "info": $kendo-color-info,
-    "success": $kendo-color-success,
-    "warning": $kendo-color-warning,
-    "error": $kendo-color-error,
-    "dark": $kendo-color-dark,
-    "light": $kendo-color-light,
-    "inverse": $kendo-color-inverse
-) !default;
-
+$kendo-color-inverse: #000; //if($kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark) !default;
 
 // Typography
 
@@ -265,7 +165,7 @@ $kendo-font-sizes: (
     sm: $kendo-font-size-sm,
     md: $kendo-font-size-md,
     lg: $kendo-font-size-lg,
-    xl: $kendo-font-size-xl
+    xl: $kendo-font-size-xl,
 ) !default;
 
 /// Font family for text.
@@ -282,7 +182,7 @@ $kendo-font-family: inherit !default;
 
 /// Line height used along with $kendo-font-size.
 /// @group typography
-$kendo-line-height: k-math-div( 20, 14 ) !default;
+$kendo-line-height: k-math-div(20, 14) !default;
 /// Extra small line height used along with $kendo-font-size-xs.
 /// @group typography
 $kendo-line-height-xs: 1 !default;
@@ -295,7 +195,7 @@ $kendo-line-height-md: $kendo-line-height !default;
 /// Large line height used along with $kendo-font-size-lg.
 /// @group typography
 $kendo-line-height-lg: 1.5 !default;
-$kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
+$kendo-line-height-em: calc(#{$kendo-line-height} * 1em) !default;
 
 /// Light font weight.
 /// @group typography
@@ -317,32 +217,30 @@ $kendo-font-weight-bold: 700 !default;
 /// @group typography
 $kendo-letter-spacing: null !default;
 
-
 // Generic styles
 
 /// Background color of the body.
 /// @group common
-$kendo-body-bg: $kendo-color-white !default;
+// $kendo-body-bg: $kendo-color-white !default;
 /// Text color of the body.
 /// @group common
-$kendo-body-text: #424242 !default;
+// $kendo-body-text: #424242 !default;
 
 /// Subtle text color.
 /// @group common
-$kendo-subtle-text: #666666 !default;
+// $kendo-subtle-text: #666666 !default;
 
-$kendo-app-bg: k-try-shade( $kendo-body-bg, .25 ) !default;
-$kendo-app-text: $kendo-body-text !default;
-$kendo-app-border: rgba( $kendo-color-black, .08 ) !default;
+// $kendo-app-bg: k-try-shade($kendo-body-bg, 0.25) !default;
+// $kendo-app-text: $kendo-body-text !default;
+// $kendo-app-border: rgba($kendo-color-black, 0.08) !default;
 
 // Link
 /// Text color of the links.
 /// @group common
-$kendo-link-text: $kendo-color-primary !default;
+// $kendo-link-text: $kendo-color-primary !default;
 /// Text color of the links on hover.
 /// @group common
-$kendo-link-hover-text: $kendo-color-primary-darker !default;
-
+// $kendo-link-hover-text: $kendo-color-primary-darker !default;
 
 // Components
 
@@ -350,103 +248,90 @@ $kendo-link-hover-text: $kendo-color-primary-darker !default;
 /// Background color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.
 /// @group component
-$kendo-component-bg: $kendo-body-bg !default;
+// $kendo-component-bg: $kendo-body-bg !default;
 /// Text color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.
 /// @group component
-$kendo-component-text: $kendo-body-text !default;
+// $kendo-component-text: $kendo-body-text !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.
 /// @group component
-$kendo-component-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
-
-
-/// The background of the components' chrome area.
-$kendo-base-bg: #fafafa !default;
-/// The text color of the components' chrome area.
-$kendo-base-text: $kendo-body-text !default;
-/// The border color of the components' chrome area.
-$kendo-base-border: rgba( black, .08 ) !default;
-/// The gradient background of the components' chrome area.
-$kendo-base-gradient: rgba( black, 0 ), rgba( black, .02 ) !default;
+// $kendo-component-border: rgba(if($kendo-is-dark-theme, $kendo-color-white, $kendo-color-black), 0.08) !default;
 
 /// The background of hovered items.
-$kendo-hover-bg: k-try-shade( $kendo-base-bg, .5 ) !default;
-/// The text color of hovered items.
-$kendo-hover-text: $kendo-base-text !default;
-/// The border color of hovered items.
-$kendo-hover-border: $kendo-base-border !default;
-/// The gradient background of hovered items.
-$kendo-hover-gradient: $kendo-base-gradient !default;
+// $kendo-hover-bg: k-try-shade($kendo-base-bg, 0.5) !default;
+// /// The text color of hovered items.
+// $kendo-hover-text: $kendo-base-text !default;
+// /// The border color of hovered items.
+// $kendo-hover-border: $kendo-base-border !default;
+// /// The gradient background of hovered items.
+// $kendo-hover-gradient: $kendo-base-gradient !default;
 
 /// The background of selected items.
-$kendo-selected-bg: $kendo-color-primary !default;
-/// The text color of selected items.
-$kendo-selected-text: k-contrast-legacy( $kendo-selected-bg ) !default;
-/// The border color of selected items.
-$kendo-selected-border: $kendo-base-border !default;
-/// The gradient background of selected items.
-$kendo-selected-gradient: $kendo-base-gradient !default;
+// $kendo-selected-bg: $kendo-color-primary !default;
+// /// The text color of selected items.
+// $kendo-selected-text: k-contrast-legacy($kendo-selected-bg) !default;
+// /// The border color of selected items.
+// $kendo-selected-border: $kendo-base-border !default;
+// /// The gradient background of selected items.
+// $kendo-selected-gradient: $kendo-base-gradient !default;
 
-/// The background of selected and hovered items.
-$kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
-/// The text color of selected and hovered items.
-$kendo-selected-hover-text: $kendo-selected-text !default;
-/// The border of selected and hovered items.
-$kendo-selected-hover-border: $kendo-base-border !default;
-/// The gradient of selected and hovered items.
-$kendo-selected-hover-gradient: $kendo-base-gradient !default;
+// /// The background of selected and hovered items.
+// $kendo-selected-hover-bg: k-try-shade($kendo-selected-bg, 0.5) !default;
+// /// The text color of selected and hovered items.
+// $kendo-selected-hover-text: $kendo-selected-text !default;
+// /// The border of selected and hovered items.
+// $kendo-selected-hover-border: $kendo-base-border !default;
+// /// The gradient of selected and hovered items.
+// $kendo-selected-hover-gradient: $kendo-base-gradient !default;
 
 // TODO: refactor
 /// Box shadow of focused items.
-$kendo-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
+// $kendo-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.13) !default;
 
 /// Transition used across all components.
-$kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
-
+$kendo-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !default;
 
 /// Text color of disabled items.
 $kendo-disabled-text: #8f8f8f !default;
 /// Filter used for disabled items.
-$kendo-disabled-filter: grayscale(.1) !default;
+$kendo-disabled-filter: grayscale(0.1) !default;
 /// Opacity used for disabled items.
-$kendo-disabled-opacity: .6 !default;
+$kendo-disabled-opacity: 0.6 !default;
 
 $kendo-disabled-styling: (
     opacity: $kendo-disabled-opacity,
-    filter: $kendo-disabled-filter
+    filter: $kendo-disabled-filter,
 ) !default;
-
 
 // Generic styles
 
 /// Background color of the component header.
 /// @group component
-$kendo-component-header-bg: $kendo-base-bg !default;
-/// Text color of the component header.
-/// @group component
-$kendo-component-header-text: $kendo-base-text !default;
-/// Border color of the component header.
-/// @group component
-$kendo-component-header-border: $kendo-base-border !default;
-/// Gradient of the component header.
-/// @group component
-$kendo-component-header-gradient: null !default;
-
+// $kendo-component-header-bg: $kendo-base-bg !default;
+// /// Text color of the component header.
+// /// @group component
+// $kendo-component-header-text: $kendo-base-text !default;
+// /// Border color of the component header.
+// /// @group component
+// $kendo-component-header-border: $kendo-base-border !default;
+// /// Gradient of the component header.
+// /// @group component
+// $kendo-component-header-gradient: null !default;
 
 /// Background color of the invalid items.
 /// @group component
-$kendo-invalid-bg: null !default;
-/// Text color of the invalid items.
-/// @group component
-$kendo-invalid-text: $kendo-color-error !default;
-/// Border color of the invalid items.
-/// @group component
-$kendo-invalid-border: $kendo-color-error !default;
-/// Shadow of the invalid items.
-/// @group component
-$kendo-invalid-shadow: null !default;
+// $kendo-invalid-bg: null !default;
+// /// Text color of the invalid items.
+// /// @group component
+// $kendo-invalid-text: $kendo-color-error !default;
+// /// Border color of the invalid items.
+// /// @group component
+// $kendo-invalid-border: $kendo-color-error !default;
+// /// Shadow of the invalid items.
+// /// @group component
+// $kendo-invalid-shadow: null !default;
 
 // Loading
-$kendo-loading-opacity: .3 !default;
+$kendo-loading-opacity: 0.3 !default;
 $kendo-zindex-loading: 100 !default;

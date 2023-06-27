@@ -1,284 +1,139 @@
-@mixin kendo-button--theme-base() {
-
+@mixin kendo-button--theme() {
     // Solid button
     .k-button-solid-base {
-        @include fill(
-            $kendo-button-text,
-            $kendo-button-bg,
-            $kendo-button-border,
-            $kendo-button-gradient
-        );
-        @include box-shadow( $kendo-button-shadow );
+        @include fill(k-map-get($kendo-palette-neutral, 12), k-map-get($kendo-palette-neutral, 2), k-map-get($kendo-palette-neutral, 5));
 
         // Hover state
         &:hover,
         &.k-hover {
-            @include fill(
-                $kendo-button-hover-text,
-                $kendo-button-hover-bg,
-                $kendo-button-hover-border,
-                $kendo-button-hover-gradient
-            );
-            @include box-shadow( $kendo-button-hover-shadow );
+            @include fill(k-map-get($kendo-palette-neutral, 12), k-map-get($kendo-palette-neutral, 3), k-map-get($kendo-palette-neutral, 5));
         }
 
         // Focus state
         &:focus,
         &.k-focus {
-            @include focus-indicator( $kendo-button-focus-shadow, true, true );
+            // TODO: elevation?
+            @include focus-indicator(0px 0px 0px 2px #{rgba(k-map-get($kendo-palette-neutral, 16), 0.08)}, true, true);
         }
 
         // Active state
         &:active,
         &.k-active {
-            @include fill(
-                $kendo-button-active-text,
-                $kendo-button-active-bg,
-                $kendo-button-active-border,
-                $kendo-button-active-gradient
-            );
-            @include box-shadow( $kendo-button-active-shadow );
+            @include fill(k-map-get($kendo-palette-neutral, 12), k-map-get($kendo-palette-neutral, 5), k-map-get($kendo-palette-neutral, 5));
         }
 
         // Selected state
         &.k-selected {
-            @include fill(
-                $kendo-button-selected-text,
-                $kendo-button-selected-bg,
-                $kendo-button-selected-border,
-                $kendo-button-selected-gradient
-            );
-            @include box-shadow( $kendo-button-selected-shadow );
-        }
-
-        // Disabled state
-        &:disabled,
-        &.k-disabled {
-            @include fill(
-                $kendo-button-disabled-text,
-                $kendo-button-disabled-bg,
-                $kendo-button-disabled-border,
-                $kendo-button-disabled-gradient
-            );
-            @include box-shadow( $kendo-button-disabled-shadow );
+            @include fill(k-map-get($kendo-palette-neutral, 0), k-map-get($kendo-palette-primary, 9), k-map-get($kendo-palette-primary, 9));
         }
     }
 
-    $_shade-fn: k-meta-get-function( $kendo-solid-button-shade-function );
+    .k-button-outline-base {
+        @include box-shadow(none);
+        $accent: k-map-get($kendo-palette-neutral, 12);
 
-    @each $name, $color in $kendo-button-theme-colors {
-        @if ($name != "base") {
-            $_button-text: k-contrast-legacy( $color );
-            $_button-bg: if( $kendo-solid-button-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null );
-            $_button-border: if( $kendo-solid-button-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null );
+        border-color: currentColor;
+        color: $accent;
+        background-color: transparent;
 
-            $_button-hover-text: null;
-            $_button-hover-bg: if( $kendo-solid-button-hover-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-bg-amount ), null );
-            $_button-hover-border: if( $kendo-solid-button-hover-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-border-amount ), null );
+        // Hover state
+        &:hover,
+        &.k-hover {
+            @include fill(k-map-get($kendo-palette-neutral, 0), $accent, $accent);
+        }
 
-            $_button-active-text: null;
-            $_button-active-bg: if( $kendo-solid-button-active-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-bg-amount ), null );
-            $_button-active-border: if( $kendo-solid-button-active-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-border-amount ), null );
+        // Focus state
+        &:focus,
+        &.k-focus {
+            // TODO: elevation?
+            @include focus-indicator(0px 0px 0px 2px #{rgba(k-map-get($kendo-palette-neutral, 16), 0.08)}, true, true);
+        }
 
-            .k-button-solid-#{$name} {
-                @include fill(
-                    $_button-text,
-                    $_button-bg,
-                    $_button-border,
-                    $kendo-solid-button-gradient
-                );
+        // Active state
+        &:active,
+        &.k-active {
+            @include fill(k-map-get($kendo-palette-neutral, 0), $accent, $accent);
+        }
 
-                // Hover state
-                &:hover,
-                &.k-hover {
-                    @include fill(
-                        $_button-hover-text,
-                        $_button-hover-bg,
-                        $_button-hover-border
-                    );
-                }
-
-                // Focus state
-                &:focus,
-                &.k-focus {
-                    @if ( $kendo-solid-button-shadow ) {
-                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread rgba( $_button-border, $kendo-solid-button-shadow-opacity ), true, true );
-                    }
-                }
-
-                // Active state
-                &:active,
-                &.k-active {
-                    @include fill(
-                        $_button-active-text,
-                        $_button-active-bg,
-                        $_button-active-border
-                    );
-                }
-
-                // Selected
-                &.k-selected {
-                    @include fill(
-                        $_button-active-text,
-                        $_button-active-bg,
-                        $_button-active-border
-                    );
-                }
-
-                // Disabled state
-                &:disabled,
-                &.k-disabled {
-                    @include fill(
-                        $kendo-button-disabled-text,
-                        $kendo-button-disabled-bg,
-                        $kendo-button-disabled-border,
-                        $kendo-button-disabled-gradient
-                    );
-                    @include box-shadow( $kendo-button-disabled-shadow );
-                }
-            }
+        // Selected state
+        &.k-selected {
+            @include fill(k-map-get($kendo-palette-neutral, 0), $accent, $accent);
         }
     }
 
+    .k-button-flat-base {
+        .k-button-flat-base {
+            color: k-map-get($kendo-palette-neutral, 12);
+        }
+    }
 
-    // Outline button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
-        .k-button-outline-#{$name} {
-            @include box-shadow( none );
-            border-color: currentColor;
-            color: $color;
-            background-color: transparent;
+    @each $name, $palette in $kendo-theme-palettes {
+        .k-button-solid-#{$name} {
+            @include fill(k-map-get($kendo-palette-neutral, 0), k-map-get($palette, 9), k-map-get($palette, 9));
 
             // Hover state
             &:hover,
             &.k-hover {
-                @include fill(
-                    k-contrast-legacy( $color ),
-                    $color,
-                    $color
-                );
+                @include fill(k-map-get($kendo-palette-neutral, 0), k-map-get($palette, 10), k-map-get($palette, 10));
             }
 
             // Focus state
             &:focus,
             &.k-focus {
-                @if $kendo-outline-button-shadow {
-                    @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread rgba( $color, $kendo-outline-button-shadow-opacity ), true, true );
-                }
+                // TODO: elevation?
+                @include focus-indicator(0px 0px 0px 2px #{rgba(k-map-get($palette, 9), 0.3)}, true, true);
             }
 
             // Active state
             &:active,
             &.k-active {
-                @include fill(
-                    k-contrast-legacy( $color ),
-                    $color,
-                    $color
-                );
+                @include fill(k-map-get($kendo-palette-neutral, 0), k-map-get($palette, 11), k-map-get($palette, 11));
             }
 
-            // Selected
+            // Selected state
             &.k-selected {
-                @include fill(
-                    k-contrast-legacy( $color ),
-                    $color,
-                    $color
-                );
-            }
-
-            // Disabled state
-            &:disabled,
-            &.k-disabled {
-                color: $kendo-button-disabled-text;
+                @include fill(k-map-get($kendo-palette-neutral, 0), k-map-get($palette, 12), k-map-get($palette, 12));
             }
         }
-    }
 
+        .k-button-outline-#{$name} {
+            $accent: k-map-get($palette, 9);
 
-    // Flat button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
-        .k-button-flat-#{$name} {
-            color: $color;
+            border-color: currentColor;
+            color: $accent;
+            background-color: transparent;
 
-            // Disabled state
-            &:disabled,
-            &.k-disabled {
-                color: $kendo-button-disabled-text;
-            }
-        }
-    }
-
-
-    // Link button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
-        .k-button-link-#{$name} {
-            color: $color;
-
-            // Hover
+            // Hover state
             &:hover,
             &.k-hover {
-                color: k-try-shade( $color, 2 );
+                @include fill(k-map-get($kendo-palette-neutral, 0), $accent, $accent);
             }
 
-            // Focus
+            // Focus state
             &:focus,
             &.k-focus {
-                @if ( $kendo-link-button-shadow ) {
-                    @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread rgba( $color, $kendo-link-button-shadow-opacity ), true, true );
-                }
+                // TODO: elevation?
+                @include focus-indicator(0px 0px 0px 2px #{rgba($accent, 0.3)}, true, true);
             }
 
-            // Active
+            // Active state
             &:active,
             &.k-active {
-                color: k-try-shade( $color, 2 );
+                @include fill(k-map-get($kendo-palette-neutral, 0), $accent, $accent);
             }
 
-            // Selected
+            // Selected state
             &.k-selected {
-                color: k-try-shade( $color, 2 );
-            }
-
-            // Disabled state
-            &:disabled,
-            &.k-disabled {
-                color: $kendo-button-disabled-text;
+                @include fill(k-map-get($kendo-palette-neutral, 0), $accent, $accent);
             }
         }
-    }
 
-
-    // Clear button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
-        .k-button-clear-#{$name} {
-            color: $color;
-
-            &:focus,
-            &.k-focus,
-            &:active {
-                &::after {
-                    background-color: currentColor;
-                    opacity: $kendo-clear-button-focus-opacity;
-                    display: block;
-                }
-            }
-
-            // Disabled state
-            &:disabled,
-            &.k-disabled {
-                color: $kendo-button-disabled-text;
-            }
+        .k-button-flat-#{$name} {
+            color: k-map-get($palette, 9);
         }
     }
-
 
     // Button group
-    .k-button-group {}
-
-
-}
-
-
-@mixin kendo-button--theme() {
-    @include kendo-button--theme-base();
+    .k-button-group {
+    }
 }

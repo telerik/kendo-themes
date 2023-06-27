@@ -1,20 +1,33 @@
 $kendo-prefix: k- !default;
 $kendo-important: true !default;
 
-$kendo-theme-colors: () !default;
+$kendo-utils-theme-colors: () !default;
+
+$kendo-utils-theme-colors: (
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse,
+);
 
 $kendo-font-sizes: () !default;
 
 $kendo-spacing: (
     0: 0,
     1px: 1px,
-    0.5: .125rem,
-    1: .25rem,
-    1.5: .375rem,
-    2: .5rem,
-    2.5: .625rem,
-    3: .75rem,
-    3.5: .875rem,
+    0.5: 0.125rem,
+    1: 0.25rem,
+    1.5: 0.375rem,
+    2: 0.5rem,
+    2.5: 0.625rem,
+    3: 0.75rem,
+    3.5: 0.875rem,
     4: 1rem,
     4.5: 1.125rem,
     5: 1.25rem,
@@ -39,64 +52,67 @@ $kendo-spacing: (
     21: 5.25rem,
     22: 5.5rem,
     23: 5.75rem,
-    24: 6rem
+    24: 6rem,
 ) !default;
 
-$kendo-sizing: k-map-merge( $kendo-spacing, (
-    "auto": auto,
-    "1/2": 50%,
-    "1/3": 33.333333%,
-    "2/3": 66.666667%,
-    "1/4": 25%,
-    "2/4": 50%,
-    "3/4": 75%,
-    "1/5": 20%,
-    "2/5": 40%,
-    "3/5": 60%,
-    "4/5": 80%,
-    "1/6": 16.666667%,
-    "2/6": 33.333333%,
-    "3/6": 50%,
-    "4/6": 66.666667%,
-    "5/6": 83.333333%,
-    "1/12": 8.333333%,
-    "2/12": 16.666667%,
-    "3/12": 25%,
-    "4/12": 33.333333%,
-    "5/12": 41.666667%,
-    "6/12": 50%,
-    "7/12": 58.333333%,
-    "8/12": 66.666667%,
-    "9/12": 75%,
-    "10/12": 83.333333%,
-    "11/12": 91.666667%,
-    "full": 100%,
-    "min": min-content,
-    "max": max-content,
-    "fit": fit-content
-)) !default;
+$kendo-sizing: k-map-merge(
+    $kendo-spacing,
+    (
+        "auto": auto,
+        "1/2": 50%,
+        "1/3": 33.333333%,
+        "2/3": 66.666667%,
+        "1/4": 25%,
+        "2/4": 50%,
+        "3/4": 75%,
+        "1/5": 20%,
+        "2/5": 40%,
+        "3/5": 60%,
+        "4/5": 80%,
+        "1/6": 16.666667%,
+        "2/6": 33.333333%,
+        "3/6": 50%,
+        "4/6": 66.666667%,
+        "5/6": 83.333333%,
+        "1/12": 8.333333%,
+        "2/12": 16.666667%,
+        "3/12": 25%,
+        "4/12": 33.333333%,
+        "5/12": 41.666667%,
+        "6/12": 50%,
+        "7/12": 58.333333%,
+        "8/12": 66.666667%,
+        "9/12": 75%,
+        "10/12": 83.333333%,
+        "11/12": 91.666667%,
+        "full": 100%,
+        "min": min-content,
+        "max": max-content,
+        "fit": fit-content,
+    )
+) !default;
 
 $kendo-border-radii: (
-    DEFAULT: .25rem,
+    DEFAULT: 0.25rem,
     0: 0,
-    sm: .125rem,
-    md: .25rem,
-    lg: .5rem,
-    full: 9999px
+    sm: 0.125rem,
+    md: 0.25rem,
+    lg: 0.5rem,
+    full: 9999px,
 ) !default;
 
 $kendo-utils: (
-
     // Accessibility
     "screen-readers": true,
 
     // Layout
-    "aspect-ratio": (
-        auto: auto,
-        1: 1,
-        square: k-string-unquote("1 / 1"),
-        video: k-string-unquote("16 / 9")
-    ),
+    "aspect-ratio":
+        (
+            auto: auto,
+            1: 1,
+            square: k-string-unquote("1 / 1"),
+            video: k-string-unquote("16 / 9"),
+        ),
     "container": (),
     "columns": (
         1: 1,
@@ -111,7 +127,7 @@ $kendo-utils: (
         10: 10,
         11: 11,
         12: 12,
-        auto: auto
+        auto: auto,
     ),
     "break-after": (),
     "break-before": (),
@@ -119,44 +135,13 @@ $kendo-utils: (
     "box-decoration-break": (),
     "box-sizing": (
         border: border-box,
-        content: content-box
+        content: content-box,
     ),
-    "display": (
-        none,
-        contents,
-        block,
-        inline,
-        inline-block,
-        flex,
-        inline-flex,
-        grid,
-        inline-grid,
-        table,
-        inline-table,
-        table-row,
-        table-cell,
-        list-item
-    ),
-    "float": (
-        left,
-        right,
-        none
-    ),
-    "clear": (
-        left,
-        right,
-        both,
-        none
-    ),
+    "display": (none, contents, block, inline, inline-block, flex, inline-flex, grid, inline-grid, table, inline-table, table-row, table-cell, list-item),
+    "float": (left, right, none),
+    "clear": (left, right, both, none),
     "isolation": (),
-    "object-fit": (
-        contain,
-        cover,
-        fill,
-        scale-down,
-        initial,
-        none
-    ),
+    "object-fit": (contain, cover, fill, scale-down, initial, none),
     "object-position": (
         center: center,
         top: top,
@@ -166,35 +151,27 @@ $kendo-utils: (
         top-left: top left,
         top-right: top right,
         bottom-left: bottom left,
-        bottom-right: bottom right
+        bottom-right: bottom right,
     ),
     "overflow": (
         auto: auto,
         hidden: hidden,
         visible: visible,
         scroll: scroll,
-        clip: clip
+        clip: clip,
     ),
     "overscroll": (),
-    "placement": k-map-merge( $kendo-spacing, (
-        -1: -1px
-    )),
-    "position": (
-        static,
-        relative,
-        absolute,
-        fixed,
-        sticky
-    ),
+    "placement": k-map-merge($kendo-spacing, (-1: -1px)),
+    "position": (static, relative, absolute, fixed, sticky),
     "inset": (
         0: 0,
         1: 1px,
-        -1: -1px
+        -1: -1px,
     ),
     "visibility": (
         visible: visible,
         invisible: hidden,
-        collapse: collapse
+        collapse: collapse,
     ),
     "zindex": (
         0: 0,
@@ -203,34 +180,31 @@ $kendo-utils: (
         30: 30,
         40: 40,
         50: 50,
-        auto: auto
+        auto: auto,
     ),
 
     // Flex / Grid
-    "flex-direction": (
-        row: row,
-        row-reverse: row-reverse,
-        col: column,
-        col-reverse: column-reverse
-    ),
-    "flex-wrap": (
-        wrap,
-        wrap-reverse,
-        nowrap
-    ),
+    "flex-direction":
+        (
+            row: row,
+            row-reverse: row-reverse,
+            col: column,
+            col-reverse: column-reverse,
+        ),
+    "flex-wrap": (wrap, wrap-reverse, nowrap),
     "flex": (
         1: 1 1 0%,
         auto: 1 1 auto,
         initial: 0 1 auto,
-        none: none
+        none: none,
     ),
     "flex-grow": (
         DEFAULT: 1,
-        0: 0
+        0: 0,
     ),
     "flex-shrink": (
         DEFAULT: 1,
-        0: 0
+        0: 0,
     ),
     "flex-basis": $kendo-sizing,
     "order": (
@@ -248,37 +222,37 @@ $kendo-utils: (
         12: 12,
         first: -9999,
         last: 9999,
-        none: 0
+        none: 0,
     ),
     "grid-template-columns": (
-        1: repeat( 1, minmax( 0, 1fr ) ),
-        2: repeat( 2, minmax( 0, 1fr ) ),
-        3: repeat( 3, minmax( 0, 1fr ) ),
-        4: repeat( 4, minmax( 0, 1fr ) ),
-        5: repeat( 5, minmax( 0, 1fr ) ),
-        6: repeat( 6, minmax( 0, 1fr ) ),
-        7: repeat( 7, minmax( 0, 1fr ) ),
-        8: repeat( 8, minmax( 0, 1fr ) ),
-        9: repeat( 9, minmax( 0, 1fr ) ),
-        10: repeat( 10, minmax( 0, 1fr ) ),
-        11: repeat( 11, minmax( 0, 1fr ) ),
-        12: repeat( 12, minmax( 0, 1fr ) ),
-        none: none
+        1: repeat(1, minmax(0, 1fr)),
+        2: repeat(2, minmax(0, 1fr)),
+        3: repeat(3, minmax(0, 1fr)),
+        4: repeat(4, minmax(0, 1fr)),
+        5: repeat(5, minmax(0, 1fr)),
+        6: repeat(6, minmax(0, 1fr)),
+        7: repeat(7, minmax(0, 1fr)),
+        8: repeat(8, minmax(0, 1fr)),
+        9: repeat(9, minmax(0, 1fr)),
+        10: repeat(10, minmax(0, 1fr)),
+        11: repeat(11, minmax(0, 1fr)),
+        12: repeat(12, minmax(0, 1fr)),
+        none: none,
     ),
     "grid-template-rows": (
-        1: repeat( 1, minmax( 0, 1fr ) ),
-        2: repeat( 2, minmax( 0, 1fr ) ),
-        3: repeat( 3, minmax( 0, 1fr ) ),
-        4: repeat( 4, minmax( 0, 1fr ) ),
-        5: repeat( 5, minmax( 0, 1fr ) ),
-        6: repeat( 6, minmax( 0, 1fr ) ),
-        7: repeat( 7, minmax( 0, 1fr ) ),
-        8: repeat( 8, minmax( 0, 1fr ) ),
-        9: repeat( 9, minmax( 0, 1fr ) ),
-        10: repeat( 10, minmax( 0, 1fr ) ),
-        11: repeat( 11, minmax( 0, 1fr ) ),
-        12: repeat( 12, minmax( 0, 1fr ) ),
-        none: none
+        1: repeat(1, minmax(0, 1fr)),
+        2: repeat(2, minmax(0, 1fr)),
+        3: repeat(3, minmax(0, 1fr)),
+        4: repeat(4, minmax(0, 1fr)),
+        5: repeat(5, minmax(0, 1fr)),
+        6: repeat(6, minmax(0, 1fr)),
+        7: repeat(7, minmax(0, 1fr)),
+        8: repeat(8, minmax(0, 1fr)),
+        9: repeat(9, minmax(0, 1fr)),
+        10: repeat(10, minmax(0, 1fr)),
+        11: repeat(11, minmax(0, 1fr)),
+        12: repeat(12, minmax(0, 1fr)),
+        none: none,
     ),
     "grid-column-start": (
         1: 1,
@@ -307,7 +281,7 @@ $kendo-utils: (
         -11: -11,
         -12: -12,
         -13: -13,
-        auto: auto
+        auto: auto,
     ),
     "grid-column-end": (
         1: 1,
@@ -336,7 +310,7 @@ $kendo-utils: (
         -11: -11,
         -12: -12,
         -13: -13,
-        auto: auto
+        auto: auto,
     ),
     "grid-column-span": (
         1: span 1 / span 1,
@@ -352,7 +326,7 @@ $kendo-utils: (
         11: span 11 / span 11,
         12: span 12 / span 12,
         full: k-string-unquote("1 / -1"),
-        auto: auto
+        auto: auto,
     ),
     "grid-row-start": (
         1: 1,
@@ -381,7 +355,7 @@ $kendo-utils: (
         -11: -11,
         -12: -12,
         -13: -13,
-        auto: auto
+        auto: auto,
     ),
     "grid-row-end": (
         1: 1,
@@ -410,7 +384,7 @@ $kendo-utils: (
         -11: -11,
         -12: -12,
         -13: -13,
-        auto: auto
+        auto: auto,
     ),
     "grid-row-span": (
         1: span 1 / span 1,
@@ -426,7 +400,7 @@ $kendo-utils: (
         11: span 11 / span 11,
         12: span 12 / span 12,
         full: span 1 / span -1,
-        auto: auto
+        auto: auto,
     ),
     "grid-auto-flow": (
         row: row,
@@ -434,30 +408,34 @@ $kendo-utils: (
         dense: dense,
         row-dense: row dense,
         col-dense: column dense,
-        unset: unset
+        unset: unset,
     ),
     "grid-auto-columns": (
         auto: auto,
         min: min-content,
         max: max-content,
-        fr: minmax( 0, 1fr ),
+        fr: minmax(0, 1fr),
     ),
     "grid-auto-rows": (
         auto: auto,
         min: min-content,
         max: max-content,
-        fr: minmax( 0, 1fr ),
+        fr: minmax(0, 1fr),
     ),
-    "gap": k-map-merge( $kendo-spacing, (
-        // TODO: remove this extension once we fix docs
-        xs: k-map-get( $kendo-spacing, 1 ),
-        sm: k-map-get( $kendo-spacing, 2 ),
-        md: k-map-get( $kendo-spacing, 3 ),
-        lg: k-map-get( $kendo-spacing, 4 ),
-        xl: k-map-get( $kendo-spacing, 6 ),
-        thin: k-map-get( $kendo-spacing, 0.5 ),
-        hair: k-map-get( $kendo-spacing, 1px )
-    )),
+    "gap":
+        k-map-merge(
+            $kendo-spacing,
+            (
+                // TODO: remove this extension once we fix docs
+                xs: k-map-get($kendo-spacing, 1),
+                sm: k-map-get($kendo-spacing, 2),
+                md: k-map-get($kendo-spacing, 3),
+                lg: k-map-get($kendo-spacing, 4),
+                xl: k-map-get($kendo-spacing, 6),
+                thin: k-map-get($kendo-spacing, 0.5),
+                hair: k-map-get($kendo-spacing, 1px)
+            )
+        ),
     "align-content": (
         normal: normal,
         stretch: stretch,
@@ -471,7 +449,7 @@ $kendo-utils: (
         last-baseline: last baseline,
         between: space-between,
         around: space-around,
-        evenly: space-evenly
+        evenly: space-evenly,
     ),
     "align-items": (
         normal: normal,
@@ -485,7 +463,7 @@ $kendo-utils: (
         first-baseline: first baseline,
         last-baseline: last baseline,
         self-start: self-start,
-        self-end: self-end
+        self-end: self-end,
     ),
     "align-self": (
         auto: auto,
@@ -500,7 +478,7 @@ $kendo-utils: (
         first-baseline: first baseline,
         last-baseline: last baseline,
         self-start: self-start,
-        self-end: self-end
+        self-end: self-end,
     ),
     "justify-content": (
         normal: normal,
@@ -517,7 +495,7 @@ $kendo-utils: (
         last-baseline: last baseline,
         between: space-between,
         around: space-around,
-        evenly: space-evenly
+        evenly: space-evenly,
     ),
     "justify-items": (
         normal: normal,
@@ -533,7 +511,7 @@ $kendo-utils: (
         right: right,
         baseline: baseline,
         first-baseline: first baseline,
-        last-baseline: last baseline
+        last-baseline: last baseline,
     ),
     "justify-self": (
         auto: auto,
@@ -548,7 +526,7 @@ $kendo-utils: (
         self-end: self-end,
         baseline: baseline,
         first-baseline: first baseline,
-        last-baseline: last baseline
+        last-baseline: last baseline,
     ),
     "place-content": (
         normal: normal,
@@ -561,7 +539,7 @@ $kendo-utils: (
         baseline: baseline,
         between: space-between,
         around: space-around,
-        evenly: space-evenly
+        evenly: space-evenly,
     ),
     "place-items": (
         normal: normal,
@@ -573,7 +551,7 @@ $kendo-utils: (
         flex-end: flex-end,
         self-start: self-start,
         self-end: self-end,
-        baseline: baseline
+        baseline: baseline,
     ),
     "place-self": (
         auto: auto,
@@ -586,45 +564,56 @@ $kendo-utils: (
         flex-end: flex-end,
         self-start: self-start,
         self-end: self-end,
-        baseline: baseline
+        baseline: baseline,
     ),
 
     // Spacing
-    "margin": k-map-merge( $kendo-spacing,
-        k-map-negate( $kendo-spacing), (
-        // TODO: remove this extension once we fix docs
-        xs: k-map-get( $kendo-spacing, 1 ),
-        sm: k-map-get( $kendo-spacing, 2 ),
-        md: k-map-get( $kendo-spacing, 3 ),
-        lg: k-map-get( $kendo-spacing, 4 ),
-        xl: k-map-get( $kendo-spacing, 6 ),
-        thin: k-map-get( $kendo-spacing, 0.5 ),
-        hair: k-map-get( $kendo-spacing, 1px ),
-        auto: auto
-    )),
-    "padding": k-map-merge( $kendo-spacing, (
-        // TODO: remove this extension once we fix docs
-        xs: k-map-get( $kendo-spacing, 1 ),
-        sm: k-map-get( $kendo-spacing, 2 ),
-        md: k-map-get( $kendo-spacing, 3 ),
-        lg: k-map-get( $kendo-spacing, 4 ),
-        xl: k-map-get( $kendo-spacing, 6 ),
-        thin: k-map-get( $kendo-spacing, 0.5 ),
-        hair: k-map-get( $kendo-spacing, 1px )
-    )),
+    "margin":
+        k-map-merge(
+            $kendo-spacing,
+            k-map-negate($kendo-spacing),
+            (
+                // TODO: remove this extension once we fix docs
+                xs: k-map-get($kendo-spacing, 1),
+                sm: k-map-get($kendo-spacing, 2),
+                md: k-map-get($kendo-spacing, 3),
+                lg: k-map-get($kendo-spacing, 4),
+                xl: k-map-get($kendo-spacing, 6),
+                thin: k-map-get($kendo-spacing, 0.5),
+                hair: k-map-get($kendo-spacing, 1px),
+                auto: auto
+            )
+        ),
+    "padding":
+        k-map-merge(
+            $kendo-spacing,
+            (
+                // TODO: remove this extension once we fix docs
+                xs: k-map-get($kendo-spacing, 1),
+                sm: k-map-get($kendo-spacing, 2),
+                md: k-map-get($kendo-spacing, 3),
+                lg: k-map-get($kendo-spacing, 4),
+                xl: k-map-get($kendo-spacing, 6),
+                thin: k-map-get($kendo-spacing, 0.5),
+                hair: k-map-get($kendo-spacing, 1px)
+            )
+        ),
     "space-between": (),
-
     // Sizing
-    "width": k-map-merge( $kendo-sizing, (
-        screen: 100vw
-    )),
+    "width":
+        k-map-merge(
+            $kendo-sizing,
+            (
+                screen: 100vw,
+            )
+        ),
     "min-width": (
         0: 0,
         full: 100%,
         screen: 100vw,
         min: min-content,
         max: max-content,
-        fit: fit-content
+        fit: fit-content,
     ),
     "max-width": (
         none: none,
@@ -633,18 +622,22 @@ $kendo-utils: (
         screen: 100vw,
         min: min-content,
         max: max-content,
-        fit: fit-content
+        fit: fit-content,
     ),
-    "height": k-map-merge( $kendo-sizing, (
-        screen: 100vh
-    )),
+    "height":
+        k-map-merge(
+            $kendo-sizing,
+            (
+                screen: 100vh,
+            )
+        ),
     "min-height": (
         0: 0,
         full: 100%,
         screen: 100vh,
         min: min-content,
         max: max-content,
-        fit: fit-content
+        fit: fit-content,
     ),
     "max-height": (
         none: none,
@@ -653,7 +646,7 @@ $kendo-utils: (
         screen: 100vh,
         min: min-content,
         max: max-content,
-        fit: fit-content
+        fit: fit-content,
     ),
 
     // Typography
@@ -662,7 +655,7 @@ $kendo-utils: (
     "font-smoothing": (),
     "font-style": (
         italic: italic,
-        non-italic: normal
+        non-italic: normal,
     ),
     "font-weight": (
         "thin": 100,
@@ -673,37 +666,30 @@ $kendo-utils: (
         "semibold": 600,
         "bold": 700,
         "extrabold": 800,
-        "black": 900
+        "black": 900,
     ),
     "font-variant-numeric": (),
     "letter-spacing": (),
     "line-height": (),
-    "list-style-type": (
-        none,
-        disc,
-        decimal
-    ),
+    "list-style-type": (none, disc, decimal),
     "list-style-position": (),
-    "text-align": (
-        left,
-        right,
-        center,
-        justify,
-        start,
-        end
-    ),
-    "text-color": k-map-merge( $kendo-theme-colors, (
-        "inherit": inherit,
-        "current": currentColor,
-        "transparent": transparent,
-        "black": black,
-        "white": white
-    )),
+    "text-align": (left, right, center, justify, start, end),
+    "text-color":
+        k-map-merge(
+            $kendo-utils-theme-colors,
+            (
+                "inherit": inherit,
+                "current": currentColor,
+                "transparent": transparent,
+                "black": black,
+                "white": white,
+            )
+        ),
     "text-decoration": (
         underline: underline,
         overline: overline,
         line-through: line-through,
-        no-underline: none
+        no-underline: none,
     ),
     "text-decoration-width": (),
     "text-decoration-style": (),
@@ -713,46 +699,34 @@ $kendo-utils: (
         uppercase: uppercase,
         lowercase: lowercase,
         capitalize: capitalize,
-        normal-case: none
+        normal-case: none,
     ),
     "text-overflow": (
         clip: clip,
-        ellipsis: ellipsis
+        ellipsis: ellipsis,
     ),
     "text-indent": (),
-    "vertical-align": (
-        baseline,
-        top,
-        middle,
-        bottom,
-        text-top,
-        text-bottom,
-        sub,
-        super
-    ),
-    "white-space": (
-        normal,
-        nowrap,
-        pre,
-        pre-line,
-        pre-wrap,
-        break-spaces
-    ),
+    "vertical-align": (baseline, top, middle, bottom, text-top, text-bottom, sub, super),
+    "white-space": (normal, nowrap, pre, pre-line, pre-wrap, break-spaces),
     "word-break": (),
-
     // Background
-    "background-clip": (
-        border: border-box,
-        padding: padding-box,
-        content: content-box,
-        text: text
-    ),
-    "background-color": k-map-merge( $kendo-theme-colors, (
-        "inherit": inherit,
-        "transparent": transparent,
-        "black": black,
-        "white": white
-    )),
+    "background-clip":
+        (
+            border: border-box,
+            padding: padding-box,
+            content: content-box,
+            text: text,
+        ),
+    "background-color":
+        k-map-merge(
+            $kendo-utils-theme-colors,
+            (
+                "inherit": inherit,
+                "transparent": transparent,
+                "black": black,
+                "white": white,
+            )
+        ),
     "background-position": (
         center: center,
         top: top,
@@ -762,22 +736,19 @@ $kendo-utils: (
         top-left: top left,
         top-right: top right,
         bottom-left: bottom left,
-        bottom-right: bottom right
+        bottom-right: bottom right,
     ),
-    "background-size": (
-        auto,
-        cover,
-        contain
-    ),
+    "background-size": (auto, cover, contain),
 
     // Border
-    "border-width": (
-        DEFAULT: 1px,
-        0: 0,
-        2: 2px,
-        4: 4px,
-        8: 8px
-    ),
+    "border-width":
+        (
+            DEFAULT: 1px,
+            0: 0,
+            2: 2px,
+            4: 4px,
+            8: 8px,
+        ),
     "border-style": (
         solid,
         dashed,
@@ -790,20 +761,24 @@ $kendo-utils: (
         hidden,
         none
     ),
-    "border-color": k-map-merge( $kendo-theme-colors, (
-        "inherit": inherit,
-        "current": currentColor,
-        "transparent": transparent,
-        "black": black,
-        "white": white
-    )),
+    "border-color":
+        k-map-merge(
+            $kendo-utils-theme-colors,
+            (
+                "inherit": inherit,
+                "current": currentColor,
+                "transparent": transparent,
+                "black": black,
+                "white": white,
+            )
+        ),
     "border-radius": $kendo-border-radii,
     "outline-width": (
         DEFAULT: 1px,
         0: 0,
         2: 2px,
         4: 4px,
-        8: 8px
+        8: 8px,
     ),
     "outline-style": (
         solid,
@@ -816,19 +791,23 @@ $kendo-utils: (
         outset,
         none
     ),
-    "outline-color": k-map-merge( $kendo-theme-colors, (
-        "inherit": inherit,
-        "current": currentColor,
-        "transparent": transparent,
-        "black": black,
-        "white": white
-    )),
+    "outline-color":
+        k-map-merge(
+            $kendo-utils-theme-colors,
+            (
+                "inherit": inherit,
+                "current": currentColor,
+                "transparent": transparent,
+                "black": black,
+                "white": white,
+            )
+        ),
     "outline-offset": (
         0: 0,
         1: 1px,
         2: 2px,
         4: 4px,
-        8: 8px
+        8: 8px,
     ),
 
     // Effects
@@ -846,41 +825,35 @@ $kendo-utils: (
         70: 0.7,
         80: 0.8,
         90: 0.9,
-        100: 1
+        100: 1,
     ),
 
     // Filter
-    "backdrop-blur": (
-        DEFAULT: blur(8px),
-        none: blur(0),
-        sm: blur(4px),
-        md: blur(6px),
-        lg: blur(12px)
-    ),
+    "backdrop-blur":
+        (
+            DEFAULT: blur(8px),
+            none: blur(0),
+            sm: blur(4px),
+            md: blur(6px),
+            lg: blur(12px),
+        ),
 
     // Table
-    "border-collapse": (
-        collapse,
-        separate
-    ),
-    "table-layout": (
-        auto,
-        fixed
-    ),
+    "border-collapse": (collapse, separate),
+    "table-layout": (auto, fixed),
 
     // Transition
-
     // Transform
     "flip": true,
     "scale": (
         0: 0,
-        0.25: .25,
-        0.5: .5,
-        0.75: .75,
+        0.25: 0.25,
+        0.5: 0.5,
+        0.75: 0.75,
         1: 1,
         1.25: 1.25,
         1.5: 1.5,
-        2: 2
+        2: 2,
     ),
     "rotate": (
         0: 0deg,
@@ -890,9 +863,9 @@ $kendo-utils: (
         180: 180deg,
         225: 225deg,
         270: 270deg,
-        315: 315deg
+        315: 315deg,
     ),
-    "translate": k-map-remove( $kendo-sizing, "auto", "min", "max", "fit" ),
+    "translate": k-map-remove($kendo-sizing, "auto", "min", "max", "fit"),
     "skew": (
         0: 0deg,
         1: 1deg,
@@ -906,7 +879,7 @@ $kendo-utils: (
         9: 9deg,
         10: 10deg,
         11: 11deg,
-        12: 12deg
+        12: 12deg,
     ),
     "origin": (
         center: center,
@@ -917,111 +890,39 @@ $kendo-utils: (
         top-left: top left,
         top-right: top right,
         bottom-left: bottom left,
-        bottom-right: bottom right
+        bottom-right: bottom right,
     ),
-
 
     // Interactivity
     "accent-color": (),
-    "appearance": (
-        none,
-        auto
-    ),
-    "cursor": (
-        none,
-        auto,
-        default,
-        context-menu,
-        help,
-        pointer,
-        progress,
-        wait,
-        cell,
-        crosshair,
-        text,
-        vertical-text,
-        alias,
-        copy,
-        move,
-        no-drop,
-        not-allowed,
-        e-resize,
-        n-resize,
-        ne-resize,
-        nw-resize,
-        s-resize,
-        se-resize,
-        sw-resize,
-        w-resize,
-        ew-resize,
-        ns-resize,
-        nesw-resize,
-        nwse-resize,
-        col-resize,
-        row-resize,
-        all-scroll,
-        zoom-in,
-        zoom-out,
-        grab,
-        grabbing
-    ),
+    "appearance": (none, auto),
+    "cursor": (none, auto, default, context-menu, help, pointer, progress, wait, cell, crosshair, text, vertical-text, alias, copy, move, no-drop, not-allowed, e-resize, n-resize, ne-resize, nw-resize, s-resize, se-resize, sw-resize, w-resize, ew-resize, ns-resize, nesw-resize, nwse-resize, col-resize, row-resize, all-scroll, zoom-in, zoom-out, grab, grabbing),
     "caret-color": (),
-    "pointer-events": (
-        none,
-        auto
-    ),
+    "pointer-events": (none, auto),
     "resize": (
         DEFAULT: both,
         none: none,
         x: horizontal,
-        y: vertical
+        y: vertical,
     ),
-    "scroll-behavior": (
-        auto,
-        smooth
-    ),
+    "scroll-behavior": (auto, smooth),
     "scroll-snap-type": (
         none: none,
         snap-x: x var(--#{$kendo-prefix}scroll-snap-strictness),
         snap-y: y var(--#{$kendo-prefix}scroll-snap-strictness),
-        snap-both: both var(--#{$kendo-prefix}scroll-snap-strictness)
+        snap-both: both var(--#{$kendo-prefix}scroll-snap-strictness),
     ),
-    "scroll-snap-align": (
-        start,
-        end,
-        center,
-        none
-    ),
-    "scroll-snap-stop": (
-        normal,
-        always
-    ),
+    "scroll-snap-align": (start, end, center, none),
+    "scroll-snap-stop": (normal, always),
     "scroll-margin": $kendo-spacing,
     "scroll-padding": $kendo-spacing,
-    "touch-action": (
-        none,
-        auto,
-        pan-x,
-        pan-left,
-        pan-right,
-        pan-y,
-        pan-up,
-        pan-down,
-        pinch-zoom,
-        manipulation
-    ),
-    "user-select": (
-        none,
-        auto,
-        text,
-        all,
-        contain
-    ),
+    "touch-action": (none, auto, pan-x, pan-left, pan-right, pan-y, pan-up, pan-down, pinch-zoom, manipulation),
+    "user-select": (none, auto, text, all, contain),
     "will-change": (
         auto: auto,
         scroll: scroll-position,
         contents: contents,
-        transform: transform
+        transform: transform,
     ),
     "fill-stroke": (
         none: none,
@@ -1029,6 +930,6 @@ $kendo-utils: (
         current: currentColor,
         "transparent": transparent,
         "black": black,
-        "white": white
+        "white": white,
     )
 ) !default;
