@@ -9725,16 +9725,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-section-spacing</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
-    <td><code>16px</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Pager sections.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-item-border-width</td>
     <td>Number</td>
     <td><code>0px</code></td>
