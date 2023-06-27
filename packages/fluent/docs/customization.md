@@ -18895,16 +18895,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-pager-section-spacing</td>
-    <td></td>
-    <td><code>1em</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Pager sections.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-pager-item-border-radius</td>
     <td></td>
     <td><code>0</code></td>
