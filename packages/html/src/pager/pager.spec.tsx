@@ -1,6 +1,7 @@
+/* eslint-disable complexity */
 import { Button } from '../button';
 import { DropdownList } from '../dropdownlist';
-import { Textbox } from '../textbox';
+import { NumericTextbox } from '../numerictextbox';
 import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
 
 export const PAGER_CLASSNAME = `k-pager`;
@@ -19,7 +20,8 @@ export type KendoPagerOptions = {
 };
 
 export type KendoPagerProps = KendoPagerOptions & {
-    mobile?: null | 'small' | 'medium';
+    adaptive?: boolean;
+    itemsPerPage?: boolean;
     type?: 'numeric' | 'input';
     pageSizes?: boolean;
     refresh?: boolean;
@@ -31,7 +33,8 @@ export type KendoPagerState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
     size: Size.medium,
-    mobile: null,
+    adaptive: false,
+    itemsPerPage: true,
     type: 'numeric',
     pageSizes: true,
     refresh: true,
@@ -45,7 +48,8 @@ export const Pager = (
 ) => {
     const {
         size = defaultProps.size,
-        mobile = defaultProps.mobile,
+        adaptive = defaultProps.adaptive,
+        itemsPerPage = defaultProps.itemsPerPage,
         type = defaultProps.type,
         pageSizes = defaultProps.pageSizes,
         refresh = defaultProps.refresh,
@@ -69,11 +73,7 @@ export const Pager = (
                 stateClassNames(PAGER_CLASSNAME, {
                     focus,
                     disabled,
-                }),
-                {
-                    'k-pager-mobile-md': mobile === 'medium',
-                    'k-pager-mobile-sm': mobile === 'small'
-                }
+                })
             )}>
             <div
                 className={classNames(
@@ -102,21 +102,7 @@ export const Pager = (
                     icon={dir === "rtl" ? "caret-alt-right" : "caret-alt-left" }
                 >
                 </Button>
-                <select
-                    className={classNames(
-                        'k-picker',
-                        'k-picker-solid',
-                        'k-dropdown-list',
-                        'k-dropdown',
-                        'k-rounded-md',
-                        optionClassNames('k-picker', {
-                            size,
-                        })
-                    )}
-                >
-                    <option>1</option>
-                </select>
-                { type === 'numeric' &&
+                { type === 'numeric' && !adaptive &&
                     <div
                         className={classNames(
                             'k-pager-numbers'
@@ -178,14 +164,33 @@ export const Pager = (
                         </Button>
                     </div>
                 }
+                { type === 'numeric' &&
+                    <select
+                        className={classNames(
+                            'k-picker',
+                            'k-picker-solid',
+                            'k-dropdown-list',
+                            'k-dropdown',
+                            'k-rounded-md',
+                            optionClassNames('k-picker', {
+                                size,
+                            }),
+                            {
+                                ['k-hidden']: !adaptive
+                            }
+                        )}
+                    >
+                        <option>99</option>
+                    </select>
+                }
                 { type === 'input' &&
                     <span
                         className={classNames(
                             'k-pager-input'
                         )}>
-                        Page
-                        <Textbox showClearButton={false} size={size} value="999" />
-                        of 8
+                        { !adaptive && <span>Page</span> }
+                        <NumericTextbox value="999" size={size} showSpinButton={false} showClearButton={false}></NumericTextbox>
+                        { !adaptive && <span>of 8</span> }
                     </span> }
                 <Button
                     className={classNames(
@@ -215,8 +220,10 @@ export const Pager = (
                     className={classNames(
                         'k-pager-sizes'
                     )}>
-                    <DropdownList value="20" size={size} />
-                    items per page
+                    <DropdownList value="99" size={size} />
+                    { itemsPerPage &&
+                        <span>items per page</span>
+                    }
                 </span>
             }
             { refresh &&
