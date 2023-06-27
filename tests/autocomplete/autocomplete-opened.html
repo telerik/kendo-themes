@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-animation-container {
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>Autocomplete</span>
+        <span>Autocomplete RTL</span>
+        <div>
+            <span class="k-autocomplete k-input k-input-md k-input-solid k-rounded-md k-focus">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Opened">
+                <span class="k-clear-value">
+                    <span class="k-svg-icon k-svg-i-x">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96l45.3 45.3z"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-list-container k-autocomplete-popup k-popup">
+                        <div class="k-list k-list-md">
+                            <div class="k-list-content">
+                                <ul class="k-list-ul">
+                                    <li class="k-list-item">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <span class="k-autocomplete k-input k-input-md k-input-solid k-rounded-md k-focus">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Opened">
+                <span class="k-clear-value">
+                    <span class="k-svg-icon k-svg-i-x">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96l45.3 45.3z"></path>
+                        </svg>
+                    </span>
+                </span>
+            </span>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-list-container k-autocomplete-popup k-popup">
+                        <div class="k-list k-list-md">
+                            <div class="k-list-content">
+                                <ul class="k-list-ul">
+                                    <li class="k-list-item">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                    <li class="k-list-item">
+                                        <span class="k-list-item-text">List item</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
