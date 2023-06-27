@@ -72,8 +72,7 @@
         position: relative;
 
         select.k-dropdown-list {
-            cursor: pointer;
-            display: none;
+            width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
         }
     }
     .k-pager-numbers {
@@ -109,9 +108,10 @@
     // Pager input
     .k-pager-input {
         @extend %base-pager-section !optional;
+        gap: 1ex;
 
-        .k-textbox {
-            margin-inline: 1ex;
+        .k-textbox,
+        .k-numerictextbox {
             margin-block: 0;
             width: var( --kendo-pager-input-width, #{$kendo-pager-input-width} );
         }
@@ -121,10 +121,10 @@
     // Pager sizes
     .k-pager-sizes {
         @extend %base-pager-section !optional;
+        gap: 1ex;
 
         .k-dropdown-list,
         > select {
-            margin-inline-end: 1ex;
             width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
         }
 
@@ -152,31 +152,6 @@
         order: 10;
     }
 
-    // Responsive
-    .k-pager-mobile-sm {
-        overflow: visible;
-
-        // Show native select
-        .k-pager-numbers-wrap {
-            select.k-dropdown-list {
-                @extend %base-pager-section !optional;
-                @if ($kendo-pager-section-spacing) {
-                    margin-left: $kendo-pager-section-spacing;
-                    margin-right: $kendo-pager-section-spacing;
-                }
-                width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
-            }
-        }
-    }
-
-    // Hide components
-    .k-pager-mobile-md .k-pager-info,
-    .k-pager-mobile-sm .k-pager-info,
-    .k-pager-mobile-sm .k-pager-sizes,
-    .k-pager-mobile-sm .k-pager-numbers {
-        display: none;
-    }
-
     // Pager sizes
     @each $size, $size-props in $kendo-pager-sizes {
         $_padding-x: map.get($size-props, padding-x);
@@ -188,7 +163,8 @@
             --INTERNAL--kendo-pager-padding-y: var( --kendo-pager-#{$size}-padding-y, #{$_padding-y} );
             --INTERNAL--kendo-pager-spacing: var( --kendo-pager-#{$size}-spacing, #{$_item-group-spacing} );
 
-            .k-pager-input {
+            .k-pager-input,
+            select.k-dropdown-list {
                 margin-inline-start: var( --kendo-pager-input-margin-start, #{$_item-group-spacing} );
                 margin-inline-end: var( --kendo-pager-input-margin-end, #{$_item-group-spacing} );
             }

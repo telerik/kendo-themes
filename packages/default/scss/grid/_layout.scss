@@ -687,14 +687,6 @@
         border-width: 0 0 1px;
     }
 
-    .k-pager-input {
-        .k-numerictextbox {
-            margin-block: 0;
-            margin-inline: k-math-div( $kendo-font-size-md, 2 );
-            width: 3em;
-        }
-    }
-
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
             float: left;
