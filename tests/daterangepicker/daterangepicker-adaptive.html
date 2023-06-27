@@ -10,11 +10,12 @@
 <body id="app" class="k-body">
     <style>
         #test-area {
-            --kendo-actionsheet-height: 400px;
-            --kendo-actionsheet-max-height: 400px;
+            --kendo-actionsheet-height: 500px;
+            --kendo-actionsheet-max-height: 500px;
         }
         #test-area>section {
             height: 600px;
+            outline: 1px dotted;
             overflow: hidden;
             position: relative;
             transform: translateZ(0);
@@ -25,16 +26,30 @@
         <span>partial</span>
         <span>full screen</span>
         <section>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
             <div class="k-actionsheet-container">
                 <div class="k-overlay"></div>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
                         <div class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
-                            <div class="k-text-center k-actionsheet-titlebar">
+                            <div class="k-actionsheet-titlebar">
                                 <div class="k-actionsheet-titlebar-group k-hbox">
                                     <div class="k-actionsheet-title">
-                                        <div class="k-text-center">DateRangePicker label</div>
-                                        <div class="k-actionsheet-subtitle k-text-center"></div>
+                                        <div class="k-text-center">Select Dates</div>
+                                        <div class="k-actionsheet-subtitle k-text-center">DD / MM / YY</div>
                                     </div>
                                     <div class="k-actionsheet-actions">
                                         <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
@@ -350,16 +365,30 @@
             </div>
         </section>
         <section>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
             <div class="k-actionsheet-container">
                 <div class="k-overlay"></div>
                 <div class="k-animation-container k-animation-container-shown">
                     <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
                         <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
-                            <div class="k-text-center k-actionsheet-titlebar">
+                            <div class="k-actionsheet-titlebar">
                                 <div class="k-actionsheet-titlebar-group k-hbox">
                                     <div class="k-actionsheet-title">
-                                        <div class="k-text-center">Dropdownlist label</div>
-                                        <div class="k-actionsheet-subtitle k-text-center"></div>
+                                        <div class="k-text-center">Select Dates</div>
+                                        <div class="k-actionsheet-subtitle k-text-center">DD / MM / YY</div>
                                     </div>
                                     <div class="k-actionsheet-actions">
                                         <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
