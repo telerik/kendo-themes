@@ -201,6 +201,7 @@ $kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color
 
 
 $kendo-theme-colors: (
+    "base": $kendo-base-bg,
     "primary": $kendo-color-primary,
     "secondary": $kendo-color-secondary,
     "tertiary": $kendo-color-tertiary,

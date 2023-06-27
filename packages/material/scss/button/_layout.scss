@@ -1,87 +1,70 @@
-@import "@progress/kendo-theme-default/scss/button/_layout.scss";
+// @mixin kendo-button--layout--material() {
+// Button
+.k-button {
+    text-transform: uppercase;
+    font-weight: 500;
 
+    &::before {
+        display: block;
+        transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    &::after {
+        display: none !important; // stylelint-disable-line declaration-no-important
+    }
 
-@mixin kendo-button--layout() {
+    &:disabled,
+    &[disabled],
+    &.k-disabled {
+        opacity: 1;
+        filter: none;
+    }
+}
 
-    @include kendo-button--layout-base();
+// Link button
+.k-button-link {
+    &:hover,
+    &.k-hover,
+    &:active,
+    &.k-active,
+    &.k-selected {
+        &::before {
+            opacity: 0;
+        }
+    }
 
-    // Button
-    .k-button {
-        text-transform: uppercase;
-        font-weight: 500;
+    &:focus,
+    &.k-focus {
+        &::before {
+            opacity: $kendo-flat-button-focus-opacity;
+        }
+    }
+}
 
+// Clear button
+.k-button-clear,
+.k-button.k-clear {
+    &::before {
+        display: none;
+    }
+
+    &:focus,
+    &.k-focus,
+    &:active {
         &::before {
             display: block;
-            transition: opacity .4s cubic-bezier( .25, .8, .25, 1 );
-        }
-        &::after {
-            display: none !important; // stylelint-disable-line declaration-no-important
-        }
-
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            opacity: 1;
-            filter: none;
         }
     }
-
-    // Outline button
-    .k-button-outline {
-        background-color: transparent !important; // stylelint-disable-line declaration-no-important
-        box-shadow: none !important; // stylelint-disable-line declaration-no-important
-    }
-
-
-    // Link button
-    .k-button-link {
-        &:hover,
-        &.k-hover,
-        &:active,
-        &.k-active,
-        &.k-selected {
-            &::before {
-                opacity: 0;
-            }
-        }
-
-        &:focus,
-        &.k-focus {
-            &::before {
-                opacity: $kendo-flat-button-focus-opacity;
-            }
-        }
-    }
-
-
-    // Clear button
-    .k-button-clear,
-    .k-button.k-clear {
-        &::before {
-            display: none;
-        }
-
-
-        &:focus,
-        &.k-focus,
-        &:active {
-            &::before {
-                display: block;
-            }
-        }
-    }
-
-
-    // Button group
-    .k-button-group {}
-
-
-    // Popup button group
-    .k-overflow-button,
-    .k-overflow-group {
-        &.k-button-group {
-            line-height: inherit;
-        }
-    }
-
 }
+
+// Button group
+.k-button-group {
+}
+
+// Popup button group
+.k-overflow-button,
+.k-overflow-group {
+    &.k-button-group {
+        line-height: inherit;
+    }
+}
+// }

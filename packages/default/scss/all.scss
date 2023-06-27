@@ -1,7 +1,7 @@
 @import "./index.scss";
 
 
-@if not $kendo-auto-bootstrap {
+// @if not $kendo-auto-bootstrap {
     @include kendo-theme--config();
     @include kendo-theme--styles();
-}
+// }

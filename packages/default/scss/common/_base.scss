@@ -88,12 +88,12 @@
 
         > .k-header {
             @include border-top-radius( $kendo-border-radius-md );
-            @include fill(
+            /* @include fill(
                 $kendo-component-header-text,
                 $kendo-component-header-bg,
                 $kendo-component-header-border,
                 $kendo-component-header-gradient
-            );
+            ); */
             padding-inline: k-map-get( $kendo-spacing, 2 );
             padding-block: k-map-get( $kendo-spacing, 1 );
         }
