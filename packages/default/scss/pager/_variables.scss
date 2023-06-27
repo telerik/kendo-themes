@@ -77,10 +77,6 @@ $kendo-pager-focus-bg: null !default;
 /// @group pager
 $kendo-pager-focus-shadow: $kendo-focus-shadow !default;
 
-/// The spacing between the Pager sections.
-/// @group pager
-$kendo-pager-section-spacing: k-map-get( $kendo-spacing, 4 ) !default;
-
 /// The border width of the Pager items.
 /// @group pager
 $kendo-pager-item-border-width: 0px !default;
