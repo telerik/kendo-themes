@@ -220,7 +220,7 @@ $kendo-is-dark-theme: false !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
-$kendo-color-inverse: if($kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark) !default;
+$kendo-color-inverse: #000; //if($kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark) !default;
 // Typography
 
 /// Base font size across all components.
@@ -288,7 +288,7 @@ $kendo-app-text: $kendo-body-text !default;
 // $kendo-app-border: k-map-get($theme, component-border) !default;
 
 // Link
-$kendo-link-text: $kendo-color-secondary !default;
+$kendo-link-text: #000; // $kendo-color-secondary !default;
 // $kendo-link-hover-text: $kendo-color-secondary-darker !default;
 
 // Components
@@ -319,25 +319,25 @@ $kendo-base-gradient: null !default;
 /// The background of hovered items.
 // $kendo-hover-bg: k-map-get($theme, hover-bg) !default;
 /// The text color of hovered items.
-$kendo-hover-text: $kendo-base-text !default;
-/// The border color of hovered items.
-$kendo-hover-border: rgba($kendo-base-border, 0.15) !default;
-/// The gradient background of hovered items.
-$kendo-hover-gradient: null !default;
+// $kendo-hover-text: $kendo-base-text !default;
+// /// The border color of hovered items.
+// $kendo-hover-border: rgba($kendo-base-border, 0.15) !default;
+// /// The gradient background of hovered items.
+// $kendo-hover-gradient: null !default;
 
 /// The background of selected items.
-$kendo-selected-bg: $kendo-color-secondary !default;
-/// The text color of selected items.
-$kendo-selected-text: $kendo-color-secondary-contrast !default;
-/// The border color of selected items.
-$kendo-selected-border: rgba($kendo-base-border, 0.1) !default;
-/// The gradient background of selected items.
-$kendo-selected-gradient: null !default;
+// $kendo-selected-bg: $kendo-color-secondary !default;
+// /// The text color of selected items.
+// $kendo-selected-text: $kendo-color-secondary-contrast !default;
+// /// The border color of selected items.
+// $kendo-selected-border: rgba($kendo-base-border, 0.1) !default;
+// /// The gradient background of selected items.
+// $kendo-selected-gradient: null !default;
 
-$kendo-selected-hover-bg: k-try-shade($kendo-selected-bg, 0.5) !default;
-$kendo-selected-hover-text: $kendo-selected-text !default;
-$kendo-selected-hover-border: rgba($kendo-base-border, 0.1) !default;
-$kendo-selected-hover-gradient: null !default;
+// $kendo-selected-hover-bg: k-try-shade($kendo-selected-bg, 0.5) !default;
+// $kendo-selected-hover-text: $kendo-selected-text !default;
+// $kendo-selected-hover-border: rgba($kendo-base-border, 0.1) !default;
+// $kendo-selected-hover-gradient: null !default;
 
 $kendo-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !default;
 
@@ -357,14 +357,14 @@ $kendo-disabled-styling: (
 
 // Header
 $kendo-component-header-bg: $kendo-base-bg !default;
-$kendo-component-header-text: $kendo-base-text !default;
-$kendo-component-header-border: $kendo-base-border !default;
+$kendo-component-header-text: #000; // $kendo-base-text !default;
+$kendo-component-header-border: #000; //$kendo-base-border !default;
 $kendo-component-header-gradient: null !default;
 
 // Validator
 $kendo-invalid-bg: null !default;
-$kendo-invalid-text: $kendo-color-error !default;
-$kendo-invalid-border: $kendo-color-error !default;
+$kendo-invalid-text: #f00;//$kendo-color-error !default;
+$kendo-invalid-border:  #f00; // $kendo-color-error !default;
 $kendo-invalid-shadow: null !default;
 
 // Loading

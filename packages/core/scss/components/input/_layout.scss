@@ -48,11 +48,11 @@
             margin: 0;
         }
 
-        &::placeholder {
+        /* &::placeholder {
             color: $kendo-input-placeholder-text;
             opacity: $kendo-input-placeholder-opacity;
             user-select: none;
-        }
+        } */
     }
 
     // Input and Textarea
@@ -118,11 +118,11 @@
         -webkit-appearance: none;
 
         // Placeholder text
-        &::placeholder {
+       /*  &::placeholder {
             color: $kendo-input-placeholder-text;
             opacity: $kendo-input-placeholder-opacity;
             user-select: none;
-        }
+        } */
 
         // Invalid
         &:invalid {
@@ -274,19 +274,19 @@
     // Clear value
     .k-clear-value {
         outline: 0;
-        color: $kendo-input-clear-value-text;
+        // color: $kendo-input-clear-value-text;
         flex: none;
         align-self: center;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        opacity: $kendo-input-clear-value-opacity;
+        // opacity: $kendo-input-clear-value-opacity;
     }
     .k-clear-value:hover,
     .k-clear-value.k-hover {
-        color: $kendo-input-clear-value-hover-text;
-        opacity: $kendo-input-clear-value-hover-opacity;
+        // color: $kendo-input-clear-value-hover-text;
+        // opacity: $kendo-input-clear-value-hover-opacity;
     }
     .k-clear-value:focus-visible {
         outline: 1px dotted;
@@ -376,20 +376,6 @@
         flex-flow: row nowrap;
         overflow: hidden;
         position: relative;
-    }
-
-
-    // Fill mode
-    .k-input-flat,
-    .k-picker-flat {
-        @include border-bottom-radius( 0 !important ); // stylelint-disable-line declaration-no-important
-        border-width: $kendo-input-border-width 0;
-        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
-        background-image: none !important; // stylelint-disable-line declaration-no-important
-    }
-
-    .k-input-outline {
-        background: none !important; // stylelint-disable-line declaration-no-important
     }
 
 

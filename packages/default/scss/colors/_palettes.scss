@@ -9,13 +9,13 @@ $kendo-palette-gray: (
     7: #adadad,
     8: #999999,
     9: #808080,
-    10: #666666, 
+    10: #666666,
     11: #525252,
     12: #3d3d3d,
     13: #292929,
     14: #1f1f1f,
     15: #141414,
-    16: #000000
+    16: #000000,
 );
 
 $kendo-palette-coral: (
@@ -23,7 +23,7 @@ $kendo-palette-coral: (
     2: #ffeceb,
     3: #ffdedb,
     4: #ffc8c4,
-    5: #ffb1ac, 
+    5: #ffb1ac,
     6: #ff9d97,
     7: #ff8a82,
     8: #ff766d,
@@ -44,8 +44,8 @@ $kendo-palette-sky-blue: (
     5: #61c9f9,
     6: #42bff7,
     7: #22b3f5,
-    8: #03a9f4, 
-    9: #03A9F4,
+    8: #03a9f4,
+    9: #03a9f4,
     10: #039ae0,
     11: #028ccb,
     12: #027fb7,
@@ -68,4 +68,43 @@ $kendo-palette-yellow: (
 
 $kendo-palette-red: (
     9: #f31700,
+);
+
+// Dark palettes
+$kendo-palette-coral-dark: (
+    // 1: #fff6f5,
+    // 2: #ffeceb,
+    // 3: #ffdedb,
+    // 4: #ffc8c4,
+    // 5: #ffb1ac,
+    // 6: #ff9d97,
+    // 7: #ff8a82,
+    // 8: #ff766d,
+    9: #e6594f,
+    10: #e96c63,
+    11: #ed867f,
+    12: #e77f78,
+    // 13: #a33f38,
+    // 14: #80322c,
+    // 15: #5c201c,
+);
+
+$kendo-palette-gray-dark: (
+    16: #ffffff,
+    15: #fafafa,
+    14: #f5f5f5,
+    13: #ebebeb,
+    12: #e0e0e0,
+    11: #d6d6d6,
+    10: #c2c2c2,
+    9: #adadad,
+    8: #999999,
+    7: #808080,
+    6: #666666,
+    5: #525252,
+    4: #3d3d3d,
+    3: #292929,
+    2: #1f1f1f,
+    1: #141414,
+    0: #000000,
 );

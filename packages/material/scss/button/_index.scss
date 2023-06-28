@@ -1,8 +1,40 @@
-// Config
-@import "./_variables.scss";
+// @import "../core/_index.scss";
+// @import "../utils/_index.scss";
 
-// Core
+
+// Module meta
+$_kendo-module-meta: (
+    name: "button",
+    dependencies: (
+        "badge",
+        "icon",
+    )
+);
+
+
+// Dependencies
+// @import "../badge/_index.scss";
+// @import "../icons/_index.scss";
+
+
+// Component
 @import "@progress/kendo-theme-core/scss/components/button/index";
+@import "./_theme.scss";
 
-// Overrides
-@import "./_layout.scss";
+
+// Register
+@import "../core/module-system/index.import.scss";
+// @include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin kendo-button--styles() {
+    // @include module-render( "button" ) {
+        @include kendo-button--core();
+        @include kendo-button--theme();
+    // }
+}
+
+// @if $kendo-auto-bootstrap {
+    @include kendo-button--styles();
+// }

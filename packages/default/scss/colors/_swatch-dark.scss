@@ -1,0 +1,10 @@
+@import "./palettes";
+
+$kendo-palette-neutral: $kendo-palette-gray-dark !default;
+$kendo-palette-primary: $kendo-palette-coral-dark !default;
+$kendo-palette-secondary: $kendo-palette-gray !default;
+$kendo-palette-tertiary: $kendo-palette-sky-blue !default;
+
+.k-body {
+    background-color: #121212 !important;
+}

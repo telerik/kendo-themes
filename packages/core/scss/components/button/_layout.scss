@@ -199,8 +199,8 @@
     // Flat button
     .k-button-flat {
         border-color: transparent !important; // stylelint-disable-line declaration-no-important
-        color: inherit;
-        background: none !important; // stylelint-disable-line declaration-no-important
+        // color: inherit;
+        // background: none !important; // stylelint-disable-line declaration-no-important
         box-shadow: none !important; // stylelint-disable-line declaration-no-important
 
         // Overlay background
@@ -256,51 +256,6 @@
         bottom: -$kendo-button-border-width;
         z-index: 0;
         transition: opacity 0.2s ease-in-out;
-    }
-
-    .k-button {
-        // stylelint-disable-line
-
-        &::before {
-            @extend .k-button-overlay !optional;
-        }
-
-        // Hovered state
-        &:hover,
-        &.k-hover {
-            &::before {
-                opacity: $kendo-flat-button-hover-opacity;
-            }
-        }
-
-        // Focused state
-        &:focus,
-        &.k-focus {
-            &::before {
-                opacity: $kendo-flat-button-focus-opacity;
-            }
-        }
-        &.k-no-focus:not(:hover),
-        &.k-no-focus:not(.k-hover) {
-            &::before {
-                opacity: 0;
-            }
-        }
-
-        // Active state
-        &:active,
-        &.k-active {
-            &::before {
-                opacity: $kendo-flat-button-active-opacity;
-            }
-        }
-
-        // Selected state
-        &.k-selected {
-            &::before {
-                opacity: $kendo-flat-button-selected-opacity;
-            }
-        }
     }
 
     // Button focus ring
