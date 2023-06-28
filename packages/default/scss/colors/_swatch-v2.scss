@@ -1,0 +1,26 @@
+@import "./palettes";
+
+// Base
+$kendo-color-base: map-get($kendo-palette-gray, 2);
+$kendo-color-base-text: map-get($kendo-palette-gray, 12);
+$kendo-color-base-hover: map-get($kendo-palette-gray, 3);
+$kendo-color-base-active: map-get($kendo-palette-gray, 5);
+$kendo-color-base-select: map-get($kendo-palette-gray, 6);
+$kendo-color-base-focus: map-get($kendo-palette-gray, 16);
+
+// Primary
+$kendo-color-primary: map-get($kendo-palette-coral, 9);
+$kendo-color-primary-text: map-get($kendo-palette-gray, 0);
+$kendo-color-primary-hover: map-get($kendo-palette-coral, 10);
+$kendo-color-primary-active: map-get($kendo-palette-coral, 11);
+$kendo-color-primary-select: map-get($kendo-palette-coral, 12);
+$kendo-color-primary-focus: map-get($kendo-palette-coral, 9);
+
+// Misc
+$kendo-color-border: map-get($kendo-palette-gray, 4);
+$kendo-color-border-hover: map-get($kendo-palette-gray, 6); // TODO;
+$kendo-color-border-focus: map-get($kendo-palette-gray, 6); // TODO;
+
+// Alert
+$kendo-color-error: map-get($kendo-palette-red, 9);
+$kendo-color-error-text: map-get($kendo-palette-red, 9);

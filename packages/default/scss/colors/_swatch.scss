@@ -1,11 +1,12 @@
 @import "./palettes";
+@import "./swatch-v2";
 
-$kendo-palette-neutral: $kendo-palette-gray;
-$kendo-palette-primary: $kendo-palette-coral;
-$kendo-palette-secondary: $kendo-palette-gray;
-$kendo-palette-tertiary: $kendo-palette-sky-blue;
+$kendo-palette-neutral: $kendo-palette-gray !default;
+$kendo-palette-primary: $kendo-palette-coral !default;
+$kendo-palette-secondary: $kendo-palette-gray !default;
+$kendo-palette-tertiary: $kendo-palette-sky-blue !default;
 
-/* 
+/*
 $kendo-color-primary: k-map-get($kendo-palette-coral, 9) !default;
 $kendo-color-primary-shadow: k-map-get($kendo-palette-coral, 3) !default;
 $kendo-color-primary-hover: k-map-get($kendo-palette-coral, 10) !default;

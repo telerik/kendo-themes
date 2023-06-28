@@ -1,10 +1,15 @@
 @import "./palettes";
 
-$kendo-color-primary: k-map-get($kendo-palette-indigo, 9) !default;
+$kendo-palette-neutral: $kendo-palette-gray;
+$kendo-palette-primary: $kendo-palette-indigo;
+$kendo-palette-secondary: $kendo-palette-pink;
+$kendo-palette-tertiary: $kendo-palette-teal;
+
+/* $kendo-color-primary: k-map-get($kendo-palette-indigo, 9) !default;
 $kendo-color-primary-shadow: k-map-get($kendo-palette-indigo, 3) !default;
 $kendo-color-primary-hover: k-map-get($kendo-palette-indigo, 10) !default;
 $kendo-color-primary-active: k-map-get($kendo-palette-indigo, 11) !default;
-$kendo-color-primary-focus: rgba($kendo-color-primary, 0.3 /* $kendo-solid-button-shadow-opacity */);
+$kendo-color-primary-focus: rgba($kendo-color-primary, 0.3);
 $kendo-color-primary-text: $kendo-color-white !default;
 $kendo-color-primary-darker: $kendo-color-white !default;
 
@@ -51,3 +56,4 @@ $kendo-active-border: $kendo-component-border !default;
 $kendo-selected-bg: k-map-get($kendo-palette-indigo, 9) !default;
 $kendo-selected-text: $kendo-color-white !default;
 $kendo-selected-border: k-map-get($kendo-palette-indigo, 9) !default;
+ */

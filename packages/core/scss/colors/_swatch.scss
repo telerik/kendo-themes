@@ -110,9 +110,16 @@ $kendo-secondary-tertiary: (
 ) !default;
 
 $kendo-theme-palettes: (
-    "primary": $kendo-palette-primary,
-    "secondary": $kendo-palette-secondary,
-    "tertiary": $kendo-palette-tertiary,
+    "primary": (
+        normal: $kendo-color-primary,
+        text: $kendo-color-primary-text,
+        hover: $kendo-color-primary-hover,
+        focus: $kendo-color-primary-focus,
+        active: $kendo-color-primary-active,
+        select: $kendo-color-primary-select,
+    ),
+    // "secondary": $kendo-palette-secondary,
+    // "tertiary": $kendo-palette-tertiary,
 ) !default;
 
 /// @ignore

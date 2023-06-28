@@ -1,41 +1,35 @@
 @import "../core/_index.scss";
 @import "../utils/_index.scss";
 
-
 // Module meta
 $_kendo-module-meta: (
     name: "input",
     dependencies: (
         "button",
         "icon",
-    )
+    ),
 );
-
 
 // Dependencies
 @import "../common/_index.scss";
 @import "../button/_index.scss";
 
-
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
+@import "@progress/kendo-theme-core/scss/components/input/index";
 @import "./_theme.scss";
-
 
 // Register
 @import "../core/module-system/index.import.scss";
-@include module-register( $_kendo-module-meta... );
-
+@include module-register($_kendo-module-meta...);
 
 // Expose
 @mixin kendo-input--styles() {
-    @include module-render( "input" ) {
-        @include kendo-input--layout();
+    // @include module-render("input") {
+        @include kendo-input--core();
         @include kendo-input--theme();
-    }
+    // }
 }
 
-@if $kendo-auto-bootstrap {
+// @if $kendo-auto-bootstrap {
     @include kendo-input--styles();
-}
+// }
