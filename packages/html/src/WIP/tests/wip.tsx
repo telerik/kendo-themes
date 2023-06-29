@@ -77,7 +77,7 @@ export default () => (
                 </>
             ))}
         </div>
-        <h4>Input (Picker)</h4>
+        <h4>Input</h4>
         <div id="test-area" className="k-d-grid">
             <span></span>
             <span>Normal</span>
@@ -111,7 +111,7 @@ export default () => (
                 </>
             ))}
         </div>
-        <h4>Dropdown</h4>
+        <h4>Picker</h4>
         <div id="test-area" className="k-d-grid">
             <span></span>
             <span>Normal</span>
