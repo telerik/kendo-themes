@@ -21,70 +21,70 @@
         &[disabled],
         &.k-disabled {
             opacity: 1;
-            filter: none;
+            filter: opacity(0.38);
             box-shadow: none;
         }
     }
 
     .k-button-solid-base {
-        // TODO: use fill()?
-        color: k-map-get($kendo-palette-neutral, 16);
-        background-color: k-map-get($kendo-palette-neutral, 0);
+        color: $kendo-color-base-text;
+        background-color: $kendo-color-base;
 
         &:hover,
         &.k-hover {
-            background-color: k-map-get($kendo-palette-neutral, 4);
+            background-color: $kendo-color-base-hover;
         }
 
         &:focus,
         &.k-focus {
-            background-color: k-map-get($kendo-palette-neutral, 5);
+            background-color: $kendo-color-base-focus;
         }
 
         &:active,
         &.k-active {
-            background-color: k-map-get($kendo-palette-neutral, 6);
+            background-color: $kendo-color-base-active;
         }
 
         &.k-selected {
-            background-color: k-map-get($kendo-palette-neutral, 7);
+            background-color: $kendo-color-base-select;
         }
 
         &:disabled,
+        &[disabled],
         &.k-disabled {
-            color: k-map-get($kendo-palette-neutral, 9);
-            background-color: k-map-get($kendo-palette-neutral, 4);
+            background-color: $kendo-color-base-focus;
         }
     }
 
     @each $name, $palette in $kendo-theme-palettes {
         .k-button-solid-#{$name} {
-            color: k-map-get($kendo-palette-neutral, 0);
-            background-color: k-map-get($palette, 9);
+            color: k-map-get($palette, text);
+            background-color: k-map-get($palette, normal);
 
             &:hover,
             &.k-hover {
-                background-color: k-map-get($palette, 8);
-            } 
+                background-color: k-map-get($palette, hover);
+            }
 
             &:focus,
             &.k-focus {
-                background-color: k-map-get($palette, 7);
+                background-color: k-map-get($palette, focus);
             }
 
             &:active,
             &.k-active {
-                background-color: k-map-get($palette, 6);
+                background-color: k-map-get($palette, active);
             }
 
             &.k-selected {
-                background-color: k-map-get($palette, 5);
+                background-color: k-map-get($palette, select);
             }
 
             &:disabled,
+            &[disabled],
             &.k-disabled {
-                color: k-map-get($kendo-palette-neutral, 9);
-                background-color: k-map-get($kendo-palette-neutral, 4);
+                color: $kendo-color-base-text;
+                background-color: $kendo-color-base-focus;
             }
         }
     }

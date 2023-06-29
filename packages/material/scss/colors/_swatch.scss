@@ -5,55 +5,26 @@ $kendo-palette-primary: $kendo-palette-indigo;
 $kendo-palette-secondary: $kendo-palette-pink;
 $kendo-palette-tertiary: $kendo-palette-teal;
 
-/* $kendo-color-primary: k-map-get($kendo-palette-indigo, 9) !default;
-$kendo-color-primary-shadow: k-map-get($kendo-palette-indigo, 3) !default;
-$kendo-color-primary-hover: k-map-get($kendo-palette-indigo, 10) !default;
-$kendo-color-primary-active: k-map-get($kendo-palette-indigo, 11) !default;
-$kendo-color-primary-focus: rgba($kendo-color-primary, 0.3);
-$kendo-color-primary-text: $kendo-color-white !default;
-$kendo-color-primary-darker: $kendo-color-white !default;
+// Base
+$kendo-color-base: map-get($kendo-palette-indigo, 0);
+$kendo-color-base-text: map-get($kendo-palette-gray, 16);
+$kendo-color-base-hover: map-get($kendo-palette-gray, 3);
+$kendo-color-base-active: map-get($kendo-palette-gray, 5);
+$kendo-color-base-select: map-get($kendo-palette-gray, 6);
+$kendo-color-base-focus: map-get($kendo-palette-gray, 4);
 
-$kendo-color-secondary: k-map-get($kendo-palette-neutral, 10) !default;
+// Primary
+$kendo-color-primary: map-get($kendo-palette-indigo, 9);
+$kendo-color-primary-text: map-get($kendo-palette-gray, 0);
+$kendo-color-primary-hover: map-get($kendo-palette-indigo, 8);
+$kendo-color-primary-active: map-get($kendo-palette-indigo, 6);
+$kendo-color-primary-select: map-get($kendo-palette-indigo, 5);
+$kendo-color-primary-focus: map-get($kendo-palette-indigo, 7);
 
-$kendo-color-tertiary: k-map-get($kendo-palette-teal, 8) !default;
+// Misc
+$kendo-color-border: map-get($kendo-palette-gray, 4);
+$kendo-color-border-hover: map-get($kendo-palette-gray, 6); // TODO;
+$kendo-color-border-focus: map-get($kendo-palette-gray, 6); // TODO;
 
-$kendo-color-info: k-map-get($kendo-palette-blue, 9) !default;
-
-$kendo-color-success: k-map-get($kendo-palette-green, 9) !default;
-
-$kendo-color-warning: k-map-get($kendo-palette-yellow, 9) !default;
-
-$kendo-color-error: k-map-get($kendo-palette-red, 9) !default;
-
-$kendo-color-dark: k-map-get($kendo-palette-neutral, 12) !default; // TODO: double-check: was #424242;
-
-$kendo-color-light: k-map-get($kendo-palette-neutral, 3) !default;
-
-// Root styles
-$kendo-body-bg: $kendo-color-white !default;
-$kendo-body-text: $kendo-color-black !default;
-
-// Base styles
-$kendo-base-bg: $kendo-color-white !default;
-$kendo-base-text: $kendo-color-black !default;
-$kendo-base-border: k-map-get($kendo-palette-neutral, 6) !default;
-$kendo-base-gradient: rgba($kendo-color-black, 0), rgba($kendo-color-black, 0.02) !default;
-
-// Component styles
-$kendo-component-bg: $kendo-base-bg !default;
-$kendo-component-text: $kendo-base-text !default;
-$kendo-component-border: $kendo-base-border !default;
-
-// States styles
-$kendo-hover-bg: k-map-get($kendo-palette-neutral, 3) !default;
-$kendo-hover-text: $kendo-component-text !default;
-$kendo-hover-border: $kendo-component-border !default;
-
-$kendo-active-bg: k-map-get($kendo-palette-neutral, 5) !default;
-$kendo-active-text: $kendo-component-text !default;
-$kendo-active-border: $kendo-component-border !default;
-
-$kendo-selected-bg: k-map-get($kendo-palette-indigo, 9) !default;
-$kendo-selected-text: $kendo-color-white !default;
-$kendo-selected-border: k-map-get($kendo-palette-indigo, 9) !default;
- */
+// Alert
+$kendo-color-error: map-get($kendo-palette-red, 9);
