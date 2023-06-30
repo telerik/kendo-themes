@@ -28,31 +28,31 @@
 
 /// Shadow for cards and grid item thumbnails.
 /// Equivalent to fluent depth 4.
-$kendo-box-shadow-depth-1: 0 1.6px 3.6px rgba(map-get($kendo-palette-neutral, 16), 0.132), 0 0.3px 0.9px rgba(map-get($kendo-palette-neutral, 16), 0.108) !default;
+$kendo-box-shadow-depth-1: 0 1.6px 3.6px rgba(#000, 0.132), 0 0.3px 0.9px rgba(#000, 0.108) !default;
 /// Shadow for command bars and dropdowns.
 /// Equivalent to fluent depth 8.
-$kendo-box-shadow-depth-2: 0 3.2px 7.2px rgba(map-get($kendo-palette-neutral, 16), 0.132), 0 0.6px 1.8px rgba(map-get($kendo-palette-neutral, 16), 0.108) !default;
+$kendo-box-shadow-depth-2: 0 3.2px 7.2px rgba(#000, 0.132), 0 0.6px 1.8px rgba(#000, 0.108) !default;
 /// Shadow for teaching callouts and hover cards / tooltips.
 /// Equivalent to fluent depth 16.
-$kendo-box-shadow-depth-3: 0 6.4px 14.4px rgba(map-get($kendo-palette-neutral, 16), 0.132), 0 1.2px 3.6px rgba(map-get($kendo-palette-neutral, 16), 0.108) !default;
+$kendo-box-shadow-depth-3: 0 6.4px 14.4px rgba(#000, 0.132), 0 1.2px 3.6px rgba(#000, 0.108) !default;
 /// Shadow for panels and pop up dialogs.
 /// Equivalent to fluent depth 64.
-$kendo-box-shadow-depth-4: 0 25.6px 57.6px rgba(map-get($kendo-palette-neutral, 16), 0.22), 0 4.8px 14.4px rgba(map-get($kendo-palette-neutral, 16), 0.18) !default;
+$kendo-box-shadow-depth-4: 0 25.6px 57.6px rgba(#000, 0.22), 0 4.8px 14.4px rgba(#000, 0.18) !default;
 
 // Link
-$kendo-link-text: k-get-theme-color-var(primary-100) !default;
-$kendo-link-hover-text: k-get-theme-color-var(primary-120) !default;
+// $kendo-link-text: k-get-theme-color-var(primary-100) !default;
+// $kendo-link-hover-text: k-get-theme-color-var(primary-120) !default;
 
 // Validator
-$kendo-invalid-bg: initial !default;
-$kendo-invalid-text: k-get-theme-color-var(error-190) !default;
-$kendo-invalid-border: k-get-theme-color-var(error-190) !default;
-$kendo-invalid-shadow: null !default;
+// $kendo-invalid-bg: initial !default;
+// $kendo-invalid-text: k-get-theme-color-var(error-190) !default;
+// $kendo-invalid-border: k-get-theme-color-var(error-190) !default;
+// $kendo-invalid-shadow: null !default;
 
 // Disabled Styling
-$kendo-disabled-bg: k-get-theme-color-var(neutral-20) !default;
-$kendo-disabled-text: k-get-theme-color-var(neutral-90) !default;
-$kendo-disabled-border: transparent !default;
+// $kendo-disabled-bg: k-get-theme-color-var(neutral-20) !default;
+// $kendo-disabled-text: k-get-theme-color-var(neutral-90) !default;
+// $kendo-disabled-border: transparent !default;
 
 // Loading
 $kendo-loading-bg: #fff; // $kendo-component-bg !default;
@@ -100,7 +100,7 @@ $kendo-theme-states: (
         text: k-get-theme-color-var( error-190 ),
         bg: k-get-theme-color-var( error-20 ),
         border: k-get-theme-color-var( error-20 )
-    ) 
+    )
 ) !default; */
 @mixin color-system-styles() {
     :root {

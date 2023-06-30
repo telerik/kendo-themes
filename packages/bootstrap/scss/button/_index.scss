@@ -13,13 +13,12 @@ $_kendo-module-meta: (
 
 
 // Dependencies
-@import "../badge/_index.scss";
-@import "../icons/_index.scss";
+// @import "../badge/_index.scss";
+// @import "../icons/_index.scss";
 
 
 // Component
-@import "./_variables.scss";
-@import "./_layout.scss";
+@import "@progress/kendo-theme-core/scss/components/button/index";
 @import "./_theme.scss";
 
 
@@ -31,7 +30,7 @@ $_kendo-module-meta: (
 // Expose
 @mixin kendo-button--styles() {
     @include module-render( "button" ) {
-        @include kendo-button--layout();
+        @include kendo-button--core();
         @include kendo-button--theme();
     }
 }
