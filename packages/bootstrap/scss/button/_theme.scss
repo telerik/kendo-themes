@@ -1,6 +1,201 @@
-@import "@progress/kendo-theme-default/scss/button/_theme.scss";
-
-
 @mixin kendo-button--theme() {
-    @include kendo-button--theme-base();
+    // Solid button
+    .k-button-solid-base {
+        color: $kendo-color-base-text;
+        background-color: $kendo-color-base;
+        border: 1px solid $kendo-color-border;
+
+        // Hover state
+        &:hover,
+        &.k-hover {
+            background-color: $kendo-color-base-hover;
+        }
+
+        // Focus state
+        &:focus,
+        &.k-focus {
+            // TODO: elevation?
+            box-shadow: 0px 0px 0px 4px rgba($kendo-color-base, 0.5);
+        }
+
+        // Active state
+        &:active,
+        &.k-active {
+            background-color: $kendo-color-base-active;
+        }
+
+        // Selected state
+        &.k-selected {
+            color: $kendo-color-primary-text;
+            background-color: $kendo-color-primary;
+            border-color: $kendo-color-primary;
+        }
+    }
+
+    .k-button-outline-base {
+        @include box-shadow(none);
+        $accent: $kendo-color-base-text;
+
+        border-color: currentColor;
+        color: $accent;
+        background-color: transparent;
+
+        // Hover state
+        &:hover,
+        &.k-hover {
+            color: $kendo-color-base;
+            background-color: $accent;
+            border-color: $accent;
+        }
+
+        // Focus state
+        &:focus,
+        &.k-focus {
+            box-shadow: 0px 0px 0px 4px rgba($kendo-color-base-text, 0.5);
+        }
+
+        // Active state
+        &:active,
+        &.k-active {
+            color: $kendo-color-base;
+            background-color: $accent;
+            border-color: $accent;
+        }
+
+        // Selected state
+        &.k-selected {
+            color: $kendo-color-base;
+            background-color: $accent;
+            border-color: $accent;
+        }
+    }
+
+    .k-button-flat-base {
+        color: $kendo-color-base-text;
+
+        // Hover state
+        &:hover,
+        &.k-hover {
+            background: rgba($kendo-color-base-text, 0.04);
+        }
+
+        // Focus state
+        &:focus,
+        &.k-focus {
+            box-shadow: 0px 0px 0px 2px rgba($kendo-color-base-text, 0.12);
+        }
+
+        // Active state
+        &:active,
+        &.k-active {
+            background: rgba($kendo-color-base-text, 0.16);
+        }
+
+        // Selected state
+        &.k-selected {
+            background: rgba($kendo-color-base-text, 0.32);
+        }
+    }
+
+    @each $name, $palette in $kendo-theme-palettes {
+        .k-button-solid-#{$name} {
+            color: k-map-get($palette, text);
+            background-color: k-map-get($palette, normal);
+
+            // Hover state
+            &:hover,
+            &.k-hover {
+                background-color: k-map-get($palette, hover);
+            }
+
+            // Focus state
+            &:focus,
+            &.k-focus {
+                // TODO: elevation?
+                box-shadow: 0px 0px 0px 4px rgba(k-map-get($palette, normal), 0.5);
+            }
+
+            // Active state
+            &:active,
+            &.k-active {
+                background-color: k-map-get($palette, active);
+            }
+
+            // Selected state
+            &.k-selected {
+                background-color: k-map-get($palette, select);
+            }
+        }
+
+        .k-button-outline-#{$name} {
+            $accent: k-map-get($palette, normal);
+
+            border-color: currentColor;
+            color: $accent;
+            background-color: transparent;
+
+            // Hover state
+            &:hover,
+            &.k-hover {
+                color: $kendo-color-primary-text;
+                background-color: $accent;
+                border-color: $accent;
+            }
+
+            // Focus state
+            &:focus,
+            &.k-focus {
+                box-shadow: 0px 0px 0px 2px rgba($accent, 0.3);
+            }
+
+            // Active state
+            &:active,
+            &.k-active {
+                color: $kendo-color-primary-text;
+                background-color: $accent;
+                border-color: $accent;
+            }
+
+            // Selected state
+            &.k-selected {
+                color: $kendo-color-primary-text;
+                background-color: $accent;
+                border-color: $accent;
+            }
+        }
+
+        .k-button-flat-#{$name} {
+            $accent: k-map-get($palette, normal);
+            color: $accent;
+
+            // Hover state
+            &:hover,
+            &.k-hover {
+                background: rgba($accent, 0.04);
+            }
+
+            // Focus state
+            &:focus,
+            &.k-focus {
+                box-shadow: 0px 0px 0px 4px rgba($accent, 0.12);
+            }
+
+            // Active state
+            &:active,
+            &.k-active {
+                background: rgba($accent, 0.16);
+            }
+
+            // Selected state
+            &.k-selected {
+                background: rgba($accent, 0.32);
+            }
+        }
+
+        // TODO: link button
+        // TODO: clear button
+    }
+    // Button group
+    .k-button-group {
+    }
 }
