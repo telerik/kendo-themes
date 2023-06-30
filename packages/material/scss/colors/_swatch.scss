@@ -6,7 +6,7 @@ $kendo-palette-secondary: $kendo-palette-pink;
 $kendo-palette-tertiary: $kendo-palette-teal;
 
 // Base
-$kendo-color-base: map-get($kendo-palette-indigo, 0);
+$kendo-color-base: map-get($kendo-palette-gray, 0);
 $kendo-color-base-text: map-get($kendo-palette-gray, 16);
 $kendo-color-base-hover: map-get($kendo-palette-gray, 3);
 $kendo-color-base-active: map-get($kendo-palette-gray, 5);
@@ -22,9 +22,9 @@ $kendo-color-primary-select: map-get($kendo-palette-indigo, 5);
 $kendo-color-primary-focus: map-get($kendo-palette-indigo, 7);
 
 // Misc
-$kendo-color-border: map-get($kendo-palette-gray, 4);
-$kendo-color-border-hover: map-get($kendo-palette-gray, 6); // TODO;
-$kendo-color-border-focus: map-get($kendo-palette-gray, 6); // TODO;
+$kendo-color-border: map-get($kendo-palette-gray, 11);
+$kendo-color-border-hover: map-get($kendo-palette-gray, 14);
+$kendo-color-border-focus: $kendo-color-primary;
 
 // Alert
 $kendo-color-error: map-get($kendo-palette-red, 9);

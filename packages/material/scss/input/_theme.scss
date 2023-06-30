@@ -1,6 +1,198 @@
-@import "@progress/kendo-theme-default/scss/input/_theme.scss";
-
-
 @mixin kendo-input--theme() {
-    @include kendo-input--theme-base();
+    .k-input,
+    .k-picker {
+        .k-input-validation-icon {
+            color: $kendo-color-error;
+        }
+    }
+    .k-input-solid,
+    .k-picker-solid {
+        color: $kendo-color-base-text;
+        background-color: $kendo-color-base-hover;
+        border-color: transparent;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-width: 0;
+        position: relative;
+
+        & > .k-input-button {
+            background-color: $kendo-color-base-hover;
+            border-color: $kendo-color-base;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 1px;
+            background-color: $kendo-color-border;
+        }
+
+        &:hover,
+        &.k-hover {
+            &:after {
+                background-color: $kendo-color-border-hover;
+            }
+        }
+
+        &:focus,
+        &:focus-within,
+        &.k-focus {
+            &:after {
+                height: 2px;
+                background-color: $kendo-color-border-focus;
+            }
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            &:after {
+                background-color: $kendo-color-error;
+            }
+        }
+
+        &.k-disabled,
+        &[disabled],
+        &:disabled {
+            &:after {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .k-input-outline,
+    .k-picker-outline {
+        background-color: $kendo-color-base;
+        border-color: transparent;
+
+        & > .k-input-button {
+            background-color: $kendo-color-base;
+            border-color: $kendo-color-border;
+        }
+
+        & > .k-input-inner,
+        & > .k-input-button {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        &:after {
+            content: "";
+            pointer-events: none;
+            position: absolute;
+            border: 1px solid $kendo-color-border;
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+            border-radius: 4px;
+        }
+
+        &:hover,
+        &.k-hover {
+            &:after {
+                border-color: $kendo-color-border-hover;
+            }
+
+            & > .k-input-button {
+                border-color: $kendo-color-border-hover;
+            }
+        }
+
+        &:focus,
+        &:focus-within,
+        &.k-focus {
+            &:after {
+                border-width: 2px;
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                border-color: $kendo-color-border-focus;
+            }
+
+            & > .k-input-button {
+                border-color: $kendo-color-border-focus;
+            }
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            &:after {
+                border-color: $kendo-color-error;
+            }
+
+            & > .k-input-button {
+                border-color: $kendo-color-error;
+            }
+        }
+
+        &.k-disabled,
+        &[disabled],
+        &:disabled {
+            &:after {
+                border-color: $kendo-color-border;
+            }
+        }
+    }
+
+    .k-input-flat,
+    .k-picker-flat {
+        color: $kendo-color-base-text;
+        background-color: $kendo-color-base;
+
+        border-color: transparent;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-width: 0;
+        position: relative;
+
+        & > .k-input-button {
+            background-color: $kendo-color-base;
+            border-color: $kendo-color-base;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 1px;
+            background-color: $kendo-color-border;
+        }
+
+        &:hover,
+        &.k-hover {
+            &:after {
+                background-color: $kendo-color-border-hover;
+            }
+        }
+
+        &:focus,
+        &:focus-within,
+        &.k-focus {
+            &:after {
+                height: 2px;
+                background-color: $kendo-color-border-focus;
+            }
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            &:after {
+                background-color: $kendo-color-error;
+            }
+        }
+
+        &.k-disabled,
+        &[disabled],
+        &:disabled {
+            &:after {
+                background-color: $kendo-color-border;
+            }
+        }
+    }
 }
