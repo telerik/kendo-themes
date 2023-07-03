@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.5.0](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.2...v6.5.0) (2023-07-03)
+
+
+### Bug Fixes
+
+* revert breadcrumb size options ([b8e72e0](https://github.com/telerik/kendo-themes/commit/b8e72e0badba310c84bbbaef46d467a8c35cd339))
+* revert breadcrumb sizing tests ([efddaeb](https://github.com/telerik/kendo-themes/commit/efddaeb91d2c1bf618de16497f1d346040b95c92))
+
+
+
+
+
 # [6.5.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.1...v6.5.0-dev.2) (2023-07-03)
 
 
