@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.5.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.1...v6.5.0-dev.2) (2023-07-03)
+
+
+### Bug Fixes
+
+* **action-sheet:** update adaptive action-sheet font-size to match design ([08d3dc9](https://github.com/telerik/kendo-themes/commit/08d3dc99a83dfad37abafebfd6cbeb4dd9cd5e9e))
+
+
+
+
+
 # [6.5.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.0...v6.5.0-dev.1) (2023-06-26)
 
 
