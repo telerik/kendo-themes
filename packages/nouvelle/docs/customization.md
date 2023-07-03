@@ -1074,6 +1074,16 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
+    <td>$kendo-breadcrumb-root-link-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-breadcrumb-link-padding-x</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Breadcrumb root link.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-breadcrumb-link-icon-spacing</td>
     <td>Number</td>
     <td><code>$kendo-icon-spacing</code></td>
