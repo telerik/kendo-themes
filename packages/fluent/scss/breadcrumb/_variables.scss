@@ -2,57 +2,34 @@
 @use "../core/" as *;
 @use "../icon/_variables.scss" as *;
 
-/// The horizontal margin of the Breadcrumb
+/// The horizontal margin of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-margin-x: 0px !default;
-/// The vertical margin of the Breadcrumb
+/// The vertical margin of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-margin-y: 0px !default;
-/// The horizontal padding of the Breadcrumb
+/// The horizontal padding of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-padding-x: 0px !default;
-/// The vertical padding of the Breadcrumb
+/// The vertical padding of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-padding-y: 0px !default;
-
-/// The width of the border around the Breadcrumb
+/// The width of the border around the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-border-width: 0px !default;
-
-/// The font family of the Breadcrumb
+/// The font family of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-font-family: var( --kendo-font-family, inherit ) !default;
-/// The font size of the Breadcrumb
-
+/// The font size of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-font-size: var( --kendo-font-size, inherit ) !default;
-/// The font size of the small breadcrumb.
-/// @group breadcrumb
-$kendo-breadcrumb-sm-font-size: var( --kendo-font-size-md, inherit ) !default;
-/// The font size of the medium breadcrumb.
-/// @group breadcrumb
-$kendo-breadcrumb-md-font-size: var( --kendo-font-size-md, inherit ) !default;
-/// The font size of the large breadcrumb.
-/// @group breadcrumb
-$kendo-breadcrumb-lg-font-size: var( --kendo-font-size-md, inherit ) !default;
-
-/// The line height used along with the $kendo-font-size variable of the Breadcrumb.
+/// The line height of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-line-height: var( --kendo-line-height, normal ) !default;
-/// The line height used along with the $kendo-font-size variable of the small breadcrumb.
-/// @group breadcrumb
-$kendo-breadcrumb-sm-line-height: var( --kendo-line-height, normal ) !default;
-/// The line height used along with the $kendo-font-size variable of the medium breadcrumb.
-/// @group breadcrumb
-$kendo-breadcrumb-md-line-height: var( --kendo-line-height, normal ) !default;
-/// The line height used along with the $kendo-font-size variable of the large breadcrumb.
-/// @group breadcrumb
-$kendo-breadcrumb-lg-line-height: var( --kendo-line-height, normal ) !default;
-
-/// The background color of the Breadcrumb
+/// The background color of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-bg: var( --kendo-component-bg, initial ) !default;
-/// The text color of the Breadcrumb
+/// The text color of the breadcrumb
 /// @group breadcrumb
 $kendo-breadcrumb-text: k-get-theme-color-var( neutral-130 ) !default;
 /// The border color of the breadcrumb
@@ -62,42 +39,22 @@ $kendo-breadcrumb-border: transparent !default;
 /// @group breadcrumb
 $kendo-breadcrumb-focus-shadow: 0 0 0 1px k-get-theme-color-var( neutral-30 ) !default;
 
-/// The horizontal padding of the Breadcrumb link
+/// The horizontal padding of the breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-padding-x: map.get( $kendo-spacing, 2 ) !default;
-/// The horizontal padding of the small Breadcrumb link.
+/// The vertical padding of the breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-sm-link-padding-x: map.get( $kendo-spacing, 2 ) !default;
-/// The horizontal padding of the medium Breadcrumb link.
-/// @group breadcrumb
-$kendo-breadcrumb-md-link-padding-x: $kendo-breadcrumb-link-padding-x !default;
-/// The horizontal padding of the large Breadcrumb link.
-/// @group breadcrumb
-$kendo-breadcrumb-lg-link-padding-x: map.get( $kendo-spacing, 2 ) !default;
-
-/// The vertical padding of the Breadcrumb link
-/// @group breadcrumb
-$kendo-breadcrumb-link-padding-y: map.get( $kendo-spacing, 2 ) !default;
-/// The vertical padding of the small Breadcrumb link.
-/// @group breadcrumb
-$kendo-breadcrumb-sm-link-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
-/// The vertical padding of the medium Breadcrumb link.
-/// @group breadcrumb
-$kendo-breadcrumb-md-link-padding-y: $kendo-breadcrumb-link-padding-y !default;
-/// The vertical padding of the large Breadcrumb link.
-/// @group breadcrumb
-$kendo-breadcrumb-lg-link-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
-
-/// The radius of the border around the Breadcrumb link
+$kendo-breadcrumb-link-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
+/// The radius of the border around the breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-border-radius: 0px !default;
-/// The initial text color of the Breadcrumb link
+/// The initial text color of the breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-initial-text: inherit !default;
-/// The background color of the Breadcrumb link
+/// The background color of the breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-bg: transparent !default;
-/// The text color of the Breadcrumb link
+/// The text color of the breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-text: k-get-theme-color-var( neutral-130 ) !default;
 /// The borer color of the breadcrumb link
@@ -142,7 +99,7 @@ $kendo-breadcrumb-link-disabled-text: var( --kendo-disabled-text, initial ) !def
 /// The border color of the disabled breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-disabled-border: none !default;
-/// The background color of selected the Breadcrumb link
+/// The background color of selected the breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-selected-bg: var( --kendo-component-bg, initial ) !default;
 /// The text color of the selected breadcrumb link
@@ -155,13 +112,13 @@ $kendo-breadcrumb-link-selected-border: transparent !default;
 /// @group breadcrumb
 $kendo-breadcrumb-link-selected-font-weight: var( --kendo-font-weight-bold, bold ) !default;
 
-/// The background color of the Breadcrumb root link
+/// The background color of the breadcrumb root link
 /// @group breadcrumb
 $kendo-breadcrumb-root-link-bg: $kendo-breadcrumb-link-bg !default;
-/// The text color of the Breadcrumb root link
+/// The text color of the breadcrumb root link
 /// @group breadcrumb
 $kendo-breadcrumb-root-link-text: $kendo-breadcrumb-link-text !default;
-/// The border color of the Breadcrumb root link
+/// The border color of the breadcrumb root link
 /// @group breadcrumb
 $kendo-breadcrumb-root-link-border: $kendo-breadcrumb-link-border !default;
 /// The background color of the hovered breadcrumb root link
@@ -191,7 +148,7 @@ $kendo-breadcrumb-root-link-focus-text: $kendo-breadcrumb-link-focus-text !defau
 /// The border color of the focused breadcrumb root link
 /// @group breadcrumb
 $kendo-breadcrumb-root-link-focus-shadow: $kendo-breadcrumb-link-focus-shadow !default;
-/// The focus and hover background color of the Breadcrumb root link
+/// The focus and hover background color of the breadcrumb root link
 /// @group breadcrumb
 $kendo-breadcrumb-root-link-focus-hover-bg: $kendo-breadcrumb-link-focus-hover-bg !default;
 /// The text color of the disabled breadcrumb root link
@@ -202,61 +159,13 @@ $kendo-breadcrumb-current-item-bg: null !default;
 $kendo-breadcrumb-current-item-text: null !default;
 $kendo-breadcrumb-current-item-border: null !default;
 
-/// The vertical padding of the Breadcrumb link icon
+/// The horizontal padding of the breadcrumb link icon
 /// @group breadcrumb
-$kendo-breadcrumb-icon-link-padding-y: map.get( $kendo-spacing, 2.5 ) !default;
-/// The vertical padding of the small Breadcrumb link icon.
+$kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-link-padding-x !default;
+/// The vertical padding of the breadcrumb link icon
 /// @group breadcrumb
-$kendo-breadcrumb-sm-icon-link-padding-y: map.get( $kendo-spacing, 2 ) !default;
-/// The vertical padding of the medium Breadcrumb link icon.
-/// @group breadcrumb
-$kendo-breadcrumb-md-icon-link-padding-y: $kendo-breadcrumb-icon-link-padding-y !default;
-/// The vertical padding of the large Breadcrumb link icon.
-/// @group breadcrumb
-$kendo-breadcrumb-lg-icon-link-padding-y: map.get( $kendo-spacing, 3 ) !default;
-
-/// The horizontal padding of the Breadcrumb link icon
-/// @group breadcrumb
-$kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-icon-link-padding-y !default;
-/// The horizontal padding of the small Breadcrumb link icon.
-/// @group breadcrumb
-$kendo-breadcrumb-sm-icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-y !default;
-/// The horizontal padding of the medium Breadcrumb link icon.
-/// @group breadcrumb
-$kendo-breadcrumb-md-icon-link-padding-x: $kendo-breadcrumb-icon-link-padding-x !default;
-/// The horizontal padding of the large Breadcrumb link icon.
-/// @group breadcrumb
-$kendo-breadcrumb-lg-icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-y !default;
+$kendo-breadcrumb-icon-link-padding-y: $kendo-breadcrumb-icon-link-padding-x !default;
 
 // Root link spacing
+$kendo-breadcrumb-root-link-spacing: 0px !default;
 $kendo-breadcrumb-link-icon-spacing: var( --kendo-icon-spacing, #{$kendo-icon-spacing} ) !default;
-
-
-/// The sizes map for the Breadcrumb.
-/// @group breadcrumb
-$kendo-breadcrumb-sizes: (
-    sm: (
-        link-padding-x: $kendo-breadcrumb-sm-link-padding-x,
-        link-padding-y: $kendo-breadcrumb-sm-link-padding-y,
-        icon-link-padding-x: $kendo-breadcrumb-sm-icon-link-padding-x,
-        icon-link-padding-y: $kendo-breadcrumb-sm-icon-link-padding-y,
-        font-size: $kendo-breadcrumb-sm-font-size,
-        line-height: $kendo-breadcrumb-sm-line-height
-    ),
-    md: (
-        link-padding-x: $kendo-breadcrumb-md-link-padding-x,
-        link-padding-y: $kendo-breadcrumb-md-link-padding-y,
-        icon-link-padding-x: $kendo-breadcrumb-md-icon-link-padding-x,
-        icon-link-padding-y: $kendo-breadcrumb-md-icon-link-padding-y,
-        font-size: $kendo-breadcrumb-md-font-size,
-        line-height: $kendo-breadcrumb-md-line-height
-    ),
-    lg: (
-        link-padding-x: $kendo-breadcrumb-lg-link-padding-x,
-        link-padding-y: $kendo-breadcrumb-lg-link-padding-y,
-        icon-link-padding-x: $kendo-breadcrumb-lg-icon-link-padding-x,
-        icon-link-padding-y: $kendo-breadcrumb-lg-icon-link-padding-y,
-        font-size: $kendo-breadcrumb-lg-font-size,
-        line-height: $kendo-breadcrumb-lg-line-height
-    )
-) !default;
