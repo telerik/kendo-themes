@@ -1,7 +1,6 @@
 @import "./palettes";
 
-// Base
-$kendo-color-base: map-get($kendo-palette-gray, 2);
+ $kendo-color-base: map-get($kendo-palette-gray, 2);
 $kendo-color-base-text: map-get($kendo-palette-gray, 12);
 $kendo-color-base-hover: map-get($kendo-palette-gray, 3);
 $kendo-color-base-active: map-get($kendo-palette-gray, 5);

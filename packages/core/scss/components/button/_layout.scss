@@ -1,4 +1,5 @@
 @mixin kendo-button--layout-base() {
+    @debug $kendo-button-font-family;
     // Button
     .k-button {
         border-color: transparent;
@@ -28,11 +29,6 @@
         *::before,
         *::after {
             box-sizing: border-box;
-        }
-
-        &:disabled,
-        &.k-disabled {
-            @include disabled($kendo-disabled-styling);
         }
 
         &::-moz-focus-inner {
@@ -196,30 +192,6 @@
         }
     }
 
-    // Flat button
-    .k-button-flat {
-        border-color: transparent !important; // stylelint-disable-line declaration-no-important
-        // color: inherit;
-        // background: none !important; // stylelint-disable-line declaration-no-important
-        box-shadow: none !important; // stylelint-disable-line declaration-no-important
-
-        // Overlay background
-        &::before {
-            display: block !important; // stylelint-disable-line declaration-no-important
-        }
-
-        // Focus ring
-        &::after {
-            box-shadow: inset 0 0 0 2px currentColor;
-            display: block !important; // stylelint-disable-line declaration-no-important
-        }
-
-        &:focus::after,
-        &.k-focus::after {
-            opacity: $kendo-flat-button-focus-ring-opacity;
-        }
-    }
-
     // Link button
     .k-button-link {
         border-color: transparent;
@@ -241,27 +213,10 @@
         box-shadow: none !important; // stylelint-disable-line declaration-no-important
     }
 
-    // Button overlay
-    .k-button-overlay {
-        @include border-radius(inherit);
-        content: "";
-        background: currentColor;
-        opacity: 0;
-        display: none;
-        pointer-events: none;
-        position: absolute;
-        left: -$kendo-button-border-width;
-        right: -$kendo-button-border-width;
-        top: -$kendo-button-border-width;
-        bottom: -$kendo-button-border-width;
-        z-index: 0;
-        transition: opacity 0.2s ease-in-out;
-    }
-
     // Button focus ring
     .k-button {
         // stylelint-disable-line
-
+/*
         &::after {
             @include border-radius(inherit);
             content: "";
@@ -275,7 +230,7 @@
             bottom: -$kendo-button-border-width;
             z-index: 0;
             transition: opacity 0.2s ease-in-out;
-        }
+        } */
     }
 }
 

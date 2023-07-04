@@ -9,8 +9,7 @@ $_kendo-module-meta: (
 
 
 // Component
-@forward "./_variables.scss";
-@use "./_layout.scss" as *;
+@use "../core" as *;
 @use "./_theme.scss" as *;
 
 // Register
@@ -20,7 +19,7 @@ $_kendo-module-meta: (
 // Expose
 @mixin input-styles() {
     @include module.render( "input" ) {
-        @include kendo-input--layout();
+        @include kendo-input--core();
         @include kendo-input--theme();
     }
 }

@@ -3,6 +3,17 @@ $kendo-important: true !default;
 
 $kendo-utils-theme-colors: () !default;
 
+$kendo-color-primary: null !default;
+$kendo-color-secondary: null !default;
+$kendo-color-tertiary: null !default;
+$kendo-color-info: null !default;
+$kendo-color-success: null !default;
+$kendo-color-warning: null !default;
+$kendo-color-error: null !default;
+$kendo-color-dark: null !default;
+$kendo-color-light: null !default;
+$kendo-color-inverse: null !default;
+
 $kendo-utils-theme-colors: (
     "primary": $kendo-color-primary,
     "secondary": $kendo-color-secondary,

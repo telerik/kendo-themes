@@ -2,51 +2,17 @@
 @use "sass:math";
 @use "sass:meta";
 
-$kendo-use-input-button-width: true !default;
-$kendo-use-input-spinner-width: true !default;
-$kendo-use-input-spinner-icon-offset: false !default;
-
-/// Base font size across all components.
-$kendo-font-size: 14px !default;
-$kendo-font-size-xs: 10px !default;
-$kendo-font-size-sm: 12px !default;
-$kendo-font-size-md: $kendo-font-size !default;
-$kendo-font-size-lg: 16px !default;
-$kendo-font-size-xl: 20px !default;
-
-$kendo-font-sizes: (
-    xs: $kendo-font-size-xs,
-    sm: $kendo-font-size-sm,
-    md: $kendo-font-size-md,
-    lg: $kendo-font-size-lg,
-    xl: $kendo-font-size-xl
-) !default;
-
+@forward "../colors/swatch";
 
 /// Font family across all components.
 $kendo-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !default;
-
-
-/// Line height used along with $kendo-font-size.
-$kendo-line-height: math.div( 20, 14 ) !default;
-$kendo-line-height-xs: 1 !default;
-$kendo-line-height-sm: 1.25 !default;
-$kendo-line-height-md: $kendo-line-height !default;
-$kendo-line-height-lg: 1.5 !default;
-$kendo-line-height-em: calc( #{$kendo-line-height} * 1em) !default;
-
-
-/// Font weight.
-$kendo-font-weight: 400 !default;
-$kendo-font-weight-light: 300 !default;
-$kendo-font-weight-bold: 600 !default;
 
 $kendo-letter-spacing: normal !default;
 
 // $kendo-scrollbar-width: 17px !default;
 
 // Default transition
-$kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out, opacity .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out !default;
+$kendo-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out !default;
 
 @mixin core-styles() {
     :root {
@@ -70,7 +36,6 @@ $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, bord
         --kendo-font-weight-bold: #{$kendo-font-weight-bold};
 
         --kendo-letter-spacing: #{$kendo-letter-spacing};
-
 
         --kendo-transition: #{$kendo-transition};
     }

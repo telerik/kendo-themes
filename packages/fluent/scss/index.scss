@@ -1,322 +1,322 @@
 // Forward component modules
 @forward "./core";
-
-
-// Typography and utils
-@forward "./typography";
 @forward "./utils";
-@forward "./draggable";
-
-
-// Generic content
-@forward "./icon";
-@forward "./messagebox";
-
-
-// Primitive components
-@forward "./action-buttons";
-@forward "./list";
-@forward "./listgroup";
-@forward "./overlay";
-@forward "./popup";
-@forward "./ripple";
-@forward "./table";
-@forward "./virtual-scroller";
-
-
-// Native forms
-@forward "./button";
-@forward "./split-button";
-@forward "./menu-button";
-@forward "./input";
-@forward "./textbox";
-@forward "./textarea";
-@forward "./checkbox";
-@forward "./listbox";
-@forward "./progressbar";
-@forward "./radio";
-@forward "./slider";
-
-
-// Popups and modals
-@forward "./action-sheet";
-@forward "./window";
-@forward "./dialog";
-@forward "./drawer";
-@forward "./notification";
-@forward "./popover";
-@forward "./responsivepanel";
-
-
-// Indicators
-@forward "./avatar";
-@forward "./badge";
-@forward "./chip";
-@forward "./color-preview";
-@forward "./loader";
-@forward "./skeleton";
-@forward "./tooltip";
-
-
-// Form helpers
-@forward "./forms";
-@forward "./validator";
-@forward "./floating-label";
-
-
-// Form requirements
-@forward "./calendar";
-@forward "./timeselector";
-
-
-// Augmented forms
-@forward "./autocomplete";
-@forward "./captcha";
-@forward "./colorpalette";
-@forward "./colorgradient";
-@forward "./coloreditor";
-@forward "./colorpicker";
-@forward "./combobox";
-@forward "./dateinput";
-@forward "./datepicker";
-@forward "./timepicker";
-@forward "./datetimepicker";
-@forward "./daterangepicker";
-@forward "./dropdowngrid";
-@forward "./dropdownlist";
-@forward "./dropdowntree";
-@forward "./maskedtextbox";
-@forward "./multiselect";
-@forward "./numerictextbox";
-@forward "./rating";
-@forward "./searchbox";
-@forward "./switch";
-@forward "./upload";
-@forward "./dropzone";
-
-
-// Command interfaces
-@forward "./appbar";
-@forward "./fab";
-@forward "./menu";
-@forward "./toolbar";
-
-
-// Navigation
-@forward "./bottom-navigation";
-@forward "./breadcrumb";
-@forward "./pager";
-@forward "./stepper";
-@forward "./tabstrip";
-@forward "./treeview";
-@forward "./wizard";
-
-
-// Layout & containers
-@forward "./card";
-@forward "./expansion-panel";
-@forward "./panelbar";
-@forward "./splitter";
-@forward "./tilelayout";
-
-
-// Editors
-@forward "./editor";
-@forward "./imageeditor";
-
-
-// Data management
-@forward "./grid";
-@forward "./listview";
-@forward "./spreadsheet";
-@forward "./pivotgrid";
-@forward "./treelist";
-@forward "./filter";
-@forward "./filemanager";
-@forward "./taskboard";
-
-
-// Scheduling
-@forward "./gantt";
-@forward "./scheduler";
-
-
-// Misc
-@forward "./adaptive";
-@forward "./chat";
-@forward "./mediaplayer";
-@forward "./timeline";
-@forward "./pdf-viewer";
-@forward "./scroller";
-@forward "./scrollview";
-
-
-// Dataviz
-@forward "./dataviz";
-@forward "./map";
-@forward "./orgchart";
-@forward "./signature";
-
-
-// Use component modules
-@use "./core" as *;
 
 
 // Typography and utils
-@use "./typography" as *;
-@use "./utils" as *;
-@use "./draggable" as *;
+// @forward "./typography";
+// @forward "./draggable";
 
 
-// Generic content
-@use "./icon" as *;
-@use "./messagebox" as *;
+// // Generic content
+// @forward "./icon";
+// @forward "./messagebox";
 
 
-// Primitive components
-@use "./action-buttons" as *;
-@use "./list" as *;
-@use "./listgroup" as *;
-@use "./overlay" as *;
-@use "./popup" as *;
-@use "./ripple" as *;
-@use "./table" as *;
-@use "./virtual-scroller" as *;
+// // Primitive components
+// @forward "./action-buttons";
+// @forward "./list";
+// @forward "./listgroup";
+// @forward "./overlay";
+// @forward "./popup";
+// @forward "./ripple";
+// @forward "./table";
+// @forward "./virtual-scroller";
+
+
+// // Native forms
+// @forward "./button";
+// @forward "./split-button";
+// @forward "./menu-button";
+// @forward "./input";
+// @forward "./textbox";
+// @forward "./textarea";
+// @forward "./checkbox";
+// @forward "./listbox";
+// @forward "./progressbar";
+// @forward "./radio";
+// @forward "./slider";
+
+
+// // Popups and modals
+// @forward "./action-sheet";
+// @forward "./window";
+// @forward "./dialog";
+// @forward "./drawer";
+// @forward "./notification";
+// @forward "./popover";
+// @forward "./responsivepanel";
 
 
 // Indicators
-@use "./avatar" as *;
-@use "./badge" as *;
-@use "./chip" as *;
-@use "./color-preview" as *;
-@use "./loader" as *;
-@use "./skeleton" as *;
-@use "./tooltip" as *;
+// @forward "./avatar";
+// @forward "./badge";
+// @forward "./chip";
+// @forward "./color-preview";
+// @forward "./loader";
+// @forward "./skeleton";
+// @forward "./tooltip";
 
 
-// Form helpers
-@use "./forms" as *;
-@use "./validator" as *;
-@use "./floating-label" as *;
+// // Form helpers
+// @forward "./forms";
+// @forward "./validator";
+// @forward "./floating-label";
 
 
-// Native forms
-@use "./button" as *;
-@use "./split-button" as *;
-@use "./menu-button" as *;
-@use "./input" as *;
-@use "./textbox" as *;
-@use "./textarea" as *;
-@use "./checkbox" as *;
-@use "./listbox" as *;
-@use "./progressbar" as *;
-@use "./radio" as *;
-@use "./slider" as *;
+// // Form requirements
+// @forward "./calendar";
+// @forward "./timeselector";
 
 
-// Form requirements
-@use "./calendar" as *;
-@use "./timeselector" as *;
+// // Augmented forms
+// @forward "./autocomplete";
+// @forward "./captcha";
+// @forward "./colorpalette";
+// @forward "./colorgradient";
+// @forward "./coloreditor";
+// @forward "./colorpicker";
+// @forward "./combobox";
+// @forward "./dateinput";
+// @forward "./datepicker";
+// @forward "./timepicker";
+// @forward "./datetimepicker";
+// @forward "./daterangepicker";
+// @forward "./dropdowngrid";
+// @forward "./dropdownlist";
+// @forward "./dropdowntree";
+// @forward "./maskedtextbox";
+// @forward "./multiselect";
+// @forward "./numerictextbox";
+// @forward "./rating";
+// @forward "./searchbox";
+// @forward "./switch";
+// @forward "./upload";
+// @forward "./dropzone";
 
 
-// Augmented forms
-@use "./autocomplete" as *;
-@use "./captcha" as *;
-@use "./colorpalette" as *;
-@use "./colorgradient" as *;
-@use "./coloreditor" as *;
-@use "./colorpicker" as *;
-@use "./combobox" as *;
-@use "./dateinput" as *;
-@use "./datepicker" as *;
-@use "./timepicker" as *;
-@use "./timedurationpicker" as *;
-@use "./datetimepicker" as *;
-@use "./daterangepicker" as *;
-@use "./dropdowngrid" as *;
-@use "./dropdownlist" as *;
-@use "./dropdowntree" as *;
-@use "./maskedtextbox" as *;
-@use "./multiselect" as *;
-@use "./numerictextbox" as *;
-@use "./rating" as *;
-@use "./searchbox" as *;
-@use "./switch" as *;
-@use "./upload" as *;
-@use "./dropzone" as *;
-
-
-// Command interfaces
-@use "./appbar" as *;
-@use "./fab" as *;
-@use "./menu" as *;
-@use "./toolbar" as *;
-
-
-// Popups and modals
-@use "./action-sheet" as *;
-@use "./dialog" as *;
-@use "./drawer" as *;
-@use "./notification" as *;
-@use "./popover" as *;
-@use "./responsivepanel" as *;
-@use "./window" as *;
+// // Command interfaces
+// @forward "./appbar";
+// @forward "./fab";
+// @forward "./menu";
+// @forward "./toolbar";
 
 
 // Navigation
-@use "./bottom-navigation" as *;
-@use "./breadcrumb" as *;
-@use "./pager" as *;
-@use "./stepper" as *;
-@use "./tabstrip" as *;
-@use "./treeview" as *;
-@use "./wizard" as *;
+// @forward "./bottom-navigation";
+// @forward "./breadcrumb";
+// @forward "./pager";
+// @forward "./stepper";
+// @forward "./tabstrip";
+// @forward "./treeview";
+// @forward "./wizard";
 
 
-// Layout & containers
-@use "./card" as *;
-@use "./expansion-panel" as *;
-@use "./panelbar" as *;
-@use "./splitter" as *;
-@use "./tilelayout" as *;
-
-
-// Data management
-@use "./grid" as *;
-@use "./listview" as *;
-@use "./spreadsheet" as *;
-@use "./pivotgrid" as *;
-@use "./treelist" as *;
-@use "./filter" as *;
-@use "./filemanager" as *;
-@use "./taskboard" as *;
+// // Layout & containers
+// @forward "./card";
+// @forward "./expansion-panel";
+// @forward "./panelbar";
+// @forward "./splitter";
+// @forward "./tilelayout";
 
 
 // Editors
-@use "./editor" as *;
-@use "./imageeditor" as *;
+// @forward "./editor";
+// @forward "./imageeditor";
+
+
+// // Data management
+// @forward "./grid";
+// @forward "./listview";
+// @forward "./spreadsheet";
+// @forward "./pivotgrid";
+// @forward "./treelist";
+// @forward "./filter";
+// @forward "./filemanager";
+// @forward "./taskboard";
 
 
 // Scheduling
-@use "./gantt" as *;
-@use "./scheduler" as *;
+// @forward "./gantt";
+// @forward "./scheduler";
 
 
 // Misc
-@use "./adaptive" as *;
-@use "./chat" as *;
-@use "./mediaplayer" as *;
-@use "./timeline" as *;
-@use "./pdf-viewer" as *;
-@use "./scroller" as *;
-@use "./scrollview" as *;
+// @forward "./adaptive";
+// @forward "./chat";
+// @forward "./mediaplayer";
+// @forward "./timeline";
+// @forward "./pdf-viewer";
+// @forward "./scroller";
+// @forward "./scrollview";
 
 
 // Dataviz
-@use "./dataviz" as *;
-@use "./map" as *;
-@use "./orgchart" as *;
-@use "./signature" as *;
+// @forward "./dataviz";
+// @forward "./map";
+// @forward "./orgchart";
+// @forward "./signature";
+
+
+// // Use component modules
+@use "./core" as *;
+@use "./utils" as *;
+
+
+// // Typography and utils
+// @use "./typography" as *;
+// @use "./draggable" as *;
+
+
+// // Generic content
+// @use "./icon" as *;
+// @use "./messagebox" as *;
+
+
+// // Primitive components
+// @use "./action-buttons" as *;
+// @use "./list" as *;
+// @use "./listgroup" as *;
+// @use "./overlay" as *;
+// @use "./popup" as *;
+// @use "./ripple" as *;
+// @use "./table" as *;
+// @use "./virtual-scroller" as *;
+
+
+// Indicators
+// @use "./avatar" as *;
+// @use "./badge" as *;
+// @use "./chip" as *;
+// @use "./color-preview" as *;
+// @use "./loader" as *;
+// @use "./skeleton" as *;
+// @use "./tooltip" as *;
+
+
+// // Form helpers
+// @use "./forms" as *;
+// @use "./validator" as *;
+// @use "./floating-label" as *;
+
+
+// // Native forms
+@use "./button" as *;
+// @use "./split-button" as *;
+// @use "./menu-button" as *;
+@use "./input" as *;
+// @use "./textbox" as *;
+// @use "./textarea" as *;
+// @use "./checkbox" as *;
+// @use "./listbox" as *;
+// @use "./progressbar" as *;
+// @use "./radio" as *;
+// @use "./slider" as *;
+
+
+// // Form requirements
+// @use "./calendar" as *;
+// @use "./timeselector" as *;
+
+
+// // Augmented forms
+// @use "./autocomplete" as *;
+// @use "./captcha" as *;
+// @use "./colorpalette" as *;
+// @use "./colorgradient" as *;
+// @use "./coloreditor" as *;
+// @use "./colorpicker" as *;
+// @use "./combobox" as *;
+// @use "./dateinput" as *;
+// @use "./datepicker" as *;
+// @use "./timepicker" as *;
+// @use "./timedurationpicker" as *;
+// @use "./datetimepicker" as *;
+// @use "./daterangepicker" as *;
+// @use "./dropdowngrid" as *;
+// @use "./dropdownlist" as *;
+// @use "./dropdowntree" as *;
+// @use "./maskedtextbox" as *;
+// @use "./multiselect" as *;
+// @use "./numerictextbox" as *;
+// @use "./rating" as *;
+// @use "./searchbox" as *;
+// @use "./switch" as *;
+// @use "./upload" as *;
+// @use "./dropzone" as *;
+
+
+// // Command interfaces
+// @use "./appbar" as *;
+// @use "./fab" as *;
+// @use "./menu" as *;
+// @use "./toolbar" as *;
+
+
+// // Popups and modals
+// @use "./action-sheet" as *;
+// @use "./dialog" as *;
+// @use "./drawer" as *;
+// @use "./notification" as *;
+// @use "./popover" as *;
+// @use "./responsivepanel" as *;
+// @use "./window" as *;
+
+
+// Navigation
+// @use "./bottom-navigation" as *;
+// @use "./breadcrumb" as *;
+// @use "./pager" as *;
+// @use "./stepper" as *;
+// @use "./tabstrip" as *;
+// @use "./treeview" as *;
+// @use "./wizard" as *;
+
+
+// // Layout & containers
+// @use "./card" as *;
+// @use "./expansion-panel" as *;
+// @use "./panelbar" as *;
+// @use "./splitter" as *;
+// @use "./tilelayout" as *;
+
+
+// // Data management
+// @use "./grid" as *;
+// @use "./listview" as *;
+// @use "./spreadsheet" as *;
+// @use "./pivotgrid" as *;
+// @use "./treelist" as *;
+// @use "./filter" as *;
+// @use "./filemanager" as *;
+// @use "./taskboard" as *;
+
+
+// Editors
+// @use "./editor" as *;
+// @use "./imageeditor" as *;
+
+
+// Scheduling
+// @use "./gantt" as *;
+// @use "./scheduler" as *;
+
+
+// Misc
+// @use "./adaptive" as *;
+// @use "./chat" as *;
+// @use "./mediaplayer" as *;
+// @use "./timeline" as *;
+// @use "./pdf-viewer" as *;
+// @use "./scroller" as *;
+// @use "./scrollview" as *;
+
+
+// Dataviz
+// @use "./dataviz" as *;
+// @use "./map" as *;
+// @use "./orgchart" as *;
+// @use "./signature" as *;
 
 
 // Configuration
@@ -329,165 +329,165 @@
 @mixin styles() {
     // Core
     @include kendo-core--styles();
-
-    // Core css variables
-    @include core-styles();
-
-    // Color system css variables
-    @include color-system-styles();
-
-    // Typography and utils
-    @include typography-styles();
     @include utils-styles();
 
+    // Core css variables
+    // @include core-styles();
 
-    // Generic content
-    @include icon-styles();
-    @include messagebox-styles();
+    // Color system css variables
+    // @include color-system-styles();
 
-
-    // Primitive components
-    @include action-buttons-styles();
-    @include list-styles();
-    @include listgroup-styles();
-    @include overlay-styles();
-    @include popup-styles();
-    @include ripple-styles();
-    @include table-styles();
-    @include virtual-scroller-styles();
+    // // Typography and utils
+    // @include typography-styles();
 
 
-    // Indicators
-    @include avatar-styles();
-    @include badge-styles();
-    @include chip-styles();
-    @include color-preview-styles();
-    @include loader-styles();
-    @include skeleton-styles();
-    @include tooltip-styles();
+    // // Generic content
+    // @include icon-styles();
+    // @include messagebox-styles();
 
 
-    // Form helpers
-    @include forms-styles();
-    @include validator-styles();
-    @include floating-label-styles();
+    // // Primitive components
+    // @include action-buttons-styles();
+    // @include list-styles();
+    // @include listgroup-styles();
+    // @include overlay-styles();
+    // @include popup-styles();
+    // @include ripple-styles();
+    // @include table-styles();
+    // @include virtual-scroller-styles();
 
 
-    // Native forms
+    // // Indicators
+    // @include avatar-styles();
+    // @include badge-styles();
+    // @include chip-styles();
+    // @include color-preview-styles();
+    // @include loader-styles();
+    // @include skeleton-styles();
+    // @include tooltip-styles();
+
+
+    // // Form helpers
+    // @include forms-styles();
+    // @include validator-styles();
+    // @include floating-label-styles();
+
+
+    // // Native forms
     @include button-styles();
-    @include split-button-styles();
-    @include menu-button-styles();
+    // @include split-button-styles();
+    // @include menu-button-styles();
     @include input-styles();
-    @include textbox-styles();
-    @include textarea-styles();
-    @include checkbox-styles();
-    @include listbox-styles();
-    @include progressbar-styles();
-    @include radio-styles();
-    @include slider-styles();
+    // @include textbox-styles();
+    // @include textarea-styles();
+    // @include checkbox-styles();
+    // @include listbox-styles();
+    // @include progressbar-styles();
+    // @include radio-styles();
+    // @include slider-styles();
 
 
-    // Form requirements
-    @include calendar-styles();
-    @include timeselector-styles();
+    // // Form requirements
+    // @include calendar-styles();
+    // @include timeselector-styles();
 
 
-    // Augmented forms
-    @include autocomplete-styles();
-    @include captcha-styles();
-    @include colorpalette-styles();
-    @include colorgradient-styles();
-    @include coloreditor-styles();
-    @include colorpicker-styles();
-    @include combobox-styles();
-    @include dateinput-styles();
-    @include datepicker-styles();
-    @include timepicker-styles();
-    @include timedurationpicker-styles();
-    @include datetimepicker-styles();
-    @include daterangepicker-styles();
-    @include dropdowngrid-styles();
-    @include dropdownlist-styles();
-    @include dropdowntree-styles();
-    @include maskedtextbox-styles();
-    @include multiselect-styles();
-    @include numerictextbox-styles();
-    @include rating-styles();
-    @include searchbox-styles();
-    @include switch-styles();
-    @include upload-styles();
-    @include dropzone-styles();
+    // // Augmented forms
+    // @include autocomplete-styles();
+    // @include captcha-styles();
+    // @include colorpalette-styles();
+    // @include colorgradient-styles();
+    // @include coloreditor-styles();
+    // @include colorpicker-styles();
+    // @include combobox-styles();
+    // @include dateinput-styles();
+    // @include datepicker-styles();
+    // @include timepicker-styles();
+    // @include timedurationpicker-styles();
+    // @include datetimepicker-styles();
+    // @include daterangepicker-styles();
+    // @include dropdowngrid-styles();
+    // @include dropdownlist-styles();
+    // @include dropdowntree-styles();
+    // @include maskedtextbox-styles();
+    // @include multiselect-styles();
+    // @include numerictextbox-styles();
+    // @include rating-styles();
+    // @include searchbox-styles();
+    // @include switch-styles();
+    // @include upload-styles();
+    // @include dropzone-styles();
 
 
-    // Command interfaces
-    @include appbar-styles();
-    @include fab-styles();
-    @include menu-styles();
-    @include toolbar-styles();
+    // // Command interfaces
+    // @include appbar-styles();
+    // @include fab-styles();
+    // @include menu-styles();
+    // @include toolbar-styles();
 
 
-    // Popups and modals
-    @include window-styles();
-    @include action-sheet-styles();
-    @include dialog-styles();
-    @include drawer-styles();
-    @include notification-styles();
-    @include popover-styles();
-    @include responsivepanel-styles();
+    // // Popups and modals
+    // @include window-styles();
+    // @include action-sheet-styles();
+    // @include dialog-styles();
+    // @include drawer-styles();
+    // @include notification-styles();
+    // @include popover-styles();
+    // @include responsivepanel-styles();
 
 
-    // Navigation
-    @include bottom-navigation-styles();
-    @include breadcrumb-styles();
-    @include pager-styles();
-    @include stepper-styles();
-    @include tabstrip-styles();
-    @include treeview-styles();
-    @include wizard-styles();
+    // // Navigation
+    // @include bottom-navigation-styles();
+    // @include breadcrumb-styles();
+    // @include pager-styles();
+    // @include stepper-styles();
+    // @include tabstrip-styles();
+    // @include treeview-styles();
+    // @include wizard-styles();
 
 
-    // Layout & containers
-    @include card-styles();
-    @include expansion-panel-styles();
-    @include panelbar-styles();
-    @include splitter-styles();
-    @include tilelayout-styles();
+    // // Layout & containers
+    // @include card-styles();
+    // @include expansion-panel-styles();
+    // @include panelbar-styles();
+    // @include splitter-styles();
+    // @include tilelayout-styles();
 
 
-    // Data management
-    @include grid-styles();
-    @include listview-styles();
-    @include spreadsheet-styles();
-    @include pivotgrid-styles();
-    @include treelist-styles();
-    @include filter-styles();
-    @include filemanager-styles();
-    @include taskboard-styles();
+    // // Data management
+    // @include grid-styles();
+    // @include listview-styles();
+    // @include spreadsheet-styles();
+    // @include pivotgrid-styles();
+    // @include treelist-styles();
+    // @include filter-styles();
+    // @include filemanager-styles();
+    // @include taskboard-styles();
 
 
     // Editors
-    @include editor-styles();
-    @include imageeditor-styles();
+    // @include editor-styles();
+    // @include imageeditor-styles();
 
 
-    // Scheduling
-    @include gantt-styles();
-    @include scheduler-styles();
+    // // Scheduling
+    // @include gantt-styles();
+    // @include scheduler-styles();
 
 
     // Misc
-    @include adaptive-styles();
-    @include chat-styles();
-    @include mediaplayer-styles();
-    @include timeline-styles();
-    @include pdf-viewer-styles();
-    @include scroller-styles();
-    @include scrollview-styles();
+    // @include adaptive-styles();
+    // @include chat-styles();
+    // @include mediaplayer-styles();
+    // @include timeline-styles();
+    // @include pdf-viewer-styles();
+    // @include scroller-styles();
+    // @include scrollview-styles();
 
 
     // Dataviz
-    @include dataviz-styles();
-    @include map-styles();
-    @include orgchart-styles();
-    @include signature-styles();
+    // @include dataviz-styles();
+    // @include map-styles();
+    // @include orgchart-styles();
+    // @include signature-styles();
 }
