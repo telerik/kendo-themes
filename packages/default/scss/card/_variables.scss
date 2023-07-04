@@ -1,4 +1,4 @@
-@import "../button/_variables.scss";
+// @import "../button/_variables.scss";
 
 // Card
 $kendo-card-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
@@ -64,7 +64,8 @@ $kendo-card-actions-border-width: 1px !default;
 $kendo-card-actions-gap: k-map-get( $kendo-spacing, 2 ) !default;
 
 $kendo-card-deck-scroll-button-radius: 0px !default;
-$kendo-card-deck-scroll-button-offset: -$kendo-button-border-width !default;
+// TODO!
+$kendo-card-deck-scroll-button-offset: -1px; // -$kendo-button-border-width !default;
 
 $kendo-card-callout-width: 20px !default;
 $kendo-card-callout-height: 20px !default;

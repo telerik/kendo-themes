@@ -1,0 +1,10 @@
+// Dependencies
+// @import "../badge/_index.scss";
+// @import "../icons/_index.scss";
+
+@import "./variables";
+@import "./layout";
+
+@mixin kendo-button-core() {
+    @include kendo-button--layout();
+}
