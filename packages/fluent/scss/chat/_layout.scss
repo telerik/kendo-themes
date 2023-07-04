@@ -71,12 +71,12 @@
                 inset-inline-start: 0;
             }
 
-            .k-first .k-bubble,
-            .k-only .k-bubble {
+            .k-first .k-chat-bubble,
+            .k-only .k-chat-bubble {
                 border-end-start-radius: var( --kendo-chat-bubble-border-radius-sm, #{ $kendo-chat-bubble-border-radius-sm } );
             }
-            .k-middle .k-bubble,
-            .k-last .k-bubble {
+            .k-middle .k-chat-bubble,
+            .k-last .k-chat-bubble {
                 border-end-start-radius: var( --kendo-chat-bubble-border-radius-sm, #{ $kendo-chat-bubble-border-radius-sm } );
             }
         }
@@ -93,12 +93,12 @@
                 inset-inline-end: 0;
             }
 
-            .k-first .k-bubble,
-            .k-only .k-bubble {
+            .k-first .k-chat-bubble,
+            .k-only .k-chat-bubble {
                 border-end-end-radius: var( --kendo-chat-bubble-border-radius-sm, #{ $kendo-chat-bubble-border-radius-sm } );
             }
-            .k-middle .k-bubble,
-            .k-last .k-bubble {
+            .k-middle .k-chat-bubble,
+            .k-last .k-chat-bubble {
                 border-end-end-radius: var( --kendo-chat-bubble-border-radius-sm, #{ $kendo-chat-bubble-border-radius-sm } );
             }
         }
@@ -139,7 +139,7 @@
 
 
         // Bubble
-        .k-bubble {
+        .k-chat-bubble {
             @include border-radius( var( --kendo-chat-bubble-border-radius, #{ $kendo-chat-bubble-border-radius } ) );
             padding-inline: var( --kendo-chat-bubble-padding-x, #{ $kendo-chat-bubble-padding-x } );
             padding-block: var( --kendo-chat-bubble-padding-y, #{ $kendo-chat-bubble-padding-y } );
