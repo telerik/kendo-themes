@@ -69,12 +69,12 @@
                 left: 0;
             }
 
-            .k-first .k-bubble,
-            .k-only .k-bubble {
+            .k-first .k-chat-bubble,
+            .k-only .k-chat-bubble {
                 border-bottom-left-radius: $kendo-chat-bubble-border-radius-sm;
             }
-            .k-middle .k-bubble,
-            .k-last .k-bubble {
+            .k-middle .k-chat-bubble,
+            .k-last .k-chat-bubble {
                 @include border-left-radius( $kendo-chat-bubble-border-radius-sm );
             }
         }
@@ -91,12 +91,12 @@
                 right: 0;
             }
 
-            .k-first .k-bubble,
-            .k-only .k-bubble {
+            .k-first .k-chat-bubble,
+            .k-only .k-chat-bubble {
                 border-bottom-right-radius: $kendo-chat-bubble-border-radius-sm;
             }
-            .k-middle .k-bubble,
-            .k-last .k-bubble {
+            .k-middle .k-chat-bubble,
+            .k-last .k-chat-bubble {
                 @include border-right-radius( $kendo-chat-bubble-border-radius-sm );
             }
         }
@@ -137,7 +137,7 @@
 
 
         // Bubble
-        .k-bubble {
+        .k-chat-bubble {
             @include border-radius( $kendo-chat-bubble-border-radius );
             padding-block: $kendo-chat-bubble-padding-y;
             padding-inline: $kendo-chat-bubble-padding-x;

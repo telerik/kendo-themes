@@ -6,7 +6,7 @@ import { Chat, ChatMessage, ChatMessageGroup } from '../../chat';
 
 const styles = `
     /* needed for test */
-    .k-chat .k-bubble {
+    .k-chat .k-chat-bubble {
         white-space: normal;
     }
 `;
