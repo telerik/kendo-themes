@@ -4,11 +4,27 @@
 @use "./color-system/palettes" as *;
 
 // Variables
-@use "./variables" as *;
-@forward "./variables";
+@use "./variables" as theme;
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
-    $kendo-palettes: $kendo-fluent-palettes
+    $kendo-font-family: theme.$kendo-font-family,
+    // Color System
+    $kendo-color-base: theme.$kendo-color-base,
+    $kendo-color-base-text: theme.$kendo-color-base-text,
+    $kendo-color-base-hover: theme.$kendo-color-base-hover,
+    $kendo-color-base-active: theme.$kendo-color-base-active,
+    $kendo-color-base-select: theme.$kendo-color-base-select,
+    $kendo-color-base-focus: theme.$kendo-color-base-focus,
+    $kendo-color-primary: theme.$kendo-color-primary,
+    $kendo-color-primary-text: theme.$kendo-color-primary-text,
+    $kendo-color-primary-hover: theme.$kendo-color-primary-hover,
+    $kendo-color-primary-active: theme.$kendo-color-primary-active,
+    $kendo-color-primary-select: theme.$kendo-color-primary-select,
+    $kendo-color-primary-focus: theme.$kendo-color-primary-focus,
+    $kendo-color-border: theme.$kendo-color-border,
+    $kendo-color-border-hover: theme.$kendo-color-border-hover,
+    $kendo-color-border-focus: theme.$kendo-color-border-focus,
+    $kendo-color-error: theme.$kendo-color-error
 );
 
 // Helpers
@@ -21,7 +37,7 @@ $components: null !default;
 
 @mixin core-configure($config: null) {
     @if $config {
-        $_components: map.get( $config, "components" );
+        $_components: map.get($config, "components");
 
         @if ($_components) {
             module.$components: $_components;

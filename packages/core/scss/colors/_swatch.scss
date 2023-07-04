@@ -1,113 +1,101 @@
-// Root styles
-$kendo-body-bg: null !default;
-$kendo-body-text: null !default;
-
-// Base styles
-$kendo-base-bg: null !default;
-$kendo-base-text: null !default;
-$kendo-base-border: null !default;
-$kendo-base-gradient: null !default;
-
-// Component styles
-$kendo-component-bg: null !default;
-$kendo-component-text: null !default;
-$kendo-component-border: null !default;
-
-// States styles
-$kendo-hover-bg: null !default;
-$kendo-hover-text: null !default;
-$kendo-hover-border: null !default;
-
-$kendo-selected-bg: null !default;
-$kendo-selected-text: null !default;
-$kendo-selected-border: null !default;
-
-$kendo-selected-hover-bg: null !default;
-$kendo-selected-hover-text: null !default;
-$kendo-selected-hover-border: null !default;
-
-$kendo-active-bg: null !default;
-$kendo-active-text: null !default;
-$kendo-active-border: null !default;
-
-$kendo-palette-neutral: (
-    0: null,
-    1: null,
-    2: null,
-    3: null,
-    4: null,
-    5: null,
-    6: null,
-    7: null,
-    8: null,
-    9: null,
-    10: null,
-    11: null,
-    12: null,
-    13: null,
-    14: null,
-    15: null,
-    16: null,
-) !default;
-
-// Theme colors
-/// The color that focuses the user attention.
-/// Used for primary buttons and for elements of primary importance across the theme.
+/// The primary color of the theme.
 /// @group color-system
 /// @type Color
-$kendo-palette-primary: (
-    1: null,
-    2: null,
-    3: null,
-    4: null,
-    5: null,
-    6: null,
-    7: null,
-    8: null,
-    9: null,
-    10: null,
-    11: null,
-    12: null,
-    13: null,
-    14: null,
-    15: null,
-) !default;
+$kendo-color-base: null !default;
+$kendo-color-base-text: null !default;
+$kendo-color-base-hover: null !default;
+$kendo-color-base-active: null !default;
+$kendo-color-base-select: null !default;
+$kendo-color-base-focus: null !default;
 
-$kendo-secondary-swatch: (
-    1: null,
-    2: null,
-    3: null,
-    4: null,
-    5: null,
-    6: null,
-    7: null,
-    8: null,
-    9: null,
-    10: null,
-    11: null,
-    12: null,
-    13: null,
-    14: null,
-    15: null,
-) !default;
+/// The primary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-primary: null !default;
+$kendo-color-primary-text: null !default;
+$kendo-color-primary-hover: null !default;
+$kendo-color-primary-focus: null !default;
+$kendo-color-primary-active: null !default;
+$kendo-color-primary-select: null !default;
 
-$kendo-secondary-tertiary: (
-    1: null,
-    2: null,
-    3: null,
-    4: null,
-    5: null,
-    6: null,
-    7: null,
-    8: null,
-    9: null,
-    10: null,
-    11: null,
-    12: null,
-    13: null,
-    14: null,
-    15: null,
-) !default;
+/// The secondary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary: null !default;
+$kendo-color-secondary-text: null !default;
+$kendo-color-secondary-hover: null !default;
+$kendo-color-secondary-focus: null !default;
+$kendo-color-secondary-active: null !default;
+$kendo-color-secondary-select: null !default;
+
+/// The tertiary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary: null !default;
+$kendo-color-tertiary-text: null !default;
+$kendo-color-tertiary-hover: null !default;
+$kendo-color-tertiary-focus: null !default;
+$kendo-color-tertiary-active: null !default;
+$kendo-color-tertiary-select: null !default;
+
+/// The color for informational messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-info: null !default;
+$kendo-color-info-text: null !default;
+$kendo-color-info-hover: null !default;
+$kendo-color-info-focus: null !default;
+$kendo-color-info-active: null !default;
+$kendo-color-info-select: null !default;
+
+/// The color for success messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-success: null !default;
+$kendo-color-success-text: null !default;
+$kendo-color-success-hover: null !default;
+$kendo-color-success-focus: null !default;
+$kendo-color-success-active: null !default;
+$kendo-color-success-select: null !default;
+
+/// The color for warning messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-warning: null !default;
+$kendo-color-warning-text: null !default;
+$kendo-color-warning-hover: null !default;
+$kendo-color-warning-focus: null !default;
+$kendo-color-warning-active: null !default;
+$kendo-color-warning-select: null !default;
+
+/// The color for error messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-error: null !default;
+$kendo-color-error-text: null !default;
+$kendo-color-error-hover: null !default;
+$kendo-color-error-focus: null !default;
+$kendo-color-error-active: null !default;
+$kendo-color-error-select: null !default;
+
+$kendo-color-border: null !default;
+$kendo-color-border-hover: null !default;
+$kendo-color-border-focus: null !default;
+
+// TODO?
+$kendo-selected-text: $kendo-color-primary-text !default;
+$kendo-selected-bg: $kendo-color-primary !default;
+$kendo-selected-border: $kendo-color-primary !default;
+
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+$kendo-color-rgba-transparent: rgba(0, 0, 0, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-transparent-to-black: rgba($kendo-color-black, 0), $kendo-color-black; // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-transparent-to-white: rgba($kendo-color-white, 0), $kendo-color-white; // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-black-to-transparent: $kendo-color-black, rgba($kendo-color-black, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-white-to-transparent: $kendo-color-white, rgba($kendo-color-white, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
+
 
 $kendo-theme-palettes: (
     "primary": (
@@ -118,142 +106,4 @@ $kendo-theme-palettes: (
         active: $kendo-color-primary-active,
         select: $kendo-color-primary-select,
     ),
-    // "secondary": $kendo-palette-secondary,
-    // "tertiary": $kendo-palette-tertiary,
 ) !default;
-
-/// @ignore
-/// TODO: deprecate
-$kendo-color-primary: null !default;
-$kendo-color-primary-lighter: null !default;
-$kendo-color-primary-darker: null !default;
-
-/// The color used along with the primary color denoted by $kendo-color-primary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-primary-contrast: null !default;
-
-/// The secondary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary: null !default;
-$kendo-color-secondary-lighter: null !default;
-$kendo-color-secondary-darker: null !default;
-/// The color used along with the secondary color denoted by $kendo-color-secondary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary-contrast: null !default;
-
-/// The tertiary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary: null !default;
-$kendo-color-tertiary-lighter: null !default;
-$kendo-color-tertiary-darker: null !default;
-/// The color used along with the tertiary color denoted by $kendo-color-tertiary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary-contrast: null !default;
-
-/// The color for informational messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-info: null !default;
-$kendo-color-info-lighter: null !default;
-$kendo-color-info-darker: null !default;
-
-/// The color for success messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-success: null !default;
-$kendo-color-success-lighter: null !default;
-$kendo-color-success-darker: null !default;
-
-/// The color for warning messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-warning: null !default;
-$kendo-color-warning-lighter: null !default;
-$kendo-color-warning-darker: null !default;
-
-/// The color for error messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-error: null !default;
-$kendo-color-error-lighter: null !default;
-$kendo-color-error-darker: null !default;
-
-/// The dark color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-dark: null !default;
-
-/// The light color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-light: null !default;
-
-/// The color white.
-/// Note: you cannot change this value.
-/// @type Color
-/// @group color-system
-/// @ignore
-$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
-
-/// The color black.
-/// Note: you cannot change this value.
-/// @type Color
-/// @group color-system
-/// @ignore
-$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
-
-/// The color transparent.
-/// Note: you cannot change this value.
-/// @type Color
-/// @group color-system
-/// @ignore
-/// @todo QUESTIONABLE??
-$kendo-color-rgba-transparent: rgba(0, 0, 0, 0); // stylelint-disable-line scss/dollar-variable-default
-
-/// A gradient that goes from transparent to black.
-/// Note: you cannot change this value.
-/// @type Gradient
-/// @group color-system
-/// @ignore
-/// @todo QUESTIONABLE??
-$kendo-gradient-transparent-to-black: rgba($kendo-color-black, 0), $kendo-color-black; // stylelint-disable-line scss/dollar-variable-default
-
-/// A gradient that goes from transparent to white.
-/// Note: you cannot change this value.
-/// @type Gradient
-/// @group color-system
-/// @ignore
-/// @todo QUESTIONABLE??
-$kendo-gradient-transparent-to-white: rgba($kendo-color-white, 0), $kendo-color-white; // stylelint-disable-line scss/dollar-variable-default
-
-/// A gradient that goes from black to transparent.
-/// Note: you cannot change this value.
-/// @type Gradient
-/// @group color-system
-/// @ignore
-/// @todo QUESTIONABLE??
-$kendo-gradient-black-to-transparent: $kendo-color-black, rgba($kendo-color-black, 0); // stylelint-disable-line scss/dollar-variable-default
-
-/// A gradient that goes from white to transparent.
-/// Note: you cannot change this value.
-/// @type Gradient
-/// @group color-system
-/// @ignore
-/// @todo QUESTIONABLE??
-$kendo-gradient-white-to-transparent: $kendo-color-white, rgba($kendo-color-white, 0); // stylelint-disable-line scss/dollar-variable-default
-
-/// A gradient that cycles through the colors of the rainbow.
-/// Note: you cannot change this value.
-/// @type Gradient
-/// @group color-system
-/// @ignore
-/// @todo QUESTIONABLE??
-$kendo-gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default

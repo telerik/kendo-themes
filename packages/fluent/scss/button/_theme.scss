@@ -1,73 +1,36 @@
 @use "sass:map";
 @use "../core/" as *;
-@use "./_variables.scss" as *;
 
 @mixin kendo-button--theme() {
-    .k-button {
-        --INTERNAL--kendo-button-text: var( --kendo-button-text );
-        --INTERNAL--kendo-button-bg: var( --kendo-button-bg );
-        --INTERNAL--kendo-button-border: var( --kendo-button-border );
-        --INTERNAL--kendo-button-gradient: var( --kendo-button-gradient );
-        --INTERNAL--kendo-button-shadow: var( --kendo-button-shadow );
-
-        border-color: var( --INTERNAL--kendo-button-border, initial );
-        color: var( --INTERNAL--kendo-button-text, inherit );
-        background-color: var( --INTERNAL--kendo-button-bg, initial );
-        background-image: linear-gradient(
-            var( --INTERNAL--kendo-button-gradient, transparent, transparent )
-        );
-        box-shadow: var( --INTERNAL--kendo-button-shadow, none );
+    .k-button-solid-base {
+        color: $kendo-color-base-text;
+        background-color: $kendo-color-base;
+        border: 1px solid $kendo-color-border;
 
         &:hover,
         &.k-hover {
-            --INTERNAL--kendo-button-text: var( --kendo-button-hover-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-hover-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-hover-border );
-        }
-
-        &:focus,
-        &.k-focus {
-            --INTERNAL--kendo-button-text: var( --kendo-button-focus-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-focus-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-focus-border );
-
-            &:hover,
-            &.k-hover {
-                --INTERNAL--kendo-button-text: var( --kendo-button-focus-hover-text );
-                --INTERNAL--kendo-button-bg: var( --kendo-button-focus-hover-bg );
-                --INTERNAL--kendo-button-border: var( --kendo-button-focus-hover-border );
-            }
-        }
-
-        &:focus::after,
-        &.k-focus::after {
-            outline-color: var( --kendo-button-focus-outline, initial );
+            background-color: $kendo-color-base-hover;
         }
 
         &:active,
         &.k-active {
-            --INTERNAL--kendo-button-text: var( --kendo-button-active-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-active-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-active-border );
-
-            &:hover,
-            &.k-hover {
-                --INTERNAL--kendo-button-text: var( --kendo-button-active-hover-text );
-                --INTERNAL--kendo-button-bg: var( --kendo-button-active-hover-bg );
-                --INTERNAL--kendo-button-border: var( --kendo-button-active-hover-border );
-            }
+            background-color: $kendo-color-base-active;
         }
 
         &.k-selected {
-            --INTERNAL--kendo-button-text: var( --kendo-button-selected-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-selected-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-selected-border );
+            background-color: $kendo-color-base-select;
+        }
 
-            &:hover,
-            &.k-hover {
-                --INTERNAL--kendo-button-text: var( --kendo-button-selected-hover-text );
-                --INTERNAL--kendo-button-bg: var( --kendo-button-selected-hover-bg );
-                --INTERNAL--kendo-button-border: var( --kendo-button-selected-hover-border );
+        &:focus,
+        &.k-focus {
+            &::after {
+                content: "";
+                position: absolute;
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                top: 1px;
+                left: 1px;
+                border: 1px solid $kendo-color-base-focus;
             }
         }
 
@@ -75,82 +38,232 @@
         &.k-disabled,
         .k-disabled &,
         :disabled & {
-            --INTERNAL--kendo-button-text: var( --kendo-button-disabled-text );
-            --INTERNAL--kendo-button-bg: var( --kendo-button-disabled-bg );
-            --INTERNAL--kendo-button-border: var( --kendo-button-disabled-border );
+            color: $kendo-color-base-text;
+            border-color: kendo-color-base-active;
+            background-color: $kendo-color-base-active;
+            filter: opacity(0.6);
         }
     }
 
-    @each $fill-mode, $theme-colors in $kendo-button-theme-colors {
-        @each $theme-color, $color-props in $theme-colors {
-            $_text-color: map.get( $color-props, text );
-            $_bg: map.get( $color-props, bg );
-            $_border-color: map.get( $color-props, border );
+    @each $name, $palette in $kendo-theme-palettes {
+        .k-button-solid-#{$name} {
+            color: k-map-get($palette, text);
+            background-color: k-map-get($palette, normal);
+            border-color: k-map-get($palette, normal);
 
-            $_focus-text: map.get( $color-props, focus-text );
-            $_focus-bg: map.get( $color-props, focus-bg );
-            $_focus-border: map.get( $color-props, focus-border );
-            $_focus-outline: map.get( $color-props, focus-outline );
+            &:hover,
+            &.k-hover {
+                background-color: k-map-get($palette, hover);
+                border-color: k-map-get($palette, hover);
+            }
 
-            $_focus-hover-text: map.get( $color-props, focus-hover-text );
-            $_focus-hover-bg: map.get( $color-props, focus-hover-bg );
-            $_focus-hover-border: map.get( $color-props, focus-hover-border );
+            &:active,
+            &.k-active {
+                background-color: k-map-get($palette, active);
+                border-color: k-map-get($palette, active);
+            }
 
-            $_hover-text: map.get( $color-props, hover-text );
-            $_hover-bg: map.get( $color-props, hover-bg );
-            $_hover-border: map.get( $color-props, hover-border );
+            &.k-selected {
+                background-color: k-map-get($palette, select);
+                border-color: k-map-get($palette, select);
+            }
 
-            $_active-text: map.get( $color-props, active-text );
-            $_active-bg: map.get( $color-props, active-bg );
-            $_active-border: map.get( $color-props, active-border );
+            &:focus,
+            &.k-focus {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: calc(100% - 4px);
+                    height: calc(100% - 4px);
+                    top: 1px;
+                    left: 1px;
+                    border: 1px solid k-map-get($palette, focus);
+                }
+            }
 
-            $_active-hover-text: map.get( $color-props, active-hover-text );
-            $_active-hover-bg: map.get( $color-props, active-hover-bg );
-            $_active-hover-border: map.get( $color-props, active-hover-border );
-
-            $_disabled-text: map.get( $color-props, disabled-text );
-            $_disabled-bg: map.get( $color-props, disabled-bg );
-            $_disabled-border: map.get( $color-props, disabled-border );
-
-            .k-button-#{$fill-mode}-#{$theme-color} {
-                --kendo-button-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );
-                --kendo-button-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
-                --kendo-button-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-border, #{$_border-color} );
-
-                --kendo-button-hover-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-hover-text, #{$_hover-text} );
-                --kendo-button-hover-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-hover-bg, #{$_hover-bg} );
-                --kendo-button-hover-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-hover-border, #{$_hover-border} );
-
-                --kendo-button-focus-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-text} );
-                --kendo-button-focus-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-bg, #{$_focus-bg} );
-                --kendo-button-focus-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
-                --kendo-button-focus-outline: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
-
-                --kendo-button-focus-hover-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-hover-text, #{$_focus-hover-text} );
-                --kendo-button-focus-hover-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-hover-bg, #{$_focus-hover-bg} );
-                --kendo-button-focus-hover-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-hover-border, #{$_focus-hover-border} );
-
-                --kendo-button-active-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-text, #{$_active-text} );
-                --kendo-button-active-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-bg, #{$_active-bg} );
-                --kendo-button-active-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-border, #{$_active-border} );
-
-                --kendo-button-active-hover-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-hover-text, #{$_active-hover-text} );
-                --kendo-button-active-hover-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-hover-bg, #{$_active-hover-bg} );
-                --kendo-button-active-hover-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-hover-border, #{$_active-hover-border} );
-
-                --kendo-button-selected-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-text, #{$_active-text} );
-                --kendo-button-selected-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-bg, #{$_active-bg} );
-                --kendo-button-selected-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-border, #{$_active-border} );
-
-                --kendo-button-selected-hover-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-hover-text, #{$_active-hover-text} );
-                --kendo-button-selected-hover-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-hover-bg, #{$_active-hover-bg} );
-                --kendo-button-selected-hover-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-hover-border, #{$_active-hover-border} );
-
-                --kendo-button-disabled-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-disabled-text, #{$_disabled-text} );
-                --kendo-button-disabled-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-disabled-bg, #{$_disabled-bg} );
-                --kendo-button-disabled-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-disabled-border, #{$_disabled-border} );
+            &:disabled,
+            &.k-disabled,
+            .k-disabled &,
+            :disabled & {
+                color: $kendo-color-base-text;
+                border: 1px solid $kendo-color-base-active;
+                background-color: $kendo-color-base-active;
+                filter: opacity(0.6);
             }
         }
     }
 
+    .k-button-outline-base {
+        color: $kendo-color-base-text;
+        background-color: transparent;
+        border: 1px solid $kendo-color-base-text;
+
+        &:hover,
+        &.k-hover {
+            color: $kendo-color-base;
+            border-color: $kendo-color-base-text;
+            background-color: $kendo-color-base-text;
+        }
+
+        &:active,
+        &.k-active {
+            color: $kendo-color-base;
+            border-color: $kendo-color-base-text;
+            background-color: $kendo-color-base-text;
+        }
+
+        &.k-selected {
+            color: $kendo-color-base;
+            border-color: $kendo-color-base-text;
+            background-color: $kendo-color-base-text;
+        }
+
+        &:focus,
+        &.k-focus {
+            &::after {
+                content: "";
+                position: absolute;
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                top: 1px;
+                left: 1px;
+                border: 1px solid $kendo-color-base-text;
+            }
+        }
+
+        &:disabled,
+        &.k-disabled,
+        .k-disabled &,
+        :disabled & {
+            color: $kendo-color-base-text;
+            background-color: transparent;
+            border: 1px solid $kendo-color-base-text;
+            filter: opacity(0.6);
+        }
+    }
+
+    @each $name, $palette in $kendo-theme-palettes {
+        .k-button-outline-#{$name} {
+            color: k-map-get($palette, normal);
+            background-color: transparent;
+            border: 1px solid k-map-get($palette, normal);
+
+            &:hover,
+            &.k-hover {
+                color: k-map-get($palette, text);
+                border-color: k-map-get($palette, text);
+                background-color: k-map-get($palette, normal);
+            }
+
+            &:active,
+            &.k-active {
+                color: k-map-get($palette, text);
+                border-color: k-map-get($palette, text);
+                background-color: k-map-get($palette, normal);
+            }
+
+            &.k-selected {
+                color: k-map-get($palette, text);
+                border-color: k-map-get($palette, text);
+                background-color: k-map-get($palette, normal);
+            }
+
+            &:focus,
+            &.k-focus {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: calc(100% - 4px);
+                    height: calc(100% - 4px);
+                    top: 1px;
+                    left: 1px;
+                    border: 1px solid k-map-get($palette, normal);
+                }
+            }
+
+            &:disabled,
+            &.k-disabled,
+            .k-disabled &,
+            :disabled & {
+                color: k-map-get($palette, normal);
+                background-color: transparent;
+                border: 1px solid k-map-get($palette, normal);
+                filter: opacity(0.6);
+            }
+        }
+    }
+
+    .k-button-flat-base {
+        color: $kendo-color-base-text;
+
+        &:hover,
+        &.k-hover {
+            background-color: $kendo-color-base-hover;
+        }
+
+        &:active,
+        &.k-active {
+            background-color: $kendo-color-base-active;
+        }
+
+        &.k-selected {
+            background-color: $kendo-color-base-select;
+        }
+
+        &:focus,
+        &.k-focus {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 1px solid $kendo-color-base-text;
+            }
+        }
+
+        &:disabled,
+        &.k-disabled,
+        .k-disabled &,
+        :disabled & {
+            filter: opacity(0.6);
+        }
+    }
+
+    @each $name, $palette in $kendo-theme-palettes {
+        .k-button-flat-#{$name} {
+            color: k-map-get($palette, normal);
+
+            &:hover,
+            &.k-hover {
+                background-color: rgba(k-map-get($palette, hover), 0.08);
+            }
+
+            &:active,
+            &.k-active {
+                background-color: rgba(k-map-get($palette, active), 0.12);
+            }
+
+            &.k-selected {
+                background-color: rgba(k-map-get($palette, select), 0.16);
+            }
+
+            &:focus,
+            &.k-focus {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid k-map-get($palette, normal);
+                }
+            }
+
+            &:disabled,
+            &.k-disabled,
+            .k-disabled &,
+            :disabled & {
+                filter: opacity(0.6);
+            }
+        }
+    }
 }

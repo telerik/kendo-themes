@@ -1,3 +1,5 @@
+@import "../../variables";
+
 @mixin kendo-input--layout-base() {
 
     // Generic input
@@ -29,7 +31,9 @@
 
         *,
         *::before,
-        *::after {
+        &::before,
+        *::after,
+        &::after {
             box-sizing: border-box;
         }
 
@@ -61,7 +65,7 @@
     textarea.k-textarea {
         padding-block: $kendo-input-padding-y;
         padding-inline: $kendo-input-padding-x;
-
+/*
         &:disabled,
         &[disabled] {
             @include disabled( $kendo-disabled-styling );
@@ -71,7 +75,7 @@
                 opacity: 1;
                 filter: grayscale(0);
             }
-        }
+        } */
     }
     textarea.k-textarea {
         overflow: auto;
@@ -86,7 +90,7 @@
         padding-block: $kendo-input-padding-y;
         padding-inline: $kendo-input-padding-x;
         appearance: auto;
-
+/*
         &:disabled,
         &[disabled] {
             @include disabled( $kendo-disabled-styling );
@@ -96,7 +100,7 @@
                 opacity: 1;
                 filter: grayscale(0);
             }
-        }
+        } */
     }
 
 

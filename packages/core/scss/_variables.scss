@@ -1,11 +1,18 @@
 @import "./functions/index.import.scss";
+@import "./colors/swatch";
 
 // Options
 $kendo-enable-shadows: true !default;
 $kendo-enable-rounded: true !default;
 $kendo-enable-gradients: true !default;
 $kendo-enable-transitions: true !default;
+$kendo-use-input-button-width: true !default;
+$kendo-use-input-spinner-width: true !default;
+$kendo-use-input-spinner-icon-offset: true !default;
 
+$kendo-font-family: inherit !default;
+
+// Spacing
 $kendo-spacing: (
     0: 0,
     1px: 1px,
@@ -43,11 +50,41 @@ $kendo-spacing: (
     24: 6rem,
 ) !default;
 
+/// Base font size across all components.
+/// @group typography
+$kendo-font-size: 14px !default;
+$kendo-font-size-xs: 10px !default;
+$kendo-font-size-sm: 12px !default;
+$kendo-font-size-md: $kendo-font-size !default;
+$kendo-font-size-lg: 16px !default;
+$kendo-font-size-xl: 20px !default;
+
+$kendo-font-sizes: (
+    xs: $kendo-font-size-xs,
+    sm: $kendo-font-size-sm,
+    md: $kendo-font-size-md,
+    lg: $kendo-font-size-lg,
+    xl: $kendo-font-size-xl,
+) !default;
+
+/// Line height used along with $kendo-font-size.
+$kendo-line-height: k-math-div(20, 14) !default;
+$kendo-line-height-xs: 1 !default;
+$kendo-line-height-sm: 1.25 !default;
+$kendo-line-height-md: $kendo-line-height !default;
+$kendo-line-height-lg: 1.5 !default;
+$kendo-line-height-em: calc(#{$kendo-line-height} * 1em) !default;
+
 /// Border radius for all components.
 $kendo-border-radius: k-map-get($kendo-spacing, 0.5) !default;
 $kendo-border-radius-sm: k-math-div($kendo-border-radius, 2) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: ($kendo-border-radius * 2) !default;
+
+/// Font weight.
+$kendo-font-weight: 400 !default;
+$kendo-font-weight-light: 300 !default;
+$kendo-font-weight-bold: 600 !default;
 
 $kendo-border-radii: (
     DEFAULT: var(--kendo-border-radius-md, $kendo-border-radius-md),
@@ -69,6 +106,20 @@ $kendo-padding-md-y: k-map-get($kendo-spacing, 1) !default;
 $kendo-padding-lg-x: k-map-get($kendo-spacing, 3) !default;
 $kendo-padding-lg-y: k-map-get($kendo-spacing, 1.5) !default;
 
+// Icons
+$kendo-icon-size: 16px !default;
+
+$kendo-icon-size-xs: calc(#{$kendo-icon-size} * 0.75) !default;
+$kendo-icon-size-sm: calc(#{$kendo-icon-size} * 0.875) !default;
+$kendo-icon-size-md: $kendo-icon-size !default;
+$kendo-icon-size-lg: calc(#{$kendo-icon-size} * 1.25) !default;
+$kendo-icon-size-xl: calc(#{$kendo-icon-size} * 1.5) !default;
+$kendo-icon-size-xxl: calc(#{$kendo-icon-size} * 2) !default;
+$kendo-icon-size-xxxl: calc(#{$kendo-icon-size} * 3) !default;
+
+$kendo-icon-spacing: k-map-get($kendo-spacing, 1) !default;
+$kendo-icon-padding: k-map-get($kendo-spacing, 1) !default;
+
 // Equilateral triangle variables
 // stylelint-disable number-max-precision
 $equilateral-index: 1.7320508076 !default;
@@ -76,5 +127,5 @@ $equilateral-height: 0.8660254038 !default;
 // stylelint-enable number-max-precision
 
 // Loading
-$kendo-loading-opacity: .3 !default;
+$kendo-loading-opacity: 0.3 !default;
 $kendo-zindex-loading: 100 !default;

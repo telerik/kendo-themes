@@ -3,7 +3,7 @@
 @use "@progress/kendo-theme-utils/scss/index.import.scss" as * with (
     $kendo-spacing: $kendo-spacing,
     $kendo-font-sizes: $kendo-font-sizes,
-    $kendo-border-radii: $kendo-border-radii,
+    $kendo-border-radii: $kendo-border-radii
 );
 
 @mixin kendo-utils--layout() {

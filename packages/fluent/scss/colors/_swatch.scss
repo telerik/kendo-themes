@@ -1,0 +1,25 @@
+@import "./palettes";
+
+// Base
+$kendo-color-base: #ffffff;
+$kendo-color-base-text: #323130;
+$kendo-color-base-hover: #F3F2F1;
+$kendo-color-base-active: #EDEBE9;
+$kendo-color-base-select: #EDEBE9;
+$kendo-color-base-focus: #605E5C;
+
+// Primary
+$kendo-color-primary: #0078D4;
+$kendo-color-primary-text: #ffffff;
+$kendo-color-primary-hover: #106EBE;
+$kendo-color-primary-active: #005A9E;
+$kendo-color-primary-select: #005A9E;
+$kendo-color-primary-focus: #ffffff;
+
+// Misc
+$kendo-color-border: #8A8886;
+$kendo-color-border-hover: #323130;
+$kendo-color-border-focus: $kendo-color-primary;
+
+// Alert
+$kendo-color-error: map-get($kendo-palette-red, 9);
