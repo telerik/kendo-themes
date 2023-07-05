@@ -5,14 +5,14 @@
 
 // Variables
 @use "./variables" as *;
-@forward "./variables";
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
-    $kendo-palettes: $kendo-fluent-palettes
+    $kendo-palettes: $kendo-fluent-palettes,
+    $kendo-theme-colors: $kendo-theme-colors
 );
 
 // Helpers
-@use "./helpers";
+@use "./helpers" as *;
 
 // Module System
 @use "./module-system/" as module;

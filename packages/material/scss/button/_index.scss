@@ -19,7 +19,7 @@ $_kendo-module-meta: (
 
 // Component
 @import "./_variables.scss";
-@import "./_layout.scss";
+@import "@progress/kendo-theme-core/scss/components/button/layout";
 @import "./_theme.scss";
 
 

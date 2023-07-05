@@ -332,162 +332,160 @@
 
     // Core css variables
     @include core-styles();
-
-    // Color system css variables
     @include color-system-styles();
 
     // Typography and utils
-    @include typography-styles();
+    // @include typography-styles();
     @include utils-styles();
 
 
     // Generic content
-    @include icon-styles();
-    @include messagebox-styles();
+    // @include icon-styles();
+    // @include messagebox-styles();
 
 
-    // Primitive components
-    @include action-buttons-styles();
-    @include list-styles();
-    @include listgroup-styles();
-    @include overlay-styles();
-    @include popup-styles();
-    @include ripple-styles();
-    @include table-styles();
-    @include virtual-scroller-styles();
+    // // Primitive components
+    // @include action-buttons-styles();
+    // @include list-styles();
+    // @include listgroup-styles();
+    // @include overlay-styles();
+    // @include popup-styles();
+    // @include ripple-styles();
+    // @include table-styles();
+    // @include virtual-scroller-styles();
 
 
     // Indicators
-    @include avatar-styles();
-    @include badge-styles();
-    @include chip-styles();
-    @include color-preview-styles();
-    @include loader-styles();
-    @include skeleton-styles();
-    @include tooltip-styles();
+    // @include avatar-styles();
+    // @include badge-styles();
+    // @include chip-styles();
+    // @include color-preview-styles();
+    // @include loader-styles();
+    // @include skeleton-styles();
+    // @include tooltip-styles();
 
 
     // Form helpers
-    @include forms-styles();
-    @include validator-styles();
-    @include floating-label-styles();
+    // @include forms-styles();
+    // @include validator-styles();
+    // @include floating-label-styles();
 
 
     // Native forms
     @include button-styles();
-    @include split-button-styles();
-    @include menu-button-styles();
-    @include input-styles();
-    @include textbox-styles();
-    @include textarea-styles();
-    @include checkbox-styles();
-    @include listbox-styles();
-    @include progressbar-styles();
-    @include radio-styles();
-    @include slider-styles();
+    // @include split-button-styles();
+    // @include menu-button-styles();
+    // @include input-styles();
+    // @include textbox-styles();
+    // @include textarea-styles();
+    // @include checkbox-styles();
+    // @include listbox-styles();
+    // @include progressbar-styles();
+    // @include radio-styles();
+    // @include slider-styles();
 
 
     // Form requirements
-    @include calendar-styles();
-    @include timeselector-styles();
+    // @include calendar-styles();
+    // @include timeselector-styles();
 
 
     // Augmented forms
-    @include autocomplete-styles();
-    @include captcha-styles();
-    @include colorpalette-styles();
-    @include colorgradient-styles();
-    @include coloreditor-styles();
-    @include colorpicker-styles();
-    @include combobox-styles();
-    @include dateinput-styles();
-    @include datepicker-styles();
-    @include timepicker-styles();
-    @include timedurationpicker-styles();
-    @include datetimepicker-styles();
-    @include daterangepicker-styles();
-    @include dropdowngrid-styles();
-    @include dropdownlist-styles();
-    @include dropdowntree-styles();
-    @include maskedtextbox-styles();
-    @include multiselect-styles();
-    @include numerictextbox-styles();
-    @include rating-styles();
-    @include searchbox-styles();
-    @include switch-styles();
-    @include upload-styles();
-    @include dropzone-styles();
+    // @include autocomplete-styles();
+    // @include captcha-styles();
+    // @include colorpalette-styles();
+    // @include colorgradient-styles();
+    // @include coloreditor-styles();
+    // @include colorpicker-styles();
+    // @include combobox-styles();
+    // @include dateinput-styles();
+    // @include datepicker-styles();
+    // @include timepicker-styles();
+    // @include timedurationpicker-styles();
+    // @include datetimepicker-styles();
+    // @include daterangepicker-styles();
+    // @include dropdowngrid-styles();
+    // @include dropdownlist-styles();
+    // @include dropdowntree-styles();
+    // @include maskedtextbox-styles();
+    // @include multiselect-styles();
+    // @include numerictextbox-styles();
+    // @include rating-styles();
+    // @include searchbox-styles();
+    // @include switch-styles();
+    // @include upload-styles();
+    // @include dropzone-styles();
 
 
     // Command interfaces
-    @include appbar-styles();
-    @include fab-styles();
-    @include menu-styles();
-    @include toolbar-styles();
+    // @include appbar-styles();
+    // @include fab-styles();
+    // @include menu-styles();
+    // @include toolbar-styles();
 
 
     // Popups and modals
-    @include window-styles();
-    @include action-sheet-styles();
-    @include dialog-styles();
-    @include drawer-styles();
-    @include notification-styles();
-    @include popover-styles();
-    @include responsivepanel-styles();
+    // @include window-styles();
+    // @include action-sheet-styles();
+    // @include dialog-styles();
+    // @include drawer-styles();
+    // @include notification-styles();
+    // @include popover-styles();
+    // @include responsivepanel-styles();
 
 
     // Navigation
-    @include bottom-navigation-styles();
-    @include breadcrumb-styles();
-    @include pager-styles();
-    @include stepper-styles();
-    @include tabstrip-styles();
-    @include treeview-styles();
-    @include wizard-styles();
+    // @include bottom-navigation-styles();
+    // @include breadcrumb-styles();
+    // @include pager-styles();
+    // @include stepper-styles();
+    // @include tabstrip-styles();
+    // @include treeview-styles();
+    // @include wizard-styles();
 
 
     // Layout & containers
-    @include card-styles();
-    @include expansion-panel-styles();
-    @include panelbar-styles();
-    @include splitter-styles();
-    @include tilelayout-styles();
+    // @include card-styles();
+    // @include expansion-panel-styles();
+    // @include panelbar-styles();
+    // @include splitter-styles();
+    // @include tilelayout-styles();
 
 
     // Data management
-    @include grid-styles();
-    @include listview-styles();
-    @include spreadsheet-styles();
-    @include pivotgrid-styles();
-    @include treelist-styles();
-    @include filter-styles();
-    @include filemanager-styles();
-    @include taskboard-styles();
+    // @include grid-styles();
+    // @include listview-styles();
+    // @include spreadsheet-styles();
+    // @include pivotgrid-styles();
+    // @include treelist-styles();
+    // @include filter-styles();
+    // @include filemanager-styles();
+    // @include taskboard-styles();
 
 
     // Editors
-    @include editor-styles();
-    @include imageeditor-styles();
+    // @include editor-styles();
+    // @include imageeditor-styles();
 
 
     // Scheduling
-    @include gantt-styles();
-    @include scheduler-styles();
+    // @include gantt-styles();
+    // @include scheduler-styles();
 
 
     // Misc
-    @include adaptive-styles();
-    @include chat-styles();
-    @include mediaplayer-styles();
-    @include timeline-styles();
-    @include pdf-viewer-styles();
-    @include scroller-styles();
-    @include scrollview-styles();
+    // @include adaptive-styles();
+    // @include chat-styles();
+    // @include mediaplayer-styles();
+    // @include timeline-styles();
+    // @include pdf-viewer-styles();
+    // @include scroller-styles();
+    // @include scrollview-styles();
 
 
     // Dataviz
-    @include dataviz-styles();
-    @include map-styles();
-    @include orgchart-styles();
-    @include signature-styles();
+    // @include dataviz-styles();
+    // @include map-styles();
+    // @include orgchart-styles();
+    // @include signature-styles();
 }

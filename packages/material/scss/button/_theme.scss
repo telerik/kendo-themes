@@ -1,9 +1,87 @@
 @import "@progress/kendo-theme-default/scss/button/_theme.scss";
 
-
 @mixin kendo-button--theme() {
-
     @include kendo-button--theme-base();
+
+
+    // Button
+    .k-button {
+        text-transform: uppercase;
+        font-weight: 500;
+
+        &::before {
+            display: block;
+            transition: opacity .4s cubic-bezier( .25, .8, .25, 1 );
+        }
+        &::after {
+            display: none !important; // stylelint-disable-line declaration-no-important
+        }
+
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            opacity: 1;
+            filter: none;
+        }
+    }
+
+    // Outline button
+    .k-button-outline {
+        background-color: transparent !important; // stylelint-disable-line declaration-no-important
+        box-shadow: none !important; // stylelint-disable-line declaration-no-important
+    }
+
+
+    // Link button
+    .k-button-link {
+        &:hover,
+        &.k-hover,
+        &:active,
+        &.k-active,
+        &.k-selected {
+            &::before {
+                opacity: 0;
+            }
+        }
+
+        &:focus,
+        &.k-focus {
+            &::before {
+                opacity: $kendo-flat-button-focus-opacity;
+            }
+        }
+    }
+
+
+    // Clear button
+    .k-button-clear,
+    .k-button.k-clear {
+        &::before {
+            display: none;
+        }
+
+
+        &:focus,
+        &.k-focus,
+        &:active {
+            &::before {
+                display: block;
+            }
+        }
+    }
+
+
+    // Button group
+    .k-button-group {}
+
+
+    // Popup button group
+    .k-overflow-button,
+    .k-overflow-group {
+        &.k-button-group {
+            line-height: inherit;
+        }
+    }
 
     // Solid button
     @each $name, $color in $kendo-button-theme-colors {
@@ -22,6 +100,7 @@
             // Focus state
             &:focus,
             &.k-focus {
+                @debug $kendo-button-focus-shadow;
                 @include box-shadow( $kendo-button-focus-shadow );
             }
 

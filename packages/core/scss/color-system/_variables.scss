@@ -1,3 +1,6 @@
+// Color settings
+$kendo-is-dark-theme: false !default;
+
 // Color constants
 
 /// The color white.
@@ -111,32 +114,99 @@ $kendo-loading-text: currentColor !default;
 
 
 // Theme colors
+/// The color that focuses the user attention.
+/// Used for primary buttons and for elements of primary importance across the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-primary: #ff6358 !default;
+$kendo-color-primary-lighter: k-color-tint( $kendo-color-primary, 2 ) !default;
+$kendo-color-primary-darker: k-color-shade( $kendo-color-primary, 2 ) !default;
+
+/// The color used along with the primary color denoted by $kendo-color-primary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-primary-contrast: k-contrast-legacy( $kendo-color-primary ) !default;
+
+/// The secondary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary: #666666 !default;
+$kendo-color-secondary-lighter: k-color-tint( $kendo-color-secondary, 2 ) !default;
+$kendo-color-secondary-darker: k-color-shade( $kendo-color-secondary, 2 ) !default;
+
+/// The color used along with the secondary color denoted by $kendo-color-secondary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary-contrast: k-contrast-legacy( $kendo-color-secondary ) !default;
+
+/// The tertiary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary: #03a9f4 !default;
+$kendo-color-tertiary-lighter: k-color-tint( $kendo-color-tertiary, 2 ) !default;
+$kendo-color-tertiary-darker: k-color-shade( $kendo-color-tertiary, 2 ) !default;
+
+/// The color used along with the tertiary color denoted by $kendo-color-tertiary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary-contrast: k-contrast-legacy( $kendo-color-tertiary ) !default;
+
+/// The color for informational messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-info: #0058e9 !default;
+$kendo-color-info-lighter: k-color-tint( $kendo-color-info, 2 ) !default;
+$kendo-color-info-darker: k-color-shade( $kendo-color-info, 2 ) !default;
+
+/// The color for success messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-success: #37b400 !default;
+$kendo-color-success-lighter: k-color-tint( $kendo-color-success, 2 ) !default;
+$kendo-color-success-darker: k-color-shade( $kendo-color-success, 2 ) !default;
+
+/// The color for warning messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-warning: #ffc000 !default;
+$kendo-color-warning-lighter: k-color-tint( $kendo-color-warning, 2 ) !default;
+$kendo-color-warning-darker: k-color-shade( $kendo-color-warning, 2 ) !default;
+
+/// The color for error messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-error: #f31700 !default;
+$kendo-color-error-lighter: k-color-tint( $kendo-color-error, 2 ) !default;
+$kendo-color-error-darker: k-color-shade( $kendo-color-error, 2 ) !default;
+
+/// The dark color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-dark: #424242 !default;
+
+/// The light color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-light: #ebebeb !default;
+
+/// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
+/// @group color-system
+$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
+
 $kendo-theme-colors: (
-    primary: (
-        text: k-get-theme-color-var( primary-130 ),
-        bg: k-get-theme-color-var( primary-20 ),
-        border: k-get-theme-color-var( primary-20 )
-    ),
-    info: (
-        text: k-get-theme-color-var( info-190 ),
-        bg: k-get-theme-color-var( info-20 ),
-        border: k-get-theme-color-var( info-20 )
-    ),
-    success: (
-        text: k-get-theme-color-var( success-190 ),
-        bg: k-get-theme-color-var( success-20 ),
-        border: k-get-theme-color-var( success-20 )
-    ),
-    warning: (
-        text: k-get-theme-color-var( neutral-160 ),
-        bg: k-get-theme-color-var( warning-20 ),
-        border: k-get-theme-color-var( warning-20 )
-    ),
-    error: (
-        text: k-get-theme-color-var( error-190 ),
-        bg: k-get-theme-color-var( error-20 ),
-        border: k-get-theme-color-var( error-20 )
-    )
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse
 ) !default;
 
 
@@ -191,23 +261,23 @@ $kendo-theme-colors: (
     }
 
     // Text colors
-    @each $theme-color, $color-props in $kendo-theme-colors {
-        $_color: k-map-get( $color-props, text );
+    // @each $theme-color, $color-props in $kendo-theme-colors {
+        // $_color: k-map-get( $color-props, text );
 
-        .k-text-#{$theme-color},
-        .k-color-#{$theme-color} {
-            color: var( --kendo-text-#{$theme-color}, #{$_color} );
-        }
-        .\!k-text-#{$theme-color},
-        .\!k-color-#{$theme-color} {
-            color: var( --kendo-text-#{$theme-color}, #{$_color} ) !important; // stylelint-disable-line declaration-no-important
-        }
+        // .k-text-#{$theme-color},
+        // .k-color-#{$theme-color} {
+            // color: var( --kendo-text-#{$theme-color}, #{$_color} );
+        // }
+        // .\!k-text-#{$theme-color},
+        // .\!k-color-#{$theme-color} {
+            // color: var( --kendo-text-#{$theme-color}, #{$_color} ) !important; // stylelint-disable-line declaration-no-important
+        // }
 
-        .k-bg-#{$theme-color} {
-            background-color: var( --kendo-bg-#{$theme-color}, #{$_color} );
-        }
-        .\!k-bg-#{$theme-color} {
-            background-color: var( --kendo-bg-#{$theme-color}, #{$_color} ) !important; // stylelint-disable-line declaration-no-important
-        }
-    };
+        // .k-bg-#{$theme-color} {
+            // background-color: var( --kendo-bg-#{$theme-color}, #{$_color} );
+        // }
+        // .\!k-bg-#{$theme-color} {
+            // background-color: var( --kendo-bg-#{$theme-color}, #{$_color} ) !important; // stylelint-disable-line declaration-no-important
+        // }
+    // };
 }

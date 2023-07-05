@@ -1,4 +1,5 @@
 @import "./functions/index.import.scss";
+@import "./color-system/variables";
 
 // Options
 $kendo-enable-shadows: true !default;
@@ -43,6 +44,60 @@ $kendo-spacing: (
     24: 6rem,
 ) !default;
 
+
+/// Icon size.
+/// @group common
+$kendo-icon-size: 16px !default;
+/// xtra small icon size.
+/// @group common
+$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
+/// Small icon size.
+/// @group common
+$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
+/// Medium icon size.
+/// @group common
+$kendo-icon-size-md: $kendo-icon-size !default;
+/// Large icon size.
+/// @group common
+$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
+/// Extra large icon size.
+/// @group common
+$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
+/// Double extra large icon size.
+/// @group common
+$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
+/// Triple extra large icon size.
+/// @group common
+$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
+
+$kendo-icon-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
+
+/// Horizontal padding.
+/// @group common
+$kendo-padding-x: 8px !default;
+/// Vertical padding.
+/// @group common
+$kendo-padding-y: 4px !default;
+/// Small horizontal padding.
+/// @group common
+$kendo-padding-sm-x: k-map-get( $kendo-spacing, 1 ) !default;
+/// Small vertical padding.
+/// @group common
+$kendo-padding-sm-y: k-map-get( $kendo-spacing, 0.5 ) !default;
+/// Medium horizontal padding.
+/// @group common
+$kendo-padding-md-x: k-map-get( $kendo-spacing, 2 ) !default;
+/// Medium vertical padding.
+/// @group common
+$kendo-padding-md-y: k-map-get( $kendo-spacing, 1 ) !default;
+/// Large horizontal padding.
+/// @group common
+$kendo-padding-lg-x: k-map-get( $kendo-spacing, 3 ) !default;
+/// Large vertical padding.
+/// @group common
+$kendo-padding-lg-y: k-map-get( $kendo-spacing, 1.5 ) !default;
+
 /// Border radius for all components.
 $kendo-border-radius: k-map-get($kendo-spacing, 0.5) !default;
 $kendo-border-radius-sm: k-math-div($kendo-border-radius, 2) !default;
@@ -78,3 +133,127 @@ $equilateral-height: 0.8660254038 !default;
 // Loading
 $kendo-loading-opacity: .3 !default;
 $kendo-zindex-loading: 100 !default;
+
+// Typography
+
+/// Base font size across all components.
+/// @group typography
+$kendo-font-size: 14px !default;
+/// Extra small font size across all components.
+/// @group typography
+$kendo-font-size-xs: 10px !default;
+/// Small font size across all components.
+/// @group typography
+$kendo-font-size-sm: 12px !default;
+/// Medium font size across all components.
+/// @group typography
+$kendo-font-size-md: $kendo-font-size !default;
+/// Large font size across all components.
+/// @group typography
+$kendo-font-size-lg: 16px !default;
+/// Extra large font size across all components.
+/// @group typography
+$kendo-font-size-xl: 20px !default;
+
+$kendo-font-sizes: (
+    xs: $kendo-font-size-xs,
+    sm: $kendo-font-size-sm,
+    md: $kendo-font-size-md,
+    lg: $kendo-font-size-lg,
+    xl: $kendo-font-size-xl
+) !default;
+
+/// Font family for text.
+/// @group typography
+$kendo-font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+/// Font family for monospaced text. Used for styling the code.
+/// @group typography
+$kendo-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+
+/// Font family across all components.
+/// @group typography
+$kendo-font-family: inherit !default;
+
+
+/// Line height used along with $kendo-font-size.
+/// @group typography
+$kendo-line-height: k-math-div( 20, 14 ) !default;
+/// Extra small line height used along with $kendo-font-size-xs.
+/// @group typography
+$kendo-line-height-xs: 1 !default;
+/// Small line height used along with $kendo-font-size-sm.
+/// @group typography
+$kendo-line-height-sm: 1.25 !default;
+/// Medium line height used along with $kendo-font-size-md.
+/// @group typography
+$kendo-line-height-md: $kendo-line-height !default;
+/// Large line height used along with $kendo-font-size-lg.
+/// @group typography
+$kendo-line-height-lg: 1.5 !default;
+$kendo-line-height-em: calc( #{$kendo-line-height} * 1em ) !default;
+
+/// Font weight.
+$kendo-font-weight: 400 !default;
+/// Light font weight.
+/// @group typography
+$kendo-font-weight-light: 300 !default;
+/// Normal font weight.
+/// @group typography
+$kendo-font-weight-normal: 400 !default;
+/// Medium font weight.
+/// @group typography
+$kendo-font-weight-medium: 500 !default;
+/// Semibold font weight.
+/// @group typography
+$kendo-font-weight-semibold: 600 !default;
+/// Bold font weight.
+/// @group typography
+$kendo-font-weight-bold: 700 !default;
+
+/// Letter spacing.
+/// @group typography
+$kendo-letter-spacing: null !default;
+
+// Default transition
+$kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out, opacity .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out !default;
+
+/// Text color of disabled items.
+$kendo-disabled-text: #8f8f8f !default;
+/// Filter used for disabled items.
+$kendo-disabled-filter: grayscale(.1) !default;
+/// Opacity used for disabled items.
+$kendo-disabled-opacity: .6 !default;
+
+$kendo-disabled-styling: (
+    opacity: $kendo-disabled-opacity,
+    filter: $kendo-disabled-filter
+) !default;
+
+
+@mixin core-styles() {
+    :root {
+        --kendo-font-family: #{k-meta-inspect($kendo-font-family)};
+
+        --kendo-font-size: #{$kendo-font-size};
+        --kendo-font-size-xs: #{$kendo-font-size-xs};
+        --kendo-font-size-sm: #{$kendo-font-size-sm};
+        --kendo-font-size-md: #{$kendo-font-size-md};
+        --kendo-font-size-lg: #{$kendo-font-size-lg};
+        --kendo-font-size-xl: #{$kendo-font-size-xl};
+
+        --kendo-line-height: #{$kendo-line-height};
+        --kendo-line-height-xs: #{$kendo-line-height-xs};
+        --kendo-line-height-sm: #{$kendo-line-height-sm};
+        --kendo-line-height-md: #{$kendo-line-height-md};
+        --kendo-line-height-lg: #{$kendo-line-height-lg};
+
+        --kendo-font-weight: #{$kendo-font-weight};
+        --kendo-font-weight-light: #{$kendo-font-weight-light};
+        --kendo-font-weight-bold: #{$kendo-font-weight-bold};
+
+        --kendo-letter-spacing: #{$kendo-letter-spacing};
+
+        --kendo-transition: #{$kendo-transition};
+    }
+}
