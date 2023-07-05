@@ -154,76 +154,76 @@ export default () =>(
             <Popup id="discontinued" className="k-column-menu k-grid-columnmenu-popup">
                 <div className="k-columnmenu-item-wrapper">
                     <div className="k-columnmenu-item">
+                        <Icon icon="sort-asc-small" />Sort ascending
+                    </div>
+                    <div className="k-columnmenu-item">
+                        <Icon icon="sort-desc-small" />Sort descending
+                    </div>
+                </div>
+                <div className="k-columnmenu-item-wrapper">
+                    <div className="k-expander">
+                        <div className="k-columnmenu-item">
+                            <Icon icon="columns"/>Columns
+                            <span className="k-spacer"></span>
+                            <span className="k-expander-indicator">
+                                <Icon icon="chevron-down"/>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div className="k-columnmenu-item-wrapper">
+                    <div className="k-expander">
+                        <div className="k-columnmenu-item">
+                            <Icon icon="filter"/>Filter
+                            <span className="k-spacer"></span>
+                            <Icon icon="chevron-down"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="k-columnmenu-item-wrapper">
+                    <div className="k-columnmenu-item">
                         <Icon icon="group"/>Group column
                     </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-asc-small" />Sort ascending
-                        </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-desc-small" />Sort descending
-                        </div>
+                </div>
+                <div className="k-columnmenu-item-wrapper">
+                    <div className="k-columnmenu-item">
+                        <Icon icon="max-width"/>Autosize this column
                     </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="columns"/>Columns
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-down"/>
-                                </span>
-                            </div>
-                        </div>
+                    <div className="k-columnmenu-item">
+                        <Icon icon="display-inline-flex"/>Autosize all columns
                     </div>
-                    <div className="k-columnmenu-item-wrapper">
+                </div>
+                <div className="k-columnmenu-item-wrapper">
+                    <div className="k-expander">
                         <div className="k-columnmenu-item">
-                            <Icon icon="max-width"/>Autosize This Column
+                            <Icon icon="set-column-position" />Set column position
+                            <span className="k-spacer"></span>
+                            <span className="k-expander-indicator">
+                                <Icon icon="chevron-up"/>
+                            </span>
                         </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="display-inline-flex"/>Autosize All Columns
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="set-column-position" />Set Column Position
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-up"/>
-                                </span>
-                            </div>
-                            <div className="k-columnmenu-item-content k-columns-item">
-                                <div className="k-column-list-wrapper">
-                                    <div className="k-column-list" style={{ maxHeight: "260px", overflowY: "hidden" }}>
-                                        <div className="k-column-list-item">
-                                            <Icon icon="lock"/>Lock Column
-                                        </div>
-                                        <div className="k-column-list-item k-disabled">
-                                            <Icon icon="unlock"/>Unlock Column
-                                        </div>
-                                        <div className="k-column-list-item">
-                                            <Icon icon="stick"/>Stick Column
-                                        </div>
-                                        <div className="k-column-list-item k-disabled">
-                                            <Icon icon="unstick"/>Unstick Column
-                                        </div>
-                                        <div className="k-column-list-item">
-                                            <Icon icon="caret-alt-left"/>Move Previous
-                                        </div>
-                                        <div className="k-column-list-item">
-                                            <Icon icon="caret-alt-right"/>Move Next
-                                        </div>
+                        <div className="k-columnmenu-item-content k-columns-item">
+                            <div className="k-column-list-wrapper">
+                                <div className="k-column-list" style={{ maxHeight: "260px", overflowY: "hidden" }}>
+                                    <div className="k-column-list-item">
+                                        <Icon icon="lock"/>Lock column
+                                    </div>
+                                    <div className="k-column-list-item k-disabled">
+                                        <Icon icon="unlock"/>Unlock column
+                                    </div>
+                                    <div className="k-column-list-item">
+                                        <Icon icon="stick"/>Stick column
+                                    </div>
+                                    <div className="k-column-list-item k-disabled">
+                                        <Icon icon="unstick"/>Unstick column
+                                    </div>
+                                    <div className="k-column-list-item">
+                                        <Icon icon="caret-alt-left"/>Move previous
+                                    </div>
+                                    <div className="k-column-list-item">
+                                        <Icon icon="caret-alt-right"/>Move next
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="filter"/>Filter
-                                <span className="k-spacer"></span>
-                                <Icon icon="chevron-down"/>
                             </div>
                         </div>
                     </div>
@@ -234,10 +234,10 @@ export default () =>(
                 <div className="k-columnmenu-item-wrapper">
                     <div className="k-columnmenu-item">
                         <div className="k-column-list-item">
-                            <Icon icon="caret-alt-left"/>Move Previous
+                            <Icon icon="caret-alt-left"/>Move previous
                         </div>
-                        <div className="k-column-list-item">
-                            <Icon icon="caret-alt-right"/>Move Next
+                        <div className="k-column-list-item k-disabled">
+                            <Icon icon="caret-alt-right"/>Move next
                         </div>
                     </div>
                 </div>
