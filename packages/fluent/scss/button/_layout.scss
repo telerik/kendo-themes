@@ -1,2 +1,6 @@
 @use "./variables" as *;
-@forward "@progress/kendo-theme-core/scss/components/button/layout";
+@forward "@progress/kendo-theme-core/scss/components/button/layout" with (
+    $kendo-button-border-width: $kendo-button-border-width,
+    $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
+    // TODO! other properties
+);

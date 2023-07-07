@@ -4,7 +4,7 @@
 
 /// The width of the border around the Button.
 /// @group button
-$kendo-button-border-width: 12px !default;
+$kendo-button-border-width: 1px !default;
 
 /// The horizontal padding of the small Button.
 /// @group button
@@ -414,3 +414,4 @@ $kendo-button-theme-colors: () !default;
         k-generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
     );
 }
+
