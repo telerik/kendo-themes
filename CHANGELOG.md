@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.5.0...v6.5.1-dev.0) (2023-07-10)
+
+
+### Bug Fixes
+
+* **bootstrap:** dark theme input colors ([428c0ab](https://github.com/telerik/kendo-themes/commit/428c0ab24b53ffc23a69487412fea36bf4aa4421))
+* **html:** use correct envelope icon name ([721fc56](https://github.com/telerik/kendo-themes/commit/721fc5624b6a242bcda33f0a942f3d10023b7e17))
+
+
+
+
+
 # [6.5.0](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.2...v6.5.0) (2023-07-03)
 
 
