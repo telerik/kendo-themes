@@ -1,4 +1,4 @@
-import { MaskedTextbox } from '../../maskedtextbox';
+import { MaskedTextbox, MaskedTextboxNormal } from '../../maskedtextbox';
 
 
 const styles = `
@@ -15,53 +15,23 @@ export default () =>(
             <span>MaskedTextBox Flat RTL</span>
 
             <div>
-                <MaskedTextbox fillMode="flat" placeholder="(___) ___-__-__-__" />
+                <MaskedTextboxNormal fillMode="flat" placeholder="(___) ___-__-__-__" />
             </div>
             <div dir="rtl">
-                <MaskedTextbox fillMode="flat" placeholder="(___) ___-__-__-__" />
+                <MaskedTextboxNormal fillMode="flat" placeholder="(___) ___-__-__-__" />
             </div>
 
-            <div>
-                <MaskedTextbox fillMode="flat" value="Normal" />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="flat" value="Normal" />
-            </div>
+            {[ 'normal', ...MaskedTextbox.states ].map((state) => (
+                <>
+                    <div>
+                        <MaskedTextboxNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
 
-            <div>
-                <MaskedTextbox fillMode="flat" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="flat" value="Hover" hover />
-            </div>
-
-            <div>
-                <MaskedTextbox fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <MaskedTextbox fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <MaskedTextbox fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <MaskedTextbox fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
+                    <div dir="rtl">
+                        <MaskedTextboxNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
         </div>
     </>
 );
