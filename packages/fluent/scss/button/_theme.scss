@@ -27,6 +27,9 @@
 
         &:focus,
         &.k-focus {
+            outline: 0;
+            text-decoration: none;
+
             --INTERNAL--kendo-button-text: var( --kendo-button-focus-text );
             --INTERNAL--kendo-button-bg: var( --kendo-button-focus-bg );
             --INTERNAL--kendo-button-border: var( --kendo-button-focus-border );
@@ -37,11 +40,20 @@
                 --INTERNAL--kendo-button-bg: var( --kendo-button-focus-hover-bg );
                 --INTERNAL--kendo-button-border: var( --kendo-button-focus-hover-border );
             }
-        }
 
-        &:focus::after,
-        &.k-focus::after {
-            outline-color: var( --kendo-button-focus-outline, initial );
+            &::after {
+                content: "";
+                border-radius: 0;
+                display: block;
+                opacity: 1;
+                z-index: 1;
+                position: absolute;
+                border: medium none;
+                inset: var( --kendo-button-focus-offset, #{$kendo-button-focus-offset} );
+                outline-width: var( --kendo-button-focus-outline-width, #{$kendo-button-focus-outline-width} );
+                outline-style: var( --kendo-button-focus-outline-style, #{$kendo-button-focus-outline-style} );
+                outline-color: var( --kendo-button-focus-outline, initial );
+            }
         }
 
         &:active,

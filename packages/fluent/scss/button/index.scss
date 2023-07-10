@@ -9,9 +9,8 @@ $_kendo-module-meta: (
 
 // Component
 @forward "./_variables.scss";
-@use "./_variables.scss" as *;
 
-// @use "./_layout.scss" as *;
+@use "./_variables.scss" as *;
 @use "./_layout.scss" as *;
 @use "./_theme.scss" as *;
 

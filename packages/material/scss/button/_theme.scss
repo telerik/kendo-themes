@@ -100,7 +100,6 @@
             // Focus state
             &:focus,
             &.k-focus {
-                @debug $kendo-button-focus-shadow;
                 @include box-shadow( $kendo-button-focus-shadow );
             }
 

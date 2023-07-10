@@ -18,9 +18,9 @@ $_kendo-module-meta: (
 
 
 // Component
-@import "@progress/kendo-theme-core/scss/components/button/variables";
+@import "./variables";
 @import "@progress/kendo-theme-core/scss/components/button/layout";
-@import "./_theme.scss";
+@import "./theme";
 
 
 // Register

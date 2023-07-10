@@ -7,6 +7,10 @@ $kendo-enable-rounded: true !default;
 $kendo-enable-gradients: true !default;
 $kendo-enable-transitions: true !default;
 
+$kendo-use-input-button-width: false !default;
+$kendo-use-input-spinner-width: false !default;
+$kendo-use-input-spinner-icon-offset: false !default;
+
 $kendo-spacing: (
     0: 0,
     1px: 1px,

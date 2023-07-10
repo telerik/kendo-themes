@@ -1,5 +1,4 @@
-// TODO!
-// @import "../button/_variables.scss";
+@import "../button/_variables.scss";
 
 
 // Chip
@@ -93,8 +92,7 @@ $kendo-chip-sizes: (
 
 /// The base background of the Chip.
 /// @group chip
-// TODO!
-$kendo-chip-base-bg: #fff; // $kendo-button-bg !default;
+$kendo-chip-base-bg: $kendo-button-bg !default;
 
 /// The theme colors map for the Chip.
 /// @group chip
@@ -111,19 +109,16 @@ $kendo-chip-theme-colors: (
 $kendo-chip-solid-bg: $kendo-chip-base-bg !default;
 /// The base text color of the solid Chip.
 /// @group chip
-// TODO!
-$kendo-chip-solid-text: #fff; // $kendo-button-text !default;
+$kendo-chip-solid-text:  $kendo-button-text !default;
 /// The base border color of the solid Chip.
 /// @group chip
-// TODO!
-$kendo-chip-solid-border: #fff; // $kendo-button-border !default;
+$kendo-chip-solid-border: $kendo-button-border !default;
 /// The base shadow of the solid Chip.
 /// @group chip
 $kendo-chip-solid-shadow: 0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .08 ) ) !default;
 /// The base gradient of the solid Chip.
 /// @group chip
-// TODO!
-$kendo-chip-solid-gradient: #fff; // $kendo-button-gradient !default;
+$kendo-chip-solid-gradient: $kendo-button-gradient !default;
 
 /// The base background color of the focused solid Chip.
 /// @group chip
@@ -134,16 +129,14 @@ $kendo-chip-solid-focus-text: null !default;
 
 /// The base background color of the hovered solid Chip.
 /// @group chip
-// TODO!
-$kendo-chip-solid-hover-bg: #fff; // $kendo-button-hover-bg !default;
+$kendo-chip-solid-hover-bg: $kendo-button-hover-bg !default;
 /// The base text color of the hovered solid Chip.
 /// @group chip
 $kendo-chip-solid-hover-text: null !default;
 
 /// The base background color of the selected solid Chip.
 /// @group chip
-// TODO!
-$kendo-chip-solid-selected-bg: #fff; // $kendo-button-active-bg !default;
+$kendo-chip-solid-selected-bg: $kendo-button-active-bg !default;
 /// The base text color of the selected solid Chip.
 /// @group chip
 $kendo-chip-solid-selected-text: null !default;

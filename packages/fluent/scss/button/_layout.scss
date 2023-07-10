@@ -1,6 +1,28 @@
 @use "./variables" as *;
+
 @forward "@progress/kendo-theme-core/scss/components/button/layout" with (
     $kendo-button-border-width: $kendo-button-border-width,
     $kendo-button-sm-padding-x: $kendo-button-sm-padding-x,
-    // TODO! other properties
+    $kendo-button-md-padding-x: $kendo-button-md-padding-x,
+    $kendo-button-lg-padding-x: $kendo-button-lg-padding-x,
+    $kendo-button-sm-padding-y: $kendo-button-sm-padding-y,
+    $kendo-button-md-padding-y: $kendo-button-md-padding-y,
+    $kendo-button-lg-padding-y: $kendo-button-lg-padding-y,
+    $kendo-button-sm-font-size: $kendo-button-sm-font-size,
+    $kendo-button-md-font-size: $kendo-button-md-font-size,
+    $kendo-button-lg-font-size: $kendo-button-lg-font-size,
+    $kendo-button-sm-line-height: $kendo-button-sm-line-height,
+    $kendo-button-md-line-height: $kendo-button-md-line-height,
+    $kendo-button-lg-line-height: $kendo-button-lg-line-height,
+    $kendo-button-font-family: $kendo-button-font-family,
+    $kendo-button-calc-size: $kendo-button-calc-size,
+    $kendo-button-sm-calc-size: $kendo-button-sm-calc-size,
+    $kendo-button-md-calc-size: $kendo-button-md-calc-size,
+    $kendo-button-lg-calc-size: $kendo-button-lg-calc-size,
+    $kendo-button-inner-calc-size: $kendo-button-inner-calc-size,
+    $kendo-button-sm-inner-calc-size: $kendo-button-sm-inner-calc-size,
+    $kendo-button-md-inner-calc-size: $kendo-button-md-inner-calc-size,
+    $kendo-button-lg-inner-calc-size: $kendo-button-lg-inner-calc-size,
+    $kendo-button-sizes: $kendo-button-sizes,
+    $kendo-button-theme-colors: $kendo-button-theme-colors
 );
