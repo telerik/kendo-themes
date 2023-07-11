@@ -94,23 +94,35 @@
             // Hover state
             &:hover,
             &.k-hover {
+                color: if( $name == "base", $kendo-button-text, k-contrast-color( $color ) );
+                background-color: if( $name == "base", $kendo-button-bg, $color );
+                border-color: if( $name == "base", $kendo-button-bg, $color );
                 @include box-shadow( $kendo-button-hover-shadow );
             }
 
             // Focus state
             &:focus,
             &.k-focus {
+                color: if( $name == "base", $kendo-button-text, k-contrast-color( $color ) );
+                background-color: if( $name == "base", $kendo-button-bg, $color );
+                border-color: if( $name == "base", $kendo-button-bg, $color );
                 @include box-shadow( $kendo-button-focus-shadow );
             }
 
             // Active state
             &:active,
             &.k-active {
+                color: if( $name == "base", $kendo-button-text, k-contrast-color( $color ) );
+                background-color: if( $name == "base", $kendo-button-bg, $color );
+                border-color: if( $name == "base", $kendo-button-bg, $color );
                 @include box-shadow( $kendo-button-active-shadow );
             }
 
             // Selected state
             &.k-selected {
+                color: if( $name == "base", $kendo-button-text, k-contrast-color( $color ) );
+                background-color: if( $name == "base", $kendo-button-bg, $color );
+                border-color: if( $name == "base", $kendo-button-bg, $color );
                 @include box-shadow( $kendo-button-selected-shadow );
             }
 
