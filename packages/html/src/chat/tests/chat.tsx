@@ -78,6 +78,32 @@ export default () =>(
                 </Chat>
             </section>
 
+            <section>
+                <Chat showToolbar={false}>
+                    <div className="k-timestamp">Messages with attachment list</div>
+                    <ChatMessageGroup avatar={null}>
+                        <ChatMessage className="k-only" text="A message with attachment" />
+                    </ChatMessageGroup>
+                    <div className="k-card-list">
+                        <Card>
+                            <CardBody>
+                                <img width="200px" height="200px" src="/packages/html/assets/sofia.jpg" />
+                            </CardBody>
+                        </Card>
+                    </div>
+                    <ChatMessageGroup alt avatar={null}>
+                        <ChatMessage className="k-only" text="Another message with attachment" />
+                    </ChatMessageGroup>
+                    <div className="k-card-list">
+                        <Card>
+                            <CardBody>
+                                <img width="200px" height="200px" src="/packages/html/assets/sofia.jpg" />
+                            </CardBody>
+                        </Card>
+                    </div>
+                </Chat>
+            </section>
+
         </div>
     </>
 );
