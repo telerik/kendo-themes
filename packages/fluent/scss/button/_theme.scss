@@ -92,6 +92,7 @@
         &.k-disabled,
         .k-disabled &,
         :disabled & {
+            opacity: 1;
             --INTERNAL--kendo-button-text: var( --kendo-button-disabled-text );
             --INTERNAL--kendo-button-bg: var( --kendo-button-disabled-bg );
             --INTERNAL--kendo-button-border: var( --kendo-button-disabled-border );
