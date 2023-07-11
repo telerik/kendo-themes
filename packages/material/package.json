@@ -51,7 +51,7 @@
     "postpublish": "echo 'no postpublish for material theme'"
   },
   "dependencies": {
-    "@progress/kendo-font-icons": "1.6.0",
+    "@progress/kendo-font-icons": "1.7.0",
     "@progress/kendo-theme-core": "6.5.1-dev.0",
     "@progress/kendo-theme-default": "6.5.1-dev.0",
     "@progress/kendo-theme-utils": "6.5.1-dev.0"
