@@ -1,0 +1,29 @@
+@import "../variables";
+
+/// Icon size.
+/// @group common
+$kendo-icon-size: 16px !default;
+/// xtra small icon size.
+/// @group common
+$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
+/// Small icon size.
+/// @group common
+$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
+/// Medium icon size.
+/// @group common
+$kendo-icon-size-md: $kendo-icon-size !default;
+/// Large icon size.
+/// @group common
+$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
+/// Extra large icon size.
+/// @group common
+$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
+/// Double extra large icon size.
+/// @group common
+$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
+/// Triple extra large icon size.
+/// @group common
+$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
+
+$kendo-icon-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;

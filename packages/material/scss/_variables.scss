@@ -111,21 +111,6 @@ $box-shadow-depth-4: 0 8px 10px -5px rgba( $elevation, .2 ), 0 16px 24px 2px rgb
 /// @group shadows
 $box-shadow-depth-5: 0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rgba( $elevation, .14 ), 0 9px 46px 8px rgba( $elevation, .12 ) !default;
 
-
-// Icons
-$kendo-icon-size: 16px !default;
-
-$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
-$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
-$kendo-icon-size-md: $kendo-icon-size !default;
-$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
-$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
-$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
-$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
-
-$kendo-icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
-
 // Metrics
 $kendo-padding-x: 16px !default;
 $kendo-padding-y: 4px !default;

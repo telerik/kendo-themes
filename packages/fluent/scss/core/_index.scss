@@ -8,7 +8,30 @@
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
     $kendo-palettes: $kendo-fluent-palettes,
-    $kendo-theme-colors: $kendo-theme-colors
+    $kendo-use-input-button-width: $kendo-use-input-button-width,
+    $kendo-use-input-spinner-width: $kendo-use-input-spinner-width,
+    $kendo-use-input-spinner-icon-offset: $kendo-use-input-spinner-icon-offset,
+    $kendo-font-size: $kendo-font-size,
+    $kendo-font-size-xs: $kendo-font-size-xs,
+    $kendo-font-size-sm: $kendo-font-size-sm,
+    $kendo-font-size-md: $kendo-font-size-md,
+    $kendo-font-size-lg: $kendo-font-size-lg,
+    $kendo-font-size-xl: $kendo-font-size-xl,
+    $kendo-font-sizes: $kendo-font-sizes,
+    $kendo-font-family: $kendo-font-family,
+    $kendo-line-height: $kendo-line-height,
+    $kendo-line-height-xs: $kendo-line-height-xs,
+    $kendo-line-height-sm: $kendo-line-height-sm,
+    $kendo-line-height-md: $kendo-line-height-md,
+    $kendo-line-height-lg: $kendo-line-height-lg,
+    $kendo-line-height-em: $kendo-line-height-em,
+    $kendo-font-weight: $kendo-font-weight,
+    $kendo-font-weight-light: $kendo-font-weight-light,
+    $kendo-font-weight-bold: $kendo-font-weight-bold,
+    $kendo-letter-spacing: $kendo-letter-spacing,
+    $kendo-scrollbar-width: $kendo-scrollbar-width,
+    $kendo-transition: $kendo-transition,
+    $kendo-theme-colors: $kendo-theme-colors,
 );
 
 // Helpers

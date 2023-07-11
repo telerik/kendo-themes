@@ -1,6 +1,7 @@
 @use "sass:color";
 @use "sass:map";
 @use "../core/" as *;
+@forward "../icon/variables";
 
 /// The width of the border around the Button.
 /// @group button

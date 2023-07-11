@@ -17,6 +17,10 @@
             var( --INTERNAL--kendo-button-gradient, transparent, transparent )
         );
         box-shadow: var( --INTERNAL--kendo-button-shadow, none );
+        font-family: var( --kendo-button-font-family, #{$kendo-button-font-family} );
+        font-size: var( --INTERNAL--kendo-button-font-size, 1rem );
+        font-weight: var( --kendo-button-font-weight, #{$kendo-button-font-weight} );
+        line-height: var( --INTERNAL--kendo-button-line-height, normal );
 
         &:hover,
         &.k-hover {

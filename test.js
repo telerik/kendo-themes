@@ -24,7 +24,7 @@ const p = require("path");
         // return variables;
     };
 
-    const variables = await readVariables(p.join(__dirname, "packages", "fluent", "scss", "button", "_variables.scss"));
+    const variables = await readVariables(p.join(__dirname, "packages", "fluent", "scss", "core", "_variables.scss"));
 
     console.log(variables.map((variable) => `${variable}: ${variable},`).join("\n"));
 })();

@@ -68,21 +68,6 @@ $kendo-spacing: (
     24: 6rem
 ) !default;
 
-
-// Icons
-$kendo-icon-size: 16px !default;
-
-$kendo-icon-size-xs: calc( #{$kendo-icon-size} * .75 ) !default;
-$kendo-icon-size-sm: calc( #{$kendo-icon-size} * .875 ) !default;
-$kendo-icon-size-md: $kendo-icon-size !default;
-$kendo-icon-size-lg: calc( #{$kendo-icon-size} * 1.25 ) !default;
-$kendo-icon-size-xl: calc( #{$kendo-icon-size} * 1.5 ) !default;
-$kendo-icon-size-xxl: calc( #{$kendo-icon-size} * 2 ) !default;
-$kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
-
-$kendo-icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
-
 // Metrics
 $kendo-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
