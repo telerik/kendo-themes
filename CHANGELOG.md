@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.1](https://github.com/telerik/kendo-themes/compare/v6.5.1-dev.0...v6.5.1) (2023-07-11)
+
+
+### Bug Fixes
+
+* **html:** all chip icons should be small ([0e6c63b](https://github.com/telerik/kendo-themes/commit/0e6c63b3a9a8b54039b27dedbe16623e81b765ef))
+
+
+
+
+
 ## [6.5.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.5.0...v6.5.1-dev.0) (2023-07-10)
 
 
