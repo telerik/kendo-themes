@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:math";
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
@@ -165,6 +166,73 @@
                 --kendo-button-disabled-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-disabled-text, #{$_disabled-text} );
                 --kendo-button-disabled-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-disabled-bg, #{$_disabled-bg} );
                 --kendo-button-disabled-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-disabled-border, #{$_disabled-border} );
+            }
+        }
+    }
+
+
+    // Sizing
+    @each $size, $size-props in $kendo-button-sizes {
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+
+        $_icon-button-padding: math.div( $_padding-x, 2 );
+
+        .k-button-#{$size} {
+            --INTERNAL--kendo-button-padding-x: var( --kendo-button-#{$size}-padding-x, #{$_padding-x} );
+            --INTERNAL--kendo-button-padding-y: var( --kendo-button-#{$size}-padding-y, #{$_padding-y} );
+            --INTERNAL--kendo-button-font-size: var( --kendo-button-#{$size}-font-size, #{$_font-size} );
+            --INTERNAL--kendo-button-line-height: var( --kendo-button-#{$size}-line-height, #{$_line-height} );
+        }
+
+        .k-icon-button.k-button-#{$size} {
+            --INTERNAL--kendo-button-padding-x: var( --kendo-icon-button-#{$size}-padding-y, #{$_padding-y} );
+            --INTERNAL--kendo-button-padding-y: var( --kendo-icon-button-#{$size}-padding-y, #{$_padding-y} );
+
+            .k-button-icon {
+                min-width: calc( #{$_font-size} * #{$_line-height} );
+                min-height: calc( #{$_font-size} * #{$_line-height} );
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                &.k-svg-icon > svg,
+                &.k-icon-md > svg {
+                    width: var( --kendo-icon-size-md, 1rem );
+                    height: var( --kendo-icon-size-md, 1rem );
+                }
+
+                &.k-icon-xs > svg {
+                    width: var( --kendo-icon-size-sm, 0.75rem );
+                    height: var( --kendo-icon-size-sm, 0.75rem )s;
+                }
+
+                &.k-icon-sm > svg {
+                    width: var( --kendo-icon-size-sm, 0.875rem );
+                    height: var( --kendo-icon-size-sm, 0.875rem );
+                }
+
+                &.k-icon-lg > svg {
+                    width: var( --kendo-icon-size-lg, 1.25rem );
+                    height: var( --kendo-icon-size-lg, 1.25rem );
+                }
+
+                &.k-icon-xl > svg {
+                    width: var( --kendo-icon-size-xl, 1.5rem );
+                    height: var( --kendo-icon-size-xl, 1.5rem );
+                }
+
+                &.k-icon-xxl > svg {
+                    width: var( --kendo-icon-size-xxl, 2rem );
+                    height: var( --kendo-icon-size-xxl, 2rem );
+                }
+
+                &.k-icon-xxxl > svg {
+                    width: var( --kendo-icon-size-xxl, 3rem );
+                    height: var( --kendo-icon-size-xxl, 3rem );
+                }
             }
         }
     }
