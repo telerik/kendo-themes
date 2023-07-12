@@ -1,3 +1,5 @@
+import { Skeleton } from "../../skeleton";
+
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
@@ -131,322 +133,322 @@ export default () =>(
                                         <tbody className="k-table-tbody" >
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row" style={{ height: "60px" }}>
@@ -624,322 +626,322 @@ export default () =>(
                                         <tbody className="k-table-tbody" >
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <span className="k-placeholder-line"></span>
+                                                    <Skeleton animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row" style={{ height: "60px" }}>
