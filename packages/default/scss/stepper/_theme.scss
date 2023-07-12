@@ -41,11 +41,7 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-disabled-text,
-                        $kendo-stepper-indicator-disabled-bg,
-                        $kendo-stepper-indicator-disabled-border
-                    );
+                    @include disabled( $kendo-disabled-styling );
                 }
 
                 .k-step-label {

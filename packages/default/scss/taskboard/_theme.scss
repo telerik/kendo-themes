@@ -65,14 +65,14 @@
         .k-card-title {
             @include fill( $color: $kendo-taskboard-card-header-text );
 
-            &:focus,
-            &.k-focus {
-                @include fill( $color: $kendo-taskboard-card-header-focus-text );
-            }
-
             &:hover,
             &.k-hover {
                 @include fill( $color: $kendo-taskboard-card-header-hover-text );
+            }
+
+            &:focus,
+            &.k-focus {
+                @include fill( $color: $kendo-taskboard-card-header-focus-text );
             }
         }
 

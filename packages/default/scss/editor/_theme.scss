@@ -73,6 +73,7 @@
 
         // Selection
         .k-text-selected,
+        // TODO: `& *::selection` !?
         &::selection {
             @include fill (
                 $color: $kendo-editor-selected-text,

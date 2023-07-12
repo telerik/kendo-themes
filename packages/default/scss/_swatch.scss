@@ -1,0 +1,167 @@
+@import "./palettes";
+
+// TODO: re-evaluate!
+$kendo-color-white: #ffffff;
+$kendo-color-black: #000000;
+$kendo-is-dark-theme: false !default;
+$kendo-color-dark: #424242 !default;
+$kendo-color-light: #ebebeb !default;
+$kendo-color-inverse: $kendo-color-dark !default;
+$kendo-subtle-text: #666666 !default;
+$kendo-disabled-text: #8f8f8f !default;
+
+$kendo-color-base: #f5f5f5 !default;
+$kendo-color-base-text: #424242 !default;
+
+$kendo-body-bg: #ffffff !default;
+$kendo-body-text: $kendo-color-base-text !default;
+
+$kendo-color-primary: map-get($kendo-palette-coral, 9) !default;
+$kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
+
+/// The secondary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary: map-get($kendo-palette-gray, 6) !default;
+
+/// The tertiary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary: #03a9f4 !default;
+
+/// The color for informational messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-info: #0058e9 !default;
+
+/// The color for success messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-success: map-get($kendo-palette-green, 9) !default;
+
+/// The color for warning messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-warning: map-get($kendo-palette-yellow, 9) !default;
+
+/// The color for error messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-error: map-get($kendo-palette-red, 9) !default;
+
+$kendo-color-border: rgba($kendo-color-black, 0.08) !default;
+
+$kendo-theme-colors: (
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse,
+) !default;
+
+// TODO! Deprecate all bellow
+/// @deprecated
+$kendo-color-primary-darker: k-color-shade($kendo-color-primary, 2) !default;
+/// @deprecated
+$kendo-color-primary-contrast: $kendo-color-primary-text;
+/// @deprecated
+$kendo-selected-bg: $kendo-color-primary !default;
+/// @deprecated
+$kendo-selected-text: $kendo-color-primary-text !default;
+/// @deprecated
+$kendo-selected-hover-bg: k-try-shade($kendo-color-primary, 0.5) !default;
+/// @deprecated
+$kendo-selected-hover-text: $kendo-selected-text !default;
+/// @deprecated
+$kendo-invalid-text: $kendo-color-error !default;
+/// @deprecated
+$kendo-invalid-border: $kendo-color-error !default;
+/// @deprecated
+$kendo-invalid-shadow: null !default;
+/// @deprecated
+$kendo-invalid-bg: null !default;
+/// @deprecated
+$kendo-base-bg: $kendo-color-base !default;
+/// @deprecated
+$kendo-base-text: $kendo-body-text !default;
+/// @deprecated
+$kendo-base-border: $kendo-color-border;
+/// @deprecated
+$kendo-base-gradient: rgba($kendo-color-black, 0), rgba($kendo-color-black, 0.02) !default;
+/// @deprecated
+$kendo-component-header-bg: $kendo-base-bg !default;
+/// @deprecated
+$kendo-component-header-text: $kendo-base-text !default;
+/// @deprecated
+$kendo-component-header-border: $kendo-base-border !default;
+/// @deprecated
+$kendo-component-header-gradient: null !default;
+/// @deprecated
+$kendo-app-text: $kendo-body-text !default;
+/// @deprecated
+$kendo-link-text: $kendo-color-primary !default;
+/// @deprecated
+$kendo-selected-border: $kendo-base-border !default;
+/// @deprecated
+$kendo-hover-gradient: $kendo-base-gradient !default;
+/// @deprecated
+$kendo-hover-border: $kendo-base-border !default;
+/// @deprecated
+$kendo-hover-text: $kendo-base-text !default;
+/// @deprecated
+$kendo-hover-bg: k-try-shade($kendo-base-bg, 0.5) !default;
+/// @deprecated
+$kendo-component-border: rgba(if($kendo-is-dark-theme, $kendo-color-white, $kendo-color-black), 0.08) !default;
+/// @deprecated
+$kendo-component-text: $kendo-body-text !default;
+/// @deprecated
+$kendo-component-bg: $kendo-body-bg !default;
+/// @deprecated
+$kendo-link-hover-text: $kendo-color-primary-darker !default;
+/// @deprecated
+$kendo-color-primary-lighter: k-color-tint($kendo-color-primary, 2) !default;
+/// @deprecated
+$kendo-color-secondary-lighter: k-color-tint($kendo-color-secondary, 2) !default;
+/// @deprecated
+$kendo-color-secondary-darker: k-color-shade($kendo-color-secondary, 2) !default;
+/// @deprecated
+$kendo-color-secondary-contrast: k-contrast-legacy($kendo-color-secondary) !default;
+/// @deprecated
+$kendo-color-tertiary-lighter: k-color-tint($kendo-color-tertiary, 2) !default;
+/// @deprecated
+$kendo-color-tertiary-darker: k-color-shade($kendo-color-tertiary, 2) !default;
+/// @deprecated
+$kendo-color-tertiary-contrast: k-contrast-legacy($kendo-color-tertiary) !default;
+/// @deprecated
+$kendo-color-info-lighter: k-color-tint($kendo-color-info, 2) !default;
+/// @deprecated
+$kendo-color-info-darker: k-color-shade($kendo-color-info, 2) !default;
+/// @deprecated
+$kendo-color-success-lighter: k-color-tint($kendo-color-success, 2) !default;
+/// @deprecated
+$kendo-color-success-darker: k-color-shade($kendo-color-success, 2) !default;
+/// @deprecated
+$kendo-color-warning-lighter: k-color-tint($kendo-color-warning, 2) !default;
+/// @deprecated
+$kendo-color-warning-darker: k-color-shade($kendo-color-warning, 2) !default;
+/// @deprecated
+$kendo-color-error-lighter: k-color-tint($kendo-color-error, 2) !default;
+/// @deprecated
+$kendo-color-error-darker: k-color-shade($kendo-color-error, 2) !default;
+/// @deprecated
+$kendo-selected-hover-border: $kendo-base-border !default;
+/// @deprecated
+$kendo-selected-hover-gradient: $kendo-base-gradient !default;
+/// @deprecated
+$kendo-selected-gradient: $kendo-base-gradient !default;
+/// @deprecated
+$kendo-link-text: $kendo-color-primary !default;
+/// @deprecated
+$kendo-app-border: rgba($kendo-color-black, 0.08) !default;
+/// @deprecated
+$kendo-app-bg: k-try-shade($kendo-body-bg, 0.25) !default;

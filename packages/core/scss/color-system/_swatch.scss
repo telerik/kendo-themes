@@ -1,0 +1,109 @@
+/// The primary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-base: null !default;
+$kendo-color-base-text: null !default;
+$kendo-color-base-hover: null !default;
+$kendo-color-base-active: null !default;
+$kendo-color-base-select: null !default;
+$kendo-color-base-focus: null !default;
+
+/// The primary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-primary: null !default;
+$kendo-color-primary-text: null !default;
+$kendo-color-primary-hover: null !default;
+$kendo-color-primary-focus: null !default;
+$kendo-color-primary-active: null !default;
+$kendo-color-primary-select: null !default;
+
+/// The secondary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary: null !default;
+$kendo-color-secondary-text: null !default;
+$kendo-color-secondary-hover: null !default;
+$kendo-color-secondary-focus: null !default;
+$kendo-color-secondary-active: null !default;
+$kendo-color-secondary-select: null !default;
+
+/// The tertiary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary: null !default;
+$kendo-color-tertiary-text: null !default;
+$kendo-color-tertiary-hover: null !default;
+$kendo-color-tertiary-focus: null !default;
+$kendo-color-tertiary-active: null !default;
+$kendo-color-tertiary-select: null !default;
+
+/// The color for informational messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-info: null !default;
+$kendo-color-info-text: null !default;
+$kendo-color-info-hover: null !default;
+$kendo-color-info-focus: null !default;
+$kendo-color-info-active: null !default;
+$kendo-color-info-select: null !default;
+
+/// The color for success messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-success: null !default;
+$kendo-color-success-text: null !default;
+$kendo-color-success-hover: null !default;
+$kendo-color-success-focus: null !default;
+$kendo-color-success-active: null !default;
+$kendo-color-success-select: null !default;
+
+/// The color for warning messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-warning: null !default;
+$kendo-color-warning-text: null !default;
+$kendo-color-warning-hover: null !default;
+$kendo-color-warning-focus: null !default;
+$kendo-color-warning-active: null !default;
+$kendo-color-warning-select: null !default;
+
+/// The color for error messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-error: null !default;
+$kendo-color-error-text: null !default;
+$kendo-color-error-hover: null !default;
+$kendo-color-error-focus: null !default;
+$kendo-color-error-active: null !default;
+$kendo-color-error-select: null !default;
+
+$kendo-color-border: null !default;
+$kendo-color-border-hover: null !default;
+$kendo-color-border-focus: null !default;
+
+// TODO?
+$kendo-selected-text: $kendo-color-primary-text !default;
+$kendo-selected-bg: $kendo-color-primary !default;
+$kendo-selected-border: $kendo-color-primary !default;
+
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+$kendo-color-rgba-transparent: rgba(0, 0, 0, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-transparent-to-black: rgba($kendo-color-black, 0), $kendo-color-black; // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-transparent-to-white: rgba($kendo-color-white, 0), $kendo-color-white; // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-black-to-transparent: $kendo-color-black, rgba($kendo-color-black, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-white-to-transparent: $kendo-color-white, rgba($kendo-color-white, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
+
+
+$kendo-theme-palettes: (
+    "primary": (
+        normal: $kendo-color-primary,
+        text: $kendo-color-primary-text,
+        hover: $kendo-color-primary-hover,
+        focus: $kendo-color-primary-focus,
+        active: $kendo-color-primary-active,
+        select: $kendo-color-primary-select,
+    ),
+) !default;
