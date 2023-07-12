@@ -319,6 +319,11 @@
         margin: $kendo-chat-bubble-spacing 0 0;
     }
 
+    .k-message-group.k-alt + .k-card-list,
+    .k-message-group.k-alt + kendo-chat-message-attachments.k-card-list {
+        align-self: flex-end;
+    }
+
     .k-chat .k-card-deck {
         max-width: calc(100% + #{$kendo-chat-message-list-padding-y * 2}); // prevent overflowing in the parent element
         box-sizing: border-box;
