@@ -11,47 +11,47 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>TextBox Flat</span>
-            <span>TextBox Flat RTL</span>
+            <span>TextBox</span>
+            <span>TextBox RTL</span>
 
             <div>
-                <TextboxNormal fillMode="flat" placeholder="placeholder..." />
+                <TextboxNormal placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <TextboxNormal fillMode="flat" placeholder="placeholder..." />
+                <TextboxNormal placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...Textbox.states ].map((state) => (
                 <>
                     <div>
-                        <TextboxNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                        <TextboxNormal { ...{ [state]: true }} value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <TextboxNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                        <TextboxNormal { ...{ [state]: true }} value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <TextboxNormal fillMode="flat" value="invalid focus" invalid focus />
+                <TextboxNormal value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <TextboxNormal fillMode="flat" value="invalid focus" invalid focus />
+                <TextboxNormal value="invalid focus" invalid focus />
             </div>
 
             <div>
-                <TextboxPrefix fillMode="flat"></TextboxPrefix>
+                <TextboxPrefix></TextboxPrefix>
             </div>
             <div dir="rtl">
-                <TextboxPrefix fillMode="flat"></TextboxPrefix>
+                <TextboxPrefix></TextboxPrefix>
             </div>
 
             <div>
-                <TextboxSuffix fillMode="flat"></TextboxSuffix>
+                <TextboxSuffix></TextboxSuffix>
             </div>
             <div dir="rtl">
-                <TextboxSuffix fillMode="flat"></TextboxSuffix>
+                <TextboxSuffix></TextboxSuffix>
             </div>
         </div>
     </>
