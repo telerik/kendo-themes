@@ -144,7 +144,7 @@ export default () => (
                                     {/* Four Rows for Date.Calendar Column grouping field */}
                                     <tr className="k-pivotgrid-row k-pivotgrid-column-total">
                                         <th colSpan={9} className="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
-                                            <Icon icon="chevron-up" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">All Periods</span>
                                         </th>
                                         <th colSpan={1} rowSpan={4} className="k-pivotgrid-cell k-pivotgrid-header-total k-pivotgrid-header-root">
@@ -153,25 +153,25 @@ export default () => (
                                     </tr>
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={6} className="k-pivotgrid-cell k-pivotgrid-expanded">
-                                            <Icon icon="chevron-up" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">CY 2010</span>
                                         </th>
                                         <th colSpan={1} rowSpan={3} className="k-pivotgrid-cell">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">CY 2011</span>
                                         </th>
                                         <th colSpan={1} rowSpan={3} className="k-pivotgrid-cell">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">CY 2012</span>
                                         </th>
                                         <th colSpan={1} rowSpan={3} className="k-pivotgrid-cell">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">CY 2013</span>
                                         </th>
                                     </tr>
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={1} className="k-pivotgrid-cell k-pivotgrid-expanded">
-                                            <Icon icon="chevron-up" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">H2 CY 2010</span>
                                         </th>
                                         <th colSpan={5} rowSpan={2} className="k-pivotgrid-cell">
@@ -180,7 +180,7 @@ export default () => (
                                     </tr>
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={1} className="k-pivotgrid-cell">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">Q4 CY 2010</span>
                                         </th>
                                     </tr>
@@ -188,30 +188,30 @@ export default () => (
                                     {/* Table for Product.Category Column grouping field */}
                                     <tr className="k-pivotgrid-row k-pivotgrid-column-total">
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={4} className="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
-                                            <Icon icon="chevron-up" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-root">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                         <th colSpan={1} rowSpan={2} className="k-pivotgrid-cell k-pivotgrid-header-total k-pivotgrid-header-root">
-                                            <Icon icon="chevron-down" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-down" />
                                             <span className="k-pivotgrid-header-title">All Products</span>
                                         </th>
                                     </tr>
@@ -242,7 +242,7 @@ export default () => (
                                 <tbody className="k-pivotgrid-tbody">
                                     <tr className="k-pivotgrid-row">
                                         <th colSpan={1} rowSpan={9} className="k-pivotgrid-cell k-pivotgrid-row-total k-pivotgrid-expanded k-pivotgrid-header-root">
-                                            <Icon icon="chevron-up" />
+                                            <Icon className="k-pivotgrid-toggle" icon="chevron-up" />
                                             <span className="k-pivotgrid-header-title">All Geographies</span>
                                         </th>
                                         <th colSpan={1} className="k-pivotgrid-cell">
