@@ -12,8 +12,7 @@ const states = [
     States.valid,
     States.invalid,
     States.required,
-    States.disabled,
-    States.loading
+    States.disabled
 ];
 
 const options = {
@@ -59,7 +58,6 @@ export const Textarea = (
         valid,
         invalid,
         required,
-        loading,
         disabled,
         ...other
     } = props;
@@ -76,12 +74,13 @@ export const Textarea = (
             valid={valid}
             invalid={invalid}
             required={required}
-            loading={loading}
             disabled={disabled}
             className={classNames(props.className, TEXTAREA_CLASSNAME)}
         >
             <InputInnerTextarea
-                className="!k-overflow-auto"
+                className={classNames(
+                    "!k-overflow-auto",
+                )}
                 value={value}
                 placeholder={placeholder}
                 rows={rows}
