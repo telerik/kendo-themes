@@ -21,7 +21,7 @@ $kendo-color-base-active: k-try-shade($kendo-color-base, 1.5) !default;
 $kendo-color-base-selected: k-try-shade($kendo-color-base, 1.5) !default;
 $kendo-color-base-focus: null !default;
 
-$kendo-color-secondary: map-get($kendo-palette-gray, 6) !default;
+$kendo-color-secondary: #666666 !default;
 $kendo-color-secondary-text: k-contrast-legacy($kendo-color-secondary) !default;
 $kendo-color-secondary-hover: k-try-shade($kendo-color-secondary, 0.5) !default;
 $kendo-color-secondary-active: k-try-shade($kendo-color-secondary, 1.5) !default;

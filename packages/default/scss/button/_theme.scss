@@ -158,10 +158,11 @@
 
 
     // Outline button
-    @each $name, $swatch in $kendo-theme-swatches {
+    @each $name, $swatch in k-map-merge( $kendo-theme-swatches, ( "base": ("normal": $kendo-color-base-text, "text": $kendo-color-base))) {
         .k-button-outline-#{$name} {
-            $color: k-map-get($swatch, 'text');
-            $text: k-map-get($swatch, 'normal');
+            $color: k-map-get($swatch, 'normal');
+            $text: k-map-get($swatch, 'text');
+
             @include box-shadow( none );
             border-color: currentColor;
             color: $color;

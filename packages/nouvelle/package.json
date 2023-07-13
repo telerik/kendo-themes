@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@progress/kendo-font-icons": "1.6.0",
-    "@progress/kendo-theme-core": "6.5.1-dev.0",
+    "@progress/kendo-theme-core": "6.5.1",
     "@progress/kendo-theme-utils": "6.5.1-dev.0"
   }
 }
