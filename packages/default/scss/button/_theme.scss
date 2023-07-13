@@ -8,7 +8,6 @@
             $kendo-button-border,
             $kendo-button-gradient
         );
-        @include box-shadow( $kendo-button-shadow );
 
         // Hover state
         &:hover,
@@ -19,13 +18,22 @@
                 $kendo-button-hover-border,
                 $kendo-button-hover-gradient
             );
-            @include box-shadow( $kendo-button-hover-shadow );
         }
 
         // Focus state
         &:focus,
         &.k-focus {
-            @include focus-indicator( $kendo-button-focus-shadow, true, true );
+            // TODO: extract
+            &::after {
+                display: block;
+                opacity: 1;
+                border: $kendo-solid-button-shadow-spread solid $kendo-color-border;
+                border-radius: #{($kendo-solid-button-shadow-spread + $kendo-button-border-width) * 2};
+                left: -#{$kendo-solid-button-shadow-spread + $kendo-button-border-width};
+                top: -#{$kendo-solid-button-shadow-spread + $kendo-button-border-width};
+                width: calc(100% + #{$kendo-solid-button-shadow-spread});
+                height: calc(100% + #{$kendo-solid-button-shadow-spread});
+            }
         }
 
         // Active state
@@ -64,24 +72,22 @@
         }
     }
 
-    $_shade-fn: k-meta-get-function( $kendo-solid-button-shade-function );
-
-    @each $name, $color in $kendo-button-theme-colors {
+    @each $name, $swatch in $kendo-theme-swatches {
         @if ($name != "base") {
-            $_button-text: k-contrast-legacy( $color );
-            $_button-bg: if( $kendo-solid-button-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null );
-            $_button-border: if( $kendo-solid-button-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null );
+            $_button-text: k-map-get($swatch, 'text');
+            $_button-bg: k-map-get($swatch, 'normal');
+            $_button-border: k-map-get($swatch, 'normal');
 
             $_button-hover-text: null;
-            $_button-hover-bg: if( $kendo-solid-button-hover-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-bg-amount ), null );
-            $_button-hover-border: if( $kendo-solid-button-hover-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-border-amount ), null );
+            $_button-hover-bg: k-map-get($swatch, 'hover');
+            $_button-hover-border: k-map-get($swatch, 'hover');
 
             $_button-active-text: null;
-            $_button-active-bg: if( $kendo-solid-button-active-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-bg-amount ), null );
-            $_button-active-border: if( $kendo-solid-button-active-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-border-amount ), null );
+            $_button-active-bg: k-map-get($swatch, 'active');
+            $_button-active-border: k-map-get($swatch, 'active');
 
             .k-button-solid-#{$name} {
-                @include fill(
+                @include fill (
                     $_button-text,
                     $_button-bg,
                     $_button-border,
@@ -102,7 +108,17 @@
                 &:focus,
                 &.k-focus {
                     @if ( $kendo-solid-button-shadow ) {
-                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread rgba( $_button-border, $kendo-solid-button-shadow-opacity ), true, true );
+                        // TODO: extract
+                        &::after {
+                            display: block;
+                            border: $kendo-solid-button-shadow-spread solid $_button-border;
+                            opacity: $kendo-solid-button-shadow-opacity;
+                            border-radius: #{($kendo-solid-button-shadow-spread + $kendo-button-border-width) * 2};
+                            left: -#{$kendo-solid-button-shadow-spread + $kendo-button-border-width};
+                            top: -#{$kendo-solid-button-shadow-spread + $kendo-button-border-width};
+                            width: calc(100% + #{$kendo-solid-button-shadow-spread});
+                            height: calc(100% + #{$kendo-solid-button-shadow-spread});
+                        }
                     }
                 }
 
@@ -142,8 +158,10 @@
 
 
     // Outline button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
+    @each $name, $swatch in $kendo-theme-swatches {
         .k-button-outline-#{$name} {
+            $color: k-map-get($swatch, 'text');
+            $text: k-map-get($swatch, 'normal');
             @include box-shadow( none );
             border-color: currentColor;
             color: $color;
@@ -153,7 +171,7 @@
             &:hover,
             &.k-hover {
                 @include fill(
-                    k-contrast-legacy( $color ),
+                    $text,
                     $color,
                     $color
                 );
@@ -163,7 +181,17 @@
             &:focus,
             &.k-focus {
                 @if $kendo-outline-button-shadow {
-                    @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread rgba( $color, $kendo-outline-button-shadow-opacity ), true, true );
+                     // TODO: extract
+                     &::after {
+                        display: block;
+                        border: $kendo-outline-button-shadow-spread solid $color;
+                        opacity: $kendo-outline-button-shadow-opacity;
+                        border-radius: #{($kendo-outline-button-shadow-spread + $kendo-button-border-width) * 2};
+                        left: -#{$kendo-outline-button-shadow-spread + $kendo-button-border-width};
+                        top: -#{$kendo-outline-button-shadow-spread + $kendo-button-border-width};
+                        width: calc(100% + #{$kendo-outline-button-shadow-spread});
+                        height: calc(100% + #{$kendo-outline-button-shadow-spread});
+                    }
                 }
             }
 
@@ -171,7 +199,7 @@
             &:active,
             &.k-active {
                 @include fill(
-                    k-contrast-legacy( $color ),
+                    $text,
                     $color,
                     $color
                 );
@@ -180,7 +208,7 @@
             // Selected
             &.k-selected {
                 @include fill(
-                    k-contrast-legacy( $color ),
+                    $text,
                     $color,
                     $color
                 );
@@ -196,8 +224,9 @@
 
 
     // Flat button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
+    @each $name, $swatch in k-map-merge( $kendo-theme-swatches, ( "base": (normal: "inherit") ) ) {
         .k-button-flat-#{$name} {
+            $color: k-map-get($swatch, 'normal');
             color: $color;
 
             // Disabled state
@@ -210,33 +239,43 @@
 
 
     // Link button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
+    @each $name, $swatch in k-map-merge( $kendo-theme-swatches, ( "base": ("normal": $kendo-base-text))) {
         .k-button-link-#{$name} {
+            $color: k-map-get($swatch, 'normal');
             color: $color;
 
             // Hover
             &:hover,
             &.k-hover {
-                color: k-try-shade( $color, 2 );
+                color: $color;
             }
 
             // Focus
             &:focus,
             &.k-focus {
                 @if ( $kendo-link-button-shadow ) {
-                    @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread rgba( $color, $kendo-link-button-shadow-opacity ), true, true );
+                    &::after {
+                        display: block;
+                        border: $kendo-link-button-shadow-spread solid $color;
+                        opacity: $kendo-link-button-shadow-opacity;
+                        border-radius: #{($kendo-link-button-shadow-spread + $kendo-button-border-width) * 2};
+                        left: -#{$kendo-link-button-shadow-spread + $kendo-button-border-width};
+                        top: -#{$kendo-link-button-shadow-spread + $kendo-button-border-width};
+                        width: calc(100% + #{$kendo-link-button-shadow-spread});
+                        height: calc(100% + #{$kendo-link-button-shadow-spread});
+                    }
                 }
             }
 
             // Active
             &:active,
             &.k-active {
-                color: k-try-shade( $color, 2 );
+                color: $color;
             }
 
             // Selected
             &.k-selected {
-                color: k-try-shade( $color, 2 );
+                color: $color;
             }
 
             // Disabled state
@@ -249,8 +288,9 @@
 
 
     // Clear button
-    @each $name, $color in k-map-merge( $kendo-button-theme-colors, ( "base": $kendo-base-text ) ) {
+    @each $name, $swatch in k-map-merge( $kendo-theme-swatches, ( "base": ("normal": $kendo-base-text) ) ) {
         .k-button-clear-#{$name} {
+            $color: k-map-get($swatch, 'normal');
             color: $color;
 
             &:focus,

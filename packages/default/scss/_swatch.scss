@@ -4,53 +4,188 @@
 $kendo-color-white: #ffffff;
 $kendo-color-black: #000000;
 $kendo-is-dark-theme: false !default;
-$kendo-color-dark: #424242 !default;
-$kendo-color-light: #ebebeb !default;
-$kendo-color-inverse: $kendo-color-dark !default;
 $kendo-subtle-text: #666666 !default;
 $kendo-disabled-text: #8f8f8f !default;
 
+$kendo-color-primary: map-get($kendo-palette-coral, 9) !default;
+$kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
+$kendo-color-primary-hover: k-try-shade($kendo-color-primary, 0.5) !default;
+$kendo-color-primary-active: k-try-shade($kendo-color-primary, 1.5) !default;
+$kendo-color-primary-selected: $kendo-color-primary !default;
+$kendo-color-primary-focus: null !default;
+
 $kendo-color-base: #f5f5f5 !default;
 $kendo-color-base-text: #424242 !default;
+$kendo-color-base-hover: k-try-shade($kendo-color-base, 0.5) !default;
+$kendo-color-base-active: k-try-shade($kendo-color-base, 1.5) !default;
+$kendo-color-base-selected: k-try-shade($kendo-color-base, 1.5) !default;
+$kendo-color-base-focus: null !default;
+
+$kendo-color-secondary: map-get($kendo-palette-gray, 6) !default;
+$kendo-color-secondary-text: k-contrast-legacy($kendo-color-secondary) !default;
+$kendo-color-secondary-hover: k-try-shade($kendo-color-secondary, 0.5) !default;
+$kendo-color-secondary-active: k-try-shade($kendo-color-secondary, 1.5) !default;
+$kendo-color-secondary-selected: k-try-shade($kendo-color-secondary, 1.5) !default;
+$kendo-color-secondary-focus: null !default;
+
+$kendo-color-tertiary: #03a9f4 !default;
+$kendo-color-tertiary-text: k-contrast-legacy($kendo-color-tertiary) !default;
+$kendo-color-tertiary-hover: k-try-shade($kendo-color-tertiary, 0.5) !default;
+$kendo-color-tertiary-active: k-try-shade($kendo-color-tertiary, 1.5) !default;
+$kendo-color-tertiary-selected: k-try-shade($kendo-color-tertiary, 1.5) !default;
+$kendo-color-tertiary-focus: null !default;
+
+$kendo-color-info: #0058e9 !default;
+$kendo-color-info-text: k-contrast-legacy($kendo-color-info) !default;
+$kendo-color-info-hover: k-try-shade($kendo-color-info, 0.5) !default;
+$kendo-color-info-active: k-try-shade($kendo-color-info, 1.5) !default;
+$kendo-color-info-selected: k-try-shade($kendo-color-info, 1.5) !default;
+$kendo-color-info-focus: null !default;
+
+$kendo-color-success: map-get($kendo-palette-green, 9) !default;
+$kendo-color-success-text: k-contrast-legacy($kendo-color-success) !default;
+$kendo-color-success-hover: k-try-shade($kendo-color-success, 0.5) !default;
+$kendo-color-success-active: k-try-shade($kendo-color-success, 1.5) !default;
+$kendo-color-success-selected: k-try-shade($kendo-color-success, 1.5) !default;
+$kendo-color-success-focus: null !default;
+
+$kendo-color-warning: map-get($kendo-palette-yellow, 9) !default;
+$kendo-color-warning-text: k-contrast-legacy($kendo-color-warning) !default;
+$kendo-color-warning-hover: k-try-shade($kendo-color-warning, 0.5) !default;
+$kendo-color-warning-active: k-try-shade($kendo-color-warning, 1.5) !default;
+$kendo-color-warning-selected: k-try-shade($kendo-color-warning, 1.5) !default;
+$kendo-color-warning-focus: null !default;
+
+$kendo-color-error: map-get($kendo-palette-red, 9) !default;
+$kendo-color-error-text: k-contrast-legacy($kendo-color-error) !default;
+$kendo-color-error-hover: k-try-shade($kendo-color-error, 0.5) !default;
+$kendo-color-error-active: k-try-shade($kendo-color-error, 1.5) !default;
+$kendo-color-error-selected: k-try-shade($kendo-color-error, 1.5) !default;
+$kendo-color-error-focus: null !default;
+
+$kendo-color-light: #ebebeb !default;
+$kendo-color-light-text: k-contrast-legacy($kendo-color-light) !default;
+$kendo-color-light-hover: k-try-shade($kendo-color-light, 0.5) !default;
+$kendo-color-light-active: k-try-shade($kendo-color-light, 1.5) !default;
+$kendo-color-light-selected: k-try-shade($kendo-color-light, 1.5) !default;
+$kendo-color-light-focus: null !default;
+
+$kendo-color-dark: #424242 !default;
+$kendo-color-dark-text: k-contrast-legacy($kendo-color-dark) !default;
+$kendo-color-dark-hover: k-try-shade($kendo-color-dark, 0.5) !default;
+$kendo-color-dark-active: k-try-shade($kendo-color-dark, 1.5) !default;
+$kendo-color-dark-selected: k-try-shade($kendo-color-dark, 1.5) !default;
+$kendo-color-dark-focus: null !default;
+
+$kendo-color-inverse: $kendo-color-dark !default;
+$kendo-color-inverse-text: k-contrast-legacy($kendo-color-inverse) !default;
+$kendo-color-inverse-hover: k-try-shade($kendo-color-inverse, 0.5) !default;
+$kendo-color-inverse-active: k-try-shade($kendo-color-inverse, 1.5) !default;
+$kendo-color-inverse-selected: k-try-shade($kendo-color-inverse, 1.5) !default;
+$kendo-color-inverse-focus: null !default;
 
 $kendo-body-bg: #ffffff !default;
 $kendo-body-text: $kendo-color-base-text !default;
 
-$kendo-color-primary: map-get($kendo-palette-coral, 9) !default;
-$kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
-
-/// The secondary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary: map-get($kendo-palette-gray, 6) !default;
-
-/// The tertiary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary: #03a9f4 !default;
-
-/// The color for informational messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-info: #0058e9 !default;
-
-/// The color for success messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-success: map-get($kendo-palette-green, 9) !default;
-
-/// The color for warning messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-warning: map-get($kendo-palette-yellow, 9) !default;
-
-/// The color for error messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-error: map-get($kendo-palette-red, 9) !default;
-
 $kendo-color-border: rgba($kendo-color-black, 0.08) !default;
+$kendo-color-border-hover: rgba($kendo-color-black, 0.16) !default;
+$kendo-color-border-focus: rgba($kendo-color-black, 0.16) !default;
 
+// TODO: extract to core
+$kendo-theme-swatches: (
+    // TODO: base?
+    "base": (
+        normal: var(--kendo-color-base, $kendo-color-base),
+        text: var(--kendo-color-base-text, $kendo-color-base-text),
+        hover: var(--kendo-color-base-hover, $kendo-color-base-hover),
+        active: var(--kendo-color-base-active, $kendo-color-base-active),
+        selected: var(--kendo-color-base-selected, $kendo-color-base-selected),
+        focus: var(--kendo-color-base-focus, $kendo-color-base-focus),
+    ),
+    "primary": (
+        normal: var(--kendo-color-primary, $kendo-color-primary),
+        text: var(--kendo-color-primary-text, $kendo-color-primary-text),
+        hover: var(--kendo-color-primary-hover, $kendo-color-primary-hover),
+        active: var(--kendo-color-primary-active, $kendo-color-primary-active),
+        selected: var(--kendo-color-primary-selected, $kendo-color-primary-selected),
+        focus: var(--kendo-color-primary-focus, $kendo-color-primary-focus),
+    ),
+    "secondary": (
+        normal: var(--kendo-color-secondary, $kendo-color-secondary),
+        text: var(--kendo-color-secondary-text, $kendo-color-secondary-text),
+        hover: var(--kendo-color-secondary-hover, $kendo-color-secondary-hover),
+        active: var(--kendo-color-secondary-active, $kendo-color-secondary-active),
+        selected: var(--kendo-color-secondary-selected, $kendo-color-secondary-selected),
+        focus: var(--kendo-color-secondary-focus, $kendo-color-secondary-focus),
+    ),
+    "tertiary": (
+        normal: var(--kendo-color-tertiary, $kendo-color-tertiary),
+        text: var(--kendo-color-tertiary-text, $kendo-color-tertiary-text),
+        hover: var(--kendo-color-tertiary-hover, $kendo-color-tertiary-hover),
+        active: var(--kendo-color-tertiary-active, $kendo-color-tertiary-active),
+        selected: var(--kendo-color-tertiary-selected, $kendo-color-tertiary-selected),
+        focus: var(--kendo-color-tertiary-focus, $kendo-color-tertiary-focus),
+    ),
+    "info": (
+        normal: var(--kendo-color-info, $kendo-color-info),
+        text: var(--kendo-color-info-text, $kendo-color-info-text),
+        hover: var(--kendo-color-info-hover, $kendo-color-info-hover),
+        active: var(--kendo-color-info-active, $kendo-color-info-active),
+        selected: var(--kendo-color-info-selected, $kendo-color-info-selected),
+        focus: var(--kendo-color-info-focus, $kendo-color-info-focus),
+    ),
+    "success": (
+        normal: var(--kendo-color-success, $kendo-color-success),
+        text: var(--kendo-color-success-text, $kendo-color-success-text),
+        hover: var(--kendo-color-success-hover, $kendo-color-success-hover),
+        active: var(--kendo-color-success-active, $kendo-color-success-active),
+        selected: var(--kendo-color-success-selected, $kendo-color-success-selected),
+        focus: var(--kendo-color-success-focus, $kendo-color-success-focus),
+    ),
+    "warning": (
+        normal: var(--kendo-color-warning, $kendo-color-warning),
+        text: var(--kendo-color-warning-text, $kendo-color-warning-text),
+        hover: var(--kendo-color-warning-hover, $kendo-color-warning-hover),
+        active: var(--kendo-color-warning-active, $kendo-color-warning-active),
+        selected: var(--kendo-color-warning-selected, $kendo-color-warning-selected),
+        focus: var(--kendo-color-warning-focus, $kendo-color-warning-focus),
+    ),
+    "error": (
+        normal: var(--kendo-color-error, $kendo-color-error),
+        text: var(--kendo-color-error-text, $kendo-color-error-text),
+        hover: var(--kendo-color-error-hover, $kendo-color-error-hover),
+        active: var(--kendo-color-error-active, $kendo-color-error-active),
+        selected: var(--kendo-color-error-selected, $kendo-color-error-selected),
+        focus: var(--kendo-color-error-focus, $kendo-color-error-focus),
+    ),
+    "light": (
+        normal: var(--kendo-color-light, $kendo-color-light),
+        text: var(--kendo-color-light-text, $kendo-color-light-text),
+        hover: var(--kendo-color-light-hover, $kendo-color-light-hover),
+        active: var(--kendo-color-light-active, $kendo-color-light-active),
+        selected: var(--kendo-color-light-selected, $kendo-color-light-selected),
+        focus: var(--kendo-color-light-focus, $kendo-color-light-focus),
+    ),
+    "dark": (
+        normal: var(--kendo-color-dark, $kendo-color-dark),
+        text: var(--kendo-color-dark-text, $kendo-color-dark-text),
+        hover: var(--kendo-color-dark-hover, $kendo-color-dark-hover),
+        active: var(--kendo-color-dark-active, $kendo-color-dark-active),
+        selected: var(--kendo-color-dark-selected, $kendo-color-dark-selected),
+        focus: var(--kendo-color-dark-focus, $kendo-color-dark-focus),
+    ),
+    "inverse": (
+        normal: var(--kendo-color-inverse, $kendo-color-inverse),
+        text: var(--kendo-color-inverse-text, $kendo-color-inverse-text),
+        hover: var(--kendo-color-inverse-hover, $kendo-color-inverse-hover),
+        active: var(--kendo-color-inverse-active, $kendo-color-inverse-active),
+        selected: var(--kendo-color-inverse-selected, $kendo-color-inverse-selected),
+        focus: var(--kendo-color-inverse-focus, $kendo-color-inverse-focus),
+    ),
+) !default;
+
+// TODO! Deprecate all bellow
+/// @deprecated
 $kendo-theme-colors: (
     "primary": $kendo-color-primary,
     "secondary": $kendo-color-secondary,
@@ -63,8 +198,6 @@ $kendo-theme-colors: (
     "light": $kendo-color-light,
     "inverse": $kendo-color-inverse,
 ) !default;
-
-// TODO! Deprecate all bellow
 /// @deprecated
 $kendo-color-primary-darker: k-color-shade($kendo-color-primary, 2) !default;
 /// @deprecated
@@ -114,7 +247,7 @@ $kendo-hover-border: $kendo-base-border !default;
 /// @deprecated
 $kendo-hover-text: $kendo-base-text !default;
 /// @deprecated
-$kendo-hover-bg: k-try-shade($kendo-base-bg, 0.5) !default;
+$kendo-hover-bg: $kendo-color-base-hover !default;
 /// @deprecated
 $kendo-component-border: rgba(if($kendo-is-dark-theme, $kendo-color-white, $kendo-color-black), 0.08) !default;
 /// @deprecated
@@ -124,35 +257,35 @@ $kendo-component-bg: $kendo-body-bg !default;
 /// @deprecated
 $kendo-link-hover-text: $kendo-color-primary-darker !default;
 /// @deprecated
-$kendo-color-primary-lighter: k-color-tint($kendo-color-primary, 2) !default;
+$kendo-color-primary-lighter: k-color-tint($kendo-color-primary, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-secondary-lighter: k-color-tint($kendo-color-secondary, 2) !default;
+$kendo-color-secondary-lighter: k-color-tint($kendo-color-secondary, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-secondary-darker: k-color-shade($kendo-color-secondary, 2) !default;
+$kendo-color-secondary-darker: k-color-shade($kendo-color-secondary, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-secondary-contrast: k-contrast-legacy($kendo-color-secondary) !default;
+$kendo-color-secondary-contrast: k-contrast-legacy($kendo-color-secondary) !default; // not use anywhere
 /// @deprecated
-$kendo-color-tertiary-lighter: k-color-tint($kendo-color-tertiary, 2) !default;
+$kendo-color-tertiary-lighter: k-color-tint($kendo-color-tertiary, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-tertiary-darker: k-color-shade($kendo-color-tertiary, 2) !default;
+$kendo-color-tertiary-darker: k-color-shade($kendo-color-tertiary, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-tertiary-contrast: k-contrast-legacy($kendo-color-tertiary) !default;
+$kendo-color-tertiary-contrast: k-contrast-legacy($kendo-color-tertiary) !default; // not used anywhere
 /// @deprecated
-$kendo-color-info-lighter: k-color-tint($kendo-color-info, 2) !default;
+$kendo-color-info-lighter: k-color-tint($kendo-color-info, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-info-darker: k-color-shade($kendo-color-info, 2) !default;
+$kendo-color-info-darker: k-color-shade($kendo-color-info, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-success-lighter: k-color-tint($kendo-color-success, 2) !default;
+$kendo-color-success-lighter: k-color-tint($kendo-color-success, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-success-darker: k-color-shade($kendo-color-success, 2) !default;
+$kendo-color-success-darker: k-color-shade($kendo-color-success, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-warning-lighter: k-color-tint($kendo-color-warning, 2) !default;
+$kendo-color-warning-lighter: k-color-tint($kendo-color-warning, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-warning-darker: k-color-shade($kendo-color-warning, 2) !default;
+$kendo-color-warning-darker: k-color-shade($kendo-color-warning, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-error-lighter: k-color-tint($kendo-color-error, 2) !default;
+$kendo-color-error-lighter: k-color-tint($kendo-color-error, 2) !default; // not used anywhere
 /// @deprecated
-$kendo-color-error-darker: k-color-shade($kendo-color-error, 2) !default;
+$kendo-color-error-darker: k-color-shade($kendo-color-error, 2) !default; // not used anywhere
 /// @deprecated
 $kendo-selected-hover-border: $kendo-base-border !default;
 /// @deprecated

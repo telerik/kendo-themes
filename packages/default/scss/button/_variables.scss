@@ -110,10 +110,10 @@ $kendo-button-theme-colors: k-map-merge(
 
 /// The base background of the Button.
 /// @group button
-$kendo-button-bg: $kendo-base-bg !default;
+$kendo-button-bg: $kendo-color-base !default;
 /// The base text color of the Button.
 /// @group button
-$kendo-button-text: $kendo-base-text !default;
+$kendo-button-text: $kendo-color-base-text !default;
 /// The base border color of the Button.
 /// @group button
 $kendo-button-border: $kendo-color-border !default;
@@ -126,7 +126,7 @@ $kendo-button-shadow: null !default;
 
 /// The base background of the hovered Button.
 /// @group button
-$kendo-button-hover-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
+$kendo-button-hover-bg: $kendo-hover-bg !default;
 /// The base text color of the hovered Button.
 /// @group button
 $kendo-button-hover-text: null !default;
@@ -142,7 +142,7 @@ $kendo-button-hover-shadow: null !default;
 
 /// The base background color of the active Button.
 /// @group button
-$kendo-button-active-bg: k-try-shade( $kendo-button-bg, 1.5 ) !default;
+$kendo-button-active-bg: $kendo-color-base-active !default;
 /// The base text color of the active Button.
 /// @group button
 $kendo-button-active-text: null !default;
@@ -158,13 +158,13 @@ $kendo-button-active-shadow: null !default;
 
 /// The base background color of the selected Button.
 /// @group button
-$kendo-button-selected-bg: $kendo-selected-bg !default;
+$kendo-button-selected-bg: $kendo-color-primary !default;
 /// The text color of the selected Button.
 /// @group button
-$kendo-button-selected-text: k-contrast-legacy( $kendo-button-selected-bg ) !default;
+$kendo-button-selected-text: $kendo-color-primary-text !default;
 /// The border color of the selected Button.
 /// @group button
-$kendo-button-selected-border: $kendo-button-selected-bg !default;
+$kendo-button-selected-border: $kendo-color-primary !default;
 /// The background gradient of the selected Button.
 /// @group button
 $kendo-button-selected-gradient: $kendo-button-active-gradient !default;
@@ -174,7 +174,7 @@ $kendo-button-selected-shadow: $kendo-button-active-shadow !default;
 
 /// The base background of the focused Button.
 /// @group button
-$kendo-button-focus-bg: null !default;
+$kendo-button-focus-bg: $kendo-color-base-focus !default;
 /// The base text color of the focused Button.
 /// @group button
 $kendo-button-focus-text: null !default;
