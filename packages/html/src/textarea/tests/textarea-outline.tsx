@@ -1,5 +1,4 @@
-import { Textarea } from '../../textarea';
-
+import { Textarea, TextareaNormal } from '../../textarea';
 
 const styles = `
     #test-area {
@@ -16,59 +15,36 @@ export default () =>(
             <span>TextArea Flat RTL</span>
 
             <div>
-                <Textarea fillMode="outline" placeholder="TextArea..." />
+                <Textarea fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <Textarea fillMode="outline" placeholder="TextArea..." />
+                <Textarea fillMode="outline" placeholder="placeholder..." />
+            </div>
+
+            {[ 'normal', ...Textarea.states ].map((state) => (
+                <>
+                    <div>
+                        <TextareaNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <TextareaNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+                </>
+            ))}
+
+            <div>
+                <TextareaNormal value="invalid focus" fillMode="outline" invalid focus />
+            </div>
+            <div dir="rtl">
+                <TextareaNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
 
             <div>
-                <Textarea fillMode="outline" value="Normal" />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="outline" value="Normal" />
-            </div>
-
-            <div>
-                <Textarea fillMode="outline" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="outline" value="Hover" hover />
-            </div>
-
-            <div>
-                <Textarea fillMode="outline" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="outline" value="Focus" focus />
-            </div>
-
-            <div>
-                <Textarea fillMode="outline" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="outline" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <Textarea fillMode="outline" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="outline" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <Textarea fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <Textarea fillMode="outline" rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
+                <TextareaNormal rows={3} fillMode="outline" value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
             </div>
             <div>
-                <Textarea fillMode="outline" rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."' />
+                <TextareaNormal rows={3} fillMode="outline" value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."' />
             </div>
         </div>
     </>

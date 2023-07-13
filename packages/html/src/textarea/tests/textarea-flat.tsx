@@ -1,5 +1,4 @@
-import { Textarea } from '../../textarea';
-
+import { Textarea, TextareaNormal } from '../../textarea';
 
 const styles = `
     #test-area {
@@ -16,60 +15,38 @@ export default () =>(
             <span>TextArea Flat RTL</span>
 
             <div>
-                <Textarea fillMode="flat" placeholder="TextArea..." />
+                <TextareaNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <Textarea fillMode="flat" placeholder="TextArea..." />
+                <TextareaNormal fillMode="flat" placeholder="placeholder..." />
+            </div>
+
+            {[ 'normal', ...Textarea.states ].map((state) => (
+                <>
+                    <div>
+                        <TextareaNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <TextareaNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
+
+            <div>
+                <TextareaNormal value="invalid focus" fillMode="flat" invalid focus />
+            </div>
+            <div dir="rtl">
+                <TextareaNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
 
             <div>
-                <Textarea fillMode="flat" value="Normal" />
+                <TextareaNormal rows={3} fillMode="flat" value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
             </div>
-            <div dir="rtl">
-                <Textarea fillMode="flat" value="Normal" />
+            <div>
+                <TextareaNormal rows={3} fillMode="flat" value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."' />
             </div>
 
-            <div>
-                <Textarea fillMode="flat" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="flat" value="Hover" hover />
-            </div>
-
-            <div>
-                <Textarea fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <Textarea fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <Textarea fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <Textarea fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Textarea fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <Textarea fillMode="flat" rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
-            </div>
-            <div>
-                <Textarea fillMode="flat" rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."' />
-            </div>
         </div>
     </>
 );
