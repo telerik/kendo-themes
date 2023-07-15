@@ -1,8 +1,12 @@
 $wcag-min-contrast-ratio: 4.5 !default;
 
+// Palettes
+@import "./color-system/_palettes.scss";
+
 // Variables
 @import "../_variables.scss";
 
+$kendo-palettes: $kendo-default-palettes;
 @import "@progress/kendo-theme-core/scss/index.import.scss";
 
 // Expose
