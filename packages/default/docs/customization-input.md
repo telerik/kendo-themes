@@ -266,7 +266,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-bg</td>
     <td>Color</td>
     <td><code>$kendo-component-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><span class="color-preview" style="background-color: #FFFFFF"></span><code>#FFFFFF</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Input components.</div></div>
@@ -276,7 +276,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-text</td>
     <td>Color</td>
     <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><span class="color-preview" style="background-color: #3D3D3D"></span><code>#3D3D3D</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input components.</div></div>
@@ -466,7 +466,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-outline-text</td>
     <td>Color</td>
     <td><code>$kendo-input-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><span class="color-preview" style="background-color: #3D3D3D"></span><code>#3D3D3D</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the outline Input components.</div></div>
@@ -476,7 +476,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-outline-border</td>
     <td>Color</td>
     <td><code>rgba( $kendo-button-text, .5)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.5)"></span><code>rgba(66, 66, 66, 0.5)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(61, 61, 61, 0.5)"></span><code>rgba(61, 61, 61, 0.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline Input components.</div></div>
@@ -506,7 +506,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-outline-hover-border</td>
     <td>Color</td>
     <td><code>rgba( $kendo-button-text, .8)</code></td>
-    <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.8)"></span><code>rgba(66, 66, 66, 0.8)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(61, 61, 61, 0.8)"></span><code>rgba(61, 61, 61, 0.8)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the outline hovered Input components.</div></div>
@@ -566,7 +566,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-flat-text</td>
     <td>Color</td>
     <td><code>$kendo-input-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><span class="color-preview" style="background-color: #3D3D3D"></span><code>#3D3D3D</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the flat Input components.</div></div>
@@ -776,7 +776,7 @@ The following table lists the available variables for customization.
     <td>$kendo-input-separator-color</td>
     <td>Color</td>
     <td><code>$kendo-input-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><span class="color-preview" style="background-color: #3D3D3D"></span><code>#3D3D3D</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>

@@ -451,7 +451,7 @@ The following table lists the available variables for customization.
     <td>$kendo-fieldset-legend-text</td>
     <td>Color</td>
     <td><code>k-try-shade( $kendo-body-text, 2 )</code></td>
-    <td><span class="color-preview" style="background-color: #373737"></span><code>#373737</code></td>
+    <td><span class="color-preview" style="background-color: #333333"></span><code>#333333</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Form legend.</div></div>

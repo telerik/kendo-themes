@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-body-bg</td>
     <td>Color</td>
     <td><code>$kendo-color-white</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td><span class="color-preview" style="background-color: #FFFFFF"></span><code>#FFFFFF</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the body.</div></div>
@@ -240,8 +240,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-body-text</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><code>k-get-theme-color( neutral, 130 )</code></td>
+    <td><span class="color-preview" style="background-color: #3D3D3D"></span><code>#3D3D3D</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the body.</div></div>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-subtle-text</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
+    <td><code>k-get-theme-color( neutral, 110 )</code></td>
     <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
 </tr>
 <tr>
@@ -261,7 +261,7 @@ The following table lists the available variables for customization.
     <td>$kendo-link-text</td>
     <td>Color</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
+    <td><span class="color-preview" style="background-color: #FF6358"></span><code>#FF6358</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the links.</div></div>
@@ -271,7 +271,7 @@ The following table lists the available variables for customization.
     <td>$kendo-link-hover-text</td>
     <td>Color</td>
     <td><code>$kendo-color-primary-darker</code></td>
-    <td><span class="color-preview" style="background-color: #d6534a"></span><code>#d6534a</code></td>
+    <td><span class="color-preview" style="background-color: #D45349"></span><code>#D45349</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the links on hover.</div></div>
@@ -280,8 +280,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-base-bg</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
-    <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
+    <td><code>k-get-theme-color( neutral, 20 )</code></td>
+    <td><span class="color-preview" style="background-color: #FAFAFA"></span><code>#FAFAFA</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -291,7 +291,7 @@ The following table lists the available variables for customization.
     <td>$kendo-base-text</td>
     <td>Color</td>
     <td><code>$kendo-body-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><span class="color-preview" style="background-color: #3D3D3D"></span><code>#3D3D3D</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-hover-text</td>
     <td>Color</td>
     <td><code>$kendo-base-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><span class="color-preview" style="background-color: #3D3D3D"></span><code>#3D3D3D</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
@@ -361,7 +361,7 @@ The following table lists the available variables for customization.
     <td>$kendo-selected-bg</td>
     <td>Color</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
+    <td><span class="color-preview" style="background-color: #FF6358"></span><code>#FF6358</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -460,8 +460,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-disabled-text</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #8f8f8f"></span><code>#8f8f8f</code></td>
-    <td><span class="color-preview" style="background-color: #8f8f8f"></span><code>#8f8f8f</code></td>
+    <td><code>k-get-theme-color( neutral, 90 )</code></td>
+    <td><span class="color-preview" style="background-color: #999999"></span><code>#999999</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>

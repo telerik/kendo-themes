@@ -271,9 +271,9 @@ The following table lists the available variables for customization.
     <td>Map</td>
     <td><code>k-map-merge(
     $kendo-theme-colors,
-    ( "base": #f5f5f5 )
+    ( "base": k-get-theme-color( neutral, 30 ) )
 )</code></td>
-    <td><code>("primary": #ff6358, "secondary": #666666, "tertiary": #03a9f4, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #ebebeb, "inverse": #424242, "base": #f5f5f5)</code></td>
+    <td><code>("primary": #FF6358, "secondary": #666666, "tertiary": #03a9f4, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #3D3D3D, "light": #EBEBEB, "inverse": #3D3D3D, "base": #F5F5F5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Button.</div></div>
@@ -282,8 +282,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-bg</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
-    <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
+    <td><code>k-get-theme-color( neutral, 30 )</code></td>
+    <td><span class="color-preview" style="background-color: #F5F5F5"></span><code>#F5F5F5</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the Button.</div></div>
@@ -292,8 +292,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-text</td>
     <td>Color</td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><code>k-get-theme-color( neutral, 130 )</code></td>
+    <td><span class="color-preview" style="background-color: #3D3D3D"></span><code>#3D3D3D</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the Button.</div></div>
@@ -302,7 +302,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-border</td>
     <td>Color</td>
-    <td><code>rgba( black, .08 )</code></td>
+    <td><code>rgba( k-get-theme-color( neutral, 170 ), .08 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -312,7 +312,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-gradient</td>
     <td>List</td>
-    <td><code>rgba( black, 0 ), rgba( black, .02 )</code></td>
+    <td><code>rgba( k-get-theme-color( neutral, 170 ), 0 ), rgba( k-get-theme-color( neutral, 170 ), .02 )</code></td>
     <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
@@ -433,7 +433,7 @@ The following table lists the available variables for customization.
     <td>$kendo-button-selected-bg</td>
     <td>Color</td>
     <td><code>$kendo-color-primary</code></td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
+    <td><span class="color-preview" style="background-color: #FF6358"></span><code>#FF6358</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the selected Button.</div></div>
@@ -453,7 +453,7 @@ The following table lists the available variables for customization.
     <td>$kendo-button-selected-border</td>
     <td>Color</td>
     <td><code>$kendo-button-selected-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
+    <td><span class="color-preview" style="background-color: #FF6358"></span><code>#FF6358</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected Button.</div></div>
