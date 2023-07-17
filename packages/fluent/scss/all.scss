@@ -1,4 +1,13 @@
-@use "./index.scss" as kendo-theme;
+@use "./index.scss" as kendo-theme with (
+  $kendo-body-text: #EBEBEB,
+  $kendo-body-bg: #121212,
+  $kendo-subtle-text: #808080,
+  $kendo-disabled-text: #4D4D4D,
+  $kendo-component-text: #EBEBEB,
+  $kendo-component-bg: #333333,
+  $kendo-hover-text: #EBEBEB,
+  $kendo-hover-bg: #383838
+);
 
 @include kendo-theme.config();
 @include kendo-theme.styles();
