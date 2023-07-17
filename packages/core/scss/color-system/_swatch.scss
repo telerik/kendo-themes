@@ -1,5 +1,7 @@
 @import "./_functions.import.scss";
 
+$kendo-new-colors: false !default;
+
 $kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
 $kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
 $kendo-subtle-text: null !default;
@@ -93,489 +95,6 @@ $kendo-color-border: null !default;
 $kendo-color-border-hover: null !default;
 $kendo-color-border-focus: null !default;
 
-$kendo-theme-palette: (
-    kendo-disabled-text: $kendo-disabled-text,
-    kendo-disabled-text-rgb: k-hex-to-rgb($kendo-disabled-text),
-    kendo-disabled-bg: $kendo-disabled-bg,
-    kendo-disabled-bg-rgb: k-hex-to-rgb($kendo-disabled-bg),
-    kendo-disabled-border: $kendo-disabled-border,
-    kendo-disabled-border-rgb: k-hex-to-rgb($kendo-disabled-border),
-    kendo-focus-outline: $kendo-focus-outline,
-    kendo-focus-outline-rgb: k-hex-to-rgb($kendo-focus-outline),
-    kendo-color-primary: $kendo-color-primary,
-    kendo-color-primary-rgb: k-hex-to-rgb($kendo-color-primary),
-    kendo-color-primary-text: $kendo-color-primary-text,
-    kendo-color-primary-text-rgb: k-hex-to-rgb($kendo-color-primary-text),
-    kendo-color-primary-hover: $kendo-color-primary-hover,
-    kendo-color-primary-hover-rgb: k-hex-to-rgb($kendo-color-primary-hover),
-    kendo-color-primary-active: $kendo-color-primary-active,
-    kendo-color-primary-active-rgb: k-hex-to-rgb($kendo-color-primary-active),
-    kendo-color-primary-selected: $kendo-color-primary-selected,
-    kendo-color-primary-selected-rgb: k-hex-to-rgb($kendo-color-primary-selected),
-    kendo-color-primary-focus: $kendo-color-primary-focus,
-    kendo-color-primary-focus-rgb: k-hex-to-rgb($kendo-color-primary-focus),
-    kendo-color-base: $kendo-color-base,
-    kendo-color-base-rgb: k-hex-to-rgb($kendo-color-base),
-    kendo-color-base-text: $kendo-color-base-text,
-    kendo-color-base-text-rgb: k-hex-to-rgb($kendo-color-base-text),
-    kendo-color-base-hover: $kendo-color-base-hover,
-    kendo-color-base-hover-rgb: k-hex-to-rgb($kendo-color-base-hover),
-    kendo-color-base-active: $kendo-color-base-active,
-    kendo-color-base-active-rgb: k-hex-to-rgb($kendo-color-base-active),
-    kendo-color-base-selected: $kendo-color-base-selected,
-    kendo-color-base-selected-rgb: k-hex-to-rgb($kendo-color-base-selected),
-    kendo-color-base-focus: $kendo-color-base-focus,
-    kendo-color-base-focus-rgb: k-hex-to-rgb($kendo-color-base-focus),
-    kendo-color-secondary: $kendo-color-secondary,
-    kendo-color-secondary-rgb: k-hex-to-rgb($kendo-color-secondary),
-    kendo-color-secondary-text: $kendo-color-secondary-text,
-    kendo-color-secondary-text-rgb: k-hex-to-rgb($kendo-color-secondary-text),
-    kendo-color-secondary-hover: $kendo-color-secondary-hover,
-    kendo-color-secondary-hover-rgb: k-hex-to-rgb($kendo-color-secondary-hover),
-    kendo-color-secondary-active: $kendo-color-secondary-active,
-    kendo-color-secondary-active-rgb: k-hex-to-rgb($kendo-color-secondary-active),
-    kendo-color-secondary-selected: $kendo-color-secondary-selected,
-    kendo-color-secondary-selected-rgb: k-hex-to-rgb($kendo-color-secondary-selected),
-    kendo-color-secondary-focus: $kendo-color-secondary-focus,
-    kendo-color-secondary-focus-rgb: k-hex-to-rgb($kendo-color-secondary-focus),
-    kendo-color-tertiary: $kendo-color-tertiary,
-    kendo-color-tertiary-rgb: k-hex-to-rgb($kendo-color-tertiary),
-    kendo-color-tertiary-text: $kendo-color-tertiary-text,
-    kendo-color-tertiary-text-rgb: k-hex-to-rgb($kendo-color-tertiary-text),
-    kendo-color-tertiary-hover: $kendo-color-tertiary-hover,
-    kendo-color-tertiary-hover-rgb: k-hex-to-rgb($kendo-color-tertiary-hover),
-    kendo-color-tertiary-active: $kendo-color-tertiary-active,
-    kendo-color-tertiary-active-rgb: k-hex-to-rgb($kendo-color-tertiary-active),
-    kendo-color-tertiary-selected: $kendo-color-tertiary-selected,
-    kendo-color-tertiary-selected-rgb: k-hex-to-rgb($kendo-color-tertiary-selected),
-    kendo-color-tertiary-focus: $kendo-color-tertiary-focus,
-    kendo-color-tertiary-focus-rgb: k-hex-to-rgb($kendo-color-tertiary-focus),
-    kendo-color-info: $kendo-color-info,
-    kendo-color-info-rgb: k-hex-to-rgb($kendo-color-info),
-    kendo-color-info-text: $kendo-color-info-text,
-    kendo-color-info-text-rgb: k-hex-to-rgb($kendo-color-info-text),
-    kendo-color-info-hover: $kendo-color-info-hover,
-    kendo-color-info-hover-rgb: k-hex-to-rgb($kendo-color-info-hover),
-    kendo-color-info-active: $kendo-color-info-active,
-    kendo-color-info-active-rgb: k-hex-to-rgb($kendo-color-info-active),
-    kendo-color-info-selected: $kendo-color-info-selected,
-    kendo-color-info-selected-rgb: k-hex-to-rgb($kendo-color-info-selected),
-    kendo-color-info-focus: $kendo-color-info-focus,
-    kendo-color-info-focus-rgb: k-hex-to-rgb($kendo-color-info-focus),
-    kendo-color-success: $kendo-color-success,
-    kendo-color-success-rgb: k-hex-to-rgb($kendo-color-success),
-    kendo-color-success-text: $kendo-color-success-text,
-    kendo-color-success-text-rgb: k-hex-to-rgb($kendo-color-success-text),
-    kendo-color-success-hover: $kendo-color-success-hover,
-    kendo-color-success-hover-rgb: k-hex-to-rgb($kendo-color-success-hover),
-    kendo-color-success-active: $kendo-color-success-active,
-    kendo-color-success-active-rgb: k-hex-to-rgb($kendo-color-success-active),
-    kendo-color-success-selected: $kendo-color-success-selected,
-    kendo-color-success-selected-rgb: k-hex-to-rgb($kendo-color-success-selected),
-    kendo-color-success-focus: $kendo-color-success-focus,
-    kendo-color-success-focus-rgb: k-hex-to-rgb($kendo-color-success-focus),
-    kendo-color-warning: $kendo-color-warning,
-    kendo-color-warning-rgb: k-hex-to-rgb($kendo-color-warning),
-    kendo-color-warning-text: $kendo-color-warning-text,
-    kendo-color-warning-text-rgb: k-hex-to-rgb($kendo-color-warning-text),
-    kendo-color-warning-hover: $kendo-color-warning-hover,
-    kendo-color-warning-hover-rgb: k-hex-to-rgb($kendo-color-warning-hover),
-    kendo-color-warning-active: $kendo-color-warning-active,
-    kendo-color-warning-active-rgb: k-hex-to-rgb($kendo-color-warning-active),
-    kendo-color-warning-selected: $kendo-color-warning-selected,
-    kendo-color-warning-selected-rgb: k-hex-to-rgb($kendo-color-warning-selected),
-    kendo-color-warning-focus: $kendo-color-warning-focus,
-    kendo-color-warning-focus-rgb: k-hex-to-rgb($kendo-color-warning-focus),
-    kendo-color-error: $kendo-color-error,
-    kendo-color-error-rgb: k-hex-to-rgb($kendo-color-error),
-    kendo-color-error-text: $kendo-color-error-text,
-    kendo-color-error-text-rgb: k-hex-to-rgb($kendo-color-error-text),
-    kendo-color-error-hover: $kendo-color-error-hover,
-    kendo-color-error-hover-rgb: k-hex-to-rgb($kendo-color-error-hover),
-    kendo-color-error-active: $kendo-color-error-active,
-    kendo-color-error-active-rgb: k-hex-to-rgb($kendo-color-error-active),
-    kendo-color-error-selected: $kendo-color-error-selected,
-    kendo-color-error-selected-rgb: k-hex-to-rgb($kendo-color-error-selected),
-    kendo-color-error-focus: $kendo-color-error-focus,
-    kendo-color-error-focus-rgb: k-hex-to-rgb($kendo-color-error-focus),
-    kendo-color-light: $kendo-color-light,
-    kendo-color-light-rgb: k-hex-to-rgb($kendo-color-light),
-    kendo-color-light-text: $kendo-color-light-text,
-    kendo-color-light-text-rgb: k-hex-to-rgb($kendo-color-light-text),
-    kendo-color-light-hover: $kendo-color-light-hover,
-    kendo-color-light-hover-rgb: k-hex-to-rgb($kendo-color-light-hover),
-    kendo-color-light-active: $kendo-color-light-active,
-    kendo-color-light-active-rgb: k-hex-to-rgb($kendo-color-light-active),
-    kendo-color-light-selected: $kendo-color-light-selected,
-    kendo-color-light-selected-rgb: k-hex-to-rgb($kendo-color-light-selected),
-    kendo-color-light-focus: $kendo-color-light-focus,
-    kendo-color-light-focus-rgb: k-hex-to-rgb($kendo-color-light-focus),
-    kendo-color-dark: $kendo-color-dark,
-    kendo-color-dark-rgb: k-hex-to-rgb($kendo-color-dark),
-    kendo-color-dark-text: $kendo-color-dark-text,
-    kendo-color-dark-text-rgb: k-hex-to-rgb($kendo-color-dark-text),
-    kendo-color-dark-hover: $kendo-color-dark-hover,
-    kendo-color-dark-hover-rgb: k-hex-to-rgb($kendo-color-dark-hover),
-    kendo-color-dark-active: $kendo-color-dark-active,
-    kendo-color-dark-active-rgb: k-hex-to-rgb($kendo-color-dark-active),
-    kendo-color-dark-selected: $kendo-color-dark-selected,
-    kendo-color-dark-selected-rgb: k-hex-to-rgb($kendo-color-dark-selected),
-    kendo-color-dark-focus: $kendo-color-dark-focus,
-    kendo-color-dark-focus-rgb: k-hex-to-rgb($kendo-color-dark-focus),
-    kendo-color-inverse: $kendo-color-inverse,
-    kendo-color-inverse-rgb: k-hex-to-rgb($kendo-color-inverse),
-    kendo-color-inverse-text: $kendo-color-inverse-text,
-    kendo-color-inverse-text-rgb: k-hex-to-rgb($kendo-color-inverse-text),
-    kendo-color-inverse-hover: $kendo-color-inverse-hover,
-    kendo-color-inverse-hover-rgb: k-hex-to-rgb($kendo-color-inverse-hover),
-    kendo-color-inverse-active: $kendo-color-inverse-active,
-    kendo-color-inverse-active-rgb: k-hex-to-rgb($kendo-color-inverse-active),
-    kendo-color-inverse-selected: $kendo-color-inverse-selected,
-    kendo-color-inverse-selected-rgb: k-hex-to-rgb($kendo-color-inverse-selected),
-    kendo-color-inverse-focus: $kendo-color-inverse-focus,
-    kendo-color-inverse-focus-rgb: k-hex-to-rgb($kendo-color-inverse-focus),
-    kendo-body-bg: $kendo-body-bg,
-    kendo-body-bg-rgb: k-hex-to-rgb($kendo-body-bg),
-    kendo-body-text: $kendo-body-text,
-    kendo-body-text-rgb: k-hex-to-rgb($kendo-body-text),
-    kendo-color-border: $kendo-color-border,
-    kendo-color-border-rgb: k-hex-to-rgb($kendo-color-border),
-    kendo-color-border-hover: $kendo-color-border-hover,
-    kendo-color-border-hover-rgb: k-hex-to-rgb($kendo-color-border-hover),
-    kendo-color-border-focus: $kendo-color-border-focus,
-    kendo-color-border-focus-rgb: k-hex-to-rgb($kendo-color-border-focus),
-);
-
-$_kendo-color-white: var(--kendo-color-white, k-map-get($kendo-theme-palette, kendo-color-white));
-$_kendo-color-white-rgb: var(--kendo-color-white-rgb, k-hex-to-rgb($kendo-color-white));
-$_kendo-color-black: var(--kendo-color-black, k-map-get($kendo-theme-palette, kendo-color-black));
-$_kendo-color-black-rgb: var(--kendo-color-black-rgb, k-hex-to-rgb($kendo-color-black));
-
-$_kendo-subtle-text: var(--kendo-subtle-text, k-map-get($kendo-theme-palette, kendo-subtle-text));
-$_kendo-subtle-text-rgb: var(--kendo-subtle-text-rgb, k-hex-to-rgb($kendo-subtle-text));
-
-$_kendo-disabled-text: var(--kendo-disabled-text, k-map-get($kendo-theme-palette, kendo-disabled-text));
-$_kendo-disabled-text-rgb: var(--kendo-disabled-text-rgb, k-hex-to-rgb($kendo-disabled-text));
-$_kendo-disabled-bg: var(--kendo-disabled-bg, k-map-get($kendo-theme-palette, kendo-disabled-bg));
-$_kendo-disabled-bg-rgb: var(--kendo-disabled-bg-rgb, k-hex-to-rgb($kendo-disabled-bg));
-$_kendo-disabled-border: var(--kendo-disabled-border, k-map-get($kendo-theme-palette, kendo-disabled-border));
-$_kendo-disabled-border-rgb: var(--kendo-disabled-border-rgb, k-hex-to-rgb($kendo-disabled-border));
-$_kendo-focus-outline: var(--kendo-focus-outline, k-map-get($kendo-theme-palette, kendo-focus-outline));
-$_kendo-focus-outline-rgb: var(--kendo-focus-outline-rgb, k-hex-to-rgb($kendo-focus-outline));
-
-$_kendo-color-primary: var(--kendo-color-primary, k-map-get($kendo-theme-palette, kendo-color-primary));
-$_kendo-color-primary-rgb: var(--kendo-color-primary-rgb, k-hex-to-rgb($kendo-color-primary));
-$_kendo-color-primary-text: var(--kendo-color-primary-text, k-map-get($kendo-theme-palette, kendo-color-primary-text));
-$_kendo-color-primary-text-rgb: var(--kendo-color-primary-text-rgb, k-hex-to-rgb($kendo-color-primary-text));
-$_kendo-color-primary-hover: var(--kendo-color-primary-hover, k-map-get($kendo-theme-palette, kendo-color-primary-hover));
-$_kendo-color-primary-hover-rgb: var(--kendo-color-primary-hover-rgb, k-hex-to-rgb($kendo-color-primary-hover));
-$_kendo-color-primary-active: var(--kendo-color-primary-active, k-map-get($kendo-theme-palette, kendo-color-primary-active));
-$_kendo-color-primary-active-rgb: var(--kendo-color-primary-active-rgb, k-hex-to-rgb($kendo-color-primary-active));
-$_kendo-color-primary-selected: var(--kendo-color-primary-selected, k-map-get($kendo-theme-palette, kendo-color-primary-selected));
-$_kendo-color-primary-selected-rgb: var(--kendo-color-primary-selected-rgb, k-hex-to-rgb($kendo-color-primary-selected));
-$_kendo-color-primary-focus: var(--kendo-color-primary-focus, k-map-get($kendo-theme-palette, kendo-color-primary-focus));
-$_kendo-color-primary-focus-rgb: var(--kendo-color-primary-focus-rgb, k-hex-to-rgb($kendo-color-primary-focus));
-
-$_kendo-color-base: var(--kendo-color-base, k-map-get($kendo-theme-palette, kendo-color-base));
-$_kendo-color-base-rgb: var(--kendo-color-base-rgb, k-hex-to-rgb($kendo-color-base));
-$_kendo-color-base-text: var(--kendo-color-base-text, k-map-get($kendo-theme-palette, kendo-color-base-text));
-$_kendo-color-base-text-rgb: var(--kendo-color-base-text-rgb, k-hex-to-rgb($kendo-color-base-text));
-$_kendo-color-base-hover: var(--kendo-color-base-hover, k-map-get($kendo-theme-palette, kendo-color-base-hover));
-$_kendo-color-base-hover-rgb: var(--kendo-color-base-hover-rgb, k-hex-to-rgb($kendo-color-base-hover));
-$_kendo-color-base-active: var(--kendo-color-base-active, k-map-get($kendo-theme-palette, kendo-color-base-active));
-$_kendo-color-base-active-rgb: var(--kendo-color-base-active-rgb, k-hex-to-rgb($kendo-color-base-active));
-$_kendo-color-base-selected: var(--kendo-color-base-selected, k-map-get($kendo-theme-palette, kendo-color-base-selected));
-$_kendo-color-base-selected-rgb: var(--kendo-color-base-selected-rgb, k-hex-to-rgb($kendo-color-base-selected));
-$_kendo-color-base-focus: var(--kendo-color-base-focus, k-map-get($kendo-theme-palette, kendo-color-base-focus));
-$_kendo-color-base-focus-rgb: var(--kendo-color-base-focus-rgb, k-hex-to-rgb($kendo-color-base-focus));
-
-$_kendo-color-secondary: var(--kendo-color-secondary, k-map-get($kendo-theme-palette, kendo-color-secondary));
-$_kendo-color-secondary-rgb: var(--kendo-color-secondary-rgb, k-hex-to-rgb($kendo-color-secondary));
-$_kendo-color-secondary-text: var(--kendo-color-secondary-text, k-map-get($kendo-theme-palette, kendo-color-secondary-text));
-$_kendo-color-secondary-text-rgb: var(--kendo-color-secondary-text-rgb, k-hex-to-rgb($kendo-color-secondary-text));
-$_kendo-color-secondary-hover: var(--kendo-color-secondary-hover, k-map-get($kendo-theme-palette, kendo-color-secondary-hover));
-$_kendo-color-secondary-hover-rgb: var(--kendo-color-secondary-hover-rgb, k-hex-to-rgb($kendo-color-secondary-hover));
-$_kendo-color-secondary-active: var(--kendo-color-secondary-active, k-map-get($kendo-theme-palette, kendo-color-secondary-active));
-$_kendo-color-secondary-active-rgb: var(--kendo-color-secondary-active-rgb, k-hex-to-rgb($kendo-color-secondary-active));
-$_kendo-color-secondary-selected: var(--kendo-color-secondary-selected, k-map-get($kendo-theme-palette, kendo-color-secondary-selected));
-$_kendo-color-secondary-selected-rgb: var(--kendo-color-secondary-selected-rgb, k-hex-to-rgb($kendo-color-secondary-selected));
-$_kendo-color-secondary-focus: var(--kendo-color-secondary-focus, k-map-get($kendo-theme-palette, kendo-color-secondary-focus));
-$_kendo-color-secondary-focus-rgb: var(--kendo-color-secondary-focus-rgb, k-hex-to-rgb($kendo-color-secondary-focus));
-
-$_kendo-color-tertiary: var(--kendo-color-tertiary, k-map-get($kendo-theme-palette, kendo-color-tertiary));
-$_kendo-color-tertiary-rgb: var(--kendo-color-tertiary-rgb, k-hex-to-rgb($kendo-color-tertiary));
-$_kendo-color-tertiary-text: var(--kendo-color-tertiary-text, k-map-get($kendo-theme-palette, kendo-color-tertiary-text));
-$_kendo-color-tertiary-text-rgb: var(--kendo-color-tertiary-text-rgb, k-hex-to-rgb($kendo-color-tertiary-text));
-$_kendo-color-tertiary-hover: var(--kendo-color-tertiary-hover, k-map-get($kendo-theme-palette, kendo-color-tertiary-hover));
-$_kendo-color-tertiary-hover-rgb: var(--kendo-color-tertiary-hover-rgb, k-hex-to-rgb($kendo-color-tertiary-hover));
-$_kendo-color-tertiary-active: var(--kendo-color-tertiary-active, k-map-get($kendo-theme-palette, kendo-color-tertiary-active));
-$_kendo-color-tertiary-active-rgb: var(--kendo-color-tertiary-active-rgb, k-hex-to-rgb($kendo-color-tertiary-active));
-$_kendo-color-tertiary-selected: var(--kendo-color-tertiary-selected, k-map-get($kendo-theme-palette, kendo-color-tertiary-selected));
-$_kendo-color-tertiary-selected-rgb: var(--kendo-color-tertiary-selected-rgb, k-hex-to-rgb($kendo-color-tertiary-selected));
-$_kendo-color-tertiary-focus: var(--kendo-color-tertiary-focus, k-map-get($kendo-theme-palette, kendo-color-tertiary-focus));
-$_kendo-color-tertiary-focus-rgb: var(--kendo-color-tertiary-focus-rgb, k-hex-to-rgb($kendo-color-tertiary-focus));
-
-$_kendo-color-info: var(--kendo-color-info, k-map-get($kendo-theme-palette, kendo-color-info));
-$_kendo-color-info-rgb: var(--kendo-color-info-rgb, k-hex-to-rgb($kendo-color-info));
-$_kendo-color-info-text: var(--kendo-color-info-text, k-map-get($kendo-theme-palette, kendo-color-info-text));
-$_kendo-color-info-text-rgb: var(--kendo-color-info-text-rgb, k-hex-to-rgb($kendo-color-info-text));
-$_kendo-color-info-hover: var(--kendo-color-info-hover, k-map-get($kendo-theme-palette, kendo-color-info-hover));
-$_kendo-color-info-hover-rgb: var(--kendo-color-info-hover-rgb, k-hex-to-rgb($kendo-color-info-hover));
-$_kendo-color-info-active: var(--kendo-color-info-active, k-map-get($kendo-theme-palette, kendo-color-info-active));
-$_kendo-color-info-active-rgb: var(--kendo-color-info-active-rgb, k-hex-to-rgb($kendo-color-info-active));
-$_kendo-color-info-selected: var(--kendo-color-info-selected, k-map-get($kendo-theme-palette, kendo-color-info-selected));
-$_kendo-color-info-selected-rgb: var(--kendo-color-info-selected-rgb, k-hex-to-rgb($kendo-color-info-selected));
-$_kendo-color-info-focus: var(--kendo-color-info-focus, k-map-get($kendo-theme-palette, kendo-color-info-focus));
-$_kendo-color-info-focus-rgb: var(--kendo-color-info-focus-rgb, k-hex-to-rgb($kendo-color-info-focus));
-
-$_kendo-color-success: var(--kendo-color-success, k-map-get($kendo-theme-palette, kendo-color-success));
-$_kendo-color-success-rgb: var(--kendo-color-success-rgb, k-hex-to-rgb($kendo-color-success));
-$_kendo-color-success-text: var(--kendo-color-success-text, k-map-get($kendo-theme-palette, kendo-color-success-text));
-$_kendo-color-success-text-rgb: var(--kendo-color-success-text-rgb, k-hex-to-rgb($kendo-color-success-text));
-$_kendo-color-success-hover: var(--kendo-color-success-hover, k-map-get($kendo-theme-palette, kendo-color-success-hover));
-$_kendo-color-success-hover-rgb: var(--kendo-color-success-hover-rgb, k-hex-to-rgb($kendo-color-success-hover));
-$_kendo-color-success-active: var(--kendo-color-success-active, k-map-get($kendo-theme-palette, kendo-color-success-active));
-$_kendo-color-success-active-rgb: var(--kendo-color-success-active-rgb, k-hex-to-rgb($kendo-color-success-active));
-$_kendo-color-success-selected: var(--kendo-color-success-selected, k-map-get($kendo-theme-palette, kendo-color-success-selected));
-$_kendo-color-success-selected-rgb: var(--kendo-color-success-selected-rgb, k-hex-to-rgb($kendo-color-success-selected));
-$_kendo-color-success-focus: var(--kendo-color-success-focus, k-map-get($kendo-theme-palette, kendo-color-success-focus));
-$_kendo-color-success-focus-rgb: var(--kendo-color-success-focus-rgb, k-hex-to-rgb($kendo-color-success-focus));
-
-$_kendo-color-warning: var(--kendo-color-warning, k-map-get($kendo-theme-palette, kendo-color-warning));
-$_kendo-color-warning-rgb: var(--kendo-color-warning-rgb, k-hex-to-rgb($kendo-color-warning));
-$_kendo-color-warning-text: var(--kendo-color-warning-text, k-map-get($kendo-theme-palette, kendo-color-warning-text));
-$_kendo-color-warning-text-rgb: var(--kendo-color-warning-text-rgb, k-hex-to-rgb($kendo-color-warning-text));
-$_kendo-color-warning-hover: var(--kendo-color-warning-hover, k-map-get($kendo-theme-palette, kendo-color-warning-hover));
-$_kendo-color-warning-hover-rgb: var(--kendo-color-warning-hover-rgb, k-hex-to-rgb($kendo-color-warning-hover));
-$_kendo-color-warning-active: var(--kendo-color-warning-active, k-map-get($kendo-theme-palette, kendo-color-warning-active));
-$_kendo-color-warning-active-rgb: var(--kendo-color-warning-active-rgb, k-hex-to-rgb($kendo-color-warning-active));
-$_kendo-color-warning-selected: var(--kendo-color-warning-selected, k-map-get($kendo-theme-palette, kendo-color-warning-selected));
-$_kendo-color-warning-selected-rgb: var(--kendo-color-warning-selected-rgb, k-hex-to-rgb($kendo-color-warning-selected));
-$_kendo-color-warning-focus: var(--kendo-color-warning-focus, k-map-get($kendo-theme-palette, kendo-color-warning-focus));
-$_kendo-color-warning-focus-rgb: var(--kendo-color-warning-focus-rgb, k-hex-to-rgb($kendo-color-warning-focus));
-
-$_kendo-color-error: var(--kendo-color-error, k-map-get($kendo-theme-palette, kendo-color-error));
-$_kendo-color-error-rgb: var(--kendo-color-error-rgb, k-hex-to-rgb($kendo-color-error));
-$_kendo-color-error-text: var(--kendo-color-error-text, k-map-get($kendo-theme-palette, kendo-color-error-text));
-$_kendo-color-error-text-rgb: var(--kendo-color-error-text-rgb, k-hex-to-rgb($kendo-color-error-text));
-$_kendo-color-error-hover: var(--kendo-color-error-hover, k-map-get($kendo-theme-palette, kendo-color-error-hover));
-$_kendo-color-error-hover-rgb: var(--kendo-color-error-hover-rgb, k-hex-to-rgb($kendo-color-error-hover));
-$_kendo-color-error-active: var(--kendo-color-error-active, k-map-get($kendo-theme-palette, kendo-color-error-active));
-$_kendo-color-error-active-rgb: var(--kendo-color-error-active-rgb, k-hex-to-rgb($kendo-color-error-active));
-$_kendo-color-error-selected: var(--kendo-color-error-selected, k-map-get($kendo-theme-palette, kendo-color-error-selected));
-$_kendo-color-error-selected-rgb: var(--kendo-color-error-selected-rgb, k-hex-to-rgb($kendo-color-error-selected));
-$_kendo-color-error-focus: var(--kendo-color-error-focus, k-map-get($kendo-theme-palette, kendo-color-error-focus));
-$_kendo-color-error-focus-rgb: var(--kendo-color-error-focus-rgb, k-hex-to-rgb($kendo-color-error-focus));
-
-$_kendo-color-light: var(--kendo-color-light, k-map-get($kendo-theme-palette, kendo-color-light));
-$_kendo-color-light-rgb: var(--kendo-color-light-rgb, k-hex-to-rgb($kendo-color-light));
-$_kendo-color-light-text: var(--kendo-color-light-text, k-map-get($kendo-theme-palette, kendo-color-light-text));
-$_kendo-color-light-text-rgb: var(--kendo-color-light-text-rgb, k-hex-to-rgb($kendo-color-light-text));
-$_kendo-color-light-hover: var(--kendo-color-light-hover, k-map-get($kendo-theme-palette, kendo-color-light-hover));
-$_kendo-color-light-hover-rgb: var(--kendo-color-light-hover-rgb, k-hex-to-rgb($kendo-color-light-hover));
-$_kendo-color-light-active: var(--kendo-color-light-active, k-map-get($kendo-theme-palette, kendo-color-light-active));
-$_kendo-color-light-active-rgb: var(--kendo-color-light-active-rgb, k-hex-to-rgb($kendo-color-light-active));
-$_kendo-color-light-selected: var(--kendo-color-light-selected, k-map-get($kendo-theme-palette, kendo-color-light-selected));
-$_kendo-color-light-selected-rgb: var(--kendo-color-light-selected-rgb, k-hex-to-rgb($kendo-color-light-selected));
-$_kendo-color-light-focus: var(--kendo-color-light-focus, k-map-get($kendo-theme-palette, kendo-color-light-focus));
-$_kendo-color-light-focus-rgb: var(--kendo-color-light-focus-rgb, k-hex-to-rgb($kendo-color-light-focus));
-
-$_kendo-color-dark: var(--kendo-color-dark, k-map-get($kendo-theme-palette, kendo-color-dark));
-$_kendo-color-dark-rgb: var(--kendo-color-dark-rgb, k-hex-to-rgb($kendo-color-dark));
-$_kendo-color-dark-text: var(--kendo-color-dark-text, k-map-get($kendo-theme-palette, kendo-color-dark-text));
-$_kendo-color-dark-text-rgb: var(--kendo-color-dark-text-rgb, k-hex-to-rgb($kendo-color-dark-text));
-$_kendo-color-dark-hover: var(--kendo-color-dark-hover, k-map-get($kendo-theme-palette, kendo-color-dark-hover));
-$_kendo-color-dark-hover-rgb: var(--kendo-color-dark-hover-rgb, k-hex-to-rgb($kendo-color-dark-hover));
-$_kendo-color-dark-active: var(--kendo-color-dark-active, k-map-get($kendo-theme-palette, kendo-color-dark-active));
-$_kendo-color-dark-active-rgb: var(--kendo-color-dark-active-rgb, k-hex-to-rgb($kendo-color-dark-active));
-$_kendo-color-dark-selected: var(--kendo-color-dark-selected, k-map-get($kendo-theme-palette, kendo-color-dark-selected));
-$_kendo-color-dark-selected-rgb: var(--kendo-color-dark-selected-rgb, k-hex-to-rgb($kendo-color-dark-selected));
-$_kendo-color-dark-focus: var(--kendo-color-dark-focus, k-map-get($kendo-theme-palette, kendo-color-dark-focus));
-$_kendo-color-dark-focus-rgb: var(--kendo-color-dark-focus-rgb, k-hex-to-rgb($kendo-color-dark-focus));
-
-$_kendo-color-inverse: var(--kendo-color-inverse, k-map-get($kendo-theme-palette, kendo-color-inverse));
-$_kendo-color-inverse-rgb: var(--kendo-color-inverse-rgb, k-hex-to-rgb($kendo-color-inverse));
-$_kendo-color-inverse-text: var(--kendo-color-inverse-text, k-map-get($kendo-theme-palette, kendo-color-inverse-text));
-$_kendo-color-inverse-text-rgb: var(--kendo-color-inverse-text-rgb, k-hex-to-rgb($kendo-color-inverse-text));
-$_kendo-color-inverse-hover: var(--kendo-color-inverse-hover, k-map-get($kendo-theme-palette, kendo-color-inverse-hover));
-$_kendo-color-inverse-hover-rgb: var(--kendo-color-inverse-hover-rgb, k-hex-to-rgb($kendo-color-inverse-hover));
-$_kendo-color-inverse-active: var(--kendo-color-inverse-active, k-map-get($kendo-theme-palette, kendo-color-inverse-active));
-$_kendo-color-inverse-active-rgb: var(--kendo-color-inverse-active-rgb, k-hex-to-rgb($kendo-color-inverse-active));
-$_kendo-color-inverse-selected: var(--kendo-color-inverse-selected, k-map-get($kendo-theme-palette, kendo-color-inverse-selected));
-$_kendo-color-inverse-selected-rgb: var(--kendo-color-inverse-selected-rgb, k-hex-to-rgb($kendo-color-inverse-selected));
-$_kendo-color-inverse-focus: var(--kendo-color-inverse-focus, k-map-get($kendo-theme-palette, kendo-color-inverse-focus));
-$_kendo-color-inverse-focus-rgb: var(--kendo-color-inverse-focus-rgb, k-hex-to-rgb($kendo-color-inverse-focus));
-
-$_kendo-body-bg: var(--kendo-body-bg, k-map-get($kendo-theme-palette, kendo-body-bg));
-$_kendo-body-bg-rgb: var(--kendo-body-bg-rgb, k-hex-to-rgb($kendo-body-bg));
-$_kendo-body-text: var(--kendo-body-text, k-map-get($kendo-theme-palette, kendo-body-text));
-$_kendo-body-text-rgb: var(--kendo-body-text-rgb, k-hex-to-rgb($kendo-body-text));
-
-$_kendo-color-border: var(--kendo-color-border, k-map-get($kendo-theme-palette, kendo-color-border));
-$_kendo-color-border-rgb: var(--kendo-color-border-rgb, k-hex-to-rgb($kendo-color-border));
-$_kendo-color-border-hover: var(--kendo-color-border-hover, k-map-get($kendo-theme-palette, kendo-color-border-hover));
-$_kendo-color-border-hover-rgb: var(--kendo-color-border-hover-rgb, k-hex-to-rgb($kendo-color-border-hover));
-$_kendo-color-border-focus: var(--kendo-color-border-focus, k-map-get($kendo-theme-palette, kendo-color-border-focus));
-$_kendo-color-border-focus-rgb: var(--kendo-color-border-focus-rgb, k-hex-to-rgb($kendo-color-border-focus));
-
-$kendo-theme-swatches: (
-    // TODO: base?
-    "base": (
-        normal: $_kendo-color-base,
-        normal-rgb: $_kendo-color-base-rgb,
-        text: $_kendo-color-base-text,
-        text-rgb: $_kendo-color-base-text-rgb,
-        hover: $_kendo-color-base-hover,
-        hover-rgb: $_kendo-color-base-hover-rgb,
-        active: $_kendo-color-base-active,
-        active-rgb: $_kendo-color-base-active-rgb,
-        selected: $_kendo-color-base-selected,
-        selected-rgb: $_kendo-color-base-selected-rgb,
-        focus: $_kendo-color-base-focus,
-        focus-rgb: $_kendo-color-base-focus-rgb,
-    ),
-    "primary": (
-        normal: $_kendo-color-primary,
-        normal-rgb: $_kendo-color-primary-rgb,
-        text: $_kendo-color-primary-text,
-        text-rgb: $_kendo-color-primary-text-rgb,
-        hover: $_kendo-color-primary-hover,
-        hover-rgb: $_kendo-color-primary-hover-rgb,
-        active: $_kendo-color-primary-active,
-        active-rgb: $_kendo-color-primary-active-rgb,
-        selected: $_kendo-color-primary-selected,
-        selected-rgb: $_kendo-color-primary-selected-rgb,
-        focus: $_kendo-color-primary-focus,
-        focus-rgb: $_kendo-color-primary-focus-rgb,
-    ),
-    "secondary": (
-        normal: $_kendo-color-secondary,
-        normal-rgb: $_kendo-color-secondary-rgb,
-        text: $_kendo-color-secondary-text,
-        text-rgb: $_kendo-color-secondary-text-rgb,
-        hover: $_kendo-color-secondary-hover,
-        hover-rgb: $_kendo-color-secondary-hover-rgb,
-        active: $_kendo-color-secondary-active,
-        active-rgb: $_kendo-color-secondary-active-rgb,
-        selected: $_kendo-color-secondary-selected,
-        selected-rgb: $_kendo-color-secondary-selected-rgb,
-        focus: $_kendo-color-secondary-focus,
-        focus-rgb: $_kendo-color-secondary-focus-rgb,
-    ),
-    "tertiary": (
-        normal: $_kendo-color-tertiary,
-        normal-rgb: $_kendo-color-tertiary-rgb,
-        text: $_kendo-color-tertiary-text,
-        text-rgb: $_kendo-color-tertiary-text-rgb,
-        hover: $_kendo-color-tertiary-hover,
-        hover-rgb: $_kendo-color-tertiary-hover-rgb,
-        active: $_kendo-color-tertiary-active,
-        active-rgb: $_kendo-color-tertiary-active-rgb,
-        selected: $_kendo-color-tertiary-selected,
-        selected-rgb: $_kendo-color-tertiary-selected-rgb,
-        focus: $_kendo-color-tertiary-focus,
-        focus-rgb: $_kendo-color-tertiary-focus-rgb,
-    ),
-    "info": (
-        normal: $_kendo-color-info,
-        normal-rgb: $_kendo-color-info-rgb,
-        text: $_kendo-color-info-text,
-        text-rgb: $_kendo-color-info-text-rgb,
-        hover: $_kendo-color-info-hover,
-        hover-rgb: $_kendo-color-info-hover-rgb,
-        active: $_kendo-color-info-active,
-        active-rgb: $_kendo-color-info-active-rgb,
-        selected: $_kendo-color-info-selected,
-        selected-rgb: $_kendo-color-info-selected-rgb,
-        focus: $_kendo-color-info-focus,
-        focus-rgb: $_kendo-color-info-focus-rgb,
-    ),
-    "success": (
-        normal: $_kendo-color-success,
-        normal-rgb: $_kendo-color-success-rgb,
-        text: $_kendo-color-success-text,
-        text-rgb: $_kendo-color-success-text-rgb,
-        hover: $_kendo-color-success-hover,
-        hover-rgb: $_kendo-color-success-hover-rgb,
-        active: $_kendo-color-success-active,
-        active-rgb: $_kendo-color-success-active-rgb,
-        selected: $_kendo-color-success-selected,
-        selected-rgb: $_kendo-color-success-selected-rgb,
-        focus: $_kendo-color-success-focus,
-        focus-rgb: $_kendo-color-success-focus-rgb,
-    ),
-    "warning": (
-        normal: $_kendo-color-warning,
-        normal-rgb: $_kendo-color-warning-rgb,
-        text: $_kendo-color-warning-text,
-        text-rgb: $_kendo-color-warning-text-rgb,
-        hover: $_kendo-color-warning-hover,
-        hover-rgb: $_kendo-color-warning-hover-rgb,
-        active: $_kendo-color-warning-active,
-        active-rgb: $_kendo-color-warning-active-rgb,
-        selected: $_kendo-color-warning-selected,
-        selected-rgb: $_kendo-color-warning-selected-rgb,
-        focus: $_kendo-color-warning-focus,
-        focus-rgb: $_kendo-color-warning-focus-rgb,
-    ),
-    "error": (
-        normal: $_kendo-color-error,
-        normal-rgb: $_kendo-color-error-rgb,
-        text: $_kendo-color-error-text,
-        text-rgb: $_kendo-color-error-text-rgb,
-        hover: $_kendo-color-error-hover,
-        hover-rgb: $_kendo-color-error-hover-rgb,
-        active: $_kendo-color-error-active,
-        active-rgb: $_kendo-color-error-active-rgb,
-        selected: $_kendo-color-error-selected,
-        selected-rgb: $_kendo-color-error-selected-rgb,
-        focus: $_kendo-color-error-focus,
-        focus-rgb: $_kendo-color-error-focus-rgb,
-    ),
-    "light": (
-        normal: $_kendo-color-light,
-        normal-rgb: $_kendo-color-light-rgb,
-        text: $_kendo-color-light-text,
-        text-rgb: $_kendo-color-light-text-rgb,
-        hover: $_kendo-color-light-hover,
-        hover-rgb: $_kendo-color-light-hover-rgb,
-        active: $_kendo-color-light-active,
-        active-rgb: $_kendo-color-light-active-rgb,
-        selected: $_kendo-color-light-selected,
-        selected-rgb: $_kendo-color-light-selected-rgb,
-        focus: $_kendo-color-light-focus,
-        focus-rgb: $_kendo-color-light-focus-rgb,
-    ),
-    "dark": (
-        normal: $_kendo-color-dark,
-        normal-rgb: $_kendo-color-dark-rgb,
-        text: $_kendo-color-dark-text,
-        text-rgb: $_kendo-color-dark-text-rgb,
-        hover: $_kendo-color-dark-hover,
-        hover-rgb: $_kendo-color-dark-hover-rgb,
-        active: $_kendo-color-dark-active,
-        active-rgb: $_kendo-color-dark-active-rgb,
-        selected: $_kendo-color-dark-selected,
-        selected-rgb: $_kendo-color-dark-selected-rgb,
-        focus: $_kendo-color-dark-focus,
-        focus-rgb: $_kendo-color-dark-focus-rgb,
-    ),
-    "inverse": (
-        normal: $_kendo-color-inverse,
-        normal-rgb: $_kendo-color-inverse-rgb,
-        text: $_kendo-color-inverse-text,
-        text-rgb: $_kendo-color-inverse-text-rgb,
-        hover: $_kendo-color-inverse-hover,
-        hover-rgb: $_kendo-color-inverse-hover-rgb,
-        active: $_kendo-color-inverse-active,
-        active-rgb: $_kendo-color-inverse-active-rgb,
-        selected: $_kendo-color-inverse-selected,
-        selected-rgb: $_kendo-color-inverse-selected-rgb,
-        focus: $_kendo-color-inverse-focus,
-        focus-rgb: $_kendo-color-inverse-focus-rgb,
-    )
-) !default;
-
 $kendo-color-rgba-transparent: rgba(0, 0, 0, 0); // stylelint-disable-line scss/dollar-variable-default
 $kendo-gradient-transparent-to-black: rgba($kendo-color-black, 0), $kendo-color-black; // stylelint-disable-line scss/dollar-variable-default
 $kendo-gradient-transparent-to-white: rgba($kendo-color-white, 0), $kendo-color-white; // stylelint-disable-line scss/dollar-variable-default
@@ -583,19 +102,347 @@ $kendo-gradient-black-to-transparent: $kendo-color-black, rgba($kendo-color-blac
 $kendo-gradient-white-to-transparent: $kendo-color-white, rgba($kendo-color-white, 0); // stylelint-disable-line scss/dollar-variable-default
 $kendo-gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
 
-/// @deprecated
-$kendo-theme-colors: (
-    "primary": $kendo-color-primary,
-    "secondary": $kendo-color-secondary,
-    "tertiary": $kendo-color-tertiary,
-    "info": $kendo-color-info,
-    "success": $kendo-color-success,
-    "warning": $kendo-color-warning,
-    "error": $kendo-color-error,
-    "dark": $kendo-color-dark,
-    "light": $kendo-color-light,
-    "inverse": $kendo-color-inverse,
-) !default;
-
-/// @deprecated
 $kendo-is-dark-theme: null !default;
+
+$kendo-theme-swatches: () !default;
+
+@if ($kendo-new-colors) {
+    $kendo-theme-palette: (
+        kendo-disabled-text: $kendo-disabled-text,
+        kendo-disabled-bg: $kendo-disabled-bg,
+        kendo-disabled-border: $kendo-disabled-border,
+        kendo-focus-outline: $kendo-focus-outline,
+        kendo-color-primary: $kendo-color-primary,
+        kendo-color-primary-rgb: k-hex-to-rgb($kendo-color-primary),
+        kendo-color-primary-text: $kendo-color-primary-text,
+        kendo-color-primary-hover: $kendo-color-primary-hover,
+        kendo-color-primary-active: $kendo-color-primary-active,
+        kendo-color-primary-selected: $kendo-color-primary-selected,
+        kendo-color-primary-focus: $kendo-color-primary-focus,
+        kendo-color-base: $kendo-color-base,
+        kendo-color-base-rgb: k-hex-to-rgb($kendo-color-base),
+        kendo-color-base-text: $kendo-color-base-text,
+        kendo-color-base-hover: $kendo-color-base-hover,
+        kendo-color-base-active: $kendo-color-base-active,
+        kendo-color-base-selected: $kendo-color-base-selected,
+        kendo-color-base-focus: $kendo-color-base-focus,
+        kendo-color-secondary: $kendo-color-secondary,
+        kendo-color-secondary-rgb: k-hex-to-rgb($kendo-color-secondary),
+        kendo-color-secondary-text: $kendo-color-secondary-text,
+        kendo-color-secondary-hover: $kendo-color-secondary-hover,
+        kendo-color-secondary-active: $kendo-color-secondary-active,
+        kendo-color-secondary-selected: $kendo-color-secondary-selected,
+        kendo-color-secondary-focus: $kendo-color-secondary-focus,
+        kendo-color-tertiary: $kendo-color-tertiary,
+        kendo-color-tertiary-rgb: k-hex-to-rgb($kendo-color-tertiary),
+        kendo-color-tertiary-text: $kendo-color-tertiary-text,
+        kendo-color-tertiary-hover: $kendo-color-tertiary-hover,
+        kendo-color-tertiary-active: $kendo-color-tertiary-active,
+        kendo-color-tertiary-selected: $kendo-color-tertiary-selected,
+        kendo-color-tertiary-focus: $kendo-color-tertiary-focus,
+        kendo-color-info: $kendo-color-info,
+        kendo-color-info-rgb: k-hex-to-rgb($kendo-color-info),
+        kendo-color-info-text: $kendo-color-info-text,
+        kendo-color-info-hover: $kendo-color-info-hover,
+        kendo-color-info-active: $kendo-color-info-active,
+        kendo-color-info-selected: $kendo-color-info-selected,
+        kendo-color-info-focus: $kendo-color-info-focus,
+        kendo-color-success: $kendo-color-success,
+        kendo-color-success-rgb: k-hex-to-rgb($kendo-color-success),
+        kendo-color-success-text: $kendo-color-success-text,
+        kendo-color-success-hover: $kendo-color-success-hover,
+        kendo-color-success-active: $kendo-color-success-active,
+        kendo-color-success-selected: $kendo-color-success-selected,
+        kendo-color-success-focus: $kendo-color-success-focus,
+        kendo-color-warning: $kendo-color-warning,
+        kendo-color-warning-rgb: k-hex-to-rgb($kendo-color-warning),
+        kendo-color-warning-text: $kendo-color-warning-text,
+        kendo-color-warning-hover: $kendo-color-warning-hover,
+        kendo-color-warning-active: $kendo-color-warning-active,
+        kendo-color-warning-selected: $kendo-color-warning-selected,
+        kendo-color-warning-focus: $kendo-color-warning-focus,
+        kendo-color-error: $kendo-color-error,
+        kendo-color-error-rgb: k-hex-to-rgb($kendo-color-error),
+        kendo-color-error-text: $kendo-color-error-text,
+        kendo-color-error-hover: $kendo-color-error-hover,
+        kendo-color-error-active: $kendo-color-error-active,
+        kendo-color-error-selected: $kendo-color-error-selected,
+        kendo-color-error-focus: $kendo-color-error-focus,
+        kendo-color-light: $kendo-color-light,
+        kendo-color-light-rgb: k-hex-to-rgb($kendo-color-light),
+        kendo-color-light-text: $kendo-color-light-text,
+        kendo-color-light-hover: $kendo-color-light-hover,
+        kendo-color-light-active: $kendo-color-light-active,
+        kendo-color-light-selected: $kendo-color-light-selected,
+        kendo-color-light-focus: $kendo-color-light-focus,
+        kendo-color-dark: $kendo-color-dark,
+        kendo-color-dark-rgb: k-hex-to-rgb($kendo-color-dark),
+        kendo-color-dark-text: $kendo-color-dark-text,
+        kendo-color-dark-hover: $kendo-color-dark-hover,
+        kendo-color-dark-active: $kendo-color-dark-active,
+        kendo-color-dark-selected: $kendo-color-dark-selected,
+        kendo-color-dark-focus: $kendo-color-dark-focus,
+        kendo-color-inverse: $kendo-color-inverse,
+        kendo-color-inverse-rgb: k-hex-to-rgb($kendo-color-inverse),
+        kendo-color-inverse-text: $kendo-color-inverse-text,
+        kendo-color-inverse-hover: $kendo-color-inverse-hover,
+        kendo-color-inverse-active: $kendo-color-inverse-active,
+        kendo-color-inverse-selected: $kendo-color-inverse-selected,
+        kendo-color-inverse-focus: $kendo-color-inverse-focus,
+        kendo-body-bg: $kendo-body-bg,
+        kendo-body-text: $kendo-body-text,
+        kendo-color-border: $kendo-color-border,
+        kendo-color-border-rgb: k-hex-to-rgb($kendo-color-border),
+        kendo-color-border-hover: $kendo-color-border-hover,
+        kendo-color-border-hover-rgb: k-hex-to-rgb($kendo-color-border-hover),
+        kendo-color-border-focus: $kendo-color-border-focus,
+        kendo-color-border-focus-rgb: k-hex-to-rgb($kendo-color-border-focus),
+    );
+
+    $_kendo-color-white: var(--kendo-color-white, k-map-get($kendo-theme-palette, kendo-color-white));
+    $_kendo-color-black: var(--kendo-color-black, k-map-get($kendo-theme-palette, kendo-color-black));
+    $_kendo-subtle-text: var(--kendo-subtle-text, k-map-get($kendo-theme-palette, kendo-subtle-text));
+
+    $_kendo-disabled-text: var(--kendo-disabled-text, k-map-get($kendo-theme-palette, kendo-disabled-text));
+    $_kendo-disabled-bg: var(--kendo-disabled-bg, k-map-get($kendo-theme-palette, kendo-disabled-bg));
+    $_kendo-disabled-border: var(--kendo-disabled-border, k-map-get($kendo-theme-palette, kendo-disabled-border));
+    $_kendo-focus-outline: var(--kendo-focus-outline, k-map-get($kendo-theme-palette, kendo-focus-outline));
+
+    $_kendo-color-primary: var(--kendo-color-primary, k-map-get($kendo-theme-palette, kendo-color-primary));
+    $_kendo-color-primary-rgb: var(--kendo-color-primary-rgb, k-hex-to-rgb($kendo-color-primary));
+    $_kendo-color-primary-text: var(--kendo-color-primary-text, k-map-get($kendo-theme-palette, kendo-color-primary-text));
+    $_kendo-color-primary-hover: var(--kendo-color-primary-hover, k-map-get($kendo-theme-palette, kendo-color-primary-hover));
+    $_kendo-color-primary-active: var(--kendo-color-primary-active, k-map-get($kendo-theme-palette, kendo-color-primary-active));
+    $_kendo-color-primary-selected: var(--kendo-color-primary-selected, k-map-get($kendo-theme-palette, kendo-color-primary-selected));
+    $_kendo-color-primary-focus: var(--kendo-color-primary-focus, k-map-get($kendo-theme-palette, kendo-color-primary-focus));
+
+    $_kendo-color-base: var(--kendo-color-base, k-map-get($kendo-theme-palette, kendo-color-base));
+    $_kendo-color-base-rgb: var(--kendo-color-base-rgb, k-hex-to-rgb($kendo-color-base));
+    $_kendo-color-base-text: var(--kendo-color-base-text, k-map-get($kendo-theme-palette, kendo-color-base-text));
+    $_kendo-color-base-hover: var(--kendo-color-base-hover, k-map-get($kendo-theme-palette, kendo-color-base-hover));
+    $_kendo-color-base-active: var(--kendo-color-base-active, k-map-get($kendo-theme-palette, kendo-color-base-active));
+    $_kendo-color-base-selected: var(--kendo-color-base-selected, k-map-get($kendo-theme-palette, kendo-color-base-selected));
+    $_kendo-color-base-focus: var(--kendo-color-base-focus, k-map-get($kendo-theme-palette, kendo-color-base-focus));
+
+    $_kendo-color-secondary: var(--kendo-color-secondary, k-map-get($kendo-theme-palette, kendo-color-secondary));
+    $_kendo-color-secondary-rgb: var(--kendo-color-secondary-rgb, k-hex-to-rgb($kendo-color-secondary));
+    $_kendo-color-secondary-text: var(--kendo-color-secondary-text, k-map-get($kendo-theme-palette, kendo-color-secondary-text));
+    $_kendo-color-secondary-hover: var(--kendo-color-secondary-hover, k-map-get($kendo-theme-palette, kendo-color-secondary-hover));
+    $_kendo-color-secondary-active: var(--kendo-color-secondary-active, k-map-get($kendo-theme-palette, kendo-color-secondary-active));
+    $_kendo-color-secondary-selected: var(--kendo-color-secondary-selected, k-map-get($kendo-theme-palette, kendo-color-secondary-selected));
+    $_kendo-color-secondary-focus: var(--kendo-color-secondary-focus, k-map-get($kendo-theme-palette, kendo-color-secondary-focus));
+
+    $_kendo-color-tertiary: var(--kendo-color-tertiary, k-map-get($kendo-theme-palette, kendo-color-tertiary));
+    $_kendo-color-tertiary-rgb: var(--kendo-color-tertiary-rgb, k-hex-to-rgb($kendo-color-tertiary));
+    $_kendo-color-tertiary-text: var(--kendo-color-tertiary-text, k-map-get($kendo-theme-palette, kendo-color-tertiary-text));
+    $_kendo-color-tertiary-hover: var(--kendo-color-tertiary-hover, k-map-get($kendo-theme-palette, kendo-color-tertiary-hover));
+    $_kendo-color-tertiary-active: var(--kendo-color-tertiary-active, k-map-get($kendo-theme-palette, kendo-color-tertiary-active));
+    $_kendo-color-tertiary-selected: var(--kendo-color-tertiary-selected, k-map-get($kendo-theme-palette, kendo-color-tertiary-selected));
+    $_kendo-color-tertiary-focus: var(--kendo-color-tertiary-focus, k-map-get($kendo-theme-palette, kendo-color-tertiary-focus));
+
+    $_kendo-color-info: var(--kendo-color-info, k-map-get($kendo-theme-palette, kendo-color-info));
+    $_kendo-color-info-rgb: var(--kendo-color-info-rgb, k-hex-to-rgb($kendo-color-info));
+    $_kendo-color-info-text: var(--kendo-color-info-text, k-map-get($kendo-theme-palette, kendo-color-info-text));
+    $_kendo-color-info-hover: var(--kendo-color-info-hover, k-map-get($kendo-theme-palette, kendo-color-info-hover));
+    $_kendo-color-info-active: var(--kendo-color-info-active, k-map-get($kendo-theme-palette, kendo-color-info-active));
+    $_kendo-color-info-selected: var(--kendo-color-info-selected, k-map-get($kendo-theme-palette, kendo-color-info-selected));
+    $_kendo-color-info-focus: var(--kendo-color-info-focus, k-map-get($kendo-theme-palette, kendo-color-info-focus));
+
+    $_kendo-color-success: var(--kendo-color-success, k-map-get($kendo-theme-palette, kendo-color-success));
+    $_kendo-color-success-rgb: var(--kendo-color-success-rgb, k-hex-to-rgb($kendo-color-success));
+    $_kendo-color-success-text: var(--kendo-color-success-text, k-map-get($kendo-theme-palette, kendo-color-success-text));
+    $_kendo-color-success-hover: var(--kendo-color-success-hover, k-map-get($kendo-theme-palette, kendo-color-success-hover));
+    $_kendo-color-success-active: var(--kendo-color-success-active, k-map-get($kendo-theme-palette, kendo-color-success-active));
+    $_kendo-color-success-selected: var(--kendo-color-success-selected, k-map-get($kendo-theme-palette, kendo-color-success-selected));
+    $_kendo-color-success-focus: var(--kendo-color-success-focus, k-map-get($kendo-theme-palette, kendo-color-success-focus));
+
+    $_kendo-color-warning: var(--kendo-color-warning, k-map-get($kendo-theme-palette, kendo-color-warning));
+    $_kendo-color-warning-rgb: var(--kendo-color-warning-rgb, k-hex-to-rgb($kendo-color-warning));
+    $_kendo-color-warning-text: var(--kendo-color-warning-text, k-map-get($kendo-theme-palette, kendo-color-warning-text));
+    $_kendo-color-warning-hover: var(--kendo-color-warning-hover, k-map-get($kendo-theme-palette, kendo-color-warning-hover));
+    $_kendo-color-warning-active: var(--kendo-color-warning-active, k-map-get($kendo-theme-palette, kendo-color-warning-active));
+    $_kendo-color-warning-selected: var(--kendo-color-warning-selected, k-map-get($kendo-theme-palette, kendo-color-warning-selected));
+    $_kendo-color-warning-focus: var(--kendo-color-warning-focus, k-map-get($kendo-theme-palette, kendo-color-warning-focus));
+
+    $_kendo-color-error: var(--kendo-color-error, k-map-get($kendo-theme-palette, kendo-color-error));
+    $_kendo-color-error-rgb: var(--kendo-color-error-rgb, k-hex-to-rgb($kendo-color-error));
+    $_kendo-color-error-text: var(--kendo-color-error-text, k-map-get($kendo-theme-palette, kendo-color-error-text));
+    $_kendo-color-error-hover: var(--kendo-color-error-hover, k-map-get($kendo-theme-palette, kendo-color-error-hover));
+    $_kendo-color-error-active: var(--kendo-color-error-active, k-map-get($kendo-theme-palette, kendo-color-error-active));
+    $_kendo-color-error-selected: var(--kendo-color-error-selected, k-map-get($kendo-theme-palette, kendo-color-error-selected));
+    $_kendo-color-error-focus: var(--kendo-color-error-focus, k-map-get($kendo-theme-palette, kendo-color-error-focus));
+
+    $_kendo-color-light: var(--kendo-color-light, k-map-get($kendo-theme-palette, kendo-color-light));
+    $_kendo-color-light-rgb: var(--kendo-color-light-rgb, k-hex-to-rgb($kendo-color-light));
+    $_kendo-color-light-text: var(--kendo-color-light-text, k-map-get($kendo-theme-palette, kendo-color-light-text));
+    $_kendo-color-light-hover: var(--kendo-color-light-hover, k-map-get($kendo-theme-palette, kendo-color-light-hover));
+    $_kendo-color-light-active: var(--kendo-color-light-active, k-map-get($kendo-theme-palette, kendo-color-light-active));
+    $_kendo-color-light-selected: var(--kendo-color-light-selected, k-map-get($kendo-theme-palette, kendo-color-light-selected));
+    $_kendo-color-light-focus: var(--kendo-color-light-focus, k-map-get($kendo-theme-palette, kendo-color-light-focus));
+
+    $_kendo-color-dark: var(--kendo-color-dark, k-map-get($kendo-theme-palette, kendo-color-dark));
+    $_kendo-color-dark-rgb: var(--kendo-color-dark-rgb, k-hex-to-rgb($kendo-color-dark));
+    $_kendo-color-dark-text: var(--kendo-color-dark-text, k-map-get($kendo-theme-palette, kendo-color-dark-text));
+    $_kendo-color-dark-hover: var(--kendo-color-dark-hover, k-map-get($kendo-theme-palette, kendo-color-dark-hover));
+    $_kendo-color-dark-active: var(--kendo-color-dark-active, k-map-get($kendo-theme-palette, kendo-color-dark-active));
+    $_kendo-color-dark-selected: var(--kendo-color-dark-selected, k-map-get($kendo-theme-palette, kendo-color-dark-selected));
+    $_kendo-color-dark-focus: var(--kendo-color-dark-focus, k-map-get($kendo-theme-palette, kendo-color-dark-focus));
+
+    $_kendo-color-inverse: var(--kendo-color-inverse, k-map-get($kendo-theme-palette, kendo-color-inverse));
+    $_kendo-color-inverse-rgb: var(--kendo-color-inverse-rgb, k-hex-to-rgb($kendo-color-inverse));
+    $_kendo-color-inverse-text: var(--kendo-color-inverse-text, k-map-get($kendo-theme-palette, kendo-color-inverse-text));
+    $_kendo-color-inverse-hover: var(--kendo-color-inverse-hover, k-map-get($kendo-theme-palette, kendo-color-inverse-hover));
+    $_kendo-color-inverse-active: var(--kendo-color-inverse-active, k-map-get($kendo-theme-palette, kendo-color-inverse-active));
+    $_kendo-color-inverse-selected: var(--kendo-color-inverse-selected, k-map-get($kendo-theme-palette, kendo-color-inverse-selected));
+    $_kendo-color-inverse-focus: var(--kendo-color-inverse-focus, k-map-get($kendo-theme-palette, kendo-color-inverse-focus));
+
+    $_kendo-body-bg: var(--kendo-body-bg, k-map-get($kendo-theme-palette, kendo-body-bg));
+    $_kendo-body-text: var(--kendo-body-text, k-map-get($kendo-theme-palette, kendo-body-text));
+
+    $_kendo-color-border: var(--kendo-color-border, k-map-get($kendo-theme-palette, kendo-color-border));
+    $_kendo-color-border-rgb: var(--kendo-color-border-rgb, k-hex-to-rgb($kendo-color-border));
+    $_kendo-color-border-hover: var(--kendo-color-border-hover, k-map-get($kendo-theme-palette, kendo-color-border-hover));
+    $_kendo-color-border-hover-rgb: var(--kendo-color-border-hover-rgb, k-hex-to-rgb($kendo-color-border-hover));
+    $_kendo-color-border-focus: var(--kendo-color-border-focus, k-map-get($kendo-theme-palette, kendo-color-border-focus));
+    $_kendo-color-border-focus-rgb: var(--kendo-color-border-focus-rgb, k-hex-to-rgb($kendo-color-border-focus));
+
+    $kendo-theme-swatches: (
+        "base": (
+            normal: $_kendo-color-base,
+            rgb: $_kendo-color-base-rgb,
+            text: $_kendo-color-base-text,
+            hover: $_kendo-color-base-hover,
+            active: $_kendo-color-base-active,
+            selected: $_kendo-color-base-selected,
+            focus: $_kendo-color-base-focus,
+        ),
+        "primary": (
+            normal: $_kendo-color-primary,
+            rgb: $_kendo-color-primary-rgb,
+            text: $_kendo-color-primary-text,
+            hover: $_kendo-color-primary-hover,
+            active: $_kendo-color-primary-active,
+            selected: $_kendo-color-primary-selected,
+            focus: $_kendo-color-primary-focus,
+        ),
+        "secondary": (
+            normal: $_kendo-color-secondary,
+            rgb: $_kendo-color-secondary-rgb,
+            text: $_kendo-color-secondary-text,
+            hover: $_kendo-color-secondary-hover,
+            active: $_kendo-color-secondary-active,
+            selected: $_kendo-color-secondary-selected,
+            focus: $_kendo-color-secondary-focus,
+        ),
+        "tertiary": (
+            normal: $_kendo-color-tertiary,
+            rgb: $_kendo-color-tertiary-rgb,
+            text: $_kendo-color-tertiary-text,
+            hover: $_kendo-color-tertiary-hover,
+            active: $_kendo-color-tertiary-active,
+            selected: $_kendo-color-tertiary-selected,
+            focus: $_kendo-color-tertiary-focus,
+        ),
+        "info": (
+            normal: $_kendo-color-info,
+            rgb: $_kendo-color-info-rgb,
+            text: $_kendo-color-info-text,
+            hover: $_kendo-color-info-hover,
+            active: $_kendo-color-info-active,
+            selected: $_kendo-color-info-selected,
+            focus: $_kendo-color-info-focus,
+        ),
+        "success": (
+            normal: $_kendo-color-success,
+            rgb: $_kendo-color-success-rgb,
+            text: $_kendo-color-success-text,
+            hover: $_kendo-color-success-hover,
+            active: $_kendo-color-success-active,
+            selected: $_kendo-color-success-selected,
+            focus: $_kendo-color-success-focus,
+        ),
+        "warning": (
+            normal: $_kendo-color-warning,
+            rgb: $_kendo-color-warning-rgb,
+            text: $_kendo-color-warning-text,
+            hover: $_kendo-color-warning-hover,
+            active: $_kendo-color-warning-active,
+            selected: $_kendo-color-warning-selected,
+            focus: $_kendo-color-warning-focus,
+        ),
+        "error": (
+            normal: $_kendo-color-error,
+            rgb: $_kendo-color-error-rgb,
+            text: $_kendo-color-error-text,
+            hover: $_kendo-color-error-hover,
+            active: $_kendo-color-error-active,
+            selected: $_kendo-color-error-selected,
+            focus: $_kendo-color-error-focus,
+        ),
+        "light": (
+            normal: $_kendo-color-light,
+            rgb: $_kendo-color-light-rgb,
+            text: $_kendo-color-light-text,
+            hover: $_kendo-color-light-hover,
+            active: $_kendo-color-light-active,
+            selected: $_kendo-color-light-selected,
+            focus: $_kendo-color-light-focus,
+        ),
+        "dark": (
+            normal: $_kendo-color-dark,
+            rgb: $_kendo-color-dark-rgb,
+            text: $_kendo-color-dark-text,
+            hover: $_kendo-color-dark-hover,
+            active: $_kendo-color-dark-active,
+            selected: $_kendo-color-dark-selected,
+            focus: $_kendo-color-dark-focus,
+        ),
+        "inverse": (
+            normal: $_kendo-color-inverse,
+            rgb: $_kendo-color-inverse-rgb,
+            text: $_kendo-color-inverse-text,
+            hover: $_kendo-color-inverse-hover,
+            active: $_kendo-color-inverse-active,
+            selected: $_kendo-color-inverse-selected,
+            focus: $_kendo-color-inverse-focus,
+        ),
+    );
+
+    $kendo-color-primary-darker: $kendo-color-primary-active;
+    $kendo-color-primary-contrast: $kendo-color-primary-text;
+    $kendo-selected-bg: $kendo-color-primary;
+    $kendo-selected-text: $kendo-color-primary-text;
+    $kendo-selected-hover-bg: k-try-shade($kendo-color-primary, 0.5);
+    $kendo-selected-hover-text: $kendo-selected-text;
+    $kendo-invalid-text: $kendo-color-error;
+    $kendo-invalid-border: $kendo-color-error;
+    $kendo-invalid-shadow: null;
+    $kendo-invalid-bg: null;
+    $kendo-base-bg: $kendo-color-base;
+    $kendo-base-text: $kendo-body-text;
+    $kendo-base-border: $kendo-color-border;
+    $kendo-base-gradient: rgba($kendo-color-black, 0), rgba($kendo-color-black, 0.02);
+    $kendo-component-header-bg: $kendo-base-bg;
+    $kendo-component-header-text: $kendo-color-base-text;
+    $kendo-component-header-border: $kendo-base-border;
+    $kendo-component-header-gradient: null;
+    $kendo-app-text: $kendo-body-text;
+    $kendo-link-text: $kendo-color-primary;
+    $kendo-selected-border: $kendo-base-border;
+    $kendo-hover-gradient: $kendo-base-gradient;
+    $kendo-hover-border: $kendo-base-border;
+    $kendo-hover-text: $kendo-base-text;
+    $kendo-hover-bg: $kendo-color-base-hover;
+    $kendo-component-border: $kendo-color-border;
+    $kendo-component-text: $kendo-body-text;
+    $kendo-component-bg: $kendo-body-bg;
+    $kendo-link-hover-text: $kendo-color-primary-darker;
+    $kendo-selected-hover-border: $kendo-base-border;
+    $kendo-selected-hover-gradient: $kendo-base-gradient;
+    $kendo-selected-gradient: $kendo-base-gradient;
+    $kendo-link-text: $kendo-color-primary;
+    $kendo-app-border: rgba($kendo-color-black, 0.08);
+    $kendo-app-bg: k-try-shade($kendo-body-bg, 0.25);
+    $kendo-loading-bg: $kendo-component-bg;
+    $kendo-loading-text: currentColor;
+}

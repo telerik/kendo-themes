@@ -7,7 +7,7 @@ $kendo-is-dark-theme: false !default;
 $kendo-subtle-text: #666666 !default;
 $kendo-disabled-text: #8f8f8f !default;
 
-$kendo-color-primary: map-get($kendo-palette-coral, 9) !default;
+$kendo-color-primary: #ff6358 !default;
 $kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
 $kendo-color-primary-hover: k-try-shade($kendo-color-primary, 0.5) !default;
 $kendo-color-primary-active: k-try-shade($kendo-color-primary, 1.5) !default;

@@ -1,84 +1,86 @@
 @import "./_functions.import.scss";
 @import "./_mixins.import.scss";
+@import "./_swatch-legacy.scss";
 @import "./_swatch.scss";
 
 @mixin color-system-styles() {
 
     :root {
+        // @debug $kendo-theme-palette;
         @each $name, $color in $kendo-theme-palette {
             @if($color) {
                 --#{$name}: #{$color};
             }
         }
 
-        /* @deprecated */
-        --kendo-body-bg: #{$kendo-body-bg};
-        /* @deprecated */
-        --kendo-body-text: #{$kendo-body-text};
+        // /* @deprecated */
+        // --kendo-body-bg: #{$kendo-body-bg};
+        // /* @deprecated */
+        // --kendo-body-text: #{$kendo-body-text};
 
-        /* @deprecated */
-        --kendo-component-bg: #{$kendo-component-bg};
-        /* @deprecated */
-        --kendo-component-text: #{$kendo-component-text};
-        /* @deprecated */
-        --kendo-component-border: #{$kendo-component-border};
+        // /* @deprecated */
+        // --kendo-component-bg: #{$kendo-component-bg};
+        // /* @deprecated */
+        // --kendo-component-text: #{$kendo-component-text};
+        // /* @deprecated */
+        // --kendo-component-border: #{$kendo-component-border};
 
-        /* @deprecated */
-        --kendo-box-shadow-depth-1: #{$kendo-box-shadow-depth-1};
-        /* @deprecated */
-        --kendo-box-shadow-depth-2: #{$kendo-box-shadow-depth-2};
-        /* @deprecated */
-        --kendo-box-shadow-depth-3: #{$kendo-box-shadow-depth-3};
-        /* @deprecated */
-        --kendo-box-shadow-depth-4: #{$kendo-box-shadow-depth-4};
+        // /* @deprecated */
+        // --kendo-box-shadow-depth-1: #{$kendo-box-shadow-depth-1};
+        // /* @deprecated */
+        // --kendo-box-shadow-depth-2: #{$kendo-box-shadow-depth-2};
+        // /* @deprecated */
+        // --kendo-box-shadow-depth-3: #{$kendo-box-shadow-depth-3};
+        // /* @deprecated */
+        // --kendo-box-shadow-depth-4: #{$kendo-box-shadow-depth-4};
 
-        /* @deprecated */
-        --kendo-link-text: #{$kendo-link-text};
-        /* @deprecated */
-        --kendo-link-hover-text: #{$kendo-link-hover-text};
+        // /* @deprecated */
+        // --kendo-link-text: #{$kendo-link-text};
+        // /* @deprecated */
+        // --kendo-link-hover-text: #{$kendo-link-hover-text};
 
-        /* @deprecated */
-        --kendo-disabled-bg: #{$kendo-disabled-bg};
-        /* @deprecated */
-        --kendo-disabled-text: #{$kendo-disabled-text};
-        /* @deprecated */
-        --kendo-disabled-border: #{$kendo-disabled-border};
+        // /* @deprecated */
+        // --kendo-disabled-bg: #{$kendo-disabled-bg};
+        // /* @deprecated */
+        // --kendo-disabled-text: #{$kendo-disabled-text};
+        // /* @deprecated */
+        // --kendo-disabled-border: #{$kendo-disabled-border};
 
-        /* @deprecated */
-        --kendo-hover-bg: #{$kendo-hover-bg};
-        /* @deprecated */
-        --kendo-hover-text: #{$kendo-hover-text};
-        /* @deprecated */
-        --kendo-hover-border: #{$kendo-hover-border};
+        // /* @deprecated */
+        // --kendo-hover-bg: #{$kendo-hover-bg};
+        // /* @deprecated */
+        // --kendo-hover-text: #{$kendo-hover-text};
+        // /* @deprecated */
+        // --kendo-hover-border: #{$kendo-hover-border};
 
-        /* @deprecated */
-        --kendo-selected-bg: #{$kendo-selected-bg};
-        /* @deprecated */
-        --kendo-selected-text: #{$kendo-selected-text};
-        /* @deprecated */
-        --kendo-selected-border: #{$kendo-selected-border};
+        // /* @deprecated */
+        // --kendo-selected-bg: #{$kendo-selected-bg};
+        // /* @deprecated */
+        // --kendo-selected-text: #{$kendo-selected-text};
+        // /* @deprecated */
+        // --kendo-selected-border: #{$kendo-selected-border};
 
-        /* @deprecated */
-        --kendo-selected-hover-bg: #{$kendo-selected-hover-bg};
-        /* @deprecated */
-        --kendo-selected-hover-text: #{$kendo-selected-hover-text};
-        /* @deprecated */
-        --kendo-selected-hover-border: #{$kendo-selected-hover-border};
+        // /* @deprecated */
+        // --kendo-selected-hover-bg: #{$kendo-selected-hover-bg};
+        // /* @deprecated */
+        // --kendo-selected-hover-text: #{$kendo-selected-hover-text};
+        // /* @deprecated */
+        // --kendo-selected-hover-border: #{$kendo-selected-hover-border};
 
-        /* @deprecated */
-        --kendo-focus-outline: #{$kendo-focus-outline};
+        // /* @deprecated */
+        // --kendo-focus-outline: #{$kendo-focus-outline};
 
-        /* @deprecated */
-        --kendo-subtle-text: #{$kendo-subtle-text};
+        // /* @deprecated */
+        // --kendo-subtle-text: #{$kendo-subtle-text};
 
-        /* @deprecated */
-        --kendo-invalid-bg: #{$kendo-invalid-bg};
-        /* @deprecated */
-        --kendo-invalid-text: #{$kendo-invalid-text};
-        /* @deprecated */
-        --kendo-invalid-border: #{$kendo-invalid-border};
-        /* @deprecated */
-        --kendo-invalid-shadow: #{$kendo-invalid-shadow};
+        // /* @deprecated */
+        // --kendo-invalid-bg: #{$kendo-invalid-bg};
+        // /* @deprecated */
+        // --kendo-invalid-text: #{$kendo-invalid-text};
+        // /* @deprecated */
+        // --kendo-invalid-border: #{$kendo-invalid-border};
+        // /* @deprecated */
+        // --kendo-invalid-shadow: #{$kendo-invalid-shadow};
     }
 
     // TODO: Extract to utils!?

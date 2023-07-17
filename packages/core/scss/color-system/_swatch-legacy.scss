@@ -1,0 +1,279 @@
+@import "./_functions.import.scss";
+
+$kendo-is-dark-theme: false !default;
+
+$kendo-color-primary: null !default;
+$kendo-color-primary-lighter: null !default;
+$kendo-color-primary-darker: null !default;
+
+$kendo-color-primary-contrast: null !default;
+
+$kendo-color-secondary: null !default;
+$kendo-color-secondary-lighter: null !default;
+$kendo-color-secondary-darker: null !default;
+
+$kendo-color-secondary-contrast: null !default;
+
+$kendo-color-tertiary: null !default;
+$kendo-color-tertiary-lighter: null !default;
+$kendo-color-tertiary-darker: null !default;
+
+$kendo-color-tertiary-contrast: null !default;
+
+$kendo-color-info: null !default;
+$kendo-color-info-lighter: null !default;
+$kendo-color-info-darker: null !default;
+
+$kendo-color-success: null !default;
+$kendo-color-success-lighter: null !default;
+$kendo-color-success-darker: null !default;
+
+$kendo-color-warning: null !default;
+$kendo-color-warning-lighter: null !default;
+$kendo-color-warning-darker: null !default;
+
+$kendo-color-error: null !default;
+$kendo-color-error-lighter: null !default;
+$kendo-color-error-darker: null !default;
+
+$kendo-color-dark: null !default;
+$kendo-color-light: null !default;
+$kendo-color-inverse: null !default;
+
+$kendo-body-bg: null !default;
+$kendo-body-text: null !default;
+
+$kendo-subtle-text: null !default;
+
+$kendo-app-bg: null !default;
+$kendo-app-text: null !default;
+$kendo-app-border: null !default;
+
+$kendo-link-text: null !default;
+$kendo-link-hover-text: null !default;
+
+$kendo-component-bg: null !default;
+
+$kendo-component-text: null !default;
+
+$kendo-component-border: null !default;
+
+$kendo-base-bg: null !default;
+$kendo-base-text: null !default;
+$kendo-base-border: null !default;
+$kendo-base-gradient: null !default;
+
+$kendo-hover-bg: null !default;
+$kendo-hover-text: null !default;
+$kendo-hover-border: null !default;
+$kendo-hover-gradient: null !default;
+
+$kendo-selected-bg: null !default;
+$kendo-selected-text: null !default;
+$kendo-selected-border: null !default;
+$kendo-selected-gradient: null !default;
+
+$kendo-selected-hover-bg: null !default;
+$kendo-selected-hover-text: null !default;
+$kendo-selected-hover-border: null !default;
+$kendo-selected-hover-gradient: null !default;
+
+$kendo-component-header-bg: null !default;
+$kendo-component-header-text: null !default;
+$kendo-component-header-border: null !default;
+$kendo-component-header-gradient: null !default;
+
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: null !default;
+$kendo-invalid-border: null !default;
+$kendo-invalid-shadow: null !default;
+
+$kendo-disabled-text: null !default;
+$kendo-disabled-filter: null !default;
+$kendo-disabled-opacity: null !default;
+
+$kendo-loading-bg: null !default;
+$kendo-loading-text: null !default;
+
+// TODO! Backwards compatibility!!!
+$kendo-theme-colors: (
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse,
+) !default;
+
+$kendo-theme-palette: (
+    kendo-is-dark-theme: $kendo-is-dark-theme,
+    kendo-color-primary: $kendo-color-primary,
+    kendo-color-primary-lighter: $kendo-color-primary-lighter,
+    kendo-color-primary-darker: $kendo-color-primary-darker,
+    kendo-color-primary-contrast: $kendo-color-primary-contrast,
+    kendo-color-secondary: $kendo-color-secondary,
+    kendo-color-secondary-lighter: $kendo-color-secondary-lighter,
+    kendo-color-secondary-darker: $kendo-color-secondary-darker,
+    kendo-color-secondary-contrast: $kendo-color-secondary-contrast,
+    kendo-color-tertiary: $kendo-color-tertiary,
+    kendo-color-tertiary-lighter: $kendo-color-tertiary-lighter,
+    kendo-color-tertiary-darker: $kendo-color-tertiary-darker,
+    kendo-color-tertiary-contrast: $kendo-color-tertiary-contrast,
+    kendo-color-info: $kendo-color-info,
+    kendo-color-info-lighter: $kendo-color-info-lighter,
+    kendo-color-info-darker: $kendo-color-info-darker,
+    kendo-color-success: $kendo-color-success,
+    kendo-color-success-lighter: $kendo-color-success-lighter,
+    kendo-color-success-darker: $kendo-color-success-darker,
+    kendo-color-warning: $kendo-color-warning,
+    kendo-color-warning-lighter: $kendo-color-warning-lighter,
+    kendo-color-warning-darker: $kendo-color-warning-darker,
+    kendo-color-error: $kendo-color-error,
+    kendo-color-error-lighter: $kendo-color-error-lighter,
+    kendo-color-error-darker: $kendo-color-error-darker,
+    kendo-color-dark: $kendo-color-dark,
+    kendo-color-light: $kendo-color-light,
+    kendo-color-inverse: $kendo-color-inverse,
+    kendo-body-bg: $kendo-body-bg,
+    kendo-body-text: $kendo-body-text,
+    kendo-subtle-text: $kendo-subtle-text,
+    kendo-app-bg: $kendo-app-bg,
+    kendo-app-text: $kendo-app-text,
+    kendo-app-border: $kendo-app-border,
+    kendo-link-text: $kendo-link-text,
+    kendo-link-hover-text: $kendo-link-hover-text,
+    kendo-component-bg: $kendo-component-bg,
+    kendo-component-text: $kendo-component-text,
+    kendo-component-border: $kendo-component-border,
+    kendo-base-bg: $kendo-base-bg,
+    kendo-base-text: $kendo-base-text,
+    kendo-base-border: $kendo-base-border,
+    kendo-base-gradient: $kendo-base-gradient,
+    kendo-hover-bg: $kendo-hover-bg,
+    kendo-hover-text: $kendo-hover-text,
+    kendo-hover-border: $kendo-hover-border,
+    kendo-hover-gradient: $kendo-hover-gradient,
+    kendo-selected-bg: $kendo-selected-bg,
+    kendo-selected-text: $kendo-selected-text,
+    kendo-selected-border: $kendo-selected-border,
+    kendo-selected-gradient: $kendo-selected-gradient,
+    kendo-selected-hover-bg: $kendo-selected-hover-bg,
+    kendo-selected-hover-text: $kendo-selected-hover-text,
+    kendo-selected-hover-border: $kendo-selected-hover-border,
+    kendo-selected-hover-gradient: $kendo-selected-hover-gradient,
+    kendo-component-header-bg: $kendo-component-header-bg,
+    kendo-component-header-text: $kendo-component-header-text,
+    kendo-component-header-border: $kendo-component-header-border,
+    kendo-component-header-gradient: $kendo-component-header-gradient,
+    kendo-invalid-bg: $kendo-invalid-bg,
+    kendo-invalid-text: $kendo-invalid-text,
+    kendo-invalid-border: $kendo-invalid-border,
+    kendo-invalid-shadow: $kendo-invalid-shadow,
+    kendo-disabled-text: $kendo-disabled-text,
+);
+
+$kendo-theme-swatches: (
+    "base": (
+        "normal": $kendo-color-base,
+        "rgb": $kendo-color-base,
+        "text": $kendo-color-base-text,
+        "hover": $kendo-color-base-hover,
+        "active": $kendo-color-base-active,
+        "selected": $kendo-color-base-selected,
+        "focus": $kendo-color-base-focus,
+    ),
+    "primary": (
+        "normal": $kendo-color-primary,
+        "rgb": $kendo-color-primary,
+        "text": $kendo-color-primary-text,
+        "hover": $kendo-color-primary-hover,
+        "active": $kendo-color-primary-active,
+        "selected": $kendo-color-primary-selected,
+        "focus": $kendo-color-primary-focus,
+    ),
+    "secondary": (
+        "normal": $kendo-color-secondary,
+        "rgb": $kendo-color-secondary,
+        "text": $kendo-color-secondary-text,
+        "hover": $kendo-color-secondary-hover,
+        "active": $kendo-color-secondary-active,
+        "selected": $kendo-color-secondary-selected,
+        "focus": $kendo-color-secondary-focus,
+    ),
+    "tertiary": (
+        "normal": $kendo-color-tertiary,
+        "rgb": $kendo-color-tertiary,
+        "text": $kendo-color-tertiary-text,
+        "hover": $kendo-color-tertiary-hover,
+        "active": $kendo-color-tertiary-active,
+        "selected": $kendo-color-tertiary-selected,
+        "focus": $kendo-color-tertiary-focus,
+    ),
+    "info": (
+        normal: $kendo-color-info,
+        rgb: $kendo-color-info,
+        text: $kendo-color-info-text,
+        hover: $kendo-color-info-hover,
+        active: $kendo-color-info-active,
+        selected: $kendo-color-info-selected,
+        focus: $kendo-color-info-focus,
+    ),
+    "success": (
+        normal: $kendo-color-success,
+        rgb: $kendo-color-success,
+        text: $kendo-color-success-text,
+        hover: $kendo-color-success-hover,
+        active: $kendo-color-success-active,
+        selected: $kendo-color-success-selected,
+        focus: $kendo-color-success-focus,
+    ),
+    "warning": (
+        normal: $kendo-color-warning,
+        rgb: $kendo-color-warning,
+        text: $kendo-color-warning-text,
+        hover: $kendo-color-warning-hover,
+        active: $kendo-color-warning-active,
+        selected: $kendo-color-warning-selected,
+        focus: $kendo-color-warning-focus,
+    ),
+    "error": (
+        normal: $kendo-color-error,
+        rgb: $kendo-color-error,
+        text: $kendo-color-error-text,
+        hover: $kendo-color-error-hover,
+        active: $kendo-color-error-active,
+        selected: $kendo-color-error-selected,
+        focus: $kendo-color-error-focus,
+    ),
+    "light": (
+        normal: $kendo-color-light,
+        rgb: $kendo-color-light,
+        text: $kendo-color-light-text,
+        hover: $kendo-color-light-hover,
+        active: $kendo-color-light-active,
+        selected: $kendo-color-light-selected,
+        focus: $kendo-color-light-focus,
+    ),
+    "dark": (
+        normal: $kendo-color-dark,
+        rgb: $kendo-color-dark,
+        text: $kendo-color-dark-text,
+        hover: $kendo-color-dark-hover,
+        active: $kendo-color-dark-active,
+        selected: $kendo-color-dark-selected,
+        focus: $kendo-color-dark-focus,
+    ),
+    "inverse": (
+        normal: $kendo-color-inverse,
+        rgb: $kendo-color-inverse,
+        text: $kendo-color-inverse-text,
+        hover: $kendo-color-inverse-hover,
+        active: $kendo-color-inverse-active,
+        selected: $kendo-color-inverse-selected,
+        focus: $kendo-color-inverse-focus,
+    ),
+)
