@@ -139,144 +139,140 @@
         }
     }
 
-// TODO!
-//    // Outline button
-//    @each $name, $swatch in k-map-merge( $kendo-theme-swatches, ( "base": ("normal": $_kendo-color-base-text, "normal-rgb": $_kendo-color-base-text-rgb, "text": $_kendo-color-base))) {
-//        .k-button-outline-#{$name} {
-//            $color: k-map-get($swatch, 'normal');
-//            $color-rgb: k-map-get($swatch, 'normal-rgb');
-//            $text: k-map-get($swatch, 'text');
+   // Outline button
+    @each $name, $swatch in $kendo-button-theme-swatches {
+        .k-button-outline-#{$name} {
+            $color: if($name == "base", k-map-get($swatch, 'text'), k-map-get($swatch, 'normal'));
+            $color-rgb: if($name == "base", k-map-get($swatch, 'text-rgb'), k-map-get($swatch, 'rgb'));
+            $text: if($name == "base", k-map-get($swatch, 'normal'), k-map-get($swatch, 'text'));
 
-//            @include box-shadow( none );
-//            border-color: currentColor;
-//            color: $color;
-//            background-color: transparent;
+            @include box-shadow( none );
+            border-color: currentColor;
+            color: $color;
+            background-color: transparent;
 
-//            // Hover state
-//            &:hover,
-//            &.k-hover {
-//                @include fill(
-//                    $text,
-//                    $color,
-//                    $color
-//                );
-//            }
+            // Hover state
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    $text,
+                    $color,
+                    $color
+                );
+            }
 
-//            // Focus state
-//            &:focus,
-//            &.k-focus {
-//                @if $kendo-outline-button-shadow {
-//                    @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread rgba( $color-rgb, $kendo-outline-button-shadow-opacity ), true, true );
-//                }
-//            }
+            // Focus state
+            &:focus,
+            &.k-focus {
+                @if $kendo-outline-button-shadow {
+                    @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread rgba( $color-rgb, $kendo-outline-button-shadow-opacity ), true, true );
+                }
+            }
 
-//            // Active state
-//            &:active,
-//            &.k-active {
-//                @include fill(
-//                    $text,
-//                    $color,
-//                    $color
-//                );
-//            }
+            // Active state
+            &:active,
+            &.k-active {
+                @include fill(
+                    $text,
+                    $color,
+                    $color
+                );
+            }
 
-//            // Selected
-//            &.k-selected {
-//                @include fill(
-//                    $text,
-//                    $color,
-//                    $color
-//                );
-//            }
+            // Selected
+            &.k-selected {
+                @include fill(
+                    $text,
+                    $color,
+                    $color
+                );
+            }
 
-//            // Disabled state
-//            &:disabled,
-//            &.k-disabled {
-//                color: $kendo-button-disabled-text;
-//            }
-//        }
-//    }
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-button-disabled-text;
+            }
+        }
+    }
 
-
-//    // Flat button
-//    @each $name, $swatch in k-map-merge( $kendo-theme-swatches, ( "base": (normal: "inherit") ) ) {
-//        .k-button-flat-#{$name} {
-//            $color: k-map-get($swatch, 'normal');
-//            color: $color;
-
-//            // Disabled state
-//            &:disabled,
-//            &.k-disabled {
-//                color: $kendo-button-disabled-text;
-//            }
-//        }
-//    }
+    // Flat button
+    @each $name, $swatch in $kendo-button-theme-swatches {
+        .k-button-flat-#{$name} {
+            $color: if($name == 'base', "inherit", k-map-get($swatch, 'normal'));
+            color: $color;
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-button-disabled-text;
+            }
+        }
+    }
 
 
-//    // Link button
-//    @each $name, $swatch in k-map-merge( $kendo-theme-swatches, ( "base": ("normal": $_kendo-color-base-text, "normal-rgb": $_kendo-color-base-text-rgb))) {
-//        .k-button-link-#{$name} {
-//            $color: k-map-get($swatch, 'normal');
-//            $color-rgb: k-map-get($swatch, 'normal-rgb');
-//            color: $color;
+    // Link button
+    @each $name, $swatch in $kendo-button-theme-swatches {
+        .k-button-link-#{$name} {
+            $color: if($name == 'base', k-map-get($swatch, 'rgb') ,k-map-get($swatch, 'normal'));
+            $color-rgb: if($name == 'base', k-map-get($swatch, 'text-rgb') ,k-map-get($swatch, 'rgb'));
+            color: $color;
 
-//            // Hover
-//            &:hover,
-//            &.k-hover {
-//                color: $color;
-//            }
+            // Hover
+            &:hover,
+            &.k-hover {
+                color: $color;
+            }
 
-//            // Focus
-//            &:focus,
-//            &.k-focus {
-//                @if ( $kendo-link-button-shadow ) {
-//                    @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread rgba( $color-rgb, $kendo-link-button-shadow-opacity ), true, true );
-//                }
-//            }
+            // Focus
+            &:focus,
+            &.k-focus {
+                @if ( $kendo-link-button-shadow ) {
+                    @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread rgba( $color-rgb, $kendo-link-button-shadow-opacity ), true, true );
+                }
+            }
 
-//            // Active
-//            &:active,
-//            &.k-active {
-//                color: $color;
-//            }
+            // Active
+            &:active,
+            &.k-active {
+                color: $color;
+            }
 
-//            // Selected
-//            &.k-selected {
-//                color: $color;
-//            }
+            // Selected
+            &.k-selected {
+                color: $color;
+            }
 
-//            // Disabled state
-//            &:disabled,
-//            &.k-disabled {
-//                color: $kendo-button-disabled-text;
-//            }
-//        }
-//    }
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-button-disabled-text;
+            }
+        }
+    }
 
+    // Clear button
+    @each $name, $swatch in $kendo-button-theme-swatches {
+        .k-button-clear-#{$name} {
+            $color: if($name == 'base', k-map-get($swatch, 'text') ,k-map-get($swatch, 'normal'));
+            color: $color;
 
-//    // Clear button
-//    @each $name, $swatch in k-map-merge( $kendo-theme-swatches, ( "base": ("normal": $_kendo-color-base-text) ) ) {
-//        .k-button-clear-#{$name} {
-//            $color: k-map-get($swatch, 'normal');
-//            color: $color;
+            &:focus,
+            &.k-focus,
+            &:active {
+                &::after {
+                    background-color: currentColor;
+                    opacity: $kendo-clear-button-focus-opacity;
+                    display: block;
+                }
+            }
 
-//            &:focus,
-//            &.k-focus,
-//            &:active {
-//                &::after {
-//                    background-color: currentColor;
-//                    opacity: $kendo-clear-button-focus-opacity;
-//                    display: block;
-//                }
-//            }
-
-//            // Disabled state
-//            &:disabled,
-//            &.k-disabled {
-//                color: $kendo-button-disabled-text;
-//            }
-//        }
-//    }
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-button-disabled-text;
+            }
+        }
+    }
 
 
     // Button group

@@ -42,21 +42,21 @@ $kendo-color-info-active: k-try-shade($kendo-color-info, 1.5) !default;
 $kendo-color-info-selected: k-try-shade($kendo-color-info, 1.5) !default;
 $kendo-color-info-focus: null !default;
 
-$kendo-color-success: map-get($kendo-palette-green, 9) !default;
+$kendo-color-success: #37b400 !default;
 $kendo-color-success-text: k-contrast-legacy($kendo-color-success) !default;
 $kendo-color-success-hover: k-try-shade($kendo-color-success, 0.5) !default;
 $kendo-color-success-active: k-try-shade($kendo-color-success, 1.5) !default;
 $kendo-color-success-selected: k-try-shade($kendo-color-success, 1.5) !default;
 $kendo-color-success-focus: null !default;
 
-$kendo-color-warning: map-get($kendo-palette-yellow, 9) !default;
+$kendo-color-warning: #ffc000 !default;
 $kendo-color-warning-text: k-contrast-legacy($kendo-color-warning) !default;
 $kendo-color-warning-hover: k-try-shade($kendo-color-warning, 0.5) !default;
 $kendo-color-warning-active: k-try-shade($kendo-color-warning, 1.5) !default;
 $kendo-color-warning-selected: k-try-shade($kendo-color-warning, 1.5) !default;
 $kendo-color-warning-focus: null !default;
 
-$kendo-color-error: map-get($kendo-palette-red, 9) !default;
+$kendo-color-error: #f31700 !default;
 $kendo-color-error-text: k-contrast-legacy($kendo-color-error) !default;
 $kendo-color-error-hover: k-try-shade($kendo-color-error, 0.5) !default;
 $kendo-color-error-active: k-try-shade($kendo-color-error, 1.5) !default;

@@ -264,6 +264,7 @@ $kendo-button-theme-swatches: k-map-merge(
             normal: $kendo-button-bg,
             rgb: $kendo-button-bg,
             text: $kendo-button-text,
+            text-rgb: $kendo-button-text,
             hover: $kendo-button-hover-bg,
             active: $kendo-button-active-bg,
             selected: $kendo-button-selected-bg,
@@ -275,9 +276,6 @@ $kendo-button-theme-swatches: k-map-merge(
 @if($kendo-new-colors) {
     $kendo-button-theme-swatches: k-map-merge(
         $kendo-theme-swatches,
-        ( "base": (
-            "normal": $kendo-button-bg,
-            "text": $kendo-button-text
-        ))
+        ( )
     );
 }
