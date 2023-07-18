@@ -17,3 +17,8 @@ export * from './table-group-header';
 export * from './table-group-sticky-header';
 export * from './table-group-row';
 export * from './table-list-group-row';
+export * from "./templates/table-list";
+export * from "./templates/table-list-virtualization";
+
+export * from "./templates/data-table-normal";
+export * from "./templates/table-native";
