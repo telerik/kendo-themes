@@ -3,9 +3,7 @@
 
 @mixin kendo-scrollview--theme() {
 
-    kendo-scrollview.k-scrollview-wrap,
-    kendo-scrollview.k-scrollview,
-    div.k-scrollview {
+    .k-scrollview {
         @include fill(
             var( --kendo-scrollview-text, #{$kendo-scrollview-text} ),
             var( --kendo-scrollview-bg, #{$kendo-scrollview-bg} ),
