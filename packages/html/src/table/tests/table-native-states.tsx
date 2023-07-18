@@ -1,5 +1,4 @@
-import { Table, TableRow, TableTbody, TableTd, TableTh, TableThead } from '../../table';
-
+import { TableNative, TableRow, TableTbody, TableTd, TableTh, TableThead } from '../../table';
 
 export default () =>(
     <>
@@ -9,7 +8,7 @@ export default () =>(
             <span></span>
 
             <section>
-                <Table size="medium">
+                <TableNative size="medium">
                     <colgroup>
                         <col style={{ width: '50px' }} />
                         <col />
@@ -74,9 +73,8 @@ export default () =>(
                             <TableTd text="Data 10.3"></TableTd>
                         </TableRow>
                     </TableTbody>
-                </Table>
+                </TableNative>
             </section>
-
         </div>
     </>
 );
