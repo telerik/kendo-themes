@@ -1,4 +1,4 @@
-@import "./palettes";
+@import "./_palettes.scss";
 
 // TODO: re-evaluate!
 $kendo-color-white: #ffffff;
@@ -90,5 +90,5 @@ $kendo-body-text: $kendo-color-base-text !default;
 $kendo-color-border: rgba($kendo-color-black, 0.08) !default;
 $kendo-color-border-hover: rgba($kendo-color-black, 0.16) !default;
 
-$kendo-color-border-alt: rgba(#666, 0.5) !default;
-$kendo-color-border-alt-hover: rgba(#666, 0.8) !default;
+$kendo-color-border-alt: rgba(#666666, 0.5) !default;
+$kendo-color-border-alt-hover: rgba(#666666, 0.8) !default;

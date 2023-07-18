@@ -144,11 +144,11 @@
 }
 
 
-@function k-hex-to-rgb ($color) {
+@function k-hex-to-rgb( $color ) {
     @if($color) {
-        $r: red($color);
-        $g: green($color);
-        $b: blue($color);
+        $r: k-color-red($color);
+        $g: k-color-green($color);
+        $b: k-color-blue($color);
 
         @return $r, $g, $b;
     } @else {

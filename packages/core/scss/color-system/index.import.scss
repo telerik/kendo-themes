@@ -85,23 +85,23 @@
 
     // TODO: Extract to utils!?
     // Text colors
-    //. @each $theme-color, $color-props in $kendo-theme-colors {
-        //. $_color: k-map-get($color-props, text);
+    // @each $theme-color, $color-props in $kendo-theme-colors {
+        // $_color: k-map-get($color-props, text);
 
-        //. .k-text-#{$theme-color},
-        //. .k-color-#{$theme-color} {
-            //. color: var(--kendo-text-#{$theme-color}, #{$_color});
-        //. }
-        //. .\!k-text-#{$theme-color},
-        //. .\!k-color-#{$theme-color} {
-            //. color: var(--kendo-text-#{$theme-color}, #{$_color}) !important; // stylelint-disable-line declaration-no-important
-        //. }
+        // .k-text-#{$theme-color},
+        // .k-color-#{$theme-color} {
+            // color: var(--kendo-text-#{$theme-color}, #{$_color});
+        // }
+        // .\!k-text-#{$theme-color},
+        // .\!k-color-#{$theme-color} {
+            // color: var(--kendo-text-#{$theme-color}, #{$_color}) !important; // stylelint-disable-line declaration-no-important
+        // }
 
-        //. .k-bg-#{$theme-color} {
-            //. background-color: var(--kendo-bg-#{$theme-color}, #{$_color});
-        //. }
-        //. .\!k-bg-#{$theme-color} {
-            //. background-color: var(--kendo-bg-#{$theme-color}, #{$_color}) !important; // stylelint-disable-line declaration-no-important
-        //. }
-    //}
+        // .k-bg-#{$theme-color} {
+            // background-color: var(--kendo-bg-#{$theme-color}, #{$_color});
+        // }
+        // .\!k-bg-#{$theme-color} {
+            // background-color: var(--kendo-bg-#{$theme-color}, #{$_color}) !important; // stylelint-disable-line declaration-no-important
+        // }
+    // }
 }
