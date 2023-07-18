@@ -2,6 +2,103 @@
 
 $kendo-is-dark-theme: false !default;
 
+
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+$kendo-color-rgba-transparent: rgba(0, 0, 0, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-transparent-to-black: rgba($kendo-color-black, 0), $kendo-color-black; // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-transparent-to-white: rgba($kendo-color-white, 0), $kendo-color-white; // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-black-to-transparent: $kendo-color-black, rgba($kendo-color-black, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-white-to-transparent: $kendo-color-white, rgba($kendo-color-white, 0); // stylelint-disable-line scss/dollar-variable-default
+$kendo-gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
+
+
+// New
+$kendo-color-primary: null !default;
+$kendo-color-primary-text: null !default;
+$kendo-color-primary-hover: null !default;
+$kendo-color-primary-active: null !default;
+$kendo-color-primary-selected: null !default;
+$kendo-color-primary-focus: null !default;
+
+$kendo-color-base: null !default;
+$kendo-color-base-text: null !default;
+$kendo-color-base-hover: null !default;
+$kendo-color-base-active: null !default;
+$kendo-color-base-selected: null !default;
+$kendo-color-base-focus: null !default;
+
+$kendo-color-secondary: null !default;
+$kendo-color-secondary-text: null !default;
+$kendo-color-secondary-hover: null !default;
+$kendo-color-secondary-active: null !default;
+$kendo-color-secondary-selected: null !default;
+$kendo-color-secondary-focus: null !default;
+
+$kendo-color-tertiary: null !default;
+$kendo-color-tertiary-text: null !default;
+$kendo-color-tertiary-hover: null !default;
+$kendo-color-tertiary-active: null !default;
+$kendo-color-tertiary-selected: null !default;
+$kendo-color-tertiary-focus: null !default;
+
+$kendo-color-info: null !default;
+$kendo-color-info-text: null !default;
+$kendo-color-info-hover: null !default;
+$kendo-color-info-active: null !default;
+$kendo-color-info-selected: null !default;
+$kendo-color-info-focus: null !default;
+
+$kendo-color-success: null !default;
+$kendo-color-success-text: null !default;
+$kendo-color-success-hover: null !default;
+$kendo-color-success-active: null !default;
+$kendo-color-success-selected: null !default;
+$kendo-color-success-focus: null !default;
+
+$kendo-color-warning: null !default;
+$kendo-color-warning-text: null !default;
+$kendo-color-warning-hover: null !default;
+$kendo-color-warning-active: null !default;
+$kendo-color-warning-selected: null !default;
+$kendo-color-warning-focus: null !default;
+
+$kendo-color-error: null !default;
+$kendo-color-error-text: null !default;
+$kendo-color-error-hover: null !default;
+$kendo-color-error-active: null !default;
+$kendo-color-error-selected: null !default;
+$kendo-color-error-focus: null !default;
+
+$kendo-color-light: null !default;
+$kendo-color-light-text: null !default;
+$kendo-color-light-hover: null !default;
+$kendo-color-light-active: null !default;
+$kendo-color-light-selected: null !default;
+$kendo-color-light-focus: null !default;
+
+$kendo-color-dark: null !default;
+$kendo-color-dark-text: null !default;
+$kendo-color-dark-hover: null !default;
+$kendo-color-dark-active: null !default;
+$kendo-color-dark-selected: null !default;
+$kendo-color-dark-focus: null !default;
+
+$kendo-color-inverse: null !default;
+$kendo-color-inverse-text: null !default;
+$kendo-color-inverse-hover: null !default;
+$kendo-color-inverse-active: null !default;
+$kendo-color-inverse-selected: null !default;
+$kendo-color-inverse-focus: null !default;
+
+$kendo-body-bg: null !default;
+$kendo-body-text: null !default;
+
+$kendo-color-border: null !default;
+$kendo-color-border-hover: null !default;
+$kendo-color-border-focus: null !default;
+
+// Old
 $kendo-color-primary: null !default;
 $kendo-color-primary-lighter: null !default;
 $kendo-color-primary-darker: null !default;
@@ -290,7 +387,7 @@ $kendo-theme-swatches: (
 );
 
 /// @deprecated
-$kendo-color-primary-darker: k-color-shade($kendo-color-primary, 2) !default;
+$kendo-color-primary-darker: if($kendo-color-primary != null, k-color-shade($kendo-color-primary, 2), null ) !default;
 /// @deprecated
 $kendo-color-primary-contrast: $kendo-color-primary-text;
 /// @deprecated
@@ -348,35 +445,35 @@ $kendo-component-bg: $kendo-body-bg !default;
 /// @deprecated
 $kendo-link-hover-text: $kendo-color-primary-darker !default;
 /// @deprecated
-$kendo-color-primary-lighter: k-color-tint($kendo-color-primary, 2) !default; // not used anywhere
+$kendo-color-primary-lighter: if($kendo-color-primary != null, k-color-tint($kendo-color-primary, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-secondary-lighter: k-color-tint($kendo-color-secondary, 2) !default; // not used anywhere
+$kendo-color-secondary-lighter: if($kendo-color-secondary != null, k-color-tint($kendo-color-secondary, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-secondary-darker: k-color-shade($kendo-color-secondary, 2) !default; // not used anywhere
+$kendo-color-secondary-darker: if($kendo-color-secondary != null, k-color-shade($kendo-color-secondary, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-secondary-contrast: k-contrast-legacy($kendo-color-secondary) !default; // not use anywhere
+$kendo-color-secondary-contrast: if($kendo-color-secondary != null, k-contrast-legacy($kendo-color-secondary), null) !default; // not use anywhere
 /// @deprecated
-$kendo-color-tertiary-lighter: k-color-tint($kendo-color-tertiary, 2) !default; // not used anywhere
+$kendo-color-tertiary-lighter: if($kendo-color-tertiary != null, k-color-tint($kendo-color-tertiary, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-tertiary-darker: k-color-shade($kendo-color-tertiary, 2) !default; // not used anywhere
+$kendo-color-tertiary-darker: if($kendo-color-tertiary != null, k-color-shade($kendo-color-tertiary, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-tertiary-contrast: k-contrast-legacy($kendo-color-tertiary) !default; // not used anywhere
+$kendo-color-tertiary-contrast: if($kendo-color-tertiary != null, k-contrast-legacy($kendo-color-tertiary), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-info-lighter: k-color-tint($kendo-color-info, 2) !default; // not used anywhere
+$kendo-color-info-lighter: if($kendo-color-info != null, k-color-tint($kendo-color-info, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-info-darker: k-color-shade($kendo-color-info, 2) !default; // not used anywhere
+$kendo-color-info-darker: if($kendo-color-info != null, k-color-shade($kendo-color-info, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-success-lighter: k-color-tint($kendo-color-success, 2) !default; // not used anywhere
+$kendo-color-success-lighter: if($kendo-color-success != null, k-color-tint($kendo-color-success, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-success-darker: k-color-shade($kendo-color-success, 2) !default; // not used anywhere
+$kendo-color-success-darker: if($kendo-color-success != null, k-color-shade($kendo-color-success, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-warning-lighter: k-color-tint($kendo-color-warning, 2) !default; // not used anywhere
+$kendo-color-warning-lighter: if($kendo-color-warning != null, k-color-tint($kendo-color-warning, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-warning-darker: k-color-shade($kendo-color-warning, 2) !default; // not used anywhere
+$kendo-color-warning-darker: if($kendo-color-warning != null, k-color-shade($kendo-color-warning, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-error-lighter: k-color-tint($kendo-color-error, 2) !default; // not used anywhere
+$kendo-color-error-lighter: if($kendo-color-error != null, k-color-tint($kendo-color-error, 2), null) !default; // not used anywhere
 /// @deprecated
-$kendo-color-error-darker: k-color-shade($kendo-color-error, 2) !default; // not used anywhere
+$kendo-color-error-darker: if($kendo-color-error != null, k-color-shade($kendo-color-error, 2), null) !default; // not used anywhere
 /// @deprecated
 $kendo-selected-hover-border: $kendo-base-border !default;
 /// @deprecated
@@ -388,7 +485,7 @@ $kendo-link-text: $kendo-color-primary !default;
 /// @deprecated
 $kendo-app-border: rgba($kendo-color-black, 0.08) !default;
 /// @deprecated
-$kendo-app-bg: k-try-shade($kendo-body-bg, 0.25) !default;
+$kendo-app-bg: if($kendo-body-bg != null, k-try-shade($kendo-body-bg, 0.25), null) !default;
 /// @deprecated
 $kendo-loading-bg: $kendo-component-bg !default;
 /// @deprecated

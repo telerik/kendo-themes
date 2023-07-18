@@ -1,9 +1,6 @@
 @import "./_functions.import.scss";
 
 $kendo-new-colors: false !default;
-
-$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
-$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
 $kendo-subtle-text: null !default;
 
 $kendo-disabled-text: null !default;
@@ -94,13 +91,6 @@ $kendo-body-text: null !default;
 $kendo-color-border: null !default;
 $kendo-color-border-hover: null !default;
 $kendo-color-border-focus: null !default;
-
-$kendo-color-rgba-transparent: rgba(0, 0, 0, 0); // stylelint-disable-line scss/dollar-variable-default
-$kendo-gradient-transparent-to-black: rgba($kendo-color-black, 0), $kendo-color-black; // stylelint-disable-line scss/dollar-variable-default
-$kendo-gradient-transparent-to-white: rgba($kendo-color-white, 0), $kendo-color-white; // stylelint-disable-line scss/dollar-variable-default
-$kendo-gradient-black-to-transparent: $kendo-color-black, rgba($kendo-color-black, 0); // stylelint-disable-line scss/dollar-variable-default
-$kendo-gradient-white-to-transparent: $kendo-color-white, rgba($kendo-color-white, 0); // stylelint-disable-line scss/dollar-variable-default
-$kendo-gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
 
 $kendo-is-dark-theme: null !default;
 
