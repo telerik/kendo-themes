@@ -29,7 +29,7 @@ $kendo-pivotgrid-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-pivotgrid-border-width: 1px !default;
 /// Icon spacing of the PivotGrid.
 /// @group pivotgrid
-$kendo-pivotgrid-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
+$kendo-pivotgrid-icon-spacing: map.get( $kendo-spacing, 1 ) !default;
 
 /// Background color of the PivotGrid.
 /// @group pivotgrid

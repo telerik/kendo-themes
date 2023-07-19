@@ -1,4 +1,4 @@
-import { MaskedTextbox } from '../../maskedtextbox';
+import { MaskedTextbox, MaskedTextboxNormal } from '../../maskedtextbox';
 
 
 const styles = `
@@ -15,52 +15,29 @@ export default () =>(
             <span>MaskedTextBox Outline RTL</span>
 
             <div>
-                <MaskedTextbox fillMode="outline" placeholder="(___) ___-__-__-__" />
+                <MaskedTextboxNormal fillMode="outline" placeholder="(___) ___-__-__-__" />
             </div>
             <div dir="rtl">
-                <MaskedTextbox fillMode="outline" placeholder="(___) ___-__-__-__" />
+                <MaskedTextboxNormal fillMode="outline" placeholder="(___) ___-__-__-__" />
             </div>
 
-            <div>
-                <MaskedTextbox fillMode="outline" value="Normal" />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="outline" value="Normal" />
-            </div>
+            {[ 'normal', ...MaskedTextbox.states ].map((state) => (
+                <>
+                    <div>
+                        <MaskedTextboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <MaskedTextboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <MaskedTextbox fillMode="outline" value="Hover" hover />
+                <MaskedTextboxNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
             <div dir="rtl">
-                <MaskedTextbox fillMode="outline" value="Hover" hover />
-            </div>
-
-            <div>
-                <MaskedTextbox fillMode="outline" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="outline" value="Focus" focus />
-            </div>
-
-            <div>
-                <MaskedTextbox fillMode="outline" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="outline" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <MaskedTextbox fillMode="outline" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="outline" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <MaskedTextbox fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <MaskedTextbox fillMode="outline" value="Invalid Focus" invalid focus />
+                <MaskedTextboxNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
         </div>
     </>

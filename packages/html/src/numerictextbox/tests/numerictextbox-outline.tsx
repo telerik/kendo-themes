@@ -1,5 +1,4 @@
-import { NumericTextbox } from '../../numerictextbox';
-
+import { NumericTextbox, NumericTextboxNormal } from '../../numerictextbox';
 
 const styles = `
     #test-area {
@@ -15,52 +14,29 @@ export default () =>(
             <span>NumericTextBox Outline RTL</span>
 
             <div>
-                <NumericTextbox fillMode="outline" placeholder="NumericTextBox..." />
+                <NumericTextboxNormal fillMode="outline" placeholder="NumericTextBox..." />
             </div>
             <div dir="rtl">
-                <NumericTextbox fillMode="outline" placeholder="NumericTextBox..." />
+                <NumericTextboxNormal fillMode="outline" placeholder="NumericTextBox..." />
             </div>
 
-            <div>
-                <NumericTextbox fillMode="outline" value="Normal" />
-            </div>
-            <div dir="rtl">
-                <NumericTextbox fillMode="outline" value="Normal" />
-            </div>
+            {[ 'normal', ...NumericTextbox.states ].map((state) => (
+                <>
+                    <div>
+                        <NumericTextboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <NumericTextboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <NumericTextbox fillMode="outline" value="Hover" hover />
+                <NumericTextboxNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
             <div dir="rtl">
-                <NumericTextbox fillMode="outline" value="Hover" hover />
-            </div>
-
-            <div>
-                <NumericTextbox fillMode="outline" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <NumericTextbox fillMode="outline" value="Focus" focus />
-            </div>
-
-            <div>
-                <NumericTextbox fillMode="outline" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <NumericTextbox fillMode="outline" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <NumericTextbox fillMode="outline" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <NumericTextbox fillMode="outline" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <NumericTextbox fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <NumericTextbox fillMode="outline" value="Invalid Focus" invalid focus />
+                <NumericTextboxNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
         </div>
     </>
