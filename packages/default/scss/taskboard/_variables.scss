@@ -81,14 +81,12 @@ $kendo-taskboard-card-focus-shadow: none !default;
 
 $kendo-taskboard-card-hover-border: k-try-shade( $kendo-taskboard-card-border, 10% ) !default;
 
-// TODO: missing design!?
-$kendo-taskboard-card-selected-border: k-color-tint( $kendo-color-primary, 5 ) !default;
+$kendo-taskboard-card-selected-border: k-color-tint( $kendo-color-primary-lighter, 5 ) !default;
 $kendo-taskboard-card-selected-shadow: none !default;
 
 $kendo-taskboard-card-header-text: $kendo-color-primary !default;
-// TODO: double-check component design!?
-$kendo-taskboard-card-header-focus-text: $kendo-color-primary-active !default;
-$kendo-taskboard-card-header-hover-text: $kendo-color-primary-hover !default;
+$kendo-taskboard-card-header-focus-text: $kendo-color-primary-darker !default;
+$kendo-taskboard-card-header-hover-text: $kendo-color-primary-darker !default;
 
 $kendo-taskboard-drag-placeholder-border-width: 1px !default;
 $kendo-taskboard-drag-placeholder-border-radius: $kendo-taskboard-card-border-radius !default;

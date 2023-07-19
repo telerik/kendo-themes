@@ -58,7 +58,11 @@
         &.k-selected:hover,
         &.k-selected.k-hover {
             color: $kendo-list-item-selected-text;
-            background-color: k-color-shade( $kendo-list-item-selected-bg );
+            @if($kendo-new-colors) {
+                background-color: $_kendo-color-base-hover;
+            } @else {
+                background-color: k-color-shade( $kendo-list-item-selected-bg );
+            }
         }
     }
 
