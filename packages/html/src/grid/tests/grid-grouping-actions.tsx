@@ -146,10 +146,10 @@ export default () => (
                 <div className="k-columnmenu-item-wrapper">
                     <div className="k-columnmenu-item">
                         <div className="k-column-list-item">
-                            <Icon icon="caret-alt-left"/>Move Previous
+                            <Icon icon="caret-alt-left"/>Move previous
                         </div>
                         <div className="k-column-list-item">
-                            <Icon icon="caret-alt-right"/>Move Next
+                            <Icon icon="caret-alt-right"/>Move next
                         </div>
                     </div>
                 </div>
