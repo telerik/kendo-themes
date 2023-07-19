@@ -8,3 +8,4 @@ export * from './input-loading-icon';
 export * from './input-validation-icon';
 export * from './input-prefix';
 export * from './input-suffix';
+export * from './input-separator';
