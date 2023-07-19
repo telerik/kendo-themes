@@ -639,6 +639,14 @@
         }
     }
 
+    // PivotGrid toggle icon
+    .k-pivotgrid-toggle {
+        margin-block: -$kendo-icon-padding;
+        padding: $kendo-icon-padding;
+        box-sizing: content-box;
+        cursor: pointer;
+    }
+
 }
 
 
