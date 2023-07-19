@@ -1,5 +1,6 @@
 import { Button } from '../button';
 import { classNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
+import { Popup } from '../popup';
 
 export const MENUBUTTON_CLASSNAME = `k-menu-button`;
 
@@ -42,6 +43,8 @@ export type KendoMenuButtonProps = KendoMenuButtonOptions & {
   text?: string;
   showArrow?: boolean;
   arrowIconName?: string;
+  popup?: JSX.Element;
+  opened?: boolean;
 };
 
 export type KendoMenuButtonState = { [K in (typeof states)[number]]?: boolean };
@@ -74,31 +77,40 @@ export const MenuButton = (
         text,
         showArrow = defaultProps.showArrow,
         arrowIconName = defaultProps.arrowIconName,
+        popup,
+        opened,
         ...other
     } = props;
 
     return (
-        <Button
-            {...other}
-            className={classNames(
-                props.className,
-                MENUBUTTON_CLASSNAME,
-            )}
-            text={text}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            themeColor={themeColor}
-            hover={hover}
-            focus={focus}
-            active={active}
-            selected={selected}
-            disabled={disabled}
-            icon={icon}
-            showArrow={showArrow}
-            arrowIconName={arrowIconName}
-        >
-        </Button>
+        <>
+            <Button
+                {...other}
+                className={classNames(
+                    props.className,
+                    MENUBUTTON_CLASSNAME,
+                )}
+                text={text}
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                themeColor={themeColor}
+                hover={hover}
+                focus={focus}
+                active={active}
+                selected={selected}
+                disabled={disabled}
+                icon={icon}
+                showArrow={showArrow}
+                arrowIconName={arrowIconName}
+            >
+            </Button>
+            { opened && popup &&
+                <Popup className="k-menu-popup">
+                    {popup}
+                </Popup>
+            }
+        </>
     );
 };
 

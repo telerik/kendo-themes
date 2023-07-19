@@ -99,6 +99,7 @@
     .k-treelist-toggle {
         margin-block: calc( var( --kendo-icon-padding ) * -1 );
         padding: var( --kendo-icon-padding, .25rem );
+        box-sizing: content-box;
         cursor: pointer;
     }
 

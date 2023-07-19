@@ -20,90 +20,90 @@ export default () =>(
                 <section>
                     <span className="k-col-start-1">Primary ThemeColor</span>
                     <BottomNav themeColor="primary" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Secondary ThemeColor</span>
                     <BottomNav themeColor="secondary" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Tertiary ThemeColor</span>
                     <BottomNav themeColor="tertiary" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Info ThemeColor</span>
                     <BottomNav themeColor="info" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Success ThemeColor</span>
                     <BottomNav themeColor="success" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Warning ThemeColor</span>
                     <BottomNav themeColor="warning" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Error ThemeColor</span>
                     <BottomNav themeColor="error" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Dark ThemeColor</span>
                     <BottomNav themeColor="dark" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Light ThemeColor</span>
                     <BottomNav themeColor="light" flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
             </div>
@@ -113,90 +113,90 @@ export default () =>(
                 <section>
                     <span>Primary ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="primary" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Secondary ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="secondary" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Tertiary ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="tertiary" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Info ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="info" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Success ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="success" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Warning ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="warning" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Error ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="error" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Dark ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="dark" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
 
                 <section>
                     <span>Light ThemeColor</span>
                     <BottomNav fillMode="flat" themeColor="light" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled" disabled />
                     </BottomNav>
                 </section>
             </div>

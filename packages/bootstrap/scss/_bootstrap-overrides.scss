@@ -10,13 +10,13 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 
-$kendo-body-bg: $kendo-color-white !default;
+$kendo-body-bg: #ffffff !default;
 
 $kendo-component-bg: $kendo-body-bg !default;
 $kendo-component-text: k-contrast-color( $kendo-component-bg, $gray-900, $gray-100 ) !default;
 $kendo-component-border: if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 ) !default;
 
 $input-bg: $kendo-component-bg !default;
-$input-color: k-contrast-color( $input-bg, $gray-700, $gray-300 ) !default;
+$input-color: k-contrast-color( $input-bg, $gray-900, $gray-300 ) !default;
 $input-border-color: if( k-is-light( $input-bg ), $gray-400, $gray-600 ) !default;
 $input-placeholder-color: k-contrast-color( $input-bg, $gray-600, $gray-400 ) !default;

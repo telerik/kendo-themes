@@ -95,29 +95,29 @@ export default () =>(
                         <div className="k-tabstrip-content k-active">
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-columnmenu-item">
-                                    <Icon icon="group" />Group Column
+                                    <Icon icon="sort-asc-small" />Sort ascending
+                                </div>
+                                <div className="k-columnmenu-item">
+                                    <Icon icon="sort-desc-small" />Sort descending
                                 </div>
                             </div>
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-columnmenu-item">
-                                    <Icon icon="sort-asc-small" />Sort Ascending
-                                </div>
-                                <div className="k-columnmenu-item">
-                                    <Icon icon="sort-desc-small" />Sort Descending
+                                    <Icon icon="group" />Group column
                                 </div>
                             </div>
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-columnmenu-item">
-                                    <Icon icon="max-width" />Autosize This Column
+                                    <Icon icon="max-width" />Autosize this column
                                 </div>
                                 <div className="k-columnmenu-item">
-                                    <Icon icon="display-inline-flex" />Autosize All Columns
+                                    <Icon icon="display-inline-flex" />Autosize all columns
                                 </div>
                             </div>
                             <div className="k-columnmenu-item-wrapper">
                                 <div className="k-expander">
                                     <div className="k-columnmenu-item">
-                                        <Icon icon="set-column-position" />Set Column Position
+                                        <Icon icon="set-column-position" />Set column position
                                         <span className="k-spacer"></span>
                                         <Icon className="k-expander-indicator" icon="chevron-down" />
                                     </div>

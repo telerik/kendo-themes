@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.0...v6.6.1-dev.0) (2023-07-17)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+# [6.6.0](https://github.com/telerik/kendo-themes/compare/v6.5.1...v6.6.0) (2023-07-14)
+
+
+### Features
+
+* **pivotgrid:** adjust settings panel icon target size ([a179e5c](https://github.com/telerik/kendo-themes/commit/a179e5c681addc3baa0cd16c624a81058db8bff0))
+
+
+
+
+
+## [6.5.1](https://github.com/telerik/kendo-themes/compare/v6.5.1-dev.0...v6.5.1) (2023-07-11)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [6.5.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.5.0...v6.5.1-dev.0) (2023-07-10)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+# [6.5.0](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.2...v6.5.0) (2023-07-03)
+
+
+### Bug Fixes
+
+* revert breadcrumb size options ([b8e72e0](https://github.com/telerik/kendo-themes/commit/b8e72e0badba310c84bbbaef46d467a8c35cd339))
+
+
+
+
+
 # [6.5.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.1...v6.5.0-dev.2) (2023-07-03)
 
 

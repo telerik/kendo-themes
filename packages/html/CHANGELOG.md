@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.0...v6.6.1-dev.0) (2023-07-17)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.6.0](https://github.com/telerik/kendo-themes/compare/v6.5.1...v6.6.0) (2023-07-14)
+
+
+### Features
+
+* **pivotgrid:** adjust settings panel icon target size ([a179e5c](https://github.com/telerik/kendo-themes/commit/a179e5c681addc3baa0cd16c624a81058db8bff0))
+
+
+
+
+
+## [6.5.1](https://github.com/telerik/kendo-themes/compare/v6.5.1-dev.0...v6.5.1) (2023-07-11)
+
+
+### Bug Fixes
+
+* **html:** all chip icons should be small ([0e6c63b](https://github.com/telerik/kendo-themes/commit/0e6c63b3a9a8b54039b27dedbe16623e81b765ef))
+
+
+
+
+
+## [6.5.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.5.0...v6.5.1-dev.0) (2023-07-10)
+
+
+### Bug Fixes
+
+* **html:** use correct envelope icon name ([721fc56](https://github.com/telerik/kendo-themes/commit/721fc5624b6a242bcda33f0a942f3d10023b7e17))
+
+
+
+
+
+# [6.5.0](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.2...v6.5.0) (2023-07-03)
+
+
+### Bug Fixes
+
+* revert breadcrumb size options ([b8e72e0](https://github.com/telerik/kendo-themes/commit/b8e72e0badba310c84bbbaef46d467a8c35cd339))
+* revert breadcrumb sizing tests ([efddaeb](https://github.com/telerik/kendo-themes/commit/efddaeb91d2c1bf618de16497f1d346040b95c92))
+
+
+
+
+
 # [6.5.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.5.0-dev.1...v6.5.0-dev.2) (2023-07-03)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

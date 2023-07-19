@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-nouvelle",
   "description": "A css variables heavy theme for Kendo UI",
-  "version": "6.5.0-dev.2",
+  "version": "6.6.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -51,8 +51,8 @@
     "postpublish": "echo 'no postpublish for nouvelle theme'"
   },
   "dependencies": {
-    "@progress/kendo-font-icons": "1.5.0",
-    "@progress/kendo-theme-core": "6.5.0-dev.2",
-    "@progress/kendo-theme-utils": "6.5.0-dev.2"
+    "@progress/kendo-font-icons": "1.8.0",
+    "@progress/kendo-theme-core": "6.6.1-dev.0",
+    "@progress/kendo-theme-utils": "6.6.1-dev.0"
   }
 }
