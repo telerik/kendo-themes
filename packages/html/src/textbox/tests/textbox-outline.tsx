@@ -1,7 +1,4 @@
-import { Icon } from '../../icon';
-import { Button } from '../../button';
-import { Textbox } from '../../textbox';
-
+import { Textbox, TextboxNormal, TextboxPrefix, TextboxSuffix } from '../../textbox';
 
 const styles = `
     #test-area {
@@ -18,104 +15,44 @@ export default () =>(
             <span>TextBox Outline RTL</span>
 
             <div>
-                <Textbox fillMode="outline" placeholder="TextBox..." />
+                <TextboxNormal fillMode="outline" placeholder="TextBox..." />
             </div>
             <div dir="rtl">
-                <Textbox fillMode="outline" placeholder="TextBox..." />
+                <TextboxNormal fillMode="outline" placeholder="TextBox..." />
+            </div>
+
+            {[ 'normal', ...Textbox.states ].map((state) => (
+                <>
+                    <div>
+                        <TextboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <TextboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+                </>
+            ))}
+
+            <div>
+                <TextboxNormal fillMode="outline" value="invalid focus" invalid focus />
+            </div>
+            <div dir="rtl">
+                <TextboxNormal fillMode="outline" value="invalid focus" invalid focus />
             </div>
 
             <div>
-                <Textbox fillMode="outline" value="Normal" />
+                <TextboxPrefix fillMode="outline"></TextboxPrefix>
             </div>
             <div dir="rtl">
-                <Textbox fillMode="outline" value="Normal" />
+                <TextboxPrefix fillMode="outline"></TextboxPrefix>
             </div>
 
             <div>
-                <Textbox fillMode="outline" value="Hover" hover />
+                <TextboxSuffix fillMode="outline"></TextboxSuffix>
             </div>
             <div dir="rtl">
-                <Textbox fillMode="outline" value="Hover" hover />
+                <TextboxSuffix fillMode="outline"></TextboxSuffix>
             </div>
-
-            <div>
-                <Textbox fillMode="outline" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="outline" value="Focus" focus />
-            </div>
-
-            <div>
-                <Textbox fillMode="outline" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="outline" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <Textbox fillMode="outline" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="outline" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <Textbox fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="outline" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <Textbox fillMode="outline"
-                    placeholder="Prefix..."
-                    prefix={
-                        <>
-                            <Icon icon="menu" />
-                            <Button fillMode="clear" icon="calendar"></Button>
-                            <span className="k-input-separator"></span>
-                        </>
-                    }
-                />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="outline"
-                    placeholder="Prefix..."
-                    prefix={
-                        <>
-                            <Icon icon="menu" />
-                            <Button fillMode="clear" icon="calendar"></Button>
-                            <span className="k-input-separator"></span>
-                        </>
-                    }
-                />
-            </div>
-
-            <div>
-                <Textbox fillMode="outline"
-                    placeholder="Suffix..."
-                    suffix={
-                        <>
-                            <span className="k-input-separator"></span>
-                            <Button fillMode="clear" icon="calendar"></Button>
-                            <Icon icon="bell" />
-                        </>
-                    }
-                />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="outline"
-                    placeholder="Suffix..."
-                    suffix={
-                        <>
-                            <span className="k-input-separator"></span>
-                            <Button fillMode="clear" icon="calendar"></Button>
-                            <Icon icon="bell" />
-                        </>
-                    }
-                />
-            </div>
-
         </div>
     </>
 );
