@@ -51,16 +51,15 @@ $kendo-pdf-viewer-page-border: var( --kendo-component-border, inherit ) !default
 /// @group pdf-viewer
 $kendo-pdf-viewer-page-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
 
-/// Horizontal padding of the PDF viewer search dialog.
+/// Horizontal padding of the PDF viewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-dialog-padding-x: map.get( $kendo-spacing, 3 ) !default;
-/// Vertical padding of the PDF viewer search dialog.
+$kendo-pdf-viewer-search-panel-padding-x: map.get( $kendo-spacing, 3 ) !default;
+/// Vertical padding of the PDF viewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-dialog-padding-y: $kendo-pdf-viewer-search-dialog-padding-x !default;
-/// Spacing of the PDF viewer search dialog.
+$kendo-pdf-viewer-search-panel-padding-y: $kendo-pdf-viewer-search-panel-padding-x !default;
+/// Spacing of the PDF viewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-dialog-spacing: map.get( $kendo-spacing, 2 ) !default;
-
+$kendo-pdf-viewer-search-panel-spacing: map.get( $kendo-spacing, 2 ) !default;
 /// Border width of the PDF viewer search panel.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-panel-border-width: 1px !default;
@@ -84,7 +83,7 @@ $kendo-pdf-viewer-search-panel-shadow: none !default;
 $kendo-pdf-viewer-search-panel-matches-spacing: var( --kendo-icon-spacing, .5rem ) !default;
 /// Vertical margin of the PDF viewer search panel.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-panel-margin-y: calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-dialog-padding-y} ) ) * -1 ) !default;
+$kendo-pdf-viewer-search-panel-margin-y: calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 ) !default;
 
 /// Line height of the PDF viewer selection.
 /// @group pdf-viewer

@@ -25,6 +25,9 @@ $kendo-pdf-viewer-page-text: $kendo-component-text !default;
 $kendo-pdf-viewer-page-border: $kendo-component-border !default;
 $kendo-pdf-viewer-page-shadow: 0 0 k-math-div( $kendo-pdf-viewer-page-spacing, 2 ) $kendo-pdf-viewer-page-border !default;
 
+$kendo-pdf-viewer-search-panel-padding-x: $kendo-toolbar-md-padding-x !default;
+$kendo-pdf-viewer-search-panel-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-pdf-viewer-search-panel-spacing: $kendo-toolbar-md-spacing !default;
 $kendo-pdf-viewer-search-panel-border-width: 1px !default;
 $kendo-pdf-viewer-search-panel-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-pdf-viewer-search-panel-bg: $kendo-component-bg !default;
@@ -32,10 +35,6 @@ $kendo-pdf-viewer-search-panel-text: $kendo-component-text !default;
 $kendo-pdf-viewer-search-panel-border: $kendo-component-border !default;
 $kendo-pdf-viewer-search-panel-shadow: $kendo-window-shadow !default;
 $kendo-pdf-viewer-search-panel-matches-spacing: $kendo-padding-sm-x !default;
-
-$kendo-pdf-viewer-search-dialog-padding-x: $kendo-toolbar-md-padding-x !default;
-$kendo-pdf-viewer-search-dialog-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
-$kendo-pdf-viewer-search-dialog-spacing: $kendo-toolbar-md-spacing !default;
 
 $kendo-pdf-viewer-selection-line-height: $kendo-line-height-sm !default;
 
