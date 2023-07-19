@@ -27,7 +27,7 @@ export default () =>(
                     <Button fillMode="flat" icon="print"></Button>
                     <Button fillMode="flat" icon="fullscreen"></Button>
                 </Toolbar>
-                <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto">
+                <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto k-enable-text-select">
                     <div className="k-pdf-viewer-pages">
                         <div className="k-page k-blank-page">
                             <Dropzone note={false}/>

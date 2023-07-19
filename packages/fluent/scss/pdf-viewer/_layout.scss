@@ -34,36 +34,33 @@
             background: none;
             overflow: visible;
         }
+    }
 
+    // Canvas
+    .k-pdf-viewer-canvas {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        outline: none;
 
-        // Canvas
-        .k-canvas {
-            display: flex;
-            flex-direction: column;
-            flex: 1 1 auto;
-            outline: none;
+        &.k-enable-text-select {
+            user-select: text;
+            cursor: text;
+        }
 
-            .k-enable-text-select,
-            &.k-enable-text-select {
-                user-select: text;
-                cursor: text;
-            }
+        &.k-enable-panning {
+            cursor: grab;
 
-            .k-enable-panning,
-            &.k-enable-panning {
-                cursor: grab;
-            }
-            .k-enable-panning span::selection,
-            &.k-enable-panning span::selection {
+            span::selection {
                 background-color: transparent;
             }
         }
+    }
 
 
-        // Pages
-        .k-pdf-viewer-pages {
-            flex: 1 1 auto;
-        }
+    // Pages
+    .k-pdf-viewer-pages {
+        flex: 1 1 auto;
 
         .k-page {
             position: relative;
@@ -85,10 +82,6 @@
                     position: absolute;
                     line-height: var( --kendo-pdf-viewer-selection-line-height, #{$kendo-pdf-viewer-selection-line-height} );
                     transform-origin: 0% 0%;
-                    color: transparent;
-                }
-
-                mark {
                     color: transparent;
                 }
 
@@ -115,23 +108,26 @@
                 background: none;
             }
         }
-
     }
+
 
     // Search
-    .k-pdf-viewer-search-dialog {
-        padding: 0 !important; // stylelint-disable-line declaration-no-important
-    }
-
-    .k-search-panel {
-        padding-block: var( --kendo-pdf-viewer-search-dialog-padding-y, #{$kendo-pdf-viewer-search-dialog-padding-y} );
-        padding-inline: var( --kendo-pdf-viewer-search-dialog-padding-x, #{$kendo-pdf-viewer-search-dialog-padding-x} );
+    .k-pdf-viewer-canvas > .k-search-panel {
+        width: max-content;
+        margin-block-start: var( --kendo-pdf-viewer-search-panel-margin-y, #{$kendo-pdf-viewer-search-panel-margin-y} );
+        padding-block: var( --kendo-pdf-viewer-search-panel-padding-y, #{$kendo-pdf-viewer-search-panel-padding-y} );
+        padding-inline: var( --kendo-pdf-viewer-search-panel-padding-x, #{$kendo-pdf-viewer-search-panel-padding-x} );
+        border-width: var( --kendo-pdf-viewer-search-panel-border-width, #{$kendo-pdf-viewer-search-panel-border-width} );
+        border-style: solid;
+        border-radius: var( --kendo-pdf-viewer-search-panel-border-radius, #{$kendo-pdf-viewer-search-panel-border-radius} );
         display: flex;
-        gap: var( --kendo-pdf-viewer-search-dialog-spacing, #{$kendo-pdf-viewer-search-dialog-spacing} );
+        gap: var( --kendo-pdf-viewer-search-panel-spacing, #{$kendo-pdf-viewer-search-panel-spacing} );
         flex-flow: row nowrap;
         flex: 0 0 auto;
         justify-content: flex-start;
         align-items: center;
+        z-index: 10;
+        cursor: default;
 
         .k-search-dialog-draghandle {
             cursor: move;
@@ -151,21 +147,6 @@
             display: inline-flex;
             gap: var( --kendo-pdf-viewer-search-panel-matches-spacing, #{$kendo-pdf-viewer-search-panel-matches-spacing} );
         }
-    }
-
-    .k-pdf-viewer-canvas > .k-search-panel {
-        width: max-content;
-        margin-block-start: var( --kendo-pdf-viewer-search-panel-margin-y, #{$kendo-pdf-viewer-search-panel-margin-y} );
-        border-width: var( --kendo-pdf-viewer-search-panel-border-width, #{$kendo-pdf-viewer-search-panel-border-width} );
-        border-style: solid;
-        border-radius: var( --kendo-pdf-viewer-search-panel-border-radius, #{$kendo-pdf-viewer-search-panel-border-radius} );
-        z-index: 10;
-        cursor: default;
-    }
-
-    // Alias
-    .k-search-container {
-        @extend .k-search-panel !optional;
     }
 
 }
