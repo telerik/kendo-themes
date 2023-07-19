@@ -14,35 +14,35 @@ export default () =>(
             <section>
                 <h4>Horizontal</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border>
-                    <BottomNavItem icon="envelop" text="Normal" />
-                    <BottomNavItem icon="envelop" text="Focused" focus />
-                    <BottomNavItem icon="envelop" text="Selected" selected />
-                    <BottomNavItem icon="envelop" text="Disabled" disabled />
+                    <BottomNavItem icon="envelope" text="Normal" />
+                    <BottomNavItem icon="envelope" text="Focused" focus />
+                    <BottomNavItem icon="envelope" text="Selected" selected />
+                    <BottomNavItem icon="envelope" text="Disabled" disabled />
                 </BottomNav>
 
                 <h4>Vertical</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border flow="vertical">
-                    <BottomNavItem icon="envelop" text="Normal" />
-                    <BottomNavItem icon="envelop" text="Focused" focus />
-                    <BottomNavItem icon="envelop" text="Selected" selected />
-                    <BottomNavItem icon="envelop" text="Disabled" disabled />
+                    <BottomNavItem icon="envelope" text="Normal" />
+                    <BottomNavItem icon="envelope" text="Focused" focus />
+                    <BottomNavItem icon="envelope" text="Selected" selected />
+                    <BottomNavItem icon="envelope" text="Disabled" disabled />
                 </BottomNav>
 
                 <h4>Icons only</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border>
-                    <BottomNavItem icon="envelop" />
-                    <BottomNavItem icon="envelop" focus />
-                    <BottomNavItem icon="envelop" selected />
-                    <BottomNavItem icon="envelop" disabled />
+                    <BottomNavItem icon="envelope" />
+                    <BottomNavItem icon="envelope" focus />
+                    <BottomNavItem icon="envelope" selected />
+                    <BottomNavItem icon="envelope" disabled />
                 </BottomNav>
 
                 <h4>Overflow</h4>
                 <div style={{ width: "360px" }}>
                     <BottomNav fillMode="flat" themeColor="primary" border flow="vertical">
-                        <BottomNavItem icon="envelop" text="Normal" />
-                        <BottomNavItem icon="envelop" text="Focused Long" focus />
-                        <BottomNavItem icon="envelop" text="Selected" selected />
-                        <BottomNavItem icon="envelop" text="Disabled Long Text" disabled />
+                        <BottomNavItem icon="envelope" text="Normal" />
+                        <BottomNavItem icon="envelope" text="Focused Long" focus />
+                        <BottomNavItem icon="envelope" text="Selected" selected />
+                        <BottomNavItem icon="envelope" text="Disabled Long Text" disabled />
                     </BottomNav>
                 </div>
 

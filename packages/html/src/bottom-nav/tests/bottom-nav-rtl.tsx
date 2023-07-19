@@ -15,20 +15,20 @@ export default () =>(
             <section>
                 <h4>Bottom Navigation RTL Horizontal</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border dir="rtl">
-                    <BottomNavItem icon="envelop" text="Normal" />
-                    <BottomNavItem icon="envelop" text="Focused" focus />
-                    <BottomNavItem icon="envelop" text="Selected" selected />
-                    <BottomNavItem icon="envelop" text="Disabled" disabled />
+                    <BottomNavItem icon="envelope" text="Normal" />
+                    <BottomNavItem icon="envelope" text="Focused" focus />
+                    <BottomNavItem icon="envelope" text="Selected" selected />
+                    <BottomNavItem icon="envelope" text="Disabled" disabled />
                 </BottomNav>
             </section>
 
             <section>
                 <h4>Bottom Navigation RTL Vertical</h4>
                 <BottomNav fillMode="flat" themeColor="primary" border flow="vertical" dir="rtl">
-                    <BottomNavItem icon="envelop" text="Normal" />
-                    <BottomNavItem icon="envelop" text="Focused" focus />
-                    <BottomNavItem icon="envelop" text="Selected" selected />
-                    <BottomNavItem icon="envelop" text="Disabled" disabled />
+                    <BottomNavItem icon="envelope" text="Normal" />
+                    <BottomNavItem icon="envelope" text="Focused" focus />
+                    <BottomNavItem icon="envelope" text="Selected" selected />
+                    <BottomNavItem icon="envelope" text="Disabled" disabled />
                 </BottomNav>
             </section>
         </div>

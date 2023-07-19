@@ -1,5 +1,4 @@
-import { Searchbox } from '../../searchbox';
-
+import { Searchbox, SearchboxNormal } from '../../searchbox';
 
 const styles = `
     #test-area {
@@ -15,61 +14,30 @@ export default () =>(
             <span>Searchbox Outline RTL</span>
 
             <div>
-                <Searchbox fillMode="outline" placeholder="Searchbox..." />
+                <SearchboxNormal fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <Searchbox fillMode="outline" placeholder="Searchbox..." />
+                <SearchboxNormal fillMode="outline" placeholder="placeholder..." />
             </div>
+
+            {[ 'normal', ...Searchbox.states ].map((state) => (
+                <>
+                    <div>
+                        <SearchboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <SearchboxNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <Searchbox fillMode="outline" value="Normal" />
+                <SearchboxNormal fillMode="outline" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <Searchbox fillMode="outline" value="Normal" />
+                <SearchboxNormal fillMode="outline" value="invalid focus" invalid focus />
             </div>
-
-            <div>
-                <Searchbox fillMode="outline" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="outline" value="Hover" hover />
-            </div>
-
-            <div>
-                <Searchbox fillMode="outline" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="outline" value="Focus" focus />
-            </div>
-
-            <div>
-                <Searchbox fillMode="outline" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="outline" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <Searchbox fillMode="outline" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="outline" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <Searchbox fillMode="outline" value="Invalid focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="outline" value="Invalid focus" invalid focus />
-            </div>
-
-            <div>
-                <Searchbox fillMode="outline" value="Loading" loading />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="outline" value="Loading" loading />
-            </div>
-
         </div>
     </>
 );

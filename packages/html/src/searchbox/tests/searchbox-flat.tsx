@@ -1,5 +1,4 @@
-import { Searchbox } from '../../searchbox';
-
+import { Searchbox, SearchboxNormal } from '../../searchbox';
 
 const styles = `
     #test-area {
@@ -15,61 +14,30 @@ export default () =>(
             <span>Searchbox Flat RTL</span>
 
             <div>
-                <Searchbox fillMode="flat" placeholder="Searchbox..." />
+                <SearchboxNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <Searchbox fillMode="flat" placeholder="Searchbox..." />
+                <SearchboxNormal fillMode="flat" placeholder="placeholder..." />
             </div>
+
+            {[ 'normal', ...Searchbox.states ].map((state) => (
+                <>
+                    <div>
+                        <SearchboxNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <SearchboxNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <Searchbox fillMode="flat" value="Normal" />
+                <SearchboxNormal fillMode="flat" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <Searchbox fillMode="flat" value="Normal" />
+                <SearchboxNormal fillMode="flat" value="invalid focus" invalid focus />
             </div>
-
-            <div>
-                <Searchbox fillMode="flat" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="flat" value="Hover" hover />
-            </div>
-
-            <div>
-                <Searchbox fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <Searchbox fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <Searchbox fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <Searchbox fillMode="flat" value="Invalid focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="flat" value="Invalid focus" invalid focus />
-            </div>
-
-            <div>
-                <Searchbox fillMode="flat" value="Loading" loading />
-            </div>
-            <div dir="rtl">
-                <Searchbox fillMode="flat" value="Loading" loading />
-            </div>
-
         </div>
     </>
 );
