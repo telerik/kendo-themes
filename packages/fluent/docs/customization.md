@@ -19938,7 +19938,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pivotgrid-icon-spacing</td>
     <td></td>
-    <td><code>var( --kendo-icon-spacing, .5rem )</code></td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
     <td></td>
 </tr>
 <tr>
