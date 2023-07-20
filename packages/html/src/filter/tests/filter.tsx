@@ -5,186 +5,154 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Toolbar, ToolbarItem } from '../../toolbar';
+import { Filter, FilterToolbar, FilterLines, FilterPreview, FilterItem } from '../../filter';
 
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <div id="filter" className="k-widget k-filter">
-                <ul className="k-filter-container">
-                    <li className="k-filter-group-main">
-                        <div className="k-filter-toolbar">
-                            <Toolbar focus>
-                                <ToolbarItem className="k-filter-toolbar-item">
-                                    <ButtonGroup>
-                                        <Button selected>And</Button>
-                                        <Button>Or</Button>
-                                    </ButtonGroup>
+            <Filter>
+                <FilterToolbar>
+                    <Toolbar focus>
+                        <ButtonGroup>
+                            <Button selected>And</Button>
+                            <Button>Or</Button>
+                        </ButtonGroup>
+                        <Button icon="filter-add-expression">Add Expression</Button>
+                        <Button icon="filter-add-group">Add Group</Button>
+                        <Button fillMode="flat" icon="x"></Button>
+                    </Toolbar>
+                </FilterToolbar>
+                <FilterLines>
+                    <FilterItem>
+                        <FilterToolbar>
+                            <Toolbar>
+                                <ToolbarItem className="k-filter-field">
+                                    <DropdownList value="Name" />
                                 </ToolbarItem>
-                                <ToolbarItem className="k-filter-toolbar-item">
-                                    <Button icon="filter-add-expression">Add Expression</Button>
+                                <ToolbarItem className="k-filter-operator" focus={true}>
+                                    <DropdownList value="Is equal to" />
                                 </ToolbarItem>
-                                <ToolbarItem className="k-filter-toolbar-item">
-                                    <Button icon="filter-add-group">Add Group</Button>
+                                <ToolbarItem className="k-filter-value">
+                                    <Textbox placeholder="James"/>
                                 </ToolbarItem>
-                                <ToolbarItem className="k-filter-toolbar-item">
-                                    <Button fillMode="flat" icon="x"></Button>
-                                </ToolbarItem>
+                                <Button fillMode="flat" icon="x"></Button>
                             </Toolbar>
-                        </div>
-                        <ul className="k-filter-lines">
-                            <li className="k-filter-item">
-                                <div className="k-filter-toolbar">
+                        </FilterToolbar>
+                    </FilterItem>
+                    <FilterItem>
+                        <FilterToolbar>
+                            <Toolbar>
+                                <ToolbarItem className="k-filter-field">
+                                    <DropdownList value="Price" />
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-operator">
+                                    <DropdownList value="Is greater than" />
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-value">
+                                    <NumericTextbox placeholder="100,00"/>
+                                </ToolbarItem>
+                                <Button fillMode="flat" icon="x"></Button>
+                            </Toolbar>
+                        </FilterToolbar>
+                    </FilterItem>
+                    <FilterItem>
+                        <FilterToolbar>
+                            <Toolbar focus>
+                                <ToolbarItem className="k-filter-field">
+                                    <DropdownList value="Discontinued" />
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-operator">
+                                    <DropdownList value="Is equal to" />
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-value">
+                                    <DropdownList value="False"/>
+                                </ToolbarItem>
+                                <Button fillMode="flat" icon="x"></Button>
+                            </Toolbar>
+                        </FilterToolbar>
+                    </FilterItem>
+                    <FilterItem>
+                        <FilterToolbar>
+                            <Toolbar>
+                                <ToolbarItem className="k-filter-field">
+                                    <DropdownList value="First Ordered" />
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-operator">
+                                    <DropdownList value="Is before" />
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-value">
+                                    <DatePicker placeholder="1/21/2021" />
+                                </ToolbarItem>
+                                <Button fillMode="flat" icon="x"></Button>
+                            </Toolbar>
+                        </FilterToolbar>
+                    </FilterItem>
+                    <FilterItem>
+                        <FilterToolbar>
+                            <Toolbar>
+                                <ButtonGroup>
+                                    <Button selected>And</Button>
+                                    <Button>Or</Button>
+                                </ButtonGroup>
+                                <Button icon="filter-add-expression">Add Expression</Button>
+                                <Button icon="filter-add-group">Add Group</Button>
+                                <Button fillMode="flat" icon="x"></Button>
+                            </Toolbar>
+                        </FilterToolbar>
+                        <FilterLines>
+                            <FilterItem>
+                                <FilterToolbar>
                                     <Toolbar>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-field">
+                                        <ToolbarItem className="k-filter-field">
                                             <DropdownList value="Name" />
                                         </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-operator" focus={true}>
-                                            <DropdownList value="Is equal to" />
+                                        <ToolbarItem className="k-filter-operator">
+                                            <DropdownList value="Is empty" />
                                         </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-value">
-                                            <Textbox placeholder="James"/>
-                                        </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item">
-                                            <Button fillMode="flat" icon="x"></Button>
-                                        </ToolbarItem>
+                                        <Button fillMode="flat" icon="x"></Button>
                                     </Toolbar>
-                                </div>
-                            </li>
-                            <li className="k-filter-item">
-                                <div className="k-filter-toolbar">
+                                </FilterToolbar>
+                            </FilterItem>
+                            <FilterItem>
+                                <FilterToolbar>
                                     <Toolbar>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-field">
+                                        <ToolbarItem className="k-filter-field">
                                             <DropdownList value="Price" />
                                         </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-operator">
-                                            <DropdownList value="Is greater than" />
+                                        <ToolbarItem className=" k-filter-operator">
+                                            <DropdownList value="Is not null" />
                                         </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-value">
-                                            <NumericTextbox placeholder="100,00"/>
-                                        </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item">
-                                            <Button fillMode="flat" icon="x"></Button>
-                                        </ToolbarItem>
+                                        <Button fillMode="flat" icon="x"></Button>
                                     </Toolbar>
-                                </div>
-                            </li>
-                            <li className="k-filter-item">
-                                <div className="k-filter-toolbar">
-                                    <Toolbar focus>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-field">
-                                            <DropdownList value="Discontinued" />
-                                        </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-operator">
-                                            <DropdownList value="Is equal to" />
-                                        </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-value">
-                                            <DropdownList value="False"/>
-                                        </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item">
-                                            <Button fillMode="flat" icon="x"></Button>
-                                        </ToolbarItem>
-                                    </Toolbar>
-                                </div>
-                            </li>
-                            <li className="k-filter-item">
-                                <div className="k-filter-toolbar">
-                                    <Toolbar>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-field">
-                                            <DropdownList value="First Ordered" />
-                                        </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item">
-                                            <div className="k-filter-operator">
-                                                <DropdownList value="Is before" />
-                                            </div>
-                                        </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item k-filter-value">
-                                            <DatePicker placeholder="1/21/2021" />
-                                        </ToolbarItem>
-                                        <ToolbarItem className="k-filter-toolbar-item">
-                                            <Button fillMode="flat" icon="x"></Button>
-                                        </ToolbarItem>
-                                    </Toolbar>
-                                </div>
-                                <li className="k-filter-item">
-                                    <div className="k-filter-toolbar">
-                                        <Toolbar>
-                                            <ToolbarItem className="k-filter-toolbar-item">
-                                                <ButtonGroup>
-                                                    <Button selected>And</Button>
-                                                    <Button>Or</Button>
-                                                </ButtonGroup>
-                                            </ToolbarItem>
-                                            <ToolbarItem className="k-filter-toolbar-item">
-                                                <Button icon="filter-add-expression">Add Expression</Button>
-                                            </ToolbarItem>
-                                            <ToolbarItem className="k-filter-toolbar-item">
-                                                <Button icon="filter-add-group">Add Group</Button>
-                                            </ToolbarItem>
-                                            <ToolbarItem className="k-filter-toolbar-item">
-                                                <Button fillMode="flat" icon="x"></Button>
-                                            </ToolbarItem>
-                                        </Toolbar>
-                                    </div>
-                                    <ul className="k-filter-lines">
-                                        <li className="k-filter-item">
-                                            <div className="k-filter-toolbar">
-                                                <Toolbar>
-                                                    <ToolbarItem className="k-filter-toolbar-item k-filter-field">
-                                                        <DropdownList value="Name" />
-                                                    </ToolbarItem>
-                                                    <ToolbarItem className="k-filter-toolbar-item k-filter-operator">
-                                                        <DropdownList value="Is empty" />
-                                                    </ToolbarItem>
-                                                    <ToolbarItem className="k-filter-toolbar-item">
-                                                        <Button fillMode="flat" icon="x"></Button>
-                                                    </ToolbarItem>
-                                                </Toolbar>
-                                            </div>
-                                        </li>
-                                        <li className="k-filter-item">
-                                            <div className="k-filter-toolbar">
-                                                <Toolbar>
-                                                    <ToolbarItem className="k-filter-toolbar-item k-filter-field">
-                                                        <DropdownList value="Price" />
-                                                    </ToolbarItem>
-                                                    <ToolbarItem className="k-filter-toolbar-item k-filter-operator">
-                                                        <DropdownList value="Is not null" />
-                                                    </ToolbarItem>
-                                                    <ToolbarItem className="k-filter-toolbar-item">
-                                                        <Button fillMode="flat" icon="x"></Button>
-                                                    </ToolbarItem>
-                                                </Toolbar>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div className="k-filter-preview">
-                    <span className="k-filter-preview-bracket">(</span>
-                    <span className="k-filter-preview-field">Discontinued</span>
-                    <span className="k-filter-preview-criteria"> Is equal to </span>
-                    <span className="k-filter-preview-value">&apos;False&apos;</span>
-                    <span className="k-filter-preview-operator"> AND </span>
-                    <span className="k-filter-preview-field">Price</span>
-                    <span className="k-filter-preview-criteria"> Is greater than </span>
-                    <span className="k-filter-preview-value">&apos;100,00&apos;</span>
-                    <span className="k-filter-preview-operator"> AND </span>
-                    <span className="k-filter-preview-bracket">(</span>
-                    <span className="k-filter-preview-bracket">(</span>
-                    <span className="k-filter-preview-field">FirstOrdered</span>
-                    <span className="k-filter-preview-criteria"> Is before </span>
-                    <span className="k-filter-preview-value">&apos;Thursday Jan 21 2021&apos;</span>
-                    <span className="k-filter-preview-bracket">)</span>
-                    <span className="k-filter-preview-bracket">)</span>
-                    <span className="k-filter-preview-bracket">)</span>
-                </div>
-                <Button className="k-filter-apply">Apply</Button>
-            </div>
+                                </FilterToolbar>
+                            </FilterItem>
+                        </FilterLines>
+                    </FilterItem>
+                </FilterLines>
+                <FilterPreview
+                    fields={[
+                        { name: "bracket", value: "(" },
+                        { name: "field", value: "Discontinued" },
+                        { name: "criteria", value: "Is equal to" },
+                        { name: "value", value: "'False'" },
+                        { name: "operator", value: "AND" },
+                        { name: "field", value: "Price" },
+                        { name: "criteria", value: "Is greater than" },
+                        { name: "value", value: "'100,00'" },
+                        { name: "operator", value: "AND" },
+                        { name: "bracket", value: "(" },
+                        { name: "bracket", value: "(" },
+                        { name: "field", value: "FirstOrdered" },
+                        { name: "criteria", value: "Is before" },
+                        { name: "value", value: "'Thursday Jan 21 2021'" },
+                        { name: "bracket", value: ")" },
+                        { name: "bracket", value: ")" },
+                        { name: "bracket", value: ")" },
+                    ]}>
+                </FilterPreview>
+            </Filter>
         </div>
     </>
 );
