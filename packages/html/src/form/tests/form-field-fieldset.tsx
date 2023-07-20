@@ -19,7 +19,7 @@ export default () =>(
             <span>Horizontal Form</span>
 
             <section>
-                <Form orientation="vertical">
+                <Form>
 
                     <Fieldset legend="Please fill in the fields:">
                         <FormField label="First Name:" editor={ <Textbox /> }></FormField>
