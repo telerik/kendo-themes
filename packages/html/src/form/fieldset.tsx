@@ -4,6 +4,10 @@ export const FIELDSET_CLASSNAME = 'k-form-fieldset';
 
 export type KendoFieldsetProps = {
     legend?: null | string;
+    layout?: null | string;
+    cols?: number;
+    gapX?: number;
+    gapY?: number;
 };
 
 export const Fieldset = (
@@ -12,12 +16,30 @@ export const Fieldset = (
 ) => {
     const {
         legend,
+        layout,
+        cols,
+        gapX,
+        gapY
     } = props;
 
     return (
         <fieldset className={classNames(FIELDSET_CLASSNAME)}>
             { legend && <legend className="k-form-legend">{legend}</legend> }
-            {props.children}
+            { layout === 'grid' ?
+                <div className={classNames(
+                    'k-form-layout',
+                    'k-d-grid',
+                    {
+                        [`k-grid-cols-${cols}`]: cols,
+                        [`k-gap-x-${gapX}`]: gapX,
+                        [`k-gap-y-${gapY}`]: gapY
+                    }
+                )}>
+                    {props.children}
+                </div>
+                :
+                <>{props.children}</>
+            }
         </fieldset>
     );
 };

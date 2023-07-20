@@ -22,12 +22,12 @@
 
         .k-filter-container,
         .k-filter-preview {
-            margin-bottom: $kendo-filter-bottom-margin;
+            margin-block-end: $kendo-filter-bottom-margin;
         }
 
         .k-filter-lines,
         .k-filter-item {
-            padding-left: $kendo-filter-padding-x;
+            padding-inline-start: $kendo-filter-padding-x;
         }
 
         .k-filter-toolbar {
@@ -41,8 +41,8 @@
                 position: absolute;
                 width: $kendo-filter-padding-x;
                 height: $kendo-filter-line-size;
-                top: 50%;
-                left: -$kendo-filter-padding-x;
+                inset-block-start: 50%;
+                inset-inline-start: -$kendo-filter-padding-x;
             }
 
             .k-toolbar {
@@ -61,8 +61,8 @@
                 position: absolute;
                 width: $kendo-filter-line-size;
                 height: 100%;
-                top: -$kendo-filter-padding-y;
-                left: 0;
+                inset-block-start: -$kendo-filter-padding-y;
+                inset-inline-start: 0;
             }
         }
 
@@ -72,9 +72,9 @@
             content: "";
             position: absolute;
             width: $kendo-filter-line-size;
-            top: calc(-#{$kendo-filter-padding-y} - #{$kendo-filter-line-size});
-            bottom: 50%;
-            left: -$kendo-filter-padding-x;
+            inset-block-start: calc(-#{$kendo-filter-padding-y} - #{$kendo-filter-line-size});
+            inset-block-end: 50%;
+            inset-inline-start: -$kendo-filter-padding-x;
         }
 
         // The forth and fifth selectors targets the Angular rendering
@@ -85,39 +85,6 @@
         .k-filter-group-main > * > .k-filter-toolbar::after,
         .k-filter-lines .k-filter-item:last-child::before {
             display: none;
-        }
-
-        .k-rtl &,
-        &[dir="rtl"],
-        [dir="rtl"] & {
-            .k-filter-lines,
-            .k-filter-item {
-                padding-left: 0;
-                padding-right: $kendo-filter-padding-x;
-            }
-
-            .k-filter-toolbar {
-
-                &::before {
-                    left: auto;
-                    right: -$kendo-filter-padding-x;
-                }
-            }
-
-            .k-filter-item {
-
-                &::before {
-                    left: auto;
-                    right: 0;
-                }
-            }
-
-            // The second selector targets the Angular rendering
-            .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
-            .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
-                left: auto;
-                right: -$kendo-filter-padding-x;
-            }
         }
     }
 

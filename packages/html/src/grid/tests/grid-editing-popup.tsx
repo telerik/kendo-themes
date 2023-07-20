@@ -30,7 +30,7 @@ export default () =>(
                         <Button icon="cancel">Cancel</Button>
                     </>
                 }>
-                    <Form tag="div" orientation="vertical">
+                    <Form tag="div">
                         <FormField className="k-form-field-error" label="Text data field label" error="Error" editor={ <Textbox value="Invalid" invalid showClearButton /> } />
                         <FormField label="Date data field label" editor={ <DatePicker placeholder="dd/MM/yyyy" /> } />
                         <FormField label="Numeric data field label" editor={ <NumericTextbox placeholder="##,###" /> } />
