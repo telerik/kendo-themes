@@ -27752,6 +27752,26 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-tile-layout-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TileLayout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tile-layout-padding-y</td>
+    <td></td>
+    <td><code>$kendo-tile-layout-padding-x</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TileLayout</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tile-layout-hint-border-width</td>
     <td></td>
     <td><code>1px</code></td>
