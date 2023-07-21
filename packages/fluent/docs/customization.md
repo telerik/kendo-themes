@@ -12550,16 +12550,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-cell-placeholder-width</td>
-    <td></td>
-    <td><code>80%</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the grid cell placeholder.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-sort-index-font-size</td>
     <td></td>
     <td><code>var( --kendo-font-size-sm, inherit )</code></td>
