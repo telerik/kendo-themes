@@ -1,7 +1,0 @@
-@mixin k-css-vars($map) {
-    @each $group, $values in $map {
-        @each $key, $value in $values {
-            --kendo-#{k-meta-inspect($group)}-#{$key}: #{$value};
-        }
-    }
-}

@@ -27,18 +27,19 @@
 
     }
 
-    @each $theme-color, $color-props in $kendo-theme-colors {
+    // TODO!
+    // @each $theme-color, $color-props in $kendo-fluent-theme-colors {
 
-        $_text: currentColor;
-        $_bg: map.get( $color-props, bg );
-        $_border: map.get( $color-props, border );
+//         $_text: currentColor;
+//         $_bg: map.get( $color-props, bg );
+//         $_border: map.get( $color-props, border );
 
-        .k-messagebox-#{$theme-color} {
-            --kendo-messagebox-text: var( --kendo-messagebox-#{$theme-color}-text, #{$_text} );
-            --kendo-messagebox-bg: var( --kendo-messagebox-#{$theme-color}-bg, #{$_bg} );
-            --kendo-messagebox-border: var( --kendo-messagebox-#{$theme-color}-border, #{$_border} );
-        }
+//         .k-messagebox-#{$theme-color} {
+            // --kendo-messagebox-text: var( --kendo-messagebox-#{$theme-color}-text, #{$_text} );
+            // --kendo-messagebox-bg: var( --kendo-messagebox-#{$theme-color}-bg, #{$_bg} );
+            // --kendo-messagebox-border: var( --kendo-messagebox-#{$theme-color}-border, #{$_border} );
+//         }
 
-    }
+    // }
 
 }

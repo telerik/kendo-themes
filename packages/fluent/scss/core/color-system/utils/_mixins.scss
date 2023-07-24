@@ -1,9 +1,0 @@
-@use "sass:meta";
-
-@mixin css-vars($map) {
-    @each $group, $values in $map {
-        @each $key, $value in $values {
-            --kendo-#{meta.inspect($group)}-#{$key}: #{$value};
-        }
-    }
-}
