@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.1-dev.0...v6.7.0-dev.0) (2023-07-24)
+
+
+### Features
+
+* **breadcrumb:** add sizes ([f4b9aa2](https://github.com/telerik/kendo-themes/commit/f4b9aa2e4cc5a7bd8b86c0664b3380606b2ad9aa))
+
+
+
+
+
 ## [6.6.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.0...v6.6.1-dev.0) (2023-07-17)
 
 **Note:** Version bump only for package @progress/kendo-theme-default
