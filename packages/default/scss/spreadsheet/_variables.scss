@@ -35,7 +35,7 @@ $kendo-spreadsheet-drawing-handle-border-radius: $kendo-border-radius-lg !defaul
 $kendo-spreadsheet-drawing-outline-style: solid !default;
 $kendo-spreadsheet-drawing-outline-width: 2px !default;
 
-$kendo-spreadsheet-drawing-anchor-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-spreadsheet-drawing-anchor-bg: if($kendo-new-colors, rgba( $_kendo-color-primary-rgb, .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 
 $kendo-spreadsheet-dropzone-spacing-y: k-map-get( $kendo-spacing, 4 ) !default;
 

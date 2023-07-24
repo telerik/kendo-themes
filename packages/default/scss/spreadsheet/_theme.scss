@@ -60,11 +60,11 @@
     .k-spreadsheet .k-selection-full,
     .k-spreadsheet .k-selection-partial {
         // TODO: consider extracting variables
-        background-color: rgba( $kendo-selected-bg, .25 );
+        background-color: if($kendo-new-colors, rgba( $_kendo-color-primary-rgb, .25 ), rgba( $kendo-selected-bg, .25 ));
     }
     .k-spreadsheet-selection {
         border-color: $kendo-selected-bg;
-        background-color: rgba( $kendo-selected-bg, .25 );
+        background-color: if($kendo-new-colors, rgba( $_kendo-color-primary-rgb, .25 ), rgba( $kendo-selected-bg, .25 ));
         box-shadow: inset 0 0 0 1px $kendo-selected-bg;
     }
     .k-spreadsheet .k-single-selection::after {
@@ -90,7 +90,7 @@
 
     .k-spreadsheet .k-auto-fill {
         border-color: $kendo-selected-bg;
-        background-color: rgba( $kendo-selected-bg, .25 );
+        background-color: if($kendo-new-colors, rgba( $_kendo-color-primary-rgb, .25 ), rgba( $kendo-selected-bg, .25 ));
         box-shadow: inset 0 0 0 1px $kendo-selected-bg;
     }
     .k-spreadsheet .k-auto-fill-punch {

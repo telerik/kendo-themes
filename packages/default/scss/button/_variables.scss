@@ -142,7 +142,7 @@ $kendo-button-hover-shadow: null !default;
 
 /// The base background color of the active Button.
 /// @group button
-$kendo-button-active-bg: if($kendo-new-colors, k-try-shade( $kendo-button-bg, 1.5 ), $kendo-color-base-active) !default;
+$kendo-button-active-bg: if($kendo-new-colors, $kendo-color-base-active, k-try-shade( $kendo-button-bg, 1.5 )) !default;
 /// The base text color of the active Button.
 /// @group button
 $kendo-button-active-text: null !default;

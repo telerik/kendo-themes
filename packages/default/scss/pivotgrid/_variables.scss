@@ -36,7 +36,7 @@ $kendo-pivotgrid-hover-bg: k-color-darken($kendo-pivotgrid-bg, 7%) !default;
 $kendo-pivotgrid-hover-text: null !default;
 $kendo-pivotgrid-hover-border: null !default;
 
-$kendo-pivotgrid-selected-bg: rgba($kendo-selected-bg, .25) !default;
+$kendo-pivotgrid-selected-bg: if($kendo-new-colors, rgba( $_kendo-color-primary-rgb, .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 $kendo-pivotgrid-selected-text: null !default;
 $kendo-pivotgrid-selected-border: null !default;
 
