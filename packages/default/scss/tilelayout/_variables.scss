@@ -7,6 +7,14 @@ $kendo-tile-layout-border-width: 0px !default;
 /// @group tilelayout
 $kendo-tile-layout-bg: $kendo-base-bg !default;
 
+/// The horizontal padding of the TileLayout.
+/// @group tilelayout
+$kendo-tile-layout-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+
+/// The vertical padding of the TileLayout
+/// @group tilelayout
+$kendo-tile-layout-padding-y: $kendo-tile-layout-padding-x !default;
+
 /// The width of the border around the TileLayout card.
 /// @group tilelayout
 $kendo-tile-layout-card-border-width: $kendo-card-border-width !default;

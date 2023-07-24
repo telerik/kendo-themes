@@ -12550,16 +12550,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-cell-placeholder-width</td>
-    <td></td>
-    <td><code>80%</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the grid cell placeholder.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-sort-index-font-size</td>
     <td></td>
     <td><code>var( --kendo-font-size-sm, inherit )</code></td>
@@ -18902,16 +18892,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Pager.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-pager-section-spacing</td>
-    <td></td>
-    <td><code>1em</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the Pager sections.</div></div>
     </td>
 </tr>
 <tr>
@@ -27749,6 +27729,26 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the TileLayout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tile-layout-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 4 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TileLayout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tile-layout-padding-y</td>
+    <td></td>
+    <td><code>$kendo-tile-layout-padding-x</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TileLayout</div></div>
     </td>
 </tr>
 <tr>
