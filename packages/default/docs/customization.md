@@ -13296,6 +13296,26 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-tile-layout-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the TileLayout.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-tile-layout-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-tile-layout-padding-x</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the TileLayout</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tile-layout-card-border-width</td>
     <td>Number</td>
     <td><code>$kendo-card-border-width</code></td>
