@@ -1,6 +1,6 @@
 @import "./_palettes.scss";
 
-$kendo-new-colors: false;
+$kendo-new-colors: true;
 
 // TODO: re-evaluate!
 $kendo-color-white: #ffffff;
@@ -11,6 +11,7 @@ $kendo-disabled-text: #8f8f8f !default;
 
 $kendo-color-primary: #ff6358 !default;
 $kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
+$kendo-color-primary-text-contrast: k-contrast-legacy($kendo-color-primary-text) !default;
 $kendo-color-primary-hover: k-try-shade($kendo-color-primary, 0.5) !default;
 $kendo-color-primary-active: k-try-shade($kendo-color-primary, 1.5) !default;
 $kendo-color-primary-selected: $kendo-color-primary !default;
