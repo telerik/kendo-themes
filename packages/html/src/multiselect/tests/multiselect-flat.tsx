@@ -1,6 +1,5 @@
 import { Chip, ChipAction } from '../../chip';
-import { MultiSelect } from '../../multiselect';
-
+import { MultiSelect, MultiSelectNormal, MultiSelectArrowButton, MultiSelectValue } from '../../multiselect';
 
 const styles = `
     #test-area {
@@ -17,155 +16,60 @@ export default () =>(
             <span>MultiSelect Flat</span>
             <span>MultiSelect Flat RTL</span>
 
-            <div>Empty</div>
+            <div>placeholder</div>
             <div>
-                <MultiSelect fillMode="flat" placeholder="MultiSelect..." />
+                <MultiSelectNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <MultiSelect fillMode="flat" placeholder="MultiSelect..." />
+                <MultiSelectNormal fillMode="flat" placeholder="placeholder..." />
             </div>
 
-            <div>Arrow button</div>
+            <div>arrow button</div>
             <div>
-                <MultiSelect fillMode="flat" showArrowButton placeholder="MultiSelect with arrow button" />
+                <MultiSelectArrowButton fillMode="flat" placeholder="multiSelect with arrow button" />
             </div>
             <div dir="rtl">
-                <MultiSelect fillMode="flat" showArrowButton placeholder="MultiSelect with arrow button" />
+                <MultiSelectArrowButton fillMode="flat" placeholder="multiSelect with arrow button" />
             </div>
 
-            <div>Normal</div>
+            {[ 'normal', ...MultiSelect.states ].map((state) => (
+                <>
+                    <div>{ state }</div>
+                    <div>
+                        <MultiSelectValue { ...{ [state]: true }} fillMode="flat">{state}</MultiSelectValue>
+                    </div>
+
+                    <div dir="rtl">
+                        <MultiSelectValue { ...{ [state]: true }} fillMode="flat">{state}</MultiSelectValue>
+                    </div>
+                </>
+            ))}
+
+            <div>invalid + focus</div>
             <div>
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Normal" actions={ <ChipAction type="remove"/> } />
-                    )}
-                />
+                <MultiSelectValue fillMode="flat" invalid focus>invalid + focus</MultiSelectValue>
             </div>
             <div dir="rtl">
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Normal" actions={ <ChipAction type="remove"/> } />
-                    )}
-                />
+                <MultiSelectValue fillMode="flat" invalid focus>invalid + focus</MultiSelectValue>
             </div>
 
-            <div>Hover</div>
+            <div>multi line + overflow</div>
             <div>
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Hover" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    hover
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Hover" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    hover
-                />
-            </div>
-
-            <div>Focus</div>
-            <div>
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Focus" focus actions={ <ChipAction type="remove"/> } />
-                    )}
-                    focus
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Focus" focus actions={ <ChipAction type="remove"/> } />
-                    )}
-                    focus
-                />
-            </div>
-
-            <div>Disabled</div>
-            <div>
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Disabled" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    disabled
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Disabled" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    disabled
-                />
-            </div>
-
-            <div>Invalid</div>
-            <div>
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Invalid" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Invalid" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                />
-            </div>
-
-            <div>Invalid + Focus</div>
-            <div>
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Invalid + Focus" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                    focus
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="flat"
-                    tags={(
-                        <Chip text="Invalid + Focus" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                    focus
-                />
-            </div>
-
-            <div>Loading</div>
-            <div>
-                <MultiSelect fillMode="flat" placeholder="Loading..." loading/>
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="flat" placeholder="Loading..." loading />
-            </div>
-
-            <div>Multi Line + Overflow</div>
-            <div>
-                <MultiSelect fillMode="flat"
+                <MultiSelectNormal fillMode="flat"
                     tags={(
                         <>
-                            <Chip text="Multi-line" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="Multi-line + Overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line + overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
                         </>
                     )}
                 />
             </div>
             <div dir="rtl">
-                <MultiSelect fillMode="flat"
+                <MultiSelectNormal fillMode="flat"
                     tags={(
                         <>
-                            <Chip text="Multi-line" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="Multi-line + Overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line + overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
                         </>
                     )}
                 />

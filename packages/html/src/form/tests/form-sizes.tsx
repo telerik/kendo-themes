@@ -1,7 +1,7 @@
 import { DropdownList } from '../../dropdownlist';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { Form, FormField, Fieldset } from '../../form';
 
 
 const styles = { border: '1px solid grey', padding: '10px' };
@@ -15,48 +15,54 @@ export default () =>(
                 <section style={styles}>
                     <div><strong>sm</strong></div>
                     <br />
-                    <Form size="small" layout="grid" cols={2} legend="Shipping Address" gapX={2}
+                    <Form size="small"
                         formButtons={
                             <>
                                 <Button className="k-form-submit" themeColor="primary" size="small">Submit</Button>
                                 <Button className="k-form-clear" size="small">Clear</Button>
                             </>
                         }>
-                        <FormField className="k-col-span-1" label="Country" editor={ <DropdownList value="France" size="small"/> } />
-                        <FormField className="k-col-span-1" label="City" editor={ <Textbox size="small"/> } />
-                        <FormField className="k-col-span-2 k-form-field-error" label="Address Line" error="Address Line is required" editor={ <Textbox size="small"/> } />
+                        <Fieldset legend="Shipping Address" layout="grid" cols={2} gapX={2} >
+                            <FormField colSpan="1" label="Country" editor={ <DropdownList value="France" size="small"/> } />
+                            <FormField colSpan="1" label="City" editor={ <Textbox size="small"/> } />
+                            <FormField colSpan="2" className="k-form-field-error" label="Address Line" error="Address Line is required" editor={ <Textbox size="small"/> } />
+                        </Fieldset>
                     </Form>
                 </section>
 
                 <section style={styles}>
                     <div><strong>md</strong></div>
                     <br />
-                    <Form size="medium" layout="grid" cols={2} legend="Shipping Address" gapX={2}
+                    <Form size="medium"
                         formButtons={
                             <>
                                 <Button className="k-form-submit" themeColor="primary" size="medium">Submit</Button>
                                 <Button className="k-form-clear" size="medium">Clear</Button>
                             </>
                         }>
-                        <FormField className="k-col-span-1" label="Country" editor={ <DropdownList value="France" size="medium"/> } />
-                        <FormField className="k-col-span-1" label="City" editor={ <Textbox size="medium"/> } />
-                        <FormField className="k-col-span-2 k-form-field-error" label="Address Line" error="Address Line is required" editor={ <Textbox size="medium"/> } />
+                        <Fieldset legend="Shipping Address" layout="grid" cols={2} gapX={2} >
+                            <FormField colSpan="1" label="Country" editor={ <DropdownList value="France" size="medium"/> } />
+                            <FormField colSpan="1" label="City" editor={ <Textbox size="medium"/> } />
+                            <FormField colSpan="2" className="k-form-field-error" label="Address Line" error="Address Line is required" editor={ <Textbox size="medium"/> } />
+                        </Fieldset>
                     </Form>
                 </section>
 
                 <section style={styles}>
                     <div><strong>lg</strong></div>
                     <br />
-                    <Form size="large" layout="grid" cols={2} legend="Shipping Address" gapX={2}
+                    <Form size="large"
                         formButtons={
                             <>
                                 <Button className="k-form-submit" themeColor="primary" size="large">Submit</Button>
                                 <Button className="k-form-clear" size="large">Clear</Button>
                             </>
                         }>
-                        <FormField className="k-col-span-1" label="Country" editor={ <DropdownList value="France" size="large"/> } />
-                        <FormField className="k-col-span-1" label="City" editor={ <Textbox size="large"/> } />
-                        <FormField className="k-col-span-2 k-form-field-error" label="Address Line" error="Address Line is required" editor={ <Textbox size="large"/> } />
+                        <Fieldset legend="Shipping Address" layout="grid" cols={2} gapX={2} >
+                            <FormField colSpan="1" label="Country" editor={ <DropdownList value="France" size="large"/> } />
+                            <FormField colSpan="1" label="City" editor={ <Textbox size="large"/> } />
+                            <FormField colSpan="2" className="k-form-field-error" label="Address Line" error="Address Line is required" editor={ <Textbox size="large"/> } />
+                        </Fieldset>
                     </Form>
                 </section>
             </div>

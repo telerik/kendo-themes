@@ -11,6 +11,8 @@ import {
 import { Button } from '../button';
 import { ChipList } from '../chip';
 import { Popup } from '../popup';
+import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
+import { List, ListItem } from '../list';
 
 export const MULTISELECT_CLASSNAME = `k-multiselect`;
 
@@ -53,6 +55,8 @@ export type KendoMultiSelectProps = KendoMultiSelectOptions & {
     popup?: JSX.Element;
     showArrowButton?: boolean;
     opened?: boolean;
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
 };
 
 export type KendoMultiSelectState = { [K in (typeof states)[number]]?: boolean };
@@ -82,6 +86,8 @@ export const MultiSelect = (
         disabled,
         readonly,
         opened,
+        adaptive,
+        adaptiveSettings,
         ...other
     } = props;
 
@@ -140,6 +146,22 @@ export const MultiSelect = (
                 <Popup className="k-list-container k-multiselect-popup">
                     {popup}
                 </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        filter={true}
+                        title="Select Item">
+                    </ActionSheetHeader>
+                    <div className="k-list-container">
+                        <List size="large">
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                            <ListItem text="List item" />
+                        </List>
+                    </div>
+                </ActionSheet>
             }
         </>
     );

@@ -9,21 +9,29 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area">
-        <div id="tilelayout" class="k-widget k-tilelayout" style="grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 16px; padding: 16px;">
+        <div class="k-tilelayout" style="grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 16px;">
             <div class="k-tilelayout-item k-resize-x k-card">
-                <div class="k-tilelayout-item-header k-card-header">Card Title</div>
+                <div class="k-tilelayout-item-header k-cursor-move k-card-header">
+                    <div class="k-card-title">Card Title</div>
+                </div>
                 <div class="k-tilelayout-item-body k-card-body">Horizontally resizable card</div>
             </div>
             <div class="k-tilelayout-item k-resize-y k-card">
-                <div class="k-tilelayout-item-header k-card-header">Card Title</div>
+                <div class="k-tilelayout-item-header k-cursor-move k-card-header">
+                    <div class="k-card-title">Card Title</div>
+                </div>
                 <div class="k-tilelayout-item-body k-card-body">Vertically resizable card</div>
             </div>
             <div class="k-tilelayout-item k-resize k-card">
-                <div class="k-tilelayout-item-header k-card-header">Card Title</div>
+                <div class="k-tilelayout-item-header k-cursor-move k-card-header">
+                    <div class="k-card-title">Card Title</div>
+                </div>
                 <div class="k-tilelayout-item-body k-card-body">Horizontally and Vertically resizable card</div>
             </div>
-            <div class="k-tilelayout-item k-resize-none k-card">
-                <div class="k-tilelayout-item-header k-card-header">Card Title</div>
+            <div class="k-tilelayout-item k-card">
+                <div class="k-tilelayout-item-header k-cursor-move k-card-header">
+                    <div class="k-card-title">Card Title</div>
+                </div>
                 <div class="k-tilelayout-item-body k-card-body">Non-resizable card</div>
             </div>
         </div>

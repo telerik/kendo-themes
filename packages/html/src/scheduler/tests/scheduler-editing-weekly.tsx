@@ -37,7 +37,7 @@ export default () =>(
                         <Button fillMode="flat" themeColor="primary" icon="trash">Delete</Button>
                     </>
                 }>
-                    <Form tag="div" className="k-scheduler-edit-form" orientation="vertical">
+                    <Form tag="div" className="k-scheduler-edit-form">
                         <FormField className="k-form-field-error" label="Title" error="Error" editor={ <Textbox invalid value="Invalid" /> }/>
                         <FormField label="Start" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
                         <FormField editor={
