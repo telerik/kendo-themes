@@ -1,7 +1,7 @@
 import { DropdownList } from '../../dropdownlist';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { Form, FormField, Fieldset } from '../../form';
 
 
 export default () =>(
@@ -12,27 +12,43 @@ export default () =>(
             <span></span>
 
             <section>
-                <Form layout="grid" legend="Shipping Address" cols={2} gapX={4} formButtons={
+                <Form layout="grid" cols={2} gapX={4} formButtons={
                     <>
                         <Button className="k-form-submit" themeColor="primary">Submit</Button>
                         <Button className="k-form-clear" >Clear</Button>
                     </>
                 } >
-                    <FormField
-                        className="k-col-span-1"
-                        label="Country"
-                        editor={ <DropdownList value="France"/>}
-                    />
-                    <FormField
-                        className="k-col-span-1"
-                        label="City"
-                        editor={ <Textbox/> }
-                    />
-                    <FormField
-                        className="k-col-span-2"
-                        label="Address Line"
-                        editor={ <Textbox/> }
-                    />
+                    <Fieldset legend="Personal Information" layout="grid" cols={1} gapY={3}>
+                        <FormField
+                            label="First Name"
+                            editor={ <Textbox value="John"/>}
+                        />
+                        <FormField
+                            label="Last Name"
+                            editor={ <Textbox value="Doe" /> }
+                        />
+                        <FormField
+                            label="Email"
+                            editor={ <Textbox value="john.doe@email.com" /> }
+                        />
+                    </Fieldset>
+                    <Fieldset legend="Shipping Address" layout="grid" cols={2} gapX={4} gapY={3}>
+                        <FormField
+                            colSpan="1"
+                            label="Country"
+                            editor={ <DropdownList value="France"/>}
+                        />
+                        <FormField
+                            colSpan="1"
+                            label="City"
+                            editor={ <Textbox/> }
+                        />
+                        <FormField
+                            colSpan="2"
+                            label="Address Line"
+                            editor={ <Textbox/> }
+                        />
+                    </Fieldset>
                 </Form>
             </section>
 

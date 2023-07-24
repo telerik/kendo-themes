@@ -1,5 +1,4 @@
-import { DropdownGrid } from '../../dropdowngrid';
-
+import { DropdownGrid, DropdownGridNormal } from '../../dropdowngrid';
 
 const styles = `
     #test-area {
@@ -16,61 +15,30 @@ export default () =>(
             <span>DropdownGrid Flat RTL</span>
 
             <div>
-                <DropdownGrid fillMode="flat" placeholder="DropdownGrid..." />
+                <DropdownGridNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DropdownGrid fillMode="flat" placeholder="DropdownGrid..." />
+                <DropdownGridNormal fillMode="flat" placeholder="placeholder..." />
             </div>
+
+            {[ 'normal', ...DropdownGrid.states ].map((state) => (
+                <>
+                    <div>
+                        <DropdownGridNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <DropdownGridNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
 
             <div>
-                <DropdownGrid fillMode="flat" value="Normal" />
+                <DropdownGridNormal fillMode="flat" value="invalid focus" invalid focus />
             </div>
             <div dir="rtl">
-                <DropdownGrid fillMode="flat" value="Normal" />
+                <DropdownGridNormal fillMode="flat" value="invalid focus" invalid focus />
             </div>
-
-            <div>
-                <DropdownGrid fillMode="flat" value="Hover" hover />
-            </div>
-            <div dir="rtl">
-                <DropdownGrid fillMode="flat" value="Hover" hover />
-            </div>
-
-            <div>
-                <DropdownGrid fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <DropdownGrid fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <DropdownGrid fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <DropdownGrid fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <DropdownGrid fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <DropdownGrid fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <DropdownGrid fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <DropdownGrid fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <DropdownGrid fillMode="flat" value="Loading..." loading />
-            </div>
-            <div dir="rtl">
-                <DropdownGrid fillMode="flat" value="Loading..." loading />
-            </div>
-
         </div>
     </>
 );

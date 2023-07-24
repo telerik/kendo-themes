@@ -319,10 +319,6 @@ $kendo-grid-cell-border-width-y: $kendo-grid-border-width !default;
 /// Horizontal border width of the grid cell.
 /// @group grid
 $kendo-grid-cell-border-width-x: 0px !default;
-/// Default width of the grid cell placeholder.
-/// @group grid
-$kendo-grid-cell-placeholder-width: 80% !default;
-
 /// Font size of the grid sort index.
 /// @group grid
 $kendo-grid-sort-index-font-size: var( --kendo-font-size-sm, inherit ) !default;

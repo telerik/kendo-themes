@@ -3,7 +3,7 @@ import { Checkbox } from '../../checkbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Toolbar, ToolbarSeparator } from '../../toolbar';
-import { Form, FormField } from '../../form';
+import { Form, FormField, Fieldset } from '../../form';
 
 
 export default () =>(
@@ -42,37 +42,39 @@ export default () =>(
                     </div>
 
                     <div className="k-imageeditor-action-pane">
-                        <Form tag="div" className="k-imageeditor-pane-form" layout="grid" legend="Resize Image" cols={2} gapX={2} formButtons={
+                        <Form tag="div" className="k-imageeditor-pane-form" formButtons={
                             <>
                                 <Button themeColor="primary">Confirm</Button>
                                 <Button>Cancel</Button>
                             </>
                         }>
-                            <FormField
-                                className="k-col-span-1"
-                                label="Width:"
-                                editor={ <NumericTextbox showClearButton={false} value="61" /> }
-                            />
-                            <FormField
-                                className="k-col-span-1"
-                                label="&nbsp;"
-                                editor={ <DropdownList value="Pixels" /> }
-                            />
-                            <FormField
-                                className="k-col-span-1"
-                                label="Height:"
-                                editor={ <NumericTextbox showClearButton={false} value="68" /> }
-                            />
-                            <FormField
-                                className="k-col-span-1"
-                                label="&nbsp;"
-                                editor={ <DropdownList value="Pixels" /> }
-                            />
-                            <FormField
-                                className="k-col-span-2"
-                                label="Lock aspect ratio:"
-                                editor={ <Checkbox /> }
-                            />
+                            <Fieldset layout="grid" legend="Resize Image" cols={2} gapX={2}>
+                                <FormField
+                                    colSpan="1"
+                                    label="Width:"
+                                    editor={ <NumericTextbox showClearButton={false} value="61" /> }
+                                />
+                                <FormField
+                                    colSpan="1"
+                                    label="&nbsp;"
+                                    editor={ <DropdownList value="Pixels" /> }
+                                />
+                                <FormField
+                                    colSpan="1"
+                                    label="Height:"
+                                    editor={ <NumericTextbox showClearButton={false} value="68" /> }
+                                />
+                                <FormField
+                                    colSpan="1"
+                                    label="&nbsp;"
+                                    editor={ <DropdownList value="Pixels" /> }
+                                />
+                                <FormField
+                                    colSpan="2"
+                                    label="Lock aspect ratio:"
+                                    editor={ <Checkbox /> }
+                                />
+                            </Fieldset>
                         </Form>
                     </div>
 

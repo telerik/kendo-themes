@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.1-dev.0...v6.7.0-dev.0) (2023-07-24)
+
+
+### Features
+
+* **breadcrumb:** add sizes ([f4b9aa2](https://github.com/telerik/kendo-themes/commit/f4b9aa2e4cc5a7bd8b86c0664b3380606b2ad9aa))
+* **html:** add filter spec ([eb66423](https://github.com/telerik/kendo-themes/commit/eb664236c9ecd1412423f618c41aee60e8c81f5e))
+* **html:** update form rendering for grid layout ([559d295](https://github.com/telerik/kendo-themes/commit/559d29553e3121fb579d164e43174d90c0e8af43))
+
+
+
+
+
 ## [6.6.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.0...v6.6.1-dev.0) (2023-07-17)
 
 **Note:** Version bump only for package kendo-themes.repo

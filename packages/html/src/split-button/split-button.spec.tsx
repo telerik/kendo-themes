@@ -1,5 +1,6 @@
 import { Button } from '../button';
 import { classNames, optionClassNames, States, Size, Roundness, FillMode, ThemeColor } from '../misc';
+import { Popup } from '../popup';
 
 export const SPLITBUTTON_CLASSNAME = `k-split-button`;
 
@@ -43,6 +44,8 @@ export type KendoSplitButtonProps = KendoSplitButtonOptions & {
   iconClassName?: string;
   showArrow?: boolean;
   arrowIconName?: string;
+  popup?: JSX.Element;
+  opened?: boolean;
 };
 
 export type KendoSplitButtonState = { [K in (typeof states)[number]]?: boolean };
@@ -73,45 +76,54 @@ export const SplitButton = (
         icon,
         text,
         arrowIconName = defaultProps.arrowIconName,
+        popup,
+        opened,
         ...other
     } = props;
 
     return (
-        <div
-            {...other}
-            className={classNames(
-                props.className,
-                SPLITBUTTON_CLASSNAME,
-                'k-button-group',
-                optionClassNames(SPLITBUTTON_CLASSNAME, {
-                    rounded,
-                })
-            )}>
-            <Button
-                text={text}
-                icon={icon}
-                size={size}
-                rounded={rounded}
-                fillMode={fillMode}
-                themeColor={themeColor}
-                hover={hover}
-                focus={focus}
-                active={active}
-                selected={selected}
-                disabled={disabled}
-            >
-                {props.children}
-            </Button>
-            <Button
-                className="k-split-button-arrow"
-                icon={arrowIconName}
-                size={size}
-                rounded={rounded}
-                fillMode={fillMode}
-                disabled={disabled}
-            >
-            </Button>
-        </div>
+        <>
+            <div
+                {...other}
+                className={classNames(
+                    props.className,
+                    SPLITBUTTON_CLASSNAME,
+                    'k-button-group',
+                    optionClassNames(SPLITBUTTON_CLASSNAME, {
+                        rounded,
+                    })
+                )}>
+                <Button
+                    text={text}
+                    icon={icon}
+                    size={size}
+                    rounded={rounded}
+                    fillMode={fillMode}
+                    themeColor={themeColor}
+                    hover={hover}
+                    focus={focus}
+                    active={active}
+                    selected={selected}
+                    disabled={disabled}
+                >
+                    {props.children}
+                </Button>
+                <Button
+                    className="k-split-button-arrow"
+                    icon={arrowIconName}
+                    size={size}
+                    rounded={rounded}
+                    fillMode={fillMode}
+                    disabled={disabled}
+                >
+                </Button>
+            </div>
+            { opened && popup &&
+                <Popup className="k-menu-popup">
+                    {popup}
+                </Popup>
+            }
+        </>
     );
 };
 
