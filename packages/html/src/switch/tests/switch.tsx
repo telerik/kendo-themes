@@ -1,5 +1,4 @@
-import { Switch } from '../../switch';
-
+import { Switch, SwitchNormal, SwitchChecked } from '../../switch';
 
 const styles = `
     body {
@@ -13,66 +12,42 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-3">
+        <div id="test-area" className="k-d-grid k-grid-cols-5">
             <span></span>
-            <span>On</span>
             <span>Off</span>
+            <span>On</span>
+            <span>RTL - Off</span>
+            <span>RTL - On</span>
 
+            {[ 'normal', ...Switch.states ].map((state) => (state !== 'checked' ? (<>
+                <span>{ state }</span>
+                <section>
+                    <SwitchNormal { ...{ [state]: true }} />
+                </section>
+                <section>
+                    <SwitchChecked { ...{ [state]: true }} />
+                </section>
+                <section dir="rtl">
+                    <SwitchNormal { ...{ [state]: true }} />
+                </section>
+                <section dir="rtl">
+                    <SwitchChecked { ...{ [state]: true }} />
+                </section>
+            </>) : null)
+            )}
 
-            <span>Normal</span>
+            <span>localized</span>
             <section>
-                <Switch checked />
+                <SwitchNormal onLabel="On" offLabel="Off" />
             </section>
             <section>
-                <Switch />
-            </section>
-
-            <span>Hover</span>
-            <section>
-                <Switch checked hover />
-            </section>
-            <section>
-                <Switch hover />
-            </section>
-
-            <span>Focus</span>
-            <section>
-                <Switch checked focus />
-            </section>
-            <section>
-                <Switch focus />
-            </section>
-
-            <span>Disabled</span>
-            <section>
-                <Switch checked disabled />
-            </section>
-            <section>
-                <Switch disabled />
-            </section>
-
-            <span>Localized</span>
-            <section>
-                <Switch onLabel="On" offLabel="Off" checked />
-            </section>
-            <section>
-                <Switch onLabel="On" offLabel="Off" />
-            </section>
-
-            <span>RTL</span>
-            <section dir="rtl" >
-                <Switch checked />
+                <SwitchChecked onLabel="On" offLabel="Off" />
             </section>
             <section dir="rtl">
-                <Switch />
-            </section>
-
-            <span></span>
-            <section dir="rtl">
-                <Switch onLabel="On" offLabel="Off" checked />
+                <SwitchNormal onLabel="On" offLabel="Off" />
             </section>
             <section dir="rtl">
-                <Switch onLabel="On" offLabel="Off" />
+                <SwitchChecked onLabel="On" offLabel="Off" />
             </section>
         </div>
     </>

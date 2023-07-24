@@ -10,7 +10,14 @@
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: 120px repeat(6, 1fr);
+            grid-template-columns: 120px repeat(3, 1fr);
+        }
+        #test-area>span {
+            text-align: center;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-around;
         }
 
     </style>
@@ -18,194 +25,176 @@
         <span>
             <small>rounded / size</small>
         </span>
-        <span class="k-colspan-2 k-col-span-2">small</span>
-        <span class="k-colspan-2 k-col-span-2">medium</span>
-        <span class="k-colspan-2 k-col-span-2">large</span>
-        <span>null</span>
-        <span>
-            <span class="k-switch k-switch-sm k-switch-on">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-sm k-switch-off">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-md k-switch-on">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-md k-switch-off">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-lg k-switch-on">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-lg k-switch-off">
-                <span class="k-switch-track">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb"></span>
-                </span>
-            </span>
-        </span>
         <span>small</span>
-        <span>
-            <span class="k-switch k-switch-sm k-switch-on">
-                <span class="k-switch-track k-rounded-sm">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-sm"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-sm k-switch-off">
-                <span class="k-switch-track k-rounded-sm">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-sm"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-md k-switch-on">
-                <span class="k-switch-track k-rounded-sm">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-sm"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-md k-switch-off">
-                <span class="k-switch-track k-rounded-sm">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-sm"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-lg k-switch-on">
-                <span class="k-switch-track k-rounded-sm">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-sm"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-lg k-switch-off">
-                <span class="k-switch-track k-rounded-sm">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-sm"></span>
-                </span>
-            </span>
-        </span>
         <span>medium</span>
-        <span>
-            <span class="k-switch k-switch-sm k-switch-on">
-                <span class="k-switch-track k-rounded-md">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-md"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-sm k-switch-off">
-                <span class="k-switch-track k-rounded-md">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-md"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-md k-switch-on">
-                <span class="k-switch-track k-rounded-md">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-md"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-md k-switch-off">
-                <span class="k-switch-track k-rounded-md">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-md"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-lg k-switch-on">
-                <span class="k-switch-track k-rounded-md">
-                    <span class="k-switch-label-on">On</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-md"></span>
-                </span>
-            </span>
-        </span>
-        <span>
-            <span class="k-switch k-switch-lg k-switch-off">
-                <span class="k-switch-track k-rounded-md">
-                    <span class="k-switch-label-off">Off</span>
-                </span>
-                <span class="k-switch-thumb-wrap">
-                    <span class="k-switch-thumb k-rounded-md"></span>
-                </span>
-            </span>
-        </span>
         <span>large</span>
-        <span>
+        <span>none</span>
+        <div class="wrapper">
+            <span class="k-switch k-switch-sm k-switch-on">
+                <span class="k-switch-track">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-sm k-switch-off">
+                <span class="k-switch-track">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb"></span>
+                </span>
+            </span>
+        </div>
+        <div class="wrapper">
+            <span class="k-switch k-switch-md k-switch-on">
+                <span class="k-switch-track">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-md k-switch-off">
+                <span class="k-switch-track">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb"></span>
+                </span>
+            </span>
+        </div>
+        <div class="wrapper">
+            <span class="k-switch k-switch-lg k-switch-on">
+                <span class="k-switch-track">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-lg k-switch-off">
+                <span class="k-switch-track">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb"></span>
+                </span>
+            </span>
+        </div>
+        <span>small</span>
+        <div class="wrapper">
+            <span class="k-switch k-switch-sm k-switch-on">
+                <span class="k-switch-track k-rounded-sm">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-sm"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-sm k-switch-off">
+                <span class="k-switch-track k-rounded-sm">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-sm"></span>
+                </span>
+            </span>
+        </div>
+        <div class="wrapper">
+            <span class="k-switch k-switch-md k-switch-on">
+                <span class="k-switch-track k-rounded-sm">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-sm"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-md k-switch-off">
+                <span class="k-switch-track k-rounded-sm">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-sm"></span>
+                </span>
+            </span>
+        </div>
+        <div class="wrapper">
+            <span class="k-switch k-switch-lg k-switch-on">
+                <span class="k-switch-track k-rounded-sm">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-sm"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-lg k-switch-off">
+                <span class="k-switch-track k-rounded-sm">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-sm"></span>
+                </span>
+            </span>
+        </div>
+        <span>medium</span>
+        <div class="wrapper">
+            <span class="k-switch k-switch-sm k-switch-on">
+                <span class="k-switch-track k-rounded-md">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-md"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-sm k-switch-off">
+                <span class="k-switch-track k-rounded-md">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-md"></span>
+                </span>
+            </span>
+        </div>
+        <div class="wrapper">
+            <span class="k-switch k-switch-md k-switch-on">
+                <span class="k-switch-track k-rounded-md">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-md"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-md k-switch-off">
+                <span class="k-switch-track k-rounded-md">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-md"></span>
+                </span>
+            </span>
+        </div>
+        <div class="wrapper">
+            <span class="k-switch k-switch-lg k-switch-on">
+                <span class="k-switch-track k-rounded-md">
+                    <span class="k-switch-label-on">On</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-md"></span>
+                </span>
+            </span>
+            <span class="k-switch k-switch-lg k-switch-off">
+                <span class="k-switch-track k-rounded-md">
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-md"></span>
+                </span>
+            </span>
+        </div>
+        <span>large</span>
+        <div class="wrapper">
             <span class="k-switch k-switch-sm k-switch-on">
                 <span class="k-switch-track k-rounded-lg">
                     <span class="k-switch-label-on">On</span>
@@ -214,8 +203,6 @@
                     <span class="k-switch-thumb k-rounded-lg"></span>
                 </span>
             </span>
-        </span>
-        <span>
             <span class="k-switch k-switch-sm k-switch-off">
                 <span class="k-switch-track k-rounded-lg">
                     <span class="k-switch-label-off">Off</span>
@@ -224,8 +211,8 @@
                     <span class="k-switch-thumb k-rounded-lg"></span>
                 </span>
             </span>
-        </span>
-        <span>
+        </div>
+        <div class="wrapper">
             <span class="k-switch k-switch-md k-switch-on">
                 <span class="k-switch-track k-rounded-lg">
                     <span class="k-switch-label-on">On</span>
@@ -234,8 +221,6 @@
                     <span class="k-switch-thumb k-rounded-lg"></span>
                 </span>
             </span>
-        </span>
-        <span>
             <span class="k-switch k-switch-md k-switch-off">
                 <span class="k-switch-track k-rounded-lg">
                     <span class="k-switch-label-off">Off</span>
@@ -244,8 +229,8 @@
                     <span class="k-switch-thumb k-rounded-lg"></span>
                 </span>
             </span>
-        </span>
-        <span>
+        </div>
+        <div class="wrapper">
             <span class="k-switch k-switch-lg k-switch-on">
                 <span class="k-switch-track k-rounded-lg">
                     <span class="k-switch-label-on">On</span>
@@ -254,8 +239,6 @@
                     <span class="k-switch-thumb k-rounded-lg"></span>
                 </span>
             </span>
-        </span>
-        <span>
             <span class="k-switch k-switch-lg k-switch-off">
                 <span class="k-switch-track k-rounded-lg">
                     <span class="k-switch-label-off">Off</span>
@@ -264,9 +247,9 @@
                     <span class="k-switch-thumb k-rounded-lg"></span>
                 </span>
             </span>
-        </span>
+        </div>
         <span>full</span>
-        <span>
+        <div class="wrapper">
             <span class="k-switch k-switch-sm k-switch-on">
                 <span class="k-switch-track k-rounded-full">
                     <span class="k-switch-label-on">On</span>
@@ -275,8 +258,6 @@
                     <span class="k-switch-thumb k-rounded-full"></span>
                 </span>
             </span>
-        </span>
-        <span>
             <span class="k-switch k-switch-sm k-switch-off">
                 <span class="k-switch-track k-rounded-full">
                     <span class="k-switch-label-off">Off</span>
@@ -285,8 +266,8 @@
                     <span class="k-switch-thumb k-rounded-full"></span>
                 </span>
             </span>
-        </span>
-        <span>
+        </div>
+        <div class="wrapper">
             <span class="k-switch k-switch-md k-switch-on">
                 <span class="k-switch-track k-rounded-full">
                     <span class="k-switch-label-on">On</span>
@@ -295,8 +276,6 @@
                     <span class="k-switch-thumb k-rounded-full"></span>
                 </span>
             </span>
-        </span>
-        <span>
             <span class="k-switch k-switch-md k-switch-off">
                 <span class="k-switch-track k-rounded-full">
                     <span class="k-switch-label-off">Off</span>
@@ -305,8 +284,8 @@
                     <span class="k-switch-thumb k-rounded-full"></span>
                 </span>
             </span>
-        </span>
-        <span>
+        </div>
+        <div class="wrapper">
             <span class="k-switch k-switch-lg k-switch-on">
                 <span class="k-switch-track k-rounded-full">
                     <span class="k-switch-label-on">On</span>
@@ -315,8 +294,6 @@
                     <span class="k-switch-thumb k-rounded-full"></span>
                 </span>
             </span>
-        </span>
-        <span>
             <span class="k-switch k-switch-lg k-switch-off">
                 <span class="k-switch-track k-rounded-full">
                     <span class="k-switch-label-off">Off</span>
@@ -325,7 +302,7 @@
                     <span class="k-switch-thumb k-rounded-full"></span>
                 </span>
             </span>
-        </span>
+        </div>
     </div>
 </body>
 </html>

@@ -6,6 +6,7 @@
         box-sizing: border-box;
         outline: 0;
         display: grid;
+        padding: $kendo-tile-layout-padding-y $kendo-tile-layout-padding-x;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 

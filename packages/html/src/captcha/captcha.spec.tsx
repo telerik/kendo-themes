@@ -1,5 +1,6 @@
 import { Button } from '../button';
 import { Textbox } from '../textbox';
+import { Skeleton } from '../skeleton';
 import { classNames, stateClassNames, States } from '../misc';
 
 export const CAPTCHA_CLASSNAME = `k-captcha`;
@@ -54,10 +55,7 @@ export const Captcha = (
                         src="/packages/html/assets/captcha.jpg"
                     />
                     {loading && (
-                        <span
-                            style={{ width: '100%', height: '100%' }}
-                            className="k-skeleton k-skeleton-rect">
-                        </span>
+                        <Skeleton shape={'rect'} style={{ width: '100%', height: '100%' }} />
                     )}
                 </div>
                 <div className="k-captcha-image-controls k-vstack">

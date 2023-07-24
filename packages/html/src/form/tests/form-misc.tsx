@@ -24,7 +24,7 @@ export default () =>(
                     Error: The quick brown fox jumps over the lazy dog.
                 </div>
 
-                <Form orientation="vertical" formButtons={
+                <Form formButtons={
                     <>
                         <Button themeColor="primary">Submit</Button>
                         <Button>Clear</Button>

@@ -26,7 +26,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form tag="div" orientation="vertical">
+                    <Form tag="div">
                         <FormField label="Web address:" editor={ <Textbox showClearButton={false} /> } />
                         <FormField label="Alternate text:" editor={ <Textbox showClearButton={false} /> } />
                         <FormField label="Width:" editor={ <Textbox showClearButton={false} /> } />

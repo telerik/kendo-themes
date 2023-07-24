@@ -48,38 +48,39 @@ export default () =>(
                         <div className="k-tabstrip-content k-active">
                             <Form tag="div" layout="grid" cols={4} gapX={2}>
                                 <FormField
-                                    className="k-form-field-error k-col-span-full"
+                                    colSpan="full"
+                                    className="k-form-field-error"
                                     label="Title" error="Error"
                                     editor={ <Textbox invalid value="Invalid" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Planned Start Date"
                                     editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Planned End Date"
                                     editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Actual Start Date"
                                     editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-2"
+                                    colSpan="2"
                                     label="Actual End Date"
                                     editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }
                                 />
                                 <FormField
-                                    className="k-col-span-1"
+                                    colSpan="1"
                                     label="Complete"
                                     editor={ <NumericTextbox /> }
                                     hint="value from 0 to 1"
                                 />
                                 <FormField
-                                    className="k-col-span-full"
+                                    colSpan="full"
                                     label="Parent"
                                     editor={ <DropdownList placeholder="-None-"/> }
                                 />

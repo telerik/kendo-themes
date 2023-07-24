@@ -97,7 +97,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form orientation="vertical">
+                    <Form>
                         <FormField
                             editor={
                                 <ul className="k-radio-list">
