@@ -10,42 +10,50 @@
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: 160px repeat(2, 300px);
+            max-width: 660px;
         }
         .k-animation-container {
             position: relative;
         }
 
     </style>
-    <div id="test-area" class="k-d-grid">
-        <span></span>
-        <span>MultiSelect</span>
-        <span>MultiSelect RTL</span>
-        <div>Opened</div>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>MultiSelect Grouping</span>
+        <span>MultiSelect Grouping RTL</span>
         <div>
             <span class="k-multiselect k-input k-input-md k-input-solid k-rounded-md">
                 <div class="k-input-values">
                     <div class="k-chip-list k-chip-list-md"></div>
-                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    <input type="text" class="k-input-inner" placeholder="MultiSelect..." autocomplete="off" value="">
                 </div>
             </span>
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-multiselect-popup k-popup">
                         <div class="k-list k-list-md">
+                            <div class="k-list-group-sticky-header">
+                                <div class="k-list-header-text">Group 1</div>
+                            </div>
                             <div class="k-list-content">
                                 <ul class="k-list-ul">
                                     <li class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                        <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
                                     <li class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                        <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                     <li class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                        <span class="k-list-item-text">List group 1 item 3</span>
+                                    </li>
+                                    <li class="k-first k-list-item">
+                                        <span class="k-list-item-text">List group 1 item 1</span>
+                                        <div class="k-list-item-group-label">Group 2</div>
                                     </li>
                                     <li class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                        <span class="k-list-item-text">List group 1 item 2</span>
+                                    </li>
+                                    <li class="k-list-item">
+                                        <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>
                             </div>
@@ -58,26 +66,36 @@
             <span class="k-multiselect k-input k-input-md k-input-solid k-rounded-md">
                 <div class="k-input-values">
                     <div class="k-chip-list k-chip-list-md"></div>
-                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    <input type="text" class="k-input-inner" placeholder="MultiSelect..." autocomplete="off" value="">
                 </div>
             </span>
             <div class="k-animation-container k-animation-container-shown">
                 <div class="k-child-animation-container">
                     <div class="k-list-container k-multiselect-popup k-popup">
                         <div class="k-list k-list-md">
+                            <div class="k-list-group-sticky-header">
+                                <div class="k-list-header-text">Group 1</div>
+                            </div>
                             <div class="k-list-content">
                                 <ul class="k-list-ul">
                                     <li class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                        <span class="k-list-item-text">List group 1 item 1</span>
                                     </li>
                                     <li class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                        <span class="k-list-item-text">List group 1 item 2</span>
                                     </li>
                                     <li class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                        <span class="k-list-item-text">List group 1 item 3</span>
+                                    </li>
+                                    <li class="k-first k-list-item">
+                                        <span class="k-list-item-text">List group 1 item 1</span>
+                                        <div class="k-list-item-group-label">Group 2</div>
                                     </li>
                                     <li class="k-list-item">
-                                        <span class="k-list-item-text">List item</span>
+                                        <span class="k-list-item-text">List group 1 item 2</span>
+                                    </li>
+                                    <li class="k-list-item">
+                                        <span class="k-list-item-text">List group 1 item 3</span>
                                     </li>
                                 </ul>
                             </div>
