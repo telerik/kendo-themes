@@ -365,9 +365,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-invalid-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-invalid-text</code></td>
-    <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
+    <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the invalid RadioButton.</div></div>
@@ -375,9 +375,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-radio-invalid-border</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-checkbox-invalid-border</code></td>
-    <td><span class="color-preview" style="background-color: #f31700"></span><code>#f31700</code></td>
+    <td><code>var(--kendo-color-error, #f31700)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the invalid RadioButton.</div></div>

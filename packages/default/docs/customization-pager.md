@@ -359,9 +359,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-item-selected-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-list-item-selected-bg</code></td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span><code>#ff6358</code></td>
+    <td><code>var(--kendo-color-primary, #ff6358)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the selected Pager items.</div></div>
@@ -369,9 +369,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-item-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-list-item-selected-text</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-primary-text, white)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Pager items.</div></div>

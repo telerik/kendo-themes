@@ -441,9 +441,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-selected-text</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>if($kendo-new-colors, $kendo-color-primary-contrast, k-contrast-legacy( $kendo-button-selected-bg ))</code></td>
-    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+    <td><code>var(--kendo-color-primary-text, white)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Button.</div></div>

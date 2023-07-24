@@ -309,9 +309,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-grid-selected-bg</td>
-    <td>Color</td>
+    <td>String</td>
     <td><code>$kendo-table-selected-bg</code></td>
-    <td><span class="color-preview" style="background-color: rgba(255, 99, 88, 0.25)"></span><code>rgba(255, 99, 88, 0.25)</code></td>
+    <td><code>rgba(var(--kendo-color-primary-rgb, 255, 99, 88), 0.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
