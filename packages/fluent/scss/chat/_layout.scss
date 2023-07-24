@@ -175,10 +175,7 @@
 
         // Avatar
         .k-avatar {
-            @include border-radius( 100% );
             margin: 0;
-            width: var( --kendo-chat-avatar-size, #{ $kendo-chat-avatar-size } );
-            height: var( --kendo-chat-avatar-size, #{ $kendo-chat-avatar-size } );
             position: absolute;
 
             @at-root .k-message-group:not(.k-alt) > .k-avatar {
@@ -335,8 +332,7 @@
         overflow-x: auto;
         scroll-behavior: smooth;
     }
-    .k-chat .k-card-deck .k-card,
-    .k-chat .k-card-deck .k-card-wrap {
+    .k-chat .k-card-deck .k-card {
         width: 200px;
     }
 
@@ -407,16 +403,10 @@
 
 @mixin kendo-chat-toolbar--layout() {
 
-    .k-chat-toolbar,
-    .k-chat .k-toolbar-box {
-        padding-inline: var( --kendo-chat-toolbar-padding-x, #{ $kendo-chat-toolbar-padding-x } );
-        padding-block: var( --kendo-chat-toolbar-padding-y, #{ $kendo-chat-toolbar-padding-y } );
+    .k-chat-toolbar {
         width: 100%;
         border-width: 1px 0 0;
-        box-sizing: border-box;
         flex: none;
-        overflow: hidden;
-        position: relative;
 
         &::before {
             display: none;
