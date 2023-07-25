@@ -9,6 +9,22 @@ $kendo-is-dark-theme: false !default;
 $kendo-subtle-text: #666666 !default;
 $kendo-disabled-text: #8f8f8f !default;
 
+$kendo-color-base: #f5f5f5 !default;
+$kendo-color-base-text: #424242 !default;
+$kendo-color-base-hover: k-try-shade($kendo-color-base, 0.5) !default;
+$kendo-color-base-active: k-try-shade($kendo-color-base, 1.5) !default;
+$kendo-color-base-selected: k-try-shade($kendo-color-base, 1.5) !default;
+$kendo-color-base-focus: null !default;
+
+$kendo-body-bg: #ffffff !default;
+$kendo-body-text: $kendo-color-base-text !default;
+
+$kendo-color-border: rgba($kendo-color-black, 0.08) !default;
+$kendo-color-border-hover: rgba($kendo-color-black, 0.16) !default;
+
+$kendo-color-border-alt: rgba(#666666, 0.5) !default;
+$kendo-color-border-alt-hover: rgba(#666666, 0.8) !default;
+
 $kendo-color-primary: #ff6358 !default;
 $kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
 $kendo-color-primary-text-contrast: k-contrast-legacy($kendo-color-primary-text) !default;
@@ -18,15 +34,10 @@ $kendo-color-primary-selected: $kendo-color-primary !default;
 $kendo-color-primary-focus: null !default;
 $kendo-color-primary-light: k-color-mix($kendo-color-primary, #ffffff, 25%) !default;
 $kendo-color-primary-light-alt: k-color-shade($kendo-color-primary-light, .4) !default;
+$kendo-color-primary-lighter: k-color-mix($kendo-color-primary, $kendo-body-bg, 60%) !default;
 $kendo-color-primary-pale: k-try-tint($kendo-color-primary, 6) !default;
 $kendo-color-primary-dim: k-color-tint($kendo-color-primary, 2) !default;
-
-$kendo-color-base: #f5f5f5 !default;
-$kendo-color-base-text: #424242 !default;
-$kendo-color-base-hover: k-try-shade($kendo-color-base, 0.5) !default;
-$kendo-color-base-active: k-try-shade($kendo-color-base, 1.5) !default;
-$kendo-color-base-selected: k-try-shade($kendo-color-base, 1.5) !default;
-$kendo-color-base-focus: null !default;
+$kendo-color-primary-shaded: k-try-shade($kendo-color-primary) !default; // VERY SIMILAR TO $kendo-color-primary-hover/active
 
 $kendo-color-secondary: #666666 !default;
 $kendo-color-secondary-text: k-contrast-legacy($kendo-color-secondary) !default;
@@ -90,12 +101,3 @@ $kendo-color-inverse-hover: k-try-shade($kendo-color-inverse, 0.5) !default;
 $kendo-color-inverse-active: k-try-shade($kendo-color-inverse, 1.5) !default;
 $kendo-color-inverse-selected: k-try-shade($kendo-color-inverse, 1.5) !default;
 $kendo-color-inverse-focus: null !default;
-
-$kendo-body-bg: #ffffff !default;
-$kendo-body-text: $kendo-color-base-text !default;
-
-$kendo-color-border: rgba($kendo-color-black, 0.08) !default;
-$kendo-color-border-hover: rgba($kendo-color-black, 0.16) !default;
-
-$kendo-color-border-alt: rgba(#666666, 0.5) !default;
-$kendo-color-border-alt-hover: rgba(#666666, 0.8) !default;
