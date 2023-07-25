@@ -132,34 +132,36 @@ $kendo-button-brand-colors: (
 
 
 // Matrices with theme colors in the order: bg, color, border, outline
-
 // The color matrix for the base Button
 $_tc-base-matrix: (
     solid: (
-        normal: ($kendo-color-white, 160, 110),
-        hover: (20, 190, 110),
-        focus: ($kendo-color-white, 160, 110, 130),
-        focus-hover: (20, 190, 110, 130),
-        active: (30, 190, 110),
-        active-hover: (20, 190, 110),
+        normal: ($kendo-color-base, $kendo-color-base-text, $kendo-color-border),
+        hover: ($kendo-color-base-hover, $kendo-color-base-text, $kendo-color-border),
+        focus: ($kendo-color-base-focus, $kendo-color-base-text, $kendo-color-border, 130),
+        focus-hover: ($kendo-color-base-focus, $kendo-color-base-text, $kendo-color-border, 130),
+        active: ($kendo-color-base-active, $kendo-color-base-text, $kendo-color-border),
+        active-hover: ($kendo-color-base-active, $kendo-color-base-text, $kendo-color-border),
+        // TODO: disabled
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
     ),
     outline: (
-        normal: (transparent, 160, currentColor),
-        hover: (190, $kendo-color-white, 190),
-        focus: (transparent, 160, currentColor, inherit),
-        focus-hover: (190, $kendo-color-white, 190, inherit),
-        active: (190, $kendo-color-white, 190),
-        active-hover: (20, 190, 110),
+        normal: (transparent, $kendo-color-base-text, currentColor),
+        hover: ($kendo-color-base-text, $kendo-color-base, $kendo-color-base-text),
+        focus: (transparent, $kendo-color-base-text, currentColor, inherit),
+        focus-hover: ($kendo-color-base-text, $kendo-color-base, $kendo-color-base-text, inherit),
+        active: ($kendo-color-base-text, $kendo-color-base, $kendo-color-base-text),
+        active-hover: ($kendo-color-base-text, $kendo-color-base, $kendo-color-base-text),
+        // TODO: disabled
         disabled: (initial, var( --kendo-disabled-text, inherit ), 90)
     ),
     link: (
-        normal: (transparent, 160, transparent),
-        hover: (transparent, 190, transparent),
-        focus: (transparent, 160, transparent, 30),
-        focus-hover: (transparent, 190, 30, transparent),
-        active: (transparent, 190, transparent),
-        active-hover: (transparent, 190, transparent),
+        normal: (transparent, $kendo-color-base, transparent),
+        hover: (transparent, $kendo-color-base-hover, transparent),
+        focus: (transparent, $kendo-color-base, transparent, 30),
+        focus-hover: (transparent, $kendo-color-base-active, 30, transparent),
+        active: (transparent, $kendo-color-base-active, transparent),
+        active-hover: (transparent, $kendo-color-base-active, transparent),
+        // TODO: disabled
         disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
     ),
     clear: (
@@ -271,104 +273,6 @@ $_tc-warning-matrix: (
     )
 ) !default;
 
-// The color matrix for dark Buttons
-$_tc-dark-matrix: (
-    solid: (
-        normal: (160, $kendo-color-white, 160),
-        hover: (170, $kendo-color-white, 170),
-        focus: (160, $kendo-color-white, 160, $kendo-color-white),
-        focus-hover: (170, $kendo-color-white, 170, $kendo-color-white),
-        active: (180, $kendo-color-white, 180),
-        active-hover: (170, $kendo-color-white, 170),
-        disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
-    ),
-    flat: (
-        normal: (initial, 160, transparent),
-        hover: (10, 170, transparent),
-        focus: (initial, 160, transparent, 30),
-        focus-hover: (10, 170, transparent, 30),
-        active: (20, 170, transparent),
-        active-hover: (10, 170, transparent),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
-    ),
-    outline: (
-        normal: (transparent, 160, currentColor),
-        hover: (160, $kendo-color-white, 160),
-        focus: (transparent, 160, 160, inherit),
-        focus-hover: (160, $kendo-color-white, 160, inherit),
-        active: (160, $kendo-color-white, 160),
-        active-hover: (160, $kendo-color-white, 160),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
-    ),
-    link: (
-        normal: (transparent, 160, transparent),
-        hover: (transparent, 170, transparent),
-        focus: (transparent, 160, 30),
-        focus-hover: (transparent, 170, transparent, 30),
-        active: (transparent, 170, transparent),
-        active-hover: (transparent, 170, transparent),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
-    ),
-    clear: (
-        normal: (transparent, 160, transparent),
-        hover: (transparent, 170, transparent),
-        focus: (20, 160, transparent),
-        focus-hover: (transparent, 170, transparent),
-        active: (transparent, 170, transparent),
-        active-hover: (transparent, 170, transparent),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
-    )
-) !default;
-
-// The color matrix for light Buttons
-$_tc-light-matrix: (
-    solid: (
-        normal: (50, 160, 50),
-        hover: (60, 190, 60),
-        focus: (50, 160, 50, $kendo-color-white),
-        focus-hover: (60, 190, 60, $kendo-color-white),
-        active: (70, 190, 70),
-        active-hover: (60, 190, 60),
-        disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
-    ),
-    flat: (
-        normal: (initial, 50, transparent),
-        hover: (10, 60, transparent),
-        focus: (initial, 50, transparent, 30),
-        focus-hover: (10, 60, transparent, 30),
-        active: (20, 60, transparent),
-        active-hover: (10, 60, transparent),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
-    ),
-    outline: (
-        normal: (transparent, 50, currentColor),
-        hover: (50, $kendo-color-white, 50),
-        focus: (transparent, 50, 50, inherit),
-        focus-hover: (50, $kendo-color-white, 50, inherit),
-        active: (50, $kendo-color-white, 50),
-        active-hover: (50, $kendo-color-white, 50),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
-    ),
-    link: (
-        normal: (transparent, 50, transparent),
-        hover: (transparent, 60, transparent),
-        focus: (transparent, 50, 30),
-        focus-hover: (transparent, 60, transparent, 30),
-        active: (transparent, 60, transparent),
-        active-hover: (transparent, 60, transparent),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
-    ),
-    clear: (
-        normal: (transparent, 50, transparent),
-        hover: (transparent, 60, transparent),
-        focus: (20, 50, transparent),
-        focus-hover: (transparent, 60, transparent),
-        active: (transparent, 60, transparent),
-        active-hover: (transparent, 60, transparent),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
-    )
-) !default;
-
 /// The theme colors map for the Button.
 /// @group button
 $kendo-button-theme-colors: () !default;
@@ -396,21 +300,5 @@ $kendo-button-theme-colors: () !default;
     $kendo-button-theme-colors: map.deep-merge(
         $kendo-button-theme-colors,
         k-generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
-    );
-}
-
-// The map for the dark theme colors
-@each $fill-mode, $ui-states in $_tc-dark-matrix {
-    $kendo-button-theme-colors: map.deep-merge(
-        $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
-    );
-}
-
-// The map for the light theme colors
-@each $fill-mode, $ui-states in $_tc-light-matrix {
-    $kendo-button-theme-colors: map.deep-merge(
-        $kendo-button-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
     );
 }

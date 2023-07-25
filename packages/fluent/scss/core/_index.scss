@@ -1,14 +1,27 @@
 @use "sass:map";
 
 // Palettes
-@use "./color-system/palettes" as *;
+@use "./color-system/swatch" as *;
 
 // Variables
 @use "./variables" as *;
 @forward "./variables";
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
-    $kendo-palettes: $kendo-fluent-palettes
+    $kendo-palettes: $kendo-fluent-palettes,
+    $kendo-new-colors: true,
+
+    $kendo-color-base: $kendo-color-base,
+    $kendo-color-border: $kendo-color-border,
+
+    $kendo-color-base-text: $kendo-color-base-text,
+    $kendo-color-base-hover: $kendo-color-base-hover,
+    $kendo-color-base-active: $kendo-color-base-active,
+
+    $kendo-color-primary: $kendo-color-primary,
+    $kendo-color-primary-text: $kendo-color-primary-text,
+    $kendo-color-primary-hover: $kendo-color-primary-hover,
+    $kendo-color-primary-active: $kendo-color-primary-active,
 );
 
 // Helpers
