@@ -5,14 +5,13 @@
 
 $kendo-new-colors: true;
 
-$kendo-color-border: #8A8886 !default;
 
 $kendo-disabled-text:#A19F9D !default;
 $kendo-disabled-bg:#F3F2F1 !default;
 $kendo-disabled-border: transparent !default;
 
 $kendo-color-base: #ffffff !default;
-$kendo-color-base-text: #323130 !default;
+$kendo-color-base-text: #201F1E !default;
 $kendo-color-base-hover: #F3F2F1 !default;
 $kendo-color-base-active: #EDEBE9 !default;
 
@@ -20,3 +19,9 @@ $kendo-color-primary: #0078D4 !default;
 $kendo-color-primary-text: #ffffff !default;
 $kendo-color-primary-hover: #106EBE !default;
 $kendo-color-primary-active: #005A9E !default;
+
+$kendo-color-error: #A80000 !default;
+$kendo-color-success: #107C10 !default;
+
+$kendo-color-border: #8A8886 !default;
+$kendo-color-border-hover: #323130 !default;

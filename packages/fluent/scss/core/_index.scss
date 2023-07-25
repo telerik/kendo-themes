@@ -17,6 +17,7 @@
 
     $kendo-color-base: $kendo-color-base,
     $kendo-color-border: $kendo-color-border,
+    $kendo-color-border-hover: $kendo-color-border-hover,
 
     $kendo-color-base-text: $kendo-color-base-text,
     $kendo-color-base-hover: $kendo-color-base-hover,
@@ -26,6 +27,9 @@
     $kendo-color-primary-text: $kendo-color-primary-text,
     $kendo-color-primary-hover: $kendo-color-primary-hover,
     $kendo-color-primary-active: $kendo-color-primary-active,
+
+    $kendo-color-error: $kendo-color-error,
+    $kendo-color-success: $kendo-color-success
 );
 
 // Helpers

@@ -94,11 +94,11 @@
             --kendo-button-focus-text: #{map.get( $swatch, text )};
             --kendo-button-focus-bg: #{map.get( $swatch, normal )};
             --kendo-button-focus-border: #{if($name == 'base', $kendo-color-border, map.get( $swatch, normal ))};
-            --kendo-button-focus-outline: #{if($name == 'base', $kendo-color-border, currentColor)};
+            --kendo-button-focus-outline: #{if($name == 'base', map.get( $swatch, text ), currentColor)};
 
             --kendo-button-focus-hover-text: #{map.get( $swatch, text )};
-            --kendo-button-focus-hover-bg: #{map.get( $swatch, normal )};
-            --kendo-button-focus-hover-border: #{map.get( $swatch, normal )};
+            --kendo-button-focus-hover-bg: #{map.get( $swatch, hover )};
+            --kendo-button-focus-hover-border: #{if($name == 'base', $kendo-color-border, map.get( $swatch, hover ))};
 
             --kendo-button-active-text: #{map.get( $swatch, text )};
             --kendo-button-active-bg: #{map.get( $swatch, active )};
@@ -106,15 +106,15 @@
 
             --kendo-button-active-hover-text: #{map.get( $swatch, text )};
             --kendo-button-active-hover-bg: #{map.get( $swatch, active )};
-            --kendo-button-active-hover-border: #{map.get( $swatch, active )};
+            --kendo-button-active-hover-border: #{if($name == 'base', $kendo-color-border, map.get( $swatch, active ))};
 
             --kendo-button-selected-text: #{map.get( $swatch, text )};
             --kendo-button-selected-bg: #{map.get( $swatch, active )};
-            --kendo-button-selected-border: #{map.get( $swatch, active )};
+            --kendo-button-selected-border: #{if($name == 'base', $kendo-color-border, map.get( $swatch, active ))};
 
             --kendo-button-selected-hover-text: #{map.get( $swatch, text )};
             --kendo-button-selected-hover-bg: #{map.get( $swatch, active )};
-            --kendo-button-selected-hover-border: #{map.get( $swatch, active )};
+            --kendo-button-selected-hover-border: #{if($name == 'base', $kendo-color-border, map.get( $swatch, active ))};
 
             --kendo-button-disabled-text: #{$kendo-disabled-text};
             --kendo-button-disabled-bg: #{$kendo-disabled-bg};
