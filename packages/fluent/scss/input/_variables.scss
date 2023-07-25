@@ -323,7 +323,7 @@ $kendo-picker-solid-disabled-text: $kendo-disabled-text !default;
 
 /// The background color of the disabled solid Picker components.
 /// @group input
-$kendo-picker-solid-disabled-bg: $kendo-disabled-bg !default;
+$kendo-picker-solid-disabled-bg: if($kendo-new-colors, $kendo-disabled-bg, k-get-theme-color-var( neutral-30 )) !default;
 
 /// The border color of the disabled solid Picker components.
 /// @group input
@@ -407,7 +407,7 @@ $kendo-picker-flat-hover-text: if($kendo-new-colors, $kendo-color-border-hover, 
 
 /// The background color of the hovered flat Picker components.
 /// @group input
-$kendo-picker-flat-hover-bg: $kendo-color-base-hover !default;
+$kendo-picker-flat-hover-bg: if($kendo-new-colors, $kendo-color-base-hover, k-get-theme-color-var( neutral-20 )) !default;
 
 /// The border color of the hovered flat Picker components.
 /// @group input
@@ -622,15 +622,15 @@ $kendo-input-theme-colors: (
 
 /// The background color of the Input prefix.
 /// @group input
-$kendo-input-prefix-bg: $kendo-color-base-hover !default;
+$kendo-input-prefix-bg: if($kendo-new-colors, $kendo-color-base-hover, k-get-theme-color-var( neutral-20 )) !default;
 
 /// The background color of the Input suffix.
 /// @group input
-$kendo-input-suffix-bg: $kendo-color-base-hover !default;
+$kendo-input-suffix-bg: if($kendo-new-colors, $kendo-color-base-hover, k-get-theme-color-var( neutral-20 )) !default;
 
 /// The border color of the invalid Input components.
 /// @group input
-$kendo-input-invalid-border: $kendo-color-error !default;
+$kendo-input-invalid-border: if($kendo-new-colors, $kendo-color-error, #{var( --kendo-invalid-border, #{$kendo-invalid-border} )}) !default;
 /// The text color of the invalid Input components.
 /// @group input
 $kendo-input-invalid-text: var( --kendo-invalid-text, #{$kendo-invalid-text} ) !default;
