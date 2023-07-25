@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.0...v6.7.0-dev.1) (2023-07-25)
+
+
+### Features
+
+* **chat:** rename k-bubble to k-chat-bubble ([8ef2553](https://github.com/telerik/kendo-themes/commit/8ef2553ca8b48a4345924944d61a7bc4fed26c2c))
+* **html:** add chat spec ([3aa8e9f](https://github.com/telerik/kendo-themes/commit/3aa8e9faeb8070269d04066ad13834596d764d14))
+* **html:** add listgroup spec ([c696dc6](https://github.com/telerik/kendo-themes/commit/c696dc6db1c08d159c10282255895e8d9fdd54d9))
+* **html:** add scrollview spec ([a419dae](https://github.com/telerik/kendo-themes/commit/a419daeae678c74ceb63040a914be3ffb56eb1c1))
+* **html:** add skeleton helper ([bcc944f](https://github.com/telerik/kendo-themes/commit/bcc944fdc872ed7533407726297a3ba2e1ba8805))
+* **html:** add tilelayout helpers ([ddbf11b](https://github.com/telerik/kendo-themes/commit/ddbf11bec5262c722e90d94b7f4820eaf6c2b468))
+
+
+
+
+
 # [6.7.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.1-dev.0...v6.7.0-dev.0) (2023-07-24)
 
 

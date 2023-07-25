@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.0...v6.7.0-dev.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* **grid:** remove placeholder-line explicit width ([0ba0185](https://github.com/telerik/kendo-themes/commit/0ba0185321fdf0a084c737ff342a96d7c6b14885))
+* **tilelayout:** set padding through themes instead of inline ([f5c7186](https://github.com/telerik/kendo-themes/commit/f5c718665504bd27071bd6387bc57830074cc3b1))
+
+
+### Features
+
+* **chat:** update chat styles to match new rendering ([b094e2d](https://github.com/telerik/kendo-themes/commit/b094e2d467894ee0652f0bec0da121d0d30d172b))
+* **scrollview:** update scrollview styles to match new rendering ([b7c5cb6](https://github.com/telerik/kendo-themes/commit/b7c5cb6c46b77e5920a92da4298e044e3aa61f28))
+
+
+
+
+
 # [6.7.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.1-dev.0...v6.7.0-dev.0) (2023-07-24)
 
 
