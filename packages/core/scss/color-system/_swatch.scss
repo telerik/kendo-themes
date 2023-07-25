@@ -555,6 +555,9 @@ $_kendo-color-border-focus-rgb: null;
         ),
     );
 
+    $kendo-disabled-bg: $_kendo-disabled-bg;
+    $kendo-disabled-text: $_kendo-disabled-text;
+    $kendo-disabled-border: $_kendo-disabled-border;
     // $kendo-color-primary: $_kendo-color-primary;
     $kendo-color-primary-light: $_kendo-color-primary-light;
     $kendo-color-primary-darker: $_kendo-color-primary-active;
@@ -590,6 +593,6 @@ $_kendo-color-border-focus-rgb: null;
     $kendo-selected-gradient: $kendo-base-gradient;
     $kendo-link-text: $kendo-color-primary;
     $kendo-app-border: $kendo-color-border;
-    $kendo-app-bg: k-try-shade($kendo-body-bg, 0.25);
+    $kendo-app-bg: if($kendo-body-bg != null, k-try-shade($kendo-body-bg, 0.25), null) !default;
     $kendo-loading-bg: $kendo-component-bg;
 }
