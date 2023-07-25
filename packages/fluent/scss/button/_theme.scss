@@ -199,8 +199,83 @@
             --kendo-button-disabled-border: transparent;
         }
 
-        // TODO: flat
-        // TODO: clear
+        .k-button-clear-#{$name} {
+            --kendo-button-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-bg: transparent;
+            --kendo-button-border: transparent;
+
+            --kendo-button-hover-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-hover-bg: transparent;
+            --kendo-button-hover-border: transparent;
+
+            --kendo-button-focus-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-focus-bg: rgba(#{if($name == 'base', map.get( $swatch, text-rgb ), map.get( $swatch, rgb ))}, 0.12);
+            --kendo-button-focus-border: transparent;
+            --kendo-button-focus-outline: none;
+
+            --kendo-button-focus-hover-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-focus-hover-bg: rgba(#{if($name == 'base', map.get( $swatch, text-rgb ), map.get( $swatch, rgb ))}, 0.12);
+            --kendo-button-focus-hover-border: transparent;
+
+            --kendo-button-active-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-active-bg: transparent;
+            --kendo-button-active-border: transparent;
+
+            --kendo-button-active-hover-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-active-hover-bg: transparent;
+            --kendo-button-active-hover-border: transparent;
+
+            --kendo-button-selected-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-selected-bg: transparent;
+            --kendo-button-selected-border: transparent;
+
+            --kendo-button-selected-hover-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-selected-hover-bg: transparent;
+            --kendo-button-selected-hover-border: transparent;
+
+            --kendo-button-disabled-text: #{$kendo-disabled-text};
+            --kendo-button-disabled-bg: transparent;
+            --kendo-button-disabled-border: transparent;
+        }
+
+        .k-button-link-#{$name} {
+            --kendo-button-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-bg: transparent;
+            --kendo-button-border: transparent;
+
+            --kendo-button-hover-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, active ))};
+            --kendo-button-hover-bg: transparent;
+            --kendo-button-hover-border: transparent;
+
+            --kendo-button-focus-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, normal ))};
+            --kendo-button-focus-bg: transparent;
+            --kendo-button-focus-border: transparent;
+            --kendo-button-focus-outline: rgba(#{if($name == 'base', map.get( $swatch, text-rgb ), map.get( $swatch, rgb ))}, 0.12);
+
+            --kendo-button-focus-hover-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, active ))};
+            --kendo-button-focus-hover-bg: transparent;
+            --kendo-button-focus-hover-border: transparent;
+
+            --kendo-button-active-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, active ))};
+            --kendo-button-active-bg: transparent;
+            --kendo-button-active-border: transparent;
+
+            --kendo-button-active-hover-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, active ))};
+            --kendo-button-active-hover-bg: transparent;
+            --kendo-button-active-hover-border: transparent;
+
+            --kendo-button-selected-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, active ))};
+            --kendo-button-selected-bg: transparent;
+            --kendo-button-selected-border: transparent;
+
+            --kendo-button-selected-hover-text: #{if($name == 'base', map.get( $swatch, text ), map.get( $swatch, active ))};
+            --kendo-button-selected-hover-bg: transparent;
+            --kendo-button-selected-hover-border: transparent;
+
+            --kendo-button-disabled-text: #{$kendo-disabled-text};
+            --kendo-button-disabled-bg: transparent;
+            --kendo-button-disabled-border: transparent;
+        }
 
 
     }
