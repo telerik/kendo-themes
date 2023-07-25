@@ -28,6 +28,8 @@ $kendo-color-base-hover: null !default;
 $kendo-color-base-active: null !default;
 $kendo-color-base-selected: null !default;
 $kendo-color-base-focus: null !default;
+$kendo-color-base-lighter: null !default;
+$kendo-color-base-shaded: null !default;
 
 $kendo-color-secondary: null !default;
 $kendo-color-secondary-text: null !default;
@@ -133,6 +135,8 @@ $_kendo-color-base-hover: null;
 $_kendo-color-base-active: null;
 $_kendo-color-base-selected: null;
 $_kendo-color-base-focus: null;
+$_kendo-color-base-lighter: null;
+$_kendo-color-base-shaded: null;
 $_kendo-color-secondary: null;
 $_kendo-color-secondary-rgb: null;
 $_kendo-color-secondary-text: null;
@@ -243,6 +247,8 @@ $_kendo-color-border-focus-rgb: null;
         kendo-color-base-active: $kendo-color-base-active,
         kendo-color-base-selected: $kendo-color-base-selected,
         kendo-color-base-focus: $kendo-color-base-focus,
+        kendo-color-base-lighter: $kendo-color-base-lighter,
+        kendo-color-base-shaded: $kendo-color-base-shaded,
         kendo-color-secondary: $kendo-color-secondary,
         kendo-color-secondary-rgb: k-hex-to-rgb($kendo-color-secondary),
         kendo-color-secondary-text: $kendo-color-secondary-text,
@@ -358,6 +364,8 @@ $_kendo-color-border-focus-rgb: null;
     $_kendo-color-base-active: var(--kendo-color-base-active, k-map-get($kendo-theme-palette, kendo-color-base-active));
     $_kendo-color-base-selected: var(--kendo-color-base-selected, k-map-get($kendo-theme-palette, kendo-color-base-selected));
     $_kendo-color-base-focus: var(--kendo-color-base-focus, k-map-get($kendo-theme-palette, kendo-color-base-focus));
+    $_kendo-color-base-lighter: var(--kendo-color-base-lighter, k-map-get($kendo-theme-palette, kendo-color-base-lighter));
+    $_kendo-color-base-shaded: var(--kendo-color-base-shaded, k-map-get($kendo-theme-palette, kendo-color-base-shaded));
 
     $_kendo-color-secondary: var(--kendo-color-secondary, k-map-get($kendo-theme-palette, kendo-color-secondary));
     $_kendo-color-secondary-rgb: var(--kendo-color-secondary-rgb, k-map-get($kendo-theme-palette, kendo-color-secondary-rgb));
@@ -578,7 +586,7 @@ $_kendo-color-border-focus-rgb: null;
     $kendo-invalid-border: $_kendo-color-error;
     $kendo-invalid-shadow: null;
     $kendo-invalid-bg: null;
-    $kendo-base-bg: $kendo-color-base;
+    $kendo-base-bg: $_kendo-color-base;
     $kendo-base-text: $kendo-body-text;
     $kendo-base-border: $kendo-color-border;
     $kendo-component-header-bg: $kendo-base-bg;

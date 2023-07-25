@@ -9,21 +9,23 @@ $kendo-is-dark-theme: false !default;
 $kendo-subtle-text: #666666 !default;
 $kendo-disabled-text: #8f8f8f !default;
 
-$kendo-color-base: #f5f5f5 !default;
-$kendo-color-base-text: #424242 !default;
-$kendo-color-base-hover: k-try-shade($kendo-color-base, 0.5) !default;
-$kendo-color-base-active: k-try-shade($kendo-color-base, 1.5) !default;
-$kendo-color-base-selected: k-try-shade($kendo-color-base, 1.5) !default;
-$kendo-color-base-focus: null !default;
-
 $kendo-body-bg: #ffffff !default;
-$kendo-body-text: $kendo-color-base-text !default;
+$kendo-body-text: #424242 !default;
 
 $kendo-color-border: rgba($kendo-color-black, 0.08) !default;
 $kendo-color-border-hover: rgba($kendo-color-black, 0.16) !default;
 
 $kendo-color-border-alt: rgba(#666666, 0.5) !default;
 $kendo-color-border-alt-hover: rgba(#666666, 0.8) !default;
+
+$kendo-color-base: #f5f5f5 !default;
+$kendo-color-base-text: #424242 !default;
+$kendo-color-base-hover: k-try-shade($kendo-color-base, 0.5) !default;
+$kendo-color-base-active: k-try-shade($kendo-color-base, 1.5) !default;
+$kendo-color-base-selected: k-try-shade($kendo-color-base, 1.5) !default;
+$kendo-color-base-focus: null !default;
+$kendo-color-base-lighter: k-true-mix($kendo-color-base, $kendo-body-bg, 65%) !default;
+$kendo-color-base-shaded: k-try-shade($kendo-color-base, 1) !default; // VERY SIMILAR TO $kendo-color-base-hover/active/selected
 
 $kendo-color-primary: #ff6358 !default;
 $kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;

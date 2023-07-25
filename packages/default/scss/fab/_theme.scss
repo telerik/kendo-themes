@@ -80,7 +80,7 @@
     .k-fab-item.k-hover .k-fab-item-icon,
     .k-fab-item:hover .k-fab-item-icon {
         border-color: k-try-shade( $kendo-fab-item-icon-border, .5 );
-        background-color: k-try-shade( $kendo-fab-item-icon-bg, .5 );
+        background-color: if($kendo-new-colors, $kendo-color-base-hover, k-try-shade( $kendo-fab-item-icon-bg, .5 ));
     }
 
     // Focus state
@@ -100,7 +100,7 @@
     .k-fab-item:active .k-fab-item-icon {
         @include box-shadow($kendo-fab-item-active-shadow);
         border-color: k-try-shade( $kendo-fab-item-icon-border, 1);
-        background-color: k-try-shade( $kendo-fab-item-icon-bg, 1);
+        background-color: if($kendo-new-colors, $kendo-color-base-shaded, k-try-shade( $kendo-fab-item-icon-bg, 1));
     }
 
     // Disabled state
