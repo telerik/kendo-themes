@@ -1,6 +1,5 @@
 import { Chip, ChipAction } from '../../chip';
-import { MultiSelect } from '../../multiselect';
-
+import { MultiSelect, MultiSelectNormal, MultiSelectArrowButton, MultiSelectValue } from '../../multiselect';
 
 const styles = `
     #test-area {
@@ -17,155 +16,60 @@ export default () =>(
             <span>MultiSelect Outline</span>
             <span>MultiSelect Outline RTL</span>
 
-            <div>Empty</div>
+            <div>placeholder</div>
             <div>
-                <MultiSelect fillMode="outline" placeholder="MultiSelect..." />
+                <MultiSelectNormal fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <MultiSelect fillMode="outline" placeholder="MultiSelect..." />
+                <MultiSelectNormal fillMode="outline" placeholder="placeholder..." />
             </div>
 
-            <div>Arrow button</div>
+            <div>arrow button</div>
             <div>
-                <MultiSelect fillMode="outline" showArrowButton placeholder="MultiSelect with arrow button" />
+                <MultiSelectArrowButton fillMode="outline" placeholder="multiSelect with arrow button" />
             </div>
             <div dir="rtl">
-                <MultiSelect fillMode="outline" showArrowButton placeholder="MultiSelect with arrow button" />
+                <MultiSelectArrowButton fillMode="outline" placeholder="multiSelect with arrow button" />
             </div>
 
-            <div>Normal</div>
+            {[ 'normal', ...MultiSelect.states ].map((state) => (
+                <>
+                    <div>{ state }</div>
+                    <div>
+                        <MultiSelectValue { ...{ [state]: true }} fillMode="outline">{state}</MultiSelectValue>
+                    </div>
+
+                    <div dir="rtl">
+                        <MultiSelectValue { ...{ [state]: true }} fillMode="outline">{state}</MultiSelectValue>
+                    </div>
+                </>
+            ))}
+
+            <div>invalid + focus</div>
             <div>
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Normal" actions={ <ChipAction type="remove"/> } />
-                    )}
-                />
+                <MultiSelectValue fillMode="outline" invalid focus>invalid + focus</MultiSelectValue>
             </div>
             <div dir="rtl">
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Normal" actions={ <ChipAction type="remove"/> } />
-                    )}
-                />
+                <MultiSelectValue fillMode="outline" invalid focus>invalid + focus</MultiSelectValue>
             </div>
 
-            <div>Hover</div>
+            <div>multi line + overflow</div>
             <div>
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Hover" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    hover
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Hover" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    hover
-                />
-            </div>
-
-            <div>Focus</div>
-            <div>
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Focus" focus actions={ <ChipAction type="remove"/> } />
-                    )}
-                    focus
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Focus" focus actions={ <ChipAction type="remove"/> } />
-                    )}
-                    focus
-                />
-            </div>
-
-            <div>Disabled</div>
-            <div>
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Disabled" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    disabled
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Disabled" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    disabled
-                />
-            </div>
-
-            <div>Invalid</div>
-            <div>
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Invalid" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Invalid" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                />
-            </div>
-
-            <div>Invalid + Focus</div>
-            <div>
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Invalid + Focus" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                    focus
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="outline"
-                    tags={(
-                        <Chip text="Invalid + Focus" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                    focus
-                />
-            </div>
-
-            <div>Loading</div>
-            <div>
-                <MultiSelect fillMode="outline" placeholder="Loading..." loading/>
-            </div>
-            <div dir="rtl">
-                <MultiSelect fillMode="outline" placeholder="Loading..." loading />
-            </div>
-
-            <div>Multi Line + Overflow</div>
-            <div>
-                <MultiSelect fillMode="outline"
+                <MultiSelectNormal fillMode="outline"
                     tags={(
                         <>
-                            <Chip text="Multi-line" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="Multi-line + Overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line + overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
                         </>
                     )}
                 />
             </div>
             <div dir="rtl">
-                <MultiSelect fillMode="outline"
+                <MultiSelectNormal fillMode="outline"
                     tags={(
                         <>
-                            <Chip text="Multi-line" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="Multi-line + Overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line + overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
                         </>
                     )}
                 />

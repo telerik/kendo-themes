@@ -22,7 +22,7 @@
 
 
         // Bubbles
-        .k-bubble {
+        .k-chat-bubble {
             @include fill(
                 $kendo-chat-bubble-text,
                 $kendo-chat-bubble-bg,
@@ -35,14 +35,14 @@
             a { color: $kendo-link-text; }
             a:hover { color: $kendo-link-hover-text; }
         }
-        .k-bubble:hover {
+        .k-chat-bubble:hover {
             @include box-shadow( $kendo-chat-bubble-hover-shadow );
         }
-        .k-selected .k-bubble {
+        .k-selected .k-chat-bubble {
             @include box-shadow( $kendo-chat-bubble-selected-shadow );
         }
 
-        .k-alt .k-bubble {
+        .k-alt .k-chat-bubble {
             @include fill(
                 $kendo-chat-alt-bubble-text,
                 $kendo-chat-alt-bubble-bg,
@@ -50,10 +50,10 @@
             );
             @include box-shadow( $kendo-chat-alt-bubble-shadow );
         }
-        .k-alt .k-bubble:hover {
+        .k-alt .k-chat-bubble:hover {
             @include box-shadow( $kendo-chat-alt-bubble-hover-shadow );
         }
-        .k-alt .k-selected .k-bubble {
+        .k-alt .k-selected .k-chat-bubble {
             @include box-shadow( $kendo-chat-alt-bubble-selected-shadow );
         }
 

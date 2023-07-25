@@ -25,109 +25,126 @@
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <span class="k-colspan-all k-col-span-full">jQuery scrollview</span>
         <span>Light mode</span>
         <span>Normal</span>
         <span>Dark mode</span>
         <div class="k-scrollview k-scrollview-light">
-            <div class="k-scrollview-wrap" style="transform: translateX(0px);">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
             </div>
             <div class="k-scrollview-elements">
-                <a class="k-scrollview-prev">
+                <span class="k-scrollview-prev">
                     <span class="k-svg-icon k-icon-xxxl k-svg-i-chevron-left">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416l33.941-33.941z"></path>
                         </svg>
                     </span>
-                </a>
-                <a class="k-scrollview-next">
+                </span>
+                <span class="k-scrollview-next">
                     <span class="k-svg-icon k-icon-xxxl k-svg-i-chevron-right">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96l-33.941 33.941z"></path>
                         </svg>
                     </span>
-                </a>
+                </span>
                 <div class="k-scrollview-nav-wrap">
-                    <ul class="k-scrollview-nav">
-                        <li class="k-link"></li>
-                        <li class="k-link k-primary"></li>
-                        <li class="k-link k-primary k-focus"></li>
-                        <li class="k-link k-focus"></li>
-                        <li class="k-link"></li>
-                    </ul>
+                    <div class="k-scrollview-nav">
+                        <span class="k-link"></span>
+                        <span class="k-link k-primary"></span>
+                        <span class="k-link k-primary k-focus"></span>
+                        <span class="k-link k-focus"></span>
+                        <span class="k-link"></span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="k-scrollview">
-            <div class="k-scrollview-wrap" style="transform: translateX(0px);">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
             </div>
             <div class="k-scrollview-elements">
-                <a class="k-scrollview-prev">
+                <span class="k-scrollview-prev">
                     <span class="k-svg-icon k-icon-xxxl k-svg-i-chevron-left">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416l33.941-33.941z"></path>
                         </svg>
                     </span>
-                </a>
-                <a class="k-scrollview-next">
+                </span>
+                <span class="k-scrollview-next">
                     <span class="k-svg-icon k-icon-xxxl k-svg-i-chevron-right">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96l-33.941 33.941z"></path>
                         </svg>
                     </span>
-                </a>
+                </span>
                 <div class="k-scrollview-nav-wrap">
-                    <ul class="k-scrollview-nav">
-                        <li class="k-link" style="transform: scale(0.5);"></li>
-                        <li class="k-link" style="transform: scale(0.65);"></li>
-                        <li class="k-link" style="transform: scale(0.8);"></li>
-                        <li class="k-link"></li>
-                        <li class="k-link k-primary"></li>
-                        <li class="k-link"></li>
-                        <li class="k-link" style="transform: scale(0.8);"></li>
-                        <li class="k-link" style="transform: scale(0.65);"></li>
-                        <li class="k-link" style="transform: scale(0.5);"></li>
-                    </ul>
+                    <div class="k-scrollview-nav">
+                        <span class="k-link" style="transform: scale(0.5);"></span>
+                        <span class="k-link" style="transform: scale(0.65);"></span>
+                        <span class="k-link" style="transform: scale(0.8);"></span>
+                        <span class="k-link"></span>
+                        <span class="k-link k-primary"></span>
+                        <span class="k-link"></span>
+                        <span class="k-link" style="transform: scale(0.8);"></span>
+                        <span class="k-link" style="transform: scale(0.65);"></span>
+                        <span class="k-link" style="transform: scale(0.5);"></span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="k-scrollview k-scrollview-dark">
-            <div class="k-scrollview-wrap" style="transform: translateX(0px);">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
             </div>
             <div class="k-scrollview-elements">
-                <a class="k-scrollview-prev">
+                <span class="k-scrollview-prev">
                     <span class="k-svg-icon k-icon-xxxl k-svg-i-chevron-left">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416l33.941-33.941z"></path>
                         </svg>
                     </span>
-                </a>
-                <a class="k-scrollview-next">
+                </span>
+                <span class="k-scrollview-next">
                     <span class="k-svg-icon k-icon-xxxl k-svg-i-chevron-right">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96l-33.941 33.941z"></path>
                         </svg>
                     </span>
-                </a>
+                </span>
                 <div class="k-scrollview-nav-wrap">
-                    <ul class="k-scrollview-nav">
-                        <li class="k-link" style="transform: scale(0.5);"></li>
-                        <li class="k-link" style="transform: scale(0.65);"></li>
-                        <li class="k-link"></li>
-                        <li class="k-link k-primary"></li>
-                        <li class="k-link"></li>
-                        <li class="k-link" style="transform: scale(0.65);"></li>
-                        <li class="k-link" style="transform: scale(0.5);"></li>
-                    </ul>
+                    <div class="k-scrollview-nav">
+                        <span class="k-link" style="transform: scale(0.5);"></span>
+                        <span class="k-link" style="transform: scale(0.65);"></span>
+                        <span class="k-link"></span>
+                        <span class="k-link k-primary"></span>
+                        <span class="k-link"></span>
+                        <span class="k-link" style="transform: scale(0.65);"></span>
+                        <span class="k-link" style="transform: scale(0.5);"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,34 +152,44 @@
         <span></span>
         <span></span>
         <div class="k-scrollview k-rtl">
-            <div class="k-scrollview-wrap" style="transform: translateX(0px);">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
             </div>
             <div class="k-scrollview-elements">
-                <a class="k-scrollview-prev">
+                <span class="k-scrollview-prev">
                     <span class="k-svg-icon k-icon-xxxl k-svg-i-chevron-right">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96l-33.941 33.941z"></path>
                         </svg>
                     </span>
-                </a>
-                <a class="k-scrollview-next">
+                </span>
+                <span class="k-scrollview-next">
                     <span class="k-svg-icon k-icon-xxxl k-svg-i-chevron-left">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="m353.941 382.059-126.06-126.06 126.06-126.061L320 96 160 255.999 320 416l33.941-33.941z"></path>
                         </svg>
                     </span>
-                </a>
+                </span>
                 <div class="k-scrollview-nav-wrap">
-                    <ul class="k-scrollview-nav">
-                        <li class="k-link"></li>
-                        <li class="k-link k-primary"></li>
-                        <li class="k-link k-primary k-focus"></li>
-                        <li class="k-link k-focus"></li>
-                        <li class="k-link"></li>
-                    </ul>
+                    <div class="k-scrollview-nav">
+                        <span class="k-link" style="transform: scale(0.5);"></span>
+                        <span class="k-link" style="transform: scale(0.65);"></span>
+                        <span class="k-link" style="transform: scale(0.8);"></span>
+                        <span class="k-link"></span>
+                        <span class="k-link k-primary"></span>
+                        <span class="k-link"></span>
+                        <span class="k-link" style="transform: scale(0.8);"></span>
+                        <span class="k-link" style="transform: scale(0.65);"></span>
+                        <span class="k-link" style="transform: scale(0.5);"></span>
+                    </div>
                 </div>
             </div>
         </div>

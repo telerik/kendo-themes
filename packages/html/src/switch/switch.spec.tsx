@@ -1,4 +1,4 @@
-import { classNames, optionClassNames, stateClassNames, States, Size } from '../misc';
+import { classNames, optionClassNames, stateClassNames, States, Size, Roundness } from '../misc';
 
 export const SWITCH_CLASSNAME = `k-switch`;
 
@@ -11,25 +11,27 @@ const states = [
 
 const options = {
     size: [ Size.small, Size.medium, Size.large ],
+    trackRounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
+    thumbRounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ]
 };
 
 export type KendoSwitchOptions = {
-  size?: (typeof options.size)[number] | null;
+    size?: (typeof options.size)[number] | null;
+    trackRounded?: (typeof options.trackRounded)[number] | null;
+    thumbRounded?: (typeof options.thumbRounded)[number] | null;
 };
 
 export type KendoSwitchProps = KendoSwitchOptions & {
     onLabel?: string;
     offLabel?: string;
-    trackRounded?: null | "sm" | "md" | "lg" | "full";
-    thumbRounded?: null | "sm" | "md" | "lg" | "full";
 };
 
 export type KendoSwitchState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
     size: Size.medium,
-    trackRounded: "full",
-    thumbRounded: "full"
+    trackRounded: Roundness.full,
+    thumbRounded: Roundness.full
 };
 
 export const Switch = (
@@ -73,9 +75,9 @@ export const Switch = (
             <span
                 className={classNames(
                     'k-switch-track',
-                    {
-                        [`k-rounded-${trackRounded}`]: trackRounded
-                    }
+                    optionClassNames(SWITCH_CLASSNAME, {
+                        rounded: trackRounded
+                    })
                 )}>
                 {onLabel && <span className="k-switch-label-on">{onLabel}</span>}
                 {offLabel && <span className="k-switch-label-off">{offLabel}</span>}
@@ -84,9 +86,9 @@ export const Switch = (
                 <span
                     className={classNames(
                         'k-switch-thumb',
-                        {
-                            [`k-rounded-${thumbRounded}`]: thumbRounded
-                        }
+                        optionClassNames(SWITCH_CLASSNAME, {
+                            rounded: thumbRounded
+                        })
                     )}>
                 </span>
             </span>

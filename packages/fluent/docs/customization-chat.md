@@ -358,26 +358,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chat-toolbar-padding-x</td>
-    <td></td>
-    <td><code>$kendo-toolbar-md-padding-x</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the toolbar in the chat.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chat-toolbar-padding-y</td>
-    <td></td>
-    <td><code>$kendo-toolbar-md-padding-y</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the toolbar in the chat.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-chat-toolbar-spacing</td>
     <td></td>
     <td><code>$kendo-toolbar-md-spacing</code></td>

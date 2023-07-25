@@ -61,10 +61,6 @@ $kendo-pager-focus-text: var( --kendo-pager-text, #{$kendo-pager-text}) !default
 /// @group pager
 $kendo-pager-focus-border: k-get-theme-color-var( neutral-130 ) !default;
 
-/// The spacing between the Pager sections.
-/// @group pager
-$kendo-pager-section-spacing: 1em !default;
-
 /// The border radius of the Pager items.
 /// @group pager
 $kendo-pager-item-border-radius: 0 !default;

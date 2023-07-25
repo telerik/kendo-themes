@@ -90,10 +90,6 @@
                 outline: none;
             }
 
-            .k-placeholder-line {
-                width: var( --kendo-grid-cell-placeholder-width, #{$kendo-grid-cell-placeholder-width} );
-            }
-
             > .k-radio,
             > .k-radio-wrap,
             > .k-checkbox,
@@ -711,14 +707,6 @@
     }
     .k-grid-pager-top {
         border-width: 0 0 1px;
-    }
-
-    .k-pager-input {
-        .k-numerictextbox {
-            margin-block: 0;
-            margin-inline: calc( var( --kendo-font-size, 14px ) / 2 );
-            width: 5em;
-        }
     }
 
     .k-grid-virtual .k-grid-content {

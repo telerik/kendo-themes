@@ -1,110 +1,107 @@
 import { Icon } from '../../icon';
+import { ListGroupItem, ListGroupNormal } from '../../listgroup';
 
 
-export default () =>(
+export default () => (
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
-
             <span className="col-4">LTR</span>
 
             <section>
-                <ul className="k-listgroup">
-                    <li className="k-listgroup-item">Item</li>
-                    <li className="k-listgroup-item">
-                        <a href="#" className="k-link">Link</a>
-                    </li>
-                    <li className="k-listgroup-item">
-                        <span className="k-link">Pseudo link</span>
-                    </li>
-                </ul>
+                <ListGroupNormal>
+                    <ListGroupItem text="Item"></ListGroupItem>
+                    <ListGroupItem text="Link" href="#"></ListGroupItem>
+                    <ListGroupItem text="Pseudo link" pseudo></ListGroupItem>
+                </ListGroupNormal>
             </section>
 
             <section>
-                <ul className="k-listgroup">
-                    <li className="k-listgroup-item">
+                <ListGroupNormal>
+                    <ListGroupItem>
                         <a href="#" className="k-link">
                             Link
                             <span className="k-select"><Icon icon="chevron-right" /></span>
                         </a>
-                    </li>
-                    <li className="k-listgroup-item k-listgroup-item-segmented">
-                        <span className="k-link">Pseudo link</span>
-                        <span className="k-select"><Icon icon="chevron-right" /></span>
-                    </li>
-                </ul>
+                    </ListGroupItem>
+                    <ListGroupItem className="k-listgroup-item-segmented">
+                        <>
+                            <span className="k-link">Pseudo link</span>
+                            <span className="k-select"><Icon icon="chevron-right" /></span>
+                        </>
+                    </ListGroupItem>
+                </ListGroupNormal>
             </section>
 
             <hr className="k-hr col-4" />
 
             <section className="col-2">
-                <ul className="k-listgroup">
-                    <li className="k-listgroup-item">
+                <ListGroupNormal>
+                    <ListGroupItem>
                         <span className="k-listgroup-form-row">
                             <span className="k-listgroup-form-field-label">Select</span>
                             <span className="k-listgroup-form-field-wrapper">
                                 <select></select>
                             </span>
                         </span>
-                    </li>
-                    <li className="k-listgroup-item">
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <span className="k-listgroup-form-row">
                             <span className="k-listgroup-form-field-label">Text</span>
                             <span className="k-listgroup-form-field-wrapper">
                                 <input type="text" />
                             </span>
                         </span>
-                    </li>
-                    <li className="k-listgroup-item">
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <span className="k-listgroup-form-row">
                             <span className="k-listgroup-form-field-label">Password</span>
                             <span className="k-listgroup-form-field-wrapper">
                                 <input type="password" />
                             </span>
                         </span>
-                    </li>
-                    <li className="k-listgroup-item">
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <span className="k-listgroup-form-row">
                             <span className="k-listgroup-form-field-label">Date</span>
                             <span className="k-listgroup-form-field-wrapper">
                                 <input type="date" />
                             </span>
                         </span>
-                    </li>
-                    <li className="k-listgroup-item">
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <span className="k-listgroup-form-row">
                             <span className="k-listgroup-form-field-label">Time</span>
                             <span className="k-listgroup-form-field-wrapper">
                                 <input type="time" />
                             </span>
                         </span>
-                    </li>
-                    <li className="k-listgroup-item">
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <span className="k-listgroup-form-row">
                             <span className="k-listgroup-form-field-label">Number</span>
                             <span className="k-listgroup-form-field-wrapper">
                                 <input type="number" />
                             </span>
                         </span>
-                    </li>
-                    <li className="k-listgroup-item">
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <span className="k-listgroup-form-row">
                             <span className="k-listgroup-form-field-label">Radio</span>
                             <span className="k-listgroup-form-field-wrapper">
                                 <input type="radio" />
                             </span>
                         </span>
-                    </li>
-                    <li className="k-listgroup-item">
+                    </ListGroupItem>
+                    <ListGroupItem>
                         <span className="k-listgroup-form-row">
                             <span className="k-listgroup-form-field-label">Checkbox</span>
                             <span className="k-listgroup-form-field-wrapper">
                                 <input type="checkbox" />
                             </span>
                         </span>
-                    </li>
-                </ul>
+                    </ListGroupItem>
+                </ListGroupNormal>
             </section>
-
         </div>
     </>
 );

@@ -71,12 +71,12 @@
                 inset-inline-start: 0;
             }
 
-            .k-first .k-bubble,
-            .k-only .k-bubble {
+            .k-first .k-chat-bubble,
+            .k-only .k-chat-bubble {
                 border-end-start-radius: var( --kendo-chat-bubble-border-radius-sm, #{ $kendo-chat-bubble-border-radius-sm } );
             }
-            .k-middle .k-bubble,
-            .k-last .k-bubble {
+            .k-middle .k-chat-bubble,
+            .k-last .k-chat-bubble {
                 border-end-start-radius: var( --kendo-chat-bubble-border-radius-sm, #{ $kendo-chat-bubble-border-radius-sm } );
             }
         }
@@ -93,12 +93,12 @@
                 inset-inline-end: 0;
             }
 
-            .k-first .k-bubble,
-            .k-only .k-bubble {
+            .k-first .k-chat-bubble,
+            .k-only .k-chat-bubble {
                 border-end-end-radius: var( --kendo-chat-bubble-border-radius-sm, #{ $kendo-chat-bubble-border-radius-sm } );
             }
-            .k-middle .k-bubble,
-            .k-last .k-bubble {
+            .k-middle .k-chat-bubble,
+            .k-last .k-chat-bubble {
                 border-end-end-radius: var( --kendo-chat-bubble-border-radius-sm, #{ $kendo-chat-bubble-border-radius-sm } );
             }
         }
@@ -139,7 +139,7 @@
 
 
         // Bubble
-        .k-bubble {
+        .k-chat-bubble {
             @include border-radius( var( --kendo-chat-bubble-border-radius, #{ $kendo-chat-bubble-border-radius } ) );
             padding-inline: var( --kendo-chat-bubble-padding-x, #{ $kendo-chat-bubble-padding-x } );
             padding-block: var( --kendo-chat-bubble-padding-y, #{ $kendo-chat-bubble-padding-y } );
@@ -175,10 +175,7 @@
 
         // Avatar
         .k-avatar {
-            @include border-radius( 100% );
             margin: 0;
-            width: var( --kendo-chat-avatar-size, #{ $kendo-chat-avatar-size } );
-            height: var( --kendo-chat-avatar-size, #{ $kendo-chat-avatar-size } );
             position: absolute;
 
             @at-root .k-message-group:not(.k-alt) > .k-avatar {
@@ -305,7 +302,7 @@
             }
 
             .k-rtl &,
-            &[dir="rtl"] {
+            [dir="rtl"] & {
                 transform: scaleX(-1);
             }
         }
@@ -316,6 +313,11 @@
 @mixin kendo-chat-card--layout() {
     .k-chat .k-card-list {
         margin: $kendo-chat-bubble-spacing 0 0;
+    }
+
+    .k-message-group.k-alt + .k-card-list,
+    .k-message-group.k-alt + kendo-chat-message-attachments.k-card-list {
+        align-self: flex-end;
     }
 
     .k-chat .k-card-deck {
@@ -330,8 +332,7 @@
         overflow-x: auto;
         scroll-behavior: smooth;
     }
-    .k-chat .k-card-deck .k-card,
-    .k-chat .k-card-deck .k-card-wrap {
+    .k-chat .k-card-deck .k-card {
         width: 200px;
     }
 
@@ -402,16 +403,10 @@
 
 @mixin kendo-chat-toolbar--layout() {
 
-    .k-chat-toolbar,
-    .k-chat .k-toolbar-box {
-        padding-inline: var( --kendo-chat-toolbar-padding-x, #{ $kendo-chat-toolbar-padding-x } );
-        padding-block: var( --kendo-chat-toolbar-padding-y, #{ $kendo-chat-toolbar-padding-y } );
+    .k-chat-toolbar {
         width: 100%;
         border-width: 1px 0 0;
-        box-sizing: border-box;
         flex: none;
-        overflow: hidden;
-        position: relative;
 
         &::before {
             display: none;

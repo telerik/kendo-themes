@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:map";
 @use "../core/" as *;
 @use "../card/_variables.scss" as *;
 
@@ -8,6 +9,14 @@ $kendo-tile-layout-border-width: 0px !default;
 /// The background color of the TileLayout.
 /// @group tilelayout
 $kendo-tile-layout-bg: k-get-theme-color-var( neutral-10 ) !default;
+
+/// The horizontal padding of the TileLayout.
+/// @group tilelayout
+$kendo-tile-layout-padding-x: map.get( $kendo-spacing, 4 ) !default;
+
+/// The vertical padding of the TileLayout
+/// @group tilelayout
+$kendo-tile-layout-padding-y: $kendo-tile-layout-padding-x !default;
 
 /// The width of the border around the TileLayout hint.
 /// @group tilelayout
