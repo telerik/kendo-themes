@@ -1,30 +1,17 @@
-import { Pager } from '../../pager';
+import { Pager, PagerNormal, PagerInput } from "../../pager";
 
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
-
-            <span></span>
-            <span>Large Numeric</span>
-            <Pager size="large" />
-            <span></span>
-            <span>Large Input</span>
-            <Pager size="large" type="input" />
-
-            <span></span>
-            <span>Medium Numeric</span>
-            <Pager />
-            <span></span>
-            <span>Medium Input</span>
-            <Pager type="input" />
-
-            <span></span>
-            <span>Small Numeric</span>
-            <Pager size="small" />
-            <span></span>
-            <span>Small Input</span>
-            <Pager size="small" type="input" />
+            { Pager.options.size.map((size) => (
+                <>
+                    <span>{size} numeric</span>
+                    <PagerNormal size={size} />
+                    <span>{size} input</span>
+                    <PagerInput size={size}/>
+                </>
+            ))}
         </div>
     </>
 );
