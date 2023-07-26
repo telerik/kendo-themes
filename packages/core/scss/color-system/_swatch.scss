@@ -75,6 +75,7 @@ $kendo-color-error-hover: null !default;
 $kendo-color-error-active: null !default;
 $kendo-color-error-selected: null !default;
 $kendo-color-error-focus: null !default;
+$kendo-color-error-dim: null !default;
 
 $kendo-color-light: null !default;
 $kendo-color-light-text: null !default;
@@ -191,6 +192,7 @@ $_kendo-color-error-hover: null;
 $_kendo-color-error-active: null;
 $_kendo-color-error-selected: null;
 $_kendo-color-error-focus: null;
+$_kendo-color-error-dim: null;
 $_kendo-color-light: null;
 $_kendo-color-light-rgb: null;
 $_kendo-color-light-text: null;
@@ -306,6 +308,7 @@ $_kendo-color-border-focus-rgb: null;
         kendo-color-error-active: $kendo-color-error-active,
         kendo-color-error-selected: $kendo-color-error-selected,
         kendo-color-error-focus: $kendo-color-error-focus,
+        kendo-color-error-dim: $kendo-color-error-dim,
         kendo-color-light: $kendo-color-light,
         kendo-color-light-rgb: k-hex-to-rgb($kendo-color-light),
         kendo-color-light-text: $kendo-color-light-text,
@@ -432,6 +435,7 @@ $_kendo-color-border-focus-rgb: null;
     $_kendo-color-error-active: var(--kendo-color-error-active, k-map-get($kendo-theme-palette, kendo-color-error-active));
     $_kendo-color-error-selected: var(--kendo-color-error-selected, k-map-get($kendo-theme-palette, kendo-color-error-selected));
     $_kendo-color-error-focus: var(--kendo-color-error-focus, k-map-get($kendo-theme-palette, kendo-color-error-focus));
+    $_kendo-color-error-dim: var(--kendo-color-error-dim, k-map-get($kendo-theme-palette, kendo-color-error-dim));
 
     $_kendo-color-light: var(--kendo-color-light, k-map-get($kendo-theme-palette, kendo-color-light));
     $_kendo-color-light-rgb: var(--kendo-color-light-rgb, k-map-get($kendo-theme-palette, kendo-color-light-rgb));
@@ -598,7 +602,7 @@ $_kendo-color-border-focus-rgb: null;
     $kendo-invalid-border: $_kendo-color-error;
     $kendo-invalid-shadow: null;
     $kendo-invalid-bg: null;
-    $kendo-color-error: $kendo-color-error;
+    $kendo-color-error: $_kendo-color-error;
     $kendo-base-bg: $_kendo-color-base;
     $kendo-base-text: $_kendo-body-text;
     $kendo-base-border: $kendo-color-border;

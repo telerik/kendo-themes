@@ -85,6 +85,7 @@ $kendo-color-error-hover: k-try-shade($kendo-color-error, 0.5) !default;
 $kendo-color-error-active: k-try-shade($kendo-color-error, 1.5) !default;
 $kendo-color-error-selected: k-try-shade($kendo-color-error, 1.5) !default;
 $kendo-color-error-focus: null !default;
+$kendo-color-error-dim: k-color-tint($kendo-color-error, 5) !default;
 
 $kendo-color-light: #ebebeb !default;
 $kendo-color-light-text: k-contrast-legacy($kendo-color-light) !default;

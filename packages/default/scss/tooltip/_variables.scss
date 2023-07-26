@@ -31,5 +31,5 @@ $kendo-tooltip-warning-bg: $kendo-color-warning !default;
 $kendo-tooltip-warning-text: k-contrast-legacy( $kendo-tooltip-warning-bg ) !default;
 $kendo-tooltip-warning-border: $kendo-tooltip-warning-bg !default;
 $kendo-tooltip-error-bg: $kendo-color-error !default;
-$kendo-tooltip-error-text: k-contrast-legacy( $kendo-tooltip-error-bg ) !default;
+$kendo-tooltip-error-text: if($kendo-new-colors, $kendo-color-error-text, k-contrast-legacy( $kendo-tooltip-error-bg )) !default;
 $kendo-tooltip-error-border: $kendo-tooltip-error-bg !default;

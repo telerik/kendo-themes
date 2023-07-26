@@ -82,7 +82,7 @@ $kendo-gantt-planned-bg: $kendo-color-primary !default;
 $kendo-gantt-planned-border: $kendo-gantt-planned-bg !default;
 
 $kendo-gantt-delayed-bg: $kendo-color-error !default;
-$kendo-gantt-delayed-bg-lighter: k-color-tint($kendo-gantt-delayed-bg, 5) !default;
+$kendo-gantt-delayed-bg-lighter: if($kendo-new-colors, $kendo-color-error-dim, k-color-tint($kendo-gantt-delayed-bg, 5)) !default;
 
 $kendo-gantt-advanced-bg: $kendo-color-success !default;
 $kendo-gantt-advanced-bg-lighter: k-color-tint($kendo-gantt-advanced-bg, 5) !default;
