@@ -612,7 +612,7 @@ $_kendo-color-border-focus-rgb: null;
     $kendo-color-info: $_kendo-color-info;
     $kendo-base-bg: $_kendo-color-base;
     $kendo-base-text: $_kendo-body-text;
-    $kendo-base-border: $kendo-color-border;
+    $kendo-base-border: $_kendo-color-border;
     $kendo-component-header-bg: $kendo-base-bg;
     $kendo-component-header-text: $kendo-color-base-text;
     $kendo-component-header-border: $kendo-base-border;

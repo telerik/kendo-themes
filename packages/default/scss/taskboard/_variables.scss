@@ -33,7 +33,7 @@ $kendo-taskboard-column-border: transparent !default;
 
 $kendo-taskboard-column-focus-bg: null !default;
 $kendo-taskboard-column-focus-text: null !default;
-$kendo-taskboard-column-focus-border: k-try-shade( $kendo-base-border, 2.5 ) !default;
+$kendo-taskboard-column-focus-border: if($kendo-new-colors, $kendo-color-border-focus, k-try-shade( $kendo-base-border, 2.5 )) !default;
 
 $kendo-taskboard-column-header-padding-y: k-math-div( $kendo-taskboard-spacer, 2 ) !default;
 $kendo-taskboard-column-header-padding-x: $kendo-taskboard-column-header-padding-y !default;
