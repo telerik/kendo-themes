@@ -20,16 +20,11 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        width: calc( var(--kendo-scrollview-views, 1) * 100% );
+        width: 100%;
         display: flex;
         flex-flow: row nowrap;
         cursor: default;
         white-space: nowrap;
-
-        .k-scrollview-view {
-            width: calc( 100% / var(--kendo-scrollview-views, 1) );
-            flex: 0 0 calc( 100% / var(--kendo-scrollview-views, 1) );
-        }
 
         img {
             user-select: none;
@@ -37,7 +32,17 @@
 
     }
 
+     // Can be removed once Angular are able to rely on the animations from the themes
+     kendo-scrollview.k-scrollview .k-scrollview-wrap > .k-scrollview-view {
+        display: inline-block;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     .k-scrollview-wrap.k-scrollview-animate {
+        width: calc( var(--kendo-scrollview-views, 1) * 100% );
         transition-duration: $kendo-scrollview-transition-duration;
         transition-timing-function: $kendo-scrollview-transition-timing-function;
         transform: translateX( calc( -100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
@@ -46,6 +51,12 @@
         .k-rtl & {
             transform: translateX( calc( 100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
         }
+
+        .k-scrollview-view {
+            width: calc( 100% / var(--kendo-scrollview-views, 1) );
+            flex: 0 0 calc( 100% / var(--kendo-scrollview-views, 1) );
+        }
+
     }
 
     .k-scrollview-nav-wrap {
