@@ -71,6 +71,7 @@ $kendo-color-success-hover: k-try-shade($kendo-color-success, 0.5) !default;
 $kendo-color-success-active: k-try-shade($kendo-color-success, 1.5) !default;
 $kendo-color-success-selected: k-try-shade($kendo-color-success, 1.5) !default;
 $kendo-color-success-focus: null !default;
+$kendo-color-success-dim: k-color-tint($kendo-color-success, 5) !default;
 
 $kendo-color-warning: #ffc000 !default;
 $kendo-color-warning-text: k-contrast-legacy($kendo-color-warning) !default;

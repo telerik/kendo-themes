@@ -61,6 +61,7 @@ $kendo-color-success-hover: null !default;
 $kendo-color-success-active: null !default;
 $kendo-color-success-selected: null !default;
 $kendo-color-success-focus: null !default;
+$kendo-color-success-dim: null !default;
 
 $kendo-color-warning: null !default;
 $kendo-color-warning-text: null !default;
@@ -176,6 +177,7 @@ $_kendo-color-success-hover: null;
 $_kendo-color-success-active: null;
 $_kendo-color-success-selected: null;
 $_kendo-color-success-focus: null;
+$_kendo-color-success-dim: null;
 $_kendo-color-warning: null;
 $_kendo-color-warning-rgb: null;
 $_kendo-color-warning-text: null;
@@ -292,6 +294,7 @@ $_kendo-color-border-focus-rgb: null;
         kendo-color-success-active: $kendo-color-success-active,
         kendo-color-success-selected: $kendo-color-success-selected,
         kendo-color-success-focus: $kendo-color-success-focus,
+        kendo-color-success-dim: $kendo-color-success-dim,
         kendo-color-warning: $kendo-color-warning,
         kendo-color-warning-rgb: k-hex-to-rgb($kendo-color-warning),
         kendo-color-warning-text: $kendo-color-warning-text,
@@ -417,6 +420,7 @@ $_kendo-color-border-focus-rgb: null;
     $_kendo-color-success-active: var(--kendo-color-success-active, k-map-get($kendo-theme-palette, kendo-color-success-active));
     $_kendo-color-success-selected: var(--kendo-color-success-selected, k-map-get($kendo-theme-palette, kendo-color-success-selected));
     $_kendo-color-success-focus: var(--kendo-color-success-focus, k-map-get($kendo-theme-palette, kendo-color-success-focus));
+    $_kendo-color-success-dim: var(--kendo-color-success-dim, k-map-get($kendo-theme-palette, kendo-color-success-dim));
 
     $_kendo-color-warning: var(--kendo-color-warning, k-map-get($kendo-theme-palette, kendo-color-warning));
     $_kendo-color-warning-rgb: var(--kendo-color-warning-rgb, k-map-get($kendo-theme-palette, kendo-color-warning-rgb));
@@ -603,6 +607,7 @@ $_kendo-color-border-focus-rgb: null;
     $kendo-invalid-shadow: null;
     $kendo-invalid-bg: null;
     $kendo-color-error: $_kendo-color-error;
+    $kendo-color-success: $_kendo-color-success;
     $kendo-base-bg: $_kendo-color-base;
     $kendo-base-text: $_kendo-body-text;
     $kendo-base-border: $kendo-color-border;
