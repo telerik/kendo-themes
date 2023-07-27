@@ -1,0 +1,165 @@
+$primary-palette-name: null !default;
+$secondary-palette-name: null !default;
+$tertiary-palette-name: null !default;
+$adjust-contrast: null !default;
+$theme-type: null !default;
+$primary-palette: null !default;
+$secondary-palette: null !default;
+$tertiary-palette: null !default;
+
+$theme: null !default;
+$kendo-is-dark-theme: null !default;
+
+$kendo-color-primary: null !default;
+$kendo-color-primary-lighter: null !default;
+$kendo-color-primary-darker: null !default;
+$kendo-color-primary-contrast: null !default;
+
+$kendo-color-secondary: null !default;
+$kendo-color-secondary-lighter: null !default;
+$kendo-color-secondary-darker: null !default;
+$kendo-color-secondary-contrast: null !default;
+
+$kendo-color-tertiary: null !default;
+$kendo-color-tertiary-lighter: null !default;
+$kendo-color-tertiary-darker: null !default;
+$kendo-color-tertiary-contrast: null !default;
+
+$kendo-color-info: null !default;
+$kendo-color-info-lighter: null !default;
+$kendo-color-info-darker: null !default;
+
+$kendo-color-warning: null !default;
+$kendo-color-warning-lighter: null !default;
+$kendo-color-warning-darker: null !default;
+
+$kendo-color-error: null !default;
+$kendo-color-error-lighter: null !default;
+$kendo-color-error-darker: null !default;
+
+$kendo-color-dark: null !default;
+$kendo-color-light: null !default;
+$kendo-color-inverse: null !default;
+
+$kendo-body-bg: null !default;
+$kendo-body-text: null !default;
+
+$kendo-subtle-text: null !default;
+
+$kendo-app-bg: null !default;
+$kendo-app-text: null !default;
+$kendo-app-border: null !default;
+
+$kendo-link-text: null !default;
+$kendo-link-hover-text: null !default;
+
+$kendo-component-bg: null !default;
+$kendo-component-text: null !default;
+$kendo-component-border: null !default;
+
+$kendo-base-bg: null !default;
+$kendo-base-text: null !default;
+$kendo-base-border: null !default;
+$kendo-base-gradient: null !default;
+
+$kendo-hover-bg: null !default;
+$kendo-hover-text: null !default;
+$kendo-hover-border: null !default;
+$kendo-hover-gradient: null !default;
+
+$kendo-selected-bg: null !default;
+$kendo-selected-text: null !default;
+$kendo-selected-border: null !default;
+$kendo-selected-gradient: null !default;
+
+$kendo-selected-hover-bg: null !default;
+$kendo-selected-hover-text: null !default;
+$kendo-selected-hover-border: null !default;
+$kendo-selected-hover-gradient: null !default;
+
+$kendo-disabled-text: null !default;
+
+$kendo-component-header-bg: null !default;
+$kendo-component-header-text: null !default;
+$kendo-component-header-border: null !default;
+$kendo-component-header-gradient: null !default;
+
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: null !default;
+$kendo-invalid-border: null !default;
+$kendo-invalid-shadow: null !default;
+
+@if ($kendo-new-colors) {
+    $kendo-color-primary-contrast: $kendo-color-primary-text;
+    $kendo-color-primary-darker: $kendo-color-primary-hover;
+    $kendo-component-bg: $kendo-color-base;
+
+    $kendo-base-bg: $kendo-color-base;
+    $kendo-base-text: $kendo-color-base-text;
+    $kendo-base-border: $kendo-color-border;
+
+    $kendo-component-border: $kendo-base-border;
+    $kendo-component-text: $kendo-color-base-text;
+
+    $kendo-component-header-bg: $kendo-color-base;
+    $kendo-component-header-text: $kendo-color-base;
+    $kendo-component-header-border: $kendo-color-border;
+
+    $kendo-hover-bg: $kendo-color-border-hover;
+    $kendo-hover-text: $kendo-base-text !default;
+    $kendo-hover-border: $kendo-color-border-hover !default;
+    $kendo-hover-gradient: null !default;
+
+    $kendo-selected-bg: $kendo-color-secondary !default;
+    $kendo-invalid-bg: null !default;
+    $kendo-invalid-text: $kendo-color-error !default;
+    $kendo-invalid-border: $kendo-color-error !default;
+    $kendo-invalid-shadow: null !default;
+} @else {
+    $kendo-color-primary-lighter: material-color( $primary-palette, lighter ) !default;
+    $kendo-color-primary-darker: material-color( $primary-palette, darker ) !default;
+    $kendo-color-primary-contrast: material-color( $primary-palette, main-contrast ) !default;
+    $kendo-color-secondary-lighter: material-color( $secondary-palette, lighter ) !default;
+    $kendo-color-secondary-darker: material-color( $secondary-palette, darker ) !default;
+    $kendo-color-secondary-contrast: material-color( $secondary-palette, main-contrast ) !default;
+    $kendo-color-tertiary-lighter: material-color($tertiary-palette, lighter) !default;
+    $kendo-color-tertiary-darker: material-color($tertiary-palette, darker) !default;
+    $kendo-color-tertiary-contrast: material-color($tertiary-palette, main-contrast) !default;
+    $kendo-color-info-lighter: k-color-tint( $kendo-color-info, 2 ) !default;
+    $kendo-color-info-darker: k-color-shade( $kendo-color-info, 2 ) !default;
+    $kendo-color-success-lighter: k-color-tint( $kendo-color-success, 2 ) !default;
+    $kendo-color-success-darker: k-color-shade( $kendo-color-success, 2 ) !default;
+    $kendo-color-warning-lighter: k-color-tint( $kendo-color-warning, 2 ) !default;
+    $kendo-color-warning-darker: k-color-shade( $kendo-color-warning, 2 ) !default;
+    $kendo-color-error-lighter: k-color-tint( $kendo-color-error, 2 ) !default;
+    $kendo-color-error-darker: k-color-shade( $kendo-color-error, 2 ) !default;
+    $kendo-link-text: $kendo-color-secondary !default;
+    $kendo-link-hover-text: $kendo-color-secondary-darker !default;
+    $kendo-component-bg: k-map-get( $theme, component-bg ) !default;
+    $kendo-component-text: k-map-get( $theme, component-text ) !default;
+    $kendo-component-border: k-map-get( $theme, component-border ) !default;
+    $kendo-base-bg: k-map-get( $theme, base-bg ) !default;
+    $kendo-base-text: k-map-get( $theme, component-text ) !default;
+    $kendo-base-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
+    $kendo-base-gradient: null !default;
+    $kendo-hover-bg: k-map-get( $theme, hover-bg ) !default;
+    $kendo-hover-text: $kendo-base-text !default;
+    $kendo-hover-border: rgba( $kendo-base-border, .15 ) !default;
+    $kendo-hover-gradient: null !default;
+    $kendo-selected-bg: $kendo-color-secondary !default;
+    $kendo-selected-text: $kendo-color-secondary-contrast !default;
+    $kendo-selected-border: rgba( $kendo-base-border, .1 ) !default;
+    $kendo-selected-gradient: null !default;
+    $kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
+    $kendo-selected-hover-text: $kendo-selected-text !default;
+    $kendo-selected-hover-border: rgba( $kendo-base-border, .1 ) !default;
+    $kendo-selected-hover-gradient: null !default;
+    $kendo-component-header-bg: $kendo-base-bg !default;
+    $kendo-component-header-text: $kendo-base-text !default;
+    $kendo-component-header-border: $kendo-base-border !default;
+    $kendo-component-header-gradient: null !default;
+    $kendo-invalid-bg: null !default;
+    $kendo-invalid-text: $kendo-color-error !default;
+    $kendo-invalid-border: $kendo-color-error !default;
+    $kendo-invalid-shadow: null !default;
+}

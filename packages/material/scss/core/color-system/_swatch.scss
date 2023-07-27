@@ -1,0 +1,48 @@
+$primary-palette-name: indigo !default;
+$secondary-palette-name: pink !default;
+$tertiary-palette-name: teal !default;
+
+$adjust-contrast: true !default;
+$theme-type: light !default; // light or dark
+
+$primary-palette: material-palette($primary-palette-name, 500, 300, 700, $adjust-contrast) !default;
+$secondary-palette: material-palette($secondary-palette-name, 500, 300, 700, $adjust-contrast) !default;
+$tertiary-palette: material-palette($tertiary-palette-name, 500, 300, 700, $adjust-contrast) !default;
+
+// Color settings
+// Apply material theme, as early as possible
+$theme: material-theme($primary-palette, $secondary-palette, $theme-type) !default;
+$kendo-is-dark-theme: k-map-get($theme, is-dark) !default;
+
+$kendo-color-base: #ffffff !default;
+$kendo-color-base-text: k-map-get( $theme, component-text ) !default;
+
+$kendo-color-primary: material-color( $primary-palette, main ) !default;
+$kendo-color-primary-text: material-color( $primary-palette, main-contrast ) !default;
+$kendo-color-primary-hover: material-color( $primary-palette, darker ) !default;
+$kendo-color-primary-active: null !default;
+
+$kendo-color-secondary: material-color( $secondary-palette, main ) !default;
+$kendo-color-tertiary: material-color($tertiary-palette, main) !default;
+$kendo-color-info: #0058e9 !default;
+$kendo-color-success: #37b400 !default;
+$kendo-color-warning: #ffc000 !default;
+$kendo-color-error: #f31700 !default;
+$kendo-color-dark: get-base-hue( gray, 800 ) !default;
+$kendo-color-light: get-base-hue( gray, 100 ) !default;
+$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
+
+$kendo-color-border: k-map-get( $theme, component-border ) !default;
+$kendo-color-border-hover: rgba( $kendo-color-border, .15 ) !default;
+
+// Root styles
+$kendo-body-bg: k-map-get( $theme, body-bg ) !default;
+$kendo-body-text: k-map-get( $theme, body-text ) !default;
+
+$kendo-subtle-text: k-map-get( $theme, subtle-text ) !default;
+
+$kendo-app-bg: $kendo-body-bg !default;
+$kendo-app-text: $kendo-body-text !default;
+$kendo-app-border: k-map-get( $theme, component-border ) !default;
+
+$kendo-disabled-text: k-map-get( $theme, disabled-text ) !default;
