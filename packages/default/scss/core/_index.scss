@@ -5,6 +5,8 @@ $wcag-min-contrast-ratio: 4.5 !default;
 
 @import "@progress/kendo-theme-core/scss/index.import.scss";
 
+@import "../_swatch-legacy.scss";
+
 // Expose
 @include exports("kendo-core-styles") {
     @include kendo-core--styles();
