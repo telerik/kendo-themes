@@ -1,4 +1,4 @@
-@if($kendo-new-colors) {
+@if ($kendo-new-colors) {
     $kendo-color-primary: $_kendo-color-primary;
     $kendo-disabled-bg: $_kendo-disabled-bg;
     $kendo-disabled-text: $_kendo-disabled-text;
@@ -43,4 +43,109 @@
     $kendo-app-border: $kendo-color-border;
     $kendo-app-bg: if($kendo-body-bg != null, k-try-shade($kendo-body-bg, 0.25), null) !default;
     $kendo-loading-bg: $kendo-component-bg;
+} @else {
+    /// @deprecated
+    $kendo-color-primary-darker: if($kendo-color-primary != null, k-color-shade($kendo-color-primary, 2), null) !default;
+    /// @deprecated
+    $kendo-color-primary-contrast: $kendo-color-primary-text;
+    /// @deprecated
+    $kendo-selected-bg: $kendo-color-primary !default;
+    /// @deprecated
+    $kendo-selected-text: $kendo-color-primary-text !default;
+    /// @deprecated
+    $kendo-selected-hover-bg: $kendo-color-primary-hover !default;
+    /// @deprecated
+    $kendo-selected-hover-text: $kendo-selected-text !default;
+    /// @deprecated
+    $kendo-invalid-text: $kendo-color-error !default;
+    /// @deprecated
+    $kendo-invalid-border: $kendo-color-error !default;
+    /// @deprecated
+    $kendo-invalid-shadow: null !default;
+    /// @deprecated
+    $kendo-invalid-bg: null !default;
+    /// @deprecated
+    $kendo-base-bg: $kendo-color-base !default;
+    /// @deprecated
+    $kendo-base-text: $kendo-body-text !default;
+    /// @deprecated
+    $kendo-base-border: $kendo-color-border;
+    /// @deprecated
+    $kendo-base-gradient: rgba($kendo-color-black, 0), rgba($kendo-color-black, 0.02) !default;
+    /// @deprecated
+    $kendo-component-header-bg: $kendo-base-bg !default;
+    /// @deprecated
+    $kendo-component-header-text: $kendo-base-text !default;
+    /// @deprecated
+    $kendo-component-header-border: $kendo-base-border !default;
+    /// @deprecated
+    $kendo-component-header-gradient: null !default;
+    /// @deprecated
+    $kendo-app-text: $kendo-body-text !default;
+    /// @deprecated
+    $kendo-link-text: $kendo-color-primary !default;
+    /// @deprecated
+    $kendo-selected-border: $kendo-base-border !default;
+    /// @deprecated
+    $kendo-hover-gradient: $kendo-base-gradient !default;
+    /// @deprecated
+    $kendo-hover-border: $kendo-base-border !default;
+    /// @deprecated
+    $kendo-hover-text: $kendo-base-text !default;
+    /// @deprecated
+    $kendo-hover-bg: $kendo-color-base-hover !default;
+    /// @deprecated
+    $kendo-component-border: $kendo-color-border !default;
+    /// @deprecated
+    $kendo-component-text: $kendo-body-text !default;
+    /// @deprecated
+    $kendo-component-bg: $kendo-body-bg !default;
+    /// @deprecated
+    $kendo-link-hover-text: $kendo-color-primary-darker !default;
+    /// @deprecated
+    $kendo-color-primary-lighter: if($kendo-color-primary != null, k-color-tint($kendo-color-primary, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-secondary-lighter: if($kendo-color-secondary != null, k-color-tint($kendo-color-secondary, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-secondary-darker: if($kendo-color-secondary != null, k-color-shade($kendo-color-secondary, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-secondary-contrast: if($kendo-color-secondary != null, k-contrast-legacy($kendo-color-secondary), null) !default; // not use anywhere
+    /// @deprecated
+    $kendo-color-tertiary-lighter: if($kendo-color-tertiary != null, k-color-tint($kendo-color-tertiary, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-tertiary-darker: if($kendo-color-tertiary != null, k-color-shade($kendo-color-tertiary, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-tertiary-contrast: if($kendo-color-tertiary != null, k-contrast-legacy($kendo-color-tertiary), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-info-lighter: if($kendo-color-info != null, k-color-tint($kendo-color-info, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-info-darker: if($kendo-color-info != null, k-color-shade($kendo-color-info, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-success-lighter: if($kendo-color-success != null, k-color-tint($kendo-color-success, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-success-darker: if($kendo-color-success != null, k-color-shade($kendo-color-success, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-warning-lighter: if($kendo-color-warning != null, k-color-tint($kendo-color-warning, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-warning-darker: if($kendo-color-warning != null, k-color-shade($kendo-color-warning, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-error-lighter: if($kendo-color-error != null, k-color-tint($kendo-color-error, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-color-error-darker: if($kendo-color-error != null, k-color-shade($kendo-color-error, 2), null) !default; // not used anywhere
+    /// @deprecated
+    $kendo-selected-hover-border: $kendo-base-border !default;
+    /// @deprecated
+    $kendo-selected-hover-gradient: $kendo-base-gradient !default;
+    /// @deprecated
+    $kendo-selected-gradient: $kendo-base-gradient !default;
+    /// @deprecated
+    $kendo-link-text: $kendo-color-primary !default;
+    /// @deprecated
+    $kendo-app-border: rgba($kendo-color-black, 0.08) !default;
+    /// @deprecated
+    $kendo-app-bg: if($kendo-body-bg != null, k-try-shade($kendo-body-bg, 0.25), null) !default;
+    /// @deprecated
+    $kendo-loading-bg: $kendo-component-bg !default;
+    /// @deprecated
+    $kendo-loading-text: currentColor !default;
 }
