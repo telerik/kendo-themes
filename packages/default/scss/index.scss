@@ -4,6 +4,7 @@
 
 // Typography and utils
 @import "./typography/_index.scss";
+@import "./shadows/_index.scss";
 @import "./utils/_index.scss";
 
 
@@ -174,6 +175,7 @@
 
     // Typography and utils
     @include kendo-typography--styles();
+    @include kendo-shadow--styles();
     @include kendo-utils--styles();
 
 

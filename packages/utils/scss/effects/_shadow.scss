@@ -1,0 +1,18 @@
+/// This is equivalent to `shadow: 0;`.
+/// @example shadow: 0;
+/// @name .k-shadow-0
+/// @group shadow
+/// @contextType css
+
+/// This is equivalent to `shadow: 1;`.
+/// @example shadow: 1;
+/// @name .k-shadow-1
+/// @group shadow
+/// @contextType css
+
+@mixin kendo-utils--effects--shadow() {
+
+    // shadow utility classes
+    $kendo-utils-shadow: k-map-get( $kendo-utils, "box-shadow" ) !default;
+    @include generate-utils( shadow, box-shadow, $kendo-utils-shadow );
+}

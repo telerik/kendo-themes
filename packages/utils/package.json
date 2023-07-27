@@ -42,6 +42,7 @@
     "postpublish": "echo 'no postpublish for utils'"
   },
   "dependencies": {
-    "@progress/kendo-theme-core": "6.7.0-dev.0"
+    "@progress/kendo-theme-core": "6.7.0-dev.0",
+    "@progress/kendo-theme-default": "^6.7.0-dev.0"
   }
 }

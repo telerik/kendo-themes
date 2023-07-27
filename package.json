@@ -83,5 +83,8 @@
       "pre-push": "npm run sass && npm run docs:check",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "@progress/kendo-theme-default": "^6.6.0"
   }
 }

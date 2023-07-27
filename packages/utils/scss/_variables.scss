@@ -1,3 +1,5 @@
+@import "@progress/kendo-theme-default/scss/shadows/_variables.scss";
+
 $kendo-prefix: k- !default;
 $kendo-important: true !default;
 
@@ -832,7 +834,7 @@ $kendo-utils: (
     ),
 
     // Effects
-    "box-shadow": (),
+    "box-shadow": $kendo-box-shadow,
     "box-shadow-color": (),
     "opacity": (
         0: 0,
