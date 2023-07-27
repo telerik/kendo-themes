@@ -100,7 +100,12 @@ $kendo-color-inverse-selected: null !default;
 $kendo-color-inverse-focus: null !default;
 
 $kendo-body-bg: null !default;
+$kendo-body-bg-contrast: null !default;
+$kendo-body-bg-pale: null !default;
 $kendo-body-text: null !default;
+$kendo-body-hover: null !default;
+$kendo-body-darken: null !default;
+$kendo-body-shaded: null !default;
 
 $kendo-color-border: null !default;
 $kendo-color-border-hover: null !default;
@@ -220,7 +225,13 @@ $_kendo-color-inverse-active: null;
 $_kendo-color-inverse-selected: null;
 $_kendo-color-inverse-focus: null;
 $_kendo-body-bg: null;
+$_kendo-body-bg-contrast: null;
+$_kendo-body-bg-contrast-rgb: null;
+$_kendo-body-bg-pale: null;
 $_kendo-body-text: null;
+$_kendo-body-hover: null;
+$_kendo-body-darken: null;
+$_kendo-body-shaded: null;
 $_kendo-color-border: null;
 $_kendo-color-border-rgb: null;
 $_kendo-color-border-hover: null;
@@ -337,7 +348,13 @@ $_kendo-color-border-focus-rgb: null;
         kendo-color-inverse-selected: $kendo-color-inverse-selected,
         kendo-color-inverse-focus: $kendo-color-inverse-focus,
         kendo-body-bg: $kendo-body-bg,
+        kendo-body-bg-contrast: $kendo-body-bg-contrast,
+        kendo-body-bg-contrast-rgb: k-hex-to-rgb($kendo-body-bg-contrast),
+        kendo-body-bg-pale: $kendo-body-bg-pale,
         kendo-body-text: $kendo-body-text,
+        kendo-body-hover: $kendo-body-hover,
+        kendo-body-darken: $kendo-body-darken,
+        kendo-body-shaded: $kendo-body-shaded,
         kendo-color-border: $kendo-color-border,
         kendo-color-border-rgb: k-hex-to-rgb($kendo-color-border),
         kendo-color-border-hover: $kendo-color-border-hover,
@@ -469,7 +486,13 @@ $_kendo-color-border-focus-rgb: null;
     $_kendo-color-inverse-focus: var(--kendo-color-inverse-focus, k-map-get($kendo-theme-palette, kendo-color-inverse-focus));
 
     $_kendo-body-bg: var(--kendo-body-bg, k-map-get($kendo-theme-palette, kendo-body-bg));
+    $_kendo-body-bg-contrast: var(--kendo-body-bg-contrast, k-map-get($kendo-theme-palette, kendo-body-bg-contrast));
+    $_kendo-body-bg-contrast-rgb: var(--kendo-body-bg-contrast-rgb, k-map-get($kendo-theme-palette, kendo-body-bg-contrast-rgb));
+    $_kendo-body-bg-pale: var(--kendo-body-bg-pale, k-map-get($kendo-theme-palette, kendo-body-bg-pale));
     $_kendo-body-text: var(--kendo-body-text, k-map-get($kendo-theme-palette, kendo-body-text));
+    $_kendo-body-hover: var(--kendo-body-hover, k-map-get($kendo-theme-palette, kendo-body-hover));
+    $_kendo-body-darken: var(--kendo-body-darken, k-map-get($kendo-theme-palette, kendo-body-darken));
+    $_kendo-body-shaded: var(--kendo-body-shaded, k-map-get($kendo-theme-palette, kendo-body-shaded));
 
     $_kendo-color-border: var(--kendo-color-border, k-map-get($kendo-theme-palette, kendo-color-border));
     $_kendo-color-border-rgb: var(--kendo-color-border-rgb, k-hex-to-rgb($kendo-color-border));

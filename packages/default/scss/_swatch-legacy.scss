@@ -1,4 +1,6 @@
 @if ($kendo-new-colors) {
+    $kendo-body-bg: $_kendo-body-bg;
+    // $kendo-body-text: $_kendo-body-text;
     $kendo-color-primary: $_kendo-color-primary;
     $kendo-disabled-bg: $_kendo-disabled-bg;
     $kendo-disabled-text: $_kendo-disabled-text;
@@ -41,7 +43,7 @@
     $kendo-selected-gradient: $kendo-base-gradient;
     $kendo-link-text: $kendo-color-primary;
     $kendo-app-border: $kendo-color-border;
-    $kendo-app-bg: if($kendo-body-bg != null, k-try-shade($kendo-body-bg, 0.25), null) !default;
+    $kendo-app-bg: if($kendo-body-bg != null, $kendo-body-bg-dim, null) !default;
     $kendo-loading-bg: $kendo-component-bg;
 } @else {
     /// @deprecated

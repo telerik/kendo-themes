@@ -36,7 +36,7 @@ $kendo-switch-off-track-bg: $kendo-component-bg !default;
 $kendo-switch-off-track-text: $kendo-component-text !default;
 /// The border color of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-border: k-try-shade( $kendo-switch-off-track-bg, 8% ) !default;
+$kendo-switch-off-track-border: if($kendo-new-colors, $kendo-body-darken, k-try-shade( $kendo-switch-off-track-bg, 8% )) !default;
 /// The background gradient of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-gradient: null !default;

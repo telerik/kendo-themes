@@ -14,8 +14,8 @@ $kendo-tooltip-title-line-height: 1 !default;
 
 $kendo-tooltip-callout-size: 6px !default;
 
-$kendo-tooltip-bg: rgba( k-contrast-legacy( $kendo-body-bg ), .75 ) !default;
-$kendo-tooltip-text: k-contrast-legacy( $kendo-tooltip-bg ) !default;
+$kendo-tooltip-bg: rgba( if($kendo-new-colors, $_kendo-body-bg-contrast-rgb, k-contrast-legacy( $kendo-body-bg )), .75 ) !default;
+$kendo-tooltip-text: if($kendo-new-colors, $kendo-body-bg, k-contrast-legacy( $kendo-tooltip-bg )) !default;
 $kendo-tooltip-border: $kendo-tooltip-bg !default;
 
 $kendo-tooltip-primary-bg: $kendo-color-primary !default;
