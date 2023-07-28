@@ -1,0 +1,105 @@
+@import "../functions/index.import.scss";
+@import "./_bootstrap-overrides.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "bootstrap/scss/_variables.scss";
+
+
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+
+$kendo-color-primary: $primary !default;
+$kendo-color-primary-lighter: k-color-tint( $kendo-color-primary, 2 ) !default;
+$kendo-color-primary-darker: k-color-shade( $kendo-color-primary, 2 ) !default;
+$kendo-color-primary-contrast: k-contrast-color( $kendo-color-primary ) !default;
+
+$kendo-color-secondary: $secondary !default;
+$kendo-color-secondary-lighter: k-color-tint( $kendo-color-secondary, 2 ) !default;
+$kendo-color-secondary-darker: k-color-shade( $kendo-color-secondary, 2 ) !default;
+$kendo-color-secondary-contrast: k-contrast-color( $kendo-color-secondary ) !default;
+
+$kendo-color-tertiary: $purple !default;
+$kendo-color-tertiary-lighter: k-color-tint( $kendo-color-tertiary, 2 ) !default;
+$kendo-color-tertiary-darker: k-color-shade( $kendo-color-tertiary, 2 ) !default;
+$kendo-color-tertiary-contrast: k-contrast-color( $kendo-color-tertiary ) !default;
+
+$kendo-color-info: $info !default;
+$kendo-color-info-lighter: k-color-tint( $kendo-color-info, 2 ) !default;
+$kendo-color-info-darker: k-color-shade( $kendo-color-info, 2 ) !default;
+
+$kendo-color-success: $success !default;
+$kendo-color-success-lighter: k-color-tint( $kendo-color-success, 2 ) !default;
+$kendo-color-success-darker: k-color-shade( $kendo-color-success, 2 ) !default;
+
+$kendo-color-warning: $warning !default;
+$kendo-color-warning-lighter: k-color-tint( $kendo-color-warning, 2 ) !default;
+$kendo-color-warning-darker: k-color-shade( $kendo-color-warning, 2 ) !default;
+
+$kendo-color-error: $danger !default;
+$kendo-color-error-lighter: k-color-tint( $kendo-color-error, 2 ) !default;
+$kendo-color-error-darker: k-color-shade( $kendo-color-error, 2 ) !default;
+
+$kendo-color-dark: $dark !default;
+$kendo-color-light: $light !default;
+$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
+
+$kendo-body-bg: $kendo-color-white !default;
+$kendo-body-text: k-contrast-color( $kendo-body-bg, $gray-900, $gray-100 ) !default;
+
+$kendo-subtle-text: if( $kendo-is-dark-theme, $gray-400, $text-muted ) !default;
+
+$kendo-app-bg: k-try-shade( $kendo-body-bg, .25 ) !default;
+$kendo-app-text: $kendo-body-text !default;
+$kendo-app-border: if( k-is-light( $kendo-app-bg ), $gray-300, $gray-700 ) !default;
+
+$kendo-link-text: $link-color !default;
+$kendo-link-hover-text: $link-hover-color !default;
+
+$kendo-component-bg: $kendo-body-bg !default;
+$kendo-component-text: $kendo-body-text !default;
+$kendo-component-border: if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 ) !default;
+
+
+$kendo-disabled-text: if( $kendo-is-dark-theme, $gray-600, $gray-500) !default;
+
+$kendo-base-bg: $gray-100 !default;
+$kendo-base-text: $kendo-body-text !default;
+$kendo-base-border: k-try-shade( $kendo-base-bg, 1 ) !default;
+$kendo-base-gradient: null !default;
+
+$kendo-hover-bg: $gray-200 !default;
+$kendo-hover-text: $kendo-base-text !default;
+$kendo-hover-border: k-try-shade( $kendo-hover-bg, 1 ) !default;
+$kendo-hover-gradient: null !default;
+
+$kendo-selected-bg: $kendo-color-primary !default;
+$kendo-selected-text: k-contrast-color( $kendo-selected-bg ) !default;
+$kendo-selected-border: k-try-shade( $kendo-selected-bg, 1 ) !default;
+$kendo-selected-gradient: null !default;
+
+$kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
+$kendo-selected-hover-text: $kendo-selected-text !default;
+$kendo-selected-hover-border: $kendo-base-border !default;
+$kendo-selected-hover-gradient: null !default;
+
+$kendo-component-header-bg: $kendo-base-bg !default;
+$kendo-component-header-text: $kendo-component-text !default;
+$kendo-component-header-border: $kendo-component-border !default;
+$kendo-component-header-gradient: null !default;
+
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: $kendo-color-error !default;
+$kendo-invalid-border: $kendo-color-error !default;
+$kendo-invalid-shadow: 0 0 0 .25rem rgba( $kendo-invalid-border, .25 ) !default;
+
+$kendo-theme-colors: (
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse
+) !default;
