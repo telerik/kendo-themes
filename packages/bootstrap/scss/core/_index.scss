@@ -1,9 +1,15 @@
 $wcag-min-contrast-ratio: 4.5 !default;
+$kendo-new-colors: false;
+
+// Color System
+@import "./color-system/index.import.scss";
 
 // Variables
 @import "../_variables.scss";
 
 @import "@progress/kendo-theme-core/scss/index.import.scss";
+
+@import "./color-system/legacy";
 
 // Expose
 @include exports("kendo-core-styles") {
