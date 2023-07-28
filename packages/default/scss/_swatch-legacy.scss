@@ -1,6 +1,6 @@
 $kendo-color-primary-contrast: null !default;
 $kendo-body-bg: null !default;
-// $kendo-body-text: null !default;
+$kendo-body-text: null !default;
 $kendo-color-primary: null !default;
 $kendo-disabled-bg: null !default;
 $kendo-disabled-text: null !default;
@@ -44,7 +44,7 @@ $kendo-selected-gradient: null !default;
 $kendo-link-text: null !default;
 $kendo-app-border: null !default;
 $kendo-app-bg: null !default;
-$kendo-loading-bg:  null !default;
+$kendo-loading-bg: null !default;
 
 @if ($kendo-new-colors) {
     $kendo-body-bg: $_kendo-body-bg;
@@ -90,7 +90,7 @@ $kendo-loading-bg:  null !default;
     $kendo-selected-hover-gradient: $kendo-base-gradient;
     $kendo-selected-gradient: $kendo-base-gradient;
     $kendo-link-text: $kendo-color-primary;
-    $kendo-app-border: $kendo-color-border;
+    $kendo-app-border: $_kendo-color-border;
     $kendo-app-bg: if($kendo-body-bg != null, $kendo-body-bg-dim, null) !default;
     $kendo-loading-bg: $kendo-component-bg;
 } @else {
