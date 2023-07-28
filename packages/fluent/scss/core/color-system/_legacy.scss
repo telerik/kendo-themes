@@ -1,0 +1,44 @@
+
+// Legacy!
+$kendo-invalid-text: k-get-theme-color-var( error-190 );
+
+// Root styles
+$kendo-body-bg: #ffffff !default;
+$kendo-body-text: k-get-theme-color-var( neutral-160 ) !default;
+
+// Component styles
+$kendo-component-bg: $kendo-body-bg !default;
+$kendo-component-text: $kendo-body-text !default;
+$kendo-component-border: k-get-theme-color-var( neutral-30 ) !default;
+
+// States styles
+$kendo-hover-bg: k-get-theme-color-var( neutral-20 ) !default;
+$kendo-hover-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-hover-border: k-get-theme-color-var( neutral-20 ) !default;
+
+$kendo-selected-bg: k-get-theme-color-var( neutral-30 ) !default;
+$kendo-selected-text: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-selected-border: k-get-theme-color-var( neutral-130 ) !default;
+
+$kendo-selected-hover-bg: k-get-theme-color-var( neutral-40 ) !default;
+$kendo-selected-hover-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-selected-hover-border: k-get-theme-color-var( neutral-130 ) !default;
+
+$kendo-focus-outline: k-get-theme-color-var( neutral-130 ) !default;
+
+$kendo-subtle-text: k-get-theme-color-var( neutral-130 ) !default;
+
+
+// Link
+$kendo-link-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-link-hover-text: k-get-theme-color-var( primary-120 ) !default;
+
+// Validator
+$kendo-invalid-bg: initial !default;
+$kendo-invalid-text: k-get-theme-color-var( error-190 ) !default;
+$kendo-invalid-border: k-get-theme-color-var( error-190 ) !default;
+$kendo-invalid-shadow: null !default;
+
+// Loading
+$kendo-loading-bg: $kendo-component-bg !default;
+$kendo-loading-text: currentColor !default;

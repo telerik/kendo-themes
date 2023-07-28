@@ -1,6 +1,6 @@
 @import "./_palettes.scss";
 
-$kendo-new-colors: true;
+$kendo-new-colors: false;
 
 // TODO: re-evaluate!
 $kendo-color-white: #ffffff;
@@ -119,3 +119,5 @@ $kendo-color-inverse-hover: k-try-shade($kendo-color-inverse, 0.5) !default;
 $kendo-color-inverse-active: k-try-shade($kendo-color-inverse, 1.5) !default;
 $kendo-color-inverse-selected: k-try-shade($kendo-color-inverse, 1.5) !default;
 $kendo-color-inverse-focus: null !default;
+
+$kendo-base-gradient: rgba( black, 0 ), rgba( black, .02 ) !default;

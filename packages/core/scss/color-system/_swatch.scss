@@ -116,9 +116,8 @@ $kendo-color-border: null !default;
 $kendo-color-border-hover: null !default;
 $kendo-color-border-focus: null !default;
 
-$kendo-is-dark-theme: null !default;
-
 $kendo-theme-swatches: () !default;
+$kendo-theme-palette: () !default;
 
 $_kendo-color-white: null;
 $_kendo-color-black: null;
@@ -249,6 +248,7 @@ $_kendo-color-border-hover: null;
 $_kendo-color-border-hover-rgb: null;
 $_kendo-color-border-focus: null;
 $_kendo-color-border-focus-rgb: null;
+
 
 @if ($kendo-new-colors) {
     $kendo-theme-palette: (
@@ -637,3 +637,16 @@ $_kendo-color-border-focus-rgb: null;
         ),
     );
 }
+
+$kendo-theme-colors: (
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse
+) !default;

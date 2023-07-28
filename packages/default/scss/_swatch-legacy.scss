@@ -1,3 +1,51 @@
+$kendo-color-primary-contrast: null !default;
+$kendo-body-bg: null !default;
+// $kendo-body-text: null !default;
+$kendo-color-primary: null !default;
+$kendo-disabled-bg: null !default;
+$kendo-disabled-text: null !default;
+$kendo-disabled-border: null !default;
+$kendo-color-primary-light: null !default;
+$kendo-color-primary-darker: null !default;
+$kendo-color-primary-contrast: null !default;
+$kendo-selected-bg: null !default;
+$kendo-selected-text: null !default;
+$kendo-selected-hover-bg: null !default;
+$kendo-selected-hover-text: null !default;
+$kendo-invalid-text: null !default;
+$kendo-invalid-border: null !default;
+$kendo-invalid-shadow: null !default;
+$kendo-invalid-bg: null !default;
+$kendo-color-error: null !default;
+$kendo-color-success: null !default;
+$kendo-color-warning: null !default;
+$kendo-color-info: null !default;
+$kendo-base-bg: null !default;
+$kendo-base-text: null !default;
+$kendo-base-border: null !default;
+$kendo-component-header-bg: null !default;
+$kendo-component-header-text: null !default;
+$kendo-component-header-border: null !default;
+$kendo-component-header-gradient: null !default;
+$kendo-app-text: null !default;
+$kendo-link-text: null !default;
+$kendo-selected-border: null !default;
+$kendo-hover-gradient: null !default;
+$kendo-hover-border: null !default;
+$kendo-hover-text: null !default;
+$kendo-hover-bg: null !default;
+$kendo-component-border: null !default;
+$kendo-component-text: null !default;
+$kendo-component-bg: null !default;
+$kendo-link-hover-text: null !default;
+$kendo-selected-hover-border: null !default;
+$kendo-selected-hover-gradient: null !default;
+$kendo-selected-gradient: null !default;
+$kendo-link-text: null !default;
+$kendo-app-border: null !default;
+$kendo-app-bg: null !default;
+$kendo-loading-bg:  null !default;
+
 @if ($kendo-new-colors) {
     $kendo-body-bg: $_kendo-body-bg;
     $kendo-body-text: $_kendo-body-text;
@@ -49,11 +97,11 @@
     /// @deprecated
     $kendo-color-primary-darker: if($kendo-color-primary != null, k-color-shade($kendo-color-primary, 2), null) !default;
     /// @deprecated
-    $kendo-color-primary-contrast: $kendo-color-primary-text;
+    $kendo-color-primary-contrast: k-contrast-legacy( $kendo-color-primary ) !default;
     /// @deprecated
     $kendo-selected-bg: $kendo-color-primary !default;
     /// @deprecated
-    $kendo-selected-text: $kendo-color-primary-text !default;
+    $kendo-selected-text: k-contrast-legacy( $kendo-selected-bg ) !default;
     /// @deprecated
     $kendo-selected-hover-bg: $kendo-color-primary-hover !default;
     /// @deprecated
@@ -146,8 +194,6 @@
     $kendo-app-border: rgba($kendo-color-black, 0.08) !default;
     /// @deprecated
     $kendo-app-bg: if($kendo-body-bg != null, k-try-shade($kendo-body-bg, 0.25), null) !default;
-    /// @deprecated
-    $kendo-loading-bg: $kendo-component-bg !default;
     /// @deprecated
     $kendo-loading-text: currentColor !default;
 }
