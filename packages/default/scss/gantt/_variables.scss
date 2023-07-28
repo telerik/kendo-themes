@@ -36,16 +36,16 @@ $kendo-gantt-milestone-border: $kendo-gantt-border !default;
 $kendo-gantt-milestone-selected-bg: $kendo-selected-bg !default;
 $kendo-gantt-milestone-selected-border: $kendo-selected-border !default;
 
-$kendo-gantt-summary-bg: k-try-tint( $kendo-gantt-text, 1 ) !default;
-$kendo-gantt-summary-progress-bg: k-try-shade( $kendo-gantt-text, 5 ) !default;
+$kendo-gantt-summary-bg: if($kendo-new-colors, $kendo-body-text, k-try-tint( $kendo-gantt-text, 1 )) !default;
+$kendo-gantt-summary-progress-bg: if($kendo-new-colors, $kendo-body-text-darker, k-try-shade( $kendo-gantt-text, 5 )) !default;
 $kendo-gantt-summary-selected-bg: if($kendo-new-colors, $kendo-color-primary-pale, k-try-tint( $kendo-selected-bg, 6 )) !default;
 $kendo-gantt-summary-progress-selected-bg: $kendo-selected-bg !default;
 
 $kendo-gantt-task-border-width: 0px !default;
 $kendo-gantt-task-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-gantt-task-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
-$kendo-gantt-task-bg: k-try-tint( $kendo-gantt-text, 2 ) !default;
-$kendo-gantt-task-text: k-contrast-legacy( $kendo-gantt-text ) !default;
+$kendo-gantt-task-bg: if($kendo-new-colors, $kendo-subtle-text, k-try-tint( $kendo-gantt-text, 2 )) !default;
+$kendo-gantt-task-text: if($kendo-new-colors, $kendo-body-bg, k-contrast-legacy( $kendo-gantt-text )) !default;
 $kendo-gantt-task-border: null !default;
 $kendo-gantt-task-progress-bg: $kendo-gantt-text !default;
 $kendo-gantt-task-selected-bg: if($kendo-new-colors, $kendo-color-primary-pale, k-try-tint( $kendo-selected-bg, 6 )) !default;

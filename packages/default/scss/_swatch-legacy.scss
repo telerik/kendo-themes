@@ -1,6 +1,6 @@
 @if ($kendo-new-colors) {
     $kendo-body-bg: $_kendo-body-bg;
-    // $kendo-body-text: $_kendo-body-text;
+    $kendo-body-text: $_kendo-body-text;
     $kendo-color-primary: $_kendo-color-primary;
     $kendo-disabled-bg: $_kendo-disabled-bg;
     $kendo-disabled-text: $_kendo-disabled-text;

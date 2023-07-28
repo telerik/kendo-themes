@@ -42,7 +42,7 @@ $kendo-file-manager-listview-item-text: null !default;
 $kendo-file-manager-listview-item-border: null !default;
 
 $kendo-file-manager-listview-item-icon-bg: null !default;
-$kendo-file-manager-listview-item-icon-text: k-try-tint($kendo-file-manager-text, 4) !default;
+$kendo-file-manager-listview-item-icon-text: if($kendo-new-colors, $kendo-body-text-lighter, k-try-tint($kendo-file-manager-text, 4)) !default;
 $kendo-file-manager-listview-item-icon-border: null !default;
 $kendo-file-manager-listview-item-icon-selected-bg: null !default;
 $kendo-file-manager-listview-item-icon-selected-text: inherit !default;
@@ -63,5 +63,5 @@ $kendo-file-manager-preview-text: null !default;
 $kendo-file-manager-preview-border: null !default;
 
 $kendo-file-manager-preview-icon-bg: null !default;
-$kendo-file-manager-preview-icon-text: k-try-tint($kendo-file-manager-text, 4) !default;
+$kendo-file-manager-preview-icon-text: if($kendo-new-colors, $kendo-body-text-lighter, k-try-tint($kendo-file-manager-text, 4)) !default;
 $kendo-file-manager-preview-icon-border: null !default;
