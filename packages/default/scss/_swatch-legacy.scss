@@ -24,7 +24,7 @@
     $kendo-base-text: $_kendo-body-text;
     $kendo-base-border: $_kendo-color-border;
     $kendo-component-header-bg: $kendo-base-bg;
-    $kendo-component-header-text: $kendo-color-base-text;
+    $kendo-component-header-text: $_kendo-color-base-text;
     $kendo-component-header-border: $kendo-base-border;
     $kendo-component-header-gradient: null;
     $kendo-app-text: $kendo-body-text;
@@ -33,8 +33,8 @@
     $kendo-hover-gradient: $kendo-base-gradient;
     $kendo-hover-border: $kendo-base-border;
     $kendo-hover-text: $kendo-base-text;
-    $kendo-hover-bg: $kendo-color-base-hover;
-    $kendo-component-border: $kendo-color-border;
+    $kendo-hover-bg: $_kendo-color-base-hover;
+    $kendo-component-border: $_kendo-color-border;
     $kendo-component-text: $kendo-body-text;
     $kendo-component-bg: $kendo-body-bg;
     $kendo-link-hover-text: $kendo-color-primary-darker;
