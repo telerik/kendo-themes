@@ -1,4 +1,5 @@
 @import "../core/_index.scss";
+@import "../_variables-shadow.scss";
 @import "../utils/_index.scss";
 
 
@@ -13,7 +14,7 @@ $_kendo-module-meta: (
 
 
 // Component
-@import "./_variables.scss";
+// @import "./_variables.scss";
 @import "./_theme.scss";
 
 
