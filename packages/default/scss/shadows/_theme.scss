@@ -1,0 +1,8 @@
+@mixin kendo-shadow--theme-base() {
+    @include generate-utils( shadow, box-shadow, $kendo-shadows );
+}
+
+
+@mixin kendo-shadow--theme() {
+    @include kendo-shadow--theme-base();
+}
