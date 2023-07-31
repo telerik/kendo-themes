@@ -53,6 +53,7 @@
   "dependencies": {
     "@progress/kendo-font-icons": "1.8.0",
     "@progress/kendo-theme-core": "6.7.0-dev.0",
+    "@progress/kendo-theme-default": "6.7.0-dev.0",
     "@progress/kendo-theme-utils": "6.7.0-dev.0"
   }
 }
