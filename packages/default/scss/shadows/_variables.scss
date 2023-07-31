@@ -1,7 +1,12 @@
 // Box shadow
-$kendo-box-shadow: (
-    1: (0 1.6px 3.6px rgba( red, 0.132 ), 0 0.3px 0.9px rgba( red, 0.108 )),
-    2: (0 3.2px 7.2px rgba( red, 0.132 ), 0 0.6px 1.8px rgba( red, 0.108 )),
-    3: (0 6.4px 14.4px rgba( red, 0.132 ), 0 1.2px 3.6px rgba( red, 0.108 )),
-    4: (0 25.6px 57.6px rgba( red, 0.22 ), 0 4.8px 14.4px rgba( red, 0.18 ))
+$kendo-box-shadows: (
+    1: ((0 2px 3px) rgba(0, 0, 0, .04)), // TODO use $kendo-color-black variable after adding color palette in the Utils package
+    2: ((0 4px 6px) rgba(0, 0, 0, .06)),
+    3: ((0 8px 10px) rgba(0, 0, 0, .08)),
+    4: ((0 12px 14px) rgba(0, 0, 0, .12)),
+    5: ((0 16px 18px) rgba(0, 0, 0, .16)),
+    6: ((0 20px 22px) rgba(0, 0, 0, .2)),
+    7: ((0 24px 26px) rgba(0, 0, 0, .24)),
+    8: ((0 28px 30px) rgba(0, 0, 0, .28)),
+    9: ((0 32px 34px) rgba(0, 0, 0, .32))
 ) !default;

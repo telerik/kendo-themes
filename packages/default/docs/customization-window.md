@@ -250,8 +250,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-shadow</td>
     <td>List</td>
-    <td><code>0 3px 3px 0 rgba(0, 0, 0, .06)</code></td>
-    <td><code>0 3px 3px 0 rgba(0, 0, 0, 0.06)</code></td>
+    <td><code>k-map-get($kendo-box-shadows, 9)</code></td>
+    <td><code>(0 32px 34px) rgba(0, 0, 0, 0.32)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Window.</div></div>

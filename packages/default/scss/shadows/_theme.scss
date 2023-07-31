@@ -1,5 +1,5 @@
 @mixin kendo-shadow--theme-base() {
-    @include generate-utils( shadow, box-shadow, $kendo-box-shadow );
+    @include generate-utils( shadow, box-shadow, $kendo-box-shadows );
 }
 
 

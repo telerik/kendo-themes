@@ -1,0 +1,13 @@
+/// Returns resolved shadow with applied color. If there is no custom color, it will return shadow with the default value.
+/// @param {List} $shadow - Depth of the shadow with default color value.
+/// @param {Color} $color - Custom color value.
+/// @return {List} - Shadow value with resolved color.
+///
+/// @example scss - Usage
+///   @debug k-shadow-set-color( (0 2px 7px) rgba(0, 0, 0, .75), rgba(0, 0, 0, .5) ); // => 0 2px 7px rgba(0, 0, 0, .75)
+///   @debug k-shadow-set-alpha( (0 2px 7px) rgba(0, 0, 0, .75) ); // => 0 2px 7px rgba(0, 0, 0, .75)
+@function k-shadow-set-color( $shadow, $color ) {
+    $shadow: k-list-nth( $shadow, 1 ) $color;
+
+    @return $shadow;
+}
