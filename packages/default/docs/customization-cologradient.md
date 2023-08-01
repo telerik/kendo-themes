@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>List</td>
-    <td><code>k-shadow-set-color( k-map-get($kendo-box-shadows, 2), rgba( $kendo-color-black, .5 ) )</code></td>
+    <td><code>k-shadow-change-color( k-map-get($kendo-box-shadows, 2), rgba( $kendo-color-black, .5 ) )</code></td>
     <td><code>(0 4px 6px) rgba(0, 0, 0, 0.5)</code></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>k-shadow-set-color( k-map-get( $kendo-box-shadows, 2), $kendo-color-black )</code></td>
+    <td><code>k-shadow-change-color( k-map-get( $kendo-box-shadows, 2), $kendo-color-black )</code></td>
     <td><code>(0 4px 6px) #000000</code></td>
 </tr>
 <tr>

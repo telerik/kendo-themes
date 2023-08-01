@@ -3330,7 +3330,7 @@ k-meta-is-position($value) // => Boolean
 }
 ```
 
-### `k-shadow-set-color`
+### `k-shadow-change-color`
 
 Returns resolved shadow with applied color. If there is no custom color, it will return shadow with the default value.
 
@@ -3338,7 +3338,7 @@ Returns resolved shadow with applied color. If there is no custom color, it will
 #### Syntax
 
 ```scss
-k-shadow-set-color($shadow, $color) // => List
+k-shadow-change-color($shadow, $color) // => List
 ```
 
 #### Parameters
@@ -3355,7 +3355,7 @@ k-shadow-set-color($shadow, $color) // => List
 
 ```scss
 // Usage
-@debug k-shadow-set-color( (0 2px 7px) rgba(0, 0, 0, .75), rgba(0, 0, 0, .5) ); // => 0 2px 7px rgba(0, 0, 0, .75)
+@debug k-shadow-change-color( (0 2px 7px) rgba(0, 0, 0, .75), rgba(0, 0, 0, .5) ); // => 0 2px 7px rgba(0, 0, 0, .75)
 @debug k-shadow-set-alpha( (0 2px 7px) rgba(0, 0, 0, .75) ); // => 0 2px 7px rgba(0, 0, 0, .75)
 ```
 
@@ -3364,12 +3364,9 @@ k-shadow-set-color($shadow, $color) // => List
 
 ```scss
 // Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_shadow-color.import.scss#L9-L16
-@function k-shadow-set-color($shadow, $color) {
-    @if $color == null { // stylelint-disable-line
-        $shadow: $shadow;
-    } @else {
-        $shadow: k-list-nth( $shadow, 1 ) $color;
-    }
+@function k-shadow-change-color($shadow, $color) {
+    $shadow: k-list-nth( $shadow, 1 ) $color;
+
     @return $shadow;
 }
 ```

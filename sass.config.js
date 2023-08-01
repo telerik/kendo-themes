@@ -8,11 +8,11 @@ module.exports = {
             file: 'scss/all.scss',
             outFile: 'dist/all.css'
         },
-        {
-            cwd: 'packages/bootstrap',
-            file: 'scss/all.scss',
-            outFile: 'dist/all.css'
-        },
+        // {
+        //     cwd: 'packages/bootstrap',
+        //     file: 'scss/all.scss',
+        //     outFile: 'dist/all.css'
+        // },
         // {
         //     cwd: 'packages/classic',
         //     file: 'scss/all.scss',
