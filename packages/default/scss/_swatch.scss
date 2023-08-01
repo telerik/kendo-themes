@@ -22,12 +22,12 @@ $kendo-body-hover: k-try-shade($kendo-body-bg, .5) !default;
 $kendo-body-darken: k-color-darken($kendo-body-bg, 7%) !default;
 $kendo-body-shaded: k-try-shade($kendo-body-bg, 1) !default;
 
+$kendo-base-bg: #fafafa !default;
+$kendo-base-text: $kendo-body-text !default;
+
 $kendo-color-border: rgba($kendo-color-black, 0.08) !default;
 $kendo-color-border-hover: rgba($kendo-color-black, 0.16) !default;
 $kendo-color-border-focus: k-try-shade($kendo-color-border, 2.5) !default;
-
-$kendo-color-border-alt: rgba(#666666, 0.5) !default;
-$kendo-color-border-alt-hover: rgba(#666666, 0.8) !default;
 
 $kendo-color-base: #f5f5f5 !default;
 $kendo-color-base-text: #424242 !default;

@@ -68,8 +68,8 @@ $kendo-loading-bg: null !default;
     $kendo-color-success: $_kendo-color-success;
     $kendo-color-warning: $_kendo-color-warning;
     $kendo-color-info: $_kendo-color-info;
-    $kendo-base-bg: $_kendo-color-base;
-    $kendo-base-text: $_kendo-body-text;
+    $kendo-base-bg: $_kendo-base-bg;
+    $kendo-base-text: $_kendo-base-text;
     $kendo-base-border: $_kendo-color-border;
     $kendo-component-header-bg: $kendo-base-bg;
     $kendo-component-header-text: $_kendo-color-base-text;
@@ -115,7 +115,7 @@ $kendo-loading-bg: null !default;
     /// @deprecated
     $kendo-invalid-bg: null !default;
     /// @deprecated
-    $kendo-base-bg: $kendo-color-base !default;
+    $kendo-base-bg: #fafafa !default;
     /// @deprecated
     $kendo-base-text: $kendo-body-text !default;
     /// @deprecated
