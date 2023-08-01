@@ -11,6 +11,11 @@
         );
     }
 
+    // Toolbar
+    .k-orgchart-toolbar + .k-orgchart-container {
+        $border: var( --$kendo-orgchart-content-border-color, #{$kendo-orgchart-content-border-color} )
+    }
+
     // Card
     .k-orgchart-card {
         @include box-shadow( var( --kendo-orgchart-card-shadow, #{$kendo-orgchart-card-shadow} ) );

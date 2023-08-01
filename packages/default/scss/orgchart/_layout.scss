@@ -26,6 +26,12 @@
         position: relative;
     }
 
+    .k-orgchart-toolbar + .k-orgchart-container {
+        border-width: 0 1px 1px;
+        border-style: solid;
+        padding: 16px;
+    }
+
     // Nodes
     .k-orgchart-group {
         gap: $kendo-orgchart-group-gap;

@@ -1,5 +1,5 @@
 import { classNames, kendoThemeMaps } from '../misc';
-import { OrgchartNode } from '../orgchart';
+import { OrgchartNode, OrgchartToolbar } from '../orgchart';
 
 export const ORGCHART_CLASSNAME = `k-orgchart`;
 
@@ -13,12 +13,18 @@ export type KendoOrgchartProps = {
     height?: string;
     orientation?: 'horizontal' | 'vertical';
     justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around';
+    showToolbar?: boolean;
+    Toolbar?: any;
+    //toolbar?: any;
 };
 
 const defaultProps = {
     width: '100%',
     height: '300px',
-    orientation: 'horizontal'
+    orientation: 'horizontal',
+    showToolbar: false,
+    //Toolbar: OrgchartToolbar,
+    //toolbar: OrgchartToolbar
 };
 
 export const Orgchart = (
@@ -31,6 +37,8 @@ export const Orgchart = (
         height = defaultProps.height,
         orientation = defaultProps.orientation,
         justifyContent,
+        showToolbar = defaultProps.showToolbar,
+        Toolbar = OrgchartToolbar,
         ...other
     } = props;
 
@@ -60,9 +68,9 @@ export const Orgchart = (
             {...other}
             className={classNames(
                 props.className,
-                ORGCHART_CLASSNAME,
+                ORGCHART_CLASSNAME
             )}>
-
+            { showToolbar && Toolbar ? <Toolbar /> : null}
             <div className="k-orgchart-container" style={{ width: width, height: height }}>
                 <div
                     className={classNames(

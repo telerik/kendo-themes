@@ -150,3 +150,7 @@ $kendo-orgchart-line-text: k-get-theme-color-var( neutral-30 ) !default;
 /// Height of the orgchart connecting line.
 /// @group orgchart
 $kendo-orgchart-line-v-height: 25px !default;
+
+/// Border color of the content of orgchart with toolbar.
+/// @group orgchart
+$kendo-orgchart-content-border-color: $kendo-component-border !default;
