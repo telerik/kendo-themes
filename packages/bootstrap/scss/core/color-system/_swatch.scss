@@ -3,20 +3,102 @@
 @import "bootstrap/scss/_functions.scss";
 @import "bootstrap/scss/_variables.scss";
 
+$kendo-new-colors: false;
+
+// TODO: re-evaluate!
+$kendo-color-white: #ffffff;
+$kendo-color-black: #000000;
+$kendo-is-dark-theme: false !default;
+$kendo-subtle-text: if( $kendo-is-dark-theme, $gray-400, $text-muted ) !default;
+$kendo-disabled-text: if( $kendo-is-dark-theme, $gray-600, $gray-500) !default;
+
+$kendo-body-bg: $kendo-color-white !default;
+$kendo-body-text: k-contrast-color($kendo-body-bg, $gray-900, $gray-100) !default;
+
+$kendo-base-bg: $gray-100 !default;
+$kendo-base-text: $kendo-body-text !default;
+
+$kendo-color-border: k-try-shade($gray-100, 1) !default; // $kendo-base-border
+$kendo-color-border-hover: k-try-shade($gray-200, 1) !default; // $kendo-hover-border
+// $kendo-color-border-focus: k-color-darken( $kendo-button-bg, 12.5% ) !default; // $kendo-button-focus-border
+
+$kendo-color-base: #e4e7eb !default; // $kendo-button-bg
+$kendo-color-base-text: k-contrast-color($kendo-color-base, $gray-900) !default; // $kendo-button-text
+$kendo-color-base-hover: k-color-darken($kendo-color-base, 7.5%) !default; // $kendo-button-hover-bg
+$kendo-color-base-active: k-color-darken($kendo-color-base, 10%) !default; // $kendo-button-active-bg
+$kendo-color-base-selected: k-color-darken($kendo-color-base, 10%) !default; // the same "active" above
+$kendo-color-base-focus: null !default; // null or $kendo-button-focus-bg
+
 $kendo-color-primary: $primary !default;
+$kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
+$kendo-color-primary-hover: k-color-darken($kendo-color-primary, 7.5%) !default;
+$kendo-color-primary-active: k-color-darken($kendo-color-primary, 10%) !default;
+$kendo-color-primary-selected: k-color-darken( $kendo-color-primary, 10% ) !default; // $kendo-button-selected-bg
+$kendo-color-primary-focus: null !default;
+$kendo-color-primary-light: k-color-mix($kendo-color-primary, #ffffff, 25%) !default; // $kendo-grid-sticky-selected-bg
+$kendo-color-primary-light-alt: k-color-shade($kendo-color-primary-light, .4) !default; // $kendo-grid-sticky-selected-alt-bg
 
 $kendo-color-secondary: $secondary !default;
+$kendo-color-secondary-text: k-contrast-legacy($kendo-color-secondary) !default;
+$kendo-color-secondary-hover: k-color-darken($kendo-color-secondary, 7.5%) !default;
+$kendo-color-secondary-active: k-color-darken($kendo-color-secondary, 10%) !default;
+$kendo-color-secondary-selected: k-color-darken( $kendo-color-secondary, 10% ) !default;
+$kendo-color-secondary-focus: null !default;
 
 $kendo-color-tertiary: $purple !default;
+$kendo-color-tertiary-text: k-contrast-legacy($kendo-color-tertiary) !default;
+$kendo-color-tertiary-hover: k-color-darken($kendo-color-tertiary, 7.5%) !default;
+$kendo-color-tertiary-active: k-color-darken($kendo-color-tertiary, 10%) !default;
+$kendo-color-tertiary-selected: k-color-darken( $kendo-color-tertiary, 10% ) !default;
+$kendo-color-tertiary-focus: null !default;
 
 $kendo-color-info: $info !default;
+$kendo-color-info-text: k-contrast-legacy($kendo-color-info) !default;
+$kendo-color-info-hover: k-color-darken($kendo-color-info, 7.5%) !default;
+$kendo-color-info-active: k-color-darken($kendo-color-info, 10%) !default;
+$kendo-color-info-selected: k-color-darken( $kendo-color-info, 10% ) !default;
+$kendo-color-info-focus: null !default;
 
 $kendo-color-success: $success !default;
+$kendo-color-success-text: k-contrast-legacy($kendo-color-success) !default;
+$kendo-color-success-hover: k-color-darken($kendo-color-success, 7.5%) !default;
+$kendo-color-success-active: k-color-darken($kendo-color-success, 10%) !default;
+$kendo-color-success-selected: k-color-darken( $kendo-color-success, 10% ) !default;
+$kendo-color-success-focus: null !default;
 
 $kendo-color-warning: $warning !default;
+$kendo-color-warning-text: k-contrast-legacy($kendo-color-warning) !default;
+$kendo-color-warning-hover: k-color-darken($kendo-color-warning, 7.5%) !default;
+$kendo-color-warning-active: k-color-darken($kendo-color-warning, 10%) !default;
+$kendo-color-warning-selected: k-color-darken( $kendo-color-warning, 10% ) !default;
+$kendo-color-warning-focus: null !default;
 
 $kendo-color-error: $danger !default;
+$kendo-color-error-text: k-contrast-legacy($kendo-color-error) !default;
+$kendo-color-error-hover: k-color-darken($kendo-color-error, 7.5%) !default;
+$kendo-color-error-active: k-color-darken($kendo-color-error, 10%) !default;
+$kendo-color-error-selected: k-color-darken( $kendo-color-error, 10% ) !default;
+$kendo-color-error-focus: null !default;
 
 $kendo-color-dark: $dark !default;
+$kendo-color-dark-text: k-contrast-legacy($kendo-color-dark) !default;
+$kendo-color-dark-hover: k-color-darken($kendo-color-dark, 7.5%) !default;
+$kendo-color-dark-active: k-color-darken($kendo-color-dark, 10%) !default;
+$kendo-color-dark-selected: k-color-darken( $kendo-color-dark, 10% ) !default;
+$kendo-color-dark-focus: null !default;
+
 $kendo-color-light: $light !default;
+$kendo-color-light-text: k-contrast-legacy($kendo-color-light) !default;
+$kendo-color-light-hover: k-color-darken($kendo-color-light, 7.5%) !default;
+$kendo-color-light-active: k-color-darken($kendo-color-light, 10%) !default;
+$kendo-color-light-selected: k-color-darken( $kendo-color-light, 10% ) !default;
+$kendo-color-light-focus: null !default;
+
 $kendo-color-inverse: $kendo-color-dark !default;
+$kendo-color-inverse-text: k-contrast-legacy($kendo-color-inverse) !default;
+$kendo-color-inverse-hover: k-color-darken($kendo-color-inverse, 7.5%) !default;
+$kendo-color-inverse-active: k-color-darken($kendo-color-inverse, 10%) !default;
+$kendo-color-inverse-selected: k-color-darken( $kendo-color-inverse, 10% ) !default;
+$kendo-color-inverse-focus: null !default;
+
+$kendo-base-gradient: null !default;
