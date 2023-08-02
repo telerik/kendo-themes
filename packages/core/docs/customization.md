@@ -3355,19 +3355,32 @@ k-shadow-change-color($shadow, $color) // => List
 
 ```scss
 // Usage
-@debug k-shadow-change-color( (0 2px 7px) rgba(0, 0, 0, .75), rgba(0, 0, 0, .5) ); // => 0 2px 7px rgba(0, 0, 0, .75)
-@debug k-shadow-set-alpha( (0 2px 7px) rgba(0, 0, 0, .75) ); // => 0 2px 7px rgba(0, 0, 0, .75)
+@debug k-shadow-change-color( $shadow: (0 2px 7px rgba(0, 0, 0, .75)), $color: rgba(0, 0, 0, .5) ); // => 0 2px 7px rgba(0, 0, 0, .75)
 ```
 
 
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_shadow-color.import.scss#L9-L16
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_shadow-color.import.scss#L8-L26
 @function k-shadow-change-color($shadow, $color) {
-    $shadow: k-list-nth( $shadow, 1 ) $color;
+    $_shadows: ();
+    $_shadows-length: k-list-length($shadows);
+    $_colors-length: k-list-length($colors);
 
-    @return $shadow;
+    @for $i from 1 to $_shadows-length + 1 {
+        $_shadow: k-list-nth($shadows, $i);
+        $_shadow-resolved: $_shadow;
+
+        @if $i <= $_colors-length {
+            $_color: k-list-nth($colors, $i);
+            $_shadow-resolved: k-list-set-nth($_shadow, -1, $_color);
+        }
+
+        $_shadows: k-list-append($_shadows, $_shadow-resolved, $separator: comma );
+    }
+
+    @return $_shadows;
 }
 ```
 

@@ -3916,8 +3916,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td>List</td>
-    <td><code>k-shadow-change-color( k-map-get($kendo-box-shadows, 2), rgba( $kendo-color-black, .5 ) )</code></td>
-    <td><code>(0 4px 6px) rgba(0, 0, 0, 0.5)</code></td>
+    <td><code>0 1px 4px rgba(0, 0, 0, .5)</code></td>
+    <td><code>0 1px 4px rgba(0, 0, 0, 0.5)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
@@ -3926,8 +3926,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>k-shadow-change-color( k-map-get( $kendo-box-shadows, 2), $kendo-color-black )</code></td>
-    <td><code>(0 4px 6px) #000000</code></td>
+    <td><code>0 1px 4px black</code></td>
+    <td><code>0 1px 4px black</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient canvas drag handle.</div></div>
@@ -3937,7 +3937,7 @@ The following table lists the available variables for customizing the Default th
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td>List</td>
     <td><code>$kendo-color-gradient-draghandle-focus-shadow</code></td>
-    <td><code>(0 4px 6px) #000000</code></td>
+    <td><code>0 1px 4px black</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the hovered ColorGradient canvas drag handle.</div></div>
@@ -11890,6 +11890,46 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the ScrollView transition.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Shadow
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-box-shadows</td>
+    <td>Map</td>
+    <td><code>(
+    1: ( ( 0 2px 3px ) rgba(0, 0, 0, .04) ), // TODO use $kendo-color-black variable after adding color palette in the Utils package
+    2: ( ( 0 4px 6px ) rgba(0, 0, 0, .06), ( 0 4px 7px ) rgba(0, 0, 0, .07) ), // tmp value for testing
+    3: ( ( 0 8px 10px ) rgba(0, 0, 0, .08) ),
+    4: ( ( 0 12px 14px ) rgba(0, 0, 0, .12) ),
+    5: ( ( 0 16px 18px ) rgba(0, 0, 0, .16) ),
+    6: ( ( 0 20px 22px ) rgba(0, 0, 0, .2) ),
+    7: ( ( 0 24px 26px ) rgba(0, 0, 0, .24) ),
+    8: ( ( 0 28px 30px ) rgba(0, 0, 0, .28) ),
+    9: ( ( 0 32px 34px ) rgba(0, 0, 0, .32) )
+)</code></td>
+    <td><code>(1: (0 2px 3px) rgba(0, 0, 0, 0.04), 2: ((0 4px 6px) rgba(0, 0, 0, 0.06), (0 4px 7px) rgba(0, 0, 0, 0.07)), 3: (0 8px 10px) rgba(0, 0, 0, 0.08), 4: (0 12px 14px) rgba(0, 0, 0, 0.12), 5: (0 16px 18px) rgba(0, 0, 0, 0.16), 6: (0 20px 22px) rgba(0, 0, 0, 0.2), 7: (0 24px 26px) rgba(0, 0, 0, 0.24), 8: (0 28px 30px) rgba(0, 0, 0, 0.28), 9: (0 32px 34px) rgba(0, 0, 0, 0.32))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadows map containing lists with depths and colors values.</div></div>
     </td>
 </tr>
 </tbody>
