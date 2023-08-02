@@ -21,6 +21,7 @@ export * from './color-preview/index';
 // export * from './skeleton/index';
 
 // Native forms
+export * from './form/index';
 export * from './button/index';
 export * from './button-group/index';
 export * from './menu-button/index';
