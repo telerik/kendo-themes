@@ -14,27 +14,27 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
-            <span>Floating label flat</span>
-            <span>Floating label flat RTL</span>
+            <span>Floating label</span>
+            <span>Floating label RTL</span>
 
             <div>
                 <FloatingLabelNormal label="Label with placeholder" empty>
-                    <TextboxNormal fillMode="flat" placeholder="placeholder" />
+                    <TextboxNormal placeholder="placeholder" />
                 </FloatingLabelNormal>
             </div>
             <div dir="rtl">
                 <FloatingLabelNormal label="Label with placeholder" empty>
-                    <TextboxNormal fillMode="flat" placeholder="placeholder" />
+                    <TextboxNormal placeholder="placeholder" />
                 </FloatingLabelNormal>
             </div>
             <div>
                 <FloatingLabelNormal label="Label with placeholder focused" empty focus>
-                    <TextboxNormal fillMode="flat" placeholder="placeholder" focus />
+                    <TextboxNormal placeholder="placeholder" focus />
                 </FloatingLabelNormal>
             </div>
             <div dir="rtl">
                 <FloatingLabelNormal label="Label with placeholder focused" empty focus>
-                    <TextboxNormal fillMode="flat" placeholder="placeholder" focus />
+                    <TextboxNormal placeholder="placeholder" focus />
                 </FloatingLabelNormal>
             </div>
 
@@ -47,12 +47,12 @@ export default () =>(
                     <>
                         <div>
                             <FloatingLabelNormal label="Label" { ...{ [state]: true }}>
-                                <TextboxNormal fillMode="flat" value={value} { ...{ [state]: true }}/>
+                                <TextboxNormal value={value} { ...{ [state]: true }}/>
                             </FloatingLabelNormal>
                         </div>
                         <div dir="rtl">
                             <FloatingLabelNormal label="Label" { ...{ [state]: true }}>
-                                <TextboxNormal fillMode="flat" value={value} { ...{ [state]: true }} />
+                                <TextboxNormal value={value} { ...{ [state]: true }} />
                             </FloatingLabelNormal>
                         </div>
                     </>
