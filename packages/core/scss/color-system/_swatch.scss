@@ -17,7 +17,7 @@ $kendo-color-primary-selected: null !default;
 $kendo-color-primary-focus: null !default;
 $kendo-color-primary-light: null !default;
 $kendo-color-primary-light-alt: null !default;
-$kendo-color-primary-lighter: null !default;
+$kendo-color-primary-light-mix: null !default;
 $kendo-color-primary-pale: null !default;
 $kendo-color-primary-dim: null !default;
 $kendo-color-primary-shaded: null !default;
@@ -140,7 +140,7 @@ $_kendo-color-primary-selected: null;
 $_kendo-color-primary-focus: null;
 $_kendo-color-primary-light: null;
 $_kendo-color-primary-light-alt: null;
-$_kendo-color-primary-lighter: null;
+$_kendo-color-primary-light-mix: null;
 $_kendo-color-primary-pale: null;
 $_kendo-color-primary-dim: null;
 $_kendo-color-primary-shaded: null;
@@ -272,7 +272,7 @@ $_kendo-color-border-focus-rgb: null;
         kendo-color-primary-focus: $kendo-color-primary-focus,
         kendo-color-primary-light: $kendo-color-primary-light,
         kendo-color-primary-light-alt: $kendo-color-primary-light-alt,
-        kendo-color-primary-lighter: $kendo-color-primary-lighter,
+        kendo-color-primary-light-mix: $kendo-color-primary-light-mix,
         kendo-color-primary-pale: $kendo-color-primary-pale,
         kendo-color-primary-dim: $kendo-color-primary-dim,
         kendo-color-primary-shaded: $kendo-color-primary-shaded,
@@ -407,7 +407,7 @@ $_kendo-color-border-focus-rgb: null;
     $_kendo-color-primary-focus: var(--kendo-color-primary-focus, k-map-get($kendo-theme-palette, kendo-color-primary-focus));
     $_kendo-color-primary-light: var(--kendo-color-primary-light, k-map-get($kendo-theme-palette, kendo-color-primary-light));
     $_kendo-color-primary-light-alt: var(--kendo-color-primary-light-alt, k-map-get($kendo-theme-palette, kendo-color-primary-light-alt));
-    $_kendo-color-primary-lighter: var(--kendo-color-primary-lighter, k-map-get($kendo-theme-palette, kendo-color-primary-lighter));
+    $_kendo-color-primary-light-mix: var(--kendo-color-primary-light-mix, k-map-get($kendo-theme-palette, kendo-color-primary-light-mix));
     $_kendo-color-primary-pale: var(--kendo-color-primary-pale, k-map-get($kendo-theme-palette, kendo-color-primary-pale));
     $_kendo-color-primary-dim: var(--kendo-color-primary-dim, k-map-get($kendo-theme-palette, kendo-color-primary-dim));
     $_kendo-color-primary-shaded: var(--kendo-color-primary-shaded, k-map-get($kendo-theme-palette, kendo-color-primary-shaded));

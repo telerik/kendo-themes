@@ -49,7 +49,7 @@ $kendo-stepper-indicator-done-hover-bg: if($kendo-new-colors, $kendo-color-prima
 $kendo-stepper-indicator-done-hover-text: null !default;
 $kendo-stepper-indicator-done-hover-border: null !default;
 
-$kendo-stepper-indicator-done-disabled-bg: if($kendo-new-colors, $kendo-color-primary-lighter, k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%)) !default;
+$kendo-stepper-indicator-done-disabled-bg: if($kendo-new-colors, $kendo-color-primary-light-mix, k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%)) !default;
 $kendo-stepper-indicator-done-disabled-text: if($kendo-new-colors, $kendo-color-primary-text, k-contrast-legacy( $kendo-stepper-indicator-done-bg )) !default;
 $kendo-stepper-indicator-done-disabled-border: $kendo-stepper-indicator-done-disabled-bg !default;
 

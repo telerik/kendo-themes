@@ -50,7 +50,7 @@ $kendo-color-primary-selected: $kendo-color-primary !default;
 $kendo-color-primary-focus: null !default;
 $kendo-color-primary-light: k-color-mix($kendo-color-primary, #ffffff, 25%) !default;
 $kendo-color-primary-light-alt: k-color-shade($kendo-color-primary-light, .4) !default;
-$kendo-color-primary-lighter: k-color-mix($kendo-color-primary, $kendo-body-bg, 60%) !default;
+$kendo-color-primary-light-mix: k-color-mix($kendo-color-primary, $kendo-body-bg, 60%) !default;
 $kendo-color-primary-pale: k-try-tint($kendo-color-primary, 6) !default;
 $kendo-color-primary-dim: k-color-tint($kendo-color-primary, 2) !default;
 $kendo-color-primary-shaded: k-try-shade($kendo-color-primary) !default; // VERY SIMILAR TO $kendo-color-primary-hover/active
