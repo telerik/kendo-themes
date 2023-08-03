@@ -27,4 +27,4 @@ $kendo-filter-preview-operator-text: $kendo-subtle-text !default;
 
 /// The box shadow of the focused Filter toolbar.
 /// @group filter
-$kendo-filter-toolbar-focus-shadow: 0 0 0 .25rem rgba( $kendo-color-primary, .25 ) !default;
+$kendo-filter-toolbar-focus-shadow: 0 0 0 .25rem if($kendo-new-colors, rgba( $_kendo-color-primary-rgb, .25 ), rgba( $kendo-color-primary, .25 )) !default;

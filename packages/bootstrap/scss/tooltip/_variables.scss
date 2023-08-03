@@ -19,7 +19,7 @@ $kendo-tooltip-text: k-contrast-color( $kendo-tooltip-bg ) !default;
 $kendo-tooltip-border: $kendo-tooltip-bg !default;
 
 $kendo-tooltip-primary-bg: $kendo-color-primary !default;
-$kendo-tooltip-primary-text: k-contrast-color( $kendo-tooltip-primary-bg ) !default;
+$kendo-tooltip-primary-text: if($kendo-new-colors, $kendo-color-primary-text, k-contrast-color( $kendo-tooltip-primary-bg )) !default;
 $kendo-tooltip-primary-border: $kendo-tooltip-primary-bg !default;
 $kendo-tooltip-info-bg: $kendo-color-info !default;
 $kendo-tooltip-info-text: k-contrast-color( $kendo-tooltip-info-bg ) !default;

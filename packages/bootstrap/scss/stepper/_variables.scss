@@ -42,15 +42,15 @@ $kendo-stepper-indicator-disabled-text: $kendo-disabled-text !default;
 $kendo-stepper-indicator-disabled-border: null !default;
 
 $kendo-stepper-indicator-done-bg: $kendo-color-primary !default;
-$kendo-stepper-indicator-done-text: k-contrast-color( $kendo-stepper-indicator-done-bg ) !default;
+$kendo-stepper-indicator-done-text: if($kendo-new-colors, $kendo-color-primary-text, k-contrast-color( $kendo-stepper-indicator-done-bg )) !default;
 $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
 
-$kendo-stepper-indicator-done-hover-bg: k-try-shade( $kendo-stepper-indicator-done-bg ) !default;
+$kendo-stepper-indicator-done-hover-bg: if($kendo-new-colors, $kendo-color-primary-shaded, k-try-shade( $kendo-stepper-indicator-done-bg )) !default;
 $kendo-stepper-indicator-done-hover-text: null !default;
 $kendo-stepper-indicator-done-hover-border: null !default;
 
-$kendo-stepper-indicator-done-disabled-bg: k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%) !default;
-$kendo-stepper-indicator-done-disabled-text: k-contrast-color( $kendo-stepper-indicator-done-bg ) !default;
+$kendo-stepper-indicator-done-disabled-bg: if($kendo-new-colors, $kendo-color-primary-light-mix, k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%)) !default;
+$kendo-stepper-indicator-done-disabled-text: if($kendo-new-colors, $kendo-color-primary-text, k-contrast-color( $kendo-stepper-indicator-done-bg )) !default;
 $kendo-stepper-indicator-done-disabled-border: $kendo-stepper-indicator-done-disabled-bg !default;
 
 $kendo-stepper-indicator-current-bg: $kendo-stepper-indicator-done-bg !default;

@@ -82,7 +82,7 @@ $kendo-toolbar-input-width: 10em !default;
 
 /// The box shadow of the focused Toolbar item.
 /// @group toolbar
-$kendo-toolbar-item-shadow: 0 0 0 .25rem rgba( $kendo-color-primary, .25 ) !default;
+$kendo-toolbar-item-shadow: 0 0 0 .25rem if($kendo-new-colors, rgba( $_kendo-color-primary-rgb, .25 ), rgba( $kendo-color-primary, .25 )) !default;
 
 /// The sizes map for the Toolbar.
 /// @group toolbar

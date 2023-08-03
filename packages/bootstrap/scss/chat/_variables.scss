@@ -57,7 +57,7 @@ $kendo-chat-bubble-hover-shadow: none !default;
 $kendo-chat-bubble-selected-shadow: none !default;
 
 $kendo-chat-alt-bubble-bg: $kendo-color-primary !default;
-$kendo-chat-alt-bubble-text: k-contrast-color( $kendo-chat-alt-bubble-bg ) !default;
+$kendo-chat-alt-bubble-text: if($kendo-new-colors, $kendo-color-primary-text, k-contrast-color( $kendo-chat-alt-bubble-bg )) !default;
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
 $kendo-chat-alt-bubble-shadow: none !default;
 $kendo-chat-alt-bubble-hover-shadow: none !default;

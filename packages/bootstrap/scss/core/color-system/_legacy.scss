@@ -64,7 +64,7 @@ $kendo-invalid-shadow: null !default;
 $kendo-theme-swatches: null !default;
 
 @if ($kendo-new-colors) {
-    $kendo-color-primary: $kendo-color-primary;
+    $kendo-color-primary: $_kendo-color-primary;
     $kendo-color-primary-light: $kendo-color-primary-light;
     $kendo-color-primary-darker: $kendo-color-primary-active;
     $kendo-color-primary-contrast: $kendo-color-primary-text;

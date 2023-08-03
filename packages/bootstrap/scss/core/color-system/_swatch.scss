@@ -3,7 +3,7 @@
 @import "bootstrap/scss/_functions.scss";
 @import "bootstrap/scss/_variables.scss";
 
-$kendo-new-colors: false;
+$kendo-new-colors: true;
 
 // TODO: re-evaluate!
 $kendo-color-white: #ffffff;
@@ -20,7 +20,7 @@ $kendo-base-text: $kendo-body-text !default;
 
 $kendo-color-border: k-try-shade($gray-100, 1) !default; // $kendo-base-border
 $kendo-color-border-hover: k-try-shade($gray-200, 1) !default; // $kendo-hover-border
-// $kendo-color-border-focus: k-color-darken( $kendo-button-bg, 12.5% ) !default; // $kendo-button-focus-border
+$kendo-color-border-focus: $input-focus-border-color !default; // $kendo-input-focus-border
 
 $kendo-color-base: #e4e7eb !default; // $kendo-button-bg
 $kendo-color-base-text: k-contrast-color($kendo-color-base, $gray-900) !default; // $kendo-button-text
@@ -37,6 +37,10 @@ $kendo-color-primary-selected: k-color-darken( $kendo-color-primary, 10% ) !defa
 $kendo-color-primary-focus: null !default;
 $kendo-color-primary-light: k-color-mix($kendo-color-primary, #ffffff, 25%) !default; // $kendo-grid-sticky-selected-bg
 $kendo-color-primary-light-alt: k-color-shade($kendo-color-primary-light, .4) !default; // $kendo-grid-sticky-selected-alt-bg
+$kendo-color-primary-light-mix: k-color-mix($kendo-color-primary, $kendo-body-bg, 60%) !default; // $kendo-stepper-indicator-done-disabled-bg
+$kendo-color-primary-pale: k-try-tint($kendo-color-primary, 50%) !default;
+$kendo-color-primary-dim: k-color-tint($kendo-color-primary, 2) !default;
+$kendo-color-primary-shaded: k-try-shade($kendo-color-primary, 1) !default; // This variable can be renamed to $kendo-color-primary-selected-hover. VERY SIMILAR TO $kendo-color-primary-hover/active
 
 $kendo-color-secondary: $secondary !default;
 $kendo-color-secondary-text: k-contrast-legacy($kendo-color-secondary) !default;

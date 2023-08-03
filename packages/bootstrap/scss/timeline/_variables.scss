@@ -27,7 +27,7 @@ $kendo-timeline-track-end-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 * 
 $kendo-timeline-track-bg: $kendo-button-bg !default;
 $kendo-timeline-track-border-color: $kendo-timeline-track-bg !default;
 
-$kendo-timeline-track-item-focus-shadow: 0 0 0 3px rgba( $kendo-color-primary, .5 ) !default;
+$kendo-timeline-track-item-focus-shadow: 0 0 0 3px if($kendo-new-colors, rgba( $_kendo-color-primary-rgb, .5 ), rgba( $kendo-color-primary, .5 )) !default;
 
 $kendo-timeline-track-event-offset: 36px !default;
 
@@ -39,7 +39,7 @@ $kendo-timeline-flag-max-width: calc(#{$kendo-timeline-flag-min-width} + 2 * #{$
 $kendo-timeline-mobile-flag-max-width: calc(#{$kendo-timeline-flag-min-width} + 2 * #{$kendo-timeline-mobile-spacing-x}) !default;
 $kendo-timeline-horizontal-flag-min-width: 80px !default;
 $kendo-timeline-flag-bg: $kendo-color-primary !default;
-$kendo-timeline-flag-text: k-contrast-color( $kendo-timeline-flag-bg ) !default;
+$kendo-timeline-flag-text: if($kendo-new-colors, $kendo-color-primary-text, k-contrast-color( $kendo-timeline-flag-bg )) !default;
 
 $kendo-timeline-flag-callout-width: 10px !default;
 $kendo-timeline-flag-callout-height: 10px !default;
