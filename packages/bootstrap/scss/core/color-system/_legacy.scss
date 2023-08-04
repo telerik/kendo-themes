@@ -66,10 +66,10 @@ $kendo-theme-swatches: null !default;
 @if ($kendo-new-colors) {
     $kendo-color-primary: $_kendo-color-primary;
     $kendo-color-primary-light: $_kendo-color-primary-light;
-    $kendo-color-primary-darker: $kendo-color-primary-active;
-    $kendo-color-primary-contrast: $kendo-color-primary-text;
-    $kendo-color-secondary: $kendo-color-secondary;
-    $kendo-color-info: $kendo-color-info;
+    $kendo-color-primary-darker: $_kendo-color-primary-active;
+    $kendo-color-primary-contrast: $_kendo-color-primary-text;
+    $kendo-color-secondary: $_kendo-color-secondary;
+    $kendo-color-info: $_kendo-color-info;
     $kendo-color-success: $kendo-color-success;
     $kendo-color-warning: $kendo-color-warning;
     $kendo-color-error: $kendo-color-error;
