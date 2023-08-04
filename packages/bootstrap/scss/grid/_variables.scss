@@ -256,7 +256,7 @@ $kendo-grid-sticky-selected-bg: if($kendo-new-colors, $kendo-color-primary-light
 $kendo-grid-sticky-selected-alt-bg: if($kendo-new-colors, $kendo-color-primary-light-alt, k-color-shade( $kendo-grid-sticky-selected-bg, .4 )) !default;
 
 $kendo-grid-sticky-hover-bg: k-try-shade( $kendo-grid-bg ) !default;
-$kendo-grid-sticky-selected-hover-bg: k-color-shade( $kendo-grid-sticky-selected-bg, .7 ) !default;
+$kendo-grid-sticky-selected-hover-bg: if($kendo-new-colors, #ffffff /*TODO!*/ , k-color-shade( $kendo-grid-sticky-selected-bg, .7 )) !default;
 
 $kendo-grid-column-menu-width: 250px !default;
 $kendo-grid-column-menu-max-width: 320px !default;
