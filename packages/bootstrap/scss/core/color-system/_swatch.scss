@@ -18,9 +18,14 @@ $kendo-body-text: k-contrast-color($kendo-body-bg, $gray-900, $gray-100) !defaul
 $kendo-base-bg: $gray-100 !default;
 $kendo-base-text: $kendo-body-text !default;
 
-$kendo-color-border: k-try-shade($gray-100, 1) !default; // $kendo-base-border
-$kendo-color-border-hover: k-try-shade($gray-200, 1) !default; // $kendo-hover-border
-$kendo-color-border-focus: $input-focus-border-color !default; // $kendo-input-focus-border
+$kendo-color-border: $input-border-color !default; // $gray-400
+$kendo-color-border-hover: null !default;
+$kendo-color-border-focus: $input-focus-border-color !default;
+
+// We probably need to introduce another border color variable
+// because the inputs border color and the components border color
+// are quite different (while they are the same in the Default theme)
+$kendo-color-component-border: if( k-is-light( $kendo-body-bg ), $gray-300, $gray-700 ); // $kendo-component-border
 
 $kendo-color-base: #e4e7eb !default; // $kendo-button-bg
 $kendo-color-base-text: k-contrast-color($kendo-color-base, $gray-900) !default; // $kendo-button-text
