@@ -28,7 +28,7 @@ $kendo-tooltip-success-bg: $kendo-color-success !default;
 $kendo-tooltip-success-text: if($kendo-new-colors, $kendo-color-success-text, k-contrast-color( $kendo-tooltip-success-bg )) !default;
 $kendo-tooltip-success-border: $kendo-tooltip-success-bg !default;
 $kendo-tooltip-warning-bg: $kendo-color-warning !default;
-$kendo-tooltip-warning-text: k-contrast-color( $kendo-tooltip-warning-bg ) !default;
+$kendo-tooltip-warning-text: if($kendo-new-colors, $kendo-color-warning-text, k-contrast-color( $kendo-tooltip-warning-bg )) !default;
 $kendo-tooltip-warning-border: $kendo-tooltip-warning-bg !default;
 $kendo-tooltip-error-bg: $kendo-color-error !default;
 $kendo-tooltip-error-text: k-contrast-color( $kendo-tooltip-error-bg ) !default;
