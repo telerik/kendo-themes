@@ -69,6 +69,7 @@ $kendo-color-success-hover: k-color-darken($kendo-color-success, 7.5%) !default;
 $kendo-color-success-active: k-color-darken($kendo-color-success, 10%) !default;
 $kendo-color-success-selected: k-color-darken( $kendo-color-success, 10% ) !default;
 $kendo-color-success-focus: null !default;
+$kendo-color-success-dim: k-color-tint($kendo-color-success, 5) !default;
 
 $kendo-color-warning: $warning !default;
 $kendo-color-warning-text: k-contrast-legacy($kendo-color-warning) !default;
