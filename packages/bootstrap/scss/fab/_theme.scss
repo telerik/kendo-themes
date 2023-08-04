@@ -114,7 +114,7 @@
         .k-fab-item-text,
         .k-fab-item-icon {
             @include box-shadow( $kendo-fab-item-disabled-shadow );
-            background-color: k-try-tint( $kendo-fab-item-bg, 8 );
+            background-color: if($kendo-new-colors, $kendo-body-bg-pale, k-try-tint( $kendo-fab-item-bg, 8 ));
             color: k-try-tint( $kendo-fab-item-text, 8 );
         }
     }

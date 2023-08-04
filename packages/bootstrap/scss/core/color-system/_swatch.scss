@@ -13,7 +13,12 @@ $kendo-subtle-text: if( $kendo-is-dark-theme, $gray-400, $text-muted ) !default;
 $kendo-disabled-text: if( $kendo-is-dark-theme, $gray-600, $gray-500) !default;
 
 $kendo-body-bg: $kendo-color-white !default;
+$kendo-body-bg-pale: k-try-tint($kendo-body-bg, 8) !default;
 $kendo-body-text: k-contrast-color($kendo-body-bg, $gray-900, $gray-100) !default;
+$kendo-body-text-pale: k-try-tint($kendo-body-text, 6) !default;
+$kendo-body-hover: k-try-shade($kendo-body-bg, .5) !default;
+$kendo-body-darken: k-color-darken($kendo-body-bg, 7%) !default;
+$kendo-body-shaded: k-try-shade($kendo-body-bg) !default;
 
 $kendo-base-bg: $gray-100 !default;
 $kendo-base-text: $kendo-body-text !default;
@@ -25,14 +30,18 @@ $kendo-color-border-focus: $input-focus-border-color !default;
 // We probably need to introduce another border color variable
 // because the inputs border color and the components border color
 // are quite different (while they are the same in the Default theme)
+// !!! $kendo-gantt-milestone-bg !!!
+// !!! $kendo-gantt-task-bg !!!
 $kendo-color-component-border: if( k-is-light( $kendo-body-bg ), $gray-300, $gray-700 ); // $kendo-component-border
 
 $kendo-color-base: #e4e7eb !default; // $kendo-button-bg
 $kendo-color-base-text: k-contrast-color($kendo-color-base, $gray-900) !default; // $kendo-button-text
+$kendo-color-base-text-lighter: k-true-mix($kendo-color-base-text, $kendo-body-bg, 65%) !default;
 $kendo-color-base-hover: k-color-darken($kendo-color-base, 7.5%) !default; // $kendo-button-hover-bg
 $kendo-color-base-active: k-color-darken($kendo-color-base, 10%) !default; // $kendo-button-active-bg
 $kendo-color-base-selected: k-color-darken($kendo-color-base, 10%) !default; // the same "active" above
 $kendo-color-base-focus: null !default; // null or $kendo-button-focus-bg
+$kendo-color-base-lighter: k-true-mix($kendo-color-base, $kendo-body-bg, 65%) !default;
 
 $kendo-color-primary: $primary !default;
 $kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;

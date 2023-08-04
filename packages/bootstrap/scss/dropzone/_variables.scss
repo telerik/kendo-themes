@@ -9,7 +9,7 @@ $kendo-dropzone-font-family: $kendo-font-family !default;
 $kendo-dropzone-font-size: $kendo-font-size-md !default;
 $kendo-dropzone-line-height: $kendo-line-height-md !default;
 
-$kendo-dropzone-bg: if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 ) !default;
+$kendo-dropzone-bg: if($kendo-new-colors, $kendo-base-bg, if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 )) !default;
 $kendo-dropzone-text: $kendo-component-text !default;
 $kendo-dropzone-border: $kendo-component-border !default;
 

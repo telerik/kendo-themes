@@ -111,7 +111,7 @@ $kendo-table-group-row-border: $kendo-table-header-border !default;
 
 /// Background color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-bg: rgba( k-contrast-color( $kendo-table-bg ), .04 ) !default;
+$kendo-table-alt-row-bg: rgba( if($kendo-new-colors, $_kendo-body-bg-contrast-rgb, k-contrast-color( $kendo-table-bg )), .04 ) !default;
 /// Text color of alternating rows in table.
 /// @group table
 $kendo-table-alt-row-text: null !default;
@@ -122,7 +122,7 @@ $kendo-table-alt-row-border: null !default;
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: rgba( k-contrast-color( $kendo-table-bg ), .08 ) !default;
+$kendo-table-hover-bg: rgba( if($kendo-new-colors, $_kendo-body-bg-contrast-rgb, k-contrast-color( $kendo-table-bg )), .08 ) !default;
 /// Text color of hovered rows in table.
 /// @group table
 $kendo-table-hover-text: null !default;
