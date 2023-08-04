@@ -84,6 +84,7 @@ $kendo-color-error-hover: k-color-darken($kendo-color-error, 7.5%) !default;
 $kendo-color-error-active: k-color-darken($kendo-color-error, 10%) !default;
 $kendo-color-error-selected: k-color-darken( $kendo-color-error, 10% ) !default;
 $kendo-color-error-focus: null !default;
+$kendo-color-error-dim: k-color-tint($kendo-color-error, 5) !default;
 
 $kendo-color-dark: $dark !default;
 $kendo-color-dark-text: k-contrast-legacy($kendo-color-dark) !default;
