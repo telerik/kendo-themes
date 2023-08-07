@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0-dev.3](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.2...v6.7.0-dev.3) (2023-08-07)
+
+
+### Bug Fixes
+
+* **floating-label:** invalid state displays properly in default theme ([dc129a6](https://github.com/telerik/kendo-themes/commit/dc129a67cb8a5e4079c1dcf156f444427173fe58))
+
+
+
+
+
 # [6.7.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.1...v6.7.0-dev.2) (2023-07-31)
 
 **Note:** Version bump only for package kendo-themes.repo
