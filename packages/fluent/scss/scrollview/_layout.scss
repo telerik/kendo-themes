@@ -29,19 +29,16 @@
         cursor: default;
         white-space: nowrap;
 
+        > .k-scrollview-view {
+            display: inline-block;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
         img {
             user-select: none;
         }
 
-    }
-
-    // Can be removed once Angular are able to rely on the animations from the themes
-    kendo-scrollview.k-scrollview .k-scrollview-wrap > .k-scrollview-view {
-        display: inline-block;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 
     .k-scrollview-wrap.k-scrollview-animate {
