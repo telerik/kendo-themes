@@ -406,10 +406,17 @@
 
 
     // Chat toolbar
-    .k-chat-toolbar {
+    .k-chat-toolbar,
+    .k-chat .k-toolbar-box {
+        padding-block: $kendo-chat-toolbar-padding-y;
+        padding-inline: $kendo-chat-toolbar-padding-x;
         width: 100%;
         border-width: 1px 0 0;
+        box-sizing: border-box;
         flex: none;
+        overflow: hidden;
+        position: relative;
+        gap: $kendo-toolbar-md-spacing;
 
         &::before {
             display: none;
