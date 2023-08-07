@@ -1,6 +1,5 @@
 import { classNames } from '../misc';
 import { Button } from '../button';
-import { Toolbar } from '../toolbar';
 import { Textbox } from '../textbox';
 
 const CHAT_CLASSNAME = 'k-chat';
@@ -59,21 +58,21 @@ export const Chat = (
                 />
             }
             { showToolbar &&
-                <Toolbar className="k-chat-toolbar">
-                    <Button className="k-scroll-button k-scroll-button-left k-hidden" fillMode="flat" rounded={null} size={null} icon="chevron-left"></Button>
+                <div className="k-chat-toolbar k-toolbar">
+                    <Button className="k-scroll-button k-scroll-button-left k-hidden" icon="chevron-left" />
                     <div className="k-toolbar-group k-button-list">
-                        <Button fillMode="flat" icon="arrow-rotate-cw"></Button>
-                        <Button fillMode="flat" icon="gear"></Button>
-                        <Button fillMode="flat" icon="wrench"></Button>
-                        <Button fillMode="flat" icon="plus"></Button>
-                        <Button fillMode="flat" icon="search"></Button>
-                        <Button fillMode="flat" icon="star"></Button>
-                        <Button fillMode="flat" icon="bell"></Button>
-                        <Button fillMode="flat" icon="question-circle"></Button>
-                        <Button fillMode="flat" icon="trash"></Button>
+                        <Button icon="arrow-rotate-cw"></Button>
+                        <Button icon="gear"></Button>
+                        <Button icon="wrench"></Button>
+                        <Button icon="plus"></Button>
+                        <Button icon="search"></Button>
+                        <Button icon="star"></Button>
+                        <Button icon="bell"></Button>
+                        <Button icon="question-circle"></Button>
+                        <Button icon="trash"></Button>
                     </div>
-                    <Button className="k-scroll-button k-scroll-button-right" fillMode="flat" rounded={null} size={null} icon="chevron-right"></Button>
-                </Toolbar>
+                    <Button className="k-scroll-button k-scroll-button-right" icon="chevron-right" />
+                </div>
             }
         </div>
 
