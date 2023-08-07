@@ -285,10 +285,10 @@ $kendo-font-family: inherit !default;
 $kendo-line-height: k-math-div( 20, 14 ) !default;
 /// Extra small line height used along with $kendo-font-size-xs.
 /// @group typography
-$kendo-line-height-xs: 1 !default;
+$kendo-line-height-xs: 1 !default; // 14px ( 14 / 10 ) 1.4
 /// Small line height used along with $kendo-font-size-sm.
 /// @group typography
-$kendo-line-height-sm: 1.25 !default;
+$kendo-line-height-sm: 1.25 !default; // 17px ( 17 / 12 ) 1.416666666
 /// Medium line height used along with $kendo-font-size-md.
 /// @group typography
 $kendo-line-height-md: $kendo-line-height !default;

@@ -44,14 +44,32 @@ $kendo-h4-margin: 0 0 $kendo-font-size-md !default;
 $kendo-h5-margin: 0 0 $kendo-font-size-md !default;
 $kendo-h6-margin: 0 0 $kendo-font-size-md !default;
 
+// -xs:
+// -sm:
+// :
+// -lg:
+// -xl:
 
 // Paragraph
-$kendo-paragraph-margin: 0 0 $kendo-font-size-md !default;
+$kendo-paragraph-font-size-xs: $kendo-font-size-xs !default;
+$kendo-paragraph-font-size-sm: $kendo-font-size-sm !default;
 $kendo-paragraph-font-size: $kendo-font-size-md !default;
+$kendo-paragraph-font-size-lg: $kendo-font-size-lg !default;
+$kendo-paragraph-font-size-xl: $kendo-font-size-xl !default;
+
 $kendo-paragraph-font-family: $kendo-font-family !default;
+
 $kendo-paragraph-line-height: 20px !default;
+$kendo-paragraph-line-height: 20px !default;
+$kendo-paragraph-line-height: 20px !default;
+$kendo-paragraph-line-height: 20px !default;
+$kendo-paragraph-line-height: 20px !default;
+
 $kendo-paragraph-font-weight: $kendo-font-weight-normal !default;
+
 $kendo-paragraph-letter-spacing: null !default;
+
+$kendo-paragraph-margin: 0 0 $kendo-font-size-md !default;
 
 
 // Code
