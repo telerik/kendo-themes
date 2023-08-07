@@ -403,10 +403,17 @@
 
 @mixin kendo-chat-toolbar--layout() {
 
-    .k-chat-toolbar {
+    .k-chat-toolbar,
+    .k-chat .k-toolbar-box {
+        padding-inline: var( --kendo-chat-toolbar-padding-x, #{ $kendo-chat-toolbar-padding-x } );
+        padding-block: var( --kendo-chat-toolbar-padding-y, #{ $kendo-chat-toolbar-padding-y } );
         width: 100%;
         border-width: 1px 0 0;
+        box-sizing: border-box;
         flex: none;
+        overflow: hidden;
+        position: relative;
+        gap: var( --kendo-chat-toolbar-spacing, #{$kendo-chat-toolbar-spacing} );
 
         &::before {
             display: none;
