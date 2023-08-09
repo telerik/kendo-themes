@@ -5347,6 +5347,20 @@ This is equivalent to `scroll-padding-block: 1px;`.
 
 
 
+### `.k-shadow-0`
+
+This is equivalent to `shadow: 0;`.
+
+
+
+
+### `.k-shadow-1`
+
+This is equivalent to `shadow: 1;`.
+
+
+
+
 ### `.k-skew-x-0`
 
 This is equivalent to `transform: skewX(0deg);`.
