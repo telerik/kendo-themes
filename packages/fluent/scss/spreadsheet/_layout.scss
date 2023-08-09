@@ -37,16 +37,6 @@
             inset-block-start: 100%;
             transform: translateY( -100% );
         }
-
-    }
-
-
-    // Header
-    .k-spreadsheet .k-tabstrip-wrapper {
-        border-width: 0 0 1px;
-        border-style: solid;
-        border-color: inherit;
-        position: relative;
     }
 
 
@@ -61,74 +51,37 @@
         inset-inline-start: 0;
     }
 
-
-    // Tabstrip
-    .k-spreadsheet-tabstrip {
-        position: relative;
-        z-index: 1;
-    }
-
-    .k-spreadsheet-tabstrip .k-tabstrip-items-wrapper {
-        margin: 0;
-    }
-
-    .k-spreadsheet-tabstrip .k-loading {
-        // TODO: better name
-        display: none;
-    }
-
-    .k-spreadsheet-tabstrip .k-content,
-    .k-spreadsheet-tabstrip .k-tabstrip-content {
-        @include border-radius( 0 );
-        padding: 0;
-        border-width: 0;
-        overflow: hidden;
-    }
-
-
     // Toolbar
     .k-spreadsheet-toolbar {
         border-width: 0;
-
-
-        // Tools
-        [data-tool="backgroundColor"],
-        [data-tool="textColor"],
-        [data-tool="borders"],
-        [data-tool="alignment"],
-        [data-tool="merge"],
-        [data-tool="freeze"] {
-            width: auto;
-            min-width: var( --kendo-form-line-height-em, #{$kendo-form-line-height-em} );
-        }
-
-        .k-color-picker {
-            width: min-content;
-        }
     }
 
 
     // Action bar
     .k-spreadsheet-action-bar {
-        border-width: 0 0 1px;
+        border-width: 0 0 var( --kendo-spreadsheet-action-bar-border-width, #{$kendo-spreadsheet-action-bar-border-width} );
         border-style: solid;
         border-color: inherit;
-        font-size: 12px;
-        font-family: Arial, Verdana, sans-serif;
+        padding-block: var( --kendo-spreadsheet-action-bar-padding-y, #{$kendo-spreadsheet-action-bar-padding-y} );
+        padding-inline: var( --kendo-spreadsheet-action-bar-padding-x, #{$kendo-spreadsheet-action-bar-padding-x} );
+        font-size: var( --kendo-spreadsheet-action-bar-font-size, #{$kendo-spreadsheet-action-bar-font-size} );
+        font-family: var( --kendo-spreadsheet-action-bar-font-family, #{$kendo-spreadsheet-action-bar-font-family} );
         position: relative;
         display: flex;
         flex-direction: row;
+        gap: var( --kendo-spreadsheet-action-bar-spacing, #{$kendo-spreadsheet-action-bar-spacing} );
     }
     .k-spreadsheet-name-editor {
         width: 10em;
     }
     .k-spreadsheet-formula-bar {
+        min-width: 0px;
         border-color: inherit;
         display: flex;
         flex-direction: row;
         align-items: center;
         flex: 1;
-        gap: var( --kendo-padding-y, #{$kendo-padding-md-y} );
+        gap: var( --kendo-spreadsheet-formula-bar-gap, #{$kendo-spreadsheet-formula-bar-gap} );
 
         > .k-icon,
         > .k-svg-icon {
@@ -148,9 +101,13 @@
         }
 
         .k-spreadsheet-formula-input {
-            padding-inline: var( --kendo-input-md-padding-x, #{$kendo-input-md-padding-x} );
-            padding-block: var( --kendo-input-md-padding-y, #{$kendo-input-md-padding-y} );
-            line-height: var( --kendo-input-md-line-height, #{$kendo-input-md-line-height} );
+            padding-inline: var( --kendo-spreadsheet-formula-input-padding-x, #{$kendo-spreadsheet-formula-input-padding-x} );
+            padding-block: var( --kendo-spreadsheet-formula-input-padding-y, #{$kendo-spreadsheet-formula-input-padding-y} );
+            line-height: var( --kendo-spreadsheet-formula-input-line-height, #{$kendo-spreadsheet-formula-input-line-height} );
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             &.k-spreadsheet-array-formula {
                 &::before {
@@ -201,28 +158,36 @@
 
     // Cell editor
     .k-spreadsheet-cell-editor {
-        padding-block: 0;
-        padding-inline: 3px;
-        line-height: var( --kendo-spreadsheet-line-height, $kendo-spreadsheet-line-height );
+        padding-block: var( --kendo-spreadsheet-cell-editor-padding-y, $kendo-spreadsheet-cell-editor-padding-y );
+        padding-inline: var( --kendo-spreadsheet-cell-editor-padding-x, $kendo-spreadsheet-cell-editor-padding-x );
+        line-height: var( --kendo-spreadsheet-cell-editor-line-height, $kendo-spreadsheet-cell-editor-line-height );
         display: none;
         overflow: hidden;
         position: absolute;
-        z-index: 2000;
+        z-index: 100;
     }
 
 
     // Sheets bar
     .k-spreadsheet-sheets-bar {
-        padding-inline: var( --kendo-spreadsheet-sheets-bar-padding-x, #{$kendo-spreadsheet-sheets-bar-padding-x} ) 0;
-        padding-block: 0 var( --kendo-spreadsheet-sheets-bar-padding-y, #{$kendo-spreadsheet-sheets-bar-padding-y} );
+        padding-block-end: var( --kendo-spreadsheet-sheets-bar-padding-y, #{$kendo-spreadsheet-sheets-bar-padding-y} );
+        padding-inline: var( --kendo-spreadsheet-sheets-bar-padding-x, #{$kendo-spreadsheet-sheets-bar-padding-x} );
         border-width: var( --kendo-spreadsheet-border-width, $kendo-spreadsheet-border-width ) 0 0;
         border-style: solid;
         border-color: inherit;
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         position: relative;
     }
+
+    .k-spreadsheet-sheets {
+        flex: 1 1 auto;
+    }
+    .k-spreadsheet-sheets .k-tabstrip-items-wrapper {
+        border-width: 0;
+    }
+
     .k-spreadsheet-sheets-bar-add {
         align-self: center;
 
@@ -232,6 +197,7 @@
             background: none;
         }
     }
+
     .k-spreadsheet-sheets-items {
         flex: 1;
         overflow: hidden;
@@ -264,8 +230,8 @@
     .k-spreadsheet-view {
         height: auto !important; // stylelint-disable-line declaration-no-important
         border-color: inherit;
-        font-size: 12px;
-        font-family: Arial, Verdana, Sans-serif;
+        font-family: var( --kendo-spreadsheet-view-font-family, #{$kendo-spreadsheet-view-font-family} );
+        font-size: var( --kendo-spreadsheet-view-font-size, #{$kendo-spreadsheet-view-font-size} );
         flex: 1;
         position: relative;
         overflow: hidden;
@@ -277,8 +243,8 @@
     }
 
     .k-spreadsheet-fixed-container {
-        width: 100%;
-        height: 100%;
+        width: calc( 100% - var(--kendo-scrollbar-width, #{$kendo-scrollbar-width}) );
+        height: calc( 100% - var(--kendo-scrollbar-width, #{$kendo-scrollbar-width}) );
         border-color: inherit;
         box-sizing: border-box;
         user-select: none;
@@ -425,7 +391,8 @@
 
     // Cells
     .k-spreadsheet-cell {
-        padding: 1px;
+        padding-block: var( --kendo-spreadsheet-cell-padding-y, #{$kendo-spreadsheet-cell-padding-y} );
+        padding-inline: var( --kendo-spreadsheet-cell-padding-x, #{$kendo-spreadsheet-cell-padding-x} );
         box-sizing: border-box;
         position: absolute;
         line-height: normal;
@@ -453,8 +420,8 @@
         position: absolute;
     }
     .k-spreadsheet .k-spreadsheet-selection-highlight {
-        border-width: 1px;
-        border-style: solid;
+        border-width: 2px;
+        border-style: dashed;
         box-sizing: border-box;
         position: absolute;
     }
@@ -499,7 +466,7 @@
         position: absolute;
         inset-block-end: 0;
         inset-inline-end: 0;
-        z-index: 100;
+        z-index: 300;
         cursor: crosshair;
     }
 
@@ -556,13 +523,14 @@
         z-index: 50;
     }
     .k-spreadsheet .k-filter-range {
-        border-width: 1px;
+        border-width: 2px;
         border-style: solid;
         position: absolute;
         box-sizing: border-box;
     }
     .k-spreadsheet-filter {
         @include border-radius( $kendo-border-radius );
+        padding: var( --kendo-padding-y, #{$kendo-padding-md-y} );
         line-height: 1;
         position: absolute;
         cursor: pointer;
@@ -870,5 +838,61 @@
                 }
             }
         }
+    }
+
+    // Legacy styles
+    .k-spreadsheet-legacy {
+        .k-spreadsheet,
+        .k-spreadsheet-action-bar,
+        .k-spreadsheet-view {
+            font-size: 12px;
+        }
+
+        .k-spreadsheet-cell {
+            padding: 1px;
+        }
+
+        .k-spreadsheet-filter {
+            padding: 0px;
+        }
+
+        .k-filter-range {
+            border-width: 1px;
+        }
+
+        .k-spreadsheet .k-spreadsheet-selection-highlight {
+            border-width: 1px;
+            border-style: solid;
+        }
+    }
+
+    // Tabstrip
+    .k-spreadsheet .k-tabstrip-wrapper {
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: inherit;
+        position: relative;
+    }
+
+    .k-spreadsheet-tabstrip {
+        position: relative;
+        z-index: 1;
+    }
+
+    .k-spreadsheet-tabstrip .k-tabstrip-items-wrapper {
+        margin: 0;
+    }
+
+    .k-spreadsheet-tabstrip .k-loading {
+        // TODO: better name
+        display: none;
+    }
+
+    .k-spreadsheet-tabstrip .k-content,
+    .k-spreadsheet-tabstrip .k-tabstrip-content {
+        @include border-radius( 0 );
+        padding: 0;
+        border-width: 0;
+        overflow: hidden;
     }
 }
