@@ -4,7 +4,11 @@
 
     @include kendo-spreadsheet--layout-base();
 
-    // Filter menu
+    .k-spreadsheet-menu {
+        padding-inline: $navbar-padding-y;
+    }
+
+    // Filter menu - Delete once new rendering is adopted R3 23
     .k-spreadsheet-filter-menu {
         > .k-menu,
         > .k-menu:not(.k-context-menu) {
@@ -13,6 +17,10 @@
             font-weight: inherit;
             font-size: inherit;
         }
+    }
+
+    .k-spreadsheet-filter {
+        padding: k-map-get( $kendo-spacing, 1 );
     }
 
 }

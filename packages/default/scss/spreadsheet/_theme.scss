@@ -9,113 +9,103 @@
         );
     }
 
-
     // Header
-    .k-spreadsheet .k-tabstrip-wrapper {}
+    .k-spreadsheet-header {
+        @include fill(
+            $kendo-spreadsheet-header-text,
+            $kendo-spreadsheet-header-bg,
+            $kendo-spreadsheet-header-border,
+            $kendo-spreadsheet-header-gradient
+        );
+    }
 
-
-    // Quick access toolbar
-    .k-spreadsheet-quick-access-toolbar {}
-
-
-    // Row / column headers
+    // Row / Column Headers
     .k-spreadsheet-top-corner,
     .k-spreadsheet-row-header,
     .k-spreadsheet-column-header {
         @include fill(
-            $kendo-component-header-text,
-            $kendo-component-header-bg,
-            $kendo-component-header-border,
-            $kendo-component-header-gradient
+            $kendo-spreadsheet-table-header-text,
+            $kendo-spreadsheet-table-header-bg,
+            $kendo-spreadsheet-table-header-border,
+            $kendo-spreadsheet-table-header-gradient
         );
     }
 
-
-    // Formula bar
-    .k-spreadsheet-formula-list {}
-    .k-syntax-ref { color: #ff8822; }
-    .k-syntax-num { color: #0099ff; }
-    .k-syntax-str { color: #38b714; }
-    .k-syntax-error { color: red; }
-    .k-syntax-bool { color: #a9169c; }
-    .k-syntax-paren-match { background-color: #caf200; }
-
-
     // Cell editor
     .k-spreadsheet-cell-editor {
-        color: $kendo-spreadsheet-text;
-        background-color: $kendo-spreadsheet-bg;
+        @include fill(
+            $kendo-spreadsheet-cell-editor-text,
+            $kendo-spreadsheet-cell-editor-bg,
+            $kendo-spreadsheet-cell-editor-border
+        )
     }
-
 
     // Cells
     .k-spreadsheet-merged-cell {
-        background-color: $kendo-spreadsheet-bg;
+        @include fill( $bg: $kendo-spreadsheet-bg );
     }
     .k-spreadsheet-disabled-mask {
-        background-color: $kendo-spreadsheet-bg;
+        @include fill( $bg: $kendo-spreadsheet-bg );
     }
 
     // Selection
     .k-spreadsheet .k-selection-full,
     .k-spreadsheet .k-selection-partial {
-        // TODO: consider extracting variables
-        background-color: rgba( $kendo-selected-bg, .25 );
+        @include fill( $bg: $kendo-spreadsheet-partial-selection-bg );
     }
     .k-spreadsheet-selection {
-        border-color: $kendo-selected-bg;
-        background-color: rgba( $kendo-selected-bg, .25 );
-        box-shadow: inset 0 0 0 1px $kendo-selected-bg;
+        @include fill(
+            $kendo-spreadsheet-selection-text,
+            $kendo-spreadsheet-selection-bg,
+            $kendo-spreadsheet-selection-border
+        );
+        @include box-shadow( $kendo-spreadsheet-selection-shadow );
+    }
+    .k-spreadsheet-selection-highlight {
+        @include fill( $border: $kendo-spreadsheet-selection-border );
     }
     .k-spreadsheet .k-single-selection::after {
-        border-color: $kendo-spreadsheet-bg;
-        background-color: $kendo-selected-bg;
+        @include fill(
+            $kendo-spreadsheet-single-selection-text,
+            $kendo-spreadsheet-single-selection-bg,
+            $kendo-spreadsheet-single-selection-border
+        )
     }
     .k-spreadsheet-active-cell {
-        box-shadow: inset 0 0 0 1px $kendo-selected-bg;
-        background-color: $kendo-spreadsheet-bg;
-
-        &.k-right {
-            box-shadow: inset 0 0 0 1px $kendo-selected-bg, inset -1px 0 0 1px $kendo-selected-bg;
-        }
-
-        &.k-bottom {
-            box-shadow: inset 0 0 0 1px $kendo-selected-bg, inset 0 -1px 0 1px $kendo-selected-bg;
-        }
-
-        &.k-bottom.k-right {
-            box-shadow: inset 0 0 0 1px $kendo-selected-bg, inset -1px -1px 0 1px $kendo-selected-bg;
-        }
+        @include fill ( $bg: $kendo-spreadsheet-active-cell-bg );
+        @include box-shadow( $kendo-spreadsheet-active-cell-shadow );
     }
 
     .k-spreadsheet .k-auto-fill {
-        border-color: $kendo-selected-bg;
-        background-color: rgba( $kendo-selected-bg, .25 );
-        box-shadow: inset 0 0 0 1px $kendo-selected-bg;
+        @include fill(
+            $kendo-spreadsheet-auto-fill-text,
+            $kendo-spreadsheet-auto-fill-bg,
+            $kendo-spreadsheet-auto-fill-border
+        );
+        @include box-shadow( $kendo-spreadsheet-auto-fill-shadow );
     }
     .k-spreadsheet .k-auto-fill-punch {
-        background-color: rgba( $kendo-spreadsheet-bg, .5 );
+        @include fill( $bg: $kendo-spreadsheet-auto-fill-punch-bg );
     }
-
 
     // Resize handle
     .k-spreadsheet .k-resize-handle,
     .k-spreadsheet .k-resize-hint-handle,
     .k-spreadsheet .k-resize-hint-marker {
-        background-color: $kendo-color-primary;
+        @include fill( $bg: $kendo-spreadsheet-resize-handle-bg );
     }
 
     // Comments
     .k-spreadsheet-has-comment::after {
-        border-color: $kendo-color-primary $kendo-color-primary transparent transparent;
+        border-block-color: $kendo-spreadsheet-cell-comment-border transparent;
+        border-inline-color: transparent $kendo-spreadsheet-cell-comment-border;
     }
 
     // Validation
-    .k-dirty {
-        border-color: $kendo-color-error transparent transparent $kendo-color-error;
+    .k-spreadsheet-cell .k-dirty {
+        border-block-color: $kendo-spreadsheet-cell-dirty-border transparent;
+        border-inline-color: $kendo-spreadsheet-cell-dirty-border transparent;
     }
-
-
 
     // Filter button
     .k-spreadsheet .k-filter-range {
@@ -149,10 +139,8 @@
         }
     }
 
-
-    // Filter menu
+    // Filter menu legacy - delete after new rendering adoption R3 23
     .k-spreadsheet-filter-menu {
-
         > .k-menu,
         > .k-menu:not(.k-context-menu) {
 
@@ -174,32 +162,7 @@
         }
     }
 
-
-
-    .k-spreadsheet-popup {
-
-        // Buttons
-        .k-button {}
-
-        .k-button:hover,
-        .k-button.k-hover {
-            @include fill(
-                $kendo-list-item-hover-text,
-                $kendo-list-item-hover-bg
-            );
-        }
-        .k-button:active,
-        .k-button.k-active,
-        .k-button.k-selected {
-            @include fill(
-                $kendo-list-item-selected-text,
-                $kendo-list-item-selected-bg
-            );
-        }
-    }
-
-
-
+    // Delete after new rendering adoption R3 23
     .k-spreadsheet-insert-image-dialog {
         border-color: $kendo-spreadsheet-insert-image-dialog-preview-border;
 
@@ -216,6 +179,7 @@
         }
     }
 
+    // Drawing
     .k-spreadsheet-drawing {
         &.k-spreadsheet-active-drawing {
             outline-color: $kendo-spreadsheet-drawing-handle-outline-color;
@@ -231,25 +195,16 @@
         background: $kendo-spreadsheet-drawing-anchor-bg;
     }
 
-
-
-    .k-rtl .k-spreadsheet,
-    .k-spreadsheet[dir="rtl"],
-    [dir="rtl"] .k-spreadsheet {
-
-        .k-spreadsheet-has-comment::after {
-            border-color: $kendo-color-primary transparent transparent $kendo-color-primary;
-        }
-
-        .k-dirty {
-            border-color: $kendo-color-error $kendo-color-error transparent transparent;
-        }
-
-    }
+    // Formula bar
+    .k-spreadsheet-formula-list {}
+    .k-syntax-ref { color: #ff8822; }
+    .k-syntax-num { color: #0099ff; }
+    .k-syntax-str { color: #38b714; }
+    .k-syntax-error { color: red; }
+    .k-syntax-bool { color: #a9169c; }
+    .k-syntax-paren-match { background-color: #caf200; }
 
 }
-
-
 
 @mixin kendo-spreadsheet--theme() {
     @include kendo-spreadsheet--theme-base();
