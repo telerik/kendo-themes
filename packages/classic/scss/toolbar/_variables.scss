@@ -84,6 +84,10 @@ $kendo-toolbar-input-width: 10em !default;
 /// @group toolbar
 $kendo-toolbar-item-shadow: $kendo-button-focus-shadow !default;
 
+/// Border width of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-border-width: 1px !default;
+
 /// The sizes map for the Toolbar.
 /// @group toolbar
 $kendo-toolbar-sizes: (
