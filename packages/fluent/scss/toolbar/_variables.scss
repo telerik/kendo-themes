@@ -73,6 +73,10 @@ $kendo-toolbar-item-focus-outline-style: solid !default;
 /// @group toolbar
 $kendo-toolbar-item-focus-outline-color: k-get-theme-color-var( neutral-130 ) !default;
 
+/// Border width of the flat Toolbar.
+/// @group toolbar
+$kendo-toolbar-flat-border-width: 1px !default;
+
 /// The sizes map for the Toolbar.
 /// @group toolbar
 $kendo-toolbar-sizes: (
