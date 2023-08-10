@@ -3364,29 +3364,29 @@ k-shadow-modify($shadow, $color) // => List
 ```scss
 // Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_shadow.import.scss#L8-L32
 @function k-shadow-modify($shadow, $color) {
-    $_shadows: ();
-    $_shadows-length: k-shadow-length( $shadows );
+    $_shadow: ();
+    $_shadow-length: k-shadow-length( $shadow );
     $_inset-suffix: if( $inset == inset,  $inset, "" );
 
-    @if ( $_shadows-length == 1 ) {
-        $_shadows: k-list-set-nth($shadows, -1, k-list-nth($colors, 1)) + $_inset-suffix;
+    @if ( $_shadow-length == 1 ) {
+        $_color: if( k-list-nth( $colors, 1 ), k-list-nth( $colors, 1 ), k-list-nth( $shadow, -1 ) );
+        $_shadow: k-list-set-nth( $shadow, -1, $_color );
+        $_shadow: k-list-append( $_shadow, $_inset-suffix );
     } @else {
-        $_colors-length: k-list-length($colors);
+        $_colors-length: k-list-length( $colors );
 
-        @for $i from 1 to $_shadows-length + 1 {
-            $_shadow: k-list-nth($shadows, $i);
+        @for $i from 1 to $_shadow-length + 1 {
+            $_shadow-layer: k-list-nth( $shadow, $i );
 
             @if $i <= $_colors-length {
-                $_color: k-list-nth($colors, $i);
-                $_shadow: k-list-set-nth($_shadow, -1, $_color);
+                $_color: if( k-list-nth( $colors, $i ), k-list-nth( $colors, $i ), k-list-nth( $_shadow-layer, -1 ) );
+                $_shadow-layer: k-list-set-nth( $_shadow-layer, -1, $_color );
             }
-            $_shadow: k-list-append($_shadow, $_inset-suffix);
-            $_shadows: k-list-append($_shadows, $_shadow, $separator: comma );
+            $_shadow-layer: k-list-append( $_shadow-layer, $_inset-suffix );
+            $_shadow: k-list-append( $_shadow, $_shadow-layer, $separator: comma );
         }
     }
-
-    @debug $_shadows;
-    @return $_shadows;
+    @return $_shadow;
 }
 ```
 

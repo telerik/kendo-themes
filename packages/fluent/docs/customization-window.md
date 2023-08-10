@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-window-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
+    <td><code>var( --kendo-shadow-9, none )</code></td>
     <td></td>
 </tr>
 <tr>

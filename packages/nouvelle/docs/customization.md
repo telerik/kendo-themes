@@ -736,6 +736,46 @@ The following table lists the available variables for customizing the Nouvelle t
 </tbody>
 </table>
 
+### Box-shadow
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-shadows</td>
+    <td></td>
+    <td><code>$kendo-shadows-core</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global Box shadow.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-shadows-inset</td>
+    <td></td>
+    <td><code>k-shadow-map-inset( $kendo-shadows )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global Box shadow inset.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Breadcrumb
 
 <table class="theme-variables">
