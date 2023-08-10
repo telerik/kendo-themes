@@ -1295,6 +1295,10 @@
         .k-checkbox-label {
             margin: 0;
         }
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .k-columns-items-wrap {
