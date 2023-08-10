@@ -415,6 +415,8 @@
             $kendo-list-item-hover-bg
         );
     }
+    .k-column-list-item:focus,
+    .k-column-list-item.k-focus,
     .k-columnmenu-item:focus,
     .k-columnmenu-item.k-focus {
         @include focus-indicator( $kendo-list-item-focus-shadow, true );
