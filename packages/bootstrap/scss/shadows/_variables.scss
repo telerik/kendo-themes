@@ -1,0 +1,24 @@
+// Box shadow
+$kendo-shadows: (
+    1: ( 0px 1px 2px rgba(0, 0, 0, 0.04) ),
+    2: ( 0px 2px 7px rgba(0, 0, 0, 0.08) ),
+    3: ( 0px 4px 10px rgba(0, 0, 0, 0.10) ),
+    4: ( 0px 6px 13px rgba(0, 0, 0, 0.13) ),
+    5: ( 0px 8px 16px 0px rgba(0, 0, 0, 0.15) ),
+    6: ( 0px 11px 24px 0px rgba(0, 0, 0, 0.16) ),
+    7: ( 0px 14px 36px 0px rgba(0, 0, 0, 0.17) ),
+    8: ( 0px 16px 48px 0px rgba(0, 0, 0, 0.18) ),
+    9: ( 0px 18px 60px 0px rgba(0, 0, 0, 0.19) )
+) !default;
+
+$kendo-shadow-1: k-map-get( $kendo-shadows, 1 ) !default;
+$kendo-shadow-2: k-map-get( $kendo-shadows, 2 ) !default;
+$kendo-shadow-3: k-map-get( $kendo-shadows, 3 ) !default;
+$kendo-shadow-4: k-map-get( $kendo-shadows, 4 ) !default;
+$kendo-shadow-5: k-map-get( $kendo-shadows, 5 ) !default;
+$kendo-shadow-6: k-map-get( $kendo-shadows, 6 ) !default;
+$kendo-shadow-7: k-map-get( $kendo-shadows, 7 ) !default;
+$kendo-shadow-8: k-map-get( $kendo-shadows, 8 ) !default;
+$kendo-shadow-9: k-map-get( $kendo-shadows, 9 ) !default;
+
+$kendo-shadows-inset: k-shadow-map-inset( $kendo-shadows );

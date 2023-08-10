@@ -6,7 +6,6 @@
     @include generate-utils( shadow-inset, box-shadow, $kendo-shadows-inset );
 }
 
-
 @mixin kendo-shadow--theme() {
     @include kendo-shadow--theme-base();
 }

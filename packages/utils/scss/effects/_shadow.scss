@@ -16,4 +16,8 @@
     $kendo-utils-shadow: k-map-get( $kendo-utils, "box-shadow" ) !default;
     @include generate-utils( shadow, box-shadow, $kendo-utils-shadow );
 
+    // shadow inset utility classes
+    $kendo-utils-shadow-inset: k-shadow-map-inset( $kendo-utils-shadow ) !default;
+    @include generate-utils( shadow-inset, box-shadow, $kendo-utils-shadow-inset );
+
 }

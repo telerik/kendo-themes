@@ -1,0 +1,62 @@
+@import "@progress/kendo-theme-core/scss/global-systems/shadows/index.import.scss";
+
+// Box shadow
+$kendo-shadows: (
+    1: (
+        0px 1px 3px 0px rgba(0, 0, 0, 0.20),
+        0px 2px 1px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14)
+    ),
+    2: (
+        0px 1px 5px 0px rgba(0, 0, 0, 0.20),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14)
+    ),
+    3: (
+        0px 1px 8px 0px rgba(0, 0, 0, 0.20),
+        0px 3px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 3px 4px 0px rgba(0, 0, 0, 0.14)
+    ),
+    4: (
+        0px 2px 4px 0px rgba(0, 0, 0, 0.20),
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12),
+        0px 4px 5px 0px rgba(0, 0, 0, 0.14)
+    ),
+    5: (
+        0px 3px 5px 0px rgba(0, 0, 0, 0.20),
+        0px 1px 18px 0px rgba(0, 0, 0, 0.12),
+        0px 6px 10px 0px rgba(0, 0, 0, 0.14)
+    ),
+    6: (
+        0px 5px 5px 0px rgba(0, 0, 0, 0.20),
+        0px 3px 14px 0px rgba(0, 0, 0, 0.12),
+        0px 8px 10px 0px rgba(0, 0, 0, 0.14)
+    ),
+    7: (
+        0px 7px 8px 0px rgba(0, 0, 0, 0.20),
+        0px 5px 22px 0px rgba(0, 0, 0, 0.12),
+        0px 12px 17px 0px rgba(0, 0, 0, 0.14)
+    ),
+    8: (
+        0px 8px 10px rgba(0, 0, 0, 0.20),
+        0px 6px 30px rgba(0, 0, 0, 0.12),
+        0px 16px 24px rgba(0, 0, 0, 0.14)
+    ),
+    9: (
+        0px 11px 15px rgba(0, 0, 0, 0.20),
+        0px 9px 46px rgba(0, 0, 0, 0.12),
+        0px 24px 38px rgba(0, 0, 0, 0.14)
+    )
+) !default;
+
+$kendo-shadow-1: k-map-get( $kendo-shadows, 1 ) !default;
+$kendo-shadow-2: k-map-get( $kendo-shadows, 2 ) !default;
+$kendo-shadow-3: k-map-get( $kendo-shadows, 3 ) !default;
+$kendo-shadow-4: k-map-get( $kendo-shadows, 4 ) !default;
+$kendo-shadow-5: k-map-get( $kendo-shadows, 5 ) !default;
+$kendo-shadow-6: k-map-get( $kendo-shadows, 6 ) !default;
+$kendo-shadow-7: k-map-get( $kendo-shadows, 7 ) !default;
+$kendo-shadow-8: k-map-get( $kendo-shadows, 8 ) !default;
+$kendo-shadow-9: k-map-get( $kendo-shadows, 9 ) !default;
+
+$kendo-shadows-inset: k-shadow-map-inset( $kendo-shadows );

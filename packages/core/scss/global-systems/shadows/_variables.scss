@@ -17,9 +17,8 @@ $kendo-shadows-core: (
     9: ( 0 32px 34px rgba(0, 0, 0, .32) )
 ) !default;
 
-// box shadow type outline
-$kendo-shadows-states-core: (
-    1: ( 0 0 0 1px rgba(0, 0, 0, .8) ),
-    2: ( 0 0 0 2px rgba(0, 0, 0, .8) ),
-    3: ( 0 0 0 3px rgba(0, 0, 0, .8) )
-);
+@mixin shadows-styles-core {
+    :root {
+        @include k-css-vars( $kendo-shadows-core );
+    }
+}

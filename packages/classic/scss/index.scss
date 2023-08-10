@@ -3,6 +3,7 @@
 
 
 // Typography and utils
+@import "./shadows/_index.scss";
 @import "./typography/_index.scss";
 @import "./utils/_index.scss";
 
@@ -173,6 +174,7 @@
     // Color system
 
     // Typography and utils
+    @include kendo-shadow--styles();
     @include kendo-typography--styles();
     @include kendo-utils--styles();
 

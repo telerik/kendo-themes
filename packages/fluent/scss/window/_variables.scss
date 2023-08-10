@@ -81,7 +81,7 @@ $kendo-window-text: var( --kendo-component-text, initial ) !default;
 $kendo-window-border: k-get-theme-color-var( primary-100 ) !default;
 /// The box shadow of the Window.
 /// @group window
-$kendo-window-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-window-shadow: var( --kendo-shadow-9, none ) !default;
 /// The box shadow of the focused Window.
 /// @group window
 $kendo-window-focus-shadow: var( --kendo-box-shadow-depth-4, none ) !default;

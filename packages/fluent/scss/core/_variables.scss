@@ -53,7 +53,7 @@ $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, bord
         --kendo-font-family: #{meta.inspect($kendo-font-family)};
 
         --kendo-font-size: #{$kendo-font-size};
-        --kendo-font-size-xs: #{$kendo-font-size-xs};
+        --core-styleskendo-font-size-xs: #{$kendo-font-size-xs};
         --kendo-font-size-sm: #{$kendo-font-size-sm};
         --kendo-font-size-md: #{$kendo-font-size-md};
         --kendo-font-size-lg: #{$kendo-font-size-lg};

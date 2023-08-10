@@ -5,35 +5,76 @@
 ///
 /// @example scss - Usage
 ///   @debug k-shadow-customize( $shadow: (0 2px 7px rgba(0, 0, 0, .75)), $color: rgba(0, 0, 0, .5) ); // => 0 2px 7px rgba(0, 0, 0, .75)
-@function k-shadow-modify( $shadows, $colors: null, $inset: null ) {
-    $_shadows: ();
-    $_shadows-length: k-shadow-length( $shadows );
+@function k-shadow-modify( $shadow, $colors: null, $inset: null ) {
+    $_shadow: ();
+    $_shadow-length: k-shadow-length( $shadow );
     $_inset-suffix: if( $inset == inset,  $inset, "" );
 
-    @if ( $_shadows-length == 1 ) {
-        $_shadows: k-list-set-nth($shadows, -1, k-list-nth($colors, 1)) + $_inset-suffix;
+    @if ( $_shadow-length == 1 ) {
+        $_color: if( k-list-nth( $colors, 1 ), k-list-nth( $colors, 1 ), k-list-nth( $shadow, -1 ) );
+        $_shadow: k-list-set-nth( $shadow, -1, $_color );
+        $_shadow: k-list-append( $_shadow, $_inset-suffix );
     } @else {
-        $_colors-length: k-list-length($colors);
+        $_colors-length: k-list-length( $colors );
 
-        @for $i from 1 to $_shadows-length + 1 {
-            $_shadow: k-list-nth($shadows, $i);
+        @for $i from 1 to $_shadow-length + 1 {
+            $_shadow-layer: k-list-nth( $shadow, $i );
 
             @if $i <= $_colors-length {
-                $_color: k-list-nth($colors, $i);
-                $_shadow: k-list-set-nth($_shadow, -1, $_color);
+                $_color: if( k-list-nth( $colors, $i ), k-list-nth( $colors, $i ), k-list-nth( $_shadow-layer, -1 ) );
+                $_shadow-layer: k-list-set-nth( $_shadow-layer, -1, $_color );
             }
-            $_shadow: k-list-append($_shadow, $_inset-suffix);
-            $_shadows: k-list-append($_shadows, $_shadow, $separator: comma );
+            $_shadow-layer: k-list-append( $_shadow-layer, $_inset-suffix );
+            $_shadow: k-list-append( $_shadow, $_shadow-layer, $separator: comma );
         }
     }
-
-    @debug $_shadows;
-    @return $_shadows;
+    @return $_shadow;
 }
 
-@function k-shadow-length( $shadows ) {
-    $_is-multiple-shadow: k-list-separator($shadows) == comma;
-    $_shadows-length: if( $_is-multiple-shadow, k-list-length($shadows), 1 );
 
-    @return $_shadows-length;
+
+@function k-shadow-modify-test( $shadow, $colors: null, $inset: null ) {
+    $_shadow: ();
+    $_shadow-length: k-shadow-length( $shadow );
+
+    @if ( $_shadow-length == 1 ) {
+        $_color: if( k-list-nth( $colors, 1 ), k-list-nth( $colors, 1 ), null );
+        $_shadow: k-shadow-update( $shadow, $color: $_color, $inset: $inset )
+    } @else {
+        $_colors-length: k-list-length( $colors );
+
+        @for $i from 1 to $_shadow-length + 1 {
+            $_shadow-layer: k-list-nth( $shadow, $i );
+            $_color: if( $i <= $_colors-length, k-list-nth( $colors, $i ), null );
+
+            $_shadow-layer: k-shadow-update( $_shadow-layer, $color: $_color, $inset: $inset );
+            $_shadow: k-list-append( $_shadow, $_shadow-layer, $separator: comma );
+        }
+    }
+    @return $_shadow;
+}
+
+@function k-shadow-update( $shadow, $color:null, $inset:null ) {
+    $shadow: if( $color, k-list-set-nth( $shadow, -1, $color ), $shadow );
+    $shadow: k-list-append( $shadow, $inset );
+
+    @return $shadow;
+}
+
+
+
+@function k-shadow-length( $_shadow ) {
+    $_is-multiple-shadow: k-list-separator($_shadow) == comma;
+    $_shadow-length: if( $_is-multiple-shadow, k-list-length($_shadow), 1 );
+
+    @return $_shadow-length;
 };
+
+@function k-shadow-map-inset( $shadows ) {
+    @each $key, $shadow in $shadows {
+        $_shadow: k-shadow-modify( $shadow, $inset: inset );
+        $shadows: k-map-set( $shadows, $key, $_shadow );
+    }
+
+    @return $shadows;
+}

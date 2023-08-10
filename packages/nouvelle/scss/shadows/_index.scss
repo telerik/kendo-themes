@@ -1,0 +1,34 @@
+@import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+
+// Module meta
+$_kendo-module-meta: (
+    name: "shadow",
+    dependencies: ()
+);
+
+
+// Dependencies
+
+
+// Component
+@import "./_variables.scss";
+@import "./_theme.scss";
+
+
+// Register
+@import "../core/module-system/index.import.scss";
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin kendo-shadow--styles() {
+    @include module-render( "shadow" ) {
+        @include kendo-shadow--theme();
+    }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-shadow--styles();
+}

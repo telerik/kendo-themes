@@ -52,7 +52,7 @@ $kendo-color-gradient-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 $kendo-color-gradient-focus-border: k-get-theme-color-var( neutral-20 ) !default;
 /// The box shadow of the focused ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
+$kendo-color-gradient-focus-shadow: var( --kendo-shadow-2, none ) !default;
 
 /// The width of the border around the ColorGradient canvas.
 /// @group cologradient

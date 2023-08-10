@@ -1,0 +1,5 @@
+@import "@progress/kendo-theme-default/scss/shadows/_theme.scss";
+
+@mixin kendo-shadow--theme() {
+    @include kendo-shadow--theme-base();
+}

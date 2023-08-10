@@ -7,7 +7,7 @@ module.exports = {
             cwd: 'packages/default',
             file: 'scss/all.scss',
             outFile: 'dist/all.css'
-        }
+        },
         // {
         //     cwd: 'packages/bootstrap',
         //     file: 'scss/all.scss',
@@ -28,22 +28,22 @@ module.exports = {
         //     file: 'scss/all.scss',
         //     outFile: 'dist/all.css'
         // },
-        // {
-        //     cwd: 'packages/fluent',
-        //     file: 'scss/all.scss',
-        //     outFile: 'dist/all.css',
-        //     compiler: 'sass',
-        //     api: 'modern'
-        // },
-        // {
-        //     cwd: 'packages/core',
-        //     file: 'scss/all.scss',
-        //     outFile: 'dist/all.css'
-        // },
-        // {
-        //     cwd: 'packages/utils',
-        //     file: 'scss/all.scss',
-        //     outFile: 'dist/all.css'
-        // }
+        {
+            cwd: 'packages/fluent',
+            file: 'scss/all.scss',
+            outFile: 'dist/all.css',
+            compiler: 'sass',
+            api: 'modern'
+        },
+        {
+            cwd: 'packages/core',
+            file: 'scss/all.scss',
+            outFile: 'dist/all.css'
+        },
+        {
+            cwd: 'packages/utils',
+            file: 'scss/all.scss',
+            outFile: 'dist/all.css'
+        }
     ]
 };
