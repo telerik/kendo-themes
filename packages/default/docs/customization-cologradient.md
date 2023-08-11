@@ -340,8 +340,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td>List</td>
-    <td><code>k-shadow-modify( $kendo-shadow-2, rgba($kendo-color-black, .5), inset )</code></td>
-    <td><code>0 4px 6px rgba(0, 0, 0, 0.5) inset, 0 4px 6px rgba(0, 0, 0, 0.06) inset</code></td>
+    <td><code>0 1px 4px black</code></td>
+    <td><code>0 1px 4px black</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient canvas drag handle.</div></div>
@@ -351,7 +351,7 @@ The following table lists the available variables for customization.
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td>List</td>
     <td><code>$kendo-color-gradient-draghandle-focus-shadow</code></td>
-    <td><code>0 4px 6px rgba(0, 0, 0, 0.5) inset, 0 4px 6px rgba(0, 0, 0, 0.06) inset</code></td>
+    <td><code>0 1px 4px black</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the hovered ColorGradient canvas drag handle.</div></div>

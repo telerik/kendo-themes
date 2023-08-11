@@ -3330,15 +3330,15 @@ k-meta-is-position($value) // => Boolean
 }
 ```
 
-### `k-shadow-modify`
+### `k-shadow-inset`
 
-Returns resolved shadow with applied color. If there is no custom color, it will return shadow with the default value.
+. If there is no custom color, it will return shadow with the default value.
 
 
 #### Syntax
 
 ```scss
-k-shadow-modify($shadow, $color) // => List
+k-shadow-inset($shadow, $color) // => List
 ```
 
 #### Parameters
@@ -3362,31 +3362,22 @@ k-shadow-modify($shadow, $color) // => List
 #### Source
 
 ```scss
-// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_shadow.import.scss#L8-L32
-@function k-shadow-modify($shadow, $color) {
-    $_shadow: ();
-    $_shadow-length: k-shadow-length( $shadow );
-    $_inset-suffix: if( $inset == inset,  $inset, "" );
+// Location https://github.com/telerik/kendo-themes/blob/develop/packages//scss/functions/_shadow.import.scss#L8-L23
+@function k-shadow-inset($shadow, $color) {
+    $_shadow-inset: ();
+    $_is-shadow-single: k-list-separator($shadow) != comma;
+    $_inset-suffix: inset;
 
-    @if ( $_shadow-length == 1 ) {
-        $_color: if( k-list-nth( $colors, 1 ), k-list-nth( $colors, 1 ), k-list-nth( $shadow, -1 ) );
-        $_shadow: k-list-set-nth( $shadow, -1, $_color );
-        $_shadow: k-list-append( $_shadow, $_inset-suffix );
+    @if ( $_is-shadow-single ) {
+        $_shadow-inset: k-list-append( $shadow, $_inset-suffix );
     } @else {
-        $_colors-length: k-list-length( $colors );
-
-        @for $i from 1 to $_shadow-length + 1 {
-            $_shadow-layer: k-list-nth( $shadow, $i );
-
-            @if $i <= $_colors-length {
-                $_color: if( k-list-nth( $colors, $i ), k-list-nth( $colors, $i ), k-list-nth( $_shadow-layer, -1 ) );
-                $_shadow-layer: k-list-set-nth( $_shadow-layer, -1, $_color );
-            }
+        @each $_shadow-layer in $shadow {
             $_shadow-layer: k-list-append( $_shadow-layer, $_inset-suffix );
-            $_shadow: k-list-append( $_shadow, $_shadow-layer, $separator: comma );
+            $_shadow-inset: k-list-append( $_shadow-inset, $_shadow-layer, $separator: comma );
         }
     }
-    @return $_shadow;
+
+    @return $_shadow-inset;
 }
 ```
 
@@ -4023,9 +4014,9 @@ The following table lists the available variables for customizing the Theme Core
     6: ( 0 20px 22px rgba(0, 0, 0, .2) ),
     7: ( 0 24px 26px rgba(0, 0, 0, .24) ),
     8: ( 0 28px 30px rgba(0, 0, 0, .28) ),
-    9: ( 0 32px 34px rgba(0, 0, 0, .32) )
+    9: ( 0 32px 34px rgba(0, 0, 0, .32), )
 )</code></td>
-    <td><code>(1: 0 2px 3px rgba(0, 0, 0, 0.04), 2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.06)), 3: 0 8px 10px rgba(0, 0, 0, 0.08), 4: 0 12px 14px rgba(0, 0, 0, 0.12), 5: 0 16px 18px rgba(0, 0, 0, 0.16), 6: 0 20px 22px rgba(0, 0, 0, 0.2), 7: 0 24px 26px rgba(0, 0, 0, 0.24), 8: 0 28px 30px rgba(0, 0, 0, 0.28), 9: 0 32px 34px rgba(0, 0, 0, 0.32))</code></td>
+    <td><code>(1: 0 2px 3px rgba(0, 0, 0, 0.04), 2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.06)), 3: 0 8px 10px rgba(0, 0, 0, 0.08), 4: 0 12px 14px rgba(0, 0, 0, 0.12), 5: 0 16px 18px rgba(0, 0, 0, 0.16), 6: 0 20px 22px rgba(0, 0, 0, 0.2), 7: 0 24px 26px rgba(0, 0, 0, 0.24), 8: 0 28px 30px rgba(0, 0, 0, 0.28), 9: ((0 32px 34px rgba(0, 0, 0, 0.32),)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadows map containing lists with depths and colors values.</div></div>
