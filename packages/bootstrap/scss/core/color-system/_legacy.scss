@@ -82,7 +82,7 @@ $kendo-theme-swatches: null !default;
     $kendo-link-hover-text: $kendo-color-primary-darker;
     $kendo-component-bg: $kendo-body-bg;
     $kendo-component-text: $kendo-body-text;
-    $kendo-component-border: $kendo-color-border;
+    $kendo-component-border: $_kendo-color-border;
     $kendo-disabled-bg: $kendo-disabled-bg;
     $kendo-disabled-text: $kendo-disabled-text;
     $kendo-disabled-border: $kendo-disabled-border;
