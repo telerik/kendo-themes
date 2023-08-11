@@ -24,6 +24,7 @@ $kendo-body-shaded: k-try-shade($kendo-body-bg) !default;
 
 $kendo-base-bg: $gray-100 !default;
 $kendo-base-text: $kendo-body-text !default;
+$kendo-base-hover: k-try-shade($kendo-base-bg, .5) !default;
 
 $kendo-color-border: $input-border-color !default; // $gray-400
 $kendo-color-border-hover: null !default;

@@ -104,7 +104,7 @@ $kendo-pivotgrid-alt-text: $kendo-grid-header-text !default;
 $kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
 
 $kendo-pivotgrid-container-bg: $kendo-component-header-bg !default;
-$kendo-pivotgrid-row-headers-bg: k-try-shade( $kendo-component-header-bg, .5 ) !default;
+$kendo-pivotgrid-row-headers-bg: if($kendo-new-colors, $kendo-base-hover, k-try-shade( $kendo-component-header-bg, .5 )) !default;
 
 $kendo-pivotgrid-button-bg: null !default;
 $kendo-pivotgrid-button-text: null !default;
