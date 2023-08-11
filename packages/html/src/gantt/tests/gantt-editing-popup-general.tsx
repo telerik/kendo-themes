@@ -46,7 +46,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" layout="grid" cols={4} gapX={2}>
+                            <Form as="div" className="k-d-grid k-grid-cols-4 k-gap-x-2">
                                 <FormField
                                     colSpan="full"
                                     className="k-form-field-error"

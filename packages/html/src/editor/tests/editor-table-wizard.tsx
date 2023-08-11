@@ -36,7 +36,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active" >
-                            <Form tag="div" layout="grid" cols={4} gapX={4}>
+                            <Form as="div" className="k-d-grid k-grid-cols-4 k-gap-x-4">
                                 <FormField
                                     colSpan="2"
                                     label="Rows"
@@ -136,7 +136,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" layout="grid">
+                            <Form as="div" className="k-d-grid">
                                 <FormField label="ID" optional editor={ <Textbox /> } />
                                 <FormField label="CSS class" optional editor={ <Textbox /> } />
                                 <Fieldset legend="Accessibility" layout="grid" cols={4} gapX={4} >
@@ -186,7 +186,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form tag="div" layout="grid" cols={4} gapX={4}>
+                    <Form as="div" className="k-d-grid k-grid-cols-4 k-gap-x-4">
                         <FormField
                             colSpan="full"
                             editor={
