@@ -1,0 +1,55 @@
+
+
+
+/// Global Box shadow.
+/// @group box-shadow
+$kendo-shadows: (
+    1: (
+        0px 1.6px 3.6px 0px rgba(0, 0, 0, 0.13),
+        0px 0.3px 0.9px 0px rgba(0, 0, 0, 0.10)
+    ),
+    2: (
+        0px 3.2px 7.2px 0px rgba(0, 0, 0, 0.13),
+        0px 0.6px 1.8px 0px rgba(0, 0, 0, 0.50)
+    ),
+    3: (
+        0px 3.2px 7.2px 0px rgba(0, 0, 0, 0.13),
+        0px 0.6px 1.8px 0px rgba(0, 0, 0, 0.50)
+    ),
+    4: (
+        0px 6.4px 14.4px 0px rgba(0, 0, 0, 0.13),
+        0px 1.2px 3.6px 0px rgba(0, 0, 0, 0.10)
+    ),
+    5: (
+        0px 9.6px 21.6px 0px rgba(0, 0, 0, 0.13),
+        0px 1.8px 5.4px 0px rgba(0, 0, 0, 0.10)
+    ),
+    6: (
+        0px 12.8px 28.8px 0px rgba(0, 0, 0, 0.22),
+        0px 2.4px 7.2px 0px rgba(0, 0, 0, 0.18)
+    ),
+    7: (
+        0px 19.2px 43.2px 0px rgba(0, 0, 0, 0.22),
+        0px 3.2px 10.8px 0px rgba(0, 0, 0, 0.18)
+    ),
+    8: (
+        0px 25.6px 57.6px 0px rgba(0, 0, 0, 0.22),
+        0px 4.8px 14.4px 0px rgba(0, 0, 0, 0.18)
+    ),
+    9: (
+        0px 32px 72px 0px rgba(0, 0, 0, 0.22),
+        0px 6.4px 18px 0px rgba(0, 0, 0, 0.18)
+    )
+) !default;
+
+@use "@progress/kendo-theme-core/scss/functions/_shadow.import.scss";
+
+/// Global Box shadow inset.
+/// @group box-shadow
+$kendo-shadows-inset: k-shadow-map-inset( $kendo-shadows ) !default;
+
+:root {
+    @each $key, $shadow in $kendo-shadows {
+        --kendo-shadow-#{$key}: #{$shadow};
+    };
+}

@@ -7,8 +7,13 @@
 @use "./variables" as *;
 @forward "./variables";
 
+// Elevation
+@use "./elevation/index" as *;
+
+
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
-    $kendo-palettes: $kendo-fluent-palettes
+    $kendo-palettes: $kendo-fluent-palettes,
+    $kendo-shadows: $kendo-shadows
 );
 
 // Helpers

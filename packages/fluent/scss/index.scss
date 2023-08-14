@@ -3,7 +3,6 @@
 
 
 // Typography and utils
-@forward "./shadows";
 @forward "./typography";
 @forward "./utils";
 @forward "./draggable";
@@ -164,7 +163,6 @@
 
 
 // Typography and utils
-@use "./shadows" as *;
 @use "./typography" as *;
 @use "./utils" as *;
 @use "./draggable" as *;
@@ -339,7 +337,6 @@
     @include color-system-styles();
 
     // Typography and utils
-    @include shadow-styles();
     @include typography-styles();
     @include utils-styles();
 

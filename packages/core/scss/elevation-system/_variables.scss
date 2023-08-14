@@ -1,13 +1,13 @@
-// Box shadow
+// Elevation
 
-/// The box shadows map containing lists with depths and colors values.
+/// The elevation map that contains lists with box-shadow values.
 /// @group shadow
 ///
 /// @example scss - Structure of the map values
 /// @debug $key: ( ($depth-1) $color-1, ($depth-2) $color-2 );
 $kendo-shadows-core: (
     1: ( 0 2px 3px rgba(0, 0, 0, .04) ), // TODO use 0, 0, 0 when color system is added to utils
-    2: ( 0 4px 6px rgba(0, 0, 0, .06), 0 4px 6px rgba(0, 0, 0, .06) ),
+    2: ( 0 4px 6px rgba(0, 0, 0, .06) ),
     3: ( 0 8px 10px rgba(0, 0, 0, .08) ),
     4: ( 0 12px 14px rgba(0, 0, 0, .12) ),
     5: ( 0 16px 18px rgba(0, 0, 0, .16) ),

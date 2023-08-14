@@ -1,10 +1,9 @@
 /// . If there is no custom color, it will return shadow with the default value.
-/// @param {List} $shadow - Depth of the shadow with default color value.
-/// @param {Color} $color - Custom color value.
-/// @return {List} - Shadow value with resolved color.
+/// @param {List} $shadow - Shadow that can consist of multiple shadows and should be used for creating the same inset shadow.
+/// @return {List} - Inset shadow as.
 ///
 /// @example scss - Usage
-///   @debug k-shadow-customize( $shadow: (0 2px 7px rgba(0, 0, 0, .75)), $color: rgba(0, 0, 0, .5) ); // => 0 2px 7px rgba(0, 0, 0, .75)
+///   @debug k-shadow-inset( 0 2px 7px rgba(0, 0, 0, .75) ); // => 0 2px 7px rgba(0, 0, 0, .75) inset
 @function k-shadow-inset( $shadow ) {
     $_shadow-inset: ();
     $_is-shadow-single: k-list-separator($shadow) != comma;

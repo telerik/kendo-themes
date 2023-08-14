@@ -1,4 +1,4 @@
-@import "@progress/kendo-theme-core/scss/global-systems/index.import.scss";
+@import "@progress/kendo-theme-core/scss/elevation-system/index.import.scss";
 
 $kendo-prefix: k- !default;
 $kendo-important: true !default;
@@ -6,6 +6,8 @@ $kendo-important: true !default;
 $kendo-theme-colors: () !default;
 
 $kendo-font-sizes: () !default;
+
+$kendo-shadows: $kendo-shadows-core !default;
 
 $kendo-spacing: (
     0: 0,
@@ -834,7 +836,7 @@ $kendo-utils: (
     ),
 
     // Effects
-    "box-shadow": $kendo-shadows-core,
+    "box-shadow": $kendo-shadows,
     "box-shadow-color": (),
     "opacity": (
         0: 0,
