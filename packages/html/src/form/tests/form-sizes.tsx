@@ -2,6 +2,7 @@ import { DropdownList } from '../../dropdownlist';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
 import { Form, FormField, Fieldset } from '../../form';
+import { FormButtons } from '../form-buttons.spec';
 
 
 const styles = { border: '1px solid grey', padding: '10px' };
@@ -16,11 +17,11 @@ export default () =>(
                     <div><strong>sm</strong></div>
                     <br />
                     <Form size="small"
-                        formButtons={
-                            <>
+                        FormButtons={
+                            <FormButtons>
                                 <Button className="k-form-submit" themeColor="primary" size="small">Submit</Button>
                                 <Button className="k-form-clear" size="small">Clear</Button>
-                            </>
+                            </FormButtons>
                         }>
                         <Fieldset legend="Shipping Address" layout="grid" cols={2} gapX={2} >
                             <FormField colSpan="1" label="Country" editor={ <DropdownList value="France" size="small"/> } />
@@ -34,11 +35,11 @@ export default () =>(
                     <div><strong>md</strong></div>
                     <br />
                     <Form size="medium"
-                        formButtons={
-                            <>
+                        FormButtons={
+                            <FormButtons>
                                 <Button className="k-form-submit" themeColor="primary" size="medium">Submit</Button>
                                 <Button className="k-form-clear" size="medium">Clear</Button>
-                            </>
+                            </FormButtons>
                         }>
                         <Fieldset legend="Shipping Address" layout="grid" cols={2} gapX={2} >
                             <FormField colSpan="1" label="Country" editor={ <DropdownList value="France" size="medium"/> } />
@@ -52,11 +53,11 @@ export default () =>(
                     <div><strong>lg</strong></div>
                     <br />
                     <Form size="large"
-                        formButtons={
-                            <>
+                        FormButtons={
+                            <FormButtons>
                                 <Button className="k-form-submit" themeColor="primary" size="large">Submit</Button>
                                 <Button className="k-form-clear" size="large">Clear</Button>
-                            </>
+                            </FormButtons>
                         }>
                         <Fieldset legend="Shipping Address" layout="grid" cols={2} gapX={2} >
                             <FormField colSpan="1" label="Country" editor={ <DropdownList value="France" size="large"/> } />

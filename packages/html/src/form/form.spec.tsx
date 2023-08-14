@@ -1,107 +1,51 @@
-import { classNames, optionClassNames, Size } from '../misc';
-import { FormField } from './form-field';
-import { Fieldset } from './fieldset';
+import { classNames, ComponentSlot, componentSlot, optionClassNames, Size } from "../misc";
+import { KendoComponent } from "../misc/component-props";
+import { FormButtons, FormButtonsProps } from "./form-buttons.spec";
 
-export const FORM_CLASSNAME = 'k-form';
+export const FORM_CLASSNAME = "k-form";
 
 const states = [];
 
 const options = {
-    size: [ Size.small, Size.medium, Size.large ]
+    size: [ Size.small, Size.medium, Size.large ],
 };
 
 export type KendoFormOptions = {
-    size?: (typeof options.size)[number] | null;
+  size?: (typeof options.size)[number] | null;
 };
 
 export type KendoFormProps = KendoFormOptions & {
-    orientation?: string;
-    layout?: string;
-    formButtons?: JSX.Element | string;
-    cols?: number;
-    gapX?: number;
-    gapY?: number;
-    tag?: string;
-    children?: JSX.Element | JSX.Element[];
+  orientation?: string;
+  FormButtons?: ComponentSlot<FormButtonsProps>;
+  children?: JSX.Element | JSX.Element[];
 };
 
 const defaultProps = {
     size: Size.medium,
-    layout: 'basic',
-    tag: 'form'
+    FormButtons: FormButtons,
 };
 
-export const Form = (
-    props: KendoFormProps &
-        React.HTMLAttributes<HTMLDivElement>
-) => {
-    const {
-        size = defaultProps.size,
-        orientation,
-        layout = defaultProps.layout,
-        formButtons,
-        cols,
-        gapX,
-        gapY,
-        tag = defaultProps.tag,
-        children
-    } = props;
+export const Form: KendoComponent<"form", KendoFormProps> = (props) => {
+    const { as: Component = "form", size = defaultProps.size, orientation } = props;
 
-    const Parent = ({ tag, className, children }) => ( tag === 'form' ? <form className={className}>{children}</form> : <div className={className}>{children}</div> );
-
-    const formChildren: JSX.Element | JSX.Element[] = [];
-
-    if (children) {
-        if ( Array.isArray(children) ) {
-            children.map( (child, index) => {
-                if ( child.type === FormField ) {
-                    formChildren.push(
-                        <FormField {...child.props} orientation={orientation} key={index} />
-                    );
-                } else {
-                    formChildren.push(child);
-                }
-            } );
-        } else if ( children.type === FormField ) {
-            formChildren.push( <FormField {...children.props} orientation={orientation} key={`${new Date().getTime()}`} /> );
-        } else {
-            children.type === Fieldset && formChildren.push( <Fieldset {...children.props} key={`${new Date().getTime()}`} /> );
-        }
-
-    }
+    const [ FormButtons, FormButtonProps ] = componentSlot<FormButtonsProps>(props.FormButtons || defaultProps.FormButtons);
 
     return (
-        <Parent tag={tag} className={classNames(
-            props.className,
-            FORM_CLASSNAME,
-            optionClassNames(FORM_CLASSNAME, {
-                size
-            }),
-            {
-                [`${FORM_CLASSNAME}-${orientation}`]: orientation
-            }
-        )}>
-            { layout === 'grid' ?
-                <div className={classNames(
-                    'k-form-layout',
-                    'k-d-grid',
-                    {
-                        [`k-grid-cols-${cols}`]: cols,
-                        [`k-gap-x-${gapX}`]: gapX,
-                        [`k-gap-y-${gapY}`]: gapY
-                    }
-                )}>
-                    {formChildren}
-                </div>
-                :
-                <>{formChildren}</>
-            }
-            { formButtons &&
-                <div className="k-form-buttons">
-                    {formButtons}
-                </div>
-            }
-        </Parent>
+        <Component
+            className={classNames(
+                props.className,
+                FORM_CLASSNAME,
+                optionClassNames(FORM_CLASSNAME, {
+                    size,
+                }),
+                {
+                    [`${FORM_CLASSNAME}-${orientation}`]: orientation,
+                }
+            )}
+        >
+            {props.children}
+            <FormButtons {...FormButtonProps} />
+        </Component>
     );
 };
 
@@ -111,4 +55,3 @@ Form.className = FORM_CLASSNAME;
 Form.defaultProps = defaultProps;
 
 export default Form;
-

@@ -2,6 +2,7 @@ import { DropdownList } from '../../dropdownlist';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
 import { Form, FormField, Fieldset } from '../../form';
+import { FormButtons } from '../form-buttons.spec';
 
 
 export default () =>(
@@ -12,11 +13,11 @@ export default () =>(
             <span></span>
 
             <section>
-                <Form layout="grid" cols={2} gapX={4} formButtons={
-                    <>
+                <Form className="k-d-grid k-grid-cols-2 k-gap-4" FormButtons={
+                    <FormButtons>
                         <Button className="k-form-submit" themeColor="primary">Submit</Button>
                         <Button className="k-form-clear" >Clear</Button>
-                    </>
+                    </FormButtons>
                 } >
                     <Fieldset legend="Personal Information" layout="grid" cols={1} gapY={3}>
                         <FormField

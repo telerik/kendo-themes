@@ -2,6 +2,7 @@ import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
 import { Form, FormField } from '../../form';
+import { FormButtons } from '../form-buttons.spec';
 
 
 const styles = `
@@ -24,11 +25,11 @@ export default () =>(
                     Error: The quick brown fox jumps over the lazy dog.
                 </div>
 
-                <Form formButtons={
-                    <>
+                <Form FormButtons={
+                    <FormButtons>
                         <Button themeColor="primary">Submit</Button>
                         <Button>Clear</Button>
-                    </>
+                    </FormButtons>
                 } >
                     <FormField
                         label="Normal:"
@@ -78,7 +79,7 @@ export default () =>(
                     Error: The quick brown fox jumps over the lazy dog.
                 </div>
 
-                <Form orientation="horizontal" formButtons={
+                <Form orientation="horizontal" FormButtons={
                     <>
                         <Button className="k-form-submit" themeColor="primary" focus>Submit</Button>
                         <Button className="k-form-clear">Clear</Button>

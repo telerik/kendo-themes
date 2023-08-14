@@ -4,6 +4,7 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Toolbar, ToolbarSeparator } from '../../toolbar';
 import { Form, FormField, Fieldset } from '../../form';
+import { FormButtons } from '../../form/form-buttons.spec';
 
 
 export default () =>(
@@ -42,11 +43,11 @@ export default () =>(
                     </div>
 
                     <div className="k-imageeditor-action-pane">
-                        <Form tag="div" className="k-imageeditor-pane-form" formButtons={
-                            <>
+                        <Form as="div" className="k-imageeditor-pane-form" FormButtons={
+                            <FormButtons>
                                 <Button themeColor="primary">Confirm</Button>
                                 <Button>Cancel</Button>
-                            </>
+                            </FormButtons>
                         }>
                             <Fieldset layout="grid" legend="Resize Image" cols={2} gapX={2}>
                                 <FormField

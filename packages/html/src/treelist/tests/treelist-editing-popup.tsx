@@ -29,7 +29,7 @@ export default () =>(
                         <Button icon="cancel">Cancel</Button>
                     </>
                 }>
-                    <Form tag="div">
+                    <Form as="div">
                         <FormField
                             className="k-form-field-error"
                             label="Text data field label"
