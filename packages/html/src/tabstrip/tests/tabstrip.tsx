@@ -18,6 +18,9 @@ export default () =>(
                             <li className="k-item k-hover">
                                 <span className="k-link">Hover</span>
                             </li>
+                            <li className="k-item k-tabstrip-dragging">
+                                <span className="k-link">Dragging</span>
+                            </li>
                             <li className="k-item k-last k-disabled">
                                 <span className="k-link">Disabled</span>
                             </li>
@@ -65,6 +68,9 @@ export default () =>(
                             <li className="k-item k-hover">
                                 <span className="k-link">Hover</span>
                             </li>
+                            <li className="k-item k-tabstrip-dragging">
+                                <span className="k-link">Dragging</span>
+                            </li>
                             <li className="k-item k-last k-disabled">
                                 <span className="k-link">Disabled</span>
                             </li>
@@ -92,6 +98,9 @@ export default () =>(
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
                                 <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
+                            </li>
+                            <li className="k-item k-tabstrip-dragging">
+                                <span className="k-link">Dragging</span>
                             </li>
                             <li className="k-item k-last k-disabled">
                                 <span className="k-link">Disabled</span>
@@ -123,6 +132,9 @@ export default () =>(
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
                                 <Button fillMode="flat" icon="x" className="k-remove-tab"></Button>
+                            </li>
+                            <li className="k-item k-tabstrip-dragging">
+                                <span className="k-link">Dragging</span>
                             </li>
                             <li className="k-item k-last k-disabled">
                                 <span className="k-link">Disabled</span>
