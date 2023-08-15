@@ -69,10 +69,10 @@ $kendo-pivotgrid-configurator-header-bg: null !default;
 $kendo-pivotgrid-configurator-header-text: $kendo-component-header-text !default;
 $kendo-pivotgrid-configurator-header-border: null !default;
 
-$kendo-pivotgrid-configurator-end-shadow: elevation(3, $inverted: true, $horizontal: true) !default; /* -3px 0px 6px rgba(0, 0, 0, .16) */
-$kendo-pivotgrid-configurator-start-shadow: elevation(3, $horizontal: true) !default; /* 3px 0px 6px rgba(0, 0, 0, .16) */
-$kendo-pivotgrid-configurator-top-shadow: elevation(3, $inverted: true)  !default; /* 0px -3px 6px rgba(0, 0, 0, .16) */
-$kendo-pivotgrid-configurator-bottom-shadow: elevation(3) !default; /* 0px 3px 6px rgba(0, 0, 0, .16) */
+$kendo-pivotgrid-configurator-end-shadow: elevation(3, $inverted: true, $horizontal: true) !default; // -3px 0px 6px rgba(0, 0, 0, .16)
+$kendo-pivotgrid-configurator-start-shadow: elevation(3, $horizontal: true) !default; // 3px 0px 6px rgba(0, 0, 0, .16)
+$kendo-pivotgrid-configurator-top-shadow: elevation(3, $inverted: true)  !default; // 0px -3px 6px rgba(0, 0, 0, .16)
+$kendo-pivotgrid-configurator-bottom-shadow: elevation(3) !default; // 0px 3px 6px rgba(0, 0, 0, .16)
 
 $kendo-pivotgrid-configurator-button-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-pivotgrid-configurator-button-padding-y: k-map-get( $kendo-spacing, 1 ) !default;

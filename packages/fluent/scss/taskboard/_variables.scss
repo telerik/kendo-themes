@@ -185,7 +185,7 @@ $kendo-taskboard-card-focus-shadow: none !default;
 $kendo-taskboard-card-selected-border: k-get-theme-color-var( primary-100 ) !default;
 /// Selected shadow of the task board card.
 /// @group taskboard
-$kendo-taskboard-card-selected-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-taskboard-card-selected-shadow: var( --kendo-box-shadow-depth-4, none ) !default; // TODO: replace with elevation()
 
 /// Font size of the task board card title.
 /// @group taskboard

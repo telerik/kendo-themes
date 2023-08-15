@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "./index" as *;
+
+/// Shadow for cards and grid item thumbnails.
+/// Equivalent to fluent depth 4.
+$kendo-box-shadow-depth-1: map.get($kendo-elevation, 1) !default; // 0 1.6px 3.6px rgba( $kendo-color-black, 0.132 ), 0 0.3px 0.9px rgba( $kendo-color-black, 0.108 )
+/// Shadow for command bars and dropdowns.
+/// Equivalent to fluent depth 8.
+$kendo-box-shadow-depth-2: map.get($kendo-elevation, 2) !default; // 0 3.2px 7.2px rgba( $kendo-color-black, 0.132 ), 0 0.6px 1.8px rgba( $kendo-color-black, 0.108 )
+/// Shadow for teaching callouts and hover cards / tooltips.
+/// Equivalent to fluent depth 16.
+$kendo-box-shadow-depth-3: map.get($kendo-elevation, 4) !default; // 0 6.4px 14.4px rgba( $kendo-color-black, 0.132 ), 0 1.2px 3.6px rgba( $kendo-color-black, 0.108 )
+/// Shadow for panels and pop up dialogs.
+/// Equivalent to fluent depth 64.
+$kendo-box-shadow-depth-4: map.get($kendo-elevation, 8) !default; // 0 25.6px 57.6px rgba( $kendo-color-black, 0.22 ), 0 4.8px 14.4px rgba( $kendo-color-black, 0.18 )
+
+@mixin elevation--styles-legacy() {
+    :root {
+        --kendo-box-shadow-depth-1: #{$kendo-box-shadow-depth-1};
+        --kendo-box-shadow-depth-2: #{$kendo-box-shadow-depth-2};
+        --kendo-box-shadow-depth-3: #{$kendo-box-shadow-depth-3};
+        --kendo-box-shadow-depth-4: #{$kendo-box-shadow-depth-4};
+    }
+}

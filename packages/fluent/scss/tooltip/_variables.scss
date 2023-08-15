@@ -48,7 +48,7 @@ $kendo-tooltip-text: var( --kendo-component-text, initial ) !default;
 $kendo-tooltip-border: transparent !default;
 /// The box-shadow of the tooltip
 /// @group tooltip
-$kendo-tooltip-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
+$kendo-tooltip-shadow: var( --kendo-box-shadow-depth-3, none ) !default; // TODO: replace with elevation()
 
 /// The text color of the tooltip button
 /// @group tooltip

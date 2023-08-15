@@ -172,6 +172,10 @@
     @include kendo-core--styles();
 
     // Color system
+    @include color-system-styles();
+
+    // Elevation system
+    @include elevation--styles();
 
     // Typography and utils
     @include kendo-typography--styles();

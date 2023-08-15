@@ -15,27 +15,37 @@ $kendo-elevation: (
     $shadow: k-map-get($kendo-elevation, $level);
 
     @if($inverted) {
-        $shadow-y: nth($shadow, 2);
+        $shadow-y: k-list-nth($shadow, 2);
         $shadow-y-inverted: -1 * $shadow-y;
-        $shadow: set-nth($shadow, 2, $shadow-y-inverted);
+        $shadow: k-list-set-nth($shadow, 2, $shadow-y-inverted);
     }
 
     @if($center) {
-        $shadow: set-nth($shadow, 2, 0);
+        $shadow: k-list-set-nth($shadow, 2, 0);
     }
 
     @if($horizontal) {
-        $shadow-x: nth($shadow, 1);
-        $shadow-y: nth($shadow, 2);
+        $shadow-x: k-list-nth($shadow, 1);
+        $shadow-y: k-list-nth($shadow, 2);
 
-        $shadow: set-nth($shadow, 1, $shadow-y);
-        $shadow: set-nth($shadow, 2, $shadow-x);
+        $shadow: k-list-set-nth($shadow, 1, $shadow-y);
+        $shadow: k-list-set-nth($shadow, 2, $shadow-x);
     }
 
     @if($color) {
-        $shadow-color: nth($shadow, 4);
-        $shadow: set-nth($shadow, 4, $color);
+        $shadow-color: k-list-nth($shadow, 4);
+        $shadow: k-list-set-nth($shadow, 4, $color);
     }
 
     @return $shadow;
+}
+
+
+@mixin elevation--styles() {
+    // TODO: css vars!
+    //  :root {
+    //      @each $level, $shadow in $kendo-elevation {
+    //          --kendo-elevation-#{$level}: #{$shadow};
+    //      }
+    //  }
 }

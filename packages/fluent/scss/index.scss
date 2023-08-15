@@ -338,6 +338,10 @@
     // Color system css variables
     @include color-system-styles();
 
+    // Elevation
+    @include elevation--styles();
+    @include elevation--styles-legacy();
+
     // Typography and utils
     @include typography-styles();
     @include utils-styles();

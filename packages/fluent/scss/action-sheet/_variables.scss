@@ -48,7 +48,7 @@ $kendo-actionsheet-text: var( --kendo-component-text, initial ) !default;
 $kendo-actionsheet-border: var( --kendo-component-border, initial ) !default;
 /// Box shadow of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-actionsheet-shadow: var( --kendo-box-shadow-depth-4, none ) !default; // TODO: replace with elevation()
 
 /// Horizontal padding of the action sheet header.
 /// @group action-sheet
