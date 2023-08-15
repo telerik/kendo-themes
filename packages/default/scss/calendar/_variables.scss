@@ -19,6 +19,7 @@ $kendo-calendar-header-bg: $kendo-component-header-bg !default;
 $kendo-calendar-header-text: $kendo-component-header-text !default;
 $kendo-calendar-header-border: $kendo-component-header-border !default;
 $kendo-calendar-header-gradient: $kendo-component-header-gradient !default;
+// TODO: variable is used, but the selector using it is not! Potentially remove;
 $kendo-calendar-header-shadow: 0 1px 3px 1px rgba(black, .1) !default;
 
 $kendo-calendar-nav-gap: null !default;

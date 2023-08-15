@@ -23,7 +23,7 @@ $kendo-pdf-viewer-page-spacing: 30px !default;
 $kendo-pdf-viewer-page-bg: white !default;
 $kendo-pdf-viewer-page-text: $kendo-component-text !default;
 $kendo-pdf-viewer-page-border: $kendo-component-border !default;
-$kendo-pdf-viewer-page-shadow: 0 0 k-math-div( $kendo-pdf-viewer-page-spacing, 2 ) $kendo-pdf-viewer-page-border !default;
+$kendo-pdf-viewer-page-shadow: elevation(3, $center: true) !default; /* 0 0 k-math-div( $kendo-pdf-viewer-page-spacing, 2 ) $kendo-pdf-viewer-page-border */
 
 $kendo-pdf-viewer-search-panel-padding-x: $kendo-toolbar-md-padding-x !default;
 $kendo-pdf-viewer-search-panel-padding-y: calc( #{$kendo-toolbar-md-padding-x} * 2 ) !default;

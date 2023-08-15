@@ -1,0 +1,41 @@
+$kendo-elevation: (
+    1: ( 0 2px 3px rgba(0, 0, 0, .04) ), // TODO use 0, 0, 0 when color system is added to utils
+    2: ( 0 4px 6px rgba(0, 0, 0, .06) ),
+    3: ( 0 8px 10px rgba(0, 0, 0, .08) ),
+    4: ( 0 12px 14px rgba(0, 0, 0, .12) ),
+    5: ( 0 16px 18px rgba(0, 0, 0, .16) ),
+    6: ( 0 20px 22px rgba(0, 0, 0, .2) ),
+    7: ( 0 24px 26px rgba(0, 0, 0, .24) ),
+    8: ( 0 28px 30px rgba(0, 0, 0, .28) ),
+    9: ( 0 32px 34px rgba(0, 0, 0, .32), )
+) !default;
+
+
+@function elevation($level, $inverted: false, $center: false, $horizontal: false, $color: null) {
+    $shadow: k-map-get($kendo-elevation, $level);
+
+    @if($inverted) {
+        $shadow-y: nth($shadow, 2);
+        $shadow-y-inverted: -1 * $shadow-y;
+        $shadow: set-nth($shadow, 2, $shadow-y-inverted);
+    }
+
+    @if($center) {
+        $shadow: set-nth($shadow, 2, 0);
+    }
+
+    @if($horizontal) {
+        $shadow-x: nth($shadow, 1);
+        $shadow-y: nth($shadow, 2);
+
+        $shadow: set-nth($shadow, 1, $shadow-y);
+        $shadow: set-nth($shadow, 2, $shadow-x);
+    }
+
+    @if($color) {
+        $shadow-color: nth($shadow, 4);
+        $shadow: set-nth($shadow, 4, $color);
+    }
+
+    @return $shadow;
+}
