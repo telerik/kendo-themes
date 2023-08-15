@@ -212,7 +212,7 @@ $kendo-list-header-text: k-get-theme-color-var( primary-100 ) !default;
 $kendo-list-header-border: inherit !default;
 /// The box shadow of the List header.
 /// @group list
-$kendo-list-header-shadow: $kendo-box-shadow-depth-3 !default;
+$kendo-list-header-shadow: $kendo-box-shadow-depth-3 !default; // TODO: replace with elevation()
 
 
 /// The background color of the List items.

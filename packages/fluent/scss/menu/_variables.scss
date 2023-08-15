@@ -125,7 +125,7 @@ $kendo-menu-popup-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-menu-popup-border: initial !default;
 /// The shadow of the menu popup.
 /// @group menu
-$kendo-menu-popup-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
+$kendo-menu-popup-shadow: var( --kendo-box-shadow-depth-2, none ) !default; // TODO: replace with elevation()
 
 /// Horizontal padding of the menu item in popup.
 /// @group menu

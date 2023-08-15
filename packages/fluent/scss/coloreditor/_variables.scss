@@ -35,14 +35,14 @@ $kendo-color-editor-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-color-editor-border: var( --kendo-component-border, initial ) !default;
 /// The box shadow of the ColorEditor.
 /// @group coloreditor
-$kendo-color-editor-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
+$kendo-color-editor-shadow: var( --kendo-box-shadow-depth-2, none ) !default; // TODO: replace with elevation()
 
 /// The border color of the focused ColorEditor.
 /// @group coloreditor
 $kendo-color-editor-focus-border: k-get-theme-color-var( neutral-20 ) !default;
 /// The box shadow of the focused ColorEditor.
 /// @group coloreditor
-$kendo-color-editor-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
+$kendo-color-editor-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default; // TODO: replace with elevation()
 
 /// The vertical padding of the ColorEditor header.
 /// @group coloreditor

@@ -18,6 +18,8 @@
 @import "./interactivity/index.import.scss";
 @import "./svg/index.import.scss";
 
+@import "./elevation/index.import.scss";
+
 
 // Mixin for all styles
 @mixin kendo-utils() {
@@ -35,4 +37,6 @@
     @include kendo-utils--transform();
     @include kendo-utils--interactivity();
     @include kendo-utils--svg();
+
+    @include kendo-utils--elevation();
 }

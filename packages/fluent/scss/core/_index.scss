@@ -4,11 +4,16 @@
 @forward "./color-system/palettes";
 @use "./color-system/palettes" as *;
 
+// Elevation
+@use "./elevation" as *;
+@forward "./elevation/legacy";
+
 // Variables
 @forward "./variables";
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
-    $kendo-palettes: $kendo-fluent-palettes
+    $kendo-palettes: $kendo-fluent-palettes,
+    $kendo-elevation: $kendo-elevation
 );
 
 // Helpers

@@ -20,5 +20,5 @@ $kendo-rating-icon-selected-text: $kendo-selected-bg !default;
 $kendo-rating-icon-hover-text: $kendo-selected-bg !default;
 $kendo-rating-icon-focus-text: $kendo-selected-bg !default;
 
-$kendo-rating-icon-focus-shadow: elevation(1, $color: rgba($kendo-color-black, 0.2)) !default; /* 0 2px 4px rgba( $kendo-color-black, .1 ) */
-$kendo-rating-icon-focus-selected-shadow: elevation(1, $color: rgba($kendo-color-black, 0.2)) !default; /* 0 2px 4px rgba( $kendo-color-black, .1) */
+$kendo-rating-icon-focus-shadow: elevation(1, $color: rgba($kendo-color-black, 0.2)) !default; // 0 2px 4px rgba( $kendo-color-black, .1 )
+$kendo-rating-icon-focus-selected-shadow: elevation(1, $color: rgba($kendo-color-black, 0.2)) !default; // 0 2px 4px rgba( $kendo-color-black, .1)

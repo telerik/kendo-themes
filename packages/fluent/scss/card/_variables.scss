@@ -40,7 +40,7 @@ $kendo-card-text: var( --kendo-component-text, initial ) !default;
 $kendo-card-border: var( --kendo-component-border, initial ) !default;
 /// Shadow of the card.
 /// @group card
-$kendo-card-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+$kendo-card-shadow: var( --kendo-box-shadow-depth-1, none ) !default; // TODO: replace with elevation()
 
 /// Background color of the card when focused.
 /// @group card
@@ -53,7 +53,7 @@ $kendo-card-focus-text: null !default;
 $kendo-card-focus-border: var( --kendo-component-border, initial ) !default;
 /// Shadow of the card when focused.
 /// @group card
-$kendo-card-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
+$kendo-card-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default; // TODO: replace with elevation()
 
 /// Text size of the card header.
 /// @group card
