@@ -1,673 +1,1478 @@
 @import "./_functions.import.scss";
 
-$kendo-new-colors: false !default;
-$kendo-subtle-text: null !default;
-
-$kendo-disabled-text: null !default;
-$kendo-disabled-bg: null !default;
-$kendo-disabled-border: null !default;
-$kendo-focus-outline: null !default;
-
-$kendo-color-primary: null !default;
-$kendo-color-primary-text: null !default;
-$kendo-color-primary-text-contrast: null !default;
-$kendo-color-primary-hover: null !default;
-$kendo-color-primary-active: null !default;
-$kendo-color-primary-selected: null !default;
-$kendo-color-primary-focus: null !default;
-$kendo-color-primary-light: null !default;
-$kendo-color-primary-light-alt: null !default;
-$kendo-color-primary-light-mix: null !default;
-$kendo-color-primary-pale: null !default;
-$kendo-color-primary-dim: null !default;
-$kendo-color-primary-shaded: null !default;
-
-$kendo-color-base: null !default;
-$kendo-color-base-text: null !default;
-$kendo-color-base-text-contrast: null !default;
-$kendo-color-base-text-lighter: null !default;
-$kendo-color-base-text-pale: null !default;
-$kendo-color-base-hover: null !default;
-$kendo-color-base-active: null !default;
-$kendo-color-base-selected: null !default;
-$kendo-color-base-focus: null !default;
-$kendo-color-base-lighter: null !default;
-$kendo-color-base-shaded: null !default;
-
-$kendo-color-secondary: null !default;
-$kendo-color-secondary-text: null !default;
-$kendo-color-secondary-hover: null !default;
-$kendo-color-secondary-active: null !default;
-$kendo-color-secondary-selected: null !default;
-$kendo-color-secondary-focus: null !default;
-
-$kendo-color-tertiary: null !default;
-$kendo-color-tertiary-text: null !default;
-$kendo-color-tertiary-hover: null !default;
-$kendo-color-tertiary-active: null !default;
-$kendo-color-tertiary-selected: null !default;
-$kendo-color-tertiary-focus: null !default;
-
-$kendo-color-info: null !default;
-$kendo-color-info-text: null !default;
-$kendo-color-info-hover: null !default;
-$kendo-color-info-active: null !default;
-$kendo-color-info-selected: null !default;
-$kendo-color-info-focus: null !default;
-
-$kendo-color-success: null !default;
-$kendo-color-success-text: null !default;
-$kendo-color-success-hover: null !default;
-$kendo-color-success-active: null !default;
-$kendo-color-success-selected: null !default;
-$kendo-color-success-focus: null !default;
-$kendo-color-success-dim: null !default;
-
-$kendo-color-warning: null !default;
-$kendo-color-warning-text: null !default;
-$kendo-color-warning-hover: null !default;
-$kendo-color-warning-active: null !default;
-$kendo-color-warning-selected: null !default;
-$kendo-color-warning-focus: null !default;
-
-$kendo-color-error: null !default;
-$kendo-color-error-text: null !default;
-$kendo-color-error-hover: null !default;
-$kendo-color-error-active: null !default;
-$kendo-color-error-selected: null !default;
-$kendo-color-error-focus: null !default;
-$kendo-color-error-dim: null !default;
-
-$kendo-color-light: null !default;
-$kendo-color-light-text: null !default;
-$kendo-color-light-hover: null !default;
-$kendo-color-light-active: null !default;
-$kendo-color-light-selected: null !default;
-$kendo-color-light-focus: null !default;
-
-$kendo-color-dark: null !default;
-$kendo-color-dark-text: null !default;
-$kendo-color-dark-hover: null !default;
-$kendo-color-dark-active: null !default;
-$kendo-color-dark-selected: null !default;
-$kendo-color-dark-focus: null !default;
-
-$kendo-color-inverse: null !default;
-$kendo-color-inverse-text: null !default;
-$kendo-color-inverse-hover: null !default;
-$kendo-color-inverse-active: null !default;
-$kendo-color-inverse-selected: null !default;
-$kendo-color-inverse-focus: null !default;
-
-$kendo-body-bg: null !default;
-$kendo-body-bg-contrast: null !default;
-$kendo-body-bg-pale: null !default;
-$kendo-body-bg-dim: null !default;
-$kendo-body-text: null !default;
-$kendo-body-text-pale: null !default;
-$kendo-body-text-dim: null !default;
-$kendo-body-text-lighter: null !default;
-$kendo-body-text-light: null !default;
-$kendo-body-text-darker: null !default;
-$kendo-body-hover: null !default;
-$kendo-body-darken: null !default;
-$kendo-body-shaded: null !default;
-
-$kendo-base-bg: null !default;
-$kendo-base-text: null !default;
-$kendo-base-hover: null !default;
-
-$kendo-color-border: null !default;
-$kendo-color-border-hover: null !default;
-$kendo-color-border-focus: null !default;
-
 $kendo-theme-swatches: () !default;
 $kendo-theme-palette: () !default;
 
-$_kendo-color-white: null;
-$_kendo-color-black: null;
-$_kendo-subtle-text: null;
-$_kendo-disabled-text: null;
-$_kendo-disabled-bg: null;
-$_kendo-disabled-border: null;
-$_kendo-focus-outline: null;
-$_kendo-color-primary: null;
-$_kendo-color-primary-rgb: null;
-$_kendo-color-primary-text: null;
-$_kendo-color-primary-text-contrast: null;
-$_kendo-color-primary-text-rgb: null;
-$_kendo-color-primary-hover: null;
-$_kendo-color-primary-active: null;
-$_kendo-color-primary-active-rgb: null;
-$_kendo-color-primary-selected: null;
-$_kendo-color-primary-focus: null;
-$_kendo-color-primary-light: null;
-$_kendo-color-primary-light-alt: null;
-$_kendo-color-primary-light-mix: null;
-$_kendo-color-primary-pale: null;
-$_kendo-color-primary-dim: null;
-$_kendo-color-primary-shaded: null;
-$_kendo-color-base: null;
-$_kendo-color-base-rgb: null;
-$_kendo-color-base-text: null;
-$_kendo-color-base-text-contrast: null;
-$_kendo-color-base-text-lighter: null;
-$_kendo-color-base-text-pale: null;
-$_kendo-color-base-text-rgb: null;
-$_kendo-color-base-hover: null;
-$_kendo-color-base-active: null;
-$_kendo-color-base-selected: null;
-$_kendo-color-base-focus: null;
-$_kendo-color-base-lighter: null;
-$_kendo-color-base-shaded: null;
-$_kendo-color-secondary: null;
-$_kendo-color-secondary-rgb: null;
-$_kendo-color-secondary-text: null;
-$_kendo-color-secondary-text-rgb: null;
-$_kendo-color-secondary-hover: null;
-$_kendo-color-secondary-active: null;
-$_kendo-color-secondary-selected: null;
-$_kendo-color-secondary-focus: null;
-$_kendo-color-tertiary: null;
-$_kendo-color-tertiary-rgb: null;
-$_kendo-color-tertiary-text: null;
-$_kendo-color-tertiary-text-rgb: null;
-$_kendo-color-tertiary-hover: null;
-$_kendo-color-tertiary-active: null;
-$_kendo-color-tertiary-selected: null;
-$_kendo-color-tertiary-focus: null;
-$_kendo-color-info: null;
-$_kendo-color-info-rgb: null;
-$_kendo-color-info-text: null;
-$_kendo-color-info-text-rgb: null;
-$_kendo-color-info-hover: null;
-$_kendo-color-info-active: null;
-$_kendo-color-info-selected: null;
-$_kendo-color-info-focus: null;
-$_kendo-color-success: null;
-$_kendo-color-success-rgb: null;
-$_kendo-color-success-text: null;
-$_kendo-color-success-text-rgb: null;
-$_kendo-color-success-hover: null;
-$_kendo-color-success-active: null;
-$_kendo-color-success-selected: null;
-$_kendo-color-success-focus: null;
-$_kendo-color-success-dim: null;
-$_kendo-color-warning: null;
-$_kendo-color-warning-rgb: null;
-$_kendo-color-warning-text: null;
-$_kendo-color-warning-text-rgb: null;
-$_kendo-color-warning-hover: null;
-$_kendo-color-warning-active: null;
-$_kendo-color-warning-selected: null;
-$_kendo-color-warning-focus: null;
-$_kendo-color-error: null;
-$_kendo-color-error-rgb: null;
-$_kendo-color-error-text: null;
-$_kendo-color-error-text-rgb: null;
-$_kendo-color-error-hover: null;
-$_kendo-color-error-active: null;
-$_kendo-color-error-selected: null;
-$_kendo-color-error-focus: null;
-$_kendo-color-error-dim: null;
-$_kendo-color-light: null;
-$_kendo-color-light-rgb: null;
-$_kendo-color-light-text: null;
-$_kendo-color-light-text-rgb: null;
-$_kendo-color-light-hover: null;
-$_kendo-color-light-active: null;
-$_kendo-color-light-selected: null;
-$_kendo-color-light-focus: null;
-$_kendo-color-dark: null;
-$_kendo-color-dark-rgb: null;
-$_kendo-color-dark-text: null;
-$_kendo-color-dark-text-rgb: null;
-$_kendo-color-dark-hover: null;
-$_kendo-color-dark-active: null;
-$_kendo-color-dark-selected: null;
-$_kendo-color-dark-focus: null;
-$_kendo-color-inverse: null;
-$_kendo-color-inverse-rgb: null;
-$_kendo-color-inverse-text: null;
-$_kendo-color-inverse-text-rgb: null;
-$_kendo-color-inverse-hover: null;
-$_kendo-color-inverse-active: null;
-$_kendo-color-inverse-selected: null;
-$_kendo-color-inverse-focus: null;
-$_kendo-body-bg: null;
-$_kendo-body-bg-contrast: null;
-$_kendo-body-bg-contrast-rgb: null;
-$_kendo-body-bg-pale: null;
-$_kendo-body-bg-dim: null;
-$_kendo-body-text: null;
-$_kendo-body-text-rgb: null;
-$_kendo-body-text-pale: null;
-$_kendo-body-text-dim: null;
-$_kendo-body-text-lighter: null;
-$_kendo-body-text-light: null;
-$_kendo-body-text-darker: null;
-$_kendo-body-hover: null;
-$_kendo-body-darken: null;
-$_kendo-body-shaded: null;
-$_kendo-base-bg: null;
-$_kendo-base-text: null;
-$_kendo-base-hover: null;
-$_kendo-color-border: null;
-$_kendo-color-border-rgb: null;
-$_kendo-color-border-hover: null;
-$_kendo-color-border-hover-rgb: null;
-$_kendo-color-border-focus: null;
-$_kendo-color-border-focus-rgb: null;
+
+// Base
+$kendo-base-surface-contrast-1: null !default;
+$kendo-base-surface-contrast-2: null !default;
+$kendo-base-surface-contrast-3: null !default;
+$kendo-base-surface-contrast-4: null !default;
+$kendo-base-surface-contrast-5: null !default;
+$kendo-base-surface-contrast-6: null !default;
+$kendo-base-surface-contrast-7: null !default;
+
+$kendo-base-stroke-contrast-1: null !default;
+$kendo-base-stroke-contrast-2: null !default;
+$kendo-base-stroke-contrast-3: null !default;
+$kendo-base-stroke-contrast-4: null !default;
+$kendo-base-stroke-contrast-5: null !default;
+$kendo-base-stroke-contrast-6: null !default;
+$kendo-base-stroke-contrast-7: null !default;
+
+$kendo-base-content-contrast-1: null !default;
+$kendo-base-content-contrast-2: null !default;
+$kendo-base-content-contrast-3: null !default;
+$kendo-base-content-contrast-4: null !default;
+$kendo-base-content-contrast-5: null !default;
+$kendo-base-content-contrast-6: null !default;
+$kendo-base-content-contrast-7: null !default;
+
+
+// Primary
+$kendo-primary-surface-contrast-1: null !default;
+$kendo-primary-surface-contrast-2: null !default;
+$kendo-primary-surface-contrast-3: null !default;
+$kendo-primary-surface-contrast-4: null !default;
+$kendo-primary-surface-contrast-5: null !default;
+$kendo-primary-surface-contrast-6: null !default;
+$kendo-primary-surface-contrast-7: null !default;
+
+$kendo-primary-stroke-contrast-1: null !default;
+$kendo-primary-stroke-contrast-2: null !default;
+$kendo-primary-stroke-contrast-3: null !default;
+$kendo-primary-stroke-contrast-4: null !default;
+$kendo-primary-stroke-contrast-5: null !default;
+$kendo-primary-stroke-contrast-6: null !default;
+$kendo-primary-stroke-contrast-7: null !default;
+
+$kendo-primary-content-contrast-1: null !default;
+$kendo-primary-content-contrast-2: null !default;
+$kendo-primary-content-contrast-3: null !default;
+$kendo-primary-content-contrast-4: null !default;
+$kendo-primary-content-contrast-5: null !default;
+$kendo-primary-content-contrast-6: null !default;
+$kendo-primary-content-contrast-7: null !default;
+
+
+// Secondary
+$kendo-secondary-surface-contrast-1: null !default;
+$kendo-secondary-surface-contrast-2: null !default;
+$kendo-secondary-surface-contrast-3: null !default;
+$kendo-secondary-surface-contrast-4: null !default;
+$kendo-secondary-surface-contrast-5: null !default;
+$kendo-secondary-surface-contrast-6: null !default;
+$kendo-secondary-surface-contrast-7: null !default;
+
+$kendo-secondary-stroke-contrast-1: null !default;
+$kendo-secondary-stroke-contrast-2: null !default;
+$kendo-secondary-stroke-contrast-3: null !default;
+$kendo-secondary-stroke-contrast-4: null !default;
+$kendo-secondary-stroke-contrast-5: null !default;
+$kendo-secondary-stroke-contrast-6: null !default;
+$kendo-secondary-stroke-contrast-7: null !default;
+
+$kendo-secondary-content-contrast-1: null !default;
+$kendo-secondary-content-contrast-2: null !default;
+$kendo-secondary-content-contrast-3: null !default;
+$kendo-secondary-content-contrast-4: null !default;
+$kendo-secondary-content-contrast-5: null !default;
+$kendo-secondary-content-contrast-6: null !default;
+$kendo-secondary-content-contrast-7: null !default;
+
+
+// Tertiary
+$kendo-tertiary-surface-contrast-1: null !default;
+$kendo-tertiary-surface-contrast-2: null !default;
+$kendo-tertiary-surface-contrast-3: null !default;
+$kendo-tertiary-surface-contrast-4: null !default;
+$kendo-tertiary-surface-contrast-5: null !default;
+$kendo-tertiary-surface-contrast-6: null !default;
+$kendo-tertiary-surface-contrast-7: null !default;
+
+$kendo-tertiary-stroke-contrast-1: null !default;
+$kendo-tertiary-stroke-contrast-2: null !default;
+$kendo-tertiary-stroke-contrast-3: null !default;
+$kendo-tertiary-stroke-contrast-4: null !default;
+$kendo-tertiary-stroke-contrast-5: null !default;
+$kendo-tertiary-stroke-contrast-6: null !default;
+$kendo-tertiary-stroke-contrast-7: null !default;
+
+$kendo-tertiary-content-contrast-1: null !default;
+$kendo-tertiary-content-contrast-2: null !default;
+$kendo-tertiary-content-contrast-3: null !default;
+$kendo-tertiary-content-contrast-4: null !default;
+$kendo-tertiary-content-contrast-5: null !default;
+$kendo-tertiary-content-contrast-6: null !default;
+$kendo-tertiary-content-contrast-7: null !default;
+
+
+// Info
+$kendo-info-surface-contrast-1: null !default;
+$kendo-info-surface-contrast-2: null !default;
+$kendo-info-surface-contrast-3: null !default;
+$kendo-info-surface-contrast-4: null !default;
+$kendo-info-surface-contrast-5: null !default;
+$kendo-info-surface-contrast-6: null !default;
+$kendo-info-surface-contrast-7: null !default;
+
+$kendo-info-stroke-contrast-1: null !default;
+$kendo-info-stroke-contrast-2: null !default;
+$kendo-info-stroke-contrast-3: null !default;
+$kendo-info-stroke-contrast-4: null !default;
+$kendo-info-stroke-contrast-5: null !default;
+$kendo-info-stroke-contrast-6: null !default;
+$kendo-info-stroke-contrast-7: null !default;
+
+$kendo-info-content-contrast-1: null !default;
+$kendo-info-content-contrast-2: null !default;
+$kendo-info-content-contrast-3: null !default;
+$kendo-info-content-contrast-4: null !default;
+$kendo-info-content-contrast-5: null !default;
+$kendo-info-content-contrast-6: null !default;
+$kendo-info-content-contrast-7: null !default;
+
+
+// Success
+$kendo-success-surface-contrast-1: null !default;
+$kendo-success-surface-contrast-2: null !default;
+$kendo-success-surface-contrast-3: null !default;
+$kendo-success-surface-contrast-4: null !default;
+$kendo-success-surface-contrast-5: null !default;
+$kendo-success-surface-contrast-6: null !default;
+$kendo-success-surface-contrast-7: null !default;
+
+$kendo-success-stroke-contrast-1: null !default;
+$kendo-success-stroke-contrast-2: null !default;
+$kendo-success-stroke-contrast-3: null !default;
+$kendo-success-stroke-contrast-4: null !default;
+$kendo-success-stroke-contrast-5: null !default;
+$kendo-success-stroke-contrast-6: null !default;
+$kendo-success-stroke-contrast-7: null !default;
+
+$kendo-success-content-contrast-1: null !default;
+$kendo-success-content-contrast-2: null !default;
+$kendo-success-content-contrast-3: null !default;
+$kendo-success-content-contrast-4: null !default;
+$kendo-success-content-contrast-5: null !default;
+$kendo-success-content-contrast-6: null !default;
+$kendo-success-content-contrast-7: null !default;
+
+
+// Warning
+$kendo-warning-surface-contrast-1: null !default;
+$kendo-warning-surface-contrast-2: null !default;
+$kendo-warning-surface-contrast-3: null !default;
+$kendo-warning-surface-contrast-4: null !default;
+$kendo-warning-surface-contrast-5: null !default;
+$kendo-warning-surface-contrast-6: null !default;
+$kendo-warning-surface-contrast-7: null !default;
+
+$kendo-warning-stroke-contrast-1: null !default;
+$kendo-warning-stroke-contrast-2: null !default;
+$kendo-warning-stroke-contrast-3: null !default;
+$kendo-warning-stroke-contrast-4: null !default;
+$kendo-warning-stroke-contrast-5: null !default;
+$kendo-warning-stroke-contrast-6: null !default;
+$kendo-warning-stroke-contrast-7: null !default;
+
+$kendo-warning-content-contrast-1: null !default;
+$kendo-warning-content-contrast-2: null !default;
+$kendo-warning-content-contrast-3: null !default;
+$kendo-warning-content-contrast-4: null !default;
+$kendo-warning-content-contrast-5: null !default;
+$kendo-warning-content-contrast-6: null !default;
+$kendo-warning-content-contrast-7: null !default;
+
+
+// Error
+$kendo-error-surface-contrast-1: null !default;
+$kendo-error-surface-contrast-2: null !default;
+$kendo-error-surface-contrast-3: null !default;
+$kendo-error-surface-contrast-4: null !default;
+$kendo-error-surface-contrast-5: null !default;
+$kendo-error-surface-contrast-6: null !default;
+$kendo-error-surface-contrast-7: null !default;
+
+$kendo-error-stroke-contrast-1: null !default;
+$kendo-error-stroke-contrast-2: null !default;
+$kendo-error-stroke-contrast-3: null !default;
+$kendo-error-stroke-contrast-4: null !default;
+$kendo-error-stroke-contrast-5: null !default;
+$kendo-error-stroke-contrast-6: null !default;
+$kendo-error-stroke-contrast-7: null !default;
+
+$kendo-error-content-contrast-1: null !default;
+$kendo-error-content-contrast-2: null !default;
+$kendo-error-content-contrast-3: null !default;
+$kendo-error-content-contrast-4: null !default;
+$kendo-error-content-contrast-5: null !default;
+$kendo-error-content-contrast-6: null !default;
+$kendo-error-content-contrast-7: null !default;
+
+
+$_kendo-base-surface-contrast-1: null;
+$_kendo-base-surface-contrast-2: null;
+$_kendo-base-surface-contrast-3: null;
+$_kendo-base-surface-contrast-4: null;
+$_kendo-base-surface-contrast-5: null;
+$_kendo-base-surface-contrast-6: null;
+$_kendo-base-surface-contrast-7: null;
+$_kendo-base-stroke-contrast-1: null;
+$_kendo-base-stroke-contrast-2: null;
+$_kendo-base-stroke-contrast-3: null;
+$_kendo-base-stroke-contrast-4: null;
+$_kendo-base-stroke-contrast-5: null;
+$_kendo-base-stroke-contrast-6: null;
+$_kendo-base-stroke-contrast-7: null;
+$_kendo-base-content-contrast-1: null;
+$_kendo-base-content-contrast-2: null;
+$_kendo-base-content-contrast-3: null;
+$_kendo-base-content-contrast-4: null;
+$_kendo-base-content-contrast-5: null;
+$_kendo-base-content-contrast-6: null;
+$_kendo-base-content-contrast-7: null;
+
+$_kendo-primary-surface-contrast-1: null;
+$_kendo-primary-surface-contrast-2: null;
+$_kendo-primary-surface-contrast-3: null;
+$_kendo-primary-surface-contrast-4: null;
+$_kendo-primary-surface-contrast-5: null;
+$_kendo-primary-surface-contrast-6: null;
+$_kendo-primary-surface-contrast-7: null;
+$_kendo-primary-stroke-contrast-1: null;
+$_kendo-primary-stroke-contrast-2: null;
+$_kendo-primary-stroke-contrast-3: null;
+$_kendo-primary-stroke-contrast-4: null;
+$_kendo-primary-stroke-contrast-5: null;
+$_kendo-primary-stroke-contrast-6: null;
+$_kendo-primary-stroke-contrast-7: null;
+$_kendo-primary-content-contrast-1: null;
+$_kendo-primary-content-contrast-2: null;
+$_kendo-primary-content-contrast-3: null;
+$_kendo-primary-content-contrast-4: null;
+$_kendo-primary-content-contrast-5: null;
+$_kendo-primary-content-contrast-6: null;
+$_kendo-primary-content-contrast-7: null;
+
+$_kendo-secondary-surface-contrast-1: null;
+$_kendo-secondary-surface-contrast-2: null;
+$_kendo-secondary-surface-contrast-3: null;
+$_kendo-secondary-surface-contrast-4: null;
+$_kendo-secondary-surface-contrast-5: null;
+$_kendo-secondary-surface-contrast-6: null;
+$_kendo-secondary-surface-contrast-7: null;
+$_kendo-secondary-stroke-contrast-1: null;
+$_kendo-secondary-stroke-contrast-2: null;
+$_kendo-secondary-stroke-contrast-3: null;
+$_kendo-secondary-stroke-contrast-4: null;
+$_kendo-secondary-stroke-contrast-5: null;
+$_kendo-secondary-stroke-contrast-6: null;
+$_kendo-secondary-stroke-contrast-7: null;
+$_kendo-secondary-content-contrast-1: null;
+$_kendo-secondary-content-contrast-2: null;
+$_kendo-secondary-content-contrast-3: null;
+$_kendo-secondary-content-contrast-4: null;
+$_kendo-secondary-content-contrast-5: null;
+$_kendo-secondary-content-contrast-6: null;
+$_kendo-secondary-content-contrast-7: null;
+
+$_kendo-tertiary-surface-contrast-1: null;
+$_kendo-tertiary-surface-contrast-2: null;
+$_kendo-tertiary-surface-contrast-3: null;
+$_kendo-tertiary-surface-contrast-4: null;
+$_kendo-tertiary-surface-contrast-5: null;
+$_kendo-tertiary-surface-contrast-6: null;
+$_kendo-tertiary-surface-contrast-7: null;
+$_kendo-tertiary-stroke-contrast-1: null;
+$_kendo-tertiary-stroke-contrast-2: null;
+$_kendo-tertiary-stroke-contrast-3: null;
+$_kendo-tertiary-stroke-contrast-4: null;
+$_kendo-tertiary-stroke-contrast-5: null;
+$_kendo-tertiary-stroke-contrast-6: null;
+$_kendo-tertiary-stroke-contrast-7: null;
+$_kendo-tertiary-content-contrast-1: null;
+$_kendo-tertiary-content-contrast-2: null;
+$_kendo-tertiary-content-contrast-3: null;
+$_kendo-tertiary-content-contrast-4: null;
+$_kendo-tertiary-content-contrast-5: null;
+$_kendo-tertiary-content-contrast-6: null;
+$_kendo-tertiary-content-contrast-7: null;
+
+$_kendo-info-surface-contrast-1: null;
+$_kendo-info-surface-contrast-2: null;
+$_kendo-info-surface-contrast-3: null;
+$_kendo-info-surface-contrast-4: null;
+$_kendo-info-surface-contrast-5: null;
+$_kendo-info-surface-contrast-6: null;
+$_kendo-info-surface-contrast-7: null;
+$_kendo-info-stroke-contrast-1: null;
+$_kendo-info-stroke-contrast-2: null;
+$_kendo-info-stroke-contrast-3: null;
+$_kendo-info-stroke-contrast-4: null;
+$_kendo-info-stroke-contrast-5: null;
+$_kendo-info-stroke-contrast-6: null;
+$_kendo-info-stroke-contrast-7: null;
+$_kendo-info-content-contrast-1: null;
+$_kendo-info-content-contrast-2: null;
+$_kendo-info-content-contrast-3: null;
+$_kendo-info-content-contrast-4: null;
+$_kendo-info-content-contrast-5: null;
+$_kendo-info-content-contrast-6: null;
+$_kendo-info-content-contrast-7: null;
+
+$_kendo-success-surface-contrast-1: null;
+$_kendo-success-surface-contrast-2: null;
+$_kendo-success-surface-contrast-3: null;
+$_kendo-success-surface-contrast-4: null;
+$_kendo-success-surface-contrast-5: null;
+$_kendo-success-surface-contrast-6: null;
+$_kendo-success-surface-contrast-7: null;
+$_kendo-success-stroke-contrast-1: null;
+$_kendo-success-stroke-contrast-2: null;
+$_kendo-success-stroke-contrast-3: null;
+$_kendo-success-stroke-contrast-4: null;
+$_kendo-success-stroke-contrast-5: null;
+$_kendo-success-stroke-contrast-6: null;
+$_kendo-success-stroke-contrast-7: null;
+$_kendo-success-content-contrast-1: null;
+$_kendo-success-content-contrast-2: null;
+$_kendo-success-content-contrast-3: null;
+$_kendo-success-content-contrast-4: null;
+$_kendo-success-content-contrast-5: null;
+$_kendo-success-content-contrast-6: null;
+$_kendo-success-content-contrast-7: null;
+
+$_kendo-warning-surface-contrast-1: null;
+$_kendo-warning-surface-contrast-2: null;
+$_kendo-warning-surface-contrast-3: null;
+$_kendo-warning-surface-contrast-4: null;
+$_kendo-warning-surface-contrast-5: null;
+$_kendo-warning-surface-contrast-6: null;
+$_kendo-warning-surface-contrast-7: null;
+$_kendo-warning-stroke-contrast-1: null;
+$_kendo-warning-stroke-contrast-2: null;
+$_kendo-warning-stroke-contrast-3: null;
+$_kendo-warning-stroke-contrast-4: null;
+$_kendo-warning-stroke-contrast-5: null;
+$_kendo-warning-stroke-contrast-6: null;
+$_kendo-warning-stroke-contrast-7: null;
+$_kendo-warning-content-contrast-1: null;
+$_kendo-warning-content-contrast-2: null;
+$_kendo-warning-content-contrast-3: null;
+$_kendo-warning-content-contrast-4: null;
+$_kendo-warning-content-contrast-5: null;
+$_kendo-warning-content-contrast-6: null;
+$_kendo-warning-content-contrast-7: null;
+
+$_kendo-error-surface-contrast-1: null;
+$_kendo-error-surface-contrast-2: null;
+$_kendo-error-surface-contrast-3: null;
+$_kendo-error-surface-contrast-4: null;
+$_kendo-error-surface-contrast-5: null;
+$_kendo-error-surface-contrast-6: null;
+$_kendo-error-surface-contrast-7: null;
+$_kendo-error-stroke-contrast-1: null;
+$_kendo-error-stroke-contrast-2: null;
+$_kendo-error-stroke-contrast-3: null;
+$_kendo-error-stroke-contrast-4: null;
+$_kendo-error-stroke-contrast-5: null;
+$_kendo-error-stroke-contrast-6: null;
+$_kendo-error-stroke-contrast-7: null;
+$_kendo-error-content-contrast-1: null;
+$_kendo-error-content-contrast-2: null;
+$_kendo-error-content-contrast-3: null;
+$_kendo-error-content-contrast-4: null;
+$_kendo-error-content-contrast-5: null;
+$_kendo-error-content-contrast-6: null;
+$_kendo-error-content-contrast-7: null;
 
 
 @if ($kendo-new-colors) {
     $kendo-theme-palette: (
-        kendo-disabled-text: $kendo-disabled-text,
-        kendo-disabled-bg: $kendo-disabled-bg,
-        kendo-disabled-border: $kendo-disabled-border,
-        kendo-focus-outline: $kendo-focus-outline,
-        kendo-color-primary: $kendo-color-primary,
-        kendo-color-primary-rgb: k-hex-to-rgb($kendo-color-primary),
-        kendo-color-primary-text: $kendo-color-primary-text,
-        kendo-color-primary-text-contrast: $kendo-color-primary-text-contrast,
-        kendo-color-primary-text-rgb: k-text-to-rgb($kendo-color-primary-text),
-        kendo-color-primary-hover: $kendo-color-primary-hover,
-        kendo-color-primary-active: $kendo-color-primary-active,
-        kendo-color-primary-active-rgb: k-hex-to-rgb($kendo-color-primary-active),
-        kendo-color-primary-selected: $kendo-color-primary-selected,
-        kendo-color-primary-focus: $kendo-color-primary-focus,
-        kendo-color-primary-light: $kendo-color-primary-light,
-        kendo-color-primary-light-alt: $kendo-color-primary-light-alt,
-        kendo-color-primary-light-mix: $kendo-color-primary-light-mix,
-        kendo-color-primary-pale: $kendo-color-primary-pale,
-        kendo-color-primary-dim: $kendo-color-primary-dim,
-        kendo-color-primary-shaded: $kendo-color-primary-shaded,
-        kendo-color-base: $kendo-color-base,
-        kendo-color-base-rgb: k-hex-to-rgb($kendo-color-base),
-        kendo-color-base-text: $kendo-color-base-text,
-        kendo-color-base-text-contrast: $kendo-color-base-text-contrast,
-        kendo-color-base-text-lighter: $kendo-color-base-text-lighter,
-        kendo-color-base-text-pale: $kendo-color-base-text-pale,
-        kendo-color-base-text-rgb: k-hex-to-rgb($kendo-color-base-text),
-        kendo-color-base-hover: $kendo-color-base-hover,
-        kendo-color-base-active: $kendo-color-base-active,
-        kendo-color-base-selected: $kendo-color-base-selected,
-        kendo-color-base-focus: $kendo-color-base-focus,
-        kendo-color-base-lighter: $kendo-color-base-lighter,
-        kendo-color-base-shaded: $kendo-color-base-shaded,
-        kendo-color-secondary: $kendo-color-secondary,
-        kendo-color-secondary-rgb: k-hex-to-rgb($kendo-color-secondary),
-        kendo-color-secondary-text: $kendo-color-secondary-text,
-        kendo-color-secondary-text-rgb: k-text-to-rgb($kendo-color-secondary-text),
-        kendo-color-secondary-hover: $kendo-color-secondary-hover,
-        kendo-color-secondary-active: $kendo-color-secondary-active,
-        kendo-color-secondary-selected: $kendo-color-secondary-selected,
-        kendo-color-secondary-focus: $kendo-color-secondary-focus,
-        kendo-color-tertiary: $kendo-color-tertiary,
-        kendo-color-tertiary-rgb: k-hex-to-rgb($kendo-color-tertiary),
-        kendo-color-tertiary-text: $kendo-color-tertiary-text,
-        kendo-color-tertiary-text-rgb: k-text-to-rgb($kendo-color-tertiary-text),
-        kendo-color-tertiary-hover: $kendo-color-tertiary-hover,
-        kendo-color-tertiary-active: $kendo-color-tertiary-active,
-        kendo-color-tertiary-selected: $kendo-color-tertiary-selected,
-        kendo-color-tertiary-focus: $kendo-color-tertiary-focus,
-        kendo-color-info: $kendo-color-info,
-        kendo-color-info-rgb: k-hex-to-rgb($kendo-color-info),
-        kendo-color-info-text: $kendo-color-info-text,
-        kendo-color-info-text-rgb: k-text-to-rgb($kendo-color-info-text),
-        kendo-color-info-hover: $kendo-color-info-hover,
-        kendo-color-info-active: $kendo-color-info-active,
-        kendo-color-info-selected: $kendo-color-info-selected,
-        kendo-color-info-focus: $kendo-color-info-focus,
-        kendo-color-success: $kendo-color-success,
-        kendo-color-success-rgb: k-hex-to-rgb($kendo-color-success),
-        kendo-color-success-text: $kendo-color-success-text,
-        kendo-color-success-text-rgb: k-text-to-rgb($kendo-color-success-text),
-        kendo-color-success-hover: $kendo-color-success-hover,
-        kendo-color-success-active: $kendo-color-success-active,
-        kendo-color-success-selected: $kendo-color-success-selected,
-        kendo-color-success-focus: $kendo-color-success-focus,
-        kendo-color-success-dim: $kendo-color-success-dim,
-        kendo-color-warning: $kendo-color-warning,
-        kendo-color-warning-rgb: k-hex-to-rgb($kendo-color-warning),
-        kendo-color-warning-text: $kendo-color-warning-text,
-        kendo-color-warning-text-rgb: k-text-to-rgb($kendo-color-warning-text),
-        kendo-color-warning-hover: $kendo-color-warning-hover,
-        kendo-color-warning-active: $kendo-color-warning-active,
-        kendo-color-warning-selected: $kendo-color-warning-selected,
-        kendo-color-warning-focus: $kendo-color-warning-focus,
-        kendo-color-error: $kendo-color-error,
-        kendo-color-error-rgb: k-hex-to-rgb($kendo-color-error),
-        kendo-color-error-text: $kendo-color-error-text,
-        kendo-color-error-text-rgb: k-text-to-rgb($kendo-color-error-text),
-        kendo-color-error-hover: $kendo-color-error-hover,
-        kendo-color-error-active: $kendo-color-error-active,
-        kendo-color-error-selected: $kendo-color-error-selected,
-        kendo-color-error-focus: $kendo-color-error-focus,
-        kendo-color-error-dim: $kendo-color-error-dim,
-        kendo-color-light: $kendo-color-light,
-        kendo-color-light-rgb: k-hex-to-rgb($kendo-color-light),
-        kendo-color-light-text: $kendo-color-light-text,
-        kendo-color-light-text-rgb: k-text-to-rgb($kendo-color-light-text),
-        kendo-color-light-hover: $kendo-color-light-hover,
-        kendo-color-light-active: $kendo-color-light-active,
-        kendo-color-light-selected: $kendo-color-light-selected,
-        kendo-color-light-focus: $kendo-color-light-focus,
-        kendo-color-dark: $kendo-color-dark,
-        kendo-color-dark-rgb: k-hex-to-rgb($kendo-color-dark),
-        kendo-color-dark-text: $kendo-color-dark-text,
-        kendo-color-dark-text-rgb: k-text-to-rgb($kendo-color-dark-text),
-        kendo-color-dark-hover: $kendo-color-dark-hover,
-        kendo-color-dark-active: $kendo-color-dark-active,
-        kendo-color-dark-selected: $kendo-color-dark-selected,
-        kendo-color-dark-focus: $kendo-color-dark-focus,
-        kendo-color-inverse: $kendo-color-inverse,
-        kendo-color-inverse-rgb: k-hex-to-rgb($kendo-color-inverse),
-        kendo-color-inverse-text: $kendo-color-inverse-text,
-        kendo-color-inverse-text-rgb: k-text-to-rgb($kendo-color-inverse-text),
-        kendo-color-inverse-hover: $kendo-color-inverse-hover,
-        kendo-color-inverse-active: $kendo-color-inverse-active,
-        kendo-color-inverse-selected: $kendo-color-inverse-selected,
-        kendo-color-inverse-focus: $kendo-color-inverse-focus,
-        kendo-body-bg: $kendo-body-bg,
-        kendo-body-bg-contrast: $kendo-body-bg-contrast,
-        kendo-body-bg-contrast-rgb: k-hex-to-rgb($kendo-body-bg-contrast),
-        kendo-body-bg-pale: $kendo-body-bg-pale,
-        kendo-body-bg-dim: $kendo-body-bg-dim,
-        kendo-body-text: $kendo-body-text,
-        kendo-body-text-rgb: k-hex-to-rgb($kendo-body-text),
-        kendo-body-text-pale: $kendo-body-text-pale,
-        kendo-body-text-dim: $kendo-body-text-dim,
-        kendo-body-text-lighter: $kendo-body-text-lighter,
-        kendo-body-text-light: $kendo-body-text-light,
-        kendo-body-text-darker: $kendo-body-text-darker,
-        kendo-body-hover: $kendo-body-hover,
-        kendo-body-darken: $kendo-body-darken,
-        kendo-body-shaded: $kendo-body-shaded,
-        kendo-base-bg: $kendo-base-bg,
-        kendo-base-text: $kendo-base-text,
-        kendo-base-hover: $kendo-base-hover,
-        kendo-color-border: $kendo-color-border,
-        kendo-color-border-rgb: k-hex-to-rgb($kendo-color-border),
-        kendo-color-border-hover: $kendo-color-border-hover,
-        kendo-color-border-hover-rgb: k-hex-to-rgb($kendo-color-border-hover),
-        kendo-color-border-focus: $kendo-color-border-focus,
-        kendo-color-border-focus-rgb: k-hex-to-rgb($kendo-color-border-focus),
+        kendo-base-surface-contrast-1: $kendo-base-surface-contrast-1,
+        kendo-base-surface-contrast-1-rgb: k-hex-to-rgb($kendo-base-surface-contrast-1),
+        kendo-base-surface-contrast-2: $kendo-base-surface-contrast-2,
+        kendo-base-surface-contrast-2-rgb: k-hex-to-rgb($kendo-base-surface-contrast-2),
+        kendo-base-surface-contrast-3: $kendo-base-surface-contrast-3,
+        kendo-base-surface-contrast-3-rgb: k-hex-to-rgb($kendo-base-surface-contrast-3),
+        kendo-base-surface-contrast-4: $kendo-base-surface-contrast-4,
+        kendo-base-surface-contrast-4-rgb: k-hex-to-rgb($kendo-base-surface-contrast-4),
+        kendo-base-surface-contrast-5: $kendo-base-surface-contrast-5,
+        kendo-base-surface-contrast-5-rgb: k-hex-to-rgb($kendo-base-surface-contrast-5),
+        kendo-base-surface-contrast-6: $kendo-base-surface-contrast-6,
+        kendo-base-surface-contrast-6-rgb: k-hex-to-rgb($kendo-base-surface-contrast-6),
+        kendo-base-surface-contrast-7: $kendo-base-surface-contrast-7,
+        kendo-base-surface-contrast-7-rgb: k-hex-to-rgb($kendo-base-surface-contrast-7),
+        kendo-base-stroke-contrast-1: $kendo-base-stroke-contrast-1,
+        kendo-base-stroke-contrast-1-rgb: k-hex-to-rgb($kendo-base-stroke-contrast-1),
+        kendo-base-stroke-contrast-2: $kendo-base-stroke-contrast-2,
+        kendo-base-stroke-contrast-2-rgb: k-hex-to-rgb($kendo-base-stroke-contrast-2),
+        kendo-base-stroke-contrast-3: $kendo-base-stroke-contrast-3,
+        kendo-base-stroke-contrast-3-rgb: k-hex-to-rgb($kendo-base-stroke-contrast-3),
+        kendo-base-stroke-contrast-4: $kendo-base-stroke-contrast-4,
+        kendo-base-stroke-contrast-4-rgb: k-hex-to-rgb($kendo-base-stroke-contrast-4),
+        kendo-base-stroke-contrast-5: $kendo-base-stroke-contrast-5,
+        kendo-base-stroke-contrast-5-rgb: k-hex-to-rgb($kendo-base-stroke-contrast-5),
+        kendo-base-stroke-contrast-6: $kendo-base-stroke-contrast-6,
+        kendo-base-stroke-contrast-6-rgb: k-hex-to-rgb($kendo-base-stroke-contrast-6),
+        kendo-base-stroke-contrast-7: $kendo-base-stroke-contrast-7,
+        kendo-base-stroke-contrast-7-rgb: k-hex-to-rgb($kendo-base-stroke-contrast-7),
+        kendo-base-content-contrast-1: $kendo-base-content-contrast-1,
+        kendo-base-content-contrast-1-rgb: k-hex-to-rgb($kendo-base-content-contrast-1),
+        kendo-base-content-contrast-2: $kendo-base-content-contrast-2,
+        kendo-base-content-contrast-2-rgb: k-hex-to-rgb($kendo-base-content-contrast-2),
+        kendo-base-content-contrast-3: $kendo-base-content-contrast-3,
+        kendo-base-content-contrast-3-rgb: k-hex-to-rgb($kendo-base-content-contrast-3),
+        kendo-base-content-contrast-4: $kendo-base-content-contrast-4,
+        kendo-base-content-contrast-4-rgb: k-hex-to-rgb($kendo-base-content-contrast-4),
+        kendo-base-content-contrast-5: $kendo-base-content-contrast-5,
+        kendo-base-content-contrast-5-rgb: k-hex-to-rgb($kendo-base-content-contrast-5),
+        kendo-base-content-contrast-6: $kendo-base-content-contrast-6,
+        kendo-base-content-contrast-6-rgb: k-hex-to-rgb($kendo-base-content-contrast-6),
+        kendo-base-content-contrast-7: $kendo-base-content-contrast-7,
+        kendo-base-content-contrast-7-rgb: k-hex-to-rgb($kendo-base-content-contrast-7),
+        kendo-primary-surface-contrast-1: $kendo-primary-surface-contrast-1,
+        kendo-primary-surface-contrast-1-rgb: k-hex-to-rgb($kendo-primary-surface-contrast-1),
+        kendo-primary-surface-contrast-2: $kendo-primary-surface-contrast-2,
+        kendo-primary-surface-contrast-2-rgb: k-hex-to-rgb($kendo-primary-surface-contrast-2),
+        kendo-primary-surface-contrast-3: $kendo-primary-surface-contrast-3,
+        kendo-primary-surface-contrast-3-rgb: k-hex-to-rgb($kendo-primary-surface-contrast-3),
+        kendo-primary-surface-contrast-4: $kendo-primary-surface-contrast-4,
+        kendo-primary-surface-contrast-4-rgb: k-hex-to-rgb($kendo-primary-surface-contrast-4),
+        kendo-primary-surface-contrast-5: $kendo-primary-surface-contrast-5,
+        kendo-primary-surface-contrast-5-rgb: k-hex-to-rgb($kendo-primary-surface-contrast-5),
+        kendo-primary-surface-contrast-6: $kendo-primary-surface-contrast-6,
+        kendo-primary-surface-contrast-6-rgb: k-hex-to-rgb($kendo-primary-surface-contrast-6),
+        kendo-primary-surface-contrast-7: $kendo-primary-surface-contrast-7,
+        kendo-primary-surface-contrast-7-rgb: k-hex-to-rgb($kendo-primary-surface-contrast-7),
+        kendo-primary-stroke-contrast-1: $kendo-primary-stroke-contrast-1,
+        kendo-primary-stroke-contrast-1-rgb: k-hex-to-rgb($kendo-primary-stroke-contrast-1),
+        kendo-primary-stroke-contrast-2: $kendo-primary-stroke-contrast-2,
+        kendo-primary-stroke-contrast-2-rgb: k-hex-to-rgb($kendo-primary-stroke-contrast-2),
+        kendo-primary-stroke-contrast-3: $kendo-primary-stroke-contrast-3,
+        kendo-primary-stroke-contrast-3-rgb: k-hex-to-rgb($kendo-primary-stroke-contrast-3),
+        kendo-primary-stroke-contrast-4: $kendo-primary-stroke-contrast-4,
+        kendo-primary-stroke-contrast-4-rgb: k-hex-to-rgb($kendo-primary-stroke-contrast-4),
+        kendo-primary-stroke-contrast-5: $kendo-primary-stroke-contrast-5,
+        kendo-primary-stroke-contrast-5-rgb: k-hex-to-rgb($kendo-primary-stroke-contrast-5),
+        kendo-primary-stroke-contrast-6: $kendo-primary-stroke-contrast-6,
+        kendo-primary-stroke-contrast-6-rgb: k-hex-to-rgb($kendo-primary-stroke-contrast-6),
+        kendo-primary-stroke-contrast-7: $kendo-primary-stroke-contrast-7,
+        kendo-primary-stroke-contrast-7-rgb: k-hex-to-rgb($kendo-primary-stroke-contrast-7),
+        kendo-primary-content-contrast-1: $kendo-primary-content-contrast-1,
+        kendo-primary-content-contrast-1-rgb: k-hex-to-rgb($kendo-primary-content-contrast-1),
+        kendo-primary-content-contrast-2: $kendo-primary-content-contrast-2,
+        kendo-primary-content-contrast-2-rgb: k-hex-to-rgb($kendo-primary-content-contrast-2),
+        kendo-primary-content-contrast-3: $kendo-primary-content-contrast-3,
+        kendo-primary-content-contrast-3-rgb: k-hex-to-rgb($kendo-primary-content-contrast-3),
+        kendo-primary-content-contrast-4: $kendo-primary-content-contrast-4,
+        kendo-primary-content-contrast-4-rgb: k-hex-to-rgb($kendo-primary-content-contrast-4),
+        kendo-primary-content-contrast-5: $kendo-primary-content-contrast-5,
+        kendo-primary-content-contrast-5-rgb: k-hex-to-rgb($kendo-primary-content-contrast-5),
+        kendo-primary-content-contrast-6: $kendo-primary-content-contrast-6,
+        kendo-primary-content-contrast-6-rgb: k-hex-to-rgb($kendo-primary-content-contrast-6),
+        kendo-primary-content-contrast-7: $kendo-primary-content-contrast-7,
+        kendo-primary-content-contrast-7-rgb: k-hex-to-rgb($kendo-primary-content-contrast-7),
+        kendo-secondary-surface-contrast-1: $kendo-secondary-surface-contrast-1,
+        kendo-secondary-surface-contrast-1-rgb: k-hex-to-rgb($kendo-secondary-surface-contrast-1),
+        kendo-secondary-surface-contrast-2: $kendo-secondary-surface-contrast-2,
+        kendo-secondary-surface-contrast-2-rgb: k-hex-to-rgb($kendo-secondary-surface-contrast-2),
+        kendo-secondary-surface-contrast-3: $kendo-secondary-surface-contrast-3,
+        kendo-secondary-surface-contrast-3-rgb: k-hex-to-rgb($kendo-secondary-surface-contrast-3),
+        kendo-secondary-surface-contrast-4: $kendo-secondary-surface-contrast-4,
+        kendo-secondary-surface-contrast-4-rgb: k-hex-to-rgb($kendo-secondary-surface-contrast-4),
+        kendo-secondary-surface-contrast-5: $kendo-secondary-surface-contrast-5,
+        kendo-secondary-surface-contrast-5-rgb: k-hex-to-rgb($kendo-secondary-surface-contrast-5),
+        kendo-secondary-surface-contrast-6: $kendo-secondary-surface-contrast-6,
+        kendo-secondary-surface-contrast-6-rgb: k-hex-to-rgb($kendo-secondary-surface-contrast-6),
+        kendo-secondary-surface-contrast-7: $kendo-secondary-surface-contrast-7,
+        kendo-secondary-surface-contrast-7-rgb: k-hex-to-rgb($kendo-secondary-surface-contrast-7),
+        kendo-secondary-stroke-contrast-1: $kendo-secondary-stroke-contrast-1,
+        kendo-secondary-stroke-contrast-1-rgb: k-hex-to-rgb($kendo-secondary-stroke-contrast-1),
+        kendo-secondary-stroke-contrast-2: $kendo-secondary-stroke-contrast-2,
+        kendo-secondary-stroke-contrast-2-rgb: k-hex-to-rgb($kendo-secondary-stroke-contrast-2),
+        kendo-secondary-stroke-contrast-3: $kendo-secondary-stroke-contrast-3,
+        kendo-secondary-stroke-contrast-3-rgb: k-hex-to-rgb($kendo-secondary-stroke-contrast-3),
+        kendo-secondary-stroke-contrast-4: $kendo-secondary-stroke-contrast-4,
+        kendo-secondary-stroke-contrast-4-rgb: k-hex-to-rgb($kendo-secondary-stroke-contrast-4),
+        kendo-secondary-stroke-contrast-5: $kendo-secondary-stroke-contrast-5,
+        kendo-secondary-stroke-contrast-5-rgb: k-hex-to-rgb($kendo-secondary-stroke-contrast-5),
+        kendo-secondary-stroke-contrast-6: $kendo-secondary-stroke-contrast-6,
+        kendo-secondary-stroke-contrast-6-rgb: k-hex-to-rgb($kendo-secondary-stroke-contrast-6),
+        kendo-secondary-stroke-contrast-7: $kendo-secondary-stroke-contrast-7,
+        kendo-secondary-stroke-contrast-7-rgb: k-hex-to-rgb($kendo-secondary-stroke-contrast-7),
+        kendo-secondary-content-contrast-1: $kendo-secondary-content-contrast-1,
+        kendo-secondary-content-contrast-1-rgb: k-hex-to-rgb($kendo-secondary-content-contrast-1),
+        kendo-secondary-content-contrast-2: $kendo-secondary-content-contrast-2,
+        kendo-secondary-content-contrast-2-rgb: k-hex-to-rgb($kendo-secondary-content-contrast-2),
+        kendo-secondary-content-contrast-3: $kendo-secondary-content-contrast-3,
+        kendo-secondary-content-contrast-3-rgb: k-hex-to-rgb($kendo-secondary-content-contrast-3),
+        kendo-secondary-content-contrast-4: $kendo-secondary-content-contrast-4,
+        kendo-secondary-content-contrast-4-rgb: k-hex-to-rgb($kendo-secondary-content-contrast-4),
+        kendo-secondary-content-contrast-5: $kendo-secondary-content-contrast-5,
+        kendo-secondary-content-contrast-5-rgb: k-hex-to-rgb($kendo-secondary-content-contrast-5),
+        kendo-secondary-content-contrast-6: $kendo-secondary-content-contrast-6,
+        kendo-secondary-content-contrast-6-rgb: k-hex-to-rgb($kendo-secondary-content-contrast-6),
+        kendo-secondary-content-contrast-7: $kendo-secondary-content-contrast-7,
+        kendo-secondary-content-contrast-7-rgb: k-hex-to-rgb($kendo-secondary-content-contrast-7),
+        kendo-tertiary-surface-contrast-1: $kendo-tertiary-surface-contrast-1,
+        kendo-tertiary-surface-contrast-1-rgb: k-hex-to-rgb($kendo-tertiary-surface-contrast-1),
+        kendo-tertiary-surface-contrast-2: $kendo-tertiary-surface-contrast-2,
+        kendo-tertiary-surface-contrast-2-rgb: k-hex-to-rgb($kendo-tertiary-surface-contrast-2),
+        kendo-tertiary-surface-contrast-3: $kendo-tertiary-surface-contrast-3,
+        kendo-tertiary-surface-contrast-3-rgb: k-hex-to-rgb($kendo-tertiary-surface-contrast-3),
+        kendo-tertiary-surface-contrast-4: $kendo-tertiary-surface-contrast-4,
+        kendo-tertiary-surface-contrast-4-rgb: k-hex-to-rgb($kendo-tertiary-surface-contrast-4),
+        kendo-tertiary-surface-contrast-5: $kendo-tertiary-surface-contrast-5,
+        kendo-tertiary-surface-contrast-5-rgb: k-hex-to-rgb($kendo-tertiary-surface-contrast-5),
+        kendo-tertiary-surface-contrast-6: $kendo-tertiary-surface-contrast-6,
+        kendo-tertiary-surface-contrast-6-rgb: k-hex-to-rgb($kendo-tertiary-surface-contrast-6),
+        kendo-tertiary-surface-contrast-7: $kendo-tertiary-surface-contrast-7,
+        kendo-tertiary-surface-contrast-7-rgb: k-hex-to-rgb($kendo-tertiary-surface-contrast-7),
+        kendo-tertiary-stroke-contrast-1: $kendo-tertiary-stroke-contrast-1,
+        kendo-tertiary-stroke-contrast-1-rgb: k-hex-to-rgb($kendo-tertiary-stroke-contrast-1),
+        kendo-tertiary-stroke-contrast-2: $kendo-tertiary-stroke-contrast-2,
+        kendo-tertiary-stroke-contrast-2-rgb: k-hex-to-rgb($kendo-tertiary-stroke-contrast-2),
+        kendo-tertiary-stroke-contrast-3: $kendo-tertiary-stroke-contrast-3,
+        kendo-tertiary-stroke-contrast-3-rgb: k-hex-to-rgb($kendo-tertiary-stroke-contrast-3),
+        kendo-tertiary-stroke-contrast-4: $kendo-tertiary-stroke-contrast-4,
+        kendo-tertiary-stroke-contrast-4-rgb: k-hex-to-rgb($kendo-tertiary-stroke-contrast-4),
+        kendo-tertiary-stroke-contrast-5: $kendo-tertiary-stroke-contrast-5,
+        kendo-tertiary-stroke-contrast-5-rgb: k-hex-to-rgb($kendo-tertiary-stroke-contrast-5),
+        kendo-tertiary-stroke-contrast-6: $kendo-tertiary-stroke-contrast-6,
+        kendo-tertiary-stroke-contrast-6-rgb: k-hex-to-rgb($kendo-tertiary-stroke-contrast-6),
+        kendo-tertiary-stroke-contrast-7: $kendo-tertiary-stroke-contrast-7,
+        kendo-tertiary-stroke-contrast-7-rgb: k-hex-to-rgb($kendo-tertiary-stroke-contrast-7),
+        kendo-tertiary-content-contrast-1: $kendo-tertiary-content-contrast-1,
+        kendo-tertiary-content-contrast-1-rgb: k-hex-to-rgb($kendo-tertiary-content-contrast-1),
+        kendo-tertiary-content-contrast-2: $kendo-tertiary-content-contrast-2,
+        kendo-tertiary-content-contrast-2-rgb: k-hex-to-rgb($kendo-tertiary-content-contrast-2),
+        kendo-tertiary-content-contrast-3: $kendo-tertiary-content-contrast-3,
+        kendo-tertiary-content-contrast-3-rgb: k-hex-to-rgb($kendo-tertiary-content-contrast-3),
+        kendo-tertiary-content-contrast-4: $kendo-tertiary-content-contrast-4,
+        kendo-tertiary-content-contrast-4-rgb: k-hex-to-rgb($kendo-tertiary-content-contrast-4),
+        kendo-tertiary-content-contrast-5: $kendo-tertiary-content-contrast-5,
+        kendo-tertiary-content-contrast-5-rgb: k-hex-to-rgb($kendo-tertiary-content-contrast-5),
+        kendo-tertiary-content-contrast-6: $kendo-tertiary-content-contrast-6,
+        kendo-tertiary-content-contrast-6-rgb: k-hex-to-rgb($kendo-tertiary-content-contrast-6),
+        kendo-tertiary-content-contrast-7: $kendo-tertiary-content-contrast-7,
+        kendo-tertiary-content-contrast-7-rgb: k-hex-to-rgb($kendo-tertiary-content-contrast-7),
+        kendo-info-surface-contrast-1: $kendo-info-surface-contrast-1,
+        kendo-info-surface-contrast-1-rgb: k-hex-to-rgb($kendo-info-surface-contrast-1),
+        kendo-info-surface-contrast-2: $kendo-info-surface-contrast-2,
+        kendo-info-surface-contrast-2-rgb: k-hex-to-rgb($kendo-info-surface-contrast-2),
+        kendo-info-surface-contrast-3: $kendo-info-surface-contrast-3,
+        kendo-info-surface-contrast-3-rgb: k-hex-to-rgb($kendo-info-surface-contrast-3),
+        kendo-info-surface-contrast-4: $kendo-info-surface-contrast-4,
+        kendo-info-surface-contrast-4-rgb: k-hex-to-rgb($kendo-info-surface-contrast-4),
+        kendo-info-surface-contrast-5: $kendo-info-surface-contrast-5,
+        kendo-info-surface-contrast-5-rgb: k-hex-to-rgb($kendo-info-surface-contrast-5),
+        kendo-info-surface-contrast-6: $kendo-info-surface-contrast-6,
+        kendo-info-surface-contrast-6-rgb: k-hex-to-rgb($kendo-info-surface-contrast-6),
+        kendo-info-surface-contrast-7: $kendo-info-surface-contrast-7,
+        kendo-info-surface-contrast-7-rgb: k-hex-to-rgb($kendo-info-surface-contrast-7),
+        kendo-info-stroke-contrast-1: $kendo-info-stroke-contrast-1,
+        kendo-info-stroke-contrast-1-rgb: k-hex-to-rgb($kendo-info-stroke-contrast-1),
+        kendo-info-stroke-contrast-2: $kendo-info-stroke-contrast-2,
+        kendo-info-stroke-contrast-2-rgb: k-hex-to-rgb($kendo-info-stroke-contrast-2),
+        kendo-info-stroke-contrast-3: $kendo-info-stroke-contrast-3,
+        kendo-info-stroke-contrast-3-rgb: k-hex-to-rgb($kendo-info-stroke-contrast-3),
+        kendo-info-stroke-contrast-4: $kendo-info-stroke-contrast-4,
+        kendo-info-stroke-contrast-4-rgb: k-hex-to-rgb($kendo-info-stroke-contrast-4),
+        kendo-info-stroke-contrast-5: $kendo-info-stroke-contrast-5,
+        kendo-info-stroke-contrast-5-rgb: k-hex-to-rgb($kendo-info-stroke-contrast-5),
+        kendo-info-stroke-contrast-6: $kendo-info-stroke-contrast-6,
+        kendo-info-stroke-contrast-6-rgb: k-hex-to-rgb($kendo-info-stroke-contrast-6),
+        kendo-info-stroke-contrast-7: $kendo-info-stroke-contrast-7,
+        kendo-info-stroke-contrast-7-rgb: k-hex-to-rgb($kendo-info-stroke-contrast-7),
+        kendo-info-content-contrast-1: $kendo-info-content-contrast-1,
+        kendo-info-content-contrast-1-rgb: k-hex-to-rgb($kendo-info-content-contrast-1),
+        kendo-info-content-contrast-2: $kendo-info-content-contrast-2,
+        kendo-info-content-contrast-2-rgb: k-hex-to-rgb($kendo-info-content-contrast-2),
+        kendo-info-content-contrast-3: $kendo-info-content-contrast-3,
+        kendo-info-content-contrast-3-rgb: k-hex-to-rgb($kendo-info-content-contrast-3),
+        kendo-info-content-contrast-4: $kendo-info-content-contrast-4,
+        kendo-info-content-contrast-4-rgb: k-hex-to-rgb($kendo-info-content-contrast-4),
+        kendo-info-content-contrast-5: $kendo-info-content-contrast-5,
+        kendo-info-content-contrast-5-rgb: k-hex-to-rgb($kendo-info-content-contrast-5),
+        kendo-info-content-contrast-6: $kendo-info-content-contrast-6,
+        kendo-info-content-contrast-6-rgb: k-hex-to-rgb($kendo-info-content-contrast-6),
+        kendo-info-content-contrast-7: $kendo-info-content-contrast-7,
+        kendo-info-content-contrast-7-rgb: k-hex-to-rgb($kendo-info-content-contrast-7),
+        kendo-success-surface-contrast-1: $kendo-success-surface-contrast-1,
+        kendo-success-surface-contrast-1-rgb: k-hex-to-rgb($kendo-success-surface-contrast-1),
+        kendo-success-surface-contrast-2: $kendo-success-surface-contrast-2,
+        kendo-success-surface-contrast-2-rgb: k-hex-to-rgb($kendo-success-surface-contrast-2),
+        kendo-success-surface-contrast-3: $kendo-success-surface-contrast-3,
+        kendo-success-surface-contrast-3-rgb: k-hex-to-rgb($kendo-success-surface-contrast-3),
+        kendo-success-surface-contrast-4: $kendo-success-surface-contrast-4,
+        kendo-success-surface-contrast-4-rgb: k-hex-to-rgb($kendo-success-surface-contrast-4),
+        kendo-success-surface-contrast-5: $kendo-success-surface-contrast-5,
+        kendo-success-surface-contrast-5-rgb: k-hex-to-rgb($kendo-success-surface-contrast-5),
+        kendo-success-surface-contrast-6: $kendo-success-surface-contrast-6,
+        kendo-success-surface-contrast-6-rgb: k-hex-to-rgb($kendo-success-surface-contrast-6),
+        kendo-success-surface-contrast-7: $kendo-success-surface-contrast-7,
+        kendo-success-surface-contrast-7-rgb: k-hex-to-rgb($kendo-success-surface-contrast-7),
+        kendo-success-stroke-contrast-1: $kendo-success-stroke-contrast-1,
+        kendo-success-stroke-contrast-1-rgb: k-hex-to-rgb($kendo-success-stroke-contrast-1),
+        kendo-success-stroke-contrast-2: $kendo-success-stroke-contrast-2,
+        kendo-success-stroke-contrast-2-rgb: k-hex-to-rgb($kendo-success-stroke-contrast-2),
+        kendo-success-stroke-contrast-3: $kendo-success-stroke-contrast-3,
+        kendo-success-stroke-contrast-3-rgb: k-hex-to-rgb($kendo-success-stroke-contrast-3),
+        kendo-success-stroke-contrast-4: $kendo-success-stroke-contrast-4,
+        kendo-success-stroke-contrast-4-rgb: k-hex-to-rgb($kendo-success-stroke-contrast-4),
+        kendo-success-stroke-contrast-5: $kendo-success-stroke-contrast-5,
+        kendo-success-stroke-contrast-5-rgb: k-hex-to-rgb($kendo-success-stroke-contrast-5),
+        kendo-success-stroke-contrast-6: $kendo-success-stroke-contrast-6,
+        kendo-success-stroke-contrast-6-rgb: k-hex-to-rgb($kendo-success-stroke-contrast-6),
+        kendo-success-stroke-contrast-7: $kendo-success-stroke-contrast-7,
+        kendo-success-stroke-contrast-7-rgb: k-hex-to-rgb($kendo-success-stroke-contrast-7),
+        kendo-success-content-contrast-1: $kendo-success-content-contrast-1,
+        kendo-success-content-contrast-1-rgb: k-hex-to-rgb($kendo-success-content-contrast-1),
+        kendo-success-content-contrast-2: $kendo-success-content-contrast-2,
+        kendo-success-content-contrast-2-rgb: k-hex-to-rgb($kendo-success-content-contrast-2),
+        kendo-success-content-contrast-3: $kendo-success-content-contrast-3,
+        kendo-success-content-contrast-3-rgb: k-hex-to-rgb($kendo-success-content-contrast-3),
+        kendo-success-content-contrast-4: $kendo-success-content-contrast-4,
+        kendo-success-content-contrast-4-rgb: k-hex-to-rgb($kendo-success-content-contrast-4),
+        kendo-success-content-contrast-5: $kendo-success-content-contrast-5,
+        kendo-success-content-contrast-5-rgb: k-hex-to-rgb($kendo-success-content-contrast-5),
+        kendo-success-content-contrast-6: $kendo-success-content-contrast-6,
+        kendo-success-content-contrast-6-rgb: k-hex-to-rgb($kendo-success-content-contrast-6),
+        kendo-success-content-contrast-7: $kendo-success-content-contrast-7,
+        kendo-success-content-contrast-7-rgb: k-hex-to-rgb($kendo-success-content-contrast-7),
+        kendo-warning-surface-contrast-1: $kendo-warning-surface-contrast-1,
+        kendo-warning-surface-contrast-1-rgb: k-hex-to-rgb($kendo-warning-surface-contrast-1),
+        kendo-warning-surface-contrast-2: $kendo-warning-surface-contrast-2,
+        kendo-warning-surface-contrast-2-rgb: k-hex-to-rgb($kendo-warning-surface-contrast-2),
+        kendo-warning-surface-contrast-3: $kendo-warning-surface-contrast-3,
+        kendo-warning-surface-contrast-3-rgb: k-hex-to-rgb($kendo-warning-surface-contrast-3),
+        kendo-warning-surface-contrast-4: $kendo-warning-surface-contrast-4,
+        kendo-warning-surface-contrast-4-rgb: k-hex-to-rgb($kendo-warning-surface-contrast-4),
+        kendo-warning-surface-contrast-5: $kendo-warning-surface-contrast-5,
+        kendo-warning-surface-contrast-5-rgb: k-hex-to-rgb($kendo-warning-surface-contrast-5),
+        kendo-warning-surface-contrast-6: $kendo-warning-surface-contrast-6,
+        kendo-warning-surface-contrast-6-rgb: k-hex-to-rgb($kendo-warning-surface-contrast-6),
+        kendo-warning-surface-contrast-7: $kendo-warning-surface-contrast-7,
+        kendo-warning-surface-contrast-7-rgb: k-hex-to-rgb($kendo-warning-surface-contrast-7),
+        kendo-warning-stroke-contrast-1: $kendo-warning-stroke-contrast-1,
+        kendo-warning-stroke-contrast-1-rgb: k-hex-to-rgb($kendo-warning-stroke-contrast-1),
+        kendo-warning-stroke-contrast-2: $kendo-warning-stroke-contrast-2,
+        kendo-warning-stroke-contrast-2-rgb: k-hex-to-rgb($kendo-warning-stroke-contrast-2),
+        kendo-warning-stroke-contrast-3: $kendo-warning-stroke-contrast-3,
+        kendo-warning-stroke-contrast-3-rgb: k-hex-to-rgb($kendo-warning-stroke-contrast-3),
+        kendo-warning-stroke-contrast-4: $kendo-warning-stroke-contrast-4,
+        kendo-warning-stroke-contrast-4-rgb: k-hex-to-rgb($kendo-warning-stroke-contrast-4),
+        kendo-warning-stroke-contrast-5: $kendo-warning-stroke-contrast-5,
+        kendo-warning-stroke-contrast-5-rgb: k-hex-to-rgb($kendo-warning-stroke-contrast-5),
+        kendo-warning-stroke-contrast-6: $kendo-warning-stroke-contrast-6,
+        kendo-warning-stroke-contrast-6-rgb: k-hex-to-rgb($kendo-warning-stroke-contrast-6),
+        kendo-warning-stroke-contrast-7: $kendo-warning-stroke-contrast-7,
+        kendo-warning-stroke-contrast-7-rgb: k-hex-to-rgb($kendo-warning-stroke-contrast-7),
+        kendo-warning-content-contrast-1: $kendo-warning-content-contrast-1,
+        kendo-warning-content-contrast-1-rgb: k-hex-to-rgb($kendo-warning-content-contrast-1),
+        kendo-warning-content-contrast-2: $kendo-warning-content-contrast-2,
+        kendo-warning-content-contrast-2-rgb: k-hex-to-rgb($kendo-warning-content-contrast-2),
+        kendo-warning-content-contrast-3: $kendo-warning-content-contrast-3,
+        kendo-warning-content-contrast-3-rgb: k-hex-to-rgb($kendo-warning-content-contrast-3),
+        kendo-warning-content-contrast-4: $kendo-warning-content-contrast-4,
+        kendo-warning-content-contrast-4-rgb: k-hex-to-rgb($kendo-warning-content-contrast-4),
+        kendo-warning-content-contrast-5: $kendo-warning-content-contrast-5,
+        kendo-warning-content-contrast-5-rgb: k-hex-to-rgb($kendo-warning-content-contrast-5),
+        kendo-warning-content-contrast-6: $kendo-warning-content-contrast-6,
+        kendo-warning-content-contrast-6-rgb: k-hex-to-rgb($kendo-warning-content-contrast-6),
+        kendo-warning-content-contrast-7: $kendo-warning-content-contrast-7,
+        kendo-warning-content-contrast-7-rgb: k-hex-to-rgb($kendo-warning-content-contrast-7),
+        kendo-error-surface-contrast-1: $kendo-error-surface-contrast-1,
+        kendo-error-surface-contrast-1-rgb: k-hex-to-rgb($kendo-error-surface-contrast-1),
+        kendo-error-surface-contrast-2: $kendo-error-surface-contrast-2,
+        kendo-error-surface-contrast-2-rgb: k-hex-to-rgb($kendo-error-surface-contrast-2),
+        kendo-error-surface-contrast-3: $kendo-error-surface-contrast-3,
+        kendo-error-surface-contrast-3-rgb: k-hex-to-rgb($kendo-error-surface-contrast-3),
+        kendo-error-surface-contrast-4: $kendo-error-surface-contrast-4,
+        kendo-error-surface-contrast-4-rgb: k-hex-to-rgb($kendo-error-surface-contrast-4),
+        kendo-error-surface-contrast-5: $kendo-error-surface-contrast-5,
+        kendo-error-surface-contrast-5-rgb: k-hex-to-rgb($kendo-error-surface-contrast-5),
+        kendo-error-surface-contrast-6: $kendo-error-surface-contrast-6,
+        kendo-error-surface-contrast-6-rgb: k-hex-to-rgb($kendo-error-surface-contrast-6),
+        kendo-error-surface-contrast-7: $kendo-error-surface-contrast-7,
+        kendo-error-surface-contrast-7-rgb: k-hex-to-rgb($kendo-error-surface-contrast-7),
+        kendo-error-stroke-contrast-1: $kendo-error-stroke-contrast-1,
+        kendo-error-stroke-contrast-1-rgb: k-hex-to-rgb($kendo-error-stroke-contrast-1),
+        kendo-error-stroke-contrast-2: $kendo-error-stroke-contrast-2,
+        kendo-error-stroke-contrast-2-rgb: k-hex-to-rgb($kendo-error-stroke-contrast-2),
+        kendo-error-stroke-contrast-3: $kendo-error-stroke-contrast-3,
+        kendo-error-stroke-contrast-3-rgb: k-hex-to-rgb($kendo-error-stroke-contrast-3),
+        kendo-error-stroke-contrast-4: $kendo-error-stroke-contrast-4,
+        kendo-error-stroke-contrast-4-rgb: k-hex-to-rgb($kendo-error-stroke-contrast-4),
+        kendo-error-stroke-contrast-5: $kendo-error-stroke-contrast-5,
+        kendo-error-stroke-contrast-5-rgb: k-hex-to-rgb($kendo-error-stroke-contrast-5),
+        kendo-error-stroke-contrast-6: $kendo-error-stroke-contrast-6,
+        kendo-error-stroke-contrast-6-rgb: k-hex-to-rgb($kendo-error-stroke-contrast-6),
+        kendo-error-stroke-contrast-7: $kendo-error-stroke-contrast-7,
+        kendo-error-stroke-contrast-7-rgb: k-hex-to-rgb($kendo-error-stroke-contrast-7),
+        kendo-error-content-contrast-1: $kendo-error-content-contrast-1,
+        kendo-error-content-contrast-1-rgb: k-hex-to-rgb($kendo-error-content-contrast-1),
+        kendo-error-content-contrast-2: $kendo-error-content-contrast-2,
+        kendo-error-content-contrast-2-rgb: k-hex-to-rgb($kendo-error-content-contrast-2),
+        kendo-error-content-contrast-3: $kendo-error-content-contrast-3,
+        kendo-error-content-contrast-3-rgb: k-hex-to-rgb($kendo-error-content-contrast-3),
+        kendo-error-content-contrast-4: $kendo-error-content-contrast-4,
+        kendo-error-content-contrast-4-rgb: k-hex-to-rgb($kendo-error-content-contrast-4),
+        kendo-error-content-contrast-5: $kendo-error-content-contrast-5,
+        kendo-error-content-contrast-5-rgb: k-hex-to-rgb($kendo-error-content-contrast-5),
+        kendo-error-content-contrast-6: $kendo-error-content-contrast-6,
+        kendo-error-content-contrast-6-rgb: k-hex-to-rgb($kendo-error-content-contrast-6),
+        kendo-error-content-contrast-7: $kendo-error-content-contrast-7,
+        kendo-error-content-contrast-7-rgb: k-hex-to-rgb($kendo-error-content-contrast-7),
     );
 
-    $_kendo-color-white: var(--kendo-color-white, k-map-get($kendo-theme-palette, kendo-color-white));
-    $_kendo-color-black: var(--kendo-color-black, k-map-get($kendo-theme-palette, kendo-color-black));
-    $_kendo-subtle-text: var(--kendo-subtle-text, k-map-get($kendo-theme-palette, kendo-subtle-text));
+    $_kendo-base-surface-contrast-1: var(--kendo-base-surface-contrast-1, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-1));
+    $_kendo-base-surface-contrast-1-rgb: var(--kendo-base-surface-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-1-rgb));
+    $_kendo-base-surface-contrast-2: var(--kendo-base-surface-contrast-2, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-2));
+    $_kendo-base-surface-contrast-2-rgb: var(--kendo-base-surface-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-2-rgb));
+    $_kendo-base-surface-contrast-3: var(--kendo-base-surface-contrast-3, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-3));
+    $_kendo-base-surface-contrast-3-rgb: var(--kendo-base-surface-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-3-rgb));
+    $_kendo-base-surface-contrast-4: var(--kendo-base-surface-contrast-4, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-4));
+    $_kendo-base-surface-contrast-4-rgb: var(--kendo-base-surface-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-4-rgb));
+    $_kendo-base-surface-contrast-5: var(--kendo-base-surface-contrast-5, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-5));
+    $_kendo-base-surface-contrast-5-rgb: var(--kendo-base-surface-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-5-rgb));
+    $_kendo-base-surface-contrast-6: var(--kendo-base-surface-contrast-6, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-6));
+    $_kendo-base-surface-contrast-6-rgb: var(--kendo-base-surface-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-6-rgb));
+    $_kendo-base-surface-contrast-7: var(--kendo-base-surface-contrast-7, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-7));
+    $_kendo-base-surface-contrast-7-rgb: var(--kendo-base-surface-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-base-surface-contrast-7-rgb));
+    $_kendo-base-stroke-contrast-1: var(--kendo-base-stroke-contrast-1, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-1));
+    $_kendo-base-stroke-contrast-1-rgb: var(--kendo-base-stroke-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-1-rgb));
+    $_kendo-base-stroke-contrast-2: var(--kendo-base-stroke-contrast-2, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-2));
+    $_kendo-base-stroke-contrast-2-rgb: var(--kendo-base-stroke-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-2-rgb));
+    $_kendo-base-stroke-contrast-3: var(--kendo-base-stroke-contrast-3, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-3));
+    $_kendo-base-stroke-contrast-3-rgb: var(--kendo-base-stroke-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-3-rgb));
+    $_kendo-base-stroke-contrast-4: var(--kendo-base-stroke-contrast-4, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-4));
+    $_kendo-base-stroke-contrast-4-rgb: var(--kendo-base-stroke-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-4-rgb));
+    $_kendo-base-stroke-contrast-5: var(--kendo-base-stroke-contrast-5, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-5));
+    $_kendo-base-stroke-contrast-5-rgb: var(--kendo-base-stroke-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-5-rgb));
+    $_kendo-base-stroke-contrast-6: var(--kendo-base-stroke-contrast-6, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-6));
+    $_kendo-base-stroke-contrast-6-rgb: var(--kendo-base-stroke-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-6-rgb));
+    $_kendo-base-stroke-contrast-7: var(--kendo-base-stroke-contrast-7, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-7));
+    $_kendo-base-stroke-contrast-7-rgb: var(--kendo-base-stroke-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-base-stroke-contrast-7-rgb));
+    $_kendo-base-content-contrast-1: var(--kendo-base-content-contrast-1, k-map-get($kendo-theme-palette, kendo-base-content-contrast-1));
+    $_kendo-base-content-contrast-1-rgb: var(--kendo-base-content-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-base-content-contrast-1-rgb));
+    $_kendo-base-content-contrast-2: var(--kendo-base-content-contrast-2, k-map-get($kendo-theme-palette, kendo-base-content-contrast-2));
+    $_kendo-base-content-contrast-2-rgb: var(--kendo-base-content-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-base-content-contrast-2-rgb));
+    $_kendo-base-content-contrast-3: var(--kendo-base-content-contrast-3, k-map-get($kendo-theme-palette, kendo-base-content-contrast-3));
+    $_kendo-base-content-contrast-3-rgb: var(--kendo-base-content-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-base-content-contrast-3-rgb));
+    $_kendo-base-content-contrast-4: var(--kendo-base-content-contrast-4, k-map-get($kendo-theme-palette, kendo-base-content-contrast-4));
+    $_kendo-base-content-contrast-4-rgb: var(--kendo-base-content-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-base-content-contrast-4-rgb));
+    $_kendo-base-content-contrast-5: var(--kendo-base-content-contrast-5, k-map-get($kendo-theme-palette, kendo-base-content-contrast-5));
+    $_kendo-base-content-contrast-5-rgb: var(--kendo-base-content-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-base-content-contrast-5-rgb));
+    $_kendo-base-content-contrast-6: var(--kendo-base-content-contrast-6, k-map-get($kendo-theme-palette, kendo-base-content-contrast-6));
+    $_kendo-base-content-contrast-6-rgb: var(--kendo-base-content-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-base-content-contrast-6-rgb));
+    $_kendo-base-content-contrast-7: var(--kendo-base-content-contrast-7, k-map-get($kendo-theme-palette, kendo-base-content-contrast-7));
+    $_kendo-base-content-contrast-7-rgb: var(--kendo-base-content-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-base-content-contrast-7-rgb));
 
-    $_kendo-disabled-text: var(--kendo-disabled-text, k-map-get($kendo-theme-palette, kendo-disabled-text));
-    $_kendo-disabled-bg: var(--kendo-disabled-bg, k-map-get($kendo-theme-palette, kendo-disabled-bg));
-    $_kendo-disabled-border: var(--kendo-disabled-border, k-map-get($kendo-theme-palette, kendo-disabled-border));
-    $_kendo-focus-outline: var(--kendo-focus-outline, k-map-get($kendo-theme-palette, kendo-focus-outline));
+    $_kendo-primary-surface-contrast-1: var(--kendo-primary-surface-contrast-1, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-1));
+    $_kendo-primary-surface-contrast-1-rgb: var(--kendo-primary-surface-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-1-rgb));
+    $_kendo-primary-surface-contrast-2: var(--kendo-primary-surface-contrast-2, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-2));
+    $_kendo-primary-surface-contrast-2-rgb: var(--kendo-primary-surface-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-2-rgb));
+    $_kendo-primary-surface-contrast-3: var(--kendo-primary-surface-contrast-3, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-3));
+    $_kendo-primary-surface-contrast-3-rgb: var(--kendo-primary-surface-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-3-rgb));
+    $_kendo-primary-surface-contrast-4: var(--kendo-primary-surface-contrast-4, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-4));
+    $_kendo-primary-surface-contrast-4-rgb: var(--kendo-primary-surface-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-4-rgb));
+    $_kendo-primary-surface-contrast-5: var(--kendo-primary-surface-contrast-5, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-5));
+    $_kendo-primary-surface-contrast-5-rgb: var(--kendo-primary-surface-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-5-rgb));
+    $_kendo-primary-surface-contrast-6: var(--kendo-primary-surface-contrast-6, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-6));
+    $_kendo-primary-surface-contrast-6-rgb: var(--kendo-primary-surface-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-6-rgb));
+    $_kendo-primary-surface-contrast-7: var(--kendo-primary-surface-contrast-7, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-7));
+    $_kendo-primary-surface-contrast-7-rgb: var(--kendo-primary-surface-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-primary-surface-contrast-7-rgb));
+    $_kendo-primary-stroke-contrast-1: var(--kendo-primary-stroke-contrast-1, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-1));
+    $_kendo-primary-stroke-contrast-1-rgb: var(--kendo-primary-stroke-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-1-rgb));
+    $_kendo-primary-stroke-contrast-2: var(--kendo-primary-stroke-contrast-2, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-2));
+    $_kendo-primary-stroke-contrast-2-rgb: var(--kendo-primary-stroke-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-2-rgb));
+    $_kendo-primary-stroke-contrast-3: var(--kendo-primary-stroke-contrast-3, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-3));
+    $_kendo-primary-stroke-contrast-3-rgb: var(--kendo-primary-stroke-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-3-rgb));
+    $_kendo-primary-stroke-contrast-4: var(--kendo-primary-stroke-contrast-4, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-4));
+    $_kendo-primary-stroke-contrast-4-rgb: var(--kendo-primary-stroke-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-4-rgb));
+    $_kendo-primary-stroke-contrast-5: var(--kendo-primary-stroke-contrast-5, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-5));
+    $_kendo-primary-stroke-contrast-5-rgb: var(--kendo-primary-stroke-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-5-rgb));
+    $_kendo-primary-stroke-contrast-6: var(--kendo-primary-stroke-contrast-6, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-6));
+    $_kendo-primary-stroke-contrast-6-rgb: var(--kendo-primary-stroke-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-6-rgb));
+    $_kendo-primary-stroke-contrast-7: var(--kendo-primary-stroke-contrast-7, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-7));
+    $_kendo-primary-stroke-contrast-7-rgb: var(--kendo-primary-stroke-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-primary-stroke-contrast-7-rgb));
+    $_kendo-primary-content-contrast-1: var(--kendo-primary-content-contrast-1, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-1));
+    $_kendo-primary-content-contrast-1-rgb: var(--kendo-primary-content-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-1-rgb));
+    $_kendo-primary-content-contrast-2: var(--kendo-primary-content-contrast-2, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-2));
+    $_kendo-primary-content-contrast-2-rgb: var(--kendo-primary-content-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-2-rgb));
+    $_kendo-primary-content-contrast-3: var(--kendo-primary-content-contrast-3, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-3));
+    $_kendo-primary-content-contrast-3-rgb: var(--kendo-primary-content-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-3-rgb));
+    $_kendo-primary-content-contrast-4: var(--kendo-primary-content-contrast-4, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-4));
+    $_kendo-primary-content-contrast-4-rgb: var(--kendo-primary-content-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-4-rgb));
+    $_kendo-primary-content-contrast-5: var(--kendo-primary-content-contrast-5, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-5));
+    $_kendo-primary-content-contrast-5-rgb: var(--kendo-primary-content-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-5-rgb));
+    $_kendo-primary-content-contrast-6: var(--kendo-primary-content-contrast-6, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-6));
+    $_kendo-primary-content-contrast-6-rgb: var(--kendo-primary-content-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-6-rgb));
+    $_kendo-primary-content-contrast-7: var(--kendo-primary-content-contrast-7, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-7));
+    $_kendo-primary-content-contrast-7-rgb: var(--kendo-primary-content-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-primary-content-contrast-7-rgb));
 
-    $_kendo-color-primary: var(--kendo-color-primary, k-map-get($kendo-theme-palette, kendo-color-primary));
-    $_kendo-color-primary-rgb: var(--kendo-color-primary-rgb, k-map-get($kendo-theme-palette, kendo-color-primary-rgb));
-    $_kendo-color-primary-text: var(--kendo-color-primary-text, k-map-get($kendo-theme-palette, kendo-color-primary-text));
-    $_kendo-color-primary-text-contrast: var(--kendo-color-primary-text-contrast, k-map-get($kendo-theme-palette, kendo-color-primary-text-contrast));
-    $_kendo-color-primary-text-rgb: var(--kendo-color-primary-text-rgb, k-map-get($kendo-theme-palette, kendo-color-primary-text-rgb));
-    $_kendo-color-primary-hover: var(--kendo-color-primary-hover, k-map-get($kendo-theme-palette, kendo-color-primary-hover));
-    $_kendo-color-primary-active: var(--kendo-color-primary-active, k-map-get($kendo-theme-palette, kendo-color-primary-active));
-    $_kendo-color-primary-active-rgb: var(--kendo-color-primary-active-rgb, k-map-get($kendo-theme-palette, kendo-color-primary-active-rgb));
-    $_kendo-color-primary-selected: var(--kendo-color-primary-selected, k-map-get($kendo-theme-palette, kendo-color-primary-selected));
-    $_kendo-color-primary-focus: var(--kendo-color-primary-focus, k-map-get($kendo-theme-palette, kendo-color-primary-focus));
-    $_kendo-color-primary-light: var(--kendo-color-primary-light, k-map-get($kendo-theme-palette, kendo-color-primary-light));
-    $_kendo-color-primary-light-alt: var(--kendo-color-primary-light-alt, k-map-get($kendo-theme-palette, kendo-color-primary-light-alt));
-    $_kendo-color-primary-light-mix: var(--kendo-color-primary-light-mix, k-map-get($kendo-theme-palette, kendo-color-primary-light-mix));
-    $_kendo-color-primary-pale: var(--kendo-color-primary-pale, k-map-get($kendo-theme-palette, kendo-color-primary-pale));
-    $_kendo-color-primary-dim: var(--kendo-color-primary-dim, k-map-get($kendo-theme-palette, kendo-color-primary-dim));
-    $_kendo-color-primary-shaded: var(--kendo-color-primary-shaded, k-map-get($kendo-theme-palette, kendo-color-primary-shaded));
+    $_kendo-secondary-surface-contrast-1: var(--kendo-secondary-surface-contrast-1, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-1));
+    $_kendo-secondary-surface-contrast-1-rgb: var(--kendo-secondary-surface-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-1-rgb));
+    $_kendo-secondary-surface-contrast-2: var(--kendo-secondary-surface-contrast-2, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-2));
+    $_kendo-secondary-surface-contrast-2-rgb: var(--kendo-secondary-surface-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-2-rgb));
+    $_kendo-secondary-surface-contrast-3: var(--kendo-secondary-surface-contrast-3, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-3));
+    $_kendo-secondary-surface-contrast-3-rgb: var(--kendo-secondary-surface-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-3-rgb));
+    $_kendo-secondary-surface-contrast-4: var(--kendo-secondary-surface-contrast-4, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-4));
+    $_kendo-secondary-surface-contrast-4-rgb: var(--kendo-secondary-surface-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-4-rgb));
+    $_kendo-secondary-surface-contrast-5: var(--kendo-secondary-surface-contrast-5, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-5));
+    $_kendo-secondary-surface-contrast-5-rgb: var(--kendo-secondary-surface-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-5-rgb));
+    $_kendo-secondary-surface-contrast-6: var(--kendo-secondary-surface-contrast-6, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-6));
+    $_kendo-secondary-surface-contrast-6-rgb: var(--kendo-secondary-surface-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-6-rgb));
+    $_kendo-secondary-surface-contrast-7: var(--kendo-secondary-surface-contrast-7, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-7));
+    $_kendo-secondary-surface-contrast-7-rgb: var(--kendo-secondary-surface-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-secondary-surface-contrast-7-rgb));
+    $_kendo-secondary-stroke-contrast-1: var(--kendo-secondary-stroke-contrast-1, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-1));
+    $_kendo-secondary-stroke-contrast-1-rgb: var(--kendo-secondary-stroke-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-1-rgb));
+    $_kendo-secondary-stroke-contrast-2: var(--kendo-secondary-stroke-contrast-2, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-2));
+    $_kendo-secondary-stroke-contrast-2-rgb: var(--kendo-secondary-stroke-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-2-rgb));
+    $_kendo-secondary-stroke-contrast-3: var(--kendo-secondary-stroke-contrast-3, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-3));
+    $_kendo-secondary-stroke-contrast-3-rgb: var(--kendo-secondary-stroke-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-3-rgb));
+    $_kendo-secondary-stroke-contrast-4: var(--kendo-secondary-stroke-contrast-4, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-4));
+    $_kendo-secondary-stroke-contrast-4-rgb: var(--kendo-secondary-stroke-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-4-rgb));
+    $_kendo-secondary-stroke-contrast-5: var(--kendo-secondary-stroke-contrast-5, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-5));
+    $_kendo-secondary-stroke-contrast-5-rgb: var(--kendo-secondary-stroke-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-5-rgb));
+    $_kendo-secondary-stroke-contrast-6: var(--kendo-secondary-stroke-contrast-6, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-6));
+    $_kendo-secondary-stroke-contrast-6-rgb: var(--kendo-secondary-stroke-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-6-rgb));
+    $_kendo-secondary-stroke-contrast-7: var(--kendo-secondary-stroke-contrast-7, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-7));
+    $_kendo-secondary-stroke-contrast-7-rgb: var(--kendo-secondary-stroke-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-secondary-stroke-contrast-7-rgb));
+    $_kendo-secondary-content-contrast-1: var(--kendo-secondary-content-contrast-1, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-1));
+    $_kendo-secondary-content-contrast-1-rgb: var(--kendo-secondary-content-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-1-rgb));
+    $_kendo-secondary-content-contrast-2: var(--kendo-secondary-content-contrast-2, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-2));
+    $_kendo-secondary-content-contrast-2-rgb: var(--kendo-secondary-content-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-2-rgb));
+    $_kendo-secondary-content-contrast-3: var(--kendo-secondary-content-contrast-3, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-3));
+    $_kendo-secondary-content-contrast-3-rgb: var(--kendo-secondary-content-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-3-rgb));
+    $_kendo-secondary-content-contrast-4: var(--kendo-secondary-content-contrast-4, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-4));
+    $_kendo-secondary-content-contrast-4-rgb: var(--kendo-secondary-content-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-4-rgb));
+    $_kendo-secondary-content-contrast-5: var(--kendo-secondary-content-contrast-5, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-5));
+    $_kendo-secondary-content-contrast-5-rgb: var(--kendo-secondary-content-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-5-rgb));
+    $_kendo-secondary-content-contrast-6: var(--kendo-secondary-content-contrast-6, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-6));
+    $_kendo-secondary-content-contrast-6-rgb: var(--kendo-secondary-content-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-6-rgb));
+    $_kendo-secondary-content-contrast-7: var(--kendo-secondary-content-contrast-7, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-7));
+    $_kendo-secondary-content-contrast-7-rgb: var(--kendo-secondary-content-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-secondary-content-contrast-7-rgb));
 
-    $_kendo-color-base: var(--kendo-color-base, k-map-get($kendo-theme-palette, kendo-color-base));
-    $_kendo-color-base-rgb: var(--kendo-color-base-rgb, k-map-get($kendo-theme-palette, kendo-color-base-rgb));
-    $_kendo-color-base-text: var(--kendo-color-base-text, k-map-get($kendo-theme-palette, kendo-color-base-text));
-    $_kendo-color-base-text-contrast: var(--kendo-color-base-text-contrast, k-map-get($kendo-theme-palette, kendo-color-base-text-contrast));
-    $_kendo-color-base-text-lighter: var(--kendo-color-base-text-lighter, k-map-get($kendo-theme-palette, kendo-color-base-text-lighter));
-    $_kendo-color-base-text-pale: var(--kendo-color-base-text-pale, k-map-get($kendo-theme-palette, kendo-color-base-text-pale));
-    $_kendo-color-base-text-rgb: var(--kendo-color-base-text-rgb, k-map-get($kendo-theme-palette, kendo-color-base-text-rgb));
-    $_kendo-color-base-hover: var(--kendo-color-base-hover, k-map-get($kendo-theme-palette, kendo-color-base-hover));
-    $_kendo-color-base-active: var(--kendo-color-base-active, k-map-get($kendo-theme-palette, kendo-color-base-active));
-    $_kendo-color-base-selected: var(--kendo-color-base-selected, k-map-get($kendo-theme-palette, kendo-color-base-selected));
-    $_kendo-color-base-focus: var(--kendo-color-base-focus, k-map-get($kendo-theme-palette, kendo-color-base-focus));
-    $_kendo-color-base-lighter: var(--kendo-color-base-lighter, k-map-get($kendo-theme-palette, kendo-color-base-lighter));
-    $_kendo-color-base-shaded: var(--kendo-color-base-shaded, k-map-get($kendo-theme-palette, kendo-color-base-shaded));
+    $_kendo-tertiary-surface-contrast-1: var(--kendo-tertiary-surface-contrast-1, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-1));
+    $_kendo-tertiary-surface-contrast-1-rgb: var(--kendo-tertiary-surface-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-1-rgb));
+    $_kendo-tertiary-surface-contrast-2: var(--kendo-tertiary-surface-contrast-2, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-2));
+    $_kendo-tertiary-surface-contrast-2-rgb: var(--kendo-tertiary-surface-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-2-rgb));
+    $_kendo-tertiary-surface-contrast-3: var(--kendo-tertiary-surface-contrast-3, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-3));
+    $_kendo-tertiary-surface-contrast-3-rgb: var(--kendo-tertiary-surface-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-3-rgb));
+    $_kendo-tertiary-surface-contrast-4: var(--kendo-tertiary-surface-contrast-4, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-4));
+    $_kendo-tertiary-surface-contrast-4-rgb: var(--kendo-tertiary-surface-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-4-rgb));
+    $_kendo-tertiary-surface-contrast-5: var(--kendo-tertiary-surface-contrast-5, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-5));
+    $_kendo-tertiary-surface-contrast-5-rgb: var(--kendo-tertiary-surface-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-5-rgb));
+    $_kendo-tertiary-surface-contrast-6: var(--kendo-tertiary-surface-contrast-6, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-6));
+    $_kendo-tertiary-surface-contrast-6-rgb: var(--kendo-tertiary-surface-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-6-rgb));
+    $_kendo-tertiary-surface-contrast-7: var(--kendo-tertiary-surface-contrast-7, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-7));
+    $_kendo-tertiary-surface-contrast-7-rgb: var(--kendo-tertiary-surface-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-surface-contrast-7-rgb));
+    $_kendo-tertiary-stroke-contrast-1: var(--kendo-tertiary-stroke-contrast-1, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-1));
+    $_kendo-tertiary-stroke-contrast-1-rgb: var(--kendo-tertiary-stroke-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-1-rgb));
+    $_kendo-tertiary-stroke-contrast-2: var(--kendo-tertiary-stroke-contrast-2, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-2));
+    $_kendo-tertiary-stroke-contrast-2-rgb: var(--kendo-tertiary-stroke-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-2-rgb));
+    $_kendo-tertiary-stroke-contrast-3: var(--kendo-tertiary-stroke-contrast-3, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-3));
+    $_kendo-tertiary-stroke-contrast-3-rgb: var(--kendo-tertiary-stroke-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-3-rgb));
+    $_kendo-tertiary-stroke-contrast-4: var(--kendo-tertiary-stroke-contrast-4, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-4));
+    $_kendo-tertiary-stroke-contrast-4-rgb: var(--kendo-tertiary-stroke-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-4-rgb));
+    $_kendo-tertiary-stroke-contrast-5: var(--kendo-tertiary-stroke-contrast-5, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-5));
+    $_kendo-tertiary-stroke-contrast-5-rgb: var(--kendo-tertiary-stroke-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-5-rgb));
+    $_kendo-tertiary-stroke-contrast-6: var(--kendo-tertiary-stroke-contrast-6, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-6));
+    $_kendo-tertiary-stroke-contrast-6-rgb: var(--kendo-tertiary-stroke-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-6-rgb));
+    $_kendo-tertiary-stroke-contrast-7: var(--kendo-tertiary-stroke-contrast-7, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-7));
+    $_kendo-tertiary-stroke-contrast-7-rgb: var(--kendo-tertiary-stroke-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-stroke-contrast-7-rgb));
+    $_kendo-tertiary-content-contrast-1: var(--kendo-tertiary-content-contrast-1, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-1));
+    $_kendo-tertiary-content-contrast-1-rgb: var(--kendo-tertiary-content-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-1-rgb));
+    $_kendo-tertiary-content-contrast-2: var(--kendo-tertiary-content-contrast-2, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-2));
+    $_kendo-tertiary-content-contrast-2-rgb: var(--kendo-tertiary-content-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-2-rgb));
+    $_kendo-tertiary-content-contrast-3: var(--kendo-tertiary-content-contrast-3, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-3));
+    $_kendo-tertiary-content-contrast-3-rgb: var(--kendo-tertiary-content-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-3-rgb));
+    $_kendo-tertiary-content-contrast-4: var(--kendo-tertiary-content-contrast-4, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-4));
+    $_kendo-tertiary-content-contrast-4-rgb: var(--kendo-tertiary-content-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-4-rgb));
+    $_kendo-tertiary-content-contrast-5: var(--kendo-tertiary-content-contrast-5, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-5));
+    $_kendo-tertiary-content-contrast-5-rgb: var(--kendo-tertiary-content-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-5-rgb));
+    $_kendo-tertiary-content-contrast-6: var(--kendo-tertiary-content-contrast-6, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-6));
+    $_kendo-tertiary-content-contrast-6-rgb: var(--kendo-tertiary-content-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-6-rgb));
+    $_kendo-tertiary-content-contrast-7: var(--kendo-tertiary-content-contrast-7, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-7));
+    $_kendo-tertiary-content-contrast-7-rgb: var(--kendo-tertiary-content-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-tertiary-content-contrast-7-rgb));
 
-    $_kendo-color-secondary: var(--kendo-color-secondary, k-map-get($kendo-theme-palette, kendo-color-secondary));
-    $_kendo-color-secondary-rgb: var(--kendo-color-secondary-rgb, k-map-get($kendo-theme-palette, kendo-color-secondary-rgb));
-    $_kendo-color-secondary-text: var(--kendo-color-secondary-text, k-map-get($kendo-theme-palette, kendo-color-secondary-text));
-    $_kendo-color-secondary-text-rgb: var(--kendo-color-secondary-text-rgb, k-map-get($kendo-theme-palette, kendo-color-secondary-text-rgb));
-    $_kendo-color-secondary-hover: var(--kendo-color-secondary-hover, k-map-get($kendo-theme-palette, kendo-color-secondary-hover));
-    $_kendo-color-secondary-active: var(--kendo-color-secondary-active, k-map-get($kendo-theme-palette, kendo-color-secondary-active));
-    $_kendo-color-secondary-selected: var(--kendo-color-secondary-selected, k-map-get($kendo-theme-palette, kendo-color-secondary-selected));
-    $_kendo-color-secondary-focus: var(--kendo-color-secondary-focus, k-map-get($kendo-theme-palette, kendo-color-secondary-focus));
+    $_kendo-info-surface-contrast-1: var(--kendo-info-surface-contrast-1, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-1));
+    $_kendo-info-surface-contrast-1-rgb: var(--kendo-info-surface-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-1-rgb));
+    $_kendo-info-surface-contrast-2: var(--kendo-info-surface-contrast-2, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-2));
+    $_kendo-info-surface-contrast-2-rgb: var(--kendo-info-surface-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-2-rgb));
+    $_kendo-info-surface-contrast-3: var(--kendo-info-surface-contrast-3, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-3));
+    $_kendo-info-surface-contrast-3-rgb: var(--kendo-info-surface-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-3-rgb));
+    $_kendo-info-surface-contrast-4: var(--kendo-info-surface-contrast-4, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-4));
+    $_kendo-info-surface-contrast-4-rgb: var(--kendo-info-surface-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-4-rgb));
+    $_kendo-info-surface-contrast-5: var(--kendo-info-surface-contrast-5, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-5));
+    $_kendo-info-surface-contrast-5-rgb: var(--kendo-info-surface-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-5-rgb));
+    $_kendo-info-surface-contrast-6: var(--kendo-info-surface-contrast-6, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-6));
+    $_kendo-info-surface-contrast-6-rgb: var(--kendo-info-surface-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-6-rgb));
+    $_kendo-info-surface-contrast-7: var(--kendo-info-surface-contrast-7, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-7));
+    $_kendo-info-surface-contrast-7-rgb: var(--kendo-info-surface-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-info-surface-contrast-7-rgb));
+    $_kendo-info-stroke-contrast-1: var(--kendo-info-stroke-contrast-1, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-1));
+    $_kendo-info-stroke-contrast-1-rgb: var(--kendo-info-stroke-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-1-rgb));
+    $_kendo-info-stroke-contrast-2: var(--kendo-info-stroke-contrast-2, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-2));
+    $_kendo-info-stroke-contrast-2-rgb: var(--kendo-info-stroke-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-2-rgb));
+    $_kendo-info-stroke-contrast-3: var(--kendo-info-stroke-contrast-3, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-3));
+    $_kendo-info-stroke-contrast-3-rgb: var(--kendo-info-stroke-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-3-rgb));
+    $_kendo-info-stroke-contrast-4: var(--kendo-info-stroke-contrast-4, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-4));
+    $_kendo-info-stroke-contrast-4-rgb: var(--kendo-info-stroke-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-4-rgb));
+    $_kendo-info-stroke-contrast-5: var(--kendo-info-stroke-contrast-5, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-5));
+    $_kendo-info-stroke-contrast-5-rgb: var(--kendo-info-stroke-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-5-rgb));
+    $_kendo-info-stroke-contrast-6: var(--kendo-info-stroke-contrast-6, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-6));
+    $_kendo-info-stroke-contrast-6-rgb: var(--kendo-info-stroke-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-6-rgb));
+    $_kendo-info-stroke-contrast-7: var(--kendo-info-stroke-contrast-7, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-7));
+    $_kendo-info-stroke-contrast-7-rgb: var(--kendo-info-stroke-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-info-stroke-contrast-7-rgb));
+    $_kendo-info-content-contrast-1: var(--kendo-info-content-contrast-1, k-map-get($kendo-theme-palette, kendo-info-content-contrast-1));
+    $_kendo-info-content-contrast-1-rgb: var(--kendo-info-content-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-info-content-contrast-1-rgb));
+    $_kendo-info-content-contrast-2: var(--kendo-info-content-contrast-2, k-map-get($kendo-theme-palette, kendo-info-content-contrast-2));
+    $_kendo-info-content-contrast-2-rgb: var(--kendo-info-content-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-info-content-contrast-2-rgb));
+    $_kendo-info-content-contrast-3: var(--kendo-info-content-contrast-3, k-map-get($kendo-theme-palette, kendo-info-content-contrast-3));
+    $_kendo-info-content-contrast-3-rgb: var(--kendo-info-content-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-info-content-contrast-3-rgb));
+    $_kendo-info-content-contrast-4: var(--kendo-info-content-contrast-4, k-map-get($kendo-theme-palette, kendo-info-content-contrast-4));
+    $_kendo-info-content-contrast-4-rgb: var(--kendo-info-content-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-info-content-contrast-4-rgb));
+    $_kendo-info-content-contrast-5: var(--kendo-info-content-contrast-5, k-map-get($kendo-theme-palette, kendo-info-content-contrast-5));
+    $_kendo-info-content-contrast-5-rgb: var(--kendo-info-content-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-info-content-contrast-5-rgb));
+    $_kendo-info-content-contrast-6: var(--kendo-info-content-contrast-6, k-map-get($kendo-theme-palette, kendo-info-content-contrast-6));
+    $_kendo-info-content-contrast-6-rgb: var(--kendo-info-content-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-info-content-contrast-6-rgb));
+    $_kendo-info-content-contrast-7: var(--kendo-info-content-contrast-7, k-map-get($kendo-theme-palette, kendo-info-content-contrast-7));
+    $_kendo-info-content-contrast-7-rgb: var(--kendo-info-content-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-info-content-contrast-7-rgb));
 
-    $_kendo-color-tertiary: var(--kendo-color-tertiary, k-map-get($kendo-theme-palette, kendo-color-tertiary));
-    $_kendo-color-tertiary-rgb: var(--kendo-color-tertiary-rgb, k-map-get($kendo-theme-palette, kendo-color-tertiary-rgb));
-    $_kendo-color-tertiary-text: var(--kendo-color-tertiary-text, k-map-get($kendo-theme-palette, kendo-color-tertiary-text));
-    $_kendo-color-tertiary-text-rgb: var(--kendo-color-tertiary-text-rgb, k-map-get($kendo-theme-palette, kendo-color-tertiary-text-rgb));
-    $_kendo-color-tertiary-hover: var(--kendo-color-tertiary-hover, k-map-get($kendo-theme-palette, kendo-color-tertiary-hover));
-    $_kendo-color-tertiary-active: var(--kendo-color-tertiary-active, k-map-get($kendo-theme-palette, kendo-color-tertiary-active));
-    $_kendo-color-tertiary-selected: var(--kendo-color-tertiary-selected, k-map-get($kendo-theme-palette, kendo-color-tertiary-selected));
-    $_kendo-color-tertiary-focus: var(--kendo-color-tertiary-focus, k-map-get($kendo-theme-palette, kendo-color-tertiary-focus));
+    $_kendo-success-surface-contrast-1: var(--kendo-success-surface-contrast-1, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-1));
+    $_kendo-success-surface-contrast-1-rgb: var(--kendo-success-surface-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-1-rgb));
+    $_kendo-success-surface-contrast-2: var(--kendo-success-surface-contrast-2, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-2));
+    $_kendo-success-surface-contrast-2-rgb: var(--kendo-success-surface-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-2-rgb));
+    $_kendo-success-surface-contrast-3: var(--kendo-success-surface-contrast-3, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-3));
+    $_kendo-success-surface-contrast-3-rgb: var(--kendo-success-surface-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-3-rgb));
+    $_kendo-success-surface-contrast-4: var(--kendo-success-surface-contrast-4, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-4));
+    $_kendo-success-surface-contrast-4-rgb: var(--kendo-success-surface-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-4-rgb));
+    $_kendo-success-surface-contrast-5: var(--kendo-success-surface-contrast-5, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-5));
+    $_kendo-success-surface-contrast-5-rgb: var(--kendo-success-surface-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-5-rgb));
+    $_kendo-success-surface-contrast-6: var(--kendo-success-surface-contrast-6, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-6));
+    $_kendo-success-surface-contrast-6-rgb: var(--kendo-success-surface-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-6-rgb));
+    $_kendo-success-surface-contrast-7: var(--kendo-success-surface-contrast-7, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-7));
+    $_kendo-success-surface-contrast-7-rgb: var(--kendo-success-surface-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-success-surface-contrast-7-rgb));
+    $_kendo-success-stroke-contrast-1: var(--kendo-success-stroke-contrast-1, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-1));
+    $_kendo-success-stroke-contrast-1-rgb: var(--kendo-success-stroke-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-1-rgb));
+    $_kendo-success-stroke-contrast-2: var(--kendo-success-stroke-contrast-2, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-2));
+    $_kendo-success-stroke-contrast-2-rgb: var(--kendo-success-stroke-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-2-rgb));
+    $_kendo-success-stroke-contrast-3: var(--kendo-success-stroke-contrast-3, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-3));
+    $_kendo-success-stroke-contrast-3-rgb: var(--kendo-success-stroke-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-3-rgb));
+    $_kendo-success-stroke-contrast-4: var(--kendo-success-stroke-contrast-4, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-4));
+    $_kendo-success-stroke-contrast-4-rgb: var(--kendo-success-stroke-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-4-rgb));
+    $_kendo-success-stroke-contrast-5: var(--kendo-success-stroke-contrast-5, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-5));
+    $_kendo-success-stroke-contrast-5-rgb: var(--kendo-success-stroke-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-5-rgb));
+    $_kendo-success-stroke-contrast-6: var(--kendo-success-stroke-contrast-6, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-6));
+    $_kendo-success-stroke-contrast-6-rgb: var(--kendo-success-stroke-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-6-rgb));
+    $_kendo-success-stroke-contrast-7: var(--kendo-success-stroke-contrast-7, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-7));
+    $_kendo-success-stroke-contrast-7-rgb: var(--kendo-success-stroke-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-success-stroke-contrast-7-rgb));
+    $_kendo-success-content-contrast-1: var(--kendo-success-content-contrast-1, k-map-get($kendo-theme-palette, kendo-success-content-contrast-1));
+    $_kendo-success-content-contrast-1-rgb: var(--kendo-success-content-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-success-content-contrast-1-rgb));
+    $_kendo-success-content-contrast-2: var(--kendo-success-content-contrast-2, k-map-get($kendo-theme-palette, kendo-success-content-contrast-2));
+    $_kendo-success-content-contrast-2-rgb: var(--kendo-success-content-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-success-content-contrast-2-rgb));
+    $_kendo-success-content-contrast-3: var(--kendo-success-content-contrast-3, k-map-get($kendo-theme-palette, kendo-success-content-contrast-3));
+    $_kendo-success-content-contrast-3-rgb: var(--kendo-success-content-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-success-content-contrast-3-rgb));
+    $_kendo-success-content-contrast-4: var(--kendo-success-content-contrast-4, k-map-get($kendo-theme-palette, kendo-success-content-contrast-4));
+    $_kendo-success-content-contrast-4-rgb: var(--kendo-success-content-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-success-content-contrast-4-rgb));
+    $_kendo-success-content-contrast-5: var(--kendo-success-content-contrast-5, k-map-get($kendo-theme-palette, kendo-success-content-contrast-5));
+    $_kendo-success-content-contrast-5-rgb: var(--kendo-success-content-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-success-content-contrast-5-rgb));
+    $_kendo-success-content-contrast-6: var(--kendo-success-content-contrast-6, k-map-get($kendo-theme-palette, kendo-success-content-contrast-6));
+    $_kendo-success-content-contrast-6-rgb: var(--kendo-success-content-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-success-content-contrast-6-rgb));
+    $_kendo-success-content-contrast-7: var(--kendo-success-content-contrast-7, k-map-get($kendo-theme-palette, kendo-success-content-contrast-7));
+    $_kendo-success-content-contrast-7-rgb: var(--kendo-success-content-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-success-content-contrast-7-rgb));
 
-    $_kendo-color-info: var(--kendo-color-info, k-map-get($kendo-theme-palette, kendo-color-info));
-    $_kendo-color-info-rgb: var(--kendo-color-info-rgb, k-map-get($kendo-theme-palette, kendo-color-info-rgb));
-    $_kendo-color-info-text: var(--kendo-color-info-text, k-map-get($kendo-theme-palette, kendo-color-info-text));
-    $_kendo-color-info-text-rgb: var(--kendo-color-info-text-rgb, k-map-get($kendo-theme-palette, kendo-color-info-text-rgb));
-    $_kendo-color-info-hover: var(--kendo-color-info-hover, k-map-get($kendo-theme-palette, kendo-color-info-hover));
-    $_kendo-color-info-active: var(--kendo-color-info-active, k-map-get($kendo-theme-palette, kendo-color-info-active));
-    $_kendo-color-info-selected: var(--kendo-color-info-selected, k-map-get($kendo-theme-palette, kendo-color-info-selected));
-    $_kendo-color-info-focus: var(--kendo-color-info-focus, k-map-get($kendo-theme-palette, kendo-color-info-focus));
+    $_kendo-warning-surface-contrast-1: var(--kendo-warning-surface-contrast-1, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-1));
+    $_kendo-warning-surface-contrast-1-rgb: var(--kendo-warning-surface-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-1-rgb));
+    $_kendo-warning-surface-contrast-2: var(--kendo-warning-surface-contrast-2, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-2));
+    $_kendo-warning-surface-contrast-2-rgb: var(--kendo-warning-surface-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-2-rgb));
+    $_kendo-warning-surface-contrast-3: var(--kendo-warning-surface-contrast-3, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-3));
+    $_kendo-warning-surface-contrast-3-rgb: var(--kendo-warning-surface-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-3-rgb));
+    $_kendo-warning-surface-contrast-4: var(--kendo-warning-surface-contrast-4, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-4));
+    $_kendo-warning-surface-contrast-4-rgb: var(--kendo-warning-surface-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-4-rgb));
+    $_kendo-warning-surface-contrast-5: var(--kendo-warning-surface-contrast-5, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-5));
+    $_kendo-warning-surface-contrast-5-rgb: var(--kendo-warning-surface-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-5-rgb));
+    $_kendo-warning-surface-contrast-6: var(--kendo-warning-surface-contrast-6, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-6));
+    $_kendo-warning-surface-contrast-6-rgb: var(--kendo-warning-surface-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-6-rgb));
+    $_kendo-warning-surface-contrast-7: var(--kendo-warning-surface-contrast-7, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-7));
+    $_kendo-warning-surface-contrast-7-rgb: var(--kendo-warning-surface-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-warning-surface-contrast-7-rgb));
+    $_kendo-warning-stroke-contrast-1: var(--kendo-warning-stroke-contrast-1, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-1));
+    $_kendo-warning-stroke-contrast-1-rgb: var(--kendo-warning-stroke-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-1-rgb));
+    $_kendo-warning-stroke-contrast-2: var(--kendo-warning-stroke-contrast-2, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-2));
+    $_kendo-warning-stroke-contrast-2-rgb: var(--kendo-warning-stroke-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-2-rgb));
+    $_kendo-warning-stroke-contrast-3: var(--kendo-warning-stroke-contrast-3, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-3));
+    $_kendo-warning-stroke-contrast-3-rgb: var(--kendo-warning-stroke-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-3-rgb));
+    $_kendo-warning-stroke-contrast-4: var(--kendo-warning-stroke-contrast-4, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-4));
+    $_kendo-warning-stroke-contrast-4-rgb: var(--kendo-warning-stroke-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-4-rgb));
+    $_kendo-warning-stroke-contrast-5: var(--kendo-warning-stroke-contrast-5, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-5));
+    $_kendo-warning-stroke-contrast-5-rgb: var(--kendo-warning-stroke-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-5-rgb));
+    $_kendo-warning-stroke-contrast-6: var(--kendo-warning-stroke-contrast-6, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-6));
+    $_kendo-warning-stroke-contrast-6-rgb: var(--kendo-warning-stroke-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-6-rgb));
+    $_kendo-warning-stroke-contrast-7: var(--kendo-warning-stroke-contrast-7, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-7));
+    $_kendo-warning-stroke-contrast-7-rgb: var(--kendo-warning-stroke-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-warning-stroke-contrast-7-rgb));
+    $_kendo-warning-content-contrast-1: var(--kendo-warning-content-contrast-1, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-1));
+    $_kendo-warning-content-contrast-1-rgb: var(--kendo-warning-content-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-1-rgb));
+    $_kendo-warning-content-contrast-2: var(--kendo-warning-content-contrast-2, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-2));
+    $_kendo-warning-content-contrast-2-rgb: var(--kendo-warning-content-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-2-rgb));
+    $_kendo-warning-content-contrast-3: var(--kendo-warning-content-contrast-3, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-3));
+    $_kendo-warning-content-contrast-3-rgb: var(--kendo-warning-content-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-3-rgb));
+    $_kendo-warning-content-contrast-4: var(--kendo-warning-content-contrast-4, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-4));
+    $_kendo-warning-content-contrast-4-rgb: var(--kendo-warning-content-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-4-rgb));
+    $_kendo-warning-content-contrast-5: var(--kendo-warning-content-contrast-5, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-5));
+    $_kendo-warning-content-contrast-5-rgb: var(--kendo-warning-content-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-5-rgb));
+    $_kendo-warning-content-contrast-6: var(--kendo-warning-content-contrast-6, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-6));
+    $_kendo-warning-content-contrast-6-rgb: var(--kendo-warning-content-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-6-rgb));
+    $_kendo-warning-content-contrast-7: var(--kendo-warning-content-contrast-7, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-7));
+    $_kendo-warning-content-contrast-7-rgb: var(--kendo-warning-content-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-warning-content-contrast-7-rgb));
 
-    $_kendo-color-success: var(--kendo-color-success, k-map-get($kendo-theme-palette, kendo-color-success));
-    $_kendo-color-success-rgb: var(--kendo-color-success-rgb, k-map-get($kendo-theme-palette, kendo-color-success-rgb));
-    $_kendo-color-success-text: var(--kendo-color-success-text, k-map-get($kendo-theme-palette, kendo-color-success-text));
-    $_kendo-color-success-text-rgb: var(--kendo-color-success-text-rgb, k-map-get($kendo-theme-palette, kendo-color-success-text-rgb));
-    $_kendo-color-success-hover: var(--kendo-color-success-hover, k-map-get($kendo-theme-palette, kendo-color-success-hover));
-    $_kendo-color-success-active: var(--kendo-color-success-active, k-map-get($kendo-theme-palette, kendo-color-success-active));
-    $_kendo-color-success-selected: var(--kendo-color-success-selected, k-map-get($kendo-theme-palette, kendo-color-success-selected));
-    $_kendo-color-success-focus: var(--kendo-color-success-focus, k-map-get($kendo-theme-palette, kendo-color-success-focus));
-    $_kendo-color-success-dim: var(--kendo-color-success-dim, k-map-get($kendo-theme-palette, kendo-color-success-dim));
-
-    $_kendo-color-warning: var(--kendo-color-warning, k-map-get($kendo-theme-palette, kendo-color-warning));
-    $_kendo-color-warning-rgb: var(--kendo-color-warning-rgb, k-map-get($kendo-theme-palette, kendo-color-warning-rgb));
-    $_kendo-color-warning-text: var(--kendo-color-warning-text, k-map-get($kendo-theme-palette, kendo-color-warning-text));
-    $_kendo-color-warning-text-rgb: var(--kendo-color-warning-text-rgb, k-map-get($kendo-theme-palette, kendo-color-warning-text-rgb));
-    $_kendo-color-warning-hover: var(--kendo-color-warning-hover, k-map-get($kendo-theme-palette, kendo-color-warning-hover));
-    $_kendo-color-warning-active: var(--kendo-color-warning-active, k-map-get($kendo-theme-palette, kendo-color-warning-active));
-    $_kendo-color-warning-selected: var(--kendo-color-warning-selected, k-map-get($kendo-theme-palette, kendo-color-warning-selected));
-    $_kendo-color-warning-focus: var(--kendo-color-warning-focus, k-map-get($kendo-theme-palette, kendo-color-warning-focus));
-
-    $_kendo-color-error: var(--kendo-color-error, k-map-get($kendo-theme-palette, kendo-color-error));
-    $_kendo-color-error-rgb: var(--kendo-color-error-rgb, k-map-get($kendo-theme-palette, kendo-color-error-rgb));
-    $_kendo-color-error-text: var(--kendo-color-error-text, k-map-get($kendo-theme-palette, kendo-color-error-text));
-    $_kendo-color-error-text-rgb: var(--kendo-color-error-text-rgb, k-map-get($kendo-theme-palette, kendo-color-error-text-rgb));
-    $_kendo-color-error-hover: var(--kendo-color-error-hover, k-map-get($kendo-theme-palette, kendo-color-error-hover));
-    $_kendo-color-error-active: var(--kendo-color-error-active, k-map-get($kendo-theme-palette, kendo-color-error-active));
-    $_kendo-color-error-selected: var(--kendo-color-error-selected, k-map-get($kendo-theme-palette, kendo-color-error-selected));
-    $_kendo-color-error-focus: var(--kendo-color-error-focus, k-map-get($kendo-theme-palette, kendo-color-error-focus));
-    $_kendo-color-error-dim: var(--kendo-color-error-dim, k-map-get($kendo-theme-palette, kendo-color-error-dim));
-
-    $_kendo-color-light: var(--kendo-color-light, k-map-get($kendo-theme-palette, kendo-color-light));
-    $_kendo-color-light-rgb: var(--kendo-color-light-rgb, k-map-get($kendo-theme-palette, kendo-color-light-rgb));
-    $_kendo-color-light-text: var(--kendo-color-light-text, k-map-get($kendo-theme-palette, kendo-color-light-text));
-    $_kendo-color-light-text-rgb: var(--kendo-color-light-text-rgb, k-map-get($kendo-theme-palette, kendo-color-light-text-rgb));
-    $_kendo-color-light-hover: var(--kendo-color-light-hover, k-map-get($kendo-theme-palette, kendo-color-light-hover));
-    $_kendo-color-light-active: var(--kendo-color-light-active, k-map-get($kendo-theme-palette, kendo-color-light-active));
-    $_kendo-color-light-selected: var(--kendo-color-light-selected, k-map-get($kendo-theme-palette, kendo-color-light-selected));
-    $_kendo-color-light-focus: var(--kendo-color-light-focus, k-map-get($kendo-theme-palette, kendo-color-light-focus));
-
-    $_kendo-color-dark: var(--kendo-color-dark, k-map-get($kendo-theme-palette, kendo-color-dark));
-    $_kendo-color-dark-rgb: var(--kendo-color-dark-rgb, k-map-get($kendo-theme-palette, kendo-color-dark-rgb));
-    $_kendo-color-dark-text: var(--kendo-color-dark-text, k-map-get($kendo-theme-palette, kendo-color-dark-text));
-    $_kendo-color-dark-text-rgb: var(--kendo-color-dark-text-rgb, k-map-get($kendo-theme-palette, kendo-color-dark-text-rgb));
-    $_kendo-color-dark-hover: var(--kendo-color-dark-hover, k-map-get($kendo-theme-palette, kendo-color-dark-hover));
-    $_kendo-color-dark-active: var(--kendo-color-dark-active, k-map-get($kendo-theme-palette, kendo-color-dark-active));
-    $_kendo-color-dark-selected: var(--kendo-color-dark-selected, k-map-get($kendo-theme-palette, kendo-color-dark-selected));
-    $_kendo-color-dark-focus: var(--kendo-color-dark-focus, k-map-get($kendo-theme-palette, kendo-color-dark-focus));
-
-    $_kendo-color-inverse: var(--kendo-color-inverse, k-map-get($kendo-theme-palette, kendo-color-inverse));
-    $_kendo-color-inverse-rgb: var(--kendo-color-inverse-rgb, k-map-get($kendo-theme-palette, kendo-color-inverse-rgb));
-    $_kendo-color-inverse-text: var(--kendo-color-inverse-text, k-map-get($kendo-theme-palette, kendo-color-inverse-text));
-    $_kendo-color-inverse-text-rgb: var(--kendo-color-inverse-text-rgb, k-map-get($kendo-theme-palette, kendo-color-inverse-text-rgb));
-    $_kendo-color-inverse-hover: var(--kendo-color-inverse-hover, k-map-get($kendo-theme-palette, kendo-color-inverse-hover));
-    $_kendo-color-inverse-active: var(--kendo-color-inverse-active, k-map-get($kendo-theme-palette, kendo-color-inverse-active));
-    $_kendo-color-inverse-selected: var(--kendo-color-inverse-selected, k-map-get($kendo-theme-palette, kendo-color-inverse-selected));
-    $_kendo-color-inverse-focus: var(--kendo-color-inverse-focus, k-map-get($kendo-theme-palette, kendo-color-inverse-focus));
-
-    $_kendo-body-bg: var(--kendo-body-bg, k-map-get($kendo-theme-palette, kendo-body-bg));
-    $_kendo-body-bg-contrast: var(--kendo-body-bg-contrast, k-map-get($kendo-theme-palette, kendo-body-bg-contrast));
-    $_kendo-body-bg-contrast-rgb: var(--kendo-body-bg-contrast-rgb, k-map-get($kendo-theme-palette, kendo-body-bg-contrast-rgb));
-    $_kendo-body-bg-pale: var(--kendo-body-bg-pale, k-map-get($kendo-theme-palette, kendo-body-bg-pale));
-    $_kendo-body-bg-dim: var(--kendo-body-bg-dim, k-map-get($kendo-theme-palette, kendo-body-bg-dim));
-    $_kendo-body-text: var(--kendo-body-text, k-map-get($kendo-theme-palette, kendo-body-text));
-    $_kendo-body-text-rgb: var(--kendo-body-text-rgb, k-hex-to-rgb($kendo-body-text));
-    $_kendo-body-text-pale: var(--kendo-body-text-pale, k-map-get($kendo-theme-palette, kendo-body-text-pale));
-    $_kendo-body-text-dim: var(--kendo-body-text-dim, k-map-get($kendo-theme-palette, kendo-body-text-dim));
-    $_kendo-body-text-lighter: var(--kendo-body-text-lighter, k-map-get($kendo-theme-palette, kendo-body-text-lighter));
-    $_kendo-body-text-light: var(--kendo-body-text-light, k-map-get($kendo-theme-palette, kendo-body-text-light));
-    $_kendo-body-text-darker: var(--kendo-body-text-darker, k-map-get($kendo-theme-palette, kendo-body-text-darker));
-    $_kendo-body-hover: var(--kendo-body-hover, k-map-get($kendo-theme-palette, kendo-body-hover));
-    $_kendo-body-darken: var(--kendo-body-darken, k-map-get($kendo-theme-palette, kendo-body-darken));
-    $_kendo-body-shaded: var(--kendo-body-shaded, k-map-get($kendo-theme-palette, kendo-body-shaded));
-
-    $_kendo-base-bg: var(--kendo-base-bg, k-map-get($kendo-theme-palette, kendo-base-bg));
-    $_kendo-base-text: var(--kendo-base-text, k-map-get($kendo-theme-palette, kendo-base-text));
-    $_kendo-base-hover: var(--kendo-base-hover, k-map-get($kendo-theme-palette, kendo-base-hover));
-
-    $_kendo-color-border: var(--kendo-color-border, k-map-get($kendo-theme-palette, kendo-color-border));
-    $_kendo-color-border-rgb: var(--kendo-color-border-rgb, k-hex-to-rgb($kendo-color-border));
-    $_kendo-color-border-hover: var(--kendo-color-border-hover, k-map-get($kendo-theme-palette, kendo-color-border-hover));
-    $_kendo-color-border-hover-rgb: var(--kendo-color-border-hover-rgb, k-hex-to-rgb($kendo-color-border-hover));
-    $_kendo-color-border-focus: var(--kendo-color-border-focus, k-map-get($kendo-theme-palette, kendo-color-border-focus));
-    $_kendo-color-border-focus-rgb: var(--kendo-color-border-focus-rgb, k-hex-to-rgb($kendo-color-border-focus));
+    $_kendo-error-surface-contrast-1: var(--kendo-error-surface-contrast-1, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-1));
+    $_kendo-error-surface-contrast-1-rgb: var(--kendo-error-surface-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-1-rgb));
+    $_kendo-error-surface-contrast-2: var(--kendo-error-surface-contrast-2, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-2));
+    $_kendo-error-surface-contrast-2-rgb: var(--kendo-error-surface-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-2-rgb));
+    $_kendo-error-surface-contrast-3: var(--kendo-error-surface-contrast-3, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-3));
+    $_kendo-error-surface-contrast-3-rgb: var(--kendo-error-surface-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-3-rgb));
+    $_kendo-error-surface-contrast-4: var(--kendo-error-surface-contrast-4, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-4));
+    $_kendo-error-surface-contrast-4-rgb: var(--kendo-error-surface-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-4-rgb));
+    $_kendo-error-surface-contrast-5: var(--kendo-error-surface-contrast-5, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-5));
+    $_kendo-error-surface-contrast-5-rgb: var(--kendo-error-surface-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-5-rgb));
+    $_kendo-error-surface-contrast-6: var(--kendo-error-surface-contrast-6, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-6));
+    $_kendo-error-surface-contrast-6-rgb: var(--kendo-error-surface-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-6-rgb));
+    $_kendo-error-surface-contrast-7: var(--kendo-error-surface-contrast-7, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-7));
+    $_kendo-error-surface-contrast-7-rgb: var(--kendo-error-surface-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-error-surface-contrast-7-rgb));
+    $_kendo-error-stroke-contrast-1: var(--kendo-error-stroke-contrast-1, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-1));
+    $_kendo-error-stroke-contrast-1-rgb: var(--kendo-error-stroke-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-1-rgb));
+    $_kendo-error-stroke-contrast-2: var(--kendo-error-stroke-contrast-2, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-2));
+    $_kendo-error-stroke-contrast-2-rgb: var(--kendo-error-stroke-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-2-rgb));
+    $_kendo-error-stroke-contrast-3: var(--kendo-error-stroke-contrast-3, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-3));
+    $_kendo-error-stroke-contrast-3-rgb: var(--kendo-error-stroke-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-3-rgb));
+    $_kendo-error-stroke-contrast-4: var(--kendo-error-stroke-contrast-4, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-4));
+    $_kendo-error-stroke-contrast-4-rgb: var(--kendo-error-stroke-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-4-rgb));
+    $_kendo-error-stroke-contrast-5: var(--kendo-error-stroke-contrast-5, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-5));
+    $_kendo-error-stroke-contrast-5-rgb: var(--kendo-error-stroke-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-5-rgb));
+    $_kendo-error-stroke-contrast-6: var(--kendo-error-stroke-contrast-6, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-6));
+    $_kendo-error-stroke-contrast-6-rgb: var(--kendo-error-stroke-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-6-rgb));
+    $_kendo-error-stroke-contrast-7: var(--kendo-error-stroke-contrast-7, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-7));
+    $_kendo-error-stroke-contrast-7-rgb: var(--kendo-error-stroke-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-error-stroke-contrast-7-rgb));
+    $_kendo-error-content-contrast-1: var(--kendo-error-content-contrast-1, k-map-get($kendo-theme-palette, kendo-error-content-contrast-1));
+    $_kendo-error-content-contrast-1-rgb: var(--kendo-error-content-contrast-1-rgb, k-map-get($kendo-theme-palette, kendo-error-content-contrast-1-rgb));
+    $_kendo-error-content-contrast-2: var(--kendo-error-content-contrast-2, k-map-get($kendo-theme-palette, kendo-error-content-contrast-2));
+    $_kendo-error-content-contrast-2-rgb: var(--kendo-error-content-contrast-2-rgb, k-map-get($kendo-theme-palette, kendo-error-content-contrast-2-rgb));
+    $_kendo-error-content-contrast-3: var(--kendo-error-content-contrast-3, k-map-get($kendo-theme-palette, kendo-error-content-contrast-3));
+    $_kendo-error-content-contrast-3-rgb: var(--kendo-error-content-contrast-3-rgb, k-map-get($kendo-theme-palette, kendo-error-content-contrast-3-rgb));
+    $_kendo-error-content-contrast-4: var(--kendo-error-content-contrast-4, k-map-get($kendo-theme-palette, kendo-error-content-contrast-4));
+    $_kendo-error-content-contrast-4-rgb: var(--kendo-error-content-contrast-4-rgb, k-map-get($kendo-theme-palette, kendo-error-content-contrast-4-rgb));
+    $_kendo-error-content-contrast-5: var(--kendo-error-content-contrast-5, k-map-get($kendo-theme-palette, kendo-error-content-contrast-5));
+    $_kendo-error-content-contrast-5-rgb: var(--kendo-error-content-contrast-5-rgb, k-map-get($kendo-theme-palette, kendo-error-content-contrast-5-rgb));
+    $_kendo-error-content-contrast-6: var(--kendo-error-content-contrast-6, k-map-get($kendo-theme-palette, kendo-error-content-contrast-6));
+    $_kendo-error-content-contrast-6-rgb: var(--kendo-error-content-contrast-6-rgb, k-map-get($kendo-theme-palette, kendo-error-content-contrast-6-rgb));
+    $_kendo-error-content-contrast-7: var(--kendo-error-content-contrast-7, k-map-get($kendo-theme-palette, kendo-error-content-contrast-7));
+    $_kendo-error-content-contrast-7-rgb: var(--kendo-error-content-contrast-7-rgb, k-map-get($kendo-theme-palette, kendo-error-content-contrast-7-rgb));
 
     $kendo-theme-swatches: (
         "base": (
-            normal: $_kendo-color-base,
-            rgb: $_kendo-color-base-rgb,
-            text: $_kendo-color-base-text,
-            text-rgb: $_kendo-color-base-text-rgb,
-            hover: $_kendo-color-base-hover,
-            active: $_kendo-color-base-active,
-            selected: $_kendo-color-base-selected,
-            focus: $_kendo-color-base-focus,
+            "surface": (
+                contrast-1: $_kendo-base-surface-contrast-1,
+                contrast-1-rgb: $_kendo-base-surface-contrast-1-rgb,
+                contrast-2: $_kendo-base-surface-contrast-1,
+                contrast-2-rgb: $_kendo-base-surface-contrast-1-rgb,
+                contrast-3: $_kendo-base-surface-contrast-1,
+                contrast-3-rgb: $_kendo-base-surface-contrast-1-rgb,
+                contrast-4: $_kendo-base-surface-contrast-1,
+                contrast-4-rgb: $_kendo-base-surface-contrast-1-rgb,
+                contrast-5: $_kendo-base-surface-contrast-1,
+                contrast-5-rgb: $_kendo-base-surface-contrast-1-rgb,
+                contrast-6: $_kendo-base-surface-contrast-1,
+                contrast-6-rgb: $_kendo-base-surface-contrast-1-rgb,
+                contrast-7: $_kendo-base-surface-contrast-1,
+                contrast-7-rgb: $_kendo-base-surface-contrast-1-rgb,
+            ),
+            "stroke": (
+                contrast-1: $_kendo-base-stroke-contrast-1,
+                contrast-1-rgb: $_kendo-base-stroke-contrast-1-rgb,
+                contrast-2: $_kendo-base-stroke-contrast-2,
+                contrast-2-rgb: $_kendo-base-stroke-contrast-2-rgb,
+                contrast-3: $_kendo-base-stroke-contrast-3,
+                contrast-3-rgb: $_kendo-base-stroke-contrast-3-rgb,
+                contrast-4: $_kendo-base-stroke-contrast-4,
+                contrast-4-rgb: $_kendo-base-stroke-contrast-4-rgb,
+                contrast-5: $_kendo-base-stroke-contrast-5,
+                contrast-5-rgb: $_kendo-base-stroke-contrast-5-rgb,
+                contrast-6: $_kendo-base-stroke-contrast-6,
+                contrast-6-rgb: $_kendo-base-stroke-contrast-6-rgb,
+                contrast-7: $_kendo-base-stroke-contrast-7,
+                contrast-7-rgb: $_kendo-base-stroke-contrast-7-rgb,
+            ),
+            "content": (
+                contrast-1: $_kendo-base-content-contrast-1,
+                contrast-1-rgb: $_kendo-base-content-contrast-1-rgb,
+                contrast-2: $_kendo-base-content-contrast-2,
+                contrast-2-rgb: $_kendo-base-content-contrast-2-rgb,
+                contrast-3: $_kendo-base-content-contrast-3,
+                contrast-3-rgb: $_kendo-base-content-contrast-3-rgb,
+                contrast-4: $_kendo-base-content-contrast-4,
+                contrast-4-rgb: $_kendo-base-content-contrast-4-rgb,
+                contrast-5: $_kendo-base-content-contrast-5,
+                contrast-5-rgb: $_kendo-base-content-contrast-5-rgb,
+                contrast-6: $_kendo-base-content-contrast-6,
+                contrast-6-rgb: $_kendo-base-content-contrast-6-rgb,
+                contrast-7: $_kendo-base-content-contrast-7,
+                contrast-7-rgb: $_kendo-base-content-contrast-7-rgb,
+            )
         ),
         "primary": (
-            normal: $_kendo-color-primary,
-            rgb: $_kendo-color-primary-rgb,
-            text: $_kendo-color-primary-text,
-            text-rgb: $_kendo-color-primary-text-rgb,
-            hover: $_kendo-color-primary-hover,
-            active: $_kendo-color-primary-active,
-            selected: $_kendo-color-primary-selected,
-            focus: $_kendo-color-primary-focus,
+            "surface": (
+                contrast-1: $_kendo-primary-surface-contrast-1,
+                contrast-1-rgb: $_kendo-primary-surface-contrast-1-rgb,
+                contrast-2: $_kendo-primary-surface-contrast-1,
+                contrast-2-rgb: $_kendo-primary-surface-contrast-1-rgb,
+                contrast-3: $_kendo-primary-surface-contrast-1,
+                contrast-3-rgb: $_kendo-primary-surface-contrast-1-rgb,
+                contrast-4: $_kendo-primary-surface-contrast-1,
+                contrast-4-rgb: $_kendo-primary-surface-contrast-1-rgb,
+                contrast-5: $_kendo-primary-surface-contrast-1,
+                contrast-5-rgb: $_kendo-primary-surface-contrast-1-rgb,
+                contrast-6: $_kendo-primary-surface-contrast-1,
+                contrast-6-rgb: $_kendo-primary-surface-contrast-1-rgb,
+                contrast-7: $_kendo-primary-surface-contrast-1,
+                contrast-7-rgb: $_kendo-primary-surface-contrast-1-rgb,
+            ),
+            "stroke": (
+                contrast-1: $_kendo-primary-stroke-contrast-1,
+                contrast-1-rgb: $_kendo-primary-stroke-contrast-1-rgb,
+                contrast-2: $_kendo-primary-stroke-contrast-2,
+                contrast-2-rgb: $_kendo-primary-stroke-contrast-2-rgb,
+                contrast-3: $_kendo-primary-stroke-contrast-3,
+                contrast-3-rgb: $_kendo-primary-stroke-contrast-3-rgb,
+                contrast-4: $_kendo-primary-stroke-contrast-4,
+                contrast-4-rgb: $_kendo-primary-stroke-contrast-4-rgb,
+                contrast-5: $_kendo-primary-stroke-contrast-5,
+                contrast-5-rgb: $_kendo-primary-stroke-contrast-5-rgb,
+                contrast-6: $_kendo-primary-stroke-contrast-6,
+                contrast-6-rgb: $_kendo-primary-stroke-contrast-6-rgb,
+                contrast-7: $_kendo-primary-stroke-contrast-7,
+                contrast-7-rgb: $_kendo-primary-stroke-contrast-7-rgb,
+            ),
+            "content": (
+                contrast-1: $_kendo-primary-content-contrast-1,
+                contrast-1-rgb: $_kendo-primary-content-contrast-1-rgb,
+                contrast-2: $_kendo-primary-content-contrast-2,
+                contrast-2-rgb: $_kendo-primary-content-contrast-2-rgb,
+                contrast-3: $_kendo-primary-content-contrast-3,
+                contrast-3-rgb: $_kendo-primary-content-contrast-3-rgb,
+                contrast-4: $_kendo-primary-content-contrast-4,
+                contrast-4-rgb: $_kendo-primary-content-contrast-4-rgb,
+                contrast-5: $_kendo-primary-content-contrast-5,
+                contrast-5-rgb: $_kendo-primary-content-contrast-5-rgb,
+                contrast-6: $_kendo-primary-content-contrast-6,
+                contrast-6-rgb: $_kendo-primary-content-contrast-6-rgb,
+                contrast-7: $_kendo-primary-content-contrast-7,
+                contrast-7-rgb: $_kendo-primary-content-contrast-7-rgb,
+            )
         ),
         "secondary": (
-            normal: $_kendo-color-secondary,
-            rgb: $_kendo-color-secondary-rgb,
-            text: $_kendo-color-secondary-text,
-            text-rgb: $_kendo-color-secondary-text-rgb,
-            hover: $_kendo-color-secondary-hover,
-            active: $_kendo-color-secondary-active,
-            selected: $_kendo-color-secondary-selected,
-            focus: $_kendo-color-secondary-focus,
+            "surface": (
+                contrast-1: $_kendo-secondary-surface-contrast-1,
+                contrast-1-rgb: $_kendo-secondary-surface-contrast-1-rgb,
+                contrast-2: $_kendo-secondary-surface-contrast-1,
+                contrast-2-rgb: $_kendo-secondary-surface-contrast-1-rgb,
+                contrast-3: $_kendo-secondary-surface-contrast-1,
+                contrast-3-rgb: $_kendo-secondary-surface-contrast-1-rgb,
+                contrast-4: $_kendo-secondary-surface-contrast-1,
+                contrast-4-rgb: $_kendo-secondary-surface-contrast-1-rgb,
+                contrast-5: $_kendo-secondary-surface-contrast-1,
+                contrast-5-rgb: $_kendo-secondary-surface-contrast-1-rgb,
+                contrast-6: $_kendo-secondary-surface-contrast-1,
+                contrast-6-rgb: $_kendo-secondary-surface-contrast-1-rgb,
+                contrast-7: $_kendo-secondary-surface-contrast-1,
+                contrast-7-rgb: $_kendo-secondary-surface-contrast-1-rgb,
+            ),
+            "stroke": (
+                contrast-1: $_kendo-secondary-stroke-contrast-1,
+                contrast-1-rgb: $_kendo-secondary-stroke-contrast-1-rgb,
+                contrast-2: $_kendo-secondary-stroke-contrast-2,
+                contrast-2-rgb: $_kendo-secondary-stroke-contrast-2-rgb,
+                contrast-3: $_kendo-secondary-stroke-contrast-3,
+                contrast-3-rgb: $_kendo-secondary-stroke-contrast-3-rgb,
+                contrast-4: $_kendo-secondary-stroke-contrast-4,
+                contrast-4-rgb: $_kendo-secondary-stroke-contrast-4-rgb,
+                contrast-5: $_kendo-secondary-stroke-contrast-5,
+                contrast-5-rgb: $_kendo-secondary-stroke-contrast-5-rgb,
+                contrast-6: $_kendo-secondary-stroke-contrast-6,
+                contrast-6-rgb: $_kendo-secondary-stroke-contrast-6-rgb,
+                contrast-7: $_kendo-secondary-stroke-contrast-7,
+                contrast-7-rgb: $_kendo-secondary-stroke-contrast-7-rgb,
+            ),
+            "content": (
+                contrast-1: $_kendo-secondary-content-contrast-1,
+                contrast-1-rgb: $_kendo-secondary-content-contrast-1-rgb,
+                contrast-2: $_kendo-secondary-content-contrast-2,
+                contrast-2-rgb: $_kendo-secondary-content-contrast-2-rgb,
+                contrast-3: $_kendo-secondary-content-contrast-3,
+                contrast-3-rgb: $_kendo-secondary-content-contrast-3-rgb,
+                contrast-4: $_kendo-secondary-content-contrast-4,
+                contrast-4-rgb: $_kendo-secondary-content-contrast-4-rgb,
+                contrast-5: $_kendo-secondary-content-contrast-5,
+                contrast-5-rgb: $_kendo-secondary-content-contrast-5-rgb,
+                contrast-6: $_kendo-secondary-content-contrast-6,
+                contrast-6-rgb: $_kendo-secondary-content-contrast-6-rgb,
+                contrast-7: $_kendo-secondary-content-contrast-7,
+                contrast-7-rgb: $_kendo-secondary-content-contrast-7-rgb,
+            )
         ),
         "tertiary": (
-            normal: $_kendo-color-tertiary,
-            rgb: $_kendo-color-tertiary-rgb,
-            text: $_kendo-color-tertiary-text,
-            text-rgb: $_kendo-color-tertiary-text-rgb,
-            hover: $_kendo-color-tertiary-hover,
-            active: $_kendo-color-tertiary-active,
-            selected: $_kendo-color-tertiary-selected,
-            focus: $_kendo-color-tertiary-focus,
+            "surface": (
+                contrast-1: $_kendo-tertiary-surface-contrast-1,
+                contrast-1-rgb: $_kendo-tertiary-surface-contrast-1-rgb,
+                contrast-2: $_kendo-tertiary-surface-contrast-1,
+                contrast-2-rgb: $_kendo-tertiary-surface-contrast-1-rgb,
+                contrast-3: $_kendo-tertiary-surface-contrast-1,
+                contrast-3-rgb: $_kendo-tertiary-surface-contrast-1-rgb,
+                contrast-4: $_kendo-tertiary-surface-contrast-1,
+                contrast-4-rgb: $_kendo-tertiary-surface-contrast-1-rgb,
+                contrast-5: $_kendo-tertiary-surface-contrast-1,
+                contrast-5-rgb: $_kendo-tertiary-surface-contrast-1-rgb,
+                contrast-6: $_kendo-tertiary-surface-contrast-1,
+                contrast-6-rgb: $_kendo-tertiary-surface-contrast-1-rgb,
+                contrast-7: $_kendo-tertiary-surface-contrast-1,
+                contrast-7-rgb: $_kendo-tertiary-surface-contrast-1-rgb,
+            ),
+            "stroke": (
+                contrast-1: $_kendo-tertiary-stroke-contrast-1,
+                contrast-1-rgb: $_kendo-tertiary-stroke-contrast-1-rgb,
+                contrast-2: $_kendo-tertiary-stroke-contrast-2,
+                contrast-2-rgb: $_kendo-tertiary-stroke-contrast-2-rgb,
+                contrast-3: $_kendo-tertiary-stroke-contrast-3,
+                contrast-3-rgb: $_kendo-tertiary-stroke-contrast-3-rgb,
+                contrast-4: $_kendo-tertiary-stroke-contrast-4,
+                contrast-4-rgb: $_kendo-tertiary-stroke-contrast-4-rgb,
+                contrast-5: $_kendo-tertiary-stroke-contrast-5,
+                contrast-5-rgb: $_kendo-tertiary-stroke-contrast-5-rgb,
+                contrast-6: $_kendo-tertiary-stroke-contrast-6,
+                contrast-6-rgb: $_kendo-tertiary-stroke-contrast-6-rgb,
+                contrast-7: $_kendo-tertiary-stroke-contrast-7,
+                contrast-7-rgb: $_kendo-tertiary-stroke-contrast-7-rgb,
+            ),
+            "content": (
+                contrast-1: $_kendo-tertiary-content-contrast-1,
+                contrast-1-rgb: $_kendo-tertiary-content-contrast-1-rgb,
+                contrast-2: $_kendo-tertiary-content-contrast-2,
+                contrast-2-rgb: $_kendo-tertiary-content-contrast-2-rgb,
+                contrast-3: $_kendo-tertiary-content-contrast-3,
+                contrast-3-rgb: $_kendo-tertiary-content-contrast-3-rgb,
+                contrast-4: $_kendo-tertiary-content-contrast-4,
+                contrast-4-rgb: $_kendo-tertiary-content-contrast-4-rgb,
+                contrast-5: $_kendo-tertiary-content-contrast-5,
+                contrast-5-rgb: $_kendo-tertiary-content-contrast-5-rgb,
+                contrast-6: $_kendo-tertiary-content-contrast-6,
+                contrast-6-rgb: $_kendo-tertiary-content-contrast-6-rgb,
+                contrast-7: $_kendo-tertiary-content-contrast-7,
+                contrast-7-rgb: $_kendo-tertiary-content-contrast-7-rgb,
+            )
         ),
         "info": (
-            normal: $_kendo-color-info,
-            rgb: $_kendo-color-info-rgb,
-            text: $_kendo-color-info-text,
-            text-rgb: $_kendo-color-info-text-rgb,
-            hover: $_kendo-color-info-hover,
-            active: $_kendo-color-info-active,
-            selected: $_kendo-color-info-selected,
-            focus: $_kendo-color-info-focus,
+            "surface": (
+                contrast-1: $_kendo-info-surface-contrast-1,
+                contrast-1-rgb: $_kendo-info-surface-contrast-1-rgb,
+                contrast-2: $_kendo-info-surface-contrast-1,
+                contrast-2-rgb: $_kendo-info-surface-contrast-1-rgb,
+                contrast-3: $_kendo-info-surface-contrast-1,
+                contrast-3-rgb: $_kendo-info-surface-contrast-1-rgb,
+                contrast-4: $_kendo-info-surface-contrast-1,
+                contrast-4-rgb: $_kendo-info-surface-contrast-1-rgb,
+                contrast-5: $_kendo-info-surface-contrast-1,
+                contrast-5-rgb: $_kendo-info-surface-contrast-1-rgb,
+                contrast-6: $_kendo-info-surface-contrast-1,
+                contrast-6-rgb: $_kendo-info-surface-contrast-1-rgb,
+                contrast-7: $_kendo-info-surface-contrast-1,
+                contrast-7-rgb: $_kendo-info-surface-contrast-1-rgb,
+            ),
+            "stroke": (
+                contrast-1: $_kendo-info-stroke-contrast-1,
+                contrast-1-rgb: $_kendo-info-stroke-contrast-1-rgb,
+                contrast-2: $_kendo-info-stroke-contrast-2,
+                contrast-2-rgb: $_kendo-info-stroke-contrast-2-rgb,
+                contrast-3: $_kendo-info-stroke-contrast-3,
+                contrast-3-rgb: $_kendo-info-stroke-contrast-3-rgb,
+                contrast-4: $_kendo-info-stroke-contrast-4,
+                contrast-4-rgb: $_kendo-info-stroke-contrast-4-rgb,
+                contrast-5: $_kendo-info-stroke-contrast-5,
+                contrast-5-rgb: $_kendo-info-stroke-contrast-5-rgb,
+                contrast-6: $_kendo-info-stroke-contrast-6,
+                contrast-6-rgb: $_kendo-info-stroke-contrast-6-rgb,
+                contrast-7: $_kendo-info-stroke-contrast-7,
+                contrast-7-rgb: $_kendo-info-stroke-contrast-7-rgb,
+            ),
+            "content": (
+                contrast-1: $_kendo-info-content-contrast-1,
+                contrast-1-rgb: $_kendo-info-content-contrast-1-rgb,
+                contrast-2: $_kendo-info-content-contrast-2,
+                contrast-2-rgb: $_kendo-info-content-contrast-2-rgb,
+                contrast-3: $_kendo-info-content-contrast-3,
+                contrast-3-rgb: $_kendo-info-content-contrast-3-rgb,
+                contrast-4: $_kendo-info-content-contrast-4,
+                contrast-4-rgb: $_kendo-info-content-contrast-4-rgb,
+                contrast-5: $_kendo-info-content-contrast-5,
+                contrast-5-rgb: $_kendo-info-content-contrast-5-rgb,
+                contrast-6: $_kendo-info-content-contrast-6,
+                contrast-6-rgb: $_kendo-info-content-contrast-6-rgb,
+                contrast-7: $_kendo-info-content-contrast-7,
+                contrast-7-rgb: $_kendo-info-content-contrast-7-rgb,
+            )
         ),
         "success": (
-            normal: $_kendo-color-success,
-            rgb: $_kendo-color-success-rgb,
-            text: $_kendo-color-success-text,
-            text-rgb: $_kendo-color-success-text-rgb,
-            hover: $_kendo-color-success-hover,
-            active: $_kendo-color-success-active,
-            selected: $_kendo-color-success-selected,
-            focus: $_kendo-color-success-focus,
+            "surface": (
+                contrast-1: $_kendo-success-surface-contrast-1,
+                contrast-1-rgb: $_kendo-success-surface-contrast-1-rgb,
+                contrast-2: $_kendo-success-surface-contrast-1,
+                contrast-2-rgb: $_kendo-success-surface-contrast-1-rgb,
+                contrast-3: $_kendo-success-surface-contrast-1,
+                contrast-3-rgb: $_kendo-success-surface-contrast-1-rgb,
+                contrast-4: $_kendo-success-surface-contrast-1,
+                contrast-4-rgb: $_kendo-success-surface-contrast-1-rgb,
+                contrast-5: $_kendo-success-surface-contrast-1,
+                contrast-5-rgb: $_kendo-success-surface-contrast-1-rgb,
+                contrast-6: $_kendo-success-surface-contrast-1,
+                contrast-6-rgb: $_kendo-success-surface-contrast-1-rgb,
+                contrast-7: $_kendo-success-surface-contrast-1,
+                contrast-7-rgb: $_kendo-success-surface-contrast-1-rgb,
+            ),
+            "stroke": (
+                contrast-1: $_kendo-success-stroke-contrast-1,
+                contrast-1-rgb: $_kendo-success-stroke-contrast-1-rgb,
+                contrast-2: $_kendo-success-stroke-contrast-2,
+                contrast-2-rgb: $_kendo-success-stroke-contrast-2-rgb,
+                contrast-3: $_kendo-success-stroke-contrast-3,
+                contrast-3-rgb: $_kendo-success-stroke-contrast-3-rgb,
+                contrast-4: $_kendo-success-stroke-contrast-4,
+                contrast-4-rgb: $_kendo-success-stroke-contrast-4-rgb,
+                contrast-5: $_kendo-success-stroke-contrast-5,
+                contrast-5-rgb: $_kendo-success-stroke-contrast-5-rgb,
+                contrast-6: $_kendo-success-stroke-contrast-6,
+                contrast-6-rgb: $_kendo-success-stroke-contrast-6-rgb,
+                contrast-7: $_kendo-success-stroke-contrast-7,
+                contrast-7-rgb: $_kendo-success-stroke-contrast-7-rgb,
+            ),
+            "content": (
+                contrast-1: $_kendo-success-content-contrast-1,
+                contrast-1-rgb: $_kendo-success-content-contrast-1-rgb,
+                contrast-2: $_kendo-success-content-contrast-2,
+                contrast-2-rgb: $_kendo-success-content-contrast-2-rgb,
+                contrast-3: $_kendo-success-content-contrast-3,
+                contrast-3-rgb: $_kendo-success-content-contrast-3-rgb,
+                contrast-4: $_kendo-success-content-contrast-4,
+                contrast-4-rgb: $_kendo-success-content-contrast-4-rgb,
+                contrast-5: $_kendo-success-content-contrast-5,
+                contrast-5-rgb: $_kendo-success-content-contrast-5-rgb,
+                contrast-6: $_kendo-success-content-contrast-6,
+                contrast-6-rgb: $_kendo-success-content-contrast-6-rgb,
+                contrast-7: $_kendo-success-content-contrast-7,
+                contrast-7-rgb: $_kendo-success-content-contrast-7-rgb,
+            )
         ),
         "warning": (
-            normal: $_kendo-color-warning,
-            rgb: $_kendo-color-warning-rgb,
-            text: $_kendo-color-warning-text,
-            text-rgb: $_kendo-color-warning-text-rgb,
-            hover: $_kendo-color-warning-hover,
-            active: $_kendo-color-warning-active,
-            selected: $_kendo-color-warning-selected,
-            focus: $_kendo-color-warning-focus,
+            "surface": (
+                contrast-1: $_kendo-warning-surface-contrast-1,
+                contrast-1-rgb: $_kendo-warning-surface-contrast-1-rgb,
+                contrast-2: $_kendo-warning-surface-contrast-1,
+                contrast-2-rgb: $_kendo-warning-surface-contrast-1-rgb,
+                contrast-3: $_kendo-warning-surface-contrast-1,
+                contrast-3-rgb: $_kendo-warning-surface-contrast-1-rgb,
+                contrast-4: $_kendo-warning-surface-contrast-1,
+                contrast-4-rgb: $_kendo-warning-surface-contrast-1-rgb,
+                contrast-5: $_kendo-warning-surface-contrast-1,
+                contrast-5-rgb: $_kendo-warning-surface-contrast-1-rgb,
+                contrast-6: $_kendo-warning-surface-contrast-1,
+                contrast-6-rgb: $_kendo-warning-surface-contrast-1-rgb,
+                contrast-7: $_kendo-warning-surface-contrast-1,
+                contrast-7-rgb: $_kendo-warning-surface-contrast-1-rgb,
+            ),
+            "stroke": (
+                contrast-1: $_kendo-warning-stroke-contrast-1,
+                contrast-1-rgb: $_kendo-warning-stroke-contrast-1-rgb,
+                contrast-2: $_kendo-warning-stroke-contrast-2,
+                contrast-2-rgb: $_kendo-warning-stroke-contrast-2-rgb,
+                contrast-3: $_kendo-warning-stroke-contrast-3,
+                contrast-3-rgb: $_kendo-warning-stroke-contrast-3-rgb,
+                contrast-4: $_kendo-warning-stroke-contrast-4,
+                contrast-4-rgb: $_kendo-warning-stroke-contrast-4-rgb,
+                contrast-5: $_kendo-warning-stroke-contrast-5,
+                contrast-5-rgb: $_kendo-warning-stroke-contrast-5-rgb,
+                contrast-6: $_kendo-warning-stroke-contrast-6,
+                contrast-6-rgb: $_kendo-warning-stroke-contrast-6-rgb,
+                contrast-7: $_kendo-warning-stroke-contrast-7,
+                contrast-7-rgb: $_kendo-warning-stroke-contrast-7-rgb,
+            ),
+            "content": (
+                contrast-1: $_kendo-warning-content-contrast-1,
+                contrast-1-rgb: $_kendo-warning-content-contrast-1-rgb,
+                contrast-2: $_kendo-warning-content-contrast-2,
+                contrast-2-rgb: $_kendo-warning-content-contrast-2-rgb,
+                contrast-3: $_kendo-warning-content-contrast-3,
+                contrast-3-rgb: $_kendo-warning-content-contrast-3-rgb,
+                contrast-4: $_kendo-warning-content-contrast-4,
+                contrast-4-rgb: $_kendo-warning-content-contrast-4-rgb,
+                contrast-5: $_kendo-warning-content-contrast-5,
+                contrast-5-rgb: $_kendo-warning-content-contrast-5-rgb,
+                contrast-6: $_kendo-warning-content-contrast-6,
+                contrast-6-rgb: $_kendo-warning-content-contrast-6-rgb,
+                contrast-7: $_kendo-warning-content-contrast-7,
+                contrast-7-rgb: $_kendo-warning-content-contrast-7-rgb,
+            )
         ),
         "error": (
-            normal: $_kendo-color-error,
-            rgb: $_kendo-color-error-rgb,
-            text: $_kendo-color-error-text,
-            text-rgb: $_kendo-color-error-text-rgb,
-            hover: $_kendo-color-error-hover,
-            active: $_kendo-color-error-active,
-            selected: $_kendo-color-error-selected,
-            focus: $_kendo-color-error-focus,
-        ),
-        "light": (
-            normal: $_kendo-color-light,
-            rgb: $_kendo-color-light-rgb,
-            text: $_kendo-color-light-text,
-            text-rgb: $_kendo-color-light-text-rgb,
-            hover: $_kendo-color-light-hover,
-            active: $_kendo-color-light-active,
-            selected: $_kendo-color-light-selected,
-            focus: $_kendo-color-light-focus,
-        ),
-        "dark": (
-            normal: $_kendo-color-dark,
-            rgb: $_kendo-color-dark-rgb,
-            text: $_kendo-color-dark-text,
-            text-rgb: $_kendo-color-dark-text-rgb,
-            hover: $_kendo-color-dark-hover,
-            active: $_kendo-color-dark-active,
-            selected: $_kendo-color-dark-selected,
-            focus: $_kendo-color-dark-focus,
-        ),
-        "inverse": (
-            normal: $_kendo-color-inverse,
-            rgb: $_kendo-color-inverse-rgb,
-            text: $_kendo-color-inverse-text,
-            text-rgb: $_kendo-color-inverse-text-rgb,
-            hover: $_kendo-color-inverse-hover,
-            active: $_kendo-color-inverse-active,
-            selected: $_kendo-color-inverse-selected,
-            focus: $_kendo-color-inverse-focus,
+            "surface": (
+                contrast-1: $_kendo-error-surface-contrast-1,
+                contrast-1-rgb: $_kendo-error-surface-contrast-1-rgb,
+                contrast-2: $_kendo-error-surface-contrast-1,
+                contrast-2-rgb: $_kendo-error-surface-contrast-1-rgb,
+                contrast-3: $_kendo-error-surface-contrast-1,
+                contrast-3-rgb: $_kendo-error-surface-contrast-1-rgb,
+                contrast-4: $_kendo-error-surface-contrast-1,
+                contrast-4-rgb: $_kendo-error-surface-contrast-1-rgb,
+                contrast-5: $_kendo-error-surface-contrast-1,
+                contrast-5-rgb: $_kendo-error-surface-contrast-1-rgb,
+                contrast-6: $_kendo-error-surface-contrast-1,
+                contrast-6-rgb: $_kendo-error-surface-contrast-1-rgb,
+                contrast-7: $_kendo-error-surface-contrast-1,
+                contrast-7-rgb: $_kendo-error-surface-contrast-1-rgb,
+            ),
+            "stroke": (
+                contrast-1: $_kendo-error-stroke-contrast-1,
+                contrast-1-rgb: $_kendo-error-stroke-contrast-1-rgb,
+                contrast-2: $_kendo-error-stroke-contrast-2,
+                contrast-2-rgb: $_kendo-error-stroke-contrast-2-rgb,
+                contrast-3: $_kendo-error-stroke-contrast-3,
+                contrast-3-rgb: $_kendo-error-stroke-contrast-3-rgb,
+                contrast-4: $_kendo-error-stroke-contrast-4,
+                contrast-4-rgb: $_kendo-error-stroke-contrast-4-rgb,
+                contrast-5: $_kendo-error-stroke-contrast-5,
+                contrast-5-rgb: $_kendo-error-stroke-contrast-5-rgb,
+                contrast-6: $_kendo-error-stroke-contrast-6,
+                contrast-6-rgb: $_kendo-error-stroke-contrast-6-rgb,
+                contrast-7: $_kendo-error-stroke-contrast-7,
+                contrast-7-rgb: $_kendo-error-stroke-contrast-7-rgb,
+            ),
+            "content": (
+                contrast-1: $_kendo-error-content-contrast-1,
+                contrast-1-rgb: $_kendo-error-content-contrast-1-rgb,
+                contrast-2: $_kendo-error-content-contrast-2,
+                contrast-2-rgb: $_kendo-error-content-contrast-2-rgb,
+                contrast-3: $_kendo-error-content-contrast-3,
+                contrast-3-rgb: $_kendo-error-content-contrast-3-rgb,
+                contrast-4: $_kendo-error-content-contrast-4,
+                contrast-4-rgb: $_kendo-error-content-contrast-4-rgb,
+                contrast-5: $_kendo-error-content-contrast-5,
+                contrast-5-rgb: $_kendo-error-content-contrast-5-rgb,
+                contrast-6: $_kendo-error-content-contrast-6,
+                contrast-6-rgb: $_kendo-error-content-contrast-6-rgb,
+                contrast-7: $_kendo-error-content-contrast-7,
+                contrast-7-rgb: $_kendo-error-content-contrast-7-rgb,
+            )
         ),
     );
 }
-
-$kendo-theme-colors: (
-    "primary": $kendo-color-primary,
-    "secondary": $kendo-color-secondary,
-    "tertiary": $kendo-color-tertiary,
-    "info": $kendo-color-info,
-    "success": $kendo-color-success,
-    "warning": $kendo-color-warning,
-    "error": $kendo-color-error,
-    "dark": $kendo-color-dark,
-    "light": $kendo-color-light,
-    "inverse": $kendo-color-inverse
-) !default;
