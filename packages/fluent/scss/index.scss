@@ -339,7 +339,7 @@
     @include color-system-styles();
 
     // Elevation
-    @include elevation--styles();
+    @include kendo-elevation--styles();
     @include elevation--styles-legacy();
 
     // Typography and utils

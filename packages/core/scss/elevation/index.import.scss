@@ -1,51 +1,64 @@
-$kendo-elevation: (
-    1: ( 0 2px 3px rgba(0, 0, 0, .04) ), // TODO use 0, 0, 0 when color system is added to utils
-    2: ( 0 4px 6px rgba(0, 0, 0, .06) ),
-    3: ( 0 8px 10px rgba(0, 0, 0, .08) ),
-    4: ( 0 12px 14px rgba(0, 0, 0, .12) ),
-    5: ( 0 16px 18px rgba(0, 0, 0, .16) ),
-    6: ( 0 20px 22px rgba(0, 0, 0, .2) ),
-    7: ( 0 24px 26px rgba(0, 0, 0, .24) ),
-    8: ( 0 28px 30px rgba(0, 0, 0, .28) ),
-    9: ( 0 32px 34px rgba(0, 0, 0, .32), )
+@import "../functions/index.import.scss";
+
+$_default-elevation: (
+    1: (
+        0 2px 3px rgba(0, 0, 0, .04),
+        0 4px 16px rgba(0, 0, 0, .12)
+    ),
+    2: (
+        0 4px 6px rgba(0, 0, 0, .06),
+        0 4px 16px rgba(0, 0, 0, .12)
+    ),
+    3: (
+        0 6px 8px rgba(0, 0, 0, .08),
+        0 4px 16px rgba(0, 0, 0, .12)
+    ),
+    4: (
+        0 8px 10px rgba(0, 0, 0, .12),
+        0 4px 16px rgba(0, 0, 0, .12)
+    ),
+    5: (
+        0 10px 12px rgba(0, 0, 0, .16),
+        0 4px 16px rgba(0, 0, 0, .12)
+    ),
+    6: (
+        0 12px 14px rgba(0, 0, 0, .2),
+        0 4px 16px rgba(0, 0, 0, .12)
+    ),
+    7: (
+        0 14px 16px rgba(0, 0, 0, .24),
+        0 4px 16px rgba(0, 0, 0, .12)
+    ),
+    8: (
+        0 16px 18px rgba(0, 0, 0, .28),
+        0 4px 16px rgba(0, 0, 0, .12)
+    ),
+    9: (
+        0 32px 34px rgba(0, 0, 0, .32),
+        0 4px 16px rgba(0, 0, 0, .12)
+    )
 ) !default;
 
+$kendo-elevation: $_default-elevation !default;
+$kendo-elevation: k-map-merge($_default-elevation, $kendo-elevation);
 
-@function elevation($level, $inverted: false, $center: false, $horizontal: false, $color: null) {
-    $shadow: k-map-get($kendo-elevation, $level);
-
-    @if($inverted) {
-        $shadow-y: k-list-nth($shadow, 2);
-        $shadow-y-inverted: -1 * $shadow-y;
-        $shadow: k-list-set-nth($shadow, 2, $shadow-y-inverted);
+@function k-shadow-filter($shadow) {
+    $result: '';
+    @each $value in $shadow {
+        $result: $result + "drop-shadow(" + $value + ") ";
     }
+    @return #{$result};
+}
 
-    @if($center) {
-        $shadow: k-list-set-nth($shadow, 2, 0);
-    }
-
-    @if($horizontal) {
-        $shadow-x: k-list-nth($shadow, 1);
-        $shadow-y: k-list-nth($shadow, 2);
-
-        $shadow: k-list-set-nth($shadow, 1, $shadow-y);
-        $shadow: k-list-set-nth($shadow, 2, $shadow-x);
-    }
-
-    @if($color) {
-        $shadow-color: k-list-nth($shadow, 4);
-        $shadow: k-list-set-nth($shadow, 4, $color);
-    }
-
-    @return $shadow;
+@function k-elevation($level) {
+    @return var(--kendo-elevation-#{$level}, k-map-get($kendo-elevation, $level));
 }
 
 
-@mixin elevation--styles() {
-    // TODO: css vars!
-    //  :root {
-    //      @each $level, $shadow in $kendo-elevation {
-    //          --kendo-elevation-#{$level}: #{$shadow};
-    //      }
-    //  }
+@mixin kendo-elevation--styles() {
+    :root {
+        @each $level, $shadow in $kendo-elevation {
+            --kendo-elevation-#{$level}: #{$shadow};
+        }
+    }
 }

@@ -165,13 +165,13 @@ $kendo-chat-bubble-text: var( --kendo-component-text, inherit ) !default;
 $kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;
 /// The box shadow of the bubble in the chat.
 /// @group chat
-$kendo-chat-bubble-shadow: var( --kendo-box-shadow-depth-1, none ) !default; // TODO: replace with elevation()
+$kendo-chat-bubble-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
 /// The hover shadow of the bubble in the chat.
 /// @group chat
-$kendo-chat-bubble-hover-shadow: var( --kendo-box-shadow-depth-3, none ) !default; // TODO: replace with elevation()
+$kendo-chat-bubble-hover-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 /// The selected shadow of the bubble in the chat.
 /// @group chat
-$kendo-chat-bubble-selected-shadow: var( --kendo-box-shadow-depth-3, none ) !default; // TODO: replace with elevation()
+$kendo-chat-bubble-selected-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
 
 /// The background of the alt bubble in the chat.
 /// @group chat
@@ -184,13 +184,13 @@ $kendo-chat-alt-bubble-text: var( --kendo-component-bg, inherit ) !default;
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
 /// The shadow of the alt bubble in the chat.
 /// @group chat
-$kendo-chat-alt-bubble-shadow: var( --kendo-box-shadow-depth-1, none ) !default; // TODO: replace with elevation()
+$kendo-chat-alt-bubble-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
 /// The hover shadow of the alt bubble in the chat.
 /// @group chat
-$kendo-chat-alt-bubble-hover-shadow: var( --kendo-box-shadow-depth-1, none ) !default; // TODO: replace with elevation()
+$kendo-chat-alt-bubble-hover-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 /// The selected shadow of the alt bubble in the chat.
 /// @group chat
-$kendo-chat-alt-bubble-selected-shadow: var( --kendo-box-shadow-depth-1, none ) !default; // TODO: replace with elevation()
+$kendo-chat-alt-bubble-selected-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
 
 /// The background of quick reply in the chat.
 /// @group chat

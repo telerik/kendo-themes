@@ -112,6 +112,96 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-box-shadow-depth-1</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-1, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for cards and grid item thumbnails.<br />Equivalent to fluent depth 4.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-2</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-2, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for color gradient drag handle.<br />Equivalent to fluent depth 8.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-3</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-3, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for focus card.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-4</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-4, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for panels.<br />Equivalent to fluent depth 16.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-5</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-5, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for floating action button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-6</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-6, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for pop up.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-7</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-7, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for action sheet.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-8</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-8, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for dialogs and window.<br />Equivalent to fluent depth 64.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-box-shadow-depth-9</td>
+    <td></td>
+    <td><code>var( --kendo-elevation-8, none )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for focus window.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-dialog-brand-colors</td>
     <td></td>
     <td><code>(
@@ -396,7 +486,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-actionsheet-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-7, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1623,7 +1713,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-bottom-nav-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5314,7 +5404,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-bubble-hover-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5374,7 +5464,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-hover-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -5384,7 +5474,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-chat-alt-bubble-selected-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6367,7 +6457,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-border-width</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>2px</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6557,7 +6647,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-canvas-draghandle-shadow</td>
     <td></td>
-    <td><code>0px 0.6px 1.8px rgba(0, 0, 0, 0.1), 0px 3.2px 7.2px rgba(0, 0, 0, 0.13), inset 0px 0px 0px 3px #FFFFFF</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6657,7 +6747,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-border-width</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>2px</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6665,13 +6755,33 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-draghandle-outline-width</td>
+    <td></td>
+    <td><code>1px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the outline around the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-draghandle-border</td>
+    <td></td>
+    <td><code>$kendo-color-white</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-shadow</td>
     <td></td>
     <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -6687,7 +6797,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
+    <td><code>$kendo-color-white</code></td>
     <td></td>
 </tr>
 <tr>
@@ -6697,21 +6807,21 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td></td>
-    <td><code>$kendo-color-gradient-draghandle-shadow</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td></td>
-    <td><code>$kendo-color-gradient-draghandle-focus-shadow</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the hovered ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -7537,7 +7647,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-dialog-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-8, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -9152,6 +9262,36 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the selected cells in the Insert table popup.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Elevation
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-elevation</td>
+    <td></td>
+    <td><code>$_default-elevation</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global Elevation.</div></div>
     </td>
 </tr>
 </tbody>
@@ -13342,7 +13482,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-grid-column-menu-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-6, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -17931,7 +18071,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-menu-popup-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-6, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -20263,7 +20403,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-page-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21233,7 +21373,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popover-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-6, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -21543,7 +21683,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-popup-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-6, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -23202,7 +23342,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-scheduler-tooltip-shadow</td>
     <td></td>
-    <td><code>0px 0px 10px rgba(0, 0, 0, .2 )</code></td>
+    <td><code>k-elevation(5)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -28424,7 +28564,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-taskboard-card-selected-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29243,7 +29383,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-timeline-flag-box-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -29979,7 +30119,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-tooltip-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31208,7 +31348,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-8, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -31218,7 +31358,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-window-focus-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-9, none )</code></td>
     <td></td>
 </tr>
 <tr>

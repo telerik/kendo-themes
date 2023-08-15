@@ -76,10 +76,10 @@ $kendo-window-text: $kendo-component-text !default;
 $kendo-window-border: $kendo-component-border !default;
 /// The box shadow of the Window.
 /// @group window
-$kendo-window-shadow: $box-shadow-depth-4 !default;
+$kendo-window-shadow: $box-shadow-depth-8 !default;
 /// The box shadow of the focused Window.
 /// @group window
-$kendo-window-focus-shadow: $box-shadow-depth-5 !default;
+$kendo-window-focus-shadow: $box-shadow-depth-9 !default;
 
 /// The background color of the Window titlebar.
 /// @group window

@@ -49,7 +49,7 @@ $kendo-pdf-viewer-page-text: var( --kendo-component-text, inherit )!default;
 $kendo-pdf-viewer-page-border: var( --kendo-component-border, inherit ) !default;
 /// Shadow of the PDF viewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+$kendo-pdf-viewer-page-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
 
 /// Horizontal padding of the PDF viewer search panel.
 /// @group pdf-viewer

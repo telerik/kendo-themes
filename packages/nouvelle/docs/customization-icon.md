@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-icon-size-lg</td>
     <td>Calculation</td>
     <td><code>1.25rem</code></td>
-    <td><code>calc( 16px * 1.25 )</code></td>
+    <td><code>calc(16px * 1.25)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the large icons.</div></div>

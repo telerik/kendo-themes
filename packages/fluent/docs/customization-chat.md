@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-bubble-hover-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -590,7 +590,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-hover-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chat-alt-bubble-selected-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
     <td></td>
 </tr>
 <tr>
