@@ -37,7 +37,7 @@ $kendo-color-editor-border: $kendo-component-border !default;
 $kendo-color-editor-focus-border: null !default;
 /// The box shadow of the focused ColorEditor.
 /// @group coloreditor
-$kendo-color-editor-focus-shadow: 1px 1px 7px 1px rgba( black, .3 ) !default;
+$kendo-color-editor-focus-shadow: k-elevation(3) !default;
 
 /// The vertical padding of the ColorEditor header.
 /// @group coloreditor

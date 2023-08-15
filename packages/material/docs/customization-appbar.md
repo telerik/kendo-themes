@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-box-shadow</td>
-    <td>List</td>
-    <td><code>0px 2px 3px rgba( black, .24 )</code></td>
-    <td><code>0px 2px 3px rgba(0, 0, 0, 0.24)</code></td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-4</code></td>
+    <td><code>var(--kendo-elevation-4, 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-appbar-bottom-box-shadow</td>
-    <td>List</td>
-    <td><code>0px -2px 3px rgba( black, .24 )</code></td>
-    <td><code>0px -2px 3px rgba(0, 0, 0, 0.24)</code></td>
+    <td>String</td>
+    <td><code>$kendo-appbar-box-shadow</code></td>
+    <td><code>var(--kendo-elevation-4, 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>

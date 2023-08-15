@@ -191,7 +191,7 @@ The following table lists the available variables for customization.
     <td>$kendo-scrollview-pager-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} )</code></td>
-    <td><code>calc( 10px + 0px + 40px )</code></td>
+    <td><code>calc(10px + 0px + 40px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ScrollView pager.</div></div>

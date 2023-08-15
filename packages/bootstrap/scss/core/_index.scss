@@ -3,9 +3,15 @@ $wcag-min-contrast-ratio: 4.5 !default;
 // Variables
 @import "../_variables.scss";
 
+// Elevation
+@import "./elevation/index.import.scss";
+
 @import "@progress/kendo-theme-core/scss/index.import.scss";
 
 // Expose
 @include exports("kendo-core-styles") {
     @include kendo-core--styles();
+
+    // Elevation System
+    @include kendo-elevation--styles();
 }

@@ -61,7 +61,7 @@ The following table lists the available variables for customization.
     <td>$kendo-form-line-height-em</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-form-line-height} * 1em )</code></td>
-    <td><code>calc( 2 * 1em )</code></td>
+    <td><code>calc(2 * 1em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form in em units.</div></div>
@@ -331,7 +331,7 @@ The following table lists the available variables for customization.
     <td>$kendo-horizontal-form-field-wrap-max-width</td>
     <td>Calculation</td>
     <td><code>calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} )</code></td>
-    <td><code>calc( ( 100% - 25% ) - 10px )</code></td>
+    <td><code>calc(100% - 25% - 10px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the field wrap in the horizontal Form.</div></div>

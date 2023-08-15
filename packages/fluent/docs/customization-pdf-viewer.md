@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pdf-viewer-page-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
     <td></td>
 </tr>
 <tr>

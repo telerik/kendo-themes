@@ -13,12 +13,12 @@ $kendo-card-deck-gap: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-card-bg: $kendo-component-bg !default;
 $kendo-card-text: $kendo-component-text !default;
 $kendo-card-border: $kendo-component-border !default;
-$kendo-card-shadow: $box-shadow-depth-2 !default;
+$kendo-card-shadow: $box-shadow-depth-1 !default;
 
 $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 $kendo-card-focus-border: null !default;
-$kendo-card-focus-shadow: $box-shadow-depth-4 !default;
+$kendo-card-focus-shadow: $box-shadow-depth-3 !default;
 
 $kendo-card-header-padding-x: $kendo-card-padding-x !default;
 $kendo-card-header-padding-y: $kendo-card-padding-y !default;

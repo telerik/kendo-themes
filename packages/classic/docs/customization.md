@@ -323,9 +323,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-appbar-box-shadow</td>
-    <td>List</td>
-    <td><code>0px 1px 1px rgba( black, .16 )</code></td>
-    <td><code>0px 1px 1px rgba(0, 0, 0, 0.16)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar.</div></div>
@@ -333,9 +333,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-appbar-bottom-box-shadow</td>
-    <td>List</td>
-    <td><code>0px -1px 1px rgba( black, .16 )</code></td>
-    <td><code>0px -1px 1px rgba(0, 0, 0, 0.16)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>
@@ -629,7 +629,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-line-height * 1em} + #{$kendo-badge-padding-y * 2} + #{$kendo-badge-border-width * 2})</code></td>
-    <td><code>calc( 1em + 8px + 2px)</code></td>
+    <td><code>calc(1em + 8px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the circular Badge.</div></div>
@@ -639,7 +639,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-badge-sm-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-sm-line-height * 1em} + #{$kendo-badge-sm-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 4px + 2px )</code></td>
+    <td><code>calc(1em + 4px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the small circular Badge.</div></div>
@@ -649,7 +649,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-badge-md-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-md-line-height * 1em} + #{$kendo-badge-md-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 8px + 2px )</code></td>
+    <td><code>calc(1em + 8px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the medium circular Badge.</div></div>
@@ -659,7 +659,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-badge-lg-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-lg-line-height * 1em} + #{$kendo-badge-lg-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 12px + 2px )</code></td>
+    <td><code>calc(1em + 12px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the large circular Badge.</div></div>
@@ -691,7 +691,7 @@ The following table lists the available variables for customizing the Classic th
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 2px, padding-y: 2px, font-size: 10px, line-height: 1, min-width: calc( 1em + 4px + 2px )), md: (padding-x: 4px, padding-y: 4px, font-size: 10px, line-height: 1, min-width: calc( 1em + 8px + 2px )), lg: (padding-x: 6px, padding-y: 6px, font-size: 10px, line-height: 1, min-width: calc( 1em + 12px + 2px )))</code></td>
+    <td><code>(sm: (padding-x: 2px, padding-y: 2px, font-size: 10px, line-height: 1, min-width: calc(1em + 4px + 2px)), md: (padding-x: 4px, padding-y: 4px, font-size: 10px, line-height: 1, min-width: calc(1em + 8px + 2px)), lg: (padding-x: 6px, padding-y: 6px, font-size: 10px, line-height: 1, min-width: calc(1em + 12px + 2px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
@@ -841,7 +841,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size * 2.5} + #{$kendo-padding-md-x * 2} - #{$kendo-bottom-nav-padding-x * 2} )</code></td>
-    <td><code>calc( 40px + 16px - 8px )</code></td>
+    <td><code>calc(40px + 16px - 8px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>
@@ -869,9 +869,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-bottom-nav-shadow</td>
-    <td>List</td>
-    <td><code>0px 0px 5px rgba( black, .12 )</code></td>
-    <td><code>0px 0px 5px rgba(0, 0, 0, 0.12)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the BottomNavigation.</div></div>
@@ -1776,7 +1776,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-button-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )</code></td>
-    <td><code>calc( 1.4285714286em + 8px + 2px )</code></td>
+    <td><code>calc(1.4285714286em + 8px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
@@ -1786,7 +1786,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} )</code></td>
-    <td><code>calc( 1.4285714286em + 8px )</code></td>
+    <td><code>calc(1.4285714286em + 8px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
@@ -2998,7 +2998,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 8px + 2px )</code></td>
+    <td><code>calc(1em + 8px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Chip.</div></div>
@@ -3425,9 +3425,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-color-gradient-focus-shadow</td>
-    <td>List</td>
-    <td><code>1px 1px 7px 1px rgba( black, .3 )</code></td>
-    <td><code>1px 1px 7px 1px rgba(0, 0, 0, 0.3)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient.</div></div>
@@ -3544,6 +3544,16 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-draghandle-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the outline around the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-draghandle-border-radius</td>
     <td>Number</td>
     <td><code>50%</code></td>
@@ -3585,32 +3595,42 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
-    <td>List</td>
-    <td><code>0 1px 4px rgba( black, .5 )</code></td>
-    <td><code>0 1px 4px rgba(0, 0, 0, 0.5)</code></td>
+    <td>Color</td>
+    <td><code>rgba( $kendo-color-black, .5)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.5)"></span><code>rgba(0, 0, 0, 0.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 1px 4px black</code></td>
-    <td><code>0 1px 4px black</code></td>
+    <td>Color</td>
+    <td><code>$kendo-color-black</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-color-gradient-draghandle-focus-shadow</code></td>
-    <td><code>0 1px 4px black</code></td>
+    <td>Color</td>
+    <td><code>$kendo-color-black</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the hovered ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the outline around the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-shadow</td>
+    <td>Color</td>
+    <td><code>k-elevation(2)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.5)"></span><code>rgba(0, 0, 0, 0.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -3995,9 +4015,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-color-editor-focus-shadow</td>
-    <td>List</td>
-    <td><code>1px 1px 7px 1px rgba( black, .3 )</code></td>
-    <td><code>1px 1px 7px 1px rgba(0, 0, 0, 0.3)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(3)</code></td>
+    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorEditor.</div></div>
@@ -5642,9 +5662,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-fab-shadow</td>
-    <td>List</td>
-    <td><code>0 6px 10px rgba( black, .14 ), 0 1px 18px rgba( black, .12 ), 0 3px 5px rgba( black, .2 )</code></td>
-    <td><code>0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5, 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
@@ -5652,9 +5672,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-fab-disabled-shadow</td>
-    <td>List</td>
-    <td><code>0 6px 10px k-try-tint( rgba( black, .14 ), .5 ), 0 1px 18px k-try-tint( rgba( black, .12 ), .5 ), 0 3px 5px k-try-tint( rgba( black, .2 ), .5 )</code></td>
-    <td><code>0 6px 10px rgba(91, 91, 91, 0.1744), 0 1px 18px rgba(101, 101, 101, 0.1552), 0 3px 5px rgba(70, 70, 70, 0.232)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5, 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB.</div></div>
@@ -5752,9 +5772,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-fab-item-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-fab-shadow</code></td>
-    <td><code>0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2)</code></td>
+    <td><code>var(--kendo-elevation-5, 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB item.</div></div>
@@ -5762,9 +5782,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-fab-item-disabled-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-fab-disabled-shadow</code></td>
-    <td><code>0 6px 10px rgba(91, 91, 91, 0.1744), 0 1px 18px rgba(101, 101, 101, 0.1552), 0 3px 5px rgba(70, 70, 70, 0.232)</code></td>
+    <td><code>var(--kendo-elevation-5, 0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB item.</div></div>
@@ -5874,7 +5894,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-floating-label-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} )</code></td>
-    <td><code>calc( 1.4285714286 * 14px )</code></td>
+    <td><code>calc(1.4285714286 * 14px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Floating Label.</div></div>
@@ -5884,7 +5904,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-floating-label-offset-x</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} )</code></td>
-    <td><code>calc( 8px + 1px )</code></td>
+    <td><code>calc(8px + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Floating Label.</div></div>
@@ -5894,7 +5914,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} )</code></td>
-    <td><code>calc( calc( 1.4285714286 * 14px ) + 1px + 4px )</code></td>
+    <td><code>calc(calc(1.4285714286 * 14px) + 1px + 4px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>
@@ -6034,7 +6054,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-form-line-height-em</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-form-line-height} * 1em )</code></td>
-    <td><code>calc( 1.4285714286 * 1em )</code></td>
+    <td><code>calc(1.4285714286 * 1em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form in em units.</div></div>
@@ -6304,7 +6324,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-horizontal-form-field-wrap-max-width</td>
     <td>Calculation</td>
     <td><code>calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} )</code></td>
-    <td><code>calc( ( 100% - 25% ) - 10px )</code></td>
+    <td><code>calc(100% - 25% - 10px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the field wrap in the horizontal Form.</div></div>
@@ -9108,7 +9128,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-menu-popup-item-padding-end</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$kendo-icon-size} )</code></td>
-    <td><code>calc( 16px + 16px )</code></td>
+    <td><code>calc(16px + 16px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the menu item in popup.</div></div>
@@ -9128,7 +9148,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
     <td><code>calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) )</code></td>
-    <td><code>calc(-1 * (calc( 16px + 16px ) - 4px))</code></td>
+    <td><code>calc(-1 * (calc(16px + 16px) - 4px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the menu item expand icon.</div></div>
@@ -9426,9 +9446,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-notification-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-popup-shadow</code></td>
-    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04)</code></td>
+    <td><code>var(--kendo-elevation-6, 0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Notification.</div></div>
@@ -9568,7 +9588,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-sm-calc-size</code></td>
-    <td><code>calc( 1.4285714286em + 4px + 2px )</code></td>
+    <td><code>calc(1.4285714286em + 4px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the small Pager.</div></div>
@@ -9578,7 +9598,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-pager-md-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-calc-size</code></td>
-    <td><code>calc( 1.4285714286em + 8px + 2px )</code></td>
+    <td><code>calc(1.4285714286em + 8px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the medium Pagers.</div></div>
@@ -9588,7 +9608,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-pager-lg-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-lg-calc-size</code></td>
-    <td><code>calc( 1.5em + 16px + 2px )</code></td>
+    <td><code>calc(1.5em + 16px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the large Pagers.</div></div>
@@ -9950,7 +9970,7 @@ The following table lists the available variables for customizing the Classic th
         pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 4px, padding-y: 4px, item-group-spacing: 12px, item-min-width: calc( 1.4285714286em + 4px + 2px ), pager-dropdown-width: 5em), md: (padding-x: 8px, padding-y: 8px, item-group-spacing: 14px, item-min-width: calc( 1.4285714286em + 8px + 2px ), pager-dropdown-width: 5em), lg: (padding-x: 10px, padding-y: 10px, item-group-spacing: 16px, item-min-width: calc( 1.5em + 16px + 2px ), pager-dropdown-width: 5em))</code></td>
+    <td><code>(sm: (padding-x: 4px, padding-y: 4px, item-group-spacing: 12px, item-min-width: calc(1.4285714286em + 4px + 2px), pager-dropdown-width: 5em), md: (padding-x: 8px, padding-y: 8px, item-group-spacing: 14px, item-min-width: calc(1.4285714286em + 8px + 2px), pager-dropdown-width: 5em), lg: (padding-x: 10px, padding-y: 10px, item-group-spacing: 16px, item-min-width: calc(1.5em + 16px + 2px), pager-dropdown-width: 5em))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
@@ -10548,9 +10568,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-popover-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-popup-shadow</code></td>
-    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04)</code></td>
+    <td><code>var(--kendo-elevation-6, 0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Popover.</div></div>
@@ -10848,9 +10868,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-popup-shadow</td>
-    <td>List</td>
-    <td><code>0 2px 4px 0 rgba( black, .03 ), 0 4px 5px 0 rgba( black, .04 )</code></td>
-    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(6)</code></td>
+    <td><code>var(--kendo-elevation-6, 0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the popup.</div></div>
@@ -11766,7 +11786,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$kendo-scrollview-pager-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} )</code></td>
-    <td><code>calc( 10px + 0px + 40px )</code></td>
+    <td><code>calc(10px + 0px + 40px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ScrollView pager.</div></div>
@@ -13317,9 +13337,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-tile-layout-card-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>0 3px 4px 0 rgba(0, 0, 0, 0.06)</code></td>
+    <td><code>var(--kendo-elevation-3, 0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the TileLayout card.</div></div>
@@ -14828,9 +14848,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-window-shadow</td>
-    <td>List</td>
-    <td><code>1px 1px 7px 1px rgba( black, .12 )</code></td>
-    <td><code>1px 1px 7px 1px rgba(0, 0, 0, 0.12)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(8)</code></td>
+    <td><code>var(--kendo-elevation-8, 0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Window.</div></div>
@@ -14838,9 +14858,9 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td>$kendo-window-focus-shadow</td>
-    <td>List</td>
-    <td><code>1px 1px 7px 1px rgba( black, .25 )</code></td>
-    <td><code>1px 1px 7px 1px rgba(0, 0, 0, 0.25)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(9)</code></td>
+    <td><code>var(--kendo-elevation-9, 0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>

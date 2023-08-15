@@ -35,5 +35,5 @@ $kendo-popup-text: $kendo-component-text !default;
 /// @group popup
 $kendo-popup-border: $kendo-component-border !default;
 /// Box shadow of the popup.
-/// @group popups
-$kendo-popup-shadow: elevation(6) !default; // 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04)
+/// @group popup
+$kendo-popup-shadow: k-elevation(6) !default;

@@ -221,7 +221,7 @@ $kendo-scheduler-tooltip-text: k-get-theme-color-var( neutral-130 ) !default;
 $kendo-scheduler-tooltip-border: null !default;
 /// Shadow of the scheduler tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-shadow: elevation(5) !default;
+$kendo-scheduler-tooltip-shadow: k-elevation(5) !default;
 
 /// Vertical spacing of the scheduler tooltip title.
 /// @group scheduler

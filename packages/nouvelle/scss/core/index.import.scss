@@ -8,4 +8,7 @@ $wcag-min-contrast-ratio: 4.5 !default;
 // Expose
 @include exports("kendo-core-styles") {
     @include kendo-core--styles();
+
+    // Elevation System
+    @include kendo-elevation--styles();
 }

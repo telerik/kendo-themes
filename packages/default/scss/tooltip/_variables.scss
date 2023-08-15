@@ -18,6 +18,8 @@ $kendo-tooltip-bg: rgba( k-contrast-legacy( $kendo-body-bg ), .75 ) !default;
 $kendo-tooltip-text: k-contrast-legacy( $kendo-tooltip-bg ) !default;
 $kendo-tooltip-border: $kendo-tooltip-bg !default;
 
+$kendo-tooltip-shadow: k-elevation(2) !default;
+
 $kendo-tooltip-primary-bg: $kendo-color-primary !default;
 $kendo-tooltip-primary-text: k-contrast-legacy( $kendo-tooltip-primary-bg ) !default;
 $kendo-tooltip-primary-border: $kendo-tooltip-primary-bg !default;

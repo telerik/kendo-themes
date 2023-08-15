@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size * 2.5} + #{$kendo-padding-sm-x * 2} - #{$kendo-bottom-nav-padding-x * 2} )</code></td>
-    <td><code>calc( 40px + 16px - 0px )</code></td>
+    <td><code>calc(40px + 16px - 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-bottom-nav-shadow</td>
-    <td>List</td>
-    <td><code>0px 0px 5px rgba( black, .12 )</code></td>
-    <td><code>0px 0px 5px rgba(0, 0, 0, 0.12)</code></td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-4</code></td>
+    <td><code>var(--kendo-elevation-4, 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the BottomNavigation.</div></div>

@@ -70,6 +70,8 @@
         width: var( --kendo-color-gradient-draghandle-width, #{$kendo-color-gradient-draghandle-width} );
         height: var( --kendo-color-gradient-draghandle-height, #{$kendo-color-gradient-draghandle-height} );
         border-width: var( --kendo-color-gradient-draghandle-border-width, #{$kendo-color-gradient-draghandle-border-width} );
+        outline-width: var( --kendo-color-gradient-draghandle-outline-width, #{$kendo-color-gradient-draghandle-outline-width} );
+        outline-style: solid;
         box-sizing: border-box;
     }
 
