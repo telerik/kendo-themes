@@ -20,7 +20,8 @@ $kendo-card-shadow: null !default;
 $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 $kendo-card-focus-border: rgba( black, .15 ) !default;
-$kendo-card-focus-shadow: 0 3px 4px 0 rgba( black, .06 ) !default;
+// TODO: double-check: the default theme is not supposed to elevate the card on focus
+$kendo-card-focus-shadow: null !default;
 
 $kendo-card-header-padding-x: $kendo-card-padding-x !default;
 $kendo-card-header-padding-y: $kendo-card-padding-y !default;
