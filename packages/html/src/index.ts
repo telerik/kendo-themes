@@ -17,10 +17,11 @@ export * from './avatar/index';
 export * from './badge/index';
 export * from './chip/index';
 export * from './color-preview/index';
-// export * from './loader/index';
+export * from './loader/index';
 // export * from './skeleton/index';
 
 // Native forms
+export * from './form/index';
 export * from './button/index';
 export * from './button-group/index';
 export * from './menu-button/index';

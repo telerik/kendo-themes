@@ -16,12 +16,17 @@ const defaultProps = {};
 
 export type FloatingLabelState = { [K in (typeof states)[number]]?: boolean };
 
-export type KendoFloatingLabelrProps = {
+export type KendoFloatingLabelProps = {
     label?: string;
 };
 
+/**
+ * @deprecated
+ */
+export type KendoFloatingLabelrProps = KendoFloatingLabelProps;
+
 export const FloatingLabel = (
-    props: FloatingLabelState & KendoFloatingLabelrProps & React.HTMLAttributes<HTMLSpanElement>
+    props: FloatingLabelState & KendoFloatingLabelProps & React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
         focus,

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-animation-container {
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>MenuButton Popup Opened</span>
+        <span>MenuButton Popup Opened RTL</span>
+        <div>
+            <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-text">button</span>
+                <span class="k-menu-button-arrow k-button-arrow">
+                    <span class="k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256L256 352z"></path>
+                        </svg>
+                    </span>
+                </span>
+            </button>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-menu-popup k-popup">
+                        <ul class="k-menu-group k-menu-group-md">
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Menu Item</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Menu Item</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Menu Item</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-text">button</span>
+                <span class="k-menu-button-arrow k-button-arrow">
+                    <span class="k-svg-icon k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256L256 352z"></path>
+                        </svg>
+                    </span>
+                </span>
+            </button>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-menu-popup k-popup">
+                        <ul class="k-menu-group k-menu-group-md">
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Menu Item</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Menu Item</span>
+                                </span>
+                            </li>
+                            <li class="k-menu-item k-item">
+                                <span class="k-link k-menu-link">
+                                    <span class="k-menu-link-text">Menu Item</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

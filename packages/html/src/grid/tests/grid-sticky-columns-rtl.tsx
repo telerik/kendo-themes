@@ -174,7 +174,7 @@ export default () =>(
                         <div className="k-height-container"><div></div></div>
                     </div>
                 </div>
-                <Pager className="k-grid-pager" mobile="small" dir="rtl" />
+                <Pager className="k-grid-pager" adaptive pageSizes={false} dir="rtl" info={false} />
             </div>
         </div>
     </>

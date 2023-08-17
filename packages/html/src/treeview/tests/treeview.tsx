@@ -1,5 +1,4 @@
-import { Treeview, TreeviewItem, TreeviewGroup } from '../../treeview';
-
+import { TreeviewItem, TreeviewNormal, TreeviewHierarchy, TreeviewIcons, TreeviewCheckboxes } from '../../treeview';
 
 export default () =>(
     <>
@@ -11,7 +10,7 @@ export default () =>(
             <span>hierarchy (rtl)</span>
 
             <section>
-                <Treeview>
+                <TreeviewNormal>
                     <TreeviewItem text="Normal" />
                     <TreeviewItem text="Hover" hover />
                     <TreeviewItem text="Focus" focus/>
@@ -20,10 +19,10 @@ export default () =>(
                     <TreeviewItem text="Disabled" disabled/>
                     <TreeviewItem text="Disabled focus" disabled focus/>
                     <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..."/>
-                </Treeview>
+                </TreeviewNormal>
             </section>
             <section>
-                <Treeview dir="rtl">
+                <TreeviewNormal dir="rtl">
                     <TreeviewItem text="Normal" />
                     <TreeviewItem text="Hover" hover />
                     <TreeviewItem text="Focus" focus/>
@@ -32,57 +31,14 @@ export default () =>(
                     <TreeviewItem text="Disabled" disabled/>
                     <TreeviewItem text="Disabled focus" disabled focus/>
                     <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..." hover />
-                </Treeview>
+                </TreeviewNormal>
             </section>
             <section>
-                <Treeview>
-                    <TreeviewItem text="Root 1" />
-                    <TreeviewItem text="Root 2" expanded>
-                        <TreeviewGroup>
-                            <TreeviewItem text="Child 2.1" />
-                            <TreeviewItem text="Child 2.2">
-                                <TreeviewGroup>
-                                    <TreeviewItem text="Child 2.2.1" />
-                                </TreeviewGroup>
-                            </TreeviewItem>
-                            <TreeviewItem text="Child 2.3" />
-                            <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more ..." />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                    <TreeviewItem text="Root 3">
-                        <TreeviewGroup>
-                            <TreeviewItem text="Child 3.1" />
-                            <TreeviewItem text="Child 3.2" />
-                            <TreeviewItem text="Child 3.3" />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                </Treeview>
+                <TreeviewHierarchy />
             </section>
             <section>
-                <Treeview dir="rtl">
-                    <TreeviewItem text="Root 1" />
-                    <TreeviewItem text="Root 2" expanded>
-                        <TreeviewGroup>
-                            <TreeviewItem text="Child 2.1" />
-                            <TreeviewItem text="Child 2.2">
-                                <TreeviewGroup>
-                                    <TreeviewItem text="Child 2.2.1" />
-                                </TreeviewGroup>
-                            </TreeviewItem>
-                            <TreeviewItem text="Child 2.3" />
-                            <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more ..." hover focus />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                    <TreeviewItem text="Root 3">
-                        <TreeviewGroup>
-                            <TreeviewItem text="Child 3.1" />
-                            <TreeviewItem text="Child 3.2" />
-                            <TreeviewItem text="Child 3.3" />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                </Treeview>
+                <TreeviewHierarchy dir="rtl" />
             </section>
-
 
             <span>icons</span>
             <span>icons (rtl)</span>
@@ -90,99 +46,18 @@ export default () =>(
             <span>checkboxes (rtl)</span>
 
             <section>
-                <Treeview>
-                    <TreeviewItem text="Root 1" />
-                    <TreeviewItem text="Root 2" showIcon icon="folder" expanded>
-                        <TreeviewGroup>
-                            <TreeviewItem showIcon icon="folder" text="Child 2.1"/>
-                            <TreeviewItem showIcon icon="folder" text="Child 2.2">
-                                <TreeviewGroup>
-                                    <TreeviewItem showIcon icon="folder" text="Child 2.2.1"/>
-                                </TreeviewGroup>
-                            </TreeviewItem>
-                            <TreeviewItem showIcon icon="folder" text="Child 2.3" />
-                            <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..." />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                    <TreeviewItem text="Root 3" showIcon icon="folder">
-                        <TreeviewGroup>
-                            <TreeviewItem showIcon icon="folder" text="Child 3.1" />
-                            <TreeviewItem showIcon icon="folder" text="Child 3.2" />
-                            <TreeviewItem showIcon icon="folder" text="Child 3.3" />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                </Treeview>
+                <TreeviewIcons />
             </section>
             <section>
-                <Treeview dir="rtl">
-                    <TreeviewItem text="Root 1" />
-                    <TreeviewItem text="Root 2" showIcon icon="folder" expanded>
-                        <TreeviewGroup>
-                            <TreeviewItem showIcon icon="folder" text="Child 2.1"/>
-                            <TreeviewItem showIcon icon="folder" text="Child 2.2">
-                                <TreeviewGroup>
-                                    <TreeviewItem showIcon icon="folder" text="Child 2.2.1"/>
-                                </TreeviewGroup>
-                            </TreeviewItem>
-                            <TreeviewItem showIcon icon="folder" text="Child 2.3" />
-                            <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more..." />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                    <TreeviewItem text="Root 3" showIcon icon="folder">
-                        <TreeviewGroup>
-                            <TreeviewItem showIcon icon="folder" text="Child 3.1" />
-                            <TreeviewItem showIcon icon="folder" text="Child 3.2" />
-                            <TreeviewItem showIcon icon="folder" text="Child 3.3" />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                </Treeview>
+                <TreeviewIcons dir="rtl" />
             </section>
 
             <section>
-                <Treeview>
-                    <TreeviewItem text="Root 1" />
-                    <TreeviewItem text="Root 2" showCheckbox expanded checked>
-                        <TreeviewGroup>
-                            <TreeviewItem text="Child 2.1" showCheckbox checked />
-                            <TreeviewItem text="Child 2.2" showCheckbox disabled>
-                                <TreeviewGroup>
-                                    <TreeviewItem text="Child 2.2.1" />
-                                </TreeviewGroup>
-                            </TreeviewItem>
-                            <TreeviewItem text="Child 2.3" showCheckbox />
-                            <TreeviewItem text="Load more..." leafClassName="k-treeview-load-more-button" />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                    <TreeviewItem text="Root 3" showCheckbox>
-                        <TreeviewItem text="Child 3.1" />
-                        <TreeviewItem text="Child 3.2" />
-                        <TreeviewItem text="Child 3.3" />
-                    </TreeviewItem>
-                </Treeview>
+                <TreeviewCheckboxes />
             </section>
             <section>
-                <Treeview dir="rtl">
-                    <TreeviewItem text="Root 1" />
-                    <TreeviewItem text="Root 2" showCheckbox expanded checked>
-                        <TreeviewGroup>
-                            <TreeviewItem text="Child 2.1" showCheckbox checked />
-                            <TreeviewItem text="Child 2.2" showCheckbox disabled >
-                                <TreeviewGroup>
-                                    <TreeviewItem text="Child 2.2.1" />
-                                </TreeviewGroup>
-                            </TreeviewItem>
-                            <TreeviewItem text="Child 2.3" showCheckbox />
-                            <TreeviewItem text="Load more..." leafClassName="k-treeview-load-more-button" />
-                        </TreeviewGroup>
-                    </TreeviewItem>
-                    <TreeviewItem text="Root 3" showCheckbox>
-                        <TreeviewItem text="Child 3.1" />
-                        <TreeviewItem text="Child 3.2" />
-                        <TreeviewItem text="Child 3.3" />
-                    </TreeviewItem>
-                </Treeview>
+                <TreeviewCheckboxes dir="rtl" />
             </section>
-
         </div>
     </>
 );

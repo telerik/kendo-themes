@@ -1,5 +1,4 @@
-import { List, ListAngular, ListGroup, ListItem } from '../../list';
-
+import { ListWithGrouping, VirtualListWithGrouping, AngularListWithGrouping, AngularVirtualListWithGrouping } from '../../list';
 
 const style = `
     .k-virtual-list > .k-item,
@@ -20,63 +19,19 @@ export default () =>(
             <span>Universal virtual (rtl)</span>
 
             <section>
-                <List>
-                    <ListGroup label="Group 1" root>
-                        <ListItem>List item 1.1</ListItem>
-                        <ListItem>List item 1.2</ListItem>
-                        <ListItem>List item 1.3</ListItem>
-                    </ListGroup>
-                    <ListGroup label="Group 2">
-                        <ListItem>List item 2.1</ListItem>
-                        <ListItem>List item 2.2</ListItem>
-                        <ListItem>List item 2.3</ListItem>
-                    </ListGroup>
-                </List>
+                <ListWithGrouping></ListWithGrouping>
             </section>
 
             <section>
-                <List virtualization>
-                    <ListGroup label="Group 1" root>
-                        <ListItem>List item 1.1</ListItem>
-                        <ListItem>List item 1.2</ListItem>
-                        <ListItem>List item 1.3</ListItem>
-                    </ListGroup>
-                    <ListGroup label="Group 2">
-                        <ListItem>List item 2.1</ListItem>
-                        <ListItem>List item 2.2</ListItem>
-                        <ListItem>List item 2.3</ListItem>
-                    </ListGroup>
-                </List>
+                <VirtualListWithGrouping></VirtualListWithGrouping>
             </section>
 
             <section dir="rtl">
-                <List>
-                    <ListGroup label="Group 1" root>
-                        <ListItem>List item 1.1</ListItem>
-                        <ListItem>List item 1.2</ListItem>
-                        <ListItem>List item 1.3</ListItem>
-                    </ListGroup>
-                    <ListGroup label="Group 2">
-                        <ListItem>List item 2.1</ListItem>
-                        <ListItem>List item 2.2</ListItem>
-                        <ListItem>List item 2.3</ListItem>
-                    </ListGroup>
-                </List>
+                <ListWithGrouping></ListWithGrouping>
             </section>
 
             <section dir="rtl">
-                <List virtualization>
-                    <ListGroup label="Group 1" root>
-                        <ListItem>List item 1.1</ListItem>
-                        <ListItem>List item 1.2</ListItem>
-                        <ListItem>List item 1.3</ListItem>
-                    </ListGroup>
-                    <ListGroup label="Group 2">
-                        <ListItem>List item 2.1</ListItem>
-                        <ListItem>List item 2.2</ListItem>
-                        <ListItem>List item 2.3</ListItem>
-                    </ListGroup>
-                </List>
+                <VirtualListWithGrouping></VirtualListWithGrouping>
             </section>
 
             <span>Angular</span>
@@ -85,66 +40,20 @@ export default () =>(
             <span>Angular virtual (rtl)</span>
 
             <section>
-                <ListAngular>
-                    <ListGroup label="Group 1" root>
-                        <ListItem>List item 1.1</ListItem>
-                        <ListItem>List item 1.2</ListItem>
-                        <ListItem>List item 1.3</ListItem>
-                    </ListGroup>
-                    <ListGroup label="Group 2">
-                        <ListItem>List item 2.1</ListItem>
-                        <ListItem>List item 2.2</ListItem>
-                        <ListItem>List item 2.3</ListItem>
-                    </ListGroup>
-                </ListAngular>
+                <AngularListWithGrouping></AngularListWithGrouping>
             </section>
 
             <section>
-                <ListAngular virtualization>
-                    <ListGroup label="Group 1" root>
-                        <ListItem>List item 1.1</ListItem>
-                        <ListItem>List item 1.2</ListItem>
-                        <ListItem>List item 1.3</ListItem>
-                    </ListGroup>
-                    <ListGroup label="Group 2">
-                        <ListItem>List item 2.1</ListItem>
-                        <ListItem>List item 2.2</ListItem>
-                        <ListItem>List item 2.3</ListItem>
-                    </ListGroup>
-                </ListAngular>
+                <AngularVirtualListWithGrouping></AngularVirtualListWithGrouping>
             </section>
 
             <section dir="rtl">
-                <ListAngular>
-                    <ListGroup label="Group 1" root>
-                        <ListItem>List item 1.1</ListItem>
-                        <ListItem>List item 1.2</ListItem>
-                        <ListItem>List item 1.3</ListItem>
-                    </ListGroup>
-                    <ListGroup label="Group 2">
-                        <ListItem>List item 2.1</ListItem>
-                        <ListItem>List item 2.2</ListItem>
-                        <ListItem>List item 2.3</ListItem>
-                    </ListGroup>
-                </ListAngular>
+                <AngularListWithGrouping></AngularListWithGrouping>
             </section>
 
             <section dir="rtl">
-                <ListAngular virtualization>
-                    <ListGroup label="Group 1" root>
-                        <ListItem>List item 1.1</ListItem>
-                        <ListItem>List item 1.2</ListItem>
-                        <ListItem>List item 1.3</ListItem>
-                    </ListGroup>
-                    <ListGroup label="Group 2">
-                        <ListItem>List item 2.1</ListItem>
-                        <ListItem>List item 2.2</ListItem>
-                        <ListItem>List item 2.3</ListItem>
-                    </ListGroup>
-                </ListAngular>
+                <AngularVirtualListWithGrouping></AngularVirtualListWithGrouping>
             </section>
-
         </div>
-
     </>
 );

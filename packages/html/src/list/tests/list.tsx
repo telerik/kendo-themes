@@ -1,5 +1,4 @@
-import { List, ListItem } from '../../list';
-
+import { ListNormal, ListVirtualization, ListItem } from '../../list';
 
 const style = `
     .k-virtual-list > .k-item,
@@ -19,7 +18,7 @@ export default () =>(
             <span>Virtual list (rtl)</span>
 
             <section>
-                <List>
+                <ListNormal>
                     <ListItem>List item</ListItem>
                     <ListItem hover>Hover</ListItem>
                     <ListItem focus>Focus</ListItem>
@@ -30,11 +29,11 @@ export default () =>(
                     <ListItem showCheckbox>Checkbox</ListItem>
                     <ListItem showIcon iconName="gear">Icon</ListItem>
                     <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
-                </List>
+                </ListNormal>
             </section>
 
             <section>
-                <List virtualization>
+                <ListVirtualization>
                     <ListItem>List item</ListItem>
                     <ListItem hover>Hover</ListItem>
                     <ListItem focus>Focus</ListItem>
@@ -45,11 +44,11 @@ export default () =>(
                     <ListItem showCheckbox>Checkbox</ListItem>
                     <ListItem showIcon iconName="gear">Icon</ListItem>
                     <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
-                </List>
+                </ListVirtualization>
             </section>
 
             <section dir="rtl">
-                <List>
+                <ListNormal>
                     <ListItem>List item</ListItem>
                     <ListItem hover>Hover</ListItem>
                     <ListItem focus>Focus</ListItem>
@@ -60,11 +59,11 @@ export default () =>(
                     <ListItem showCheckbox>Checkbox</ListItem>
                     <ListItem showIcon iconName="gear">Icon</ListItem>
                     <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
-                </List>
+                </ListNormal>
             </section>
 
             <section dir="rtl">
-                <List virtualization>
+                <ListVirtualization>
                     <ListItem>List item</ListItem>
                     <ListItem hover>Hover</ListItem>
                     <ListItem focus>Focus</ListItem>
@@ -75,10 +74,8 @@ export default () =>(
                     <ListItem showCheckbox>Checkbox</ListItem>
                     <ListItem showIcon iconName="gear">Icon</ListItem>
                     <ListItem showCheckbox showIcon iconName="gear">Checkbox icon</ListItem>
-                </List>
+                </ListVirtualization>
             </section>
-
         </div>
-
     </>
 );

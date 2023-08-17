@@ -1,7 +1,4 @@
-import { Chip, ChipAction } from '../../chip';
-import { List, ListItem } from '../../list';
-import { MultiSelect } from '..';
-
+import { MultiSelectPopup } from '..';
 
 const styles = `
     #test-area {
@@ -24,40 +21,10 @@ export default () =>(
 
             <div>Opened</div>
             <div>
-                <MultiSelect opened
-                    tags={(
-                        <>
-                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
-                        </>
-                    )}
-                    popup={(
-                        <List>
-                            <ListItem>List item</ListItem>
-                            <ListItem selected>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem selected>List item</ListItem>
-                        </List>
-                    )}
-                />
+                <MultiSelectPopup />
             </div>
             <div dir="rtl">
-                <MultiSelect opened
-                    tags={(
-                        <>
-                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="List Item" actions={ <ChipAction type="remove"/> } />
-                        </>
-                    )}
-                    popup={(
-                        <List>
-                            <ListItem>List item</ListItem>
-                            <ListItem selected>List item</ListItem>
-                            <ListItem>List item</ListItem>
-                            <ListItem selected>List item</ListItem>
-                        </List>
-                    )}
-                />
+                <MultiSelectPopup />
             </div>
         </div>
     </>

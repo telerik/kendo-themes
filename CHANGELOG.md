@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0-dev.5](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.4...v6.7.0-dev.5) (2023-08-14)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [6.7.0-dev.4](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.3...v6.7.0-dev.4) (2023-08-09)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [6.7.0-dev.3](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.2...v6.7.0-dev.3) (2023-08-07)
+
+
+### Bug Fixes
+
+* **floating-label:** invalid state displays properly in default theme ([dc129a6](https://github.com/telerik/kendo-themes/commit/dc129a67cb8a5e4079c1dcf156f444427173fe58))
+
+
+
+
+
+# [6.7.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.1...v6.7.0-dev.2) (2023-07-31)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
+# [6.7.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.0...v6.7.0-dev.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* **chat:** fix message-box button position in rtl ([6ecdd1b](https://github.com/telerik/kendo-themes/commit/6ecdd1b525a1592066571fa10149ff4657b3a7d3))
+* **grid:** remove placeholder-line explicit width ([0ba0185](https://github.com/telerik/kendo-themes/commit/0ba0185321fdf0a084c737ff342a96d7c6b14885))
+* **tilelayout:** set padding through themes instead of inline ([f5c7186](https://github.com/telerik/kendo-themes/commit/f5c718665504bd27071bd6387bc57830074cc3b1))
+
+
+### Features
+
+* **chat:** align attachments based on user who attaches them ([97796b6](https://github.com/telerik/kendo-themes/commit/97796b60550135a28e0baf7f8425740efe123ab0))
+* **chat:** rename k-bubble to k-chat-bubble ([8ef2553](https://github.com/telerik/kendo-themes/commit/8ef2553ca8b48a4345924944d61a7bc4fed26c2c))
+* **chat:** update chat styles to match new rendering ([b094e2d](https://github.com/telerik/kendo-themes/commit/b094e2d467894ee0652f0bec0da121d0d30d172b))
+* **html:** add chat spec ([3aa8e9f](https://github.com/telerik/kendo-themes/commit/3aa8e9faeb8070269d04066ad13834596d764d14))
+* **html:** add listgroup spec ([c696dc6](https://github.com/telerik/kendo-themes/commit/c696dc6db1c08d159c10282255895e8d9fdd54d9))
+* **html:** add scrollview spec ([a419dae](https://github.com/telerik/kendo-themes/commit/a419daeae678c74ceb63040a914be3ffb56eb1c1))
+* **html:** add skeleton helper ([bcc944f](https://github.com/telerik/kendo-themes/commit/bcc944fdc872ed7533407726297a3ba2e1ba8805))
+* **html:** add tilelayout helpers ([ddbf11b](https://github.com/telerik/kendo-themes/commit/ddbf11bec5262c722e90d94b7f4820eaf6c2b468))
+* **pager:** improve adaptivenes ([709653a](https://github.com/telerik/kendo-themes/commit/709653a06681ea2ad1ace12ba4b6c2c29f77cf8a))
+* **scrollview:** update scrollview styles to match new rendering ([b7c5cb6](https://github.com/telerik/kendo-themes/commit/b7c5cb6c46b77e5920a92da4298e044e3aa61f28))
+
+
+
+
+
+# [6.7.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.1-dev.0...v6.7.0-dev.0) (2023-07-24)
+
+
+### Features
+
+* **breadcrumb:** add sizes ([f4b9aa2](https://github.com/telerik/kendo-themes/commit/f4b9aa2e4cc5a7bd8b86c0664b3380606b2ad9aa))
+* **html:** add filter spec ([eb66423](https://github.com/telerik/kendo-themes/commit/eb664236c9ecd1412423f618c41aee60e8c81f5e))
+* **html:** update form rendering for grid layout ([559d295](https://github.com/telerik/kendo-themes/commit/559d29553e3121fb579d164e43174d90c0e8af43))
+
+
+
+
+
+## [6.6.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.0...v6.6.1-dev.0) (2023-07-17)
+
+**Note:** Version bump only for package kendo-themes.repo
+
+
+
+
+
 # [6.6.0](https://github.com/telerik/kendo-themes/compare/v6.5.1...v6.6.0) (2023-07-14)
 
 

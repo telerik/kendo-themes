@@ -66,8 +66,7 @@
         position: relative;
 
         select.k-dropdown-list {
-            cursor: pointer;
-            display: none;
+            width: $kendo-pager-md-dropdown-width;
         }
     }
     .k-pager-numbers {
@@ -103,10 +102,11 @@
     // Pager input
     .k-pager-input {
         @extend %base-pager-section !optional;
+        gap: 1ex;
 
-        .k-textbox {
+        .k-textbox,
+        .k-numerictextbox {
             margin-block: 0;
-            margin-inline: 1ex;
             width: $kendo-pager-input-width;
         }
     }
@@ -115,24 +115,11 @@
     // Pager sizes
     .k-pager-sizes {
         @extend %base-pager-section !optional;
-
-        .k-dropdown-list,
-        > select {
-            margin-right: 1ex;
-        }
+        gap: 1ex;
 
         .k-input-inner,
         .k-input-value-text {
             text-overflow: clip;
-        }
-
-        .k-rtl &,
-        [dir="rtl"] & {
-            .k-dropdown-list,
-            > select {
-                margin-left: 1ex;
-                margin-right: 0;
-            }
         }
     }
 
@@ -154,33 +141,6 @@
         order: 10;
     }
 
-    // Responsive
-    .k-pager-mobile-sm {
-        overflow: visible;
-
-        // Show native select
-        .k-pager-numbers-wrap {
-            border-color: inherit;
-
-            select.k-dropdown-list {
-                @extend %base-pager-section !optional;
-                @if ($kendo-pager-section-spacing) {
-                    margin-left: $kendo-pager-section-spacing;
-                    margin-right: $kendo-pager-section-spacing;
-                }
-                width: $kendo-pager-sm-dropdown-width;
-            }
-        }
-    }
-
-    // Hide components
-    .k-pager-mobile-md .k-pager-info,
-    .k-pager-mobile-sm .k-pager-info,
-    .k-pager-mobile-sm .k-pager-sizes,
-    .k-pager-mobile-sm .k-pager-numbers {
-        display: none;
-    }
-
     // Pager sizes
     @each $size, $size-props in $kendo-pager-sizes {
         $_padding-x: k-map-get($size-props, padding-x);
@@ -199,7 +159,8 @@
                     min-width: $_item-min-width;
                 }
 
-                .k-pager-input {
+                .k-pager-input,
+                > select.k-dropdown-list {
                     margin-inline-start: $_item-group-spacing;
                     margin-inline-end: $_item-group-spacing;
                 }

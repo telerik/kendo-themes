@@ -1,7 +1,5 @@
 @mixin kendo-scrollview--layout-base() {
 
-    kendo-scrollview.k-scrollview-wrap,
-    kendo-scrollview.k-scrollview,
     .k-scrollview {
         border-width: $kendo-scrollview-border-width;
         border-style: solid;
@@ -17,60 +15,47 @@
         -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
     }
 
-    .k-scrollview-wrap .k-scrollview,
-    .k-scrollview .k-scrollview-wrap {
-        list-style-type: none;
+    .k-scrollview-wrap {
         position: absolute;
         margin: 0;
         padding: 0;
-        width: 100%;
         height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
         cursor: default;
         white-space: nowrap;
+
+        > .k-scrollview-view {
+            display: inline-block;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
 
         img {
             user-select: none;
         }
 
-        & > li {
-            display: inline-block;
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        & > [data-role="page"] {
-            vertical-align: top;
-            display: inline-block;
-            min-height: 1px;
-        }
     }
 
-
-    // Blazor rendering
     .k-scrollview-wrap.k-scrollview-animate {
-        display: flex;
-        flex-flow: row nowrap;
         width: calc( var(--kendo-scrollview-views, 1) * 100% );
         transition-duration: $kendo-scrollview-transition-duration;
         transition-timing-function: $kendo-scrollview-transition-timing-function;
         transform: translateX( calc( -100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
+
+        [dir="rtl"] &,
+        .k-rtl & {
+            transform: translateX( calc( 100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
+        }
 
         .k-scrollview-view {
             width: calc( 100% / var(--kendo-scrollview-views, 1) );
             flex: 0 0 calc( 100% / var(--kendo-scrollview-views, 1) );
         }
 
-        [dir="rtl"] &,
-        .k-rtl & {
-            transform: translateX( calc( 100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
-        }
     }
 
-
-    kendo-scrollview.k-scrollview-wrap kendo-scrollview-pager,
-    kendo-scrollview.k-scrollview kendo-scrollview-pager,
     .k-scrollview-nav-wrap {
         padding: 0;
         margin: 0;
@@ -82,17 +67,14 @@
         text-align: center;
     }
 
-    kendo-scrollview.k-scrollview-wrap kendo-scrollview-pager,
     kendo-scrollview.k-scrollview kendo-scrollview-pager {
         pointer-events: none;
     }
 
-    kendo-scrollview.k-scrollview-wrap .k-scrollview-nav,
     kendo-scrollview.k-scrollview .k-scrollview-nav {
         pointer-events: initial;
     }
 
-    .k-scrollview-pageable,
     .k-scrollview-nav {
         margin: 0;
         padding: $kendo-scrollview-pager-item-spacing;
@@ -113,7 +95,6 @@
         }
     }
 
-    .k-scrollview-pageable > .k-button,
     .k-scrollview-nav > .k-link {
         margin-block: 0;
         margin-inline: k-math-div( $kendo-scrollview-pager-item-spacing, 2 );
@@ -180,24 +161,6 @@
         transition-duration: .3s;
         transition-timing-function: ease-in-out;
     }
-
-
-    @supports (-webkit-user-select: none) {
-        kendo-scrollview.k-scrollview-wrap ul.k-scrollview li > *,
-        kendo-scrollview.k-scrollview ul.k-scrollview-wrap li > *,
-        div.k-scrollview ul.k-scrollview-wrap li > * {
-            pointer-events: auto;
-        }
-    }
-
-    @supports (not (-webkit-user-select: none)) {
-        kendo-scrollview.k-scrollview-wrap ul.k-scrollview li > *,
-        kendo-scrollview.k-scrollview ul.k-scrollview-wrap li > *,
-        div.k-scrollview ul.k-scrollview-wrap li > * {
-            pointer-events: none;
-        }
-    }
-
 }
 
 

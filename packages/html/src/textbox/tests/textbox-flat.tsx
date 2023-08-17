@@ -1,7 +1,4 @@
-import { Icon } from '../../icon';
-import { Button } from '../../button';
-import { Textbox } from '../../textbox';
-
+import { Textbox, TextboxNormal, TextboxPrefix, TextboxSuffix } from '../../textbox';
 
 const styles = `
     #test-area {
@@ -18,104 +15,44 @@ export default () =>(
             <span>TextBox Flat RTL</span>
 
             <div>
-                <Textbox fillMode="flat" placeholder="TextBox..." />
+                <TextboxNormal fillMode="flat" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <Textbox fillMode="flat" placeholder="TextBox..." />
+                <TextboxNormal fillMode="flat" placeholder="placeholder..." />
+            </div>
+
+            {[ 'normal', ...Textbox.states ].map((state) => (
+                <>
+                    <div>
+                        <TextboxNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+
+                    <div dir="rtl">
+                        <TextboxNormal { ...{ [state]: true }} fillMode="flat" value={state} />
+                    </div>
+                </>
+            ))}
+
+            <div>
+                <TextboxNormal fillMode="flat" value="invalid focus" invalid focus />
+            </div>
+            <div dir="rtl">
+                <TextboxNormal fillMode="flat" value="invalid focus" invalid focus />
             </div>
 
             <div>
-                <Textbox fillMode="flat" value="Normal" />
+                <TextboxPrefix fillMode="flat"></TextboxPrefix>
             </div>
             <div dir="rtl">
-                <Textbox fillMode="flat" value="Normal" />
+                <TextboxPrefix fillMode="flat"></TextboxPrefix>
             </div>
 
             <div>
-                <Textbox fillMode="flat" value="Hover" hover />
+                <TextboxSuffix fillMode="flat"></TextboxSuffix>
             </div>
             <div dir="rtl">
-                <Textbox fillMode="flat" value="Hover" hover />
+                <TextboxSuffix fillMode="flat"></TextboxSuffix>
             </div>
-
-            <div>
-                <Textbox fillMode="flat" value="Focus" focus />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="flat" value="Focus" focus />
-            </div>
-
-            <div>
-                <Textbox fillMode="flat" value="Disabled" disabled />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="flat" value="Disabled" disabled />
-            </div>
-
-            <div>
-                <Textbox fillMode="flat" value="Invalid" invalid />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="flat" value="Invalid" invalid />
-            </div>
-
-            <div>
-                <Textbox fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="flat" value="Invalid Focus" invalid focus />
-            </div>
-
-            <div>
-                <Textbox fillMode="flat"
-                    placeholder="Prefix..."
-                    prefix={
-                        <>
-                            <Icon icon="menu" />
-                            <Button fillMode="clear" icon="calendar"></Button>
-                            <span className="k-input-separator"></span>
-                        </>
-                    }
-                />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="flat"
-                    placeholder="Prefix..."
-                    prefix={
-                        <>
-                            <Icon icon="menu" />
-                            <Button fillMode="clear" icon="calendar"></Button>
-                            <span className="k-input-separator"></span>
-                        </>
-                    }
-                />
-            </div>
-
-            <div>
-                <Textbox fillMode="flat"
-                    placeholder="Suffix..."
-                    suffix={
-                        <>
-                            <span className="k-input-separator"></span>
-                            <Button fillMode="clear" icon="calendar"></Button>
-                            <Icon icon="bell" />
-                        </>
-                    }
-                />
-            </div>
-            <div dir="rtl">
-                <Textbox fillMode="flat"
-                    placeholder="Suffix..."
-                    suffix={
-                        <>
-                            <span className="k-input-separator"></span>
-                            <Button fillMode="clear" icon="calendar"></Button>
-                            <Icon icon="bell" />
-                        </>
-                    }
-                />
-            </div>
-
         </div>
     </>
 );

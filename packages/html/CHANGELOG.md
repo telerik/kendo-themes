@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0-dev.5](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.4...v6.7.0-dev.5) (2023-08-14)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.7.0-dev.4](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.3...v6.7.0-dev.4) (2023-08-09)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.7.0-dev.3](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.2...v6.7.0-dev.3) (2023-08-07)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.7.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.1...v6.7.0-dev.2) (2023-07-31)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.7.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.0...v6.7.0-dev.1) (2023-07-25)
+
+
+### Features
+
+* **chat:** rename k-bubble to k-chat-bubble ([8ef2553](https://github.com/telerik/kendo-themes/commit/8ef2553ca8b48a4345924944d61a7bc4fed26c2c))
+* **html:** add chat spec ([3aa8e9f](https://github.com/telerik/kendo-themes/commit/3aa8e9faeb8070269d04066ad13834596d764d14))
+* **html:** add listgroup spec ([c696dc6](https://github.com/telerik/kendo-themes/commit/c696dc6db1c08d159c10282255895e8d9fdd54d9))
+* **html:** add scrollview spec ([a419dae](https://github.com/telerik/kendo-themes/commit/a419daeae678c74ceb63040a914be3ffb56eb1c1))
+* **html:** add skeleton helper ([bcc944f](https://github.com/telerik/kendo-themes/commit/bcc944fdc872ed7533407726297a3ba2e1ba8805))
+* **html:** add tilelayout helpers ([ddbf11b](https://github.com/telerik/kendo-themes/commit/ddbf11bec5262c722e90d94b7f4820eaf6c2b468))
+
+
+
+
+
+# [6.7.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.1-dev.0...v6.7.0-dev.0) (2023-07-24)
+
+
+### Features
+
+* **html:** add filter spec ([eb66423](https://github.com/telerik/kendo-themes/commit/eb664236c9ecd1412423f618c41aee60e8c81f5e))
+* **html:** update form rendering for grid layout ([559d295](https://github.com/telerik/kendo-themes/commit/559d29553e3121fb579d164e43174d90c0e8af43))
+
+
+
+
+
+## [6.6.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.6.0...v6.6.1-dev.0) (2023-07-17)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
 # [6.6.0](https://github.com/telerik/kendo-themes/compare/v6.5.1...v6.6.0) (2023-07-14)
 
 
