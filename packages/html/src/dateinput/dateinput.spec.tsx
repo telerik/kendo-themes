@@ -2,7 +2,6 @@ import { classNames, States, Size, Roundness, FillMode } from '../misc';
 import {
     Input,
     InputInnerInput,
-    InputClearValue,
     InputLoadingIcon,
     InputValidationIcon
 } from '../input';
@@ -42,7 +41,6 @@ export type KendoDateInputProps = KendoDateInputOptions & {
 export type KendoDateInputState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    showSpinButton: true,
     size: Input.defaultProps.size,
     rounded: Input.defaultProps.rounded,
     fillMode: Input.defaultProps.fillMode
@@ -67,7 +65,7 @@ export const DateInput = (
         loading,
         disabled,
         readonly,
-        showSpinButton = defaultProps.showSpinButton,
+        showSpinButton,
         ...other
     } = props;
 
@@ -97,11 +95,6 @@ export const DateInput = (
             <InputLoadingIcon
                 loading={loading}
                 disabled={disabled} />
-            <InputClearValue
-                loading={loading}
-                disabled={disabled}
-                readonly={readonly}
-                value={value} />
             {showSpinButton && (
                 <SpinButton
                     className="k-input-spinner"

@@ -16,29 +16,29 @@ export default () =>(
             <span>DateInput Outline RTL</span>
 
             <div>
-                <DateInputNormal fillMode="outline" placeholder="placeholder..." />
+                <DateInputNormal showSpinButton={true} fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <DateInputNormal fillMode="outline" placeholder="placeholder..." />
+                <DateInputNormal showSpinButton={true} fillMode="outline" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...DateInput.states ].map((state) => (
                 <>
                     <div>
-                        <DateInputNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                        <DateInputNormal { ...{ [state]: true }} showSpinButton={true} fillMode="outline" value={state} />
                     </div>
 
                     <div dir="rtl">
-                        <DateInputNormal { ...{ [state]: true }} fillMode="outline" value={state} />
+                        <DateInputNormal { ...{ [state]: true }} showSpinButton={true} fillMode="outline" value={state} />
                     </div>
                 </>
             ))}
 
             <div>
-                <DateInputNormal value="invalid focus" fillMode="outline" invalid focus />
+                <DateInputNormal showSpinButton={true} value="invalid focus" fillMode="outline" invalid focus />
             </div>
             <div dir="rtl">
-                <DateInputNormal value="invalid focus" fillMode="outline" invalid focus />
+                <DateInputNormal showSpinButton={true} value="invalid focus" fillMode="outline" invalid focus />
             </div>
 
         </div>

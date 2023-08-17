@@ -27,7 +27,7 @@ export default () =>(
                     <FormField
                         label="DateInput:"
                         editor={
-                            <DateInput showSpinButton={false} />
+                            <DateInput />
                         }
                     >
                     </FormField>
@@ -74,7 +74,7 @@ export default () =>(
                     <FormField
                         label="DateInput:"
                         editor={
-                            <DateInput showSpinButton={false} />
+                            <DateInput />
                         }
                     >
                     </FormField>
