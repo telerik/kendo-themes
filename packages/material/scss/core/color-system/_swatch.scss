@@ -1,3 +1,118 @@
+$kendo-color-base-surface-c0: map-get($gray, white);
+$kendo-color-base-surface-c1: map-get($gray, 10);
+$kendo-color-base-surface-c2: map-get($gray, 20);
+$kendo-color-base-surface-c3: map-get($gray, 40);
+$kendo-color-base-surface-c4: map-get($gray, 50);
+$kendo-color-base-surface-c5: map-get($gray, 60);
+$kendo-color-base-surface-c6: map-get($gray, 70);
+$kendo-color-base-surface-c7: map-get($gray, 80);
+$kendo-color-base-surface-c8: map-get($gray, 100);
+$kendo-color-base-surface-c9: map-get($gray, 110);
+$kendo-color-base-surface-c10: map-get($gray, 130);
+
+
+$kendo-color-base-text-c0: map-get($gray, white);
+$kendo-color-base-text-c1: map-get($gray, 110);
+$kendo-color-base-text-c2: map-get($gray, 120);
+$kendo-color-base-text-c3: map-get($gray, 130);
+$kendo-color-base-text-c4: map-get($gray, 150);
+$kendo-color-base-text-c5: map-get($gray, black);
+
+$kendo-color-base-border-c1: map-get($gray, 10);
+$kendo-color-base-border-c2: map-get($gray, 40);
+$kendo-color-base-border-c3: map-get($gray, 50);
+$kendo-color-base-border-c4: map-get($gray, 60);
+$kendo-color-base-border-c5: map-get($gray, 110);
+$kendo-color-base-border-c6: map-get($gray, 120);
+$kendo-color-base-border-c7: map-get($gray, 150);
+
+$kendo-color-primary-surface-c1: map-get($indigo, 40);
+$kendo-color-primary-surface-c2: map-get($indigo, 50);
+$kendo-color-primary-surface-c3: map-get($indigo, 70);
+$kendo-color-primary-surface-c4: map-get($indigo, 80);
+$kendo-color-primary-surface-c5: map-get($indigo, 90);
+$kendo-color-primary-surface-c6: map-get($indigo, 100);
+$kendo-color-primary-surface-c7: map-get($indigo, 110);
+$kendo-color-primary-surface-c8: map-get($indigo, 120);
+
+$kendo-color-primary-text-c1: map-get($indigo, 80);
+$kendo-color-primary-text-c2: map-get($indigo, 110);
+$kendo-color-primary-text-c3: map-get($indigo, 130);
+$kendo-color-primary-text-c4: map-get($indigo, 150);
+
+$kendo-color-primary-border-c1: map-get($indigo, 80);
+$kendo-color-primary-border-c2: map-get($indigo, 90);
+$kendo-color-primary-border-c3: map-get($indigo, 100);
+$kendo-color-primary-border-c4: map-get($indigo, 110);
+$kendo-color-primary-border-c5: map-get($indigo, 120);
+$kendo-color-primary-border-c6: map-get($indigo, 130);
+
+$kendo-color-secondary-text-c1: map-get($pink, 80);
+
+$kendo-color-info-surface-c1: map-get($blue, 40);
+$kendo-color-info-surface-c2: map-get($blue, 50);
+$kendo-color-info-surface-c3: map-get($blue, 70);
+$kendo-color-info-surface-c4: map-get($blue, 80);
+$kendo-color-info-surface-c5: map-get($blue, 90);
+$kendo-color-info-surface-c6: map-get($blue, 100);
+$kendo-color-info-surface-c7: map-get($blue, 110);
+$kendo-color-info-surface-c8: map-get($blue, 120);
+
+$kendo-color-info-text-c1: map-get($blue, 80);
+$kendo-color-info-text-c2: map-get($blue, 110);
+$kendo-color-info-text-c3: map-get($blue, 140);
+$kendo-color-info-text-c4: map-get($blue, 150);
+
+$kendo-color-info-border-c1: map-get($blue, 80);
+$kendo-color-info-border-c2: map-get($blue, 90);
+$kendo-color-info-border-c3: map-get($blue, 100);
+$kendo-color-info-border-c4: map-get($blue, 110);
+$kendo-color-info-border-c5: map-get($blue, 120);
+$kendo-color-info-border-c6: map-get($blue, 130);
+
+$kendo-color-warning-surface-c1: map-get($yellow, 30);
+$kendo-color-warning-surface-c2: map-get($yellow, 40);
+$kendo-color-warning-surface-c3: map-get($yellow, 50);
+$kendo-color-warning-surface-c4: map-get($yellow, 60);
+$kendo-color-warning-surface-c5: map-get($yellow, 70);
+$kendo-color-warning-surface-c6: map-get($yellow, 80);
+$kendo-color-warning-surface-c7: map-get($yellow, 90);
+$kendo-color-warning-surface-c8: map-get($yellow, 100);
+
+$kendo-color-warning-text-c1: map-get($gray, 150);
+$kendo-color-warning-text-c2: map-get($gray, 150);
+$kendo-color-warning-text-c3: map-get($gray, 150);
+$kendo-color-warning-text-c4: map-get($gray, black);
+
+$kendo-color-warning-border-c1: map-get($yellow, 80);
+$kendo-color-warning-border-c2: map-get($yellow, 90);
+$kendo-color-warning-border-c3: map-get($yellow, 100);
+$kendo-color-warning-border-c4: map-get($yellow, 110);
+$kendo-color-warning-border-c5: map-get($yellow, 120);
+$kendo-color-warning-border-c6: map-get($yellow, 80);
+
+$kendo-color-error-surface-c1: map-get($red, 40);
+$kendo-color-error-surface-c2: map-get($red, 50);
+$kendo-color-error-surface-c3: map-get($red, 70);
+$kendo-color-error-surface-c4: map-get($red, 80);
+$kendo-color-error-surface-c5: map-get($red, 90);
+$kendo-color-error-surface-c6: map-get($red, 100);
+$kendo-color-error-surface-c7: map-get($red, 110);
+$kendo-color-error-surface-c8: map-get($red, 120);
+
+$kendo-color-error-text-c1: map-get($red, 80);
+$kendo-color-error-text-c2: map-get($red, 110);
+$kendo-color-error-text-c3: map-get($red, 140);
+$kendo-color-error-text-c4: map-get($red, 150);
+
+$kendo-color-error-border-c1: map-get($red, 80);
+$kendo-color-error-border-c2: map-get($red, 90);
+$kendo-color-error-border-c3: map-get($red, 100);
+$kendo-color-error-border-c4: map-get($red, 110);
+$kendo-color-error-border-c5: map-get($red, 120);
+$kendo-color-error-border-c6: map-get($red, 130);
+
+// Legacy
 $primary-palette-name: indigo !default;
 $secondary-palette-name: pink !default;
 $tertiary-palette-name: teal !default;
