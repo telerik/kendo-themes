@@ -84,7 +84,7 @@ export default () =>(
                                 </ButtonGroup>
                                 <ToolbarSeparator></ToolbarSeparator>
                                 <Button icon="filter"></Button>
-                                <DropdownList value="Custom format" showValue={false} valueIconName="custom-format" />
+                                <MenuButton icon="custom-format" showArrow></MenuButton>
                                 <Button icon="link"></Button>
                                 <ToolbarSeparator></ToolbarSeparator>
                                 <Button icon="image"></Button>
