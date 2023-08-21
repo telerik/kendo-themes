@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0-dev.6](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.5...v6.7.0-dev.6) (2023-08-21)
+
+
+### Bug Fixes
+
+* **grid:** add focus state styles for the column list item in the column menu ([4ed7ca7](https://github.com/telerik/kendo-themes/commit/4ed7ca799aebf3d7874115359d2e367546b87641))
+
+
+
+
+
 # [6.7.0-dev.5](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.4...v6.7.0-dev.5) (2023-08-14)
 
 **Note:** Version bump only for package @progress/kendo-theme-material

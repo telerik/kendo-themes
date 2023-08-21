@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-utils",
   "description": "Utility first library alongside Kendo UI",
-  "version": "6.7.0-dev.5",
+  "version": "6.7.0-dev.6",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -42,6 +42,6 @@
     "postpublish": "echo 'no postpublish for utils'"
   },
   "dependencies": {
-    "@progress/kendo-theme-core": "6.7.0-dev.5"
+    "@progress/kendo-theme-core": "6.7.0-dev.6"
   }
 }
