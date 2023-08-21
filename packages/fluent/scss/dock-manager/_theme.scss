@@ -1,0 +1,47 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-dock-manager--theme() {
+
+      // DockManager
+      .k-dock-manager {
+        border-color: var( --kendo-dock-manager-border, #{$kendo-dock-manager-border} );
+    }
+
+    .k-dock-manager-splitter .k-pane-header,
+    .k-dock-manager-unpinned-container .k-pane-header {
+        background-color: var( --kendo-dock-manager-pane-header-bg, #{$kendo-dock-manager-pane-header-bg} );
+
+        > .k-pane-title {
+            color: var( --kendo-dock-manager-pane-header-text, #{$kendo-dock-manager-pane-header-text} );
+        }
+    }
+
+    .k-dock-manager-unpinned-container {
+        background-color: var( --kendo-dock-manager-unpinned-container-bg, #{$kendo-dock-manager-unpinned-container-bg} );
+        box-shadow:  $kendo-dock-manager-unpinned-container-shadow;
+    }
+
+    // Docking preview
+    .k-docking-preview {
+        background-color: var( --kendo-dock-manager-dock-preview-bg, #{$kendo-dock-manager-dock-preview-bg} );
+        border-color: var( --kendo-dock-manager-dock-preview-border, #{$kendo-dock-manager-dock-preview-border} );
+    }
+
+}
+
+@mixin kendo-dock-indicator--theme() {
+
+    .k-dock-indicator {
+        background-color: var( --kendo-dock-indicator-bg, #{$kendo-dock-indicator-bg} );
+        color: var( --kendo-dock-indicator-text, #{$kendo-dock-indicator-text} );
+        outline-color: var( --kendo-dock-indicator-outline, #{$kendo-dock-indicator-outline} );
+        box-shadow: var( --kendo-dock-indicator-shadow, #{$kendo-dock-indicator-shadow} );
+
+        &:hover,
+        &.k-hover {
+            background-color: var( --kendo-dock-indicator-hover-bg, #{$kendo-dock-indicator-hover-bg} );
+            color: var( --kendo-dock-indicator-hover-text, #{$kendo-dock-indicator-hover-text} );
+        }
+    }
+
+}

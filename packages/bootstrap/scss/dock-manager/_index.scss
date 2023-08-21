@@ -1,0 +1,38 @@
+@import "../core/_index.scss";
+@import "../utils/_index.scss";
+
+// Module meta
+$_kendo-module-meta: (
+    name: "dock-manager",
+    dependencies: (
+        "splitter",
+        "toolbar",
+        "tabstrip"
+    )
+);
+
+// Dependencies
+@import "../splitter/_index.scss";
+@import "../toolbar/_index.scss";
+@import "../tabstrip/_index.scss";
+
+// Component
+@import "./_variables.scss";
+@import "./_layout.scss";
+@import "./_theme.scss";
+
+// Register
+@import "../core/module-system/index.import.scss";
+@include module-register( $_kendo-module-meta... );
+
+// Expose
+@mixin kendo-dock-manager--styles() {
+    @include module-render("dock-manager") {
+        @include kendo-dock-manager--layout();
+        @include kendo-dock-manager--theme();
+    }
+}
+
+@if $kendo-auto-bootstrap {
+    @include kendo-dock-manager--styles();
+}

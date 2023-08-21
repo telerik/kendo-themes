@@ -1,0 +1,224 @@
+@use "../core/_variables.scss" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-dock-manager--layout() {
+
+    // DockManager
+    .k-dock-manager {
+        width: 100%;
+        height: 100%;
+        border-width: var( --kendo-dock-manager-border-width, #{$kendo-dock-manager-border-width} );
+        border-style: var( --kendo-dock-manager-border-style, #{$kendo-dock-manager-border-style} );
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: auto;
+        box-sizing: border-box;
+    }
+
+    // Toolbar
+    .k-dock-manager-toolbar {
+        border-width: 0 $kendo-dock-manager-border-width 0 0;
+        border-color: inherit;
+        flex-shrink: 0;
+        writing-mode: vertical-lr;
+
+        &::before {
+            height: 0;
+        }
+
+        .k-separator-horizontal {
+            width:  $kendo-line-height-em;
+            height: 0;
+            border-width: var( --kendo-dock-manager-border-width, #{$kendo-dock-manager-border-width} ) 0 0;
+        }
+
+        // Needed because of a bug in Chrome - Issue 1473554
+        // A fix will be shipped likely in milestone 118 and then we can revisit this
+        @supports  (not (-ms-ime-mode: none)) and (not (overflow: -webkit-marquee)) and (not (-moz-appearance:none)) {
+            .k-toolbar-button {
+                padding-block: var(--INTERNAL--kendo-button-padding-y, 0 );
+                padding-inline: var(--INTERNAL--kendo-button-padding-x, 0 );
+            }
+            .k-toolbar-button .k-button-text {
+                writing-mode: vertical-lr;
+            }
+        }
+    }
+
+    // Panes
+    .k-dock-manager-pane-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+   // Splitter
+   .k-dock-manager-splitter,
+   .k-dock-manager-unpinned-container {
+        height: 100%;
+        border-width: 0;
+        align-items: stretch;
+
+        > .k-pane {
+            height: auto;
+            flex-direction: column;
+            border-color: inherit;
+        }
+
+        .k-pane-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-block: var( --kendo-dock-manager-pane-header-padding-y, #{$kendo-dock-manager-pane-header-padding-y} );
+            padding-inline: var( --kendo-dock-manager-pane-header-padding-x, #{$kendo-dock-manager-pane-header-padding-x} );
+            border-block-end-width: var( --kendo-dock-manager-pane-header-border-width, #{$kendo-dock-manager-pane-header-border-width} );
+            border-block-end-style: var( --kendo-dock-manager-pane-header-border-style, #{$kendo-dock-manager-pane-header-border-style} );
+            border-color: inherit;
+        }
+
+        .k-pane-title {
+            padding-block: var( --kendo-dock-manager-pane-title-padding-y, #{$kendo-dock-manager-pane-title-padding-y} );
+            padding-inline: var( --kendo-dock-manager-pane-title-padding-x, #{$kendo-dock-manager-pane-title-padding-x} );
+            font-family: var( --kendo-dock-manager-pane-title-font-family, #{$kendo-font-family} );
+            font-size: var( --kendo-dock-manager-pane-title-font-size, #{$kendo-dock-manager-pane-title-font-size} );
+            line-height: var( --kendo-dock-manager-pane-title-line-height, #{$kendo-dock-manager-pane-title-line-height} );
+            font-weight: var( --kendo-dock-manager-pane-title-font-weight, #{$kendo-dock-manager-pane-title-font-weight} );
+            flex: 1 1 auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .k-pane-scrollable {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-color: inherit;
+        }
+
+        .k-pane-content {
+            height: 100%;
+            padding-block: var( --kendo-dock-manager-pane-content-padding-y, #{$kendo-dock-manager-pane-content-padding-y} );
+            padding-inline: var( --kendo-dock-manager-pane-content-padding-x, #{$kendo-dock-manager-pane-content-padding-x} );
+            overflow: auto;
+            flex: 1;
+        }
+
+        .k-pane-actions {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .k-pane-tabbed {
+            padding-block: var( --kendo-dock-manager-tabbed-pane-padding-y, #{$kendo-dock-manager-tabbed-pane-padding-y} );
+            padding-inline: var( --kendo-dock-manager-tabbed-pane-padding-x, #{$kendo-dock-manager-tabbed-pane-padding-x} );
+        }
+
+        .k-splitbar {
+            border-width: 0 1px;
+            border-style: solid;
+            border-color: inherit;
+        }
+        .k-splitbar-vertical {
+            border-width: 1px 0;
+        }
+    }
+
+    // Unpinned pane
+    .k-dock-manager-unpinned-container {
+        width: var( --kendo-dock-manager-unpinned-container-width, #{$kendo-dock-manager-unpinned-container-width} );
+        position: absolute;
+        display: flex;
+        height: 100%;
+        border-color: inherit;
+        z-index: 20;
+
+        .k-pane {
+            display: inline-flex;
+            flex-direction: column;
+            position: relative;
+            flex: 1 1 auto;
+        }
+
+        .k-splitbar {
+            height: 100%;
+            position: relative;
+            flex: none;
+        }
+    }
+
+    // Docking preview
+    .k-docking-preview {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-width: var( --kendo-dock-manager-dock-preview-border-width, #{$kendo-dock-manager-dock-preview-border-width} );
+        border-style: var( --kendo-dock-manager-dock-preview-border-style, #{$kendo-dock-manager-dock-preview-border-style} );
+        border-radius: var( --kendo-dock-manager-dock-preview-border-radius, #{$kendo-dock-manager-dock-preview-border-radius} );
+    }
+
+}
+
+@mixin  kendo-dock-indicator--layout() {
+
+    // DockNavigator
+    .k-dock-navigator-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 10001;
+        pointer-events: none;
+    }
+
+    .k-dock-navigator {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+        position: absolute;
+    }
+
+    .k-dock-indicator {
+        padding: var( --kendo-dock-indicator-padding, #{$kendo-dock-indicator-padding} );
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        position: relative;
+        pointer-events: all;
+        outline-width: var( --kendo-dock-indicator-outline-width, #{$kendo-dock-indicator-outline-width} );
+        outline-style: var( --kendo-dock-indicator-outline-style, #{$kendo-dock-indicator-outline-style} );
+
+        &.k-dock-indicator-middle {
+            box-shadow: none;
+        }
+    }
+
+    .k-dock-indicator-top {
+        grid-area: 1 / 2 / auto;
+    }
+    .k-dock-indicator-right {
+        grid-area: 2 / 3 / auto;
+    }
+    .k-dock-indicator-bottom {
+        grid-area: 3 / 2 / auto;
+    }
+    .k-dock-indicator-left {
+        grid-area: 2 / 1 / auto;
+    }
+    .k-dock-indicator-middle {
+        grid-area: 2 / 2 / auto;
+    }
+
+}

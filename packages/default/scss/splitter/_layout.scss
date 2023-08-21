@@ -18,6 +18,7 @@
         // Pane
         .k-pane {
             overflow: hidden;
+            box-sizing: border-box;
         }
         .k-scrollable {
             overflow: auto;

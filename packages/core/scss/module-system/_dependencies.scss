@@ -133,6 +133,11 @@ $_kendo-dependencies: (
         "treeview"
     ),
     dropzone: (),
+    dock-manager: (
+        "splitter",
+        "toolbar",
+        "tabstrip"
+    ),
     editor: (
         "button",
         "checkbox",

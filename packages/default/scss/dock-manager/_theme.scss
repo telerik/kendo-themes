@@ -1,0 +1,47 @@
+@mixin kendo-dock-manager--theme-base() {
+
+    // DockManager
+    .k-dock-manager {
+        border-color: $kendo-dock-manager-border;
+    }
+
+    // Splitter
+    .k-dock-manager-splitter .k-pane-header,
+    .k-dock-manager-unpinned-container .k-pane-header {
+        background-color: $kendo-dock-manager-pane-header-bg;
+    }
+
+    .k-dock-manager-unpinned-container {
+        background-color: $kendo-dock-manager-unpinned-container-bg;
+        @include box-shadow( $kendo-dock-manager-unpinned-container-shadow );
+    }
+
+    // Docking preview
+    .k-docking-preview {
+        background-color: $kendo-dock-manager-dock-preview-bg;
+        border-color: $kendo-dock-manager-dock-preview-border;
+    }
+
+}
+
+@mixin kendo-dock-navigator--theme() {
+
+    .k-dock-indicator {
+        color: $kendo-dock-indicator-text;
+        background-color: $kendo-dock-indicator-bg;
+        outline-color: $kendo-dock-indicator-outline;
+        filter: $kendo-dock-indicator-shadow;
+
+        &:hover,
+        &.k-hover {
+            background-color: $kendo-dock-indicator-hover-bg;
+            color: $kendo-dock-indicator-hover-text;
+        }
+    }
+
+}
+
+@mixin kendo-dock-manager--theme() {
+    @include kendo-dock-manager--theme-base();
+    @include kendo-dock-navigator--theme();
+}
