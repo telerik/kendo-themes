@@ -118,6 +118,7 @@
 @forward "./panelbar";
 @forward "./splitter";
 @forward "./tilelayout";
+@forward "./dock-manager";
 
 
 // Editors
@@ -279,6 +280,7 @@
 @use "./panelbar" as *;
 @use "./splitter" as *;
 @use "./tilelayout" as *;
+@use "./dock-manager" as *;
 
 
 // Data management
@@ -452,7 +454,7 @@
     @include panelbar-styles();
     @include splitter-styles();
     @include tilelayout-styles();
-
+    @include dock-manager-styles();
 
     // Data management
     @include grid-styles();

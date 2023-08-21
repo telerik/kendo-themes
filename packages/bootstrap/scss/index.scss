@@ -120,6 +120,7 @@
 @import "./panelbar/_index.scss";
 @import "./splitter/_index.scss";
 @import "./tilelayout/_index.scss";
+@import "./dock-manager/_index.scss";
 
 
 // Data management
@@ -288,6 +289,7 @@
     @include kendo-panelbar--styles();
     @include kendo-splitter--styles();
     @include kendo-tile-layout--styles();
+    @include kendo-dock-manager--styles();
 
 
     // Data management
