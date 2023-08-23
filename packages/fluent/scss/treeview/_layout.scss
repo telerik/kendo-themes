@@ -84,8 +84,7 @@
         align-items: center;
         cursor: pointer;
     }
-    .k-treeview-toggle .k-icon,
-    .k-treeview-toggle .k-svg-icon {
+    .k-treeview-toggle .k-icon {
         padding: var( --kendo-icon-padding, .25rem );
         box-sizing: content-box;
     }
@@ -119,7 +118,6 @@
         position: relative;
 
         .k-icon,
-        .k-svg-icon,
         .k-image,
         .k-sprite {
             margin-inline-end: var( --kendo-icon-spacing, .5rem );

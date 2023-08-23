@@ -217,9 +217,7 @@
     .k-input-validation-icon,
     .k-input-loading-icon,
     .k-input-prefix > .k-icon,
-    .k-input-prefix > .k-svg-icon,
-    .k-input-suffix > .k-icon,
-    .k-input-suffix > .k-svg-icon {
+    .k-input-suffix > .k-icon {
         flex: none;
         align-self: center;
         display: inline-flex;
@@ -227,6 +225,12 @@
         align-items: center;
         justify-content: center;
         box-sizing: content-box;
+    }
+
+    .k-input-loading-icon {
+        width: 1em;
+        height: 1em;
+        font-size: $kendo-icon-size;
     }
 
     // Input with SVG icon
@@ -342,12 +346,10 @@
                 min-height: auto !important; // stylelint-disable-line declaration-no-important
             }
         }
-        .k-spinner-increase .k-icon,
-        .k-spinner-increase .k-svg-icon {
+        .k-spinner-increase .k-icon {
             bottom: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
         }
-        .k-spinner-decrease .k-icon,
-        .k-spinner-decrease .k-svg-icon {
+        .k-spinner-decrease .k-icon {
             top: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
         }
     }
@@ -433,9 +435,7 @@
             .k-input-loading-icon,
             .k-clear-value,
             .k-input-prefix > .k-icon,
-            .k-input-prefix > .k-svg-icon,
-            .k-input-suffix > .k-icon,
-            .k-input-suffix > .k-svg-icon {
+            .k-input-suffix > .k-icon {
                 padding-block: $_padding-y;
                 padding-inline: $_padding-y;
                 box-sizing: content-box;

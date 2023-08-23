@@ -69,8 +69,7 @@
     }
 
     // Icon
-    .k-list-item .k-icon,
-    .k-list-item .k-svg-icon {
+    .k-list-item .k-icon {
         @include fill(
             $color: var( --kendo-list-item-icon-text, #{$kendo-list-item-icon-text} )
         );

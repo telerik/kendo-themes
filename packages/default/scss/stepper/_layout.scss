@@ -120,8 +120,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
         }
-        .k-step-label .k-icon,
-        .k-step-label .k-svg-icon  {
+        .k-step-label .k-icon  {
             margin-left: $kendo-icon-spacing;
         }
 
@@ -251,8 +250,7 @@
     .k-stepper[dir="rtl"] {
         direction: rtl;
 
-        .k-step-label .k-icon,
-        .k-step-label .k-svg-icon {
+        .k-step-label .k-icon {
             margin-left: 0;
             margin-right: $kendo-icon-spacing;
         }

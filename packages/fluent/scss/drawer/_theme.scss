@@ -31,7 +31,6 @@
             var( --kendo-drawer-item-bg, #{$kendo-drawer-item-bg} )
         );
 
-        .k-svg-icon,
         .k-icon {
             color: var( --kendo-drawer-item-icon-text, #{$kendo-drawer-item-icon-text} );
         }
@@ -43,7 +42,6 @@
                 var( --kendo-drawer-item-hover-bg, #{$kendo-drawer-item-hover-bg} )
             );
 
-            .k-svg-icon,
             .k-icon {
                 color: var( --kendo-drawer-item-hover-icon-text, #{$kendo-drawer-item-hover-icon-text} );
             }
@@ -57,7 +55,6 @@
             );
             box-shadow: var( --kendo-drawer-item-focus-shadow, #{$kendo-drawer-item-focus-shadow} );
 
-            .k-svg-icon,
             .k-icon {
                 color: var( --kendo-drawer-item-focus-icon-text, #{$kendo-drawer-item-focus-icon-text} );
             }
@@ -77,7 +74,6 @@
                 var( --kendo-drawer-item-selected-bg, #{$kendo-drawer-item-selected-bg} )
             );
 
-            .k-svg-icon,
             .k-icon {
                 color: var( --kendo-drawer-item-selected-icon-text, #{$kendo-drawer-item-selected-icon-text} );
             }

@@ -74,12 +74,6 @@
                 box-sizing: content-box;
                 vertical-align: unset;
             }
-
-            .k-svg-icon {
-                padding: calc( #{$kendo-font-size-md} - #{$kendo-font-size-sm} );
-                box-sizing: content-box;
-                vertical-align: unset;
-            }
         }
 
         .k-resize-handle {

@@ -94,8 +94,7 @@
     }
 
     .k-breadcrumb-link > .k-image,
-    .k-breadcrumb-icontext-link .k-icon,
-    .k-breadcrumb-icontext-link .k-svg-icon {
+    .k-breadcrumb-icontext-link .k-icon {
         margin-inline-end: var( --kendo-breadcrumb-link-icon-spacing, #{$kendo-breadcrumb-link-icon-spacing} );
     }
 

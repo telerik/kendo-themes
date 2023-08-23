@@ -83,8 +83,7 @@
         flex: 1;
         gap: var( --kendo-spreadsheet-formula-bar-gap, #{$kendo-spreadsheet-formula-bar-gap} );
 
-        > .k-icon,
-        > .k-svg-icon {
+        > .k-icon {
             padding-inline: var( --kendo-padding-y, #{$kendo-padding-md-y} );
             padding-block: 0;
             box-sizing: content-box;
@@ -557,8 +556,7 @@
             .k-link {
                 padding-inline-start: var( --filter-menu-padding-left, #{$kendo-filter-menu-padding-left} );
             }
-            .k-icon,
-            .k-svg-icon {
+            .k-icon {
                 margin-inline-start: calc(-1 * ( var( --kendo-icon-size, 1rem ) + #{$kendo-padding-md-y} ) );
                 margin-inline-end: $kendo-padding-md-y;
             }
@@ -599,7 +597,6 @@
             cursor: pointer;
 
             > .k-icon,
-            > .k-svg-icon,
             > .k-expander-indicator {
                 margin-inline-end: $kendo-padding-md-y;
             }
@@ -724,10 +721,6 @@
             position: absolute;
             inset-inline-end: 0;
             inset-block-start: map.get( $kendo-spacing, 2 );
-
-            .k-icon {
-                font-size: 6em;
-            }
 
             .k-svg-icon {
                 width: 6em;

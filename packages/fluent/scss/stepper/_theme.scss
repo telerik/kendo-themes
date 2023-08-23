@@ -162,8 +162,7 @@
         .k-step-label {
             @include fill( $color: var( --kendo-stepper-label-text, #{$kendo-stepper-label-text} ) );
         }
-        .k-step-success .k-step-label .k-icon,
-        .k-step-success .k-step-label .k-svg-icon {
+        .k-step-success .k-step-label .k-icon {
             @include fill( $color: var( --kendo-stepper-label-success-text, #{$kendo-stepper-label-success-text} ) );
         }
         .k-step-error .k-step-label {

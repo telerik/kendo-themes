@@ -1,11 +1,11 @@
-$ki-embed-font: true;
+$ki-embed-font: false;
 $ki-icon-size: $kendo-icon-size;
 
-@import "@progress/kendo-font-icons/scss/index.scss";
+@import "@progress/kendo-svg-icons/scss/index.scss";
 
 @mixin kendo-icon--layout() {
 
-    @include kendo-icon-styles();
+    @include kendo-svg-icon-styles();
 
     // Icon wrap
     .k-icon-wrap {

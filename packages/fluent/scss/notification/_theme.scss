@@ -28,8 +28,7 @@
             --kendo-notification-bg: var( --kendo-notification-#{$theme-color}-bg, #{$_bg} );
             --kendo-notification-border: var( --kendo-notification-#{$theme-color}-border, #{$_border} );
 
-            .k-notification-wrap > .k-icon,
-            .k-notification-wrap > .k-svg-icon {
+            .k-notification-wrap > .k-icon {
                 --kendo-notification-icon-text: var( --kendo-notification-#{$theme-color}-icon-text, #{$_icon} );
             }
         }

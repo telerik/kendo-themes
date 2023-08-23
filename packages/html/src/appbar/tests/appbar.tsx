@@ -12,10 +12,6 @@ const styles = `
         margin: 0;
     }
     .k-icon {
-        width: 30px;
-        text-align: center;
-    }
-    .k-svg-icon {
         margin-inline: 7px;
         text-align: center;
     }

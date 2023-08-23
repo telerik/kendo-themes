@@ -47,7 +47,6 @@
                 );
 
                 .k-icon,
-                .k-svg-icon,
                 .k-panelbar-item-icon {
                     color: var( --kendo-panelbar-text, #{$kendo-panelbar-text} );
                 }
@@ -85,7 +84,6 @@
                     --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-border, #{$kendo-panelbar-header-selected-border} );
 
                     .k-icon,
-                    .k-svg-icon,
                     .k-panelbar-item-icon {
                         color: inherit;
                     }
@@ -124,7 +122,6 @@
                     --INTERNAL--kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
 
                     .k-icon,
-                    .k-svg-icon,
                     .k-panelbar-item-icon {
                         color: inherit;
                     }
@@ -140,7 +137,6 @@
                 }
 
                 .k-icon,
-                .k-svg-icon,
                 .k-panelbar-item-icon {
                     color: inherit;
                 }
@@ -162,7 +158,6 @@
                 );
 
                 .k-icon,
-                .k-svg-icon,
                 .k-panelbar-item-icon {
                     color: var( --kendo-panelbar-text, #{$kendo-panelbar-text} );
                 }
@@ -226,7 +221,6 @@
                     --INTERNAL--kendo-panelbar-item-text: var( --kendo-disabled-text, inherit );
 
                     .k-icon,
-                    .k-svg-icon,
                     .k-panelbar-item-icon {
                         color: inherit;
                     }
@@ -242,7 +236,6 @@
                 }
 
                 .k-icon,
-                .k-svg-icon,
                 .k-panelbar-item-icon {
                     color: inherit;
                 }

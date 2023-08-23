@@ -53,8 +53,7 @@
         margin-inline-start: var( --kendo-tooltip-button-spacing, .5rem );
         flex-shrink: 0;
 
-        .k-icon,
-        .k-svg-icon {
+        .k-icon {
             color: inherit;
             vertical-align: top;
         }

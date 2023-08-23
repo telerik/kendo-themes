@@ -167,14 +167,12 @@
             align-items: center;
             gap: k-math-div( $kendo-color-gradient-contrast-spacer, 2 );
 
-            .k-icon,
-            .k-svg-icon {
+            .k-icon {
                 vertical-align: middle;
             }
 
             // Needed for the double check icons
             .k-icon + .k-icon,
-            .k-svg-icon + .k-svg-icon,
             .k-icon-wrapper-host + .k-icon-wrapper-host .k-icon {
                 margin-inline-start: -13px;
             }

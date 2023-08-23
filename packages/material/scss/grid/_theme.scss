@@ -136,8 +136,7 @@
         .k-link:hover {
             color: $kendo-grid-text;
 
-            > .k-icon,
-            > .k-svg-icon {
+            > .k-icon {
                 color: inherit;
             }
         }
@@ -145,8 +144,7 @@
         .k-grid-filter,
         .k-table-th-column-menu,
         .k-grid-header-menu,
-        .k-hierarchy-cell .k-icon,
-        .k-hierarchy-cell .k-svg-icon {
+        .k-hierarchy-cell .k-icon {
             &:hover {
                 color: $kendo-grid-text;
                 background-color: transparent;

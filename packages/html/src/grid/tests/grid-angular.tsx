@@ -151,7 +151,7 @@ export default () =>(
                                                     <span className="k-link">
                                                         <span className="k-column-title">Sorted</span>
                                                         <span className="k-sort-icon">
-                                                            <span className="k-icon k-i-sort-asc-small"></span>
+                                                            <Icon icon="sort-asc-small" />
                                                         </span>
                                                     </span>
                                                     <a className="k-grid-filter-menu k-grid-header-menu">
