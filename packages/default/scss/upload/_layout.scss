@@ -52,8 +52,7 @@
                 align-items: center;
                 position: relative;
 
-                > .k-icon,
-                > .k-svg-icon {
+                > .k-icon {
                     margin-inline-end: $kendo-upload-icon-spacing;
                 }
             }

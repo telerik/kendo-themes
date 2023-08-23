@@ -223,9 +223,7 @@
     .k-input-validation-icon,
     .k-input-loading-icon,
     .k-input-prefix > .k-icon,
-    .k-input-prefix > .k-svg-icon,
-    .k-input-suffix > .k-icon,
-    .k-input-suffix > .k-svg-icon {
+    .k-input-suffix > .k-icon {
         padding-inline: var( --INTERNAL--kendo-input-padding-y, #{$kendo-input-md-padding-y} );
         padding-block: var( --INTERNAL--kendo-input-padding-y, #{$kendo-input-md-padding-y} );
         flex: none;
@@ -235,6 +233,12 @@
         align-items: center;
         justify-content: center;
         box-sizing: content-box;
+    }
+
+    .k-input-loading-icon {
+        width: 1em;
+        height: 1em;
+        font-size: var( --kendo-icon-size-md, 1rem );
     }
 
     // Input with SVG icon
@@ -359,13 +363,11 @@
                 min-height: auto !important; // stylelint-disable-line declaration-no-important
             }
         }
-        .k-spinner-increase .k-icon,
-        .k-spinner-increase .k-svg-icon  {
+        .k-spinner-increase .k-icon  {
             bottom: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset} ), auto );
         }
 
-        .k-spinner-decrease .k-icon,
-        .k-spinner-decrease .k-svg-icon  {
+        .k-spinner-decrease .k-icon  {
            top: if( $kendo-use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset} ), auto );
         }
     }

@@ -306,7 +306,7 @@
                 height: var( --kendo-icon-size, 1rem );
                 border-bottom-width: 1px;
 
-                .k-icon::before {
+                .k-font-icon::before {
                     content: "\e013";
                 }
             }
@@ -318,7 +318,7 @@
                 width: var( --kendo-icon-size, 1rem );
                 border-left-width: 1px;
 
-                .k-icon::before {
+                .k-font-icon::before {
                     content: "\e014";
                 }
             }
@@ -330,7 +330,7 @@
                 height: var( --kendo-icon-size, 1rem );
                 border-top-width: 1px;
 
-                .k-icon::before {
+                .k-font-icon::before {
                     content: "\e015";
                 }
             }
@@ -342,7 +342,7 @@
                 width: var( --kendo-icon-size, 1rem );
                 border-right-width: 1px;
 
-                .k-icon::before {
+                .k-font-icon::before {
                     content: "\e016";
                 }
             }

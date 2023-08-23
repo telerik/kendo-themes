@@ -40,8 +40,7 @@
             @include box-shadow( $kendo-pdf-viewer-page-shadow );
         }
 
-        .k-blank-page > .k-icon,
-        .k-blank-page > .k-svg-icon {
+        .k-blank-page > .k-icon {
             @include fill( $color: $kendo-pdf-viewer-icon-text );
         }
 

@@ -183,7 +183,6 @@
             gap: var( --kendo-drawer-item-padding-x, #{$kendo-drawer-item-padding-x} );
         }
 
-        .k-svg-icon,
         .k-icon {
             flex-shrink: 0;
             padding-inline: var( --kendo-drawer-icon-padding-x, #{$kendo-drawer-icon-padding-x} );

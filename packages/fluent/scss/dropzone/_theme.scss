@@ -12,7 +12,6 @@
         );
 
         .k-icon,
-        .k-svg-icon,
         .k-dropzone-icon {
             color: var( --kendo-dropzone-icon-text, #{$kendo-dropzone-icon-text} );
         }
@@ -28,7 +27,6 @@
     // Hover
     .k-external-dropzone-hover {
         .k-icon,
-        .k-svg-icon,
         .k-dropzone-icon {
             color: var( --kendo-dropzone-icon-hover-text, #{$kendo-dropzone-icon-hover-text} );
         }

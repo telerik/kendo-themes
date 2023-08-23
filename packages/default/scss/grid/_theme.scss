@@ -113,16 +113,14 @@
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu,
-        .k-hierarchy-cell .k-icon,
-        .k-hierarchy-cell .k-svg-icon {
+        .k-hierarchy-cell .k-icon {
             color: $kendo-grid-header-text;
         }
 
         .k-grouping-row {
             background-color: $kendo-grid-grouping-row-bg;
 
-            .k-icon,
-            .k-svg-icon {
+            .k-icon {
                 color: $kendo-grid-header-text;
             }
 
@@ -194,8 +192,7 @@
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu,
-        .k-hierarchy-cell .k-icon,
-        .k-hierarchy-cell .k-svg-icon {
+        .k-hierarchy-cell .k-icon {
             &:hover {
                 color: $kendo-button-hover-text;
                 background-color: $kendo-button-hover-bg;

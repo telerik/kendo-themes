@@ -144,8 +144,7 @@
         }
     }
 
-    .k-pivotgrid-cell .k-icon,
-    .k-pivotgrid-cell .k-svg-icon {
+    .k-pivotgrid-cell .k-icon {
         cursor: pointer;
         padding-inline-end: $kendo-pivotgrid-icon-spacing;
     }
@@ -197,8 +196,7 @@
             span {
                 writing-mode: vertical-rl;
             }
-            .k-icon,
-            .k-svg-icon {
+            .k-icon {
                 vertical-align: baseline;
             }
         }
@@ -355,8 +353,7 @@
         flex-direction: row;
         align-items: center;
 
-        .k-icon,
-        .k-svg-icon {
+        .k-icon {
             margin-right: k-map-get( $kendo-spacing, 2 );
         }
         .k-dropdown-list {

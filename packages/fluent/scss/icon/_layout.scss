@@ -1,13 +1,12 @@
 @use "./_variables.scss" as *;
 
-@use "@progress/kendo-font-icons/scss/index.scss" with (
-    $ki-embed-font: true,
+@use "@progress/kendo-svg-icons/scss/index.scss" with (
     $ki-icon-size: var( --kendo-icon-size, 1rem )
 );
 
 @mixin kendo-icon--layout() {
 
-    @include index.kendo-icon-styles();
+    @include index.kendo-svg-icon-styles();
 
     // kendo-icon-wrapper component
     .k-icon-wrapper-host {
@@ -26,7 +25,7 @@
         right: 0;
         margin: 0 -.5em -.5em 0;
     }
-    .k-svg-icon.k-icon-modifier {
+    .k-icon.k-icon-modifier {
         width: 1em;
         height: 1em;
     }

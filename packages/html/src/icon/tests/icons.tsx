@@ -1,6 +1,5 @@
 import { Icon } from '../../icon';
 
-
 const icons = [
     "caret-tr",
     "caret-br",

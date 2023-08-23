@@ -139,13 +139,11 @@
         flex-shrink: 0;
 
         .k-editor-export {
-            .k-icon,
-            .k-svg-icon {
+            .k-icon {
                 margin-right: $kendo-editor-export-tool-icon-margin-x;
             }
 
             .k-icon,
-            .k-svg-icon,
             .k-export-tool-text {
                 vertical-align: middle;
             }
@@ -384,8 +382,7 @@
                 flex: 1;
                 width: 100px; // fix width for Edge
             }
-            .k-icon,
-            .k-svg-icon {
+            .k-icon {
                 margin: 0;
                 position: static;
             }
@@ -483,8 +480,7 @@
             left: $kendo-input-padding-x;
             top: $kendo-input-padding-y;
 
-            .k-icon,
-            .k-svg-icon {
+            .k-icon {
                 position: static;
                 margin-top: 0;
             }
