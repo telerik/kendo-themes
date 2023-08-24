@@ -1,6 +1,6 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
-export const SVGICON_CLASSNAME = `k-svg-icon`;
+export const SVGICON_CLASSNAME = `k-icon k-svg-icon`;
 
 const states = [];
 

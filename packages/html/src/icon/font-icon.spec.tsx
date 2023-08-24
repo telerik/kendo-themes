@@ -1,6 +1,6 @@
 import { classNames, optionClassNames, Size, ThemeColor } from '../misc';
 
-export const FONTICON_CLASSNAME = `k-icon`;
+export const FONTICON_CLASSNAME = `k-icon k-font-icon`;
 
 const states = [];
 
