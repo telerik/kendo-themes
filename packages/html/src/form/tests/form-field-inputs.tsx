@@ -4,7 +4,7 @@ import { ColorPicker } from '../../colorpicker';
 import { FloatingLabel } from '../../floating-label';
 import { MaskedTextbox } from '../../maskedtextbox';
 import { NumericTextbox } from '../../numerictextbox';
-import { RadioButton } from '../../radio';
+import { RadioButtonLabel, RadioGroup, RadioItem } from '../../radio';
 import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
 import { Upload, UploadFile } from '../../upload';
@@ -59,16 +59,14 @@ export default () =>(
                     <FormField
                         label="Radio (Y):"
                         editor={
-                            <ul className="k-radio-list">
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Male</label>
-                                </li>
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Female</label>
-                                </li>
-                            </ul>
+                            <RadioGroup>
+                                <RadioItem>
+                                    <RadioButtonLabel>Male</RadioButtonLabel>
+                                </RadioItem>
+                                <RadioItem>
+                                    <RadioButtonLabel>Female</RadioButtonLabel>
+                                </RadioItem>
+                            </RadioGroup>
                         }
                     >
                     </FormField>
@@ -76,17 +74,14 @@ export default () =>(
                     <FormField
                         label="Radio (X):"
                         editor={
-                            <ul className="k-radio-list k-list-horizontal">
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Male</label>
-                                </li>
-
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Female</label>
-                                </li>
-                            </ul>
+                            <RadioGroup layout="horizontal">
+                                <RadioItem>
+                                    <RadioButtonLabel>Male</RadioButtonLabel>
+                                </RadioItem>
+                                <RadioItem>
+                                    <RadioButtonLabel>Female</RadioButtonLabel>
+                                </RadioItem>
+                            </RadioGroup>
                         }
                     >
                     </FormField>
@@ -211,17 +206,14 @@ export default () =>(
                     <FormField
                         label="Radio (Y):"
                         editor={
-                            <ul className="k-radio-list">
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Male</label>
-                                </li>
-
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Female</label>
-                                </li>
-                            </ul>
+                            <RadioGroup>
+                                <RadioItem>
+                                    <RadioButtonLabel>Male</RadioButtonLabel>
+                                </RadioItem>
+                                <RadioItem>
+                                    <RadioButtonLabel>Female</RadioButtonLabel>
+                                </RadioItem>
+                            </RadioGroup>
                         }
                     >
                     </FormField>
@@ -229,17 +221,14 @@ export default () =>(
                     <FormField
                         label="Radio (X):"
                         editor={
-                            <ul className="k-radio-list k-list-horizontal">
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Male</label>
-                                </li>
-
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Female</label>
-                                </li>
-                            </ul>
+                            <RadioGroup layout="horizontal">
+                                <RadioItem>
+                                    <RadioButtonLabel>Male</RadioButtonLabel>
+                                </RadioItem>
+                                <RadioItem>
+                                    <RadioButtonLabel>Female</RadioButtonLabel>
+                                </RadioItem>
+                            </RadioGroup>
                         }
                     >
                     </FormField>
