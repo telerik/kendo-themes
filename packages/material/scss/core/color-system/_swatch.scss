@@ -1,116 +1,137 @@
-$kendo-color-base-surface-c0: map-get($gray, white);
-$kendo-color-base-surface-c1: map-get($gray, 10);
-$kendo-color-base-surface-c2: map-get($gray, 20);
-$kendo-color-base-surface-c3: map-get($gray, 40);
-$kendo-color-base-surface-c4: map-get($gray, 50);
-$kendo-color-base-surface-c5: map-get($gray, 60);
-$kendo-color-base-surface-c6: map-get($gray, 70);
-$kendo-color-base-surface-c7: map-get($gray, 80);
-$kendo-color-base-surface-c8: map-get($gray, 100);
-$kendo-color-base-surface-c9: map-get($gray, 110);
-$kendo-color-base-surface-c10: map-get($gray, 130);
+// Base
+$kendo-color-base-surface-c0: #FFFFFF; // map-get($gray, white);
+$kendo-color-base-surface-c1: #FAFAFA; // map-get($gray, 10);
+$kendo-color-base-surface-c2: #F5F5F5; // map-get($gray, 20);
+$kendo-color-base-surface-c3: #EBEBEB; // map-get($gray, 40);
+$kendo-color-base-surface-c4: #E0E0E0; // map-get($gray, 50);
+$kendo-color-base-surface-c5: #D6D6D6; // map-get($gray, 60);
+$kendo-color-base-surface-c6: #C7C7C7; // map-get($gray, 70);
+$kendo-color-base-surface-c7: #C2C2C2; // map-get($gray, 80);
+$kendo-color-base-surface-c8: #ADADAD; // map-get($gray, 100);
+$kendo-color-base-surface-c9: #9E9E9E; // map-get($gray, 110);
+$kendo-color-base-surface-c10: #616161; // map-get($gray, 130);
 
 
-$kendo-color-base-text-c0: map-get($gray, white);
-$kendo-color-base-text-c1: map-get($gray, 110);
-$kendo-color-base-text-c2: map-get($gray, 120);
-$kendo-color-base-text-c3: map-get($gray, 130);
-$kendo-color-base-text-c4: map-get($gray, 150);
-$kendo-color-base-text-c5: map-get($gray, black);
+$kendo-color-base-text-c0: #FFFFFF; // map-get($gray, white);
+$kendo-color-base-text-c1: #9E9E9E; // map-get($gray, 110);
+$kendo-color-base-text-c2: #757575; // map-get($gray, 120);
+$kendo-color-base-text-c3: #616161; // map-get($gray, 130);
+$kendo-color-base-text-c4: #212121; // map-get($gray, 150);
+$kendo-color-base-text-c5: #000000; // map-get($gray, black);
 
-$kendo-color-base-border-c1: map-get($gray, 10);
-$kendo-color-base-border-c2: map-get($gray, 40);
-$kendo-color-base-border-c3: map-get($gray, 50);
-$kendo-color-base-border-c4: map-get($gray, 60);
-$kendo-color-base-border-c5: map-get($gray, 110);
-$kendo-color-base-border-c6: map-get($gray, 120);
-$kendo-color-base-border-c7: map-get($gray, 150);
+$kendo-color-base-border-c1: #FAFAFA; // map-get($gray, 10);
+$kendo-color-base-border-c2: #EBEBEB; // map-get($gray, 40);
+$kendo-color-base-border-c3: #E0E0E0; // map-get($gray, 50);
+$kendo-color-base-border-c4: #D6D6D6; // map-get($gray, 60);
+$kendo-color-base-border-c5: #9E9E9E; // map-get($gray, 110);
+$kendo-color-base-border-c6: #757575; // map-get($gray, 120);
+$kendo-color-base-border-c7: #212121; // map-get($gray, 150);
 
-$kendo-color-primary-surface-c1: map-get($indigo, 40);
-$kendo-color-primary-surface-c2: map-get($indigo, 50);
-$kendo-color-primary-surface-c3: map-get($indigo, 70);
-$kendo-color-primary-surface-c4: map-get($indigo, 80);
-$kendo-color-primary-surface-c5: map-get($indigo, 90);
-$kendo-color-primary-surface-c6: map-get($indigo, 100);
-$kendo-color-primary-surface-c7: map-get($indigo, 110);
-$kendo-color-primary-surface-c8: map-get($indigo, 120);
+// New
 
-$kendo-color-primary-text-c1: map-get($indigo, 80);
-$kendo-color-primary-text-c2: map-get($indigo, 110);
-$kendo-color-primary-text-c3: map-get($indigo, 130);
-$kendo-color-primary-text-c4: map-get($indigo, 150);
+$kendo-color-base-1: #FFFFFF;
+$kendo-color-base-2: #FAFAFA;
+$kendo-color-base-3: #F5F5F5;
+$kendo-color-base-4: #EBEBEB;
+$kendo-color-base-5: #E0E0E0;
+$kendo-color-base-6: #D6D6D6;
+$kendo-color-base-7: #C7C7C7;
+$kendo-color-base-8: #C2C2C2;
+$kendo-color-base-9: #ADADAD;
+$kendo-color-base-10: #9E9E9E;
+$kendo-color-base-11: #757575;
+$kendo-color-base-12: #616161;
+$kendo-color-base-13: #212121;
+$kendo-color-base-14: #000000;
 
-$kendo-color-primary-border-c1: map-get($indigo, 80);
-$kendo-color-primary-border-c2: map-get($indigo, 90);
-$kendo-color-primary-border-c3: map-get($indigo, 100);
-$kendo-color-primary-border-c4: map-get($indigo, 110);
-$kendo-color-primary-border-c5: map-get($indigo, 120);
-$kendo-color-primary-border-c6: map-get($indigo, 130);
 
-$kendo-color-secondary-text-c1: map-get($pink, 80);
+// End Base
 
-$kendo-color-info-surface-c1: map-get($blue, 40);
-$kendo-color-info-surface-c2: map-get($blue, 50);
-$kendo-color-info-surface-c3: map-get($blue, 70);
-$kendo-color-info-surface-c4: map-get($blue, 80);
-$kendo-color-info-surface-c5: map-get($blue, 90);
-$kendo-color-info-surface-c6: map-get($blue, 100);
-$kendo-color-info-surface-c7: map-get($blue, 110);
-$kendo-color-info-surface-c8: map-get($blue, 120);
+$kendo-color-primary-surface-c1: #D1D5EE; // map-get($indigo, 40);
+$kendo-color-primary-surface-c2: #C5CAE8; // map-get($indigo, 50);
+$kendo-color-primary-surface-c3: #97A0D7; // map-get($indigo, 70);
+$kendo-color-primary-surface-c4: #3F51B5; // map-get($indigo, 80);
+$kendo-color-primary-surface-c5: #3A4BA7; // map-get($indigo, 90);
+$kendo-color-primary-surface-c6: #37479F; // map-get($indigo, 100);
+$kendo-color-primary-surface-c7: #354498; // map-get($indigo, 110);
+$kendo-color-primary-surface-c8: #324191; // map-get($indigo, 120);
 
-$kendo-color-info-text-c1: map-get($blue, 80);
-$kendo-color-info-text-c2: map-get($blue, 110);
-$kendo-color-info-text-c3: map-get($blue, 140);
-$kendo-color-info-text-c4: map-get($blue, 150);
+$kendo-color-primary-text-c1: #3F51B5; // map-get($indigo, 80);
+$kendo-color-primary-text-c2: #354498; // map-get($indigo, 110);
+$kendo-color-primary-text-c3: #303E8A; // map-get($indigo, 130);
+$kendo-color-primary-text-c4: #161C3F; // map-get($indigo, 150);
 
-$kendo-color-info-border-c1: map-get($blue, 80);
-$kendo-color-info-border-c2: map-get($blue, 90);
-$kendo-color-info-border-c3: map-get($blue, 100);
-$kendo-color-info-border-c4: map-get($blue, 110);
-$kendo-color-info-border-c5: map-get($blue, 120);
-$kendo-color-info-border-c6: map-get($blue, 130);
+$kendo-color-primary-border-c1: #3F51B5; // map-get($indigo, 80);
+$kendo-color-primary-border-c2: #3A4BA7; // map-get($indigo, 90);
+$kendo-color-primary-border-c3: #37479F; // map-get($indigo, 100);
+$kendo-color-primary-border-c4: #354498; // map-get($indigo, 110);
+$kendo-color-primary-border-c5: #324191; // map-get($indigo, 120);
+$kendo-color-primary-border-c6: #303E8A; // map-get($indigo, 130);
 
-$kendo-color-warning-surface-c1: map-get($yellow, 30);
-$kendo-color-warning-surface-c2: map-get($yellow, 40);
-$kendo-color-warning-surface-c3: map-get($yellow, 50);
-$kendo-color-warning-surface-c4: map-get($yellow, 60);
-$kendo-color-warning-surface-c5: map-get($yellow, 70);
-$kendo-color-warning-surface-c6: map-get($yellow, 80);
-$kendo-color-warning-surface-c7: map-get($yellow, 90);
-$kendo-color-warning-surface-c8: map-get($yellow, 100);
+$kendo-color-secondary-text-c1: #3F51B5; // map-get($pink, 80);
 
-$kendo-color-warning-text-c1: map-get($gray, 150);
-$kendo-color-warning-text-c2: map-get($gray, 150);
-$kendo-color-warning-text-c3: map-get($gray, 150);
-$kendo-color-warning-text-c4: map-get($gray, black);
+$kendo-color-info-surface-c1: #C8D7FB; // map-get($blue, 40);
+$kendo-color-info-surface-c2: #A7C0F7; // map-get($blue, 50);
+$kendo-color-info-surface-c3: #80A5F4; // map-get($blue, 70);
+$kendo-color-info-surface-c4: #0058E9; // map-get($blue, 80);
+$kendo-color-info-surface-c5: #0251D6; // map-get($blue, 90);
+$kendo-color-info-surface-c6: #054DCC; // map-get($blue, 100);
+$kendo-color-info-surface-c7: #034AC3; // map-get($blue, 110);
+$kendo-color-info-surface-c8: #0447BA; // map-get($blue, 120);
 
-$kendo-color-warning-border-c1: map-get($yellow, 80);
-$kendo-color-warning-border-c2: map-get($yellow, 90);
-$kendo-color-warning-border-c3: map-get($yellow, 100);
-$kendo-color-warning-border-c4: map-get($yellow, 110);
-$kendo-color-warning-border-c5: map-get($yellow, 120);
-$kendo-color-warning-border-c6: map-get($yellow, 80);
+$kendo-color-info-text-c1: #0058E9; // map-get($blue, 80);
+$kendo-color-info-text-c2: #034AC3; // map-get($blue, 110);
+$kendo-color-info-text-c3: #072C74; // map-get($blue, 140);
+$kendo-color-info-text-c4: #071F51; // map-get($blue, 150);
 
-$kendo-color-error-surface-c1: map-get($red, 40);
-$kendo-color-error-surface-c2: map-get($red, 50);
-$kendo-color-error-surface-c3: map-get($red, 70);
-$kendo-color-error-surface-c4: map-get($red, 80);
-$kendo-color-error-surface-c5: map-get($red, 90);
-$kendo-color-error-surface-c6: map-get($red, 100);
-$kendo-color-error-surface-c7: map-get($red, 110);
-$kendo-color-error-surface-c8: map-get($red, 120);
+$kendo-color-info-border-c1: #0058E9; // map-get($blue, 80);
+$kendo-color-info-border-c2: #0251D6; // map-get($blue, 90);
+$kendo-color-info-border-c3: #054DCC; // map-get($blue, 100);
+$kendo-color-info-border-c4: #034AC3; // map-get($blue, 110);
+$kendo-color-info-border-c5: #0447BA; // map-get($blue, 120);
+$kendo-color-info-border-c6: #0443B0; // map-get($blue, 130);
 
-$kendo-color-error-text-c1: map-get($red, 80);
-$kendo-color-error-text-c2: map-get($red, 110);
-$kendo-color-error-text-c3: map-get($red, 140);
-$kendo-color-error-text-c4: map-get($red, 150);
+$kendo-color-warning-surface-c1: #FFF4DF; // map-get($yellow, 30);
+$kendo-color-warning-surface-c2: #FFF0CE; // map-get($yellow, 40);
+$kendo-color-warning-surface-c3: #FFE7B0; // map-get($yellow, 50);
+$kendo-color-warning-surface-c4: #FFE19C; // map-get($yellow, 60);
+$kendo-color-warning-surface-c5: #FFDD8F; // map-get($yellow, 70);
+$kendo-color-warning-surface-c6: #FFC000; // map-get($yellow, 80);
+$kendo-color-warning-surface-c7: #EBB201; // map-get($yellow, 90);
+$kendo-color-warning-surface-c8: #DFA903; // map-get($yellow, 100);
 
-$kendo-color-error-border-c1: map-get($red, 80);
-$kendo-color-error-border-c2: map-get($red, 90);
-$kendo-color-error-border-c3: map-get($red, 100);
-$kendo-color-error-border-c4: map-get($red, 110);
-$kendo-color-error-border-c5: map-get($red, 120);
-$kendo-color-error-border-c6: map-get($red, 130);
+$kendo-color-warning-text-c1: #212121; // map-get($gray, 150);
+$kendo-color-warning-text-c2: #212121; // map-get($gray, 150);
+$kendo-color-warning-text-c3: #212121; // map-get($gray, 150);
+$kendo-color-warning-text-c4: #000000; // map-get($gray, black);
+
+$kendo-color-warning-border-c1: #FFC000; // map-get($yellow, 80);
+$kendo-color-warning-border-c2: #EBB201; // map-get($yellow, 90);
+$kendo-color-warning-border-c3: #DFA903; // map-get($yellow, 100);
+$kendo-color-warning-border-c4: #D6A202; // map-get($yellow, 110);
+$kendo-color-warning-border-c5: #CB9A07; // map-get($yellow, 120);
+$kendo-color-warning-border-c6: #FFC000; // map-get($yellow, 80);
+
+$kendo-color-error-surface-c1: #FCC7C2; // map-get($red, 40);
+$kendo-color-error-surface-c2: #FEAFA8; // map-get($red, 50);
+$kendo-color-error-surface-c3: #FC8D83; // map-get($red, 70);
+$kendo-color-error-surface-c4: #F31700; // map-get($red, 80);
+$kendo-color-error-surface-c5: #E01701; // map-get($red, 90);
+$kendo-color-error-surface-c6: #D51504; // map-get($red, 100);
+$kendo-color-error-surface-c7: #CC1505; // map-get($red, 110);
+$kendo-color-error-surface-c8: #C21505; // map-get($red, 120);
+
+$kendo-color-error-text-c1: #FC8D83; // map-get($red, 80);
+$kendo-color-error-text-c2: #CC1505; // map-get($red, 110);
+$kendo-color-error-text-c3: #790F08; // map-get($red, 140);
+$kendo-color-error-text-c4: #550C07; // map-get($red, 150);
+
+$kendo-color-error-border-c1: #FC8D83; // map-get($red, 80);
+$kendo-color-error-border-c2: #E01701; // map-get($red, 90);
+$kendo-color-error-border-c3: #D51504; // map-get($red, 100);
+$kendo-color-error-border-c4: #CC1505; // map-get($red, 110);
+$kendo-color-error-border-c5: #C21505; // map-get($red, 120);
+$kendo-color-error-border-c6: #B91406; // map-get($red, 130);
 
 // Legacy
 $primary-palette-name: indigo !default;
@@ -161,3 +182,117 @@ $kendo-app-text: $kendo-body-text !default;
 $kendo-app-border: k-map-get( $theme, component-border ) !default;
 
 $kendo-disabled-text: k-map-get( $theme, disabled-text ) !default;
+
+
+$kendo-color-base-surface-c0: #FFFFFF;
+$kendo-color-base-surface-c1: #FAFAFA;
+$kendo-color-base-surface-c2: #F5F5F5;
+$kendo-color-base-surface-c3: #EBEBEB;
+$kendo-color-base-surface-c4: #E0E0E0;
+$kendo-color-base-surface-c5: #D6D6D6;
+$kendo-color-base-surface-c6: #C7C7C7;
+$kendo-color-base-surface-c7: #C2C2C2;
+$kendo-color-base-surface-c8: #ADADAD;
+$kendo-color-base-surface-c9: #9E9E9E;
+$kendo-color-base-surface-c10: #616161;
+
+$kendo-color-base-text-c0: #FFFFFF;
+$kendo-color-base-text-c1: #9E9E9E;
+$kendo-color-base-text-c2: #757575;
+$kendo-color-base-text-c3: #616161;
+$kendo-color-base-text-c4: #212121;
+$kendo-color-base-text-c5: #000000;
+
+$kendo-color-base-border-c1: #FAFAFA;
+$kendo-color-base-border-c2: #EBEBEB;
+$kendo-color-base-border-c3: #E0E0E0;
+$kendo-color-base-border-c4: #D6D6D6;
+$kendo-color-base-border-c5: #9E9E9E;
+$kendo-color-base-border-c6: #757575;
+$kendo-color-base-border-c7: #212121;
+
+$kendo-color-primary-surface-c1: #D1D5EE;
+$kendo-color-primary-surface-c2: #C5CAE8;
+$kendo-color-primary-surface-c3: #97A0D7;
+$kendo-color-primary-surface-c4: #3F51B5;
+$kendo-color-primary-surface-c5: #3A4BA7;
+$kendo-color-primary-surface-c6: #37479F;
+$kendo-color-primary-surface-c7: #354498;
+$kendo-color-primary-surface-c8: #324191;
+
+$kendo-color-primary-text-c1: #3F51B5;
+$kendo-color-primary-text-c2: #354498;
+$kendo-color-primary-text-c3: #303E8A;
+$kendo-color-primary-text-c4: #161C3F;
+
+$kendo-color-primary-border-c1: #3F51B5;
+$kendo-color-primary-border-c2: #3A4BA7;
+$kendo-color-primary-border-c3: #37479F;
+$kendo-color-primary-border-c4: #354498;
+$kendo-color-primary-border-c5: #324191;
+$kendo-color-primary-border-c6: #303E8A;
+
+$kendo-color-secondary-text-c1: #3F51B5;
+
+$kendo-color-info-surface-c1: #C8D7FB;
+$kendo-color-info-surface-c2: #A7C0F7;
+$kendo-color-info-surface-c3: #80A5F4;
+$kendo-color-info-surface-c4: #0058E9;
+$kendo-color-info-surface-c5: #0251D6;
+$kendo-color-info-surface-c6: #054DCC;
+$kendo-color-info-surface-c7: #034AC3;
+$kendo-color-info-surface-c8: #0447BA;
+
+$kendo-color-info-text-c1: #0058E9;
+$kendo-color-info-text-c2: #034AC3;
+$kendo-color-info-text-c3: #072C74;
+$kendo-color-info-text-c4: #071F51;
+
+$kendo-color-info-border-c1: #0058E9;
+$kendo-color-info-border-c2: #0251D6;
+$kendo-color-info-border-c3: #054DCC;
+$kendo-color-info-border-c4: #034AC3;
+$kendo-color-info-border-c5: #0447BA;
+$kendo-color-info-border-c6: #0443B0;
+
+$kendo-color-warning-surface-c1: #FFF4DF;
+$kendo-color-warning-surface-c2: #FFF0CE;
+$kendo-color-warning-surface-c3: #FFE7B0;
+$kendo-color-warning-surface-c4: #FFE19C;
+$kendo-color-warning-surface-c5: #FFDD8F;
+$kendo-color-warning-surface-c6: #FFC000;
+$kendo-color-warning-surface-c7: #EBB201;
+$kendo-color-warning-surface-c8: #DFA903;
+
+$kendo-color-warning-text-c1: #212121;
+$kendo-color-warning-text-c2: #212121;
+$kendo-color-warning-text-c3: #212121;
+$kendo-color-warning-text-c4: #000000;
+
+$kendo-color-warning-border-c1: #FFC000;
+$kendo-color-warning-border-c2: #EBB201;
+$kendo-color-warning-border-c3: #DFA903;
+$kendo-color-warning-border-c4: #D6A202;
+$kendo-color-warning-border-c5: #CB9A07;
+$kendo-color-warning-border-c6: #FFC000;
+
+$kendo-color-error-surface-c1: #FCC7C2;
+$kendo-color-error-surface-c2: #FEAFA8;
+$kendo-color-error-surface-c3: #FC8D83;
+$kendo-color-error-surface-c4: #F31700;
+$kendo-color-error-surface-c5: #E01701;
+$kendo-color-error-surface-c6: #D51504;
+$kendo-color-error-surface-c7: #CC1505;
+$kendo-color-error-surface-c8: #C21505;
+
+$kendo-color-error-text-c1: #FC8D83;
+$kendo-color-error-text-c2: #CC1505;
+$kendo-color-error-text-c3: #790F08;
+$kendo-color-error-text-c4: #550C07;
+
+$kendo-color-error-border-c1: #FC8D83;
+$kendo-color-error-border-c2: #E01701;
+$kendo-color-error-border-c3: #D51504;
+$kendo-color-error-border-c4: #CC1505;
+$kendo-color-error-border-c5: #C21505;
+$kendo-color-error-border-c6: #B91406;

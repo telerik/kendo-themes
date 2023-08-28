@@ -2,329 +2,475 @@
 
 $kendo-new-colors: true;
 
+// Base
+
+// Surface
+
+$kendo-color-surface: #fafafa; // gray-1
+$kendo-color-surface-alt: #ffffff; // white
+
+// Border
+
+$kendo-color-border: #d6d6d6; // gray-5
+$kendo-color-border-alt: #c2c2c2; // gray-6
 
 // Base
-$kendo-base-surface-contrast-1: #FFFFFF !default;
-$kendo-base-surface-contrast-2: #FAFAFA !default;
-$kendo-base-surface-contrast-3: #F5F5F5 !default;
-$kendo-base-surface-contrast-4: #EBEBEB !default;
-$kendo-base-surface-contrast-5: #D6D6D6 !default;
-$kendo-base-surface-contrast-6: #C2C2C2 !default;
-$kendo-base-surface-contrast-7: #3D3D3D !default;
 
-$kendo-base-stroke-contrast-1: #EBEBEB !default;
-$kendo-base-stroke-contrast-2: #E0E0E0 !default;
-$kendo-base-stroke-contrast-3: #D6D6D6 !default;
-$kendo-base-stroke-contrast-4: #C2C2C2 !default;
-$kendo-base-stroke-contrast-5: #3D3D3D !default;
-$kendo-base-stroke-contrast-6: #999999 !default;
-$kendo-base-stroke-contrast-7: #666666 !default;
+$kendo-color-base: #f5f5f5; // gray-2
+$kendo-color-base-content: #3d3d3d; // gray-12
+$kendo-color-base-hover: #e0e0e0; // gray-4
+$kendo-color-base-active: #d6d6d6; // gray-5
+$kendo-color-base-surface-content: #3d3d3d; // gray-12
 
-$kendo-base-content-contrast-1: #FFFFFF !default;
-$kendo-base-content-contrast-2: #999999 !default;
-$kendo-base-content-contrast-3: #666666 !default;
-$kendo-base-content-contrast-4: #3D3D3D !default;
-$kendo-base-content-contrast-5: null !default;
-$kendo-base-content-contrast-6: null !default;
-$kendo-base-content-contrast-7: null !default;
+$kendo-color-base-variant: #ffffff; // white
+$kendo-color-base-variant-content: #3d3d3d; // gray-12
+$kendo-color-base-variant-hover: #f5f5f5; // gray-2
+$kendo-color-base-variant-active: #ebebeb; // gray-3
+$kendo-color-base-variant-border: #d6d6d6; // gray-6
 
 // Primary
-$kendo-primary-surface-contrast-1: #FF766D !default;
-$kendo-primary-surface-contrast-2: #FF6358 !default;
-$kendo-primary-surface-contrast-3: #EA5A51 !default;
-$kendo-primary-surface-contrast-4: #D45349 !default;
-$kendo-primary-surface-contrast-5: null !default;
-$kendo-primary-surface-contrast-6: null !default;
-$kendo-primary-surface-contrast-7: null !default;
 
-$kendo-primary-stroke-contrast-1: #FF6358 !default;
-$kendo-primary-stroke-contrast-2: #EA5A51 !default;
-$kendo-primary-stroke-contrast-3: #D45349 !default;
-$kendo-primary-stroke-contrast-4: null !default;
-$kendo-primary-stroke-contrast-5: null !default;
-$kendo-primary-stroke-contrast-6: null !default;
-$kendo-primary-stroke-contrast-7: null !default;
+$kendo-color-primary: #ff6358; // coral-9
+$kendo-color-primary-content: #ffffff; // gray-white
+$kendo-color-primary-hover: #ea5a51; // coral-10
+$kendo-color-primary-active: #d45349; // coral-11
+$kendo-color-primary-surface-content: #ff6358; // coral-9
 
-$kendo-primary-content-contrast-1: #FFFFFF !default;
-$kendo-primary-content-contrast-2: #FF6358 !default;
-$kendo-primary-content-contrast-3: #D45349 !default;
-$kendo-primary-content-contrast-4: null !default;
-$kendo-primary-content-contrast-5: null !default;
-$kendo-primary-content-contrast-6: null !default;
-$kendo-primary-content-contrast-7: null !default;
+$kendo-color-primary-variant: #fff6f5; // coral-2
+$kendo-color-primary-variant-content: #5c201c; // coral-15
+$kendo-color-primary-variant-hover: #ffeceb; // coral-3
+$kendo-color-primary-variant-active: #ffdedb; // coral-4
+$kendo-color-primary-variant-border: #ff9d97; // coral-6
 
 // Secondary
-$kendo-secondary-surface-contrast-1: null !default;
-$kendo-secondary-surface-contrast-2: null !default;
-$kendo-secondary-surface-contrast-3: null !default;
-$kendo-secondary-surface-contrast-4: null !default;
-$kendo-secondary-surface-contrast-5: null !default;
-$kendo-secondary-surface-contrast-6: null !default;
-$kendo-secondary-surface-contrast-7: null !default;
 
-$kendo-secondary-stroke-contrast-1: null !default;
-$kendo-secondary-stroke-contrast-2: null !default;
-$kendo-secondary-stroke-contrast-3: null !default;
-$kendo-secondary-stroke-contrast-4: null !default;
-$kendo-secondary-stroke-contrast-5: null !default;
-$kendo-secondary-stroke-contrast-6: null !default;
-$kendo-secondary-stroke-contrast-7: null !default;
+$kendo-color-secondary: #666666; // gray-10
+$kendo-color-secondary-content: #ffffff; // gray-white
+$kendo-color-secondary-hover: #5c5c5c; // gray-11
+$kendo-color-secondary-active: #525252; // gray-12
+$kendo-color-secondary-surface-content: #666666; // gray-10
 
-$kendo-secondary-content-contrast-1: null !default;
-$kendo-secondary-content-contrast-2: null !default;
-$kendo-secondary-content-contrast-3: null !default;
-$kendo-secondary-content-contrast-4: null !default;
-$kendo-secondary-content-contrast-5: null !default;
-$kendo-secondary-content-contrast-6: null !default;
-$kendo-secondary-content-contrast-7: null !default;
+$kendo-color-secondary-variant: #f5f5f5; // gray-2
+$kendo-color-secondary-variant-content: #3d3d3d; // gray-12
+$kendo-color-secondary-variant-hover: #e0e0e0; // gray-4
+$kendo-color-secondary-variant-active: #d6d6d6; // gray-5
+$kendo-color-secondary-variant-border: #c2c2c2; // gray-6
 
 // Tertiary
-$kendo-tertiary-surface-contrast-1: null !default;
-$kendo-tertiary-surface-contrast-2: null !default;
-$kendo-tertiary-surface-contrast-3: null !default;
-$kendo-tertiary-surface-contrast-4: null !default;
-$kendo-tertiary-surface-contrast-5: null !default;
-$kendo-tertiary-surface-contrast-6: null !default;
-$kendo-tertiary-surface-contrast-7: null !default;
 
-$kendo-tertiary-stroke-contrast-1: null !default;
-$kendo-tertiary-stroke-contrast-2: null !default;
-$kendo-tertiary-stroke-contrast-3: null !default;
-$kendo-tertiary-stroke-contrast-4: null !default;
-$kendo-tertiary-stroke-contrast-5: null !default;
-$kendo-tertiary-stroke-contrast-6: null !default;
-$kendo-tertiary-stroke-contrast-7: null !default;
+$kendo-color-tertiary: #03a9f4; // skyblue-9
+$kendo-color-tertiary-content: #ffffff; // gray-white
+$kendo-color-tertiary-hover: #0391d4; // skyblue-10
+$kendo-color-tertiary-active: #0279b8; // skyblue-11
+$kendo-color-tertiary-surface-content: #03a9f4; // skyblue-9
 
-$kendo-tertiary-content-contrast-1: null !default;
-$kendo-tertiary-content-contrast-2: null !default;
-$kendo-tertiary-content-contrast-3: null !default;
-$kendo-tertiary-content-contrast-4: null !default;
-$kendo-tertiary-content-contrast-5: null !default;
-$kendo-tertiary-content-contrast-6: null !default;
-$kendo-tertiary-content-contrast-7: null !default;
+$kendo-color-tertiary-variant: #e6f4ff; // skyblue-2
+$kendo-color-tertiary-variant-content: #1c4c5c; // skyblue-15
+$kendo-color-tertiary-variant-hover: #d4f0ff; // skyblue-3
+$kendo-color-tertiary-variant-active: #bfe8ff; // skyblue-5
+$kendo-color-tertiary-variant-border: #80c0ff; // skyblue-7
 
 // Info
-$kendo-info-surface-contrast-1: #206EEC !default;
-$kendo-info-surface-contrast-2: #0058E9 !default;
-$kendo-info-surface-contrast-3: #0052D6 !default;
-$kendo-info-surface-contrast-4: #004AC2 !default;
-$kendo-info-surface-contrast-5: #D2E2FB !default;
-$kendo-info-surface-contrast-6: #BDD4F8 !default;
-$kendo-info-surface-contrast-7: #80ACF4 !default;
-// $kendo-info-surface-contrast-8: #004AC2 !default;
 
-$kendo-info-stroke-contrast-1: #0058E9 !default;
-$kendo-info-stroke-contrast-2: #0052D6 !default;
-$kendo-info-stroke-contrast-3: #004AC2 !default;
-$kendo-info-stroke-contrast-4: #9EC0F6 !default;
-$kendo-info-stroke-contrast-5: #80ACF4 !default;
-$kendo-info-stroke-contrast-6: #4082EF !default;
-$kendo-info-stroke-contrast-7: #004AC2 !default;
+$kendo-color-info: #0058e9; // blue-9
+$kendo-color-info-content: #ffffff; // gray-white
+$kendo-color-info-hover: #004ac2; // blue-10
+$kendo-color-info-active: #003d9b; // blue-11
+$kendo-color-info-surface-content: #0058e9; // blue-9
 
-$kendo-info-content-contrast-1: #FFFFFF !default;
-$kendo-info-content-contrast-2: #0058E9 !default;
-$kendo-info-content-contrast-3: #004AC2 !default;
-$kendo-info-content-contrast-4: #002259 !default;
-$kendo-info-content-contrast-5: #004AC2 !default;
-$kendo-info-content-contrast-6: null !default;
-$kendo-info-content-contrast-7: null !default;
+$kendo-color-info-variant: #e6f4ff; // blue-2
+$kendo-color-info-variant-content: #1c4c5c; // blue-15
+$kendo-color-info-variant-hover: #d4f0ff; // blue-3
+$kendo-color-info-variant-active: #bfe8ff; // blue-5
+$kendo-color-info-variant-border: #80c0ff; // blue-7
 
 // Success
-$kendo-success-surface-contrast-1: #4EBE1F !default;
-$kendo-success-surface-contrast-2: #37B400 !default;
-$kendo-success-surface-contrast-3: #32A500 !default;
-$kendo-success-surface-contrast-4: #2D9600 !default;
-$kendo-success-surface-contrast-5: #DCF0D3 !default;
-$kendo-success-surface-contrast-6: #CBE9BF !default;
-$kendo-success-surface-contrast-7: #9BDA80 !default;
-// $kendo-success-surface-contrast-8: #9BDA80 !default;
 
-$kendo-success-stroke-contrast-1: #37B400 !default;
-$kendo-success-stroke-contrast-2: #32A500 !default;
-$kendo-success-stroke-contrast-3: #2D9600 !default;
-$kendo-success-stroke-contrast-4: #B7E1A5 !default;
-$kendo-success-stroke-contrast-5: #9BDA80 !default;
-$kendo-success-stroke-contrast-6: #69C740 !default;
-$kendo-success-stroke-contrast-7: #2D9600 !default;
+$kendo-color-success: #37b400; // green-9
+$kendo-color-success-content: #ffffff; // gray-white
+$kendo-color-success-hover: #32a500; // green-10
+$kendo-color-success-active: #2d9600; // green-11
+$kendo-color-success-surface-content: #37b400; // green-9
 
-$kendo-success-content-contrast-1: #FFFFFF !default;
-$kendo-success-content-contrast-2: #37B400 !default;
-$kendo-success-content-contrast-3: #2D9600 !default;
-$kendo-success-content-contrast-4: #123D00 !default;
-$kendo-success-content-contrast-5: #2D9600 !default;
-$kendo-success-content-contrast-6: null !default;
-$kendo-success-content-contrast-7: null !default;
+$kendo-color-success-variant: #e6f4e6; // green-2
+$kendo-color-success-variant-content: #1c5c1c; // green-15
+$kendo-color-success-variant-hover: #d4f0d4; // green-3
+$kendo-color-success-variant-active: #bfe8bf; // green-5
+$kendo-color-success-variant-border: #80c080; // green-7
 
 // Warning
-$kendo-warning-surface-contrast-1: #FFC720 !default;
-$kendo-warning-surface-contrast-2: #FFC000 !default;
-$kendo-warning-surface-contrast-3: #EAAF00 !default;
-$kendo-warning-surface-contrast-4: #D49F00 !default;
-$kendo-warning-surface-contrast-5: #FFF4D3 !default;
-$kendo-warning-surface-contrast-6: #FFEEBD !default;
-$kendo-warning-surface-contrast-7: #FFE080 !default;
-// $kendo-warning-surface-contrast-8: #FFC000 !default;
 
-$kendo-warning-stroke-contrast-1: #FFC000 !default;
-$kendo-warning-stroke-contrast-2: #EAAF00 !default;
-$kendo-warning-stroke-contrast-3: #D49F00 !default;
-$kendo-warning-stroke-contrast-4: #FFE79E !default;
-$kendo-warning-stroke-contrast-5: #FFE080 !default;
-$kendo-warning-stroke-contrast-6: #FFD040 !default;
-$kendo-warning-stroke-contrast-7: #FFC000 !default;
+$kendo-color-warning: #ffc000; // yellow-9
+$kendo-color-warning-content: #3d3d3d; // gray-12
+$kendo-color-warning-hover: #eaaf00; // yellow-10
+$kendo-color-warning-active: #d49f00; // yellow-11
+$kendo-color-warning-surface-content: #3d3d3d; // gray-12
 
-$kendo-warning-content-contrast-1: #3D3D3D !default;
-$kendo-warning-content-contrast-2: #3D3D3D !default;
-$kendo-warning-content-contrast-3: #D49F00 !default;
-$kendo-warning-content-contrast-4: #5E4700 !default;
-$kendo-warning-content-contrast-5: #3D3D3D !default;
-$kendo-warning-content-contrast-6: null !default;
-$kendo-warning-content-contrast-7: null !default;
+$kendo-color-warning-variant: #fff4d3; // yellow-2
+$kendo-color-warning-variant-content: #5e4700; // yellow-15
+$kendo-color-warning-variant-hover: #ffeebd; // yellow-3
+$kendo-color-warning-variant-active: #ffe080; // yellow-5
+$kendo-color-warning-variant-border: #ffd040; // yellow-7
 
-// Еrror
-$kendo-error-surface-contrast-1: #F43520 !default;
-$kendo-error-surface-contrast-2: #F31700 !default;
-$kendo-error-surface-contrast-3: #DF1600 !default;
-$kendo-error-surface-contrast-4: #CA1400 !default;
-$kendo-error-surface-contrast-5: #FCDDDA !default;
-$kendo-error-surface-contrast-6: #FBC8C3 !default;
-$kendo-error-surface-contrast-7: #F98B80 !default;
-// $kendo-error-surface-contrast-8: #CA1400 !default;
+// Error
 
-$kendo-error-stroke-contrast-1: #F31700 !default;
-$kendo-error-stroke-contrast-2: #DF1600 !default;
-$kendo-error-stroke-contrast-3: #CA1400 !default;
-$kendo-error-stroke-contrast-4: #FAAAA2 !default;
-$kendo-error-stroke-contrast-5: #F98B80 !default;
-$kendo-error-stroke-contrast-6: #F65140 !default;
-$kendo-error-stroke-contrast-7: #CA1400 !default;
+$kendo-color-error: #f31700; // red-9
+$kendo-color-error-content: #ffffff; // gray-white
+$kendo-color-error-hover: #df1600; // red-10
+$kendo-color-error-active: #ca1400; // red-11
+$kendo-color-error-surface-content: #f31700; // red-9
 
-$kendo-error-content-contrast-1: #FFFFFF !default;
-$kendo-error-content-contrast-2: #F31700 !default;
-$kendo-error-content-contrast-3: #CA1400 !default;
-$kendo-error-content-contrast-4: #5B0900 !default;
-$kendo-error-content-contrast-5: #CA1400 !default;
-$kendo-error-content-contrast-6: null !default;
-$kendo-error-content-contrast-7: null !default;
+$kendo-color-error-variant: #fff6f5; // red-2
+$kendo-color-error-variant-content: #5c201c; // red-15
+$kendo-color-error-variant-hover: #ffeceb; // red-3
+$kendo-color-error-variant-active: #ffdedb; // red-4
+$kendo-color-error-variant-border: #ff9d97; // red-6
 
+// Old
+// $kendo-base-surface-contrast-1: #ffffff !default;
+// $kendo-base-surface-contrast-2: #fafafa !default;
+// $kendo-base-surface-contrast-3: #f5f5f5 !default;
+// $kendo-base-surface-contrast-4: #ebebeb !default;
+// $kendo-base-surface-contrast-5: #d6d6d6 !default;
+// $kendo-base-surface-contrast-6: #c2c2c2 !default;
+// $kendo-base-surface-contrast-7: #3d3d3d !default;
 
+// $kendo-base-stroke-contrast-1: #ebebeb !default;
+// $kendo-base-stroke-contrast-2: #e0e0e0 !default;
+// $kendo-base-stroke-contrast-3: #d6d6d6 !default;
+// $kendo-base-stroke-contrast-4: #c2c2c2 !default;
+// $kendo-base-stroke-contrast-5: #3d3d3d !default;
+// $kendo-base-stroke-contrast-6: #999999 !default;
+// $kendo-base-stroke-contrast-7: #666666 !default;
 
-// TODO: re-evaluate!
-$kendo-color-white: #ffffff;
-$kendo-color-black: #000000;
-$kendo-is-dark-theme: false !default;
-$kendo-subtle-text: #666666 !default;
-$kendo-disabled-text: #8f8f8f !default;
+// $kendo-base-content-contrast-1: #ffffff !default;
+// $kendo-base-content-contrast-2: #999999 !default;
+// $kendo-base-content-contrast-3: #666666 !default;
+// $kendo-base-content-contrast-4: #3d3d3d !default;
+// $kendo-base-content-contrast-5: null !default;
+// $kendo-base-content-contrast-6: null !default;
+// $kendo-base-content-contrast-7: null !default;
 
-$kendo-body-bg: #ffffff !default;
-$kendo-body-bg-contrast: k-contrast-legacy($kendo-body-bg) !default;
-$kendo-body-bg-pale: k-try-tint($kendo-body-bg, 5) !default;
-$kendo-body-bg-dim: k-try-shade($kendo-body-bg, 0.25) !default;
-$kendo-body-text: #424242 !default;
-$kendo-body-text-pale: k-try-tint($kendo-body-text, 5) !default;
-$kendo-body-text-dim: k-try-shade($kendo-body-text, 2) !default;
-$kendo-body-text-lighter: k-try-tint($kendo-body-text, 4) !default;
-$kendo-body-text-darker: k-try-shade($kendo-body-text, 5) !default;
-$kendo-body-hover: k-try-shade($kendo-body-bg, .5) !default;
-$kendo-body-darken: k-color-darken($kendo-body-bg, 7%) !default;
-$kendo-body-shaded: k-try-shade($kendo-body-bg, 1) !default;
+// // New
 
-$kendo-base-bg: #fafafa !default;
-$kendo-base-text: $kendo-body-text !default;
+// $kendo-color-base-1: #ffffff !default; // white
+// $kendo-color-base-2: #fafafa !default; // 1
+// $kendo-color-base-3: #f5f5f5 !default; // 2
+// $kendo-color-base-4: #ebebeb !default; // 3
+// $kendo-color-base-5: #e0e0e0 !default; // 4
+// $kendo-color-base-6: #d6d6d6 !default; // 5
+// $kendo-color-base-7: #c2c2c2 !default; // 6
+// $kendo-color-base-8: #999999 !default; // 8
+// $kendo-color-base-9: #666666 !default; // 10
+// $kendo-color-base-10: #3d3d3d !default; // 12
 
-$kendo-color-border: rgba($kendo-color-black, 0.08) !default;
-$kendo-color-border-hover: rgba($kendo-color-black, 0.16) !default;
-$kendo-color-border-focus: k-try-shade($kendo-color-border, 2.5) !default;
+// // End Base
 
-$kendo-color-base: #f5f5f5 !default;
-$kendo-color-base-text: #424242 !default;
-$kendo-color-base-text-contrast: k-contrast-legacy($kendo-color-base-text) !default;
-$kendo-color-base-text-lighter: k-true-mix($kendo-color-base-text, $kendo-body-bg, 65%) !default;
-$kendo-color-base-text-pale: k-try-tint($kendo-color-base-text, 4) !default;
-$kendo-color-base-hover: k-try-shade($kendo-color-base, 0.5) !default;
-$kendo-color-base-active: k-try-shade($kendo-color-base, 1.5) !default;
-$kendo-color-base-selected: k-try-shade($kendo-color-base, 1.5) !default;
-$kendo-color-base-focus: null !default;
-$kendo-color-base-lighter: k-true-mix($kendo-color-base, $kendo-body-bg, 65%) !default;
-$kendo-color-base-shaded: k-try-shade($kendo-color-base, 1) !default; // VERY SIMILAR TO $kendo-color-base-hover/active/selected
+// // Primary
+// $kendo-primary-surface-contrast-1: #ff766d !default;
+// $kendo-primary-surface-contrast-2: #ff6358 !default;
+// $kendo-primary-surface-contrast-3: #ea5a51 !default;
+// $kendo-primary-surface-contrast-4: #d45349 !default;
+// $kendo-primary-surface-contrast-5: null !default;
+// $kendo-primary-surface-contrast-6: null !default;
+// $kendo-primary-surface-contrast-7: null !default;
 
-$kendo-color-primary: #ff6358 !default;
-$kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
-$kendo-color-primary-text-contrast: k-contrast-legacy($kendo-color-primary-text) !default;
-$kendo-color-primary-hover: k-try-shade($kendo-color-primary, 0.5) !default;
-$kendo-color-primary-active: k-try-shade($kendo-color-primary, 1.5) !default;
-$kendo-color-primary-selected: $kendo-color-primary !default;
-$kendo-color-primary-focus: null !default;
-$kendo-color-primary-light: k-color-mix($kendo-color-primary, #ffffff, 25%) !default;
-$kendo-color-primary-light-alt: k-color-shade($kendo-color-primary-light, .4) !default;
-$kendo-color-primary-light-mix: k-color-mix($kendo-color-primary, $kendo-body-bg, 60%) !default;
-$kendo-color-primary-pale: k-try-tint($kendo-color-primary, 6) !default;
-$kendo-color-primary-dim: k-color-tint($kendo-color-primary, 2) !default;
-$kendo-color-primary-shaded: k-try-shade($kendo-color-primary) !default; // VERY SIMILAR TO $kendo-color-primary-hover/active
+// $kendo-primary-stroke-contrast-1: #ff6358 !default;
+// $kendo-primary-stroke-contrast-2: #ea5a51 !default;
+// $kendo-primary-stroke-contrast-3: #d45349 !default;
+// $kendo-primary-stroke-contrast-4: null !default;
+// $kendo-primary-stroke-contrast-5: null !default;
+// $kendo-primary-stroke-contrast-6: null !default;
+// $kendo-primary-stroke-contrast-7: null !default;
 
-$kendo-color-secondary: #666666 !default;
-$kendo-color-secondary-text: k-contrast-legacy($kendo-color-secondary) !default;
-$kendo-color-secondary-hover: k-try-shade($kendo-color-secondary, 0.5) !default;
-$kendo-color-secondary-active: k-try-shade($kendo-color-secondary, 1.5) !default;
-$kendo-color-secondary-selected: k-try-shade($kendo-color-secondary, 1.5) !default;
-$kendo-color-secondary-focus: null !default;
+// $kendo-primary-content-contrast-1: #ffffff !default;
+// $kendo-primary-content-contrast-2: #ff6358 !default;
+// $kendo-primary-content-contrast-3: #d45349 !default;
+// $kendo-primary-content-contrast-4: null !default;
+// $kendo-primary-content-contrast-5: null !default;
+// $kendo-primary-content-contrast-6: null !default;
+// $kendo-primary-content-contrast-7: null !default;
 
-$kendo-color-tertiary: #03a9f4 !default;
-$kendo-color-tertiary-text: k-contrast-legacy($kendo-color-tertiary) !default;
-$kendo-color-tertiary-hover: k-try-shade($kendo-color-tertiary, 0.5) !default;
-$kendo-color-tertiary-active: k-try-shade($kendo-color-tertiary, 1.5) !default;
-$kendo-color-tertiary-selected: k-try-shade($kendo-color-tertiary, 1.5) !default;
-$kendo-color-tertiary-focus: null !default;
+// // Secondary
+// $kendo-secondary-surface-contrast-1: null !default;
+// $kendo-secondary-surface-contrast-2: null !default;
+// $kendo-secondary-surface-contrast-3: null !default;
+// $kendo-secondary-surface-contrast-4: null !default;
+// $kendo-secondary-surface-contrast-5: null !default;
+// $kendo-secondary-surface-contrast-6: null !default;
+// $kendo-secondary-surface-contrast-7: null !default;
 
-$kendo-color-info: #0058e9 !default;
-$kendo-color-info-text: k-contrast-legacy($kendo-color-info) !default;
-$kendo-color-info-hover: k-try-shade($kendo-color-info, 0.5) !default;
-$kendo-color-info-active: k-try-shade($kendo-color-info, 1.5) !default;
-$kendo-color-info-selected: k-try-shade($kendo-color-info, 1.5) !default;
-$kendo-color-info-focus: null !default;
+// $kendo-secondary-stroke-contrast-1: null !default;
+// $kendo-secondary-stroke-contrast-2: null !default;
+// $kendo-secondary-stroke-contrast-3: null !default;
+// $kendo-secondary-stroke-contrast-4: null !default;
+// $kendo-secondary-stroke-contrast-5: null !default;
+// $kendo-secondary-stroke-contrast-6: null !default;
+// $kendo-secondary-stroke-contrast-7: null !default;
 
-$kendo-color-success: #37b400 !default;
-$kendo-color-success-text: k-contrast-legacy($kendo-color-success) !default;
-$kendo-color-success-hover: k-try-shade($kendo-color-success, 0.5) !default;
-$kendo-color-success-active: k-try-shade($kendo-color-success, 1.5) !default;
-$kendo-color-success-selected: k-try-shade($kendo-color-success, 1.5) !default;
-$kendo-color-success-focus: null !default;
-$kendo-color-success-dim: k-color-tint($kendo-color-success, 5) !default;
+// $kendo-secondary-content-contrast-1: null !default;
+// $kendo-secondary-content-contrast-2: null !default;
+// $kendo-secondary-content-contrast-3: null !default;
+// $kendo-secondary-content-contrast-4: null !default;
+// $kendo-secondary-content-contrast-5: null !default;
+// $kendo-secondary-content-contrast-6: null !default;
+// $kendo-secondary-content-contrast-7: null !default;
 
-$kendo-color-warning: #ffc000 !default;
-$kendo-color-warning-text: k-contrast-legacy($kendo-color-warning) !default;
-$kendo-color-warning-hover: k-try-shade($kendo-color-warning, 0.5) !default;
-$kendo-color-warning-active: k-try-shade($kendo-color-warning, 1.5) !default;
-$kendo-color-warning-selected: k-try-shade($kendo-color-warning, 1.5) !default;
-$kendo-color-warning-focus: null !default;
+// // Tertiary
+// $kendo-tertiary-surface-contrast-1: null !default;
+// $kendo-tertiary-surface-contrast-2: null !default;
+// $kendo-tertiary-surface-contrast-3: null !default;
+// $kendo-tertiary-surface-contrast-4: null !default;
+// $kendo-tertiary-surface-contrast-5: null !default;
+// $kendo-tertiary-surface-contrast-6: null !default;
+// $kendo-tertiary-surface-contrast-7: null !default;
 
-$kendo-color-error: #f31700 !default;
-$kendo-color-error-text: k-contrast-legacy($kendo-color-error) !default;
-$kendo-color-error-hover: k-try-shade($kendo-color-error, 0.5) !default;
-$kendo-color-error-active: k-try-shade($kendo-color-error, 1.5) !default;
-$kendo-color-error-selected: k-try-shade($kendo-color-error, 1.5) !default;
-$kendo-color-error-focus: null !default;
-$kendo-color-error-dim: k-color-tint($kendo-color-error, 5) !default;
+// $kendo-tertiary-stroke-contrast-1: null !default;
+// $kendo-tertiary-stroke-contrast-2: null !default;
+// $kendo-tertiary-stroke-contrast-3: null !default;
+// $kendo-tertiary-stroke-contrast-4: null !default;
+// $kendo-tertiary-stroke-contrast-5: null !default;
+// $kendo-tertiary-stroke-contrast-6: null !default;
+// $kendo-tertiary-stroke-contrast-7: null !default;
 
-$kendo-color-light: #ebebeb !default;
-$kendo-color-light-text: k-contrast-legacy($kendo-color-light) !default;
-$kendo-color-light-hover: k-try-shade($kendo-color-light, 0.5) !default;
-$kendo-color-light-active: k-try-shade($kendo-color-light, 1.5) !default;
-$kendo-color-light-selected: k-try-shade($kendo-color-light, 1.5) !default;
-$kendo-color-light-focus: null !default;
+// $kendo-tertiary-content-contrast-1: null !default;
+// $kendo-tertiary-content-contrast-2: null !default;
+// $kendo-tertiary-content-contrast-3: null !default;
+// $kendo-tertiary-content-contrast-4: null !default;
+// $kendo-tertiary-content-contrast-5: null !default;
+// $kendo-tertiary-content-contrast-6: null !default;
+// $kendo-tertiary-content-contrast-7: null !default;
 
-$kendo-color-dark: #424242 !default;
-$kendo-color-dark-text: k-contrast-legacy($kendo-color-dark) !default;
-$kendo-color-dark-hover: k-try-shade($kendo-color-dark, 0.5) !default;
-$kendo-color-dark-active: k-try-shade($kendo-color-dark, 1.5) !default;
-$kendo-color-dark-selected: k-try-shade($kendo-color-dark, 1.5) !default;
-$kendo-color-dark-focus: null !default;
+// // Info
+// $kendo-info-surface-contrast-1: #206eec !default;
+// $kendo-info-surface-contrast-2: #0058e9 !default;
+// $kendo-info-surface-contrast-3: #0052d6 !default;
+// $kendo-info-surface-contrast-4: #004ac2 !default;
+// $kendo-info-surface-contrast-5: #d2e2fb !default;
+// $kendo-info-surface-contrast-6: #bdd4f8 !default;
+// $kendo-info-surface-contrast-7: #80acf4 !default;
+// // $kendo-info-surface-contrast-8: #004AC2 !default;
 
-$kendo-color-inverse: $kendo-color-dark !default;
-$kendo-color-inverse-text: k-contrast-legacy($kendo-color-inverse) !default;
-$kendo-color-inverse-hover: k-try-shade($kendo-color-inverse, 0.5) !default;
-$kendo-color-inverse-active: k-try-shade($kendo-color-inverse, 1.5) !default;
-$kendo-color-inverse-selected: k-try-shade($kendo-color-inverse, 1.5) !default;
-$kendo-color-inverse-focus: null !default;
+// $kendo-info-stroke-contrast-1: #0058e9 !default;
+// $kendo-info-stroke-contrast-2: #0052d6 !default;
+// $kendo-info-stroke-contrast-3: #004ac2 !default;
+// $kendo-info-stroke-contrast-4: #9ec0f6 !default;
+// $kendo-info-stroke-contrast-5: #80acf4 !default;
+// $kendo-info-stroke-contrast-6: #4082ef !default;
+// $kendo-info-stroke-contrast-7: #004ac2 !default;
 
-$kendo-base-gradient: rgba( black, 0 ), rgba( black, .02 ) !default;
+// $kendo-info-content-contrast-1: #ffffff !default;
+// $kendo-info-content-contrast-2: #0058e9 !default;
+// $kendo-info-content-contrast-3: #004ac2 !default;
+// $kendo-info-content-contrast-4: #002259 !default;
+// $kendo-info-content-contrast-5: #004ac2 !default;
+// $kendo-info-content-contrast-6: null !default;
+// $kendo-info-content-contrast-7: null !default;
+
+// // Success
+// $kendo-success-surface-contrast-1: #dcf0d3 !default;
+// $kendo-success-surface-contrast-2: #cbe9bf !default;
+// $kendo-success-surface-contrast-3: #9bda80 !default;
+// $kendo-success-surface-contrast-4: #9bda80 !default;
+// $kendo-success-surface-contrast-5: #4ebe1f !default;
+// $kendo-success-surface-contrast-6: #37b400 !default;
+// $kendo-success-surface-contrast-7: #32a500 !default;
+// $kendo-success-surface-contrast-8: #2d9600 !default;
+
+// $kendo-success-stroke-contrast-1: #37b400 !default;
+// $kendo-success-stroke-contrast-2: #32a500 !default;
+// $kendo-success-stroke-contrast-3: #2d9600 !default;
+// $kendo-success-stroke-contrast-4: #b7e1a5 !default;
+// $kendo-success-stroke-contrast-5: #9bda80 !default;
+// $kendo-success-stroke-contrast-6: #69c740 !default;
+// $kendo-success-stroke-contrast-7: #2d9600 !default;
+
+// $kendo-success-content-contrast-1: #ffffff !default;
+// $kendo-success-content-contrast-2: #37b400 !default;
+// $kendo-success-content-contrast-3: #2d9600 !default;
+// $kendo-success-content-contrast-4: #123d00 !default;
+// $kendo-success-content-contrast-5: #2d9600 !default;
+// $kendo-success-content-contrast-6: null !default;
+// $kendo-success-content-contrast-7: null !default;
+
+// // Warning
+// $kendo-warning-surface-contrast-1: #ffc720 !default;
+// $kendo-warning-surface-contrast-2: #ffc000 !default;
+// $kendo-warning-surface-contrast-3: #eaaf00 !default;
+// $kendo-warning-surface-contrast-4: #d49f00 !default;
+// $kendo-warning-surface-contrast-5: #fff4d3 !default;
+// $kendo-warning-surface-contrast-6: #ffeebd !default;
+// $kendo-warning-surface-contrast-7: #ffe080 !default;
+// // $kendo-warning-surface-contrast-8: #FFC000 !default;
+
+// $kendo-warning-stroke-contrast-1: #ffc000 !default;
+// $kendo-warning-stroke-contrast-2: #eaaf00 !default;
+// $kendo-warning-stroke-contrast-3: #d49f00 !default;
+// $kendo-warning-stroke-contrast-4: #ffe79e !default;
+// $kendo-warning-stroke-contrast-5: #ffe080 !default;
+// $kendo-warning-stroke-contrast-6: #ffd040 !default;
+// $kendo-warning-stroke-contrast-7: #ffc000 !default;
+
+// $kendo-warning-content-contrast-1: #3d3d3d !default;
+// $kendo-warning-content-contrast-2: #3d3d3d !default;
+// $kendo-warning-content-contrast-3: #d49f00 !default;
+// $kendo-warning-content-contrast-4: #5e4700 !default;
+// $kendo-warning-content-contrast-5: #3d3d3d !default;
+// $kendo-warning-content-contrast-6: null !default;
+// $kendo-warning-content-contrast-7: null !default;
+
+// // Еrror
+// $kendo-error-surface-contrast-1: #f43520 !default;
+// $kendo-error-surface-contrast-2: #f31700 !default;
+// $kendo-error-surface-contrast-3: #df1600 !default;
+// $kendo-error-surface-contrast-4: #ca1400 !default;
+// $kendo-error-surface-contrast-5: #fcddda !default;
+// $kendo-error-surface-contrast-6: #fbc8c3 !default;
+// $kendo-error-surface-contrast-7: #f98b80 !default;
+// // $kendo-error-surface-contrast-8: #CA1400 !default;
+
+// $kendo-error-stroke-contrast-1: #f31700 !default;
+// $kendo-error-stroke-contrast-2: #df1600 !default;
+// $kendo-error-stroke-contrast-3: #ca1400 !default;
+// $kendo-error-stroke-contrast-4: #faaaa2 !default;
+// $kendo-error-stroke-contrast-5: #f98b80 !default;
+// $kendo-error-stroke-contrast-6: #f65140 !default;
+// $kendo-error-stroke-contrast-7: #ca1400 !default;
+
+// $kendo-error-content-contrast-1: #ffffff !default;
+// $kendo-error-content-contrast-2: #f31700 !default;
+// $kendo-error-content-contrast-3: #ca1400 !default;
+// $kendo-error-content-contrast-4: #5b0900 !default;
+// $kendo-error-content-contrast-5: #ca1400 !default;
+// $kendo-error-content-contrast-6: null !default;
+// $kendo-error-content-contrast-7: null !default;
+
+// // A markdown table representing the above variables
+
+// // | Color | Surface | Stroke | Content |
+// // | --- | --- | --- | --- |
+// // | Base | $kendo-base-surface-contrast-1 | $kendo-base-stroke-contrast-1 | $kendo-base-content-contrast-1 |
+// // | Base | $kendo-base-surface-contrast-2 | $kendo-base-stroke-contrast-2 | $kendo-base-content-contrast-2 |
+// // | Base | $kendo-base-surface-contrast-3 | $kendo-base-stroke-contrast-3 | $kendo-base-content-contrast-3 |
+// // | Base | $kendo-base-surface-contrast-4 | $kendo-base-stroke-contrast-4 | $kendo-base-content-contrast-4 |
+// // | Base | $kendo-base-surface-contrast-5 | $kendo-base-stroke-contrast-5 | $kendo-base-content-contrast-5 |
+
+// // TODO: re-evaluate!
+// $kendo-color-white: #ffffff;
+// $kendo-color-black: #000000;
+// $kendo-is-dark-theme: false !default;
+// $kendo-subtle-text: #666666 !default;
+// $kendo-disabled-text: #8f8f8f !default;
+
+// $kendo-body-bg: #ffffff !default;
+// $kendo-body-bg-contrast: k-contrast-legacy($kendo-body-bg) !default;
+// $kendo-body-bg-pale: k-try-tint($kendo-body-bg, 5) !default;
+// $kendo-body-bg-dim: k-try-shade($kendo-body-bg, 0.25) !default;
+// $kendo-body-text: #424242 !default;
+// $kendo-body-text-pale: k-try-tint($kendo-body-text, 5) !default;
+// $kendo-body-text-dim: k-try-shade($kendo-body-text, 2) !default;
+// $kendo-body-text-lighter: k-try-tint($kendo-body-text, 4) !default;
+// $kendo-body-text-darker: k-try-shade($kendo-body-text, 5) !default;
+// $kendo-body-hover: k-try-shade($kendo-body-bg, 0.5) !default;
+// $kendo-body-darken: k-color-darken($kendo-body-bg, 7%) !default;
+// $kendo-body-shaded: k-try-shade($kendo-body-bg, 1) !default;
+
+// $kendo-base-bg: #fafafa !default;
+// $kendo-base-text: $kendo-body-text !default;
+
+// $kendo-color-border: rgba($kendo-color-black, 0.08) !default;
+// $kendo-color-border-hover: rgba($kendo-color-black, 0.16) !default;
+// $kendo-color-border-focus: k-try-shade($kendo-color-border, 2.5) !default;
+
+// $kendo-color-base: #f5f5f5 !default;
+// $kendo-color-base-text: #424242 !default;
+// $kendo-color-base-text-contrast: k-contrast-legacy($kendo-color-base-text) !default;
+// $kendo-color-base-text-lighter: k-true-mix($kendo-color-base-text, $kendo-body-bg, 65%) !default;
+// $kendo-color-base-text-pale: k-try-tint($kendo-color-base-text, 4) !default;
+// $kendo-color-base-hover: k-try-shade($kendo-color-base, 0.5) !default;
+// $kendo-color-base-active: k-try-shade($kendo-color-base, 1.5) !default;
+// $kendo-color-base-selected: k-try-shade($kendo-color-base, 1.5) !default;
+// $kendo-color-base-focus: null !default;
+// $kendo-color-base-lighter: k-true-mix($kendo-color-base, $kendo-body-bg, 65%) !default;
+// $kendo-color-base-shaded: k-try-shade($kendo-color-base, 1) !default; // VERY SIMILAR TO $kendo-color-base-hover/active/selected
+
+// $kendo-color-primary: #ff6358 !default;
+// $kendo-color-primary-text: k-contrast-legacy($kendo-color-primary) !default;
+// $kendo-color-primary-text-contrast: k-contrast-legacy($kendo-color-primary-text) !default;
+// $kendo-color-primary-hover: k-try-shade($kendo-color-primary, 0.5) !default;
+// $kendo-color-primary-active: k-try-shade($kendo-color-primary, 1.5) !default;
+// $kendo-color-primary-selected: $kendo-color-primary !default;
+// $kendo-color-primary-focus: null !default;
+// $kendo-color-primary-light: k-color-mix($kendo-color-primary, #ffffff, 25%) !default;
+// $kendo-color-primary-light-alt: k-color-shade($kendo-color-primary-light, 0.4) !default;
+// $kendo-color-primary-light-mix: k-color-mix($kendo-color-primary, $kendo-body-bg, 60%) !default;
+// $kendo-color-primary-pale: k-try-tint($kendo-color-primary, 6) !default;
+// $kendo-color-primary-dim: k-color-tint($kendo-color-primary, 2) !default;
+// $kendo-color-primary-shaded: k-try-shade($kendo-color-primary) !default; // VERY SIMILAR TO $kendo-color-primary-hover/active
+
+// $kendo-color-secondary: #666666 !default;
+// $kendo-color-secondary-text: k-contrast-legacy($kendo-color-secondary) !default;
+// $kendo-color-secondary-hover: k-try-shade($kendo-color-secondary, 0.5) !default;
+// $kendo-color-secondary-active: k-try-shade($kendo-color-secondary, 1.5) !default;
+// $kendo-color-secondary-selected: k-try-shade($kendo-color-secondary, 1.5) !default;
+// $kendo-color-secondary-focus: null !default;
+
+// $kendo-color-tertiary: #03a9f4 !default;
+// $kendo-color-tertiary-text: k-contrast-legacy($kendo-color-tertiary) !default;
+// $kendo-color-tertiary-hover: k-try-shade($kendo-color-tertiary, 0.5) !default;
+// $kendo-color-tertiary-active: k-try-shade($kendo-color-tertiary, 1.5) !default;
+// $kendo-color-tertiary-selected: k-try-shade($kendo-color-tertiary, 1.5) !default;
+// $kendo-color-tertiary-focus: null !default;
+
+// $kendo-color-info: #0058e9 !default;
+// $kendo-color-info-text: k-contrast-legacy($kendo-color-info) !default;
+// $kendo-color-info-hover: k-try-shade($kendo-color-info, 0.5) !default;
+// $kendo-color-info-active: k-try-shade($kendo-color-info, 1.5) !default;
+// $kendo-color-info-selected: k-try-shade($kendo-color-info, 1.5) !default;
+// $kendo-color-info-focus: null !default;
+
+// $kendo-color-success: #37b400 !default;
+// $kendo-color-success-text: k-contrast-legacy($kendo-color-success) !default;
+// $kendo-color-success-hover: k-try-shade($kendo-color-success, 0.5) !default;
+// $kendo-color-success-active: k-try-shade($kendo-color-success, 1.5) !default;
+// $kendo-color-success-selected: k-try-shade($kendo-color-success, 1.5) !default;
+// $kendo-color-success-focus: null !default;
+// $kendo-color-success-dim: k-color-tint($kendo-color-success, 5) !default;
+
+// $kendo-color-warning: #ffc000 !default;
+// $kendo-color-warning-text: k-contrast-legacy($kendo-color-warning) !default;
+// $kendo-color-warning-hover: k-try-shade($kendo-color-warning, 0.5) !default;
+// $kendo-color-warning-active: k-try-shade($kendo-color-warning, 1.5) !default;
+// $kendo-color-warning-selected: k-try-shade($kendo-color-warning, 1.5) !default;
+// $kendo-color-warning-focus: null !default;
+
+// $kendo-color-error: #f31700 !default;
+// $kendo-color-error-text: k-contrast-legacy($kendo-color-error) !default;
+// $kendo-color-error-hover: k-try-shade($kendo-color-error, 0.5) !default;
+// $kendo-color-error-active: k-try-shade($kendo-color-error, 1.5) !default;
+// $kendo-color-error-selected: k-try-shade($kendo-color-error, 1.5) !default;
+// $kendo-color-error-focus: null !default;
+// $kendo-color-error-dim: k-color-tint($kendo-color-error, 5) !default;
+
+// $kendo-color-light: #ebebeb !default;
+// $kendo-color-light-text: k-contrast-legacy($kendo-color-light) !default;
+// $kendo-color-light-hover: k-try-shade($kendo-color-light, 0.5) !default;
+// $kendo-color-light-active: k-try-shade($kendo-color-light, 1.5) !default;
+// $kendo-color-light-selected: k-try-shade($kendo-color-light, 1.5) !default;
+// $kendo-color-light-focus: null !default;
+
+// $kendo-color-dark: #424242 !default;
+// $kendo-color-dark-text: k-contrast-legacy($kendo-color-dark) !default;
+// $kendo-color-dark-hover: k-try-shade($kendo-color-dark, 0.5) !default;
+// $kendo-color-dark-active: k-try-shade($kendo-color-dark, 1.5) !default;
+// $kendo-color-dark-selected: k-try-shade($kendo-color-dark, 1.5) !default;
+// $kendo-color-dark-focus: null !default;
+
+// $kendo-color-inverse: $kendo-color-dark !default;
+// $kendo-color-inverse-text: k-contrast-legacy($kendo-color-inverse) !default;
+// $kendo-color-inverse-hover: k-try-shade($kendo-color-inverse, 0.5) !default;
+// $kendo-color-inverse-active: k-try-shade($kendo-color-inverse, 1.5) !default;
+// $kendo-color-inverse-selected: k-try-shade($kendo-color-inverse, 1.5) !default;
+// $kendo-color-inverse-focus: null !default;
+
+// $kendo-base-gradient: rgba(black, 0), rgba(black, 0.02) !default;

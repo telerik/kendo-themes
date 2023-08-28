@@ -5,176 +5,519 @@
 
 $kendo-new-colors: true;
 
-$kendo-color-base-content-c1: map-get($neutral, white);
-$kendo-color-base-content-c2: map-get($neutral, 40);
-$kendo-color-base-content-c3: map-get($neutral, 50);
-$kendo-color-base-content-c4: map-get($neutral, 60);
-$kendo-color-base-content-c5: map-get($neutral, 70);
-$kendo-color-base-content-c6: map-get($neutral, 80);
-$kendo-color-base-content-c7: map-get($neutral, 90);
-$kendo-color-base-content-c8: map-get($neutral, 140);
-$kendo-color-base-content-c9: map-get($neutral, 150);
+// Surface
+$kendo-color-surface: #ffffff !default; // gray-white
+$kendo-color-surface-variant: #ffffff !default; // gray-white
 
-$kendo-color-base-border-c1: map-get($neutral, 20);
-$kendo-color-base-border-c2: map-get($neutral, 30);
-$kendo-color-base-border-c3: map-get($neutral, 40);
-$kendo-color-base-border-c4: map-get($neutral, 50);
-$kendo-color-base-border-c5: map-get($neutral, 60);
-$kendo-color-base-border-c6: map-get($neutral, 70);
-$kendo-color-base-border-c7: map-get($neutral, 80);
-$kendo-color-base-border-c8: map-get($neutral, 90);
-$kendo-color-base-border-c9: map-get($neutral, 100);
-$kendo-color-base-border-c10: map-get($neutral, 110);
-$kendo-color-base-border-c11: map-get($neutral, 140);
-$kendo-color-base-border-c12: map-get($neutral, 150);
-$kendo-color-base-border-c13: map-get($neutral, black);
+// Border
 
-$kendo-color-base-surface-c1: map-get($neutral, white);
-$kendo-color-base-surface-c2: map-get($neutral, 10);
-$kendo-color-base-surface-c3: map-get($neutral, 20);
-$kendo-color-base-surface-c4: map-get($neutral, 30);
-$kendo-color-base-surface-c5: map-get($neutral, 40);
-$kendo-color-base-surface-c6: map-get($neutral, 50);
-$kendo-color-base-surface-c7: map-get($neutral, 60);
-$kendo-color-base-surface-c8: map-get($neutral, 70);
-$kendo-color-base-surface-c9: map-get($neutral, 80);
-$kendo-color-base-surface-c10: map-get($neutral, 90);
-$kendo-color-base-surface-c11: map-get($neutral, 100);
-$kendo-color-base-surface-c12: map-get($neutral, 140);
-$kendo-color-base-surface-c13: map-get($neutral, 150);
-$kendo-color-base-surface-c14: map-get($neutral, black);
+$kendo-color-border: #8a8886 !default; // gray-90
+$kendo-color-border-alt: #323130 !default; // gray-140
 
-$kendo-color-primary-content-c1: map-get($blue, 80);
-$kendo-color-primary-content-c2: map-get($blue, 90);
-$kendo-color-primary-content-c3: map-get($blue, 100);
+// Base
 
-$kendo-color-primary-border-c1: map-get($blue, 80);
-$kendo-color-primary-border-c2: map-get($blue, 90);
-$kendo-color-primary-border-c3: map-get($blue, 100);
+$kendo-color-base-pale: #ffffff !default; //  gray-white
+$kendo-color-base-soft: #ffffff !default; //  gray-white
+$kendo-color-base-subtle: #ffffff !default; // gray-white
+$kendo-color-base: #ffffff !default; // gray-white
+$kendo-color-base-deep: #f3f2f1 !default; //  map-get($gray, 20);
+$kendo-color-base-bold: #edebe9 !default; //  map-get($gray, 30);
+$kendo-color-base-strong: #c8c6c4 !default; // map-get($gray, 60);
 
-$kendo-color-primary-surface-c1: map-get($blue, 80);
-$kendo-color-primary-surface-c2: map-get($blue, 90);
-$kendo-color-primary-surface-c3: map-get($blue, 100);
+$kendo-color-base-content: #323130 !default; //  map-get($gray, 140);
+$kendo-color-base-surface-content: #323130 !default; // map-get($blue, 10);
+$kendo-color-base-surface-emphasis: #605e5c !default; // map-get($gray, 110);
 
-$kendo-color-tertiary-content-c1: map-get($paleblue, 80);
-$kendo-color-tertiary-content-c2: map-get($paleblue, 90);
+// Primary
+$kendo-color-primary: #0078d4 !default; //  map-get($blue, 80);
+$kendo-color-primary-content: #ffffff !default; // map-get($blue, 10);
+$kendo-color-primary-hover: #106ebe !default; // map-get($blue, 90);
+$kendo-color-primary-active: #005a9e !default; // map-get($blue, 100);
 
-$kendo-color-tertiary-border-c1: map-get($paleblue, 80);
-$kendo-color-tertiary-border-c2: map-get($paleblue, 90);
-$kendo-color-tertiary-border-c2: map-get($paleblue, 100);
+$kendo-color-primary-surface-content: #0078d4 !default; // map-get($blue, 10);
+$kendo-color-primary-surface-emphasis: #0a7eff !default; // map-get($blue, 80);
 
-$kendo-color-tertiary-surface-c1: map-get($paleblue, 80);
-$kendo-color-tertiary-surface-c2: map-get($paleblue, 90);
-$kendo-color-tertiary-surface-c3: map-get($paleblue, 100);
+$kendo-color-primary-container: #cee5ff !default; // map-get($blue, 80);
+$kendo-color-primary-container-content: #032040 !default; // map-get($blue, 10);
+$kendo-color-primary-container-hover: #add4ff !default; // map-get($blue, 90);
+$kendo-color-primary-container-active: #8dc3ff !default; // map-get($blue, 100);
 
-$kendo-color-info-surface-c1: map-get($paleblue, 20);
-$kendo-color-info-surface-c2: map-get($paleblue, 30);
-$kendo-color-info-surface-c3: map-get($paleblue, 40);
-$kendo-color-info-surface-c4: map-get($paleblue, 80);
-$kendo-color-info-surface-c5: map-get($paleblue, 90);
-$kendo-color-info-surface-c6: map-get($paleblue, 100);
-$kendo-color-info-surface-c7: map-get($paleblue, 150);
+// Secondary
 
-$kendo-color-info-border-c1: map-get($paleblue, 10);
-$kendo-color-info-border-c2: map-get($paleblue, 20);
-$kendo-color-info-border-c3: map-get($paleblue, 30);
-$kendo-color-info-border-c4: map-get($paleblue, 40);
-$kendo-color-info-border-c5: map-get($paleblue, 80);
-$kendo-color-info-border-c6: map-get($paleblue, 90);
-$kendo-color-info-border-c7: map-get($paleblue, 100);
-$kendo-color-info-border-c8: map-get($paleblue, 110);
-$kendo-color-info-border-c9: map-get($paleblue, 140);
-$kendo-color-info-border-c10: map-get($paleblue, 150);
+$kendo-color-tertiary: #605e5c !default; //  map-get($gray, 110);
+$kendo-color-tertiary-content: #ffffff !default; // map-get($gray, 10);
+$kendo-color-tertiary-hover: #525252 !default; // map-get($gray, 120);
+$kendo-color-tertiary-active: #3d3d3d !default; // map-get($gray, 130);
 
-$kendo-color-info-content-c1: map-get($paleblue, 80);
-$kendo-color-info-content-c2: map-get($paleblue, 90);
-$kendo-color-info-content-c3: map-get($paleblue, 140);
-$kendo-color-info-content-c4: map-get($paleblue, 150);
+$kendo-color-tertiary-surface-content: #605e5c !default; // map-get($gray, 10);
+$kendo-color-tertiary-surface-emphasis: #c8c6c4 !default; // map-get($gray, 60);
 
-$kendo-color-success-surface-c1: map-get($forestgreen, 20);
-$kendo-color-success-surface-c2: map-get($forestgreen, 30);
-$kendo-color-success-surface-c3: map-get($forestgreen, 40);
-$kendo-color-success-surface-c4: map-get($forestgreen, 80);
-$kendo-color-success-surface-c5: map-get($forestgreen, 90);
-$kendo-color-success-surface-c6: map-get($forestgreen, 100);
-$kendo-color-success-surface-c7: map-get($forestgreen, 140);
-$kendo-color-success-surface-c8: map-get($forestgreen, 150);
+$kendo-color-tertiary-variant: #ffffff !default; // map-get($gray, 10);
+$kendo-color-tertiary-variant-content: #323130 !default; // map-get($gray, 150);
+$kendo-color-tertiary-variant-hover: #e1dfdd !default; // map-get($gray, 40);
+$kendo-color-tertiary-variant-active: #d2d0ce !default; // map-get($gray, 50);
 
-$kendo-color-success-content-c1: map-get($forestgreen, 80);
-$kendo-color-success-content-c2: map-get($forestgreen, 90);
-$kendo-color-success-content-c3: map-get($forestgreen, 140);
-$kendo-color-success-content-c4: map-get($forestgreen, 150);
+// Tertiary
 
-$kendo-color-success-border-c1: map-get($forestgreen, 80);
-$kendo-color-success-border-c2: map-get($forestgreen, 90);
-$kendo-color-success-border-c3: map-get($forestgreen, 140);
-$kendo-color-success-border-c4: map-get($forestgreen, 150);
+$kendo-color-secondary: #2b88d8 !default; //  map-get($azureblue, 80);
+$kendo-color-secondary-content: #ffffff !default; // map-get($azureblue, 10);
+$kendo-color-secondary-hover: #287ec7 !default; // map-get($azureblue, 90);
+$kendo-color-secondary-active: #2473b7 !default; // map-get($azureblue, 100);
 
-$kendo-color-warning-surface-c1: map-get($yellow, 20);
-$kendo-color-warning-surface-c2: map-get($yellow, 30);
-$kendo-color-warning-surface-c3: map-get($yellow, 40);
-$kendo-color-warning-surface-c4: map-get($yellow, 80);
-$kendo-color-warning-surface-c5: map-get($yellow, 90);
-$kendo-color-warning-surface-c6: map-get($yellow, 100);
-$kendo-color-warning-surface-c7: map-get($neutral, 140);
-$kendo-color-warning-surface-c8: map-get($neutral, 150);
+$kendo-color-secondary-surface-content: #2b88d8 !default; // map-get($azureblue, 10);
+$kendo-color-secondary-surface-emphasis: #4094dc !default; // map-get($azureblue, 80);
 
-$kendo-color-warning-border-c1: map-get($yellow, 20);
-$kendo-color-warning-border-c2: map-get($yellow, 30);
-$kendo-color-warning-border-c3: map-get($yellow, 40);
-$kendo-color-warning-border-c4: map-get($yellow, 80);
-$kendo-color-warning-border-c5: map-get($yellow, 90);
-$kendo-color-warning-border-c6: map-get($yellow, 100);
-$kendo-color-warning-border-c7: map-get($neutral, 100);
-$kendo-color-warning-border-c8: map-get($neutral, 140);
-$kendo-color-warning-border-c9: map-get($neutral, 150);
+$kendo-color-secondary-variant: #eaf3fb !default; // map-get($azureblue, 80);
+$kendo-color-secondary-variant-content: #0d2a42 !default; // map-get($azureblue, 10);
+$kendo-color-secondary-variant-hover: #c7e0f4 !default; // map-get($azureblue, 90);
+$kendo-color-secondary-variant-active: #abd1ef !default; // map-get($azureblue, 100);
 
-$kendo-color-warning-content-c1: map-get($yellow, 80);
-$kendo-color-warning-content-c2: map-get($yellow, 90);
-$kendo-color-warning-content-c3: map-get($neutral, 140);
-$kendo-color-warning-content-c4: map-get($neutral, 150);
+// Info
 
-$kendo-color-error-surface-c1: map-get($red, 20);
-$kendo-color-error-surface-c2: map-get($red, 30);
-$kendo-color-error-surface-c3: map-get($red, 40);
-$kendo-color-error-surface-c4: map-get($red, 80);
-$kendo-color-error-surface-c5: map-get($red, 90);
-$kendo-color-error-surface-c6: map-get($red, 100);
-$kendo-color-error-surface-c7: map-get($red, 140);
-$kendo-color-error-surface-c8: map-get($red, 150);
+$kendo-color-info: #0a7eff !default; //  map-get($cobaltblue, 80);
+$kendo-color-info-content: #ffffff !default; // map-get($cobaltblue, 10);
+$kendo-color-info-hover: #096edf !default; // map-get($cobaltblue, 90);
+$kendo-color-info-active: #085ebf !default; // map-get($cobaltblue, 100);
 
-$kendo-color-error-border-c1: map-get($red, 20);
-$kendo-color-error-border-c2: map-get($red, 30);
-$kendo-color-error-border-c3: map-get($red, 40);
-$kendo-color-error-border-c4: map-get($red, 80);
-$kendo-color-error-border-c5: map-get($red, 90);
-$kendo-color-error-border-c6: map-get($red, 100);
-$kendo-color-error-border-c7: map-get($red, 110);
-$kendo-color-error-border-c8: map-get($red, 140);
-$kendo-color-error-border-c9: map-get($red, 150);
+$kendo-color-info-surface-content: #0a7eff !default; // map-get($cobaltblue, 10);
+$kendo-color-info-surface-emphasis: #0a7eff !default; // map-get($cobaltblue, 80);
 
-$kendo-color-error-content-c1: map-get($red, 80);
-$kendo-color-error-content-c2: map-get($red, 90);
-$kendo-color-error-content-c3: map-get($red, 140);
-$kendo-color-error-content-c4: map-get($red, 150);
+$kendo-color-info-variant: #e7f2ff !default; // map-get($cobaltblue, 10);
+$kendo-color-info-variant-content: #064f9f !default; // map-get($cobaltblue, 10);
+$kendo-color-info-variant-hover: #cee5ff !default; // map-get($cobaltblue, 90);
+$kendo-color-info-variant-active: #add4ff !default; // map-get($cobaltblue, 100);
 
-// Legacy
-$kendo-disabled-text: #A19F9D !default;
-$kendo-disabled-bg: #F3F2F1 !default;
-$kendo-disabled-border: transparent !default;
+// Success
+$kendo-color-success: #55a554 !default; // map-get($forestgreen, 80);
+$kendo-color-success-content: #ffffff !default; // map-get($forestgreen, 10);
+$kendo-color-success-hover: #3e973e !default; // map-get($forestgreen, 90);
+$kendo-color-success-active: #278a27 !default; // map-get($forestgreen, 100);
 
-$kendo-color-base: #ffffff !default;
-$kendo-color-base-text: #201F1E !default;
-$kendo-color-base-hover: #F3F2F1 !default;
-$kendo-color-base-active: #EDEBE9 !default;
+$kendo-color-success-surface-content: #55a554 !default; // map-get($forestgreen, 10);
+$kendo-color-success-surface-emphasis: #107c10 !default; // map-get($forestgreen, 80);
 
-$kendo-color-primary: #0078D4 !default;
-$kendo-color-primary-text: #ffffff !default;
-$kendo-color-primary-hover: #106EBE !default;
-$kendo-color-primary-active: #005A9E !default;
+$kendo-color-success-variant: #c8e8c6 !default; // map-get($forestgreen, 80);
+$kendo-color-success-variant-content: #031903 !default; // map-get($forestgreen, 10);
+$kendo-color-success-variant-hover: #b1dbaf !default; // map-get($forestgreen, 90);
+$kendo-color-success-variant-active: #9acd99 !default; // map-get($forestgreen, 100);
 
-$kendo-color-error: #A80000 !default;
-$kendo-color-success: #107C10 !default;
+// Warning
 
-$kendo-color-border: #8A8886 !default;
-$kendo-color-border-hover: #323130 !default;
+$kendo-color-warning: #ffc80a !default; //  map-get($yellow, 100);
+$kendo-color-warning-content: #323130 !default; // map-get($yellow, 140);
+$kendo-color-warning-hover: #ffd74b !default; // map-get($yellow, 90);
+$kendo-color-warning-active: #ffcf2b !default; // map-get($yellow, 80);
+
+$kendo-color-warning-surface-content: #323130 !default; // map-get($yellow, 100);
+$kendo-color-warning-surface-emphasis: #797775 !default; // map-get($yellow, 90);
+
+$kendo-color-warning-variant: #fff4ce !default; // map-get($yellow, 20);
+$kendo-color-warning-variant-content: #323130 !default; // map-get($yellow, 140);
+$kendo-color-warning-variant-hover: #ffeceb !default; // map-get($yellow, 30);
+$kendo-color-warning-variant-active: #ffdedb !default; // map-get($yellow, 40);
+
+// Error
+
+$kendo-color-error: #d13438 !default; //  map-get($red, 100);
+$kendo-color-error-content: #ffffff !default; // map-get($red, 10);
+$kendo-color-error-hover: #b12d31 !default; // map-get($red, 110);
+$kendo-color-error-active: #a0282c !default; // map-get($red, 120);
+
+$kendo-color-error-surface-content: #d13438 !default; // map-get($red, 10);
+$kendo-color-error-surface-emphasis: #a4262c !default; // map-get($red, 100);
+
+$kendo-color-error-variant: #fde7e9 !default; // map-get($red, 20);
+$kendo-color-error-variant-content: #201f1e !default; // map-get($red, 10);
+$kendo-color-error-variant-hover: #fcd4d7 !default; // map-get($red, 30);
+$kendo-color-error-variant-active: #fbc1c4 !default; // map-get($red, 40);
+
+// Base
+
+// $kendo-color-base-content-c1: #ffffff; //  map-get($neutral, white);
+// $kendo-color-base-content-c2: #e1dfdd; //  map-get($neutral, 40);
+// $kendo-color-base-content-c3: #d2d0ce; //  map-get($neutral, 50);
+// $kendo-color-base-content-c4: #c8c6c4; //  map-get($neutral, 60);
+// $kendo-color-base-content-c5: #a19f9d; //  map-get($neutral, 70);
+// $kendo-color-base-content-c6: #979593; //  map-get($neutral, 80);
+// $kendo-color-base-content-c7: #8a8886; //  map-get($neutral, 90);
+// $kendo-color-base-content-c8: #323130; //  map-get($neutral, 140);
+// $kendo-color-base-content-c9: #201f1e; //  map-get($neutral, 150);
+
+// $kendo-color-base-border-c1: #faf9f8; //  map-get($neutral, 20);
+// $kendo-color-base-border-c2: #f3f2f1; //  map-get($neutral, 30);
+// $kendo-color-base-border-c3: #edebe9; //  map-get($neutral, 40);
+// $kendo-color-base-border-c4: #e1dfdd; //  map-get($neutral, 50);
+// $kendo-color-base-border-c5: #d2d0ce; //  map-get($neutral, 60);
+// $kendo-color-base-border-c6: #c8c6c4; //  map-get($neutral, 70);
+// $kendo-color-base-border-c7: #a19f9d; //  map-get($neutral, 80);
+// $kendo-color-base-border-c8: #979593; //  map-get($neutral, 90);
+// $kendo-color-base-border-c9: #757371; //  map-get($neutral, 100);
+// $kendo-color-base-border-c10: #605e5c; //  map-get($neutral, 110);
+// $kendo-color-base-border-c11: #323130; //  map-get($neutral, 140);
+// $kendo-color-base-border-c12: #201f1e; //  map-get($neutral, 150);
+// $kendo-color-base-border-c13: #000000; //  map-get($neutral, black);
+
+// $kendo-color-base-surface-c1: #ffffff; //  map-get($neutral, white);
+// $kendo-color-base-surface-c2: #faf9f8; //  map-get($neutral, 10);
+// $kendo-color-base-surface-c3: #f3f2f1; //  map-get($neutral, 20);
+// $kendo-color-base-surface-c4: #edebe9; //  map-get($neutral, 30);
+// $kendo-color-base-surface-c5: #e1dfdd; //  map-get($neutral, 40);
+// $kendo-color-base-surface-c6: #d2d0ce; //  map-get($neutral, 50);
+// $kendo-color-base-surface-c7: #c8c6c4; //  map-get($neutral, 60);
+// $kendo-color-base-surface-c8: #a19f9d; //  map-get($neutral, 70);
+// $kendo-color-base-surface-c9: #979593; //  map-get($neutral, 80);
+// $kendo-color-base-surface-c10: #8a8886; //  map-get($neutral, 90);
+// $kendo-color-base-surface-c11: #757371; //  map-get($neutral, 100);
+// $kendo-color-base-surface-c12: #323130; //  map-get($neutral, 140);
+// $kendo-color-base-surface-c13: #201f1e; //  map-get($neutral, 150);
+// $kendo-color-base-surface-c14: #000000; //  map-get($neutral, black);
+
+// // Upgraded
+
+// $kendo-color-base-c1: #ffffff;
+// $kendo-color-base-c2: #faf9f8;
+// $kendo-color-base-c3: #f3f2f1;
+// $kendo-color-base-c4: #edebe9;
+// $kendo-color-base-c5: #e1dfdd;
+// $kendo-color-base-c6: #d2d0ce;
+// $kendo-color-base-c7: #c8c6c4;
+// $kendo-color-base-c8: #a19f9d;
+// $kendo-color-base-c9: #979593;
+// $kendo-color-base-c10: #8a8886;
+// $kendo-color-base-c11: #757371;
+// $kendo-color-base-c12: #605e5c;
+// $kendo-color-base-c13: #323130;
+// $kendo-color-base-c14: #201f1e;
+// $kendo-color-base-c15: #000000;
+
+// // End base
+
+// // Primary
+// $kendo-color-primary-content-c1: #0078d4; //  map-get($blue, 80);
+// $kendo-color-primary-content-c2: #106ebe; //  map-get($blue, 90);
+// $kendo-color-primary-content-c3: #005a9e; //  map-get($blue, 100);
+
+// $kendo-color-primary-border-c1: #0078d4; //  map-get($blue, 80);
+// $kendo-color-primary-border-c2: #106ebe; //  map-get($blue, 90);
+// $kendo-color-primary-border-c3: #005a9e; //  map-get($blue, 100);
+
+// $kendo-color-primary-surface-c1: #DEECF9; //  map-get($blue, 20);
+// $kendo-color-primary-surface-c2: #C7E0F4; //  map-get($blue, 30);
+// $kendo-color-primary-surface-c3: #ABD1EF; //  map-get($blue, 40);
+// $kendo-color-primary-surface-c4: #0078d4; //  map-get($blue, 80);
+// $kendo-color-primary-surface-c5: #106ebe; //  map-get($blue, 90);
+// $kendo-color-primary-surface-c6: #005a9e; //  map-get($blue, 100);
+
+// // Upgraded
+
+// $kendo-color-primary-c1: #DEECF9;
+// $kendo-color-primary-c2: #C7E0F4;
+// $kendo-color-primary-c3: #ABD1EF;
+// $kendo-color-primary-c4: #0078d4;
+// $kendo-color-primary-c5: #106ebe;
+// $kendo-color-primary-c6: #005a9e;
+// $kendo-color-primary-c7: #005a9e;
+
+// // End Primary
+
+// $kendo-color-tertiary-content-c1: #4ba0ff; //  map-get($paleblue, 80);
+// $kendo-color-tertiary-content-c2: #6cb2ff; //  map-get($paleblue, 90);
+
+// $kendo-color-tertiary-border-c1: #4ba0ff; //  map-get($paleblue, 80);
+// $kendo-color-tertiary-border-c2: #6cb2ff; //  map-get($paleblue, 90);
+// $kendo-color-tertiary-border-c2: #6cb2ff; //  map-get($paleblue, 100);
+
+// $kendo-color-tertiary-surface-c1: #4ba0ff; //  map-get($paleblue, 80);
+// $kendo-color-tertiary-surface-c2: #6cb2ff; //  map-get($paleblue, 90);
+// $kendo-color-tertiary-surface-c3: #8dc3ff; //  map-get($paleblue, 100);
+
+// $kendo-color-info-surface-c1: #CEE5FF; //  map-get($paleblue, 20);
+// $kendo-color-info-surface-c2: #ADD4FF; //  map-get($paleblue, 30);
+// $kendo-color-info-surface-c3: #8DC3FF; //  map-get($paleblue, 40);
+// $kendo-color-info-surface-c4: #0A7EFF; //  map-get($paleblue, 80);
+// $kendo-color-info-surface-c5: #096EDF; //  map-get($paleblue, 90);
+// $kendo-color-info-surface-c6: #085EBF; //  map-get($paleblue, 100);
+// $kendo-color-info-surface-c7: #011020; //  map-get($paleblue, 150);
+
+// $kendo-color-info-border-c1: #E7F2FF; //  map-get($paleblue, 10);
+// $kendo-color-info-border-c2: #CEE5FF; //  map-get($paleblue, 20);
+// $kendo-color-info-border-c3: #ADD4FF; //  map-get($paleblue, 30);
+// $kendo-color-info-border-c4: #8DC3FF; //  map-get($paleblue, 40);
+// $kendo-color-info-border-c5: #0A7EFF; //  map-get($paleblue, 80);
+// $kendo-color-info-border-c6: #096EDF; //  map-get($paleblue, 90);
+// $kendo-color-info-border-c7: #085EBF; //  map-get($paleblue, 100);
+// $kendo-color-info-border-c8: #064F9F; //  map-get($paleblue, 110);
+// $kendo-color-info-border-c9: #032040; //  map-get($paleblue, 140);
+// $kendo-color-info-border-c10: #011020; //  map-get($paleblue, 150);
+
+// $kendo-color-info-content-c1: #2B88D8; //  map-get($paleblue, 80);
+// $kendo-color-info-content-c2: #287EC7; //  map-get($paleblue, 90);
+// $kendo-color-info-content-c3: #174974; //  map-get($paleblue, 140);
+// $kendo-color-info-content-c4: #0D2A42; //  map-get($paleblue, 150);
+
+// $kendo-color-success-surface-c1: #dff6dd; //  map-get($forestgreen, 20);
+// $kendo-color-success-surface-c2: #c8e8c6; //  map-get($forestgreen, 30);
+// $kendo-color-success-surface-c3: #b1dbaf; //  map-get($forestgreen, 40);
+// $kendo-color-success-surface-c4: #55A554; //  map-get($forestgreen, 80);
+// $kendo-color-success-surface-c5: #3E973E; //  map-get($forestgreen, 90);
+// $kendo-color-success-surface-c6: #278A27; //  map-get($forestgreen, 100);
+// $kendo-color-success-surface-c7: #063206; //  map-get($forestgreen, 140);
+// $kendo-color-success-surface-c8: #031903; //  map-get($forestgreen, 150);
+
+// $kendo-color-success-content-c1: #55A554; //  map-get($forestgreen, 80);
+// $kendo-color-success-content-c2: #3E973E; //  map-get($forestgreen, 90);
+// $kendo-color-success-content-c3: #063206; //  map-get($forestgreen, 140);
+// $kendo-color-success-content-c4: #031903; //  map-get($forestgreen, 150);
+
+// $kendo-color-success-border-c1: #55A554; //  map-get($forestgreen, 80);
+// $kendo-color-success-border-c2: #3E973E; //  map-get($forestgreen, 90);
+// $kendo-color-success-border-c3: #063206; //  map-get($forestgreen, 140);
+// $kendo-color-success-border-c4: #031903; //  map-get($forestgreen, 150);
+
+// // Warning
+// $kendo-color-warning-surface-c1: #fff4ce; //  map-get($yellow, 20);
+// $kendo-color-warning-surface-c2: #ffedad; //  map-get($yellow, 30);
+// $kendo-color-warning-surface-c3: #ffe58d; //  map-get($yellow, 40);
+// $kendo-color-warning-surface-c4: #ffd74b; //  map-get($yellow, 80);
+// $kendo-color-warning-surface-c5: #ffcf2b; //  map-get($yellow, 90);
+// $kendo-color-warning-surface-c6: #ffc80a; //  map-get($yellow, 100);
+// $kendo-color-warning-surface-c7: #323130; //  map-get($neutral, 140);
+// $kendo-color-warning-surface-c8: #201f1e; //  map-get($neutral, 150);
+
+// $kendo-color-warning-border-c1: #fff4ce; //  map-get($yellow, 20);
+// $kendo-color-warning-border-c2: #ffedad; //  map-get($yellow, 30);
+// $kendo-color-warning-border-c3: #ffe58d; //  map-get($yellow, 40);
+// $kendo-color-warning-border-c4: #ffd74b; //  map-get($yellow, 80);
+// $kendo-color-warning-border-c5: #ffcf2b; //  map-get($yellow, 90);
+// $kendo-color-warning-border-c6: #ffc80a; //  map-get($yellow, 100);
+// $kendo-color-warning-border-c7: #323130; //  map-get($neutral, 100);
+// $kendo-color-warning-border-c8: #201f1e; //  map-get($neutral, 140);
+
+// $kendo-color-warning-content-c1: #ffcf2b; //  map-get($yellow, 80);
+// $kendo-color-warning-content-c2: #ffd74b; //  map-get($yellow, 90);
+// $kendo-color-warning-content-c3: #323130; //  map-get($neutral, 140);
+// $kendo-color-warning-content-c4: #201f1e; //  map-get($neutral, 150);
+
+// // Upgraded
+
+// $kendo-color-warning-c1: #fff4ce; //  map-get($yellow, 20);
+// $kendo-color-warning-c2: #ffedad; //  map-get($yellow, 30);
+// $kendo-color-warning-c3: #ffe58d; //  map-get($yellow, 40);
+// $kendo-color-warning-c4: #ffd74b; //  map-get($yellow, 80);
+// $kendo-color-warning-c5: #ffcf2b; //  map-get($yellow, 90);
+// $kendo-color-warning-c6: #ffc80a; //  map-get($yellow, 100);
+// $kendo-color-warning-c7: #323130; //  map-get($neutral, 140);
+// $kendo-color-warning-c8: #201f1e; //  map-get($neutral, 150);
+
+// // End Warning
+
+// // Error
+// $kendo-color-error-surface-c1: #fde7e9; //  map-get($red, 20);
+// $kendo-color-error-surface-c2: #f3d2d4; //  map-get($red, 30);
+// $kendo-color-error-surface-c3: #e9bcbf; //  map-get($red, 40);
+// $kendo-color-error-surface-c4: #dfa7aa; //  map-get($red, 80);
+// $kendo-color-error-surface-c5: #d59195; //  map-get($red, 90);
+// $kendo-color-error-surface-c6: #cc7c80; //  map-get($red, 100);
+// $kendo-color-error-surface-c7: #62171a; //  map-get($red, 140);
+// $kendo-color-error-surface-c8: #420f12; //  map-get($red, 150);
+
+// $kendo-color-error-border-c1: #fde7e9; //  map-get($red, 20);
+// $kendo-color-error-border-c2: #f3d2d4; //  map-get($red, 30);
+// $kendo-color-error-border-c3: #e9bcbf; //  map-get($red, 40);
+// $kendo-color-error-border-c4: #dfa7aa; //  map-get($red, 80);
+// $kendo-color-error-border-c5: #d59195; //  map-get($red, 90);
+// $kendo-color-error-border-c6: #cc7c80; //  map-get($red, 100);
+// $kendo-color-error-border-c7: #a4262c; //  map-get($red, 110);
+// $kendo-color-error-border-c8: #641a00; //  map-get($red, 140);
+// $kendo-color-error-border-c9: #420f12; //  map-get($red, 150);
+
+// $kendo-color-error-content-c1: #d59195; //  map-get($red, 80);
+// $kendo-color-error-content-c2: #cc7c80; //  map-get($red, 90);
+// $kendo-color-error-content-c3: #62171a; //  map-get($red, 140);
+// $kendo-color-error-content-c4: #420f12; // map-get($red, 150);
+
+// // Upgraded
+
+// $kendo-color-error-c1: #fde7e9; //  map-get($red, 20);
+// $kendo-color-error-c2: #f3d2d4; //  map-get($red, 30);
+// $kendo-color-error-c3: #e9bcbf; //  map-get($red, 40);
+// $kendo-color-error-c4: #dfa7aa; //  map-get($red, 80);
+// $kendo-color-error-c5: #d59195; //  map-get($red, 90);
+// $kendo-color-error-c6: #cc7c80; //  map-get($red, 100);
+// $kendo-color-error-c7: #62171a; //  map-get($red, 140);
+// $kendo-color-error-c8: #420f12; //  map-get($red, 150);
+
+// // End Error
+
+// // Legacy
+// $kendo-disabled-text: #a19f9d !default;
+// $kendo-disabled-bg: #f3f2f1 !default;
+// $kendo-disabled-border: transparent !default;
+
+// $kendo-color-base: #ffffff !default;
+// $kendo-color-base-text: #201f1e !default;
+// $kendo-color-base-hover: #f3f2f1 !default;
+// $kendo-color-base-active: #edebe9 !default;
+
+// $kendo-color-primary: #0078d4 !default;
+// $kendo-color-primary-text: #ffffff !default;
+// $kendo-color-primary-hover: #106ebe !default;
+// $kendo-color-primary-active: #005a9e !default;
+
+// $kendo-color-error: #a80000 !default;
+// $kendo-color-success: #107c10 !default;
+
+// $kendo-color-border: #8a8886 !default;
+// $kendo-color-border-hover: #323130 !default;
+
+// $kendo-color-base-content-c1: #ffffff;
+// $kendo-color-base-content-c2: #e1dfdd;
+// $kendo-color-base-content-c3: #d2d0ce;
+// $kendo-color-base-content-c4: #c8c6c4;
+// $kendo-color-base-content-c5: #a19f9d;
+// $kendo-color-base-content-c6: #979593;
+// $kendo-color-base-content-c7: #8a8886;
+// $kendo-color-base-content-c8: #323130;
+// $kendo-color-base-content-c9: #201f1e;
+
+// $kendo-color-base-border-c1: #faf9f8;
+// $kendo-color-base-border-c2: #f3f2f1;
+// $kendo-color-base-border-c3: #edebe9;
+// $kendo-color-base-border-c4: #e1dfdd;
+// $kendo-color-base-border-c5: #d2d0ce;
+// $kendo-color-base-border-c6: #c8c6c4;
+// $kendo-color-base-border-c7: #a19f9d;
+// $kendo-color-base-border-c8: #979593;
+// $kendo-color-base-border-c9: #757371;
+// $kendo-color-base-border-c10: #605e5c;
+// $kendo-color-base-border-c11: #323130;
+// $kendo-color-base-border-c12: #201f1e;
+// $kendo-color-base-border-c13: #000000;
+
+// $kendo-color-base-surface-c1: #ffffff;
+// $kendo-color-base-surface-c2: #faf9f8;
+// $kendo-color-base-surface-c3: #f3f2f1;
+// $kendo-color-base-surface-c4: #edebe9;
+// $kendo-color-base-surface-c5: #e1dfdd;
+// $kendo-color-base-surface-c6: #d2d0ce;
+// $kendo-color-base-surface-c7: #c8c6c4;
+// $kendo-color-base-surface-c8: #a19f9d;
+// $kendo-color-base-surface-c9: #979593;
+// $kendo-color-base-surface-c10: #8a8886;
+// $kendo-color-base-surface-c11: #757371;
+// $kendo-color-base-surface-c12: #323130;
+// $kendo-color-base-surface-c13: #201f1e;
+// $kendo-color-base-surface-c14: #000000;
+
+// $kendo-color-primary-content-c1: #0078d4;
+// $kendo-color-primary-content-c2: #106ebe;
+// $kendo-color-primary-content-c3: #005a9e;
+
+// $kendo-color-primary-border-c1: #0078d4;
+// $kendo-color-primary-border-c2: #106ebe;
+// $kendo-color-primary-border-c3: #005a9e;
+
+// $kendo-color-primary-surface-c1: #0078d4;
+// $kendo-color-primary-surface-c2: #106ebe;
+// $kendo-color-primary-surface-c3: #005a9e;
+
+// $kendo-color-tertiary-content-c1: #4ba0ff;
+// $kendo-color-tertiary-content-c2: #6cb2ff;
+
+// $kendo-color-tertiary-border-c1: #4ba0ff;
+// $kendo-color-tertiary-border-c2: #6cb2ff;
+// $kendo-color-tertiary-border-c2: #6cb2ff;
+
+// $kendo-color-tertiary-surface-c1: #4ba0ff;
+// $kendo-color-tertiary-surface-c2: #6cb2ff;
+// $kendo-color-tertiary-surface-c3: #8dc3ff;
+
+// $kendo-color-info-surface-c1: #f3f2f1;
+// $kendo-color-info-surface-c2: #edebe9;
+// $kendo-color-info-surface-c3: #edebe9;
+// $kendo-color-info-surface-c4: #979593;
+// $kendo-color-info-surface-c5: #8a8886;
+// $kendo-color-info-surface-c6: #757371;
+// $kendo-color-info-surface-c7: #201f1e;
+
+// $kendo-color-info-border-c1: #faf9f8;
+// $kendo-color-info-border-c2: #f3f2f1;
+// $kendo-color-info-border-c3: #edebe9;
+// $kendo-color-info-border-c4: #edebe9;
+// $kendo-color-info-border-c5: #979593;
+// $kendo-color-info-border-c6: #8a8886;
+// $kendo-color-info-border-c7: #757371;
+// $kendo-color-info-border-c8: #605e5c;
+// $kendo-color-info-border-c9: #323130;
+// $kendo-color-info-border-c10: #201f1e;
+
+// $kendo-color-info-content-c1: #757371;
+// $kendo-color-info-content-c2: #8a8886;
+// $kendo-color-info-content-c3: #323130;
+// $kendo-color-info-content-c4: #201f1e;
+
+// $kendo-color-success-surface-c1: #dff6dd;
+// $kendo-color-success-surface-c2: #c8e8c6;
+// $kendo-color-success-surface-c3: #b1dbaf;
+// $kendo-color-success-surface-c4: #979593;
+// $kendo-color-success-surface-c5: #8a8886;
+// $kendo-color-success-surface-c6: #757371;
+// $kendo-color-success-surface-c7: #323130;
+// $kendo-color-success-surface-c8: #201f1e;
+
+// $kendo-color-success-content-c1: #757371;
+// $kendo-color-success-content-c2: #8a8886;
+// $kendo-color-success-content-c3: #323130;
+// $kendo-color-success-content-c4: #201f1e;
+
+// $kendo-color-success-border-c1: #757371;
+// $kendo-color-success-border-c2: #8a8886;
+// $kendo-color-success-border-c3: #323130;
+// $kendo-color-success-border-c4: #201f1e;
+
+// $kendo-color-warning-surface-c1: #fff4ce;
+// $kendo-color-warning-surface-c2: #ffedad;
+// $kendo-color-warning-surface-c3: #ffe58d;
+// $kendo-color-warning-surface-c4: #ffd74b;
+// $kendo-color-warning-surface-c5: #ffcf2b;
+// $kendo-color-warning-surface-c6: #ffc80a;
+// $kendo-color-warning-surface-c7: #323130;
+// $kendo-color-warning-surface-c8: #201f1e;
+
+// $kendo-color-warning-border-c1: #fff4ce;
+// $kendo-color-warning-border-c2: #ffedad;
+// $kendo-color-warning-border-c3: #ffe58d;
+// $kendo-color-warning-border-c4: #ffd74b;
+// $kendo-color-warning-border-c5: #ffcf2b;
+// $kendo-color-warning-border-c6: #ffc80a;
+// $kendo-color-warning-border-c7: #323130;
+// $kendo-color-warning-border-c8: #201f1e;
+
+// $kendo-color-warning-content-c1: #ffcf2b;
+// $kendo-color-warning-content-c2: #ffd74b;
+// $kendo-color-warning-content-c3: #323130;
+// $kendo-color-warning-content-c4: #201f1e;
+
+// $kendo-color-error-surface-c1: #fde7e9;
+// $kendo-color-error-surface-c2: #f3d2d4;
+// $kendo-color-error-surface-c3: #e9bcbf;
+// $kendo-color-error-surface-c4: #dfa7aa;
+// $kendo-color-error-surface-c5: #d59195;
+// $kendo-color-error-surface-c6: #cc7c80;
+// $kendo-color-error-surface-c7: #62171a;
+// $kendo-color-error-surface-c8: #420f12;
+
+// $kendo-color-error-border-c1: #fde7e9;
+// $kendo-color-error-border-c2: #f3d2d4;
+// $kendo-color-error-border-c3: #e9bcbf;
+// $kendo-color-error-border-c4: #dfa7aa;
+// $kendo-color-error-border-c5: #d59195;
+// $kendo-color-error-border-c6: #cc7c80;
+// $kendo-color-error-border-c7: #a4262c;
+// $kendo-color-error-border-c8: #641a00;
+// $kendo-color-error-border-c9: #420f12;
+
+// $kendo-color-error-content-c1: #d59195;
+// $kendo-color-error-content-c2: #cc7c80;
+// $kendo-color-error-content-c3: #62171a;
+// $kendo-color-error-content-c4: #420f12;
