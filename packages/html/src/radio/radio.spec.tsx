@@ -31,7 +31,7 @@ const defaultProps = {
 };
 
 export const RadioButton = (
-    props: RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLSpanElement>
+    props: RadioButtonProps & RadioButtonState & React.HTMLAttributes<HTMLInputElement>
 ) => {
     const {
         id,
