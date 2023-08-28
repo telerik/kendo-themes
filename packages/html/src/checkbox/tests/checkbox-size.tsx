@@ -1,4 +1,4 @@
-import { Checkbox, CheckboxLabel } from '../../checkbox';
+import { Checkbox, CheckboxWithLabel } from '../../checkbox';
 
 const styles = `
     #test-area {
@@ -18,7 +18,7 @@ export default () =>(
                 <>
                     { Checkbox.options.size.map((size) => (
                         <section>
-                            <CheckboxLabel id={'ch-' + [ state ] + '-' + [ size ]} { ...{ [state]: true }} size={size}>{state}</CheckboxLabel>
+                            <CheckboxWithLabel id={'ch-' + [ state ] + '-' + [ size ]} { ...{ [state]: true }} size={size}>{state}</CheckboxWithLabel>
                         </section>
                     ))}
                 </>

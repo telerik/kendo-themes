@@ -1,4 +1,4 @@
-import { CheckboxGroup, CheckboxItem, CheckboxLabel, CheckboxNormal } from '../../checkbox';
+import { CheckboxGroup, CheckboxItem, CheckboxWithLabel, CheckboxNormal } from '../../checkbox';
 
 const styles = `
     #test-area {
@@ -25,13 +25,13 @@ export default () => (
             </CheckboxGroup>
             <CheckboxGroup>
                 <CheckboxItem>
-                    <CheckboxLabel id="ch1-vert">Option one</CheckboxLabel>
+                    <CheckboxWithLabel id="ch1-vert">Option one</CheckboxWithLabel>
                 </CheckboxItem>
                 <CheckboxItem>
-                    <CheckboxLabel id="ch2-vert">Option two</CheckboxLabel>
+                    <CheckboxWithLabel id="ch2-vert">Option two</CheckboxWithLabel>
                 </CheckboxItem>
                 <CheckboxItem>
-                    <CheckboxLabel id="ch3-vert">Option three</CheckboxLabel>
+                    <CheckboxWithLabel id="ch3-vert">Option three</CheckboxWithLabel>
                 </CheckboxItem>
             </CheckboxGroup>
             <span>Normal - horizontal</span>
@@ -49,13 +49,13 @@ export default () => (
             </CheckboxGroup>
             <CheckboxGroup layout="horizontal">
                 <CheckboxItem>
-                    <CheckboxLabel id="ch1-hor">Option one</CheckboxLabel>
+                    <CheckboxWithLabel id="ch1-hor">Option one</CheckboxWithLabel>
                 </CheckboxItem>
                 <CheckboxItem>
-                    <CheckboxLabel id="ch2-hor">Option two</CheckboxLabel>
+                    <CheckboxWithLabel id="ch2-hor">Option two</CheckboxWithLabel>
                 </CheckboxItem>
                 <CheckboxItem>
-                    <CheckboxLabel id="ch3-hor">Option three</CheckboxLabel>
+                    <CheckboxWithLabel id="ch3-hor">Option three</CheckboxWithLabel>
                 </CheckboxItem>
             </CheckboxGroup>
         </div>
