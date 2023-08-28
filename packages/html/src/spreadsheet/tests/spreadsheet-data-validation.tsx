@@ -1,7 +1,7 @@
 import { Window } from '../../window';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
-import { RadioButton } from '../../radio';
+import { RadioButtonLabel, RadioGroup, RadioItem } from '../../radio';
 import { Form, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
@@ -57,17 +57,14 @@ export default () => (
                     <FormField
                         label="On invalid data:"
                         editor={
-                            <ul className="k-radio-list k-list-horizontal">
-                                <li className="k-radio-list-item">
-                                    <RadioButton checked />
-                                    <label className="k-radio-label">Reject input</label>
-                                </li>
-
-                                <li className="k-radio-list-item">
-                                    <RadioButton />
-                                    <label className="k-radio-label">Show warning</label>
-                                </li>
-                            </ul>
+                            <RadioGroup layout="horizontal">
+                                <RadioItem>
+                                    <RadioButtonLabel checked>Reject input</RadioButtonLabel>
+                                </RadioItem>
+                                <RadioItem>
+                                    <RadioButtonLabel>Show warning</RadioButtonLabel>
+                                </RadioItem>
+                            </RadioGroup>
                         }
                     >
                     </FormField>

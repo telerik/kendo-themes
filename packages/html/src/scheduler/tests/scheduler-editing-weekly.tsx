@@ -9,7 +9,7 @@ import { MultiSelect } from '../../multiselect';
 import { Form, FormField } from '../../form';
 import { ButtonGroup } from '../../button-group';
 import { NumericTextbox } from '../../numerictextbox';
-import { RadioButton } from '../../radio';
+import { RadioButtonLabel, RadioGroup, RadioItem } from '../../radio';
 import { DatePicker } from '../../datepicker';
 
 const style = `
@@ -96,23 +96,20 @@ export default () =>(
                                     </div>
                                     <div className="k-scheduler-recurrence-end-rule-editor">
                                         <FormField label="End" editor={
-                                            <ul className="k-radio-list">
-                                                <li className="k-radio-list-item">
-                                                    <RadioButton id="k-endrule-never" />
-                                                    <label className="k-radio-label" htmlFor="k-endrule-never">Never</label>
-                                                </li>
-                                                <li className="k-radio-list-item">
-                                                    <RadioButton id="k-endrule-count" />
-                                                    <label className="k-radio-label" htmlFor="k-endrule-count">After</label>
+                                            <RadioGroup>
+                                                <RadioItem>
+                                                    <RadioButtonLabel id="k-endrule-never">Never</RadioButtonLabel>
+                                                </RadioItem>
+                                                <RadioItem>
+                                                    <RadioButtonLabel id="k-endrule-count" >After</RadioButtonLabel>
                                                     <NumericTextbox className="k-recur-count" />
                                                     <span>occurrence(s)</span>
-                                                </li>
-                                                <li className="k-radio-list-item">
-                                                    <RadioButton id="k-endrule-until" />
-                                                    <label className="k-radio-label" htmlFor="k-endrule-until">On</label>
+                                                </RadioItem>
+                                                <RadioItem>
+                                                    <RadioButtonLabel id="k-endrule-until" >On</RadioButtonLabel>
                                                     <DatePicker className="k-recur-until" disabled />
-                                                </li>
-                                            </ul>
+                                                </RadioItem>
+                                            </RadioGroup>
                                         } />
                                     </div>
                                 </div>

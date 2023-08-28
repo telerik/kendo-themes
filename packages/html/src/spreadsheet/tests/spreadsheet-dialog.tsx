@@ -2,7 +2,7 @@ import { Window } from '../../window';
 import { Textarea } from '../../textarea';
 import { Button } from '../../button';
 import { Form, FormField } from '../../form';
-import { RadioButton } from '../../radio';
+import { RadioButtonLabel, RadioGroup, RadioItem } from '../../radio';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { Upload } from '../../upload';
@@ -100,24 +100,20 @@ export default () =>(
                     <Form>
                         <FormField
                             editor={
-                                <ul className="k-radio-list">
-                                    <li className="k-radio-list-item">
-                                        <RadioButton checked />
-                                        <label className="k-radio-label">Merge all</label>
-                                    </li>
-                                    <li className="k-radio-list-item">
-                                        <RadioButton />
-                                        <label className="k-radio-label">Merge horizontally</label>
-                                    </li>
-                                    <li className="k-radio-list-item">
-                                        <RadioButton />
-                                        <label className="k-radio-label">Merge vertically</label>
-                                    </li>
-                                    <li className="k-radio-list-item">
-                                        <RadioButton />
-                                        <label className="k-radio-label">Unmerge</label>
-                                    </li>
-                                </ul>
+                                <RadioGroup>
+                                    <RadioItem>
+                                        <RadioButtonLabel checked>Merge all</RadioButtonLabel>
+                                    </RadioItem>
+                                    <RadioItem>
+                                        <RadioButtonLabel>Merge horizontally</RadioButtonLabel>
+                                    </RadioItem>
+                                    <RadioItem>
+                                        <RadioButtonLabel>Merge vertically</RadioButtonLabel>
+                                    </RadioItem>
+                                    <RadioItem>
+                                        <RadioButtonLabel>Unmerge</RadioButtonLabel>
+                                    </RadioItem>
+                                </RadioGroup>
                             }
                         >
                         </FormField>
