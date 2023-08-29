@@ -1,3 +1,5 @@
+$kendo-new-colors: true;
+
 $primary-palette-name: indigo !default;
 $secondary-palette-name: pink !default;
 $tertiary-palette-name: teal !default;
@@ -12,9 +14,13 @@ $tertiary-palette: material-palette($tertiary-palette-name, 500, 300, 700, $adju
 // Color settings
 // Apply material theme, as early as possible
 $theme: material-theme($primary-palette, $secondary-palette, $theme-type) !default;
-$kendo-is-dark-theme: k-map-get($theme, is-dark) !default;
 
-$kendo-color-base: #ffffff !default;
+// TODO: re-evaluate!
+$kendo-color-white: #ffffff;
+$kendo-color-black: #000000;
+$kendo-is-dark-theme: false !default;
+
+$kendo-color-base: k-map-get( $theme, base-bg ) !default;
 $kendo-color-base-text: k-map-get( $theme, component-text ) !default;
 
 $kendo-color-primary: material-color( $primary-palette, main ) !default;
@@ -23,11 +29,20 @@ $kendo-color-primary-hover: material-color( $primary-palette, darker ) !default;
 $kendo-color-primary-active: null !default;
 
 $kendo-color-secondary: material-color( $secondary-palette, main ) !default;
+$kendo-color-secondary-text: material-color( $secondary-palette, main-contrast ) !default;
+$kendo-color-secondary-hover: material-color( $secondary-palette, darker ) !default;
+$kendo-color-secondary-active: null !default;
+
 $kendo-color-tertiary: material-color($tertiary-palette, main) !default;
+$kendo-color-tertiary-text: material-color( $tertiary-palette, main-contrast ) !default;
+$kendo-color-tertiary-hover: material-color( $tertiary-palette, darker ) !default;
+$kendo-color-tertiary-active: null !default;
+
 $kendo-color-info: #0058e9 !default;
 $kendo-color-success: #37b400 !default;
 $kendo-color-warning: #ffc000 !default;
 $kendo-color-error: #f31700 !default;
+
 $kendo-color-dark: get-base-hue( gray, 800 ) !default;
 $kendo-color-light: get-base-hue( gray, 100 ) !default;
 $kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
