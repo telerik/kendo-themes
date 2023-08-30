@@ -22,7 +22,7 @@ export default () =>(
                     { DateInput.options.size.map((size) => (
                         <>
                             <div>
-                                <DateInputNormal size={size} rounded={rounded} value="DateInput"/>
+                                <DateInputNormal showSpinButton={true} size={size} rounded={rounded} value="DateInput"/>
                             </div>
                         </>
                     ))}

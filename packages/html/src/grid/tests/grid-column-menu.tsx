@@ -88,7 +88,7 @@ export default () =>(
                                             <Checkbox />
                                             <span className="k-checkbox-label">Column 1</span>
                                         </label>
-                                        <label className="k-column-list-item">
+                                        <label className="k-column-list-item k-focus">
                                             <Checkbox />
                                             <span className="k-checkbox-label">Column 2</span>
                                         </label>
@@ -168,7 +168,7 @@ export default () =>(
                                             <Checkbox />
                                             <span className="k-checkbox-label">Column 1</span>
                                         </label>
-                                        <label className="k-column-list-item">
+                                        <label className="k-column-list-item k-focus">
                                             <Checkbox />
                                             <span className="k-checkbox-label">Column 2</span>
                                         </label>

@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.7.1-dev.0](https://github.com/telerik/kendo-themes/compare/v6.7.0...v6.7.1-dev.0) (2023-08-28)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.7.0](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.6...v6.7.0) (2023-08-21)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.7.0-dev.6](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.5...v6.7.0-dev.6) (2023-08-21)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.7.0-dev.5](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.4...v6.7.0-dev.5) (2023-08-14)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
+# [6.7.0-dev.4](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.3...v6.7.0-dev.4) (2023-08-09)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
 # [6.7.0-dev.3](https://github.com/telerik/kendo-themes/compare/v6.7.0-dev.2...v6.7.0-dev.3) (2023-08-07)
 
 **Note:** Version bump only for package @progress/kendo-themes-html
