@@ -44,6 +44,6 @@ $kendo-slider-transition-function: ease-out !default;
 $kendo-slider-draghandle-transition-speed: .4s !default;
 $kendo-slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
-$kendo-slider-track-bg: k-try-tint( $kendo-color-primary, 8 ) !default;
+$kendo-slider-track-bg: if($kendo-new-colors, $kendo-color-primary-pale, k-try-tint( $kendo-color-primary, 8 )) !default;
 $kendo-slider-selection-bg: $kendo-color-primary !default;
 $kendo-slider-disabled-opacity: .65 !default;

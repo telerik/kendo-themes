@@ -11,6 +11,7 @@ $theme: null !default;
 $kendo-is-dark-theme: null !default;
 
 $kendo-color-primary: null !default;
+$kendo-color-primary-light: null !default;
 $kendo-color-primary-lighter: null !default;
 $kendo-color-primary-darker: null !default;
 $kendo-color-primary-contrast: null !default;
@@ -90,7 +91,8 @@ $kendo-invalid-border: null !default;
 $kendo-invalid-shadow: null !default;
 
 @if ($kendo-new-colors) {
-    $kendo-color-primary: $kendo-color-primary;
+    $kendo-color-primary: $_kendo-color-primary;
+    $kendo-color-primary-light: $kendo-color-primary-light;
     $kendo-color-primary-darker: $kendo-color-primary-hover;
     $kendo-color-primary-contrast: $kendo-color-primary-text;
 
