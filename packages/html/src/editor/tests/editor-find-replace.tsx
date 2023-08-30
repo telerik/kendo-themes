@@ -1,6 +1,6 @@
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
-import { Checkbox } from '../../checkbox';
+import { CheckboxItem, CheckboxWithLabel, CheckboxGroup } from '../../checkbox';
 import { Textbox } from '../../textbox';
 import { Editor, EditorContent, EditorToolbar } from '../../editor';
 import { Window } from '../../window';
@@ -50,24 +50,20 @@ export default () =>(
                             <Form tag="div">
                                 <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
                                 <FormField editor={
-                                    <div className="k-search-options k-checkbox-list">
-                                        <span className="k-checkbox-list-item">
-                                            <Checkbox />
-                                            <label className="k-checkbox-label">Match case</label>
-                                        </span>
-                                        <span className="k-checkbox-list-item">
-                                            <Checkbox />
-                                            <label className="k-checkbox-label">Match whole word only</label>
-                                        </span>
-                                        <span className="k-checkbox-list-item">
-                                            <Checkbox />
-                                            <label className="k-checkbox-label">Match cyclic (Wrap around)</label>
-                                        </span>
-                                        <span className="k-checkbox-list-item">
-                                            <Checkbox />
-                                            <label className="k-checkbox-label">Regular Expression</label>
-                                        </span>
-                                    </div>
+                                    <CheckboxGroup className="k-search-options">
+                                        <CheckboxItem>
+                                            <CheckboxWithLabel>Match case</CheckboxWithLabel>
+                                        </CheckboxItem>
+                                        <CheckboxItem>
+                                            <CheckboxWithLabel>Match whole word only</CheckboxWithLabel>
+                                        </CheckboxItem>
+                                        <CheckboxItem>
+                                            <CheckboxWithLabel>Match cyclic (Wrap around)</CheckboxWithLabel>
+                                        </CheckboxItem>
+                                        <CheckboxItem>
+                                            <CheckboxWithLabel>Regular Expression</CheckboxWithLabel>
+                                        </CheckboxItem>
+                                    </CheckboxGroup>
                                 } />
                                 <div className="k-matches-container">
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-left">Prev</Button>
@@ -104,24 +100,20 @@ export default () =>(
                                     </ActionButtons>
                                 } />
                                 <FormField editor={
-                                    <div className="k-search-options k-checkbox-list">
-                                        <span className="k-checkbox-list-item">
-                                            <Checkbox />
-                                            <label className="k-checkbox-label">Match case</label>
-                                        </span>
-                                        <span className="k-checkbox-list-item">
-                                            <Checkbox />
-                                            <label className="k-checkbox-label">Match whole word only</label>
-                                        </span>
-                                        <span className="k-checkbox-list-item">
-                                            <Checkbox />
-                                            <label className="k-checkbox-label">Match cyclic (Wrap around)</label>
-                                        </span>
-                                        <span className="k-checkbox-list-item">
-                                            <Checkbox />
-                                            <label className="k-checkbox-label">Regular Expression</label>
-                                        </span>
-                                    </div>
+                                    <CheckboxGroup className="k-search-options">
+                                        <CheckboxItem>
+                                            <CheckboxWithLabel>Match case</CheckboxWithLabel>
+                                        </CheckboxItem>
+                                        <CheckboxItem>
+                                            <CheckboxWithLabel>Match whole word only</CheckboxWithLabel>
+                                        </CheckboxItem>
+                                        <CheckboxItem>
+                                            <CheckboxWithLabel>Match cyclic (Wrap around)</CheckboxWithLabel>
+                                        </CheckboxItem>
+                                        <CheckboxItem>
+                                            <CheckboxWithLabel>Regular Expression</CheckboxWithLabel>
+                                        </CheckboxItem>
+                                    </CheckboxGroup>
                                 } />
                                 <div className="k-matches-container">
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-left">Prev</Button>

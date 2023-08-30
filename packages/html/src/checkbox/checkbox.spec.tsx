@@ -35,7 +35,7 @@ const defaultProps = {
 };
 
 export const Checkbox = (
-    props: CheckboxProps & CheckboxState & React.HTMLAttributes<HTMLSpanElement>
+    props: CheckboxProps & CheckboxState & React.HTMLAttributes<HTMLInputElement>
 ) => {
     const {
         id,
