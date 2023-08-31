@@ -248,6 +248,16 @@
         }
     }
 
+    // Flat Toolbar
+    .k-toolbar.k-toolbar-flat {
+        border-width: $kendo-toolbar-flat-border-width 0;
+        border-top-color: transparent !important; // stylelint-disable-line declaration-no-important
+        border-bottom-color: inherit;
+        color: inherit;
+        background: none !important;  // stylelint-disable-line declaration-no-important
+        box-shadow: none;
+    }
+
 }
 
 

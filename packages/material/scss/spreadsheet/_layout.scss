@@ -18,7 +18,6 @@
 
     }
 
-
     // Spreadsheet tabstrip
     .k-spreadsheet-tabstrip {
         padding-top: 0;
@@ -28,10 +27,8 @@
         }
     }
 
-
     // Spreadsheet footer
     .k-spreadsheet-sheets-bar {
-        padding: 0;
 
         .k-spreadsheet-sheets-bar-add {
             margin: k-map-get( $kendo-spacing, 1 );
@@ -42,7 +39,6 @@
         }
 
     }
-
 
     // Selection
     .k-spreadsheet .k-selection-full,

@@ -2,6 +2,7 @@
 @use "sass:map";
 @use "../core/" as *;
 @use "../table/_variables.scss" as *;
+@use "../input/_variables.scss" as *;
 
 /// Width of the border around the spreadsheet.
 /// @group spreadsheet
@@ -15,32 +16,6 @@ $kendo-spreadsheet-font-size: var( --kendo-font-size, initial ) !default;
 /// Line height of the spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-line-height: var( --kendo-line-height, initial ) !default;
-
-/// Horizontal padding of the spreadsheet popup menu.
-/// @group spreadsheet
-$kendo-spreadsheet-popup-menu-padding-x: map.get( $kendo-spacing, 3 ) !default;
-/// Vertical padding of the spreadsheet popup menu.
-/// @group spreadsheet
-$kendo-spreadsheet-popup-menu-padding-y: $kendo-spreadsheet-popup-menu-padding-x !default;
-
-/// Horizontal padding of the spreadsheet sheets bar.
-/// @group spreadsheet
-$kendo-spreadsheet-sheets-bar-padding-x: map.get( $kendo-spacing, 1 ) !default;
-/// Vertical padding of the spreadsheet sheets bar.
-/// @group spreadsheet
-$kendo-spreadsheet-sheets-bar-padding-y: 0 !default;
-
-/// Horizontal margin of the spreadsheet sheets remove.
-/// @group spreadsheet
-$kendo-spreadsheet-sheets-remove-inline-start: - map.get( $kendo-spacing, 2 ) !default;
-/// Vertical margin of the spreadsheet sheets remove.
-/// @group spreadsheet
-$kendo-spreadsheet-sheets-remove-inline-end: map.get( $kendo-spacing, 2 ) !default;
-
-/// Left padding of the spreadsheet sheets menu.
-/// @group spreadsheet
-$kendo-filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) ) !default;
-
 /// Background color of the spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-bg: var( --kendo-component-bg, initial ) !default;
@@ -57,15 +32,25 @@ $kendo-spreadsheet-primary-border: k-get-theme-color-var( primary-100 ) !default
 /// @group spreadsheet
 $kendo-spreadsheet-primary-bg: k-get-theme-color-var( primary-100 ) !default;
 
+/// Background color of the spreadsheet header.
+/// @group spreadsheet
+$kendo-spreadsheet-header-bg: k-get-theme-color-var( neutral-10 ) !default;
 /// Text color of the spreadsheet header.
 /// @group spreadsheet
 $kendo-spreadsheet-header-text: $kendo-table-header-text !default;
-/// Background color of the spreadsheet header.
-/// @group spreadsheet
-$kendo-spreadsheet-header-bg: $kendo-table-header-bg !default;
 /// Border color of the spreadsheet header.
 /// @group spreadsheet
 $kendo-spreadsheet-header-border: $kendo-table-header-border !default;
+
+/// Text color of the spreadsheet table headers.
+/// @group spreadsheet
+$kendo-spreadsheet-table-header-bg: k-get-theme-color-var( neutral-10 ) !default;
+/// Background color of the spreadsheet table headers.
+/// @group spreadsheet
+$kendo-spreadsheet-table-header-text: $kendo-spreadsheet-header-text !default;
+/// Border color of the spreadsheet table headers.
+/// @group spreadsheet
+$kendo-spreadsheet-table-header-border: $kendo-spreadsheet-header-border !default;
 
 /// Selected text color of the spreadsheet.
 /// @group spreadsheet
@@ -76,6 +61,161 @@ $kendo-spreadsheet-selected-bg: k-get-theme-color-var( primary-30 ) !default;
 /// Selected border color of the spreadsheet.
 /// @group spreadsheet
 $kendo-spreadsheet-selected-border: k-get-theme-color-var( primary-100 ) !default;
+
+/// Horizontal padding of the spreadsheet popup menu.
+/// @group spreadsheet
+$kendo-spreadsheet-popup-menu-padding-x: map.get( $kendo-spacing, 3 ) !default;
+/// Vertical padding of the spreadsheet popup menu.
+/// @group spreadsheet
+$kendo-spreadsheet-popup-menu-padding-y: $kendo-spreadsheet-popup-menu-padding-x !default;
+
+/// Border width of the spreadsheet action bar.
+/// @group spreadsheet
+$kendo-spreadsheet-action-bar-border-width: 1px !default;
+/// Horizontal padding of the spreadsheet action bar.
+/// @group spreadsheet
+$kendo-spreadsheet-action-bar-padding-y: map.get( $kendo-spacing, 1 ) !default;
+/// Vertical padding of the spreadsheet action bar.
+/// @group spreadsheet
+$kendo-spreadsheet-action-bar-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// Font size of the spreadsheet action bar.
+/// @group spreadsheet
+$kendo-spreadsheet-action-bar-font-size: $kendo-spreadsheet-font-size !default;
+/// Font family of the spreadsheet action bar.
+/// @group spreadsheet
+$kendo-spreadsheet-action-bar-font-family: Arial, Verdana, sans-serif !default;
+/// Spacings of the spreadsheet action bar.
+/// @group spreadsheet
+$kendo-spreadsheet-action-bar-spacing: map.get( $kendo-spacing, 2 ) !default;
+
+/// Spacing of the spreadsheet formula bar.
+/// @group spreadsheet
+$kendo-spreadsheet-formula-bar-gap: map.get( $kendo-spacing, 2 ) !default;
+
+/// Horizontal padding of the spreadsheet formula input.
+/// @group spreadsheet
+$kendo-spreadsheet-formula-input-padding-x: var( --kendo-input-md-padding-x, #{$kendo-input-md-padding-x} ) !default;
+/// Vertical padding of the spreadsheet formula input.
+/// @group spreadsheet
+$kendo-spreadsheet-formula-input-padding-y: var( --kendo-input-md-padding-y, #{$kendo-input-md-padding-y} ) !default;
+/// Line height of the spreadsheet formula input.
+/// @group spreadsheet
+$kendo-spreadsheet-formula-input-line-height: var( --kendo-input-md-line-height, #{$kendo-input-md-line-height} ) !default;
+
+/// Font family of the spreadsheet view.
+/// @group spreadsheet
+$kendo-spreadsheet-view-font-family: Arial, Verdana, sans-serif !default;
+/// Font size of the spreadsheet view.
+/// @group spreadsheet
+$kendo-spreadsheet-view-font-size: $kendo-spreadsheet-font-size !default;
+
+/// Background color of the spreadsheet selection.
+/// @group spreadsheet
+$kendo-spreadsheet-selection-bg: transparent !default;
+/// Text color of the spreadsheet selection.
+/// @group spreadsheet
+$kendo-spreadsheet-selection-text: null !default;
+/// Border color of the spreadsheet selection.
+/// @group spreadsheet
+$kendo-spreadsheet-selection-border: $kendo-spreadsheet-primary-border !default;
+/// Shadow of the spreadsheet selection.
+/// @group spreadsheet
+$kendo-spreadsheet-selection-shadow: none !default;
+
+/// Background color of the spreadsheet single selection.
+/// @group spreadsheet
+$kendo-spreadsheet-single-selection-bg: $kendo-spreadsheet-selected-border !default;
+/// Text color of the spreadsheet single selection.
+/// @group spreadsheet
+$kendo-spreadsheet-single-selection-text: null !default;
+/// Border color of the spreadsheet single selection.
+/// @group spreadsheet
+$kendo-spreadsheet-single-selection-border: $kendo-spreadsheet-border !default;
+/// Background color of the spreadsheet partial selection.
+/// @group spreadsheet
+$kendo-spreadsheet-partial-selection-bg: color-mix(in srgb, $kendo-spreadsheet-selected-bg 75%, transparent) !default;
+
+/// Background color of the spreadsheet active cell.
+/// @group spreadsheet
+$kendo-spreadsheet-active-cell-bg: $kendo-spreadsheet-bg !default;
+/// Shadow of the spreadsheet active cell.
+/// @group spreadsheet
+$kendo-spreadsheet-active-cell-shadow: inset 0 0 0 1px $kendo-spreadsheet-selected-bg !default;
+
+/// Background color of the spreadsheet auto fill.
+/// @group spreadsheet
+$kendo-spreadsheet-auto-fill-bg: color-mix(in srgb, $kendo-spreadsheet-selected-bg 75%, transparent) !default;
+/// Text color of the spreadsheet auto fill.
+/// @group spreadsheet
+$kendo-spreadsheet-auto-fill-text: null !default;
+/// Border color of the spreadsheet auto fill.
+/// @group spreadsheet
+$kendo-spreadsheet-auto-fill-border: $kendo-spreadsheet-selected-bg !default;
+/// Shadow of the spreadsheet auto fill.
+/// @group spreadsheet
+$kendo-spreadsheet-auto-fill-shadow: inset 0 0 0 1px $kendo-spreadsheet-selected-bg !default;
+/// Background color of the spreadsheet auto fill punch.
+/// @group spreadsheet
+$kendo-spreadsheet-auto-fill-punch-bg: color-mix(in srgb, $kendo-spreadsheet-bg 50%, transparent) !default;
+
+/// Vertical padding of the spreadsheet cell.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-padding-y: map.get( $kendo-spacing, 1 ) !default;
+/// Horizontal padding of the spreadsheet cell.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-padding-x: $kendo-spreadsheet-cell-padding-y !default;
+
+/// Line height of the spreadsheet cell editor.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-editor-line-height: var( --kendo-spreadsheet-line-height, $kendo-spreadsheet-line-height ) !default;
+/// Horizontal padding of the spreadsheet cell editor.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-editor-padding-x: map.get( $kendo-spacing, 1 ) !default;
+/// Vertical padding of the spreadsheet cell editor.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-editor-padding-y: 0px !default;
+/// Background color of the spreadsheet cell editor.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-editor-bg: $kendo-spreadsheet-bg !default;
+/// Text color of the spreadsheet cell editor.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-editor-text: $kendo-spreadsheet-text !default;
+/// Border color of the spreadsheet cell editor.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-editor-border: null !default;
+
+/// Background color of the spreadsheet resize handle.
+/// @group spreadsheet
+$kendo-spreadsheet-resize-handle-bg: k-get-theme-color-var( primary-100 ) !default;
+
+/// Border color of the spreadsheet cell comment indicator.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-comment-border: k-get-theme-color-var( primary-100 ) !default;
+
+/// Border color of the spreadsheet cell comment indicator.
+/// @group spreadsheet
+$kendo-spreadsheet-cell-dirty-border: k-get-theme-color-var( error-100 ) !default;
+
+/// Horizontal padding of the spreadsheet cell dirty indicator.
+/// @group spreadsheet
+$kendo-spreadsheet-sheets-bar-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// Vertical padding of the spreadsheet sheets bar.
+/// @group spreadsheet
+$kendo-spreadsheet-sheets-bar-padding-y: map.get( $kendo-spacing, 2 ) !default;
+/// Border width of the spreadsheet sheets bar.
+/// @group spreadsheet
+$kendo-spreadsheet-sheets-bar-border-width: 1px !default;
+
+/// Horizontal margin of the spreadsheet sheets remove.
+/// @group spreadsheet
+$kendo-spreadsheet-sheets-remove-inline-start: - map.get( $kendo-spacing, 2 ) !default;
+/// Vertical margin of the spreadsheet sheets remove.
+/// @group spreadsheet
+$kendo-spreadsheet-sheets-remove-inline-end: map.get( $kendo-spacing, 2 ) !default;
+
+/// Left padding of the spreadsheet sheets menu.
+/// @group spreadsheet
+$kendo-filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) ) !default;
 
 /// Text color of the spreadsheet filter button.
 /// @group spreadsheet

@@ -14772,7 +14772,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-picker-flat-bg</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>none</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24460,76 +24460,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-popup-menu-padding-x</td>
-    <td></td>
-    <td><code>map.get( $kendo-spacing, 3 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the spreadsheet popup menu.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-popup-menu-padding-y</td>
-    <td></td>
-    <td><code>$kendo-spreadsheet-popup-menu-padding-x</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the spreadsheet popup menu.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-sheets-bar-padding-x</td>
-    <td></td>
-    <td><code>map.get( $kendo-spacing, 1 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the spreadsheet sheets bar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-sheets-bar-padding-y</td>
-    <td></td>
-    <td><code>0</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the spreadsheet sheets bar.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-sheets-remove-inline-start</td>
-    <td></td>
-    <td><code>- map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the spreadsheet sheets remove.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-spreadsheet-sheets-remove-inline-end</td>
-    <td></td>
-    <td><code>map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the spreadsheet sheets remove.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-filter-menu-padding-left</td>
-    <td></td>
-    <td><code>calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) )</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Left padding of the spreadsheet sheets menu.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-spreadsheet-bg</td>
     <td></td>
     <td><code>var( --kendo-component-bg, initial )</code></td>
@@ -24580,6 +24510,16 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-spreadsheet-header-bg</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet header.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-spreadsheet-header-text</td>
     <td></td>
     <td><code>$kendo-table-header-text</code></td>
@@ -24590,16 +24530,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-spreadsheet-header-bg</td>
-    <td></td>
-    <td><code>$kendo-table-header-bg</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-spreadsheet-header-border</td>
     <td></td>
     <td><code>$kendo-table-header-border</code></td>
@@ -24607,6 +24537,36 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the spreadsheet header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-table-header-bg</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the spreadsheet table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-table-header-text</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-header-text</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-table-header-border</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-header-border</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the spreadsheet table headers.</div></div>
     </td>
 </tr>
 <tr>
@@ -24637,6 +24597,466 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected border color of the spreadsheet.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-popup-menu-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 3 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the spreadsheet popup menu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-popup-menu-padding-y</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-popup-menu-padding-x</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the spreadsheet popup menu.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-action-bar-border-width</td>
+    <td></td>
+    <td><code>1px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the spreadsheet action bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-action-bar-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the spreadsheet action bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-action-bar-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the spreadsheet action bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-action-bar-font-size</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-font-size</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the spreadsheet action bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-action-bar-font-family</td>
+    <td></td>
+    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the spreadsheet action bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-action-bar-spacing</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacings of the spreadsheet action bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-formula-bar-gap</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the spreadsheet formula bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-formula-input-padding-x</td>
+    <td></td>
+    <td><code>var( --kendo-input-md-padding-x, #{$kendo-input-md-padding-x} )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the spreadsheet formula input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-formula-input-padding-y</td>
+    <td></td>
+    <td><code>var( --kendo-input-md-padding-y, #{$kendo-input-md-padding-y} )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the spreadsheet formula input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-formula-input-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-input-md-line-height, #{$kendo-input-md-line-height} )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the spreadsheet formula input.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-view-font-family</td>
+    <td></td>
+    <td><code>Arial, Verdana, sans-serif</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the spreadsheet view.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-view-font-size</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-font-size</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the spreadsheet view.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-selection-bg</td>
+    <td></td>
+    <td><code>transparent</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-selection-text</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the spreadsheet selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-selection-border</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-primary-border</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the spreadsheet selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-selection-shadow</td>
+    <td></td>
+    <td><code>none</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the spreadsheet selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-single-selection-bg</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-selected-border</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet single selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-single-selection-text</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the spreadsheet single selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-single-selection-border</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-border</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the spreadsheet single selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-partial-selection-bg</td>
+    <td></td>
+    <td><code>color-mix(in srgb, $kendo-spreadsheet-selected-bg 75%, transparent)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet partial selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-active-cell-bg</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-bg</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet active cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-active-cell-shadow</td>
+    <td></td>
+    <td><code>inset 0 0 0 1px $kendo-spreadsheet-selected-bg</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the spreadsheet active cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-auto-fill-bg</td>
+    <td></td>
+    <td><code>color-mix(in srgb, $kendo-spreadsheet-selected-bg 75%, transparent)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet auto fill.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-auto-fill-text</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the spreadsheet auto fill.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-auto-fill-border</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-selected-bg</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the spreadsheet auto fill.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-auto-fill-shadow</td>
+    <td></td>
+    <td><code>inset 0 0 0 1px $kendo-spreadsheet-selected-bg</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the spreadsheet auto fill.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-auto-fill-punch-bg</td>
+    <td></td>
+    <td><code>color-mix(in srgb, $kendo-spreadsheet-bg 50%, transparent)</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet auto fill punch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the spreadsheet cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-padding-x</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-cell-padding-y</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the spreadsheet cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-editor-line-height</td>
+    <td></td>
+    <td><code>var( --kendo-spreadsheet-line-height, $kendo-spreadsheet-line-height )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the spreadsheet cell editor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-editor-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 1 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the spreadsheet cell editor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-editor-padding-y</td>
+    <td></td>
+    <td><code>0px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the spreadsheet cell editor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-editor-bg</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-bg</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet cell editor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-editor-text</td>
+    <td></td>
+    <td><code>$kendo-spreadsheet-text</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the spreadsheet cell editor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-editor-border</td>
+    <td></td>
+    <td><code>null</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the spreadsheet cell editor.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-resize-handle-bg</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the spreadsheet resize handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-comment-border</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the spreadsheet cell comment indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-cell-dirty-border</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( error-100 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the spreadsheet cell comment indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-sheets-bar-padding-x</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the spreadsheet cell dirty indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-sheets-bar-padding-y</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the spreadsheet sheets bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-sheets-bar-border-width</td>
+    <td></td>
+    <td><code>1px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the spreadsheet sheets bar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-sheets-remove-inline-start</td>
+    <td></td>
+    <td><code>- map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the spreadsheet sheets remove.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-spreadsheet-sheets-remove-inline-end</td>
+    <td></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the spreadsheet sheets remove.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filter-menu-padding-left</td>
+    <td></td>
+    <td><code>calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Left padding of the spreadsheet sheets menu.</div></div>
     </td>
 </tr>
 <tr>
@@ -28978,6 +29398,16 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Toolbar item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-flat-border-width</td>
+    <td></td>
+    <td><code>1px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the flat Toolbar.</div></div>
     </td>
 </tr>
 <tr>

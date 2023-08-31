@@ -11,6 +11,72 @@ $kendo-spreadsheet-bg: $kendo-component-bg !default;
 $kendo-spreadsheet-text: $kendo-component-text !default;
 $kendo-spreadsheet-border: $kendo-component-border !default;
 
+$kendo-spreadsheet-header-bg: $kendo-component-header-bg !default;
+$kendo-spreadsheet-header-text: $kendo-component-header-text !default;
+$kendo-spreadsheet-header-border: $kendo-component-header-border !default;
+$kendo-spreadsheet-header-gradient: $kendo-component-header-gradient !default;
+
+$kendo-spreadsheet-table-header-bg: $kendo-spreadsheet-header-bg !default;
+$kendo-spreadsheet-table-header-text: $kendo-spreadsheet-header-text !default;
+$kendo-spreadsheet-table-header-border: $kendo-spreadsheet-header-border !default;
+$kendo-spreadsheet-table-header-gradient: $kendo-spreadsheet-header-gradient !default;
+
+$kendo-spreadsheet-action-bar-border-width: 1px !default;
+$kendo-spreadsheet-action-bar-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-action-bar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-action-bar-font-size: $kendo-spreadsheet-font-size !default;
+$kendo-spreadsheet-action-bar-font-family: Arial, Verdana, sans-serif !default;
+$kendo-spreadsheet-action-bar-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+
+$kendo-spreadsheet-formula-bar-gap: k-map-get( $kendo-spacing, 2 ) !default;
+
+$kendo-spreadsheet-formula-input-padding-x: $kendo-input-padding-x !default;
+$kendo-spreadsheet-formula-input-padding-y: $kendo-input-padding-y !default;
+$kendo-spreadsheet-formula-input-line-height: $kendo-input-line-height !default;
+
+$kendo-spreadsheet-view-font-family: Arial, Verdana, sans-serif !default;
+$kendo-spreadsheet-view-font-size: $kendo-spreadsheet-font-size !default;
+
+$kendo-spreadsheet-selection-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-spreadsheet-selection-text: null !default;
+$kendo-spreadsheet-selection-border: $kendo-selected-bg !default;
+$kendo-spreadsheet-selection-shadow: inset 0 0 0 1px $kendo-selected-bg !default;
+
+$kendo-spreadsheet-single-selection-bg: $kendo-selected-bg !default;
+$kendo-spreadsheet-single-selection-text: null !default;
+$kendo-spreadsheet-single-selection-border: $kendo-spreadsheet-bg !default;
+
+$kendo-spreadsheet-partial-selection-bg: rgba( $kendo-selected-bg, .25 ) !default;
+
+$kendo-spreadsheet-active-cell-bg: $kendo-spreadsheet-bg !default;
+$kendo-spreadsheet-active-cell-shadow: inset 0 0 0 1px $kendo-selected-bg !default;
+
+$kendo-spreadsheet-auto-fill-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-spreadsheet-auto-fill-text: null !default;
+$kendo-spreadsheet-auto-fill-border: $kendo-selected-bg !default;
+$kendo-spreadsheet-auto-fill-shadow: inset 0 0 0 1px $kendo-selected-bg !default;
+$kendo-spreadsheet-auto-fill-punch-bg: rgba( $kendo-spreadsheet-bg, .5 ) !default;
+
+$kendo-spreadsheet-cell-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-cell-padding-x: $kendo-spreadsheet-cell-padding-y !default;
+
+$kendo-spreadsheet-cell-editor-line-height: 20px !default;
+$kendo-spreadsheet-cell-editor-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-spreadsheet-cell-editor-padding-y: 0px !default;
+$kendo-spreadsheet-cell-editor-bg: $kendo-spreadsheet-bg !default;
+$kendo-spreadsheet-cell-editor-text: $kendo-spreadsheet-text !default;
+$kendo-spreadsheet-cell-editor-border: null !default;
+
+$kendo-spreadsheet-resize-handle-bg: $kendo-color-primary !default;
+
+$kendo-spreadsheet-cell-comment-border: $kendo-color-primary !default;
+
+$kendo-spreadsheet-cell-dirty-border: $kendo-color-error !default;
+
+$kendo-spreadsheet-sheets-bar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-bar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-spreadsheet-sheets-bar-border-width: 1px !default;
+
 $kendo-spreadsheet-insert-image-dialog-border-style: dashed !default;
 $kendo-spreadsheet-insert-image-dialog-border-width: 2px !default;
 $kendo-spreadsheet-insert-image-dialog-text-margin-bottom: 30px !default;
@@ -31,10 +97,8 @@ $kendo-spreadsheet-drawing-handle-outline-color: $kendo-color-primary !default;
 $kendo-spreadsheet-drawing-handle-border-color: $kendo-selected-bg !default;
 $kendo-spreadsheet-drawing-handle-bg: $kendo-color-primary !default;
 $kendo-spreadsheet-drawing-handle-border-radius: $kendo-border-radius-lg !default;
-
 $kendo-spreadsheet-drawing-outline-style: solid !default;
 $kendo-spreadsheet-drawing-outline-width: 2px !default;
-
 $kendo-spreadsheet-drawing-anchor-bg: rgba( $kendo-selected-bg, .25 ) !default;
 
 $kendo-spreadsheet-dropzone-spacing-y: k-map-get( $kendo-spacing, 4 ) !default;
