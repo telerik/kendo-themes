@@ -95,7 +95,7 @@ export const Pager = (
                     className={classNames(
                         'k-pager-nav'
                     )}
-                    focus
+                    disabled
                     fillMode="flat"
                     size={size}
                     rounded={null}
@@ -108,6 +108,7 @@ export const Pager = (
                             'k-pager-numbers'
                         )}>
                         <Button
+                            selected
                             fillMode="flat"
                             themeColor="primary"
                             size={size}
@@ -116,7 +117,6 @@ export const Pager = (
                         1
                         </Button>
                         <Button
-                            hover
                             fillMode="flat"
                             themeColor="primary"
                             size={size}
@@ -125,7 +125,6 @@ export const Pager = (
                         2
                         </Button>
                         <Button
-                            focus
                             fillMode="flat"
                             themeColor="primary"
                             size={size}
@@ -134,7 +133,6 @@ export const Pager = (
                         3
                         </Button>
                         <Button
-                            selected
                             fillMode="flat"
                             themeColor="primary"
                             size={size}
@@ -143,8 +141,6 @@ export const Pager = (
                         4
                         </Button>
                         <Button
-                            hover
-                            focus
                             fillMode="flat"
                             themeColor="primary"
                             size={size}
@@ -153,8 +149,6 @@ export const Pager = (
                         5
                         </Button>
                         <Button
-                            selected
-                            focus
                             fillMode="flat"
                             themeColor="primary"
                             size={size}
@@ -196,7 +190,6 @@ export const Pager = (
                     className={classNames(
                         'k-pager-nav'
                     )}
-                    hover
                     fillMode="flat"
                     size={size}
                     rounded={null}
