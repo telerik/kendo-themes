@@ -1,4 +1,4 @@
-import { RadioButton, RadioButtonLabel, RadioButtonInsideLabel } from '../../radio';
+import { RadioButton, RadioButtonWithLabelAfter, RadioButtonInsideLabel } from '../../radio';
 
 const styles = `
     .k-ripple-container .k-radio:focus::after,
@@ -19,14 +19,14 @@ export default () =>(
             {[ 'unchecked', ...RadioButton.states ].map((state) => (
                 <>
                     <div>
-                        <RadioButtonLabel id={'rad-' + [ state ]} { ...{ [state]: true }}>{state}</RadioButtonLabel>
+                        <RadioButtonWithLabelAfter id={'rad-' + [ state ]} { ...{ [state]: true }}>{state}</RadioButtonWithLabelAfter>
                     </div>
                     <div>
                         <RadioButtonInsideLabel { ...{ [state]: true }} >{state}</RadioButtonInsideLabel>
                     </div>
 
                     <div dir="rtl">
-                        <RadioButtonLabel id={'rad-' + [ state ] + '-rtl'} { ...{ [state]: true }}>{state}</RadioButtonLabel>
+                        <RadioButtonWithLabelAfter id={'rad-' + [ state ] + '-rtl'} { ...{ [state]: true }}>{state}</RadioButtonWithLabelAfter>
                     </div>
                     <div dir="rtl">
                         <RadioButtonInsideLabel { ...{ [state]: true }} >{state}</RadioButtonInsideLabel>
@@ -35,39 +35,39 @@ export default () =>(
             ))}
 
             <div>
-                <RadioButtonLabel id="rad-disabled-checked" disabled checked>disabled checked</RadioButtonLabel>
+                <RadioButtonWithLabelAfter id="rad-disabled-checked" disabled checked>disabled checked</RadioButtonWithLabelAfter>
             </div>
             <div>
                 <RadioButtonInsideLabel disabled checked >disabled checked</RadioButtonInsideLabel>
             </div>
             <div dir="rtl">
-                <RadioButtonLabel id="rad-disabled-checked-rtl" disabled checked>disabled checked</RadioButtonLabel>
+                <RadioButtonWithLabelAfter id="rad-disabled-checked-rtl" disabled checked>disabled checked</RadioButtonWithLabelAfter>
             </div>
             <div dir="rtl">
                 <RadioButtonInsideLabel disabled checked >disabled checked</RadioButtonInsideLabel>
             </div>
 
             <div className="k-ripple-container">
-                <RadioButtonLabel id="rad-ripple" focus>ripple</RadioButtonLabel>
+                <RadioButtonWithLabelAfter id="rad-ripple" focus>ripple</RadioButtonWithLabelAfter>
             </div>
             <div className="k-ripple-container">
                 <RadioButtonInsideLabel focus >ripple</RadioButtonInsideLabel>
             </div>
             <div className="k-ripple-container" dir="rtl">
-                <RadioButtonLabel id="rad-ripple-rtl" focus>ripple</RadioButtonLabel>
+                <RadioButtonWithLabelAfter id="rad-ripple-rtl" focus>ripple</RadioButtonWithLabelAfter>
             </div>
             <div className="k-ripple-container" dir="rtl">
                 <RadioButtonInsideLabel focus >ripple</RadioButtonInsideLabel>
             </div>
 
             <div>
-                <RadioButtonLabel id="rad-long" checked>Long label Vivamus a arcu lacus. Integer augue leo.</RadioButtonLabel>
+                <RadioButtonWithLabelAfter id="rad-long" checked>Long label Vivamus a arcu lacus. Integer augue leo.</RadioButtonWithLabelAfter>
             </div>
             <div>
                 <RadioButtonInsideLabel checked >Long label Vivamus a arcu lacus. Integer augue leo.</RadioButtonInsideLabel>
             </div>
             <div dir="rtl">
-                <RadioButtonLabel id="rad-long-rtl" checked>Long label Vivamus a arcu lacus. Integer augue leo.</RadioButtonLabel>
+                <RadioButtonWithLabelAfter id="rad-long-rtl" checked>Long label Vivamus a arcu lacus. Integer augue leo.</RadioButtonWithLabelAfter>
             </div>
             <div dir="rtl">
                 <RadioButtonInsideLabel checked >Long label Vivamus a arcu lacus. Integer augue leo.</RadioButtonInsideLabel>

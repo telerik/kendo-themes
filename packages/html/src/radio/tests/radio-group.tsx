@@ -1,4 +1,4 @@
-import { RadioGroup, RadioItem, RadioButtonLabel, RadioButtonInsideLabel, RadioButtonNormal } from '../../radio';
+import { RadioGroup, RadioItem, RadioButtonWithLabelAfter, RadioButtonInsideLabel, RadioButtonNormal } from '../../radio';
 
 const styles = `
     #test-area {
@@ -26,13 +26,13 @@ export default () => (
             </RadioGroup>
             <RadioGroup>
                 <RadioItem>
-                    <RadioButtonLabel id="rad-vertical-one" name="label-vertical">First</RadioButtonLabel>
+                    <RadioButtonWithLabelAfter id="rad-vertical-one" name="label-vertical">First</RadioButtonWithLabelAfter>
                 </RadioItem>
                 <RadioItem>
-                    <RadioButtonLabel id="rad-vertical-two" name="label-vertical">Second</RadioButtonLabel>
+                    <RadioButtonWithLabelAfter id="rad-vertical-two" name="label-vertical">Second</RadioButtonWithLabelAfter>
                 </RadioItem>
                 <RadioItem>
-                    <RadioButtonLabel id="rad-vertical-thee" name="label-vertical">Third</RadioButtonLabel>
+                    <RadioButtonWithLabelAfter id="rad-vertical-thee" name="label-vertical">Third</RadioButtonWithLabelAfter>
                 </RadioItem>
             </RadioGroup>
             <RadioGroup>
@@ -62,13 +62,13 @@ export default () => (
             </RadioGroup>
             <RadioGroup layout="horizontal">
                 <RadioItem>
-                    <RadioButtonLabel id="rad-horizontal-one" name="label-horizontal">First</RadioButtonLabel>
+                    <RadioButtonWithLabelAfter id="rad-horizontal-one" name="label-horizontal">First</RadioButtonWithLabelAfter>
                 </RadioItem>
                 <RadioItem>
-                    <RadioButtonLabel id="rad-horizontal-two" name="label-horizontal">Second</RadioButtonLabel>
+                    <RadioButtonWithLabelAfter id="rad-horizontal-two" name="label-horizontal">Second</RadioButtonWithLabelAfter>
                 </RadioItem>
                 <RadioItem>
-                    <RadioButtonLabel id="rad-horizontal-thee" name="label-horizontal">Third</RadioButtonLabel>
+                    <RadioButtonWithLabelAfter id="rad-horizontal-thee" name="label-horizontal">Third</RadioButtonWithLabelAfter>
                 </RadioItem>
             </RadioGroup>
             <RadioGroup layout="horizontal">
