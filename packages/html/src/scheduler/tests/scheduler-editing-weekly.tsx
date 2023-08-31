@@ -9,7 +9,7 @@ import { MultiSelect } from '../../multiselect';
 import { Form, FormField } from '../../form';
 import { ButtonGroup } from '../../button-group';
 import { NumericTextbox } from '../../numerictextbox';
-import { RadioButtonLabel, RadioGroup, RadioItem } from '../../radio';
+import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 import { DatePicker } from '../../datepicker';
 
 const style = `
@@ -98,15 +98,15 @@ export default () =>(
                                         <FormField label="End" editor={
                                             <RadioGroup>
                                                 <RadioItem>
-                                                    <RadioButtonLabel id="k-endrule-never">Never</RadioButtonLabel>
+                                                    <RadioButtonWithLabelAfter id="k-endrule-never">Never</RadioButtonWithLabelAfter>
                                                 </RadioItem>
                                                 <RadioItem>
-                                                    <RadioButtonLabel id="k-endrule-count" >After</RadioButtonLabel>
+                                                    <RadioButtonWithLabelAfter id="k-endrule-count" >After</RadioButtonWithLabelAfter>
                                                     <NumericTextbox className="k-recur-count" />
                                                     <span>occurrence(s)</span>
                                                 </RadioItem>
                                                 <RadioItem>
-                                                    <RadioButtonLabel id="k-endrule-until" >On</RadioButtonLabel>
+                                                    <RadioButtonWithLabelAfter id="k-endrule-until" >On</RadioButtonWithLabelAfter>
                                                     <DatePicker className="k-recur-until" disabled />
                                                 </RadioItem>
                                             </RadioGroup>

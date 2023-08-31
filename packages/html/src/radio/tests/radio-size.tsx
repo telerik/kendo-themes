@@ -1,4 +1,4 @@
-import { RadioButton, RadioButtonLabel } from '../../radio';
+import { RadioButton, RadioButtonWithLabelAfter } from '../../radio';
 
 const styles = `
     #test-area {
@@ -18,7 +18,7 @@ export default () =>(
                 <>
                     { RadioButton.options.size.map((size) => (
                         <section>
-                            <RadioButtonLabel id={'rad-' + [ state ] + '-' + [ size ]} { ...{ [state]: true }} size={size}>{state}</RadioButtonLabel>
+                            <RadioButtonWithLabelAfter id={'rad-' + [ state ] + '-' + [ size ]} { ...{ [state]: true }} size={size}>{state}</RadioButtonWithLabelAfter>
                         </section>
                     ))}
                 </>

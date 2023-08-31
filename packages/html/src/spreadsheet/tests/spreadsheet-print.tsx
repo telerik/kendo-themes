@@ -1,7 +1,7 @@
 import { Window } from '../../window';
 import { Button } from '../../button';
 import { Fieldset, Form, FormField } from '../../form';
-import { RadioButtonLabel, RadioGroup, RadioItem } from '../../radio';
+import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
@@ -53,13 +53,13 @@ export default () =>(
                                         editor={
                                             <RadioGroup layout="horizontal">
                                                 <RadioItem>
-                                                    <RadioButtonLabel>Auto</RadioButtonLabel>
+                                                    <RadioButtonWithLabelAfter>Auto</RadioButtonWithLabelAfter>
                                                 </RadioItem>
                                                 <RadioItem>
-                                                    <RadioButtonLabel>Portrait</RadioButtonLabel>
+                                                    <RadioButtonWithLabelAfter>Portrait</RadioButtonWithLabelAfter>
                                                 </RadioItem>
                                                 <RadioItem>
-                                                    <RadioButtonLabel>Landscape</RadioButtonLabel>
+                                                    <RadioButtonWithLabelAfter>Landscape</RadioButtonWithLabelAfter>
                                                 </RadioItem>
                                             </RadioGroup>
                                         }>
@@ -72,10 +72,10 @@ export default () =>(
                                         editor={
                                             <RadioGroup layout="horizontal">
                                                 <RadioItem>
-                                                    <RadioButtonLabel>All</RadioButtonLabel>
+                                                    <RadioButtonWithLabelAfter>All</RadioButtonWithLabelAfter>
                                                 </RadioItem>
                                                 <RadioItem>
-                                                    <RadioButtonLabel>Range</RadioButtonLabel>
+                                                    <RadioButtonWithLabelAfter>Range</RadioButtonWithLabelAfter>
                                                 </RadioItem>
                                             </RadioGroup>
                                         }>
