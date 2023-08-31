@@ -23,6 +23,7 @@ $kendo-is-dark-theme: false !default;
 // Root styles
 $kendo-body-bg: k-map-get( $theme, body-bg ) !default;
 $kendo-body-text: k-map-get( $theme, body-text ) !default;
+$kendo-body-shaded: k-try-shade($kendo-body-bg) !default;
 
 $kendo-subtle-text: k-map-get( $theme, subtle-text ) !default;
 
@@ -35,6 +36,8 @@ $kendo-disabled-text: k-map-get( $theme, disabled-text ) !default;
 
 $kendo-color-base: k-map-get( $theme, base-bg ) !default;
 $kendo-color-base-text: k-map-get( $theme, component-text ) !default;
+$kendo-color-base-text-lighter: k-true-mix($kendo-color-base-text, $kendo-body-bg, 65%) !default;
+$kendo-color-base-lighter: k-true-mix(#000000, $kendo-body-bg, 8%) !default;
 
 $kendo-color-primary: material-color( $primary-palette, main ) !default;
 $kendo-color-primary-text: material-color( $primary-palette, main-contrast ) !default;
