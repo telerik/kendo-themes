@@ -1,6 +1,6 @@
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
-import { CheckboxItem, CheckboxWithLabel, CheckboxGroup } from '../../checkbox';
+import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroup } from '../../checkbox';
 import { Textbox } from '../../textbox';
 import { Editor, EditorContent, EditorToolbar } from '../../editor';
 import { Window } from '../../window';
@@ -52,16 +52,16 @@ export default () =>(
                                 <FormField editor={
                                     <CheckboxGroup className="k-search-options">
                                         <CheckboxItem>
-                                            <CheckboxWithLabel>Match case</CheckboxWithLabel>
+                                            <CheckboxWithLabelAfter>Match case</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                         <CheckboxItem>
-                                            <CheckboxWithLabel>Match whole word only</CheckboxWithLabel>
+                                            <CheckboxWithLabelAfter>Match whole word only</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                         <CheckboxItem>
-                                            <CheckboxWithLabel>Match cyclic (Wrap around)</CheckboxWithLabel>
+                                            <CheckboxWithLabelAfter>Match cyclic (Wrap around)</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                         <CheckboxItem>
-                                            <CheckboxWithLabel>Regular Expression</CheckboxWithLabel>
+                                            <CheckboxWithLabelAfter>Regular Expression</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                     </CheckboxGroup>
                                 } />
@@ -102,16 +102,16 @@ export default () =>(
                                 <FormField editor={
                                     <CheckboxGroup className="k-search-options">
                                         <CheckboxItem>
-                                            <CheckboxWithLabel>Match case</CheckboxWithLabel>
+                                            <CheckboxWithLabelAfter>Match case</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                         <CheckboxItem>
-                                            <CheckboxWithLabel>Match whole word only</CheckboxWithLabel>
+                                            <CheckboxWithLabelAfter>Match whole word only</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                         <CheckboxItem>
-                                            <CheckboxWithLabel>Match cyclic (Wrap around)</CheckboxWithLabel>
+                                            <CheckboxWithLabelAfter>Match cyclic (Wrap around)</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                         <CheckboxItem>
-                                            <CheckboxWithLabel>Regular Expression</CheckboxWithLabel>
+                                            <CheckboxWithLabelAfter>Regular Expression</CheckboxWithLabelAfter>
                                         </CheckboxItem>
                                     </CheckboxGroup>
                                 } />

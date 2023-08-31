@@ -1,4 +1,4 @@
-import { CheckboxGroup, CheckboxItem, CheckboxWithLabel, CheckboxNormal } from '../../checkbox';
+import { CheckboxGroup, CheckboxItem, CheckboxWithLabelAfter, CheckboxNormal } from '../../checkbox';
 
 const styles = `
     #test-area {
@@ -25,13 +25,13 @@ export default () => (
             </CheckboxGroup>
             <CheckboxGroup>
                 <CheckboxItem>
-                    <CheckboxWithLabel id="ch1-vert">Option one</CheckboxWithLabel>
+                    <CheckboxWithLabelAfter id="ch1-vert">Option one</CheckboxWithLabelAfter>
                 </CheckboxItem>
                 <CheckboxItem>
-                    <CheckboxWithLabel id="ch2-vert">Option two</CheckboxWithLabel>
+                    <CheckboxWithLabelAfter id="ch2-vert">Option two</CheckboxWithLabelAfter>
                 </CheckboxItem>
                 <CheckboxItem>
-                    <CheckboxWithLabel id="ch3-vert">Option three</CheckboxWithLabel>
+                    <CheckboxWithLabelAfter id="ch3-vert">Option three</CheckboxWithLabelAfter>
                 </CheckboxItem>
             </CheckboxGroup>
             <span>Normal - horizontal</span>
@@ -49,13 +49,13 @@ export default () => (
             </CheckboxGroup>
             <CheckboxGroup layout="horizontal">
                 <CheckboxItem>
-                    <CheckboxWithLabel id="ch1-hor">Option one</CheckboxWithLabel>
+                    <CheckboxWithLabelAfter id="ch1-hor">Option one</CheckboxWithLabelAfter>
                 </CheckboxItem>
                 <CheckboxItem>
-                    <CheckboxWithLabel id="ch2-hor">Option two</CheckboxWithLabel>
+                    <CheckboxWithLabelAfter id="ch2-hor">Option two</CheckboxWithLabelAfter>
                 </CheckboxItem>
                 <CheckboxItem>
-                    <CheckboxWithLabel id="ch3-hor">Option three</CheckboxWithLabel>
+                    <CheckboxWithLabelAfter id="ch3-hor">Option three</CheckboxWithLabelAfter>
                 </CheckboxItem>
             </CheckboxGroup>
         </div>

@@ -1,4 +1,4 @@
-import { CheckboxWithLabel } from '../templates/checkbox-with-label';
+import { CheckboxWithLabelAfter } from '../templates/checkbox-with-label-after';
 import { CheckboxNormal } from '../templates/checkbox-normal';
 
 
@@ -20,7 +20,7 @@ export default () =>(
             <span dir="rtl">In label RTL</span>
 
             <div>
-                <CheckboxWithLabel id="ch1" checked >Checked</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="ch1" checked >Checked</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -29,7 +29,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="ch1-rtl" checked >Checked</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="ch1-rtl" checked >Checked</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
@@ -39,7 +39,7 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabel id="ch2" disabled checked >Checked</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="ch2" disabled checked >Checked</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -48,7 +48,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="ch2-rtl" disabled checked >Checked</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="ch2-rtl" disabled checked >Checked</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
@@ -58,7 +58,7 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabel id="ch3" >Unchecked</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="ch3" >Unchecked</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -67,7 +67,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="ch3-rtl" >Unchecked</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="ch3-rtl" >Unchecked</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
@@ -77,7 +77,7 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabel id="ch4" disabled >Unchecked</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="ch4" disabled >Unchecked</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -86,7 +86,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="ch4-rtl" disabled >Unchecked</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="ch4-rtl" disabled >Unchecked</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
@@ -96,7 +96,7 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabel id="chInd" indeterminate >Indeterminate</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chInd" indeterminate >Indeterminate</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -105,7 +105,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="chInd-rtl" indeterminate >Indeterminate</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chInd-rtl" indeterminate >Indeterminate</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
@@ -115,7 +115,7 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabel id="chIndDis" indeterminate disabled >Indeterminate</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chIndDis" indeterminate disabled >Indeterminate</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -124,7 +124,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="chIndDis-rtl" indeterminate disabled >Indeterminate</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chIndDis-rtl" indeterminate disabled >Indeterminate</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
@@ -134,7 +134,7 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabel id="chError" invalid required >Invalid</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chError" invalid required >Invalid</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -143,7 +143,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="chError-rtl" invalid required >Invalid</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chError-rtl" invalid required >Invalid</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
@@ -153,7 +153,7 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabel id="chFocus" focus >Focus</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chFocus" focus >Focus</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -162,7 +162,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="chFocus-rtl" focus >Focus</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chFocus-rtl" focus >Focus</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
@@ -172,7 +172,7 @@ export default () =>(
             </div>
 
             <div className="k-ripple-container">
-                <CheckboxWithLabel id="chRipple" focus >Ripple</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chRipple" focus >Ripple</CheckboxWithLabelAfter>
             </div>
             <div className="k-ripple-container">
                 <label className="k-checkbox-label">
@@ -181,7 +181,7 @@ export default () =>(
                 </label>
             </div>
             <div className="k-ripple-container" dir="rtl">
-                <CheckboxWithLabel id="chRipple-rtl" focus >Ripple</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chRipple-rtl" focus >Ripple</CheckboxWithLabelAfter>
             </div>
             <div className="k-ripple-container" dir="rtl">
                 <label className="k-checkbox-label">
@@ -191,7 +191,7 @@ export default () =>(
             </div>
 
             <div>
-                <CheckboxWithLabel id="chLong" checked >Long label Vivamus a arcu lacus. Integer augue leo.</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chLong" checked >Long label Vivamus a arcu lacus. Integer augue leo.</CheckboxWithLabelAfter>
             </div>
             <div>
                 <label className="k-checkbox-label">
@@ -200,7 +200,7 @@ export default () =>(
                 </label>
             </div>
             <div dir="rtl">
-                <CheckboxWithLabel id="chLong-rtl" checked >Long label Vivamus a arcu lacus. Integer augue leo.</CheckboxWithLabel>
+                <CheckboxWithLabelAfter id="chLong-rtl" checked >Long label Vivamus a arcu lacus. Integer augue leo.</CheckboxWithLabelAfter>
             </div>
             <div dir="rtl">
                 <label className="k-checkbox-label">
