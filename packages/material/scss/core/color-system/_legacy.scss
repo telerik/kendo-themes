@@ -97,10 +97,10 @@ $kendo-invalid-shadow: null !default;
     $kendo-color-primary-contrast: $_kendo-color-primary-text;
 
     $kendo-color-secondary: $_kendo-color-secondary;
-    $kendo-color-secondary-darker: $kendo-color-secondary-hover;
-    $kendo-color-secondary-contrast: $kendo-color-secondary-text;
+    $kendo-color-secondary-darker: $_kendo-color-secondary-hover;
+    $kendo-color-secondary-contrast: $_kendo-color-secondary-text;
 
-    $kendo-color-info: $kendo-color-info;
+    $kendo-color-info: $_kendo-color-info;
     $kendo-color-success: $kendo-color-success;
     $kendo-color-warning: $kendo-color-warning;
     $kendo-color-error: $kendo-color-error;

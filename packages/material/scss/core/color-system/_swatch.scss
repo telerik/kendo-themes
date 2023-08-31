@@ -60,6 +60,8 @@ $kendo-color-tertiary-hover: material-color( $tertiary-palette, darker ) !defaul
 $kendo-color-tertiary-active: null !default;
 
 $kendo-color-info: #0058e9 !default;
+$kendo-color-info-text: k-contrast-color($kendo-color-info) !default;
+
 $kendo-color-success: #37b400 !default;
 $kendo-color-warning: #ffc000 !default;
 $kendo-color-error: #f31700 !default;
