@@ -50,6 +50,9 @@ $kendo-color-secondary: material-color( $secondary-palette, main ) !default;
 $kendo-color-secondary-text: material-color( $secondary-palette, main-contrast ) !default;
 $kendo-color-secondary-hover: material-color( $secondary-palette, darker ) !default;
 $kendo-color-secondary-active: null !default;
+$kendo-color-secondary-light-mix: k-color-mix($kendo-color-secondary, $kendo-body-bg, 60%) !default;
+$kendo-color-secondary-pale: k-try-tint( $kendo-color-secondary, 4 ) !default;
+$kendo-color-secondary-dim: k-try-tint( $kendo-color-secondary ) !default;
 
 $kendo-color-tertiary: material-color($tertiary-palette, main) !default;
 $kendo-color-tertiary-text: material-color( $tertiary-palette, main-contrast ) !default;
