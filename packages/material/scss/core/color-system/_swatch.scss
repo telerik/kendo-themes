@@ -67,6 +67,8 @@ $kendo-color-success-text: k-contrast-color($kendo-color-success) !default;
 $kendo-color-success-dim: k-color-tint($kendo-color-success, 5) !default;
 
 $kendo-color-warning: #ffc000 !default;
+$kendo-color-warning-text: k-contrast-color($kendo-color-warning) !default;
+
 $kendo-color-error: #f31700 !default;
 
 $kendo-color-dark: get-base-hue( gray, 800 ) !default;
