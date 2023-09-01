@@ -1,4 +1,4 @@
-$kendo-new-colors: false;
+$kendo-new-colors: true;
 
 $primary-palette-name: indigo !default;
 $secondary-palette-name: pink !default;
@@ -88,4 +88,5 @@ $kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color
 
 $kendo-color-border: k-map-get( $theme, component-border ) !default;
 $kendo-color-border-hover: rgba( $kendo-color-border, .15 ) !default;
+$kendo-color-border-focus: k-try-shade($kendo-color-border, 2.5) !default;
 
