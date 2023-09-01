@@ -109,7 +109,7 @@ $kendo-invalid-shadow: null !default;
     $kendo-body-text: $_kendo-body-text;
     
     $kendo-base-bg: $_kendo-color-base;
-    $kendo-base-text: $kendo-color-base-text;
+    $kendo-base-text: $_kendo-color-base-text;
     $kendo-base-border: $kendo-color-border;
 
     $kendo-link-text: $kendo-color-secondary;
