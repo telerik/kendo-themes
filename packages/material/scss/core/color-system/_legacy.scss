@@ -106,9 +106,9 @@ $kendo-invalid-shadow: null !default;
     $kendo-color-error: $_kendo-color-error;
 
     $kendo-body-bg: $_kendo-body-bg;
-    $kendo-body-text: $kendo-body-text;
+    $kendo-body-text: $_kendo-body-text;
     
-    $kendo-base-bg: $kendo-color-base;
+    $kendo-base-bg: $_kendo-color-base;
     $kendo-base-text: $kendo-color-base-text;
     $kendo-base-border: $kendo-color-border;
 

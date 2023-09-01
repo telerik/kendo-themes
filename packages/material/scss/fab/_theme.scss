@@ -75,16 +75,16 @@
     // Hover state
     .k-fab-item.k-hover .k-fab-item-icon,
     .k-fab-item:hover .k-fab-item-icon {
-        border-color: k-true-mix( #000000, $kendo-fab-item-icon-border, 8%);
-        background-color: k-true-mix( #000000, $kendo-fab-item-icon-bg, 8%);
+        border-color: if($kendo-new-colors, $kendo-color-base-shaded, k-true-mix( #000000, $kendo-fab-item-icon-border, 8%));
+        background-color: if($kendo-new-colors, $kendo-color-base-shaded, k-true-mix( #000000, $kendo-fab-item-icon-bg, 8%));
         color: k-true-mix( #000000, $kendo-fab-item-icon-text, 8%);
     }
 
     // Focus state
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
-        border-color: k-true-mix( #000000, $kendo-fab-item-icon-border, 12%);
-        background-color: k-true-mix( #000000, $kendo-fab-item-icon-bg, 12%);
+        border-color: if($kendo-new-colors, $kendo-color-base-shaded, k-true-mix( #000000, $kendo-fab-item-icon-border, 12%));
+        background-color: if($kendo-new-colors, $kendo-color-base-shaded, k-true-mix( #000000, $kendo-fab-item-icon-bg, 12%));
         color: k-true-mix( #000000, $kendo-fab-item-icon-text, 12%);
     }
 
@@ -92,8 +92,8 @@
     .k-fab-item.k-active .k-fab-item-icon,
     .k-fab-item:active .k-fab-item-icon {
         @include box-shadow($kendo-fab-item-active-shadow);
-        border-color: k-true-mix( #ffffff, $kendo-fab-item-icon-border, 12%);
-        background-color: k-true-mix( #ffffff, $kendo-fab-item-icon-bg, 12%);
+        border-color: if($kendo-new-colors, $kendo-color-white, k-true-mix( #ffffff, $kendo-fab-item-icon-border, 12%));
+        background-color: if($kendo-new-colors, $kendo-color-white, k-true-mix( #ffffff, $kendo-fab-item-icon-border, 12%));
     }
 
     // Disabled state

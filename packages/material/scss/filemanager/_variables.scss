@@ -9,7 +9,7 @@ $kendo-file-manager-text: $kendo-component-text !default;
 $kendo-file-manager-border: $kendo-component-border !default;
 
 $kendo-file-manager-toolbar-border-width: $kendo-file-manager-border-width !default;
-$kendo-file-manager-toolbar-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
+$kendo-file-manager-toolbar-bg: if($kendo-new-colors, $kendo-color-base-hover, k-try-shade( $kendo-button-bg, .5 )) !default;
 $kendo-file-manager-toolbar-text: null !default;
 $kendo-file-manager-toolbar-border: null !default;
 $kendo-file-manager-toolbar-gradient: null !default;
