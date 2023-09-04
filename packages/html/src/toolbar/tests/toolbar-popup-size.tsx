@@ -1,5 +1,5 @@
 import { MenuItem, MenuSeparator, MenuList } from '../../menu';
-import { Popup } from '../../popup';
+import { ToolbarPopup } from '../../toolbar';
 
 
 const style = `
@@ -18,50 +18,19 @@ export default () =>(
             <span>Small</span>
             <span>Medium</span>
             <span>Large</span>
-
-            <section>
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList size="small">
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" disabled focus></MenuItem>
-                        <MenuSeparator></MenuSeparator>
-                        <MenuItem text="Item after separator"></MenuItem>
-                    </MenuList>
-                </Popup>
-            </section>
-            <section>
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList size="medium">
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" disabled focus></MenuItem>
-                        <MenuSeparator></MenuSeparator>
-                        <MenuItem text="Item after separator"></MenuItem>
-                    </MenuList>
-                </Popup>
-            </section>
-            <section>
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList size="large">
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" disabled focus></MenuItem>
-                        <MenuSeparator></MenuSeparator>
-                        <MenuItem text="Item after separator"></MenuItem>
-                    </MenuList>
-                </Popup>
-            </section>
-
+            { MenuList.options.size.map((size) => (
+                <section>
+                    <ToolbarPopup className="k-menu-popup">
+                        <MenuList size={size}>
+                            <MenuItem text="Item 1"></MenuItem>
+                            <MenuItem text="Item 2"></MenuItem>
+                            <MenuItem text="Item 3"></MenuItem>
+                            <MenuSeparator></MenuSeparator>
+                            <MenuItem text="Item after separator" icon="plus"></MenuItem>
+                        </MenuList>
+                    </ToolbarPopup>
+                </section>
+            ))}
         </div>
     </>
 );

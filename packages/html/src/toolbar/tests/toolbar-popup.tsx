@@ -1,5 +1,5 @@
 import { MenuItem, MenuSeparator, MenuList } from '../../menu';
-import { Popup } from '../../popup';
+import { ToolbarPopup } from '../../toolbar';
 
 
 const style = `
@@ -13,120 +13,70 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
-
-            <span>Button</span>
-            <span>Menu button</span>
-            <span>Split button</span>
-            <span>Button group</span>
-
+        <div id="test-area" className="k-d-grid k-grid-cols-3">
+            <span>Normal</span>
+            <span>With Icon</span>
+            <span>With Separator</span>
             <section>
-                <Popup className="k-toolbar-popup k-menu-popup">
+                <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" disabled focus></MenuItem>
+                        <MenuItem text="Item 1"></MenuItem>
+                        <MenuItem text="Item 2"></MenuItem>
+                        <MenuItem text="Item 3"></MenuItem>
+                    </MenuList>
+                </ToolbarPopup>
+            </section>
+            <section>
+                <ToolbarPopup className="k-menu-popup">
+                    <MenuList>
+                        <MenuItem text="Item 1" icon="plus"></MenuItem>
+                        <MenuItem text="Item 2" icon="plus"></MenuItem>
+                        <MenuItem text="Item 3" icon="plus"></MenuItem>
+                    </MenuList>
+                </ToolbarPopup>
+            </section>
+            <section>
+                <ToolbarPopup className="k-menu-popup">
+                    <MenuList>
+                        <MenuItem text="Item 1"></MenuItem>
+                        <MenuItem text="Item 2"></MenuItem>
+                        <MenuItem text="Item 3"></MenuItem>
                         <MenuSeparator></MenuSeparator>
-                        <MenuItem text="Item after separator"></MenuItem>
+                        <MenuItem text="Item after separator" icon="plus"></MenuItem>
                     </MenuList>
-                </Popup>
-            </section>
-            <section>
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList>
-                        <MenuItem text="MenuButton" disabled></MenuItem>
-                        <MenuItem text="Normal" icon="plus"></MenuItem>
-                        <MenuItem text="Hover" icon="plus" hover></MenuItem>
-                        <MenuItem text="Focus" icon="plus" focus></MenuItem>
-                        <MenuItem text="Active" icon="plus" active></MenuItem>
-                        <MenuItem text="Disabled" icon="plus" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" icon="plus" disabled focus></MenuItem>
-                    </MenuList>
-                </Popup>
-            </section>
-            <section>
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList>
-                        <MenuItem text="SplitButton"></MenuItem>
-                        <MenuItem text="Normal" icon="plus"></MenuItem>
-                        <MenuItem text="Hover" icon="plus" hover></MenuItem>
-                        <MenuItem text="Focus" icon="plus" focus></MenuItem>
-                        <MenuItem text="Active" icon="plus" active></MenuItem>
-                        <MenuItem text="Disabled" icon="plus" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" icon="plus" disabled focus></MenuItem>
-                    </MenuList>
-                </Popup>
-            </section>
-            <section>
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList>
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" disabled focus></MenuItem>
-                    </MenuList>
-                </Popup>
+                </ToolbarPopup>
             </section>
 
             <span className="k-colspan-all k-col-span-full">rtl</span>
             <section className="k-rtl" dir="rtl">
-                <Popup className="k-toolbar-popup k-menu-popup">
+                <ToolbarPopup className="k-menu-popup">
                     <MenuList>
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" disabled focus></MenuItem>
+                        <MenuItem text="Item 1"></MenuItem>
+                        <MenuItem text="Item 2"></MenuItem>
+                        <MenuItem text="Item 3"></MenuItem>
+                    </MenuList>
+                </ToolbarPopup>
+            </section>
+            <section className="k-rtl" dir="rtl">
+                <ToolbarPopup className="k-menu-popup">
+                    <MenuList>
+                        <MenuItem text="Item 1" icon="plus"></MenuItem>
+                        <MenuItem text="Item 2" icon="plus"></MenuItem>
+                        <MenuItem text="Item 3" icon="plus"></MenuItem>
+                    </MenuList>
+                </ToolbarPopup>
+            </section>
+            <section className="k-rtl" dir="rtl">
+                <ToolbarPopup className="k-menu-popup">
+                    <MenuList>
+                        <MenuItem text="Item 1"></MenuItem>
+                        <MenuItem text="Item 2"></MenuItem>
+                        <MenuItem text="Item 3"></MenuItem>
                         <MenuSeparator></MenuSeparator>
-                        <MenuItem text="Item after separator"></MenuItem>
+                        <MenuItem text="Item after separator" icon="plus"></MenuItem>
                     </MenuList>
-                </Popup>
+                </ToolbarPopup>
             </section>
-            <section className="k-rtl" dir="rtl">
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList>
-                        <MenuItem text="MenuButton" disabled></MenuItem>
-                        <MenuItem text="Normal" icon="plus"></MenuItem>
-                        <MenuItem text="Hover" icon="plus" hover></MenuItem>
-                        <MenuItem text="Focus" icon="plus" focus></MenuItem>
-                        <MenuItem text="Active" icon="plus" active></MenuItem>
-                        <MenuItem text="Disabled" icon="plus" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" icon="plus" disabled focus></MenuItem>
-                    </MenuList>
-                </Popup>
-            </section>
-            <section className="k-rtl" dir="rtl">
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList>
-                        <MenuItem text="SplitButton"></MenuItem>
-                        <MenuItem text="Normal" icon="plus"></MenuItem>
-                        <MenuItem text="Hover" icon="plus" hover></MenuItem>
-                        <MenuItem text="Focus" icon="plus" focus></MenuItem>
-                        <MenuItem text="Active" icon="plus" active></MenuItem>
-                        <MenuItem text="Disabled" icon="plus" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" icon="plus" disabled focus></MenuItem>
-                    </MenuList>
-                </Popup>
-            </section>
-            <section className="k-rtl" dir="rtl">
-                <Popup className="k-toolbar-popup k-menu-popup">
-                    <MenuList>
-                        <MenuItem text="Normal"></MenuItem>
-                        <MenuItem text="Hover" hover></MenuItem>
-                        <MenuItem text="Focus" focus></MenuItem>
-                        <MenuItem text="Active" active></MenuItem>
-                        <MenuItem text="Disabled" disabled></MenuItem>
-                        <MenuItem text="Disabled focus" disabled focus></MenuItem>
-                    </MenuList>
-                </Popup>
-            </section>
-
         </div>
     </>
 );

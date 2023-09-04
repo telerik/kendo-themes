@@ -2,7 +2,7 @@ import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { ActionSheet, ActionSheetHeader } from '../../action-sheet';
 import { MenuItem, MenuSeparator, MenuList } from '../../menu';
-import { Toolbar } from '..';
+import { ToolbarResizable } from '..';
 
 const styles = `
     #test-area {
@@ -26,14 +26,14 @@ export default () =>(
             <span className="k-colspan-all k-col-span-full">Screen width &lt;= 500px</span>
             <section className="k-colspan-all k-col-span-full">
 
-                <Toolbar size="large" resizable>
+                <ToolbarResizable size="large" >
                     <ButtonGroup>
                         <Button size="large" icon="align-left">Left</Button>
                         <Button size="large" icon="align-center">Center</Button>
                         <Button size="large" icon="align-right">Right</Button>
                     </ButtonGroup>
                     <Button size="large" icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
-                </Toolbar>
+                </ToolbarResizable>
                 <ActionSheet adaptive={true} overlay={false}>
                     <ActionSheetHeader title="Toolbar title" className="k-text-center" />
                     <MenuList size="large">
