@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.8.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.7.1-dev.1...v6.8.0-dev.0) (2023-09-04)
+
+
+### Bug Fixes
+
+* **input:** remove background from flat pickers in fluent ([23eceaa](https://github.com/telerik/kendo-themes/commit/23eceaa579168e68451fdce70fa7fd88f9b516b0))
+
+
+### Features
+
+* **spreadsheet:** implement styles for new design ([72cc8ac](https://github.com/telerik/kendo-themes/commit/72cc8ac4654cc6f1a6810cadb1bd4bd6f1f2981a))
+* **toolbar:** add styles for flat toolbar ([545e003](https://github.com/telerik/kendo-themes/commit/545e003b8fb64e93086cde8fb15d7d6b3739e42b))
+
+
+
+
+
 ## [6.7.1-dev.1](https://github.com/telerik/kendo-themes/compare/v6.7.1-dev.0...v6.7.1-dev.1) (2023-08-30)
 
 **Note:** Version bump only for package kendo-themes.repo
