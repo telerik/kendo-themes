@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { SplitButton } from '../../split-button';
 import { MenuButton } from '../../menu-button';
-import { ToolbarAngular, ToolbarSeparator } from '../../toolbar';
+import { ToolbarAngularNormal, ToolbarSeparator } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
 
 export default () =>(
@@ -10,7 +10,7 @@ export default () =>(
 
             <span className="k-colspan-all k-col-span-full">Angular specific rendering and spacing</span>
             <section className="k-colspan-all k-col-span-full">
-                <ToolbarAngular>
+                <ToolbarAngularNormal>
                     <Button>Button</Button>
                     <div className="k-toolbar-renderer">
                         <ToolbarSeparator></ToolbarSeparator>
@@ -29,7 +29,7 @@ export default () =>(
                         <Button icon="align-right"></Button>
                         <Button icon="align-justify"></Button>
                     </ButtonGroup>
-                </ToolbarAngular>
+                </ToolbarAngularNormal>
             </section>
 
 
@@ -37,7 +37,7 @@ export default () =>(
             <span>rtl</span>
 
             <section>
-                <ToolbarAngular>
+                <ToolbarAngularNormal>
                     <Button>Button</Button>
                     <SplitButton>Split button</SplitButton>
                     <MenuButton text="Menu button"></MenuButton>
@@ -47,10 +47,10 @@ export default () =>(
                         <Button icon="align-right">Right</Button>
                         <Button icon="align-justify">Justify</Button>
                     </ButtonGroup>
-                </ToolbarAngular>
+                </ToolbarAngularNormal>
             </section>
             <section dir="rtl">
-                <ToolbarAngular>
+                <ToolbarAngularNormal>
                     <Button>Button</Button>
                     <SplitButton>Split button</SplitButton>
                     <MenuButton text="Menu button"></MenuButton>
@@ -60,7 +60,7 @@ export default () =>(
                         <Button icon="align-right">Right</Button>
                         <Button icon="align-justify">Justify</Button>
                     </ButtonGroup>
-                </ToolbarAngular>
+                </ToolbarAngularNormal>
             </section>
 
         </div>

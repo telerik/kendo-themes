@@ -4,7 +4,7 @@ import { MenuButton } from '../../menu-button';
 import { ColorPicker } from '../../colorpicker';
 import { Switch } from '../../switch';
 import { ButtonGroup } from '../../button-group';
-import { Toolbar, ToolbarItem, ToolbarSeparator } from '../../toolbar';
+import { ToolbarNormal, ToolbarResizable, ToolbarItem, ToolbarSeparator } from '../../toolbar';
 
 
 export default () =>(
@@ -13,7 +13,7 @@ export default () =>(
 
             <span className="k-colspan-all k-col-span-full">Toolbar</span>
             <section className="k-colspan-all k-col-span-full">
-                <Toolbar resizable>
+                <ToolbarResizable>
                     <Button icon="bold"></Button>
                     <Button>Button</Button>
                     <Button className="k-toggle-button">Toggle</Button>
@@ -32,12 +32,12 @@ export default () =>(
                     </ToolbarItem>
                     <Switch checked />
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
-                </Toolbar>
+                </ToolbarResizable>
             </section>
 
             <span className="k-colspan-all k-col-span-full">RTL</span>
             <section className="k-colspan-all k-col-span-full" dir="rtl">
-                <Toolbar resizable>
+                <ToolbarResizable>
                     <Button icon="bold"></Button>
                     <Button>Button</Button>
                     <Button className="k-toggle-button">Toggle</Button>
@@ -56,13 +56,13 @@ export default () =>(
                     </ToolbarItem>
                     <Switch checked />
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
-                </Toolbar>
+                </ToolbarResizable>
             </section>
 
 
             <span className="k-colspan-all k-col-span-full">Button states</span>
             <section className="k-colspan-all k-col-span-full">
-                <Toolbar resizable>
+                <ToolbarResizable>
                     <Button>Normal</Button>
                     <Button hover>Hover</Button>
                     <Button focus>Focus</Button>
@@ -77,10 +77,10 @@ export default () =>(
                     <Button icon="bold" selected></Button>
                     <Button icon="bold" disabled></Button>
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} hover></Button>
-                </Toolbar>
+                </ToolbarResizable>
             </section>
             <section className="k-colspan-all k-col-span-full">
-                <Toolbar resizable>
+                <ToolbarResizable>
                     <Button icon="align-left" className="k-toggle-button">Normal</Button>
                     <Button icon="align-left" className="k-toggle-button" hover>Hover</Button>
                     <Button icon="align-left" className="k-toggle-button" focus>Focus</Button>
@@ -88,10 +88,10 @@ export default () =>(
                     <Button icon="align-left" className="k-toggle-button" selected>Selected</Button>
                     <Button icon="align-left" className="k-toggle-button" disabled>Disabled</Button>
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} focus></Button>
-                </Toolbar>
+                </ToolbarResizable>
             </section>
             <section className="k-colspan-all k-col-span-full">
-                <Toolbar resizable>
+                <ToolbarResizable>
                     <Button themeColor="primary" icon="align-left">Normal</Button>
                     <Button themeColor="primary" icon="align-left" hover>Hover</Button>
                     <Button themeColor="primary" icon="align-left" focus>Focus</Button>
@@ -99,12 +99,12 @@ export default () =>(
                     <Button themeColor="primary" icon="align-left" selected>Selected</Button>
                     <Button themeColor="primary" icon="align-left" disabled>Disabled</Button>
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} active></Button>
-                </Toolbar>
+                </ToolbarResizable>
             </section>
 
             <span className="k-colspan-all k-col-span-full">Disabled focus state of buttons</span>
             <section className="k-colspan-all k-col-span-full">
-                <Toolbar resizable>
+                <ToolbarResizable>
                     <Button disabled focus>Button</Button>
                     <MenuButton disabled focus text="Menu button"></MenuButton>
                     <SplitButton disabled focus>Split button</SplitButton>
@@ -113,13 +113,13 @@ export default () =>(
                         <Button icon="align-center" disabled>Button 2</Button>
                     </ButtonGroup>
                     <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} disabled focus></Button>
-                </Toolbar>
+                </ToolbarResizable>
             </section>
 
             <span>wrapped</span>
             <span>wrapped rtl</span>
             <section>
-                <Toolbar>
+                <ToolbarNormal>
                     <Button>Button</Button>
                     <MenuButton text="Menu button"></MenuButton>
                     <SplitButton>Split button</SplitButton>
@@ -129,11 +129,11 @@ export default () =>(
                         <Button icon="align-right">Right</Button>
                         <Button icon="align-justify">Justify</Button>
                     </ButtonGroup>
-                </Toolbar>
+                </ToolbarNormal>
             </section>
 
             <section dir="rtl">
-                <Toolbar>
+                <ToolbarNormal>
                     <Button>Button</Button>
                     <SplitButton>Split button</SplitButton>
                     <MenuButton text="Menu button"></MenuButton>
@@ -143,7 +143,7 @@ export default () =>(
                         <Button icon="align-right">Right</Button>
                         <Button icon="align-justify">Justify</Button>
                     </ButtonGroup>
-                </Toolbar>
+                </ToolbarNormal>
             </section>
 
         </div>

@@ -12,83 +12,59 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <span>Button</span>
-            <span>Menu button</span>
-            <span>Split button</span>
-            <span>Button group</span>
+            <span>Normal</span>
+            <span>With Icon</span>
+            <span>With Separator</span>
 
             <section>
                 <div className="k-animation-container k-overflow-wrapper">
                     <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
                         <li className="k-item">
-                            <Button className="k-overflow-button">Normal</Button>
+                            <Button className="k-overflow-button">Item 1</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" hover>Hover</Button>
+                            <Button className="k-overflow-button">Item 2</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" focus>Focus</Button>
+                            <Button className="k-overflow-button">Item 3</Button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div className="k-animation-container">
+                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
+                        <li className="k-item">
+                            <Button className="k-overflow-button" icon="plus">Item 1</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" active>Active</Button>
+                            <Button className="k-overflow-button" icon="plus">Item 2</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" disabled>Disabled</Button>
+                            <Button className="k-overflow-button" icon="plus">Item 3</Button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div className="k-animation-container">
+                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
+                        <li className="k-item">
+                            <Button className="k-overflow-button">Item 1</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" disabled focus>Disabled focus</Button>
+                            <Button className="k-overflow-button">Item 2</Button>
+                        </li>
+                        <li className="k-item">
+                            <Button className="k-overflow-button">Item 3</Button>
                         </li>
                         <li className="k-item">
                             <div className="k-separator k-separator-horizontal"></div>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button">Item after separator</Button>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <div className="k-animation-container">
-                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
-                        <li className="k-item">
-                            <Button className="k-overflow-button" disabled>MenuButton</Button>
-                            <Button className="k-overflow-button" icon="plus">Normal</Button>
-                            <Button className="k-overflow-button" icon="plus" hover>Hover</Button>
-                            <Button className="k-overflow-button" icon="plus" focus>Focus</Button>
-                            <Button className="k-overflow-button" icon="plus" active>Active</Button>
-                            <Button className="k-overflow-button" icon="plus" disabled>Disabled</Button>
-                            <Button className="k-overflow-button" icon="plus" disabled focus>Disabled focus</Button>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <div className="k-animation-container">
-                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
-                        <li className="k-item">
-                            <Button className="k-overflow-button">SplitButton</Button>
-                            <Button className="k-overflow-button" icon="plus">Normal</Button>
-                            <Button className="k-overflow-button" icon="plus" hover>Hover</Button>
-                            <Button className="k-overflow-button" icon="plus" focus>Focus</Button>
-                            <Button className="k-overflow-button" icon="plus" active>Active</Button>
-                            <Button className="k-overflow-button" icon="plus" disabled>Disabled</Button>
-                            <Button className="k-overflow-button" icon="plus" disabled focus>Disabled focus</Button>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <div className="k-animation-container k-overflow-wrapper">
-                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
-                        <li className="k-button-group k-overflow-group k-item">
-                            <Button className="k-overflow-button">Normal</Button>
-                            <Button className="k-overflow-button" hover>Hover</Button>
-                            <Button className="k-overflow-button" focus>Focus</Button>
-                            <Button className="k-overflow-button" active>Active</Button>
-                            <Button className="k-overflow-button" disabled>Disabled</Button>
-                            <Button className="k-overflow-button" disabled focus>Disabled focus</Button>
+                            <Button className="k-overflow-button" icon="plus">Item after separator</Button>
                         </li>
                     </ul>
                 </div>
@@ -99,77 +75,53 @@ export default () =>(
                 <div className="k-animation-container k-overflow-wrapper">
                     <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
                         <li className="k-item">
-                            <Button className="k-overflow-button">Normal</Button>
+                            <Button className="k-overflow-button">Item 1</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" hover>Hover</Button>
+                            <Button className="k-overflow-button">Item 2</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" focus>Focus</Button>
+                            <Button className="k-overflow-button">Item 3</Button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section className="k-rtl" dir="rtl">
+                <div className="k-animation-container">
+                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
+                        <li className="k-item">
+                            <Button className="k-overflow-button" icon="plus">Item 1</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" active>Active</Button>
+                            <Button className="k-overflow-button" icon="plus">Item 2</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" disabled>Disabled</Button>
+                            <Button className="k-overflow-button" icon="plus">Item 3</Button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section className="k-rtl" dir="rtl">
+                <div className="k-animation-container">
+                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
+                        <li className="k-item">
+                            <Button className="k-overflow-button">Item 1</Button>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button" disabled focus>Disabled focus</Button>
+                            <Button className="k-overflow-button">Item 2</Button>
+                        </li>
+                        <li className="k-item">
+                            <Button className="k-overflow-button">Item 3</Button>
                         </li>
                         <li className="k-item">
                             <div className="k-separator k-separator-horizontal"></div>
                         </li>
                         <li className="k-item">
-                            <Button className="k-overflow-button">Item after separator</Button>
+                            <Button className="k-overflow-button" icon="plus">Item after separator</Button>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section className="k-rtl" dir="rtl">
-                <div className="k-animation-container">
-                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
-                        <li className="k-item">
-                            <Button className="k-overflow-button" disabled>MenuButton</Button>
-                            <Button className="k-overflow-button" icon="plus">Normal</Button>
-                            <Button className="k-overflow-button" icon="plus" hover>Hover</Button>
-                            <Button className="k-overflow-button" icon="plus" focus>Focus</Button>
-                            <Button className="k-overflow-button" icon="plus" active>Active</Button>
-                            <Button className="k-overflow-button" icon="plus" disabled>Disabled</Button>
-                            <Button className="k-overflow-button" icon="plus" disabled focus>Disabled focus</Button>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section className="k-rtl" dir="rtl">
-                <div className="k-animation-container">
-                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
-                        <li className="k-item">
-                            <Button className="k-overflow-button">SplitButton</Button>
-                            <Button className="k-overflow-button" icon="plus">Normal</Button>
-                            <Button className="k-overflow-button" icon="plus" hover>Hover</Button>
-                            <Button className="k-overflow-button" icon="plus" focus>Focus</Button>
-                            <Button className="k-overflow-button" icon="plus" active>Active</Button>
-                            <Button className="k-overflow-button" icon="plus" disabled>Disabled</Button>
-                            <Button className="k-overflow-button" icon="plus" disabled focus>Disabled focus</Button>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section className="k-rtl" dir="rtl">
-                <div className="k-animation-container k-overflow-wrapper">
-                    <ul className="k-reset k-popup k-group k-list-container k-overflow-container">
-                        <li className="k-button-group k-overflow-group k-item">
-                            <Button className="k-overflow-button">Normal</Button>
-                            <Button className="k-overflow-button" hover>Hover</Button>
-                            <Button className="k-overflow-button" focus>Focus</Button>
-                            <Button className="k-overflow-button" active>Active</Button>
-                            <Button className="k-overflow-button" disabled>Disabled</Button>
-                            <Button className="k-overflow-button" disabled focus>Disabled focus</Button>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
         </div>
     </>
 );

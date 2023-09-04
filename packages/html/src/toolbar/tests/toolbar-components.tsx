@@ -3,7 +3,7 @@ import { SplitButton } from '../../split-button';
 import { MenuButton } from '../../menu-button';
 import { DropdownList } from '../../dropdownlist';
 import { Combobox } from '../../combobox';
-import { Toolbar } from '../../toolbar';
+import { ToolbarNormal } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
 
 export default () =>(
@@ -12,28 +12,28 @@ export default () =>(
 
             <span>Menu button</span>
             <section>
-                <Toolbar>
+                <ToolbarNormal>
                     <MenuButton text="Normal"></MenuButton>
                     <MenuButton hover text="Hover"></MenuButton>
                     <MenuButton focus text="Focus"></MenuButton>
                     <MenuButton disabled text="Disabled"></MenuButton>
-                </Toolbar>
+                </ToolbarNormal>
             </section>
 
 
             <span>Split button</span>
             <section>
-                <Toolbar>
+                <ToolbarNormal>
                     <SplitButton>Normal</SplitButton>
                     <SplitButton hover>Hover</SplitButton>
                     <SplitButton focus>Focus</SplitButton>
                     <SplitButton disabled>Disabled</SplitButton>
-                </Toolbar>
+                </ToolbarNormal>
             </section>
 
             <span>Button group</span>
             <section>
-                <Toolbar>
+                <ToolbarNormal>
                     <ButtonGroup>
                         <Button icon="align-left">Normal</Button>
                         <Button icon="align-center" hover>Hover</Button>
@@ -46,12 +46,12 @@ export default () =>(
                         <Button>Adjacent</Button>
                         <Button>Button group</Button>
                     </ButtonGroup>
-                </Toolbar>
+                </ToolbarNormal>
             </section>
 
             <span>Dropdownlist in Toolbar</span>
             <section>
-                <Toolbar>
+                <ToolbarNormal>
                     <div>
                         <DropdownList value="Normal" />
                     </div>
@@ -64,13 +64,13 @@ export default () =>(
                     <div>
                         <DropdownList value="Disabled" disabled />
                     </div>
-                </Toolbar>
+                </ToolbarNormal>
             </section>
 
 
             <span>Combobox in Toolbar</span>
             <section>
-                <Toolbar>
+                <ToolbarNormal>
                     <div>
                         <Combobox value="Normal" />
                     </div>
@@ -83,7 +83,7 @@ export default () =>(
                     <div>
                         <Combobox value="Disabled" disabled />
                     </div>
-                </Toolbar>
+                </ToolbarNormal>
             </section>
 
         </div>
