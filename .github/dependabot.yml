@@ -12,3 +12,12 @@ updates:
         dependency-type: "direct"
     reviewers:
       - "telerik/kendo-front-end"
+    groups:
+      dev-dependencies:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "sass*"
+      sass-dependencies:
+        patterns:
+          - "sass*"
