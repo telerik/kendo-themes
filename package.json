@@ -73,6 +73,9 @@
     "update": "npx npm-check-updates --upgrade",
     "test-contrast": "node ./scripts/test-contrast.mjs"
   },
+  "engines": {
+    "node": "^18"
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint",
     "*.{css,scss}": "stylelint"
