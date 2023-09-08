@@ -29,7 +29,7 @@ export const ColorInput = (
     return (
         <div className={classNames(COLOR_INPUT_CLASSNAME, 'k-hstack')}>
             <div className="k-vstack">
-                <Button fillMode="flat" icon="caret-alt-expand" className="k-cologradient-toggle-mode" />
+                <Button fillMode="flat" icon="caret-alt-expand" className="k-colorgradient-toggle-mode" />
             </div>
             { mode === 'rgba' &&
                 <>
