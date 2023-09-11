@@ -4,7 +4,12 @@ module.exports = {
     ],
     build: [
         {
-            entry: [ 'scss/!(common|styling)*/_index.scss' ]
+            entry: [ 'scss/!(common|styling)*/_index.scss' ],
+            sassOptions: {
+                loadPaths: [
+                    '../../node_modules/'
+                ]
+            }
         }
     ]
 };

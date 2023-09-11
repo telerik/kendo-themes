@@ -19,7 +19,7 @@
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/classic",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-themes.git",
+    "url": "git+https://github.com/telerik/kendo-themes.git",
     "directory": "packages/classic"
   },
   "bugs": {
@@ -40,7 +40,9 @@
     "build": "sass-build",
     "watch": "node ../../scripts/watch-theme",
     "sass": "sass-build",
+    "sass:flat": "gulp dist:flat && sass-build -c sass-flat.config.js",
     "sass:standalone": "sass-build -c sass-standalone.config.js",
+    "sass:swatches": "gulp dist:swatches && sass-build -c sass-swatches.config.js",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
@@ -54,5 +56,10 @@
     "@progress/kendo-theme-core": "7.0.2-dev.1",
     "@progress/kendo-theme-default": "7.0.2-dev.1",
     "@progress/kendo-theme-utils": "7.0.2-dev.1"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }

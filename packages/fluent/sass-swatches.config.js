@@ -4,8 +4,9 @@ module.exports = {
     ],
     build: [
         {
-            file: 'scss/index.import.scss',
-            outFile: 'dist/index.css',
+            entry: [ 'dist/!(_|variables)*.scss' ],
+            api: "modern",
+            compiler: "sass",
             sassOptions: {
                 loadPaths: [
                     '../../node_modules/'

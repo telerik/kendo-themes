@@ -67,9 +67,6 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
-      - name: Bootstrap
-        run: npm run bootstrap
-
       - name: Build themes for dist
         run: |
           npm run sass:flat

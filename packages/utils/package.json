@@ -20,7 +20,7 @@
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-themes.git",
+    "url": "git+https://github.com/telerik/kendo-themes.git",
     "directory": "packages/utils"
   },
   "bugs": {
@@ -33,6 +33,7 @@
     "build": "sass-build",
     "watch": "node ../../scripts/watch-theme",
     "sass": "sass-build",
+    "sass:flat": "gulp dist:flat && sass-build -c sass-flat.config.js",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
@@ -43,5 +44,9 @@
   },
   "dependencies": {
     "@progress/kendo-theme-core": "7.0.2-dev.1"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {}
 }
