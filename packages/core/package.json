@@ -19,7 +19,7 @@
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/core",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-themes.git",
+    "url": "git+https://github.com/telerik/kendo-themes.git",
     "directory": "packages/core"
   },
   "bugs": {
@@ -32,6 +32,7 @@
     "build": "sass-build",
     "watch": "node ../../scripts/watch-theme",
     "sass": "sass-build",
+    "sass:flat": "gulp dist:flat && sass-build -c sass-flat.config.js",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
@@ -39,5 +40,9 @@
     "nuget-push": "nuget push *.nupkg -ApiKey $NUGET_API_KEY -Source $NUGET_FEED -SkipDuplicate",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for core theme'"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {}
 }

@@ -35,10 +35,6 @@ jobs:
         run: |
           npm ci --no-optional --no-audit --no-fund
 
-      - name: Bootstrap
-        run: |
-          npx lerna bootstrap --ignore @progress/kendo-themes-html
-
       - name: Build test assets
         run: |
           npm run sass

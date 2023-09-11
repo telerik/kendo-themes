@@ -40,10 +40,6 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
-      - name: Bootstrap
-        run: |
-          npm run bootstrap
-
       - name: Lint scripts
         run: |
           npm run eslint

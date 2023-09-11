@@ -23,10 +23,11 @@
     "src/**/**.ts",
     "src/**/**.tsx"
   ],
+  "main": "index.js",
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-themes.git",
+    "url": "git+https://github.com/telerik/kendo-themes.git",
     "directory": "packages/html"
   },
   "bugs": {
