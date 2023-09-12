@@ -19891,33 +19891,33 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-pdf-viewer-search-dialog-padding-x</td>
+    <td>$kendo-pdf-viewer-search-panel-padding-x</td>
     <td></td>
     <td><code>map.get( $kendo-spacing, 3 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PDF viewer search dialog.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PDF viewer search panel.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-pdf-viewer-search-dialog-padding-y</td>
+    <td>$kendo-pdf-viewer-search-panel-padding-y</td>
     <td></td>
-    <td><code>$kendo-pdf-viewer-search-dialog-padding-x</code></td>
+    <td><code>$kendo-pdf-viewer-search-panel-padding-x</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PDF viewer search dialog.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PDF viewer search panel.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-pdf-viewer-search-dialog-spacing</td>
+    <td>$kendo-pdf-viewer-search-panel-spacing</td>
     <td></td>
     <td><code>map.get( $kendo-spacing, 2 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the PDF viewer search dialog.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the PDF viewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -19993,7 +19993,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-pdf-viewer-search-panel-margin-y</td>
     <td></td>
-    <td><code>calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-dialog-padding-y} ) ) * -1 )</code></td>
+    <td><code>calc( ( #{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} ) ) * -1 )</code></td>
     <td></td>
 </tr>
 <tr>
