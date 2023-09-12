@@ -23,7 +23,7 @@ export default () =>(
                     <Button fillMode="flat" icon="print"></Button>
                     <Button fillMode="flat" icon="fullscreen"></Button>
                 </Toolbar>
-                <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto">
+                <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto k-enable-text-select">
                     <div className="k-search-panel k-pos-sticky k-top-center">
                         <Button fillMode="flat" icon="handle-drag" className="k-search-dialog-draghandle"></Button>
                         <Textbox

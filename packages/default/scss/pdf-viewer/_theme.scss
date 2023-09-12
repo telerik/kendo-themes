@@ -66,10 +66,6 @@
         @include box-shadow( $kendo-pdf-viewer-search-panel-shadow );
     }
 
-    .k-search-container {
-        @extend .k-search-panel !optional;
-    }
-
 }
 
 

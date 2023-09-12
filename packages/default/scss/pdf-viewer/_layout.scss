@@ -42,19 +42,17 @@
             flex: 1 1 auto;
             outline: none;
 
-            .k-enable-text-select,
             &.k-enable-text-select {
                 user-select: text;
                 cursor: text;
             }
 
-            .k-enable-panning,
             &.k-enable-panning {
                 cursor: grab;
-            }
-            .k-enable-panning span::selection,
-            &.k-enable-panning span::selection {
-                background-color: transparent;
+
+                span::selection {
+                    background-color: transparent;
+                }
             }
         }
 
@@ -87,10 +85,6 @@
                     color: transparent;
                 }
 
-                mark {
-                    color: transparent;
-                }
-
                 .k-search-highlight-mark {
                     color: transparent;
                 }
@@ -118,19 +112,22 @@
     }
 
     // Search
-    .k-pdf-viewer-search-dialog {
-        padding: 0 !important; // stylelint-disable-line declaration-no-important
-    }
-
-    .k-search-panel {
-        padding-block: $kendo-pdf-viewer-search-dialog-padding-y;
-        padding-inline: $kendo-pdf-viewer-search-dialog-padding-x;
+    .k-pdf-viewer-canvas > .k-search-panel {
+        width: max-content;
+        margin-top: calc( (#{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} )) * -1 );
+        padding-block: $kendo-pdf-viewer-search-panel-padding-y;
+        padding-inline: $kendo-pdf-viewer-search-panel-padding-x;
+        border-width: $kendo-pdf-viewer-search-panel-border-width;
+        border-style: solid;
+        border-radius: $kendo-pdf-viewer-search-panel-border-radius;
         display: flex;
-        gap: $kendo-pdf-viewer-search-dialog-spacing;
+        gap: $kendo-pdf-viewer-search-panel-spacing;
         flex-flow: row nowrap;
         flex: 0 0 auto;
         justify-content: flex-start;
         align-items: center;
+        z-index: 10;
+        cursor: default;
 
         .k-search-dialog-draghandle {
             cursor: move;
@@ -150,21 +147,6 @@
             display: inline-flex;
             gap: $kendo-pdf-viewer-search-panel-matches-spacing;
         }
-    }
-
-    .k-pdf-viewer-canvas > .k-search-panel {
-        width: max-content;
-        margin-top: calc( (#{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-dialog-padding-y} )) * -1 );
-        border-width: $kendo-pdf-viewer-search-panel-border-width;
-        border-style: solid;
-        border-radius: $kendo-pdf-viewer-search-panel-border-radius;
-        z-index: 10;
-        cursor: default;
-    }
-
-    // Alias
-    .k-search-container {
-        @extend .k-search-panel !optional;
     }
 
 }
