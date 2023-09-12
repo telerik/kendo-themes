@@ -2,6 +2,10 @@
     "recommendations": [
         "streetsidesoftware.code-spell-checker",
         "editorconfig.editorconfig",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "figma.figma-vscode-extension",
+        "GitHub.vscode-github-actions",
+        "GitHub.vscode-pull-request-github",
+        "eamodio.gitlens"
     ]
 }
