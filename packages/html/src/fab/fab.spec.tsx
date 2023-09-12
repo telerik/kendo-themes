@@ -16,7 +16,6 @@ const options = {
     rounded: [ Roundness.small, Roundness.medium, Roundness.large, Roundness.full ],
     fillMode: [ FillMode.solid, FillMode.flat, FillMode.outline, FillMode.clear, FillMode.link ],
     themeColor: [
-        ThemeColor.base,
         ThemeColor.primary,
         ThemeColor.secondary,
         ThemeColor.tertiary,
