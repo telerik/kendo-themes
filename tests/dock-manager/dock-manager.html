@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 1040px;
+        }
+        .k-dock-manager {
+            height: 800px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <section class="k-col-span-full">
+            <div class="k-dock-manager">
+                <div class="k-dock-manager-toolbar k-toolbar-left k-toolbar k-toolbar-md">
+                    <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                        <span class="k-button-text">File 3</span>
+                    </button>
+                    <div class="k-separator k-separator-horizontal"></div>
+                    <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                        <span class="k-button-text">File 4</span>
+                    </button>
+                </div>
+                <div class="k-dock-manager-pane-container">
+                    <div class="k-splitter k-splitter-flex k-splitter-vertical k-dock-manager-splitter">
+                        <div class="k-pane k-pane-static" style="flex-basis: 70%;">
+                            <div class="k-splitter k-splitter-flex k-splitter-horizontal k-dock-manager-splitter">
+                                <div class="k-pane k-pane-static k-pane-pinned" style="flex-basis: 20%;">
+                                    <div class="k-pane-scrollable">
+                                        <div class="k-pane-header">
+                                            <span class="k-pane-title">Tools</span>
+                                            <div class="k-pane-actions">
+                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                    <span class="k-button-icon k-svg-icon k-svg-i-pin">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32h-64zm-128 0V96h64v160h-64z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                    <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="k-pane-content">Some tools.</div>
+                                    </div>
+                                </div>
+                                <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                                    <div class="k-resize-handle"></div>
+                                </div>
+                                <div class="k-pane k-pane-static k-pane-tabbed" style="flex-basis: 40%;">
+                                    <div class="k-tabstrip k-header k-tabstrip-top" style="height: 100%;">
+                                        <div class="k-tabstrip-items-wrapper k-hstack">
+                                            <ul class="k-reset k-tabstrip-items">
+                                                <li class="k-item k-first k-active">
+                                                    <span class="k-link">File 1</span>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-svg-icon k-svg-i-pin">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32h-64zm-128 0V96h64v160h-64z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="k-item">
+                                                    <span class="k-link">File 2</span>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-svg-icon k-svg-i-pin">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32h-64zm-128 0V96h64v160h-64z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="k-tabstrip-content k-active">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit porro optio veritatis obcaecati nostrum molestias dolor maxime! Molestias ducimus placeat quia possimus esse atque odio, a recusandae iste exercitationem. Sapiente fugit assumenda at explicabo quos consequuntur dicta cumque ex aspernatur, nesciunt itaque doloremque exercitationem eaque iusto. Iste non officia consequatur quis veritatis magni, quo autem dolores numquam dignissimos nemo.</div>
+                                    </div>
+                                </div>
+                                <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                                    <div class="k-resize-handle"></div>
+                                </div>
+                                <div class="k-pane">
+                                    <div class="k-splitter k-splitter-flex k-splitter-vertical k-dock-manager-splitter">
+                                        <div class="k-pane k-pane-static k-pane-tabbed" style="flex-basis: 50%;">
+                                            <div class="k-tabstrip k-header k-tabstrip-top" style="height: 100%;">
+                                                <div class="k-tabstrip-items-wrapper k-hstack">
+                                                    <ul class="k-reset k-tabstrip-items">
+                                                        <li class="k-item k-first k-active">
+                                                            <span class="k-link">File 5</span>
+                                                            <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                                <span class="k-button-icon k-svg-icon k-svg-i-pin">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32h-64zm-128 0V96h64v160h-64z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                            <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                                <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="k-item">
+                                                            <span class="k-link">File 6</span>
+                                                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md k-icon-button">
+                                                                <span class="k-button-icon k-svg-icon k-svg-i-pin">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32h-64zm-128 0V96h64v160h-64z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md k-icon-button">
+                                                                <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                        <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="k-tabstrip-content k-active">Properties content.</div>
+                                            </div>
+                                        </div>
+                                        <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+                                            <div class="k-resize-handle"></div>
+                                        </div>
+                                        <div class="k-pane k-pane-pinned">
+                                            <div class="k-pane-scrollable">
+                                                <div class="k-pane-header">
+                                                    <span class="k-pane-title">Layers</span>
+                                                    <div class="k-pane-actions">
+                                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                            <span class="k-button-icon k-svg-icon k-svg-i-pin">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32h-64zm-128 0V96h64v160h-64z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="k-pane-content">Layers content.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+                            <div class="k-resize-handle"></div>
+                        </div>
+                        <div class="k-pane k-pane-pinned">
+                            <div class="k-pane-scrollable">
+                                <div class="k-pane-header">
+                                    <span class="k-pane-title">Console</span>
+                                    <div class="k-pane-actions">
+                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-pin">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M320 256V96c0-17.6-14.4-32-32-32h-96c-17.6 0-32 14.4-32 32v160H96v32h128v160h32V288h128v-32h-64zm-128 0V96h64v160h-64z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="k-pane-content">Console content.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
