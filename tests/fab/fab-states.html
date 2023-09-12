@@ -8,16 +8,24 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        #test-area {
+            grid-template-columns: 100px repeat(6, 1fr);
+            grid-template-rows: 10px repeat(11, 50px);
+        }
+
+    </style>
     <div id="test-area" class="k-d-grid k-grid-cols-6">
         <span></span>
         <span>Normal</span>
         <span>Hover</span>
         <span>Focus</span>
         <span>Active</span>
+        <span>Selected</span>
         <span>Disabled</span>
-        <span>primary</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full">
+        <span style="align-self: center;">primary</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -25,8 +33,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-hover">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-hover !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -34,8 +42,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-focus">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-focus !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -43,8 +51,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-active">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-active !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -52,8 +60,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-selected !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -61,9 +69,8 @@
                 </span>
             </button>
         </span>
-        <span>secondary</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-primary k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -71,8 +78,9 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-hover">
+        <span style="align-self: center;">secondary</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -80,8 +88,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-focus">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-hover !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -89,8 +97,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-active">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-focus !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -98,8 +106,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-active !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -107,9 +115,8 @@
                 </span>
             </button>
         </span>
-        <span>tertiary</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-selected !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -117,8 +124,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-hover">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-secondary k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -126,8 +133,9 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-focus">
+        <span style="align-self: center;">tertiary</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -135,8 +143,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-active">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-hover !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -144,8 +152,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-focus !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -153,9 +161,8 @@
                 </span>
             </button>
         </span>
-        <span>info</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-active !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -163,8 +170,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-hover">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-selected !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -172,8 +179,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-focus">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-tertiary k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -181,8 +188,9 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-active">
+        <span style="align-self: center;">success</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -190,8 +198,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-hover !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -199,9 +207,8 @@
                 </span>
             </button>
         </span>
-        <span>success</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-focus !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -209,8 +216,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-hover">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-active !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -218,8 +225,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-focus">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-selected !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -227,8 +234,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-active">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -236,8 +243,9 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-success k-rounded-full k-disabled">
+        <span style="align-self: center;">warning</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -245,9 +253,8 @@
                 </span>
             </button>
         </span>
-        <span>warning</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-hover !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -255,8 +262,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-hover">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-focus !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -264,8 +271,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-focus">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-active !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -273,8 +280,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-active">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-selected !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -282,8 +289,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-warning k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -291,9 +298,9 @@
                 </span>
             </button>
         </span>
-        <span>error</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full">
+        <span style="align-self: center;">error</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -301,8 +308,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-hover">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-hover !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -310,8 +317,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-focus">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-focus !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -319,8 +326,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-active">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-active !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -328,8 +335,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-selected !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -337,9 +344,8 @@
                 </span>
             </button>
         </span>
-        <span>dark</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-error k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -347,8 +353,9 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-hover">
+        <span style="align-self: center;">info</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -356,8 +363,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-focus">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-hover !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -365,8 +372,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-active">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-focus !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -374,8 +381,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-active !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -383,9 +390,8 @@
                 </span>
             </button>
         </span>
-        <span>light</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-selected !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -393,8 +399,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-hover">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-info k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -402,8 +408,9 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-focus">
+        <span style="align-self: center;">light</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -411,8 +418,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-active">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-hover !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -420,8 +427,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-focus !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -429,9 +436,8 @@
                 </span>
             </button>
         </span>
-        <span>inverse</span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-active !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -439,8 +445,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-hover">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-selected !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -448,8 +454,8 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-focus">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-light k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -457,8 +463,9 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-active">
+        <span style="align-self: center;">dark</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
@@ -466,8 +473,99 @@
                 </span>
             </button>
         </span>
-        <span>
-            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-disabled">
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-hover !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-focus !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-active !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-selected !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-dark k-rounded-full k-disabled !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="align-self: center;">inverse</span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-hover !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-focus !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-active !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-selected !k-pos-absolute k-top-start">
+                <span class="k-fab-icon k-svg-icon k-svg-i-plus">
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                    </svg>
+                </span>
+            </button>
+        </span>
+        <span style="position: relative;">
+            <button type="button" class="k-fab k-fab-md k-fab-solid k-fab-solid-inverse k-rounded-full k-disabled !k-pos-absolute k-top-start">
                 <span class="k-fab-icon k-svg-icon k-svg-i-plus">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
