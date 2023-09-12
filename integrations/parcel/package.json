@@ -1,0 +1,32 @@
+{
+  "targets": {
+    "default": {
+      "source": "styles/default.scss"
+    },
+    "bootstrap": {
+      "source": "styles/bootstrap.scss"
+    },
+    "classic": {
+      "source": "styles/classic.scss"
+    },
+    "material": {
+      "source": "styles/material.scss"
+    },
+    "fluent": {
+      "source": "styles/fluent.scss"
+    },
+    "nouvelle": {
+      "source": "styles/nouvelle.scss"
+    }
+  },
+  "scripts": {
+    "build": "parcel build",
+    "clear-cache": "rm -rf .parcel-cache"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "latest",
+    "cssnano": "latest",
+    "parcel": "latest",
+    "postcss": "latest"
+  }
+}
