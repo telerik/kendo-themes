@@ -1,4 +1,4 @@
-import { ColorGradient } from '../../colorgradient';
+import { ColorGradientContrast } from '../../colorgradient';
 
 
 const styles = `
@@ -18,7 +18,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <span>ColorGradient RTL</span>
             <section>
-                <ColorGradient dir="rtl" contrast />
+                <ColorGradientContrast dir="rtl" />
             </section>
         </div>
     </>

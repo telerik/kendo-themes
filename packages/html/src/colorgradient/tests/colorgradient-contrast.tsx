@@ -1,4 +1,4 @@
-import { ColorGradient } from '../../colorgradient';
+import { ColorGradientContrast } from '../../colorgradient';
 
 
 const styles = `
@@ -19,7 +19,7 @@ export default () =>(
 
             <span>Contrast Tool</span>
             <section>
-                <ColorGradient contrast />
+                <ColorGradientContrast/>
             </section>
 
         </div>
