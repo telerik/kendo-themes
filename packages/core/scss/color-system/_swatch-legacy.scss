@@ -1,0 +1,175 @@
+$kendo-is-dark-theme: false !default;
+
+// Color constants
+
+/// The color white.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+
+/// The color black.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+
+/// The color transparent.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-rgba-transparent: rgba(0, 0, 0, 0); // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that goes from transparent to black.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-transparent-to-black: rgba(black, 0), black; // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that goes from transparent to white.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-transparent-to-white: rgba(white, 0), white; // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that goes from black to transparent.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-black-to-transparent: black, rgba(black, 0); // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that goes from white to transparent.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-white-to-transparent: white, rgba(white, 0); // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that cycles through the colors of the rainbow.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
+
+// Root styles
+$kendo-body-bg: null !default;
+$kendo-body-text: null !default;
+
+// Component styles
+$kendo-component-bg: null !default;
+$kendo-component-text: null !default;
+$kendo-component-border: null !default;
+
+// States styles
+$kendo-hover-bg: null !default;
+$kendo-hover-text: null !default;
+$kendo-hover-border: null !default;
+
+$kendo-selected-bg: null !default;
+$kendo-selected-text: null !default;
+$kendo-selected-border: null !default;
+
+$kendo-selected-hover-bg: null !default;
+$kendo-selected-hover-text: null !default;
+$kendo-selected-hover-border: null !default;
+
+$kendo-focus-outline: null !default;
+
+$kendo-subtle-text: null !default;
+
+// Link
+$kendo-link-text: null !default;
+$kendo-link-hover-text: null !default;
+
+// Validator
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: null !default;
+$kendo-invalid-border: null !default;
+$kendo-invalid-shadow: null !default;
+
+// Disabled Styling
+$kendo-disabled-bg: null !default;
+$kendo-disabled-text: null !default;
+$kendo-disabled-border: null !default;
+
+// Loading
+$kendo-loading-bg: null !default;
+$kendo-loading-text: null !default;
+
+$kendo-palettes: () !default;
+$kendo-theme-colors: () !default;
+
+@mixin color-system-styles() {
+    :root {
+        @include k-css-vars($kendo-palettes);
+        @include k-css-vars($kendo-theme-colors);
+
+        // Text colors
+        @each $theme-color, $color-props in $kendo-theme-colors {
+            $_color: k-map-get($color-props, text);
+
+            .k-text-#{$theme-color},
+            .k-color-#{$theme-color} {
+                color: var(--kendo-text-#{$theme-color}, #{$_color});
+            }
+            .\!k-text-#{$theme-color},
+            .\!k-color-#{$theme-color} {
+                color: var(--kendo-text-#{$theme-color}, #{$_color}) !important; // stylelint-disable-line declaration-no-important
+            }
+
+            .k-bg-#{$theme-color} {
+                background-color: var(--kendo-bg-#{$theme-color}, #{$_color});
+            }
+            .\!k-bg-#{$theme-color} {
+                background-color: var(--kendo-bg-#{$theme-color}, #{$_color}) !important; // stylelint-disable-line declaration-no-important
+            }
+        }
+    }
+}
+
+@mixin color-system--styles--legacy() {
+    :root {
+        --kendo-body-bg: #{$kendo-body-bg};
+        --kendo-body-text: #{$kendo-body-text};
+
+        --kendo-component-bg: #{$kendo-component-bg};
+        --kendo-component-text: #{$kendo-component-text};
+        --kendo-component-border: #{$kendo-component-border};
+
+        --kendo-box-shadow-depth-1: #{$kendo-box-shadow-depth-1};
+        --kendo-box-shadow-depth-2: #{$kendo-box-shadow-depth-2};
+        --kendo-box-shadow-depth-3: #{$kendo-box-shadow-depth-3};
+        --kendo-box-shadow-depth-4: #{$kendo-box-shadow-depth-4};
+
+        --kendo-link-text: #{$kendo-link-text};
+        --kendo-link-hover-text: #{$kendo-link-hover-text};
+
+        --kendo-disabled-bg: #{$kendo-disabled-bg};
+        --kendo-disabled-text: #{$kendo-disabled-text};
+        --kendo-disabled-border: #{$kendo-disabled-border};
+
+        --kendo-hover-bg: #{$kendo-hover-bg};
+        --kendo-hover-text: #{$kendo-hover-text};
+        --kendo-hover-border: #{$kendo-hover-border};
+
+        --kendo-selected-bg: #{$kendo-selected-bg};
+        --kendo-selected-text: #{$kendo-selected-text};
+        --kendo-selected-border: #{$kendo-selected-border};
+
+        --kendo-selected-hover-bg: #{$kendo-selected-hover-bg};
+        --kendo-selected-hover-text: #{$kendo-selected-hover-text};
+        --kendo-selected-hover-border: #{$kendo-selected-hover-border};
+
+        --kendo-focus-outline: #{$kendo-focus-outline};
+
+        --kendo-subtle-text: #{$kendo-subtle-text};
+
+        --kendo-invalid-bg: #{$kendo-invalid-bg};
+        --kendo-invalid-text: #{$kendo-invalid-text};
+        --kendo-invalid-border: #{$kendo-invalid-border};
+        --kendo-invalid-shadow: #{$kendo-invalid-shadow};
+
+        --kendo-border-radius-sm: #{$kendo-border-radius-sm};
+        --kendo-border-radius-md: #{$kendo-border-radius-md};
+        --kendo-border-radius-lg: #{$kendo-border-radius-lg};
+    }
+}

@@ -142,3 +142,15 @@
 
     @return $result;
 }
+
+@function k-hex-to-rgb( $color ) {
+    @if($color) {
+        $r: k-color-red($color);
+        $g: k-color-green($color);
+        $b: k-color-blue($color);
+
+        @return $r, $g, $b;
+    } @else {
+        @return null;
+    }
+}

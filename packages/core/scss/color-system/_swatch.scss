@@ -1,0 +1,472 @@
+@import "./_functions.import.scss";
+
+// Config
+$kendo-new-colors: false !default;
+
+// Misc
+$kendo-color-surface: null !default;
+$kendo-color-surface-alt: null !default;
+
+$kendo-color-border: null !default;
+$kendo-color-border-alt: null !default;
+
+// Base
+$kendo-color-base-subtle: null !default;
+$kendo-color-base-subtle-hover: null !default;
+$kendo-color-base-subtle-active: null !default;
+
+$kendo-color-base: null !default;
+$kendo-color-base-hover: null !default;
+$kendo-color-base-active: null !default;
+
+$kendo-color-base-emphasis: null !default;
+$kendo-color-base-on-subtle: null !default;
+$kendo-color-base-on-base: null !default;
+$kendo-color-base-on-surface: null !default;
+
+// Primary
+$kendo-color-primary-subtle: null !default;
+$kendo-color-primary-subtle-hover: null !default;
+$kendo-color-primary-subtle-active: null !default;
+
+$kendo-color-primary: null !default;
+$kendo-color-primary-hover: null !default;
+$kendo-color-primary-active: null !default;
+
+$kendo-color-primary-emphasis: null !default;
+$kendo-color-primary-on-subtle: null !default;
+$kendo-color-primary-on-base: null !default;
+$kendo-color-primary-on-surface: null !default;
+
+// Secondary
+$kendo-color-secondary-subtle: null !default;
+$kendo-color-secondary-subtle-hover: null !default;
+$kendo-color-secondary-subtle-active: null !default;
+
+$kendo-color-secondary: null !default;
+$kendo-color-secondary-hover: null !default;
+$kendo-color-secondary-active: null !default;
+
+$kendo-color-secondary-emphasis: null !default;
+$kendo-color-secondary-on-subtle: null !default;
+$kendo-color-secondary-on-base: null !default;
+$kendo-color-secondary-on-surface: null !default;
+
+// Tertiary
+$kendo-color-tertiary-subtle: null !default;
+$kendo-color-tertiary-subtle-hover: null !default;
+$kendo-color-tertiary-subtle-active: null !default;
+
+$kendo-color-tertiary: null !default;
+$kendo-color-tertiary-hover: null !default;
+$kendo-color-tertiary-active: null !default;
+
+$kendo-color-tertiary-emphasis: null !default;
+$kendo-color-tertiary-on-subtle: null !default;
+$kendo-color-tertiary-on-base: null !default;
+$kendo-color-tertiary-on-surface: null !default;
+
+// Info
+$kendo-color-info-subtle: null !default;
+$kendo-color-info-subtle-hover: null !default;
+$kendo-color-info-subtle-active: null !default;
+
+$kendo-color-info: null !default;
+$kendo-color-info-hover: null !default;
+$kendo-color-info-active: null !default;
+
+$kendo-color-info-emphasis: null !default;
+$kendo-color-info-on-subtle: null !default;
+$kendo-color-info-on-base: null !default;
+$kendo-color-info-on-surface: null !default;
+
+// Success
+$kendo-color-success-subtle: null !default;
+$kendo-color-success-subtle-hover: null !default;
+$kendo-color-success-subtle-active: null !default;
+
+$kendo-color-success: null !default;
+$kendo-color-success-hover: null !default;
+$kendo-color-success-active: null !default;
+
+$kendo-color-success-emphasis: null !default;
+$kendo-color-success-on-subtle: null !default;
+$kendo-color-success-on-base: null !default;
+$kendo-color-success-on-surface: null !default;
+
+// Warning
+$kendo-color-warning-subtle: null !default;
+$kendo-color-warning-subtle-hover: null !default;
+$kendo-color-warning-subtle-active: null !default;
+
+$kendo-color-warning: null !default;
+$kendo-color-warning-hover: null !default;
+$kendo-color-warning-active: null !default;
+
+$kendo-color-warning-emphasis: null !default;
+$kendo-color-warning-on-subtle: null !default;
+$kendo-color-warning-on-base: null !default;
+$kendo-color-warning-on-surface: null !default;
+
+// Error
+$kendo-color-error-subtle: null !default;
+$kendo-color-error-subtle-hover: null !default;
+$kendo-color-error-subtle-active: null !default;
+
+$kendo-color-error: null !default;
+$kendo-color-error-hover: null !default;
+$kendo-color-error-active: null !default;
+
+$kendo-color-error-emphasis: null !default;
+$kendo-color-error-on-subtle: null !default;
+$kendo-color-error-on-base: null !default;
+$kendo-color-error-on-surface: null !default;
+
+// Light
+$kendo-color-light-subtle: null !default;
+$kendo-color-light-subtle-hover: null !default;
+$kendo-color-light-subtle-active: null !default;
+
+$kendo-color-light: null !default;
+$kendo-color-light-hover: null !default;
+$kendo-color-light-active: null !default;
+
+$kendo-color-light-emphasis: null !default;
+$kendo-color-light-on-subtle: null !default;
+$kendo-color-light-on-base: null !default;
+$kendo-color-light-on-surface: null !default;
+
+// Dark
+$kendo-color-dark-subtle: null !default;
+$kendo-color-dark-subtle-hover: null !default;
+$kendo-color-dark-subtle-active: null !default;
+
+$kendo-color-dark: null !default;
+$kendo-color-dark-hover: null !default;
+$kendo-color-dark-active: null !default;
+
+$kendo-color-dark-emphasis: null !default;
+$kendo-color-dark-on-subtle: null !default;
+$kendo-color-dark-on-base: null !default;
+$kendo-color-dark-on-surface: null !default;
+
+// RGB variant of each variable
+$kendo-color-surface-rgb: null !default;
+$kendo-color-surface-alt-rgb: null !default;
+$kendo-color-border-rgb: null !default;
+$kendo-color-border-alt-rgb: null !default;
+$kendo-color-base-rgb: null !default;
+$kendo-color-base-hover-rgb: null !default;
+$kendo-color-base-active-rgb: null !default;
+$kendo-color-base-emphasis-rgb: null !default;
+$kendo-color-base-on-subtle-rgb: null !default;
+$kendo-color-base-on-base-rgb: null !default;
+$kendo-color-base-on-surface-rgb: null !default;
+$kendo-color-primary-rgb: null !default;
+$kendo-color-primary-hover-rgb: null !default;
+$kendo-color-primary-active-rgb: null !default;
+$kendo-color-primary-emphasis-rgb: null !default;
+$kendo-color-primary-on-subtle-rgb: null !default;
+$kendo-color-primary-on-base-rgb: null !default;
+$kendo-color-primary-on-surface-rgb: null !default;
+$kendo-color-secondary-rgb: null !default;
+$kendo-color-secondary-hover-rgb: null !default;
+$kendo-color-secondary-active-rgb: null !default;
+$kendo-color-secondary-emphasis-rgb: null !default;
+$kendo-color-secondary-on-subtle-rgb: null !default;
+$kendo-color-secondary-on-base-rgb: null !default;
+$kendo-color-secondary-on-surface-rgb: null !default;
+$kendo-color-tertiary-rgb: null !default;
+$kendo-color-tertiary-hover-rgb: null !default;
+$kendo-color-tertiary-active-rgb: null !default;
+$kendo-color-tertiary-emphasis-rgb: null !default;
+$kendo-color-tertiary-on-subtle-rgb: null !default;
+$kendo-color-tertiary-on-base-rgb: null !default;
+$kendo-color-tertiary-on-surface-rgb: null !default;
+$kendo-color-info-rgb: null !default;
+$kendo-color-info-hover-rgb: null !default;
+$kendo-color-info-active-rgb: null !default;
+$kendo-color-info-emphasis-rgb: null !default;
+$kendo-color-info-on-subtle-rgb: null !default;
+$kendo-color-info-on-base-rgb: null !default;
+$kendo-color-info-on-surface-rgb: null !default;
+$kendo-color-success-rgb: null !default;
+$kendo-color-success-hover-rgb: null !default;
+$kendo-color-success-active-rgb: null !default;
+$kendo-color-success-emphasis-rgb: null !default;
+$kendo-color-success-on-subtle-rgb: null !default;
+$kendo-color-success-on-base-rgb: null !default;
+$kendo-color-success-on-surface-rgb: null !default;
+$kendo-color-warning-rgb: null !default;
+$kendo-color-warning-hover-rgb: null !default;
+$kendo-color-warning-active-rgb: null !default;
+$kendo-color-warning-emphasis-rgb: null !default;
+$kendo-color-warning-on-subtle-rgb: null !default;
+$kendo-color-warning-on-base-rgb: null !default;
+$kendo-color-warning-on-surface-rgb: null !default;
+$kendo-color-error-rgb: null !default;
+$kendo-color-error-hover-rgb: null !default;
+$kendo-color-error-active-rgb: null !default;
+$kendo-color-error-emphasis-rgb: null !default;
+$kendo-color-error-on-subtle-rgb: null !default;
+$kendo-color-error-on-base-rgb: null !default;
+$kendo-color-error-on-surface-rgb: null !default;
+$kendo-color-light-rgb: null !default;
+$kendo-color-light-hover-rgb: null !default;
+$kendo-color-light-active-rgb: null !default;
+$kendo-color-light-emphasis-rgb: null !default;
+$kendo-color-light-on-subtle-rgb: null !default;
+$kendo-color-light-on-base-rgb: null !default;
+$kendo-color-light-on-surface-rgb: null !default;
+$kendo-color-dark-rgb: null !default;
+$kendo-color-dark-hover-rgb: null !default;
+$kendo-color-dark-active-rgb: null !default;
+$kendo-color-dark-emphasis-rgb: null !default;
+$kendo-color-dark-on-subtle-rgb: null !default;
+$kendo-color-dark-on-base-rgb: null !default;
+$kendo-color-dark-on-surface-rgb: null !default;
+
+@mixin color-system--styles() {
+    :root {
+        --kendo-color-surface-rgb: #{$kendo-color-surface-rgb};
+        --kendo-color-surface: #{$kendo-color-surface};
+        --kendo-color-surface-alt-rgb: #{$kendo-color-surface-alt-rgb};
+        --kendo-color-surface-alt: #{$kendo-color-surface-alt};
+        --kendo-color-border-rgb: #{$kendo-color-border-rgb};
+        --kendo-color-border: #{$kendo-color-border};
+        --kendo-color-border-alt-rgb: #{$kendo-color-border-alt-rgb};
+        --kendo-color-border-alt: #{$kendo-color-border-alt};
+        --kendo-color-base-rgb: #{$kendo-color-base-rgb};
+        --kendo-color-base-hover-rgb: #{$kendo-color-base-hover-rgb};
+        --kendo-color-base-active-rgb: #{$kendo-color-base-active-rgb};
+        --kendo-color-base-emphasis-rgb: #{$kendo-color-base-emphasis-rgb};
+        --kendo-color-base-on-subtle-rgb: #{$kendo-color-base-on-subtle-rgb};
+        --kendo-color-base-on-base-rgb: #{$kendo-color-base-on-base-rgb};
+        --kendo-color-base-on-surface-rgb: #{$kendo-color-base-on-surface-rgb};
+        --kendo-color-primary-rgb: #{$kendo-color-primary-rgb};
+        --kendo-color-primary-hover-rgb: #{$kendo-color-primary-hover-rgb};
+        --kendo-color-primary-active-rgb: #{$kendo-color-primary-active-rgb};
+        --kendo-color-primary-emphasis-rgb: #{$kendo-color-primary-emphasis-rgb};
+        --kendo-color-primary-on-subtle-rgb: #{$kendo-color-primary-on-subtle-rgb};
+        --kendo-color-primary-on-base-rgb: #{$kendo-color-primary-on-base-rgb};
+        --kendo-color-primary-on-surface-rgb: #{$kendo-color-primary-on-surface-rgb};
+        --kendo-color-secondary-rgb: #{$kendo-color-secondary-rgb};
+        --kendo-color-secondary-hover-rgb: #{$kendo-color-secondary-hover-rgb};
+        --kendo-color-secondary-active-rgb: #{$kendo-color-secondary-active-rgb};
+        --kendo-color-secondary-emphasis-rgb: #{$kendo-color-secondary-emphasis-rgb};
+        --kendo-color-secondary-on-subtle-rgb: #{$kendo-color-secondary-on-subtle-rgb};
+        --kendo-color-secondary-on-base-rgb: #{$kendo-color-secondary-on-base-rgb};
+        --kendo-color-secondary-on-surface-rgb: #{$kendo-color-secondary-on-surface-rgb};
+        --kendo-color-tertiary-rgb: #{$kendo-color-tertiary-rgb};
+        --kendo-color-tertiary-hover-rgb: #{$kendo-color-tertiary-hover-rgb};
+        --kendo-color-tertiary-active-rgb: #{$kendo-color-tertiary-active-rgb};
+        --kendo-color-tertiary-emphasis-rgb: #{$kendo-color-tertiary-emphasis-rgb};
+        --kendo-color-tertiary-on-subtle-rgb: #{$kendo-color-tertiary-on-subtle-rgb};
+        --kendo-color-tertiary-on-base-rgb: #{$kendo-color-tertiary-on-base-rgb};
+        --kendo-color-tertiary-on-surface-rgb: #{$kendo-color-tertiary-on-surface-rgb};
+        --kendo-color-info-rgb: #{$kendo-color-info-rgb};
+        --kendo-color-info-hover-rgb: #{$kendo-color-info-hover-rgb};
+        --kendo-color-info-active-rgb: #{$kendo-color-info-active-rgb};
+        --kendo-color-info-emphasis-rgb: #{$kendo-color-info-emphasis-rgb};
+        --kendo-color-info-on-subtle-rgb: #{$kendo-color-info-on-subtle-rgb};
+        --kendo-color-info-on-base-rgb: #{$kendo-color-info-on-base-rgb};
+        --kendo-color-info-on-surface-rgb: #{$kendo-color-info-on-surface-rgb};
+        --kendo-color-success-rgb: #{$kendo-color-success-rgb};
+        --kendo-color-success-hover-rgb: #{$kendo-color-success-hover-rgb};
+        --kendo-color-success-active-rgb: #{$kendo-color-success-active-rgb};
+        --kendo-color-success-emphasis-rgb: #{$kendo-color-success-emphasis-rgb};
+        --kendo-color-success-on-subtle-rgb: #{$kendo-color-success-on-subtle-rgb};
+        --kendo-color-success-on-base-rgb: #{$kendo-color-success-on-base-rgb};
+        --kendo-color-success-on-surface-rgb: #{$kendo-color-success-on-surface-rgb};
+        --kendo-color-warning-rgb: #{$kendo-color-warning-rgb};
+        --kendo-color-warning-hover-rgb: #{$kendo-color-warning-hover-rgb};
+        --kendo-color-warning-active-rgb: #{$kendo-color-warning-active-rgb};
+        --kendo-color-warning-emphasis-rgb: #{$kendo-color-warning-emphasis-rgb};
+        --kendo-color-warning-on-subtle-rgb: #{$kendo-color-warning-on-subtle-rgb};
+        --kendo-color-warning-on-base-rgb: #{$kendo-color-warning-on-base-rgb};
+        --kendo-color-warning-on-surface-rgb: #{$kendo-color-warning-on-surface-rgb};
+        --kendo-color-error-rgb: #{$kendo-color-error-rgb};
+        --kendo-color-error-hover-rgb: #{$kendo-color-error-hover-rgb};
+        --kendo-color-error-active-rgb: #{$kendo-color-error-active-rgb};
+        --kendo-color-error-emphasis-rgb: #{$kendo-color-error-emphasis-rgb};
+        --kendo-color-error-on-subtle-rgb: #{$kendo-color-error-on-subtle-rgb};
+        --kendo-color-error-on-base-rgb: #{$kendo-color-error-on-base-rgb};
+        --kendo-color-error-on-surface-rgb: #{$kendo-color-error-on-surface-rgb};
+        --kendo-color-light-rgb: #{$kendo-color-light-rgb};
+        --kendo-color-light-hover-rgb: #{$kendo-color-light-hover-rgb};
+        --kendo-color-light-active-rgb: #{$kendo-color-light-active-rgb};
+        --kendo-color-light-emphasis-rgb: #{$kendo-color-light-emphasis-rgb};
+        --kendo-color-light-on-subtle-rgb: #{$kendo-color-light-on-subtle-rgb};
+        --kendo-color-light-on-base-rgb: #{$kendo-color-light-on-base-rgb};
+        --kendo-color-light-on-surface-rgb: #{$kendo-color-light-on-surface-rgb};
+        --kendo-color-dark-rgb: #{$kendo-color-dark-rgb};
+        --kendo-color-dark-hover-rgb: #{$kendo-color-dark-hover-rgb};
+        --kendo-color-dark-active-rgb: #{$kendo-color-dark-active-rgb};
+        --kendo-color-dark-emphasis-rgb: #{$kendo-color-dark-emphasis-rgb};
+        --kendo-color-dark-on-subtle-rgb: #{$kendo-color-dark-on-subtle-rgb};
+        --kendo-color-dark-on-base-rgb: #{$kendo-color-dark-on-base-rgb};
+        --kendo-color-dark-on-surface-rgb: #{$kendo-color-dark-on-surface-rgb};
+    }
+}
+
+@if ($kendo-new-colors) {
+    $kendo-color-surface-rgb: var(--kendo-color-surface-rgb, k-hex-to-rgb($kendo-color-surface));
+    $kendo-color-surface: var(--kendo-color-surface, $kendo-color-surface);
+    $kendo-color-surface-alt-rgb: var(--kendo-color-surface-alt-rgb, k-hex-to-rgb($kendo-color-surface-alt));
+    $kendo-color-surface-alt: var(--kendo-color-surface-alt, $kendo-color-surface-alt);
+
+    $kendo-color-border-rgb: var(--kendo-color-border-rgb, k-hex-to-rgb($kendo-color-border));
+    $kendo-color-border: var(--kendo-color-border, $kendo-color-border);
+    $kendo-color-border-alt-rgb: var(--kendo-color-border-alt-rgb, k-hex-to-rgb($kendo-color-border-alt));
+    $kendo-color-border-alt: var(--kendo-color-border-alt, $kendo-color-border-alt);
+
+    $kendo-color-base-rgb: var(--kendo-color-base-rgb, k-hex-to-rgb($kendo-color-base));
+    $kendo-color-base: var(--kendo-color-base, $kendo-color-base);
+    $kendo-color-base-hover-rgb: var(--kendo-color-base-hover-rgb, k-hex-to-rgb($kendo-color-base-hover));
+    $kendo-color-base-hover: var(--kendo-color-base-hover, $kendo-color-base-hover);
+    $kendo-color-base-active-rgb: var(--kendo-color-base-active-rgb, k-hex-to-rgb($kendo-color-base-active));
+    $kendo-color-base-active: var(--kendo-color-base-active, $kendo-color-base-active);
+    $kendo-color-base-emphasis-rgb: var(--kendo-color-base-emphasis-rgb, k-hex-to-rgb($kendo-color-base-emphasis));
+    $kendo-color-base-emphasis: var(--kendo-color-base-emphasis, $kendo-color-base-emphasis);
+    $kendo-color-base-on-subtle-rgb: var(--kendo-color-base-on-subtle-rgb, k-hex-to-rgb($kendo-color-base-on-subtle));
+    $kendo-color-base-on-subtle: var(--kendo-color-base-on-subtle, $kendo-color-base-on-subtle);
+    $kendo-color-base-on-base-rgb: var(--kendo-color-base-on-base-rgb, k-hex-to-rgb($kendo-color-base-on-base));
+    $kendo-color-base-on-base: var(--kendo-color-base-on-base, $kendo-color-base-on-base);
+    $kendo-color-base-on-surface-rgb: var(--kendo-color-base-on-surface-rgb, k-hex-to-rgb($kendo-color-base-on-surface));
+    $kendo-color-base-on-surface: var(--kendo-color-base-on-surface, $kendo-color-base-on-surface);
+
+    $kendo-color-primary-rgb: var(--kendo-color-primary-rgb, k-hex-to-rgb($kendo-color-primary));
+    $kendo-color-primary: var(--kendo-color-primary, $kendo-color-primary);
+    $kendo-color-primary-hover-rgb: var(--kendo-color-primary-hover-rgb, k-hex-to-rgb($kendo-color-primary-hover));
+    $kendo-color-primary-hover: var(--kendo-color-primary-hover, $kendo-color-primary-hover);
+    $kendo-color-primary-active-rgb: var(--kendo-color-primary-active-rgb, k-hex-to-rgb($kendo-color-primary-active));
+    $kendo-color-primary-active: var(--kendo-color-primary-active, $kendo-color-primary-active);
+    $kendo-color-primary-emphasis-rgb: var(--kendo-color-primary-emphasis-rgb, k-hex-to-rgb($kendo-color-primary-emphasis));
+    $kendo-color-primary-emphasis: var(--kendo-color-primary-emphasis, $kendo-color-primary-emphasis);
+    $kendo-color-primary-on-subtle-rgb: var(--kendo-color-primary-on-subtle-rgb, k-hex-to-rgb($kendo-color-primary-on-subtle));
+    $kendo-color-primary-on-subtle: var(--kendo-color-primary-on-subtle, $kendo-color-primary-on-subtle);
+    $kendo-color-primary-on-base-rgb: var(--kendo-color-primary-on-base-rgb, k-hex-to-rgb($kendo-color-primary-on-base));
+    $kendo-color-primary-on-base: var(--kendo-color-primary-on-base, $kendo-color-primary-on-base);
+    $kendo-color-primary-on-surface-rgb: var(--kendo-color-primary-on-surface-rgb, k-hex-to-rgb($kendo-color-primary-on-surface));
+    $kendo-color-primary-on-surface: var(--kendo-color-primary-on-surface, $kendo-color-primary-on-surface);
+
+    $kendo-color-secondary-rgb: var(--kendo-color-secondary-rgb, k-hex-to-rgb($kendo-color-secondary));
+    $kendo-color-secondary: var(--kendo-color-secondary, $kendo-color-secondary);
+    $kendo-color-secondary-hover-rgb: var(--kendo-color-secondary-hover-rgb, k-hex-to-rgb($kendo-color-secondary-hover));
+    $kendo-color-secondary-hover: var(--kendo-color-secondary-hover, $kendo-color-secondary-hover);
+    $kendo-color-secondary-active-rgb: var(--kendo-color-secondary-active-rgb, k-hex-to-rgb($kendo-color-secondary-active));
+    $kendo-color-secondary-active: var(--kendo-color-secondary-active, $kendo-color-secondary-active);
+    $kendo-color-secondary-emphasis-rgb: var(--kendo-color-secondary-emphasis-rgb, k-hex-to-rgb($kendo-color-secondary-emphasis));
+    $kendo-color-secondary-emphasis: var(--kendo-color-secondary-emphasis, $kendo-color-secondary-emphasis);
+    $kendo-color-secondary-on-subtle-rgb: var(--kendo-color-secondary-on-subtle-rgb, k-hex-to-rgb($kendo-color-secondary-on-subtle));
+    $kendo-color-secondary-on-subtle: var(--kendo-color-secondary-on-subtle, $kendo-color-secondary-on-subtle);
+    $kendo-color-secondary-on-base-rgb: var(--kendo-color-secondary-on-base-rgb, k-hex-to-rgb($kendo-color-secondary-on-base));
+    $kendo-color-secondary-on-base: var(--kendo-color-secondary-on-base, $kendo-color-secondary-on-base);
+    $kendo-color-secondary-on-surface-rgb: var(--kendo-color-secondary-on-surface-rgb, k-hex-to-rgb($kendo-color-secondary-on-surface));
+    $kendo-color-secondary-on-surface: var(--kendo-color-secondary-on-surface, $kendo-color-secondary-on-surface);
+
+    $kendo-color-tertiary-rgb: var(--kendo-color-tertiary-rgb, k-hex-to-rgb($kendo-color-tertiary));
+    $kendo-color-tertiary: var(--kendo-color-tertiary, $kendo-color-tertiary);
+    $kendo-color-tertiary-hover-rgb: var(--kendo-color-tertiary-hover-rgb, k-hex-to-rgb($kendo-color-tertiary-hover));
+    $kendo-color-tertiary-hover: var(--kendo-color-tertiary-hover, $kendo-color-tertiary-hover);
+    $kendo-color-tertiary-active-rgb: var(--kendo-color-tertiary-active-rgb, k-hex-to-rgb($kendo-color-tertiary-active));
+    $kendo-color-tertiary-active: var(--kendo-color-tertiary-active, $kendo-color-tertiary-active);
+    $kendo-color-tertiary-emphasis-rgb: var(--kendo-color-tertiary-emphasis-rgb, k-hex-to-rgb($kendo-color-tertiary-emphasis));
+    $kendo-color-tertiary-emphasis: var(--kendo-color-tertiary-emphasis, $kendo-color-tertiary-emphasis);
+    $kendo-color-tertiary-on-subtle-rgb: var(--kendo-color-tertiary-on-subtle-rgb, k-hex-to-rgb($kendo-color-tertiary-on-subtle));
+    $kendo-color-tertiary-on-subtle: var(--kendo-color-tertiary-on-subtle, $kendo-color-tertiary-on-subtle);
+    $kendo-color-tertiary-on-base-rgb: var(--kendo-color-tertiary-on-base-rgb, k-hex-to-rgb($kendo-color-tertiary-on-base));
+    $kendo-color-tertiary-on-base: var(--kendo-color-tertiary-on-base, $kendo-color-tertiary-on-base);
+    $kendo-color-tertiary-on-surface-rgb: var(--kendo-color-tertiary-on-surface-rgb, k-hex-to-rgb($kendo-color-tertiary-on-surface));
+    $kendo-color-tertiary-on-surface: var(--kendo-color-tertiary-on-surface, $kendo-color-tertiary-on-surface);
+
+    $kendo-color-info-rgb: var(--kendo-color-info-rgb, k-hex-to-rgb($kendo-color-info));
+    $kendo-color-info: var(--kendo-color-info, $kendo-color-info);
+    $kendo-color-info-hover-rgb: var(--kendo-color-info-hover-rgb, k-hex-to-rgb($kendo-color-info-hover));
+    $kendo-color-info-hover: var(--kendo-color-info-hover, $kendo-color-info-hover);
+    $kendo-color-info-active-rgb: var(--kendo-color-info-active-rgb, k-hex-to-rgb($kendo-color-info-active));
+    $kendo-color-info-active: var(--kendo-color-info-active, $kendo-color-info-active);
+    $kendo-color-info-emphasis-rgb: var(--kendo-color-info-emphasis-rgb, k-hex-to-rgb($kendo-color-info-emphasis));
+    $kendo-color-info-emphasis: var(--kendo-color-info-emphasis, $kendo-color-info-emphasis);
+    $kendo-color-info-on-subtle-rgb: var(--kendo-color-info-on-subtle-rgb, k-hex-to-rgb($kendo-color-info-on-subtle));
+    $kendo-color-info-on-subtle: var(--kendo-color-info-on-subtle, $kendo-color-info-on-subtle);
+    $kendo-color-info-on-base-rgb: var(--kendo-color-info-on-base-rgb, k-hex-to-rgb($kendo-color-info-on-base));
+    $kendo-color-info-on-base: var(--kendo-color-info-on-base, $kendo-color-info-on-base);
+    $kendo-color-info-on-surface-rgb: var(--kendo-color-info-on-surface-rgb, k-hex-to-rgb($kendo-color-info-on-surface));
+    $kendo-color-info-on-surface: var(--kendo-color-info-on-surface, $kendo-color-info-on-surface);
+
+    $kendo-color-success-rgb: var(--kendo-color-success-rgb, k-hex-to-rgb($kendo-color-success));
+    $kendo-color-success: var(--kendo-color-success, $kendo-color-success);
+    $kendo-color-success-hover-rgb: var(--kendo-color-success-hover-rgb, k-hex-to-rgb($kendo-color-success-hover));
+    $kendo-color-success-hover: var(--kendo-color-success-hover, $kendo-color-success-hover);
+    $kendo-color-success-active-rgb: var(--kendo-color-success-active-rgb, k-hex-to-rgb($kendo-color-success-active));
+    $kendo-color-success-active: var(--kendo-color-success-active, $kendo-color-success-active);
+    $kendo-color-success-emphasis-rgb: var(--kendo-color-success-emphasis-rgb, k-hex-to-rgb($kendo-color-success-emphasis));
+    $kendo-color-success-emphasis: var(--kendo-color-success-emphasis, $kendo-color-success-emphasis);
+    $kendo-color-success-on-subtle-rgb: var(--kendo-color-success-on-subtle-rgb, k-hex-to-rgb($kendo-color-success-on-subtle));
+    $kendo-color-success-on-subtle: var(--kendo-color-success-on-subtle, $kendo-color-success-on-subtle);
+    $kendo-color-success-on-base-rgb: var(--kendo-color-success-on-base-rgb, k-hex-to-rgb($kendo-color-success-on-base));
+    $kendo-color-success-on-base: var(--kendo-color-success-on-base, $kendo-color-success-on-base);
+    $kendo-color-success-on-surface-rgb: var(--kendo-color-success-on-surface-rgb, k-hex-to-rgb($kendo-color-success-on-surface));
+    $kendo-color-success-on-surface: var(--kendo-color-success-on-surface, $kendo-color-success-on-surface);
+
+    $kendo-color-warning-rgb: var(--kendo-color-warning-rgb, k-hex-to-rgb($kendo-color-warning));
+    $kendo-color-warning: var(--kendo-color-warning, $kendo-color-warning);
+    $kendo-color-warning-hover-rgb: var(--kendo-color-warning-hover-rgb, k-hex-to-rgb($kendo-color-warning-hover));
+    $kendo-color-warning-hover: var(--kendo-color-warning-hover, $kendo-color-warning-hover);
+    $kendo-color-warning-active-rgb: var(--kendo-color-warning-active-rgb, k-hex-to-rgb($kendo-color-warning-active));
+    $kendo-color-warning-active: var(--kendo-color-warning-active, $kendo-color-warning-active);
+    $kendo-color-warning-emphasis-rgb: var(--kendo-color-warning-emphasis-rgb, k-hex-to-rgb($kendo-color-warning-emphasis));
+    $kendo-color-warning-emphasis: var(--kendo-color-warning-emphasis, $kendo-color-warning-emphasis);
+    $kendo-color-warning-on-subtle-rgb: var(--kendo-color-warning-on-subtle-rgb, k-hex-to-rgb($kendo-color-warning-on-subtle));
+    $kendo-color-warning-on-subtle: var(--kendo-color-warning-on-subtle, $kendo-color-warning-on-subtle);
+    $kendo-color-warning-on-base-rgb: var(--kendo-color-warning-on-base-rgb, k-hex-to-rgb($kendo-color-warning-on-base));
+    $kendo-color-warning-on-base: var(--kendo-color-warning-on-base, $kendo-color-warning-on-base);
+    $kendo-color-warning-on-surface-rgb: var(--kendo-color-warning-on-surface-rgb, k-hex-to-rgb($kendo-color-warning-on-surface));
+    $kendo-color-warning-on-surface: var(--kendo-color-warning-on-surface, $kendo-color-warning-on-surface);
+
+    $kendo-color-error-rgb: var(--kendo-color-error-rgb, k-hex-to-rgb($kendo-color-error));
+    $kendo-color-error: var(--kendo-color-error, $kendo-color-error);
+    $kendo-color-error-hover-rgb: var(--kendo-color-error-hover-rgb, k-hex-to-rgb($kendo-color-error-hover));
+    $kendo-color-error-hover: var(--kendo-color-error-hover, $kendo-color-error-hover);
+    $kendo-color-error-active-rgb: var(--kendo-color-error-active-rgb, k-hex-to-rgb($kendo-color-error-active));
+    $kendo-color-error-active: var(--kendo-color-error-active, $kendo-color-error-active);
+    $kendo-color-error-emphasis-rgb: var(--kendo-color-error-emphasis-rgb, k-hex-to-rgb($kendo-color-error-emphasis));
+    $kendo-color-error-emphasis: var(--kendo-color-error-emphasis, $kendo-color-error-emphasis);
+    $kendo-color-error-on-subtle-rgb: var(--kendo-color-error-on-subtle-rgb, k-hex-to-rgb($kendo-color-error-on-subtle));
+    $kendo-color-error-on-subtle: var(--kendo-color-error-on-subtle, $kendo-color-error-on-subtle);
+    $kendo-color-error-on-base-rgb: var(--kendo-color-error-on-base-rgb, k-hex-to-rgb($kendo-color-error-on-base));
+    $kendo-color-error-on-base: var(--kendo-color-error-on-base, $kendo-color-error-on-base);
+    $kendo-color-error-on-surface-rgb: var(--kendo-color-error-on-surface-rgb, k-hex-to-rgb($kendo-color-error-on-surface));
+    $kendo-color-error-on-surface: var(--kendo-color-error-on-surface, $kendo-color-error-on-surface);
+
+    $kendo-color-light-rgb: var(--kendo-color-light-rgb, k-hex-to-rgb($kendo-color-light));
+    $kendo-color-light: var(--kendo-color-light, $kendo-color-light);
+    $kendo-color-light-hover-rgb: var(--kendo-color-light-hover-rgb, k-hex-to-rgb($kendo-color-light-hover));
+    $kendo-color-light-hover: var(--kendo-color-light-hover, $kendo-color-light-hover);
+    $kendo-color-light-active-rgb: var(--kendo-color-light-active-rgb, k-hex-to-rgb($kendo-color-light-active));
+    $kendo-color-light-active: var(--kendo-color-light-active, $kendo-color-light-active);
+    $kendo-color-light-emphasis-rgb: var(--kendo-color-light-emphasis-rgb, k-hex-to-rgb($kendo-color-light-emphasis));
+    $kendo-color-light-emphasis: var(--kendo-color-light-emphasis, $kendo-color-light-emphasis);
+    $kendo-color-light-on-subtle-rgb: var(--kendo-color-light-on-subtle-rgb, k-hex-to-rgb($kendo-color-light-on-subtle));
+    $kendo-color-light-on-subtle: var(--kendo-color-light-on-subtle, $kendo-color-light-on-subtle);
+    $kendo-color-light-on-base-rgb: var(--kendo-color-light-on-base-rgb, k-hex-to-rgb($kendo-color-light-on-base));
+    $kendo-color-light-on-base: var(--kendo-color-light-on-base, $kendo-color-light-on-base);
+    $kendo-color-light-on-surface-rgb: var(--kendo-color-light-on-surface-rgb, k-hex-to-rgb($kendo-color-light-on-surface));
+    $kendo-color-light-on-surface: var(--kendo-color-light-on-surface, $kendo-color-light-on-surface);
+
+    $kendo-color-dark-rgb: var(--kendo-color-dark-rgb, k-hex-to-rgb($kendo-color-dark));
+    $kendo-color-dark: var(--kendo-color-dark, $kendo-color-dark);
+    $kendo-color-dark-hover-rgb: var(--kendo-color-dark-hover-rgb, k-hex-to-rgb($kendo-color-dark-hover));
+    $kendo-color-dark-hover: var(--kendo-color-dark-hover, $kendo-color-dark-hover);
+    $kendo-color-dark-active-rgb: var(--kendo-color-dark-active-rgb, k-hex-to-rgb($kendo-color-dark-active));
+    $kendo-color-dark-active: var(--kendo-color-dark-active, $kendo-color-dark-active);
+    $kendo-color-dark-emphasis-rgb: var(--kendo-color-dark-emphasis-rgb, k-hex-to-rgb($kendo-color-dark-emphasis));
+    $kendo-color-dark-emphasis: var(--kendo-color-dark-emphasis, $kendo-color-dark-emphasis);
+    $kendo-color-dark-on-subtle-rgb: var(--kendo-color-dark-on-subtle-rgb, k-hex-to-rgb($kendo-color-dark-on-subtle));
+    $kendo-color-dark-on-subtle: var(--kendo-color-dark-on-subtle, $kendo-color-dark-on-subtle);
+    $kendo-color-dark-on-base-rgb: var(--kendo-color-dark-on-base-rgb, k-hex-to-rgb($kendo-color-dark-on-base));
+    $kendo-color-dark-on-base: var(--kendo-color-dark-on-base, $kendo-color-dark-on-base);
+    $kendo-color-dark-on-surface-rgb: var(--kendo-color-dark-on-surface-rgb, k-hex-to-rgb($kendo-color-dark-on-surface));
+    $kendo-color-dark-on-surface: var(--kendo-color-dark-on-surface, $kendo-color-dark-on-surface);
+}
