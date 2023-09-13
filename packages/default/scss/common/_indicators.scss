@@ -1,0 +1,39 @@
+@include exports( "common/indicators/current-time" ) {
+
+    $kendo-current-time-width: 1px !default;
+    $kendo-current-time-color: #ff0000 !default;
+
+    // Layout
+    .k-current-time {
+        width: $kendo-current-time-width;
+        position: absolute;
+
+        &.k-current-time-arrow-left,
+        &.k-current-time-arrow-right,
+        &.k-current-time-arrow-down {
+            width: 0;
+            height: 0;
+            background: transparent;
+            border: 4px solid transparent;
+        }
+    }
+
+
+    // Theme
+    .k-current-time {
+        background: $kendo-current-time-color;
+
+        &.k-current-time-arrow-left {
+            border-right-color: $kendo-current-time-color;
+        }
+
+        &.k-current-time-arrow-right {
+            border-left-color: $kendo-current-time-color;
+        }
+
+        &.k-current-time-arrow-down {
+            border-top-color: $kendo-current-time-color;
+        }
+    }
+
+}
