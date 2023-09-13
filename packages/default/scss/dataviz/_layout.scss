@@ -453,14 +453,14 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-color-primary,
-        gauge-track: k-try-shade( $kendo-chart-bg )
+        gauge-track: if($kendo-enable-color-system, k-color( base ), k-try-shade( $kendo-chart-bg ))
     );
 
     @each $name, $value in $exported {
         $type: k-meta-type-of($value);
 
         .k-var--#{$name} {
-            @if $type == "color" {
+            @if $type == "color" or $type == "string" {
                 // background-color can store any color
                 background-color: $value;
             } @else if $type == "number" {

@@ -1,0 +1,88 @@
+@import "./_palettes.scss";
+
+@function get-base-palette($name) {
+    @return k-map-get($palettes, $name);
+}
+
+@function get-base-hue($palette, $hue) {
+    @return k-map-get(get-base-palette($palette), $hue);
+}
+
+@function get-base-contrast($palette, $hue) {
+    @return k-map-get(k-map-get(get-base-palette($palette), contrast), $hue);
+}
+
+// For a given hue in a palette, return the contrast color from the map of contrast palettes.
+@function material-contrast($palette, $hue) {
+    @return k-map-get(k-map-get($palette, contrast), $hue);
+}
+
+// Creates a map of hues to colors for a theme. This is used to define a theme palette in terms
+// of the Material Design hues.
+@function material-palette($base-palette, $main: 500, $lighter: 300, $darker: 700, $adjust-contrast: true) {
+    @if not(k-meta-type-of($base-palette) == map) {
+        $base-palette: get-base-palette($base-palette);
+    }
+
+    $main-contrast: material-contrast($base-palette, $main);
+
+    @if ($adjust-contrast == true) {
+        @if ($theme-type == dark) and ($main-contrast == $light-primary-text) {
+            $main: 200;
+            $lighter: 100;
+            $darker: 300;
+        }
+
+        @if ($theme-type == light) and ($main-contrast == $dark-primary-text) {
+            $main: 800;
+            $lighter: 700;
+            $darker: 900;
+        }
+    }
+
+    // stylelint-disable-next-line function-comma-newline-after
+    $result: k-map-merge(
+        $base-palette,
+        (
+            main: k-map-get($base-palette, $main),
+            lighter: k-map-get($base-palette, $lighter),
+            darker: k-map-get($base-palette, $darker),
+            main-contrast: material-contrast($base-palette, $main),
+            lighter-contrast: material-contrast($base-palette, $lighter),
+            darker-contrast: material-contrast($base-palette, $darker),
+        )
+    );
+
+    // For each hue in the palette, add a "-contrast" color to the map.
+    @each $hue, $color in $base-palette {
+        // stylelint-disable-next-line function-comma-newline-after
+        $result: k-map-merge(
+            $result,
+            (
+                "#{$hue}-contrast": material-contrast($base-palette, $hue),
+            )
+        );
+    }
+
+    @return $result;
+}
+
+// Gets a color from a theme palette (the output of material-palette).
+// The hue can be one of the standard values (500, A400, etc.), one of the three preconfigured
+// hues (main, lighter, darker), or any of the aforementioned prefixed with "-contrast".
+@function material-color($palette, $hue: main, $opacity: null) {
+    @if not(k-meta-type-of($palette) == map) {
+        $palette: get-base-palette($palette);
+    }
+
+    // If hueKey is a number between zero and one, then it actually contains an
+    // opacity value, so recall this function with the default hue and that given opacity.
+    @if k-meta-type-of($hue) == number and $hue >= 0 and $hue <= 1 {
+        @return material-color($palette, main, $hue);
+    }
+
+    $color: k-map-get($palette, $hue);
+    $opacity: if($opacity == null, k-color-alpha($color), $opacity);
+
+    @return rgba($color, $opacity);
+}

@@ -1,19 +1,4 @@
 @import "./core/functions/index.import.scss";
-@import "./_bootstrap-overrides.scss";
-@import "bootstrap/scss/_functions.scss";
-@import "bootstrap/scss/_variables.scss";
-
-/// The color white.
-/// Note: you cannot change this value.
-/// @type Color
-/// @group color-system
-$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
-
-/// The color black.
-/// Note: you cannot change this value.
-/// @type Color
-/// @group color-system
-$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
 
 // Options
 $kendo-enable-rounded: true !default;
@@ -114,107 +99,6 @@ $kendo-zindex-window: 2 !default;
 $kendo-zindex-loading: 100 !default;
 
 
-// Color settings
-$kendo-is-dark-theme: false !default;
-
-// Theme colors
-/// The color that focuses the user attention.
-/// Used for primary buttons and for elements of primary importance across the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-primary: $primary !default;
-$kendo-color-primary-lighter: k-color-tint( $kendo-color-primary, 2 ) !default;
-$kendo-color-primary-darker: k-color-shade( $kendo-color-primary, 2 ) !default;
-
-/// The color used along with the primary color denoted by $kendo-color-primary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-primary-contrast: k-contrast-color( $kendo-color-primary ) !default;
-
-/// The secondary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary: $secondary !default;
-$kendo-color-secondary-lighter: k-color-tint( $kendo-color-secondary, 2 ) !default;
-$kendo-color-secondary-darker: k-color-shade( $kendo-color-secondary, 2 ) !default;
-
-/// The color used along with the secondary color denoted by $kendo-color-secondary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary-contrast: k-contrast-color( $kendo-color-secondary ) !default;
-
-/// The tertiary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary: $purple !default;
-$kendo-color-tertiary-lighter: k-color-tint( $kendo-color-tertiary, 2 ) !default;
-$kendo-color-tertiary-darker: k-color-shade( $kendo-color-tertiary, 2 ) !default;
-
-/// The color used along with the tertiary color denoted by $kendo-color-tertiary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary-contrast: k-contrast-color( $kendo-color-tertiary ) !default;
-
-/// The color for informational messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-info: $info !default;
-$kendo-color-info-lighter: k-color-tint( $kendo-color-info, 2 ) !default;
-$kendo-color-info-darker: k-color-shade( $kendo-color-info, 2 ) !default;
-
-/// The color for success messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-success: $success !default;
-$kendo-color-success-lighter: k-color-tint( $kendo-color-success, 2 ) !default;
-$kendo-color-success-darker: k-color-shade( $kendo-color-success, 2 ) !default;
-
-/// The color for warning messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-warning: $warning !default;
-$kendo-color-warning-lighter: k-color-tint( $kendo-color-warning, 2 ) !default;
-$kendo-color-warning-darker: k-color-shade( $kendo-color-warning, 2 ) !default;
-
-/// The color for error messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-error: $danger !default;
-$kendo-color-error-lighter: k-color-tint( $kendo-color-error, 2 ) !default;
-$kendo-color-error-darker: k-color-shade( $kendo-color-error, 2 ) !default;
-
-/// The dark color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-dark: $dark !default;
-
-/// The light color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-light: $light !default;
-
-/// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
-/// @group color-system
-$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
-
-
-$kendo-theme-colors: (
-    "primary": $kendo-color-primary,
-    "secondary": $kendo-color-secondary,
-    "tertiary": $kendo-color-tertiary,
-    "info": $kendo-color-info,
-    "success": $kendo-color-success,
-    "warning": $kendo-color-warning,
-    "error": $kendo-color-error,
-    "dark": $kendo-color-dark,
-    "light": $kendo-color-light,
-    "inverse": $kendo-color-inverse
-) !default;
-
-
 // Typography
 
 /// Base font size across all components.
@@ -266,73 +150,6 @@ $kendo-font-weight-bold: $font-weight-bold !default;
 $kendo-letter-spacing: null !default;
 
 
-// Generic styles
-
-// Root styles
-$kendo-body-bg: $kendo-color-white !default;
-$kendo-body-text: k-contrast-color( $kendo-body-bg, $gray-900, $gray-100 ) !default;
-
-$kendo-subtle-text: if( $kendo-is-dark-theme, $gray-400, $text-muted ) !default;
-
-$kendo-app-bg: k-try-shade( $kendo-body-bg, .25 ) !default;
-$kendo-app-text: $kendo-body-text !default;
-$kendo-app-border: if( k-is-light( $kendo-app-bg ), $gray-300, $gray-700 ) !default;
-
-// Link
-$kendo-link-text: $link-color !default;
-$kendo-link-hover-text: $link-hover-color !default;
-
-
-// Components
-
-// Component
-/// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.
-/// @group component
-$kendo-component-bg: $kendo-body-bg !default;
-/// Text color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.
-/// @group component
-$kendo-component-text: $kendo-body-text !default;
-/// Border color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.
-/// @group component
-$kendo-component-border: if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 ) !default;
-
-
-/// The background of the components' chrome area.
-$kendo-base-bg: $gray-100 !default;
-/// The text color of the components' chrome area.
-$kendo-base-text: $kendo-body-text !default;
-/// The border color of the components' chrome area.
-$kendo-base-border: k-try-shade( $kendo-base-bg, 1 ) !default;
-/// The gradient background of the components' chrome area.
-$kendo-base-gradient: null !default;
-
-/// The background of hovered items.
-$kendo-hover-bg: $gray-200 !default;
-/// The text color of hovered items.
-$kendo-hover-text: $kendo-base-text !default;
-/// The border color of hovered items.
-$kendo-hover-border: k-try-shade( $kendo-hover-bg, 1 ) !default;
-/// The gradient background of hovered items.
-$kendo-hover-gradient: null !default;
-
-/// The background of selected items.
-$kendo-selected-bg: $kendo-color-primary !default;
-/// The text color of selected items.
-$kendo-selected-text: k-contrast-color( $kendo-selected-bg ) !default;
-/// The border color of selected items.
-$kendo-selected-border: k-try-shade( $kendo-selected-bg, 1 ) !default;
-/// The gradient background of selected items.
-$kendo-selected-gradient: null !default;
-
-$kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
-$kendo-selected-hover-text: $kendo-selected-text !default;
-$kendo-selected-hover-border: $kendo-base-border !default;
-$kendo-selected-hover-gradient: null !default;
-
-
 // TODO: refactor
 $kendo-focus-shadow: null !default;
 
@@ -353,25 +170,6 @@ $kendo-disabled-styling: (
 // Generic styles
 
 // TODO: refactor once we extract drag drop as separate module
-
-
-// Header
-$kendo-component-header-bg: $kendo-base-bg !default;
-$kendo-component-header-text: $kendo-component-text !default;
-$kendo-component-header-border: $kendo-component-border !default;
-$kendo-component-header-gradient: null !default;
-
-
-// Validator
-$kendo-invalid-bg: null !default;
-$kendo-invalid-text: $kendo-color-error !default;
-$kendo-invalid-border: $kendo-color-error !default;
-$kendo-invalid-shadow: 0 0 0 .25rem rgba( $kendo-invalid-border, .25 ) !default;
-
-$kendo-valid-bg: null !default;
-$kendo-valid-text: $kendo-color-success !default;
-$kendo-valid-border: $kendo-color-success !default;
-$kendo-valid-shadow: 0 0 0 .25rem rgba( $kendo-valid-border, .25 ) !default;
 
 // Loading
 $kendo-loading-opacity: .3 !default;

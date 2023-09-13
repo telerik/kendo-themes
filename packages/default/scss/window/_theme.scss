@@ -29,7 +29,7 @@
     // Window theme colors
     @each $name, $color in $kendo-window-theme-colors {
         .k-window-#{$name} .k-window-titlebar {
-            color: k-contrast-legacy( $color );
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
             background-color: $color;
         }
     }
