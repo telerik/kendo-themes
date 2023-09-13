@@ -1,0 +1,33 @@
+@use "@progress/kendo-theme-core/scss/index.import.scss" as *;
+
+@if($kendo-new-colors) {
+    $kendo-body-bg: null;
+    $kendo-body-text: null;
+    $kendo-component-bg: null;
+    $kendo-component-text: null;
+    $kendo-component-border: null;
+    $kendo-hover-bg: null;
+    $kendo-hover-text: null;
+    $kendo-hover-border: null;
+    $kendo-selected-bg: null;
+    $kendo-selected-text: null;
+    $kendo-selected-border: null;
+    $kendo-selected-hover-bg: null;
+    $kendo-selected-hover-text: null;
+    $kendo-selected-hover-border: null;
+    $kendo-focus-outline: null;
+    $kendo-subtle-text: null;
+    $kendo-link-text: null;
+    $kendo-link-hover-text: null;
+    $kendo-invalid-bg: null;
+    $kendo-invalid-text: null;
+    $kendo-invalid-border: null;
+    $kendo-invalid-shadow: null;
+    $kendo-disabled-bg: null;
+    $kendo-disabled-text: null;
+    $kendo-disabled-border: null;
+    $kendo-loading-bg: null;
+    $kendo-loading-text: null;
+    $kendo-palettes: ();
+    $kendo-theme-colors: ();
+}

@@ -1,8 +1,12 @@
-@import "./_functions.import.scss";
+@import "@progress/kendo-theme-core/scss/functions/index.import.scss";
+@import "@progress/kendo-theme-core/scss/color-system/constants";
+@import "./palettes";
+@import "./functions";
 
 // Config
 $kendo-new-colors: false !default;
 
+// TODO!
 // Colors
 $kendo-colors: (
     // Misc
@@ -122,25 +126,59 @@ $kendo-colors: (
     dark-on-surface: null
 ) !default;
 
-@function k-color($key, $rgb: false) {
-    $_color: k-map-get($kendo-colors, $key);
+$kendo-is-dark-theme: false !default;
 
-    @if ($_color) {
-        @if ($rgb) {
-            @return var(--kendo-color-#{$key}-rgb, k-hex-to-rgb($_color));
-        } @else {
-            @return var(--kendo-color-#{$key}, $_color);
-        }
-    } @else {
-        @error "Color Variable \`#{$key}\` does not exists in the color collection.";
-    }
-}
+// Adapted from https://github.com/angular/material2/blob/master/src/lib/core/theming/_palette.scss
+// Adapted from https://github.com/angular/components/blob/master/src/material/core/theming/_theming.scss
 
-@mixin color-system--styles() {
-    :root {
-        @each $key, $value in $kendo-colors {
-            --kendo-color-#{$key}: #{$value};
-            --kendo-color-#{$key}-rgb: #{k-hex-to-rgb($value)};
-        }
-    }
+$dark-primary-text: rgba(black, 0.87) !default;
+$dark-secondary-text: rgba(black, 0.54) !default;
+$dark-disabled-text: rgba(black, 0.38) !default;
+$dark-dividers: rgba(black, 0.12) !default;
+$light-primary-text: $kendo-color-white !default;
+$light-secondary-text: rgba(white, 0.7) !default;
+$light-disabled-text: rgba(white, 0.5) !default;
+$light-dividers: rgba(white, 0.12) !default;
+
+$material-dark-complimentary: (
+    is-dark: true,
+    body-bg: #121212,
+    body-text: $light-primary-text,
+    subtle-text: $light-secondary-text,
+    disabled-text: $light-disabled-text,
+    component-bg: #121212,
+    component-text: $light-primary-text,
+    component-border: $light-dividers,
+    base-bg: get-base-hue(gray, 900),
+    hover-bg: rgba(white, 0.08),
+    focus-bg: rgba(white, 0.24),
+    elevation: $kendo-color-black,
+) !default;
+
+$material-light-complimentary: (
+    is-dark: false,
+    body-bg: $kendo-color-white,
+    body-text: get-base-contrast(gray, 50),
+    subtle-text: $dark-secondary-text,
+    disabled-text: $dark-disabled-text,
+    component-bg: $kendo-color-white,
+    component-text: $dark-primary-text,
+    component-border: $dark-dividers,
+    base-bg: $kendo-color-white,
+    hover-bg: rgba(black, 0.04),
+    focus-bg: rgba(black, 0.12),
+    elevation: $kendo-color-black,
+) !default;
+
+// Creates a container object for a light theme to be given to individual component theme mixins.
+@function material-theme($kendo-color-primary, $kendo-color-secondary, $theme-type, $warn: material-palette(red)) {
+    $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
+    @return k-map-merge(
+        (
+            primary: $kendo-color-primary,
+            secondary: $kendo-color-secondary,
+            warn: $warn,
+        ),
+        $complimentary
+    );
 }
