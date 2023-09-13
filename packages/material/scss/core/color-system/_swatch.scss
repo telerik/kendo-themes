@@ -1,0 +1,186 @@
+@import "@progress/kendo-theme-core/scss/functions/index.import.scss";
+@import "@progress/kendo-theme-core/scss/color-system/_constants.scss";
+@import "./_palettes.scss";
+@import "./_functions.scss";
+
+// Config
+$kendo-new-colors: false !default;
+
+// TODO!
+// Colors
+$_default-colors: (
+    // Misc
+    surface: null,
+    surface-alt: null,
+    border: null,
+    border-alt: null,
+    // Base
+    base-subtle: null,
+    base-subtle-hover: null,
+    base-subtle-active: null,
+    base: null,
+    base-hover: null,
+    base-active: null,
+    base-emphasis: null,
+    base-on-subtle: null,
+    base-on-base: null,
+    base-on-surface: null,
+    // Primary
+    primary-subtle: null,
+    primary-subtle-hover: null,
+    primary-subtle-active: null,
+    primary: null,
+    primary-hover: null,
+    primary-active: null,
+    primary-emphasis: null,
+    primary-on-subtle: null,
+    primary-on-base: null,
+    primary-on-surface: null,
+    // Secondary
+    secondary-subtle: null,
+    secondary-subtle-hover: null,
+    secondary-subtle-active: null,
+    secondary: null,
+    secondary-hover: null,
+    secondary-active: null,
+    secondary-emphasis: null,
+    secondary-on-subtle: null,
+    secondary-on-base: null,
+    secondary-on-surface: null,
+    // Tertiary
+    tertiary-subtle: null,
+    tertiary-subtle-hover: null,
+    tertiary-subtle-active: null,
+    tertiary: null,
+    tertiary-hover: null,
+    tertiary-active: null,
+    tertiary-emphasis: null,
+    tertiary-on-subtle: null,
+    tertiary-on-base: null,
+    tertiary-on-surface: null,
+    // Info
+    info-subtle: null,
+    info-subtle-hover: null,
+    info-subtle-active: null,
+    info: null,
+    info-hover: null,
+    info-active: null,
+    info-emphasis: null,
+    info-on-subtle: null,
+    info-on-base: null,
+    info-on-surface: null,
+    // Success
+    success-subtle: null,
+    success-subtle-hover: null,
+    success-subtle-active: null,
+    success: null,
+    success-hover: null,
+    success-active: null,
+    success-emphasis: null,
+    success-on-subtle: null,
+    success-on-base: null,
+    success-on-surface: null,
+    // Warning
+    warning-subtle: null,
+    warning-subtle-hover: null,
+    warning-subtle-active: null,
+    warning: null,
+    warning-hover: null,
+    warning-active: null,
+    warning-emphasis: null,
+    warning-on-subtle: null,
+    warning-on-base: null,
+    warning-on-surface: null,
+    // Error
+    error-subtle: null,
+    error-subtle-hover: null,
+    error-subtle-active: null,
+    error: null,
+    error-hover: null,
+    error-active: null,
+    error-emphasis: null,
+    error-on-subtle: null,
+    error-on-base: null,
+    error-on-surface: null,
+    // Light
+    light-subtle: null,
+    light-subtle-hover: null,
+    light-subtle-active: null,
+    light: null,
+    light-hover: null,
+    light-active: null,
+    light-emphasis: null,
+    light-on-subtle: null,
+    light-on-base: null,
+    light-on-surface: null,
+    // Dark
+    dark-subtle: null,
+    dark-subtle-hover: null,
+    dark-subtle-active: null,
+    dark: null,
+    dark-hover: null,
+    dark-active: null,
+    dark-emphasis: null,
+    dark-on-subtle: null,
+    dark-on-base: null,
+    dark-on-surface: null
+) !default;
+
+$kendo-colors: $_default-colors !default;
+
+$kendo-is-dark-theme: false !default;
+
+// Adapted from https://github.com/angular/material2/blob/master/src/lib/core/theming/_palette.scss
+// Adapted from https://github.com/angular/components/blob/master/src/material/core/theming/_theming.scss
+
+$dark-primary-text: rgba(black, 0.87) !default;
+$dark-secondary-text: rgba(black, 0.54) !default;
+$dark-disabled-text: rgba(black, 0.38) !default;
+$dark-dividers: rgba(black, 0.12) !default;
+$light-primary-text: $kendo-color-white !default;
+$light-secondary-text: rgba(white, 0.7) !default;
+$light-disabled-text: rgba(white, 0.5) !default;
+$light-dividers: rgba(white, 0.12) !default;
+
+$material-dark-complimentary: (
+    is-dark: true,
+    body-bg: #121212,
+    body-text: $light-primary-text,
+    subtle-text: $light-secondary-text,
+    disabled-text: $light-disabled-text,
+    component-bg: #121212,
+    component-text: $light-primary-text,
+    component-border: $light-dividers,
+    base-bg: get-base-hue(gray, 900),
+    hover-bg: rgba(white, 0.08),
+    focus-bg: rgba(white, 0.24),
+    elevation: $kendo-color-black,
+) !default;
+
+$material-light-complimentary: (
+    is-dark: false,
+    body-bg: $kendo-color-white,
+    body-text: get-base-contrast(gray, 50),
+    subtle-text: $dark-secondary-text,
+    disabled-text: $dark-disabled-text,
+    component-bg: $kendo-color-white,
+    component-text: $dark-primary-text,
+    component-border: $dark-dividers,
+    base-bg: $kendo-color-white,
+    hover-bg: rgba(black, 0.04),
+    focus-bg: rgba(black, 0.12),
+    elevation: $kendo-color-black,
+) !default;
+
+// Creates a container object for a light theme to be given to individual component theme mixins.
+@function material-theme($kendo-color-primary, $kendo-color-secondary, $theme-type, $warn: material-palette(red)) {
+    $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
+    @return k-map-merge(
+        (
+            primary: $kendo-color-primary,
+            secondary: $kendo-color-secondary,
+            warn: $warn,
+        ),
+        $complimentary
+    );
+}

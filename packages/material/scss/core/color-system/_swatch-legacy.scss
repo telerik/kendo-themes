@@ -1,0 +1,38 @@
+@if ($kendo-new-colors) {
+    $dark-primary-text: null;
+    $dark-secondary-text: null;
+    $dark-disabled-text: null;
+    $dark-dividers: null;
+    $light-primary-text: null;
+    $light-secondary-text: null;
+    $light-disabled-text: null;
+    $light-dividers: null;
+    $material-dark-complimentary: (
+        is-dark: true,
+        body-bg: null,
+        body-text: null,
+        subtle-text: null,
+        disabled-text: null,
+        component-bg: null,
+        component-text: null,
+        component-border: null,
+        base-bg: null,
+        hover-bg: null,
+        focus-bg: null,
+        elevation: null,
+    );
+    $material-light-complimentary: (
+        is-dark: false,
+        body-bg: null,
+        body-text: null,
+        subtle-text: null,
+        disabled-text: null,
+        component-bg: null,
+        component-text: null,
+        component-border: null,
+        base-bg: null,
+        hover-bg: null,
+        focus-bg: null,
+        elevation: null,
+    );
+}

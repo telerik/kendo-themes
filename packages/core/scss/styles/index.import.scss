@@ -5,7 +5,7 @@
 @import "./_base.scss";
 @import "./_loading.scss";
 @import "./_selection.scss";
-
+@import "./_colors.scss";
 
 @mixin kendo-core--styles() {
     @include kendo-core--styles--accessibility();
@@ -15,4 +15,5 @@
     @include kendo-core--styles--base();
     @include kendo-core--styles--loading();
     @include kendo-core--styles--selection();
+    @include kendo-core--styles--colors();
 }

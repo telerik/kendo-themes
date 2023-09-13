@@ -1,4 +1,6 @@
-@use "./index.scss" as kendo-theme;
+@use "./index.scss" as kendo-theme with (
+    $kendo-new-colors: true,
+);
 
 @include kendo-theme.config();
 @include kendo-theme.styles();

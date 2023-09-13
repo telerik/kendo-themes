@@ -1,8 +1,7 @@
 @use "sass:map";
 
-// Palettes
-@forward "./color-system/palettes";
-@use "./color-system/palettes" as *;
+// Swatch
+@use "./color-system/swatch" as *;
 
 // Elevation
 @use "./elevation" as *;
@@ -11,11 +10,46 @@
 // Variables
 @forward "./variables";
 
-@forward "@progress/kendo-theme-core/scss/index.import.scss"  with (
-    $kendo-palettes: $kendo-fluent-palettes,
+@forward "@progress/kendo-theme-core/scss/index.import.scss" with (
+    $kendo-new-colors: $kendo-new-colors !default,
+    // Color System
+    $kendo-colors: $kendo-colors !default,
+    // Legacy
+    $kendo-theme-colors: $kendo-theme-colors !default,
+    $kendo-palettes: $kendo-palettes !default,
+    $kendo-body-bg: $kendo-body-bg !default,
+    $kendo-body-text: $kendo-body-text !default,
+    $kendo-component-bg: $kendo-component-bg !default,
+    $kendo-component-text: $kendo-component-text !default,
+    $kendo-component-border: $kendo-component-border !default,
+    $kendo-hover-bg: $kendo-hover-bg !default,
+    $kendo-hover-text: $kendo-hover-text !default,
+    $kendo-hover-border: $kendo-hover-border !default,
+    $kendo-selected-bg: $kendo-selected-bg !default,
+    $kendo-selected-text: $kendo-selected-text !default,
+    $kendo-selected-border: $kendo-selected-border !default,
+    $kendo-selected-hover-bg: $kendo-selected-hover-bg !default,
+    $kendo-selected-hover-text: $kendo-selected-hover-text !default,
+    $kendo-selected-hover-border: $kendo-selected-hover-border !default,
+    $kendo-focus-outline: $kendo-focus-outline !default,
+    $kendo-subtle-text: $kendo-subtle-text !default,
+    $kendo-link-text: $kendo-link-text !default,
+    $kendo-link-hover-text: $kendo-link-hover-text !default,
+    $kendo-invalid-bg: $kendo-invalid-bg !default,
+    $kendo-invalid-text: $kendo-invalid-text !default,
+    $kendo-invalid-border: $kendo-invalid-border !default,
+    $kendo-invalid-shadow: $kendo-invalid-shadow !default,
+    $kendo-disabled-bg: $kendo-disabled-bg !default,
+    $kendo-disabled-text: $kendo-disabled-text !default,
+    $kendo-disabled-border: $kendo-disabled-border !default,
+    $kendo-loading-bg: $kendo-loading-bg !default,
+    $kendo-loading-text: $kendo-loading-text !default,
+    // Elevation
     $_default-elevation: $kendo-elevation,
-    $kendo-elevation: $kendo-elevation !default,
+    $kendo-elevation: $kendo-elevation !default
 );
+
+@forward "./color-system/swatch-legacy";
 
 // Helpers
 @use "./helpers";

@@ -1,0 +1,74 @@
+@use "@progress/kendo-theme-core/scss/index.import.scss" as *;
+
+@if($kendo-new-colors) {
+    $kendo-body-bg: null;
+    $kendo-body-text: null;
+    $kendo-component-bg: null;
+    $kendo-component-text: null;
+    $kendo-component-border: null;
+    $kendo-hover-bg: null;
+    $kendo-hover-text: null;
+    $kendo-hover-border: null;
+    $kendo-selected-bg: null;
+    $kendo-selected-text: null;
+    $kendo-selected-border: null;
+    $kendo-selected-hover-bg: null;
+    $kendo-selected-hover-text: null;
+    $kendo-selected-hover-border: null;
+    $kendo-focus-outline: null;
+    $kendo-subtle-text: null;
+    $kendo-link-text: null;
+    $kendo-link-hover-text: null;
+    $kendo-invalid-bg: null;
+    $kendo-invalid-text: null;
+    $kendo-invalid-border: null;
+    $kendo-invalid-shadow: null;
+    $kendo-disabled-bg: null;
+    $kendo-disabled-text: null;
+    $kendo-disabled-border: null;
+    $kendo-loading-bg: null;
+    $kendo-loading-text: null;
+    $kendo-palettes: ();
+    $kendo-theme-colors: ();
+}
+
+:root {
+    --kendo-body-bg: #{$kendo-body-bg};
+    --kendo-body-text: #{$kendo-body-text};
+
+    --kendo-component-bg: #{$kendo-component-bg};
+    --kendo-component-text: #{$kendo-component-text};
+    --kendo-component-border: #{$kendo-component-border};
+
+    --kendo-link-text: #{$kendo-link-text};
+    --kendo-link-hover-text: #{$kendo-link-hover-text};
+
+    --kendo-disabled-bg: #{$kendo-disabled-bg};
+    --kendo-disabled-text: #{$kendo-disabled-text};
+    --kendo-disabled-border: #{$kendo-disabled-border};
+
+    --kendo-hover-bg: #{$kendo-hover-bg};
+    --kendo-hover-text: #{$kendo-hover-text};
+    --kendo-hover-border: #{$kendo-hover-border};
+
+    --kendo-selected-bg: #{$kendo-selected-bg};
+    --kendo-selected-text: #{$kendo-selected-text};
+    --kendo-selected-border: #{$kendo-selected-border};
+
+    --kendo-selected-hover-bg: #{$kendo-selected-hover-bg};
+    --kendo-selected-hover-text: #{$kendo-selected-hover-text};
+    --kendo-selected-hover-border: #{$kendo-selected-hover-border};
+
+    --kendo-focus-outline: #{$kendo-focus-outline};
+
+    --kendo-subtle-text: #{$kendo-subtle-text};
+
+    --kendo-invalid-bg: #{$kendo-invalid-bg};
+    --kendo-invalid-text: #{$kendo-invalid-text};
+    --kendo-invalid-border: #{$kendo-invalid-border};
+    --kendo-invalid-shadow: #{$kendo-invalid-shadow};
+
+    --kendo-border-radius-sm: #{$kendo-border-radius-sm};
+    --kendo-border-radius-md: #{$kendo-border-radius-md};
+    --kendo-border-radius-lg: #{$kendo-border-radius-lg};
+}

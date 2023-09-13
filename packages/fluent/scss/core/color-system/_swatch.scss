@@ -1,0 +1,205 @@
+@use "@progress/kendo-theme-core/scss/color-system/_functions.import.scss" as functions;
+@use "@progress/kendo-theme-core/scss/color-system/_constants.scss" as constants;
+@use "./palettes" as *;
+@forward "./palettes";
+
+// TODO!
+
+// Config
+$kendo-new-colors: false !default;
+
+// Colors
+$_default-colors: (
+    // Misc
+    surface: null,
+    surface-alt: null,
+    border: null,
+    border-alt: null,
+    // Base
+    base-subtle: null,
+    base-subtle-hover: null,
+    base-subtle-active: null,
+    base: null,
+    base-hover: null,
+    base-active: null,
+    base-emphasis: null,
+    base-on-subtle: null,
+    base-on-base: null,
+    base-on-surface: null,
+    // Primary
+    primary-subtle: null,
+    primary-subtle-hover: null,
+    primary-subtle-active: null,
+    primary: null,
+    primary-hover: null,
+    primary-active: null,
+    primary-emphasis: null,
+    primary-on-subtle: null,
+    primary-on-base: null,
+    primary-on-surface: null,
+    // Secondary
+    secondary-subtle: null,
+    secondary-subtle-hover: null,
+    secondary-subtle-active: null,
+    secondary: null,
+    secondary-hover: null,
+    secondary-active: null,
+    secondary-emphasis: null,
+    secondary-on-subtle: null,
+    secondary-on-base: null,
+    secondary-on-surface: null,
+    // Tertiary
+    tertiary-subtle: null,
+    tertiary-subtle-hover: null,
+    tertiary-subtle-active: null,
+    tertiary: null,
+    tertiary-hover: null,
+    tertiary-active: null,
+    tertiary-emphasis: null,
+    tertiary-on-subtle: null,
+    tertiary-on-base: null,
+    tertiary-on-surface: null,
+    // Info
+    info-subtle: null,
+    info-subtle-hover: null,
+    info-subtle-active: null,
+    info: null,
+    info-hover: null,
+    info-active: null,
+    info-emphasis: null,
+    info-on-subtle: null,
+    info-on-base: null,
+    info-on-surface: null,
+    // Success
+    success-subtle: null,
+    success-subtle-hover: null,
+    success-subtle-active: null,
+    success: null,
+    success-hover: null,
+    success-active: null,
+    success-emphasis: null,
+    success-on-subtle: null,
+    success-on-base: null,
+    success-on-surface: null,
+    // Warning
+    warning-subtle: null,
+    warning-subtle-hover: null,
+    warning-subtle-active: null,
+    warning: null,
+    warning-hover: null,
+    warning-active: null,
+    warning-emphasis: null,
+    warning-on-subtle: null,
+    warning-on-base: null,
+    warning-on-surface: null,
+    // Error
+    error-subtle: null,
+    error-subtle-hover: null,
+    error-subtle-active: null,
+    error: null,
+    error-hover: null,
+    error-active: null,
+    error-emphasis: null,
+    error-on-subtle: null,
+    error-on-base: null,
+    error-on-surface: null,
+    // Light
+    light-subtle: null,
+    light-subtle-hover: null,
+    light-subtle-active: null,
+    light: null,
+    light-hover: null,
+    light-active: null,
+    light-emphasis: null,
+    light-on-subtle: null,
+    light-on-base: null,
+    light-on-surface: null,
+    // Dark
+    dark-subtle: null,
+    dark-subtle-hover: null,
+    dark-subtle-active: null,
+    dark: null,
+    dark-hover: null,
+    dark-active: null,
+    dark-emphasis: null,
+    dark-on-subtle: null,
+    dark-on-base: null,
+    dark-on-surface: null
+) !default;
+
+$kendo-colors: $_default-colors !default;
+
+// Legacy
+
+// Root styles
+$kendo-body-bg: constants.$kendo-color-white !default;
+$kendo-body-text: functions.k-get-theme-color-var(neutral-160) !default;
+
+// Component styles
+$kendo-component-bg: $kendo-body-bg !default;
+$kendo-component-text: $kendo-body-text !default;
+$kendo-component-border: functions.k-get-theme-color-var(neutral-30) !default;
+
+// States styles
+$kendo-hover-bg: functions.k-get-theme-color-var(neutral-20) !default;
+$kendo-hover-text: functions.k-get-theme-color-var(neutral-190) !default;
+$kendo-hover-border: functions.k-get-theme-color-var(neutral-20) !default;
+
+$kendo-selected-bg: functions.k-get-theme-color-var(neutral-30) !default;
+$kendo-selected-text: functions.k-get-theme-color-var(neutral-160) !default;
+$kendo-selected-border: functions.k-get-theme-color-var(neutral-130) !default;
+
+$kendo-selected-hover-bg: functions.k-get-theme-color-var(neutral-40) !default;
+$kendo-selected-hover-text: functions.k-get-theme-color-var(neutral-190) !default;
+$kendo-selected-hover-border: functions.k-get-theme-color-var(neutral-130) !default;
+
+$kendo-focus-outline: functions.k-get-theme-color-var(neutral-130) !default;
+
+$kendo-subtle-text: functions.k-get-theme-color-var(neutral-130) !default;
+
+// Link
+$kendo-link-text: functions.k-get-theme-color-var(primary-100) !default;
+$kendo-link-hover-text: functions.k-get-theme-color-var(primary-120) !default;
+
+// Validator
+$kendo-invalid-bg: initial !default;
+$kendo-invalid-text: functions.k-get-theme-color-var(error-190) !default;
+$kendo-invalid-border: functions.k-get-theme-color-var(error-190) !default;
+$kendo-invalid-shadow: null !default;
+
+// Disabled Styling
+$kendo-disabled-bg: functions.k-get-theme-color-var(neutral-20) !default;
+$kendo-disabled-text: functions.k-get-theme-color-var(neutral-90) !default;
+$kendo-disabled-border: transparent !default;
+
+// Loading
+$kendo-loading-bg: $kendo-component-bg !default;
+$kendo-loading-text: currentColor !default;
+
+$kendo-theme-colors: (
+    primary: (
+        text: functions.k-get-theme-color-var(primary-130),
+        bg: functions.k-get-theme-color-var(primary-20),
+        border: functions.k-get-theme-color-var(primary-20),
+    ),
+    info: (
+        text: functions.k-get-theme-color-var(info-190),
+        bg: functions.k-get-theme-color-var(info-20),
+        border: functions.k-get-theme-color-var(info-20),
+    ),
+    success: (
+        text: functions.k-get-theme-color-var(success-190),
+        bg: functions.k-get-theme-color-var(success-20),
+        border: functions.k-get-theme-color-var(success-20),
+    ),
+    warning: (
+        text: functions.k-get-theme-color-var(neutral-160),
+        bg: functions.k-get-theme-color-var(warning-20),
+        border: functions.k-get-theme-color-var(warning-20),
+    ),
+    error: (
+        text: functions.k-get-theme-color-var(error-190),
+        bg: functions.k-get-theme-color-var(error-20),
+        border: functions.k-get-theme-color-var(error-20),
+    ),
+) !default;
