@@ -1020,7 +1020,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-picker-flat-bg</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>none</code></td>
     <td></td>
 </tr>
 <tr>

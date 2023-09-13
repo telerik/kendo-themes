@@ -1,3 +1,6 @@
 export * from "./checkbox.spec";
-export * from "./templates/checkbox-label";
+export * from "./checkbox-group.spec";
+export * from "./checkbox-item.spec";
+export * from "./templates/checkbox-with-label-after";
+export * from "./templates/checkbox-with-label-before";
 export * from "./templates/checkbox-normal";
