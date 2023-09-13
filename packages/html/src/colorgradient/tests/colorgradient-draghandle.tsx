@@ -1,4 +1,4 @@
-import { ColorGradient } from '../../colorgradient';
+import { ColorGradientNormal } from '../../colorgradient';
 
 
 const styles = `
@@ -22,15 +22,15 @@ export default () =>(
             <span>DragHandle Hover</span>
 
             <section>
-                <ColorGradient />
+                <ColorGradientNormal />
             </section>
 
             <section>
-                <ColorGradient focusHandle />
+                <ColorGradientNormal focusHandle />
             </section>
 
             <section>
-                <ColorGradient hoverHandle />
+                <ColorGradientNormal hoverHandle />
             </section>
         </div>
     </>
