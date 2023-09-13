@@ -536,20 +536,6 @@
         }
     }
 
-    // Current time
-    .k-current-time {
-        position: absolute;
-
-        &.k-current-time-arrow-left,
-        &.k-current-time-arrow-right,
-        &.k-current-time-arrow-down {
-            width: 0;
-            height: 0;
-            background: transparent;
-            border: 4px solid transparent;
-        }
-    }
-
     // Draging hint
     .k-event-drag-hint {
         opacity: .5;

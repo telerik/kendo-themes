@@ -146,10 +146,6 @@ $kendo-scheduler-datecolumn-width: 12em !default;
 /// @group scheduler
 $kendo-scheduler-timecolumn-width: 11em !default;
 
-/// Color of the current time marker in the scheduler.
-/// @group scheduler
-$kendo-scheduler-current-time-color: #ff0000 !default;
-
 /// Background color of the non-working hours in the scheduler.
 /// @group scheduler
 $kendo-scheduler-nonwork-bg: k-get-theme-color-var( neutral-10 ) !default;
