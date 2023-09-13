@@ -1,4 +1,4 @@
-import { ColorPalette } from '../../colorpalette';
+import { ColorPaletteNormal } from '../../colorpalette';
 import { PALETTEPRESETS } from '../colorpalette-presets';
 
 
@@ -12,19 +12,19 @@ export default () =>(
             <span>Clarity</span>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.office}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.office}></ColorPaletteNormal>
             </section>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.apex}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.apex}></ColorPaletteNormal>
             </section>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.austin}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.austin}></ColorPaletteNormal>
             </section>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.clarity}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.clarity}></ColorPaletteNormal>
             </section>
 
             <span>Slipstream</span>
@@ -33,19 +33,19 @@ export default () =>(
             <span>Hardcover</span>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.slipstream}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.slipstream}></ColorPaletteNormal>
             </section>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.metro}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.metro}></ColorPaletteNormal>
             </section>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.flow}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.flow}></ColorPaletteNormal>
             </section>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.hardcover}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.hardcover}></ColorPaletteNormal>
             </section>
 
             <span>Trek</span>
@@ -54,20 +54,20 @@ export default () =>(
             <span>Monochrome</span>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.trek}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.trek}></ColorPaletteNormal>
             </section>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.verve}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.verve}></ColorPaletteNormal>
             </section>
 
             <section>
 
-                <ColorPalette palette={PALETTEPRESETS.basic}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.basic}></ColorPaletteNormal>
             </section>
 
             <section>
-                <ColorPalette palette={PALETTEPRESETS.monochrome}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.monochrome}></ColorPaletteNormal>
             </section>
 
             <span>Custom</span>
@@ -76,7 +76,7 @@ export default () =>(
             <span></span>
 
             <section>
-                <ColorPalette palette={[ "#37399b", "#a81c85", "#0ab3cc", "#2f7d20", "#a21616" ]}></ColorPalette>
+                <ColorPaletteNormal palette={[ "#37399b", "#a81c85", "#0ab3cc", "#2f7d20", "#a21616" ]}></ColorPaletteNormal>
             </section>
         </div>
     </>

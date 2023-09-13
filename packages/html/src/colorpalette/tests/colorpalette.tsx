@@ -1,4 +1,4 @@
-import { ColorPalette } from '../../colorpalette';
+import { ColorPaletteNormal } from '../../colorpalette';
 import { PALETTEPRESETS } from '../colorpalette-presets';
 
 
@@ -8,7 +8,7 @@ export default () =>(
 
             <span>ColorPalette</span>
             <section>
-                <ColorPalette palette={PALETTEPRESETS.basic}></ColorPalette>
+                <ColorPaletteNormal palette={PALETTEPRESETS.basic}></ColorPaletteNormal>
             </section>
 
         </div>
