@@ -1,10 +1,10 @@
 @use "sass:map";
 
 // Palettes
+@forward "./color-system/palettes";
 @use "./color-system/palettes" as *;
 
 // Variables
-@use "./variables" as *;
 @forward "./variables";
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
