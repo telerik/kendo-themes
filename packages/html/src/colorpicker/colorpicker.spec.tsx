@@ -7,6 +7,7 @@ import {
 } from '../input';
 import { Button } from '../button';
 import { ColorPreview } from '../color-preview';
+import { Popup } from '../popup';
 
 export const COLORPICKER_CLASSNAME = `k-colorpicker`;
 
@@ -39,6 +40,8 @@ export type KendoColorPickerProps = KendoColorPickerOptions & {
     placeholder?: string;
     valueIconName?: string;
     arrowIconName?: string;
+    popup?: JSX.Element;
+    opened?: boolean;
 };
 
 export type KendoColorPickerState = { [K in (typeof states)[number]]?: boolean };
@@ -71,51 +74,60 @@ export const ColorPicker = (
         disabled,
         valueIconName,
         arrowIconName = defaultProps.arrowIconName,
+        popup,
+        opened,
         ...other
     } = props;
 
 
     return (
-        <Picker
-            {...other}
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            hover={hover}
-            focus={focus}
-            valid={valid}
-            invalid={invalid}
-            required={required}
-            disabled={disabled}
-            className={classNames(
-                props.className,
-                COLORPICKER_CLASSNAME,
-                'k-icon-picker'
-            )}
-        >
-            <InputPrefix>{prefix}</InputPrefix>
-            <InputInnerSpan
-                placeholder={placeholder}
-                value={value}
-                showValue={false}
-                valueIcon={
-                    <ColorPreview
-                        className="k-value-icon"
-                        color={value}
-                        iconName={valueIconName}
-                    />
-                }
-                valueIconName={valueIconName}
-            />
-            <InputSuffix>{suffix}</InputSuffix>
-            <Button
-                className="k-input-button"
-                icon={arrowIconName}
-                rounded={null}
+        <>
+            <Picker
+                {...other}
                 size={size}
+                rounded={rounded}
                 fillMode={fillMode}
-            />
-        </Picker>
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                disabled={disabled}
+                className={classNames(
+                    props.className,
+                    COLORPICKER_CLASSNAME,
+                    'k-icon-picker'
+                )}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerSpan
+                    placeholder={placeholder}
+                    value={value}
+                    showValue={false}
+                    valueIcon={
+                        <ColorPreview
+                            className="k-value-icon"
+                            color={value}
+                            iconName={valueIconName}
+                        />
+                    }
+                    valueIconName={valueIconName}
+                />
+                <InputSuffix>{suffix}</InputSuffix>
+                <Button
+                    className="k-input-button"
+                    icon={arrowIconName}
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}
+                />
+            </Picker>
+            { opened && popup &&
+                <Popup className="k-color-picker-popup">
+                    {popup}
+                </Popup>
+            }
+        </>
     );
 };
 
