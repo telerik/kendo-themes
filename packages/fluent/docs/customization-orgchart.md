@@ -487,6 +487,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the orgchart connecting line.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-orgchart-content-border-color</td>
+    <td></td>
+    <td><code>$kendo-component-border</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the content of orgchart with toolbar.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
