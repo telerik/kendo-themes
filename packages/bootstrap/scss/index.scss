@@ -2,9 +2,8 @@
 @import "./common/_index.scss";
 
 
-// Typography and utils
+// Typography
 @import "./typography/_index.scss";
-@import "./utils/_index.scss";
 
 
 // Generic content
@@ -160,6 +159,9 @@
 @import "./orgchart/_index.scss";
 @import "./signature/_index.scss";
 
+// Utils
+@import "./utils/_index.scss";
+
 
 // Configuration
 @mixin kendo-theme--config( $config: null ) {
@@ -173,9 +175,8 @@
 
     // Color system
 
-    // Typography and utils
+    // Typography
     @include kendo-typography--styles();
-    @include kendo-utils--styles();
 
 
     // Generic content
@@ -328,4 +329,7 @@
     @include kendo-map--styles();
     @include kendo-orgchart--styles();
     @include kendo-signature--styles();
+    
+    // Utils
+    @include kendo-utils--styles();
 }
