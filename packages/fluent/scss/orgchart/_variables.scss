@@ -2,155 +2,153 @@
 @use "../core/" as *;
 @use "../card/_variables.scss" as *;
 
-/// Spacing index of the orgchart.
+/// The spacing index of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-spacer: map.get( $kendo-spacing, 6) !default;
-/// Vertical padding of the orgchart.
+/// The vertical padding of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-padding-y: $kendo-orgchart-spacer !default;
-/// Horizontal padding of the orgchart.
+/// The horizontal padding of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-padding-x: $kendo-orgchart-padding-y !default;
-/// Font family of the orgchart.
+/// The font family of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the orgchart.
+/// The font size of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the orgchart.
+/// The line height of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-line-height: var( --kendo-line-height, normal ) !default;
-/// Background color of the orgchart.
+/// The background color of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-bg: var( --kendo-component-bg, initial ) !default;
-/// Text color of the orgchart.
+/// The text color of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-text: var( --kendo-component-text, initial ) !default;
-/// Border color of the orgchart.
+/// The border color of the OrgChart.
 /// @group orgchart
 $kendo-orgchart-border: var( --kendo-component-border, initial ) !default;
 
-/// Spacing of the orgchart node.
+/// The spacing between the OrgChart nodes.
 /// @group orgchart
 $kendo-orgchart-node-spacing: $kendo-orgchart-spacer !default;
-/// Spacing of the orgchart group.
+/// The spacing between the OrgChart groups.
 /// @group orgchart
 $kendo-orgchart-group-spacing: $kendo-orgchart-spacer !default;
-/// Spacing of the orgchart node container.
-/// @group orgchart
-$kendo-orgchart-node-container-spacing: $kendo-orgchart-spacer !default;
 
-/// Vertical padding of the orgchart node group.
+/// The vertical padding of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-padding-y: $kendo-orgchart-spacer !default;
-/// Horizontal padding of the orgchart node group.
+/// The horizontal padding of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-y !default;
-/// Border width of the orgchart node group.
+/// The border width of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-border-width: 1px !default;
-/// Border radius of the orgchart node group.
+/// The border radius of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
-/// Background color of the orgchart node group.
+/// The background color of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-bg: k-get-theme-color-var( neutral-10 ) !default;
-/// Text color of the orgchart node group.
+/// The text color of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-text: k-get-theme-color-var( neutral-190 ) !default;
-/// Border color of the orgchart node group.
+/// The border color of the OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-border: k-get-theme-color-var( neutral-30 ) !default;
-/// Focus border color of the orgchart node group.
+
+/// The border color of the focused OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
-/// Focus shadow of the orgchart node group.
+/// The shadow of the focused OrgChart node group.
 /// @group orgchart
 $kendo-orgchart-node-group-focus-shadow: $kendo-card-focus-shadow !default;
 
-/// Vertical margin of the orgchart node group title.
+/// The vertical margin of the OrgChart node group title.
 /// @group orgchart
 $kendo-orgchart-node-group-title-margin-y: 0px !default;
-/// Font size of the orgchart node group title.
+/// The font size of the OrgChart node group title.
 /// @group orgchart
 $kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
-/// Line height of the orgchart node group title.
+/// The line height of the OrgChart node group title.
 /// @group orgchart
 $kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-md, normal ) !default;
 
-/// Vertical margin of the orgchart node group subtitle.
+/// The vertical margin of the OrgChart node group subtitle.
 /// @group orgchart
 $kendo-orgchart-node-group-subtitle-margin-y: $kendo-orgchart-spacer - map.get( $kendo-spacing, 1 ) !default;
-/// Font size of the orgchart node group subtitle.
+/// The font size of the OrgChart node group subtitle.
 /// @group orgchart
 $kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the orgchart node group subtitle.
+/// The line height of the OrgChart node group subtitle.
 /// @group orgchart
 $kendo-orgchart-node-group-subtitle-text: var( --kendo-subtle-text, inherit ) !default;
 
-/// Width of the orgchart card.
+/// The width of the OrgChart card.
 /// @group orgchart
 $kendo-orgchart-card-width: 300px !default;
-/// Border width of the orgchart card.
+/// The width of the border around the OrgChart card.
 /// @group orgchart
 $kendo-orgchart-card-border-width: $kendo-card-border-width !default;
-/// Shadow of the orgchart card.
+/// The shadow of the OrgChart card.
 /// @group orgchart
 $kendo-orgchart-card-shadow: $kendo-card-shadow !default;
-/// Focus shadow of the orgchart card.
+/// The box shadow of the focused OrgChart card.
 /// @group orgchart
 $kendo-orgchart-card-focus-shadow: $kendo-card-focus-shadow !default;
 
-/// Vertical margin of the orgchart card title.
+/// The vertical margin of the OrgChart card title.
 /// @group orgchart
 $kendo-orgchart-card-title-margin-y: 0px !default;
-/// Font size of the orgchart card title.
+/// The font size of the OrgChart card title.
 /// @group orgchart
 $kendo-orgchart-card-title-font-size: $kendo-card-title-font-size !default;
-/// Line height of the orgchart card title.
+/// The line height of the OrgChart card title.
 /// @group orgchart
 $kendo-orgchart-card-title-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Vertical margin of the orgchart card subtitle.
+/// The vertical margin of the OrgChart card subtitle.
 /// @group orgchart
 $kendo-orgchart-card-subtitle-margin-y: 0px !default;
-/// Font size of the orgchart card subtitle.
+/// The font size of the OrgChart card subtitle.
 /// @group orgchart
 $kendo-orgchart-card-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
-/// Line height of the orgchart card subtitle.
+/// The line height of the OrgChart card subtitle.
 /// @group orgchart
 $kendo-orgchart-card-subtitle-line-height: var( --kendo-line-height-md, inherit ) !default;
 
-/// Vertical padding of the orgchart card body.
+/// The vertical padding of the OrgChart card body.
 /// @group orgchart
 $kendo-orgchart-card-body-padding-y: $kendo-orgchart-spacer - map.get( $kendo-spacing, 2 ) !default;
-/// Horizontal padding of the orgchart card body.
+/// The horizontal padding of the OrgChart card body.
 /// @group orgchart
 $kendo-orgchart-card-body-padding-x: $kendo-orgchart-card-body-padding-y !default;
-/// Top border width of the orgchart card body.
+/// The top border width of the OrgChart card body.
 /// @group orgchart
 $kendo-orgchart-card-body-border-width: 2px 0 0 !default;
-/// Border color of the orgchart card body.
+/// The border color of the OrgChart card body.
 /// @group orgchart
 $kendo-orgchart-card-body-border-color: transparent !default;
 
-/// Horizontal margin of the orgchart card body title wrap.
+/// The horizontal margin of the OrgChart card body title wrap.
 /// @group orgchart
 $kendo-orgchart-card-body-vbox-margin-x: $kendo-orgchart-spacer - map.get( $kendo-spacing, 2 ) !default;
-/// Min height of the orgchart card body title wrap.
+/// The min height of the OrgChart card body title wrap.
 /// @group orgchart
 $kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;
 
-/// Size of the orgchart connecting line.
+/// The size of the OrgChart connecting line.
 /// @group orgchart
 $kendo-orgchart-line-size: 1px !default;
-/// Fill color of the orgchart connecting line.
+/// The color of the OrgChart connecting line.
 /// @group orgchart
 $kendo-orgchart-line-text: k-get-theme-color-var( neutral-30 ) !default;
-/// Height of the orgchart connecting line.
+/// The height of the OrgChart connecting line.
 /// @group orgchart
 $kendo-orgchart-line-v-height: 25px !default;
 
-/// Border color of the content of orgchart with toolbar.
+/// The border color the of OrgChart with toolbar content.
 /// @group orgchart
 $kendo-orgchart-content-border-color: $kendo-component-border !default;

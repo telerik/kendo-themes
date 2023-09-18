@@ -18571,7 +18571,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing index of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing index of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18581,7 +18581,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18591,7 +18591,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18601,7 +18601,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18611,7 +18611,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18621,7 +18621,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18631,7 +18631,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18641,7 +18641,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18651,7 +18651,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the orgchart.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart.</div></div>
     </td>
 </tr>
 <tr>
@@ -18661,7 +18661,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the orgchart node.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the OrgChart nodes.</div></div>
     </td>
 </tr>
 <tr>
@@ -18671,17 +18671,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the orgchart group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-orgchart-node-container-spacing</td>
-    <td></td>
-    <td><code>$kendo-orgchart-spacer</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the orgchart node container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the OrgChart groups.</div></div>
     </td>
 </tr>
 <tr>
@@ -18691,7 +18681,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18701,7 +18691,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18711,7 +18701,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18721,7 +18711,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18731,7 +18721,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18741,7 +18731,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18751,7 +18741,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18761,7 +18751,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus border color of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18771,7 +18761,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the orgchart node group.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused OrgChart node group.</div></div>
     </td>
 </tr>
 <tr>
@@ -18781,7 +18771,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the orgchart node group title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the OrgChart node group title.</div></div>
     </td>
 </tr>
 <tr>
@@ -18791,7 +18781,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart node group title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group title.</div></div>
     </td>
 </tr>
 <tr>
@@ -18801,7 +18791,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart node group title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group title.</div></div>
     </td>
 </tr>
 <tr>
@@ -18811,7 +18801,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the orgchart node group subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the OrgChart node group subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -18821,7 +18811,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart node group subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart node group subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -18831,7 +18821,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart node group subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart node group subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -18841,7 +18831,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the orgchart card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the OrgChart card.</div></div>
     </td>
 </tr>
 <tr>
@@ -18851,7 +18841,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the orgchart card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the OrgChart card.</div></div>
     </td>
 </tr>
 <tr>
@@ -18861,7 +18851,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the orgchart card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the OrgChart card.</div></div>
     </td>
 </tr>
 <tr>
@@ -18871,7 +18861,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the orgchart card.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused OrgChart card.</div></div>
     </td>
 </tr>
 <tr>
@@ -18881,7 +18871,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the orgchart card title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the OrgChart card title.</div></div>
     </td>
 </tr>
 <tr>
@@ -18891,7 +18881,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart card title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart card title.</div></div>
     </td>
 </tr>
 <tr>
@@ -18901,7 +18891,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart card title.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart card title.</div></div>
     </td>
 </tr>
 <tr>
@@ -18911,7 +18901,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the orgchart card subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the OrgChart card subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -18921,7 +18911,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the orgchart card subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the OrgChart card subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -18931,7 +18921,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the orgchart card subtitle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the OrgChart card subtitle.</div></div>
     </td>
 </tr>
 <tr>
@@ -18941,7 +18931,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the orgchart card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the OrgChart card body.</div></div>
     </td>
 </tr>
 <tr>
@@ -18951,7 +18941,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the orgchart card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the OrgChart card body.</div></div>
     </td>
 </tr>
 <tr>
@@ -18961,7 +18951,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top border width of the orgchart card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top border width of the OrgChart card body.</div></div>
     </td>
 </tr>
 <tr>
@@ -18971,7 +18961,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the orgchart card body.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the OrgChart card body.</div></div>
     </td>
 </tr>
 <tr>
@@ -18981,7 +18971,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal margin of the orgchart card body title wrap.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the OrgChart card body title wrap.</div></div>
     </td>
 </tr>
 <tr>
@@ -18991,7 +18981,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Min height of the orgchart card body title wrap.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min height of the OrgChart card body title wrap.</div></div>
     </td>
 </tr>
 <tr>
@@ -19001,7 +18991,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the orgchart connecting line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The size of the OrgChart connecting line.</div></div>
     </td>
 </tr>
 <tr>
@@ -19011,7 +19001,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Fill color of the orgchart connecting line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the OrgChart connecting line.</div></div>
     </td>
 </tr>
 <tr>
@@ -19021,7 +19011,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the orgchart connecting line.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the OrgChart connecting line.</div></div>
     </td>
 </tr>
 <tr>
@@ -19031,7 +19021,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the content of orgchart with toolbar.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color the of OrgChart with toolbar content.</div></div>
     </td>
 </tr>
 </tbody>
