@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.8.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.1...v6.8.0-dev.2) (2023-09-18)
+
+
+### Features
+
+* **pdf-viewer:** update styles to match unified rendering ([7522c7e](https://github.com/telerik/kendo-themes/commit/7522c7e2531fce073fab87d04e8aa96f344c7b38))
+
+
+
+
+
 # [6.8.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.0...v6.8.0-dev.1) (2023-09-11)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

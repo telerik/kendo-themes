@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.8.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.1...v6.8.0-dev.2) (2023-09-18)
+
+
+### Bug Fixes
+
+* **fab:** keep absolute position for FAB ([1dcb41b](https://github.com/telerik/kendo-themes/commit/1dcb41b03f43cbd8008ae55e5f832f3f45168a4e))
+* **fluent:** forward variables in order to be configurable ([53a1141](https://github.com/telerik/kendo-themes/commit/53a11419c1c3b587da7141556f2d2ebcfdf401d8))
+
+
+### Features
+
+* **dock-manager:** add component styles ([ed33323](https://github.com/telerik/kendo-themes/commit/ed33323b04d616fe017c02a148eceba39f76bca8))
+* **pdf-viewer:** update styles to match unified rendering ([7522c7e](https://github.com/telerik/kendo-themes/commit/7522c7e2531fce073fab87d04e8aa96f344c7b38))
+
+
+
+
+
 # [6.8.0-dev.1](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.0...v6.8.0-dev.1) (2023-09-11)
 
 **Note:** Version bump only for package kendo-themes.repo
