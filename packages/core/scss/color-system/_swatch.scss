@@ -6,6 +6,8 @@ $kendo-new-colors: false !default;
 // Colors
 $kendo-colors: (
     // Misc
+    app-surface: null, // !!! Eventually merge with surface-alt
+    on-app-surface: null, // !!!
     surface: null,
     surface-alt: null,
     border: null,
