@@ -81,7 +81,7 @@ $kendo-taskboard-card-focus-shadow: none !default;
 
 $kendo-taskboard-card-hover-border: k-try-shade( $kendo-taskboard-card-border, 10% ) !default;
 
-$kendo-taskboard-card-selected-border: k-color-tint( $kendo-color-primary-lighter, 5 ) !default;
+$kendo-taskboard-card-selected-border: if($kendo-new-colors, k-color( primary-active ), k-color-tint( $kendo-color-primary-lighter, 5 )) !default;
 $kendo-taskboard-card-selected-shadow: none !default;
 
 $kendo-taskboard-card-header-text: $kendo-color-primary !default;
