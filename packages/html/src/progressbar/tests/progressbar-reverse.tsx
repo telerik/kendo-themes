@@ -1,4 +1,4 @@
-import { ProgressBar } from '../../progressbar';
+import { ProgressBar } from '..';
 
 
 const style = `
