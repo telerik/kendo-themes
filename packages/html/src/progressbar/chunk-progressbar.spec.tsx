@@ -1,4 +1,4 @@
-import { classNames, States, } from '../misc';
+import { classNames, stateClassNames, States, } from '../misc';
 import { PROGRESSBAR_CLASSNAME } from './progressbar.spec';
 
 export const CHUNKPROGRESSBAR_CLASSNAME = `k-chunk-progressbar`;
@@ -6,6 +6,7 @@ export const CHUNKPROGRESSBAR_CLASSNAME = `k-chunk-progressbar`;
 const isSelected = (progress: number, index: number) => (index <= progress - 1 ? true : false);
 
 const states = [
+    States.disabled,
     States.indeterminate
 ];
 
@@ -32,6 +33,7 @@ export const ChunkProgressBar = (
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
+        disabled,
         chunkCount = defaultProps.chunkCount,
         indeterminate,
         orientation = defaultProps.orientation,
@@ -47,6 +49,9 @@ export const ChunkProgressBar = (
                 props.className,
                 PROGRESSBAR_CLASSNAME,
                 CHUNKPROGRESSBAR_CLASSNAME,
+                stateClassNames(PROGRESSBAR_CLASSNAME, {
+                    disabled,
+                }),
                 {
                     [`${PROGRESSBAR_CLASSNAME}-${orientation}`]: orientation,
                     [`${PROGRESSBAR_CLASSNAME}-indeterminate`]: indeterminate,
