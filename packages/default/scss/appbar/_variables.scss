@@ -44,7 +44,7 @@ $kendo-appbar-light-text: if($kendo-new-colors, k-color( light-on-base ), k-cont
 $kendo-appbar-dark-bg: $kendo-color-dark !default;
 /// The text color of the AppBar based on dark theme color.
 /// @group appbar
-$kendo-appbar-dark-text: k-contrast-legacy( $kendo-color-dark ) !default;
+$kendo-appbar-dark-text: if($kendo-new-colors, k-color( dark-on-base ), k-contrast-legacy( $kendo-color-dark )) !default;
 
 /// The box shadow of the AppBar.
 /// @group appbar
