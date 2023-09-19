@@ -161,7 +161,7 @@ $kendo-button-active-shadow: null !default;
 $kendo-button-selected-bg: $kendo-color-primary !default;
 /// The text color of the selected Button.
 /// @group button
-$kendo-button-selected-text: k-contrast-legacy( $kendo-button-selected-bg ) !default;
+$kendo-button-selected-text: if($kendo-new-colors, k-color( primary-on-base ), k-contrast-legacy( $kendo-button-selected-bg )) !default;
 /// The border color of the selected Button.
 /// @group button
 $kendo-button-selected-border: $kendo-button-selected-bg !default;

@@ -39,7 +39,7 @@ $kendo-timeline-flag-max-width: calc(#{$kendo-timeline-flag-min-width} + 2 * #{$
 $kendo-timeline-mobile-flag-max-width: calc(#{$kendo-timeline-flag-min-width} + 2 * #{$kendo-timeline-mobile-spacing-x}) !default;
 $kendo-timeline-horizontal-flag-min-width: 60px !default;
 $kendo-timeline-flag-bg: $kendo-color-primary !default;
-$kendo-timeline-flag-text: k-contrast-legacy( $kendo-timeline-flag-bg ) !default;
+$kendo-timeline-flag-text: if($kendo-new-colors, k-color( primary-on-base ), k-contrast-legacy( $kendo-timeline-flag-bg )) !default;
 
 $kendo-timeline-flag-callout-width: 10px !default;
 $kendo-timeline-flag-callout-height: 10px !default;
