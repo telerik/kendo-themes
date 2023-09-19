@@ -4,16 +4,16 @@
 
 @if ($kendo-new-colors) {
     $kendo-color-primary: k-color( primary );
-    // $kendo-color-primary-contrast: null;
-    // $kendo-color-secondary: null;
+    $kendo-color-primary-contrast: k-color( primary-on-base );
+    $kendo-color-secondary: k-color( secondary );
     // $kendo-color-secondary-lighter: null;
     // $kendo-color-secondary-darker: null;
-    // $kendo-color-secondary-contrast: null;
-    // $kendo-color-tertiary: null;
+    // $kendo-color-secondary-contrast: null; // ONLY IN MATERIAL GANTT
+    $kendo-color-tertiary: k-color( tertiary );
     // $kendo-color-tertiary-lighter: null;
     // $kendo-color-tertiary-darker: null;
     // $kendo-color-tertiary-contrast: null;
-    // $kendo-color-info: null;
+    $kendo-color-info: k-color( info );
     // $kendo-color-info-lighter: null;
     // $kendo-color-info-darker: null;
     // $kendo-color-success: null;
