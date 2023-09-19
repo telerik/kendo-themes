@@ -1,4 +1,4 @@
-import { ChunkProgressBar } from '../../progressbar';
+import { ChunkProgressBar } from '..';
 
 
 const style = `
