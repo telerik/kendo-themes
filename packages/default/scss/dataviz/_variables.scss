@@ -106,7 +106,7 @@ $kendo-chart-major-lines: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $k
 /// @group charts
 $kendo-chart-minor-lines: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 ) !default;
 
-$kendo-chart-inactive: rgba( $kendo-body-text, .5 ) !default;
+$kendo-chart-inactive: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-body-text, .5 )) !default;
 $kendo-chart-area-opacity: .6 !default;
 $kendo-chart-area-inactive-opacity: .1 !default;
 $kendo-chart-line-inactive-opacity: .3 !default;

@@ -151,7 +151,7 @@ $kendo-fieldset-border: null !default;
 $kendo-fieldset-legend-bg: null !default;
 /// The text color of the Form legend.
 /// @group form
-$kendo-fieldset-legend-text: k-try-shade( $kendo-body-text, 2 ) !default;
+$kendo-fieldset-legend-text: if($kendo-new-colors, k-color( on-app-surface ), k-try-shade( $kendo-body-text, 2 )) !default;
 /// The border color of the Form legend.
 /// @group form
 $kendo-fieldset-legend-border: null !default;
