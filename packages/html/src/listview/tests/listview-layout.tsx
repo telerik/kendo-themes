@@ -1,4 +1,4 @@
-import { ListView, ListViewItem } from '../../listview';
+import { ListViewNormal, ListViewItem } from '../../listview';
 
 
 const styles = `
@@ -16,52 +16,52 @@ export default () =>(
 
             <section>
                 <span>Flex layout - row</span>
-                <ListView>
+                <ListViewNormal>
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>
                     <ListViewItem><div>Listview Item 4</div></ListViewItem>
-                </ListView>
+                </ListViewNormal>
             </section>
 
             <section>
                 <span>Flex layout - row reverse</span>
-                <ListView flexDirection="row-reverse">
+                <ListViewNormal flexDirection="row-reverse">
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>
                     <ListViewItem><div>Listview Item 4</div></ListViewItem>
-                </ListView>
+                </ListViewNormal>
             </section>
 
             <section>
                 <span>Flex layout - column</span>
-                <ListView flexDirection="col">
+                <ListViewNormal flexDirection="col">
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>
                     <ListViewItem><div>Listview Item 4</div></ListViewItem>
-                </ListView>
+                </ListViewNormal>
             </section>
 
             <section>
                 <span>Flex layout - column reverse</span>
-                <ListView flexDirection="col-reverse">
+                <ListViewNormal flexDirection="col-reverse">
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>
                     <ListViewItem><div>Listview Item 4</div></ListViewItem>
-                </ListView>
+                </ListViewNormal>
             </section>
 
             <section>
                 <span>Grid layout</span>
-                <ListView layout="grid" gridColumns={2}>
+                <ListViewNormal layout="grid" gridColumns={2}>
                     <ListViewItem><div>Listview Item 1</div></ListViewItem>
                     <ListViewItem><div>Listview Item 2</div></ListViewItem>
                     <ListViewItem><div>Listview Item 3</div></ListViewItem>
                     <ListViewItem><div>Listview Item 4</div></ListViewItem>
-                </ListView>
+                </ListViewNormal>
             </section>
 
         </div>
