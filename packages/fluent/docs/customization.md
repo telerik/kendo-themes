@@ -4714,7 +4714,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-treemap-font-size</td>
     <td></td>
-    <td><code>var( -kendo-font-size, inherit )</code></td>
+    <td><code>var( --kendo-font-size, inherit )</code></td>
     <td></td>
 </tr>
 <tr>
