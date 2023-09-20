@@ -938,7 +938,7 @@
 
     .k-safari {
         .k-scheduler-tooltip .k-tooltip-event:not(:last-child) {
-            margin-block-end: var( --kendo-scheduler-tooltip-event-gap #{$kendo-scheduler-tooltip-event-gap} );
+            margin-block-end: var( --kendo-scheduler-tooltip-event-gap, #{$kendo-scheduler-tooltip-event-gap} );
         }
 
         .k-scheduler-yearview .k-calendar-view .k-month {
