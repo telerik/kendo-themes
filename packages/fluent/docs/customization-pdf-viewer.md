@@ -327,6 +327,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PDF viewer icon.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-search-panel-border-width</td>
+    <td></td>
+    <td><code>1px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the PDF viewer search panel.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

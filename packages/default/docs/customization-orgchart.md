@@ -438,13 +438,23 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-orgchart-content-border</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the border around the OrgChart with toolbar content.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-orgchart-content-border-color</td>
     <td>Color</td>
     <td><code>$kendo-component-border</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color the of OrgChart with toolbar content.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the OrgChart with toolbar content.</div></div>
     </td>
 </tr>
 </tbody>
