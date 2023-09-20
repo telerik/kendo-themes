@@ -14,7 +14,7 @@ export default () => (
             >
                 <TileLayoutItem header="Title goes here" body="Content goes here" style={{ order: "0", gridColumnEnd: "span 1", gridRowEnd: "span 1" }} focus />
                 <TileLayoutItem header="Title goes here" body="Content goes here" style={{ order: "1", gridColumnEnd: "span 1", gridRowEnd: "span 1" }} />
-                <TileLayoutItem header="Title goes here" body="Content goes here" style={{ order: "2", gridColumnEnd: "span 1", gridRowEnd: "span 2", width: "250px", position: "absolute", height: "198px", left: "430px", zIndex: 1 }} />
+                <TileLayoutItem header="Title goes here" body="Content goes here" style={{ order: "2", gridColumnEnd: "span 1", gridRowEnd: "span 2", width: "250px", position: "absolute", height: "198px", left: "410px", top: "16px", zIndex: 1 }} />
                 <TileLayoutItemHint style={{ order: "2", gridColumnEnd: "span 2", gridRowEnd: "span 2" }} />
                 <TileLayoutItem header="Title goes here" body="Content goes here" style={{ order: "3", gridColumnEnd: "span 1", gridRowEnd: "span 1" }} />
                 <TileLayoutItem header="Title goes here" body="Content goes here" style={{ order: "4", gridColumnEnd: "span 1", gridRowEnd: "span 2" }} />
