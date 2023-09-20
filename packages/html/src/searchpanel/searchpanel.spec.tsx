@@ -20,6 +20,7 @@ export const SearchPanel = (
             {...other}
             className={classNames(props.className, SEARCHPANEL_CLASSNAME, "k-pos-sticky k-top-center")}
         >
+            <Button fillMode="flat" icon="handle-drag" className="k-search-dialog-draghandle"></Button>
             <Textbox suffix={ <Button fillMode="flat" className="k-match-case-button" icon="convert-lowercase"></Button> } />
             <span className="k-search-matches">
                 <span>0</span> of <span>1</span>
