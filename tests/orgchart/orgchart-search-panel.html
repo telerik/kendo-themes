@@ -8,35 +8,208 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        .k-orgchart-pages {
-            border: 1px solid red;
-        }
-        .k-search-panel {
-            border-color: rgba(0, 0, 0, 0.08);
-            color: #424242;
-            background-color: #ffffff;
-            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.06);
-            width: max-content;
-            margin-top: calc(-1.4285714286em);
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 0;
-            z-index: 10;
-            cursor: default;
-            padding-block: 16px;
-            padding-inline: 8px;
-            display: flex;
-            gap: 8px;
-            flex-flow: row nowrap;
-            flex: 0 0 auto;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        }
-
-    </style>
+    <style></style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <div class="k-orgchart">
+            <div class="k-orgchart-toolbar k-toolbar k-toolbar-md">
+                <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-selected k-icon-button">
+                    <span class="k-button-icon k-svg-icon k-svg-i-search">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3L365.3 320zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192z"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="k-orgchart-container" style="width: 100%; height: 300px;">
+                <div class="k-search-panel k-pos-sticky k-top-center">
+                    <button class="k-search-dialog-draghandle k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-svg-icon k-svg-i-handle-drag">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M160 64h64v384h-64V64zm96 0v384h64V64h-64z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                        <span class="k-input-suffix">
+                            <button class="k-match-case-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-svg-icon k-svg-i-convert-lowercase">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M480.1 416H436v-36h-.7c-13.8 24-34.1 36-60.8 36-19.7 0-35.1-5.3-46.3-16-11.1-10.7-16.7-24.9-16.7-42.5 0-37.8 21.7-59.9 65.3-66.2l59.4-8.4c0-28.6-13.5-42.8-40.7-42.8-23.8 0-45.4 8.2-64.5 24.7V225c21.1-12.5 45.5-18.8 73.1-18.8 50.6 0 75.9 25 75.9 74.8v135h.1zM436 313.1l-42 5.9c-13 1.7-22.8 4.9-29.4 9.5s-9.9 12.7-9.9 24.3c0 8.5 3 15.4 9.1 20.8s14.2 8.1 24.3 8.1c13.8 0 25.2-4.8 34.3-14.5 9-9.7 13.6-21.9 13.6-36.6v-17.5zM240 416h48L184 96h-48L32 416h48l26-80h108l26 80zM121.6 288 160 169.8 198.4 288h-76.8z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </span>
+                    </span>
+                    <span class="k-search-matches">
+                        <span>0</span> of <span>1</span>
+                    </span>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-svg-icon k-svg-i-arrow-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M384 288h-96v128h-64l-.001-128H128L255.999 96 384 288z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-svg-icon k-svg-i-arrow-down">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M128 224h96V96h64l.001 128H384L256.001 416 128 224z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-svg-icon k-svg-i-x">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96l45.3 45.3z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-orgchart-group k-pos-absolute k-vstack k-justify-content-center" style="width: 100%;">
+                    <div class="k-orgchart-node-container k-justify-content-around k-vstack">
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(91, 192, 222);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-orgchart-line k-orgchart-line-v"></div>
+                        </div>
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(91, 192, 222);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-orgchart-line k-orgchart-line-v"></div>
+                        </div>
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(91, 192, 222);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(2, 117, 216);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-orgchart-line k-orgchart-line-v"></div>
+                            <button class="k-orgchart-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-svg-icon k-svg-i-plus">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(2, 117, 216);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-orgchart-line k-orgchart-line-v"></div>
+                            <button class="k-orgchart-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-svg-icon k-svg-i-plus">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64H288z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="k-orgchart">
             <div class="k-orgchart-toolbar k-toolbar k-toolbar-md">
                 <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-selected k-icon-button">
@@ -49,6 +222,13 @@
             </div>
             <div class="k-orgchart-container" style="width: 100%; height: 260px;">
                 <div class="k-search-panel k-pos-sticky k-top-center">
+                    <button class="k-search-dialog-draghandle k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-svg-icon k-svg-i-handle-drag">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M160 64h64v384h-64V64zm96 0v384h64V64h-64z"></path>
+                            </svg>
+                        </span>
+                    </button>
                     <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
                         <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
                         <span class="k-input-suffix">
@@ -120,23 +300,55 @@
                                 </span>
                             </button>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="k-orgchart">
-            <div class="k-orgchart-toolbar k-toolbar k-toolbar-md">
-                <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-selected k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-search">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M365.3 320h-22.7l-26.7-26.7C338.5 265.7 352 230.4 352 192c0-88.4-71.6-160-160-160S32 103.6 32 192s71.6 160 160 160c38.4 0 73.7-13.5 101.3-36.1l26.7 26.7v22.7L434.7 480l45.3-45.3L365.3 320zM64 192c0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128S64 262.7 64 192z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </div>
-            <div class="k-orgchart-container" style="width: 100%; height: 260px;">
-                <div class="k-orgchart-group k-pos-absolute k-hstack k-justify-content-center" style="width: 100%;">
-                    <div class="k-orgchart-node-container k-justify-content-around k-hstack">
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(91, 192, 222);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-orgchart-line k-orgchart-line-v"></div>
+                        </div>
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(91, 192, 222);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="k-orgchart-node k-vstack k-align-items-center">
                             <div class="k-orgchart-card k-card">
                                 <div class="k-hstack k-card-body" style="border-top-color: rgb(2, 117, 216);">
@@ -168,6 +380,55 @@
                                     </svg>
                                 </span>
                             </button>
+                        </div>
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(91, 192, 222);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="k-orgchart-line k-orgchart-line-v"></div>
+                        </div>
+                        <div class="k-orgchart-node k-vstack k-align-items-center">
+                            <div class="k-orgchart-card k-card">
+                                <div class="k-hstack k-card-body" style="border-top-color: rgb(91, 192, 222);">
+                                    <div class="k-avatar k-avatar-md k-avatar-solid k-avatar-solid-secondary k-rounded-full">
+                                        <span class="k-avatar-text">DK</span>
+                                    </div>
+                                    <div class="k-card-title-wrap k-vstack">
+                                        <div class="k-text-ellipsis k-card-title">Card Title</div>
+                                        <span class="k-spacer"></span>
+                                        <div class="k-text-ellipsis k-card-subtitle">Card, Subtitle</div>
+                                    </div>
+                                    <span class="k-spacer"></span>
+                                    <span class="k-card-header-actions">
+                                        <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
