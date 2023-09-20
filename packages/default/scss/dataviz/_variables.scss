@@ -119,7 +119,7 @@ $kendo-chart-border: $kendo-component-border !default;
 
 $kendo-chart-crosshair-background: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
 $kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-text !default;
-$kendo-chart-crosshair-shared-tooltip-background: k-try-shade( $kendo-chart-bg, 1 ) !default;
+$kendo-chart-crosshair-shared-tooltip-background: if($kendo-new-colors, k-color( base ), k-try-shade( $kendo-chart-bg, 1 )) !default;
 $kendo-chart-crosshair-shared-tooltip-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08) !default;
 
 $kendo-chart-notes-background: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;

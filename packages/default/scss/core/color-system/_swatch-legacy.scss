@@ -31,12 +31,12 @@
     $kendo-body-bg: k-color( app-surface );
     $kendo-body-text: k-color( on-app-surface );
     $kendo-subtle-text: k-color( subtle );
-    // $kendo-app-bg: null;
-    // $kendo-app-text: null;
-    // $kendo-app-border: null;
-    // $kendo-link-text: null;
-    // $kendo-link-hover-text: null;
-    // $kendo-component-bg: null;
+    $kendo-app-bg: k-color( surface );
+    $kendo-app-text: $kendo-body-text;
+    $kendo-app-border: k-color( border );
+    $kendo-link-text: $kendo-color-primary;
+    $kendo-link-hover-text: k-color( primary-hover );
+    $kendo-component-bg: $kendo-body-bg;
     // $kendo-component-text: null;
     // $kendo-component-border: null;
     // $kendo-base-bg: null;

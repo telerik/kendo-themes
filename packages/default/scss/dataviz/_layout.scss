@@ -453,7 +453,7 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-color-primary,
-        gauge-track: k-try-shade( $kendo-chart-bg )
+        gauge-track: if($kendo-new-colors, k-color( base ), k-try-shade( $kendo-chart-bg ))
     );
 
     @each $name, $value in $exported {

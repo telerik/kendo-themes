@@ -33,7 +33,7 @@ $kendo-stepper-indicator-bg: $kendo-component-bg !default;
 $kendo-stepper-indicator-text: $kendo-component-text !default;
 $kendo-stepper-indicator-border: #cccccc !default;
 
-$kendo-stepper-indicator-hover-bg: k-try-shade( $kendo-stepper-indicator-bg ) !default;
+$kendo-stepper-indicator-hover-bg: if($kendo-new-colors, k-color( base-hover ), k-try-shade( $kendo-stepper-indicator-bg )) !default;
 $kendo-stepper-indicator-hover-text: null !default;
 $kendo-stepper-indicator-hover-border: null !default;
 
