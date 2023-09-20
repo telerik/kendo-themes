@@ -47,7 +47,7 @@
         grid-gap: var( --kendo-listview-grid-gap, #{$kendo-listview-grid-gap} );
     }
     .k-listview-content-padding-rectangle {
-        padding-inline: var( --$kendo-listview-padding-x, #{$kendo-listview-padding-x} );
+        padding-inline: var( --kendo-listview-padding-x, #{$kendo-listview-padding-x} );
         padding-block: var( --kendo-listview-padding-y, #{$kendo-listview-padding-y} );
     }
     .k-listview-content-padding-square {
