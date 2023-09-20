@@ -1,4 +1,4 @@
-import { ColorGradient } from '../../colorgradient';
+import { ColorGradient, ColorGradientNormal } from '../../colorgradient';
 
 
 const styles = `
@@ -16,21 +16,13 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
-            <span>Focus</span>
-            <span>Disabled</span>
-            <span>Read Only</span>
 
-            <section>
-                <ColorGradient focus />
-            </section>
-
-            <section>
-                <ColorGradient disabled />
-            </section>
-            <section>
-
-                <ColorGradient readonly dragHandleStyle={{ top: "0", left: "0" }}/>
-            </section>
+            {[ 'normal', ...ColorGradient.states ].map((state) => (
+                <section>
+                    <span>{state}</span>
+                    <ColorGradientNormal { ...{ [state]: true }} />
+                </section>
+            ))}
         </div>
     </>
 );

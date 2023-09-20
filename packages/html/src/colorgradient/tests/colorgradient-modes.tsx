@@ -1,4 +1,4 @@
-import { ColorGradient } from '../../colorgradient';
+import { ColorGradientNormal } from '../../colorgradient';
 
 
 const styles = `
@@ -19,29 +19,29 @@ export default () =>(
             <span>RGBA</span>
             <span>RGB</span>
             <section>
-                <ColorGradient />
+                <ColorGradientNormal />
             </section>
 
             <section>
-                <ColorGradient mode="rgb" />
+                <ColorGradientNormal mode="rgb" />
             </section>
 
             <span>HSVA</span>
             <span>HSV</span>
 
             <section>
-                <ColorGradient mode="hsva" />
+                <ColorGradientNormal mode="hsva" />
             </section>
 
             <section>
-                <ColorGradient mode="hsv" />
+                <ColorGradientNormal mode="hsv" />
             </section>
 
             <span>HEX</span>
             <span></span>
 
             <section>
-                <ColorGradient mode="hex" />
+                <ColorGradientNormal mode="hex" />
             </section>
         </div>
     </>

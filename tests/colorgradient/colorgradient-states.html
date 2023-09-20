@@ -20,10 +20,138 @@
 
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <span>Focus</span>
-        <span>Disabled</span>
-        <span>Read Only</span>
         <section>
+            <span>normal</span>
+            <div class="k-colorgradient">
+                <div class="k-colorgradient-canvas k-hstack">
+                    <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                        <div class="k-hsv-gradient">
+                            <div class="k-hsv-draghandle k-draghandle" style="top: 50px; left: 73px;"></div>
+                        </div>
+                    </div>
+                    <div class="k-hsv-controls k-hstack">
+                        <div class="k-slider k-hue-slider k-slider-vertical k-colorgradient-slider">
+                            <div class="k-slider-track-wrap">
+                                <div class="k-slider-track">
+                                    <div class="k-slider-selection"></div>
+                                    <span class="k-draghandle k-draghandle-end"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-slider k-alpha-slider k-slider-vertical k-colorgradient-slider">
+                            <div class="k-slider-track-wrap">
+                                <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
+                                    <div class="k-slider-selection"></div>
+                                    <span class="k-draghandle k-draghandle-end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-colorgradient-inputs k-hstack">
+                    <div class="k-vstack">
+                        <button class="k-colorgradient-toggle-mode k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-expand">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M128 288h256L256 480 128 288zM256 32 128 224h256.001L256 32z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="k-vstack">
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
+                        </span>
+                        <label class="k-colorgradient-input-label">R</label>
+                    </div>
+                    <div class="k-vstack">
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
+                        </span>
+                        <label class="k-colorgradient-input-label">G</label>
+                    </div>
+                    <div class="k-vstack">
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
+                        </span>
+                        <label class="k-colorgradient-input-label">B</label>
+                    </div>
+                    <div class="k-vstack">
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1.00">
+                        </span>
+                        <label class="k-colorgradient-input-label">A</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <span>hover</span>
+            <div class="k-colorgradient k-hover">
+                <div class="k-colorgradient-canvas k-hstack">
+                    <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                        <div class="k-hsv-gradient">
+                            <div class="k-hsv-draghandle k-draghandle" style="top: 50px; left: 73px;"></div>
+                        </div>
+                    </div>
+                    <div class="k-hsv-controls k-hstack">
+                        <div class="k-slider k-hue-slider k-slider-vertical k-colorgradient-slider">
+                            <div class="k-slider-track-wrap">
+                                <div class="k-slider-track">
+                                    <div class="k-slider-selection"></div>
+                                    <span class="k-draghandle k-draghandle-end"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-slider k-alpha-slider k-slider-vertical k-colorgradient-slider">
+                            <div class="k-slider-track-wrap">
+                                <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
+                                    <div class="k-slider-selection"></div>
+                                    <span class="k-draghandle k-draghandle-end"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-colorgradient-inputs k-hstack">
+                    <div class="k-vstack">
+                        <button class="k-colorgradient-toggle-mode k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-expand">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M128 288h256L256 480 128 288zM256 32 128 224h256.001L256 32z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="k-vstack">
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
+                        </span>
+                        <label class="k-colorgradient-input-label">R</label>
+                    </div>
+                    <div class="k-vstack">
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
+                        </span>
+                        <label class="k-colorgradient-input-label">G</label>
+                    </div>
+                    <div class="k-vstack">
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
+                        </span>
+                        <label class="k-colorgradient-input-label">B</label>
+                    </div>
+                    <div class="k-vstack">
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1.00">
+                        </span>
+                        <label class="k-colorgradient-input-label">A</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <span>focus</span>
             <div class="k-colorgradient k-focus">
                 <div class="k-colorgradient-canvas k-hstack">
                     <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
@@ -88,7 +216,8 @@
             </div>
         </section>
         <section>
-            <div class="k-colorgradient k-disabled">
+            <span>readonly</span>
+            <div class="k-colorgradient k-readonly">
                 <div class="k-colorgradient-canvas k-hstack">
                     <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
                         <div class="k-hsv-gradient">
@@ -152,11 +281,12 @@
             </div>
         </section>
         <section>
-            <div class="k-colorgradient k-readonly">
+            <span>disabled</span>
+            <div class="k-colorgradient k-disabled">
                 <div class="k-colorgradient-canvas k-hstack">
                     <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
                         <div class="k-hsv-gradient">
-                            <div class="k-hsv-draghandle k-draghandle" style="top: 0px; left: 0px;"></div>
+                            <div class="k-hsv-draghandle k-draghandle" style="top: 50px; left: 73px;"></div>
                         </div>
                     </div>
                     <div class="k-hsv-controls k-hstack">
