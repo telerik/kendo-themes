@@ -1,0 +1,35 @@
+import { classNames } from '../misc';
+import { Popup } from '../popup';
+
+export const TOOLBARPOPUP_CLASSNAME = `k-toolbar-popup`;
+
+const states = [];
+
+const options = {};
+
+const defaultProps = {};
+
+export const ToolbarPopup = (
+    props: React.HTMLAttributes<HTMLElement>
+) => {
+
+    const { ...other } = props;
+
+    return (
+        <Popup
+            {...other}
+            className={classNames(
+                props.className,
+                TOOLBARPOPUP_CLASSNAME,
+            )}>
+            {props.children}
+        </Popup>
+    );
+};
+
+ToolbarPopup.states = states;
+ToolbarPopup.options = options;
+ToolbarPopup.className = TOOLBARPOPUP_CLASSNAME;
+ToolbarPopup.defaultProps = defaultProps;
+
+export default ToolbarPopup;
