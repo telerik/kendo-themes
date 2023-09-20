@@ -1,0 +1,7 @@
+@use "../core/" as *;
+@use "./_variables.scss" as *;
+
+@mixin kendo-searchpanel--layout() {
+
+    .k-search-panel {}
+}

@@ -1,0 +1,48 @@
+@mixin kendo-searchpanel--layout-base() {
+
+    // Searchpanel
+    .k-search-panel {
+        width: max-content;
+        // margin-top: calc( (#{$kendo-search-panel-padding-y}) * -1 );
+        // This is the top margin in the pdf-viewer
+        // margin-top: calc( (#{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} )) * -1 );
+        padding-block: $kendo-search-panel-padding-y;
+        padding-inline: $kendo-search-panel-padding-x;
+        border-width: $kendo-search-panel-border-width;
+        border-style: solid;
+        border-radius: $kendo-search-panel-border-radius;
+        display: flex;
+        gap: $kendo-search-panel-spacing;
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 10;
+        cursor: default;
+
+        .k-search-dialog-draghandle {
+            cursor: move;
+            margin-left: 0;
+        }
+
+        .k-textbox {
+            width: 10em;
+            flex: none;
+
+            .k-button {
+                border-width: 0;
+            }
+        }
+
+        .k-search-matches {
+            display: inline-flex;
+            gap: $kendo-search-panel-matches-spacing;
+        }
+    }
+
+}
+
+
+@mixin kendo-searchpanel--layout() {
+    @include kendo-searchpanel--layout-base();
+}

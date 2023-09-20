@@ -90,6 +90,7 @@
 @forward "./numerictextbox";
 @forward "./rating";
 @forward "./searchbox";
+@forward "./searchpanel";
 @forward "./switch";
 @forward "./upload";
 @forward "./dropzone";
@@ -242,6 +243,7 @@
 @use "./numerictextbox" as *;
 @use "./rating" as *;
 @use "./searchbox" as *;
+@use "./searchpanel" as *;
 @use "./switch" as *;
 @use "./upload" as *;
 @use "./dropzone" as *;
@@ -416,6 +418,7 @@
     @include numerictextbox-styles();
     @include rating-styles();
     @include searchbox-styles();
+    @include searchpanel-styles();
     @include switch-styles();
     @include upload-styles();
     @include dropzone-styles();

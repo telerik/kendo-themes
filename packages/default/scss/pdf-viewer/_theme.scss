@@ -57,15 +57,6 @@
 
     }
 
-    .k-pdf-viewer-canvas > .k-search-panel {
-        @include fill(
-            $kendo-pdf-viewer-search-panel-text,
-            $kendo-pdf-viewer-search-panel-bg,
-            $kendo-pdf-viewer-search-panel-border,
-        );
-        @include box-shadow( $kendo-pdf-viewer-search-panel-shadow );
-    }
-
 }
 
 

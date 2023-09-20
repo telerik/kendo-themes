@@ -1,0 +1,22 @@
+@use "sass:map";
+@use "../core/" as *;
+
+// Searcpanel
+/// Border width of the PDF viewer search panel.
+/// @group pdf-viewer
+$kendo-search-panel-border-width: 1px !default;
+
+$kendo-search-panel-padding-y: map.get( $kendo-spacing, 3 ) !default;
+
+$kendo-search-panel-padding-x: $kendo-search-panel-padding-y !default;
+
+$kendo-search-panel-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+
+$kendo-search-panel-spacing: map.get( $kendo-spacing, 2 ) !default;
+
+$kendo-search-panel-matches-spacing: var( --kendo-icon-spacing, .5rem )!default;
+
+$kendo-search-panel-bg: var( --kendo-component-bg, inherit ) !default;
+$kendo-search-panel-text: var( --kendo-component-text, inherit ) !default;
+$kendo-search-panel-border: var( --kendo-component-border, inherit ) !default;
+$kendo-search-panel-shadow: none !default;

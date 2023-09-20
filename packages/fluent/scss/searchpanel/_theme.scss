@@ -1,0 +1,5 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-searchpanel--theme() {
+    .k-search-panel {}
+}

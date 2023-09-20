@@ -10,11 +10,16 @@
         font-family: $kendo-orgchart-font-family;
         line-height: $kendo-orgchart-line-height;
         overflow: auto;
-
+ 
         *,
         *::before,
         *::after {
             box-sizing: border-box;
+        }
+
+        .k-search-panel {
+            margin-top: calc( (#{$kendo-orgchart-padding-y}) * -1 );
+            top: calc( (#{$kendo-orgchart-padding-y}) * -1 );
         }
     }
 
@@ -27,9 +32,13 @@
     }
 
     .k-orgchart-toolbar + .k-orgchart-container {
-        border-width: 0 1px 1px;
+        padding: $kendo-orgchart-padding-y;
+        border-width: 0 $kendo-orgchart-content-border $kendo-orgchart-content-border;
         border-style: solid;
-        padding: 16px;
+
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
     }
 
     // Nodes

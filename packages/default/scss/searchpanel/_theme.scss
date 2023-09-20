@@ -1,0 +1,17 @@
+@mixin kendo-searchpanel--theme-base() {
+
+    // Searchpanel
+    .k-search-panel {
+        @include fill(
+            $kendo-search-panel-text,
+            $kendo-search-panel-bg,
+            $kendo-search-panel-border,
+        );
+        @include box-shadow( $kendo-search-panel-shadow );
+    }
+}
+
+
+@mixin kendo-searchpanel--theme() {
+    @include kendo-searchpanel--theme-base();
+}

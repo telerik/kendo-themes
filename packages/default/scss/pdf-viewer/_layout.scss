@@ -113,40 +113,7 @@
 
     // Search
     .k-pdf-viewer-canvas > .k-search-panel {
-        width: max-content;
         margin-top: calc( (#{$kendo-button-calc-size} + ( 2 * #{$kendo-pdf-viewer-search-panel-border-width} ) + ( 2 * #{$kendo-pdf-viewer-search-panel-padding-y} )) * -1 );
-        padding-block: $kendo-pdf-viewer-search-panel-padding-y;
-        padding-inline: $kendo-pdf-viewer-search-panel-padding-x;
-        border-width: $kendo-pdf-viewer-search-panel-border-width;
-        border-style: solid;
-        border-radius: $kendo-pdf-viewer-search-panel-border-radius;
-        display: flex;
-        gap: $kendo-pdf-viewer-search-panel-spacing;
-        flex-flow: row nowrap;
-        flex: 0 0 auto;
-        justify-content: flex-start;
-        align-items: center;
-        z-index: 10;
-        cursor: default;
-
-        .k-search-dialog-draghandle {
-            cursor: move;
-            margin-left: 0;
-        }
-
-        .k-textbox {
-            width: 10em;
-            flex: none;
-
-            .k-button {
-                border-width: 0;
-            }
-        }
-
-        .k-search-matches {
-            display: inline-flex;
-            gap: $kendo-pdf-viewer-search-panel-matches-spacing;
-        }
     }
 
 }

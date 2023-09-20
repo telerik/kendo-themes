@@ -1,0 +1,6 @@
+@import "@progress/kendo-theme-default/scss/searchpanel/_theme.scss";
+
+
+@mixin kendo-searchpanel--theme() {
+    @include kendo-searchpanel--theme-base();
+}

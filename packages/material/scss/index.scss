@@ -80,6 +80,7 @@
 @import "./numerictextbox/_index.scss";
 @import "./rating/_index.scss";
 @import "./searchbox/_index.scss";
+@import "./searchpanel/_index.scss";
 @import "./switch/_index.scss";
 @import "./upload/_index.scss";
 @import "./dropzone/_index.scss";
@@ -251,6 +252,7 @@
     @include kendo-numeric-textbox--styles();
     @include kendo-rating--styles();
     @include kendo-searchbox--styles();
+    @include kendo-searchpanel--styles();
     @include kendo-switch--styles();
     @include kendo-upload--styles();
     @include kendo-dropzone--styles();
