@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "sass": "latest",
+    "vite": "latest"
+  }
+}
