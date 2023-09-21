@@ -118,7 +118,7 @@ $kendo-input-hover-bg: null !default;
 $kendo-input-hover-text: null !default;
 /// The border color of the hovered Input components.
 /// @group input
-$kendo-input-hover-border: rgba( $kendo-input-border, .16 ) !default;
+$kendo-input-hover-border: if($kendo-new-colors, rgba( k-color( border, true ), .16 ), rgba( $kendo-input-border, .16 )) !default;
 /// The shadow of the hovered Input components.
 /// @group input
 $kendo-input-hover-shadow: null !default;
@@ -134,7 +134,7 @@ $kendo-input-focus-text: null !default;
 $kendo-input-focus-border: $kendo-input-hover-border !default;
 /// The shadow of the focused Input components.
 /// @group input
-$kendo-input-focus-shadow: 0 0 0 2px rgba( $kendo-input-focus-border, .08 ) !default;
+$kendo-input-focus-shadow: 0 0 0 2px if($kendo-new-colors, rgba( k-color( border, true ), .6 ), rgba( $kendo-input-focus-border, .08 )) !default;
 
 /// The background color of the selected Input components.
 /// @group input
