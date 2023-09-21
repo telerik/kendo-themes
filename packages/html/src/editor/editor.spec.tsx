@@ -3,7 +3,8 @@ import { classNames, stateClassNames, States } from '../misc';
 export const EDITOR_CLASSNAME = `k-editor`;
 
 const states = [
-    States.readonly
+    States.readonly,
+    States.disabled
 ];
 
 const options = {};
@@ -18,6 +19,7 @@ export const Editor = (
 ) => {
     const {
         readonly,
+        disabled,
         ...other
     } = props;
 
@@ -29,6 +31,7 @@ export const Editor = (
                 EDITOR_CLASSNAME,
                 stateClassNames(EDITOR_CLASSNAME, {
                     readonly,
+                    disabled,
                 }),
             )}>
             {props.children}
