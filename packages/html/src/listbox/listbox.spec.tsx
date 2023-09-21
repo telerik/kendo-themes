@@ -67,16 +67,18 @@ export const ListBox = (
                 <div className="k-listbox-actions">
                     {actions.map(action => {
 
-                        let icon = action;
-                        if (dir === "rtl") {
-                            if ( action === "left") {
-                                icon = "right";
-                            } else if ( action === "right" ) {
-                                icon = "left";
-                            }
-                        }
+                        const actionsIconMap = {
+                            "left": dir !== "rtl" ? "caret-alt-left" : "caret-alt-right",
+                            "right": dir !== 'rtl' ? "caret-alt-right" : "caret-alt-left",
+                            "forward": dir !== 'rtl' ? "forward" : "rewind",
+                            "rewind": dir !== 'rtl' ? "rewind" : "forward",
+                            "up": "caret-alt-up",
+                            "down": "caret-alt-down",
+                            "x": "x"
+                        };
 
-                        return <Button icon={`caret-alt-${icon}`} size={size} />;
+                        return <Button icon={actionsIconMap[action]} size={size} />;
+
                     })}
                 </div>
             )}
