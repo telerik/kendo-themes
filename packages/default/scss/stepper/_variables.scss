@@ -68,7 +68,7 @@ $kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-done-
 $kendo-stepper-label-text: null !default;
 $kendo-stepper-label-success-text: $kendo-color-success !default;
 $kendo-stepper-label-error-text: $kendo-color-error !default;
-$kendo-stepper-label-hover-text: k-try-shade( $kendo-stepper-text, 2 ) !default;
+$kendo-stepper-label-hover-text: if($kendo-new-colors, k-color( base-on-base ), k-try-shade( $kendo-stepper-text, 2 )) !default;
 $kendo-stepper-label-disabled-text: $kendo-disabled-text !default;
 
 $kendo-stepper-optional-label-text: $kendo-subtle-text !default;
