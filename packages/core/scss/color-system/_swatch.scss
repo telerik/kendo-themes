@@ -123,6 +123,17 @@ $kendo-colors: (
     dark-on-subtle: null,
     dark-on-base: null,
     dark-on-surface: null
+    // Inverse
+    inverse-subtle: null,
+    inverse-subtle-hover: null,
+    inverse-subtle-active: null,
+    inverse: null,
+    inverse-hover: null,
+    inverse-active: null,
+    inverse-emphasis: null,
+    inverse-on-subtle: null,
+    inverse-on-base: null,
+    inverse-on-surface: null,
 ) !default;
 
 @function k-color($key, $rgb: false) {

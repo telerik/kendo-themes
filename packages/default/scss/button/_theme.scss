@@ -152,38 +152,66 @@
             // Hover state
             &:hover,
             &.k-hover {
-                @include fill(
-                    k-contrast-legacy( $color ),
-                    $color,
-                    $color
-                );
+                @if $name == "base" {
+                    @include fill(
+                        $kendo-base-bg,
+                        $color,
+                        $color
+                    );
+                } @else {
+                    @include fill(
+                        if($kendo-new-colors, k-color( #{$name}-on-base ), k-contrast-legacy( $color )),
+                        $color,
+                        $color
+                    );
+                }
             }
 
             // Focus state
             &:focus,
             &.k-focus {
                 @if $kendo-outline-button-shadow {
-                    @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread rgba( $color, $kendo-outline-button-shadow-opacity ), true, true );
+                    @if $name == "base" {
+                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread if($kendo-new-colors, rgba( k-color( on-app-surface, true ), $kendo-outline-button-shadow-opacity ), rgba( $color, $kendo-outline-button-shadow-opacity )), true, true );
+                    } @else {
+                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread if($kendo-new-colors, rgba( k-color( $name, true ), $kendo-outline-button-shadow-opacity ), rgba( $color, $kendo-outline-button-shadow-opacity )), true, true );
+                    }
                 }
             }
 
             // Active state
             &:active,
             &.k-active {
-                @include fill(
-                    k-contrast-legacy( $color ),
-                    $color,
-                    $color
-                );
+                @if $name == "base" {
+                    @include fill(
+                        $kendo-base-bg,
+                        $color,
+                        $color
+                    );
+                } @else {
+                    @include fill(
+                        if($kendo-new-colors, k-color( #{$name}-on-base ), k-contrast-legacy( $color )),
+                        $color,
+                        $color
+                    );
+                }
             }
 
             // Selected
             &.k-selected {
-                @include fill(
-                    k-contrast-legacy( $color ),
-                    $color,
-                    $color
-                );
+                @if $name == "base" {
+                    @include fill(
+                        $kendo-base-bg,
+                        $color,
+                        $color
+                    );
+                } @else {
+                    @include fill(
+                        if($kendo-new-colors, k-color( #{$name}-on-base ), k-contrast-legacy( $color )),
+                        $color,
+                        $color
+                    );
+                }
             }
 
             // Disabled state
@@ -217,26 +245,42 @@
             // Hover
             &:hover,
             &.k-hover {
-                color: k-try-shade( $color, 2 );
+                @if $name == "base" {
+                    color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
+                } @else {
+                    color: if($kendo-new-colors, k-color( #{$name}-hover ), k-try-shade( $color, 2 ));
+                }
             }
 
             // Focus
             &:focus,
             &.k-focus {
                 @if ( $kendo-link-button-shadow ) {
-                    @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread rgba( $color, $kendo-link-button-shadow-opacity ), true, true );
+                    @if $name == "base" {
+                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread if($kendo-new-colors, rgba( k-color( on-app-surface, true ), $kendo-link-button-shadow-opacity ), rgba( $color, $kendo-link-button-shadow-opacity )), true, true );
+                    } @else {
+                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread if($kendo-new-colors, rgba( k-color( $name, true ), $kendo-link-button-shadow-opacity ), rgba( $color, $kendo-link-button-shadow-opacity )), true, true );
+                    }
                 }
             }
 
             // Active
             &:active,
             &.k-active {
-                color: k-try-shade( $color, 2 );
+                @if $name == "base" {
+                    color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
+                } @else {
+                    color: if($kendo-new-colors, k-color( #{$name}-active ), k-try-shade( $color, 2 ));
+                }
             }
 
             // Selected
             &.k-selected {
-                color: k-try-shade( $color, 2 );
+                @if $name == "base" {
+                    color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
+                } @else {
+                    color: if($kendo-new-colors, k-color( #{$name}-active ), k-try-shade( $color, 2 ));
+                }
             }
 
             // Disabled state

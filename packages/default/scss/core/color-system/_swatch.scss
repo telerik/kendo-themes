@@ -126,6 +126,17 @@ $kendo-colors: (
     dark-on-subtle: k-map-get( $kendo-palette-gray, 14 ),
     dark-on-base: k-map-get( $kendo-palette-gray, white ),
     dark-on-surface: k-map-get( $kendo-palette-gray, 15 ),
+    // Inverse
+    inverse-subtle: k-map-get( $kendo-palette-gray, 6 ),
+    inverse-subtle-hover: k-map-get( $kendo-palette-gray, 7 ),
+    inverse-subtle-active: k-map-get( $kendo-palette-gray, 8 ),
+    inverse: k-map-get( $kendo-palette-gray, 12 ),
+    inverse-hover: k-map-get( $kendo-palette-gray, 13 ),
+    inverse-active: k-map-get( $kendo-palette-gray, 14 ),
+    inverse-emphasis: k-map-get( $kendo-palette-gray, 10 ),
+    inverse-on-subtle: k-map-get( $kendo-palette-gray, 14 ),
+    inverse-on-base: k-map-get( $kendo-palette-gray, white ),
+    inverse-on-surface: k-map-get( $kendo-palette-gray, 15 ),
 ) !default;
 
 $kendo-is-dark-theme: false !default;
