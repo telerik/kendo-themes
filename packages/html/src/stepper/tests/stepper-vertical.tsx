@@ -1,6 +1,6 @@
 import { Button } from '../../button';
 import { Icon } from '../../icon';
-import { ProgressBar } from '../../progressbar';
+import { ProgressBarNormal } from '../../progressbar';
 
 
 const style = `
@@ -51,7 +51,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" reverse={true} label={false} value="40" />
+                    <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="40" />
                 </nav>
             </section>
             <section>
@@ -91,7 +91,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" reverse={true} label={false} value="40" />
+                    <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="40" />
                 </nav>
             </section>
             <section>
@@ -119,7 +119,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" reverse={true} label={false} value="40" />
+                    <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="40" />
                 </nav>
             </section>
             <section>
@@ -147,7 +147,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" reverse={true} label={false} value="40" />
+                    <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="40" />
                 </nav>
             </section>
 
@@ -199,7 +199,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" reverse={true} label={false} value="30" />
+                    <ProgressBarNormal orientation="vertical" reverse={true} label={false} value="30" />
                 </nav>
             </section>
         </div>

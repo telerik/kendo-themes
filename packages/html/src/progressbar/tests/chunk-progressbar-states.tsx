@@ -1,4 +1,4 @@
-import { ChunkProgressBar } from '../../progressbar';
+import { ChunkProgressBar, ChunkProgressBarNormal } from '../../progressbar';
 
 const style = `
     .k-progressbar-indeterminate,
@@ -20,7 +20,7 @@ export default () =>(
             {[ 'normal', ...ChunkProgressBar.states ].map((state) => (
                 <>
                     <div>{state}</div>
-                    <ChunkProgressBar progress={3} { ...{ [state]: true }} />
+                    <ChunkProgressBarNormal progress={3} { ...{ [state]: true }} />
                 </>
             ))}
         </div>

@@ -1,5 +1,5 @@
 import { Icon } from '../../icon';
-import { ProgressBar } from '../../progressbar';
+import { ProgressBarNormal } from '../../progressbar';
 
 
 const style = `
@@ -51,7 +51,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" value="40" label={false} reverse={true} />
+                    <ProgressBarNormal orientation="vertical" value="40" label={false} reverse={true} />
                 </nav>
             </section>
             <section>
@@ -91,7 +91,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" value="40" label={false} reverse={true} />
+                    <ProgressBarNormal orientation="vertical" value="40" label={false} reverse={true} />
                 </nav>
             </section>
             <section>
@@ -119,7 +119,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" value="40" label={false} reverse={true} />
+                    <ProgressBarNormal orientation="vertical" value="40" label={false} reverse={true} />
                 </nav>
             </section>
             <section>
@@ -147,7 +147,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar orientation="vertical" value="40" label={false} reverse={true} />
+                    <ProgressBarNormal orientation="vertical" value="40" label={false} reverse={true} />
                 </nav>
             </section>
 
