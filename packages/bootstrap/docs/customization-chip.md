@@ -201,7 +201,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} )</code></td>
-    <td><code>calc(1.25em + 0.5rem + 2px)</code></td>
+    <td><code>calc( 1.25em + 0.5rem + 2px )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Chip.</div></div>

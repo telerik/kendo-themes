@@ -41,7 +41,7 @@ The following table lists the available variables for customization.
     <td>$kendo-icon-size-xs</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size} * .75 )</code></td>
-    <td><code>calc(16px * 0.75)</code></td>
+    <td><code>calc( 16px * .75 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">xtra small icon size.</div></div>
@@ -51,7 +51,7 @@ The following table lists the available variables for customization.
     <td>$kendo-icon-size-sm</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size} * .875 )</code></td>
-    <td><code>calc(16px * 0.875)</code></td>
+    <td><code>calc( 16px * .875 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Small icon size.</div></div>
@@ -71,7 +71,7 @@ The following table lists the available variables for customization.
     <td>$kendo-icon-size-lg</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size} * 1.25 )</code></td>
-    <td><code>calc(16px * 1.25)</code></td>
+    <td><code>calc( 16px * 1.25 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Large icon size.</div></div>
@@ -81,7 +81,7 @@ The following table lists the available variables for customization.
     <td>$kendo-icon-size-xl</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size} * 1.5 )</code></td>
-    <td><code>calc(16px * 1.5)</code></td>
+    <td><code>calc( 16px * 1.5 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Extra large icon size.</div></div>
@@ -91,7 +91,7 @@ The following table lists the available variables for customization.
     <td>$kendo-icon-size-xxl</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size} * 2 )</code></td>
-    <td><code>calc(16px * 2)</code></td>
+    <td><code>calc( 16px * 2 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Double extra large icon size.</div></div>
@@ -101,7 +101,7 @@ The following table lists the available variables for customization.
     <td>$kendo-icon-size-xxxl</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size} * 3 )</code></td>
-    <td><code>calc(16px * 3)</code></td>
+    <td><code>calc( 16px * 3 )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Triple extra large icon size.</div></div>

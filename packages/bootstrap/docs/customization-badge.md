@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-line-height * 1em} + #{$kendo-badge-padding-y * 2} + #{$kendo-badge-border-width * 2})</code></td>
-    <td><code>calc(1em + 0.7em + 2px)</code></td>
+    <td><code>calc( 1em + 0.7em + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the circular Badge.</div></div>
@@ -221,7 +221,7 @@ The following table lists the available variables for customization.
     <td>$kendo-badge-sm-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-sm-line-height * 1em} + #{$kendo-badge-sm-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc(1em + 0.35em + 2px)</code></td>
+    <td><code>calc( 1em + 0.35em + 2px )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the small circular Badge.</div></div>
@@ -231,7 +231,7 @@ The following table lists the available variables for customization.
     <td>$kendo-badge-md-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-md-line-height * 1em} + #{$kendo-badge-md-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc(1em + 0.7em + 2px)</code></td>
+    <td><code>calc( 1em + 0.7em + 2px )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the medium circular Badge.</div></div>
@@ -241,7 +241,7 @@ The following table lists the available variables for customization.
     <td>$kendo-badge-lg-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-lg-line-height * 1em} + #{$kendo-badge-lg-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc(1em + 1.05em + 2px)</code></td>
+    <td><code>calc( 1em + 1.05em + 2px )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the large circular Badge.</div></div>
@@ -273,7 +273,7 @@ The following table lists the available variables for customization.
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 0.325em, padding-y: 0.175em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 0.35em + 2px)), md: (padding-x: 0.65em, padding-y: 0.35em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 0.7em + 2px)), lg: (padding-x: 0.975em, padding-y: 0.525em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 1.05em + 2px)))</code></td>
+    <td><code>(sm: (padding-x: 0.325em, padding-y: 0.175em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.35em + 2px )), md: (padding-x: 0.65em, padding-y: 0.35em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.7em + 2px )), lg: (padding-x: 0.975em, padding-y: 0.525em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 1.05em + 2px )))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
