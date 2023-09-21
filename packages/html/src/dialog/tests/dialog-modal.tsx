@@ -1,5 +1,5 @@
 import { Button } from '../../button';
-import { Dialog } from '../../dialog';
+import { DialogModal } from '../../dialog';
 
 
 const styles = `
@@ -18,17 +18,14 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-grid-cols-1">
-            <div className="k-dialog-wrapper">
-                <div className="k-overlay"></div>
-                <Dialog title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
-                    <>
-                        <Button>Action</Button>
-                        <Button themeColor="primary">Primary</Button>
-                    </>
-                }>
-                    Dialog content template
-                </Dialog>
-            </div>
+            <DialogModal title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
+                <>
+                    <Button>Action</Button>
+                    <Button themeColor="primary">Primary</Button>
+                </>
+            }>
+                Dialog content template
+            </DialogModal>
         </div>
     </>
 );

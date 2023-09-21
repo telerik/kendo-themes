@@ -1,4 +1,4 @@
-import { ColorEditor } from '../../coloreditor';
+import { ColorEditorNormal, ColorEditorPalette, ColorEditorGroup, ColorEditorPaletteGroup } from '../../coloreditor';
 
 
 const styles = `
@@ -15,12 +15,28 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-1">
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>Single View</span>
+            <span>ColorEditor Gradient</span>
+            <span>ColorEditor Gradient Group View</span>
 
             <section>
-                <ColorEditor currentColor="fuchsia"/>
+                <ColorEditorNormal color="rgba(0,0,0, 0.5)" />
+            </section>
+
+            <section>
+                <ColorEditorGroup color="rgba(0,0,0, 0.5)" />
+            </section>
+
+            <span>ColorEditor Palette</span>
+            <span>ColorEditor Palette Group View</span>
+
+            <section>
+                <ColorEditorPalette color="rgba(0,0,0, 0.5)" />
+            </section>
+
+            <section>
+                <ColorEditorPaletteGroup color="rgba(0,0,0, 0.5)" />
             </section>
         </div>
     </>

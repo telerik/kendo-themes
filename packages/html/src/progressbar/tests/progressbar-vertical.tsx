@@ -1,4 +1,4 @@
-import { ProgressBar, ChunkProgressBar } from '../../progressbar';
+import { ProgressBarNormal } from '../../progressbar';
 
 
 const style = `
@@ -10,33 +10,27 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-12">
+        <div id="test-area" className="k-d-grid k-grid-cols-9">
 
-            <span>Partial</span>
-            <span>100%</span>
-            <span>Chunk</span>
-            <span>Ch 100%</span>
-            <span>Reversed</span>
-            <span>R 100%</span>
-            <span>R ch</span>
-            <span>R ch 100%</span>
-            <span>Indeterminate</span>
+            <span>Partial start</span>
+            <span>Partial center</span>
+            <span>Partial end</span>
+            <span>100% start</span>
+            <span>100% center</span>
+            <span>100% end</span>
             <span>No Label</span>
             <span>Thin style</span>
             <span>Thick style</span>
 
-            <ProgressBar orientation="vertical" labelPosition="end" value="95" />
-            <ProgressBar orientation="vertical" labelPosition="end" value="100" />
-            <ChunkProgressBar orientation="vertical" progress={3} />
-            <ChunkProgressBar orientation="vertical" progress={5} />
-            <ProgressBar reverse={true} orientation="vertical" labelPosition="end" value="5" />
-            <ProgressBar reverse={true} orientation="vertical" labelPosition="end" value="100" />
-            <ChunkProgressBar reverse={true} orientation="vertical" progress={3} />
-            <ChunkProgressBar reverse={true} orientation="vertical" progress={5} />
-            <ProgressBar orientation="vertical" indeterminate={true} />
-            <ProgressBar orientation="vertical" label={false} value="50" />
-            <ProgressBar orientation="vertical" label={false} width="2px" value="50" />
-            <ProgressBar orientation="vertical" width="50px" labelPosition="end" value="50" />
+            <ProgressBarNormal orientation="vertical" value="5" />
+            <ProgressBarNormal orientation="vertical" value="50" labelPosition="center" />
+            <ProgressBarNormal orientation="vertical" value="95" labelPosition="end" />
+            <ProgressBarNormal orientation="vertical" value="100" />
+            <ProgressBarNormal orientation="vertical" value="100" labelPosition="center" />
+            <ProgressBarNormal orientation="vertical" value="100" labelPosition="end" />
+            <ProgressBarNormal orientation="vertical" value="50" label={false} />
+            <ProgressBarNormal orientation="vertical" value="50" label={false} width="2px" />
+            <ProgressBarNormal orientation="vertical" value="50" width="50px" labelPosition="end" />
         </div>
     </>
 );

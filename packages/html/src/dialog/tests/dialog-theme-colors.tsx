@@ -1,5 +1,5 @@
 import { Button } from '../../button';
-import { Dialog } from '..';
+import { DialogNormal } from '../../dialog';
 
 const styles = `
     .k-dialog {
@@ -12,41 +12,41 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <Dialog title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
+            <DialogNormal title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
                 </>
             }>
                 Dialog with default theme color
-            </Dialog>
+            </DialogNormal>
 
-            <Dialog themeColor="primary" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
+            <DialogNormal themeColor="primary" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
                 </>
             }>
                 Dialog with primary theme color
-            </Dialog>
+            </DialogNormal>
 
-            <Dialog themeColor="dark" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
+            <DialogNormal themeColor="dark" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
                 </>
             }>
                 Dialog with dark theme color
-            </Dialog>
+            </DialogNormal>
 
-            <Dialog themeColor="light" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
+            <DialogNormal themeColor="light" title="Title" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
                 </>
             }>
                 Dialog with light theme color
-            </Dialog>
+            </DialogNormal>
         </div>
     </>
 );

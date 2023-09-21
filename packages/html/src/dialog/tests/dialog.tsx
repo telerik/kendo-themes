@@ -1,5 +1,5 @@
 import { Button } from '../../button';
-import { Dialog } from '../../dialog';
+import { DialogNormal } from '../../dialog';
 
 const styles = `
     .k-dialog {
@@ -12,7 +12,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <Dialog title="Title
+            <DialogNormal title="Title
                         g y p
                         t d l" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
@@ -21,9 +21,9 @@ export default () =>(
                 </>
             }>
                 Dialog content template
-            </Dialog>
+            </DialogNormal>
 
-            <Dialog title="Cursive
+            <DialogNormal title="Cursive
                         g y p
                         t d l" actionButtonsAlign="end" actionButtons={
                 <>
@@ -32,31 +32,31 @@ export default () =>(
                 </>
             }>
                 Dialog without titlebar actions
-            </Dialog>
+            </DialogNormal>
 
-            <Dialog title="" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
+            <DialogNormal title="" actions={[ 'x' ]} actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
                 </>
             }>
                 Dialog with empty title and actions
-            </Dialog>
+            </DialogNormal>
 
-            <Dialog title="">
+            <DialogNormal title="">
                 Dialog with empty title and no actions
-            </Dialog>
+            </DialogNormal>
 
-            <Dialog actionButtonsAlign="end" actionButtons={
+            <DialogNormal actionButtonsAlign="end" actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
                 </>
             }>
                 Dialog without title
-            </Dialog>
+            </DialogNormal>
 
-            <Dialog title="Scrolling" actions={[ 'x' ]} actionButtonsAlign="end" style={{ height: "170px" }} actionButtons={
+            <DialogNormal title="Scrolling" actions={[ 'x' ]} actionButtonsAlign="end" style={{ height: "170px" }} actionButtons={
                 <>
                     <Button>Action</Button>
                     <Button themeColor="primary">Primary</Button>
@@ -65,7 +65,7 @@ export default () =>(
                 <p>Dialog content template with long text and vertical scrolling.</p>
                 <p>Dialog content template with long text and vertical scrolling.</p>
                 <p>Dialog content template with long text and vertical scrolling.</p>
-            </Dialog>
+            </DialogNormal>
 
         </div>
     </>

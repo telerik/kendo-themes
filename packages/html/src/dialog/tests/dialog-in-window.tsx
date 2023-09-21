@@ -1,5 +1,5 @@
 import { Window } from '../../window';
-import { Dialog } from '../../dialog';
+import { DialogModal } from '../../dialog';
 
 
 const styles = `
@@ -26,12 +26,9 @@ export default () =>(
 
                 <Window title="Window with dialog" actions={[ 'window-minimize', 'window', 'x' ]} className="k-window-wrapper">
                     Window content
-                    <div className="k-dialog-wrapper">
-                        <div className="k-overlay"></div>
-                        <Dialog title="Dialog in window" actions={[ 'x' ]}>
-                            Dialog content
-                        </Dialog>
-                    </div>
+                    <DialogModal title="Dialog in window" actions={[ 'x' ]}>
+                        Dialog content
+                    </DialogModal>
                 </Window>
             </section>
         </div>

@@ -1,10 +1,11 @@
 import { Pager } from '../pager';
-import { classNames, States } from '../misc';
+import { classNames, stateClassNames, States } from '../misc';
 
 export const LISTVIEW_CLASSNAME = `k-listview`;
 
 const states = [
-    States.loading
+    States.loading,
+    States.disabled,
 ];
 
 const options = {};
@@ -49,6 +50,7 @@ export const ListView = (
         flexWrap,
         gridColumns,
         loading,
+        disabled,
         ...other
     } = props;
 
@@ -70,7 +72,11 @@ export const ListView = (
                 LISTVIEW_CLASSNAME,
                 {
                     'k-listview-bordered': bordered
-                }
+                },
+                stateClassNames(LISTVIEW_CLASSNAME, {
+                    disabled,
+                    loading,
+                })
             )}>
             {pageable && pagerPosition === "top" && pager}
             {header && <div className="k-listview-header">Header</div>}

@@ -23120,16 +23120,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-scheduler-current-time-color</td>
-    <td></td>
-    <td><span class="color-preview" style="background-color: #ff0000"></span><code>#ff0000</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the current time marker in the scheduler.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-scheduler-nonwork-bg</td>
     <td></td>
     <td><code>k-get-theme-color-var( neutral-10 )</code></td>
