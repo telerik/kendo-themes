@@ -14,19 +14,36 @@
         }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-12">
-        <span>Partial</span>
-        <span>100%</span>
-        <span>Chunk</span>
-        <span>Ch 100%</span>
-        <span>Reversed</span>
-        <span>R 100%</span>
-        <span>R ch</span>
-        <span>R ch 100%</span>
-        <span>Indeterminate</span>
+    <div id="test-area" class="k-d-grid k-grid-cols-9">
+        <span>Partial start</span>
+        <span>Partial center</span>
+        <span>Partial end</span>
+        <span>100% start</span>
+        <span>100% center</span>
+        <span>100% end</span>
         <span>No Label</span>
         <span>Thin style</span>
         <span>Thick style</span>
+        <div class="k-progressbar k-progressbar-vertical" style="--kendo-progressbar-value: 5;">
+            <span class="k-progress-status-wrap k-progress-start">
+                <span class="k-progress-status">5%</span>
+            </span>
+            <div class="k-progressbar-value k-selected">
+                <span class="k-progress-status-wrap k-progress-start">
+                    <span class="k-progress-status">5%</span>
+                </span>
+            </div>
+        </div>
+        <div class="k-progressbar k-progressbar-vertical" style="--kendo-progressbar-value: 50;">
+            <span class="k-progress-status-wrap k-progress-center">
+                <span class="k-progress-status">50%</span>
+            </span>
+            <div class="k-progressbar-value k-selected">
+                <span class="k-progress-status-wrap k-progress-center">
+                    <span class="k-progress-status">50%</span>
+                </span>
+            </div>
+        </div>
         <div class="k-progressbar k-progressbar-vertical" style="--kendo-progressbar-value: 95;">
             <span class="k-progress-status-wrap k-progress-end">
                 <span class="k-progress-status">95%</span>
@@ -34,6 +51,26 @@
             <div class="k-progressbar-value k-selected">
                 <span class="k-progress-status-wrap k-progress-end">
                     <span class="k-progress-status">95%</span>
+                </span>
+            </div>
+        </div>
+        <div class="k-progressbar k-progressbar-vertical" style="--kendo-progressbar-value: 100;">
+            <span class="k-progress-status-wrap k-progress-start">
+                <span class="k-progress-status">100%</span>
+            </span>
+            <div class="k-progressbar-value k-selected">
+                <span class="k-progress-status-wrap k-progress-start">
+                    <span class="k-progress-status">100%</span>
+                </span>
+            </div>
+        </div>
+        <div class="k-progressbar k-progressbar-vertical" style="--kendo-progressbar-value: 100;">
+            <span class="k-progress-status-wrap k-progress-center">
+                <span class="k-progress-status">100%</span>
+            </span>
+            <div class="k-progressbar-value k-selected">
+                <span class="k-progress-status-wrap k-progress-center">
+                    <span class="k-progress-status">100%</span>
                 </span>
             </div>
         </div>
@@ -46,67 +83,6 @@
                     <span class="k-progress-status">100%</span>
                 </span>
             </div>
-        </div>
-        <div class="k-progressbar k-chunk-progressbar k-progressbar-vertical">
-            <ul class="k-progressbar-chunks k-reset">
-                <li class="k-progressbar-chunk k-first k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk"></li>
-                <li class="k-progressbar-chunk k-last"></li>
-            </ul>
-        </div>
-        <div class="k-progressbar k-chunk-progressbar k-progressbar-vertical">
-            <ul class="k-progressbar-chunks k-reset">
-                <li class="k-progressbar-chunk k-first k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk k-last k-selected"></li>
-            </ul>
-        </div>
-        <div class="k-progressbar k-progressbar-vertical k-progressbar-reverse" style="--kendo-progressbar-value: 5;">
-            <span class="k-progress-status-wrap k-progress-end">
-                <span class="k-progress-status">5%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
-                <span class="k-progress-status-wrap k-progress-end">
-                    <span class="k-progress-status">5%</span>
-                </span>
-            </div>
-        </div>
-        <div class="k-progressbar k-progressbar-vertical k-progressbar-reverse" style="--kendo-progressbar-value: 100;">
-            <span class="k-progress-status-wrap k-progress-end">
-                <span class="k-progress-status">100%</span>
-            </span>
-            <div class="k-progressbar-value k-selected">
-                <span class="k-progress-status-wrap k-progress-end">
-                    <span class="k-progress-status">100%</span>
-                </span>
-            </div>
-        </div>
-        <div class="k-progressbar k-chunk-progressbar k-progressbar-vertical k-progressbar-reverse">
-            <ul class="k-progressbar-chunks k-reset">
-                <li class="k-progressbar-chunk k-first k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk"></li>
-                <li class="k-progressbar-chunk k-last"></li>
-            </ul>
-        </div>
-        <div class="k-progressbar k-chunk-progressbar k-progressbar-vertical k-progressbar-reverse">
-            <ul class="k-progressbar-chunks k-reset">
-                <li class="k-progressbar-chunk k-first k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk k-selected"></li>
-                <li class="k-progressbar-chunk k-last k-selected"></li>
-            </ul>
-        </div>
-        <div class="k-progressbar k-progressbar-vertical k-progressbar-indeterminate" style="--kendo-progressbar-value: 0;">
-            <span class="k-progress-status-wrap">
-                <span class="k-progress-status">0%</span>
-            </span>
         </div>
         <div class="k-progressbar k-progressbar-vertical" style="--kendo-progressbar-value: 50;">
             <span class="k-progress-status-wrap k-progress-start"></span>
