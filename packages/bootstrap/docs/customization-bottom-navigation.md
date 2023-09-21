@@ -151,7 +151,7 @@ The following table lists the available variables for customization.
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size * 2.5} + #{k-map-get( $kendo-spacing, 4 )} - #{$kendo-bottom-nav-padding-x * 2} )</code></td>
-    <td><code>calc(40px + 1rem - 0px)</code></td>
+    <td><code>calc( 40px + 1rem - 0px )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>

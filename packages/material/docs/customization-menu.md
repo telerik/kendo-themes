@@ -141,7 +141,7 @@ The following table lists the available variables for customization.
     <td>$kendo-menu-popup-item-padding-end</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$kendo-icon-size} )</code></td>
-    <td><code>calc(32px + 16px)</code></td>
+    <td><code>calc( 32px + 16px )</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the menu item in popup.</div></div>
@@ -161,7 +161,7 @@ The following table lists the available variables for customization.
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
     <td><code>calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) )</code></td>
-    <td><code>calc(-1 * (calc(32px + 16px) - 8px))</code></td>
+    <td><code>calc(-1 * (calc( 32px + 16px ) - 8px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the menu item expand icon.</div></div>
