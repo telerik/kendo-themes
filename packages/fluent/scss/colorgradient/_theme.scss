@@ -20,9 +20,6 @@
         @include fill(
             $border: var( --kendo-color-gradient-focus-border, #{$kendo-color-gradient-focus-border} )
         );
-        @include box-shadow(
-            var( --kendo-color-gradient-focus-shadow, #{$kendo-color-gradient-focus-shadow} )
-        );
     }
 
     // Canvas
@@ -43,6 +40,7 @@
         @include fill(
             $border: var( --kendo-color-gradient-draghandle-border, #{$kendo-color-gradient-draghandle-border })
         );
+        outline-color: $kendo-color-gradient-draghandle-focus-shadow;
         @include box-shadow(
             var( --kendo-color-gradient-draghandle-shadow, #{$kendo-color-gradient-draghandle-shadow} )
         );
@@ -52,38 +50,13 @@
             @include fill(
                 $border: var( --kendo-color-gradient-draghandle-focus-border, #{$kendo-color-gradient-draghandle-focus-border} )
             );
-            @include box-shadow(
-                var( --kendo-color-gradient-draghandle-focus-shadow, #{$kendo-color-gradient-draghandle-focus-shadow} )
-            );
+            outline-color: $kendo-color-gradient-draghandle-focus-shadow;
         }
 
         &:active,
         &:hover,
         &.k-hover {
-            @include box-shadow(
-                var( --kendo-color-gradient-draghandle-hover-shadow, #{$kendo-color-gradient-draghandle-hover-shadow} )
-            );
-        }
-    }
-
-    .k-colorgradient .k-hsv-draghandle {
-        @include box-shadow(
-            var( --kendo-color-gradient-canvas-draghandle-shadow, #{$kendo-color-gradient-canvas-draghandle-shadow} )
-        );
-
-        &:focus,
-        &.k-focus {
-            @include box-shadow(
-                var( --kendo-color-gradient-canvas-draghandle-shadow, #{$kendo-color-gradient-canvas-draghandle-shadow} )
-            );
-        }
-
-        &:active,
-        &:hover,
-        &.k-hover {
-            @include box-shadow(
-                var( --kendo-color-gradient-canvas-draghandle-shadow, #{$kendo-color-gradient-canvas-draghandle-shadow} )
-            );
+            outline-color: $kendo-color-gradient-draghandle-hover-shadow;
         }
     }
 

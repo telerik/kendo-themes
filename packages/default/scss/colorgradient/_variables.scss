@@ -48,7 +48,7 @@ $kendo-color-gradient-border: $kendo-component-border !default;
 $kendo-color-gradient-focus-border: null !default;
 /// The box shadow of the focused ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-focus-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
+$kendo-color-gradient-focus-shadow: k-elevation(3) !default;
 
 /// The border radius of the ColorGradient canvas.
 /// @group cologradient
@@ -86,6 +86,9 @@ $kendo-color-gradient-draghandle-height: 14px !default;
 /// The width of the border around the ColorGradient canvas drag handle.
 /// @group cologradient
 $kendo-color-gradient-draghandle-border-width: 1px !default;
+/// The width of the outline around the ColorGradient canvas drag handle.
+/// @group cologradient
+$kendo-color-gradient-draghandle-outline-width: 1px !default;
 /// The border radius of the ColorGradient canvas drag handle.
 /// @group cologradient
 $kendo-color-gradient-draghandle-border-radius: 50% !default;
@@ -98,15 +101,18 @@ $kendo-color-gradient-draghandle-bg: transparent !default;
 /// The color of the border around the ColorGradient canvas drag handle.
 /// @group cologradient
 $kendo-color-gradient-draghandle-border: rgba( $kendo-color-white, .8) !default;
+/// The color of the outline around the ColorGradient canvas drag handle.
+/// @group cologradient
+$kendo-color-gradient-draghandle-shadow: rgba( $kendo-color-black, .5 ) !default;
+/// The focus color of the outline around the ColorGradient canvas drag handle.
+/// @group cologradient
+$kendo-color-gradient-draghandle-focus-shadow: $kendo-color-black !default;
+/// The hover color of the outline around the ColorGradient canvas drag handle.
+/// @group cologradient
+$kendo-color-gradient-draghandle-hover-shadow: $kendo-color-black !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group cologradient
-$kendo-color-gradient-draghandle-shadow: 0 1px 4px rgba(0, 0, 0, .5) !default;
-/// The box shadow of the focused ColorGradient canvas drag handle.
-/// @group cologradient
-$kendo-color-gradient-draghandle-focus-shadow: 0 1px 4px black !default;
-/// The box shadow of the hovered ColorGradient canvas drag handle.
-/// @group cologradient
-$kendo-color-gradient-draghandle-hover-shadow: $kendo-color-gradient-draghandle-focus-shadow !default;
+$kendo-color-gradient-draghandle-shadow: k-elevation(2) !default;
 
 /// The vertical margin of the ColorGradient canvas drag handle.
 /// @group cologradient

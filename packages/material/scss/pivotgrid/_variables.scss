@@ -70,10 +70,10 @@ $kendo-pivotgrid-configurator-header-bg: null !default;
 $kendo-pivotgrid-configurator-header-text: $kendo-component-header-text !default;
 $kendo-pivotgrid-configurator-header-border: null !default;
 
-$kendo-pivotgrid-configurator-end-shadow: -3px 0px 6px rgba( black, .16 ) !default;
-$kendo-pivotgrid-configurator-start-shadow: 3px 0px 6px rgba( black, .16 ) !default;
-$kendo-pivotgrid-configurator-top-shadow: 0px -3px 6px rgba( black, .16 ) !default;
-$kendo-pivotgrid-configurator-bottom-shadow: 0px 3px 6px rgba( black, .16 ) !default;
+$kendo-pivotgrid-configurator-end-shadow: $box-shadow-depth-3 !default;
+$kendo-pivotgrid-configurator-start-shadow: $box-shadow-depth-3 !default;
+$kendo-pivotgrid-configurator-top-shadow: $box-shadow-depth-3 !default;
+$kendo-pivotgrid-configurator-bottom-shadow: $box-shadow-depth-3 !default;
 
 $kendo-pivotgrid-configurator-button-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-pivotgrid-configurator-button-padding-y: k-map-get( $kendo-spacing, 1 ) !default;

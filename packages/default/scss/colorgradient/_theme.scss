@@ -27,12 +27,14 @@
             $kendo-color-gradient-draghandle-bg,
             $kendo-color-gradient-draghandle-border
         );
+        outline-color: $kendo-color-gradient-draghandle-focus-shadow;
         @include box-shadow( $kendo-color-gradient-draghandle-shadow );
 
         &:focus,
         &.k-focus {
             @include fill( $bg: transparent, $border: $kendo-color-white );
-            @include focus-indicator( $kendo-color-gradient-draghandle-focus-shadow );
+            outline-color: $kendo-color-gradient-draghandle-focus-shadow;
+            @include focus-indicator( $kendo-color-gradient-draghandle-shadow );
         }
 
         &:hover,
@@ -40,7 +42,7 @@
         &.k-active,
         &:active {
             @include fill( $bg: transparent, $border: $kendo-color-white );
-            @include box-shadow( $kendo-color-gradient-draghandle-hover-shadow );
+            outline-color: $kendo-color-gradient-draghandle-hover-shadow;
         }
     }
 

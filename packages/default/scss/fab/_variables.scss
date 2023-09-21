@@ -115,10 +115,10 @@ $kendo-fab-sizes: (
 
 /// The base shadow of the FAB.
 /// @group floating-action-button
-$kendo-fab-shadow: 0 6px 10px rgba(0, 0, 0, .14), 0 1px 18px rgba(0, 0, 0, .12), 0 3px 5px rgba(0, 0, 0, .2) !default;
+$kendo-fab-shadow: k-elevation(5) !default;
 /// The shadow of the disabled FAB.
 /// @group floating-action-button
-$kendo-fab-disabled-shadow: 0 6px 10px k-try-tint( rgba(0, 0, 0, .14), .5 ), 0 1px 18px k-try-tint( rgba(0, 0, 0, .12), .5 ), 0 3px 5px k-try-tint( rgba(0, 0, 0, .2), .5 ) !default;
+$kendo-fab-disabled-shadow: k-elevation(5) !default;
 /// The shadow of the active FAB.
 /// @group floating-action-button
 $kendo-fab-active-shadow: null !default;

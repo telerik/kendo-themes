@@ -342,9 +342,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-shadow</td>
-    <td>List</td>
-    <td><code>0px 3px 5px -1px rgba( black, .2 ), 0px 6px 10px rgba( black, .14 ), 0px 1px 18px rgba( black, .12 )</code></td>
-    <td><code>0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12)</code></td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-5</code></td>
+    <td><code>var(--kendo-elevation-5, 0px 3px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
@@ -352,9 +352,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-disabled-shadow</td>
-    <td>List</td>
-    <td><code>0px 3px 5px -1px k-try-tint( rgba( black, .2 ), .5 ), 0px 6px 10px k-try-tint( rgba( black, .14 ), .5 ), 0px 1px 18px k-try-tint( rgba( black, .12 ), .5 )</code></td>
-    <td><code>0px 3px 5px -1px rgba(70, 70, 70, 0.232), 0px 6px 10px rgba(91, 91, 91, 0.1744), 0px 1px 18px rgba(101, 101, 101, 0.1552)</code></td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-5</code></td>
+    <td><code>var(--kendo-elevation-5, 0px 3px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB.</div></div>
@@ -362,9 +362,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-active-shadow</td>
-    <td>List</td>
-    <td><code>0px 5px 5px -3px rgba( black, .2 ), 0px 8px 10px 1px rgba( black, .14 ), 0px 3px 14px 2px rgba( black, .12 )</code></td>
-    <td><code>0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)</code></td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-7</code></td>
+    <td><code>var(--kendo-elevation-7, 0px 7px 8px 0px rgba(0, 0, 0, 0.2), 0px 5px 22px 0px rgba(0, 0, 0, 0.12), 0px 12px 17px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the active FAB.</div></div>
@@ -432,9 +432,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-fab-shadow</code></td>
-    <td><code>0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12)</code></td>
+    <td><code>var(--kendo-elevation-5, 0px 3px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB item.</div></div>
@@ -442,9 +442,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-disabled-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-fab-disabled-shadow</code></td>
-    <td><code>0px 3px 5px -1px rgba(70, 70, 70, 0.232), 0px 6px 10px rgba(91, 91, 91, 0.1744), 0px 1px 18px rgba(101, 101, 101, 0.1552)</code></td>
+    <td><code>var(--kendo-elevation-5, 0px 3px 5px 0px rgba(0, 0, 0, 0.2), 0px 1px 18px 0px rgba(0, 0, 0, 0.12), 0px 6px 10px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB item.</div></div>
@@ -452,9 +452,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-active-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-fab-active-shadow</code></td>
-    <td><code>0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)</code></td>
+    <td><code>var(--kendo-elevation-7, 0px 7px 8px 0px rgba(0, 0, 0, 0.2), 0px 5px 22px 0px rgba(0, 0, 0, 0.12), 0px 12px 17px 0px rgba(0, 0, 0, 0.14))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the active FAB item.</div></div>

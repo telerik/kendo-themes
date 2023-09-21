@@ -590,7 +590,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-card-selected-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-4, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-3, none )</code></td>
     <td></td>
 </tr>
 <tr>

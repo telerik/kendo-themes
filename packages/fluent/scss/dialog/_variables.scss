@@ -50,7 +50,7 @@ $kendo-dialog-button-spacing: map.get( $kendo-spacing, 2 ) !default; // $kendo-a
 
 /// The box shadow around the Dialog.
 /// @group dialog
-$kendo-dialog-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-dialog-shadow: var( --kendo-box-shadow-depth-8, none ) !default;
 
 /// The theme variations for the Dialog.
 $kendo-dialog-brand-colors: (

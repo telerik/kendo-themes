@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-tile-layout-card-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>0 0 0 3px rgba(222, 226, 230, 0.5)</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 4px 10px rgba(0, 0, 0, 0.1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the TileLayout card.</div></div>

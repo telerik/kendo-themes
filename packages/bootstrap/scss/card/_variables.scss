@@ -21,7 +21,7 @@ $kendo-card-shadow: null !default;
 $kendo-card-focus-bg: null !default;
 $kendo-card-focus-text: null !default;
 $kendo-card-focus-border: null !default;
-$kendo-card-focus-shadow: 0 0 0 3px rgba( $kendo-card-border, .5 ) !default;
+$kendo-card-focus-shadow: k-elevation(3) !default;
 
 $kendo-card-header-padding-x: $kendo-card-padding-x !default;
 $kendo-card-header-padding-y: $kendo-card-padding-y !default;

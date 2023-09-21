@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-border-width</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>2px</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-canvas-draghandle-shadow</td>
     <td></td>
-    <td><code>0px 0.6px 1.8px rgba(0, 0, 0, 0.1), 0px 3.2px 7.2px rgba(0, 0, 0, 0.13), inset 0px 0px 0px 3px #FFFFFF</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-border-width</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>2px</code></td>
     <td></td>
 </tr>
 <tr>
@@ -348,13 +348,33 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-draghandle-outline-width</td>
+    <td></td>
+    <td><code>1px</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the outline around the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-draghandle-border</td>
+    <td></td>
+    <td><code>$kendo-color-white</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-shadow</td>
     <td></td>
     <td><code>k-get-theme-color-var( neutral-110 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the border around the ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -370,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
+    <td><code>$kendo-color-white</code></td>
     <td></td>
 </tr>
 <tr>
@@ -380,21 +400,21 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td></td>
-    <td><code>$kendo-color-gradient-draghandle-shadow</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td></td>
-    <td><code>$kendo-color-gradient-draghandle-focus-shadow</code></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the hovered ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The hover color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>

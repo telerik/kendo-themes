@@ -690,7 +690,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scheduler-tooltip-shadow</td>
     <td></td>
-    <td><code>0px 0px 10px rgba(0, 0, 0, .2 )</code></td>
+    <td><code>k-elevation(5)</code></td>
     <td></td>
 </tr>
 <tr>

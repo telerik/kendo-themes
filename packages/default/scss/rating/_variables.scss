@@ -20,5 +20,5 @@ $kendo-rating-icon-selected-text: $kendo-selected-bg !default;
 $kendo-rating-icon-hover-text: $kendo-selected-bg !default;
 $kendo-rating-icon-focus-text: $kendo-selected-bg !default;
 
-$kendo-rating-icon-focus-shadow: 0 2px 4px rgba( $kendo-color-black, .1 ) !default;
-$kendo-rating-icon-focus-selected-shadow: 0 2px 4px rgba( $kendo-color-black, .1) !default;
+$kendo-rating-icon-focus-shadow: k-elevation(1) !default;
+$kendo-rating-icon-focus-selected-shadow: k-elevation(1) !default;

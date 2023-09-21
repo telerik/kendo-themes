@@ -55,7 +55,7 @@
 ///   @debug k-map-deep-merge( ( "foo": ("bar": "baz", "baz": "qux" ) ), ( "foo": ("bar": "foo") ) ); // => ( "foo": ("bar": "foo", "baz": "qux" ))
 @function k-map-deep-merge($maps...) {
     $merged: ();
-  
+
     @each $map in $maps {
       @each $key, $val in $map {
         @if (k-meta-type-of($val) == 'map') {
@@ -73,7 +73,7 @@
       }
       $merged: k-map-merge($merged, $map);
     }
-  
+
     @return $merged;
   }
 

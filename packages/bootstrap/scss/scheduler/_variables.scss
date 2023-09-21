@@ -77,7 +77,7 @@ $kendo-scheduler-tooltip-border-width: 0 !default;
 $kendo-scheduler-tooltip-bg: $kendo-color-primary-contrast !default;
 $kendo-scheduler-tooltip-text: $kendo-base-text !default;
 $kendo-scheduler-tooltip-border: null !default;
-$kendo-scheduler-tooltip-shadow: 0px 0px 10px rgba( black, .2 ) !default;
+$kendo-scheduler-tooltip-shadow: k-elevation(2) !default;
 
 $kendo-scheduler-tooltip-title-margin-y: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-scheduler-tooltip-month-font-size: $kendo-font-size-sm !default;
