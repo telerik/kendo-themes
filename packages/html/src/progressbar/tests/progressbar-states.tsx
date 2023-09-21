@@ -1,4 +1,4 @@
-import { ProgressBar } from '../../progressbar';
+import { ProgressBar, ProgressBarNormal } from '../../progressbar';
 
 const style = `
     .k-progressbar-indeterminate,
@@ -20,7 +20,7 @@ export default () =>(
             {[ 'normal', ...ProgressBar.states ].map((state) => (
                 <>
                     <div>{state}</div>
-                    <ProgressBar value="60" { ...{ [state]: true }} />
+                    <ProgressBarNormal value="60" { ...{ [state]: true }} />
                 </>
             ))}
         </div>

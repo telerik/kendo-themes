@@ -1,4 +1,4 @@
-import { ChunkProgressBar } from '..';
+import { ChunkProgressBarNormal } from '../../progressbar';
 
 
 const style = `
@@ -17,20 +17,20 @@ export default () =>(
             <span>RTL</span>
 
             <span>Chunk</span>
-            <ChunkProgressBar progress={2} />
-            <ChunkProgressBar progress={2} dir="rtl" />
+            <ChunkProgressBarNormal progress={2} />
+            <ChunkProgressBarNormal progress={2} dir="rtl" />
 
             <span>Chunk 100%</span>
-            <ChunkProgressBar progress={5} />
-            <ChunkProgressBar progress={5} dir="rtl" />
+            <ChunkProgressBarNormal progress={5} />
+            <ChunkProgressBarNormal progress={5} dir="rtl" />
 
             <span>Chunk reverse</span>
-            <ChunkProgressBar reverse={true} progress={2} />
-            <ChunkProgressBar reverse={true} progress={2} dir="rtl" />
+            <ChunkProgressBarNormal reverse={true} progress={2} />
+            <ChunkProgressBarNormal reverse={true} progress={2} dir="rtl" />
 
             <span>Chunk 100% reverse</span>
-            <ChunkProgressBar reverse={true} progress={5} />
-            <ChunkProgressBar reverse={true} progress={5} dir="rtl" />
+            <ChunkProgressBarNormal reverse={true} progress={5} />
+            <ChunkProgressBarNormal reverse={true} progress={5} dir="rtl" />
 
 
         </div>

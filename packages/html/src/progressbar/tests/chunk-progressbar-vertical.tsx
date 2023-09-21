@@ -1,4 +1,4 @@
-import { ChunkProgressBar } from '../../progressbar';
+import { ChunkProgressBarNormal } from '../../progressbar';
 
 
 const style = `
@@ -17,10 +17,10 @@ export default () =>(
             <span>Chunk reverse</span>
             <span>Chunk 100% reverse</span>
 
-            <ChunkProgressBar orientation="vertical" progress={2} />
-            <ChunkProgressBar orientation="vertical" progress={5} />
-            <ChunkProgressBar orientation="vertical" reverse={true} progress={2} />
-            <ChunkProgressBar orientation="vertical" reverse={true} progress={5} />
+            <ChunkProgressBarNormal orientation="vertical" progress={2} />
+            <ChunkProgressBarNormal orientation="vertical" progress={5} />
+            <ChunkProgressBarNormal orientation="vertical" reverse={true} progress={2} />
+            <ChunkProgressBarNormal orientation="vertical" reverse={true} progress={5} />
         </div>
     </>
 );

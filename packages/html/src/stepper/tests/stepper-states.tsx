@@ -1,5 +1,5 @@
 import { Icon } from '../../icon';
-import { ProgressBar } from '../../progressbar';
+import { ProgressBarNormal } from '../../progressbar';
 
 
 const style = `
@@ -51,7 +51,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -90,7 +90,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -120,7 +120,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -155,7 +155,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -194,7 +194,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -224,7 +224,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -257,7 +257,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -296,7 +296,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -326,7 +326,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} value="50" />
+                    <ProgressBarNormal label={false} value="50" />
                 </nav>
             </section>
 
@@ -361,7 +361,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} disabled={true} value="50" />
+                    <ProgressBarNormal label={false} disabled={true} value="50" />
                 </nav>
             </section>
 
@@ -400,7 +400,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} disabled={true} value="50" />
+                    <ProgressBarNormal label={false} disabled={true} value="50" />
                 </nav>
             </section>
 
@@ -430,7 +430,7 @@ export default () =>(
                             </a>
                         </li>
                     </ol>
-                    <ProgressBar label={false} disabled={true} value="50" />
+                    <ProgressBarNormal label={false} disabled={true} value="50" />
                 </nav>
             </section>
         </div>

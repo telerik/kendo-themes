@@ -1,4 +1,4 @@
-import { ProgressBar } from '../../progressbar';
+import { ProgressBarNormal } from '../../progressbar';
 
 
 const style = `
@@ -22,15 +22,15 @@ export default () =>(
             <span>Thin style</span>
             <span>Thick style</span>
 
-            <ProgressBar orientation="vertical" value="5" />
-            <ProgressBar orientation="vertical" value="50" labelPosition="center" />
-            <ProgressBar orientation="vertical" value="95" labelPosition="end" />
-            <ProgressBar orientation="vertical" value="100" />
-            <ProgressBar orientation="vertical" value="100" labelPosition="center" />
-            <ProgressBar orientation="vertical" value="100" labelPosition="end" />
-            <ProgressBar orientation="vertical" value="50" label={false} />
-            <ProgressBar orientation="vertical" value="50" label={false} width="2px" />
-            <ProgressBar orientation="vertical" value="50" width="50px" labelPosition="end" />
+            <ProgressBarNormal orientation="vertical" value="5" />
+            <ProgressBarNormal orientation="vertical" value="50" labelPosition="center" />
+            <ProgressBarNormal orientation="vertical" value="95" labelPosition="end" />
+            <ProgressBarNormal orientation="vertical" value="100" />
+            <ProgressBarNormal orientation="vertical" value="100" labelPosition="center" />
+            <ProgressBarNormal orientation="vertical" value="100" labelPosition="end" />
+            <ProgressBarNormal orientation="vertical" value="50" label={false} />
+            <ProgressBarNormal orientation="vertical" value="50" label={false} width="2px" />
+            <ProgressBarNormal orientation="vertical" value="50" width="50px" labelPosition="end" />
         </div>
     </>
 );

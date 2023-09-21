@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Icon } from '../../icon';
 import { Button } from '../../button';
-import { ProgressBar } from '../../progressbar';
+import { ProgressBarNormal } from '../../progressbar';
 
 
 const style = `
@@ -73,7 +73,7 @@ export default () =>(
                                 </a>
                             </li>
                         </ol>
-                        <ProgressBar label={false} value="50" />
+                        <ProgressBarNormal label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step k-focus">
@@ -134,7 +134,7 @@ export default () =>(
                                 </a>
                             </li>
                         </ol>
-                        <ProgressBar label={false} value="50" />
+                        <ProgressBarNormal label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step">
@@ -196,7 +196,7 @@ export default () =>(
                                 </a>
                             </li>
                         </ol>
-                        <ProgressBar label={false} value="50" />
+                        <ProgressBarNormal label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step">
@@ -257,7 +257,7 @@ export default () =>(
                                 </a>
                             </li>
                         </ol>
-                        <ProgressBar label={false} value="50" />
+                        <ProgressBarNormal label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step">
@@ -318,7 +318,7 @@ export default () =>(
                                 </a>
                             </li>
                         </ol>
-                        <ProgressBar label={false} value="50" />
+                        <ProgressBarNormal label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step">
