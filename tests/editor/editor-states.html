@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        /* needed for test */
+        .k-editor-content>.ProseMirror {
+            white-space: normal;
+        }
+        .k-editor {
+            width: 550px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <section>
+            <div>normal</div>
+            <div class="k-editor">
+                <div class="k-editor-toolbar k-toolbar k-toolbar-md k-toolbar-resizable">
+                    <div class="k-toolbar-button-group  k-button-group k-button-group-solid">
+                        <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-svg-icon k-svg-i-undo">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-svg-icon k-svg-i-redo">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <button class="k-toolbar-overflow-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-editor-content">
+                    <p class="ProseMirror">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia obcaecati dignissimos beatae ipsam voluptatem pariatur consectetur culpa asperiores veniam?</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>readonly</div>
+            <div class="k-editor k-readonly">
+                <div class="k-editor-toolbar k-toolbar k-toolbar-md k-toolbar-resizable">
+                    <div class="k-toolbar-button-group  k-button-group k-button-group-solid">
+                        <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-svg-icon k-svg-i-undo">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-svg-icon k-svg-i-redo">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <button class="k-toolbar-overflow-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-editor-content">
+                    <p class="ProseMirror">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia obcaecati dignissimos beatae ipsam voluptatem pariatur consectetur culpa asperiores veniam?</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>disabled</div>
+            <div class="k-editor k-disabled">
+                <div class="k-editor-toolbar k-toolbar k-toolbar-md k-toolbar-resizable">
+                    <div class="k-toolbar-button-group  k-button-group k-button-group-solid">
+                        <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-svg-icon k-svg-i-undo">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M479.9 416c-57.7-56.6-136.7-96-223.9-96v128L32 256 256 64v128c122.2 0 221.5 102.4 223.9 224z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-svg-icon k-svg-i-redo">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 192V64l224 192-224 192V320c-87.2 0-166.2 39.4-223.9 96C34.5 294.4 133.9 192 256 192z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <button class="k-toolbar-overflow-button k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-svg-icon k-svg-i-more-vertical">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M240 128c26.4 0 48-21.6 48-48s-21.6-48-48-48-48 21.6-48 48 21.6 48 48 48zm0 64c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48zm0 160c-26.4 0-48 21.6-48 48s21.6 48 48 48 48-21.6 48-48-21.6-48-48-48z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="k-editor-content">
+                    <p class="ProseMirror">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia obcaecati dignissimos beatae ipsam voluptatem pariatur consectetur culpa asperiores veniam?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
