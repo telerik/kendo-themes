@@ -2,7 +2,7 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroup } from '../../checkbox';
 import { Textbox } from '../../textbox';
-import { Editor, EditorContent, EditorToolbar } from '../../editor';
+import { EditorNormal, EditorContent, EditorToolbar } from '../../editor';
 import { Window } from '../../window';
 import { ButtonGroup } from '../../button-group';
 import { Form, FormField } from '../../form';
@@ -131,7 +131,7 @@ export default () =>(
             <span></span>
 
             <section>
-                <Editor style={{ height: "150px" }}>
+                <EditorNormal style={{ height: "150px" }}>
                     <EditorToolbar resizable>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
@@ -143,7 +143,7 @@ export default () =>(
                     <EditorContent>
                         <div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div>
                     </EditorContent>
-                </Editor>
+                </EditorNormal>
             </section>
         </div>
     </>

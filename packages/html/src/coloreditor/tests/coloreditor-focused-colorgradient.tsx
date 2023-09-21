@@ -1,4 +1,4 @@
-import { ColorEditor } from '../../coloreditor';
+import { ColorEditorNormal } from '../../coloreditor';
 
 
 const styles = `
@@ -20,7 +20,7 @@ export default () =>(
             <span>Focused Cologradient Inside ColorEditor</span>
 
             <section>
-                <ColorEditor focusView />
+                <ColorEditorNormal focusView />
             </section>
 
         </div>

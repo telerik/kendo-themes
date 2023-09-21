@@ -1,10 +1,8 @@
+import { EditorContent, EditorToolbar, EditorNormal } from '../../editor';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { ColorPicker } from '../../colorpicker';
 import { DropdownList } from '../../dropdownlist';
-import { Editor } from '..';
-import { EditorContent } from '../editor-content';
-import { EditorToolbar } from '../editor-toolbar';
 import { ToolbarItem } from '../../toolbar';
 import { Popup } from '../../popup';
 
@@ -33,7 +31,7 @@ export default () =>(
             <span>Editor with iFrame; responsive toolbar</span>
             <span>Editor without iFrame; responsive toolbar</span>
             <section>
-                <Editor style={{ height: "300px" }}>
+                <EditorNormal style={{ height: "300px" }}>
                     <EditorToolbar resizable>
                         <ButtonGroup>
                             <Button icon="undo"></Button>
@@ -44,10 +42,10 @@ export default () =>(
                     <EditorContent>
                         <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
                     </EditorContent>
-                </Editor>
+                </EditorNormal>
             </section>
             <section>
-                <Editor style={{ height: "300px" }}>
+                <EditorNormal style={{ height: "300px" }}>
                     <EditorToolbar resizable>
                         <ButtonGroup>
                             <Button icon="undo"></Button>
@@ -90,13 +88,13 @@ export default () =>(
                             <p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul>
                         </div>
                     </EditorContent>
-                </Editor>
+                </EditorNormal>
             </section>
 
             <span>Editor with iFrame; NO-responsive toolbar</span>
             <span>Readonly Editor without iFrame; NO-responsive toolbar</span>
             <section>
-                <Editor style={{ height: "350px" }}>
+                <EditorNormal style={{ height: "350px" }}>
                     <EditorToolbar>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
@@ -168,11 +166,11 @@ export default () =>(
                     <EditorContent focus>
                         <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
                     </EditorContent>
-                </Editor>
+                </EditorNormal>
             </section>
 
             <section>
-                <Editor readonly style={{ height: "350px" }}>
+                <EditorNormal readonly style={{ height: "350px" }}>
                     <EditorToolbar>
                         <ButtonGroup disabled>
                             <Button icon="bold" disabled></Button>
@@ -243,7 +241,7 @@ export default () =>(
                     <EditorContent focus>
                         <div className="ProseMirror"><p>The Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div>
                     </EditorContent>
-                </Editor>
+                </EditorNormal>
             </section>
 
             <span>Table Wizard</span>

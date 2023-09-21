@@ -8,157 +8,19 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="k-d-grid k-grid-cols-9">
-        <span></span>
-        <span>No Color</span>
-        <span>Opacity</span>
-        <span>Selected Color</span>
-        <span>Icon</span>
-        <span>Icon Opacity</span>
-        <span>Hover</span>
-        <span>Focus</span>
-        <span>Disabled</span>
-        <span>Small</span>
+    <style>
+        #test-area {
+            justify-items: start;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
         <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview k-no-color">
-                        <span class="k-color-preview-mask"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview k-icon-color-preview">
-                        <span class="k-color-preview-icon k-svg-icon k-svg-i-edit-tools">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="m260.6 288 11.5 31.5 56.2-56.6L244.2 32H139.8L0 416h76.8l28-76.8 18.6-51.2h137.2zm-17.5-48H140.9L192 99.5 243.1 240zM224 413.3V480h66.7l169.7-168.5-67.9-67.9L224 413.3zm55.3 34-22.6-22.6 135.8-135.8 22.6 22.6-135.8 135.8zm223.4-178-22.6 22.6-67.9-67.9 22.5-22.7c12.5-12.4 32.9-12.4 45.3 0l22.7 22.7c12.4 12.4 12.4 32.8 0 45.3z"></path>
-                            </svg>
-                        </span>
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview k-icon-color-preview">
-                        <span class="k-color-preview-icon k-svg-icon k-svg-i-edit-tools">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="m260.6 288 11.5 31.5 56.2-56.6L244.2 32H139.8L0 416h76.8l28-76.8 18.6-51.2h137.2zm-17.5-48H140.9L192 99.5 243.1 240zM224 413.3V480h66.7l169.7-168.5-67.9-67.9L224 413.3zm55.3 34-22.6-22.6 135.8-135.8 22.6 22.6-135.8 135.8zm223.4-178-22.6 22.6-67.9-67.9 22.5-22.7c12.5-12.4 32.9-12.4 45.3 0l22.7 22.7c12.4 12.4 12.4 32.8 0 45.3z"></path>
-                            </svg>
-                        </span>
-                        <span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-picker-solid k-rounded-md k-hover">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-picker-solid k-rounded-md k-focus">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-picker-solid k-rounded-md k-disabled">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <span>Medium</span>
-        <section>
+            <span>no color</span>
             <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
                 <span class="k-input-inner">
                     <span class="k-value-icon k-color-preview k-no-color">
@@ -175,6 +37,7 @@
             </span>
         </section>
         <section>
+            <span>opacity</span>
             <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
                 <span class="k-input-inner">
                     <span class="k-value-icon k-color-preview">
@@ -191,22 +54,7 @@
             </span>
         </section>
         <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
+            <span>icon</span>
             <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
                 <span class="k-input-inner">
                     <span class="k-value-icon k-color-preview k-icon-color-preview">
@@ -228,6 +76,7 @@
             </span>
         </section>
         <section>
+            <span>icon opacity</span>
             <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
                 <span class="k-input-inner">
                     <span class="k-value-icon k-color-preview k-icon-color-preview">
@@ -240,193 +89,6 @@
                     </span>
                 </span>
                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md k-hover">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md k-focus">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md k-disabled">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <span>Large</span>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview k-no-color">
-                        <span class="k-color-preview-mask"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview k-icon-color-preview">
-                        <span class="k-color-preview-icon k-svg-icon k-svg-i-edit-tools">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="m260.6 288 11.5 31.5 56.2-56.6L244.2 32H139.8L0 416h76.8l28-76.8 18.6-51.2h137.2zm-17.5-48H140.9L192 99.5 243.1 240zM224 413.3V480h66.7l169.7-168.5-67.9-67.9L224 413.3zm55.3 34-22.6-22.6 135.8-135.8 22.6 22.6-135.8 135.8zm223.4-178-22.6 22.6-67.9-67.9 22.5-22.7c12.5-12.4 32.9-12.4 45.3 0l22.7 22.7c12.4 12.4 12.4 32.8 0 45.3z"></path>
-                            </svg>
-                        </span>
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-picker-solid k-rounded-md">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview k-icon-color-preview">
-                        <span class="k-color-preview-icon k-svg-icon k-svg-i-edit-tools">
-                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="m260.6 288 11.5 31.5 56.2-56.6L244.2 32H139.8L0 416h76.8l28-76.8 18.6-51.2h137.2zm-17.5-48H140.9L192 99.5 243.1 240zM224 413.3V480h66.7l169.7-168.5-67.9-67.9L224 413.3zm55.3 34-22.6-22.6 135.8-135.8 22.6 22.6-135.8 135.8zm223.4-178-22.6 22.6-67.9-67.9 22.5-22.7c12.5-12.4 32.9-12.4 45.3 0l22.7 22.7c12.4 12.4 12.4 32.8 0 45.3z"></path>
-                            </svg>
-                        </span>
-                        <span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-picker-solid k-rounded-md k-hover">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-picker-solid k-rounded-md k-focus">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button">
-                    <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 352 128 160h256L256 352z"></path>
-                        </svg>
-                    </span>
-                </button>
-            </span>
-        </section>
-        <section>
-            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-picker-solid k-rounded-md k-disabled">
-                <span class="k-input-inner">
-                    <span class="k-value-icon k-color-preview">
-                        <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
-                    </span>
-                </span>
-                <button class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button">
                     <span class="k-button-icon k-svg-icon k-svg-i-caret-alt-down">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M256 352 128 160h256L256 352z"></path>

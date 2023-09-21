@@ -1,5 +1,5 @@
 import { Button } from '../../button';
-import { ColorEditor } from '../../coloreditor';
+import { ColorEditorPaletteGroup } from '../../coloreditor';
 
 const style = `
     .k-animation-container {
@@ -37,7 +37,7 @@ export default () => (
                                 <span className="k-column-menu-group-header-text">Border color</span>
                             </span>
 
-                            <ColorEditor className="k-spreadsheet-border-color-palette" group view="palette" color="rgba(0,0,0, 0.5)" currentColor="fuchsia" />
+                            <ColorEditorPaletteGroup className="k-spreadsheet-border-color-palette" color="rgba(0,0,0, 0.5)" currentColor="fuchsia" />
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import { ColorEditor } from '../../coloreditor';
+import { ColorEditor, ColorEditorNormal } from '../../coloreditor';
 
 
 const styles = `
@@ -15,13 +15,14 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-1">
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>Focus</span>
-
-            <section>
-                <ColorEditor focus />
-            </section>
+            {[ 'normal', ...ColorEditor.states ].map((state) => (
+                <section>
+                    <div>{state}</div>
+                    <ColorEditorNormal { ...{ [state]: true }} />
+                </section>
+            ))}
 
         </div>
     </>
