@@ -18,6 +18,8 @@ $kendo-tooltip-bg: if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-bl
 $kendo-tooltip-text: k-contrast-color( $kendo-tooltip-bg ) !default;
 $kendo-tooltip-border: $kendo-tooltip-bg !default;
 
+$kendo-tooltip-shadow: k-elevation(2) !default;
+
 $kendo-tooltip-primary-bg: $kendo-color-primary !default;
 $kendo-tooltip-primary-text: k-contrast-color( $kendo-tooltip-primary-bg ) !default;
 $kendo-tooltip-primary-border: $kendo-tooltip-primary-bg !default;

@@ -52,16 +52,16 @@ $kendo-chat-border: $kendo-app-border !default;
 $kendo-chat-bubble-bg: $kendo-component-bg !default;
 $kendo-chat-bubble-text: $kendo-component-text !default;
 $kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;
-$kendo-chat-bubble-shadow: 0 1px 2px rgba( $kendo-color-black, .08) !default;
-$kendo-chat-bubble-hover-shadow: 0 1px 2px rgba( $kendo-color-black, .16) !default;
-$kendo-chat-bubble-selected-shadow: 0 3px 10px rgba( $kendo-color-black, .16) !default;
+$kendo-chat-bubble-shadow: k-elevation(1) !default;
+$kendo-chat-bubble-hover-shadow: k-elevation(2) !default;
+$kendo-chat-bubble-selected-shadow: k-elevation(3) !default;
 
 $kendo-chat-alt-bubble-bg: $kendo-color-primary !default;
 $kendo-chat-alt-bubble-text: k-contrast-legacy( $kendo-chat-alt-bubble-bg ) !default;
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
-$kendo-chat-alt-bubble-shadow: 0 1px 2px rgba( $kendo-chat-alt-bubble-bg, .2 ) !default;
-$kendo-chat-alt-bubble-hover-shadow: 0 1px 2px rgba( $kendo-chat-alt-bubble-bg, .2 ) !default;
-$kendo-chat-alt-bubble-selected-shadow: 0 3px 10px rgba( $kendo-chat-alt-bubble-bg, .4 ) !default;
+$kendo-chat-alt-bubble-shadow: k-elevation(1) !default;
+$kendo-chat-alt-bubble-hover-shadow: k-elevation(2) !default;
+$kendo-chat-alt-bubble-selected-shadow: k-elevation(3) !default;
 
 $kendo-chat-quick-reply-bg: transparent !default;
 $kendo-chat-quick-reply-text: $kendo-color-primary !default;

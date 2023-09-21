@@ -11,7 +11,7 @@ $kendo-color-gradient-spacer: map.get( $kendo-spacing, 4 ) !default;
 $kendo-color-gradient-width: 260px !default;
 /// The width of the border around the ColorGradient.
 /// @group cologradient
-$kendo-color-gradient-border-width: 1px !default;
+$kendo-color-gradient-border-width: 2px !default;
 /// The border radius of the ColorGradient.
 /// @group cologradient
 $kendo-color-gradient-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
@@ -71,7 +71,7 @@ $kendo-color-gradient-canvas-rectangle-height: 180px !default;
 $kendo-color-gradient-canvas-rectangle-border: k-get-theme-color-var( neutral-30 ) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group cologradient
-$kendo-color-gradient-canvas-draghandle-shadow: 0px 0.6px 1.8px rgba(0, 0, 0, 0.1), 0px 3.2px 7.2px rgba(0, 0, 0, 0.13), inset 0px 0px 0px 3px #FFFFFF !default;
+$kendo-color-gradient-canvas-draghandle-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 
 /// The width of the ColorGradient slider.
 /// @group cologradient
@@ -104,22 +104,28 @@ $kendo-color-gradient-draghandle-width: 20px !default;
 $kendo-color-gradient-draghandle-height: 20px !default;
 /// The width of the border around the ColorGradient canvas drag handle.
 /// @group cologradient
-$kendo-color-gradient-draghandle-border-width: 1px !default;
+$kendo-color-gradient-draghandle-border-width: 2px !default;
+/// The width of the outline around the ColorGradient canvas drag handle.
+/// @group cologradient
+$kendo-color-gradient-draghandle-outline-width: 1px !default;
 /// The color of the border around the ColorGradient canvas drag handle.
 /// @group cologradient
-$kendo-color-gradient-draghandle-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-color-gradient-draghandle-border: $kendo-color-white !default;
+/// The color of the outline around the ColorGradient canvas drag handle.
+/// @group cologradient
+$kendo-color-gradient-draghandle-shadow: k-get-theme-color-var( neutral-110 ) !default;
 /// The box shadow of the ColorGradient canvas drag handle.
 /// @group cologradient
 $kendo-color-gradient-draghandle-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 /// The color of the border around the focused ColorGradient canvas drag handle.
 /// @group cologradient
-$kendo-color-gradient-draghandle-focus-border: k-get-theme-color-var( neutral-160 ) !default;
-/// The box shadow of the focused ColorGradient canvas drag handle.
+$kendo-color-gradient-draghandle-focus-border: $kendo-color-white !default;
+/// The focus color of the outline around the ColorGradient canvas drag handle.
 /// @group cologradient
-$kendo-color-gradient-draghandle-focus-shadow: $kendo-color-gradient-draghandle-shadow !default;
-/// The box shadow of the hovered ColorGradient canvas drag handle.
+$kendo-color-gradient-draghandle-focus-shadow: k-get-theme-color-var( neutral-130 ) !default;
+/// The hover color of the outline around the ColorGradient canvas drag handle.
 /// @group cologradient
-$kendo-color-gradient-draghandle-hover-shadow: $kendo-color-gradient-draghandle-focus-shadow !default;
+$kendo-color-gradient-draghandle-hover-shadow: k-get-theme-color-var( neutral-130 ) !default;
 
 /// The vertical offset of the ColorGradient canvas drag handle.
 /// @group cologradient

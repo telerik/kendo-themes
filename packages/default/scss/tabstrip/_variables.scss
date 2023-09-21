@@ -80,7 +80,7 @@ $kendo-tabstrip-item-selected-gradient: null !default;
 
 $kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
-$kendo-tabstrip-item-dragging-shadow: 0px 3px 4px rgba(0, 0, 0, .15) !default;
+$kendo-tabstrip-item-dragging-shadow: k-elevation(3) !default;
 
 $kendo-tabstrip-item-disabled-bg: null !default;
 $kendo-tabstrip-item-disabled-text: null !default;

@@ -1,0 +1,9 @@
+@import "@progress/kendo-theme-core/scss/elevation/index.import.scss";
+
+@mixin kendo-utils--elevation {
+    @each $level, $elevation in $kendo-elevation {
+        .k-elevation-#{$level} {
+            box-shadow: $elevation;
+        }
+    }
+}

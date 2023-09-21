@@ -27,7 +27,7 @@ $kendo-timeline-track-end-calc: calc(#{$kendo-timeline-track-arrow-width} - 2 * 
 $kendo-timeline-track-bg: $kendo-button-bg !default;
 $kendo-timeline-track-border-color: $kendo-button-border !default;
 
-$kendo-timeline-track-item-focus-shadow: 0 3px 4px 0 rgba($kendo-color-primary, .4) !default;
+$kendo-timeline-track-item-focus-shadow: k-elevation(2) !default;
 
 $kendo-timeline-track-event-offset: 36px !default;
 

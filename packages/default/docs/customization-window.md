@@ -249,9 +249,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-window-shadow</td>
-    <td>List</td>
-    <td><code>0 3px 3px 0 rgba(0, 0, 0, .06)</code></td>
-    <td><code>0 3px 3px 0 rgba(0, 0, 0, 0.06)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(8)</code></td>
+    <td><code>var(--kendo-elevation-8, 0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Window.</div></div>
@@ -259,9 +259,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-window-focus-shadow</td>
-    <td>List</td>
-    <td><code>1px 1px 7px 1px rgba(0, 0, 0, .3)</code></td>
-    <td><code>1px 1px 7px 1px rgba(0, 0, 0, 0.3)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(9)</code></td>
+    <td><code>var(--kendo-elevation-9, 0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused Window.</div></div>

@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-timeline-flag-box-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-1, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
     <td></td>
 </tr>
 <tr>

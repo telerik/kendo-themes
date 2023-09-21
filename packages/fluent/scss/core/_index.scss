@@ -4,11 +4,17 @@
 @forward "./color-system/palettes";
 @use "./color-system/palettes" as *;
 
+// Elevation
+@use "./elevation" as *;
+@forward "./elevation/legacy";
+
 // Variables
 @forward "./variables";
 
-@forward "@progress/kendo-theme-core/scss/index.import.scss" with (
-    $kendo-palettes: $kendo-fluent-palettes
+@forward "@progress/kendo-theme-core/scss/index.import.scss"  with (
+    $kendo-palettes: $kendo-fluent-palettes,
+    $_default-elevation: $kendo-elevation,
+    $kendo-elevation: $kendo-elevation !default,
 );
 
 // Helpers
@@ -21,7 +27,7 @@ $components: null !default;
 
 @mixin core-configure($config: null) {
     @if $config {
-        $_components: map.get( $config, "components" );
+        $_components: map.get($config, "components");
 
         @if ($_components) {
             module.$components: $_components;

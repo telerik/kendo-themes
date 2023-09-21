@@ -98,7 +98,7 @@ $kendo-timeline-flag-border-radius: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-timeline-flag-line-height: var( --kendo-line-height, normal ) !default;
 /// The box shadow of the flag in the timeline.
 /// @group timeline
-$kendo-timeline-flag-box-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+$kendo-timeline-flag-box-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 /// The min widht of the flag in the timeline.
 /// @group timeline
 $kendo-timeline-flag-min-width: map.get( $kendo-spacing, 20 ) !default;

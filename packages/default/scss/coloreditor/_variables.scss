@@ -35,9 +35,10 @@ $kendo-color-editor-border: $kendo-component-border !default;
 /// The border color of the focused ColorEditor.
 /// @group coloreditor
 $kendo-color-editor-focus-border: null !default;
+// TODO: does this ever get focused? Isn't it always in a popup?
 /// The box shadow of the focused ColorEditor.
 /// @group coloreditor
-$kendo-color-editor-focus-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
+$kendo-color-editor-focus-shadow: null  !default; // 1px 1px 7px 1px rgba(0, 0, 0, .3)
 
 /// The vertical padding of the ColorEditor header.
 /// @group coloreditor

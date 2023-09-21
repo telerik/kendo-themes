@@ -1,0 +1,48 @@
+@use "sass:map";
+@use "./index" as *;
+
+/// Shadow for cards and grid item thumbnails.
+/// Equivalent to fluent depth 4.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-1: var( --kendo-elevation-1, none ) !default;
+/// Shadow for color gradient drag handle.
+/// Equivalent to fluent depth 8.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-2: var( --kendo-elevation-2, none ) !default;
+/// Shadow for focus card.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-3: var( --kendo-elevation-3, none ) !default;
+/// Shadow for panels.
+/// Equivalent to fluent depth 16.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-4: var( --kendo-elevation-4, none ) !default;
+/// Shadow for floating action button.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-5: var( --kendo-elevation-5, none ) !default;
+/// Shadow for pop up.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-6: var( --kendo-elevation-6, none ) !default;
+/// Shadow for action sheet.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-7: var( --kendo-elevation-7, none ) !default;
+/// Shadow for dialogs and window.
+/// Equivalent to fluent depth 64.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-8: var( --kendo-elevation-8, none ) !default;
+/// Shadow for focus window.
+/// @deprecated Use the `$kendo-elevation` map instead.
+$kendo-box-shadow-depth-9: var( --kendo-elevation-8, none ) !default;
+
+@mixin elevation--styles-legacy() {
+    :root {
+        --kendo-box-shadow-depth-1: #{$kendo-box-shadow-depth-1};
+        --kendo-box-shadow-depth-2: #{$kendo-box-shadow-depth-2};
+        --kendo-box-shadow-depth-3: #{$kendo-box-shadow-depth-3};
+        --kendo-box-shadow-depth-4: #{$kendo-box-shadow-depth-4};
+        --kendo-box-shadow-depth-5: #{$kendo-box-shadow-depth-5};
+        --kendo-box-shadow-depth-6: #{$kendo-box-shadow-depth-6};
+        --kendo-box-shadow-depth-7: #{$kendo-box-shadow-depth-7};
+        --kendo-box-shadow-depth-8: #{$kendo-box-shadow-depth-8};
+        --kendo-box-shadow-depth-9: #{$kendo-box-shadow-depth-9};
+    }
+}

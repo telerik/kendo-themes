@@ -218,7 +218,7 @@ $kendo-selection-border-color: var( --kendo-component-border, initial ) !default
 $kendo-treemap-font-family: var( --kendo-font-family, inherit ) !default;
 /// The font-size of the treemap.
 /// @group charts
-$kendo-treemap-font-size: var( -kendo-font-size, inherit ) !default;
+$kendo-treemap-font-size: var( --kendo-font-size, inherit ) !default;
 /// The line-height of the treemap.
 /// @group charts
 $kendo-treemap-line-height: var( --kendo-line-height, normal ) !default;

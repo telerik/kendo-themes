@@ -19,6 +19,8 @@ $kendo-tooltip-bg: material-color( gray, 700, .9 ) !default;
 $kendo-tooltip-text: get-base-contrast( gray, 700 ) !default;
 $kendo-tooltip-border: $kendo-tooltip-bg !default;
 
+$kendo-tooltip-shadow: $box-shadow-depth-2 !default;
+
 $kendo-tooltip-primary-bg: $kendo-color-primary !default;
 $kendo-tooltip-primary-text: k-contrast-color( $kendo-tooltip-primary-bg ) !default;
 $kendo-tooltip-primary-border: $kendo-tooltip-primary-bg !default;

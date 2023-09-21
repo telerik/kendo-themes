@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-shadow</td>
     <td></td>
-    <td><code>var( --kendo-box-shadow-depth-2, none )</code></td>
+    <td><code>var( --kendo-box-shadow-depth-6, none )</code></td>
     <td></td>
 </tr>
 <tr>

@@ -333,9 +333,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-appbar-box-shadow</td>
-    <td>List</td>
-    <td><code>0px 1px 1px rgba( black, .16 )</code></td>
-    <td><code>0px 1px 1px rgba(0, 0, 0, 0.16)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0px 6px 13px rgba(0, 0, 0, 0.125))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar.</div></div>
@@ -343,9 +343,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-appbar-bottom-box-shadow</td>
-    <td>List</td>
-    <td><code>0px -1px 1px rgba( black, .16 )</code></td>
-    <td><code>0px -1px 1px rgba(0, 0, 0, 0.16)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0px 6px 13px rgba(0, 0, 0, 0.125))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the AppBar with bottom position.</div></div>
@@ -879,9 +879,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-bottom-nav-shadow</td>
-    <td>List</td>
-    <td><code>0px 0px 5px rgba( black, .12 )</code></td>
-    <td><code>0px 0px 5px rgba(0, 0, 0, 0.12)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0px 6px 13px rgba(0, 0, 0, 0.125))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the BottomNavigation.</div></div>
@@ -3544,6 +3544,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-color-gradient-draghandle-outline-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the outline around the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-color-gradient-draghandle-border-radius</td>
     <td>Number</td>
     <td><code>50%</code></td>
@@ -3576,7 +3586,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
     <td>Color</td>
-    <td><code>rgba( white, .8)</code></td>
+    <td><code>rgba( $kendo-color-white, .8)</code></td>
     <td><span class="color-preview" style="background-color: rgba(255, 255, 255, 0.8)"></span><code>rgba(255, 255, 255, 0.8)</code></td>
 </tr>
 <tr>
@@ -3585,32 +3595,42 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
-    <td>List</td>
-    <td><code>0 1px 4px rgba( black, .5 )</code></td>
-    <td><code>0 1px 4px rgba(0, 0, 0, 0.5)</code></td>
+    <td>Color</td>
+    <td><code>rgba( $kendo-color-black, .5)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.5)"></span><code>rgba(0, 0, 0, 0.5)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
-    <td>List</td>
-    <td><code>0 1px 4px black</code></td>
-    <td><code>0 1px 4px black</code></td>
+    <td>Color</td>
+    <td><code>$kendo-color-black</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the focused ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus color of the outline around the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
-    <td>List</td>
-    <td><code>$kendo-color-gradient-draghandle-focus-shadow</code></td>
-    <td><code>0 1px 4px black</code></td>
+    <td>Color</td>
+    <td><code>$kendo-color-black</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the hovered ColorGradient canvas drag handle.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline color of the outline around the ColorGradient canvas drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-color-gradient-draghandle-shadow</td>
+    <td>Color</td>
+    <td><code>k-elevation(2)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.5)"></span><code>rgba(0, 0, 0, 0.5)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the ColorGradient canvas drag handle.</div></div>
     </td>
 </tr>
 <tr>
@@ -4970,6 +4990,36 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Elevation
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-elevation</td>
+    <td>Map</td>
+    <td><code>$_default-elevation</code></td>
+    <td><code>(1: ((0px 1px 2px rgba(0, 0, 0, 0.038),)), 2: ((0px 2px 7px rgba(0, 0, 0, 0.075),)), 3: ((0px 4px 10px rgba(0, 0, 0, 0.1),)), 4: ((0px 6px 13px rgba(0, 0, 0, 0.125),)), 5: ((0px 8px 16px 0px rgba(0, 0, 0, 0.15),)), 6: ((0px 11px 24px 0px rgba(0, 0, 0, 0.159),)), 7: ((0px 14px 36px 0px rgba(0, 0, 0, 0.168),)), 8: ((0px 16px 48px 0px rgba(0, 0, 0, 0.176),)), 9: ((0px 18px 60px 0px rgba(0, 0, 0, 0.185),)))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global Elevation.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Expander
 
 <table class="theme-variables">
@@ -5642,9 +5692,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-fab-shadow</td>
-    <td>List</td>
-    <td><code>0px 6px 10px rgba( black, .14 ), 0px 1px 18px rgba( black, .12 ), 0px 3px 5px rgba( black, .2 )</code></td>
-    <td><code>0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5, 0px 8px 16px 0px rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
@@ -5652,9 +5702,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-fab-disabled-shadow</td>
-    <td>List</td>
-    <td><code>0px 6px 10px k-try-tint( rgba( black, .14 ), .5 ), 0px 1px 18px k-try-tint( rgba( black, .12 ), .5 ), 0px 3px 5px k-try-tint( rgba( black, .2 ), .5 )</code></td>
-    <td><code>0px 6px 10px rgba(91, 91, 91, 0.1744), 0px 1px 18px rgba(101, 101, 101, 0.1552), 0px 3px 5px rgba(70, 70, 70, 0.232)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(5)</code></td>
+    <td><code>var(--kendo-elevation-5, 0px 8px 16px 0px rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB.</div></div>
@@ -5752,9 +5802,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-fab-item-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-fab-shadow</code></td>
-    <td><code>0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2)</code></td>
+    <td><code>var(--kendo-elevation-5, 0px 8px 16px 0px rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB item.</div></div>
@@ -5762,9 +5812,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-fab-item-disabled-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-fab-disabled-shadow</code></td>
-    <td><code>0px 6px 10px rgba(91, 91, 91, 0.1744), 0px 1px 18px rgba(101, 101, 101, 0.1552), 0px 3px 5px rgba(70, 70, 70, 0.232)</code></td>
+    <td><code>var(--kendo-elevation-5, 0px 8px 16px 0px rgba(0, 0, 0, 0.15))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the disabled FAB item.</div></div>
@@ -9416,9 +9466,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-notification-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-popup-shadow</code></td>
-    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04)</code></td>
+    <td><code>var(--kendo-elevation-4, 0px 6px 13px rgba(0, 0, 0, 0.125))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The box shadow of the Notification.</div></div>
@@ -10838,9 +10888,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-popup-shadow</td>
-    <td>List</td>
-    <td><code>0 2px 4px 0 rgba( black, .03 ), 0 4px 5px 0 rgba( black, .04 )</code></td>
-    <td><code>0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04)</code></td>
+    <td>String</td>
+    <td><code>k-elevation(4)</code></td>
+    <td><code>var(--kendo-elevation-4, 0px 6px 13px rgba(0, 0, 0, 0.125))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the popup.</div></div>
@@ -13307,9 +13357,9 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-tile-layout-card-focus-shadow</td>
-    <td>List</td>
+    <td>String</td>
     <td><code>$kendo-card-focus-shadow</code></td>
-    <td><code>0 0 0 3px rgba(222, 226, 230, 0.5)</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 4px 10px rgba(0, 0, 0, 0.1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The focus box shadow of the TileLayout card.</div></div>

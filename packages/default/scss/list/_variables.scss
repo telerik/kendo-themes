@@ -195,7 +195,7 @@ $kendo-list-header-text: null !default;
 $kendo-list-header-border: inherit !default;
 /// The box shadow of the List header.
 /// @group list
-$kendo-list-header-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
+$kendo-list-header-shadow: k-elevation(2) !default;
 
 
 /// The background color of the List items.

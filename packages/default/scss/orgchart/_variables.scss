@@ -22,7 +22,7 @@ $kendo-orgchart-node-group-text: $kendo-base-text !default;
 $kendo-orgchart-node-group-border: $kendo-base-border !default;
 
 $kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
-$kendo-orgchart-node-group-focus-shadow: $kendo-card-focus-shadow !default;
+$kendo-orgchart-node-group-focus-shadow: k-elevation(1) !default;
 
 $kendo-orgchart-node-group-title-font-size: $kendo-font-size-lg !default;
 $kendo-orgchart-node-group-title-margin-bottom: k-math-div( $kendo-orgchart-spacer, 3 ) !default;
@@ -37,7 +37,7 @@ $kendo-orgchart-card-padding-y: $kendo-card-padding-y !default;
 $kendo-orgchart-card-padding-x: $kendo-orgchart-card-padding-y !default;
 $kendo-orgchart-card-border-width: $kendo-card-border-width !default;
 $kendo-orgchart-card-shadow: $kendo-card-shadow !default;
-$kendo-orgchart-card-focus-shadow: $kendo-card-focus-shadow !default;
+$kendo-orgchart-card-focus-shadow: k-elevation(1) !default;
 
 $kendo-orgchart-card-title-margin-bottom: 0px !default;
 $kendo-orgchart-card-title-font-size: null !default;
