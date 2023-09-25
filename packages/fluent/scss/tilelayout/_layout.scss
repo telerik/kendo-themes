@@ -9,6 +9,7 @@
         box-sizing: border-box;
         outline: 0;
         display: grid;
+        position: relative;
         padding-block: var( --kendo-tile-layout-padding-y, #{$kendo-tile-layout-padding-y} );
         padding-inline: var( --kendo-tile-layout-padding-x, #{$kendo-tile-layout-padding-x} );
         -webkit-touch-callout: none;
