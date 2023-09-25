@@ -94,6 +94,16 @@ export * from './expansion-panel/index';
 // export * from './splitter/index';
 // export * from './tile-layout/index';
 
+// Data management
+// export * from './grid/index';
+// export * from './listview/index';
+// export * from './spreadsheet/index';
+// export * from './pivotgrid/index';
+// export * from './treelist/index';
+// export * from './filter/index';
+// export * from './filemanager/index';
+// export * from './taskboard/index';
+
 // Editors
 export * from './editor/index';
 
