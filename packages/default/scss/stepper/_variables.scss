@@ -42,7 +42,7 @@ $kendo-stepper-indicator-disabled-text: $kendo-disabled-text !default;
 $kendo-stepper-indicator-disabled-border: null !default;
 
 $kendo-stepper-indicator-done-bg: $kendo-color-primary !default;
-$kendo-stepper-indicator-done-text: if($kendo-new-colors, k-color( primary-on-base ), k-contrast-legacy( $kendo-stepper-indicator-done-bg )) !default;
+$kendo-stepper-indicator-done-text: if($kendo-new-colors, k-color( on-primary ), k-contrast-legacy( $kendo-stepper-indicator-done-bg )) !default;
 $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
 
 $kendo-stepper-indicator-done-hover-bg: if($kendo-new-colors, k-color( primary-hover ), k-try-shade( $kendo-stepper-indicator-done-bg )) !default;
@@ -50,7 +50,7 @@ $kendo-stepper-indicator-done-hover-text: null !default;
 $kendo-stepper-indicator-done-hover-border: null !default;
 
 $kendo-stepper-indicator-done-disabled-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .6 ), k-color-mix( $kendo-stepper-indicator-done-bg, $kendo-component-bg, 60%)) !default;
-$kendo-stepper-indicator-done-disabled-text: if($kendo-new-colors, k-color( primary-on-base ), k-contrast-legacy( $kendo-stepper-indicator-done-bg )) !default;
+$kendo-stepper-indicator-done-disabled-text: if($kendo-new-colors, k-color( on-primary ), k-contrast-legacy( $kendo-stepper-indicator-done-bg )) !default;
 $kendo-stepper-indicator-done-disabled-border: $kendo-stepper-indicator-done-disabled-bg !default;
 
 $kendo-stepper-indicator-current-bg: $kendo-stepper-indicator-done-bg !default;
@@ -68,7 +68,7 @@ $kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-done-
 $kendo-stepper-label-text: null !default;
 $kendo-stepper-label-success-text: $kendo-color-success !default;
 $kendo-stepper-label-error-text: $kendo-color-error !default;
-$kendo-stepper-label-hover-text: if($kendo-new-colors, k-color( base-on-base ), k-try-shade( $kendo-stepper-text, 2 )) !default;
+$kendo-stepper-label-hover-text: if($kendo-new-colors, k-color( on-base ), k-try-shade( $kendo-stepper-text, 2 )) !default;
 $kendo-stepper-label-disabled-text: $kendo-disabled-text !default;
 
 $kendo-stepper-optional-label-text: $kendo-subtle-text !default;

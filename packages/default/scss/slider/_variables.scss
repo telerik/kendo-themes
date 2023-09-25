@@ -23,7 +23,7 @@ $kendo-slider-draghandle-active-scale: 1 !default;
 $kendo-slider-draghandle-active-size: null !default;
 
 $kendo-slider-draghandle-bg: $kendo-color-primary !default;
-$kendo-slider-draghandle-text: if($kendo-new-colors, k-color( primary-on-base ), k-contrast-legacy( $kendo-color-primary )) !default;
+$kendo-slider-draghandle-text: if($kendo-new-colors, k-color( on-primary ), k-contrast-legacy( $kendo-color-primary )) !default;
 $kendo-slider-draghandle-border: $kendo-color-primary !default;
 $kendo-slider-draghandle-gradient: null !default;
 

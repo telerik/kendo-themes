@@ -16,12 +16,12 @@ $kendo-gantt-treelist-bg: null !default;
 $kendo-gantt-treelist-text: null !default;
 $kendo-gantt-treelist-border: null !default;
 
-$kendo-gantt-nonwork-bg: if($kendo-new-colors, rgba( k-color( base-on-base, true ), .03 ), rgba( k-contrast-legacy( $kendo-gantt-bg ), .025 )) !default;
+$kendo-gantt-nonwork-bg: if($kendo-new-colors, rgba( k-color( on-base, true ), .03 ), rgba( k-contrast-legacy( $kendo-gantt-bg ), .025 )) !default;
 $kendo-gantt-nonwork-text: null !default;
 $kendo-gantt-nonwork-border: null !default;
 
 $kendo-gantt-line-size: 2px !default;
-$kendo-gantt-line-fill: if($kendo-new-colors, k-color( base-on-base ), k-contrast-legacy( $kendo-gantt-bg )) !default;
+$kendo-gantt-line-fill: if($kendo-new-colors, k-color( on-base ), k-contrast-legacy( $kendo-gantt-bg )) !default;
 $kendo-gantt-line-selected-fill: $kendo-color-primary !default;
 
 $kendo-gantt-dot-size: 8px !default;
@@ -37,7 +37,7 @@ $kendo-gantt-milestone-selected-bg: $kendo-selected-bg !default;
 $kendo-gantt-milestone-selected-border: $kendo-selected-border !default;
 
 $kendo-gantt-summary-bg: if($kendo-new-colors, k-color( subtle ), k-try-tint( $kendo-gantt-text, 1 )) !default;
-$kendo-gantt-summary-progress-bg: if($kendo-new-colors, k-color( base-on-base ), k-try-shade( $kendo-gantt-text, 5 )) !default;
+$kendo-gantt-summary-progress-bg: if($kendo-new-colors, k-color( on-base ), k-try-shade( $kendo-gantt-text, 5 )) !default;
 $kendo-gantt-summary-selected-bg: k-try-tint( $kendo-selected-bg, 6 ) !default;
 $kendo-gantt-summary-progress-selected-bg: $kendo-selected-bg !default;
 

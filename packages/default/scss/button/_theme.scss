@@ -160,7 +160,7 @@
                     );
                 } @else {
                     @include fill(
-                        if($kendo-new-colors, k-color( #{$name}-on-base ), k-contrast-legacy( $color )),
+                        if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
@@ -190,7 +190,7 @@
                     );
                 } @else {
                     @include fill(
-                        if($kendo-new-colors, k-color( #{$name}-on-base ), k-contrast-legacy( $color )),
+                        if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
@@ -207,7 +207,7 @@
                     );
                 } @else {
                     @include fill(
-                        if($kendo-new-colors, k-color( #{$name}-on-base ), k-contrast-legacy( $color )),
+                        if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )),
                         $color,
                         $color
                     );

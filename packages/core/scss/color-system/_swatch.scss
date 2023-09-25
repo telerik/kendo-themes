@@ -22,7 +22,7 @@ $kendo-colors: (
     base-active: null,
     base-emphasis: null,
     base-on-subtle: null,
-    base-on-base: null,
+    on-base: null,
     base-on-surface: null,
     // Primary
     primary-subtle: null,
@@ -33,7 +33,7 @@ $kendo-colors: (
     primary-active: null,
     primary-emphasis: null,
     primary-on-subtle: null,
-    primary-on-base: null,
+    on-primary: null,
     primary-on-surface: null,
     // Secondary
     secondary-subtle: null,
@@ -44,7 +44,7 @@ $kendo-colors: (
     secondary-active: null,
     secondary-emphasis: null,
     secondary-on-subtle: null,
-    secondary-on-base: null,
+    on-secondary: null,
     secondary-on-surface: null,
     // Tertiary
     tertiary-subtle: null,
@@ -55,7 +55,7 @@ $kendo-colors: (
     tertiary-active: null,
     tertiary-emphasis: null,
     tertiary-on-subtle: null,
-    tertiary-on-base: null,
+    on-tertiary: null,
     tertiary-on-surface: null,
     // Info
     info-subtle: null,
@@ -66,7 +66,7 @@ $kendo-colors: (
     info-active: null,
     info-emphasis: null,
     info-on-subtle: null,
-    info-on-base: null,
+    on-info: null,
     info-on-surface: null,
     // Success
     success-subtle: null,
@@ -77,7 +77,7 @@ $kendo-colors: (
     success-active: null,
     success-emphasis: null,
     success-on-subtle: null,
-    success-on-base: null,
+    on-success: null,
     success-on-surface: null,
     // Warning
     warning-subtle: null,
@@ -88,7 +88,7 @@ $kendo-colors: (
     warning-active: null,
     warning-emphasis: null,
     warning-on-subtle: null,
-    warning-on-base: null,
+    on-warning: null,
     warning-on-surface: null,
     // Error
     error-subtle: null,
@@ -99,7 +99,7 @@ $kendo-colors: (
     error-active: null,
     error-emphasis: null,
     error-on-subtle: null,
-    error-on-base: null,
+    on-error: null,
     error-on-surface: null,
     // Light
     light-subtle: null,
@@ -110,7 +110,7 @@ $kendo-colors: (
     light-active: null,
     light-emphasis: null,
     light-on-subtle: null,
-    light-on-base: null,
+    on-light: null,
     light-on-surface: null,
     // Dark
     dark-subtle: null,
@@ -121,8 +121,8 @@ $kendo-colors: (
     dark-active: null,
     dark-emphasis: null,
     dark-on-subtle: null,
-    dark-on-base: null,
-    dark-on-surface: null
+    on-dark: null,
+    dark-on-surface: null,
     // Inverse
     inverse-subtle: null,
     inverse-subtle-hover: null,
@@ -132,7 +132,7 @@ $kendo-colors: (
     inverse-active: null,
     inverse-emphasis: null,
     inverse-on-subtle: null,
-    inverse-on-base: null,
+    on-inverse: null,
     inverse-on-surface: null,
 ) !default;
 

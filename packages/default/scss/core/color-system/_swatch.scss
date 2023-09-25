@@ -25,7 +25,7 @@ $kendo-colors: (
     base-active: k-map-get( $kendo-palette-gray, 5 ),
     base-emphasis: k-map-get( $kendo-palette-gray, 6 ),
     base-on-subtle: k-map-get( $kendo-palette-gray, 12 ),
-    base-on-base: k-map-get( $kendo-palette-gray, 12 ),
+    on-base: k-map-get( $kendo-palette-gray, 12 ),
     base-on-surface: k-map-get( $kendo-palette-gray, 12 ),
     // Primary
     primary-subtle: k-map-get( $kendo-palette-coral, 2 ),
@@ -36,7 +36,7 @@ $kendo-colors: (
     primary-active: k-map-get( $kendo-palette-coral, 11 ),
     primary-emphasis: k-map-get( $kendo-palette-coral, 6 ),
     primary-on-subtle: k-map-get( $kendo-palette-coral, 15 ),
-    primary-on-base: k-map-get( $kendo-palette-gray, white ),
+    on-primary: k-map-get( $kendo-palette-gray, white ),
     primary-on-surface: k-map-get( $kendo-palette-coral, 9 ),
     // Secondary
     secondary-subtle: k-map-get( $kendo-palette-gray, 1 ),
@@ -47,7 +47,7 @@ $kendo-colors: (
     secondary-active: k-map-get( $kendo-palette-gray, 12 ),
     secondary-emphasis: k-map-get( $kendo-palette-gray, 4 ),
     secondary-on-subtle: k-map-get( $kendo-palette-gray, 15 ),
-    secondary-on-base: k-map-get( $kendo-palette-gray, white ),
+    on-secondary: k-map-get( $kendo-palette-gray, white ),
     secondary-on-surface: k-map-get( $kendo-palette-gray, 13 ),
     // Tertiary
     tertiary-subtle: k-map-get( $kendo-palette-sky-blue, 2 ),
@@ -58,7 +58,7 @@ $kendo-colors: (
     tertiary-active: k-map-get( $kendo-palette-sky-blue, 11 ),
     tertiary-emphasis: k-map-get( $kendo-palette-sky-blue, 6 ),
     tertiary-on-subtle: k-map-get( $kendo-palette-gray, 15 ),
-    tertiary-on-base: k-map-get( $kendo-palette-gray, white ),
+    on-tertiary: k-map-get( $kendo-palette-gray, white ),
     tertiary-on-surface: k-map-get( $kendo-palette-gray, 11 ),
     // Info
     info-subtle: k-map-get( $kendo-palette-blue, 2 ),
@@ -69,7 +69,7 @@ $kendo-colors: (
     info-active: k-map-get( $kendo-palette-blue, 11 ),
     info-emphasis: k-map-get( $kendo-palette-blue, 6 ),
     info-on-subtle: k-map-get( $kendo-palette-blue, 15 ),
-    info-on-base: k-map-get( $kendo-palette-gray, white ),
+    on-info: k-map-get( $kendo-palette-gray, white ),
     info-on-surface: k-map-get( $kendo-palette-blue, 11 ),
     // Success
     success-subtle: k-map-get( $kendo-palette-green, 2 ),
@@ -80,7 +80,7 @@ $kendo-colors: (
     success-active: k-map-get( $kendo-palette-green, 11 ),
     success-emphasis: k-map-get( $kendo-palette-green, 6 ),
     success-on-subtle: k-map-get( $kendo-palette-green, 15 ),
-    success-on-base: k-map-get( $kendo-palette-gray, white ),
+    on-success: k-map-get( $kendo-palette-gray, white ),
     success-on-surface: k-map-get( $kendo-palette-green, 11 ),
     // Warning
     warning-subtle: k-map-get( $kendo-palette-yellow, 2 ),
@@ -91,7 +91,7 @@ $kendo-colors: (
     warning-active: k-map-get( $kendo-palette-yellow, 11 ),
     warning-emphasis: k-map-get( $kendo-palette-yellow, 6 ),
     warning-on-subtle: k-map-get( $kendo-palette-yellow, 15 ),
-    warning-on-base: k-map-get( $kendo-palette-gray, 12 ),
+    on-warning: k-map-get( $kendo-palette-gray, 12 ),
     warning-on-surface: k-map-get( $kendo-palette-yellow, 9 ),
     // Error
     error-subtle: k-map-get( $kendo-palette-red, 2 ),
@@ -102,7 +102,7 @@ $kendo-colors: (
     error-active: k-map-get( $kendo-palette-red, 11 ),
     error-emphasis: k-map-get( $kendo-palette-red, 6 ),
     error-on-subtle: k-map-get( $kendo-palette-red, 15 ),
-    error-on-base: k-map-get( $kendo-palette-gray, white ),
+    on-error: k-map-get( $kendo-palette-gray, white ),
     error-on-surface: k-map-get( $kendo-palette-red, 11 ),
     // Light
     light-subtle: k-map-get( $kendo-palette-gray, 1 ),
@@ -113,7 +113,7 @@ $kendo-colors: (
     light-active: k-map-get( $kendo-palette-gray, 5 ),
     light-emphasis: k-map-get( $kendo-palette-gray, 5 ),
     light-on-subtle: k-map-get( $kendo-palette-gray, 15 ),
-    light-on-base: k-map-get( $kendo-palette-gray, black ),
+    on-light: k-map-get( $kendo-palette-gray, black ),
     light-on-surface: k-map-get( $kendo-palette-gray, 4 ),
     // Dark
     dark-subtle: k-map-get( $kendo-palette-gray, 6 ),
@@ -124,7 +124,7 @@ $kendo-colors: (
     dark-active: k-map-get( $kendo-palette-gray, 14 ),
     dark-emphasis: k-map-get( $kendo-palette-gray, 10 ),
     dark-on-subtle: k-map-get( $kendo-palette-gray, 14 ),
-    dark-on-base: k-map-get( $kendo-palette-gray, white ),
+    on-dark: k-map-get( $kendo-palette-gray, white ),
     dark-on-surface: k-map-get( $kendo-palette-gray, 15 ),
     // Inverse
     inverse-subtle: k-map-get( $kendo-palette-gray, 6 ),
@@ -135,7 +135,7 @@ $kendo-colors: (
     inverse-active: k-map-get( $kendo-palette-gray, 14 ),
     inverse-emphasis: k-map-get( $kendo-palette-gray, 10 ),
     inverse-on-subtle: k-map-get( $kendo-palette-gray, 14 ),
-    inverse-on-base: k-map-get( $kendo-palette-gray, white ),
+    on-inverse: k-map-get( $kendo-palette-gray, white ),
     inverse-on-surface: k-map-get( $kendo-palette-gray, 15 ),
 ) !default;
 
