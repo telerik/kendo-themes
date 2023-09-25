@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.2...v7.0.0-dev.0) (2023-09-25)
+
+
+### Features
+
+* **common:** introduce indicators helper and move the current time styles there ([5987896](https://github.com/telerik/kendo-themes/commit/59878962af4f483ddbfc1f30dbf69b570902e186))
+* implement elevation system ([132e0a4](https://github.com/telerik/kendo-themes/commit/132e0a48c9a9426b25254da77981320c9aab96ca))
+
+
+### BREAKING CHANGES
+
+* **common:** Extracted the current time marker styles
+from the Scheduler component and made them component-agnostic.
+The `$kendo-scheduler-current-time-color` variable
+is replaced with the `$kendo-current-time-color` variable.
+
+
+
+
+
 # [6.8.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.1...v6.8.0-dev.2) (2023-09-18)
 
 

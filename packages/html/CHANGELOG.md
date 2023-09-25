@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.2...v7.0.0-dev.0) (2023-09-25)
+
+**Note:** Version bump only for package @progress/kendo-themes-html
+
+
+
+
+
 # [6.8.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.1...v6.8.0-dev.2) (2023-09-18)
 
 

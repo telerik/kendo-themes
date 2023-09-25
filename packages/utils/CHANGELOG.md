@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.2...v7.0.0-dev.0) (2023-09-25)
+
+
+### Features
+
+* implement elevation system ([132e0a4](https://github.com/telerik/kendo-themes/commit/132e0a48c9a9426b25254da77981320c9aab96ca))
+
+
+
+
+
 # [6.8.0-dev.2](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.1...v6.8.0-dev.2) (2023-09-18)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils
