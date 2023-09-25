@@ -158,6 +158,12 @@
                         $color,
                         $color
                     );
+                } @else if $name == "inverse" {
+                    @include fill(
+                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
+                        $color,
+                        $color
+                    );
                 } @else {
                     @include fill(
                         if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )),
@@ -173,6 +179,8 @@
                 @if $kendo-outline-button-shadow {
                     @if $name == "base" {
                         @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread if($kendo-new-colors, rgba( k-color( on-app-surface, true ), $kendo-outline-button-shadow-opacity ), rgba( $color, $kendo-outline-button-shadow-opacity )), true, true );
+                    } @else if $name == "inverse" {
+                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread if($kendo-new-colors, rgba( k-color( dark, true ), $kendo-outline-button-shadow-opacity ), rgba( $color, $kendo-outline-button-shadow-opacity )), true, true );
                     } @else {
                         @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread if($kendo-new-colors, rgba( k-color( $name, true ), $kendo-outline-button-shadow-opacity ), rgba( $color, $kendo-outline-button-shadow-opacity )), true, true );
                     }
@@ -185,6 +193,12 @@
                 @if $name == "base" {
                     @include fill(
                         $kendo-base-bg,
+                        $color,
+                        $color
+                    );
+                } @else if $name == "inverse" {
+                    @include fill(
+                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
@@ -202,6 +216,12 @@
                 @if $name == "base" {
                     @include fill(
                         $kendo-base-bg,
+                        $color,
+                        $color
+                    );
+                } @else if $name == "inverse" {
+                    @include fill(
+                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
@@ -247,6 +267,8 @@
             &.k-hover {
                 @if $name == "base" {
                     color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
+                } @else if $name == "inverse" {
+                    color: if($kendo-new-colors, k-color( dark-hover ), k-try-shade( $color, 2 ));
                 } @else {
                     color: if($kendo-new-colors, k-color( #{$name}-hover ), k-try-shade( $color, 2 ));
                 }
@@ -258,6 +280,8 @@
                 @if ( $kendo-link-button-shadow ) {
                     @if $name == "base" {
                         @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread if($kendo-new-colors, rgba( k-color( on-app-surface, true ), $kendo-link-button-shadow-opacity ), rgba( $color, $kendo-link-button-shadow-opacity )), true, true );
+                    } @else if $name == "inverse" {
+                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread if($kendo-new-colors, rgba( k-color( dark, true ), $kendo-link-button-shadow-opacity ), rgba( $color, $kendo-link-button-shadow-opacity )), true, true );
                     } @else {
                         @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread if($kendo-new-colors, rgba( k-color( $name, true ), $kendo-link-button-shadow-opacity ), rgba( $color, $kendo-link-button-shadow-opacity )), true, true );
                     }
@@ -269,6 +293,8 @@
             &.k-active {
                 @if $name == "base" {
                     color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
+                } @else if $name == "inverse" {
+                    color: if($kendo-new-colors, k-color( dark-active ), k-try-shade( $color, 2 ));
                 } @else {
                     color: if($kendo-new-colors, k-color( #{$name}-active ), k-try-shade( $color, 2 ));
                 }
@@ -278,6 +304,8 @@
             &.k-selected {
                 @if $name == "base" {
                     color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
+                } @else if $name == "inverse" {
+                    color: if($kendo-new-colors, k-color( dark-active ), k-try-shade( $color, 2 ));
                 } @else {
                     color: if($kendo-new-colors, k-color( #{$name}-active ), k-try-shade( $color, 2 ));
                 }
