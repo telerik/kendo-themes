@@ -22,7 +22,7 @@ $kendo-scheduler-event-min-height: 25px !default;
 $kendo-scheduler-event-border-radius: $kendo-border-radius-md !default;
 $kendo-scheduler-event-line-height: calc( #{$kendo-scheduler-event-min-height} - (2 * #{$kendo-padding-md-y}) ) !default;
 
-$kendo-scheduler-event-bg: k-color-tint( $kendo-selected-bg, 2 ) !default;
+$kendo-scheduler-event-bg: if($kendo-new-colors, k-color( primary ), k-color-tint( $kendo-selected-bg, 2 )) !default;
 $kendo-scheduler-event-text: $kendo-selected-text !default;
 $kendo-scheduler-event-border: null !default;
 $kendo-scheduler-event-gradient: null !default;
@@ -34,7 +34,7 @@ $kendo-scheduler-event-hover-border: null !default;
 $kendo-scheduler-event-hover-gradient: null !default;
 $kendo-scheduler-event-hover-shadow: null !default;
 
-$kendo-scheduler-event-selected-bg: $kendo-selected-bg !default;
+$kendo-scheduler-event-selected-bg: if($kendo-new-colors, k-color( primary-active ), $kendo-selected-bg) !default;
 $kendo-scheduler-event-selected-text: $kendo-selected-text !default;
 $kendo-scheduler-event-selected-border: null !default;
 $kendo-scheduler-event-selected-gradient: null !default;

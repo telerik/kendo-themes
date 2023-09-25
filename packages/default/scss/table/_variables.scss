@@ -146,7 +146,7 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: rgba($kendo-selected-bg, .25) !default;
+$kendo-table-selected-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba($kendo-selected-bg, .25)) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: null !default;

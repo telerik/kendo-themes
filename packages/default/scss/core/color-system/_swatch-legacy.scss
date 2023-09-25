@@ -42,12 +42,12 @@
     $kendo-base-bg: k-color( surface );
     $kendo-base-text: $kendo-body-text;
     $kendo-base-border: $kendo-app-border;
-    // $kendo-base-gradient: null;
-    // $kendo-hover-bg: null;
-    // $kendo-hover-text: null;
-    // $kendo-hover-border: null;
-    // $kendo-hover-gradient: null;
-    // $kendo-selected-bg: null;
+    $kendo-base-gradient: null;
+    $kendo-hover-bg: k-color( base-hover );
+    $kendo-hover-text: $kendo-base-text;
+    $kendo-hover-border: $kendo-base-border;
+    $kendo-hover-gradient: null;
+    $kendo-selected-bg: $kendo-color-primary;
     // $kendo-selected-text: null;
     // $kendo-selected-border: null;
     // $kendo-selected-gradient: null;
