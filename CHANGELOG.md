@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/telerik/kendo-themes/compare/v7.0.0-dev.0...v7.0.0) (2023-09-26)
+
+
+### Bug Fixes
+
+* **panelbar:** use relative position ([a616b48](https://github.com/telerik/kendo-themes/commit/a616b485f2b8f2458921af8ab0519e32494aa18c))
+* **scheduler:** use relative position ([efe968f](https://github.com/telerik/kendo-themes/commit/efe968f3952bed36bcb90881d1e61fa638d94c0d))
+* **tabstrip:** use relative position ([b56a173](https://github.com/telerik/kendo-themes/commit/b56a173dcb0e3f63e52a718615d5bb63ebf7aa25))
+* **tilelayout:** use relative position ([92063bc](https://github.com/telerik/kendo-themes/commit/92063bcd02185c50edb892bbaa08eb0b32e12455))
+
+
+### Features
+
+* detach font icons from the themes ([de49a95](https://github.com/telerik/kendo-themes/commit/de49a959ad19f3663ba147b92b93a7483fa76494))
+* **html-spec:** add additional classes to font and svg icons ([d40bae5](https://github.com/telerik/kendo-themes/commit/d40bae571779bf341b255781e4ac286fa403d193))
+
+
+### BREAKING CHANGES
+
+* detach font icons from the themes
+
+Starting with the R3 2023 release, the font icons font is no longer
+bundled in the themes distribution. This is done as part of a series of
+improvements related to content security policy(CSP). Continue using
+font icons in your project can still be achieved by loading the font and
+ related styles separately through CDN or directly from the kendo-font-icons package.
+
+* Add a k-font-icon class for all font icons
+* Add a k-icon class for all svg icons
+
+
+
+
+
 # [7.0.0-dev.0](https://github.com/telerik/kendo-themes/compare/v6.8.0-dev.2...v7.0.0-dev.0) (2023-09-25)
 
 
