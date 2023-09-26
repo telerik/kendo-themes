@@ -182,6 +182,7 @@
 
     .k-spreadsheet-sheets {
         flex: 1 1 auto;
+        overflow: hidden;
     }
     .k-spreadsheet-sheets .k-tabstrip-items-wrapper {
         border-width: 0;
