@@ -3,18 +3,33 @@
     // Solid
     @each $name, $color in $kendo-theme-colors {
         .k-bottom-nav-solid-#{$name} {
-            @include fill(
-                $color: k-true-mix( $color, k-contrast-legacy( $color ), 35%),
-                $bg: $color
-            );
+            @if $name == "inverse" {
+                @include fill(
+                    $color: if($kendo-new-colors, rgba( k-color( on-dark, true ), .65 ), k-true-mix( $color, k-contrast-legacy( $color ), 35%)),
+                    $bg: $color
+                );
+            } @else {
+                @include fill(
+                    $color: if($kendo-new-colors, rgba( k-color( on-#{$name}, true ), .65 ), k-true-mix( $color, k-contrast-legacy( $color ), 35%)),
+                    $bg: $color
+                );
+            }
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: rgba(k-true-mix( $color, k-contrast-legacy( $color ), 35%), .2));
+                @if $name == "inverse" {
+                    @include fill( $bg: if($kendo-new-colors, rgba( k-color( on-dark, true ), .125 ), rgba(k-true-mix( $color, k-contrast-legacy( $color ), 35%), .2)));
+                } @else {
+                    @include fill( $bg: if($kendo-new-colors, rgba( k-color( on-#{$name}, true ), .125 ), rgba(k-true-mix( $color, k-contrast-legacy( $color ), 35%), .2)));
+                }
             }
 
             .k-bottom-nav-item.k-selected {
-                @include fill( $color: k-contrast-legacy( $color ) );
+                @if $name == "inverse" {
+                    @include fill( $color: if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )) );
+                } @else {
+                    @include fill( $color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )) );
+                }
             }
         }
         // TODO: remove when suites update class names
@@ -34,12 +49,12 @@
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: rgba($kendo-bottom-nav-flat-text, .05) );
+                @include fill( $bg: if($kendo-new-colors, k-color( base ), rgba($kendo-bottom-nav-flat-text, .05)) );
             }
 
             .k-bottom-nav-item.k-selected {
                 @if $name == "secondary" or $name == "light" {
-                    @include fill( $color: k-try-shade($color, 3) );
+                    @include fill( $color: if($kendo-new-colors, k-color( on-light ), k-try-shade($color, 3)) );
                 } @else {
                     @include fill( $color: $color );
                 }

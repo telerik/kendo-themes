@@ -28,24 +28,24 @@
                 }
             } @else {
                 @include fill(
-                    k-try-shade( $color, 65% ),
-                    k-try-tint( $color, 80% ),
-                    k-try-tint( $color, 25% ),
+                    if($kendo-new-colors, k-color( #{$name}-on-subtle ), k-try-shade( $color, 65% )),
+                    if($kendo-new-colors, k-color( #{$name}-subtle ), k-try-tint( $color, 80% )),
+                    if($kendo-new-colors, k-color( #{$name}-emphasis ), k-try-tint( $color, 25% )),
                     $kendo-chip-solid-gradient
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px rgba( $color, .16 ) );
+                    @include focus-indicator( 0 0 0 2px if($kendo-new-colors, rgba( k-color( $name, true ), .16 ), rgba( $color, .16 )) );
                 }
 
                 &:hover,
                 &.k-hover {
-                    @include fill( $bg: k-try-tint($color, 65% ) );
+                    @include fill( $bg: if($kendo-new-colors, k-color( #{$name}-subtle-hover ), k-try-tint($color, 65% )) );
                 }
 
                 &.k-selected {
-                    @include fill( $bg: k-try-tint( $color, 50% ) );
+                    @include fill( $bg: if($kendo-new-colors, k-color( #{$name}-subtle-active ), k-try-tint( $color, 50% )) );
                 }
             }
         }
@@ -83,54 +83,56 @@
                 }
             } @else if ($name == "warning") {
                 @include fill(
-                    if( $kendo-is-dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text),
-                    if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white ),
-                    if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color)
+                    if($kendo-new-colors, $kendo-chip-outline-text, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text)),
+                    if($kendo-new-colors, $kendo-color-white, if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
+                    if($kendo-new-colors, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                    @include focus-indicator( 0 0 0 2px if($kendo-new-colors, rgba( k-color( $name, true ), .16 ), if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 ))) );
                 }
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $color: if( $kendo-is-dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) ) ,
-                        $bg: if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color)
+                        $color: if($kendo-new-colors, k-color( on-#{$name} ), if( $kendo-is-dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) )),
+                        $bg: if($kendo-new-colors, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
                     );
                 }
 
                 &.k-selected {
                     @include fill(
-                        $color: if( $kendo-is-dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) ) ,
-                        $bg: if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color)
+                        $color: if($kendo-new-colors, k-color( on-#{$name} ), if( $kendo-is-dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) )),
+                        $bg: if($kendo-new-colors, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
                     );
                 }
             } @else {
                 @include fill(
-                    k-try-shade( $color, 25% ),
-                    if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white ),
-                    k-try-shade( $color, 25% )
+                    if($kendo-new-colors, k-color( #{$name}-on-surface ), k-try-shade( $color, 25% )),
+                    if($kendo-new-colors, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
+                    if($kendo-new-colors, k-color( #{$name}-on-surface ), k-try-shade( $color, 25% ))
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include focus-indicator( 0 0 0 2px if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                    @include focus-indicator( 0 0 0 2px if($kendo-new-colors, rgba( k-color( $name, true ), .16 ), if( $kendo-is-dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 ))) );
                 }
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $color: k-contrast-legacy( k-try-shade( $color, 25% ) ),
-                        $bg: k-try-shade( $color, 25% )
+                        if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( k-try-shade( $color, 25% ) )),
+                        if($kendo-new-colors, k-color( #{$name}-hover ), k-try-shade( $color, 25% )),
+                        if($kendo-new-colors, k-color( #{$name}-hover ), k-try-shade( $color, 25% ))
                     );
                 }
 
                 &.k-selected {
                     @include fill(
-                        $color: k-contrast-legacy( k-try-shade( $color, 25% ) ),
-                        $bg: k-try-shade( $color, 25% )
+                        if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( k-try-shade( $color, 25% ) )),
+                        if($kendo-new-colors, k-color( #{$name}-active ), k-try-shade( $color, 25% )),
+                        if($kendo-new-colors, k-color( #{$name}-active ), k-try-shade( $color, 25% ))
                     );
                 }
             }

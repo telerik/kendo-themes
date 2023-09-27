@@ -64,9 +64,15 @@
     // Card theme colors
     @each $name, $color in $kendo-theme-colors {
         .k-card-#{$name} {
-            background-color: k-color-tint($color, 10);
-            color: k-color-shade($color, 6);
-            border-color: k-color-tint($color, 9);
+            @if $name == "inverse" {
+                background-color: if($kendo-new-colors, k-color( dark-subtle ), k-color-tint($color, 10));
+                color: if($kendo-new-colors, k-color( dark-on-subtle ), k-color-shade($color, 6));
+                border-color: if($kendo-new-colors, k-color( dark-emphasis ), k-color-tint($color, 9));
+            } @else {
+                background-color: if($kendo-new-colors, k-color( #{$name}-subtle ), k-color-tint($color, 10));
+                color: if($kendo-new-colors, k-color( #{$name}-on-subtle ), k-color-shade($color, 6));
+                border-color: if($kendo-new-colors, k-color( #{$name}-emphasis ), k-color-tint($color, 9));
+            }
 
             .k-card-subtitle {
                 color: inherit;
