@@ -1,5 +1,5 @@
 import { Icon } from '../../icon';
-import { BottomNav, BottomNavItem } from '../../bottom-nav';
+import { BottomNavNormal, BottomNavItem } from '../../bottom-nav';
 
 const styles = `
 #test-area {
@@ -14,17 +14,17 @@ export default () =>(
 
             <section>
                 <h4>Bottom Navigation with SPAN</h4>
-                <BottomNav fillMode="flat" themeColor="primary" border flow="vertical">
+                <BottomNavNormal themeColor="primary" border flow="vertical">
                     <BottomNavItem icon="envelope" text="Normal" />
                     <BottomNavItem icon="envelope" text="Focused" focus />
                     <BottomNavItem icon="envelope" text="Selected" selected />
                     <BottomNavItem icon="envelope" text="Disabled" disabled />
-                </BottomNav>
+                </BottomNavNormal>
             </section>
 
             <section>
                 <h4>Bottom Navigation with BUTTON</h4>
-                <BottomNav fillMode="flat" themeColor="primary" border flow="vertical">
+                <BottomNavNormal themeColor="primary" border flow="vertical">
                     <button className="k-bottom-nav-item">
                         <Icon className="k-bottom-nav-item-icon" icon="envelope" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Normal</span>
@@ -41,12 +41,12 @@ export default () =>(
                         <Icon className="k-bottom-nav-item-icon" icon="envelope" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </button>
-                </BottomNav>
+                </BottomNavNormal>
             </section>
 
             <section>
                 <h4>Bottom Navigation with A</h4>
-                <BottomNav fillMode="flat" themeColor="primary" border flow="vertical">
+                <BottomNavNormal themeColor="primary" border flow="vertical">
                     <a className="k-bottom-nav-item">
                         <Icon className="k-bottom-nav-item-icon" icon="envelope" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Normal</span>
@@ -63,7 +63,7 @@ export default () =>(
                         <Icon className="k-bottom-nav-item-icon" icon="envelope" size="xlarge" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </a>
-                </BottomNav>
+                </BottomNavNormal>
             </section>
         </div>
     </>

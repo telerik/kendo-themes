@@ -32,7 +32,7 @@ export type KendoBottomNavProps = KendoBottomNavOptions & {
 };
 
 const defaultProps = {
-    fillMode: FillMode.solid,
+    fillMode: FillMode.flat,
     themeColor: ThemeColor.primary,
     flow: 'horizontal',
     border: false
