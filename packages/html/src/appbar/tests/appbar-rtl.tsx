@@ -32,10 +32,10 @@ export default () =>(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
-            <span>Appbar sticky and inherit color</span>
+            <span>RTL Appbar - sticky and inherit color</span>
             <section>
                 <div style={{ background: "#1976d2", color: "#fff" }}>
-                    <AppbarNormal positionMode={'sticky'}>
+                    <AppbarNormal positionMode={'sticky'} dir="rtl">
                         <AppbarSection>
                             <Icon icon="menu" />
                         </AppbarSection>
@@ -70,9 +70,9 @@ export default () =>(
 
             {[ ...Appbar.options.themeColor ].map((themeColor) => (
                 <>
-                    <span>Appbar {themeColor} theme color</span>
+                    <span>RTL Appbar - {themeColor} theme color</span>
                     <section>
-                        <AppbarNormal fillMode="solid" themeColor={themeColor}>
+                        <AppbarNormal fillMode="solid" themeColor={themeColor} dir="rtl">
                             <AppbarSection>
                                 <Icon icon="menu" />
                             </AppbarSection>
