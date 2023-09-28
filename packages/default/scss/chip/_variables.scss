@@ -92,7 +92,7 @@ $kendo-chip-sizes: (
 
 /// The base background of the Chip.
 /// @group chip
-$kendo-chip-base-bg: $kendo-button-bg !default;
+$kendo-chip-base-bg: if($kendo-new-colors, k-color( base-subtle ), $kendo-button-bg) !default;
 
 /// The theme colors map for the Chip.
 /// @group chip
@@ -129,7 +129,7 @@ $kendo-chip-solid-focus-text: null !default;
 
 /// The base background color of the hovered solid Chip.
 /// @group chip
-$kendo-chip-solid-hover-bg: $kendo-button-hover-bg !default;
+$kendo-chip-solid-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), $kendo-button-hover-bg) !default;
 /// The base text color of the hovered solid Chip.
 /// @group chip
 $kendo-chip-solid-hover-text: null !default;

@@ -1,4 +1,4 @@
-@import "./palettes";
+@import "./_palettes.scss";
 
 @function get-base-palette($name) {
     @return k-map-get($palettes, $name);

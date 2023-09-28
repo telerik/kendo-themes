@@ -1,6 +1,7 @@
-@import "@progress/kendo-theme-core/scss/functions/index.import.scss";
-@import "@progress/kendo-theme-core/scss/color-system/functions.import.scss";
-@import "@progress/kendo-theme-core/scss/color-system/_swatch-legacy.scss";
+// TODO: Remove?
+// @import "@progress/kendo-theme-core/scss/functions/index.import.scss";
+// @import "@progress/kendo-theme-core/scss/color-system/_functions.import.scss";
+// @import "@progress/kendo-theme-core/scss/color-system/_swatch-legacy.scss";
 
 @if ($kendo-new-colors) {
     $kendo-color-primary: k-color( primary );

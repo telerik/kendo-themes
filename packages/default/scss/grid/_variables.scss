@@ -222,7 +222,7 @@ $kendo-grid-grouping-row-bg: $kendo-base-bg !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
 $kendo-grid-sorted-icon-spacing: calc( #{$kendo-padding-md-x} - 1px ) !default;
-$kendo-grid-sorted-bg: if($kendo-new-colors, k-color( base ), rgba( k-contrast-legacy( $kendo-grid-bg ), .02 )) !default;
+$kendo-grid-sorted-bg: if($kendo-new-colors, rgba( k-color( dark, true ), .03 ), rgba( k-contrast-legacy( $kendo-grid-bg ), .02 )) !default;
 $kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
 $kendo-grid-sorting-index-font-size: $kendo-font-size-sm !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
