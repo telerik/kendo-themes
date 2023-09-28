@@ -45,6 +45,14 @@
 
     // Loading indicator
     .k-i-loading {
+        width: 1em;
+        height: 1em;
+        line-height: 1;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
         position: relative;
         background-color: transparent;
         box-sizing: border-box;
