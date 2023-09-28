@@ -12,11 +12,7 @@
     // Dialog theme colors
     @each $name, $color in $kendo-dialog-theme-colors {
         .k-dialog-#{$name} .k-dialog-titlebar {
-            @if $name == "inverse" {
-                color: if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color ));
-            } @else {
-                color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color ));
-            }
+            color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color ));
             background-color: $color;
         }
     }

@@ -68,44 +68,17 @@
 
     @each $name, $color in $kendo-button-theme-colors {
         @if ($name != "base") {
-            
-            $_button-text: null;
-            $_button-bg: null;
-            $_button-border: null;
+            $_button-text: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color ));
+            $_button-bg: if($kendo-new-colors, k-color( $name ), if( $kendo-solid-button-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null ));
+            $_button-border: if($kendo-new-colors, k-color( $name ), if( $kendo-solid-button-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null ));
 
             $_button-hover-text: null;
-            $_button-hover-bg: null;
-            $_button-hover-border: null;
+            $_button-hover-bg: if($kendo-new-colors, k-color( #{$name}-hover ), if( $kendo-solid-button-hover-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-bg-amount ), null ));
+            $_button-hover-border: if($kendo-new-colors, k-color( #{$name}-hover ), if( $kendo-solid-button-hover-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-border-amount ), null ));
 
             $_button-active-text: null;
-            $_button-active-bg: null;
-            $_button-active-border: null;
-
-            @if ($name == "inverse") {
-                $_button-text: if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color ));
-                $_button-bg: if($kendo-new-colors, k-color( dark ), if( $kendo-solid-button-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null ));
-                $_button-border: if($kendo-new-colors, k-color( dark ), if( $kendo-solid-button-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null ));
-
-                $_button-hover-text: null;
-                $_button-hover-bg: if($kendo-new-colors, k-color( dark-hover ), if( $kendo-solid-button-hover-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-bg-amount ), null ));
-                $_button-hover-border: if($kendo-new-colors, k-color( dark-hover ), if( $kendo-solid-button-hover-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-border-amount ), null ));
-
-                $_button-active-text: null;
-                $_button-active-bg: if($kendo-new-colors, k-color( dark-active ), if( $kendo-solid-button-active-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-bg-amount ), null ));
-                $_button-active-border: if($kendo-new-colors, k-color( dark-active ), if( $kendo-solid-button-active-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-border-amount ), null ));
-            } @else {
-                $_button-text: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color ));
-                $_button-bg: if($kendo-new-colors, k-color( $name ), if( $kendo-solid-button-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null ));
-                $_button-border: if($kendo-new-colors, k-color( $name ), if( $kendo-solid-button-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null ));
-
-                $_button-hover-text: null;
-                $_button-hover-bg: if($kendo-new-colors, k-color( #{$name}-hover ), if( $kendo-solid-button-hover-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-bg-amount ), null ));
-                $_button-hover-border: if($kendo-new-colors, k-color( #{$name}-hover ), if( $kendo-solid-button-hover-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-hover-shade-border-amount ), null ));
-
-                $_button-active-text: null;
-                $_button-active-bg: if($kendo-new-colors, k-color( #{$name}-active ), if( $kendo-solid-button-active-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-bg-amount ), null ));
-                $_button-active-border: if($kendo-new-colors, k-color( #{$name}-active ), if( $kendo-solid-button-active-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-border-amount ), null ));
-            }
+            $_button-active-bg: if($kendo-new-colors, k-color( #{$name}-active ), if( $kendo-solid-button-active-shade-bg-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-bg-amount ), null ));
+            $_button-active-border: if($kendo-new-colors, k-color( #{$name}-active ), if( $kendo-solid-button-active-shade-border-amount, k-meta-call( $_shade-fn, $color, $kendo-solid-button-active-shade-border-amount ), null ));
 
             .k-button-solid-#{$name} {
                 @include fill(
@@ -129,11 +102,7 @@
                 &:focus,
                 &.k-focus {
                     @if ( $kendo-solid-button-shadow ) {
-                        @if ($name == "inverse") {
-                            @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread if($kendo-new-colors, rgba( k-color( dark, true ), $kendo-outline-button-shadow-opacity ), rgba( $_button-border, $kendo-solid-button-shadow-opacity )), true, true );
-                        } @else {
-                            @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread if($kendo-new-colors, rgba( k-color( $name, true ), $kendo-outline-button-shadow-opacity ), rgba( $_button-border, $kendo-solid-button-shadow-opacity )), true, true );
-                        }
+                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread if($kendo-new-colors, rgba( k-color( $name, true ), $kendo-outline-button-shadow-opacity ), rgba( $_button-border, $kendo-solid-button-shadow-opacity )), true, true );
                     }
                 }
 
@@ -189,12 +158,6 @@
                         $color,
                         $color
                     );
-                } @else if $name == "inverse" {
-                    @include fill(
-                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
-                        $color,
-                        $color
-                    );
                 } @else {
                     @include fill(
                         if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )),
@@ -210,8 +173,6 @@
                 @if $kendo-outline-button-shadow {
                     @if $name == "base" {
                         @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread if($kendo-new-colors, rgba( k-color( on-app-surface, true ), $kendo-outline-button-shadow-opacity ), rgba( $color, $kendo-outline-button-shadow-opacity )), true, true );
-                    } @else if $name == "inverse" {
-                        @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread if($kendo-new-colors, rgba( k-color( dark, true ), $kendo-outline-button-shadow-opacity ), rgba( $color, $kendo-outline-button-shadow-opacity )), true, true );
                     } @else {
                         @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread if($kendo-new-colors, rgba( k-color( $name, true ), $kendo-outline-button-shadow-opacity ), rgba( $color, $kendo-outline-button-shadow-opacity )), true, true );
                     }
@@ -224,12 +185,6 @@
                 @if $name == "base" {
                     @include fill(
                         $kendo-base-bg,
-                        $color,
-                        $color
-                    );
-                } @else if $name == "inverse" {
-                    @include fill(
-                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
@@ -247,12 +202,6 @@
                 @if $name == "base" {
                     @include fill(
                         $kendo-base-bg,
-                        $color,
-                        $color
-                    );
-                } @else if $name == "inverse" {
-                    @include fill(
-                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
@@ -298,8 +247,6 @@
             &.k-hover {
                 @if $name == "base" {
                     color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
-                } @else if $name == "inverse" {
-                    color: if($kendo-new-colors, k-color( dark-hover ), k-try-shade( $color, 2 ));
                 } @else {
                     color: if($kendo-new-colors, k-color( #{$name}-hover ), k-try-shade( $color, 2 ));
                 }
@@ -311,8 +258,6 @@
                 @if ( $kendo-link-button-shadow ) {
                     @if $name == "base" {
                         @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread if($kendo-new-colors, rgba( k-color( on-app-surface, true ), $kendo-link-button-shadow-opacity ), rgba( $color, $kendo-link-button-shadow-opacity )), true, true );
-                    } @else if $name == "inverse" {
-                        @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread if($kendo-new-colors, rgba( k-color( dark, true ), $kendo-link-button-shadow-opacity ), rgba( $color, $kendo-link-button-shadow-opacity )), true, true );
                     } @else {
                         @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread if($kendo-new-colors, rgba( k-color( $name, true ), $kendo-link-button-shadow-opacity ), rgba( $color, $kendo-link-button-shadow-opacity )), true, true );
                     }
@@ -324,8 +269,6 @@
             &.k-active {
                 @if $name == "base" {
                     color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
-                } @else if $name == "inverse" {
-                    color: if($kendo-new-colors, k-color( dark-active ), k-try-shade( $color, 2 ));
                 } @else {
                     color: if($kendo-new-colors, k-color( #{$name}-active ), k-try-shade( $color, 2 ));
                 }
@@ -335,8 +278,6 @@
             &.k-selected {
                 @if $name == "base" {
                     color: if($kendo-new-colors, $kendo-base-text, k-try-shade( $color, 2 ));
-                } @else if $name == "inverse" {
-                    color: if($kendo-new-colors, k-color( dark-active ), k-try-shade( $color, 2 ));
                 } @else {
                     color: if($kendo-new-colors, k-color( #{$name}-active ), k-try-shade( $color, 2 ));
                 }

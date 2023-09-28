@@ -29,11 +29,7 @@
     // Window theme colors
     @each $name, $color in $kendo-window-theme-colors {
         .k-window-#{$name} .k-window-titlebar {
-            @if $name == "inverse" {
-                color: if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color ));
-            } @else {
-                color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color ));
-            }
+            color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color ));
             background-color: $color;
         }
     }

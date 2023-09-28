@@ -46,19 +46,11 @@ $kendo-notification-icon-spacing: $kendo-icon-spacing !default;
     $_theme: ();
 
     @each $name, $color in $colors {
-        @if $name == "inverse" {
-            $_theme: k-map-merge(( $name: (
-                color: if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
-                background-color: $color,
-                border: $color,
-            )), $_theme );
-        } @else {
-            $_theme: k-map-merge(( $name: (
-                color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )),
-                background-color: $color,
-                border: $color,
-            )), $_theme );
-        }
+        $_theme: k-map-merge(( $name: (
+            color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )),
+            background-color: $color,
+            border: $color,
+        )), $_theme );
     }
 
     @return $_theme;
