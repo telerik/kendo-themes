@@ -1,5 +1,6 @@
-@include exports("animation/container") {
+@mixin kendo-core--styles--animations() {
 
+    // Animation Container
     .k-animation-container {
         position: absolute;
         overflow: hidden;
@@ -15,11 +16,8 @@
         }
     }
 
-}
 
-
-@include exports("animation/effect") {
-
+    // Animations
     .k-push-right {
         &-enter,
         &-appear {
@@ -375,10 +373,9 @@
             transition: max-width 300ms ease-in-out;
         }
     }
-}
 
 
-@include exports("animation/fx") {
+    // FX
     $fx-duration: 350ms;
 
     .k-fx-end .k-fx-next,
@@ -709,4 +706,5 @@
             }
         }
     }
+
 }
