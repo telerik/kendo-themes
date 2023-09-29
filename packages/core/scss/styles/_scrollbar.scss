@@ -1,4 +1,4 @@
-@include exports( "common/scrollbar" ) {
+@mixin kendo-core--styles--scrollbar() {
 
     // virtual scrollbar
     .k-scrollbar {
