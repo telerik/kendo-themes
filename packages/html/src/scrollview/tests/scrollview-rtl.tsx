@@ -16,21 +16,21 @@ export default () =>(
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <span>Light mode</span>
-            <span>Normal</span>
-            <span>Dark mode</span>
+            <span>RTL - Light mode</span>
+            <span>RTL - Normal</span>
+            <span>RTL - Dark mode</span>
 
-            <ScrollViewNormal mode="light" />
-            <ScrollViewNormal />
-            <ScrollViewNormal mode="dark" />
+            <ScrollViewNormal mode="light" rtl />
+            <ScrollViewNormal rtl />
+            <ScrollViewNormal mode="dark" rtl />
 
-            <span>Pager disabled</span>
+            <span>RTL Pager disabled</span>
             <span></span>
             <span></span>
 
-            <ScrollViewNormal mode="light" pager={false} />
-            <ScrollViewNormal pager={false} />
-            <ScrollViewNormal mode="dark" pager={false} />
+            <ScrollViewNormal mode="light" pager={false} rtl />
+            <ScrollViewNormal pager={false} rtl />
+            <ScrollViewNormal mode="dark" pager={false} rtl />
         </div>
     </>
 );
