@@ -5,14 +5,14 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Toolbar, ToolbarItem } from '../../toolbar';
-import { Filter, FilterToolbar, FilterLines, FilterPreview, FilterItem } from '../../filter';
+import { FilterNormal, FilterToolbar, FilterLines, FilterPreview, FilterItem } from '../../filter';
 
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <Filter>
+            <FilterNormal>
                 <FilterToolbar>
                     <Toolbar focus>
                         <ButtonGroup>
@@ -152,7 +152,7 @@ export default () =>(
                         { name: "bracket", value: ")" },
                     ]}>
                 </FilterPreview>
-            </Filter>
+            </FilterNormal>
         </div>
     </>
 );
