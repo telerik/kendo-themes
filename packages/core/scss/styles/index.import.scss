@@ -1,11 +1,12 @@
 @import "./_accessibility.scss";
-@import "./animations.scss";
+@import "./_animations.scss";
 @import "./_asp-fallback.scss";
 @import "./_layout.scss";
 @import "./_normalize.scss";
 @import "./_base.scss";
 @import "./_loading.scss";
 @import "./_selection.scss";
+@import "./scrollbar.scss";
 @import "./_colors.scss";
 
 @mixin kendo-core--styles() {
@@ -18,4 +19,5 @@
     @include kendo-core--styles--base();
     @include kendo-core--styles--loading();
     @include kendo-core--styles--selection();
+    @include kendo-core--styles--scrollbar();
 }
