@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.1-dev.0...v7.0.1-dev.1) (2023-10-02)
+
+
+### Bug Fixes
+
+* **icon:** modifier does not have the correct size ([527b301](https://github.com/telerik/kendo-themes/commit/527b301bfa30070b7d36ca3574117cf81d80c780))
+
+
+
+
+
 ## [7.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.0...v7.0.1-dev.0) (2023-09-26)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

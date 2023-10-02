@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.1-dev.0...v7.0.1-dev.1) (2023-10-02)
+
+
+### Bug Fixes
+
+* **icon:** loading animation has incorrect dimensions ([a18fac9](https://github.com/telerik/kendo-themes/commit/a18fac9bd7a7b24e63b559d09f560b1b66083437))
+
+
+
+
+
 ## [7.0.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.0...v7.0.1-dev.0) (2023-09-26)
 
 **Note:** Version bump only for package @progress/kendo-theme-core
