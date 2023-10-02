@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/telerik/kendo-themes/compare/v7.0.1-dev.1...v7.0.1) (2023-10-02)
+
+
+### Bug Fixes
+
+* **grid:** dropdown operator height does not match input height ([83254f3](https://github.com/telerik/kendo-themes/commit/83254f35aaa36433102600fb5ebf75e3ad96b7a9))
+* **multiselect:** disabled state of chips is not visible in material theme ([6ccf535](https://github.com/telerik/kendo-themes/commit/6ccf535529a6d1a6f728720ab7efc901e6c9731e))
+* **spreadsheet:** sheets bar overflows past container dimensions ([2c57d43](https://github.com/telerik/kendo-themes/commit/2c57d432ac1dd35ae78908a3853c43bf48516cbf))
+
+
+
+
+
 ## [7.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.1-dev.0...v7.0.1-dev.1) (2023-10-02)
 
 
