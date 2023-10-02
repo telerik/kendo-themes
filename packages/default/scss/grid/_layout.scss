@@ -916,6 +916,7 @@
         $_selection-aggregates-padding-x: k-map-get( $size-props, selection-aggregates-padding-x );
         $_selection-aggregates-padding-y: k-map-get( $size-props, selection-aggregates-padding-y );
 
+        .k-grid .k-grid-#{$size},
         .k-grid-#{$size} {
 
             .k-table-th {
