@@ -1,11 +1,11 @@
-import { TileLayout } from '../tilelayout.spec';
+import { TileLayoutNormal } from '../../tilelayout';
 import { TileLayoutItem } from '../tilelayout-item.spec';
 import TileLayoutItemHint from '../tilelayout-item-hint.spec';
 
 export default () => (
     <>
         <div id="test-area">
-            <TileLayout
+            <TileLayoutNormal
                 columns={5}
                 columnWidth="1fr"
                 rowHeight="1fr"
@@ -27,7 +27,7 @@ export default () => (
                     body="Content goes here"
                     style={{ order: "9", gridColumnEnd: "span 1", gridRowEnd: "span 2" }}
                 />
-            </TileLayout>
+            </TileLayoutNormal>
         </div>
     </>
 );
