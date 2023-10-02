@@ -79,7 +79,8 @@
     "create-screenshots": "./build/create-screenshots.sh",
     "embed-assets": "gulp assets",
     "create-component": "gulp create-component",
-    "test-contrast": "node ./scripts/test-contrast.mjs"
+    "test-contrast": "node ./scripts/test-contrast.mjs",
+    "test:integrations": "npm run build --prefix integrations"
   },
   "engines": {
     "node": "^18"
