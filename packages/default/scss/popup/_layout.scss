@@ -1,5 +1,30 @@
 @mixin kendo-popup--layout-base() {
 
+    // Animation Container
+    .k-animation-container {
+        position: absolute;
+        overflow: hidden;
+        z-index: 100;
+
+        &-fixed {
+            position: fixed;
+        }
+
+        &-relative {
+            position: relative;
+            display: inline-block;
+        }
+    }
+
+    .k-animation-container {
+        @include border-bottom-radius-only( $kendo-border-radius-md );
+    }
+
+    .k-animation-container-shown {
+        overflow: visible;
+    }
+
+    // Popup
     .k-popup {
         @include border-radius( $kendo-popup-border-radius );
         margin: 0;
@@ -18,13 +43,6 @@
         .k-item {
             outline: none;
         }
-    }
-    .k-animation-container {
-        @include border-bottom-radius-only( k-border-radius(md) );
-    }
-
-    .k-animation-container-shown {
-        overflow: visible;
     }
 
     .k-popup > .k-colorpalette {
@@ -49,7 +67,6 @@
     .k-popup > .k-coloreditor {
         border-width: 0;
     }
-
 
     // Legacy shadow
     .k-shadow {
