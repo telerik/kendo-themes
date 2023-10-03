@@ -19,7 +19,7 @@
     "glob": "^10.2.2",
     "gulp": "^4.0.2",
     "http-server": "^14.1.1",
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "lerna": "^5.5.2",
     "lint-staged": "^14.0.1",
     "nunjucks": "^3.2.3",
@@ -43,6 +43,7 @@
     "sass-embedded": "^1.63.6"
   },
   "scripts": {
+    "prepare": "husky install",
     "start": "node ./scripts/start-dev-server.js",
     "setup": "bash ./scripts/setup.sh",
     "clean": "find . -name \"node_modules\" -type d -prune | xargs rm -rf",
@@ -79,12 +80,5 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint",
     "*.{css,scss}": "stylelint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run stylelint && npm run lint-staged",
-      "pre-push": "npm run sass && npm run docs:check",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }
