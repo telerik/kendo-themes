@@ -31,18 +31,7 @@ export default () =>(
             <span>Editor with iFrame; responsive toolbar</span>
             <span>Editor without iFrame; responsive toolbar</span>
             <section>
-                <EditorNormal style={{ height: "300px" }}>
-                    <EditorToolbar resizable>
-                        <ButtonGroup>
-                            <Button icon="undo"></Button>
-                            <Button icon="redo"></Button>
-                        </ButtonGroup>
-                        <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
-                    </EditorToolbar>
-                    <EditorContent>
-                        <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
-                    </EditorContent>
-                </EditorNormal>
+                <EditorNormal style={{ height: "300px" }}/>
             </section>
             <section>
                 <EditorNormal style={{ height: "300px" }}>
