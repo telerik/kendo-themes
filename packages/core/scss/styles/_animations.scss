@@ -1,22 +1,5 @@
 @mixin kendo-core--styles--animations() {
 
-    // Animation Container
-    .k-animation-container {
-        position: absolute;
-        overflow: hidden;
-        z-index: 100;
-
-        &-fixed {
-            position: fixed;
-        }
-
-        &-relative {
-            position: relative;
-            display: inline-block;
-        }
-    }
-
-
     // Animations
     .k-push-right {
         &-enter,
