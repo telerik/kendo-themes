@@ -35,8 +35,10 @@ const EXCLUDED_ELEMENTS_FOCUS = [
 
 // Below are elements with failing text contrast ratio requirement
 const EXCLUDED_PAGES_TEXT = [
-    // BottomNavigation does not cover contras requirements for the text of its items
-    `${TESTS_PATH}/bottom-nav/bottom-nav-colors.html`,
+    // BottomNavigation does not cover contrast requirements for the text of its items
+    `${TESTS_PATH}/bottom-nav/bottom-nav-solid.html`,
+    // BottomNavigation does not cover contrast requirements for the text of its items
+    `${TESTS_PATH}/bottom-nav/bottom-nav-flat.html`,
     // Colored chips do not cover minimum contrast requirements for text
     `${TESTS_PATH}/chip/chip-solid.html`,
     // ButtonGroup test page contains customizations that break contrast
