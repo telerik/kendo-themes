@@ -4,7 +4,7 @@
 $kendo-new-colors: false !default;
 
 // Colors
-$kendo-colors: (
+$_default-colors: (
     // Misc
     app-surface: null, // !!! Eventually merge with surface-alt
     on-app-surface: null, // !!!
@@ -135,6 +135,9 @@ $kendo-colors: (
     on-inverse: null,
     inverse-on-surface: null,
 ) !default;
+
+$kendo-colors: $_default-colors !default;
+$kendo-colors: k-map-merge($_default-colors, $kendo-colors);
 
 @function k-color($key, $rgb: false) {
     $_color: k-map-get($kendo-colors, $key);

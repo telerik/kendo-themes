@@ -7,7 +7,7 @@ $kendo-new-colors: false !default;
 
 // TODO!
 // Colors
-$kendo-colors: (
+$_default-colors: (
     // Misc
     app-surface: k-map-get( $kendo-palette-gray, white ), // !!! Eventually merge with surface-alt
     on-app-surface: k-map-get( $kendo-palette-gray, 12 ), // !!!
@@ -138,6 +138,8 @@ $kendo-colors: (
     on-inverse: k-map-get( $kendo-palette-gray, white ),
     inverse-on-surface: k-map-get( $kendo-palette-gray, 15 ),
 ) !default;
+
+$kendo-colors: $_default-colors !default;
 
 $kendo-is-dark-theme: false !default;
 

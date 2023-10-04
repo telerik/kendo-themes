@@ -12,7 +12,7 @@ $kendo-new-colors: false !default;
 
 // TODO!
 // Colors
-$kendo-colors: (
+$_default-colors: (
     // Misc
     surface: null,
     surface-alt: null,
@@ -129,6 +129,8 @@ $kendo-colors: (
     dark-on-base: null,
     dark-on-surface: null
 ) !default;
+
+$kendo-colors: $_default-colors !default;
 
 $kendo-is-dark-theme: false !default;
 
