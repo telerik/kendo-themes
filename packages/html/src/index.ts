@@ -92,7 +92,7 @@ export * from './card/index';
 export * from './expansion-panel/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';
-// export * from './tile-layout/index';
+export * from './tilelayout/index';
 
 // Data management
 // export * from './grid/index';
@@ -100,9 +100,18 @@ export * from './listview/index';
 // export * from './spreadsheet/index';
 // export * from './pivotgrid/index';
 // export * from './treelist/index';
-// export * from './filter/index';
+export * from './filter/index';
 // export * from './filemanager/index';
 // export * from './taskboard/index';
+
+// Misc
+// export * from './adaptive/index''
+// export * from './chat/index';
+// export * from './mediaplayer/index';
+// export * from './timeline/index';
+// export * from './pdf-viewer/index';
+// export * from './scroller/index';
+export * from './scrollview/index';
 
 // Editors
 export * from './editor/index';
