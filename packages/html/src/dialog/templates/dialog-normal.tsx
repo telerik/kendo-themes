@@ -1,7 +1,12 @@
 import Dialog from "../dialog.spec";
 
-export const DialogNormal = ({ children, ...other }: any) => <Dialog
-    {...other}
->
-    {children}
-</Dialog>;
+export const DialogNormal = (props) => (
+    <Dialog children={[
+        <>
+        Dialog content
+        </>
+    ]}
+    { ...props}
+    >
+    </Dialog>
+);
