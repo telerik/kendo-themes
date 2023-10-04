@@ -1,4 +1,4 @@
-$kendo-palette-gray: (
+$_default-palette-gray: (
     white: #ffffff,
     1: #fafafa,
     2: #f5f5f5,
@@ -18,7 +18,7 @@ $kendo-palette-gray: (
     black: #000000,
 );
 
-$kendo-palette-coral: (
+$_default-palette-coral: (
     1: #fff6f5,
     2: #ffeceb,
     3: #ffdedb,
@@ -36,7 +36,7 @@ $kendo-palette-coral: (
     15: #5c201c,
 );
 
-$kendo-palette-sky-blue: (
+$_default-palette-sky-blue: (
     1: #ebf8fe,
     2: #d8f1fd,
     3: #c5eafc,
@@ -54,7 +54,7 @@ $kendo-palette-sky-blue: (
     15: #023f5c,
 );
 
-$kendo-palette-green: (
+$_default-palette-green: (
     1: #edf8e9,
     2: #dcf0d3,
     3: #cbe9bf,
@@ -72,7 +72,7 @@ $kendo-palette-green: (
     15: #1c5a00,
 );
 
-$kendo-palette-blue: (
+$_default-palette-blue: (
     1: #e9f0fd,
     2: #d2e2fb,
     3: #bdd4f8,
@@ -90,7 +90,7 @@ $kendo-palette-blue: (
     15: #002259,
 );
 
-$kendo-palette-yellow: (
+$_default-palette-yellow: (
     1: #fffae9,
     2: #fff4d3,
     3: #ffeebd,
@@ -108,7 +108,7 @@ $kendo-palette-yellow: (
     15: #5e4700,
 );
 
-$kendo-palette-red: (
+$_default-palette-red: (
     1: #feeeed,
     2: #fcddda,
     3: #fbc8c3,
@@ -125,3 +125,25 @@ $kendo-palette-red: (
     14: #7a0c00,
     15: #7a0c00,
 );
+
+
+$kendo-palette-gray: $_default-palette-gray !default;
+$kendo-palette-gray: k-map-merge($_default-palette-gray, $kendo-palette-gray);
+
+$kendo-palette-coral: $_default-palette-coral !default;
+$kendo-palette-coral: k-map-merge($_default-palette-coral, $kendo-palette-coral);
+
+$kendo-palette-sky-blue: $_default-palette-sky-blue !default;
+$kendo-palette-sky-blue: k-map-merge($_default-palette-sky-blue, $kendo-palette-sky-blue);
+
+$kendo-palette-green: $_default-palette-green !default;
+$kendo-palette-green: k-map-merge($_default-palette-green, $kendo-palette-green);
+
+$kendo-palette-blue: $_default-palette-blue !default;
+$kendo-palette-blue: k-map-merge($_default-palette-blue, $kendo-palette-blue);
+
+$kendo-palette-yellow: $_default-palette-yellow !default;
+$kendo-palette-yellow: k-map-merge($_default-palette-yellow, $kendo-palette-yellow);
+
+$kendo-palette-red: $_default-palette-red !default;
+$kendo-palette-red: k-map-merge($_default-palette-red, $kendo-palette-red);
