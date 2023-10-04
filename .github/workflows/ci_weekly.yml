@@ -83,3 +83,7 @@ jobs:
       - name: Check docs
         run: |
           npm run docs:check
+
+      - name: Test integrations
+        run: |
+          npm run test:integrations
