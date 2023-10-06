@@ -1,7 +1,3 @@
-// Temporary fix for undefined variables (used in _palettes.scss
-$dark-primary-text: rgba(black, 0.87) !default;
-$light-primary-text: #ffffff !default;
-
 @import "@progress/kendo-theme-core/scss/functions/index.import.scss";
 @import "@progress/kendo-theme-core/scss/color-system/_constants.scss";
 @import "./_palettes.scss";

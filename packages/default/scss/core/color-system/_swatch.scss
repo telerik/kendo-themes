@@ -57,9 +57,9 @@ $_default-colors: (
     tertiary-hover: k-map-get( $kendo-palette-sky-blue, 10 ),
     tertiary-active: k-map-get( $kendo-palette-sky-blue, 11 ),
     tertiary-emphasis: k-map-get( $kendo-palette-sky-blue, 6 ),
-    tertiary-on-subtle: k-map-get( $kendo-palette-gray, 15 ),
+    tertiary-on-subtle: k-map-get( $kendo-palette-sky-blue, 15 ),
     on-tertiary: k-map-get( $kendo-palette-gray, white ),
-    tertiary-on-surface: k-map-get( $kendo-palette-gray, 11 ),
+    tertiary-on-surface: k-map-get( $kendo-palette-sky-blue, 11 ),
     // Info
     info-subtle: k-map-get( $kendo-palette-blue, 2 ),
     info-subtle-hover: k-map-get( $kendo-palette-blue, 3 ),
@@ -137,6 +137,42 @@ $_default-colors: (
     inverse-on-subtle: k-map-get( $kendo-palette-gray, 14 ),
     on-inverse: k-map-get( $kendo-palette-gray, white ),
     inverse-on-surface: k-map-get( $kendo-palette-gray, 15 ),
+    // Series A
+    series-a: k-map-get( $kendo-palette-coral, 9 ),
+    series-a-dark: k-map-get( $kendo-palette-coral, 12 ),
+    series-a-darker: k-map-get( $kendo-palette-coral, 14 ),
+    series-a-light: k-map-get( $kendo-palette-coral, 5 ),
+    series-a-lighter: k-map-get( $kendo-palette-coral, 7 ),
+    // Series B
+    series-b: k-map-get( $kendo-palette-lemon-yellow, 9 ),
+    series-b-dark: k-map-get( $kendo-palette-lemon-yellow, 12 ),
+    series-b-darker: k-map-get( $kendo-palette-lemon-yellow, 14 ),
+    series-b-light: k-map-get( $kendo-palette-lemon-yellow, 5 ),
+    series-b-lighter: k-map-get( $kendo-palette-lemon-yellow, 7 ),
+    // Series C
+    series-c: k-map-get( $kendo-palette-spring-green, 9 ),
+    series-c-dark: k-map-get( $kendo-palette-spring-green, 12 ),
+    series-c-darker: k-map-get( $kendo-palette-spring-green, 14 ),
+    series-c-light: k-map-get( $kendo-palette-spring-green, 5 ),
+    series-c-lighter: k-map-get( $kendo-palette-spring-green, 7 ),
+    // Series D
+    series-d: k-map-get( $kendo-palette-royal-blue, 9 ),
+    series-d-dark: k-map-get( $kendo-palette-royal-blue, 12 ),
+    series-d-darker: k-map-get( $kendo-palette-royal-blue, 14 ),
+    series-d-light: k-map-get( $kendo-palette-royal-blue, 5 ),
+    series-d-lighter: k-map-get( $kendo-palette-royal-blue, 7 ),
+    // Series Е
+    series-e: k-map-get( $kendo-palette-lavender-purple, 9 ),
+    series-e-dark: k-map-get( $kendo-palette-lavender-purple, 12 ),
+    series-e-darker: k-map-get( $kendo-palette-lavender-purple, 14 ),
+    series-e-light: k-map-get( $kendo-palette-lavender-purple, 5 ),
+    series-e-lighter: k-map-get( $kendo-palette-lavender-purple, 7 ),
+    // Series F
+    series-f: k-map-get( $kendo-palette-flamingo-pink, 9 ),
+    series-f-dark: k-map-get( $kendo-palette-flamingo-pink, 12 ),
+    series-f-darker: k-map-get( $kendo-palette-flamingo-pink, 14 ),
+    series-f-light: k-map-get( $kendo-palette-flamingo-pink, 5 ),
+    series-f-lighter: k-map-get( $kendo-palette-flamingo-pink, 7 ),
 ) !default;
 
 $kendo-colors: $_default-colors !default;
