@@ -1,25 +1,22 @@
 # Kendo UI Themes Monorepo
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/telerik/kendo-themes)
-[![CI](https://github.com/telerik/kendo-themes/actions/workflows/ci_dev.yml/badge.svg?branch=develop)](https://github.com/telerik/kendo-themes/actions/workflows/ci_dev.yml)
-
-`kendo-themes` is a [lerna](https://github.com/lerna/lerna/) managed monorepo project for all Kendo UI themes that are used across the Kendo UI suites and Telerik UI for Blazor. The themes are built with sass using scss syntax. The syntax is compatible with both `node-sass` and `dart-sass`, as we currently does not use sass module system. Browser-specific properties are generated at build-time through [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
+`kendo-themes` is a [lerna](https://github.com/lerna/lerna/) managed monorepo project for all Kendo UI themes that are used across the Kendo UI suites and Telerik UI for Blazor. The themes are built with sass using scss syntax. The syntax is compatible with both `node-sass` and `dart-sass`, as we currently do not use the sass module system. Browser-specific properties are generated at build-time through [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
 
 ## Setup
 
-To setup to monorepo run in the root directory:
+* Make sure you have Node v18 or later.
+* Clone the repo and run `npm ci` to install dependencies.
 
-```sh
-  npm run setup
-```
+## Development Server
 
-The following npm commands are available:
+To run it, execute `npm start` and navigate to <http://localhost:3000/>
 
-* To build all themes with node-sass, run `npm run sass`.
-* To build all swatches with node-sass, run `npm run sass:swatches`.
-* To build all themes with dart-sass, run `npm run dart`.
-* To build all swatches with dart-sass, run `npm run dart:swatches`.
-* To lint all themes, run `npm run stylelint`.
+## Building Packages
+
+The following npm commands are available for building the themes:
+
+* To build all themes run `npm run sass`.
+* To build all swatches run `npm run sass:swatches`.
 
 There are additional commands, which can be found in [`package.json`](package.json) and [`gulpfile.js`](gulpfile.js).
 
@@ -61,7 +58,7 @@ To guard against regressions and make pull request reviews easier, the CI build 
 
 To generate screenshots for a specific theme:
 
-1. Build the theme with `npm run sass` or `npm run dart`
+1. Build the theme with `npm run sass`
 1. Run `npm run create-screenshots <theme>`, substituting `<theme>` with a theme name.
 
 These steps will create new screenshots in `tests/_output`. Note that due to platform differences, all of the files will be marked as changed.
