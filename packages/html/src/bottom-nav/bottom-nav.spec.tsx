@@ -1,8 +1,10 @@
-import { classNames, optionClassNames, FillMode, ThemeColor } from '../misc';
+import { classNames, stateClassNames, optionClassNames, FillMode, ThemeColor, States } from '../misc';
 
 export const BOTTOM_NAV_CLASSNAME = 'k-bottom-nav';
 
-const states = [];
+const states = [
+    States.disabled,
+];
 
 const options = {
     fillMode: [ FillMode.solid, FillMode.flat ],
@@ -31,8 +33,10 @@ export type KendoBottomNavProps = KendoBottomNavOptions & {
     dir?: 'ltr' | 'rtl';
 };
 
+export type KendoBottomNavState = { [K in (typeof states)[number]]?: boolean };
+
 const defaultProps = {
-    fillMode: FillMode.solid,
+    fillMode: FillMode.flat,
     themeColor: ThemeColor.primary,
     flow: 'horizontal',
     border: false
@@ -40,9 +44,11 @@ const defaultProps = {
 
 export const BottomNav = (
     props: KendoBottomNavProps &
+        KendoBottomNavState &
         React.HTMLAttributes<HTMLElement>
 ) => {
     const {
+        disabled,
         fillMode = defaultProps.fillMode,
         themeColor = defaultProps.themeColor,
         flow = defaultProps.flow,
@@ -61,7 +67,10 @@ export const BottomNav = (
             {
                 [`k-bottom-nav-item-flow-${flow}`]: flow,
                 'k-bottom-nav-border': border,
-            }
+            },
+            stateClassNames(BOTTOM_NAV_CLASSNAME, {
+                disabled,
+            }),
         )} dir={dir}>
             {props.children}
         </nav>

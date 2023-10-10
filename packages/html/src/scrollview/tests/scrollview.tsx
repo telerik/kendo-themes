@@ -1,5 +1,4 @@
-import { ScrollView } from '../../scrollview';
-
+import { ScrollViewNormal } from '../../scrollview';
 
 const style = `
     .k-scrollview {
@@ -21,15 +20,17 @@ export default () =>(
             <span>Normal</span>
             <span>Dark mode</span>
 
-            <ScrollView mode="light" />
-            <ScrollView />
-            <ScrollView mode="dark" />
+            <ScrollViewNormal mode="light" />
+            <ScrollViewNormal />
+            <ScrollViewNormal mode="dark" />
 
-            <span>RTL</span>
+            <span>Pager disabled</span>
             <span></span>
             <span></span>
 
-            <ScrollView rtl />
+            <ScrollViewNormal mode="light" pager={false} />
+            <ScrollViewNormal pager={false} />
+            <ScrollViewNormal mode="dark" pager={false} />
         </div>
     </>
 );
