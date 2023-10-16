@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.2-dev.2](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.1...v7.0.2-dev.2) (2023-10-16)
+
+
+### Bug Fixes
+
+* **dock-manager:** fix toolbar buttons padding in fluent ([ce21b1d](https://github.com/telerik/kendo-themes/commit/ce21b1d190e55eef4ca8c83d89ca0d8ca3e32aa0))
+
+
+
+
+
 ## [7.0.2-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.0...v7.0.2-dev.1) (2023-10-09)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
