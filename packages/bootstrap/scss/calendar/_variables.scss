@@ -85,7 +85,7 @@ $kendo-calendar-cell-selected-hover-border: $kendo-selected-hover-border !defaul
 $kendo-calendar-cell-selected-hover-gradient: null !default;
 
 $kendo-calendar-cell-focus-shadow: inset $kendo-button-focus-shadow !default;
-$kendo-calendar-cell-selected-focus-shadow: inset 0 0 0 2px rgba( k-color-darken( $kendo-color-primary, 12.5% ), .5 ) !default;
+$kendo-calendar-cell-selected-focus-shadow: inset 0 0 0 2px if($kendo-new-colors, rgba( k-color( primary-active, true ), .5 ), rgba( k-color-darken( $kendo-color-primary, 12.5% ), .5 )) !default;
 
 
 // Calendar navigation
