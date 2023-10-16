@@ -639,7 +639,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-line-height * 1em} + #{$kendo-badge-padding-y * 2} + #{$kendo-badge-border-width * 2})</code></td>
-    <td><code>calc( 1em + 0.7em + 2px)</code></td>
+    <td><code>calc(1em + 0.7em + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the circular Badge.</div></div>
@@ -649,7 +649,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-badge-sm-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-sm-line-height * 1em} + #{$kendo-badge-sm-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 0.35em + 2px )</code></td>
+    <td><code>calc(1em + 0.35em + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the small circular Badge.</div></div>
@@ -659,7 +659,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-badge-md-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-md-line-height * 1em} + #{$kendo-badge-md-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 0.7em + 2px )</code></td>
+    <td><code>calc(1em + 0.7em + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the medium circular Badge.</div></div>
@@ -669,7 +669,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-badge-lg-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-lg-line-height * 1em} + #{$kendo-badge-lg-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 1.05em + 2px )</code></td>
+    <td><code>calc(1em + 1.05em + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the large circular Badge.</div></div>
@@ -701,7 +701,7 @@ The following table lists the available variables for customizing the Bootstrap 
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 0.325em, padding-y: 0.175em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.35em + 2px )), md: (padding-x: 0.65em, padding-y: 0.35em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 0.7em + 2px )), lg: (padding-x: 0.975em, padding-y: 0.525em, font-size: 0.75em, line-height: 1, min-width: calc( 1em + 1.05em + 2px )))</code></td>
+    <td><code>(sm: (padding-x: 0.325em, padding-y: 0.175em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 0.35em + 2px)), md: (padding-x: 0.65em, padding-y: 0.35em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 0.7em + 2px)), lg: (padding-x: 0.975em, padding-y: 0.525em, font-size: 0.75em, line-height: 1, min-width: calc(1em + 1.05em + 2px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
@@ -851,7 +851,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size * 2.5} + #{k-map-get( $kendo-spacing, 4 )} - #{$kendo-bottom-nav-padding-x * 2} )</code></td>
-    <td><code>calc( 40px + 1rem - 0px )</code></td>
+    <td><code>calc(40px + 1rem - 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>
@@ -1786,7 +1786,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-button-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )</code></td>
-    <td><code>calc( 1.5em + 0.75rem + 2px )</code></td>
+    <td><code>calc(1.5em + 0.75rem + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
@@ -1796,7 +1796,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} )</code></td>
-    <td><code>calc( 1.5em + 0.75rem )</code></td>
+    <td><code>calc(1.5em + 0.75rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
@@ -2268,7 +2268,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-card-inner-border-radius</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} )</code></td>
-    <td><code>calc( 0.375rem - 1px )</code></td>
+    <td><code>calc(0.375rem - 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inner border radius of the Card.</div></div>
@@ -3568,7 +3568,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} )</code></td>
-    <td><code>calc( 1.25em + 0.5rem + 2px )</code></td>
+    <td><code>calc(1.25em + 0.5rem + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Chip.</div></div>
@@ -6494,7 +6494,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-floating-label-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} )</code></td>
-    <td><code>calc( 1.5 * 1rem )</code></td>
+    <td><code>calc(1.5 * 1rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Floating Label.</div></div>
@@ -6504,7 +6504,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-floating-label-offset-x</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} )</code></td>
-    <td><code>calc( 0.75rem + 1px )</code></td>
+    <td><code>calc(0.75rem + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Floating Label.</div></div>
@@ -6514,7 +6514,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} )</code></td>
-    <td><code>calc( calc( 1.5 * 1rem ) + 1px + 0.375rem )</code></td>
+    <td><code>calc(calc(1.5 * 1rem) + 1px + 0.375rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>
@@ -6654,7 +6654,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-form-line-height-em</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-form-line-height} * 1em )</code></td>
-    <td><code>calc( 1.5 * 1em )</code></td>
+    <td><code>calc(1.5 * 1em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form in em units.</div></div>
@@ -6924,7 +6924,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-horizontal-form-field-wrap-max-width</td>
     <td>Calculation</td>
     <td><code>calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} )</code></td>
-    <td><code>calc( ( 100% - 25% ) - 10px )</code></td>
+    <td><code>calc(100% - 25% - 10px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the field wrap in the horizontal Form.</div></div>
@@ -9718,7 +9718,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-menu-popup-item-padding-end</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$kendo-icon-size} )</code></td>
-    <td><code>calc( 2rem + 16px )</code></td>
+    <td><code>calc(2rem + 16px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the menu item in popup.</div></div>
@@ -9738,7 +9738,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
     <td><code>calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) )</code></td>
-    <td><code>calc(-1 * (calc( 2rem + 16px ) - 0.5rem))</code></td>
+    <td><code>calc(-1 * (calc(2rem + 16px) - 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the menu item expand icon.</div></div>
@@ -10178,7 +10178,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-sm-calc-size</code></td>
-    <td><code>calc( 1.4285714286em + 0.5rem + 2px )</code></td>
+    <td><code>calc(1.4285714286em + 0.5rem + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the small Pager.</div></div>
@@ -10188,7 +10188,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-md-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-calc-size</code></td>
-    <td><code>calc( 1.5em + 0.75rem + 2px )</code></td>
+    <td><code>calc(1.5em + 0.75rem + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the medium Pagers.</div></div>
@@ -10198,7 +10198,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-pager-lg-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-lg-calc-size</code></td>
-    <td><code>calc( 1.5em + 1rem + 2px )</code></td>
+    <td><code>calc(1.5em + 1rem + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the large Pagers.</div></div>
@@ -10560,7 +10560,7 @@ The following table lists the available variables for customizing the Bootstrap 
         pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, item-group-spacing: 0.875rem, item-min-width: calc( 1.4285714286em + 0.5rem + 2px ), pager-dropdown-width: 5em), md: (padding-x: 0.5rem, padding-y: 0.5rem, item-group-spacing: 1rem, item-min-width: calc( 1.5em + 0.75rem + 2px ), pager-dropdown-width: 5em), lg: (padding-x: 0.625rem, padding-y: 0.625rem, item-group-spacing: 1.125rem, item-min-width: calc( 1.5em + 1rem + 2px ), pager-dropdown-width: 6em))</code></td>
+    <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.25rem, item-group-spacing: 0.875rem, item-min-width: calc(1.4285714286em + 0.5rem + 2px), pager-dropdown-width: 5em), md: (padding-x: 0.5rem, padding-y: 0.5rem, item-group-spacing: 1rem, item-min-width: calc(1.5em + 0.75rem + 2px), pager-dropdown-width: 5em), lg: (padding-x: 0.625rem, padding-y: 0.625rem, item-group-spacing: 1.125rem, item-min-width: calc(1.5em + 1rem + 2px), pager-dropdown-width: 6em))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
@@ -12376,7 +12376,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$kendo-scrollview-pager-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} )</code></td>
-    <td><code>calc( 10px + 0px + 40px )</code></td>
+    <td><code>calc(10px + 0px + 40px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ScrollView pager.</div></div>
