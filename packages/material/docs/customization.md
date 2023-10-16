@@ -688,7 +688,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-badge-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-line-height * 1em} + #{$kendo-badge-padding-y * 2} + #{$kendo-badge-border-width * 2})</code></td>
-    <td><code>calc( 1em + 8px + 2px)</code></td>
+    <td><code>calc(1em + 8px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the circular Badge.</div></div>
@@ -698,7 +698,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-badge-sm-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-sm-line-height * 1em} + #{$kendo-badge-sm-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 4px + 2px )</code></td>
+    <td><code>calc(1em + 4px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the small circular Badge.</div></div>
@@ -708,7 +708,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-badge-md-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-md-line-height * 1em} + #{$kendo-badge-md-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 8px + 2px )</code></td>
+    <td><code>calc(1em + 8px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the medium circular Badge.</div></div>
@@ -718,7 +718,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-badge-lg-min-width</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-badge-lg-line-height * 1em} + #{$kendo-badge-lg-padding-y * 2} + #{$kendo-badge-border-width * 2} )</code></td>
-    <td><code>calc( 1em + 12px + 2px )</code></td>
+    <td><code>calc(1em + 12px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated minimum width of the large circular Badge.</div></div>
@@ -750,7 +750,7 @@ The following table lists the available variables for customizing the Material t
         min-width: $kendo-badge-lg-min-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 2px, padding-y: 2px, font-size: 10px, line-height: 1, min-width: calc( 1em + 4px + 2px )), md: (padding-x: 4px, padding-y: 4px, font-size: 10px, line-height: 1, min-width: calc( 1em + 8px + 2px )), lg: (padding-x: 6px, padding-y: 6px, font-size: 10px, line-height: 1, min-width: calc( 1em + 12px + 2px )))</code></td>
+    <td><code>(sm: (padding-x: 2px, padding-y: 2px, font-size: 10px, line-height: 1, min-width: calc(1em + 4px + 2px)), md: (padding-x: 4px, padding-y: 4px, font-size: 10px, line-height: 1, min-width: calc(1em + 8px + 2px)), lg: (padding-x: 6px, padding-y: 6px, font-size: 10px, line-height: 1, min-width: calc(1em + 12px + 2px)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map for the Badge.</div></div>
@@ -900,7 +900,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-bottom-nav-item-min-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-icon-size * 2.5} + #{$kendo-padding-sm-x * 2} - #{$kendo-bottom-nav-padding-x * 2} )</code></td>
-    <td><code>calc( 40px + 16px - 0px )</code></td>
+    <td><code>calc(40px + 16px - 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the BottomNavigation item.</div></div>
@@ -1835,7 +1835,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-button-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )</code></td>
-    <td><code>calc( 1.4285714286em + 16px + 2px )</code></td>
+    <td><code>calc(1.4285714286em + 16px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Button.</div></div>
@@ -1845,7 +1845,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-button-inner-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} )</code></td>
-    <td><code>calc( 1.4285714286em + 16px )</code></td>
+    <td><code>calc(1.4285714286em + 16px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated inner height of the Button excluding the border width.</div></div>
@@ -2317,7 +2317,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-card-inner-border-radius</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} )</code></td>
-    <td><code>calc( 4px - 0px )</code></td>
+    <td><code>calc(4px - 0px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inner border radius of the Card.</div></div>
@@ -3627,7 +3627,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-chip-calc-size</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} )</code></td>
-    <td><code>calc( 1.2857142857em + 8px + 2px )</code></td>
+    <td><code>calc(1.2857142857em + 8px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The calculated height of the Chip.</div></div>
@@ -6523,7 +6523,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-floating-label-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-line-height} * #{$kendo-floating-label-font-size} )</code></td>
-    <td><code>calc( 1.25 * 16px )</code></td>
+    <td><code>calc(1.25 * 16px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the Floating Label.</div></div>
@@ -6533,7 +6533,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-floating-label-offset-x</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-input-padding-x} + #{$kendo-input-border-width} )</code></td>
-    <td><code>calc( 16px + 1px )</code></td>
+    <td><code>calc(16px + 1px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal offset of the Floating Label.</div></div>
@@ -6543,7 +6543,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-floating-label-offset-y</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} )</code></td>
-    <td><code>calc( calc( 1.25 * 16px ) + 1px + 8px )</code></td>
+    <td><code>calc(calc(1.25 * 16px) + 1px + 8px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical offset of the Floating Label.</div></div>
@@ -6683,7 +6683,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-form-line-height-em</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-form-line-height} * 1em )</code></td>
-    <td><code>calc( 2 * 1em )</code></td>
+    <td><code>calc(2 * 1em)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Form in em units.</div></div>
@@ -6953,7 +6953,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-horizontal-form-field-wrap-max-width</td>
     <td>Calculation</td>
     <td><code>calc( ( 100% - #{$kendo-horizontal-form-label-width} ) - #{$kendo-horizontal-form-label-margin-x} )</code></td>
-    <td><code>calc( ( 100% - 25% ) - 10px )</code></td>
+    <td><code>calc(100% - 25% - 10px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The maximum width of the field wrap in the horizontal Form.</div></div>
@@ -9688,7 +9688,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-menu-popup-item-padding-end</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$kendo-icon-size} )</code></td>
-    <td><code>calc( 32px + 16px )</code></td>
+    <td><code>calc(32px + 16px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the menu item in popup.</div></div>
@@ -9708,7 +9708,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-menu-popup-sm-item-icon-margin-end</td>
     <td>Calculation</td>
     <td><code>calc( -1 * (#{$kendo-menu-popup-sm-item-padding-end} - #{k-math-div( $kendo-menu-popup-sm-item-padding-x, 2 )}) )</code></td>
-    <td><code>calc(-1 * (calc( 32px + 16px ) - 8px))</code></td>
+    <td><code>calc(-1 * (calc(32px + 16px) - 8px))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the menu item expand icon.</div></div>
@@ -10148,7 +10148,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-pager-sm-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-sm-calc-size</code></td>
-    <td><code>calc( 1.4285714286em + 12px + 2px )</code></td>
+    <td><code>calc(1.4285714286em + 12px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the small Pager.</div></div>
@@ -10158,7 +10158,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-pager-md-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-md-calc-size</code></td>
-    <td><code>calc( 1.4285714286em + 16px + 2px )</code></td>
+    <td><code>calc(1.4285714286em + 16px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the medium Pagers.</div></div>
@@ -10168,7 +10168,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-pager-lg-item-min-width</td>
     <td>Calculation</td>
     <td><code>$kendo-button-lg-calc-size</code></td>
-    <td><code>calc( 1.4285714286em + 20px + 2px )</code></td>
+    <td><code>calc(1.4285714286em + 20px + 2px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum width of the items in the large Pagers.</div></div>
@@ -10530,7 +10530,7 @@ The following table lists the available variables for customizing the Material t
         pager-dropdown-width: $kendo-pager-lg-dropdown-width
     )
 )</code></td>
-    <td><code>(sm: (padding-x: 4px, padding-y: 4px, item-group-spacing: 6px, item-min-width: calc( 1.4285714286em + 12px + 2px ), pager-dropdown-width: 5em), md: (padding-x: 8px, padding-y: 8px, item-group-spacing: 8px, item-min-width: calc( 1.4285714286em + 16px + 2px ), pager-dropdown-width: 5em), lg: (padding-x: 10px, padding-y: 10px, item-group-spacing: 10px, item-min-width: calc( 1.4285714286em + 20px + 2px ), pager-dropdown-width: 5em))</code></td>
+    <td><code>(sm: (padding-x: 4px, padding-y: 4px, item-group-spacing: 6px, item-min-width: calc(1.4285714286em + 12px + 2px), pager-dropdown-width: 5em), md: (padding-x: 8px, padding-y: 8px, item-group-spacing: 8px, item-min-width: calc(1.4285714286em + 16px + 2px), pager-dropdown-width: 5em), lg: (padding-x: 10px, padding-y: 10px, item-group-spacing: 10px, item-min-width: calc(1.4285714286em + 20px + 2px), pager-dropdown-width: 5em))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
@@ -12366,7 +12366,7 @@ The following table lists the available variables for customizing the Material t
     <td>$kendo-scrollview-pager-height</td>
     <td>Calculation</td>
     <td><code>calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} )</code></td>
-    <td><code>calc( 10px + 0px + 40px )</code></td>
+    <td><code>calc(10px + 0px + 40px)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the ScrollView pager.</div></div>
