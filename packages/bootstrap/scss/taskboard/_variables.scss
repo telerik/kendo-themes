@@ -33,7 +33,7 @@ $kendo-taskboard-column-border: transparent !default;
 
 $kendo-taskboard-column-focus-bg: null !default;
 $kendo-taskboard-column-focus-text: null !default;
-$kendo-taskboard-column-focus-border: k-try-shade( $kendo-base-border, 2.5 ) !default;
+$kendo-taskboard-column-focus-border: if($kendo-new-colors, k-color( border-alt ), k-try-shade( $kendo-base-border, 2.5 )) !default;
 
 $kendo-taskboard-column-header-padding-y: $kendo-taskboard-spacer * .75 !default;
 $kendo-taskboard-column-header-padding-x: $kendo-taskboard-column-header-padding-y !default;
@@ -76,12 +76,12 @@ $kendo-taskboard-card-shadow: $kendo-card-shadow !default;
 
 $kendo-taskboard-card-category-border-width: 4px !default;
 
-$kendo-taskboard-card-focus-border: k-try-shade( $kendo-taskboard-card-border, 18% ) !default;
+$kendo-taskboard-card-hover-border: if($kendo-new-colors, k-color( border-alt ), k-try-shade( $kendo-taskboard-card-border, 10% )) !default;
+
+$kendo-taskboard-card-focus-border: if($kendo-new-colors, k-color( border-alt ), k-try-shade( $kendo-taskboard-card-border, 18% )) !default;
 $kendo-taskboard-card-focus-shadow: $kendo-card-focus-shadow !default;
 
-$kendo-taskboard-card-hover-border: k-try-shade( $kendo-taskboard-card-border, 10% ) !default;
-
-$kendo-taskboard-card-selected-border: k-color-tint( $kendo-color-primary-lighter, 8 ) !default;
+$kendo-taskboard-card-selected-border: if($kendo-new-colors, k-color( primary-emphasis ), k-color-tint( $kendo-color-primary-lighter, 8 )) !default;
 $kendo-taskboard-card-selected-shadow: none !default;
 
 $kendo-taskboard-card-header-text: $kendo-color-primary !default;
@@ -90,5 +90,5 @@ $kendo-taskboard-card-header-hover-text: $kendo-color-primary-darker !default;
 
 $kendo-taskboard-drag-placeholder-border-width: 1px !default;
 $kendo-taskboard-drag-placeholder-border-radius: $kendo-taskboard-card-border-radius !default;
-$kendo-taskboard-drag-placeholder-bg: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .1 ) !default;
+$kendo-taskboard-drag-placeholder-bg: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .1 ) !default;
 $kendo-taskboard-drag-placeholder-border: $kendo-component-border !default;
