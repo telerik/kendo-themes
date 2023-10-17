@@ -53,7 +53,7 @@ $kendo-tooltip-shadow: k-elevation(2) !default;
 
     @each $name, $color in $colors {
         $_theme: k-map-merge(( $name: (
-            color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-legacy( $color )),
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )),
             background-color: $color,
             border: $color,
         )), $_theme );
