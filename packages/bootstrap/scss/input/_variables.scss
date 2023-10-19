@@ -372,7 +372,7 @@ $kendo-picker-outline-border: rgba( $kendo-picker-outline-text, .5 ) !default;
 $kendo-picker-outline-hover-bg: $kendo-picker-outline-text !default;
 /// The text color of the outline hovered Picker components.
 /// @group picker
-$kendo-picker-outline-hover-text: if($kendo-new-colors, k-color( base ), k-contrast-color( $kendo-picker-outline-hover-bg )) !default;
+$kendo-picker-outline-hover-text: if($kendo-new-colors, k-color( base-subtle ), k-contrast-color( $kendo-picker-outline-hover-bg )) !default;
 /// The border color of the outline hovered Picker components.
 /// @group picker
 $kendo-picker-outline-hover-border: $kendo-picker-outline-hover-bg !default;

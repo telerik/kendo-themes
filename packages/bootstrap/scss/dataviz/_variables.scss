@@ -100,11 +100,11 @@ $kendo-chart-pane-title-font-weight: $kendo-font-weight-normal !default;
 
 /// The color of the Chart grid lines (major).
 /// @group charts
-$kendo-chart-major-lines: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
+$kendo-chart-major-lines: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .08 ) !default;
 
 /// The color of the Chart grid lines (minor).
 /// @group charts
-$kendo-chart-minor-lines: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 ) !default;
+$kendo-chart-minor-lines: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .04 ) !default;
 
 $kendo-chart-inactive: rgba( $kendo-body-text, .5 ) !default;
 $kendo-chart-area-opacity: .6 !default;
@@ -117,20 +117,20 @@ $kendo-chart-bg: $kendo-component-bg !default;
 $kendo-chart-text: $kendo-component-text !default;
 $kendo-chart-border: $kendo-component-border !default;
 
-$kendo-chart-crosshair-background: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$kendo-chart-crosshair-background: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .5 ) !default;
 $kendo-chart-crosshair-shared-tooltip-color: $kendo-chart-text !default;
-$kendo-chart-crosshair-shared-tooltip-background: k-try-shade( $kendo-chart-bg, 1 ) !default;
-$kendo-chart-crosshair-shared-tooltip-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08) !default;
+$kendo-chart-crosshair-shared-tooltip-background: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-chart-bg, 1 )) !default;
+$kendo-chart-crosshair-shared-tooltip-border: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ))), .08) !default;
 
-$kendo-chart-notes-background: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
-$kendo-chart-notes-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
-$kendo-chart-notes-lines: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$kendo-chart-notes-background: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .5 ) !default;
+$kendo-chart-notes-border: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .5 ) !default;
+$kendo-chart-notes-lines: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .5 ) !default;
 
-$kendo-chart-error-bars-background: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$kendo-chart-error-bars-background: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .5 ) !default;
 
 $kendo-chart-selection-handle-size: 22px !default;
-$kendo-chart-selection-border-color: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
-$kendo-chart-selection-shadow: inset 0 1px 7px rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .15) !default;
+$kendo-chart-selection-border-color: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .08 ) !default;
+$kendo-chart-selection-shadow: inset 0 1px 7px rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .15) !default;
 
 
 // TreeMap

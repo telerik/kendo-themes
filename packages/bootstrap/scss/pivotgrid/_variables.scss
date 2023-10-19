@@ -28,15 +28,15 @@ $kendo-pivotgrid-headers-bg: $kendo-component-header-bg !default;
 $kendo-pivotgrid-headers-text: $kendo-component-header-text !default;
 $kendo-pivotgrid-headers-border: $kendo-component-header-border !default;
 
-$kendo-pivotgrid-total-bg: k-try-shade( $kendo-pivotgrid-bg, 1 ) !default;
+$kendo-pivotgrid-total-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-pivotgrid-bg, 1 )) !default;
 $kendo-pivotgrid-total-text: $kendo-component-header-text !default;
 $kendo-pivotgrid-total-border: $kendo-component-header-border !default;
 
-$kendo-pivotgrid-hover-bg: k-color-darken( $kendo-pivotgrid-bg, 7% ) !default;
+$kendo-pivotgrid-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-color-darken( $kendo-pivotgrid-bg, 7% )) !default;
 $kendo-pivotgrid-hover-text: null !default;
 $kendo-pivotgrid-hover-border: null !default;
 
-$kendo-pivotgrid-selected-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-pivotgrid-selected-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 $kendo-pivotgrid-selected-text: null !default;
 $kendo-pivotgrid-selected-border: null !default;
 
@@ -105,7 +105,7 @@ $kendo-pivotgrid-alt-text: $kendo-grid-header-text !default;
 $kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
 
 $kendo-pivotgrid-container-bg: $kendo-component-header-bg !default;
-$kendo-pivotgrid-row-headers-bg: k-try-shade( $kendo-component-header-bg, .5 ) !default;
+$kendo-pivotgrid-row-headers-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-component-header-bg, .5 )) !default;
 
 $kendo-pivotgrid-button-bg: null !default;
 $kendo-pivotgrid-button-text: null !default;

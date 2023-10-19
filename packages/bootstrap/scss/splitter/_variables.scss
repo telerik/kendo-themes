@@ -18,7 +18,7 @@ $kendo-splitter-collapse-icon-padding-y: k-map-get( $kendo-spacing, .5 ) !defaul
 $kendo-splitbar-bg: $kendo-base-bg !default;
 $kendo-splitbar-text: $kendo-base-text !default;
 
-$kendo-splitbar-hover-bg: k-try-shade( $kendo-splitbar-bg, .5 ) !default;
+$kendo-splitbar-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-try-shade( $kendo-splitbar-bg, .5 )) !default;
 $kendo-splitbar-hover-text: $kendo-splitbar-text !default;
 
 $kendo-splitbar-selected-bg: $kendo-selected-bg !default;

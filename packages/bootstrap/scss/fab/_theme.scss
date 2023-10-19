@@ -80,10 +80,10 @@
     .k-fab-item:hover .k-fab-item-icon,
     .k-fab-item.k-hover .k-fab-item-icon {
         @include box-shadow( $kendo-fab-item-shadow );
-        outline: $kendo-fab-border-width $kendo-fab-item-outline-style if($kendo-new-colors, k-color( border ), k-try-darken( $kendo-fab-item-icon-border, 10% ));
+        outline: $kendo-fab-border-width $kendo-fab-item-outline-style if($kendo-new-colors, k-color( base-hover ), k-try-darken( $kendo-fab-item-icon-border, 10% ));
         outline-offset: -$kendo-fab-border-width;
-        border-color: if($kendo-new-colors, k-color( border ), k-color-darken( $kendo-fab-item-icon-border, 10% ));
-        color: if($kendo-new-colors, k-color( base-hover ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 7.5% ) ));
+        border-color: if($kendo-new-colors, k-color( base-hover ), k-color-darken( $kendo-fab-item-icon-border, 10% ));
+        color: if($kendo-new-colors, k-color( on-base ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 7.5% ) ));
         background-color: if($kendo-new-colors, k-color( base-hover ), k-color-darken( $kendo-fab-item-icon-bg, 7.5% ));
     }
 
@@ -99,10 +99,10 @@
     .k-fab-item:active .k-fab-item-icon,
     .k-fab-item.k-active .k-fab-item-icon {
         @include box-shadow( $kendo-fab-item-active-shadow );
-        outline: $kendo-fab-border-width solid if($kendo-new-colors, k-color( border-alt ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
+        outline: $kendo-fab-border-width solid if($kendo-new-colors, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
         outline-offset: -$kendo-fab-border-width;
-        border-color: if($kendo-new-colors, k-color( border-alt ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
-        color: if($kendo-new-colors, k-color( base-hover ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 10% ) ));
+        border-color: if($kendo-new-colors, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
+        color: if($kendo-new-colors, k-color( on-base ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 10% ) ));
         background-color: if($kendo-new-colors, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-bg, 10% ));
     }
 
@@ -114,7 +114,7 @@
         .k-fab-item-text,
         .k-fab-item-icon {
             @include box-shadow( $kendo-fab-item-disabled-shadow );
-            background-color: k-try-tint( $kendo-fab-item-bg, 8 );
+            background-color: if($kendo-new-colors, rgba( k-color( base, true ), .6 ), k-try-tint( $kendo-fab-item-bg, 8 ));
             color: k-try-tint( $kendo-fab-item-text, 8 );
         }
     }
