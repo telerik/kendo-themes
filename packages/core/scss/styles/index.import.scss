@@ -17,7 +17,6 @@
     @include kendo-core--styles--layout();
     @include kendo-core--styles--normalize();
     @include kendo-core--styles--base();
-    @include kendo-core--styles--loading();
     @include kendo-core--styles--selection();
     @include kendo-core--styles--scrollbar();
 }
