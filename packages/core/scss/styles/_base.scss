@@ -4,7 +4,7 @@
     .k-disabled,
     .k-widget[disabled],
     .k-disabled {
-        @include disabled-color(
+        @include disabled(
             $color: var( --kendo-disabled-text, #{$kendo-disabled-text}, inherit ),
             $bg: var( --kendo-disabled-bg, #{$kendo-disabled-bg}, inherit ),
             $border: var( --kendo-disabled-border, #{$kendo-disabled-border}, inherit ),

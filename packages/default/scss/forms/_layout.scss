@@ -119,7 +119,7 @@
         .k-form-field-disabled {
             .k-label,
             .k-form-label {
-                @include disabled( $kendo-disabled-styling );
+                @include disabled( $kendo-disabled-styling... );
             }
         }
 
