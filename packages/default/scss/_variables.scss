@@ -41,7 +41,6 @@ $kendo-icon-size-xxxl: calc( #{$kendo-icon-size} * 3 ) !default;
 
 $kendo-zindex-popup: 1 !default;
 $kendo-zindex-window: 2 !default;
-$kendo-zindex-loading: 100 !default;
 
 
 // Color settings
@@ -66,7 +65,3 @@ $kendo-disabled-styling: (
     filter: $kendo-disabled-filter
 ) !default;
 
-
-// Loading
-$kendo-loading-opacity: .3 !default;
-$kendo-zindex-loading: 100 !default;
