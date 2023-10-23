@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-chart-label-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size-sm, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size-sm, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font-size of the label of the chart component.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-chart-inactive-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-disabled-bg, initial )</code></td>
-    <td></td>
+    <td><code>var(--kendo-disabled-bg, initial)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The inactive background color of the chart component.</div></div>

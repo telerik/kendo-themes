@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-signature-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>250px</code></td>
-    <td></td>
+    <td><code>250px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the signature component.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-height</td>
-    <td></td>
+    <td>Number</td>
     <td><code>84px</code></td>
-    <td></td>
+    <td><code>84px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the signature component.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-maximized-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>750px</code></td>
-    <td></td>
+    <td><code>750px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default width of the maximized signature component.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-maximized-height</td>
-    <td></td>
+    <td>Number</td>
     <td><code>252px</code></td>
-    <td></td>
+    <td><code>252px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The default height of the maximized signature component.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-padding-x</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 1 )</code></td>
-    <td></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal paddings of the signature component.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-padding-y</td>
-    <td></td>
+    <td>Number</td>
     <td><code>$kendo-signature-padding-x</code></td>
-    <td></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical paddings of the signature component.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-disabled-opacity</td>
-    <td></td>
+    <td>Number</td>
     <td><code>.3</code></td>
-    <td></td>
+    <td><code>0.3</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the disabled signature component.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-line-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1px</code></td>
-    <td></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom-border width of the row line of the signature component.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-line-style</td>
-    <td></td>
+    <td>String</td>
     <td><code>dashed</code></td>
-    <td></td>
+    <td><code>dashed</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border style of the row line of the signature component.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-line-color</td>
-    <td></td>
+    <td>Color</td>
     <td><code>rgba( k-get-theme-color( info, 100 ), .4 )</code></td>
-    <td></td>
+    <td><span class="color-preview" style="background-color: rgba(10, 126, 255, 0.4)"></span><code>rgba(10, 126, 255, 0.4)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the row line of the signature component.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-line-disabled-color</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-60 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-60, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the row line of the disabled signature component.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-line-size</td>
-    <td></td>
+    <td>Calculation</td>
     <td><code>calc( 100% - 2 * #{$kendo-signature-padding-x} )</code></td>
-    <td></td>
+    <td><code>calc(100% - 2 * 0.25rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the row line of the signature component.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-line-bottom-offset</td>
-    <td></td>
+    <td>Number</td>
     <td><code>33%</code></td>
-    <td></td>
+    <td><code>33%</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom offset of the row line of the signature component.</div></div>
@@ -159,7 +159,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-sizes</td>
-    <td></td>
+    <td>Map</td>
     <td><code>(
     sm: (
         padding-x: $kendo-signature-sm-padding-x,
@@ -177,7 +177,7 @@ The following table lists the available variables for customization.
         line-size: $kendo-signature-lg-line-size
     )
 )</code></td>
-    <td></td>
+    <td><code>(sm: (padding-x: 0.25rem, padding-y: 0.125rem, line-size: calc(100% - 2 * 0.25rem)), md: (padding-x: 0.25rem, padding-y: 0.25rem, line-size: calc(100% - 2 * 0.25rem)), lg: (padding-x: 0.25rem, padding-y: 0.375rem, line-size: calc(100% - 2 * 0.25rem)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the signature component.</div></div>
@@ -185,9 +185,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-actions-gap</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 1 )</code></td>
-    <td></td>
+    <td><code>0.25rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between individual action items of the signature component</div></div>
@@ -195,9 +195,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-maximized-line-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>3px</code></td>
-    <td></td>
+    <td><code>3px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The bottom-border width of the row line of the maximized signature component.</div></div>
@@ -205,9 +205,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-signature-lg-min-height</td>
-    <td></td>
+    <td>Number</td>
     <td><code>110px</code></td>
-    <td></td>
+    <td><code>110px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The min-height of the large size signature component.</div></div>

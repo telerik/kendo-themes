@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-searchbox-icon-color</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( primary-100 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-primary-100, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the searchbox icon.</div></div>

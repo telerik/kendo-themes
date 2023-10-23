@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-avatar-border-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1px</code></td>
-    <td></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Avatar.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-font-family</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-family, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-family, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Avatar.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Avatar.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-line-height</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-line-height, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-line-height, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Avatar.</div></div>
@@ -69,13 +69,13 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-sizes</td>
-    <td></td>
+    <td>Map</td>
     <td><code>(
     sm: map.get( $kendo-spacing, 4 ),
     md: map.get( $kendo-spacing, 8 ),
     lg: map.get( $kendo-spacing, 16 )
 )</code></td>
-    <td></td>
+    <td><code>(sm: 1rem, md: 2rem, lg: 4rem)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Avatar.</div></div>
@@ -83,7 +83,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-brand-colors</td>
-    <td></td>
+    <td>Map</td>
     <td><code>(
     primary: primary,
     error: error,
@@ -92,7 +92,7 @@ The following table lists the available variables for customization.
     secondary: neutral,
     tertiary: tertiary,
  )</code></td>
-    <td></td>
+    <td><code>(primary: primary, error: error, success: success, info: info, secondary: neutral, tertiary: tertiary)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme variations for the Avatar.</div></div>
@@ -100,9 +100,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-theme-colors</td>
-    <td></td>
+    <td>Map</td>
     <td><code>()</code></td>
-    <td></td>
+    <td><code>(solid: (primary: (bg: var(--kendo-primary-100, inherit), text: #ffffff, border: var(--kendo-primary-100, inherit)), error: (bg: var(--kendo-error-100, inherit), text: #ffffff, border: var(--kendo-error-100, inherit)), success: (bg: var(--kendo-success-100, inherit), text: #ffffff, border: var(--kendo-success-100, inherit)), info: (bg: var(--kendo-info-100, inherit), text: #ffffff, border: var(--kendo-info-100, inherit)), secondary: (bg: var(--kendo-neutral-100, inherit), text: #ffffff, border: var(--kendo-neutral-100, inherit)), tertiary: (bg: var(--kendo-tertiary-100, inherit), text: #ffffff, border: var(--kendo-tertiary-100, inherit)), warning: (bg: var(--kendo-warning-100, inherit), text: var(--kendo-neutral-160, inherit), border: var(--kendo-warning-100, inherit)), dark: (bg: var(--kendo-neutral-160, inherit), text: #ffffff, border: var(--kendo-neutral-160, inherit)), light: (bg: var(--kendo-neutral-50, inherit), text: #ffffff, border: var(--kendo-neutral-50, inherit))), outline: (primary: (bg: #ffffff, text: var(--kendo-primary-100, inherit), border: var(--kendo-primary-100, inherit)), error: (bg: #ffffff, text: var(--kendo-error-100, inherit), border: var(--kendo-error-100, inherit)), success: (bg: #ffffff, text: var(--kendo-success-100, inherit), border: var(--kendo-success-100, inherit)), info: (bg: #ffffff, text: var(--kendo-info-100, inherit), border: var(--kendo-info-100, inherit)), secondary: (bg: #ffffff, text: var(--kendo-neutral-100, inherit), border: var(--kendo-neutral-100, inherit)), tertiary: (bg: #ffffff, text: var(--kendo-tertiary-100, inherit), border: var(--kendo-tertiary-100, inherit)), warning: (bg: #ffffff, text: var(--kendo-warning-100, inherit), border: var(--kendo-warning-100, inherit)), dark: (bg: #ffffff, text: var(--kendo-neutral-160, inherit), border: var(--kendo-neutral-160, inherit)), light: (bg: #ffffff, text: var(--kendo-neutral-50, inherit), border: var(--kendo-neutral-50, inherit))))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The theme colors map for the Avatar variations.</div></div>

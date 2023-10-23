@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-pager-padding-x</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Pager.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-sm-padding-x</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 1.5 )</code></td>
-    <td></td>
+    <td><code>0.375rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the small Pager.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-md-padding-x</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the medium Pager.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-lg-padding-x</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 2.5 )</code></td>
-    <td></td>
+    <td><code>0.625rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the large Pager.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-padding-y</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Pager.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-sm-padding-y</td>
-    <td></td>
+    <td>Number</td>
     <td><code>$kendo-pager-sm-padding-x</code></td>
-    <td></td>
+    <td><code>0.375rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the small Pager.</div></div>
@@ -89,9 +89,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-md-padding-y</td>
-    <td></td>
+    <td>Number</td>
     <td><code>$kendo-pager-md-padding-x</code></td>
-    <td></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the medium Pager.</div></div>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-lg-padding-y</td>
-    <td></td>
+    <td>Number</td>
     <td><code>$kendo-pager-lg-padding-x</code></td>
-    <td></td>
+    <td><code>0.625rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the large Pager.</div></div>
@@ -109,9 +109,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-border-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>1px</code></td>
-    <td></td>
+    <td><code>1px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the Pager.</div></div>
@@ -119,9 +119,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-font-family</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-family, normal )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-family, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Pager.</div></div>
@@ -129,9 +129,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-font-size</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-font-size, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-font-size, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Pager.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-line-height</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-line-height, normal )</code></td>
-    <td></td>
+    <td><code>var(--kendo-line-height, normal)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Pager.</div></div>
@@ -149,9 +149,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-10 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-10, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Pager.</div></div>
@@ -159,9 +159,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-text, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-text, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pager.</div></div>
@@ -169,9 +169,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-component-border, inherit )</code></td>
-    <td></td>
+    <td><code>var(--kendo-component-border, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Pager.</div></div>
@@ -179,9 +179,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-focus-bg</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-pager-bg, #{$kendo-pager-bg})</code></td>
-    <td></td>
+    <td><code>var(--kendo-pager-bg, var(--kendo-neutral-10, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the focused Pager.</div></div>
@@ -189,9 +189,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-focus-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>var( --kendo-pager-text, #{$kendo-pager-text})</code></td>
-    <td></td>
+    <td><code>var(--kendo-pager-text, var(--kendo-component-text, inherit))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Pager.</div></div>
@@ -199,9 +199,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-focus-border</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-130 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-130, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the focused Pager.</div></div>
@@ -209,9 +209,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-item-border-radius</td>
-    <td></td>
+    <td>Number</td>
     <td><code>0</code></td>
-    <td></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Pager items.</div></div>
@@ -219,9 +219,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-item-spacing</td>
-    <td></td>
+    <td>Null</td>
     <td><code>null</code></td>
-    <td></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing around the Pager items.</div></div>
@@ -229,9 +229,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-sm-item-group-spacing</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the item groups of the small Pager.</div></div>
@@ -239,9 +239,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-md-item-group-spacing</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the item groups of the medium Pager.</div></div>
@@ -249,9 +249,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-lg-item-group-spacing</td>
-    <td></td>
+    <td>Number</td>
     <td><code>map.get( $kendo-spacing, 2 )</code></td>
-    <td></td>
+    <td><code>0.5rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the item groups of the large Pager.</div></div>
@@ -259,9 +259,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-sizes-label-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-190 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-190, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pagers' sizes label.</div></div>
@@ -269,9 +269,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-info-label-text</td>
-    <td></td>
+    <td>String</td>
     <td><code>k-get-theme-color-var( neutral-130 )</code></td>
-    <td></td>
+    <td><code>var(--kendo-neutral-130, inherit)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Pagers' info label.</div></div>
@@ -279,9 +279,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-input-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>5em</code></td>
-    <td></td>
+    <td><code>5em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Inputs in the Pager.</div></div>
@@ -289,9 +289,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-dropdown-width</td>
-    <td></td>
+    <td>Number</td>
     <td><code>5em</code></td>
-    <td></td>
+    <td><code>5em</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the DropDowns in the Pager.</div></div>
@@ -299,7 +299,7 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-pager-sizes</td>
-    <td></td>
+    <td>Map</td>
     <td><code>(
     sm: (
         padding-x: $kendo-pager-sm-padding-x,
@@ -317,7 +317,7 @@ The following table lists the available variables for customization.
         item-group-spacing: $kendo-pager-lg-item-group-spacing
     )
 )</code></td>
-    <td></td>
+    <td><code>(sm: (padding-x: 0.375rem, padding-y: 0.375rem, item-group-spacing: 0.5rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, item-group-spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, item-group-spacing: 0.5rem))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes map of the Pager.</div></div>
