@@ -23,43 +23,43 @@
     }
 
     // Text selection
-    .k-text-selection {
-        ::selection {
-            background-color: $kendo-color-primary;
-            color: $kendo-color-primary-contrast;
-        }
-    }
+    // .k-text-selection {
+    //     ::selection {
+    //         background-color: k-get-theme-color-var( primary-100, #{$kendo-color-primary} );
+    //         color: $kendo-color-primary-contrast;
+    //     }
+    // }
 
     // Panels
-    .k-block,
-    .k-panel {
-        @include border-radius( $kendo-border-radius-md );
-        @include fill(
-            var( --kendo-component-text, #{$kendo-component-text}, inherit ),
-            var( --kendo-component-bg, #{$kendo-component-bg}, inherit ),
-            var( --kendo-component-border, #{$kendo-component-border}, inherit )
-        );
-        padding: 0;
-        border-width: 1px;
-        border-style: solid;
-        box-sizing: border-box;
+    // .k-block,
+    // .k-panel {
+    //     @include border-radius( var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) );
+    //     @include fill(
+    //         var( --kendo-component-text, #{$kendo-component-text}, inherit ),
+    //         var( --kendo-component-bg, #{$kendo-component-bg}, inherit ),
+    //         var( --kendo-component-border, #{$kendo-component-border}, inherit )
+    //     );
+    //     padding: 0;
+    //     border-width: 1px;
+    //     border-style: solid;
+    //     box-sizing: border-box;
 
-        > .k-header {
-            @include border-top-radius( $kendo-border-radius-md );
-            @include fill(
-                var( --kendo-component-header-text, #{$kendo-component-header-text}, inherit ),
-                var( --kendo-component-header-bg, #{$kendo-component-header-bg}, inherit ),
-                var( --kendo-component-header-border, #{$kendo-component-header-border}, inherit ),
-                var( --kendo-component-header-gradient, #{$kendo-component-header-gradient}, inherit )
-            );
-            padding-inline: k-map-get( $kendo-spacing, 2 );
-            padding-block: k-map-get( $kendo-spacing, 1 );
-        }
-        > .k-content {
-            padding-inline: k-map-get( $kendo-spacing, 2 );
-            padding-block: k-map-get( $kendo-spacing, 1 );
-        }
-    }
+    //     > .k-header {
+    //         @include border-top-radius( var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) );
+    //         @include fill(
+    //             var( --kendo-component-header-text, #{$kendo-component-header-text}, inherit ),
+    //             var( --kendo-component-header-bg, #{$kendo-component-header-bg}, inherit ),
+    //             var( --kendo-component-header-border, #{$kendo-component-header-border}, inherit ),
+    //             var( --kendo-component-header-gradient, #{$kendo-component-header-gradient}, inherit )
+    //         );
+    //         padding-inline: k-map-get( $kendo-spacing, 2 );
+    //         padding-block: k-map-get( $kendo-spacing, 1 );
+    //     }
+    //     > .k-content {
+    //         padding-inline: k-map-get( $kendo-spacing, 2 );
+    //         padding-block: k-map-get( $kendo-spacing, 1 );
+    //     }
+    // }
     .k-content {
         @include fill(
             var( --kendo-component-text, #{$kendo-component-text}, inherit ),
