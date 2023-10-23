@@ -39,7 +39,10 @@ $_default-elevation: (
     )
 ) !default;
 
+/// The global default Elevation map.
+/// @group elevation
 $kendo-elevation: $_default-elevation !default;
+
 $kendo-elevation: k-map-merge($_default-elevation, $kendo-elevation);
 
 @function k-shadow-filter($shadow) {
