@@ -5,7 +5,8 @@
 @import "./_normalize.scss";
 @import "./_base.scss";
 @import "./_selection.scss";
-@import "./scrollbar.scss";
+@import "./_scrollbar.scss";
+@import "./_resizing.scss";
 @import "./_colors.scss";
 
 @mixin kendo-core--styles() {
@@ -18,4 +19,5 @@
     @include kendo-core--styles--base();
     @include kendo-core--styles--selection();
     @include kendo-core--styles--scrollbar();
+    @include kendo-core--styles--resizing();
 }
