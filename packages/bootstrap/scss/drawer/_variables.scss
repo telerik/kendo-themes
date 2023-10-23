@@ -36,5 +36,5 @@ $kendo-drawer-focus-shadow: inset 0 0 0 2px rgba( black, .15 ) !default;
 
 $kendo-drawer-selected-bg: $kendo-selected-bg !default;
 $kendo-drawer-selected-text: $kendo-selected-text !default;
-$kendo-drawer-selected-hover-bg: k-try-shade( $kendo-selected-bg, 1 ) !default;
+$kendo-drawer-selected-hover-bg: if($kendo-new-colors, k-color( primary-hover ), k-try-shade( $kendo-selected-bg, 1 )) !default;
 $kendo-drawer-selected-hover-text: $kendo-selected-text !default;
