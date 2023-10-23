@@ -51,9 +51,6 @@
 
 @forward "./color-system/swatch-legacy";
 
-// Helpers
-@use "./helpers";
-
 // Module System
 @use "./module-system/" as module;
 

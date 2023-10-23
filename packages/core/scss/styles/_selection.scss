@@ -1,4 +1,6 @@
 @mixin kendo-core--styles--selection() {
+
+    // Marquee
     .k-marquee {
         position: absolute;
         z-index: 100000;
@@ -14,12 +16,13 @@
     }
 
     .k-marquee-color {
-        color: $kendo-selected-text;
+        color: k-get-theme-color-var( neutral-160, #{$kendo-selected-text} );
         background-color: k-get-theme-color-var( primary-60, #{$kendo-selected-bg} );
         border-color: k-get-theme-color-var( primary-100, #{$kendo-selected-border} );
         opacity: .6;
     }
     .k-marquee-text {
-        color: $kendo-selected-text;
+        color: k-get-theme-color-var( neutral-160, #{$kendo-selected-text} );
     }
+
 }
