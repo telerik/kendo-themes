@@ -1,0 +1,5 @@
+@import "@progress/kendo-theme-default/scss/time-marker/_layout.scss";
+
+@mixin kendo-time-marker--layout() {
+    @include kendo-time-marker--layout-base();
+}

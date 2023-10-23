@@ -1,5 +1,4 @@
 @import "./core/_index.scss";
-@import "./common/_index.scss";
 
 
 // Typography and utils
@@ -31,6 +30,7 @@
 @import "./loader/_index.scss";
 // @import "./loading/_index.scss";
 @import "./skeleton/_index.scss";
+@import "./time-marker/_index.scss";
 
 
 // Form helpers
@@ -203,6 +203,7 @@
     @include kendo-loader--styles();
     @include kendo-skeleton--styles();
     @include kendo-tooltip--styles();
+    @include kendo-time-marker--styles();
 
 
     // Form helpers
