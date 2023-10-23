@@ -38,7 +38,7 @@ $kendo-dropzone-border: $kendo-component-border !default;
 $kendo-dropzone-icon-spacing: k-map-get( $kendo-spacing, 6 ) !default;
 /// The text color of the DropZone icon.
 /// @group dropzone
-$kendo-dropzone-icon-text: k-try-tint( $kendo-dropzone-text, 8 ) !default;
+$kendo-dropzone-icon-text: if($kendo-new-colors, k-color( subtle ), k-try-tint( $kendo-dropzone-text, 8 )) !default;
 /// The text color of the hovered DropZone icon.
 /// @group dropzone
 $kendo-dropzone-icon-hover-text: $kendo-color-primary !default;

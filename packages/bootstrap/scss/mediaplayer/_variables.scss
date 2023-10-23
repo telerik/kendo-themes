@@ -13,4 +13,4 @@ $kendo-media-player-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-media-player-titlebar-bg: null !default;
 $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;
 $kendo-media-player-titlebar-border: null !default;
-$kendo-media-player-titlebar-gradient: rgba( $kendo-media-player-text, .7 ), rgba( $kendo-media-player-text, 0 ) !default;
+$kendo-media-player-titlebar-gradient: if($kendo-new-colors, ( rgba( k-color( on-app-surface, true ), .7 ), rgba( k-color( on-app-surface, true ), 0 ) ), ( rgba( $kendo-media-player-text, .7 ), rgba( $kendo-media-player-text, 0 ) )) !default;
