@@ -1,0 +1,21 @@
+@use "./_variables.scss" as *;
+
+@mixin kendo-time-marker--theme() {
+
+    .k-current-time {
+        background: var( --kendo-current-time-color, #{$kendo-current-time-color} );
+
+        &.k-current-time-arrow-left {
+            border-right-color: var( --kendo-current-time-color, #{$kendo-current-time-color} );
+        }
+
+        &.k-current-time-arrow-right {
+            border-left-color: var( --kendo-current-time-color, #{$kendo-current-time-color} );
+        }
+
+        &.k-current-time-arrow-down {
+            border-top-color: var( --kendo-current-time-color, #{$kendo-current-time-color} );
+        }
+    }
+
+}
