@@ -199,7 +199,8 @@ $_kendo-dependencies: (
         "splitter",
         "treelist",
         "validator",
-        "window"
+        "window",
+        "time-marker"
     ),
     grid: (
         "actions",
@@ -339,7 +340,8 @@ $_kendo-dependencies: (
         "dialog",
         "dropdown-list",
         "toolbar",
-        "tooltip"
+        "tooltip",
+        "time-marker"
     ),
     scroller: (),
     scrollview: (
@@ -411,6 +413,7 @@ $_kendo-dependencies: (
     tile-layout: (
         "card"
     ),
+    time-marker: (),
     time-duration-picker: (
         "button",
         "icon",

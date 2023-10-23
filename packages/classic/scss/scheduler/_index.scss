@@ -13,12 +13,12 @@ $_kendo-module-meta: (
         "dropdown-list",
         "icon",
         "tooltip",
+        "time-marker"
     )
 );
 
 
 // Dependencies
-@import "../common/_index.scss";
 @import "../icons/_index.scss";
 @import "../adaptive/_index.scss";
 @import "../button/_index.scss";
