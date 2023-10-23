@@ -1,7 +1,7 @@
 ---
 title: Customizing Elevation
-description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
-slug: variables_kendothemebootstrap_elevation
+description: "Refer to the list of the Kendo UI Theme Core theme variables available for customization."
+slug: variables_kendothemecore_elevation
 position: 9
 ---
 
@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
     <td>$kendo-elevation</td>
     <td>Map</td>
     <td><code>$_default-elevation</code></td>
-    <td><code>(1: ((0px 1px 2px rgba(0, 0, 0, 0.038),)), 2: ((0px 2px 7px rgba(0, 0, 0, 0.075),)), 3: ((0px 4px 10px rgba(0, 0, 0, 0.1),)), 4: ((0px 6px 13px rgba(0, 0, 0, 0.125),)), 5: ((0px 8px 16px 0px rgba(0, 0, 0, 0.15),)), 6: ((0px 11px 24px 0px rgba(0, 0, 0, 0.159),)), 7: ((0px 14px 36px 0px rgba(0, 0, 0, 0.168),)), 8: ((0px 16px 48px 0px rgba(0, 0, 0, 0.176),)), 9: ((0px 18px 60px 0px rgba(0, 0, 0, 0.185),)))</code></td>
+    <td><code>(1: (0 2px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.12)), 2: (0 4px 6px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.12)), 3: (0 6px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12)), 4: (0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12)), 5: (0 10px 12px rgba(0, 0, 0, 0.16), 0 4px 16px rgba(0, 0, 0, 0.12)), 6: (0 12px 14px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.12)), 7: (0 14px 16px rgba(0, 0, 0, 0.24), 0 4px 16px rgba(0, 0, 0, 0.12)), 8: (0 16px 18px rgba(0, 0, 0, 0.28), 0 4px 16px rgba(0, 0, 0, 0.12)), 9: (0 32px 34px rgba(0, 0, 0, 0.32), 0 4px 16px rgba(0, 0, 0, 0.12)))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Elevation map.</div></div>
