@@ -1,3 +1,4 @@
+@forward "./index.scss";
 @use "./index.scss" as kendo-theme;
 
 @include kendo-theme.config();
