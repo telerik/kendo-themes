@@ -65,10 +65,17 @@ function writeSwatches( cwds, options ) {
 
 function swatchJsonTransformer( json ) {
     const variables = [];
+    const colorsMap = [];
 
     json.groups.forEach( (group) => {
-        for ( const [ name, meta ] of Object.entries(group.variables) ) {
-            variables.push({ name: name, value: meta.value });
+        if ( group.colorsMap ) {
+            for ( const [ name, meta ] of Object.entries(group.colorsMap) ) {
+                colorsMap.push({ name: name, value: meta.value });
+            }
+        } else {
+            for ( const [ name, meta ] of Object.entries(group.variables) ) {
+                variables.push({ name: name, value: meta.value });
+            }
         }
     });
 
@@ -76,8 +83,17 @@ function swatchJsonTransformer( json ) {
         modern: () => {
             const sassContent = [];
 
-            sassContent.push(`@use "../scss/index.scss" as kendo-theme;`);
-            sassContent.push(variables.map( (variable) => `kendo-theme.$${variable.name}: ${variable.value};`).join( '\n' ));
+            sassContent.push(`@use "sass:map";`);
+
+            sassContent.push(`@use "../scss/index.scss" as kendo-theme with (`);
+
+            sassContent.push(`\t$kendo-colors: (`);
+            sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
+            sassContent.push(`\t),`);
+
+            sassContent.push(variables.map( (variable) => `\t$${variable.name}: ${variable.value},`).join( '\n' ));
+            sassContent.push(`);\n`);
+
             sassContent.push(`@include kendo-theme.config();`);
             sassContent.push(`@include kendo-theme.styles();`);
 
@@ -85,6 +101,10 @@ function swatchJsonTransformer( json ) {
         },
         legacy: () => {
             const sassContent = [];
+
+            sassContent.push(`\n$kendo-colors: (`);
+            sassContent.push(colorsMap.map( (color) => `\t${color.name}: ${color.value},`).join( '\n' ));
+            sassContent.push(`);\n`);
 
             sassContent.push(variables.map( (variable) => `$${variable.name}: ${variable.value};`).join( '\n' ));
             sassContent.push(`@import "all.scss";`);
