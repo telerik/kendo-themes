@@ -17,6 +17,16 @@
         {
             "name": "New theme colors",
             "colorsMap": {
+                "on-app-surface": {
+                    "name": "On App Surface",
+                    "type": "color",
+                    "value": "#000000"
+                },
+                "base-hover": {
+                    "name": "Base Hover",
+                    "type": "color",
+                    "value": "#f5f5f5"
+                },
                 "primary-subtle": {
                     "name": "Primary Subtle",
                     "type": "color",
