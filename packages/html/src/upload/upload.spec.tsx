@@ -61,7 +61,7 @@ export const Upload = (
             { actions &&
                 <ActionButtons alignment="end" orientation="horizontal">
                     <Button className="k-clear-selected">Clear</Button>
-                    <Button themeColor="primary" className="k-upload-selected">Update</Button>
+                    <Button themeColor="primary" className="k-upload-selected">Upload</Button>
                 </ActionButtons>
             }
         </div>
