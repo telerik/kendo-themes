@@ -315,7 +315,7 @@
         height: $kendo-slider-draghandle-size;
 
         .k-slider-transitions.k-slider-horizontal & {
-            transition: left $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+            transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
         }
 
         .k-slider-transitions.k-slider-vertical & {
