@@ -60,13 +60,13 @@
     //         padding-block: k-map-get( $kendo-spacing, 1 );
     //     }
     // }
-    .k-content {
-        @include fill(
-            var( --kendo-component-text, #{$kendo-component-text}, inherit ),
-            var( --kendo-component-bg, #{$kendo-component-bg}, inherit ),
-            var( --kendo-component-border, #{$kendo-component-border}, inherit )
-        );
-    }
+    // .k-content {
+    //     @include fill(
+    //         var( --kendo-component-text, #{$kendo-component-text}, inherit ),
+    //         var( --kendo-component-bg, #{$kendo-component-bg}, inherit ),
+    //         var( --kendo-component-border, #{$kendo-component-border}, inherit )
+    //     );
+    // }
 
     // Horizontal line
     .k-hr {
