@@ -13,7 +13,7 @@ $kendo-timeline-mobile-spacing-y: 16px !default;
 $kendo-timeline-track-arrow-width: 30px !default;
 $kendo-timeline-track-arrow-height: 30px !default;
 
-$kendo-timeline-track-arrow-disabled-bg: if($kendo-new-colors, rgba( k-color( base-subtle, true ), .6 ), k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% )) !default;
+$kendo-timeline-track-arrow-disabled-bg: if($kendo-new-colors, rgba( k-color( base, true ), .6 ), k-true-mix( $kendo-button-bg, $kendo-body-bg, 65% )) !default;
 $kendo-timeline-track-arrow-disabled-text: if($kendo-new-colors, rgba( k-color( on-base, true ), .6 ), k-true-mix( $kendo-button-text, $kendo-body-bg, 65% )) !default;
 $kendo-timeline-track-arrow-disabled-border: if($kendo-new-colors, rgba( k-color( border, true ), .15 ), k-true-mix( #000000, $kendo-body-bg, 4.8% )) !default;
 

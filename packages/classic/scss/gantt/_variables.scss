@@ -12,12 +12,12 @@ $kendo-gantt-treelist-bg: null !default;
 $kendo-gantt-treelist-text: null !default;
 $kendo-gantt-treelist-border: null !default;
 
-$kendo-gantt-nonwork-bg: rgba( k-contrast-color( $kendo-gantt-bg ), .025 ) !default;
+$kendo-gantt-nonwork-bg: if($kendo-new-colors, rgba( k-color( on-base, true ), .03 ), rgba( k-contrast-color( $kendo-gantt-bg ), .025 )) !default;
 $kendo-gantt-nonwork-text: null !default;
 $kendo-gantt-nonwork-border: null !default;
 
 $kendo-gantt-line-size: 2px !default;
-$kendo-gantt-line-fill: k-contrast-color( $kendo-gantt-bg ) !default;
+$kendo-gantt-line-fill: if($kendo-new-colors, k-color( on-base ), k-contrast-color( $kendo-gantt-bg )) !default;
 $kendo-gantt-line-selected-fill: $kendo-color-primary !default;
 
 $kendo-gantt-dot-size: 8px !default;

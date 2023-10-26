@@ -62,8 +62,7 @@ $kendo-panelbar-header-selected-hover-focus-text: null !default;
 $kendo-panelbar-header-selected-hover-focus-border: null !default;
 $kendo-panelbar-header-selected-hover-focus-gradient: null !default;
 
-
-$kendo-panelbar-item-hover-bg: k-try-shade( $kendo-panelbar-bg, .5 ) !default;
+$kendo-panelbar-item-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-try-shade( $kendo-panelbar-bg, .5 )) !default;
 $kendo-panelbar-item-hover-text: null !default;
 $kendo-panelbar-item-hover-border: null !default;
 $kendo-panelbar-item-hover-gradient: null !default;

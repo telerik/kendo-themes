@@ -227,14 +227,14 @@ $kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
 $kendo-grid-selection-aggregates-font-weight: $kendo-font-weight-bold !default;
 
 $kendo-grid-sorted-icon-spacing: calc( #{$kendo-padding-md-x} - 1px ) !default;
-$kendo-grid-sorted-bg: rgba( k-contrast-color( $kendo-grid-bg ), .02 ) !default;
+$kendo-grid-sorted-bg: if($kendo-new-colors, rgba( k-color( dark, true ), .03 ), rgba( k-contrast-color( $kendo-grid-bg ), .02 )) !default;
 $kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
 $kendo-grid-sorting-index-font-size: $kendo-font-size-sm !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
 $kendo-grid-sorting-index-spacing-y: k-math-div( $kendo-icon-spacing, 2 ) !default;
 $kendo-grid-sorting-index-spacing-x: -$kendo-grid-sorting-index-spacing-y !default;
 
-$kendo-grid-grouping-row-bg: k-try-shade( $kendo-grid-bg, 1 ) !default;
+$kendo-grid-grouping-row-bg: if($kendo-new-colors, k-color( base ), k-try-shade( $kendo-grid-bg, 1 )) !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
 $kendo-grid-focus-shadow: $kendo-table-focus-shadow !default;
@@ -311,7 +311,7 @@ $kendo-grid-group-footer-second-cell-border: 1px !default;
 
 /// Background color of the grid row resize indicator
 /// @group grid
-$kendo-grid-row-resizer-hover-bg: rgba( k-contrast-color( $kendo-grid-bg ), .12 ) !default;
+$kendo-grid-row-resizer-hover-bg: if($kendo-new-colors, rgba( k-color( on-base, true ), .2 ), rgba( k-contrast-color( $kendo-grid-bg ), .12 )) !default;
 /// Active background color of the grid row resize indicator
 /// @group grid
 $kendo-grid-row-resizer-active-bg: $kendo-color-primary !default;

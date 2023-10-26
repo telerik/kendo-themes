@@ -47,10 +47,9 @@ $kendo-expander-header-bg: transparent !default;
 /// The border color of the ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-border: null !default;
-
 /// The background color of the hovered ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-hover-bg: k-color-shade( $kendo-expander-bg, 1 ) !default;
+$kendo-expander-header-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-color-shade( $kendo-expander-bg, 1 )) !default;
 /// The background color of the focused ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-focus-bg: null !default;
