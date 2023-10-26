@@ -44,34 +44,34 @@
     $kendo-hover-border: $kendo-base-border;
     $kendo-hover-gradient: null;
     $kendo-selected-bg: $kendo-color-primary;
-    // $kendo-selected-text: $kendo-color-primary-contrast;
-    // $kendo-selected-border: k-color( primary );
-    // $kendo-selected-gradient: $kendo-base-gradient;
-    // $kendo-selected-hover-bg: k-color( primary-hover );
-    // $kendo-selected-hover-text: $kendo-selected-text;
-    // $kendo-selected-hover-border: k-color( primary-hover );
-    // $kendo-selected-hover-gradient: $kendo-base-gradient;
-    // $kendo-disabled-text: k-color( subtle );
-    // $kendo-component-header-bg: $kendo-base-bg;
-    // $kendo-component-header-text: $kendo-base-text;
-    // $kendo-component-header-border: $kendo-base-border;
-    // $kendo-component-header-gradient: $kendo-base-gradient;
-    // $kendo-invalid-bg: null;
-    // $kendo-invalid-text: $kendo-color-error;
-    // $kendo-invalid-border: $kendo-color-error;
-    // $kendo-invalid-shadow: null;
+    $kendo-selected-text: $kendo-color-primary-contrast;
+    $kendo-selected-border: k-color( primary );
+    $kendo-selected-gradient: $kendo-base-gradient;
+    $kendo-selected-hover-bg: k-color( primary-hover );
+    $kendo-selected-hover-text: $kendo-selected-text;
+    $kendo-selected-hover-border: k-color( primary-hover );
+    $kendo-selected-hover-gradient: $kendo-base-gradient;
+    $kendo-disabled-text: k-color( subtle );
+    $kendo-component-header-bg: $kendo-base-bg;
+    $kendo-component-header-text: $kendo-base-text;
+    $kendo-component-header-border: $kendo-base-border;
+    $kendo-component-header-gradient: $kendo-base-gradient;
+    $kendo-invalid-bg: null;
+    $kendo-invalid-text: $kendo-color-error;
+    $kendo-invalid-border: $kendo-color-error;
+    $kendo-invalid-shadow: null;
 
-    // // We probably wont be able to use this, but leaving it for now
-    // $kendo-theme-colors: (
-    //     "primary": $kendo-color-primary,
-    //     "secondary": $kendo-color-secondary,
-    //     "tertiary": $kendo-color-tertiary,
-    //     "info": $kendo-color-info,
-    //     "success": $kendo-color-success,
-    //     "warning": $kendo-color-warning,
-    //     "error": $kendo-color-error,
-    //     "dark": $kendo-color-dark,
-    //     "light": $kendo-color-light,
-    //     "inverse": $kendo-color-inverse,
-    // );
+    // We probably wont be able to use this, but leaving it for now
+    $kendo-theme-colors: (
+        "primary": $kendo-color-primary,
+        "secondary": $kendo-color-secondary,
+        "tertiary": $kendo-color-tertiary,
+        "info": $kendo-color-info,
+        "success": $kendo-color-success,
+        "warning": $kendo-color-warning,
+        "error": $kendo-color-error,
+        "dark": $kendo-color-dark,
+        "light": $kendo-color-light,
+        "inverse": $kendo-color-inverse,
+    );
 }
