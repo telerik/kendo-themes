@@ -65,14 +65,14 @@ $kendo-pager-line-height: $kendo-line-height-md !default;
 $kendo-pager-bg: $kendo-component-bg !default;
 /// The text color of the Pager.
 /// @group pager
-$kendo-pager-text: if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ) !default;
+$kendo-pager-text: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text )) !default;
 /// The border color of the Pager.
 /// @group pager
 $kendo-pager-border: $kendo-component-border !default;
 
 /// The background color of the focused Pager.
 /// @group pager
-$kendo-pager-focus-bg: k-try-shade( $kendo-pager-bg, .5 ) !default;
+$kendo-pager-focus-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-pager-bg, .5 )) !default;
 /// The box shadow of the focused Pager.
 /// @group pager
 $kendo-pager-focus-shadow: null !default;

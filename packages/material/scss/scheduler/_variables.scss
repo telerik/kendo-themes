@@ -8,12 +8,12 @@ $kendo-scheduler-bg: $kendo-component-bg !default;
 $kendo-scheduler-text: $kendo-component-text !default;
 $kendo-scheduler-border: $kendo-component-border !default;
 
-$kendo-scheduler-toolbar-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
+$kendo-scheduler-toolbar-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
 $kendo-scheduler-toolbar-text: null !default;
 $kendo-scheduler-toolbar-border: null !default;
 $kendo-scheduler-toolbar-gradient: null !default;
 
-$kendo-scheduler-footer-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
+$kendo-scheduler-footer-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
 $kendo-scheduler-footer-text: null !default;
 $kendo-scheduler-footer-border: null !default;
 $kendo-scheduler-footer-gradient: null !default;
@@ -23,7 +23,7 @@ $kendo-scheduler-event-border-radius: $kendo-border-radius-md !default;
 $kendo-scheduler-event-line-height: calc( #{$kendo-scheduler-event-min-height} - (2 * #{$kendo-padding-sm-y}) ) !default;
 
 $kendo-scheduler-event-bg: $kendo-color-primary !default;
-$kendo-scheduler-event-text: k-contrast-color( $kendo-scheduler-event-bg ) !default;
+$kendo-scheduler-event-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-scheduler-event-bg )) !default;
 $kendo-scheduler-event-border: null !default;
 $kendo-scheduler-event-gradient: null !default;
 $kendo-scheduler-event-shadow: null !default;
@@ -34,8 +34,8 @@ $kendo-scheduler-event-hover-border: null !default;
 $kendo-scheduler-event-hover-gradient: null !default;
 $kendo-scheduler-event-hover-shadow: null !default;
 
-$kendo-scheduler-event-selected-bg: k-try-tint( $kendo-color-primary, 1 ) !default;
-$kendo-scheduler-event-selected-text: k-contrast-color( $kendo-scheduler-event-selected-bg ) !default;
+$kendo-scheduler-event-selected-bg: if($kendo-enable-color-system, k-color( primary-active ), k-try-tint( $kendo-color-primary, 1 )) !default;
+$kendo-scheduler-event-selected-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-scheduler-event-selected-bg )) !default;
 $kendo-scheduler-event-selected-border: null !default;
 $kendo-scheduler-event-selected-gradient: null !default;
 $kendo-scheduler-event-selected-shadow: $box-shadow-depth-3 !default;
@@ -48,13 +48,13 @@ $kendo-scheduler-cell-height: $kendo-line-height-md * 1rem !default;
 $kendo-scheduler-datecolumn-width: 12rem !default;
 $kendo-scheduler-timecolumn-width: 11rem !default;
 
-$kendo-scheduler-nonwork-bg: k-try-shade( $kendo-scheduler-bg, .5 ) !default;
+$kendo-scheduler-nonwork-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-scheduler-bg, .5 )) !default;
 $kendo-scheduler-nonwork-text: null !default;
 
 $kendo-scheduler-weekend-bg: null !default;
 $kendo-scheduler-weekend-text: null !default;
 
-$kendo-scheduler-othermonth-bg: k-try-shade( $kendo-scheduler-bg, .5 ) !default;
+$kendo-scheduler-othermonth-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-scheduler-bg, .5 )) !default;
 $kendo-scheduler-othermonth-text: null !default;
 
 $kendo-scheduler-yearview-padding-x: k-map-get( $kendo-spacing, 5 ) !default;

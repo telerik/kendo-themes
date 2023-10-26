@@ -1,38 +1,65 @@
 @if ($kendo-enable-color-system) {
-    $dark-primary-text: null;
-    $dark-secondary-text: null;
-    $dark-disabled-text: null;
-    $dark-dividers: null;
-    $light-primary-text: null;
-    $light-secondary-text: null;
-    $light-disabled-text: null;
-    $light-dividers: null;
-    $material-dark-complimentary: (
-        is-dark: true,
-        body-bg: null,
-        body-text: null,
-        subtle-text: null,
-        disabled-text: null,
-        component-bg: null,
-        component-text: null,
-        component-border: null,
-        base-bg: null,
-        hover-bg: null,
-        focus-bg: null,
-        elevation: null,
+    $kendo-color-primary: k-color( primary );
+    $kendo-color-primary-contrast: k-color( on-primary );
+    $kendo-color-secondary: k-color( secondary );
+    $kendo-color-secondary-contrast: k-color( on-secondary );
+    $kendo-color-tertiary: k-color( tertiary );
+    $kendo-color-info: k-color( info );
+    $kendo-color-success: k-color( success );
+    $kendo-color-warning: k-color( warning );
+    $kendo-color-error: k-color( error );
+    $kendo-color-dark: k-color( dark );
+    $kendo-color-light: k-color( light );
+    $kendo-color-inverse: $kendo-color-dark;
+    $kendo-body-bg: k-color( app-surface );
+    $kendo-body-text: k-color( on-app-surface );
+    $kendo-subtle-text: k-color( subtle );
+    $kendo-app-bg: $kendo-body-bg;
+    $kendo-app-text: $kendo-body-text;
+    $kendo-app-border: k-color( border );
+    $kendo-link-text: $kendo-color-secondary;
+    $kendo-link-hover-text: k-color( secondary-hover );
+    $kendo-component-bg: $kendo-body-bg;
+    $kendo-component-text: $kendo-body-text;
+    $kendo-component-border: $kendo-app-border;
+    $kendo-base-bg: $kendo-body-bg;
+    $kendo-base-text: $kendo-body-text;
+    $kendo-base-border: $kendo-app-border;
+    $kendo-base-gradient: null;
+    $kendo-hover-bg: k-color( base-hover );
+    $kendo-hover-text: $kendo-base-text;
+    $kendo-hover-border: $kendo-base-border;
+    $kendo-hover-gradient: null;
+    $kendo-selected-bg: $kendo-color-secondary;
+    $kendo-selected-text: $kendo-color-secondary-contrast;
+    $kendo-selected-border: $kendo-base-border;
+    $kendo-selected-gradient: null;
+    $kendo-selected-hover-bg: k-color( secondary-hover );
+    $kendo-selected-hover-text: $kendo-selected-text;
+    $kendo-selected-hover-border: $kendo-base-border;
+    $kendo-selected-hover-gradient: null;
+    $kendo-disabled-text: k-color( on-app-surface );
+    $kendo-component-header-bg: $kendo-base-bg;
+    $kendo-component-header-text: $kendo-base-text;
+    $kendo-component-header-border: $kendo-base-border;
+    $kendo-component-header-gradient: null;
+    $kendo-invalid-bg: null;
+    $kendo-invalid-text: $kendo-color-error;
+    $kendo-invalid-border: $kendo-color-error;
+    $kendo-invalid-shadow: null;
+
+    $kendo-theme-colors: (
+        "primary": $kendo-color-primary,
+        "secondary": $kendo-color-secondary,
+        "tertiary": $kendo-color-tertiary,
+        "info": $kendo-color-info,
+        "success": $kendo-color-success,
+        "warning": $kendo-color-warning,
+        "error": $kendo-color-error,
+        "dark": $kendo-color-dark,
+        "light": $kendo-color-light,
+        "inverse": $kendo-color-inverse,
     );
-    $material-light-complimentary: (
-        is-dark: false,
-        body-bg: null,
-        body-text: null,
-        subtle-text: null,
-        disabled-text: null,
-        component-bg: null,
-        component-text: null,
-        component-border: null,
-        base-bg: null,
-        hover-bg: null,
-        focus-bg: null,
-        elevation: null,
-    );
+
+
 }

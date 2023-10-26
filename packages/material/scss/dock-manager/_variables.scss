@@ -91,7 +91,7 @@ $kendo-dock-indicator-shadow: drop-shadow( 0px 1px 18px rgba(0, 0, 0, 0.12) ) dr
 
 ///  The background color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
-$kendo-dock-indicator-hover-bg: k-color-mix( $kendo-color-white, $kendo-color-primary, 8% ) !default;
+$kendo-dock-indicator-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-color-mix( $kendo-color-white, $kendo-color-primary, 8% )) !default;
 /// The text color of the hovered dock indicator in the DockManager component.
 /// @group dock-manager
 $kendo-dock-indicator-hover-text: $kendo-color-white !default;
@@ -107,7 +107,7 @@ $kendo-dock-manager-dock-preview-border-style: dashed !default;
 $kendo-dock-manager-dock-preview-border-radius: $kendo-border-radius-sm !default;
 /// The background color of the dropping area in the DockManager component.
 /// @group dock-manager
-$kendo-dock-manager-dock-preview-bg: rgba( $kendo-color-primary, .16 ) !default;
+$kendo-dock-manager-dock-preview-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .16 ), rgba( $kendo-color-primary, .16 )) !default;
 /// The border color of the dropping area in the DockManager component.
 /// @group dock-manager
 $kendo-dock-manager-dock-preview-border: $kendo-color-primary !default;

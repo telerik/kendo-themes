@@ -9,7 +9,7 @@
     @each $name, $color in $kendo-button-theme-colors {
         .k-button-solid-#{$name} {
             @include box-shadow( $kendo-button-shadow );
-            color: if( $name == "base", $kendo-button-text, k-contrast-color( $color ) );
+            color: if( $name == "base", $kendo-button-text, if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color )) );
             background-color: if( $name == "base", $kendo-button-bg, $color );
             border-color: if( $name == "base", $kendo-button-bg, $color );
 
@@ -48,7 +48,7 @@
     // Outline button
     @each $name, $color in $kendo-button-theme-colors {
         .k-button-outline-#{$name} {
-            color: if( $name == "base", $kendo-button-text, $color );
+            color: if( $name == "base", $kendo-button-text, if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color) );
 
             &:hover,
             &.k-hover,
@@ -57,7 +57,7 @@
             &:active,
             &.k-active,
             &.k-selected {
-                color: if( $name == "base", $kendo-button-text, $color );
+                color: if( $name == "base", $kendo-button-text, if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color) );
             }
 
             // Disabled state
