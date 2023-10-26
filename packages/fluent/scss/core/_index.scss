@@ -11,7 +11,7 @@
 @forward "./variables";
 
 @forward "@progress/kendo-theme-core/scss/index.import.scss" with (
-    $kendo-new-colors: $kendo-new-colors !default,
+    $kendo-enable-color-system: $kendo-enable-color-system !default,
     // Color System
     $kendo-colors: $kendo-colors !default,
     // Legacy

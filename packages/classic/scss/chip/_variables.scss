@@ -115,7 +115,7 @@ $kendo-chip-solid-text: $kendo-button-text !default;
 $kendo-chip-solid-border: $kendo-button-border !default;
 /// The base shadow of the solid Chip.
 /// @group chip
-$kendo-chip-solid-shadow: 0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ) !default;
+$kendo-chip-solid-shadow: 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .16 ), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )) !default;
 /// The base gradient of the solid Chip.
 /// @group chip
 $kendo-chip-solid-gradient: $kendo-button-gradient !default;
@@ -152,14 +152,14 @@ $kendo-chip-outline-text: $kendo-chip-solid-text !default;
 $kendo-chip-outline-border: $kendo-chip-outline-text !default;
 /// The base shadow of the outline Chip.
 /// @group chip
-$kendo-chip-outline-shadow: 0 0 0 2px if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) ) !default;
+$kendo-chip-outline-shadow: 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .16 ), if( $kendo-is-dark-theme, rgba( $kendo-color-white, .16 ), rgba( $kendo-color-black, .16 ) )) !default;
 
 /// The base background color of the hovered outline Chip.
 /// @group chip
 $kendo-chip-outline-hover-bg: $kendo-chip-outline-text !default;
 /// The base text color of the hovered outline Chip.
 /// @group chip
-$kendo-chip-outline-hover-text: k-contrast-legacy( $kendo-chip-outline-hover-bg ) !default;
+$kendo-chip-outline-hover-text: if($kendo-enable-color-system, k-color( base-subtle ), k-contrast-legacy( $kendo-chip-outline-hover-bg )) !default;
 
 /// The base background color of the selected outline Chip.
 /// @group chip
