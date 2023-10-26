@@ -116,7 +116,7 @@ $kendo-button-bg: $kendo-base-bg !default;
 $kendo-button-text: $kendo-base-text !default;
 /// The base border color of the Button.
 /// @group button
-$kendo-button-border: k-try-shade( $kendo-button-bg, 2 ) !default;
+$kendo-button-border: if($kendo-new-colors, k-color( border ), k-try-shade( $kendo-button-bg, 2 )) !default;
 /// The base background gradient of the Button.
 /// @group button
 $kendo-button-gradient: $kendo-base-gradient !default;
@@ -126,13 +126,13 @@ $kendo-button-shadow: null !default;
 
 /// The base background of the hovered Button.
 /// @group button
-$kendo-button-hover-bg: k-try-shade( $kendo-button-bg, 1 ) !default;
+$kendo-button-hover-bg: if($kendo-new-colors, k-color( base-hover ), k-try-shade( $kendo-button-bg, 1 )) !default;
 /// The base text color of the hovered Button.
 /// @group button
 $kendo-button-hover-text: null !default;
 /// The base border color of the hovered Button.
 /// @group button
-$kendo-button-hover-border: k-try-shade( $kendo-button-bg, 3 ) !default;
+$kendo-button-hover-border: if($kendo-new-colors, k-color( border-alt ), k-try-shade( $kendo-button-bg, 3 )) !default;
 /// The base background gradient of the hovered Button.
 /// @group button
 $kendo-button-hover-gradient: null !default;
@@ -142,13 +142,13 @@ $kendo-button-hover-shadow: null !default;
 
 /// The base background color of the active Button.
 /// @group button
-$kendo-button-active-bg: k-try-shade( $kendo-button-bg, 2 ) !default;
+$kendo-button-active-bg: if($kendo-new-colors, k-color( base-active ), k-try-shade( $kendo-button-bg, 2 )) !default;
 /// The base text color of the active Button.
 /// @group button
 $kendo-button-active-text: null !default;
 /// The base border color of the active Button.
 /// @group button
-$kendo-button-active-border: k-try-shade( $kendo-button-bg, 4 ) !default;
+$kendo-button-active-border: if($kendo-new-colors, k-color( border-alt ), k-try-shade( $kendo-button-bg, 4 )) !default;
 /// The base background gradient of the active Button.
 /// @group button
 $kendo-button-active-gradient: null !default;
