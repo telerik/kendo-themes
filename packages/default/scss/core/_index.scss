@@ -1,10 +1,10 @@
 $wcag-min-contrast-ratio: 4.5 !default;
 
-// Color System
-@import "./color-system/_swatch.scss";
-
 // Variables
 @import "../_variables.scss";
+
+// Color System
+@import "./color-system/_swatch.scss";
 
 @import "@progress/kendo-theme-core/scss/index.import.scss";
 
