@@ -119,7 +119,7 @@ $kendo-file-manager-listview-item-border: null !default;
 $kendo-file-manager-listview-item-icon-bg: null !default;
 /// The text color of the FileManager ListView item icon.
 /// @group filemanager
-$kendo-file-manager-listview-item-icon-text: k-try-tint($kendo-file-manager-text, 4) !default;
+$kendo-file-manager-listview-item-icon-text: if($kendo-new-colors, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4)) !default;
 /// The border color of the FileManager ListView item icon.
 /// @group filemanager
 $kendo-file-manager-listview-item-icon-border: null !default;
@@ -176,7 +176,7 @@ $kendo-file-manager-preview-border: null !default;
 $kendo-file-manager-preview-icon-bg: null !default;
 /// The text color of the FileManager preview icon.
 /// @group filemanager
-$kendo-file-manager-preview-icon-text: k-try-tint($kendo-file-manager-text, 4) !default;
+$kendo-file-manager-preview-icon-text: if($kendo-new-colors, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4)) !default;
 /// The border color of the FileManager preview icon.
 /// @group filemanager
 $kendo-file-manager-preview-icon-border: null !default;
