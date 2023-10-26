@@ -653,6 +653,12 @@ $kendo-input-invalid-border: var( --kendo-invalid-border, #{$kendo-invalid-borde
 /// @group input
 $kendo-input-invalid-text: var( --kendo-invalid-text, #{$kendo-invalid-text} ) !default;
 
+// REMOVE
+$kendo-valid-bg: initial !default;
+$kendo-valid-text: k-get-theme-color-var( success-190 ) !default;
+$kendo-valid-border: k-get-theme-color-var( success-190 ) !default;
+$kendo-valid-shadow: null !default;
+
 /// The border color of the valid Input components.
 /// @group input
 $kendo-input-valid-border: var( --kendo-valid-border, #{$kendo-valid-border} ) !default;

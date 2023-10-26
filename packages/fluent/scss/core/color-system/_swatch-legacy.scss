@@ -1,6 +1,6 @@
 @use "@progress/kendo-theme-core/scss/index.import.scss" as *;
 
-@if($kendo-new-colors) {
+@if($kendo-enable-color-system) {
     $kendo-body-bg: null;
     $kendo-body-text: null;
     $kendo-component-bg: null;

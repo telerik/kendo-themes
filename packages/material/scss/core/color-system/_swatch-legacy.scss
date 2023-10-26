@@ -1,4 +1,4 @@
-@if ($kendo-new-colors) {
+@if ($kendo-enable-color-system) {
     $dark-primary-text: null;
     $dark-secondary-text: null;
     $dark-disabled-text: null;
