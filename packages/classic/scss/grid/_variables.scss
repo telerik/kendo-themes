@@ -256,11 +256,11 @@ $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
 $kendo-grid-sticky-footer-hover-bg: $kendo-grid-hover-bg !default;
 
-$kendo-grid-sticky-selected-bg: k-color-mix($kendo-selected-bg, #ffffff, 25%) !default;
-$kendo-grid-sticky-selected-alt-bg: k-try-shade( $kendo-grid-sticky-selected-bg, .5 ) !default;
+$kendo-grid-sticky-selected-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), k-color-mix($kendo-selected-bg, #ffffff, 25%)) !default;
+$kendo-grid-sticky-selected-alt-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), k-try-shade( $kendo-grid-sticky-selected-bg, .5 )) !default;
 
 $kendo-grid-sticky-hover-bg: $kendo-grid-hover-bg !default;
-$kendo-grid-sticky-selected-hover-bg: k-try-shade( $kendo-grid-sticky-selected-bg, 1 ) !default;
+$kendo-grid-sticky-selected-hover-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), k-try-shade( $kendo-grid-sticky-selected-bg, 1 )) !default;
 
 $kendo-grid-column-menu-width: 230px !default;
 $kendo-grid-column-menu-max-width: 320px !default;

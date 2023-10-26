@@ -37,7 +37,7 @@ $kendo-spreadsheet-formula-input-line-height: $kendo-input-line-height !default;
 $kendo-spreadsheet-view-font-family: Arial, Verdana, sans-serif !default;
 $kendo-spreadsheet-view-font-size: $kendo-spreadsheet-font-size !default;
 
-$kendo-spreadsheet-selection-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-spreadsheet-selection-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 $kendo-spreadsheet-selection-text: null !default;
 $kendo-spreadsheet-selection-border: $kendo-selected-bg !default;
 $kendo-spreadsheet-selection-shadow: inset 0 0 0 1px $kendo-selected-bg !default;
@@ -46,12 +46,12 @@ $kendo-spreadsheet-single-selection-bg: $kendo-selected-bg !default;
 $kendo-spreadsheet-single-selection-text: null !default;
 $kendo-spreadsheet-single-selection-border: $kendo-spreadsheet-bg !default;
 
-$kendo-spreadsheet-partial-selection-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-spreadsheet-partial-selection-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 
 $kendo-spreadsheet-active-cell-bg: $kendo-spreadsheet-bg !default;
 $kendo-spreadsheet-active-cell-shadow: inset 0 0 0 1px $kendo-selected-bg !default;
 
-$kendo-spreadsheet-auto-fill-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-spreadsheet-auto-fill-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 $kendo-spreadsheet-auto-fill-text: null !default;
 $kendo-spreadsheet-auto-fill-border: $kendo-selected-bg !default;
 $kendo-spreadsheet-auto-fill-shadow: inset 0 0 0 1px $kendo-selected-bg !default;
@@ -101,6 +101,6 @@ $kendo-spreadsheet-drawing-handle-border-radius: $kendo-border-radius-lg !defaul
 $kendo-spreadsheet-drawing-outline-style: solid !default;
 $kendo-spreadsheet-drawing-outline-width: 2px !default;
 
-$kendo-spreadsheet-drawing-anchor-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-spreadsheet-drawing-anchor-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 
 $kendo-spreadsheet-dropzone-spacing-y: k-map-get( $kendo-spacing, 4 ) !default;
