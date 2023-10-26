@@ -1,4 +1,4 @@
-@import "./_palettes.scss";
+@import "./_palettes-legacy.scss";
 
 @function get-base-palette($name) {
     @return k-map-get($palettes, $name);
@@ -85,4 +85,17 @@
     $opacity: if($opacity == null, k-color-alpha($color), $opacity);
 
     @return rgba($color, $opacity);
+}
+
+// Creates a container object for a light theme to be given to individual component theme mixins.
+@function material-theme($kendo-color-primary, $kendo-color-secondary, $theme-type, $warn: material-palette(red)) {
+    $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
+    @return k-map-merge(
+        (
+            primary: $kendo-color-primary,
+            secondary: $kendo-color-secondary,
+            warn: $warn,
+        ),
+        $complimentary
+    );
 }

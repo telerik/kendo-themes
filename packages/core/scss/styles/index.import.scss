@@ -8,6 +8,7 @@
 @import "./_colors.scss";
 
 @mixin kendo-core--styles() {
+    @include kendo-core--styles--colors();
     @include kendo-core--styles--accessibility();
     @include kendo-core--styles--asp-fallback();
     @include kendo-core--styles--layout();
@@ -15,5 +16,4 @@
     @include kendo-core--styles--base();
     @include kendo-core--styles--loading();
     @include kendo-core--styles--selection();
-    @include kendo-core--styles--colors();
 }
