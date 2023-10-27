@@ -1,4 +1,4 @@
-import { Notification, NotificationAction } from '../../notification';
+import { NotificationClosable, NotificationNormal } from '../../notification';
 
 
 const styles = `
@@ -32,20 +32,20 @@ export default () =>(
                 {/* notification group */}
                 <div className="k-notification-group">
                     <div className="k-notification-container">
-                        <Notification text="Multiline notification" closable={true} actions={ <NotificationAction type="close" /> } >
+                        <NotificationClosable text="Multiline notification">
                             <div>Closable multiline notification</div>
                             <div>Closable multiline notification</div>
                             <div>Closable multiline notification</div>
-                        </Notification>
+                        </NotificationClosable>
                     </div>
                     <div className="k-notification-container">
-                        <Notification className="k-custom-notification" text="Custom notification" />
+                        <NotificationNormal className="k-custom-notification" text="Custom notification" />
                     </div>
                 </div>
             </div>
             <div className="k-colspan-3 k-col-span-3">
                 <div className="k-notification-container fullwidth">
-                    <Notification text="Full width notification" closable={true} actions={ <NotificationAction type="close" /> } />
+                    <NotificationClosable text="Full width notification"/>
                 </div>
             </div>
 
@@ -55,20 +55,20 @@ export default () =>(
                 {/* notification group */}
                 <div className="k-notification-group">
                     <div className="k-notification-container">
-                        <Notification text="Multiline notification" closable={true} actions={ <NotificationAction type="close" /> } >
+                        <NotificationClosable text="Multiline notification">
                             <div>Closable multiline notification</div>
                             <div>Closable multiline notification</div>
                             <div>Closable multiline notification</div>
-                        </Notification>
+                        </NotificationClosable>
                     </div>
                     <div className="k-notification-container">
-                        <Notification className="k-custom-notification" text="Custom notification" />
+                        <NotificationNormal className="k-custom-notification" text="Custom notification" />
                     </div>
                 </div>
             </div>
             <div className="k-colspan-3 k-col-span-3" dir="rtl">
                 <div className="k-notification-container fullwidth">
-                    <Notification text="Full width notification" closable={true} actions={ <NotificationAction type="close" /> } />
+                    <NotificationClosable text="Full width notification"/>
                 </div>
             </div>
 
