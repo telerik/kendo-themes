@@ -1,6 +1,6 @@
 import { Button } from '../../button';
 import { DialogNormal } from '../../dialog';
-import { Upload } from '../../upload';
+import { UploadNormal } from '../../upload';
 
 
 const styles = `
@@ -23,7 +23,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Upload async empty status="upload"></Upload>
+                    <UploadNormal empty status="upload"/>
                 </DialogNormal>
 
             </section>

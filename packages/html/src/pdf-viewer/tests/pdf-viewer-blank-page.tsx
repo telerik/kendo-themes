@@ -1,5 +1,5 @@
 import { Button } from '../../button';
-import { Upload } from '../../upload';
+import { UploadNormal } from '../../upload';
 import { Toolbar } from '../../toolbar';
 import { Pager } from '../../pager';
 import { Dropzone } from '../../dropzone';
@@ -31,7 +31,7 @@ export default () =>(
                     <div className="k-pdf-viewer-pages">
                         <div className="k-page k-blank-page">
                             <Dropzone note={false}/>
-                            <Upload async empty status="upload"></Upload>
+                            <UploadNormal empty status="upload"></UploadNormal>
                         </div>
                     </div>
                 </div>
