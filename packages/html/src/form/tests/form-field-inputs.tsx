@@ -7,7 +7,7 @@ import { NumericTextbox } from '../../numerictextbox';
 import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
-import { Upload, UploadFile } from '../../upload';
+import { UploadChunk, UploadFile } from '../../upload';
 import { Form, FormField } from '../../form';
 
 
@@ -167,9 +167,9 @@ export default () =>(
                     <FormField
                         label="Upload"
                         editor={
-                            <Upload async status="done">
+                            <UploadChunk status="done">
                                 <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
-                            </Upload>
+                            </UploadChunk>
                         }
                     >
                     </FormField>
@@ -314,9 +314,9 @@ export default () =>(
                     <FormField
                         label="Upload"
                         editor={
-                            <Upload async status="done">
+                            <UploadChunk status="done">
                                 <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
-                            </Upload>
+                            </UploadChunk>
                         }
                     >
                     </FormField>

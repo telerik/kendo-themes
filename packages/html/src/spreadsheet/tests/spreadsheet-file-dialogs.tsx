@@ -3,7 +3,7 @@ import { Button } from '../../button';
 import { Form, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
-import { Upload } from '../../upload';
+import { UploadNormal } from '../../upload';
 import { Dropzone } from '../../dropzone';
 
 
@@ -54,7 +54,7 @@ export default () =>(
                 }>
                     <Dropzone note={false} />
 
-                    <Upload async status="upload"></Upload>
+                    <UploadNormal status="upload"/>
                 </WindowNormal>
             </section>
 
