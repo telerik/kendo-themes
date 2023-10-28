@@ -209,7 +209,6 @@ $kendo-letter-spacing: null !default;
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
 // Disabled mixin variables
-$kendo-disabled-text: k-map-get( $theme, disabled-text ) !default;
 $kendo-disabled-filter: grayscale(.1) !default;
 $kendo-disabled-opacity: .6 !default;
 

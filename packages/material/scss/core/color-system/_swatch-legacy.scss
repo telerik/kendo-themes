@@ -24,7 +24,6 @@
     $kendo-color-dark: k-color( dark );
     $kendo-color-light: k-color( light );
     $kendo-color-inverse: $kendo-color-dark;
-
     $kendo-body-bg: k-color( app-surface );
     $kendo-body-text: k-color( on-app-surface );
     $kendo-subtle-text: k-color( subtle );
@@ -40,18 +39,18 @@
     $kendo-base-text: $kendo-body-text;
     $kendo-base-border: $kendo-app-border;
     $kendo-base-gradient: null;
-    $kendo-hover-bg: k-color( base-subtle-hover );
+    $kendo-hover-bg: k-color( base-hover );
     $kendo-hover-text: $kendo-base-text;
     $kendo-hover-border: $kendo-base-border;
     $kendo-hover-gradient: null;
     $kendo-selected-bg: $kendo-color-secondary;
     $kendo-selected-text: $kendo-color-secondary-contrast;
     $kendo-selected-border: $kendo-base-border;
-    $kendo-selected-gradient: $kendo-base-gradient;
+    $kendo-selected-gradient: null;
     $kendo-selected-hover-bg: k-color( secondary-hover );
     $kendo-selected-hover-text: $kendo-selected-text;
     $kendo-selected-hover-border: $kendo-base-border;
-    $kendo-selected-hover-gradient: $kendo-base-gradient;
+    $kendo-selected-hover-gradient: null;
     $kendo-component-header-bg: $kendo-base-bg;
     $kendo-component-header-text: $kendo-base-text;
     $kendo-component-header-border: $kendo-base-border;
@@ -60,6 +59,12 @@
     $kendo-invalid-text: $kendo-color-error;
     $kendo-invalid-border: $kendo-color-error;
     $kendo-invalid-shadow: null;
+
+
+    // The below variables are used to generated the maps
+    // where our $kendo-* variables obtain their values from - k-map-get( $theme, base-bg )
+    // Therefore we should be fine to remove the commented lines below.
+    // That's how the Material Swatch will be consistent with the swatches in the other themes.
 
     // TODO CHECK IF WE NEED AND REMOVE
     // $dark-primary-text: rgba(black, 0.87) !default;
@@ -131,6 +136,4 @@
         "light": $kendo-color-light,
         "inverse": $kendo-color-inverse,
     );
-
-
 }
