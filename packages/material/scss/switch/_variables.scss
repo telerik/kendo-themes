@@ -112,7 +112,7 @@ $kendo-switch-off-thumb-hover-gradient: null !default;
 
 /// The background of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-bg: rgba( $kendo-color-primary, .54 ) !default;
+$kendo-switch-on-track-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .54 ), rgba( $kendo-color-primary, .54 )) !default;
 /// The text color of the track when the Switch is checked.
 /// @group switch
 $kendo-switch-on-track-text: null !default;

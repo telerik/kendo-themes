@@ -37,7 +37,7 @@ $kendo-spreadsheet-formula-input-line-height: $kendo-input-line-height !default;
 $kendo-spreadsheet-view-font-family: Arial, Verdana, sans-serif !default;
 $kendo-spreadsheet-view-font-size: $kendo-spreadsheet-font-size !default;
 
-$kendo-spreadsheet-selection-bg: rgba( $kendo-color-primary, .25 ) !default;
+$kendo-spreadsheet-selection-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 )) !default;
 $kendo-spreadsheet-selection-text: null !default;
 $kendo-spreadsheet-selection-border: $kendo-color-primary !default;
 $kendo-spreadsheet-selection-shadow: inset 0 0 0 1px $kendo-color-primary !default;
@@ -51,7 +51,7 @@ $kendo-spreadsheet-partial-selection-bg: rgba( black, .04 ) !default;
 $kendo-spreadsheet-active-cell-bg: $kendo-component-bg !default;
 $kendo-spreadsheet-active-cell-shadow: inset 0 0 0 1px $kendo-color-primary !default;
 
-$kendo-spreadsheet-auto-fill-bg: rgba( $kendo-color-primary, .25 ) !default;
+$kendo-spreadsheet-auto-fill-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 )) !default;
 $kendo-spreadsheet-auto-fill-text: null !default;
 $kendo-spreadsheet-auto-fill-border: $kendo-color-primary !default;
 $kendo-spreadsheet-auto-fill-shadow: inset 0 0 0 1px $kendo-color-primary !default;
