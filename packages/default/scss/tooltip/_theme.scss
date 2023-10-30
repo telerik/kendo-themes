@@ -1,12 +1,4 @@
 @mixin kendo-tooltip--theme-base() {
-
-    .k-tooltip-wrapper {
-        .k-tooltip {
-            box-shadow: $kendo-tooltip-shadow;
-        }
-    }
-
-
     // Default tooltip
     .k-tooltip {
         @include fill(
@@ -14,67 +6,26 @@
             $kendo-tooltip-bg,
             $kendo-tooltip-border
         );
+        
+        @include box-shadow( $kendo-tooltip-shadow );
 
         .k-callout {
             color: $kendo-tooltip-bg;
         }
     }
 
-
     // Tooltip variants
-    .k-tooltip-primary {
-        @include fill(
-            $kendo-tooltip-primary-text,
-            $kendo-tooltip-primary-bg,
-            $kendo-tooltip-primary-border
-        );
-
-        .k-callout {
-            color: $kendo-tooltip-primary-bg;
-        }
-    }
-    .k-tooltip-info {
-        @include fill(
-            $kendo-tooltip-info-text,
-            $kendo-tooltip-info-bg,
-            $kendo-tooltip-info-border
-        );
-
-        .k-callout {
-            color: $kendo-tooltip-info-bg;
-        }
-    }
-    .k-tooltip-success {
-        @include fill(
-            $kendo-tooltip-success-text,
-            $kendo-tooltip-success-bg,
-            $kendo-tooltip-success-border
-        );
-
-        .k-callout {
-            color: $kendo-tooltip-success-bg;
-        }
-    }
-    .k-tooltip-warning {
-        @include fill(
-            $kendo-tooltip-warning-text,
-            $kendo-tooltip-warning-bg,
-            $kendo-tooltip-warning-border
-        );
-
-        .k-callout {
-            color: $kendo-tooltip-warning-bg;
-        }
-    }
-    .k-tooltip-error {
-        @include fill(
-            $kendo-tooltip-error-text,
-            $kendo-tooltip-error-bg,
-            $kendo-tooltip-error-border
-        );
-
-        .k-callout {
-            color: $kendo-tooltip-error-bg;
+    @each $name, $props in $kendo-tooltip-theme {
+        .k-tooltip-#{$name} {
+            @include fill(
+                k-map-get( $props, color ),
+                k-map-get( $props, background-color ),
+                k-map-get( $props, border )
+            );
+            
+            .k-callout {
+                color: k-map-get( $props, background-color );
+            }
         }
     }
 
