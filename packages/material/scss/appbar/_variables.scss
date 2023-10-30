@@ -37,7 +37,7 @@ $kendo-appbar-gap: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-appbar-light-bg: $kendo-color-light !default;
 /// TThe text color of the AppBar based on light theme color.
 /// @group appbar
-$kendo-appbar-light-text: k-contrast-color( $kendo-color-light ) !default;
+$kendo-appbar-light-text: if($kendo-new-colors, k-color( on-light ), k-contrast-color( $kendo-color-light )) !default;
 
 /// The background color of the AppBar based on dark theme color.
 /// @group appbar
