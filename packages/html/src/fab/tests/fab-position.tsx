@@ -1,4 +1,4 @@
-import { FloatingActionButton } from '../../fab';
+import { IconFloatingActionButton } from '../../fab';
 
 
 const styles = `
@@ -24,35 +24,35 @@ export default () =>(
 
             <span>Top</span>
             <span className="relative-container">
-                <FloatingActionButton icon="plus" position="top-start" style={{ top: "16px", left: "16px" }} />
+                <IconFloatingActionButton position="top-start" style={{ top: "16px", left: "16px" }} />
             </span>
             <span className="relative-container">
-                <FloatingActionButton icon="plus" position="top-center" style={{ top: "16px" }} />
+                <IconFloatingActionButton position="top-center" style={{ top: "16px" }} />
             </span>
             <span className="relative-container">
-                <FloatingActionButton icon="plus" position="top-end" style={{ top: "16px", right: "16px" }} />
+                <IconFloatingActionButton position="top-end" style={{ top: "16px", right: "16px" }} />
             </span>
 
             <span>Middle</span>
             <span className="relative-container">
-                <FloatingActionButton icon="plus" position="middle-start" style={{ left: "16px" }} />
+                <IconFloatingActionButton position="middle-start" style={{ left: "16px" }} />
             </span>
             <span className="relative-container">
                 NO CENTER POSITION
             </span>
             <span className="relative-container">
-                <FloatingActionButton icon="plus" position="middle-end" style={{ right: "16px" }} />
+                <IconFloatingActionButton position="middle-end" style={{ right: "16px" }} />
             </span>
 
             <span>Bottom</span>
             <span className="relative-container">
-                <FloatingActionButton icon="plus" position="bottom-start" style={{ bottom: "16px", left: "16px" }} />
+                <IconFloatingActionButton position="bottom-start" style={{ bottom: "16px", left: "16px" }} />
             </span>
             <span className="relative-container">
-                <FloatingActionButton icon="plus" position="bottom-center" style={{ bottom: "16px" }} />
+                <IconFloatingActionButton position="bottom-center" style={{ bottom: "16px" }} />
             </span>
             <span className="relative-container">
-                <FloatingActionButton icon="plus" position="bottom-end" style={{ bottom: "16px", right: "16px" }} />
+                <IconFloatingActionButton position="bottom-end" style={{ bottom: "16px", right: "16px" }} />
             </span>
 
         </div>
