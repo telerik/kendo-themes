@@ -3,11 +3,6 @@
 @use "./_variables.scss" as *;
 
 @mixin kendo-tooltip--theme() {
-
-    .k-tooltip-wrapper .k-tooltip {
-        @include box-shadow( var( --kendo-tooltip-shadow, #{$kendo-tooltip-shadow} ) );
-    }
-
     .k-tooltip {
         @include box-shadow( var( --kendo-tooltip-shadow, #{$kendo-tooltip-shadow} ) );
 
