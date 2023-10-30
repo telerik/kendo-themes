@@ -1,7 +1,7 @@
 @if ($kendo-new-colors) {
     $kendo-color-primary: k-color( primary );
-    // $kendo-color-primary-contrast: k-color( on-primary );
-    // $kendo-color-secondary: k-color( secondary );
+    $kendo-color-primary-contrast: k-color( on-primary );
+    $kendo-color-secondary: k-color( secondary );
     // // $kendo-color-secondary-lighter: null;
     // // $kendo-color-secondary-darker: null;
     // $kendo-color-secondary-contrast: k-color( on-secondary );
