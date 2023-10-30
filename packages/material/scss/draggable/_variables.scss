@@ -7,7 +7,7 @@ $kendo-drag-hint-font-size: $kendo-font-size-md !default;
 $kendo-drag-hint-font-family: $kendo-font-family !default;
 $kendo-drag-hint-line-height: k-math-div( 20, 14 ) !default;
 
-$kendo-drag-hint-bg: k-try-shade( $kendo-body-bg ) !default;
+$kendo-drag-hint-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-body-bg )) !default;
 $kendo-drag-hint-text: $kendo-body-text !default;
 $kendo-drag-hint-border: null !default;
 $kendo-drag-hint-gradient: null !default;
