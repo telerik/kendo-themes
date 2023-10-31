@@ -35,7 +35,7 @@ $kendo-chat-avatar-spacing: $kendo-chat-item-spacing-x !default;
 $kendo-chat-toolbar-padding-x: $kendo-toolbar-md-padding-x !default;
 $kendo-chat-toolbar-padding-y: $kendo-toolbar-md-padding-y !default;
 $kendo-chat-toolbar-spacing: $kendo-toolbar-md-spacing !default;
-$kendo-chat-toolbar-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
+$kendo-chat-toolbar-bg: if($kendo-new-colors, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
 $kendo-chat-toolbar-text: $kendo-toolbar-text !default;
 $kendo-chat-toolbar-border: inherit !default;
 

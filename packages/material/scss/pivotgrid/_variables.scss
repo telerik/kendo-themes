@@ -106,11 +106,11 @@ $kendo-pivotgrid-chrome-border: $kendo-grid-border !default;
 $kendo-pivotgrid-container-bg: $kendo-grid-header-bg !default;
 $kendo-pivotgrid-row-headers-bg: null !default;
 
-$kendo-pivotgrid-button-bg: k-try-shade($kendo-button-bg, 1) !default;
+$kendo-pivotgrid-button-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade($kendo-button-bg, 1)) !default;
 $kendo-pivotgrid-button-text: $kendo-button-text !default;
-$kendo-pivotgrid-button-hover-bg: k-try-shade($kendo-button-bg, 2) !default;
+$kendo-pivotgrid-button-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-try-shade($kendo-button-bg, 2)) !default;
 $kendo-pivotgrid-button-hover-text: $kendo-button-text !default;
-$kendo-pivotgrid-button-active-bg: k-try-shade($kendo-button-bg, 2) !default;
+$kendo-pivotgrid-button-active-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-try-shade($kendo-button-bg, 2)) !default;
 $kendo-pivotgrid-button-active-text: $kendo-button-text !default;
 
 $kendo-pivotgrid-remove-bg: $kendo-pivotgrid-button-text !default;

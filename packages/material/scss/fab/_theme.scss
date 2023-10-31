@@ -75,25 +75,25 @@
     // Hover state
     .k-fab-item.k-hover .k-fab-item-icon,
     .k-fab-item:hover .k-fab-item-icon {
-        border-color: k-true-mix( #000000, $kendo-fab-item-icon-border, 8%);
-        background-color: k-true-mix( #000000, $kendo-fab-item-icon-bg, 8%);
-        color: k-true-mix( #000000, $kendo-fab-item-icon-text, 8%);
+        border-color: if($kendo-new-colors, k-color( base-hover ), k-true-mix( #000000, $kendo-fab-item-icon-border, 8%));
+        background-color: if($kendo-new-colors, k-color( base-hover ), k-true-mix( #000000, $kendo-fab-item-icon-bg, 8%));
+        color: if($kendo-new-colors, k-color( on-base ), k-true-mix( #000000, $kendo-fab-item-icon-text, 8%));
     }
 
     // Focus state
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
-        border-color: k-true-mix( #000000, $kendo-fab-item-icon-border, 12%);
-        background-color: k-true-mix( #000000, $kendo-fab-item-icon-bg, 12%);
-        color: k-true-mix( #000000, $kendo-fab-item-icon-text, 12%);
+        border-color: if($kendo-new-colors, k-color( base-active ), k-true-mix( #000000, $kendo-fab-item-icon-border, 12%));
+        background-color: if($kendo-new-colors, k-color( base-active ), k-true-mix( #000000, $kendo-fab-item-icon-bg, 12%));
+        color: if($kendo-new-colors, k-color( on-base ), k-true-mix( #000000, $kendo-fab-item-icon-text, 12%));
     }
 
     // Active state
     .k-fab-item.k-active .k-fab-item-icon,
     .k-fab-item:active .k-fab-item-icon {
         @include box-shadow($kendo-fab-item-active-shadow);
-        border-color: k-true-mix( #ffffff, $kendo-fab-item-icon-border, 12%);
-        background-color: k-true-mix( #ffffff, $kendo-fab-item-icon-bg, 12%);
+        border-color: if($kendo-new-colors, k-color( base ), k-true-mix( #ffffff, $kendo-fab-item-icon-border, 12%));
+        background-color: if($kendo-new-colors, k-color( base ), k-true-mix( #ffffff, $kendo-fab-item-icon-bg, 12%));
     }
 
     // Disabled state

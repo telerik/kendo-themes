@@ -25,7 +25,7 @@ $kendo-dropzone-line-height: k-math-div( 20, 14 ) !default;
 
 /// The background color of the DropZone.
 /// @group dropzone
-$kendo-dropzone-bg: k-try-shade( $kendo-base-bg, 1 ) !default;
+$kendo-dropzone-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-base-bg, 1 )) !default;
 /// The text color of the DropZone.
 /// @group dropzone
 $kendo-dropzone-text: $kendo-base-text !default;

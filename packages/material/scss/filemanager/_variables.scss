@@ -30,7 +30,7 @@ $kendo-file-manager-border: $kendo-component-border !default;
 $kendo-file-manager-toolbar-border-width: $kendo-file-manager-border-width !default;
 /// The background color of the FileManager Toolbar.
 /// @group filemanager
-$kendo-file-manager-toolbar-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
+$kendo-file-manager-toolbar-bg: if($kendo-new-colors, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
 /// The text color of the FileManager Toolbar.
 /// @group filemanager
 $kendo-file-manager-toolbar-text: null !default;
