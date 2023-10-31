@@ -23,7 +23,7 @@ $kendo-pivotgrid-bg: $kendo-component-bg !default;
 $kendo-pivotgrid-text: $kendo-component-text !default;
 $kendo-pivotgrid-border: $kendo-component-border !default;
 
-$kendo-pivotgrid-alt-border: k-try-shade( $kendo-pivotgrid-border, 2 ) !default;
+$kendo-pivotgrid-alt-border: if($kendo-new-colors, k-color( border-alt ), k-try-shade( $kendo-pivotgrid-border, 2 )) !default;
 
 $kendo-pivotgrid-headers-bg: rgba( $kendo-component-header-bg, .02 ) !default;
 $kendo-pivotgrid-headers-text: $kendo-component-header-text !default;
