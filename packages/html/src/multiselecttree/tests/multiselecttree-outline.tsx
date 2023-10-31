@@ -1,5 +1,5 @@
 import { Chip, ChipAction } from '../../chip';
-import { MultiSelectTree } from '../../multiselecttree';
+import { MultiSelectTree, MultiSelectTreeNormal, MultiSelectTreeArrowButton, MultiSelectTreeValue } from '..';
 
 
 const styles = `
@@ -14,158 +14,64 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
 
             <span></span>
-            <span>MultiSelectTree Outline</span>
-            <span>MultiSelectTree Outline RTL</span>
+            <span>MultiSelectTree</span>
+            <span>MultiSelectTree RTL</span>
 
-            <div>Empty</div>
+            <div>empty</div>
             <div>
-                <MultiSelectTree fillMode="outline" placeholder="MultiSelectTree..." />
+                <MultiSelectTreeNormal fillMode="outline" placeholder="MultiSelectTree..." />
             </div>
             <div dir="rtl">
-                <MultiSelectTree fillMode="outline" placeholder="MultiSelectTree..." />
+                <MultiSelectTreeNormal fillMode="outline" placeholder="MultiSelectTree..." />
             </div>
 
-            <div>Arrow button</div>
+            <div>arrow button</div>
             <div>
-                <MultiSelectTree fillMode="outline" showArrowButton placeholder="MultiSelectTree with arrow button" />
+                <MultiSelectTreeArrowButton fillMode="outline" showArrowButton placeholder="MultiSelectTree with arrow button" />
             </div>
             <div dir="rtl">
-                <MultiSelectTree fillMode="outline" showArrowButton placeholder="MultiSelectTree with arrow button" />
+                <MultiSelectTreeArrowButton fillMode="outline" showArrowButton placeholder="MultiSelectTree with arrow button" />
             </div>
 
-            <div>Normal</div>
+            {[ 'normal', ...MultiSelectTree.states ].map((state) => (
+                <>
+                    <div>{state}</div>
+                    <div>
+                        <MultiSelectTreeValue fillMode="outline" { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
+                    </div>
+                    <div dir="rtl">
+                        <MultiSelectTreeValue fillMode="outline" { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
+                    </div>
+                </>
+            ))}
+
+            <div>invalid + focus</div>
             <div>
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Normal" actions={ <ChipAction type="remove"/> } />
-                    )}
-                />
+                <MultiSelectTreeValue fillMode="outline" invalid focus>invalid + focus</MultiSelectTreeValue>
             </div>
             <div dir="rtl">
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Normal" actions={ <ChipAction type="remove"/> } />
-                    )}
-                />
+                <MultiSelectTreeValue fillMode="outline" invalid focus>invalid + focus</MultiSelectTreeValue>
             </div>
 
-            <div>Hover</div>
+            <div>multi line + overflow</div>
             <div>
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Hover" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    hover
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Hover" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    hover
-                />
-            </div>
-
-            <div>Focus</div>
-            <div>
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Focus" focus actions={ <ChipAction type="remove"/> } />
-                    )}
-                    focus
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Focus" focus actions={ <ChipAction type="remove"/> } />
-                    )}
-                    focus
-                />
-            </div>
-
-            <div>Disabled</div>
-            <div>
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Disabled" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    disabled
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Disabled" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    disabled
-                />
-            </div>
-
-            <div>Invalid</div>
-            <div>
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Invalid" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Invalid" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                />
-            </div>
-
-            <div>Invalid + Focus</div>
-            <div>
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Invalid + Focus" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                    focus
-                />
-            </div>
-            <div dir="rtl">
-                <MultiSelectTree fillMode="outline"
-                    tags={(
-                        <Chip text="Invalid + Focus" actions={ <ChipAction type="remove"/> } />
-                    )}
-                    invalid
-                    focus
-                />
-            </div>
-
-            <div>Loading</div>
-            <div>
-                <MultiSelectTree fillMode="outline" placeholder="Loading..." loading/>
-            </div>
-            <div dir="rtl">
-                <MultiSelectTree fillMode="outline" placeholder="Loading..." loading />
-            </div>
-
-            <div>Multi Line + Overflow</div>
-            <div>
-                <MultiSelectTree fillMode="outline"
+                <MultiSelectTreeNormal
+                    fillMode="outline"
                     tags={(
                         <>
-                            <Chip text="Multi-line" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="Multi-line + Overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line + overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
                         </>
                     )}
                 />
             </div>
             <div dir="rtl">
-                <MultiSelectTree fillMode="outline"
+                <MultiSelectTreeNormal
+                    fillMode="outline"
                     tags={(
                         <>
-                            <Chip text="Multi-line" actions={ <ChipAction type="remove"/> } />
-                            <Chip text="Multi-line + Overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
+                            <Chip text="multi-line + overflow with a very very very long text" actions={ <ChipAction type="remove"/> } />
                         </>
                     )}
                 />
