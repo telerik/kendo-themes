@@ -21,12 +21,12 @@ $kendo-menu-item-text: null !default;
 $kendo-menu-item-border: null !default;
 $kendo-menu-item-gradient: null !default;
 
-$kendo-menu-item-hover-bg: rgba( $kendo-menu-text, $kendo-flat-button-hover-opacity * k-color-alpha( $kendo-menu-text ) ) !default;
+$kendo-menu-item-hover-bg: if($kendo-new-colors, k-color( base-hover ), rgba( $kendo-menu-text, $kendo-flat-button-hover-opacity * k-color-alpha( $kendo-menu-text ) )) !default;
 $kendo-menu-item-hover-text: null !default;
 $kendo-menu-item-hover-border: null !default;
 $kendo-menu-item-hover-gradient: null !default;
 
-$kendo-menu-item-expanded-bg: rgba( $kendo-menu-text, $kendo-flat-button-active-opacity * k-color-alpha( $kendo-menu-text ) ) !default;
+$kendo-menu-item-expanded-bg: if($kendo-new-colors, k-color( base-active ), rgba( $kendo-menu-text, $kendo-flat-button-active-opacity * k-color-alpha( $kendo-menu-text ) )) !default;
 $kendo-menu-item-expanded-text: null !default;
 $kendo-menu-item-expanded-border: null !default;
 $kendo-menu-item-expanded-gradient: null !default;
