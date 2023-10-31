@@ -92,7 +92,7 @@ $kendo-calendar-cell-selected-focus-shadow: $kendo-calendar-cell-focus-shadow !d
 $kendo-calendar-navigation-width: 5em !default;
 $kendo-calendar-navigation-item-height: 2em !default;
 
-$kendo-calendar-navigation-bg: k-true-mix( $kendo-calendar-text, $kendo-calendar-bg, 3) !default;
+$kendo-calendar-navigation-bg: if($kendo-new-colors, k-color( surface ), k-true-mix( $kendo-calendar-text, $kendo-calendar-bg, 3)) !default;
 $kendo-calendar-navigation-text: $kendo-calendar-text !default;
 $kendo-calendar-navigation-border: $kendo-calendar-border !default;
 

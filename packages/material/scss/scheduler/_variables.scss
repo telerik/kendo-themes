@@ -48,13 +48,13 @@ $kendo-scheduler-cell-height: $kendo-line-height-md * 1rem !default;
 $kendo-scheduler-datecolumn-width: 12rem !default;
 $kendo-scheduler-timecolumn-width: 11rem !default;
 
-$kendo-scheduler-nonwork-bg: k-try-shade( $kendo-scheduler-bg, .5 ) !default;
+$kendo-scheduler-nonwork-bg: if($kendo-new-colors, k-color( surface ), k-try-shade( $kendo-scheduler-bg, .5 )) !default;
 $kendo-scheduler-nonwork-text: null !default;
 
 $kendo-scheduler-weekend-bg: null !default;
 $kendo-scheduler-weekend-text: null !default;
 
-$kendo-scheduler-othermonth-bg: k-try-shade( $kendo-scheduler-bg, .5 ) !default;
+$kendo-scheduler-othermonth-bg: if($kendo-new-colors, k-color( surface ), k-try-shade( $kendo-scheduler-bg, .5 )) !default;
 $kendo-scheduler-othermonth-text: null !default;
 
 $kendo-scheduler-yearview-padding-x: k-map-get( $kendo-spacing, 5 ) !default;

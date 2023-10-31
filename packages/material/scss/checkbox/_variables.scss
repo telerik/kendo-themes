@@ -117,7 +117,7 @@ $kendo-checkbox-disabled-bg: null !default;
 $kendo-checkbox-disabled-text: null !default;
 /// The border color of the disabled CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-border: k-try-shade( $kendo-component-bg, 4 ) !default;
+$kendo-checkbox-disabled-border: if($kendo-new-colors, k-color( base-emphasis ), k-try-shade( $kendo-component-bg, 4 )) !default;
 
 
 /// The background color of the disabled and checked CheckBox.
@@ -125,7 +125,7 @@ $kendo-checkbox-disabled-border: k-try-shade( $kendo-component-bg, 4 ) !default;
 $kendo-checkbox-disabled-checked-bg: $kendo-checkbox-disabled-border !default;
 /// The text color of the disabled and checked CheckBox.
 /// @group checkbox
-$kendo-checkbox-disabled-checked-text: k-contrast-color( $kendo-checkbox-disabled-checked-bg ) !default;
+$kendo-checkbox-disabled-checked-text: if($kendo-new-colors, k-color( on-base ), k-contrast-color( $kendo-checkbox-disabled-checked-bg )) !default;
 /// The border color of the disabled and checked CheckBox.
 /// @group checkbox
 $kendo-checkbox-disabled-checked-border: $kendo-checkbox-disabled-checked-bg !default;

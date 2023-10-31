@@ -99,7 +99,7 @@ $kendo-input-sizes: (
 
 /// The background color of the Input components.
 /// @group input
-$kendo-input-bg: k-try-shade( $kendo-component-bg, .5 ) !default;
+$kendo-input-bg: if($kendo-new-colors, k-color( surface ), k-try-shade( $kendo-component-bg, .5 )) !default;
 /// The text color of the Input components.
 /// @group input
 $kendo-input-text: $kendo-component-text !default;
@@ -142,10 +142,9 @@ $kendo-input-selected-bg: null !default;
 /// The text color of the selected Input components.
 /// @group input
 $kendo-input-selected-text: null !default;
-
 /// The background color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-bg: k-try-shade( $kendo-component-bg, .25 ) !default;
+$kendo-input-disabled-bg: if($kendo-new-colors, rgba( k-color( surface, true ), .6 ), k-try-shade( $kendo-component-bg, .25 )) !default;
 /// The text color of the disabled Input components.
 /// @group input
 $kendo-input-disabled-text: $kendo-disabled-text !default;

@@ -16,7 +16,7 @@ $_default-colors: (
     app-surface: k-map-get( $kendo-palette-gray, white ), // !!! Eventually merge with surface-alt
     on-app-surface: k-map-get( $kendo-palette-gray, 15 ), // !!!
     subtle: k-map-get( $kendo-palette-gray, 12 ), // !!! Eventually merge with base-on-subtle
-    surface: k-map-get( $kendo-palette-gray, white ),
+    surface: k-map-get( $kendo-palette-gray, 2 ),
     surface-alt: k-map-get( $kendo-palette-gray, white ),
     border: k-map-get( $kendo-palette-gray, 5 ),
     border-alt: k-map-get( $kendo-palette-gray, 6 ),

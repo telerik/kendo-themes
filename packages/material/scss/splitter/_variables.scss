@@ -15,10 +15,10 @@ $kendo-splitter-drag-icon-margin: 7px !default;
 $kendo-splitter-collapse-icon-padding-x: null !default;
 $kendo-splitter-collapse-icon-padding-y: k-map-get( $kendo-spacing, .5 ) !default;
 
-$kendo-splitbar-bg: k-try-shade( $kendo-splitter-bg, 1 ) !default;
+$kendo-splitbar-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-splitter-bg, 1 )) !default;
 $kendo-splitbar-text: $kendo-subtle-text !default;
 
-$kendo-splitbar-hover-bg: k-try-shade( $kendo-splitbar-bg, .5 ) !default;
+$kendo-splitbar-hover-bg: if($kendo-new-colors, k-color( base-hover ), k-try-shade( $kendo-splitbar-bg, .5 )) !default;
 $kendo-splitbar-hover-text: $kendo-splitbar-text !default;
 
 $kendo-splitbar-selected-bg: $kendo-color-primary !default;
