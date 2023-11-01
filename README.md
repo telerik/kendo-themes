@@ -4,7 +4,7 @@
 
 ## Setup
 
-* Make sure you have Node v18 or later.
+* Make sure you have Node v20 or later.
 * Clone the repo and run `npm ci` to install dependencies.
 
 ## Development Server
