@@ -49,7 +49,7 @@
             @include box-shadow($kendo-fab-disabled-shadow);
             border-color: if($kendo-new-colors, k-color( base-subtle ), k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
             background-color: if($kendo-new-colors, k-color( base-subtle ), k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
-            color: k-color-tint( $kendo-disabled-text, 4);
+            color: if($kendo-new-colors, $kendo-disabled-text, k-color-tint( $kendo-disabled-text, 4));
             opacity: 1;
         }
     }

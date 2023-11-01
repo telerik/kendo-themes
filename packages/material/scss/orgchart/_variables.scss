@@ -22,7 +22,7 @@ $kendo-orgchart-node-group-text: $kendo-base-text !default;
 $kendo-orgchart-node-group-border: $kendo-base-border !default;
 
 $kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
-$kendo-orgchart-node-group-focus-shadow: 0 2px 4px -1px rgba( $elevation, .2 ), 0 4px 5px 0 rgba( $elevation, .14 ), 0 1px 10px 0 rgba( $elevation, .12 ) !default;
+$kendo-orgchart-node-group-focus-shadow: 0 2px 4px -1px rgba( if($kendo-new-colors, k-color( on-light, true ), $elevation), .2 ), 0 4px 5px 0 rgba( if($kendo-new-colors, k-color( on-light, true ), $elevation), .14 ), 0 1px 10px 0 rgba( if($kendo-new-colors, k-color( on-light, true ), $elevation), .12 ) !default;
 
 $kendo-orgchart-node-group-title-font-size: $kendo-font-size-xl !default;
 $kendo-orgchart-node-group-title-margin-bottom: k-math-div( $kendo-orgchart-spacer, 4 ) !default;

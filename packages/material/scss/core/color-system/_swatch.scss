@@ -241,6 +241,10 @@ $theme: material-theme(
 // Color settings
 $kendo-is-dark-theme: k-map-get( $theme, is-dark ) !default;
 
+/// Color of shadows
+/// @group shadows
+$elevation: k-map-get( $theme, elevation ) !default;
+
 // Theme colors
 /// The color that focuses the user attention.
 /// Used for primary buttons and for elements of primary importance across the theme.

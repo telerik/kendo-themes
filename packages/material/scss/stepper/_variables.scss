@@ -69,7 +69,7 @@ $kendo-stepper-label-text: null !default;
 $kendo-stepper-label-success-text: $kendo-color-success !default;
 $kendo-stepper-label-error-text: $kendo-color-error !default;
 $kendo-stepper-label-hover-text: null !default;
-$kendo-stepper-label-disabled-text: k-map-get( $theme, disabled-text ) !default;
+$kendo-stepper-label-disabled-text: if($kendo-new-colors, $kendo-disabled-text, k-map-get( $theme, disabled-text )) !default;
 
 $kendo-stepper-optional-label-text: $kendo-subtle-text !default;
 $kendo-stepper-optional-label-opacity: null !default;

@@ -56,10 +56,6 @@ $kendo-spacing: (
 
 // Shadows
 
-/// Color of shadows
-/// @group shadows
-$elevation: k-map-get( $theme, elevation ) !default;
-
 /// Shadow for switch.
 /// Equivalent to material elevation 1.
 /// @group shadows
