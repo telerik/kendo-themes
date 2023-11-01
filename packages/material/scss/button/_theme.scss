@@ -9,7 +9,7 @@
     @each $name, $color in $kendo-button-theme-colors {
         .k-button-solid-#{$name} {
             @include box-shadow( $kendo-button-shadow );
-            color: if( $name == "base", $kendo-button-text, k-contrast-color( $color ) );
+            color: if( $name == "base", $kendo-button-text, if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-color( $color )) );
             background-color: if( $name == "base", $kendo-button-bg, $color );
             border-color: if( $name == "base", $kendo-button-bg, $color );
 
