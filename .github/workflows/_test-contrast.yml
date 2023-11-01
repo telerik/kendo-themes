@@ -41,7 +41,7 @@ jobs:
     steps:
 
       - name: Checkout branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install virtual display on Linux
         run: sudo apt-get install xvfb
