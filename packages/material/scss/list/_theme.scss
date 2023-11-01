@@ -3,4 +3,12 @@
 
 @mixin kendo-list--theme() {
     @include kendo-list--theme-base();
+
+    // List item
+    .k-list-item {
+        &.k-selected:hover,
+        &.k-selected.k-hover {
+            background-color: if($kendo-new-colors, k-color( base-active ), k-color-shade( $kendo-list-item-selected-bg ));
+        }
+    }
 }
