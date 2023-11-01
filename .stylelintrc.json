@@ -35,7 +35,18 @@
         "declaration-no-important": true,
         "declaration-block-no-redundant-longhand-properties": [
             true,
-            { "ignoreShorthands": [ "inset" ] }
+            { "ignoreShorthands": [
+                "inset",
+                "inset-inline",
+                "inset-block",
+                "padding-inline",
+                "padding-block",
+                "margin-inline",
+                "margin-block",
+                "overflow",
+                "place-content",
+                "place-items"
+            ] }
         ],
 
         "scss/at-import-partial-extension": "always",
