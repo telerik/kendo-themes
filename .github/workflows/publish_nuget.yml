@@ -37,7 +37,7 @@ jobs:
           export-secrets-to-environment: false
 
       - name: Checkout branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: develop
 
