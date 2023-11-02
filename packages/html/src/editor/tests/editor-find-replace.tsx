@@ -3,7 +3,7 @@ import { Button } from '../../button';
 import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroup } from '../../checkbox';
 import { Textbox } from '../../textbox';
 import { EditorNormal, EditorContent, EditorToolbar } from '../../editor';
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { ButtonGroup } from '../../button-group';
 import { Form, FormField } from '../../form';
 
@@ -34,7 +34,7 @@ export default () =>(
             <span>Replace Window</span>
 
             <section>
-                <Window title="Find and Replace" actions={[ 'x' ]}>
+                <WindowNormal title="Find and Replace" actions={[ 'x' ]}>
                     <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">
@@ -73,11 +73,11 @@ export default () =>(
                             </Form>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window className="k-editor-window" title="Find and Replace" actions={[ 'x' ]}>
+                <WindowNormal className="k-editor-window" title="Find and Replace" actions={[ 'x' ]}>
                     <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">
@@ -123,7 +123,7 @@ export default () =>(
                             </Form>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
 

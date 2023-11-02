@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { MenuItem, MenuList } from '../../menu';
 import { Popup } from '../../popup';
 
@@ -25,9 +25,9 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <section>
-                <Window title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>
+                <WindowNormal title="Window">
                     Target
-                </Window>
+                </WindowNormal>
                 <Popup className="k-menu-popup">
                     <MenuList className="k-context-menu">
                         <MenuItem text="Item 1" showArrow></MenuItem>

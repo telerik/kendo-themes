@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { Form, FormField } from '../../form';
 import { Textbox } from '../../textbox';
@@ -20,18 +20,18 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Create new file" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="stretched" actionButtons={
+                <WindowNormal title="Create new file" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="stretched" actionButtons={
                     <>
                         <Button themeColor="primary">Create new file</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
                     <p>Are you sure you want to close this file without saving it and create a new one?</p>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Save" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Save" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                         <Button>Cancel</Button>
@@ -42,11 +42,11 @@ export default () =>(
 
                         <FormField label="Save as type" editor={ <DropdownList placeholder="Excel Workbook (.xlsx)" />}></FormField>
                     </Form>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Open file" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Open file" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Open</Button>
                         <Button>Cancel</Button>
@@ -55,7 +55,7 @@ export default () =>(
                     <Dropzone note={false} />
 
                     <Upload async status="upload"></Upload>
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>

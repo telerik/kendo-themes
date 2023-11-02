@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Textarea } from '../../textarea';
 import { Button } from '../../button';
 
@@ -20,14 +20,14 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
-                <Window className="k-editor-window" title="View HTML" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal className="k-editor-window" title="View HTML" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Update</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
                     <Textarea className="k-editor-textarea"></Textarea>
-                </Window>
+                </WindowNormal>
             </section>
         </div>
     </>

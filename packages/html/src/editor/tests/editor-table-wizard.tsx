@@ -7,7 +7,7 @@ import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textarea } from '../../textarea';
 import { Textbox } from '../../textbox';
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 
 
 const styles = `
@@ -22,7 +22,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
             <section>
-                <Window className="k-editor-window k-editor-table-wizard-window" title="Table properties" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal actions={[ 'x' ]} className="k-editor-window k-editor-table-wizard-window" title="Table properties" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                         <Button>Cancel</Button>
@@ -119,10 +119,10 @@ export default () =>(
                             </Form>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
             <section>
-                <Window className="k-editor-window k-editor-table-wizard-window" title="Table properties" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal actions={[ 'x' ]} className="k-editor-window k-editor-table-wizard-window" title="Table properties" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                         <Button>Cancel</Button>
@@ -176,11 +176,11 @@ export default () =>(
                             </Form>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window className="k-editor-window k-editor-table-wizard-window" title="Cell properties" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal actions={[ 'x' ]} className="k-editor-window k-editor-table-wizard-window" title="Cell properties" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                         <Button>Cancel</Button>
@@ -266,7 +266,7 @@ export default () =>(
                             editor={ <Textbox /> }
                         />
                     </Form>
-                </Window>
+                </WindowNormal>
             </section>
         </div>
     </>
