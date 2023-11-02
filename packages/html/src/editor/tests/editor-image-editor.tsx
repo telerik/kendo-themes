@@ -1,6 +1,6 @@
 import { Button } from '../../button';
 import { Textbox } from '../../textbox';
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Form, FormField } from '../../form';
 
 
@@ -20,7 +20,7 @@ export default () =>(
             <span></span>
 
             <section>
-                <Window title="Insert Image" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Insert Image" actions={[ 'x' ]} actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Insert</Button>
                         <Button>Cancel</Button>
@@ -32,7 +32,7 @@ export default () =>(
                         <FormField label="Width:" editor={ <Textbox showClearButton={false} /> } />
                         <FormField label="Height:" editor={ <Textbox showClearButton={false} /> } />
                     </Form>
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>

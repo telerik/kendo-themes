@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { DialogModal } from '../../dialog';
 
 
@@ -24,12 +24,12 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
 
-                <Window title="Window with dialog" actions={[ 'window-minimize', 'window', 'x' ]} className="k-window-wrapper">
+                <WindowNormal title="Window with dialog" className="k-window-wrapper">
                     Window content
                     <DialogModal title="Dialog in window" actions={[ 'x' ]}>
                         Dialog content
                     </DialogModal>
-                </Window>
+                </WindowNormal>
             </section>
         </div>
     </>

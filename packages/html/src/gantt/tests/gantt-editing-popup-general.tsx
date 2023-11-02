@@ -1,5 +1,5 @@
 import { Button } from '../../button';
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Textbox } from '../../textbox';
 import { DateTimePicker } from '../../datetimepicker';
 import { NumericTextbox } from '../../numerictextbox';
@@ -20,7 +20,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Edit task" actions={[ 'window-minimize', 'window', 'x' ]} actionButtons={
+                <WindowNormal title="Edit task" actionButtons={
                     <>
                         <Button icon="save" themeColor="primary">Save</Button>
                         <Button icon="cancel">Cancel</Button>
@@ -87,7 +87,7 @@ export default () =>(
                             </Form>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
         </div>
     </>

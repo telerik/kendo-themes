@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Checkbox } from '../../checkbox';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
@@ -24,7 +24,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window title="Edit task" actions={[ 'window-minimize', 'window', 'x' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Edit task" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary" icon="save">Save</Button>
                         <Button icon="cancel">Cancel</Button>
@@ -42,7 +42,7 @@ export default () =>(
                         } />
                         <FormField label="Boolean data field label" editor={ <DropdownList value="True" /> } />
                     </Form>
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>
