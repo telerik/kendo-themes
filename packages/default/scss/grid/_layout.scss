@@ -633,11 +633,12 @@
     }
 
     .k-grid .k-command-cell > .k-button {
+        margin-inline-end: $kendo-grid-command-cell-button-spacing;
         vertical-align: middle;
-    }
-    .k-grid .k-command-cell > .k-button + .k-button {
-        margin-inline-end: unset;
-        margin-inline-start: $kendo-grid-command-cell-button-spacing;
+
+        &:last-child {
+            margin-inline-end: unset;
+        }
     }
 
 
