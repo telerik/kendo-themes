@@ -1,10 +1,5 @@
+import { MultiSelectTreeFiltering, MultiSelectTreePopup } from '..';
 import { Chip, ChipAction } from '../../chip';
-import { MultiSelectTree } from '..';
-import { Checkbox } from '../../checkbox';
-import { Textbox } from '../../textbox';
-import { Icon } from '../../icon';
-import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
-
 
 const styles = `
     #test-area {
@@ -27,92 +22,36 @@ export default () =>(
 
             <div>Opened</div>
             <div>
-                <MultiSelectTree opened
-                    tags={(
-                        <>
-                            <Chip text="Furniture" actions={ <ChipAction type="remove"/> } />
-                        </>
-                    )}
-                    popup={(
-                        <>
-                            <div className="k-list-filter">
-                                <Textbox
-                                    prefix={
-                                        <>
-                                            <Icon icon="search" />
-                                        </>
-                                    }
-                                />
-                            </div>
-                            <div className="k-check-all">
-                                <Checkbox/>
-                                <span className="k-checkbox-label">
-                                    Check all
-                                </span>
-                            </div>
-                            <Treeview>
-                                <TreeviewItem text="Furniture" showCheckbox checked>
-                                    <TreeviewGroup>
-                                        <TreeviewItem text="Child 1" showCheckbox />
-                                        <TreeviewItem text="Child 2" showCheckbox />
-                                        <TreeviewItem text="Child 3" showCheckbox />
-                                    </TreeviewGroup>
-                                </TreeviewItem>
-                                <TreeviewItem text="Decor" showCheckbox>
-                                    <TreeviewGroup>
-                                        <TreeviewItem text="Child 1" showCheckbox />
-                                        <TreeviewItem text="Child 2" showCheckbox />
-                                        <TreeviewItem text="Child 3" showCheckbox />
-                                    </TreeviewGroup>
-                                </TreeviewItem>
-                            </Treeview>
-                        </>
-                    )}
-                />
+                <MultiSelectTreePopup tags={(
+                    <>
+                        <Chip text="Furniture" actions={<ChipAction type="remove" />} />
+                    </>
+                )}/>
             </div>
             <div>
-                <MultiSelectTree opened dir="rtl"
-                    tags={(
-                        <>
-                            <Chip text="Furniture" actions={ <ChipAction type="remove"/> } />
-                        </>
-                    )}
-                    popup={(
-                        <>
-                            <div className="k-list-filter">
-                                <Textbox
-                                    prefix={
-                                        <>
-                                            <Icon icon="search" />
-                                        </>
-                                    }
-                                />
-                            </div>
-                            <div className="k-check-all">
-                                <Checkbox/>
-                                <span className="k-checkbox-label">
-                                    Check all
-                                </span>
-                            </div>
-                            <Treeview dir="rtl">
-                                <TreeviewItem text="Furniture" showCheckbox checked>
-                                    <TreeviewGroup>
-                                        <TreeviewItem text="Child 1" showCheckbox />
-                                        <TreeviewItem text="Child 2" showCheckbox />
-                                        <TreeviewItem text="Child 3" showCheckbox />
-                                    </TreeviewGroup>
-                                </TreeviewItem>
-                                <TreeviewItem text="Decor" showCheckbox>
-                                    <TreeviewGroup>
-                                        <TreeviewItem text="Child 1" showCheckbox />
-                                        <TreeviewItem text="Child 2" showCheckbox />
-                                        <TreeviewItem text="Child 3" showCheckbox />
-                                    </TreeviewGroup>
-                                </TreeviewItem>
-                            </Treeview>
-                        </>
-                    )}
-                />
+                <MultiSelectTreePopup tags={(
+                    <>
+                        <Chip text="Furniture" actions={<ChipAction type="remove" />} />
+                    </>
+                )}
+                dir="rtl"/>
+            </div>
+
+            <div>Filtering</div>
+            <div>
+                <MultiSelectTreeFiltering tags={(
+                    <>
+                        <Chip text="Furniture" actions={<ChipAction type="remove" />} />
+                    </>
+                )}/>
+            </div>
+            <div>
+                <MultiSelectTreeFiltering tags={(
+                    <>
+                        <Chip text="Furniture" actions={<ChipAction type="remove" />} />
+                    </>
+                )}
+                dir="rtl"/>
             </div>
         </div>
     </>

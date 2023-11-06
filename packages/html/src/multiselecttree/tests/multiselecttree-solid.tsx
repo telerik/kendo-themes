@@ -19,44 +19,43 @@ export default () =>(
 
             <div>empty</div>
             <div>
-                <MultiSelectTreeNormal fillMode="flat" placeholder="MultiSelectTree..." />
+                <MultiSelectTreeNormal placeholder="MultiSelectTree..." />
             </div>
             <div dir="rtl">
-                <MultiSelectTreeNormal fillMode="flat" placeholder="MultiSelectTree..." />
+                <MultiSelectTreeNormal placeholder="MultiSelectTree..." />
             </div>
 
             <div>arrow button</div>
             <div>
-                <MultiSelectTreeArrowButton fillMode="flat" showArrowButton placeholder="MultiSelectTree with arrow button" />
+                <MultiSelectTreeArrowButton showArrowButton placeholder="MultiSelectTree with arrow button" />
             </div>
             <div dir="rtl">
-                <MultiSelectTreeArrowButton fillMode="flat" showArrowButton placeholder="MultiSelectTree with arrow button" />
+                <MultiSelectTreeArrowButton showArrowButton placeholder="MultiSelectTree with arrow button" />
             </div>
 
             {[ 'normal', ...MultiSelectTree.states ].map((state) => (
                 <>
                     <div>{state}</div>
                     <div>
-                        <MultiSelectTreeValue fillMode="flat" { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
+                        <MultiSelectTreeValue { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
                     </div>
                     <div dir="rtl">
-                        <MultiSelectTreeValue fillMode="flat" { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
+                        <MultiSelectTreeValue { ...{ [state]: true }}>{state}</MultiSelectTreeValue>
                     </div>
                 </>
             ))}
 
             <div>invalid + focus</div>
             <div>
-                <MultiSelectTreeValue fillMode="flat" invalid focus>invalid + focus</MultiSelectTreeValue>
+                <MultiSelectTreeValue invalid focus>invalid + focus</MultiSelectTreeValue>
             </div>
             <div dir="rtl">
-                <MultiSelectTreeValue fillMode="flat" invalid focus>invalid + focus</MultiSelectTreeValue>
+                <MultiSelectTreeValue invalid focus>invalid + focus</MultiSelectTreeValue>
             </div>
 
             <div>multi line + overflow</div>
             <div>
                 <MultiSelectTreeNormal
-                    fillMode="flat"
                     tags={(
                         <>
                             <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
@@ -67,7 +66,6 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <MultiSelectTreeNormal
-                    fillMode="flat"
                     tags={(
                         <>
                             <Chip text="multi-line" actions={ <ChipAction type="remove"/> } />
