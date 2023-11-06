@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textarea } from '../../textarea';
@@ -29,7 +29,7 @@ export default () =>(
 
             <section>
 
-                <Window title="Edit event" actions={[ 'window-minimize', 'window', 'x' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Edit event" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary" icon="save">Save</Button>
                         <Button icon="cancel">Cancel</Button>
@@ -119,7 +119,7 @@ export default () =>(
                         <FormField label="Owner" editor={ <Combobox placeholder="Select owner" /> }/>
                         <FormField label="Atendee" optional editor={ <MultiSelect placeholder="Invite people" /> }/>
                     </Form>
-                </Window>
+                </WindowNormal>
 
             </section>
 

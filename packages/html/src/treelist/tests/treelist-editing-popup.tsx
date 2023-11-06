@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Checkbox } from '../../checkbox';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
@@ -23,7 +23,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window title="Add item" actions={[ 'window-minimize', 'window', 'x' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Add item" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary" icon="save">Save</Button>
                         <Button icon="cancel">Cancel</Button>
@@ -53,7 +53,7 @@ export default () =>(
                             }
                         />
                     </Form>
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>

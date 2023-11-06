@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { Fieldset, Form, FormField } from '../../form';
 import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
@@ -20,7 +20,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window style={{ width: "620px" }} title="Print" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal style={{ width: "620px" }} title="Print" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                     </>
@@ -127,11 +127,11 @@ export default () =>(
                             </Form>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window style={{ width: "620px" }} title="Print" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal style={{ width: "620px" }} title="Print" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                     </>
@@ -172,7 +172,7 @@ export default () =>(
                             </Form>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
         </div>
     </>

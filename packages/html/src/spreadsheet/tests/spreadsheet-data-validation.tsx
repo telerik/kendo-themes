@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { Form, FormField } from '../../form';
 import { Textbox } from '../../textbox';
@@ -20,7 +20,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Data Validation" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Data Validation" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Apply</Button>
                         <Button>Cancel</Button>
@@ -54,18 +54,18 @@ export default () =>(
                             </>
                         } />
                     </Form>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Birth Date validaiton error" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Birth Date validaiton error" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Retry</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
                     Birth Date should be between 1899 and 1998 year.
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>
