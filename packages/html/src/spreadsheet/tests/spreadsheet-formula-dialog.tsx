@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { Form, FormField } from '../../form';
 import { DropdownList } from '../../dropdownlist';
@@ -19,7 +19,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Insert formula" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Insert formula" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Apply</Button>
                         <Button>Cancel</Button>
@@ -37,7 +37,7 @@ export default () =>(
                             </ListBox>
                         } />
                     </Form>
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>

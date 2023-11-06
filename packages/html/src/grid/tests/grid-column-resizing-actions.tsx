@@ -4,7 +4,7 @@ import { Pager } from '../../pager';
 import { Table, TableThead, TableTbody, TableRow, TableTh, TableTd } from '../../table';
 import { Toolbar } from '../../toolbar';
 import { Popup } from '../../popup';
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
 import { Form, FormField } from '../../form';
 import { Checkbox } from '../../checkbox';
@@ -220,7 +220,7 @@ export default () =>(
             </Popup>
 
             <section>
-                <Window title="Column Width" actions={[ 'x' ]} className="k-grid-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Column Width" actions={[ 'x' ]} className="k-grid-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Apply</Button>
                         <Button>Cancel</Button>
@@ -242,7 +242,7 @@ export default () =>(
                         >
                         </FormField>
                     </Form>
-                </Window>
+                </WindowNormal>
             </section>
         </div>
     </>

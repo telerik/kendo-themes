@@ -1,4 +1,4 @@
-import { Window } from '..';
+import { Window, WindowNormal } from '..';
 
 const style = `
     .k-window {
@@ -10,23 +10,11 @@ export default () =>(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
-
-            <section>
-                <Window title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>Window with default theme color</Window>
-            </section>
-
-            <section>
-                <Window themeColor="primary" title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>Window with primary theme color</Window>
-            </section>
-
-            <section>
-                <Window themeColor="dark" title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>Window with dark theme color</Window>
-            </section>
-
-            <section>
-                <Window themeColor="light" title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>Window with light theme color</Window>
-            </section>
-
+            {[ undefined ,...Window.options.themeColor ].map((color) => (
+                <section>
+                    <WindowNormal themeColor={color}>Window with {color ? color : "no"} theme color</WindowNormal>
+                </section>
+            ))}
         </div>
     </>
 );

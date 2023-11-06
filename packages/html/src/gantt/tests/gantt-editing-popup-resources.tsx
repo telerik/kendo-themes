@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { NumericTextbox } from '../../numerictextbox';
 import { DropdownList } from '../../dropdownlist';
 import { Toolbar } from '../../toolbar';
@@ -20,7 +20,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Edit task" actions={[ 'window-minimize', 'window', 'x' ]} actionButtons={
+                <WindowNormal title="Edit task" actionButtons={
                     <>
                         <Button icon="save" themeColor="primary">Save</Button>
                         <Button icon="cancel">Cancel</Button>
@@ -168,7 +168,7 @@ export default () =>(
                             </div>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>
