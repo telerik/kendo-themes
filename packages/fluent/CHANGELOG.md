@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.2](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.5...v7.0.2) (2023-11-06)
+
+
+### Bug Fixes
+
+* **grid:** edit buttons misalignment ([8692742](https://github.com/telerik/kendo-themes/commit/8692742b5b6d545918e9a8373d17c8db47c4b970))
+* **listbox:** prevent listbox from overlapping other elements ([1902684](https://github.com/telerik/kendo-themes/commit/19026845b08b3ee47c4ab1b748666d741d391ef5))
+
+
+
+
+
 ## [7.0.2-dev.5](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.4...v7.0.2-dev.5) (2023-11-06)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
