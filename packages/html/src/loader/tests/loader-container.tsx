@@ -1,4 +1,4 @@
-import { LoaderContainer } from '../../loader';
+import { LoaderContainer, LoaderContainerNormal } from '../../loader';
 
 
 const styles = `
@@ -19,45 +19,26 @@ export default () =>(
             <span className="col">Medium</span>
             <span className="col">Large</span>
 
-
             <span>Top</span>
-            <span className="example">
-                <LoaderContainer size={'small'} position={'top'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
-
-            <span className="example">
-                <LoaderContainer size={'medium'} position={'top'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
-
-            <span className="example">
-                <LoaderContainer size={'large'} position={'top'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
+            {LoaderContainer.options.size.map((size) => (
+                <span className="example">
+                    <LoaderContainerNormal size={size} panel={true} />
+                </span>
+            ))}
 
             <span>End</span>
-            <span className="example">
-                <LoaderContainer size={'small'} position={'end'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
-
-            <span className="example">
-                <LoaderContainer size={'medium'} position={'end'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
-
-            <span className="example">
-                <LoaderContainer size={'large'} position={'end'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
+            {LoaderContainer.options.size.map((size) => (
+                <span className="example">
+                    <LoaderContainerNormal size={size} position={'end'} panel={true} />
+                </span>
+            ))}
 
             <span>Start</span>
-            <span className="example">
-                <LoaderContainer size={'small'} position={'start'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
-
-            <span className="example">
-                <LoaderContainer size={'medium'} position={'start'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
-
-            <span className="example">
-                <LoaderContainer size={'large'} position={'start'} themeColor={'primary'} overlay={'dark'} panel={true} />
-            </span>
+            {LoaderContainer.options.size.map((size) => (
+                <span className="example">
+                    <LoaderContainerNormal size={size} position={'start'} panel={true} />
+                </span>
+            ))}
         </div>
     </>
 );

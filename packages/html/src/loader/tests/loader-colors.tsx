@@ -10,23 +10,25 @@ export default () =>(
             <span className="col">Spinner 3</span>
             <span className="col">Spinner 4</span>
 
-            {Loader.options.size.map((size) => (
+            {Loader.options.themeColor.map((color) => (
                 <>
-                    <span>{size}</span>
+                    <span>{color}</span>
+
                     <span>
-                        <LoaderNormal size={size} />
+                        <LoaderNormal size={'large'} themeColor={color} />
                     </span>
 
                     <span>
-                        <LoaderInfinite size={size} />
+                        <LoaderInfinite size={'large'} themeColor={color} />
                     </span>
 
                     <span>
-                        <LoaderConverging size={size} />
+                        <LoaderConverging size={'large'} themeColor={color} />
                     </span>
                 </>
 
             ))}
+
         </div>
     </>
 );
