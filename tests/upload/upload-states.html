@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            justify-items: start;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            width: 480px;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <section>
+            <span>normal</span>
+            <div class="k-upload k-upload-async">
+                <div class="k-upload-dropzone k-dropzone">
+                    <div class="k-upload-button-wrap">
+                        <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Select files...</span>
+                        </button>
+                        <input id="upload-input" class="k-hidden">
+                    </div>
+                    <span class="k-dropzone-hint">Drop files here to upload</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <span>hover</span>
+            <div class="k-upload k-upload-async">
+                <div class="k-upload-dropzone k-dropzone k-hover">
+                    <div class="k-upload-button-wrap">
+                        <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Select files...</span>
+                        </button>
+                        <input id="upload-input" class="k-hidden">
+                    </div>
+                    <span class="k-dropzone-hint">Drop files here to upload</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <span>disabled</span>
+            <div class="k-upload k-disabled k-upload-async">
+                <div class="k-upload-dropzone k-dropzone">
+                    <div class="k-upload-button-wrap">
+                        <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Select files...</span>
+                        </button>
+                        <input id="upload-input" class="k-hidden">
+                    </div>
+                    <span class="k-dropzone-hint">Drop files here to upload</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
