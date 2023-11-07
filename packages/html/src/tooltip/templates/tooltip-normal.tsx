@@ -1,7 +1,8 @@
-//import Tooltip from "../tooltip.spec";
+import Tooltip from "../tooltip.spec";
 
-/*export const TooltipNormal = ({ children, ...other }) => (
-    <Tooltip {...other}>
-        {children}
-    </Tooltip>
-);*/
+export const TooltipNormal = (props: any) => (
+    <Tooltip
+        content="Tooltip Content"
+        {...props}
+    />
+);

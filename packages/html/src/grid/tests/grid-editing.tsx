@@ -1,9 +1,9 @@
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
-import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Toolbar } from '../../toolbar';
+import { TooltipNormal } from '../../tooltip';
 
 
 export default () =>(
@@ -148,7 +148,12 @@ export default () =>(
                                 </td>
                                 <td className="k-table-td">
                                     <NumericTextbox invalid />
-                                    <div className="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><Icon className="k-tooltip-icon" icon="exclamation-circle" /><span className="k-tooltip-content">Price</span><div className="k-callout k-callout-n"></div></div>
+                                    <TooltipNormal className="k-validator-tooltip k-invalid-msg"
+                                        themeColor="error"
+                                        callout="top"
+                                        icon="exclamation-circle"
+                                        content="Price"
+                                    />
                                 </td>
                                 <td className="k-table-td"><Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" /><label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label></td>
                                 <td className="k-table-td k-command-cell">
