@@ -1,5 +1,5 @@
 import { AnimationContainer } from '../../animation-container';
-import { Tooltip } from '../../tooltip';
+import { Tooltip, TooltipNormal, TooltipClosable } from '../../tooltip';
 
 const style = `
         .k-animation-container {
@@ -13,7 +13,6 @@ const style = `
         }
 `;
 
-
 export default () =>(
     <>
         <style>{style}</style>
@@ -26,19 +25,19 @@ export default () =>(
                 <>
                     <section>
                         <AnimationContainer>
-                            <Tooltip content={`${themeColor} tooltip`} themeColor={themeColor} />
+                            <TooltipNormal content={`${themeColor} tooltip`} themeColor={themeColor} />
                         </AnimationContainer>
                     </section>
 
                     <section>
                         <AnimationContainer>
-                            <Tooltip closable={true} content={`${themeColor} tooltip`} themeColor={themeColor} />
+                            <TooltipClosable content={`${themeColor} tooltip`} themeColor={themeColor} />
                         </AnimationContainer>
                     </section>
 
                     <section>
                         <AnimationContainer>
-                            <Tooltip callout="bottom" content={`${themeColor} tooltip`} themeColor={themeColor} />
+                            <TooltipNormal callout="bottom" content={`${themeColor} tooltip`} themeColor={themeColor} />
                         </AnimationContainer>
                     </section>
                 </>

@@ -1,8 +1,11 @@
-//import { Icon } from '../../icon';
 import { AnimationContainer } from '../../animation-container';
-import { Tooltip } from '../../tooltip';
+import { TooltipNormal, TooltipClosable } from '../../tooltip';
 
 const style = `
+    #test-area {
+        grid-template-columns: 120px repeat(4, 1fr);
+    }
+
     .k-animation-container {
         display: inline-block;
         position: relative;
@@ -18,130 +21,136 @@ const style = `
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid k-grid-cols-5">
 
+            <span>Tooltip / Callout</span>
             <span>Callout bottom</span>
             <span>Callout top</span>
             <span>Callout right</span>
             <span>Callout left</span>
 
+            <span>Content</span>
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Tooltip Content" callout="bottom" />
+                    <TooltipNormal callout="bottom" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Tooltip Content" callout="top"/>
+                    <TooltipNormal callout="top"/>
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Tooltip Content" callout="right"/>
+                    <TooltipNormal callout="right"/>
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Tooltip Content" callout="left"/>
+                    <TooltipNormal callout="left"/>
+                </AnimationContainer>
+            </section>
+
+            <span>Long content</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" callout="bottom" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Long tooltip content. Enough so it goes on another line" callout="bottom" />
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" callout="top" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Long tooltip content. Enough so it goes on another line" callout="top" />
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" callout="right" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Long tooltip content. Enough so it goes on another line" callout="right" />
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" callout="left" />
+                </AnimationContainer>
+            </section>
+
+            <span>Content & Title</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal title="Tooltip title" callout="bottom" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Long tooltip content. Enough so it goes on another line" callout="left" />
+                    <TooltipNormal title="Tooltip title" callout="top" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Tooltip Content" title="Tooltip title" callout="bottom" />
+                    <TooltipNormal title="Tooltip title" callout="right" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Tooltip Content" title="Tooltip title" callout="top" />
+                    <TooltipNormal title="Tooltip title" callout="left" />
+                </AnimationContainer>
+            </section>
+
+            <span>Long content & Title (with glyphs)</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal content="long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="bottom" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Tooltip Content" title="Tooltip title" callout="right" />
+                    <TooltipNormal content="long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="top" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="Tooltip Content" title="Tooltip title" callout="left" />
+                    <TooltipNormal content="long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="right" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="bottom" />
+                    <TooltipNormal content="long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="left" />
+                </AnimationContainer>
+            </section>
+
+            <span>Closable tooltip with content</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipClosable callout="bottom" />
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="top" />
+                    <TooltipClosable callout="top"/>
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="right" />
+                    <TooltipClosable callout="right"/>
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer>
-                    <Tooltip content="long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="left" />
-                </AnimationContainer>
-            </section>
-
-            <section>
-                <AnimationContainer>
-                    <Tooltip content="Closeable tooltip" closable callout="bottom" />
-                </AnimationContainer>
-            </section>
-
-            <section>
-                <AnimationContainer>
-                    <Tooltip content="Closeable tooltip" closable callout="top"/>
-                </AnimationContainer>
-            </section>
-
-            <section>
-                <AnimationContainer>
-                    <Tooltip content="Closeable tooltip" closable callout="right"/>
-                </AnimationContainer>
-            </section>
-
-            <section>
-                <AnimationContainer>
-                    <Tooltip content="Closeable tooltip" closable callout="left"/>
+                    <TooltipClosable callout="left"/>
                 </AnimationContainer>
             </section>
         </div>
