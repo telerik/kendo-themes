@@ -1,0 +1,73 @@
+@import "../functions/index.import.scss";
+@import "../_variables.scss";
+
+$_default-motion-durations: (
+    short-1: 0.05s,
+    short-2: 0.1s,
+    short-3: 0.15s,
+    short-4: 0.2s,
+    medium-1: 0.25s,
+    medium-2: 0.3s,
+    medium-3: 0.35s,
+    medium-4: 0.4s,
+    long-1: 0.45s,
+    long-2: 0.5s,
+    long-3: 0.55s,
+    long-4: 0.6s,
+    extra-long-1: 0.7s,
+    extra-long-2: 0.8s,
+    extra-long-3: 0.9,
+    extra-long-4: 1s
+) !default;
+
+$_default-motion-easings: (
+    "ease-in": cubic-bezier(0.42, 0, 1, 1),
+    "ease-out": cubic-bezier(0, 0, 0.58, 1),
+    "ease-in-out": cubic-bezier(0.42, 0, 0.58, 1),
+    "linear": cubic-bezier(0, 0, 1, 1),
+    "decelerate-out": cubic-bezier(0, 0, 0.2, 1),
+    "accelerate-in": cubic-bezier(0.64, 0, 1, 1),
+    "accelerate-out-back": cubic-bezier(0.45, 1.45, 0.8, 1),
+    "accelerate-in-back": cubic-bezier(0.3, -0.05, 0.7, -0.5),
+    "accelerate-in-out-back": cubic-bezier(0.7, -0.4, 0.4, 1.4)
+) !default;
+
+$kendo-motion-durations: $_default-motion-durations !default;
+
+$kendo-motion-durations: k-map-merge($kendo-motion-durations, $_default-motion-durations);
+
+$kendo-motion-easings: $_default-motion-easings !default;
+
+$kendo-motion-easings: k-map-merge($kendo-motion-easings, $_default-motion-easings);
+
+@function k-motion($duration, $easing-function, $properties...) {
+    $_transition: ();
+
+    @each $property in $properties {
+        $_transition-duration: if($kendo-enable-transitions, k-map-get($kendo-motion-durations, $duration), 0s);
+        $_transition-easing: if(k-map-has-key($kendo-motion-easings, $easing-function), k-map-get($kendo-motion-easings, $easing-function), $easing-function);
+
+        $_transition: k-list-append($_transition, $property var(--kendo-global-duration, var(--kendo-motion-#{$duration}, #{$_transition-duration})) var(--kendo-motion-#{$easing-function}, #{$_transition-easing}), comma);
+    }
+
+    @return $_transition;
+}
+
+@mixin kendo-motion($duration, $easing-function, $properties...) {
+    transition: k-motion($duration, $easing-function, $properties...);
+}
+
+@mixin kendo-motion--styles() {
+    :root {
+        @each $duration, $duration-value in $kendo-motion-durations {
+            --kendo-motion-#{$duration}: #{$duration-value};
+        }
+        @each $easing, $easing-value in $kendo-motion-easings {
+            --kendo-motion-#{$easing}: #{$easing-value};
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            --kendo-global-duration: 0s;
+        }
+    }
+}
