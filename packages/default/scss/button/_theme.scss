@@ -146,7 +146,7 @@
         .k-button-outline-#{$name} {
             @include box-shadow( none );
             border-color: currentColor;
-            color: $color;
+            color: if($kendo-new-colors, k-color( #{$name}-on-surface ), $color);
             background-color: transparent;
 
             // Hover state

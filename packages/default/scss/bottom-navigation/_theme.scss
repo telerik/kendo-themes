@@ -34,12 +34,12 @@
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: if($kendo-new-colors, k-color( base ), rgba($kendo-bottom-nav-flat-text, .05)) );
+                @include fill( $bg: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .05), rgba($kendo-bottom-nav-flat-text, .05)) );
             }
 
             .k-bottom-nav-item.k-selected {
                 @if $name == "secondary" or $name == "light" {
-                    @include fill( $color: if($kendo-new-colors, k-color( on-light ), k-try-shade($color, 3)) );
+                    @include fill( $color: if($kendo-new-colors, k-color( #{$name} ), k-try-shade($color, 3)) );
                 } @else {
                     @include fill( $color: $color );
                 }

@@ -88,9 +88,9 @@ $kendo-theme-colors: () !default;
         --kendo-link-text: #{$kendo-link-text};
         --kendo-link-hover-text: #{$kendo-link-hover-text};
 
-        --kendo-disabled-bg: #{$kendo-disabled-bg};
-        --kendo-disabled-text: #{$kendo-disabled-text};
-        --kendo-disabled-border: #{$kendo-disabled-border};
+        @if($kendo-disabled-bg) { --kendo-disabled-bg: #{$kendo-disabled-bg}; }
+        @if($kendo-disabled-text) { --kendo-disabled-text: #{$kendo-disabled-text}; }
+        @if($kendo-disabled-border) { --kendo-disabled-border: #{$kendo-disabled-border}; }
 
         --kendo-hover-bg: #{$kendo-hover-bg};
         --kendo-hover-text: #{$kendo-hover-text};
@@ -104,14 +104,14 @@ $kendo-theme-colors: () !default;
         --kendo-selected-hover-text: #{$kendo-selected-hover-text};
         --kendo-selected-hover-border: #{$kendo-selected-hover-border};
 
-        --kendo-focus-outline: #{$kendo-focus-outline};
+        @if($kendo-focus-outline) { --kendo-focus-outline: #{$kendo-focus-outline}; }
 
         --kendo-subtle-text: #{$kendo-subtle-text};
 
-        --kendo-invalid-bg: #{$kendo-invalid-bg};
-        --kendo-invalid-text: #{$kendo-invalid-text};
-        --kendo-invalid-border: #{$kendo-invalid-border};
-        --kendo-invalid-shadow: #{$kendo-invalid-shadow};
+        @if($kendo-invalid-bg) { --kendo-invalid-bg: #{$kendo-invalid-bg}; }
+        @if($kendo-invalid-text) { --kendo-invalid-text: #{$kendo-invalid-text}; }
+        @if($kendo-invalid-border) { --kendo-invalid-border: #{$kendo-invalid-border}; }
+        @if($kendo-invalid-shadow) { --kendo-invalid-shadow: #{$kendo-invalid-shadow}; }
 
         --kendo-border-radius-sm: #{$kendo-border-radius-sm};
         --kendo-border-radius-md: #{$kendo-border-radius-md};

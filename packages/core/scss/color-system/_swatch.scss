@@ -156,8 +156,10 @@ $kendo-colors: k-map-merge($_default-colors, $kendo-colors);
 @mixin color-system--styles() {
     :root {
         @each $key, $value in $kendo-colors {
-            --kendo-color-#{$key}: #{$value};
-            --kendo-color-#{$key}-rgb: #{k-hex-to-rgb($value)};
+            @if($value) {
+                --kendo-color-#{$key}: #{$value};
+                --kendo-color-#{$key}-rgb: #{k-hex-to-rgb($value)};
+            }
         }
     }
 }

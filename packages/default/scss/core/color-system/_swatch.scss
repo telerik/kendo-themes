@@ -14,8 +14,8 @@ $_default-colors: (
     subtle: k-map-get( $kendo-palette-gray, 10 ), // !!! Eventually merge with base-on-subtle
     surface: k-map-get( $kendo-palette-gray, 1 ),
     surface-alt: k-map-get( $kendo-palette-gray, white ),
-    border: k-map-get( $kendo-palette-gray, 4 ),
-    border-alt: k-map-get( $kendo-palette-gray, 5 ),
+    border: rgba( k-map-get( $kendo-palette-gray, black ), .08),
+    border-alt: rgba( k-map-get( $kendo-palette-gray, black ), .16),
     // Base
     base-subtle: k-map-get( $kendo-palette-gray, 3 ),
     base-subtle-hover: k-map-get( $kendo-palette-gray, 4 ),

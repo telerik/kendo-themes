@@ -222,7 +222,7 @@ $kendo-grid-grouping-row-bg: $kendo-base-bg !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
 $kendo-grid-sorted-icon-spacing: calc( #{$kendo-padding-md-x} - 1px ) !default;
-$kendo-grid-sorted-bg: if($kendo-new-colors, rgba( k-color( dark, true ), .03 ), rgba( k-contrast-legacy( $kendo-grid-bg ), .02 )) !default;
+$kendo-grid-sorted-bg: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .03 ), rgba( k-contrast-legacy( $kendo-grid-bg ), .02 )) !default;
 $kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
 $kendo-grid-sorting-index-font-size: $kendo-font-size-sm !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
@@ -236,10 +236,12 @@ $kendo-grid-command-cell-button-spacing: k-map-get( $kendo-spacing, 2 ) !default
 // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
 $kendo-grid-command-cell-padding-y: calc( #{$kendo-grid-cell-padding-y} - (#{$kendo-button-calc-size} - #{$kendo-line-height-em}) / 2 ) !default;
 
+// Must be a solid color
 $kendo-grid-sticky-bg: $kendo-component-bg !default;
 $kendo-grid-sticky-text: $kendo-grid-text !default;
 $kendo-grid-sticky-border: rgba( black, .3 ) !default;
 
+// Must be a solid color
 $kendo-grid-sticky-alt-bg: if($kendo-new-colors, k-color( base ), k-color-shade($kendo-grid-bg, 3.5%)) !default;
 
 $kendo-grid-sticky-header-bg: $kendo-grid-header-bg !default;
@@ -252,6 +254,7 @@ $kendo-grid-sticky-footer-hover-bg: $kendo-grid-hover-bg !default;
 $kendo-grid-sticky-selected-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), k-color-mix($kendo-selected-bg, #ffffff, 25%)) !default;
 $kendo-grid-sticky-selected-alt-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .24 ), k-color-shade($kendo-grid-sticky-selected-bg, .4)) !default;
 
+// Must be a solid color
 $kendo-grid-sticky-hover-bg: if($kendo-new-colors, k-color( base-hover ), k-color-darken($kendo-grid-bg, 8%)) !default;
 $kendo-grid-sticky-selected-hover-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .24 ), k-color-shade($kendo-grid-sticky-selected-bg, .7)) !default;
 

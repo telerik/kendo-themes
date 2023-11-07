@@ -25,6 +25,6 @@ $kendo-map-zoom-control-button-padding-y: $kendo-map-zoom-control-button-padding
 $kendo-map-attribution-padding-x: $kendo-padding-sm-x !default;
 $kendo-map-attribution-padding-y: $kendo-padding-sm-y !default;
 $kendo-map-attribution-font-size: ($kendo-map-font-size * .75) !default;
-$kendo-map-attribution-bg: rgba( $kendo-map-bg, .8 ) !default;
+$kendo-map-attribution-bg: if($kendo-new-colors, rgba( k-color( app-surface, true ), .8 ), rgba( $kendo-map-bg, .8 )) !default;
 
 $kendo-map-marker-fill: $kendo-color-primary !default;
