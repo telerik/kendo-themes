@@ -27,9 +27,9 @@ export const Chat = (
 ) => {
     const {
         dir,
-        showToolbar = defaultOptions.showToolbar,
+        showToolbar,
         showMessageBox = defaultOptions.showMessageBox,
-        showMoreButton = defaultOptions.showMoreButton,
+        showMoreButton,
         ...other
     } = props;
 
