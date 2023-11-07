@@ -186,7 +186,7 @@ $kendo-button-focus-border: null !default;
 $kendo-button-focus-gradient: null !default;
 /// The base shadow of the focused Button.
 /// @group button
-$kendo-button-focus-shadow: 0 0 4px 0 rgba( $kendo-button-border, .75 ) !default;
+$kendo-button-focus-shadow: 0 0 4px 0 if($kendo-new-colors, rgba( k-color( border, true ), .75), rgba( $kendo-button-border, .75 )) !default;
 
 /// The base background of the disabled Button.
 /// @group button
