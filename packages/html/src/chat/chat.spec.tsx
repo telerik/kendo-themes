@@ -59,7 +59,7 @@ export const Chat = (
             }
             { showToolbar &&
                 <div className="k-chat-toolbar k-toolbar">
-                    <Button className="k-scroll-button k-scroll-button-left k-hidden" icon="chevron-left" />
+                    <Button className={classNames("k-scroll-button", "k-scroll-button-left", dir === 'rtl' ? "" : "k-hidden")} icon="chevron-left" />
                     <div className="k-toolbar-group k-button-list">
                         <Button icon="arrow-rotate-cw"></Button>
                         <Button icon="gear"></Button>
@@ -71,7 +71,7 @@ export const Chat = (
                         <Button icon="question-circle"></Button>
                         <Button icon="trash"></Button>
                     </div>
-                    <Button className="k-scroll-button k-scroll-button-right" icon="chevron-right" />
+                    <Button className={classNames("k-scroll-button", "k-scroll-button-right", dir === 'rtl' && "k-hidden")} icon="chevron-right" />
                 </div>
             }
         </div>
