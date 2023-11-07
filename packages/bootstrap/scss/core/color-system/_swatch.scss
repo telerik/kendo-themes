@@ -369,6 +369,9 @@ $kendo-selected-hover-text: $kendo-selected-text !default;
 $kendo-selected-hover-border: $kendo-base-border !default;
 $kendo-selected-hover-gradient: null !default;
 
+/// Text color of disabled items.
+$kendo-disabled-text: if( $kendo-is-dark-theme, $gray-600, $gray-500) !default;
+
 // Header
 $kendo-component-header-bg: $kendo-base-bg !default;
 $kendo-component-header-text: $kendo-component-text !default;

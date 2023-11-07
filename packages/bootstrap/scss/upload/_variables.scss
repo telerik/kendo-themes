@@ -43,7 +43,7 @@ $kendo-upload-dropzone-bg: $kendo-component-header-bg !default;
 $kendo-upload-dropzone-border: $kendo-upload-border !default;
 /// The background color of the hovered Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-try-shade( $kendo-upload-dropzone-bg, .2 )) !default;
+$kendo-upload-dropzone-hover-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-upload-dropzone-bg, .2 )) !default;
 
 /// The text color of the Upload status message.
 /// @group upload
