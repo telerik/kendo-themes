@@ -5,7 +5,7 @@ import { Textbox } from '../../textbox';
 import { DatePicker } from '../../datepicker';
 import { NumericTextbox } from '../../numerictextbox';
 import { Checkbox } from '../../checkbox';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 
 
 const styles = `
@@ -50,7 +50,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div">
+                            <FormNormal formButtons={null} tag="div">
                                 <FormField
                                     label="Notes"
                                     optional
@@ -76,7 +76,7 @@ export default () =>(
                                         </>
                                     }
                                 />
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
                 </WindowNormal>

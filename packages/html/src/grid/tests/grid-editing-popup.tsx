@@ -5,7 +5,7 @@ import { Textbox } from '../../textbox';
 import { Button } from '../../button';
 import { DropdownList } from '../../dropdownlist';
 import { DatePicker } from '../../datepicker';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 
 
 const styles = `
@@ -30,7 +30,7 @@ export default () =>(
                         <Button icon="cancel">Cancel</Button>
                     </>
                 }>
-                    <Form tag="div">
+                    <FormNormal formButtons={null} tag="div">
                         <FormField className="k-form-field-error" label="Text data field label" error="Error" editor={ <Textbox value="Invalid" invalid showClearButton /> } />
                         <FormField label="Date data field label" editor={ <DatePicker placeholder="dd/MM/yyyy" /> } />
                         <FormField label="Numeric data field label" editor={ <NumericTextbox placeholder="##,###" /> } />
@@ -41,7 +41,7 @@ export default () =>(
                             </>
                         } />
                         <FormField label="Boolean data field label" editor={ <DropdownList value="True" /> } />
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 
