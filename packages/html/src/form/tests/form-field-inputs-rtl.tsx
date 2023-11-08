@@ -7,7 +7,7 @@ import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
 import { UploadChunk, UploadFile } from '../../upload';
-import { Form, FormField } from '../../form';
+import { FormField, FormHorizontal, FormNormal } from '../../form';
 import { Slider, SliderTick } from '../../slider';
 
 
@@ -32,8 +32,9 @@ export default () =>(
             <span>Horizontal Form</span>
 
             <section>
-                <Form>
-
+                <FormNormal
+                    formButtons={null}
+                >
                     <FormField
                         dir="rtl"
                         label="Textbox:"
@@ -170,14 +171,14 @@ export default () =>(
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormNormal>
             </section>
 
 
             <section>
-                <Form orientation="horizontal">
-
+                <FormHorizontal
+                    formButtons={null}
+                >
                     <FormField
                         dir="rtl"
                         label="Textbox:"
@@ -265,7 +266,7 @@ export default () =>(
 
                     <FormField
                         dir="rtl"
-                        label="Slider"
+                        label="Slider:"
                         editor={
                             <Slider dir="rtl">
                                 <SliderTick label large text="0"/>
@@ -314,8 +315,7 @@ export default () =>(
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormHorizontal>
             </section>
         </div>
     </>
