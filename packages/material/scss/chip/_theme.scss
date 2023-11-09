@@ -56,13 +56,16 @@
                 }
             } @else {
                 @include fill(
-                    $color: if($kendo-new-colors, k-color( #{$name}-on-subtle ), k-try-shade( $color, 50% ))
+                    $color: if($kendo-new-colors, k-color( #{$name}-on-surface ), k-try-shade( $color, 50% ))
                 );
 
                 &:focus,
                 &.k-focus {
                     @include box-shadow( none );
-                    @include fill( $bg: if($kendo-new-colors, k-color( #{$name}-subtle-active ), k-try-tint( $color, 65% )) );
+                    @include fill(
+                        $bg: if($kendo-new-colors, k-color( #{$name}-subtle-active ), k-try-tint( $color, 65% )),
+                        $color: if($kendo-new-colors, k-color( #{$name}-on-subtle ), k-try-shade( $color, 50% ))
+                    );
                 }
 
                 &:hover,

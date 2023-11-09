@@ -144,13 +144,13 @@ $kendo-input-selected-bg: null !default;
 $kendo-input-selected-text: null !default;
 /// The background color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-bg: if($kendo-new-colors, rgba( k-color( surface, true ), .6 ), k-try-shade( $kendo-component-bg, .25 )) !default;
+$kendo-input-disabled-bg: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .03 ), k-try-shade( $kendo-component-bg, .25 )) !default;
 /// The text color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-text: $kendo-disabled-text !default;
+$kendo-input-disabled-text: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .27 ), $kendo-disabled-text) !default;
 /// The border color of the disabled Input components.
 /// @group input
-$kendo-input-disabled-border: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .06 ), rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) )) !default;
+$kendo-input-disabled-border: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .03 ), rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) )) !default;
 /// The gradient of the disabled Input components.
 /// @group input
 $kendo-input-disabled-gradient: null !default;

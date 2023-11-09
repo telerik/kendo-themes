@@ -82,7 +82,7 @@ $kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 $kendo-tabstrip-item-dragging-shadow: $box-shadow-depth-3 !default;
 
 $kendo-tabstrip-item-disabled-bg: null !default;
-$kendo-tabstrip-item-disabled-text: if($kendo-new-colors, $kendo-disabled-text, k-map-get( $theme, disabled-text )) !default;
+$kendo-tabstrip-item-disabled-text: if($kendo-new-colors, rgba( k-color( on-app-surface, rgba ), .32 ), k-map-get( $theme, disabled-text )) !default;
 $kendo-tabstrip-item-disabled-border: null !default;
 $kendo-tabstrip-item-disabled-gradient: null !default;
 $kendo-tabstrip-item-disabled-opacity: 1 !default;

@@ -18,8 +18,8 @@ $_default-colors: (
     subtle: k-map-get( $kendo-palette-gray, 12 ), // !!! Eventually merge with base-on-subtle
     surface: k-map-get( $kendo-palette-gray, 2 ),
     surface-alt: k-map-get( $kendo-palette-gray, white ),
-    border: k-map-get( $kendo-palette-gray, 5 ),
-    border-alt: k-map-get( $kendo-palette-gray, 6 ),
+    border: rgba( k-map-get( $kendo-palette-gray, black ), .12),
+    border-alt: rgba( k-map-get( $kendo-palette-gray, black ), .15),
     // Base
     base-subtle: k-map-get( $kendo-palette-gray, 4 ),
     base-subtle-hover: k-map-get( $kendo-palette-gray, 6 ),
@@ -32,16 +32,16 @@ $_default-colors: (
     on-base: k-map-get( $kendo-palette-gray, 15 ),
     base-on-surface: k-map-get( $kendo-palette-gray, 15 ),
     // Primary
-    primary-subtle: k-map-get( $kendo-palette-indigo, 1 ),
-    primary-subtle-hover: k-map-get( $kendo-palette-indigo, 2 ),
-    primary-subtle-active: k-map-get( $kendo-palette-indigo, 3 ),
+    primary-subtle: k-map-get( $kendo-palette-indigo, 4 ),
+    primary-subtle-hover: k-map-get( $kendo-palette-indigo, 5 ),
+    primary-subtle-active: k-map-get( $kendo-palette-indigo, 6 ),
     primary: k-map-get( $kendo-palette-indigo, 8 ),
     primary-hover: k-map-get( $kendo-palette-indigo, 9 ),
     primary-active: k-map-get( $kendo-palette-indigo, 11 ),
-    primary-emphasis: k-map-get( $kendo-palette-indigo, 6 ),
+    primary-emphasis: k-map-get( $kendo-palette-indigo, 7 ),
     primary-on-subtle: k-map-get( $kendo-palette-indigo, 15 ),
     on-primary: k-map-get( $kendo-palette-gray, white ),
-    primary-on-surface: k-map-get( $kendo-palette-indigo, 10 ),
+    primary-on-surface: k-map-get( $kendo-palette-indigo, 8 ),
     // Secondary
     secondary-subtle: k-map-get( $kendo-palette-pink, 4 ),
     secondary-subtle-hover: k-map-get( $kendo-palette-pink, 5 ),

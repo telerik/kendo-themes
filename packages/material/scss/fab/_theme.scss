@@ -47,9 +47,9 @@
         .k-disabled.k-fab-solid-#{$name},
         .k-fab-solid-#{$name}:disabled {
             @include box-shadow($kendo-fab-disabled-shadow);
-            border-color: if($kendo-new-colors, k-color( base-subtle ), k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
-            background-color: if($kendo-new-colors, k-color( base-subtle ), k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
-            color: if($kendo-new-colors, $kendo-disabled-text, k-color-tint( $kendo-disabled-text, 4));
+            border-color: if($kendo-new-colors, transparent, k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
+            background-color: if($kendo-new-colors, rgba( k-color( on-app-surface, rgba ), .09 ), k-try-tint( k-try-shade( $kendo-body-bg, 12% ), 5));
+            color: if($kendo-new-colors, rgba( k-color( on-app-surface, rgba ), .32 ), k-color-tint( $kendo-disabled-text, 4));
             opacity: 1;
         }
     }
