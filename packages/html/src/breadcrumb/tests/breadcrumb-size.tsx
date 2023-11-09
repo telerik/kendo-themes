@@ -26,7 +26,7 @@ export default () =>(
                                 <BreadcrumbItemText text="Text item"></BreadcrumbItemText>
                             </BreadcrumbLink>
                         </BreadcrumbItem>
-                        <BreadcrumbItem>
+                        <BreadcrumbItem last>
                             <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
                             <BreadcrumbLink icon focus>
                                 <Icon icon="clock" />
