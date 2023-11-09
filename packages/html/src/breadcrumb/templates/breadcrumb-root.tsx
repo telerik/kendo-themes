@@ -13,7 +13,8 @@ export const BreadcrumbRoot = ({ collapsing, ...other }: any) => (
                             <BreadcrumbItemText text="Start item"></BreadcrumbItemText>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
-                </BreadcrumbRootItemContainer><BreadcrumbContainer collapsing={collapsing}>
+                </BreadcrumbRootItemContainer>
+                <BreadcrumbContainer collapsing={collapsing}>
                     <BreadcrumbItem>
                         <Icon className="k-breadcrumb-delimiter-icon" icon="chevron-right" size="xsmall" />
                         <BreadcrumbLink>
