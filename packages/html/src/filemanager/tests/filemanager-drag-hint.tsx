@@ -1,4 +1,4 @@
-import { Breadcrumb, BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
+import { BreadcrumbRoot, BreadcrumbContainer, BreadcrumbItem, BreadcrumbLink } from '../../breadcrumb';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
 import { Toolbar } from '../../toolbar';
@@ -39,7 +39,7 @@ export default () =>(
 
                     {/* Content */}
                     <div className="k-filemanager-content">
-                        <Breadcrumb className="k-filemanager-breadcrumb">
+                        <BreadcrumbRoot className="k-filemanager-breadcrumb">
                             <BreadcrumbContainer>
                                 <BreadcrumbItem root>
                                     <BreadcrumbLink root icon>
@@ -47,7 +47,7 @@ export default () =>(
                                     </BreadcrumbLink>
                                 </BreadcrumbItem>
                             </BreadcrumbContainer>
-                        </Breadcrumb>
+                        </BreadcrumbRoot>
 
                         {/* View */}
                         <div className="k-widget k-listview k-selectable k-filemanager-listview">
