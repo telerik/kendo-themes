@@ -60,7 +60,7 @@ export * from './numerictextbox/index';
 export * from './searchbox/index';
 export * from './switch/index';
 export * from './upload/index';
-// export * from './dropzone/index';
+export * from './dropzone/index';
 
 // Command interfaces
 export * from './fab/index';
