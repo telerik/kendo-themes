@@ -12,28 +12,18 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>Default</span>
-            <span>Focus</span>
-
-            <section>
-                <Orgchart width="100%" height="431px" justifyContent="around">
-                    <OrgchartGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical">
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                    </OrgchartGroup>
-                </Orgchart>
-            </section>
-
-            <section>
-                <Orgchart width="100%" height="431px" justifyContent="around">
-                    <OrgchartGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical" focus>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                    </OrgchartGroup>
-                </Orgchart>
-            </section>
+            {[ "normal", ...OrgchartGroup.states ].map((state) => (
+                <section>
+                    <span>{state}</span>
+                    <Orgchart width="100%" height="431px" justifyContent="around">
+                        <OrgchartGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical" { ...{ [state]: true } }>
+                            <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                            <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                            <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                        </OrgchartGroup>
+                    </Orgchart>
+                </section>
+            ))}
         </div>
     </>
 );
