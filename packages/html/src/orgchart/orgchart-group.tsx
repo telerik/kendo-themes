@@ -13,7 +13,7 @@ export type KendoOrgchartGroupProps = {
     line?: boolean;
     plus?: boolean,
     focus?: boolean,
-    orientation: 'horizontal' | 'vertical';
+    orientation?: 'horizontal' | 'vertical';
 };
 
 export type KendoOrgchartGroupState = { [K in (typeof states)[number]]?: boolean };
@@ -74,3 +74,5 @@ export const OrgchartGroup = (
         </div>
     );
 };
+
+OrgchartGroup.states = states;
