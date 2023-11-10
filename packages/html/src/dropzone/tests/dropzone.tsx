@@ -1,4 +1,4 @@
-import { Dropzone } from '../../dropzone';
+import { DropzoneNormal, DropzoneWithNote } from '..';
 
 
 export default () =>(
@@ -6,22 +6,24 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <p>External dropzone</p>
-                <Dropzone />
+                <p>External dropzone Empty</p>
+                <DropzoneNormal hint={false} />
             </section>
 
             <section>
-                {/* Hover dragging files */}
-                <p>External dropzone - hover dragging files</p>
-                <Dropzone hover />
+                <p>External dropzone with only Hint</p>
+                <DropzoneNormal />
             </section>
 
             <section>
-                {/* Hight set */}
-                <p>External dropzone</p>
-                <Dropzone style={{ height: "400px" }} />
+                <p>External dropzone with only Note</p>
+                <DropzoneWithNote hint={false} />
             </section>
 
+            <section>
+                <p>External dropzone with Hind & Note</p>
+                <DropzoneWithNote />
+            </section>
         </div>
     </>
 );
