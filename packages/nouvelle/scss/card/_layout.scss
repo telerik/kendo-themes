@@ -35,8 +35,8 @@
 
 
     // Card orientation
-    .k-card-horizontal  { flex-flow: row nowrap; } // stylelint-disable-line block-opening-brace-space-before
-    .k-card-vertical    { flex-flow: column nowrap; } // stylelint-disable-line block-opening-brace-space-before
+    .k-card-horizontal { flex-flow: row nowrap; } // stylelint-disable-line block-opening-brace-space-before
+    .k-card-vertical { flex-flow: column nowrap; } // stylelint-disable-line block-opening-brace-space-before
 
 
     // Card title
@@ -118,8 +118,7 @@
     }
 
 
-    // Card image
-    .k-card-image,
+    // Card media
     .k-card-media {
         border: 0;
         max-width: 100%;
@@ -149,14 +148,14 @@
         align-self: stretch;
     }
 
-    .k-card-separator.k-separator-vertical,
-    .k-card-horizontal > .k-card-separator {
-        border-left-width: 1px;
-    }
-
     .k-card-separator.k-separator-horizontal,
     .k-card-vertical > .k-card-separator {
         border-top-width: 1px;
+    }
+
+    .k-card-separator.k-separator-vertical,
+    .k-card-horizontal > .k-card-separator {
+        border-left-width: 1px;
     }
 
     .k-card > .k-hr {

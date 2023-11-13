@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Card, CardHeader, CardBody, CardImage } from '../../card';
+import { Card, CardHeader, CardBody, CardMedia } from '../../card';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 
 
 const styles = `
-    .k-card-image {
+    .k-card-media {
         height: 100px;
         background: #cccccc;
     }
@@ -31,7 +31,7 @@ export default () =>(
                 <CardBody title="Card Title">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" orientation="vertical">
+                <ActionButtons orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
@@ -41,7 +41,7 @@ export default () =>(
                 <CardBody title="Card Title" subtitle="Card Subtitle">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" alignment="stretched">
+                <ActionButtons alignment="stretched" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
@@ -51,7 +51,7 @@ export default () =>(
                 <CardBody title="Card Title" subtitle="Card Subtitle">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" alignment="stretched" orientation="vertical">
+                <ActionButtons alignment="stretched" orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
@@ -61,7 +61,7 @@ export default () =>(
                 <CardHeader>
                     Card Header
                 </CardHeader>
-                <CardImage />
+                <CardMedia />
                 <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
@@ -72,12 +72,12 @@ export default () =>(
             </Card>
 
             <Card orientation="vertical">
-                <CardImage />
+                <CardMedia />
                 <CardHeader title="Card Title" subtitle="Card Subtitle"></CardHeader>
                 <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" orientation="vertical">
+                <ActionButtons orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
@@ -88,8 +88,8 @@ export default () =>(
                 <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <CardImage />
-                <ActionButtons className="k-card-actions" alignment="stretched">
+                <CardMedia />
+                <ActionButtons alignment="stretched" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
@@ -100,11 +100,11 @@ export default () =>(
                 <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" alignment="stretched" orientation="vertical">
+                <ActionButtons alignment="stretched" orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-                <CardImage />
+                <CardMedia />
             </Card>
 
         </div>

@@ -65,7 +65,7 @@ export const Card = (
                     selected,
                 }),
                 {
-                    [`k-card-${orientation}`]: orientation,
+                    [`k-card-${orientation}`]: orientation === "horizontal",
                     'k-card-with-callout': callout,
                 },
             )}>
