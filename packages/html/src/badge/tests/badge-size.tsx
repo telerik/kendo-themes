@@ -1,9 +1,16 @@
-import { Badge } from '../../badge';
+import { Badge, BadgeNormal } from '../../badge';
 
+
+const styles = `
+    #test-area {
+        grid-template-columns: 80px repeat(8, 1fr);
+    }
+`;
 
 export default () =>(
     <>
-        <div id="test-area" className="k-d-grid k-grid-cols-9">
+        <style>{styles}</style>
+        <div id="test-area" className="k-d-grid">
 
             <span></span>
             <span className="col-2">Rectangle</span>
@@ -12,69 +19,25 @@ export default () =>(
             <span className="col">Circle</span>
             <span className="col">Dot</span>
 
+            {Badge.options.fillMode.map((fillMode) => (
+                <>
+                    <div className="k-col-span-full k-text-center">{fillMode}</div>
 
-            <span>Small</span>
-            <span><Badge size="small" themeColor="secondary">Rectangle</Badge></span>
-            <span><Badge size="small" themeColor="secondary"></Badge></span>
-            <span><Badge size="small" themeColor="secondary" rounded="small">Rounded</Badge></span>
-            <span><Badge size="small" themeColor="secondary" rounded="small"></Badge></span>
-            <span><Badge size="small" themeColor="secondary" rounded="full">Pill</Badge></span>
-            <span><Badge size="small" themeColor="secondary" rounded="full"></Badge></span>
-            <span><Badge size="small" themeColor="secondary" rounded="full">1</Badge></span>
-            <span><Badge size="small" themeColor="secondary" rounded="full"></Badge></span>
-
-            <span>^ outline</span>
-            <span><Badge size="small" fillMode="outline">Rectangle</Badge></span>
-            <span><Badge size="small" fillMode="outline"></Badge></span>
-            <span><Badge size="small" fillMode="outline" rounded="small">Rounded</Badge></span>
-            <span><Badge size="small" fillMode="outline" rounded="small"></Badge></span>
-            <span><Badge size="small" fillMode="outline" rounded="full">Pill</Badge></span>
-            <span><Badge size="small" fillMode="outline" rounded="full"></Badge></span>
-            <span><Badge size="small" fillMode="outline" rounded="full">1</Badge></span>
-            <span><Badge size="small" fillMode="outline" rounded="full"></Badge></span>
-
-
-            <span>Normal</span>
-            <span><Badge themeColor="info">Rectangle</Badge></span>
-            <span><Badge themeColor="info"></Badge></span>
-            <span><Badge themeColor="info" rounded="medium">Rounded</Badge></span>
-            <span><Badge themeColor="info" rounded="medium"></Badge></span>
-            <span><Badge themeColor="info" rounded="full">Pill</Badge></span>
-            <span><Badge themeColor="info" rounded="full"></Badge></span>
-            <span><Badge themeColor="info" rounded="full">1</Badge></span>
-            <span><Badge themeColor="info" rounded="full"></Badge></span>
-
-            <span>^ outline</span>
-            <span><Badge fillMode="outline" themeColor="info">Rectangle</Badge></span>
-            <span><Badge fillMode="outline" themeColor="info"></Badge></span>
-            <span><Badge fillMode="outline" themeColor="info" rounded="medium">Rounded</Badge></span>
-            <span><Badge fillMode="outline" themeColor="info" rounded="medium"></Badge></span>
-            <span><Badge fillMode="outline" themeColor="info" rounded="full">Pill</Badge></span>
-            <span><Badge fillMode="outline" themeColor="info" rounded="full"></Badge></span>
-            <span><Badge fillMode="outline" themeColor="info" rounded="full">1</Badge></span>
-            <span><Badge fillMode="outline" themeColor="info" rounded="full"></Badge></span>
-
-
-            <span>Large</span>
-            <span><Badge size="large" themeColor="warning">Rectangle</Badge></span>
-            <span><Badge size="large" themeColor="warning"></Badge></span>
-            <span><Badge size="large" themeColor="warning" rounded="large">Rounded</Badge></span>
-            <span><Badge size="large" themeColor="warning" rounded="large"></Badge></span>
-            <span><Badge size="large" themeColor="warning" rounded="full">Pill</Badge></span>
-            <span><Badge size="large" themeColor="warning" rounded="full"></Badge></span>
-            <span><Badge size="large" themeColor="warning" rounded="full">1</Badge></span>
-            <span><Badge size="large" themeColor="warning" rounded="full"></Badge></span>
-
-            <span>^ outline</span>
-            <span><Badge size="large" fillMode="outline" themeColor="error">Rectangle</Badge></span>
-            <span><Badge size="large" fillMode="outline" themeColor="error"></Badge></span>
-            <span><Badge size="large" fillMode="outline" themeColor="error" rounded="large">Rounded</Badge></span>
-            <span><Badge size="large" fillMode="outline" themeColor="error" rounded="large"></Badge></span>
-            <span><Badge size="large" fillMode="outline" themeColor="error" rounded="full">Pill</Badge></span>
-            <span><Badge size="large" fillMode="outline" themeColor="error" rounded="full"></Badge></span>
-            <span><Badge size="large" fillMode="outline" themeColor="error" rounded="full">1</Badge></span>
-            <span><Badge size="large" fillMode="outline" themeColor="error" rounded="full"></Badge></span>
-
+                    {Badge.options.size.map((size) => (
+                        <>
+                            <span>{size}</span>
+                            <span><BadgeNormal fillMode={fillMode} size={size}>Rectangle</BadgeNormal></span>
+                            <span><BadgeNormal fillMode={fillMode} size={size}></BadgeNormal></span>
+                            <span><BadgeNormal fillMode={fillMode} size={size} rounded="small">Rounded</BadgeNormal></span>
+                            <span><BadgeNormal fillMode={fillMode} size={size} rounded="small"></BadgeNormal></span>
+                            <span><BadgeNormal fillMode={fillMode} size={size} rounded="full">Pill</BadgeNormal></span>
+                            <span><BadgeNormal fillMode={fillMode} size={size} rounded="full"></BadgeNormal></span>
+                            <span><BadgeNormal fillMode={fillMode} size={size} rounded="full">1</BadgeNormal></span>
+                            <span><BadgeNormal fillMode={fillMode} size={size} rounded="full"></BadgeNormal></span>
+                        </>
+                    ))}
+                </>
+            ))}
         </div>
     </>
 );
