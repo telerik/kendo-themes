@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Card, CardHeader, CardBody, CardFooter, CardImage } from '../../card';
+import { Card, CardHeader, CardBody, CardFooter, CardMedia } from '../../card';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 
 
 const styles = `
-    .k-card-image {
+    .k-card-media {
         height: 100px;
         background: #cccccc;
     }
@@ -21,7 +21,7 @@ export default () =>(
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <span className="k-separator"></span>
-                <ActionButtons className="k-card-actions" alignment="start">
+                <ActionButtons alignment="start" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
@@ -38,21 +38,21 @@ export default () =>(
                     </CardFooter>
                 </div>
                 <span className="k-separator k-separator-vertical"></span>
-                <ActionButtons className="k-card-actions" alignment="stretched" orientation="vertical">
+                <ActionButtons alignment="stretched" orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
             </Card>
 
             <Card orientation="horizontal">
-                <CardImage />
+                <CardMedia />
                 <div className="k-d-flex k-flex-column">
                     <CardHeader title="RTL Horizontal Card" subtitle="Card Subtitle"></CardHeader>
                     <CardBody>
                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </CardBody>
                     <span className="k-separator"></span>
-                    <ActionButtons className="k-card-actions" alignment="stretched">
+                    <ActionButtons alignment="stretched" className="k-card-actions">
                         <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     </ActionButtons>
                     <CardFooter>

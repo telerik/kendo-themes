@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Card, CardHeader, CardBody, CardFooter, CardTitle, CardSubtitle, CardImage } from '../../card';
+import { Card, CardHeader, CardBody, CardFooter, CardTitle, CardSubtitle, CardMedia } from '../../card';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Layout } from '../../layout';
@@ -15,20 +15,20 @@ export default () =>(
                 <CardBody title="Card Title" subtitle="Card Subtitle">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" alignment="stretched" orientation="vertical">
+                <ActionButtons alignment="stretched" orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
             </Card>
 
             <Card orientation="horizontal">
-                <CardImage src="/packages/html/assets/avatar.jpg" />
+                <CardMedia src="/packages/html/assets/avatar.jpg" />
                 <Layout orientation="vertical" className="k-flex">
                     <CardBody title="Card Title" subtitle="Card Subtitle">
                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </CardBody>
                     <span className="k-separator"></span>
-                    <ActionButtons className="k-card-actions" alignment="stretched">
+                    <ActionButtons alignment="stretched" className="k-card-actions">
                         <Button fillMode="flat" themeColor="primary">Action 1</Button>
                         <Button fillMode="flat" themeColor="primary">Action 2</Button>
                     </ActionButtons>
@@ -36,16 +36,16 @@ export default () =>(
             </Card>
 
             <Card orientation="horizontal">
-                <CardImage>
+                <CardMedia>
                     <img src="/packages/html/assets/avatar.jpg" />
-                </CardImage>
+                </CardMedia>
                 <span className="k-separator k-separator-vertical"></span>
                 <Layout orientation="vertical" className="k-flex">
                     <CardBody title="Card Title" subtitle="Card Subtitle">
                         <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </CardBody>
                     <span className="k-separator"></span>
-                    <ActionButtons className="k-card-actions" alignment="stretched">
+                    <ActionButtons alignment="stretched" className="k-card-actions">
                         <Button fillMode="flat" themeColor="primary">Action 1</Button>
                         <Button fillMode="flat" themeColor="primary">Action 2</Button>
                     </ActionButtons>
@@ -58,7 +58,7 @@ export default () =>(
                     <Typography type="display-2">2&deg;C</Typography>
                 </CardBody>
                 <span className="k-separator"></span>
-                <ActionButtons className="k-card-actions" alignment="stretched">
+                <ActionButtons alignment="stretched" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>

@@ -36,6 +36,15 @@
         *::after {
             box-sizing: border-box;
         }
+
+        // Card avatar
+        .k-card-avatar,
+        .k-avatar {
+            margin-inline-end: var( --kendo-card-avatar-spacing, #{$kendo-card-avatar-spacing} );
+            width: var( --kendo-card-avatar-size, #{$kendo-card-avatar-size} );
+            height: var( --kendo-card-avatar-size, #{$kendo-card-avatar-size} );
+            flex-basis: var( --kendo-card-avatar-size, #{$kendo-card-avatar-size} );
+        }
     }
     .k-card > .k-card-inner {
         @include border-radius( var( --kendo-card-inner-border-radius, #{$kendo-card-inner-border-radius} ) );
@@ -45,11 +54,9 @@
         position: relative;
     }
 
-
     // Card orientation
-    .k-card-horizontal  { flex-flow: row nowrap; } // stylelint-disable-line block-opening-brace-space-before
-    .k-card-vertical    { flex-flow: column nowrap; } // stylelint-disable-line block-opening-brace-space-before
-
+    .k-card-horizontal { flex-flow: row nowrap; } // stylelint-disable-line block-opening-brace-space-before
+    .k-card-vertical { flex-flow: column nowrap; } // stylelint-disable-line block-opening-brace-space-before
 
     // Card title
     .k-card-title {
@@ -131,29 +138,12 @@
         }
     }
 
-
-    // Card avatar
-    .k-card-avatar,
-    .k-card .k-avatar {
-        margin-inline-end: var( --kendo-card-avatar-spacing, #{$kendo-card-avatar-spacing} );
-        width: var( --kendo-card-avatar-size, #{$kendo-card-avatar-size} );
-        height: var( --kendo-card-avatar-size, #{$kendo-card-avatar-size} );
-        flex-basis: var( --kendo-card-avatar-size, #{$kendo-card-avatar-size} );
-    }
-
-
-    // Card image
-    .k-card-image,
+    // Card media
     .k-card-media {
         border: 0;
         max-width: 100%;
         flex-shrink: 0;
         overflow: hidden;
-
-        > img {
-            border: 0;
-            max-width: 100%;
-        }
 
         .k-card-horizontal & {
             max-width: var( --kendo-card-img-max-width, #{$kendo-card-img-max-width} );
@@ -172,14 +162,14 @@
         align-self: stretch;
     }
 
-    .k-card-separator.k-separator-vertical,
-    .k-card-horizontal > .k-card-separator {
-        border-left-width: 1px;
-    }
-
     .k-card-separator.k-separator-horizontal,
     .k-card-vertical > .k-card-separator {
         border-top-width: 1px;
+    }
+
+    .k-card-separator.k-separator-vertical,
+    .k-card-horizontal > .k-card-separator {
+        border-left-width: 1px;
     }
 
     .k-card > .k-hr {
@@ -187,7 +177,6 @@
         flex: 0 0 auto;
         border-color: inherit;
     }
-
 
     // Card actions
     .k-card-actions {
@@ -202,33 +191,6 @@
         flex-basis: auto;
         gap: var( --kendo-card-actions-gap, #{$kendo-card-actions-gap} );
     }
-
-
-    // Actions align
-    .k-card-actions-start       { justify-content: flex-start; } // stylelint-disable-line block-opening-brace-space-before
-    .k-card-actions-end         { justify-content: flex-end; } // stylelint-disable-line block-opening-brace-space-before
-    .k-card-actions-center      { justify-content: center; } // stylelint-disable-line block-opening-brace-space-before
-
-
-    // Actions orientation
-    .k-card-actions-horizontal  { flex-flow: row nowrap; } // stylelint-disable-line block-opening-brace-space-before
-    .k-card-actions-vertical    { flex-flow: column nowrap; } // stylelint-disable-line block-opening-brace-space-before
-
-
-    // Stretched actions
-    .k-card-actions-stretched > * {
-        flex: 1 1 auto;
-    }
-
-
-    // Card action
-    .k-card-action {
-        border-width: 0;
-        border-style: solid;
-        border-color: inherit;
-        display: inline-flex;
-    }
-
 
     // List
     .k-card-list {
