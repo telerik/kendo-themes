@@ -10,19 +10,7 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
-            <p>External dropzone Empty</p>
-            <div class="k-external-dropzone">
-                <div class="k-dropzone-inner">
-                    <span class="k-dropzone-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-upload">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M32 384v96h448v-96H32zm192-64h64V192h96L256 32 128 192h96v128z"></path>
-                        </svg>
-                    </span>
-                </div>
-            </div>
-        </section>
-        <section>
-            <p>External dropzone with only Hint</p>
+            <p>External dropzone normal</p>
             <div class="k-external-dropzone">
                 <div class="k-dropzone-inner">
                     <span class="k-dropzone-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-upload">
@@ -31,25 +19,27 @@
                         </svg>
                     </span>
                     <span class="k-dropzone-hint">Drag and drop files here to upload</span>
+                    <span class="k-dropzone-note">Only JPEG, PNG and SVG files are allowed.</span>
                 </div>
             </div>
         </section>
         <section>
-            <p>External dropzone with only Note</p>
-            <div class="k-external-dropzone">
+            <p>External dropzone hover</p>
+            <div class="k-external-dropzone k-external-dropzone-hover">
                 <div class="k-dropzone-inner">
                     <span class="k-dropzone-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-upload">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M32 384v96h448v-96H32zm192-64h64V192h96L256 32 128 192h96v128z"></path>
                         </svg>
                     </span>
+                    <span class="k-dropzone-hint">Drag and drop files here to upload</span>
                     <span class="k-dropzone-note">Only JPEG, PNG and SVG files are allowed.</span>
                 </div>
             </div>
         </section>
         <section>
-            <p>External dropzone with Hind &amp; Note</p>
-            <div class="k-external-dropzone">
+            <p>External dropzone custom size</p>
+            <div class="k-external-dropzone" style="height: 350px; width: 400px;">
                 <div class="k-dropzone-inner">
                     <span class="k-dropzone-icon k-icon k-svg-icon k-icon-xxxl k-svg-i-upload">
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
