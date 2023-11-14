@@ -4,7 +4,7 @@ import { Button } from '../../button';
 import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { UploadNormal } from '../../upload';
-import { Dropzone } from '../../dropzone';
+import { DropzoneWithNote } from '../../dropzone';
 import { DropdownList } from '../../dropdownlist';
 import { ListBox } from '../../listbox';
 import { ListItem } from '../../list';
@@ -44,7 +44,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Dropzone />
+                    <DropzoneWithNote />
 
                     <UploadNormal status="upload"></UploadNormal>
                 </WindowNormal>

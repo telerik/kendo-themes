@@ -4,7 +4,7 @@ import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { UploadNormal } from '../../upload';
-import { Dropzone } from '../../dropzone';
+import { DropzoneNormal } from '../../dropzone';
 
 
 const style = `
@@ -52,7 +52,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Dropzone note={false} />
+                    <DropzoneNormal />
 
                     <UploadNormal status="upload"/>
                 </WindowNormal>
