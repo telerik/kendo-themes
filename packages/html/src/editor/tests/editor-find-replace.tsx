@@ -5,7 +5,7 @@ import { Textbox } from '../../textbox';
 import { EditorNormal, EditorContent, EditorToolbar } from '../../editor';
 import { WindowNormal } from '../../window';
 import { ButtonGroup } from '../../button-group';
-import { Form, FormField } from '../../form';
+import { FormField, FormNormal } from '../../form';
 
 
 const styles = `
@@ -47,7 +47,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div">
+                            <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
                                 <FormField editor={
                                     <CheckboxGroup className="k-search-options">
@@ -70,7 +70,7 @@ export default () =>(
                                     <span>1 of 3 matches</span>
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-right">Next</Button>
                                 </div>
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
                 </WindowNormal>
@@ -90,7 +90,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div">
+                            <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={ <Textbox showClearButton={false} value="editor" /> } />
                                 <FormField label="Replace With:" editor={ <Textbox showClearButton={false} value="grid" /> } />
                                 <FormField editor={
@@ -120,7 +120,7 @@ export default () =>(
                                     <span>1 of 3 matches</span>
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-right">Next</Button>
                                 </div>
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
                 </WindowNormal>

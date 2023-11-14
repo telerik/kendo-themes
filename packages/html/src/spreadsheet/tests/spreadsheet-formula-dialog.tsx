@@ -1,6 +1,6 @@
 import { WindowNormal } from '../../window';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { DropdownList } from '../../dropdownlist';
 import { ListBox } from '../../listbox';
 import { ListItem } from '../../list';
@@ -25,7 +25,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Category" editor={ <DropdownList value="Date and Time" /> }/>
                         <FormField label="Pick a formula" hint="Returns the number of dates between the two dates." editor={
                             <ListBox style={{ width: "100%" }}>
@@ -36,7 +36,7 @@ export default () =>(
                                 <ListItem>DAYS360</ListItem>
                             </ListBox>
                         } />
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 

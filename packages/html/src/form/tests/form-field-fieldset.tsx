@@ -1,6 +1,6 @@
 import { Textarea } from '../../textarea';
 import { Textbox } from '../../textbox';
-import { Form, FormField, Fieldset } from '../../form';
+import { FormField, Fieldset, FormNormal, FormHorizontal } from '../../form';
 
 
 const styles = `
@@ -19,8 +19,9 @@ export default () =>(
             <span>Horizontal Form</span>
 
             <section>
-                <Form>
-
+                <FormNormal
+                    formButtons={null}
+                >
                     <Fieldset legend="Please fill in the fields:">
                         <FormField label="First Name:" editor={ <Textbox /> }></FormField>
                         <FormField label="Last Name:" editor={ <Textbox /> }></FormField>
@@ -30,13 +31,14 @@ export default () =>(
                         <FormField label="City:" editor={ <Textbox /> }></FormField>
                         <FormField label="Address:" editor={ <Textarea /> }></FormField>
                     </Fieldset>
-                </Form>
+                </FormNormal>
             </section>
 
 
             <section>
-                <Form orientation="horizontal">
-
+                <FormHorizontal
+                    formButtons={null}
+                >
                     <Fieldset legend="Please fill in the fields:">
                         <FormField label="First Name:" editor={ <Textbox /> }></FormField>
                         <FormField label="Last Name:" editor={ <Textbox /> }></FormField>
@@ -46,7 +48,7 @@ export default () =>(
                         <FormField label="City:" editor={ <Textbox /> }></FormField>
                         <FormField label="Address:" editor={ <Textarea rows={3} /> }></FormField>
                     </Fieldset>
-                </Form>
+                </FormHorizontal>
             </section>
 
         </div>
