@@ -33,26 +33,26 @@ $kendo-slider-track-size: map.get( $kendo-spacing, 1 ) !default;
 $kendo-slider-track-border-radius: map.get( $kendo-spacing, 0.5 ) !default;
 /// The background color of the slider track.
 /// @group slider
-$kendo-slider-track-bg: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-slider-track-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 /// The border color of the slider track.
 /// @group slider
 $kendo-slider-track-border: inherit !default;
 /// The hover background color of the slider track.
 /// @group slider
-$kendo-slider-track-hover-bg: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-slider-track-hover-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 /// The hover border color of the slider track.
 /// @group slider
 $kendo-slider-track-hover-border: inherit !default;
 /// The focus background color of the slider track.
 /// @group slider
-$kendo-slider-track-focus-bg: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-slider-track-focus-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 /// The focus border color of the slider track.
 /// @group slider
 $kendo-slider-track-focus-border: inherit !default;
 
 /// The selection background color of the slider track.
 /// @group slider
-$kendo-slider-selection-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-slider-selection-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The default size of the slider thumb.
 /// @group slider
@@ -78,7 +78,7 @@ $kendo-slider-thumb-bg: var( --kendo-component-bg, transparent ) !default;
 $kendo-slider-thumb-text: inherit !default;
 /// The border color of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-slider-thumb-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The gradient of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-gradient: transparent !default;
@@ -91,7 +91,7 @@ $kendo-slider-thumb-hover-bg: $kendo-slider-thumb-bg !default;
 $kendo-slider-thumb-hover-text: inherit !default;
 /// The hover border color of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-hover-border: k-get-theme-color-var( primary-120 ) !default;
+$kendo-slider-thumb-hover-border: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-120 )) !default;
 /// The hover gradient of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-hover-gradient: transparent !default;
@@ -104,7 +104,7 @@ $kendo-slider-thumb-active-bg: $kendo-slider-thumb-hover-bg !default;
 $kendo-slider-thumb-active-text: inherit !default;
 /// The active border color of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-active-border: k-get-theme-color-var( primary-130 ) !default;
+$kendo-slider-thumb-active-border: if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-130 )) !default;
 /// The active gradient of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-active-gradient: transparent !default;
@@ -124,16 +124,16 @@ $kendo-slider-thumb-focus-gradient: transparent !default;
 
 /// The text color of the disabled slider.
 /// @group slider
-$kendo-slider-disabled-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-slider-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .7 ), k-get-theme-color-var( neutral-130 )) !default;
 /// The background color of the disabled slider track.
 /// @group slider
-$kendo-slider-track-disabled-bg: k-get-theme-color-var( neutral-20 ) !default;
+$kendo-slider-track-disabled-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .06 ), k-get-theme-color-var( neutral-20 )) !default;
 /// The selection background color of the disabled slider track.
 /// @group slider
-$kendo-slider-selection-disabled-bg: k-get-theme-color-var( neutral-90 ) !default;
+$kendo-slider-selection-disabled-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 )) !default;
 /// The background color of the disabled slider thumb.
 /// @group slider
-$kendo-slider-thumb-disabled-border: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-slider-thumb-disabled-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 
 
 /// The transition speed of the slider.

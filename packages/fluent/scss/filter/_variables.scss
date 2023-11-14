@@ -24,10 +24,10 @@ $kendo-filter-text: var( --kendo-component-text, initial ) !default;
 
 /// The text color of the Filter preview field.
 /// @group filter
-$kendo-filter-preview-field-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-filter-preview-field-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The text color of the Filter preview operator.
 /// @group filter
-$kendo-filter-preview-operator-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-filter-preview-operator-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
 
 /// The background color of the line that connects the Filter items.
 /// @group filter
@@ -35,4 +35,4 @@ $kendo-filter-line-bg: var( --kendo-component-border, initial ) !default;
 
 /// The border color of the focused Filter.
 /// @group filter
-$kendo-filter-toolbar-focus-border: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-filter-toolbar-focus-border: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;

@@ -29,28 +29,28 @@ $kendo-scrollview-border: var( --kendo-component-border, inherit ) !default;
 $kendo-scrollview-pagebutton-size: 10px !default;
 /// The background color of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-bg: $kendo-color-white !default;
+$kendo-scrollview-pagebutton-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The border color of the ScrollView page button.
 /// @group scrollview
 $kendo-scrollview-pagebutton-border: $kendo-scrollview-pagebutton-bg !default;
 /// The primary background color of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-primary-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-scrollview-pagebutton-primary-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The primary border color of the ScrollView page button.
 /// @group scrollview
 $kendo-scrollview-pagebutton-primary-border: $kendo-scrollview-pagebutton-primary-bg !default;
 /// The hover box shadow of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-hover-shadow: 0 0 0 1px k-get-theme-color-var( neutral-30 ) !default;
+$kendo-scrollview-pagebutton-hover-shadow: 0 0 0 1px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 )) !default;
 /// The focus box shadow of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-focus-shadow: 0 0 0 1px k-get-theme-color-var( neutral-130 ) !default;
+$kendo-scrollview-pagebutton-focus-shadow: 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
 /// The primary hover box shadow of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-primary-hover-shadow: 0 0 0 2px k-get-theme-color-var( neutral-30 ) !default;
+$kendo-scrollview-pagebutton-primary-hover-shadow: 0 0 0 2px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 )) !default;
 /// The primary focus box shadow of the ScrollView page button.
 /// @group scrollview
-$kendo-scrollview-pagebutton-primary-focus-shadow: 0 0 0 2px k-get-theme-color-var( neutral-130 ) !default;
+$kendo-scrollview-pagebutton-primary-focus-shadow: 0 0 0 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
 
 /// The offset of the ScrollView pager.
 /// @group scrollview
@@ -67,7 +67,7 @@ $kendo-scrollview-pager-height: calc( #{$kendo-scrollview-pagebutton-size} + #{$
 
 /// The color of the ScrollView navigation arrows.
 /// @group scrollview
-$kendo-scrollview-navigation-color: $kendo-color-white !default;
+$kendo-scrollview-navigation-color: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The box shadow of the ScrollView navigation arrows.
 /// @group scrollview
 $kendo-scrollview-navigation-arrow-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
@@ -76,7 +76,7 @@ $kendo-scrollview-navigation-arrow-shadow: var( --kendo-box-shadow-depth-3, none
 $kendo-scrollview-navigation-bg: transparent !default;
 /// The focus box shadow of the ScrollView navigation arrows.
 /// @group scrollview
-$kendo-scrollview-navigation-focus-shadow: 0 0 0 1px k-get-theme-color-var( neutral-130 ) !default;
+$kendo-scrollview-navigation-focus-shadow: 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
 /// The hover box shadow of the ScrollView navigation arrows.
 /// @group scrollview
 $kendo-scrollview-navigation-arrow-hover-shadow: var( --kendo-box-shadow-depth-4, none ) !default;

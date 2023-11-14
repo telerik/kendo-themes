@@ -38,7 +38,7 @@ $kendo-appbar-spacing: map.get( $kendo-spacing, 2 ) !default;
 $kendo-appbar-text: var( --kendo-component-text, initial ) !default;
 /// The background color of the AppBar.
 /// @group appbar
-$kendo-appbar-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-appbar-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The border color of the AppBar.
 /// @group appbar
 $kendo-appbar-border: var( --kendo-component-border, initial ) !default;
@@ -50,25 +50,25 @@ $kendo-appbar-brand-colors: (
     error: error,
     success: success,
     info: info,
-    secondary: neutral,
+    secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
  ) !default;
 
 // Matrix with appbar theme colors in the order: bg, color, border
 $_tc-appbar-matrix: (
-    (normal: (100, $kendo-color-white, 100)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))),
 ) !default;
 
 $_tc-appbar-warning-matrix: (
-    (normal: (100, k-get-theme-color-var( neutral-160 ), 100)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (100, k-get-theme-color-var( neutral-160 ), 100))),
 ) !default;
 
 $_tc-appbar-dark-matrix: (
-    (normal: (160, $kendo-color-white, 160)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))),
 ) !default;
 
 $_tc-appbar-light-matrix: (
-    (normal: (50, 160, 50)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))),
 ) !default;
 
 /// The theme colors map for the AppBar variations.
@@ -94,13 +94,13 @@ $kendo-appbar-theme-colors: () !default;
 @each $ui-states in $_tc-appbar-dark-matrix {
     $kendo-appbar-theme-colors: map.deep-merge(
         $kendo-appbar-theme-colors,
-        k-generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
     );
 }
 
 @each $ui-states in $_tc-appbar-light-matrix {
     $kendo-appbar-theme-colors: map.deep-merge(
         $kendo-appbar-theme-colors,
-        k-generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, if($kendo-enable-color-system, light, neutral), $ui-states )
     );
 }

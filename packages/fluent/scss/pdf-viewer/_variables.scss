@@ -27,8 +27,8 @@ $kendo-pdf-viewer-border: var( --kendo-component-border, initial ) !default;
 
 /// The background color of the PDFViewer canvas.
 /// @group pdf-viewer
-$kendo-pdf-viewer-canvas-bg: k-get-theme-color-var( neutral-10 ) !default;
-/// The text color of the PDFViewer canvas.
+$kendo-pdf-viewer-canvas-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
+/// Text color of the PDF viewer canvas.
 /// @group pdf-viewer
 $kendo-pdf-viewer-canvas-text: var( --kendo-component-text, inherit ) !default;
 /// The border color of the PDFViewer canvas.
