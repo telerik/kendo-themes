@@ -4,7 +4,7 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Toolbar, ToolbarSeparator } from '../../toolbar';
 import { ButtonGroup } from '../../button-group';
-import { Form, FormField, Fieldset } from '../../form';
+import { FormNormal, FormField, Fieldset } from '../../form';
 
 
 export default () =>(
@@ -57,7 +57,7 @@ export default () =>(
 
                     {/* Crop Pane */}
                     <div className="k-imageeditor-action-pane">
-                        <Form tag="div" className="k-imageeditor-pane-form" formButtons={
+                        <FormNormal tag="div" className="k-imageeditor-pane-form" formButtons={
                             <>
                                 <Button themeColor="primary">Confirm</Button>
                                 <Button>Cancel</Button>
@@ -95,7 +95,7 @@ export default () =>(
                                     editor={ <Checkbox /> }
                                 />
                             </Fieldset>
-                        </Form>
+                        </FormNormal>
                     </div>
                 </div>
 

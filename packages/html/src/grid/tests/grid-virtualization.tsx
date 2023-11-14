@@ -1,4 +1,4 @@
-import { Skeleton } from "../../skeleton";
+import { SkeletonNormal } from "../../skeleton";
 
 export default () =>(
     <>
@@ -133,322 +133,322 @@ export default () =>(
                                         <tbody className="k-table-tbody" >
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row" style={{ height: "60px" }}>
@@ -626,322 +626,322 @@ export default () =>(
                                         <tbody className="k-table-tbody" >
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row " style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row k-alt k-table-alt-row" style={{ height: "60px" }}>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                                 <td className="k-table-td ">
-                                                    <Skeleton animation={false} />
+                                                    <SkeletonNormal animation={false} />
                                                 </td>
                                             </tr>
                                             <tr className="k-master-row k-table-row" style={{ height: "60px" }}>

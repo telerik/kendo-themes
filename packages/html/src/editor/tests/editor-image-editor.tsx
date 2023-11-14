@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { Textbox } from '../../textbox';
 import { WindowNormal } from '../../window';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 
 
 const styles = `
@@ -26,12 +26,12 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form tag="div">
+                    <FormNormal formButtons={null} tag="div">
                         <FormField label="Web address:" editor={ <Textbox showClearButton={false} /> } />
                         <FormField label="Alternate text:" editor={ <Textbox showClearButton={false} /> } />
                         <FormField label="Width:" editor={ <Textbox showClearButton={false} /> } />
                         <FormField label="Height:" editor={ <Textbox showClearButton={false} /> } />
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 

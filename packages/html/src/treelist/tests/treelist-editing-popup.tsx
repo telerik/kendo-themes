@@ -4,7 +4,7 @@ import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
 import { DatePicker } from '../../datepicker';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 
 
 const styles = `
@@ -29,7 +29,7 @@ export default () =>(
                         <Button icon="cancel">Cancel</Button>
                     </>
                 }>
-                    <Form tag="div">
+                    <FormNormal formButtons={null} tag="div">
                         <FormField
                             className="k-form-field-error"
                             label="Text data field label"
@@ -52,7 +52,7 @@ export default () =>(
                                 </>
                             }
                         />
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 

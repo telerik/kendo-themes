@@ -1,6 +1,6 @@
 import { Icon } from '../../icon';
 import { Pager } from '../../pager';
-import { Skeleton } from '../../skeleton';
+import { SkeletonNormal } from '../../skeleton';
 
 
 export default () =>(
@@ -62,11 +62,11 @@ export default () =>(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt">
                                     <td className="k-table-td">4</td>
-                                    <td className="k-table-td"><Skeleton animation={false} /></td>
+                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
                                 </tr>
                                 <tr className="k-table-row">
                                     <td className="k-table-td">5</td>
-                                    <td className="k-table-td"><Skeleton animation={false} /></td>
+                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
                                 </tr>
                             </tbody>
                         </table>
