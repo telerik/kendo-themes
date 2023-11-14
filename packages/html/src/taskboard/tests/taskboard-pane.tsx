@@ -4,7 +4,7 @@ import { Card, CardBody, CardHeader } from '../../card';
 import { Searchbox } from '../../searchbox';
 import { Textbox } from '../../textbox';
 import { Toolbar } from '../../toolbar';
-import { Form, FormField } from '../../form';
+import { FormNormal , FormField } from '../../form';
 
 const style = `
     #test-area { max-width: 1037px; }
@@ -120,9 +120,9 @@ export default () =>(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <Form>
+                        <FormNormal formButtons={null}>
                             <FormField label="Textbox:" editor={ <Textbox /> } ></FormField>
-                        </Form>
+                        </FormNormal>
                     </div>
                     <ActionButtons alignment="end" className="k-taskboard-pane-actions">
                         <Button icon="trash">Delete</Button>
@@ -236,9 +236,9 @@ export default () =>(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <Form>
+                        <FormNormal formButtons={null}>
                             <FormField label="Textbox:" editor={ <Textbox /> } ></FormField>
-                        </Form>
+                        </FormNormal>
                     </div>
                     <ActionButtons alignment="end" className="k-taskboard-pane-actions">
                         <Button icon="trash">Delete</Button>

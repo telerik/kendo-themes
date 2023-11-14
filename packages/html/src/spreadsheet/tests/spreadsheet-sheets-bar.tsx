@@ -3,7 +3,7 @@ import { MenuList, MenuItem, MenuSeparator } from "../../menu";
 import { MenuButton } from "../../menu-button";
 import { WindowNormal } from "../../window";
 import { Popup } from "../../popup";
-import { Form, FormField } from "../../form";
+import { FormNormal, FormField } from "../../form";
 import { Textbox } from "../../textbox";
 
 const style = `
@@ -99,9 +99,9 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Rename sheet" editor={ <Textbox placeholder="Sheet name"/> }></FormField>
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 

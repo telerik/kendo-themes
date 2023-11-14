@@ -6,7 +6,7 @@ import { Textbox } from '../../textbox';
 import { DateTimePicker } from '../../datetimepicker';
 import { Combobox } from '../../combobox';
 import { MultiSelect } from '../../multiselect';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { ButtonGroup } from '../../button-group';
 import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 import { NumericTextbox } from '../../numerictextbox';
@@ -37,7 +37,7 @@ export default () =>(
                         <Button fillMode="flat" themeColor="primary" icon="trash">Delete</Button>
                     </>
                 }>
-                    <Form tag="div" className="k-scheduler-edit-form">
+                    <FormNormal formButtons={null} tag="div" className="k-scheduler-edit-form">
                         <FormField className="k-form-field-error" label="Title" error="Error" editor={ <Textbox invalid value="Invalid" /> }/>
                         <FormField label="Start" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
                         <FormField label="End" editor={ <DateTimePicker placeholder="dd/MM/yyyy hh:mm AM" /> }/>
@@ -95,7 +95,7 @@ export default () =>(
                         <FormField label="Description" editor={ <Textarea /> }/>
                         <FormField label="Owner" editor={ <Combobox placeholder="Select owner" /> }/>
                         <FormField label="Atendee" optional editor={ <MultiSelect placeholder="Invite people" /> }/>
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
         </div>
