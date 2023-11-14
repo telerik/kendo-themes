@@ -53,3 +53,5 @@ export const BreadcrumbLink = (
         </a>
     );
 };
+
+BreadcrumbLink.states = states;

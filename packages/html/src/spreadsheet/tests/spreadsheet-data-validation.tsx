@@ -1,6 +1,6 @@
 import { WindowNormal } from '../../window';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { Checkbox } from '../../checkbox';
@@ -26,7 +26,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Cell Range" editor={ <Textbox value="Input Value" /> }/>
                         <FormField label="Criteria" editor={ <DropdownList value="Number" /> }/>
                         <FormField label="Comparer" editor={ <DropdownList value="Greater than" /> } />
@@ -53,7 +53,7 @@ export default () =>(
                                 <label className="k-checkbox-label">Show hint</label>
                             </>
                         } />
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 

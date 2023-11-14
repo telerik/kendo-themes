@@ -3,7 +3,7 @@ import { Chip, ChipAction } from '../../chip';
 import { Combobox } from '../../combobox';
 import { DropdownList } from '../../dropdownlist';
 import { MultiSelect } from '../../multiselect';
-import { Form, FormField } from '../../form';
+import { FormField, FormHorizontal, FormNormal } from '../../form';
 
 
 const styles = `
@@ -22,8 +22,9 @@ export default () =>(
             <span>Horizontal Form</span>
 
             <section>
-                <Form>
-
+                <FormNormal
+                    formButtons={null}
+                >
                     <FormField
                         label="AutoComplete:"
                         editor={
@@ -59,14 +60,14 @@ export default () =>(
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormNormal>
             </section>
 
 
             <section>
-                <Form orientation="horizontal">
-
+                <FormHorizontal
+                    formButtons={null}
+                >
                     <FormField
                         label="AutoComplete:"
                         editor={
@@ -102,8 +103,7 @@ export default () =>(
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormHorizontal>
             </section>
 
         </div>

@@ -1,7 +1,7 @@
 import { WindowNormal } from '../../window';
 import { Textarea } from '../../textarea';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { UploadNormal } from '../../upload';
 import { Dropzone } from '../../dropzone';
@@ -31,9 +31,9 @@ export default () =>(
                         <Button fillMode="clear" themeColor="primary">Remove comment</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Comment" editor={ <Textarea /> }/>
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 
@@ -59,10 +59,10 @@ export default () =>(
                         <Button fillMode="clear" themeColor="primary">Remove link</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Select link" editor={ <DropdownList value="URL" /> } />
                         <FormField label="URL address" editor={ <Textbox value="Input value" /> } />
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 
@@ -75,7 +75,7 @@ export default () =>(
                         <Button fillMode="clear" themeColor="primary">Remove link</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Select link" editor={ <DropdownList value="Internal" /> } />
                         <FormField label="Cell reference" editor={ <Textbox value="B3:B11" /> } />
                         <FormField label="From sheet" editor={
@@ -86,7 +86,7 @@ export default () =>(
                                 <ListItem>Sheet 4</ListItem>
                             </ListBox>
                         }/>
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 
@@ -97,9 +97,9 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Select chart type" editor={ <DropdownList value="Donut" /> } />
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 

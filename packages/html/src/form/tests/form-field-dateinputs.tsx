@@ -3,7 +3,7 @@ import { DatePicker } from '../../datepicker';
 import { DateRangePicker } from '../../daterangepicker';
 import { DateTimePicker } from '../../datetimepicker';
 import { TimePicker } from '../../timepicker';
-import { Form, FormField } from '../../form';
+import { FormField, FormHorizontal, FormNormal } from '../../form';
 
 
 const styles = `
@@ -22,8 +22,9 @@ export default () =>(
             <span>Horizontal Form</span>
 
             <section>
-                <Form>
-
+                <FormNormal
+                    formButtons={null}
+                >
                     <FormField
                         label="DateInput:"
                         editor={
@@ -63,14 +64,14 @@ export default () =>(
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormNormal>
             </section>
 
 
             <section>
-                <Form orientation="horizontal">
-
+                <FormHorizontal
+                    formButtons={null}
+                >
                     <FormField
                         label="DateInput:"
                         editor={
@@ -110,8 +111,7 @@ export default () =>(
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormHorizontal>
             </section>
 
         </div>

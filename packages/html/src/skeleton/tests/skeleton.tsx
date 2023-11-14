@@ -1,4 +1,4 @@
-import { Skeleton } from '../../skeleton';
+import { SkeletonCircle, SkeletonNormal, SkeletonRectangle } from '../../skeleton';
 
 const style = `
     .k-skeleton-container {
@@ -15,19 +15,19 @@ export default () => (
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
-            <Skeleton style={{ width: '300px' }} />
-            <Skeleton shape={'circle'} style={{ width: '50px', height: '50px' }} />
-            <Skeleton shape={'rect'} style={{ width: '300px', height: '200px' }} />
+            <SkeletonNormal style={{ width: '300px' }} />
+            <SkeletonCircle style={{ width: '50px', height: '50px' }} />
+            <SkeletonRectangle style={{ width: '300px', height: '200px' }} />
 
             <div className="k-skeleton-container k-d-grid">
-                <Skeleton shape={'circle'} style={{ gridColumn: "1 / 3", gridRow: "1 / 3" }} />
-                <Skeleton style={{ gridColumn: "3 / 10", gridRow: "1 / 2" }} />
-                <Skeleton style={{ gridColumn: "3 / 7", gridRow: "2 / 3" }} />
+                <SkeletonCircle style={{ gridColumn: "1 / 3", gridRow: "1 / 3" }} />
+                <SkeletonNormal style={{ gridColumn: "3 / 10", gridRow: "1 / 2" }} />
+                <SkeletonNormal style={{ gridColumn: "3 / 7", gridRow: "2 / 3" }} />
 
-                <Skeleton shape={'rect'} style={{ gridColumn: "1 / 11", gridRow: "3 / 8" }} />
+                <SkeletonRectangle style={{ gridColumn: "1 / 11", gridRow: "3 / 8" }} />
 
-                <Skeleton style={{ gridColumn: "1 / 11", gridRow: "9 / 10" }} />
-                <Skeleton style={{ gridColumn: "1 / 11", gridRow: "10 / 10" }} />
+                <SkeletonNormal style={{ gridColumn: "1 / 11", gridRow: "9 / 10" }} />
+                <SkeletonNormal style={{ gridColumn: "1 / 11", gridRow: "10 / 10" }} />
             </div>
 
         </div>

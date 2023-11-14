@@ -6,7 +6,7 @@ import { Toolbar } from '../../toolbar';
 import { Popup } from '../../popup';
 import { WindowNormal } from '../../window';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
 
@@ -226,7 +226,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField
                             label="Value in px"
                             editor={ <Textbox value="412" /> }
@@ -241,7 +241,7 @@ export default () =>(
                             }
                         >
                         </FormField>
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
         </div>

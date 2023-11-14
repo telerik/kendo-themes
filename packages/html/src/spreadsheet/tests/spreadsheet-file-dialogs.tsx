@@ -1,6 +1,6 @@
 import { WindowNormal } from '../../window';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { UploadNormal } from '../../upload';
@@ -37,11 +37,11 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="File name" editor={ <Textbox placeholder="Workbook"/> }></FormField>
 
                         <FormField label="Save as type" editor={ <DropdownList placeholder="Excel Workbook (.xlsx)" />}></FormField>
-                    </Form>
+                    </FormNormal>
                 </WindowNormal>
             </section>
 
