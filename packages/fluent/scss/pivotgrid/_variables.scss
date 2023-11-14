@@ -66,14 +66,14 @@ $kendo-pivotgrid-cell-border-width: 1px !default;
 $kendo-pivotgrid-headers-bg: var( --kendo-component-bg, inherit ) !default;
 /// Text color of the PivotGrid header.
 /// @group pivotgrid
-$kendo-pivotgrid-headers-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-pivotgrid-headers-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// Border color of the PivotGrid header.
 /// @group pivotgrid
 $kendo-pivotgrid-headers-border: var( --kendo-component-border, inherit ) !default;
 
 /// Background color of the PivotGrid total cells.
 /// @group pivotgrid
-$kendo-pivotgrid-total-bg: k-get-theme-color-var( neutral-20 ) !default;
+$kendo-pivotgrid-total-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-20 )) !default;
 /// Text color of the PivotGrid total cells.
 /// @group pivotgrid
 $kendo-pivotgrid-total-text: var( --kendo-component-text, inherit ) !default;
@@ -157,7 +157,7 @@ $kendo-pivotgrid-configurator-horizontal-height: 420px !default;
 $kendo-pivotgrid-configurator-bg: var( --kendo-component-bg, inherit ) !default;
 /// Text color of the PivotGrid configurator.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-pivotgrid-configurator-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// Border color of the PivotGrid configurator.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-border: var( --kendo-component-border, inherit )!default;

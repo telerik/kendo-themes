@@ -158,12 +158,6 @@
                         $color,
                         $color
                     );
-                } @else if $name == "inverse" {
-                    @include fill(
-                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
-                        $color,
-                        $color
-                    );
                 } @else {
                     @include fill(
                         if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )),
@@ -194,12 +188,6 @@
                         $color,
                         $color
                     );
-                } @else if $name == "inverse" {
-                    @include fill(
-                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
-                        $color,
-                        $color
-                    );
                 } @else {
                     @include fill(
                         if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )),
@@ -214,12 +202,6 @@
                 @if $name == "base" {
                     @include fill(
                         if($kendo-enable-color-system, $kendo-base-bg, k-contrast-legacy( $color )),
-                        $color,
-                        $color
-                    );
-                } @else if $name == "inverse" {
-                    @include fill(
-                        if($kendo-new-colors, k-color( on-dark ), k-contrast-legacy( $color )),
                         $color,
                         $color
                     );

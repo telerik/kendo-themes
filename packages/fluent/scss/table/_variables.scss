@@ -88,7 +88,7 @@ $kendo-table-border: var( --kendo-component-border, initial ) !default;
 $kendo-table-header-bg: $kendo-table-bg !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-table-header-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// Border color of table headers.
 /// @group table
 $kendo-table-header-border: $kendo-table-border !default;
@@ -168,7 +168,7 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: k-get-theme-color-var( primary-20 ) !default;
+$kendo-table-selected-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .13 ), k-get-theme-color-var( primary-20 )) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: $kendo-table-text !default;
@@ -178,7 +178,7 @@ $kendo-table-selected-border: $kendo-table-border !default;
 
 /// Hover background color of selected rows in table.
 /// @group table
-$kendo-table-selected-hover-bg: k-get-theme-color-var( primary-30 ) !default;
+$kendo-table-selected-hover-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .26 ), k-get-theme-color-var( primary-30 )) !default;
 /// Hover text color of selected rows in table.
 /// @group table
 $kendo-table-selected-hover-text: $kendo-table-selected-text !default;

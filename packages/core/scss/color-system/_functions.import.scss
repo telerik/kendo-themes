@@ -91,6 +91,31 @@
     @return var( --#{$prefix}#{$name}, #{$fallback} );
 }
 
+@function k-get-swatch-color( $name, $color ) {
+    $map: (
+        app-surface: k-color( app-surface ),
+        on-app-surface: k-color( on-app-surface ),
+        subtle: k-color( subtle ),
+        surface: k-color( surface ),
+        surface-alt: k-color( surface-alt ),
+        border: k-color( border ),
+        border-alt: k-color( border-alt ),
+        color-subtle: k-color( #{$color}-subtle ),
+        color-subtle-hover: k-color( #{$color}-subtle-hover ),
+        color-subtle-active: k-color( #{$color}-subtle-active ),
+        color: k-color( #{$color} ),
+        color-hover: k-color( #{$color}-hover ),
+        color-active: k-color( #{$color}-active ),
+        color-emphasis: k-color( #{$color}-emphasis ),
+        color-on-subtle: k-color( #{$color}-on-subtle ),
+        on-color: k-color( on-#{$color} ),
+        color-on-surface: k-color( #{$color}-on-surface ),
+        on-color-disabled: rgba( k-color( on-#{$color}, true ), .46)
+    );
+
+    @return if( k-map-has-key( $map, $name ), k-map-get( $map, $name ), $name );
+};
+
 @function k-generate-theme-variation( $theme-color, $source-palette-name, $mapping ) {
     $temp: ( );
 
@@ -102,9 +127,9 @@
         $border-prop: k-list-nth($indices, 3);
 
         // Take value from the palette only if it is a number
-        $bg: if( k-meta-type-of($bg-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$bg-prop} ), $bg-prop );
-        $text: if( k-meta-type-of($text-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$text-prop} ), $text-prop );
-        $border: if( k-meta-type-of($border-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$border-prop} ), $border-prop );
+        $bg: if($kendo-enable-color-system, k-get-swatch-color( $bg-prop, $source-palette-name ), if( k-meta-type-of($bg-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$bg-prop} ), $bg-prop ));
+        $text: if($kendo-enable-color-system, k-get-swatch-color( $text-prop, $source-palette-name ), if( k-meta-type-of($text-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$text-prop} ), $text-prop ));
+        $border: if($kendo-enable-color-system, k-get-swatch-color( $border-prop, $source-palette-name ), if( k-meta-type-of($border-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$border-prop} ), $border-prop ));
 
 
         $temp: k-map-deep-merge( $temp, (
@@ -116,7 +141,7 @@
         // Add outline if provided in the map
         @if ( k-list-length($indices) > 3 ) {
             $outline-prop: k-list-nth($indices, 4);
-            $outline: if( k-meta-type-of($outline-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$outline-prop} ), $outline-prop );
+            $outline: if($kendo-enable-color-system, k-get-swatch-color( $outline-prop, $source-palette-name ), if( k-meta-type-of($outline-prop) == number, k-get-theme-color-var( #{$source-palette-name}-#{$outline-prop} ), $outline-prop ));
 
             $temp: k-map-deep-merge( $temp, (
                 #{$prefix}outline: $outline

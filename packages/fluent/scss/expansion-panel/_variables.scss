@@ -22,13 +22,13 @@ $kendo-expander-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-expander-text: var( --kendo-component-text, initial ) !default;
 /// The background color of the ExpansionPanel.
 /// @group expander
-$kendo-expander-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-expander-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The border color of the ExpansionPanel.
 /// @group expander
 $kendo-expander-border: var( --kendo-component-border, initial ) !default;
 /// The box shadow of the ExpansionPanel.
 /// @group expander
-$kendo-expander-shadow: inset 0 0 0 2px k-get-theme-color-var( neutral-30 ) !default;
+$kendo-expander-shadow: inset 0 0 0 2px if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The background color of the expanded ExpansionPanel.
 /// @group expander
@@ -52,14 +52,14 @@ $kendo-expander-focus-outline-width: 1px !default;
 $kendo-expander-focus-outline-style: solid !default;
 /// The outline color of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-outline: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-expander-focus-outline: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
 
 /// The background color of the focused ExpansionPanel.
 /// @group expander
 $kendo-expander-focus-bg: var( --kendo-component-bg, initial ) !default;
 /// The box shadow of the focused ExpansionPanel.
 /// @group expander
-$kendo-expander-focus-shadow: inset 0px 0px 0px 2px k-get-theme-color-var( neutral-130 ) !default;
+$kendo-expander-focus-shadow: inset 0px 0px 0px 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
 
 /// The horizontal padding of the ExpansionPanel header.
 /// @group expander
@@ -70,18 +70,18 @@ $kendo-expander-header-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
 /// The text color of the ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-expander-header-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The background color of the ExpansionPanel header.
 /// @group expander
 $kendo-expander-header-bg: inherit !default;
 
 /// The background color of the hovered ExpansionPanel header.
 /// @group expander
-$kendo-expander-header-hover-bg: k-get-theme-color-var( neutral-20 ) !default;
+$kendo-expander-header-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 )) !default;
 
 /// The text color of the ExpansionPanel title.
 /// @group expander
-$kendo-expander-title-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-expander-title-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The text color of the ExpansionPanel sub-title.
 /// @group expander

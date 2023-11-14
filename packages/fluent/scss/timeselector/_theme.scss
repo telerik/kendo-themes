@@ -48,7 +48,7 @@
     // Time list
     .k-time-list {
         .k-item:hover {
-            color: k-get-theme-color-var( primary-120 );
+            color: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-120 ));
         }
     }
 

@@ -146,13 +146,13 @@ $kendo-chat-quick-reply-line-height: $kendo-chat-bubble-line-height !default;
 
 /// The background of the chat.
 /// @group chat
-$kendo-chat-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-chat-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The text of the chat.
 /// @group chat
-$kendo-chat-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-chat-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// The border of the chat.
 /// @group chat
-$kendo-chat-border: k-get-theme-color-var( neutral-30 ) !default;
+$kendo-chat-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The background of the bubble in the chat.
 /// @group chat
@@ -175,7 +175,7 @@ $kendo-chat-bubble-selected-shadow: var( --kendo-box-shadow-depth-3, none ) !def
 
 /// The background of the alt bubble in the chat.
 /// @group chat
-$kendo-chat-alt-bubble-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-chat-alt-bubble-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The text of the alt bubble in the chat.
 /// @group chat
 $kendo-chat-alt-bubble-text: var( --kendo-component-bg, inherit ) !default;
@@ -197,17 +197,17 @@ $kendo-chat-alt-bubble-selected-shadow: var( --kendo-box-shadow-depth-3, none ) 
 $kendo-chat-quick-reply-bg: transparent !default;
 /// The text of quick reply in the chat.
 /// @group chat
-$kendo-chat-quick-reply-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-chat-quick-reply-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The border of quick reply in the chat.
 /// @group chat
-$kendo-chat-quick-reply-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-chat-quick-reply-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The hover background of quick reply in the chat.
 /// @group chat
-$kendo-chat-quick-reply-hover-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-chat-quick-reply-hover-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The text of quick reply in the chat.
 /// @group chat
 $kendo-chat-quick-reply-hover-text: var( --kendo-component-bg, inherit ) !default;
 /// The hover border of quick reply in the chat.
 /// @group chat
-$kendo-chat-quick-reply-hover-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-chat-quick-reply-hover-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

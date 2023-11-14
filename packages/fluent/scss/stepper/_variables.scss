@@ -75,7 +75,7 @@ $kendo-stepper-indicator-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-stepper-indicator-text: var( --kendo-component-text, initial ) !default;
 /// Border color of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-stepper-indicator-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// The hover background color of the stepper indicator.
 /// @group stepper
@@ -99,17 +99,17 @@ $kendo-stepper-indicator-disabled-border: var( --kendo-disabled-border, initial 
 
 /// Background color of the stepper done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-stepper-indicator-done-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Text color of the stepper done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-text: $kendo-color-white !default;
+$kendo-stepper-indicator-done-text: if($kendo-enable-color-system, k-color( on-primary ), $kendo-color-white) !default;
 /// Border color of the stepper done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
 
 /// The hover background color of the stepper done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-hover-bg: k-get-theme-color-var( primary-110 ) !default;
+$kendo-stepper-indicator-done-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
 /// The hover text color of the stepper done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-hover-text: $kendo-stepper-indicator-done-text !default;
@@ -119,7 +119,7 @@ $kendo-stepper-indicator-done-hover-border: $kendo-stepper-indicator-done-hover-
 
 /// The disabled background color of the stepper done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-disabled-bg: k-get-theme-color-var( primary-30 ) !default;
+$kendo-stepper-indicator-done-disabled-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .22 ), k-get-theme-color-var( primary-30 )) !default;
 /// The disabled text color of the stepper done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-disabled-text: var( --kendo-disabled-text, initial ) !default;
@@ -129,7 +129,7 @@ $kendo-stepper-indicator-done-disabled-border: var( --kendo-disabled-border, ini
 
 /// The background color of the stepper current indicator.
 /// @group stepper
-$kendo-stepper-indicator-current-bg: k-get-theme-color-var( primary-120 ) !default;
+$kendo-stepper-indicator-current-bg: if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 )) !default;
 /// The text color of the stepper current indicator.
 /// @group stepper
 $kendo-stepper-indicator-current-text: $kendo-stepper-indicator-done-text !default;
@@ -162,10 +162,10 @@ $kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-done-
 $kendo-stepper-label-text: inherit !default;
 /// The success text color of the stepper label.
 /// @group stepper
-$kendo-stepper-label-success-text: k-get-theme-color-var( success-190 ) !default;
+$kendo-stepper-label-success-text: if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 )) !default;
 /// The error text color of the stepper label.
 /// @group stepper
-$kendo-stepper-label-error-text: k-get-theme-color-var( error-190 ) !default;
+$kendo-stepper-label-error-text: if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 )) !default;
 /// The hover text color of the stepper label.
 /// @group stepper
 $kendo-stepper-label-hover-text: $kendo-stepper-text !default;
@@ -178,7 +178,7 @@ $kendo-stepper-current-label-font-weight: var( --kendo-font-weight-bold, bold ) 
 
 /// The text color of the stepper optional label.
 /// @group stepper
-$kendo-stepper-optional-label-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-stepper-optional-label-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
 /// The font size of the stepper optional label.
 /// @group stepper
 $kendo-stepper-optional-label-font-size: inherit !default;

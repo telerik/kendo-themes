@@ -1,74 +1,100 @@
-@use "@progress/kendo-theme-core/scss/index.import.scss" as *;
+@use "@progress/kendo-theme-core/scss/index.import.scss" as core;
 
-@if($kendo-enable-color-system) {
-    $kendo-body-bg: null;
-    $kendo-body-text: null;
-    $kendo-component-bg: null;
-    $kendo-component-text: null;
-    $kendo-component-border: null;
-    $kendo-hover-bg: null;
-    $kendo-hover-text: null;
-    $kendo-hover-border: null;
-    $kendo-selected-bg: null;
-    $kendo-selected-text: null;
-    $kendo-selected-border: null;
-    $kendo-selected-hover-bg: null;
-    $kendo-selected-hover-text: null;
-    $kendo-selected-hover-border: null;
-    $kendo-focus-outline: null;
-    $kendo-subtle-text: null;
-    $kendo-link-text: null;
-    $kendo-link-hover-text: null;
-    $kendo-invalid-bg: null;
-    $kendo-invalid-text: null;
-    $kendo-invalid-border: null;
-    $kendo-invalid-shadow: null;
-    $kendo-disabled-bg: null;
-    $kendo-disabled-text: null;
-    $kendo-disabled-border: null;
-    $kendo-loading-bg: null;
-    $kendo-loading-text: null;
-    $kendo-palettes: ();
-    $kendo-theme-colors: ();
+@if(core.$kendo-enable-color-system) {
+    core.$kendo-body-bg: core.k-color( app-surface );
+    core.$kendo-body-text: core.k-color( on-app-surface );
+    core.$kendo-component-bg: core.$kendo-body-bg;
+    core.$kendo-component-text: core.$kendo-body-text;
+    core.$kendo-component-border: rgba( core.k-color( border, true ), .16 );
+    core.$kendo-hover-bg: core.k-color( base-hover );
+    core.$kendo-hover-text: core.k-color( on-base );
+    core.$kendo-hover-border: rgba( core.k-color( border, true ), .1 );
+    core.$kendo-selected-bg: core.k-color( base-active );
+    core.$kendo-selected-text: core.k-color( on-base );
+    core.$kendo-selected-border: rgba( core.k-color( border-alt, true ), .76 );
+    core.$kendo-selected-hover-bg: core.k-color( base-subtle-active );
+    core.$kendo-selected-hover-text: core.k-color( on-base );
+    core.$kendo-selected-hover-border: core.$kendo-selected-border;
+    core.$kendo-focus-outline: core.k-color( base-emphasis );
+    core.$kendo-subtle-text: core.k-color( subtle );
+    core.$kendo-link-text: core.k-color( primary );
+    core.$kendo-link-hover-text: core.k-color( primary-hover );
+    core.$kendo-invalid-bg: initial;
+    core.$kendo-invalid-text: core.k-color( error-on-surface );
+    core.$kendo-invalid-border: core.k-color( error-emphasis );
+    core.$kendo-invalid-shadow: null;
+    core.$kendo-disabled-bg: core.k-color( base-subtle );
+    core.$kendo-disabled-text: rgba( core.k-color( on-app-surface, true ), .46 );
+    core.$kendo-disabled-border: transparent;
+    core.$kendo-loading-bg: core.$kendo-component-bg;
+    core.$kendo-loading-text: currentColor;
+
+    core.$kendo-theme-colors: (
+        primary: (
+            text: core.k-color( primary-emphasis ),
+            bg: core.k-color( primary-subtle ),
+            border: core.k-color( primary-subtle ),
+        ),
+        info: (
+            text: core.k-color( info-on-surface ),
+            bg: core.k-color( info-subtle ),
+            border: core.k-color( info-subtle ),
+        ),
+        success: (
+            text: core.k-color( success-on-surface ),
+            bg: core.k-color( success-subtle ),
+            border: core.k-color( success-subtle ),
+        ),
+        warning: (
+            text: core.k-color( warning-on-surface ),
+            bg: core.k-color( warning-subtle ),
+            border: core.k-color( warning-subtle ),
+        ),
+        error: (
+            text: core.k-color( error-on-surface ),
+            bg: core.k-color( error-subtle ),
+            border: core.k-color( error-subtle ),
+        ),
+    );
 }
 
 :root {
-    --kendo-body-bg: #{$kendo-body-bg};
-    --kendo-body-text: #{$kendo-body-text};
+    --kendo-body-bg: #{core.$kendo-body-bg};
+    --kendo-body-text: #{core.$kendo-body-text};
 
-    --kendo-component-bg: #{$kendo-component-bg};
-    --kendo-component-text: #{$kendo-component-text};
-    --kendo-component-border: #{$kendo-component-border};
+    --kendo-component-bg: #{core.$kendo-component-bg};
+    --kendo-component-text: #{core.$kendo-component-text};
+    --kendo-component-border: #{core.$kendo-component-border};
 
-    --kendo-link-text: #{$kendo-link-text};
-    --kendo-link-hover-text: #{$kendo-link-hover-text};
+    --kendo-link-text: #{core.$kendo-link-text};
+    --kendo-link-hover-text: #{core.$kendo-link-hover-text};
 
-    --kendo-disabled-bg: #{$kendo-disabled-bg};
-    --kendo-disabled-text: #{$kendo-disabled-text};
-    --kendo-disabled-border: #{$kendo-disabled-border};
+    --kendo-disabled-bg: #{core.$kendo-disabled-bg};
+    --kendo-disabled-text: #{core.$kendo-disabled-text};
+    --kendo-disabled-border: #{core.$kendo-disabled-border};
 
-    --kendo-hover-bg: #{$kendo-hover-bg};
-    --kendo-hover-text: #{$kendo-hover-text};
-    --kendo-hover-border: #{$kendo-hover-border};
+    --kendo-hover-bg: #{core.$kendo-hover-bg};
+    --kendo-hover-text: #{core.$kendo-hover-text};
+    --kendo-hover-border: #{core.$kendo-hover-border};
 
-    --kendo-selected-bg: #{$kendo-selected-bg};
-    --kendo-selected-text: #{$kendo-selected-text};
-    --kendo-selected-border: #{$kendo-selected-border};
+    --kendo-selected-bg: #{core.$kendo-selected-bg};
+    --kendo-selected-text: #{core.$kendo-selected-text};
+    --kendo-selected-border: #{core.$kendo-selected-border};
 
-    --kendo-selected-hover-bg: #{$kendo-selected-hover-bg};
-    --kendo-selected-hover-text: #{$kendo-selected-hover-text};
-    --kendo-selected-hover-border: #{$kendo-selected-hover-border};
+    --kendo-selected-hover-bg: #{core.$kendo-selected-hover-bg};
+    --kendo-selected-hover-text: #{core.$kendo-selected-hover-text};
+    --kendo-selected-hover-border: #{core.$kendo-selected-hover-border};
 
-    --kendo-focus-outline: #{$kendo-focus-outline};
+    --kendo-focus-outline: #{core.$kendo-focus-outline};
 
-    --kendo-subtle-text: #{$kendo-subtle-text};
+    --kendo-subtle-text: #{core.$kendo-subtle-text};
 
-    --kendo-invalid-bg: #{$kendo-invalid-bg};
-    --kendo-invalid-text: #{$kendo-invalid-text};
-    --kendo-invalid-border: #{$kendo-invalid-border};
-    --kendo-invalid-shadow: #{$kendo-invalid-shadow};
+    --kendo-invalid-bg: #{core.$kendo-invalid-bg};
+    --kendo-invalid-text: #{core.$kendo-invalid-text};
+    --kendo-invalid-border: #{core.$kendo-invalid-border};
+    --kendo-invalid-shadow: #{core.$kendo-invalid-shadow};
 
-    --kendo-border-radius-sm: #{$kendo-border-radius-sm};
-    --kendo-border-radius-md: #{$kendo-border-radius-md};
-    --kendo-border-radius-lg: #{$kendo-border-radius-lg};
+    --kendo-border-radius-sm: #{core.$kendo-border-radius-sm};
+    --kendo-border-radius-md: #{core.$kendo-border-radius-md};
+    --kendo-border-radius-lg: #{core.$kendo-border-radius-lg};
 }

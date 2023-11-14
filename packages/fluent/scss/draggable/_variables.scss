@@ -69,4 +69,4 @@ $kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
 
 /// Background-color of the drop hint.
 /// @group draggable
-$kendo-drop-hint-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-drop-hint-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

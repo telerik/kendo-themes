@@ -387,7 +387,7 @@
 
     // export variables to allow use in scripts
     $exported: (
-        primary-contrast: $kendo-color-white,
+        primary-contrast: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white),
         base: $kendo-component-bg,
         background: $kendo-component-bg,
 
@@ -400,10 +400,10 @@
         selected-background: $kendo-selected-bg,
         selected-text-color: $kendo-selected-text,
 
-        success: k-get-theme-color( success, 100 ),
-        info: k-get-theme-color( info, 100 ),
-        warning: k-get-theme-color( warning, 100 ),
-        error: k-get-theme-color( error, 100 ),
+        success: if($kendo-enable-color-system, k-color( success ), k-get-theme-color( success, 100 )),
+        info: if($kendo-enable-color-system, k-color( info ), k-get-theme-color( info, 100 )),
+        warning: if($kendo-enable-color-system, k-color( warning ), k-get-theme-color( warning, 100 )),
+        error: if($kendo-enable-color-system, k-color( error ), k-get-theme-color( error, 100 )),
 
         series-a: $kendo-series-a,
         series-b: $kendo-series-b,
@@ -444,7 +444,7 @@
         series-30: $kendo-series-30,
 
         gauge-pointer: $kendo-series-f,
-        gauge-track: k-get-theme-color-var( neutral-30 )
+        gauge-track: if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 ))
     );
 
     @each $name, $value in $exported {

@@ -104,44 +104,44 @@ $kendo-badge-brand-colors: (
     error: error,
     success: success,
     info: info,
-    secondary: neutral,
+    secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
  ) !default;
 
 // Matrices with Badge theme colors in the order: bg, color, border
 $_tc-badge-matrix: (
     solid: (
-        normal: (100, $kendo-color-white, 100)
+        normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))
     ),
     outline: (
-        normal: ($kendo-color-white, 100, 100)
+        normal: if($kendo-enable-color-system, (on-color, color, color), ($kendo-color-white, 100, 100))
     )
 ) !default;
 
 $_tc-badge-warning-matrix: (
     solid: (
-        normal: (100, k-get-theme-color-var( neutral-160 ), 100)
+        normal: if($kendo-enable-color-system, (color, on-color, color), (100, k-get-theme-color-var( neutral-160 ), 100))
     ),
     outline: (
-        normal: ($kendo-color-white, 100, 100)
+        normal: if($kendo-enable-color-system, (app-surface, color, color), ($kendo-color-white, 100, 100))
     )
 ) !default;
 
 $_tc-badge-dark-matrix: (
     solid: (
-        normal: (160, $kendo-color-white, 160)
+        normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))
     ),
     outline: (
-        normal: ($kendo-color-white, 160, 160)
+        normal: if($kendo-enable-color-system, (on-color, color, color), ($kendo-color-white, 160, 160))
     )
 ) !default;
 
 $_tc-badge-light-matrix: (
     solid: (
-        normal: (50, 160, 50)
+        normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))
     ),
     outline: (
-        normal: ($kendo-color-white, 50, 50)
+        normal: if($kendo-enable-color-system, (app-surface, color, color), ($kendo-color-white, 50, 50))
     )
 ) !default;
 
@@ -168,13 +168,13 @@ $kendo-badge-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-badge-dark-matrix {
     $kendo-badge-theme-colors: map.deep-merge(
         $kendo-badge-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
     );
 }
 
 @each $fill-mode, $ui-states in $_tc-badge-light-matrix {
     $kendo-badge-theme-colors: map.deep-merge(
         $kendo-badge-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, light, if($kendo-enable-color-system, light, neutral), $ui-states )
     );
 }
