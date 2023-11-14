@@ -93,6 +93,7 @@ export * from './expansion-panel/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';
 export * from './tilelayout/index';
+// export * from './dock-manager/index';
 
 // Data management
 // export * from './grid/index';
@@ -113,6 +114,12 @@ export * from './timeline/index';
 // export * from './scroller/index';
 export * from './scrollview/index';
 export * from './prompt/index';
+
+// Dataviz
+// export * from './dataviz/index';
+// export * from './map/index';
+// export * from './orgchart/index';
+// export * from './signature/index';
 
 // Editors
 export * from './editor/index';
