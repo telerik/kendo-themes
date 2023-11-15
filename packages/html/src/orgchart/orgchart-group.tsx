@@ -11,7 +11,8 @@ export type KendoOrgchartGroupProps = {
     title?: string;
     subtitle?: string;
     line?: boolean;
-    plus?: boolean,
+    button?: boolean;
+    buttonIcon?: "plus" | "minus";
     focus?: boolean,
     orientation?: 'horizontal' | 'vertical';
 };
@@ -19,7 +20,8 @@ export type KendoOrgchartGroupProps = {
 export type KendoOrgchartGroupState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
-    orientation: 'horizontal'
+    orientation: 'horizontal',
+    buttonIcon: 'plus',
 };
 
 export const OrgchartGroup = (
@@ -31,7 +33,8 @@ export const OrgchartGroup = (
         title,
         subtitle,
         line,
-        plus,
+        button,
+        buttonIcon = defaultProps.buttonIcon,
         focus,
         orientation = defaultProps.orientation,
         ...other
@@ -70,7 +73,9 @@ export const OrgchartGroup = (
                 </div>
             </div>
             {line && <div className="k-orgchart-line k-orgchart-line-v"></div> }
-            {plus && <Button className="k-orgchart-button" icon="plus"></Button> }
+            {button && (
+                <Button className="k-orgchart-button" icon={buttonIcon}></Button>
+            )}
         </div>
     );
 };

@@ -11,9 +11,14 @@ export type KendoOrgchartNodeProps = {
     details?: boolean;
     color?: string;
     line?: boolean;
-    plus?: boolean;
+    button?: boolean;
+    buttonIcon?: "plus" | "minus";
     avatar?: string;
     avatarType?: string;
+};
+
+const defaultProps = {
+    buttonIcon: 'plus',
 };
 
 export const OrgchartNode = (
@@ -26,7 +31,8 @@ export const OrgchartNode = (
         details,
         color,
         line,
-        plus,
+        button,
+        buttonIcon = defaultProps.buttonIcon,
         avatar,
         avatarType,
         ...other
@@ -63,7 +69,9 @@ export const OrgchartNode = (
 
             </Card>
             {line && <div className="k-orgchart-line k-orgchart-line-v"></div> }
-            {plus && <Button className="k-orgchart-button" icon="plus"></Button> }
+            {button && (
+                <Button className="k-orgchart-button" icon={buttonIcon}></Button>
+            )}
         </div>
     );
 };
