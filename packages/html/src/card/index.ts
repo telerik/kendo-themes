@@ -7,3 +7,5 @@ export * from './card-header';
 export * from './card-footer';
 export * from './card-body';
 export * from './card-deck';
+export * from './templates/card-normal';
+export * from './templates/card-horizontal';
