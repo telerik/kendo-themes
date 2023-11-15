@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Card, CardHeader, CardBody, CardFooter, CardTitle, CardSubtitle, CardMedia } from '../../card';
+import { CardHorizontal, CardNormal, CardHeader, CardBody, CardFooter, CardTitle, CardSubtitle, CardMedia } from '../../card';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Layout } from '../../layout';
@@ -11,7 +11,7 @@ export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <Card orientation="horizontal">
+            <CardHorizontal>
                 <CardBody title="Card Title" subtitle="Card Subtitle">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
@@ -19,9 +19,9 @@ export default () =>(
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-            </Card>
+            </CardHorizontal>
 
-            <Card orientation="horizontal">
+            <CardHorizontal>
                 <CardMedia src="/packages/html/assets/avatar.jpg" />
                 <Layout orientation="vertical" className="k-flex">
                     <CardBody title="Card Title" subtitle="Card Subtitle">
@@ -33,9 +33,9 @@ export default () =>(
                         <Button fillMode="flat" themeColor="primary">Action 2</Button>
                     </ActionButtons>
                 </Layout>
-            </Card>
+            </CardHorizontal>
 
-            <Card orientation="horizontal">
+            <CardHorizontal>
                 <CardMedia>
                     <img src="/packages/html/assets/avatar.jpg" />
                 </CardMedia>
@@ -50,9 +50,9 @@ export default () =>(
                         <Button fillMode="flat" themeColor="primary">Action 2</Button>
                     </ActionButtons>
                 </Layout>
-            </Card>
+            </CardHorizontal>
 
-            <Card orientation="vertical">
+            <CardNormal>
                 <CardBody title="Sofia" subtitle="Sunny" className="k-text-center">
                     <Typography type="display-1">☀️</Typography>
                     <Typography type="display-2">2&deg;C</Typography>
@@ -62,9 +62,9 @@ export default () =>(
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-            </Card>
+            </CardNormal>
 
-            <Card orientation="vertical">
+            <CardNormal>
                 <CardBody title="Passenger" subtitle="GP, Gosho"></CardBody>
                 <hr className="k-separator" />
                 <CardBody>
@@ -119,9 +119,9 @@ export default () =>(
                         <div className="k-flex k-text-right">BGN 234</div>
                     </Layout>
                 </CardBody>
-            </Card>
+            </CardNormal>
 
-            <Card orientation="vertical">
+            <CardNormal>
                 <CardHeader className="k-d-flex">
                     <Avatar type="image" themeColor="primary" rounded="medium" className="bg-img">
                         <img src="/packages/html/assets/avatar.jpg" />
@@ -139,7 +139,7 @@ export default () =>(
                 <CardFooter>
                     Footer here
                 </CardFooter>
-            </Card>
+            </CardNormal>
 
         </div>
     </>
