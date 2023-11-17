@@ -273,7 +273,7 @@
         top: -$kendo-button-border-width;
         bottom: -$kendo-button-border-width;
         z-index: 0;
-        transition: opacity .2s ease-in-out;
+        @include kendo-motion(short-4, ease-in-out, opacity);
     }
 
 
@@ -340,7 +340,7 @@
             top: -$kendo-button-border-width;
             bottom: -$kendo-button-border-width;
             z-index: 0;
-            transition: opacity .2s ease-in-out;
+            @include kendo-motion(short-4, ease-in-out, opacity);
         }
     }
 

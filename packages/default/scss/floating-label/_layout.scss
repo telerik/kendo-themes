@@ -29,7 +29,7 @@
             overflow: hidden;
             cursor: text;
             transform-origin: left center;
-            transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, left $kendo-floating-label-transition;
+            transition: $kendo-floating-label-transition;
         }
 
         > .k-widget {
@@ -68,7 +68,7 @@
 
             > .k-label {
                 transform-origin: right center;
-                transition: transform $kendo-floating-label-transition, color $kendo-floating-label-transition, top $kendo-floating-label-transition, right $kendo-floating-label-transition;
+                transition: $kendo-floating-label-transition;
             }
 
             &.k-empty {

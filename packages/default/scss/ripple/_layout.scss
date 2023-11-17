@@ -21,7 +21,7 @@
         border-radius: 50%;
         padding: 0;
         transform: translate(-50%, -50%) scale(0);
-        transition: opacity 100ms linear, transform 500ms cubic-bezier(.4, 0, .2, 1);
+        transition: k-motion(short-2, linear, opacity), k-motion(long-2, ease-in-out, transform);
         opacity: .1;
         background-color: currentColor;
 

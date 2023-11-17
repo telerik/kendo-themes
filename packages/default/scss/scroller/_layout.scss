@@ -42,7 +42,7 @@
         width: 2rem;
         font-size: 2rem;
         transform: rotate(0deg);
-        transition: transform 300ms linear;
+        @include kendo-motion(medium-2, linear, transform);
     }
     .km-widget .km-scroller-release .km-icon {
         transform: rotate(180deg);
@@ -61,7 +61,7 @@
         width: .4em;
         opacity: 0;
         transform-origin: 0 0;
-        transition: opacity .3s linear;
+        @include kendo-motion(medium-2, linear, opacity);
 
         .k-map &,
         .k-diagram & {

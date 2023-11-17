@@ -164,7 +164,7 @@
             top: 50%;
             border-radius: 100%;
             z-index: -1;
-            transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
+            transition: k-motion(short-2, linear, opacity), k-motion(short-3, ease-in-out, transform);
             transform: translate(-50%, -50%) scale(0);
             transform-origin: center center;
         }

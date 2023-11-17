@@ -45,7 +45,7 @@
         flex-flow: row nowrap;
         flex: 1 0 auto;
         position: relative;
-        transition: background-color 200ms ease-in-out;
+        @include kendo-motion(short-4, ease-in-out, background-color);
     }
 
 
@@ -55,7 +55,7 @@
         height: 0;
         overflow: visible;
         position: absolute;
-        transition: left 200ms ease-in-out;
+        @include kendo-motion(short-4, ease-in-out, left);
         top: 50%;
     }
     .k-switch-thumb {

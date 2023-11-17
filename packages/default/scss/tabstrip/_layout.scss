@@ -139,7 +139,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        transition: width .2s linear;
+        @include kendo-motion(short-4, linear, width);
 
         // TODO: a better name
         display: none;
