@@ -13,6 +13,8 @@ $wcag-min-contrast-ratio: 4.5 !default;
 
 // Backward compatibility
 @import "./color-system/_swatch-legacy.scss";
+// Backwards compatibility
+@import "./motion/_motion-legacy.scss";
 
 // Expose
 @include exports("kendo-core-styles") {
@@ -20,4 +22,6 @@ $wcag-min-contrast-ratio: 4.5 !default;
 
     // Elevation System
     @include kendo-elevation--styles();
+    // Motion System
+    @include kendo-motion--styles();
 }
