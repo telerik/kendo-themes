@@ -39,9 +39,9 @@ $kendo-slider-draghandle-pressed-gradient: null !default;
 
 $kendo-slider-draghandle-focus-shadow: 0 0 4px 0 if($kendo-enable-color-system, rgba( k-color( primary, true ), .75 ), rgba( $kendo-slider-draghandle-border, .75 )) !default;
 
-$kendo-slider-transition-speed: .3s !default;
+$kendo-slider-transition-speed: var(--kendo-motion-medium-2, .3s) !default;
 $kendo-slider-transition-function: ease-out !default;
-$kendo-slider-draghandle-transition-speed: .4s !default;
+$kendo-slider-draghandle-transition-speed: var(--kendo-motion-medium-4, .4s) !default;
 $kendo-slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
 $kendo-slider-track-bg: if($kendo-enable-color-system, k-color( base ), k-try-shade( $kendo-component-bg, 1 )) !default;

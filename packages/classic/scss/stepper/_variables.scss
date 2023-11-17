@@ -82,6 +82,11 @@ $kendo-stepper-progressbar-text: null !default;
 $kendo-stepper-progressbar-fill-bg: null !default;
 $kendo-stepper-progressbar-fill-text: null !default;
 
+/// @deprecated Use `$kendo-stepper-content-transition` instead.
 $kendo-stepper-content-transition-property: height !default;
+/// @deprecated Use `$kendo-stepper-content-transition` instead.
 $kendo-stepper-content-transition-duration: 300ms !default;
+/// @deprecated Use `$kendo-stepper-content-transition` instead.
 $kendo-stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms !default;
+
+$kendo-stepper-content-transition: k-motion(medium-2, ease-in-out, height) !default;
