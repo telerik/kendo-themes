@@ -254,4 +254,4 @@ $kendo-flat-button-focus-ring-opacity: null !default;
 
 /// The box-shadow transition of the Button.
 /// @group button
-$kendo-button-transition: box-shadow 280ms cubic-bezier( .4, 0, .2, 1 ) !default;
+$kendo-button-transition: k-motion(medium-2, ease-in-out, box-shadow) !default;

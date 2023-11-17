@@ -6,7 +6,7 @@
     @include kendo-radio--layout-base();
 
     .k-radio::before {
-        transition: transform linear 280ms;
+        @include kendo-motion(medium-2, linear, transform);
         transform-origin: 0 0;
     }
 
