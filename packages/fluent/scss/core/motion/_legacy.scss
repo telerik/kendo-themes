@@ -1,0 +1,8 @@
+@use "./index" as *;
+
+// Default transition
+$kendo-transition: k-motion(short-4, ease-in-out, color, background-color, border-color, box-shadow , opacity, width, height) !default;
+
+:root {
+    --kendo-transition: #{$kendo-transition};
+}

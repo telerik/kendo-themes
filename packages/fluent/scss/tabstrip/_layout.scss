@@ -142,7 +142,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        transition: width .2s linear;
+        @include kendo-motion(short-4, linear, width);
 
         // TODO: a better name
         display: none;
@@ -286,7 +286,7 @@
                 opacity: 0;
                 transform: scaleY(0);
                 pointer-events: none;
-                transition: opacity .3s, transform .3s;
+                @include kendo-motion(medium-2, ease, opacity, transform)
             }
             .k-item:active::after,
             .k-item.k-active::after,

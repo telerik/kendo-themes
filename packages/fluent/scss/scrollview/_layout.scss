@@ -43,8 +43,7 @@
 
     .k-scrollview-wrap.k-scrollview-animate {
         width: calc( var(--kendo-scrollview-views, 1) * 100% );
-        transition-duration: var( --kendo-scrollview-transition-duration, #{$kendo-scrollview-transition-duration} );
-        transition-timing-function: var( --kendo-scrollview-transition-timing-function, #{$kendo-scrollview-transition-timing-function} );
+        transition: var( --kendo-scrollview-transition, #{$kendo-scrollview-transition} );
         transform: translateX( calc( -100% / var( --kendo-scrollview-views, 1) * ( var( --kendo-scrollview-current, 1) - 1) ) );
 
         [dir="rtl"] &,
@@ -158,8 +157,7 @@
 
 
     .k-scrollview-animation {
-        transition-duration: .3s;
-        transition-timing-function: ease-in-out;
+        transition: var( --kendo-scrollview-transition, #{$kendo-scrollview-transition} );
     }
 
 }

@@ -138,14 +138,14 @@ $kendo-slider-thumb-disabled-border: if($kendo-enable-color-system, rgba( k-colo
 
 /// The transition speed of the slider.
 /// @group slider
-$kendo-slider-transition-speed: .3s !default;
+$kendo-slider-transition-speed: var(--kendo-motion-medium-2, .3s) !default;
 /// The transition function function.
 /// @group slider
-$kendo-slider-transition-function: ease-out !default;
+$kendo-slider-transition-function: var(--kendo-motion-ease-out, ease-out) !default;
 
 /// The transition speed of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-transition-speed: .4s !default;
+$kendo-slider-thumb-transition-speed: var(--kendo-motion-medium-4, .4s) !default;
 /// The transition function of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
