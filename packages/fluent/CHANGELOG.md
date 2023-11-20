@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.3-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.0...v7.0.3-dev.1) (2023-11-20)
+
+**Note:** Version bump only for package @progress/kendo-theme-fluent
+
+
+
+
+
 ## [7.0.3-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.2...v7.0.3-dev.0) (2023-11-13)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
