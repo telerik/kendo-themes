@@ -10,7 +10,8 @@ export type KendoOrgchartNodeProps = {
     subtitle?: string;
     details?: boolean;
     color?: string;
-    line?: boolean;
+    lineBottom?: boolean;
+    lineTop?: boolean;
     button?: boolean;
     buttonIcon?: "plus" | "minus";
     avatar?: string;
@@ -30,7 +31,8 @@ export const OrgchartNode = (
         subtitle,
         details,
         color,
-        line,
+        lineBottom,
+        lineTop,
         button,
         buttonIcon = defaultProps.buttonIcon,
         avatar,
@@ -48,6 +50,7 @@ export const OrgchartNode = (
                 'k-align-items-center',
             )}>
 
+            {lineTop && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             <Card className="k-orgchart-card">
                 <CardBody className="k-hstack" details={details} style={{ borderTopColor: color }}>
 
@@ -68,7 +71,7 @@ export const OrgchartNode = (
                 </CardBody>
 
             </Card>
-            {line && <div className="k-orgchart-line k-orgchart-line-v"></div> }
+            {lineBottom && <div className="k-orgchart-line k-orgchart-line-v"></div> }
             {button && (
                 <Button className="k-orgchart-button" icon={buttonIcon}></Button>
             )}
