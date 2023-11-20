@@ -1,4 +1,4 @@
-import { Orgchart, OrgchartGroup, OrgchartNode } from '../../orgchart';
+import { OrgchartGroup, OrgchartGroupVertical, OrgchartNode, OrgchartNodeGroup } from '../../orgchart';
 
 
 const styles = `
@@ -12,16 +12,18 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            {[ "normal", ...OrgchartGroup.states ].map((state) => (
+            {[ "normal", ...OrgchartNodeGroup.states ].map((state) => (
                 <section>
                     <span>{state}</span>
-                    <Orgchart width="100%" height="431px" justifyContent="around">
-                        <OrgchartGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical" { ...{ [state]: true } }>
-                            <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                            <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                            <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                    <OrgchartGroupVertical width="100%" height="431px">
+                        <OrgchartGroup justifyContent="around">
+                            <OrgchartNodeGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical" { ...{ [state]: true } }>
+                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                                <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
+                            </OrgchartNodeGroup>
                         </OrgchartGroup>
-                    </Orgchart>
+                    </OrgchartGroupVertical>
                 </section>
             ))}
         </div>
