@@ -1,4 +1,4 @@
-import { Rating, RatingItem } from '..';
+import { Rating, RatingNormal } from '..';
 
 
 const styles = `
@@ -20,13 +20,7 @@ export default () =>(
                 <>
                     <div>{state}</div>
                     <section>
-                        <Rating { ...{ [state]: true }}>
-                            <RatingItem iconFill="solid"/>
-                            <RatingItem iconFill="solid"/>
-                            <RatingItem iconFill="split"/>
-                            <RatingItem iconFill="outline"/>
-                            <RatingItem iconFill="outline"/>
-                        </Rating>
+                        <RatingNormal { ...{ [state]: true }} />
                     </section>
                 </>
             ))}

@@ -1,4 +1,4 @@
-import { Rating, RatingItem } from '..';
+import { RatingItem, RatingNormal, RatingWithLabel } from '..';
 
 
 const styles = `
@@ -14,110 +14,97 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
 
             <span></span>
-            <span>Continuous Selection RTL</span>
-            <span>Single Selection RTL</span>
+            <span>Continuous Selection</span>
+            <span>Single Selection</span>
 
             <span>Full Precision</span>
             <section>
-                <Rating dir="rtl">
+                <RatingNormal dir="rtl">
                     <RatingItem dir="rtl" iconFill="solid" selected/>
                     <RatingItem dir="rtl" iconFill="solid" selected/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
-                </Rating>
+                </RatingNormal>
             </section>
             <section>
-                <Rating dir="rtl">
+                <RatingNormal dir="rtl">
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="solid" selected/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
-                </Rating>
+                </RatingNormal>
             </section>
 
             <span>Half Precision</span>
             <section>
-                <Rating dir="rtl">
-                    <RatingItem dir="rtl" iconFill="solid" selected/>
-                    <RatingItem dir="rtl" iconFill="solid" selected/>
-                    <RatingItem dir="rtl" iconFill="split" selected/>
-                    <RatingItem dir="rtl" iconFill="outline"/>
-                    <RatingItem dir="rtl" iconFill="outline"/>
-                </Rating>
+                <RatingNormal dir="rtl" />
             </section>
             <section>
-                <Rating dir="rtl">
+                <RatingNormal dir="rtl">
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="split" selected/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
-                </Rating>
+                </RatingNormal>
             </section>
 
             <span>Full Precision Label</span>
             <section>
-                <Rating dir="rtl" label="2 / 5">
+                <RatingWithLabel dir="rtl" label="2 / 5">
                     <RatingItem dir="rtl" iconFill="solid" selected/>
                     <RatingItem dir="rtl" iconFill="solid" selected/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
-                </Rating>
+                </RatingWithLabel>
             </section>
             <section>
-                <Rating dir="rtl" label="2 / 5">
+                <RatingWithLabel dir="rtl" label="2 / 5">
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="solid" selected/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
-                </Rating>
+                </RatingWithLabel>
             </section>
 
             <span>Half Precision Label</span>
             <section>
-                <Rating dir="rtl" label="2.5 / 5">
-                    <RatingItem dir="rtl" iconFill="solid" selected/>
-                    <RatingItem dir="rtl" iconFill="solid" selected/>
-                    <RatingItem dir="rtl" iconFill="split" selected/>
-                    <RatingItem dir="rtl" iconFill="outline"/>
-                    <RatingItem dir="rtl" iconFill="outline"/>
-                </Rating>
+                <RatingWithLabel dir="rtl" />
             </section>
             <section>
-                <Rating dir="rtl" label=" 1.5 / 5">
+                <RatingWithLabel dir="rtl" label=" 1.5 / 5">
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="split" selected/>
                     <RatingItem dir="rtl" iconFill="outline"/>
                     <RatingItem dir="rtl" iconFill="outline"/>
-                    <RatingItem dir="rtl" iconFill="outline"/>
-                </Rating>
+                </RatingWithLabel>
             </section>
 
             <span>Nested</span>
             <section>
                 <div style={{ backgroundColor: "silver" }}>
-                    <Rating dir="rtl">
+                    <RatingNormal dir="rtl">
                         <RatingItem dir="rtl" iconFill="solid" selected/>
                         <RatingItem dir="rtl" iconFill="solid" selected focus/>
                         <RatingItem dir="rtl" iconFill="outline"/>
                         <RatingItem dir="rtl" iconFill="outline"/>
                         <RatingItem dir="rtl" iconFill="outline"/>
-                    </Rating>
+                    </RatingNormal>
                 </div>
             </section>
             <section>
                 <div style={{ backgroundColor: "silver" }}>
-                    <Rating dir="rtl">
+                    <RatingNormal dir="rtl">
                         <RatingItem dir="rtl" iconFill="outline"/>
                         <RatingItem dir="rtl" iconFill="solid" selected focus/>
                         <RatingItem dir="rtl" iconFill="outline"/>
                         <RatingItem dir="rtl" iconFill="outline"/>
                         <RatingItem dir="rtl" iconFill="outline"/>
-                    </Rating>
+                    </RatingNormal>
                 </div>
             </section>
         </div>
