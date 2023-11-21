@@ -1,4 +1,4 @@
-import { Rating, RatingItem } from '..';
+import { RatingItem, RatingNormal, RatingWithLabel } from '..';
 
 
 const styles = `
@@ -19,104 +19,92 @@ export default () =>(
 
             <span>Full Precision</span>
             <section>
-                <Rating>
+                <RatingNormal>
                     <RatingItem iconFill="solid" selected/>
                     <RatingItem iconFill="solid" selected/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
-                </Rating>
+                </RatingNormal>
             </section>
             <section>
-                <Rating>
+                <RatingNormal>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="solid" selected/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
-                </Rating>
+                </RatingNormal>
             </section>
 
             <span>Half Precision</span>
             <section>
-                <Rating>
-                    <RatingItem iconFill="solid" selected/>
-                    <RatingItem iconFill="solid" selected/>
-                    <RatingItem iconFill="split" selected/>
-                    <RatingItem iconFill="outline"/>
-                    <RatingItem iconFill="outline"/>
-                </Rating>
+                <RatingNormal />
             </section>
             <section>
-                <Rating>
+                <RatingNormal>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="split" selected/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
-                </Rating>
+                </RatingNormal>
             </section>
 
             <span>Full Precision Label</span>
             <section>
-                <Rating label="2 / 5">
+                <RatingWithLabel label="2 / 5">
                     <RatingItem iconFill="solid" selected/>
                     <RatingItem iconFill="solid" selected/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
-                </Rating>
+                </RatingWithLabel>
             </section>
             <section>
-                <Rating label="2 / 5">
+                <RatingWithLabel label="2 / 5">
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="solid" selected/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
-                </Rating>
+                </RatingWithLabel>
             </section>
 
             <span>Half Precision Label</span>
             <section>
-                <Rating label="2.5 / 5">
-                    <RatingItem iconFill="solid" selected/>
-                    <RatingItem iconFill="solid" selected/>
-                    <RatingItem iconFill="split" selected/>
-                    <RatingItem iconFill="outline"/>
-                    <RatingItem iconFill="outline"/>
-                </Rating>
+                <RatingWithLabel />
             </section>
             <section>
-                <Rating label=" 1.5 / 5">
+                <RatingWithLabel label=" 1.5 / 5">
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="split" selected/>
                     <RatingItem iconFill="outline"/>
                     <RatingItem iconFill="outline"/>
-                </Rating>
+                </RatingWithLabel>
             </section>
 
             <span>Nested</span>
             <section>
                 <div style={{ backgroundColor: "silver" }}>
-                    <Rating>
+                    <RatingNormal>
                         <RatingItem iconFill="solid" selected/>
                         <RatingItem iconFill="solid" selected focus/>
                         <RatingItem iconFill="outline"/>
                         <RatingItem iconFill="outline"/>
                         <RatingItem iconFill="outline"/>
-                    </Rating>
+                    </RatingNormal>
                 </div>
             </section>
             <section>
                 <div style={{ backgroundColor: "silver" }}>
-                    <Rating>
+                    <RatingNormal>
                         <RatingItem iconFill="outline"/>
                         <RatingItem iconFill="solid" selected focus/>
                         <RatingItem iconFill="outline"/>
                         <RatingItem iconFill="outline"/>
                         <RatingItem iconFill="outline"/>
-                    </Rating>
+                    </RatingNormal>
                 </div>
             </section>
         </div>
