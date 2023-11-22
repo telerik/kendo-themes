@@ -45,19 +45,6 @@
         }
     }
 
-
-    // Slider wrap
-    .k-slider-wrap {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow: inherit;
-        align-items: inherit;
-        gap: inherit;
-        position: relative;
-    }
-
-
     // Slider button
     .k-slider-button {
         flex: none;
@@ -354,13 +341,6 @@
     .k-slider kendo-resize-sensor {
         position: absolute;
     }
-    .k-slider-horizontal .k-slider-wrap:not(.k-slider-buttons) {
-        padding-inline: var( --kendo-slider-spacing, #{$kendo-slider-spacing} );
-    }
-    .k-slider-vertical .k-slider-wrap:not(.k-slider-buttons) {
-        padding-block: var( --kendo-slider-spacing, #{$kendo-slider-spacing} );
-    }
-
 
     // Aliases
     .k-slider .k-button { @extend .k-slider-button !optional; }
