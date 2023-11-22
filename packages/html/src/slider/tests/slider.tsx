@@ -1,9 +1,9 @@
-import { Slider, SliderTick } from '../../slider';
+import { Slider, SliderNormal } from '../../slider';
 
 
 const style = `
     #test-area {
-        grid-template-columns: 100px 1fr 1fr 1fr;
+        grid-template-columns: 100px repeat(3, 1fr);
         align-items: center;
     }
 
@@ -30,195 +30,33 @@ export default () =>(
             <span>Not Empty</span>
             <span>Full</span>
 
-            <span>Normal</span>
-            <section>
-                <Slider className="k-slider-0">
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
-            <section>
-                <Slider className="k-slider-50" hover>
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
-            <section>
-                <Slider className="k-slider-100" focus>
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
+            {[ 'normal', ...Slider.states ].map((state) => (
+                <>
+                    <span>{state}</span>
+                    <section>
+                        <SliderNormal { ...{ [state]: true }} className="k-slider-0" />
+                    </section>
 
+                    <section>
+                        <SliderNormal { ...{ [state]: true }} className="k-slider-50" />
+                    </section>
 
-            <span>Disabled</span>
-            <section>
-                <Slider className="k-slider-0" disabled>
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
-            <section>
-                <Slider className="k-slider-50" disabled>
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
-            <section>
-                <Slider className="k-slider-100" disabled>
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
-
-            <span>Readonly</span>
-            <section>
-                <Slider className="k-slider-0" readonly>
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
-            <section>
-                <Slider className="k-slider-50" readonly>
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
-            <section>
-                <Slider className="k-slider-100" readonly>
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
-            </section>
+                    <section>
+                        <SliderNormal { ...{ [state]: true }} className="k-slider-100" />
+                    </section>
+                </>
+            ))}
 
             <span>RTL</span>
             <section>
-                <Slider className="k-slider-0" dir="rtl">
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
+                <SliderNormal className="k-slider-0" dir="rtl" />
             </section>
             <section>
-                <Slider className="k-slider-50" dir="rtl">
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
+                <SliderNormal className="k-slider-50" dir="rtl" />
             </section>
             <section>
-                <Slider className="k-slider-100" dir="rtl">
-                    <SliderTick label large text="0"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="5"/>
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick />
-                    <SliderTick label large text="10"/>
-                </Slider>
+                <SliderNormal className="k-slider-100" dir="rtl" />
             </section>
-
         </div>
     </>
 );

@@ -8,7 +8,7 @@ import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
 import { UploadChunk, UploadFile } from '../../upload';
 import { FormField, FormHorizontal, FormNormal } from '../../form';
-import { Slider, SliderTick } from '../../slider';
+import { SliderNormal } from '../../slider';
 
 
 const styles = `
@@ -114,19 +114,7 @@ export default () =>(
                     <FormField
                         label="Slider:"
                         editor={
-                            <Slider>
-                                <SliderTick label large text="0"/>
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick label large text="5"/>
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick label large text="10"/>
-                            </Slider>
+                            <SliderNormal />
                         }
                     >
                     </FormField>
@@ -245,19 +233,7 @@ export default () =>(
                     <FormField
                         label="Slider:"
                         editor={
-                            <Slider>
-                                <SliderTick label large text="0"/>
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick label large text="5"/>
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick label large text="10"/>
-                            </Slider>
+                            <SliderNormal />
                         }
                     >
                     </FormField>

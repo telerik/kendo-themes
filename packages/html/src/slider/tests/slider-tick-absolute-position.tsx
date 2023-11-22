@@ -1,4 +1,4 @@
-import { Slider, SliderTick } from '../../slider';
+import { SliderNormal, SliderVertical, SliderTick } from '../../slider';
 
 
 const style = `
@@ -49,23 +49,23 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Slider>
+                <SliderNormal>
                     <SliderTick label large orientation="horizontal" text="0" style={{ zIndex: 1, position: "absolute", left: "0%" }}/>
                     <SliderTick label large orientation="horizontal" text="33" style={{ zIndex: 1, position: "absolute", left: "33%" }}/>
                     <SliderTick label large orientation="horizontal" text="50" style={{ zIndex: 1, position: "absolute", left: "50%" }}/>
                     <SliderTick label large orientation="horizontal" text="75" style={{ zIndex: 1, position: "absolute", left: "75%" }}/>
                     <SliderTick label large orientation="horizontal" text="100" style={{ zIndex: 1, position: "absolute", left: "100%" }}/>
-                </Slider>
+                </SliderNormal>
             </section>
 
             <section style={{ justifySelf: "center" }} >
-                <Slider orientation="vertical">
+                <SliderVertical>
                     <SliderTick label large orientation="vertical" text="0" style={{ zIndex: 1, position: "absolute", bottom: "0%" }}/>
                     <SliderTick label large orientation="vertical" text="33" style={{ zIndex: 1, position: "absolute", bottom: "33%" }}/>
                     <SliderTick label large orientation="vertical" text="50" style={{ zIndex: 1, position: "absolute", bottom: "50%" }}/>
                     <SliderTick label large orientation="vertical" text="75" style={{ zIndex: 1, position: "absolute", bottom: "75%" }}/>
                     <SliderTick label large orientation="vertical" text="100" style={{ zIndex: 1, position: "absolute", bottom: "100%" }}/>
-                </Slider>
+                </SliderVertical>
             </section>
 
         </div>
