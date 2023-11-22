@@ -1,5 +1,5 @@
 import { classNames, stateClassNames, States } from '../misc';
-import { Slider } from '../slider';
+import { SliderGradientVertical } from '../slider';
 import { ColorInput } from './color-input';
 import { ColorContrast } from './color-contrast';
 
@@ -82,9 +82,9 @@ export const ColorGradient = (
                     </div>
                 </div>
                 <div className="k-hsv-controls k-hstack">
-                    <Slider type="gradient" orientation="vertical" className="k-hue-slider" hover={hoverHandle} focus={focusHandle} />
+                    <SliderGradientVertical className="k-hue-slider" hover={hoverHandle} focus={focusHandle} />
                     {
-                        mode !== 'rgb' && mode !== 'hsv' && <Slider type="gradient" orientation="vertical" className="k-alpha-slider" hover={hoverHandle} focus={focusHandle} trackStyle={alphaStyle}/>
+                        mode !== 'rgb' && mode !== 'hsv' && <SliderGradientVertical className="k-alpha-slider" hover={hoverHandle} focus={focusHandle} trackStyle={alphaStyle}/>
                     }
                 </div>
             </div>
