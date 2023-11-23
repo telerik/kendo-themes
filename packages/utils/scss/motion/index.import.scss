@@ -1,0 +1,15 @@
+@import "@progress/kendo-theme-core/scss/motion/index.import.scss";
+
+@mixin kendo-utils--motion {
+    @each $duration, $duration-value in $kendo-motion-durations {
+        .k-motion-#{$duration} {
+            transition-duration: $duration-value;
+        }
+    }
+
+    @each $easing, $easing-value in $kendo-motion-easings {
+        .k-motion-#{$easing} {
+            transition-timing-function: $easing-value;
+        }
+    }
+}

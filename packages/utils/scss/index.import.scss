@@ -19,6 +19,7 @@
 @import "./svg/index.import.scss";
 
 @import "./elevation/index.import.scss";
+@import "./motion/index.import.scss";
 
 
 // Mixin for all styles
@@ -39,4 +40,5 @@
     @include kendo-utils--svg();
 
     @include kendo-utils--elevation();
+    @include kendo-utils--motion();
 }
