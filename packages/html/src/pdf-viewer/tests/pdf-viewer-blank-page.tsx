@@ -1,4 +1,4 @@
-import { PDFViewer } from '../../pdf-viewer';
+import { PDFViewerBlank } from '../../pdf-viewer';
 
 
 const styles = `
@@ -15,7 +15,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
-            <PDFViewer blank />
+            <PDFViewerBlank />
         </div>
     </>
 );
