@@ -1155,7 +1155,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>280px</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -1165,7 +1165,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>null</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -1175,7 +1175,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>1rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -1185,7 +1185,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>1.5</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -1195,7 +1195,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>0.5rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -1205,7 +1205,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -1215,7 +1215,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -1225,7 +1225,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -1235,7 +1235,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>0.5rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the captcha image wrapper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha image wrapper.</div></div>
     </td>
 </tr>
 <tr>
@@ -1245,7 +1245,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the captcha image controls.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha image controls.</div></div>
     </td>
 </tr>
 <tr>
@@ -1255,7 +1255,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Offset of the captcha validation text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Captcha validation message.</div></div>
     </td>
 </tr>
 <tr>
@@ -1265,7 +1265,7 @@ The following table lists the available variables for customizing the Nouvelle t
     <td><code>0.875rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font-size of the captcha validation text.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Captcha validation message.</div></div>
     </td>
 </tr>
 </tbody>

@@ -1,7 +1,7 @@
 ---
 title: Customizing Captcha
-description: "Refer to the list of the Kendo UI Nouvelle theme variables available for customization."
-slug: variables_kendothemenouvelle_captcha
+description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
+slug: variables_kendothemebootstrap_captcha
 position: 9
 ---
 
@@ -28,10 +28,20 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-captcha-spacer</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacer of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-captcha-width</td>
     <td>Number</td>
-    <td><code>280px</code></td>
-    <td><code>280px</code></td>
+    <td><code>335px</code></td>
+    <td><code>335px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Captcha.</div></div>
@@ -39,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-captcha-font-family</td>
-    <td>Null</td>
+    <td>List</td>
     <td><code>$kendo-font-family</code></td>
-    <td><code>null</code></td>
+    <td><code>system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Captcha.</div></div>
@@ -68,13 +78,13 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-captcha-spacing</td>
+    <td>$kendo-captcha-gap</td>
     <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>$kendo-captcha-spacer</code></td>
     <td><code>0.5rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
@@ -90,8 +100,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-text</td>
     <td>Color</td>
-    <td><code>$kendo-component-text</code></td>
-    <td><span class="color-preview" style="background-color: #494949"></span><code>#494949</code></td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Captcha.</div></div>
@@ -100,51 +110,61 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-captcha-border</td>
     <td>Color</td>
-    <td><code>$kendo-component-border</code></td>
-    <td><span class="color-preview" style="background-color: #ededed"></span><code>#ededed</code></td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Captcha.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-captcha-image-wrap-spacing</td>
+    <td>$kendo-captcha-image-wrap-gap</td>
     <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>$kendo-captcha-spacer</code></td>
     <td><code>0.5rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha image wrapper.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha image wrapper.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-captcha-image-controls-spacing</td>
+    <td>$kendo-captcha-image-controls-gap</td>
     <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>$kendo-captcha-spacer</code></td>
+    <td><code>0.5rem</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha image controls.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-validation-message-margin-top</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-captcha-spacer, 2 )</code></td>
     <td><code>0.25rem</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the Captcha image controls.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the Captcha validation message.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-captcha-validation-offset-y</td>
-    <td>Number</td>
-    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
-    <td><code>0.25rem</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The offset of the Captcha validation message.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-captcha-validation-font-size</td>
+    <td>$kendo-captcha-validation-message-font-size</td>
     <td>Number</td>
     <td><code>$kendo-font-size-sm</code></td>
     <td><code>0.875rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Captcha validation message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-validation-message-font-style</td>
+    <td>String</td>
+    <td><code>italic</code></td>
+    <td><code>italic</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the Captcha validation message.</div></div>
     </td>
 </tr>
 </tbody>
