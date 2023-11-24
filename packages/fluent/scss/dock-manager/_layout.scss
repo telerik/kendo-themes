@@ -32,18 +32,6 @@
             height: 0;
             border-width: var( --kendo-dock-manager-border-width, #{$kendo-dock-manager-border-width} ) 0 0;
         }
-
-        // Needed because of a bug in Chrome - Issue 1473554
-        // A fix will be shipped likely in milestone 118 and then we can revisit this
-        @supports  (not (-ms-ime-mode: none)) and (not (overflow: -webkit-marquee)) and (not (-moz-appearance:none)) {
-            .k-toolbar-button {
-                padding-block: var(--INTERNAL--kendo-button-padding-x, 0 );
-                padding-inline: var(--INTERNAL--kendo-button-padding-y, 0 );
-            }
-            .k-toolbar-button .k-button-text {
-                writing-mode: vertical-lr;
-            }
-        }
     }
 
     // Panes
