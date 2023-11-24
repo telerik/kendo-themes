@@ -2256,6 +2256,166 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### Captcha
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-captcha-spacer</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacer of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-width</td>
+    <td>Number</td>
+    <td><code>335px</code></td>
+    <td><code>335px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>2</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-gap</td>
+    <td>Number</td>
+    <td><code>$kendo-captcha-spacer</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the Captcha.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-image-wrap-gap</td>
+    <td>Number</td>
+    <td><code>$kendo-captcha-spacer</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha image wrapper.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-image-controls-gap</td>
+    <td>Number</td>
+    <td><code>$kendo-captcha-spacer</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap of the Captcha image controls.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-validation-message-margin-top</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-captcha-spacer, 2 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The top margin of the Captcha validation message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-validation-message-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Captcha validation message.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-captcha-validation-message-font-style</td>
+    <td>String</td>
+    <td><code>italic</code></td>
+    <td><code>italic</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font style of the Captcha validation message.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Card
 
 <table class="theme-variables">
@@ -5459,6 +5619,216 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### Dropzone
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-dropzone-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-min-height</td>
+    <td>Number</td>
+    <td><code>220px</code></td>
+    <td><code>220px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The minimum height of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-line-height</td>
+    <td>Number</td>
+    <td><code>k-math-div( 20, 14 )</code></td>
+    <td><code>1.4285714286</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-bg</td>
+    <td>Color</td>
+    <td><code>k-try-shade( $kendo-base-bg, 1 )</code></td>
+    <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-text</td>
+    <td>Color</td>
+    <td><code>$kendo-base-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-border</td>
+    <td>Color</td>
+    <td><code>$kendo-base-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the DropZone.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-icon-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 6 )</code></td>
+    <td><code>24px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing below the DropZone icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-icon-text</td>
+    <td>Color</td>
+    <td><code>k-try-tint( $kendo-dropzone-text, 4 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9116)"></span><code>rgba(97, 97, 97, 0.9116)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-icon-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #3f51b5"></span><code>#3f51b5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered DropZone icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-hint-font-size</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the DropZone hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-hint-spacing</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing below the DropZone hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-hint-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-note-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-sm</code></td>
+    <td><code>12px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the DropZone note.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-note-spacing</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing below the DropZone note.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-dropzone-note-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the DropZone note.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Editor
 
 <table class="theme-variables">
@@ -5904,6 +6274,596 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the ExpansionPanel content.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Filemanager
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-file-manager-spacer</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The space between the FileManager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FileManager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the FileManager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the FileManager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>2</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the FileManager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-toolbar-border-width</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-border-width</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FileManager Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-toolbar-bg</td>
+    <td>Color</td>
+    <td><code>k-try-shade( $kendo-button-bg, .5 )</code></td>
+    <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-toolbar-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-toolbar-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-toolbar-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the FileManager Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-navigation-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager Navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-navigation-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager Navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-navigation-width</td>
+    <td>Number</td>
+    <td><code>20%</code></td>
+    <td><code>20%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FileManager Navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-navigation-border-width</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-border-width</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FileManager Navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-navigation-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-navigation-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager Navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-navigation-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager Navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-breadcrumb-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager Breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-breadcrumb-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 2 )</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager Breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-breadcrumb-border-width</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-border-width</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FileManager Breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-breadcrumb-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-file-manager-toolbar-bg</code></td>
+    <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-breadcrumb-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager Breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-breadcrumb-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager Breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager ListView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager ListView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager ListView.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-padding-x</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager ListView item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-padding-y</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 4 )</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager ListView item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-width</td>
+    <td>Number</td>
+    <td><code>120px</code></td>
+    <td><code>120px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FileManager ListView item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-height</td>
+    <td>Number</td>
+    <td><code>120px</code></td>
+    <td><code>120px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The height of the FileManager ListView item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager ListView item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager ListView item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager ListView item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-icon-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager ListView item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-icon-text</td>
+    <td>Color</td>
+    <td><code>k-try-tint($kendo-file-manager-text, 4)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9116)"></span><code>rgba(97, 97, 97, 0.9116)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager ListView item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-icon-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager ListView item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-icon-selected-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the FileManager selected ListView item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-icon-selected-text</td>
+    <td>String</td>
+    <td><code>inherit</code></td>
+    <td><code>inherit</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the FileManager selected ListView item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-listview-item-icon-selected-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the FileManager selected ListView item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-grid-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager Grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-grid-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager Grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-grid-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager Grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-width</td>
+    <td>Number</td>
+    <td><code>20%</code></td>
+    <td><code>20%</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-border-width</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-border-width</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-file-manager-spacer</code></td>
+    <td><code>16px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-column-gap</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gap between the columns in the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-icon-bg</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the FileManager preview icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-icon-text</td>
+    <td>Color</td>
+    <td><code>k-try-tint($kendo-file-manager-text, 4)</code></td>
+    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9116)"></span><code>rgba(97, 97, 97, 0.9116)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the FileManager preview icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-file-manager-preview-icon-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the FileManager preview icon.</div></div>
     </td>
 </tr>
 </tbody>
@@ -10539,6 +11499,356 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### Pdf-viewer
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-pdf-viewer-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PDFViewer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the PDFViewer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the PDFViewer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>2</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PDFViewer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-toolbar-bg</td>
+    <td>Color</td>
+    <td><code>k-try-shade( $kendo-button-bg, .25 )</code></td>
+    <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-toolbar-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-toolbar-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-toolbar-gradient</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of the PDFViewer Toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-canvas-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-app-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer canvas.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-canvas-text</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer canvas.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-canvas-border</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer canvas.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-page-spacing</td>
+    <td>Number</td>
+    <td><code>30px</code></td>
+    <td><code>30px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the PDFViewer page.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-page-bg</td>
+    <td>Color</td>
+    <td><code>white</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer page.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-page-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer page.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-page-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer page.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-page-shadow</td>
+    <td>String</td>
+    <td><code>$box-shadow-depth-3</code></td>
+    <td><code>var(--kendo-elevation-3, 0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 3px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.14))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer page.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-padding-x</td>
+    <td>Number</td>
+    <td><code>$kendo-toolbar-md-padding-x</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-padding-y</td>
+    <td>Calculation</td>
+    <td><code>calc( #{$kendo-toolbar-md-padding-x} * 2 )</code></td>
+    <td><code>calc(8px * 2)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-toolbar-md-spacing</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-border-width</td>
+    <td>Number</td>
+    <td><code>1px</code></td>
+    <td><code>1px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-border-radius</td>
+    <td>Number</td>
+    <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-component-bg</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-text</td>
+    <td>Color</td>
+    <td><code>$kendo-component-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-border</td>
+    <td>Color</td>
+    <td><code>$kendo-component-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-shadow</td>
+    <td>String</td>
+    <td><code>$kendo-window-shadow</code></td>
+    <td><code>var(--kendo-elevation-8, 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 16px 24px rgba(0, 0, 0, 0.14))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-panel-matches-spacing</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the matches container in the PDFViewer search panel.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-selection-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-sm</code></td>
+    <td><code>1.2</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PDFViewer selection.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-highlight-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-body-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span><code>rgba(0, 0, 0, 0.87)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer highlight.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-search-highlight-mark-bg</td>
+    <td>Color</td>
+    <td><code>yellow</code></td>
+    <td><span class="color-preview" style="background-color: yellow"></span><code>yellow</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer highlight mark.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pdf-viewer-icon-text</td>
+    <td>Color</td>
+    <td><code>$kendo-dropzone-icon-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9116)"></span><code>rgba(97, 97, 97, 0.9116)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer icon.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Picker
 
 <table class="theme-variables">
@@ -12180,6 +13490,176 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the RadioButton ripple.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Rating
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody><tr>
+    <td>$kendo-rating-font-family</td>
+    <td>List</td>
+    <td><code>$kendo-font-family</code></td>
+    <td><code>Roboto, "Helvetica Neue", sans-serif</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the Rating.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-font-size</td>
+    <td>Number</td>
+    <td><code>$kendo-font-size-md</code></td>
+    <td><code>14px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the Rating.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-md</code></td>
+    <td><code>2</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-container-margin-x</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-padding-sm-x, 2 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Rating container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-item-padding-x</td>
+    <td>Number</td>
+    <td><code>k-math-div( $kendo-padding-sm-x, 2 )</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the Rating item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-item-padding-y</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Rating item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-label-margin-x</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-sm-x</code></td>
+    <td><code>8px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the Rating label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-label-margin-y</td>
+    <td>Number</td>
+    <td><code>$kendo-padding-md-y</code></td>
+    <td><code>4px</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the Rating label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-label-line-height</td>
+    <td>Number</td>
+    <td><code>$kendo-line-height-lg</code></td>
+    <td><code>1.5</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the Rating label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-selected-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary-darker</code></td>
+    <td><span class="color-preview" style="background-color: #303f9f"></span><code>#303f9f</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the selected Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary-darker</code></td>
+    <td><span class="color-preview" style="background-color: #303f9f"></span><code>#303f9f</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the hovered Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-focus-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary-darker</code></td>
+    <td><span class="color-preview" style="background-color: #303f9f"></span><code>#303f9f</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the focused Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-focus-shadow</td>
+    <td>List</td>
+    <td><code>0 2px 4px rgba( black, .1 )</code></td>
+    <td><code>0 2px 4px rgba(0, 0, 0, 0.1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused Rating icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-rating-icon-focus-selected-shadow</td>
+    <td>List</td>
+    <td><code>0 2px 4px rgba( black, .1)</code></td>
+    <td><code>0 2px 4px rgba(0, 0, 0, 0.1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the focused and selected Rating icon.</div></div>
     </td>
 </tr>
 </tbody>
