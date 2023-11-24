@@ -1,7 +1,7 @@
 ---
 title: Customizing Skeleton
-description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
-slug: variables_kendothemefluent_skeleton
+description: "Refer to the list of the Kendo UI Bootstrap theme variables available for customization."
+slug: variables_kendothemebootstrap_skeleton
 position: 9
 ---
 
@@ -29,9 +29,9 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-skeleton-text-transform</td>
-    <td></td>
+    <td>String</td>
     <td><code>scale( 1, .6 )</code></td>
-    <td></td>
+    <td><code>scale(1, 0.6)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transform scale of the Skeleton text.</div></div>
@@ -39,9 +39,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-skeleton-text-border-radius</td>
-    <td></td>
-    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
-    <td></td>
+    <td>Number</td>
+    <td><code>$kendo-border-radius-md</code></td>
+    <td><code>0.375rem</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the Skeleton text.</div></div>
@@ -49,9 +49,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-skeleton-rect-border-radius</td>
-    <td></td>
-    <td><code>var( --kendo-border-radius-md, #{$kendo-border-radius-md} )</code></td>
-    <td></td>
+    <td>Number</td>
+    <td><code>0</code></td>
+    <td><code>0</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the rectangular Skeleton.</div></div>
@@ -59,9 +59,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-skeleton-circle-border-radius</td>
-    <td></td>
+    <td>Number</td>
     <td><code>9999px</code></td>
-    <td></td>
+    <td><code>9999px</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the circular Skeleton.</div></div>
@@ -69,9 +69,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-skeleton-item-bg</td>
-    <td></td>
-    <td><code>k-get-theme-color-var( neutral-50 )</code></td>
-    <td></td>
+    <td>Color</td>
+    <td><code>rgba( $kendo-color-inverse, .2 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(33, 37, 41, 0.2)"></span><code>rgba(33, 37, 41, 0.2)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton item.</div></div>
@@ -79,9 +79,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-skeleton-wave-bg</td>
-    <td></td>
-    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
-    <td></td>
+    <td>Color</td>
+    <td><code>rgba( black, .04 )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton wave animation.</div></div>
