@@ -10,7 +10,7 @@
     .k-grid {
 
         @if($kendo-new-colors) {
-            .k-table .k-table-tbody {
+            .k-table {
                 td:focus,
                 td.k-focus,
                 th:focus,
