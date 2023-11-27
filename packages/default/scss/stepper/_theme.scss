@@ -41,11 +41,23 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-disabled-text,
-                        $kendo-stepper-indicator-disabled-bg,
-                        $kendo-stepper-indicator-disabled-border
-                    );
+                    @if($kendo-new-colors) {
+                        @include fill(
+                            $kendo-stepper-indicator-disabled-text,
+                            k-color( app-surface ),
+                            $kendo-stepper-indicator-disabled-border
+                        );
+                        
+                        &::before {
+                            background-color: $kendo-stepper-indicator-disabled-bg;
+                        }
+                    } @else {
+                        @include fill(
+                            $kendo-stepper-indicator-disabled-text,
+                            $kendo-stepper-indicator-disabled-bg,
+                            $kendo-stepper-indicator-disabled-border
+                        );
+                    }
                 }
 
                 .k-step-label {
@@ -103,11 +115,23 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-done-disabled-text,
-                        $kendo-stepper-indicator-done-disabled-bg,
-                        $kendo-stepper-indicator-done-disabled-border
-                    );
+                    @if($kendo-new-colors) {
+                        @include fill(
+                            $kendo-stepper-indicator-done-disabled-text,
+                            k-color( app-surface ),
+                            $kendo-stepper-indicator-done-disabled-border
+                        );
+                        
+                        &::before {
+                            background-color: $kendo-stepper-indicator-done-disabled-bg;
+                        }
+                    } @else {
+                        @include fill(
+                            $kendo-stepper-indicator-done-disabled-text,
+                            $kendo-stepper-indicator-done-disabled-bg,
+                            $kendo-stepper-indicator-done-disabled-border
+                        );
+                    }
                 }
             }
         }
@@ -144,11 +168,23 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @include fill(
-                        $kendo-stepper-indicator-current-disabled-text,
-                        $kendo-stepper-indicator-current-disabled-bg,
-                        $kendo-stepper-indicator-current-disabled-border
-                    );
+                    @if($kendo-new-colors) {
+                        @include fill(
+                            $kendo-stepper-indicator-current-disabled-text,
+                            k-color( app-surface ),
+                            $kendo-stepper-indicator-current-disabled-border
+                        );
+                        
+                        &::before {
+                            background-color: $kendo-stepper-indicator-current-disabled-bg;
+                        }
+                    } @else {
+                        @include fill(
+                            $kendo-stepper-indicator-current-disabled-text,
+                            $kendo-stepper-indicator-current-disabled-bg,
+                            $kendo-stepper-indicator-current-disabled-border
+                        );
+                    }
                 }
             }
         }
