@@ -34,7 +34,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the PDF viewer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PDFViewer.</div></div>
     </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the PDF viewer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font family of the PDFViewer.</div></div>
     </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the PDF viewer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the PDFViewer.</div></div>
     </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the PDF viewer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PDFViewer.</div></div>
     </td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PDF viewer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer.</div></div>
     </td>
 </tr>
 <tr>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PDF viewer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer.</div></div>
     </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PDF viewer.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer.</div></div>
     </td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PDF viewer canvas.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer canvas.</div></div>
     </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PDF viewer canvas.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer canvas.</div></div>
     </td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PDF viewer canvas.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer canvas.</div></div>
     </td>
 </tr>
 <tr>
@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the PDF viewer page.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the PDFViewer page.</div></div>
     </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PDF viewer page.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer page.</div></div>
     </td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PDF viewer page.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer page.</div></div>
     </td>
 </tr>
 <tr>
@@ -164,7 +164,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PDF viewer page.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer page.</div></div>
     </td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the PDF viewer page.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer page.</div></div>
     </td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -194,7 +194,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border width of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -234,7 +234,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -244,7 +244,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -254,7 +254,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -274,7 +274,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the PDF viewer search panel matches container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing of the matches container in the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -284,7 +284,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical margin of the PDF viewer search panel.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical margin of the PDFViewer search panel.</div></div>
     </td>
 </tr>
 <tr>
@@ -294,7 +294,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the PDF viewer selection.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line height of the PDFViewer selection.</div></div>
     </td>
 </tr>
 <tr>
@@ -304,7 +304,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background-color of the PDF viewer highlight.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer highlight.</div></div>
     </td>
 </tr>
 <tr>
@@ -314,7 +314,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background-color of the PDF viewer highlight mark.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the PDFViewer highlight mark.</div></div>
     </td>
 </tr>
 <tr>
@@ -324,7 +324,7 @@ The following table lists the available variables for customization.
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the PDF viewer icon.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the PDFViewer icon.</div></div>
     </td>
 </tr>
 </tbody>
