@@ -47,6 +47,7 @@
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
+    "stylelint": "stylelint \"scss/**/*.scss\"",
     "nuget-pack": "jq '.version' package.json | xargs nuget pack package.nuspec -Version",
     "nuget-push": "nuget push *.nupkg -ApiKey $NUGET_API_KEY -Source $NUGET_FEED -SkipDuplicate",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",

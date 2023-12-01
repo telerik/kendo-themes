@@ -46,6 +46,7 @@
     "sass:swatches": "gulp dist:swatches && sass-build -c sass-swatches.config.js",
     "docs": "node ../../scripts/sassdoc.js",
     "predocs": "npm run resolve-variables",
+    "stylelint": "stylelint \"scss/**/*.scss\"",
     "resolve-variables": "node ../../scripts/resolve-variables.js",
     "nuget-pack": "jq '.version' package.json | xargs nuget pack package.nuspec -Version",
     "nuget-push": "nuget push *.nupkg -ApiKey $NUGET_API_KEY -Source $NUGET_FEED -SkipDuplicate",

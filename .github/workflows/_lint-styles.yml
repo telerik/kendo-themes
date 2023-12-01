@@ -42,7 +42,7 @@ jobs:
 
       - name: Lint styles
         run: |
-          npm run stylelint
+          npm run stylelint --prefix packages/${{ matrix.theme }} --if-present
 
       - name: Ensure standalone build
         run: |

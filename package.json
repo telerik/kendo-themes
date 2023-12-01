@@ -70,7 +70,7 @@
     "build:tests": "npm run build:tests --prefix packages/html",
     "eslint": "eslint \"**/*.{js,jsx,ts,tsx,mjs}\"",
     "check-types": "npm run check-types --prefix packages/html",
-    "stylelint": "stylelint \"**/*.scss\"",
+    "stylelint": "npm run stylelint -ws --if-present",
     "lint": "npm run eslint && npm run stylelint",
     "lint-staged": "lint-staged --verbose",
     "docs": "npm run docs -ws --if-present",
