@@ -1,16 +1,8 @@
-import { Rating, RatingItem } from "..";
+import { Rating } from "..";
 
-export const RatingNormal = (props) =>(
+export const RatingNormal = ({ value = 2.5, ...props }: any) =>(
     <Rating
-        children={
-            <>
-                <RatingItem dir={props.dir} iconFill="solid" selected/>
-                <RatingItem dir={props.dir} iconFill="solid" selected/>
-                <RatingItem dir={props.dir} iconFill="split" selected/>
-                <RatingItem dir={props.dir} iconFill="outline"/>
-                <RatingItem dir={props.dir} iconFill="outline"/>
-            </>
-        }
-        {...props}>
-    </Rating>
+        value={value}
+        {...props}
+    />
 );
