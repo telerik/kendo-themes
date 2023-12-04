@@ -1,24 +1,56 @@
 // Rating
 
+/// The font family of the Rating.
+/// @group rating
 $kendo-rating-font-family: $kendo-font-family !default;
+/// The font size of the Rating.
+/// @group rating
 $kendo-rating-font-size: $kendo-font-size-md !default;
+/// The line height of the Rating.
+/// @group rating
 $kendo-rating-line-height: $kendo-line-height-md !default;
 
+/// The horizontal margin of the Rating container.
+/// @group rating
 $kendo-rating-container-margin-x: $kendo-padding-sm-x !default;
 
+/// The horizontal padding of the Rating item.
+/// @group rating
 $kendo-rating-item-padding-x: $kendo-padding-sm-x !default;
+/// The vertical padding of the Rating item.
+/// @group rating
 $kendo-rating-item-padding-y: $kendo-padding-md-y !default;
 
+/// The horizontal margin of the Rating label.
+/// @group rating
 $kendo-rating-label-margin-x: $kendo-padding-md-x !default;
+/// The vertical margin of the Rating label.
+/// @group rating
 $kendo-rating-label-margin-y: $kendo-padding-md-y !default;
+/// The line height of the Rating label.
+/// @group rating
 $kendo-rating-label-line-height: $kendo-line-height-lg !default;
 
+/// The size of the Rating icon.
+/// @group rating
 $kendo-rating-icon-size: ($kendo-icon-size * 1.5) !default;
 
+/// The text color of the Rating icon.
+/// @group rating
 $kendo-rating-icon-text: $kendo-component-text !default;
+/// The text color of the selected Rating icon.
+/// @group rating
 $kendo-rating-icon-selected-text: $kendo-selected-bg !default;
+/// The text color of the hovered Rating icon.
+/// @group rating
 $kendo-rating-icon-hover-text: $kendo-selected-bg !default;
+/// The text color of the focused Rating icon.
+/// @group rating
 $kendo-rating-icon-focus-text: $kendo-selected-bg !default;
 
+/// The shadow of the focused Rating icon.
+/// @group rating
 $kendo-rating-icon-focus-shadow: k-elevation(1) !default;
+/// The shadow of the focused and selected Rating icon.
+/// @group rating
 $kendo-rating-icon-focus-selected-shadow: k-elevation(1) !default;

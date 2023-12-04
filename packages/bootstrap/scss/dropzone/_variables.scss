@@ -1,26 +1,64 @@
-// Dropzone
+// DropZone
 
+/// The horizontal padding of the DropZone.
+/// @group dropzone
 $kendo-dropzone-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+/// The vertical padding of the DropZone.
+/// @group dropzone
 $kendo-dropzone-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+/// The border width of the DropZone.
+/// @group dropzone
 $kendo-dropzone-border-width: 1px !default;
+/// The minimum height of the DropZone.
+/// @group dropzone
 $kendo-dropzone-min-height: 220px !default;
 
+/// The font family of the DropZone.
+/// @group dropzone
 $kendo-dropzone-font-family: $kendo-font-family !default;
+/// The font size of the DropZone.
+/// @group dropzone
 $kendo-dropzone-font-size: $kendo-font-size-md !default;
+/// The line height of the DropZone.
+/// @group dropzone
 $kendo-dropzone-line-height: $kendo-line-height-md !default;
 
+/// The background color of the DropZone.
+/// @group dropzone
 $kendo-dropzone-bg: if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 ) !default;
+/// The text color of the DropZone.
+/// @group dropzone
 $kendo-dropzone-text: $kendo-component-text !default;
+/// The border color of the DropZone.
+/// @group dropzone
 $kendo-dropzone-border: $kendo-component-border !default;
 
+/// The spacing below the DropZone icon.
+/// @group dropzone
 $kendo-dropzone-icon-spacing: k-map-get( $kendo-spacing, 6 ) !default;
+/// The text color of the DropZone icon.
+/// @group dropzone
 $kendo-dropzone-icon-text: k-try-tint( $kendo-dropzone-text, 8 ) !default;
+/// The text color of the hovered DropZone icon.
+/// @group dropzone
 $kendo-dropzone-icon-hover-text: $kendo-color-primary !default;
 
+/// The font size of the DropZone hint.
+/// @group dropzone
 $kendo-dropzone-hint-font-size: null !default;
+/// The spacing below the DropZone hint.
+/// @group dropzone
 $kendo-dropzone-hint-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+/// The text color of the DropZone hint.
+/// @group dropzone
 $kendo-dropzone-hint-text: null !default;
 
+/// The font size of the DropZone note.
+/// @group dropzone
 $kendo-dropzone-note-font-size: $kendo-font-size-xs !default;
+/// The spacing below the DropZone note.
+/// @group dropzone
 $kendo-dropzone-note-spacing: null !default;
+/// The text color of the DropZone note.
+/// @group dropzone
 $kendo-dropzone-note-text: $kendo-subtle-text !default;

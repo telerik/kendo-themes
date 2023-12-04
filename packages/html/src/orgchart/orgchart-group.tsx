@@ -1,22 +1,17 @@
-import { classNames, kendoThemeMaps, stateClassNames, States } from '../misc';
-import { Button } from '../button';
+import { classNames, kendoThemeMaps } from '../misc';
+import { OrgchartNode } from '../orgchart';
 
-export const ORGCHARTGROUP_CLASSNAME = `k-orgchart-node-group`;
+export const ORGCHARTGROUP_CLASSNAME = `k-orgchart-group`;
 
-const states = [
-    States.focus
-];
+const states = [];
+
+const options = {};
 
 export type KendoOrgchartGroupProps = {
-    title?: string;
-    subtitle?: string;
-    line?: boolean;
-    plus?: boolean,
-    focus?: boolean,
-    orientation: 'horizontal' | 'vertical';
+    children?: JSX.Element | JSX.Element[];
+    orientation?: 'horizontal' | 'vertical';
+    justifyContent?: null | 'start' | 'center' | 'end' | 'stretch' | 'around';
 };
-
-export type KendoOrgchartGroupState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
     orientation: 'horizontal'
@@ -24,53 +19,69 @@ const defaultProps = {
 
 export const OrgchartGroup = (
     props: KendoOrgchartGroupProps &
-        KendoOrgchartGroupState &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
-        title,
-        subtitle,
-        line,
-        plus,
-        focus,
+        children,
         orientation = defaultProps.orientation,
+        justifyContent,
         ...other
     } = props;
+
+    const chartNodes : JSX.Element[] = [];
+    const chartGroups : JSX.Element[] = [];
+
+    if (children) {
+        if (Array.isArray(children)) {
+            children.map((child) => {
+                if (child.type === OrgchartNode) {
+                    chartNodes.push( child );
+                } else {
+                    chartGroups.push( child );
+                }
+            });
+        } else {
+            if (children.type === OrgchartNode) {
+                chartNodes.push( children );
+            } else {
+                chartGroups.push( children );
+            }
+        }
+    }
 
     return (
         <div
             {...other}
             className={classNames(
-                props.className,
                 ORGCHARTGROUP_CLASSNAME,
-                'k-vstack',
-                'k-align-items-center',
-            )}>
+                'k-pos-absolute',
+                {
+                    [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
+                    [`k-justify-content-${justifyContent}`]: justifyContent,
+                }
+            )}
+            style={{ width: '100%' }}>
 
-            <div
-                className={classNames(
-                    'k-orgchart-node-group-container',
-                    'k-vstack',
-                    stateClassNames('k-orgchart-node-group-container', {
-                        focus,
-                    }),
-                )}>
-
-                {title && <div className="k-orgchart-node-group-title">{title}</div>}
-                {subtitle && <div className="k-orgchart-node-group-subtitle">{subtitle}</div>}
-
+            {chartNodes.length > 0 &&
                 <div
                     className={classNames(
                         'k-orgchart-node-container',
+                        'k-justify-content-around',
                         {
                             [`k-${kendoThemeMaps.orientationMap[orientation!] || orientation}`]: orientation,
                         }
                     )}>
-                    {props.children}
+                    <>{chartNodes}</>
                 </div>
-            </div>
-            {line && <div className="k-orgchart-line k-orgchart-line-v"></div> }
-            {plus && <Button className="k-orgchart-button" icon="plus"></Button> }
+            }
+            <>{chartGroups}</>
         </div>
     );
 };
+
+OrgchartGroup.states = states;
+OrgchartGroup.options = options;
+OrgchartGroup.className = ORGCHARTGROUP_CLASSNAME;
+OrgchartGroup.defaultProps = defaultProps;
+
+export default OrgchartGroup;
