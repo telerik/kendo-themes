@@ -48,10 +48,13 @@
 
         .k-list-scroller {
             width: 100%;
+            min-height: 0;
             height: inherit;
             border-width: $kendo-listbox-border-width;
             border-style: solid;
             box-sizing: border-box;
+            display: flex;
+            flex-flow: column nowrap;
 
             .k-list-scroller {
                 border-width: 0;

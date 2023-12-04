@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "gulp compile"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "sass-embedded": "latest"
+  }
+}

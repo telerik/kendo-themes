@@ -1,6 +1,6 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { ListBox } from '../../listbox';
@@ -23,13 +23,13 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Custom Format" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Custom Format" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Apply</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Category" editor={ <DropdownList value="Date" /> }/>
                         <FormField label="Sample" editor={ <DateInput value="1/17/2022" /> }/>
                         <FormField label="Symbol" editor={
@@ -41,18 +41,18 @@ export default () =>(
                                 <ListItem>1/17/2022 6:25:37 PM</ListItem>
                             </ListBox>
                         }/>
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Conditional Formatting" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Conditional Formatting" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Apply</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Apply to range" editor={ <Textbox placeholder="Placeholder" /> }/>
                         <FormField label="Format cells if" editor={ <DropdownList value="Cell value" /> }/>
                         <FormField label="is" editor={ <DropdownList value="Greater than" /> }/>
@@ -67,8 +67,8 @@ export default () =>(
                                 <ColorPicker value="fuchsia" valueIconName="droplet" />
                             </Toolbar>
                         } />
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
         </div>

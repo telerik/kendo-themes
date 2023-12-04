@@ -1,16 +1,10 @@
 {
-  "lerna": "4.0.0",
-  "version": "7.0.1-dev.1",
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "7.0.3-dev.3",
   "packages": [
     "packages/*"
   ],
   "command": {
-    "bootstrap": {
-      "concurrency": 1,
-      "npmClientArgs": [
-        "--no-save"
-      ]
-    },
     "clean": {
       "yes": true
     },

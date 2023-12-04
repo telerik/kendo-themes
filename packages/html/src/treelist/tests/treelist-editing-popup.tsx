@@ -1,10 +1,10 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Checkbox } from '../../checkbox';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
 import { DatePicker } from '../../datepicker';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 
 
 const styles = `
@@ -23,13 +23,13 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window title="Add item" actions={[ 'window-minimize', 'window', 'x' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Add item" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary" icon="save">Save</Button>
                         <Button icon="cancel">Cancel</Button>
                     </>
                 }>
-                    <Form tag="div">
+                    <FormNormal formButtons={null} tag="div">
                         <FormField
                             className="k-form-field-error"
                             label="Text data field label"
@@ -52,8 +52,8 @@ export default () =>(
                                 </>
                             }
                         />
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
         </div>

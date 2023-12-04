@@ -2,176 +2,180 @@
 @use "../core/" as *;
 @use "../button/_variables.scss" as *;
 
-/// Horizontal padding of the card.
+/// The horizontal padding of the Card.
 /// @group card
 $kendo-card-padding-x: map.get( $kendo-spacing, 3 ) !default;
-/// Vertical padding of the card.
+/// The vertical padding of the Card.
 /// @group card
 $kendo-card-padding-y: map.get( $kendo-spacing, 3 ) !default;
-/// Width of the border around the card.
+/// The width of the border around the Card.
 /// @group card
 $kendo-card-border-width: 0px !default;
-/// Border radius of the card.
+/// The border radius of the Card.
 /// @group card
 $kendo-card-border-radius: $kendo-border-radius-md !default;
+/// The inner border radius of the Card.
+/// @group card
 $kendo-card-inner-border-radius: calc( #{$kendo-card-border-radius} - #{$kendo-card-border-width} ) !default;
-/// Font family of the card.
+/// The font family of the Card.
 /// @group card
 $kendo-card-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the card.
+/// The font size of the Card.
 /// @group card
 $kendo-card-font-size: var( --kendo-font-size-sm, inherit ) !default;
-/// Line height of the card.
+/// The line height of the Card.
 /// @group card
 $kendo-card-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Spacing between the cards in the card deck.
+/// The spacing between the Cards in the Card deck.
 /// @group card
 $kendo-card-deck-gap: map.get( $kendo-spacing, 4 ) !default;
 
-/// Background color of the card.
+/// The background color of the Card.
 /// @group card
 $kendo-card-bg: var( --kendo-component-bg, initial ) !default;
-/// Text color of the card.
+/// The text color of the Card.
 /// @group card
 $kendo-card-text: var( --kendo-component-text, initial ) !default;
-/// Border color of the card.
+/// The border color of the Card.
 /// @group card
 $kendo-card-border: var( --kendo-component-border, initial ) !default;
-/// Shadow of the card.
+/// The shadow of the Card.
 /// @group card
 $kendo-card-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
 
-/// Background color of the card when focused.
+/// The background color of the focused Card.
 /// @group card
 $kendo-card-focus-bg: $kendo-card-bg !default;
-/// Text color of the card when focused.
+/// The text color of the focused Card.
 /// @group card
 $kendo-card-focus-text: null !default;
-/// Border color of the card when focused.
+/// The border color of the focused Card.
 /// @group card
 $kendo-card-focus-border: var( --kendo-component-border, initial ) !default;
-/// Shadow of the card when focused.
+/// The shadow of the focused Card.
 /// @group card
 $kendo-card-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
 
-/// Text size of the card header.
+/// The font size of the Card header.
 /// @group card
 $kendo-card-header-font-size: var( --kendo-font-size-lg, inherit ) !default;
-/// Font family of the card header text.
+/// Тhe font family of the Card header.
 /// @group card
 $kendo-card-header-font-family: var( --kendo-font-family, inherit ) !default;
-/// Text weight of the card header.
+/// The font weight of the Card header.
 /// @group card
 $kendo-card-header-font-weight: var( --kendo-font-weight, initial ) !default;
-/// Line height of the card header.
+/// The line height of the Card header.
 /// @group card
 $kendo-card-header-line-height: var( --kendo-line-height, normal ) !default;
-/// Horizontal padding of the card header.
+/// The horizontal padding of the Card header.
 /// @group card
 $kendo-card-header-padding-x: map.get( $kendo-spacing, 3 ) !default;
-/// Verical padding of the card header.
+/// The vertical padding of the Card header.
 /// @group card
 $kendo-card-header-padding-y: map.get( $kendo-spacing, 3 ) !default;
-/// Bottom border width of the card header.
+/// The bottom border width of the Card header.
 /// @group card
 $kendo-card-header-border-width: 0 !default;
-/// Background color of the card header.
+/// The background color of the Card header.
 /// @group card
 $kendo-card-header-bg: inherit !default;
-/// Text color of the card header.
+/// The text color of the Card header.
 /// @group card
 $kendo-card-header-text: k-get-theme-color-var( neutral-190 ) !default; // header-text
-/// Border color of the card header.
+/// The border color of the Card header.
 /// @group card
 $kendo-card-header-border: inherit !default; // header-border
 
-/// Horizontal padding of the card body.
+/// The horizontal padding of the Card body.
 /// @group card
 $kendo-card-body-padding-x: map.get( $kendo-spacing, 3 ) !default;
-/// Vertical padding of the card body.
+/// The vertical padding of the Card body.
 /// @group card
 $kendo-card-body-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
-/// Horizontal padding of the card footer.
+/// The horizontal padding of the Card footer.
 /// @group card
 $kendo-card-footer-padding-x: $kendo-card-padding-x !default;
-/// Vertical padding of the card footer.
+/// The vertical padding of the Card footer.
 /// @group card
 $kendo-card-footer-padding-y: $kendo-card-padding-y !default;
-/// Top border width of the card footer.
+/// The top border width of the Card footer.
 /// @group card
 $kendo-card-footer-border-width: 0 !default;
-/// Background color of the card footer.
+/// The background color of the Card footer.
 /// @group card
 $kendo-card-footer-bg: inherit !default;
-/// Text color of the card footer.
+/// The text color of the Card footer.
 /// @group card
 $kendo-card-footer-text: inherit !default; // $kendo-component-header-text
-/// Border color of the card footer.
+/// The border color of the Card footer.
 /// @group card
 $kendo-card-footer-border: inherit !default; // $kendo-component-header-border
 
-/// Text size of the card title.
+/// The font size of the Card title.
 /// @group card
 $kendo-card-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
-/// Font family of the card title.
+/// The font family of the Card title.
 /// @group card
 $kendo-card-title-font-family: var( --kendo-font-family, inherit ) !default;
-/// Text weight of the card title.
+/// The font weight of the Card title.
 /// @group card
 $kendo-card-title-font-weight: $kendo-card-header-font-weight !default;
-/// Line height of the card title.
+/// The line height of the Card title.
 /// @group card
 $kendo-card-title-line-height: var( --kendo-line-height, normal ) !default;
-/// Bottom margin of the card title.
+/// The bottom margin of the Card title.
 /// @group card
 $kendo-card-title-margin-bottom: map.get( $kendo-spacing, 3 ) !default;
-/// Font size of the card subtitle.
+/// The font size of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
-/// Font family of the card subtitle.
+/// The font family of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-font-family: var( --kendo-font-family, inherit ) !default;
-/// Line height of the card subtitle.
+/// The line height of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-line-height: var( --kendo-line-height, normal ) !default;
-/// Bottom margin of the card subtitle.
+/// The bottom margin of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-margin-bottom: map.get( $kendo-spacing, 3 ) !default;
-/// Text color of the card subtitle.
+/// The text color of the Card subtitle.
 /// @group card
 $kendo-card-subtitle-text: $kendo-subtle-text !default;
 
-/// Maximum width of the card image.
+/// The maximum width of the Card image.
 /// @group card
 $kendo-card-img-max-width: 100px !default;
-/// Size of the avatar in the card.
+/// The size of the Avatar in the Card.
 /// @group card
 $kendo-card-avatar-size: 3rem !default;
-/// Spacing between the avatar and the text in the card.
+/// The spacing between the Avatar and the text in the Card.
 /// @group card
 $kendo-card-avatar-spacing: $kendo-card-header-padding-x !default;
 
-/// Horizontal padding of the card actions.
+/// The horizontal padding of the Card actions.
 /// @group card
 $kendo-card-actions-padding-x: map.get( $kendo-spacing, 3 ) !default;
-/// Vertical padding of the card actions.
+/// The vertical padding of the Card actions.
 /// @group card
 $kendo-card-actions-padding-y: map.get( $kendo-spacing, 3 ) !default;
-/// Top border of the card actions.
+/// The top border width of the Card actions.
 /// @group card
 $kendo-card-actions-border-width: 0 !default;
-/// Spacing between the card actions.
+/// The spacing between the Card actions.
 /// @group card
 $kendo-card-actions-gap: map.get( $kendo-spacing, 2 ) !default;
 
-/// Border radius of the scroll button in the card deck.
+/// The border radius of the scroll button in the Card deck.
 /// @group card
 $kendo-card-deck-scroll-button-radius: 0 !default;
+/// The border radius of the scroll button in the Card deck.
+/// @group card
 $kendo-card-deck-scroll-button-offset: ( -1 * $kendo-button-border-width ) !default;
 
-/// Size of the card callout.
+/// The size of the Card callout.
 /// @group card
 $kendo-card-callout-size: 20px !default;
 

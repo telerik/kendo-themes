@@ -119,31 +119,11 @@ export default () =>(
             <span>wrapped</span>
             <span>wrapped rtl</span>
             <section>
-                <ToolbarNormal>
-                    <Button>Button</Button>
-                    <MenuButton text="Menu button"></MenuButton>
-                    <SplitButton>Split button</SplitButton>
-                    <ButtonGroup>
-                        <Button icon="align-left">Left</Button>
-                        <Button icon="align-center">Center</Button>
-                        <Button icon="align-right">Right</Button>
-                        <Button icon="align-justify">Justify</Button>
-                    </ButtonGroup>
-                </ToolbarNormal>
+                <ToolbarNormal />
             </section>
 
             <section dir="rtl">
-                <ToolbarNormal>
-                    <Button>Button</Button>
-                    <SplitButton>Split button</SplitButton>
-                    <MenuButton text="Menu button"></MenuButton>
-                    <ButtonGroup>
-                        <Button icon="align-left">Left</Button>
-                        <Button icon="align-center">Center</Button>
-                        <Button icon="align-right">Right</Button>
-                        <Button icon="align-justify">Justify</Button>
-                    </ButtonGroup>
-                </ToolbarNormal>
+                <ToolbarNormal />
             </section>
 
         </div>

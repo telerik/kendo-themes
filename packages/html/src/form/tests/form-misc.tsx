@@ -1,7 +1,6 @@
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
-import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormField, FormHorizontal, FormNormal } from '../../form';
 
 
 const styles = `
@@ -21,15 +20,9 @@ export default () =>(
 
             <section>
                 <div className="k-messagebox k-messagebox-error">
-                    Error: The quick brown fox jumps over the lazy dog.
+                        Error: The quick brown fox jumps over the lazy dog.
                 </div>
-
-                <Form formButtons={
-                    <>
-                        <Button themeColor="primary">Submit</Button>
-                        <Button>Clear</Button>
-                    </>
-                } >
+                <FormNormal>
                     <FormField
                         label="Normal:"
                         optional
@@ -68,22 +61,15 @@ export default () =>(
                             </>
                         }
                     />
-
-                </Form>
+                </FormNormal>
             </section>
 
 
             <section>
                 <div className="k-messagebox k-messagebox-error">
-                    Error: The quick brown fox jumps over the lazy dog.
+                        Error: The quick brown fox jumps over the lazy dog.
                 </div>
-
-                <Form orientation="horizontal" formButtons={
-                    <>
-                        <Button className="k-form-submit" themeColor="primary" focus>Submit</Button>
-                        <Button className="k-form-clear">Clear</Button>
-                    </>
-                } >
+                <FormHorizontal>
                     <FormField
                         label="Normal:"
                         optional
@@ -126,8 +112,7 @@ export default () =>(
                             </>
                         }
                     />
-
-                </Form>
+                </FormHorizontal>
             </section>
 
         </div>

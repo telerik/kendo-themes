@@ -1,4 +1,4 @@
-import { FloatingActionButton } from '../../fab';
+import { FloatingActionButton, IconFloatingActionButton } from '../../fab';
 
 const styles = `
     #test-area {
@@ -24,7 +24,7 @@ export default () =>(
                     {[ 'normal', ...FloatingActionButton.states ].map((state) => (
                         <>
                             <span style={{ position: "relative" }}>
-                                <FloatingActionButton icon="plus" position="top-start" themeColor={themeColor} {...{ [state]: true }}></FloatingActionButton>
+                                <IconFloatingActionButton position="top-start" themeColor={themeColor} {...{ [state]: true }} />
                             </span>
                         </>
                     ))}

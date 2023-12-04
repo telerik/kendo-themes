@@ -3,6 +3,105 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.3-dev.3](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.2...v7.0.3-dev.3) (2023-12-04)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.3-dev.2](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.1...v7.0.3-dev.2) (2023-11-27)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.3-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.0...v7.0.3-dev.1) (2023-11-20)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.3-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.2...v7.0.3-dev.0) (2023-11-13)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.2](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.5...v7.0.2) (2023-11-06)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.2-dev.5](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.4...v7.0.2-dev.5) (2023-11-06)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.2-dev.4](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.3...v7.0.2-dev.4) (2023-10-30)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.2-dev.3](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.2...v7.0.2-dev.3) (2023-10-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.2-dev.2](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.1...v7.0.2-dev.2) (2023-10-16)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.2-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.0...v7.0.2-dev.1) (2023-10-09)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.1...v7.0.2-dev.0) (2023-10-04)
+
+**Note:** Version bump only for package @progress/kendo-theme-material
+
+
+
+
+
+## [7.0.1](https://github.com/telerik/kendo-themes/compare/v7.0.1-dev.1...v7.0.1) (2023-10-02)
+
+
+### Bug Fixes
+
+* **multiselect:** disabled state of chips is not visible in material theme ([6ccf535](https://github.com/telerik/kendo-themes/commit/6ccf535529a6d1a6f728720ab7efc901e6c9731e))
+
+
+
+
+
 ## [7.0.1-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.1-dev.0...v7.0.1-dev.1) (2023-10-02)
 
 **Note:** Version bump only for package @progress/kendo-theme-material

@@ -1,4 +1,4 @@
-import { Window } from '../../window';
+import { WindowNormal } from '..';
 
 const style = `
     .k-window {
@@ -12,23 +12,23 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Window" actions={[ 'window-minimize', 'window', 'x' ]}>Window content</Window>
+                <WindowNormal>Window content</WindowNormal>
             </section>
 
             <section>
-                <Window title="" actions={[ 'window-minimize', 'window', 'x' ]}>Window with no title specified</Window>
+                <WindowNormal title="">Window with no title specified</WindowNormal>
             </section>
 
             <section>
-                <Window title="">Window with empty title and no actions</Window>
+                <WindowNormal title="" actions={undefined}>Window with empty title and no actions</WindowNormal>
             </section>
 
             <section>
-                <Window>Window without a title</Window>
+                <WindowNormal title={undefined} actions={undefined}>Window without a title</WindowNormal>
             </section>
 
             <section>
-                <Window title="Window minimized" actions={[ 'window-minimize', 'window', 'x' ]} minimized>Window content</Window>
+                <WindowNormal title="Window minimized" minimized>Window content</WindowNormal>
             </section>
         </div>
     </>

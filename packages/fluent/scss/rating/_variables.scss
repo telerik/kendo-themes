@@ -1,47 +1,47 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// Font family of the rating.
+/// The font family of the Rating.
 /// @group rating
 $kendo-rating-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the rating.
+/// The font size of the Rating.
 /// @group rating
 $kendo-rating-font-size: var( --kendo-font-size-sm, inherit ) !default;
-/// Line height of the rating.
+/// The line height of the Rating.
 /// @group rating
 $kendo-rating-line-height: var( --kendo-line-height, normal ) !default;
 
-/// Content spacing of the rating.
+/// The content spacing of the Rating.
 /// @group rating
 $kendo-rating-spacing: map.get( $kendo-spacing, 1 ) !default;
 
-/// Horizontal padding of the rating item.
+/// The horizontal padding of the Rating item.
 /// @group rating
 $kendo-rating-item-padding-x: map.get( $kendo-spacing, 0.5 ) !default;
-/// Vertical padding of the rating item.
+/// The vertical padding of the Rating item.
 /// @group rating
 $kendo-rating-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
-/// Normal color of the rating item.
+/// The text color of the Rating item.
 /// @group rating
 $kendo-rating-item-text: k-get-theme-color-var( neutral-130 ) !default;
-/// Hover color of the rating item.
+/// The text color of the hovered Rating item.
 /// @group rating
 $kendo-rating-item-hover-text: k-get-theme-color-var( primary-100 ) !default;
-/// Focus color of the rating item.
+/// The text color of the focused Rating item.
 /// @group rating
 $kendo-rating-item-focus-text: $kendo-rating-item-text !default;
-/// Outline width of the focused rating item.
+/// The outline width of the focused Rating item.
 /// @group rating
 $kendo-rating-item-focus-outline-width: 1px !default;
-/// Outline style of the focused rating item.
+/// The outline style of the focused Rating item.
 /// @group rating
 $kendo-rating-item-focus-outline-style: solid !default;
-/// Outline color of the focused rating item.
+/// The outline color of the focused Rating item.
 /// @group rating
 $kendo-rating-item-focus-outline: currentColor !default;
-/// Selected color of the rating item.
+/// The text color of the selected Rating item.
 /// @group rating
 $kendo-rating-item-selected-text: k-get-theme-color-var( neutral-160 ) !default;
-/// Selected hover color of the rating item.
+/// The text color of the selected and hovered Rating item.
 /// @group rating
 $kendo-rating-item-selected-hover-text: k-get-theme-color-var( primary-120 ) !default;

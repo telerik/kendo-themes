@@ -3,9 +3,9 @@ import { Button } from '../../button';
 import { CheckboxItem, CheckboxWithLabelAfter, CheckboxGroup } from '../../checkbox';
 import { Textbox } from '../../textbox';
 import { EditorNormal, EditorContent, EditorToolbar } from '../../editor';
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { ButtonGroup } from '../../button-group';
-import { Form, FormField } from '../../form';
+import { FormField, FormNormal } from '../../form';
 
 
 const styles = `
@@ -34,7 +34,7 @@ export default () =>(
             <span>Replace Window</span>
 
             <section>
-                <Window title="Find and Replace" actions={[ 'x' ]}>
+                <WindowNormal title="Find and Replace" actions={[ 'x' ]}>
                     <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">
@@ -47,7 +47,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div">
+                            <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={<Textbox showClearButton={false} value="editor" />} />
                                 <FormField editor={
                                     <CheckboxGroup className="k-search-options">
@@ -70,14 +70,14 @@ export default () =>(
                                     <span>1 of 3 matches</span>
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-right">Next</Button>
                                 </div>
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window className="k-editor-window" title="Find and Replace" actions={[ 'x' ]}>
+                <WindowNormal className="k-editor-window" title="Find and Replace" actions={[ 'x' ]}>
                     <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">
@@ -90,7 +90,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div">
+                            <FormNormal formButtons={null} tag="div">
                                 <FormField label="Find What:" editor={ <Textbox showClearButton={false} value="editor" /> } />
                                 <FormField label="Replace With:" editor={ <Textbox showClearButton={false} value="grid" /> } />
                                 <FormField editor={
@@ -120,10 +120,10 @@ export default () =>(
                                     <span>1 of 3 matches</span>
                                     <Button themeColor="primary" fillMode="flat" icon="chevron-right">Next</Button>
                                 </div>
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
 

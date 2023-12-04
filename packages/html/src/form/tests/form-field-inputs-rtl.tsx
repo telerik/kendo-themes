@@ -6,8 +6,8 @@ import { NumericTextbox } from '../../numerictextbox';
 import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
-import { Upload, UploadFile } from '../../upload';
-import { Form, FormField } from '../../form';
+import { UploadChunk, UploadFile } from '../../upload';
+import { FormField, FormHorizontal, FormNormal } from '../../form';
 import { Slider, SliderTick } from '../../slider';
 
 
@@ -32,8 +32,9 @@ export default () =>(
             <span>Horizontal Form</span>
 
             <section>
-                <Form>
-
+                <FormNormal
+                    formButtons={null}
+                >
                     <FormField
                         dir="rtl"
                         label="Textbox:"
@@ -164,20 +165,20 @@ export default () =>(
                         dir="rtl"
                         label="Upload"
                         editor={
-                            <Upload async status="done">
+                            <UploadChunk status="done">
                                 <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
-                            </Upload>
+                            </UploadChunk>
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormNormal>
             </section>
 
 
             <section>
-                <Form orientation="horizontal">
-
+                <FormHorizontal
+                    formButtons={null}
+                >
                     <FormField
                         dir="rtl"
                         label="Textbox:"
@@ -265,7 +266,7 @@ export default () =>(
 
                     <FormField
                         dir="rtl"
-                        label="Slider"
+                        label="Slider:"
                         editor={
                             <Slider dir="rtl">
                                 <SliderTick label large text="0"/>
@@ -308,14 +309,13 @@ export default () =>(
                         dir="rtl"
                         label="Upload"
                         editor={
-                            <Upload async status="done">
+                            <UploadChunk status="done">
                                 <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
-                            </Upload>
+                            </UploadChunk>
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormHorizontal>
             </section>
         </div>
     </>

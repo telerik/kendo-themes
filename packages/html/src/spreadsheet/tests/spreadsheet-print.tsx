@@ -1,6 +1,6 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
-import { Fieldset, Form, FormField } from '../../form';
+import { FormNormal, Fieldset, FormField } from '../../form';
 import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
@@ -20,7 +20,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window style={{ width: "620px" }} title="Print" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal style={{ width: "620px" }} title="Print" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                     </>
@@ -33,7 +33,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" layout="grid">
+                            <FormNormal formButtons={null} tag="div" layout="grid">
                                 <Fieldset legend="Settings" layout="grid" cols={2} gapX={4}>
                                     <FormField
                                         colSpan="1"
@@ -124,14 +124,14 @@ export default () =>(
                                         editor={ <DropdownList value="mm" />}>
                                     </FormField>
                                 </Fieldset>
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window style={{ width: "620px" }} title="Print" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal style={{ width: "620px" }} title="Print" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                     </>
@@ -144,7 +144,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" layout="grid">
+                            <FormNormal formButtons={null} tag="div" layout="grid">
                                 <FormField label="Show" editor={
                                     <div className="k-search-options k-checkbox-list">
                                         <span className="k-checkbox-list-item">
@@ -169,10 +169,10 @@ export default () =>(
                                         </span>
                                     </div>
                                 } />
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
         </div>
     </>

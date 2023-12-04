@@ -8,7 +8,7 @@ module.exports = {
             outFile: 'dist/index.css',
             sassOptions: {
                 loadPaths: [
-                    'node_modules/'
+                    '../../node_modules/'
                 ]
             }
         }

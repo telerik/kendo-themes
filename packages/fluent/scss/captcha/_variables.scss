@@ -2,45 +2,45 @@
 @use "sass:math";
 @use "../core/" as *;
 
-/// Spacer of the captcha.
+/// The spacer of the Captcha.
 /// @group captcha
 $kendo-captcha-spacer: map.get( $kendo-spacing, 2 ) !default;
 
-/// Default width of the captcha.
+/// The width of the Captcha.
 /// @group captcha
 $kendo-captcha-width: 280px !default;
-/// Font family of the captcha.
+/// The font family of the Captcha.
 /// @group captcha
 $kendo-captcha-font-family: var( --kendo-font-family, inherit ) !default;
-/// Font size of the captcha.
+/// The font size of the Captcha.
 /// @group captcha
 $kendo-captcha-font-size: var( --kendo-font-size, inherit ) !default;
-/// Line height of the captcha.
+/// The line height of the Captcha.
 /// @group captcha
 $kendo-captcha-line-height: var( --kendo-line-height, normal ) !default;
-/// Spacing of the captcha.
+/// The spacing of the Captcha.
 /// @group captcha
 $kendo-captcha-spacing: $kendo-captcha-spacer !default;
-/// Background color of the captcha.
+/// The background color of the Captcha.
 /// @group captcha
 $kendo-captcha-bg: var( --kendo-component-bg, initial ) !default;
-/// Text color of the captcha.
+/// The text color of the Captcha.
 /// @group captcha
 $kendo-captcha-text: var( --kendo-component-text, initial ) !default;
-/// Border color of the captcha.
+/// The border color of the Captcha.
 /// @group captcha
 $kendo-captcha-border: var( --kendo-component-border, initial ) !default;
 
-/// Spacing of the captcha image wrapper.
+/// The spacing of the Captcha image wrapper.
 /// @group captcha
 $kendo-captcha-image-wrap-spacing: $kendo-captcha-spacer !default;
-/// Spacing of the captcha image controls.
+/// The spacing of the Captcha image controls.
 /// @group captcha
 $kendo-captcha-image-controls-spacing: math.div( $kendo-captcha-spacer, 2 ) !default;
 
-/// Offset of the captcha validation text.
+/// The offset of the Captcha validation message.
 /// @group captcha
 $kendo-captcha-validation-offset-y: math.div( $kendo-captcha-spacer, 2 ) !default;
-/// Font-size of the captcha validation text.
+/// The font size of the Captcha validation message.
 /// @group captcha
 $kendo-captcha-validation-font-size: var( --kendo-font-size-sm, inherit ) !default;

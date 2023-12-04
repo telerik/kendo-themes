@@ -9,14 +9,15 @@ const states = [
 
 export type KendoDropzoneProps = {
     icon?: string;
-    note?: string | boolean;
+    hint?: string | boolean;
+    note?: string;
 };
 
 export type KendoDropzoneState = { [K in (typeof states)[number]]?: boolean };
 
 const defaultProps = {
     icon: "upload",
-    note: "Only JPEG, PNG and SVG files are allowed."
+    hint: "Drag and drop files here to upload",
 };
 
 export const Dropzone = (
@@ -27,7 +28,8 @@ export const Dropzone = (
     const {
         hover,
         icon = defaultProps.icon,
-        note = defaultProps.note,
+        hint = defaultProps.hint,
+        note,
         ...other
     } = props;
 
@@ -45,9 +47,15 @@ export const Dropzone = (
         >
             <div className="k-dropzone-inner">
                 {icon && <Icon icon={icon} className="k-dropzone-icon" size={"xxxlarge"} />}
-                <span className="k-dropzone-hint">Drag and drop files here to upload</span>
-                {note && <span className="k-dropzone-note"> {note} </span>}
+                {hint && <span className="k-dropzone-hint">{hint}</span>}
+                {note && <span className="k-dropzone-note">{note}</span>}
             </div>
         </div>
     );
 };
+
+Dropzone.states = states;
+Dropzone.className = DROPZONE_CLASSNAME;
+Dropzone.defaultProps = defaultProps;
+
+export default Dropzone;

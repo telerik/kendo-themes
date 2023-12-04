@@ -40,18 +40,14 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
-      - name: Bootstrap
-        run: |
-          npm run bootstrap
-
       - name: Lint styles
         run: |
           npm run stylelint
 
       - name: Ensure standalone build
         run: |
-          npm run sass:standalone --prefix packages/${{ matrix.theme }}
+          npm run sass:standalone --prefix packages/${{ matrix.theme }} --if-present
 
       - name: Ensure flat build
         run: |
-          npm run sass:flat
+          npm run sass:flat --prefix packages/${{ matrix.theme }} --if-present

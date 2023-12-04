@@ -8,173 +8,217 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area">
-        <div class="k-expander" dir="rtl">
-            <div class="k-expander-header">
-                <div class="k-expander-title">Collapsed panel</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
-                        </svg>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <div>
+            <div class="k-expander k-expanded" dir="rtl">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">Expanded panel - normal</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
+                </div>
+                <div class="k-expander-content-wrapper">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
+                </div>
             </div>
-            <div class="k-expander-content-wrapper k-d-none">
-                <div class="k-expander-content"></div>
-            </div>
-        </div>
-        <div class="k-expander k-expanded" dir="rtl">
-            <div class="k-expander-header">
-                <div class="k-expander-title">Expanded panel</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-up">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
-                        </svg>
+            <div class="k-expander k-hover k-expanded" dir="rtl">
+                <div class="k-expander-header k-hover">
+                    <div class="k-expander-title">Expanded panel - hover</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
+                </div>
+                <div class="k-expander-content-wrapper">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
+                </div>
             </div>
-            <div class="k-expander-content-wrapper">
-                <div class="k-expander-content">
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+            <div class="k-expander k-focus k-expanded" dir="rtl">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">Expanded panel - focus</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="k-expander-content-wrapper">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="k-expander k-disabled k-expanded" dir="rtl">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">Expanded panel - disabled</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="k-expander-content-wrapper">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="k-expander k-hover k-focus k-expanded" dir="rtl">
+                <div class="k-expander-header k-hover">
+                    <div class="k-expander-title">Expanded panel - hover &amp; focus</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="k-expander-content-wrapper">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="k-expander k-focus k-expanded" dir="rtl">
-            <div class="k-expander-header">
-                <div class="k-expander-title">Expanded Focused panel</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-up">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
-                        </svg>
+        <div>
+            <div class="k-expander" dir="rtl">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">Collapsed panel - normal</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
-            </div>
-            <div class="k-expander-content-wrapper">
-                <div class="k-expander-content">
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                </div>
+                <div class="k-expander-content-wrapper k-d-none">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="k-expander" dir="rtl">
-            <div class="k-expander-header">
-                <div class="k-expander-title">Collapsed panel</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
-                        </svg>
+            <div class="k-expander k-hover" dir="rtl">
+                <div class="k-expander-header k-hover">
+                    <div class="k-expander-title">Collapsed panel - hover</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
-            </div>
-            <div class="k-expander-content-wrapper k-d-none">
-                <div class="k-expander-content">
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                </div>
+                <div class="k-expander-content-wrapper k-d-none">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="k-expander k-focus" dir="rtl">
-            <div class="k-expander-header">
-                <div class="k-expander-title">Focus state</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
-                        </svg>
+            <div class="k-expander k-focus" dir="rtl">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">Collapsed panel - focus</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
-            </div>
-            <div class="k-expander-content-wrapper k-d-none">
-                <div class="k-expander-content">
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                </div>
+                <div class="k-expander-content-wrapper k-d-none">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="k-expander k-hover" dir="rtl">
-            <div class="k-expander-header k-hover">
-                <div class="k-expander-title">Hover state</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
-                        </svg>
+            <div class="k-expander k-disabled" dir="rtl">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">Collapsed panel - disabled</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
-            </div>
-            <div class="k-expander-content-wrapper k-d-none">
-                <div class="k-expander-content">
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                </div>
+                <div class="k-expander-content-wrapper k-d-none">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="k-expander k-hover k-focus" dir="rtl">
-            <div class="k-expander-header k-hover">
-                <div class="k-expander-title">Hover &amp; Focus state</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
-                        </svg>
+            <div class="k-expander k-hover k-focus" dir="rtl">
+                <div class="k-expander-header k-hover">
+                    <div class="k-expander-title">Collapsed panel - hover &amp; focus</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-down">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
-            </div>
-            <div class="k-expander-content-wrapper k-d-none">
-                <div class="k-expander-content">
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                </div>
+                <div class="k-expander-content-wrapper k-d-none">
+                    <div class="k-expander-content">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="k-expander k-disabled" dir="rtl">
-            <div class="k-expander-header">
-                <div class="k-expander-title">Disabled panel</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-down">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m382.059 158.059-126.06 126.06-126.061-126.06L96 192l159.999 160L416 192l-33.941-33.941z"></path>
-                        </svg>
+            <div class="k-expander k-expanded" dir="rtl">
+                <div class="k-expander-header">
+                    <div class="k-expander-title">Content with fixed height</div>
+                    <span class="k-spacer"></span>
+                    <div class="k-expander-sub-title">Subtitle</div>
+                    <span class="k-expander-indicator">
+                        <span class="k-icon k-svg-icon k-svg-i-chevron-up">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
+                            </svg>
+                        </span>
                     </span>
-                </span>
-            </div>
-            <div class="k-expander-content-wrapper k-d-none">
-                <div class="k-expander-content">
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
                 </div>
-            </div>
-        </div>
-        <div class="k-expander k-expanded" dir="rtl">
-            <div class="k-expander-header">
-                <div class="k-expander-title">Content with fixed height</div>
-                <span class="k-spacer"></span>
-                <div class="k-expander-sub-title">South America</div>
-                <span class="k-expander-indicator">
-                    <span class="k-icon k-svg-icon k-svg-i-chevron-up">
-                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="m129.941 353.941 126.06-126.06 126.061 126.06L416 320 256.001 160 96 320l33.941 33.941z"></path>
-                        </svg>
-                    </span>
-                </span>
-            </div>
-            <div class="k-expander-content-wrapper">
-                <div class="k-expander-content" style="height: 100px;">
-                    <div style="height: 100%; overflow: auto;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                <div class="k-expander-content-wrapper">
+                    <div class="k-expander-content" style="height: 100px;">
+                        <div style="height: 100%; overflow: auto;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                    </div>
                 </div>
             </div>
         </div>

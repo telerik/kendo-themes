@@ -1,6 +1,6 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 
@@ -17,7 +17,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Find and Replace" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Find and Replace" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Done</Button>
                         <Button>Find</Button>
@@ -25,12 +25,12 @@ export default () =>(
                         <Button>Replace All</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Find" editor={ <Textbox placeholder="Placeholder" /> }/>
                         <FormField label="Replace with" editor={ <Textbox placeholder="Placeholder" /> }/>
                         <FormField label="Search within" editor={ <DropdownList value="All Sheets" /> } />
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
         </div>

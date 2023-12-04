@@ -1,8 +1,8 @@
 import { Button } from '../../button';
-import { Upload } from '../../upload';
+import { UploadNormal } from '../../upload';
 import { Toolbar } from '../../toolbar';
 import { Pager } from '../../pager';
-import { Dropzone } from '../../dropzone';
+import { DropzoneNormal } from '../../dropzone';
 
 
 const styles = `
@@ -30,8 +30,8 @@ export default () =>(
                 <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto k-enable-text-select">
                     <div className="k-pdf-viewer-pages">
                         <div className="k-page k-blank-page">
-                            <Dropzone note={false}/>
-                            <Upload async empty status="upload"></Upload>
+                            <DropzoneNormal />
+                            <UploadNormal empty status="upload"></UploadNormal>
                         </div>
                     </div>
                 </div>

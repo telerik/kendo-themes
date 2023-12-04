@@ -59,9 +59,6 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
-      - name: Bootstrap
-        run: npm run bootstrap
-
       - name: Build swatches
         run: npm run sass:swatches
 
