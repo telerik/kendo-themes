@@ -1,4 +1,4 @@
-import { RatingItem, RatingNormal } from '..';
+import { RatingItem } from '..';
 
 
 const styles = `
@@ -20,22 +20,14 @@ export default () =>(
                 <>
                     <div>{state}</div>
                     <section>
-                        <RatingNormal>
-                            <RatingItem { ...{ [state]: true }} iconFill="solid"/>
-                            <RatingItem { ...{ [state]: true }} iconFill="split"/>
-                            <RatingItem { ...{ [state]: true }} iconFill="outline"/>
-                        </RatingNormal>
+                        <RatingItem { ...{ [state]: true }} iconType="solid"/>
                     </section>
                 </>
             ))}
 
             <div>hover selected</div>
             <section>
-                <RatingNormal>
-                    <RatingItem hover selected iconFill="solid"/>
-                    <RatingItem hover selected iconFill="split"/>
-                    <RatingItem hover selected iconFill="outline"/>
-                </RatingNormal>
+                <RatingItem hover selected iconType="solid"/>
             </section>
         </div>
     </>

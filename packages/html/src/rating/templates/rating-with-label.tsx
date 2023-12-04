@@ -1,17 +1,10 @@
-import { Rating, RatingItem } from "..";
+import { Rating } from "..";
 
-export const RatingWithLabel = (props) =>(
+export const RatingWithLabel = ({ value = 2.5, max = 5, ...props }: any) =>(
     <Rating
-        label="2.5 / 5"
-        children={
-            <>
-                <RatingItem dir={props.dir} iconFill="solid" selected/>
-                <RatingItem dir={props.dir} iconFill="solid" selected/>
-                <RatingItem dir={props.dir} iconFill="split" selected/>
-                <RatingItem dir={props.dir} iconFill="outline"/>
-                <RatingItem dir={props.dir} iconFill="outline"/>
-            </>
-        }
-        {...props}>
-    </Rating>
+        label={`${value} / ${max}`}
+        value={value}
+        max={max}
+        {...props}
+    />
 );

@@ -15,12 +15,12 @@ const options = {};
 export type RatingItemState = { [K in (typeof states)[number]]?: boolean };
 
 export type RatingItemProps = {
-    iconFill?: "solid" | "outline" | "split";
+    iconType?: "solid" | "outline" | "split";
     dir?: "rtl" | "ltr";
 };
 
 const defaultProps = {
-    iconFill: "solid",
+    iconType: "solid",
 };
 
 
@@ -32,14 +32,14 @@ export const RatingItem = (
         focus,
         selected,
         disabled,
-        iconFill,
+        iconType,
         dir,
         ...other
     } = props;
 
     let itemContent;
 
-    switch (iconFill) {
+    switch (iconType) {
         case "split":
             itemContent =
                 <>
