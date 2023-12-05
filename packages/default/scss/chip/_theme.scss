@@ -84,7 +84,7 @@
             } @else if ($name == "warning") {
                 @include fill(
                     if($kendo-new-colors, $kendo-chip-outline-text, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text)),
-                    if($kendo-new-colors, $kendo-color-white, if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
+                    if($kendo-new-colors, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )),
                     if($kendo-new-colors, $color, if( $kendo-is-dark-theme, k-color-tint($color, 25%), $color))
                 );
 

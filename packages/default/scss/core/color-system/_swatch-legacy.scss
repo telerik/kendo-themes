@@ -2,25 +2,11 @@
     $kendo-color-primary: k-color( primary );
     $kendo-color-primary-contrast: k-color( on-primary );
     $kendo-color-secondary: k-color( secondary );
-    // $kendo-color-secondary-lighter: null;
-    // $kendo-color-secondary-darker: null;
-    // $kendo-color-secondary-contrast: null; // ONLY IN MATERIAL GANTT
     $kendo-color-tertiary: k-color( tertiary );
-    // $kendo-color-tertiary-lighter: null;
-    // $kendo-color-tertiary-darker: null;
-    // $kendo-color-tertiary-contrast: null;
     $kendo-color-info: k-color( info );
-    // $kendo-color-info-lighter: null;
-    // $kendo-color-info-darker: null;
     $kendo-color-success: k-color( success );
-    // $kendo-color-success-lighter: null;
-    // $kendo-color-success-darker: null;
     $kendo-color-warning: k-color( warning );
-    // $kendo-color-warning-lighter: null;
-    // $kendo-color-warning-darker: null;
     $kendo-color-error: k-color( error );
-    // $kendo-color-error-lighter: null;
-    // $kendo-color-error-darker: null;
     $kendo-color-dark: k-color( dark );
     $kendo-color-light: k-color( light );
     $kendo-color-inverse: $kendo-color-dark;
@@ -61,7 +47,6 @@
     $kendo-invalid-border: $kendo-color-error;
     $kendo-invalid-shadow: null;
 
-    // We probably wont be able to use this, but leaving it for now
     $kendo-theme-colors: (
         "primary": $kendo-color-primary,
         "secondary": $kendo-color-secondary,

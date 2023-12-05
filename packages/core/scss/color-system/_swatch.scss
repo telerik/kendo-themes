@@ -136,6 +136,8 @@ $_default-colors: (
     inverse-on-surface: null,
 ) !default;
 
+/// The global default Colors map.
+/// @group color-system
 $kendo-colors: $_default-colors !default;
 $kendo-colors: k-map-merge($_default-colors, $kendo-colors);
 
