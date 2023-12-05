@@ -100,11 +100,11 @@ $kendo-chart-pane-title-font-weight: $kendo-font-weight-normal !default;
 
 /// The color of the Chart grid lines (major).
 /// @group charts
-$kendo-chart-major-lines: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ))), .08 ) !default;
+$kendo-chart-major-lines: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .08 ) !default;
 
 /// The color of the Chart grid lines (minor).
 /// @group charts
-$kendo-chart-minor-lines: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ))), .04 ) !default;
+$kendo-chart-minor-lines: rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .04 ) !default;
 
 $kendo-chart-inactive: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-component-text, .5 )) !default;
 $kendo-chart-area-opacity: .6 !default;

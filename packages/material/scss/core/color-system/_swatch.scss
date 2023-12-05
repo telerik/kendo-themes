@@ -13,9 +13,9 @@ $kendo-enable-color-system: false !default;
 // Colors
 $_default-colors: (
     // Misc
-    app-surface: k-map-get( $kendo-palette-gray, white ), // !!! Eventually merge with surface-alt
-    on-app-surface: k-map-get( $kendo-palette-gray, 15 ), // !!!
-    subtle: k-map-get( $kendo-palette-gray, 12 ), // !!! Eventually merge with base-on-subtle
+    app-surface: k-map-get( $kendo-palette-gray, white ),
+    on-app-surface: k-map-get( $kendo-palette-gray, 15 ),
+    subtle: k-map-get( $kendo-palette-gray, 12 ),
     surface: k-map-get( $kendo-palette-gray, 2 ),
     surface-alt: k-map-get( $kendo-palette-gray, white ),
     border: rgba( k-map-get( $kendo-palette-gray, black ), .12),
@@ -179,6 +179,8 @@ $_default-colors: (
     series-f-subtler: k-map-get( $kendo-palette-forest-green, 4 ),
 ) !default;
 
+/// The global default Colors map.
+/// @group color-system
 $kendo-colors: $_default-colors !default;
 
 // Adapted from https://github.com/angular/material2/blob/master/src/lib/core/theming/_palette.scss
