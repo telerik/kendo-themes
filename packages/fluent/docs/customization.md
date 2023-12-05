@@ -18514,13 +18514,13 @@ The following table lists the available variables for customizing the Fluent the
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-notification-container-padding-y</td>
+    <td>$kendo-notification-group-gap</td>
     <td></td>
-    <td><code>$kendo-padding-sm-y</code></td>
+    <td><code>map.get( $kendo-spacing, 2 )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the Notification container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The row-gap between the elements in the Notification group.</div></div>
     </td>
 </tr>
 <tr>
