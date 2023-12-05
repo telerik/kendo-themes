@@ -27,18 +27,18 @@ $kendo-panelbar-header-text: $kendo-link-text !default;
 $kendo-panelbar-header-border: null !default;
 $kendo-panelbar-header-gradient: null !default;
 
-$kendo-panelbar-header-hover-bg: if($kendo-new-colors, k-color( base-hover ), k-try-shade( $kendo-panelbar-header-bg, .5 )) !default;
+$kendo-panelbar-header-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-panelbar-header-bg, .5 )) !default;
 $kendo-panelbar-header-hover-text: null !default;
 $kendo-panelbar-header-hover-border: null !default;
 $kendo-panelbar-header-hover-gradient: null !default;
 
-$kendo-panelbar-header-focus-bg: if($kendo-new-colors, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 1.5 )) !default;
+$kendo-panelbar-header-focus-bg: if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 1.5 )) !default;
 $kendo-panelbar-header-focus-text: null !default;
 $kendo-panelbar-header-focus-border: null !default;
 $kendo-panelbar-header-focus-gradient: null !default;
 $kendo-panelbar-header-focus-shadow: null !default;
 
-$kendo-panelbar-header-hover-focus-bg: if($kendo-new-colors, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 2 )) !default;
+$kendo-panelbar-header-hover-focus-bg: if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 2 )) !default;
 $kendo-panelbar-header-hover-focus-text: null !default;
 $kendo-panelbar-header-hover-focus-border: null !default;
 $kendo-panelbar-header-hover-focus-gradient: null !default;
@@ -48,34 +48,34 @@ $kendo-panelbar-header-selected-text: $kendo-selected-text !default;
 $kendo-panelbar-header-selected-border: null !default;
 $kendo-panelbar-header-selected-gradient: null !default;
 
-$kendo-panelbar-header-selected-hover-bg: if($kendo-new-colors, k-color( secondary-hover ), k-try-tint($kendo-panelbar-header-selected-bg, .95)) !default;
+$kendo-panelbar-header-selected-hover-bg: if($kendo-enable-color-system, k-color( secondary-hover ), k-try-tint($kendo-panelbar-header-selected-bg, .95)) !default;
 $kendo-panelbar-header-selected-hover-text: null !default;
 $kendo-panelbar-header-selected-hover-border: null !default;
 $kendo-panelbar-header-selected-hover-gradient: null !default;
 
-$kendo-panelbar-header-selected-focus-bg: if($kendo-new-colors, k-color( secondary-active ), k-try-tint($kendo-panelbar-header-selected-bg, 3)) !default;
+$kendo-panelbar-header-selected-focus-bg: if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-header-selected-bg, 3)) !default;
 $kendo-panelbar-header-selected-focus-text: null !default;
 $kendo-panelbar-header-selected-focus-border: null !default;
 $kendo-panelbar-header-selected-focus-gradient: null !default;
 
-$kendo-panelbar-header-selected-hover-focus-bg: if($kendo-new-colors, k-color( secondary-active ), k-try-tint($kendo-panelbar-header-selected-bg, 3.95)) !default;
+$kendo-panelbar-header-selected-hover-focus-bg: if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-header-selected-bg, 3.95)) !default;
 $kendo-panelbar-header-selected-hover-focus-text: null !default;
 $kendo-panelbar-header-selected-hover-focus-border: null !default;
 $kendo-panelbar-header-selected-hover-focus-gradient: null !default;
 
 
-$kendo-panelbar-item-hover-bg: if($kendo-new-colors, k-color( base-hover ), k-try-shade( $kendo-panelbar-bg, .5 )) !default;
+$kendo-panelbar-item-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-panelbar-bg, .5 )) !default;
 $kendo-panelbar-item-hover-text: null !default;
 $kendo-panelbar-item-hover-border: null !default;
 $kendo-panelbar-item-hover-gradient: null !default;
 
-$kendo-panelbar-item-focus-bg: if($kendo-new-colors, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 1.5 )) !default;
+$kendo-panelbar-item-focus-bg: if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 1.5 )) !default;
 $kendo-panelbar-item-focus-text: null !default;
 $kendo-panelbar-item-focus-border: null !default;
 $kendo-panelbar-item-focus-gradient: null !default;
 $kendo-panelbar-item-focus-shadow: null !default;
 
-$kendo-panelbar-item-hover-focus-bg: if($kendo-new-colors, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 2 )) !default;
+$kendo-panelbar-item-hover-focus-bg: if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-panelbar-header-bg, 2 )) !default;
 $kendo-panelbar-item-hover-focus-text: null !default;
 $kendo-panelbar-item-hover-focus-border: null !default;
 $kendo-panelbar-item-hover-focus-gradient: null !default;
@@ -85,17 +85,17 @@ $kendo-panelbar-item-selected-text: $kendo-selected-text !default;
 $kendo-panelbar-item-selected-border: null !default;
 $kendo-panelbar-item-selected-gradient: null !default;
 
-$kendo-panelbar-item-selected-hover-bg: if($kendo-new-colors, k-color( secondary-hover ), k-try-tint($kendo-panelbar-item-selected-bg, .95)) !default;
+$kendo-panelbar-item-selected-hover-bg: if($kendo-enable-color-system, k-color( secondary-hover ), k-try-tint($kendo-panelbar-item-selected-bg, .95)) !default;
 $kendo-panelbar-item-selected-hover-text: null !default;
 $kendo-panelbar-item-selected-hover-border: null !default;
 $kendo-panelbar-item-selected-hover-gradient: null !default;
 
-$kendo-panelbar-item-selected-focus-bg: if($kendo-new-colors, k-color( secondary-active ), k-try-tint($kendo-panelbar-item-selected-bg, 3)) !default;
+$kendo-panelbar-item-selected-focus-bg: if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-item-selected-bg, 3)) !default;
 $kendo-panelbar-item-selected-focus-text: null !default;
 $kendo-panelbar-item-selected-focus-border: null !default;
 $kendo-panelbar-item-selected-focus-gradient: null !default;
 
-$kendo-panelbar-item-selected-hover-focus-bg: if($kendo-new-colors, k-color( secondary-active ), k-try-tint($kendo-panelbar-item-selected-bg, 3.95)) !default;
+$kendo-panelbar-item-selected-hover-focus-bg: if($kendo-enable-color-system, k-color( secondary-active ), k-try-tint($kendo-panelbar-item-selected-bg, 3.95)) !default;
 $kendo-panelbar-item-selected-hover-focus-text: null !default;
 $kendo-panelbar-item-selected-hover-focus-border: null !default;
 $kendo-panelbar-item-selected-hover-focus-gradient: null !default;

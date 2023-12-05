@@ -5,7 +5,7 @@
 
     @include kendo-table--theme-base();
 
-    @if($kendo-new-colors) {
+    @if($kendo-enable-color-system) {
         .k-table .k-table-tbody {
             td:focus,
             td.k-focus,

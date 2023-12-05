@@ -75,11 +75,11 @@ $kendo-calendar-cell-hover-border: $kendo-hover-border !default;
 $kendo-calendar-cell-hover-gradient: null !default;
 
 $kendo-calendar-cell-selected-bg: $kendo-color-primary !default;
-$kendo-calendar-cell-selected-text: if($kendo-new-colors, k-color( on-primary ), k-contrast-color( $kendo-calendar-cell-selected-bg )) !default;
+$kendo-calendar-cell-selected-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-calendar-cell-selected-bg )) !default;
 $kendo-calendar-cell-selected-border: $kendo-calendar-cell-selected-bg !default;
 $kendo-calendar-cell-selected-gradient: null !default;
 
-$kendo-calendar-cell-selected-hover-bg: if($kendo-new-colors, k-color( primary-hover ), k-try-shade( $kendo-calendar-cell-selected-bg, .5 )) !default;
+$kendo-calendar-cell-selected-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-calendar-cell-selected-bg, .5 )) !default;
 $kendo-calendar-cell-selected-hover-text: $kendo-calendar-cell-selected-text !default;
 $kendo-calendar-cell-selected-hover-border: null !default;
 $kendo-calendar-cell-selected-hover-gradient: null !default;
@@ -92,7 +92,7 @@ $kendo-calendar-cell-selected-focus-shadow: $kendo-calendar-cell-focus-shadow !d
 $kendo-calendar-navigation-width: 5em !default;
 $kendo-calendar-navigation-item-height: 2em !default;
 
-$kendo-calendar-navigation-bg: if($kendo-new-colors, k-color( surface ), k-true-mix( $kendo-calendar-text, $kendo-calendar-bg, 3)) !default;
+$kendo-calendar-navigation-bg: if($kendo-enable-color-system, k-color( surface ), k-true-mix( $kendo-calendar-text, $kendo-calendar-bg, 3)) !default;
 $kendo-calendar-navigation-text: $kendo-calendar-text !default;
 $kendo-calendar-navigation-border: $kendo-calendar-border !default;
 

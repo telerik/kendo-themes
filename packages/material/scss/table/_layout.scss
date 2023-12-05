@@ -4,7 +4,7 @@
 @mixin kendo-table--layout() {
     @include kendo-table--layout-base();
 
-    @if($kendo-new-colors) {
+    @if($kendo-enable-color-system) {
         .k-table {
             td:focus,
             td.k-focus,

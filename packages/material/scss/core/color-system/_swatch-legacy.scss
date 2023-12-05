@@ -1,4 +1,4 @@
-@if ($kendo-new-colors) {
+@if ($kendo-enable-color-system) {
     $kendo-color-primary: k-color( primary );
     $kendo-color-primary-contrast: k-color( on-primary );
     $kendo-color-secondary: k-color( secondary );

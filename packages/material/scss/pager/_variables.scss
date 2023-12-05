@@ -72,7 +72,7 @@ $kendo-pager-border: $kendo-component-border !default;
 
 /// The background color of the focused Pager.
 /// @group pager
-$kendo-pager-focus-bg: if($kendo-new-colors, k-color( surface ), k-try-shade( $kendo-pager-bg, .5 )) !default;
+$kendo-pager-focus-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-pager-bg, .5 )) !default;
 /// The box shadow of the focused Pager.
 /// @group pager
 $kendo-pager-focus-shadow: null !default;

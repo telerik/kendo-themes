@@ -8,8 +8,8 @@
     .k-toolbar {
 
         .k-button-solid-base {
-            background-color: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
-            border-color: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
+            background-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
+            border-color: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-button-bg ));
 
             &.k-input-button,
             &.k-input-spinner .k-spinner-increase,

@@ -124,7 +124,7 @@ $kendo-treeview-border: null !default;
 
 /// The background color of hovered TreeView.
 /// @group treeview
-$kendo-treeview-item-hover-bg: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .07 ), rgba( $kendo-treeview-text, .07 )) !default;
+$kendo-treeview-item-hover-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .07 ), rgba( $kendo-treeview-text, .07 )) !default;
 /// The text color of hovered TreeView items.
 /// @group treeview
 $kendo-treeview-item-hover-text: null !default;

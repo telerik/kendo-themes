@@ -190,13 +190,13 @@ $kendo-button-focus-shadow: null !default;
 
 /// The base background color of the disabled Button.
 /// @group button
-$kendo-button-disabled-bg: if($kendo-new-colors, rgba( k-color( on-app-surface, rgba ), .09 ), k-try-shade( $kendo-body-bg, 12% )) !default;
+$kendo-button-disabled-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .09 ), k-try-shade( $kendo-body-bg, 12% )) !default;
 /// The base text color of the disabled Button.
 /// @group button
-$kendo-button-disabled-text: if($kendo-new-colors, rgba( k-color( on-app-surface, rgba ), .32 ), $kendo-disabled-text) !default;
+$kendo-button-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .32 ), $kendo-disabled-text) !default;
 /// The base border color of the disabled Button.
 /// @group button
-$kendo-button-disabled-border: if($kendo-new-colors, transparent, $kendo-button-disabled-bg) !default;
+$kendo-button-disabled-border: if($kendo-enable-color-system, transparent, $kendo-button-disabled-bg) !default;
 /// The base background gradient of the disabled Button.
 /// @group button
 $kendo-button-disabled-gradient: null !default;
