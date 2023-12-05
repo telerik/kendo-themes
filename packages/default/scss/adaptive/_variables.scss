@@ -7,7 +7,7 @@ $kendo-adaptive-content-bg: $kendo-app-bg !default;
 $kendo-adaptive-content-text: $kendo-app-text !default;
 
 $kendo-adaptive-menu-bg: $kendo-color-primary !default;
-$kendo-adaptive-menu-text: if($kendo-new-colors, k-color( on-primary ), k-contrast-legacy( $kendo-adaptive-menu-bg )) !default;
+$kendo-adaptive-menu-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-adaptive-menu-bg )) !default;
 
 $kendo-adaptive-menu-clear-text: $kendo-color-primary !default;
 

@@ -1,7 +1,7 @@
 @mixin kendo-core--styles--colors() {
     @include color-system--styles--legacy();
 
-    @if ($kendo-new-colors) {
+    @if ($kendo-enable-color-system) {
         @include color-system--styles();
     }
 }

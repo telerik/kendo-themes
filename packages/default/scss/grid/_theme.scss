@@ -270,7 +270,7 @@
         &.k-table-row.k-selected .k-table-td.k-grid-row-sticky,
         &.k-table-row td.k-grid-content-sticky.k-selected,
         &.k-table-row .k-table-td.k-grid-content-sticky.k-selected {
-            @if($kendo-new-colors) {
+            @if($kendo-enable-color-system) {
                 @include fill( $bg: $kendo-grid-sticky-bg );
 
                 &::before {
@@ -285,7 +285,7 @@
         &.k-selected.k-table-alt-row .k-table-td.k-grid-row-sticky,
         &.k-table-alt-row td.k-grid-content-sticky.k-selected,
         &.k-table-alt-row .k-table-td.k-grid-content-sticky.k-selected {
-            @if($kendo-new-colors) {
+            @if($kendo-enable-color-system) {
                 @include fill( $bg: $kendo-grid-sticky-alt-bg );
 
                 &::before {
@@ -315,7 +315,7 @@
         &.k-hover td.k-grid-content-sticky.k-selected,
         &:hover .k-table-td.k-grid-content-sticky.k-selected,
         &.k-hover .k-table-td.k-grid-content-sticky.k-selected {
-            @if($kendo-new-colors) {
+            @if($kendo-enable-color-system) {
                 background-color: $kendo-grid-sticky-hover-bg;
 
                 &::before {
@@ -369,7 +369,7 @@
         .k-selected.k-grid-row-sticky .k-table-td,
         .k-grid-row-sticky .k-table-td.k-selected,
         .k-selected.k-grid-content-sticky {
-            @if($kendo-new-colors) {
+            @if($kendo-enable-color-system) {
                 @include fill( $bg: $kendo-grid-sticky-bg );
 
                 &::before {
@@ -384,7 +384,7 @@
         .k-selected.k-table-alt-row.k-grid-row-sticky td,
         .k-selected.k-table-alt-row.k-grid-row-sticky .k-table-td,
         .k-table-alt-row .k-selected.k-grid-content-sticky {
-            @if($kendo-new-colors) {
+            @if($kendo-enable-color-system) {
                 @include fill( $bg: $kendo-grid-sticky-alt-bg );
 
                 &::before {
@@ -430,7 +430,7 @@
         .k-grid-row-sticky.k-hover .k-table-td.k-selected,
         .k-table-row:hover .k-grid-content-sticky.k-selected,
         .k-table-row.k-hover .k-grid-content-sticky.k-selected {
-            @if($kendo-new-colors) {
+            @if($kendo-enable-color-system) {
                 background-color: $kendo-grid-sticky-hover-bg;
 
                 &::before {

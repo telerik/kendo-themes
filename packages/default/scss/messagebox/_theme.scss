@@ -4,15 +4,15 @@
         .k-messagebox-#{$color-name} {
             @if $color-name == "inverse" {
                 @include fill(
-                    if($kendo-new-colors, k-color( dark-on-subtle ), k-color-level( $color, $kendo-message-box-text-level )),
-                    if($kendo-new-colors, k-color( dark-subtle ), k-color-level( $color, $kendo-message-box-bg-level )),
-                    if($kendo-new-colors, k-color( dark-hover ), k-color-level( $color, $kendo-message-box-border-level ))
+                    if($kendo-enable-color-system, k-color( dark-on-subtle ), k-color-level( $color, $kendo-message-box-text-level )),
+                    if($kendo-enable-color-system, k-color( dark-subtle ), k-color-level( $color, $kendo-message-box-bg-level )),
+                    if($kendo-enable-color-system, k-color( dark-hover ), k-color-level( $color, $kendo-message-box-border-level ))
                 );
             } @else {
                 @include fill(
-                    if($kendo-new-colors, k-color( #{$color-name}-on-subtle ), k-color-level( $color, $kendo-message-box-text-level )),
-                    if($kendo-new-colors, k-color( #{$color-name}-subtle ), k-color-level( $color, $kendo-message-box-bg-level )),
-                    if($kendo-new-colors, k-color( #{$color-name}-emphasis ), k-color-level( $color, $kendo-message-box-border-level ))
+                    if($kendo-enable-color-system, k-color( #{$color-name}-on-subtle ), k-color-level( $color, $kendo-message-box-text-level )),
+                    if($kendo-enable-color-system, k-color( #{$color-name}-subtle ), k-color-level( $color, $kendo-message-box-bg-level )),
+                    if($kendo-enable-color-system, k-color( #{$color-name}-emphasis ), k-color-level( $color, $kendo-message-box-border-level ))
                 );
             }
         }

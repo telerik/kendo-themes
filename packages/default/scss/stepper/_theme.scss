@@ -41,7 +41,7 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @if($kendo-new-colors) {
+                    @if($kendo-enable-color-system) {
                         @include fill(
                             $kendo-stepper-indicator-disabled-text,
                             k-color( app-surface ),
@@ -115,7 +115,7 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @if($kendo-new-colors) {
+                    @if($kendo-enable-color-system) {
                         @include fill(
                             $kendo-stepper-indicator-done-disabled-text,
                             k-color( app-surface ),
@@ -168,7 +168,7 @@
             &.k-disabled,
             &:disabled {
                 .k-step-indicator {
-                    @if($kendo-new-colors) {
+                    @if($kendo-enable-color-system) {
                         @include fill(
                             $kendo-stepper-indicator-current-disabled-text,
                             k-color( app-surface ),

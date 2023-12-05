@@ -64,9 +64,9 @@
     // Card theme colors
     @each $name, $color in $kendo-theme-colors {
         .k-card-#{$name} {
-            background-color: if($kendo-new-colors, k-color( #{$name}-subtle ), k-color-tint($color, 10));
-            color: if($kendo-new-colors, k-color( #{$name}-on-subtle ), k-color-shade($color, 6));
-            border-color: if($kendo-new-colors, k-color( #{$name}-emphasis ), k-color-tint($color, 9));
+            background-color: if($kendo-enable-color-system, k-color( #{$name}-subtle ), k-color-tint($color, 10));
+            color: if($kendo-enable-color-system, k-color( #{$name}-on-subtle ), k-color-shade($color, 6));
+            border-color: if($kendo-enable-color-system, k-color( #{$name}-emphasis ), k-color-tint($color, 9));
 
             .k-card-subtitle {
                 color: inherit;
