@@ -11,9 +11,9 @@ $kendo-new-colors: false !default;
 // Colors
 $_default-colors: (
     // Misc
-    app-surface: k-map-get( $kendo-palette-gray, white ), // !!! Eventually merge with surface-alt
-    on-app-surface: k-map-get( $kendo-palette-gray, 14 ), // !!!
-    subtle: k-map-get( $kendo-palette-gray, 9 ), // !!! Eventually merge with base-on-subtle
+    app-surface: k-map-get( $kendo-palette-gray, white ),
+    on-app-surface: k-map-get( $kendo-palette-gray, 14 ),
+    subtle: k-map-get( $kendo-palette-gray, 9 ),
     surface: k-map-get( $kendo-palette-gray, 1 ),
     surface-alt: k-map-get( $kendo-palette-gray, white ),
     border: k-map-get( $kendo-palette-gray, 3 ),
@@ -177,6 +177,8 @@ $_default-colors: (
     series-f-subtler: k-map-get( $kendo-palette-yellow, 7 ),
 ) !default;
 
+/// The global default Colors map.
+/// @group color-system
 $kendo-colors: $_default-colors !default;
 
 // Legacy
