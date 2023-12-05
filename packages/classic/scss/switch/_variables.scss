@@ -68,7 +68,7 @@ $kendo-switch-off-track-focus-border: null !default;
 $kendo-switch-off-track-focus-gradient: null !default;
 /// The ring around the track when the focused Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-ring: 0 0 3px 1px rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .25 ) !default;
+$kendo-switch-off-track-focus-ring: 0 0 3px 1px rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .25 ) !default;
 
 /// The background of the track when the disabled Switch is not checked.
 /// @group switch
@@ -85,7 +85,7 @@ $kendo-switch-off-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-bg: if($kendo-new-colors, k-color( base ), k-try-shade( $kendo-switch-off-track-bg )) !default;
+$kendo-switch-off-thumb-bg: if($kendo-enable-color-system, k-color( base ), k-try-shade( $kendo-switch-off-track-bg )) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-text: null !default;
@@ -98,7 +98,7 @@ $kendo-switch-off-thumb-gradient: $kendo-base-gradient !default;
 
 /// The background of the thumb when the hovered Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-hover-bg: if($kendo-new-colors, k-color( base-hover ), k-try-shade( $kendo-switch-off-thumb-bg )) !default;
+$kendo-switch-off-thumb-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-switch-off-thumb-bg )) !default;
 /// The text color of the thumb when the hovered Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-hover-text: null !default;
@@ -150,7 +150,7 @@ $kendo-switch-on-track-focus-border: null !default;
 $kendo-switch-on-track-focus-gradient: null !default;
 /// The ring around the track wen the focused Switch is checked.
 /// @group switch
-$kendo-switch-on-track-focus-ring: 0 0 3px 1px rgba( if($kendo-new-colors, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .25 ) !default;
+$kendo-switch-on-track-focus-ring: 0 0 3px 1px rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .25 ) !default;
 
 /// The background of the track when the disabled Switch is checked.
 /// @group switch
@@ -173,20 +173,20 @@ $kendo-switch-on-thumb-bg: $kendo-color-primary !default;
 $kendo-switch-on-thumb-text: null !default;
 /// The border color of the thumb when the Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-border: if($kendo-new-colors, k-color( primary ), k-try-shade( $kendo-switch-on-thumb-bg )) !default;
+$kendo-switch-on-thumb-border: if($kendo-enable-color-system, k-color( primary ), k-try-shade( $kendo-switch-on-thumb-bg )) !default;
 /// The background gradient of the thumb when the Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-gradient: $kendo-base-gradient !default;
 
 /// The background of the thumb when the hovered Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-hover-bg: if($kendo-new-colors, k-color( primary-hover ), k-try-shade( $kendo-switch-on-thumb-bg )) !default;
+$kendo-switch-on-thumb-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-switch-on-thumb-bg )) !default;
 /// The text color of the thumb when the hovered Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-hover-text: null !default;
 /// The border color of the thumb when the hovered Switch is checked.
 /// @group switch
-$kendo-switch-on-thumb-hover-border: if($kendo-new-colors, k-color( primary-hover ), k-try-shade( $kendo-switch-on-thumb-hover-bg )) !default;
+$kendo-switch-on-thumb-hover-border: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-switch-on-thumb-hover-bg )) !default;
 /// The background gradient of the thumb when the hovered Switch is checked.
 /// @group switch
 $kendo-switch-on-thumb-hover-gradient: null !default;

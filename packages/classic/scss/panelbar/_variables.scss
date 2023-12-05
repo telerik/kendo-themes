@@ -47,7 +47,7 @@ $kendo-panelbar-header-selected-text: $kendo-selected-text !default;
 $kendo-panelbar-header-selected-border: $kendo-selected-border !default;
 $kendo-panelbar-header-selected-gradient: null !default;
 
-$kendo-panelbar-header-selected-hover-bg: if($kendo-new-colors, k-color( primary-hover ), k-try-shade( $kendo-panelbar-header-selected-bg )) !default;
+$kendo-panelbar-header-selected-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-panelbar-header-selected-bg )) !default;
 $kendo-panelbar-header-selected-hover-text: null !default;
 $kendo-panelbar-header-selected-hover-border: null !default;
 $kendo-panelbar-header-selected-hover-gradient: null !default;
@@ -62,7 +62,7 @@ $kendo-panelbar-header-selected-hover-focus-text: null !default;
 $kendo-panelbar-header-selected-hover-focus-border: null !default;
 $kendo-panelbar-header-selected-hover-focus-gradient: null !default;
 
-$kendo-panelbar-item-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-try-shade( $kendo-panelbar-bg, .5 )) !default;
+$kendo-panelbar-item-hover-bg: if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-shade( $kendo-panelbar-bg, .5 )) !default;
 $kendo-panelbar-item-hover-text: null !default;
 $kendo-panelbar-item-hover-border: null !default;
 $kendo-panelbar-item-hover-gradient: null !default;
@@ -83,7 +83,7 @@ $kendo-panelbar-item-selected-text: $kendo-selected-text !default;
 $kendo-panelbar-item-selected-border: null !default;
 $kendo-panelbar-item-selected-gradient: null !default;
 
-$kendo-panelbar-item-selected-hover-bg: if($kendo-new-colors, k-color( primary-hover ), k-try-shade( $kendo-panelbar-item-selected-bg )) !default;
+$kendo-panelbar-item-selected-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-panelbar-item-selected-bg )) !default;
 $kendo-panelbar-item-selected-hover-text: null !default;
 $kendo-panelbar-item-selected-hover-border: null !default;
 $kendo-panelbar-item-selected-hover-gradient: null !default;
