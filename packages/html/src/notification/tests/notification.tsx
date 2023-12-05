@@ -1,4 +1,4 @@
-import { NotificationNormal, NotificationClosable, IconNotification, IconNotificationClosable } from '../../notification';
+import { NotificationNormal, NotificationClosable, IconNotification, IconNotificationClosable } from '..';
 import { AnimationContainer } from '../../animation-container';
 
 
