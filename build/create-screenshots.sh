@@ -23,7 +23,7 @@ find "$THEME_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
     -e "s#/packages/default/dist/#../assets/#" \
     -e "s#/packages/html/assets/#../assets/#"
 
-npx pastshots \
+npx snapshot \
     --serve "$THEME_DIR/**/*.html" \
     --port $((RANDOM % 1000 + 8000)) \
     --output "./tests/_output/$THEME"
