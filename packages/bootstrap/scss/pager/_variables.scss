@@ -123,7 +123,7 @@ $kendo-pager-item-focus-opacity: null !default;
 $kendo-pager-item-focus-bg: $kendo-pager-item-bg !default;
 /// The box shadow of the focused Pager items.
 /// @group pager
-$kendo-pager-item-focus-shadow: 0 0 0 3px if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), rgba($kendo-color-primary, .25)) !default;
+$kendo-pager-item-focus-shadow: 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-color-primary, .25)) !default;
 
 /// The border radius of the Pager numbers.
 /// @group pager

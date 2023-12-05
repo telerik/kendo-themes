@@ -1,4 +1,4 @@
-@if ($kendo-new-colors) {
+@if ($kendo-enable-color-system) {
     $input-bg: k-color( app-surface );
     $input-color: k-color( on-app-surface );
     $input-border-color: k-color( border-alt );

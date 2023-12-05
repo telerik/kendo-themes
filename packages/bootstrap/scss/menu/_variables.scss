@@ -15,31 +15,31 @@ $kendo-menu-item-spacing: 0 !default;
 $kendo-menu-item-icon-spacing: $kendo-icon-spacing !default;
 
 $kendo-menu-item-bg: null !default;
-$kendo-menu-item-text: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-menu-text, .5 )) !default;
+$kendo-menu-item-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-menu-text, .5 )) !default;
 $kendo-menu-item-border: null !default;
 $kendo-menu-item-gradient: null !default;
 
 $kendo-menu-item-hover-bg: null !default;
-$kendo-menu-item-hover-text: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .7 ), rgba( $kendo-menu-text, .7 )) !default;
+$kendo-menu-item-hover-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .7 ), rgba( $kendo-menu-text, .7 )) !default;
 $kendo-menu-item-hover-border: null !default;
 $kendo-menu-item-hover-gradient: null !default;
 
 $kendo-menu-item-expanded-bg: null !default;
-$kendo-menu-item-expanded-text: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .9 ), rgba( $kendo-menu-text, .9 )) !default;
+$kendo-menu-item-expanded-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .9 ), rgba( $kendo-menu-text, .9 )) !default;
 $kendo-menu-item-expanded-border: null !default;
 $kendo-menu-item-expanded-gradient: null !default;
 
-$kendo-menu-item-focus-shadow: inset 0 0 0 3px if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .15 ), rgba( $kendo-menu-text, .15 )) !default;
+$kendo-menu-item-focus-shadow: inset 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .15 ), rgba( $kendo-menu-text, .15 )) !default;
 
 $kendo-menu-separator-spacing: k-map-get( $kendo-spacing, 1 ) !default;
 
 $kendo-menu-scroll-button-bg: $kendo-menu-bg !default;
-$kendo-menu-scroll-button-text: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-menu-text, .5 )) !default;
+$kendo-menu-scroll-button-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .5 ), rgba( $kendo-menu-text, .5 )) !default;
 $kendo-menu-scroll-button-border: $kendo-menu-border !default;
 $kendo-menu-scroll-button-gradient: null !default;
 
 $kendo-menu-scroll-button-hover-bg: null !default;
-$kendo-menu-scroll-button-hover-text: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .7 ), rgba( $kendo-menu-text, .7 )) !default;
+$kendo-menu-scroll-button-hover-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .7 ), rgba( $kendo-menu-text, .7 )) !default;
 $kendo-menu-scroll-button-hover-border: null !default;
 $kendo-menu-scroll-button-hover-gradient: null !default;
 

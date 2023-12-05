@@ -10,7 +10,7 @@
             outline: $kendo-fab-border-width $kendo-fab-outline-style $color;
             outline-offset: -$kendo-fab-border-width;
             border-color: $color;
-            color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-color( $color ));
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( $color ));
             background-color: $color;
         }
     }
@@ -19,9 +19,9 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-fab-solid-#{$name}:hover,
         .k-fab-solid-#{$name}.k-hover {
-            border-color: if($kendo-new-colors, k-color( #{$name}-hover ), k-color-darken( $color, 10% ));
-            color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-color( k-color-darken( $color, 7.5% ) ));
-            background-color: if($kendo-new-colors, k-color( #{$name}-hover ), k-color-darken( $color, 7.5% ));
+            border-color: if($kendo-enable-color-system, k-color( #{$name}-hover ), k-color-darken( $color, 10% ));
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( k-color-darken( $color, 7.5% ) ));
+            background-color: if($kendo-enable-color-system, k-color( #{$name}-hover ), k-color-darken( $color, 7.5% ));
         }
     }
 
@@ -29,7 +29,7 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-fab-solid-#{$name}:focus,
         .k-fab-solid-#{$name}.k-focus {
-            outline: $kendo-fab-outline-width $kendo-fab-outline-style if($kendo-new-colors, rgba( k-color( $name, true ), .5 ), rgba( $color, .5 ));
+            outline: $kendo-fab-outline-width $kendo-fab-outline-style if($kendo-enable-color-system, rgba( k-color( $name, true ), .5 ), rgba( $color, .5 ));
         }
     }
 
@@ -39,9 +39,9 @@
         .k-fab-solid-#{$name}.k-active,
         .k-fab-solid-#{$name}.k-selected {
             @include box-shadow( $kendo-fab-active-shadow );
-            border-color: if($kendo-new-colors, k-color( #{$name}-active ), k-color-darken( $color, 12.5% ));
-            color: if($kendo-new-colors, k-color( on-#{$name} ), k-contrast-color( k-color-darken( $color, 10% ) ));
-            background-color: if($kendo-new-colors, k-color( #{$name}-active ), k-color-darken( $color, 10% ));
+            border-color: if($kendo-enable-color-system, k-color( #{$name}-active ), k-color-darken( $color, 12.5% ));
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-color( k-color-darken( $color, 10% ) ));
+            background-color: if($kendo-enable-color-system, k-color( #{$name}-active ), k-color-darken( $color, 10% ));
         }
     }
 
@@ -50,8 +50,8 @@
         .k-fab-solid-#{$name}:disabled,
         .k-fab-solid-#{$name}.k-disabled {
             @include box-shadow( $kendo-fab-disabled-shadow );
-            background-color: if($kendo-new-colors, rgba( k-color( $name, true ), .65 ), k-try-tint( $color, 4.5 ));
-            color: if($kendo-new-colors, rgba( k-color( on-#{$name}, true ), .65 ), k-try-tint( k-contrast-color( $color ), 5 ));
+            background-color: if($kendo-enable-color-system, rgba( k-color( $name, true ), .65 ), k-try-tint( $color, 4.5 ));
+            color: if($kendo-enable-color-system, rgba( k-color( on-#{$name}, true ), .65 ), k-try-tint( k-contrast-color( $color ), 5 ));
             opacity: 1;
         }
     }
@@ -80,11 +80,11 @@
     .k-fab-item:hover .k-fab-item-icon,
     .k-fab-item.k-hover .k-fab-item-icon {
         @include box-shadow( $kendo-fab-item-shadow );
-        outline: $kendo-fab-border-width $kendo-fab-item-outline-style if($kendo-new-colors, k-color( base-hover ), k-try-darken( $kendo-fab-item-icon-border, 10% ));
+        outline: $kendo-fab-border-width $kendo-fab-item-outline-style if($kendo-enable-color-system, k-color( base-hover ), k-try-darken( $kendo-fab-item-icon-border, 10% ));
         outline-offset: -$kendo-fab-border-width;
-        border-color: if($kendo-new-colors, k-color( base-hover ), k-color-darken( $kendo-fab-item-icon-border, 10% ));
-        color: if($kendo-new-colors, k-color( on-base ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 7.5% ) ));
-        background-color: if($kendo-new-colors, k-color( base-hover ), k-color-darken( $kendo-fab-item-icon-bg, 7.5% ));
+        border-color: if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-fab-item-icon-border, 10% ));
+        color: if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 7.5% ) ));
+        background-color: if($kendo-enable-color-system, k-color( base-hover ), k-color-darken( $kendo-fab-item-icon-bg, 7.5% ));
     }
 
     // Focus state
@@ -92,18 +92,18 @@
     .k-fab-item.k-focus .k-fab-item-text,
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
-        outline: $kendo-fab-item-outline-width $kendo-fab-item-outline-style if($kendo-new-colors, rgba( k-color( base, true ), .5 ), rgba( $kendo-fab-item-icon-border, .5 ));
+        outline: $kendo-fab-item-outline-width $kendo-fab-item-outline-style if($kendo-enable-color-system, rgba( k-color( base, true ), .5 ), rgba( $kendo-fab-item-icon-border, .5 ));
     }
 
     // Active state
     .k-fab-item:active .k-fab-item-icon,
     .k-fab-item.k-active .k-fab-item-icon {
         @include box-shadow( $kendo-fab-item-active-shadow );
-        outline: $kendo-fab-border-width solid if($kendo-new-colors, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
+        outline: $kendo-fab-border-width solid if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
         outline-offset: -$kendo-fab-border-width;
-        border-color: if($kendo-new-colors, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
-        color: if($kendo-new-colors, k-color( on-base ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 10% ) ));
-        background-color: if($kendo-new-colors, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-bg, 10% ));
+        border-color: if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-border, 12.5% ));
+        color: if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( k-color-darken( $kendo-fab-item-icon-bg, 10% ) ));
+        background-color: if($kendo-enable-color-system, k-color( base-active ), k-color-darken( $kendo-fab-item-icon-bg, 10% ));
     }
 
     // Disabled state
@@ -114,8 +114,8 @@
         .k-fab-item-text,
         .k-fab-item-icon {
             @include box-shadow( $kendo-fab-item-disabled-shadow );
-            background-color: if($kendo-new-colors, rgba( k-color( base, true ), .65 ), k-try-tint( $kendo-fab-item-bg, 8 ));
-            color: if($kendo-new-colors, rgba( k-color( on-base, true ), .65 ), k-try-tint( $kendo-fab-item-text, 8 ));
+            background-color: if($kendo-enable-color-system, rgba( k-color( base, true ), .65 ), k-try-tint( $kendo-fab-item-bg, 8 ));
+            color: if($kendo-enable-color-system, rgba( k-color( on-base, true ), .65 ), k-try-tint( $kendo-fab-item-text, 8 ));
         }
     }
 

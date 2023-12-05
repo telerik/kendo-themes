@@ -219,10 +219,10 @@ $kendo-grid-selection-aggregates-line-height: $kendo-grid-line-height !default;
 /// @group grid
 $kendo-grid-selection-aggregates-font-weight: $kendo-font-weight-bold !default;
 
-$kendo-grid-grouping-row-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-grid-bg )) !default;
+$kendo-grid-grouping-row-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-grid-bg )) !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
-$kendo-grid-sorted-bg: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .02 ), rgba( k-contrast-color( $kendo-grid-bg ), .02 )) !default;
+$kendo-grid-sorted-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .02 ), rgba( k-contrast-color( $kendo-grid-bg ), .02 )) !default;
 $kendo-grid-sorting-indicator-text: $kendo-color-primary !default;
 $kendo-grid-sorting-index-font-size: ($kendo-icon-size * .75) !default;
 $kendo-grid-sorting-index-height: $kendo-icon-size !default;
@@ -240,10 +240,10 @@ $kendo-grid-command-cell-padding-y: calc( #{$kendo-grid-cell-padding-y} - (#{$ke
 // Must be a solid color
 $kendo-grid-sticky-bg: $kendo-grid-bg !default;
 $kendo-grid-sticky-text: $kendo-grid-text !default;
-$kendo-grid-sticky-border: if($kendo-new-colors, rgba( k-color( on-app-surface, true ), .5 ), rgba($kendo-grid-text, .5)) !default;
+$kendo-grid-sticky-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .5 ), rgba($kendo-grid-text, .5)) !default;
 
 // Must be a solid color
-$kendo-grid-sticky-alt-bg: if($kendo-new-colors, k-color( base-subtle ), k-try-shade( $kendo-grid-bg, .5 )) !default;
+$kendo-grid-sticky-alt-bg: if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-grid-bg, .5 )) !default;
 
 $kendo-grid-sticky-header-bg: $kendo-grid-header-bg !default;
 $kendo-grid-sticky-header-text: $kendo-grid-header-text !default;
@@ -252,12 +252,12 @@ $kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
 $kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
 $kendo-grid-sticky-footer-hover-bg: $kendo-grid-sticky-footer-bg !default;
 
-$kendo-grid-sticky-selected-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .25 ), k-color-mix( $kendo-selected-bg, $kendo-grid-bg, 25% )) !default;
-$kendo-grid-sticky-selected-alt-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .24 ), k-color-shade( $kendo-grid-sticky-selected-bg, .4 )) !default;
+$kendo-grid-sticky-selected-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), k-color-mix( $kendo-selected-bg, $kendo-grid-bg, 25% )) !default;
+$kendo-grid-sticky-selected-alt-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .24 ), k-color-shade( $kendo-grid-sticky-selected-bg, .4 )) !default;
 
 // Must be a solid color
-$kendo-grid-sticky-hover-bg: if($kendo-new-colors, k-color( base-subtle-hover ), k-try-shade( $kendo-grid-bg )) !default;
-$kendo-grid-sticky-selected-hover-bg: if($kendo-new-colors, rgba( k-color( primary, true ), .24 ), k-color-shade( $kendo-grid-sticky-selected-bg, .7 )) !default;
+$kendo-grid-sticky-hover-bg: if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-shade( $kendo-grid-bg )) !default;
+$kendo-grid-sticky-selected-hover-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .24 ), k-color-shade( $kendo-grid-sticky-selected-bg, .7 )) !default;
 
 $kendo-grid-column-menu-width: 250px !default;
 $kendo-grid-column-menu-max-width: 320px !default;
@@ -308,7 +308,7 @@ $kendo-grid-group-footer-second-cell-border: 1px !default;
 
 /// Background color of the grid row resize indicator
 /// @group grid
-$kendo-grid-row-resizer-hover-bg: if($kendo-new-colors, rgba( k-color( on-base, true ), .2 ), rgba( k-contrast-color( $kendo-grid-bg ), .12 )) !default;
+$kendo-grid-row-resizer-hover-bg: if($kendo-enable-color-system, rgba( k-color( on-base, true ), .2 ), rgba( k-contrast-color( $kendo-grid-bg ), .12 )) !default;
 /// Active background color of the grid row resize indicator
 /// @group grid
 $kendo-grid-row-resizer-active-bg: $kendo-color-primary !default;

@@ -1,4 +1,4 @@
-$kendo-new-colors: true;
+$kendo-enable-color-system: true;
 @import "./index.scss";
 
 @if not $kendo-auto-bootstrap {

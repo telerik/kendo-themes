@@ -47,9 +47,9 @@ $kendo-notification-icon-spacing: $kendo-icon-spacing !default;
 
     @each $name, $color in $colors {
         $_theme: k-map-merge(( $name: (
-            color: if($kendo-new-colors, k-color( #{$name}-on-subtle ), k-color-shade( $color, 6 )),
-            background-color: if($kendo-new-colors, k-color( #{$name}-subtle ), k-color-tint( $color, 9 )),
-            border: if($kendo-new-colors, k-color( #{$name}-emphasis ), k-color-tint( $color, 10 )),
+            color: if($kendo-enable-color-system, k-color( #{$name}-on-subtle ), k-color-shade( $color, 6 )),
+            background-color: if($kendo-enable-color-system, k-color( #{$name}-subtle ), k-color-tint( $color, 9 )),
+            border: if($kendo-enable-color-system, k-color( #{$name}-emphasis ), k-color-tint( $color, 10 )),
         )), $_theme );
     }
 
