@@ -34,7 +34,7 @@ jobs:
       - name: Install
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: |
-          npm ci --no-optional --no-audit --no-fund
+          npm ci --no-audit --no-fund
 
       - name: Lint scripts
         run: |

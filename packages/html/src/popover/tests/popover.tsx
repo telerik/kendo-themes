@@ -57,8 +57,7 @@ export default () =>(
             </section>
 
             <section>
-                <PopoverNormal callout="left" title="Title" style={{ height: "150px" }}>
-                </PopoverNormal>
+                <PopoverNormal callout="left" title="Title" style={{ height: "150px" }}></PopoverNormal>
             </section>
         </div>
     </>
