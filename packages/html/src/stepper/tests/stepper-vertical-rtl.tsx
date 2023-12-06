@@ -32,7 +32,7 @@ export default () =>(
                         <li className="k-step k-step-first k-step-done" style={{ maxHeight: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
-                                    <Icon className="k-step-indicator-icon" icon="check"></Icon>
+                                    <Icon className="k-step-indicator-icon" icon="check-circle"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -64,7 +64,7 @@ export default () =>(
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info with too long text</span>
-                                    <Icon icon="check"></Icon>
+                                    <Icon icon="check-circle"></Icon>
                                 </span>
                             </a>
                         </li>
@@ -75,7 +75,7 @@ export default () =>(
                                 </span>
                                 <span className="k-step-label">
                                     <span className="k-step-text">Personal Info</span>
-                                    <Icon className="k-validation-icon" icon="exclamation-circle"></Icon>
+                                    <Icon className="k-validation-icon" icon="warning-circle"></Icon>
                                 </span>
                             </a>
                         </li>
