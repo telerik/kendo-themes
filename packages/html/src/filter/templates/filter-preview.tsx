@@ -1,4 +1,4 @@
-import { Filter, FilterToolbar, FilterLines, FilterItem } from "../../filter";
+import { Filter, FilterToolbar, FilterLines, FilterPreview, FilterItem } from "..";
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { DatePicker } from '../../datepicker';
@@ -7,8 +7,9 @@ import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Toolbar, ToolbarItem } from '../../toolbar';
 
-export const FilterNormal = (props) => (
+export const FilterWithPreview = (props) => (
     <Filter
+        showApplyButton={true}
         children={[
             <FilterToolbar>
                 <Toolbar>
@@ -70,7 +71,24 @@ export const FilterNormal = (props) => (
                         </Toolbar>
                     </FilterToolbar>
                 </FilterItem>
-            </FilterLines>
+            </FilterLines>,
+            <FilterPreview
+                fields={[
+                    { name: "bracket", value: "(" },
+                    { name: "field", value: "Price" },
+                    { name: "criteria", value: "Is greater than" },
+                    { name: "value", value: "'100,00'" },
+                    { name: "operator", value: "AND" },
+                    { name: "bracket", value: "(" },
+                    { name: "bracket", value: "(" },
+                    { name: "field", value: "FirstOrdered" },
+                    { name: "criteria", value: "Is before" },
+                    { name: "value", value: "'Thursday Jan 21 2021'" },
+                    { name: "bracket", value: ")" },
+                    { name: "bracket", value: ")" },
+                    { name: "bracket", value: ")" },
+                ]}>
+            </FilterPreview>
         ]}
         {...props}
     >

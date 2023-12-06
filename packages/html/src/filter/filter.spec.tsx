@@ -10,6 +10,7 @@ const options = {};
 
 export type KendoFilterProps = {
     children?: JSX.Element | JSX.Element[];
+    showApplyButton?: boolean;
 }
 
 const defaultProps = {};
@@ -18,7 +19,10 @@ export const Filter = (
     props: KendoFilterProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
-    const { children } = props;
+    const {
+        children,
+        showApplyButton
+    } = props;
 
     const filterChildren: JSX.Element | JSX.Element[] = [];
 
@@ -44,7 +48,7 @@ export const Filter = (
                 </li>
             </ul>
             {expressionPreview}
-            <Button className="k-filter-apply">Apply</Button>
+            {showApplyButton && <Button className="k-filter-apply">Apply</Button>}
         </div>
     );
 };
