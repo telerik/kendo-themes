@@ -134,7 +134,7 @@ export default () =>(
                                 <div className="k-spreadsheet-haxis" style={{ top: "395px", width: "1199px" }}></div>
                                 <div className="k-spreadsheet-haxis" style={{ top: "426px", width: "1199px" }}></div>
                                 <div className="k-spreadsheet-disabled-mask" style={{ top: "1px", width: "878px", left: "1px", height: "69px" }}></div>
-                                <div className="k-spreadsheet-cell k-spreadsheet-merged-cell" style={{ left: "1px", top: "1px", width: "878px", height: "69px", background: "rgb(96, 181, 255)", outline: "rgb(86, 163, 230) solid 1px", color: "white", fontFamily: "Arial", textAlign: "center", fontSize: "30px", whiteSpace: "pre", overflowWrap: "normal" }}>
+                                <div className="k-spreadsheet-cell k-spreadsheet-merged-cell" style={{ left: "1px", top: "1px", width: "878px", height: "69px", background: "rgb(96, 181, 255)", outline: "rgb(86, 163, 230) solid 1px", color: "rgb(0, 62, 117)", fontFamily: "Arial", textAlign: "center", fontSize: "30px", whiteSpace: "pre", overflowWrap: "normal" }}>
                                     <div className="k-vertical-align-center">Invoice #52 - 06/23/2015</div>
                                 </div>
                                 <div style={{ background: "rgb(167, 214, 255)", outline: "rgb(150, 193, 230) solid 1px" , color: "rgb(0, 62, 117)", fontFamily: "Arial", textAlign: "center", fontSize: "14px", whiteSpace: "pre", overflowWrap: "normal", left: "1px", top: "71px", width: "99px", height: "24px" }} className="k-spreadsheet-cell">
