@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Card, CardHeader, CardBody, CardImage } from '../../card';
+import { CardHeader, CardBody, CardMedia, CardNormal } from '../../card';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 
 
 const styles = `
-    .k-card-image {
+    .k-card-media {
         height: 100px;
         background: #cccccc;
     }
@@ -16,52 +16,43 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
-            <Card orientation="vertical">
-                <CardHeader>Card Header</CardHeader>
-                <CardBody>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </CardBody>
-                <ActionButtons className="k-card-actions">
-                    <Button fillMode="flat" themeColor="primary">Action 1</Button>
-                    <Button fillMode="flat" themeColor="primary">Action 2</Button>
-                </ActionButtons>
-            </Card>
+            <CardNormal />
 
-            <Card>
+            <CardNormal>
                 <CardBody title="Card Title">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" orientation="vertical">
+                <ActionButtons orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-            </Card>
+            </CardNormal>
 
-            <Card>
+            <CardNormal>
                 <CardBody title="Card Title" subtitle="Card Subtitle">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" alignment="stretched">
+                <ActionButtons alignment="stretched" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-            </Card>
+            </CardNormal>
 
-            <Card>
+            <CardNormal>
                 <CardBody title="Card Title" subtitle="Card Subtitle">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" alignment="stretched" orientation="vertical">
+                <ActionButtons alignment="stretched" orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-            </Card>
+            </CardNormal>
 
-            <Card orientation="vertical">
+            <CardNormal>
                 <CardHeader>
                     Card Header
                 </CardHeader>
-                <CardImage />
+                <CardMedia />
                 <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
@@ -69,43 +60,43 @@ export default () =>(
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-            </Card>
+            </CardNormal>
 
-            <Card orientation="vertical">
-                <CardImage />
+            <CardNormal>
+                <CardMedia />
                 <CardHeader title="Card Title" subtitle="Card Subtitle"></CardHeader>
                 <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" orientation="vertical">
+                <ActionButtons orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-            </Card>
+            </CardNormal>
 
-            <Card orientation="vertical">
+            <CardNormal>
                 <CardHeader title="Card Title" subtitle="Card Subtitle"></CardHeader>
                 <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <CardImage />
-                <ActionButtons className="k-card-actions" alignment="stretched">
+                <CardMedia />
+                <ActionButtons alignment="stretched" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-            </Card>
+            </CardNormal>
 
-            <Card orientation="vertical">
+            <CardNormal>
                 <CardHeader title="Card Title" subtitle="Card Subtitle"></CardHeader>
                 <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
-                <ActionButtons className="k-card-actions" alignment="stretched" orientation="vertical">
+                <ActionButtons alignment="stretched" orientation="vertical" className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
-                <CardImage />
-            </Card>
+                <CardMedia />
+            </CardNormal>
 
         </div>
     </>

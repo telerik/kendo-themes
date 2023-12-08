@@ -1,13 +1,13 @@
 import { classNames } from '../misc';
 
-export const CARDIMAGE_CLASSNAME = `k-card-image`;
+export const CARDMEDIA_CLASSNAME = `k-card-media`;
 
-export type KendoCardImageProps = {
+export type KendoCardMediaProps = {
     src?: string;
 };
 
-export const CardImage = (
-    props: KendoCardImageProps &
+export const CardMedia = (
+    props: KendoCardMediaProps &
         React.HTMLAttributes<HTMLDivElement>
 ) => {
     const {
@@ -23,7 +23,7 @@ export const CardImage = (
                         {...other}
                         className={classNames(
                             props.className,
-                            CARDIMAGE_CLASSNAME,
+                            CARDMEDIA_CLASSNAME,
                         )}
                         src={src}
                     />
@@ -31,7 +31,7 @@ export const CardImage = (
                         {...other}
                         className={classNames(
                             props.className,
-                            CARDIMAGE_CLASSNAME,
+                            CARDMEDIA_CLASSNAME,
                         )}
                     ><>{props.children}</></span>
             }

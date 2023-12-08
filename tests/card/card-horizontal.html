@@ -8,12 +8,38 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        .k-card {
+            height: 300px;
+        }
+        .k-card-media {
+            display: block;
+            width: 100px;
+            background: #cccccc;
+        }
+
+    </style>
     <div id="test-area" class="k-d-grid k-grid-cols-4">
         <div class="k-card k-card-horizontal">
             <div class="k-card-body">
-                <div class="k-card-title">Horizontal Card</div>
-                <div class="k-card-subtitle">Actions Start</div>
+                <div class="k-card-title">Card Title</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="k-actions k-actions-start k-actions-vertical k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
+            </div>
+        </div>
+        <div class="k-card k-card-horizontal">
+            <div>
+                <div class="k-card-header">Card Header</div>
+                <div class="k-card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
             </div>
             <span class="k-separator k-separator-vertical"></span>
             <div class="k-actions k-actions-start k-actions-vertical k-card-actions">
@@ -27,12 +53,11 @@
         </div>
         <div class="k-card k-card-horizontal">
             <div class="k-card-body">
-                <div class="k-card-title">Horizontal Card</div>
-                <div class="k-card-subtitle">Actions Center</div>
+                <div class="k-card-title">Card Title</div>
+                <div class="k-card-subtitle">Card Subtitle</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <span class="k-separator k-separator-vertical"></span>
-            <div class="k-actions k-actions-center k-actions-vertical k-card-actions">
+            <div class="k-actions k-actions-stretched k-actions-vertical k-card-actions">
                 <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
                     <span class="k-button-text">Action 1</span>
                 </button>
@@ -42,20 +67,45 @@
             </div>
         </div>
         <div class="k-card k-card-horizontal">
-            <div class="k-card-body">
-                <div class="k-card-title">Horizontal Card</div>
-                <div class="k-card-subtitle">Actions End</div>
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <span class="k-card-media"></span>
+            <div>
+                <div class="k-card-header">Card Header</div>
+                <div class="k-card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
             </div>
-            <span class="k-separator k-separator-vertical"></span>
-            <div class="k-actions k-actions-end k-actions-vertical k-card-actions">
-                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
-                    <span class="k-button-text">Action 1</span>
-                </button>
-                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
-                    <span class="k-button-text">Action 2</span>
-                </button>
+        </div>
+        <div class="k-card k-card-horizontal">
+            <span class="k-card-media"></span>
+            <div>
+                <div class="k-card-header">
+                    <div class="k-card-title">Card Title</div>
+                    <div class="k-card-subtitle">Card Subtitle</div>
+                </div>
+                <div class="k-card-body">
+                    <p>Card content.</p>
+                </div>
+                <div class="k-actions k-actions-start k-actions-vertical k-card-actions">
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-text">Action 1</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-text">Action 2</span>
+                    </button>
+                </div>
             </div>
+        </div>
+        <div class="k-card k-card-horizontal">
+            <div>
+                <div class="k-card-header">
+                    <div class="k-card-title">Card Title</div>
+                    <div class="k-card-subtitle">Card Subtitle</div>
+                </div>
+                <div class="k-card-body">
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <span class="k-card-media"></span>
         </div>
         <div class="k-card k-card-horizontal">
             <div>
