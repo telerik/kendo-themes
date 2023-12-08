@@ -5,7 +5,7 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Toolbar, ToolbarItem } from '../../toolbar';
-import { FilterNormal, FilterToolbar, FilterLines, FilterPreview, FilterItem } from '../../filter';
+import { FilterNormal, FilterToolbar, FilterLines, FilterItem } from '../../filter';
 
 
 export default () =>(
@@ -63,11 +63,8 @@ export default () =>(
                                 <ToolbarItem className="k-filter-field">
                                     <DropdownList value="Discontinued" />
                                 </ToolbarItem>
-                                <ToolbarItem className="k-filter-operator">
-                                    <DropdownList value="Is equal to" />
-                                </ToolbarItem>
                                 <ToolbarItem className="k-filter-value">
-                                    <DropdownList value="False"/>
+                                    <DropdownList value="Is false"/>
                                 </ToolbarItem>
                                 <Button fillMode="flat" icon="x"></Button>
                             </Toolbar>
@@ -131,27 +128,6 @@ export default () =>(
                         </FilterLines>
                     </FilterItem>
                 </FilterLines>
-                <FilterPreview
-                    fields={[
-                        { name: "bracket", value: "(" },
-                        { name: "field", value: "Discontinued" },
-                        { name: "criteria", value: "Is equal to" },
-                        { name: "value", value: "'False'" },
-                        { name: "operator", value: "AND" },
-                        { name: "field", value: "Price" },
-                        { name: "criteria", value: "Is greater than" },
-                        { name: "value", value: "'100,00'" },
-                        { name: "operator", value: "AND" },
-                        { name: "bracket", value: "(" },
-                        { name: "bracket", value: "(" },
-                        { name: "field", value: "FirstOrdered" },
-                        { name: "criteria", value: "Is before" },
-                        { name: "value", value: "'Thursday Jan 21 2021'" },
-                        { name: "bracket", value: ")" },
-                        { name: "bracket", value: ")" },
-                        { name: "bracket", value: ")" },
-                    ]}>
-                </FilterPreview>
             </FilterNormal>
         </div>
     </>

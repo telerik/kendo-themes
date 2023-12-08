@@ -1,5 +1,5 @@
 import { AnimationContainer } from '../../animation-container';
-
+import { TooltipNormal } from '../../tooltip';
 
 const style = `
     /* rest position and visibility */
@@ -15,6 +15,10 @@ const style = `
         display: inline-flex;
         vertical-align: top;
     }
+
+    .k-callout-w {
+        top: 45px;
+    }
 `;
 
 export default () =>(
@@ -27,8 +31,9 @@ export default () =>(
 
             <section>
                 <AnimationContainer style={{ width: "220px" }} >
-                    <div className="k-widget k-tooltip k-scheduler-tooltip" style={{ width: "220px" }} >
-                        <div className="k-tooltip-content">
+                    <TooltipNormal className="k-scheduler-tooltip" style={{ width: "220px" }}
+                        callout="left"
+                        content={<>
                             <div className="k-tooltip-title k-text-center">
                                 <div className="k-month">Jan</div>
                                 <div className="k-link k-day !k-text-primary">02</div>
@@ -52,27 +57,25 @@ export default () =>(
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="k-callout k-callout-w" style={{ top: "45px" }} ></div>
-                    </div>
+                        </>}>
+                    </TooltipNormal>
                 </AnimationContainer>
             </section>
 
             <section>
                 <AnimationContainer style={{ width: "220px" }} >
-                    <div className="k-widget k-tooltip k-scheduler-tooltip" style={{ width: "220px" }} >
-                        <div className="k-tooltip-content">
+                    <TooltipNormal className="k-scheduler-tooltip" style={{ width: "220px" }}
+                        callout="left"
+                        content={<>
                             <div className="k-tooltip-title k-text-center">
                                 <div className="k-month">Jan</div>
                                 <div className="k-link k-day !k-text-primary">29</div>
                             </div>
                             <div className="k-no-data k-text-center">No events on this date.</div>
-                        </div>
-                        <div className="k-callout k-callout-w" style={{ top: "45px" }} ></div>
-                    </div>
+                        </>}>
+                    </TooltipNormal>
                 </AnimationContainer>
             </section>
-
         </div>
     </>
 );

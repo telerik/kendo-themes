@@ -1,7 +1,7 @@
 import Popover from "../popover.spec";
 
-export const PopoverNormal = ({ children, ...other }) => (
-    <Popover {...other}>
-        {children}
+export const PopoverNormal = (props) => (
+    <Popover {...props}>
+        {props.children}
     </Popover>
 );

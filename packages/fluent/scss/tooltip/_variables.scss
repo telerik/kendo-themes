@@ -1,71 +1,68 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// The radius of the border around the tooltip
+/// The border radius of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border-radius: $kendo-border-radius !default;
-/// The horizontal padding of the tooltip
+/// The horizontal padding of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-padding-x: map.get( $kendo-spacing, 2 ) !default;
-/// The vertical padding of the tooltip
+/// The vertical padding of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-padding-y: map.get( $kendo-spacing, 2 ) !default;
-/// The width of the border around the tooltip
+/// The width of the border around the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border-width: 0px !default;
-/// The font family of the tooltip
+/// The font family of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-font-family: var( --kendo-font-family, inherit ) !default;
-/// The font size of the tooltip
+/// The font size of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-font-size: var( --kendo-font-size-sm, inherit ) !default;
-/// The line height of the tooltip
+/// The line height of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-line-height: var( --kendo-line-height, normal ) !default;
 
-/// The font size of the tooltip title
+/// The font size of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-font-size: calc( #{$kendo-tooltip-font-size} * 1.25 ) !default;
-/// The line height of the tooltip title
+/// The line height of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-line-height: var( --kendo-line-heigh-xs, normal ) !default;
-/// The margin of the tooltip title
+/// The margin of the Tooltip title.
 /// @group tooltip
 $kendo-tooltip-title-margin: map.get( $kendo-spacing, 1 ) !default;
 
-/// The size of the tooltip callout
+/// The size of the Tooltip callout.
 /// @group tooltip
 $kendo-tooltip-callout-size: map.get( $kendo-spacing, 2 ) !default;
 
-/// The background of the tooltip
+/// The default background of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-bg: $kendo-color-white !default;
-/// The text color of the tooltip
+/// The default text color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-text: var( --kendo-component-text, initial ) !default;
-/// The border color of the tooltip
+/// The default border color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border: transparent !default;
-/// The box-shadow of the tooltip
+/// The box-shadow of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 
-/// The text color of the tooltip button
+/// The text color of the Tooltip button.
 /// @group tooltip
 $kendo-tooltip-button-text: k-get-theme-color-var( neutral-130, initial ) !default;
 
-/// The primary background color of the tooltip
-/// @group tooltip
-$kendo-tooltip-primary-bg: k-get-theme-color-var( primary-100 ) !default;
-/// The primary text color of the tooltip
-/// @group tooltip
-$kendo-tooltip-primary-text: $kendo-color-white !default;
-/// The primary border color of the tooltip
-/// @group tooltip
-$kendo-tooltip-primary-border: initial !default;
-
 /// Theme variations for the tooltip.
-$kendo-tooltip-brand-colors: (error, warning, success, info ) !default;
+$kendo-tooltip-brand-colors: (
+    secondary: neutral,
+    tertiary: tertiary,
+    success: success,
+    warning: warning,
+    error: error,
+    info: info
+ ) !default;
 
 // Matrix with tooltip theme colors in the order: bg, color, border
 $_tc-tooltip-matrix: (
@@ -74,6 +71,14 @@ $_tc-tooltip-matrix: (
 
 $_tc-tooltip-primary-matrix: (
     (normal: (100, $kendo-color-white, 100)),
+) !default;
+
+$_tc-tooltip-dark-matrix: (
+    (normal: (160, $kendo-color-white, 160)),
+) !default;
+
+$_tc-tooltip-light-matrix: (
+    (normal: (50, 160, 50)),
 ) !default;
 
 /// Theme colors map for the tooltip variations.
@@ -87,10 +92,24 @@ $kendo-tooltip-theme-colors: () !default;
 }
 
 @each $ui-states in $_tc-tooltip-matrix {
-    @each $brand-color in $kendo-tooltip-brand-colors {
+    @each $brand-color, $palette in $kendo-tooltip-brand-colors {
         $kendo-tooltip-theme-colors: map.deep-merge(
             $kendo-tooltip-theme-colors,
-            k-generate-theme-variation( $brand-color, $brand-color, $ui-states )
+            k-generate-theme-variation( $brand-color, $palette, $ui-states )
         );
     };
+}
+
+@each $ui-states in $_tc-tooltip-dark-matrix {
+    $kendo-tooltip-theme-colors: map.deep-merge(
+        $kendo-tooltip-theme-colors,
+        k-generate-theme-variation( dark, neutral, $ui-states )
+    );
+}
+
+@each $ui-states in $_tc-tooltip-light-matrix {
+    $kendo-tooltip-theme-colors: map.deep-merge(
+        $kendo-tooltip-theme-colors,
+        k-generate-theme-variation( light, neutral, $ui-states )
+    );
 }

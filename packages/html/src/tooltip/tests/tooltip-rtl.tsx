@@ -1,110 +1,119 @@
-import { Icon } from '../../icon';
 import { AnimationContainer } from '../../animation-container';
-
+import { TooltipNormal, TooltipClosable } from '../../tooltip';
 
 const style = `
-        .k-animation-container {
-            display: inline-block;
-            position: relative;
-            overflow: visible;
-        }
+    #test-area {
+        grid-template-columns: 130px repeat(4, 1fr);
+    }
 
-        .k-tooltip {
-            position: relative;
-        }
+    .k-animation-container {
+        display: inline-block;
+        position: relative;
+        overflow: visible;
+    }
+
+    .k-tooltip {
+        position: relative;
+    }
 `;
 
 
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid">
 
-            <span className="col-4">RTL</span>
+            <span>Tooltip / Callout</span>
+            <span>Callout right</span>
+            <span>Callout right, Closable</span>
+            <span>Callout left</span>
+            <span>Callout left, Closable</span>
+
+            <span>Content</span>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip" dir="rtl">
-                        <div className="k-tooltip-content">tooltip content</div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipNormal callout="right" dir="rtl" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip k-tooltip-closable" dir="rtl">
-                        <div className="k-tooltip-content">tooltip content</div>
-                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipClosable callout="right" dir="rtl" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip" dir="rtl">
-                        <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipNormal callout="left" dir="rtl" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip k-tooltip-closable" dir="rtl">
-                        <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
-                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipClosable callout="left" dir="rtl" />
+                </AnimationContainer>
+            </section>
+
+            <span>Long content</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" callout="right" dir="rtl" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip" dir="rtl">
-                        <div className="k-tooltip-content">
-                            <div className="k-tooltip-title">Tooltip title</div>
-                            tooltip content
-                        </div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipClosable content="Long tooltip content. Enough so it goes on another line" callout="right" dir="rtl" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip k-tooltip-closable" dir="rtl">
-                        <div className="k-tooltip-content">
-                            <div className="k-tooltip-title">Tooltip title</div>
-                            tooltip content
-                        </div>
-                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" callout="left" dir="rtl" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip" dir="rtl">
-                        <div className="k-tooltip-content">
-                            <div className="k-tooltip-title">
-                                g y p q
-                                f t d l
-                            </div>
-                            long tooltip content. Enough so it goes on another line
-                        </div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipClosable content="Long tooltip content. Enough so it goes on another line" callout="left" dir="rtl" />
+                </AnimationContainer>
+            </section>
+
+            <span>Content & Title</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal title="Tooltip title" callout="right" dir="rtl" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip k-tooltip-closable" dir="rtl">
-                        <div className="k-tooltip-content">
-                            <div className="k-tooltip-title">
-                                g y p q
-                                f t d l
-                            </div>
-                            long tooltip content. Enough so it goes on another line
-                        </div>
-                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipClosable title="Tooltip title" callout="right" dir="rtl" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal title="Tooltip title" callout="left" dir="rtl" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipClosable title="Tooltip title" callout="left" dir="rtl" />
+                </AnimationContainer>
+            </section>
+
+            <span>Long content & Title (with glyphs)</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="right" dir="rtl" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipClosable content="Long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="right" dir="rtl" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="left" dir="rtl" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipClosable content="Long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="left" />
                 </AnimationContainer>
             </section>
         </div>

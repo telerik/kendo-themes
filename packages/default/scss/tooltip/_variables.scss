@@ -1,37 +1,70 @@
 // Tooltip
+
+/// The vertical padding of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-padding-y: $kendo-padding-md-y !default;
+/// The horizontal padding of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-padding-x: $kendo-padding-md-x !default;
-$kendo-tooltip-max-width: null !default;
+/// The width of the border around the Tooltip.
+/// @group tooltip
 $kendo-tooltip-border-width: 0px !default;
+/// The border radius of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-border-radius: $kendo-border-radius-md !default;
 
+/// The font family of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-font-family: $kendo-font-family !default;
+/// The font size of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-font-size: $kendo-font-size-md !default;
+/// The line height of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-line-height: 1.25 !default;
 
+/// The font size of the Tooltip title.
+/// @group tooltip
 $kendo-tooltip-title-font-size: ($kendo-tooltip-font-size * 1.25) !default;
+/// The line height of the Tooltip title.
+/// @group tooltip
 $kendo-tooltip-title-line-height: 1 !default;
 
+/// The size of the Tooltip callout.
+/// @group tooltip
 $kendo-tooltip-callout-size: 6px !default;
 
+/// The default background of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-bg: rgba( k-contrast-legacy( $kendo-body-bg ), .75 ) !default;
+/// The default text color of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-text: k-contrast-legacy( $kendo-tooltip-bg ) !default;
+/// The default border color of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-border: $kendo-tooltip-bg !default;
 
+/// The box-shadow of the Tooltip.
+/// @group tooltip
 $kendo-tooltip-shadow: k-elevation(2) !default;
 
-$kendo-tooltip-primary-bg: $kendo-color-primary !default;
-$kendo-tooltip-primary-text: k-contrast-legacy( $kendo-tooltip-primary-bg ) !default;
-$kendo-tooltip-primary-border: $kendo-tooltip-primary-bg !default;
-$kendo-tooltip-info-bg: $kendo-color-info !default;
-$kendo-tooltip-info-text: k-contrast-legacy( $kendo-tooltip-info-bg ) !default;
-$kendo-tooltip-info-border: $kendo-tooltip-info-bg !default;
-$kendo-tooltip-success-bg: $kendo-color-success !default;
-$kendo-tooltip-success-text: k-contrast-legacy( $kendo-tooltip-success-bg ) !default;
-$kendo-tooltip-success-border: $kendo-tooltip-success-bg !default;
-$kendo-tooltip-warning-bg: $kendo-color-warning !default;
-$kendo-tooltip-warning-text: k-contrast-legacy( $kendo-tooltip-warning-bg ) !default;
-$kendo-tooltip-warning-border: $kendo-tooltip-warning-bg !default;
-$kendo-tooltip-error-bg: $kendo-color-error !default;
-$kendo-tooltip-error-text: k-contrast-legacy( $kendo-tooltip-error-bg ) !default;
-$kendo-tooltip-error-border: $kendo-tooltip-error-bg !default;
+@function tooltip-theme( $colors ) {
+    $_theme: ();
+
+    @each $name, $color in $colors {
+        $_theme: k-map-merge(( $name: (
+            color: k-contrast-legacy( $color ),
+            background-color: $color,
+            border: $color,
+        )), $_theme );
+    }
+
+    @return $_theme;
+}
+
+/// The theme colors map for the Tooltip.
+/// @group tooltip
+$kendo-tooltip-theme-colors: $kendo-theme-colors !default;
+/// The generated theme colors map for the Tooltip.
+/// @group tooltip
+$kendo-tooltip-theme: tooltip-theme( $kendo-tooltip-theme-colors ) !default;
