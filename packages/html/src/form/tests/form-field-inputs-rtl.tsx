@@ -8,7 +8,7 @@ import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
 import { UploadChunk, UploadFile } from '../../upload';
 import { FormField, FormHorizontal, FormNormal } from '../../form';
-import { Slider, SliderTick } from '../../slider';
+import { SliderNormal } from '../../slider';
 
 
 const styles = `
@@ -124,19 +124,7 @@ export default () =>(
                         dir="rtl"
                         label="Slider:"
                         editor={
-                            <Slider dir="rtl">
-                                <SliderTick label large text="0"/>
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick label large text="5"/>
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick label large text="10"/>
-                            </Slider>
+                            <SliderNormal dir="rtl" />
                         }
                     >
                     </FormField>
@@ -268,19 +256,7 @@ export default () =>(
                         dir="rtl"
                         label="Slider:"
                         editor={
-                            <Slider dir="rtl">
-                                <SliderTick label large text="0"/>
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick label large text="5"/>
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick />
-                                <SliderTick label large text="10"/>
-                            </Slider>
+                            <SliderNormal dir="rtl" />
                         }
                     >
                     </FormField>

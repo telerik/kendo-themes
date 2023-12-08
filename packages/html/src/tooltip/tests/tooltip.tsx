@@ -1,230 +1,137 @@
-import { Icon } from '../../icon';
 import { AnimationContainer } from '../../animation-container';
-
+import { TooltipNormal, TooltipClosable } from '../../tooltip';
 
 const style = `
-    .k-animation-container {
-        display: inline-block;
-        position: relative;
-        overflow: visible;
-    }
+        #test-area {
+            grid-template-columns: 100px repeat(3, 1fr);
+        }
 
-    .k-tooltip {
-        position: relative;
-    }
+        .k-animation-container {
+            display: inline-block;
+            position: relative;
+            overflow: visible;
+        }
+
+        .k-tooltip {
+            position: relative;
+        }
 `;
 
 
 export default () =>(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
-
-            <span>Callout top</span>
-            <span>Callout right</span>
-            <span>Callout bottom</span>
-            <span>Callout left</span>
-
-            <section>
-                <AnimationContainer>
-                    <div className="k-popup k-popup-transparent">
-                        <div className="k-tooltip">
-                            <div className="k-tooltip-content">angular tooltip</div>
-                            <div className="k-callout k-callout-n"></div>
-                        </div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-popup k-popup-transparent">
-                        <div className="k-tooltip">
-                            <div className="k-tooltip-content">angular tooltip</div>
-                            <div className="k-callout k-callout-e"></div>
-                        </div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-popup k-popup-transparent">
-                        <div className="k-tooltip">
-                            <div className="k-tooltip-content">angular tooltip</div>
-                            <div className="k-callout k-callout-s"></div>
-                        </div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-popup k-popup-transparent">
-                        <div className="k-tooltip">
-                            <div className="k-tooltip-content">angular tooltip</div>
-                            <div className="k-callout k-callout-w"></div>
-                        </div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-widget k-popup k-tooltip">
-                        <div className="k-tooltip-content">jquery tooltip</div>
-                        <div className="k-callout k-callout-n"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-widget k-popup k-tooltip">
-                        <div className="k-tooltip-content">jquery tooltip</div>
-                        <div className="k-callout k-callout-e"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-widget k-popup k-tooltip">
-                        <div className="k-tooltip-content">jquery tooltip</div>
-                        <div className="k-callout k-callout-s"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-widget k-popup k-tooltip">
-                        <div className="k-tooltip-content">jquery tooltip</div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-tooltip">
-                        <div className="k-tooltip-content">react tooltip</div>
-                        <div className="k-callout k-callout-n"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-tooltip">
-                        <div className="k-tooltip-content">react tooltip</div>
-                        <div className="k-callout k-callout-e"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-tooltip">
-                        <div className="k-tooltip-content">react tooltip</div>
-                        <div className="k-callout k-callout-s"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-tooltip">
-                        <div className="k-tooltip-content">react tooltip</div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
+        <div id="test-area" className="k-d-grid">
+            <span></span>
+            <span>Default Tooltip</span>
+            <span>Closeable Tooltip</span>
+            <span>Tooltip with callout</span>
 
             <span>Content</span>
-            <span>Closable</span>
-            <span>Long content</span>
-            <span>Long content closable</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipClosable />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal callout="bottom"/>
+                </AnimationContainer>
+            </section>
 
+            <span>Long content</span>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip">
-                        <div className="k-tooltip-content">tooltip content</div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip k-tooltip-closable">
-                        <div className="k-tooltip-content">tooltip content</div>
-                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipClosable content="Long tooltip content. Enough so it goes on another line" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip">
-                        <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
-                </AnimationContainer>
-            </section>
-            <section>
-                <AnimationContainer>
-                    <div className="k-tooltip k-tooltip-closable">
-                        <div className="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
-                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" callout="bottom" />
                 </AnimationContainer>
             </section>
 
             <span>Title</span>
-            <span>Title closable</span>
-            <span>Title with glyphs</span>
-            <span>Title with glyphs closable</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal title="Tooltip title" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipClosable title="Tooltip title" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal title="Tooltip title" callout="bottom" />
+                </AnimationContainer>
+            </section>
 
+            <span>Title with glyphs</span>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip">
-                        <div className="k-tooltip-content">
-                            <div className="k-tooltip-title">Tooltip title</div>
-                            tooltip content
-                        </div>
-                        <div className="k-callout k-callout-w"></div>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" title="g y p q f t d l" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipClosable content="Long tooltip content. Enough so it goes on another line" title="g y p q f t d l" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal content="Long tooltip content. Enough so it goes on another line" title="g y p q f t d l" callout="bottom" />
+                </AnimationContainer>
+            </section>
+
+            <span>Angular</span>
+            <section>
+                <AnimationContainer>
+                    <div className="k-popup k-popup-transparent">
+                        <TooltipNormal content="Angular tooltip" />
                     </div>
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip k-tooltip-closable">
-                        <div className="k-tooltip-content">
-                            <div className="k-tooltip-title">Tooltip title</div>
-                            tooltip content
-                        </div>
-                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
-                        <div className="k-callout k-callout-w"></div>
+                    <div className="k-popup k-popup-transparent">
+                        <TooltipClosable content="Angular tooltip" />
                     </div>
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip">
-                        <div className="k-tooltip-content">
-                            <div className="k-tooltip-title">
-                                g y p q
-                                f t d l
-                            </div>
-                            long tooltip content. Enough so it goes on another line
-                        </div>
-                        <div className="k-callout k-callout-w"></div>
+                    <div className="k-popup k-popup-transparent">
+                        <TooltipNormal content="Angular tooltip" callout="bottom"/>
                     </div>
+                </AnimationContainer>
+            </section>
+
+            <span>jQuery and Blazor</span>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal content="jQuery and Blazor" className="k-popup" />
                 </AnimationContainer>
             </section>
             <section>
                 <AnimationContainer>
-                    <div className="k-tooltip k-tooltip-closable">
-                        <div className="k-tooltip-content">
-                            <div className="k-tooltip-title">
-                                g y p q
-                                f t d l
-                            </div>
-                            long tooltip content. Enough so it goes on another line
-                        </div>
-                        <div className="k-tooltip-button"><Icon icon="x"></Icon></div>
-                        <div className="k-callout k-callout-w"></div>
-                    </div>
+                    <TooltipClosable content="jQuery and Blazor" className="k-popup" />
+                </AnimationContainer>
+            </section>
+            <section>
+                <AnimationContainer>
+                    <TooltipNormal content="jQuery and Blazor" callout="bottom" className="k-popup" />
                 </AnimationContainer>
             </section>
         </div>

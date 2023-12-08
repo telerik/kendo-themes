@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Card, CardBody, CardDeck } from '../../card';
+import { CardBody, CardDeck, CardHorizontal } from '../../card';
 
 
 const styles = `
@@ -18,26 +18,26 @@ export default () =>(
                 <div className="k-message-list k-avatars">
                     <div className="k-message-list-content">
                         <CardDeck>
-                            <Card orientation="horizontal">
+                            <CardHorizontal>
                                 <CardBody>
                                     Normal
                                 </CardBody>
-                            </Card>
-                            <Card orientation="horizontal" focus>
+                            </CardHorizontal>
+                            <CardHorizontal focus>
                                 <CardBody>
                                     Focused
                                 </CardBody>
-                            </Card>
-                            <Card orientation="horizontal" selected>
+                            </CardHorizontal>
+                            <CardHorizontal selected>
                                 <CardBody>
                                     Selected
                                 </CardBody>
-                            </Card>
-                            <Card orientation="horizontal" focus selected>
+                            </CardHorizontal>
+                            <CardHorizontal focus selected>
                                 <CardBody>
                                     Focused Selected
                                 </CardBody>
-                            </Card>
+                            </CardHorizontal>
                         </CardDeck>
                     </div>
                 </div>

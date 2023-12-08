@@ -1,9 +1,9 @@
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
-import { Card, CardBody, CardCallout, CardHeader, CardImage, CardSubtitle, CardTitle } from '../../card';
+import { Card, CardBody, CardCallout, CardHeader, CardMedia, CardSubtitle, CardTitle } from '../../card';
 
 const style = `
-    .k-card-image {
+    .k-card-media {
         display: block;
         height: 200px;
         width: 100%;
@@ -41,7 +41,7 @@ export default () =>(
                                     <CardBody>
                                         <div className="k-card-description">
                                             <p>Card Description here</p>
-                                            <CardImage />
+                                            <CardMedia />
                                         </div>
                                     </CardBody>
                                     <ActionButtons className="k-card-actions">
@@ -73,7 +73,7 @@ export default () =>(
                                     <CardBody>
                                         <div className="k-card-description">
                                             <p>Timeline Event Description</p>
-                                            <CardImage />
+                                            <CardMedia />
                                         </div>
                                     </CardBody>
                                     <ActionButtons className="k-card-actions">

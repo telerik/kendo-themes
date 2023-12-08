@@ -1,9 +1,9 @@
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
-import { Card, CardBody, CardCallout, CardHeader, CardImage } from '../../card';
+import { Card, CardBody, CardCallout, CardHeader, CardMedia } from '../../card';
 
 const style = `
-    .k-card-image {
+    .k-card-media {
         display: block;
         height: 200px;
         width: 200px;
@@ -60,7 +60,7 @@ export default () =>(
                                         <CardBody>
                                             <div className="k-card-description">
                                                 <p>Card Description Here</p>
-                                                <CardImage />
+                                                <CardMedia />
                                             </div>
                                         </CardBody>
                                         <ActionButtons alignment="start" className="k-card-actions">

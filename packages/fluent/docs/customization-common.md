@@ -222,7 +222,14 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-brand-colors</td>
     <td></td>
-    <td><code>(error, warning, success, info )</code></td>
+    <td><code>(
+    secondary: neutral,
+    tertiary: tertiary,
+    success: success,
+    warning: warning,
+    error: error,
+    info: info
+ )</code></td>
     <td></td>
 </tr>
 <tr>
