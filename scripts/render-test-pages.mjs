@@ -31,6 +31,17 @@ function arrayChunks( array, chunkCount ) {
 
 const chunks = arrayChunks(pages, 8);
 
+async function loadUrl(browser, url) {
+    await browser.wait(async() => {
+        try {
+            await browser.navigateTo(url);
+            return true;
+        } catch (error) {
+            return false;
+        }
+    }, 10000, `Failed to load ${url}`, 500);
+}
+
 Promise.all(chunks.map(async( chunk, index ) => {
     let port = PORT + index;
 
@@ -42,12 +53,10 @@ Promise.all(chunks.map(async( chunk, index ) => {
 
     server.listen(port, HOST, async() => {
 
-        await browser.sleep(1000);
-
         for (let i = 0; i < chunk.length; i++) {
             const [ filePath, url ] = chunk[i];
 
-            await browser.navigateTo(url);
+            await loadUrl(browser, url);
 
             const [ /** index.html */, folderName, /** /tests */, componentName ] = filePath.split('/').reverse();
             const outputPath = `${OUTPUT_PATH}/${componentName}/${folderName}.html`;
