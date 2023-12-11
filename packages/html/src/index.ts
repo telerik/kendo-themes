@@ -108,7 +108,7 @@ export * from './filter/index';
 // export * from './adaptive/index''
 // export * from './chat/index';
 // export * from './mediaplayer/index';
-// export * from './timeline/index';
+export * from './timeline/index';
 // export * from './pdf-viewer/index';
 // export * from './scroller/index';
 export * from './scrollview/index';
