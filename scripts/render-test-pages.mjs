@@ -42,6 +42,8 @@ Promise.all(chunks.map(async( chunk, index ) => {
 
     server.listen(port, HOST, async() => {
 
+        await browser.sleep(1000);
+
         for (let i = 0; i < chunk.length; i++) {
             const [ filePath, url ] = chunk[i];
 
