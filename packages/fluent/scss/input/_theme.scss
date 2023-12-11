@@ -73,6 +73,32 @@
                 }
             }
         }
+
+        // Valid
+        &.k-valid,
+        &.ng-valid.ng-touched,
+        &.ng-valid.ng-dirty {
+            --INTERNAL--kendo-input-border: var( --kendo-input-valid-border, #{$kendo-input-valid-border} );
+
+            &::after {
+                border-color: var( --kendo-input-valid-border, #{$kendo-input-valid-border} );
+            }
+
+            .k-input-validation-icon {
+                color: var( --kendo-input-valid-text, #{$kendo-input-valid-text} );
+            }
+
+            &:focus:hover,
+            &.k-focus:hover,
+            &:focus.k-hover,
+            &.k-focus.k-hover {
+                --INTERNAL--kendo-input-border: var( --kendo-input-valid-border, #{$kendo-input-valid-border} );
+
+                .k-input-validation-icon {
+                    color: var( --kendo-input-valid-text, #{$kendo-input-valid-text} );
+                }
+            }
+        }
     }
 
     .k-picker {
@@ -142,6 +168,32 @@
 
                 .k-input-validation-icon {
                     color: var( --kendo-input-invalid-text, #{$kendo-input-invalid-text} );
+                }
+            }
+        }
+
+        // Valid
+        &.k-valid,
+        &.ng-valid.ng-touched,
+        &.ng-valid.ng-dirty {
+            --INTERNAL--kendo-picker-border: var( --kendo-input-valid-border, #{$kendo-input-valid-border} );
+
+            &::after {
+                border-color: var( --kendo-input-valid-border, #{$kendo-input-valid-border} );
+            }
+
+            .k-input-validation-icon {
+                color: var( --kendo-input-valid-text, #{$kendo-input-valid-text} );
+            }
+
+            &:focus:hover,
+            &.k-focus:hover,
+            &:focus.k-hover,
+            &.k-focus.k-hover {
+                --INTERNAL--kendo-picker-border: var( --kendo-input-valid-border, #{$kendo-input-valid-border} );
+
+                .k-input-validation-icon {
+                    color: var( --kendo-input-valid-text, #{$kendo-input-valid-text} );
                 }
             }
         }
