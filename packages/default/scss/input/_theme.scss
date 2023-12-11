@@ -70,6 +70,24 @@
             }
         }
 
+        // Valid
+        &.k-valid,
+        &.ng-valid.ng-touched,
+        &.ng-valid.ng-dirty {
+            @include fill( $border: $kendo-input-valid-border );
+
+            .k-input-validation-icon {
+                color: $kendo-valid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+        }
     }
 
 
@@ -144,6 +162,25 @@
             }
             &:focus-within {
                 @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+
+        // Valid
+        &.k-valid,
+        &.ng-valid.ng-touched,
+        &.ng-valid.ng-dirty {
+            @include fill( $border: $kendo-input-valid-border );
+
+            .k-input-validation-icon {
+                color: $kendo-valid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-valid-shadow );
             }
         }
     }
@@ -231,6 +268,24 @@
             }
         }
 
+        // Valid
+        &.k-valid,
+        &.ng-valid.ng-touched,
+        &.ng-valid.ng-dirty {
+            @include fill( $border: $kendo-input-valid-border );
+
+            .k-input-validation-icon {
+                color: $kendo-valid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+        }
     }
 
 
@@ -313,6 +368,25 @@
                 @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
+
+        // Valid
+        &.k-valid,
+        &.ng-valid.ng-touched,
+        &.ng-valid.ng-dirty {
+            @include fill( $border: $kendo-input-valid-border );
+
+            .k-input-validation-icon {
+                color: $kendo-valid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+        }
     }
 
 
@@ -382,6 +456,25 @@
             }
             &:focus-within {
                 @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+
+        // Valid
+        &.k-valid,
+        &.ng-valid.ng-touched,
+        &.ng-valid.ng-dirty {
+            @include fill( $border: $kendo-input-valid-border );
+
+            .k-input-validation-icon {
+                color: $kendo-valid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-valid-shadow );
             }
         }
     }
@@ -464,6 +557,25 @@
             }
             &:focus-within {
                 @include focus-indicator( $kendo-input-invalid-shadow );
+            }
+        }
+
+        // Valid
+        &.k-valid,
+        &.ng-valid.ng-touched,
+        &.ng-valid.ng-dirty {
+            @include fill( $border: $kendo-input-valid-border );
+
+            .k-input-validation-icon {
+                color: $kendo-valid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include focus-indicator( $kendo-input-valid-shadow );
+            }
+            &:focus-within {
+                @include focus-indicator( $kendo-input-valid-shadow );
             }
         }
     }

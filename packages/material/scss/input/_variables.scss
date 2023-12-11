@@ -280,6 +280,13 @@ $kendo-input-invalid-border: $kendo-invalid-border !default;
 /// @group input
 $kendo-input-invalid-shadow: $kendo-invalid-shadow !default;
 
+/// The border color of the valid Input components.
+/// @group input
+$kendo-input-valid-border: $kendo-valid-border !default;
+/// The shadow of the valid Input components.
+/// @group input
+$kendo-input-valid-shadow: $kendo-valid-shadow !default;
+
 /// The background color of the Picker components.
 /// @group picker
 $kendo-picker-bg: $kendo-input-bg !default;
