@@ -2,14 +2,38 @@ import { classNames } from '../misc';
 
 const className = `k-input-prefix`;
 
-export const InputPrefix = (props: React.HTMLAttributes<HTMLSpanElement>) => {
+export type KendoInputPrefixProps = {
+    direction?: "horizontal" | "vertical";
+};
+
+const defaultProps = {
+    direction: "horizontal"
+};
+
+export const InputPrefix = (props:
+    KendoInputPrefixProps &
+    React.HTMLAttributes<HTMLSpanElement>
+) => {
+    const {
+        direction = defaultProps.direction,
+        ...other
+    } = props;
 
     if (!props.children) {
         return <></>;
     }
 
     return (
-        <span className={classNames(className, props.className)}>
+        <span
+            {...other}
+            className={
+                classNames(
+                    className,
+                    props.className,
+                    {
+                        [`k-input-prefix-${direction}`]: direction,
+                    }
+                )}>
             {props.children}
         </span>
     );

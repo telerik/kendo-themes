@@ -24,7 +24,7 @@ export const InputValidationIcon = (
         disabled,
         loading } = props;
 
-    const iconName = invalid ? 'exclamation-circle' : 'check';
+    const iconName = invalid ? 'warning-circle' : 'check-circle';
     const renderValidationIcon = Boolean( valid || invalid );
 
     if (disabled || loading || !renderValidationIcon) {
