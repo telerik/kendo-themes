@@ -39,6 +39,13 @@ export default () =>(
             <div dir="rtl">
                 <DateInputNormal showSpinButton={true} value="invalid focus" fillMode="flat" invalid focus />
             </div>
+
+            <div>
+                <DateInputNormal showSpinButton={true} value="valid focus" fillMode="flat" valid focus />
+            </div>
+            <div dir="rtl">
+                <DateInputNormal showSpinButton={true} value="valid focus" fillMode="flat" valid focus />
+            </div>
         </div>
     </>
 );

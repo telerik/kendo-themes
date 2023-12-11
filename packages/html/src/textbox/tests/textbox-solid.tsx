@@ -41,6 +41,13 @@ export default () =>(
             </div>
 
             <div>
+                <TextboxNormal value="valid focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <TextboxNormal value="valid focus" valid focus />
+            </div>
+
+            <div>
                 <TextboxPrefix></TextboxPrefix>
             </div>
             <div dir="rtl">

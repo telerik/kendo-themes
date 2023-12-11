@@ -53,6 +53,14 @@ export default () =>(
                 <MultiSelectValue invalid focus>invalid + focus</MultiSelectValue>
             </div>
 
+            <div>valid + focus</div>
+            <div>
+                <MultiSelectValue valid focus>valid + focus</MultiSelectValue>
+            </div>
+            <div dir="rtl">
+                <MultiSelectValue valid focus>valid + focus</MultiSelectValue>
+            </div>
+
             <div>multi line + overflow</div>
             <div>
                 <MultiSelectNormal

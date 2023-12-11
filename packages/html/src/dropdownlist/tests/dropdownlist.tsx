@@ -58,10 +58,24 @@ export default () =>(
             </div>
 
             <div>
+                <DropdownList value="Valid" valid />
+            </div>
+            <div dir="rtl">
+                <DropdownList value="Valid" valid />
+            </div>
+
+            <div>
                 <DropdownList value="Invalid Focus" invalid focus />
             </div>
             <div dir="rtl">
                 <DropdownList value="Invalid Focus" invalid focus />
+            </div>
+
+            <div>
+                <DropdownList value="Valid Focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <DropdownList value="Valid Focus" valid focus />
             </div>
 
             <div>

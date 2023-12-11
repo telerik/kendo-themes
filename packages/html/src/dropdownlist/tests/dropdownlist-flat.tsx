@@ -58,10 +58,24 @@ export default () =>(
             </div>
 
             <div>
+                <DropdownList fillMode="flat" value="Valid" valid />
+            </div>
+            <div dir="rtl">
+                <DropdownList fillMode="flat" value="Valid" valid />
+            </div>
+
+            <div>
                 <DropdownList fillMode="flat" value="Invalid Focus" invalid focus />
             </div>
             <div dir="rtl">
                 <DropdownList fillMode="flat" value="Invalid Focus" invalid focus />
+            </div>
+
+            <div>
+                <DropdownList fillMode="flat" value="Valid Focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <DropdownList fillMode="flat" value="Valid Focus" valid focus />
             </div>
 
             <div>

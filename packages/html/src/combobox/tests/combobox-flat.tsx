@@ -39,6 +39,13 @@ export default () =>(
             <div dir="rtl">
                 <ComboboxNormal value="invalid focus" fillMode="flat" invalid focus />
             </div>
+
+            <div>
+                <ComboboxNormal value="valid focus" fillMode="flat" valid focus />
+            </div>
+            <div dir="rtl">
+                <ComboboxNormal value="valid focus" fillMode="flat" valid focus />
+            </div>
         </div>
     </>
 );
