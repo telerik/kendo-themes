@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.3...v7.1.0-dev.0) (2023-12-11)
+
+
+### Bug Fixes
+
+* **grid:** sizing in grid hierarchy ([c71f610](https://github.com/telerik/kendo-themes/commit/c71f610d24d558c29431dd77db9d00d6fd5d57d6))
+
+
+### Features
+
+* **card:** unify rendering ([4923219](https://github.com/telerik/kendo-themes/commit/4923219759c2d69994720e12577c607dce4c4042))
+* **tooltip:** unify rendering ([512dd81](https://github.com/telerik/kendo-themes/commit/512dd81d15eb0cdcc910d9234c7d2e5fa4f397f0))
+
+
+
+
+
 ## [7.0.3-dev.3](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.2...v7.0.3-dev.3) (2023-12-04)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent

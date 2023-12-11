@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.3...v7.1.0-dev.0) (2023-12-11)
+
+
+### Features
+
+* **card:** unify rendering ([4923219](https://github.com/telerik/kendo-themes/commit/4923219759c2d69994720e12577c607dce4c4042))
+
+
+
+
+
 ## [7.0.3-dev.3](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.2...v7.0.3-dev.3) (2023-12-04)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle
