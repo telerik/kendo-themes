@@ -17,7 +17,7 @@ $kendo-orgchart-node-group-padding-y: $kendo-orgchart-spacer !default;
 $kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-y !default;
 $kendo-orgchart-node-group-border-width: 1px !default;
 $kendo-orgchart-node-group-border-radius: $kendo-border-radius-md !default;
-$kendo-orgchart-node-group-bg: if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light) !default;
+$kendo-orgchart-node-group-bg: if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light)) !default;
 $kendo-orgchart-node-group-text: $kendo-base-text !default;
 $kendo-orgchart-node-group-border: $kendo-base-border !default;
 

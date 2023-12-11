@@ -27,7 +27,7 @@ $kendo-taskboard-columns-container-gap: $kendo-taskboard-spacer !default;
 $kendo-taskboard-column-width: 320px !default;
 $kendo-taskboard-column-border-width: 1px !default;
 $kendo-taskboard-column-border-radius: $kendo-border-radius-md !default;
-$kendo-taskboard-column-bg: if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light) !default;
+$kendo-taskboard-column-bg: if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light)) !default;
 $kendo-taskboard-column-text: null !default;
 $kendo-taskboard-column-border: transparent !default;
 

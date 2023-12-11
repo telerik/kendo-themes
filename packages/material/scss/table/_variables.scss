@@ -78,7 +78,7 @@ $kendo-table-border: $kendo-component-border !default;
 $kendo-table-header-bg: $kendo-table-bg !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ) !default;
+$kendo-table-header-text: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text )) !default;
 /// Border color of table headers.
 /// @group table
 $kendo-table-header-border: $kendo-table-border !default;

@@ -85,7 +85,7 @@ $kendo-switch-off-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-thumb-bg: if($kendo-enable-color-system, k-color( app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )) !default;
+$kendo-switch-off-thumb-bg: if($kendo-enable-color-system, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )) !default;
 /// The text color of the thumb when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-thumb-text: null !default;
