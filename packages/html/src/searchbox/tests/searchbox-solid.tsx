@@ -38,6 +38,13 @@ export default () =>(
             <div dir="rtl">
                 <SearchboxNormal value="invalid focus" invalid focus />
             </div>
+
+            <div>
+                <SearchboxNormal value="valid focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <SearchboxNormal value="valid focus" valid focus />
+            </div>
         </div>
     </>
 );

@@ -53,6 +53,14 @@ export default () =>(
                 <MultiSelectTreeValue fillMode="outline" invalid focus>invalid + focus</MultiSelectTreeValue>
             </div>
 
+            <div>valid + focus</div>
+            <div>
+                <MultiSelectTreeValue fillMode="outline" valid focus>valid + focus</MultiSelectTreeValue>
+            </div>
+            <div dir="rtl">
+                <MultiSelectTreeValue fillMode="outline" valid focus>valid + focus</MultiSelectTreeValue>
+            </div>
+
             <div>multi line + overflow</div>
             <div>
                 <MultiSelectTreeNormal

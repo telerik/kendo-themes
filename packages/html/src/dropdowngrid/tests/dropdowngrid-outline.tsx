@@ -46,6 +46,13 @@ export default () =>(
             <div dir="rtl">
                 <DropdownGridNormal fillMode="outline" value="invalid focus" invalid focus />
             </div>
+
+            <div>
+                <DropdownGridNormal fillMode="outline" value="valid focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <DropdownGridNormal fillMode="outline" value="valid focus" valid focus />
+            </div>
         </div>
     </>
 );

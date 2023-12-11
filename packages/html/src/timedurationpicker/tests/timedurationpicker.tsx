@@ -58,10 +58,24 @@ export default () =>(
             </div>
 
             <div>
+                <TimeDurationPicker value="Valid" valid />
+            </div>
+            <div dir="rtl">
+                <TimeDurationPicker value="Valid" valid />
+            </div>
+
+            <div>
                 <TimeDurationPicker value="Invalid Focus" invalid focus />
             </div>
             <div dir="rtl">
                 <TimeDurationPicker value="Invalid Focus" invalid focus />
+            </div>
+
+            <div>
+                <TimeDurationPicker value="Valid Focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <TimeDurationPicker value="Valid Focus" valid focus />
             </div>
 
             <div>

@@ -41,6 +41,13 @@ export default () =>(
             </div>
 
             <div>
+                <TextboxNormal fillMode="outline" value="valid focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <TextboxNormal fillMode="outline" value="valid focus" valid focus />
+            </div>
+
+            <div>
                 <TextboxPrefix fillMode="outline"></TextboxPrefix>
             </div>
             <div dir="rtl">

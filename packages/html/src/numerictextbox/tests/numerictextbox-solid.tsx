@@ -39,6 +39,13 @@ export default () =>(
             <div dir="rtl">
                 <NumericTextboxNormal value="invalid focus" invalid focus />
             </div>
+
+            <div>
+                <NumericTextboxNormal value="valid focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <NumericTextboxNormal value="valid focus" valid focus />
+            </div>
         </div>
     </>
 );
