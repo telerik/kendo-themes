@@ -69,6 +69,7 @@ export const Captcha = (
             <div className="k-captcha-input k-vstack">
                 <Textbox
                     value={value}
+                    valid={valid}
                     invalid={invalid}
                     disabled={loading === true}
                 />
