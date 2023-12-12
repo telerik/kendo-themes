@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.0...v7.1.0-dev.1) (2023-12-12)
+
+
+### Features
+
+* **notification:** unify groups rendering ([5749af0](https://github.com/telerik/kendo-themes/commit/5749af00dde1ecedb43787a123e1e5112b6df644))
+
+
+
+
+
 # [7.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.3...v7.1.0-dev.0) (2023-12-11)
 
 

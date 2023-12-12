@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        .k-notification-group,
+        .k-animation-container {
+            position: static;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span class="k-col-span-1">LTR</span>
+        <span class="k-col-span-1">RTL</span>
+        <div class="k-notification-group">
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-notification k-notification-base">
+                        <div class="k-notification-content">Default notification</div>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-notification k-notification-base">
+                        <span class="k-notification-status k-icon k-svg-icon k-svg-i-exclamation-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M224 128h64v160h-64V128zm0 256h64v-64h-64v64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224zm-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"></path>
+                            </svg>
+                        </span>
+                        <div class="k-notification-content">Icon notification</div>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-notification k-notification-base k-notification-closable">
+                        <div class="k-notification-content">Closable notification</div>
+                        <span class="k-notification-actions">
+                            <span class="k-notification-action k-notification-close-action">
+                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96l45.3 45.3z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-notification k-notification-base k-notification-closable">
+                        <span class="k-notification-status k-icon k-svg-icon k-svg-i-exclamation-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M224 128h64v160h-64V128zm0 256h64v-64h-64v64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224zm-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"></path>
+                            </svg>
+                        </span>
+                        <div class="k-notification-content">Closable notification with icon</div>
+                        <span class="k-notification-actions">
+                            <span class="k-notification-action k-notification-close-action">
+                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96l45.3 45.3z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="k-notification-group k-rtl">
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-notification k-notification-base">
+                        <div class="k-notification-content">Default notification</div>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-notification k-notification-base">
+                        <span class="k-notification-status k-icon k-svg-icon k-svg-i-exclamation-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M224 128h64v160h-64V128zm0 256h64v-64h-64v64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224zm-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"></path>
+                            </svg>
+                        </span>
+                        <div class="k-notification-content">Icon notification</div>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-notification k-notification-base k-notification-closable">
+                        <div class="k-notification-content">Closable notification</div>
+                        <span class="k-notification-actions">
+                            <span class="k-notification-action k-notification-close-action">
+                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96l45.3 45.3z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-notification k-notification-base k-notification-closable">
+                        <span class="k-notification-status k-icon k-svg-icon k-svg-i-exclamation-circle">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M224 128h64v160h-64V128zm0 256h64v-64h-64v64zm256-128c0 123.7-100.3 224-224 224S32 379.7 32 256 132.3 32 256 32s224 100.3 224 224zm-32 0c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"></path>
+                            </svg>
+                        </span>
+                        <div class="k-notification-content">Closable notification with icon</div>
+                        <span class="k-notification-actions">
+                            <span class="k-notification-action k-notification-close-action">
+                                <span class="k-icon k-svg-icon k-svg-i-x">
+                                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96l45.3 45.3z"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

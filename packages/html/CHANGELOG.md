@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.0...v7.1.0-dev.1) (2023-12-12)
+
+
+### Features
+
+* **multiselecttree:** unifiy input rendering ([f23adca](https://github.com/telerik/kendo-themes/commit/f23adca7ac80233ee799b14c925cc975ef4eb837))
+* **timeline:** unify Timeline rendering ([80395e4](https://github.com/telerik/kendo-themes/commit/80395e4d3bb0931586ff89c1d28cddc4ef7b1cda))
+
+
+
+
+
 # [7.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.3...v7.1.0-dev.0) (2023-12-11)
 
 

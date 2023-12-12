@@ -1,5 +1,9 @@
 // Notification
 
+/// The row-gap between the elements in the Notification group.
+/// @group notification
+$kendo-notification-group-gap: k-map-get( $kendo-spacing, 2 ) !default;
+
 /// The horizontal padding of the Notification.
 /// @group notification
 $kendo-notification-padding-x: 16px !default;
@@ -37,7 +41,6 @@ $kendo-notification-shadow: $kendo-popup-shadow !default;
 /// The horizontal spacing of the Notification icon.
 /// @group notification
 $kendo-notification-icon-spacing: $kendo-icon-spacing !default;
-
 
 @function notification-theme( $colors ) {
     $_theme: ();

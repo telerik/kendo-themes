@@ -8,100 +8,100 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        .k-card-media {
-            display: block;
-            height: 200px;
-            width: 100%;
-            background: #cccccc;
-        }
-
-    </style>
+    <style></style>
     <div id="test-area" class="k-d-grid">
-        <div class="k-timeline k-timeline-vertical k-timeline-alternating k-timeline-collapsible">
+        <span>Vertical timeline with alternating events</span>
+        <div class="k-timeline k-timeline-vertical k-timeline-alternating">
             <ul>
                 <li class="k-timeline-flag-wrap">
-                    <span class="k-timeline-flag">2014</span>
+                    <span class="k-timeline-flag">2010</span>
                 </li>
-                <li class="k-timeline-event">
+                <li class="k-timeline-event k-reverse">
                     <div class="k-timeline-date-wrap">
-                        <span class="k-timeline-date">Jan 14, 2014</span>
+                        <span class="k-timeline-date">Apr 11, 2010</span>
                     </div>
-                    <a class="k-timeline-circle"></a>
-                    <div class="k-timeline-card k-collapsed">
-                        <div class="k-card k-card-vertical k-card-with-callout">
-                            <span class="k-timeline-card-callout k-card-callout k-callout-w"></span>
+                    <span class="k-timeline-circle"></span>
+                    <div class="k-timeline-card">
+                        <div class="k-card k-card-vertical">
+                            <span class="k-timeline-card-callout k-card-callout k-callout-e"></span>
                             <div class="k-card-inner">
                                 <div class="k-card-header">
                                     <div class="k-card-title">
-                                        <span class="k-event-title">Collapsed Event</span>
-                                        <button class="k-event-collapse k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96l-33.941 33.941z"></path>
-                                                </svg>
-                                            </span>
-                                        </button>
+                                        <span class="k-event-title">Event title</span>
                                     </div>
-                                    <div class="k-card-subtitle">
-                                        <h6 class="k-card-subtitle">Subtitle</h6>
-                                    </div>
+                                    <div class="k-card-subtitle">Event subtitle</div>
                                 </div>
                                 <div class="k-card-body">
-                                    <div class="k-card-description">
-                                        <p>Card Description here</p>
-                                        <span class="k-card-media"></span>
-                                    </div>
-                                </div>
-                                <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
-                                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
-                                        <span class="k-button-text">Action 1</span>
-                                    </button>
-                                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
-                                        <span class="k-button-text">Action 2</span>
-                                    </button>
+                                    <div class="k-card-description">Event content</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
+                <li class="k-timeline-event">
+                    <div class="k-timeline-date-wrap">
+                        <span class="k-timeline-date">May 11, 2010</span>
+                    </div>
+                    <span class="k-timeline-circle"></span>
+                    <div class="k-timeline-card">
+                        <div class="k-card k-card-vertical">
+                            <span class="k-timeline-card-callout k-card-callout k-callout-w"></span>
+                            <div class="k-card-inner">
+                                <div class="k-card-header">
+                                    <div class="k-card-title">
+                                        <span class="k-event-title">Event title</span>
+                                    </div>
+                                    <div class="k-card-subtitle">Event subtitle</div>
+                                </div>
+                                <div class="k-card-body">
+                                    <div class="k-card-description">Event content</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="k-timeline-flag-wrap">
+                    <span class="k-timeline-flag">2011</span>
+                </li>
                 <li class="k-timeline-event k-reverse">
                     <div class="k-timeline-date-wrap">
-                        <span class="k-timeline-date">Jun 1, 2014</span>
+                        <span class="k-timeline-date">Oct 11, 2011</span>
                     </div>
-                    <a class="k-timeline-circle"></a>
-                    <div class="k-timeline-card k-expanded">
-                        <div class="k-card k-card-vertical k-card-with-callout">
+                    <span class="k-timeline-circle"></span>
+                    <div class="k-timeline-card">
+                        <div class="k-card k-card-vertical">
                             <span class="k-timeline-card-callout k-card-callout k-callout-e"></span>
                             <div class="k-card-inner">
                                 <div class="k-card-header">
                                     <div class="k-card-title">
-                                        <span class="k-event-title">Expanded event with reallyyyyy long title</span>
-                                        <button class="k-event-collapse k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                            <span class="k-button-icon k-icon k-svg-icon k-svg-i-chevron-right">
-                                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="m158.059 129.941 126.06 126.06-126.06 126.061L192 416l160-159.999L192 96l-33.941 33.941z"></path>
-                                                </svg>
-                                            </span>
-                                        </button>
+                                        <span class="k-event-title">Event title</span>
                                     </div>
-                                    <div class="k-card-subtitle">
-                                        <h6 class="k-card-subtitle">Subtitle</h6>
-                                    </div>
+                                    <div class="k-card-subtitle">Event subtitle</div>
                                 </div>
                                 <div class="k-card-body">
-                                    <div class="k-card-description">
-                                        <p>Timeline Event Description</p>
-                                        <span class="k-card-media"></span>
-                                    </div>
+                                    <div class="k-card-description">Event content</div>
                                 </div>
-                                <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
-                                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
-                                        <span class="k-button-text">Action 1</span>
-                                    </button>
-                                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
-                                        <span class="k-button-text">Action 2</span>
-                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="k-timeline-event">
+                    <div class="k-timeline-date-wrap">
+                        <span class="k-timeline-date">Dec 11, 2011</span>
+                    </div>
+                    <span class="k-timeline-circle"></span>
+                    <div class="k-timeline-card">
+                        <div class="k-card k-card-vertical">
+                            <span class="k-timeline-card-callout k-card-callout k-callout-w"></span>
+                            <div class="k-card-inner">
+                                <div class="k-card-header">
+                                    <div class="k-card-title">
+                                        <span class="k-event-title">Event title</span>
+                                    </div>
+                                    <div class="k-card-subtitle">Event subtitle</div>
+                                </div>
+                                <div class="k-card-body">
+                                    <div class="k-card-description">Event content</div>
                                 </div>
                             </div>
                         </div>

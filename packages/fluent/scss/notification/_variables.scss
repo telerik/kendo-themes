@@ -1,9 +1,9 @@
 @use "sass:map";
 @use "../core/" as *;
 
-/// The vertical padding of the Notification container.
+/// The row-gap between the elements in the Notification group.
 /// @group notification
-$kendo-notification-container-padding-y: $kendo-padding-sm-y !default;
+$kendo-notification-group-gap: map.get( $kendo-spacing, 2 ) !default;
 
 /// The horizontal padding of the Notification.
 /// @group notification

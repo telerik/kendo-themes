@@ -7,17 +7,12 @@
         flex-flow: column-reverse wrap;
         position: fixed;
         z-index: 1000;
+        gap: $kendo-notification-group-gap 0;
     }
 
-    .k-notification-container {
-        margin-block: k-math-div( $kendo-notification-padding-y, 2 );
-        margin-inline: 0;
-        display: inline-flex;
-        vertical-align: top;
-
-        &-animating {
-            overflow: hidden;
-        }
+    // Needed due to the specifics in the implementation of animations in Angular
+    .k-notification-container-animating {
+        overflow: hidden;
     }
 
     .k-notification {
