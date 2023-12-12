@@ -758,7 +758,7 @@ export default () =>(
                                     <div className="k-gantt-line k-gantt-line-v" style={{ left: "621px", top: "197px", height: "72px" }}></div>
                                     <div className="k-gantt-line k-gantt-line-h" style={{ left: "621px", top: "269px", width: "191px" }}><span className="k-arrow-e"></span></div>
                                 </div>
-                                <div className="k-current-time" style={{ left: "243px", top: "0px", height: "828px" }}></div>
+                                <div className="k-current-time" style={{ left: "243px", top: "0px", width: "1px", height: "828px" }}></div>
                             </div>
                         </div>
                     </div>
