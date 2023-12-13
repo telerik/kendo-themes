@@ -72,36 +72,32 @@
         color: inherit;
     }
 
-    // TODO:
-    // Some implementations rely on margin + transform-rotate to position callout
-    // Remove margin tweaking and uncomment when their implementation is fixed.
-
     .k-callout-n {
-        margin-inline-start: -$kendo-tooltip-callout-size;
         border-bottom-color: currentColor;
-        top: ( -1 * $kendo-tooltip-callout-size * 2 );
+        top: 0;
         left: 50%;
+        transform: translate(-50%, -100%);
         pointer-events: none;
     }
     .k-callout-e {
-        margin-block-start: -$kendo-tooltip-callout-size;
         border-left-color: currentColor;
         top: 50%;
-        right: ( -1 * $kendo-tooltip-callout-size * 2 );
+        right: 0;
+        transform: translate(100%, -50%);
         pointer-events: none;
     }
     .k-callout-s {
-        margin-inline-start: -$kendo-tooltip-callout-size;
         border-top-color: currentColor;
-        bottom: ( -1 * $kendo-tooltip-callout-size * 2 );
+        bottom: 0;
         left: 50%;
+        transform: translate(-50%, 100%);
         pointer-events: none;
     }
     .k-callout-w {
-        margin-block-start: -$kendo-tooltip-callout-size;
         border-right-color: currentColor;
         top: 50%;
-        left: ( -1 * $kendo-tooltip-callout-size * 2 );
+        left: 0;
+        transform: translate(-100%, -50%);
         pointer-events: none;
     }
 
