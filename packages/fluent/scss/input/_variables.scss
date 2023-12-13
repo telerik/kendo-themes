@@ -628,6 +628,24 @@ $kendo-input-prefix-bg: k-get-theme-color-var( neutral-20 ) !default;
 /// @group input
 $kendo-input-suffix-bg: k-get-theme-color-var( neutral-20 ) !default;
 
+/// The color of the Input separator.
+/// @group input
+$kendo-input-separator-text: k-get-theme-color-var( neutral-30 ) !default;
+
+/// The text color of the Input prefix.
+/// @group input
+$kendo-input-prefix-text: k-get-theme-color-var( neutral-130 ) !default;
+/// The text color of the Input suffix.
+/// @group input
+$kendo-input-suffix-text: k-get-theme-color-var( neutral-130 ) !default;
+
+/// The text color of the disabled Input prefix.
+/// @group input
+$kendo-input-prefix-disabled-text: k-get-theme-color-var( neutral-60 ) !default;
+/// The text color of the disabled Input suffix.
+/// @group input
+$kendo-input-suffix-disabled-text: k-get-theme-color-var( neutral-60 ) !default;
+
 /// The border color of the invalid Input components.
 /// @group input
 $kendo-input-invalid-border: var( --kendo-invalid-border, #{$kendo-invalid-border} ) !default;

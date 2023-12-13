@@ -88,6 +88,19 @@
                 @include focus-indicator( $kendo-input-valid-shadow );
             }
         }
+
+        // Prefix & Suffix
+        .k-input-prefix {
+            color: $kendo-input-prefix-text;
+        }
+
+        .k-input-suffix {
+            color: $kendo-input-suffix-text;
+        }
+
+        .k-input-separator {
+            border-color: $kendo-input-separator-text;
+        }
     }
 
 
@@ -286,6 +299,19 @@
                 @include focus-indicator( $kendo-input-valid-shadow );
             }
         }
+
+        // Prefix & Suffix
+        .k-input-prefix {
+            color: $kendo-input-prefix-text;
+        }
+
+        .k-input-suffix {
+            color: $kendo-input-suffix-text;
+        }
+
+        .k-input-separator {
+            border-color: $kendo-input-separator-text;
+        }
     }
 
 
@@ -476,6 +502,19 @@
             &:focus-within {
                 @include focus-indicator( $kendo-input-valid-shadow );
             }
+        }
+
+        // Prefix & Suffix
+        .k-input-prefix {
+            color: $kendo-input-prefix-text;
+        }
+
+        .k-input-suffix {
+            color: $kendo-input-suffix-text;
+        }
+
+        .k-input-separator {
+            border-color: $kendo-input-separator-text;
         }
     }
 
