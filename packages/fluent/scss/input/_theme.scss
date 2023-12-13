@@ -46,6 +46,14 @@
             --INTERNAL--kendo-input-text: var( --kendo-input-disabled-text );
             --INTERNAL--kendo-input-bg: var( --kendo-input-disabled-bg );
             --INTERNAL--kendo-input-border: var( --kendo-input-disabled-border );
+
+            .k-input-prefix {
+                color: var( --kendo-input-prefix-disabled-text, #{$kendo-input-prefix-disabled-text} );
+            }
+
+            .k-input-suffix {
+                color: var( --kendo-input-prefix-disabled-text, #{$kendo-input-prefix-disabled-text} );
+            }
         }
 
         // Invalid
@@ -98,6 +106,19 @@
                     color: var( --kendo-input-valid-text, #{$kendo-input-valid-text} );
                 }
             }
+        }
+
+        // Prefix & Suffix
+        .k-input-prefix {
+            color: var( --kendo-input-prefix-text, #{$kendo-input-prefix-text} );
+        }
+
+        .k-input-suffix {
+            color: var( --kendo-input-suffix-text, #{$kendo-input-suffix-text} );
+        }
+
+        .k-input-separator {
+            border-color: var( --kendo-input-separator-text, #{$kendo-input-separator-text} );
         }
     }
 
