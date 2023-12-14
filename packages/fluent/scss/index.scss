@@ -150,6 +150,7 @@
 @forward "./pdf-viewer";
 @forward "./scroller";
 @forward "./scrollview";
+@forward "./prompt";
 
 
 // Dataviz
@@ -312,6 +313,7 @@
 @use "./pdf-viewer" as *;
 @use "./scroller" as *;
 @use "./scrollview" as *;
+@use "./prompt" as *;
 
 
 // Dataviz
@@ -489,6 +491,7 @@
     @include pdf-viewer-styles();
     @include scroller-styles();
     @include scrollview-styles();
+    @include prompt-styles();
 
 
     // Dataviz

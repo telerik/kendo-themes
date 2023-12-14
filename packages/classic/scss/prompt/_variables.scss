@@ -1,0 +1,29 @@
+// Prompt
+$kendo-prompt-text: $kendo-component-text !default;
+$kendo-prompt-bg: $kendo-component-bg !default;
+$kendo-prompt-border: $kendo-component-border !default;
+
+// Prompt Header
+$kendo-prompt-header-text: $kendo-component-header-text !default;
+$kendo-prompt-header-bg: $kendo-component-bg !default;
+$kendo-prompt-header-border: $kendo-component-header-border !default;
+
+// Prompt content
+$kendo-prompt-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-prompt-content-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-prompt-content-spacing: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-prompt-content-text: $kendo-component-header-text !default;
+$kendo-prompt-content-bg: $kendo-component-header-bg !default;
+$kendo-prompt-content-border: $kendo-component-header-border !default;
+
+// Prompt expander
+$kendo-prompt-expander-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+
+// Prompt suggestion
+$kendo-prompt-suggestion-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-prompt-suggestion-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-prompt-suggestion-border-radius: $kendo-border-radius-md !default;
+$kendo-prompt-suggestion-text: $kendo-component-text !default;
+$kendo-prompt-suggestion-bg: $kendo-body-bg !default;
+$kendo-prompt-suggestion-border: $kendo-component-border !default;
+$kendo-prompt-suggestion-shadow: k-elevation(1) !default;
