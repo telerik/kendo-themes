@@ -1,0 +1,41 @@
+@mixin kendo-prompt--theme-base() {
+
+    .k-prompt {
+        @include fill(
+            $kendo-prompt-text,
+            $kendo-prompt-bg,
+            $kendo-prompt-border
+        );
+    }
+
+    .k-prompt-header {
+        @include fill(
+            $kendo-prompt-header-text,
+            $kendo-prompt-header-bg,
+            $kendo-prompt-header-border
+        );
+    }
+
+    .k-prompt-content {
+        @include fill(
+            $kendo-prompt-content-text,
+            $kendo-prompt-content-bg,
+            $kendo-prompt-content-border
+        );
+    }
+
+    .k-prompt-suggestion {
+        @include fill(
+            $kendo-prompt-suggestion-text,
+            $kendo-prompt-suggestion-bg,
+            $kendo-prompt-suggestion-border
+        );
+        @include box-shadow( $kendo-prompt-suggestion-shadow );
+    }
+
+}
+
+
+@mixin kendo-prompt--theme() {
+    @include kendo-prompt--theme-base();
+}

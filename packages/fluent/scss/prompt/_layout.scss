@@ -1,0 +1,61 @@
+@use "./_variables.scss" as *;
+@use "../core/" as *;
+
+@mixin kendo-prompt--layout {
+
+    // Prompt
+    .k-prompt {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+
+    // Content
+    .k-prompt-content {
+        padding-block: var( --kendo-prompt-content-padding-y, #{$kendo-prompt-content-padding-y} );
+        padding-inline: var( --kendo-prompt-content-padding-x, #{$kendo-prompt-content-padding-x} );
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        gap: var( --kendo-prompt-content-spacing, #{$kendo-prompt-content-spacing} );
+        overflow: auto;
+    }
+
+    // Prompt Expander
+    .k-prompt-expander {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: start;
+        gap: var( --kendo-prompt-expander-spacing, #{$kendo-prompt-expander-spacing} );
+    }
+
+    .k-prompt-expander-content {
+        display: flex;
+        flex-flow: column;
+        flex: 0 0 auto;
+        gap: var( --kendo-prompt-expander-spacing, #{$kendo-prompt-expander-spacing} );
+        align-self: stretch;
+    }
+
+    .k-prompt-suggestion {
+        border-width: 1px;
+        border-style: solid;
+        border-radius: var( --kendo-prompt-suggestion-border-radius, #{$kendo-prompt-suggestion-border-radius} );
+        padding-block: var( --kendo-prompt-suggestion-padding-y, #{$kendo-prompt-suggestion-padding-y} );
+        padding-inline: var( --kendo-prompt-suggestion-padding-x, #{$kendo-prompt-suggestion-padding-x} );
+        cursor: pointer;
+    }
+
+    .k-prompt-setting {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // Actions
+    .k-prompt-actions.k-actions {
+        margin: 0;
+    }
+
+}
