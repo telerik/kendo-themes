@@ -23,6 +23,7 @@ export const TimelineCard = (
                 props.className
             )}
             orientation="vertical"
+            callout="true"
             {...other}
         >
             { callout && <TimelineCardCallout callout={callout} />}
