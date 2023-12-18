@@ -53,7 +53,7 @@
     "postpublish": "echo 'no postpublish for material theme'"
   },
   "dependencies": {
-    "@progress/kendo-svg-icons": "2.0.0",
+    "@progress/kendo-svg-icons": "2.1.0",
     "@progress/kendo-theme-core": "7.1.0-dev.2",
     "@progress/kendo-theme-default": "7.1.0-dev.2",
     "@progress/kendo-theme-utils": "7.1.0-dev.2"
