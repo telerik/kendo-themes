@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.1...v7.1.0-dev.2) (2023-12-18)
+
+
+### Bug Fixes
+
+* **common:** incorrectly set current time marker width ([3a2ac98](https://github.com/telerik/kendo-themes/commit/3a2ac9849639c18154d8cd82a6b24431ca7e32e2))
+
+
+
+
+
 # [7.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.0...v7.1.0-dev.1) (2023-12-12)
 
 
