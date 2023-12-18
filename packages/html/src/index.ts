@@ -112,6 +112,7 @@ export * from './timeline/index';
 // export * from './pdf-viewer/index';
 // export * from './scroller/index';
 export * from './scrollview/index';
+export * from './prompt/index';
 
 // Editors
 export * from './editor/index';
