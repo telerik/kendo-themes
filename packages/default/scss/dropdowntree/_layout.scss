@@ -18,6 +18,22 @@
         }
     }
 
+    .k-multiselecttree {
+        .k-input-values {
+            width: auto;
+            max-width: 100%;
+        }
+
+        .k-input-inner::before {
+            content: "\200b";
+            width: 0px;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
 }
 
 
