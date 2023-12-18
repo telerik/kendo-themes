@@ -14,7 +14,7 @@ export const FormNormal = ({ size, ...other }: any) => (
         }
         children={
             <Fieldset legend="Form Legend">
-                <FormField label="Label" placeholder="Input Value" editor={<Textbox size={size} />} />
+                <FormField label="Label" editor={<Textbox size={size} />} />
                 <FormField
                     label="Label"
                     hint="Hint text"
