@@ -5,7 +5,6 @@ import {
     InputLoadingIcon,
     InputPrefix,
     InputSuffix,
-    InputInnerInput,
     InputValidationIcon
 } from '../input';
 import { Button } from '../button';
@@ -111,14 +110,14 @@ export const MultiSelectTree = (
                 className={classNames(props.className, MULTISELECTTREE_CLASSNAME)}
             >
                 <InputPrefix>{prefix}</InputPrefix>
-                <div className="k-input-values">
-                    <ChipList size={size}>
-                        <>
-                            {tags}
-                        </>
-                    </ChipList>
-                    <InputInnerInput placeholder={placeholder}/>
-                </div>
+                <ChipList size={size} className="k-input-values">
+                    <>
+                        {tags}
+                    </>
+                </ChipList>
+                <span className="k-input-inner">
+                    <span className="k-input-value-text">{placeholder}</span>
+                </span>
                 <InputValidationIcon
                     valid={valid}
                     invalid={invalid}
