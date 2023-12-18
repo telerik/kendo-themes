@@ -1,20 +1,37 @@
 @use "sass:map";
 @use "../core/" as *;
 
-// Prompt
+/// The text color of the Prompt.
+/// @group prompt
 $kendo-prompt-text: var( --kendo-component-text, initial ) !default;
+/// The background color of the Prompt.
+/// @group prompt
 $kendo-prompt-bg: var( --kendo-component-bg, initial ) !default;
+/// The border color of the Prompt.
+/// @group prompt
 $kendo-prompt-border: var( --kendo-component-border, initial ) !default;
 
-// Prompt Header
+/// The text color of the Prompt header.
+/// @group prompt
 $kendo-prompt-header-text: var( --kendo-component-text, initial ) !default;
+/// The background color of the Prompt header.
+/// @group prompt
 $kendo-prompt-header-bg: var( --kendo-component-bg, initial ) !default;
+/// The border color of the Prompt header.
+/// @group prompt
 $kendo-prompt-header-border: var( --kendo-component-border, initial ) !default;
 
-// Prompt content
-$kendo-prompt-content-padding-x: map.get( $kendo-spacing, 4 ) !default;
+/// The vertical padding of the Prompt content.
+/// @group prompt
 $kendo-prompt-content-padding-y: map.get( $kendo-spacing, 4 ) !default;
+/// The horizontal padding of the Prompt content.
+/// @group prompt
+$kendo-prompt-content-padding-x: map.get( $kendo-spacing, 4 ) !default;
+/// The spacing between the items of the Prompt content.
+/// @group prompt
 $kendo-prompt-content-spacing: map.get( $kendo-spacing, 4 ) !default;
+/// The text color of the Prompt content.
+/// @group prompt
 $kendo-prompt-content-text: k-get-theme-color-var( neutral-190 ) !default;
 /// The background color of the Prompt content.
 /// @group prompt
@@ -23,14 +40,28 @@ $kendo-prompt-content-bg: k-get-theme-color-var( neutral-10 ) !default;
 /// @group prompt
 $kendo-prompt-content-border: var( --kendo-component-border, initial ) !default;
 
-// Prompt expander
+/// The spacing between the items of the Prompt content expander.
+/// @group prompt
 $kendo-prompt-expander-spacing: map.get( $kendo-spacing, 2 ) !default;
 
-// Prompt suggestion
-$kendo-prompt-suggestion-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// The vertical padding of the Prompt suggestion container.
+/// @group prompt
 $kendo-prompt-suggestion-padding-y: map.get( $kendo-spacing, 2 ) !default;
+/// The horizontal padding of the Prompt suggestion container.
+/// @group prompt
+$kendo-prompt-suggestion-padding-x: map.get( $kendo-spacing, 2 ) !default;
+/// The border radius of the Prompt suggestion container.
+/// @group prompt
 $kendo-prompt-suggestion-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
+/// The text color of the Prompt suggestion container.
+/// @group prompt
 $kendo-prompt-suggestion-text: var( --kendo-component-text, initial ) !default;
+/// The background color of the Prompt suggestion container.
+/// @group prompt
 $kendo-prompt-suggestion-bg: var( --kendo-component-bg, initial ) !default;
+/// The border color of the Prompt suggestion container.
+/// @group prompt
 $kendo-prompt-suggestion-border: var( --kendo-component-border, initial ) !default;
+/// The elevation of the Prompt suggestion container.
+/// @group prompt
 $kendo-prompt-suggestion-shadow: k-elevation(1) !default;
