@@ -1,5 +1,5 @@
 import { classNames } from '../misc';
-import { IconButton } from '../button';
+import { Icon } from '../icon';
 
 export const TIMELINECARDTITLE_CLASSNAME = `k-card-title`;
 
@@ -30,7 +30,7 @@ export const TimelineCardTitle = (
             {...other}
         >
             <span className="k-event-title">{children}</span>
-            {collapsible && <IconButton fillMode="flat" icon="chevron-right" className="k-event-collapse"></IconButton>}
+            {collapsible && <span className="k-event-collapse k-button k-button-md k-rounded-md k-button-flat k-button-flat-base k-icon-button"><Icon icon="chevron-right" className="k-button-icon"/></span>}
         </div>
     );
 };
