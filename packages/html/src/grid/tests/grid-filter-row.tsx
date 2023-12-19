@@ -8,23 +8,24 @@ import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { TimePicker } from '../../timepicker';
-
+import { Grid, GridHeader, GridHeaderTable } from '../../grid';
+import { TableThead, TableRow, TableTh } from '../../table';
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <ColorPicker />
@@ -32,28 +33,28 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
             <div></div>
             <div></div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Autocomplete placeholder="Autocomplete..." />
@@ -61,26 +62,26 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Combobox placeholder="Combobox..." />
@@ -88,26 +89,26 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DropdownList placeholder="DropdownList..." />
@@ -115,26 +116,26 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <NumericTextbox placeholder="Numeric..." />
@@ -142,26 +143,26 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Textbox placeholder="Textbox..." />
@@ -169,28 +170,28 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
 
             <div></div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DatePicker placeholder="Datepicker..." />
@@ -198,26 +199,26 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <TimePicker placeholder="TimePicker..." />
@@ -225,26 +226,26 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid className="k-grid-display-block k-grid-no-scrollbar">
+                    <GridHeader>
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DateTimePicker placeholder="DateTimePicker..." />
@@ -252,13 +253,13 @@ export default () =>(
                                                     <Button icon="filter-clear" disabled></Button>
                                                 </span>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                </div>
+                    </GridHeader>
+                </Grid>
             </div>
 
         </div>

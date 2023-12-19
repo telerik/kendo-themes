@@ -1,4 +1,6 @@
 import { Checkbox } from '../../checkbox';
+import { Grid, GridTable } from '../../grid';
+import { TableThead, TableTbody, TableRow, TableTh, TableTd } from '../../table';
 
 
 const styles = `
@@ -19,135 +21,135 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <div className="k-grid k-grid-md k-grid-no-scrollbar">
-                    <table className="k-table k-table-md k-grid-table">
+                <Grid className="k-grid-no-scrollbar">
+                    <GridTable>
                         <colgroup>
                             <col style={{ width: '50px' }} /><col /><col className="k-sorted" /><col /><col />
                         </colgroup>
-                        <thead className="k-grid-thead k-grid-header">
-                            <tr className="k-table-row">
-                                <th className="k-table-th">
+                        <TableThead className="k-grid-header">
+                            <TableRow>
+                                <TableTh>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
-                                </th>
-                                <th className="k-table-th k-header">Base</th>
-                                <th className="k-table-th k-header k-sorted">Sorted</th>
-                                <th className="k-table-th k-header">Focus</th>
-                                <th className="k-table-th k-header">Selected</th>
-                            </tr>
-                        </thead>
-                        <tbody className="k-table-tbody">
-                            <tr className="k-table-row">
-                                <td className="k-table-td">
+                                </TableTh>
+                                <TableTh className="k-header">Base</TableTh>
+                                <TableTh className="k-header k-sorted">Sorted</TableTh>
+                                <TableTh className="k-header">Focus</TableTh>
+                                <TableTh className="k-header">Selected</TableTh>
+                            </TableRow>
+                        </TableThead>
+                        <TableTbody>
+                            <TableRow>
+                                <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Normal row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td k-focus">Focus</td>
-                                <td className="k-table-td k-selected">Selected</td>
-                            </tr>
-                            <tr className="k-table-row k-table-alt-row k-alt">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Normal row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd className="k-focus">Focus</TableTd>
+                                <TableTd className="k-selected">Selected</TableTd>
+                            </TableRow>
+                            <TableRow className="k-alt" alt>
+                                <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Alt row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td k-focus">Alt + Focus</td>
-                                <td className="k-table-td k-selected">Alt + Selected</td>
-                            </tr>
-                        </tbody>
-                        <tbody className="k-table-tbody">
-                            <tr className="k-table-row k-hover">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Alt row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd className="k-focus">Alt + Focus</TableTd>
+                                <TableTd className="k-selected">Alt + Selected</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                        <TableTbody>
+                            <TableRow className="k-hover">
+                                <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td">Hovered row</td>
-                                <td className="k-table-td k-focus">Hover + Focus</td>
-                                <td className="k-table-td k-selected">Hover + Selected</td>
-                            </tr>
-                            <tr className="k-table-row k-table-alt-row k-alt k-hover">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd>Hovered row</TableTd>
+                                <TableTd className="k-focus">Hover + Focus</TableTd>
+                                <TableTd className="k-selected">Hover + Selected</TableTd>
+                            </TableRow>
+                            <TableRow className="k-hover k-alt" alt>
+                                <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Alt hovered row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td k-focus">Alt + Hover + Focus</td>
-                                <td className="k-table-td k-selected">Alt + Hover + Selected</td>
-                            </tr>
-                        </tbody>
-                        <tbody className="k-table-tbody">
-                            <tr className="k-table-row k-focus">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Alt hovered row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd className="k-focus">Alt + Hover + Focus</TableTd>
+                                <TableTd className="k-selected">Alt + Hover + Selected</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                        <TableTbody>
+                            <TableRow className="k-focus">
+                                <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Focused row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td">N/A</td>
-                                <td className="k-table-td k-selected">Focus + Selected</td>
-                            </tr>
-                            <tr className="k-table-row k-table-alt-row k-alt k-focus">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Focused row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd className="k-selected">Focus + Selected</TableTd>
+                            </TableRow>
+                            <TableRow className="k-focus k-alt" alt>
+                                <TableTd>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Alt focused row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td">N/A</td>
-                                <td className="k-table-td k-selected">Alt + Focus + Selected</td>
-                            </tr>
-                        </tbody>
-                        <tbody className="k-table-tbody">
-                            <tr className="k-table-row k-selected">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Alt focused row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd>N/A</TableTd>
+                                <TableTd className="k-selected">Alt + Focus + Selected</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                        <TableTbody>
+                            <TableRow className="k-selected">
+                                <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Selected row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td k-focus">Selected + Focus</td>
-                                <td className="k-table-td">N/A</td>
-                            </tr>
-                            <tr className="k-table-row k-table-alt-row k-alt k-selected">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Selected row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd className="k-focus">Selected + Focus</TableTd>
+                                <TableTd>N/A</TableTd>
+                            </TableRow>
+                            <TableRow className="k-selected k-alt" alt>
+                                <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Alt selected row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td k-focus">Alt + Selected + Focus</td>
-                                <td className="k-table-td">N/A</td>
-                            </tr>
-                        </tbody>
-                        <tbody className="k-table-tbody">
-                            <tr className="k-table-row k-hover k-selected">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Alt selected row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd className="k-focus">Alt + Selected + Focus</TableTd>
+                                <TableTd>N/A</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                        <TableTbody>
+                            <TableRow className="k-hover k-selected">
+                                <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Hover + Selected row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td k-focus">Hover + Selected + Focus</td>
-                                <td className="k-table-td">N/A</td>
-                            </tr>
-                            <tr className="k-table-row k-table-alt-row k-alt k-hover k-selected">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Hover + Selected row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd className="k-focus">Hover + Selected + Focus</TableTd>
+                                <TableTd>N/A</TableTd>
+                            </TableRow>
+                            <TableRow className="k-hover k-selected k-alt" alt>
+                                <TableTd>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
-                                </td>
-                                <td className="k-table-td">Alt + Hover selected row</td>
-                                <td className="k-table-td">Sorted</td>
-                                <td className="k-table-td k-focus">Alt + Hover + Selected + Focus</td>
-                                <td className="k-table-td">N/A</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                                </TableTd>
+                                <TableTd>Alt + Hover selected row</TableTd>
+                                <TableTd>Sorted</TableTd>
+                                <TableTd className="k-focus">Alt + Hover + Selected + Focus</TableTd>
+                                <TableTd>N/A</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                    </GridTable>
+                </Grid>
                 <div className="k-marquee"><div className="k-marquee-color"></div></div>
             </section>
 

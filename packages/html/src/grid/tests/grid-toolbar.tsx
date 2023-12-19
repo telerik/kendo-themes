@@ -1,7 +1,7 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Searchbox } from '../../searchbox';
-import { Toolbar } from '../../toolbar';
+import { Grid, GridToolbar } from '../../grid';
 
 
 const styles = `
@@ -25,128 +25,128 @@ export default () =>(
 
             <span>Toolbar</span>
             <section>
-                <div className="k-grid k-grid-md">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid toolbar={(
+                    <GridToolbar>
                         <Button>Button</Button>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                         </ButtonGroup>
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )} />
             </section>
             <section>
-                <div className="k-grid k-grid-md">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid toolbar={(
+                    <GridToolbar>
                         <Button>Button</Button>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                         </ButtonGroup>
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )}
+                />
             </section>
 
 
             <span>Toolbar RTL</span>
             <section>
-                <div className="k-grid k-grid-md k-rtl">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid className="k-rtl" toolbar={(
+                    <GridToolbar>
                         <Button>Button</Button>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                         </ButtonGroup>
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )}/>
             </section>
             <section>
-                <div className="k-grid k-grid-md" dir="rtl">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid dir="rtl" toolbar={(
+                    <GridToolbar>
                         <Button>Button</Button>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                         </ButtonGroup>
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )}/>
             </section>
 
 
             <span>Search</span>
             <section>
-                <div className="k-grid k-grid-md">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid toolbar={(
+                    <GridToolbar>
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )}/>
             </section>
             <section>
-                <div className="k-grid k-grid-md">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid toolbar={(
+                    <GridToolbar>
                         <Button>Spacer</Button>
-                        <div className="k-spacer"></div>
+                        <span className="k-spacer"></span>
                         <Button>Spacer</Button>
-                    </Toolbar>
-
-                </div>
+                    </GridToolbar>
+                )}/>
             </section>
 
 
             <span>Search RTL</span>
             <section>
-                <div className="k-grid k-grid-md k-rtl">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid className="k-rtl" toolbar={(
+                    <GridToolbar>
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )}/>
             </section>
             <section>
                 {/* Spacer with fixed width */}
-                <div className="k-grid k-grid-md">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid toolbar={(
+                    <GridToolbar>
                         <Button>Spacer fixed width</Button>
                         <div className="k-spacer k-spacer-sized" style={{ width: "10px", flexBasis: "10px" }}></div>
                         <Button>Spacer fixed width</Button>
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )}/>
             </section>
 
             <span>Multi-line</span>
             <section>
-                <div className="k-grid k-grid-md">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid toolbar={(
+                    <GridToolbar>
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
                         <Button icon="plus">Add new record</Button>
                         <Button icon="check">Save changes</Button>
                         <Button icon="cancel">Cancel changes</Button>
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )}/>
             </section>
             <section></section>
 
             <span>Multiline RTL</span>
             <section>
-                <div className="k-grid k-grid-md k-rtl">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid className="k-rtl" toolbar={(
+                    <GridToolbar>
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
                         <Button icon="plus">Add new record</Button>
                         <Button icon="check">Save changes</Button>
                         <Button icon="cancel">Cancel changes</Button>
-                    </Toolbar>
-                </div>
+                    </GridToolbar>
+                )}/>
             </section>
             <section></section>
 
