@@ -1,6 +1,7 @@
 export * from './prompt.spec';
 export * from './prompt-header';
 export * from './prompt-content';
+export * from './prompt-view';
 export * from './prompt-footer';
 export * from './prompt-suggestion';
 export * from './prompt-setting';

@@ -1,6 +1,6 @@
 import { IconTextButton, IconButton } from "../../button";
 import { Toolbar } from "../../toolbar";
-import { Prompt, PromptContent, PromptHeader } from "..";
+import { Prompt, PromptContent, PromptHeader, PromptView } from "..";
 import { Icon } from "../../icon";
 
 export const PromptMoreActions = (props) => (
@@ -15,18 +15,20 @@ export const PromptMoreActions = (props) => (
             </Toolbar>
         </PromptHeader>
         <PromptContent>
-            <div className="k-column-menu k-flex-col k-flex-1">
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-columnmenu-item">
-                        <Icon icon="sort-asc-small" />
+            <PromptView>
+                <div className="k-column-menu k-flex-col k-flex-1">
+                    <div className="k-columnmenu-item-wrapper">
+                        <div className="k-columnmenu-item">
+                            <Icon icon="sort-asc-small" />
                         Command
-                    </div>
-                    <div className="k-columnmenu-item">
-                        <Icon icon="sort-desc-small" />
+                        </div>
+                        <div className="k-columnmenu-item">
+                            <Icon icon="sort-desc-small" />
                         Command
+                        </div>
                     </div>
                 </div>
-            </div>
+            </PromptView>
         </PromptContent>
     </Prompt>
 );
