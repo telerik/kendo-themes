@@ -96,7 +96,7 @@ export * from './tilelayout/index';
 // export * from './dock-manager/index';
 
 // Data management
-// export * from './grid/index';
+export * from './grid/index';
 export * from './listview/index';
 // export * from './spreadsheet/index';
 // export * from './pivotgrid/index';
