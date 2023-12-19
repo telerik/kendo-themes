@@ -1,7 +1,7 @@
 import { ActionButtons } from "../../action-buttons";
 import { IconTextButton, IconButton } from "../../button";
 import { Toolbar } from "../../toolbar";
-import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptSuggestion } from "..";
+import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptSuggestion, PromptView } from "..";
 
 
 export const PromptSuggestions = (props) => (
@@ -13,15 +13,17 @@ export const PromptSuggestions = (props) => (
                 <IconButton fillMode="flat" themeColor="primary" icon="more-horizontal" rounded="full"></IconButton>
             </Toolbar>
         </PromptHeader>
-        <PromptContent
-            showSearch
-            suggestions={
-                <>
-                    <PromptSuggestion>Suggestion 1</PromptSuggestion>
-                    <PromptSuggestion>Suggestion 2</PromptSuggestion>
-                    <PromptSuggestion>Suggestion 3</PromptSuggestion>
-                </>
-            }>
+        <PromptContent>
+            <PromptView
+                showSearch
+                suggestions={
+                    <>
+                        <PromptSuggestion>Suggestion 1</PromptSuggestion>
+                        <PromptSuggestion>Suggestion 2</PromptSuggestion>
+                        <PromptSuggestion>Suggestion 3</PromptSuggestion>
+                    </>
+                }>
+            </PromptView>
         </PromptContent>
         <PromptFooter>
             <ActionButtons className="k-prompt-actions" alignment="start">
