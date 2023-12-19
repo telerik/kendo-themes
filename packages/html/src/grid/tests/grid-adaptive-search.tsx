@@ -1,6 +1,6 @@
 import { Button } from '../../button';
 import { Searchbox } from '../../searchbox';
-import { Toolbar } from '../../toolbar';
+import { Grid, GridToolbar } from '../../grid';
 
 
 export default () =>(
@@ -10,12 +10,13 @@ export default () =>(
                 <div className="k-pane">
                     <div className="k-view k-widget">
                         <div className="k-stretched-view k-content">
-                            <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-mobile">
-                                <Toolbar className="k-grid-toolbar">
+                            <Grid className="k-grid-display-block k-grid-mobile" toolbar={(
+                                <GridToolbar>
                                     <Button className="k-grid-pdf" icon="file-pdf">Export to PDF</Button>
                                     <Searchbox className="k-grid-search" placeholder="Search..." />
-                                </Toolbar>
-                            </div>
+                                </GridToolbar>
+                            )}>
+                            </Grid>
                         </div>
                     </div>
                 </div>
@@ -26,12 +27,13 @@ export default () =>(
                 <div className="k-pane">
                     <div className="k-view k-widget">
                         <div className="k-stretched-view k-content">
-                            <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-mobile">
-                                <Toolbar className="k-grid-toolbar">
+                            <Grid className="k-grid-display-block k-grid-mobile" toolbar={(
+                                <GridToolbar>
                                     <Button className="k-grid-pdf" icon="file-pdf">Export to PDF</Button>
                                     <Searchbox className="k-grid-search" placeholder="Search..." />
-                                </Toolbar>
-                            </div>
+                                </GridToolbar>
+                            )}>
+                            </Grid>
                         </div>
                     </div>
                 </div>
