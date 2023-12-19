@@ -1,7 +1,7 @@
 import { ActionButtons } from "../../action-buttons";
 import { IconTextButton, IconButton } from "../../button";
 import { Toolbar } from "../../toolbar";
-import { Prompt, PromptHeader, PromptFooter, PromptContent } from "..";
+import { Prompt, PromptHeader, PromptFooter, PromptContent, PromptView } from "..";
 import { Popup } from "../../popup";
 
 export const PromptInPopup = (props) => (
@@ -18,7 +18,9 @@ export const PromptInPopup = (props) => (
                     <IconButton fillMode="flat" themeColor="base" icon="x" rounded="full"></IconButton>
                 </Toolbar>
             </PromptHeader>
-            <PromptContent showSearch></PromptContent>
+            <PromptContent>
+                <PromptView showSearch></PromptView>
+            </PromptContent>
             <PromptFooter>
                 <ActionButtons className="k-prompt-actions" alignment="start">
                     <IconTextButton icon="sparkles" themeColor="primary" rounded="full">Generate</IconTextButton>
