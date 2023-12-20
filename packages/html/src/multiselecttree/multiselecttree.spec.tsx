@@ -116,7 +116,7 @@ export const MultiSelectTree = (
                     </>
                 </ChipList>
                 <span className="k-input-inner">
-                    <span className="k-input-value-text">{placeholder}</span>
+                    {!tags && <span className="k-input-value-text">{placeholder}</span>}
                 </span>
                 <InputValidationIcon
                     valid={valid}
