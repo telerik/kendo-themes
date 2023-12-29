@@ -1,4 +1,4 @@
-import { Textbox, TextboxNormal, TextboxPrefix, TextboxSuffix } from '../../textbox';
+import { Textbox, TextboxNormal } from '../../textbox';
 
 const styles = `
     #test-area {
@@ -15,10 +15,10 @@ export default () =>(
             <span>TextBox Outline RTL</span>
 
             <div>
-                <TextboxNormal fillMode="outline" placeholder="TextBox..." />
+                <TextboxNormal fillMode="outline" placeholder="placeholder..." />
             </div>
             <div dir="rtl">
-                <TextboxNormal fillMode="outline" placeholder="TextBox..." />
+                <TextboxNormal fillMode="outline" placeholder="placeholder..." />
             </div>
 
             {[ 'normal', ...Textbox.states ].map((state) => (
@@ -45,20 +45,6 @@ export default () =>(
             </div>
             <div dir="rtl">
                 <TextboxNormal fillMode="outline" value="valid focus" valid focus />
-            </div>
-
-            <div>
-                <TextboxPrefix fillMode="outline"></TextboxPrefix>
-            </div>
-            <div dir="rtl">
-                <TextboxPrefix fillMode="outline"></TextboxPrefix>
-            </div>
-
-            <div>
-                <TextboxSuffix fillMode="outline"></TextboxSuffix>
-            </div>
-            <div dir="rtl">
-                <TextboxSuffix fillMode="outline"></TextboxSuffix>
             </div>
         </div>
     </>
