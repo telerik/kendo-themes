@@ -6,7 +6,8 @@ import {
     InputInnerInput,
     InputClearValue,
     InputLoadingIcon,
-    InputValidationIcon
+    InputValidationIcon,
+    InputSeparator
 } from '../input';
 import { Button } from '../button';
 import { ChipList } from '../chip';
@@ -109,7 +110,12 @@ export const MultiSelect = (
                 readonly={readonly}
                 className={classNames(props.className, MULTISELECT_CLASSNAME)}
             >
-                <InputPrefix>{prefix}</InputPrefix>
+                {prefix &&
+                <>
+                    <InputPrefix>{prefix}</InputPrefix>
+                    <InputSeparator/>
+                </>
+                }
                 <div className="k-input-values">
                     <ChipList size={size}>
                         <>
@@ -131,7 +137,12 @@ export const MultiSelect = (
                     disabled={disabled}
                     readonly={readonly}
                     value={tags ? 'value' : ''} />
-                <InputSuffix>{suffix}</InputSuffix>
+                {suffix &&
+                <>
+                    <InputSeparator/>
+                    <InputSuffix>{suffix}</InputSuffix>
+                </>
+                }
                 {showArrowButton && (
                     <Button
                         className="k-input-button"
