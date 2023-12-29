@@ -6,7 +6,8 @@ import {
     InputInnerInput,
     InputClearValue,
     InputLoadingIcon,
-    InputValidationIcon
+    InputValidationIcon,
+    InputSeparator
 } from '../input';
 
 export const TEXTBOX_CLASSNAME = `k-textbox`;
@@ -95,7 +96,12 @@ export const Textbox = (
             readonly={readonly}
             className={classNames(props.className, TEXTBOX_CLASSNAME)}
         >
-            <InputPrefix>{prefix}</InputPrefix>
+            {prefix &&
+            <>
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputSeparator/>
+            </>
+            }
             <InputInnerInput placeholder={placeholder} value={value} />
             <InputValidationIcon
                 valid={valid}
@@ -110,7 +116,12 @@ export const Textbox = (
                 disabled={disabled}
                 readonly={readonly}
                 value={value} />}
-            <InputSuffix>{suffix}</InputSuffix>
+            {suffix &&
+            <>
+                <InputSeparator/>
+                <InputSuffix>{suffix}</InputSuffix>
+            </>
+            }
         </Input>
     );
 };
