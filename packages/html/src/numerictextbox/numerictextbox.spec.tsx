@@ -4,7 +4,10 @@ import {
     InputInnerInput,
     InputClearValue,
     InputLoadingIcon,
-    InputValidationIcon
+    InputValidationIcon,
+    InputSuffix,
+    InputPrefix,
+    InputSeparator
 } from '../input';
 import { SpinButton } from '../spinbutton';
 
@@ -35,6 +38,8 @@ export type KendoNumericTextboxOptions = {
 };
 
 export type KendoNumericTextboxProps = KendoNumericTextboxOptions & {
+    prefix?: JSX.Element;
+    suffix?: JSX.Element;
     value?: string;
     placeholder?: string;
     showSpinButton?: boolean;
@@ -57,6 +62,8 @@ export const NumericTextbox = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        prefix,
+        suffix,
         value,
         placeholder,
         size,
@@ -92,6 +99,12 @@ export const NumericTextbox = (
             readonly={readonly}
             className={classNames(props.className, NUMERICTEXTBOX_CLASSNAME)}
         >
+            {prefix &&
+                <>
+                    <InputPrefix>{prefix}</InputPrefix>
+                    <InputSeparator/>
+                </>
+            }
             <InputInnerInput placeholder={placeholder} value={value} />
             <InputValidationIcon
                 valid={valid}
@@ -106,6 +119,12 @@ export const NumericTextbox = (
                 disabled={disabled}
                 readonly={readonly}
                 value={value} />}
+            {suffix &&
+                <>
+                    <InputSeparator/>
+                    <InputSuffix>{suffix}</InputSuffix>
+                </>
+            }
             {showSpinButton && (
                 <SpinButton
                     className="k-input-spinner"
