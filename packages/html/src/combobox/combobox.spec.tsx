@@ -6,7 +6,8 @@ import {
     InputInnerInput,
     InputClearValue,
     InputLoadingIcon,
-    InputValidationIcon
+    InputValidationIcon,
+    InputSeparator
 } from '../input';
 import { Button } from '../button';
 import { Popup } from '../popup';
@@ -103,7 +104,12 @@ export const Combobox = (
                 readonly={readonly}
                 className={classNames(props.className, COMBOBOX_CLASSNAME)}
             >
-                <InputPrefix>{prefix}</InputPrefix>
+                {prefix &&
+                <>
+                    <InputPrefix>{prefix}</InputPrefix>
+                    <InputSeparator/>
+                </>
+                }
                 <InputInnerInput placeholder={placeholder} value={value} />
                 <InputValidationIcon
                     valid={valid}
@@ -118,7 +124,12 @@ export const Combobox = (
                     disabled={disabled}
                     readonly={readonly}
                     value={value} />
-                <InputSuffix>{suffix}</InputSuffix>
+                {suffix &&
+                <>
+                    <InputSeparator/>
+                    <InputSuffix>{suffix}</InputSuffix>
+                </>
+                }
                 <Button
                     className="k-input-button"
                     icon="caret-alt-down"
