@@ -4,7 +4,10 @@ import {
     InputInnerInput,
     InputClearValue,
     InputLoadingIcon,
-    InputValidationIcon
+    InputValidationIcon,
+    InputPrefix,
+    InputSuffix,
+    InputSeparator
 } from '../input';
 
 export const MASKEDTEXTBOX_CLASSNAME = `k-maskedtextbox`;
@@ -33,6 +36,8 @@ export type KendoMaskedTextboxOptions = {
 };
 
 export type KendoMaskedTextboxProps = KendoMaskedTextboxOptions & {
+    prefix?: JSX.Element;
+    suffix?: JSX.Element;
     type?: string;
     value?: string;
     placeholder?: string;
@@ -54,6 +59,8 @@ export const MaskedTextbox = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        prefix,
+        suffix,
         value,
         placeholder,
         size,
@@ -88,6 +95,12 @@ export const MaskedTextbox = (
             readonly={readonly}
             className={classNames(props.className, MASKEDTEXTBOX_CLASSNAME)}
         >
+            {prefix &&
+            <>
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputSeparator/>
+            </>
+            }
             <InputInnerInput placeholder={placeholder} value={value} />
             <InputValidationIcon
                 valid={valid}
@@ -102,6 +115,12 @@ export const MaskedTextbox = (
                 disabled={disabled}
                 readonly={readonly}
                 value={value} /> }
+            {suffix &&
+                <>
+                    <InputSeparator/>
+                    <InputSuffix>{suffix}</InputSuffix>
+                </>
+            }
         </Input>
     );
 };
