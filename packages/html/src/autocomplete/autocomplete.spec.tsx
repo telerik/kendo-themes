@@ -6,7 +6,8 @@ import {
     InputInnerInput,
     InputClearValue,
     InputLoadingIcon,
-    InputValidationIcon
+    InputValidationIcon,
+    InputSeparator
 } from '../input';
 import { Popup } from '../popup';
 import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
@@ -101,7 +102,12 @@ export const Autocomplete = (
                 readonly={readonly}
                 className={classNames(props.className, AUTOCOMPLETE_CLASSNAME)}
             >
-                <InputPrefix>{prefix}</InputPrefix>
+                {prefix &&
+                <>
+                    <InputPrefix>{prefix}</InputPrefix>
+                    <InputSeparator/>
+                </>
+                }
                 <InputInnerInput placeholder={placeholder} value={value} />
                 <InputValidationIcon
                     valid={valid}
@@ -116,7 +122,12 @@ export const Autocomplete = (
                     disabled={disabled}
                     readonly={readonly}
                     value={value} />
-                <InputSuffix>{suffix}</InputSuffix>
+                {suffix &&
+                <>
+                    <InputSeparator/>
+                    <InputSuffix>{suffix}</InputSuffix>
+                </>
+                }
             </Input>
             { opened && popup &&
                 <Popup className="k-list-container k-autocomplete-popup">
