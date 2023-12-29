@@ -1,7 +1,10 @@
 import { classNames, States, Size, Roundness, FillMode } from '../misc';
 import {
     Input,
-    InputInnerTextarea
+    InputInnerTextarea,
+    InputPrefix,
+    InputSeparator,
+    InputSuffix,
 } from '../input';
 
 export const TEXTAREA_CLASSNAME = `k-textarea`;
@@ -24,7 +27,9 @@ const options = {
 const defaultProps = {
     size: Input.defaultProps.size,
     rounded: Input.defaultProps.rounded,
-    fillMode: Input.defaultProps.fillMode
+    fillMode: Input.defaultProps.fillMode,
+    flow: "vertical",
+    affixesOrientation: "horizontal"
 };
 
 export type KendoTextareaOptions = {
@@ -34,9 +39,13 @@ export type KendoTextareaOptions = {
 };
 
 export type KendoTextareaProps = KendoTextareaOptions & {
+    prefix?: JSX.Element;
+    suffix?: JSX.Element;
     rows?: number;
     value?: string;
     placeholder?: string;
+    flow?: "vertical" | "horizontal";
+    affixesOrientation?: "vertical" | "horizontal";
 };
 
 export type KendoTextareaState = { [K in (typeof states)[number]]?: boolean };
@@ -47,6 +56,8 @@ export const Textarea = (
         React.HTMLAttributes<HTMLSpanElement>
 ) => {
     const {
+        prefix,
+        suffix,
         rows,
         value,
         placeholder,
@@ -59,6 +70,8 @@ export const Textarea = (
         invalid,
         required,
         disabled,
+        flow = defaultProps.flow,
+        affixesOrientation,
         ...other
     } = props;
 
@@ -75,8 +88,29 @@ export const Textarea = (
             invalid={invalid}
             required={required}
             disabled={disabled}
-            className={classNames(props.className, TEXTAREA_CLASSNAME)}
+            className={
+                classNames(
+                    props.className,
+                    TEXTAREA_CLASSNAME,
+                    {
+                        [`!k-flex-col`]: flow === "vertical",
+                        [`!k-flex-row`]: flow === "horizontal"
+                    }
+                )
+            }
         >
+            {prefix &&
+            <>
+                <InputPrefix
+                    className={classNames({
+                        ["!k-align-items-start"]: flow === affixesOrientation
+                    })}
+                    direction={affixesOrientation} >
+                    {prefix}
+                </InputPrefix>
+                <InputSeparator direction={flow === "horizontal" ? "vertical" : "horizontal"}/>
+            </>
+            }
             <InputInnerTextarea
                 className={classNames(
                     "!k-overflow-auto",
@@ -85,6 +119,18 @@ export const Textarea = (
                 placeholder={placeholder}
                 rows={rows}
             />
+            {suffix &&
+            <>
+                <InputSeparator direction={flow === "horizontal" ? "vertical" : "horizontal"}/>
+                <InputSuffix
+                    className={classNames({
+                        ["!k-align-items-start"]: flow === affixesOrientation
+                    })}
+                    direction={affixesOrientation}>
+                    {suffix}
+                </InputSuffix>
+            </>
+            }
         </Input>
     );
 };
