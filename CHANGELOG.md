@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.7](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.6...v7.1.0-dev.7) (2024-01-02)
+
+
+### Bug Fixes
+
+* **drawer:** content element is not visible ([541dde7](https://github.com/telerik/kendo-themes/commit/541dde7abbd16750bf1d78f04806ffe23a3697ce))
+* show multiselecttree placeholder text ([a04fad2](https://github.com/telerik/kendo-themes/commit/a04fad2f7fef8e3868aacf5ad2d8c9bed54ee925))
+
+
+### Features
+
+* **input:** add support for prefix and suffix ([f3af6f6](https://github.com/telerik/kendo-themes/commit/f3af6f6ecedab8d356bdd8334b412654c3ce59a7))
+* **input:** add valid state styles ([980476d](https://github.com/telerik/kendo-themes/commit/980476de0437e8d0d605534bf5dc312b030dce76))
+
+
+
+
+
 # [7.1.0-dev.6](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.5...v7.1.0-dev.6) (2024-01-01)
 
 **Note:** Version bump only for package kendo-themes.repo
