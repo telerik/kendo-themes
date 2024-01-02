@@ -5413,6 +5413,46 @@ The following table lists the available variables for customizing the Default th
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the invalid items.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-valid-bg</td>
+    <td>String</td>
+    <td><code>null</code></td>
+    <td><code>initial</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the valid items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-valid-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-success</code></td>
+    <td><span class="color-preview" style="background-color: #37b400"></span><code>#37b400</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the valid items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-valid-border</td>
+    <td>Color</td>
+    <td><code>$kendo-color-success</code></td>
+    <td><span class="color-preview" style="background-color: #37b400"></span><code>#37b400</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the valid items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-valid-shadow</td>
+    <td>Null</td>
+    <td><code>null</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the valid items.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -9596,10 +9636,10 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-input-separator-color</td>
+    <td>$kendo-input-separator-text</td>
     <td>Color</td>
-    <td><code>$kendo-input-text</code></td>
-    <td><span class="color-preview" style="background-color: #424242"></span><code>#424242</code></td>
+    <td><code>$kendo-input-border</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
@@ -9613,6 +9653,46 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The opacity of the Input separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-prefix-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input prefix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-suffix-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input suffix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-prefix-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input prefix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-suffix-text</td>
+    <td>Color</td>
+    <td><code>$kendo-subtle-text</code></td>
+    <td><span class="color-preview" style="background-color: #666666"></span><code>#666666</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input suffix.</div></div>
     </td>
 </tr>
 <tr>
@@ -9633,6 +9713,26 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the invalid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-valid-border</td>
+    <td>Color</td>
+    <td><code>$kendo-valid-border</code></td>
+    <td><span class="color-preview" style="background-color: #37b400"></span><code>#37b400</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the valid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-valid-shadow</td>
+    <td>Null</td>
+    <td><code>$kendo-valid-shadow</code></td>
+    <td><code>null</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of the valid Input components.</div></div>
     </td>
 </tr>
 </tbody>
