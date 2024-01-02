@@ -20,13 +20,13 @@ jobs:
     steps:
 
       - name: Checkout branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
@@ -40,18 +40,14 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
-      - name: Bootstrap
-        run: |
-          npm run bootstrap
-
       - name: Lint styles
         run: |
           npm run stylelint
 
       - name: Ensure standalone build
         run: |
-          npm run sass:standalone --prefix packages/${{ matrix.theme }}
+          npm run sass:standalone --prefix packages/${{ matrix.theme }} --if-present
 
       - name: Ensure flat build
         run: |
-          npm run sass:flat
+          npm run sass:flat --prefix packages/${{ matrix.theme }} --if-present

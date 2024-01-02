@@ -3,6 +3,168 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.6](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.5...v7.1.0-dev.6) (2024-01-01)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+# [7.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.4...v7.1.0-dev.5) (2023-12-25)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+# [7.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.3...v7.1.0-dev.4) (2023-12-20)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+# [7.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.2...v7.1.0-dev.3) (2023-12-19)
+
+
+### Features
+
+* add prompt component styles ([6c8e441](https://github.com/telerik/kendo-themes/commit/6c8e441db0ed161ce0f176c9e0451f927d4d387b))
+
+
+
+
+
+# [7.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.1...v7.1.0-dev.2) (2023-12-18)
+
+
+### Bug Fixes
+
+* **common:** incorrectly set current time marker width ([3a2ac98](https://github.com/telerik/kendo-themes/commit/3a2ac9849639c18154d8cd82a6b24431ca7e32e2))
+
+
+
+
+
+# [7.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.0...v7.1.0-dev.1) (2023-12-12)
+
+
+### Features
+
+* **notification:** unify groups rendering ([5749af0](https://github.com/telerik/kendo-themes/commit/5749af00dde1ecedb43787a123e1e5112b6df644))
+* **timeline:** unify Timeline rendering ([80395e4](https://github.com/telerik/kendo-themes/commit/80395e4d3bb0931586ff89c1d28cddc4ef7b1cda))
+
+
+
+
+
+# [7.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.3...v7.1.0-dev.0) (2023-12-11)
+
+
+### Bug Fixes
+
+* **grid:** sizing in grid hierarchy ([c71f610](https://github.com/telerik/kendo-themes/commit/c71f610d24d558c29431dd77db9d00d6fd5d57d6))
+
+
+### Features
+
+* **card:** unify rendering ([4923219](https://github.com/telerik/kendo-themes/commit/4923219759c2d69994720e12577c607dce4c4042))
+* **tooltip:** unify rendering ([512dd81](https://github.com/telerik/kendo-themes/commit/512dd81d15eb0cdcc910d9234c7d2e5fa4f397f0))
+
+
+
+
+
+## [7.0.3-dev.3](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.2...v7.0.3-dev.3) (2023-12-04)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [7.0.3-dev.2](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.1...v7.0.3-dev.2) (2023-11-27)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [7.0.3-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.0...v7.0.3-dev.1) (2023-11-20)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [7.0.3-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.2...v7.0.3-dev.0) (2023-11-13)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [7.0.2](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.5...v7.0.2) (2023-11-06)
+
+
+### Bug Fixes
+
+* **grid:** edit buttons misalignment ([8692742](https://github.com/telerik/kendo-themes/commit/8692742b5b6d545918e9a8373d17c8db47c4b970))
+* **listbox:** prevent listbox from overlapping other elements ([1902684](https://github.com/telerik/kendo-themes/commit/19026845b08b3ee47c4ab1b748666d741d391ef5))
+
+
+
+
+
+## [7.0.2-dev.5](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.4...v7.0.2-dev.5) (2023-11-06)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [7.0.2-dev.4](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.3...v7.0.2-dev.4) (2023-10-30)
+
+
+### Bug Fixes
+
+* **slider:** missing animation in rtl mode ([a5ca520](https://github.com/telerik/kendo-themes/commit/a5ca5203d9df1862a90f960a8450b6a70f211812))
+
+
+
+
+
+## [7.0.2-dev.3](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.2...v7.0.2-dev.3) (2023-10-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [7.0.2-dev.2](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.1...v7.0.2-dev.2) (2023-10-16)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
+## [7.0.2-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.0...v7.0.2-dev.1) (2023-10-09)
+
+**Note:** Version bump only for package @progress/kendo-theme-default
+
+
+
+
+
 ## [7.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.1...v7.0.2-dev.0) (2023-10-04)
 
 **Note:** Version bump only for package @progress/kendo-theme-default

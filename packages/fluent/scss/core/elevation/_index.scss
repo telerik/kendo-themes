@@ -39,6 +39,6 @@ $_default-elevation: (
     ),
 );
 
-/// Global Elevation.
+/// The global default Elevation map.
 /// @group elevation
 $kendo-elevation: $_default-elevation !default;

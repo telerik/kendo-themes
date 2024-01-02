@@ -53,6 +53,14 @@ export default () =>(
                 <MultiSelectValue fillMode="flat" invalid focus>invalid + focus</MultiSelectValue>
             </div>
 
+            <div>valid + focus</div>
+            <div>
+                <MultiSelectValue fillMode="flat" valid focus>valid + focus</MultiSelectValue>
+            </div>
+            <div dir="rtl">
+                <MultiSelectValue fillMode="flat" valid focus>valid + focus</MultiSelectValue>
+            </div>
+
             <div>multi line + overflow</div>
             <div>
                 <MultiSelectNormal fillMode="flat"

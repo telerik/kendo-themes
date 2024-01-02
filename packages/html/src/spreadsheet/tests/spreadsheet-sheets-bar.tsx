@@ -1,9 +1,9 @@
 import { Button } from "../../button";
 import { MenuList, MenuItem, MenuSeparator } from "../../menu";
 import { MenuButton } from "../../menu-button";
-import { Window } from "../../window";
+import { WindowNormal } from "../../window";
 import { Popup } from "../../popup";
-import { Form, FormField } from "../../form";
+import { FormNormal, FormField } from "../../form";
 import { Textbox } from "../../textbox";
 
 const style = `
@@ -93,21 +93,21 @@ export default () =>(
 
             <span>Sheets Bar Rename</span>
             <section>
-                <Window title="Rename Sheet" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="stretched" actionButtons={
+                <WindowNormal title="Rename Sheet" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="stretched" actionButtons={
                     <>
                         <Button themeColor="primary">Rename</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Rename sheet" editor={ <Textbox placeholder="Sheet name"/> }></FormField>
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
             <span>Sheets Bar Delete</span>
             <section>
-                <Window title="Delete Sheet" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="stretched" actionButtons={
+                <WindowNormal title="Delete Sheet" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="stretched" actionButtons={
                     <>
                         <Button themeColor="primary">Delete</Button>
                         <Button>Cancel</Button>
@@ -115,7 +115,7 @@ export default () =>(
                 }>
                     <p>The deleted sheet data will be lost.</p>
                     <p>Are you sure you want to proceed?</p>
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>

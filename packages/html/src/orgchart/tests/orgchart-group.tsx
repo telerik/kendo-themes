@@ -1,4 +1,4 @@
-import { Orgchart, OrgchartGroup, OrgchartNode } from '../../orgchart';
+import { OrgchartGroupNormal, OrgchartGroupVertical } from '../../orgchart';
 
 
 const styles = `
@@ -14,30 +14,12 @@ export default () =>(
 
             <span>Horizontal</span>
             <section>
-                <Orgchart width="100%" height="285px" orientation="horizontal" justifyContent="around">
-                    <OrgchartGroup title="Group Title" subtitle="Group SubTitle" line plus orientation="horizontal">
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#0275d8"></OrgchartNode>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#0275d8"></OrgchartNode>
-                    </OrgchartGroup>
-                    <OrgchartGroup title="Group Title" subtitle="Group SubTitle" line plus orientation="horizontal">
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#0275d8"></OrgchartNode>
-                    </OrgchartGroup>
-                </Orgchart>
+                <OrgchartGroupNormal width="100%" height="285px" justifyContent="around"/>
             </section>
 
             <span>Vertical</span>
             <section>
-                <Orgchart width="100%" height="435px" orientation="horizontal" justifyContent="around">
-                    <OrgchartGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical">
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                    </OrgchartGroup>
-                    <OrgchartGroup title="Group Title" subtitle="Group SubTitle" orientation="vertical">
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                        <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                    </OrgchartGroup>
-                </Orgchart>
+                <OrgchartGroupVertical width="100%" height="435px" justifyContent="around" />
             </section>
 
         </div>

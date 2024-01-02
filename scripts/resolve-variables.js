@@ -10,7 +10,7 @@ const srcFile = path.resolve( themeDir, 'scss', 'all.scss' );
 const variablesJson = path.resolve( themeDir, `dist/meta/variables.json` );
 const variablesScss = path.resolve( themeDir, `dist/meta/variables.scss` );
 const output = { path: path.resolve( themeDir, 'dist' ), filename: 'all.scss' };
-const nodeModules = path.resolve( themeDir, 'node_modules' );
+const nodeModules = path.resolve( themeDir, '../../node_modules' );
 const metaDir = path.resolve( themeDir, 'dist/meta/' );
 
 function _capitalize(string) {

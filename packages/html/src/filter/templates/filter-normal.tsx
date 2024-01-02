@@ -1,4 +1,4 @@
-import { Filter, FilterToolbar, FilterLines, FilterPreview, FilterItem } from "../../filter";
+import { Filter, FilterToolbar, FilterLines, FilterItem } from "../../filter";
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { DatePicker } from '../../datepicker';
@@ -70,24 +70,7 @@ export const FilterNormal = (props) => (
                         </Toolbar>
                     </FilterToolbar>
                 </FilterItem>
-            </FilterLines>,
-            <FilterPreview
-                fields={[
-                    { name: "bracket", value: "(" },
-                    { name: "field", value: "Price" },
-                    { name: "criteria", value: "Is greater than" },
-                    { name: "value", value: "'100,00'" },
-                    { name: "operator", value: "AND" },
-                    { name: "bracket", value: "(" },
-                    { name: "bracket", value: "(" },
-                    { name: "field", value: "FirstOrdered" },
-                    { name: "criteria", value: "Is before" },
-                    { name: "value", value: "'Thursday Jan 21 2021'" },
-                    { name: "bracket", value: ")" },
-                    { name: "bracket", value: ")" },
-                    { name: "bracket", value: ")" },
-                ]}>
-            </FilterPreview>
+            </FilterLines>
         ]}
         {...props}
     >

@@ -10,6 +10,8 @@ import {
 import { Button } from '../button';
 import { ChipList } from '../chip';
 import { Popup } from '../popup';
+import { ActionSheet, ActionSheetHeader, KendoActionSheetProps } from '../action-sheet';
+import { TreeviewGroup, TreeviewItem, Treeview } from '../treeview';
 
 export const MULTISELECTTREE_CLASSNAME = `k-multiselecttree`;
 
@@ -52,6 +54,8 @@ export type KendoMultiSelectTreeProps = KendoMultiSelectTreeOptions & {
     showArrowButton?: boolean;
     opened?: boolean;
     dir?: 'ltr' | 'rtl';
+    adaptive?: boolean;
+    adaptiveSettings?: KendoActionSheetProps;
 };
 
 export type KendoMultiSelectTreeState = { [K in (typeof states)[number]]?: boolean };
@@ -81,6 +85,8 @@ export const MultiSelectTree = (
         readonly,
         opened,
         dir,
+        adaptive,
+        adaptiveSettings,
         ...other
     } = props;
 
@@ -110,7 +116,7 @@ export const MultiSelectTree = (
                     </>
                 </ChipList>
                 <span className="k-input-inner">
-                    <span className="k-input-value-text">{placeholder}</span>
+                    {!tags && <span className="k-input-value-text">{placeholder}</span>}
                 </span>
                 <InputValidationIcon
                     valid={valid}
@@ -140,6 +146,37 @@ export const MultiSelectTree = (
                 <Popup className="k-multiselecttree-popup" dir={dir}>
                     {popup}
                 </Popup>
+            }
+            { adaptive &&
+                <ActionSheet adaptive={true} {...adaptiveSettings} >
+                    <ActionSheetHeader
+                        filter
+                        actions={[ 'x' ]}
+                        title="Select value">
+                    </ActionSheetHeader>
+                    <Treeview size="large">
+                        <TreeviewItem text="Root 1" />
+                        <TreeviewItem text="Root 2" expanded>
+                            <TreeviewGroup>
+                                <TreeviewItem text="Child 2.1" />
+                                <TreeviewItem text="Child 2.2">
+                                    <TreeviewGroup>
+                                        <TreeviewItem text="Child 2.2.1" />
+                                    </TreeviewGroup>
+                                </TreeviewItem>
+                                <TreeviewItem text="Child 2.3" />
+                                <TreeviewItem leafClassName="k-treeview-load-more-button" text="Load more ..." />
+                            </TreeviewGroup>
+                        </TreeviewItem>
+                        <TreeviewItem text="Root 3">
+                            <TreeviewGroup>
+                                <TreeviewItem text="Child 3.1" />
+                                <TreeviewItem text="Child 3.2" />
+                                <TreeviewItem text="Child 3.3" />
+                            </TreeviewGroup>
+                        </TreeviewItem>
+                    </Treeview>
+                </ActionSheet>
             }
         </>
     );

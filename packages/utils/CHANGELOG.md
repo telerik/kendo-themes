@@ -3,6 +3,142 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.6](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.5...v7.1.0-dev.6) (2024-01-01)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [7.1.0-dev.5](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.4...v7.1.0-dev.5) (2023-12-25)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [7.1.0-dev.4](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.3...v7.1.0-dev.4) (2023-12-20)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [7.1.0-dev.3](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.2...v7.1.0-dev.3) (2023-12-19)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [7.1.0-dev.2](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.1...v7.1.0-dev.2) (2023-12-18)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [7.1.0-dev.1](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.0...v7.1.0-dev.1) (2023-12-12)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+# [7.1.0-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.3...v7.1.0-dev.0) (2023-12-11)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.3-dev.3](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.2...v7.0.3-dev.3) (2023-12-04)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.3-dev.2](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.1...v7.0.3-dev.2) (2023-11-27)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.3-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.3-dev.0...v7.0.3-dev.1) (2023-11-20)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.3-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.2...v7.0.3-dev.0) (2023-11-13)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.2](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.5...v7.0.2) (2023-11-06)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.2-dev.5](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.4...v7.0.2-dev.5) (2023-11-06)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.2-dev.4](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.3...v7.0.2-dev.4) (2023-10-30)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.2-dev.3](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.2...v7.0.2-dev.3) (2023-10-23)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.2-dev.2](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.1...v7.0.2-dev.2) (2023-10-16)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
+## [7.0.2-dev.1](https://github.com/telerik/kendo-themes/compare/v7.0.2-dev.0...v7.0.2-dev.1) (2023-10-09)
+
+**Note:** Version bump only for package @progress/kendo-theme-utils
+
+
+
+
+
 ## [7.0.2-dev.0](https://github.com/telerik/kendo-themes/compare/v7.0.1...v7.0.2-dev.0) (2023-10-04)
 
 **Note:** Version bump only for package @progress/kendo-theme-utils

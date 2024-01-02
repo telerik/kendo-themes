@@ -271,11 +271,17 @@ $kendo-input-spinner-icon-offset: null !default;
 
 /// The color of the Input separator.
 /// @group input
-$kendo-input-separator-color: $kendo-input-text !default;
+$kendo-input-separator-text: $kendo-input-border !default;
 /// The opacity of the Input separator.
 /// @group input
 $kendo-input-separator-opacity: .5 !default;
 
+/// The text color of the Input prefix.
+/// @group input
+$kendo-input-prefix-text: $kendo-subtle-text !default;
+/// The text color of the Input suffix.
+/// @group input
+$kendo-input-suffix-text: $kendo-subtle-text !default;
 
 /// The border color of the invalid Input components.
 /// @group input
@@ -283,6 +289,13 @@ $kendo-input-invalid-border: $kendo-invalid-border !default;
 /// The shadow of the invalid Input components.
 /// @group input
 $kendo-input-invalid-shadow: $kendo-invalid-shadow !default;
+
+/// The border color of the valid Input components.
+/// @group input
+$kendo-input-valid-border: $kendo-valid-border !default;
+/// The shadow of the valid Input components.
+/// @group input
+$kendo-input-valid-shadow: $kendo-valid-shadow !default;
 
 /// The background color of the Picker components.
 /// @group picker

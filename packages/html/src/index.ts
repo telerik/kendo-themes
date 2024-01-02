@@ -60,7 +60,7 @@ export * from './numerictextbox/index';
 export * from './searchbox/index';
 export * from './switch/index';
 export * from './upload/index';
-// export * from './dropzone/index';
+export * from './dropzone/index';
 
 // Command interfaces
 export * from './fab/index';
@@ -74,7 +74,7 @@ export * from './dialog/index';
 // export * from './drawer/index';
 export * from './notification/index';
 export * from './popover/index';
-// export * from './tooltip/index';
+export * from './tooltip/index';
 export * from './window/index';
 
 // Navigation
@@ -108,10 +108,11 @@ export * from './filter/index';
 // export * from './adaptive/index''
 // export * from './chat/index';
 // export * from './mediaplayer/index';
-// export * from './timeline/index';
+export * from './timeline/index';
 // export * from './pdf-viewer/index';
 // export * from './scroller/index';
 export * from './scrollview/index';
+export * from './prompt/index';
 
 // Editors
 export * from './editor/index';

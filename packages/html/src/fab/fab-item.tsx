@@ -56,3 +56,5 @@ export const FloatingActionButtonItem = (
         </li>
     );
 };
+
+FloatingActionButtonItem.states = states;

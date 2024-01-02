@@ -1,4 +1,4 @@
-import { Textbox, TextboxNormal, TextboxPrefix, TextboxSuffix } from '../../textbox';
+import { Textbox, TextboxNormal } from '../../textbox';
 
 const styles = `
     #test-area {
@@ -41,17 +41,10 @@ export default () =>(
             </div>
 
             <div>
-                <TextboxPrefix fillMode="flat"></TextboxPrefix>
+                <TextboxNormal fillMode="flat" value="valid focus" valid focus />
             </div>
             <div dir="rtl">
-                <TextboxPrefix fillMode="flat"></TextboxPrefix>
-            </div>
-
-            <div>
-                <TextboxSuffix fillMode="flat"></TextboxSuffix>
-            </div>
-            <div dir="rtl">
-                <TextboxSuffix fillMode="flat"></TextboxSuffix>
+                <TextboxNormal fillMode="flat" value="valid focus" valid focus />
             </div>
         </div>
     </>

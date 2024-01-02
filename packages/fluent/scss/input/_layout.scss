@@ -143,6 +143,11 @@
         &:invalid {
             box-shadow: none;
         }
+
+        // Valid
+        &:valid {
+            box-shadow: none;
+        }
     }
     span.k-input-inner {
         white-space: nowrap;
@@ -207,23 +212,49 @@
     // Input prefix and suffix
     .k-input-prefix,
     .k-input-suffix {
-        border: none;
+        border-color: inherit;
         display: flex;
-        flex-flow: row nowrap;
         align-items: center;
         flex: none;
 
         > * {
             flex-shrink: 0;
+            border: none;
+        }
+
+        &-vertical {
+            flex-flow: column wrap;
+        }
+
+        &-horizontal {
+            flex-flow: row wrap;
+        }
+    }
+
+
+    // Input separator
+    .k-input-separator {
+        margin: 0;
+        border-style: solid;
+        border-color: inherit;
+        height: auto;
+        align-self: stretch;
+
+        &-horizontal {
+            margin-inline: $kendo-input-md-padding-y;
+            border-width: 1px 0 0;
+        }
+
+        &-vertical {
+            margin-block: $kendo-input-md-padding-y;
+            border-width: 0 0 0 1px;
         }
     }
 
     // Input with icon styles
     .k-input-icon,
     .k-input-validation-icon,
-    .k-input-loading-icon,
-    .k-input-prefix > .k-icon,
-    .k-input-suffix > .k-icon {
+    .k-input-loading-icon {
         padding-inline: var( --INTERNAL--kendo-input-padding-y, #{$kendo-input-md-padding-y} );
         padding-block: var( --INTERNAL--kendo-input-padding-y, #{$kendo-input-md-padding-y} );
         flex: none;
@@ -283,7 +314,7 @@
     }
 
 
-    // // Clear value
+    // Clear value
     .k-clear-value {
         width: var( --INTERNAL--kendo-input-icon-size, min-content );
         height: var( --INTERNAL--kendo-input-icon-size, min-content );
@@ -413,8 +444,11 @@
 
         }
 
+        &.k-valid,
         &.k-invalid,
+        &.ng-valid.ng-touched,
         &.ng-invalid.ng-touched,
+        &.ng-valid.ng-dirty
         &.ng-invalid.ng-dirty {
 
             &:focus,
@@ -464,6 +498,25 @@
 
             &.k-icon-picker .k-input-inner {
                 width: var( --kendo-input-icon-picker-width, #{$_button-width} );
+            }
+
+            .k-input-prefix > .k-icon,
+            .k-input-prefix > .k-input-prefix-text,
+            .k-input-suffix > .k-icon,
+            .k-input-suffix > .k-input-suffix-text {
+                padding-block: $_padding-y;
+                padding-inline: $_padding-y;
+                box-sizing: content-box;
+            }
+
+            .k-input-separator {
+                &-horizontal {
+                    margin-inline: $_padding-y;
+                }
+
+                &-vertical {
+                    margin-block: $_padding-y;
+                }
             }
         }
     }

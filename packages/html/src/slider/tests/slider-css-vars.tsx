@@ -1,4 +1,4 @@
-import { Slider, SliderTick } from '../../slider';
+import { SliderNormal, SliderVertical, SliderRange, SliderRangeVertical, SliderTick } from '../../slider';
 
 
 const style = `
@@ -31,7 +31,7 @@ export default () =>(
 
 
             <section>
-                <Slider>
+                <SliderNormal>
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -53,10 +53,10 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick label large text="100"/>
-                </Slider>
+                </SliderNormal>
             </section>
             <section>
-                <Slider type="range">
+                <SliderRange>
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -78,10 +78,10 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick label large text="100"/>
-                </Slider>
+                </SliderRange>
             </section>
             <section dir="rtl">
-                <Slider dir="rtl">
+                <SliderNormal dir="rtl">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -103,10 +103,10 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick label large text="100"/>
-                </Slider>
+                </SliderNormal>
             </section>
             <section dir="rtl">
-                <Slider type="range" dir="rtl">
+                <SliderRange dir="rtl">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -128,12 +128,12 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick label large text="100"/>
-                </Slider>
+                </SliderRange>
             </section>
 
 
             <section>
-                <Slider orientation="vertical">
+                <SliderVertical>
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -155,10 +155,10 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick label large text="100"/>
-                </Slider>
+                </SliderVertical>
             </section>
             <section>
-                <Slider type="range" orientation="vertical">
+                <SliderRangeVertical>
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -180,10 +180,10 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick label large text="100"/>
-                </Slider>
+                </SliderRangeVertical>
             </section>
             <section dir="rtl">
-                <Slider orientation="vertical" dir="rtl">
+                <SliderVertical dir="rtl">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -205,10 +205,10 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick label large text="100"/>
-                </Slider>
+                </SliderVertical>
             </section>
             <section dir="rtl">
-                <Slider type="range" orientation="vertical" dir="rtl">
+                <SliderRangeVertical dir="rtl">
                     <SliderTick label large text="0"/>
                     <SliderTick />
                     <SliderTick />
@@ -230,7 +230,7 @@ export default () =>(
                     <SliderTick />
                     <SliderTick />
                     <SliderTick label large text="100"/>
-                </Slider>
+                </SliderRangeVertical>
             </section>
 
         </div>

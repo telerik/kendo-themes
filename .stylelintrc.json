@@ -35,7 +35,18 @@
         "declaration-no-important": true,
         "declaration-block-no-redundant-longhand-properties": [
             true,
-            { "ignoreShorthands": [ "inset" ] }
+            { "ignoreShorthands": [
+                "inset",
+                "inset-inline",
+                "inset-block",
+                "padding-inline",
+                "padding-block",
+                "margin-inline",
+                "margin-block",
+                "overflow",
+                "place-content",
+                "place-items"
+            ] }
         ],
 
         "scss/at-import-partial-extension": "always",
@@ -46,6 +57,7 @@
         "scss/at-extend-no-missing-placeholder": null,
         "scss/dollar-variable-pattern": null,
         "scss/dollar-variable-empty-line-before": null,
-        "scss/double-slash-comment-empty-line-before": null
+        "scss/double-slash-comment-empty-line-before": null,
+        "scss/load-no-partial-leading-underscore": null
     }
 }

@@ -1,10 +1,10 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Textarea } from '../../textarea';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
-import { Upload } from '../../upload';
-import { Dropzone } from '../../dropzone';
+import { UploadNormal } from '../../upload';
+import { DropzoneWithNote } from '../../dropzone';
 import { DropdownList } from '../../dropdownlist';
 import { ListBox } from '../../listbox';
 import { ListItem } from '../../list';
@@ -23,7 +23,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Insert comment" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Insert comment" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Insert</Button>
                         <Button>Cancel</Button>
@@ -31,27 +31,27 @@ export default () =>(
                         <Button fillMode="clear" themeColor="primary">Remove comment</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Comment" editor={ <Textarea /> }/>
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Insert image" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Insert image" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Insert</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Dropzone />
+                    <DropzoneWithNote />
 
-                    <Upload async status="upload"></Upload>
-                </Window>
+                    <UploadNormal status="upload"></UploadNormal>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Insert Link" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Insert Link" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Insert</Button>
                         <Button>Cancel</Button>
@@ -59,15 +59,15 @@ export default () =>(
                         <Button fillMode="clear" themeColor="primary">Remove link</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Select link" editor={ <DropdownList value="URL" /> } />
                         <FormField label="URL address" editor={ <Textbox value="Input value" /> } />
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Insert Link" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Insert Link" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Insert</Button>
                         <Button>Cancel</Button>
@@ -75,7 +75,7 @@ export default () =>(
                         <Button fillMode="clear" themeColor="primary">Remove link</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Select link" editor={ <DropdownList value="Internal" /> } />
                         <FormField label="Cell reference" editor={ <Textbox value="B3:B11" /> } />
                         <FormField label="From sheet" editor={
@@ -86,21 +86,21 @@ export default () =>(
                                 <ListItem>Sheet 4</ListItem>
                             </ListBox>
                         }/>
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Insert Chart" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Insert Chart" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Insert</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Select chart type" editor={ <DropdownList value="Donut" /> } />
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
         </div>

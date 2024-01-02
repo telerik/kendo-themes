@@ -2,16 +2,26 @@
   "name": "kendo-themes.repo",
   "version": "0.0.0",
   "private": true,
+  "workspaces": [
+    "./packages/core",
+    "./packages/utils",
+    "./packages/default",
+    "./packages/bootstrap",
+    "./packages/classic",
+    "./packages/fluent",
+    "./packages/material",
+    "./packages/nouvelle",
+    "./packages/html"
+  ],
   "devDependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@commitlint/core": "^17.0.0",
-    "@progress/kendo-e2e": "^1.0.0",
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "@commitlint/core": "^18.2.0",
+    "@progress/kendo-e2e": "^2.1.1",
     "@progress/kendo-theme-tasks": "^1.17.6",
-    "typescript": "^5.0.3",
+    "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
-    "@types/node": "^20.2.5",
     "chokidar": "^3.5.3",
     "esbuild": "^0.19.2",
     "eslint": "^8.17.0",
@@ -19,22 +29,22 @@
     "glob": "^10.2.2",
     "gulp": "^4.0.2",
     "http-server": "^14.1.1",
-    "husky": "^7.0.4",
-    "lerna": "^5.5.2",
-    "lint-staged": "^14.0.1",
-    "nunjucks": "^3.2.3",
-    "pastshots": "^1.6.2",
+    "husky": "^8.0.0",
+    "lerna": "^8.0.0",
+    "lint-staged": "^15.0.2",
     "node-sass": "^9.0.0",
+    "nunjucks": "^3.2.3",
     "sass": "^1.63.6",
     "sass-build": "^1.1.6",
     "sass-embedded": "^1.63.6",
     "sass-unused": "^0.5.0",
     "sassdoc": "^2.7.4",
     "semver": "^7.3.7",
-    "stylelint": "^15.4.0",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-standard-scss": "^11.0.0",
-    "stylelint-scss": "^5.0.0"
+    "stylelint": "^16.0.2",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^12.0.0",
+    "stylelint-scss": "^6.0.0",
+    "typescript": "^5.0.3"
   },
   "peerDependencies": {
     "node-sass": "^9.0.0",
@@ -43,48 +53,39 @@
     "sass-embedded": "^1.63.6"
   },
   "scripts": {
+    "prepare": "husky install",
     "start": "node ./scripts/start-dev-server.js",
-    "setup": "bash ./scripts/setup.sh",
     "clean": "find . -name \"node_modules\" -type d -prune | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune -maxdepth 2 | xargs rm -rf",
     "clean:tests": "node ./scripts/cleanup-test-results.js",
-    "bootstrap": "lerna clean && lerna bootstrap",
     "dist:flat": "gulp dist:flat",
     "dist:swatches": "gulp dist:swatches",
-    "sass": "sass-build",
-    "sass:flat": "npm run dist:flat && sass-build --config sass-flat.config.js",
-    "sass:swatches": "npm run dist:swatches && sass-build --config sass-swatches.config.js",
-    "sass:standalone": "lerna run sass:standalone",
+    "sass": "npm run sass -ws --if-present",
+    "sass:flat": "npm run sass:flat -ws --if-present",
+    "sass:swatches": "npm run sass:swatches -ws --if-present",
+    "sass:standalone": "npm run sass:standalone -ws --if-present",
     "build": "npm run sass && npm run build:scripts",
     "build:scripts": "npm run build --prefix packages/html",
     "build:tests": "npm run build:tests --prefix packages/html",
     "eslint": "eslint \"**/*.{js,jsx,ts,tsx,mjs}\"",
     "check-types": "npm run check-types --prefix packages/html",
     "stylelint": "stylelint \"**/*.scss\"",
-    "html-validate": "html-validate tests",
     "lint": "npm run eslint && npm run stylelint",
     "lint-staged": "lint-staged --verbose",
-    "docs": "lerna run docs",
-    "docs:check": "npm run docs && lerna exec --ignore @progress/kendo-themes-html -- git diff --exit-code --quiet -- docs/",
+    "docs": "npm run docs -ws --if-present",
+    "docs:check": "npm run docs -ws --if-present -- git diff --exit-code --quiet -- docs/",
     "render-test-pages": "node ./scripts/render-test-pages.mjs",
     "create-screenshots": "./build/create-screenshots.sh",
     "embed-assets": "gulp assets",
     "create-component": "gulp create-component",
-    "update": "npx npm-check-updates --upgrade",
-    "test-contrast": "node ./scripts/test-contrast.mjs"
+    "test-contrast": "node ./scripts/test-contrast.mjs",
+    "test:integrations": "npm run build --prefix integrations"
   },
   "engines": {
-    "node": "^18"
+    "node": "^20"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint",
     "*.{css,scss}": "stylelint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run stylelint && npm run lint-staged",
-      "pre-push": "npm run sass && npm run docs:check",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }

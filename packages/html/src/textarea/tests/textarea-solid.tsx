@@ -41,6 +41,13 @@ export default () =>(
             </div>
 
             <div>
+                <TextareaNormal value="valid focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <TextareaNormal value="valid focus" valid focus />
+            </div>
+
+            <div>
                 <TextareaNormal rows={3} value='Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."'/>
             </div>
             <div>

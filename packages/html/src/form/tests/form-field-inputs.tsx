@@ -1,4 +1,3 @@
-import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
 import { FloatingLabel } from '../../floating-label';
@@ -7,8 +6,9 @@ import { NumericTextbox } from '../../numerictextbox';
 import { RadioButtonWithLabelAfter, RadioGroup, RadioItem } from '../../radio';
 import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
-import { Upload, UploadFile } from '../../upload';
-import { Form, FormField } from '../../form';
+import { UploadChunk, UploadFile } from '../../upload';
+import { FormField, FormHorizontal, FormNormal } from '../../form';
+import { SliderNormal } from '../../slider';
 
 
 const styles = `
@@ -32,8 +32,9 @@ export default () =>(
             <span>Horizontal Form</span>
 
             <section>
-                <Form>
-
+                <FormNormal
+                    formButtons={null}
+                >
                     <FormField
                         label="Textbox:"
                         editor={ <Textbox/> }
@@ -113,35 +114,7 @@ export default () =>(
                     <FormField
                         label="Slider:"
                         editor={
-                            <div className="k-slider k-slider-horizontal">
-                                <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
-                                <div className="k-slider-track-wrap">
-                                    <ul className="k-reset k-slider-items">
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">0</span>
-                                        </li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">5</span>
-                                        </li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">10</span>
-                                        </li>
-                                    </ul>
-                                    <div className="k-slider-track">
-                                        <div className="k-slider-selection"></div>
-                                        <a href="#" className="k-draghandle k-draghandle-end"></a>
-                                    </div>
-                                </div>
-                                <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
-                            </div>
+                            <SliderNormal />
                         }
                     >
                     </FormField>
@@ -167,20 +140,20 @@ export default () =>(
                     <FormField
                         label="Upload"
                         editor={
-                            <Upload async status="done">
+                            <UploadChunk status="done">
                                 <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
-                            </Upload>
+                            </UploadChunk>
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormNormal>
             </section>
 
 
             <section>
-                <Form orientation="horizontal">
-
+                <FormHorizontal
+                    formButtons={null}
+                >
                     <FormField
                         label="Textbox:"
                         editor={ <Textbox/> }
@@ -258,37 +231,9 @@ export default () =>(
                     </FormField>
 
                     <FormField
-                        label="Slider"
+                        label="Slider:"
                         editor={
-                            <div className="k-slider k-slider-horizontal">
-                                <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
-                                <div className="k-slider-track-wrap">
-                                    <ul className="k-reset k-slider-items">
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">0</span>
-                                        </li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">5</span>
-                                        </li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick"></li>
-                                        <li className="k-tick k-tick-large">
-                                            <span className="k-label">10</span>
-                                        </li>
-                                    </ul>
-                                    <div className="k-slider-track">
-                                        <div className="k-slider-selection"></div>
-                                        <a href="#" className="k-draghandle k-draghandle-end"></a>
-                                    </div>
-                                </div>
-                                <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
-                            </div>
+                            <SliderNormal />
                         }
                     >
                     </FormField>
@@ -314,14 +259,13 @@ export default () =>(
                     <FormField
                         label="Upload"
                         editor={
-                            <Upload async status="done">
+                            <UploadChunk status="done">
                                 <UploadFile progress="100" status="success" validationMsg="File successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
-                            </Upload>
+                            </UploadChunk>
                         }
                     >
                     </FormField>
-
-                </Form>
+                </FormHorizontal>
             </section>
 
         </div>

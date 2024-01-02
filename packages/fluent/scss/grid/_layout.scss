@@ -649,11 +649,12 @@
     }
 
     .k-grid .k-command-cell > .k-button {
+        margin-inline-end: var( --kendo-grid-command-cell-button-spacing, #{$kendo-grid-command-cell-button-spacing} );
         vertical-align: middle;
-    }
-    .k-grid .k-command-cell > .k-button + .k-button {
-        margin-inline-end: unset;
-        margin-inline-start: var( --kendo-grid-command-cell-button-spacing, #{$kendo-grid-command-cell-button-spacing} );
+
+        &:last-child {
+            margin-inline-end: unset;
+        }
     }
 
 
@@ -1001,6 +1002,7 @@
         $_selection-aggregates-padding-x: map.get( $size-props, selection-aggregates-padding-x );
         $_selection-aggregates-padding-y: map.get( $size-props, selection-aggregates-padding-y );
 
+        .k-grid .k-grid-#{$size},
         .k-grid-#{$size} {
             --INTERNAL--kendo-grid-header-padding-x: var( --kendo-grid-header-padding-x-#{$size}, #{$_header-padding-x} );
             --INTERNAL--kendo-grid-header-padding-y: var( --kendo-grid-header-padding-y-#{$size}, #{$_header-padding-y} );

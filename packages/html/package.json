@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-themes-html",
   "description": "A collection of HTML helpers used for developing Kendo UI themes",
-  "version": "7.0.2-dev.0",
+  "version": "7.1.0-dev.6",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -23,10 +23,11 @@
     "src/**/**.ts",
     "src/**/**.tsx"
   ],
+  "main": "index.js",
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-themes.git",
+    "url": "git+https://github.com/telerik/kendo-themes.git",
     "directory": "packages/html"
   },
   "bugs": {
@@ -44,7 +45,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@progress/kendo-svg-icons": "^1.9.0",
+    "@progress/kendo-svg-icons": "^2.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

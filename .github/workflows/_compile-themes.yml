@@ -15,13 +15,13 @@ jobs:
     steps:
 
       - name: Checkout branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
@@ -33,11 +33,7 @@ jobs:
       - name: Install
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: |
-          npm ci --no-optional --no-audit --no-fund
-
-      - name: Bootstrap
-        run: |
-          npx lerna bootstrap --ignore @progress/kendo-themes-html
+          npm ci --no-audit --no-fund
 
       - name: Build test assets
         run: |

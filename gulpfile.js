@@ -29,7 +29,7 @@ function flattenAll( cwds, options ) {
     cwds.forEach( cwd => {
         let file = path.resolve( cwd, options.file );
         let output = { path: path.resolve( cwd, options.output.path ), filename: 'all.scss' };
-        let nodeModules = path.resolve( cwd, 'node_modules' );
+        let nodeModules = path.resolve( cwd, '../../node_modules' );
 
         if (fs.existsSync( file )) {
             fs.mkdirSync( output.path, { recursive: true } );

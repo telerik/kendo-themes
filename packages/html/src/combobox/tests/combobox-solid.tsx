@@ -40,6 +40,13 @@ export default () =>(
             <div dir="rtl">
                 <ComboboxNormal value="invalid focus" invalid focus />
             </div>
+
+            <div>
+                <ComboboxNormal value="valid focus" valid focus />
+            </div>
+            <div dir="rtl">
+                <ComboboxNormal value="valid focus" valid focus />
+            </div>
         </div>
     </>
 );

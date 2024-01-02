@@ -1,4 +1,4 @@
-import { LoaderContainer } from '../../loader';
+import { LoaderContainerNormal } from '../../loader';
 
 
 const styles = `
@@ -21,20 +21,20 @@ export default () =>(
 
             <span>Panel</span>
             <span className="example">
-                <LoaderContainer size={'large'} position={'top'} themeColor={'primary'} overlay={'dark'} panel={true} />
+                <LoaderContainerNormal size={'large'} panel={true} />
             </span>
 
             <span className="example">
-                <LoaderContainer size={'large'} position={'top'} themeColor={'primary'} overlay={'light'} panel={true} />
+                <LoaderContainerNormal size={'large'} overlay={'light'} panel={true} />
             </span>
 
             <span>No Panel</span>
             <span className="example">
-                <LoaderContainer size={'large'} position={'top'} themeColor={'primary'} overlay={'dark'} />
+                <LoaderContainerNormal size={'large'}/>
             </span>
 
             <span className="example">
-                <LoaderContainer size={'large'} position={'top'} themeColor={'primary'} overlay={'light'} />
+                <LoaderContainerNormal size={'large'} overlay={'light'} />
             </span>
 
         </div>

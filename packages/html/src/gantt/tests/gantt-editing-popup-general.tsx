@@ -1,10 +1,10 @@
 import { Button } from '../../button';
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Textbox } from '../../textbox';
 import { DateTimePicker } from '../../datetimepicker';
 import { NumericTextbox } from '../../numerictextbox';
 import { DropdownList } from '../../dropdownlist';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 
 
 const styles = `
@@ -20,7 +20,7 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Edit task" actions={[ 'window-minimize', 'window', 'x' ]} actionButtons={
+                <WindowNormal title="Edit task" actionButtons={
                     <>
                         <Button icon="save" themeColor="primary">Save</Button>
                         <Button icon="cancel">Cancel</Button>
@@ -46,7 +46,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" layout="grid" cols={4} gapX={2}>
+                            <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={2}>
                                 <FormField
                                     colSpan="full"
                                     className="k-form-field-error"
@@ -84,10 +84,10 @@ export default () =>(
                                     label="Parent"
                                     editor={ <DropdownList placeholder="-None-"/> }
                                 />
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
         </div>
     </>

@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width: 15px;">
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        .k-animation-container {
+            display: inline-block;
+            position: relative;
+            overflow: visible;
+        }
+        .k-tooltip {
+            position: relative;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+        <span>Default Tooltip</span>
+        <span>Closeable Tooltip</span>
+        <span>Tooltip with callout</span>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-primary">
+                        <div class="k-tooltip-content">primary tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-primary k-tooltip-closable">
+                        <div class="k-tooltip-content">primary tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-primary">
+                        <div class="k-tooltip-content">primary tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-secondary">
+                        <div class="k-tooltip-content">secondary tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-secondary k-tooltip-closable">
+                        <div class="k-tooltip-content">secondary tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-secondary">
+                        <div class="k-tooltip-content">secondary tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-tertiary">
+                        <div class="k-tooltip-content">tertiary tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-tertiary k-tooltip-closable">
+                        <div class="k-tooltip-content">tertiary tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-tertiary">
+                        <div class="k-tooltip-content">tertiary tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-success">
+                        <div class="k-tooltip-content">success tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-success k-tooltip-closable">
+                        <div class="k-tooltip-content">success tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-success">
+                        <div class="k-tooltip-content">success tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-warning">
+                        <div class="k-tooltip-content">warning tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-warning k-tooltip-closable">
+                        <div class="k-tooltip-content">warning tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-warning">
+                        <div class="k-tooltip-content">warning tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-error">
+                        <div class="k-tooltip-content">error tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-error k-tooltip-closable">
+                        <div class="k-tooltip-content">error tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-error">
+                        <div class="k-tooltip-content">error tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-info">
+                        <div class="k-tooltip-content">info tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-info k-tooltip-closable">
+                        <div class="k-tooltip-content">info tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-info">
+                        <div class="k-tooltip-content">info tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-light">
+                        <div class="k-tooltip-content">light tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-light k-tooltip-closable">
+                        <div class="k-tooltip-content">light tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-light">
+                        <div class="k-tooltip-content">light tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-dark">
+                        <div class="k-tooltip-content">dark tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-dark k-tooltip-closable">
+                        <div class="k-tooltip-content">dark tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-dark">
+                        <div class="k-tooltip-content">dark tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-inverse">
+                        <div class="k-tooltip-content">inverse tooltip</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-inverse k-tooltip-closable">
+                        <div class="k-tooltip-content">inverse tooltip</div>
+                        <div class="k-tooltip-button">
+                            <span class="k-icon k-svg-icon k-svg-i-x">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M416 141.3 301.3 256 416 370.7 370.7 416 256 301.3 141.3 416 96 370.7 210.7 256 96 141.3 141.3 96 256 210.7 370.7 96z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-child-animation-container">
+                    <div class="k-tooltip k-tooltip-inverse">
+                        <div class="k-tooltip-content">inverse tooltip</div>
+                        <div class="k-callout k-callout-s"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

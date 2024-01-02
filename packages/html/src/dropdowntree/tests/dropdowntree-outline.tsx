@@ -40,6 +40,13 @@ export default () =>(
             <div dir="rtl">
                 <DropdownTreeNormal value="invalid focus" fillMode="outline" invalid focus />
             </div>
+
+            <div>
+                <DropdownTreeNormal value="valid focus" fillMode="outline" valid focus />
+            </div>
+            <div dir="rtl">
+                <DropdownTreeNormal value="valid focus" fillMode="outline" valid focus />
+            </div>
         </div>
     </>
 );

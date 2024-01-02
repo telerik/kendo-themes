@@ -1,7 +1,6 @@
 import { DropdownList } from '../../dropdownlist';
 import { Textbox } from '../../textbox';
-import { Button } from '../../button';
-import { Form, FormField, Fieldset } from '../../form';
+import { FormField, Fieldset, FormNormal } from '../../form';
 
 
 export default () =>(
@@ -12,12 +11,7 @@ export default () =>(
             <span></span>
 
             <section>
-                <Form layout="grid" cols={2} gapX={4} formButtons={
-                    <>
-                        <Button className="k-form-submit" themeColor="primary">Submit</Button>
-                        <Button className="k-form-clear" >Clear</Button>
-                    </>
-                } >
+                <FormNormal layout="grid" cols={2} gapX={4}>
                     <Fieldset legend="Personal Information" layout="grid" cols={1} gapY={3}>
                         <FormField
                             label="First Name"
@@ -49,7 +43,7 @@ export default () =>(
                             editor={ <Textbox/> }
                         />
                     </Fieldset>
-                </Form>
+                </FormNormal>
             </section>
 
         </div>

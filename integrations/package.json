@@ -1,0 +1,16 @@
+{
+  "name": "integrations",
+  "version": "1.0.0",
+  "scripts": {
+    "install:gulp": "cd ./gulp-sass && npm install",
+    "build:gulp": "npm run build --prefix gulp-sass",
+    "install:parcel": "cd ./parcel && npm install",
+    "build:parcel": "npm run build --prefix parcel",
+    "install:vite": "cd ./vite && npm install",
+    "build:vite": "npm run build --prefix vite",
+    "install:webpack": "cd ./webpack && npm install",
+    "build:webpack": "npm run build --prefix webpack",
+    "prebuild": "npm run install:gulp && npm run install:parcel && npm run install:vite && npm run install:webpack",
+    "build": "npm run build:gulp && npm run build:parcel && npm run build:vite && npm run build:webpack"
+  }
+}

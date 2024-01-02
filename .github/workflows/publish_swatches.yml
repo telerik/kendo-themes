@@ -38,15 +38,15 @@ jobs:
           export-secrets-to-environment: false
 
       - name: Checkout branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.event.inputs.ref }}
 
       - name: Setup node
         id: setup-node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
@@ -59,14 +59,11 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
-      - name: Bootstrap
-        run: npm run bootstrap
-
       - name: Build swatches
         run: npm run sass:swatches
 
       - name: Checkout artifact repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: telerik/themes-cdn
           token: ${{ steps.import-secrets.outputs.GH_TOKEN }}

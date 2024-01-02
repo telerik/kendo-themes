@@ -1,6 +1,6 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Button } from '../../button';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 import { Textbox } from '../../textbox';
 import { DropdownList } from '../../dropdownlist';
 import { Checkbox } from '../../checkbox';
@@ -20,13 +20,13 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <section>
-                <Window title="Data Validation" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Data Validation" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Apply</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form>
+                    <FormNormal formButtons={null}>
                         <FormField label="Cell Range" editor={ <Textbox value="Input Value" /> }/>
                         <FormField label="Criteria" editor={ <DropdownList value="Number" /> }/>
                         <FormField label="Comparer" editor={ <DropdownList value="Greater than" /> } />
@@ -53,19 +53,19 @@ export default () =>(
                                 <label className="k-checkbox-label">Show hint</label>
                             </>
                         } />
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window title="Birth Date validaiton error" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Birth Date validaiton error" actions={[ 'x' ]} className="k-spreadsheet-window" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Retry</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
                     Birth Date should be between 1899 and 1998 year.
-                </Window>
+                </WindowNormal>
             </section>
 
         </div>

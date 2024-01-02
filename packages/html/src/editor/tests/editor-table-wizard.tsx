@@ -2,12 +2,12 @@ import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
 import { DropdownList } from '../../dropdownlist';
-import { Form, FormField, Fieldset } from '../../form';
+import { FormNormal, FormField, Fieldset } from '../../form';
 import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textarea } from '../../textarea';
 import { Textbox } from '../../textbox';
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 
 
 const styles = `
@@ -22,7 +22,7 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
             <section>
-                <Window className="k-editor-window k-editor-table-wizard-window" title="Table properties" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal actions={[ 'x' ]} className="k-editor-window k-editor-table-wizard-window" title="Table properties" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                         <Button>Cancel</Button>
@@ -36,7 +36,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active" >
-                            <Form tag="div" layout="grid" cols={4} gapX={4}>
+                            <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={4}>
                                 <FormField
                                     colSpan="2"
                                     label="Rows"
@@ -116,13 +116,13 @@ export default () =>(
                                         </>
                                     }
                                 />
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
             <section>
-                <Window className="k-editor-window k-editor-table-wizard-window" title="Table properties" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal actions={[ 'x' ]} className="k-editor-window k-editor-table-wizard-window" title="Table properties" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                         <Button>Cancel</Button>
@@ -136,7 +136,7 @@ export default () =>(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active">
-                            <Form tag="div" layout="grid">
+                            <FormNormal formButtons={null} tag="div" layout="grid">
                                 <FormField label="ID" optional editor={ <Textbox /> } />
                                 <FormField label="CSS class" optional editor={ <Textbox /> } />
                                 <Fieldset legend="Accessibility" layout="grid" cols={4} gapX={4} >
@@ -173,20 +173,20 @@ export default () =>(
                                         editor={ <Textarea rows={3} placeholder="Summary attribute is not HTML5 compatible"/> }
                                     />
                                 </Fieldset>
-                            </Form>
+                            </FormNormal>
                         </div>
                     </div>
-                </Window>
+                </WindowNormal>
             </section>
 
             <section>
-                <Window className="k-editor-window k-editor-table-wizard-window" title="Cell properties" actions={[ 'minimize', 'maximize', 'close' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal actions={[ 'x' ]} className="k-editor-window k-editor-table-wizard-window" title="Cell properties" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary">Save</Button>
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Form tag="div" layout="grid" cols={4} gapX={4}>
+                    <FormNormal formButtons={null} tag="div" layout="grid" cols={4} gapX={4}>
                         <FormField
                             colSpan="full"
                             editor={
@@ -265,8 +265,8 @@ export default () =>(
                             optional
                             editor={ <Textbox /> }
                         />
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
         </div>
     </>

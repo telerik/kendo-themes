@@ -152,6 +152,7 @@
 @import "./pdf-viewer/_index.scss";
 @import "./scroller/_index.scss";
 @import "./scrollview/_index.scss";
+@import "./prompt/_index.scss";
 
 
 // Dataviz
@@ -323,6 +324,7 @@
     @include kendo-pdf-viewer--styles();
     @include kendo-scroller--styles();
     @include kendo-scrollview--styles();
+    @include kendo-prompt--styles();
 
 
     // Dataviz

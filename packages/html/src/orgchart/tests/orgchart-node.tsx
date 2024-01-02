@@ -1,4 +1,4 @@
-import { Orgchart, OrgchartNode } from '../../orgchart';
+import { OrgchartVertical, OrgchartNormal } from '../../orgchart';
 
 
 const styles = `
@@ -14,20 +14,12 @@ export default () =>(
 
             <span>Horizontal</span>
             <section>
-                <Orgchart width="100%" height="260px" orientation="horizontal" justifyContent="center">
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#0275d8" line plus></OrgchartNode>
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#0275d8" line plus></OrgchartNode>
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#0275d8" line plus></OrgchartNode>
-                </Orgchart>
+                <OrgchartNormal width="100%" height="260px" justifyContent="center"/>
             </section>
 
             <span>Vertical</span>
             <section>
-                <Orgchart width="100%" height="366px" orientation="vertical" justifyContent="center">
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de" line></OrgchartNode>
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de" line></OrgchartNode>
-                    <OrgchartNode title="Card Title" subtitle="Card, Subtitle" details avatar="DK" avatarType="text" color="#5bc0de"></OrgchartNode>
-                </Orgchart>
+                <OrgchartVertical width="100%" height="366px" justifyContent="center"/>
             </section>
 
         </div>

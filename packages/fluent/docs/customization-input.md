@@ -1361,6 +1361,56 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-input-separator-text</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Input separator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-prefix-text</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input prefix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-suffix-text</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the Input suffix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-prefix-disabled-text</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Input prefix.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-suffix-disabled-text</td>
+    <td></td>
+    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the disabled Input suffix.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-input-invalid-border</td>
     <td></td>
     <td><code>var( --kendo-invalid-border, #{$kendo-invalid-border} )</code></td>
@@ -1378,6 +1428,26 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the invalid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-valid-border</td>
+    <td></td>
+    <td><code>var( --kendo-valid-border, #{$kendo-valid-border} )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the valid Input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-valid-text</td>
+    <td></td>
+    <td><code>var( --kendo-valid-text, #{$kendo-valid-text} )</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the valid Input components.</div></div>
     </td>
 </tr>
 <tr>

@@ -5,9 +5,10 @@ import { DropdownList } from '../../dropdownlist';
 import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
 import { Pager } from '../../pager';
-import { Skeleton } from '../../skeleton';
+import { SkeletonNormal } from '../../skeleton';
 import { Textbox } from '../../textbox';
 import { Toolbar } from '../../toolbar';
+import { TooltipNormal } from '../../tooltip';
 
 
 const styles = `
@@ -79,11 +80,11 @@ export default () =>(
                                 </tr>
                                 <tr className="k-table-row k-table-alt-row k-alt">
                                     <td className="k-table-td">4</td>
-                                    <td className="k-table-td"><Skeleton animation={false} /></td>
+                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
                                 </tr>
                                 <tr className="k-table-row">
                                     <td className="k-table-td">5</td>
-                                    <td className="k-table-td"><Skeleton animation={false} /></td>
+                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -307,7 +308,12 @@ export default () =>(
                                     </td>
                                     <td className="k-table-td">
                                         <NumericTextbox invalid />
-                                        <div className="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><Icon className="k-tooltip-icon" icon="exclamation-circle" /><span className="k-tooltip-content">Price</span><div className="k-callout k-callout-n"></div></div>
+                                        <TooltipNormal className="k-validator-tooltip k-invalid-msg"
+                                            themeColor="error"
+                                            callout="top"
+                                            icon="exclamation-circle"
+                                            content="Price"
+                                        />
                                     </td>
                                     <td className="k-table-td"><Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" /><label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label></td>
                                     <td className="k-table-td k-command-cell">

@@ -5,3 +5,7 @@ export * from './breadcrumb-container';
 export * from './breadcrumb-item';
 export * from './breadcrumb-link';
 export * from './breadcrumb-item-text';
+export * from './templates/breadcrumb-normal';
+export * from './templates/breadcrumb-adaptive';
+export * from './templates/breadcrumb-root';
+export * from './templates/breadcrumb-root-adaptive';

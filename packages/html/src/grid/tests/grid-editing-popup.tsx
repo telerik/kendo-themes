@@ -1,11 +1,11 @@
-import { Window } from '../../window';
+import { WindowNormal } from '../../window';
 import { Checkbox } from '../../checkbox';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
 import { Button } from '../../button';
 import { DropdownList } from '../../dropdownlist';
 import { DatePicker } from '../../datepicker';
-import { Form, FormField } from '../../form';
+import { FormNormal, FormField } from '../../form';
 
 
 const styles = `
@@ -24,13 +24,13 @@ export default () =>(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <Window title="Edit task" actions={[ 'window-minimize', 'window', 'x' ]} actionButtonsAlign="start" actionButtons={
+                <WindowNormal title="Edit task" actionButtonsAlign="start" actionButtons={
                     <>
                         <Button themeColor="primary" icon="save">Save</Button>
                         <Button icon="cancel">Cancel</Button>
                     </>
                 }>
-                    <Form tag="div">
+                    <FormNormal formButtons={null} tag="div">
                         <FormField className="k-form-field-error" label="Text data field label" error="Error" editor={ <Textbox value="Invalid" invalid showClearButton /> } />
                         <FormField label="Date data field label" editor={ <DatePicker placeholder="dd/MM/yyyy" /> } />
                         <FormField label="Numeric data field label" editor={ <NumericTextbox placeholder="##,###" /> } />
@@ -41,8 +41,8 @@ export default () =>(
                             </>
                         } />
                         <FormField label="Boolean data field label" editor={ <DropdownList value="True" /> } />
-                    </Form>
-                </Window>
+                    </FormNormal>
+                </WindowNormal>
             </section>
 
         </div>

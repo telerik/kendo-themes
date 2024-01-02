@@ -15,62 +15,55 @@ function pathUrl(url) {
     return `http://${HOST}:${PORT}/${path.dirname(url).replace('./', '')}`;
 }
 
-const files = globSync(`${TESTS_PATH}/!(utils)/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true });
-const pages = files.map(path => [ path, pathUrl(path) ]);
-
-function arrayChunks( array, chunkCount ) {
-    const result = [];
-    const chunkSize = Math.ceil(array.length / chunkCount);
-
-    for (let i = 0; i < array.length; i += chunkSize) {
-        result.push(array.slice(i, i + chunkSize));
-    }
-
-    return result;
+async function loadUrl(browser, url) {
+    await browser.wait(async() => {
+        try {
+            await browser.navigateTo(url);
+            return true;
+        } catch (error) {
+            return false;
+        }
+    }, 10000, `Failed to load ${url}`, 500);
 }
 
-const chunks = arrayChunks(pages, 8);
+const browser = new Browser();
+const server = createServer({
+    root: './',
+    port: PORT
+});
 
-Promise.all(chunks.map(async( chunk, index ) => {
-    let port = PORT + index;
+server.listen(PORT, HOST, async() => {
+    const files = globSync(`${TESTS_PATH}/!(utils)/**/${COMPONENT_PAGE_EXT}`, { dotRelative: true });
+    const pages = files.map(path => [ path, pathUrl(path) ]);
 
-    const browser = new Browser();
-    const server = createServer({
-        root: './',
-        port: port
-    });
+    for (let i = 0; i < pages.length; i++) {
+        const [ filePath, url ] = pages[i];
 
-    server.listen(port, HOST, async() => {
+        await loadUrl(browser, url);
 
-        for (let i = 0; i < chunk.length; i++) {
-            const [ filePath, url ] = chunk[i];
+        const [ /** index.html */, folderName, /** /tests */, componentName ] = filePath.split('/').reverse();
+        const outputPath = `${OUTPUT_PATH}/${componentName}/${folderName}.html`;
 
-            await browser.navigateTo(url);
+        fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
-            const [ /** index.html */, folderName, /** /tests */, componentName ] = filePath.split('/').reverse();
-            const outputPath = `${OUTPUT_PATH}/${componentName}/${folderName}.html`;
+        await snapshotMarkup(browser.driver, 'html', outputPath, {
+            template: (output) => `<!doctype html>${output}`,
+            preserveAttributes: true,
+            preserveCommentNodes: true,
+            beautifyOptions: {
+                /* eslint-disable camelcase */
+                newline_between_rules: false,
+                brace_style: 'collapse',
+                indent_size: 4,
+                inline: [],
+                extra_liners: [],
+                preserve_newlines: false,
+                end_with_newline: true
+                /* eslint-enable */
+            }
+        });
+    }
 
-            fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-
-            await snapshotMarkup(browser.driver, 'html', outputPath, {
-                template: (output) => `<!doctype html>${output}`,
-                preserveAttributes: true,
-                preserveCommentNodes: true,
-                beautifyOptions: {
-                    /* eslint-disable camelcase */
-                    newline_between_rules: false,
-                    brace_style: 'collapse',
-                    indent_size: 4,
-                    inline: [],
-                    extra_liners: [],
-                    preserve_newlines: false,
-                    end_with_newline: true
-                    /* eslint-enable */
-                }
-            });
-        }
-
-        await browser.close();
-        server.close();
-    });
-}));
+    await browser.close();
+    server.close();
+});

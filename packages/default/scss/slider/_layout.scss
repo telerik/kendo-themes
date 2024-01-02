@@ -53,19 +53,6 @@
         }
     }
 
-
-    // Slider wrap
-    .k-slider-wrap {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow: inherit;
-        align-items: inherit;
-        gap: inherit;
-        position: relative;
-    }
-
-
     // New rendering
     .k-slider {
         width: min-content;
@@ -315,7 +302,7 @@
         height: $kendo-slider-draghandle-size;
 
         .k-slider-transitions.k-slider-horizontal & {
-            transition: left $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
+            transition: inset-inline-start $kendo-slider-transition-speed $kendo-slider-transition-function, background-color $kendo-slider-transition-speed $kendo-slider-transition-function, transform $kendo-slider-draghandle-transition-speed $kendo-slider-draghandle-transition-function;
         }
 
         .k-slider-transitions.k-slider-vertical & {
@@ -397,15 +384,7 @@
     .k-slider kendo-resize-sensor {
         position: absolute;
     }
-    .k-slider-horizontal .k-slider-wrap:not(.k-slider-buttons) {
-        padding-inline-start: calc( #{$kendo-slider-draghandle-size} / 2 );
-        padding-inline-end: calc( #{$kendo-slider-draghandle-size} / 2 );
-    }
-    .k-slider-vertical .k-slider-wrap:not(.k-slider-buttons) {
-        padding-top: calc( #{$kendo-slider-draghandle-size} / 2 );
-        padding-bottom: calc( #{$kendo-slider-draghandle-size} / 2 );
-    }
-
+    
     // Aliases
     .k-draghandle { @extend .k-slider-thumb !optional; }
     .k-draghandle-start { @extend .k-slider-thumb-start !optional; }
