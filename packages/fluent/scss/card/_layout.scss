@@ -192,6 +192,10 @@
         gap: var( --kendo-card-actions-gap, #{$kendo-card-actions-gap} );
     }
 
+    .k-card-horizontal .k-actions-horizontal {
+        width: auto;
+    }
+
     // List
     .k-card-list {
         display: flex;

@@ -5,7 +5,7 @@ import { Button } from '../../button';
 
 const styles = `
     .k-card {
-        height: 300px;
+        height: 250px;
     }
     .k-card-media {
         display: block;
@@ -17,7 +17,7 @@ const styles = `
 export default () =>(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid k-grid-cols-3">
 
             <CardHorizontal />
 
@@ -91,6 +91,16 @@ export default () =>(
                 </div>
                 <span className="k-separator k-separator-vertical"></span>
                 <ActionButtons alignment="stretched" orientation="vertical" className="k-card-actions">
+                    <Button fillMode="flat" themeColor="primary">Action 1</Button>
+                    <Button fillMode="flat" themeColor="primary">Action 2</Button>
+                </ActionButtons>
+            </CardHorizontal>
+
+            <CardHorizontal >
+                <CardBody title="Card Title" subtitle="Horizontal card - Action buttons with horizontal layout.">
+                    <p>Horizontal card - Action buttons with horizontal layout.</p>
+                </CardBody>
+                <ActionButtons className="k-card-actions">
                     <Button fillMode="flat" themeColor="primary">Action 1</Button>
                     <Button fillMode="flat" themeColor="primary">Action 2</Button>
                 </ActionButtons>
