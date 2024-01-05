@@ -83,9 +83,7 @@
         }
 
         // Valid
-        &.k-valid,
-        &.ng-valid.ng-touched,
-        &.ng-valid.ng-dirty {
+        &.k-valid {
             --INTERNAL--kendo-input-border: var( --kendo-input-valid-border, #{$kendo-input-valid-border} );
 
             &::after {
@@ -194,9 +192,7 @@
         }
 
         // Valid
-        &.k-valid,
-        &.ng-valid.ng-touched,
-        &.ng-valid.ng-dirty {
+        &.k-valid {
             --INTERNAL--kendo-picker-border: var( --kendo-input-valid-border, #{$kendo-input-valid-border} );
 
             &::after {
