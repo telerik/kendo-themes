@@ -71,9 +71,7 @@
         }
 
         // Valid
-        &.k-valid,
-        &.ng-valid.ng-touched,
-        &.ng-valid.ng-dirty {
+        &.k-valid {
             @include fill( $border: $kendo-input-valid-border );
 
             .k-input-validation-icon {
@@ -179,9 +177,7 @@
         }
 
         // Valid
-        &.k-valid,
-        &.ng-valid.ng-touched,
-        &.ng-valid.ng-dirty {
+        &.k-valid {
             @include fill( $border: $kendo-input-valid-border );
 
             .k-input-validation-icon {
@@ -282,9 +278,7 @@
         }
 
         // Valid
-        &.k-valid,
-        &.ng-valid.ng-touched,
-        &.ng-valid.ng-dirty {
+        &.k-valid {
             @include fill( $border: $kendo-input-valid-border );
 
             .k-input-validation-icon {
@@ -396,9 +390,7 @@
         }
 
         // Valid
-        &.k-valid,
-        &.ng-valid.ng-touched,
-        &.ng-valid.ng-dirty {
+        &.k-valid {
             @include fill( $border: $kendo-input-valid-border );
 
             .k-input-validation-icon {
@@ -486,9 +478,7 @@
         }
 
         // Valid
-        &.k-valid,
-        &.ng-valid.ng-touched,
-        &.ng-valid.ng-dirty {
+        &.k-valid {
             @include fill( $border: $kendo-input-valid-border );
 
             .k-input-validation-icon {
@@ -600,9 +590,7 @@
         }
 
         // Valid
-        &.k-valid,
-        &.ng-valid.ng-touched,
-        &.ng-valid.ng-dirty {
+        &.k-valid {
             @include fill( $border: $kendo-input-valid-border );
 
             .k-input-validation-icon {

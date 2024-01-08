@@ -18,7 +18,7 @@ export * from './badge/index';
 export * from './chip/index';
 export * from './color-preview/index';
 export * from './loader/index';
-// export * from './skeleton/index';
+export * from './skeleton/index';
 
 // Native forms
 export * from './form/index';
@@ -56,7 +56,7 @@ export * from './maskedtextbox/index';
 export * from './multiselect/index';
 export * from './multiselecttree/index';
 export * from './numerictextbox/index';
-// export * from './rating/index';
+export * from './rating/index';
 export * from './searchbox/index';
 export * from './switch/index';
 export * from './upload/index';
@@ -93,6 +93,7 @@ export * from './expansion-panel/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';
 export * from './tilelayout/index';
+// export * from './dock-manager/index';
 
 // Data management
 // export * from './grid/index';
@@ -106,13 +107,19 @@ export * from './filter/index';
 
 // Misc
 // export * from './adaptive/index''
-// export * from './chat/index';
+export * from './chat/index';
 // export * from './mediaplayer/index';
 export * from './timeline/index';
-// export * from './pdf-viewer/index';
+export * from './pdf-viewer/index';
 // export * from './scroller/index';
 export * from './scrollview/index';
 export * from './prompt/index';
+
+// Dataviz
+// export * from './dataviz/index';
+// export * from './map/index';
+export * from './orgchart/index';
+export * from './signature/index';
 
 // Editors
 export * from './editor/index';
