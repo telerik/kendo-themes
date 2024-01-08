@@ -102,7 +102,7 @@ export * from './listview/index';
 // export * from './pivotgrid/index';
 // export * from './treelist/index';
 export * from './filter/index';
-// export * from './filemanager/index';
+export * from './filemanager/index';
 // export * from './taskboard/index';
 
 // Misc
