@@ -1,8 +1,8 @@
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
-import { Toolbar } from '../../toolbar';
-
+//import { Toolbar } from '../../toolbar';
+import { Gantt, GanttHeaderToolbar, GanttFooterToolbar, GanttContent, GanttTreelist, GanttTimelinePane, GanttTimeline } from '../../gantt';
 
 const styles = `
     .k-gantt {
@@ -22,8 +22,9 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area">
 
-            <div id="gantt" className="k-widget k-gantt">
-                <Toolbar className="k-gantt-toolbar k-gantt-header">
+            <Gantt
+                footer={<GanttFooterToolbar><Button className="k-gantt-create" icon="plus">Add Task</Button></GanttFooterToolbar>}>
+                <GanttHeaderToolbar>
                     <Button className="k-gantt-toggle" icon="layout-1-by-4"></Button>
                     <Button className="k-gantt-create" icon="plus">Add Task</Button>
                     <span className="k-spacer"></span>
@@ -39,9 +40,9 @@ export default () =>(
                             <Button className="k-view-month">Month</Button>
                         </ButtonGroup>
                     </div>
-                </Toolbar>
-                <div className="k-gantt-content">
-                    <div className="k-gantt-treelist">
+                </GanttHeaderToolbar>
+                <GanttContent>
+                    <GanttTreelist>
                         <div className="k-treelist k-grid k-grid-md k-grid-display-block">
                             <div className="k-table-thead k-grid-header">
                                 <div className="k-grid-header-wrap">
@@ -196,12 +197,12 @@ export default () =>(
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </GanttTreelist>
                     <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ height: "604px" }}>
                         <div className="k-resize-handle"></div>
                     </div>
-                    <div className="k-gantt-timeline-pane">
-                        <div className="k-gantt-timeline k-grid k-grid-md">
+                    <GanttTimelinePane>
+                        <GanttTimeline className="k-grid k-grid-md">
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap">
                                     <table className="k-table k-table-md k-grid-header-table" style={{ width: "4200px" }}>
@@ -760,14 +761,10 @@ export default () =>(
                                 </div>
                                 <div className="k-current-time" style={{ left: "243px", top: "0px", width: "1px", height: "828px" }}></div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <Toolbar className="k-gantt-toolbar k-gantt-footer">
-                    <Button className="k-gantt-create" icon="plus">Add Task</Button>
-                </Toolbar>
-            </div>
-
+                        </GanttTimeline>
+                    </GanttTimelinePane>
+                </GanttContent>
+            </Gantt>
         </div>
     </>
 );
