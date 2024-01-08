@@ -167,6 +167,11 @@ $kendo-invalid-text: functions.k-get-theme-color-var(error-190) !default;
 $kendo-invalid-border: functions.k-get-theme-color-var(error-190) !default;
 $kendo-invalid-shadow: null !default;
 
+$kendo-valid-bg: initial !default;
+$kendo-valid-text: k-get-theme-color-var( success-190 ) !default;
+$kendo-valid-border: k-get-theme-color-var( success-190 ) !default;
+$kendo-valid-shadow: null !default;
+
 // Disabled Styling
 $kendo-disabled-bg: functions.k-get-theme-color-var(neutral-20) !default;
 $kendo-disabled-text: functions.k-get-theme-color-var(neutral-90) !default;
