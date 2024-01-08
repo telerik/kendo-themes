@@ -102,7 +102,7 @@
                 &:focus,
                 &.k-focus {
                     @if ( $kendo-solid-button-shadow ) {
-                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread if($kendo-enable-color-system, rgba( k-color( $name, true ), $kendo-outline-button-shadow-opacity ), rgba( $_button-border, $kendo-solid-button-shadow-opacity )), true, true );
+                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread if($kendo-enable-color-system, rgba( k-color( $name, true ), $kendo-solid-button-shadow-opacity ), rgba( $_button-border, $kendo-solid-button-shadow-opacity )), true, true );
                     }
                 }
 
@@ -154,7 +154,7 @@
             &.k-hover {
                 @if $name == "base" {
                     @include fill(
-                        $kendo-base-bg,
+                        if($kendo-enable-color-system, $kendo-base-bg, k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
@@ -184,7 +184,7 @@
             &.k-active {
                 @if $name == "base" {
                     @include fill(
-                        $kendo-base-bg,
+                        if($kendo-enable-color-system, $kendo-base-bg, k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
@@ -201,7 +201,7 @@
             &.k-selected {
                 @if $name == "base" {
                     @include fill(
-                        $kendo-base-bg,
+                        if($kendo-enable-color-system, $kendo-base-bg, k-contrast-legacy( $color )),
                         $color,
                         $color
                     );
