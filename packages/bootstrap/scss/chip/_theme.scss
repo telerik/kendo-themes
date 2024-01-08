@@ -17,8 +17,9 @@
                 &.k-hover,
                 &.k-selected {
                     @include fill(
-                        $color: if($kendo-enable-color-system, $kendo-chip-outline-text, if( $kendo-is-dark-theme, k-contrast-color($color), $kendo-chip-outline-text)),
-                        $bg: $color
+                        if($kendo-enable-color-system, $kendo-chip-outline-text, if( $kendo-is-dark-theme, k-contrast-color($color), $kendo-chip-outline-text)),
+                        $color,
+                        $color
                     );
                 }
 
