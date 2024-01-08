@@ -1,5 +1,5 @@
 @use "./index.scss" as kendo-theme with (
-    $kendo-enable-color-system: true,
+    $kendo-enable-color-system: false,
 );
 
 @include kendo-theme.config();
