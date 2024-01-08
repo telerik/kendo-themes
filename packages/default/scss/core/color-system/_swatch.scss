@@ -383,3 +383,16 @@ $kendo-invalid-border: $kendo-color-error !default;
 /// Shadow of the invalid items.
 /// @group component
 $kendo-invalid-shadow: null !default;
+
+/// Background color of the valid items.
+/// @group component
+$kendo-valid-bg: null !default;
+/// Text color of the valid items.
+/// @group component
+$kendo-valid-text: $kendo-color-success !default;
+/// Border color of the valid items.
+/// @group component
+$kendo-valid-border: $kendo-color-success !default;
+/// Shadow of the valid items.
+/// @group component
+$kendo-valid-shadow: null !default;
