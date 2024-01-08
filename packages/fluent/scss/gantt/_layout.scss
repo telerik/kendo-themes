@@ -288,9 +288,9 @@
 
 
     // Timeline
-    .k-gantt-timeline {
+    .k-gantt-timeline-pane {
 
-        .k-timeline {
+        .k-gantt-timeline {
             height: 100%;
             border-width: 0;
             display: flex;
@@ -770,7 +770,7 @@
         }
 
         .k-gantt,
-        .k-gantt-timeline,
+        .k-gantt-timeline-pane,
         .k-gantt-dependencies {
             width: auto !important; // stylelint-disable-line declaration-no-important
             height: auto !important; // stylelint-disable-line declaration-no-important
