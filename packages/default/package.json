@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-default",
   "description": "SASS resources for the default Kendo UI theme",
-  "version": "7.1.0-dev.7",
+  "version": "7.1.0-dev.8",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -52,8 +52,8 @@
   },
   "dependencies": {
     "@progress/kendo-svg-icons": "2.1.0",
-    "@progress/kendo-theme-core": "7.1.0-dev.7",
-    "@progress/kendo-theme-utils": "7.1.0-dev.7"
+    "@progress/kendo-theme-core": "7.1.0-dev.8",
+    "@progress/kendo-theme-utils": "7.1.0-dev.8"
   },
   "directories": {
     "doc": "docs",
