@@ -58,7 +58,6 @@
             &.k-active,
             &.k-selected {
                 color: if( $name == "base", $kendo-button-text, if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color) );
-                border-color: if($kendo-enable-color-system, k-color( #{$name}-on-surface ), $color);
             }
 
             // Disabled state
