@@ -25,7 +25,7 @@ $kendo-pdf-viewer-border: $kendo-component-border !default;
 
 /// The background color of the PDFViewer Toolbar.
 /// @group pdf-viewer
-$kendo-pdf-viewer-toolbar-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
+$kendo-pdf-viewer-toolbar-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .25 )) !default;
 /// The text color of the PDFViewer Toolbar.
 /// @group pdf-viewer
 $kendo-pdf-viewer-toolbar-text: null !default;
