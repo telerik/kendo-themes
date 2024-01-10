@@ -1,6 +1,7 @@
 import { Button } from '../../button';
 import { DropdownList } from '../../dropdownlist';
 import { Toolbar } from '../../toolbar';
+import { SliderNormal } from '../../slider';
 
 
 const styles = `
@@ -21,14 +22,7 @@ export default () =>(
             <div className="k-mediaplayer k-widget">
                 <div className="k-mediaplayer-titlebar">Media player title</div>
                 <div className="k-mediaplayer-toolbar-wrap">
-                    <div className="k-slider k-slider-horizontal k-mediaplayer-seekbar">
-                        <div className="k-slider-track-wrap">
-                            <div className="k-slider-track">
-                                <div className="k-slider-selection"></div>
-                                <a href="#" className="k-draghandle k-draghandle-end"></a>
-                            </div>
-                        </div>
-                    </div>
+                    <SliderNormal className="k-mediaplayer-seekbar" showButtons={false} showTicks={false} />
                     <Toolbar className="k-mediaplayer-toolbar">
                         <Button fillMode="flat" icon="play" className="k-play-button"></Button>
                         <div className="k-mediaplayer-currenttime-wrap">
@@ -38,14 +32,7 @@ export default () =>(
                         <div className="k-spacer"></div>
                         <Button fillMode="flat" icon="volume-up" className="k-volume-button"></Button>
                         <div className="k-mediaplayer-volume-wrap">
-                            <div className="k-slider k-slider-horizontal k-mediaplayer-volume">
-                                <div className="k-slider-track-wrap">
-                                    <div className="k-slider-track">
-                                        <div className="k-slider-selection"></div>
-                                        <a href="#" className="k-draghandle k-draghandle-end"></a>
-                                    </div>
-                                </div>
-                            </div>
+                            <SliderNormal className="k-mediaplayer-volume" showButtons={false} showTicks={false} />
                         </div>
                         <div className="k-mediaplayer-quality-wrap">
                             <DropdownList value="360p" arrowIconName="hd" className="k-mediaplayer-quality" />
