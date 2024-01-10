@@ -10,7 +10,7 @@ const styles = `
     .k-gantt-treelist {
         width: 250px;
     }
-    .k-gantt-timeline {
+    .k-gantt-timeline-pane {
         flex: 1;
         overflow: auto;
     }
@@ -203,8 +203,8 @@ export default () => (
                     <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ height: "604px" }}>
                         <div className="k-resize-handle"></div>
                     </div>
-                    <div className="k-gantt-timeline">
-                        <div className="k-timeline k-grid k-grid-md">
+                    <div className="k-gantt-timeline-pane">
+                        <div className="k-gantt-timeline k-grid k-grid-md">
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap">
                                     <table className="k-table k-table-md k-grid-header-table" style={{ width: "4200px" }}>
