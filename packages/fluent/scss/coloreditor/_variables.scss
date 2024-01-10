@@ -39,7 +39,7 @@ $kendo-color-editor-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 
 /// The border color of the focused ColorEditor.
 /// @group coloreditor
-$kendo-color-editor-focus-border: k-get-theme-color-var( neutral-20 ) !default;
+$kendo-color-editor-focus-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .1 ), k-get-theme-color-var( neutral-20 )) !default;
 /// The box shadow of the focused ColorEditor.
 /// @group coloreditor
 $kendo-color-editor-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;

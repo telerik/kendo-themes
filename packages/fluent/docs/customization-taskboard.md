@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-column-focus-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-card-selected-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -640,7 +640,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-taskboard-drag-placeholder-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-50 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .23 ), k-get-theme-color-var( neutral-50 ))</code></td>
     <td></td>
 </tr>
 <tr>

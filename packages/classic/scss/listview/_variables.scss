@@ -41,7 +41,7 @@ $kendo-listview-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-listview-item-selected-text: null !default;
 /// The background color of the selected ListView items.
 /// @group listview
-$kendo-listview-item-selected-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-listview-item-selected-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 /// The border color of the selected ListView items.
 /// @group listview
 $kendo-listview-item-selected-border: null !default;

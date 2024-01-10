@@ -151,13 +151,13 @@ $kendo-fab-sizes: (
 $kendo-fab-item-offset-y: map.get( $kendo-spacing, 2 ) !default;
 /// The base text color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-text: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-fab-item-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// The base background color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-bg: var( --kendo-component-bg, inherit ) !default;
 /// The base border color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-fab-item-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 /// The text color of the hovered FAB item.
 /// @group floating-action-button
 $kendo-fab-item-hover-text: var( --kendo-hover-text, inherit ) !default;
@@ -166,16 +166,16 @@ $kendo-fab-item-hover-text: var( --kendo-hover-text, inherit ) !default;
 $kendo-fab-item-hover-bg: var( --kendo-hover-bg, inherit ) !default;
 /// The border color of the hovered FAB item.
 /// @group floating-action-button
-$kendo-fab-item-hover-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-fab-item-hover-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 /// The text color of the focused FAB item.
 /// @group floating-action-button
-$kendo-fab-item-focus-text: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-fab-item-focus-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// The background color of the focused FAB item.
 /// @group floating-action-button
 $kendo-fab-item-focus-bg: var( --kendo-component-bg, inherit ) !default;
 /// The border color of the focused FAB item.
 /// @group floating-action-button
-$kendo-fab-item-focus-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-fab-item-focus-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 /// The text color of the active FAB item.
 /// @group floating-action-button
 $kendo-fab-item-active-text: var( --kendo-selected-text, inherit ) !default;
@@ -184,4 +184,4 @@ $kendo-fab-item-active-text: var( --kendo-selected-text, inherit ) !default;
 $kendo-fab-item-active-bg: var( --kendo-selected-bg, inherit ) !default;
 /// The border color of the active FAB item.
 /// @group floating-action-button
-$kendo-fab-item-active-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-fab-item-active-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;

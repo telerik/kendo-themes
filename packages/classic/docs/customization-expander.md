@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-expander-header-hover-bg</td>
     <td>Color</td>
-    <td><code>k-color-shade( $kendo-expander-bg, 1 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-color-shade( $kendo-expander-bg, 1 ))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>

@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tile-layout-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light))</code></td>
     <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
 </tr>
 <tr>

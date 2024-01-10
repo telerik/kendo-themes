@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-focus-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .1 ), k-get-theme-color-var( neutral-20 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-canvas-rectangle-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-slider-border-width</td>
     <td></td>
-    <td><code>1px</code></td>
+    <td><code>if($kendo-enable-color-system, 0, 1px)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-slider-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-border</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-shadow</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-border</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-focus-shadow</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-gradient-draghandle-hover-shadow</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>

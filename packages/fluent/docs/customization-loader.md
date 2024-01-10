@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-loader-container-panel-bg</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -432,7 +432,7 @@ The following table lists the available variables for customization.
     <td></td>
     <td><code>(
     primary: primary,
-    secondary: neutral,
+    secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
     error: error,
     success: success,

@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-hover-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-header-selected-text</td>
     <td></td>
-    <td><code>$kendo-color-black</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-selected-marker</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-hover-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -610,7 +610,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-panelbar-item-selected-text</td>
     <td></td>
-    <td><code>$kendo-color-black</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
     <td></td>
 </tr>
 <tr>

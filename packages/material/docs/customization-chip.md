@@ -249,7 +249,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-base-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black))</code></td>
     <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
 </tr>
 <tr>
@@ -275,7 +275,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-button-bg, k-try-tint( $kendo-chip-base-bg, 92% ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $kendo-button-bg, k-try-tint( $kendo-chip-base-bg, 92% )))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
@@ -325,7 +325,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-focus-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 80% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 80% ))</code></td>
     <td><span class="color-preview" style="background-color: #cccccc"></span><code>#cccccc</code></td>
 </tr>
 <tr>
@@ -345,7 +345,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 84% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-tint( $kendo-chip-base-bg, 84% ))</code></td>
     <td><span class="color-preview" style="background-color: #d6d6d6"></span><code>#d6d6d6</code></td>
 </tr>
 <tr>
@@ -365,7 +365,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-solid-selected-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 76% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 76% ))</code></td>
     <td><span class="color-preview" style="background-color: #c2c2c2"></span><code>#c2c2c2</code></td>
 </tr>
 <tr>
@@ -425,7 +425,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 92% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-tint( $kendo-chip-base-bg, 92% ))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-chip-outline-hover-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $kendo-chip-outline-hover-bg ))</code></td>
     <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
 </tr>
 <tr>
@@ -445,7 +445,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-outline-selected-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 84% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 84% ))</code></td>
     <td><span class="color-preview" style="background-color: #d6d6d6"></span><code>#d6d6d6</code></td>
 </tr>
 <tr>

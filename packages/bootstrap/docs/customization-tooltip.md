@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ))</code></td>
     <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-text</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-tooltip-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), k-contrast-color( $kendo-tooltip-bg ))</code></td>
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>

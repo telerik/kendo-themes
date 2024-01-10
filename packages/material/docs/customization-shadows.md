@@ -28,16 +28,6 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$elevation</td>
-    <td>Color</td>
-    <td><code>k-map-get( $theme, elevation )</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of shadows</div></div>
-    </td>
-</tr>
-<tr>
     <td>$box-shadow-depth-1</td>
     <td>String</td>
     <td><code>k-elevation(1)</code></td>
@@ -125,6 +115,16 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for window and dialog.<br />Equivalent to material elevation 24.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$elevation</td>
+    <td>Color</td>
+    <td><code>k-map-get( $theme, elevation )</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of shadows</div></div>
     </td>
 </tr>
 </tbody>

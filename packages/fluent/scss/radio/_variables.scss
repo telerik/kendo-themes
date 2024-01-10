@@ -44,14 +44,14 @@ $kendo-radio-bg: $kendo-component-bg !default;
 $kendo-radio-text: transparent !default;
 /// The border color of the RadioButton.
 /// @group radio
-$kendo-radio-border: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-radio-border: if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 )) !default;
 
 /// The background color of the hovered RadioButton.
 /// @group radio
 $kendo-radio-hover-bg: $kendo-radio-bg !default;
 /// The color of the hovered RadioButton.
 /// @group radio
-$kendo-radio-hover-text: k-get-theme-color( neutral, 130 ) !default;
+$kendo-radio-hover-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color( neutral, 130 )) !default;
 /// The border color of the hovered RadioButton.
 /// @group radio
 $kendo-radio-hover-border: $kendo-radio-border !default;
@@ -61,20 +61,20 @@ $kendo-radio-hover-border: $kendo-radio-border !default;
 $kendo-radio-checked-bg: $kendo-radio-bg !default;
 /// The color of the checked RadioButton.
 /// @group radio
-$kendo-radio-checked-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-radio-checked-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The border color of the checked RadioButton.
 /// @group radio
-$kendo-radio-checked-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-radio-checked-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The background color of the checked and hovered RadioButton.
 /// @group radio
 $kendo-radio-hover-checked-bg: $kendo-radio-bg !default;
 /// The color of the checked and hovered RadioButton.
 /// @group radio
-$kendo-radio-hover-checked-text: k-get-theme-color-var( primary-110 ) !default;
+$kendo-radio-hover-checked-text: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
 /// The border color of the checked and hovered RadioButton.
 /// @group radio
-$kendo-radio-hover-checked-border: k-get-theme-color-var( primary-110 ) !default;
+$kendo-radio-hover-checked-border: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
 
 /// The border color of the focused RadioButton.
 /// @group radio
@@ -84,7 +84,7 @@ $kendo-radio-focus-border: null !default;
 $kendo-radio-focus-shadow: null !default;
 /// The outline of the focused RadioButton.
 /// @group radio
-$kendo-radio-focus-outline: 1px solid k-get-theme-color-var( neutral-130 ) !default;
+$kendo-radio-focus-outline: 1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
 /// The outline offset of the focused RadioButton.
 /// @group radio
 $kendo-radio-focus-outline-offset: 2px !default;
@@ -94,10 +94,10 @@ $kendo-radio-focus-outline-offset: 2px !default;
 $kendo-radio-disabled-bg: $kendo-radio-bg !default;
 /// The color of the disabled RadioButton.
 /// @group radio
-$kendo-radio-disabled-text: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-radio-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 /// The border color of the disabled RadioButton.
 /// @group radio
-$kendo-radio-disabled-border: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-radio-disabled-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 
 /// The background color of the disabled and checked RadioButton.
 /// @group radio
@@ -171,7 +171,7 @@ $kendo-radio-list-item-gap: map.get( $kendo-spacing, 2 ) !default;
 
 /// The background color of the RadioButton ripple.
 /// @group radio
-$kendo-radio-ripple-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-radio-ripple-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The opacity of the RadioButton ripple.
 /// @group radio
 $kendo-radio-ripple-opacity: .25 !default;

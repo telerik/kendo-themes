@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-series-a</td>
     <td>Color</td>
-    <td><code>get-base-hue( purple, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-a ), get-base-hue( purple, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #9c27b0"></span><code>#9c27b0</code></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-b</td>
     <td>Color</td>
-    <td><code>get-base-hue( blue, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-b ), get-base-hue( blue, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #2196f3"></span><code>#2196f3</code></td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-c</td>
     <td>Color</td>
-    <td><code>get-base-hue( teal, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-c ), get-base-hue( teal, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #009688"></span><code>#009688</code></td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-d</td>
     <td>Color</td>
-    <td><code>get-base-hue( yellow, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-d ), get-base-hue( yellow, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #ffeb3b"></span><code>#ffeb3b</code></td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-e</td>
     <td>Color</td>
-    <td><code>get-base-hue( red, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-e ), get-base-hue( red, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #f44336"></span><code>#f44336</code></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-series-f</td>
     <td>Color</td>
-    <td><code>get-base-hue( green, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-f ), get-base-hue( green, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #4caf50"></span><code>#4caf50</code></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>Color</td>
-    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )</code></td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .08 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>Color</td>
-    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 )</code></td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .04 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>

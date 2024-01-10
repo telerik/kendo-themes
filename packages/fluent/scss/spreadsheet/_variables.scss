@@ -27,14 +27,14 @@ $kendo-spreadsheet-text: var( --kendo-component-text, initial ) !default;
 $kendo-spreadsheet-border: var( --kendo-component-border, initial ) !default;
 /// Primary border color of the spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-primary-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-spreadsheet-primary-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Primary background color of the spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-primary-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-spreadsheet-primary-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Background color of the spreadsheet header.
 /// @group spreadsheet
-$kendo-spreadsheet-header-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-spreadsheet-header-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// Text color of the spreadsheet header.
 /// @group spreadsheet
 $kendo-spreadsheet-header-text: $kendo-table-header-text !default;
@@ -44,7 +44,7 @@ $kendo-spreadsheet-header-border: $kendo-table-header-border !default;
 
 /// Text color of the spreadsheet table headers.
 /// @group spreadsheet
-$kendo-spreadsheet-table-header-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-spreadsheet-table-header-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// Background color of the spreadsheet table headers.
 /// @group spreadsheet
 $kendo-spreadsheet-table-header-text: $kendo-spreadsheet-header-text !default;
@@ -54,13 +54,13 @@ $kendo-spreadsheet-table-header-border: $kendo-spreadsheet-header-border !defaul
 
 /// Selected text color of the spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-selected-text: k-get-theme-color-var( primary-160 ) !default;
+$kendo-spreadsheet-selected-text: if($kendo-enable-color-system, k-color( primary-on-subtle ), k-get-theme-color-var( primary-160 )) !default;
 /// Selected background color of the spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-selected-bg: k-get-theme-color-var( primary-30 ) !default;
+$kendo-spreadsheet-selected-bg: if($kendo-enable-color-system, k-color( primary-subtle-active ), k-get-theme-color-var( primary-30 )) !default;
 /// Selected border color of the spreadsheet.
 /// @group spreadsheet
-$kendo-spreadsheet-selected-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-spreadsheet-selected-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Horizontal padding of the spreadsheet popup menu.
 /// @group spreadsheet
@@ -186,15 +186,15 @@ $kendo-spreadsheet-cell-editor-border: null !default;
 
 /// Background color of the spreadsheet resize handle.
 /// @group spreadsheet
-$kendo-spreadsheet-resize-handle-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-spreadsheet-resize-handle-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Border color of the spreadsheet cell comment indicator.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-comment-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-spreadsheet-cell-comment-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Border color of the spreadsheet cell comment indicator.
 /// @group spreadsheet
-$kendo-spreadsheet-cell-dirty-border: k-get-theme-color-var( error-100 ) !default;
+$kendo-spreadsheet-cell-dirty-border: if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( error-100 )) !default;
 
 /// Horizontal padding of the spreadsheet cell dirty indicator.
 /// @group spreadsheet
@@ -219,41 +219,41 @@ $kendo-filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * var(
 
 /// Text color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-text: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-spreadsheet-filter-button-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// Background color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-bg: $kendo-color-white !default;
+$kendo-spreadsheet-filter-button-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// Border color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-spreadsheet-filter-button-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// Hover text color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-hover-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-spreadsheet-filter-button-hover-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// Hover background color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-hover-bg: k-get-theme-color-var( neutral-20 ) !default;
+$kendo-spreadsheet-filter-button-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 )) !default;
 /// Hover border color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-hover-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-spreadsheet-filter-button-hover-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// Active text color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-active-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-spreadsheet-filter-button-active-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// Active background color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-active-bg: k-get-theme-color-var( neutral-30 ) !default;
+$kendo-spreadsheet-filter-button-active-bg: f($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-30 )) !default;
 /// Active border color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-active-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-spreadsheet-filter-button-active-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// Color of the spreadsheet menu icon.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-menu-icon-color: k-get-theme-color-var( primary-100 ) !default;
+$kendo-spreadsheet-filter-menu-icon-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Border color of the spreadsheet error.
 /// @group spreadsheet
-$kendo-spreadsheet-error-border: k-get-theme-color-var( error-190 ) !default;
+$kendo-spreadsheet-error-border: if($kendo-enable-color-system, k-color( error-on-subtle ), k-get-theme-color-var( error-190 )) !default;
 
 /// Border style of the spreadsheet image dialog.
 /// @group spreadsheet
@@ -306,10 +306,10 @@ $kendo-spreadsheet-drawing-handle-border-width: 1px !default;
 $kendo-spreadsheet-drawing-handle-border-color: var( --kendo-selected-bg, initial ) !default;
 /// Outline color of the spreadsheet drawing handle.
 /// @group spreadsheet
-$kendo-spreadsheet-drawing-handle-outline-color: k-get-theme-color-var( primary-100 ) !default;
+$kendo-spreadsheet-drawing-handle-outline-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Border color of the spreadsheet drawing handle.
 /// @group spreadsheet
-$kendo-spreadsheet-drawing-handle-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-spreadsheet-drawing-handle-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Border radius of the spreadsheet drawing handle.
 /// @group spreadsheet
 $kendo-spreadsheet-drawing-handle-border-radius: var( --kendo-border-radius-lg, initial ) !default;

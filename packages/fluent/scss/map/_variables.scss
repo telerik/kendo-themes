@@ -20,7 +20,7 @@ $kendo-map-bg: var( --kendo-component-bg, transparent ) !default;
 $kendo-map-text: var( --kendo-component-text, inherit ) !default;
 /// Border color of the map.
 /// @group map
-$kendo-map-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-map-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// Border width of the map.
 /// @group map
@@ -49,13 +49,13 @@ $kendo-map-navigator-height: $kendo-map-navigator-width !default;
 $kendo-map-navigator-border-width: 1px !default;
 /// Map navigator background color.
 /// @group map
-$kendo-map-navigator-bg: $kendo-color-white !default;
+$kendo-map-navigator-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// Map navigator text color.
 /// @group map
-$kendo-map-navigator-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-map-navigator-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// Map navigator border color.
 /// @group map
-$kendo-map-navigator-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-map-navigator-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// Map zoom control margin.
 /// @group map
@@ -78,8 +78,8 @@ $kendo-map-attribution-padding-y: $kendo-padding-sm-y !default;
 $kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75 ) !default;
 /// Map attribution background color.
 /// @group map
-$kendo-map-attribution-bg: $kendo-color-white !default;
+$kendo-map-attribution-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 
 /// Map marker fill color.
 /// @group map
-$kendo-map-marker-fill: k-get-theme-color-var( primary-100 ) !default;
+$kendo-map-marker-fill: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

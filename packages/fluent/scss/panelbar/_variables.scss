@@ -80,7 +80,7 @@ $kendo-panelbar-header-border: inherit !default;
 $kendo-panelbar-header-hover-bg: var( --kendo-hover-bg, inherit ) !default;
 /// Text color of the panelbar header when hovered.
 /// @group panelbar
-$kendo-panelbar-header-hover-text: k-get-theme-color-var( primary-110 ) !default;
+$kendo-panelbar-header-hover-text: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
 /// Border color of the panelbar header when hovered.
 /// @group panelbar
 $kendo-panelbar-header-hover-border: inherit !default;
@@ -113,13 +113,13 @@ $kendo-panelbar-header-hover-focus-border: null !default;
 $kendo-panelbar-header-selected-bg: var( --kendo-selected-bg, inherit ) !default;
 /// Text color of the panelbar header when selected.
 /// @group panelbar
-$kendo-panelbar-header-selected-text: $kendo-color-black !default;
+$kendo-panelbar-header-selected-text: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 /// Border color of the panelbar header when selected.
 /// @group panelbar
 $kendo-panelbar-header-selected-border: inherit !default;
 /// Color of the marker of the panelbar header when selected.
 /// @group panelbar
-$kendo-panelbar-selected-marker: k-get-theme-color-var( primary-100 ) !default;
+$kendo-panelbar-selected-marker: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Background color of the panelbar header when selected and hovered.
 /// @group panelbar
@@ -166,7 +166,7 @@ $kendo-panelbar-header-expanded-border: inherit !default;
 $kendo-panelbar-item-hover-bg: var( --kendo-hover-bg, inherit ) !default;
 /// Text color of the panelbar item when hovered.
 /// @group panelbar
-$kendo-panelbar-item-hover-text: k-get-theme-color-var( primary-110 ) !default;
+$kendo-panelbar-item-hover-text: if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 )) !default;
 /// Border color of the panelbar item when hovered.
 /// @group panelbar
 $kendo-panelbar-item-hover-border: inherit !default;
@@ -199,7 +199,7 @@ $kendo-panelbar-item-hover-focus-border: inherit !default;
 $kendo-panelbar-item-selected-bg: var( --kendo-selected-bg, inherit ) !default;
 /// Text color of the panelbar item when selected.
 /// @group panelbar
-$kendo-panelbar-item-selected-text: $kendo-color-black !default;
+$kendo-panelbar-item-selected-text: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 /// Border color of the panelbar item when selected.
 /// @group panelbar
 $kendo-panelbar-item-selected-border: inherit !default;

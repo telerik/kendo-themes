@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-item-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 3px rgba($kendo-color-primary, .25)</code></td>
+    <td><code>0 0 0 3px if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba($kendo-color-primary, .25))</code></td>
     <td><code>0 0 0 3px rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>

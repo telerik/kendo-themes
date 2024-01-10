@@ -158,6 +158,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-disabled-text</td>
+    <td>Color</td>
+    <td><code>k-map-get( $theme, disabled-text )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(

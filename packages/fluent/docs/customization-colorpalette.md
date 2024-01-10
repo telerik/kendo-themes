@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-focus-outline</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 2px $kendo-color-white</code></td>
+    <td><code>inset 0 0 0 2px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-hover-outline</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .1 ), k-get-theme-color-var( neutral-20 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-palette-tile-hover-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px $kendo-color-white</code></td>
+    <td><code>inset 0 0 0 2px $kendo-color-palette-tile-hover-outline, inset 0 0 0 4px if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>

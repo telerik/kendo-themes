@@ -83,7 +83,7 @@ $kendo-card-header-border-width: 0 !default;
 $kendo-card-header-bg: inherit !default;
 /// The text color of the Card header.
 /// @group card
-$kendo-card-header-text: k-get-theme-color-var( neutral-190 ) !default; // header-text
+$kendo-card-header-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default; // header-text
 /// The border color of the Card header.
 /// @group card
 $kendo-card-header-border: inherit !default; // header-border
@@ -184,7 +184,7 @@ $kendo-card-brand-colors: ( primary, error, warning, success, info ) !default;
 
 // Matrix with card theme colors in the order: bg, color, border
 $_tc-card-matrix: (
-    (normal: (20, 160, 20)),
+    (normal: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-subtle), (20, 160, 20))),
 ) !default;
 
 /// Theme colors map for the card variations.

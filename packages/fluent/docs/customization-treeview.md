@@ -359,7 +359,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>

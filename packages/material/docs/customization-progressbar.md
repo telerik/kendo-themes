@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-color-primary, 8 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-try-tint( $kendo-color-primary, 8 ))</code></td>
     <td><span class="color-preview" style="background-color: #bac0e4"></span><code>#bac0e4</code></td>
 </tr>
 <tr>

@@ -236,7 +236,7 @@ $kendo-grid-header-text: $kendo-table-header-text !default;
 $kendo-grid-header-border: $kendo-table-header-border !default;
 /// Background color of grid header icons.
 /// @group grid
-$kendo-grid-header-icon-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-grid-header-icon-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
 
 // Background color of grid footer.
 /// @group grid
@@ -336,13 +336,13 @@ $kendo-grid-sort-index-spacing-x: map.get( $kendo-spacing, 0.5 ) !default;
 $kendo-grid-sort-icon-spacing: var( --kendo-icon-lg-spacing, .5rem ) !default;
 /// Text color of the grid sort indicator.
 /// @group grid
-$kendo-grid-sort-indicator-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-grid-sort-indicator-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
 /// Text color of the grid sort order indicator.
 /// @group grid
-$kendo-grid-sort-indicator-order-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-grid-sort-indicator-order-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Background color of the sorted grid cells.
 /// @group grid
-$kendo-grid-sorted-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-grid-sorted-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 
 /// Horizontal padding of the grid command cells.
 /// @group grid
@@ -374,10 +374,10 @@ $kendo-grid-group-indicator-text: var( --kendo-component-text, initial ) !defaul
 $kendo-grid-group-indicator-bg: var( --kendo-component-bg, initial ) !default;
 /// Border color of the grid group indicator.
 /// @group grid
-$kendo-grid-group-indicator-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-grid-group-indicator-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 /// Text color of the grid group indicator icon.
 /// @group grid
-$kendo-grid-group-indicator-icon-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-grid-group-indicator-icon-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
 
 /// Horizontal border width of the grid group footer.
 /// @group grid
@@ -388,7 +388,7 @@ $kendo-grid-group-footer-border-width-x: 0px !default;
 
 /// Text color of the grid group drop clue.
 /// @group grid
-$kendo-grid-group-drop-hint-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-grid-group-drop-hint-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Border width of the grid sticky cell.
 /// @group grid
@@ -401,7 +401,7 @@ $kendo-grid-sticky-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-grid-sticky-text: $kendo-grid-text !default;
 /// Border color of the grid sticky cell.
 /// @group grid
-$kendo-grid-sticky-border: k-get-theme-color-var( neutral-90 ) !default;
+$kendo-grid-sticky-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .8 ), k-get-theme-color-var( neutral-90 )) !default;
 /// Alt background color of the grid sticky cell.
 /// @group grid
 $kendo-grid-sticky-alt-bg: $kendo-grid-sticky-bg !default;
@@ -434,7 +434,7 @@ $kendo-grid-sticky-selected-bg: $kendo-grid-selected-bg !default;
 $kendo-grid-sticky-selected-alt-bg: $kendo-grid-sticky-selected-bg !default;
 /// Selected hover background color of the grid sticky cells.
 /// @group grid
-$kendo-grid-sticky-selected-hover-bg: $kendo-grid-selected-hover-bg !default;
+$kendo-grid-sticky-selected-hover-bg: if($kendo-enable-color-system, $kendo-grid-sticky-selected-bg, $kendo-grid-selected-hover-bg) !default;
 
 /// Horizontal padding of the grid filter menu container.
 /// @group grid
@@ -574,10 +574,10 @@ $kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo
 
 /// Background color of the grid row resize indicator
 /// @group grid
-$kendo-grid-row-resizer-hover-bg: k-get-theme-color-var( neutral-90 ) !default;
+$kendo-grid-row-resizer-hover-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 )) !default;
 /// Active background color of the grid row indicator
 /// @group grid
-$kendo-grid-row-resizer-active-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-grid-row-resizer-active-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Height of the grid row resize indicator
 /// @group grid
 $kendo-grid-row-resizer-height: map.get( $kendo-spacing, 0.5 ) !default;

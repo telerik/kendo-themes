@@ -69,7 +69,7 @@ $kendo-taskboard-column-border-width: 1px !default;
 $kendo-taskboard-column-border-radius: var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) !default;
 /// Background color of the task board column.
 /// @group taskboard
-$kendo-taskboard-column-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-taskboard-column-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// Text color of the task board column.
 /// @group taskboard
 $kendo-taskboard-column-text: var( --kendo-component-text, inherit ) !default;
@@ -84,7 +84,7 @@ $kendo-taskboard-column-focus-bg: $kendo-taskboard-column-bg !default;
 $kendo-taskboard-column-focus-text: $kendo-taskboard-column-text !default;
 /// Focus border color of the task board column.
 /// @group taskboard
-$kendo-taskboard-column-focus-border: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-taskboard-column-focus-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 )) !default;
 
 /// Vertical padding of the task board column header.
 /// @group taskboard
@@ -182,7 +182,7 @@ $kendo-taskboard-card-category-border-width: 4px !default;
 $kendo-taskboard-card-focus-shadow: none !default;
 /// Selected border of the task board card.
 /// @group taskboard
-$kendo-taskboard-card-selected-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-taskboard-card-selected-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Selected shadow of the task board card.
 /// @group taskboard
 $kendo-taskboard-card-selected-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
@@ -202,7 +202,7 @@ $kendo-taskboard-drag-placeholder-border-width: 1px !default;
 $kendo-taskboard-drag-placeholder-border-radius: $kendo-card-border-radius !default;
 /// Background color of the task board card placeholder.
 /// @group taskboard
-$kendo-taskboard-drag-placeholder-bg: k-get-theme-color-var( neutral-50 ) !default;
+$kendo-taskboard-drag-placeholder-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .23 ), k-get-theme-color-var( neutral-50 )) !default;
 /// Border color of the task board card placeholder.
 /// @group taskboard
 $kendo-taskboard-drag-placeholder-border: var( --kendo-component-border, inherit ) !default;
