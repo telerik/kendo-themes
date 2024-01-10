@@ -38,7 +38,7 @@ const defaultProps = {
 
 export const Tooltip = (
     props: KendoTooltipProps &
-        React.HTMLAttributes<HTMLDivElement>
+        Omit<React.HTMLAttributes<HTMLDivElement>, 'content'>
 ) => {
     const {
         callout,
