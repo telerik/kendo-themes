@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.9](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.8...v7.1.0-dev.9) (2024-01-10)
+
+
+### Features
+
+* **bootstrap:** implement color system ([21e3916](https://github.com/telerik/kendo-themes/commit/21e391667e335cfe90be9451618e87c4c1ca1ff4))
+* **default:** implement color system ([c985322](https://github.com/telerik/kendo-themes/commit/c985322ac5f1b2da98561b9dfbb698cc0bc02e04))
+* **fluent:** implement color system ([5a8bbc8](https://github.com/telerik/kendo-themes/commit/5a8bbc81393066cc5650eca1bc61bd6e60767508))
+* **material:** implement color system ([bfc5c60](https://github.com/telerik/kendo-themes/commit/bfc5c60c9ad11c0595956358c0e125b3dae7656a))
+
+
+
+
+
 # [7.1.0-dev.8](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.7...v7.1.0-dev.8) (2024-01-08)
 
 **Note:** Version bump only for package @progress/kendo-theme-core

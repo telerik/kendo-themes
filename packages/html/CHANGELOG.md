@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.9](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.8...v7.1.0-dev.9) (2024-01-10)
+
+
+### Bug Fixes
+
+* **card:** content shrinks in horizontal orientation and action buttons with horizontal layout ([0ec00d0](https://github.com/telerik/kendo-themes/commit/0ec00d000e014b12bc41a470fc4499c3f49f6221))
+
+
+
+
+
 # [7.1.0-dev.8](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.7...v7.1.0-dev.8) (2024-01-08)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

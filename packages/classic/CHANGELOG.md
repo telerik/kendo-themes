@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.9](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.8...v7.1.0-dev.9) (2024-01-10)
+
+
+### Features
+
+* **classic:** implement color system ([2e73df4](https://github.com/telerik/kendo-themes/commit/2e73df445cbc6d1262c3b142f2c8f966781b400d))
+
+
+
+
+
 # [7.1.0-dev.8](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.7...v7.1.0-dev.8) (2024-01-08)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic

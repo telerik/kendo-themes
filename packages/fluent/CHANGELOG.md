@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.9](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.8...v7.1.0-dev.9) (2024-01-10)
+
+
+### Bug Fixes
+
+* **card:** content shrinks in horizontal orientation and action buttons with horizontal layout ([0ec00d0](https://github.com/telerik/kendo-themes/commit/0ec00d000e014b12bc41a470fc4499c3f49f6221))
+* **filemanager:** remove content splitter double border ([7d939b5](https://github.com/telerik/kendo-themes/commit/7d939b57ab2edf3b0d8be9d693fbad4134d8e6fd))
+* **filemanager:** toolbar shadow not visible in material theme ([bb52658](https://github.com/telerik/kendo-themes/commit/bb52658009830f7ddb91e98af16dfa352f4109fa))
+
+
+### Features
+
+* **classic:** implement color system ([2e73df4](https://github.com/telerik/kendo-themes/commit/2e73df445cbc6d1262c3b142f2c8f966781b400d))
+* **default:** implement color system ([c985322](https://github.com/telerik/kendo-themes/commit/c985322ac5f1b2da98561b9dfbb698cc0bc02e04))
+* **fluent:** implement color system ([5a8bbc8](https://github.com/telerik/kendo-themes/commit/5a8bbc81393066cc5650eca1bc61bd6e60767508))
+* **gantt:** update selectors to match updated rendering ([4efe6e5](https://github.com/telerik/kendo-themes/commit/4efe6e51928e2ec7393b319b24e301aa0fd2ca0f))
+
+
+
+
+
 # [7.1.0-dev.8](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.7...v7.1.0-dev.8) (2024-01-08)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
