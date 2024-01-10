@@ -2,6 +2,7 @@ import { Button } from "../../button";
 import { Combobox } from "../../combobox";
 import { MenuButton } from "../../menu-button";
 import { Toolbar } from "../../toolbar";
+import { TooltipNormal } from "../../tooltip";
 
 const style = `
     #test-area {
@@ -445,7 +446,7 @@ export default () =>(
                             </tbody>
                         </table>
                     </div>
-                    <div className="k-widget k-tooltip" style={{ position: "absolute", display: "none" }}>A1</div>
+                    <TooltipNormal content="A1" style={{ position: "absolute", display: "none" }} />
                     <div className="k-list-group-sticky-header" style={{ display: "none" }}></div>
                     <div className="k-list-content k-list-scroller" unselectable="on"></div>
                 </div>
