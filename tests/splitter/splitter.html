@@ -8,16 +8,93 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area">
-        <div class="k-widget k-splitter k-splitter-flex k-splitter-vertical" style="height: 280px;">
-            <div class="k-pane-flex k-pane" style="order: 0;">
-                <div class="k-widget k-splitter k-splitter-flex k-splitter-horizontal">
-                    <div class="k-pane-static k-pane k-scrollable" style="flex-basis: 20%; order: 0;">
-                        <p>Collapsible pane
-                            <br>Size = 20%
-                        </p>
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <span>Splitter horizontal</span>
+        <div class="k-splitter k-splitter-horizontal k-splitter-flex">
+            <div class="k-pane k-pane-static" style="flex-basis: 20%;">
+                <p>Collapsible pane - 20%</p>
+            </div>
+            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                <div class="k-collapse-prev">
+                    <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m160 256 192-128v256z"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="k-resize-handle"></div>
+            </div>
+            <div class="k-pane">
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+            </div>
+            <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                <div class="k-resize-handle"></div>
+                <div class="k-collapse-next">
+                    <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M352 256 160 384V128z"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="k-pane k-pane-static" style="flex-basis: 30%;">
+                <p>Collapsible pane - 30%</p>
+            </div>
+        </div>
+        <span>Splitter vertical</span>
+        <div class="k-splitter k-splitter-vertical k-splitter-flex">
+            <div class="k-pane k-pane-static" style="flex-basis: 20%;">
+                <p>Collapsible pane - 20%</p>
+            </div>
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+                <div class="k-collapse-prev">
+                    <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-up">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="m256 160 128 192H128z"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="k-resize-handle"></div>
+            </div>
+            <div class="k-pane">
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+            </div>
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+                <div class="k-resize-handle"></div>
+                <div class="k-collapse-next">
+                    <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-down">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 352 128 160h256z"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="k-pane k-pane-static" style="flex-basis: 30%;">
+                <p>Collapsible pane - 30%</p>
+            </div>
+        </div>
+        <span>Splitter nested</span>
+        <div class="k-splitter k-splitter-vertical k-splitter-flex" style="height: 280px;">
+            <div class="k-pane k-pane-flex">
+                <div class="k-splitter k-splitter-horizontal k-splitter-flex">
+                    <div class="k-pane k-pane-static" style="flex-basis: 20%;">
+                        <p>Collapsible pane - 20%</p>
                     </div>
-                    <div class="k-pane k-scrollable" style="order: 2;">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
+                        <div class="k-collapse-prev">
+                            <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="m160 256 192-128v256z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="k-resize-handle"></div>
+                    </div>
+                    <div class="k-pane k-scrollable">
                         <p>Fluid, scollable pane</p>
                         <p>Content</p>
                         <p>Content</p>
@@ -26,25 +103,7 @@
                         <p>Content</p>
                         <p>Content</p>
                     </div>
-                    <div class="k-pane-static k-pane" style="flex-basis: 30%; order: 4;">
-                        <p>Collapsible pane
-                            <br>Size = 30%
-                        </p>
-                    </div>
-                    <div class="k-pane-static k-pane" style="flex-basis: 10px; order: 6;"></div>
-                    <div class="k-pane-static k-pane" style="flex-basis: 10px; order: 8;"></div>
-                    <div class="k-pane-static k-pane" style="flex-basis: 10px; order: 10;"></div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 1;">
-                        <div class="k-collapse-prev">
-                            <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m160 256 192-128v256z"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="k-resize-handle"></div>
-                    </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 3;">
+                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal">
                         <div class="k-resize-handle"></div>
                         <div class="k-collapse-next">
                             <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right">
@@ -54,75 +113,28 @@
                             </span>
                         </div>
                     </div>
-                    <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 5;">
-                        <div class="k-collapse-prev">
-                            <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m160 256 192-128v256z"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="k-resize-handle"></div>
-                        <div class="k-collapse-next">
-                            <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M352 256 160 384V128z"></path>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-splitbar k-hover k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 7;">
-                        <div class="k-collapse-prev">
-                            <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m160 256 192-128v256z"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="k-resize-handle"></div>
-                        <div class="k-collapse-next">
-                            <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M352 256 160 384V128z"></path>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="k-splitbar k-focus k-splitbar-horizontal k-splitbar-draggable-horizontal" style="order: 9;">
-                        <div class="k-collapse-prev">
-                            <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-left">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="m160 256 192-128v256z"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="k-resize-handle"></div>
-                        <div class="k-collapse-next">
-                            <span class="k-icon k-svg-icon k-icon-xs k-svg-i-caret-alt-right">
-                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M352 256 160 384V128z"></path>
-                                </svg>
-                            </span>
-                        </div>
+                    <div class="k-pane k-pane-static" style="flex-basis: 30%;">
+                        <p>Collapsible pane - 30%</p>
                     </div>
                 </div>
             </div>
-            <div class="k-pane-static k-pane k-scrollable" style="flex-basis: 80px; order: 2;">
-                <p>Pane size: 80px</p>
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical">
+                <div class="k-resize-handle"></div>
             </div>
-            <div class="k-pane-static k-pane k-scrollable" style="flex-basis: 80px; order: 4;">
-                <p>Static pane
-                    <br>Size = 80px
-                </p>
+            <div class="k-pane k-pane-static" style="flex-basis: 80px;">
+                <p>Pane - 80px</p>
             </div>
-            <div class="k-pane-static k-pane k-scrollable" hidden="" style="order: 6;">
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-static-vertical">
+                <div class="k-resize-handle"></div>
+            </div>
+            <div class="k-pane k-pane-static" style="flex-basis: 80px;">
+                <p>Non resizable pane - 80px</p>
+            </div>
+            <div class="k-splitbar k-splitbar-vertical k-splitbar-static-vertical">
+                <div class="k-resize-handle"></div>
+            </div>
+            <div hidden="" class="k-pane">
                 <h2>Hidden pane, should be invisible!</h2>
-            </div>
-            <div class="k-splitbar k-splitbar-vertical k-splitbar-draggable-vertical" style="order: 1;">
-                <div class="k-resize-handle"></div>
-            </div>
-            <div class="k-splitbar k-splitbar-vertical k-splitbar-static-vertical" style="order: 3;">
-                <div class="k-resize-handle"></div>
             </div>
         </div>
     </div>
