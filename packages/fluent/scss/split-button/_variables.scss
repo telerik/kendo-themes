@@ -29,7 +29,7 @@ $kendo-split-button-arrow-delimiter-size: calc( #{$kendo-button-inner-calc-size}
 $kendo-split-button-arrow-delimiter-line-size: 1px !default;
 /// The background color of the SplitButton arrow delimiter.
 /// @group split-button
-$kendo-split-button-arrow-delimiter-bg: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-split-button-arrow-delimiter-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 
 /// The sizes map for the SplitButton.
 /// @group split-button

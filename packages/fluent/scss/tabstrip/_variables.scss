@@ -93,10 +93,10 @@ $kendo-tabstrip-item-hover-border: var( --kendo-hover-bg, inherit ) !default;
 $kendo-tabstrip-item-selected-bg: var( --kendo-component-bg, transparent ) !default;
 /// The text color of selected tabs
 /// @group tabstrip
-$kendo-tabstrip-item-selected-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-tabstrip-item-selected-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 /// The border color of selected tabs
 /// @group tabstrip
-$kendo-tabstrip-item-selected-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-tabstrip-item-selected-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The background gradient of selected tabs
 /// @group tabstrip
 $kendo-tabstrip-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
@@ -105,7 +105,7 @@ $kendo-tabstrip-item-selected-font-weight: var( --kendo-font-weight-bold, normal
 $kendo-tabstrip-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 /// The text color of the sortable tabstrip item
 /// @group tabstrip
-$kendo-tabstrip-item-dragging-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-tabstrip-item-dragging-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 // Indicator
 /// The border width of the tabstrip indicator
@@ -113,7 +113,7 @@ $kendo-tabstrip-item-dragging-text: k-get-theme-color-var( primary-100 ) !defaul
 $kendo-tabstrip-indicator-size: map.get( $kendo-spacing, 0.5 ) !default;
 /// The border color of the tabstrip ripple
 /// @group tabstrip
-$kendo-tabstrip-indicator-color: k-get-theme-color-var( primary-100 ) !default;
+$kendo-tabstrip-indicator-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The horizontal padding of tabstrip content
 /// @group tabstrip

@@ -278,6 +278,46 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-focus-shadow</td>
+    <td>List</td>
+    <td><code>inset 0 0 0 2px rgba(0, 0, 0, .13)</code></td>
+    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.13)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-transition</td>
+    <td>List</td>
+    <td><code>color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out</code></td>
+    <td><code>color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transition used across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-filter</td>
+    <td>String</td>
+    <td><code>grayscale(.1)</code></td>
+    <td><code>grayscale(0.1)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Filter used for disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-opacity</td>
+    <td>Number</td>
+    <td><code>.6</code></td>
+    <td><code>0.6</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity used for disabled items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-base-bg</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
@@ -300,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-base-border</td>
     <td>Color</td>
-    <td><code>rgba( black, .08 )</code></td>
+    <td><code>rgba(black, 0.08)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -310,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-base-gradient</td>
     <td>List</td>
-    <td><code>rgba( black, 0 ), rgba( black, .02 )</code></td>
+    <td><code>rgba(black, 0), rgba(black, 0.02)</code></td>
     <td><code>rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)</code></td>
 </tr>
 <tr>
@@ -320,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-base-bg, .5 )</code></td>
+    <td><code>k-try-shade($kendo-base-bg, 0.5)</code></td>
     <td><span class="color-preview" style="background-color: #f0f0f0"></span><code>#f0f0f0</code></td>
 </tr>
 <tr>
@@ -370,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-text</td>
     <td>Color</td>
-    <td><code>k-contrast-legacy( $kendo-selected-bg )</code></td>
+    <td><code>k-contrast-legacy($kendo-selected-bg)</code></td>
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
@@ -400,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-selected-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-selected-bg, .5 )</code></td>
+    <td><code>k-try-shade($kendo-selected-bg, 0.5)</code></td>
     <td><span class="color-preview" style="background-color: #f55f54"></span><code>#f55f54</code></td>
 </tr>
 <tr>
@@ -438,26 +478,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-focus-shadow</td>
-    <td>List</td>
-    <td><code>inset 0 0 0 2px rgba(0, 0, 0, .13)</code></td>
-    <td><code>inset 0 0 0 2px rgba(0, 0, 0, 0.13)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-transition</td>
-    <td>List</td>
-    <td><code>color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out</code></td>
-    <td><code>color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transition used across all components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-disabled-text</td>
     <td>Color</td>
     <td><span class="color-preview" style="background-color: #8f8f8f"></span><code>#8f8f8f</code></td>
@@ -465,26 +485,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-filter</td>
-    <td>String</td>
-    <td><code>grayscale(.1)</code></td>
-    <td><code>grayscale(0.1)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Filter used for disabled items.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-disabled-opacity</td>
-    <td>Number</td>
-    <td><code>.6</code></td>
-    <td><code>0.6</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity used for disabled items.</div></div>
     </td>
 </tr>
 </tbody>

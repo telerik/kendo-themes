@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td>Color</td>
-    <td><code>rgba( k-contrast-color( $kendo-listview-bg ), .04 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( k-contrast-color( $kendo-listview-bg ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-listview-item-focus-bg</td>
     <td>Color</td>
-    <td><code>rgba( k-contrast-color( $kendo-listview-bg ), .08 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( k-contrast-color( $kendo-listview-bg ), .08 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>

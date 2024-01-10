@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-focus-ring</td>
     <td>List</td>
-    <td><code>0 0 3px 1px rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 )</code></td>
+    <td><code>0 0 3px 1px rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .25 )</code></td>
     <td><code>0 0 3px 1px rgba(0, 0, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-switch-off-track-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base ), k-try-shade( $kendo-switch-off-track-bg ))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
@@ -304,7 +304,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-switch-off-thumb-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-switch-off-thumb-bg ))</code></td>
     <td><span class="color-preview" style="background-color: #d8d8d8"></span><code>#d8d8d8</code></td>
 </tr>
 <tr>
@@ -464,7 +464,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-focus-ring</td>
     <td>List</td>
-    <td><code>0 0 3px 1px rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .25 )</code></td>
+    <td><code>0 0 3px 1px rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .25 )</code></td>
     <td><code>0 0 3px 1px rgba(0, 0, 0, 0.25)</code></td>
 </tr>
 <tr>
@@ -534,7 +534,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-border</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-switch-on-thumb-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-try-shade( $kendo-switch-on-thumb-bg ))</code></td>
     <td><span class="color-preview" style="background-color: #e05100"></span><code>#e05100</code></td>
 </tr>
 <tr>
@@ -554,7 +554,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-switch-on-thumb-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-switch-on-thumb-bg ))</code></td>
     <td><span class="color-preview" style="background-color: #e05100"></span><code>#e05100</code></td>
 </tr>
 <tr>
@@ -574,7 +574,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-thumb-hover-border</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-switch-on-thumb-hover-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-try-shade( $kendo-switch-on-thumb-hover-bg ))</code></td>
     <td><span class="color-preview" style="background-color: #ce4b00"></span><code>#ce4b00</code></td>
 </tr>
 <tr>

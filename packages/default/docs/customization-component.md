@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-component-border</td>
     <td>Color</td>
-    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )</code></td>
+    <td><code>rgba(if($kendo-is-dark-theme, $kendo-color-white, $kendo-color-black), 0.08)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -99,9 +99,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-invalid-bg</td>
-    <td>String</td>
+    <td>Null</td>
     <td><code>null</code></td>
-    <td><code>initial</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the invalid items.</div></div>
@@ -139,9 +139,9 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-valid-bg</td>
-    <td>String</td>
+    <td>Null</td>
     <td><code>null</code></td>
-    <td><code>initial</code></td>
+    <td><code>null</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the valid items.</div></div>

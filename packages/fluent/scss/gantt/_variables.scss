@@ -26,7 +26,7 @@ $kendo-gantt-border: var( --kendo-component-border, inherit ) !default;
 
 /// Background color of the gantt non-working days.
 /// @group gantt
-$kendo-gantt-nonwork-bg: rgba( $kendo-color-black, .04 ) !default;
+$kendo-gantt-nonwork-bg: rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), $kendo-color-black), .04 ) !default;
 /// Text color of the gantt non-working days.
 /// @group gantt
 $kendo-gantt-nonwork-text: inherit !default;
@@ -42,7 +42,7 @@ $kendo-gantt-line-size: 2px !default;
 $kendo-gantt-line-fill: black !default;
 /// Selected background fill of the gantt connecting lines.
 /// @group gantt
-$kendo-gantt-line-selected-fill: k-get-theme-color-var( primary-120 ) !default;
+$kendo-gantt-line-selected-fill: if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 )) !default;
 
 /// Size of the gantt task dot.
 /// @group gantt
@@ -52,16 +52,16 @@ $kendo-gantt-dot-size: 8px !default;
 $kendo-gantt-dot-spacing: map.get( $kendo-spacing, 0.5 ) !default;
 /// Background color of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-bg: $kendo-color-black !default;
+$kendo-gantt-dot-bg: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 /// Border color of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-border: $kendo-color-black !default;
+$kendo-gantt-dot-border: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 /// Hover background color of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-hover-bg: $kendo-color-white !default;
+$kendo-gantt-dot-hover-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// Hover border color of the gantt task dot.
 /// @group gantt
-$kendo-gantt-dot-hover-border: $kendo-color-black !default;
+$kendo-gantt-dot-hover-border: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 
 /// Background color of the gantt milestone.
 /// @group gantt
@@ -71,23 +71,23 @@ $kendo-gantt-milestone-bg: $kendo-gantt-text !default;
 $kendo-gantt-milestone-border: $kendo-gantt-text !default;
 /// Selected background color of the gantt milestone.
 /// @group gantt
-$kendo-gantt-milestone-selected-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-gantt-milestone-selected-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Selected border color of the gantt milestone.
 /// @group gantt
-$kendo-gantt-milestone-selected-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-gantt-milestone-selected-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Background color of the gantt summary.
 /// @group gantt
-$kendo-gantt-summary-bg: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-gantt-summary-bg: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-110 )) !default;
 /// Background color of the gantt summary progress.
 /// @group gantt
-$kendo-gantt-summary-progress-bg: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-gantt-summary-progress-bg: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// Selected background color of the gantt summary.
 /// @group gantt
-$kendo-gantt-summary-selected-bg: k-get-theme-color-var( primary-50 ) !default;
+$kendo-gantt-summary-selected-bg: if($kendo-enable-color-system, k-color( primary-subtle-active ), k-get-theme-color-var( primary-50 )) !default;
 /// Selected background color of the gantt summary progress.
 /// @group gantt
-$kendo-gantt-summary-progress-selected-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-gantt-summary-progress-selected-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Border width of the gantt task.
 /// @group gantt
@@ -100,31 +100,31 @@ $kendo-gantt-task-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-gantt-task-padding-y: map.get( $kendo-spacing, 1 ) !default;
 /// Background color of the gantt task.
 /// @group gantt
-$kendo-gantt-task-bg: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-gantt-task-bg: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-110 )) !default;
 /// Text color of the gantt task.
 /// @group gantt
-$kendo-gantt-task-text: $kendo-color-white !default;
+$kendo-gantt-task-text: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// Border color of the gantt task.
 /// @group gantt
 $kendo-gantt-task-border: inherit !default;
 /// Background color of the gantt task progress.
 /// @group gantt
-$kendo-gantt-task-progress-bg: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-gantt-task-progress-bg: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// Background hover color of the gantt task progress.
 /// @group gantt
-$kendo-gantt-task-progress-hover-bg: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-gantt-task-progress-hover-bg: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// Selected background color of the gantt task.
 /// @group gantt
-$kendo-gantt-task-selected-bg: k-get-theme-color-var( primary-50 ) !default;
+$kendo-gantt-task-selected-bg: if($kendo-enable-color-system, k-color( primary-subtle-active ), k-get-theme-color-var( primary-50 )) !default;
 /// Selected text color of the gantt task.
 /// @group gantt
-$kendo-gantt-task-selected-text: $kendo-color-white !default;
+$kendo-gantt-task-selected-text: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// Selected border color of the gantt task.
 /// @group gantt
 $kendo-gantt-task-selected-border: transparent !default;
 /// Selected background color of the gantt task progress.
 /// @group gantt
-$kendo-gantt-task-progress-selected-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-gantt-task-progress-selected-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Vertical padding of the gantt task actions.
 /// @group gantt
@@ -186,40 +186,40 @@ $kendo-gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
 
 /// Text color of the gantt planned tooltip.
 /// @group gantt
-$kendo-gantt-planned-text: $kendo-color-white !default;
+$kendo-gantt-planned-text: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// Background color of the gantt planned tooltip.
 /// @group gantt
-$kendo-gantt-planned-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-gantt-planned-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Border color of the gantt planned tooltip.
 /// @group gantt
-$kendo-gantt-planned-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-gantt-planned-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// Text color of the gantt delayed task.
 /// @group gantt
-$kendo-gantt-delayed-text: $kendo-color-white !default;
+$kendo-gantt-delayed-text: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// Background color of the gantt delayed task.
 /// @group gantt
-$kendo-gantt-delayed-bg: k-get-theme-color-var( error-160 ) !default;
+$kendo-gantt-delayed-bg: if($kendo-enable-color-system, k-color( error-emphasis ), k-get-theme-color-var( error-160 )) !default;
 /// Complement background color of the gantt delayed task.
 /// @group gantt
-$kendo-gantt-delayed-bg-lighter: k-get-theme-color-var( error-110) !default;
+$kendo-gantt-delayed-bg-lighter: if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( error-110)) !default;
 /// Background hover color of the gantt delayed task.
 /// @group gantt
-$kendo-gantt-delayed-hover-bg: k-get-theme-color-var( error-190 ) !default;
+$kendo-gantt-delayed-hover-bg: if($kendo-enable-color-system, k-color( error-on-subtle ), k-get-theme-color-var( error-190 )) !default;
 
 /// Background color of the gantt advanced task.
 /// @group gantt
-$kendo-gantt-advanced-bg: k-get-theme-color-var( success-160 ) !default;
+$kendo-gantt-advanced-bg: if($kendo-enable-color-system, k-color( success-emphasis ), k-get-theme-color-var( success-160 )) !default;
 /// Complement background color of the gantt advanced task.
 /// @group gantt
-$kendo-gantt-advanced-bg-lighter: k-get-theme-color-var( success-110 ) !default;
+$kendo-gantt-advanced-bg-lighter: if($kendo-enable-color-system, k-color( success ), k-get-theme-color-var( success-110 )) !default;
 /// Background hover color of the gantt advanced task.
 /// @group gantt
-$kendo-gantt-advanced-hover-bg: k-get-theme-color-var( success-190 ) !default;
+$kendo-gantt-advanced-hover-bg: if($kendo-enable-color-system, k-color( success-on-subtle ), k-get-theme-color-var( success-190 )) !default;
 
 /// Text color of the gantt delayed task action.
 /// @group gantt
-$kendo-gantt-action-on-offset-text: $kendo-color-black !default;
+$kendo-gantt-action-on-offset-text: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 /// Top position of the gantt delayed task resize handler.
 /// @group gantt
 $kendo-gantt-offset-resize-handler-top: 50% !default;
@@ -235,7 +235,7 @@ $kendo-gantt-validation-tooltip-label-width: 50px !default;
 $kendo-gantt-validation-tooltip-border: var( --kendo-component-border, inherit ) !default;
 /// Border color of the gantt validation tooltip in valid state.
 /// @group gantt
-$kendo-gantt-validation-tooltip-valid-border: k-get-theme-color-var( success-100 ) !default;
+$kendo-gantt-validation-tooltip-valid-border: if($kendo-enable-color-system, k-color( success ), k-get-theme-color-var( success-100 )) !default;
 /// Border color of the gantt validation tooltip in invalid state.
 /// @group gantt
-$kendo-gantt-validation-tooltip-invalid-border: k-get-theme-color-var( error-100 ) !default;
+$kendo-gantt-validation-tooltip-invalid-border: if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( error-100 )) !default;

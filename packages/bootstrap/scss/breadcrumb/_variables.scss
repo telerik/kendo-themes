@@ -156,7 +156,7 @@ $kendo-breadcrumb-link-focus-text: null !default;
 $kendo-breadcrumb-link-focus-border: null !default;
 /// The box shadow of the focused Breadcrumb link.
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-shadow: inset 0 0 0 3px rgba( $kendo-breadcrumb-text, .25 ) !default;
+$kendo-breadcrumb-link-focus-shadow: inset 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .25 ), rgba( $kendo-breadcrumb-text, .25 )) !default;
 
 /// The background color of the Breadcrumb root link.
 /// @group breadcrumb

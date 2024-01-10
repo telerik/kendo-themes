@@ -1,0 +1,49 @@
+// Color constants
+
+/// The color white.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+
+/// The color black.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
+
+/// The color transparent.
+/// Note: you cannot change this value.
+/// @type Color
+/// @group color-system
+$kendo-color-rgba-transparent: rgba(0, 0, 0, 0); // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that goes from transparent to black.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-transparent-to-black: rgba(black, 0), black; // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that goes from transparent to white.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-transparent-to-white: rgba(white, 0), white; // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that goes from black to transparent.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-black-to-transparent: black, rgba(black, 0); // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that goes from white to transparent.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-white-to-transparent: white, rgba(white, 0); // stylelint-disable-line scss/dollar-variable-default
+
+/// A gradient that cycles through the colors of the rainbow.
+/// Note: you cannot change this value.
+/// @type Gradient
+/// @group color-system
+$kendo-gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default

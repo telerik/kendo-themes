@@ -39,7 +39,7 @@ $kendo-tooltip-callout-size: map.get( $kendo-spacing, 2 ) !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-bg: $kendo-color-white !default;
+$kendo-tooltip-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The default text color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-text: var( --kendo-component-text, initial ) !default;
@@ -52,11 +52,11 @@ $kendo-tooltip-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 
 /// The text color of the Tooltip button.
 /// @group tooltip
-$kendo-tooltip-button-text: k-get-theme-color-var( neutral-130, initial ) !default;
+$kendo-tooltip-button-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130, initial )) !default;
 
 /// Theme variations for the tooltip.
 $kendo-tooltip-brand-colors: (
-    secondary: neutral,
+    secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
     success: success,
     warning: warning,
@@ -66,19 +66,19 @@ $kendo-tooltip-brand-colors: (
 
 // Matrix with tooltip theme colors in the order: bg, color, border
 $_tc-tooltip-matrix: (
-    (normal: (20, 160, 20)),
+    (normal: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-subtle), (20, 160, 20))),
 ) !default;
 
 $_tc-tooltip-primary-matrix: (
-    (normal: (100, $kendo-color-white, 100)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))),
 ) !default;
 
 $_tc-tooltip-dark-matrix: (
-    (normal: (160, $kendo-color-white, 160)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))),
 ) !default;
 
 $_tc-tooltip-light-matrix: (
-    (normal: (50, 160, 50)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))),
 ) !default;
 
 /// Theme colors map for the tooltip variations.
@@ -103,13 +103,13 @@ $kendo-tooltip-theme-colors: () !default;
 @each $ui-states in $_tc-tooltip-dark-matrix {
     $kendo-tooltip-theme-colors: map.deep-merge(
         $kendo-tooltip-theme-colors,
-        k-generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
     );
 }
 
 @each $ui-states in $_tc-tooltip-light-matrix {
     $kendo-tooltip-theme-colors: map.deep-merge(
         $kendo-tooltip-theme-colors,
-        k-generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, if($kendo-enable-color-system, light, neutral), $ui-states )
     );
 }

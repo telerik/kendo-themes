@@ -1,0 +1,391 @@
+@import "@progress/kendo-theme-core/scss/functions/index.import.scss";
+@import "@progress/kendo-theme-core/scss/color-system/_constants.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "bootstrap/scss/_variables.scss";
+@import "./_palettes.scss";
+
+// Config
+$kendo-enable-color-system: false !default;
+
+// Colors
+$_default-colors: (
+    // Misc
+    app-surface: k-map-get( $kendo-palette-gray, white ),
+    on-app-surface: k-map-get( $kendo-palette-gray, 14 ),
+    subtle: k-map-get( $kendo-palette-gray, 9 ),
+    surface: k-map-get( $kendo-palette-gray, 1 ),
+    surface-alt: k-map-get( $kendo-palette-gray, white ),
+    border: k-map-get( $kendo-palette-gray, 3 ),
+    border-alt: k-map-get( $kendo-palette-gray, 4 ),
+    // Base
+    base-subtle: k-map-get( $kendo-palette-gray, 2 ),
+    base-subtle-hover: k-map-get( $kendo-palette-gray, 3 ),
+    base-subtle-active: k-map-get( $kendo-palette-gray, 4 ),
+    base: k-map-get( $kendo-palette-gray, 3 ),
+    base-hover: k-map-get( $kendo-palette-gray, 4 ),
+    base-active: k-map-get( $kendo-palette-gray, 5 ),
+    base-emphasis: k-map-get( $kendo-palette-gray, 6 ),
+    base-on-subtle: k-map-get( $kendo-palette-gray, 14 ),
+    on-base: k-map-get( $kendo-palette-gray, 14 ),
+    base-on-surface: k-map-get( $kendo-palette-gray, 14 ),
+    // Primary
+    primary-subtle: k-map-get( $kendo-palette-blue, 2 ),
+    primary-subtle-hover: k-map-get( $kendo-palette-blue, 3 ),
+    primary-subtle-active: k-map-get( $kendo-palette-blue, 4 ),
+    primary: k-map-get( $kendo-palette-blue, 9 ),
+    primary-hover: k-map-get( $kendo-palette-blue, 10 ),
+    primary-active: k-map-get( $kendo-palette-blue, 11 ),
+    primary-emphasis: k-map-get( $kendo-palette-blue, 6 ),
+    primary-on-subtle: k-map-get( $kendo-palette-blue, 14 ),
+    on-primary: k-map-get( $kendo-palette-gray, white ),
+    primary-on-surface: k-map-get( $kendo-palette-blue, 9 ),
+    // Secondary
+    secondary-subtle: k-map-get( $kendo-palette-gray, 3 ),
+    secondary-subtle-hover: k-map-get( $kendo-palette-gray, 4 ),
+    secondary-subtle-active: k-map-get( $kendo-palette-gray, 5 ),
+    secondary: k-map-get( $kendo-palette-gray, 8 ),
+    secondary-hover: k-map-get( $kendo-palette-gray, 9 ),
+    secondary-active: k-map-get( $kendo-palette-gray, 10 ),
+    secondary-emphasis: k-map-get( $kendo-palette-gray, 7 ),
+    secondary-on-subtle: k-map-get( $kendo-palette-gray, 14 ),
+    on-secondary: k-map-get( $kendo-palette-gray, white ),
+    secondary-on-surface: k-map-get( $kendo-palette-gray, 14 ),
+    // Tertiary
+    tertiary-subtle: k-map-get( $kendo-palette-indigo, 2 ),
+    tertiary-subtle-hover: k-map-get( $kendo-palette-indigo, 3 ),
+    tertiary-subtle-active: k-map-get( $kendo-palette-indigo, 4 ),
+    tertiary: k-map-get( $kendo-palette-indigo, 8 ),
+    tertiary-hover: k-map-get( $kendo-palette-indigo, 9 ),
+    tertiary-active: k-map-get( $kendo-palette-indigo, 10 ),
+    tertiary-emphasis: k-map-get( $kendo-palette-indigo, 6 ),
+    tertiary-on-subtle: k-map-get( $kendo-palette-indigo, 14 ),
+    on-tertiary: k-map-get( $kendo-palette-gray, white ),
+    tertiary-on-surface: k-map-get( $kendo-palette-indigo, 8 ),
+    // Info
+    info-subtle: k-map-get( $kendo-palette-cyan, 2 ),
+    info-subtle-hover: k-map-get( $kendo-palette-cyan, 3 ),
+    info-subtle-active: k-map-get( $kendo-palette-cyan, 5 ),
+    info: k-map-get( $kendo-palette-cyan, 8 ),
+    info-hover: k-map-get( $kendo-palette-cyan, 9 ),
+    info-active: k-map-get( $kendo-palette-cyan, 10 ),
+    info-emphasis: k-map-get( $kendo-palette-cyan, 7 ),
+    info-on-subtle: k-map-get( $kendo-palette-cyan, 14 ),
+    on-info: k-map-get( $kendo-palette-gray, white ),
+    info-on-surface: k-map-get( $kendo-palette-cyan, 8 ),
+    // Success
+    success-subtle: k-map-get( $kendo-palette-green, 2 ),
+    success-subtle-hover: k-map-get( $kendo-palette-green, 3 ),
+    success-subtle-active: k-map-get( $kendo-palette-green, 5 ),
+    success: k-map-get( $kendo-palette-green, 9 ),
+    success-hover: k-map-get( $kendo-palette-green, 10 ),
+    success-active: k-map-get( $kendo-palette-green, 11 ),
+    success-emphasis: k-map-get( $kendo-palette-green, 7 ),
+    success-on-subtle: k-map-get( $kendo-palette-green, 14 ),
+    on-success: k-map-get( $kendo-palette-gray, white ),
+    success-on-surface: k-map-get( $kendo-palette-green, 11 ),
+    // Warning
+    warning-subtle: k-map-get( $kendo-palette-yellow, 3 ),
+    warning-subtle-hover: k-map-get( $kendo-palette-yellow, 4 ),
+    warning-subtle-active: k-map-get( $kendo-palette-yellow, 5 ),
+    warning: k-map-get( $kendo-palette-yellow, 8 ),
+    warning-hover: k-map-get( $kendo-palette-yellow, 9 ),
+    warning-active: k-map-get( $kendo-palette-yellow, 10 ),
+    warning-emphasis: k-map-get( $kendo-palette-yellow, 7 ),
+    warning-on-subtle: k-map-get( $kendo-palette-yellow, 14 ),
+    on-warning: k-map-get( $kendo-palette-gray, black ),
+    warning-on-surface: k-map-get( $kendo-palette-yellow, 8 ),
+    // Error
+    error-subtle: k-map-get( $kendo-palette-red, 3 ),
+    error-subtle-hover: k-map-get( $kendo-palette-red, 4 ),
+    error-subtle-active: k-map-get( $kendo-palette-red, 5 ),
+    error: k-map-get( $kendo-palette-red, 8 ),
+    error-hover: k-map-get( $kendo-palette-red, 9 ),
+    error-active: k-map-get( $kendo-palette-red, 10 ),
+    error-emphasis: k-map-get( $kendo-palette-red, 7 ),
+    error-on-subtle: k-map-get( $kendo-palette-red, 14 ),
+    on-error: k-map-get( $kendo-palette-gray, white ),
+    error-on-surface: k-map-get( $kendo-palette-red, 8 ),
+    // Light
+    light-subtle: k-map-get( $kendo-palette-gray, 1 ),
+    light-subtle-hover: k-map-get( $kendo-palette-gray, 2 ),
+    light-subtle-active: k-map-get( $kendo-palette-gray, 3 ),
+    light: k-map-get( $kendo-palette-gray, 1 ),
+    light-hover: k-map-get( $kendo-palette-gray, 2 ),
+    light-active: k-map-get( $kendo-palette-gray, 3 ),
+    light-emphasis: k-map-get( $kendo-palette-gray, 5 ),
+    light-on-subtle: k-map-get( $kendo-palette-gray, 12 ),
+    on-light: k-map-get( $kendo-palette-gray, black ),
+    light-on-surface: k-map-get( $kendo-palette-gray, 4 ),
+    // Dark
+    dark-subtle: k-map-get( $kendo-palette-gray, 8 ),
+    dark-subtle-hover: k-map-get( $kendo-palette-gray, 9 ),
+    dark-subtle-active: k-map-get( $kendo-palette-gray, 10 ),
+    dark: k-map-get( $kendo-palette-gray, 14 ),
+    dark-hover: k-map-get( $kendo-palette-gray, 13 ),
+    dark-active: k-map-get( $kendo-palette-gray, 12 ),
+    dark-emphasis: k-map-get( $kendo-palette-gray, 12 ),
+    dark-on-subtle: k-map-get( $kendo-palette-gray, white ),
+    on-dark: k-map-get( $kendo-palette-gray, white ),
+    dark-on-surface: k-map-get( $kendo-palette-gray, 15 ),
+    // Inverse
+    inverse-subtle: k-map-get( $kendo-palette-gray, 8 ),
+    inverse-subtle-hover: k-map-get( $kendo-palette-gray, 9 ),
+    inverse-subtle-active: k-map-get( $kendo-palette-gray, 10 ),
+    inverse: k-map-get( $kendo-palette-gray, 14 ),
+    inverse-hover: k-map-get( $kendo-palette-gray, 13 ),
+    inverse-active: k-map-get( $kendo-palette-gray, 12 ),
+    inverse-emphasis: k-map-get( $kendo-palette-gray, 12 ),
+    inverse-on-subtle: k-map-get( $kendo-palette-gray, white ),
+    on-inverse: k-map-get( $kendo-palette-gray, white ),
+    inverse-on-surface: k-map-get( $kendo-palette-gray, 15 ),
+    // Series A
+    series-a: k-map-get( $kendo-palette-blue, 9 ),
+    series-a-bold: k-map-get( $kendo-palette-blue, 12 ),
+    series-a-bolder: k-map-get( $kendo-palette-blue, 14 ),
+    series-a-subtle: k-map-get( $kendo-palette-blue, 5 ),
+    series-a-subtler: k-map-get( $kendo-palette-blue, 7 ),
+    // Series B
+    series-b: k-map-get( $kendo-palette-indigo, 8 ),
+    series-b-bold: k-map-get( $kendo-palette-indigo, 10 ),
+    series-b-bolder: k-map-get( $kendo-palette-indigo, 12 ),
+    series-b-subtle: k-map-get( $kendo-palette-indigo, 5 ),
+    series-b-subtler: k-map-get( $kendo-palette-indigo, 7 ),
+    // Series C
+    series-c: k-map-get( $kendo-palette-teal, 8 ),
+    series-c-bold: k-map-get( $kendo-palette-teal, 10 ),
+    series-c-bolder: k-map-get( $kendo-palette-teal, 12 ),
+    series-c-subtle: k-map-get( $kendo-palette-teal, 5 ),
+    series-c-subtler: k-map-get( $kendo-palette-teal, 7 ),
+    // Series D
+    series-d: k-map-get( $kendo-palette-green, 8 ),
+    series-d-bold: k-map-get( $kendo-palette-green, 10 ),
+    series-d-bolder: k-map-get( $kendo-palette-green, 12 ),
+    series-d-subtle: k-map-get( $kendo-palette-green, 5 ),
+    series-d-subtler: k-map-get( $kendo-palette-green, 7 ),
+    // Series Е
+    series-e: k-map-get( $kendo-palette-red, 8 ),
+    series-e-bold: k-map-get( $kendo-palette-red, 10 ),
+    series-e-bolder: k-map-get( $kendo-palette-red, 12 ),
+    series-e-subtle: k-map-get( $kendo-palette-red, 5 ),
+    series-e-subtler: k-map-get( $kendo-palette-red, 7 ),
+    // Series F
+    series-f: k-map-get( $kendo-palette-yellow, 8 ),
+    series-f-bold: k-map-get( $kendo-palette-yellow, 10 ),
+    series-f-bolder: k-map-get( $kendo-palette-yellow, 12 ),
+    series-f-subtle: k-map-get( $kendo-palette-yellow, 5 ),
+    series-f-subtler: k-map-get( $kendo-palette-yellow, 7 ),
+) !default;
+
+/// The global default Colors map.
+/// @group color-system
+$kendo-colors: $_default-colors !default;
+
+// Legacy
+
+$kendo-is-dark-theme: false !default;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$kendo-body-bg: #ffffff !default;
+
+$kendo-component-bg: $kendo-body-bg !default;
+$kendo-component-text: k-contrast-color( $kendo-component-bg, $gray-900, $gray-100 ) !default;
+$kendo-component-border: if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 ) !default;
+
+$input-bg: $kendo-component-bg !default;
+$input-color: k-contrast-color( $input-bg, $gray-900, $gray-300 ) !default;
+$input-border-color: if( k-is-light( $input-bg ), $gray-400, $gray-600 ) !default;
+$input-placeholder-color: k-contrast-color( $input-bg, $gray-600, $gray-400 ) !default;
+
+
+// Theme colors
+/// The color that focuses the user attention.
+/// Used for primary buttons and for elements of primary importance across the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-primary: $primary !default;
+$kendo-color-primary-lighter: k-color-tint( $kendo-color-primary, 2 ) !default;
+$kendo-color-primary-darker: k-color-shade( $kendo-color-primary, 2 ) !default;
+
+/// The color used along with the primary color denoted by $kendo-color-primary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-primary-contrast: k-contrast-color( $kendo-color-primary ) !default;
+
+/// The secondary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary: $secondary !default;
+$kendo-color-secondary-lighter: k-color-tint( $kendo-color-secondary, 2 ) !default;
+$kendo-color-secondary-darker: k-color-shade( $kendo-color-secondary, 2 ) !default;
+
+/// The color used along with the secondary color denoted by $kendo-color-secondary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-secondary-contrast: k-contrast-color( $kendo-color-secondary ) !default;
+
+/// The tertiary color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary: $purple !default;
+$kendo-color-tertiary-lighter: k-color-tint( $kendo-color-tertiary, 2 ) !default;
+$kendo-color-tertiary-darker: k-color-shade( $kendo-color-tertiary, 2 ) !default;
+
+/// The color used along with the tertiary color denoted by $kendo-color-tertiary.
+/// Used to provide contrast between the background and foreground colors.
+/// @group color-system
+/// @type Color
+$kendo-color-tertiary-contrast: k-contrast-color( $kendo-color-tertiary ) !default;
+
+/// The color for informational messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-info: $info !default;
+$kendo-color-info-lighter: k-color-tint( $kendo-color-info, 2 ) !default;
+$kendo-color-info-darker: k-color-shade( $kendo-color-info, 2 ) !default;
+
+/// The color for success messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-success: $success !default;
+$kendo-color-success-lighter: k-color-tint( $kendo-color-success, 2 ) !default;
+$kendo-color-success-darker: k-color-shade( $kendo-color-success, 2 ) !default;
+
+/// The color for warning messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-warning: $warning !default;
+$kendo-color-warning-lighter: k-color-tint( $kendo-color-warning, 2 ) !default;
+$kendo-color-warning-darker: k-color-shade( $kendo-color-warning, 2 ) !default;
+
+/// The color for error messages and states.
+/// @group color-system
+/// @type Color
+$kendo-color-error: $danger !default;
+$kendo-color-error-lighter: k-color-tint( $kendo-color-error, 2 ) !default;
+$kendo-color-error-darker: k-color-shade( $kendo-color-error, 2 ) !default;
+
+/// The dark color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-dark: $dark !default;
+
+/// The light color of the theme.
+/// @group color-system
+/// @type Color
+$kendo-color-light: $light !default;
+
+/// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
+/// @group color-system
+$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
+
+
+$kendo-theme-colors: (
+    "primary": $kendo-color-primary,
+    "secondary": $kendo-color-secondary,
+    "tertiary": $kendo-color-tertiary,
+    "info": $kendo-color-info,
+    "success": $kendo-color-success,
+    "warning": $kendo-color-warning,
+    "error": $kendo-color-error,
+    "dark": $kendo-color-dark,
+    "light": $kendo-color-light,
+    "inverse": $kendo-color-inverse
+) !default;
+
+
+// Generic styles
+
+// Root styles
+$kendo-body-bg: $kendo-color-white !default;
+$kendo-body-text: k-contrast-color( $kendo-body-bg, $gray-900, $gray-100 ) !default;
+
+$kendo-subtle-text: if( $kendo-is-dark-theme, $gray-400, $text-muted ) !default;
+
+$kendo-app-bg: k-try-shade( $kendo-body-bg, .25 ) !default;
+$kendo-app-text: $kendo-body-text !default;
+$kendo-app-border: if( k-is-light( $kendo-app-bg ), $gray-300, $gray-700 ) !default;
+
+// Link
+$kendo-link-text: $link-color !default;
+$kendo-link-hover-text: $link-hover-color !default;
+
+
+// Components
+
+// Component
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.
+/// @group component
+$kendo-component-bg: $kendo-body-bg !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.
+/// @group component
+$kendo-component-text: $kendo-body-text !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.
+/// @group component
+$kendo-component-border: if( k-is-light( $kendo-component-bg ), $gray-300, $gray-700 ) !default;
+
+
+/// The background of the components' chrome area.
+$kendo-base-bg: $gray-100 !default;
+/// The text color of the components' chrome area.
+$kendo-base-text: $kendo-body-text !default;
+/// The border color of the components' chrome area.
+$kendo-base-border: k-try-shade( $kendo-base-bg, 1 ) !default;
+/// The gradient background of the components' chrome area.
+$kendo-base-gradient: null !default;
+
+/// The background of hovered items.
+$kendo-hover-bg: $gray-200 !default;
+/// The text color of hovered items.
+$kendo-hover-text: $kendo-base-text !default;
+/// The border color of hovered items.
+$kendo-hover-border: k-try-shade( $kendo-hover-bg, 1 ) !default;
+/// The gradient background of hovered items.
+$kendo-hover-gradient: null !default;
+
+/// The background of selected items.
+$kendo-selected-bg: $kendo-color-primary !default;
+/// The text color of selected items.
+$kendo-selected-text: k-contrast-color( $kendo-selected-bg ) !default;
+/// The border color of selected items.
+$kendo-selected-border: k-try-shade( $kendo-selected-bg, 1 ) !default;
+/// The gradient background of selected items.
+$kendo-selected-gradient: null !default;
+
+$kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
+$kendo-selected-hover-text: $kendo-selected-text !default;
+$kendo-selected-hover-border: $kendo-base-border !default;
+$kendo-selected-hover-gradient: null !default;
+
+/// Text color of disabled items.
+$kendo-disabled-text: if( $kendo-is-dark-theme, $gray-600, $gray-500) !default;
+
+// Header
+$kendo-component-header-bg: $kendo-base-bg !default;
+$kendo-component-header-text: $kendo-component-text !default;
+$kendo-component-header-border: $kendo-component-border !default;
+$kendo-component-header-gradient: null !default;
+
+// Validator
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: $kendo-color-error !default;
+$kendo-invalid-border: $kendo-color-error !default;
+$kendo-invalid-shadow: 0 0 0 .25rem rgba( $kendo-invalid-border, .25 ) !default;
+
+$kendo-valid-bg: null !default;
+$kendo-valid-text: $kendo-color-success !default;
+$kendo-valid-border: $kendo-color-success !default;
+$kendo-valid-shadow: 0 0 0 .25rem rgba( $kendo-valid-border, .25 ) !default;

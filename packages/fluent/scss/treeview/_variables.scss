@@ -124,7 +124,7 @@ $kendo-treeview-item-focus-text: $kendo-treeview-item-text !default;
 $kendo-treeview-item-focus-border: $kendo-treeview-item-border !default;
 /// The box shadow of focused TreeView items.
 /// @group treeview
-$kendo-treeview-item-focus-shadow: inset 0 0 0 1px k-get-theme-color-var( neutral-130 ) !default;
+$kendo-treeview-item-focus-shadow: inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
 
 /// The background color of selected TreeView items.
 /// @group treeview

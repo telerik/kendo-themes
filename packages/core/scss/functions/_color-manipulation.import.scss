@@ -132,3 +132,26 @@ $kendo-color-level-step: 8% !default;
 @function k-true-mix( $color1, $color2, $weight: 50% ) {
     @return k-color-mix( rgba( $color1, 1 ), rgba( $color2, 1 ), $weight );
 }
+
+/// Generates all color variations of a given main color
+/// @param {String} $name - The name of the main color
+/// @param {Color} $level - The color value to be assigned to the main color
+/// @return {Map} - A map with the generated keys and values
+///
+/// @group color-system
+@function k-generate-colors( $name, $color ) {
+    $_variations: (
+        #{$name}-subtle: k-try-tint( $color, 80% ),
+        #{$name}-subtle-hover: k-try-tint( $color, 65% ),
+        #{$name}-subtle-active: k-try-tint( $color, 50% ),
+        #{$name}: $color,
+        #{$name}-hover: k-try-shade( $color, 0.5 ),
+        #{$name}-active: k-try-shade( $color, 1.5 ),
+        #{$name}-emphasis: k-try-tint( $color, 4.5 ),
+        #{$name}-on-subtle: k-try-shade( $color, 8 ),
+        on-#{$name}: k-contrast-legacy( $color ),
+        #{$name}-on-surface: $color,
+    );
+    
+    @return $_variations;
+}

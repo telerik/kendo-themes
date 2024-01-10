@@ -57,21 +57,21 @@ $kendo-notification-brand-colors: (
     warning: warning,
     success: success,
     info: info,
-    secondary: neutral,
+    secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
 ) !default;
 
 // Matrix with notification theme colors in the order: bg, color, border
 $_tc-notification-matrix: (
-    (normal: (20, 190, 20)),
+    (normal: if($kendo-enable-color-system, (color-subtle, color-on-subtle, color-subtle), (20, 190, 20))),
 ) !default;
 
 $_tc-notification-dark-matrix: (
-    (normal: (160, $kendo-color-white, 160)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))),
 ) !default;
 
 $_tc-notification-light-matrix: (
-    (normal: (50, 160, 50)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))),
 ) !default;
 
 /// The theme colors map for the Notification variations.
@@ -90,13 +90,13 @@ $kendo-notification-theme-colors: () !default;
 @each $ui-states in $_tc-notification-dark-matrix {
     $kendo-notification-theme-colors: map.deep-merge(
         $kendo-notification-theme-colors,
-        k-generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
     );
 }
 
 @each $ui-states in $_tc-notification-light-matrix {
     $kendo-notification-theme-colors: map.deep-merge(
         $kendo-notification-theme-colors,
-        k-generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, if($kendo-enable-color-system, light, neutral), $ui-states )
     );
 }

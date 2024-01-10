@@ -36,10 +36,10 @@ $kendo-tooltip-callout-size: 6px !default;
 
 /// The default background of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-bg: rgba( k-contrast-legacy( $kendo-body-bg ), .75 ) !default;
+$kendo-tooltip-bg: if($kendo-enable-color-system, k-color( on-app-surface ), rgba( k-contrast-legacy( $kendo-body-bg ), .75 )) !default;
 /// The default text color of the Tooltip.
 /// @group tooltip
-$kendo-tooltip-text: k-contrast-legacy( $kendo-tooltip-bg ) !default;
+$kendo-tooltip-text: if($kendo-enable-color-system, k-color( app-surface ), k-contrast-legacy( $kendo-tooltip-bg )) !default;
 /// The default border color of the Tooltip.
 /// @group tooltip
 $kendo-tooltip-border: $kendo-tooltip-bg !default;
@@ -53,7 +53,7 @@ $kendo-tooltip-shadow: k-elevation(2) !default;
 
     @each $name, $color in $colors {
         $_theme: k-map-merge(( $name: (
-            color: k-contrast-legacy( $color ),
+            color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )),
             background-color: $color,
             border: $color,
         )), $_theme );

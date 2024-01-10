@@ -26,11 +26,11 @@ $kendo-media-player-border: var( --kendo-component-border, inherit ) !default;
 
 /// Mediaplayer overlay background color.
 /// @group mediaplayer
-$kendo-media-player-overlay-bg: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-media-player-overlay-bg: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
 
 /// Mediaplayer quality button border color.
 /// @group mediaplayer
-$kendo-media-player-quality-border: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-media-player-quality-border: if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// Media player title font size.
 /// @group mediaplayer
@@ -43,7 +43,7 @@ $kendo-media-player-titlebar-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-media-player-titlebar-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Mediaplayer titlebar background color.
 /// @group mediaplayer
-$kendo-media-player-titlebar-bg: rgba( $kendo-color-black, .4 ) !default;
+$kendo-media-player-titlebar-bg: rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), $kendo-color-black), .4 ) !default;
 /// Mediaplayer titlebar text color.
 /// @group mediaplayer
 $kendo-media-player-titlebar-text: $kendo-media-player-bg !default;

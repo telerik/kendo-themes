@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>Color</td>
-    <td><code>if( k-is-light( $kendo-checkbox-bg ), $gray-400, $gray-600 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), if( k-is-light( $kendo-checkbox-bg ), $gray-400, $gray-600 ))</code></td>
     <td><span class="color-preview" style="background-color: #ced4da"></span><code>#ced4da</code></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-checkbox-checked-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-checked-bg ))</code></td>
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-focus-border</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-color-primary, 50% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-emphasis ), k-try-tint( $kendo-color-primary, 50% ))</code></td>
     <td><span class="color-preview" style="background-color: #86b7fe"></span><code>#86b7fe</code></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 .25rem rgba( $kendo-color-primary, .25 )</code></td>
+    <td><code>0 0 0 .25rem if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-color-primary, .25 ))</code></td>
     <td><code>0 0 0 0.25rem rgba(13, 110, 253, 0.25)</code></td>
 </tr>
 <tr>
