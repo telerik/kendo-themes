@@ -18,7 +18,7 @@
         .k-selected.k-focus .k-link {
             @include fill(
                 $kendo-calendar-cell-selected-text,
-                k-try-tint($kendo-calendar-cell-selected-bg),
+                if($kendo-enable-color-system, $kendo-calendar-cell-selected-bg, k-try-tint($kendo-calendar-cell-selected-bg)),
                 $kendo-calendar-cell-selected-border
             );
         }

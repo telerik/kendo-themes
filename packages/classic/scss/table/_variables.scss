@@ -111,7 +111,7 @@ $kendo-table-group-row-border: $kendo-table-header-border !default;
 
 /// Background color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-bg: k-try-shade( $kendo-table-bg, .5 ) !default;
+$kendo-table-alt-row-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .05 ), k-try-shade( $kendo-table-bg, .5 )) !default;
 /// Text color of alternating rows in table.
 /// @group table
 $kendo-table-alt-row-text: null !default;
@@ -122,7 +122,7 @@ $kendo-table-alt-row-border: null !default;
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: k-try-shade( $kendo-table-bg, 1 ) !default;
+$kendo-table-hover-bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .11 ), k-try-shade( $kendo-table-bg, 1 )) !default;
 /// Text color of hovered rows in table.
 /// @group table
 $kendo-table-hover-text: null !default;
@@ -147,7 +147,7 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: rgba( $kendo-selected-bg, .25 ) !default;
+$kendo-table-selected-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-selected-bg, .25 )) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: null !default;

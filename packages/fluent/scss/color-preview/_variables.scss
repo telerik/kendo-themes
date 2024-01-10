@@ -14,17 +14,17 @@ $kendo-color-preview-bg: transparent !default;
 $kendo-color-preview-text: inherit !default;
 /// Border color of the color preview.
 /// @group color-preview
-$kendo-color-preview-border: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-color-preview-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 /// Hover Border color of the color preview.
 /// @group color-preview
-$kendo-color-preview-hover-border: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-color-preview-hover-border: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 
 /// Background color of the color preview when no color is selected.
 /// @group color-preview
-$kendo-color-preview-no-color-bg: $kendo-color-white !default;
+$kendo-color-preview-no-color-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// Text color of the color preview when no color is selected.
 /// @group color-preview
-$kendo-color-preview-no-color-text: k-get-theme-color( error, 190 ) !default;
+$kendo-color-preview-no-color-text: if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color( error, 190 )) !default;
 /// Border color of the color preview when no color is selected.
 /// @group color-preview
 $kendo-color-preview-no-color-border: currentColor !default;

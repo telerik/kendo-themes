@@ -219,7 +219,7 @@ $kendo-menu-popup-item-focus-text: $kendo-menu-item-text !default;
 $kendo-menu-popup-item-focus-bg: $kendo-menu-item-bg !default;
 /// The outline of focused menu items.
 /// @group menu
-$kendo-menu-popup-item-focus-outline: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-menu-popup-item-focus-outline: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
 
 /// The text color of expanded menu item in popup.
 /// @group menu
@@ -251,4 +251,4 @@ $kendo-menu-scroll-button-hover-border: null !default;
 
 /// The color of menu items icon.
 /// @group menu
-$kendo-menu-icon-color: k-get-theme-color-var( primary-100 ) !default;
+$kendo-menu-icon-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

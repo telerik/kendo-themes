@@ -1,5 +1,8 @@
 $wcag-min-contrast-ratio: 4.5 !default;
 
+// Color System
+@import "./color-system/_swatch.scss";
+
 // Variables
 @import "../_variables.scss";
 
@@ -7,6 +10,9 @@ $wcag-min-contrast-ratio: 4.5 !default;
 @import "./elevation/index.import.scss";
 
 @import "@progress/kendo-theme-core/scss/index.import.scss";
+
+// Backward compatibility
+@import "./color-system/_swatch-legacy.scss";
 
 // Expose
 @include exports("kendo-core-styles") {

@@ -18,7 +18,7 @@
                 color: $kendo-appbar-dark-text;
                 background-color: $kendo-appbar-dark-bg;
             } @else {
-                color: k-contrast-legacy( $color );
+                color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color ));
                 background-color: $color;
             }
         }

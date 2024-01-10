@@ -4,8 +4,11 @@ import { classNames, stateClassNames, States } from '../misc';
 export const DROPZONE_CLASSNAME = `k-external-dropzone`;
 
 const states = [
+    States.disabled,
     States.hover,
 ];
+
+const options = {};
 
 export type KendoDropzoneProps = {
     icon?: string;
@@ -27,6 +30,7 @@ export const Dropzone = (
 ) => {
     const {
         hover,
+        disabled,
         icon = defaultProps.icon,
         hint = defaultProps.hint,
         note,
@@ -40,6 +44,7 @@ export const Dropzone = (
                 props.className,
                 DROPZONE_CLASSNAME,
                 stateClassNames(DROPZONE_CLASSNAME, {
+                    disabled,
                 }), {
                     "k-external-dropzone-hover": hover
                 }
@@ -55,6 +60,7 @@ export const Dropzone = (
 };
 
 Dropzone.states = states;
+Dropzone.options = options;
 Dropzone.className = DROPZONE_CLASSNAME;
 Dropzone.defaultProps = defaultProps;
 

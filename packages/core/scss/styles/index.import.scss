@@ -5,9 +5,10 @@
 @import "./_base.scss";
 @import "./_loading.scss";
 @import "./_selection.scss";
-
+@import "./_colors.scss";
 
 @mixin kendo-core--styles() {
+    @include kendo-core--styles--colors();
     @include kendo-core--styles--accessibility();
     @include kendo-core--styles--asp-fallback();
     @include kendo-core--styles--layout();

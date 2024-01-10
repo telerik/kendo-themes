@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-value-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-disabled-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-20 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .06 ), k-get-theme-color-var( neutral-20 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-disabled-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-value-disabled-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-30 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-get-theme-color-var( primary-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-indeterminate-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-indeterminate-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-indeterminate-gradient-horizontal</td>
     <td></td>
-    <td><code>linear-gradient(270deg, k-get-theme-color-var( neutral-30 ) 15%, k-get-theme-color-var( primary-100 ) 50%, k-get-theme-color-var( neutral-30 ) 85%)</code></td>
+    <td><code>linear-gradient(270deg, if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 )) 15%, if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) 50%, if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 )) 85%)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-indeterminate-gradient-vertical</td>
     <td></td>
-    <td><code>linear-gradient(180deg, k-get-theme-color-var( neutral-30 ) 15%, k-get-theme-color-var( primary-100 ) 50%, k-get-theme-color-var( neutral-30 ) 85%)</code></td>
+    <td><code>linear-gradient(180deg, if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 )) 15%, if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) 50%, if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-30 )) 85%)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-circular-progressbar-arc-stroke</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
