@@ -19,6 +19,8 @@ export type KendoSliderProps = {
     dir?: 'ltr' | 'rtl';
     handlePosition?: 'start' | 'end';
     trackStyle?: React.CSSProperties;
+    showButtons?: boolean;
+    showTicks?: boolean;
 };
 
 export type KendoSliderState = { [K in (typeof states)[number]]?: boolean };
@@ -28,7 +30,9 @@ const defaultProps = {
     orientation: 'horizontal',
     readonly: false,
     disabled: false,
-    handlePosition: 'end'
+    handlePosition: 'end',
+    showButtons: true,
+    showTicks: true
 };
 
 export const Slider = (
@@ -42,6 +46,8 @@ export const Slider = (
         readonly = defaultProps.readonly,
         disabled = defaultProps.disabled,
         handlePosition = defaultProps.handlePosition,
+        showButtons = defaultProps.showButtons,
+        showTicks = defaultProps.showTicks,
         hover,
         focus,
         active,
@@ -74,10 +80,10 @@ export const Slider = (
                 'k-range-slider': type === 'range'
             }
         )} dir={dir} >
-            { type !== 'gradient' && <Button className="k-button-decrease" rounded="full" icon={iconDecrease} /> }
+            { showButtons && <Button className="k-button-decrease" rounded="full" icon={iconDecrease} /> }
             <div className="k-slider-track-wrap">
                 {
-                    type !== 'gradient' &&
+                    showTicks &&
                         <ul className="k-reset k-slider-items">
                             {props.children}
                         </ul>
@@ -107,7 +113,7 @@ export const Slider = (
                     )}></span>
                 </div>
             </div>
-            { type !== 'gradient' && <Button className="k-button-increase" rounded="full" icon={iconIncrease} /> }
+            { showButtons && <Button className="k-button-increase" rounded="full" icon={iconIncrease} /> }
         </div>
     );
 };

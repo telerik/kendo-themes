@@ -4,6 +4,8 @@ export const SliderGradientVertical = (props) => (
     <Slider
         type="gradient"
         orientation="vertical"
+        showButtons={false}
+        showTicks={false}
         children={
             <>
                 <SliderTick label large text="0"/>

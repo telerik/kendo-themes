@@ -3,6 +3,8 @@ import { Slider, SliderTick } from "../../slider";
 export const SliderGradient = (props) => (
     <Slider
         type="gradient"
+        showButtons={false}
+        showTicks={false}
         children={
             <>
                 <SliderTick label large text="0"/>
