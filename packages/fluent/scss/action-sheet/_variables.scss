@@ -114,7 +114,7 @@ $kendo-actionsheet-item-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Color of the action sheet item icon.
 /// @group action-sheet
-$kendo-actionsheet-item-icon-color: k-get-theme-color-var( primary-110 ) !default;
+$kendo-actionsheet-item-icon-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-110 )) !default;
 
 /// Font weight of the action sheet item text.
 /// @group action-sheet

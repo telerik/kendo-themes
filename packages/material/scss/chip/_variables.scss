@@ -92,7 +92,7 @@ $kendo-chip-sizes: (
 
 /// The base background of the Chip.
 /// @group chip
-$kendo-chip-base-bg: if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black) !default;
+$kendo-chip-base-bg: if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black)) !default;
 
 /// The theme colors map for the Chip.
 /// @group chip
@@ -106,7 +106,7 @@ $kendo-chip-theme-colors: (
 
 /// The base background color of the solid Chip.
 /// @group chip
-$kendo-chip-solid-bg: if( $kendo-is-dark-theme, $kendo-button-bg, k-try-tint( $kendo-chip-base-bg, 92% )) !default;
+$kendo-chip-solid-bg: if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $kendo-button-bg, k-try-tint( $kendo-chip-base-bg, 92% ))) !default;
 /// The base text color of the solid Chip.
 /// @group chip
 $kendo-chip-solid-text: $kendo-button-text !default;
@@ -122,21 +122,21 @@ $kendo-chip-solid-gradient: $kendo-button-gradient !default;
 
 /// The base background color of the focused solid Chip.
 /// @group chip
-$kendo-chip-solid-focus-bg: k-try-tint( $kendo-chip-base-bg, 80% ) !default;
+$kendo-chip-solid-focus-bg: if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 80% )) !default;
 /// The base text color of the focused solid Chip.
 /// @group chip
 $kendo-chip-solid-focus-text: null !default;
 
 /// The base background color of the hovered solid Chip.
 /// @group chip
-$kendo-chip-solid-hover-bg: k-try-tint( $kendo-chip-base-bg, 84% ) !default;
+$kendo-chip-solid-hover-bg: if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-tint( $kendo-chip-base-bg, 84% )) !default;
 /// The base text color of the hovered solid Chip.
 /// @group chip
 $kendo-chip-solid-hover-text: null !default;
 
 /// The base background color of the selected solid Chip.
 /// @group chip
-$kendo-chip-solid-selected-bg: k-try-tint( $kendo-chip-base-bg, 76% ) !default;
+$kendo-chip-solid-selected-bg: if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 76% )) !default;
 /// The base text color of the selected solid Chip.
 /// @group chip
 $kendo-chip-solid-selected-text: null !default;
@@ -156,14 +156,14 @@ $kendo-chip-outline-shadow: null !default;
 
 /// The base background color of the hovered outline Chip.
 /// @group chip
-$kendo-chip-outline-hover-bg: k-try-tint( $kendo-chip-base-bg, 92% ) !default;
+$kendo-chip-outline-hover-bg: if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-tint( $kendo-chip-base-bg, 92% )) !default;
 /// The base text color of the hovered outline Chip.
 /// @group chip
-$kendo-chip-outline-hover-text: k-contrast-color( $kendo-chip-outline-hover-bg ) !default;
+$kendo-chip-outline-hover-text: if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $kendo-chip-outline-hover-bg )) !default;
 
 /// The base background color of the selected outline Chip.
 /// @group chip
-$kendo-chip-outline-selected-bg: k-try-tint( $kendo-chip-base-bg, 84% ) !default;
+$kendo-chip-outline-selected-bg: if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 84% )) !default;
 /// The base text color of the selected outline Chip.
 /// @group chip
 $kendo-chip-outline-selected-text: $kendo-chip-outline-hover-text !default;

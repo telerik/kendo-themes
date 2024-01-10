@@ -355,7 +355,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-treeview-text, .07 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .07 ), rgba( $kendo-treeview-text, .07 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span><code>rgba(0, 0, 0, 0.07)</code></td>
 </tr>
 <tr>

@@ -227,7 +227,7 @@
         }
 
         .k-tooltip-title .k-day {
-            color: k-get-theme-color-var( primary-130 );
+            color: if($kendo-enable-color-system, k-color( primary-emphasis ), k-get-theme-color-var( primary-130 ));
         }
     }
 }

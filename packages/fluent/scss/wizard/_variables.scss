@@ -50,4 +50,4 @@ $kendo-wizard-buttons-margin-y: map.get( $kendo-spacing, 6 ) !default;
 
 /// Outline of the focused wizard step.
 /// @group wizard
-$kendo-wizard-step-focus-border: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-wizard-step-focus-border: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;

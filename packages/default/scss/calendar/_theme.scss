@@ -159,7 +159,7 @@
     .k-calendar { // stylelint-disable-line
 
         $kendo-calendar-range-gap: 1px !default;
-        $kendo-calendar-range-bg: rgba( $kendo-calendar-cell-selected-bg, .25 );
+        $kendo-calendar-range-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-calendar-cell-selected-bg, .25 ));
         $kendo-calendar-range-split-size: 5px !default;
 
         .k-range-start,

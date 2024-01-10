@@ -4,17 +4,17 @@
     @each $name, $color in $kendo-theme-colors {
         .k-bottom-nav-solid-#{$name} {
             @include fill(
-                $color: k-true-mix( $color, k-contrast-legacy( $color ), 35%),
+                $color: if($kendo-enable-color-system, rgba( k-color( on-#{$name}, true ), .65 ), k-true-mix( $color, k-contrast-legacy( $color ), 35%)),
                 $bg: $color
             );
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: rgba(k-true-mix( $color, k-contrast-legacy( $color ), 35%), .2));
+                @include fill( $bg: if($kendo-enable-color-system, rgba( k-color( on-#{$name}, true ), .125 ), rgba(k-true-mix( $color, k-contrast-legacy( $color ), 35%), .2)));
             }
 
             .k-bottom-nav-item.k-selected {
-                @include fill( $color: k-contrast-legacy( $color ) );
+                @include fill( $color: if($kendo-enable-color-system, k-color( on-#{$name} ), k-contrast-legacy( $color )) );
             }
         }
         // TODO: remove when suites update class names
@@ -34,12 +34,12 @@
 
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
-                @include fill( $bg: rgba($kendo-bottom-nav-flat-text, .05) );
+                @include fill( $bg: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .05), rgba($kendo-bottom-nav-flat-text, .05)) );
             }
 
             .k-bottom-nav-item.k-selected {
                 @if $name == "secondary" or $name == "light" {
-                    @include fill( $color: k-try-shade($color, 3) );
+                    @include fill( $color: if($kendo-enable-color-system, k-color( #{$name} ), k-try-shade($color, 3)) );
                 } @else {
                     @include fill( $color: $color );
                 }

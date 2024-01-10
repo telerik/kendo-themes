@@ -409,7 +409,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
     <td>List</td>
-    <td><code>inset 0 0 0 3px rgba( $kendo-list-text, .15 )</code></td>
+    <td><code>inset 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .15 ), rgba( $kendo-list-text, .15 ))</code></td>
     <td><code>inset 0 0 0 3px rgba(33, 37, 41, 0.15)</code></td>
 </tr>
 <tr>

@@ -41,13 +41,13 @@ $kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, 0.5 ) !defaul
 
 /// The selected text color of the Editor.
 /// @group editor
-$kendo-editor-selected-text: $kendo-color-white !default;
+$kendo-editor-selected-text: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The selected background color of the Editor.
 /// @group editor
-$kendo-editor-selected-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-editor-selected-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The highlighted background color of the Editor.
 /// @group editor
-$kendo-editor-highlighted-bg: k-get-theme-color-var( primary-60 ) !default;
+$kendo-editor-highlighted-bg: if($kendo-enable-color-system, rgba( k-color( primary, true ), .55 ), k-get-theme-color-var( primary-60 )) !default;
 
 /// The size of the Editor's resize handle.
 /// @group editor
@@ -57,14 +57,14 @@ $kendo-editor-resize-handle-size: map.get( $kendo-spacing, 2 ) !default;
 $kendo-editor-resize-handle-border-width: 1px !default;
 /// The border color of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-border: $kendo-color-black !default;
+$kendo-editor-resize-handle-border: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 /// The background color of the Editor's resize handle.
 /// @group editor
-$kendo-editor-resize-handle-bg: $kendo-color-white !default;
+$kendo-editor-resize-handle-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 
 /// The outline color of the Editor's selected node.
 /// @group editor
-$kendo-editor-selectednode-outline-color: k-get-theme-color-var( primary-100 ) !default;
+$kendo-editor-selectednode-outline-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The border color of the Inline Editor data cell.
 /// @group editor

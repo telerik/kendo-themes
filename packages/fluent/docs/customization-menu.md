@@ -528,7 +528,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-focus-outline</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -618,7 +618,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-icon-color</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>

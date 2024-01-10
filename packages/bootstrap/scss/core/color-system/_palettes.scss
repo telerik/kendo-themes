@@ -1,0 +1,171 @@
+$_default-palette-gray: (
+    white: #ffffff,
+    1: #f8f9fa,
+    2: #e9ecef,
+    3: #dee2e6,
+    4: #ced4da,
+    5: #bdc4cb,
+    6: #adb5bd,
+    7: #8d959d,
+    8: #6c757d,
+    9: #606970,
+    10: #555c64,
+    11: #495057,
+    12: #343a40,
+    13: #2c3035,
+    14: #212529,
+    15: #121417,
+    black: #000000,
+);
+
+$_default-palette-blue: (
+    1: #ecf4ff,
+    2: #cfe2ff,
+    3: #b6d4fe,
+    4: #9ec5fe,
+    5: #86b6fe,
+    6: #6ea8fe,
+    7: #4992fd,
+    8: #207afd,
+    9: #0d6efd,
+    10: #0b5ed7,
+    11: #0a58ca,
+    12: #0a53be,
+    13: #084298,
+    14: #052c65,
+    15: #031633,
+);
+
+$_default-palette-yellow: (
+    1: #fff9e6,
+    2: #fff3cd,
+    3: #ffecb5,
+    4: #ffe69c,
+    5: #ffe083,
+    6: #ffda6a,
+    7: #ffcd39,
+    8: #ffc107,
+    9: #cc9a06,
+    10: #b38705,
+    11: #997404,
+    12: #806104,
+    13: #664d03,
+    14: #523e02,
+    15: #332701,
+);
+
+$_default-palette-red: (
+    1: #fcebec,
+    2: #fae1e3,
+    3: #f8d7da,
+    4: #f5c2c7,
+    5: #f1aeb5,
+    6: #ea868f,
+    7: #e35d6a,
+    8: #dc3545,
+    9: #b02a37,
+    10: #9a2530,
+    11: #842029,
+    12: #6e1b23,
+    13: #58151c,
+    14: #421015,
+    15: #21080a,
+);
+
+$_default-palette-cyan: (
+    1: #e7fafe,
+    2: #cff4fc,
+    3: #aaecfa,
+    4: #9eeaf9,
+    5: #86e5f8,
+    6: #6edff6,
+    7: #3dd5f3,
+    8: #0dcaf0,
+    9: #0aa2c0,
+    10: #098da8,
+    11: #087990,
+    12: #076578,
+    13: #055160,
+    14: #04414d,
+    15: #032830,
+);
+
+$_default-palette-green: (
+    1: #e8f3ee,
+    2: #d1e7dd,
+    3: #badbcc,
+    4: #a3cfbb,
+    5: #8cc3aa,
+    6: #75b798,
+    7: #479f76,
+    8: #198754,
+    9: #146c43,
+    10: #125f3b,
+    11: #0f5132,
+    12: #0d442a,
+    13: #0a3622,
+    14: #08291a,
+    15: #051b11,
+);
+
+$_default-palette-indigo: (
+    1: #f0e7fe,
+    2: #e2d9f3,
+    3: #d3c5ec,
+    4: #c5b3e6,
+    5: #b9a3e1,
+    6: #a98eda,
+    7: #8c68cd,
+    8: #6f42c1,
+    9: #59359a,
+    10: #4e2f89,
+    11: #432874,
+    12: #36215f,
+    13: #2c1a4d,
+    14: #21143b,
+    15: #160d27,
+);
+
+$_default-palette-teal: (
+    1: #ebfaf6,
+    2: #e8dbfd,
+    3: #d2f4ea,
+    4: #c1f0e2,
+    5: #a6e9d5,
+    6: #79dfc1,
+    7: #4dd4ac,
+    8: #20c997,
+    9: #1aa179,
+    10: #178c69,
+    11: #13795b,
+    12: #10654c,
+    13: #0d503c,
+    14: #0a3e2e,
+    15: #06281e,
+);
+
+// stylelint-disable scss/no-global-function-names
+$kendo-palette-gray: $_default-palette-gray !default;
+$kendo-palette-gray: map-merge($_default-palette-gray, $kendo-palette-gray);
+
+$kendo-palette-blue: $_default-palette-blue !default;
+$kendo-palette-blue: map-merge($_default-palette-blue, $kendo-palette-blue);
+
+$kendo-palette-yellow: $_default-palette-yellow !default;
+$kendo-palette-yellow: map-merge($_default-palette-yellow, $kendo-palette-yellow);
+
+$kendo-palette-red: $_default-palette-red !default;
+$kendo-palette-red: map-merge($_default-palette-red, $kendo-palette-red);
+
+$kendo-palette-cyan: $_default-palette-cyan !default;
+$kendo-palette-cyan: map-merge($_default-palette-cyan, $kendo-palette-cyan);
+
+$kendo-palette-green: $_default-palette-green !default;
+$kendo-palette-green: map-merge($_default-palette-green, $kendo-palette-green);
+
+$kendo-palette-indigo: $_default-palette-indigo !default;
+$kendo-palette-indigo: map-merge($_default-palette-indigo, $kendo-palette-indigo);
+
+$kendo-palette-teal: $_default-palette-teal !default;
+$kendo-palette-teal: map-merge($_default-palette-teal, $kendo-palette-teal);
+// stylelint-enable scss/no-global-function-names

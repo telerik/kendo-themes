@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-listview-item-icon-text</td>
     <td>Color</td>
-    <td><code>k-try-tint($kendo-file-manager-text, 4)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4))</code></td>
     <td><span class="color-preview" style="background-color: #7e7e7e"></span><code>#7e7e7e</code></td>
 </tr>
 <tr>
@@ -580,7 +580,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-file-manager-preview-icon-text</td>
     <td>Color</td>
-    <td><code>k-try-tint($kendo-file-manager-text, 4)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4))</code></td>
     <td><span class="color-preview" style="background-color: #7e7e7e"></span><code>#7e7e7e</code></td>
 </tr>
 <tr>

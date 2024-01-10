@@ -35,13 +35,13 @@ $kendo-upload-dropzone-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-upload-dropzone-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// The text color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-upload-dropzone-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
 /// The background color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-upload-dropzone-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The border color of the Upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-border: k-get-theme-color-var( neutral-30 ) !default;
+$kendo-upload-dropzone-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
 /// The background color of the hovered Upload dropzone.
 /// @group upload
 $kendo-upload-dropzone-hover-bg: var( --kendo-hover-bg, inherit ) !default;
@@ -79,21 +79,21 @@ $kendo-upload-icon-color: var( --kendo-subtle-text, inherit ) !default;
 $kendo-upload-progress-thickness: 2px !default;
 /// The background color of the Upload progress bar.
 /// @group upload
-$kendo-upload-progress-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-upload-progress-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The success text color of the Upload.
 /// @group upload
-$kendo-upload-success-text: k-get-theme-color-var( success-190 ) !default;
+$kendo-upload-success-text: if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 )) !default;
 /// The success background color of the Upload progress bar.
 /// @group upload
-$kendo-upload-success-bg: k-get-theme-color-var( success-190 ) !default;
+$kendo-upload-success-bg: if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 )) !default;
 
 /// The error text color of the Upload.
 /// @group upload
-$kendo-upload-error-text: k-get-theme-color-var( error-190 ) !default;
+$kendo-upload-error-text: if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 )) !default;
 /// The error background color of the Upload progress bar.
 /// @group upload
-$kendo-upload-error-bg: k-get-theme-color-var( error-190 ) !default;
+$kendo-upload-error-bg: if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 )) !default;
 
 /// The shadow of the focused Upload button, actions and uploaded items.
 /// @group upload

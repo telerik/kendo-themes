@@ -73,6 +73,17 @@
             transition-duration: .4s;
             transition-timing-function: ease-in-out;
 
+            &::before {
+                @include border-radius( $kendo-stepper-indicator-border-radius );
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
             &::after {
                 @include border-radius( 100% );
                 content: "";
