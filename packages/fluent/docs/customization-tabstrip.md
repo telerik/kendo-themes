@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-selected-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-item-dragging-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -370,7 +370,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tabstrip-indicator-color</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>

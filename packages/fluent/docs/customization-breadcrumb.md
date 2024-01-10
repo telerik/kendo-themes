@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>0 0 0 1px if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-hover-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-active-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-focus-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-selected-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 ))</code></td>
     <td></td>
 </tr>
 <tr>

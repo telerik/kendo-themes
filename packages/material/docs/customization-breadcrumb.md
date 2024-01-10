@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-link-focus-bg</td>
     <td>Color</td>
-    <td><code>k-map-get( $theme, focus-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-map-get( $theme, focus-bg ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
@@ -560,7 +560,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-breadcrumb-root-link-focus-bg</td>
     <td>Color</td>
-    <td><code>k-map-get( $theme, focus-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-map-get( $theme, focus-bg ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>

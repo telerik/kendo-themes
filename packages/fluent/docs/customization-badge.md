@@ -267,7 +267,7 @@ The following table lists the available variables for customization.
     error: error,
     success: success,
     info: info,
-    secondary: neutral,
+    secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
  )</code></td>
     <td></td>

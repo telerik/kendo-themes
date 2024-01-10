@@ -162,6 +162,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-disabled-text</td>
+    <td>Color</td>
+    <td><code>k-map-get( $theme, disabled-text )</code></td>
+    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-list-sizes</td>
     <td>Map</td>
     <td><code>(
@@ -353,7 +363,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-light-text</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-light )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-light ), k-contrast-color( $kendo-color-light ))</code></td>
     <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
 </tr>
 <tr>
@@ -373,7 +383,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-appbar-dark-text</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-color-dark )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-dark ), k-contrast-color( $kendo-color-dark ))</code></td>
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
@@ -1419,7 +1429,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-link-focus-bg</td>
     <td>Color</td>
-    <td><code>k-map-get( $theme, focus-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-map-get( $theme, focus-bg ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
@@ -1519,7 +1529,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-breadcrumb-root-link-focus-bg</td>
     <td>Color</td>
-    <td><code>k-map-get( $theme, focus-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-map-get( $theme, focus-bg ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span><code>rgba(0, 0, 0, 0.12)</code></td>
 </tr>
 <tr>
@@ -2146,7 +2156,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-disabled-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-body-bg, 12% )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .09 ), k-try-shade( $kendo-body-bg, 12% ))</code></td>
     <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
 </tr>
 <tr>
@@ -2156,7 +2166,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-disabled-text</td>
     <td>Color</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .32 ), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -2166,7 +2176,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-button-disabled-border</td>
     <td>Color</td>
-    <td><code>$kendo-button-disabled-bg</code></td>
+    <td><code>if($kendo-enable-color-system, transparent, $kendo-button-disabled-bg)</code></td>
     <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
 </tr>
 <tr>
@@ -3006,7 +3016,7 @@ The following table lists the available variables for customizing the Material t
 <tbody><tr>
     <td>$kendo-series-a</td>
     <td>Color</td>
-    <td><code>get-base-hue( purple, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-a ), get-base-hue( purple, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #9c27b0"></span><code>#9c27b0</code></td>
 </tr>
 <tr>
@@ -3016,7 +3026,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-b</td>
     <td>Color</td>
-    <td><code>get-base-hue( blue, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-b ), get-base-hue( blue, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #2196f3"></span><code>#2196f3</code></td>
 </tr>
 <tr>
@@ -3026,7 +3036,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-c</td>
     <td>Color</td>
-    <td><code>get-base-hue( teal, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-c ), get-base-hue( teal, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #009688"></span><code>#009688</code></td>
 </tr>
 <tr>
@@ -3036,7 +3046,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-d</td>
     <td>Color</td>
-    <td><code>get-base-hue( yellow, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-d ), get-base-hue( yellow, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #ffeb3b"></span><code>#ffeb3b</code></td>
 </tr>
 <tr>
@@ -3046,7 +3056,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-e</td>
     <td>Color</td>
-    <td><code>get-base-hue( red, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-e ), get-base-hue( red, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #f44336"></span><code>#f44336</code></td>
 </tr>
 <tr>
@@ -3056,7 +3066,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-series-f</td>
     <td>Color</td>
-    <td><code>get-base-hue( green, 500 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( series-f ), get-base-hue( green, 500 ))</code></td>
     <td><span class="color-preview" style="background-color: #4caf50"></span><code>#4caf50</code></td>
 </tr>
 <tr>
@@ -3076,7 +3086,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-major-lines</td>
     <td>Color</td>
-    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 )</code></td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .08 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -3086,7 +3096,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chart-minor-lines</td>
     <td>Color</td>
-    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .04 )</code></td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .04 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -3236,7 +3246,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-border</td>
     <td>Color</td>
-    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .54 )</code></td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .54 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
 </tr>
 <tr>
@@ -3286,7 +3296,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-checkbox-checked-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-checkbox-checked-bg ))</code></td>
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
@@ -3396,7 +3406,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-component-bg, 4 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-emphasis ), k-try-shade( $kendo-component-bg, 4 ))</code></td>
     <td><span class="color-preview" style="background-color: #adadad"></span><code>#adadad</code></td>
 </tr>
 <tr>
@@ -3416,7 +3426,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-checkbox-disabled-checked-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-base ), k-contrast-color( $kendo-checkbox-disabled-checked-bg ))</code></td>
     <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
 </tr>
 <tr>
@@ -3825,7 +3835,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-base-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black))</code></td>
     <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
 </tr>
 <tr>
@@ -3851,7 +3861,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-solid-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-button-bg, k-try-tint( $kendo-chip-base-bg, 92% ))</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), if( $kendo-is-dark-theme, $kendo-button-bg, k-try-tint( $kendo-chip-base-bg, 92% )))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
@@ -3901,7 +3911,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-solid-focus-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 80% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 80% ))</code></td>
     <td><span class="color-preview" style="background-color: #cccccc"></span><code>#cccccc</code></td>
 </tr>
 <tr>
@@ -3921,7 +3931,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-solid-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 84% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-tint( $kendo-chip-base-bg, 84% ))</code></td>
     <td><span class="color-preview" style="background-color: #d6d6d6"></span><code>#d6d6d6</code></td>
 </tr>
 <tr>
@@ -3941,7 +3951,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-solid-selected-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 76% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 76% ))</code></td>
     <td><span class="color-preview" style="background-color: #c2c2c2"></span><code>#c2c2c2</code></td>
 </tr>
 <tr>
@@ -4001,7 +4011,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 92% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-hover ), k-try-tint( $kendo-chip-base-bg, 92% ))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
@@ -4011,7 +4021,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-hover-text</td>
     <td>Color</td>
-    <td><code>k-contrast-color( $kendo-chip-outline-hover-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-on-subtle ), k-contrast-color( $kendo-chip-outline-hover-bg ))</code></td>
     <td><span class="color-preview" style="background-color: black"></span><code>black</code></td>
 </tr>
 <tr>
@@ -4021,7 +4031,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-chip-outline-selected-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-chip-base-bg, 84% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle-active ), k-try-tint( $kendo-chip-base-bg, 84% ))</code></td>
     <td><span class="color-preview" style="background-color: #d6d6d6"></span><code>#d6d6d6</code></td>
 </tr>
 <tr>
@@ -4523,23 +4533,13 @@ The following table lists the available variables for customizing the Material t
     </tr>
 </thead>
 <tbody><tr>
-    <td>$kendo-color-white</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+    <td>$kendo-colors</td>
+    <td>Map</td>
+    <td><code>$_default-colors</code></td>
+    <td><code>(app-surface: #ffffff, on-app-surface: #212121, subtle: #757575, surface: #f5f5f5, surface-alt: #ffffff, border: rgba(0, 0, 0, 0.12), border-alt: rgba(0, 0, 0, 0.15), base-subtle: #ebebeb, base-subtle-hover: #d6d6d6, base-subtle-active: #c2c2c2, base: #ffffff, base-hover: #ebebeb, base-active: #d6d6d6, base-emphasis: #adadad, base-on-subtle: #212121, on-base: #212121, base-on-surface: #212121, primary-subtle: #d1d5ee, primary-subtle-hover: #c5cae8, primary-subtle-active: #b5bde3, primary: #3f51b5, primary-hover: #3a4ba7, primary-active: #354498, primary-emphasis: #97a0d7, primary-on-subtle: #161c3f, on-primary: #ffffff, primary-on-surface: #3f51b5, secondary-subtle: #fbcdd9, secondary-subtle-hover: #f9afc3, secondary-subtle-active: #f79bb3, secondary: #e51a5f, secondary-hover: #d31857, secondary-active: #c01650, secondary-emphasis: #f58da9, secondary-on-subtle: #500c22, on-secondary: #ffffff, secondary-on-surface: #ae1549, tertiary-subtle: #c9dbd8, tertiary-subtle-hover: #a9c6c1, tertiary-subtle-active: #92b8b1, tertiary: #00695c, tertiary-hover: #006155, tertiary-active: #00584d, tertiary-emphasis: #84aea7, tertiary-on-subtle: #002520, on-tertiary: #ffffff, tertiary-on-surface: #054f46, info-subtle: #c8d7fb, info-subtle-hover: #a7c0f7, info-subtle-active: #8fb0f6, info: #0058e9, info-hover: #0251d6, info-active: #034ac3, info-emphasis: #80a5f4, info-on-subtle: #071f51, on-info: #ffffff, info-on-surface: #0443b0, success-subtle: #d7f0cc, success-subtle-hover: #bae2ad, success-subtle-active: #a7db97, success: #37b400, success-hover: #33a600, success-active: #2e9704, success-emphasis: #93d775, success-on-subtle: #163f09, on-success: #ffffff, success-on-surface: #2b8906, warning-subtle: #fff0ce, warning-subtle-hover: #ffe7b0, warning-subtle-active: #ffe19c, warning: #ffc000, warning-hover: #ebb201, warning-active: #d6a202, warning-emphasis: #ffdd8f, warning-on-subtle: #59430a, on-warning: #000000, warning-on-surface: #ffc000, error-subtle: #fcc7c2, error-subtle-hover: #feafa8, error-subtle-active: #fe9a91, error: #f31700, error-hover: #e01701, error-active: #cc1505, error-emphasis: #fc8d83, error-on-subtle: #550c07, on-error: #ffffff, error-on-surface: #b91406, light-subtle: #fafafa, light-subtle-hover: #f5f5f5, light-subtle-active: #eeeeee, light: #f5f5f5, light-hover: #ebebeb, light-active: #d6d6d6, light-emphasis: #e0e0e0, light-on-subtle: #212121, on-light: #000000, light-on-surface: #616161, dark-subtle: #c7c7c7, dark-subtle-hover: #c2c2c2, dark-subtle-active: #bdbdbd, dark: #424242, dark-hover: #212121, dark-active: #000000, dark-emphasis: #9e9e9e, dark-on-subtle: #212121, on-dark: #ffffff, dark-on-surface: #616161, inverse-subtle: #c7c7c7, inverse-subtle-hover: #c2c2c2, inverse-subtle-active: #bdbdbd, inverse: #424242, inverse-hover: #212121, inverse-active: #000000, inverse-emphasis: #9e9e9e, inverse-on-subtle: #212121, on-inverse: #ffffff, inverse-on-surface: #616161, series-a: #9c27b0, series-a-bold: #751d84, series-a-bolder: #4e1458, series-a-subtle: #b55dc4, series-a-subtler: #cd93d7, series-b: #2196f3, series-b-bold: #1971b6, series-b-bolder: #114b7a, series-b-subtle: #59b0f6, series-b-subtler: #90cbf9, series-c: #009688, series-c-bold: #007166, series-c-bolder: #004b44, series-c-subtle: #40b0a6, series-c-subtler: #80cbc4, series-d: #ffeb3b, series-d-bold: #bfb02c, series-d-bolder: #80761e, series-d-subtle: #fff06c, series-d-subtler: #fff59d, series-e: #f44336, series-e-bold: #b73229, series-e-bolder: #7a221b, series-e-subtle: #f77268, series-e-subtler: #faa19b, series-f: #4caf50, series-f-bold: #39833c, series-f-bolder: #265828, series-f-subtle: #79c37c, series-f-subtler: #a6d7a8)</code></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color white.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-black</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color black.<br />Note: you cannot change this value.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The global default Colors map.</div></div>
     </td>
 </tr>
 <tr>
@@ -4670,26 +4670,6 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-white</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
-    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color white.<br />Note: you cannot change this value.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-color-black</td>
-    <td>Color</td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color black.<br />Note: you cannot change this value.</div></div>
     </td>
 </tr>
 </tbody>
@@ -5509,7 +5489,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>Color</td>
-    <td><code>k-color-mix( $kendo-color-white, $kendo-color-primary, 8% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-color-mix( $kendo-color-white, $kendo-color-primary, 8% ))</code></td>
     <td><span class="color-preview" style="background-color: #4e5fbb"></span><code>#4e5fbb</code></td>
 </tr>
 <tr>
@@ -5559,7 +5539,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-color-primary, .16 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .16 ), rgba( $kendo-color-primary, .16 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.16)"></span><code>rgba(63, 81, 181, 0.16)</code></td>
 </tr>
 <tr>
@@ -5709,7 +5689,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-base-bg, 1 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-base-bg, 1 ))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
@@ -5749,7 +5729,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-dropzone-text, 4 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-dropzone-text, 4 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9116)"></span><code>rgba(97, 97, 97, 0.9116)</code></td>
 </tr>
 <tr>
@@ -5929,7 +5909,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>Color</td>
-    <td><code>k-color-mix($kendo-color-primary, #ffffff, 20%)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-color-mix($kendo-color-primary, #ffffff, 20%))</code></td>
     <td><span class="color-preview" style="background-color: #d9dcf0"></span><code>#d9dcf0</code></td>
 </tr>
 <tr>
@@ -6389,7 +6369,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-toolbar-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-button-bg, .5 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
 </tr>
 <tr>
@@ -6669,7 +6649,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-listview-item-icon-text</td>
     <td>Color</td>
-    <td><code>k-try-tint($kendo-file-manager-text, 4)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4))</code></td>
     <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9116)"></span><code>rgba(97, 97, 97, 0.9116)</code></td>
 </tr>
 <tr>
@@ -6849,7 +6829,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-file-manager-preview-icon-text</td>
     <td>Color</td>
-    <td><code>k-try-tint($kendo-file-manager-text, 4)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint($kendo-file-manager-text, 4))</code></td>
     <td><span class="color-preview" style="background-color: rgba(97, 97, 97, 0.9116)"></span><code>rgba(97, 97, 97, 0.9116)</code></td>
 </tr>
 <tr>
@@ -8472,7 +8452,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-grid-row-resizer-hover-bg</td>
     <td>Color</td>
-    <td><code>rgba( k-contrast-color( $kendo-grid-bg ), .24 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .2 ), rgba( k-contrast-color( $kendo-grid-bg ), .24 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.24)"></span><code>rgba(0, 0, 0, 0.24)</code></td>
 </tr>
 <tr>
@@ -8757,7 +8737,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-component-bg, .5 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-component-bg, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
 </tr>
 <tr>
@@ -8777,7 +8757,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-border</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-component-border, .38 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .44 ), rgba( $kendo-component-border, .38 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -8897,7 +8877,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-component-bg, .25 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .03 ), k-try-shade( $kendo-component-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
 </tr>
 <tr>
@@ -8907,7 +8887,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-text</td>
     <td>Color</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .27 ), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -8917,7 +8897,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-input-disabled-border</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .03 ), rgba( $kendo-component-border, k-math-div( k-color-alpha( $kendo-component-border ), 2 ) ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.06)"></span><code>rgba(0, 0, 0, 0.06)</code></td>
 </tr>
 <tr>
@@ -10087,7 +10067,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listview-item-selected-bg</td>
     <td>Color</td>
-    <td><code>rgba( k-contrast-color( $kendo-listview-bg ), .04 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( k-contrast-color( $kendo-listview-bg ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -10117,7 +10097,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-listview-item-focus-bg</td>
     <td>Color</td>
-    <td><code>rgba( k-contrast-color( $kendo-listview-bg ), .08 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), rgba( k-contrast-color( $kendo-listview-bg ), .08 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span><code>rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -11267,7 +11247,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pager-text</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
 </tr>
 <tr>
@@ -11287,7 +11267,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pager-focus-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-pager-bg, .5 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-pager-bg, .5 ))</code></td>
     <td><span class="color-preview" style="background-color: whitesmoke"></span><code>whitesmoke</code></td>
 </tr>
 <tr>
@@ -11639,7 +11619,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-pdf-viewer-toolbar-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-button-bg, .25 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .25 ))</code></td>
     <td><span class="color-preview" style="background-color: #fafafa"></span><code>#fafafa</code></td>
 </tr>
 <tr>
@@ -12909,7 +12889,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-color-primary, 8 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-try-tint( $kendo-color-primary, 8 ))</code></td>
     <td><span class="color-preview" style="background-color: #bac0e4"></span><code>#bac0e4</code></td>
 </tr>
 <tr>
@@ -14253,16 +14233,6 @@ The following table lists the available variables for customizing the Material t
     </tr>
 </thead>
 <tbody><tr>
-    <td>$elevation</td>
-    <td>Color</td>
-    <td><code>k-map-get( $theme, elevation )</code></td>
-    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of shadows</div></div>
-    </td>
-</tr>
-<tr>
     <td>$box-shadow-depth-1</td>
     <td>String</td>
     <td><code>k-elevation(1)</code></td>
@@ -14352,6 +14322,16 @@ The following table lists the available variables for customizing the Material t
     <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use the `$kendo-elevation` map instead.</div></div><div><b>Description</b><div class="theme-variables-description">Shadow for window and dialog.<br />Equivalent to material elevation 24.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$elevation</td>
+    <td>Color</td>
+    <td><code>k-map-get( $theme, elevation )</code></td>
+    <td><span class="color-preview" style="background-color: #000000"></span><code>#000000</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of shadows</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
@@ -14415,7 +14395,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-skeleton-item-bg</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-color-inverse, .2 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .2 ), rgba( $kendo-color-inverse, .2 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.2)"></span><code>rgba(66, 66, 66, 0.2)</code></td>
 </tr>
 <tr>
@@ -14629,7 +14609,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-off-track-bg</td>
     <td>Color</td>
-    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .38 )</code></td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .38 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -14799,7 +14779,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white ))</code></td>
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
@@ -14879,7 +14859,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-color-primary, .54 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .54 ), rgba( $kendo-color-primary, .54 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.54)"></span><code>rgba(63, 81, 181, 0.54)</code></td>
 </tr>
 <tr>
@@ -15288,7 +15268,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-header-text</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span><code>rgba(0, 0, 0, 0.54)</code></td>
 </tr>
 <tr>
@@ -15408,7 +15388,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-hover-bg</td>
     <td>Color</td>
-    <td><code>rgba( k-contrast-color( $kendo-table-bg ), .07 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .08 ), rgba( k-contrast-color( $kendo-table-bg ), .07 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span><code>rgba(0, 0, 0, 0.07)</code></td>
 </tr>
 <tr>
@@ -15478,7 +15458,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-table-selected-bg</td>
     <td>Color</td>
-    <td><code>rgba( k-contrast-color( $kendo-table-bg ), .04 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .12 ), rgba( k-contrast-color( $kendo-table-bg ), .04 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
 </tr>
 <tr>
@@ -15828,7 +15808,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-tile-layout-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light))</code></td>
     <td><span class="color-preview" style="background-color: #f5f5f5"></span><code>#f5f5f5</code></td>
 </tr>
 <tr>
@@ -16749,7 +16729,7 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-treeview-text, .07 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .07 ), rgba( $kendo-treeview-text, .07 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span><code>rgba(0, 0, 0, 0.07)</code></td>
 </tr>
 <tr>

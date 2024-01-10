@@ -325,7 +325,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-hover-border</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-input-border, .16 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), rgba( $kendo-input-border, .16 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.16)"></span><code>rgba(0, 0, 0, 0.16)</code></td>
 </tr>
 <tr>
@@ -375,7 +375,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 0 2px rgba( $kendo-input-focus-border, .08 )</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .08 ), rgba( $kendo-input-focus-border, .08 ))</code></td>
     <td><code>0 0 0 2px rgba(0, 0, 0, 0.08)</code></td>
 </tr>
 <tr>
@@ -475,7 +475,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-border</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-button-text, .5)</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .5 ), rgba( $kendo-button-text, .5))</code></td>
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.5)"></span><code>rgba(66, 66, 66, 0.5)</code></td>
 </tr>
 <tr>
@@ -505,7 +505,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-input-outline-hover-border</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-button-text, .8)</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-base, true ), .8 ), rgba( $kendo-button-text, .8))</code></td>
     <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.8)"></span><code>rgba(66, 66, 66, 0.8)</code></td>
 </tr>
 <tr>

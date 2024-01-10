@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-focus-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-sizes-label-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-190 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-pager-info-label-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>

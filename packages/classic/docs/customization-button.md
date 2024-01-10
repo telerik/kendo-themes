@@ -302,7 +302,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-border</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-button-bg, 2 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border ), k-try-shade( $kendo-button-bg, 2 ))</code></td>
     <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
@@ -332,7 +332,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-hover-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-button-bg, 1 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-hover ), k-try-shade( $kendo-button-bg, 1 ))</code></td>
     <td><span class="color-preview" style="background-color: #dddddd"></span><code>#dddddd</code></td>
 </tr>
 <tr>
@@ -352,7 +352,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-hover-border</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-button-bg, 3 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-button-bg, 3 ))</code></td>
     <td><span class="color-preview" style="background-color: #b6b6b6"></span><code>#b6b6b6</code></td>
 </tr>
 <tr>
@@ -382,7 +382,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-active-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-button-bg, 2 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-active ), k-try-shade( $kendo-button-bg, 2 ))</code></td>
     <td><span class="color-preview" style="background-color: #cacaca"></span><code>#cacaca</code></td>
 </tr>
 <tr>
@@ -402,7 +402,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-active-border</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-button-bg, 4 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-try-shade( $kendo-button-bg, 4 ))</code></td>
     <td><span class="color-preview" style="background-color: #a3a3a3"></span><code>#a3a3a3</code></td>
 </tr>
 <tr>
@@ -442,7 +442,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-selected-text</td>
     <td>Color</td>
-    <td><code>k-contrast-legacy( $kendo-button-selected-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-button-selected-bg ))</code></td>
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
@@ -522,7 +522,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td>List</td>
-    <td><code>0 0 4px 0 rgba( $kendo-button-border, .75 )</code></td>
+    <td><code>0 0 4px 0 if($kendo-enable-color-system, rgba( k-color( border, true ), .75), rgba( $kendo-button-border, .75 ))</code></td>
     <td><code>0 0 4px 0 rgba(202, 202, 202, 0.75)</code></td>
 </tr>
 <tr>

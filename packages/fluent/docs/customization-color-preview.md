@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-preview-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-preview-hover-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-preview-no-color-bg</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-color-preview-no-color-text</td>
     <td></td>
-    <td><code>k-get-theme-color( error, 190 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color( error, 190 ))</code></td>
     <td></td>
 </tr>
 <tr>

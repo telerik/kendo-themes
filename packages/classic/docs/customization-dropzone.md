@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-dropzone-text, 4 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-dropzone-text, 4 ))</code></td>
     <td><span class="color-preview" style="background-color: #6c6c6c"></span><code>#6c6c6c</code></td>
 </tr>
 <tr>

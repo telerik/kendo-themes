@@ -532,7 +532,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-disabled-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-body-bg, 12% )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .09 ), k-try-shade( $kendo-body-bg, 12% ))</code></td>
     <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
 </tr>
 <tr>
@@ -542,7 +542,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-disabled-text</td>
     <td>Color</td>
-    <td><code>$kendo-disabled-text</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, rgba ), .32 ), $kendo-disabled-text)</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -552,7 +552,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-disabled-border</td>
     <td>Color</td>
-    <td><code>$kendo-button-disabled-bg</code></td>
+    <td><code>if($kendo-enable-color-system, transparent, $kendo-button-disabled-bg)</code></td>
     <td><span class="color-preview" style="background-color: #e0e0e0"></span><code>#e0e0e0</code></td>
 </tr>
 <tr>

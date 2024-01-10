@@ -28,6 +28,56 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-body-bg</td>
+    <td>Color</td>
+    <td><code>$kendo-color-white</code></td>
+    <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-body-text</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+    <td><span class="color-preview" style="background-color: #272727"></span><code>#272727</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the body.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-subtle-text</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #646464"></span><code>#646464</code></td>
+    <td><span class="color-preview" style="background-color: #646464"></span><code>#646464</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Subtle text color.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary</code></td>
+    <td><span class="color-preview" style="background-color: #f35800"></span><code>#f35800</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the links.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-link-hover-text</td>
+    <td>Color</td>
+    <td><code>$kendo-color-primary-darker</code></td>
+    <td><span class="color-preview" style="background-color: #cc4a00"></span><code>#cc4a00</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the links on hover.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-border-radius</td>
     <td>Number</td>
     <td><code>k-map-get( $kendo-spacing, 1 )</code></td>
@@ -155,6 +205,56 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-selected-hover-bg</td>
+    <td>Color</td>
+    <td><code>k-try-shade( $kendo-selected-bg, 1 )</code></td>
+    <td><span class="color-preview" style="background-color: #e05100"></span><code>#e05100</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected and hovered items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-selected-hover-text</td>
+    <td>Color</td>
+    <td><code>k-contrast-legacy( $kendo-selected-hover-bg )</code></td>
+    <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected and hovered items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-selected-hover-border</td>
+    <td>Color</td>
+    <td><code>$kendo-selected-border</code></td>
+    <td><span class="color-preview" style="background-color: #cc4a00"></span><code>#cc4a00</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border of selected and hovered items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-selected-hover-gradient</td>
+    <td>List</td>
+    <td><code>$kendo-selected-gradient</code></td>
+    <td><code>rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient of selected and hovered items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-disabled-text</td>
+    <td>Color</td>
+    <td><span class="color-preview" style="background-color: #8d8d8d"></span><code>#8d8d8d</code></td>
+    <td><span class="color-preview" style="background-color: #8d8d8d"></span><code>#8d8d8d</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
     </td>
 </tr>
 </tbody>

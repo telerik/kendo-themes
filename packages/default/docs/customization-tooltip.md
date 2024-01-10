@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-bg</td>
     <td>Color</td>
-    <td><code>rgba( k-contrast-legacy( $kendo-body-bg ), .75 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), rgba( k-contrast-legacy( $kendo-body-bg ), .75 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.75)"></span><code>rgba(0, 0, 0, 0.75)</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-tooltip-text</td>
     <td>Color</td>
-    <td><code>k-contrast-legacy( $kendo-tooltip-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), k-contrast-legacy( $kendo-tooltip-bg ))</code></td>
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
