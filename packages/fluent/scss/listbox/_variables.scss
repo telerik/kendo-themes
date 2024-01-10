@@ -41,4 +41,4 @@ $kendo-listbox-border: var( --kendo-component-border, inherit ) !default;
 $kendo-listbox-drop-hint-width: 1px !default;
 /// The border color of the ListBox drop hint.
 /// @group listbox
-$kendo-listbox-drop-hint-border-color: k-get-theme-color-var( primary-100 ) !default;
+$kendo-listbox-drop-hint-border-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

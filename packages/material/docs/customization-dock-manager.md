@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-indicator-hover-bg</td>
     <td>Color</td>
-    <td><code>k-color-mix( $kendo-color-white, $kendo-color-primary, 8% )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-color-mix( $kendo-color-white, $kendo-color-primary, 8% ))</code></td>
     <td><span class="color-preview" style="background-color: #4e5fbb"></span><code>#4e5fbb</code></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dock-manager-dock-preview-bg</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-color-primary, .16 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .16 ), rgba( $kendo-color-primary, .16 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.16)"></span><code>rgba(63, 81, 181, 0.16)</code></td>
 </tr>
 <tr>

@@ -36,7 +36,7 @@ $kendo-switch-off-track-bg: $kendo-component-bg !default;
 $kendo-switch-off-track-text: $kendo-component-text !default;
 /// The border color of the track when the Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-border: k-try-shade( $kendo-switch-off-track-bg, 8% ) !default;
+$kendo-switch-off-track-border: if($kendo-enable-color-system, k-color( border ), k-try-shade( $kendo-switch-off-track-bg, 8% )) !default;
 /// The background gradient of the track when the Switch is not checked.
 /// @group switch
 $kendo-switch-off-track-gradient: null !default;
@@ -68,7 +68,7 @@ $kendo-switch-off-track-focus-border: null !default;
 $kendo-switch-off-track-focus-gradient: null !default;
 /// The ring around the track when the focused Switch is not checked.
 /// @group switch
-$kendo-switch-off-track-focus-ring: 2px solid rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ) , .08 ) !default;
+$kendo-switch-off-track-focus-ring: 2px solid if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .08 ), rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ) , .08 )) !default;
 
 /// The background of the track when the disabled Switch is not checked.
 /// @group switch
@@ -115,7 +115,7 @@ $kendo-switch-off-thumb-hover-gradient: null !default;
 $kendo-switch-on-track-bg: $kendo-color-primary !default;
 /// The text color of the track when the Switch is checked.
 /// @group switch
-$kendo-switch-on-track-text: k-contrast-legacy( $kendo-switch-on-track-bg ) !default;
+$kendo-switch-on-track-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-switch-on-track-bg )) !default;
 /// The border color of the track when the Switch is checked.
 /// @group switch
 $kendo-switch-on-track-border: $kendo-switch-on-track-bg !default;
@@ -150,7 +150,7 @@ $kendo-switch-on-track-focus-border: null !default;
 $kendo-switch-on-track-focus-gradient: null !default;
 /// The ring around the track when the focused Switch is checked.
 /// @group switch
-$kendo-switch-on-track-focus-ring: 2px solid rgba( $kendo-switch-on-track-border, .25 ) !default;
+$kendo-switch-on-track-focus-ring: 2px solid if($kendo-enable-color-system, rgba( k-color( primary, true ), .25 ), rgba( $kendo-switch-on-track-border, .25 )) !default;
 
 /// The background of the track when the disabled Switch is checked.
 /// @group switch

@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-editor-highlighted-bg</td>
     <td>Color</td>
-    <td><code>k-color-mix($kendo-color-primary, #ffffff, 20%)</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-subtle ), k-color-mix($kendo-color-primary, #ffffff, 20%))</code></td>
     <td><span class="color-preview" style="background-color: #ffe0de"></span><code>#ffe0de</code></td>
 </tr>
 <tr>

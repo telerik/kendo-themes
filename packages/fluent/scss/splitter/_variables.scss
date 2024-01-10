@@ -46,21 +46,21 @@ $kendo-splitter-collapse-icon-padding-y: map.get( $kendo-spacing, .5 ) !default;
 
 /// Background color of the splitter splitbar.
 /// @group splitter
-$kendo-splitbar-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-splitbar-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// Text color of the splitter splitbar.
 /// @group splitter
 $kendo-splitbar-text: var( --kendo-component-text, initial ) !default;
 
 /// Hover background color of the splitter splitbar.
 /// @group splitter
-$kendo-splitbar-hover-bg: k-get-theme-color-var( neutral-20 ) !default;
+$kendo-splitbar-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 )) !default;
 /// Hover text color of the splitter splitbar.
 /// @group splitter
 $kendo-splitbar-hover-text: $kendo-splitbar-text !default;
 
 /// Selected background color of the splitter splitbar.
 /// @group splitter
-$kendo-splitbar-selected-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-splitbar-selected-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// Selected text color of the splitter splitbar.
 /// @group splitter
 $kendo-splitbar-selected-text: var( --kendo-component-bg, inherit ) !default;

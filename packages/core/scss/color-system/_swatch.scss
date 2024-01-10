@@ -1,0 +1,203 @@
+@import "./_functions.import.scss";
+
+// Config
+$kendo-enable-color-system: false !default;
+
+// Colors
+$_default-colors: (
+    // Misc
+    app-surface: null,
+    on-app-surface: null,
+    subtle: null,
+    surface: null,
+    surface-alt: null,
+    border: null,
+    border-alt: null,
+    // Base
+    base-subtle: null,
+    base-subtle-hover: null,
+    base-subtle-active: null,
+    base: null,
+    base-hover: null,
+    base-active: null,
+    base-emphasis: null,
+    base-on-subtle: null,
+    on-base: null,
+    base-on-surface: null,
+    // Primary
+    primary-subtle: null,
+    primary-subtle-hover: null,
+    primary-subtle-active: null,
+    primary: null,
+    primary-hover: null,
+    primary-active: null,
+    primary-emphasis: null,
+    primary-on-subtle: null,
+    on-primary: null,
+    primary-on-surface: null,
+    // Secondary
+    secondary-subtle: null,
+    secondary-subtle-hover: null,
+    secondary-subtle-active: null,
+    secondary: null,
+    secondary-hover: null,
+    secondary-active: null,
+    secondary-emphasis: null,
+    secondary-on-subtle: null,
+    on-secondary: null,
+    secondary-on-surface: null,
+    // Tertiary
+    tertiary-subtle: null,
+    tertiary-subtle-hover: null,
+    tertiary-subtle-active: null,
+    tertiary: null,
+    tertiary-hover: null,
+    tertiary-active: null,
+    tertiary-emphasis: null,
+    tertiary-on-subtle: null,
+    on-tertiary: null,
+    tertiary-on-surface: null,
+    // Info
+    info-subtle: null,
+    info-subtle-hover: null,
+    info-subtle-active: null,
+    info: null,
+    info-hover: null,
+    info-active: null,
+    info-emphasis: null,
+    info-on-subtle: null,
+    on-info: null,
+    info-on-surface: null,
+    // Success
+    success-subtle: null,
+    success-subtle-hover: null,
+    success-subtle-active: null,
+    success: null,
+    success-hover: null,
+    success-active: null,
+    success-emphasis: null,
+    success-on-subtle: null,
+    on-success: null,
+    success-on-surface: null,
+    // Warning
+    warning-subtle: null,
+    warning-subtle-hover: null,
+    warning-subtle-active: null,
+    warning: null,
+    warning-hover: null,
+    warning-active: null,
+    warning-emphasis: null,
+    warning-on-subtle: null,
+    on-warning: null,
+    warning-on-surface: null,
+    // Error
+    error-subtle: null,
+    error-subtle-hover: null,
+    error-subtle-active: null,
+    error: null,
+    error-hover: null,
+    error-active: null,
+    error-emphasis: null,
+    error-on-subtle: null,
+    on-error: null,
+    error-on-surface: null,
+    // Light
+    light-subtle: null,
+    light-subtle-hover: null,
+    light-subtle-active: null,
+    light: null,
+    light-hover: null,
+    light-active: null,
+    light-emphasis: null,
+    light-on-subtle: null,
+    on-light: null,
+    light-on-surface: null,
+    // Dark
+    dark-subtle: null,
+    dark-subtle-hover: null,
+    dark-subtle-active: null,
+    dark: null,
+    dark-hover: null,
+    dark-active: null,
+    dark-emphasis: null,
+    dark-on-subtle: null,
+    on-dark: null,
+    dark-on-surface: null,
+    // Inverse
+    inverse-subtle: null,
+    inverse-subtle-hover: null,
+    inverse-subtle-active: null,
+    inverse: null,
+    inverse-hover: null,
+    inverse-active: null,
+    inverse-emphasis: null,
+    inverse-on-subtle: null,
+    on-inverse: null,
+    inverse-on-surface: null,
+    // Series A
+    series-a: null,
+    series-a-bold: null,
+    series-a-bolder: null,
+    series-a-subtle: null,
+    series-a-subtler: null,
+    // Series B
+    series-b: null,
+    series-b-bold: null,
+    series-b-bolder: null,
+    series-b-subtle: null,
+    series-b-subtler: null,
+    // Series C
+    series-c: null,
+    series-c-bold: null,
+    series-c-bolder: null,
+    series-c-subtle: null,
+    series-c-subtler: null,
+    // Series D
+    series-d: null,
+    series-d-bold: null,
+    series-d-bolder: null,
+    series-d-subtle: null,
+    series-d-subtler: null,
+    // Series Е
+    series-e: null,
+    series-e-bold: null,
+    series-e-bolder: null,
+    series-e-subtle: null,
+    series-e-subtler: null,
+    // Series F
+    series-f: null,
+    series-f-bold: null,
+    series-f-bolder: null,
+    series-f-subtle: null,
+    series-f-subtler: null,
+) !default;
+
+/// The global default Colors map.
+/// @group color-system
+$kendo-colors: $_default-colors !default;
+$kendo-colors: k-map-merge($_default-colors, $kendo-colors);
+
+@function k-color($key, $rgb: false) {
+    $_color: k-map-get($kendo-colors, $key);
+
+    @if ($_color) {
+        @if ($rgb) {
+            @return var(--kendo-color-#{$key}-rgb, k-hex-to-rgb($_color));
+        } @else {
+            @return var(--kendo-color-#{$key}, $_color);
+        }
+    } @else {
+        @error "Color Variable \`#{$key}\` does not exists in the color collection.";
+    }
+}
+
+@mixin color-system--styles() {
+    :root {
+        @each $key, $value in $kendo-colors {
+            @if($value) {
+                --kendo-color-#{$key}: #{$value};
+                --kendo-color-#{$key}-rgb: #{k-hex-to-rgb($value)};
+            }
+        }
+    }
+}

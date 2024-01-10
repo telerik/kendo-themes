@@ -23,21 +23,21 @@ $kendo-slider-draghandle-active-scale: 1 !default;
 $kendo-slider-draghandle-active-size: null !default;
 
 $kendo-slider-draghandle-bg: $kendo-color-primary !default;
-$kendo-slider-draghandle-text: k-contrast-color( $kendo-color-primary ) !default;
+$kendo-slider-draghandle-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-color-primary )) !default;
 $kendo-slider-draghandle-border: $kendo-color-primary !default;
 $kendo-slider-draghandle-gradient: null !default;
 
-$kendo-slider-draghandle-hover-bg: k-try-darken( $kendo-color-primary, 7.5% ) !default;
-$kendo-slider-draghandle-hover-text: k-contrast-color( $kendo-color-primary ) !default;
-$kendo-slider-draghandle-hover-border: k-try-darken( $kendo-color-primary, 10% ) !default;
+$kendo-slider-draghandle-hover-bg: if($kendo-enable-color-system, k-color( primary-hover ), k-try-darken( $kendo-color-primary, 7.5% )) !default;
+$kendo-slider-draghandle-hover-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-color-primary )) !default;
+$kendo-slider-draghandle-hover-border: if($kendo-enable-color-system, k-color( primary-hover ), k-try-darken( $kendo-color-primary, 10% )) !default;
 $kendo-slider-draghandle-hover-gradient: null !default;
 
-$kendo-slider-draghandle-pressed-bg: k-try-darken( $kendo-color-primary, 10% ) !default;
-$kendo-slider-draghandle-pressed-text: k-contrast-color( $kendo-color-primary ) !default;
-$kendo-slider-draghandle-pressed-border: k-try-darken( $kendo-color-primary, 12.5% ) !default;
+$kendo-slider-draghandle-pressed-bg: if($kendo-enable-color-system, k-color( primary-active ), k-try-darken( $kendo-color-primary, 10% )) !default;
+$kendo-slider-draghandle-pressed-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-color-primary )) !default;
+$kendo-slider-draghandle-pressed-border: if($kendo-enable-color-system, k-color( primary-active ), k-try-darken( $kendo-color-primary, 12.5% )) !default;
 $kendo-slider-draghandle-pressed-gradient: null !default;
 
-$kendo-slider-draghandle-focus-shadow: 0 0 0 3px rgba( $kendo-color-primary, .5 ) !default;
+$kendo-slider-draghandle-focus-shadow: 0 0 0 3px if($kendo-enable-color-system, rgba( k-color( primary, true ), .5 ), rgba( $kendo-color-primary, .5 )) !default;
 
 $kendo-slider-transition-speed: .3s !default;
 $kendo-slider-transition-function: ease-out !default;

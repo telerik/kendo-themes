@@ -91,7 +91,7 @@ export * from './treeview/index';
 export * from './card/index';
 export * from './expansion-panel/index';
 // export * from './panelbar/index';
-// export * from './splitter/index';
+export * from './splitter/index';
 export * from './tilelayout/index';
 // export * from './dock-manager/index';
 
@@ -102,7 +102,7 @@ export * from './listview/index';
 // export * from './pivotgrid/index';
 // export * from './treelist/index';
 export * from './filter/index';
-// export * from './filemanager/index';
+export * from './filemanager/index';
 // export * from './taskboard/index';
 
 // Misc

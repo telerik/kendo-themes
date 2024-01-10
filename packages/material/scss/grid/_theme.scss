@@ -9,71 +9,86 @@
 
     .k-grid {
 
-        // Selected state
-        .k-table-td.k-selected,
-        .k-table-row.k-selected {
-            color: $kendo-grid-selected-text;
-            background-color: $kendo-grid-selected-bg;
-        }
-
-        .k-table-row.k-selected > td,
-        .k-table-row.k-selected > .k-table-td {
-            color: inherit;
-            background-color: transparent;
-        }
-
-        // Hover, Focused state
-        .k-table {
-            > .k-table-row:not(.k-detail-row):hover,
-            > .k-table-row:not(.k-detail-row).k-hover,
-            td:focus,
-            td.k-focus,
-            .k-table-td:focus,
-            .k-table-td.k-focus,
-            .k-table-th:focus,
-            .k-table-th.k-focus,
-            .k-master-row > td:focus,
-            .k-grouping-row > td:focus,
-            .k-detail-row > td:focus,
-            .k-group-footer > td:focus,
-            .k-master-row > .k-table-td:focus,
-            .k-grouping-row > .k-table-td:focus,
-            .k-detail-row > .k-table-td:focus,
-            .k-group-footer > .k-table-td:focus {
-                color: inherit;
-                background-color: $kendo-grid-hover-bg;
-            }
-
-            .k-table-row:hover,
-            .k-table-row.k-hover {
-                .k-grid-header-sticky,
-                .k-grid-footer-sticky {
-                    color: inherit;
-                    background-color: $kendo-grid-sticky-hover-bg;
+        @if($kendo-enable-color-system) {
+            .k-table {
+                td:focus,
+                td.k-focus,
+                th:focus,
+                th.k-focus {
+                    &::after {
+                        background-color: $kendo-grid-hover-bg;
+                    }
                 }
             }
+        } @else {
 
-            .k-table-th,
-            td,
-            .k-table-td,
-            .k-master-row > td,
-            .k-grouping-row > td,
-            .k-detail-row > td,
-            .k-group-footer > td,
-            .k-master-row > .k-table-td,
-            .k-grouping-row > .k-table-td,
-            .k-detail-row > .k-table-td,
-            .k-group-footer > .k-table-td {
-                &:focus,
-                &.k-focus {
-                    &.k-grid-header-sticky,
-                    &.k-grid-content-sticky,
-                    &.k-grid-footer-sticky {
+            // Selected state
+            .k-table-td.k-selected,
+            .k-table-row.k-selected {
+                color: $kendo-grid-selected-text;
+                background-color: $kendo-grid-selected-bg;
+            }
+
+            .k-table-row.k-selected > td,
+            .k-table-row.k-selected > .k-table-td {
+                color: inherit;
+                background-color: transparent;
+            }
+
+            // Hover, Focused state
+            .k-table {
+                > .k-table-row:not(.k-detail-row):hover,
+                > .k-table-row:not(.k-detail-row).k-hover,
+                td:focus,
+                td.k-focus,
+                .k-table-td:focus,
+                .k-table-td.k-focus,
+                .k-table-th:focus,
+                .k-table-th.k-focus,
+                .k-master-row > td:focus,
+                .k-grouping-row > td:focus,
+                .k-detail-row > td:focus,
+                .k-group-footer > td:focus,
+                .k-master-row > .k-table-td:focus,
+                .k-grouping-row > .k-table-td:focus,
+                .k-detail-row > .k-table-td:focus,
+                .k-group-footer > .k-table-td:focus {
+                    color: inherit;
+                    background-color: $kendo-grid-hover-bg;
+                }
+
+                .k-table-row:hover,
+                .k-table-row.k-hover {
+                    .k-grid-header-sticky,
+                    .k-grid-footer-sticky {
                         color: inherit;
                         background-color: $kendo-grid-sticky-hover-bg;
                     }
                 }
+
+                .k-table-th,
+                td,
+                .k-table-td,
+                .k-master-row > td,
+                .k-grouping-row > td,
+                .k-detail-row > td,
+                .k-group-footer > td,
+                .k-master-row > .k-table-td,
+                .k-grouping-row > .k-table-td,
+                .k-detail-row > .k-table-td,
+                .k-group-footer > .k-table-td {
+                    &:focus,
+                    &.k-focus {
+                        &.k-grid-header-sticky,
+                        &.k-grid-content-sticky,
+                        &.k-grid-footer-sticky {
+                            color: inherit;
+                            background-color: $kendo-grid-sticky-hover-bg;
+                        }
+                    }
+                }
             }
+            
         }
 
         .k-grid-pager:focus,

@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-bg</td>
     <td>Color</td>
-    <td><code>if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 ))</code></td>
     <td><span class="color-preview" style="background-color: #f8f9fa"></span><code>#f8f9fa</code></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-dropzone-icon-text</td>
     <td>Color</td>
-    <td><code>k-try-tint( $kendo-dropzone-text, 8 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-try-tint( $kendo-dropzone-text, 8 ))</code></td>
     <td><span class="color-preview" style="background-color: #afb1b2"></span><code>#afb1b2</code></td>
 </tr>
 <tr>

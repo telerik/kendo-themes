@@ -3,51 +3,51 @@
 
 /// The first base series color and its light and dark shades.
 /// @group charts
-$kendo-series-a: k-get-theme-color-var( series-a-100 ) !default;
-$kendo-series-a-dark: k-get-theme-color-var( series-a-130 ) !default;
-$kendo-series-a-darker: k-get-theme-color-var( series-a-160 ) !default;
-$kendo-series-a-light: k-get-theme-color-var( series-a-70 ) !default;
-$kendo-series-a-lighter: k-get-theme-color-var( series-a-40 ) !default;
+$kendo-series-a: if($kendo-enable-color-system, k-color( series-a ), k-get-theme-color-var( series-a-100 )) !default;
+$kendo-series-a-dark: if($kendo-enable-color-system, k-color( series-a-bold ), k-get-theme-color-var( series-a-130 )) !default;
+$kendo-series-a-darker: if($kendo-enable-color-system, k-color( series-a-bolder ), k-get-theme-color-var( series-a-160 )) !default;
+$kendo-series-a-light: if($kendo-enable-color-system, k-color( series-a-subtle ), k-get-theme-color-var( series-a-70 )) !default;
+$kendo-series-a-lighter: if($kendo-enable-color-system, k-color( series-a-subtler ), k-get-theme-color-var( series-a-40 )) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
-$kendo-series-b: k-get-theme-color-var( series-b-100 ) !default;
-$kendo-series-b-dark: k-get-theme-color-var( series-b-130 ) !default;
-$kendo-series-b-darker: k-get-theme-color-var( series-b-160 ) !default;
-$kendo-series-b-light: k-get-theme-color-var( series-b-70 ) !default;
-$kendo-series-b-lighter: k-get-theme-color-var( series-b-40 ) !default;
+$kendo-series-b: if($kendo-enable-color-system, k-color( series-b ), k-get-theme-color-var( series-b-100 )) !default;
+$kendo-series-b-dark: if($kendo-enable-color-system, k-color( series-b-bold ), k-get-theme-color-var( series-b-130 )) !default;
+$kendo-series-b-darker: if($kendo-enable-color-system, k-color( series-b-bolder ), k-get-theme-color-var( series-b-160 )) !default;
+$kendo-series-b-light: if($kendo-enable-color-system, k-color( series-b-subtle ), k-get-theme-color-var( series-b-70 )) !default;
+$kendo-series-b-lighter: if($kendo-enable-color-system, k-color( series-b-subtler ), k-get-theme-color-var( series-b-40 )) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
-$kendo-series-c: k-get-theme-color-var( series-c-100 ) !default;
-$kendo-series-c-dark: k-get-theme-color-var( series-c-130 ) !default;
-$kendo-series-c-darker: k-get-theme-color-var( series-c-160 ) !default;
-$kendo-series-c-light: k-get-theme-color-var( series-c-70 ) !default;
-$kendo-series-c-lighter: k-get-theme-color-var( series-c-40 ) !default;
+$kendo-series-c: if($kendo-enable-color-system, k-color( series-c ), k-get-theme-color-var( series-c-100 )) !default;
+$kendo-series-c-dark: if($kendo-enable-color-system, k-color( series-c-bold ), k-get-theme-color-var( series-c-130 )) !default;
+$kendo-series-c-darker: if($kendo-enable-color-system, k-color( series-c-bolder ), k-get-theme-color-var( series-c-160 )) !default;
+$kendo-series-c-light: if($kendo-enable-color-system, k-color( series-c-subtle ), k-get-theme-color-var( series-c-70 )) !default;
+$kendo-series-c-lighter: if($kendo-enable-color-system, k-color( series-c-subtler ), k-get-theme-color-var( series-c-40 )) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-d: k-get-theme-color-var( series-d-100 ) !default;
-$kendo-series-d-dark: k-get-theme-color-var( series-d-130 ) !default;
-$kendo-series-d-darker: k-get-theme-color-var( series-d-160 ) !default;
-$kendo-series-d-light: k-get-theme-color-var( series-d-70 ) !default;
-$kendo-series-d-lighter: k-get-theme-color-var( series-d-40 ) !default;
+$kendo-series-d: if($kendo-enable-color-system, k-color( series-d ), k-get-theme-color-var( series-d-100 )) !default;
+$kendo-series-d-dark: if($kendo-enable-color-system, k-color( series-d-bold ), k-get-theme-color-var( series-d-130 )) !default;
+$kendo-series-d-darker: if($kendo-enable-color-system, k-color( series-d-bolder ), k-get-theme-color-var( series-d-160 )) !default;
+$kendo-series-d-light: if($kendo-enable-color-system, k-color( series-d-subtle ), k-get-theme-color-var( series-d-70 )) !default;
+$kendo-series-d-lighter: if($kendo-enable-color-system, k-color( series-d-subtler ), k-get-theme-color-var( series-d-40 )) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-e: k-get-theme-color-var( series-e-100 ) !default;
-$kendo-series-e-dark: k-get-theme-color-var( series-e-130 ) !default;
-$kendo-series-e-darker: k-get-theme-color-var( series-e-60 ) !default;
-$kendo-series-e-light: k-get-theme-color-var( series-e-70 ) !default;
-$kendo-series-e-lighter: k-get-theme-color-var( series-e-40 ) !default;
+$kendo-series-e: if($kendo-enable-color-system, k-color( series-e ), k-get-theme-color-var( series-e-100 )) !default;
+$kendo-series-e-dark: if($kendo-enable-color-system, k-color( series-e-bold ), k-get-theme-color-var( series-e-130 )) !default;
+$kendo-series-e-darker: if($kendo-enable-color-system, k-color( series-e-bolder ), k-get-theme-color-var( series-e-160 )) !default;
+$kendo-series-e-light: if($kendo-enable-color-system, k-color( series-e-subtle ), k-get-theme-color-var( series-e-70 )) !default;
+$kendo-series-e-lighter: if($kendo-enable-color-system, k-color( series-e-subtler ), k-get-theme-color-var( series-e-40 )) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
-$kendo-series-f: k-get-theme-color-var( series-f-100 ) !default;
-$kendo-series-f-dark: k-get-theme-color-var( series-f-130 ) !default;
-$kendo-series-f-darker: k-get-theme-color-var( series-f-160 ) !default;
-$kendo-series-f-light: k-get-theme-color-var( series-f-70 ) !default;
-$kendo-series-f-lighter: k-get-theme-color-var( series-f-40 ) !default;
+$kendo-series-f: if($kendo-enable-color-system, k-color( series-f ), k-get-theme-color-var( series-f-100 )) !default;
+$kendo-series-f-dark: if($kendo-enable-color-system, k-color( series-f-bold ), k-get-theme-color-var( series-f-130 )) !default;
+$kendo-series-f-darker: if($kendo-enable-color-system, k-color( series-f-bolder ), k-get-theme-color-var( series-f-160 )) !default;
+$kendo-series-f-light: if($kendo-enable-color-system, k-color( series-f-subtle ), k-get-theme-color-var( series-f-70 )) !default;
+$kendo-series-f-lighter: if($kendo-enable-color-system, k-color( series-f-subtler ), k-get-theme-color-var( series-f-40 )) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker
@@ -127,10 +127,10 @@ $kendo-chart-inactive-bg: var( --kendo-disabled-bg, initial ) !default;
 
 /// The color of the chart component major grid lines.
 /// @group charts
-$kendo-chart-major-lines: k-get-theme-color-var( neutral-30 ) !default;
+$kendo-chart-major-lines: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
 /// The color of the chart component minor grid lines.
 /// @group charts
-$kendo-chart-minor-lines: k-get-theme-color-var( neutral-30 ) !default;
+$kendo-chart-minor-lines: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The opacity of the chart area.
 /// @group charts
@@ -155,17 +155,17 @@ $kendo-chart-border: var( --kendo-component-border, initial ) !default;
 
 /// The text color of the chart tooltip.
 /// @group charts
-$kendo-chart-tooltip-color: $kendo-color-white !default;
+$kendo-chart-tooltip-color: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The inverse text color of the chart tooltip.
 /// @group charts
-$kendo-chart-tooltip-color-inverse: $kendo-color-black !default;
+$kendo-chart-tooltip-color-inverse: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 
 /// The background color of the chart crosshairs.
 /// @group charts
-$kendo-chart-crosshair-background: $kendo-color-black !default;
+$kendo-chart-crosshair-background: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 /// The text color of the chart shared crosshair tooltip.
 /// @group charts
-$kendo-chart-crosshair-shared-tooltip-color: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-chart-crosshair-shared-tooltip-color: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// The background color of the chart shared crosshair tooltip.
 /// @group charts
 $kendo-chart-crosshair-shared-tooltip-background: var( --kendo-component-bg, initial ) !default;
@@ -175,7 +175,7 @@ $kendo-chart-crosshair-shared-tooltip-border: transparent !default;
 
 /// The background color of the chart notes.
 /// @group charts
-$kendo-chart-notes-background: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-chart-notes-background: if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 )) !default;
 /// The border color of the chart notes.
 /// @group charts
 $kendo-chart-notes-border: $kendo-chart-notes-background !default;
@@ -185,7 +185,7 @@ $kendo-chart-notes-lines: $kendo-chart-notes-background !default;
 
 /// The background color of the chart handle.
 /// @group charts
-$kendo-chart-handle-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-chart-handle-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The text color of the chart handle.
 /// @group charts
 $kendo-chart-handle-text: $kendo-chart-text !default;
@@ -204,7 +204,7 @@ $kendo-chart-handle-hover-border: var( --kendo-hover-border, initial ) !default;
 
 /// The color of the chart error bars.
 /// @group charts
-$kendo-color-error-bars-background: k-get-theme-color-var( neutral-110 ) !default;
+$kendo-color-error-bars-background: if($kendo-enable-color-system, k-color( error ), k-get-theme-color-var( neutral-110 )) !default;
 
 /// The size of the selection handle of the chart component.
 /// @group charts
@@ -234,10 +234,10 @@ $kendo-treemap-border: var( --kendo-component-border, initial ) !default;
 
 /// The background color of the treemap title.
 /// @group charts
-$kendo-treemap-title-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-treemap-title-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The text color of the treemap title.
 /// @group charts
-$kendo-treemap-title-text: $kendo-color-black !default;
+$kendo-treemap-title-text: if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black) !default;
 /// The border color of the treemap title.
 /// @group charts
 $kendo-treemap-title-border: var( --kendo-component-border, initial ) !default;

@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-pagebutton-bg</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-pagebutton-hover-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-pagebutton-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-hover-shadow</td>
     <td></td>
-    <td><code>0 0 0 2px k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, k-color( base ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-pagebutton-primary-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 2px k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>0 0 0 2px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-navigation-color</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-scrollview-navigation-focus-shadow</td>
     <td></td>
-    <td><code>0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>

@@ -62,10 +62,10 @@ $kendo-timeline-track-start-calc: calc( #{ $kendo-timeline-track-arrow-width } -
 $kendo-timeline-track-end-calc: calc( #{ $kendo-timeline-track-arrow-width } - 2 * #{ $kendo-timeline-track-border-width } ) !default;
 /// The background of the track in the timeline.
 /// @group timeline
-$kendo-timeline-track-bg: k-get-theme-color-var( neutral-10 ) !default;
+$kendo-timeline-track-bg: if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 )) !default;
 /// The border color of the track in the timeline.
 /// @group timeline
-$kendo-timeline-track-border-color: k-get-theme-color-var( neutral-30 ) !default;
+$kendo-timeline-track-border-color: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
 
 /// The inset block end of the arrow in the timeline.
 /// @group timeline
@@ -113,7 +113,7 @@ $kendo-timeline-mobile-flag-max-width: calc( #{ $kendo-timeline-flag-min-width }
 $kendo-timeline-horizontal-flag-min-width: map.get( $kendo-spacing, 15 ) !default;
 /// The background of the flag in the timeline.
 /// @group timeline
-$kendo-timeline-flag-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-timeline-flag-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The text of the flag in the timeline.
 /// @group timeline
 $kendo-timeline-flag-text: var( --kendo-component-bg, initial ) !default;
@@ -135,10 +135,10 @@ $kendo-timeline-flag-margin-bottom-calc: calc( #{ $kendo-timeline-track-size } +
 $kendo-timeline-card-header-bg: var( --kendo-component-bg, initial ) !default;
 /// The text of the card header in the timeline.
 /// @group timeline
-$kendo-timeline-card-header-text: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-timeline-card-header-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// The border of the card body scroll in the timeline.
 /// @group timeline
-$kendo-timeline-card-body-scroll-border: k-get-theme-color-var( neutral-30 ) !default;
+$kendo-timeline-card-body-scroll-border: if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 )) !default;
 /// The background of the card body scroll of the timeline.
 /// @group timeline
 $kendo-timeline-card-body-scroll-bg: var( --kendo-component-bg, initial ) !default;
@@ -180,7 +180,7 @@ $kendo-timeline-circle-width: map.get( $kendo-spacing, 4 ) !default;
 $kendo-timeline-circle-height: map.get( $kendo-spacing, 4 ) !default;
 /// The background of the circle in the timeline.
 /// @group timeline
-$kendo-timeline-circle-bg: k-get-theme-color-var( primary-100 ) !default;
+$kendo-timeline-circle-bg: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The width of the events in the timeline.
 /// @group timeline

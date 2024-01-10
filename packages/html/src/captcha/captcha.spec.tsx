@@ -13,10 +13,14 @@ const states = [
 ];
 
 const options = {};
-const defaultProps = {};
+
+const defaultProps = {
+    imgPath: "/packages/html/assets/captcha.jpg",
+};
 
 export type KendoCaptchaProps = {
     value?: string;
+    imgPath?: string;
 };
 
 export type KendoCaptchaState = { [K in (typeof states)[number]]?: boolean };
@@ -32,6 +36,7 @@ export const Captcha = (
         invalid,
         loading,
         disabled,
+        imgPath = defaultProps.imgPath,
         ...other
     } = props;
 
@@ -52,7 +57,7 @@ export const Captcha = (
                 <div className="k-captcha-image">
                     <img
                         className={classNames({ 'k-hidden': loading })}
-                        src="/packages/html/assets/captcha.jpg"
+                        src={imgPath}
                     />
                     {loading && (
                         <SkeletonRectangle style={{ width: '100%', height: '100%' }} />

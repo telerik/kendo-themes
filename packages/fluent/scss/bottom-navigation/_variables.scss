@@ -69,68 +69,68 @@ $kendo-bottom-nav-brand-colors: (
     error: error,
     success: success,
     info: info,
-    secondary: neutral,
+    secondary: if($kendo-enable-color-system, secondary, neutral),
     tertiary: tertiary,
  ) !default;
 
 // Matrix with BottomNavigation theme colors in the order: bg, color, border
 $_tc-bottom-nav-matrix: (
     solid: (
-        normal: (100, $kendo-color-white, 100),
-        focus: (100, $kendo-color-white, 100, inherit),
-        active: (120, $kendo-color-white, 120),
-        disabled: ( inherit, 40, var( --kendo-disabled-border, inherit ))
+        normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100)),
+        focus: if($kendo-enable-color-system, (color, on-color, color, inherit), (100, $kendo-color-white, 100, inherit)),
+        active: if($kendo-enable-color-system, (color-active, on-color, color-active), (120, $kendo-color-white, 120)),
+        disabled: if($kendo-enable-color-system, (inherit, on-color-disabled, transparent), ( inherit, 40, var( --kendo-disabled-border, inherit )))
     ),
     flat: (
-        normal: ($kendo-color-white, k-get-theme-color-var( neutral-130 ), k-get-theme-color-var( neutral-30 )),
-        focus: (inherit, 100, transparent, 100),
-        active: (inherit, 100, transparent),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
+        normal: if($kendo-enable-color-system, (app-surface, on-app-surface, rgba( k-color( border, true ), 0.16 )), ($kendo-color-white, k-get-theme-color-var( neutral-130 ), k-get-theme-color-var( neutral-30 ))),
+        focus: if($kendo-enable-color-system, (inherit, color, transparent, color), (inherit, 100, transparent, 100)),
+        active: if($kendo-enable-color-system, (inherit, color, transparent), (inherit, 100, transparent)),
+        disabled: if($kendo-enable-color-system, (initial, rgba( k-color( on-app-surface, true ), .46 ), initial), (initial, var( --kendo-disabled-text, inherit ), initial))
     )
 ) !default;
 
 $_tc-bottom-nav-warning-matrix: (
     solid: (
-        normal: (100, k-get-theme-color-var( neutral-160 ), 100),
-        focus: (100, k-get-theme-color-var( neutral-160 ), 100, $kendo-color-white),
-        active: (120, k-get-theme-color-var( neutral-190 ), 120),
-        disabled: (inherit, k-get-theme-color-var( neutral-120 ), var( --kendo-disabled-border, inherit ))
+        normal: if($kendo-enable-color-system, (color, on-color, color), (100, k-get-theme-color-var( neutral-160 ), 100)),
+        focus: if($kendo-enable-color-system, (color, on-color, color, app-surface), (100, k-get-theme-color-var( neutral-160 ), 100, $kendo-color-white)),
+        active: if($kendo-enable-color-system, (color-active, on-color, color-active), (120, k-get-theme-color-var( neutral-190 ), 120)),
+        disabled: if($kendo-enable-color-system, (inherit, on-color-disabled, transparent), (inherit, k-get-theme-color-var( neutral-120 ), var( --kendo-disabled-border, inherit )))
     ),
     flat: (
-        normal: ($kendo-color-white, k-get-theme-color-var( neutral-130 ), 100),
-        focus: (inherit, 100, transparent, 100),
-        active: (inherit, 100, transparent),
-        disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
+        normal: if($kendo-enable-color-system, (app-surface, on-app-surface, color), ($kendo-color-white, k-get-theme-color-var( neutral-130 ), 100)),
+        focus: if($kendo-enable-color-system, (inherit, color, transparent, color), (inherit, 100, transparent, 100)),
+        active: if($kendo-enable-color-system, (inherit, color, transparent), (inherit, 100, transparent)),
+        disabled: if($kendo-enable-color-system, (initial, rgba( k-color( on-app-surface, true ), .46 ), initial), (initial, var( --kendo-disabled-text, inherit ), initial))
     )
 ) !default;
 
 $_tc-bottom-nav-dark-matrix: (
     solid: (
-        normal: (160, $kendo-color-white, 160),
-        focus: (160, $kendo-color-white, 160, $kendo-color-white),
-        active: (180, $kendo-color-white, 180),
-        disabled: (inherit, 60 , var( --kendo-disabled-border, inherit ))
+        normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160)),
+        focus: if($kendo-enable-color-system, (color, on-color, color, on-color), (160, $kendo-color-white, 160, $kendo-color-white)),
+        active: if($kendo-enable-color-system, (color-active, on-color, color-active), (180, $kendo-color-white, 180)),
+        disabled: if($kendo-enable-color-system, (inherit, on-color-disabled, transparent), (inherit, 60 , var( --kendo-disabled-border, inherit )))
     ),
     flat: (
-        normal: ($kendo-color-white, k-get-theme-color-var( neutral-130 ), k-get-theme-color-var( neutral-140 )),
-        focus: (inherit, 160, transparent, 130),
-        active: (inherit, 170, transparent),
-        disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
+        normal: if($kendo-enable-color-system, (app-surface, on-app-surface, color), ($kendo-color-white, k-get-theme-color-var( neutral-130 ), k-get-theme-color-var( neutral-140 ))),
+        focus: if($kendo-enable-color-system, (inherit, color, transparent, color), (inherit, 160, transparent, 130)),
+        active: if($kendo-enable-color-system, (inherit, color, transparent), (inherit, 170, transparent)),
+        disabled: if($kendo-enable-color-system, (inherit, rgba( k-color( on-app-surface, true ), .46 ), initial), (inherit, var( --kendo-disabled-text, inherit ), initial))
     )
 ) !default;
 
 $_tc-bottom-nav-light-matrix: (
     solid: (
-        normal: (50, k-get-theme-color-var( neutral-160 ), 50),
-        focus: (50, 190, 50, $kendo-color-white),
-        active: (70, 190, 70),
-        disabled: (inherit, 120 , var( --kendo-disabled-border, inherit ))
+        normal: if($kendo-enable-color-system, (color, on-color, color), (50, k-get-theme-color-var( neutral-160 ), 50)),
+        focus: if($kendo-enable-color-system, (color, on-color, color, app-surface), (50, 190, 50, $kendo-color-white)),
+        active: if($kendo-enable-color-system, (color-active, on-color, color-active), (70, 190, 70)),
+        disabled: if($kendo-enable-color-system, (inherit, on-color-disabled, transparent), (inherit, 120 , var( --kendo-disabled-border, inherit )))
     ),
     flat: (
-        normal: ($kendo-color-white, k-get-theme-color-var( neutral-130 ), transparent),
-        focus: (inherit, 130, transparent, 130),
-        active: (inherit, 130, transparent),
-        disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
+        normal: if($kendo-enable-color-system, (app-surface, on-app-surface, transparent), ($kendo-color-white, k-get-theme-color-var( neutral-130 ), transparent)),
+        focus: if($kendo-enable-color-system, (inherit, color, transparent, color), (inherit, 130, transparent, 130)),
+        active: if($kendo-enable-color-system, (inherit, color, transparent), (inherit, 130, transparent)),
+        disabled: if($kendo-enable-color-system, (inherit, rgba( k-color( on-app-surface, true ), .46 ), initial), (inherit, var( --kendo-disabled-text, inherit ), initial))
     )
 ) !default;
 
@@ -157,13 +157,13 @@ $kendo-bottom-nav-theme-colors: () !default;
 @each $fill-mode, $ui-states in $_tc-bottom-nav-dark-matrix {
     $kendo-bottom-nav-theme-colors: map.deep-merge(
         $kendo-bottom-nav-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
     );
 }
 
 @each $fill-mode, $ui-states in $_tc-bottom-nav-light-matrix {
     $kendo-bottom-nav-theme-colors: map.deep-merge(
         $kendo-bottom-nav-theme-colors,
-        k-generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
+        k-generate-fill-mode-theme-variation( $fill-mode, light, if($kendo-enable-color-system, light, neutral), $ui-states )
     );
 }
