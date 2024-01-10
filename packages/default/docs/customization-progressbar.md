@@ -100,7 +100,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-bg</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-component-bg, 1 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-try-shade( $kendo-component-bg, 1 ))</code></td>
     <td><span class="color-preview" style="background-color: #ebebeb"></span><code>#ebebeb</code></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-value-text</td>
     <td>Color</td>
-    <td><code>k-contrast-legacy( $kendo-progressbar-value-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-primary ), k-contrast-legacy( $kendo-progressbar-value-bg ))</code></td>
     <td><span class="color-preview" style="background-color: white"></span><code>white</code></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-progressbar-value-border</td>
     <td>Color</td>
-    <td><code>k-try-shade( $kendo-progressbar-value-bg )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-try-shade( $kendo-progressbar-value-bg ))</code></td>
     <td><span class="color-preview" style="background-color: #eb5b51"></span><code>#eb5b51</code></td>
 </tr>
 <tr>

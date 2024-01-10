@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-signature-line-color</td>
     <td></td>
-    <td><code>rgba( k-get-theme-color( info, 100 ), .4 )</code></td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( info, true ), k-get-theme-color( info, 100 )), .4 )</code></td>
     <td></td>
 </tr>
 <tr>
@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-signature-line-disabled-color</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>

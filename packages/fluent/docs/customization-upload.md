@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-dropzone-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-30 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .16 ), k-get-theme-color-var( neutral-30 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-progress-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( success-190 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-success-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( success-190 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( success-on-surface ), k-get-theme-color-var( success-190 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( error-190 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-upload-error-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( error-190 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( error-on-surface ), k-get-theme-color-var( error-190 ))</code></td>
     <td></td>
 </tr>
 <tr>

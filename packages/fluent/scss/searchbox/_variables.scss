@@ -2,4 +2,4 @@
 
 /// Color of the searchbox icon.
 /// @group searchbox
-$kendo-searchbox-icon-color: k-get-theme-color-var( primary-100 ) !default;
+$kendo-searchbox-icon-color: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;

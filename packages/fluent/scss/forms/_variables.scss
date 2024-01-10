@@ -89,7 +89,7 @@ $kendo-form-hint-margin-top: map.get( $kendo-spacing, 1 ) !default;
 
 /// The text color of the Form hint.
 /// @group form
-$kendo-form-hint-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-form-hint-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
 
 /// The row spacing of the small Form.
 /// @group form
@@ -171,7 +171,7 @@ $kendo-fieldset-border: initial !default;
 $kendo-fieldset-legend-bg: transparent !default;
 /// The text color of the Form legend.
 /// @group form
-$kendo-fieldset-legend-text: k-get-theme-color-var( neutral-130 ) !default;
+$kendo-fieldset-legend-text: if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 )) !default;
 /// The border color of the Form legend.
 /// @group form
 $kendo-fieldset-legend-border: initial !default;

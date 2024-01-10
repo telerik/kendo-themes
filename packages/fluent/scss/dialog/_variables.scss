@@ -59,15 +59,15 @@ $kendo-dialog-brand-colors: (
 
 // Matrix with dialog theme colors in the order: bg, color, border
 $_tc-dialog-matrix: (
-    (normal: (100, $kendo-color-white, 100)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))),
 ) !default;
 
 $_tc-dialog-dark-matrix: (
-    (normal: (160, $kendo-color-white, 160)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))),
 ) !default;
 
 $_tc-dialog-light-matrix: (
-    (normal: (50, 160, 50)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))),
 ) !default;
 
 /// The theme colors map for the Dialog.
@@ -85,13 +85,13 @@ $kendo-dialog-theme-colors: () !default;
 @each $ui-states in $_tc-dialog-dark-matrix {
     $kendo-dialog-theme-colors: map.deep-merge(
         $kendo-dialog-theme-colors,
-        k-generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
     );
 }
 
 @each $ui-states in $_tc-dialog-light-matrix {
     $kendo-dialog-theme-colors: map.deep-merge(
         $kendo-dialog-theme-colors,
-        k-generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, if($kendo-enable-color-system, light, neutral), $ui-states )
     );
 }

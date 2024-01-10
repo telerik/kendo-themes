@@ -38,10 +38,10 @@ $kendo-signature-line-width: 1px !default;
 $kendo-signature-line-style: dashed !default;
 /// The color of the row line of the signature component.
 /// @group signature
-$kendo-signature-line-color: rgba( k-get-theme-color( info, 100 ), .4 ) !default;
+$kendo-signature-line-color: rgba( if($kendo-enable-color-system, k-color( info, true ), k-get-theme-color( info, 100 )), .4 ) !default;
 /// The color of the row line of the disabled signature component.
 /// @group signature
-$kendo-signature-line-disabled-color: k-get-theme-color-var( neutral-60 ) !default;
+$kendo-signature-line-disabled-color: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 )) !default;
 /// The width of the row line of the signature component.
 /// @group signature
 $kendo-signature-line-size: calc( 100% - 2 * #{$kendo-signature-padding-x} ) !default;

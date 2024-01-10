@@ -22,6 +22,7 @@
         border-bottom-width: $kendo-file-manager-toolbar-border-width;
         border-color: inherit;
         flex-shrink: 0;
+        z-index: 1;
     }
 
 
@@ -34,6 +35,10 @@
         flex-flow: row nowrap;
         align-items: stretch;
         overflow: hidden;
+    }
+
+    .k-filemanager-splitter {
+        border-width: 0;
     }
 
 

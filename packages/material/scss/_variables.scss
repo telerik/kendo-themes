@@ -1,17 +1,5 @@
 @import "./core/functions/index.import.scss";
 
-/// The color white.
-/// Note: you cannot change this value.
-/// @type Color
-/// @group color-system
-$kendo-color-white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
-
-/// The color black.
-/// Note: you cannot change this value.
-/// @type Color
-/// @group color-system
-$kendo-color-black: #000000; // stylelint-disable-line scss/dollar-variable-default
-
 // Options
 $kendo-enable-rounded: true !default;
 $kendo-enable-shadows: true !default;
@@ -66,29 +54,7 @@ $kendo-spacing: (
 ) !default;
 
 
-// Apply material theme, as early as possible
-$primary-palette-name: indigo !default;
-$secondary-palette-name: pink !default;
-$tertiary-palette-name: teal !default;
-$adjust-contrast: true !default;
-$theme-type: light !default; // light or dark
-
-$primary-palette: material-palette( $primary-palette-name, 500, 300, 700, $adjust-contrast ) !default;
-$secondary-palette: material-palette( $secondary-palette-name, 500, 300, 700, $adjust-contrast ) !default;
-$tertiary-palette: material-palette( $tertiary-palette-name, 500, 300, 700, $adjust-contrast ) !default;
-
-$theme: material-theme(
-    $primary-palette,
-    $secondary-palette,
-    $theme-type
-) !default;
-
-
 // Shadows
-
-/// Color of shadows
-/// @group shadows
-$elevation: k-map-get( $theme, elevation ) !default;
 
 /// Shadow for switch.
 /// Equivalent to material elevation 1.
@@ -182,108 +148,6 @@ $kendo-zindex-window: 2 !default;
 $kendo-zindex-loading: 100 !default;
 
 
-// Color settings
-$kendo-is-dark-theme: k-map-get( $theme, is-dark ) !default;
-
-
-// Theme colors
-/// The color that focuses the user attention.
-/// Used for primary buttons and for elements of primary importance across the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-primary: material-color( $primary-palette, main ) !default;
-$kendo-color-primary-lighter: material-color( $primary-palette, lighter ) !default;
-$kendo-color-primary-darker: material-color( $primary-palette, darker ) !default;
-
-/// The color used along with the primary color denoted by $kendo-color-primary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-primary-contrast: material-color( $primary-palette, main-contrast ) !default;
-
-/// The secondary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary: material-color( $secondary-palette, main ) !default;
-$kendo-color-secondary-lighter: material-color( $secondary-palette, lighter ) !default;
-$kendo-color-secondary-darker: material-color( $secondary-palette, darker ) !default;
-
-/// The color used along with the secondary color denoted by $kendo-color-secondary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-secondary-contrast: material-color( $secondary-palette, main-contrast ) !default;
-
-/// The tertiary color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary: material-color($tertiary-palette, main) !default;
-$kendo-color-tertiary-lighter: material-color($tertiary-palette, lighter) !default;
-$kendo-color-tertiary-darker: material-color($tertiary-palette, darker) !default;
-
-/// The color used along with the tertiary color denoted by $kendo-color-tertiary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$kendo-color-tertiary-contrast: material-color($tertiary-palette, main-contrast) !default;
-
-/// The color for informational messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-info: #0058e9 !default;
-$kendo-color-info-lighter: k-color-tint( $kendo-color-info, 2 ) !default;
-$kendo-color-info-darker: k-color-shade( $kendo-color-info, 2 ) !default;
-
-/// The color for success messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-success: #37b400 !default;
-$kendo-color-success-lighter: k-color-tint( $kendo-color-success, 2 ) !default;
-$kendo-color-success-darker: k-color-shade( $kendo-color-success, 2 ) !default;
-
-/// The color for warning messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-warning: #ffc000 !default;
-$kendo-color-warning-lighter: k-color-tint( $kendo-color-warning, 2 ) !default;
-$kendo-color-warning-darker: k-color-shade( $kendo-color-warning, 2 ) !default;
-
-/// The color for error messages and states.
-/// @group color-system
-/// @type Color
-$kendo-color-error: #f31700 !default;
-$kendo-color-error-lighter: k-color-tint( $kendo-color-error, 2 ) !default;
-$kendo-color-error-darker: k-color-shade( $kendo-color-error, 2 ) !default;
-
-/// The dark color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-dark: get-base-hue( gray, 800 ) !default;
-
-/// The light color of the theme.
-/// @group color-system
-/// @type Color
-$kendo-color-light: get-base-hue( gray, 100 ) !default;
-
-/// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
-/// @group color-system
-$kendo-color-inverse: if( $kendo-is-dark-theme, $kendo-color-light, $kendo-color-dark ) !default;
-
-
-$kendo-theme-colors: (
-    "primary": $kendo-color-primary,
-    "secondary": $kendo-color-secondary,
-    "tertiary": $kendo-color-tertiary,
-    "info": $kendo-color-info,
-    "success": $kendo-color-success,
-    "warning": $kendo-color-warning,
-    "error": $kendo-color-error,
-    "dark": $kendo-color-dark,
-    "light": $kendo-color-light,
-    "inverse": $kendo-color-inverse
-) !default;
-
-
 // Typography
 
 /// Base font size across all components.
@@ -338,78 +202,9 @@ $kendo-font-weight-bold: 700 !default;
 // Letter Spacing
 $kendo-letter-spacing: null !default;
 
-
-// Generic styles
-
-// Root styles
-$kendo-body-bg: k-map-get( $theme, body-bg ) !default;
-$kendo-body-text: k-map-get( $theme, body-text ) !default;
-
-$kendo-subtle-text: k-map-get( $theme, subtle-text ) !default;
-
-$kendo-app-bg: $kendo-body-bg !default;
-$kendo-app-text: $kendo-body-text !default;
-$kendo-app-border: k-map-get( $theme, component-border ) !default;
-
-// Link
-$kendo-link-text: $kendo-color-secondary !default;
-$kendo-link-hover-text: $kendo-color-secondary-darker !default;
-
-
-// Components
-
-// Component
-/// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $kendo-component-bg !default;`.
-/// @group component
-$kendo-component-bg: k-map-get( $theme, component-bg ) !default;
-/// Text color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: $kendo-component-text !default;`.
-/// @group component
-$kendo-component-text: k-map-get( $theme, component-text ) !default;
-/// Border color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: $kendo-component-border !default;`.
-/// @group component
-$kendo-component-border: k-map-get( $theme, component-border ) !default;
-
-
-/// The background of the components' chrome area.
-$kendo-base-bg: k-map-get( $theme, base-bg ) !default;
-/// The text color of the components' chrome area.
-$kendo-base-text: k-map-get( $theme, component-text ) !default;
-/// The border of the components' chrome area.
-$kendo-base-border: rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
-/// The gradient background of the components' chrome area.
-$kendo-base-gradient: null !default;
-
-/// The background of hovered items.
-$kendo-hover-bg: k-map-get( $theme, hover-bg ) !default;
-/// The text color of hovered items.
-$kendo-hover-text: $kendo-base-text !default;
-/// The border color of hovered items.
-$kendo-hover-border: rgba( $kendo-base-border, .15 ) !default;
-/// The gradient background of hovered items.
-$kendo-hover-gradient: null !default;
-
-/// The background of selected items.
-$kendo-selected-bg: $kendo-color-secondary !default;
-/// The text color of selected items.
-$kendo-selected-text: $kendo-color-secondary-contrast !default;
-/// The border color of selected items.
-$kendo-selected-border: rgba( $kendo-base-border, .1 ) !default;
-/// The gradient background of selected items.
-$kendo-selected-gradient: null !default;
-
-$kendo-selected-hover-bg: k-try-shade( $kendo-selected-bg, .5 ) !default;
-$kendo-selected-hover-text: $kendo-selected-text !default;
-$kendo-selected-hover-border: rgba( $kendo-base-border, .1 ) !default;
-$kendo-selected-hover-gradient: null !default;
-
 $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
-
 // Disabled mixin variables
-$kendo-disabled-text: k-map-get( $theme, disabled-text ) !default;
 $kendo-disabled-filter: grayscale(.1) !default;
 $kendo-disabled-opacity: .6 !default;
 
@@ -417,30 +212,6 @@ $kendo-disabled-styling: (
     opacity: $kendo-disabled-opacity,
     filter: $kendo-disabled-filter
 ) !default;
-
-
-// Generic styles
-
-// TODO: refactor once we extract drag drop as separate module
-
-
-// Header
-$kendo-component-header-bg: $kendo-base-bg !default;
-$kendo-component-header-text: $kendo-base-text !default;
-$kendo-component-header-border: $kendo-base-border !default;
-$kendo-component-header-gradient: null !default;
-
-
-// Validator
-$kendo-invalid-bg: null !default;
-$kendo-invalid-text: $kendo-color-error !default;
-$kendo-invalid-border: $kendo-color-error !default;
-$kendo-invalid-shadow: null !default;
-
-$kendo-valid-bg: null !default;
-$kendo-valid-text: $kendo-color-success !default;
-$kendo-valid-border: $kendo-color-success !default;
-$kendo-valid-shadow: null !default;
 
 // Loading
 $kendo-loading-opacity: .3 !default;

@@ -1,0 +1,261 @@
+@use "sass:map";
+@use "@progress/kendo-theme-core/scss/color-system/_functions.import.scss" as functions;
+@use "@progress/kendo-theme-core/scss/color-system/_constants.scss" as constants;
+@use "./palettes" as *;
+@forward "./palettes";
+
+// Config
+$kendo-enable-color-system: false !default;
+
+// Colors
+$_default-colors: (
+    // Misc
+    app-surface: map.get( $kendo-palette-gray, white ),
+    on-app-surface: map.get( $kendo-palette-gray, 14 ),
+    subtle: map.get( $kendo-palette-gray, 11 ),
+    surface: map.get( $kendo-palette-gray, 1 ),
+    surface-alt: map.get( $kendo-palette-gray, white ),
+    border: map.get( $kendo-palette-gray, 9 ),
+    border-alt: map.get( $kendo-palette-gray, 14 ),
+    // Base
+    base-subtle: map.get( $kendo-palette-gray, 3 ),
+    base-subtle-hover: map.get( $kendo-palette-gray, 4 ),
+    base-subtle-active: map.get( $kendo-palette-gray, 5 ),
+    base: map.get( $kendo-palette-gray, white ),
+    base-hover: map.get( $kendo-palette-gray, 2 ),
+    base-active: map.get( $kendo-palette-gray, 3 ),
+    base-emphasis: map.get( $kendo-palette-gray, 11 ),
+    base-on-subtle: map.get( $kendo-palette-gray, 14 ),
+    on-base: map.get( $kendo-palette-gray, 14 ),
+    base-on-surface: map.get( $kendo-palette-gray, 14 ),
+    // Primary
+    primary-subtle: map.get( $kendo-palette-ocean-blue, 2 ),
+    primary-subtle-hover: map.get( $kendo-palette-ocean-blue, 3 ),
+    primary-subtle-active: map.get( $kendo-palette-ocean-blue, 4 ),
+    primary: map.get( $kendo-palette-ocean-blue, 8 ),
+    primary-hover: map.get( $kendo-palette-ocean-blue, 9 ),
+    primary-active: map.get( $kendo-palette-ocean-blue, 10 ),
+    primary-emphasis: map.get( $kendo-palette-ocean-blue, 11 ),
+    primary-on-subtle: map.get( $kendo-palette-ocean-blue, 14 ),
+    on-primary: map.get( $kendo-palette-gray, white ),
+    primary-on-surface: map.get( $kendo-palette-ocean-blue, 8 ),
+    // Secondary
+    secondary-subtle: map.get( $kendo-palette-gray, 1 ),
+    secondary-subtle-hover: map.get( $kendo-palette-gray, 2 ),
+    secondary-subtle-active: map.get( $kendo-palette-gray, 3 ),
+    secondary: map.get( $kendo-palette-gray, 8 ),
+    secondary-hover: map.get( $kendo-palette-gray, 9 ),
+    secondary-active: map.get( $kendo-palette-gray, 10 ),
+    secondary-emphasis: map.get( $kendo-palette-gray, 11 ),
+    secondary-on-subtle: map.get( $kendo-palette-gray, 14 ),
+    on-secondary: map.get( $kendo-palette-gray, white ),
+    secondary-on-surface: map.get( $kendo-palette-gray, 11 ),
+    // Tertiary
+    tertiary-subtle: map.get( $kendo-palette-azure-blue, 2 ),
+    tertiary-subtle-hover: map.get( $kendo-palette-azure-blue, 3 ),
+    tertiary-subtle-active: map.get( $kendo-palette-azure-blue, 4 ),
+    tertiary: map.get( $kendo-palette-azure-blue, 8 ),
+    tertiary-hover: map.get( $kendo-palette-azure-blue, 9 ),
+    tertiary-active: map.get( $kendo-palette-azure-blue, 10 ),
+    tertiary-emphasis: map.get( $kendo-palette-azure-blue, 11 ),
+    tertiary-on-subtle: map.get( $kendo-palette-azure-blue, 14 ),
+    on-tertiary: map.get( $kendo-palette-gray, white ),
+    tertiary-on-surface: map.get( $kendo-palette-azure-blue, 8 ),
+    // Info
+    info-subtle: map.get( $kendo-palette-cobalt-blue, 2 ),
+    info-subtle-hover: map.get( $kendo-palette-cobalt-blue, 3 ),
+    info-subtle-active: map.get( $kendo-palette-cobalt-blue, 4 ),
+    info: map.get( $kendo-palette-cobalt-blue, 8 ),
+    info-hover: map.get( $kendo-palette-cobalt-blue, 9 ),
+    info-active: map.get( $kendo-palette-cobalt-blue, 10 ),
+    info-emphasis: map.get( $kendo-palette-cobalt-blue, 11 ),
+    info-on-subtle: map.get( $kendo-palette-cobalt-blue, 14 ),
+    on-info: map.get( $kendo-palette-gray, white ),
+    info-on-surface: map.get( $kendo-palette-cobalt-blue, 9 ),
+    // Success
+    success-subtle: map.get( $kendo-palette-forest-green, 2 ),
+    success-subtle-hover: map.get( $kendo-palette-forest-green, 3 ),
+    success-subtle-active: map.get( $kendo-palette-forest-green, 4 ),
+    success: map.get( $kendo-palette-forest-green, 8 ),
+    success-hover: map.get( $kendo-palette-forest-green, 9 ),
+    success-active: map.get( $kendo-palette-forest-green, 10 ),
+    success-emphasis: map.get( $kendo-palette-forest-green, 11 ),
+    success-on-subtle: map.get( $kendo-palette-forest-green, 14 ),
+    on-success: map.get( $kendo-palette-gray, white ),
+    success-on-surface: map.get( $kendo-palette-forest-green, 11 ),
+    // Warning
+    warning-subtle: map.get( $kendo-palette-dandelion-yellow, 2 ),
+    warning-subtle-hover: map.get( $kendo-palette-dandelion-yellow, 3 ),
+    warning-subtle-active: map.get( $kendo-palette-dandelion-yellow, 4 ),
+    warning: map.get( $kendo-palette-dandelion-yellow, 8 ),
+    warning-hover: map.get( $kendo-palette-dandelion-yellow, 9 ),
+    warning-active: map.get( $kendo-palette-dandelion-yellow, 10 ),
+    warning-emphasis: map.get( $kendo-palette-gray, 12 ),
+    warning-on-subtle: map.get( $kendo-palette-gray, 14 ),
+    on-warning: map.get( $kendo-palette-gray, 14 ),
+    warning-on-surface: map.get( $kendo-palette-dandelion-yellow, 13 ),
+    // Error
+    error-subtle: map.get( $kendo-palette-crimson-red, 2 ),
+    error-subtle-hover: map.get( $kendo-palette-crimson-red, 3 ),
+    error-subtle-active: map.get( $kendo-palette-crimson-red, 4 ),
+    error: map.get( $kendo-palette-crimson-red, 8 ),
+    error-hover: map.get( $kendo-palette-crimson-red, 9 ),
+    error-active: map.get( $kendo-palette-crimson-red, 10 ),
+    error-emphasis: map.get( $kendo-palette-crimson-red, 11 ),
+    error-on-subtle: map.get( $kendo-palette-crimson-red, 14 ),
+    on-error: map.get( $kendo-palette-gray, white ),
+    error-on-surface: map.get( $kendo-palette-crimson-red, 11 ),
+    // Light
+    light-subtle: map.get( $kendo-palette-gray, 1 ),
+    light-subtle-hover: map.get( $kendo-palette-gray, 2 ),
+    light-subtle-active: map.get( $kendo-palette-gray, 3 ),
+    light: map.get( $kendo-palette-gray, 5 ),
+    light-hover: map.get( $kendo-palette-gray, 6 ),
+    light-active: map.get( $kendo-palette-gray, 7 ),
+    light-emphasis: map.get( $kendo-palette-gray, 4 ),
+    light-on-subtle: map.get( $kendo-palette-gray, 14 ),
+    on-light: map.get( $kendo-palette-gray, 14 ),
+    light-on-surface: map.get( $kendo-palette-gray, 5 ),
+    // Dark
+    dark-subtle: map.get( $kendo-palette-gray, 7 ),
+    dark-subtle-hover: map.get( $kendo-palette-gray, 8 ),
+    dark-subtle-active: map.get( $kendo-palette-gray, 9 ),
+    dark: map.get( $kendo-palette-gray, 14 ),
+    dark-hover: map.get( $kendo-palette-gray, 15 ),
+    dark-active: map.get( $kendo-palette-gray, black ),
+    dark-emphasis: map.get( $kendo-palette-gray, 10 ),
+    dark-on-subtle: map.get( $kendo-palette-gray, 15 ),
+    on-dark: map.get( $kendo-palette-gray, white ),
+    dark-on-surface: map.get( $kendo-palette-gray, 14 ),
+    // Inverse
+    inverse-subtle: map.get( $kendo-palette-gray, 7 ),
+    inverse-subtle-hover: map.get( $kendo-palette-gray, 8 ),
+    inverse-subtle-active: map.get( $kendo-palette-gray, 9 ),
+    inverse: map.get( $kendo-palette-gray, 14 ),
+    inverse-hover: map.get( $kendo-palette-gray, 15 ),
+    inverse-active: map.get( $kendo-palette-gray, black ),
+    inverse-emphasis: map.get( $kendo-palette-gray, 10 ),
+    inverse-on-subtle: map.get( $kendo-palette-gray, 15 ),
+    on-inverse: map.get( $kendo-palette-gray, white ),
+    inverse-on-surface: map.get( $kendo-palette-gray, 14 ),
+    // Series A
+    series-a: map.get( $kendo-palette-sapphire-blue, 9 ),
+    series-a-bold: map.get( $kendo-palette-sapphire-blue, 11 ),
+    series-a-bolder: map.get( $kendo-palette-sapphire-blue, 13 ),
+    series-a-subtle: map.get( $kendo-palette-sapphire-blue, 7 ),
+    series-a-subtler: map.get( $kendo-palette-sapphire-blue, 5 ),
+    // Series B
+    series-b: map.get( $kendo-palette-cardinal-red, 9 ),
+    series-b-bold: map.get( $kendo-palette-cardinal-red, 11 ),
+    series-b-bolder: map.get( $kendo-palette-cardinal-red, 13 ),
+    series-b-subtle: map.get( $kendo-palette-cardinal-red, 7 ),
+    series-b-subtler: map.get( $kendo-palette-cardinal-red, 5 ),
+    // Series C
+    series-c: map.get( $kendo-palette-cyber-yellow, 9 ),
+    series-c-bold: map.get( $kendo-palette-cyber-yellow, 11 ),
+    series-c-bolder: map.get( $kendo-palette-cyber-yellow, 13 ),
+    series-c-subtle: map.get( $kendo-palette-cyber-yellow, 7 ),
+    series-c-subtler: map.get( $kendo-palette-cyber-yellow, 5 ),
+    // Series D
+    series-d: map.get( $kendo-palette-cobalt-blue, 9 ),
+    series-d-bold: map.get( $kendo-palette-cobalt-blue, 11 ),
+    series-d-bolder: map.get( $kendo-palette-cobalt-blue, 13 ),
+    series-d-subtle: map.get( $kendo-palette-cobalt-blue, 7 ),
+    series-d-subtler: map.get( $kendo-palette-cobalt-blue, 5 ),
+    // Series Е
+    series-e: map.get( $kendo-palette-iris-purple, 9 ),
+    series-e-bold: map.get( $kendo-palette-iris-purple, 11 ),
+    series-e-bolder: map.get( $kendo-palette-iris-purple, 13 ),
+    series-e-subtle: map.get( $kendo-palette-iris-purple, 7 ),
+    series-e-subtler: map.get( $kendo-palette-iris-purple, 5 ),
+    // Series F
+    series-f: map.get( $kendo-palette-lime-green, 9 ),
+    series-f-bold: map.get( $kendo-palette-lime-green, 11 ),
+    series-f-bolder: map.get( $kendo-palette-lime-green, 13 ),
+    series-f-subtle: map.get( $kendo-palette-lime-green, 7 ),
+    series-f-subtler: map.get( $kendo-palette-lime-green, 5 ),
+) !default;
+
+/// The global default Colors map.
+/// @group color-system
+$kendo-colors: $_default-colors !default;
+
+// Legacy
+
+// Root styles
+$kendo-body-bg: constants.$kendo-color-white !default;
+$kendo-body-text: functions.k-get-theme-color-var(neutral-160) !default;
+
+// Component styles
+$kendo-component-bg: $kendo-body-bg !default;
+$kendo-component-text: $kendo-body-text !default;
+$kendo-component-border: functions.k-get-theme-color-var(neutral-30) !default;
+
+// States styles
+$kendo-hover-bg: functions.k-get-theme-color-var(neutral-20) !default;
+$kendo-hover-text: functions.k-get-theme-color-var(neutral-190) !default;
+$kendo-hover-border: functions.k-get-theme-color-var(neutral-20) !default;
+
+$kendo-selected-bg: functions.k-get-theme-color-var(neutral-30) !default;
+$kendo-selected-text: functions.k-get-theme-color-var(neutral-160) !default;
+$kendo-selected-border: functions.k-get-theme-color-var(neutral-130) !default;
+
+$kendo-selected-hover-bg: functions.k-get-theme-color-var(neutral-40) !default;
+$kendo-selected-hover-text: functions.k-get-theme-color-var(neutral-190) !default;
+$kendo-selected-hover-border: functions.k-get-theme-color-var(neutral-130) !default;
+
+$kendo-focus-outline: functions.k-get-theme-color-var(neutral-130) !default;
+
+$kendo-subtle-text: functions.k-get-theme-color-var(neutral-130) !default;
+
+// Link
+$kendo-link-text: functions.k-get-theme-color-var(primary-100) !default;
+$kendo-link-hover-text: functions.k-get-theme-color-var(primary-120) !default;
+
+// Validator
+$kendo-invalid-bg: initial !default;
+$kendo-invalid-text: functions.k-get-theme-color-var(error-190) !default;
+$kendo-invalid-border: functions.k-get-theme-color-var(error-190) !default;
+$kendo-invalid-shadow: null !default;
+
+$kendo-valid-bg: initial !default;
+$kendo-valid-text: k-get-theme-color-var( success-190 ) !default;
+$kendo-valid-border: k-get-theme-color-var( success-190 ) !default;
+$kendo-valid-shadow: null !default;
+
+// Disabled Styling
+$kendo-disabled-bg: functions.k-get-theme-color-var(neutral-20) !default;
+$kendo-disabled-text: functions.k-get-theme-color-var(neutral-90) !default;
+$kendo-disabled-border: transparent !default;
+
+// Loading
+$kendo-loading-bg: $kendo-component-bg !default;
+$kendo-loading-text: currentColor !default;
+
+$kendo-theme-colors: (
+    primary: (
+        text: functions.k-get-theme-color-var(primary-130),
+        bg: functions.k-get-theme-color-var(primary-20),
+        border: functions.k-get-theme-color-var(primary-20),
+    ),
+    info: (
+        text: functions.k-get-theme-color-var(info-190),
+        bg: functions.k-get-theme-color-var(info-20),
+        border: functions.k-get-theme-color-var(info-20),
+    ),
+    success: (
+        text: functions.k-get-theme-color-var(success-190),
+        bg: functions.k-get-theme-color-var(success-20),
+        border: functions.k-get-theme-color-var(success-20),
+    ),
+    warning: (
+        text: functions.k-get-theme-color-var(neutral-160),
+        bg: functions.k-get-theme-color-var(warning-20),
+        border: functions.k-get-theme-color-var(warning-20),
+    ),
+    error: (
+        text: functions.k-get-theme-color-var(error-190),
+        bg: functions.k-get-theme-color-var(error-20),
+        border: functions.k-get-theme-color-var(error-20),
+    ),
+) !default;

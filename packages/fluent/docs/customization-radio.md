@@ -99,7 +99,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -119,7 +119,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-hover-text</td>
     <td></td>
-    <td><code>k-get-theme-color( neutral, 130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color( neutral, 130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-checked-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -159,7 +159,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-checked-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -179,7 +179,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-hover-checked-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-hover-checked-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -219,7 +219,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-focus-outline</td>
     <td></td>
-    <td><code>1px solid k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -249,7 +249,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-disabled-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -259,7 +259,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-disabled-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -439,7 +439,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-radio-ripple-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>

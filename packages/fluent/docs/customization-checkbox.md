@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-160 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border-alt ), k-get-theme-color-var( neutral-160 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-hover-text</td>
     <td></td>
-    <td><code>k-get-theme-color( neutral, 130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color( neutral, 130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-checked-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-checked-text</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-hover-checked-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-hover-checked-text</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-focus-outline</td>
     <td></td>
-    <td><code>1px solid k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>1px solid if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-indeterminate-text</td>
     <td></td>
-    <td><code>k-get-theme-color( primary, 100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color( primary, 100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-indeterminate-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-text</td>
     <td></td>
-    <td><code>k-get-theme-color( primary, 110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color( primary, 110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-hover-indeterminate-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-checked-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
     <td></td>
-    <td><code>$kendo-color-white</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-checked-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, transparent, k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-text</td>
     <td></td>
-    <td><code>k-get-theme-color( neutral, 60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color( neutral, 60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-disabled-indeterminate-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-60 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .28 ), k-get-theme-color-var( neutral-60 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-ripple-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>

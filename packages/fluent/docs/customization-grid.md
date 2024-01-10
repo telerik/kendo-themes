@@ -500,7 +500,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-header-icon-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -810,7 +810,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sort-indicator-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -820,7 +820,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sort-indicator-order-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -830,7 +830,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sorted-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-10 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( surface ), k-get-theme-color-var( neutral-10 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -930,7 +930,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-group-indicator-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( border ), k-get-theme-color-var( neutral-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -940,7 +940,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-group-indicator-icon-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( subtle ), k-get-theme-color-var( neutral-130 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -970,7 +970,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-group-drop-hint-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1010,7 +1010,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sticky-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( border, true ), .8 ), k-get-theme-color-var( neutral-90 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1110,7 +1110,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-sticky-selected-hover-bg</td>
     <td></td>
-    <td><code>$kendo-grid-selected-hover-bg</code></td>
+    <td><code>if($kendo-enable-color-system, $kendo-grid-sticky-selected-bg, $kendo-grid-selected-hover-bg)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1540,7 +1540,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-row-resizer-hover-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -1550,7 +1550,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-grid-row-resizer-active-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>

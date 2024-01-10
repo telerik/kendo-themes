@@ -78,7 +78,7 @@ $kendo-window-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-window-text: var( --kendo-component-text, initial ) !default;
 /// The border color of the Window.
 /// @group window
-$kendo-window-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-window-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The box shadow of the Window.
 /// @group window
 $kendo-window-shadow: var( --kendo-box-shadow-depth-8, none ) !default;
@@ -91,10 +91,10 @@ $kendo-window-focus-shadow: var( --kendo-box-shadow-depth-9, none ) !default;
 $kendo-window-titlebar-bg: var( --kendo-component-bg, initial ) !default; // $kendo-component-header-bg
 /// The text color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-text: k-get-theme-color-var( primary-100 ) !default; // $kendo-component-header-text
+$kendo-window-titlebar-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default; // $kendo-component-header-text
 /// The border color of the Window titlebar.
 /// @group window
-$kendo-window-titlebar-border: k-get-theme-color-var( primary-100 ) !default;
+$kendo-window-titlebar-border: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The map of the width of the different Window sizes.
 /// @group window
@@ -112,15 +112,15 @@ $kendo-window-brand-colors: (
 
 // Matrix with window theme colors in the order: bg, color, border
 $_tc-window-matrix: (
-    (normal: (100, $kendo-color-white, 100)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (100, $kendo-color-white, 100))),
 ) !default;
 
 $_tc-window-dark-matrix: (
-    (normal: (160, $kendo-color-white, 160)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (160, $kendo-color-white, 160))),
 ) !default;
 
 $_tc-window-light-matrix: (
-    (normal: (50, 160, 50)),
+    (normal: if($kendo-enable-color-system, (color, on-color, color), (50, 160, 50))),
 ) !default;
 
 /// The theme colors map for the Window.
@@ -139,13 +139,13 @@ $kendo-window-theme-colors: () !default;
 @each $ui-states in $_tc-window-dark-matrix {
     $kendo-window-theme-colors: map.deep-merge(
         $kendo-window-theme-colors,
-        k-generate-theme-variation( dark, neutral, $ui-states )
+        k-generate-theme-variation( dark, if($kendo-enable-color-system, dark, neutral), $ui-states )
     );
 }
 
 @each $ui-states in $_tc-window-light-matrix {
     $kendo-window-theme-colors: map.deep-merge(
         $kendo-window-theme-colors,
-        k-generate-theme-variation( light, neutral, $ui-states )
+        k-generate-theme-variation( light, if($kendo-enable-color-system, light, neutral), $ui-states )
     );
 }

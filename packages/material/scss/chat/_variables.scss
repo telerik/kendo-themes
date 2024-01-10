@@ -35,7 +35,7 @@ $kendo-chat-avatar-spacing: $kendo-chat-item-spacing-x !default;
 $kendo-chat-toolbar-padding-x: $kendo-toolbar-md-padding-x !default;
 $kendo-chat-toolbar-padding-y: $kendo-toolbar-md-padding-y !default;
 $kendo-chat-toolbar-spacing: $kendo-toolbar-md-spacing !default;
-$kendo-chat-toolbar-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
+$kendo-chat-toolbar-bg: if($kendo-enable-color-system, k-color( surface ), k-try-shade( $kendo-button-bg, .5 )) !default;
 $kendo-chat-toolbar-text: $kendo-toolbar-text !default;
 $kendo-chat-toolbar-border: inherit !default;
 
@@ -57,7 +57,7 @@ $kendo-chat-bubble-hover-shadow: $box-shadow-depth-2 !default;
 $kendo-chat-bubble-selected-shadow: $box-shadow-depth-3 !default;
 
 $kendo-chat-alt-bubble-bg: $kendo-color-primary !default;
-$kendo-chat-alt-bubble-text: k-contrast-color( $kendo-chat-alt-bubble-bg ) !default;
+$kendo-chat-alt-bubble-text: if($kendo-enable-color-system, k-color( on-primary ), k-contrast-color( $kendo-chat-alt-bubble-bg )) !default;
 $kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
 $kendo-chat-alt-bubble-shadow: $box-shadow-depth-1 !default;
 $kendo-chat-alt-bubble-hover-shadow: $box-shadow-depth-2 !default;

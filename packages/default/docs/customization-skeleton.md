@@ -67,26 +67,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border radius of the circular Skeleton.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-skeleton-item-bg</td>
-    <td>Color</td>
-    <td><code>rgba( $kendo-color-inverse, .2 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(66, 66, 66, 0.2)"></span><code>rgba(66, 66, 66, 0.2)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton item.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-skeleton-wave-bg</td>
-    <td>Color</td>
-    <td><code>rgba( black, .04 )</code></td>
-    <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span><code>rgba(0, 0, 0, 0.04)</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of the Skeleton wave animation.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

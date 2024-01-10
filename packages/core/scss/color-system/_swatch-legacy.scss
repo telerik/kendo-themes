@@ -1,0 +1,77 @@
+$kendo-is-dark-theme: false !default;
+
+// Root styles
+$kendo-body-bg: null !default;
+$kendo-body-text: null !default;
+
+// Component styles
+$kendo-component-bg: null !default;
+$kendo-component-text: null !default;
+$kendo-component-border: null !default;
+
+// States styles
+$kendo-hover-bg: null !default;
+$kendo-hover-text: null !default;
+$kendo-hover-border: null !default;
+
+$kendo-selected-bg: null !default;
+$kendo-selected-text: null !default;
+$kendo-selected-border: null !default;
+
+$kendo-selected-hover-bg: null !default;
+$kendo-selected-hover-text: null !default;
+$kendo-selected-hover-border: null !default;
+
+$kendo-focus-outline: null !default;
+
+$kendo-subtle-text: null !default;
+
+// Link
+$kendo-link-text: null !default;
+$kendo-link-hover-text: null !default;
+
+// Validator
+$kendo-invalid-bg: null !default;
+$kendo-invalid-text: null !default;
+$kendo-invalid-border: null !default;
+$kendo-invalid-shadow: null !default;
+
+// Disabled Styling
+$kendo-disabled-bg: null !default;
+$kendo-disabled-text: null !default;
+$kendo-disabled-border: null !default;
+
+// Loading
+$kendo-loading-bg: null !default;
+$kendo-loading-text: null !default;
+
+$kendo-palettes: () !default;
+$kendo-theme-colors: () !default;
+
+@mixin color-system-styles() {
+    :root {
+        @include k-css-vars($kendo-palettes);
+        @include k-css-vars($kendo-theme-colors);
+
+        // Text colors
+        @each $theme-color, $color-props in $kendo-theme-colors {
+            $_color: k-map-get($color-props, text);
+
+            .k-text-#{$theme-color},
+            .k-color-#{$theme-color} {
+                color: var(--kendo-text-#{$theme-color}, #{$_color});
+            }
+            .\!k-text-#{$theme-color},
+            .\!k-color-#{$theme-color} {
+                color: var(--kendo-text-#{$theme-color}, #{$_color}) !important; // stylelint-disable-line declaration-no-important
+            }
+
+            .k-bg-#{$theme-color} {
+                background-color: var(--kendo-bg-#{$theme-color}, #{$_color});
+            }
+            .\!k-bg-#{$theme-color} {
+                background-color: var(--kendo-bg-#{$theme-color}, #{$_color}) !important; // stylelint-disable-line declaration-no-important
+            }
+        }
+    }
+}

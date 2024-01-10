@@ -125,7 +125,7 @@ $kendo-list-group-item-font-weight: var( --kendo-font-weight-bold, normal ) !def
 
 /// The text color of the List item icon
 /// @group list
-$kendo-list-item-icon-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-list-item-icon-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 
 /// The map with the sizes of the List.
 /// @group list
@@ -203,10 +203,10 @@ $kendo-list-border: var( --kendo-component-border, inherit ) !default;
 
 /// The background color of the List header.
 /// @group list
-$kendo-list-header-bg: $kendo-color-white !default;
+$kendo-list-header-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The text color of the List header.
 /// @group list
-$kendo-list-header-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-list-header-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The border color of the List header.
 /// @group list
 $kendo-list-header-border: inherit !default;
@@ -217,55 +217,55 @@ $kendo-list-header-shadow: $kendo-box-shadow-depth-3 !default;
 
 /// The background color of the List items.
 /// @group list
-$kendo-list-item-bg: $kendo-color-white !default;
+$kendo-list-item-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The text color of the List items.
 /// @group list
-$kendo-list-item-text: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-list-item-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 
 /// The background color of the hovered List items.
 /// @group list
-$kendo-list-item-hover-bg: k-get-theme-color-var( neutral-20 ) !default;
+$kendo-list-item-hover-bg: if($kendo-enable-color-system, k-color( base-hover ), k-get-theme-color-var( neutral-20 )) !default;
 /// The text color of the hovered List items.
 /// @group list
-$kendo-list-item-hover-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-list-item-hover-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 
 /// The background color of the focused List items.
 /// @group list
-$kendo-list-item-focus-bg: $kendo-color-white !default;
+$kendo-list-item-focus-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The text color of the focused List items.
 /// @group list
-$kendo-list-item-focus-text: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-list-item-focus-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 /// The box shadow of the focused List items.
 /// @group list
-$kendo-list-item-focus-shadow: inset 0 0 0 1px k-get-theme-color-var( neutral-130 ) !default;
+$kendo-list-item-focus-shadow: inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130)) !default;
 
 /// The background color of the selected List items.
 /// @group list
-$kendo-list-item-selected-bg: k-get-theme-color-var( neutral-40 ) !default;
+$kendo-list-item-selected-bg: if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-40 )) !default;
 /// The text color of the selected List items.
 /// @group list
-$kendo-list-item-selected-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-list-item-selected-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 
 /// The background color of the selected hovered List items.
 /// @group list
-$kendo-list-item-selected-hover-bg: k-get-theme-color-var( neutral-50 ) !default;
+$kendo-list-item-selected-hover-bg: if($kendo-enable-color-system, k-color( base-active ), k-get-theme-color-var( neutral-50 )) !default;
 /// The text color of the selected hovered List items.
 /// @group list
-$kendo-list-item-selected-hover-text: k-get-theme-color-var( neutral-190 ) !default;
+$kendo-list-item-selected-hover-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-190 )) !default;
 
 /// The background color of the disabled List items.
 /// @group list
-$kendo-list-item-disabled-bg: $kendo-color-white !default;
+$kendo-list-item-disabled-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The text color of the disabled List items.
 /// @group list
-$kendo-list-item-disabled-text: k-get-theme-color-var( neutral-90 ) !default;
+$kendo-list-item-disabled-text: if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 )) !default;
 
 /// The background color of the List group items.
 /// @group list
-$kendo-list-group-item-bg: $kendo-color-white !default;
+$kendo-list-group-item-bg: if($kendo-enable-color-system, k-color( app-surface ), $kendo-color-white) !default;
 /// The text color of the List group items.
 /// @group list
-$kendo-list-group-item-text: k-get-theme-color-var( primary-100 ) !default;
+$kendo-list-group-item-text: if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 )) !default;
 /// The border color of the List group items.
 /// @group list
 $kendo-list-group-item-border: inherit !default;
@@ -275,7 +275,7 @@ $kendo-list-group-item-shadow: none !default;
 
 /// The text color of the 'No Data' text.
 /// @group list
-$kendo-list-no-data-text: k-get-theme-color-var( neutral-160 ) !default;
+$kendo-list-no-data-text: if($kendo-enable-color-system, k-color( on-app-surface ), k-get-theme-color-var( neutral-160 )) !default;
 
 /// The color of the 'Option Label' text.
 /// @group list

@@ -10,7 +10,7 @@
 
         // Disabled state
         .k-radio:disabled + & {
-            color: if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text );
+            color: if($kendo-enable-color-system, k-color( subtle ), if( $kendo-is-dark-theme, $light-secondary-text, $dark-secondary-text ));
             opacity: 1;
             filter: none;
         }

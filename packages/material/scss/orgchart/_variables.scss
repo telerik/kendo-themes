@@ -17,12 +17,12 @@ $kendo-orgchart-node-group-padding-y: $kendo-orgchart-spacer !default;
 $kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-y !default;
 $kendo-orgchart-node-group-border-width: 1px !default;
 $kendo-orgchart-node-group-border-radius: $kendo-border-radius-md !default;
-$kendo-orgchart-node-group-bg: if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light) !default;
+$kendo-orgchart-node-group-bg: if($kendo-enable-color-system, k-color( surface ), if( $kendo-is-dark-theme, $kendo-color-dark, $kendo-color-light)) !default;
 $kendo-orgchart-node-group-text: $kendo-base-text !default;
 $kendo-orgchart-node-group-border: $kendo-base-border !default;
 
 $kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
-$kendo-orgchart-node-group-focus-shadow: 0 2px 4px -1px rgba( $elevation, .2 ), 0 4px 5px 0 rgba( $elevation, .14 ), 0 1px 10px 0 rgba( $elevation, .12 ) !default;
+$kendo-orgchart-node-group-focus-shadow: 0 2px 4px -1px rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .2 ), 0 4px 5px 0 rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .14 ), 0 1px 10px 0 rgba( if($kendo-enable-color-system, k-color( on-light, true ), $elevation), .12 ) !default;
 
 $kendo-orgchart-node-group-title-font-size: $kendo-font-size-xl !default;
 $kendo-orgchart-node-group-title-margin-bottom: k-math-div( $kendo-orgchart-spacer, 4 ) !default;

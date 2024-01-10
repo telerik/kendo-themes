@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-track-bg</td>
     <td>Color</td>
-    <td><code>rgba( if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black ), .38 )</code></td>
+    <td><code>rgba( if($kendo-enable-color-system, k-color( on-app-surface, true ), if( $kendo-is-dark-theme, $kendo-color-white, $kendo-color-black )), .38 )</code></td>
     <td><span class="color-preview" style="background-color: rgba(0, 0, 0, 0.38)"></span><code>rgba(0, 0, 0, 0.38)</code></td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
     <td>Color</td>
-    <td><code>if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( app-surface ), if( $kendo-is-dark-theme, $kendo-color-black, $kendo-color-white ))</code></td>
     <td><span class="color-preview" style="background-color: #ffffff"></span><code>#ffffff</code></td>
 </tr>
 <tr>
@@ -344,7 +344,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-switch-on-track-bg</td>
     <td>Color</td>
-    <td><code>rgba( $kendo-color-primary, .54 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( primary, true ), .54 ), rgba( $kendo-color-primary, .54 ))</code></td>
     <td><span class="color-preview" style="background-color: rgba(63, 81, 181, 0.54)"></span><code>rgba(63, 81, 181, 0.54)</code></td>
 </tr>
 <tr>

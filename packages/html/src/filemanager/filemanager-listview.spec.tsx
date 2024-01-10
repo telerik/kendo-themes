@@ -1,0 +1,42 @@
+import { KendoListViewProps, ListView } from '../listview';
+import { classNames } from '../misc';
+
+export const FILEMANAGERLISTVIEW_CLASSNAME = `k-filemanager-listview`;
+
+const states = [];
+
+const options = {};
+
+const defaultProps = {};
+
+export const FileManagerListView = (
+    props:
+        KendoListViewProps &
+        React.HTMLAttributes<HTMLDivElement>
+) => {
+    const {
+        children,
+        ...other
+    } = props;
+
+    return (
+        <ListView
+            className={classNames(
+                props.className,
+                FILEMANAGERLISTVIEW_CLASSNAME,
+                "k-selectable",
+            )}
+            flexWrap="wrap"
+            {...other}
+        >
+            {children}
+        </ListView>
+    );
+};
+
+FileManagerListView.states = states;
+FileManagerListView.options = options;
+FileManagerListView.className = FILEMANAGERLISTVIEW_CLASSNAME;
+FileManagerListView.defaultProps = defaultProps;
+
+export default FileManagerListView;

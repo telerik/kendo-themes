@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-scrollbar-color</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-90 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .46 ), k-get-theme-color-var( neutral-90 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-scrollbar-bg</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-40 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( base-subtle ), k-get-theme-color-var( neutral-40 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-scrollbar-hover-color</td>
     <td></td>
-    <td><code>k-get-theme-color-var( neutral-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, rgba( k-color( on-app-surface, true ), .6 ), k-get-theme-color-var( neutral-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-ripple-border</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-icon-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-100 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary ), k-get-theme-color-var( primary-100 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-hover-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-hover-icon-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-110 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-hover ), k-get-theme-color-var( primary-110 ))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-focus-shadow</td>
     <td></td>
-    <td><code>inset 0 0 0 1px k-get-theme-color-var( neutral-130 )</code></td>
+    <td><code>inset 0 0 0 1px if($kendo-enable-color-system, k-color( base-emphasis ), k-get-theme-color-var( neutral-130))</code></td>
     <td></td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-selected-text</td>
     <td></td>
-    <td><code>$kendo-color-black</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( on-app-surface ), $kendo-color-black)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-drawer-item-selected-icon-text</td>
     <td></td>
-    <td><code>k-get-theme-color-var( primary-120 )</code></td>
+    <td><code>if($kendo-enable-color-system, k-color( primary-active ), k-get-theme-color-var( primary-120 ))</code></td>
     <td></td>
 </tr>
 <tr>
