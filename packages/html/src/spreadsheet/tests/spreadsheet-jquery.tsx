@@ -5,6 +5,7 @@ import { DropdownList } from '../../dropdownlist';
 import { Icon } from '../../icon';
 import { MenuButton } from '../../menu-button';
 import { Toolbar, ToolbarSeparator } from '../../toolbar';
+import { TooltipNormal } from "../../tooltip";
 
 
 const style = `
@@ -110,7 +111,7 @@ export default () =>(
                             <span className="k-syntax-ref k-series-a">C3:C11</span>
                             <span className="k-syntax-punc">)</span>
                         </div>
-                        <div className="k-widget k-tooltip" style={{ position: "absolute", display: "none" }}>A1</div>
+                        <TooltipNormal content="A1" style={{ position: "absolute", display: "none" }} />
                         <div className="k-group-header" style={{ display: "none" }}></div>
                         <div className="k-list-scroller"></div>
                     </div>
@@ -550,7 +551,7 @@ export default () =>(
                         </table>
                     </div>
                     <div className="k-spreadsheet-cell-editor k-spreadsheet-formula-input" style={{ whiteSpace: "pre" }}>Invoice #52 - 06/23/2015</div>
-                    <div className="k-widget k-tooltip" style={{ position: "absolute", display: "none" }}>A1</div>
+                    <TooltipNormal content="A1" style={{ position: "absolute", display: "none" }} />
                     <div className="k-group-header" style={{ display: "none" }}></div>
                     <div className="k-list-scroller"></div>
                 </div>
