@@ -213,16 +213,21 @@
         margin: 0;
         border-style: solid;
         border-color: inherit;
-        height: auto;
-        align-self: stretch;
+        border-width: 0 0 0 1px;
+        height: $kendo-icon-size;
+        align-self: center;
 
         &-horizontal {
+            height: auto;
             margin-inline: $kendo-input-md-padding-y;
+            align-self: stretch;
             border-width: 1px 0 0;
         }
 
         &-vertical {
+            height: auto;
             margin-block: $kendo-input-md-padding-y;
+            align-self: stretch;
             border-width: 0 0 0 1px;
         }
     }
