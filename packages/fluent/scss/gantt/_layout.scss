@@ -294,6 +294,14 @@
             height: 100%;
             border-width: 0;
             display: flex;
+
+            *,
+            *::before,
+            *::after,
+            &::before,
+            &::after {
+                box-sizing: border-box;
+            }
         }
         .k-grid-header {}
         .k-grid-content {
