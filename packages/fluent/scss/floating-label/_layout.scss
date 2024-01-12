@@ -81,7 +81,7 @@
             &:focus-within > .k-label,
             &.k-focus > .k-label {
                 left: auto;
-                right: var( --kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x} );
+                right: var( --kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x} );
             }
         }
 
