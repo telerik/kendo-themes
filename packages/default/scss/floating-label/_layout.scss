@@ -24,8 +24,8 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             position: absolute;
-            top: $kendo-floating-label-offset-y;
-            left: $kendo-floating-label-offset-x;
+            top: var(--kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y});
+            left: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
             overflow: hidden;
             cursor: text;
             transform-origin: left center;
@@ -39,8 +39,8 @@
 
         &.k-empty {
             > .k-label {
-                top: $kendo-floating-label-offset-y;
-                left: $kendo-floating-label-offset-x;
+                top: var(--kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y});
+                left: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
                 transform: scale( $kendo-floating-label-scale );
                 pointer-events: none;
             }
@@ -48,13 +48,13 @@
 
         > .k-label,
         &.k-focus > .k-label {
-            top: $kendo-floating-label-focus-offset-y;
-            left: $kendo-floating-label-focus-offset-x;
+            top: var(--kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y});
+            left: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
             transform: scale( $kendo-floating-label-focus-scale );
         }
         &:focus-within > .k-label {
-            top: $kendo-floating-label-focus-offset-y;
-            left: $kendo-floating-label-focus-offset-x;
+            top: var(--kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y});
+            left: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
             transform: scale( $kendo-floating-label-focus-scale );
         }
 
@@ -74,18 +74,18 @@
             &.k-empty {
                 > .k-label {
                     left: auto;
-                    right: $kendo-floating-label-offset-x;
+                    right: var(--kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x});
                 }
             }
 
             > .k-label,
             &.k-focus > .k-label {
                 left: auto;
-                right: $kendo-floating-label-focus-offset-x;
+                right: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
             }
             &:focus-within > .k-label {
                 left: auto;
-                right: $kendo-floating-label-focus-offset-x;
+                right: var(--kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x});
             }
         }
     }
