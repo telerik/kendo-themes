@@ -26,7 +26,7 @@ export default () =>(
                         <Button>Cancel</Button>
                     </>
                 }>
-                    <Textarea className="k-editor-textarea"></Textarea>
+                    <Textarea flow="horizontal" resize="none" className="k-editor-textarea"></Textarea>
                 </WindowNormal>
             </section>
         </div>
