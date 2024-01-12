@@ -29,13 +29,15 @@ const defaultProps = {
     rounded: Input.defaultProps.rounded,
     fillMode: Input.defaultProps.fillMode,
     flow: "vertical",
-    affixesOrientation: "horizontal"
+    affixesOrientation: "horizontal",
+    resize: "both"
 };
 
 export type KendoTextareaOptions = {
     size?: (typeof options.size)[number] | null;
     rounded?: (typeof options.rounded)[number] | null;
     fillMode?: (typeof options.fillMode)[number] | null;
+    resize: "x" | "y" | "both" | "none";
 };
 
 export type KendoTextareaProps = KendoTextareaOptions & {
@@ -72,6 +74,7 @@ export const Textarea = (
         disabled,
         flow = defaultProps.flow,
         affixesOrientation,
+        resize = defaultProps.resize,
         ...other
     } = props;
 
@@ -114,6 +117,13 @@ export const Textarea = (
             <InputInnerTextarea
                 className={classNames(
                     "!k-overflow-auto",
+                    {
+                        ["!k-flex-none"]: flow === "vertical",
+                        ["k-resize-x"]: resize === "x",
+                        ["k-resize-y"]: resize === "y",
+                        ["k-resize"]: resize === "both",
+                        ["k-resize-none"]: resize === "none"
+                    }
                 )}
                 value={value}
                 placeholder={placeholder}
