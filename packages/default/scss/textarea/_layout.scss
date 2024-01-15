@@ -1,7 +1,9 @@
 @mixin kendo-textarea--layout-base() {
 
     // Textarea
-    .k-textarea {}
+    .k-textarea:has(.k-input-inner[style*="width"]) {
+        width: max-content;
+    }
 
 }
 
