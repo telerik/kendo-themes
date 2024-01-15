@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0-dev.11](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.10...v7.1.0-dev.11) (2024-01-15)
+
+
+### Bug Fixes
+
+* **floating-label:** correct rtl focused label position ([0e60745](https://github.com/telerik/kendo-themes/commit/0e60745dd661ee071fe71a275423522f34b40a5c))
+
+
+
+
+
 # [7.1.0-dev.10](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.9...v7.1.0-dev.10) (2024-01-11)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
