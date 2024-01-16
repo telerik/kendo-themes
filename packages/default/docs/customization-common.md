@@ -288,16 +288,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-transition</td>
-    <td>List</td>
-    <td><code>color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out</code></td>
-    <td><code>color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out</code></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transition used across all components.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-disabled-filter</td>
     <td>String</td>
     <td><code>grayscale(.1)</code></td>
@@ -485,6 +475,66 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-transition</td>
+    <td>List</td>
+    <td><code>k-motion(short-4, ease-in-out, color, background-color, border-color, box-shadow)</code></td>
+    <td><code>color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), background-color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), border-color var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), box-shadow var(--kendo-global-duration, var(--kendo-motion-short-4, 0.2s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1))</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Transition used across all components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-transition-duration</td>
+    <td>Number</td>
+    <td><code>.3s</code></td>
+    <td><code>0.3s</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-scrollview-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-transition-timing-function</td>
+    <td>String</td>
+    <td><code>ease-in-out</code></td>
+    <td><code>ease-in-out</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-scrollview-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-property</td>
+    <td>String</td>
+    <td><code>height</code></td>
+    <td><code>height</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-duration</td>
+    <td>Number</td>
+    <td><code>300ms</code></td>
+    <td><code>300ms</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-timing-function</td>
+    <td>List</td>
+    <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
+    <td><code>cubic-bezier(0.4, 0, 0.2, 1) 0ms</code></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
     </td>
 </tr>
 </tbody>

@@ -140,7 +140,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-transition</td>
     <td></td>
-    <td><code>.2s ease-out</code></td>
+    <td><code>k-motion(short-4, ease-out, transform, color, top, inset-inline-start)</code></td>
     <td></td>
 </tr>
 <tr>

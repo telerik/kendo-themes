@@ -130,8 +130,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-floating-label-transition</td>
     <td>List</td>
-    <td><code>.15s cubic-bezier( .4, 0, .2, 1 )</code></td>
-    <td><code>0.15s cubic-bezier(0.4, 0, 0.2, 1)</code></td>
+    <td><code>k-motion(short-3, ease-in-out, transform, color, top, inset-inline-start)</code></td>
+    <td><code>transform var(--kendo-global-duration, var(--kendo-motion-short-3, 0.15s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), color var(--kendo-global-duration, var(--kendo-motion-short-3, 0.15s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), top var(--kendo-global-duration, var(--kendo-motion-short-3, 0.15s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1)), inset-inline-start var(--kendo-global-duration, var(--kendo-motion-short-3, 0.15s)) var(--kendo-motion-ease-in-out, cubic-bezier(0.42, 0, 0.58, 1))</code></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the Floating Label.</div></div>

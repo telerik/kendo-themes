@@ -440,7 +440,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-speed</td>
     <td></td>
-    <td><code>.3s</code></td>
+    <td><code>var(--kendo-motion-medium-2, .3s)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -450,7 +450,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td></td>
-    <td><code>ease-out</code></td>
+    <td><code>var(--kendo-motion-ease-out, ease-out)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -460,7 +460,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-slider-thumb-transition-speed</td>
     <td></td>
-    <td><code>.4s</code></td>
+    <td><code>var(--kendo-motion-medium-4, .4s)</code></td>
     <td></td>
 </tr>
 <tr>

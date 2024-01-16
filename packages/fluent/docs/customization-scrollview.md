@@ -298,23 +298,13 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-transition-duration</td>
+    <td>$kendo-scrollview-transition</td>
     <td></td>
-    <td><code>.3s</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the ScrollView transition.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-transition-timing-function</td>
-    <td></td>
-    <td><code>ease-in-out</code></td>
+    <td><code>k-motion( medium-2, ease-in-out, all )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the ScrollView transition.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the ScrollView.</div></div>
     </td>
 </tr>
 </tbody>

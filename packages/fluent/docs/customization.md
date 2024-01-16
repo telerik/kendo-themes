@@ -224,6 +224,56 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-scrollview-transition-duration</td>
+    <td></td>
+    <td><code>.3s</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-scrollview-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-transition-timing-function</td>
+    <td></td>
+    <td><code>ease-in-out</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-scrollview-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-property</td>
+    <td></td>
+    <td><code>none</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-duration</td>
+    <td></td>
+    <td><code>300ms</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-timing-function</td>
+    <td></td>
+    <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tooltip-brand-colors</td>
     <td></td>
     <td><code>(
@@ -11049,7 +11099,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-floating-label-transition</td>
     <td></td>
-    <td><code>.2s ease-out</code></td>
+    <td><code>k-motion(short-4, ease-out, transform, color, top, inset-inline-start)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24087,23 +24137,13 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-scrollview-transition-duration</td>
+    <td>$kendo-scrollview-transition</td>
     <td></td>
-    <td><code>.3s</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the ScrollView transition.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-scrollview-transition-timing-function</td>
-    <td></td>
-    <td><code>ease-in-out</code></td>
+    <td><code>k-motion( medium-2, ease-in-out, all )</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing function of the ScrollView transition.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the ScrollView.</div></div>
     </td>
 </tr>
 </tbody>
@@ -24855,7 +24895,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-transition-speed</td>
     <td></td>
-    <td><code>.3s</code></td>
+    <td><code>var(--kendo-motion-medium-2, .3s)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24865,7 +24905,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-transition-function</td>
     <td></td>
-    <td><code>ease-out</code></td>
+    <td><code>var(--kendo-motion-ease-out, ease-out)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -24875,7 +24915,7 @@ The following table lists the available variables for customizing the Fluent the
 <tr>
     <td>$kendo-slider-thumb-transition-speed</td>
     <td></td>
-    <td><code>.4s</code></td>
+    <td><code>var(--kendo-motion-medium-4, .4s)</code></td>
     <td></td>
 </tr>
 <tr>
@@ -26837,33 +26877,13 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-stepper-content-transition-property</td>
+    <td>$kendo-stepper-content-transition</td>
     <td></td>
-    <td><code>none</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The property name of the stepper transition.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-content-transition-duration</td>
-    <td></td>
-    <td><code>300ms</code></td>
+    <td><code>k-motion(medium-2, ease-in-out, none)</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the stepper transition.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-content-transition-timing-function</td>
-    <td></td>
-    <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing funtion of the stepper transition.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the stepper content.</div></div>
     </td>
 </tr>
 </tbody>

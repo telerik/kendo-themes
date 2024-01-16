@@ -598,33 +598,13 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-stepper-content-transition-property</td>
+    <td>$kendo-stepper-content-transition</td>
     <td></td>
-    <td><code>none</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The property name of the stepper transition.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-content-transition-duration</td>
-    <td></td>
-    <td><code>300ms</code></td>
+    <td><code>k-motion(medium-2, ease-in-out, none)</code></td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The duration of the stepper transition.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-stepper-content-transition-timing-function</td>
-    <td></td>
-    <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The timing funtion of the stepper transition.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The transition of the stepper content.</div></div>
     </td>
 </tr>
 </tbody>

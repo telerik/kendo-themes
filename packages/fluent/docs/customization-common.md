@@ -220,6 +220,56 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-scrollview-transition-duration</td>
+    <td></td>
+    <td><code>.3s</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-scrollview-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-scrollview-transition-timing-function</td>
+    <td></td>
+    <td><code>ease-in-out</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-scrollview-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-property</td>
+    <td></td>
+    <td><code>none</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-duration</td>
+    <td></td>
+    <td><code>300ms</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-stepper-content-transition-timing-function</td>
+    <td></td>
+    <td><code>cubic-bezier(.4, 0, .2, 1) 0ms</code></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Use `$kendo-stepper-content-transition` instead.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-tooltip-brand-colors</td>
     <td></td>
     <td><code>(
