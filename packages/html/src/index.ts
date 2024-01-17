@@ -105,6 +105,7 @@ export * from './listview/index';
 export * from './filter/index';
 export * from './filemanager/index';
 export * from './taskboard/index';
+export * from './column-menu/index';
 
 // Misc
 // export * from './adaptive/index''
