@@ -83,7 +83,7 @@ export * from './appbar/index';
 export * from './bottom-nav/index';
 export * from './breadcrumb/index';
 export * from './pager/index';
-// export * from './stepper/index';
+export * from './stepper/index';
 // export * from './tabstrip/index';
 export * from './treeview/index';
 // export * from './wizard/index';
