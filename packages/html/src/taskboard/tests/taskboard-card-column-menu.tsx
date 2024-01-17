@@ -1,5 +1,5 @@
 import { Popup } from '../../popup';
-import { Icon } from '../../icon';
+import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuNormal } from '../../column-menu';
 
 const styles = `
     .k-animation-container,
@@ -18,27 +18,17 @@ export default () =>(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
-            <Popup className="k-column-menu k-card-columnmenu-popup">
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-columnmenu-item">
-                        <Icon icon="caret-alt-left" />Move to prev column
-                    </div>
-                    <div className="k-columnmenu-item">
-                        <Icon icon="caret-alt-right" />Move to next column
-                    </div>
-                    <div className="k-columnmenu-item">
-                        <Icon icon="caret-alt-up" />Move up
-                    </div>
-                    <div className="k-columnmenu-item">
-                        <Icon icon="caret-alt-down" />Move down
-                    </div>
-                    <div className="k-columnmenu-item">
-                        <Icon icon="caret-alt-to-top" />Move top
-                    </div>
-                    <div className="k-columnmenu-item">
-                        <Icon icon="caret-alt-to-bottom" />Move bottom
-                    </div>
-                </div>
+            <Popup className="k-card-columnmenu-popup">
+                <ColumnMenuNormal>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuItem text="Move to prev column" icon="caret-alt-left" />
+                        <ColumnMenuItem text="Move to next column" icon="caret-alt-right" />
+                        <ColumnMenuItem text="Move up" icon="caret-alt-up" />
+                        <ColumnMenuItem text="Move down" icon="caret-alt-down" />
+                        <ColumnMenuItem text="Move top" icon="caret-alt-to-top" />
+                        <ColumnMenuItem text="Move bottom" icon="caret-alt-to-bottom" />
+                    </ColumnMenuItemWrapper>
+                </ColumnMenuNormal>
             </Popup>
         </div>
     </>

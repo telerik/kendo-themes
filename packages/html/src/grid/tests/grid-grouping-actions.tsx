@@ -3,6 +3,8 @@ import { Icon } from '../../icon';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 import { Popup } from '../../popup';
 import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar, GridPager } from '../../grid';
+import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuNormal } from '../../column-menu';
+
 
 const styles = `
     .k-animation-container,
@@ -104,17 +106,19 @@ export default () => (
                 </Grid>
             </section>
 
-            <Popup className="k-column-menu k-grid-columnmenu-popup">
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-columnmenu-item">
-                        <div className="k-column-list-item">
-                            <Icon icon="caret-alt-left"/>Move previous
-                        </div>
-                        <div className="k-column-list-item">
-                            <Icon icon="caret-alt-right"/>Move next
-                        </div>
-                    </div>
-                </div>
+            <Popup className="k-grid-columnmenu-popup">
+                <ColumnMenuNormal>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuItem>
+                            <div className="k-column-list-item">
+                                <Icon icon="caret-alt-left"/>Move previous
+                            </div>
+                            <div className="k-column-list-item k-disabled">
+                                <Icon icon="caret-alt-right"/>Move next
+                            </div>
+                        </ColumnMenuItem>
+                    </ColumnMenuItemWrapper>
+                </ColumnMenuNormal>
             </Popup>
         </div>
     </>

@@ -1,5 +1,4 @@
 import { Chip, ChipAction, ChipList } from '../../chip';
-import { Icon } from '../../icon';
 import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 import { Popup } from '../../popup';
 import { WindowNormal } from '../../window';
@@ -8,6 +7,8 @@ import { FormNormal, FormField } from '../../form';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
 import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable, GridToolbar, GridPager } from '../../grid';
+import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuExpander, ColumnMenuNormal } from '../../column-menu';
+
 
 const styles = `
     .k-animation-container,
@@ -117,69 +118,29 @@ export default () =>(
                 </Grid>
             </section>
 
-            <Popup className="k-column-menu k-grid-columnmenu-popup">
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-columnmenu-item">
-                        <Icon icon="sort-asc-small" />Sort ascending
-                    </div>
-                    <div className="k-columnmenu-item">
-                        <Icon icon="sort-desc-small" />Sort descending
-                    </div>
-                </div>
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-expander">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="columns"/>Columns
-                            <span className="k-spacer"></span>
-                            <span className="k-expander-indicator">
-                                <Icon icon="chevron-down"/>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-expander">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="filter"/>Filter
-                            <span className="k-spacer"></span>
-                            <span className="k-expander-indicator">
-                                <Icon icon="chevron-down"/>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-columnmenu-item">
-                        <Icon icon="group" />Group column
-                    </div>
-                </div>
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-expander">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="arrows-left-right"/>Resize column
-                            <span className="k-spacer"></span>
-                            <span className="k-expander-indicator">
-                                <Icon icon="window-restore"/>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-columnmenu-item">
-                        <Icon icon="group" />Autosize all columns
-                    </div>
-                </div>
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-expander">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="set-column-position" />Set column position
-                            <span className="k-spacer"></span>
-                            <span className="k-expander-indicator">
-                                <Icon icon="chevron-down" />
-                            </span>
-                        </div>
-                    </div>
-                </div>
+            <Popup className="k-grid-columnmenu-popup">
+                <ColumnMenuNormal>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
+                        <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                    </ColumnMenuItemWrapper>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuExpander itemText="Columns" itemIcon="columns" />
+                    </ColumnMenuItemWrapper>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuExpander itemText="Filter" itemIcon="filter" />
+                    </ColumnMenuItemWrapper>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuItem text="Group column" icon="group" />
+                    </ColumnMenuItemWrapper>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuExpander itemText="Resize column" itemIcon="arrows-left-right" expanderIcon="window-restore"/>
+                        <ColumnMenuItem text="Autosize all columns" icon="display-inline-flex" />
+                    </ColumnMenuItemWrapper>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuExpander itemText="Set column position" itemIcon="set-column-position" />
+                    </ColumnMenuItemWrapper>
+                </ColumnMenuNormal>
             </Popup>
 
             <section>
