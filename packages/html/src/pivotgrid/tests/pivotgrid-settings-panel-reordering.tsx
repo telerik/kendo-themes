@@ -6,6 +6,7 @@ import { Icon } from '../../icon';
 import { Searchbox } from '../../searchbox';
 import { Treeview, TreeviewItem, TreeviewGroup } from '../../treeview';
 import { Popup } from '../../popup';
+import { ColumnMenuItem, ColumnMenuItemWrapper, ColumnMenuExpander, ColumnMenuNormal } from '../../column-menu';
 
 const style = `
     .k-animation-container {
@@ -641,40 +642,22 @@ export default () => (
                 </div>
             </section>
 
-            <Popup className="k-column-menu k-grid-columnmenu-popup">
-                <div className="k-columnmenu-item-wrapper">
-                    <div className="k-columnmenu-item">
-                        <Icon icon="sort-asc-small"/>Sort ascending
-                    </div>
-                    <div className="k-columnmenu-item">
-                        <Icon icon="sort-desc-small" />Sort descending
-                    </div>
-                    <div className="k-columnmen-item-wrapper">
-                        <div className="k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="grid-layout" />Include Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-down" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-columnmenu-item k-disabled">
-                            <Icon icon="caret-alt-left" />Move Previous
-                        </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="caret-alt-right" />Move Next
-                        </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="caret-alt-down" />Move to Rows
-                        </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="caret-alt-to-bottom" />Move to Values
-                        </div>
-                    </div>
-                </div>
+            <Popup className="k-grid-columnmenu-popup">
+                <ColumnMenuNormal>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
+                        <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                    </ColumnMenuItemWrapper>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" />
+                    </ColumnMenuItemWrapper>
+                    <ColumnMenuItemWrapper>
+                        <ColumnMenuItem text="Move to Columns" icon="columns" className="k-disabled" />
+                        <ColumnMenuItem text="Move to Rows" icon="rows" />
+                        <ColumnMenuItem text="Move previous" icon="arrow-left" className="k-disabled" />
+                        <ColumnMenuItem text="Move next" icon="arrow-right" />
+                    </ColumnMenuItemWrapper>
+                </ColumnMenuNormal>
             </Popup>
         </div>
     </>

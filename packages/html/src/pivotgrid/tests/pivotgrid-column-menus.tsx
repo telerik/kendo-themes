@@ -1,13 +1,9 @@
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
-import { DropdownList } from '../../dropdownlist';
-import { Icon } from '../../icon';
-import { Textbox } from '../../textbox';
 import { Treeview, TreeviewGroup, TreeviewItem } from '../../treeview';
 import { Popup } from '../../popup';
-import { AnimationContainer } from '../../animation-container';
-
+import { ColumnMenuNormal, ColumnMenuItemWrapper, ColumnMenuItem, ColumnMenuExpander, FilterMenuNormal } from "../../column-menu";
 
 const styles = `
     .k-animation-container {
@@ -26,248 +22,161 @@ export default () =>(
             <span>Filter Fields View</span>
 
             <section>
-                <Popup className="k-column-menu k-grid-columnmenu-popup">
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-asc-small" />Sort Ascending
-                        </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-desc-small" />Sort Descending
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-widget k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="grid-layout" />Include Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-down" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-widget k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="filter" />Filter Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-down" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                <Popup className="k-grid-columnmenu-popup">
+                    <ColumnMenuNormal>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" />
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuExpander itemText="Filter fields" itemIcon="filter" />
+                        </ColumnMenuItemWrapper>
+                    </ColumnMenuNormal>
                 </Popup>
             </section>
 
             <section>
-                <Popup className="k-column-menu k-grid-columnmenu-popup">
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-asc-small" />Sort Ascending
-                        </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-desc-small" />Sort Descending
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-widget k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="grid-layout" />Include Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-up" />
-                                </span>
-                            </div>
-                        </div>
-                        <div className="k-columnmenu-item-content k-columns-item" style={{ width: '100%', height: 'auto', overflow: 'hidden' }}>
-                            <div className="k-column-list-wrapper">
-                                <div className="k-column-list">
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        ID
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Name
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Category
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Account
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Number
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Type
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Employer
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Employee
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Company
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Products
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Number
-                                    </label>
-                                    <label className="k-column-list-item k-checkbox-label">
-                                        <Checkbox />
-                                        Type
-                                    </label>
-                                </div>
-                            </div>
-                            <ActionButtons alignment="stretched">
-                                <Button>Reset</Button>
-                                <Button themeColor="primary">Apply</Button>
-                            </ActionButtons>
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-widget k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="filter" />Filter Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-down" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                <Popup className="k-grid-columnmenu-popup">
+                    <ColumnMenuNormal>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" expanded={true} itemContent={
+                                <>
+                                    <div className="k-column-list-wrapper">
+                                        <div className="k-column-list">
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                ID
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Name
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Category
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Account
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Number
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Type
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Employer
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Employee
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Company
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Products
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Number
+                                            </label>
+                                            <label className="k-column-list-item k-checkbox-label">
+                                                <Checkbox />
+                                                Type
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <ActionButtons alignment="stretched">
+                                        <Button themeColor="primary">Apply</Button>
+                                        <Button>Reset</Button>
+                                    </ActionButtons>
+                                </>
+                            }/>
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuExpander itemText="Filter fields" itemIcon="filter" />
+                        </ColumnMenuItemWrapper>
+                    </ColumnMenuNormal>
                 </Popup>
             </section>
 
             <section>
-                <Popup className="k-column-menu k-grid-columnmenu-popup">
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-asc-small" />Sort Ascending
-                        </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-desc-small" />Sort Descending
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-widget k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="grid-layout" />Include Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-up" />
-                                </span>
-                            </div>
-                        </div>
-                        <div className="k-columnmenu-item-content" style={{ width: '100%', height: 'auto', overflow: 'hidden' }}>
-                            <div className="k-column-list-wrapper">
-                                <div className="k-column-list">
-                                    <Treeview>
-                                        <TreeviewItem showCheckbox hasChildren text="Account" />
-                                        <TreeviewItem showCheckbox hasChildren text="Customer" />
-                                        <TreeviewItem showCheckbox expanded text="Date">
-                                            <TreeviewGroup>
-                                                <TreeviewItem showCheckbox hasChildren text="Date.Calendar" />
-                                                <TreeviewItem showCheckbox expanded text="Date.Calendar Quarter of Year">
+                <Popup className="k-grid-columnmenu-popup">
+                    <ColumnMenuNormal>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" expanded={true} itemContent={
+                                <>
+                                    <div className="k-column-list-wrapper">
+                                        <div className="k-column-list">
+                                            <Treeview>
+                                                <TreeviewItem showCheckbox hasChildren text="Account" />
+                                                <TreeviewItem showCheckbox hasChildren text="Customer" />
+                                                <TreeviewItem showCheckbox expanded text="Date">
                                                     <TreeviewGroup>
-                                                        <TreeviewItem showCheckbox hasChildren text="(All)" />
-                                                        <TreeviewItem showCheckbox hasChildren text="Calendar Quarter of Year" />
+                                                        <TreeviewItem showCheckbox hasChildren text="Date.Calendar" />
+                                                        <TreeviewItem showCheckbox expanded text="Date.Calendar Quarter of Year">
+                                                            <TreeviewGroup>
+                                                                <TreeviewItem showCheckbox hasChildren text="(All)" />
+                                                                <TreeviewItem showCheckbox hasChildren text="Calendar Quarter of Year" />
+                                                            </TreeviewGroup>
+                                                        </TreeviewItem>
                                                     </TreeviewGroup>
                                                 </TreeviewItem>
-                                            </TreeviewGroup>
-                                        </TreeviewItem>
-                                        <TreeviewItem showCheckbox hasChildren text="Delivery date" />
-                                        <TreeviewItem showCheckbox hasChildren text="Department" />
-                                        <TreeviewItem showCheckbox hasChildren text="Country" />
-                                        <TreeviewItem showCheckbox hasChildren text="Region" />
-                                    </Treeview>
-                                </div>
-                            </div>
-                            <ActionButtons alignment="stretched">
-                                <Button>Reset</Button>
-                                <Button themeColor="primary">Apply</Button>
-                            </ActionButtons>
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-widget k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="filter" />Filter Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-down" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                                                <TreeviewItem showCheckbox hasChildren text="Delivery date" />
+                                                <TreeviewItem showCheckbox hasChildren text="Department" />
+                                                <TreeviewItem showCheckbox hasChildren text="Country" />
+                                                <TreeviewItem showCheckbox hasChildren text="Region" />
+                                            </Treeview>
+                                        </div>
+                                    </div>
+                                    <ActionButtons alignment="stretched">
+                                        <Button themeColor="primary">Apply</Button>
+                                        <Button>Reset</Button>
+                                    </ActionButtons>
+                                </>
+                            }/>
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuExpander itemText="Filter fields" itemIcon="filter" />
+                        </ColumnMenuItemWrapper>
+                    </ColumnMenuNormal>
                 </Popup>
             </section>
 
             <section>
-                <Popup className="k-column-menu k-grid-columnmenu-popup">
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-asc-small" />Sort Ascending
-                        </div>
-                        <div className="k-columnmenu-item">
-                            <Icon icon="sort-desc-small" />Sort Descending
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-widget k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="grid-layout" />Include Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-down" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="k-columnmenu-item-wrapper">
-                        <div className="k-widget k-expander">
-                            <div className="k-columnmenu-item">
-                                <Icon icon="filter" />Filter Fields
-                                <span className="k-spacer"></span>
-                                <span className="k-expander-indicator">
-                                    <Icon icon="chevron-up" />
-                                </span>
-                            </div>
-                        </div>
-                        <div className="k-columnmenu-item-content">
-                            <AnimationContainer>
-                                <div className="kendo-grid-filter-menu-container">
-                                    <form className="k-filter-menu k-group k-reset">
-                                        <div className="k-filter-menu-container">
-                                            <DropdownList value="Contains" />
-                                            <Textbox />
-                                            <DropdownList value="And" className="k-filter-and" />
-                                            <DropdownList value="Contains" />
-                                            <Textbox />
-                                            <ActionButtons alignment="stretched">
-                                                <Button>Clear</Button>
-                                                <Button themeColor="primary">Filter</Button>
-                                            </ActionButtons>
-                                        </div>
-                                    </form>
-                                </div>
-                            </AnimationContainer>
-                        </div>
-                    </div>
+                <Popup className="k-grid-columnmenu-popup">
+                    <ColumnMenuNormal>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuItem text="Sort ascending" icon="sort-asc-small" />
+                            <ColumnMenuItem text="Sort descending" icon="sort-desc-small" />
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuExpander itemText="Include fields" itemIcon="grid-layout" />
+                        </ColumnMenuItemWrapper>
+                        <ColumnMenuItemWrapper>
+                            <ColumnMenuExpander itemText="Filter fields" itemIcon="filter" expanded={true} itemContent={
+                                <FilterMenuNormal />
+                            }/>
+                        </ColumnMenuItemWrapper>
+                    </ColumnMenuNormal>
                 </Popup>
             </section>
 
