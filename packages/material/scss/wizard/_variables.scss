@@ -1,13 +1,34 @@
 // Wizard
+
+/// The horizontal padding of the Wizard.
+/// @group wizard
 $kendo-wizard-padding-x: $kendo-padding-md-x * 1.25 !default;
+/// The vertical padding of the Wizard.
+/// @group wizard
 $kendo-wizard-padding-y: $kendo-wizard-padding-x !default;
+/// The horizontal padding of the Wizard content.
+/// @group wizard
 $kendo-wizard-content-padding-x: $kendo-padding-md-x * 2 !default;
+/// The vertical padding of the Wizard content.
+/// @group wizard
 $kendo-wizard-content-padding-y: $kendo-padding-md-y * 8 !default;
+/// The horizontal margin of the Wizard's Button container.
+/// @group wizard
 $kendo-wizard-buttons-margin-x: 10px !default;
 
+/// The border width of the Wizard.
+/// @group wizard
 $kendo-wizard-border-width: 0px !default;
+/// The font size of the Wizard.
+/// @group wizard
 $kendo-wizard-font-size: $kendo-font-size-md !default;
+/// The line height of the Wizard.
+/// @group wizard
 $kendo-wizard-line-height: $kendo-line-height-md !default;
+/// The font family of the Wizard.
+/// @group wizard
 $kendo-wizard-font-family: $kendo-font-family !default;
 
+/// The outline of the focused Wizard step.
+/// @group wizard
 $kendo-wizard-step-focus-border: #656565 !default;
