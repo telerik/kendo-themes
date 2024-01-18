@@ -1,89 +1,110 @@
 import { Icon } from '../../icon';
+import { TreeList } from '../../treelist';
+import { GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
+import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export default () => (
     <>
         <div id="test-area">
-            <div id="treelist" className="k-treelist k-grid k-grid-md k-grid-no-scrollbar">
-                <div className="k-grid-header" style={{ paddingRight: '0px' }}>
+            <TreeList id="treelist" className="k-grid-no-scrollbar">
+                <GridHeader style={{ paddingRight: '0px' }}>
                     <div className="k-grid-header-wrap">
-                        <table className="k-table k-table-md k-grid-header-table">
+                        <GridHeaderTable>
                             <colgroup>
                                 <col className="k-drag-col"/>
                                 <col style={{ width: "250px" }}/>
                                 <col />
                             </colgroup>
-                            <thead className="k-table-thead">
-                                <tr className="k-table-row">
-                                    <th className="k-table-th k-header k-drag-cell"></th>
-                                    <th className="k-table-th k-header">
-                                        <span className="k-cell-inner">
-                                            <span className="k-link">
-                                                <span className="k-column-title">First Name</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                    <th className="k-table-th k-header">
-                                        <span className="k-cell-inner">
-                                            <span className="k-link">
-                                                <span className="k-column-title">Last Name</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                    <th className="k-table-th k-header">
-                                        <span className="k-cell-inner">
-                                            <span className="k-link">
-                                                <span className="k-column-title">Position</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
+                            <TableThead>
+                                <TableRow>
+                                    <GridHeaderCell className="k-drag-cell"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="First Name"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Last Name"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Position"></GridHeaderCell>
+                                </TableRow>
+                            </TableThead>
+                        </GridHeaderTable>
                     </div>
-                </div>
-                <div className="k-grid-content k-auto-scrollable">
-                    <table className="k-table k-table-md k-grid-table">
-                        <colgroup>
-                            <col className="k-drag-col" />
-                            <col style={{ width: "250px" }}/>
-                            <col />
-                        </colgroup>
-                        <tbody className="k-table-tbody">
-                            <tr className="k-table-row">
-                                <td className="k-table-td k-drag-cell"><Icon icon="reorder"/></td>
-                                <td className="k-table-td"><Icon className="k-treelist-toggle" icon="caret-alt-right"/>Daryl</td>
-                                <td className="k-table-td">Sweeney</td>
-                                <td className="k-table-td">CEO</td>
-                            </tr>
-                            <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                <td className="k-table-td k-drag-cell"><Icon icon="reorder"/></td>
-                                <td className="k-table-td"><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>Guy</td>
-                                <td className="k-table-td">Wooten</td>
-                                <td className="k-table-td">Chief Technical Officer</td>
-                            </tr>
-                            <tr className="k-table-row k-treelist-group">
-                                <td className="k-table-td k-drag-cell"><Icon icon="reorder"/></td>
-                                <td className="k-table-td"><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>Buffy</td>
-                                <td className="k-table-td">Weber</td>
-                                <td className="k-table-td">VP, Engineering</td>
-                            </tr>
-                            <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                <td className="k-table-td k-drag-cell"><Icon icon="reorder"/></td>
-                                <td className="k-table-td"><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="caret-alt-down"></Icon>Hyacinth
-                                </td>
-                                <td className="k-table-td">Hood</td>
-                                <td className="k-table-td">Team Lead</td>
-                            </tr>
-                            <tr className="k-table-row">
-                                <td className="k-table-td k-drag-cell"><Icon icon="reorder"/></td>
-                                <td className="k-table-td"><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>Akeem</td>
-                                <td className="k-table-td">Carr</td>
-                                <td className="k-table-td">Junior Software Developer</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                </GridHeader>
+                <GridContainer>
+                    <GridContent className="k-auto-scrollable">
+                        <GridTable>
+                            <colgroup>
+                                <col className="k-drag-col" />
+                                <col style={{ width: "250px" }}/>
+                                <col />
+                            </colgroup>
+                            <TableTbody>
+                                <TableRow>
+                                    <TableTd className="k-drag-cell">
+                                        <Icon icon="reorder"/>
+                                    </TableTd>
+                                    <TableTd>
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-right"/>
+                                        Daryl
+                                    </TableTd>
+                                    <TableTd>Sweeney</TableTd>
+                                    <TableTd>CEO</TableTd>
+                                </TableRow>
+                                <TableRow className="k-treelist-group k-alt" alt>
+                                    <TableTd className="k-drag-cell">
+                                        <Icon icon="reorder"/>
+                                    </TableTd>
+                                    <TableTd>
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        Guy
+                                    </TableTd>
+                                    <TableTd>Wooten</TableTd>
+                                    <TableTd>Chief Technical Officer</TableTd>
+                                </TableRow>
+                                <TableRow className="k-treelist-group">
+                                    <TableTd className="k-drag-cell">
+                                        <Icon icon="reorder"/>
+                                    </TableTd>
+                                    <TableTd>
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        Buffy
+                                    </TableTd>
+                                    <TableTd>Weber</TableTd>
+                                    <TableTd>VP, Engineering</TableTd>
+                                </TableRow>
+                                <TableRow className="k-treelist-group k-alt" alt>
+                                    <TableTd className="k-drag-cell">
+                                        <Icon icon="reorder"/>
+                                    </TableTd>
+                                    <TableTd>
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                        Hyacinth
+                                    </TableTd>
+                                    <TableTd>Hood</TableTd>
+                                    <TableTd>Team Lead</TableTd>
+                                </TableRow>
+                                <TableRow>
+                                    <TableTd className="k-drag-cell">
+                                        <Icon icon="reorder"/>
+                                    </TableTd>
+                                    <TableTd>
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        <Icon className="k-treelist-toggle" icon="none" />
+                                        Akeem
+                                    </TableTd>
+                                    <TableTd>Carr</TableTd>
+                                    <TableTd>Junior Software Developer</TableTd>
+                                </TableRow>
+                            </TableTbody>
+                        </GridTable>
+                    </GridContent>
+                </GridContainer>
+            </TreeList>
         </div>
     </>
 );

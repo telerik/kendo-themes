@@ -1,5 +1,7 @@
 import { Icon } from '../../icon';
-
+import { TreeList } from '../../treelist';
+import { GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
+import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 export default () =>(
     <>
@@ -7,265 +9,240 @@ export default () =>(
 
             <section>
                 <span>jQuery</span>
-                <div id="treelist" className="k-treelist k-grid k-grid-md k-grid-display-block" style={{ height: "650px" }}>
-                    <div className="k-grid-header">
+                <TreeList id="treelist" className="k-grid-display-block" style={{ height: "650px" }}>
+                    <GridHeader>
                         <div className="k-grid-header-wrap">
-                            <table className="k-table k-table-md k-grid-header-table">
+                            <GridHeaderTable>
                                 <colgroup>
                                     <col />
                                     <col />
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row">
-                                        <th className="k-table-th k-header k-filterable" rowSpan={1}>
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Name</span>
-                                                </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header k-filterable" rowSpan={1} data-index={1}>
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Position</span>
-                                                </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                            </span>
-                                        </th>
-                                        <th data-title="Hire Date" className="k-table-th k-header k-filterable" rowSpan={1}>
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Hire Date</span>
-                                                </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                            </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                <TableThead>
+                                    <TableRow>
+                                        <GridHeaderCell rowspan={1} menu="filter" columnTitle="Name"></GridHeaderCell>
+                                        <GridHeaderCell rowspan={1} data-index={1} menu="filter" columnTitle="Position"></GridHeaderCell>
+                                        <GridHeaderCell rowspan={1} menu="filter" columnTitle="Hire Date"></GridHeaderCell>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                    <div className="k-grid-content k-auto-scrollable" style={{ display: "block", height: "591px" }}>
-                        <table className="k-table k-table-md k-grid-table">
-                            <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                            </colgroup>
-                            <tbody className="k-table-tbody">
-                                <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
-                                        Daryl Sweeney
-                                    </td>
-                                    <td className="k-table-td">CEO</td>
-                                    <td className="k-table-td">February 7, 2012</td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
-                                        Guy Wooten
-                                    </td>
-                                    <td className="k-table-td">Chief Technical Officer</td>
-                                    <td className="k-table-td">March 3, 2010</td>
-                                </tr>
-                                <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
-                                        Priscilla Frank
-                                    </td>
-                                    <td className="k-table-td">Chief Product Officer</td>
-                                    <td className="k-table-td">November 30, 2014</td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-down" />
-                                        Anika Vega
-                                    </td>
-                                    <td className="k-table-td">Chief Process Officer</td>
-                                    <td className="k-table-td">February 25, 2010</td>
-                                </tr>
-                                <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
-                                        Vernon Ballard
-                                    </td>
-                                    <td className="k-table-td">Director Facilities</td>
-                                    <td className="k-table-td">June 26, 2015</td>
-                                </tr>
-                                <tr className="k-table-row k-footer-template">
-                                    <td className="k-table-td k-focus"><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>7 employee(s)</td>
-                                    <td className="k-table-td"></td>
-                                    <td className="k-table-td">Last employee hired on July 30, 2015</td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-alt k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
-                                        Nevada Hart
-                                    </td>
-                                    <td className="k-table-td">Chief Financial Officer</td>
-                                    <td className="k-table-td">August 17, 2015</td>
-                                </tr>
-                                <tr className="k-table-row k-treelist-group">
-                                    <td className="k-table-td" style={{ whiteSpace: "nowrap" }}><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                        <Icon className="k-treelist-toggle" icon="caret-alt-right" />
-                                        Hunter Fry
-                                    </td>
-                                    <td className="k-table-td">General Counsel</td>
-                                    <td className="k-table-td">February 12, 2011</td>
-                                </tr>
-                                <tr className="k-table-row k-footer-template">
-                                    <td className="k-table-td"><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>98 employee(s)</td>
-                                    <td className="k-table-td"></td>
-                                    <td className="k-table-td">Last employee hired on August 17, 2015</td>
-                                </tr>
-                                <tr className="k-table-row k-footer-template">
-                                    <td className="k-table-td"><Icon className="k-treelist-toggle" icon="none"></Icon>99 employee(s)</td>
-                                    <td className="k-table-td"></td>
-                                    <td className="k-table-td">Last employee hired on August 17, 2015</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                    </GridHeader>
+                    <GridContainer>
+                        <GridContent className="k-auto-scrollable" style={{ display: "block", height: "591px" }}>
+                            <GridTable>
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <TableTbody>
+                                    <TableRow className="k-treelist-group">
+                                        <TableTd style={{ whiteSpace: "nowrap" }}>
+                                            <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                            Daryl Sweeney
+                                        </TableTd>
+                                        <TableTd>CEO</TableTd>
+                                        <TableTd>February 7, 2012</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-alt k-treelist-group" alt>
+                                        <TableTd style={{ whiteSpace: "nowrap" }}>
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                            Guy Wooten
+                                        </TableTd>
+                                        <TableTd>Chief Technical Officer</TableTd>
+                                        <TableTd>March 3, 2010</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-treelist-group">
+                                        <TableTd style={{ whiteSpace: "nowrap" }}>
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                            Priscilla Frank
+                                        </TableTd>
+                                        <TableTd>Chief Product Officer</TableTd>
+                                        <TableTd>November 30, 2014</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-treelist-group k-alt" alt>
+                                        <TableTd style={{ whiteSpace: "nowrap" }}>
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                            Anika Vega
+                                        </TableTd>
+                                        <TableTd>Chief Process Officer</TableTd>
+                                        <TableTd>February 25, 2010</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-treelist-group">
+                                        <TableTd style={{ whiteSpace: "nowrap" }}>
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                            Vernon Ballard
+                                        </TableTd>
+                                        <TableTd>Director Facilities</TableTd>
+                                        <TableTd>June 26, 2015</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-footer-template">
+                                        <TableTd className="k-focus">
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            7 employee(s)
+                                        </TableTd>
+                                        <TableTd></TableTd>
+                                        <TableTd>Last employee hired on July 30, 2015</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-alt k-treelist-group" alt>
+                                        <TableTd style={{ whiteSpace: "nowrap" }}>
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                            Nevada Hart
+                                        </TableTd>
+                                        <TableTd>Chief Financial Officer</TableTd>
+                                        <TableTd>August 17, 2015</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-treelist-group">
+                                        <TableTd style={{ whiteSpace: "nowrap" }}>
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                            Hunter Fry
+                                        </TableTd>
+                                        <TableTd>General Counsel</TableTd>
+                                        <TableTd>February 12, 2011</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-footer-template">
+                                        <TableTd>
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            98 employee(s)
+                                        </TableTd>
+                                        <TableTd></TableTd>
+                                        <TableTd>Last employee hired on August 17, 2015</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-footer-template">
+                                        <TableTd>
+                                            <Icon className="k-treelist-toggle" icon="none" />
+                                            99 employee(s)
+                                        </TableTd>
+                                        <TableTd></TableTd>
+                                        <TableTd>Last employee hired on August 17, 2015</TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
+                        </GridContent>
+                    </GridContainer>
+                </TreeList>
             </section>
 
             <section>
                 <span>Angular</span>
-                <div className="k-grid k-grid-md k-treelist" style={{ height: "410px" }}>
-                    <div className="k-grid-aria-root">
-                        <div className="k-grid-header">
-                            <div className="k-grid-header-wrap">
-                                <table className="k-table k-table-md k-grid-header-table">
+                <TreeList _renderAriaRoot style={{ height: "410px" }}>
+                    <GridHeader>
+                        <div className="k-grid-header-wrap">
+                            <GridHeaderTable>
+                                <colgroup>
+                                    <col style={{ width: "250px" }} />
+                                    <col style={{ width: "180px" }} />
+                                    <col style={{ width: "180px" }} />
+                                </colgroup>
+                                <TableThead>
+                                    <TableRow>
+                                        <GridHeaderCell rowspan={1} colspan={1} columnTitle="Name"></GridHeaderCell>
+                                        <GridHeaderCell rowspan={1} colspan={1} columnTitle="Title"></GridHeaderCell>
+                                        <GridHeaderCell rowspan={1} colspan={1} columnTitle="hireDate"></GridHeaderCell>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
+                        </div>
+                    </GridHeader>
+                    <GridContainer>
+                        <GridContent className="k-virtual-content">
+                            <div className="k-grid-table-wrap">
+                                <GridTable>
                                     <colgroup>
                                         <col style={{ width: "250px" }} />
                                         <col style={{ width: "180px" }} />
                                         <col style={{ width: "180px" }} />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Name</span>
-                                                    </span>
-                                                </span>
-                                            </th>
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Title</span>
-                                                    </span>
-                                                </span>
-                                            </th>
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">hireDate</span>
-                                                    </span>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                        </div>
-                        <div className="k-grid-container">
-                            <div className="k-grid-content k-virtual-content">
-                                <div className="k-grid-table-wrap">
-                                    <table className="k-table k-table-md k-grid-table">
-                                        <colgroup>
-                                            <col style={{ width: "250px" }} />
-                                            <col style={{ width: "180px" }} />
-                                            <col style={{ width: "180px" }} />
-                                        </colgroup>
-                                        <tbody className="k-table-tbody">
-                                            <tr className="k-table-row">
-                                                <td colSpan={1} className="k-table-td">
-                                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                    <TableTbody>
+                                        <TableRow>
+                                            <TableTd colspan={1}>
+                                                <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                                     Daryl Sweeney
-                                                </td>
-                                                <td colSpan={1} className="k-table-td">
-                                                    Chief Executive Officer
-                                                </td>
-                                                <td colSpan={1} className="k-table-td">1/15/2019</td>
-                                            </tr>
-                                            <tr className="k-table-row k-table-alt-row k-alt">
-                                                <td colSpan={1} className="k-table-td">
-                                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                                    <Icon className="k-treelist-toggle" icon="caret-alt-down" />
-                                                    Guy Wooten
-                                                </td>
-                                                <td colSpan={1} className="k-table-td">
-                                                    Chief Technical Officer
-                                                </td>
-                                                <td colSpan={1} className="k-table-td">2/19/2019</td>
-                                            </tr>
-                                            <tr className="k-table-row">
-                                                <td colSpan={1} className="k-table-td">
-                                                    <Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                                    <Icon className="k-treelist-toggle" icon="caret-alt-right" />
-                                                    Buffy Weber
-                                                </td>
-                                                <td colSpan={1} className="k-table-td">
-                                                    VP, Engineering
-                                                </td>
-                                                <td colSpan={1} className="k-table-td">4/13/2019</td>
-                                            </tr>
-                                            <tr className="k-table-row k-footer">
-                                                <td className="k-table-td k-focus">
-                                                    <Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                                    35 employee(s)
-                                                </td>
-                                                <td className="k-table-td"></td>
-                                                <td className="k-table-td">
-                                                    Last employee hired on 10/21/2019
-                                                </td>
-                                            </tr>
-                                            <tr className="k-table-row k-table-alt-row k-alt">
-                                                <td colSpan={1} className="k-table-td">
-                                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                                    <Icon className="k-treelist-toggle" icon="caret-alt-right"></Icon>
-                                                    Priscilla Frank
-                                                </td>
-                                                <td colSpan={1} className="k-table-td">
-                                                    Chief Product Officer
-                                                </td>
-                                                <td colSpan={1} className="k-table-td">4/22/2019</td>
-                                            </tr>
-                                            <tr className="k-footer">
-                                                <td className="k-table-td">
-                                                    <Icon className="k-treelist-toggle" icon="none"></Icon><Icon className="k-treelist-toggle" icon="none"></Icon>
-                                                    42 employee(s)
-                                                </td>
-                                                <td className="k-table-td"></td>
-                                                <td className="k-table-td">
-                                                    Last employee hired on 10/21/2019
-                                                </td>
-                                            </tr>
-                                            <tr className="k-table-row k-footer">
-                                                <td className="k-table-td">
-                                                    <Icon className="k-treelist-toggle" icon="none"></Icon>
-                                                    43 employee(s)
-                                                </td>
-                                                <td className="k-table-td"></td>
-                                                <td className="k-table-td">
-                                                    Last employee hired on 10/21/2019
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div className="k-height-container">
-                                    <div style={{ height: '0px' }}></div>
-                                </div>
+                                            </TableTd>
+                                            <TableTd colspan={1}>Chief Executive Officer</TableTd>
+                                            <TableTd colspan={1}>1/15/2019</TableTd>
+                                        </TableRow>
+                                        <TableRow className="k-alt" alt>
+                                            <TableTd colspan={1}>
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                <Icon className="k-treelist-toggle" icon="caret-alt-down" />
+                                                Guy Wooten
+                                            </TableTd>
+                                            <TableTd colspan={1}>Chief Technical Officer</TableTd>
+                                            <TableTd colspan={1}>2/19/2019</TableTd>
+                                        </TableRow>
+                                        <TableRow>
+                                            <TableTd colspan={1}>
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                                Buffy Weber
+                                            </TableTd>
+                                            <TableTd colspan={1}>VP, Engineering</TableTd>
+                                            <TableTd colspan={1}>4/13/2019</TableTd>
+                                        </TableRow>
+                                        <TableRow className="k-footer">
+                                            <TableTd className="k-focus">
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                35 employee(s)
+                                            </TableTd>
+                                            <TableTd></TableTd>
+                                            <TableTd>
+                                                Last employee hired on 10/21/2019
+                                            </TableTd>
+                                        </TableRow>
+                                        <TableRow className="k-alt" alt>
+                                            <TableTd colspan={1}>
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                <Icon className="k-treelist-toggle" icon="caret-alt-right" />
+                                                Priscilla Frank
+                                            </TableTd>
+                                            <TableTd colspan={1}>Chief Product Officer</TableTd>
+                                            <TableTd colspan={1}>4/22/2019</TableTd>
+                                        </TableRow>
+                                        <TableRow className="k-footer">
+                                            <TableTd>
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                42 employee(s)
+                                            </TableTd>
+                                            <TableTd></TableTd>
+                                            <TableTd>
+                                                Last employee hired on 10/21/2019
+                                            </TableTd>
+                                        </TableRow>
+                                        <TableRow className="k-footer">
+                                            <TableTd>
+                                                <Icon className="k-treelist-toggle" icon="none" />
+                                                43 employee(s)
+                                            </TableTd>
+                                            <TableTd></TableTd>
+                                            <TableTd>
+                                                Last employee hired on 10/21/2019
+                                            </TableTd>
+                                        </TableRow>
+                                    </TableTbody>
+                                </GridTable>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
+                            <div className="k-height-container">
+                                <div style={{ height: '0px' }}></div>
+                            </div>
+                        </GridContent>
+                    </GridContainer>
+                </TreeList>
             </section>
         </div>
     </>
