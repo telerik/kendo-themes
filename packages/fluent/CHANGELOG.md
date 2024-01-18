@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.1.0...v7.1.1-dev.0) (2024-01-18)
+
+
+### Bug Fixes
+
+* **textarea:** set wrapper width for resizing ([71eca48](https://github.com/telerik/kendo-themes/commit/71eca488bc6452997ce006367508f52476099261))
+
+
+
+
+
 # [7.1.0](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.11...v7.1.0) (2024-01-15)
 
 **Note:** Version bump only for package @progress/kendo-theme-fluent
