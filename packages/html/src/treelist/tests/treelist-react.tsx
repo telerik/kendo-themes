@@ -4,6 +4,9 @@ import { DropdownList } from '../../dropdownlist';
 import { DatePicker } from '../../datepicker';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
+import { TreeList } from '../../treelist';
+import { GridTable } from '../../grid';
+import { TableThead, TableTbody, TableRow, TableTd, TableTh } from '../../table';
 
 
 export default () =>(
@@ -11,8 +14,8 @@ export default () =>(
         <div id="test-area" className="k-d-grid">
             <section>
                 <span>React Treelist</span>
-                <div className="k-grid k-grid-md k-treelist-scrollable">
-                    <table className="k-table k-table-md k-grid-table">
+                <TreeList className="k-treelist-scrollable">
+                    <GridTable>
                         <colgroup>
                             <col style={{ width: "200px" }} />
                             <col style={{ width: "300px" }} />
@@ -20,27 +23,27 @@ export default () =>(
                             <col style={{ width: "400px" }} />
                             <col style={{ width: "100px" }} />
                         </colgroup>
-                        <thead className="k-table-thead k-grid-header">
-                            <tr className="k-table-row">
-                                <th className="k-table-th k-header">
+                        <TableThead className="k-grid-header">
+                            <TableRow>
+                                <TableTh className="k-header">
                                     <a className="k-link">id</a>
-                                </th>
-                                <th className="k-table-th k-header">
+                                </TableTh>
+                                <TableTh className="k-header">
                                     <a className="k-link">text</a>
-                                </th>
-                                <th className="k-table-th k-header">
+                                </TableTh>
+                                <TableTh className="k-header">
                                     <a className="k-link">price</a>
-                                </th>
-                                <th className="k-table-th k-header">
+                                </TableTh>
+                                <TableTh className="k-header">
                                     <a className="k-link">manufactured</a>
-                                </th>
-                                <th className="k-table-th k-header">
+                                </TableTh>
+                                <TableTh className="k-header">
                                     <a className="k-link">discontinued</a>
-                                </th>
-                            </tr>
-                            <tr className="k-table-row k-filter-row">
-                                <th className="k-table-th"></th>
-                                <th className="k-table-th">
+                                </TableTh>
+                            </TableRow>
+                            <TableRow className="k-filter-row">
+                                <TableTh></TableTh>
+                                <TableTh>
                                     <div className="k-filtercell">
                                         <span>
                                             <Textbox />
@@ -48,8 +51,8 @@ export default () =>(
                                             <Button icon="filter-clear" disabled></Button>
                                         </span>
                                     </div>
-                                </th>
-                                <th className="k-table-th">
+                                </TableTh>
+                                <TableTh>
                                     <div className="k-filtercell">
                                         <span>
                                             <NumericTextbox />
@@ -57,8 +60,8 @@ export default () =>(
                                             <Button icon="filter-clear" disabled></Button>
                                         </span>
                                     </div>
-                                </th>
-                                <th className="k-table-th">
+                                </TableTh>
+                                <TableTh>
                                     <div className="k-filtercell">
                                         <span>
                                             <DatePicker />
@@ -66,108 +69,108 @@ export default () =>(
                                             <Button icon="filter-clear" disabled></Button>
                                         </span>
                                     </div>
-                                </th>
-                                <th className="k-table-th">
+                                </TableTh>
+                                <TableTh>
                                     <div className="k-filtercell">
                                         <span>
                                             <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                             <Button icon="filter-clear" disabled></Button>
                                         </span>
                                     </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody className="k-table-tbody">
-                            <tr className="k-table-row k-master-row">
-                                <td className="k-table-td">
+                                </TableTh>
+                            </TableRow>
+                        </TableThead>
+                        <TableTbody>
+                            <TableRow className="k-master-row">
+                                <TableTd>
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                     1
-                                </td>
-                                <td className="k-table-td">Furniture</td>
-                                <td className="k-table-td">4</td>
-                                <td className="k-table-td">8/12/1996</td>
-                                <td className="k-table-td">false</td>
-                            </tr>
-                            <tr className="k-table-row k-master-row">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Furniture</TableTd>
+                                <TableTd>4</TableTd>
+                                <TableTd>8/12/1996</TableTd>
+                                <TableTd>false</TableTd>
+                            </TableRow>
+                            <TableRow className="k-master-row">
+                                <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     1.1
-                                </td>
-                                <td className="k-table-td">Tables &amp; Chairs</td>
-                                <td className="k-table-td">123</td>
-                                <td className="k-table-td">8/12/1996</td>
-                                <td className="k-table-td">false</td>
-                            </tr>
-                            <tr className="k-table-row k-master-row">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Tables &amp; Chairs</TableTd>
+                                <TableTd>123</TableTd>
+                                <TableTd>8/12/1996</TableTd>
+                                <TableTd>false</TableTd>
+                            </TableRow>
+                            <TableRow className="k-master-row">
+                                <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     1.2
-                                </td>
-                                <td className="k-table-td">Sofas</td>
-                                <td className="k-table-td">213</td>
-                                <td className="k-table-td">8/12/1996</td>
-                                <td className="k-table-td">true</td>
-                            </tr>
-                            <tr className="k-table-row k-master-row">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Sofas</TableTd>
+                                <TableTd>213</TableTd>
+                                <TableTd>8/12/1996</TableTd>
+                                <TableTd>true</TableTd>
+                            </TableRow>
+                            <TableRow className="k-master-row">
+                                <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     1.3
-                                </td>
-                                <td className="k-table-td">Occasional Furniture</td>
-                                <td className="k-table-td">42</td>
-                                <td className="k-table-td">8/12/1996</td>
-                                <td className="k-table-td">false</td>
-                            </tr>
-                            <tr className="k-table-row k-master-row">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Occasional Furniture</TableTd>
+                                <TableTd>42</TableTd>
+                                <TableTd>8/12/1996</TableTd>
+                                <TableTd>false</TableTd>
+                            </TableRow>
+                            <TableRow className="k-master-row">
+                                <TableTd>
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                     2
-                                </td>
-                                <td className="k-table-td">Decor</td>
-                                <td className="k-table-td">2</td>
-                                <td className="k-table-td">8/12/1996</td>
-                                <td className="k-table-td">false</td>
-                            </tr>
-                            <tr className="k-table-row k-master-row">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Decor</TableTd>
+                                <TableTd>2</TableTd>
+                                <TableTd>8/12/1996</TableTd>
+                                <TableTd>false</TableTd>
+                            </TableRow>
+                            <TableRow className="k-master-row">
+                                <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     2.1
-                                </td>
-                                <td className="k-table-td">Bed Linen</td>
-                                <td className="k-table-td">12</td>
-                                <td className="k-table-td">8/12/1996</td>
-                                <td className="k-table-td">false</td>
-                            </tr>
-                            <tr className="k-table-row k-master-row">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Bed Linen</TableTd>
+                                <TableTd>12</TableTd>
+                                <TableTd>8/12/1996</TableTd>
+                                <TableTd>false</TableTd>
+                            </TableRow>
+                            <TableRow className="k-master-row">
+                                <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="caret-alt-down" />
                                     2.2
-                                </td>
-                                <td className="k-table-td">Curtains &amp; Blinds</td>
-                                <td className="k-table-td">1</td>
-                                <td className="k-table-td">8/12/1996</td>
-                                <td className="k-table-td">true</td>
-                            </tr>
-                            <tr className="k-table-row k-master-row">
-                                <td className="k-table-td">
+                                </TableTd>
+                                <TableTd>Curtains &amp; Blinds</TableTd>
+                                <TableTd>1</TableTd>
+                                <TableTd>8/12/1996</TableTd>
+                                <TableTd>true</TableTd>
+                            </TableRow>
+                            <TableRow className="k-master-row">
+                                <TableTd>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     <Icon className="k-treelist-toggle" icon="none"></Icon>
                                     2.2.1
-                                </td>
-                                <td className="k-table-td">Carpets</td>
-                                <td className="k-table-td">54</td>
-                                <td className="k-table-td">8/12/1996</td>
-                                <td className="k-table-td">true</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                                </TableTd>
+                                <TableTd>Carpets</TableTd>
+                                <TableTd>54</TableTd>
+                                <TableTd>8/12/1996</TableTd>
+                                <TableTd>true</TableTd>
+                            </TableRow>
+                        </TableTbody>
+                    </GridTable>
+                </TreeList>
             </section>
         </div>
     </>
