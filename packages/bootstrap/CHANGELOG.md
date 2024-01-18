@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1-dev.0](https://github.com/telerik/kendo-themes/compare/v7.1.0...v7.1.1-dev.0) (2024-01-18)
+
+
+### Bug Fixes
+
+* **bootstrap:** reinstate bootstrap override styles ([d3b60e2](https://github.com/telerik/kendo-themes/commit/d3b60e2e25a7318bf026aca33a414d66fa9d95a0))
+
+
+
+
+
 # [7.1.0](https://github.com/telerik/kendo-themes/compare/v7.1.0-dev.11...v7.1.0) (2024-01-15)
 
 **Note:** Version bump only for package @progress/kendo-theme-bootstrap
