@@ -14,10 +14,10 @@
             <div class="k-grouping-header">
                 <div class="k-grouping-drop-container">Drag a column header and drop it here to group by that column</div>
             </div>
-            <div class="k-grid-aria-root" role="grid">
+            <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-table k-table-md k-grid-header-table">
+                        <table class="k-grid-header-table k-table k-table-md">
                             <colgroup>
                                 <col class="k-hierarchy-col">
                                 <col style="width: 50px;">
@@ -27,27 +27,27 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-table-th k-hierarchy-cell k-header"></th>
-                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                    <th class="k-hierarchy-cell k-header k-table-th"></th>
+                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
                                         <span class="k-checkbox-wrap">
                                             <input id="k-grid0-select-all" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-grid-draggable-header k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">ID</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-grid-draggable-header k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Command</span>
@@ -60,9 +60,9 @@
                     </div>
                 </div>
                 <div class="k-grid-container">
-                    <div class="k-grid-content k-virtual-content">
+                    <div class="k-virtual-content k-grid-content">
                         <div class="k-grid-table-wrap">
-                            <table class="k-table k-table-md k-grid-table">
+                            <table class="k-grid-table k-table k-table-md">
                                 <colgroup>
                                     <col class="k-hierarchy-col">
                                     <col style="width: 50px;">
@@ -71,22 +71,22 @@
                                     <col>
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr class="k-table-row k-master-row" role="row">
-                                        <td class="k-table-td k-hierarchy-cell">
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">
                                             <span class="k-checkbox-wrap">
                                                 <input id="k-grid0-checkbox0" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">1</td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product1</td>
-                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">1</td>
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">Product1</td>
+                                        <td colspan="1" class="k-touch-action-auto k-command-cell k-table-td">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -97,22 +97,22 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-table-alt-row k-alt k-master-row" role="row">
-                                        <td class="k-table-td k-hierarchy-cell">
+                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                        <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">
                                             <span class="k-checkbox-wrap">
-                                                <input id="k-grid0-checkbox1" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                <input id="k-grid0-checkbox0" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">2</td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product2</td>
-                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">2</td>
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">Product2</td>
+                                        <td colspan="1" class="k-touch-action-auto k-command-cell k-table-td">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -157,10 +157,10 @@
                 </div>
                 <div class="k-grouping-drop-container"></div>
             </div>
-            <div class="k-grid-aria-root" role="grid">
+            <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-table k-table-md k-grid-header-table">
+                        <table class="k-grid-header-table k-table k-table-md">
                             <colgroup>
                                 <col class="k-group-col">
                                 <col class="k-hierarchy-col">
@@ -171,28 +171,28 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-table-th k-group-cell k-header"></th>
-                                    <th class="k-table-th k-hierarchy-cell k-header"></th>
-                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                    <th class="k-group-cell k-header k-table-th"></th>
+                                    <th class="k-hierarchy-cell k-header k-table-th"></th>
+                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
                                         <span class="k-checkbox-wrap">
                                             <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-grid-draggable-header k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">ID</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-grid-draggable-header k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Command</span>
@@ -205,9 +205,9 @@
                     </div>
                 </div>
                 <div class="k-grid-container">
-                    <div class="k-grid-content k-virtual-content">
+                    <div class="k-virtual-content k-grid-content">
                         <div class="k-grid-table-wrap">
-                            <table class="k-table k-table-md k-grid-table">
+                            <table class="k-grid-table k-table k-table-md">
                                 <colgroup>
                                     <col class="k-group-col">
                                     <col class="k-hierarchy-col">
@@ -217,34 +217,34 @@
                                     <col>
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td" colspan="6">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="6" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> ID: 1
+                                                </span>ID: 1
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-master-row" role="row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-hierarchy-cell">
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">1</td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product1</td>
-                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">1</td>
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">Product1</td>
+                                        <td colspan="1" class="k-touch-action-auto k-command-cell k-table-td">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -255,34 +255,34 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td" colspan="6">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="6" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> ID: 2
+                                                </span>ID: 2
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-table-alt-row k-alt k-master-row" role="row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-hierarchy-cell">
+                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">2</td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product2</td>
-                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">2</td>
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">Product2</td>
+                                        <td colspan="1" class="k-touch-action-auto k-command-cell k-table-td">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -344,10 +344,10 @@
                 </div>
                 <div class="k-grouping-drop-container"></div>
             </div>
-            <div class="k-grid-aria-root" role="grid">
+            <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-table k-table-md k-grid-header-table">
+                        <table class="k-grid-header-table k-table k-table-md">
                             <colgroup>
                                 <col class="k-group-col">
                                 <col class="k-group-col">
@@ -359,29 +359,29 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-table-th k-group-cell k-header"></th>
-                                    <th class="k-table-th k-group-cell k-header"></th>
-                                    <th class="k-table-th k-hierarchy-cell k-header"></th>
-                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                    <th class="k-group-cell k-header k-table-th"></th>
+                                    <th class="k-group-cell k-header k-table-th"></th>
+                                    <th class="k-hierarchy-cell k-header k-table-th"></th>
+                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
                                         <span class="k-checkbox-wrap">
                                             <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-grid-draggable-header k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">ID</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-grid-draggable-header k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Command</span>
@@ -394,9 +394,9 @@
                     </div>
                 </div>
                 <div class="k-grid-container">
-                    <div class="k-grid-content k-virtual-content">
+                    <div class="k-virtual-content k-grid-content">
                         <div class="k-grid-table-wrap">
-                            <table class="k-table k-table-md k-grid-table">
+                            <table class="k-grid-table k-table k-table-md">
                                 <colgroup>
                                     <col class="k-group-col">
                                     <col class="k-group-col">
@@ -407,47 +407,47 @@
                                     <col>
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td" colspan="7">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="7" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> ID: 1
+                                                </span>ID: 1
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td" colspan="6">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="6" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> Name: Product1
+                                                </span>Name: Product1
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-master-row" role="row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-hierarchy-cell">
+                                    <tr class="k-master-row k-table-row" role="row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">1</td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product1</td>
-                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">1</td>
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">Product1</td>
+                                        <td colspan="1" class="k-touch-action-auto k-command-cell k-table-td">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -458,47 +458,47 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td" colspan="7">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="7" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> ID: 2
+                                                </span>ID: 2
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td" colspan="6">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="6" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> Name: Product2
+                                                </span>Name: Product2
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-table-alt-row k-alt k-master-row" role="row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-hierarchy-cell">
+                                    <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-plus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                                 </svg>
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">2</td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product2</td>
-                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">2</td>
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">Product2</td>
+                                        <td colspan="1" class="k-touch-action-auto k-command-cell k-table-td">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -560,10 +560,10 @@
                 </div>
                 <div class="k-grouping-drop-container"></div>
             </div>
-            <div class="k-grid-aria-root" role="grid">
+            <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-table k-table-md k-grid-header-table">
+                        <table class="k-grid-header-table k-table k-table-md">
                             <colgroup>
                                 <col class="k-group-col">
                                 <col class="k-group-col">
@@ -575,29 +575,29 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-table-th k-group-cell k-header"></th>
-                                    <th class="k-table-th k-group-cell k-header"></th>
-                                    <th class="k-table-th k-hierarchy-cell k-header"></th>
-                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                    <th class="k-group-cell k-header k-table-th"></th>
+                                    <th class="k-group-cell k-header k-table-th"></th>
+                                    <th class="k-hierarchy-cell k-header k-table-th"></th>
+                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
                                         <span class="k-checkbox-wrap">
                                             <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-grid-draggable-header k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">ID</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-grid-draggable-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-grid-draggable-header k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Name</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Command</span>
@@ -610,9 +610,9 @@
                     </div>
                 </div>
                 <div class="k-grid-container">
-                    <div class="k-grid-content k-virtual-content">
+                    <div class="k-virtual-content k-grid-content">
                         <div class="k-grid-table-wrap">
-                            <table class="k-table k-table-md k-grid-table">
+                            <table class="k-grid-table k-table k-table-md">
                                 <colgroup>
                                     <col class="k-group-col">
                                     <col class="k-group-col">
@@ -623,47 +623,47 @@
                                     <col>
                                 </colgroup>
                                 <tbody class="k-table-tbody">
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td" colspan="7">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="7" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> ID: 1
+                                                </span>ID: 1
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td" colspan="6">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="6" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> Name: Product1
+                                                </span>Name: Product1
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-master-row k-expanded" role="row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-hierarchy-cell">
+                                    <tr class="k-master-row k-expanded k-table-row" role="row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-minus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M96 224v64h320v-64z"></path>
                                                 </svg>
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">1</td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product1</td>
-                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">1</td>
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">Product1</td>
+                                        <td colspan="1" class="k-touch-action-auto k-command-cell k-table-td">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -674,53 +674,53 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-detail-row" role="row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-hierarchy-cell"></td>
-                                        <td class="k-table-td k-detail-cell" colspan="4"> Template Text </td>
+                                    <tr class="k-detail-row k-table-row" role="row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-hierarchy-cell k-table-td"></td>
+                                        <td colspan="4" class="k-detail-cell k-table-td"> Template Text </td>
                                     </tr>
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td" colspan="7">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td colspan="7" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> ID: 2
+                                                </span>ID: 2
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr role="row" class="k-table-row k-table-group-row k-grouping-row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td" colspan="6">
+                                    <tr role="row" class="k-table-group-row k-grouping-row k-table-row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td colspan="6" class="k-table-td">
                                             <p class="k-reset">
                                                 <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M256 352 128 160h256z"></path>
                                                     </svg>
-                                                </span> Name: Product2
+                                                </span>Name: Product2
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-table-alt-row k-alt k-master-row k-expanded" role="row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-hierarchy-cell">
+                                    <tr class="k-master-row k-alt k-expanded k-table-row k-table-alt-row" role="row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-hierarchy-cell k-table-td">
                                             <span class="k-icon k-svg-icon k-svg-i-minus">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path d="M96 224v64h320v-64z"></path>
                                                 </svg>
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">2</td>
-                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product2</td>
-                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">2</td>
+                                        <td colspan="1" class="k-touch-action-auto k-table-td">Product2</td>
+                                        <td colspan="1" class="k-touch-action-auto k-command-cell k-table-td">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-svg-icon k-svg-i-trash">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -731,11 +731,11 @@
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr class="k-table-row k-table-alt-row k-detail-row k-alt" role="row">
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
-                                        <td class="k-table-td k-hierarchy-cell"></td>
-                                        <td class="k-table-td k-detail-cell" colspan="4"> Template Text </td>
+                                    <tr class="k-detail-row k-alt k-table-row k-table-alt-row" role="row">
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-table-group-td k-group-cell k-table-td"></td>
+                                        <td class="k-hierarchy-cell k-table-td"></td>
+                                        <td colspan="4" class="k-detail-cell k-table-td"> Template Text </td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -11,24 +11,24 @@
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>jQuery grid</span>
         <section>
-            <div class="k-grid k-grid-md k-grid-no-scrollbar" dir="rtl">
+            <div class="k-grid-no-scrollbar k-grid k-grid-md" dir="rtl">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-table k-table-md k-grid-header-table">
+                        <table class="k-grid-header-table k-table k-table-md">
                             <colgroup>
                                 <col style="width: 100px;">
                                 <col>
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-table-th k-header">
+                                    <th class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">100px</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header">
+                                    <th class="k-header k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">no width</span>
@@ -40,39 +40,41 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-content">
-                    <table class="k-table k-table-md k-grid-table">
-                        <colgroup>
-                            <col style="width: 100px;">
-                            <col>
-                        </colgroup>
-                        <tbody class="k-table-tbody">
-                            <tr class="k-table-row">
-                                <td class="k-table-td">1</td>
-                                <td class="k-table-td">Row</td>
-                            </tr>
-                            <tr class="k-table-row k-table-alt-row k-alt">
-                                <td class="k-table-td">2</td>
-                                <td class="k-table-td">Alt row</td>
-                            </tr>
-                            <tr class="k-table-row">
-                                <td class="k-table-td">3</td>
-                                <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
-                            </tr>
-                            <tr class="k-table-row k-table-alt-row k-alt">
-                                <td class="k-table-td">4</td>
-                                <td class="k-table-td">
-                                    <span class="k-skeleton k-skeleton-text"></span>
-                                </td>
-                            </tr>
-                            <tr class="k-table-row">
-                                <td class="k-table-td">5</td>
-                                <td class="k-table-td">
-                                    <span class="k-skeleton k-skeleton-text"></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="k-grid-container">
+                    <div class="k-grid-content">
+                        <table class="k-grid-table k-table k-table-md">
+                            <colgroup>
+                                <col style="width: 100px;">
+                                <col>
+                            </colgroup>
+                            <tbody class="k-table-tbody">
+                                <tr class="k-table-row">
+                                    <td class="k-table-td">1</td>
+                                    <td class="k-table-td">Row</td>
+                                </tr>
+                                <tr class="k-alt k-table-row k-table-alt-row">
+                                    <td class="k-table-td">2</td>
+                                    <td class="k-table-td">Alt row</td>
+                                </tr>
+                                <tr class="k-table-row">
+                                    <td class="k-table-td">3</td>
+                                    <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
+                                </tr>
+                                <tr class="k-alt k-table-row k-table-alt-row">
+                                    <td class="k-table-td">4</td>
+                                    <td class="k-table-td">
+                                        <span class="k-skeleton k-skeleton-text"></span>
+                                    </td>
+                                </tr>
+                                <tr class="k-table-row">
+                                    <td class="k-table-td">5</td>
+                                    <td class="k-table-td">
+                                        <span class="k-skeleton k-skeleton-text"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div dir="rtl" class="k-grid-pager k-pager k-pager-md">
                     <div class="k-pager-numbers-wrap">
@@ -156,10 +158,10 @@
         </section>
         <span>jQuery -- fixed height, hierarchy, filter menu, sort icon</span>
         <section>
-            <div class="k-grid k-grid-md k-grid-no-scrollbar" dir="rtl" style="height: 250px;">
+            <div class="k-grid-no-scrollbar k-grid k-grid-md" dir="rtl" style="height: 250px;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-table k-table-md k-grid-header-table">
+                        <table class="k-grid-header-table k-table k-table-md">
                             <colgroup>
                                 <col class="k-hierarchy-col">
                                 <col>
@@ -169,13 +171,13 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-table-th k-header k-hierarchy-cell"></th>
-                                    <th class="k-table-th k-header k-filterable">
+                                    <th class="k-hierarchy-cell k-header k-table-th"></th>
+                                    <th class="k-header k-filterable k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Default</span>
                                             </span>
-                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -184,12 +186,12 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-filterable k-hover">
+                                    <th class="k-header k-filterable k-hover k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Hover</span>
                                             </span>
-                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -198,12 +200,12 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-filterable k-focus">
+                                    <th class="k-header k-filterable k-focus k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Focus</span>
                                             </span>
-                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -212,12 +214,12 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-filterable k-active">
+                                    <th class="k-header k-filterable k-active k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Active</span>
                                             </span>
-                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu k-active">
+                                            <a href="#" class="k-grid-header-menu k-active k-grid-filter-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -226,7 +228,7 @@
                                             </a>
                                         </span>
                                     </th>
-                                    <th class="k-table-th k-header k-filterable k-sorted">
+                                    <th class="k-header k-filterable k-sorted k-table-th">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Sorted</span>
@@ -238,7 +240,7 @@
                                                     </span>
                                                 </span>
                                             </span>
-                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                            <a href="#" class="k-grid-header-menu k-grid-filter-menu">
                                                 <span class="k-icon k-svg-icon k-svg-i-filter">
                                                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                         <path d="M64 64v32l160 160v224l64-64V256L448 96V64z"></path>
@@ -252,52 +254,54 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-content">
-                    <table class="k-table k-table-md k-grid-table">
-                        <colgroup>
-                            <col class="k-hierarchy-col">
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                        </colgroup>
-                        <tbody class="k-table-tbody">
-                            <tr class="k-table-row k-master-row k-expanded">
-                                <td class="k-table-td k-hierarchy-cell">
-                                    <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="M256 352 128 160h256z"></path>
-                                        </svg>
-                                    </span>
-                                </td>
-                                <td class="k-table-td">1</td>
-                                <td class="k-table-td">Text</td>
-                                <td class="k-table-td">Text</td>
-                                <td class="k-table-td">Text</td>
-                                <td class="k-table-td">Text</td>
-                            </tr>
-                            <tr class="k-table-row k-detail-row">
-                                <td class="k-table-td k-hierarchy-cell"></td>
-                                <td class="k-table-td k-detail-cell" colspan="5">
-                                    <div style="background: rgb(204, 204, 204); padding: 10px;">Nested content</div>
-                                </td>
-                            </tr>
-                            <tr class="k-table-row k-table-alt-row k-alt k-master-row">
-                                <td class="k-table-td k-hierarchy-cell">
-                                    <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
-                                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path d="m160 256 192-128v256z"></path>
-                                        </svg>
-                                    </span>
-                                </td>
-                                <td class="k-table-td">2</td>
-                                <td class="k-table-td">Text</td>
-                                <td class="k-table-td">Text</td>
-                                <td class="k-table-td">Text</td>
-                                <td class="k-table-td">Text</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="k-grid-container">
+                    <div class="k-grid-content">
+                        <table class="k-grid-table k-table k-table-md">
+                            <colgroup>
+                                <col class="k-hierarchy-col">
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody class="k-table-tbody">
+                                <tr class="k-master-row k-expanded k-table-row">
+                                    <td class="k-hierarchy-cell k-table-td">
+                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M256 352 128 160h256z"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td class="k-table-td">1</td>
+                                    <td class="k-table-td">Text</td>
+                                    <td class="k-table-td">Text</td>
+                                    <td class="k-table-td">Text</td>
+                                    <td class="k-table-td">Text</td>
+                                </tr>
+                                <tr class="k-detail-row k-table-row">
+                                    <td class="k-hierarchy-cell k-table-td"></td>
+                                    <td colspan="5" class="k-detail-cell k-table-td">
+                                        <div style="background: rgb(204, 204, 204); padding: 10px;">Nested content</div>
+                                    </td>
+                                </tr>
+                                <tr class="k-table-alt-row k-alt k-master-row k-table-row">
+                                    <td class="k-hierarchy-cell k-table-td">
+                                        <span class="k-icon k-svg-icon k-svg-i-caret-alt-left">
+                                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="m160 256 192-128v256z"></path>
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td class="k-table-td">2</td>
+                                    <td class="k-table-td">Text</td>
+                                    <td class="k-table-td">Text</td>
+                                    <td class="k-table-td">Text</td>
+                                    <td class="k-table-td">Text</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
