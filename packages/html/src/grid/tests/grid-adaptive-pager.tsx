@@ -1,4 +1,4 @@
-import { Grid, GridPager } from '../../grid';
+import { Pager } from '../../pager';
 
 
 export default () =>(
@@ -11,10 +11,9 @@ export default () =>(
                     <div className="k-pane">
                         <div className="k-view k-widget">
                             <div className="k-stretched-view k-content">
-                                <Grid className="k-grid-display-block k-grid-mobile k-editable" pager={(
-                                    <GridPager adaptive info={false} pageSizes={false} />
-                                )}>
-                                </Grid>
+                                <div className="k-grid k-grid-md k-grid-display-block k-grid-mobile k-editable">
+                                    <Pager className="k-grid-pager" adaptive info={false} pageSizes={false} />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -27,10 +26,9 @@ export default () =>(
                     <div className="k-pane">
                         <div className="k-view k-widget">
                             <div className="k-stretched-view k-content">
-                                <Grid className="k-grid-display-block k-grid-mobile k-editable" pager={(
-                                    <GridPager adaptive info={false} pageSizes={false} dir="rtl" />
-                                )}>
-                                </Grid>
+                                <div className="k-grid k-grid-md k-grid-display-block k-grid-mobile k-editable">
+                                    <Pager className="k-grid-pager" adaptive info={false} pageSizes={false} dir="rtl" />
+                                </div>
                             </div>
                         </div>
                     </div>

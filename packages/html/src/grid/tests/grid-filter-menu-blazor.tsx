@@ -1,219 +1,276 @@
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer, GridContent, GridTable } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { Icon } from '../../icon';
+
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
-            <Grid className="telerik-blazor">
-                <GridHeader>
+            <div className="k-grid k-grid-md telerik-blazor">
+                <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable role="grid">
+                        <table className="k-table k-table-md k-grid-header-table" role="grid">
                             <colgroup>
                                 <col style={{ width: "65px" }} />
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell colspan={1}>
+                            <thead className="k-table-thead">
+                                <tr className="k-table-row">
+                                    <th className="k-table-th k-header" colSpan={1}>
                                         <Checkbox />
-                                    </GridHeaderCell>
-                                    <GridHeaderCell colspan={1} menu="filter" columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="Command"></GridHeaderCell>
-                                </TableRow>
-                            </TableThead>
-                        </GridHeaderTable>
+                                    </th>
+                                    <th className="k-table-th k-header" colSpan={1}>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                            <a className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header" colSpan={1}>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
-                </GridHeader>
-                <GridContainer>
-                    <GridContent className="k-virtual-content">
+                </div>
+                <div className="k-grid-container">
+                    <div className="k-grid-content k-virtual-content">
                         <div className="k-pos-relative">
                             <div className="k-virtual-position">
-                                <GridTable role="grid" style={{ height: 'auto' }}>
+                                <table role="grid" className="k-table k-table-md k-grid-table" style={{ height: 'auto' }}>
                                     <colgroup>
                                         <col style={{ width: "65px" }} />
                                         <col />
                                         <col />
                                     </colgroup>
-                                    <TableTbody>
-                                        <TableRow className="k-master-row">
-                                            <TableTd colspan={0}>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-master-row">
+                                            <td className="k-table-td" colSpan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />
                                                 </span>
-                                            </TableTd>
-                                            <TableTd colspan={0}>Product1</TableTd>
-                                            <TableTd className="k-command-cell" colspan={0}>
+                                            </td>
+                                            <td className="k-table-td" colSpan={0}>
+                                                Product1
+                                            </td>
+                                            <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
-                                            </TableTd>
-                                        </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
-                                            <TableTd colspan={0}>
+                                            </td>
+                                        </tr>
+                                        <tr className="k-table-row k-table-alt-row k-master-row k-alt">
+                                            <td className="k-table-td" colSpan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />
                                                 </span>
-                                            </TableTd>
-                                            <TableTd colspan={0}>Product2</TableTd>
-                                            <TableTd className="k-command-cell" colspan={0}>
+                                            </td>
+                                            <td className="k-table-td" colSpan={0}>
+                                                Product2
+                                            </td>
+                                            <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
-                                            </TableTd>
-                                        </TableRow>
-                                    </TableTbody>
-                                </GridTable>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         <div className="k-height-container">
                             <div></div>
                         </div>
-                    </GridContent>
-                </GridContainer>
-            </Grid>
-
+                    </div>
+                </div>
+            </div>
             <h3>Sortable</h3>
-            <Grid className="telerik-blazor">
-                <GridHeader>
+            <div className="k-grid k-grid-md telerik-blazor">
+                <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable role="grid">
+                        <table className="k-table k-table-md k-grid-header-table" role="grid">
                             <colgroup>
                                 <col style={{ width: "65px" }} />
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell colspan={1}>
+                            <thead className="k-table-thead">
+                                <tr className="k-table-row">
+                                    <th className="k-table-th k-header" colSpan={1}>
                                         <Checkbox />
-                                    </GridHeaderCell>
-                                    <GridHeaderCell colspan={1} sortable menu="filter" columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell colspan={1} columnTitle="Command"></GridHeaderCell>
-                                </TableRow>
-                            </TableThead>
-                        </GridHeaderTable>
+                                    </th>
+                                    <th className="k-table-th k-header" colSpan={1}>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">
+                                                    Name
+                                                </span>
+                                                <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
+                                            </span>
+                                        </span>
+                                        <div className="k-grid-filter-menu k-grid-header-menu">
+                                            <Icon icon="filter" />
+                                        </div>
+                                    </th>
+                                    <th className="k-table-th k-header" colSpan={1}>
+                                        Command
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
-                </GridHeader>
-                <GridContainer>
-                    <GridContent className="k-virtual-content">
+                </div>
+                <div className="k-grid-container">
+                    <div className="k-grid-content k-virtual-content">
                         <div className="k-pos-relative">
                             <div className="k-virtual-position">
-                                <GridTable role="grid" style={{ height: 'auto' }}>
+                                <table role="grid" className="k-table k-table-md k-grid-table" style={{ height: 'auto' }}>
                                     <colgroup>
                                         <col style={{ width: "65px" }} />
-                                        <col className="k-sorted" />
+                                        <col />
                                         <col />
                                     </colgroup>
-                                    <TableTbody>
-                                        <TableRow className="k-master-row">
-                                            <TableTd colspan={0}>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-master-row">
+                                            <td className="k-table-td" colSpan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />
                                                 </span>
-                                            </TableTd>
-                                            <TableTd colspan={0}>Product1</TableTd>
-                                            <TableTd className="k-command-cell" colspan={0}>
+                                            </td>
+                                            <td className="k-table-td" colSpan={0}>
+                                                Product1
+                                            </td>
+                                            <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
-                                            </TableTd>
-                                        </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
-                                            <TableTd colspan={0}>
+                                            </td>
+                                        </tr>
+                                        <tr className="k-table-row k-table-alt-row k-master-row k-alt">
+                                            <td className="k-table-td" colSpan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />
                                                 </span>
-                                            </TableTd>
-                                            <TableTd colspan={0}>Product2</TableTd>
-                                            <TableTd className="k-command-cell" colspan={0}>
+                                            </td>
+                                            <td className="k-table-td" colSpan={0}>
+                                                Product2
+                                            </td>
+                                            <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
-                                            </TableTd>
-                                        </TableRow>
-                                    </TableTbody>
-                                </GridTable>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         <div className="k-height-container">
                             <div></div>
                         </div>
-                    </GridContent>
-                </GridContainer>
-            </Grid>
-
+                    </div>
+                </div>
+            </div>
             <h3>Sortable & Resizable</h3>
-            <Grid className="telerik-blazor">
-                <GridHeader>
+            <div className="k-grid k-grid-md telerik-blazor">
+                <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
-                        <GridHeaderTable role="grid">
+                        <table className="k-table k-table-md k-grid-header-table" role="grid">
                             <colgroup>
                                 <col style={{ width: "65px" }} />
                                 <col />
                                 <col />
                             </colgroup>
-                            <TableThead>
-                                <TableRow>
-                                    <GridHeaderCell resizable colspan={1}>
+                            <thead className="k-table-thead">
+                                <tr className="k-table-row">
+                                    <th className="k-table-th k-header" colSpan={1}>
                                         <Checkbox />
-                                    </GridHeaderCell>
-                                    <GridHeaderCell resizable sortable colspan={1} menu="filter" columnTitle="Name"></GridHeaderCell>
-                                    <GridHeaderCell resizable colspan={1} columnTitle="Command"></GridHeaderCell>
-                                </TableRow>
-                            </TableThead>
-                        </GridHeaderTable>
+                                        <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
+                                    </th>
+                                    <th className="k-table-th k-header" colSpan={1}>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">
+                                                    Name
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <div className="k-grid-filter-menu k-grid-header-menu">
+                                            <Icon icon="filter" />
+                                        </div>
+                                        <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
+                                    </th>
+                                    <th className="k-table-th k-header" colSpan={1}>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                        </span>
+                                        <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
-                </GridHeader>
-                <GridContainer>
-                    <GridContent className="k-virtual-content">
+                </div>
+                <div className="k-grid-container">
+                    <div className="k-grid-content k-virtual-content">
                         <div className="k-pos-relative">
                             <div className="k-virtual-position">
-                                <GridTable role="grid" style={{ height: 'auto' }}>
+                                <table role="grid" className="k-table k-table-md k-grid-table" style={{ height: 'auto' }}>
                                     <colgroup>
                                         <col style={{ width: "65px" }} />
-                                        <col className="k-sorted" />
+                                        <col />
                                         <col />
                                     </colgroup>
-                                    <TableTbody>
-                                        <TableRow className="k-master-row">
-                                            <TableTd colspan={0}>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-master-row">
+                                            <td className="k-table-td" colSpan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />
                                                 </span>
-                                            </TableTd>
-                                            <TableTd colspan={0}>Product1</TableTd>
-                                            <TableTd className="k-command-cell" colspan={0}>
+                                            </td>
+                                            <td className="k-table-td" colSpan={0}>
+                                                Product1
+                                            </td>
+                                            <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
-                                            </TableTd>
-                                        </TableRow>
-                                        <TableRow className="k-master-row k-alt" alt>
-                                            <TableTd colspan={0}>
+                                            </td>
+                                        </tr>
+                                        <tr className="k-table-row k-table-alt-row k-master-row k-alt">
+                                            <td className="k-table-td" colSpan={0}>
                                                 <span>
                                                     <Checkbox className="k-grid-checkbox" />
                                                 </span>
-                                            </TableTd>
-                                            <TableTd colspan={0}>Product2</TableTd>
-                                            <TableTd className="k-command-cell" colspan={0}>
+                                            </td>
+                                            <td className="k-table-td" colSpan={0}>
+                                                Product2
+                                            </td>
+                                            <td className="k-table-td k-command-cell" colSpan={0}>
                                                 <span>
                                                     <Button icon="trash">Delete</Button>
                                                 </span>
-                                            </TableTd>
-                                        </TableRow>
-                                    </TableTbody>
-                                </GridTable>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         <div className="k-height-container">
                             <div></div>
                         </div>
-                    </GridContent>
-                </GridContainer>
-            </Grid>
+                    </div>
+                </div>
+            </div>
         </div>
     </>
 );

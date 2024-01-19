@@ -1,6 +1,5 @@
+import { Pager } from '../../pager';
 import { SkeletonNormal } from '../../skeleton';
-import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, GridContainer,GridContent, GridTable, GridPager } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
 export default () =>(
@@ -9,59 +8,67 @@ export default () =>(
 
             <span className="col-2">Grid with selection aggregates container</span>
             <section className="col-2">
-                <Grid className="k-grid-no-scrollbar" pager={( <GridPager />)}>
-                    <GridHeader>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
+                    <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <GridHeaderTable>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
-                                <TableThead>
-                                    <TableRow>
-                                        <GridHeaderCell columnTitle="100px"></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="no width"></GridHeaderCell>
-                                    </TableRow>
-                                </TableThead>
-                            </GridHeaderTable>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">100px</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">no width</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
-                    </GridHeader>
-                    <GridContainer>
-                        <GridContent>
-                            <GridTable>
-                                <colgroup>
-                                    <col style={{ width: "100px" }} />
-                                    <col />
-                                </colgroup>
-                                <TableTbody>
-                                    <TableRow>
-                                        <TableTd>1</TableTd>
-                                        <TableTd>Row</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-alt" alt>
-                                        <TableTd className="k-selected">2</TableTd>
-                                        <TableTd className="k-selected">Alt row</TableTd>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableTd className="k-selected">3</TableTd>
-                                        <TableTd>
+                    </div>
+                    <div className="k-grid-content">
+                        <table className="k-table k-table-md k-grid-table">
+                            <colgroup>
+                                <col style={{ width: "100px" }} />
+                                <col />
+                            </colgroup>
+                            <tbody className="k-table-tbody">
+                                <tr className="k-table-row">
+                                    <td className="k-table-td">1</td>
+                                    <td className="k-table-td">Row</td>
+                                </tr>
+                                <tr className="k-table-row k-table-alt-row k-alt">
+                                    <td className="k-table-td k-selected">2</td>
+                                    <td className="k-table-td k-selected">Alt row</td>
+                                </tr>
+                                <tr className="k-table-row">
+                                    <td className="k-table-td k-selected">3</td>
+                                    <td className="k-table-td">
                                         This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
-                                        </TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-alt" alt>
-                                        <TableTd className="k-selected">4</TableTd>
-                                        <TableTd><SkeletonNormal animation={false} /></TableTd>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableTd>5</TableTd>
-                                        <TableTd>
-                                            <SkeletonNormal animation={false}></SkeletonNormal>
-                                        </TableTd>
-                                    </TableRow>
-                                </TableTbody>
-                            </GridTable>
-                        </GridContent>
-                    </GridContainer>
+                                    </td>
+                                </tr>
+                                <tr className="k-table-row k-table-alt-row k-alt">
+                                    <td className="k-table-td k-selected">4</td>
+                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
+                                </tr>
+                                <tr className="k-table-row">
+                                    <td className="k-table-td">5</td>
+                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div className="k-selection-aggregates k-grid-selection-aggregates">
                         <div className="k-selection-aggregates-item">
                             <span className="k-selection-aggregates-item-text">Sum: </span>
@@ -84,63 +91,73 @@ export default () =>(
                             <span className="k-selection-aggregates-item-value">4</span>
                         </div>
                     </div>
-                </Grid>
+                    <Pager className="k-grid-pager" />
+                </div>
             </section>
+
             <span className="col-2">Grid with selection aggregates container (RTL)</span>
             <section className="col-2 k-rtl">
-                <Grid className="k-grid-no-scrollbar" pager={( <GridPager dir="rtl" />)}>
-                    <GridHeader>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
+                    <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <GridHeaderTable>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
-                                <TableThead>
-                                    <TableRow>
-                                        <GridHeaderCell columnTitle="100px"></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="no width"></GridHeaderCell>
-                                    </TableRow>
-                                </TableThead>
-                            </GridHeaderTable>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">100px</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">no width</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
-                    </GridHeader>
-                    <GridContainer>
-                        <GridContent>
-                            <GridTable>
-                                <colgroup>
-                                    <col style={{ width: "100px" }} />
-                                    <col />
-                                </colgroup>
-                                <TableTbody>
-                                    <TableRow>
-                                        <TableTd>1</TableTd>
-                                        <TableTd>Row</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-alt" alt>
-                                        <TableTd className="k-selected">2</TableTd>
-                                        <TableTd className="k-selected">Alt row</TableTd>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableTd className="k-selected">3</TableTd>
-                                        <TableTd>
+                    </div>
+                    <div className="k-grid-content">
+                        <table className="k-table k-table-md k-grid-table">
+                            <colgroup>
+                                <col style={{ width: "100px" }} />
+                                <col />
+                            </colgroup>
+                            <tbody className="k-table-tbody">
+                                <tr className="k-table-row">
+                                    <td className="k-table-td">1</td>
+                                    <td className="k-table-td">Row</td>
+                                </tr>
+                                <tr className="k-table-row k-table-alt-row k-alt">
+                                    <td className="k-table-td k-selected">2</td>
+                                    <td className="k-table-td k-selected">Alt row</td>
+                                </tr>
+                                <tr className="k-table-row">
+                                    <td className="k-table-td k-selected">3</td>
+                                    <td className="k-table-td">
                                         This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
-                                        </TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-alt" alt>
-                                        <TableTd className="k-selected">4</TableTd>
-                                        <TableTd><SkeletonNormal animation={false} /></TableTd>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableTd>5</TableTd>
-                                        <TableTd>
-                                            <SkeletonNormal animation={false}></SkeletonNormal>
-                                        </TableTd>
-                                    </TableRow>
-                                </TableTbody>
-                            </GridTable>
-                        </GridContent>
-                    </GridContainer>
+                                    </td>
+                                </tr>
+                                <tr className="k-table-row k-table-alt-row k-alt">
+                                    <td className="k-table-td k-selected">4</td>
+                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
+                                </tr>
+                                <tr className="k-table-row">
+                                    <td className="k-table-td">5</td>
+                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div className="k-selection-aggregates k-grid-selection-aggregates">
                         <div className="k-selection-aggregates-item">
                             <span className="k-selection-aggregates-item-text">Sum: </span>
@@ -163,8 +180,10 @@ export default () =>(
                             <span className="k-selection-aggregates-item-value">4</span>
                         </div>
                     </div>
-                </Grid>
+                    <Pager className="k-grid-pager" dir="rtl" />
+                </div>
             </section>
+
         </div>
     </>
 );

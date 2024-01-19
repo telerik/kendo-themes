@@ -1,5 +1,4 @@
-import { Grid, GridHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager } from '../../grid';
-import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
+import { Pager } from '../../pager';
 
 
 export default () =>(
@@ -10,92 +9,119 @@ export default () =>(
             <span>Angular grid</span>
 
             <section>
-                <Grid className="k-grid-no-scrollbar" pager={( <GridPager className="k-focus" /> )}>
-                    <GridHeader>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
+                    <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <GridHeaderTable>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
-                                <TableThead>
-                                    <TableRow>
-                                        <GridHeaderCell columnTitle="100px" ></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="no width" ></GridHeaderCell>
-                                    </TableRow>
-                                </TableThead>
-                            </GridHeaderTable>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">100px</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">no width</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
-                    </GridHeader>
-                    <GridContainer>
-                        <GridContent>
-                            <GridTable>
-                                <colgroup>
-                                    <col style={{ width: "100px" }} />
-                                    <col />
-                                </colgroup>
-                                <TableTbody>
-                                    <TableRow>
-                                        <TableTd>1</TableTd>
-                                        <TableTd>Row</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-alt" alt>
-                                        <TableTd>2</TableTd>
-                                        <TableTd>Alt row</TableTd>
-                                    </TableRow>
-                                </TableTbody>
-                            </GridTable>
-                        </GridContent>
-                    </GridContainer>
-                </Grid>
+                    </div>
+                    <div className="k-grid-content">
+                        <table className="k-table k-table-md k-grid-table">
+                            <colgroup>
+                                <col style={{ width: "100px" }} />
+                                <col />
+                            </colgroup>
+                            <tbody className="k-table-tbody">
+                                <tr className="k-table-row">
+                                    <td className="k-table-td">1</td>
+                                    <td className="k-table-td">Row</td>
+                                </tr>
+                                <tr className="k-table-row k-table-alt-row k-alt">
+                                    <td className="k-table-td">2</td>
+                                    <td className="k-table-td">Alt row</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <Pager className="k-grid-pager" focus />
+                </div>
             </section>
 
             <section>
-                <Grid className="k-grid-no-scrollbar" _renderAriaRoot pager={( <GridPager className="k-focus" /> )}>
-                    {/* add padding-left or -right for scrollbar width */}
-                    <GridHeader>
-                        <div className="k-grid-header-wrap">
-                            <GridHeaderTable>
-                                <colgroup>
-                                    <col style={{ width: "100px" }}/>
-                                    <col />
-                                </colgroup>
-                                <TableThead>
-                                    <TableRow>
-                                        <GridHeaderCell columnTitle="100px" ></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="no width" ></GridHeaderCell>
-                                    </TableRow>
-                                </TableThead>
-                            </GridHeaderTable>
-                        </div>
-                    </GridHeader>
-                    <GridContainer>
-                        <GridContent>
-                            <div className="k-grid-table-wrap">
-                                <GridTable>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
+                    <div className="k-grid-aria-root">
+                        {/* add padding-left or -right for scrollbar width */}
+                        <div className="k-grid-header">
+                            <div className="k-grid-header-wrap">
+                                <table className="k-table k-table-md k-grid-header-table">
                                     <colgroup>
                                         <col style={{ width: "100px" }} />
                                         <col />
                                     </colgroup>
-                                    <TableTbody>
-                                        <TableRow>
-                                            <TableTd>1</TableTd>
-                                            <TableTd>Row</TableTd>
-                                        </TableRow>
-                                        <TableRow className="k-alt" alt>
-                                            <TableTd>2</TableTd>
-                                            <TableTd>Alt row</TableTd>
-                                        </TableRow>
-                                    </TableTbody>
-                                </GridTable>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">100px</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">no width</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
                             </div>
-                            <div className="k-height-container">
-                                {/* set height to scroll height (virtual scrolling) */}
-                                <div style={{ height: '0px' }}></div>
+                        </div>
+
+                        <div className="k-grid-container">
+                            <div className="k-grid-content k-virtual-content">
+                                <div>
+                                    <table className="k-table k-table-md k-grid-table">
+                                        <colgroup>
+                                            <col style={{ width: "100px" }} />
+                                            <col />
+                                        </colgroup>
+                                        <tbody className="k-table-tbody">
+                                            <tr className="k-table-row">
+                                                <td className="k-table-td">1</td>
+                                                <td className="k-table-td">Row</td>
+                                            </tr>
+                                            <tr className="k-table-row k-table-alt-row k-alt">
+                                                <td className="k-table-td">2</td>
+                                                <td className="k-table-td">Alt row</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div className="k-height-container">
+                                    {/* set height to scroll height (virtual scrolling) */}
+                                    <div style={{ height: '0px' }}></div>
+                                </div>
                             </div>
-                        </GridContent>
-                    </GridContainer>
-                </Grid>
+                        </div>
+                    </div>
+                    <Pager className="k-grid-pager" focus />
+                </div>
             </section>
 
 
@@ -103,92 +129,119 @@ export default () =>(
             <span>Angular grid pager top</span>
 
             <section>
-                <Grid className="k-grid-no-scrollbar" pagerPosition="top" pager={ <GridPager className="k-grid-pager-top" /> }>
-                    <GridHeader>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
+                    <Pager className="k-grid-pager k-grid-pager-top" />
+                    <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <GridHeaderTable>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
-                                <TableThead>
-                                    <TableRow>
-                                        <GridHeaderCell columnTitle="100px" ></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="no width" ></GridHeaderCell>
-                                    </TableRow>
-                                </TableThead>
-                            </GridHeaderTable>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">100px</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">no width</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
                         </div>
-                    </GridHeader>
-                    <GridContainer>
-                        <GridContent>
-                            <GridTable>
-                                <colgroup>
-                                    <col style={{ width: "100px" }} />
-                                    <col />
-                                </colgroup>
-                                <TableTbody>
-                                    <TableRow>
-                                        <TableTd>1</TableTd>
-                                        <TableTd>Row</TableTd>
-                                    </TableRow>
-                                    <TableRow className="k-alt" alt>
-                                        <TableTd>2</TableTd>
-                                        <TableTd>Alt row</TableTd>
-                                    </TableRow>
-                                </TableTbody>
-                            </GridTable>
-                        </GridContent>
-                    </GridContainer>
-                </Grid>
+                    </div>
+                    <div className="k-grid-content">
+                        <table className="k-table k-table-md k-grid-table">
+                            <colgroup>
+                                <col style={{ width: "100px" }} />
+                                <col />
+                            </colgroup>
+                            <tbody className="k-table-tbody">
+                                <tr className="k-table-row">
+                                    <td className="k-table-td">1</td>
+                                    <td className="k-table-td">Row</td>
+                                </tr>
+                                <tr className="k-table-row k-table-alt-row k-alt">
+                                    <td className="k-table-td">2</td>
+                                    <td className="k-table-td">Alt row</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </section>
 
             <section>
-                <Grid className="k-grid-no-scrollbar" _renderAriaRoot pagerPosition="top" pager={ <GridPager className="k-grid-pager-top" /> }>
-                    {/* add padding-left or -right for scrollbar width */}
-                    <GridHeader>
-                        <div className="k-grid-header-wrap">
-                            <GridHeaderTable>
-                                <colgroup>
-                                    <col style={{ width: "100px" }}/>
-                                    <col />
-                                </colgroup>
-                                <TableThead>
-                                    <TableRow>
-                                        <GridHeaderCell columnTitle="100px" ></GridHeaderCell>
-                                        <GridHeaderCell columnTitle="no width" ></GridHeaderCell>
-                                    </TableRow>
-                                </TableThead>
-                            </GridHeaderTable>
-                        </div>
-                    </GridHeader>
-                    <GridContainer>
-                        <GridContent>
-                            <div className="k-grid-table-wrap">
-                                <GridTable>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
+                    <Pager className="k-grid-pager k-grid-pager-top" />
+                    <div className="k-grid-aria-root">
+                        {/* add padding-left or -right for scrollbar width */}
+                        <div className="k-grid-header">
+                            <div className="k-grid-header-wrap">
+                                <table className="k-table k-table-md k-grid-header-table">
                                     <colgroup>
                                         <col style={{ width: "100px" }} />
                                         <col />
                                     </colgroup>
-                                    <TableTbody>
-                                        <TableRow>
-                                            <TableTd>1</TableTd>
-                                            <TableTd>Row</TableTd>
-                                        </TableRow>
-                                        <TableRow className="k-alt" alt>
-                                            <TableTd>2</TableTd>
-                                            <TableTd>Alt row</TableTd>
-                                        </TableRow>
-                                    </TableTbody>
-                                </GridTable>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">100px</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">no width</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
                             </div>
-                            <div className="k-height-container">
-                                {/* set height to scroll height (virtual scrolling) */}
-                                <div style={{ height: '0px' }}></div>
+                        </div>
+
+                        <div className="k-grid-container">
+                            <div className="k-grid-content k-virtual-content">
+                                <div>
+                                    <table className="k-table k-table-md k-grid-table">
+                                        <colgroup>
+                                            <col style={{ width: "100px" }} />
+                                            <col />
+                                        </colgroup>
+                                        <tbody className="k-table-tbody">
+                                            <tr className="k-table-row">
+                                                <td className="k-table-td">1</td>
+                                                <td className="k-table-td">Row</td>
+                                            </tr>
+                                            <tr className="k-table-row k-table-alt-row k-alt">
+                                                <td className="k-table-td">2</td>
+                                                <td className="k-table-td">Alt row</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div className="k-height-container">
+                                    {/* set height to scroll height (virtual scrolling) */}
+                                    <div style={{ height: '0px' }}></div>
+                                </div>
                             </div>
-                        </GridContent>
-                    </GridContainer>
-                </Grid>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </div>
