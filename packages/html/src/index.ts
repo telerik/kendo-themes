@@ -43,6 +43,7 @@ export * from './coloreditor/index';
 export * from './captcha/index';
 export * from './colorpicker/index';
 export * from './combobox/index';
+export * from './calendar/index';
 export * from './dateinput/index';
 export * from './datepicker/index';
 export * from './timepicker/index';
