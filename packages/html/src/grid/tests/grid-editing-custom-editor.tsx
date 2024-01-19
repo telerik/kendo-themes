@@ -8,227 +8,194 @@ import { MultiSelect } from '../../multiselect';
 import { NumericTextbox } from '../../numerictextbox';
 import { Switch } from '../../switch';
 import { TimePicker } from '../../timepicker';
+import { Grid, GridHeader, GridHeaderCell, GridHeaderTable, GridContainer, GridContent, GridTable } from '../../grid';
+import { TableThead, TableTbody, TableRow, TableTd } from '../../table';
 
 
 export default () =>(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <div className="k-grid k-grid-md k-grid-no-scrollbar">
-                <div className="k-grid-aria-root">
-                    <div className="k-grid-header">
-                        <div className="k-grid-header-wrap">
-                            <table className="k-table k-table-md k-grid-header-table">
+            <Grid _renderAriaRoot className="k-grid-no-scrollbar">
+                <GridHeader>
+                    <div className="k-grid-header-wrap">
+                        <GridHeaderTable>
+                            <colgroup>
+                                <col style={{ width: "68px" }} /><col /><col /><col /><col />
+                            </colgroup>
+                            <TableThead>
+                                <TableRow>
+                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Autocomplete"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Combobox"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Dropdown"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Multiselect"></GridHeaderCell>
+                                </TableRow>
+                            </TableThead>
+                        </GridHeaderTable>
+                    </div>
+                </GridHeader>
+                <GridContainer>
+                    <GridContent>
+                        <div>
+                            <GridTable>
                                 <colgroup>
                                     <col style={{ width: "68px" }} /><col /><col /><col /><col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row">
-                                        <th className="k-table-th k-header"></th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Autocomplete</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Combobox</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Dropdown</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Multiselect</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                <TableTbody>
+                                    <TableRow className="k-grid-edit-row">
+                                        <TableTd>LTR</TableTd>
+                                        <TableTd>
+                                            <Autocomplete placeholder="Autocomplete..." />
+                                        </TableTd>
+                                        <TableTd>
+                                            <Combobox placeholder="Combobox..." />
+                                        </TableTd>
+                                        <TableTd>
+                                            <DropdownList placeholder="DropdownList..." />
+                                        </TableTd>
+                                        <TableTd>
+                                            <MultiSelect placeholder="Multiselect..." />
+                                        </TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-grid-edit-row k-alt" alt>
+                                        <TableTd>RTL</TableTd>
+                                        <TableTd>
+                                            <Autocomplete placeholder="Autocomplete..." className="k-rtl" />
+                                        </TableTd>
+                                        <TableTd>
+                                            <Combobox placeholder="Combobox..." className="k-rtl" />
+                                        </TableTd>
+                                        <TableTd>
+                                            <DropdownList placeholder="DropdownList..." className="k-rtl" />
+                                        </TableTd>
+                                        <TableTd>
+                                            <MultiSelect placeholder="Multiselect..." className="k-rtl" />
+                                        </TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
                         </div>
-                    </div>
-                    <div className="k-grid-container">
-                        <div className="k-grid-content">
-                            <div>
-                                <table className="k-table k-table-md k-grid-table">
-                                    <colgroup>
-                                        <col style={{ width: "68px" }} /><col /><col /><col /><col />
-                                    </colgroup>
-                                    <tbody className="k-table-tbody">
-                                        <tr className="k-table-row k-grid-edit-row">
-                                            <td className="k-table-td">LTR</td>
-                                            <td className="k-table-td"><Autocomplete placeholder="Autocomplete..." /></td>
-                                            <td className="k-table-td"><Combobox placeholder="Combobox..." /></td>
-                                            <td className="k-table-td"><DropdownList placeholder="DropdownList..." /></td>
-                                            <td className="k-table-td"><MultiSelect placeholder="Multiselect..." /></td>
-                                        </tr>
-                                        <tr className="k-table-row k-table-alt-row k-alt k-grid-edit-row">
-                                            <td className="k-table-td">RTL</td>
-                                            <td className="k-table-td"><Autocomplete placeholder="Autocomplete..." className="k-rtl" /></td>
-                                            <td className="k-table-td"><Combobox placeholder="Combobox..." className="k-rtl" /></td>
-                                            <td className="k-table-td"><DropdownList placeholder="DropdownList..." className="k-rtl" /></td>
-                                            <td className="k-table-td"><MultiSelect placeholder="Multiselect..." className="k-rtl" /></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div >
-                </div>
-            </div>
+                    </GridContent>
+                </GridContainer>
+            </Grid>
 
-            <div className="k-grid k-grid-md k-grid-no-scrollbar">
-                <div className="k-grid-aria-root" style={{ overflow: "visible" }}>
-                    <div className="k-grid-header">
-                        <div className="k-grid-header-wrap">
-                            <table className="k-table k-table-md k-grid-header-table">
+            <Grid _renderAriaRoot className="k-grid-no-scrollbar">
+                <GridHeader>
+                    <div className="k-grid-header-wrap">
+                        <GridHeaderTable>
+                            <colgroup>
+                                <col style={{ width: "68px" }} /><col /><col /><col /><col />
+                            </colgroup>
+                            <TableThead>
+                                <TableRow>
+                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Datepicker"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Timepicker"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Datetime"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Dateinput"></GridHeaderCell>
+                                </TableRow>
+                            </TableThead>
+                        </GridHeaderTable>
+                    </div>
+                </GridHeader>
+                <GridContainer style={{ overflow: "visible" }}>
+                    <GridContent style={{ overflow: "visible" }}>
+                        <div>
+                            <GridTable>
                                 <colgroup>
                                     <col style={{ width: "68px" }} /><col /><col /><col /><col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row">
-                                        <th className="k-table-th k-header"></th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Datepicker</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Timepicker</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Datetime</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Dateinput</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                <TableTbody>
+                                    <TableRow className="k-grid-edit-row">
+                                        <TableTd>LTR</TableTd>
+                                        <TableTd>
+                                            <DatePicker placeholder="DatePicker..." />
+                                        </TableTd>
+                                        <TableTd>
+                                            <TimePicker placeholder="TimePicker..." />
+                                        </TableTd>
+                                        <TableTd>
+                                            <DateTimePicker placeholder="DateTimePicker..." />
+                                        </TableTd>
+                                        <TableTd>
+                                            <DateInput placeholder="DateInput..." />
+                                        </TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-grid-edit-row k-alt" alt>
+                                        <TableTd>RTL</TableTd>
+                                        <TableTd>
+                                            <DatePicker placeholder="DatePicker..." className="k-rtl"/>
+                                        </TableTd>
+                                        <TableTd>
+                                            <TimePicker placeholder="TimePicker..." className="k-rtl"/>
+                                        </TableTd>
+                                        <TableTd>
+                                            <DateTimePicker placeholder="DateTimePicker..." className="k-rtl"/>
+                                        </TableTd>
+                                        <TableTd>
+                                            <DateInput placeholder="DateInput..." className="k-rtl"/>
+                                        </TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
                         </div>
-                    </div>
-                    <div className="k-grid-container" style={{ overflow: "visible" }}>
-                        <div className="k-grid-content" style={{ overflow: "visible" }}>
-                            <div>
-                                <table className="k-table k-table-md k-grid-table">
-                                    <colgroup>
-                                        <col style={{ width: "68px" }} /><col /><col /><col /><col />
-                                    </colgroup>
-                                    <tbody className="k-table-tbody">
-                                        <tr className="k-table-row k-grid-edit-row">
-                                            <td className="k-table-td">LTR</td>
-                                            <td className="k-table-td"><DatePicker placeholder="DatePicker..." /></td>
-                                            <td className="k-table-td"><TimePicker placeholder="TimePicker..." /></td>
-                                            <td className="k-table-td"><DateTimePicker placeholder="DateTimePicker..." /></td>
-                                            <td className="k-table-td"><DateInput placeholder="DateInput..." /></td>
-                                        </tr>
-                                        <tr className="k-table-row k-table-alt-row k-alt k-grid-edit-row">
-                                            <td className="k-table-td">RTL</td>
-                                            <td className="k-table-td"><DatePicker placeholder="DatePicker..." className="k-rtl"/></td>
-                                            <td className="k-table-td"><TimePicker placeholder="TimePicker..." className="k-rtl" /></td>
-                                            <td className="k-table-td"><DateTimePicker placeholder="DateTimePicker..." className="k-rtl" /></td>
-                                            <td className="k-table-td"><DateInput placeholder="DateInput..." className="k-rtl" /></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div >
-                </div>
-            </div>
+                    </GridContent>
+                </GridContainer>
+            </Grid>
 
-            <div className="k-grid k-grid-md k-grid-no-scrollbar">
-                <div className="k-grid-aria-root">
-                    <div className="k-grid-header">
-                        <div className="k-grid-header-wrap">
-                            <table className="k-table k-table-md k-grid-header-table">
+            <Grid _renderAriaRoot className="k-grid-no-scrollbar">
+                <GridHeader>
+                    <div className="k-grid-header-wrap">
+                        <GridHeaderTable>
+                            <colgroup>
+                                <col style={{ width: "68px" }} /><col /><col /><col />
+                            </colgroup>
+                            <TableThead>
+                                <TableRow>
+                                    <GridHeaderCell></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Numeric"></GridHeaderCell>
+                                    <GridHeaderCell columnTitle="Switch"></GridHeaderCell>
+                                    <GridHeaderCell></GridHeaderCell>
+                                </TableRow>
+                            </TableThead>
+                        </GridHeaderTable>
+                    </div>
+                </GridHeader>
+                <GridContainer>
+                    <GridContent>
+                        <div>
+                            <GridTable>
                                 <colgroup>
                                     <col style={{ width: "68px" }} /><col /><col /><col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row">
-                                        <th className="k-table-th k-header"></th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Numeric</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Switch</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header"></th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                <TableTbody>
+                                    <TableRow className="k-grid-edit-row">
+                                        <TableTd>LTR</TableTd>
+                                        <TableTd>
+                                            <NumericTextbox placeholder="Numeric..." />
+                                        </TableTd>
+                                        <TableTd>
+                                            <Switch checked/>
+                                        </TableTd>
+                                        <TableTd></TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-grid-edit-row k-alt" alt>
+                                        <TableTd>RTL</TableTd>
+                                        <TableTd>
+                                            <NumericTextbox placeholder="Numeric..." className="k-rtl" />
+                                        </TableTd>
+                                        <TableTd>
+                                            <Switch checked className="k-rtl" />
+                                        </TableTd>
+                                        <TableTd></TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
                         </div>
-                    </div>
-                    <div className="k-grid-container">
-                        <div className="k-grid-content">
-                            <div>
-                                <table className="k-table k-table-md k-grid-table">
-                                    <colgroup>
-                                        <col style={{ width: "68px" }} /><col /><col /><col />
-                                    </colgroup>
-                                    <tbody className="k-table-tbody">
-                                        <tr className="k-table-row k-grid-edit-row">
-                                            <td className="k-table-td">LTR</td>
-                                            <td className="k-table-td">
-                                                <NumericTextbox placeholder="Numeric..." />
-                                            </td>
-                                            <td className="k-table-td">
-                                                <Switch checked />
-                                            </td>
-                                            <td className="k-table-td"></td>
-                                        </tr>
-                                        <tr className="k-table-row k-table-alt-row k-alt k-grid-edit-row">
-                                            <td className="k-table-td">RTL</td>
-                                            <td className="k-table-td">
-                                                <NumericTextbox placeholder="Numeric..." className="k-rtl" />
-                                            </td>
-                                            <td className="k-table-td">
-                                                <Switch checked className="k-rtl" />
-                                            </td>
-                                            <td className="k-table-td"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div >
-                </div>
-            </div>
-
+                    </GridContent>
+                </GridContainer>
+            </Grid>
         </div>
     </>
 );

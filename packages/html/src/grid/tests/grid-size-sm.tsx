@@ -4,11 +4,11 @@ import { Chip, ChipAction, ChipList } from '../../chip';
 import { DropdownList } from '../../dropdownlist';
 import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
-import { Pager } from '../../pager';
 import { SkeletonNormal } from '../../skeleton';
 import { Textbox } from '../../textbox';
-import { Toolbar } from '../../toolbar';
 import { TooltipNormal } from '../../tooltip';
+import { Grid, GridHeader, GridGroupingHeader, GridContainer, GridContent, GridHeaderTable, GridHeaderCell, GridTable, GridPager, GridToolbar } from '../../grid';
+import { TableTh, TableTd, TableThead, TableRow, TableTbody } from '../../table';
 
 
 const styles = `
@@ -28,146 +28,97 @@ export default () =>(
             <span className="col-2">Grid</span>
 
             <section className="col-2">
-                <div className="k-grid k-grid-sm k-grid-no-scrollbar">
-                    <div className="k-grid-header">
+                <Grid size="small" className="k-grid-no-scrollbar" pager={( <GridPager size="small" /> )}>
+                    <GridHeader>
                         <div className="k-grid-header-wrap">
-                            <table className="k-table k-table-sm k-grid-header-table">
+                            <GridHeaderTable size="small">
                                 <colgroup>
                                     <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row">
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">100px</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">no width</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                <TableThead>
+                                    <TableRow>
+                                        <GridHeaderCell columnTitle="100px"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="no width"></GridHeaderCell>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                    <div className="k-grid-content">
-                        <table className="k-table k-table-sm k-grid-table">
-                            <colgroup>
-                                <col style={{ width: "100px" }} />
-                                <col />
-                            </colgroup>
-                            <tbody className="k-table-tbody">
-                                <tr className="k-table-row">
-                                    <td className="k-table-td">1</td>
-                                    <td className="k-table-td">Row</td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-alt">
-                                    <td className="k-table-td">2</td>
-                                    <td className="k-table-td">Alt row</td>
-                                </tr>
-                                <tr className="k-table-row">
-                                    <td className="k-table-td">3</td>
-                                    <td className="k-table-td">
+                    </GridHeader>
+                    <GridContainer>
+                        <GridContent>
+                            <GridTable size="small">
+                                <colgroup>
+                                    <col style={{ width: "100px" }} />
+                                    <col />
+                                </colgroup>
+                                <TableTbody>
+                                    <TableRow>
+                                        <TableTd>1</TableTd>
+                                        <TableTd>Row</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-alt" alt>
+                                        <TableTd>2</TableTd>
+                                        <TableTd>Alt row</TableTd>
+                                    </TableRow>
+                                    <TableRow>
+                                        <TableTd>3</TableTd>
+                                        <TableTd>
                                         This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-alt">
-                                    <td className="k-table-td">4</td>
-                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
-                                </tr>
-                                <tr className="k-table-row">
-                                    <td className="k-table-td">5</td>
-                                    <td className="k-table-td"><SkeletonNormal animation={false} /></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <Pager className="k-grid-pager" size="small" />
-                </div>
+                                        </TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-alt" alt>
+                                        <TableTd>4</TableTd>
+                                        <TableTd><SkeletonNormal animation={false} /></TableTd>
+                                    </TableRow>
+                                    <TableRow>
+                                        <TableTd>5</TableTd>
+                                        <TableTd><SkeletonNormal animation={false} /></TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
+                        </GridContent>
+                    </GridContainer>
+                </Grid>
             </section>
 
             <span className="col-2">Filtering</span>
             <section className="col-2">
-                <div className="k-grid k-grid-sm k-grid-no-scrollbar" style={{ height: "150px" }}>
-                    <div className="k-grid-header">
+                <Grid size="small" className="k-grid-no-scrollbar" style={{ height: "150px" }}>
+                    <GridHeader>
                         <div className="k-grid-header-wrap">
-                            <table className="k-table k-table-sm k-grid-header-table">
+                            <GridHeaderTable size="small">
                                 <colgroup>
                                     <col className="k-hierarchy-col" /><col /><col /><col /><col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row">
-                                        <th className="k-table-th k-header k-hierarchy-cell">
-                                        </th>
-                                        <th className="k-table-th k-header k-filterable">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Default</span>
-                                                </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header k-filterable k-hover">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Hover</span>
-                                                </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header k-filterable k-focus">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Focus</span>
-                                                </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header k-filterable k-active">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Active</span>
-                                                </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu k-active"><Icon icon="filter" /></a>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header k-filterable k-sorted">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Sorted</span>
-                                                    <span className="k-sort-icon"><Icon icon="sort-asc-small" /></span>
-                                                </span>
-                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                            </span>
-                                        </th>
-                                    </tr>
-                                    <tr className="k-table-row k-filter-row">
-                                        <th className="k-table-th">
+                                <TableThead>
+                                    <TableRow>
+                                        <GridHeaderCell className="k-hierarchy-cell"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Default" menu="filter"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Hover" menu="filter" hover></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Focus" menu="filter" focus></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Active" menu="filter" active></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Sorted" menu="filter" sortable></GridHeaderCell>
+                                    </TableRow>
+                                    <TableRow className="k-filter-row">
+                                        <TableTh>
                                             <div className="k-filtercell">
-                                                <div className="k-filtercell-wrapper">
-                                                </div>
+                                                <div className="k-filltercell-wrapper"></div>
                                             </div>
-                                        </th>
-                                        <th className="k-table-th">
+                                        </TableTh>
+                                        <TableTh>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
-                                                    <NumericTextbox />
+                                                    <NumericTextbox showClearButton={false} />
                                                     <div className="k-filtercell-operator">
                                                         <DropdownList className="k-dropdown-operator" arrowIconName="filter" />
                                                         {' '}
-                                                        <Button icon="filter-clear" disabled></Button>
+                                                        <Button disabled icon="filter-clear"></Button>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </th>
-                                        <th className="k-table-th">
+                                        </TableTh>
+                                        <TableTh>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <Textbox showClearButton={false} value="p" />
@@ -178,8 +129,8 @@ export default () =>(
                                                     </div>
                                                 </div>
                                             </div>
-                                        </th>
-                                        <th className="k-table-th">
+                                        </TableTh>
+                                        <TableTh>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <Textbox showClearButton={false} value="p" />
@@ -190,8 +141,8 @@ export default () =>(
                                                     </div>
                                                 </div>
                                             </div>
-                                        </th>
-                                        <th className="k-table-th">
+                                        </TableTh>
+                                        <TableTh>
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <Textbox showClearButton={false} value="p" />
@@ -202,239 +153,201 @@ export default () =>(
                                                     </div>
                                                 </div>
                                             </div>
-                                        </th>
-                                        <th className="k-table-th">
+                                        </TableTh>
+                                        <TableTh>
                                             <div className="k-filtercell">
-                                                <div className="k-filtercell-wrapper">
-                                                </div>
+                                                <div className="k-filtercell-wrapper"></div>
                                             </div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                        </TableTh>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                    <div className="k-grid-content">
-                        <table className="k-table k-table-sm k-grid-table">
-                            <colgroup>
-                                <col className="k-hierarchy-col" /><col /><col /><col /><col />
-                            </colgroup>
-                            <tbody className="k-table-tbody">
-                                <tr className="k-master-row k-table-row k-expanded">
-                                    <td className="k-hierarchy-cell k-table-td">
-                                        <Icon icon="caret-alt-down" />
-                                    </td>
-                                    <td className="k-table-td">1</td>
-                                    <td className="k-table-td">Text</td>
-                                    <td className="k-table-td">Text</td>
-                                    <td className="k-table-td">Text</td>
-                                    <td className="k-table-td">Text</td>
-                                </tr>
-                                <tr className="k-detail-row k-table-row">
-                                    <td className="k-hierarchy-cell k-table-td"></td>
-                                    <td className="k-detail-cell k-table-td" colSpan={5}>
-                                        {/* hierarchy child content */}
-                                        <div style={{ background: "#ccc", padding: "10px" }}>
+                    </GridHeader>
+                    <GridContainer>
+                        <GridContent>
+                            <GridTable size="small">
+                                <colgroup>
+                                    <col className="k-hierarchy-col" /><col /><col /><col /><col />
+                                </colgroup>
+                                <TableTbody>
+                                    <TableRow className="k-master-row k-expanded">
+                                        <TableTd className="k-hierarchy-cell">
+                                            <Icon icon="caret-alt-down" />
+                                        </TableTd>
+                                        <TableTd>1</TableTd>
+                                        <TableTd>Text</TableTd>
+                                        <TableTd>Text</TableTd>
+                                        <TableTd>Text</TableTd>
+                                        <TableTd>Text</TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-detail-row">
+                                        <TableTd className="k-hierarchy-cell"></TableTd>
+                                        <TableTd className="k-detail-cell" colspan={5}>
+                                            {/* hierarchy child content */}
+                                            <div style={{ background: "#ccc", padding: "10px" }}>
                                             Nested content
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-alt k-master-row">
-                                    <td className="k-hierarchy-cell k-table-td">
-                                        <Icon icon="caret-alt-right" />
-                                    </td>
-                                    <td className="k-table-td">2</td>
-                                    <td className="k-table-td">Text</td>
-                                    <td className="k-table-td">Text</td>
-                                    <td className="k-table-td">Text</td>
-                                    <td className="k-table-td">Text</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                                            </div>
+                                        </TableTd>
+                                    </TableRow>
+                                    <TableRow alt className="k-master-row k-alt">
+                                        <TableTd className="k-hierarchy-cell">
+                                            <Icon icon="caret-alt-right" />
+                                        </TableTd>
+                                        <TableTd>2</TableTd>
+                                        <TableTd>Text</TableTd>
+                                        <TableTd>Text</TableTd>
+                                        <TableTd>Text</TableTd>
+                                        <TableTd>Text</TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
+                        </GridContent>
+                    </GridContainer>
+                </Grid>
             </section>
 
             <span>Editing</span>
             <section className="col-2">
-                <div className="k-grid k-grid-sm k-grid-no-scrollbar">
-                    <Toolbar className="k-grid-toolbar">
+                <Grid size="small" className="k-grid-no-scrollbar" toolbar={(
+                    <GridToolbar>
                         <Button icon="plus">Add new record</Button>
-                    </Toolbar>
-                    <div className="k-grid-header">
+                    </GridToolbar>
+                )}>
+                    <GridHeader>
                         <div className="k-grid-header-wrap">
-                            <table className="k-table k-table-sm k-grid-header-table">
+                            <GridHeaderTable size="small">
                                 <colgroup>
                                     <col /><col /><col /><col style={{ width: "300px" }} />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row">
-                                        <th scope="col" className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Name</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th scope="col" className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Price</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th scope="col" className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Available</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th scope="col" className="k-table-th k-header">&nbsp;</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                <TableThead>
+                                    <TableRow>
+                                        <GridHeaderCell columnTitle="Name"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Price"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Available"></GridHeaderCell>
+                                        <GridHeaderCell>&nbsp;</GridHeaderCell>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                    <div className="k-grid-content">
-                        <table className="k-table k-table-sm k-grid-table" style={{ height: 'auto' }}>
-                            <colgroup>
-                                <col /><col /><col /><col style={{ width: "300px" }} />
-                            </colgroup>
-                            <tbody className="k-table-tbody">
-                                <tr className="k-table-row k-grid-edit-row">
-                                    <td className="k-table-td">
-                                        <Textbox value="Towel" required />
-                                    </td>
-                                    <td className="k-table-td">
-                                        <NumericTextbox invalid />
-                                        <TooltipNormal className="k-validator-tooltip k-invalid-msg"
-                                            themeColor="error"
-                                            callout="top"
-                                            icon="exclamation-circle"
-                                            content="Price"
-                                        />
-                                    </td>
-                                    <td className="k-table-td"><Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" /><label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label></td>
-                                    <td className="k-table-td k-command-cell">
-                                        <Button icon="check" themeColor="primary">Update</Button>
-                                        <Button icon="cancel">Cancel</Button>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-alt-row k-alt k-grid-edit-row">
-                                    <td className="k-table-td k-dirty-cell">
-                                        <span className="k-dirty"></span>
-                                        LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
-                                    </td>
-                                    <td className="k-table-td">18</td>
-                                    <td className="k-table-td">false</td>
-                                    <td className="k-table-td k-command-cell">
-                                        <Button icon="pencil">Edit</Button>
-                                        <Button icon="x">Delete</Button>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row">
-                                    <td className="k-table-td">Chang</td>
-                                    <td className="k-table-td">19</td>
-                                    <td className="k-table-td">false</td>
-                                    <td className="k-table-td k-command-cell">
-                                        <Button icon="pencil">Edit</Button>
-                                        <Button icon="x">Delete</Button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
+                    </GridHeader>
+                    <GridContainer>
+                        <GridContent>
+                            <GridTable size="small">
+                                <colgroup>
+                                    <col /><col /><col /><col style={{ width: "300px" }} />
+                                </colgroup>
+                                <TableTbody>
+                                    <TableRow className="k-grid-edit-row">
+                                        <TableTd>
+                                            <Textbox value="Towel" required />
+                                        </TableTd>
+                                        <TableTd>
+                                            <NumericTextbox invalid />
+                                            <TooltipNormal className="k-validator-tooltip k-invalid-msg"
+                                                themeColor="error"
+                                                callout="top"
+                                                icon="exclamation-circle"
+                                                content="Price"
+                                            />
+                                        </TableTd>
+                                        <TableTd><Checkbox id="e77452cd-b3b5-4dc9-8210-17007584b695" /><label className="k-checkbox-label" htmlFor="e77452cd-b3b5-4dc9-8210-17007584b695"></label></TableTd>
+                                        <TableTd className="k-command-cell">
+                                            <Button icon="check" themeColor="primary">Update</Button>
+                                            <Button icon="cancel">Cancel</Button>
+                                        </TableTd>
+                                    </TableRow>
+                                    <TableRow alt className="k-grid-edit-row k-alt">
+                                        <TableTd className="k-dirty-cell">
+                                            <span className="k-dirty"></span>
+                                            LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
+                                        </TableTd>
+                                        <TableTd>18</TableTd>
+                                        <TableTd>false</TableTd>
+                                        <TableTd className="k-command-cell">
+                                            <Button icon="pencil">Edit</Button>
+                                            <Button icon="x">Delete</Button>
+                                        </TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-grid-edit-row">
+                                        <TableTd>Chang</TableTd>
+                                        <TableTd>19</TableTd>
+                                        <TableTd>false</TableTd>
+                                        <TableTd className="k-command-cell">
+                                            <Button icon="pencil">Edit</Button>
+                                            <Button icon="x">Delete</Button>
+                                        </TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
+                        </GridContent>
+                    </GridContainer>
+                </Grid>
             </section>
 
             <span>Grouping</span>
             <section className="col-2">
-                <div className="k-grid k-grid-sm k-grid-no-scrollbar">
-                    <div className="k-grouping-header">
-                        <div className="k-grouping-dropclue"></div>
+                <Grid size="small" className="k-grid-no-scrollbar" groupingHeader={(
+                    <GridGroupingHeader dropClue>
                         <ChipList size="small">
                             <Chip size="small" icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                            <Chip size="small" icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                            <Chip size="small" icon="sort-desc-small" actions={ <ChipAction type="remove" /> }>Name</Chip>
                         </ChipList>
-                        <div className="k-grouping-drop-container"></div>
-                    </div>
-                    <div className="k-grid-header">
+                    </GridGroupingHeader>
+                )}>
+                    <GridHeader>
                         <div className="k-grid-header-wrap">
-                            <table className="k-table k-table-sm k-grid-header-table">
+                            <GridHeaderTable size="small">
                                 <colgroup>
                                     <col className="k-group-col" /><col /><col /><col /><col />
                                 </colgroup>
-                                <thead className="k-table-thead">
-                                    <tr className="k-table-row">
-                                        <th className="k-table-th k-group-cell k-header" scope="col"></th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Name</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Price</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Available</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th className="k-table-th k-header">
-                                            <span className="k-cell-inner">
-                                                <span className="k-link">
-                                                    <span className="k-column-title">Units</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
+                                <TableThead>
+                                    <TableRow>
+                                        <GridHeaderCell className="k-group-cell"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Name"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Price"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Available"></GridHeaderCell>
+                                        <GridHeaderCell columnTitle="Units"></GridHeaderCell>
+                                    </TableRow>
+                                </TableThead>
+                            </GridHeaderTable>
                         </div>
-                    </div>
-                    <div className="k-grid-content">
-                        <table className="k-table k-table-sm k-grid-table" style={{ height: 'auto' }}>
-                            <colgroup>
-                                <col className="k-group-col" /><col /><col /><col /><col />
-                            </colgroup>
-                            <tbody className="k-table-tbody">
-                                <tr className="k-table-row k-table-group-row k-grouping-row">
-                                    <td className="k-table-td" colSpan={5}>
-                                        <p className="k-reset">
-                                            <Icon icon="caret-alt-right" />
+                    </GridHeader>
+                    <GridContainer>
+                        <GridContent>
+                            <GridTable size="small" style={{ height: "auto" }}>
+                                <colgroup>
+                                    <col className="k-group-col" /><col /><col /><col /><col />
+                                </colgroup>
+                                <TableTbody>
+                                    <TableRow className="k-table-group-row k-grouping-row">
+                                        <TableTd colspan={5}>
+                                            <p className="k-reset">
+                                                <Icon icon="caret-alt-right" />
                                             Price: 19
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row k-table-group-row k-grouping-row">
-                                    <td className="k-table-td" colSpan={5}>
-                                        <p className="k-reset">
-                                            <Icon icon="caret-alt-down" />
+                                            </p>
+                                        </TableTd>
+                                    </TableRow>
+                                    <TableRow className="k-table-group-row k-grouping-row">
+                                        <TableTd colspan={5}>
+                                            <p className="k-reset">
+                                                <Icon icon="caret-alt-down" />
                                             Price: 30
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr className="k-table-row">
-                                    <td className="k-table-td k-table-group-td k-group-cell">&nbsp;</td>
-                                    <td className="k-table-td">Chai</td>
-                                    <td className="k-table-td">30</td>
-                                    <td className="k-table-td">false</td>
-                                    <td className="k-table-td">15</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                                            </p>
+                                        </TableTd>
+                                    </TableRow>
+                                    <TableRow>
+                                        <TableTd className="k-table-group-td k-group-cell">&nbsp;</TableTd>
+                                        <TableTd>Chai</TableTd>
+                                        <TableTd>30</TableTd>
+                                        <TableTd>false</TableTd>
+                                        <TableTd>15</TableTd>
+                                    </TableRow>
+                                </TableTbody>
+                            </GridTable>
+                        </GridContent>
+                    </GridContainer>
+                </Grid>
             </section>
         </div>
     </>

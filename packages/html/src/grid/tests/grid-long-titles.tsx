@@ -1,4 +1,5 @@
-import { Icon } from '../../icon';
+import { Grid, GridHeader, GridHeaderTable, GridHeaderCell, } from '../../grid';
+import { TableRow, TableThead } from '../../table';
 
 
 const styles = `
@@ -17,58 +18,41 @@ export default () =>(
         <div id="test-area">
             <div className="sections-wrapper">
                 <div className="section">
-                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-header">
+                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table className="k-table k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th scope="col" className="k-table-th k-header k-filterable">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Active Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
-                                                    </span>
-                                                    <a className="k-grid-header-menu k-grid-column-menu k-active" href="#"><Icon icon="more-vertical" /></a>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell active className="k-filterable" menu="column" scope="col" columnTitle="Active Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
-
+                        </GridHeader>
+                    </Grid>
                 </div>
 
                 <div className="section k-rtl">
-
-                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-header">
+                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table className="k-table k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th scope="col" className="k-table-th k-header k-filterable">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Column Menu</span>
-                                                    </span>
-                                                    <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell className="k-filterable" scope="col" menu="column" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Column Menu"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
-
+                        </GridHeader>
+                    </Grid>
                 </div>
 
             </div>
@@ -76,59 +60,41 @@ export default () =>(
             <div className="sections-wrapper">
 
                 <div className="section">
-
-                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-header">
+                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table className="k-table k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th scope="col" className="k-table-th k-header k-filterable">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Active Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
-                                                    </span>
-                                                    <a href="#" className="k-grid-filter-menu k-grid-header-menu k-active"><Icon icon="filter" /></a>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell scope="col" active menu="filter" columnTitle="Active Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
-
+                        </GridHeader>
+                    </Grid>
                 </div>
 
                 <div className="section k-rtl">
-
-                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-header">
+                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table className="k-table k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th scope="col" className="k-table-th k-header k-filterable">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Filterable</span>
-                                                    </span>
-                                                    <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell scope="col" menu="filter" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Filterable"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
-
+                        </GridHeader>
+                    </Grid>
                 </div>
 
             </div>
@@ -136,59 +102,41 @@ export default () =>(
             <div className="sections-wrapper">
 
                 <div className="section">
-
-                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-header">
+                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table className="k-table k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th scope="col" className="k-table-th k-header k-filterable">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Sortable Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
-                                                    </span>
-                                                    <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell className="k-filterable" scope="col" menu="column" columnTitle="Sortable Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
-
+                        </GridHeader>
+                    </Grid>
                 </div>
 
                 <div className="section k-rtl">
-
-                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-header">
+                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table className="k-table k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th scope="col" className="k-table-th k-header k-filterable">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Column Menu</span>
-                                                    </span>
-                                                    <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon icon="more-vertical" /></a>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell className="k-filterable" scope="col" menu="column" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Column Menu"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
-
+                        </GridHeader>
+                    </Grid>
                 </div>
 
             </div>
@@ -196,59 +144,41 @@ export default () =>(
             <div className="sections-wrapper">
 
                 <div className="section">
-
-                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-header">
+                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table className="k-table k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th scope="col" className="k-table-th k-header k-filterable">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Sortable Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
-                                                    </span>
-                                                    <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell scope="col" menu="filter" columnTitle="Sortable Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
-
+                        </GridHeader>
+                    </Grid>
                 </div>
 
                 <div className="section k-rtl">
-
-                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-header">
+                    <Grid className="k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                        <GridHeader>
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table className="k-table k-table-md k-grid-header-table">
+                                <GridHeaderTable>
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead className="k-table-thead">
-                                        <tr className="k-table-row">
-                                            <th scope="col" className="k-table-th k-header k-filterable">
-                                                <span className="k-cell-inner">
-                                                    <span className="k-link">
-                                                        <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Filterable</span>
-                                                    </span>
-                                                    <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell scope="col" menu="filter" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Filterable"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
-
+                        </GridHeader>
+                    </Grid>
                 </div>
 
             </div>
@@ -256,62 +186,44 @@ export default () =>(
             {/* Angular Specific */}
             <div className="sections-wrapper">
                 <div className="section">
-                    <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ height: "60px" }}>
-                        <div className="k-grid-aria-root">
-                            {/* add padding-left or -right for scrollbar width */}
-                            <div className="k-grid-header">
-                                <div className="k-grid-header-wrap">
-                                    <table className="k-table k-table-md k-grid-header-table">
-                                        <colgroup>
-                                            <col />
-                                        </colgroup>
-                                        <thead className="k-table-thead">
-                                            <tr className="k-table-row">
-                                                <th className="k-table-th k-filterable k-header">
-                                                    <span className="k-cell-inner">
-                                                        <span className="k-link">
-                                                            <span className="k-column-title">Angular Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
-                                                        </span>
-                                                        <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a></div>
-                                                    </span>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                </div>
+                    <Grid className="k-grid-no-scrollbar" _renderAriaRoot style={{ height: "60px" }}>
+                        {/* add padding-left or -right for scrollbar width */}
+                        <GridHeader>
+                            <div className="k-grid-header-wrap">
+                                <GridHeaderTable>
+                                    <colgroup>
+                                        <col />
+                                    </colgroup>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell menu="filter" columnTitle="Angular Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
+                        </GridHeader>
+                    </Grid>
                 </div>
 
                 {/* Angular Specific */}
                 <div className="section">
-                    <div className="k-grid k-grid-md k-grid-no-scrollbar" dir="rtl" style={{ height: "60px" }}>
-                        <div className="k-grid-aria-root">
-                            <div className="k-grid-header">
-                                {/* add padding-left or -right for scrollbar width */}
-                                <div className="k-grid-header-wrap">
-                                    <table className="k-table k-table-md k-grid-header-table">
-                                        <colgroup>
-                                            <col />
-                                        </colgroup>
-                                        <thead className="k-table-thead">
-                                            <tr className="k-table-row">
-                                                <th className="k-table-th k-filterable k-header">
-                                                    <span className="k-cell-inner">
-                                                        <span className="k-link">
-                                                            <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Angular Filterable</span>
-                                                        </span>
-                                                        <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon icon="filter" /></a>
-                                                    </span>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                </div>
+                    <Grid className="k-grid-no-scrollbar" _renderAriaRoot dir="rtl" style={{ height: "60px" }}>
+                        {/* add padding-left or -right for scrollbar width */}
+                        <GridHeader>
+                            <div className="k-grid-header-wrap">
+                                <GridHeaderTable>
+                                    <colgroup>
+                                        <col />
+                                    </colgroup>
+                                    <TableThead>
+                                        <TableRow>
+                                            <GridHeaderCell menu="filter" columnTitle="Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Angular Filterable"></GridHeaderCell>
+                                        </TableRow>
+                                    </TableThead>
+                                </GridHeaderTable>
                             </div>
-                        </div>
-                    </div>
+                        </GridHeader>
+                    </Grid>
                 </div>
             </div>
 
