@@ -11,24 +11,24 @@
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <span class="col-2">Grid with selection aggregates container</span>
         <section class="col-2">
-            <div class="k-grid-no-scrollbar k-grid k-grid-md">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table k-table-md">
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 100px;">
                                 <col>
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">100px</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">no width</span>
@@ -40,41 +40,39 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-content">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col style="width: 100px;">
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">1</td>
-                                    <td class="k-table-td">Row</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-selected k-table-td">2</td>
-                                    <td class="k-selected k-table-td">Alt row</td>
-                                </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-selected k-table-td">3</td>
-                                    <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-selected k-table-td">4</td>
-                                    <td class="k-table-td">
-                                        <span class="k-skeleton k-skeleton-text"></span>
-                                    </td>
-                                </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">5</td>
-                                    <td class="k-table-td">
-                                        <span class="k-skeleton k-skeleton-text"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="k-grid-content">
+                    <table class="k-table k-table-md k-grid-table">
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col>
+                        </colgroup>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row">
+                                <td class="k-table-td">1</td>
+                                <td class="k-table-td">Row</td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-alt">
+                                <td class="k-table-td k-selected">2</td>
+                                <td class="k-table-td k-selected">Alt row</td>
+                            </tr>
+                            <tr class="k-table-row">
+                                <td class="k-table-td k-selected">3</td>
+                                <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-alt">
+                                <td class="k-table-td k-selected">4</td>
+                                <td class="k-table-td">
+                                    <span class="k-skeleton k-skeleton-text"></span>
+                                </td>
+                            </tr>
+                            <tr class="k-table-row">
+                                <td class="k-table-td">5</td>
+                                <td class="k-table-td">
+                                    <span class="k-skeleton k-skeleton-text"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="k-selection-aggregates k-grid-selection-aggregates">
                     <div class="k-selection-aggregates-item">
@@ -180,24 +178,24 @@
         </section>
         <span class="col-2">Grid with selection aggregates container (RTL)</span>
         <section class="col-2 k-rtl">
-            <div class="k-grid-no-scrollbar k-grid k-grid-md">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table k-table-md">
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 100px;">
                                 <col>
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">100px</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">no width</span>
@@ -209,41 +207,39 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-content">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col style="width: 100px;">
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">1</td>
-                                    <td class="k-table-td">Row</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-selected k-table-td">2</td>
-                                    <td class="k-selected k-table-td">Alt row</td>
-                                </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-selected k-table-td">3</td>
-                                    <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-selected k-table-td">4</td>
-                                    <td class="k-table-td">
-                                        <span class="k-skeleton k-skeleton-text"></span>
-                                    </td>
-                                </tr>
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">5</td>
-                                    <td class="k-table-td">
-                                        <span class="k-skeleton k-skeleton-text"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="k-grid-content">
+                    <table class="k-table k-table-md k-grid-table">
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col>
+                        </colgroup>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row">
+                                <td class="k-table-td">1</td>
+                                <td class="k-table-td">Row</td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-alt">
+                                <td class="k-table-td k-selected">2</td>
+                                <td class="k-table-td k-selected">Alt row</td>
+                            </tr>
+                            <tr class="k-table-row">
+                                <td class="k-table-td k-selected">3</td>
+                                <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-alt">
+                                <td class="k-table-td k-selected">4</td>
+                                <td class="k-table-td">
+                                    <span class="k-skeleton k-skeleton-text"></span>
+                                </td>
+                            </tr>
+                            <tr class="k-table-row">
+                                <td class="k-table-td">5</td>
+                                <td class="k-table-td">
+                                    <span class="k-skeleton k-skeleton-text"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="k-selection-aggregates k-grid-selection-aggregates">
                     <div class="k-selection-aggregates-item">

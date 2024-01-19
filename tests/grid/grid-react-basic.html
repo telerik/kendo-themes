@@ -12,10 +12,70 @@
         <span>Basic Grid</span>
         <section>
             <div class="k-grid k-grid-md" style="height: 500px;">
-                <div class="k-grid-aria-root">
-                    <div class="k-grid-header">
-                        <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table k-table-md">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table class="k-table k-table-md k-grid-header-table">
+                            <colgroup>
+                                <col width="40px">
+                                <col width="300px">
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th colspan="1" rowspan="1" class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">ID</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">CategoryName</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">In stock</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th colspan="1" rowspan="1" class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Discontinued</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="k-grid-container">
+                    <div class="k-grid-content k-virtual-content">
+                        <div style="position: relative;">
+                            <table class="k-table k-table-md k-grid-table">
                                 <colgroup>
                                     <col width="40px">
                                     <col width="300px">
@@ -24,242 +84,180 @@
                                     <col>
                                     <col>
                                 </colgroup>
-                                <thead class="k-table-thead">
-                                    <tr class="k-table-row">
-                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                            <span class="k-cell-inner">
-                                                <span class="k-link">
-                                                    <span class="k-column-title">ID</span>
-                                                </span>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row k-master-row">
+                                        <td class="k-table-td" colspan="1">1</td>
+                                        <td class="k-table-td" colspan="1">Chai</td>
+                                        <td class="k-table-td" colspan="1">Beverages</td>
+                                        <td class="k-table-td" colspan="1">18</td>
+                                        <td class="k-table-td" colspan="1">39</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
-                                        </th>
-                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                            <span class="k-cell-inner">
-                                                <span class="k-link">
-                                                    <span class="k-column-title">Name</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                            <span class="k-cell-inner">
-                                                <span class="k-link">
-                                                    <span class="k-column-title">CategoryName</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                            <span class="k-cell-inner">
-                                                <span class="k-link">
-                                                    <span class="k-column-title">Price</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                            <span class="k-cell-inner">
-                                                <span class="k-link">
-                                                    <span class="k-column-title">In stock</span>
-                                                </span>
-                                            </span>
-                                        </th>
-                                        <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                            <span class="k-cell-inner">
-                                                <span class="k-link">
-                                                    <span class="k-column-title">Discontinued</span>
-                                                </span>
-                                            </span>
-                                        </th>
+                                        </td>
                                     </tr>
-                                </thead>
+                                    <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                        <td class="k-table-td" colspan="1">2</td>
+                                        <td class="k-table-td" colspan="1">Chang</td>
+                                        <td class="k-table-td" colspan="1">Beverages</td>
+                                        <td class="k-table-td" colspan="1">19</td>
+                                        <td class="k-table-td" colspan="1">17</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-master-row">
+                                        <td class="k-table-td" colspan="1">3</td>
+                                        <td class="k-table-td" colspan="1">Aniseed Syrup</td>
+                                        <td class="k-table-td" colspan="1">Condiments</td>
+                                        <td class="k-table-td" colspan="1">10</td>
+                                        <td class="k-table-td" colspan="1">13</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                        <td class="k-table-td" colspan="1">4</td>
+                                        <td class="k-table-td" colspan="1">Chef Anton's Cajun Seasoning</td>
+                                        <td class="k-table-td" colspan="1">Condiments</td>
+                                        <td class="k-table-td" colspan="1">22</td>
+                                        <td class="k-table-td" colspan="1">53</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-master-row">
+                                        <td class="k-table-td" colspan="1">5</td>
+                                        <td class="k-table-td" colspan="1">Chef Anton's Gumbo Mix</td>
+                                        <td class="k-table-td" colspan="1">Condiments</td>
+                                        <td class="k-table-td" colspan="1">21.35</td>
+                                        <td class="k-table-td" colspan="1">0</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                        <td class="k-table-td" colspan="1">6</td>
+                                        <td class="k-table-td" colspan="1">Grandma's Boysenberry Spread</td>
+                                        <td class="k-table-td" colspan="1">Condiments</td>
+                                        <td class="k-table-td" colspan="1">25</td>
+                                        <td class="k-table-td" colspan="1">120</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-master-row">
+                                        <td class="k-table-td" colspan="1">7</td>
+                                        <td class="k-table-td" colspan="1">Uncle Bob's Organic Dried Pears</td>
+                                        <td class="k-table-td" colspan="1">Produce</td>
+                                        <td class="k-table-td" colspan="1">30</td>
+                                        <td class="k-table-td" colspan="1">15</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                        <td class="k-table-td" colspan="1">8</td>
+                                        <td class="k-table-td" colspan="1">Northwoods Cranberry Sauce</td>
+                                        <td class="k-table-td" colspan="1">Condiments</td>
+                                        <td class="k-table-td" colspan="1">40</td>
+                                        <td class="k-table-td" colspan="1">6</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-master-row">
+                                        <td class="k-table-td" colspan="1">9</td>
+                                        <td class="k-table-td" colspan="1">Mishi Kobe Niku</td>
+                                        <td class="k-table-td" colspan="1">Meat/Poultry</td>
+                                        <td class="k-table-td" colspan="1">97</td>
+                                        <td class="k-table-td" colspan="1">29</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                        <td class="k-table-td" colspan="1">10</td>
+                                        <td class="k-table-td" colspan="1">Ikura</td>
+                                        <td class="k-table-td" colspan="1">Seafood</td>
+                                        <td class="k-table-td" colspan="1">31</td>
+                                        <td class="k-table-td" colspan="1">31</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-master-row">
+                                        <td class="k-table-td" colspan="1">11</td>
+                                        <td class="k-table-td" colspan="1">Queso Cabrales</td>
+                                        <td class="k-table-td" colspan="1">Dairy Products</td>
+                                        <td class="k-table-td" colspan="1">21</td>
+                                        <td class="k-table-td" colspan="1">22</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                        <td class="k-table-td" colspan="1">12</td>
+                                        <td class="k-table-td" colspan="1">Queso Manchego La Pastora</td>
+                                        <td class="k-table-td" colspan="1">Dairy Products</td>
+                                        <td class="k-table-td" colspan="1">38</td>
+                                        <td class="k-table-td" colspan="1">86</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-master-row">
+                                        <td class="k-table-td" colspan="1">13</td>
+                                        <td class="k-table-td" colspan="1">Konbu</td>
+                                        <td class="k-table-td" colspan="1">Seafood</td>
+                                        <td class="k-table-td" colspan="1">6</td>
+                                        <td class="k-table-td" colspan="1">24</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                        <td class="k-table-td" colspan="1">14</td>
+                                        <td class="k-table-td" colspan="1">Tofu</td>
+                                        <td class="k-table-td" colspan="1">Produce</td>
+                                        <td class="k-table-td" colspan="1">23.25</td>
+                                        <td class="k-table-td" colspan="1">35</td>
+                                        <td class="k-table-td">
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div class="k-grid-container">
-                        <div class="k-virtual-content k-grid-content">
-                            <div style="position: relative;">
-                                <table class="k-grid-table k-table k-table-md">
-                                    <colgroup>
-                                        <col width="40px">
-                                        <col width="300px">
-                                        <col>
-                                        <col>
-                                        <col>
-                                        <col>
-                                    </colgroup>
-                                    <tbody class="k-table-tbody">
-                                        <tr class="k-master-row k-table-row">
-                                            <td colspan="1" class="k-table-td">1</td>
-                                            <td colspan="1" class="k-table-td">Chai</td>
-                                            <td colspan="1" class="k-table-td">Beverages</td>
-                                            <td colspan="1" class="k-table-td">18</td>
-                                            <td colspan="1" class="k-table-td">39</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                            <td colspan="1" class="k-table-td">2</td>
-                                            <td colspan="1" class="k-table-td">Chang</td>
-                                            <td colspan="1" class="k-table-td">Beverages</td>
-                                            <td colspan="1" class="k-table-td">19</td>
-                                            <td colspan="1" class="k-table-td">17</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-table-row">
-                                            <td colspan="1" class="k-table-td">3</td>
-                                            <td colspan="1" class="k-table-td">Aniseed Syrup</td>
-                                            <td colspan="1" class="k-table-td">Condiments</td>
-                                            <td colspan="1" class="k-table-td">10</td>
-                                            <td colspan="1" class="k-table-td">13</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                            <td colspan="1" class="k-table-td">4</td>
-                                            <td colspan="1" class="k-table-td">Chef Anton's Cajun Seasoning</td>
-                                            <td colspan="1" class="k-table-td">Condiments</td>
-                                            <td colspan="1" class="k-table-td">22</td>
-                                            <td colspan="1" class="k-table-td">53</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-table-row">
-                                            <td colspan="1" class="k-table-td">5</td>
-                                            <td colspan="1" class="k-table-td">Chef Anton's Gumbo Mix</td>
-                                            <td colspan="1" class="k-table-td">Condiments</td>
-                                            <td colspan="1" class="k-table-td">21.35</td>
-                                            <td colspan="1" class="k-table-td">0</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                            <td colspan="1" class="k-table-td">6</td>
-                                            <td colspan="1" class="k-table-td">Grandma's Boysenberry Spread</td>
-                                            <td colspan="1" class="k-table-td">Condiments</td>
-                                            <td colspan="1" class="k-table-td">25</td>
-                                            <td colspan="1" class="k-table-td">120</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-table-row">
-                                            <td colspan="1" class="k-table-td">7</td>
-                                            <td colspan="1" class="k-table-td">Uncle Bob's Organic Dried Pears</td>
-                                            <td colspan="1" class="k-table-td">Produce</td>
-                                            <td colspan="1" class="k-table-td">30</td>
-                                            <td colspan="1" class="k-table-td">15</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                            <td colspan="1" class="k-table-td">8</td>
-                                            <td colspan="1" class="k-table-td">Northwoods Cranberry Sauce</td>
-                                            <td colspan="1" class="k-table-td">Condiments</td>
-                                            <td colspan="1" class="k-table-td">40</td>
-                                            <td colspan="1" class="k-table-td">6</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-table-row">
-                                            <td colspan="1" class="k-table-td">9</td>
-                                            <td colspan="1" class="k-table-td">Mishi Kobe Niku</td>
-                                            <td colspan="1" class="k-table-td">Meat/Poultry</td>
-                                            <td colspan="1" class="k-table-td">97</td>
-                                            <td colspan="1" class="k-table-td">29</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                            <td colspan="1" class="k-table-td">10</td>
-                                            <td colspan="1" class="k-table-td">Ikura</td>
-                                            <td colspan="1" class="k-table-td">Seafood</td>
-                                            <td colspan="1" class="k-table-td">31</td>
-                                            <td colspan="1" class="k-table-td">31</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-table-row">
-                                            <td colspan="1" class="k-table-td">11</td>
-                                            <td colspan="1" class="k-table-td">Queso Cabrales</td>
-                                            <td colspan="1" class="k-table-td">Dairy Products</td>
-                                            <td colspan="1" class="k-table-td">21</td>
-                                            <td colspan="1" class="k-table-td">22</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                            <td colspan="1" class="k-table-td">12</td>
-                                            <td colspan="1" class="k-table-td">Queso Manchego La Pastora</td>
-                                            <td colspan="1" class="k-table-td">Dairy Products</td>
-                                            <td colspan="1" class="k-table-td">38</td>
-                                            <td colspan="1" class="k-table-td">86</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-table-row">
-                                            <td colspan="1" class="k-table-td">13</td>
-                                            <td colspan="1" class="k-table-td">Konbu</td>
-                                            <td colspan="1" class="k-table-td">Seafood</td>
-                                            <td colspan="1" class="k-table-td">6</td>
-                                            <td colspan="1" class="k-table-td">24</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                            <td colspan="1" class="k-table-td">14</td>
-                                            <td colspan="1" class="k-table-td">Tofu</td>
-                                            <td colspan="1" class="k-table-td">Produce</td>
-                                            <td colspan="1" class="k-table-td">23.25</td>
-                                            <td colspan="1" class="k-table-td">35</td>
-                                            <td class="k-table-td">
-                                                <span class="k-checkbox-wrap">
-                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                                </span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="k-height-container">
-                                <div></div>
-                            </div>
+                        <div class="k-height-container">
+                            <div></div>
                         </div>
                     </div>
                 </div>

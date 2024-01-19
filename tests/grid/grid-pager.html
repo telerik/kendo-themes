@@ -12,24 +12,24 @@
         <span>jQuery grid</span>
         <span>Angular grid</span>
         <section>
-            <div class="k-grid-no-scrollbar k-grid k-grid-md">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table k-table-md">
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 100px;">
                                 <col>
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">100px</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">no width</span>
@@ -41,27 +41,25 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-content">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col style="width: 100px;">
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">1</td>
-                                    <td class="k-table-td">Row</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-table-td">2</td>
-                                    <td class="k-table-td">Alt row</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="k-grid-content">
+                    <table class="k-table k-table-md k-grid-table">
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col>
+                        </colgroup>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row">
+                                <td class="k-table-td">1</td>
+                                <td class="k-table-td">Row</td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-alt">
+                                <td class="k-table-td">2</td>
+                                <td class="k-table-td">Alt row</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="k-focus k-grid-pager k-pager k-pager-md">
+                <div class="k-grid-pager k-pager k-pager-md k-focus">
                     <div class="k-pager-numbers-wrap">
                         <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-disabled k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
@@ -142,25 +140,25 @@
             </div>
         </section>
         <section>
-            <div class="k-grid-no-scrollbar k-grid k-grid-md">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar">
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table k-table-md">
+                            <table class="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style="width: 100px;">
                                     <col>
                                 </colgroup>
                                 <thead class="k-table-thead">
                                     <tr class="k-table-row">
-                                        <th class="k-header k-table-th">
+                                        <th class="k-table-th k-header">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">100px</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-header k-table-th">
+                                        <th class="k-table-th k-header">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">no width</span>
@@ -173,9 +171,9 @@
                         </div>
                     </div>
                     <div class="k-grid-container">
-                        <div class="k-grid-content">
-                            <div class="k-grid-table-wrap">
-                                <table class="k-grid-table k-table k-table-md">
+                        <div class="k-grid-content k-virtual-content">
+                            <div>
+                                <table class="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style="width: 100px;">
                                         <col>
@@ -185,7 +183,7 @@
                                             <td class="k-table-td">1</td>
                                             <td class="k-table-td">Row</td>
                                         </tr>
-                                        <tr class="k-alt k-table-row k-table-alt-row">
+                                        <tr class="k-table-row k-table-alt-row k-alt">
                                             <td class="k-table-td">2</td>
                                             <td class="k-table-td">Alt row</td>
                                         </tr>
@@ -198,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="k-focus k-grid-pager k-pager k-pager-md">
+                <div class="k-grid-pager k-pager k-pager-md k-focus">
                     <div class="k-pager-numbers-wrap">
                         <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-disabled k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
@@ -281,8 +279,8 @@
         <span>jQuery grid pager top</span>
         <span>Angular grid pager top</span>
         <section>
-            <div class="k-grid-no-scrollbar k-grid k-grid-md">
-                <div class="k-grid-pager-top k-grid-pager k-pager k-pager-md">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar">
+                <div class="k-grid-pager k-grid-pager-top k-pager k-pager-md">
                     <div class="k-pager-numbers-wrap">
                         <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-disabled k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
@@ -362,21 +360,21 @@
                 </div>
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table k-table-md">
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 100px;">
                                 <col>
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">100px</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">no width</span>
@@ -388,31 +386,29 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-container">
-                    <div class="k-grid-content">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col style="width: 100px;">
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-table-row">
-                                    <td class="k-table-td">1</td>
-                                    <td class="k-table-td">Row</td>
-                                </tr>
-                                <tr class="k-alt k-table-row k-table-alt-row">
-                                    <td class="k-table-td">2</td>
-                                    <td class="k-table-td">Alt row</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="k-grid-content">
+                    <table class="k-table k-table-md k-grid-table">
+                        <colgroup>
+                            <col style="width: 100px;">
+                            <col>
+                        </colgroup>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row">
+                                <td class="k-table-td">1</td>
+                                <td class="k-table-td">Row</td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-alt">
+                                <td class="k-table-td">2</td>
+                                <td class="k-table-td">Alt row</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
         <section>
-            <div class="k-grid-no-scrollbar k-grid k-grid-md">
-                <div class="k-grid-pager-top k-grid-pager k-pager k-pager-md">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar">
+                <div class="k-grid-pager k-grid-pager-top k-pager k-pager-md">
                     <div class="k-pager-numbers-wrap">
                         <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-disabled k-icon-button">
                             <span class="k-button-icon k-icon k-svg-icon k-svg-i-caret-alt-to-left">
@@ -493,21 +489,21 @@
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
-                            <table class="k-grid-header-table k-table k-table-md">
+                            <table class="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style="width: 100px;">
                                     <col>
                                 </colgroup>
                                 <thead class="k-table-thead">
                                     <tr class="k-table-row">
-                                        <th class="k-header k-table-th">
+                                        <th class="k-table-th k-header">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">100px</span>
                                                 </span>
                                             </span>
                                         </th>
-                                        <th class="k-header k-table-th">
+                                        <th class="k-table-th k-header">
                                             <span class="k-cell-inner">
                                                 <span class="k-link">
                                                     <span class="k-column-title">no width</span>
@@ -520,9 +516,9 @@
                         </div>
                     </div>
                     <div class="k-grid-container">
-                        <div class="k-grid-content">
-                            <div class="k-grid-table-wrap">
-                                <table class="k-grid-table k-table k-table-md">
+                        <div class="k-grid-content k-virtual-content">
+                            <div>
+                                <table class="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style="width: 100px;">
                                         <col>
@@ -532,7 +528,7 @@
                                             <td class="k-table-td">1</td>
                                             <td class="k-table-td">Row</td>
                                         </tr>
-                                        <tr class="k-alt k-table-row k-table-alt-row">
+                                        <tr class="k-table-row k-table-alt-row k-alt">
                                             <td class="k-table-td">2</td>
                                             <td class="k-table-td">Alt row</td>
                                         </tr>

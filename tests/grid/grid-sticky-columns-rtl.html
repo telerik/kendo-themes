@@ -8,15 +8,9 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        .k-grid-header-wrap {
-            border-width: 0px;
-        }
-
-    </style>
     <div id="test-area" class="k-d-grid">
         <p>React Grid - Sticky columns - RTL</p>
-        <div class="k-rtl k-grid k-grid-md" style="height: 700px; width: 500px;">
+        <div class="k-grid k-grid-md k-rtl" role="grid" style="height: 700px; width: 500px;">
             <div class="k-grouping-header">
                 <div class="k-chip-list k-chip-list-md">
                     <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
@@ -37,11 +31,10 @@
                         </span>
                     </div>
                 </div>
-                <div class="k-grouping-drop-container"></div>
             </div>
             <div class="k-grid-header">
-                <div class="k-grid-header-wrap">
-                    <table class="k-grid-header-table k-table k-table-md" style="width: 1434px;">
+                <div class="k-grid-header-wrap" style="border-width: 0px;">
+                    <table class="k-table k-table-md k-grid-header-table" style="width: 1434px;">
                         <colgroup>
                             <col width="32px">
                             <col width="32px">
@@ -53,17 +46,17 @@
                             <col width="90px">
                         </colgroup>
                         <thead class="k-table-thead">
-                            <tr role="row" class="k-table-row" style="touch-action: none;">
-                                <th colspan="1" rowspan="1" class="k-header k-table-th" style="left: 0px; right: 0px;"></th>
-                                <th colspan="1" rowspan="1" class="k-hierarchy-cell k-header k-table-th" style="left: 0px; right: 0px;"></th>
-                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky k-table-th" style="left: 90px; right: 0px;">
+                            <tr class="k-table-row" role="row" style="touch-action: none;">
+                                <th colspan="1" rowspan="1" class="k-table-th k-header" style="left: 0px; right: 0px;"></th>
+                                <th colspan="1" rowspan="1" class="k-table-th k-header k-hierarchy-cell" style="left: 0px; right: 0px;"></th>
+                                <th colspan="1" rowspan="1" class="k-table-th k-header k-grid-header-sticky" style="left: 90px; right: 0px;">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">customerID</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th colspan="1" rowspan="1" class="k-header k-sorted k-table-th">
+                                <th colspan="1" rowspan="1" class="k-table-th k-header k-sorted">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">customerID</span>
@@ -77,28 +70,28 @@
                                         </span>
                                     </span>
                                 </th>
-                                <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                <th colspan="1" rowspan="1" class="k-table-th k-header">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">shipName</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                <th colspan="1" rowspan="1" class="k-table-th k-header">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">freight</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th colspan="1" rowspan="1" class="k-header k-table-th">
+                                <th colspan="1" rowspan="1" class="k-table-th k-header">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">shippedDate</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky k-table-th" style="left: 0px; right: 200px;">
+                                <th colspan="1" rowspan="1" class="k-table-th k-header k-grid-header-sticky" style="left: 0px; right: 200px;">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">ID</span>
@@ -111,9 +104,9 @@
                 </div>
             </div>
             <div class="k-grid-container">
-                <div class="k-virtual-content k-grid-content">
+                <div class="k-grid-content k-virtual-content">
                     <div style="position: relative;">
-                        <table class="k-grid-table k-table k-table-md" style="width: 1434px;">
+                        <table class="k-table k-table-md k-grid-table" style="width: 1434px;">
                             <colgroup>
                                 <col width="32px">
                                 <col width="32px">
@@ -125,8 +118,8 @@
                                 <col width="90px">
                             </colgroup>
                             <tbody class="k-table-tbody">
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
-                                    <td colspan="8" class="k-table-td" style="left: 0px; right: 0px;">
+                                <tr class="k-table-row k-table-group-row k-grouping-row" role="row">
+                                    <td class="k-table-td" colspan="8" style="left: 0px; right: 0px;">
                                         <p class="k-reset">
                                             <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -136,40 +129,40 @@
                                         </p>
                                     </td>
                                 </tr>
-                                <tr class="k-master-row k-table-row" role="row">
-                                    <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
-                                    <td class="k-hierarchy-cell k-table-td">
+                                <tr class="k-table-row k-master-row" role="row">
+                                    <td class="k-table-td k-table-group-td k-group-cell" style="left: 0px; right: 0px;"></td>
+                                    <td class="k-table-td k-hierarchy-cell">
                                         <span class="k-icon k-svg-icon k-svg-i-plus">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 90px; right: 0px;">LEHMS</td>
-                                    <td colspan="1" class="k-table-td">Saturday, January 13, 1996</td>
-                                    <td colspan="1" class="k-table-td">Lehmanns Marktstand</td>
-                                    <td colspan="1" class="k-table-td">25.83</td>
-                                    <td colspan="1" class="k-table-td">Tuesday, January 16, 1996</td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10279</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 90px; right: 0px;">LEHMS</td>
+                                    <td class="k-table-td" colspan="1">Saturday, January 13, 1996</td>
+                                    <td class="k-table-td" colspan="1">Lehmanns Marktstand</td>
+                                    <td class="k-table-td" colspan="1">25.83</td>
+                                    <td class="k-table-td" colspan="1">Tuesday, January 16, 1996</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 0px; right: 200px;">10279</td>
                                 </tr>
-                                <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
-                                    <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
-                                    <td class="k-hierarchy-cell k-table-td">
+                                <tr class="k-table-row k-table-alt-row k-master-row k-alt" role="row">
+                                    <td class="k-table-td k-table-group-td k-group-cell" style="left: 0px; right: 0px;"></td>
+                                    <td class="k-table-td k-hierarchy-cell">
                                         <span class="k-icon k-svg-icon k-svg-i-plus">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 90px; right: 0px;">LEHMS</td>
-                                    <td colspan="1" class="k-table-td">Saturday, January 13, 1996</td>
-                                    <td colspan="1" class="k-table-td">Lehmanns Marktstand</td>
-                                    <td colspan="1" class="k-table-td">25.83</td>
-                                    <td colspan="1" class="k-table-td">Tuesday, January 16, 1996</td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10279</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 90px; right: 0px;">LEHMS</td>
+                                    <td class="k-table-td" colspan="1">Saturday, January 13, 1996</td>
+                                    <td class="k-table-td" colspan="1">Lehmanns Marktstand</td>
+                                    <td class="k-table-td" colspan="1">25.83</td>
+                                    <td class="k-table-td" colspan="1">Tuesday, January 16, 1996</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 0px; right: 200px;">10279</td>
                                 </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
-                                    <td colspan="8" class="k-table-td" style="left: 0px; right: 0px;">
+                                <tr class="k-table-row k-table-group-row k-grouping-row" role="row">
+                                    <td class="k-table-td" colspan="8" style="left: 0px; right: 0px;">
                                         <p class="k-reset">
                                             <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -179,40 +172,40 @@
                                         </p>
                                     </td>
                                 </tr>
-                                <tr class="k-master-row k-table-row" role="row">
-                                    <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
-                                    <td class="k-hierarchy-cell k-table-td">
+                                <tr class="k-table-row k-master-row" role="row">
+                                    <td class="k-table-td k-table-group-td k-group-cell" style="left: 0px; right: 0px;"></td>
+                                    <td class="k-table-td k-hierarchy-cell">
                                         <span class="k-icon k-svg-icon k-svg-i-plus">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 90px; right: 0px;">SPLIR</td>
-                                    <td colspan="1" class="k-table-td">Monday, January 1, 1996</td>
-                                    <td colspan="1" class="k-table-td">Split Rail Beer &amp; Ale</td>
-                                    <td colspan="1" class="k-table-td">4.54</td>
-                                    <td colspan="1" class="k-table-td">Tuesday, January 30, 1996</td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10271</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 90px; right: 0px;">SPLIR</td>
+                                    <td class="k-table-td" colspan="1">Monday, January 1, 1996</td>
+                                    <td class="k-table-td" colspan="1">Split Rail Beer &amp; Ale</td>
+                                    <td class="k-table-td" colspan="1">4.54</td>
+                                    <td class="k-table-td" colspan="1">Tuesday, January 30, 1996</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 0px; right: 200px;">10271</td>
                                 </tr>
-                                <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
-                                    <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
-                                    <td class="k-hierarchy-cell k-table-td">
+                                <tr class="k-table-row k-table-alt-row k-master-row k-alt" role="row">
+                                    <td class="k-table-td k-table-group-td k-group-cell" style="left: 0px; right: 0px;"></td>
+                                    <td class="k-table-td k-hierarchy-cell">
                                         <span class="k-icon k-svg-icon k-svg-i-plus">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 90px; right: 0px;">SPLIR</td>
-                                    <td colspan="1" class="k-table-td">Monday, January 1, 1996</td>
-                                    <td colspan="1" class="k-table-td">Split Rail Beer &amp; Ale</td>
-                                    <td colspan="1" class="k-table-td">4.54</td>
-                                    <td colspan="1" class="k-table-td">Tuesday, January 30, 1996</td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10271</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 90px; right: 0px;">SPLIR</td>
+                                    <td class="k-table-td" colspan="1">Monday, January 1, 1996</td>
+                                    <td class="k-table-td" colspan="1">Split Rail Beer &amp; Ale</td>
+                                    <td class="k-table-td" colspan="1">4.54</td>
+                                    <td class="k-table-td" colspan="1">Tuesday, January 30, 1996</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 0px; right: 200px;">10271</td>
                                 </tr>
-                                <tr class="k-table-group-row k-grouping-row k-table-row" role="row">
-                                    <td colspan="8" class="k-table-td" style="left: 0px; right: 0px;">
+                                <tr class="k-table-row k-table-group-row k-grouping-row" role="row">
+                                    <td class="k-table-td" colspan="8" style="left: 0px; right: 0px;">
                                         <p class="k-reset">
                                             <span class="k-icon k-svg-icon k-svg-i-caret-alt-down">
                                                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -222,37 +215,37 @@
                                         </p>
                                     </td>
                                 </tr>
-                                <tr class="k-master-row k-table-row" role="row">
-                                    <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
-                                    <td class="k-hierarchy-cell k-table-td">
+                                <tr class="k-table-row k-master-row" role="row">
+                                    <td class="k-table-td k-table-group-td k-group-cell" style="left: 0px; right: 0px;"></td>
+                                    <td class="k-table-td k-hierarchy-cell">
                                         <span class="k-icon k-svg-icon k-svg-i-plus">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 90px; right: 0px;">WARTH</td>
-                                    <td colspan="1" class="k-table-td">Friday, January 26, 1996</td>
-                                    <td colspan="1" class="k-table-td">Wartian Herkku</td>
-                                    <td colspan="1" class="k-table-td">25.73</td>
-                                    <td colspan="1" class="k-table-td">Wednesday, January 31, 1996</td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10266</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 90px; right: 0px;">WARTH</td>
+                                    <td class="k-table-td" colspan="1">Friday, January 26, 1996</td>
+                                    <td class="k-table-td" colspan="1">Wartian Herkku</td>
+                                    <td class="k-table-td" colspan="1">25.73</td>
+                                    <td class="k-table-td" colspan="1">Wednesday, January 31, 1996</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 0px; right: 200px;">10266</td>
                                 </tr>
-                                <tr class="k-master-row k-alt k-table-row k-table-alt-row" role="row">
-                                    <td class="k-table-group-td k-group-cell k-table-td" style="left: 0px; right: 0px;"></td>
-                                    <td class="k-hierarchy-cell k-table-td">
+                                <tr class="k-table-row k-table-alt-row k-master-row k-alt" role="row">
+                                    <td class="k-table-td k-table-group-td k-group-cell" style="left: 0px; right: 0px;"></td>
+                                    <td class="k-table-td k-hierarchy-cell">
                                         <span class="k-icon k-svg-icon k-svg-i-plus">
                                             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M288 224V96h-64v128H96v64h128v128h64V288h128v-64z"></path>
                                             </svg>
                                         </span>
                                     </td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 90px; right: 0px;">WARTH</td>
-                                    <td colspan="1" class="k-table-td">Friday, January 26, 1996</td>
-                                    <td colspan="1" class="k-table-td">Wartian Herkku</td>
-                                    <td colspan="1" class="k-table-td">25.73</td>
-                                    <td colspan="1" class="k-table-td">Wednesday, January 31, 1996</td>
-                                    <td colspan="1" class="k-grid-content-sticky k-table-td" style="left: 0px; right: 200px;">10266</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 90px; right: 0px;">WARTH</td>
+                                    <td class="k-table-td" colspan="1">Friday, January 26, 1996</td>
+                                    <td class="k-table-td" colspan="1">Wartian Herkku</td>
+                                    <td class="k-table-td" colspan="1">25.73</td>
+                                    <td class="k-table-td" colspan="1">Wednesday, January 31, 1996</td>
+                                    <td class="k-table-td k-grid-content-sticky" colspan="1" style="left: 0px; right: 200px;">10266</td>
                                 </tr>
                             </tbody>
                         </table>

@@ -9,10 +9,10 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area">
-        <div class="k-grid-display-block k-grid-no-scrollbar k-grid k-grid-md" style="height: 350px;">
+        <div id="grid" class="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style="height: 350px;">
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap k-auto-scrollable">
-                    <table class="k-grid-header-table k-table k-table-md">
+                    <table class="k-table k-table-md k-grid-header-table">
                         <colgroup>
                             <col style="width: 225px;">
                             <col style="width: 500px;">
@@ -21,21 +21,21 @@
                         </colgroup>
                         <thead class="k-table-thead">
                             <tr class="k-table-row">
-                                <th scope="col" class="k-header k-table-th">
+                                <th scope="col" class="k-table-th k-header">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">OrderID</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th scope="col" class="k-header k-table-th">
+                                <th scope="col" class="k-table-th k-header">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">Ship Name</span>
                                         </span>
                                     </span>
                                 </th>
-                                <th scope="col" class="k-header k-table-th">
+                                <th scope="col" class="k-table-th k-header">
                                     <span class="k-cell-inner">
                                         <span class="k-link">
                                             <span class="k-column-title">Freight</span>
@@ -47,85 +47,57 @@
                     </table>
                 </div>
             </div>
-            <div class="k-grid-container">
-                <div class="k-auto-scrollable k-grid-content" style="height: 280px;">
-                    <table class="k-grid-table k-table k-table-md" style="height: auto;">
-                        <colgroup>
-                            <col style="width: 225px;">
-                            <col style="width: 500px;">
-                            <col style="width: 255px;">
-                            <col>
-                        </colgroup>
-                        <tbody class="k-table-tbody"></tbody>
-                    </table>
-                    <div class="k-grid-norecords">
-                        <div class="k-grid-norecords-template">No records available.</div>
-                    </div>
-                    <div class="k-grid-content-expander" style="width: 982px;"></div>
+            <div class="k-grid-content k-auto-scrollable" style="height: 280px;">
+                <table class="k-table k-table-md k-grid-table" style="height: auto;">
+                    <colgroup>
+                        <col style="width: 225px;">
+                        <col style="width: 500px;">
+                        <col style="width: 255px;">
+                        <col>
+                    </colgroup>
+                    <tbody class="k-table-tbody"></tbody>
+                </table>
+                <div class="k-grid-norecords">
+                    <div class="k-grid-norecords-template">No records available.</div>
                 </div>
+                <div class="k-grid-content-expander" style="width: 982px;"></div>
             </div>
         </div>
         <h4>Angular Grid</h4>
         <div class="k-grid k-grid-md">
             <div class="k-grid-aria-root">
                 <div class="k-grid-header" style="padding: 0px 16px 0px 0px;">
-                    <div class="k-grid-header-wrap">
-                        <table class="k-grid-header-table k-table k-table-md">
-                            <thead class="k-table-thead">
-                                <tr class="k-table-row">
-                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">CompanyName</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">ContactName</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">City</span>
-                                            </span>
-                                        </span>
-                                    </th>
-                                    <th colspan="1" rowspan="1" class="k-header k-table-th">
-                                        <span class="k-cell-inner">
-                                            <span class="k-link">
-                                                <span class="k-column-title">ContactTitle</span>
-                                            </span>
-                                        </span>
-                                    </th>
+                    <table class="k-table k-table-md k-grid-header-table">
+                        <thead class="k-table-thead">
+                            <tr class="k-table-row">
+                                <th class="k-table-th k-header" rowspan="1" colspan="1">CompanyName</th>
+                                <th class="k-table-th k-header" rowspan="1" colspan="1">ContactName</th>
+                                <th class="k-table-th k-header" rowspan="1" colspan="1">City</th>
+                                <th class="k-table-th k-header" rowspan="1" colspan="1">ContactTitle</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="k-grid-container">
+                <div class="k-grid-content k-virtual-content">
+                    <div class="k-grid-table-wrap">
+                        <table class="k-table k-table-md k-grid-table">
+                            <colgroup>
+                                <col style="width: 140px;">
+                                <col style="width: 120px;">
+                                <col style="width: 100px;">
+                                <col style="width: 130px;">
+                            </colgroup>
+                            <tbody class="k-table-tbody">
+                                <tr class="k-grid-norecords">
+                                    <td class="k-table-td" colspan="4">No records available. </td>
                                 </tr>
-                            </thead>
+                            </tbody>
                         </table>
                     </div>
-                </div>
-                <div class="k-grid-container">
-                    <div class="k-virtual-content k-grid-content">
-                        <div class="k-grid-table-wrap">
-                            <table class="k-grid-table k-table k-table-md">
-                                <colgroup>
-                                    <col style="width: 140px;">
-                                    <col style="width: 120px;">
-                                    <col style="width: 100px;">
-                                    <col style="width: 130px;">
-                                </colgroup>
-                                <tbody class="k-table-tbody">
-                                    <tr class="k-grid-norecords k-table-row">
-                                        <td colspan="4" class="k-table-td">No records available.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="k-height-container">
-                            <div style="height: 0px;"></div>
-                        </div>
+                    <div class="k-height-container">
+                        <div style="height: 0px;"></div>
                     </div>
                 </div>
             </div>

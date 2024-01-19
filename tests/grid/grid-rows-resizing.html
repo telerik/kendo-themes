@@ -11,7 +11,7 @@
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <span class="col-2">Resizing Row / Hover</span>
         <section class="col-2">
-            <div class="k-grid-display-block k-grid k-grid-md">
+            <div class="k-grid k-grid-md k-grid-display-block">
                 <div class="k-grid-toolbar k-toolbar k-toolbar-md">
                     <button class="k-toolbar-button k-toolbar-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="k-grid-header" style="padding: 0px;">
                     <div class="k-grid-header-wrap k-auto-scrollable">
-                        <table class="k-grid-header-table k-table k-table-md">
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col>
                                 <col>
@@ -41,21 +41,21 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Cell</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Cell</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Cell</span>
@@ -67,75 +67,73 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-container">
-                    <div class="k-auto-scrollable k-grid-content" style="overflow-y: visible;">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-master-row k-hover k-table-row">
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-table-td" style="white-space: nowrap;">Grid Cell with loooooong text that spans on multiple rows</td>
-                                    <td class="k-command-cell k-table-td">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                            <span class="k-button-text">Edit</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Remove</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-command-cell k-table-td">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                            <span class="k-button-text">Edit</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Remove</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-command-cell k-table-td">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                            <span class="k-button-text">Edit</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Remove</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-alt k-table-row k-table-alt-row">
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-command-cell k-table-td">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                            <span class="k-button-text">Edit</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Remove</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <span class="k-resizer-wrap k-hover" style="top: 34px;">
-                            <span class="k-row-resizer"></span>
-                        </span>
-                    </div>
+                <div class="k-grid-content k-auto-scrollable" style="overflow-y: visible;">
+                    <table class="k-table k-table-md k-grid-table">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row k-master-row k-hover">
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td" style="white-space: nowrap;">Grid Cell with loooooong text that spans on multiple rows</td>
+                                <td class="k-table-td k-command-cell">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Edit</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td k-command-cell">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Edit</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="k-table-row k-master-row">
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td k-command-cell">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Edit</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td k-command-cell">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Edit</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span class="k-resizer-wrap k-hover" style="top: 34px;">
+                        <span class="k-row-resizer"></span>
+                    </span>
                 </div>
             </div>
         </section>
         <span class="col-2">Resizing Row / Drag</span>
         <section class="col-2">
-            <div class="k-grid-display-block k-grid k-grid-md">
+            <div class="k-grid k-grid-md k-grid-display-block">
                 <div class="k-grid-toolbar k-toolbar k-toolbar-md">
                     <button class="k-toolbar-button k-toolbar-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                         <span class="k-button-icon k-icon k-svg-icon k-svg-i-plus">
@@ -157,7 +155,7 @@
                 </div>
                 <div class="k-grid-header" style="padding: 0px;">
                     <div class="k-grid-header-wrap k-auto-scrollable">
-                        <table class="k-grid-header-table k-table k-table-md">
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col>
                                 <col>
@@ -165,21 +163,21 @@
                             </colgroup>
                             <thead class="k-table-thead">
                                 <tr class="k-table-row">
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Cell</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Cell</span>
                                             </span>
                                         </span>
                                     </th>
-                                    <th class="k-header k-table-th">
+                                    <th class="k-table-th k-header">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Header Cell</span>
@@ -191,69 +189,67 @@
                         </table>
                     </div>
                 </div>
-                <div class="k-grid-container">
-                    <div class="k-auto-scrollable k-grid-content" style="overflow-y: visible;">
-                        <table class="k-grid-table k-table k-table-md">
-                            <colgroup>
-                                <col>
-                                <col>
-                                <col>
-                            </colgroup>
-                            <tbody class="k-table-tbody">
-                                <tr class="k-master-row k-hover k-table-row">
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-table-td" style="white-space: unset;">Grid Cell with loooooong text that spans on multiple rows</td>
-                                    <td class="k-command-cell k-table-td">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                            <span class="k-button-text">Edit</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Remove</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="k-table-row k-table-alt-row">
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-command-cell k-table-td">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                            <span class="k-button-text">Edit</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Remove</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="k-master-row k-table-row">
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-command-cell k-table-td">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                            <span class="k-button-text">Edit</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Remove</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="k-table-row k-table-alt-row">
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-table-td">Grid Cell</td>
-                                    <td class="k-command-cell k-table-td">
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                                            <span class="k-button-text">Edit</span>
-                                        </button>
-                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Remove</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <span class="k-resizer-wrap k-active" style="top: 54px;">
-                            <span class="k-row-resizer"></span>
-                        </span>
-                    </div>
+                <div class="k-grid-content k-auto-scrollable" style="overflow-y: visible;">
+                    <table class="k-table k-table-md k-grid-table">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row k-master-row k-hover">
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td" style="white-space: unset;">Grid Cell with loooooong text that spans on multiple rows</td>
+                                <td class="k-table-td k-command-cell">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Edit</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td k-command-cell">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Edit</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="k-table-row k-master-row">
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td k-command-cell">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Edit</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="k-table-row k-table-alt-row k-master-row k-alt">
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td">Grid Cell</td>
+                                <td class="k-table-td k-command-cell">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                        <span class="k-button-text">Edit</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Remove</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span class="k-resizer-wrap k-active" style="top: 54px;">
+                        <span class="k-row-resizer"></span>
+                    </span>
                 </div>
             </div>
         </section>
