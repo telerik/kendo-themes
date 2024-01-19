@@ -454,7 +454,7 @@ $kendo-grid-column-menu-max-width: 320px !default;
 $kendo-grid-column-menu-spacing: map.get( $kendo-spacing, 2 ) !default;
 /// Focus shadow of the grid column menu.
 /// @group grid
-$kendo-grid-column-menu-shadow: var( --kendo-box-shadow-depth-6, none ) !default;
+$kendo-grid-column-menu-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 /// Background color of the grid column menu.
 /// @group grid
 $kendo-grid-column-menu-bg: var( --kendo-component-bg, inherit ) !default;
